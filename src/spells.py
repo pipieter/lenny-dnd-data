@@ -57,6 +57,7 @@ class Spell(object):
         result["source"] = self.source
         result["level"] = self.level
         result["school"] = self.school
+        result["casting_time"] = self.casting_time
         result["range"] = self.spell_range
         result["components"] = self.components
         result["duration"] = self.duration
