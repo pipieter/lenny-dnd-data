@@ -8,8 +8,8 @@ import json
 
 @dataclasses.dataclass
 class SpellCaster(object):
-    caster_name: str
-    caster_source: str
+    name: str
+    source: str
 
 
 def load_spell_casters() -> dict[tuple[str, str], list[SpellCaster]]:
@@ -29,7 +29,7 @@ def load_spell_casters() -> dict[tuple[str, str], list[SpellCaster]]:
                         casters[(spell, source)].append(
                             SpellCaster(caster_name, caster_source)
                         )
-                if "classVariant" in caster_data:
+                if "classVariant" in caster_entries:
                     for caster_data in caster_entries["classVariant"]:
                         caster_name = caster_data["name"]
                         caster_source = caster_data["source"]
@@ -37,10 +37,11 @@ def load_spell_casters() -> dict[tuple[str, str], list[SpellCaster]]:
                             SpellCaster(caster_name, caster_source)
                         )
 
-                # Sort casters alphabetically
-                casters[(spell, source)] = sorted(
-                    casters[(spell, source)],
-                    key=lambda c: (c.caster_name, c.caster_source),
-                )
+    # Sort casters alphabetically
+    for key in casters.keys():
+        casters[key] = sorted(
+            casters[key],
+            key=lambda c: (c.name, c.source),
+        )
 
     return casters
