@@ -44,6 +44,7 @@ class Spell(object):
                 name = entry["name"]
                 entries = entry["entries"]
                 self.descriptions.extend(format_descriptions(name, entries, self.url))
+        self.classes = []
 
     @property
     def url(self):
@@ -62,11 +63,19 @@ class Spell(object):
         result["components"] = self.components
         result["duration"] = self.duration
         result["description"] = []
+        result["classes"] = []
 
         for name, text in self.descriptions:
             result["description"].append({"name": name, "text": text})
 
+        classes = sorted(self.classes)
+        for name, source in classes:
+            result["classes"].append({"name": name, "source": source})
+
         return result
+
+    def add_class(self, name: str, source: str) -> None:
+        self.classes.append((name, source))
 
     def __repr__(self):
         return str(self)
@@ -78,15 +87,20 @@ def _load_spells_file(path: str):
         spells = json.load(file)
         for raw in spells["spell"]:
             spell = Spell(raw)
-            results.append(spell.to_json())
+            results.append(spell)
             print(f"SpellList: loaded spell '{spell.name}'")
 
     print(f"SpellList: loaded spell file '{path}'")
     return results
 
+def get_index(spells: list[dict], name: str, source: str) -> int:
+    for i, spell in enumerate(spells):
+        if spell.name == name and spell.source == source:
+            return i
+    return -1
 
 def generate_spells(index_path: str) -> None:
-    spells = []
+    spells: list[Spell] = []
 
     index = os.path.join(index_path, "index.json")
     with open(index, "r") as file:
@@ -96,7 +110,23 @@ def generate_spells(index_path: str) -> None:
         sourcePath = os.path.join(index_path, sources[source])
         spells.extend(_load_spells_file(sourcePath))
 
-    spells = sorted(spells, key=lambda s: (s["name"], s["source"]))
+    sources_path = os.path.join(index_path, "sources.json")
+    with open(sources_path, "r") as file:
+        sources = json.load(file)
+
+    # Add classes data
+    for source, spells_data in sources.items():
+        for spell, class_data in spells_data.items():
+            index = get_index(spells, spell, source)
+            if "class" in class_data:
+                for class_data in class_data["class"]:
+                    spells[index].add_class(class_data["name"], class_data["source"])
+            if "classVariant" in class_data:
+                for class_data in class_data["classVariant"]:
+                    spells[index].add_class(class_data["name"], class_data["source"])                
+
+    spells = sorted(spells, key=lambda s: (s.name, s.source))
+    spells = [spell.to_json() for spell in spells]
 
     with open("./generated/spells.json", "w") as file:
         json.dump(spells, file, indent=2)
