@@ -23,7 +23,7 @@ SPELL_SCHOOLS = {
 }
 
 
-def format_dnd_text(text: str) -> str:
+def clean_dnd_text(text: str) -> str:
     text = re.sub(r"\{@action ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@action ([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\1 (\2)", text)
@@ -85,7 +85,7 @@ def parse_spell_school(school: str) -> str:
     return SPELL_SCHOOLS[school]
 
 
-def _format_single_casting_time(time: any) -> str:
+def __parse_single_casting_time(time: any) -> str:
     amount = time["number"]
     unit = time["unit"]
     note = None
@@ -118,16 +118,16 @@ def _format_single_casting_time(time: any) -> str:
     return result
 
 
-def format_casting_time(time: any) -> str:
+def parse_casting_time(time: any) -> str:
     if isinstance(time, list):
-        casting_times = [_format_single_casting_time(t) for t in time]
+        casting_times = [__parse_single_casting_time(t) for t in time]
     else:
-        casting_times = [_format_single_casting_time(time)]
+        casting_times = [__parse_single_casting_time(time)]
 
     return " or ".join(casting_times)
 
 
-def format_duration_time(duration: any) -> str:
+def parse_duration_time(duration: any) -> str:
     duration = duration[0]
     if duration["type"] == "instant":
         return "Instantaneous"
@@ -148,7 +148,7 @@ def format_duration_time(duration: any) -> str:
     return f"Unsupported duration type: '{duration['type']}'"
 
 
-def format_distance(distance: any) -> str:
+def parse_distance(distance: any) -> str:
     if distance["type"] == "touch":
         return "Touch"
 
@@ -176,30 +176,30 @@ def format_distance(distance: any) -> str:
     return f"Unsupported distance type: '{distance['type']}'"
 
 
-def format_range(spell_range: any) -> str:
+def parse_range(spell_range: any) -> str:
     if spell_range["type"] == "point":
-        return format_distance(spell_range["distance"])
+        return parse_distance(spell_range["distance"])
 
     if spell_range["type"] == "cube":
-        return f"Cube ({format_distance(spell_range['distance'])})"
+        return f"Cube ({parse_distance(spell_range['distance'])})"
 
     if spell_range["type"] == "emanation":
-        return f"Emanation ({format_distance(spell_range['distance'])})"
+        return f"Emanation ({parse_distance(spell_range['distance'])})"
 
     if spell_range["type"] == "radius":
-        return f"Radius ({format_distance(spell_range['distance'])})"
+        return f"Radius ({parse_distance(spell_range['distance'])})"
 
     if spell_range["type"] == "cone":
-        return f"Cone ({format_distance(spell_range['distance'])})"
+        return f"Cone ({parse_distance(spell_range['distance'])})"
 
     if spell_range["type"] == "line":
-        return f"Line ({format_distance(spell_range['distance'])})"
+        return f"Line ({parse_distance(spell_range['distance'])})"
 
     if spell_range["type"] == "sphere":
-        return f"Sphere ({format_distance(spell_range['distance'])})"
+        return f"Sphere ({parse_distance(spell_range['distance'])})"
 
     if spell_range["type"] == "hemisphere":
-        return f"Hemisphere ({format_distance(spell_range['distance'])})"
+        return f"Hemisphere ({parse_distance(spell_range['distance'])})"
 
     if spell_range["type"] == "special":
         return "Special"
@@ -207,7 +207,7 @@ def format_range(spell_range: any) -> str:
     return f"Unsupported range type: '{spell_range['type']}'"
 
 
-def format_components(components: dict) -> str:
+def parse_components(components: dict) -> str:
     result = []
     if components.get("v", False):
         result.append("V")
@@ -221,12 +221,12 @@ def format_components(components: dict) -> str:
     return ", ".join(result)
 
 
-def _format_description_block(description: any) -> str:
+def __parse_description_block(description: any) -> str:
     if isinstance(description, str):
-        return format_dnd_text(description)
+        return clean_dnd_text(description)
 
     if description["type"] == "quote":
-        quote = _format_description_block_from_blocks(description["entries"])
+        quote = __parse_description_block_from_blocks(description["entries"])
         by = description["by"]
         return f"*{quote}* - {by}"
 
@@ -234,29 +234,29 @@ def _format_description_block(description: any) -> str:
         bullet = "•"  # U+2022
         points = []
         for item in description["items"]:
-            points.append(f"{bullet} {_format_description_block(item)}")
+            points.append(f"{bullet} {__parse_description_block(item)}")
         return "\n".join(points)
 
     if description["type"] == "inset":
-        return f"*{_format_description_block_from_blocks(description['entries'])}*"
+        return f"*{__parse_description_block_from_blocks(description['entries'])}*"
 
     if description["type"] == "item":
         name = description["name"]
-        entries = [_format_description_block(e) for e in description["entries"]]
+        entries = [__parse_description_block(e) for e in description["entries"]]
         entries = "\n".join(entries)
         return f"**{name}**: {entries}"
 
     return f"Unsupported description type: '{description['type']}'"
 
 
-def _format_description_block_from_blocks(descriptions: list[any]) -> str:
-    blocks = [_format_description_block(desc) for desc in descriptions]
+def __parse_description_block_from_blocks(descriptions: list[any]) -> str:
+    blocks = [__parse_description_block(desc) for desc in descriptions]
     return "\n\n".join(blocks)
 
 
-def _parse_table_value(value: any) -> str:
+def __parse_table_value(value: any) -> str:
     if isinstance(value, str):
-        return format_dnd_text(value)
+        return clean_dnd_text(value)
     if value["type"] == "cell":
         # Should be improved
         if "roll" in value.keys():
@@ -272,7 +272,7 @@ def _parse_table_value(value: any) -> str:
     return f"Unknown table value type {value['type']}"
 
 
-def _prettify_table(title: str, cells: list[list[str]], fallbackUrl: str) -> str:
+def __prettify_table(title: str, cells: list[list[str]], fallbackUrl: str) -> str:
     """
     Prettify a table, by converting it to a string. The field string length is less
     than or equal to 1024 characters. Because the generated string needs at least 6
@@ -308,18 +308,18 @@ def _prettify_table(title: str, cells: list[list[str]], fallbackUrl: str) -> str
     return f"```{table_string}```"
 
 
-def _format_description_from_table(
+def __parse_description_from_table(
     description: any, fallbackUrl: str
 ) -> tuple[str, str]:
     caption = description.get("caption", "")
-    labels = [format_dnd_text(label) for label in description["colLabels"]]
-    rows = [[_parse_table_value(v) for v in row] for row in description["rows"]]
+    labels = [clean_dnd_text(label) for label in description["colLabels"]]
+    rows = [[__parse_table_value(v) for v in row] for row in description["rows"]]
 
-    table = _prettify_table(caption, [labels] + rows, fallbackUrl)
+    table = __prettify_table(caption, [labels] + rows, fallbackUrl)
     return (caption, table)
 
 
-def format_descriptions(
+def parse_descriptions(
     name: str, description: list[any], fallbackUrl: str
 ) -> list[tuple[str, str]]:
     subdescriptions: list[tuple[str, str]] = []
@@ -330,18 +330,18 @@ def format_descriptions(
         # Special case scenario where an entry is a description on its own
         # These will be handled separately
         if isinstance(desc, str):
-            blocks.append(format_dnd_text(desc))
+            blocks.append(clean_dnd_text(desc))
         else:
             if desc["type"] == "entries":
                 subdescriptions.extend(
-                    format_descriptions(desc["name"], desc["entries"], fallbackUrl)
+                    parse_descriptions(desc["name"], desc["entries"], fallbackUrl)
                 )
             elif desc["type"] == "table":
                 subdescriptions.append(
-                    _format_description_from_table(desc, fallbackUrl)
+                    __parse_description_from_table(desc, fallbackUrl)
                 )
             else:
-                blocks.append(_format_description_block(desc))
+                blocks.append(__parse_description_block(desc))
 
     descriptions = []
     if len(blocks) > 0:

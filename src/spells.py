@@ -5,11 +5,11 @@ Find the spells from the 5e.tools data. The spells are saved in alphabetical ord
 import json
 import os
 from src.parser import (
-    format_casting_time,
-    format_components,
-    format_descriptions,
-    format_duration_time,
-    format_range,
+    parse_casting_time,
+    parse_components,
+    parse_descriptions,
+    parse_duration_time,
+    parse_range,
     parse_spell_level,
     parse_spell_school,
 )
@@ -32,18 +32,18 @@ class Spell(object):
         self.source = json["source"]
         self.level = parse_spell_level(json["level"])
         self.school = parse_spell_school(json["school"])
-        self.casting_time = format_casting_time(json["time"])
-        self.spell_range = format_range(json["range"])
-        self.components = format_components(json["components"])
-        self.duration = format_duration_time(json["duration"])
-        self.descriptions = format_descriptions(
+        self.casting_time = parse_casting_time(json["time"])
+        self.spell_range = parse_range(json["range"])
+        self.components = parse_components(json["components"])
+        self.duration = parse_duration_time(json["duration"])
+        self.descriptions = parse_descriptions(
             "Description", json["entries"], self.url
         )
         if "entriesHigherLevel" in json:
             for entry in json["entriesHigherLevel"]:
                 name = entry["name"]
                 entries = entry["entries"]
-                self.descriptions.extend(format_descriptions(name, entries, self.url))
+                self.descriptions.extend(parse_descriptions(name, entries, self.url))
         self.classes = []
 
     @property
