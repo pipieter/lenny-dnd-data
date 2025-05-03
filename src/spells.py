@@ -95,5 +95,7 @@ def generate_spells(index_path: str) -> None:
         sourcePath = os.path.join(index_path, sources[source])
         spells.extend(_load_spells_file(sourcePath))
 
+    spells = sorted(spells, key=lambda s: (s["name"], s["source"]))
+
     with open("./generated/spells.json", "w") as file:
         json.dump(spells, file, indent=2)
