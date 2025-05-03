@@ -1,5 +1,5 @@
 """
-Generate the spells from the 5e.tools data. The spells are saved in alphabetical order.
+Find the spells from the 5e.tools data. The spells are saved in alphabetical order.
 """
 
 import json
@@ -52,54 +52,21 @@ class Spell(object):
         url = url.replace(" ", "%20")
         return url
 
-    def to_json(self) -> dict:
-        result = {}
-        result["name"] = self.name
-        result["source"] = self.source
-        result["level"] = self.level
-        result["school"] = self.school
-        result["casting_time"] = self.casting_time
-        result["range"] = self.spell_range
-        result["components"] = self.components
-        result["duration"] = self.duration
-        result["description"] = []
-        result["classes"] = []
 
-        for name, text in self.descriptions:
-            result["description"].append({"name": name, "text": text})
-
-        classes = sorted(self.classes)
-        for name, source in classes:
-            result["classes"].append({"name": name, "source": source})
-
-        return result
-
-    def add_class(self, name: str, source: str) -> None:
-        self.classes.append((name, source))
-
-    def __repr__(self):
-        return str(self)
-
-
-def _load_spells_file(path: str):
+def __load_spells_file(path: str):
     results = []
     with open(path, "r", encoding="utf-8") as file:
         spells = json.load(file)
         for raw in spells["spell"]:
             spell = Spell(raw)
             results.append(spell)
-            print(f"SpellList: loaded spell '{spell.name}'")
 
     print(f"SpellList: loaded spell file '{path}'")
     return results
 
-def get_index(spells: list[dict], name: str, source: str) -> int:
-    for i, spell in enumerate(spells):
-        if spell.name == name and spell.source == source:
-            return i
-    return -1
 
-def generate_spells(index_path: str) -> None:
+def load_spells() -> list[Spell]:
+    index_path = "5etools-src/data/spells"
     spells: list[Spell] = []
 
     index = os.path.join(index_path, "index.json")
@@ -108,25 +75,7 @@ def generate_spells(index_path: str) -> None:
 
     for source in sources:
         sourcePath = os.path.join(index_path, sources[source])
-        spells.extend(_load_spells_file(sourcePath))
-
-    sources_path = os.path.join(index_path, "sources.json")
-    with open(sources_path, "r") as file:
-        sources = json.load(file)
-
-    # Add classes data
-    for source, spells_data in sources.items():
-        for spell, class_data in spells_data.items():
-            index = get_index(spells, spell, source)
-            if "class" in class_data:
-                for class_data in class_data["class"]:
-                    spells[index].add_class(class_data["name"], class_data["source"])
-            if "classVariant" in class_data:
-                for class_data in class_data["classVariant"]:
-                    spells[index].add_class(class_data["name"], class_data["source"])                
+        spells.extend(__load_spells_file(sourcePath))
 
     spells = sorted(spells, key=lambda s: (s.name, s.source))
-    spells = [spell.to_json() for spell in spells]
-
-    with open("./generated/spells.json", "w") as file:
-        json.dump(spells, file, indent=2)
+    return spells
