@@ -136,6 +136,7 @@ def get_spells_json() -> list[dict]:
         result["range"] = spell.spell_range
         result["components"] = spell.components
         result["duration"] = spell.duration
+        result["url"] = spell.url
         result["description"] = []
         result["classes"] = []
 
