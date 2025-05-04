@@ -2,6 +2,7 @@
 Find the spells from the 5e.tools data. The spells are saved in alphabetical order.
 """
 
+import dataclasses
 import json
 import os
 from src.parser import (
@@ -36,9 +37,7 @@ class Spell(object):
         self.spell_range = parse_range(json["range"])
         self.components = parse_components(json["components"])
         self.duration = parse_duration_time(json["duration"])
-        self.descriptions = parse_descriptions(
-            "Description", json["entries"], self.url
-        )
+        self.descriptions = parse_descriptions("Description", json["entries"], self.url)
         if "entriesHigherLevel" in json:
             for entry in json["entriesHigherLevel"]:
                 name = entry["name"]
@@ -53,7 +52,13 @@ class Spell(object):
         return url
 
 
-def __load_spells_file(path: str):
+@dataclasses.dataclass
+class SpellCaster(object):
+    name: str
+    source: str
+
+
+def __load_spells_file(path: str) -> list[Spell]:
     results = []
     with open(path, "r", encoding="utf-8") as file:
         spells = json.load(file)
@@ -64,7 +69,7 @@ def __load_spells_file(path: str):
     return results
 
 
-def load_spells() -> list[Spell]:
+def __load_spells() -> list[Spell]:
     index_path = "5etools-src/data/spells"
     spells: list[Spell] = []
 
@@ -78,3 +83,69 @@ def load_spells() -> list[Spell]:
 
     spells = sorted(spells, key=lambda s: (s.name, s.source))
     return spells
+
+
+def __load_spell_casters() -> dict[tuple[str, str], list[SpellCaster]]:
+    casters: dict[SpellCaster] = dict()
+
+    path = "5etools-src/data/spells/sources.json"
+
+    with open(path, "r") as file:
+        sources = json.load(file)
+        for source, spells_data in sources.items():
+            for spell, caster_entries in spells_data.items():
+                casters[(spell, source)] = []
+                if "class" in caster_entries:
+                    for caster_data in caster_entries["class"]:
+                        caster_name = caster_data["name"]
+                        caster_source = caster_data["source"]
+                        casters[(spell, source)].append(
+                            SpellCaster(caster_name, caster_source)
+                        )
+                if "classVariant" in caster_entries:
+                    for caster_data in caster_entries["classVariant"]:
+                        caster_name = caster_data["name"]
+                        caster_source = caster_data["source"]
+                        casters[(spell, source)].append(
+                            SpellCaster(caster_name, caster_source)
+                        )
+
+    # Sort casters alphabetically
+    for key in casters.keys():
+        casters[key] = sorted(
+            casters[key],
+            key=lambda c: (c.name, c.source),
+        )
+
+    return casters
+
+
+def get_spells_json() -> list[dict]:
+    spells = __load_spells()
+    casters = __load_spell_casters()
+
+    results = []
+
+    for spell in spells:
+        result = dict()
+        result["name"] = spell.name
+        result["source"] = spell.source
+        result["level"] = spell.level
+        result["school"] = spell.school
+        result["casting_time"] = spell.casting_time
+        result["range"] = spell.spell_range
+        result["components"] = spell.components
+        result["duration"] = spell.duration
+        result["description"] = []
+        result["classes"] = []
+
+        for name, text in spell.descriptions:
+            result["description"].append({"name": name, "text": text})
+
+        spell_casters = casters.get((spell.name, spell.source), [])
+        for caster in spell_casters:
+            result["classes"].append({"name": caster.name, "source": caster.source})
+
+        results.append(result)
+
+    return results
