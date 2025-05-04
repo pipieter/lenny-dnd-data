@@ -223,6 +223,16 @@ def get_items_json() -> list[dict]:
         for name, text in description:
             result["description"].append({"name": name, "text": text})
 
+        # Type description
+        if "type" in item:
+            type = item["type"].split("|")[0]
+            type = types[type]
+            if "entries" in type:
+                type_description = parse_descriptions("", type["entries"], url)
+                for name, text in type_description:
+                    result["description"].append({"name": name, "text": text})
+
+
         # Item properties
         result["properties"] = []
         if "dmg1" in item:
