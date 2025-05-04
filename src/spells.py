@@ -61,7 +61,6 @@ def __load_spells_file(path: str):
             spell = Spell(raw)
             results.append(spell)
 
-    print(f"SpellList: loaded spell file '{path}'")
     return results
 
 
