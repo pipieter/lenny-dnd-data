@@ -1,4 +1,5 @@
 import json
+import re
 
 from src.parser import (
     clean_dnd_text,
@@ -9,6 +10,22 @@ from src.parser import (
 
 
 ITEM_PATHS = ["5etools-src/data/items.json", "5etools-src/data/items-base.json"]
+
+DAMAGE_TYPES = {
+    "A": "Acid",
+    "B": "Bludgeoning",
+    "C": "Cold",
+    "F": "Fire",
+    "O": "Force",
+    "L": "Lightning",
+    "N": "Necrotic",
+    "P": "Piercing",
+    "I": "Poison",
+    "Y": "Psychic",
+    "R": "Radiant",
+    "S": "Slashing",
+    "T": "Thunder",
+}
 
 
 def __load_item_types() -> dict[str, dict]:
@@ -26,6 +43,21 @@ def __load_item_types() -> dict[str, dict]:
     return results
 
 
+def __load_item_properties() -> dict[str, dict]:
+    properties = []
+
+    for path in ITEM_PATHS:
+        with open(path, "r") as file:
+            data = json.load(file)
+            properties.extend(data.get("itemProperty", []))
+
+    results = dict()
+    for property in properties:
+        results[property["abbreviation"]] = property
+
+    return results
+
+
 def __load_items() -> list[dict]:
     items = []
 
@@ -34,19 +66,37 @@ def __load_items() -> list[dict]:
             data = json.load(file)
             items.extend(data.get("item", []))
             items.extend(data.get("baseitem", []))
+            # TODO items.extend(data.get("itemGroup", [])), has special interactions
 
     return items
+
+
+def __apply_item_template(item: dict, entry: dict, template: str) -> str:
+    # Apply item parts to name
+    template = template.replace("{{prop_name}}", entry["name"])
+    template = template.replace("{{prop_name_lower}}", entry["name"].lower())
+
+    has_remaining_template = True
+    while has_remaining_template:
+        matches = re.match(r"^.*\{\{item\.([^\}]*?)\}\}.*$", template)
+        if matches == None:
+            has_remaining_template = False
+        else:
+            template_field = matches.group(1)
+            template_result = str(item[template_field])
+            template_result = template_result.split("|")[0]
+            template = template.replace(
+                f"{{{{item.{template_field}}}}}",
+                template_result,
+            )
+    return template
 
 
 def get_items_json() -> list[dict]:
     """
     TODO
     - Weapon properties
-      - Weapon properties small above
-      - Weapon properties in detail
       - Weapon masteries
-      - Weapon age
-      - Weapon category
     - _copy items
     - item groups
     - item entries
@@ -54,6 +104,7 @@ def get_items_json() -> list[dict]:
 
     items = __load_items()
     types = __load_item_types()
+    properties = __load_item_properties()
 
     results = []
     to_copy = []
@@ -78,7 +129,6 @@ def get_items_json() -> list[dict]:
             if "weightNote" in item:
                 note = f" {item['weightNote']}"
             result["weight"] = f"{weight}{note}"
-            ...
         else:
             result["weight"] = None
 
@@ -145,17 +195,65 @@ def get_items_json() -> list[dict]:
                 elif reqAttune == "optional":
                     attune = " (attunement optional)"
                 elif reqAttune.startswith("by"):
-                    attune = f" (requires attunement {reqAttune})"
+                    attune = f" (requires attunement {clean_dnd_text(reqAttune)})"
 
             if rarity == "none" or rarity.startswith("unknown"):
                 ...
             else:
                 result["type"].append(f"{rarity}{attune}")
 
+        # Item description
         result["description"] = []
         description = parse_descriptions("", item.get("entries", []), url)
         for name, text in description:
             result["description"].append({"name": name, "text": text})
+
+        # Item properties
+        result["properties"] = []
+        if "dmg1" in item:
+            damage = f"**{item['dmg1']}** {DAMAGE_TYPES[item['dmgType']]}"
+            result["properties"].append(damage)
+        if "property" in item:
+            for p in item["property"]:
+                note = None
+                if isinstance(p, dict):
+                    note = p.get("note")
+                    p = p["uid"]
+
+                property = properties.get(p, None)
+                if property == None:
+                    p = p.split("|")[0]
+                    property = properties[p]
+
+                if property.get("name") == "special":
+                    result["properties"].append("special")
+                else:
+                    entries = property.get("entries")
+                    if entries is None:
+                        entries = property.get("entriesTemplate")
+                    if entries is None or len(entries) == 0:
+                        continue
+
+                    if len(entries) > 1:
+                        raise RuntimeError(
+                            f"Found property with more than one entry '{property['abbreviation']}'"
+                        )
+
+                    entry = entries[0]
+                    template = __apply_item_template(item, entry, property["template"])
+                    template = template.lower()
+
+                    result["properties"].append(template)
+
+                    # Apply template to entries of entry, required for Extended Reach
+                    for i in range(len(entry["entries"])):
+                        entry["entries"][i] = __apply_item_template(
+                            item, entry, entry["entries"][i]
+                        )
+
+                    result["description"].extend(
+                        parse_descriptions(entry["name"], entry["entries"], url)
+                    )
 
         results.append(result)
 
