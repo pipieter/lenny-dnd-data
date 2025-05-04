@@ -400,8 +400,8 @@ def parse_descriptions(
     return descriptions
 
 
-def parse_item_value(value: int | None) -> str | None:
-    if value is None:
+def parse_item_value(value: int) -> str | None:
+    if value == 0:
         return None
 
     gp = (value) // 100
@@ -422,3 +422,9 @@ def parse_item_value(value: int | None) -> str | None:
         return None
 
     return " ".join(values)
+
+def parse_item_weight(weight: int) -> str | None:
+    if weight == 0:
+        return None
+
+    return f"{weight} lb."

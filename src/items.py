@@ -1,7 +1,7 @@
 import dataclasses
 import json
 
-from src.parser import clean_dnd_text, parse_descriptions, parse_item_value
+from src.parser import clean_dnd_text, parse_descriptions, parse_item_value, parse_item_weight
 
 
 class Item(object):
@@ -239,6 +239,8 @@ def get_items_json() -> list[dict]:
         result["name"] = clean_dnd_text(item["name"])
         result["source"] = item["source"]
         result["url"] = url
+        result["value"] = parse_item_value(item.get("value", 0))
+        result["weight"] = parse_item_weight(item.get("weight", 0))
 
         # Item type information, see render.js:11480 (getHtmlAndTextTypes)
         result["type"] = []
