@@ -2941,12 +2941,17 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d8** Slashing",
       "thrown (20/60\u00a0ft.)",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: topple"
     ]
   },
   {
@@ -5306,12 +5311,17 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Graze",
+        "text": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
       }
     ],
     "properties": [
       "**2d6** Slashing",
       "heavy",
-      "two-handed"
+      "two-handed",
+      "mastery: graze"
     ]
   },
   {
@@ -12189,13 +12199,18 @@
       {
         "name": "Thrown",
         "text": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+      },
+      {
+        "name": "Nick",
+        "text": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
       }
     ],
     "properties": [
       "**1d4** Piercing",
       "finesse",
       "light",
-      "thrown (20/60\u00a0ft.)"
+      "thrown (20/60\u00a0ft.)",
+      "mastery: nick"
     ]
   },
   {
@@ -15289,12 +15304,17 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Push",
+        "text": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
       }
     ],
     "properties": [
       "**1d8** Bludgeoning",
       "thrown (20/60\u00a0ft.)",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: push"
     ]
   },
   {
@@ -16390,11 +16410,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -16421,11 +16446,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -16452,11 +16482,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -16483,11 +16518,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -16514,11 +16554,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -16545,11 +16590,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -16576,11 +16626,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -16607,11 +16662,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -16638,11 +16698,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -26348,11 +26413,16 @@
       {
         "name": "Thrown",
         "text": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**1d6** Piercing",
-      "thrown (30/120\u00a0ft.)"
+      "thrown (30/120\u00a0ft.)",
+      "mastery: slow"
     ]
   },
   {
@@ -28360,11 +28430,16 @@
       {
         "name": "Light",
         "text": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**1d4** Bludgeoning",
-      "light"
+      "light",
+      "mastery: slow"
     ]
   },
   {
@@ -37475,12 +37550,17 @@
       {
         "name": "Thrown",
         "text": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**1d6** Psychic",
       "finesse",
-      "thrown (60/120\u00a0ft.)"
+      "thrown (60/120\u00a0ft.)",
+      "mastery: vex (you can use this property, and it doesn't count against the number of properties you can use with weapon mastery)"
     ]
   },
   {
@@ -38020,12 +38100,17 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
       "thrown (30/120\u00a0ft.)",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -42949,12 +43034,17 @@
       {
         "name": "Light",
         "text": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+      },
+      {
+        "name": "Nick",
+        "text": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
       }
     ],
     "properties": [
       "**1d6** Slashing",
       "finesse",
-      "light"
+      "light",
+      "mastery: nick"
     ]
   },
   {
@@ -48296,11 +48386,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -48353,11 +48448,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -48452,11 +48552,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -48703,11 +48808,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -48734,11 +48844,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -48833,11 +48948,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -48898,11 +49018,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -48991,11 +49116,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -49107,11 +49237,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -49184,11 +49319,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -49253,11 +49393,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -49426,11 +49571,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -49495,11 +49645,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -49619,11 +49774,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -49712,11 +49872,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -49773,11 +49938,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -50677,12 +50847,17 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Sap",
+        "text": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
       }
     ],
     "properties": [
       "**1d8** Radiant",
       "finesse",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: sap"
     ]
   },
   {
@@ -50975,11 +51150,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Sap",
+        "text": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
       }
     ],
     "properties": [
       "**1d8** Slashing",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: sap"
     ]
   },
   {
@@ -51448,11 +51628,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Sap",
+        "text": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
       }
     ],
     "properties": [
       "**1d8** Slashing",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: sap"
     ]
   },
   {
@@ -52595,11 +52780,16 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Push",
+        "text": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
       }
     ],
     "properties": [
       "**1d8** Bludgeoning",
-      "two-handed"
+      "two-handed",
+      "mastery: push"
     ]
   },
   {
@@ -53395,12 +53585,17 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d8** Piercing",
       "thrown (20/60\u00a0ft.)",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: topple"
     ]
   },
   {
@@ -55603,12 +55798,17 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d8** Piercing",
       "thrown (20/60\u00a0ft.)",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: topple"
     ]
   },
   {
@@ -55996,12 +56196,17 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Push",
+        "text": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
       }
     ],
     "properties": [
       "**1d8** Bludgeoning",
       "thrown (60/180\u00a0ft.)",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: push"
     ]
   },
   {
@@ -57368,13 +57573,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Sap",
+        "text": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
       }
     ],
     "properties": [
       "**6d8** Necrotic",
       "ammunition (120/360\u00a0ft.; energy cell)",
       "reload (2 shots)",
-      "two-handed"
+      "two-handed",
+      "mastery: sap"
     ]
   },
   {
@@ -57537,6 +57747,10 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
@@ -57544,7 +57758,8 @@
       "ammunition (80/240\u00a0ft.; firearm bullet)",
       "burst fire",
       "reload (30 shots)",
-      "two-handed"
+      "two-handed",
+      "mastery: slow"
     ]
   },
   {
@@ -57611,11 +57826,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d8** Slashing",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: topple"
     ]
   },
   {
@@ -57679,12 +57899,17 @@
       {
         "name": "Loading",
         "text": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**1** Piercing",
       "ammunition (range 25/100\u00a0ft.; needle)",
-      "loading"
+      "loading",
+      "mastery: vex"
     ]
   },
   {
@@ -57875,11 +58100,16 @@
       {
         "name": "Light",
         "text": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**1d4** Bludgeoning",
-      "light"
+      "light",
+      "mastery: slow"
     ]
   },
   {
@@ -57983,13 +58213,18 @@
       {
         "name": "Thrown",
         "text": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+      },
+      {
+        "name": "Nick",
+        "text": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
       }
     ],
     "properties": [
       "**1d4** Piercing",
       "finesse",
       "light",
-      "thrown (20/60\u00a0ft.)"
+      "thrown (20/60\u00a0ft.)",
+      "mastery: nick"
     ]
   },
   {
@@ -58036,12 +58271,17 @@
       {
         "name": "Thrown",
         "text": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**1d4** Piercing",
       "finesse",
-      "thrown (20/60\u00a0ft.)"
+      "thrown (20/60\u00a0ft.)",
+      "mastery: vex"
     ]
   },
   {
@@ -58308,13 +58548,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Graze",
+        "text": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
       }
     ],
     "properties": [
       "**1d10** Slashing",
       "heavy",
       "reach",
-      "two-handed"
+      "two-handed",
+      "mastery: graze"
     ]
   },
   {
@@ -58378,12 +58623,17 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Cleave",
+        "text": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
       }
     ],
     "properties": [
       "**1d12** Slashing",
       "heavy",
-      "two-handed"
+      "two-handed",
+      "mastery: cleave"
     ]
   },
   {
@@ -58421,11 +58671,16 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Push",
+        "text": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
       }
     ],
     "properties": [
       "**1d8** Bludgeoning",
-      "two-handed"
+      "two-handed",
+      "mastery: push"
     ]
   },
   {
@@ -58472,12 +58727,17 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Graze",
+        "text": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
       }
     ],
     "properties": [
       "**2d6** Slashing",
       "heavy",
-      "two-handed"
+      "two-handed",
+      "mastery: graze"
     ]
   },
   {
@@ -58533,13 +58793,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Cleave",
+        "text": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
       }
     ],
     "properties": [
       "**1d10** Slashing",
       "heavy",
       "reach",
-      "two-handed"
+      "two-handed",
+      "mastery: cleave"
     ]
   },
   {
@@ -58624,13 +58889,18 @@
       {
         "name": "Loading",
         "text": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**1d6** Piercing",
       "ammunition (range 30/120\u00a0ft.; bolt)",
       "light",
-      "loading"
+      "loading",
+      "mastery: vex"
     ]
   },
   {
@@ -58694,12 +58964,17 @@
       {
         "name": "Thrown",
         "text": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**1d6** Slashing",
       "light",
-      "thrown (20/60\u00a0ft.)"
+      "thrown (20/60\u00a0ft.)",
+      "mastery: vex"
     ]
   },
   {
@@ -58764,6 +59039,10 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Push",
+        "text": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
       }
     ],
     "properties": [
@@ -58771,7 +59050,8 @@
       "ammunition (range 100/400\u00a0ft.; bolt)",
       "heavy",
       "loading",
-      "two-handed"
+      "two-handed",
+      "mastery: push"
     ]
   },
   {
@@ -58954,13 +59234,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**2d10** Piercing",
       "ammunition (80/240\u00a0ft.; firearm bullet)",
       "reload (5 shots)",
-      "two-handed"
+      "two-handed",
+      "mastery: slow"
     ]
   },
   {
@@ -58998,11 +59283,16 @@
       {
         "name": "Thrown",
         "text": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**1d6** Piercing",
-      "thrown (30/120\u00a0ft.)"
+      "thrown (30/120\u00a0ft.)",
+      "mastery: slow"
     ]
   },
   {
@@ -59057,13 +59347,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d10** Piercing",
       "heavy",
       "reach",
-      "two-handed"
+      "two-handed",
+      "mastery: topple"
     ]
   },
   {
@@ -59114,12 +59409,17 @@
       {
         "name": "Reload",
         "text": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**3d6** Radiant",
       "ammunition (40/120\u00a0ft.; energy cell)",
-      "reload (50 shots)"
+      "reload (50 shots)",
+      "mastery: vex"
     ]
   },
   {
@@ -59179,13 +59479,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**3d8** Radiant",
       "ammunition (100/300\u00a0ft.; energy cell)",
       "reload (30 shots)",
-      "two-handed"
+      "two-handed",
+      "mastery: slow"
     ]
   },
   {
@@ -59270,13 +59575,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**1d8** Piercing",
       "ammunition (range 80/320\u00a0ft.; bolt)",
       "loading",
-      "two-handed"
+      "two-handed",
+      "mastery: slow"
     ]
   },
   {
@@ -59323,12 +59633,17 @@
       {
         "name": "Thrown",
         "text": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+      },
+      {
+        "name": "Nick",
+        "text": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
       }
     ],
     "properties": [
       "**1d4** Bludgeoning",
       "light",
-      "thrown (20/60\u00a0ft.)"
+      "thrown (20/60\u00a0ft.)",
+      "mastery: nick"
     ]
   },
   {
@@ -59414,13 +59729,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**1d8** Piercing",
       "ammunition (range 150/600\u00a0ft.; arrow)",
       "heavy",
-      "two-handed"
+      "two-handed",
+      "mastery: slow"
     ]
   },
   {
@@ -59475,11 +59795,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Sap",
+        "text": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
       }
     ],
     "properties": [
       "**1d8** Slashing",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: sap"
     ]
   },
   {
@@ -59614,12 +59939,17 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**2d6** Bludgeoning",
       "heavy",
-      "two-handed"
+      "two-handed",
+      "mastery: topple"
     ]
   },
   {
@@ -59734,13 +60064,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**1d12** Piercing",
       "ammunition (range 40/120\u00a0ft.; firearm bullet)",
       "loading",
-      "two-handed"
+      "two-handed",
+      "mastery: slow"
     ]
   },
   {
@@ -59945,13 +60280,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Push",
+        "text": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
       }
     ],
     "properties": [
       "**1d10** Piercing",
       "heavy",
       "reach",
-      "two-handed"
+      "two-handed",
+      "mastery: push"
     ]
   },
   {
@@ -60001,12 +60341,17 @@
       {
         "name": "Loading",
         "text": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**1d10** Piercing",
       "ammunition (range 30/90\u00a0ft.; firearm bullet)",
-      "loading"
+      "loading",
+      "mastery: vex"
     ]
   },
   {
@@ -60073,11 +60418,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -60115,11 +60465,16 @@
       {
         "name": "Finesse",
         "text": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**1d8** Piercing",
-      "finesse"
+      "finesse",
+      "mastery: vex"
     ]
   },
   {
@@ -60196,12 +60551,17 @@
       {
         "name": "Reload",
         "text": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+      },
+      {
+        "name": "Sap",
+        "text": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
       }
     ],
     "properties": [
       "**2d8** Piercing",
       "ammunition (40/120\u00a0ft.; firearm bullet)",
-      "reload (6 shots)"
+      "reload (6 shots)",
+      "mastery: sap"
     ]
   },
   {
@@ -60330,12 +60690,17 @@
       {
         "name": "Light",
         "text": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+      },
+      {
+        "name": "Nick",
+        "text": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
       }
     ],
     "properties": [
       "**1d6** Slashing",
       "finesse",
-      "light"
+      "light",
+      "mastery: nick"
     ]
   },
   {
@@ -60358,12 +60723,17 @@
       {
         "name": "Reload",
         "text": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**2d6** Piercing",
       "ammunition (50/150\u00a0ft.; firearm bullet)",
-      "reload (15 shots)"
+      "reload (15 shots)",
+      "mastery: vex"
     ]
   },
   {
@@ -60485,12 +60855,17 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**1d6** Piercing",
       "ammunition (range 80/320\u00a0ft.; arrow)",
-      "two-handed"
+      "two-handed",
+      "mastery: vex"
     ]
   },
   {
@@ -60537,12 +60912,17 @@
       {
         "name": "Light",
         "text": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+      },
+      {
+        "name": "Vex",
+        "text": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ],
     "properties": [
       "**1d6** Piercing",
       "finesse",
-      "light"
+      "light",
+      "mastery: vex"
     ]
   },
   {
@@ -60602,13 +60982,18 @@
       {
         "name": "Two-Handed",
         "text": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Push",
+        "text": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
       }
     ],
     "properties": [
       "**2d8** Piercing",
       "ammunition (30/90\u00a0ft.; firearm bullet)",
       "reload (2 shots)",
-      "two-handed"
+      "two-handed",
+      "mastery: push"
     ]
   },
   {
@@ -60646,11 +61031,16 @@
       {
         "name": "Light",
         "text": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+      },
+      {
+        "name": "Nick",
+        "text": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
       }
     ],
     "properties": [
       "**1d4** Slashing",
-      "light"
+      "light",
+      "mastery: nick"
     ]
   },
   {
@@ -60688,11 +61078,16 @@
       {
         "name": "Ammunition",
         "text": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**1d4** Bludgeoning",
-      "ammunition (range 30/120\u00a0ft.; sling bullet)"
+      "ammunition (range 30/120\u00a0ft.; sling bullet)",
+      "mastery: slow"
     ]
   },
   {
@@ -60822,12 +61217,17 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Sap",
+        "text": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
       }
     ],
     "properties": [
       "**1d6** Piercing",
       "thrown (20/60\u00a0ft.)",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: sap"
     ]
   },
   {
@@ -61044,12 +61444,17 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "text": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d8** Piercing",
       "thrown (20/60\u00a0ft.)",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: topple"
     ]
   },
   {
@@ -61134,11 +61539,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Sap",
+        "text": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
       }
     ],
     "properties": [
       "**1d8** Piercing",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: sap"
     ]
   },
   {
@@ -61193,11 +61603,16 @@
       {
         "name": "Versatile",
         "text": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Push",
+        "text": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
       }
     ],
     "properties": [
       "**1d8** Bludgeoning",
-      "versatile (1d10)"
+      "versatile (1d10)",
+      "mastery: push"
     ]
   },
   {
@@ -61244,12 +61659,17 @@
       {
         "name": "Reach",
         "text": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+      },
+      {
+        "name": "Slow",
+        "text": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
       }
     ],
     "properties": [
       "**1d4** Slashing",
       "finesse",
-      "reach"
+      "reach",
+      "mastery: slow"
     ]
   },
   {

@@ -28,6 +28,22 @@ DAMAGE_TYPES = {
 }
 
 
+def __load_item_masteries() -> dict[str, dict]:
+    masteries = []
+
+    for path in ITEM_PATHS:
+        with open(path, "r") as file:
+            data = json.load(file)
+            masteries.extend(data.get("itemMastery", []))
+
+    results = dict()
+    for mastery in masteries:
+        key = f"{mastery['name']}|{mastery['source']}"
+        results[key] = mastery
+
+    return results
+
+
 def __load_item_types() -> dict[str, dict]:
     types = []
 
@@ -95,8 +111,6 @@ def __apply_item_template(item: dict, entry: dict, template: str) -> str:
 def get_items_json() -> list[dict]:
     """
     TODO
-    - Weapon properties
-      - Weapon masteries
     - _copy items
     - item groups
     - item entries
@@ -105,6 +119,7 @@ def get_items_json() -> list[dict]:
     items = __load_items()
     types = __load_item_types()
     properties = __load_item_properties()
+    masteries = __load_item_masteries()
 
     results = []
     to_copy = []
@@ -254,6 +269,24 @@ def get_items_json() -> list[dict]:
                     property_description = parse_descriptions(
                         entry["name"], entry["entries"], url
                     )
+                    for name, text in property_description:
+                        result["description"].append({"name": name, "text": text})
+
+            # Item mastery
+            if "mastery" in item:
+                for mastery_key in item["mastery"]:
+                    note = ""
+                    if isinstance(mastery_key, dict):
+                        note = mastery_key["note"]
+                        note = f" ({note})"
+                        mastery_key = mastery_key["uid"]
+                    mastery = masteries[mastery_key]
+                    property_name = f"mastery: {mastery['name']}{note}".lower()
+                    property_description = parse_descriptions(
+                        mastery["name"], mastery["entries"], url
+                    )
+
+                    result["properties"].append(property_name)
                     for name, text in property_description:
                         result["description"].append({"name": name, "text": text})
 
