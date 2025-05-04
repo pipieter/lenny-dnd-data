@@ -23,50 +23,86 @@ SPELL_SCHOOLS = {
 }
 
 
-def clean_dnd_text(text: str) -> str:
+def clean_dnd_text(text: str, no_formatting=False) -> str:
+    text = re.sub(r"\{@atk rw\} ", r"+", text)
+
     text = re.sub(r"\{@action ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@action ([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\1 (\2)", text)
     text = re.sub(r"\{@b ([^\}]*?)\}", r"**\1**", text)
     text = re.sub(r"\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@book ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
+    text = re.sub(r"\{@card ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(
         r"\{@chance ([^\}]*?)\|\|\|([^\}]*?)\|([^\}]*?)\}", r"\1 percent", text
     )
+    text = re.sub(r"\{@chance ([^\}]*?)\}", r"\1 percent", text)
     text = re.sub(
         r"\{@classFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\1", text
     )
     text = re.sub(r"\{@condition ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@condition ([^\}]*?)\}", r"\1", text)
-    text = re.sub(r"\{@creature ([^\}]*?)(\|[^\}]*?)?\}", r"__\1__", text)
     text = re.sub(r"\{@d20 -([^\}]*?)\}", r"-\1", text)
     text = re.sub(r"\{@d20 ([^\}]*?)\}", r"+\1", text)
-    text = re.sub(r"\{@damage ([^\}]*?)\}", r"**\1**", text)
     text = re.sub(r"\{@dc ([^\}]*?)\}", r"DC \1", text)
+    text = re.sub(r"\{@deck ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
+    text = re.sub(r"\{@deck ([^\}]*?)\}", r"\1", text)
+    text = re.sub(r"\{@deity ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@dice ([^\}]*?)\|([^\}]*?)\}", r"\1 (\2)", text)
     text = re.sub(r"\{@dice ([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@filter ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@filter ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@filter ([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@hazard ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
+    text = re.sub(r"\{@hazard ([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@hit ([^\}]*?)\}", r"\1", text)
-    text = re.sub(r"\{@i ([^\}]*?)\}", r"*\1*", text)
     text = re.sub(r"\{@item ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\3", text)
     text = re.sub(r"\{@item ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
+    text = re.sub(r"\{@item ([^\}]*?)\}", r"\1", text)
+    text = re.sub(r"\{@itemProperty ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\3", text)
+    text = re.sub(r"\{@language ([^\}]*?)\}", r"\1", text)
+    text = re.sub(r"\{@link ([^\}]*?)\|([^\}]*?)\}", r"[\1](\2)", text)
+    text = re.sub(r"\{@optfeature ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
+    text = re.sub(r"\{@optfeature ([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@quickref ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@race ([^\}]*?)\|\|([^\}]*?)\}", r"\2", text)
     text = re.sub(r"\{@race ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@race ([^\}]*?)\}", r"\1", text)
-    text = re.sub(r"\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"**\3**", text)
     text = re.sub(r"\{@sense ([^\}]*?)\|[^\}]*?\}", r"\1", text)
     text = re.sub(r"\{@sense ([^\}]*?)\}", r"\1", text)
-    text = re.sub(r"\{@skill ([^\}]*?)\|([^\}]*?)\}", r"*\1*", text)
-    text = re.sub(r"\{@skill ([^\}]*?)\}", r"*\1*", text)
-    text = re.sub(r"\{@spell ([^\}]*?)\|([^\}]*?)\}", r"__\1__", text)
-    text = re.sub(r"\{@spell ([^\}]*?)\}", r"__\1__", text)
-    text = re.sub(r"\{@status ([^\}]*?)\}", r"*\1*", text)
+    text = re.sub(r"\{@table ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\3", text)
+    text = re.sub(r"\{@table ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@variantrule ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@variantrule ([^\}]*?)\}", r"\1", text)
+
+    if no_formatting:
+        text = re.sub(r"\{@h\}", r"Hit: ", text)
+        text = re.sub(r"\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\3", text)
+        text = re.sub(r"\{@creature ([^\}]*?)(\|[^\}]*?)?\}", r"\1", text)
+        text = re.sub(r"\{@i ([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@italic ([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@damage ([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\3", text)
+        text = re.sub(r"\{@skill ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@skill ([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@spell ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@spell ([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@status ([^\}]*?)\}", r"\1", text)
+    else:
+        text = re.sub(r"\{@h\}", r"*Hit:* ", text)
+        text = re.sub(r"\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"__\3__", text)
+        text = re.sub(r"\{@creature ([^\}]*?)(\|[^\}]*?)?\}", r"__\1__", text)
+        text = re.sub(r"\{@i ([^\}]*?)\}", r"*\1*", text)
+        text = re.sub(r"\{@italic ([^\}]*?)\}", r"*\1*", text)
+        text = re.sub(r"\{@damage ([^\}]*?)\}", r"**\1**", text)
+        text = re.sub(
+            r"\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"**\3**", text
+        )
+        text = re.sub(r"\{@skill ([^\}]*?)\|([^\}]*?)\}", r"*\1*", text)
+        text = re.sub(r"\{@skill ([^\}]*?)\}", r"*\1*", text)
+        text = re.sub(r"\{@spell ([^\}]*?)\|([^\}]*?)\}", r"__\1__", text)
+        text = re.sub(r"\{@spell ([^\}]*?)\}", r"__\1__", text)
+        text = re.sub(r"\{@status ([^\}]*?)\}", r"*\1*", text)
 
     # Note: notes should be parsed at the end, because they might contain subqueries
     text = re.sub(r"\{@note ([^\}]*?)\}", r"\(\1\)", text)
@@ -227,8 +263,11 @@ def __parse_description_block(description: any) -> str:
 
     if description["type"] == "quote":
         quote = __parse_description_block_from_blocks(description["entries"])
-        by = description["by"]
-        return f"*{quote}* - {by}"
+        if "by" in description:
+            by = description["by"]
+            return f"*{quote}* - {by}"
+        else:
+            return f"*{quote}*"
 
     if description["type"] == "list":
         bullet = "•"  # U+2022
@@ -242,7 +281,14 @@ def __parse_description_block(description: any) -> str:
 
     if description["type"] == "item":
         name = description["name"]
-        entries = [__parse_description_block(e) for e in description["entries"]]
+        if "entries" in description:
+            entries = [__parse_description_block(e) for e in description["entries"]]
+        elif "entry" in description:
+            entries = [__parse_description_block(description["entry"])]
+        else:
+            raise RuntimeError(
+                "Could not find entry in description block with type 'item'"
+            )
         entries = "\n".join(entries)
         return f"**{name}**: {entries}"
 
@@ -333,8 +379,9 @@ def parse_descriptions(
             blocks.append(clean_dnd_text(desc))
         else:
             if desc["type"] == "entries":
+                desc_name = clean_dnd_text(desc.get("name", ""), no_formatting=True)
                 subdescriptions.extend(
-                    parse_descriptions(desc["name"], desc["entries"], fallbackUrl)
+                    parse_descriptions(desc_name, desc["entries"], fallbackUrl)
                 )
             elif desc["type"] == "table":
                 subdescriptions.append(
@@ -351,3 +398,27 @@ def parse_descriptions(
     descriptions.extend(subdescriptions)
 
     return descriptions
+
+
+def parse_item_value(value: int | None) -> str | None:
+    if value is None:
+        return None
+
+    gp = (value) // 100
+    sp = (value % 100) // 10
+    cp = value % 10
+
+    values = []
+    if gp > 0:
+        # Adds thousands separators
+        gp_formatted = "{:,}".format(gp).replace(",", ".")
+        values.append(f"{gp_formatted} gp")
+    if sp > 0:
+        values.append(f"{sp} sp")
+    if cp > 0:
+        values.append(f"{cp} cp")
+
+    if len(values) == 0:
+        return None
+
+    return " ".join(values)
