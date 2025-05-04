@@ -423,8 +423,12 @@ def parse_item_value(value: int) -> str | None:
 
     return " ".join(values)
 
+
 def parse_item_weight(weight: int) -> str | None:
     if weight == 0:
         return None
 
-    return f"{weight} lb."
+    if weight < 1:
+        return f"{weight*16} oz."
+    else:
+        return f"{weight} lb."

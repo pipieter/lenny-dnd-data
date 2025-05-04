@@ -240,7 +240,15 @@ def get_items_json() -> list[dict]:
         result["source"] = item["source"]
         result["url"] = url
         result["value"] = parse_item_value(item.get("value", 0))
-        result["weight"] = parse_item_weight(item.get("weight", 0))
+        if "weight" in item:
+            weight = parse_item_weight(item["weight"])
+            note = ""
+            if "weightNote" in item:
+                note = f" {item['weightNote']}"
+            result["weight"] = f"{weight}{note}"
+            ...
+        else:
+            result["weight"] = None
 
         # Item type information, see render.js:11480 (getHtmlAndTextTypes)
         result["type"] = []
