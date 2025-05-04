@@ -37,7 +37,7 @@ class Spell(object):
         self.spell_range = parse_range(json["range"])
         self.components = parse_components(json["components"])
         self.duration = parse_duration_time(json["duration"])
-        self.descriptions = parse_descriptions("Description", json["entries"], self.url)
+        self.descriptions = parse_descriptions("", json["entries"], self.url)
         if "entriesHigherLevel" in json:
             for entry in json["entriesHigherLevel"]:
                 name = entry["name"]
