@@ -195,7 +195,14 @@ def get_items_json() -> list[dict]:
     - Weapon properties
       - Weapon properties small above
       - Weapon properties in detail
+      - Weapon masteries
+      - Weapon age
+      - Weapon category
     - _copy items
+    - weight
+    - item types
+    - item groups
+    - item entries
     """
 
     items = __load_items()
