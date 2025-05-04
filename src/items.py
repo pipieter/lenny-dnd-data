@@ -251,9 +251,11 @@ def get_items_json() -> list[dict]:
                             item, entry, entry["entries"][i]
                         )
 
-                    result["description"].extend(
-                        parse_descriptions(entry["name"], entry["entries"], url)
+                    property_description = parse_descriptions(
+                        entry["name"], entry["entries"], url
                     )
+                    for name, text in property_description:
+                        result["description"].append({"name": name, "text": text})
 
         results.append(result)
 
