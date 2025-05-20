@@ -1,0 +1,658 @@
+[
+  {
+    "name": "Blinded",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Blinded_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A blinded creature can't see and automatically fails any ability check that requires sight.\n\u2022 Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/blinded.webp"
+  },
+  {
+    "name": "Blinded",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Blinded_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Blinded condition, you experience the following effects."
+      ],
+      [
+        "Can't See",
+        "You can't see and automatically fail any ability check that requires sight."
+      ],
+      [
+        "Attacks Affected",
+        "Attack rolls against you have Advantage, and your attack rolls have Disadvantage."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Charmed",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Charmed_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.\n\u2022 The charmer has advantage on any ability check to interact socially with the creature."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/charmed.webp"
+  },
+  {
+    "name": "Charmed",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Charmed_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Charmed condition, you experience the following effects."
+      ],
+      [
+        "Can't Harm the Charmer",
+        "You can't attack the charmer or target the charmer with damaging abilities or Magical Effect."
+      ],
+      [
+        "Social Advantage",
+        "The charmer has Advantage on any ability check to interact with you socially."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Deafened",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Deafened_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A deafened creature can't hear and automatically fails any ability check that requires hearing."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/deafened.webp"
+  },
+  {
+    "name": "Deafened",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Deafened_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Deafened condition, you experience the following effect."
+      ],
+      [
+        "Can't Hear",
+        "You can't hear and automatically fail any ability check that requires hearing."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Exhaustion",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Exhaustion_PHB",
+    "description": [
+      [
+        "Description",
+        "Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description."
+      ],
+      [
+        "",
+        "If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description."
+      ],
+      [
+        "",
+        "A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks."
+      ],
+      [
+        "",
+        "An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1."
+      ],
+      [
+        "",
+        "Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink. Also, being raised from the dead reduces a creature's exhaustion level by 1."
+      ],
+      [
+        "",
+        "```\u256d\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256e\n\u2502 Level \u2502 Effect                                       \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502 1     \u2502 Disadvantage on ability checks               \u2502\n\u2502 2     \u2502 Speed halved                                 \u2502\n\u2502 3     \u2502 Disadvantage on attack rolls and saving      \u2502\n\u2502       \u2502 throws                                       \u2502\n\u2502 4     \u2502 Hit point maximum halved                     \u2502\n\u2502 5     \u2502 Speed reduced to 0                           \u2502\n\u2502 6     \u2502 Death                                        \u2502\n\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f\n```"
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Exhaustion",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Exhaustion_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Exhaustion condition, you experience the following effects."
+      ],
+      [
+        "Exhaustion Levels",
+        "This condition is cumulative. Each time you receive it, you gain 1 Exhaustion level. You die if your Exhaustion level is 6."
+      ],
+      [
+        "D20 Tests Affected",
+        "When you make a D20 Test the roll is reduced by 2 times your Exhaustion level."
+      ],
+      [
+        "Speed Reduced",
+        "Your Speed is reduced by a number of feet equal to 5 times your Exhaustion level."
+      ],
+      [
+        "Removing Exhaustion Levels",
+        "Finishing a Long Rest removes 1 of your Exhaustion levels. When your Exhaustion level reaches 0, the condition ends."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Frightened",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Frightened_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.\n\u2022 The creature can't willingly move closer to the source of its fear."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/frightened.webp"
+  },
+  {
+    "name": "Frightened",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Frightened_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Frightened condition, you experience the following effects."
+      ],
+      [
+        "Ability Checks and Attacks Affected",
+        "You have Disadvantage on ability checks and attack rolls while the source of fear is within line of sight."
+      ],
+      [
+        "Can't Approach",
+        "You can't willingly move closer to the source of fear."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Grappled",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Grappled_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.\n\u2022 The condition ends if the grappler is incapacitated.\n\u2022 The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the __thunderwave__ spell."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/grappled.webp"
+  },
+  {
+    "name": "Grappled",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Grappled_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Grappled condition, you experience the following effects."
+      ],
+      [
+        "Speed 0",
+        "Your Speed is 0 and can't increase."
+      ],
+      [
+        "Attacks Affected",
+        "You have Disadvantage on attack rolls against any target other than the grappler."
+      ],
+      [
+        "Movable",
+        "The grappler can drag or carry you when it moves, but every foot of movement costs it 1 extra foot unless you are Tiny or two or more sizes smaller than it."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Incapacitated",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Incapacitated_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 An incapacitated creature can't take actions or reactions."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Incapacitated",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Incapacitated_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Incapacitated condition, you experience the following effects."
+      ],
+      [
+        "Inactive",
+        "You can't take any Action, Bonus Action, or Reaction."
+      ],
+      [
+        "No Concentration",
+        "Your *Concentration|XPHB* is broken."
+      ],
+      [
+        "Speechless",
+        "You can't speak."
+      ],
+      [
+        "Surprised",
+        "If you're Incapacitated when you roll Initiative, you have Disadvantage on the roll."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Invisible",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Invisible_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.\n\u2022 Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/invisible.webp"
+  },
+  {
+    "name": "Invisible",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Invisible_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Invisible condition, you experience the following effects."
+      ],
+      [
+        "Surprise",
+        "If you're Invisible when you roll Initiative, you have Advantage on the roll."
+      ],
+      [
+        "Concealed",
+        "You aren't affected by any effect that requires its target to be seen unless the effect's creator can somehow see you. Any equipment you are wearing or carrying is also concealed."
+      ],
+      [
+        "Attacks Affected",
+        "Attack rolls against you have Disadvantage, and your attack rolls have Advantage. If a creature can somehow see you, you don't gain this benefit against that creature."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Paralyzed",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Paralyzed_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A paralyzed creature is incapacitated and can't move or speak.\n\u2022 The creature automatically fails Strength and Dexterity saving throws.\n\u2022 Attack rolls against the creature have advantage.\n\u2022 Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/paralyzed.webp"
+  },
+  {
+    "name": "Paralyzed",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Paralyzed_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Paralyzed condition, you experience the following effects."
+      ],
+      [
+        "Incapacitated",
+        "You have the Incapacitated condition."
+      ],
+      [
+        "Speed 0",
+        "Your Speed is 0 and can't increase."
+      ],
+      [
+        "Saving Throws Affected",
+        "You automatically fail Strength and Dexterity Saving Throw."
+      ],
+      [
+        "Attacks Affected",
+        "Attack rolls against you have Advantage."
+      ],
+      [
+        "Automatic Critical Hits",
+        "Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Petrified",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Petrified_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.\n\u2022 The creature is incapacitated, can't move or speak, and is unaware of its surroundings.\n\u2022 Attack rolls against the creature have advantage.\n\u2022 The creature automatically fails Strength and Dexterity saving throws.\n\u2022 The creature has resistance to all damage.\n\u2022 The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/petrified.webp"
+  },
+  {
+    "name": "Petrified",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Petrified_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Petrified condition, you experience the following effects."
+      ],
+      [
+        "Turned to Inanimate Substance",
+        "You are transformed, along with any nonmagical objects you are wearing and carrying, into a solid inanimate substance (usually stone). Your weight increases by a factor of ten, and you cease aging."
+      ],
+      [
+        "Incapacitated",
+        "You have the Incapacitated condition."
+      ],
+      [
+        "Speed 0",
+        "Your Speed is 0 and can't increase."
+      ],
+      [
+        "Attacks Affected",
+        "Attack rolls against you have Advantage."
+      ],
+      [
+        "Saving Throws Affected",
+        "You automatically fail Strength and Dexterity Saving Throw."
+      ],
+      [
+        "Resist Damage",
+        "You have Resistance to all damage."
+      ],
+      [
+        "Poison Immunity",
+        "You have Immunity to the Poisoned condition."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Poisoned",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Poisoned_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A poisoned creature has disadvantage on attack rolls and ability checks."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/poisoned.webp"
+  },
+  {
+    "name": "Poisoned",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Poisoned_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Poisoned condition, you experience the following effect."
+      ],
+      [
+        "Ability Checks and Attacks Affected",
+        "You have Disadvantage on attack rolls and ability checks."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Prone",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Prone_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.\n\u2022 The creature has disadvantage on attack rolls.\n\u2022 An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/prone.webp"
+  },
+  {
+    "name": "Prone",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Prone_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Prone condition, you experience the following effects."
+      ],
+      [
+        "Restricted Movement",
+        "Your only movement options are to Crawling or to spend an amount of movement equal to half your Speed (round down) to right yourself and thereby end the condition. If your Speed is 0, you can't right yourself."
+      ],
+      [
+        "Attacks Affected",
+        "You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Restrained",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Restrained_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.\n\u2022 Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.\n\u2022 The creature has disadvantage on Dexterity saving throws."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/restrained.webp"
+  },
+  {
+    "name": "Restrained",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Restrained_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Restrained condition, you experience the following effects."
+      ],
+      [
+        "Speed 0",
+        "Your Speed is 0 and can't increase."
+      ],
+      [
+        "Attacks Affected",
+        "Attack rolls against you have Advantage, and your attack rolls have Disadvantage."
+      ],
+      [
+        "Saving Throws Affected",
+        "You have Disadvantage on Dexterity Saving Throw."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Stunned",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Stunned_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 A stunned creature is incapacitated, can't move, and can speak only falteringly.\n\u2022 The creature automatically fails Strength and Dexterity saving throws.\n\u2022 Attack rolls against the creature have advantage."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/stunned.webp"
+  },
+  {
+    "name": "Stunned",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Stunned_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Stunned condition, you experience the following effects."
+      ],
+      [
+        "Incapacitated",
+        "You have the Incapacitated condition."
+      ],
+      [
+        "Saving Throws Affected",
+        "You automatically fail Strength and Dexterity Saving Throw."
+      ],
+      [
+        "Attacks Affected",
+        "Attack rolls against you have Advantage."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Unconscious",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Unconscious_PHB",
+    "description": [
+      [
+        "Description",
+        "\u2022 An unconscious creature is incapacitated, can't move or speak, and is unaware of its surroundings.\n\u2022 The creature drops whatever it's holding and falls prone.\n\u2022 The creature automatically fails Strength and Dexterity saving throws.\n\u2022 Attack rolls against the creature have advantage.\n\u2022 Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
+      ]
+    ],
+    "image": "https://5e.tools/img/conditionsdiseases/PHB/unconscious.webp"
+  },
+  {
+    "name": "Unconscious",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Unconscious_XPHB",
+    "description": [
+      [
+        "Description",
+        "While you have the Unconscious condition, you experience the following effects."
+      ],
+      [
+        "Inert",
+        "You have the Incapacitated and Prone conditions, and you drop whatever you're holding. When this condition ends, you remain Prone."
+      ],
+      [
+        "Speed 0",
+        "Your Speed is 0 and can't increase."
+      ],
+      [
+        "Attacks Affected",
+        "Attack rolls against you have Advantage."
+      ],
+      [
+        "Saving Throws Affected",
+        "You automatically fail Strength and Dexterity Saving Throw."
+      ],
+      [
+        "Automatic Critical Hits",
+        "Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you."
+      ],
+      [
+        "Unaware",
+        "You're unaware of your surroundings."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Concentration",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Concentration_PHB",
+    "description": [
+      [
+        "Description",
+        "Some spells require you to maintain *concentration* in order to keep their magic active. If you lose *concentration*, such a spell ends."
+      ],
+      [
+        "",
+        "If a spell must be maintained with *concentration*, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end *concentration* at any time (no action required)."
+      ],
+      [
+        "",
+        "Normal activity, such as moving and attacking, doesn't interfere with *concentration*. The following factors can break *concentration*:"
+      ],
+      [
+        "",
+        "\u2022 **Casting another spell that requires concentration.** You lose *concentration* on a spell if you cast another spell that requires *concentration*. You can't concentrate on two spells at once.\n\u2022 **Taking damage.** Whenever you take damage while you are *concentration||concentrating* on a spell, you must make a Constitution saving throw to maintain your *concentration*. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage.\n\u2022 **Being incapacitated or killed.** You lose *concentration* on a spell if you are incapacitated or if you die."
+      ],
+      [
+        "",
+        "The DM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a DC 10 Constitution saving throw to maintain *concentration* on a spell."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Concentration",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Concentration_XPHB",
+    "description": [
+      [
+        "Description",
+        "Some spells and other effects require Concentration to remain active, as specified in their descriptions. If the effect's creator loses Concentration, the effect ends. If the effect has a maximum duration, the effect's description specifies how long the creator can concentrate on it: up to 1 minute, 1 hour, or some other duration. The creator can end Concentration at any time (no action required). The following factors break Concentration."
+      ],
+      [
+        "Another Concentration Effect",
+        "You lose Concentration on an effect the moment you start casting a spell that requires Concentration or activate another effect that requires Concentration."
+      ],
+      [
+        "Damage",
+        "If you take damage, you must succeed on a Constitution Saving Throw to maintain Concentration. The DC equals 10 or half the damage taken (round down), whichever number is higher, up to a maximum DC of 30."
+      ],
+      [
+        "Incapacitated or Dead",
+        "Your Concentration ends if you have the Incapacitated condition or you die."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Surprised",
+    "source": "PHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Surprised_PHB",
+    "description": [
+      [
+        "Description",
+        "A band of adventurers sneaks up on a bandit camp, springing from the trees to attack them. A __gelatinous cube__ glides down a dungeon passage, unnoticed by the adventurers until the cube engulfs one of them. In these situations, one side of the battle gains surprise over the other."
+      ],
+      [
+        "",
+        "The DM determines who might be surprised. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the DM compares the Dexterity (*Stealth*) checks of anyone hiding with the passive Wisdom (*Perception*) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is *surprised* at the start of the encounter."
+      ],
+      [
+        "",
+        "If you're surprised, you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends. A member of a group can be *surprised* even if the other members aren't."
+      ]
+    ],
+    "image": null
+  },
+  {
+    "name": "Surprised",
+    "source": "XPHB",
+    "url": "https://5e.tools/conditionsdiseases.html#Surprised_XPHB",
+    "description": [
+      [
+        "Description",
+        "If a creature is caught unawares by the start of combat, that creature is surprised, which causes it to have Disadvantage on its Initiative roll."
+      ]
+    ],
+    "image": null
+  }
+]

@@ -110,6 +110,22 @@ def clean_dnd_text(text: str, no_formatting=False) -> str:
     return text
 
 
+def parse_image_url(data: list[dict]) -> str | None:
+    for datum in data:
+        if not datum["type"] == "image":
+            continue
+
+        href = datum["href"]
+        if href["type"] == "internal":
+            return "https://5e.tools/img/" + href["path"]
+        elif href["type"] == "external":
+            return href["path"]
+        else:
+            raise RuntimeError(f"Unknown image href type '{href['type']}'")
+
+    return None
+
+
 def parse_spell_level(level: int) -> str:
     if level == 0:
         return "Cantrip"
