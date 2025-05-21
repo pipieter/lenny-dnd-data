@@ -87,6 +87,8 @@ def clean_dnd_text(text: str, no_formatting=False) -> str:
         text = re.sub(r"\{@skill ([^\}]*?)\}", r"\1", text)
         text = re.sub(r"\{@spell ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
         text = re.sub(r"\{@spell ([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\3", text)
+        text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
         text = re.sub(r"\{@status ([^\}]*?)\}", r"\1", text)
     else:
         text = re.sub(r"\{@h\}", r"*Hit:* ", text)
@@ -102,6 +104,8 @@ def clean_dnd_text(text: str, no_formatting=False) -> str:
         text = re.sub(r"\{@skill ([^\}]*?)\}", r"*\1*", text)
         text = re.sub(r"\{@spell ([^\}]*?)\|([^\}]*?)\}", r"__\1__", text)
         text = re.sub(r"\{@spell ([^\}]*?)\}", r"__\1__", text)
+        text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"*\3*", text)
+        text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\}", r"*\1*", text)
         text = re.sub(r"\{@status ([^\}]*?)\}", r"*\1*", text)
 
     # Note: notes should be parsed at the end, because they might contain subqueries
