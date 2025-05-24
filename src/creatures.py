@@ -10,11 +10,15 @@ class _Creature(object):
     source: str
     size: str | None
     creature_type: str
+
     summoned_by_spell: str | None
     summoned_by_spell_level: int | None
+
     has_token: bool
     descriptions: list[tuple[str, str]]
     parent: tuple[str, str] | None
+
+    stats: dict
 
     def __init__(self, json: dict, fluff_json: dict | None) -> None:
         self.name = json["name"]
@@ -26,12 +30,22 @@ class _Creature(object):
 
         self.has_token = json.get("hasToken", False)
         self.descriptions = []
+        self.stats = {
+            "str": json.get("str", None),
+            "dex": json.get("dex", None),
+            "con": json.get("con", None),
+            "int": json.get("int", None),
+            "wis": json.get("wis", None),
+            "cha": json.get("cha", None),
+        }
 
+        # Handle _copy cases
         copy = json.get("_copy", None)
         self.parent = None
         if copy:
             self.parent = {"name": copy.get("name", None), "source": copy.get("source", None)}
 
+        # Handle fluff
         if fluff_json is None:
             return
         
@@ -78,6 +92,7 @@ class _Creature(object):
             "url": self.url,
             "token_url": self.token_url,
             "description": self.descriptions,
+            "stats": self.stats
         }
 
 class _Bestiary(object):
