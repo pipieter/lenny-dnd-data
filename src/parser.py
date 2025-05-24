@@ -495,4 +495,14 @@ def parse_creature_type(creature_type: str | dict) -> str | None:
             tags = None
             
         return f"{c_type} ({tags})" if tags else c_type
-    return creature_type if creature_type else None
+    return creature_type.title() if creature_type else None
+
+def parse_creature_summon_spell(spell: str | None) -> str | None:
+    if spell is None:
+        return None
+
+    if "|" in spell:
+        name, source = spell.split("|", 1)
+        return name
+    else:
+        return spell

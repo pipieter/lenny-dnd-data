@@ -2,7 +2,7 @@
 import json
 
 from src.data import clean_url
-from src.parser import parse_creature_size, parse_creature_type, parse_descriptions
+from src.parser import parse_creature_size, parse_creature_summon_spell, parse_creature_type, parse_descriptions
 
 
 class _Creature(object):
@@ -20,18 +20,20 @@ class _Creature(object):
         self.source = json["source"]
         self.size = parse_creature_size(json.get("size", None))
         self.creature_type = parse_creature_type(json.get("type", None))
-        self.summoned_by_spell = json.get("summoned_by_spell", None)
-        self.summoned_by_spell_level = json.get("summoned_by_spell_level", None)
+        self.summoned_by_spell = parse_creature_summon_spell(json.get("summonedBySpell", None))
+        self.summoned_by_spell_level = json.get("summonedBySpellLevel", None)
 
         self.has_token = json.get("hasToken", False)
-        self.descriptions = None
+        self.descriptions = []
 
         if fluff_json is None:
             return
         
         entries = fluff_json.get("entries", None)
         if entries:
-            self.descriptions = parse_descriptions("", entries, self.url)
+            descriptions = parse_descriptions("", entries, self.url)
+            for name, text in descriptions:
+                self.descriptions.append({"name": name, "text": text})
 
     @property
     def url(self):
@@ -51,7 +53,7 @@ class _Creature(object):
             "name": self.name,
             "source": self.source,
             "size": self.size,
-            "creature_type": self.creature_type,
+            "type": self.creature_type,
             "summoned_by_spell": self.summoned_by_spell,
             "summoned_by_spell_level": self.summoned_by_spell_level,
             "url": self.url,
