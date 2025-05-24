@@ -12,9 +12,8 @@ class _Creature(object):
     creature_type: str
     summoned_by_spell: str | None
     summoned_by_spell_level: int | None
-
-    token_url: str | None
-    description: str | None
+    has_token: bool
+    descriptions: list[tuple[str, str]]
 
     def __init__(self, json: dict, fluff_json: dict | None) -> None:
         self.name = json["name"]
@@ -56,17 +55,28 @@ class _Creature(object):
         self.summoned_by_spell = json.get("summoned_by_spell", None)
         self.summoned_by_spell_level = json.get("summoned_by_spell_level", None)
 
-        has_token = json.get("hasToken", False)
-        token_url = f"https://5e.tools/img/bestiary/tokens/{self.source}/{self.name}.webp"
-        self.token_url = clean_url(token_url) if has_token else None
-        self.description = None
+        self.has_token = json.get("hasToken", False)
+        self.descriptions = None
 
         if fluff_json is None:
             return
         
         entries = fluff_json.get("entries", None)
         if entries:
-            self.description = parse_descriptions("", entries, "")
+            self.descriptions = parse_descriptions("", entries, self.url)
+
+    @property
+    def url(self):
+        url = f"https://5e.tools/bestiary.html#{self.name}_{self.source}"
+        return clean_url(url)
+    
+    @property
+    def token_url(self):
+        if not self.has_token:
+            return None
+
+        url = f"https://5e.tools/img/bestiary/tokens/{self.source}/{self.name}.webp"
+        return clean_url(url)
 
     def to_dict(self):
         return {
@@ -76,8 +86,9 @@ class _Creature(object):
             "creature_type": self.creature_type,
             "summoned_by_spell": self.summoned_by_spell,
             "summoned_by_spell_level": self.summoned_by_spell_level,
+            "url": self.url,
             "token_url": self.token_url,
-            "description": self.description,
+            "description": self.descriptions,
         }
 
 class _Bestiary(object):
