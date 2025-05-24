@@ -8,14 +8,13 @@ from src.parser import parse_creature_size, parse_creature_summon_spell, parse_c
 class _Creature(object):
     name: str
     source: str
-    size: str | None
-    creature_type: str
+    subtitle: str | None
 
     summoned_by_spell: str | None
     summoned_by_spell_level: int | None
 
     has_token: bool
-    description: str
+    description: str | None
     parent: tuple[str, str] | None
 
     stats: dict
@@ -23,8 +22,9 @@ class _Creature(object):
     def __init__(self, json: dict, fluff_json: dict | None) -> None:
         self.name = json["name"]
         self.source = json["source"]
-        self.size = parse_creature_size(json.get("size", None))
-        self.creature_type = parse_creature_type(json.get("type", None))
+        size = parse_creature_size(json.get("size", ""))
+        type = parse_creature_type(json.get("type", ""))
+        self.subtitle = f"{size} {type}".strip()
         self.summoned_by_spell = parse_creature_summon_spell(json.get("summonedBySpell", None))
         self.summoned_by_spell_level = json.get("summonedBySpellLevel", None)
 
@@ -78,8 +78,7 @@ class _Creature(object):
     
     def inherit_from(self, parent: "_Creature"):
         self.source = self.source or parent.source
-        self.size = self.size or parent.size
-        self.creature_type = self.creature_type or parent.creature_type
+        self.subtitle = self.subtitle or parent.subtitle
         self.summoned_by_spell = self.summoned_by_spell or parent.summoned_by_spell
         self.summoned_by_spell_level = self.summoned_by_spell_level or parent.summoned_by_spell_level
         self.description = self.description or parent.description # BUG: Sometimes does not inherit from parent (eg. Goblin Boss MM does not inherit from Goblin MM)
@@ -89,8 +88,7 @@ class _Creature(object):
         return {
             "name": self.name,
             "source": self.source,
-            "size": self.size,
-            "type": self.creature_type,
+            "subtitle": self.subtitle,
             "summoned_by_spell": self.summoned_by_spell,
             "summoned_by_spell_level": self.summoned_by_spell_level,
             "url": self.url,
