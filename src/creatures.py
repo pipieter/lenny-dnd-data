@@ -139,7 +139,6 @@ class CreatureList(object):
             self.fluff_index = json.load(file)
 
         for source, path in self.index.items():
-            print(f"- {path}")
             path = f"5etools-src/data/bestiary/{path}"
             fluff_path = self.fluff_index.get(source, None)
             fluff_path = f"5etools-src/data/bestiary/{fluff_path}" if fluff_path else None
@@ -148,6 +147,8 @@ class CreatureList(object):
             child_creatures.extend(b.child_creatures)
 
         self._handle_inheritance(child_creatures)
+
+        print(f"{len(self.creatures)} creatures parsed.")
 
     def _handle_inheritance(self, children: list[_Creature]) -> None:
         def normalize_key(name: str, source: str):
