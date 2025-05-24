@@ -487,7 +487,7 @@ def parse_creature_size(sizes: any) -> str | None:
     }
 
     if isinstance(sizes, list):
-        size = ' or '.join(size_map.get(s, s) for s in sizes)
+        size = ' or '.join(size_map.get(s, s) for s in sizes) # BUG: Should not always use 'or', with 2 sizes this is fine, but with 3 it should be: Small, Medium, or Large
     else:
         size = size_map.get(sizes, None)
 
@@ -501,7 +501,7 @@ def parse_creature_type(creature_type: str | dict) -> str | None:
             # Edge case where type can be multiple types (eg. Planar Incarnate)
             choices = c_type.get("choose", None)
             if choices:
-                c_type = ' or '.join(choice.title() for choice in choices)
+                c_type = ' or '.join(choice.title() for choice in choices) # BUG: Should not always use 'or', with 2 types this is fine, but with 3/more it should be: Celestial, Fey, or Fiend
             else:
                 c_type = None
         else:

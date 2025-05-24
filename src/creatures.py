@@ -82,7 +82,8 @@ class _Creature(object):
         self.creature_type = self.creature_type or parent.creature_type
         self.summoned_by_spell = self.summoned_by_spell or parent.summoned_by_spell
         self.summoned_by_spell_level = self.summoned_by_spell_level or parent.summoned_by_spell_level
-        self.description = self.description or parent.description # TODO Handle replaceTxt from _copy
+        self.description = self.description or parent.description # BUG: Sometimes does not inherit from parent (eg. Goblin Boss MM does not inherit from Goblin MM)
+        # TODO Handle replaceTxt from _copy
 
     def to_dict(self):
         return {
