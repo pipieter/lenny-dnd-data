@@ -2,7 +2,7 @@
 import json
 
 from src.data import clean_url
-from src.parser import parse_descriptions
+from src.parser import parse_creature_size, parse_creature_type, parse_descriptions
 
 
 class _Creature(object):
@@ -18,40 +18,8 @@ class _Creature(object):
     def __init__(self, json: dict, fluff_json: dict | None) -> None:
         self.name = json["name"]
         self.source = json["source"]
-
-
-        size_map = {
-            "T": "Tiny",
-            "S": "Small",
-            "M": "Medium",
-            "L": "Large",
-            "H": "Huge",
-            "G": "Gargantuan"
-        }
-        sizes = json.get("size", None)
-        if isinstance(sizes, list):
-            size = ' / '.join(size_map.get(s, s) for s in sizes)
-        else:
-            size = size_map.get(sizes, sizes)
-        self.size = size.title() if size else None
-
-        creature_type = json.get("type", None)
-        if isinstance(creature_type, dict):
-            c_type = creature_type.get("type", None)
-
-            if isinstance(c_type, dict):
-                # Edge case where type can be multiple (eg. Planar Incarnate)
-                choices = c_type.get("choose", None)
-                c_type = ' / '.join(choices) if choices else None
-
-            c_tags = creature_type.get("tags", None)
-            if c_tags:
-                tag_list = [t if isinstance(t, str) else t.get("name", "") for t in c_tags]
-                tags = ' '.join(tag_list)
-            else:
-                tags = None
-            creature_type = f"{c_type} ({tags})" if tags else c_type
-        self.creature_type = creature_type.title() if creature_type else None
+        self.size = parse_creature_size(json.get("size", None))
+        self.creature_type = parse_creature_type(json.get("type", None))
         self.summoned_by_spell = json.get("summoned_by_spell", None)
         self.summoned_by_spell_level = json.get("summoned_by_spell_level", None)
 

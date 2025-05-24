@@ -455,3 +455,42 @@ def parse_item_weight(weight: int) -> str | None:
         return f"{weight*16} oz."
     else:
         return f"{weight} lb."
+
+def parse_creature_size(sizes: any) -> str | None:
+    size_map = {
+        "T": "Tiny",
+        "S": "Small",
+        "M": "Medium",
+        "L": "Large",
+        "H": "Huge",
+        "G": "Gargantuan"
+    }
+
+    if isinstance(sizes, list):
+        size = ' or '.join(size_map.get(s, s) for s in sizes)
+    else:
+        size = size_map.get(sizes, None)
+
+    return size if size else None
+
+def parse_creature_type(creature_type: str | dict) -> str | None:
+    if isinstance(creature_type, dict):
+        c_type = creature_type.get("type", None)
+
+        if isinstance(c_type, dict):
+            # Edge case where type can be multiple types (eg. Planar Incarnate)
+            choices = c_type.get("choose", None)
+            if choices:
+                c_type = ' or '.join(choice.title() for choice in choices)
+            else:
+                c_type = None
+
+        c_tags = creature_type.get("tags", None)
+        if c_tags:
+            tag_list = [t if isinstance(t, str) else t.get("name", "") for t in c_tags]
+            tags = ' '.join(tag_list).title()
+        else:
+            tags = None
+            
+        return f"{c_type} ({tags})" if tags else c_type
+    return creature_type if creature_type else None
