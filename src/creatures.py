@@ -65,6 +65,7 @@ class _Creature(object):
         self.summoned_by_spell = self.summoned_by_spell or parent.summoned_by_spell
         self.summoned_by_spell_level = self.summoned_by_spell_level or parent.summoned_by_spell_level
         self.descriptions.extend(parent.descriptions)
+        # TODO Handle replaceTxt from _copy
 
     def to_dict(self):
         return {
