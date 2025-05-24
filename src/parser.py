@@ -323,19 +323,22 @@ def __parse_description_block_from_blocks(descriptions: list[any]) -> str:
 def __parse_table_value(value: any) -> str:
     if isinstance(value, str):
         return clean_dnd_text(value)
-    if value["type"] == "cell":
-        # Should be improved
-        if "roll" in value.keys():
-            if "exact" in value["roll"].keys():
-                return str(value["roll"]["exact"])
-            elif "min" in value["roll"].keys() and "max" in value["roll"].keys():
-                roll_min = value["roll"]["min"]
-                roll_max = value["roll"]["max"]
-                return f"{roll_min}-{roll_max}"
+    elif isinstance(value, dict):
+        if value.get("type") == "cell":
+            # Should be improved
+            if "roll" in value.keys():
+                if "exact" in value["roll"].keys():
+                    return str(value["roll"]["exact"])
+                elif "min" in value["roll"].keys() and "max" in value["roll"].keys():
+                    roll_min = value["roll"]["min"]
+                    roll_max = value["roll"]["max"]
+                    return f"{roll_min}-{roll_max}"
 
-        return f"Unknown table value cell type {value['type']}"
-
-    return f"Unknown table value type {value['type']}"
+            return f"Unknown table value cell type {value['type']}"
+        return f"Unknown table value type {value['type']}"
+    else:
+        # For primitives, just convert to string
+        return str(value)
 
 
 def __prettify_table(title: str, cells: list[list[str]], fallbackUrl: str) -> str:

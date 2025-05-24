@@ -3,6 +3,7 @@ from src.data import load_data
 from src.conditions import get_conditions_json, get_diseases_json
 from src.items import get_items_json
 from src.spells import get_spells_json
+from src.creatures import get_creatures_json
 
 
 if __name__ == "__main__":
@@ -12,6 +13,7 @@ if __name__ == "__main__":
     items = get_items_json()
     conditions = get_conditions_json(data)
     diseases = get_diseases_json(data)
+    creatures = get_creatures_json()
 
     with open("./generated/spells.json", "w") as file:
         json.dump(spells, file, indent=2)
@@ -24,3 +26,6 @@ if __name__ == "__main__":
 
     with open("./generated/diseases.json", "w") as file:
         json.dump(diseases, file, indent=2)
+
+    with open("./generated/creatures.json", "w") as file:
+        json.dump(creatures, file, indent=2)
