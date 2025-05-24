@@ -484,6 +484,8 @@ def parse_creature_type(creature_type: str | dict) -> str | None:
                 c_type = ' or '.join(choice.title() for choice in choices)
             else:
                 c_type = None
+        else:
+            c_type = c_type.title() if c_type else None
 
         c_tags = creature_type.get("tags", None)
         if c_tags:
