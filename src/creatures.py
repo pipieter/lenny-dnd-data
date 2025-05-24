@@ -15,7 +15,7 @@ class _Creature(object):
     summoned_by_spell_level: int | None
 
     has_token: bool
-    descriptions: list[tuple[str, str]]
+    description: str
     parent: tuple[str, str] | None
 
     stats: dict
@@ -29,7 +29,7 @@ class _Creature(object):
         self.summoned_by_spell_level = json.get("summonedBySpellLevel", None)
 
         self.has_token = json.get("hasToken", False)
-        self.descriptions = []
+        self.description = None
         self.stats = {
             "str": json.get("str", None),
             "dex": json.get("dex", None),
@@ -51,9 +51,9 @@ class _Creature(object):
         
         entries = fluff_json.get("entries", None)
         if entries:
-            descriptions = parse_descriptions("", entries, self.url)
-            for name, text in descriptions:
-                self.descriptions.append({"name": name, "text": text})
+            # Creatures have a lot of info, we only use the first entry to avoid immense descriptions.
+            _, text = parse_descriptions("", entries, self.url)[0]
+            self.description = text
 
     @property
     def url(self):
@@ -78,8 +78,7 @@ class _Creature(object):
         self.creature_type = self.creature_type or parent.creature_type
         self.summoned_by_spell = self.summoned_by_spell or parent.summoned_by_spell
         self.summoned_by_spell_level = self.summoned_by_spell_level or parent.summoned_by_spell_level
-        self.descriptions.extend(parent.descriptions)
-        # TODO Handle replaceTxt from _copy
+        self.description = self.description or parent.description # TODO Handle replaceTxt from _copy
 
     def to_dict(self):
         return {
@@ -91,7 +90,7 @@ class _Creature(object):
             "summoned_by_spell_level": self.summoned_by_spell_level,
             "url": self.url,
             "token_url": self.token_url,
-            "description": self.descriptions,
+            "description": self.description,
             "stats": self.stats
         }
 
