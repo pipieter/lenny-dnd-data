@@ -52,7 +52,11 @@ class _Creature(object):
         entries = fluff_json.get("entries", None)
         if entries:
             # Creatures have a lot of info, we only use the first entry to avoid immense descriptions.
-            _, text = parse_descriptions("", entries, self.url)[0]
+            descriptions = parse_descriptions("", entries, self.url)
+            if descriptions:
+                _, text = descriptions[0]
+            else:
+                text = None
             self.description = text
 
     @property

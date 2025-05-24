@@ -281,38 +281,54 @@ def __parse_description_block(description: any) -> str:
     if isinstance(description, str):
         return clean_dnd_text(description)
 
-    if description["type"] == "quote":
-        quote = __parse_description_block_from_blocks(description["entries"])
-        if "by" in description:
-            by = description["by"]
-            return f"*{quote}* - {by}"
-        else:
-            return f"*{quote}*"
+    match description["type"]:
+        case "quote":
+            quote = __parse_description_block_from_blocks(description["entries"])
+            if "by" in description:
+                by = description["by"]
+                return f"*{quote}* - {by}"
+            else:
+                return f"*{quote}*"
+            
+        case "list":
+            bullet = "•"  # U+2022
+            points = []
+            for item in description["items"]:
+                points.append(f"{bullet} {__parse_description_block(item)}")
+            return "\n".join(points)
 
-    if description["type"] == "list":
-        bullet = "•"  # U+2022
-        points = []
-        for item in description["items"]:
-            points.append(f"{bullet} {__parse_description_block(item)}")
-        return "\n".join(points)
+        case "inset":
+            return f"*{__parse_description_block_from_blocks(description['entries'])}*"
 
-    if description["type"] == "inset":
-        return f"*{__parse_description_block_from_blocks(description['entries'])}*"
+        case "item":
+            name = description["name"]
+            if "entries" in description:
+                entries = [__parse_description_block(e) for e in description["entries"]]
+            elif "entry" in description:
+                entries = [__parse_description_block(description["entry"])]
+            else:
+                raise RuntimeError(
+                    "Could not find entry in description block with type 'item'"
+                )
+            entries = "\n".join(entries)
+            return f"**{name}**: {entries}"  
+        
+        case "table":
+            return "" # Unsupported
+        
+        case "section":
+            return "" # Unsupported
+        
+        case "entries":
+            return "" # Unsupported
+        
+        case "insetReadaloud":
+            return "" # Unsupported
+        
+        case "image":
+            return "" # Unsupported
 
-    if description["type"] == "item":
-        name = description["name"]
-        if "entries" in description:
-            entries = [__parse_description_block(e) for e in description["entries"]]
-        elif "entry" in description:
-            entries = [__parse_description_block(description["entry"])]
-        else:
-            raise RuntimeError(
-                "Could not find entry in description block with type 'item'"
-            )
-        entries = "\n".join(entries)
-        return f"**{name}**: {entries}"
-
-    return f"Unsupported description type: '{description['type']}'"
+    raise NotImplementedError(f"Unsupported description type: '{description['type']}'")
 
 
 def __parse_description_block_from_blocks(descriptions: list[any]) -> str:
@@ -420,7 +436,11 @@ def parse_descriptions(
         descriptions.append(("", blocks[i]))
     descriptions.extend(subdescriptions)
 
-    return descriptions
+    cleaned_descriptions = [ # Unsupported types may append empty strings, these are removed here.
+        (title, desc) for title, desc in descriptions if desc.strip()
+    ]
+
+    return cleaned_descriptions
 
 
 def parse_item_value(value: int) -> str | None:
