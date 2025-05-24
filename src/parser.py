@@ -323,19 +323,22 @@ def __parse_description_block_from_blocks(descriptions: list[any]) -> str:
 def __parse_table_value(value: any) -> str:
     if isinstance(value, str):
         return clean_dnd_text(value)
-    if value["type"] == "cell":
-        # Should be improved
-        if "roll" in value.keys():
-            if "exact" in value["roll"].keys():
-                return str(value["roll"]["exact"])
-            elif "min" in value["roll"].keys() and "max" in value["roll"].keys():
-                roll_min = value["roll"]["min"]
-                roll_max = value["roll"]["max"]
-                return f"{roll_min}-{roll_max}"
+    elif isinstance(value, dict):
+        if value.get("type") == "cell":
+            # Should be improved
+            if "roll" in value.keys():
+                if "exact" in value["roll"].keys():
+                    return str(value["roll"]["exact"])
+                elif "min" in value["roll"].keys() and "max" in value["roll"].keys():
+                    roll_min = value["roll"]["min"]
+                    roll_max = value["roll"]["max"]
+                    return f"{roll_min}-{roll_max}"
 
-        return f"Unknown table value cell type {value['type']}"
-
-    return f"Unknown table value type {value['type']}"
+            return f"Unknown table value cell type {value['type']}"
+        return f"Unknown table value type {value['type']}"
+    else:
+        # For primitives, just convert to string
+        return str(value)
 
 
 def __prettify_table(title: str, cells: list[list[str]], fallbackUrl: str) -> str:
@@ -452,3 +455,54 @@ def parse_item_weight(weight: int) -> str | None:
         return f"{weight*16} oz."
     else:
         return f"{weight} lb."
+
+def parse_creature_size(sizes: any) -> str | None:
+    size_map = {
+        "T": "Tiny",
+        "S": "Small",
+        "M": "Medium",
+        "L": "Large",
+        "H": "Huge",
+        "G": "Gargantuan"
+    }
+
+    if isinstance(sizes, list):
+        size = ' or '.join(size_map.get(s, s) for s in sizes)
+    else:
+        size = size_map.get(sizes, None)
+
+    return size if size else None
+
+def parse_creature_type(creature_type: str | dict) -> str | None:
+    if isinstance(creature_type, dict):
+        c_type = creature_type.get("type", None)
+
+        if isinstance(c_type, dict):
+            # Edge case where type can be multiple types (eg. Planar Incarnate)
+            choices = c_type.get("choose", None)
+            if choices:
+                c_type = ' or '.join(choice.title() for choice in choices)
+            else:
+                c_type = None
+        else:
+            c_type = c_type.title() if c_type else None
+
+        c_tags = creature_type.get("tags", None)
+        if c_tags:
+            tag_list = [t if isinstance(t, str) else t.get("name", "") for t in c_tags]
+            tags = ' '.join(tag_list).title()
+        else:
+            tags = None
+            
+        return f"{c_type} ({tags})" if tags else c_type
+    return creature_type.title() if creature_type else None
+
+def parse_creature_summon_spell(spell: str | None) -> str | None:
+    if spell is None:
+        return None
+
+    if "|" in spell:
+        name, source = spell.split("|", 1)
+        return name
+    else:
+        return spell
