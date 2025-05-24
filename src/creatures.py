@@ -14,7 +14,7 @@ class _Creature(object):
     summoned_by_spell_level: int | None
     has_token: bool
     descriptions: list[tuple[str, str]]
-    parent: dict | None
+    parent: tuple[str, str] | None
 
     def __init__(self, json: dict, fluff_json: dict | None) -> None:
         self.name = json["name"]
