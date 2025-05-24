@@ -40,15 +40,20 @@ class _Creature(object):
         }
 
         # Handle _copy cases
-        copy = json.get("_copy", None)
         self.parent = None
-        if copy:
-            self.parent = {"name": copy.get("name", None), "source": copy.get("source", None)}
+        self.set_parent(json)
 
         # Handle fluff
         if fluff_json is None:
             return
         
+        # TODO: Fluff-inheritance should work differently, but requires substantial re-write.
+        # Fluff inheritenance sometimes refers to a race which only has fluff-information 
+        # e.g. Githyanki Knight (MM) has Githyanki (MM) as a fluff-parent, but Githyanki (MM) only exists within fluff-bestiary-mm.json
+        # We only make creatures from non-fluff data, meaning that pure-fluff creatures are completely ignored (as they should be).
+        # We should rewrite it so we make a dict of non-fluff and fluff creatures, *then* inherit from there.
+        self.set_parent(fluff_json)
+
         entries = fluff_json.get("entries", None)
         if entries:
             # Creatures have a lot of info, we only use the first entry to avoid immense descriptions.
@@ -58,6 +63,12 @@ class _Creature(object):
             else:
                 text = None
             self.description = text
+
+    def set_parent(self, data: dict):
+        copy = data.get("_copy", None)
+        self.parent = self.parent or None
+        if copy:
+            self.parent = {"name": copy.get("name", None), "source": copy.get("source", None)}
 
     @property
     def url(self):
@@ -77,12 +88,16 @@ class _Creature(object):
         return self.parent is not None
     
     def inherit_from(self, parent: "_Creature"):
+        # print(f"{self.name} inherit from: {parent.name}")
+        # print({str(self.to_dict())})
         self.source = self.source or parent.source
         self.subtitle = self.subtitle or parent.subtitle
         self.summoned_by_spell = self.summoned_by_spell or parent.summoned_by_spell
         self.summoned_by_spell_level = self.summoned_by_spell_level or parent.summoned_by_spell_level
         self.description = self.description or parent.description # BUG: Sometimes does not inherit from parent (eg. Goblin Boss MM does not inherit from Goblin MM)
         # TODO Handle replaceTxt from _copy
+        # print({str(self.to_dict())})
+        # print()
 
     def to_dict(self):
         return {
