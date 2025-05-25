@@ -312,15 +312,22 @@ def __parse_description_block(description: any) -> str:
                 )
             entries = "\n".join(entries)
             return f"**{name}**: {entries}"  
+
+        case "entries":
+            entries = [__parse_description_block(e) for e in description["entries"]]
+            print(str(entries))
+            return "\n".join(entries)
         
-        case "table":
-            return "Unsupported 'table'"
+        case "entry":
+            entries = [__parse_description_block(description["entry"])]
+            print(str(entries))
+            return "\n".join(entries)
         
         case "section":
             return "Unsupported 'section'"
         
-        case "entries":
-            return "Unsupported 'entries'"
+        case "table":
+            return "Unsupported 'table'"
         
         case "insetReadaloud":
             return "Unsupported 'insetReadaloud'" # Unsupported
