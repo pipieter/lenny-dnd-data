@@ -281,7 +281,6 @@ def __parse_description_block(description: any) -> str:
     if isinstance(description, str):
         return clean_dnd_text(description)
     
-    print(str(description))
     type = description["type"]
     match type:
         case "quote":
@@ -326,7 +325,11 @@ def __parse_description_block(description: any) -> str:
             return "\n".join(entries)
         
         case "table":
-            return "Unsupported 'table'"
+            title, table = __parse_description_from_table(description, "")
+
+            if title.strip() == "":
+                return table
+            return f"**{title}**:\n{table}"
         
         case "insetReadaloud":
             return "Unsupported 'insetReadaloud'" # Unsupported
@@ -356,8 +359,8 @@ def __parse_table_value(value: any) -> str:
                     roll_max = value["roll"]["max"]
                     return f"{roll_min}-{roll_max}"
 
-            return f"Unknown table value cell type {value['type']}"
-        return f"Unknown table value type {value['type']}"
+            return f"Unsupported table value cell-type: '{value['type']}'"
+        return f"Unsupported table value-type: '{value['type']}'"
     else:
         # For primitives, just convert to string
         return str(value)
