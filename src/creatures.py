@@ -12,17 +12,88 @@ class _HasKey:
 
     @property
     def key(self) -> str:
+        # Need to do lower() because there is one creature that doesn't match cases.
         return f"{self.name} ({self.source})".lower()
+
+
+class _Mod:  # TODO: Actually use mod-parsed data in creatures, for now the parsing works but we do not yet assign/copy these over to creatures.
+    mode: str
+    items: dict
+    descriptions: list
+    images: list
+
+    def __init__(self, json: dict):
+        self.mode = json.get("mode")
+        self.items = json.get("items")
+        self.descriptions = []
+        self.images = []
+
+        self.handle_items()
+
+    def handle_items(self):
+        if self.items is None:
+            return
+        
+        for item in self.items:
+            if isinstance(item, str):
+                continue  # String items unsupported
+
+            type = item.get("type", None)
+            if type is None:
+                continue
+
+            match type:
+                case "entries" | "section":
+                    # Good example creature is Feral Ashenwight PaBTSO
+                    inner_items = item.get("items", None)
+                    if inner_items is None:
+                        # In some cases the items are set as entries instead. (Aurumvorax JTTRC)
+                        inner_items = item.get("entries")
+
+                    self.descriptions.extend(parse_descriptions("", inner_items, ""))
+                    print(self.descriptions)
+                
+                case "image":
+                    path = item.get("href", {}).get("path", None)
+                    if path:
+                        url = clean_url(f"https://5e.tools/img/{path}")
+                        self.images.extend(url)
+                        print(url)
+                
+                case "insetReadaloud":
+                    continue  # Unsupported
+
+                case _:
+                    raise NotImplementedError(f"{type} not supported.")
 
 
 class Parent(_HasKey):
     """Basic parent class to easily set and access the name and source of a parent."""
     name: str
     source: str
+    mods: dict[str, _Mod] | None
 
     def __init__(self, _copy: dict):
         self.name = _copy["name"]
         self.source = _copy["source"]
+        print(self.key)
+        self.set_mods(_copy)
+    
+    def set_mods(self, _copy: dict):
+        mods = _copy.get("_mod", None)
+        if mods is None:
+            self.mods = None
+            return
+
+        self.mods = {}
+        for key, mod in mods.items():
+            if isinstance(mod, list) or isinstance(mod, str):
+                continue  # Lists and strings not supported
+
+            self.mods[key] = _Mod(mod)
+
+        if self.mods == {}:
+            self.mods = None
 
 
 class _CreatureBase(_HasKey):
@@ -44,7 +115,9 @@ class _CreatureBase(_HasKey):
         copy = data.get("_copy", None)
         self.parent = None
         if copy:
+            print(f"### {self.key} ###")
             self.parent = Parent(copy)
+            print()
 
     @property
     def url(self):
