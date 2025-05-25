@@ -51,14 +51,12 @@ class _Mod:  # TODO: Actually use mod-parsed data in creatures, for now the pars
                         inner_items = item.get("entries")
 
                     self.descriptions.extend(parse_descriptions("", inner_items, ""))
-                    print(self.descriptions)
                 
                 case "image":
                     path = item.get("href", {}).get("path", None)
                     if path:
                         url = clean_url(f"https://5e.tools/img/{path}")
-                        self.images.extend(url)
-                        print(url)
+                        self.images.extend(url)  # Unused at the moment
                 
                 case "insetReadaloud":
                     continue  # Unsupported
@@ -71,18 +69,17 @@ class Parent(_HasKey):
     """Basic parent class to easily set and access the name and source of a parent."""
     name: str
     source: str
-    mods: dict[str, _Mod] | None
+    mods: dict[str, _Mod]
 
     def __init__(self, _copy: dict):
         self.name = _copy["name"]
         self.source = _copy["source"]
-        print(self.key)
         self.set_mods(_copy)
     
     def set_mods(self, _copy: dict):
         mods = _copy.get("_mod", None)
         if mods is None:
-            self.mods = None
+            self.mods = {}
             return
 
         self.mods = {}
@@ -91,9 +88,13 @@ class Parent(_HasKey):
                 continue  # Lists and strings not supported
 
             self.mods[key] = _Mod(mod)
-
-        if self.mods == {}:
-            self.mods = None
+    
+    @property
+    def mod_descriptions(self) -> list[tuple[str, str]]:
+        descriptions = []
+        for mod in self.mods.values():
+            descriptions.extend(mod.descriptions)
+        return descriptions
 
 
 class _CreatureBase(_HasKey):
@@ -115,9 +116,7 @@ class _CreatureBase(_HasKey):
         copy = data.get("_copy", None)
         self.parent = None
         if copy:
-            print(f"### {self.key} ###")
             self.parent = Parent(copy)
-            print()
 
     @property
     def url(self):
@@ -172,11 +171,11 @@ class _FluffCreature(_CreatureBase):
     Creature fluff-data, sometimes used purely for sharing descriptions between creatures.\n
     e.g. Githyanki Knight (MM) inherits description from Githyanki (MM), which is not an actual creature you can look up, but we do need to create it as a FluffCreature to inherit information from.
     """ 
-    description: str | None
+    descriptions: list[tuple[str, str]]
 
     def __init__(self, json: dict):
         super().__init__(json)
-        self.description = None
+        self.descriptions = []
 
         entries = json.get("entries", None)
         if entries is None:
@@ -184,13 +183,28 @@ class _FluffCreature(_CreatureBase):
         
         descriptions = parse_descriptions("", entries, self.url)
         if descriptions:
-            # Creatures have a lot of info, we only use the first entry's text to avoid huge descriptions.
-            _, self.description = descriptions[0]
+            self.descriptions = descriptions
 
     def inherit_from(self, parent: "_FluffCreature"):
-        self.description = self.description or parent.description
+        # Mod descriptions are typically "prepended", meaning we need to insert them before.
+        self.descriptions = self.parent.mod_descriptions + self.descriptions + parent.descriptions
 
-class Creature(object): # TODO: Actually implement the new classes I just wrote :-) Good Morning Daniel!
+    @property
+    def description(self) -> str | None:
+        description = ""
+
+        for _, text in self.descriptions:
+            
+            description += text
+            if len(description) > 256:
+                break
+            description += "\n"
+
+        if description == "":
+            return None
+        return description.rstrip("\n")
+
+class Creature(object):
     name: str
     source: str
     subtitle: str | None
