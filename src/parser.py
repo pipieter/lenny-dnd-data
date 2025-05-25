@@ -280,8 +280,10 @@ def parse_components(components: dict) -> str:
 def __parse_description_block(description: any) -> str:
     if isinstance(description, str):
         return clean_dnd_text(description)
-
-    match description["type"]:
+    
+    print(str(description))
+    type = description["type"]
+    match type:
         case "quote":
             quote = __parse_description_block_from_blocks(description["entries"])
             if "by" in description:
@@ -313,18 +315,15 @@ def __parse_description_block(description: any) -> str:
             entries = "\n".join(entries)
             return f"**{name}**: {entries}"  
 
-        case "entries":
+        case "entries" | "section":
+            name = description.get("name", None)
             entries = [__parse_description_block(e) for e in description["entries"]]
-            print(str(entries))
-            return "\n".join(entries)
+            entries = "\n".join(entries)
+            return f"**{name}**: {entries}" if name else entries
         
         case "entry":
             entries = [__parse_description_block(description["entry"])]
-            print(str(entries))
             return "\n".join(entries)
-        
-        case "section":
-            return "Unsupported 'section'"
         
         case "table":
             return "Unsupported 'table'"
