@@ -331,11 +331,11 @@ def __parse_description_block(description: any) -> str:
                 return table
             return f"**{title}**:\n{table}"
         
+        case "image":
+            return "" # Images will not be handled within descriptions.
+
         case "insetReadaloud":
             return "Unsupported 'insetReadaloud'" # Unsupported
-        
-        case "image":
-            return "Unsupported 'image'" # Unsupported
 
     raise NotImplementedError(f"Unsupported description type: '{description['type']}'")
 
