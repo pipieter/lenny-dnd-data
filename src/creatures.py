@@ -5,31 +5,71 @@ from src.data import clean_url
 from src.parser import parse_creature_size, parse_creature_summon_spell, parse_creature_type, parse_descriptions
 
 
-class _Creature(object):
+class _HasKey:
+    """Ensures Parent & _CreatureBase make the same type of keys."""
     name: str
     source: str
-    subtitle: str | None
 
-    summoned_by_spell: str | None
-    summoned_by_spell_level: int | None
+    @property
+    def key(self) -> str:
+        return f"{self.name} ({self.source})".lower()
 
-    has_token: bool
-    description: str | None
-    parent: tuple[str, str] | None
 
-    stats: dict
+class Parent(_HasKey):
+    """Basic parent class to easily set and access the name and source of a parent."""
+    name: str
+    source: str
 
-    def __init__(self, json: dict, fluff_json: dict | None) -> None:
+    def __init__(self, _copy: dict):
+        self.name = _copy["name"]
+        self.source = _copy["source"]
+
+
+class _CreatureBase(_HasKey):
+    """Shared properties between fluff- and non-fluff creatures, handles common tasks such as name/source & parent linking."""
+    name: str
+    source: str
+    parent: Parent | None
+
+    def __init__(self, json: dict):
         self.name = json["name"]
         self.source = json["source"]
+        self.set_parent(json)
+
+    @property
+    def is_child(self) -> bool:
+        return self.parent is not None
+
+    def set_parent(self, data: dict):
+        copy = data.get("_copy", None)
+        self.parent = None
+        if copy:
+            self.parent = Parent(copy)
+
+    @property
+    def url(self):
+        url = f"https://5e.tools/bestiary.html#{self.name}_{self.source}"
+        return clean_url(url)
+
+class _BaseCreature(_CreatureBase):
+    """Creatures defined within bestiary-x.json files."""
+    subtitle: str | None
+    summoned_by_spell: str | None
+    summoned_by_spell_level: int | None
+    has_token: bool
+    stats: dict
+
+    def __init__(self, json: dict):
+        super().__init__(json)
+
         size = parse_creature_size(json.get("size", ""))
         type = parse_creature_type(json.get("type", ""))
         self.subtitle = f"{size} {type}".strip()
+
         self.summoned_by_spell = parse_creature_summon_spell(json.get("summonedBySpell", None))
         self.summoned_by_spell_level = json.get("summonedBySpellLevel", None)
 
         self.has_token = json.get("hasToken", False)
-        self.description = None
         self.stats = {
             "str": json.get("str", None),
             "dex": json.get("dex", None),
@@ -38,42 +78,6 @@ class _Creature(object):
             "wis": json.get("wis", None),
             "cha": json.get("cha", None),
         }
-
-        # Handle _copy cases
-        self.parent = None
-        self.set_parent(json)
-
-        # Handle fluff
-        if fluff_json is None:
-            return
-        
-        # TODO: Fluff-inheritance should work differently, but requires substantial re-write.
-        # Fluff inheritenance sometimes refers to a race which only has fluff-information 
-        # e.g. Githyanki Knight (MM) has Githyanki (MM) as a fluff-parent, but Githyanki (MM) only exists within fluff-bestiary-mm.json
-        # We only make creatures from non-fluff data, meaning that pure-fluff creatures are completely ignored (as they should be).
-        # We should rewrite it so we make a dict of non-fluff and fluff creatures, *then* inherit from there.
-        self.set_parent(fluff_json)
-
-        entries = fluff_json.get("entries", None)
-        if entries:
-            # Creatures have a lot of info, we only use the first entry to avoid immense descriptions.
-            descriptions = parse_descriptions("", entries, self.url)
-            if descriptions:
-                _, text = descriptions[0]
-            else:
-                text = None
-            self.description = text
-
-    def set_parent(self, data: dict):
-        copy = data.get("_copy", None)
-        self.parent = self.parent or None
-        if copy:
-            self.parent = {"name": copy.get("name", None), "source": copy.get("source", None)}
-
-    @property
-    def url(self):
-        url = f"https://5e.tools/bestiary.html#{self.name}_{self.source}"
-        return clean_url(url)
     
     @property
     def token_url(self):
@@ -83,133 +87,164 @@ class _Creature(object):
         url = f"https://5e.tools/img/bestiary/tokens/{self.source}/{self.name}.webp"
         return clean_url(url)
     
-    @property
-    def is_child(self) -> bool:
-        return self.parent is not None
-    
-    def inherit_from(self, parent: "_Creature"):
-        # print(f"{self.name} inherit from: {parent.name}")
-        # print({str(self.to_dict())})
-        self.source = self.source or parent.source
+    def inherit_from(self, parent: "_BaseCreature"):
         self.subtitle = self.subtitle or parent.subtitle
         self.summoned_by_spell = self.summoned_by_spell or parent.summoned_by_spell
         self.summoned_by_spell_level = self.summoned_by_spell_level or parent.summoned_by_spell_level
-        self.description = self.description or parent.description # BUG: Sometimes does not inherit from parent (eg. Goblin Boss MM does not inherit from Goblin MM)
-        # TODO Handle replaceTxt from _copy
-        # print({str(self.to_dict())})
-        # print()
+        self.stats = self.stats or parent.stats
+
+
+class _FluffCreature(_CreatureBase):
+    """
+    Creature fluff-data, sometimes used purely for sharing descriptions between creatures.\n
+    e.g. Githyanki Knight (MM) inherits description from Githyanki (MM), which is not an actual creature you can look up, but we do need to create it as a FluffCreature to inherit information from.
+    """ 
+    description: str | None
+
+    def __init__(self, json: dict):
+        super().__init__(json)
+        self.description = None
+
+        entries = json.get("entries", None)
+        if entries is None:
+            return
+        
+        descriptions = parse_descriptions("", entries, self.url)
+        if descriptions:
+            # Creatures have a lot of info, we only use the first entry's text to avoid huge descriptions.
+            _, self.description = descriptions[0]
+
+    def inherit_from(self, parent: "_FluffCreature"):
+        self.description = self.description or parent.description
+
+class Creature(object): # TODO: Actually implement the new classes I just wrote :-) Good Morning Daniel!
+    name: str
+    source: str
+    subtitle: str | None
+
+    summoned_by_spell: str | None
+    summoned_by_spell_level: int | None
+
+    url: str | None
+    token_url: str | None
+    description: str | None
+
+    stats: dict
+
+    def __init__(self, base: _BaseCreature, fluff: _FluffCreature | None):
+        self.name = base.name
+        self.source = base.source
+        self.subtitle = base.subtitle
+        self.summoned_by_spell = base.summoned_by_spell
+        self.summoned_by_spell_level = base.summoned_by_spell_level
+        self.url = base.url
+        self.token_url = base.token_url
+        self.stats = base.stats
+        
+        self.description = None
+
+        if fluff is None:
+            return
+
+        self.description = fluff.description
 
     def to_dict(self):
         return {
             "name": self.name,
             "source": self.source,
             "subtitle": self.subtitle,
+            "description": self.description,
             "summoned_by_spell": self.summoned_by_spell,
             "summoned_by_spell_level": self.summoned_by_spell_level,
             "url": self.url,
             "token_url": self.token_url,
-            "description": self.description,
             "stats": self.stats
         }
 
 class _Bestiary(object):
-    creatures: list[_Creature]
-    child_creatures: list[_Creature]
+    creatures: dict[str, _BaseCreature]
+    fluff_creatures: dict[str, _FluffCreature]
 
     def __init__(self, path: str, fluff_path: str | None) -> None:
-        self.creatures = []
-        self.child_creatures = []
+        self.creatures = {}
+        self.fluff_creatures = {}
         
         with open(path, "r", encoding="utf-8") as file:
             creatures = json.load(file)['monster']
+        for c in creatures:
+            creature = _BaseCreature(c)
+            self.creatures[creature.key] = creature
+
+        if fluff_path is None:
+            return
         
-        fluff = None
-        if fluff_path:
-            with open(fluff_path, "r", encoding="utf-8") as file:
-                fluff = json.load(file)['monsterFluff']
-
-        for creature in creatures:
-            creature_fluff = self._get_and_pop_creature_fluff(creature["name"], fluff)
-            c = _Creature(creature, creature_fluff)
-            
-            if c.is_child:
-                self.child_creatures.append(c)
-                continue
-
-            self.creatures.append(c)
-
-    def _get_and_pop_creature_fluff(self, creature_name: str, fluff: list | None) -> dict | None:
-        if fluff is None:
-            return None
-        
-        creature_fluff = None
-        pop_index = -1
-        for i, f in enumerate(fluff):
-            if f["name"] == creature_name:
-                creature_fluff = f
-                pop_index = i
-                break
-        
-        if pop_index != -1:
-            fluff.pop(pop_index)
-
-        return creature_fluff
+        fluff = {}
+        with open(fluff_path, "r", encoding="utf-8") as file:
+            fluff = json.load(file)['monsterFluff']
+        for c in fluff:
+            creature = _FluffCreature(c)
+            self.fluff_creatures[creature.key] = creature
 
 
 class CreatureList(object):
-    creatures: list[_Creature]
+    creatures: list[Creature]
     INDEX_PATH = "5etools-src/data/bestiary/index.json"
     INDEX_FLUFF_PATH = "5etools-src/data/bestiary/fluff-index.json"
 
     def __init__(self) -> None:
         self.creatures = []
-        child_creatures = []
 
         with open(self.INDEX_PATH, "r", encoding="utf-8") as file:
             self.index = json.load(file)
         with open(self.INDEX_FLUFF_PATH, "r", encoding="utf-8") as file:
             self.fluff_index = json.load(file)
 
+        creatures = {}
+        fluff_creatures = {}
+
         for source, path in self.index.items():
             path = f"5etools-src/data/bestiary/{path}"
             fluff_path = self.fluff_index.get(source, None)
             fluff_path = f"5etools-src/data/bestiary/{fluff_path}" if fluff_path else None
+
             b = _Bestiary(path, fluff_path)
-            self.creatures.extend(b.creatures)
-            child_creatures.extend(b.child_creatures)
+            creatures.update(b.creatures)
+            fluff_creatures.update(b.fluff_creatures)
 
-        self._handle_inheritance(child_creatures)
-
+        self.creatures = self._handle_inheritance(creatures, fluff_creatures)
         print(f"{len(self.creatures)} creatures parsed.")
 
-    def _handle_inheritance(self, children: list[_Creature]) -> None:
-        def normalize_key(name: str, source: str):
-            return (name.strip().lower(), source.strip())
-
-        creature_map = {normalize_key(c.name, c.source): c for c in self.creatures + children}
-        resolved = set()
-
-        def resolve_child(c: _Creature):
+    def _handle_inheritance(self, base: dict[str, _BaseCreature], fluff: dict[str, _FluffCreature]) -> list[Creature]:
+        def resolve_child(c: _CreatureBase, creatures: dict[str, _CreatureBase]):
             """Recursively resolve inheritance for a child creature."""
-            if not c.is_child or c in resolved:
+            if not c.is_child or c.key in resolved:
                 return
             
-            parent_key = normalize_key(c.parent['name'], c.parent['source'])
-            parent = creature_map.get(parent_key, None)
+            parent_key = c.parent.key
+            parent = creatures.get(parent_key, None)
 
             if parent is None:
-                print(f"Warning: Parent '{c.parent['name']}' ({c.parent['source']}) not found for child '{c.name}' ({c.source}).")
+                print(f"Warning: Parent '{c.parent.key}' not found for child '{c.key}'.")
                 return
             
             if parent.is_child:  # Handle parents' inheritance first.
-                resolve_child(parent)
+                resolve_child(parent, creatures)
 
             c.inherit_from(parent)
-            resolved.add(c)
+            resolved.add(c.key)
 
-        for child in children:
-            resolve_child(child)
-        self.creatures.extend(children)
+        resolved = set()
+        for c in fluff.values():
+            resolve_child(c, fluff)
+
+        resolved = set()            
+        creatures = []
+        for c in base.values():
+            resolve_child(c, base)
+            f = fluff.get(c.key, None)
+            creatures.append(Creature(c, f))
+        return creatures
+            
 
 def get_creatures_json() -> list[dict]:
     results = CreatureList().creatures
