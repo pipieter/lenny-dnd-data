@@ -1,5 +1,6 @@
 
 import json
+import re
 
 from src.data import clean_url
 from src.parser import parse_creature_size, parse_creature_summon_spell, parse_creature_type, parse_descriptions
@@ -189,20 +190,20 @@ class _FluffCreature(_CreatureBase):
         # Mod descriptions are typically "prepended", meaning we need to insert them before.
         self.descriptions = self.parent.mod_descriptions + self.descriptions + parent.descriptions
 
-    @property
-    def description(self) -> str | None:
-        description = ""
+    # @property
+    # def description(self) -> str | None:
+    #     description = ""
 
-        for _, text in self.descriptions:
+    #     for _, text in self.descriptions:
             
-            description += text
-            if len(description) > 256:
-                break
-            description += "\n"
+    #         description += text
+    #         if len(description) > 256:
+    #             break
+    #         description += "\n"
 
-        if description == "":
-            return None
-        return description.rstrip("\n")
+    #     if description == "":
+    #         return None
+    #     return description.rstrip("\n")
 
 class Creature(object):
     name: str
@@ -214,7 +215,7 @@ class Creature(object):
 
     url: str | None
     token_url: str | None
-    description: str | None
+    description: list[tuple[str, str]] | None
 
     stats: dict
 
@@ -228,19 +229,34 @@ class Creature(object):
         self.token_url = base.token_url
         self.stats = base.stats
         
-        self.description = None
+        self.description = []
 
         if fluff is None:
             return
 
-        self.description = fluff.description
+        self.description = fluff.descriptions or []
 
     def to_dict(self):
+        description = []
+        for name, text in self.description:
+            if text.startswith("**"):
+                match = re.match(r"\*\*(.+?)\*\*:", text)
+                if name == "" and match:
+                    name = match.group(1).strip()
+                    text = text[match.end():].lstrip()  # Remove the matched part from text
+                else:
+                    continue
+                
+            description.append({"name": name, "text": text})
+
+        if description == []:
+            description = None
+
         return {
             "name": self.name,
             "source": self.source,
             "subtitle": self.subtitle,
-            "description": self.description,
+            "description": description,
             "summoned_by_spell": self.summoned_by_spell,
             "summoned_by_spell_level": self.summoned_by_spell_level,
             "url": self.url,
