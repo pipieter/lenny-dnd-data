@@ -16,7 +16,7 @@ class _HasKey:
         return f"{self.name} ({self.source})".lower()
 
 
-class _Mod:  # TODO: Actually use mod-parsed data in creatures, for now the parsing works but we do not yet assign/copy these over to creatures.
+class _Mod:
     mode: str
     items: dict
     descriptions: list
