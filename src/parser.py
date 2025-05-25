@@ -314,19 +314,19 @@ def __parse_description_block(description: any) -> str:
             return f"**{name}**: {entries}"  
         
         case "table":
-            return "" # Unsupported
+            return "Unsupported 'table'"
         
         case "section":
-            return "" # Unsupported
+            return "Unsupported 'section'"
         
         case "entries":
-            return "" # Unsupported
+            return "Unsupported 'entries'"
         
         case "insetReadaloud":
-            return "" # Unsupported
+            return "Unsupported 'insetReadaloud'" # Unsupported
         
         case "image":
-            return "" # Unsupported
+            return "Unsupported 'image'" # Unsupported
 
     raise NotImplementedError(f"Unsupported description type: '{description['type']}'")
 
