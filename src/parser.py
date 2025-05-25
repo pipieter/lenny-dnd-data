@@ -335,7 +335,11 @@ def __parse_description_block(description: any) -> str:
             return "" # Images will not be handled within descriptions.
 
         case "insetReadaloud":
-            return "Unsupported 'insetReadaloud'" # Unsupported
+            if "entries" in description:
+                entries = [__parse_description_block(e) for e in description["entries"]]
+            entries = "\n".join(entries)
+            
+            return entries
 
     raise NotImplementedError(f"Unsupported description type: '{description['type']}'")
 
