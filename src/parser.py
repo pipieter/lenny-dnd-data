@@ -281,38 +281,54 @@ def __parse_description_block(description: any) -> str:
     if isinstance(description, str):
         return clean_dnd_text(description)
 
-    if description["type"] == "quote":
-        quote = __parse_description_block_from_blocks(description["entries"])
-        if "by" in description:
-            by = description["by"]
-            return f"*{quote}* - {by}"
-        else:
-            return f"*{quote}*"
+    match description["type"]:
+        case "quote":
+            quote = __parse_description_block_from_blocks(description["entries"])
+            if "by" in description:
+                by = description["by"]
+                return f"*{quote}* - {by}"
+            else:
+                return f"*{quote}*"
+            
+        case "list":
+            bullet = "•"  # U+2022
+            points = []
+            for item in description["items"]:
+                points.append(f"{bullet} {__parse_description_block(item)}")
+            return "\n".join(points)
 
-    if description["type"] == "list":
-        bullet = "•"  # U+2022
-        points = []
-        for item in description["items"]:
-            points.append(f"{bullet} {__parse_description_block(item)}")
-        return "\n".join(points)
+        case "inset":
+            return f"*{__parse_description_block_from_blocks(description['entries'])}*"
 
-    if description["type"] == "inset":
-        return f"*{__parse_description_block_from_blocks(description['entries'])}*"
+        case "item":
+            name = description["name"]
+            if "entries" in description:
+                entries = [__parse_description_block(e) for e in description["entries"]]
+            elif "entry" in description:
+                entries = [__parse_description_block(description["entry"])]
+            else:
+                raise RuntimeError(
+                    "Could not find entry in description block with type 'item'"
+                )
+            entries = "\n".join(entries)
+            return f"**{name}**: {entries}"  
+        
+        case "table":
+            return "Unsupported 'table'"
+        
+        case "section":
+            return "Unsupported 'section'"
+        
+        case "entries":
+            return "Unsupported 'entries'"
+        
+        case "insetReadaloud":
+            return "Unsupported 'insetReadaloud'" # Unsupported
+        
+        case "image":
+            return "Unsupported 'image'" # Unsupported
 
-    if description["type"] == "item":
-        name = description["name"]
-        if "entries" in description:
-            entries = [__parse_description_block(e) for e in description["entries"]]
-        elif "entry" in description:
-            entries = [__parse_description_block(description["entry"])]
-        else:
-            raise RuntimeError(
-                "Could not find entry in description block with type 'item'"
-            )
-        entries = "\n".join(entries)
-        return f"**{name}**: {entries}"
-
-    return f"Unsupported description type: '{description['type']}'"
+    raise NotImplementedError(f"Unsupported description type: '{description['type']}'")
 
 
 def __parse_description_block_from_blocks(descriptions: list[any]) -> str:
@@ -420,7 +436,11 @@ def parse_descriptions(
         descriptions.append(("", blocks[i]))
     descriptions.extend(subdescriptions)
 
-    return descriptions
+    cleaned_descriptions = [ # Unsupported types may append empty strings, these are removed here.
+        (title, desc) for title, desc in descriptions if desc.strip()
+    ]
+
+    return cleaned_descriptions
 
 
 def parse_item_value(value: int) -> str | None:
@@ -456,7 +476,20 @@ def parse_item_weight(weight: int) -> str | None:
     else:
         return f"{weight} lb."
 
-def parse_creature_size(sizes: any) -> str | None:
+def format_words_list(words: list) -> str:
+    """Formats a list of words into comma-separated text. Example: [A, B] => "A or B" / [A, B, C] => "A, B, or C"""
+    words = [word.title() for word in words]
+
+    if len(words) == 2:
+        return ' or '.join(words)
+    elif len(words) > 2:
+        return ', '.join(words[:-1]) + f", or {words[-1]}"
+    elif len(words) == 1:
+        return words[0]
+    else:
+        return ""
+
+def parse_creature_size(sizes: any) -> str:
     size_map = {
         "T": "Tiny",
         "S": "Small",
@@ -466,36 +499,35 @@ def parse_creature_size(sizes: any) -> str | None:
         "G": "Gargantuan"
     }
 
-    if isinstance(sizes, list):
-        size = ' or '.join(size_map.get(s, s) for s in sizes)
-    else:
-        size = size_map.get(sizes, None)
+    # Good reference creature is Animated Object
+    words = []
+    for size in sizes:
+        word = size_map.get(size, None)
+        if word:
+            words.append(word)
 
-    return size if size else None
+    return format_words_list(words)
 
-def parse_creature_type(creature_type: str | dict) -> str | None:
+def parse_creature_type(creature_type: str | dict) -> str:
     if isinstance(creature_type, dict):
-        c_type = creature_type.get("type", None)
+        type = creature_type.get("type", "")
 
-        if isinstance(c_type, dict):
-            # Edge case where type can be multiple types (eg. Planar Incarnate)
-            choices = c_type.get("choose", None)
-            if choices:
-                c_type = ' or '.join(choice.title() for choice in choices)
-            else:
-                c_type = None
+        if isinstance(type, dict):
+            # Edge case where type can be multiple types (eg. Otherworldly Steed)
+            choices = type.get("choose", "")
+            type = format_words_list(choices)
         else:
-            c_type = c_type.title() if c_type else None
+            type = type.title()
 
-        c_tags = creature_type.get("tags", None)
-        if c_tags:
-            tag_list = [t if isinstance(t, str) else t.get("name", "") for t in c_tags]
+        tags = creature_type.get("tags", None)
+        if tags:
+            tag_list = [t if isinstance(t, str) else t.get("name", "") for t in tags]
             tags = ' '.join(tag_list).title()
         else:
             tags = None
             
-        return f"{c_type} ({tags})" if tags else c_type
-    return creature_type.title() if creature_type else None
+        return f"{type} ({tags})" if tags else type
+    return creature_type.title() if creature_type else ""
 
 def parse_creature_summon_spell(spell: str | None) -> str | None:
     if spell is None:
