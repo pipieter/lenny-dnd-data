@@ -280,8 +280,9 @@ def parse_components(components: dict) -> str:
 def __parse_description_block(description: any) -> str:
     if isinstance(description, str):
         return clean_dnd_text(description)
-
-    match description["type"]:
+    
+    type = description["type"]
+    match type:
         case "quote":
             quote = __parse_description_block_from_blocks(description["entries"])
             if "by" in description:
@@ -312,21 +313,33 @@ def __parse_description_block(description: any) -> str:
                 )
             entries = "\n".join(entries)
             return f"**{name}**: {entries}"  
+
+        case "entries" | "section":
+            name = description.get("name", None)
+            entries = [__parse_description_block(e) for e in description["entries"]]
+            entries = "\n".join(entries)
+            return f"**{name}**: {entries}" if name else entries
+        
+        case "entry":
+            entries = [__parse_description_block(description["entry"])]
+            return "\n".join(entries)
         
         case "table":
-            return "Unsupported 'table'"
-        
-        case "section":
-            return "Unsupported 'section'"
-        
-        case "entries":
-            return "Unsupported 'entries'"
-        
-        case "insetReadaloud":
-            return "Unsupported 'insetReadaloud'" # Unsupported
+            title, table = __parse_description_from_table(description, "")
+
+            if title.strip() == "":
+                return table
+            return f"**{title}**:\n{table}"
         
         case "image":
-            return "Unsupported 'image'" # Unsupported
+            return "" # Images will not be handled within descriptions.
+
+        case "insetReadaloud":
+            if "entries" in description:
+                entries = [__parse_description_block(e) for e in description["entries"]]
+            entries = "\n".join(entries)
+            
+            return entries
 
     raise NotImplementedError(f"Unsupported description type: '{description['type']}'")
 
@@ -350,8 +363,8 @@ def __parse_table_value(value: any) -> str:
                     roll_max = value["roll"]["max"]
                     return f"{roll_min}-{roll_max}"
 
-            return f"Unknown table value cell type {value['type']}"
-        return f"Unknown table value type {value['type']}"
+            return f"Unsupported table value cell-type: '{value['type']}'"
+        return f"Unsupported table value-type: '{value['type']}'"
     else:
         # For primitives, just convert to string
         return str(value)
