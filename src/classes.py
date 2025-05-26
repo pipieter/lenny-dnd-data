@@ -5,8 +5,10 @@ class Description:
     name: str
     text: str
 
-    def __init__(self, name: str, text: str):
+    def __init__(self, name: str, text: str | list[str]):
         self.name = name
+        if isinstance(text, list):
+            text = "\n".join(text)
         self.text = text
     
     def to_dict(self) -> dict:
@@ -270,16 +272,16 @@ class CharacterClass:
         desc = []
 
         if self.hp_info is not None:
-            desc.append(Description("Hit Points", "\n".join(self.hp_info)))
+            desc.append(Description("Hit Points", self.hp_info))
 
         if self.proficiencies is not None:
-            desc.append(Description("Proficiencies", "\n".join(self.proficiencies)))
+            desc.append(Description("Proficiencies", self.proficiencies))
 
         if self.starting_equipment is not None:
             desc.append(Description("Starting Equipment", self.starting_equipment)) # TODO this one should be a list, not a str. Handle everything the same.
         
         if self.multiclass_info is not None:
-            desc.append(Description("Multiclassing", "\n".join(self.multiclass_info)))
+            desc.append(Description("Multiclassing", self.multiclass_info))
         
         return desc
 
@@ -293,7 +295,7 @@ class CharacterClass:
         if self.level_spell_info is not None:
             for i, spell_info in enumerate(self.level_spell_info):
                 if spell_info:
-                    desc[i].append(Description("Spellcasting", '\n'.join(spell_info)))
+                    desc[i].append(Description("Spellcasting", spell_info))
         
         if self.level_features is not None:
             for i, features in enumerate(self.level_features):
