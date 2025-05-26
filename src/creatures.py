@@ -190,21 +190,6 @@ class _FluffCreature(_CreatureBase):
         # Mod descriptions are typically "prepended", meaning we need to insert them before.
         self.descriptions = self.parent.mod_descriptions + self.descriptions + parent.descriptions
 
-    # @property
-    # def description(self) -> str | None:
-    #     description = ""
-
-    #     for _, text in self.descriptions:
-            
-    #         description += text
-    #         if len(description) > 256:
-    #             break
-    #         description += "\n"
-
-    #     if description == "":
-    #         return None
-    #     return description.rstrip("\n")
-
 class Creature(object):
     name: str
     source: str
@@ -294,7 +279,7 @@ class CreatureList(object):
     INDEX_PATH = "5etools-src/data/bestiary/index.json"
     INDEX_FLUFF_PATH = "5etools-src/data/bestiary/fluff-index.json"
 
-    def __init__(self) -> None:
+    def __init__(self):
         self.creatures = []
 
         with open(self.INDEX_PATH, "r", encoding="utf-8") as file:

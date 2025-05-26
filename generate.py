@@ -1,4 +1,5 @@
 import json
+from src.classes import get_classes_json
 from src.data import load_data
 from src.conditions import get_conditions_json, get_diseases_json
 from src.items import get_items_json
@@ -14,6 +15,7 @@ if __name__ == "__main__":
     conditions = get_conditions_json(data)
     diseases = get_diseases_json(data)
     creatures = get_creatures_json()
+    classes = get_classes_json()
 
     with open("./generated/spells.json", "w") as file:
         json.dump(spells, file, indent=2)
@@ -29,3 +31,6 @@ if __name__ == "__main__":
 
     with open("./generated/creatures.json", "w") as file:
         json.dump(creatures, file, indent=2)
+
+    with open("./generated/classes.json", "w") as file:
+        json.dump(classes, file, indent=2)

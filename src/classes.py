@@ -1,5 +1,5 @@
+import json
 from src.parser import clean_dnd_text, format_words_list
-
 
 class CharacterClass:
     name: str
@@ -11,28 +11,25 @@ class CharacterClass:
     multiclass_info: list[str] | None
 
     spellcasting_ability: str | None
-    cantrip_progression: dict[int, int] | None
-    spells_known_progression: dict[int, int] | None
+    level_spell_info: list[str] | None
 
-    level_features: dict[int, list[tuple[str, bool]] | None]  # TODO How to handle subclass features?
+    level_features: list[list[str] | None] | None
 
     def __init__(self, json: dict):
         self.name = json["name"]
         self.source = json["source"]
+        print(f"- {self.name} ({self.source})")
 
         self._set_hp_info(json)
         self._set_proficiencies(json)
         self._set_starting_equipment(json)
         self._set_multiclass_info(json)
-
-        # self.spellcasting_ability = json.get("spellcastingAbility", None) # TODO format shortnames to long (e.g. str => Strength)
-        # self.cantrip_progression = json.get("cantripProgression", None) # TODO
-        # self.spells_known_progression = json.get("spellsKnownProgression", None) # TODO
-        # self.level_features = None
+        self._set_spell_info(json)
+        self._set_class_features(json)
 
     def _set_hp_info(self, json: dict):
         """Set the HP information for the character class."""
-        self.info = None
+        self.hp_info = None
         hd = json.get("hd", None)
         if hd is None:
             return
@@ -71,12 +68,12 @@ class CharacterClass:
 
                         armor.append(f"{armor_type}")
 
-                    text = f"{format_words_list(armor, "and")} armor"
+                    text = f"{format_words_list(armor, 'and')} armor"
                     if has_shields:
                         text += " and Shields"
                 
                 case "weapons":
-                    text = f"{format_words_list(proficiency, "and")} weapons"
+                    text = f"{format_words_list(proficiency, 'and')} weapons"
 
                 case "skills":
                     for skill_proficiencies in proficiency:
@@ -94,6 +91,18 @@ class CharacterClass:
                             continue
 
                         text += f"Choose ``{count}``: {format_words_list(skills)}"
+                
+                case "tools":
+                    tools = []
+                    for tool in proficiency:
+                        tool_text = clean_dnd_text(tool)
+                        tools.append(tool_text)
+                    
+                    text = f"{format_words_list(tools, 'and')}"
+
+                case "toolProficiencies":
+                    pass # TODO: Handle tool proficiencies (e.g. Thieves' Tools, etc.)
+
                 case _:
                     raise NotImplementedError("Unknown proficiency type: " + type)
 
@@ -139,7 +148,7 @@ class CharacterClass:
          # Modern classes use 'entries'
         entries = starting_equipment.get("entries", None)
         if entries is not None:
-            for line in default:
+            for line in entries:
                 text += f"• {clean_dnd_text(line)}\n"
             
             self.starting_equipment = text
@@ -172,3 +181,116 @@ class CharacterClass:
         
         if info != []:
             self.multiclass_info = info
+
+    def _set_spell_info(self, json: dict):
+        """Set the spellcasting information for the character class."""
+        self.spellcasting_ability = json.get("spellcastingAbility", None) # TODO format shortnames to long (e.g. str => Strength)
+        self.level_spell_info = None
+
+        if self.spellcasting_ability is None:
+            return
+
+        level_info: list[str] = []
+        cantrip_progression = json.get("cantripProgression", [])
+        spells_known_progression = json.get("spellsKnownProgression", [])
+
+        for count in cantrip_progression:
+            text = f"**Cantrips Known:** ``{count}``"
+            level_info.append(text)
+        
+        if cantrip_progression == []:
+            for i in range(len(spells_known_progression)):
+                level_info.append("")
+        
+        for i, count in enumerate(spells_known_progression):
+            if level_info[i] != "":
+                level_info[i] += "\n"
+
+            text = f"**Spells Known:** ``{count}``"
+            level_info[i] += text
+        
+        # TODO Support spellsKnownProgressionFixed (e.g. Wizard)
+
+        if level_info != []:
+            self.level_spell_info = level_info
+            
+    def _set_class_features(self, json: dict):
+        """Set the class features for the character class."""
+        self.level_features = None
+        features = json.get("classFeatures", None)
+        if features is None:
+            return
+        
+        info = []
+        def __parse_class_feature(feature: str):
+            """Parse a class feature string and add it to the info list."""
+            parts = feature.split("|")
+            while len(parts) < 5:
+                parts.append("")
+
+            name, char_class, source, level, sub_source = parts
+            level = int(level)
+
+            while len(info) < level:
+                info.append([]) # Populate info with lists until we reach the level we need
+
+            if sub_source != "":
+                name += f" ({sub_source})"
+
+            info[level - 1].append(name)
+
+        for feature in features:
+            if isinstance(feature, str):
+                __parse_class_feature(feature)
+            elif isinstance(feature, dict): # Subclass feature
+                sub_feature = feature.get("classFeature", None)
+                if sub_feature is not None:
+                    __parse_class_feature(sub_feature)
+            else:
+                raise NotImplementedError(f"Unknown class feature type: {type(feature)}")
+            
+        for i in range(len(info)):
+            if len(info[i]) == 0:
+                info[i] = None
+        
+        self.level_features = info
+
+    def to_dict(self) -> dict:
+        return {
+            "name": self.name,
+            "source": self.source,
+            "hp": self.hp_info,
+            "proficiencies": self.proficiencies,
+            "start_equipment": self.starting_equipment,
+            "multiclass": self.multiclass_info,
+            "spellcasting_ability": self.spellcasting_ability,
+            "level_spell_info": self.level_spell_info,
+            "level_features": self.level_features
+        }
+
+class ClassList:
+    classes: list[dict]
+    INDEX_PATH = "5etools-src/data/class/index.json"
+
+    def __init__(self):
+        self.classes = []
+
+        with open(self.INDEX_PATH, "r", encoding="utf-8") as file:
+            self.index = json.load(file)
+
+        for source, path in self.index.items():
+            path = f"5etools-src/data/class/{path}"
+            print(path)
+
+            with open(path, "r", encoding="utf-8") as file:
+                data = json.load(file)
+            
+            class_json = data.get("class", {})
+            for class_data in class_json:
+                character_class = CharacterClass(class_data)
+                self.classes.append(character_class.to_dict())
+            
+def get_classes_json() -> list[dict]:
+    """Get a character class by name and source."""
+    results = ClassList().classes
+    return results
