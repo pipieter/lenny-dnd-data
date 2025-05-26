@@ -22,6 +22,15 @@ SPELL_SCHOOLS = {
     "T": "Transmutation",
 }
 
+ABILITY_SCORES = {
+    "str": "Strength",
+    "dex": "Dexterity",
+    "con": "Constitution",
+    "int": "Intelligence",
+    "wis": "Wisdom",
+    "cha": "Charisma",
+}
+
 
 def clean_dnd_text(text: str, no_formatting=False) -> str:
     text = re.sub(r"\{@atk rw\} ", r"+", text)
@@ -140,6 +149,8 @@ def parse_spell_level(level: int) -> str:
 def parse_spell_school(school: str) -> str:
     return SPELL_SCHOOLS[school]
 
+def parse_ability_score(score: str) -> str:
+    return ABILITY_SCORES[score.lower()]
 
 def __parse_single_casting_time(time: any) -> str:
     amount = time["number"]

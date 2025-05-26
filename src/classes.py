@@ -1,5 +1,5 @@
 import json
-from src.parser import clean_dnd_text, format_words_list
+from src.parser import clean_dnd_text, format_words_list, parse_ability_score
 
 class Description:
     name: str
@@ -184,7 +184,7 @@ class CharacterClass:
         if requirements is not None:
             skills = []
             for skill, lvl in requirements.items():
-                skills.append(f"``{lvl}`` {skill.capitalize()}")
+                skills.append(f"``{lvl}`` {skill.capitalize()}") # TODO: Handle "or" cases (e.g. Fighter (PHB))
 
             text = f"**Ability requirements:** At least {format_words_list(skills)}"
             if len(requirements) > 1:
@@ -200,7 +200,11 @@ class CharacterClass:
 
     def _set_spell_info(self, json: dict):
         """Set the spellcasting information for the character class."""
-        self.spellcasting_ability = json.get("spellcastingAbility", None) # TODO format shortnames to long (e.g. str => Strength)
+        spellcasting_ability = json.get("spellcastingAbility", None)
+        self.spellcasting_ability = None
+        if spellcasting_ability is not None:
+            self.spellcasting_ability = parse_ability_score(spellcasting_ability)
+
         self.level_spell_info = None
 
         if self.spellcasting_ability is None:
