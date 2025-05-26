@@ -1,0 +1,4841 @@
+[
+  {
+    "name": "Artificer",
+    "source": "TCE",
+    "spellcasting_ability": "int",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Artificer HP:** ``8`` + Con. mod\n**HP per Artificer level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Con and Int"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 Any two simple weapons of your choice\n\u2022 A light crossbow and 20 bolts\n\u2022 (a) studded leather armor or (b) scale mail\n\u2022 Thieves' tools and a dungeoneer's pack\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Int\n**Armor Proficiencies:** Light and Medium armor and Shields\n**Tool Proficiencies:** Thieves' Tools and Tinker'S Tools"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Optional Rule: Firearm Proficiency, Magical Tinkering, and Spellcasting"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Infuse Item"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Artificer Specialist and The Right Tool For The Job"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Artificer Specialist Feature"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Tool Expertise"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Flash Of Genius"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Artificer Specialist Feature"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Magic Item Adept"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Spell-Storing Item"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Magic Item Savant"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Artificer Specialist Feature"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Magic Item Master"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Soul Of Artifice"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Barbarian",
+    "source": "PHB",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d12``\n**Level 1 Barbarian HP:** ``12`` + Con. mod\n**HP per Barbarian level:** ``1d12`` + Con. mod *or* ``7`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Str and Con"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a greataxe or (b) any martial melee weapon\n\u2022 (a) two handaxes or (b) any simple weapon\n\u2022 An explorer's pack, and four javelins\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Str\n**Armor Proficiencies:**  armor and Shields\n**Weapon Proficiencies:** Simple and Martial weapons"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Rage and Unarmored Defense"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Danger Sense and Reckless Attack"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Primal Path and Primal Knowledge (Tce)"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack and Fast Movement"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Path Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Feral Instinct and Instinctive Pounce (Tce)"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Brutal Critical (1 Die)"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Path Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Relentless Rage"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Brutal Critical (2 Dice)"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Path Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Persistent Rage"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Brutal Critical (3 Dice)"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Indomitable Might"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Primal Champion"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Barbarian",
+    "source": "XPHB",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d12``\n**Level 1 Barbarian HP:** ``12`` + Con. mod\n**HP per Barbarian level:** ``1d12`` + Con. mod *or* ``7`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Str and Con"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) greataxe, 4 handaxes, explorer's pack, and 15 gp; or (b) 75 gp\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Armor Proficiencies:**  armor and Shields\n**Weapon Proficiencies:** Martial weapons"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Rage, Unarmored Defense, and Weapon Mastery"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Danger Sense and Reckless Attack"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Barbarian Subclass and Primal Knowledge"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack and Fast Movement"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Feral Instinct and Instinctive Pounce"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Brutal Strike"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Relentless Rage"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Improved Brutal Strike"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Persistent Rage"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Improved Brutal Strike"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Indomitable Might"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Primal Champion"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bard",
+    "source": "PHB",
+    "spellcasting_ability": "cha",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Bard HP:** ``8`` + Con. mod\n**HP per Bard level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Dex and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a rapier, (b) a longsword, or (c) any simple weapon\n\u2022 (a) a diplomat's pack or (b) an entertainer's pack\n\u2022 (a) a lute or (b) any other musical instrument\n\u2022 Leather armor, and a dagger\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Cha\n**Armor Proficiencies:** Light armor\n**Skill Proficiencies:** Choose ``1``: Athletics, Acrobatics, Sleight Of Hand, Stealth, Arcana, History, Investigation, Nature, Religion, Animal Handling, Insight, Medicine, Perception, Survival, Deception, Intimidation, Performance, or Persuasion\n**Tool Proficiencies:** One Musical Instrument Of Your Choice"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``\n**Spells Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Bardic Inspiration and Spellcasting"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``\n**Spells Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Jack Of All Trades, Song Of Rest (D6), and Magical Inspiration (Tce)"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``\n**Spells Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Bard College and Expertise"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``7``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Bardic Versatility (Tce)"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``8``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Bardic Inspiration (D8) and Font Of Inspiration"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``9``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Countercharm and Bard College Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``10``"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``11``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``12``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Song Of Rest (D8)"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``14``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Bardic Inspiration (D10), Expertise, and Magical Secrets"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``15``"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``15``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``16``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Song Of Rest (D10)"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``18``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Magical Secrets and Bard College Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``19``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Bardic Inspiration (D12)"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``19``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``20``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Song Of Rest (D12)"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``22``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Magical Secrets"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``22``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``22``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Superior Inspiration"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bard",
+    "source": "XPHB",
+    "spellcasting_ability": "cha",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Bard HP:** ``8`` + Con. mod\n**HP per Bard level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Dex and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) leather armor, 2 dagger, musical instrument of your choice, entertainer's pack, 19 gp; or (b) 90 gp\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Armor Proficiencies:** Light armor\n**Tool Proficiencies:** Choose One Musical Instrument\n**Skill Proficiencies:** Choose ``1``: Athletics, Acrobatics, Sleight Of Hand, Stealth, Arcana, History, Investigation, Nature, Religion, Animal Handling, Insight, Medicine, Perception, Survival, Deception, Intimidation, Performance, or Persuasion"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Bardic Inspiration and Spellcasting"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Expertise and Jack Of All Trades"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Bard Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Font Of Inspiration"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Countercharm"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Expertise"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Magical Secrets"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Superior Inspiration"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Words Of Creation"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cleric",
+    "source": "PHB",
+    "spellcasting_ability": "wis",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Cleric HP:** ``8`` + Con. mod\n**HP per Cleric level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Wis and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a mace or (b) a warhammer (if proficient)\n\u2022 (a) scale mail, (b) leather armor, or (c) chain mail (if proficient)\n\u2022 (a) a light crossbow and 20 bolts or (b) any simple weapon\n\u2022 (a) a priest's pack or (b) an explorer's pack\n\u2022 A shield and a holy symbol\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Wis\n**Armor Proficiencies:** Light and Medium armor and Shields"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Spellcasting and Divine Domain"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Channel Divinity, Channel Divinity: Harness Divine Power (Tce), and Divine Domain Feature"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Cantrip Versatility (Tce)"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Destroy Undead (Cr 1/2)"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Channel Divinity and Divine Domain Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement, Destroy Undead (Cr 1), and Divine Domain Feature"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Divine Intervention"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Destroy Undead (Cr 2)"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Destroy Undead (Cr 3)"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Destroy Undead (Cr 4) and Divine Domain Feature"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Channel Divinity"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Divine Intervention Improvement"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cleric",
+    "source": "XPHB",
+    "spellcasting_ability": "wis",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Cleric HP:** ``8`` + Con. mod\n**HP per Cleric level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Wis and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) chain shirt, shield, mace, holy symbol, priest's pack, 7 gp; or (b) 110 gp\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Armor Proficiencies:** Light and Medium armor and Shields"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Spellcasting and Divine Order"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Channel Divinity"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Cleric Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Sear Undead"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Blessed Strikes"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Divine Intervention"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Improved Blessed Strikes"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Greater Divine Intervention"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Druid",
+    "source": "PHB",
+    "spellcasting_ability": "wis",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Druid HP:** ``8`` + Con. mod\n**HP per Druid level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Int and Wis"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a wooden shield or (b) any simple weapon\n\u2022 (a) a scimitar or (b) any simple melee weapon\n\u2022 Leather armor, an explorer's pack, and a druidic focus\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Wis\n**Armor Proficiencies:** Light, Medium, and {'Proficiency': 'Shield', 'Full': 'Shields (Druids Will Not Wear Armor Or Use Shields Made Of Metal)'} armor"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Druidic and Spellcasting"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Wild Shape, Wild Companion (Tce), and Druid Circle"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Wild Shape Improvement, Ability Score Improvement, and Cantrip Versatility (Tce)"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Druid Circle Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Wild Shape Improvement and Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Druid Circle Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Druid Circle Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Timeless Body and Beast Spells"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Archdruid"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Druid",
+    "source": "XPHB",
+    "spellcasting_ability": "wis",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Druid HP:** ``8`` + Con. mod\n**HP per Druid level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Int and Wis"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) leather armor, shield, sickle, druidic focus (quarterstaff), explorer's pack, herbalism kit, 9 gp; or (b) 50 gp\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Armor Proficiencies:** Light armor and Shields"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Druidic, Primal Order, and Spellcasting"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Wild Companion and Wild Shape"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Druid Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Wild Resurgence"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Elemental Fury"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Improved Elemental Fury"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Beast Spells"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Archdruid"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Fighter",
+    "source": "PHB",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d10``\n**Level 1 Fighter HP:** ``10`` + Con. mod\n**HP per Fighter level:** ``1d10`` + Con. mod *or* ``6`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Str and Con"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) chain mail or (b) leather armor, longbow, and 20 arrows\n\u2022 (a) a martial weapon and a shield or (b) two martial weapons\n\u2022 (a) a light crossbow and 20 bolts or (b) two handaxes\n\u2022 (a) a dungeoneer's pack or (b) an explorer's pack\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``[{'Str': 13, 'Dex': 13}]`` Or\n**Armor Proficiencies:** Light and Medium armor and Shields\n**Weapon Proficiencies:** Simple and Martial weapons"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Fighting Style and Second Wind"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Action Surge"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Martial Archetype"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Martial Versatility (Tce)"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Martial Archetype Feature"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Indomitable"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Martial Archetype Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack (2)"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Indomitable (Two Uses)"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Martial Archetype Feature"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Action Surge (Two Uses) and Indomitable (Three Uses)"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Martial Archetype Feature"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack (3)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Fighter",
+    "source": "XPHB",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d10``\n**Level 1 Fighter HP:** ``10`` + Con. mod\n**HP per Fighter level:** ``1d10`` + Con. mod *or* ``6`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Str and Con"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a, b, or c:* (a) chain mail, greatsword, flail, 8 javelins, dungeoneer's pack, and 4 gp; (b) studded leather armor, scimitar, shortsword, longbow, 20 arrows, quiver, dungeoneer's pack, and 11 gp; or (c) 155 gp\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Armor Proficiencies:** Light and Medium armor and Shields\n**Weapon Proficiencies:** Martial weapons"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Fighting Style, Second Wind, and Weapon Mastery"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Action Surge and Tactical Mind"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Fighter Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack and Tactical Shift"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Indomitable and Tactical Master"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Two Extra Attacks"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Indomitable and Studied Attacks"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Action Surge and Indomitable"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Three Extra Attacks"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Monk",
+    "source": "PHB",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Monk HP:** ``8`` + Con. mod\n**HP per Monk level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Str and Dex"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a shortsword or (b) any simple weapon\n\u2022 (a) a dungeoneer's pack or (b) an explorer's pack\n\u2022 10 darts\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Dex or ``13`` Wis (Primary ability of new class)\n**Weapon Proficiencies:** Simple and {@Item Shortsword|Phb|Shortswords} weapons"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Unarmored Defense and Martial Arts"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Ki, Dedicated Weapon (Tce), and Unarmored Movement"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Deflect Missiles, Monastic Tradition, and Ki-Fueled Attack (Tce)"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement, Slow Fall, and Quickened Healing (Tce)"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack, Stunning Strike, and Focused Aim (Tce)"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Ki-Empowered Strikes and Monastic Tradition Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Evasion and Stillness Of Mind"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Unarmored Movement Improvement"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Purity Of Body"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Monastic Tradition Feature"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Tongue Of The Sun And Moon"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Diamond Soul"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Timeless Body"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Monastic Tradition Feature"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Empty Body"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Perfect Self"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Monk",
+    "source": "XPHB",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Monk HP:** ``8`` + Con. mod\n**HP per Monk level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Str and Dex"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) spear, 5 daggers, artisan's tools or musical instrument chosen for the tool proficiency above, explorer's pack, and 11 gp; or (b) 50 gp\n"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Martial Arts and Unarmored Defense"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Monk'S Focus, Unarmored Movement, and Uncanny Metabolism"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Deflect Attacks and Monk Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Slow Fall"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack and Stunning Strike"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Empowered Strikes and Subclass Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Evasion"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Acrobatic Movement"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Heightened Focus and Self-Restoration"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Deflect Energy"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Disciplined Survivor"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Perfect Focus"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Superior Defense"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Body And Mind"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Mystic",
+    "source": "UATheMysticClass",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Mystic HP:** ``8`` + Con. mod\n**HP per Mystic level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Int and Wis"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a spear or (b) a mace\n\u2022 (a) leather armor or (b) studded leather armor\n\u2022 (a) a light crossbow and 20 bolts or (b) any simple weapon\n\u2022 (a) a scholar's pack or (b) an explorer's pack\n"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Psionics, Psionic Disciplines And Talents, Using A Discipline, and Mystic Order"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Mystical Recovery and Telepathy"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Mystic Order Feature"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Strength Of Mind"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Mystic Order Feature"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Potent Psionics (1D8)"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Consumptive Power"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Psionic Mastery (1/Day)"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Psionic Mastery (2/Day)"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Mystic Order Feature and Potent Psionics (2D8)"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Psionic Mastery (3/Day)"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Psionic Mastery (4/Day)"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Psionic Body"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Paladin",
+    "source": "PHB",
+    "spellcasting_ability": "cha",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d10``\n**Level 1 Paladin HP:** ``10`` + Con. mod\n**HP per Paladin level:** ``1d10`` + Con. mod *or* ``6`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Wis and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a martial weapon and a shield or (b) two martial weapons\n\u2022 (a) five javelins or (b) any simple melee weapon\n\u2022 (a) a priest's pack or (b) an explorer's pack\n\u2022 Chain mail and a holy symbol\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Str or ``13`` Cha (Primary ability of new class)\n**Armor Proficiencies:** Light and Medium armor and Shields\n**Weapon Proficiencies:** Simple and Martial weapons"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Divine Sense and Lay On Hands"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Divine Smite, Fighting Style, and Spellcasting"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Divine Health and Sacred Oath"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Martial Versatility (Tce)"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Aura Of Protection"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Sacred Oath Feature"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Aura Of Courage"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Improved Divine Smite"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Cleansing Touch"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Sacred Oath Feature"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Aura Improvements"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Sacred Oath Feature"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Paladin",
+    "source": "XPHB",
+    "spellcasting_ability": "cha",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d10``\n**Level 1 Paladin HP:** ``10`` + Con. mod\n**HP per Paladin level:** ``1d10`` + Con. mod *or* ``6`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Wis and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) chain mail, shield, longsword, 6 javelins, holy symbol, priest's pack, and 9 gp; or (b) 150 gp\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Armor Proficiencies:** Light and Medium armor and Shields\n**Weapon Proficiencies:** Martial weapons"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Lay On Hands, Spellcasting, and Weapon Mastery"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Fighting Style and Paladin'S Smite"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Channel Divinity and Paladin Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack and Faithful Steed"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Aura Of Protection"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Abjure Foes"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Aura Of Courage"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Radiant Strikes"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Restoring Touch"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Aura Expansion"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Ranger",
+    "source": "PHB",
+    "spellcasting_ability": "wis",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d10``\n**Level 1 Ranger HP:** ``10`` + Con. mod\n**HP per Ranger level:** ``1d10`` + Con. mod *or* ``6`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Str and Dex"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) scale mail or (b) leather armor\n\u2022 (a) two shortswords or (b) two simple melee weapons\n\u2022 (a) a dungeoneer's pack or (b) an explorer's pack\n\u2022 A longbow and a quiver of 20 arrows\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Dex or ``13`` Wis (Primary ability of new class)\n**Armor Proficiencies:** Light and Medium armor and Shields\n**Skill Proficiencies:** Choose ``1``: Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, or Survival\n**Weapon Proficiencies:** Simple and Martial weapons"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``0``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Favored Enemy, Favored Foe (Tce), Natural Explorer, and Deft Explorer (Tce)"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Fighting Style, Spellcasting, and Spellcasting Focus (Tce)"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ranger Archetype, Primeval Awareness, and Primal Awareness (Tce)"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Martial Versatility (Tce)"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Extra Attack"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Favored Enemy And Natural Explorer Improvements and Deft Explorer Improvement (Tce)"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ranger Archetype Feature"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Land'S Stride"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``6``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Hide In Plain Sight, Nature'S Veil (Tce), Natural Explorer Improvement, and Deft Explorer Improvement (Tce)"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``7``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ranger Archetype Feature"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``7``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``8``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``8``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Vanish and Favored Enemy Improvement"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``9``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ranger Archetype Feature"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``9``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``10``"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``10``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Feral Senses"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``11``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Spells Known:** ``11``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Foe Slayer"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Ranger",
+    "source": "XPHB",
+    "spellcasting_ability": "wis",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d10``\n**Level 1 Ranger HP:** ``10`` + Con. mod\n**HP per Ranger level:** ``1d10`` + Con. mod *or* ``6`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Str and Dex"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) studded leather armor, scimitar, shortsword, longbow, 20 arrows, quiver, druidic focus (sprig of mistletoe), explorer's pack, and 7 gp; or (b) 150 gp\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Weapon Proficiencies:** Martial weapons\n**Armor Proficiencies:** Light and Medium armor and Shields\n**Skill Proficiencies:** Choose ``1``: Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, or Survival"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Spellcasting, Favored Enemy, and Weapon Mastery"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Deft Explorer and Fighting Style"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Ranger Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Roving"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Expertise"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Tireless"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Relentless Hunter"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Nature'S Veil"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Precise Hunter"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Feral Senses"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Foe Slayer"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Rogue",
+    "source": "PHB",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Rogue HP:** ``8`` + Con. mod\n**HP per Rogue level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Dex and Int"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a rapier or (b) a shortsword\n\u2022 (a) a shortbow and quiver of 20 arrows or (b) a shortsword\n\u2022 (a) a burglar's pack, (b) a dungeoneer's pack, or (c) an explorer's pack\n\u2022 Leather armor, two daggers, and thieves' tools\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Dex\n**Armor Proficiencies:** Light armor\n**Skill Proficiencies:** Choose ``1``: Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight Of Hand, or Stealth\n**Tool Proficiencies:** Thieves' Tools"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Expertise, Sneak Attack, and Thieves' Cant"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Cunning Action"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Roguish Archetype and Steady Aim (Tce)"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Uncanny Dodge"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Expertise"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Evasion"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Roguish Archetype Feature"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Reliable Talent"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Roguish Archetype Feature"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Blindsense"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Slippery Mind"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Roguish Archetype Feature"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Elusive"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Stroke Of Luck"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Rogue",
+    "source": "XPHB",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Rogue HP:** ``8`` + Con. mod\n**HP per Rogue level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Dex and Int"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) leather armor, 2 daggers, shortsword, shortbow, 20 arrows, quiver, thieves' tools, burglar's pack, and 8 gp; or (b) 100 gp\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Armor Proficiencies:** Light armor\n**Tool Proficiencies:** Thieves' Tools\n**Skill Proficiencies:** Choose ``1``: Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Persuasion, Sleight Of Hand, or Stealth"
+        }
+      ],
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Expertise, Sneak Attack, Thieves' Cant, and Weapon Mastery"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Cunning Action"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Rogue Subclass and Steady Aim"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Class Features",
+          "text": "Cunning Strike and Uncanny Dodge"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Expertise"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Evasion and Reliable Talent"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Improved Cunning Strike"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Devious Strikes"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Slippery Mind"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Elusive"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Stroke Of Luck"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Expert Sidekick",
+    "source": "TCE",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Sidekick Class, Bonus Proficiencies, and Helpful"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Cunning Action"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Expertise"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Coordinated Strike"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Evasion"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Inspiring Help"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Reliable Talent"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Expertise"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Sharp Mind"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Inspiring Help Improvement"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Spellcaster Sidekick",
+    "source": "TCE",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Sidekick Class, Bonus Proficiencies, and Spellcasting"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Potent Cantrips"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Empowered Spells"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Focused Casting"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Warrior Sidekick",
+    "source": "TCE",
+    "spellcasting_ability": null,
+    "descriptions": {
+      "1": [
+        {
+          "name": "Class Features",
+          "text": "Sidekick Class, Bonus Proficiencies, and Martial Role"
+        }
+      ],
+      "2": [
+        {
+          "name": "Class Features",
+          "text": "Second Wind"
+        }
+      ],
+      "3": [
+        {
+          "name": "Class Features",
+          "text": "Improved Critical"
+        }
+      ],
+      "4": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "6": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack"
+        }
+      ],
+      "7": [
+        {
+          "name": "Class Features",
+          "text": "Battle Readiness"
+        }
+      ],
+      "8": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "10": [
+        {
+          "name": "Class Features",
+          "text": "Improved Defense"
+        }
+      ],
+      "11": [
+        {
+          "name": "Class Features",
+          "text": "Indomitable"
+        }
+      ],
+      "12": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "14": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "15": [
+        {
+          "name": "Class Features",
+          "text": "Extra Attack Improvement"
+        }
+      ],
+      "16": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "18": [
+        {
+          "name": "Class Features",
+          "text": "Indomitable Improvement"
+        }
+      ],
+      "19": [
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Class Features",
+          "text": "Second Wind Improvement"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sorcerer",
+    "source": "PHB",
+    "spellcasting_ability": "cha",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d6``\n**Level 1 Sorcerer HP:** ``6`` + Con. mod\n**HP per Sorcerer level:** ``1d6`` + Con. mod *or* ``4`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Con and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a light crossbow and 20 bolts or (b) any simple weapon\n\u2022 (a) a component pouch or (b) an arcane focus\n\u2022 (a) a dungeoneer's pack or (b) an explorer's pack\n\u2022 Two daggers\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Cha"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Spellcasting and Sorcerous Origin"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Font Of Magic"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Metamagic and Metamagic Options (Tce)"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Sorcerous Versatility (Tce)"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Magical Guidance (Tce)"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells Known:** ``7``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Sorcerous Origin Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells Known:** ``8``"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells Known:** ``9``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells Known:** ``10``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``11``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Metamagic"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``12``"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``12``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``13``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``13``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Sorcerous Origin Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``14``"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``14``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``15``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Metamagic"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``15``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Sorcerous Origin Feature"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``15``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``\n**Spells Known:** ``15``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Sorcerous Restoration"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sorcerer",
+    "source": "XPHB",
+    "spellcasting_ability": "cha",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d6``\n**Level 1 Sorcerer HP:** ``6`` + Con. mod\n**HP per Sorcerer level:** ``1d6`` + Con. mod *or* ``4`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Con and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) spear, 2 daggers, arcane focus (crystal), dungeoneer's pack, and 28 gp; or (b) 50 gp\n"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Spellcasting and Innate Sorcery"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Font Of Magic, Metamagic, and Metamagic Options"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Sorcerer Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Sorcerous Restoration"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Sorcery Incarnate"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Metamagic"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Metamagic"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Arcane Apotheosis"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Warlock",
+    "source": "PHB",
+    "spellcasting_ability": "cha",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Warlock HP:** ``8`` + Con. mod\n**HP per Warlock level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Wis and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a light crossbow and 20 bolts or (b) any simple weapon\n\u2022 (a) a component pouch or (b) an arcane focus\n\u2022 (a) a scholar's pack or (b) a dungeoneer's pack\n\u2022 Leather armor, any simple weapon, and two daggers\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Cha\n**Armor Proficiencies:** Light armor\n**Weapon Proficiencies:** Simple weapons"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``\n**Spells Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Pact Magic and Otherworldly Patron"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``\n**Spells Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Eldritch Invocations"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``\n**Spells Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Pact Boon"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``5``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement and Eldritch Versatility (Tce)"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``6``"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``7``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Otherworldly Patron Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``8``"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``9``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells Known:** ``10``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``10``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Otherworldly Patron Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``11``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Mystic Arcanum (6Th Level)"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``11``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``12``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Mystic Arcanum (7Th Level)"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``12``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Otherworldly Patron Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``13``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Mystic Arcanum (8Th Level)"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``13``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``14``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Mystic Arcanum (9Th Level)"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``14``"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``15``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells Known:** ``15``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Eldritch Master"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Warlock",
+    "source": "XPHB",
+    "spellcasting_ability": "cha",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d8``\n**Level 1 Warlock HP:** ``8`` + Con. mod\n**HP per Warlock level:** ``1d8`` + Con. mod *or* ``5`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Wis and Cha"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) leather armor, sickle, 2 daggers, arcane focus (orb), book (occult lore), scholar's pack, and 15 gp; or (b) 100 gp\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Armor Proficiencies:** Light armor"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Eldritch Invocations, Pact Magic, and Eldritch Invocation Options"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Magical Cunning"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Warlock Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Contact Patron"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Mystic Arcanum"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Mystic Arcanum"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Mystic Arcanum"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Mystic Arcanum"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Eldritch Master"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Wizard",
+    "source": "PHB",
+    "spellcasting_ability": "int",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d6``\n**Level 1 Wizard HP:** ``6`` + Con. mod\n**HP per Wizard level:** ``1d6`` + Con. mod *or* ``4`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Int and Wis"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 (a) a quarterstaff or (b) a dagger\n\u2022 (a) a component pouch or (b) an arcane focus\n\u2022 (a) a scholar's pack or (b) an explorer's pack\n\u2022 A spellbook\n"
+        },
+        {
+          "name": "Multiclassing",
+          "text": "**Ability requirements:** At least ``13`` Int"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells added at level:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Arcane Recovery and Spellcasting"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Arcane Tradition"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Cantrip Formulas (Tce)"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Arcane Tradition Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Arcane Tradition Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Arcane Tradition Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Spell Mastery"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Signature Spells"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Wizard",
+    "source": "XPHB",
+    "spellcasting_ability": "int",
+    "descriptions": {
+      "0": [
+        {
+          "name": "Hit Points",
+          "text": "**HP Die:** ``1d6``\n**Level 1 Wizard HP:** ``6`` + Con. mod\n**HP per Wizard level:** ``1d6`` + Con. mod *or* ``4`` + Con. mod"
+        },
+        {
+          "name": "Proficiencies",
+          "text": "**Saving Throw Proficiencies:** Int and Wis"
+        },
+        {
+          "name": "Starting Equipment",
+          "text": "\u2022 *choose a or b:* (a) 2 daggers, arcane focus (quarterstaff), robe, spellbook, scholar's pack, and 5 gp; or (b) 55 gp\n"
+        }
+      ],
+      "1": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells added at level:** ``6``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Spellcasting, Ritual Adept, and Arcane Recovery"
+        }
+      ],
+      "2": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Scholar"
+        }
+      ],
+      "3": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``3``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Wizard Subclass"
+        }
+      ],
+      "4": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "5": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Memorize Spell"
+        }
+      ],
+      "6": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "7": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "8": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "9": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``4``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "10": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "11": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "12": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "13": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "14": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Subclass Feature"
+        }
+      ],
+      "15": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "16": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Ability Score Improvement"
+        }
+      ],
+      "17": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        }
+      ],
+      "18": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Spell Mastery"
+        }
+      ],
+      "19": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Epic Boon"
+        }
+      ],
+      "20": [
+        {
+          "name": "Spellcasting",
+          "text": "**Cantrips Known:** ``5``\n**Spells added at level:** ``2``"
+        },
+        {
+          "name": "Class Features",
+          "text": "Signature Spells"
+        }
+      ]
+    }
+  }
+]
