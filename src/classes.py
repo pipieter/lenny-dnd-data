@@ -89,7 +89,19 @@ class CharacterClass:
                         text += " and Shields"
                 
                 case "weapons":
-                    text = f"{format_words_list(proficiency, 'and')} weapons"
+                    weapons = []
+                    for weapon_type in proficiency:
+                        if isinstance(weapon_type, dict):
+                            weapon_proficiency = weapon_type.get("proficiency", None)
+                            if weapon_proficiency is not None:
+                                weapons.append(weapon_proficiency)
+                        else:
+                            weapons.append(weapon_type)
+
+                    text = f"{format_words_list(weapons, 'and')} weapons"
+                
+                case "weaponProficiencies":
+                    pass # Data is not of use
 
                 case "skills":
                     for skill_proficiencies in proficiency:
@@ -117,7 +129,7 @@ class CharacterClass:
                     text = f"{format_words_list(tools, 'and')}"
 
                 case "toolProficiencies":
-                    pass # TODO: Handle tool proficiencies (e.g. Thieves' Tools, etc.)
+                    pass # Data is not of use
 
                 case _:
                     raise NotImplementedError("Unknown proficiency type: " + type)
@@ -137,7 +149,7 @@ class CharacterClass:
             saving_proficiencies = format_words_list(saving_proficiencies, "and")
             proficiencies.append(f"**Saving Throw Proficiencies:** {saving_proficiencies}")
         
-        start_prof = json.get("starting_proficiencies", None)
+        start_prof = json.get("startingProficiencies", None)
         if start_prof:
             proficiencies.extend(self.__handle_proficiencies(start_prof))
 
