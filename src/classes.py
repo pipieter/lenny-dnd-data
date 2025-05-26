@@ -1,6 +1,20 @@
 import json
 from src.parser import clean_dnd_text, format_words_list
 
+class Description:
+    name: str
+    text: str
+
+    def __init__(self, name: str, text: str):
+        self.name = name
+        self.text = text
+    
+    def to_dict(self) -> dict:
+        return {
+            "name": self.name,
+            "text": self.text,
+        }
+
 class CharacterClass:
     name: str
     source: str
@@ -190,29 +204,25 @@ class CharacterClass:
         if self.spellcasting_ability is None:
             return
 
-        level_info: list[str] = []
         cantrip_progression = json.get("cantripProgression", [])
         spells_known_progression = json.get("spellsKnownProgression", [])
+        spells_known_progression_fixed = json.get("spellsKnownProgressionFixed", [])
 
-        for count in cantrip_progression:
-            text = f"**Cantrips Known:** ``{count}``"
-            level_info.append(text)
-        
-        if cantrip_progression == []:
-            for i in range(len(spells_known_progression)):
-                level_info.append("")
-        
+        max_len = max(len(cantrip_progression), len(spells_known_progression))
+        level_info: list[list[str]] = [[] for _ in range(max_len)]
+
+        for i, count in enumerate(cantrip_progression):
+            level_info[i].append(f"**Cantrips Known:** ``{count}``")
+
         for i, count in enumerate(spells_known_progression):
-            if level_info[i] != "":
-                level_info[i] += "\n"
+            level_info[i].append(f"**Spells Known:** ``{count}``")
 
-            text = f"**Spells Known:** ``{count}``"
-            level_info[i] += text
+        for i, count in enumerate(spells_known_progression_fixed):
+            level_info[i].append(f"**Spells added at level:** ``{count}``")
         
         # TODO Support spellsKnownProgressionFixed (e.g. Wizard)
 
-        if level_info != []:
-            self.level_spell_info = level_info
+        self.level_spell_info = level_info if any(level_info) else None
             
     def _set_class_features(self, json: dict):
         """Set the class features for the character class."""
@@ -255,17 +265,74 @@ class CharacterClass:
         
         self.level_features = info
 
+    @property
+    def _base_description(self) -> list[Description]:
+        desc = []
+
+        if self.hp_info is not None:
+            desc.append(Description("Hit Points", "\n".join(self.hp_info)))
+
+        if self.proficiencies is not None:
+            desc.append(Description("Proficiencies", "\n".join(self.proficiencies)))
+
+        if self.starting_equipment is not None:
+            desc.append(Description("Starting Equipment", self.starting_equipment)) # TODO this one should be a list, not a str. Handle everything the same.
+        
+        if self.multiclass_info is not None:
+            desc.append(Description("Multiclassing", "\n".join(self.multiclass_info)))
+        
+        return desc
+
+    @property
+    def _level_descriptions(self) -> list[Description]:
+        desc = []
+
+        for i in range(20):
+            desc.append([])
+
+        if self.level_spell_info is not None:
+            for i, spell_info in enumerate(self.level_spell_info):
+                if spell_info:
+                    desc[i].append(Description("Spellcasting", '\n'.join(spell_info)))
+        
+        if self.level_features is not None:
+            for i, features in enumerate(self.level_features):
+                if features is None:
+                    desc[i].append(None)
+                    continue
+
+                desc[i].append(Description(f"Class Features", format_words_list(features, 'and')))
+        
+        return desc
+
+    @property
+    def descriptions(self) -> dict[str, list[dict]]:
+        """Get the description of the character class."""
+        result: dict[str, list[dict]] = {}
+
+        # Base descriptions go under level "0"
+        base_entries = [d.to_dict() for d in self._base_description]
+        if base_entries:
+            result["0"] = base_entries
+
+        # Level-specific descriptions (1–20)
+        level_desc = self._level_descriptions
+        for i, entries in enumerate(level_desc, start=1):
+            level_entries = []
+            for entry in entries:
+                if isinstance(entry, Description):
+                    level_entries.append(entry.to_dict())
+            if level_entries:
+                result[str(i)] = level_entries
+
+        return result
+
     def to_dict(self) -> dict:
         return {
             "name": self.name,
             "source": self.source,
-            "hp": self.hp_info,
-            "proficiencies": self.proficiencies,
-            "start_equipment": self.starting_equipment,
-            "multiclass": self.multiclass_info,
             "spellcasting_ability": self.spellcasting_ability,
-            "level_spell_info": self.level_spell_info,
-            "level_features": self.level_features
+            "descriptions": self.descriptions,
         }
 
 class ClassList:
