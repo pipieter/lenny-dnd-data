@@ -489,14 +489,14 @@ def parse_item_weight(weight: int) -> str | None:
     else:
         return f"{weight} lb."
 
-def format_words_list(words: list) -> str:
+def format_words_list(words: list, conjunction: str = "or") -> str:
     """Formats a list of words into comma-separated text. Example: [A, B] => "A or B" / [A, B, C] => "A, B, or C"""
     words = [word.title() for word in words]
 
     if len(words) == 2:
-        return ' or '.join(words)
+        return f' {conjunction} '.join(words)
     elif len(words) > 2:
-        return ', '.join(words[:-1]) + f", or {words[-1]}"
+        return ', '.join(words[:-1]) + f", {conjunction} {words[-1]}"
     elif len(words) == 1:
         return words[0]
     else:
