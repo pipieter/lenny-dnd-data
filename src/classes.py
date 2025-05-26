@@ -133,7 +133,8 @@ class CharacterClass:
 
         saving_proficiencies = json.get("proficiency", None)
         if saving_proficiencies:
-            saving_proficiencies = format_words_list(saving_proficiencies, "and")  # TODO: Format str/con/etc. into long name (?)
+            saving_proficiencies = [parse_ability_score(p) for p in saving_proficiencies] # Format short-names to full names
+            saving_proficiencies = format_words_list(saving_proficiencies, "and")
             proficiencies.append(f"**Saving Throw Proficiencies:** {saving_proficiencies}")
         
         start_prof = json.get("starting_proficiencies", None)
