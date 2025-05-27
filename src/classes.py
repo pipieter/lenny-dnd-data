@@ -54,6 +54,7 @@ class CharacterClass:
     level_spell_info: list[str] | None
 
     level_features: list[list[str] | None] | None
+    level_info: list[str] | None
 
     def __init__(self, json: dict, class_features: list[ClassFeature]):
         self.name = json["name"]
@@ -64,22 +65,10 @@ class CharacterClass:
         self._set_proficiencies(json)
         self._set_starting_equipment(json)
         self._set_multiclass_info(json)
+
+        self._set_level_info(json)
         self._set_spell_info(json)
         self._set_class_features(json, class_features)
-
-        # TODO Proficiency Bonus
-        # TODO Rogue - Sneak Attack
-        # TODO Barbarian & Fighter - Weapon Mastery
-        # TODO Barbarian - Rages, Rage damage
-        # TODO Bard - Bardic Die
-        # TODO Cleric & Paladin - Channel Divinity
-        # TODO Artificer - Infusions
-        # TODO Sorcerer - Sorcery Points
-        # TODO Druid - Wild Shape
-        # TODO Fighter - Second Wind
-        # TODO Monk - Martial Arts, Focus Points & Unarmored Movement
-        # TODO Ranger - Favored Enemy
-        # TODO Warlock - Invocations & Spell-slots
 
     @property
     def url(self):
@@ -253,6 +242,31 @@ class CharacterClass:
         if info != []:
             self.multiclass_info = info
 
+    def _set_level_info(self, json: dict):
+        self.level_info = None
+
+        # Proficiency Bonus, follows same rules for each class.
+        info = []
+        for i in range(20): # 20 levels
+            bonus = 2 + (i // 4)  # +1 every 4 levels
+            info.append([f"• **Proficiency Bonus:** ``+{bonus}``"])
+
+        # TODO Barbarian & Fighter - Weapon Mastery
+        # TODO Barbarian - Rages, Rage damage
+        # TODO Rogue - Sneak Attack
+        # TODO Bard - Bardic Die
+        # TODO Cleric & Paladin - Channel Divinity
+        # TODO Artificer - Infusions
+        # TODO Sorcerer - Sorcery Points
+        # TODO Druid - Wild Shape
+        # TODO Fighter - Second Wind
+        # TODO Monk - Martial Arts, Focus Points & Unarmored Movement
+        # TODO Ranger - Favored Enemy
+        # TODO Warlock - Invocations & Spell-slots
+
+        if info != []:
+            self.level_info = info
+
     def _set_spell_info(self, json: dict):
         """Set the spellcasting information for the character class."""
         spellcasting_ability = json.get("spellcastingAbility", None)
@@ -385,6 +399,11 @@ class CharacterClass:
 
         for i in range(20):
             desc.append([])
+
+        if self.level_info is not None:
+            for i, info in enumerate(self.level_info):
+                if info:
+                    desc[i].append((Description("", info)))
 
         if self.level_spell_info is not None:
             for i, spell_info in enumerate(self.level_spell_info):
