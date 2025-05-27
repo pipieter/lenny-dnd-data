@@ -67,9 +67,19 @@ class CharacterClass:
         self._set_spell_info(json)
         self._set_class_features(json, class_features)
 
-        # TODO Rogue sneak attack
-        # TODO Bardic Die
-        # TODO Proficency Bonus
+        # TODO Proficiency Bonus
+        # TODO Rogue - Sneak Attack
+        # TODO Barbarian & Fighter - Weapon Mastery
+        # TODO Barbarian - Rages, Rage damage
+        # TODO Bard - Bardic Die
+        # TODO Cleric & Paladin - Channel Divinity
+        # TODO Artificer - Infusions
+        # TODO Sorcerer - Sorcery Points
+        # TODO Druid - Wild Shape
+        # TODO Fighter - Second Wind
+        # TODO Monk - Martial Arts, Focus Points & Unarmored Movement
+        # TODO Ranger - Favored Enemy
+        # TODO Warlock - Invocations & Spell-slots
 
     @property
     def url(self):
@@ -260,10 +270,6 @@ class CharacterClass:
         spells_known_progression_fixed = json.get("spellsKnownProgressionFixed", [])
         # TODO Spell-slot table per level
         # TODO preparedSpellsProgression
-        # TODO Artificer Progression
-        # TODO Cleric & Paladin DIVINITY
-        # TODO Sorcery Points
-        # TODO Druid Wild Shape
 
         max_len = max(len(cantrip_progression), len(spells_known_progression))
         level_info: list[list[str]] = [[] for _ in range(max_len)]
