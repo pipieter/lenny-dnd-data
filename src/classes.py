@@ -230,17 +230,20 @@ class CharacterClass:
         max_len = max(len(cantrip_progression), len(spells_known_progression))
         level_info: list[list[str]] = [[] for _ in range(max_len)]
 
+        for i in range(max_len):
+            level_info[i].append(f"• Uses ``{self.spellcasting_ability}``")
+
         for i, count in enumerate(cantrip_progression):
-            level_info[i].append(f"**Cantrips Known:** ``{count}``")
+            level_info[i].append(f"• ``{count}`` Cantrips Known")
 
         for i, count in enumerate(spells_known_progression):
-            level_info[i].append(f"**Spells Known:** ``{count}``")
+            level_info[i].append(f"• ``{count}`` Spells Known at Lv. {i + 1}")
 
+        spell_fixed_total = 0
         for i, count in enumerate(spells_known_progression_fixed):
-            level_info[i].append(f"**Spells added at level:** ``{count}``")
+            spell_fixed_total += count
+            level_info[i].append(f"• ``+{count}`` Spells learned at Lv. {i + 1} ({spell_fixed_total} total)")
         
-        # TODO Support spellsKnownProgressionFixed (e.g. Wizard)
-
         self.level_spell_info = level_info if any(level_info) else None
             
     def _set_class_features(self, json: dict):
