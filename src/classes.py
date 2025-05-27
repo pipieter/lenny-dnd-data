@@ -227,10 +227,16 @@ class CharacterClass:
         requirements = multiclassing.get("requirements", None)
         if requirements is not None:
             skills = []
-            for skill, lvl in requirements.items():
-                skills.append(f"``{lvl}`` {skill.capitalize()}") # TODO: Handle "or" cases (e.g. Fighter (PHB))
 
-            text = f"• **Ability requirements:** At least {format_words_list(skills)}"
+            conjunction = "and"
+            if "or" in requirements: # Used by Fighter (PHB)
+                requirements = requirements.get("or")[0]
+                conjunction = "or"
+
+            for skill, lvl in requirements.items():
+                skills.append(f"``{lvl}`` {parse_ability_score(skill)}")
+
+            text = f"• **Ability requirements:** At least {format_words_list(skills, conjunction)}"
             if len(requirements) > 1:
                 text += " (Primary ability of new class)"
             info.append(text)
