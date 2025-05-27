@@ -264,9 +264,13 @@ class CharacterClass:
                 info.append([]) # Populate info with lists until we reach the level we need
 
             if sub_source != "":
-                name += f" ({sub_source})"
+                # Highlights optional ruleset feats (e.g. Primal Knowledge for Barbarian, from TCE)
+                name = f"*{name} ({sub_source})"
 
-            info[level - 1].append(name)
+            # TODO add feat. info. For now we only have the name.
+            # We will store f"**{name}:** {info}" later."
+
+            info[level - 1].append(f"**{name}:** >Add feature info here.<")
 
         for feature in features:
             if isinstance(feature, str):
@@ -319,8 +323,12 @@ class CharacterClass:
                 if features is None:
                     desc[i].append(None)
                     continue
-
-                desc[i].append(Description(f"Class Features", format_words_list(features, 'and')))
+                
+                for j, feat in enumerate(features):
+                    feat_description = Description("", feat)
+                    if j == 0:
+                        feat_description.name = "Class Features"
+                    desc[i].append(feat_description)
         
         return desc
 
