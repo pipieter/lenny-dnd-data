@@ -85,9 +85,9 @@ class CharacterClass:
         avg_hp = f"``{(faces) // 2 + 1}``"
         con_mod = "Con. mod"
 
-        info.append(f"**HP Die:** {die}")
-        info.append(f"**Level 1 {self.name} HP:** ``{faces}`` + {con_mod}")
-        info.append(f"**HP per {self.name} level:** {die} + {con_mod} *or* {avg_hp} + {con_mod}")
+        info.append(f"• **HP Die:** {die}")
+        info.append(f"• **Level 1 {self.name} HP:** ``{faces}`` + {con_mod}")
+        info.append(f"• **HP per {self.name} level:** {die} + {con_mod} *or* {avg_hp} + {con_mod}")
 
         self.hp_info = info
     
@@ -162,7 +162,7 @@ class CharacterClass:
                     raise NotImplementedError("Unknown proficiency type: " + type)
 
             if text != "":
-                info.append(f"**{title} Proficiencies:** {text}")
+                info.append(f"• **{title} Proficiencies:** {text}")
         return info
 
     def _set_proficiencies(self, json: dict):
@@ -174,7 +174,7 @@ class CharacterClass:
         if saving_proficiencies:
             saving_proficiencies = [parse_ability_score(p) for p in saving_proficiencies] # Format short-names to full names
             saving_proficiencies = format_words_list(saving_proficiencies, "and")
-            proficiencies.append(f"**Saving Throw Proficiencies:** {saving_proficiencies}")
+            proficiencies.append(f"• **Saving Throw Proficiencies:** {saving_proficiencies}")
         
         start_prof = json.get("startingProficiencies", None)
         if start_prof:
@@ -226,7 +226,7 @@ class CharacterClass:
             for skill, lvl in requirements.items():
                 skills.append(f"``{lvl}`` {skill.capitalize()}") # TODO: Handle "or" cases (e.g. Fighter (PHB))
 
-            text = f"**Ability requirements:** At least {format_words_list(skills)}"
+            text = f"• **Ability requirements:** At least {format_words_list(skills)}"
             if len(requirements) > 1:
                 text += " (Primary ability of new class)"
             info.append(text)
