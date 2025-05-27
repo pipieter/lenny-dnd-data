@@ -242,61 +242,61 @@ class CharacterClass:
         if info != []:
             self.multiclass_info = info
 
+    def __format_class_table_value(self, value: dict) -> str:
+        value_type = value.get("type", None)
+
+        match value_type:
+            case "bonus":
+                return f"+{value.get('value', 0)}"
+
+            case "bonusSpeed":
+                return f"+{value.get('value', 0)} ft."
+            
+            case "dice":
+                roll = value.get("toRoll", None)[0]  # We assume there's only 1 roll, thus [0]. (Multiple dice never occurs in data.)
+                num = roll.get("number", 0)
+                faces = roll.get("faces", 0)
+                return f"{num}d{faces}"
+
+            case _:
+                raise NotImplementedError(f"Unsupported classTableGroups row-type: {value_type}")
+
     def _set_level_info(self, json: dict):
         self.level_info = None
+        levels = 20
 
-        # Proficiency Bonus, follows same rules for each class.
-        info = []
-        for i in range(20): # 20 levels
-            bonus = 2 + (i // 4)  # +1 every 4 levels
-            info.append([f"• **Proficiency Bonus:** ``+{bonus}``"])
+        # Proficiency Bonus, follows same rules for each class. (+1 every 4 levels.)
+        info = [[f"• **Proficiency Bonus:** ``+{2 + (i // 4)}``"] for i in range(levels)]
 
-        class_info = json.get("classTableGroups", None)
-        if class_info:
-            for c in class_info:
-                labels = c.get("colLabels", None)
-                rows = c.get("rows", None)
-
-                if labels is None or rows is None:
-                    continue
-
-                for i, label in enumerate(labels):
-                    label = clean_dnd_text(label)
-                    if "cantrip" in label.lower() or "spell" in label.lower():
-                        continue # Cantrips are displayed in spell info
-                    
-                    for level, row in enumerate(rows):
-                        value = row[i]
-
-                        if isinstance(value, str):
-                            value = clean_dnd_text(value) # Example: Warlock (PHB)'s slot levels
-
-                        elif isinstance(value, dict):
-                            value_type = value.get("type", None)
-
-                            match value_type:
-                                case "bonus":
-                                    value = value.get("value", 0)
-                                    value = f"+{value}"
-
-                                case "bonusSpeed":
-                                    value = value.get("value", 0)
-                                    value = f"+{value} ft."
-                                
-                                case "dice":
-                                    rolls = value.get("toRoll", [])
-                                    roll = rolls[0] # Data supports multiple dice but this is never used, for simplicity sake we assume there's only 1
-                                    num = roll.get("number", 0)
-                                    faces = roll.get("faces", 0)
-                                    value = f"{num}d{faces}"
-
-                                case _:
-                                    raise NotImplementedError(f"Unsupported classTableGroups row-type: {value_type}")
-                            
-                        info[level].append(f"• **{label}:** ``{value}``")
-
-        if info != []:
+        class_table = json.get("classTableGroups", None)
+        if not class_table:
             self.level_info = info
+            return
+        
+        for group in class_table:
+            labels = group.get("colLabels", None)
+            rows = group.get("rows", None)
+
+            if not labels or not rows:
+                continue
+
+            for col_index, label in enumerate(labels):
+                label = clean_dnd_text(label)
+                if "cantrip" in label.lower() or "spell" in label.lower():
+                    continue # Skip spellcasting info; handled elsewhere
+                
+                for level, row in enumerate(rows):
+                    value = row[col_index]
+
+                    if isinstance(value, str):
+                        value = clean_dnd_text(value)
+
+                    elif isinstance(value, dict):
+                        value = self.__format_class_table_value(value)
+                        
+                    info[level].append(f"• **{label}:** ``{value}``")
+
+        self.level_info = info
 
     def _set_spell_info(self, json: dict):
         """Set the spellcasting information for the character class."""
