@@ -45,16 +45,17 @@ class CharacterClass:
     name: str
     source: str
 
+    # primary_ability: list[str] | None # TODO
+    spellcasting_ability: str | None
     hp_info: list[str] | None
     proficiencies: list[str] | None
     starting_equipment: str | None
     multiclass_info: list[str] | None
+    subclass_unlock_level: int | None
 
-    spellcasting_ability: str | None
-    level_spell_info: list[str] | None
-
-    level_features: list[list[str] | None] | None
     level_info: list[str] | None
+    level_spell_info: list[str] | None
+    level_features: list[list[str] | None] | None
 
     def __init__(self, json: dict, class_features: list[ClassFeature]):
         self.name = json["name"]
@@ -67,8 +68,8 @@ class CharacterClass:
         self._set_multiclass_info(json)
 
         self._set_level_info(json)
-        self._set_spell_info(json)
-        self._set_class_features(json, class_features)
+        self._set_level_spell_info(json)
+        self._set_level_features(json, class_features)
 
     @property
     def url(self):
@@ -96,6 +97,7 @@ class CharacterClass:
         self.hp_info = info
     
     def __handle_proficiencies(self, proficiencies: dict) -> list[str]:
+        """Handles the different types of proficiencies and formats them correctly."""
         info = []
 
         for type, proficiency in proficiencies.items():
@@ -249,6 +251,7 @@ class CharacterClass:
             self.multiclass_info = info
 
     def __format_class_table_value(self, value: dict) -> str:
+        """Used to format table's values in level info."""
         value_type = value.get("type", None)
 
         match value_type:
@@ -304,7 +307,7 @@ class CharacterClass:
 
         self.level_info = info
 
-    def _set_spell_info(self, json: dict):
+    def _set_level_spell_info(self, json: dict):
         """Set the spellcasting information for the character class."""
         spellcasting_ability = json.get("spellcastingAbility", None)
         self.spellcasting_ability = None
@@ -349,15 +352,16 @@ class CharacterClass:
         
         self.level_spell_info = level_info if any(level_info) else None
             
-    def _set_class_features(self, json: dict, class_features: list[ClassFeature]):
-        """Set the class features for the character class."""
+    def _set_level_features(self, json: dict, class_features: list[ClassFeature]):
+        """Set the class features for the character class and the subclass_unlock_level."""
         self.level_features = None
+        self.subclass_unlock_level = None
         features = json.get("classFeatures", None)
         if features is None:
             return
         
         info = []
-        def __parse_class_feature(feature: str):
+        def __parse_class_feature(feature: str, is_subclass_related: bool):
             """Parse a class feature string and add it to the info list."""
             parts = feature.split("|")
             while len(parts) < 5:
@@ -365,6 +369,9 @@ class CharacterClass:
 
             name, char_class, source, level, sub_source = parts
             level = int(level)
+
+            if is_subclass_related and self.subclass_unlock_level is None:
+                self.subclass_unlock_level = level
 
             if source == "":
                 source = self.source # Sometimes source is empty
@@ -405,11 +412,11 @@ class CharacterClass:
 
         for feature in features:
             if isinstance(feature, str):
-                __parse_class_feature(feature)
+                __parse_class_feature(feature, False)
             elif isinstance(feature, dict): # Subclass feature
                 sub_feature = feature.get("classFeature", None)
                 if sub_feature is not None:
-                    __parse_class_feature(sub_feature)
+                    __parse_class_feature(sub_feature, True)
             else:
                 raise NotImplementedError(f"Unknown class feature type: {type(feature)}")
             
@@ -495,6 +502,7 @@ class CharacterClass:
             "name": self.name,
             "source": self.source,
             "url": self.url,
+            "subclass_unlock_level": self.subclass_unlock_level,
             "descriptions": self.descriptions,
         }
 
