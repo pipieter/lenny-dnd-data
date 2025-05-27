@@ -319,10 +319,15 @@ class CharacterClass:
         cantrip_progression = json.get("cantripProgression", [])
         spells_known_progression = json.get("spellsKnownProgression", [])
         spells_known_progression_fixed = json.get("spellsKnownProgressionFixed", [])
+        prepared_spells_progression = json.get("preparedSpellsProgression", [])
         # TODO Spell-slot table per level
-        # TODO preparedSpellsProgression
 
-        max_len = max(len(cantrip_progression), len(spells_known_progression))
+        max_len = max(
+            len(cantrip_progression),
+            len(spells_known_progression),
+            len(spells_known_progression_fixed),
+            len(prepared_spells_progression),
+        )
         level_info: list[list[str]] = [[] for _ in range(max_len)]
 
         for i in range(max_len):
@@ -332,12 +337,15 @@ class CharacterClass:
             level_info[i].append(f"• ``{count}`` Cantrips Known")
 
         for i, count in enumerate(spells_known_progression):
-            level_info[i].append(f"• ``{count}`` Spells Known at Lv. {i + 1}")
+            level_info[i].append(f"• ``{count}`` Spells Known")
 
         spell_fixed_total = 0
         for i, count in enumerate(spells_known_progression_fixed):
             spell_fixed_total += count
-            level_info[i].append(f"• ``+{count}`` Spells learned at Lv. {i + 1} ({spell_fixed_total} total)")
+            level_info[i].append(f"• ``+{count}`` Spells learned ({spell_fixed_total} total)")
+
+        for i, count in enumerate(prepared_spells_progression):
+            level_info[i].append(f"• ``{count}`` Prepared Spells")
         
         self.level_spell_info = level_info if any(level_info) else None
             
