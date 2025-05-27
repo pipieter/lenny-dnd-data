@@ -83,6 +83,8 @@ def clean_dnd_text(text: str, no_formatting=False) -> str:
     text = re.sub(r"\{@table ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@variantrule ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@variantrule ([^\}]*?)\}", r"\1", text)
+    text = re.sub(r"\{@feat ([^\|}]+)\|([^\}]+)\}", r"__\1 (\2)__", text)
+    text = re.sub(r"\{@5etools ([^\|}]+)\|([^\}]+)\}", r"[\1](https://5e.tools/\2)", text)
 
     if no_formatting:
         text = re.sub(r"\{@h\}", r"Hit: ", text)
@@ -351,6 +353,21 @@ def __parse_description_block(description: any) -> str:
             entries = "\n".join(entries)
             
             return entries
+        
+        case "abilityDc":
+            return f"Unsupported type: {type}" # TODO
+
+        case "abilityAttackMod":
+            return f"Unsupported type: {type}" # TODO
+
+        case "refClassFeature":
+            return f"Unsupported type: {type}" # TODO
+
+        case "options":
+            return f"Unsupported type: {type}" # TODO
+
+        case "refFeat":
+            return f"Unsupported type: {type}" # TODO
 
     raise NotImplementedError(f"Unsupported description type: '{description['type']}'")
 
