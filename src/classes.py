@@ -1,4 +1,5 @@
 import json
+from src.data import clean_url
 from src.parser import clean_dnd_text, format_words_list, parse_ability_score, parse_descriptions
 
 class Description:
@@ -69,6 +70,10 @@ class CharacterClass:
         # TODO Rogue sneak attack
         # TODO Bardic Die
         # TODO Proficency Bonus
+
+    @property
+    def url(self):
+        return clean_url(f"https://5e.tools/classes.html#{self.name.lower()}_{self.source.lower()}")
 
     def _set_hp_info(self, json: dict):
         """Set the HP information for the character class."""
@@ -253,6 +258,7 @@ class CharacterClass:
         cantrip_progression = json.get("cantripProgression", [])
         spells_known_progression = json.get("spellsKnownProgression", [])
         spells_known_progression_fixed = json.get("spellsKnownProgressionFixed", [])
+        # TODO Spell-slot table per level
         # TODO preparedSpellsProgression
         # TODO Artificer Progression
         # TODO Cleric & Paladin DIVINITY
@@ -419,7 +425,7 @@ class CharacterClass:
         return {
             "name": self.name,
             "source": self.source,
-            "spellcasting_ability": self.spellcasting_ability,
+            "url": self.url,
             "descriptions": self.descriptions,
         }
 
