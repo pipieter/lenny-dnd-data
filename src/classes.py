@@ -1,5 +1,5 @@
 import json
-from src.parser import clean_dnd_text, format_words_list, parse_ability_score
+from src.parser import clean_dnd_text, format_words_list, parse_ability_score, parse_descriptions
 
 class Description:
     name: str
@@ -17,6 +17,29 @@ class Description:
             "text": self.text,
         }
 
+class ClassFeature:
+    name: str
+    source: str
+    level: int
+
+    class_name: str
+    class_source: str
+
+    description: list[str]
+
+    def __init__(self, json: dict):
+        self.name = json["name"]
+        self.source = json["source"]
+        self.level = int(json["level"])
+        self.class_name = json["className"]
+        self.class_source = json["classSource"]
+
+        descriptions = parse_descriptions("", json["entries"], "")
+        self.description = []
+        for desc in descriptions:
+            _, text = desc
+            self.description.append(clean_dnd_text(text))
+
 class CharacterClass:
     name: str
     source: str
@@ -31,7 +54,7 @@ class CharacterClass:
 
     level_features: list[list[str] | None] | None
 
-    def __init__(self, json: dict):
+    def __init__(self, json: dict, class_features: list[ClassFeature]):
         self.name = json["name"]
         self.source = json["source"]
         print(f"- {self.name} ({self.source})")
@@ -41,7 +64,7 @@ class CharacterClass:
         self._set_starting_equipment(json)
         self._set_multiclass_info(json)
         self._set_spell_info(json)
-        self._set_class_features(json)
+        self._set_class_features(json, class_features)
 
     def _set_hp_info(self, json: dict):
         """Set the HP information for the character class."""
@@ -246,7 +269,7 @@ class CharacterClass:
         
         self.level_spell_info = level_info if any(level_info) else None
             
-    def _set_class_features(self, json: dict):
+    def _set_class_features(self, json: dict, class_features: list[ClassFeature]):
         """Set the class features for the character class."""
         self.level_features = None
         features = json.get("classFeatures", None)
@@ -263,17 +286,43 @@ class CharacterClass:
             name, char_class, source, level, sub_source = parts
             level = int(level)
 
+            if source == "":
+                source = self.source # Sometimes source is empty
+
             while len(info) < level:
                 info.append([]) # Populate info with lists until we reach the level we need
 
+            title = name
             if sub_source != "":
                 # Highlights optional ruleset feats (e.g. Primal Knowledge for Barbarian, from TCE)
-                name = f"*{name} ({sub_source})"
+                source = sub_source
+                title = f"*{name} ({sub_source})"
 
-            # TODO add feat. info. For now we only have the name.
-            # We will store f"**{name}:** {info}" later."
+            # Copy feature descriptions
+            texts = []
+            for class_feature in class_features:
+                name_match = class_feature.name.lower() == name.lower()
+                source_match = class_feature.source.lower() == source.lower()
+                level_match = class_feature.level == level
+                if name_match and source_match and level_match:
+                    for desc in class_feature.description:
+                        texts.append(desc)
+                    continue
 
-            info[level - 1].append(f"**{name}:** >Add feature info here.<")
+            title = f"• **{name}:** "
+            text = ""
+            for line in texts:
+                new_length = len(text) + len(line)
+                if new_length > 1024:
+                    print(len(text))
+                    info[level - 1].append(f"{title}{text}")
+                    title = ""
+                    text = ""
+                text += f"{line}\n"
+            
+            if text != "":
+                info[level - 1].append(f"{title}{text}")
+
 
         for feature in features:
             if isinstance(feature, str):
@@ -375,16 +424,21 @@ class ClassList:
         with open(self.INDEX_PATH, "r", encoding="utf-8") as file:
             self.index = json.load(file)
 
-        for source, path in self.index.items():
+        for _, path in self.index.items():
             path = f"5etools-src/data/class/{path}"
             print(path)
 
             with open(path, "r", encoding="utf-8") as file:
                 data = json.load(file)
             
+            features_json = data.get("classFeature", [])
+            features = []
+            for feat_data in features_json:
+                features.append(ClassFeature(feat_data))
+
             class_json = data.get("class", {})
             for class_data in class_json:
-                character_class = CharacterClass(class_data)
+                character_class = CharacterClass(class_data, features)
                 self.classes.append(character_class.to_dict())
             
 def get_classes_json() -> list[dict]:
