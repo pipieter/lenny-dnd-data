@@ -66,6 +66,10 @@ class CharacterClass:
         self._set_spell_info(json)
         self._set_class_features(json, class_features)
 
+        # TODO Rogue sneak attack
+        # TODO Bardic Die
+        # TODO Proficency Bonus
+
     def _set_hp_info(self, json: dict):
         """Set the HP information for the character class."""
         self.hp_info = None
@@ -249,6 +253,11 @@ class CharacterClass:
         cantrip_progression = json.get("cantripProgression", [])
         spells_known_progression = json.get("spellsKnownProgression", [])
         spells_known_progression_fixed = json.get("spellsKnownProgressionFixed", [])
+        # TODO preparedSpellsProgression
+        # TODO Artificer Progression
+        # TODO Cleric & Paladin DIVINITY
+        # TODO Sorcery Points
+        # TODO Druid Wild Shape
 
         max_len = max(len(cantrip_progression), len(spells_known_progression))
         level_info: list[list[str]] = [[] for _ in range(max_len)]
