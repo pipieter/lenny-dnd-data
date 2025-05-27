@@ -251,18 +251,49 @@ class CharacterClass:
             bonus = 2 + (i // 4)  # +1 every 4 levels
             info.append([f"• **Proficiency Bonus:** ``+{bonus}``"])
 
-        # TODO Barbarian & Fighter - Weapon Mastery
-        # TODO Barbarian - Rages, Rage damage
-        # TODO Rogue - Sneak Attack
-        # TODO Bard - Bardic Die
-        # TODO Cleric & Paladin - Channel Divinity
-        # TODO Artificer - Infusions
-        # TODO Sorcerer - Sorcery Points
-        # TODO Druid - Wild Shape
-        # TODO Fighter - Second Wind
-        # TODO Monk - Martial Arts, Focus Points & Unarmored Movement
-        # TODO Ranger - Favored Enemy
-        # TODO Warlock - Invocations & Spell-slots
+        class_info = json.get("classTableGroups", None)
+        if class_info:
+            for c in class_info:
+                labels = c.get("colLabels", None)
+                rows = c.get("rows", None)
+
+                if labels is None or rows is None:
+                    continue
+
+                for i, label in enumerate(labels):
+                    label = clean_dnd_text(label)
+                    if "cantrip" in label.lower() or "spell" in label.lower():
+                        continue # Cantrips are displayed in spell info
+                    
+                    for level, row in enumerate(rows):
+                        value = row[i]
+
+                        if isinstance(value, str):
+                            value = clean_dnd_text(value) # Example: Warlock (PHB)'s slot levels
+
+                        elif isinstance(value, dict):
+                            value_type = value.get("type", None)
+
+                            match value_type:
+                                case "bonus":
+                                    value = value.get("value", 0)
+                                    value = f"+{value}"
+
+                                case "bonusSpeed":
+                                    value = value.get("value", 0)
+                                    value = f"+{value} ft."
+                                
+                                case "dice":
+                                    rolls = value.get("toRoll", [])
+                                    roll = rolls[0] # Data supports multiple dice but this is never used, for simplicity sake we assume there's only 1
+                                    num = roll.get("number", 0)
+                                    faces = roll.get("faces", 0)
+                                    value = f"{num}d{faces}"
+
+                                case _:
+                                    raise NotImplementedError(f"Unsupported classTableGroups row-type: {value_type}")
+                            
+                        info[level].append(f"• **{label}:** ``{value}``")
 
         if info != []:
             self.level_info = info
@@ -349,7 +380,6 @@ class CharacterClass:
             for line in texts:
                 new_length = len(text) + len(line)
                 if new_length > 1024:
-                    print(len(text))
                     info[level - 1].append(f"{title}{text}")
                     title = ""
                     text = ""
