@@ -45,11 +45,11 @@ class CharacterClass:
     name: str
     source: str
 
-    # primary_ability: list[str] | None # TODO
+    primary_ability: str | None
     spellcasting_ability: str | None
     hp_info: list[str] | None
     proficiencies: list[str] | None
-    starting_equipment: str | None
+    starting_equipment: str | None # TODO Also make this list[str], for unanimity
     multiclass_info: list[str] | None
     subclass_unlock_level: int | None
 
@@ -62,6 +62,7 @@ class CharacterClass:
         self.source = json["source"]
         print(f"- {self.name} ({self.source})")
 
+        self._set_primary_ability(json)
         self._set_hp_info(json)
         self._set_proficiencies(json)
         self._set_starting_equipment(json)
@@ -74,6 +75,42 @@ class CharacterClass:
     @property
     def url(self):
         return clean_url(f"https://5e.tools/classes.html#{self.name.lower()}_{self.source.lower()}")
+
+    def _set_primary_ability(self, json: dict):
+        """
+        Sets the primary abilities for a class, if available.
+
+        primaryAbility format:
+            - A list of dictionaries represents an 'OR' condition between each dictionary.
+            - Each dictionary contains one or more keys, which represent an 'AND' condition.
+
+        Examples:
+            [
+                {"str": true}, 
+                {"dex": true}
+            ] → "Strength or Dexterity"
+
+            [
+                {"str": true, "cha": true}
+            ] → "Strength and Charisma"
+        """
+        self.primary_ability = None
+
+        abilities = json.get("primaryAbility", None)
+        if abilities is None:
+            return
+        
+        or_groups = [] 
+        for ability_group in abilities:
+            and_group  = []
+            for ability, _ in ability_group.items():
+                and_group.append(parse_ability_score(ability))
+            
+            or_groups.append(format_words_list(and_group , 'and'))
+
+        text = format_words_list(or_groups, 'or')
+        self.primary_ability = f"**Primary Ability:** {text}"
+
 
     def _set_hp_info(self, json: dict):
         """Set the HP information for the character class."""
@@ -429,6 +466,9 @@ class CharacterClass:
     @property
     def _base_description(self) -> list[Description]:
         desc = []
+
+        if self.primary_ability is not None:
+            desc.append(Description("", self.primary_ability))
 
         if self.hp_info is not None:
             desc.append(Description("Hit Points", self.hp_info))
