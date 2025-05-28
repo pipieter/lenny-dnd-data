@@ -4,7 +4,7 @@ from src.data import clean_url, get_key
 from src.parser import clean_dnd_text, format_words_list, parse_ability_score, parse_descriptions
 
 def format_number_with_text(value: int, text: str):
-    return f"``{str(value).rjust(2)}`` {text}"
+    return f"**{value}** {text}"
 
 class Description: # TODO Turn into function
     name: str
@@ -487,7 +487,7 @@ class CharacterClass:
                         texts.append(desc)
                     continue
 
-            title = f"• __{name}:__ "
+            title = f"__{name}:__\n"
             text = ""
             for line in texts:
                 new_length = len(text) + len(line)
