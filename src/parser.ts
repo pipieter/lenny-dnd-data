@@ -476,26 +476,25 @@ export function parseCreatureTypes(creature_type: string | any): string {
         return creature_type;
     }
 
-    const type = creature_type['type'];
-    if (typeof type != 'object') {
-        throw new Error(`parseCreatureTypes: Could not parse type '${type}'`);
-    }
-
-    const choices = type['choose'];
-    const types = formatWordList(choices);
-
-    const tags = creature_type['tags'];
-    if (!tags) {
+    if (creature_type.choose) {
+        const types = formatWordList(creature_type.choose);
+        if (creature_type.tags?.length) {
+            const tagText = creature_type.tags.join(' ');
+            return `${types} (${tagText})`;
+        }
         return types;
     }
 
-    const tagText = tags.join(' ');
-    return `${types} (${tagText})`;
+    if (creature_type.type) {
+        return creature_type.type;
+    }
+
+    throw new Error(`parseCreatureTypes: Unrecognized format: ${JSON.stringify(creature_type)}`);
 }
 
 export function parseCreatureSummonSpell(spell: string): string {
-    const [name] = spell.split('|', 1);
-    return name;
+    if (!spell) return '';
+    return spell.split('|', 1)[0];
 }
 
 /*
