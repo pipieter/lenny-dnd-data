@@ -1,5 +1,6 @@
 import { execSync } from 'child_process';
 import { readFileSync, writeFileSync } from 'fs';
+import { getPythonInstallation } from './util';
 
 export interface Description {
     name: string;
@@ -95,7 +96,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
-        text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, ' ** $3 ** ');
+        text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
@@ -129,8 +130,12 @@ export function parseSpellLevel(level: number): string {
     return `Level ${level}`;
 }
 
-export function parseSpellSchool(school: string): string | null {
-    return SpellSchools.get(school) || null;
+export function parseSpellSchool(school: string): string {
+    const parsed = SpellSchools.get(school);
+    if (!parsed) {
+        throw `Unsupported spell school: '${school}'`;
+    }
+    return parsed;
 }
 
 function parseSingleCastingTime(time: any): string {
@@ -150,8 +155,8 @@ function parseSingleCastingTime(time: any): string {
             break;
         }
         default: {
-            if (amount == 1) result = `${amount} {unit}`;
-            else result = `${amount} {unit}s`;
+            if (amount == 1) result = `${amount} ${unit}`;
+            else result = `${amount} ${unit}s`;
         }
     }
 
@@ -350,9 +355,10 @@ export function buildTable(headers: string[], rows: string[][], width: number): 
         headers: headers,
         rows: rows,
     };
+    const python = getPythonInstallation();
     const input = 'table.in.temp';
     const output = 'table.out.temp';
-    const command = `python3 scripts/table.py ${input} ${output} ${width}`;
+    const command = `${python} scripts/table.py ${input} ${output} ${width}`;
     writeFileSync(input, JSON.stringify(table, null, 2));
     const result = execSync(command).toString();
     if (result) {
