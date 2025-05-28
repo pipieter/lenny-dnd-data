@@ -142,6 +142,3 @@ export function getCreatures(): Creature[] {
 
     return creatureList;
 }
-function parseDescriptionBlock(entries: any) {
-    throw new Error('Function not implemented.');
-}
