@@ -1,6 +1,10 @@
-import { execSync, spawnSync } from 'child_process';
+import { execSync } from 'child_process';
 import { readFileSync, writeFileSync } from 'fs';
-import { exit } from 'process';
+
+export interface Description {
+    name: string;
+    text: string;
+}
 
 const SpellSchools = new Map([
     ['A', 'Abjuration'],
@@ -372,11 +376,6 @@ function buildDescriptionTable(
         return failure;
     }
     return '```' + table + '```';
-}
-
-interface Description {
-    name: string;
-    text: string;
 }
 
 function parseDescriptionFromTable(description: any, fallbackUrl: string): Description {
