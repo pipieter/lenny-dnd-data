@@ -1,3 +1,7 @@
+import { execSync, spawnSync } from 'child_process';
+import { readFileSync, writeFileSync } from 'fs';
+import { exit } from 'process';
+
 const SpellSchools = new Map([
     ['A', 'Abjuration'],
     ['C', 'Conjuration'],
@@ -318,13 +322,86 @@ function parseDescriptionBlock(description: any): string {
     }
 }
 
+function parseTableValue(value: any): string {
+    if (typeof value == 'string') {
+        return cleanDNDText(value, true);
+    } else if (typeof value == 'object') {
+        if (value.type == 'cell') {
+            if (value.roll) {
+                if (value.roll.exact != undefined) {
+                    return value.roll.exact as string;
+                } else if (value.roll.min != undefined && value.roll.max != undefined) {
+                    return `${value.roll.min}-${value.roll.max}`;
+                }
+            }
+            throw `Unsupported table value cell-type ${value.type}`;
+        }
+        throw `Unsupported table value-type: '${value.type}'`;
+    } else {
+        // Primitive value
+        return value as string;
+    }
+}
+
+export function buildTable(headers: string[], rows: string[][], width: number): string {
+    const table = {
+        headers: headers,
+        rows: rows,
+    };
+    const input = 'table.in.temp';
+    const output = 'table.out.temp';
+    const command = `python3 scripts/table.py ${input} ${output} ${width}`;
+    writeFileSync(input, JSON.stringify(table, null, 2));
+    const result = execSync(command).toString();
+    if (result) {
+        console.log(result);
+    }
+    return readFileSync(output).toString('utf-8');
+}
+
+function buildDescriptionTable(
+    title: string,
+    headers: string[],
+    rows: string[][],
+    fallbackUrl: string
+): string {
+    const failure = `The table for [${title} can be found here](${fallbackUrl}).`;
+
+    const table = buildTable(headers, rows, 56);
+    if (table.length > 1018) {
+        return failure;
+    }
+    return '```' + table + '```';
+}
+
+/*
+
+def __parse_description_from_table(
+    description: any, fallbackUrl: str
+) -> tuple[str, str]:
+    caption = description.get("caption", "")
+    labels = [clean_dnd_text(label) for label in description["colLabels"]]
+    rows = [[__parse_table_value(v) for v in row] for row in description["rows"]]
+
+    table = __prettify_table(caption, [labels] + rows, fallbackUrl)
+    return (caption, table)
+
+
+*/
+
 interface Description {
     name: string;
     text: string;
 }
 
 function parseDescriptionFromTable(description: any, fallbackUrl: string): Description {
-    return { name: 'TABLE', text: 'THIS IS NOT IMPLEMENTED YET' };
+    const title = description.caption || '';
+    const headers = description.colLabels.map(cleanDNDText);
+    const rows = description.rows.map((row: string[]) => row.map(parseTableValue));
+
+    const table = buildDescriptionTable(title, headers, rows, fallbackUrl);
+
+    return { name: title, text: table };
 }
 
 export function parseDescriptions(
@@ -366,115 +443,6 @@ export function parseDescriptions(
 }
 
 /*
-
-
-
-def __parse_table_value(value: any) -> str:
-    if isinstance(value, str):
-        return clean_dnd_text(value)
-    elif isinstance(value, dict):
-        if value.get("type") == "cell":
-            # Should be improved
-            if "roll" in value.keys():
-                if "exact" in value["roll"].keys():
-                    return str(value["roll"]["exact"])
-                elif "min" in value["roll"].keys() and "max" in value["roll"].keys():
-                    roll_min = value["roll"]["min"]
-                    roll_max = value["roll"]["max"]
-                    return f"{roll_min}-{roll_max}"
-
-            return f"Unsupported table value cell-type: '{value['type']}'"
-        return f"Unsupported table value-type: '{value['type']}'"
-    else:
-        # For primitives, just convert to string
-        return str(value)
-
-
-def __prettify_table(title: str, cells: list[list[str]], fallbackUrl: str) -> str:
-    """
-    Prettify a table, by converting it to a string. The field string length is less
-    than or equal to 1024 characters. Because the generated string needs at least 6
-    characters for the code block styling, the table string can only be 1018
-    characters long at most.
-
-    The used library is 'rich'. Rich is originally meant to be a console application,
-    but with some workarounds you can save the generated table to a string.
-    """
-
-    # TODO remove formatting effects in the cells
-
-    failure = f"The table for [{title} can be found here]({fallbackUrl})."
-    headers = cells[0]
-    rows = cells[1:]
-
-    table = Table(style=None, box=rich.box.ROUNDED)
-    for header in headers:
-        table.add_column(header, justify="left", style=None)
-
-    for row in rows:
-        table.add_row(*row)
-
-    buffer = io.StringIO()
-    console = Console(file=buffer, width=56)
-    console.print(table)
-    table_string = buffer.getvalue()
-    buffer.close()
-
-    if len(table_string) > 1018:
-        return failure
-
-    return f"```{table_string}```"
-
-
-def __parse_description_from_table(
-    description: any, fallbackUrl: str
-) -> tuple[str, str]:
-    caption = description.get("caption", "")
-    labels = [clean_dnd_text(label) for label in description["colLabels"]]
-    rows = [[__parse_table_value(v) for v in row] for row in description["rows"]]
-
-    table = __prettify_table(caption, [labels] + rows, fallbackUrl)
-    return (caption, table)
-
-
-def parse_descriptions(
-    name: str, description: list[any], fallbackUrl: str
-) -> list[tuple[str, str]]:
-    subdescriptions: list[tuple[str, str]] = []
-
-    blocks: list[str] = []
-
-    for desc in description:
-        # Special case scenario where an entry is a description on its own
-        # These will be handled separately
-        if isinstance(desc, str):
-            blocks.append(clean_dnd_text(desc))
-        else:
-            if desc["type"] == "entries":
-                desc_name = clean_dnd_text(desc.get("name", ""), no_formatting=True)
-                subdescriptions.extend(
-                    parse_descriptions(desc_name, desc["entries"], fallbackUrl)
-                )
-            elif desc["type"] == "table":
-                subdescriptions.append(
-                    __parse_description_from_table(desc, fallbackUrl)
-                )
-            else:
-                blocks.append(__parse_description_block(desc))
-
-    descriptions = []
-    if len(blocks) > 0:
-        descriptions.append((name, blocks[0]))
-    for i in range(1, len(blocks)):
-        descriptions.append(("", blocks[i]))
-    descriptions.extend(subdescriptions)
-
-    cleaned_descriptions = [ # Unsupported types may append empty strings, these are removed here.
-        (title, desc) for title, desc in descriptions if desc.strip()
-    ]
-
-    return cleaned_descriptions
-
 
 def parse_item_value(value: int) -> str | None:
     if value == 0:
