@@ -10,6 +10,18 @@ import {
 
 const BASEPATH = '5etools-src/data/bestiary/';
 
+interface JsonCreature {
+    name: string;
+    source: string;
+    subtitle: string | null;
+    summonedBySpell: string | null;
+
+    tokenUrl: string | null;
+    url: string;
+
+    description: Description[] | null;
+}
+
 class Creature {
     name: string;
     source: string;
@@ -109,7 +121,7 @@ function loadCreaturesFromIndex(loadFluff: boolean): any {
     return creatures;
 }
 
-export function getCreatures(): Creature[] {
+export function getCreatures(): JsonCreature[] {
     const creatures = loadCreaturesFromIndex(false);
     const fluffCreatures = loadCreaturesFromIndex(true);
 
@@ -123,7 +135,7 @@ export function getCreatures(): Creature[] {
         if (parent) creature.inheritFrom(parent);
     });
 
-    let creatureList: Creature[] = [];
+    let creatureList: JsonCreature[] = [];
     (Object.values(creatures) as Creature[]).forEach((creature: Creature) => {
         console.log('- base inherit - ' + getKey(creature.name, creature.source));
         if (!creature.parentKey) {
@@ -137,7 +149,15 @@ export function getCreatures(): Creature[] {
         const fluffCreature = fluffCreatures[key];
         if (fluffCreature) creature.mergeWithFluff(fluffCreature);
 
-        creatureList.push(creature);
+        creatureList.push({
+            name: creature.name,
+            source: creature.source,
+            subtitle: creature.subtitle,
+            summonedBySpell: creature.summonedBySpell,
+            tokenUrl: creature.tokenUrl(),
+            url: creature.url(),
+            description: creature.description,
+        });
     });
 
     return creatureList;
