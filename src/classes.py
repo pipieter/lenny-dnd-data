@@ -627,7 +627,7 @@ class CharacterClass:
             "subclass": self.subclass_features
         }
 
-class ClassList:
+class ClassList: # TODO Can be a function
     classes: list[dict]
     INDEX_PATH = "5etools-src/data/class/index.json"
 

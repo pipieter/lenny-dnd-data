@@ -6,7 +6,7 @@ from src.data import clean_url
 from src.parser import parse_creature_size, parse_creature_summon_spell, parse_creature_type, parse_descriptions
 
 
-class _HasKey: # TODO Refactor to function
+class _HasKey: # TODO Replace with data.get_key() method
     """Ensures Parent & _CreatureBase make the same type of keys."""
     name: str
     source: str
@@ -249,7 +249,7 @@ class Creature(object):
             "stats": self.stats
         }
 
-class _Bestiary(object):
+class _Bestiary(object): # TODO Can be a function
     creatures: dict[str, _BaseCreature]
     fluff_creatures: dict[str, _FluffCreature]
 
@@ -274,7 +274,7 @@ class _Bestiary(object):
             self.fluff_creatures[creature.key] = creature
 
 
-class CreatureList(object):
+class CreatureList(object): # TODO Can be a function
     creatures: list[Creature]
     INDEX_PATH = "5etools-src/data/bestiary/index.json"
     INDEX_FLUFF_PATH = "5etools-src/data/bestiary/fluff-index.json"
