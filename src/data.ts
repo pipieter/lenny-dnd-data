@@ -1,5 +1,14 @@
 import { existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
 
+export function readJsonFile(path: string): any {
+    const contents = readFileSync(path, 'utf8');
+    return JSON.parse(contents);
+}
+
+export function getKey(name: string, source: string): string {
+    return `${name.toLowerCase()} (${source.toUpperCase()})`;
+}
+
 function ignoreJsonFile(path: string): boolean {
     if (!existsSync(path)) return true;
     if (!lstatSync(path).isFile()) return true;
@@ -17,8 +26,7 @@ export function loadData(dataPath: string): any {
         const path = `${dataPath}/${file}`;
         if (ignoreJsonFile(path)) continue;
 
-        const contents = readFileSync(path, 'utf8');
-        const data = JSON.parse(contents);
+        const data = readJsonFile(path);
 
         for (const key in data) {
             if (!databank.hasOwnProperty(key)) {
