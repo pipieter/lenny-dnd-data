@@ -83,8 +83,6 @@ def clean_dnd_text(text: str, no_formatting=False) -> str:
     text = re.sub(r"\{@table ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@variantrule ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
     text = re.sub(r"\{@variantrule ([^\}]*?)\}", r"\1", text)
-    text = re.sub(r"\{@feat ([^\|}]+)\|([^\}]+)\}", r"__\1 (\2)__", text)
-    text = re.sub(r"\{@5etools ([^\|}]+)\|([^\}]+)\}", r"[\1](https://5e.tools/\2)", text)
 
     if no_formatting:
         text = re.sub(r"\{@h\}", r"Hit: ", text)
@@ -101,6 +99,8 @@ def clean_dnd_text(text: str, no_formatting=False) -> str:
         text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\3", text)
         text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
         text = re.sub(r"\{@status ([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@feat ([^\|}]+)\|([^\}]+)\}", r"\1 (\2)", text)
+        text = re.sub(r"\{@5etools ([^\|}]+)\|([^\}]+)\}", r"\1", text)
     else:
         text = re.sub(r"\{@h\}", r"*Hit:* ", text)
         text = re.sub(r"\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"__\3__", text)
@@ -118,6 +118,8 @@ def clean_dnd_text(text: str, no_formatting=False) -> str:
         text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"*\3*", text)
         text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\}", r"*\1*", text)
         text = re.sub(r"\{@status ([^\}]*?)\}", r"*\1*", text)
+        text = re.sub(r"\{@feat ([^\|}]+)\|([^\}]+)\}", r"__\1 (\2)__", text)
+        text = re.sub(r"\{@5etools ([^\|}]+)\|([^\}]+)\}", r"[\1](https://5e.tools/\2)", text)
 
     # Note: notes should be parsed at the end, because they might contain subqueries
     text = re.sub(r"\{@note ([^\}]*?)\}", r"\(\1\)", text)
