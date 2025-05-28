@@ -1,0 +1,26 @@
+{
+  "name": "lenny-dnd-data",
+  "version": "1.0.0",
+  "description": "Generate the data for the Lenny D&D bot. Automatically formats the descriptions for the Discord embeds.",
+  "main": "index.js",
+  "scripts": {
+    "generate": "ts-node src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipieter/lenny-dnd-data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pipieter/lenny-dnd-data/issues"
+  },
+  "homepage": "https://github.com/pipieter/lenny-dnd-data#readme",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
