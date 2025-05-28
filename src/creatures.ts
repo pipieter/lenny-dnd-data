@@ -1,5 +1,12 @@
 import { readJsonFile, getKey } from './data';
-import { cleanUrl, parseCreatureSummonSpell, parseCreatureTypes, parseSizes } from './parser';
+import {
+    cleanUrl,
+    Description,
+    parseCreatureSummonSpell,
+    parseCreatureTypes,
+    parseDescriptions,
+    parseSizes,
+} from './parser';
 
 const BASEPATH = '5etools-src/data/bestiary/';
 
@@ -10,7 +17,7 @@ class Creature {
     summonedBySpell: string | null = null;
     hasToken: boolean | null = null;
 
-    description: any[] | null = null;
+    description: Description[] | null = null;
     parentKey: string | null = null;
 
     constructor(data: any, isFluff: boolean) {
@@ -18,7 +25,10 @@ class Creature {
         this.source = data['source'];
 
         if (isFluff) {
-            this.description = ['Yay!'];
+            const entries = data['entries'] || null;
+            if (entries) {
+                this.description = parseDescriptions('', entries, this.url());
+            }
         } else {
             const size = parseSizes(data['size'] || '');
             const type = parseCreatureTypes(data['type'] || '');
@@ -80,6 +90,7 @@ function loadCreaturesFromIndex(loadFluff: boolean): any {
     let creatures: { [key: string]: Creature } = {};
     for (const [source, sourceIndexFile] of Object.entries(indexData)) {
         const path = BASEPATH + sourceIndexFile;
+        console.log('###### ' + path + ' ######');
         const data = readJsonFile(path);
 
         if (!data[monsterKey]) {
@@ -90,6 +101,7 @@ function loadCreaturesFromIndex(loadFluff: boolean): any {
         data[monsterKey].forEach((creatureData: any) => {
             const creature = new Creature(creatureData, loadFluff);
             const key = getKey(creature.name, creature.source);
+            console.log('- ' + key);
             creatures[key] = creature;
         });
     }
@@ -102,12 +114,22 @@ export function getCreatures(): Creature[] {
     const fluffCreatures = loadCreaturesFromIndex(true);
 
     (Object.values(fluffCreatures) as Creature[]).forEach((creature: Creature) => {
+        console.log('- fluff inherit - ' + getKey(creature.name, creature.source));
+        if (!creature.parentKey) {
+            return;
+        }
+
         const parent = creatures[creature.parentKey ?? ''];
         if (parent) creature.inheritFrom(parent);
     });
 
     let creatureList: Creature[] = [];
     (Object.values(creatures) as Creature[]).forEach((creature: Creature) => {
+        console.log('- base inherit - ' + getKey(creature.name, creature.source));
+        if (!creature.parentKey) {
+            return;
+        }
+
         const parent = creatures[creature.parentKey ?? ''];
         if (parent) creature.inheritFrom(parent);
 
@@ -119,4 +141,7 @@ export function getCreatures(): Creature[] {
     });
 
     return creatureList;
+}
+function parseDescriptionBlock(entries: any) {
+    throw new Error('Function not implemented.');
 }

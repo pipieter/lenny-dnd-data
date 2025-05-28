@@ -290,7 +290,7 @@ function parseDescriptionBlock(description: any): string {
             return points.join('\n');
         }
         case 'inset':
-        case 'insetReadalout': {
+        case 'insetReadaloud': {
             return `*${parseDescriptionBlockFromBlocks(description.entries)}*`;
         }
         case 'item': {
@@ -343,6 +343,11 @@ function parseTableValue(value: any): string {
             }
             throw `Unsupported table value cell-type ${value.type}`;
         }
+
+        if (value.type == 'entries') {
+            return 'TODO - ADD TABLE ENTRIES SUPPORT';
+        }
+
         throw `Unsupported table value-type: '${value.type}'`;
     } else {
         // Primitive value
