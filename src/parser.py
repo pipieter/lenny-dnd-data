@@ -385,7 +385,7 @@ def __parse_description_block_from_blocks(descriptions: list[any]) -> str:
 
 def __parse_table_value(value: any) -> str:
     if isinstance(value, str):
-        return clean_dnd_text(value)
+        return clean_dnd_text(value, True)
     elif isinstance(value, dict):
         if value.get("type") == "cell":
             # Should be improved
@@ -444,7 +444,7 @@ def __parse_description_from_table(
     description: any, fallbackUrl: str
 ) -> tuple[str, str]:
     caption = description.get("caption", "")
-    labels = [clean_dnd_text(label) for label in description["colLabels"]]
+    labels = [clean_dnd_text(label, True) for label in description["colLabels"]]
     rows = [[__parse_table_value(v) for v in row] for row in description["rows"]]
 
     table = __prettify_table(caption, [labels] + rows, fallbackUrl)
