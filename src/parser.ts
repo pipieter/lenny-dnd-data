@@ -33,6 +33,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@atk rw\} /g, '+');
     text = text.replaceAll(/\{@atk rw\}/g, '+');
     text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@action ([^\}]*?)/g, '$1');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -80,10 +81,12 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '$1');
+        text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+        text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -95,10 +98,12 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '__$1__');
+        text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '__$1__');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
+        text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
@@ -110,6 +115,11 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     // Note: notes should be parsed at the end, because they might contain subqueries
     text = text.replaceAll(/\{@note ([^\}]*?)\}/g, '\($1\)');
+
+    // Check if any remaining patterns of {@...} exist
+    if (/^.*\{@.*\}.*$/g.test(text)) {
+        throw `{@...} pattern found in '${text}'`;
+    }
 
     return text;
 }
