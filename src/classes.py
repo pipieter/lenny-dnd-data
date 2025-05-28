@@ -3,6 +3,9 @@ from src.creatures import _HasKey
 from src.data import clean_url, get_key
 from src.parser import clean_dnd_text, format_words_list, parse_ability_score, parse_descriptions
 
+def format_number_with_text(value: int, text: str):
+    return f"``{str(value).rjust(2)}`` {text}"
+
 class Description: # TODO Turn into function
     name: str
     text: str
@@ -162,7 +165,7 @@ class CharacterClass:
             or_groups.append(format_words_list(and_group , 'and'))
 
         text = format_words_list(or_groups, 'or')
-        self.primary_ability = f"**Primary Ability:** {text}"
+        self.primary_ability = f"Primary Ability: {text}"
 
 
     def _set_hp_info(self, json: dict):
@@ -180,9 +183,9 @@ class CharacterClass:
         avg_hp = f"``{(faces) // 2 + 1}``"
         con_mod = "Con. mod"
 
-        info.append(f"• **HP Die:** {die}")
-        info.append(f"• **Level 1 {self.name} HP:** ``{faces}`` + {con_mod}")
-        info.append(f"• **HP per {self.name} level:** {die} + {con_mod} *or* {avg_hp} + {con_mod}")
+        info.append(f"• HP Die: {die}")
+        info.append(f"• Level 1 {self.name} HP: ``{faces}`` + {con_mod}")
+        info.append(f"• HP per {self.name} level: {die} + {con_mod} *or* {avg_hp} + {con_mod}")
 
         self.hp_info = info
     
@@ -258,7 +261,7 @@ class CharacterClass:
                     raise NotImplementedError("Unknown proficiency type: " + type)
 
             if text != "":
-                info.append(f"• **{title} Proficiencies:** {text}")
+                info.append(f"• {title} Proficiencies: {text}")
         return info
 
     def _set_proficiencies(self, json: dict):
@@ -270,7 +273,7 @@ class CharacterClass:
         if saving_proficiencies:
             saving_proficiencies = [parse_ability_score(p) for p in saving_proficiencies] # Format short-names to full names
             saving_proficiencies = format_words_list(saving_proficiencies, "and")
-            proficiencies.append(f"• **Saving Throw Proficiencies:** {saving_proficiencies}")
+            proficiencies.append(f"• Saving Throw Proficiencies: {saving_proficiencies}")
         
         start_prof = json.get("startingProficiencies", None)
         if start_prof:
@@ -326,9 +329,9 @@ class CharacterClass:
                 conjunction = "or"
 
             for skill, lvl in requirements.items():
-                skills.append(f"``{lvl}`` {parse_ability_score(skill)}")
+                skills.append(format_number_with_text(lvl, parse_ability_score(skill)))
 
-            text = f"• **Ability requirements:** At least {format_words_list(skills, conjunction)}"
+            text = f"• Ability requirements: At least {format_words_list(skills, conjunction)}"
             if len(requirements) > 1:
                 text += " (Primary ability of new class)"
             info.append(text)
@@ -365,7 +368,7 @@ class CharacterClass:
         levels = 20
 
         # Proficiency Bonus, follows same rules for each class. (+1 every 4 levels.)
-        info = [[f"• **Proficiency Bonus:** ``+{2 + (i // 4)}``"] for i in range(levels)]
+        info = [[f"• {format_number_with_text((2 + (i // 4)), 'Proficiency Bonus')}"] for i in range(levels)]
 
         class_table = json.get("classTableGroups", None)
         if not class_table:
@@ -393,7 +396,7 @@ class CharacterClass:
                     elif isinstance(value, dict):
                         value = self.__format_class_table_value(value)
                         
-                    info[level].append(f"• **{label}:** ``{value}``")
+                    info[level].append(f"• {format_number_with_text(value, label)}")
 
         self.level_info = info
 
@@ -423,22 +426,20 @@ class CharacterClass:
         )
         level_info: list[list[str]] = [[] for _ in range(max_len)]
 
-        for i in range(max_len):
-            level_info[i].append(f"• Uses ``{self.spellcasting_ability}``")
-
         for i, count in enumerate(cantrip_progression):
-            level_info[i].append(f"• ``{count}`` Cantrips Known")
+            level_info[i].append(f"• {format_number_with_text(count, 'Cantrips Known')}")
 
         for i, count in enumerate(spells_known_progression):
-            level_info[i].append(f"• ``{count}`` Spells Known")
+            level_info[i].append(f"• {format_number_with_text(count, 'Spells Known')}")
 
         spell_fixed_total = 0
         for i, count in enumerate(spells_known_progression_fixed):
             spell_fixed_total += count
-            level_info[i].append(f"• ``+{count}`` Spells learned ({spell_fixed_total} total)")
+            label = f"Spells Known (gained +{count})"
+            level_info[i].append(f"• {format_number_with_text(spell_fixed_total, label)}")
 
         for i, count in enumerate(prepared_spells_progression):
-            level_info[i].append(f"• ``{count}`` Prepared Spells")
+            level_info[i].append(f"• {format_number_with_text(count, 'Prepared Spells')}")
         
         self.level_spell_info = level_info if any(level_info) else None
             
@@ -486,7 +487,7 @@ class CharacterClass:
                         texts.append(desc)
                     continue
 
-            title = f"• **{name}:** "
+            title = f"• __{name}:__ "
             text = ""
             for line in texts:
                 new_length = len(text) + len(line)
@@ -534,7 +535,7 @@ class CharacterClass:
                 features[subclass_key] = {}
 
             desc = '\n'.join(feature.description) # TODO Create function that joins list[str] but keeps it under 1024 characters per line.
-            text = f"• **{feature.name} ({feature.source}):** {desc}"
+            text = f"• __{feature.name} ({feature.source}):__ {desc}"
 
             if level not in features[subclass_key]:
                 features[subclass_key][level] = []
@@ -579,7 +580,7 @@ class CharacterClass:
         if self.level_spell_info is not None:
             for i, spell_info in enumerate(self.level_spell_info):
                 if spell_info:
-                    desc[i].append(Description("Spellcasting", spell_info))
+                    desc[i].append(Description(f"Spellcasting ({self.spellcasting_ability})", spell_info))
         
         if self.level_features is not None:
             for i, features in enumerate(self.level_features):
