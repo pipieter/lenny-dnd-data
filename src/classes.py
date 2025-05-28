@@ -624,7 +624,8 @@ class CharacterClass:
             "source": self.source,
             "url": self.url,
             "subclass_unlock_level": self.subclass_unlock_level,
-            "descriptions": self.descriptions,
+            # TODO Add 'resources', which holds general class resources (Prof. bonus, rage, etc.) and spellcasting info, make spellcasting be first in order for styling.
+            "descriptions": self.descriptions, # TODO Descriptions should only hold classfeature info.
             "subclass": self.subclass_features
         }
 
