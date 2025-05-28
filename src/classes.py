@@ -1,8 +1,9 @@
 import json
-from src.data import clean_url
+from src.creatures import _HasKey
+from src.data import clean_url, get_key
 from src.parser import clean_dnd_text, format_words_list, parse_ability_score, parse_descriptions
 
-class Description:
+class Description: # TODO Turn into function
     name: str
     text: str
 
@@ -18,7 +19,7 @@ class Description:
             "text": self.text,
         }
 
-class ClassFeature:
+class ClassFeature(_HasKey):
     name: str
     source: str
     level: int
@@ -26,20 +27,70 @@ class ClassFeature:
     class_name: str
     class_source: str
 
+    subclass_name: str | None
+    subclass_source: str | None
+
+    _copy: dict | None
+
     description: list[str]
 
     def __init__(self, json: dict):
+        super().__init__()
         self.name = json["name"]
         self.source = json["source"]
         self.level = int(json["level"])
+
         self.class_name = json["className"]
         self.class_source = json["classSource"]
+
+        self.subclass_name = json.get("subclassShortName", None)
+        self.subclass_source = json.get("subclassSource", None)
+
+        self._copy = None
+        if "entries" not in json:
+            self._copy = json["_copy"]
+            return
 
         descriptions = parse_descriptions("", json["entries"], "")
         self.description = []
         for desc in descriptions:
             _, text = desc
             self.description.append(clean_dnd_text(text))
+        
+    @property
+    def is_subclass(self):
+        return self.subclass_name is not None and self.subclass_source is not None
+
+    @property
+    def has_parent(self):
+        return self._copy is not None
+    
+    @property
+    def key(self):
+        return get_key(self.name, self.source, self.subclass_name, self.subclass_source)
+    
+    @property
+    def subclass_key(self):
+        if not self.is_subclass:
+            return None
+        return get_key(self.subclass_name, self.subclass_source)
+
+    @property
+    def class_key(self):
+        return get_key(self.class_name, self.class_source)
+    
+    def inherit(self, features: list["ClassFeature"]):
+        """Used to handle _copy"""
+        if not self.has_parent:
+            return
+        parent_key = get_key(self._copy["name"], self._copy["source"], self._copy["subclassShortName"], self._copy["subclassSource"])
+
+        for feature in features:
+            if parent_key == feature.key:
+                self.description = feature.description
+                self._copy = None
+                break
+
 
 class CharacterClass:
     name: str
@@ -56,8 +107,9 @@ class CharacterClass:
     level_info: list[str] | None
     level_spell_info: list[str] | None
     level_features: list[list[str] | None] | None
+    subclass_features: dict[list[list[str] | None] | None] | None
 
-    def __init__(self, json: dict, class_features: list[ClassFeature]):
+    def __init__(self, json: dict, class_features: list[ClassFeature], subclass_features: list[ClassFeature]):
         self.name = json["name"]
         self.source = json["source"]
         print(f"- {self.name} ({self.source})")
@@ -71,6 +123,7 @@ class CharacterClass:
         self._set_level_info(json)
         self._set_level_spell_info(json)
         self._set_level_features(json, class_features)
+        self._set_level_subclass_features(json, subclass_features)
 
     @property
     def url(self):
@@ -199,7 +252,7 @@ class CharacterClass:
                     text = f"{format_words_list(tools, 'and')}"
 
                 case "toolProficiencies":
-                    pass # Data is not of use
+                    continue # Data is not of use
 
                 case _:
                     raise NotImplementedError("Unknown proficiency type: " + type)
@@ -463,6 +516,33 @@ class CharacterClass:
         
         self.level_features = info
 
+    def _set_level_subclass_features(self, json: dict, subclass_features: list[ClassFeature]):
+        self.subclass_features = None
+        features = {}
+
+        for feature in subclass_features:
+            if not feature.is_subclass:
+                continue
+
+            if get_key(self.name, self.source) != feature.class_key:
+                continue
+
+            subclass_key = feature.subclass_key
+            level = feature.level
+
+            if subclass_key not in features:
+                features[subclass_key] = {}
+
+            desc = '\n'.join(feature.description) # TODO Create function that joins list[str] but keeps it under 1024 characters per line.
+            text = f"• **{feature.name} ({feature.source}):** {desc}"
+
+            if level not in features[subclass_key]:
+                features[subclass_key][level] = []
+
+            features[subclass_key][level].append(text)
+
+        self.subclass_features = features
+
     @property
     def _base_description(self) -> list[Description]:
         desc = []
@@ -544,6 +624,7 @@ class CharacterClass:
             "url": self.url,
             "subclass_unlock_level": self.subclass_unlock_level,
             "descriptions": self.descriptions,
+            "subclass": self.subclass_features
         }
 
 class ClassList:
@@ -568,9 +649,17 @@ class ClassList:
             for feat_data in features_json:
                 features.append(ClassFeature(feat_data))
 
+            subclass_features_json = data.get("subclassFeature", [])
+            subclass_features = []
+            for sub_feat_data in subclass_features_json:
+                subclass_features.append(ClassFeature(sub_feat_data))
+            
+            for sub_feat in subclass_features:
+                sub_feat.inherit(subclass_features) # TODO Optimise?
+
             class_json = data.get("class", {})
             for class_data in class_json:
-                character_class = CharacterClass(class_data, features)
+                character_class = CharacterClass(class_data, features, subclass_features)
                 self.classes.append(character_class.to_dict())
             
 def get_classes_json() -> list[dict]:

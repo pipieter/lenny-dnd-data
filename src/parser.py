@@ -369,6 +369,12 @@ def __parse_description_block(description: any) -> str:
         case "refFeat":
             return f"Unsupported type: {type}" # TODO
 
+        case "refSubclassFeature": # Artificer
+            return f"Unsupported type: {type}" # TODO
+
+        case "statblock": # Druid
+            return f"Unsupported type: {type}" # TODO
+
     raise NotImplementedError(f"Unsupported description type: '{description['type']}'")
 
 

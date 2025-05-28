@@ -6,7 +6,7 @@ from src.data import clean_url
 from src.parser import parse_creature_size, parse_creature_summon_spell, parse_creature_type, parse_descriptions
 
 
-class _HasKey:
+class _HasKey: # TODO Refactor to function
     """Ensures Parent & _CreatureBase make the same type of keys."""
     name: str
     source: str
