@@ -1,5 +1,6 @@
 import { execSync } from 'child_process';
 import { readFileSync, writeFileSync } from 'fs';
+import { getPythonInstallation } from './util';
 
 export interface Description {
     name: string;
@@ -356,9 +357,10 @@ export function buildTable(headers: string[], rows: string[][], width: number): 
         headers: headers,
         rows: rows,
     };
+    const python = getPythonInstallation();
     const input = 'table.in.temp';
     const output = 'table.out.temp';
-    const command = `python3 scripts/table.py ${input} ${output} ${width}`;
+    const command = `${python} scripts/table.py ${input} ${output} ${width}`;
     writeFileSync(input, JSON.stringify(table, null, 2));
     const result = execSync(command).toString();
     if (result) {
