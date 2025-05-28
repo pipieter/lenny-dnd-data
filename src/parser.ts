@@ -19,86 +19,88 @@ export function cleanUrl(url: string): string {
 }
 
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
-    text = text.replace(/\{@atk rw\} /, '+');
-    text = text.replace(/\{@atk rw\}/, '+');
-    text = text.replace(/\{@action ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$1 ($2)');
-    text = text.replace(/\{@b ([^\}]*?)\}/, '**$1**');
-    text = text.replace(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@book ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@card ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@chance ([^\}]*?)\|\|\|([^\}]*?)\|([^\}]*?)\}/, '$1 percent');
-    text = text.replace(/\{@chance ([^\}]*?)\}/, '$1 percent');
-    text = text.replace(/\{@classFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@condition ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@condition ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@d20 -([^\}]*?)\}/, '-$1');
-    text = text.replace(/\{@d20 ([^\}]*?)\}/, '+$1');
-    text = text.replace(/\{@dc ([^\}]*?)\}/, 'DC $1');
-    text = text.replace(/\{@deck ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@deck ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@deity ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@dice ([^\}]*?)\|([^\}]*?)\}/, '$1 ($2)');
-    text = text.replace(/\{@dice ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@filter ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@filter ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@filter ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@hazard ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@hazard ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@hit ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@item ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$3');
-    text = text.replace(/\{@item ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@item ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$3');
-    text = text.replace(/\{@language ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@link ([^\}]*?)\|([^\}]*?)\}/, '[$1]($2)');
-    text = text.replace(/\{@optfeature ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@optfeature ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@quickref ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@race ([^\}]*?)\|\|([^\}]*?)\}/, '$2');
-    text = text.replace(/\{@race ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@race ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@sense ([^\}]*?)\|[^\}]*?\}/, '$1');
-    text = text.replace(/\{@sense ([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@table ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$3');
-    text = text.replace(/\{@table ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@variantrule ([^\}]*?)\|([^\}]*?)\}/, '$1');
-    text = text.replace(/\{@variantrule ([^\}]*?)\}/, '$1');
+    // Note: all regexes should end with a g, which stands for "global"
+
+    text = text.replaceAll(/\{@atk rw\} /g, '+');
+    text = text.replaceAll(/\{@atk rw\}/g, '+');
+    text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
+    text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
+    text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@chance ([^\}]*?)\|\|\|([^\}]*?)\|([^\}]*?)\}/g, '$1 percent');
+    text = text.replaceAll(/\{@chance ([^\}]*?)\}/g, '$1 percent');
+    text = text.replaceAll(/\{@classFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@condition ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@condition ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@d20 -([^\}]*?)\}/g, '-$1');
+    text = text.replaceAll(/\{@d20 ([^\}]*?)\}/g, '+$1');
+    text = text.replaceAll(/\{@dc ([^\}]*?)\}/g, 'DC $1');
+    text = text.replaceAll(/\{@deck ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@deck ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@dice ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
+    text = text.replaceAll(/\{@dice ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@filter ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@hazard ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@hazard ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@hit ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+    text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@item ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+    text = text.replaceAll(/\{@language ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@link ([^\}]*?)\|([^\}]*?)\}/g, '[$1]($2)');
+    text = text.replaceAll(/\{@optfeature ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@optfeature ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@quickref ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@race ([^\}]*?)\|\|([^\}]*?)\}/g, '$2');
+    text = text.replaceAll(/\{@race ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@race ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@sense ([^\}]*?)\|[^\}]*?\}/g, '$1');
+    text = text.replaceAll(/\{@sense ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@table ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+    text = text.replaceAll(/\{@table ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@variantrule ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@variantrule ([^\}]*?)\}/g, '$1');
 
     if (noFormat) {
-        text = text.replace(/\{@h\}/, 'Hit: ');
-        text = text.replace(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$3');
-        text = text.replace(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/, '$1');
-        text = text.replace(/\{@i ([^\}]*?)\}/, '$1');
-        text = text.replace(/\{@italic ([^\}]*?)\}/, '$1');
-        text = text.replace(/\{@damage ([^\}]*?)\}/, '$1');
-        text = text.replace(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$3');
-        text = text.replace(/\{@skill ([^\}]*?)\|([^\}]*?)\}/, '$1');
-        text = text.replace(/\{@skill ([^\}]*?)\}/, '$1');
-        text = text.replace(/\{@spell ([^\}]*?)\|([^\}]*?)\}/, '$1');
-        text = text.replace(/\{@spell ([^\}]*?)\}/, '$1');
-        text = text.replace(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '$3');
-        text = text.replace(/\{@status ([^\}]*?)\|([^\}]*?)\}/, '$1');
-        text = text.replace(/\{@status ([^\}]*?)\}/, '$1');
+        text = text.replaceAll(/\{@h\}/g, 'Hit: ');
+        text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+        text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '$1');
+        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+        text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@spell ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+        text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '$1');
     } else {
-        text = text.replace(/\{@h\}/, '*Hit:* ');
-        text = text.replace(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '__$3__');
-        text = text.replace(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/, '__$1__');
-        text = text.replace(/\{@i ([^\}]*?)\}/, '*$1*');
-        text = text.replace(/\{@italic ([^\}]*?)\}/, '*$1*');
-        text = text.replace(/\{@damage ([^\}]*?)\}/, '**$1**');
-        text = text.replace(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, ' ** $3 ** ');
-        text = text.replace(/\{@skill ([^\}]*?)\|([^\}]*?)\}/, '*$1*');
-        text = text.replace(/\{@skill ([^\}]*?)\}/, '*$1*');
-        text = text.replace(/\{@spell ([^\}]*?)\|([^\}]*?)\}/, '__$1__');
-        text = text.replace(/\{@spell ([^\}]*?)\}/, '__$1__');
-        text = text.replace(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/, '*$3*');
-        text = text.replace(/\{@status ([^\}]*?)\|([^\}]*?)\}/, '*$1*');
-        text = text.replace(/\{@status ([^\}]*?)\}/, '*$1*');
+        text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
+        text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
+        text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '__$1__');
+        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
+        text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, ' ** $3 ** ');
+        text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
+        text = text.replaceAll(/\{@spell ([^\}]*?)\}/g, '__$1__');
+        text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '*$3*');
+        text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '*$1*');
     }
 
     // Note: notes should be parsed at the end, because they might contain subqueries
-    text = text.replace(/\{@note ([^\}]*?)\}/, '\($1\)');
+    text = text.replaceAll(/\{@note ([^\}]*?)\}/g, '\($1\)');
 
     return text;
 }
@@ -300,7 +302,7 @@ function parseDescriptionBlock(description: any): string {
             return entry;
         }
         case 'entry': {
-            return description.entry;
+            return cleanDNDText(description.entry);
         }
         case 'table': {
             const table = parseDescriptionFromTable(description, '');
