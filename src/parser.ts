@@ -374,21 +374,6 @@ function buildDescriptionTable(
     return '```' + table + '```';
 }
 
-/*
-
-def __parse_description_from_table(
-    description: any, fallbackUrl: str
-) -> tuple[str, str]:
-    caption = description.get("caption", "")
-    labels = [clean_dnd_text(label) for label in description["colLabels"]]
-    rows = [[__parse_table_value(v) for v in row] for row in description["rows"]]
-
-    table = __prettify_table(caption, [labels] + rows, fallbackUrl)
-    return (caption, table)
-
-
-*/
-
 interface Description {
     name: string;
     text: string;
