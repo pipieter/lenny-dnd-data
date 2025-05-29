@@ -37,7 +37,7 @@ class Creature {
         this.source = data['source'];
 
         if (isFluff) {
-            this.description = this.getDescriptions(data);
+            this.description = this.getDescriptions(data); // TODO Improve performance
         } else {
             this.subtitle = this.getSubtitle(data);
             this.summonedBySpell = data['summonedBySpell']
