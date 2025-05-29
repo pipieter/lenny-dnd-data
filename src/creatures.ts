@@ -37,10 +37,7 @@ class Creature {
         this.source = data['source'];
 
         if (isFluff) {
-            const entries = data['entries'] || null;
-            if (entries) {
-                this.description = parseDescriptions('', this.filterEntries(entries), this.url());
-            }
+            this.description = this.getDescriptions(data);
         } else {
             this.subtitle = this.getSubtitle(data);
             this.summonedBySpell = data['summonedBySpell']
@@ -68,6 +65,41 @@ class Creature {
 
         const text = size + ' ' + type;
         return text.trim();
+    }
+
+    private getDescriptions(data: any): Description[] | null {
+        const entries = data['entries'] || null;
+        if (!entries) {
+            return null;
+        }
+
+        const filteredEntries = this.filterEntries(entries);
+        const parsedDescriptions = parseDescriptions('', filteredEntries, this.url());
+        let filteredDescriptions: Description[] = [];
+        let totalTextLength = 0;
+        parsedDescriptions.forEach((desc) => {
+            const textLower = desc.text.toLowerCase();
+            if (textLower.startsWith('\`\`\`')) {
+                return;
+            }
+
+            if (textLower.toLowerCase().includes(' table ')) {
+                return;
+            }
+
+            if (textLower.toLowerCase().includes('stat block')) {
+                return;
+            }
+
+            if (textLower.length > 1024 || totalTextLength > 1024) {
+                return;
+            }
+
+            filteredDescriptions.push(desc);
+            totalTextLength = totalTextLength + textLower.length;
+        });
+
+        return filteredDescriptions;
     }
 
     private filterEntries(entries: any[]): any[] {
