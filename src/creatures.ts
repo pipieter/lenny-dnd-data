@@ -47,9 +47,7 @@ class Creature {
         }
 
         const _copy = data['_copy'] || null;
-        if (_copy) {
-            this.parentKey = getKey(_copy['name'], _copy['source']);
-        }
+        if (_copy) this.parentKey = getKey(_copy['name'], _copy['source']);
     }
 
     private getSubtitle(data: any): string | null {
@@ -59,9 +57,7 @@ class Creature {
         const size = sizeData ? parseSizes(sizeData) : null;
         const type = typeData ? parseCreatureTypes(typeData) : null;
 
-        if (!size && !type) {
-            return null;
-        }
+        if (!size && !type) return null;
 
         const text = size + ' ' + type;
         return text.trim();
@@ -69,9 +65,7 @@ class Creature {
 
     private getDescriptions(data: any): Description[] | null {
         const entries = data['entries'] || null;
-        if (!entries) {
-            return null;
-        }
+        if (!entries) return null;
 
         const filteredEntries = this.filterEntries(entries);
         const parsedDescriptions = parseDescriptions('', filteredEntries, this.url());
@@ -79,21 +73,10 @@ class Creature {
         let totalTextLength = 0;
         parsedDescriptions.forEach((desc) => {
             const textLower = desc.text.toLowerCase();
-            if (textLower.startsWith('\`\`\`')) {
-                return; // Ignore tables
-            }
-
-            if (textLower.toLowerCase().includes(' table ')) {
-                return; // Ignore tables
-            }
-
-            if (textLower.toLowerCase().includes('stat block')) {
-                return; // Ignore stat-related entries
-            }
-
-            if (textLower.length > 1024 || totalTextLength > 1024) {
-                return; // Limit length
-            }
+            if (textLower.startsWith('\`\`\`')) return; // Ignore tables
+            if (textLower.toLowerCase().includes(' table ')) return; // Ignore tables
+            if (textLower.toLowerCase().includes('stat block')) return; // Ignore stat-related entries
+            if (textLower.length > 1024 || totalTextLength > 1024) return; // Limit length
 
             filteredDescriptions.push(desc);
             totalTextLength = totalTextLength + textLower.length;
@@ -107,18 +90,11 @@ class Creature {
         let filteredEntries: any[] = [];
 
         entries.forEach((entry: any) => {
-            if (entry['type'] !== 'entries') {
-                return; // Only 'entries' hold information we'd want to use.
-            }
-
-            if (entry['name']) {
-                return; // Entries with names generally refer to races and books, not of use to us.
-            }
+            if (entry['type'] !== 'entries') return; // Only 'entries' hold information we'd want to use.
+            if (entry['name']) return; // Entries with names generally refer to races and books, not of use to us.
 
             filteredEntries.push(entry);
-            if (filteredEntries.length >= 2) {
-                return; // Generally the first two entries are the actual descriptions of a creature.
-            }
+            if (filteredEntries.length >= 2) return; // Generally the first two entries are the actual descriptions of a creature.
         });
 
         return filteredEntries;
@@ -129,9 +105,7 @@ class Creature {
     }
 
     inheritFrom(parent: Creature) {
-        if (!this.parentKey) {
-            return;
-        }
+        if (!this.parentKey) return;
 
         if (this.isFluff()) {
             this.description = this.description ?? parent.description;
@@ -147,9 +121,7 @@ class Creature {
     }
 
     tokenUrl() {
-        if (!this.hasToken) {
-            return null;
-        }
+        if (!this.hasToken) return null;
 
         const url = `https://5e.tools/img/bestiary/tokens/${this.source}/${this.name}.webp`;
         return cleanUrl(url);
@@ -198,15 +170,14 @@ export function getCreatures(): JsonCreature[] {
             visited.add(current.parentKey);
             const parent = creaturesMap[current.parentKey];
             if (!parent) break;
+
             current.inheritFrom(parent);
             current = parent;
         }
     }
 
     (Object.values(fluffCreatures) as Creature[]).forEach((creature: Creature) => {
-        if (!creature.parentKey) {
-            return;
-        }
+        if (!creature.parentKey) return;
         recursivelyInherit(creature, fluffCreatures);
     });
 

@@ -487,9 +487,7 @@ export function parseCreatureTypes(creature_type: string | any): string {
         creature_type = creature_type.type;
     }
 
-    if (typeof creature_type === 'string') {
-        return creature_type;
-    }
+    if (typeof creature_type === 'string') return creature_type;
 
     if (creature_type?.choose) {
         const types = formatWordList(creature_type.choose);
