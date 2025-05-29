@@ -23,9 +23,7 @@ export function getImageUrl(path: string): string {
     return `https://5e.tools/img/${path}`;
 }
 
-export function cleanUrl(url: string): string {
-    return encodeURI(url);
-}
+export const cleanUrl = encodeURI;
 
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Note: all regexes should end with a g, which stands for "global"
@@ -302,7 +300,7 @@ function parseDescriptionBlock(description: any): string {
             return points.join('\n');
         }
         case 'inset':
-        case 'insetReadalout': {
+        case 'insetReadaloud': {
             return `*${parseDescriptionBlockFromBlocks(description.entries)}*`;
         }
         case 'item': {
@@ -355,6 +353,11 @@ function parseTableValue(value: any): string {
             }
             throw `Unsupported table value cell-type ${value.type}`;
         }
+
+        if (value.type == 'entries') {
+            return 'TODO - ADD TABLE ENTRIES SUPPORT';
+        }
+
         throw `Unsupported table value-type: '${value.type}'`;
     } else {
         // Primitive value
@@ -442,8 +445,78 @@ export function parseDescriptions(
     return cleaned;
 }
 
-/*
+/**
+ * Formats an array of strings into a human-readable list.
+ * Example: ['A', 'B'] => "A or B", ['A', 'B', 'C'] => "A, B, or C"
+ */
+export function formatWordList(words: string[], useAndInsteadOfOr: boolean = false): string {
+    const concat = useAndInsteadOfOr ? 'and' : 'or';
+    const capitalized = words.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+    const length = capitalized.length;
 
+    if (length > 2) {
+        return (
+            capitalized.slice(0, -1).join(', ') +
+            `, ${concat} ` +
+            capitalized[capitalized.length - 1]
+        );
+    } else if (length === 2) {
+        return capitalized.join(` ${concat} `);
+    } else if (length === 1) {
+        return capitalized[0];
+    } else {
+        return '';
+    }
+}
+
+export function parseSizes(sizes: string[]): string {
+    const sizeMap = new Map<string, string>([
+        ['T', 'Tiny'],
+        ['S', 'Small'],
+        ['M', 'Medium'],
+        ['L', 'Large'],
+        ['H', 'Huge'],
+        ['G', 'Gargantuan'],
+    ]);
+
+    const words: string[] = [];
+    for (const size of sizes) {
+        const word = sizeMap.get(size);
+        if (word) {
+            words.push(word);
+        } else {
+            throw `parseSizes: Could not parse size '${size}'`;
+        }
+    }
+
+    return formatWordList(words);
+}
+
+export function parseCreatureTypes(creature_type: string | any): string {
+    while (typeof creature_type === 'object' && creature_type?.type) {
+        creature_type = creature_type.type;
+    }
+
+    if (typeof creature_type === 'string') return creature_type;
+
+    if (creature_type?.choose) {
+        const types = formatWordList(creature_type.choose);
+        if (creature_type.tags?.length) {
+            const tagText = creature_type.tags.join(' ');
+            return `${types} (${tagText})`;
+        }
+        return types;
+    }
+
+    throw `parseCreatureTypes: Unrecognized format: ${JSON.stringify(creature_type)}`;
+}
+
+export function parseCreatureSummonSpell(spell: string): string {
+    if (!spell) return '';
+    return spell.split('|', 1)[0];
+}
+
+/*
 def parse_item_value(value: int) -> str | None:
     if value == 0:
         return None
@@ -476,68 +549,5 @@ def parse_item_weight(weight: int) -> str | None:
         return f"{weight*16} oz."
     else:
         return f"{weight} lb."
-
-def format_words_list(words: list) -> str:
-    """Formats a list of words into comma-separated text. Example: [A, B] => "A or B" / [A, B, C] => "A, B, or C"""
-    words = [word.title() for word in words]
-
-    if len(words) == 2:
-        return ' or '.join(words)
-    elif len(words) > 2:
-        return ', '.join(words[:-1]) + f", or {words[-1]}"
-    elif len(words) == 1:
-        return words[0]
-    else:
-        return ""
-
-def parse_creature_size(sizes: any) -> str:
-    size_map = {
-        "T": "Tiny",
-        "S": "Small",
-        "M": "Medium",
-        "L": "Large",
-        "H": "Huge",
-        "G": "Gargantuan"
-    }
-
-    # Good reference creature is Animated Object
-    words = []
-    for size in sizes:
-        word = size_map.get(size, None)
-        if word:
-            words.append(word)
-
-    return format_words_list(words)
-
-def parse_creature_type(creature_type: str | dict) -> str:
-    if isinstance(creature_type, dict):
-        type = creature_type.get("type", "")
-
-        if isinstance(type, dict):
-            # Edge case where type can be multiple types (eg. Otherworldly Steed)
-            choices = type.get("choose", "")
-            type = format_words_list(choices)
-        else:
-            type = type.title()
-
-        tags = creature_type.get("tags", None)
-        if tags:
-            tag_list = [t if isinstance(t, str) else t.get("name", "") for t in tags]
-            tags = ' '.join(tag_list).title()
-        else:
-            tags = None
-            
-        return f"{type} ({tags})" if tags else type
-    return creature_type.title() if creature_type else ""
-
-def parse_creature_summon_spell(spell: str | None) -> str | None:
-    if spell is None:
-        return None
-
-    if "|" in spell:
-        name, source = spell.split("|", 1)
-        return name
-    else:
-        return spell
 
 */
