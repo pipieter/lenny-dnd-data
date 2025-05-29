@@ -78,7 +78,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@reward ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@recharge}/g, '');
     text = text.replaceAll(/\{@recharge ([^\}]*?)}/g, '');
-    text = text.replaceAll(/\{@adventure ([^\}]*?)}/g, '$1');
+    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
