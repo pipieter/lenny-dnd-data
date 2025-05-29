@@ -39,13 +39,10 @@ class Creature {
         if (isFluff) {
             const entries = data['entries'] || null;
             if (entries) {
-                this.description = parseDescriptions('', entries, this.url());
+                this.description = parseDescriptions('', this.filterEntries(entries), this.url());
             }
         } else {
-            const size = parseSizes(data['size'] || '');
-            const type = parseCreatureTypes(data['type'] || '');
-            // TODO ALIGNMENT SUPPORT
-            this.subtitle = size + ' ' + type;
+            this.subtitle = this.getSubtitle(data);
             this.summonedBySpell = parseCreatureSummonSpell(data['summonedBySpell'] || '');
             this.hasToken = data['hasToken'] || false;
         }
@@ -54,6 +51,43 @@ class Creature {
         if (_copy) {
             this.parentKey = getKey(_copy['name'], _copy['source']);
         }
+    }
+
+    private getSubtitle(data: any): string | null {
+        const sizeData = data['size'];
+        const typeData = data['type'];
+
+        const size = sizeData ? parseSizes(sizeData) : null;
+        const type = typeData ? parseCreatureTypes(typeData) : null;
+
+        if (!size && !type) {
+            return null;
+        }
+
+        const text = size + ' ' + type;
+        return text.trim();
+    }
+
+    private filterEntries(entries: any[]): any[] {
+        // Creatures generally have way too many entries, impacting performance heavily. We pre-cut entries we may not need.
+        let filteredEntries: any[] = [];
+
+        entries.forEach((entry: any) => {
+            if (entry['type'] !== 'entries') {
+                return; // Only 'entries' hold information we'd want to use.
+            }
+
+            if (entry['name']) {
+                return; // Entries with names are generally not directly related to the creature, but rather to a book or it's race.
+            }
+
+            filteredEntries.push(entry);
+            if (filteredEntries.length >= 2) {
+                return; // Limit to 2 entries max, generally the first two entries are actual descriptions of a creature.
+            }
+        });
+
+        return filteredEntries;
     }
 
     mergeWithFluff(fluffCreature: Creature) {
@@ -102,7 +136,6 @@ function loadCreaturesFromIndex(loadFluff: boolean): any {
     let creatures: { [key: string]: Creature } = {};
     for (const [source, sourceIndexFile] of Object.entries(indexData)) {
         const path = BASEPATH + sourceIndexFile;
-        console.log('###### ' + path + ' ######');
         const data = readJsonFile(path);
 
         if (!data[monsterKey]) {
@@ -113,7 +146,6 @@ function loadCreaturesFromIndex(loadFluff: boolean): any {
         data[monsterKey].forEach((creatureData: any) => {
             const creature = new Creature(creatureData, loadFluff);
             const key = getKey(creature.name, creature.source);
-            console.log('- ' + key);
             creatures[key] = creature;
         });
     }
@@ -125,25 +157,28 @@ export function getCreatures(): JsonCreature[] {
     const creatures = loadCreaturesFromIndex(false);
     const fluffCreatures = loadCreaturesFromIndex(true);
 
+    function recursivelyInherit(creature: Creature, creaturesMap: { [key: string]: Creature }) {
+        let current = creature;
+        const visited = new Set<string>();
+        while (current.parentKey && !visited.has(current.parentKey)) {
+            visited.add(current.parentKey);
+            const parent = creaturesMap[current.parentKey];
+            if (!parent) break;
+            current.inheritFrom(parent);
+            current = parent;
+        }
+    }
+
     (Object.values(fluffCreatures) as Creature[]).forEach((creature: Creature) => {
-        console.log('- fluff inherit - ' + getKey(creature.name, creature.source));
         if (!creature.parentKey) {
             return;
         }
-
-        const parent = creatures[creature.parentKey ?? ''];
-        if (parent) creature.inheritFrom(parent);
+        recursivelyInherit(creature, fluffCreatures);
     });
 
     let creatureList: JsonCreature[] = [];
     (Object.values(creatures) as Creature[]).forEach((creature: Creature) => {
-        console.log('- base inherit - ' + getKey(creature.name, creature.source));
-        if (!creature.parentKey) {
-            return;
-        }
-
-        const parent = creatures[creature.parentKey ?? ''];
-        if (parent) creature.inheritFrom(parent);
+        recursivelyInherit(creature, creatures);
 
         const key = getKey(creature.name, creature.source);
         const fluffCreature = fluffCreatures[key];
@@ -160,5 +195,6 @@ export function getCreatures(): JsonCreature[] {
         });
     });
 
+    console.log(creatureList.length + ' creatures parsed.');
     return creatureList;
 }
