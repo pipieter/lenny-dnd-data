@@ -26,8 +26,10 @@ export function getImageUrl(path: string): string {
 export const cleanUrl = encodeURI;
 
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
-    // Note: all regexes should end with a g, which stands for "global"
+    // Filtered out first, these often appear within other brackets so should be handled first.
+    text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
 
+    // Note: all regexes should end with a g, which stands for "global"
     text = text.replaceAll(/\{@atk rw\} /g, '+');
     text = text.replaceAll(/\{@atk rw\}/g, '+');
     text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -74,6 +76,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@table ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@variantrule ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@variantrule ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@reward ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@recharge}/g, '');
+    text = text.replaceAll(/\{@recharge ([^\}]*?)}/g, '');
+    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
@@ -92,6 +98,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
@@ -109,14 +116,28 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '*$3*');
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(
+            /\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2, p3) =>
+                `[${p3}](${cleanUrl(`https://5e.tools/backgrounds.html#${p1}_${p2}`)})`
+        );
     }
 
     // Note: notes should be parsed at the end, because they might contain subqueries
     text = text.replaceAll(/\{@note ([^\}]*?)\}/g, '\($1\)');
 
+    // Fix Bree-Yarking (normalizes discord italic/bold formatting)
+    text = text.replace(/\*{4}([^\*]*?)\*{3}/g, '***$1**');
+
     // Check if any remaining patterns of {@...} exist
     if (/^.*\{@.*\}.*$/g.test(text)) {
         throw `{@...} pattern found in '${text}'`;
+    }
+    if (text.includes('{')) {
+        throw `Unmatched '{' character found in '${text}'`;
+    }
+    if (text.includes('}')) {
+        throw `Unmatched '}' character found in '${text}'`;
     }
 
     return text;
@@ -301,7 +322,8 @@ function parseDescriptionBlock(description: any): string {
         }
         case 'inset':
         case 'insetReadaloud': {
-            return `*${parseDescriptionBlockFromBlocks(description.entries)}*`;
+            let text = `*${parseDescriptionBlockFromBlocks(description.entries)}*`;
+            return cleanDNDText(text);
         }
         case 'item': {
             const entries: string[] = [];
@@ -313,14 +335,14 @@ function parseDescriptionBlock(description: any): string {
                 throw "Could not find entry in description block with type 'item'";
             }
             const entry = entries.join('\n');
-            return `**${description.name}**: ${entry}`;
+            return cleanDNDText(`**${description.name}**: ${entry}`);
         }
         case 'section':
         case 'entries': {
             const entries = description.entries.map(parseDescriptionBlock);
-            const entry = entries.join('\n');
-            if (description.name) return `**${description.name}**: ${entry}`;
-            return entry;
+            let entry = entries.join('\n');
+            if (description.name) return cleanDNDText(`**${description.name}**: ${entry}`);
+            return cleanDNDText(entry);
         }
         case 'entry': {
             return cleanDNDText(description.entry);
@@ -332,6 +354,15 @@ function parseDescriptionBlock(description: any): string {
         }
         case 'image': {
             return ''; // Images will not be handled within descriptions
+        }
+        case 'abilityDc': {
+            return ''; // Not handled yet
+        }
+        case 'abilityAttackMod': {
+            return ''; // Not handled yet
+        }
+        case 'refClassFeature': {
+            return ''; // Not handled yet
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;
