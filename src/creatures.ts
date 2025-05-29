@@ -80,19 +80,19 @@ class Creature {
         parsedDescriptions.forEach((desc) => {
             const textLower = desc.text.toLowerCase();
             if (textLower.startsWith('\`\`\`')) {
-                return;
+                return; // Ignore tables
             }
 
             if (textLower.toLowerCase().includes(' table ')) {
-                return;
+                return; // Ignore tables
             }
 
             if (textLower.toLowerCase().includes('stat block')) {
-                return;
+                return; // Ignore stat-related entries
             }
 
             if (textLower.length > 1024 || totalTextLength > 1024) {
-                return;
+                return; // Limit length
             }
 
             filteredDescriptions.push(desc);
