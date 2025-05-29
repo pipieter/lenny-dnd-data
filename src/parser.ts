@@ -483,21 +483,21 @@ export function parseSizes(sizes: string[]): string {
 }
 
 export function parseCreatureTypes(creature_type: string | any): string {
-    if (typeof creature_type == 'string') {
+    while (typeof creature_type === 'object' && creature_type?.type) {
+        creature_type = creature_type.type;
+    }
+
+    if (typeof creature_type === 'string') {
         return creature_type;
     }
 
-    if (creature_type.choose) {
+    if (creature_type?.choose) {
         const types = formatWordList(creature_type.choose);
         if (creature_type.tags?.length) {
             const tagText = creature_type.tags.join(' ');
             return `${types} (${tagText})`;
         }
         return types;
-    }
-
-    if (creature_type.type) {
-        return creature_type.type;
     }
 
     throw new Error(`parseCreatureTypes: Unrecognized format: ${JSON.stringify(creature_type)}`);
