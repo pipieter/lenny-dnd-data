@@ -26,14 +26,15 @@ export function getImageUrl(path: string): string {
 export const cleanUrl = encodeURI;
 
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
-    // Note: all regexes should end with a g, which stands for "global"
+    // Filtered out first, these often appear within other brackets so should be handled first.
+    text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
 
+    // Note: all regexes should end with a g, which stands for "global"
     text = text.replaceAll(/\{@atk rw\} /g, '+');
     text = text.replaceAll(/\{@atk rw\}/g, '+');
     text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@action ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
-    text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -125,6 +126,9 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Note: notes should be parsed at the end, because they might contain subqueries
     text = text.replaceAll(/\{@note ([^\}]*?)\}/g, '\($1\)');
 
+    // Fix Bree-Yarking (normalizes discord italic/bold formatting)
+    text = text.replace(/\*{4}([^\*]*?)\*{3}/g, '***$1**');
+
     // Check if any remaining patterns of {@...} exist
     if (/^.*\{@.*\}.*$/g.test(text)) {
         throw `{@...} pattern found in '${text}'`;
@@ -136,15 +140,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         throw `Unmatched '}' character found in '${text}'`;
     }
 
-    return text;
-}
-
-/**
- * Ensures Discord-style bold/italic formatting is correct.
- * Fixes cases where four asterisks are used instead of the correct three for bold+italic. (Bree-Yark Incident)
- */
-function normalizeDiscordFormatting(text: string): string {
-    text = text.replace(/\*{4}([^\*]*?)\*{3}/g, '***$1**');
     return text;
 }
 
@@ -328,8 +323,7 @@ function parseDescriptionBlock(description: any): string {
         case 'inset':
         case 'insetReadaloud': {
             let text = `*${parseDescriptionBlockFromBlocks(description.entries)}*`;
-            text = normalizeDiscordFormatting(text);
-            return text;
+            return cleanDNDText(text);
         }
         case 'item': {
             const entries: string[] = [];
@@ -341,15 +335,14 @@ function parseDescriptionBlock(description: any): string {
                 throw "Could not find entry in description block with type 'item'";
             }
             const entry = entries.join('\n');
-            return `**${description.name}**: ${entry}`;
+            return cleanDNDText(`**${description.name}**: ${entry}`);
         }
         case 'section':
         case 'entries': {
             const entries = description.entries.map(parseDescriptionBlock);
             let entry = entries.join('\n');
-            if (description.name)
-                return normalizeDiscordFormatting(`**${description.name}**: ${entry}`);
-            return entry;
+            if (description.name) return cleanDNDText(`**${description.name}**: ${entry}`);
+            return cleanDNDText(entry);
         }
         case 'entry': {
             return cleanDNDText(description.entry);
