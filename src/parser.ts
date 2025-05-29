@@ -74,6 +74,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@table ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@variantrule ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@variantrule ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@reward ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@recharge}/g, '');
+    text = text.replaceAll(/\{@recharge ([^\}]*?)}/g, '');
+    text = text.replaceAll(/\{@adventure ([^\}]*?)}/g, '$1');
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
@@ -92,6 +96,9 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@style ([^\}]*?)\|small-caps\*\*\}/g, '$1');
+        text = text.replaceAll(/\{@style ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
@@ -109,6 +116,13 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '*$3*');
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@style ([^\}]*?)\|small-caps\*\*\}/g, '*$1*');
+        text = text.replaceAll(/\{@style ([^\}]*?)\|small-caps}/g, '*$1*');
+        text = text.replaceAll(
+            /\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2, p3) =>
+                `[${p3}](${cleanUrl(`https://5e.tools/backgrounds.html#${p1}_${p2}`)})`
+        );
     }
 
     // Note: notes should be parsed at the end, because they might contain subqueries
@@ -332,6 +346,15 @@ function parseDescriptionBlock(description: any): string {
         }
         case 'image': {
             return ''; // Images will not be handled within descriptions
+        }
+        case 'abilityDc': {
+            return ''; // Not handled yet
+        }
+        case 'abilityAttackMod': {
+            return ''; // Not handled yet
+        }
+        case 'refClassFeature': {
+            return ''; // Not handled yet
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;
