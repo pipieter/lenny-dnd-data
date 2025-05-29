@@ -229,6 +229,5 @@ export function getCreatures(): JsonCreature[] {
         });
     });
 
-    console.log(creatureList.length + ' creatures parsed.');
     return creatureList;
 }
