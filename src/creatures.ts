@@ -43,7 +43,9 @@ class Creature {
             }
         } else {
             this.subtitle = this.getSubtitle(data);
-            this.summonedBySpell = parseCreatureSummonSpell(data['summonedBySpell'] || '');
+            this.summonedBySpell = data['summonedBySpell']
+                ? parseCreatureSummonSpell(data['summonedBySpell'])
+                : null;
             this.hasToken = data['hasToken'] || false;
         }
 
@@ -78,12 +80,12 @@ class Creature {
             }
 
             if (entry['name']) {
-                return; // Entries with names are generally not directly related to the creature, but rather to a book or it's race.
+                return; // Entries with names generally refer to races and books, not of use to us.
             }
 
             filteredEntries.push(entry);
             if (filteredEntries.length >= 2) {
-                return; // Limit to 2 entries max, generally the first two entries are actual descriptions of a creature.
+                return; // Generally the first two entries are the actual descriptions of a creature.
             }
         });
 
