@@ -129,7 +129,22 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     if (/^.*\{@.*\}.*$/g.test(text)) {
         throw `{@...} pattern found in '${text}'`;
     }
+    if (text.includes('{')) {
+        throw `Unmatched '{' character found in '${text}'`;
+    }
+    if (text.includes('}')) {
+        throw `Unmatched '}' character found in '${text}'`;
+    }
 
+    return text;
+}
+
+/**
+ * Ensures Discord-style bold/italic formatting is correct.
+ * Fixes cases where four asterisks are used instead of the correct three for bold+italic. (Bree-Yark Incident)
+ */
+function normalizeDiscordFormatting(text: string): string {
+    text = text.replace(/\*{4}([^\*]*?)\*{3}/g, '***$1**');
     return text;
 }
 
@@ -312,7 +327,9 @@ function parseDescriptionBlock(description: any): string {
         }
         case 'inset':
         case 'insetReadaloud': {
-            return `*${parseDescriptionBlockFromBlocks(description.entries)}*`;
+            let text = `*${parseDescriptionBlockFromBlocks(description.entries)}*`;
+            text = normalizeDiscordFormatting(text);
+            return text;
         }
         case 'item': {
             const entries: string[] = [];
@@ -329,8 +346,9 @@ function parseDescriptionBlock(description: any): string {
         case 'section':
         case 'entries': {
             const entries = description.entries.map(parseDescriptionBlock);
-            const entry = entries.join('\n');
-            if (description.name) return `**${description.name}**: ${entry}`;
+            let entry = entries.join('\n');
+            if (description.name)
+                return normalizeDiscordFormatting(`**${description.name}**: ${entry}`);
             return entry;
         }
         case 'entry': {
