@@ -4,6 +4,11 @@ import os.path
 
 DataBank = dict[str, list[dict]]
 
+def get_key(name: str, source: str, sub_name: str | None = None, sub_source: str | None = None):
+    key = f"{name.title()} ({source.upper()})"
+    if sub_name and sub_source:
+        return f"{key} | {sub_name.title()} ({sub_source.upper()})"
+    return key
 
 def get_image_url(path: str) -> str:
     return f"https://5e.tools/img/{path}"

@@ -22,6 +22,15 @@ SPELL_SCHOOLS = {
     "T": "Transmutation",
 }
 
+ABILITY_SCORES = {
+    "str": "Strength",
+    "dex": "Dexterity",
+    "con": "Constitution",
+    "int": "Intelligence",
+    "wis": "Wisdom",
+    "cha": "Charisma",
+}
+
 
 def clean_dnd_text(text: str, no_formatting=False) -> str:
     text = re.sub(r"\{@atk rw\} ", r"+", text)
@@ -90,6 +99,8 @@ def clean_dnd_text(text: str, no_formatting=False) -> str:
         text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"\3", text)
         text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\}", r"\1", text)
         text = re.sub(r"\{@status ([^\}]*?)\}", r"\1", text)
+        text = re.sub(r"\{@feat ([^\|}]+)\|([^\}]+)\}", r"\1 (\2)", text)
+        text = re.sub(r"\{@5etools ([^\|}]+)\|([^\}]+)\}", r"\1", text)
     else:
         text = re.sub(r"\{@h\}", r"*Hit:* ", text)
         text = re.sub(r"\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"__\3__", text)
@@ -107,6 +118,8 @@ def clean_dnd_text(text: str, no_formatting=False) -> str:
         text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}", r"*\3*", text)
         text = re.sub(r"\{@status ([^\}]*?)\|([^\}]*?)\}", r"*\1*", text)
         text = re.sub(r"\{@status ([^\}]*?)\}", r"*\1*", text)
+        text = re.sub(r"\{@feat ([^\|}]+)\|([^\}]+)\}", r"__\1 (\2)__", text)
+        text = re.sub(r"\{@5etools ([^\|}]+)\|([^\}]+)\}", r"[\1](https://5e.tools/\2)", text)
 
     # Note: notes should be parsed at the end, because they might contain subqueries
     text = re.sub(r"\{@note ([^\}]*?)\}", r"\(\1\)", text)
@@ -140,6 +153,8 @@ def parse_spell_level(level: int) -> str:
 def parse_spell_school(school: str) -> str:
     return SPELL_SCHOOLS[school]
 
+def parse_ability_score(score: str) -> str:
+    return ABILITY_SCORES[score.lower()]
 
 def __parse_single_casting_time(time: any) -> str:
     amount = time["number"]
@@ -340,6 +355,27 @@ def __parse_description_block(description: any) -> str:
             entries = "\n".join(entries)
             
             return entries
+        
+        case "abilityDc":
+            return f"Unsupported type: {type}" # TODO
+
+        case "abilityAttackMod":
+            return f"Unsupported type: {type}" # TODO
+
+        case "refClassFeature":
+            return f"Unsupported type: {type}" # TODO
+
+        case "options":
+            return f"Unsupported type: {type}" # TODO
+
+        case "refFeat":
+            return f"Unsupported type: {type}" # TODO
+
+        case "refSubclassFeature": # Artificer
+            return f"Unsupported type: {type}" # TODO
+
+        case "statblock": # Druid
+            return f"Unsupported type: {type}" # TODO
 
     raise NotImplementedError(f"Unsupported description type: '{description['type']}'")
 
@@ -351,7 +387,7 @@ def __parse_description_block_from_blocks(descriptions: list[any]) -> str:
 
 def __parse_table_value(value: any) -> str:
     if isinstance(value, str):
-        return clean_dnd_text(value)
+        return clean_dnd_text(value, True)
     elif isinstance(value, dict):
         if value.get("type") == "cell":
             # Should be improved
@@ -410,7 +446,7 @@ def __parse_description_from_table(
     description: any, fallbackUrl: str
 ) -> tuple[str, str]:
     caption = description.get("caption", "")
-    labels = [clean_dnd_text(label) for label in description["colLabels"]]
+    labels = [clean_dnd_text(label, True) for label in description["colLabels"]]
     rows = [[__parse_table_value(v) for v in row] for row in description["rows"]]
 
     table = __prettify_table(caption, [labels] + rows, fallbackUrl)
@@ -489,14 +525,14 @@ def parse_item_weight(weight: int) -> str | None:
     else:
         return f"{weight} lb."
 
-def format_words_list(words: list) -> str:
+def format_words_list(words: list, conjunction: str = "or") -> str:
     """Formats a list of words into comma-separated text. Example: [A, B] => "A or B" / [A, B, C] => "A, B, or C"""
     words = [word.title() for word in words]
 
     if len(words) == 2:
-        return ' or '.join(words)
+        return f' {conjunction} '.join(words)
     elif len(words) > 2:
-        return ', '.join(words[:-1]) + f", or {words[-1]}"
+        return ', '.join(words[:-1]) + f", {conjunction} {words[-1]}"
     elif len(words) == 1:
         return words[0]
     else:
