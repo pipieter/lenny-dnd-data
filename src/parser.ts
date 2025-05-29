@@ -475,7 +475,7 @@ export function parseSizes(sizes: string[]): string {
         if (word) {
             words.push(word);
         } else {
-            throw new Error(`parseSizes: Could not parse size '${size}'`);
+            throw `parseSizes: Could not parse size '${size}'`;
         }
     }
 
@@ -500,7 +500,7 @@ export function parseCreatureTypes(creature_type: string | any): string {
         return types;
     }
 
-    throw new Error(`parseCreatureTypes: Unrecognized format: ${JSON.stringify(creature_type)}`);
+    throw `parseCreatureTypes: Unrecognized format: ${JSON.stringify(creature_type)}`;
 }
 
 export function parseCreatureSummonSpell(spell: string): string {
