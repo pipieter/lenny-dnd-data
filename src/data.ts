@@ -1,4 +1,5 @@
 import { existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
+import { title } from './parser';
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -6,7 +7,7 @@ export function readJsonFile(path: string): any {
 }
 
 export function getKey(name: string, source: string): string {
-    return `${name.toLowerCase()} (${source.toUpperCase()})`;
+    return `${title(name)} (${source.toUpperCase()})`;
 }
 
 function ignoreJsonFile(path: string): boolean {

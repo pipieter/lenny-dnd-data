@@ -19,8 +19,34 @@ const SpellSchools = new Map([
     ['T', 'Transmutation'],
 ]);
 
+const ABILITY_SCORES = new Map<string, string>([
+    ['str', 'Strength'],
+    ['dex', 'Dexterity'],
+    ['con', 'Constitution'],
+    ['int', 'Intelligence'],
+    ['wis', 'Wisdom'],
+    ['cha', 'Charisma'],
+]);
+
 export function getImageUrl(path: string): string {
     return `https://5e.tools/img/${path}`;
+}
+
+export enum Page {
+    Class = 'classes.html#',
+    // TODO MIGRATE ALL LINKS TO HERE
+}
+
+export function get5etoolsUrl(
+    page: Page,
+    name: string | null = null,
+    source: string | null = null
+) {
+    if ((name && !source) || (!name && source)) throw 'Must specify both name & source for url.';
+
+    const base = `https://5e.tools/${page}`;
+    const query = name && source ? `${name}_${source}`.toLowerCase() : '';
+    return cleanUrl(base + query);
 }
 
 export const cleanUrl = encodeURI;
@@ -80,6 +106,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@recharge}/g, '');
     text = text.replaceAll(/\{@recharge ([^\}]*?)}/g, '');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(
+        /\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+        `$3`
+    );
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
@@ -99,6 +129,17 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
+        text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@feat ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(
+            /\{@subclassFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            `$1`
+        );
+        text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `$1`);
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
@@ -117,10 +158,32 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(
+            /\{@5etools ([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2) => `[${p1}](${cleanUrl(`https://5e.tools/${p2}`.toLowerCase())})`
+        );
+        text = text.replaceAll(
             /\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2, p3) =>
-                `[${p3}](${cleanUrl(`https://5e.tools/backgrounds.html#${p1}_${p2}`)})`
+                `[${p3}](${cleanUrl(`https://5e.tools/backgrounds.html#${p1}_${p2}`.toLowerCase())})`
         );
+        text = text.replaceAll(
+            /\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2, p3) =>
+                `[${p3}](${cleanUrl(`https://5e.tools/objects.html#${p1}_${p2}`.toLowerCase())})`
+        );
+        text = text.replaceAll(
+            /\{@feat ([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2) =>
+                `[${p1}](${cleanUrl(`https://5e.tools/feats.html#${p1}_${p2}`).toLowerCase()})`
+        );
+        text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(
+            /\{@subclassFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            `__$1__`
+        );
+        text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `__$1__`);
     }
 
     // Note: notes should be parsed at the end, because they might contain subqueries
@@ -167,6 +230,15 @@ export function parseSpellSchool(school: string): string {
         throw `Unsupported spell school: '${school}'`;
     }
     return parsed;
+}
+
+export function parseAbilityScore(score: string): string {
+    const key = score.toLowerCase();
+    const value = ABILITY_SCORES.get(key);
+    if (!value) {
+        return score;
+    }
+    return value;
 }
 
 function parseSingleCastingTime(time: any): string {
@@ -355,14 +427,85 @@ function parseDescriptionBlock(description: any): string {
         case 'image': {
             return ''; // Images will not be handled within descriptions
         }
+        case 'abilityAttackMod':
         case 'abilityDc': {
-            return ''; // Not handled yet
-        }
-        case 'abilityAttackMod': {
-            return ''; // Not handled yet
+            const titleDesc = description.type === 'abilityDc' ? 'Save DC' : 'Attack modifier';
+
+            const abilityScores = description['attributes'].map((attribute: any) =>
+                parseAbilityScore(attribute)
+            );
+            const text = `\u2022 *${description.name} ${titleDesc}:* ${formatWordList(abilityScores)} modifier + Proficiency Bonus`;
+            return text;
         }
         case 'refClassFeature': {
-            return ''; // Not handled yet
+            // classFeature is a string like "Sorcery Points|Sorcerer||2"
+            const classFeature = description['classFeature'];
+            if (typeof classFeature === 'string') {
+                const [name, , , value] = classFeature.split('|');
+                if (value && name) {
+                    return `\u2022 **${value}** ${name}`;
+                }
+                return name || classFeature;
+            }
+
+            throw `Unsupported refClassFeature ${classFeature}`;
+        }
+        case 'refSubclassFeature': {
+            const classFeature = description['subclassFeature'];
+            if (typeof classFeature === 'string') {
+                const [name, , , , , value] = classFeature.split('|');
+                if (value && name) {
+                    return `\u2022 **${value}** ${name}`;
+                }
+                return name || classFeature;
+            }
+            throw `Unsupported refSubclassFeature ${classFeature}`;
+        }
+        case 'refOptionalfeature': {
+            let optionalFeature = description['optionalfeature'];
+
+            if (optionalFeature.includes('|')) {
+                const [name, source] = optionalFeature.split('|');
+                optionalFeature = `${name} (${source})`;
+            }
+
+            return optionalFeature;
+        }
+        case 'options': {
+            const entries: string[] = [];
+            const count = description['count'];
+            if (description.entries) {
+                entries.push(...description.entries.map(parseDescriptionBlock));
+            }
+
+            const title = count ? `Choose **${count}:**\n` : '';
+            return `${title}${entries.join('\n ')}`;
+        }
+        case 'statblock': {
+            const tag = description.tag;
+            const name = description.name;
+            const source = description.source;
+            let link = `https://5e.tools/`;
+            switch (tag) {
+                case 'item':
+                    link += `${tag}s.html`;
+                    break;
+                case 'creature':
+                    link += 'bestiary.html';
+                    break;
+                default:
+                    throw `Unsupported Stat-block ${tag}`;
+            }
+
+            link += `#${name}_${source}`.toLowerCase();
+            link = cleanUrl(link);
+            return `[See ${name}'s stats here](${link})`;
+        }
+        case 'refFeat': {
+            const feat = description.feat;
+            const [name, source] = feat.split('|');
+            const link = `https://5e.tools/feats.html#${name}_${source}`.toLowerCase();
+            return `\u2022 [${name}](${cleanUrl(link)})`;
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;
@@ -482,7 +625,7 @@ export function parseDescriptions(
  */
 export function formatWordList(words: string[], useAndInsteadOfOr: boolean = false): string {
     const concat = useAndInsteadOfOr ? 'and' : 'or';
-    const capitalized = words.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+    const capitalized = words.map((word) => title(word));
     const length = capitalized.length;
 
     if (length > 2) {
@@ -498,6 +641,17 @@ export function formatWordList(words: string[], useAndInsteadOfOr: boolean = fal
     } else {
         return '';
     }
+}
+
+export function title(text: string): string {
+    return text
+        .split(' ')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+export function capitalize(text: string): string {
+    return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
 export function parseSizes(sizes: string[]): string {
@@ -545,6 +699,34 @@ export function parseCreatureTypes(creature_type: string | any): string {
 export function parseCreatureSummonSpell(spell: string): string {
     if (!spell) return '';
     return spell.split('|', 1)[0];
+}
+
+export function parseClassResourceValue(value: any) {
+    if (typeof value === 'number' || typeof value === 'string') {
+        return value;
+    }
+
+    switch (value.type) {
+        case 'bonus': {
+            value = `+${value.value}`;
+            break;
+        }
+        case 'dice': {
+            const number = value.toRoll[0].number;
+            const faces = value.toRoll[0].faces;
+            value = `${number}d${faces}`;
+            break;
+        }
+        case 'bonusSpeed': {
+            value = `+${value.value} ft.`;
+            break;
+        }
+        default: {
+            throw `Unsupported classTableGroups row-type ${value.type}`;
+        }
+    }
+
+    return value;
 }
 
 /*
