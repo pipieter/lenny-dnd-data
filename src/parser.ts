@@ -19,7 +19,7 @@ const SpellSchools = new Map([
     ['T', 'Transmutation'],
 ]);
 
-const ABILITY_SCORES = new Map<string, string>([
+const AbilityScores = new Map<string, string>([
     ['str', 'Strength'],
     ['dex', 'Dexterity'],
     ['con', 'Constitution'],
@@ -234,7 +234,7 @@ export function parseSpellSchool(school: string): string {
 
 export function parseAbilityScore(score: string): string {
     const key = score.toLowerCase();
-    const value = ABILITY_SCORES.get(key);
+    const value = AbilityScores.get(key);
     if (!value) {
         return score;
     }
