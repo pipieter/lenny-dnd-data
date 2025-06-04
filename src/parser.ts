@@ -1,6 +1,6 @@
 import { execSync } from 'child_process';
 import { readFileSync, writeFileSync } from 'fs';
-import { getPythonInstallation } from './util';
+import { BulletPoint, getNumberSign, getPythonInstallation } from './util';
 
 export interface Description {
     name: string;
@@ -386,10 +386,9 @@ function parseDescriptionBlock(description: any): string {
             return `*${quote}*`;
         }
         case 'list': {
-            const bullet = '\u2022'; // U+2022 •
             const points: string[] = [];
             for (const item of description.items)
-                points.push(`${bullet} ${parseDescriptionBlock(item)}`);
+                points.push(`${BulletPoint} ${parseDescriptionBlock(item)}`);
             return points.join('\n');
         }
         case 'inset':
@@ -431,21 +430,21 @@ function parseDescriptionBlock(description: any): string {
         case 'abilityDc': {
             const titleDesc = description.type === 'abilityDc' ? 'Save DC' : 'Attack modifier';
 
-            const abilityScores = description['attributes'].map((attribute: any) =>
-                parseAbilityScore(attribute)
-            );
-            const text = `\u2022 *${description.name} ${titleDesc}:* ${formatWordList(abilityScores)} modifier + Proficiency Bonus`;
+            const abilityScores = description.attributes.map(parseAbilityScore);
+            const text = `${BulletPoint} *${description.name} ${titleDesc}:* ${formatWordList(abilityScores)} modifier + Proficiency Bonus`;
             return text;
         }
         case 'refClassFeature': {
             // classFeature is a string like "Sorcery Points|Sorcerer||2"
             const classFeature = description['classFeature'];
             if (typeof classFeature === 'string') {
-                const [name, , , value] = classFeature.split('|');
-                if (value && name) {
-                    return `\u2022 **${value}** ${name}`;
+                const parts = classFeature.split('|');
+                if (parts.length >= 4) {
+                    const name = parts[0];
+                    const value = parts[3];
+                    if (value && name) return `${BulletPoint} **${value}** ${name}`;
+                    if (name) return name;
                 }
-                return name || classFeature;
             }
 
             throw `Unsupported refClassFeature ${classFeature}`;
@@ -455,7 +454,7 @@ function parseDescriptionBlock(description: any): string {
             if (typeof classFeature === 'string') {
                 const [name, , , , , value] = classFeature.split('|');
                 if (value && name) {
-                    return `\u2022 **${value}** ${name}`;
+                    return `${BulletPoint} **${value}** ${name}`;
                 }
                 return name || classFeature;
             }
@@ -505,7 +504,7 @@ function parseDescriptionBlock(description: any): string {
             const feat = description.feat;
             const [name, source] = feat.split('|');
             const link = `https://5e.tools/feats.html#${name}_${source}`.toLowerCase();
-            return `\u2022 [${name}](${cleanUrl(link)})`;
+            return `${BulletPoint} [${name}](${cleanUrl(link)})`;
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;
@@ -642,16 +641,12 @@ export function formatWordList(words: string[], useAndInsteadOfOr: boolean = fal
         return '';
     }
 }
-
-export function title(text: string): string {
-    return text
-        .split(' ')
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ');
-}
-
 export function capitalize(text: string): string {
     return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+export function title(text: string): string {
+    return text.split(' ').map(capitalize).join(' ');
 }
 
 export function parseSizes(sizes: string[]): string {
@@ -708,7 +703,8 @@ export function parseClassResourceValue(value: any) {
 
     switch (value.type) {
         case 'bonus': {
-            value = `+${value.value}`;
+            const sign = getNumberSign(value.value, true);
+            value = `${sign}${value.value}`;
             break;
         }
         case 'dice': {
@@ -718,7 +714,8 @@ export function parseClassResourceValue(value: any) {
             break;
         }
         case 'bonusSpeed': {
-            value = `+${value.value} ft.`;
+            const sign = getNumberSign(value.value, true);
+            value = `${sign}${value.value} ft.`;
             break;
         }
         default: {

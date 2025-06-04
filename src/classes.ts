@@ -9,7 +9,9 @@ import {
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
+    title,
 } from './parser';
+import { BulletPoint } from './util';
 
 const BASEPATH = '5etools-src/data/class/';
 
@@ -129,13 +131,13 @@ class CharacterClass {
         this.primaryAbility = formatWordList(orGroups, false);
     }
 
-    private _handleProficiencies(proficiencies: { [type: string]: any }): Description[] {
+    private handleProficiencies(proficiencies: { [type: string]: any }): Description[] {
         const info: Description[] = [];
 
         for (const [type, proficiency] of Object.entries(proficiencies)) {
-            let title = type.charAt(0).toUpperCase() + type.slice(1);
-            if (title.endsWith('s')) {
-                title = title.slice(0, -1);
+            let label = title(type);
+            if (label.endsWith('s')) {
+                label = label.slice(0, -1);
             }
 
             let text = '';
@@ -207,7 +209,7 @@ class CharacterClass {
             }
 
             if (text !== '') {
-                info.push({ name: '', text: `• ${title} Proficiencies: ${text}` });
+                info.push({ name: '', text: `${BulletPoint} ${label} Proficiencies: ${text}` });
             }
         }
         return info;
@@ -227,9 +229,9 @@ class CharacterClass {
             const conMod = 'Con. mod';
 
             const text = [
-                `• HP Die: ${die}`,
-                `• Level 1 ${this.name} HP: \`\`${faces}\`\` + ${conMod}`,
-                `• HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
+                `${BulletPoint} HP Die: ${die}`,
+                `${BulletPoint} Level 1 ${this.name} HP: \`\`${faces}\`\` + ${conMod}`,
+                `${BulletPoint} HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
             ].join('\n');
 
             info.push({ name: 'Health', text: text });
@@ -243,13 +245,13 @@ class CharacterClass {
                 parseAbilityScore(proficiency)
             );
 
-            const text = `• Saving Throw Proficiencies: ${formatWordList(savingProficiencies, true)}`;
+            const text = `${BulletPoint} Saving Throw Proficiencies: ${formatWordList(savingProficiencies, true)}`;
             profData.push({ name: '', text: text });
         }
 
         // startingProficiencies
         if (data['startingProficiencies']) {
-            const startingProficiencies = this._handleProficiencies(data['startingProficiencies']);
+            const startingProficiencies = this.handleProficiencies(data['startingProficiencies']);
             profData.push(...startingProficiencies);
         }
 
@@ -267,7 +269,7 @@ class CharacterClass {
             if (equipment) {
                 let text = [];
                 for (const line of equipment) {
-                    text.push(`• ${capitalize(cleanDNDText(line))}`);
+                    text.push(`${BulletPoint} ${capitalize(cleanDNDText(line))}`);
                 }
 
                 info.push({ name: 'Starting Equipment', text: text.join('\n') });
@@ -295,14 +297,14 @@ class CharacterClass {
                     }
                 }
 
-                let text = `• Ability requirements: At least ${formatWordList(skills, useAnd)}`;
+                let text = `${BulletPoint} Ability requirements: At least ${formatWordList(skills, useAnd)}`;
 
                 multiclassData.push({ name: '', text: text });
             }
 
             const multiclassProficiencies = multiclassing['proficienciesGained'];
             if (multiclassProficiencies) {
-                multiclassData.push(...this._handleProficiencies(multiclassProficiencies));
+                multiclassData.push(...this.handleProficiencies(multiclassProficiencies));
             }
 
             if (multiclassData.length > 0) {
@@ -314,7 +316,7 @@ class CharacterClass {
         this.baseInfo = info;
     }
 
-    private _getSpellLevelResources(data: any): string[] | null {
+    private getSpellLevelResources(data: any): string[] | null {
         // Initialize an array of 20 arrays, one for each level (1-20)
         let spellResources: string[][] = Array.from({ length: 20 }, () => []);
 
@@ -322,7 +324,7 @@ class CharacterClass {
             for (let i = 0; i < data.cantripProgression.length; i++) {
                 const cantripCount = data.cantripProgression[i];
                 if (cantripCount != null) {
-                    spellResources[i].push(`• **${cantripCount}** Cantrips known`);
+                    spellResources[i].push(`${BulletPoint} **${cantripCount}** Cantrips known`);
                 }
             }
         }
@@ -335,7 +337,7 @@ class CharacterClass {
                     ? spellsKnown[i]
                     : spellTotal + spellsKnown[i];
                 if (spellTotal != null) {
-                    spellResources[i].push(`• **${spellTotal}** Spells known`);
+                    spellResources[i].push(`${BulletPoint} **${spellTotal}** Spells known`);
                 }
             }
         }
@@ -344,7 +346,7 @@ class CharacterClass {
             for (let i = 0; i < data.preparedSpellsProgression.length; i++) {
                 const preparedCount = data.preparedSpellsProgression[i];
                 if (preparedCount != null) {
-                    spellResources[i].push(`• **${preparedCount}** Prepared Spells`);
+                    spellResources[i].push(`${BulletPoint} **${preparedCount}** Prepared Spells`);
                 }
             }
         }
@@ -359,7 +361,7 @@ class CharacterClass {
         return result;
     }
 
-    private _getClassResources(data: any): string[] | null {
+    private getClassResources(data: any): string[] | null {
         let classResources: string[] = [];
 
         const classTableGroups = data.classTableGroups;
@@ -373,7 +375,7 @@ class CharacterClass {
 
             for (let level = 0; level < rows.length; level++) {
                 const row = rows[level];
-                const proficiencyBonus = `• **+${2 + Math.floor(level / 4)}** Proficiency Bonus`;
+                const proficiencyBonus = `${BulletPoint} **+${2 + Math.floor(level / 4)}** Proficiency Bonus`;
                 let text: string[] = [proficiencyBonus];
 
                 for (let i = 0; i < row.length; i++) {
@@ -385,7 +387,7 @@ class CharacterClass {
                     if (label.toLowerCase().includes('cantrip')) continue;
 
                     value = parseClassResourceValue(value);
-                    text.push(`• **${value}** ${label}`);
+                    text.push(`${BulletPoint} **${value}** ${label}`);
                 }
 
                 classResources.push(text.join('\n'));
@@ -396,8 +398,8 @@ class CharacterClass {
     }
 
     private setLevelResources(data: any) {
-        const spellResources = this._getSpellLevelResources(data);
-        const classResources = this._getClassResources(data);
+        const spellResources = this.getSpellLevelResources(data);
+        const classResources = this.getClassResources(data);
 
         if (!spellResources && !classResources) this.levelResources = null;
 
