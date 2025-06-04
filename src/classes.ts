@@ -479,7 +479,6 @@ export function getClasses(): any[] {
 
     const indexData = readJsonFile(indexPath);
     for (const [className, classIndexFile] of Object.entries(indexData)) {
-        console.log('   - ' + className);
         const path = BASEPATH + classIndexFile;
         const data = readJsonFile(path);
 
