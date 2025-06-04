@@ -213,7 +213,7 @@ export function parseImageUrl(data: any[]): string | null {
         const href = datum.href;
         if (href.type == 'internal') return getImageUrl(href.path);
         else if (href.type == 'external') return href.path as string;
-        else throw `Unknown image href type '${href['type']}'`;
+        else throw `Unknown image href type '${href.type}'`;
     }
 
     return null;
@@ -359,7 +359,7 @@ export function parseComponents(components: any): string {
     if ('v' in components) result.push('V');
     if ('s' in components) result.push('S');
     if ('m' in components) {
-        let material = components['m'];
+        let material = components.m;
         if (typeof material != 'string') {
             material = material.text;
         }
@@ -436,7 +436,7 @@ function parseDescriptionBlock(description: any): string {
         }
         case 'refClassFeature': {
             // classFeature is a string like "Sorcery Points|Sorcerer||2"
-            const classFeature = description['classFeature'];
+            const classFeature = description.classFeature;
             if (typeof classFeature === 'string') {
                 const parts = classFeature.split('|');
                 if (parts.length >= 4) {
@@ -450,7 +450,7 @@ function parseDescriptionBlock(description: any): string {
             throw `Unsupported refClassFeature ${classFeature}`;
         }
         case 'refSubclassFeature': {
-            const classFeature = description['subclassFeature'];
+            const classFeature = description.subclassFeature;
             if (typeof classFeature === 'string') {
                 const [name, , , , , value] = classFeature.split('|');
                 if (value && name) {
@@ -461,7 +461,7 @@ function parseDescriptionBlock(description: any): string {
             throw `Unsupported refSubclassFeature ${classFeature}`;
         }
         case 'refOptionalfeature': {
-            let optionalFeature = description['optionalfeature'];
+            let optionalFeature = description.optionalfeature;
 
             if (optionalFeature.includes('|')) {
                 const [name, source] = optionalFeature.split('|');
@@ -472,7 +472,7 @@ function parseDescriptionBlock(description: any): string {
         }
         case 'options': {
             const entries: string[] = [];
-            const count = description['count'];
+            const count = description.count;
             if (description.entries) {
                 entries.push(...description.entries.map(parseDescriptionBlock));
             }

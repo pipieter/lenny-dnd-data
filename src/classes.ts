@@ -32,17 +32,17 @@ class ClassFeature {
     descriptions: Description[] | null = null;
 
     constructor(data: any) {
-        this.name = data['name'];
-        this.source = data['source'];
-        this.level = data['level'];
+        this.name = data.name;
+        this.source = data.source;
+        this.level = data.level;
 
-        this.classKey = getKey(data['className'], data['classSource']);
-        if (data['subclassShortName'] && data['subclassSource']) {
-            this.subclassKey = getKey(data['subclassShortName'], data['subclassSource']);
+        this.classKey = getKey(data.className, data.classSource);
+        if (data.subclassShortName && data.subclassSource) {
+            this.subclassKey = getKey(data.subclassShortName, data.subclassSource);
         }
 
-        if (data['entries']) {
-            const descs = parseDescriptions('', data['entries'], '');
+        if (data.entries) {
+            const descs = parseDescriptions('', data.entries, '');
             if (descs.length > 0) {
                 // Conjoin all texts with \n, keep as one Description object
                 const joinedText = descs.map((d) => d.text).join('\n');
@@ -78,8 +78,8 @@ class CharacterClass {
         features: ClassFeatureDictionary,
         subclassFeatures: ClassFeatureDictionary
     ) {
-        this.name = data['name'];
-        this.source = data['source'];
+        this.name = data.name;
+        this.source = data.source;
         this.url = get5etoolsUrl(Page.Class, this.name, this.source);
 
         this.setPrimaryAbility(data);
@@ -110,8 +110,8 @@ class CharacterClass {
     }
 
     private setPrimaryAbility(data: any) {
-        if (!data['primaryAbility']) return;
-        const primaryAbility: any[] = data['primaryAbility'];
+        if (!data.primaryAbility) return;
+        const primaryAbility: any[] = data.primaryAbility;
 
         let orGroups: string[] = [];
 
@@ -147,7 +147,7 @@ class CharacterClass {
                     const armor: string[] = [];
                     let hasShields = false;
                     for (let armorType of proficiency) {
-                        if (armorType['proficiency']) armorType = armorType['proficiency'];
+                        if (armorType.proficiency) armorType = armorType.proficiency;
                         if (armorType === 'shield') {
                             hasShields = true;
                             continue;
@@ -165,7 +165,7 @@ class CharacterClass {
                     const weapons: string[] = [];
                     for (const weaponType of proficiency) {
                         if (typeof weaponType === 'object' && weaponType !== null) {
-                            const weaponProficiency = weaponType['proficiency'];
+                            const weaponProficiency = weaponType.proficiency;
                             if (weaponProficiency) {
                                 weapons.push(weaponProficiency);
                             }
@@ -182,10 +182,10 @@ class CharacterClass {
                         if (text !== '') {
                             text += '\n';
                         }
-                        const choose = skillProficiencies['choose'];
+                        const choose = skillProficiencies.choose;
                         if (!choose) continue;
-                        const skills = choose['from'];
-                        const count = parseInt(choose['count'] ?? '0');
+                        const skills = choose.from;
+                        const count = parseInt(choose.count ?? '0');
                         if (!skills || count === 0) continue;
                         text += `Choose \`\`${count}\`\`: ${formatWordList(skills, true)}`;
                     }
@@ -219,10 +219,10 @@ class CharacterClass {
         let info: Description[] = [];
 
         // hpInfo
-        if (data['hd']) {
-            const hd = data['hd'];
-            const sides: number = parseInt(hd['number']);
-            const faces: number = parseInt(hd['faces']);
+        if (data.hd) {
+            const hd = data.hd;
+            const sides: number = parseInt(hd.number);
+            const faces: number = parseInt(hd.faces);
 
             const die = `${sides}d${faces}`;
             const averageHp = Math.floor(faces / 2) + 1;
@@ -239,8 +239,8 @@ class CharacterClass {
 
         // Saving Proficiencies
         let profData: Description[] = [];
-        if (data['proficiency']) {
-            let savingProficiencies: string[] = data['proficiency'];
+        if (data.proficiency) {
+            let savingProficiencies: string[] = data.proficiency;
             savingProficiencies = savingProficiencies.map((proficiency) =>
                 parseAbilityScore(proficiency)
             );
@@ -250,8 +250,8 @@ class CharacterClass {
         }
 
         // startingProficiencies
-        if (data['startingProficiencies']) {
-            const startingProficiencies = this.handleProficiencies(data['startingProficiencies']);
+        if (data.startingProficiencies) {
+            const startingProficiencies = this.handleProficiencies(data.startingProficiencies);
             profData.push(...startingProficiencies);
         }
 
@@ -261,10 +261,10 @@ class CharacterClass {
         }
 
         // startEquipment
-        if (data['startingEquipment']) {
+        if (data.startingEquipment) {
             // Old class notation uses 'default', new uses 'entries'
-            const startingEquipment = data['startingEquipment'];
-            const equipment = startingEquipment['default'] ?? startingEquipment['entries'];
+            const startingEquipment = data.startingEquipment;
+            const equipment = startingEquipment.default ?? startingEquipment.entries;
 
             if (equipment) {
                 let text = [];
@@ -277,15 +277,15 @@ class CharacterClass {
         }
 
         // multiclassing
-        if (data['multiclassing']) {
+        if (data.multiclassing) {
             let multiclassData = [];
-            const multiclassing = data['multiclassing'];
+            const multiclassing = data.multiclassing;
 
-            let multiclassRequirements = multiclassing['requirements'];
+            let multiclassRequirements = multiclassing.requirements;
             if (multiclassRequirements) {
                 let useAnd = true;
-                if (multiclassRequirements['or']) {
-                    multiclassRequirements = multiclassRequirements['or'][0];
+                if (multiclassRequirements.or) {
+                    multiclassRequirements = multiclassRequirements.or[0];
                     useAnd = false;
                 }
 
@@ -302,7 +302,7 @@ class CharacterClass {
                 multiclassData.push({ name: '', text: text });
             }
 
-            const multiclassProficiencies = multiclassing['proficienciesGained'];
+            const multiclassProficiencies = multiclassing.proficienciesGained;
             if (multiclassProficiencies) {
                 multiclassData.push(...this.handleProficiencies(multiclassProficiencies));
             }
@@ -485,7 +485,7 @@ export function getClasses(): any[] {
 
         let features: ClassFeatureDictionary = {};
 
-        for (const featureData of data['classFeature']) {
+        for (const featureData of data.classFeature) {
             const feature = new ClassFeature(featureData);
             const key = feature.classKey;
             if (!features[key]) features[key] = [];
@@ -493,8 +493,8 @@ export function getClasses(): any[] {
         }
 
         let subclassFeatures: ClassFeatureDictionary = {};
-        if (data['subclassFeature']) {
-            for (const featureData of data['subclassFeature']) {
+        if (data.subclassFeature) {
+            for (const featureData of data.subclassFeature) {
                 const feature = new ClassFeature(featureData);
                 const key = feature.classKey;
                 if (!subclassFeatures[key]) subclassFeatures[key] = [];
@@ -502,7 +502,7 @@ export function getClasses(): any[] {
             }
         }
 
-        for (const classData of data['class']) {
+        for (const classData of data.class) {
             const characterClass = new CharacterClass(classData, features, subclassFeatures);
             result.push(characterClass.toJSON());
         }

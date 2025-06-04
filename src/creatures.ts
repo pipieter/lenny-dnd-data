@@ -33,26 +33,26 @@ class Creature {
     parentKey: string | null = null;
 
     constructor(data: any, isFluff: boolean) {
-        this.name = data['name'];
-        this.source = data['source'];
+        this.name = data.name;
+        this.source = data.source;
 
         if (isFluff) {
             this.description = this.getDescriptions(data); // TODO Improve performance
         } else {
             this.subtitle = this.getSubtitle(data);
-            this.summonedBySpell = data['summonedBySpell']
-                ? parseCreatureSummonSpell(data['summonedBySpell'])
+            this.summonedBySpell = data.summonedBySpell
+                ? parseCreatureSummonSpell(data.summonedBySpell)
                 : null;
-            this.hasToken = data['hasToken'] || false;
+            this.hasToken = data.hasToken || false;
         }
 
-        const _copy = data['_copy'] || null;
-        if (_copy) this.parentKey = getKey(_copy['name'], _copy['source']);
+        const _copy = data._copy || null;
+        if (_copy) this.parentKey = getKey(_copy.name, _copy.source);
     }
 
     private getSubtitle(data: any): string | null {
-        const sizeData = data['size'];
-        const typeData = data['type'];
+        const sizeData = data.size;
+        const typeData = data.type;
 
         const size = sizeData ? parseSizes(sizeData) : null;
         const type = typeData ? parseCreatureTypes(typeData) : null;
@@ -64,7 +64,7 @@ class Creature {
     }
 
     private getDescriptions(data: any): Description[] | null {
-        const entries = data['entries'] || null;
+        const entries = data.entries || null;
         if (!entries) return null;
 
         const filteredEntries = this.filterEntries(entries);
@@ -90,8 +90,8 @@ class Creature {
         let filteredEntries: any[] = [];
 
         entries.forEach((entry: any) => {
-            if (entry['type'] !== 'entries') return; // Only 'entries' hold information we'd want to use.
-            if (entry['name']) return; // Entries with names generally refer to races and books, not of use to us.
+            if (entry.type !== 'entries') return; // Only 'entries' hold information we'd want to use.
+            if (entry.name) return; // Entries with names generally refer to races and books, not of use to us.
 
             filteredEntries.push(entry);
             if (filteredEntries.length >= 2) return; // Generally the first two entries are the actual descriptions of a creature.
