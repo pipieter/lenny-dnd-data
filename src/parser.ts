@@ -1,6 +1,15 @@
 import { execSync } from 'child_process';
 import { readFileSync, writeFileSync } from 'fs';
 import { BulletPoint, getNumberSign, getPythonInstallation } from './util';
+import {
+    get5eToolsUrl,
+    getBackgroundsUrl,
+    getBestiaryUrl,
+    getFeatsUrl,
+    getImageUrl,
+    getItemsUrl,
+    getObjectsUrl,
+} from './urls';
 
 export interface Description {
     name: string;
@@ -27,29 +36,6 @@ const AbilityScores = new Map<string, string>([
     ['wis', 'Wisdom'],
     ['cha', 'Charisma'],
 ]);
-
-export function getImageUrl(path: string): string {
-    return `https://5e.tools/img/${path}`;
-}
-
-export enum Page {
-    Class = 'classes.html#',
-    // TODO MIGRATE ALL LINKS TO HERE
-}
-
-export function get5etoolsUrl(
-    page: Page,
-    name: string | null = null,
-    source: string | null = null
-) {
-    if ((name && !source) || (!name && source)) throw 'Must specify both name & source for url.';
-
-    const base = `https://5e.tools/${page}`;
-    const query = name && source ? `${name}_${source}`.toLowerCase() : '';
-    return cleanUrl(base + query);
-}
-
-export const cleanUrl = encodeURI;
 
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Filtered out first, these often appear within other brackets so should be handled first.
@@ -159,22 +145,19 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(
             /\{@5etools ([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2) => `[${p1}](${cleanUrl(`https://5e.tools/${p2}`.toLowerCase())})`
+            (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`
         );
         text = text.replaceAll(
             /\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2, p3) =>
-                `[${p3}](${cleanUrl(`https://5e.tools/backgrounds.html#${p1}_${p2}`.toLowerCase())})`
+            (_, p1, p2, p3) => `[${p3}](${getBackgroundsUrl(p1, p2)})`
         );
         text = text.replaceAll(
             /\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2, p3) =>
-                `[${p3}](${cleanUrl(`https://5e.tools/objects.html#${p1}_${p2}`.toLowerCase())})`
+            (_, p1, p2, p3) => `[${p3}](${getObjectsUrl(p1, p2)})`
         );
         text = text.replaceAll(
             /\{@feat ([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2) =>
-                `[${p1}](${cleanUrl(`https://5e.tools/feats.html#${p1}_${p2}`).toLowerCase()})`
+            (_, p1, p2) => `[${p1}](${getFeatsUrl(p1, p2)})`
         );
         text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(
@@ -484,27 +467,26 @@ function parseDescriptionBlock(description: any): string {
             const tag = description.tag;
             const name = description.name;
             const source = description.source;
-            let link = `https://5e.tools/`;
+            let link = null;
             switch (tag) {
                 case 'item':
-                    link += `${tag}s.html`;
+                    link = getItemsUrl(name, source);
                     break;
                 case 'creature':
-                    link += 'bestiary.html';
+                    link = getBestiaryUrl(name, source);
                     break;
                 default:
                     throw `Unsupported Stat-block ${tag}`;
             }
 
-            link += `#${name}_${source}`.toLowerCase();
-            link = cleanUrl(link);
+            if (!link) throw `Unsupported Stat-block ${tag}, link was null`;
             return `[See ${name}'s stats here](${link})`;
         }
         case 'refFeat': {
             const feat = description.feat;
             const [name, source] = feat.split('|');
-            const link = `https://5e.tools/feats.html#${name}_${source}`.toLowerCase();
-            return `${BulletPoint} [${name}](${cleanUrl(link)})`;
+            const link = getFeatsUrl(name, source);
+            return `${BulletPoint} [${name}](${link})`;
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;

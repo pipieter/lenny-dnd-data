@@ -1,4 +1,5 @@
-import { cleanUrl, parseDescriptions, parseImageUrl } from './parser';
+import { parseDescriptions, parseImageUrl } from './parser';
+import { getConditionsDiseasesUrl } from './urls';
 
 // Note, statuses and diseases also follow the same structure as Condition
 interface Condition {
@@ -15,9 +16,7 @@ function getConditions(type: string, data: any): Condition[] {
     const entries = data[type] || [];
     const fluffs = data[`${type}Fluff`] || [];
     for (const entry of entries) {
-        const url = cleanUrl(
-            `https://5e.tools/conditionsdiseases.html#${entry.name}_${entry.source}`
-        );
+        const url = getConditionsDiseasesUrl(entry.name, entry.source);
         const result: Condition = {
             name: entry.name,
             source: entry.source,
