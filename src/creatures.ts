@@ -28,7 +28,6 @@ class Creature {
     subtitle: string | null = null;
     summonedBySpell: string | null = null;
     url: string;
-    hasToken: boolean | null = null;
     tokenUrl: string | null = null;
 
     description: Description[] | null = null;
@@ -46,8 +45,8 @@ class Creature {
             this.summonedBySpell = data.summonedBySpell
                 ? parseCreatureSummonSpell(data.summonedBySpell)
                 : null;
-            this.hasToken = data.hasToken || false;
-            this.tokenUrl = getCreatureTokenUrl(this.name, this.source);
+            const hasToken = data.hasToken || false;
+            this.tokenUrl = hasToken ? getCreatureTokenUrl(this.name, this.source) : null;
         }
 
         const _copy = data._copy || null;
@@ -121,7 +120,7 @@ class Creature {
     }
 
     isFluff() {
-        return !this.subtitle && !this.summonedBySpell && !this.hasToken;
+        return !this.subtitle && !this.summonedBySpell && !this.tokenUrl;
     }
 }
 
