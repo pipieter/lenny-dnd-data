@@ -1,6 +1,5 @@
 import { readFileSync } from 'fs';
 import {
-    cleanUrl,
     Description,
     parseCastingTime,
     parseComponents,
@@ -10,6 +9,7 @@ import {
     parseSpellLevel,
     parseSpellSchool,
 } from './parser';
+import { getSpellsUrl } from './urls';
 
 interface Caster {
     name: string;
@@ -34,10 +34,6 @@ function spellKey(name: string, source: string): string {
     return `${name} (${source})`;
 }
 
-function spellUrl(name: string, source: string): string {
-    return cleanUrl(`https://5e.tools/spells.html#${name}_${source}`);
-}
-
 function spellCmp(a: Caster | Spell, b: Caster | Spell): number {
     if (a.name == b.name) {
         return a.source.localeCompare(b.source);
@@ -51,7 +47,7 @@ function loadSpellsFromFile(path: string): Spell[] {
     const results: Spell[] = [];
 
     for (const spell of data.spell) {
-        const url = spellUrl(spell.name, spell.source);
+        const url = getSpellsUrl(spell.name, spell.source);
         const result: Spell = {
             name: spell.name,
             source: spell.source,

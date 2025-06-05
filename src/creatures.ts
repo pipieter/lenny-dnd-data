@@ -1,12 +1,12 @@
 import { readJsonFile, getKey } from './data';
 import {
-    cleanUrl,
     Description,
     parseCreatureSummonSpell,
     parseCreatureTypes,
     parseDescriptions,
     parseSizes,
 } from './parser';
+import { getBestiaryUrl, getCreatureTokenUrl } from './urls';
 
 const BASEPATH = '5etools-src/data/bestiary/';
 
@@ -27,7 +27,8 @@ class Creature {
     source: string;
     subtitle: string | null = null;
     summonedBySpell: string | null = null;
-    hasToken: boolean | null = null;
+    url: string;
+    tokenUrl: string | null = null;
 
     description: Description[] | null = null;
     parentKey: string | null = null;
@@ -35,6 +36,7 @@ class Creature {
     constructor(data: any, isFluff: boolean) {
         this.name = data.name;
         this.source = data.source;
+        this.url = getBestiaryUrl(this.name, this.source);
 
         if (isFluff) {
             this.description = this.getDescriptions(data); // TODO Improve performance
@@ -43,7 +45,8 @@ class Creature {
             this.summonedBySpell = data.summonedBySpell
                 ? parseCreatureSummonSpell(data.summonedBySpell)
                 : null;
-            this.hasToken = data.hasToken || false;
+            const hasToken = data.hasToken || false;
+            this.tokenUrl = hasToken ? getCreatureTokenUrl(this.name, this.source) : null;
         }
 
         const _copy = data._copy || null;
@@ -68,7 +71,7 @@ class Creature {
         if (!entries) return null;
 
         const filteredEntries = this.filterEntries(entries);
-        const parsedDescriptions = parseDescriptions('', filteredEntries, this.url());
+        const parsedDescriptions = parseDescriptions('', filteredEntries, this.url);
         let filteredDescriptions: Description[] = [];
         let totalTextLength = 0;
         parsedDescriptions.forEach((desc) => {
@@ -117,19 +120,7 @@ class Creature {
     }
 
     isFluff() {
-        return !this.subtitle && !this.summonedBySpell && !this.hasToken;
-    }
-
-    tokenUrl() {
-        if (!this.hasToken) return null;
-
-        const url = `https://5e.tools/img/bestiary/tokens/${this.source}/${this.name}.webp`;
-        return cleanUrl(url);
-    }
-
-    url() {
-        const url = `https://5e.tools/bestiary.html#${this.name}_${this.source}`;
-        return cleanUrl(url);
+        return !this.subtitle && !this.summonedBySpell && !this.tokenUrl;
     }
 }
 
@@ -194,8 +185,8 @@ export function getCreatures(): JsonCreature[] {
             source: creature.source,
             subtitle: creature.subtitle,
             summonedBySpell: creature.summonedBySpell,
-            tokenUrl: creature.tokenUrl(),
-            url: creature.url(),
+            tokenUrl: creature.tokenUrl,
+            url: creature.url,
             description: creature.description,
         });
     });

@@ -4,13 +4,12 @@ import {
     cleanDNDText,
     Description,
     formatWordList,
-    get5etoolsUrl,
-    Page,
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
     title,
 } from './parser';
+import { getClassesUrl } from './urls';
 import { BulletPoint } from './util';
 
 const BASEPATH = '5etools-src/data/class/';
@@ -80,7 +79,7 @@ class CharacterClass {
     ) {
         this.name = data.name;
         this.source = data.source;
-        this.url = get5etoolsUrl(Page.Class, this.name, this.source);
+        this.url = getClassesUrl(this.name, this.source);
 
         this.setPrimaryAbility(data);
         this.spellcastAbility = data.spellcastingAbility
