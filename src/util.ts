@@ -38,9 +38,9 @@ export class StopwatchLogger {
     }
 
     private getColor(elapsedSeconds: number): (text: string) => string {
-        if (elapsedSeconds >= 15) return kleur.bgRed;
-        else if (elapsedSeconds >= 10) return kleur.red;
-        else if (elapsedSeconds >= 5) return kleur.yellow;
+        if (elapsedSeconds >= 5) return kleur.bgRed;
+        else if (elapsedSeconds >= 3) return kleur.red;
+        else if (elapsedSeconds >= 1) return kleur.yellow;
         else return kleur.green;
     }
 
