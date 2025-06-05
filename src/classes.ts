@@ -398,7 +398,7 @@ class CharacterClass {
     }
 
     private setLevelResources(data: any) {
-        const spellSlotTables = [];
+        const spellSlotTables: Description[] = [];
         if (data.classTableGroups) {
             for (const tableGroup of data.classTableGroups) {
                 if (!tableGroup.rowsSpellProgression) continue;
@@ -414,7 +414,7 @@ class CharacterClass {
                         type: DescriptionType.table,
                         value: {
                             headers,
-                            rows: spellRow,
+                            rows: [spellRow],
                         },
                     });
                 }
