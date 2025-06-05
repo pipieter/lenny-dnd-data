@@ -1,6 +1,4 @@
-import { execSync } from 'child_process';
-import { readFileSync, writeFileSync } from 'fs';
-import { BulletPoint, getNumberSign, getPythonInstallation } from './util';
+import { BulletPoint, getNumberSign } from './util';
 import {
     get5eToolsUrl,
     getBackgroundsUrl,
@@ -13,9 +11,20 @@ import {
     getTrapsUrl,
 } from './urls';
 
+export enum DescriptionType {
+    text = 'text',
+    table = 'table',
+}
+
 export interface Description {
     name: string;
-    text: string;
+    type: DescriptionType;
+    value: string | Table;
+}
+
+export interface Table {
+    headers: string[];
+    rows: string[][];
 }
 
 const SpellSchools = new Map([
@@ -380,7 +389,7 @@ function parseDescriptionBlockFromBlocks(descriptions: any[]): string {
     return blocks.join('\n\n');
 }
 
-function parseDescriptionBlock(description: any): string {
+function parseDescriptionBlock(description: string | any): string | Table {
     if (typeof description == 'string') {
         return cleanDNDText(description);
     }
@@ -403,7 +412,7 @@ function parseDescriptionBlock(description: any): string {
             return cleanDNDText(text);
         }
         case 'item': {
-            const entries: string[] = [];
+            const entries: Array<string | Table> = [];
             if (description.entries) {
                 entries.push(...description.entries.map(parseDescriptionBlock));
             } else if (description.entry) {
@@ -432,8 +441,7 @@ function parseDescriptionBlock(description: any): string {
         }
         case 'table': {
             const table = parseDescriptionFromTable(description, '');
-            if (!table.name.trim()) return table.text;
-            return `**${table.name}**:\n${table.text}`;
+            return table.value;
         }
         case 'image': {
             return ''; // Images will not be handled within descriptions
@@ -560,6 +568,12 @@ function parseTableValue(value: any): string {
 
         if (value.type == 'entries') {
             if (value.name) return `__${value.name}__`; // Also has value.entries, but that's too much information to display within a table.
+            if (value.entries) {
+                const entryNames = value.entries.map((entry: any) => entry.name);
+                const text = entryNames.join('__ & __');
+                return `__${text}__`;
+            }
+
             throw `Unsupported table value entries-type ${value}`;
         }
 
@@ -570,36 +584,8 @@ function parseTableValue(value: any): string {
     }
 }
 
-export function buildTable(headers: string[], rows: string[][], width: number): string {
-    const table = {
-        headers: headers,
-        rows: rows,
-    };
-    const python = getPythonInstallation();
-    const input = 'table.in.temp';
-    const output = 'table.out.temp';
-    const command = `${python} scripts/table.py ${input} ${output} ${width}`;
-    writeFileSync(input, JSON.stringify(table, null, 2));
-    const result = execSync(command).toString();
-    if (result) {
-        console.log(result);
-    }
-    return readFileSync(output).toString('utf-8');
-}
-
-function buildDescriptionTable(
-    title: string,
-    headers: string[],
-    rows: string[][],
-    fallbackUrl: string
-): string {
-    const failure = `The table for [${title} can be found here](${fallbackUrl}).`;
-
-    const table = buildTable(headers, rows, 56);
-    if (table.length > 1018) {
-        return failure;
-    }
-    return '```' + table + '```';
+function buildDescriptionTable(headers: string[], rows: string[][]): Table {
+    return { headers: headers, rows: rows };
 }
 
 function parseDescriptionFromTable(description: any, fallbackUrl: string): Description {
@@ -607,9 +593,9 @@ function parseDescriptionFromTable(description: any, fallbackUrl: string): Descr
     const headers = description.colLabels.map(cleanDNDText);
     const rows = description.rows.map((row: string[]) => row.map(parseTableValue));
 
-    const table = buildDescriptionTable(title, headers, rows, fallbackUrl);
+    const table = buildDescriptionTable(headers, rows);
 
-    return { name: title, text: table };
+    return { name: title, type: DescriptionType.table, value: table };
 }
 
 export function parseDescriptions(
@@ -618,7 +604,7 @@ export function parseDescriptions(
     fallbackUrl: string
 ): Description[] {
     const subdescriptions: Description[] = [];
-    const blocks: string[] = [];
+    const blocks: Array<string | Table> = [];
 
     for (const desc of descriptions) {
         // Special case scenario where an entry is a description on its own
@@ -638,15 +624,20 @@ export function parseDescriptions(
 
     const results: Description[] = [];
     if (blocks.length > 0) {
-        results.push({ name: name, text: blocks[0] });
+        results.push({ name: name, type: DescriptionType.text, value: blocks[0] });
     }
     for (let i = 1; i < blocks.length; i++) {
-        results.push({ name: '', text: blocks[i] });
+        results.push({ name: '', type: DescriptionType.text, value: blocks[i] });
     }
     results.push(...subdescriptions);
 
     // Unsupported types may append empty strings, these are removed here.
-    const cleaned: Description[] = results.filter((desc) => desc.text.trim());
+    const cleaned: Description[] = results.filter((desc) => {
+        if (typeof desc.value === 'string') {
+            return desc.value.trim();
+        }
+        return true; // Keep non-string values
+    });
     return cleaned;
 }
 

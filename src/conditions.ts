@@ -1,4 +1,4 @@
-import { parseDescriptions, parseImageUrl } from './parser';
+import { Description, parseDescriptions, parseImageUrl } from './parser';
 import { getConditionsDiseasesUrl } from './urls';
 
 // Note, statuses and diseases also follow the same structure as Condition
@@ -6,7 +6,7 @@ interface Condition {
     name: string;
     source: string;
     url: string;
-    description: { name: string; text: string }[];
+    description: Description[];
     image: string | null;
 }
 

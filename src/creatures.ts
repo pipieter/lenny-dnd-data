@@ -71,21 +71,7 @@ class Creature {
         if (!entries) return null;
 
         const filteredEntries = this.filterEntries(entries);
-        const parsedDescriptions = parseDescriptions('', filteredEntries, this.url);
-        let filteredDescriptions: Description[] = [];
-        let totalTextLength = 0;
-        parsedDescriptions.forEach((desc) => {
-            const textLower = desc.text.toLowerCase();
-            if (textLower.startsWith('\`\`\`')) return; // Ignore tables
-            if (textLower.toLowerCase().includes(' table ')) return; // Ignore tables
-            if (textLower.toLowerCase().includes('stat block')) return; // Ignore stat-related entries
-            if (textLower.length > 1024 || totalTextLength > 1024) return; // Limit length
-
-            filteredDescriptions.push(desc);
-            totalTextLength = totalTextLength + textLower.length;
-        });
-
-        return filteredDescriptions;
+        return parseDescriptions('', filteredEntries, this.url);
     }
 
     private filterEntries(entries: any[]): any[] {
