@@ -1,6 +1,14 @@
 import kleur = require('kleur');
 var commandExistsSync = require('command-exists').sync;
 
+export const BulletPoint = '\u2022'; // U+2022 •
+
+export function getNumberSign(value: number, zeroReturnsPlus: boolean = false): string {
+    if (value > 0) return '+';
+    if (value < 0) return '-';
+    return zeroReturnsPlus ? '+' : '';
+}
+
 export function getPythonInstallation() {
     const choices = ['python', 'python3', 'py'];
     for (const choice of choices) {
