@@ -129,10 +129,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(
-            /\{@table ([^\}|]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2, p3) => p3
-        );
+        text = text.replaceAll(/\{@table ([^\}|]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@table ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `$1`);
@@ -417,6 +414,12 @@ function parseDescriptionBlock(description: any): string {
             const entry = entries.join('\n');
             return cleanDNDText(`**${description.name}**: ${entry}`);
         }
+        case 'inline': {
+            const entries = description.entries.map(parseDescriptionBlock);
+            let entry = entries.join('');
+            if (description.name) return cleanDNDText(`**${description.name}**: ${entry}`);
+            return cleanDNDText(entry);
+        }
         case 'section':
         case 'entries': {
             const entries = description.entries.map(parseDescriptionBlock);
@@ -502,12 +505,11 @@ function parseDescriptionBlock(description: any): string {
                     link = getBestiaryUrl(name, source);
                     break;
                 case 'table':
-                    return 'TODO Stat-block Table';
-                default:
-                    throw `Unsupported Stat-block ${tag}`;
+                    link = getTablesUrl(name, source);
+                    break;
             }
 
-            if (!link) throw `Unsupported Stat-block ${tag}, link was null`;
+            if (!link) throw `Unsupported statblock ${tag}`;
             return `[See ${name}'s stats here](${link})`;
         }
         case 'refFeat': {
@@ -516,8 +518,24 @@ function parseDescriptionBlock(description: any): string {
             const link = getFeatsUrl(name, source);
             return `${BulletPoint} [${name}](${link})`;
         }
-        case 'inline': {
-            return 'TODO Unsupported inline';
+        case 'link': {
+            const text = description.text;
+            const href = description.href;
+            let url = null;
+
+            switch (href.type) {
+                case 'internal':
+                    url = get5eToolsUrl(href.path);
+                    if (href.hash) url = url + '#' + href.hash;
+                    break;
+
+                case 'external':
+                    url = href.url;
+                    break;
+            }
+
+            if (!url) throw `Unsupported link ${description}`;
+            return `[${text}](${url})`;
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;
@@ -541,7 +559,8 @@ function parseTableValue(value: any): string {
         }
 
         if (value.type == 'entries') {
-            return 'TODO - ADD TABLE ENTRIES SUPPORT';
+            if (value.name) return `__${value.name}__`; // Also has value.entries, but that's too much information to display within a table.
+            throw `Unsupported table value entries-type ${value}`;
         }
 
         throw `Unsupported table value-type: '${value.type}'`;
