@@ -585,16 +585,11 @@ function parseTableValue(value: any): string {
     }
 }
 
-function buildDescriptionTable(headers: string[], rows: string[][]): Table {
-    return { headers: headers, rows: rows };
-}
-
 function parseDescriptionFromTable(description: any, fallbackUrl: string): Description {
-    const title = description.caption || '';
-    const headers = description.colLabels.map(cleanDNDText);
-    const rows = description.rows.map((row: string[]) => row.map(parseTableValue));
-
-    const table = buildDescriptionTable(headers, rows);
+    const title: string = description.caption || '';
+    const headers: string[] = description.colLabels.map(cleanDNDText);
+    const rows: string[][] = description.rows.map((row: string[]) => row.map(parseTableValue));
+    const table: Table = { headers: headers, rows: rows };
 
     return { name: title, type: DescriptionType.table, value: table };
 }
