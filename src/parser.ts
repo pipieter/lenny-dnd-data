@@ -9,6 +9,8 @@ import {
     getImageUrl,
     getItemsUrl,
     getObjectsUrl,
+    getTablesUrl,
+    getTrapsUrl,
 } from './urls';
 
 export interface Description {
@@ -48,6 +50,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@action ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
+    text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -126,6 +129,16 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(
+            /\{@table ([^\}|]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2, p3) => p3
+        );
+        text = text.replaceAll(/\{@table ([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
@@ -167,6 +180,19 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(
+            /\{@table ([^\}|]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2, p3) => `[${p3}](${getTablesUrl(p1, p2)})`
+        );
+        text = text.replaceAll(/\{@table ([^\}]*?)\}/g, (_, p1) => `[${p1}](${getTablesUrl(p1)})`);
+        text = text.replaceAll(
+            /\{@trap ([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`
+        );
+        text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
     }
 
     // Note: notes should be parsed at the end, because they might contain subqueries
@@ -475,6 +501,8 @@ function parseDescriptionBlock(description: any): string {
                 case 'creature':
                     link = getBestiaryUrl(name, source);
                     break;
+                case 'table':
+                    return 'TODO Stat-block Table';
                 default:
                     throw `Unsupported Stat-block ${tag}`;
             }
@@ -487,6 +515,9 @@ function parseDescriptionBlock(description: any): string {
             const [name, source] = feat.split('|');
             const link = getFeatsUrl(name, source);
             return `${BulletPoint} [${name}](${link})`;
+        }
+        case 'inline': {
+            return 'TODO Unsupported inline';
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;

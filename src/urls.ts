@@ -65,6 +65,19 @@ export function getObjectsUrl(name: string | null = null, source: string | null 
     return buildNameSourceUrl(`https://5e.tools/objects.html`, name, source);
 }
 
+export function getRulesUrl(name: string, source: string | null = null) {
+    return buildNameSourceUrl(`https://5e.tools/variantrules.html`, name, source);
+}
+
 export function getSpellsUrl(name: string | null = null, source: string | null = null) {
     return buildNameSourceUrl(`https://5e.tools/spells.html`, name, source);
+}
+
+export function getTablesUrl(name: string, source: string | null = null) {
+    if (!source) source = 'dmg'; // defaults to dmg
+    return buildNameSourceUrl(`https://5e.tools/tables.html`, name, source);
+}
+
+export function getTrapsUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/trapshazards.html`, name, source);
 }
