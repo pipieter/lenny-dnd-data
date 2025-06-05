@@ -372,18 +372,21 @@ class CharacterClass {
 
             for (let level = 0; level < rows.length; level++) {
                 const row = rows[level];
-                const proficiencyBonus = `${BulletPoint} **+${2 + Math.floor(level / 4)}** Proficiency Bonus`;
-                let text: string[] = [proficiencyBonus];
+                let text: string[] = [];
+
+                // Every class has the same proficiency-bonus scaling, starting on +2, scaling with 1 every 4 levels.
+                text.push(`${BulletPoint} **+${2 + Math.floor(level / 4)}** Proficiency Bonus`);
 
                 for (let i = 0; i < row.length; i++) {
                     const label = cleanDNDText(colLabels[i]);
-                    let value = row[i];
 
-                    if (!value.type) continue;
                     if (label.toLowerCase().includes('spell')) continue;
                     if (label.toLowerCase().includes('cantrip')) continue;
 
-                    value = parseClassResourceValue(value);
+                    let value = row[i];
+                    if (value.type) value = parseClassResourceValue(value);
+                    if (typeof value === 'string') value = cleanDNDText(value);
+
                     text.push(`${BulletPoint} **${value}** ${label}`);
                 }
 

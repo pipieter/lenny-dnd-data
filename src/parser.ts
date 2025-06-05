@@ -76,6 +76,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@dice ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@dice ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@filter ([^\}]*?)\}/g, '$1');
@@ -719,34 +720,28 @@ export function parseCreatureSummonSpell(spell: string): string {
     return spell.split('|', 1)[0];
 }
 
-export function parseClassResourceValue(value: any) {
-    if (typeof value === 'number' || typeof value === 'string') {
-        return value;
-    }
+export function parseClassResourceValue(value: any): string {
+    if (typeof value === 'number') return `${value}`;
+    if (typeof value === 'string') return value;
 
     switch (value.type) {
         case 'bonus': {
             const sign = getNumberSign(value.value, true);
-            value = `${sign}${value.value}`;
-            break;
+            return `${sign}${value.value}`;
         }
         case 'dice': {
             const number = value.toRoll[0].number;
             const faces = value.toRoll[0].faces;
-            value = `${number}d${faces}`;
-            break;
+            return `${number}d${faces}`;
         }
         case 'bonusSpeed': {
             const sign = getNumberSign(value.value, true);
-            value = `${sign}${value.value} ft.`;
-            break;
+            return `${sign}${value.value} ft.`;
         }
         default: {
             throw `Unsupported classTableGroups row-type ${value.type}`;
         }
     }
-
-    return value;
 }
 
 /*
