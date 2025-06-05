@@ -568,8 +568,9 @@ function parseTableValue(value: any): string {
         }
 
         if (value.type == 'entries') {
-            if (value.name) return `__${value.name}__`; // Also has value.entries, but that's too much information to display within a table.
-            if (value.entries) {
+            if (value.name)
+                return `__${value.name}__`; // Also has value.entries, but that's too much information to display within a table.
+            else if (value.entries) {
                 const entryNames = value.entries.map((entry: any) => entry.name);
                 const text = entryNames.join('__ & __');
                 return `__${text}__`;
