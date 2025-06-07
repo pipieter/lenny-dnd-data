@@ -9,6 +9,30 @@ export function getNumberSign(value: number, zeroReturnsPlus: boolean = false): 
     return zeroReturnsPlus ? '+' : '';
 }
 
+export function joinStringsWithOr(values: string[]): string | null {
+    if (values.length === 0) {
+        return null;
+    }
+
+    if (values.length === 1) {
+        return values[0];
+    }
+
+    const commas = values.slice(0, values.length - 1);
+    const last = values[values.length - 1];
+    return commas.join(', ') + ' or ' + last;
+}
+
+export function getPythonInstallation() {
+    const choices = ['python', 'python3', 'py'];
+    for (const choice of choices) {
+        if (commandExistsSync(choice)) {
+            return choice;
+        }
+    }
+    throw 'Could not find Python installation on system.';
+}
+
 export class StopwatchLogger {
     private startTime: number;
     private previousTime: number;

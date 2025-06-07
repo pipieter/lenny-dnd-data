@@ -49,8 +49,17 @@ const AbilityScores = new Map<string, string>([
 ]);
 
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
-    // Filtered out first, these often appear within other brackets so should be handled first.
+    // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    if (noFormat) {
+        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
+    } else {
+        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
+        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
+    }
 
     // Note: all regexes should end with a g, which stands for "global"
     text = text.replaceAll(/\{@atk rw\} /g, '+');
@@ -58,14 +67,15 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@action ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
-    text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
-    text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
+    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@area ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@chance ([^\}]*?)\|\|\|([^\}]*?)\|([^\}]*?)\}/g, '$1 percent');
     text = text.replaceAll(/\{@chance ([^\}]*?)\}/g, '$1 percent');
     text = text.replaceAll(/\{@classFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@condition ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@condition ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@d20 -([^\}]*?)\}/g, '-$1');
@@ -89,6 +99,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@language ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@link ([^\}]*?)\|([^\}]*?)\}/g, '[$1]($2)');
+    text = text.replaceAll(/\{@loader ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@optfeature ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@optfeature ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@quickref ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -115,8 +126,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '$1');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
@@ -139,20 +148,11 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@table ([^\}|]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
-        text = text.replaceAll(/\{@table ([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '__$1__');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '__$1__');
-        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
-        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
@@ -211,6 +211,13 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Check if any remaining patterns of {@...} exist
     if (/^.*\{@.*\}.*$/g.test(text)) {
         throw `{@...} pattern found in '${text}'`;
+    }
+
+    if (text.includes('#itemEntry')) {
+        // Currently, {#itemEntry Item|Source} still remains in the text
+        // TODO this should be fixed in items.ts, but it is currently not a priority
+        // as such, ignore checking for remaining '{' and '}' for now
+        return text;
     }
     if (text.includes('{')) {
         throw `Unmatched '{' character found in '${text}'`;
@@ -424,12 +431,6 @@ function parseDescriptionBlock(description: string | any): string | Table {
             const entry = entries.join('\n');
             return cleanDNDText(`**${description.name}**: ${entry}`);
         }
-        case 'inline': {
-            const entries = description.entries.map(parseDescriptionBlock);
-            let entry = entries.join('');
-            if (description.name) return cleanDNDText(`**${description.name}**: ${entry}`);
-            return cleanDNDText(entry);
-        }
         case 'section':
         case 'entries': {
             const entries = description.entries.map(parseDescriptionBlock);
@@ -513,12 +514,11 @@ function parseDescriptionBlock(description: string | any): string | Table {
                 case 'creature':
                     link = getBestiaryUrl(name, source);
                     break;
-                case 'table':
-                    link = getTablesUrl(name, source);
-                    break;
+                default:
+                    throw `Unsupported Stat-block ${tag}`;
             }
 
-            if (!link) throw `Unsupported statblock ${tag}`;
+            if (!link) throw `Unsupported Stat-block ${tag}, link was null`;
             return `[See ${name}'s stats here](${link})`;
         }
         case 'refFeat': {
@@ -526,25 +526,6 @@ function parseDescriptionBlock(description: string | any): string | Table {
             const [name, source] = feat.split('|');
             const link = getFeatsUrl(name, source);
             return `${BulletPoint} [${name}](${link})`;
-        }
-        case 'link': {
-            const text = description.text;
-            const href = description.href;
-            let url = null;
-
-            switch (href.type) {
-                case 'internal':
-                    url = get5eToolsUrl(href.path);
-                    if (href.hash) url = url + '#' + href.hash;
-                    break;
-
-                case 'external':
-                    url = href.url;
-                    break;
-            }
-
-            if (!url) throw `Unsupported link ${description}`;
-            return `[${text}](${url})`;
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;
@@ -740,38 +721,38 @@ export function parseClassResourceValue(value: any): string {
     }
 }
 
-/*
-def parse_item_value(value: int) -> str | None:
-    if value == 0:
-        return None
+export function parseItemValue(value: number | undefined): string | null {
+    if (value === undefined || value === 0) return null;
 
-    gp = (value) // 100
-    sp = (value % 100) // 10
-    cp = value % 10
+    const gp = Math.floor(value / 100);
+    const sp = Math.floor((value % 100) / 10);
+    const cp = value % 10;
 
-    values = []
-    if gp > 0:
-        # Adds thousands separators
-        gp_formatted = "{:,}".format(gp).replace(",", ".")
-        values.append(f"{gp_formatted} gp")
-    if sp > 0:
-        values.append(f"{sp} sp")
-    if cp > 0:
-        values.append(f"{cp} cp")
+    const values = [];
+    if (gp > 0) {
+        // Add thousands separators, https://stackoverflow.com/questions/2901102/how-to-format-a-number-with-commas-as-thousands-separators
+        const formatted = gp.toLocaleString().replace(',', '.');
+        values.push(`${formatted} gp`);
+    }
+    if (sp > 0) {
+        values.push(`${sp} sp`);
+    }
+    if (cp > 0) {
+        values.push(`${cp} cp`);
+    }
 
-    if len(values) == 0:
-        return None
+    if (values.length === 0) {
+        return null;
+    }
+    return values.join(' ');
+}
 
-    return " ".join(values)
-
-
-def parse_item_weight(weight: int) -> str | None:
-    if weight == 0:
-        return None
-
-    if weight < 1:
-        return f"{weight*16} oz."
-    else:
-        return f"{weight} lb."
-
-*/
+export function parseItemWeight(weight: number | undefined): string | null {
+    if (weight === undefined || weight === 0) {
+        return null;
+    }
+    if (weight < 1) {
+        return `${weight * 16} oz.`;
+    }
+    return `${weight} lb.`;
+}
