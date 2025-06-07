@@ -38,11 +38,10 @@ function getGendataVariantRules(): ParsedRule[] {
     const data = readJsonFile(gendata_path);
 
     return (data.variantrule as VariantRule[]).map((rule) => {
-        const url = getRulesUrl(rule.name, rule.source);
         return {
             name: rule.name,
             source: rule.source,
-            url,
+            url: getRulesUrl(rule.name, rule.source),
             ruleType: parseRuleType(rule),
             description: parseDescriptions('', rule.entries),
         };
@@ -51,11 +50,10 @@ function getGendataVariantRules(): ParsedRule[] {
 
 function getVariantRules(data: any): ParsedRule[] {
     return (data.variantrule as VariantRule[]).map((rule) => {
-        const url = getRulesUrl(rule.name, rule.source);
         return {
             name: rule.name,
             source: rule.source,
-            url,
+            url: getRulesUrl(rule.name, rule.source),
             ruleType: parseRuleType(rule),
             description: parseDescriptions('', rule.entries),
         };
