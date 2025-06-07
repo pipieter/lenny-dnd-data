@@ -1,4 +1,5 @@
 import kleur = require('kleur');
+import { title } from './parser';
 var commandExistsSync = require('command-exists').sync;
 
 export const BulletPoint = '\u2022'; // U+2022 •
@@ -9,9 +10,11 @@ export function getNumberSign(value: number, zeroReturnsPlus: boolean = false): 
     return zeroReturnsPlus ? '+' : '';
 }
 
-export function joinStringsWithOr(values: string[]): string | null {
+function joinStringsWith(concatWord: string, values: string[], capitalize: boolean): string {
+    if (capitalize) values = values.map(title);
+
     if (values.length === 0) {
-        return null;
+        return '';
     }
 
     if (values.length === 1) {
@@ -20,7 +23,15 @@ export function joinStringsWithOr(values: string[]): string | null {
 
     const commas = values.slice(0, values.length - 1);
     const last = values[values.length - 1];
-    return commas.join(', ') + ' or ' + last;
+    return commas.join(', ') + ` ${concatWord} ` + last;
+}
+
+export function joinStringsWithOr(values: string[], capitalize: boolean = true): string {
+    return joinStringsWith('or', values, capitalize);
+}
+
+export function joinStringsWithAnd(values: string[], capitalize: boolean = true): string {
+    return joinStringsWith('and', values, capitalize);
 }
 
 export class StopwatchLogger {
