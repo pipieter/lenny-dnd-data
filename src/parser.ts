@@ -53,10 +53,12 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     if (noFormat) {
         text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
     } else {
         text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
+        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
     }
@@ -123,6 +125,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
+        text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '$1');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '$1');
@@ -136,6 +139,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@table ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
@@ -148,8 +152,12 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
+        text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '__$1__');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '__$1__');
@@ -163,6 +171,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '*$3*');
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@table ([^\}]*?)\}/g, (_, p1) => `[${p1}](${getTablesUrl(p1)})`);
         text = text.replaceAll(
             /\{@5etools ([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`
@@ -196,7 +205,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             /\{@trap ([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`
         );
-        text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
@@ -431,6 +439,12 @@ function parseDescriptionBlock(description: string | any): string | Table {
             const entry = entries.join('\n');
             return cleanDNDText(`**${description.name}**: ${entry}`);
         }
+        case 'inline': {
+            const entries = description.entries.map(parseDescriptionBlock);
+            let entry = entries.join('');
+            if (description.name) return cleanDNDText(`**${description.name}**: ${entry}`);
+            return cleanDNDText(entry);
+        }
         case 'section':
         case 'entries': {
             const entries = description.entries.map(parseDescriptionBlock);
@@ -514,11 +528,12 @@ function parseDescriptionBlock(description: string | any): string | Table {
                 case 'creature':
                     link = getBestiaryUrl(name, source);
                     break;
-                default:
-                    throw `Unsupported Stat-block ${tag}`;
+                case 'table':
+                    link = getTablesUrl(name, source);
+                    break;
             }
 
-            if (!link) throw `Unsupported Stat-block ${tag}, link was null`;
+            if (!link) throw `Unsupported statblock ${tag}`;
             return `[See ${name}'s stats here](${link})`;
         }
         case 'refFeat': {
@@ -526,6 +541,25 @@ function parseDescriptionBlock(description: string | any): string | Table {
             const [name, source] = feat.split('|');
             const link = getFeatsUrl(name, source);
             return `${BulletPoint} [${name}](${link})`;
+        }
+        case 'link': {
+            const text = description.text;
+            const href = description.href;
+            let url = null;
+
+            switch (href.type) {
+                case 'internal':
+                    url = get5eToolsUrl(href.path);
+                    if (href.hash) url = url + '#' + href.hash;
+                    break;
+
+                case 'external':
+                    url = href.url;
+                    break;
+            }
+
+            if (!url) throw `Unsupported link ${description}`;
+            return `[${text}](${url})`;
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;
