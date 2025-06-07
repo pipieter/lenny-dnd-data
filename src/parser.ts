@@ -1,4 +1,4 @@
-import { BulletPoint, getNumberSign } from './util';
+import { BulletPoint, getNumberSign, joinStringsWithOr } from './util';
 import {
     get5eToolsUrl,
     getBackgroundsUrl,
@@ -453,7 +453,7 @@ function parseDescriptionBlock(description: string | any): string | Table {
             const titleDesc = description.type === 'abilityDc' ? 'Save DC' : 'Attack modifier';
 
             const abilityScores = description.attributes.map(parseAbilityScore);
-            const text = `${BulletPoint} *${description.name} ${titleDesc}:* ${formatWordList(abilityScores)} modifier + Proficiency Bonus`;
+            const text = `${BulletPoint} *${description.name} ${titleDesc}:* ${joinStringsWithOr(abilityScores)} modifier + Proficiency Bonus`;
             return text;
         }
         case 'refClassFeature': {
@@ -615,29 +615,6 @@ export function parseDescriptions(name: string, descriptions: any[]): Descriptio
     return cleaned;
 }
 
-/**
- * Formats an array of strings into a human-readable list.
- * Example: ['A', 'B'] => "A or B", ['A', 'B', 'C'] => "A, B, or C"
- */
-export function formatWordList(words: string[], useAndInsteadOfOr: boolean = false): string {
-    const concat = useAndInsteadOfOr ? 'and' : 'or';
-    const capitalized = words.map((word) => title(word));
-    const length = capitalized.length;
-
-    if (length > 2) {
-        return (
-            capitalized.slice(0, -1).join(', ') +
-            `, ${concat} ` +
-            capitalized[capitalized.length - 1]
-        );
-    } else if (length === 2) {
-        return capitalized.join(` ${concat} `);
-    } else if (length === 1) {
-        return capitalized[0];
-    } else {
-        return '';
-    }
-}
 export function capitalize(text: string): string {
     return text.charAt(0).toUpperCase() + text.slice(1);
 }
@@ -666,7 +643,7 @@ export function parseSizes(sizes: string[]): string {
         }
     }
 
-    return formatWordList(words);
+    return joinStringsWithOr(words);
 }
 
 export function parseCreatureTypes(creature_type: string | any): string {
@@ -677,7 +654,7 @@ export function parseCreatureTypes(creature_type: string | any): string {
     if (typeof creature_type === 'string') return creature_type;
 
     if (creature_type?.choose) {
-        const types = formatWordList(creature_type.choose);
+        const types = joinStringsWithOr(creature_type.choose);
         if (creature_type.tags?.length) {
             const tagText = creature_type.tags.join(' ');
             return `${types} (${tagText})`;
