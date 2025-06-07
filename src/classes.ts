@@ -42,7 +42,7 @@ class ClassFeature {
         }
 
         if (data.entries) {
-            const parsedDescriptions = parseDescriptions('', data.entries, '');
+            const parsedDescriptions = parseDescriptions('', data.entries);
             if (parsedDescriptions.length > 0) this.descriptions = parsedDescriptions;
         }
     }

@@ -21,7 +21,7 @@ function getConditions(type: string, data: any): Condition[] {
             name: entry.name,
             source: entry.source,
             url: url,
-            description: parseDescriptions('Description', entry.entries, url),
+            description: parseDescriptions('Description', entry.entries),
             image: null,
         };
 

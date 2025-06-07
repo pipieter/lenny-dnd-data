@@ -157,12 +157,12 @@ export function getItems(data: any): any[] {
         }
 
         // Item, item type, and property descriptions
-        result.description = parseDescriptions('', item.entries || [], url);
+        result.description = parseDescriptions('', item.entries || []);
         result.properties = [];
 
         if (item.type) {
             const type = types.get(item.type.split('|')[0]) || [];
-            result.description.push(...parseDescriptions('', type.entries || [], url));
+            result.description.push(...parseDescriptions('', type.entries || []));
         }
 
         // Item damage, if applicable
@@ -201,7 +201,7 @@ export function getItems(data: any): any[] {
                 for (let i = 0; i < entry.entries.length; i++) {
                     entry.entries[i] = applyItemTemplate(item, entry, entry.entries[i]);
                 }
-                result.description.push(...parseDescriptions(entry.name, entry.entries, url));
+                result.description.push(...parseDescriptions(entry.name, entry.entries));
             }
         }
 
@@ -214,7 +214,7 @@ export function getItems(data: any): any[] {
             }
             const mastery = masteries.get(masteryKey);
             const propertyName = `mastery: ${mastery.name}{note}`.toLowerCase();
-            const propertyDesc = parseDescriptions(mastery.name, mastery.entries, url);
+            const propertyDesc = parseDescriptions(mastery.name, mastery.entries);
             result.properties.push(propertyName);
             result.description.push(...propertyDesc);
         }

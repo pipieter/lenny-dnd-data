@@ -576,11 +576,7 @@ function parseDescriptionFromTable(description: any): Description {
     return { name: title, type: DescriptionType.table, value: table };
 }
 
-export function parseDescriptions(
-    name: string,
-    descriptions: any[],
-    fallbackUrl: string
-): Description[] {
+export function parseDescriptions(name: string, descriptions: any[]): Description[] {
     const subdescriptions: Description[] = [];
     const blocks: Array<string | Table> = [];
 
@@ -591,7 +587,7 @@ export function parseDescriptions(
         else {
             if (desc.type == 'entries') {
                 const descName = cleanDNDText(desc.name || '', true);
-                subdescriptions.push(...parseDescriptions(descName, desc.entries, fallbackUrl));
+                subdescriptions.push(...parseDescriptions(descName, desc.entries));
             } else if (desc.type == 'table') {
                 subdescriptions.push(parseDescriptionFromTable(desc));
             } else {

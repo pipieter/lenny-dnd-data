@@ -71,7 +71,7 @@ class Creature {
         if (!entries) return null;
 
         const filteredEntries = this.filterEntries(entries);
-        return parseDescriptions('', filteredEntries, this.url);
+        return parseDescriptions('', filteredEntries);
     }
 
     private filterEntries(entries: any[]): any[] {
