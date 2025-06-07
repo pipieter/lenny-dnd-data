@@ -43,9 +43,11 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     if (noFormat) {
+        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
     } else {
+        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
     }
@@ -58,7 +60,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@area ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
