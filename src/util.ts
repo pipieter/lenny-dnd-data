@@ -23,16 +23,6 @@ export function joinStringsWithOr(values: string[]): string | null {
     return commas.join(', ') + ' or ' + last;
 }
 
-export function getPythonInstallation() {
-    const choices = ['python', 'python3', 'py'];
-    for (const choice of choices) {
-        if (commandExistsSync(choice)) {
-            return choice;
-        }
-    }
-    throw 'Could not find Python installation on system.';
-}
-
 export class StopwatchLogger {
     private startTime: number;
     private previousTime: number;
@@ -52,9 +42,9 @@ export class StopwatchLogger {
     }
 
     private getColor(elapsedSeconds: number): (text: string) => string {
-        if (elapsedSeconds >= 15) return kleur.bgRed;
-        else if (elapsedSeconds >= 10) return kleur.red;
-        else if (elapsedSeconds >= 5) return kleur.yellow;
+        if (elapsedSeconds >= 5) return kleur.bgRed;
+        else if (elapsedSeconds >= 3) return kleur.red;
+        else if (elapsedSeconds >= 1) return kleur.yellow;
         else return kleur.green;
     }
 

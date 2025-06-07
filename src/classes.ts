@@ -3,6 +3,7 @@ import {
     capitalize,
     cleanDNDText,
     Description,
+    DescriptionType,
     formatWordList,
     parseAbilityScore,
     parseClassResourceValue,
@@ -41,19 +42,8 @@ class ClassFeature {
         }
 
         if (data.entries) {
-            const descs = parseDescriptions('', data.entries, '');
-            if (descs.length > 0) {
-                // Conjoin all texts with \n, keep as one Description object
-                const joinedText = descs.map((d) => d.text).join('\n');
-                this.descriptions = [
-                    {
-                        name: descs[0].name,
-                        text: `__${this.name}:__ ${joinedText}`,
-                    },
-                ];
-            } else {
-                this.descriptions = [];
-            }
+            const parsedDescriptions = parseDescriptions('', data.entries);
+            if (parsedDescriptions.length > 0) this.descriptions = parsedDescriptions;
         }
     }
 }
@@ -208,7 +198,11 @@ class CharacterClass {
             }
 
             if (text !== '') {
-                info.push({ name: '', text: `${BulletPoint} ${label} Proficiencies: ${text}` });
+                info.push({
+                    name: '',
+                    type: DescriptionType.text,
+                    value: `${BulletPoint} ${label} Proficiencies: ${text}`,
+                });
             }
         }
         return info;
@@ -233,7 +227,7 @@ class CharacterClass {
                 `${BulletPoint} HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
             ].join('\n');
 
-            info.push({ name: 'Health', text: text });
+            info.push({ name: 'Health', type: DescriptionType.text, value: text });
         }
 
         // Saving Proficiencies
@@ -245,7 +239,7 @@ class CharacterClass {
             );
 
             const text = `${BulletPoint} Saving Throw Proficiencies: ${formatWordList(savingProficiencies, true)}`;
-            profData.push({ name: '', text: text });
+            profData.push({ name: '', type: DescriptionType.text, value: text });
         }
 
         // startingProficiencies
@@ -255,8 +249,8 @@ class CharacterClass {
         }
 
         if (profData.length > 0) {
-            const mergedText = profData.map((d) => d.text).join('\n');
-            info.push({ name: 'Proficiencies', text: mergedText });
+            const mergedText = profData.map((d) => d.value).join('\n');
+            info.push({ name: 'Proficiencies', type: DescriptionType.text, value: mergedText });
         }
 
         // startEquipment
@@ -271,7 +265,11 @@ class CharacterClass {
                     text.push(`${BulletPoint} ${capitalize(cleanDNDText(line))}`);
                 }
 
-                info.push({ name: 'Starting Equipment', text: text.join('\n') });
+                info.push({
+                    name: 'Starting Equipment',
+                    type: DescriptionType.text,
+                    value: text.join('\n'),
+                });
             }
         }
 
@@ -298,7 +296,7 @@ class CharacterClass {
 
                 let text = `${BulletPoint} Ability requirements: At least ${formatWordList(skills, useAnd)}`;
 
-                multiclassData.push({ name: '', text: text });
+                multiclassData.push({ name: '', type: DescriptionType.text, value: text });
             }
 
             const multiclassProficiencies = multiclassing.proficienciesGained;
@@ -307,8 +305,8 @@ class CharacterClass {
             }
 
             if (multiclassData.length > 0) {
-                const mergedText = multiclassData.map((d) => d.text).join('\n');
-                info.push({ name: 'Multiclassing', text: mergedText });
+                const mergedText = multiclassData.map((d) => d.value).join('\n');
+                info.push({ name: 'Multiclassing', type: DescriptionType.text, value: mergedText });
             }
         }
 
@@ -374,18 +372,21 @@ class CharacterClass {
 
             for (let level = 0; level < rows.length; level++) {
                 const row = rows[level];
-                const proficiencyBonus = `${BulletPoint} **+${2 + Math.floor(level / 4)}** Proficiency Bonus`;
-                let text: string[] = [proficiencyBonus];
+                let text: string[] = [];
+
+                // Every class has the same proficiency-bonus scaling, starting on +2, scaling with 1 every 4 levels.
+                text.push(`${BulletPoint} **+${2 + Math.floor(level / 4)}** Proficiency Bonus`);
 
                 for (let i = 0; i < row.length; i++) {
                     const label = cleanDNDText(colLabels[i]);
-                    let value = row[i];
 
-                    if (!value.type) continue;
                     if (label.toLowerCase().includes('spell')) continue;
                     if (label.toLowerCase().includes('cantrip')) continue;
 
-                    value = parseClassResourceValue(value);
+                    let value = row[i];
+                    if (value.type) value = parseClassResourceValue(value);
+                    if (typeof value === 'string') value = cleanDNDText(value);
+
                     text.push(`${BulletPoint} **${value}** ${label}`);
                 }
 
@@ -397,20 +398,58 @@ class CharacterClass {
     }
 
     private setLevelResources(data: any) {
+        const spellSlotTables: Description[] = [];
+        if (data.classTableGroups) {
+            for (const tableGroup of data.classTableGroups) {
+                if (!tableGroup.rowsSpellProgression) continue;
+
+                const headers = tableGroup.colLabels.map((label: string) =>
+                    cleanDNDText(label, true)
+                );
+                const title = tableGroup.title ?? 'Spell Slots per Spell Level';
+
+                for (const spellRow of tableGroup.rowsSpellProgression) {
+                    spellSlotTables.push({
+                        name: title,
+                        type: DescriptionType.table,
+                        value: {
+                            headers,
+                            rows: [spellRow],
+                        },
+                    });
+                }
+
+                break;
+            }
+        }
+
         const spellResources = this.getSpellLevelResources(data);
         const classResources = this.getClassResources(data);
 
-        if (!spellResources && !classResources) this.levelResources = null;
+        if (!spellSlotTables && !spellResources && !classResources) this.levelResources = null;
 
         let levelResources: PaginatedDescriptions = {};
         for (let i = 0; i < 20; i++) {
             const level = i + 1;
             levelResources[level] = [];
+
+            if (spellSlotTables && spellSlotTables[i]) {
+                levelResources[level].push(spellSlotTables[i]);
+            }
+
             if (spellResources && spellResources[i]) {
-                levelResources[level].push({ name: 'Spellcasting', text: spellResources[i] });
+                levelResources[level].push({
+                    name: 'Spellcasting',
+                    type: DescriptionType.text,
+                    value: spellResources[i],
+                });
             }
             if (classResources && classResources[i]) {
-                levelResources[level].push({ name: 'Class Resources', text: classResources[i] });
+                levelResources[level].push({
+                    name: 'Class Resources',
+                    type: DescriptionType.text,
+                    value: classResources[i],
+                });
             }
         }
 

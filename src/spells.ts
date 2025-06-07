@@ -58,13 +58,13 @@ function loadSpellsFromFile(path: string): Spell[] {
             components: parseComponents(spell.components),
             duration: parseDurationTime(spell.duration),
             url: url,
-            description: parseDescriptions('', spell.entries, url),
+            description: parseDescriptions('', spell.entries),
             classes: [],
         };
 
         if (spell.entriesHigherLevel) {
             for (const entry of spell.entriesHigherLevel) {
-                result.description.push(...parseDescriptions(entry.name, entry.entries, url));
+                result.description.push(...parseDescriptions(entry.name, entry.entries));
             }
         }
 
