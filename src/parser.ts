@@ -442,7 +442,7 @@ function parseDescriptionBlock(description: string | any): string | Table {
             return cleanDNDText(description.entry);
         }
         case 'table': {
-            const table = parseDescriptionFromTable(description, '');
+            const table = parseDescriptionFromTable(description);
             return table.value;
         }
         case 'image': {
@@ -567,7 +567,7 @@ function parseTableValue(value: any): string {
     }
 }
 
-function parseDescriptionFromTable(description: any, fallbackUrl: string): Description {
+function parseDescriptionFromTable(description: any): Description {
     const title: string = description.caption || '';
     const headers: string[] = description.colLabels.map(cleanDNDText);
     const rows: string[][] = description.rows.map((row: string[]) => row.map(parseTableValue));
@@ -593,7 +593,7 @@ export function parseDescriptions(
                 const descName = cleanDNDText(desc.name || '', true);
                 subdescriptions.push(...parseDescriptions(descName, desc.entries, fallbackUrl));
             } else if (desc.type == 'table') {
-                subdescriptions.push(parseDescriptionFromTable(desc, fallbackUrl));
+                subdescriptions.push(parseDescriptionFromTable(desc));
             } else {
                 blocks.push(parseDescriptionBlock(desc));
             }
