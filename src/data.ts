@@ -14,7 +14,7 @@ function ignoreJsonFile(path: string): boolean {
     if (!existsSync(path)) return true;
     if (!lstatSync(path).isFile()) return true;
     if (!path.endsWith('.json')) return true;
-    if (path.startsWith('foundry')) return true;
+    if (path.includes('foundry-')) return true;
     if (path.endsWith('changelog.json')) return true;
     return false;
 }
