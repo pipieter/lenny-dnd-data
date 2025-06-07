@@ -712,8 +712,8 @@ export function parseClassResourceValue(value: any) {
     return value;
 }
 
-export function parseItemValue(value: number | null): string | null {
-    if (value === null || value === 0) return null;
+export function parseItemValue(value: number | undefined): string | null {
+    if (value === undefined || value === 0) return null;
 
     const gp = Math.floor(value / 100);
     const sp = Math.floor((value % 100) / 10);
@@ -738,8 +738,8 @@ export function parseItemValue(value: number | null): string | null {
     return values.join(' ');
 }
 
-export function parseItemWeight(weight: number | null): string | null {
-    if (weight === null || weight === 0) {
+export function parseItemWeight(weight: number | undefined): string | null {
+    if (weight === undefined || weight === 0) {
         return null;
     }
     if (weight < 1) {

@@ -56,16 +56,13 @@ function applyItemTemplate(item: any, entry: any, template: string): string {
     let hasRemainingTemplate = true;
     while (hasRemainingTemplate) {
         const regex = /^.*\{\{item\.([^\}]*?)\}\}.*$/g;
-        const matches = template.match(/^.*\{\{item\.([^\}]*?)\}\}.*$/g);
+        const matches = template.match(regex);
         if (matches === null) {
             hasRemainingTemplate = false;
         } else {
-            for (const match of matches) {
-                const field = match;
-                const query = '{{item.' + field + '}}';
-                const result = item[field];
-                template = template.replace(query, result);
-            }
+            const field = matches[0];
+            const result = item[field];
+            template = template.replace(field, result);
         }
     }
     return template;
@@ -169,7 +166,7 @@ export function getItems(data: any): any[] {
 
         // Item damage, if applicable
         if (item.dmg1) {
-            const damage = `**{item['dmg1']}** ${DamageTypes.get(item.dmgType)}`;
+            const damage = `**${item.dmg1}** ${DamageTypes.get(item.dmgType)}`;
             result.properties.push(damage);
         }
 
@@ -190,7 +187,7 @@ export function getItems(data: any): any[] {
             if (property.name === 'special') {
                 result.properties.push('special');
             } else {
-                const entries = properties.get('entries') || properties.get('entriesTemplate') || [];
+                const entries = property.entries || property.entriesTemplate || [];
                 if (entries.length === 0) continue;
                 if (entries.length > 1) throw `Found property with more than one entry '${property.abbreviation}`;
 
@@ -200,9 +197,9 @@ export function getItems(data: any): any[] {
 
                 // Apply template to entries of entry (required for Extended Reach)
                 for (let i = 0; i < entry.entries.length; i++) {
-                    entry.entries[i] = applyItemTemplate(item, entry, item.entries[i]);
+                    entry.entries[i] = applyItemTemplate(item, entry, entry.entries[i]);
                 }
-                result.description.push(parseDescriptions(entry.name, entry.entries, url));
+                result.description.push(...parseDescriptions(entry.name, entry.entries, url));
             }
         }
 
