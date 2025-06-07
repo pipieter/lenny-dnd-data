@@ -1,3 +1,4 @@
+import { readJsonFile } from './data';
 import { Description, parseDescriptions } from './parser';
 import { getRulesUrl } from './urls';
 
@@ -31,7 +32,11 @@ function parseRuleType(rule: VariantRule): string {
     return RuleTypes.get(type) ?? 'Unknown';
 }
 
-export function getRules(data: any): ParsedRule[] {
+function getGendataVariantRules(): ParsedRule[] {
+    // Some rules are stored in an auto-generated file.
+    const gendata_path = '5etools-src/data/generated/gendata-variantrules.json';
+    const data = readJsonFile(gendata_path);
+
     return (data.variantrule as VariantRule[]).map((rule) => {
         const url = getRulesUrl(rule.name, rule.source);
         return {
@@ -42,4 +47,22 @@ export function getRules(data: any): ParsedRule[] {
             description: parseDescriptions('', rule.entries),
         };
     });
+}
+
+function getVariantRules(data: any): ParsedRule[] {
+    return (data.variantrule as VariantRule[]).map((rule) => {
+        const url = getRulesUrl(rule.name, rule.source);
+        return {
+            name: rule.name,
+            source: rule.source,
+            url,
+            ruleType: parseRuleType(rule),
+            description: parseDescriptions('', rule.entries),
+        };
+    });
+}
+
+export function getRules(data: any): ParsedRule[] {
+    let rules = [...getVariantRules(data), ...getGendataVariantRules()];
+    return rules.sort((a, b) => a.name.localeCompare(b.name));
 }

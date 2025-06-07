@@ -1424,6 +1424,29 @@
     ]
   },
   {
+    "name": "Death Saving Throws",
+    "source": "XScreen",
+    "url": "https://5e.tools/variantrules.html#death%20saving%20throws_xscreen",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you start your turn with 0 HP, roll 1d20, and you succeed on a 10+."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Third Success**: You become Stable.\n• **Third Failure**: You die.\n• **Rolling a 1**: Counts as two failures.\n• **Rolling a 20**: You regain 1 Hit Point."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you take damage at 0 HP, it counts as a failed Death Saving Throw or two failures if the damage is from a Critical Hit."
+      }
+    ]
+  },
+  {
     "name": "Diagonals",
     "source": "DMG",
     "url": "https://5e.tools/variantrules.html#diagonals_dmg",
@@ -5237,7 +5260,7 @@
       {
         "name": "Monstrous (Sanity 1)",
         "type": "text",
-        "value": "The most warped creatures are barely even recognizable. Some become little more than a mass of writhing tentacles, or lose their physical coherence entirely. Two or more creatures can fuse together, joined by fleshy lattice. The \"lucky\" ones retain a basically humanoid shape, but otherwise appear completely monstrous, with twisted faces, extra limbs, horny growths, jointed tentacle extrusions, and so on. Such a creature might effectively become an Eldrazilike monster such as an __aboleth__, a __chuul__, a __cloaker__, a __gibbering mouther__, or a __mind flayer__."
+        "value": "The most warped creatures are barely even recognizable. Some become little more than a mass of writhing tentacles, or lose their physical coherence entirely. Two or more creatures can fuse together, joined by fleshy lattice. The \"lucky\" ones retain a basically humanoid shape, but otherwise appear completely monstrous, with twisted faces, extra limbs, horny growths, jointed tentacle extrusions, and so on. Such a creature might effectively become an Eldrazi-like monster such as an __aboleth__, a __chuul__, a __cloaker__, a __gibbering mouther__, or a __mind flayer__."
       }
     ]
   },
@@ -8244,6 +8267,384 @@
     ]
   },
   {
+    "name": "Multiclassing",
+    "source": "XPHB",
+    "url": "https://5e.tools/variantrules.html#multiclassing_xphb",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Multiclassing allows you to gain levels in multiple classes. With this rule, you have the option of gaining a level in a new class whenever you advance in level instead of gaining a level in your current class. Doing so lets you mix the abilities of those classes to realize a character concept that might not be reflected in a single class."
+      },
+      {
+        "name": "Prerequisites",
+        "type": "text",
+        "value": "To qualify for a new class, you must have a score of at least 13 in the primary ability of the new class and your current classes. For example, a Barbarian who decides to multiclass into the Druid class must have Strength and Wisdom scores of 13 or higher, since Strength is the primary ability for Barbarians and Wisdom is the primary ability for Druids."
+      },
+      {
+        "name": "Experience Points",
+        "type": "text",
+        "value": "The Experience Point cost to gain a level is based on your total character level, not your level in a particular class, as shown in the Character Advancement table in this chapter. For example, if you are a level 6 Cleric / level 1 Fighter, you must gain enough XP to reach level 8 before you can take your second level as a Fighter or your seventh level as a Cleric."
+      },
+      {
+        "name": "Hit Points and Hit Point Dice",
+        "type": "text",
+        "value": "You gain the Hit Points from your new class as described for levels after 1. You gain the level 1 Hit Points for a class only when your total character level is 1."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Add together the Hit Dice granted by all your classes to form your pool of Hit Dice. If these dice are the same die type, you can pool them together. For example, both the Fighter and the Paladin have a d10 Hit Die, so if you are a level 5 Fighter / level 5 Paladin, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, track them separately. If you are a level 5 Cleric / level 5 Paladin, for example, you have five d8 Hit Dice and five d10 Hit Dice."
+      },
+      {
+        "name": "Proficiency Bonus",
+        "type": "text",
+        "value": "Your Proficiency Bonus is based on your total character level, not your level in a particular class, as shown in the Character Advancement table. For example, if you are a level 3 Fighter / level 2 Rogue, you have the Proficiency Bonus of a level 5 character, which is +3."
+      },
+      {
+        "name": "Proficiencies",
+        "type": "text",
+        "value": "When you gain your first level in a class other than your initial class, you gain only some of the new class's starting proficiencies, as detailed in each class's description in chapter 3."
+      },
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "When you gain a new level in a class, you get its features for that level. A few features have additional rules when you're multiclassing. Check the information about multiclassing included in each of your classes' descriptions."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Special rules apply to Extra Attack, Spellcasting, and features (such as Unarmored Defense) that give you alternative ways to calculate your Armor Class."
+      },
+      {
+        "name": "Armor Class",
+        "type": "text",
+        "value": "If you have multiple ways to calculate your Armor Class, you can benefit from only one at a time. For example, a Monk/Sorcerer with a Monk's Unarmored Defense feature and a Sorcerer's Draconic Resilience feature must choose only one of those features as a way to calculate Armor Class."
+      },
+      {
+        "name": "Extra Attack",
+        "type": "text",
+        "value": "If you gain the Extra Attack feature from more than one class, the features don't stack. You can't make more than two attacks with this feature unless you have a feature that says you can (such as the Fighter's Two Extra Attacks feature)."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Similarly, the Warlock's Thirsting Blade invocation, which grants you the Extra Attack feature with your pact weapon, doesn't give you additional attacks if you also have Extra Attack."
+      },
+      {
+        "name": "Spellcasting",
+        "type": "text",
+        "value": "Your capacity for spellcasting depends partly on your combined levels in all your spellcasting classes and partly on your individual levels in those classes. Once you have the Spellcasting feature from more than one class, use the rules below. If you multiclass but have the Spellcasting feature from only one class, follow the rules for that class."
+      },
+      {
+        "name": "Multiclass Spellcaster: Spell Slots per Spell Level",
+        "type": "table",
+        "value": {
+          "headers": [
+            "Level",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "rows": [
+            [
+              "1",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "2",
+              "3",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "3",
+              "4",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "4",
+              "4",
+              "3",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "5",
+              "4",
+              "3",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "6",
+              "4",
+              "3",
+              "3",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "7",
+              "4",
+              "3",
+              "3",
+              "1",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "8",
+              "4",
+              "3",
+              "3",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "9",
+              "4",
+              "3",
+              "3",
+              "3",
+              "1",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "10",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "11",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "12",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "13",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "—",
+              "—"
+            ],
+            [
+              "14",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "—",
+              "—"
+            ],
+            [
+              "15",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "1",
+              "—"
+            ],
+            [
+              "16",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "1",
+              "—"
+            ],
+            [
+              "17",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "18",
+              "4",
+              "3",
+              "3",
+              "3",
+              "3",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "19",
+              "4",
+              "3",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "20",
+              "4",
+              "3",
+              "3",
+              "3",
+              "3",
+              "2",
+              "2",
+              "1",
+              "1"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Spells Prepared",
+        "type": "text",
+        "value": "You determine what spells you can prepare for each class individually, as if you were a single-classed member of that class. If you are a level 4 Ranger / level 3 Sorcerer, for example, you can prepare five level 1 Ranger spells, and you can prepare six Sorcerer spells of level 1 or 2 (as well as four Sorcerer cantrips)."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Each spell you prepare is associated with one of your classes, and you use the spellcasting ability of that class when you cast the spell."
+      },
+      {
+        "name": "Cantrips",
+        "type": "text",
+        "value": "If a cantrip of yours increases in power at higher levels, the increase is based on your total character level, not your level in a particular class, unless the spell says otherwise."
+      },
+      {
+        "name": "Spell Slots",
+        "type": "text",
+        "value": "You determine your available spell slots by adding together the following:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• All your levels in the Bard, Cleric, Druid, Sorcerer, and Wizard classes\n• Half your levels (round up) in the Paladin and Ranger classes\n• One third of your Fighter or Rogue levels (round down) if you have the Eldritch Knight or Arcane Trickster subclass."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Then look up this total level in the Level column of the Multiclass Spellcaster table. You use the slots for that level to cast spells of an appropriate level from any class whose Spellcasting feature you have."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "This table might give you spell slots of a higher level than the spells you prepare. You can use those slots but only to cast your lower-level spells. If a lower-level spell that you cast, like __Burning Hands__, has an enhanced effect when cast at a higher level, you can use the enhanced effect as normal."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "For example, if you are a level 4 Ranger / level 3 Sorcerer, you count as a level 5 character when determining your spell slots, counting all your levels as a Sorcerer and half your Ranger levels. As shown in the Multiclass Spellcaster table, you have four level 1 spell slots, three level 2 slots, and two level 3 slots. However, you can't prepare any level 3 spells, nor can you prepare any level 2 Ranger spells. You can use the spell slots of those levels to cast the spells you do prepare—and potentially enhance their effects."
+      },
+      {
+        "name": "Pact Magic",
+        "type": "text",
+        "value": "If you have the Pact Magic feature from the Warlock class and the Spellcasting feature, you can use the spell slots you gain from Pact Magic to cast spells you have prepared from classes with the Spellcasting feature, and you can use the spell slots you gain from the Spellcasting feature to cast Warlock spells you have prepared."
+      }
+    ]
+  },
+  {
     "name": "Mysterious Islands",
     "source": "GoS",
     "url": "https://5e.tools/variantrules.html#mysterious%20islands_gos",
@@ -10045,6 +10446,489 @@
         "name": "",
         "type": "text",
         "value": "If you take an optional feature that replaces another feature, you gain no benefit from the replaced one and don't qualify for anything in the game that requires it."
+      }
+    ]
+  },
+  {
+    "name": "Parleying with Monsters",
+    "source": "TCE",
+    "url": "https://5e.tools/variantrules.html#parleying%20with%20monsters_tce",
+    "ruleType": "Optional",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "*Why fight if a lively chat is possible? If things get out of hand, just show yourself out with a dimension door.* - Tasha"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Meeting a monster doesn't have to spark a fight. An offering, like food, can calm some hostile monsters, and sapient creatures often prefer to talk than to draw weapons. If the adventurers try to parley with a monster, you may improvise the encounter or use the social interaction rules in the Dungeon Master's Guide. Consider granting the characters advantage on any ability check they make to communicate with a creature if they offer something it wants. The \"Monsters' Desires\" section below suggest things that a creature might like, depending on its type."
+      },
+      {
+        "name": "Monster Research",
+        "type": "text",
+        "value": "Adventurers can research what a creature is likely to desire. The Monster Research table suggests which skills can be used to learn about a creature of a particular type. The DC for a relevant ability check equals 10 + the creature's challenge rating."
+      },
+      {
+        "name": "Monster Research",
+        "type": "table",
+        "value": {
+          "headers": [
+            "Type",
+            "Suggested Skills"
+          ],
+          "rows": [
+            [
+              "Aberration",
+              "Arcana"
+            ],
+            [
+              "Beast",
+              "Animal Handling, Nature, or Survival"
+            ],
+            [
+              "Celestial",
+              "Arcana or Religion"
+            ],
+            [
+              "Construct",
+              "Arcana"
+            ],
+            [
+              "Dragon",
+              "Arcana, History, or Nature"
+            ],
+            [
+              "Elemental",
+              "Arcana or Nature"
+            ],
+            [
+              "Fey",
+              "Arcana or Nature"
+            ],
+            [
+              "Fiend",
+              "Arcana or Religion"
+            ],
+            [
+              "Giant",
+              "History"
+            ],
+            [
+              "Humanoid",
+              "History"
+            ],
+            [
+              "Monstrosity",
+              "Nature or Survival"
+            ],
+            [
+              "Ooze",
+              "Arcana or Survival"
+            ],
+            [
+              "Plant",
+              "Nature or Survival"
+            ],
+            [
+              "Undead",
+              "Arcana or Religion"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Aberrations",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "The brain or other organs of a rare creature"
+            ],
+            [
+              "2",
+              "Flattery and obsequiousness"
+            ],
+            [
+              "3",
+              "Secrets or lore it doesn't already know"
+            ],
+            [
+              "4",
+              "Accepting a strange, organic graft onto your body"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Beasts",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Fresh meat"
+            ],
+            [
+              "2",
+              "A soothing melody"
+            ],
+            [
+              "3",
+              "Brightly colored beads, cloth, feathers, or string"
+            ],
+            [
+              "4",
+              "An old stuffed animal or other soft trinket"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Celestials",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "The tale of a heroic figure"
+            ],
+            [
+              "2",
+              "An oath to do three charitable deeds before dawn"
+            ],
+            [
+              "3",
+              "The crown of a defeated tyrant"
+            ],
+            [
+              "4",
+              "A holy relic or treasured family heirloom"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Constructs",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Oil to apply to the construct's joints"
+            ],
+            [
+              "2",
+              "A magic item with charges, to be used as fuel"
+            ],
+            [
+              "3",
+              "A vessel infused with elemental power"
+            ],
+            [
+              "4",
+              "Adamantine or mithral components"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Dragons",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Gold or gems"
+            ],
+            [
+              "2",
+              "Anything from a draconic rival's hoard"
+            ],
+            [
+              "3",
+              "An antique passed down at least three generations"
+            ],
+            [
+              "4",
+              "A flattering artistic depiction of the dragon"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Elementals",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A gem worth at least 50 gp, which the creature eats"
+            ],
+            [
+              "2",
+              "An exceedingly pure sample of a favored element"
+            ],
+            [
+              "3",
+              "A way to return the elemental to its home plane"
+            ],
+            [
+              "4",
+              "Performing a dance from the elemental's home plane"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Fey",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "The memory of your first kiss"
+            ],
+            [
+              "2",
+              "The color of your eyes"
+            ],
+            [
+              "3",
+              "An object of deep sentimental value to you"
+            ],
+            [
+              "4",
+              "Reciting a sublime poem"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Fiends",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Your soul"
+            ],
+            [
+              "2",
+              "A desecrated holy object"
+            ],
+            [
+              "3",
+              "Blood from a living or recently slain loved one"
+            ],
+            [
+              "4",
+              "Breaking a sacred promise in the fiend's presence"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Giants",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A dwarf admitting giant-craft to be superior to dwarf-craft"
+            ],
+            [
+              "2",
+              "A strong working animal"
+            ],
+            [
+              "3",
+              "Multiple barrels of ale"
+            ],
+            [
+              "4",
+              "Treasure stolen from a rival giant"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Humanoids",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Promising to find a lost item of great importance to their culture"
+            ],
+            [
+              "2",
+              "Challenging them to a type of friendly contest, such as dancing, singing, or drinking"
+            ],
+            [
+              "3",
+              "Recovering something they've lost"
+            ],
+            [
+              "4",
+              "Information on a foe's secrets or weaknesses"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Monstrosities",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Dislodging the stuck scraps of the creature's last meal"
+            ],
+            [
+              "2",
+              "The creature's favorite food"
+            ],
+            [
+              "3",
+              "Driving off the creature's rival"
+            ],
+            [
+              "4",
+              "Making movements that mimic the monster's mating dance"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Oozes",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A vial of putrid liquids"
+            ],
+            [
+              "2",
+              "A cloth bearing a noxious odor"
+            ],
+            [
+              "3",
+              "Bones or metal, which the ooze promptly absorbs"
+            ],
+            [
+              "4",
+              "A gallon of any effervescent fluid"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Plants",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A pound of mulch"
+            ],
+            [
+              "2",
+              "Water from a spring infused with Feywild energy"
+            ],
+            [
+              "3",
+              "Clearing invasive vegetation from the creature's territory"
+            ],
+            [
+              "4",
+              "Destroying all axes and fire-making implements the party carries"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Undead",
+        "type": "table",
+        "value": {
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A vial of blood"
+            ],
+            [
+              "2",
+              "A personal memento from the creature's past"
+            ],
+            [
+              "3",
+              "Materials, tools, or the skills to sun-proof a crumbling mausoleum"
+            ],
+            [
+              "4",
+              "Completing a task the creature was unable to finish in life"
+            ]
+          ]
+        }
       }
     ]
   },
@@ -15795,6 +16679,59 @@
         "name": "",
         "type": "text",
         "value": "A weapon attack is an attack roll made with a weapon."
+      }
+    ]
+  },
+  {
+    "name": "Weapon Mastery Properties",
+    "source": "XPHB",
+    "url": "https://5e.tools/variantrules.html#weapon%20mastery%20properties_xphb",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below."
+      },
+      {
+        "name": "Cleave",
+        "type": "text",
+        "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+      },
+      {
+        "name": "Graze",
+        "type": "text",
+        "value": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+      },
+      {
+        "name": "Nick",
+        "type": "text",
+        "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+      },
+      {
+        "name": "Push",
+        "type": "text",
+        "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+      },
+      {
+        "name": "Sap",
+        "type": "text",
+        "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+      },
+      {
+        "name": "Slow",
+        "type": "text",
+        "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+      },
+      {
+        "name": "Topple",
+        "type": "text",
+        "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+      },
+      {
+        "name": "Vex",
+        "type": "text",
+        "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
       }
     ]
   }
