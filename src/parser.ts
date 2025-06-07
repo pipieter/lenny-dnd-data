@@ -420,7 +420,7 @@ function parseDescriptionBlock(description: string | any): string | Table {
             return cleanDNDText(text);
         }
         case 'item': {
-            const entries: Array<string | Table> = [];
+            const entries: (string | Table)[] = [];
             if (description.entries) {
                 entries.push(...description.entries.map(parseDescriptionBlock));
             } else if (description.entry) {
@@ -578,7 +578,7 @@ function parseDescriptionFromTable(description: any): Description {
 
 export function parseDescriptions(name: string, descriptions: any[]): Description[] {
     const subdescriptions: Description[] = [];
-    const blocks: Array<string | Table> = [];
+    const blocks: (string | Table)[] = [];
 
     for (const desc of descriptions) {
         // Special case scenario where an entry is a description on its own
