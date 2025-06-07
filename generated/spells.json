@@ -1815,7 +1815,7 @@
       },
       {
         "name": "Omens",
-        "text": "```+--------------------------------------------+\r\n| Omen         | For Results That Will Be... |\r\n|--------------+-----------------------------|\r\n| Weal         | Good                        |\r\n| Woe          | Bad                         |\r\n| Weal and woe | Good and bad                |\r\n| Indifference | Neither good nor bad        |\r\n+--------------------------------------------+\r\n```"
+        "text": "```╭──────────────┬─────────────────────────────╮\n│ Omen         │ For Results That Will Be... │\n├──────────────┼─────────────────────────────┤\n│ Weal         │ Good                        │\n│ Woe          │ Bad                         │\n│ Weal and woe │ Good and bad                │\n│ Indifference │ Neither good nor bad        │\n╰──────────────┴─────────────────────────────╯\n```"
       }
     ],
     "classes": [
@@ -3975,7 +3975,7 @@
       },
       {
         "name": "Chaos Bolt",
-        "text": "```+------------------+\r\n| d8 | Damage Type |\r\n|----+-------------|\r\n| 1  | Acid        |\r\n| 2  | Cold        |\r\n| 3  | Fire        |\r\n| 4  | Force       |\r\n| 5  | Lightning   |\r\n| 6  | Poison      |\r\n| 7  | Psychic     |\r\n| 8  | Thunder     |\r\n+------------------+\r\n```"
+        "text": "```╭────┬─────────────╮\n│ d8 │ Damage Type │\n├────┼─────────────┤\n│ 1  │ Acid        │\n│ 2  │ Cold        │\n│ 3  │ Fire        │\n│ 4  │ Force       │\n│ 5  │ Lightning   │\n│ 6  │ Poison      │\n│ 7  │ Psychic     │\n│ 8  │ Thunder     │\n╰────┴─────────────╯\n```"
       },
       {
         "name": "At Higher Levels",
@@ -5318,7 +5318,7 @@
       },
       {
         "name": "Confusion Behavior",
-        "text": "```+------------------------------------------------------+\r\n| d10  | Behavior                                      |\r\n|------+-----------------------------------------------|\r\n| 1    | The creature uses all its movement to move in |\r\n|      | a random direction. To determine the          |\r\n|      | direction, roll a d8 and assign a direction   |\r\n|      | to each die face. The creature doesn't take   |\r\n|      | an action this turn.                          |\r\n| 2-6  | The creature doesn't move or take actions     |\r\n|      | this turn.                                    |\r\n| 7-8  | The creature uses its action to make a melee  |\r\n|      | attack against a randomly determined creature |\r\n|      | within its reach. If there is no creature     |\r\n|      | within its reach, the creature does nothing   |\r\n|      | this turn.                                    |\r\n| 9-10 | The creature can act and move normally.       |\r\n+------------------------------------------------------+\r\n```"
+        "text": "```╭──────┬───────────────────────────────────────────────╮\n│ d10  │ Behavior                                      │\n├──────┼───────────────────────────────────────────────┤\n│ 1    │ The creature uses all its movement to move in │\n│      │ a random direction. To determine the          │\n│      │ direction, roll a d8 and assign a direction   │\n│      │ to each die face. The creature doesn't take   │\n│      │ an action this turn.                          │\n│ 2-6  │ The creature doesn't move or take actions     │\n│      │ this turn.                                    │\n│ 7-8  │ The creature uses its action to make a melee  │\n│      │ attack against a randomly determined creature │\n│      │ within its reach. If there is no creature     │\n│      │ within its reach, the creature does nothing   │\n│      │ this turn.                                    │\n│ 9-10 │ The creature can act and move normally.       │\n╰──────┴───────────────────────────────────────────────╯\n```"
       },
       {
         "name": "At Higher Levels",
@@ -5365,7 +5365,7 @@
       },
       {
         "name": "",
-        "text": "```+------------------------------------------------------+\r\n| 1d10 | Behavior for the Turn                         |\r\n|------+-----------------------------------------------|\r\n| 1    | The target doesn't take an action, and it     |\r\n|      | uses all its movement to move. Roll 1d4 for   |\r\n|      | the direction: **1**, north; **2**, east;     |\r\n|      | **3**, south; or **4**, west.                 |\r\n| 2-6  | The target doesn't move or take actions.      |\r\n| 7-8  | The target doesn't move, and it takes the     |\r\n|      | Attack action to make one melee attack        |\r\n|      | against a random creature within reach. If    |\r\n|      | none are within reach, the target takes no    |\r\n|      | action.                                       |\r\n| 9-10 | The target chooses its behavior.              |\r\n+------------------------------------------------------+\r\n```"
+        "text": "```╭──────┬───────────────────────────────────────────────╮\n│ 1d10 │ Behavior for the Turn                         │\n├──────┼───────────────────────────────────────────────┤\n│ 1    │ The target doesn't take an action, and it     │\n│      │ uses all its movement to move. Roll 1d4 for   │\n│      │ the direction: **1**, north; **2**, east;     │\n│      │ **3**, south; or **4**, west.                 │\n│ 2-6  │ The target doesn't move or take actions.      │\n│ 7-8  │ The target doesn't move, and it takes the     │\n│      │ Attack action to make one melee attack        │\n│      │ against a random creature within reach. If    │\n│      │ none are within reach, the target takes no    │\n│      │ action.                                       │\n│ 9-10 │ The target chooses its behavior.              │\n╰──────┴───────────────────────────────────────────────╯\n```"
       },
       {
         "name": "Using a Higher-Level Spell Slot",
@@ -6673,15 +6673,15 @@
       },
       {
         "name": "Precipitation",
-        "text": "```+----------------------------------------------------+\r\n| Stage | Condition                                  |\r\n|-------+--------------------------------------------|\r\n| 1     | Clear                                      |\r\n| 2     | Light clouds                               |\r\n| 3     | Overcast or ground fog                     |\r\n| 4     | Rain, hail, or snow                        |\r\n| 5     | Torrential rain, driving hail, or blizzard |\r\n+----------------------------------------------------+\r\n```"
+        "text": "```╭───────┬────────────────────────────────────────────╮\n│ Stage │ Condition                                  │\n├───────┼────────────────────────────────────────────┤\n│ 1     │ Clear                                      │\n│ 2     │ Light clouds                               │\n│ 3     │ Overcast or ground fog                     │\n│ 4     │ Rain, hail, or snow                        │\n│ 5     │ Torrential rain, driving hail, or blizzard │\n╰───────┴────────────────────────────────────────────╯\n```"
       },
       {
         "name": "Temperature",
-        "text": "```+-------------------------+\r\n| Stage | Condition       |\r\n|-------+-----------------|\r\n| 1     | Unbearable heat |\r\n| 2     | Hot             |\r\n| 3     | Warm            |\r\n| 4     | Cool            |\r\n| 5     | Cold            |\r\n| 6     | Arctic cold     |\r\n+-------------------------+\r\n```"
+        "text": "```╭───────┬─────────────────╮\n│ Stage │ Condition       │\n├───────┼─────────────────┤\n│ 1     │ Unbearable heat │\n│ 2     │ Hot             │\n│ 3     │ Warm            │\n│ 4     │ Cool            │\n│ 5     │ Cold            │\n│ 6     │ Arctic cold     │\n╰───────┴─────────────────╯\n```"
       },
       {
         "name": "Wind",
-        "text": "```+-----------------------+\r\n| Stage | Condition     |\r\n|-------+---------------|\r\n| 1     | Calm          |\r\n| 2     | Moderate wind |\r\n| 3     | Strong wind   |\r\n| 4     | Gale          |\r\n| 5     | Storm         |\r\n+-----------------------+\r\n```"
+        "text": "```╭───────┬───────────────╮\n│ Stage │ Condition     │\n├───────┼───────────────┤\n│ 1     │ Calm          │\n│ 2     │ Moderate wind │\n│ 3     │ Strong wind   │\n│ 4     │ Gale          │\n│ 5     │ Storm         │\n╰───────┴───────────────╯\n```"
       }
     ],
     "classes": [
@@ -6724,15 +6724,15 @@
       },
       {
         "name": "Precipitation",
-        "text": "```+----------------------------------------------------+\r\n| Stage | Condition                                  |\r\n|-------+--------------------------------------------|\r\n| 1     | Clear                                      |\r\n| 2     | Light clouds                               |\r\n| 3     | Overcast or ground fog                     |\r\n| 4     | Rain, hail, or snow                        |\r\n| 5     | Torrential rain, driving hail, or blizzard |\r\n+----------------------------------------------------+\r\n```"
+        "text": "```╭───────┬────────────────────────────────────────────╮\n│ Stage │ Condition                                  │\n├───────┼────────────────────────────────────────────┤\n│ 1     │ Clear                                      │\n│ 2     │ Light clouds                               │\n│ 3     │ Overcast or ground fog                     │\n│ 4     │ Rain, hail, or snow                        │\n│ 5     │ Torrential rain, driving hail, or blizzard │\n╰───────┴────────────────────────────────────────────╯\n```"
       },
       {
         "name": "Temperature",
-        "text": "```+-------------------+\r\n| Stage | Condition |\r\n|-------+-----------|\r\n| 1     | Heat wave |\r\n| 2     | Hot       |\r\n| 3     | Warm      |\r\n| 4     | Cool      |\r\n| 5     | Cold      |\r\n| 6     | Freezing  |\r\n+-------------------+\r\n```"
+        "text": "```╭───────┬───────────╮\n│ Stage │ Condition │\n├───────┼───────────┤\n│ 1     │ Heat wave │\n│ 2     │ Hot       │\n│ 3     │ Warm      │\n│ 4     │ Cool      │\n│ 5     │ Cold      │\n│ 6     │ Freezing  │\n╰───────┴───────────╯\n```"
       },
       {
         "name": "Wind",
-        "text": "```+-----------------------+\r\n| Stage | Condition     |\r\n|-------+---------------|\r\n| 1     | Calm          |\r\n| 2     | Moderate wind |\r\n| 3     | Strong wind   |\r\n| 4     | Gale          |\r\n| 5     | Storm         |\r\n+-----------------------+\r\n```"
+        "text": "```╭───────┬───────────────╮\n│ Stage │ Condition     │\n├───────┼───────────────┤\n│ 1     │ Calm          │\n│ 2     │ Moderate wind │\n│ 3     │ Strong wind   │\n│ 4     │ Gale          │\n│ 5     │ Storm         │\n╰───────┴───────────────╯\n```"
       }
     ],
     "classes": [
@@ -7344,7 +7344,7 @@
       },
       {
         "name": "Creation",
-        "text": "```+------------------------------------+\r\n| Material              | Duration   |\r\n|-----------------------+------------|\r\n| Vegetable matter      | 1 day      |\r\n| Stone or crystal      | 12 hours   |\r\n| Precious metals       | 1 hour     |\r\n| Gems                  | 10 minutes |\r\n| Adamantine or mithral | 1 minute   |\r\n+------------------------------------+\r\n```"
+        "text": "```╭───────────────────────┬────────────╮\n│ Material              │ Duration   │\n├───────────────────────┼────────────┤\n│ Vegetable matter      │ 1 day      │\n│ Stone or crystal      │ 12 hours   │\n│ Precious metals       │ 1 hour     │\n│ Gems                  │ 10 minutes │\n│ Adamantine or mithral │ 1 minute   │\n╰───────────────────────┴────────────╯\n```"
       },
       {
         "name": "At Higher Levels",
@@ -7387,7 +7387,7 @@
       },
       {
         "name": "Materials",
-        "text": "```+------------------------------------+\r\n| Material              | Duration   |\r\n|-----------------------+------------|\r\n| Vegetable matter      | 24 hours   |\r\n| Stone or crystal      | 12 hours   |\r\n| Precious metals       | 1 hour     |\r\n| Gems                  | 10 minutes |\r\n| Adamantine or mithral | 1 minute   |\r\n+------------------------------------+\r\n```"
+        "text": "```╭───────────────────────┬────────────╮\n│ Material              │ Duration   │\n├───────────────────────┼────────────┤\n│ Vegetable matter      │ 24 hours   │\n│ Stone or crystal      │ 12 hours   │\n│ Precious metals       │ 1 hour     │\n│ Gems                  │ 10 minutes │\n│ Adamantine or mithral │ 1 minute   │\n╰───────────────────────┴────────────╯\n```"
       },
       {
         "name": "Using a Higher-Level Spell Slot",
@@ -9606,7 +9606,7 @@
       },
       {
         "name": "Divine Word Effects",
-        "text": "```+------------------------------------------------------+\r\n| Hit Points | Effect                                  |\r\n|------------+-----------------------------------------|\r\n| 0-20       | The target dies.                        |\r\n| 21-30      | The target has the Blinded, Deafened,   |\r\n|            | and Stunned conditions for 1 hour.      |\r\n| 31-40      | The target has the Blinded and Deafened |\r\n|            | conditions for 10 minutes.              |\r\n| 41-50      | The target has the Deafened condition   |\r\n|            | for 1 minute.                           |\r\n+------------------------------------------------------+\r\n```"
+        "text": "```╭────────────┬─────────────────────────────────────────╮\n│ Hit Points │ Effect                                  │\n├────────────┼─────────────────────────────────────────┤\n│ 0-20       │ The target dies.                        │\n│ 21-30      │ The target has the Blinded, Deafened,   │\n│            │ and Stunned conditions for 1 hour.      │\n│ 31-40      │ The target has the Blinded and Deafened │\n│            │ conditions for 10 minutes.              │\n│ 41-50      │ The target has the Deafened condition   │\n│            │ for 1 minute.                           │\n╰────────────┴─────────────────────────────────────────╯\n```"
       }
     ],
     "classes": [
@@ -26874,7 +26874,7 @@
       },
       {
         "name": "Reincarnate Races",
-        "text": "```+-----------------------------+\r\n| d100  | Race                |\r\n|-------+---------------------|\r\n| 1-4   | Dragonborn          |\r\n| 5-13  | Dwarf, hill         |\r\n| 14-21 | Dwarf, mountain     |\r\n| 22-25 | Elf, dark           |\r\n| 26-34 | Elf, high           |\r\n| 35-42 | Elf, wood           |\r\n| 43-46 | Gnome, forest       |\r\n| 47-52 | Gnome, rock         |\r\n| 53-56 | Half-elf            |\r\n| 57-60 | Half-orc            |\r\n| 61-68 | Halfling, lightfoot |\r\n| 69-76 | Halfling, stout     |\r\n| 77-96 | Human               |\r\n| 97-0  | Tiefling            |\r\n+-----------------------------+\r\n```"
+        "text": "```╭───────┬─────────────────────╮\n│ d100  │ Race                │\n├───────┼─────────────────────┤\n│ 1-4   │ Dragonborn          │\n│ 5-13  │ Dwarf, hill         │\n│ 14-21 │ Dwarf, mountain     │\n│ 22-25 │ Elf, dark           │\n│ 26-34 │ Elf, high           │\n│ 35-42 │ Elf, wood           │\n│ 43-46 │ Gnome, forest       │\n│ 47-52 │ Gnome, rock         │\n│ 53-56 │ Half-elf            │\n│ 57-60 │ Half-orc            │\n│ 61-68 │ Halfling, lightfoot │\n│ 69-76 │ Halfling, stout     │\n│ 77-96 │ Human               │\n│ 97-0  │ Tiefling            │\n╰───────┴─────────────────────╯\n```"
       }
     ],
     "classes": [
@@ -26905,7 +26905,7 @@
       },
       {
         "name": "",
-        "text": "```+-------------------+\r\n| 1d10 | Species    |\r\n|------+------------|\r\n| 1    | Aasimar    |\r\n| 2    | Dragonborn |\r\n| 3    | Dwarf      |\r\n| 4    | Elf        |\r\n| 5    | Gnome      |\r\n| 6    | Goliath    |\r\n| 7    | Halfling   |\r\n| 8    | Human      |\r\n| 9    | Orc        |\r\n| 10   | Tiefling   |\r\n+-------------------+\r\n```"
+        "text": "```╭──────┬────────────╮\n│ 1d10 │ Species    │\n├──────┼────────────┤\n│ 1    │ Aasimar    │\n│ 2    │ Dragonborn │\n│ 3    │ Dwarf      │\n│ 4    │ Elf        │\n│ 5    │ Gnome      │\n│ 6    │ Goliath    │\n│ 7    │ Halfling   │\n│ 8    │ Human      │\n│ 9    │ Orc        │\n│ 10   │ Tiefling   │\n╰──────┴────────────╯\n```"
       }
     ],
     "classes": [
@@ -27780,11 +27780,11 @@
       },
       {
         "name": "Knowledge of Target",
-        "text": "```+------------------------------------------------------+\r\n| Knowledge                            | Save Modifier |\r\n|--------------------------------------+---------------|\r\n| Secondhand (you have heard of the    | +5            |\r\n| target)                              |               |\r\n| Firsthand (you have met the target)  | +0            |\r\n| Familiar (you know the target well)  | -5            |\r\n+------------------------------------------------------+\r\n```"
+        "text": "```╭──────────────────────────────────────┬───────────────╮\n│ Knowledge                            │ Save Modifier │\n├──────────────────────────────────────┼───────────────┤\n│ Secondhand (you have heard of the    │ +5            │\n│ target)                              │               │\n│ Firsthand (you have met the target)  │ +0            │\n│ Familiar (you know the target well)  │ -5            │\n╰──────────────────────────────────────┴───────────────╯\n```"
       },
       {
         "name": "Connection to Target",
-        "text": "```+------------------------------------------------------+\r\n| Connection                           | Save Modifier |\r\n|--------------------------------------+---------------|\r\n| Likeness or picture                  | -2            |\r\n| Possession or garment                | -4            |\r\n| Body part, lock of hair, bit of      | -10           |\r\n| nail, or the like                    |               |\r\n+------------------------------------------------------+\r\n```"
+        "text": "```╭──────────────────────────────────────┬───────────────╮\n│ Connection                           │ Save Modifier │\n├──────────────────────────────────────┼───────────────┤\n│ Likeness or picture                  │ -2            │\n│ Possession or garment                │ -4            │\n│ Body part, lock of hair, bit of      │ -10           │\n│ nail, or the like                    │               │\n╰──────────────────────────────────────┴───────────────╯\n```"
       }
     ],
     "classes": [
@@ -27839,11 +27839,11 @@
       },
       {
         "name": "",
-        "text": "```+----------------------------------------------------+\r\n| Your Knowledge of the Target Is... | Save Modifier |\r\n|------------------------------------+---------------|\r\n| Secondhand (heard of the target)   | +5            |\r\n| Firsthand (met the target)         | +0            |\r\n| Extensive (know the target well)   | -5            |\r\n+----------------------------------------------------+\r\n```"
+        "text": "```╭────────────────────────────────────┬───────────────╮\n│ Your Knowledge of the Target Is... │ Save Modifier │\n├────────────────────────────────────┼───────────────┤\n│ Secondhand (heard of the target)   │ +5            │\n│ Firsthand (met the target)         │ +0            │\n│ Extensive (know the target well)   │ -5            │\n╰────────────────────────────────────┴───────────────╯\n```"
       },
       {
         "name": "",
-        "text": "```+------------------------------------------------------+\r\n| You Have the Target's...             | Save Modifier |\r\n|--------------------------------------+---------------|\r\n| Picture or other likeness            | -2            |\r\n| Garment or other possession          | -4            |\r\n| Body part, lock of hair, or bit of   | -10           |\r\n| nail                                 |               |\r\n+------------------------------------------------------+\r\n```"
+        "text": "```╭──────────────────────────────────────┬───────────────╮\n│ You Have the Target's...             │ Save Modifier │\n├──────────────────────────────────────┼───────────────┤\n│ Picture or other likeness            │ -2            │\n│ Garment or other possession          │ -4            │\n│ Body part, lock of hair, or bit of   │ -10           │\n│ nail                                 │               │\n╰──────────────────────────────────────┴───────────────╯\n```"
       }
     ],
     "classes": [
@@ -31690,7 +31690,7 @@
       },
       {
         "name": "",
-        "text": "```+-----------------------------------------------------+\r\n| d6  | Demons Summoned                               |\r\n|-----+-----------------------------------------------|\r\n| 1-2 | Two demons of challenge rating 1 or lower     |\r\n| 3-4 | Four demons of challenge rating 1/2 or lower  |\r\n| 5-6 | Eight demons of challenge rating 1/4 or lower |\r\n+-----------------------------------------------------+\r\n```"
+        "text": "```╭─────┬───────────────────────────────────────────────╮\n│ d6  │ Demons Summoned                               │\n├─────┼───────────────────────────────────────────────┤\n│ 1-2 │ Two demons of challenge rating 1 or lower     │\n│ 3-4 │ Four demons of challenge rating 1/2 or lower  │\n│ 5-6 │ Eight demons of challenge rating 1/4 or lower │\n╰─────┴───────────────────────────────────────────────╯\n```"
       },
       {
         "name": "At Higher Levels",
@@ -32773,7 +32773,7 @@
       },
       {
         "name": "Teleportation",
-        "text": "```+------------------------------------------------------+\r\n|          |         | Similar  | Off       | On       |\r\n| Familia� | Mishap  | Area     | Target    | Target   |\r\n|----------+---------+----------+-----------+----------|\r\n| Permane� | —     | —      | —       | 01–100 |\r\n| circle   |         |          |           |          |\r\n| Associa� | —     | —      | —       | 01–100 |\r\n| object   |         |          |           |          |\r\n| Very     | 01–05 | 06–13  | 14–24   | 25–100 |\r\n| familiar |         |          |           |          |\r\n| Seen     | 01–33 | 34–43  | 44–53   | 54–100 |\r\n| casually |         |          |           |          |\r\n| Viewed   | 01–43 | 44–53  | 54–73   | 74–100 |\r\n| once     |         |          |           |          |\r\n| Descrip� | 01–43 | 44–53  | 54–73   | 74–100 |\r\n| False    | 01–50 | 51–100 | —       | —      |\r\n| destina� |         |          |           |          |\r\n+------------------------------------------------------+\r\n```"
+        "text": "The table for [Teleportation can be found here](https://5e.tools/spells.html#teleport_phb)."
       },
       {
         "name": "Familiarity",
