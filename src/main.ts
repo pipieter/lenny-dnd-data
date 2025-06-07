@@ -5,7 +5,6 @@ import { getSpells } from './spells';
 import { getCreatures } from './creatures';
 import { StopwatchLogger } from './util';
 import { getClasses } from './classes';
-import { getRules } from './rules';
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
@@ -26,15 +25,11 @@ function main(): void {
     const classes = getClasses();
     stopwatch.log('Classes retrieved');
 
-    const rules = getRules(data);
-    stopwatch.log('Rules retrieved');
-
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
     writeFileSync('./generated/conditions.json', JSON.stringify(conditions, null, 2), 'utf-8');
     writeFileSync('./generated/diseases.json', JSON.stringify(diseases, null, 2), 'utf-8');
     writeFileSync('./generated/creatures.json', JSON.stringify(creatures, null, 2), 'utf-8');
     writeFileSync('./generated/classes.json', JSON.stringify(classes, null, 2), 'utf-8');
-    writeFileSync('./generated/rules.json', JSON.stringify(rules, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
