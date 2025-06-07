@@ -105,7 +105,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@recharge}/g, '');
     text = text.replaceAll(/\{@recharge ([^\}]*?)}/g, '');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
+    text = text.replaceAll(
+        /\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+        `$3`
+    );
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
@@ -149,7 +152,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '*$3*');
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '*$1*');
-        text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`);
+        text = text.replaceAll(
+            /\{@5etools ([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`
+        );
         text = text.replaceAll(
             /\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2, p3) => `[${p3}](${getBackgroundsUrl(p1, p2)})`
@@ -158,7 +164,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             /\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2, p3) => `[${p3}](${getObjectsUrl(p1, p2)})`
         );
-        text = text.replaceAll(/\{@feat ([^\}]*?)\|([^\}]*?)\}/g, (_, p1, p2) => `[${p1}](${getFeatsUrl(p1, p2)})`);
+        text = text.replaceAll(
+            /\{@feat ([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2) => `[${p1}](${getFeatsUrl(p1, p2)})`
+        );
         text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(
             /\{@subclassFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
@@ -172,7 +181,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             (_, p1, p2, p3) => `[${p3}](${getTablesUrl(p1, p2)})`
         );
         text = text.replaceAll(/\{@table ([^\}]*?)\}/g, (_, p1) => `[${p1}](${getTablesUrl(p1)})`);
-        text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\}/g, (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`);
+        text = text.replaceAll(
+            /\{@trap ([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`
+        );
         text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `__$1__`);
@@ -387,7 +399,8 @@ function parseDescriptionBlock(description: any): string {
         }
         case 'list': {
             const points: string[] = [];
-            for (const item of description.items) points.push(`${BulletPoint} ${parseDescriptionBlock(item)}`);
+            for (const item of description.items)
+                points.push(`${BulletPoint} ${parseDescriptionBlock(item)}`);
             return points.join('\n');
         }
         case 'inset':
@@ -554,7 +567,12 @@ export function buildTable(headers: string[], rows: string[][], width: number): 
     return readFileSync(output).toString('utf-8');
 }
 
-function buildDescriptionTable(title: string, headers: string[], rows: string[][], fallbackUrl: string): string {
+function buildDescriptionTable(
+    title: string,
+    headers: string[],
+    rows: string[][],
+    fallbackUrl: string
+): string {
     const failure = `The table for [${title} can be found here](${fallbackUrl}).`;
 
     const table = buildTable(headers, rows, 56);
@@ -574,7 +592,11 @@ function parseDescriptionFromTable(description: any, fallbackUrl: string): Descr
     return { name: title, text: table };
 }
 
-export function parseDescriptions(name: string, descriptions: any[], fallbackUrl: string): Description[] {
+export function parseDescriptions(
+    name: string,
+    descriptions: any[],
+    fallbackUrl: string
+): Description[] {
     const subdescriptions: Description[] = [];
     const blocks: string[] = [];
 
@@ -618,7 +640,11 @@ export function formatWordList(words: string[], useAndInsteadOfOr: boolean = fal
     const length = capitalized.length;
 
     if (length > 2) {
-        return capitalized.slice(0, -1).join(', ') + `, ${concat} ` + capitalized[capitalized.length - 1];
+        return (
+            capitalized.slice(0, -1).join(', ') +
+            `, ${concat} ` +
+            capitalized[capitalized.length - 1]
+        );
     } else if (length === 2) {
         return capitalized.join(` ${concat} `);
     } else if (length === 1) {

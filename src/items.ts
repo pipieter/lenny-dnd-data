@@ -102,7 +102,8 @@ export function getItems(data: any): any[] {
         // Item type information, see render.js:11480 (getHtmlAndTextTypes)
         result.type = [];
 
-        if (item.wondrous) result.type.push(item.tattoo ? 'wondrous item (tattoo)' : 'wondrous item');
+        if (item.wondrous)
+            result.type.push(item.tattoo ? 'wondrous item (tattoo)' : 'wondrous item');
         if (item.staff) result.type.push('staff');
         if (item.ammo) result.type.push('ammunition');
         if (item.age) result.type.push(item.age);
@@ -189,7 +190,8 @@ export function getItems(data: any): any[] {
             } else {
                 const entries = property.entries || property.entriesTemplate || [];
                 if (entries.length === 0) continue;
-                if (entries.length > 1) throw `Found property with more than one entry '${property.abbreviation}`;
+                if (entries.length > 1)
+                    throw `Found property with more than one entry '${property.abbreviation}`;
 
                 const entry = entries[0];
                 const template = applyItemTemplate(item, entry, property.template).toLowerCase();
