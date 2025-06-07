@@ -4,14 +4,13 @@ import {
     cleanDNDText,
     Description,
     DescriptionType,
-    formatWordList,
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
     title,
 } from './parser';
 import { getClassesUrl } from './urls';
-import { BulletPoint } from './util';
+import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from './util';
 
 const BASEPATH = '5etools-src/data/class/';
 
@@ -114,10 +113,10 @@ class CharacterClass {
                 }
             });
 
-            orGroups.push(formatWordList(andGroup, true));
+            orGroups.push(joinStringsWithAnd(andGroup));
         }
 
-        this.primaryAbility = formatWordList(orGroups, false);
+        this.primaryAbility = joinStringsWithOr(orGroups);
     }
 
     private handleProficiencies(proficiencies: { [type: string]: any }): Description[] {
@@ -144,7 +143,7 @@ class CharacterClass {
 
                         armor.push(armorType);
                     }
-                    text = `${formatWordList(armor, true)} armor`;
+                    text = `${joinStringsWithAnd(armor)} armor`;
                     if (hasShields) {
                         text += ' and Shields';
                     }
@@ -162,7 +161,7 @@ class CharacterClass {
                             weapons.push(cleanDNDText(weaponType));
                         }
                     }
-                    text = `${formatWordList(weapons, true)} weapons`;
+                    text = `${joinStringsWithAnd(weapons)} weapons`;
                     break;
                 }
 
@@ -176,7 +175,7 @@ class CharacterClass {
                         const skills = choose.from;
                         const count = parseInt(choose.count ?? '0');
                         if (!skills || count === 0) continue;
-                        text += `Choose \`\`${count}\`\`: ${formatWordList(skills, true)}`;
+                        text += `Choose \`\`${count}\`\`: ${joinStringsWithAnd(skills)}`;
                     }
                     break;
                 }
@@ -186,7 +185,7 @@ class CharacterClass {
                         const toolText = cleanDNDText(tool);
                         tools.push(toolText);
                     }
-                    text = `${formatWordList(tools, true)}`;
+                    text = `${joinStringsWithAnd(tools)}`;
                     break;
                 }
                 case 'toolProficiencies':
@@ -238,7 +237,7 @@ class CharacterClass {
                 parseAbilityScore(proficiency)
             );
 
-            const text = `${BulletPoint} Saving Throw Proficiencies: ${formatWordList(savingProficiencies, true)}`;
+            const text = `${BulletPoint} Saving Throw Proficiencies: ${joinStringsWithAnd(savingProficiencies)}`;
             profData.push({ name: '', type: DescriptionType.text, value: text });
         }
 
@@ -294,7 +293,10 @@ class CharacterClass {
                     }
                 }
 
-                let text = `${BulletPoint} Ability requirements: At least ${formatWordList(skills, useAnd)}`;
+                const requirements = useAnd
+                    ? joinStringsWithAnd(skills)
+                    : joinStringsWithOr(skills);
+                let text = `${BulletPoint} Ability requirements: At least ${requirements}`;
 
                 multiclassData.push({ name: '', type: DescriptionType.text, value: text });
             }

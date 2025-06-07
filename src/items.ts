@@ -132,7 +132,7 @@ export function getItems(data: any): any[] {
 
         if (item.poison) {
             const poisonTypes = item.poisonTypes || [];
-            const poisonTypesText = joinStringsWithOr(poisonTypes);
+            const poisonTypesText = joinStringsWithOr(poisonTypes, false);
             if (poisonTypesText) {
                 result.type.push(`poison (${poisonTypesText})`);
             } else {
