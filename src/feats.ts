@@ -66,6 +66,7 @@ export function getFeats(data: any): ParsedFeat[] {
             source: feat.source,
             url: getFeatsUrl(feat.name, feat.source),
             type: getFeatType(feat),
+            // TODO: Prerequisites parsing
             description: parseDescriptions('', feat.entries),
         };
     });
