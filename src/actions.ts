@@ -31,9 +31,13 @@ function parseActionTime(times: any[]): string {
         }
 
         if (time.number && time.unit) {
-            if (time.unit === 'bonus') time.unit = 'bonus action';
-            const text = title(`${time.number} ${time.unit}`);
-            results.push(text);
+            let number = time.number;
+            let unit = time.unit;
+
+            if (unit === 'bonus') unit = 'bonus action';
+            if (number !== 1) unit += 's'; // 2 action => 2 actions
+
+            results.push(title(`${number} ${unit}`));
             continue;
         }
 
