@@ -21,7 +21,7 @@ interface ParsedAction {
 }
 
 function parseActionTime(times: any[]): string {
-    if (!times) return 'Unknown';
+    if (!times) return 'Uncategorized';
 
     let results: string[] = [];
     for (const time of times) {
