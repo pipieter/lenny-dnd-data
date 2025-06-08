@@ -55,14 +55,17 @@ function applyItemTemplate(item: any, entry: any, template: string): string {
 
     let hasRemainingTemplate = true;
     while (hasRemainingTemplate) {
-        const regex = /^.*\{\{item\.([^\}]*?)\}\}.*$/g;
+        const regex = /^.*\{\{item\.([^\}]*?)\}\}.*$/;
         const matches = template.match(regex);
         if (matches === null) {
             hasRemainingTemplate = false;
         } else {
-            const field = matches[0];
-            const result = item[field];
-            template = template.replace(field, result);
+            const field = matches[1];
+            let result = item[field];
+            if (typeof result === 'string') {
+                result = result.split('|')[0]; // Sometimes specifics like sources will be shown, such as 'crossbow bolt|phb'
+            }
+            template = template.replace('{{item.' + field + '}}', result);
         }
     }
     return template;
