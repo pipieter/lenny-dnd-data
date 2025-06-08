@@ -1,5 +1,4 @@
-import { log } from 'console';
-import { Description, parseDescriptions, parseSingleCastingTime, title } from './parser';
+import { Description, parseDescriptions, parseSingleTime } from './parser';
 import { getActionsUrl } from './urls';
 import { joinStringsWithOr } from './util';
 
@@ -26,7 +25,7 @@ function parseActionTime(times: any[]): string {
 
     let results: string[] = [];
     for (const time of times) {
-        const text = typeof time === 'string' ? time : parseSingleCastingTime(time);
+        const text = typeof time === 'string' ? time : parseSingleTime(time);
         if (!text) throw new Error(`Unsupported action-time ${JSON.stringify(time)}`);
         results.push(text);
     }
