@@ -49,8 +49,6 @@ function parseActionTime(times: any[]): string {
 
 export function getActions(data: any): ParsedAction[] {
     return (data.action as Action[]).map((action) => {
-        console.log(action.name);
-
         return {
             name: action.name,
             source: action.source,
