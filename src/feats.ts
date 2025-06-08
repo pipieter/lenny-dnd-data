@@ -37,7 +37,44 @@ interface ParsedFeat {
     source: string;
     url: string;
     type: string;
+    prerequisite: string | null;
+    abilityIncrease: string | null;
     description: Description[];
+}
+
+function getFeatAbilityIncrease(feat: Feat): string | null {
+    if (!feat.ability) return null;
+
+    const result: string[] = [];
+
+    for (const ability of feat.ability) {
+        if (ability.hidden) continue;
+
+        if (ability.choose) {
+            // Prefer explicit entry if present
+            if (ability.choose.entry) {
+                result.push(ability.choose.entry);
+                continue;
+            }
+
+            const { from = [], amount = 1, max = 20 } = ability.choose;
+
+            const options = from.map(parseAbilityScore);
+            const optionText =
+                options.length === 6
+                    ? 'one ability score of your choice'
+                    : `your ${joinStringsWithOr(options)} score`;
+
+            result.push(`Increase ${optionText} by ${amount}, to a maximum of ${max}.`);
+        }
+    }
+
+    return result.length ? result.join('\n') : null;
+}
+
+function getFeatPrerequisites(feat: Feat): string | null {
+    if (!feat.prerequisite) return null;
+    return '';
 }
 
 function getFeatType(feat: Feat): string {
@@ -66,7 +103,8 @@ export function getFeats(data: any): ParsedFeat[] {
             source: feat.source,
             url: getFeatsUrl(feat.name, feat.source),
             type: getFeatType(feat),
-            // TODO: Prerequisites parsing
+            prerequisite: getFeatPrerequisites(feat),
+            abilityIncrease: getFeatAbilityIncrease(feat),
             description: parseDescriptions('', feat.entries),
         };
     });
