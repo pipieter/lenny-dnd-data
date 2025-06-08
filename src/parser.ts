@@ -272,7 +272,7 @@ export function parseAbilityScore(score: string): string {
     return value;
 }
 
-function parseSingleCastingTime(time: any): string {
+export function parseSingleCastingTime(time: any): string {
     const amount = time.number;
     const unit = time.unit;
 

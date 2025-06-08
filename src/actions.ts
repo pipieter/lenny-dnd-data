@@ -1,4 +1,5 @@
-import { Description, parseDescriptions, title } from './parser';
+import { log } from 'console';
+import { Description, parseDescriptions, parseSingleCastingTime, title } from './parser';
 import { getActionsUrl } from './urls';
 import { joinStringsWithOr } from './util';
 
@@ -22,26 +23,12 @@ interface ParsedAction {
 
 function parseActionTime(times: any[]): string {
     if (!times) return 'Unknown';
+
     let results: string[] = [];
-
     for (const time of times) {
-        if (typeof time === 'string') {
-            results.push(time);
-            continue;
-        }
-
-        if (time.number && time.unit) {
-            let number = time.number;
-            let unit = time.unit;
-
-            if (unit === 'bonus') unit = 'bonus action';
-            if (number !== 1) unit += 's'; // 2 action => 2 actions
-
-            results.push(title(`${number} ${unit}`));
-            continue;
-        }
-
-        throw `Unsupported Action-Time ${time}`;
+        const text = typeof time === 'string' ? time : parseSingleCastingTime(time);
+        if (!text) throw new Error(`Unsupported action-time ${JSON.stringify(time)}`);
+        results.push(text);
     }
 
     return joinStringsWithOr(results);
