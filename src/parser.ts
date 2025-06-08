@@ -272,7 +272,7 @@ export function parseAbilityScore(score: string): string {
     return value;
 }
 
-function parseSingleCastingTime(time: any): string {
+export function parseSingleTime(time: any): string {
     const amount = time.number;
     const unit = time.unit;
 
@@ -303,10 +303,10 @@ function parseSingleCastingTime(time: any): string {
 
 export function parseCastingTime(time: any): string {
     if (Array.isArray(time)) {
-        const castingTimes = time.map(parseSingleCastingTime);
+        const castingTimes = time.map(parseSingleTime);
         return castingTimes.join(' or ');
     } else {
-        return parseSingleCastingTime(time);
+        return parseSingleTime(time);
     }
 }
 

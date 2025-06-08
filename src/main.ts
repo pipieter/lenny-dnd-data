@@ -7,6 +7,7 @@ import { StopwatchLogger } from './util';
 import { getClasses } from './classes';
 import { getItems } from './items';
 import { getRules } from './rules';
+import { getActions } from './actions';
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
@@ -33,6 +34,9 @@ function main(): void {
     const rules = getRules(data);
     stopwatch.log('Rules retrieved');
 
+    const actions = getActions(data);
+    stopwatch.log('Actions retrieved');
+
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
     writeFileSync('./generated/conditions.json', JSON.stringify(conditions, null, 2), 'utf-8');
@@ -40,6 +44,7 @@ function main(): void {
     writeFileSync('./generated/creatures.json', JSON.stringify(creatures, null, 2), 'utf-8');
     writeFileSync('./generated/classes.json', JSON.stringify(classes, null, 2), 'utf-8');
     writeFileSync('./generated/rules.json', JSON.stringify(rules, null, 2), 'utf-8');
+    writeFileSync('./generated/actions.json', JSON.stringify(actions, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');
     stopwatch.stop();

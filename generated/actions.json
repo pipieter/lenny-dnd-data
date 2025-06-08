@@ -1,0 +1,978 @@
+[
+  {
+    "name": "Activate an Item",
+    "source": "DMG",
+    "url": "https://5e.tools/actions.html#activate%20an%20item_dmg",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Activating some magic items requires a user to do something in particular, such as holding the item and uttering a command word, reading the item if it is a scroll, or drinking it if it is a potion. The description of each item category or individual item details how an item is activated. Certain items use one or more of the following rules related to their activation."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If an item requires an action to activate, that action isn't a function of the Use an Object action, so a feature such as the rogue's __Fast Hands__ can't be used to activate the item."
+      },
+      {
+        "name": "Command Word",
+        "type": "text",
+        "value": "A command word is a word or phrase that must be spoken audibly for the item to operate. A magic item that requires the user to speak a command word can't be activated in the area of any effect that prevents sound, such as the area created by the silence spell."
+      },
+      {
+        "name": "Consumables",
+        "type": "text",
+        "value": "Some items are used up when they are activated. A potion or elixir must be swallowed, or an oil applied to the body. The writing vanishes from a scroll when it is read. Once used, a consumable item loses its magic and no longer functions."
+      },
+      {
+        "name": "Spells",
+        "type": "text",
+        "value": "Some magic items allow the user to cast a spell from the item, often by expending charges from it. The spell is cast at the lowest possible spell and caster level, doesn't expend any of the user's spell slots, and requires no components unless the item's description says otherwise. The spell uses its normal casting time, range, and duration, and the user of the item must concentrate if the spell requires *concentration*. Certain items make exceptions to these rules, changing the casting time, duration, or other parts of a spell."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Many items, such as potions, bypass the casting of the spell and confer the spell's effects. Such an item still uses the spell's duration unless the item's description says otherwise."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A magic item, such as certain staffs, may require you to use your own spellcasting ability when you cast a spell from the item. If you have more than one spellcasting ability, you choose which one to use with the item. If you don't have a spellcasting ability—perhaps you're a rogue with the Use Magic Device feature—your spellcasting ability modifier is +0 for the item, and your proficiency bonus does apply."
+      },
+      {
+        "name": "Charges",
+        "type": "text",
+        "value": "Some magic items have charges that you expend to activate its properties. The number of charges an item has remaining is revealed when an identify spell is cast on the item, or when a creature attunes to the item. Additionally, when an item regains charges, the creature attuned to that item learns how many charges it regained."
+      }
+    ]
+  },
+  {
+    "name": "Attack",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#attack_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "The most common action to take in combat is the Attack action, whether you are swinging a sword, firing an arrow from a bow, or brawling with your fists."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "With this action, you make one melee or ranged attack. See the \"Making an Attack\" section for the rules that govern attacks."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Certain features, such as the Extra Attack feature of the fighter, allow you to make more than one attack with this action."
+      }
+    ]
+  },
+  {
+    "name": "Attack",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#attack_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Attack action, you can make one attack roll with a weapon or an Unarmed Strike."
+      },
+      {
+        "name": "Equipping and Unequipping Weapons",
+        "type": "text",
+        "value": "You can either equip or unequip one weapon when you make an attack as part of this action. You do so either before or after the attack. If you equip a weapon before an attack, you don't need to use it for that attack. Equipping a weapon includes drawing it from a sheath or picking it up. Unequipping a weapon includes sheathing, stowing, or dropping it."
+      },
+      {
+        "name": "Moving Between Attacks",
+        "type": "text",
+        "value": "If you move on your turn and have a feature, such as Extra Attack, that gives you more than one attack as part of the Attack action, you can use some or all of that movement to move between those attacks."
+      }
+    ]
+  },
+  {
+    "name": "Cast a Spell",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#cast%20a%20spell_phb",
+    "time": "Varies",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Spellcasters such as wizards and clerics, as well as many monsters, have access to spells and can use them to great effect in combat. Each spell has a casting time, which specifies whether the caster must use an action, a reaction, minutes, or even hours to cast the spell. Casting a spell is, therefore, not necessarily an action. Most spells do have a casting time of 1 action, so a spellcaster often uses his or her action in combat to cast such a spell. See chapter 10 for the rules on spellcasting."
+      }
+    ]
+  },
+  {
+    "name": "Climb onto a Bigger Creature",
+    "source": "DMG",
+    "url": "https://5e.tools/actions.html#climb%20onto%20a%20bigger%20creature_dmg",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "If one creature wants to jump onto another creature, it can do so by grapple. A small or Medium creature has little chance of making a successful grapple against a Huge or Gargantuan creature, however, unless magic has granted the grappler supernatural might."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "As an alternative, a suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb. After making any ability checks necessary to get into position and onto the larger creature, the smaller creature uses its action to make a Strength (*Athletics*) or Dexterity (*Acrobatics*) check contested by the target's Dexterity (*Acrobatics*) check. If it wins the contest, the smaller creature successfully moves into the target creature's space, the smaller creature moves with the target and has advantage on attack rolls against it."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The smaller creature can move around within the larger creature's space, treating the space as difficult terrain. The larger creature's ability to attack the smaller creature depends on the smaller creature's location, and is left to your discretion. The larger creature can dislodge the smaller creature as an action—knocking it off, scraping it against a wall, or grabbing and throwing it—by making a Strength (*Athletics*) check contested by the smaller creature's Strength (*Athletics*) or Dexterity (*Acrobatics*) check. The smaller creature chooses which ability to use."
+      }
+    ]
+  },
+  {
+    "name": "Dash",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#dash_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move up to 60 feet on your turn if you dash."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Any increase or decrease to your speed changes this additional movement by the same amount. If your speed of 30 feet is reduced to 15 feet, for instance, you can move up to 30 feet this turn if you dash."
+      }
+    ]
+  },
+  {
+    "name": "Dash",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#dash_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Dash action, you gain extra movement for the current turn. The increase equals your Speed after applying any modifiers. With a Speed of 30 feet, for example, you can move up to 60 feet on your turn if you Dash. If your Speed of 30 feet is reduced to 15 feet, you can move up to 30 feet this turn if you Dash."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you have a special speed, such as a Fly Speed or Swim Speed, you can use that speed instead of your Speed when you take this action. You choose which speed to use each time you take it."
+      }
+    ]
+  },
+  {
+    "name": "Disarm",
+    "source": "DMG",
+    "url": "https://5e.tools/actions.html#disarm_dmg",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "A creature can use a weapon attack to knock a weapon or another item from a target's grasp. The attacker makes an attack roll contested by the target's Strength (*Athletics*) check or Dexterity (*Acrobatics*) check. If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender drops the item."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands. The target has advantage on its ability check if it is larger than the attacking creature, or disadvantage if it is smaller."
+      }
+    ]
+  },
+  {
+    "name": "Disengage",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#disengage_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you take the Disengage action, your movement doesn't provoke opportunity attacks for the rest of the turn."
+      }
+    ]
+  },
+  {
+    "name": "Disengage",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#disengage_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you take the Disengage action, your movement doesn't provoke Opportunity Attack for the rest of the current turn."
+      }
+    ]
+  },
+  {
+    "name": "Dodge",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#dodge_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated (as explained in the appendix) or if your speed drops to 0."
+      }
+    ]
+  },
+  {
+    "name": "Dodge",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#dodge_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "lf you take the Dodge action, you gain the following benefits: until the start of your next turn, any attack roll made against you has Disadvantage if you can see the attacker, and you make Dexterity Saving Throw with Advantage."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You lose these benefits if you have the Incapacitated condition or if your Speed is 0."
+      }
+    ]
+  },
+  {
+    "name": "Don or Doff a Shield",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#don%20or%20doff%20a%20shield_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "The time it takes to don or doff armor depends on the armor's category. A shield can be donned or doffed as an action."
+      }
+    ]
+  },
+  {
+    "name": "Don or Doff a Shield",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#don%20or%20doff%20a%20shield_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "A Shield can be donned or doffed as an action."
+      }
+    ]
+  },
+  {
+    "name": "End Concentration",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#end%20concentration_phb",
+    "time": "Free",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "If a spell must be maintained with *concentration*, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end *concentration* at any time (no action required)."
+      }
+    ]
+  },
+  {
+    "name": "End Concentration",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#end%20concentration_xphb",
+    "time": "Free",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Some spells and other effects require Concentration to remain active, as specified in their descriptions. You can end Concentration at any time (no action required)."
+      }
+    ]
+  },
+  {
+    "name": "Escape a Grapple",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#escape%20a%20grapple_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "A grappled creature can use its action to escape. To do so, it must succeed on a Strength (*Athletics*) or Dexterity (*Acrobatics*) check contested by your Strength (*Athletics*) check."
+      }
+    ]
+  },
+  {
+    "name": "Escape a Grapple",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#escape%20a%20grapple_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "A Grappled creature can use its action to make a Strength (*Athletics*) or Dexterity (*Acrobatics*) check against the grapple's escape DC, ending the Condition on itself on a success. The Condition also ends if the grappler has the Incapacitated condition or if the distance between the Grappled target and the grappler exceeds the grapple's range."
+      }
+    ]
+  },
+  {
+    "name": "Grapple",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#grapple_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you want to grab a creature or wrestle with it, you can use the Attack action to make a special melee attack, a grapple. If you're able to make multiple attacks with the Attack action, this attack replaces one of them. The target of your grapple must be no more than one size larger than you, and it must be within your reach."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Using at least one free hand, you try to seize the target by making a grapple check, a Strength (*Athletics*) check contested by the target's Strength (*Athletics*) or Dexterity (*Acrobatics*) check (the target chooses the ability to use). You succeed automatically if the target is incapacitated. If you succeed, you subject the target to the grappled condition (see the appendix). The condition specifies the things that end it, and you can release the target whenever you like (no action required)."
+      },
+      {
+        "name": "Moving a Grappled Target",
+        "type": "text",
+        "value": "When you move, you can drag or carry the grappled creature with you, but your speed is halved, unless the creature is two or more sizes smaller than you."
+      }
+    ]
+  },
+  {
+    "name": "Healing Surge",
+    "source": "DMG",
+    "url": "https://5e.tools/actions.html#healing%20surge_dmg",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "As an action, a character can use a healing surge and spend up to half his or her Hit Dice. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A character who uses a healing surge can't do so again until he or she finishes a short or long rest. Under this optional rule, a character regains all spent Hit Dice at the end of a long rest. With a short rest, a character regains Hit Dice equal to his or her level divided by four (minimum of one dice)."
+      }
+    ]
+  },
+  {
+    "name": "Help",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#help_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage."
+      }
+    ]
+  },
+  {
+    "name": "Help",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#help_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Help action, you do one of the following."
+      },
+      {
+        "name": "Assist an Ability Check",
+        "type": "text",
+        "value": "Choose one of your skill or tool proficiencies and one ally who is near enough for you to assist verbally or physically when they make an ability check. That ally has Advantage on the next ability check they make with the chosen skill or tool. This benefit expires if the ally doesn't use it before the start of your next turn. The DM has final say on whether your assistance is possible."
+      },
+      {
+        "name": "Assist an Attack Roll",
+        "type": "text",
+        "value": "You momentarily distract an enemy within 5 feet of you, giving Advantage to the next attack roll by one of your allies against that enemy. This benefit expires at the start of your next turn."
+      }
+    ]
+  },
+  {
+    "name": "Hide",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#hide_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Hide action, you make a Dexterity (*Stealth*) check in an attempt to hide, following the rules in chapter 7  for hiding. If you succeed, you gain certain benefits, as described in the \"Unseen Attackers and Targets\" section in the Player's Handbook."
+      }
+    ]
+  },
+  {
+    "name": "Hide",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#hide_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "With the Hide action, you try to conceal yourself. To do so, you must succeed on a DC 15 Dexterity (*Stealth*) check while you're Heavily Obscured or behind Cover, and you must be out of any enemy's line of sight; if you can see a creature, you can discern whether it can see you."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "On a successful check, you have the Invisible condition. Make note of your check's total, which is the DC for a creature to find you with a Wisdom (*Perception*) check."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You stop being hidden immediately after any of the following occurs: you make a sound louder than a whisper, an enemy finds you, you make an attack roll, or you cast a spell with a Verbal component."
+      }
+    ]
+  },
+  {
+    "name": "Identify a Spell",
+    "source": "XGE",
+    "url": "https://5e.tools/actions.html#identify%20a%20spell_xge",
+    "time": "1 Reaction or Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Sometimes a character wants to identify a spell that someone else is casting or that was already cast. To do so, a character can use their reaction to identify a spell as it's being cast, or they can use an action on their turn to identify a spell by its effect after it is cast."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If the character perceived the casting, the spell's effect, or both, the character can make an Intelligence (*Arcana*) check with the reaction or action. The DC equals 15 + the spell's level. If the spell is cast as a class spell and the character is a member of that class, the check is made with advantage. For example, if the spellcaster casts a spell as a cleric, another cleric has advantage on the check to identify the spell. Some spells aren't associated with any class when they're cast, such as when a monster uses its Innate Spellcasting trait."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "This Intelligence (*Arcana*) check represents the fact that identifying a spell requires a quick mind and familiarity with the theory and practice of casting. This is true even for a character whose spellcasting ability is Wisdom or Charisma. Being able to cast spells doesn't by itself make you adept at deducing exactly what others are doing when they cast their spells."
+      }
+    ]
+  },
+  {
+    "name": "Improvising an Action",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#improvising%20an%20action_phb",
+    "time": "Varies",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Your character can do things not covered by the actions in this chapter, such as breaking down doors, intimidating enemies, sensing weaknesses in magical defenses, or calling for a parley with a foe. The only limits to the actions you can attempt are your imagination and your character's ability scores. See the descriptions of the ability scores in chapter 7 for inspiration as you improvise."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
+      }
+    ]
+  },
+  {
+    "name": "Improvising an Action",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#improvising%20an%20action_xphb",
+    "time": "Varies",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Player characters and monsters can also do things not covered by other actions. Many class features and other abilities provide additional action options, and you can improvise other actions. When you describe an action not detailed elsewhere in the rules, the Dungeon Master tells you whether that action is possible and what kind of D20 Test you need to make, if any."
+      }
+    ]
+  },
+  {
+    "name": "Influence",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#influence_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "With the Influence action, you urge a monster to do something. Describe or roleplay how you're communicating with the monster. Are you trying to deceive, intimidate, amuse, or gently persuade? The DM then determines whether the monster feels willing, unwilling, or hesitant due to your interaction; this determination establishes whether an ability check is necessary, as explained below."
+      },
+      {
+        "name": "Willing",
+        "type": "text",
+        "value": "If your urging aligns with the monster's desires, no ability check is necessary; the monster fulfills your request in a way it prefers."
+      },
+      {
+        "name": "Unwilling",
+        "type": "text",
+        "value": "If your urging is repugnant to the monster or counter to its alignment, no ability check is necessary; it doesn't comply."
+      },
+      {
+        "name": "Hesitant",
+        "type": "text",
+        "value": "If you urge the monster to do something that it is hesitant to do, you must make an ability check, which is affected by the monster's attitude: Indifferent, Friendly, or Hostile, each of which is defined in this glossary. The Influence Checks table suggests which ability check to make based on how you're interacting with the monster. The DM chooses the check, which has a default DC equal to 15 or the monster's Intelligence score, whichever is higher. On a successful check, the monster does as urged. On a failed check, you must wait 24 hours (or a duration set by the DM) before urging it in the same way again."
+      },
+      {
+        "name": "Influence Checks",
+        "type": "table",
+        "value": {
+          "headers": [
+            "Ability Check",
+            "Interaction"
+          ],
+          "rows": [
+            [
+              "Charisma (Deception)",
+              "Deceiving a monster that understands you"
+            ],
+            [
+              "Charisma (Intimidation)",
+              "Intimidating a monster"
+            ],
+            [
+              "Charisma (Performance)",
+              "Amusing a monster"
+            ],
+            [
+              "Charisma (Persuasion)",
+              "Persuading a monster that understands you"
+            ],
+            [
+              "Wisdom (Animal Handling)",
+              "Gently coaxing a Beast or Monstrosity"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Magic",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#magic_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Magic action, you cast a spell that has a casting time of an action or use a feature or magic item that requires a Magic action to be activated."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you cast a spell that has a casting time of 1 minute or longer, you must take the Magic action on each turn of that casting, and you must maintain *Concentration* while you do so. If your *Concentration* is broken, the spell fails, but you don't expend a spell slot."
+      }
+    ]
+  },
+  {
+    "name": "Mark",
+    "source": "DMG",
+    "url": "https://5e.tools/actions.html#mark_dmg",
+    "time": "Unknown",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "This option makes it easier for melee combatants to harry each other with opportunity attacks."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When a creature makes a melee attack, it can also mark its target. Until the end of the attacker's next turn, any opportunity attack it makes against the marked target has advantage. The opportunity attack doesn't expend the attacker's reaction, but the attacker can't make the attack if anything, such as the incapacitated condition or the __shocking grasp__ spell, is preventing it from taking reactions. The attacker is limited to one opportunity attack per turn."
+      }
+    ]
+  },
+  {
+    "name": "Opportunity Attack",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#opportunity%20attack_phb",
+    "time": "1 Reaction",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "In a fight, everyone is constantly watching for enemies to drop their guard. You can rarely move heedlessly past your foes without putting yourself in danger; doing so provokes an opportunity attack."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To make the opportunity attack, you use your reaction to make one melee attack against the provoking creature. The attack interrupts the provoking creature's movement, occurring right before the creature leaves your reach."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can avoid provoking an opportunity attack by taking the Disengage action. You also don't provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don't provoke an opportunity attack if an explosion hurls you out of a foe's reach or if gravity causes you to fall past an enemy."
+      }
+    ]
+  },
+  {
+    "name": "Opportunity Attack",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#opportunity%20attack_xphb",
+    "time": "1 Reaction",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can make an Opportunity Attack when a creature that you can see leaves your reach using its action, its Bonus Action, its Reaction, or one of its speeds. To make the Opportunity Attack, take a Reaction to make one melee attack with a weapon or an Unarmed Strike against the provoking creature. The attack occurs right before the creature leaves your reach."
+      }
+    ]
+  },
+  {
+    "name": "Other Activity",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#other%20activity_phb",
+    "time": "Varies",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Your turn can include a variety of flourishes that require neither your action nor your move."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can communicate however you are able, through brief utterances and gestures, as you take your turn."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can also interact with one object or feature of the environment for free, during either your move or your action. For example, you could open a door during your move as you stride toward a foe, or you could draw your weapon as part of the same action you use to attack."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you want to interact with a second object, you need to use your action. Some magic items and other special objects always require an action to use, as stated in their descriptions."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The DM might require you to use an action for any of these activities when it needs special care or when it presents an unusual obstacle. For instance, the DM could reasonably expect you to use an action to open a stuck door or turn a crank to lower a drawbridge."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "*Here are a few examples of the sorts of thing you can do in tandem with your movement and action:\n\n• draw or sheathe a sword\n• open or close a door\n• withdraw a potion from your backpack\n• pick up a dropped axe\n• take a bauble from a table\n• remove a ring from your finger\n• stuff some food into your mouth\n• plant a banner in the ground\n• fish a few coins from your belt pouch\n• drink all the ale in a flagon\n• throw a lever or a switch\n• pull a torch from a sconce\n• take a book from a shelf you can reach\n• extinguish a small flame\n• don a mask\n• pull the hood of your cloak up and over your head\n• put your ear to a door\n• kick a small stone\n• turn a key in a lock\n• tap the floor with a 10-foot pole\n• hand an item to another character*"
+      }
+    ]
+  },
+  {
+    "name": "Overrun",
+    "source": "DMG",
+    "url": "https://5e.tools/actions.html#overrun_dmg",
+    "time": "Action or Bonus Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature. As an action or a bonus action, the mover makes a Strength (*Athletics*) check contested by the hostile creature's Strength (*Athletics*) check. The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller. If the mover wins the contest, it can move through the hostile creature's space once this turn."
+      }
+    ]
+  },
+  {
+    "name": "Ready",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#ready_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn, which lets you act using your reaction before the start of your next turn."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. Examples include \"If the cultist steps on the trapdoor, I'll pull the lever that opens it,\" and \"If the goblin steps next to me, I move away.\""
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires *concentration* (explained in chapter 10). If your *concentration* is broken, the spell dissipates without taking effect. For example, if you are *concentrating* on the web spell and ready magic missile, your web spell ends, and if you take damage before you release magic missile with your reaction, your *concentration* might be broken."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You have until the start of your next turn to use a readied action."
+      }
+    ]
+  },
+  {
+    "name": "Ready",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#ready_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You take the Ready action to wait for a particular circumstance before you act. To do so, you take this action on your turn, which lets you act by taking a Reaction before the start of your next turn."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "First, you decide what perceivable circumstance will trigger your Reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your Speed in response to it. Examples include \"If the cultist steps on the trapdoor, I'll pull the lever that opens it,\" and \"If the zombie steps next to me, I move away.\""
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When the trigger occurs, you can either take your Reaction right after the trigger finishes or ignore the trigger."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you Ready a spell, you cast it as normal (expending any resources used to cast it) but hold its energy, which you release with your Reaction when the trigger occurs. To be readied, a spell must have a casting time of an action, and holding on to the spell's magic requires *Concentration*, which you can maintain up to the start of your next turn. If your *Concentration* is broken, the spell dissipates without taking effect."
+      }
+    ]
+  },
+  {
+    "name": "Search",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#search_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Search action, you devote your attention to finding something. Depending on the nature of your search, the DM might have you make a Wisdom (*Perception*) check or an Intelligence (*Investigation*) check."
+      }
+    ]
+  },
+  {
+    "name": "Search",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#search_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Search action, you make a Wisdom check to discern something that isn't obvious. The Search table suggests which skills are applicable when you take this action, depending on what you're trying to detect."
+      },
+      {
+        "name": "Search",
+        "type": "table",
+        "value": {
+          "headers": [
+            "Skill",
+            "Thing to Detect"
+          ],
+          "rows": [
+            [
+              "Insight",
+              "Creature's state of mind"
+            ],
+            [
+              "Medicine",
+              "Creature's ailment or cause of death"
+            ],
+            [
+              "Perception",
+              "Concealed creature or object"
+            ],
+            [
+              "Survival",
+              "Tracks or food"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Shove",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#shove_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Using the Attack action, you can make a special melee attack to shove a creature, either to knock it prone or push it away from you. If you're able to make multiple attacks with the Attack action, this attack replaces one of them."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The target of your shove must be no more than one size larger than you, and it must be within your reach. You make a Strength (*Athletics*) check contested by the target's Strength (*Athletics*) or Dexterity (*Acrobatics*) check (the target chooses the ability to use). You succeed automatically if the target is incapacitated. If you succeed, you either knock the target prone or push it 5 feet away from you."
+      }
+    ]
+  },
+  {
+    "name": "Shove Aside",
+    "source": "DMG",
+    "url": "https://5e.tools/actions.html#shove%20aside_dmg",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "With this option, a creature uses the special shove attack from the Player's Handbook to force a target to the side, rather than away. The attacker has disadvantage on its Strength (*Athletics*) check when it does so. If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
+      }
+    ]
+  },
+  {
+    "name": "Stabilize a Creature",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#stabilize%20a%20creature_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use your action to administer first aid to an unconscious creature and attempt to stabilize it, which requires a successful DC 10 Wisdom (*Medicine*) check."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A stable creature doesn't make death saving throws, even though it has 0 hit points, but it does remain unconscious. The creature stops being stable, and must start making death saving throws again, if it takes any damage. A stable creature that isn't healed regains 1 hit point after 1d4 hours."
+      }
+    ]
+  },
+  {
+    "name": "Study",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#study_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Study action, you make an Intelligence check to study your memory, a book, a clue, or another source of knowledge and call to mind an important piece of information about it."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The Areas of Knowledge table suggests which skills are applicable to various areas of knowledge."
+      },
+      {
+        "name": "Areas of Knowledge",
+        "type": "table",
+        "value": {
+          "headers": [
+            "Skill",
+            "Areas"
+          ],
+          "rows": [
+            [
+              "Arcana",
+              "Spells, magic items, eldritch symbols, magical traditions, planes of existence, and certain creatures (Aberrations, Constructs, Elementals, Fey, and Monstrosities)"
+            ],
+            [
+              "History",
+              "Historic events and people, ancient civilizations, wars, and certain creatures (Giants and Humanoids)"
+            ],
+            [
+              "Investigation",
+              "Traps, ciphers, riddles, and gadgetry"
+            ],
+            [
+              "Nature",
+              "Terrain, flora, weather, and certain creatures (Beasts, Dragons, Oozes, and Plants)"
+            ],
+            [
+              "Religion",
+              "Deities, religious hierarchies and rites, holy symbols, cults, and certain creatures (Celestials, Fiends, and Undead)"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Tumble",
+    "source": "DMG",
+    "url": "https://5e.tools/actions.html#tumble_dmg",
+    "time": "Action or Bonus Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent. As an action or a bonus action, the tumbler makes a Dexterity (*Acrobatics*) check contested by the hostile creature's Dexterity (*Acrobatics*) check. If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
+      }
+    ]
+  },
+  {
+    "name": "Two-Weapon Fighting",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#two-weapon%20fighting_phb",
+    "time": "Bonus Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Attack action and attack with a light melee weapon that you're holding in one hand, you can use a bonus action to attack with a different light melee weapon that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it."
+      }
+    ]
+  },
+  {
+    "name": "Two-Weapon Fighting",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#two-weapon%20fighting_xphb",
+    "time": "Bonus Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+      }
+    ]
+  },
+  {
+    "name": "Use an Object",
+    "source": "PHB",
+    "url": "https://5e.tools/actions.html#use%20an%20object_phb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn."
+      }
+    ]
+  },
+  {
+    "name": "Utilize",
+    "source": "XPHB",
+    "url": "https://5e.tools/actions.html#utilize_xphb",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You normally interact with an object while doing something else, such as when you draw a sword as part of the Attack action. When an object requires an action for its use, you take the Utilize action."
+      }
+    ]
+  },
+  {
+    "name": "Waking Someone",
+    "source": "XGE",
+    "url": "https://5e.tools/actions.html#waking%20someone_xge",
+    "time": "Action",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "A creature that is naturally sleeping, as opposed to being in a magically or chemically induced sleep, wakes up if it takes any damage or if someone else uses an action to shake or slap the creature awake. A sudden loud noise—such as yelling, thunder, or a ringing bell—also awakens someone that is sleeping naturally."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whispers don't disturb sleep, unless a sleeper's passive Wisdom (*Perception*) score is 20 or higher and the whispers are within 10 feet of the sleeper. Speech at a normal volume awakens a sleeper if the environment is otherwise silent (no wind, birdsong, crickets, street sounds, or the like) and the sleeper has a passive Wisdom (*Perception*) score of 15 or higher."
+      }
+    ]
+  }
+]
