@@ -218,34 +218,29 @@ function getFeatPrerequisites(feat: Feat): string | null {
         prerequisites.push(group);
     }
 
-    // Iterate over prerequisite groups and count up how many times each group-entry appears.
-    const commonTracker: Record<string, number> = {};
+    // Count how many times each prerequisite entry appears across all groups
+    const entryCounts: Record<string, number> = {};
     for (const group of prerequisites) {
-        for (const trait of group) {
-            commonTracker[trait] = (commonTracker[trait] || 0) + 1;
+        for (const entry of group) {
+            entryCounts[entry] = (entryCounts[entry] || 0) + 1;
         }
     }
 
-    // Filter out 'common' group-entries
-    const groupLength = prerequisites.length;
-    let common: string[] = [];
-    const andedPrerequisites = prerequisites.map((group) => {
-        const filteredGroup = group.filter((entry) => {
-            if (commonTracker[entry] === groupLength) {
-                if (!common.includes(entry)) common.push(entry);
-                return false;
-            }
-            return true;
-        });
-        return joinStringsWithAnd(filteredGroup, false);
-    });
+    const groupCount = prerequisites.length;
+    const commonEntries = Object.keys(entryCounts).filter(
+        (entry) => entryCounts[entry] === groupCount
+    );
+    const filteredGroups = prerequisites.map((group) =>
+        group.filter((entry) => !commonEntries.includes(entry))
+    );
+    const joinedGroups = filteredGroups.map((group) => joinStringsWithAnd(group, false));
 
-    if (common.length === 0) return joinStringsWithOr(andedPrerequisites, false);
-    if (groupLength === 1) return joinStringsWithAnd(prerequisites[0], false);
+    if (commonEntries.length === 0) return joinStringsWithOr(joinedGroups, false);
+    if (groupCount === 1) return joinStringsWithAnd(prerequisites[0], false);
 
-    // Return common joined with rest of the prerequisites. (e.g. Level 4+ and Fighter 1 or Paladin 1)
+    // Combine common entries with the rest
     return joinStringsWithAnd(
-        [joinStringsWithAnd(common, false), joinStringsWithOr(andedPrerequisites, false)],
+        [joinStringsWithAnd(commonEntries, false), joinStringsWithOr(joinedGroups, false)],
         false
     );
 }
