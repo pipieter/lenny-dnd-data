@@ -66,6 +66,19 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
                     : `your ${joinStringsWithOr(options)} score`;
 
             result.push(`Increase ${optionText} by ${amount}, to a maximum of ${max}.`);
+            continue;
+        }
+
+        const keys = Object.keys(ability);
+        if (keys.length > 0) {
+            for (const key of keys) {
+                const score = parseAbilityScore(key);
+                const amount = ability[key];
+
+                if (score === key) throw `Unsupported feat-ability key ${key}`;
+                result.push(`Increase your ${score} score by ${amount}, to a maximum of 20.`);
+            }
+            continue;
         }
     }
 
