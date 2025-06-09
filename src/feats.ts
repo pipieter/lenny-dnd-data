@@ -88,11 +88,11 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
 function getFeatPrerequisites(feat: Feat): string | null {
     if (!feat.prerequisite) return null;
 
-    let orGroup: string[] = [];
+    let prerequisites: string[][] = [];
     for (const prerequisite of feat.prerequisite) {
         const keys = Object.keys(prerequisite);
 
-        let andGroup: string[] = [];
+        let group: string[] = [];
         for (const key of keys) {
             const entry = prerequisite[key];
 
@@ -101,24 +101,24 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     const level = entry;
 
                     if (level.level) {
-                        andGroup.push(`Level ${level.level} ${level.class.name}`);
+                        group.push(`Level ${level.level} ${level.class.name}`);
                         continue;
                     }
 
-                    andGroup.push(`Level ${level}+`);
+                    group.push(`Level ${level}+`);
                     break;
 
                 case 'feat':
                     const feat: string = entry[0]; // Only ever has 1 feat
                     const parts = feat.split('|').map(title);
 
-                    if (parts.length <= 2) andGroup.push(parts[0]);
-                    else andGroup.push(parts[parts.length - 1]);
+                    if (parts.length <= 2) group.push(parts[0]);
+                    else group.push(parts[parts.length - 1]);
                     break;
 
                 case 'feature':
                     const feature = entry[0]; // Only ever has 1 feature
-                    andGroup.push(feature);
+                    group.push(feature);
                     break;
 
                 case 'ability':
@@ -130,12 +130,12 @@ function getFeatPrerequisites(feat: Feat): string | null {
 
                         abilityGroup.push(`${amount} ${score}`);
                     }
-                    andGroup.push(joinStringsWithOr(abilityGroup, false));
+                    group.push(joinStringsWithOr(abilityGroup, false));
                     break;
 
                 case 'background':
                     const background = entry[0];
-                    andGroup.push(background.name);
+                    group.push(background.name);
                     break;
 
                 case 'race':
@@ -152,7 +152,7 @@ function getFeatPrerequisites(feat: Feat): string | null {
                         races.push(title(raceText));
                     }
 
-                    andGroup.push(joinStringsWithOr(races, false));
+                    group.push(joinStringsWithOr(races, false));
                     break;
 
                 case 'proficiency':
@@ -177,37 +177,37 @@ function getFeatPrerequisites(feat: Feat): string | null {
                         }
                     }
 
-                    andGroup.push(joinStringsWithAnd(proficiencies, true));
+                    group.push(joinStringsWithAnd(proficiencies, true));
                     break;
 
                 case 'campaign':
                     const campaign = `${entry[0]} Campaign`; // Only ever has 1 campaign
-                    andGroup.push(campaign);
+                    group.push(campaign);
                     break;
 
                 case 'spellcasting':
-                    andGroup.push('The ability to cast at least one spell');
+                    group.push('The ability to cast at least one spell');
                     break;
 
                 case 'spellcasting2020':
-                    andGroup.push('Spellcasting or Pact Magic Feature');
+                    group.push('Spellcasting or Pact Magic Feature');
                     break;
 
                 case 'spellcastingFeature':
-                    andGroup.push('Spellcasting Feature');
+                    group.push('Spellcasting Feature');
                     break;
 
                 case 'spellcastingPrepared':
-                    andGroup.push('Spellcasting feature from a class that prepares spells');
+                    group.push('Spellcasting feature from a class that prepares spells');
                     break;
 
                 case 'otherSummary':
                     const summaryEntry = entry.entry;
-                    andGroup.push(summaryEntry);
+                    group.push(summaryEntry);
                     break;
 
                 case 'other':
-                    andGroup.push(entry);
+                    group.push(entry);
                     break;
 
                 default:
@@ -215,10 +215,39 @@ function getFeatPrerequisites(feat: Feat): string | null {
             }
         }
 
-        orGroup.push(joinStringsWithAnd(andGroup, false));
+        prerequisites.push(group);
     }
 
-    return joinStringsWithOr(orGroup, false);
+    // Iterate over prerequisite groups and count up how many times each group-entry appears.
+    const commonTracker: Record<string, number> = {};
+    for (const group of prerequisites) {
+        for (const trait of group) {
+            commonTracker[trait] = (commonTracker[trait] || 0) + 1;
+        }
+    }
+
+    // Filter out 'common' group-entries
+    const groupLength = prerequisites.length;
+    let common: string[] = [];
+    const andedPrerequisites = prerequisites.map((group) => {
+        const filteredGroup = group.filter((entry) => {
+            if (commonTracker[entry] === groupLength) {
+                if (!common.includes(entry)) common.push(entry);
+                return false;
+            }
+            return true;
+        });
+        return joinStringsWithAnd(filteredGroup, false);
+    });
+
+    if (common.length === 0) return joinStringsWithOr(andedPrerequisites, false);
+    if (groupLength === 1) return joinStringsWithAnd(prerequisites[0], false);
+
+    // Return common joined with rest of the prerequisites. (e.g. Level 4+ and Fighter 1 or Paladin 1)
+    return joinStringsWithAnd(
+        [joinStringsWithAnd(common, false), joinStringsWithOr(andedPrerequisites, false)],
+        false
+    );
 }
 
 function getFeatType(feat: Feat): string {
