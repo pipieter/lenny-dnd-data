@@ -52,6 +52,7 @@ function main(): void {
     writeFileSync('./generated/feats.json', JSON.stringify(feats, null, 2), 'utf-8');
 
     // This is a test that doesn't impact anything!
+    // This is the best comment you will ever read.
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
