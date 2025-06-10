@@ -29,7 +29,7 @@ function parseRuleType(rule: VariantRule): string {
         ['VO', 'Variant Optional'],
     ]);
 
-    return RuleTypes.get(type) ?? 'Unknown';
+    return RuleTypes.get(type) ?? 'Uncategorized';
 }
 
 function getGendataVariantRules(): ParsedRule[] {
