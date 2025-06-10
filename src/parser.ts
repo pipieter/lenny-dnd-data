@@ -1,4 +1,4 @@
-import { BulletPoint, getNumberSign, joinStringsWithOr } from './util';
+import { BulletPoint, getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import {
     get5eToolsUrl,
     getBackgroundsUrl,
@@ -228,11 +228,11 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         // as such, ignore checking for remaining '{' and '}' for now
         return text;
     }
-    if (text.includes('{')) {
-        throw `Unmatched '{' character found in '${text}'`;
-    }
-    if (text.includes('}')) {
-        throw `Unmatched '}' character found in '${text}'`;
+
+    const disallowedSymbols = ['{', '}', '[', ']', '|'];
+    const foundSymbols = disallowedSymbols.filter((s) => text.includes(s)).map((s) => `'${s}'`);
+    if (foundSymbols.length > 0) {
+        throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${text}'`;
     }
 
     return text;
