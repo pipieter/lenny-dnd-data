@@ -41,8 +41,6 @@ function main(): void {
     const feats = getFeats(data);
     stopwatch.log('Feats retrieved');
 
-    throw 'This didnt work!';
-
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
     writeFileSync('./generated/conditions.json', JSON.stringify(conditions, null, 2), 'utf-8');
