@@ -1,4 +1,4 @@
-import { BulletPoint, getNumberSign, joinStringsWithOr } from './util';
+import { BulletPoint, getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import {
     get5eToolsUrl,
     getBackgroundsUrl,
@@ -23,6 +23,7 @@ export interface Description {
 }
 
 export interface Table {
+    title: string;
     headers: string[];
     rows: string[][];
 }
@@ -75,6 +76,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@chance ([^\}]*?)\|\|\|([^\}]*?)\|([^\}]*?)\}/g, '$1 percent');
+    text = text.replaceAll(/\{@chance ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$2');
     text = text.replaceAll(/\{@chance ([^\}]*?)\}/g, '$1 percent');
     text = text.replaceAll(/\{@classFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -86,6 +88,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@deck ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@deck ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@dice #\$prompt([^\}]*?)\|([^\}]*?)\}/g, '$2'); // See rule Carrying Capacity
     text = text.replaceAll(/\{@dice ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@dice ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -99,6 +102,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@item ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+    text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@language ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@link ([^\}]*?)\|([^\}]*?)\}/g, '[$1]($2)');
     text = text.replaceAll(/\{@loader ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -126,10 +130,13 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
+        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
+        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '$1');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '$2');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
@@ -158,10 +165,13 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
+        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `__$3__`);
+        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `__$3__`);
         text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '__$1__');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '__$1__');
+        text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '**$2**');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
@@ -228,11 +238,11 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         // as such, ignore checking for remaining '{' and '}' for now
         return text;
     }
-    if (text.includes('{')) {
-        throw `Unmatched '{' character found in '${text}'`;
-    }
-    if (text.includes('}')) {
-        throw `Unmatched '}' character found in '${text}'`;
+
+    const disallowedSymbols = ['{', '}', '|', '[object Object]'];
+    const foundSymbols = disallowedSymbols.filter((s) => text.includes(s)).map((s) => `'${s}'`);
+    if (foundSymbols.length > 0) {
+        throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${text}'`;
     }
 
     return text;
@@ -406,62 +416,78 @@ function parseDescriptionBlockFromBlocks(descriptions: any[]): string {
     return blocks.join('\n\n');
 }
 
-function parseDescriptionBlock(description: string | any): string | Table {
+function splitDescriptionTypes(values: (string | Table)[]): { strings: string[]; tables: Table[] } {
+    const strings = [];
+    const tables = [];
+    for (const value of values) {
+        if (typeof value === 'string') strings.push(value);
+        else tables.push(value);
+    }
+    return { strings, tables };
+}
+
+function parseDescriptionBlock(description: string | any): (string | Table)[] {
     if (typeof description == 'string') {
-        return cleanDNDText(description);
+        return [cleanDNDText(description)];
     }
 
     switch (description.type) {
         case 'quote': {
             const quote = parseDescriptionBlockFromBlocks(description.entries);
-            if (description.by) return `*${quote}* - ${description.by}`;
-            return `*${quote}*`;
+            if (description.by) return [`*${quote}* - ${description.by}`];
+            return [`*${quote}*`];
         }
         case 'list': {
-            const points: string[] = [];
-            for (const item of description.items)
-                points.push(`${BulletPoint} ${parseDescriptionBlock(item)}`);
-            return points.join('\n');
+            const entries = description.items.flatMap(parseDescriptionBlock);
+            const { strings, tables } = splitDescriptionTypes(entries);
+            const points = strings.map((str) => `${BulletPoint} ${str}`).join('\n');
+            return [points, ...tables];
         }
         case 'inset':
         case 'insetReadaloud': {
-            let text = `*${parseDescriptionBlockFromBlocks(description.entries)}*`;
-            return cleanDNDText(text);
+            const entries = description.entries.flatMap(parseDescriptionBlock);
+            const { strings, tables } = splitDescriptionTypes(entries);
+            const entry = strings.map((str) => `*${str}*`).join('\n');
+            return [entry, ...tables];
         }
         case 'item': {
             const entries: (string | Table)[] = [];
             if (description.entries) {
-                entries.push(...description.entries.map(parseDescriptionBlock));
+                entries.push(...description.entries.flatMap(parseDescriptionBlock));
             } else if (description.entry) {
-                entries.push(parseDescriptionBlock(description.entry));
+                entries.push(...parseDescriptionBlock(description.entry));
             } else {
                 throw "Could not find entry in description block with type 'item'";
             }
-            const entry = entries.join('\n');
-            return cleanDNDText(`**${description.name}**: ${entry}`);
+
+            const { strings, tables } = splitDescriptionTypes(entries);
+            const entry = strings.join('\n');
+            return [cleanDNDText(`**${description.name}**: ${entry}`), ...tables];
         }
         case 'inline': {
-            const entries = description.entries.map(parseDescriptionBlock);
+            const entries = description.entries.flatMap(parseDescriptionBlock);
             let entry = entries.join('');
-            if (description.name) return cleanDNDText(`**${description.name}**: ${entry}`);
-            return cleanDNDText(entry);
+            if (description.name) return [cleanDNDText(`**${description.name}**: ${entry}`)];
+            return [cleanDNDText(entry)];
         }
         case 'section':
         case 'entries': {
-            const entries = description.entries.map(parseDescriptionBlock);
-            let entry = entries.join('\n');
-            if (description.name) return cleanDNDText(`**${description.name}**: ${entry}`);
-            return cleanDNDText(entry);
+            const entries = description.entries.flatMap(parseDescriptionBlock);
+            const { strings, tables } = splitDescriptionTypes(entries);
+            let entry = strings.join('\n');
+            if (description.name)
+                return [cleanDNDText(`**${description.name}**: ${entry}`), ...tables];
+            return [cleanDNDText(entry), ...tables];
         }
         case 'entry': {
-            return cleanDNDText(description.entry);
+            return [cleanDNDText(description.entry)];
         }
         case 'table': {
             const table = parseDescriptionFromTable(description);
-            return table.value;
+            return [table.value];
         }
         case 'image': {
-            return ''; // Images will not be handled within descriptions
+            return []; // Images will not be handled within descriptions
         }
         case 'abilityAttackMod':
         case 'abilityDc': {
@@ -469,7 +495,7 @@ function parseDescriptionBlock(description: string | any): string | Table {
 
             const abilityScores = description.attributes.map(parseAbilityScore);
             const text = `${BulletPoint} *${description.name} ${titleDesc}:* ${joinStringsWithOr(abilityScores)} modifier + Proficiency Bonus`;
-            return text;
+            return [text];
         }
         case 'refClassFeature': {
             // classFeature is a string like "Sorcery Points|Sorcerer||2"
@@ -479,8 +505,8 @@ function parseDescriptionBlock(description: string | any): string | Table {
                 if (parts.length >= 4) {
                     const name = parts[0];
                     const value = parts[3];
-                    if (value && name) return `${BulletPoint} **${value}** ${name}`;
-                    if (name) return name;
+                    if (value && name) return [`${BulletPoint} **${value}** ${name}`];
+                    if (name) return [name];
                 }
             }
 
@@ -491,21 +517,21 @@ function parseDescriptionBlock(description: string | any): string | Table {
             if (typeof classFeature === 'string') {
                 const [name, , , , , value] = classFeature.split('|');
                 if (value && name) {
-                    return `${BulletPoint} **${value}** ${name}`;
+                    return [`${BulletPoint} **${value}** ${name}`];
                 }
-                return name || classFeature;
+                return [name || classFeature];
             }
             throw `Unsupported refSubclassFeature ${classFeature}`;
         }
         case 'refOptionalfeature': {
-            let optionalFeature = description.optionalfeature;
+            let optionalFeature: string = description.optionalfeature;
 
             if (optionalFeature.includes('|')) {
                 const [name, source] = optionalFeature.split('|');
                 optionalFeature = `${name} (${source})`;
             }
 
-            return optionalFeature;
+            return [optionalFeature];
         }
         case 'options': {
             const entries: string[] = [];
@@ -515,7 +541,7 @@ function parseDescriptionBlock(description: string | any): string | Table {
             }
 
             const title = count ? `Choose **${count}:**\n` : '';
-            return `${title}${entries.join('\n ')}`;
+            return [`${title}${entries.join('\n ')}`];
         }
         case 'statblock': {
             const tag = description.tag;
@@ -535,13 +561,13 @@ function parseDescriptionBlock(description: string | any): string | Table {
             }
 
             if (!link) throw `Unsupported statblock ${tag}`;
-            return `[See ${name}'s stats here](${link})`;
+            return [`[See ${name}'s stats here](${link})`];
         }
         case 'refFeat': {
             const feat = description.feat;
             const [name, source] = feat.split('|');
             const link = getFeatsUrl(name, source);
-            return `${BulletPoint} [${name}](${link})`;
+            return [`${BulletPoint} [${name}](${link})`];
         }
         case 'link': {
             const text = description.text;
@@ -560,7 +586,7 @@ function parseDescriptionBlock(description: string | any): string | Table {
             }
 
             if (!url) throw `Unsupported link ${description}`;
-            return `[${text}](${url})`;
+            return [`[${text}](${url})`];
         }
         default: {
             throw `Unsupported description type: '${description.type}'`;
@@ -606,7 +632,7 @@ function parseDescriptionFromTable(description: any): Description {
     const title: string = description.caption || '';
     const headers: string[] = description.colLabels.map(cleanDNDText);
     const rows: string[][] = description.rows.map((row: string[]) => row.map(parseTableValue));
-    const table: Table = { headers: headers, rows: rows };
+    const table: Table = { title, headers, rows };
 
     return { name: title, type: DescriptionType.table, value: table };
 }
@@ -626,17 +652,26 @@ export function parseDescriptions(name: string, descriptions: any[]): Descriptio
             } else if (desc.type == 'table') {
                 subdescriptions.push(parseDescriptionFromTable(desc));
             } else {
-                blocks.push(parseDescriptionBlock(desc));
+                blocks.push(...parseDescriptionBlock(desc));
             }
         }
     }
 
+    function toDescription(name: string, value: string | Table): Description {
+        name = typeof value === 'string' ? name : name || value.title;
+        return {
+            name,
+            type: typeof value === 'string' ? DescriptionType.text : DescriptionType.table,
+            value,
+        };
+    }
+
     const results: Description[] = [];
     if (blocks.length > 0) {
-        results.push({ name: name, type: DescriptionType.text, value: blocks[0] });
+        results.push(toDescription(name, blocks[0]));
     }
     for (let i = 1; i < blocks.length; i++) {
-        results.push({ name: '', type: DescriptionType.text, value: blocks[i] });
+        results.push(toDescription('', blocks[i]));
     }
     results.push(...subdescriptions);
 

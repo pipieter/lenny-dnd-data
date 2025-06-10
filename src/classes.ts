@@ -415,6 +415,7 @@ class CharacterClass {
                         name: title,
                         type: DescriptionType.table,
                         value: {
+                            title,
                             headers,
                             rows: [spellRow],
                         },
