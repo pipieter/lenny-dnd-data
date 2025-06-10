@@ -208,6 +208,7 @@
         "name": "Figuring Out Alien Technology",
         "type": "table",
         "value": {
+          "title": "Figuring Out Alien Technology",
           "headers": [
             "Int. Check Total",
             "Result"
@@ -584,6 +585,7 @@
         "name": "Object Armor Class",
         "type": "table",
         "value": {
+          "title": "Object Armor Class",
           "headers": [
             "AC",
             "Substance"
@@ -629,6 +631,7 @@
         "name": "Object Hit Points",
         "type": "table",
         "value": {
+          "title": "Object Hit Points",
           "headers": [
             "Size",
             "Fragile",
@@ -747,6 +750,7 @@
         "name": "Carrying Capacity",
         "type": "table",
         "value": {
+          "title": "Carrying Capacity",
           "headers": [
             "Creature Size",
             "Carry",
@@ -755,28 +759,28 @@
           "rows": [
             [
               "Tiny",
-              "#$prompt_number:title=Enter Strength Score$# × 7.5 (Str. × 7.5) lb.",
-              "#$prompt_number:title=Enter Strength Score$# × 15 (Str. × 15) lb."
+              "Str. × 7.5 lb.",
+              "Str. × 15 lb."
             ],
             [
               "Small/Medium",
-              "#$prompt_number:title=Enter Strength Score$# × 15 (Str. × 15) lb.",
-              "#$prompt_number:title=Enter Strength Score$# × 30 (Str. × 30) lb."
+              "Str. × 15 lb.",
+              "Str. × 30 lb."
             ],
             [
               "Large",
-              "#$prompt_number:title=Enter Strength Score$# × 30 (Str. × 30) lb.",
-              "#$prompt_number:title=Enter Strength Score$# × 60 (Str. × 60) lb."
+              "Str. × 30 lb.",
+              "Str. × 60 lb."
             ],
             [
               "Huge",
-              "#$prompt_number:title=Enter Strength Score$# × 60 (Str. × 60) lb.",
-              "#$prompt_number:title=Enter Strength Score$# × 120 (Str. × 120) lb."
+              "Str. × 60 lb.",
+              "Str. × 120 lb."
             ],
             [
               "Gargantuan",
-              "#$prompt_number:title=Enter Strength Score$# × 120 (Str. × 120) lb.",
-              "#$prompt_number:title=Enter Strength Score$# × 240 (Str. × 240) lb."
+              "Str. × 120 lb.",
+              "Str. × 240 lb."
             ]
           ]
         }
@@ -932,6 +936,7 @@
         "name": "Crash Damage",
         "type": "table",
         "value": {
+          "title": "Crash Damage",
           "headers": [
             "Size of Creature or Object Struck",
             "Bludgeoning Damage"
@@ -1090,6 +1095,7 @@
         "name": "Ability Score Point Cost",
         "type": "table",
         "value": {
+          "title": "Ability Score Point Cost",
           "headers": [
             "Score",
             "Cost"
@@ -1192,6 +1198,7 @@
         "name": "Proficiency Swaps",
         "type": "table",
         "value": {
+          "title": "Proficiency Swaps",
           "headers": [
             "Proficiency",
             "Replacement Proficiency"
@@ -1228,7 +1235,7 @@
       {
         "name": "",
         "type": "text",
-        "value": "*Instead of choosing one of the game's races for your character at 1st level, you can use the following traits to represent your character's lineage, giving you full control over how your character's origin shaped them:\n\n• **Creature Type**: You are a humanoid. You determine your appearance and whether you resemble any of your kin.\n• **Size**: You are Small or Medium (your choice).\n• **Speed**: Your base walking speed is 30 feet.\n• **Ability Score Increase**: One ability score of your choice increases by 2.\n• **Feat**: You gain one feat of your choice for which you qualify.\n• **Variable Trait**: You gain one of the following options of your choice: (a) darkvision with a range of 60 feet or (b) proficiency in one skill of your choice.\n• **Languages**: You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character.*"
+        "value": "*Instead of choosing one of the game's races for your character at 1st level, you can use the following traits to represent your character's lineage, giving you full control over how your character's origin shaped them:*\n*• **Creature Type**: You are a humanoid. You determine your appearance and whether you resemble any of your kin.\n• **Size**: You are Small or Medium (your choice).\n• **Speed**: Your base walking speed is 30 feet.\n• **Ability Score Increase**: One ability score of your choice increases by 2.\n• **Feat**: You gain one feat of your choice for which you qualify.\n• **Variable Trait**: You gain one of the following options of your choice: (a) darkvision with a range of 60 feet or (b) proficiency in one skill of your choice.\n• **Languages**: You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character.*"
       }
     ]
   },
@@ -1317,6 +1324,7 @@
         "name": "Damage Types",
         "type": "table",
         "value": {
+          "title": "Damage Types",
           "headers": [
             "Type",
             "Examples"
@@ -1556,6 +1564,7 @@
         "name": "Building a Stronghold",
         "type": "table",
         "value": {
+          "title": "Building a Stronghold",
           "headers": [
             "Stronghold",
             "Construction Cost",
@@ -1657,6 +1666,7 @@
         "name": "Buying Magic Items",
         "type": "table",
         "value": {
+          "title": "Buying Magic Items",
           "headers": [
             "Check Total",
             "Items Acquired"
@@ -1705,6 +1715,7 @@
         "name": "Magic Item Price",
         "type": "table",
         "value": {
+          "title": "Magic Item Price",
           "headers": [
             "Rarity",
             "Asking Price*"
@@ -1742,6 +1753,7 @@
         "name": "Magic Item Purchase Complications",
         "type": "table",
         "value": {
+          "title": "Magic Item Purchase Complications",
           "headers": [
             "d12",
             "Complication"
@@ -1820,6 +1832,7 @@
         "name": "Carousing",
         "type": "table",
         "value": {
+          "title": "Carousing",
           "headers": [
             "d100 + Level",
             "Result"
@@ -1938,6 +1951,7 @@
         "name": "Carousing",
         "type": "table",
         "value": {
+          "title": "Carousing",
           "headers": [
             "Check Total",
             "Result"
@@ -1975,6 +1989,7 @@
         "name": "Lower-Class Carousing Complications",
         "type": "table",
         "value": {
+          "title": "Lower-Class Carousing Complications",
           "headers": [
             "d8",
             "Complication"
@@ -2019,6 +2034,7 @@
         "name": "Middle-Class Carousing Complications",
         "type": "table",
         "value": {
+          "title": "Middle-Class Carousing Complications",
           "headers": [
             "d8",
             "Complication"
@@ -2063,6 +2079,7 @@
         "name": "Upper-Class Carousing Complications",
         "type": "table",
         "value": {
+          "title": "Upper-Class Carousing Complications",
           "headers": [
             "d8",
             "Complication"
@@ -2182,12 +2199,13 @@
       {
         "name": "",
         "type": "text",
-        "value": "*A magic item formula explains how to make a particular magic item. Such a formula can be an excellent reward if you allow player characters to craft magic items.\n\nYou can award a formula in place of a magic item. Usually written in a book or on a scroll, a formula is one step rarer than the item it allows a character to create. For example, the formula for a common magic item is uncommon. No formulas exist for legendary items.\n\nIf the creation of magic items is commonplace in your campaign, a formula can have a rarity that matches the rarity of the item it allows a character to create. Formulas for common and uncommon items might even be for sale, each with a cost double that of its magic item.*"
+        "value": "*A magic item formula explains how to make a particular magic item. Such a formula can be an excellent reward if you allow player characters to craft magic items.*\n*You can award a formula in place of a magic item. Usually written in a book or on a scroll, a formula is one step rarer than the item it allows a character to create. For example, the formula for a common magic item is uncommon. No formulas exist for legendary items.*\n*If the creation of magic items is commonplace in your campaign, a formula can have a rarity that matches the rarity of the item it allows a character to create. Formulas for common and uncommon items might even be for sale, each with a cost double that of its magic item.*"
       },
       {
         "name": "Crafting Magic Items",
         "type": "table",
         "value": {
+          "title": "Crafting Magic Items",
           "headers": [
             "Item Rarity",
             "Creation Cost",
@@ -2259,6 +2277,7 @@
         "name": "",
         "type": "table",
         "value": {
+          "title": "",
           "headers": [
             "Proficiency",
             "Items"
@@ -2332,6 +2351,7 @@
         "name": "Magic Item Ingredients",
         "type": "table",
         "value": {
+          "title": "Magic Item Ingredients",
           "headers": [
             "Item Rarity",
             "CR Range"
@@ -2364,6 +2384,7 @@
         "name": "Magic Item Crafting Time and Cost",
         "type": "table",
         "value": {
+          "title": "Magic Item Crafting Time and Cost",
           "headers": [
             "Item Rarity",
             "Workweeks*",
@@ -2407,6 +2428,7 @@
         "name": "Crafting Complications",
         "type": "table",
         "value": {
+          "title": "Crafting Complications",
           "headers": [
             "d6",
             "Complication"
@@ -2448,6 +2470,7 @@
         "name": "Potion of Healing Creation",
         "type": "table",
         "value": {
+          "title": "Potion of Healing Creation",
           "headers": [
             "Type",
             "Time",
@@ -2534,6 +2557,7 @@
         "name": "Loot Value",
         "type": "table",
         "value": {
+          "title": "Loot Value",
           "headers": [
             "DC",
             "Value"
@@ -2567,6 +2591,7 @@
         "name": "Crime Complications",
         "type": "table",
         "value": {
+          "title": "Crime Complications",
           "headers": [
             "d8",
             "Complication"
@@ -2652,6 +2677,7 @@
         "name": "Gambling Results",
         "type": "table",
         "value": {
+          "title": "Gambling Results",
           "headers": [
             "Result",
             "Value"
@@ -2685,6 +2711,7 @@
         "name": "Gambling Complications",
         "type": "table",
         "value": {
+          "title": "Gambling Complications",
           "headers": [
             "d6",
             "Complication"
@@ -2772,6 +2799,7 @@
         "name": "Pit Fighting Results",
         "type": "table",
         "value": {
+          "title": "Pit Fighting Results",
           "headers": [
             "Result",
             "Value"
@@ -2805,6 +2833,7 @@
         "name": "Pit Fighting Complications",
         "type": "table",
         "value": {
+          "title": "Pit Fighting Complications",
           "headers": [
             "d6",
             "Complication"
@@ -2948,6 +2977,7 @@
         "name": "Religious Service",
         "type": "table",
         "value": {
+          "title": "Religious Service",
           "headers": [
             "Check Total",
             "Result"
@@ -2977,6 +3007,7 @@
         "name": "Religious Service Complications",
         "type": "table",
         "value": {
+          "title": "Religious Service Complications",
           "headers": [
             "d6",
             "Complication"
@@ -3046,6 +3077,7 @@
         "name": "Research Outcomes",
         "type": "table",
         "value": {
+          "title": "Research Outcomes",
           "headers": [
             "Check Total",
             "Outcome"
@@ -3084,6 +3116,7 @@
         "name": "Research Complications",
         "type": "table",
         "value": {
+          "title": "Research Complications",
           "headers": [
             "d6",
             "Complication"
@@ -3166,6 +3199,7 @@
         "name": "Running a Business",
         "type": "table",
         "value": {
+          "title": "Running a Business",
           "headers": [
             "d100 + Days",
             "Result"
@@ -3229,6 +3263,7 @@
         "name": "Spell Scroll Costs",
         "type": "table",
         "value": {
+          "title": "Spell Scroll Costs",
           "headers": [
             "Spell Level",
             "Time",
@@ -3297,6 +3332,7 @@
         "name": "Scribe a Scroll Complications",
         "type": "table",
         "value": {
+          "title": "Scribe a Scroll Complications",
           "headers": [
             "d6",
             "Complication"
@@ -3356,6 +3392,7 @@
         "name": "Magic Item Base Prices",
         "type": "table",
         "value": {
+          "title": "Magic Item Base Prices",
           "headers": [
             "Rarity",
             "Base Price*"
@@ -3388,6 +3425,7 @@
         "name": "Magic Item Offer",
         "type": "table",
         "value": {
+          "title": "Magic Item Offer",
           "headers": [
             "Check Total",
             "Offer"
@@ -3417,6 +3455,7 @@
         "name": "Magic Item Sale Complications",
         "type": "table",
         "value": {
+          "title": "Magic Item Sale Complications",
           "headers": [
             "d6",
             "Complication"
@@ -3491,6 +3530,7 @@
         "name": "Salable Magic Items",
         "type": "table",
         "value": {
+          "title": "Salable Magic Items",
           "headers": [
             "Rarity",
             "Base Price",
@@ -3529,6 +3569,7 @@
         "name": "Selling a Magic Item",
         "type": "table",
         "value": {
+          "title": "Selling a Magic Item",
           "headers": [
             "d100 + Mod",
             "You Find..."
@@ -3589,6 +3630,7 @@
         "name": "Sowing Rumors",
         "type": "table",
         "value": {
+          "title": "Sowing Rumors",
           "headers": [
             "Settlement Size",
             "Time Required"
@@ -3659,6 +3701,7 @@
         "name": "Training Complications",
         "type": "table",
         "value": {
+          "title": "Training Complications",
           "headers": [
             "d6",
             "Complication"
@@ -3713,6 +3756,7 @@
         "name": "Training to Gain Levels",
         "type": "table",
         "value": {
+          "title": "Training to Gain Levels",
           "headers": [
             "Level Attained",
             "Training Time",
@@ -3769,6 +3813,7 @@
         "name": "Wages",
         "type": "table",
         "value": {
+          "title": "Wages",
           "headers": [
             "Check Total",
             "Earnings"
@@ -3802,6 +3847,7 @@
         "name": "Work Complications",
         "type": "table",
         "value": {
+          "title": "Work Complications",
           "headers": [
             "d6",
             "Complication"
@@ -3861,6 +3907,7 @@
         "name": "Exploration Discoveries",
         "type": "table",
         "value": {
+          "title": "Exploration Discoveries",
           "headers": [
             "Check Total",
             "Discovery"
@@ -3941,6 +3988,7 @@
         "name": "Explore Territory Complications",
         "type": "table",
         "value": {
+          "title": "Explore Territory Complications",
           "headers": [
             "d6",
             "Complication"
@@ -4015,6 +4063,7 @@
         "name": "Franchise Restructuring",
         "type": "table",
         "value": {
+          "title": "Franchise Restructuring",
           "headers": [
             "Successes",
             "Benefit"
@@ -4044,6 +4093,7 @@
         "name": "Franchise Restructuring Complications",
         "type": "table",
         "value": {
+          "title": "Franchise Restructuring Complications",
           "headers": [
             "d6",
             "Complication"
@@ -4113,6 +4163,7 @@
         "name": "Headquarters Modification",
         "type": "table",
         "value": {
+          "title": "Headquarters Modification",
           "headers": [
             "Successes",
             "Benefit"
@@ -4146,6 +4197,7 @@
         "name": "Headquarters Modification Complications",
         "type": "table",
         "value": {
+          "title": "Headquarters Modification Complications",
           "headers": [
             "d6",
             "Complication"
@@ -4215,6 +4267,7 @@
         "name": "Marketeering",
         "type": "table",
         "value": {
+          "title": "Marketeering",
           "headers": [
             "Successes",
             "Benefit"
@@ -4248,6 +4301,7 @@
         "name": "Marketeering Complications",
         "type": "table",
         "value": {
+          "title": "Marketeering Complications",
           "headers": [
             "d8",
             "Complication"
@@ -4320,6 +4374,7 @@
         "name": "Philanthropic Enterprise",
         "type": "table",
         "value": {
+          "title": "Philanthropic Enterprise",
           "headers": [
             "Check Total",
             "Result"
@@ -4362,6 +4417,7 @@
         "name": "Philanthropic Enterprise Complications",
         "type": "table",
         "value": {
+          "title": "Philanthropic Enterprise Complications",
           "headers": [
             "d6",
             "Complication"
@@ -4426,6 +4482,7 @@
         "name": "Running a Franchise",
         "type": "table",
         "value": {
+          "title": "Running a Franchise",
           "headers": [
             "d100 + Days",
             "Result"
@@ -4503,6 +4560,7 @@
         "name": "Running a Franchise Complications",
         "type": "table",
         "value": {
+          "title": "Running a Franchise Complications",
           "headers": [
             "d6",
             "Complication"
@@ -4567,6 +4625,7 @@
         "name": "Schmoozing",
         "type": "table",
         "value": {
+          "title": "Schmoozing",
           "headers": [
             "Check Total",
             "Result"
@@ -4604,6 +4663,7 @@
         "name": "Schmoozing Complications",
         "type": "table",
         "value": {
+          "title": "Schmoozing Complications",
           "headers": [
             "d6",
             "Complication"
@@ -4668,6 +4728,7 @@
         "name": "Scrutineering",
         "type": "table",
         "value": {
+          "title": "Scrutineering",
           "headers": [
             "Check Total",
             "Outcome"
@@ -4701,6 +4762,7 @@
         "name": "Scrutineering Complications",
         "type": "table",
         "value": {
+          "title": "Scrutineering Complications",
           "headers": [
             "d6",
             "Complication"
@@ -4775,6 +4837,7 @@
         "name": "Shady Business Practice",
         "type": "table",
         "value": {
+          "title": "Shady Business Practice",
           "headers": [
             "Successes",
             "Benefit"
@@ -4808,6 +4871,7 @@
         "name": "Shady Business Practice Complications",
         "type": "table",
         "value": {
+          "title": "Shady Business Practice Complications",
           "headers": [
             "d6",
             "Complication"
@@ -4882,6 +4946,7 @@
         "name": "Team Building",
         "type": "table",
         "value": {
+          "title": "Team Building",
           "headers": [
             "Check Total",
             "Benefit"
@@ -4934,6 +4999,7 @@
         "name": "Team Building Complications",
         "type": "table",
         "value": {
+          "title": "Team Building Complications",
           "headers": [
             "d6",
             "Complication"
@@ -5028,6 +5094,7 @@
         "name": "Rival",
         "type": "table",
         "value": {
+          "title": "Rival",
           "headers": [
             "d20",
             "Rival"
@@ -5302,6 +5369,7 @@
         "name": "Open Water Encounters (Levels 1–4)",
         "type": "table",
         "value": {
+          "title": "Open Water Encounters (Levels 1–4)",
           "headers": [
             "d100",
             "Encounter"
@@ -5414,6 +5482,7 @@
         "name": "Open Water Encounters (Levels 5–10)",
         "type": "table",
         "value": {
+          "title": "Open Water Encounters (Levels 5–10)",
           "headers": [
             "d100",
             "Encounter"
@@ -5530,6 +5599,7 @@
         "name": "Open Water Encounters (Levels 11–20)",
         "type": "table",
         "value": {
+          "title": "Open Water Encounters (Levels 11–20)",
           "headers": [
             "d100",
             "Encounter"
@@ -5929,6 +5999,7 @@
         "name": "Seeds of Fear",
         "type": "table",
         "value": {
+          "title": "Seeds of Fear",
           "headers": [
             "d12",
             "Seed"
@@ -6781,6 +6852,7 @@
         "name": "Speed Factor Initiative Modifiers",
         "type": "table",
         "value": {
+          "title": "Speed Factor Initiative Modifiers",
           "headers": [
             "Factor",
             "Initiative Modifier"
@@ -6813,6 +6885,7 @@
         "name": "",
         "type": "table",
         "value": {
+          "title": "",
           "headers": [
             "Creature Size",
             "Initiative Modifier"
@@ -6897,6 +6970,7 @@
         "name": "Lingering Injuries",
         "type": "table",
         "value": {
+          "title": "Lingering Injuries",
           "headers": [
             "d20",
             "Injury"
@@ -7358,6 +7432,7 @@
         "name": "Short-Term Madness",
         "type": "table",
         "value": {
+          "title": "Short-Term Madness",
           "headers": [
             "d100",
             "Effects (lasts 1d10 minutes)"
@@ -7410,6 +7485,7 @@
         "name": "Long-Term Madness",
         "type": "table",
         "value": {
+          "title": "Long-Term Madness",
           "headers": [
             "d100",
             "Effects (lasts 1d10 × 10 hours)"
@@ -7470,6 +7546,7 @@
         "name": "Indefinite Madness",
         "type": "table",
         "value": {
+          "title": "Indefinite Madness",
           "headers": [
             "d100",
             "Flaw (lasts until cured)"
@@ -7566,6 +7643,7 @@
         "name": "System Shock",
         "type": "table",
         "value": {
+          "title": "System Shock",
           "headers": [
             "d10",
             "Effect"
@@ -7662,6 +7740,7 @@
         "name": "Potion Miscibility",
         "type": "table",
         "value": {
+          "title": "Potion Miscibility",
           "headers": [
             "d100",
             "Result"
@@ -7808,6 +7887,7 @@
         "name": "Multiclassing Prerequisites",
         "type": "table",
         "value": {
+          "title": "Multiclassing Prerequisites",
           "headers": [
             "Class",
             "Ability Score Minimum"
@@ -7893,6 +7973,7 @@
         "name": "Multiclassing Proficiencies",
         "type": "table",
         "value": {
+          "title": "Multiclassing Proficiencies",
           "headers": [
             "Class",
             "Proficiencies Gained"
@@ -8008,6 +8089,7 @@
         "name": "Multiclass Spellcaster: Spell Slots per Spell Level",
         "type": "table",
         "value": {
+          "title": "Multiclass Spellcaster: Spell Slots per Spell Level",
           "headers": [
             "Lvl.",
             "1st",
@@ -8341,6 +8423,7 @@
         "name": "Multiclass Spellcaster: Spell Slots per Spell Level",
         "type": "table",
         "value": {
+          "title": "Multiclass Spellcaster: Spell Slots per Spell Level",
           "headers": [
             "Level",
             "1",
@@ -8674,6 +8757,7 @@
         "name": "Island Theme",
         "type": "table",
         "value": {
+          "title": "Island Theme",
           "headers": [
             "d6",
             "Theme"
@@ -8715,6 +8799,7 @@
         "name": "Alien Island Leader",
         "type": "table",
         "value": {
+          "title": "Alien Island Leader",
           "headers": [
             "d4",
             "Leader"
@@ -8743,6 +8828,7 @@
         "name": "Alien Island Inhabitants",
         "type": "table",
         "value": {
+          "title": "Alien Island Inhabitants",
           "headers": [
             "d6",
             "Inhabitants"
@@ -8775,6 +8861,7 @@
         "name": "Alien Inhabitant Reactions",
         "type": "table",
         "value": {
+          "title": "Alien Inhabitant Reactions",
           "headers": [
             "d6",
             "Reaction"
@@ -8811,6 +8898,7 @@
         "name": "Alien Island Story Hooks",
         "type": "table",
         "value": {
+          "title": "Alien Island Story Hooks",
           "headers": [
             "d4",
             "Story Hook"
@@ -8844,6 +8932,7 @@
         "name": "Island Curses",
         "type": "table",
         "value": {
+          "title": "Island Curses",
           "headers": [
             "d6",
             "Curse"
@@ -8880,6 +8969,7 @@
         "name": "Cursed Island Inhabitants",
         "type": "table",
         "value": {
+          "title": "Cursed Island Inhabitants",
           "headers": [
             "d6",
             "Inhabitants"
@@ -8916,6 +9006,7 @@
         "name": "Cursed Island Story Hooks",
         "type": "table",
         "value": {
+          "title": "Cursed Island Story Hooks",
           "headers": [
             "d4",
             "Story Hook"
@@ -8949,6 +9040,7 @@
         "name": "Hostile Island Leader",
         "type": "table",
         "value": {
+          "title": "Hostile Island Leader",
           "headers": [
             "d6",
             "Leader"
@@ -8985,6 +9077,7 @@
         "name": "Hostile Island Leader Motivations",
         "type": "table",
         "value": {
+          "title": "Hostile Island Leader Motivations",
           "headers": [
             "d4",
             "Motivation"
@@ -9013,6 +9106,7 @@
         "name": "Hostile Inhabitants",
         "type": "table",
         "value": {
+          "title": "Hostile Inhabitants",
           "headers": [
             "d6",
             "Inhabitants"
@@ -9049,6 +9143,7 @@
         "name": "Hostile Island Story Hooks",
         "type": "table",
         "value": {
+          "title": "Hostile Island Story Hooks",
           "headers": [
             "d4",
             "Story Hook"
@@ -9082,6 +9177,7 @@
         "name": "Sanctum Island Leader",
         "type": "table",
         "value": {
+          "title": "Sanctum Island Leader",
           "headers": [
             "d6",
             "Leader"
@@ -9118,6 +9214,7 @@
         "name": "Sanctum Island Inhabitants",
         "type": "table",
         "value": {
+          "title": "Sanctum Island Inhabitants",
           "headers": [
             "d6",
             "Inhabitants"
@@ -9154,6 +9251,7 @@
         "name": "Sanctum Island Reactions",
         "type": "table",
         "value": {
+          "title": "Sanctum Island Reactions",
           "headers": [
             "d6",
             "Reaction"
@@ -9190,6 +9288,7 @@
         "name": "Sanctum Island Story Hooks",
         "type": "table",
         "value": {
+          "title": "Sanctum Island Story Hooks",
           "headers": [
             "d4",
             "Story Hook"
@@ -9223,6 +9322,7 @@
         "name": "Welcoming Island Leader",
         "type": "table",
         "value": {
+          "title": "Welcoming Island Leader",
           "headers": [
             "d6",
             "Leader"
@@ -9259,6 +9359,7 @@
         "name": "Welcoming Island Inhabitants",
         "type": "table",
         "value": {
+          "title": "Welcoming Island Inhabitants",
           "headers": [
             "d6",
             "Inhabitants"
@@ -9295,6 +9396,7 @@
         "name": "Welcoming Island Story Hooks",
         "type": "table",
         "value": {
+          "title": "Welcoming Island Story Hooks",
           "headers": [
             "d4",
             "Story Hook"
@@ -9328,6 +9430,7 @@
         "name": "Wild Island Features",
         "type": "table",
         "value": {
+          "title": "Wild Island Features",
           "headers": [
             "d6",
             "Feature"
@@ -9364,6 +9467,7 @@
         "name": "Wild Island Encounters",
         "type": "table",
         "value": {
+          "title": "Wild Island Encounters",
           "headers": [
             "d20",
             "Encounter"
@@ -9456,6 +9560,7 @@
         "name": "Wild Island Story Hooks",
         "type": "table",
         "value": {
+          "title": "Wild Island Story Hooks",
           "headers": [
             "d4",
             "Story Hook"
@@ -9649,6 +9754,7 @@
         "name": "Hiding in Blue Holes",
         "type": "table",
         "value": {
+          "title": "Hiding in Blue Holes",
           "headers": [
             "d10",
             "Creatures or Treasure"
@@ -9766,6 +9872,7 @@
         "name": "Objects and Water Pressure",
         "type": "table",
         "value": {
+          "title": "Objects and Water Pressure",
           "headers": [
             "Material",
             "Destructive Depth"
@@ -9812,6 +9919,7 @@
         "name": "Eldritch Mist Types",
         "type": "table",
         "value": {
+          "title": "Eldritch Mist Types",
           "headers": [
             "d6",
             "Mist Type"
@@ -9841,6 +9949,7 @@
         "name": "Mist Thickness",
         "type": "table",
         "value": {
+          "title": "Mist Thickness",
           "headers": [
             "d10",
             "Thickness"
@@ -9869,6 +9978,7 @@
         "name": "Mist Obfuscation",
         "type": "table",
         "value": {
+          "title": "Mist Obfuscation",
           "headers": [
             "Thickness",
             "Heavily Obscured Distance"
@@ -9977,6 +10087,7 @@
         "name": "Magical Storm Type",
         "type": "table",
         "value": {
+          "title": "Magical Storm Type",
           "headers": [
             "d8",
             "Magic"
@@ -10071,6 +10182,7 @@
         "name": "Sandbar DCs",
         "type": "table",
         "value": {
+          "title": "Sandbar DCs",
           "headers": [
             "DC",
             "Description"
@@ -10110,6 +10222,7 @@
         "name": "Shipwreck Contents",
         "type": "table",
         "value": {
+          "title": "Shipwreck Contents",
           "headers": [
             "d10",
             "Creatures or Treasure"
@@ -10167,6 +10280,7 @@
         "name": "Whirlpool Rank",
         "type": "table",
         "value": {
+          "title": "Whirlpool Rank",
           "headers": [
             "Rank",
             "Diameter",
@@ -10202,7 +10316,7 @@
         }
       },
       {
-        "name": "",
+        "name": "Creatures in Whirlpools",
         "type": "text",
         "value": "When a creature moves into a whirlpool or starts its turn there, it must make a Strength (*Athletics*) check with a DC determined by the whirlpool's rank. On a success, the creature can move normally. On a failure, the creature is immediately moved toward the vortex's center at the whirlpool's velocity, and the creature is restrained by the whirlpool until the start of its next turn. If the creature reaches the whirlpool's center, the creature is pulled under the surface and either appears at a special location (see \"Whirlpool Destinations (GoS)\" below) or plunges a number of feet underwater equal to the whirlpool's velocity."
       },
@@ -10225,6 +10339,7 @@
         "name": "Whirlpool Checks",
         "type": "table",
         "value": {
+          "title": "Whirlpool Checks",
           "headers": [
             "Officer",
             "Check"
@@ -10253,6 +10368,7 @@
         "name": "Whirlpool Check Results",
         "type": "table",
         "value": {
+          "title": "Whirlpool Check Results",
           "headers": [
             "Result",
             "Effect"
@@ -10286,6 +10402,7 @@
         "name": "Whirlpool Destinations",
         "type": "table",
         "value": {
+          "title": "Whirlpool Destinations",
           "headers": [
             "d10",
             "Destination"
@@ -10474,6 +10591,7 @@
         "name": "Monster Research",
         "type": "table",
         "value": {
+          "title": "Monster Research",
           "headers": [
             "Type",
             "Suggested Skills"
@@ -10542,6 +10660,7 @@
         "name": "Aberrations",
         "type": "table",
         "value": {
+          "title": "Aberrations",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10570,6 +10689,7 @@
         "name": "Beasts",
         "type": "table",
         "value": {
+          "title": "Beasts",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10598,6 +10718,7 @@
         "name": "Celestials",
         "type": "table",
         "value": {
+          "title": "Celestials",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10626,6 +10747,7 @@
         "name": "Constructs",
         "type": "table",
         "value": {
+          "title": "Constructs",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10654,6 +10776,7 @@
         "name": "Dragons",
         "type": "table",
         "value": {
+          "title": "Dragons",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10682,6 +10805,7 @@
         "name": "Elementals",
         "type": "table",
         "value": {
+          "title": "Elementals",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10710,6 +10834,7 @@
         "name": "Fey",
         "type": "table",
         "value": {
+          "title": "Fey",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10738,6 +10863,7 @@
         "name": "Fiends",
         "type": "table",
         "value": {
+          "title": "Fiends",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10766,6 +10892,7 @@
         "name": "Giants",
         "type": "table",
         "value": {
+          "title": "Giants",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10794,6 +10921,7 @@
         "name": "Humanoids",
         "type": "table",
         "value": {
+          "title": "Humanoids",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10822,6 +10950,7 @@
         "name": "Monstrosities",
         "type": "table",
         "value": {
+          "title": "Monstrosities",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10850,6 +10979,7 @@
         "name": "Oozes",
         "type": "table",
         "value": {
+          "title": "Oozes",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10878,6 +11008,7 @@
         "name": "Plants",
         "type": "table",
         "value": {
+          "title": "Plants",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10906,6 +11037,7 @@
         "name": "Undead",
         "type": "table",
         "value": {
+          "title": "Undead",
           "headers": [
             "d4",
             "Desired Offering"
@@ -10998,6 +11130,7 @@
         "name": "Feywild Time Warp",
         "type": "table",
         "value": {
+          "title": "Feywild Time Warp",
           "headers": [
             "d20",
             "Result"
@@ -11054,6 +11187,7 @@
         "name": "Shadowfell Despair",
         "type": "table",
         "value": {
+          "title": "Shadowfell Despair",
           "headers": [
             "d6",
             "Effect"
@@ -11153,6 +11287,7 @@
         "name": "Abyssal Corruption",
         "type": "table",
         "value": {
+          "title": "Abyssal Corruption",
           "headers": [
             "d10",
             "Result"
@@ -11490,6 +11625,7 @@
         "name": "Proficiency Dice",
         "type": "table",
         "value": {
+          "title": "Proficiency Dice",
           "headers": [
             "Level",
             "Proficiency Bonus",
@@ -11546,6 +11682,7 @@
         "name": "Ship Type",
         "type": "table",
         "value": {
+          "title": "Ship Type",
           "headers": [
             "d100",
             "Ship"
@@ -11587,6 +11724,7 @@
         "name": "Ship Names",
         "type": "table",
         "value": {
+          "title": "Ship Names",
           "headers": [
             "d20",
             "Adjective",
@@ -11710,6 +11848,7 @@
         "name": "Crew Member Name",
         "type": "table",
         "value": {
+          "title": "Crew Member Name",
           "headers": [
             "d20",
             "First Half",
@@ -11828,6 +11967,7 @@
         "name": "Ship Purpose",
         "type": "table",
         "value": {
+          "title": "Ship Purpose",
           "headers": [
             "d100",
             "Purpose"
@@ -11958,6 +12098,7 @@
         "name": "Ship Attitude",
         "type": "table",
         "value": {
+          "title": "Ship Attitude",
           "headers": [
             "d6",
             "Attitude"
@@ -11982,6 +12123,7 @@
         "name": "Friendly Ship",
         "type": "table",
         "value": {
+          "title": "Friendly Ship",
           "headers": [
             "d100",
             "Race"
@@ -12022,6 +12164,7 @@
         "name": "Neutral Ship",
         "type": "table",
         "value": {
+          "title": "Neutral Ship",
           "headers": [
             "d100",
             "Race"
@@ -12062,6 +12205,7 @@
         "name": "Hostile Ship",
         "type": "table",
         "value": {
+          "title": "Hostile Ship",
           "headers": [
             "d100",
             "Race"
@@ -12107,6 +12251,7 @@
         "name": "Ship Disposition",
         "type": "table",
         "value": {
+          "title": "Ship Disposition",
           "headers": [
             "d10",
             "Disposition"
@@ -12158,6 +12303,7 @@
         "name": "Ship Emergency",
         "type": "table",
         "value": {
+          "title": "Ship Emergency",
           "headers": [
             "d4",
             "Emergency"
@@ -12290,6 +12436,7 @@
         "name": "Examples of Faction Ranks",
         "type": "table",
         "value": {
+          "title": "Examples of Faction Ranks",
           "headers": [
             "Renown",
             "Harpers",
@@ -12497,6 +12644,7 @@
         "name": "Scroll Mishap",
         "type": "table",
         "value": {
+          "title": "Scroll Mishap",
           "headers": [
             "d6",
             "Result"
@@ -12609,6 +12757,7 @@
         "name": "Individual Treasure",
         "type": "table",
         "value": {
+          "title": "Individual Treasure",
           "headers": [
             "Level Gained",
             "Lifestyle",
@@ -12682,6 +12831,7 @@
         "name": "Magic Items by Tier",
         "type": "table",
         "value": {
+          "title": "Magic Items by Tier",
           "headers": [
             "Magic Item Table",
             "Available at Tiers",
@@ -12760,6 +12910,7 @@
         "name": "Potions for Sale",
         "type": "table",
         "value": {
+          "title": "Potions for Sale",
           "headers": [
             "Potion of...",
             "Cost"
@@ -12804,6 +12955,7 @@
         "name": "Spell Scrolls for Sale",
         "type": "table",
         "value": {
+          "title": "Spell Scrolls for Sale",
           "headers": [
             "Spell Level",
             "Cost"
@@ -13014,6 +13166,7 @@
         "name": "Starting Encounter Distance",
         "type": "table",
         "value": {
+          "title": "Starting Encounter Distance",
           "headers": [
             "Distance",
             "Notes"
@@ -13136,6 +13289,7 @@
         "name": "Crash Damage",
         "type": "table",
         "value": {
+          "title": "Crash Damage",
           "headers": [
             "Size",
             "Bludgeoning Damage"
@@ -13248,7 +13402,124 @@
       {
         "name": "",
         "type": "text",
-        "value": "**Sidekick Level**: Your sidekick starts as a 1st-level character. As you and your sidekick adventure together, your sidekick gains experience points and reaches new levels the same way a player character does, using the rules in chapter 1.\nWhen a sidekick gains a level, look at the sidekick's table below, and consult the new level's row, which shows the sidekick's new hit point maximum and features.\nThe DM may start a sidekick at a level higher than 1st, using the hit point maximum for its level on the appropriate table below. Also, give the sidekick the features for its current level and any earlier levels on that table.\n[object Object]\n[object Object]\n[object Object]"
+        "value": "**Sidekick Level**: Your sidekick starts as a 1st-level character. As you and your sidekick adventure together, your sidekick gains experience points and reaches new levels the same way a player character does, using the rules in chapter 1.\nWhen a sidekick gains a level, look at the sidekick's table below, and consult the new level's row, which shows the sidekick's new hit point maximum and features.\nThe DM may start a sidekick at a level higher than 1st, using the hit point maximum for its level on the appropriate table below. Also, give the sidekick the features for its current level and any earlier levels on that table."
+      },
+      {
+        "name": "Experts Beyond 1st Level",
+        "type": "table",
+        "value": {
+          "title": "Experts Beyond 1st Level",
+          "headers": [
+            "Level",
+            "Hit Points",
+            "New Features"
+          ],
+          "rows": [
+            [
+              "2nd",
+              "16 (3d8 + 3)",
+              "__Cunning Action__"
+            ],
+            [
+              "3rd",
+              "22 (4d8 + 4)",
+              "__Expertise__"
+            ],
+            [
+              "4th",
+              "27 (5d8 + 5)",
+              "__Ability Score Improvement__"
+            ],
+            [
+              "5th",
+              "33 (6d8 + 6)",
+              "__Proficiency Bonus__"
+            ],
+            [
+              "6th",
+              "38 (7d8 + 7)",
+              "__Extra Attack__"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Spellcasters Beyond 1st Level",
+        "type": "table",
+        "value": {
+          "title": "Spellcasters Beyond 1st Level",
+          "headers": [
+            "Level",
+            "Hit Points",
+            "New Features"
+          ],
+          "rows": [
+            [
+              "2nd",
+              "13 (3d8)",
+              "__Spellcasting__"
+            ],
+            [
+              "3rd",
+              "18 (4d8)",
+              "__Spellcasting__"
+            ],
+            [
+              "4th",
+              "22 (5d8)",
+              "__Ability Score Improvement__"
+            ],
+            [
+              "5th",
+              "27 (6d8)",
+              "__Proficiency Bonus__ & __Spellcasting__"
+            ],
+            [
+              "6th",
+              "31 (7d8)",
+              "__Potent Cantrips__"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Warriors Beyond 1st Level",
+        "type": "table",
+        "value": {
+          "title": "Warriors Beyond 1st Level",
+          "headers": [
+            "Level",
+            "Hit Points",
+            "New Features"
+          ],
+          "rows": [
+            [
+              "2nd",
+              "19 (3d8 + 6)",
+              "__Second Wind__"
+            ],
+            [
+              "3rd",
+              "26 (4d8 + 8)",
+              "__Improved Critical__"
+            ],
+            [
+              "4th",
+              "32 (5d8 + 10)",
+              "__Ability Score Improvement__"
+            ],
+            [
+              "5th",
+              "39 (6d8 + 12)",
+              "__Proficiency Bonus__"
+            ],
+            [
+              "6th",
+              "45 (7d8 + 14)",
+              "__Extra Attack__"
+            ]
+          ]
+        }
       }
     ]
   },
@@ -13276,7 +13547,7 @@
       {
         "name": "",
         "type": "text",
-        "value": "**Gaining a Sidekick Class**: When you create a sidekick, you choose the class it will have for the rest of its career: __expert sidekick|TCE|Expert__, __Spellcaster sidekick|TCE|Spellcaster__, or __Warrior sidekick|TCE|Warrior__. If a sidekick class contains a choice, you may make the choice or let the players make it.\n**Starting Level**: The starting level of a sidekick is the same as the average level of the group. For example, if a 1st-level group starts out with a sidekick, that sidekick is also 1st level, but if a 10th-level group invites a sidekick to join them, that sidekick starts at 10th level.\n**Leveling Up a Sidekick**: Whenever a group's average level goes up, the sidekick gains a level. It doesn't matter how much of the group's recent adventures the sidekick experienced; the sidekick levels up because of a combination of the adventures it shared with the group and its own training.\n**Hit Points**: Whenever the sidekick gains a level, it gains one Hit Die, and its hit point maximum increases. To determine the amount of the increase, roll the Hit Die (the type of die appears in the sidekick's stat block), and add its Constitution modifier. It gains a minimum of 1 hit point per level.\nIf the sidekick drops to 0 hit points and isn't killed outright, it falls unconscious and subsequently makes death saving throws, just like a player character.\n**Proficiency Bonus**: The sidekick's proficiency bonus is determined by its level in its class, as shown in the class's table.\nWhenever the sidekick's proficiency bonus increases by 1, add 1 to the to-hit modifier of all the attacks in its stat block, and increase the DCs in its stat block by 1.\n**Ability Score Increases**: Whenever the sidekick gains the Ability Score Improvement feature, adjust anything in its stat block that relies on an ability modifier that you increase. For example, if the sidekick has an attack that uses its Strength modifier, increase the attack's modifiers to hit and damage if the Strength modifier increases.\nIf it's unclear whether a melee attack in the stat block uses Strength or Dexterity, the attack can use either."
+        "value": "**Gaining a Sidekick Class**: When you create a sidekick, you choose the class it will have for the rest of its career: __Expert__, __Spellcaster__, or __Warrior__. If a sidekick class contains a choice, you may make the choice or let the players make it.\n**Starting Level**: The starting level of a sidekick is the same as the average level of the group. For example, if a 1st-level group starts out with a sidekick, that sidekick is also 1st level, but if a 10th-level group invites a sidekick to join them, that sidekick starts at 10th level.\n**Leveling Up a Sidekick**: Whenever a group's average level goes up, the sidekick gains a level. It doesn't matter how much of the group's recent adventures the sidekick experienced; the sidekick levels up because of a combination of the adventures it shared with the group and its own training.\n**Hit Points**: Whenever the sidekick gains a level, it gains one Hit Die, and its hit point maximum increases. To determine the amount of the increase, roll the Hit Die (the type of die appears in the sidekick's stat block), and add its Constitution modifier. It gains a minimum of 1 hit point per level.\nIf the sidekick drops to 0 hit points and isn't killed outright, it falls unconscious and subsequently makes death saving throws, just like a player character.\n**Proficiency Bonus**: The sidekick's proficiency bonus is determined by its level in its class, as shown in the class's table.\nWhenever the sidekick's proficiency bonus increases by 1, add 1 to the to-hit modifier of all the attacks in its stat block, and increase the DCs in its stat block by 1.\n**Ability Score Increases**: Whenever the sidekick gains the Ability Score Improvement feature, adjust anything in its stat block that relies on an ability modifier that you increase. For example, if the sidekick has an attack that uses its Strength modifier, increase the attack's modifiers to hit and damage if the Strength modifier increases.\nIf it's unclear whether a melee attack in the stat block uses Strength or Dexterity, the attack can use either."
       },
       {
         "name": "Creating a Sidekick",
@@ -13392,6 +13663,7 @@
         "name": "Ability Check Proficiency by Class",
         "type": "table",
         "value": {
+          "title": "Ability Check Proficiency by Class",
           "headers": [
             "Class",
             "Ability Check"
@@ -13662,7 +13934,7 @@
       {
         "name": "",
         "type": "text",
-        "value": "The Spell Points by Level table applies to __bard||bards__, __cleric||clerics__, __druid||druids__, __sorcerer||sorcerers__, and __wizard||wizards__. For a __paladin__ or __ranger__, halve the character's level in that class and then consult the table. For a __fighter|phb|fighter (Eldritch Knight)|Eldritch Knight__ or __rogue|phb|rogue (Arcane Trickster)|Arcane Trickster__, divide the character's level in that class by three."
+        "value": "The Spell Points by Level table applies to __bards__, __clerics__, __druids__, __sorcerers__, and __wizards__. For a __paladin__ or __ranger__, halve the character's level in that class and then consult the table. For a __fighter (Eldritch Knight)__ or __rogue (Arcane Trickster)__, divide the character's level in that class by three."
       },
       {
         "name": "",
@@ -13673,6 +13945,7 @@
         "name": "Spell Point Cost",
         "type": "table",
         "value": {
+          "title": "Spell Point Cost",
           "headers": [
             "Spell Level",
             "Point Cost"
@@ -13721,6 +13994,7 @@
         "name": "Spell Points by Level",
         "type": "table",
         "value": {
+          "title": "Spell Points by Level",
           "headers": [
             "Class Level",
             "Spell Points",
@@ -14247,7 +14521,7 @@
         "value": "Make sure your players know how long you plan to use survivors and that they'll be playing their usual characters again soon. Also let them know that survivors are designed to engage with terrifying circumstances, but their triumph over such threats is not assured. Players' decisions will certainly impact the survivors' fates, but if it seems like doom is in store, encourage the players to embrace it and make sure their survivors meet unforgettable ends."
       },
       {
-        "name": "",
+        "name": "What's Old Is New",
         "type": "text",
         "value": "Dwindling resources contribute to terrifying situations. When a group runs out of hit points, spells, food, or other vital reserves, tension and dread increase. High-level characters, though, have such resources in spades. By running an adventure using survivors, you can recapture some of the same tension adventurers experience early in their careers, encouraging players to use their wits and make desperate choices powerful characters can avoid."
       },
@@ -14295,6 +14569,7 @@
         "name": "Survivor Progression",
         "type": "table",
         "value": {
+          "title": "Survivor Progression",
           "headers": [
             "Level",
             "Feature"
@@ -14600,6 +14875,7 @@
         "name": "Alchemist's Supplies",
         "type": "table",
         "value": {
+          "title": "Alchemist's Supplies",
           "headers": [
             "Activity",
             "DC"
@@ -14662,6 +14938,7 @@
         "name": "Brewer's Supplies",
         "type": "table",
         "value": {
+          "title": "Brewer's Supplies",
           "headers": [
             "Activity",
             "DC"
@@ -14711,6 +14988,7 @@
         "name": "Calligrapher's Supplies",
         "type": "table",
         "value": {
+          "title": "Calligrapher's Supplies",
           "headers": [
             "Activity",
             "DC"
@@ -14779,6 +15057,7 @@
         "name": "Carpenter's Tools",
         "type": "table",
         "value": {
+          "title": "Carpenter's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -14837,6 +15116,7 @@
         "name": "Cartographer's Tools",
         "type": "table",
         "value": {
+          "title": "Cartographer's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -14895,6 +15175,7 @@
         "name": "Cobbler's Tools",
         "type": "table",
         "value": {
+          "title": "Cobbler's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -14945,6 +15226,7 @@
         "name": "Cook's Utensils",
         "type": "table",
         "value": {
+          "title": "Cook's Utensils",
           "headers": [
             "Activity",
             "DC"
@@ -15013,6 +15295,7 @@
         "name": "Disguise Kit",
         "type": "table",
         "value": {
+          "title": "Disguise Kit",
           "headers": [
             "Activity",
             "DC"
@@ -15077,6 +15360,7 @@
         "name": "Forgery Kit",
         "type": "table",
         "value": {
+          "title": "Forgery Kit",
           "headers": [
             "Activity",
             "DC"
@@ -15122,6 +15406,7 @@
         "name": "Gaming Set",
         "type": "table",
         "value": {
+          "title": "Gaming Set",
           "headers": [
             "Activity",
             "DC"
@@ -15167,6 +15452,7 @@
         "name": "Glassblower's Tools",
         "type": "table",
         "value": {
+          "title": "Glassblower's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15222,6 +15508,7 @@
         "name": "Herbalism Kit",
         "type": "table",
         "value": {
+          "title": "Herbalism Kit",
           "headers": [
             "Activity",
             "DC"
@@ -15267,6 +15554,7 @@
         "name": "Jeweler's Tools",
         "type": "table",
         "value": {
+          "title": "Jeweler's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15312,6 +15600,7 @@
         "name": "Vehicles",
         "type": "table",
         "value": {
+          "title": "Vehicles",
           "headers": [
             "Activity",
             "DC"
@@ -15361,6 +15650,7 @@
         "name": "Leatherworker's Tools",
         "type": "table",
         "value": {
+          "title": "Leatherworker's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15411,6 +15701,7 @@
         "name": "Mason's Tools",
         "type": "table",
         "value": {
+          "title": "Mason's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15451,6 +15742,7 @@
         "name": "Musical Instrument",
         "type": "table",
         "value": {
+          "title": "Musical Instrument",
           "headers": [
             "Activity",
             "DC"
@@ -15491,6 +15783,7 @@
         "name": "Navigator's Tools",
         "type": "table",
         "value": {
+          "title": "Navigator's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15536,6 +15829,7 @@
         "name": "Painter's Supplies",
         "type": "table",
         "value": {
+          "title": "Painter's Supplies",
           "headers": [
             "Activity",
             "DC"
@@ -15591,6 +15885,7 @@
         "name": "Poisoner's Tools",
         "type": "table",
         "value": {
+          "title": "Poisoner's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15636,6 +15931,7 @@
         "name": "Potter's Tools",
         "type": "table",
         "value": {
+          "title": "Potter's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15685,6 +15981,7 @@
         "name": "Smith's Tools",
         "type": "table",
         "value": {
+          "title": "Smith's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15734,6 +16031,7 @@
         "name": "Thieves' Tools",
         "type": "table",
         "value": {
+          "title": "Thieves' Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15779,6 +16077,7 @@
         "name": "Tinker's Tools",
         "type": "table",
         "value": {
+          "title": "Tinker's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15833,6 +16132,7 @@
         "name": "Weaver's Tools",
         "type": "table",
         "value": {
+          "title": "Weaver's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15887,6 +16187,7 @@
         "name": "Woodcarver's Tools",
         "type": "table",
         "value": {
+          "title": "Woodcarver's Tools",
           "headers": [
             "Activity",
             "DC"
@@ -15927,7 +16228,7 @@
         "value": "If a ship's mode of movement takes damage, it might be slowed. For every decrease of 10 feet in speed, reduce the ship's travel pace by 1 mile per hour and 24 miles per day."
       },
       {
-        "name": "",
+        "name": "Activity While Traveling",
         "type": "text",
         "value": "The activities available to a ship's crew and passengers are a bit different from the options available to a group traveling by land. Refer to \"Activity While Traveling\" in chapter 8 of the Player's Handbook for more information on some of the topics discussed below."
       },
@@ -16015,6 +16316,7 @@
         "name": "Hazard Type",
         "type": "table",
         "value": {
+          "title": "Hazard Type",
           "headers": [
             "d20",
             "Hazard Type"
@@ -16047,6 +16349,7 @@
         "name": "Hazard DC",
         "type": "table",
         "value": {
+          "title": "Hazard DC",
           "headers": [
             "d20",
             "Hazard DC"
@@ -16095,6 +16398,7 @@
         "name": "Crew Conflict DCs",
         "type": "table",
         "value": {
+          "title": "Crew Conflict DCs",
           "headers": [
             "DC",
             "Description"
@@ -16123,6 +16427,7 @@
         "name": "Crew Conflict Checks",
         "type": "table",
         "value": {
+          "title": "Crew Conflict Checks",
           "headers": [
             "Officer",
             "Check"
@@ -16147,6 +16452,7 @@
         "name": "Crew Conflict Check Results",
         "type": "table",
         "value": {
+          "title": "Crew Conflict Check Results",
           "headers": [
             "Result",
             "Effect"
@@ -16190,6 +16496,7 @@
         "name": "Fire DCs",
         "type": "table",
         "value": {
+          "title": "Fire DCs",
           "headers": [
             "DC",
             "Description"
@@ -16218,6 +16525,7 @@
         "name": "Fire Checks",
         "type": "table",
         "value": {
+          "title": "Fire Checks",
           "headers": [
             "Officer",
             "Check"
@@ -16246,6 +16554,7 @@
         "name": "Fire Check Results",
         "type": "table",
         "value": {
+          "title": "Fire Check Results",
           "headers": [
             "Result",
             "Effect"
@@ -16289,6 +16598,7 @@
         "name": "Fog DCs",
         "type": "table",
         "value": {
+          "title": "Fog DCs",
           "headers": [
             "DC",
             "Description"
@@ -16317,6 +16627,7 @@
         "name": "Fog Checks",
         "type": "table",
         "value": {
+          "title": "Fog Checks",
           "headers": [
             "Officer",
             "Check"
@@ -16337,6 +16648,7 @@
         "name": "Fog Check Results",
         "type": "table",
         "value": {
+          "title": "Fog Check Results",
           "headers": [
             "Result",
             "Effect"
@@ -16380,6 +16692,7 @@
         "name": "Infestation DCs",
         "type": "table",
         "value": {
+          "title": "Infestation DCs",
           "headers": [
             "DC",
             "Description"
@@ -16408,6 +16721,7 @@
         "name": "Infestation Checks",
         "type": "table",
         "value": {
+          "title": "Infestation Checks",
           "headers": [
             "Officer",
             "Check"
@@ -16436,6 +16750,7 @@
         "name": "Infestation Check Results",
         "type": "table",
         "value": {
+          "title": "Infestation Check Results",
           "headers": [
             "Result",
             "Effect"
@@ -16479,6 +16794,7 @@
         "name": "Storm DCs",
         "type": "table",
         "value": {
+          "title": "Storm DCs",
           "headers": [
             "DC",
             "Description"
@@ -16507,6 +16823,7 @@
         "name": "Storm Checks",
         "type": "table",
         "value": {
+          "title": "Storm Checks",
           "headers": [
             "Officer",
             "Check"
@@ -16535,6 +16852,7 @@
         "name": "Storm Check Results",
         "type": "table",
         "value": {
+          "title": "Storm Check Results",
           "headers": [
             "Result",
             "Effect"

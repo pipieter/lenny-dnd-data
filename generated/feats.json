@@ -31,6 +31,7 @@
         "name": "Aberrant Dragonmark Flaws",
         "type": "table",
         "value": {
+          "title": "Aberrant Dragonmark Flaws",
           "headers": [
             "d8",
             "Flaw"
@@ -864,7 +865,36 @@
       {
         "name": "",
         "type": "text",
-        "value": "• **Chaotic Flare**: When you roll a 1 or a 20 on an attack roll or a saving throw, the magic of chaos flows through you. Roll a d4 and consult the Chaotic Flares table to determine what happens. A flare lasts until the end of your next turn, and a new flare can't occur until after the first flare ends.\n[object Object]"
+        "value": "• **Chaotic Flare**: When you roll a 1 or a 20 on an attack roll or a saving throw, the magic of chaos flows through you. Roll a d4 and consult the Chaotic Flares table to determine what happens. A flare lasts until the end of your next turn, and a new flare can't occur until after the first flare ends."
+      },
+      {
+        "name": "Chaotic Flares",
+        "type": "table",
+        "value": {
+          "title": "Chaotic Flares",
+          "headers": [
+            "d4",
+            "Flare"
+          ],
+          "rows": [
+            [
+              "1",
+              "Battle Fury. A creature of your choice that you can see is filled with reckless fury. It has advantage on attack rolls and disadvantage on ability checks."
+            ],
+            [
+              "2",
+              "Disruption Field. Waves of energy ripple around you. Every creature that starts its turn within 5 feet of you, or that moves into that area for the first time on a turn, takes 1d8 force damage."
+            ],
+            [
+              "3",
+              "Unbound. When you move, you can use some or all of your walking speed to teleport yourself once, along with any equipment you're wearing or carrying, up to the distance used to an unoccupied space that you can see."
+            ],
+            [
+              "4",
+              "Wailing Winds. Winds swirl in a 15-foot-radius sphere centered on you. You and any other creatures in that area have disadvantage on Wisdom saving throws."
+            ]
+          ]
+        }
       }
     ]
   },
@@ -900,6 +930,7 @@
         "name": "Fast Crafting",
         "type": "table",
         "value": {
+          "title": "Fast Crafting",
           "headers": [
             "Artisan's Tools",
             "Crafted Gear"
@@ -1154,6 +1185,7 @@
         "name": "Alignment Spells",
         "type": "table",
         "value": {
+          "title": "Alignment Spells",
           "headers": [
             "Alignment",
             "1st-Level Spell"
@@ -1647,7 +1679,7 @@
       {
         "name": "",
         "type": "text",
-        "value": "*The Flash Recall feat requires you to be a spellcaster who prepares spells. This includes classes such as __cleric||clerics__, __druid||druids__, and __paladin||paladins__, who prepare spells each day from their class list, and __wizard||wizards__, who prepare spells from a spellbook. Classes such as __bard||bards__ and __sorcerer||sorcerers__, who inherently know their spells rather than preparing them, can't benefit from this feat.*"
+        "value": "*The Flash Recall feat requires you to be a spellcaster who prepares spells. This includes classes such as __clerics__, __druids__, and __paladins__, who prepare spells each day from their class list, and __wizards__, who prepare spells from a spellbook. Classes such as __bards__ and __sorcerers__, who inherently know their spells rather than preparing them, can't benefit from this feat.*"
       }
     ]
   },
@@ -2058,6 +2090,7 @@
         "name": "Lunar Spells",
         "type": "table",
         "value": {
+          "title": "Lunar Spells",
           "headers": [
             "Moon",
             "1st-Level Spell"
@@ -3241,7 +3274,72 @@
       {
         "name": "",
         "type": "text",
-        "value": "• **Comprehend Languages**: You learn the __comprehend languages__ spell. You can cast this spell without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using any spell slots you have.\n• **Rune Magic**: You know a number of runes equal to half your proficiency bonus (rounded down), chosen from the Rune Spells table. Whenever you finish a long rest, you can inscribe each rune you know onto one nonmagical weapon, armor, piece of clothing, or other object you touch. You temporarily learn the 1st-level spells that correspond to the runes you inscribed, as specified on the Rune Spells table, and you know those spells until you finish a long rest, when the runes fade. While you are wearing or carrying any rune-marked object, you can cast the spells associated with those runes using any spell slots you have.\nYou can also invoke a rune inscribed on an object you are wearing or carrying and cast its associated spell without expending a spell slot or using material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Your spellcasting ability for this feat is Intelligence, Wisdom, or Charisma (choose when you select this feat).\nEach time you gain a level, you can replace one of the runes you know with another one from the Rune Spells table.\n[object Object]"
+        "value": "• **Comprehend Languages**: You learn the __comprehend languages__ spell. You can cast this spell without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using any spell slots you have.\n• **Rune Magic**: You know a number of runes equal to half your proficiency bonus (rounded down), chosen from the Rune Spells table. Whenever you finish a long rest, you can inscribe each rune you know onto one nonmagical weapon, armor, piece of clothing, or other object you touch. You temporarily learn the 1st-level spells that correspond to the runes you inscribed, as specified on the Rune Spells table, and you know those spells until you finish a long rest, when the runes fade. While you are wearing or carrying any rune-marked object, you can cast the spells associated with those runes using any spell slots you have.\nYou can also invoke a rune inscribed on an object you are wearing or carrying and cast its associated spell without expending a spell slot or using material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Your spellcasting ability for this feat is Intelligence, Wisdom, or Charisma (choose when you select this feat).\nEach time you gain a level, you can replace one of the runes you know with another one from the Rune Spells table."
+      },
+      {
+        "name": "",
+        "type": "table",
+        "value": {
+          "title": "",
+          "headers": [
+            "Rune",
+            "Spell"
+          ],
+          "rows": [
+            [
+              "Cloud",
+              "Fog cloud"
+            ],
+            [
+              "Death",
+              "Inflict wounds"
+            ],
+            [
+              "Dragon",
+              "Chromatic orb"
+            ],
+            [
+              "Enemy",
+              "Disguise self"
+            ],
+            [
+              "Fire",
+              "Burning hands"
+            ],
+            [
+              "Friend",
+              "Speak with animals"
+            ],
+            [
+              "Frost",
+              "Armor of Agathys"
+            ],
+            [
+              "Hill",
+              "Goodberry"
+            ],
+            [
+              "Journey",
+              "Longstrider"
+            ],
+            [
+              "King",
+              "Command"
+            ],
+            [
+              "Mountain",
+              "Entangle"
+            ],
+            [
+              "Stone",
+              "Sanctuary"
+            ],
+            [
+              "Storm",
+              "Thunderwave"
+            ]
+          ]
+        }
       }
     ]
   },
@@ -3292,6 +3390,7 @@
         "name": "",
         "type": "table",
         "value": {
+          "title": "",
           "headers": [
             "Plane",
             "Damage Resistance",
@@ -3985,6 +4084,7 @@
         "name": "Strixhaven Spells",
         "type": "table",
         "value": {
+          "title": "Strixhaven Spells",
           "headers": [
             "College",
             "Cantrips",
