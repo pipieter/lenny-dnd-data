@@ -28,3 +28,10 @@ jobs:
 
             - name: Run generate script
               run: npm run generate
+
+            - name: Check for generated data
+              run: |
+                  if ! git diff --quiet ./generated; then
+                    echo "Script generated new data. Please manually run the generate script locally and commit any updated files to the branch."
+                    exit 1
+                  fi
