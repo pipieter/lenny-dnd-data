@@ -51,6 +51,8 @@ function main(): void {
     writeFileSync('./generated/actions.json', JSON.stringify(actions, null, 2), 'utf-8');
     writeFileSync('./generated/feats.json', JSON.stringify(feats, null, 2), 'utf-8');
 
+    // This is a test that doesn't impact anything!
+
     stopwatch.log('Data written to files');
     stopwatch.stop();
 }
