@@ -49,7 +49,11 @@ function main(): void {
     writeFileSync('./generated/classes.json', JSON.stringify(classes, null, 2), 'utf-8');
     writeFileSync('./generated/rules.json', JSON.stringify(rules, null, 2), 'utf-8');
     writeFileSync('./generated/actions.json', JSON.stringify(actions, null, 2), 'utf-8');
-    writeFileSync('./generated/feats.json', JSON.stringify(feats, null, 2), 'utf-8');
+    writeFileSync(
+        './generated/feats.json',
+        JSON.stringify(feats, null, 2) + "I don't belong here!",
+        'utf-8'
+    );
 
     // This is a test that doesn't impact anything!
     // This is the best comment you will ever read.
