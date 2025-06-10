@@ -31,12 +31,20 @@ jobs:
               run: npm run generate
 
             - name: Commit changes
+              id: commit
               run: |
                   git config user.name "github-actions[bot]"
                   git config user.email "github-actions[bot]@users.noreply.github.com"
+                  git add ./generated
+                  if git diff --cached --quiet; then
+                  echo "no_changes=true" >> $GITHUB_OUTPUT
+                  else
                   git commit -m "Regenerate after Dependabot update ${{ github.event.pull_request.number }}"
+                  echo "no_changes=false" >> $GITHUB_OUTPUT
+                  fi
 
             - name: Push and open PR against Dependabot branch
+              if: steps.commit.outputs.no_changes == 'false'
               uses: peter-evans/create-pull-request@v6
               with:
                   token: ${{ secrets.GITHUB_TOKEN }}
