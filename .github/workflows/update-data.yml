@@ -3,7 +3,7 @@ name: Run generator on Dependabot PR
 on:
     pull_request:
         branches:
-            - main # or your default branch
+            - main
         types: [opened, synchronize, reopened]
 
 jobs:
