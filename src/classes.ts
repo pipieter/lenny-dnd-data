@@ -175,7 +175,7 @@ class CharacterClass {
                         const skills = choose.from;
                         const count = parseInt(choose.count ?? '0');
                         if (!skills || count === 0) continue;
-                        text += `Choose \`\`${count}\`\`: ${joinStringsWithAnd(skills)}`;
+                        text += `Choose **${count}**: ${joinStringsWithAnd(skills)}`;
                     }
                     break;
                 }
@@ -221,9 +221,9 @@ class CharacterClass {
             const conMod = 'Con. mod';
 
             const text = [
-                `HP Die: ${die}`,
-                `Level 1 ${this.name} HP: \`\`${faces}\`\` + ${conMod}`,
-                `HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
+                `${BulletPoint} HP Die: ${die}`,
+                `${BulletPoint} Level 1 ${this.name} HP: \`\`${faces}\`\` + ${conMod}`,
+                `${BulletPoint} HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
             ].join('\n');
 
             info.push({ name: 'Health', type: DescriptionType.text, value: text });
