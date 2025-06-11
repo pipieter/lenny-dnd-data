@@ -222,7 +222,7 @@ class CharacterClass {
 
             const text = [
                 `${BulletPoint} HP Die: ${die}`,
-                `${BulletPoint} Level 1 ${this.name} HP: \`\`${faces}\`\` + ${conMod}`,
+                `${BulletPoint} Level 1 ${this.name} HP: ${faces} + ${conMod}`,
                 `${BulletPoint} HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
             ].join('\n');
 
