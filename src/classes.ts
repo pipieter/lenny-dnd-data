@@ -175,7 +175,7 @@ class CharacterClass {
                         const skills = choose.from;
                         const count = parseInt(choose.count ?? '0');
                         if (!skills || count === 0) continue;
-                        text += `Choose **${count}**: ${joinStringsWithOr(skills)}`;
+                        text += `Choose ${count}: ${joinStringsWithOr(skills)}`;
                     }
                     break;
                 }
@@ -291,7 +291,7 @@ class CharacterClass {
                 for (const skill in multiclassRequirements) {
                     if (Object.prototype.hasOwnProperty.call(multiclassRequirements, skill)) {
                         const lvl = multiclassRequirements[skill];
-                        skills.push(`**${lvl}** ${parseAbilityScore(skill)} `);
+                        skills.push(`${lvl} ${parseAbilityScore(skill)} `);
                     }
                 }
 
@@ -332,7 +332,7 @@ class CharacterClass {
             for (let i = 0; i < data.cantripProgression.length; i++) {
                 const cantripCount = data.cantripProgression[i];
                 if (cantripCount != null) {
-                    spellResources[i].push(`**${cantripCount}** Cantrips known`);
+                    spellResources[i].push(`${cantripCount} Cantrips known`);
                 }
             }
         }
@@ -345,7 +345,7 @@ class CharacterClass {
                     ? spellsKnown[i]
                     : spellTotal + spellsKnown[i];
                 if (spellTotal != null) {
-                    spellResources[i].push(`**${spellTotal}** Spells known`);
+                    spellResources[i].push(`${spellTotal} Spells known`);
                 }
             }
         }
@@ -354,7 +354,7 @@ class CharacterClass {
             for (let i = 0; i < data.preparedSpellsProgression.length; i++) {
                 const preparedCount = data.preparedSpellsProgression[i];
                 if (preparedCount != null) {
-                    spellResources[i].push(`**${preparedCount}** Prepared Spells`);
+                    spellResources[i].push(`${preparedCount} Prepared Spells`);
                 }
             }
         }
@@ -386,7 +386,7 @@ class CharacterClass {
                 let text: string[] = [];
 
                 // Every class has the same proficiency-bonus scaling, starting on +2, scaling with 1 every 4 levels.
-                text.push(`**+${2 + Math.floor(level / 4)}** Proficiency Bonus`);
+                text.push(`+${2 + Math.floor(level / 4)} Proficiency Bonus`);
 
                 for (let i = 0; i < row.length; i++) {
                     const label = cleanDNDText(colLabels[i]);
@@ -398,7 +398,7 @@ class CharacterClass {
                     if (value.type) value = parseClassResourceValue(value);
                     if (typeof value === 'string') value = cleanDNDText(value);
 
-                    text.push(`**${value}** ${label}`);
+                    text.push(`${value} ${label}`);
                 }
 
                 classResources.push(text.join('\n'));
