@@ -275,7 +275,7 @@ class CharacterClass {
         }
 
         // multiclassing
-        if (data.multiclassing) {
+        if (data.multiclassing && Object.keys(data.multiclassing).length > 0) {
             let multiclassData = [];
             const multiclassing = data.multiclassing;
 
@@ -312,6 +312,13 @@ class CharacterClass {
                 const mergedText = multiclassData.map((d) => d.value).join('\n');
                 info.push({ name: 'Multiclassing', type: DescriptionType.text, value: mergedText });
             }
+        } else if (!this.name.toLowerCase().includes('sidekick')) {
+            // If no multiclass data is present, use default. (Does not apply to sidekick classes)
+            info.push({
+                name: 'Multiclassing',
+                type: DescriptionType.text,
+                value: 'To qualify for a new class, you must have a score of at least 13 in the primary ability of the new class and your current classes.',
+            });
         }
 
         this.baseInfo = info;
