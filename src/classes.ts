@@ -221,9 +221,9 @@ class CharacterClass {
             const conMod = 'Con. mod';
 
             const text = [
-                `${BulletPoint} HP Die: ${die}`,
-                `${BulletPoint} Level 1 ${this.name} HP: \`\`${faces}\`\` + ${conMod}`,
-                `${BulletPoint} HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
+                `HP Die: ${die}`,
+                `Level 1 ${this.name} HP: \`\`${faces}\`\` + ${conMod}`,
+                `HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
             ].join('\n');
 
             info.push({ name: 'Health', type: DescriptionType.text, value: text });
@@ -260,8 +260,10 @@ class CharacterClass {
 
             if (equipment) {
                 let text = [];
-                for (const line of equipment) {
-                    text.push(`${BulletPoint} ${capitalize(cleanDNDText(line))}`);
+                for (let line of equipment) {
+                    line = capitalize(cleanDNDText(line));
+                    line = equipment.length !== 1 ? `${BulletPoint} ${line}` : line; // Only add bullet points if multiple entries
+                    text.push(line);
                 }
 
                 info.push({
@@ -296,7 +298,7 @@ class CharacterClass {
                 const requirements = useAnd
                     ? joinStringsWithAnd(skills)
                     : joinStringsWithOr(skills);
-                let text = `${BulletPoint} Ability requirements: At least ${requirements}`;
+                let text = `Ability requirements: At least ${requirements}`;
 
                 multiclassData.push({ name: '', type: DescriptionType.text, value: text });
             }
@@ -323,7 +325,7 @@ class CharacterClass {
             for (let i = 0; i < data.cantripProgression.length; i++) {
                 const cantripCount = data.cantripProgression[i];
                 if (cantripCount != null) {
-                    spellResources[i].push(`${BulletPoint} **${cantripCount}** Cantrips known`);
+                    spellResources[i].push(`**${cantripCount}** Cantrips known`);
                 }
             }
         }
@@ -336,7 +338,7 @@ class CharacterClass {
                     ? spellsKnown[i]
                     : spellTotal + spellsKnown[i];
                 if (spellTotal != null) {
-                    spellResources[i].push(`${BulletPoint} **${spellTotal}** Spells known`);
+                    spellResources[i].push(`**${spellTotal}** Spells known`);
                 }
             }
         }
@@ -345,7 +347,7 @@ class CharacterClass {
             for (let i = 0; i < data.preparedSpellsProgression.length; i++) {
                 const preparedCount = data.preparedSpellsProgression[i];
                 if (preparedCount != null) {
-                    spellResources[i].push(`${BulletPoint} **${preparedCount}** Prepared Spells`);
+                    spellResources[i].push(`**${preparedCount}** Prepared Spells`);
                 }
             }
         }
@@ -377,7 +379,7 @@ class CharacterClass {
                 let text: string[] = [];
 
                 // Every class has the same proficiency-bonus scaling, starting on +2, scaling with 1 every 4 levels.
-                text.push(`${BulletPoint} **+${2 + Math.floor(level / 4)}** Proficiency Bonus`);
+                text.push(`**+${2 + Math.floor(level / 4)}** Proficiency Bonus`);
 
                 for (let i = 0; i < row.length; i++) {
                     const label = cleanDNDText(colLabels[i]);
@@ -389,7 +391,7 @@ class CharacterClass {
                     if (value.type) value = parseClassResourceValue(value);
                     if (typeof value === 'string') value = cleanDNDText(value);
 
-                    text.push(`${BulletPoint} **${value}** ${label}`);
+                    text.push(`**${value}** ${label}`);
                 }
 
                 classResources.push(text.join('\n'));
