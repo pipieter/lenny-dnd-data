@@ -175,7 +175,7 @@ class CharacterClass {
                         const skills = choose.from;
                         const count = parseInt(choose.count ?? '0');
                         if (!skills || count === 0) continue;
-                        text += `Choose **${count}**: ${joinStringsWithAnd(skills)}`;
+                        text += `Choose **${count}**: ${joinStringsWithOr(skills)}`;
                     }
                     break;
                 }
