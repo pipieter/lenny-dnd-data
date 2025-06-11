@@ -474,6 +474,7 @@ class CharacterClass {
         Object.values(features)
             .flat()
             .forEach((feature) => {
+                if (feature.classKey !== getKey(this.name, this.source)) return;
                 const levelKey = feature.level;
                 if (feature.descriptions) {
                     if (!levelFeatures[levelKey]) levelFeatures[levelKey] = [];
