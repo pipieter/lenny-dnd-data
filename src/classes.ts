@@ -78,7 +78,7 @@ class CharacterClass {
 
         this.setLevelResources(data);
         this.setLevelFeatures(features);
-        this.setSubclassData(subclassFeatures);
+        this.setSubclassData(subclassFeatures, data);
     }
 
     toJSON() {
@@ -491,25 +491,38 @@ class CharacterClass {
         this.levelFeatures = levelFeatures;
     }
 
-    private setSubclassData(subclassFeatures: ClassFeatureDictionary) {
+    private setSubclassData(subclassFeatures: ClassFeatureDictionary, data: any) {
         let result: { [subclass: string]: PaginatedDescriptions } = {};
         let lowestLevel = 999;
 
-        Object.values(subclassFeatures)
-            .flat()
-            .forEach((feature) => {
+        const subclassUnlockLevels: string[] = [];
+        if (data.classFeatures) {
+            for (const featData of data.classFeatures) {
+                if (typeof featData === 'string') continue;
+
+                const parts = featData.classFeature.split('|');
+                const featLevel = parts[parts.length - 1];
+                subclassUnlockLevels.push(featLevel);
+            }
+        }
+
+        for (const key in subclassFeatures) {
+            const subclass = subclassFeatures[key];
+
+            for (const feature of subclass) {
                 const subclassKey = feature.subclassKey;
                 const levelKey = feature.level;
-                if (!subclassKey) return;
-                if (!feature.descriptions) return;
+
+                if (!subclassKey) continue;
+                if (!feature.descriptions) continue;
 
                 if (feature.level < lowestLevel) lowestLevel = feature.level;
                 if (!result[subclassKey]) result[subclassKey] = {};
                 if (!result[subclassKey][levelKey]) result[subclassKey][levelKey] = [];
 
-                const descriptions = feature.descriptions;
-                result[subclassKey][levelKey].push(...descriptions);
-            });
+                result[subclassKey][levelKey].push(...feature.descriptions);
+            }
+        }
 
         for (const subclass in result) {
             for (const level in result[subclass]) {
