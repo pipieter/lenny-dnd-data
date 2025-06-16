@@ -216,7 +216,7 @@ export function getItems(data: any): any[] {
                 masteryKey = masteryKey.uid;
             }
             const mastery = masteries.get(masteryKey);
-            const propertyName = `mastery: ${mastery.name}{note}`.toLowerCase();
+            const propertyName = `mastery: ${mastery.name}${note}`.toLowerCase();
             const propertyDesc = parseDescriptions(mastery.name, mastery.entries);
             result.properties.push(propertyName);
             result.description.push(...propertyDesc);
