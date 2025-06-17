@@ -10,6 +10,8 @@ import {
     getTablesUrl,
     getTrapsUrl,
 } from './urls';
+import { ClassFeature, ClassFeatureDictionary } from './classes';
+import { getKey } from './data';
 
 export enum DescriptionType {
     text = 'text',
@@ -232,7 +234,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         throw `{@...} pattern found in '${text}'`;
     }
 
-    if (text.includes('#itemEntry')) {
+    if (text.includes('{#')) {
         // Currently, {#itemEntry Item|Source} still remains in the text
         // TODO this should be fixed in items.ts, but it is currently not a priority
         // as such, ignore checking for remaining '{' and '}' for now
@@ -246,6 +248,125 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     }
 
     return text;
+}
+
+function resolveClassFeatReference(
+    text: string,
+    classFeats: ClassFeatureDictionary | null
+): Description[] {
+    const regex = /\{#refClassFeature\s+([^}]+)\}/g;
+    const results: Description[] = [];
+
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+        const [fullMatch, content] = match;
+        const [name, className, source, levelStr] = content.split('|');
+        const featSource = source?.trim() || 'PHB';
+
+        const fallbackDescription: Description = {
+            name: '',
+            type: DescriptionType.text,
+            value: `${BulletPoint} ${className} (${featSource})`,
+        };
+        if (!classFeats) {
+            results.push(fallbackDescription);
+            continue;
+        }
+
+        const key = getKey(className, featSource);
+        if (!classFeats[key]) console.warn('Missing classFeats for key:', key);
+
+        const feats = classFeats[key];
+        if (!feats) throw `Could not find classFeatures for '${content}'`;
+
+        const feat = feats.find((f) => f.name.trim().toLowerCase() === name.trim().toLowerCase());
+        if (feat?.descriptions) {
+            results.push(...feat.descriptions);
+        } else {
+            console.warn(name, key);
+            results.push(fallbackDescription);
+        }
+    }
+
+    return results;
+}
+
+function resolveSublassFeatReference(
+    text: string,
+    subclassFeats: ClassFeatureDictionary | null
+): Description[] {
+    const regex = /\{#refSubclassFeature\s+([^}]+)\}/g;
+    const results: Description[] = [];
+
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+        const [fullMatch, content] = match;
+        const [name, className, source, subclassName, subclassSource, levelStr] =
+            content.split('|');
+        const featSource = source || 'PHB';
+
+        const fallbackDescription: Description = {
+            name: '',
+            type: DescriptionType.text,
+            value: `${BulletPoint} ${name} (${featSource})`,
+        };
+
+        if (!subclassFeats) {
+            results.push(fallbackDescription);
+            continue;
+        }
+
+        const key = getKey(className, featSource);
+        if (!subclassFeats[key]) console.warn('Missing classFeats for key:', key);
+
+        const feats = subclassFeats[key];
+        if (!feats) throw `Could not find classFeatures for '${content}'`;
+
+        const feat = feats.find((f) => f.name.trim().toLowerCase() === name.trim().toLowerCase());
+        if (feat?.descriptions) {
+            results.push(...feat.descriptions);
+        } else {
+            console.warn(name, key);
+            results.push(fallbackDescription);
+        }
+    }
+
+    return results;
+}
+
+export function resolveReferences(
+    entries: Description[],
+    classFeats: ClassFeatureDictionary | null = null,
+    subclassFeats: ClassFeatureDictionary | null = null
+): Description[] {
+    const resolvedEntries: Description[] = [];
+
+    for (const entry of entries) {
+        if (entry.type === DescriptionType.text) {
+            const text = entry.value as string;
+
+            if (!text.includes(`{#`)) {
+                resolvedEntries.push(entry);
+                continue;
+            }
+
+            if (text.includes(`refClassFeature`))
+                resolvedEntries.push(...resolveClassFeatReference(text, classFeats));
+            else if (text.includes(`refSubclassFeature`))
+                resolvedEntries.push(...resolveSublassFeatReference(text, subclassFeats));
+            else if (text.includes('refOptionalfeature'))
+                resolvedEntries.push(entry); // TODO
+            else throw `Unsupported text-description reference-type in: ${text}`;
+        } else if (entry.type === DescriptionType.table) {
+            resolvedEntries.push(entry);
+        } else {
+            throw `Could not resolve unsupported DescriptionType ${entry.type}`;
+        }
+    }
+
+    return resolvedEntries;
 }
 
 export function parseImageUrl(data: any[]): string | null {
@@ -431,7 +552,8 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
         return [cleanDNDText(description)];
     }
 
-    switch (description.type) {
+    const type = description.type;
+    switch (type) {
         case 'quote': {
             const quote = parseDescriptionBlockFromBlocks(description.entries);
             if (description.by) return [`*${quote}* - ${description.by}`];
@@ -498,40 +620,28 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             return [text];
         }
         case 'refClassFeature': {
-            // classFeature is a string like "Sorcery Points|Sorcerer||2"
             const classFeature = description.classFeature;
             if (typeof classFeature === 'string') {
-                const parts = classFeature.split('|');
-                if (parts.length >= 4) {
-                    const name = parts[0];
-                    const value = parts[3];
-                    if (value && name) return [`${BulletPoint} **${value}** ${name}`];
-                    if (name) return [name];
-                }
+                // Has to be resolved later
+                return [`{#${type} ${classFeature}}`];
             }
-
-            throw `Unsupported refClassFeature ${classFeature}`;
+            throw `Unsupported ${type} ${classFeature}`;
         }
         case 'refSubclassFeature': {
-            const classFeature = description.subclassFeature;
-            if (typeof classFeature === 'string') {
-                const [name, , , , , value] = classFeature.split('|');
-                if (value && name) {
-                    return [`${BulletPoint} **${value}** ${name}`];
-                }
-                return [name || classFeature];
+            const subclassFeat = description.subclassFeature;
+            if (typeof subclassFeat === 'string') {
+                // Has to be resolved later
+                return [`{#${type} ${subclassFeat}}`];
             }
-            throw `Unsupported refSubclassFeature ${classFeature}`;
+            throw `Unsupported ${type} ${subclassFeat}`;
         }
         case 'refOptionalfeature': {
             let optionalFeature: string = description.optionalfeature;
-
-            if (optionalFeature.includes('|')) {
-                const [name, source] = optionalFeature.split('|');
-                optionalFeature = `${name} (${source})`;
+            if (typeof optionalFeature === 'string') {
+                // Has to be resolved later
+                return [`{#${type} ${optionalFeature}}`];
             }
-
-            return [optionalFeature];
+            throw `Unsupported ${type} ${optionalFeature}`;
         }
         case 'options': {
             const entries: string[] = [];
@@ -560,7 +670,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
                     break;
             }
 
-            if (!link) throw `Unsupported statblock ${tag}`;
+            if (!link) throw `Unsupported ${type} ${tag}`;
             return [`[See ${name}'s stats here](${link})`];
         }
         case 'refFeat': {
@@ -585,11 +695,11 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
                     break;
             }
 
-            if (!url) throw `Unsupported link ${description}`;
+            if (!url) throw `Unsupported ${type} ${description}`;
             return [`[${text}](${url})`];
         }
         default: {
-            throw `Unsupported description type: '${description.type}'`;
+            throw `Unsupported description type: '${type}'`;
         }
     }
 }
