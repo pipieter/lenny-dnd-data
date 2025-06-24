@@ -55,7 +55,7 @@ export function getSubclassUrl(
 ) {
     const classUrl = getClassesUrl(className, classSource);
     const subclassQuery = `state:sub_${subclassName.toLowerCase()}_${subclassSource.toLowerCase()}=b1`;
-    return `${classUrl},${subclassQuery}`;
+    return cleanUrl(`${classUrl},${subclassQuery}`);
 }
 
 export function getConditionsDiseasesUrl(name: string, source: string) {
