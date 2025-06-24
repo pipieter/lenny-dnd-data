@@ -51,6 +51,14 @@ const AbilityScores = new Map<string, string>([
     ['cha', 'Charisma'],
 ]);
 
+export function checkForDisallowedSymbols(text: string) {
+    const disallowedSymbols = ['{', '}', '|', '[object Object]'];
+    const foundSymbols = disallowedSymbols.filter((s) => text.includes(s)).map((s) => `'${s}'`);
+    if (foundSymbols.length > 0) {
+        throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${text}'`;
+    }
+}
+
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -241,12 +249,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         return text;
     }
 
-    const disallowedSymbols = ['{', '}', '|', '[object Object]'];
-    const foundSymbols = disallowedSymbols.filter((s) => text.includes(s)).map((s) => `'${s}'`);
-    if (foundSymbols.length > 0) {
-        throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${text}'`;
-    }
-
+    checkForDisallowedSymbols(text);
     return text;
 }
 
@@ -258,8 +261,20 @@ function resolveClassFeatReference(
     const regex = new RegExp(`\\{#${type}\\s+([^}]+)\\}`, 'g');
     const matches = [...text.matchAll(regex)];
 
-    // Single Reference: Resolves to a feat's descriptions
-    if (matches.length === 1 && text.trim() === matches[0][0]) {
+    const onlyOneReference = matches.length === 1;
+    const trimmedText = text.trim();
+    const trimmedMatch = onlyOneReference ? matches[0][0].trim() : '';
+    const isPureReference = onlyOneReference && trimmedText === trimmedMatch;
+
+    const isOnlyReferences =
+        matches.length > 0 &&
+        text
+            .replace(regex, '')
+            .trim()
+            .replace(/^[•\s\r\n]+|[•\s\r\n]+$/g, '') === '';
+
+    // Case 1: String with only a {#ref } and nothing else.
+    if (isPureReference || isOnlyReferences) {
         const parts = matches[0][1].split('|').map((p) => p.trim());
 
         let name: string, className: string, source: string, levelStr: string;
@@ -279,7 +294,7 @@ function resolveClassFeatReference(
                 {
                     name: '',
                     type: DescriptionType.text,
-                    value: `${BulletPoint} ${name} (${featSource})`,
+                    value: `${BulletPoint} ${getKey(name, featSource)}`,
                 },
             ];
         }
@@ -291,24 +306,17 @@ function resolveClassFeatReference(
         if (!feat?.descriptions) throw `Could not find ${type} for ${key}`;
         let descs = feat.descriptions.map((d) => ({ ...d }));
         descs[0].value = `__${getKey(name, featSource)}__: ${descs[0].value}`;
+
         return descs;
     }
 
-    // Case 2: Replaces all matches with just the name of the feat.
-    const updatedText = text.replace(regex, (_, inner) => {
+    // Case 2: Inline substitution (multiple references or formatting like bullets)
+    const updatedText = text.replace(regex, (match, inner) => {
         const parts = inner.split('|').map((p: string) => p.trim());
 
-        let name: string, className: string, source: string, levelStr: string;
-        let subclassName: string | undefined, subclassSource: string | undefined;
-
-        if (type === 'refClassFeature') {
-            [name, className, source, levelStr] = parts;
-        } else {
-            [name, className, source, subclassName, subclassSource, levelStr] = parts;
-        }
-
+        const [name, , source] = parts;
         const featSource = source || 'PHB';
-        return `${BulletPoint} ${getKey(name, featSource)}`;
+        return getKey(name, featSource);
     });
 
     return [
@@ -323,7 +331,8 @@ function resolveClassFeatReference(
 export function resolveReferences(
     entries: Description[],
     classFeats: ClassFeatureDictionary | null = null,
-    subclassFeats: ClassFeatureDictionary | null = null
+    subclassFeats: ClassFeatureDictionary | null = null,
+    isSubResolve: boolean = false
 ): Description[] {
     const resolvedEntries: Description[] = [];
 
@@ -351,6 +360,32 @@ export function resolveReferences(
             resolvedEntries.push(entry);
         } else {
             throw `Could not resolve unsupported DescriptionType ${entry.type}`;
+        }
+    }
+
+    if (!isSubResolve) {
+        let indexesToResolve: number[] = [];
+        let entriesToSubResolve: Description[] = [];
+        for (let i = 0; i < resolvedEntries.length; i++) {
+            const e = resolvedEntries[i];
+            if (e.type === DescriptionType.text) {
+                const val = e.value as string;
+                if (!val.includes('{#')) continue;
+
+                indexesToResolve.push(i);
+                entriesToSubResolve.push(e);
+            }
+        }
+
+        for (let j = indexesToResolve.length - 1; j >= 0; j--) {
+            const index = indexesToResolve[j];
+            const resolved = resolveReferences(
+                [entriesToSubResolve[j]],
+                classFeats,
+                subclassFeats,
+                true
+            );
+            resolvedEntries.splice(index, 1, ...resolved);
         }
     }
 
