@@ -252,79 +252,49 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
 function resolveClassFeatReference(
     text: string,
-    classFeats: ClassFeatureDictionary | null
+    feats: ClassFeatureDictionary | null,
+    type: 'refClassFeature' | 'refSubclassFeature'
 ): Description[] {
-    const regex = /\{#refClassFeature\s+([^}]+)\}/g;
+    const regex = new RegExp(`\\{#${type}\\s+([^}]+)\\}`, 'g');
     const results: Description[] = [];
 
     let match;
 
     while ((match = regex.exec(text)) !== null) {
         const [fullMatch, content] = match;
-        const [name, className, source, levelStr] = content.split('|');
+        let name: string, className: string, source: string, levelStr: string;
+        let subclassName: string | undefined, subclassSource: string | undefined;
+
+        if (type === 'refClassFeature') {
+            [name, className, source, levelStr] = content.split('|');
+        } else {
+            [name, className, source, subclassName, subclassSource, levelStr] = content.split('|');
+        }
         const featSource = source?.trim() || 'PHB';
 
         const fallbackDescription: Description = {
             name: '',
             type: DescriptionType.text,
-            value: `${BulletPoint} ${className} (${featSource})`,
+            value: `${BulletPoint} ${type === 'refClassFeature' ? className : name} (${featSource})`,
         };
-        if (!classFeats) {
+
+        if (!feats) {
             results.push(fallbackDescription);
             continue;
         }
 
         const key = getKey(className, featSource);
-        if (!classFeats[key]) console.warn('Missing classFeats for key:', key);
+        if (!feats[key]) console.warn('Missing classFeats for key:', key);
 
-        const feats = classFeats[key];
-        if (!feats) throw `Could not find classFeatures for '${content}'`;
-
-        const feat = feats.find((f) => f.name.trim().toLowerCase() === name.trim().toLowerCase());
-        if (feat?.descriptions) {
-            results.push(...feat.descriptions);
-        } else {
-            console.warn(name, key);
-            results.push(fallbackDescription);
-        }
-    }
-
-    return results;
-}
-
-function resolveSublassFeatReference(
-    text: string,
-    subclassFeats: ClassFeatureDictionary | null
-): Description[] {
-    const regex = /\{#refSubclassFeature\s+([^}]+)\}/g;
-    const results: Description[] = [];
-
-    let match;
-
-    while ((match = regex.exec(text)) !== null) {
-        const [fullMatch, content] = match;
-        const [name, className, source, subclassName, subclassSource, levelStr] =
-            content.split('|');
-        const featSource = source || 'PHB';
-
-        const fallbackDescription: Description = {
-            name: '',
-            type: DescriptionType.text,
-            value: `${BulletPoint} ${name} (${featSource})`,
-        };
-
-        if (!subclassFeats) {
+        const featList = feats[key];
+        if (!featList) {
             results.push(fallbackDescription);
             continue;
         }
 
-        const key = getKey(className, featSource);
-        if (!subclassFeats[key]) console.warn('Missing classFeats for key:', key);
-
-        const feats = subclassFeats[key];
-        if (!feats) throw `Could not find classFeatures for '${content}'`;
-
-        const feat = feats.find((f) => f.name.trim().toLowerCase() === name.trim().toLowerCase());
+        const feat = featList.find(
+            (f) => f.name.trim().toLowerCase() === name.trim().toLowerCase()
+        );
         if (feat?.descriptions) {
             results.push(...feat.descriptions);
         } else {
@@ -353,9 +323,13 @@ export function resolveReferences(
             }
 
             if (text.includes(`refClassFeature`))
-                resolvedEntries.push(...resolveClassFeatReference(text, classFeats));
+                resolvedEntries.push(
+                    ...resolveClassFeatReference(text, classFeats, 'refClassFeature')
+                );
             else if (text.includes(`refSubclassFeature`))
-                resolvedEntries.push(...resolveSublassFeatReference(text, subclassFeats));
+                resolvedEntries.push(
+                    ...resolveClassFeatReference(text, subclassFeats, 'refSubclassFeature')
+                );
             else if (text.includes('refOptionalfeature'))
                 resolvedEntries.push(entry); // TODO
             else throw `Unsupported text-description reference-type in: ${text}`;
