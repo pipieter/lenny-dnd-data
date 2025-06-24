@@ -256,54 +256,68 @@ function resolveClassFeatReference(
     type: 'refClassFeature' | 'refSubclassFeature'
 ): Description[] {
     const regex = new RegExp(`\\{#${type}\\s+([^}]+)\\}`, 'g');
-    const results: Description[] = [];
+    const matches = [...text.matchAll(regex)];
 
-    let match;
+    // Single Reference: Resolves to a feat's descriptions
+    if (matches.length === 1 && text.trim() === matches[0][0]) {
+        const parts = matches[0][1].split('|').map((p) => p.trim());
 
-    while ((match = regex.exec(text)) !== null) {
-        const [fullMatch, content] = match;
         let name: string, className: string, source: string, levelStr: string;
         let subclassName: string | undefined, subclassSource: string | undefined;
 
         if (type === 'refClassFeature') {
-            [name, className, source, levelStr] = content.split('|');
+            [name, className, source, levelStr] = parts;
         } else {
-            [name, className, source, subclassName, subclassSource, levelStr] = content.split('|');
-        }
-        const featSource = source?.trim() || 'PHB';
-
-        const fallbackDescription: Description = {
-            name: '',
-            type: DescriptionType.text,
-            value: `${BulletPoint} ${type === 'refClassFeature' ? className : name} (${featSource})`,
-        };
-
-        if (!feats) {
-            results.push(fallbackDescription);
-            continue;
+            [name, className, source, subclassName, subclassSource, levelStr] = parts;
         }
 
+        const featSource = source || 'PHB';
         const key = getKey(className, featSource);
-        if (!feats[key]) console.warn('Missing classFeats for key:', key);
 
-        const featList = feats[key];
-        if (!featList) {
-            results.push(fallbackDescription);
-            continue;
+        if (!feats || !feats[key]) {
+            return [
+                {
+                    name: '',
+                    type: DescriptionType.text,
+                    value: `${BulletPoint} ${name} (${featSource})`,
+                },
+            ];
         }
 
-        const feat = featList.find(
+        const feat = feats[key].find(
             (f) => f.name.trim().toLowerCase() === name.trim().toLowerCase()
         );
-        if (feat?.descriptions) {
-            results.push(...feat.descriptions);
-        } else {
-            console.warn(name, key);
-            results.push(fallbackDescription);
-        }
+
+        if (!feat?.descriptions) throw `Could not find ${type} for ${key}`;
+        let descs = feat.descriptions.map((d) => ({ ...d }));
+        descs[0].value = `__${getKey(name, featSource)}__: ${descs[0].value}`;
+        return descs;
     }
 
-    return results;
+    // Case 2: Replaces all matches with just the name of the feat.
+    const updatedText = text.replace(regex, (_, inner) => {
+        const parts = inner.split('|').map((p: string) => p.trim());
+
+        let name: string, className: string, source: string, levelStr: string;
+        let subclassName: string | undefined, subclassSource: string | undefined;
+
+        if (type === 'refClassFeature') {
+            [name, className, source, levelStr] = parts;
+        } else {
+            [name, className, source, subclassName, subclassSource, levelStr] = parts;
+        }
+
+        const featSource = source || 'PHB';
+        return `${BulletPoint} ${getKey(name, featSource)}`;
+    });
+
+    return [
+        {
+            name: '',
+            type: DescriptionType.text,
+            value: updatedText,
+        },
+    ];
 }
 
 export function resolveReferences(
