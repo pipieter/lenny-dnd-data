@@ -7,6 +7,9 @@ on:
         branches: [main]
     workflow_dispatch:
 
+permissions:
+    contents: read
+
 jobs:
     test:
         # Test if the script runs without throwing any errors
@@ -37,22 +40,22 @@ jobs:
                   fi
 
     prettier:
-      # Check if prettier needs to be applied
-      runs-on: ubuntu-latest
-      name: prettier-check
-      steps:
-          - name: Checkout repo and submodules
-            uses: actions/checkout@v4
-            with:
-                submodules: recursive
+        # Check if prettier needs to be applied
+        runs-on: ubuntu-latest
+        name: prettier-check
+        steps:
+            - name: Checkout repo and submodules
+              uses: actions/checkout@v4
+              with:
+                  submodules: recursive
 
-          - name: Set up Node.js
-            uses: actions/setup-node@v4
-            with:
-                node-version: '18'
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '18'
 
-          - name: Install dependencies
-            run: npm ci
+            - name: Install dependencies
+              run: npm ci
 
-          - name: Run prettier
-            run: npx prettier package.json "./src/**/*.ts" -c
+            - name: Run prettier
+              run: npx prettier package.json "./src/**/*.ts" -c
