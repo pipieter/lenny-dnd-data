@@ -32,7 +32,7 @@ interface Feat {
     hasFluffImages?: boolean;
 }
 
-interface ParsedFeat {
+export interface ParsedFeat {
     name: string;
     source: string;
     url: string;

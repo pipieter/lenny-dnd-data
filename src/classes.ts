@@ -1,4 +1,5 @@
 import { getKey, readJsonFile } from './data';
+import { ParsedFeat } from './feats';
 import {
     capitalize,
     checkForDisallowedSymbols,
@@ -32,7 +33,9 @@ export class ClassFeature {
     source: string;
     level: number;
 
+    className: string;
     classKey: string;
+    subclassName: string | null = null;
     subclassKey: string | null = null;
     descriptions: Description[] | null = null;
 
@@ -41,8 +44,10 @@ export class ClassFeature {
         this.source = data.source;
         this.level = data.level;
 
+        this.className = data.className;
         this.classKey = getKey(data.className, data.classSource || 'PHB');
         if (data.subclassShortName && data.subclassSource) {
+            this.subclassName = data.subclassShortName;
             this.subclassKey = getKey(data.subclassShortName, data.subclassSource);
         }
 
@@ -742,9 +747,56 @@ function resolveReferences(
     return resolvedEntries;
 }
 
-export function getClasses(): any[] {
+function classFeatsToParsedFeat(
+    classFeats: ClassFeatureDictionary,
+    subclassFeats: ClassFeatureDictionary
+): ParsedFeat[] {
+    let parsedFeats: ParsedFeat[] = [];
+
+    for (const key in classFeats) {
+        const feats = classFeats[key];
+        for (const feat of feats) {
+            if (!feat.descriptions) continue;
+
+            parsedFeats.push({
+                name: feat.name,
+                source: feat.source,
+                url: '',
+                type: `${feat.className} Class Feature`,
+                prerequisite: feat.classKey,
+                abilityIncrease: null,
+                description: feat.descriptions,
+            });
+        }
+    }
+
+    for (const key in subclassFeats) {
+        const feats = classFeats[key];
+        for (const feat of feats) {
+            if (!feat.descriptions) continue;
+
+            parsedFeats.push({
+                name: feat.name,
+                source: feat.source,
+                url: '',
+                type: `${feat.subclassName} Subclass Feature`,
+                prerequisite: feat.subclassKey,
+                abilityIncrease: null,
+                description: feat.descriptions,
+            });
+        }
+    }
+
+    return parsedFeats;
+}
+
+export function getClassesAndClassFeats(): {
+    classes: any[];
+    classFeats: ParsedFeat[];
+} {
     const indexPath = BASEPATH + '/index.json';
-    let result: any[] = [];
+    let classes: any[] = [];
+    let classFeats: ParsedFeat[] = [];
 
     const indexData = readJsonFile(indexPath);
     for (const [className, classIndexFile] of Object.entries(indexData)) {
@@ -777,6 +829,8 @@ export function getClasses(): any[] {
             }
         }
 
+        classFeats = classFeatsToParsedFeat(features, subclassFeatures);
+
         for (const classData of data.class) {
             const characterClass = new CharacterClass(
                 classData,
@@ -784,9 +838,9 @@ export function getClasses(): any[] {
                 subclassFeatures,
                 subclasses
             );
-            result.push(characterClass.toJSON());
+            classes.push(characterClass.toJSON());
         }
     }
 
-    return result;
+    return { classes, classFeats };
 }

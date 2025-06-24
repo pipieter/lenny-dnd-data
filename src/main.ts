@@ -4,7 +4,7 @@ import { loadData } from './data';
 import { getSpells } from './spells';
 import { getCreatures } from './creatures';
 import { StopwatchLogger } from './util';
-import { getClasses } from './classes';
+import { getClassesAndClassFeats } from './classes';
 import { getItems } from './items';
 import { getRules } from './rules';
 import { getActions } from './actions';
@@ -29,8 +29,8 @@ function main(): void {
     const creatures = getCreatures();
     stopwatch.log('Creatures retrieved');
 
-    const classes = getClasses();
-    stopwatch.log('Classes retrieved');
+    const { classes, classFeats } = getClassesAndClassFeats();
+    stopwatch.log('Classes & ClassFeats retrieved');
 
     const rules = getRules(data);
     stopwatch.log('Rules retrieved');
@@ -47,6 +47,7 @@ function main(): void {
     writeFileSync('./generated/diseases.json', JSON.stringify(diseases, null, 2), 'utf-8');
     writeFileSync('./generated/creatures.json', JSON.stringify(creatures, null, 2), 'utf-8');
     writeFileSync('./generated/classes.json', JSON.stringify(classes, null, 2), 'utf-8');
+    writeFileSync('./generated/classfeats.json', JSON.stringify(classFeats, null, 2), 'utf-8');
     writeFileSync('./generated/rules.json', JSON.stringify(rules, null, 2), 'utf-8');
     writeFileSync('./generated/actions.json', JSON.stringify(actions, null, 2), 'utf-8');
     writeFileSync('./generated/feats.json', JSON.stringify(feats, null, 2), 'utf-8');
