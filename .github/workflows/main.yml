@@ -55,4 +55,4 @@ jobs:
             run: npm ci
 
           - name: Run prettier
-            run: prettier package.json "./src/**/*.ts" -c
+            run: npx prettier package.json "./src/**/*.ts" -c
