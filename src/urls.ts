@@ -47,6 +47,17 @@ export function getClassesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/classes.html`, name, source);
 }
 
+export function getSubclassUrl(
+    className: string,
+    classSource: string,
+    subclassName: string,
+    subclassSource: string
+) {
+    const classUrl = getClassesUrl(className, classSource);
+    const subclassQuery = `state:sub_${subclassName.toLowerCase()}_${subclassSource.toLowerCase()}=b1`;
+    return `${classUrl},${subclassQuery}`;
+}
+
 export function getConditionsDiseasesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/conditionsdiseases.html`, name, source);
 }

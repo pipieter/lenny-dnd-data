@@ -11,7 +11,7 @@ import {
     parseDescriptions,
     title,
 } from './parser';
-import { getClassesUrl } from './urls';
+import { getClassesUrl, getSubclassUrl } from './urls';
 import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from './util';
 
 const BASEPATH = '5etools-src/data/class/';
@@ -34,8 +34,10 @@ export class ClassFeature {
     level: number;
 
     className: string;
+    classSource: string;
     classKey: string;
     subclassName: string | null = null;
+    subclassSource: string | null = null;
     subclassKey: string | null = null;
     descriptions: Description[] | null = null;
 
@@ -45,9 +47,11 @@ export class ClassFeature {
         this.level = data.level;
 
         this.className = data.className;
-        this.classKey = getKey(data.className, data.classSource || 'PHB');
+        this.classSource = data.classSource || 'PHB';
+        this.classKey = getKey(this.className, this.classSource);
         if (data.subclassShortName && data.subclassSource) {
             this.subclassName = data.subclassShortName;
+            this.subclassSource = data.subclassSource;
             this.subclassKey = getKey(data.subclassShortName, data.subclassSource);
         }
 
@@ -761,7 +765,7 @@ function classFeatsToParsedFeat(
             parsedFeats.push({
                 name: feat.name,
                 source: feat.source,
-                url: '',
+                url: getClassesUrl(feat.className, feat.classSource),
                 type: `${feat.className} Class Feature`,
                 prerequisite: feat.classKey,
                 abilityIncrease: null,
@@ -771,16 +775,23 @@ function classFeatsToParsedFeat(
     }
 
     for (const key in subclassFeats) {
-        const feats = classFeats[key];
+        const feats = subclassFeats[key];
         for (const feat of feats) {
             if (!feat.descriptions) continue;
+            if (!feat.subclassName || !feat.subclassSource)
+                throw `Subclass feat ${feat.name} does not have subclass name or source`;
 
             parsedFeats.push({
                 name: feat.name,
                 source: feat.source,
-                url: '',
+                url: getSubclassUrl(
+                    feat.className,
+                    feat.classSource,
+                    feat.subclassName,
+                    feat.subclassSource
+                ),
                 type: `${feat.subclassName} Subclass Feature`,
-                prerequisite: feat.subclassKey,
+                prerequisite: feat.subclassKey ?? feat.classKey,
                 abilityIncrease: null,
                 description: feat.descriptions,
             });
@@ -829,8 +840,7 @@ export function getClassesAndClassFeats(): {
             }
         }
 
-        classFeats = classFeatsToParsedFeat(features, subclassFeatures);
-
+        classFeats.push(...classFeatsToParsedFeat(features, subclassFeatures));
         for (const classData of data.class) {
             const characterClass = new CharacterClass(
                 classData,
