@@ -696,7 +696,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             }
 
             const title = count ? `Choose **${count}:**\n` : '';
-            return [`${title}${entries.join('\n ')}`];
+            return [`${title}${BulletPoint} ${entries.join(`\n${BulletPoint} `)}`];
         }
         case 'statblock': {
             const tag = description.tag;
