@@ -328,6 +328,23 @@ function resolveClassFeatReference(
     ];
 }
 
+function resolveOptionalFeatReference(entry: Description): Description {
+    const value = entry.value as string;
+
+    const updatedValue = value.replace(
+        /\{#refOptionalfeature\s+([^|}]+)(?:\|([^}]+))?\}/g,
+        (_, name: string, source?: string) => {
+            const finalSource = source?.trim() || 'PHB';
+            return `${name.trim()} (${finalSource})`;
+        }
+    );
+
+    return {
+        ...entry,
+        value: updatedValue,
+    };
+}
+
 export function resolveReferences(
     entries: Description[],
     classFeats: ClassFeatureDictionary | null = null,
@@ -354,7 +371,7 @@ export function resolveReferences(
                     ...resolveClassFeatReference(text, subclassFeats, 'refSubclassFeature')
                 );
             else if (text.includes('refOptionalfeature'))
-                resolvedEntries.push(entry); // TODO
+                resolvedEntries.push(resolveOptionalFeatReference(entry));
             else throw `Unsupported text-description reference-type in: ${text}`;
         } else if (entry.type === DescriptionType.table) {
             resolvedEntries.push(entry);
