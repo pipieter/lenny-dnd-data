@@ -49,6 +49,14 @@ const AbilityScores = new Map<string, string>([
     ['cha', 'Charisma'],
 ]);
 
+export function checkForDisallowedSymbols(text: string) {
+    const disallowedSymbols = ['{', '}', '|', '[object Object]'];
+    const foundSymbols = disallowedSymbols.filter((s) => text.includes(s)).map((s) => `'${s}'`);
+    if (foundSymbols.length > 0) {
+        throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${text}'`;
+    }
+}
+
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -232,19 +240,14 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         throw `{@...} pattern found in '${text}'`;
     }
 
-    if (text.includes('#itemEntry')) {
+    if (text.includes('{#')) {
         // Currently, {#itemEntry Item|Source} still remains in the text
         // TODO this should be fixed in items.ts, but it is currently not a priority
         // as such, ignore checking for remaining '{' and '}' for now
         return text;
     }
 
-    const disallowedSymbols = ['{', '}', '|', '[object Object]'];
-    const foundSymbols = disallowedSymbols.filter((s) => text.includes(s)).map((s) => `'${s}'`);
-    if (foundSymbols.length > 0) {
-        throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${text}'`;
-    }
-
+    checkForDisallowedSymbols(text);
     return text;
 }
 
@@ -431,7 +434,8 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
         return [cleanDNDText(description)];
     }
 
-    switch (description.type) {
+    const type = description.type;
+    switch (type) {
         case 'quote': {
             const quote = parseDescriptionBlockFromBlocks(description.entries);
             if (description.by) return [`*${quote}* - ${description.by}`];
@@ -498,40 +502,28 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             return [text];
         }
         case 'refClassFeature': {
-            // classFeature is a string like "Sorcery Points|Sorcerer||2"
             const classFeature = description.classFeature;
             if (typeof classFeature === 'string') {
-                const parts = classFeature.split('|');
-                if (parts.length >= 4) {
-                    const name = parts[0];
-                    const value = parts[3];
-                    if (value && name) return [`${BulletPoint} **${value}** ${name}`];
-                    if (name) return [name];
-                }
+                // Has to be resolved later
+                return [`{#${type} ${classFeature}}`];
             }
-
-            throw `Unsupported refClassFeature ${classFeature}`;
+            throw `Unsupported ${type} ${classFeature}`;
         }
         case 'refSubclassFeature': {
-            const classFeature = description.subclassFeature;
-            if (typeof classFeature === 'string') {
-                const [name, , , , , value] = classFeature.split('|');
-                if (value && name) {
-                    return [`${BulletPoint} **${value}** ${name}`];
-                }
-                return [name || classFeature];
+            const subclassFeat = description.subclassFeature;
+            if (typeof subclassFeat === 'string') {
+                // Has to be resolved later
+                return [`{#${type} ${subclassFeat}}`];
             }
-            throw `Unsupported refSubclassFeature ${classFeature}`;
+            throw `Unsupported ${type} ${subclassFeat}`;
         }
         case 'refOptionalfeature': {
             let optionalFeature: string = description.optionalfeature;
-
-            if (optionalFeature.includes('|')) {
-                const [name, source] = optionalFeature.split('|');
-                optionalFeature = `${name} (${source})`;
+            if (typeof optionalFeature === 'string') {
+                // Has to be resolved later
+                return [`{#${type} ${optionalFeature}}`];
             }
-
-            return [optionalFeature];
+            throw `Unsupported ${type} ${optionalFeature}`;
         }
         case 'options': {
             const entries: string[] = [];
@@ -541,7 +533,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             }
 
             const title = count ? `Choose **${count}:**\n` : '';
-            return [`${title}${entries.join('\n ')}`];
+            return [`${title}${BulletPoint} ${entries.join(`\n${BulletPoint} `)}`];
         }
         case 'statblock': {
             const tag = description.tag;
@@ -560,7 +552,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
                     break;
             }
 
-            if (!link) throw `Unsupported statblock ${tag}`;
+            if (!link) throw `Unsupported ${type} ${tag}`;
             return [`[See ${name}'s stats here](${link})`];
         }
         case 'refFeat': {
@@ -585,11 +577,11 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
                     break;
             }
 
-            if (!url) throw `Unsupported link ${description}`;
+            if (!url) throw `Unsupported ${type} ${description}`;
             return [`[${text}](${url})`];
         }
         default: {
-            throw `Unsupported description type: '${description.type}'`;
+            throw `Unsupported description type: '${type}'`;
         }
     }
 }

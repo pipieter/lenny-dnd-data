@@ -1,6 +1,7 @@
 import { getKey, readJsonFile } from './data';
 import {
     capitalize,
+    checkForDisallowedSymbols,
     cleanDNDText,
     Description,
     DescriptionType,
@@ -14,14 +15,19 @@ import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from './util';
 
 const BASEPATH = '5etools-src/data/class/';
 
-interface ClassFeatureDictionary {
+export interface ClassFeatureDictionary {
     [classKey: string]: ClassFeature[];
 }
+
+interface SubclassDictionary {
+    [subclassKey: string]: CharacterSubclass;
+}
+
 interface PaginatedDescriptions {
     [level: number]: Description[];
 }
 
-class ClassFeature {
+export class ClassFeature {
     name: string;
     source: string;
     level: number;
@@ -35,7 +41,7 @@ class ClassFeature {
         this.source = data.source;
         this.level = data.level;
 
-        this.classKey = getKey(data.className, data.classSource);
+        this.classKey = getKey(data.className, data.classSource || 'PHB');
         if (data.subclassShortName && data.subclassSource) {
             this.subclassKey = getKey(data.subclassShortName, data.subclassSource);
         }
@@ -43,6 +49,46 @@ class ClassFeature {
         if (data.entries) {
             const parsedDescriptions = parseDescriptions('', data.entries);
             if (parsedDescriptions.length > 0) this.descriptions = parsedDescriptions;
+        }
+    }
+}
+
+class CharacterSubclass {
+    name: string;
+    source: string;
+    key: string;
+    classKey: string;
+    levelFeatures: ClassFeature[] | null = null;
+
+    constructor(data: any, subclassFeatures: ClassFeatureDictionary) {
+        this.name = data.name;
+        this.source = data.source;
+        this.key = getKey(data.shortName, data.source);
+        this.classKey = getKey(data.className, data.classSource);
+
+        if (!data.subclassFeatures) return;
+
+        const features = subclassFeatures[this.classKey];
+        for (const subclassFeature of data.subclassFeatures) {
+            const parts = subclassFeature.split('|');
+            const featName = parts[0];
+            const featClassName = parts[1];
+            const featClassSource = parts[2] || 'PHB';
+
+            const featClassKey = getKey(featClassName, featClassSource);
+            const level = parseInt(parts[5]);
+
+            if (typeof level !== 'number') throw `Subclass feature-level was not a number ${parts}`;
+
+            for (const feat of features) {
+                if (featClassKey !== feat.classKey) continue;
+                if (feat.subclassKey !== this.key) continue;
+                if (feat.name !== featName) continue;
+
+                if (this.levelFeatures === null) this.levelFeatures = [];
+                feat.level = level;
+                this.levelFeatures.push(feat);
+            }
         }
     }
 }
@@ -64,7 +110,8 @@ class CharacterClass {
     constructor(
         data: any,
         features: ClassFeatureDictionary,
-        subclassFeatures: ClassFeatureDictionary
+        subclassFeatures: ClassFeatureDictionary,
+        subclasses: SubclassDictionary
     ) {
         this.name = data.name;
         this.source = data.source;
@@ -78,7 +125,7 @@ class CharacterClass {
 
         this.setLevelResources(data);
         this.setLevelFeatures(features);
-        this.setSubclassData(subclassFeatures);
+        this.setSubclassData(subclasses, subclassFeatures);
     }
 
     toJSON() {
@@ -474,6 +521,7 @@ class CharacterClass {
         Object.values(features)
             .flat()
             .forEach((feature) => {
+                if (feature.classKey !== getKey(this.name, this.source)) return;
                 const levelKey = feature.level;
                 if (feature.descriptions) {
                     if (!levelFeatures[levelKey]) levelFeatures[levelKey] = [];
@@ -484,36 +532,46 @@ class CharacterClass {
         for (const level in levelFeatures) {
             if (levelFeatures[level].length > 0) {
                 levelFeatures[level][0].name = 'Class Features';
+                levelFeatures[level] = resolveReferences(levelFeatures[level], features, null);
             }
         }
 
         this.levelFeatures = levelFeatures;
     }
 
-    private setSubclassData(subclassFeatures: ClassFeatureDictionary) {
+    private setSubclassData(subclasses: SubclassDictionary, subclassFeats: ClassFeatureDictionary) {
         let result: { [subclass: string]: PaginatedDescriptions } = {};
         let lowestLevel = 999;
 
-        Object.values(subclassFeatures)
-            .flat()
-            .forEach((feature) => {
+        for (const key in subclasses) {
+            const subclass = subclasses[key];
+
+            if (!subclass.levelFeatures) continue;
+
+            for (const feature of subclass.levelFeatures) {
                 const subclassKey = feature.subclassKey;
                 const levelKey = feature.level;
-                if (!subclassKey) return;
-                if (!feature.descriptions) return;
+
+                if (!subclassKey) continue;
+                if (!feature.descriptions) continue;
 
                 if (feature.level < lowestLevel) lowestLevel = feature.level;
                 if (!result[subclassKey]) result[subclassKey] = {};
                 if (!result[subclassKey][levelKey]) result[subclassKey][levelKey] = [];
 
-                const descriptions = feature.descriptions;
-                result[subclassKey][levelKey].push(...descriptions);
-            });
+                result[subclassKey][levelKey].push(...feature.descriptions);
+            }
+        }
 
         for (const subclass in result) {
             for (const level in result[subclass]) {
                 if (result[subclass][level].length > 0) {
                     result[subclass][level][0].name = `${subclass} Features`;
+                    result[subclass][level] = resolveReferences(
+                        result[subclass][level],
+                        null,
+                        subclassFeats
+                    );
                 }
             }
         }
@@ -521,6 +579,167 @@ class CharacterClass {
         this.subclassUnlockLevel = lowestLevel === 999 ? null : lowestLevel;
         this.subclassLevelFeatures = result;
     }
+}
+
+function resolveClassFeatReference(
+    text: string,
+    feats: ClassFeatureDictionary | null,
+    type: 'refClassFeature' | 'refSubclassFeature'
+): Description[] {
+    const regex = new RegExp(`\\{#${type}\\s+([^}]+)\\}`, 'g');
+    const matches = [...text.matchAll(regex)];
+
+    const onlyOneReference = matches.length === 1;
+    const trimmedText = text.trim();
+    const trimmedMatch = onlyOneReference ? matches[0][0].trim() : '';
+    const isPureReference = onlyOneReference && trimmedText === trimmedMatch;
+
+    const isOnlyReferences =
+        matches.length > 0 &&
+        text
+            .replace(regex, '')
+            .trim()
+            .replace(/^[•\s\r\n]+|[•\s\r\n]+$/g, '') === '';
+
+    // Case 1: String with only a {#ref } and nothing else.
+    if (isPureReference || isOnlyReferences) {
+        const parts = matches[0][1].split('|').map((p) => p.trim());
+
+        let name: string, className: string, source: string, levelStr: string;
+        let subclassName: string | undefined, subclassSource: string | undefined;
+
+        if (type === 'refClassFeature') {
+            [name, className, source, levelStr] = parts;
+        } else {
+            [name, className, source, subclassName, subclassSource, levelStr] = parts;
+        }
+
+        const featSource = source || 'PHB';
+        const key = getKey(className, featSource);
+
+        if (!feats || !feats[key]) {
+            return [
+                {
+                    name: '',
+                    type: DescriptionType.text,
+                    value: `${BulletPoint} ${getKey(name, featSource)}`,
+                },
+            ];
+        }
+
+        const feat = feats[key].find(
+            (f) => f.name.trim().toLowerCase() === name.trim().toLowerCase()
+        );
+
+        if (!feat?.descriptions) throw `Could not find ${type} for ${key}`;
+        let descs = feat.descriptions.map((d) => ({ ...d }));
+        descs[0].value = `__${getKey(name, featSource)}__: ${descs[0].value}`;
+
+        return descs;
+    }
+
+    // Case 2: Inline substitution (multiple references or formatting like bullets)
+    const updatedText = text.replace(regex, (match, inner) => {
+        const parts = inner.split('|').map((p: string) => p.trim());
+
+        const [name, , source] = parts;
+        const featSource = source || 'PHB';
+        return getKey(name, featSource);
+    });
+
+    return [
+        {
+            name: '',
+            type: DescriptionType.text,
+            value: updatedText,
+        },
+    ];
+}
+
+function resolveOptionalFeatReference(entry: Description): Description {
+    const value = entry.value as string;
+
+    const updatedValue = value.replace(
+        /\{#refOptionalfeature\s+([^|}]+)(?:\|([^}]+))?\}/g,
+        (_, name: string, source?: string) => {
+            const finalSource = source?.trim() || 'PHB';
+            return `${name.trim()} (${finalSource})`;
+        }
+    );
+
+    return {
+        ...entry,
+        value: updatedValue,
+    };
+}
+
+function resolveReferences(
+    entries: Description[],
+    classFeats: ClassFeatureDictionary | null = null,
+    subclassFeats: ClassFeatureDictionary | null = null,
+    isSubResolve: boolean = false
+): Description[] {
+    const resolvedEntries: Description[] = [];
+
+    for (const entry of entries) {
+        if (entry.type === DescriptionType.text) {
+            const text = entry.value as string;
+
+            if (!text.includes(`{#`)) {
+                resolvedEntries.push(entry);
+                continue;
+            }
+
+            if (text.includes(`refClassFeature`))
+                resolvedEntries.push(
+                    ...resolveClassFeatReference(text, classFeats, 'refClassFeature')
+                );
+            else if (text.includes(`refSubclassFeature`))
+                resolvedEntries.push(
+                    ...resolveClassFeatReference(text, subclassFeats, 'refSubclassFeature')
+                );
+            else if (text.includes('refOptionalfeature'))
+                resolvedEntries.push(resolveOptionalFeatReference(entry));
+            else throw `Unsupported text-description reference-type in: ${text}`;
+        } else if (entry.type === DescriptionType.table) {
+            resolvedEntries.push(entry); // For now, tables don't have any references.
+        } else {
+            throw `Could not resolve unsupported DescriptionType ${entry.type}`;
+        }
+    }
+
+    if (!isSubResolve) {
+        let indexesToResolve: number[] = [];
+        let entriesToSubResolve: Description[] = [];
+        for (let i = 0; i < resolvedEntries.length; i++) {
+            const e = resolvedEntries[i];
+            if (e.type === DescriptionType.text) {
+                const val = e.value as string;
+                if (!val.includes('{#')) continue;
+
+                indexesToResolve.push(i);
+                entriesToSubResolve.push(e);
+            }
+        }
+
+        for (let j = indexesToResolve.length - 1; j >= 0; j--) {
+            const index = indexesToResolve[j];
+            const resolved = resolveReferences(
+                [entriesToSubResolve[j]],
+                classFeats,
+                subclassFeats,
+                true
+            );
+            resolvedEntries.splice(index, 1, ...resolved);
+        }
+    }
+
+    for (const resolvedEntry of resolvedEntries) {
+        if (resolvedEntry.type !== DescriptionType.text) continue;
+        checkForDisallowedSymbols(resolvedEntry.value as string);
+    }
+
+    return resolvedEntries;
 }
 
 export function getClasses(): any[] {
@@ -541,18 +760,30 @@ export function getClasses(): any[] {
             features[key].push(feature);
         }
 
+        let subclasses: SubclassDictionary = {};
         let subclassFeatures: ClassFeatureDictionary = {};
-        if (data.subclassFeature) {
+        if (data.subclassFeature && data.subclass) {
             for (const featureData of data.subclassFeature) {
                 const feature = new ClassFeature(featureData);
                 const key = feature.classKey;
                 if (!subclassFeatures[key]) subclassFeatures[key] = [];
                 subclassFeatures[key].push(feature);
             }
+
+            for (const subclassData of data.subclass) {
+                const subclass = new CharacterSubclass(subclassData, subclassFeatures);
+                const key = subclass.key;
+                if (!subclasses[key]) subclasses[key] = subclass;
+            }
         }
 
         for (const classData of data.class) {
-            const characterClass = new CharacterClass(classData, features, subclassFeatures);
+            const characterClass = new CharacterClass(
+                classData,
+                features,
+                subclassFeatures,
+                subclasses
+            );
             result.push(characterClass.toJSON());
         }
     }
