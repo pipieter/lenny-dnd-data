@@ -125,7 +125,7 @@ class CharacterClass {
 
         this.setLevelResources(data);
         this.setLevelFeatures(features);
-        this.setSubclassData(subclasses, data, subclassFeatures);
+        this.setSubclassData(subclasses, subclassFeatures);
     }
 
     toJSON() {
@@ -539,11 +539,7 @@ class CharacterClass {
         this.levelFeatures = levelFeatures;
     }
 
-    private setSubclassData(
-        subclasses: SubclassDictionary,
-        data: any,
-        subclassFeats: ClassFeatureDictionary
-    ) {
+    private setSubclassData(subclasses: SubclassDictionary, subclassFeats: ClassFeatureDictionary) {
         let result: { [subclass: string]: PaginatedDescriptions } = {};
         let lowestLevel = 999;
 
