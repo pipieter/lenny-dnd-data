@@ -10,7 +10,7 @@ import {
     getTablesUrl,
     getTrapsUrl,
 } from './urls';
-import { ClassFeature, ClassFeatureDictionary } from './classes';
+import { ClassFeatureDictionary } from './classes';
 import { getKey } from './data';
 
 export enum DescriptionType {
