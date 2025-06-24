@@ -374,7 +374,7 @@ export function resolveReferences(
                 resolvedEntries.push(resolveOptionalFeatReference(entry));
             else throw `Unsupported text-description reference-type in: ${text}`;
         } else if (entry.type === DescriptionType.table) {
-            resolvedEntries.push(entry);
+            resolvedEntries.push(entry); // For now, tables don't have any references.
         } else {
             throw `Could not resolve unsupported DescriptionType ${entry.type}`;
         }
@@ -404,6 +404,11 @@ export function resolveReferences(
             );
             resolvedEntries.splice(index, 1, ...resolved);
         }
+    }
+
+    for (const resolvedEntry of resolvedEntries) {
+        if (resolvedEntry.type !== DescriptionType.text) continue;
+        checkForDisallowedSymbols(resolvedEntry.value as string);
     }
 
     return resolvedEntries;
