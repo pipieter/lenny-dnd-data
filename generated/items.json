@@ -32024,13 +32024,7 @@
     "type": [
       "adventuring gear"
     ],
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Ink (1-ounce bottle)"
-      }
-    ],
+    "description": [],
     "properties": []
   },
   {
@@ -39852,7 +39846,7 @@
           "headers": [
             "d8",
             "Location",
-            "Possesor"
+            "Possessor"
           ],
           "rows": [
             [
@@ -62682,7 +62676,7 @@
       {
         "name": "",
         "type": "text",
-        "value": "An ornate carving of a serpent adorned with a coursing river spirals down the length of this redand-gold staff. While you're holding it, you can use an action to produce one of the following effects. Once the staff has produced an effect, it can't produce that effect again until the next dawn."
+        "value": "An ornate carving of a serpent adorned with a coursing river spirals down the length of this red-and-gold staff. While you're holding it, you can use an action to produce one of the following effects. Once the staff has produced an effect, it can't produce that effect again until the next dawn."
       },
       {
         "name": "Orb of Lightning",
@@ -79934,11 +79928,17 @@
         "name": "Versatile",
         "type": "text",
         "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "type": "text",
+        "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
@@ -80382,11 +80382,17 @@
         "name": "Versatile",
         "type": "text",
         "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      },
+      {
+        "name": "Topple",
+        "type": "text",
+        "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
       }
     ],
     "properties": [
       "**1d6** Bludgeoning",
-      "versatile (1d8)"
+      "versatile (1d8)",
+      "mastery: topple"
     ]
   },
   {
