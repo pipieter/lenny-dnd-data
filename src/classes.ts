@@ -751,22 +751,41 @@ function resolveReferences(
     return resolvedEntries;
 }
 
-function classFeatsToParsedFeat(
+function classFeatsToParsedFeats(
     classFeats: ClassFeatureDictionary,
     subclassFeats: ClassFeatureDictionary
 ): ParsedFeat[] {
     let parsedFeats: ParsedFeat[] = [];
+    const blacklist: string[] = [
+        'Ability Score Improvement',
+        'Extra Attack',
+        'Subclass Feature',
+        // 'Blessed Strikes',
+        // 'Divine Strike',
+        // 'Potent Spellcasting',
+        // 'Channel Divinity',
+        // 'Bonus Disciplines',
+        // 'Oath Spells',
+        // 'Metamagic',
+        // 'Mystic Arcanum',
+        // 'Bonus Proficiencies',
+        // 'Bonus Proficiency',
+    ]; // TODO, merge feat descriptions for different variants (?)
+    const nameCounts: Record<string, number> = {};
 
     for (const key in classFeats) {
         const feats = classFeats[key];
         for (const feat of feats) {
             if (!feat.descriptions) continue;
+            if (blacklist.includes(feat.name)) continue;
+
+            nameCounts[feat.name] = (nameCounts[feat.name] || 0) + 1;
 
             parsedFeats.push({
                 name: feat.name,
                 source: feat.source,
                 url: getClassesUrl(feat.className, feat.classSource),
-                type: `${feat.className} Class Feature`,
+                type: `Lv. ${feat.level} ${feat.className} Class Feature`,
                 prerequisite: feat.classKey,
                 abilityIncrease: null,
                 description: feat.descriptions,
@@ -778,8 +797,11 @@ function classFeatsToParsedFeat(
         const feats = subclassFeats[key];
         for (const feat of feats) {
             if (!feat.descriptions) continue;
+            if (blacklist.includes(feat.name)) continue;
             if (!feat.subclassName || !feat.subclassSource)
                 throw `Subclass feat ${feat.name} does not have subclass name or source`;
+
+            nameCounts[feat.name] = (nameCounts[feat.name] || 0) + 1;
 
             parsedFeats.push({
                 name: feat.name,
@@ -788,13 +810,20 @@ function classFeatsToParsedFeat(
                     feat.className,
                     feat.classSource,
                     feat.subclassName,
-                    feat.subclassSource
+                    feat.subclassSource,
+                    feat.level
                 ),
-                type: `${feat.subclassName} Subclass Feature`,
+                type: `Lv. ${feat.level} ${feat.subclassName} Subclass Feature`,
                 prerequisite: feat.subclassKey ?? feat.classKey,
                 abilityIncrease: null,
                 description: feat.descriptions,
             });
+        }
+    }
+
+    for (const name in nameCounts) {
+        if (nameCounts[name] > 2) {
+            console.warn(`${nameCounts[name]} - "${name}"`);
         }
     }
 
@@ -840,7 +869,7 @@ export function getClassesAndClassFeats(): {
             }
         }
 
-        classFeats.push(...classFeatsToParsedFeat(features, subclassFeatures));
+        classFeats.push(...classFeatsToParsedFeats(features, subclassFeatures));
         for (const classData of data.class) {
             const characterClass = new CharacterClass(
                 classData,
