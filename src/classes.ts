@@ -770,16 +770,13 @@ function classFeatsToParsedFeats(
         // 'Mystic Arcanum',
         // 'Bonus Proficiencies',
         // 'Bonus Proficiency',
-    ]; // TODO, merge feat descriptions for different variants (?)
-    const nameCounts: Record<string, number> = {};
+    ];
 
     for (const key in classFeats) {
         const feats = classFeats[key];
         for (const feat of feats) {
             if (!feat.descriptions) continue;
             if (blacklist.includes(feat.name)) continue;
-
-            nameCounts[feat.name] = (nameCounts[feat.name] || 0) + 1;
 
             parsedFeats.push({
                 name: feat.name,
@@ -801,8 +798,6 @@ function classFeatsToParsedFeats(
             if (!feat.subclassName || !feat.subclassSource)
                 throw `Subclass feat ${feat.name} does not have subclass name or source`;
 
-            nameCounts[feat.name] = (nameCounts[feat.name] || 0) + 1;
-
             parsedFeats.push({
                 name: feat.name,
                 source: feat.source,
@@ -818,12 +813,6 @@ function classFeatsToParsedFeats(
                 abilityIncrease: null,
                 description: feat.descriptions,
             });
-        }
-    }
-
-    for (const name in nameCounts) {
-        if (nameCounts[name] > 2) {
-            console.warn(`${nameCounts[name]} - "${name}"`);
         }
     }
 
