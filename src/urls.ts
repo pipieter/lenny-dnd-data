@@ -47,6 +47,22 @@ export function getClassesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/classes.html`, name, source);
 }
 
+export function getSubclassUrl(
+    className: string,
+    classSource: string,
+    subclassName: string,
+    subclassSource: string,
+    level: number | null = null
+) {
+    const classUrl = getClassesUrl(className, classSource);
+    const subclassQuery = `sub_${subclassName.toLowerCase()}_${subclassSource.toLowerCase()}=b1`;
+
+    if (!level) return cleanUrl(`${classUrl},state:${subclassQuery}`);
+
+    const levelInfoQuery = `feature=s${level - 1}-0`; // Level 1 = 0
+    return cleanUrl(`${classUrl},state:${levelInfoQuery}~${subclassQuery}`);
+}
+
 export function getConditionsDiseasesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/conditionsdiseases.html`, name, source);
 }

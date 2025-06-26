@@ -1,4 +1,5 @@
 import { getKey, readJsonFile } from './data';
+import { ParsedFeat } from './feats';
 import {
     capitalize,
     checkForDisallowedSymbols,
@@ -10,7 +11,7 @@ import {
     parseDescriptions,
     title,
 } from './parser';
-import { getClassesUrl } from './urls';
+import { getClassesUrl, getSubclassUrl } from './urls';
 import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from './util';
 
 const BASEPATH = '5etools-src/data/class/';
@@ -32,7 +33,11 @@ export class ClassFeature {
     source: string;
     level: number;
 
+    className: string;
+    classSource: string;
     classKey: string;
+    subclassName: string | null = null;
+    subclassSource: string | null = null;
     subclassKey: string | null = null;
     descriptions: Description[] | null = null;
 
@@ -41,8 +46,12 @@ export class ClassFeature {
         this.source = data.source;
         this.level = data.level;
 
-        this.classKey = getKey(data.className, data.classSource || 'PHB');
+        this.className = data.className;
+        this.classSource = data.classSource || 'PHB';
+        this.classKey = getKey(this.className, this.classSource);
         if (data.subclassShortName && data.subclassSource) {
+            this.subclassName = data.subclassShortName;
+            this.subclassSource = data.subclassSource;
             this.subclassKey = getKey(data.subclassShortName, data.subclassSource);
         }
 
@@ -742,9 +751,75 @@ function resolveReferences(
     return resolvedEntries;
 }
 
-export function getClasses(): any[] {
+function classFeatsToParsedFeats(
+    classFeats: ClassFeatureDictionary,
+    subclassFeats: ClassFeatureDictionary
+): ParsedFeat[] {
+    let parsedFeats: ParsedFeat[] = [];
+    /* 
+    Blacklist for certain feats that are generic, repetitive, or not useful as individual feats.
+    Users can still access this information when looking up classes, but can't directly look up these feats.
+    */
+    const blacklist: string[] = [
+        'Ability Score Improvement', // Duplicate of standard feat.
+        'Extra Attack', // Self-explanatory name, not unique between classes.
+        'Subclass Feature', // Self-explanatory name, not unique between classes.
+    ];
+
+    for (const key in classFeats) {
+        const feats = classFeats[key];
+        for (const feat of feats) {
+            if (!feat.descriptions) continue;
+            if (blacklist.includes(feat.name)) continue;
+
+            parsedFeats.push({
+                name: feat.name,
+                source: feat.source,
+                url: getClassesUrl(feat.className, feat.classSource),
+                type: `Lv. ${feat.level} ${feat.className} Class Feature`,
+                prerequisite: feat.classKey,
+                abilityIncrease: null,
+                description: feat.descriptions,
+            });
+        }
+    }
+
+    for (const key in subclassFeats) {
+        const feats = subclassFeats[key];
+        for (const feat of feats) {
+            if (!feat.descriptions) continue;
+            if (blacklist.includes(feat.name)) continue;
+            if (!feat.subclassName || !feat.subclassSource)
+                throw `Subclass feat ${feat.name} does not have subclass name or source`;
+
+            parsedFeats.push({
+                name: feat.name,
+                source: feat.source,
+                url: getSubclassUrl(
+                    feat.className,
+                    feat.classSource,
+                    feat.subclassName,
+                    feat.subclassSource,
+                    feat.level
+                ),
+                type: `Lv. ${feat.level} ${feat.subclassName} Subclass Feature`,
+                prerequisite: feat.subclassKey ?? feat.classKey,
+                abilityIncrease: null,
+                description: feat.descriptions,
+            });
+        }
+    }
+
+    return parsedFeats;
+}
+
+export function getClassesAndClassFeats(): {
+    classes: any[];
+    classFeats: ParsedFeat[];
+} {
     const indexPath = BASEPATH + '/index.json';
-    let result: any[] = [];
+    let classes: any[] = [];
+    let classFeats: ParsedFeat[] = [];
 
     const indexData = readJsonFile(indexPath);
     for (const [className, classIndexFile] of Object.entries(indexData)) {
@@ -777,6 +852,7 @@ export function getClasses(): any[] {
             }
         }
 
+        classFeats.push(...classFeatsToParsedFeats(features, subclassFeatures));
         for (const classData of data.class) {
             const characterClass = new CharacterClass(
                 classData,
@@ -784,9 +860,9 @@ export function getClasses(): any[] {
                 subclassFeatures,
                 subclasses
             );
-            result.push(characterClass.toJSON());
+            classes.push(characterClass.toJSON());
         }
     }
 
-    return result;
+    return { classes, classFeats };
 }
