@@ -756,20 +756,14 @@ function classFeatsToParsedFeats(
     subclassFeats: ClassFeatureDictionary
 ): ParsedFeat[] {
     let parsedFeats: ParsedFeat[] = [];
+    /* 
+    Blacklist for certain feats that are generic, repetitive, or not useful as individual feats.
+    Users can still access this information when looking up classes, but can't directly look up these feats.
+    */
     const blacklist: string[] = [
-        'Ability Score Improvement',
-        'Extra Attack',
-        'Subclass Feature',
-        // 'Blessed Strikes',
-        // 'Divine Strike',
-        // 'Potent Spellcasting',
-        // 'Channel Divinity',
-        // 'Bonus Disciplines',
-        // 'Oath Spells',
-        // 'Metamagic',
-        // 'Mystic Arcanum',
-        // 'Bonus Proficiencies',
-        // 'Bonus Proficiency',
+        'Ability Score Improvement', // Duplicate of standard feat.
+        'Extra Attack', // Self-explanatory name, not unique between classes.
+        'Subclass Feature', // Self-explanatory name, not unique between classes.
     ];
 
     for (const key in classFeats) {
