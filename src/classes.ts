@@ -772,6 +772,7 @@ function classFeatsToParsedFeats(
             if (!feat.descriptions) continue;
             if (blacklist.includes(feat.name)) continue;
 
+            feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
             parsedFeats.push({
                 name: feat.name,
                 source: feat.source,
@@ -792,6 +793,7 @@ function classFeatsToParsedFeats(
             if (!feat.subclassName || !feat.subclassSource)
                 throw `Subclass feat ${feat.name} does not have subclass name or source`;
 
+            feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
             parsedFeats.push({
                 name: feat.name,
                 source: feat.source,
