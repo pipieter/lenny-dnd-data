@@ -47,6 +47,34 @@ export function getClassesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/classes.html`, name, source);
 }
 
+export function getConditionsDiseasesUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/conditionsdiseases.html`, name, source);
+}
+
+export function getFeatsUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/feats.html`, name, source);
+}
+
+export function getItemsUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/items.html`, name, source);
+}
+
+export function getLanguagesUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/languages.html`, name, source);
+}
+
+export function getObjectsUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/objects.html`, name, source);
+}
+
+export function getRulesUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/variantrules.html`, name, source);
+}
+
+export function getSpellsUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/spells.html`, name, source);
+}
+
 export function getSubclassUrl(
     className: string,
     classSource: string,
@@ -61,30 +89,6 @@ export function getSubclassUrl(
 
     const levelInfoQuery = `feature=s${level - 1}-0`; // Level 1 = 0
     return cleanUrl(`${classUrl},state:${levelInfoQuery}~${subclassQuery}`);
-}
-
-export function getConditionsDiseasesUrl(name: string, source: string) {
-    return buildNameSourceUrl(`https://5e.tools/conditionsdiseases.html`, name, source);
-}
-
-export function getFeatsUrl(name: string, source: string) {
-    return buildNameSourceUrl(`https://5e.tools/feats.html`, name, source);
-}
-
-export function getItemsUrl(name: string, source: string) {
-    return buildNameSourceUrl(`https://5e.tools/items.html`, name, source);
-}
-
-export function getObjectsUrl(name: string, source: string) {
-    return buildNameSourceUrl(`https://5e.tools/objects.html`, name, source);
-}
-
-export function getRulesUrl(name: string, source: string) {
-    return buildNameSourceUrl(`https://5e.tools/variantrules.html`, name, source);
-}
-
-export function getSpellsUrl(name: string, source: string) {
-    return buildNameSourceUrl(`https://5e.tools/spells.html`, name, source);
 }
 
 export function getTablesUrl(name: string, source: string | null = null) {

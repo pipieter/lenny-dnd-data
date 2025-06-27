@@ -1,4 +1,5 @@
 import { capitalize, cleanDNDText, Description, parseDescriptions } from './parser';
+import { getLanguagesUrl } from './urls';
 import { joinStringsWithAnd } from './util';
 
 interface Language {
@@ -13,6 +14,7 @@ interface Language {
 interface ParsedLanguage {
     name: string;
     source: string;
+    url: string;
     type: string;
     typicalSpeakers: string | null;
     script: string | null;
@@ -42,6 +44,7 @@ export function getLanguages(data: any): ParsedLanguage[] {
         return {
             name: language.name,
             source: language.source,
+            url: getLanguagesUrl(language.name, language.source),
             type: getLanguageType(language),
             typicalSpeakers: getTypicalSpeakers(language),
             script: language.script ?? null,
