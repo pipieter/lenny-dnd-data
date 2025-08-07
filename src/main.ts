@@ -10,6 +10,7 @@ import { getRules } from './rules';
 import { getActions } from './actions';
 import { getFeats } from './feats';
 import { getLanguages } from './languages';
+import { getNames } from './names';
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
@@ -45,6 +46,9 @@ function main(): void {
     const languages = getLanguages(data);
     stopwatch.log('Languages retrieved');
 
+    const names = getNames(data);
+    stopwatch.log('Names retrieved');
+
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
     writeFileSync('./generated/conditions.json', JSON.stringify(conditions, null, 2), 'utf-8');
@@ -56,6 +60,7 @@ function main(): void {
     writeFileSync('./generated/actions.json', JSON.stringify(actions, null, 2), 'utf-8');
     writeFileSync('./generated/feats.json', JSON.stringify(feats, null, 2), 'utf-8');
     writeFileSync('./generated/languages.json', JSON.stringify(languages, null, 2), 'utf-8');
+    writeFileSync('./generated/names.json', JSON.stringify(names, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
