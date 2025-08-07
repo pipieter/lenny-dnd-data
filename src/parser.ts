@@ -590,7 +590,6 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
 }
 
 function parseTableRow(values: any[] | any): string[] {
-    console.log(values);
     if (typeof values === 'object' && !Array.isArray(values)) {
         if (values.type === 'row') {
             values = values.row;
