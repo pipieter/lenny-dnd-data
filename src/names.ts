@@ -6,22 +6,22 @@ interface NameTableEntry {
 
 interface NameTable {
     option: string;
-    table: NameTableEntry[]
+    table: NameTableEntry[];
 }
 
 interface RaceNames {
     name: string;
     source: string;
-    tables: NameTable[]
+    tables: NameTable[];
 }
 
 interface ParsedNames {
     name: string;
     source: string;
     tables: {
-        'female': string[],
-        'male': string[],
-        'family': string[]
+        female: string[];
+        male: string[];
+        family: string[];
     };
 }
 
@@ -34,11 +34,11 @@ export function getNames(data: any): ParsedNames[] {
             tables: {
                 female: [],
                 male: [],
-                family: []
-            }
+                family: [],
+            },
         };
 
-         for (let nameTable of namesList.tables) {
+        for (let nameTable of namesList.tables) {
             const option = nameTable.option.toLowerCase();
             const table = nameTable.table.map((entry: { result: string }) => {
                 // Remove any text inside parentheses
@@ -48,27 +48,27 @@ export function getNames(data: any): ParsedNames[] {
             // FEMALE
             if (option.includes('female')) {
                 race.tables.female.push(...table);
-            
-            // MALE
+
+                // MALE
             } else if (option.includes('male')) {
                 race.tables.male.push(...table);
 
-            // GENDERLESS
-            } else if (['child', 'general'].some(o => option.includes(o))) {
+                // GENDERLESS
+            } else if (['child', 'general'].some((o) => option.includes(o))) {
                 race.tables.female.push(...table);
                 race.tables.male.push(...table);
 
-            // FAMILY
-            } else if (['clan', 'family', 'virtue'].some(o => option.includes(o))) {
+                // FAMILY
+            } else if (['clan', 'family', 'virtue'].some((o) => option.includes(o))) {
                 race.tables.family.push(...table);
 
-            // UNSUPPORTED
+                // UNSUPPORTED
             } else {
-                throw `Unsupported name option in ${race.name} race: '${option}'`
+                throw `Unsupported name option in ${race.name} race: '${option}'`;
             }
         }
-        
-        result.push(race)
+
+        result.push(race);
     }
 
     return result;
