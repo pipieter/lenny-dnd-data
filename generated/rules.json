@@ -236,6 +236,19 @@
     ]
   },
   {
+    "name": "Alien Technology",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#alien%20technology_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When adventurers find a piece of technology that isn't from their world or time period, they can deduce what it is with a successful Intelligence (*Investigation*) check, with the DC depending on the complexity of the item: DC 10 for a relatively simple item like a calculator or a lighter, or DC 20 for a complex item such as a computer, a chainsaw, or a hovercraft. You may require a separate Intelligence (*Investigation*) check to determine whether a character can activate or operate the technology; a character who has observed the item in use or has operated a similar item either has Advantage on the check or succeeds on the check automatically (your choice)."
+      }
+    ]
+  },
+  {
     "name": "Alignment",
     "source": "XPHB",
     "url": "https://5e.tools/variantrules.html#alignment_xphb",
@@ -1451,6 +1464,24 @@
         "name": "",
         "type": "text",
         "value": "If you take damage at 0 HP, it counts as a failed Death Save or two failures if the damage is from a Critical Hit."
+      }
+    ]
+  },
+  {
+    "name": "Diagonal Movement",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#diagonal%20movement_xdmg",
+    "ruleType": "Variant",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "The Player's Handbook presents a simple method for counting movement and measuring range on a grid of squares: count every square as 5 feet, even if the creature is moving or counting diagonally. While fast in play, this rule breaks the laws of geometry."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you want more accuracy, use the following rule: the first diagonal square counts as 5 feet, but the second diagonal square counts as 10 feet. This pattern of 5 feet and then 10 feet continues whenever you're counting diagonally, even if the creature moves straight between different bits of diagonal movement. For example, a character might move 1 square diagonally (5 feet), then 3 squares straight (15 feet), and then another square diagonally (10 feet) for a total movement of 30 feet."
       }
     ]
   },
@@ -5835,6 +5866,108 @@
     ]
   },
   {
+    "name": "Explosives",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#explosives_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "The Explosives table has examples of explosives. If no cost is given for an explosive, it can't typically be bought. If you make these explosives available for purchase, treat them as Rare magic items. Rules for explosives are given below."
+      },
+      {
+        "name": "Explosives",
+        "type": "table",
+        "value": {
+          "title": "Explosives",
+          "headers": [
+            "Item",
+            "Cost",
+            "Weight"
+          ],
+          "rows": [
+            [
+              "Bomb",
+              "100 GP",
+              "1 lb."
+            ],
+            [
+              "Dynamite Stick",
+              "—",
+              "1 lb."
+            ],
+            [
+              "Grenade, Fragmentation",
+              "—",
+              "1 lb."
+            ],
+            [
+              "Grenade Launcher",
+              "—",
+              "7 lb."
+            ],
+            [
+              "Grenade, Smoke",
+              "50 GP",
+              "2 lb."
+            ],
+            [
+              "Gunpowder (keg)",
+              "250 GP",
+              "20 lb."
+            ],
+            [
+              "Gunpowder (powder horn)",
+              "35 GP",
+              "2 lb."
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Bomb",
+        "type": "text",
+        "value": "As an action, you can light a Bomb and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one."
+      },
+      {
+        "name": "Dynamite Stick",
+        "type": "text",
+        "value": "An an action, you can light a Dynamite Stick and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Force damage on a failed save or half as much damage on a successful one."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "It takes 1 minute to bind two or more Dynamite Sticks together so they explode at the same time. Each stick after the first increases the damage by 1d6 (to a maximum of 10d6) and the effect's radius by 5 feet (to a maximum of 20 feet)."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "It takes 1 minute to rig dynamite with a longer fuse so it explodes after a longer period of time, such as 1 minute or 10 minutes."
+      },
+      {
+        "name": "Grenades and Grenade Launchers",
+        "type": "text",
+        "value": "As an action, you can either throw a grenade at a point up to 60 feet away or use a Grenade Launcher to propel the grenade to a point up to 1,000 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius Sphere."
+      },
+      {
+        "name": "Fragmentation Grenade",
+        "type": "text",
+        "value": "Each creature in the Sphere makes a DC 15 Dexterity saving throw, taking 17 (5d6) Piercing damage on a failed save or half as much damage on a successful one."
+      },
+      {
+        "name": "Smoke Grenade",
+        "type": "text",
+        "value": "The area of the Sphere is Heavily Obscured by smoke for 1 minute. A strong wind (such as the __Gust of Wind__ spell) disperses the smoke."
+      },
+      {
+        "name": "Gunpowder",
+        "type": "text",
+        "value": "Setting fire to a container full of Gunpowder causes it to explode. When a container explodes, each creature in a 10-foot-radius Sphere centered on the container makes a DC 12 Dexterity saving throw, taking 10 (3d6) Fire damage (for a powder horn) or 24 (7d6) Fire damage (for a keg) on a failed save or half as much damage on a successful one."
+      }
+    ]
+  },
+  {
     "name": "Facing",
     "source": "DMG",
     "url": "https://5e.tools/variantrules.html#facing_dmg",
@@ -6181,6 +6314,141 @@
         "name": "Reload",
         "type": "text",
         "value": "A limited number of shots can be made with a weapon that has the reload property. A character must then reload it using an action or a bonus action (the character's choice)."
+      }
+    ]
+  },
+  {
+    "name": "Firearms",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#firearms_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "The Firearms table provides examples of modern and futuristic firearms. If you make them available for purchase (perhaps in the fantastical marketplaces of the City of Brass), treat modern items as Rare magic items and futuristic items as Very Rare ones (see chapter 7)."
+      },
+      {
+        "name": "Properties",
+        "type": "text",
+        "value": "Some weapons in the Firearms table have the following properties, in addition to properties described in the Player's Handbook."
+      },
+      {
+        "name": "Burst Fire",
+        "type": "text",
+        "value": "As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save."
+      },
+      {
+        "name": "Reload",
+        "type": "text",
+        "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+      },
+      {
+        "name": "Ammunition",
+        "type": "text",
+        "value": "Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at your discretion. An Energy Cell weighs 1/2 lb."
+      },
+      {
+        "name": "Firearms",
+        "type": "table",
+        "value": {
+          "title": "Firearms",
+          "headers": [
+            "Modern Item",
+            "Damage",
+            "Properties",
+            "Mastery",
+            "Weight"
+          ],
+          "rows": [
+            [
+              "Martial Ranged Weapons",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Automatic Rifle",
+              "2d8 Piercing",
+              "Ammunition (Range 80/240; Bullet), Burst Fire, Reload (30 shots), Two-Handed",
+              "Slow",
+              "8 lb."
+            ],
+            [
+              "Hunting Rifle",
+              "2d10 Piercing",
+              "Ammunition (Range 80/240; Bullet), Reload (5 shots), Two-Handed",
+              "Slow",
+              "8 lb."
+            ],
+            [
+              "Revolver",
+              "2d8 Piercing",
+              "Ammunition (Range 40/120; Bullet), Reload (6 shots)",
+              "Sap",
+              "3 lb."
+            ],
+            [
+              "Semiautomatic Pistol",
+              "2d6 Piercing",
+              "Ammunition (Range 50/150; Bullet), Reload (15 shots)",
+              "Vex",
+              "3 lb."
+            ],
+            [
+              "Shotgun",
+              "2d8 Piercing",
+              "Ammunition (Range 30/90; Bullet), Reload (2 shots), Two-Handed",
+              "Push",
+              "7 lb."
+            ]
+          ]
+        }
+      },
+      {
+        "name": "",
+        "type": "table",
+        "value": {
+          "title": "",
+          "headers": [
+            "Futuristic Item",
+            "Damage",
+            "Properties",
+            "Mastery",
+            "Weight"
+          ],
+          "rows": [
+            [
+              "Martial Ranged Weapons",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Antimatter Rifle",
+              "6d8 Necrotic",
+              "Ammunition (Range 120/360; Energy Cell), Reload (2 shots), Two-Handed",
+              "Sap",
+              "10 lb."
+            ],
+            [
+              "Laser Pistol",
+              "3d6 Radiant",
+              "Ammunition (Range 40/120; Energy Cell), Reload (50 shots)",
+              "Vex",
+              "2 lb."
+            ],
+            [
+              "Laser Rifle",
+              "3d8 Radiant",
+              "Ammunition (Range 100/300; Energy Cell), Reload (30 shots), Two-Handed",
+              "Slow",
+              "7 lb."
+            ]
+          ]
+        }
       }
     ]
   },
@@ -7388,6 +7656,49 @@
     ]
   },
   {
+    "name": "Loyalty",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#loyalty_xdmg",
+    "ruleType": "Optional",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Loyalty is an optional rule you can use to determine how far an NPC party member will go to protect or assist the characters (even those the NPC doesn't particularly like). An NPC party member who is abused or ignored is likely to abandon or betray the party, whereas an NPC who owes a life debt to the characters or shares their goals might fight to the death for them. You can simply decide on an NPC's loyalty, or you can track a Loyalty Score using the following rules."
+      },
+      {
+        "name": "Loyalty Score",
+        "type": "text",
+        "value": "An NPC's loyalty is measured on a numerical scale from 0 to 20. The NPC's maximum Loyalty Score is equal to the highest Charisma score among all adventurers in the party, and its starting Loyalty Score is half that number. If the highest Charisma score changes—perhaps a character dies or leaves the group—adjust the NPC's Loyalty Score accordingly."
+      },
+      {
+        "name": "Tracking Loyalty",
+        "type": "text",
+        "value": "Keep track of an NPC's Loyalty Score in secret so that the players won't know for sure whether an NPC party member is loyal or disloyal."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "An NPC's Loyalty Score increases by 1d4 if other party members help the NPC achieve a personal goal. Likewise, an NPC's Loyalty Score increases by 1d4 if the NPC is treated particularly well (for example, given a magic weapon as a gift) or rescued by another party member. An NPC's Loyalty Score can never be raised above its maximum."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When other party members act in a manner that runs counter to the NPC's alignment or personality, reduce the NPC's Loyalty Score by 1d4. Reduce the NPC's Loyalty Score by 2d4 if the NPC is abused, misled, or endangered by other party members for purely selfish reasons. A Loyalty Score can never drop below 0."
+      },
+      {
+        "name": "Meaning of Loyalty",
+        "type": "text",
+        "value": "An NPC with a Loyalty Score of 10 or higher risks anything to help fellow party members. An NPC whose Loyalty Score is between 1 and 10 is tenuously faithful to the party. An NPC whose Loyalty Score drops to 0 no longer acts in the party's best interests. The disloyal NPC either leaves the party (attacking characters who attempt to intervene) or works in secret to bring about the party's downfall."
+      },
+      {
+        "name": "Crew Loyalty and Mutiny",
+        "type": "text",
+        "value": "If the characters own or operate a sailing ship or similar vessel, you can use these rules to track the loyalty of individual crew members or the ship's crew as a whole. If at least half the crew's Loyalty Scores drop to 0 during a voyage, the crew turns Hostile and stages a mutiny. If the ship is berthed, disloyal crew members leave the ship and never return."
+      }
+    ]
+  },
+  {
     "name": "Madness",
     "source": "DMG",
     "url": "https://5e.tools/variantrules.html#madness_dmg",
@@ -7703,6 +8014,39 @@
     ]
   },
   {
+    "name": "Milestones",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#milestones_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can also award XP when characters complete significant milestones. When preparing your adventure, designate certain events or challenges as milestones, as with the following examples:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• Accomplishing one in a series of goals necessary to complete the adventure.\n• Discovering a hidden location or piece of information relevant to the adventure.\n• Reaching an important destination."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When awarding XP, treat a major milestone as a high-difficulty encounter and a minor milestone as a low-difficulty encounter."
+      },
+      {
+        "name": "Other Milestone Rewards",
+        "type": "text",
+        "value": "If you want to reward your players for their progress through an adventure with something more than XP and treasure, also give them small rewards at milestone points, such as the following:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• The adventurers gain the benefit of a Short Rest.\n• Characters recover a Hit Point Die or a level 1 spell slot.\n• Characters regain the use of magic items that have had their limited uses expended."
+      }
+    ]
+  },
+  {
     "name": "Mixed Ancestry Statistics",
     "source": "TDCSR",
     "url": "https://5e.tools/variantrules.html#mixed%20ancestry%20statistics_tdcsr",
@@ -7777,6 +8121,69 @@
             [
               "00",
               "Only one potion works, but its effect is permanent. Choose the simplest effect to make permanent, or the one that seems the most fun. For example, a potion of healing might increase the drinker's hit point maximum by 4, or oil of etherealness might permanently trap the user in the Ethereal Plane. At your discretion, an appropriate spell, such as dispel magic or remove curse, might end this lasting effect."
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mixing Potions",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#mixing%20potions_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "A character might drink one potion while still under the effects of another or pour several potions into a single container. The strange ingredients used in creating potions can result in unpredictable interactions."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When a character mixes two potions together, roll on the Potion Miscibility table. If more than two are combined, roll again for each subsequent potion, combining the results. Unless the effects are immediately obvious, reveal them only when they become evident."
+      },
+      {
+        "name": "Potion Miscibility",
+        "type": "table",
+        "value": {
+          "title": "Potion Miscibility",
+          "headers": [
+            "1d100",
+            "Result"
+          ],
+          "rows": [
+            [
+              "01",
+              "Both potions lose their effects, and the mixture creates a magical explosion in a 5-foot-radius Sphere centered on itself. Each creature in that area takes 4d10 Force damage."
+            ],
+            [
+              "02–08",
+              "Both potions lose their effects, and the mixture becomes an ingested poison of your choice (see \"Poison\" in chapter 3)."
+            ],
+            [
+              "09–15",
+              "Both potions lose their effects."
+            ],
+            [
+              "16–25",
+              "One potion loses its effect."
+            ],
+            [
+              "26–35",
+              "Both potions work, but with their numerical effects and durations halved. If a potion has no numerical effect and no duration, it instead loses its effect."
+            ],
+            [
+              "36–90",
+              "Both potions work normally."
+            ],
+            [
+              "91–99",
+              "Both potions work, but the numerical effects and duration of one potion are doubled. If neither potion has anything to double in this way, they work normally."
+            ],
+            [
+              "00",
+              "Only one potion works, but its effects are permanent. Choose the simplest effect to make permanent or the one that seems the most fun. For example, a Potion of Healing might increase the drinker's Hit Point maximum by 2d4 + 2, or a Potion of Invisibility might give the drinker the Invisible condition indefinitely. At your discretion, a Dispel Magic spell or similar magic might end this lasting effect."
             ]
           ]
         }
@@ -9798,7 +10205,7 @@
             ],
             [
               "10",
-              "Treasure rolled on the Treasure Hoard: Challenge 0–4 table in chapter 7, \"Treasure,\" of the Dungeon Master's Guide"
+              "Treasure rolled on the Treasure Hoard: Challenge 0—4 table in chapter 7, \"Treasure,\" of the Dungeon Master's Guide"
             ]
           ]
         }
@@ -10266,7 +10673,7 @@
             ],
             [
               "10",
-              "Treasure rolled on the Treasure Hoard: Challenge 5–10 table in chapter 7, \"Treasure,\" of the Dungeon Master's Guide"
+              "Treasure rolled on the Treasure Hoard: Challenge 5—10 table in chapter 7, \"Treasure,\" of the Dungeon Master's Guide"
             ]
           ]
         }
@@ -12591,6 +12998,107 @@
         "name": "",
         "type": "text",
         "value": "A high level of piety can also lead to a character gaining a more persistent benefit, in the form of a blessing or charm (see chapter 7, \"Treasure,\" for such supernatural gifts)."
+      }
+    ]
+  },
+  {
+    "name": "Renown",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#renown_xdmg",
+    "ruleType": "Optional",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Renown is an optional rule you can use to track characters' standing, individually or as a party, within a particular group, such as a faction, an organization, or a community."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A character's or party's Renown Score starts at 0, then increases as characters earn favor and reputation with respect to the group. You can tie benefits to a character's renown, including ranks, titles, and access to resources."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Players track renown separately for each group their characters are associated with. For example, an adventurer might have a Renown Score of 5 with one faction and a Renown Score of 20 with another, based on the character's interaction with each group."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use renown over the course of an entire campaign or within a single adventure. At a campaign scale, you might set up factions or guilds that characters can join, individually or as a group, and the characters pursue ranks and rewards by gaining Renown within their organizations. At an adventure level, you might decide that the characters as a group need to earn a Renown Score of 5+ with the council before the council trusts the characters enough to share resources with them."
+      },
+      {
+        "name": "Gaining Renown",
+        "type": "text",
+        "value": "At your discretion, a character or party can increase their renown in the following ways:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Completing Missions**: Advancing a group's interests increases a character's Renown Score within that group by 1. Completing a mission specifically assigned by that group or that directly benefits the group increases the character's Renown Score by 2. Hugely significant quests might grant Renown Score increases of 3 or 4 at once.\n• **Group Involvement**: Once a character has established a Renown Score of 1+ with a group, the character can gain renown by spending time between adventures undertaking minor tasks for the group and socializing with its members. After doing so for a number of days equal to 10 times the character's current Renown Score, the character's Renown Score increases by 1."
+      },
+      {
+        "name": "Benefits of Renown",
+        "type": "text",
+        "value": "Use these guidelines when determining the benefits of increasing renown."
+      },
+      {
+        "name": "Recognition",
+        "type": "text",
+        "value": "A character who has a Renown Score of 3+ with a group is a respected member of that group. Other members of the group are Friendly toward the character by default and provide the character with lodging and food in dire circumstances."
+      },
+      {
+        "name": "Rank",
+        "type": "text",
+        "value": "Some groups have hierarchies that characters can ascend as they improve their Renown Scores. Other groups have positions of honor that characters can apply for if their Renown Score is high enough. Characters can earn promotions as their Renown Scores increase. You can establish certain Renown Score thresholds as prerequisites (though not necessarily the only prerequisites) for advancing in rank. You can set these thresholds however you like, creating ranks and titles for the groups in your campaign."
+      },
+      {
+        "name": "Perks",
+        "type": "text",
+        "value": "Earning renown within a group might come with certain benefits. A character with a Renown Score of 3+ might gain access to a reliable contact, a safe house, or a discount on adventuring gear. With a Renown Score of 10+, a character might gain access to Potions and Scrolls, the ability to call in a favor, or backup on dangerous missions. A character whose Renown Score rises to 50 might be able to call on a small army, acquire a Rare magic item, gain access to a helpful spellcaster, or assign special missions to members of lower status."
+      },
+      {
+        "name": "Losing Renown",
+        "type": "text",
+        "value": "Disagreements with members of a group aren't enough to cause a loss of renown within that group. However, serious offenses committed against the group or its members can result in a loss of renown and rank within the organization. The extent of the loss depends on the infraction and is left to your discretion. A character's Renown Score with a group can never drop below 0."
+      },
+      {
+        "name": "Level-Based Renown",
+        "type": "text",
+        "value": "If you want to use the benefits of renown without tracking Renown Scores, you can use a character's level as a shorthand for the character's Renown Score with a group, assuming the character has worked with or for that group for most of the character's career. The Level-Based Renown table shows equivalencies between Renown Score and character level."
+      },
+      {
+        "name": "Level-Based Renown",
+        "type": "table",
+        "value": {
+          "title": "Level-Based Renown",
+          "headers": [
+            "Renown Score",
+            "Character Level"
+          ],
+          "rows": [
+            [
+              "1",
+              "1"
+            ],
+            [
+              "3",
+              "3"
+            ],
+            [
+              "10",
+              "5"
+            ],
+            [
+              "25",
+              "11"
+            ],
+            [
+              "50",
+              "17"
+            ]
+          ]
+        }
       }
     ]
   },
@@ -16263,6 +16771,63 @@
             [
               "Carve an intricate pattern in wood",
               "15"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Training to Gain Levels",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#training%20to%20gain%20levels_xdmg",
+    "ruleType": "Variant",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "As a variant rule, you can require characters to spend time between adventures training or studying before they gain the benefits of a new level. This variant slows the passage of time in the game world, which can help support a more realistic or gritty tone in your campaign."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you choose this option, after earning enough Experience Points to attain a new level, a character must train for a number of days before gaining any class features associated with the new level. You can decide whether the character can train independently or requires a trainer."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The training time required depends on the level to be gained, as shown on the Training to Gain Levels table. The training cost is for the total training time."
+      },
+      {
+        "name": "Training to Gain Levels",
+        "type": "table",
+        "value": {
+          "title": "Training to Gain Levels",
+          "headers": [
+            "Level Attained",
+            "Training Time",
+            "Training Cost"
+          ],
+          "rows": [
+            [
+              "2–4",
+              "10 days",
+              "20 GP"
+            ],
+            [
+              "5–10",
+              "20 days",
+              "40 GP"
+            ],
+            [
+              "11–16",
+              "30 days",
+              "60 GP"
+            ],
+            [
+              "17–20",
+              "40 days",
+              "80 GP"
             ]
           ]
         }

@@ -167,6 +167,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             `$1`
         );
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@itemMastery ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
@@ -214,6 +215,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             `__$1__`
         );
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(/\{@itemMastery ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(
@@ -587,44 +589,65 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
     }
 }
 
-function parseTableValue(value: any): string {
-    if (typeof value == 'string') {
-        return cleanDNDText(value, true);
-    } else if (typeof value == 'object') {
-        if (value.type == 'cell') {
-            if (value.roll) {
-                if (value.roll.exact != undefined) {
-                    return value.roll.exact as string;
-                } else if (value.roll.min != undefined && value.roll.max != undefined) {
-                    return `${value.roll.min}-${value.roll.max}`;
-                }
-            }
-            throw `Unsupported table value cell-type ${value.type}`;
+function parseTableRow(values: any[] | any): string[] {
+    if (typeof values === 'object' && !Array.isArray(values)) {
+        if (values.type === 'row') {
+            values = values.row;
+        } else {
+            throw `Unsupported row type ${values.type}`;
         }
-
-        if (value.type == 'entries') {
-            if (value.name)
-                return `__${value.name}__`; // Also has value.entries, but that's too much information to display within a table.
-            else if (value.entries) {
-                const entryNames = value.entries.map((entry: any) => entry.name);
-                const text = entryNames.join('__ & __');
-                return `__${text}__`;
-            }
-
-            throw `Unsupported table value entries-type ${value}`;
-        }
-
-        throw `Unsupported table value-type: '${value.type}'`;
-    } else {
-        // Primitive value
-        return value as string;
     }
+    const cells: string[] = [];
+    for (const value of values) {
+        if (typeof value == 'string') {
+            cells.push(cleanDNDText(value, true));
+        } else if (typeof value == 'object') {
+            if (value.type == 'cell') {
+                // If cell contains a roll number
+                if (value.roll) {
+                    if (value.roll.exact != undefined) {
+                        cells.push(value.roll.exact as string);
+                    } else if (value.roll.min != undefined && value.roll.max != undefined) {
+                        cells.push(`${value.roll.min}-${value.roll.max}`);
+                    } else {
+                        throw `Unsupported table value cell roll ${value}`;
+                    }
+                }
+                // If cell contains a width, meaning a single value spans multiple roles
+                else if (value.width) {
+                    cells.push(cleanDNDText(value.entry, true));
+                    for (let i = 0; i < value.width - 1; i++) {
+                        cells.push('');
+                    }
+                } else {
+                    throw `Unsupported table value cell-type ${value.type}`;
+                }
+            } else if (value.type == 'entries') {
+                if (value.name)
+                    cells.push(`__${value.name}__`); // Also has value.entries, but that's too much information to display within a table.
+                else if (value.entries) {
+                    const entryNames = value.entries.map((entry: any) => entry.name);
+                    const text = entryNames.join('__ & __');
+                    cells.push(`__${text}__`);
+                } else {
+                    throw `Unsupported table value entries-type ${value}`;
+                }
+            } else {
+                throw `Unsupported table value-type: '${value.type}'`;
+            }
+        } else {
+            // Primitive value
+            cells.push(value as string);
+        }
+    }
+
+    return cells;
 }
 
 function parseDescriptionFromTable(description: any): Description {
     const title: string = description.caption || '';
     const headers: string[] = description.colLabels.map(cleanDNDText);
-    const rows: string[][] = description.rows.map((row: string[]) => row.map(parseTableValue));
+    const rows: string[][] = description.rows.map(parseTableRow);
     const table: Table = { title, headers, rows };
 
     return { name: title, type: DescriptionType.table, value: table };
