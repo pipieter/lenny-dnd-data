@@ -19,9 +19,10 @@ interface ParsedNames {
     name: string;
     source: string;
     tables: {
-        option: string;
-        names: string[];
-    }[];
+        'female': string[],
+        'male': string[],
+        'family': string[]
+    };
 }
 
 export function getNames(data: any): ParsedNames[] {
@@ -30,20 +31,41 @@ export function getNames(data: any): ParsedNames[] {
         const race: ParsedNames = {
             name: namesList.name,
             source: namesList.source,
-            tables: []
+            tables: {
+                female: [],
+                male: [],
+                family: []
+            }
         };
 
          for (let nameTable of namesList.tables) {
-            const tableData = {
-                option: nameTable.option,
-                names: [] as string[]
-            };
+            const option = nameTable.option.toLowerCase();
+            const table = nameTable.table.map((entry: { result: string }) => {
+                // Remove any text inside parentheses
+                return entry.result.replace(/\s*\(.*?\)\s*/g, '').trim();
+            });
 
-            for (let nameEntry of nameTable.table) {
-                tableData.names.push(nameEntry.result);
+            // FEMALE
+            if (option.includes('female')) {
+                race.tables.female.push(...table);
+            
+            // MALE
+            } else if (option.includes('male')) {
+                race.tables.male.push(...table);
+
+            // GENDERLESS
+            } else if (['child', 'general'].some(o => option.includes(o))) {
+                race.tables.female.push(...table);
+                race.tables.male.push(...table);
+
+            // FAMILY
+            } else if (['clan', 'family', 'virtue'].some(o => option.includes(o))) {
+                race.tables.family.push(...table);
+
+            // UNSUPPORTED
+            } else {
+                throw `Unsupported name option in ${race.name} race: '${option}'`
             }
-
-            race.tables.push(tableData);
         }
         
         result.push(race)
