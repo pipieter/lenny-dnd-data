@@ -139,6 +139,8 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
+        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
+        text = text.replaceAll(/\{@background ([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `$1`);
@@ -157,7 +159,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@table ([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@feat ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
@@ -200,6 +201,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(
             /\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2, p3) => `[${p3}](${getBackgroundsUrl(p1, p2)})`
+        );
+        text = text.replaceAll(
+            /\{@background ([^\}]*?)\}/g,
+            (_, p1) => `[${p1}](${getBackgroundsUrl(p1)})`
         );
         text = text.replaceAll(
             /\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,

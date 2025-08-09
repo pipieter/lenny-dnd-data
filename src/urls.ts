@@ -35,7 +35,7 @@ export function getActionsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/actions.html`, name, source);
 }
 
-export function getBackgroundsUrl(name: string, source: string) {
+export function getBackgroundsUrl(name: string, source: string = 'PHB') {
     return buildNameSourceUrl(`https://5e.tools/backgrounds.html`, name, source);
 }
 

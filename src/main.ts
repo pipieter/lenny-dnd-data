@@ -11,6 +11,7 @@ import { getActions } from './actions';
 import { getFeats } from './feats';
 import { getLanguages } from './languages';
 import { getNames } from './names';
+import { getBackgrounds } from './backgrounds';
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
@@ -40,6 +41,9 @@ function main(): void {
     const actions = getActions(data);
     stopwatch.log('Actions retrieved');
 
+    const backgrounds = getBackgrounds(data);
+    stopwatch.log('Backgrounds retrieved');
+
     const feats = getFeats(data);
     stopwatch.log('Feats retrieved');
 
@@ -61,6 +65,7 @@ function main(): void {
     writeFileSync('./generated/feats.json', JSON.stringify(feats, null, 2), 'utf-8');
     writeFileSync('./generated/languages.json', JSON.stringify(languages, null, 2), 'utf-8');
     writeFileSync('./generated/names.json', JSON.stringify(names, null, 2), 'utf-8');
+    writeFileSync('./generated/backgrounds.json', JSON.stringify(backgrounds, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
