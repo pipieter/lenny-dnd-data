@@ -1,5 +1,5 @@
-import { Description, parseAbilityScore, parseDescriptions } from "./parser";
-import { getBackgroundsUrl } from "./urls";
+import { Description, parseAbilityScore, parseDescriptions } from './parser';
+import { getBackgroundsUrl } from './urls';
 
 interface Background {
     name: string;
@@ -13,7 +13,7 @@ interface Background {
     entries: (string | any)[];
 }
 
-interface ParsedBackground{
+interface ParsedBackground {
     name: string;
     source: string;
     url: string;
@@ -60,7 +60,7 @@ export function getBackgrounds(data: any): ParsedBackground[] {
             source: child.source,
             url: getBackgroundsUrl(child.name, child.source),
             abilities: parent.abilities,
-            description: parent.description
+            description: parent.description,
         });
     }
 
