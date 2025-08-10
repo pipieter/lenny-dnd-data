@@ -52,7 +52,8 @@ function getTableRollExpression(table: TableData): string | null {
     let firstLabel = cleanDNDText(table.colLabels[0]); // First header always holds the dice expression, if there is one.
     if (firstLabel.startsWith('1')) firstLabel = firstLabel.slice(1);
     const match = /^d\d+(\s*\+\s*d\d+)*$/.test(firstLabel);
-    return match ? `1${firstLabel}` : null;
+    const diceNotation = firstLabel.replace(/\bd(\d+)/g, '1d$1'); // Replace dN with 1dN
+    return match ? diceNotation : null;
 }
 
 function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): string {
