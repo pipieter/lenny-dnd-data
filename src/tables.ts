@@ -67,9 +67,6 @@ function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): st
         uniqueLabels.push(label);
     }
 
-    console.log();
-    console.log(groupLabels, uniqueLabels);
-    console.log(uniqueLabels.join(' & '));
     return uniqueLabels.join(' & ');
 }
 
