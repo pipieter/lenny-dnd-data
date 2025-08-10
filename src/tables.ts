@@ -1,7 +1,8 @@
 import { writeFileSync } from 'fs';
 import { readJsonFile } from './data';
-import { cleanDNDText, Table } from './parser';
+import { cleanDNDText, Description, parseDescriptionFromTable, Table } from './parser';
 import { getTablesUrl } from './urls';
+import { table } from 'console';
 
 interface TableGendata {
     table: TableData[];
@@ -20,6 +21,7 @@ interface TableData {
     colLabels: string[];
     rows: any[];
     footnotes?: string[];
+    chapter?: any;
 }
 
 interface ParsedTable {
@@ -27,7 +29,7 @@ interface ParsedTable {
     source: string;
     url: string;
     roll: string | null;
-    table: Table; // TODO: Should be Description, for easy parsing.
+    table: Description;
     footnotes: string[] | null;
 }
 
@@ -51,36 +53,38 @@ function getGendataTables(): ParsedTable[] {
     const gendataPath = '5etools-src/data/generated/gendata-tables.json';
     const gendata: TableGendata = readJsonFile(gendataPath);
 
-    let tables: ParsedTable[] = gendata.table.map((table) => {
-        return {
-            name: table.name,
-            source: table.source,
-            url: getTablesUrl(table.name, table.source),
-            roll: getTableRollExpression(table),
-            table: {
-                title: table.caption,
-                headers: table.colLabels ?? null,
-                rows: table.rows,
-            },
-            footnotes: getFootnotes(table)
-        };
-    });
-
-    for (const tableGroup of gendata.tableGroup) {
-        let items = tableGroup.tables.map((item) => {
+    let tables: ParsedTable[] = gendata.table
+        .filter((table) => {
+            // Tables with chapters are used for decorational purposes within books, and can't be looked up.
+            // Example: https://5e.tools/book.html#ps-a,5,appendix%3A%20planeswalkers%20and%20the%20multiverse,0 (table with images and location descriptions)
+            if (!table.chapter) return table;
+        })
+        .map((table) => {
             return {
-                name: `${tableGroup.name} [${item.caption}]`,
-                source: tableGroup.source,
-                url: getTablesUrl(tableGroup.name, tableGroup.source),
-                roll: getTableRollExpression(item),
-                table: {
-                    title: item.caption,
-                    headers: item.colLabels ?? null,
-                    rows: item.rows,
-                },
-                footnotes: getFootnotes(item)
+                name: table.name,
+                source: table.source,
+                url: getTablesUrl(table.name, table.source),
+                roll: getTableRollExpression(table),
+                table: parseDescriptionFromTable(table),
+                footnotes: getFootnotes(table),
             };
         });
+
+    for (const tableGroup of gendata.tableGroup) {
+        let items = tableGroup.tables
+            .filter((table) => {
+                if (!table.chapter) return table; // See line 58
+            })
+            .map((table) => {
+                return {
+                    name: `${tableGroup.name} [${table.caption}]`,
+                    source: tableGroup.source,
+                    url: getTablesUrl(tableGroup.name, tableGroup.source),
+                    roll: getTableRollExpression(table),
+                    table: parseDescriptionFromTable(table),
+                    footnotes: getFootnotes(table),
+                };
+            });
         tables.push(...items);
     }
 
@@ -88,20 +92,20 @@ function getGendataTables(): ParsedTable[] {
 }
 
 export function getTables(data: any): ParsedTable[] {
-    let tables: ParsedTable[] = (data.table as TableData[]).map((table) => {
-        return {
-            name: table.name,
-            source: table.source,
-            url: getTablesUrl(table.name, table.source),
-            roll: getTableRollExpression(table),
-            table: {
-                title: table.caption,
-                headers: table.colLabels ?? null,
-                rows: table.rows,
-            },
-            footnotes: getFootnotes(table)
-        };
-    });
+    let tables: ParsedTable[] = (data.table as TableData[])
+        .filter((table) => {
+            if (!table.chapter) return table; // See line 58
+        })
+        .map((table) => {
+            return {
+                name: table.name,
+                source: table.source,
+                url: getTablesUrl(table.name, table.source),
+                roll: getTableRollExpression(table),
+                table: parseDescriptionFromTable(table),
+                footnotes: getFootnotes(table),
+            };
+        });
 
     tables.push(...getGendataTables());
     return tables;

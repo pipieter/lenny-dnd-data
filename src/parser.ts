@@ -24,7 +24,7 @@ export interface Description {
 
 export interface Table {
     title: string;
-    headers: string[];
+    headers: string[] | null;
     rows: string[][];
 }
 
@@ -88,6 +88,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@chance ([^\}]*?)\}/g, '$1 percent');
     text = text.replaceAll(/\{@classFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@comic ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@condition ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@condition ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@d20 -([^\}]*?)\}/g, '-$1');
@@ -97,6 +98,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@deck ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@dice #\$prompt([^\}]*?)\|([^\}]*?)\}/g, '$2'); // See rule Carrying Capacity
+    text = text.replaceAll(/\{@dice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($3)');
     text = text.replaceAll(/\{@dice ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@dice ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -106,6 +108,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@hazard ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@hazard ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@hit ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@item ([^\}]*?)\}/g, '$1');
@@ -143,12 +146,15 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@background ([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
+        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '$1');
+        text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '$2');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -159,6 +165,8 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@table ([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
+        text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@feat ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
@@ -178,12 +186,15 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `__$3__`);
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `__$3__`);
+        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '__$1__');
+        text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '__$1__');
         text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '**$2**');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
+        text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
@@ -637,8 +648,18 @@ function parseTableRow(values: any[] | any): string[] {
                 } else {
                     throw `Unsupported table value entries-type ${value}`;
                 }
+            } else if (value.type == 'table') {
+                // Tables within tables are written down as references
+                let text = '';
+                if (value.colLabels) {
+                    const diceroll = value.colLabels[0];
+                    text = `Roll 1${diceroll} on '${value.caption}' table`;
+                } else {
+                    text = `'${value.caption}' table`;
+                }
+                cells.push(text);
             } else {
-                throw `Unsupported table value-type: '${value.type}'`;
+                throw `Unsupported table value-type: '${value.type}' in ${JSON.stringify(value)}`;
             }
         } else {
             // Primitive value
@@ -649,9 +670,11 @@ function parseTableRow(values: any[] | any): string[] {
     return cells;
 }
 
-function parseDescriptionFromTable(description: any): Description {
+export function parseDescriptionFromTable(description: any): Description {
     const title: string = description.caption || '';
-    const headers: string[] = description.colLabels.map(cleanDNDText);
+    const headers: string[] | null = !description.colLabels
+        ? null
+        : description.colLabels.map(cleanDNDText);
     const rows: string[][] = description.rows.map(parseTableRow);
     const table: Table = { title, headers, rows };
 
