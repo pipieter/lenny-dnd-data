@@ -22,10 +22,16 @@ export interface Description {
     value: string | Table;
 }
 
+export interface Range {
+    type: 'range';
+    min: number;
+    max: number;
+}
+
 export interface Table {
     title: string;
     headers: string[] | null;
-    rows: string[][];
+    rows: (string | Range)[][];
 }
 
 const SpellSchools = new Map([

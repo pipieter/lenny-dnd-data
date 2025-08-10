@@ -1,5 +1,11 @@
 import { readJsonFile } from './data';
-import { cleanDNDText, Description, parseDescriptionFromTable, Table } from './parser';
+import {
+    cleanDNDText,
+    Description,
+    DescriptionType,
+    parseDescriptionFromTable,
+    Table,
+} from './parser';
 import { getTablesUrl } from './urls';
 
 interface TableGroup {
@@ -43,9 +49,10 @@ function getFootnotes(table: TableData): string[] | null {
 function getTableRollExpression(table: TableData): string | null {
     if (!table.colLabels) return null;
 
-    const firstHeader = table.colLabels[0]; // First header always holds the dice expression, if there is one.
-    const match = /^d\d+$/.test(firstHeader);
-    return match ? `1${firstHeader}` : null;
+    let firstLabel = cleanDNDText(table.colLabels[0]); // First header always holds the dice expression, if there is one.
+    if (firstLabel.startsWith('1')) firstLabel = firstLabel.slice(1);
+    const match = /^d\d+(\s*\+\s*d\d+)*$/.test(firstLabel);
+    return match ? `1${firstLabel}` : null;
 }
 
 function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): string {
@@ -128,5 +135,32 @@ export function getTables(data: any): ParsedTable[] {
         });
 
     tables.push(...getGendataTables());
+
+    // Change d100 roll values into ranges
+    for (const table of tables) {
+        if (!table.roll) continue;
+        if (table.table.type != DescriptionType.table) continue;
+        const tableValue = table.table.value as Table;
+        for (const row of tableValue.rows) {
+            if (typeof row[0] !== 'string') continue;
+            const ranges = row[0].split(/-|–/);
+
+            if (ranges[0] == '00') ranges[0] = '100';
+            let min = parseInt(ranges[0]);
+            let max = min;
+
+            if (ranges.length > 1) {
+                if (ranges[1] == '00') ranges[1] = '100';
+                max = parseInt(ranges[1]);
+            }
+
+            row[0] = {
+                type: 'range',
+                min,
+                max,
+            };
+        }
+    }
+
     return tables;
 }
