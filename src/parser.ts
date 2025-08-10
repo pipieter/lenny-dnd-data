@@ -649,7 +649,7 @@ function parseTableRow(values: any[] | any): string[] {
                     throw `Unsupported table value entries-type ${value}`;
                 }
             } else if (value.type == 'table') {
-                // Tables within tables are written down as references
+                // TODO: Handle tables within tables, these tables should be parsed and added to tables.json
                 let text = '';
                 if (value.colLabels) {
                     const diceroll = value.colLabels[0];
