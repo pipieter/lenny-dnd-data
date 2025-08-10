@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 import { readJsonFile } from './data';
-import { Table } from './parser';
+import { cleanDNDText, Table } from './parser';
 import { getTablesUrl } from './urls';
 
 interface TableGendata {
@@ -19,6 +19,7 @@ interface TableData {
     caption: string;
     colLabels: string[];
     rows: any[];
+    footnotes?: string[];
 }
 
 interface ParsedTable {
@@ -27,6 +28,14 @@ interface ParsedTable {
     url: string;
     roll: string | null;
     table: Table; // TODO: Should be Description, for easy parsing.
+    footnotes: string[] | null;
+}
+
+function getFootnotes(table: TableData): string[] | null {
+    if (!table.footnotes) return null;
+    return table.footnotes.map((note) => {
+        return cleanDNDText(note, false);
+    });
 }
 
 function getTableRollExpression(table: TableData): string | null {
@@ -42,7 +51,7 @@ function getGendataTables(): ParsedTable[] {
     const gendataPath = '5etools-src/data/generated/gendata-tables.json';
     const gendata: TableGendata = readJsonFile(gendataPath);
 
-    let tables = gendata.table.map((table) => {
+    let tables: ParsedTable[] = gendata.table.map((table) => {
         return {
             name: table.name,
             source: table.source,
@@ -53,6 +62,7 @@ function getGendataTables(): ParsedTable[] {
                 headers: table.colLabels ?? null,
                 rows: table.rows,
             },
+            footnotes: getFootnotes(table)
         };
     });
 
@@ -68,6 +78,7 @@ function getGendataTables(): ParsedTable[] {
                     headers: item.colLabels ?? null,
                     rows: item.rows,
                 },
+                footnotes: getFootnotes(item)
             };
         });
         tables.push(...items);
@@ -88,6 +99,7 @@ export function getTables(data: any): ParsedTable[] {
                 headers: table.colLabels ?? null,
                 rows: table.rows,
             },
+            footnotes: getFootnotes(table)
         };
     });
 
