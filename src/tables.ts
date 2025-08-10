@@ -1,17 +1,17 @@
-import { writeFileSync } from 'fs';
 import { readJsonFile } from './data';
 import { cleanDNDText, Description, parseDescriptionFromTable, Table } from './parser';
 import { getTablesUrl } from './urls';
-import { table } from 'console';
+
+interface TableGroup {
+    name: string;
+    type: string;
+    tables: TableData[];
+    source: string;
+}
 
 interface TableGendata {
     table: TableData[];
-    tableGroup: {
-        name: string;
-        type: string;
-        tables: TableData[];
-        source: string;
-    }[];
+    tableGroup: TableGroup[];
 }
 
 interface TableData {
@@ -21,7 +21,7 @@ interface TableData {
     colLabels: string[];
     rows: any[];
     footnotes?: string[];
-    chapter?: any;
+    chapter?: any; // Tables with chapters are used for decorational purposes within books, and can't be looked up.
 }
 
 interface ParsedTable {
@@ -48,6 +48,31 @@ function getTableRollExpression(table: TableData): string | null {
     return match ? `1${firstHeader}` : null;
 }
 
+function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): string {
+    if (table.caption) return table.caption;
+
+    // Some tablegroup tables do not have captions, in this case we grab the unique labels as a caption.
+    let groupLabels = [];
+    for (const groupTable of tableGroup.tables) {
+        if (groupTable == table) continue;
+        for (const label of groupTable.colLabels) {
+            if (!/^d\d+$/.test(label)) groupLabels.push(label);
+        }
+    }
+
+    let uniqueLabels = [];
+    for (const label of table.colLabels) {
+        if (/^d\d+$/.test(label)) continue;
+        if (groupLabels.includes(label)) continue;
+        uniqueLabels.push(label);
+    }
+
+    console.log();
+    console.log(groupLabels, uniqueLabels);
+    console.log(uniqueLabels.join(' & '));
+    return uniqueLabels.join(' & ');
+}
+
 function getGendataTables(): ParsedTable[] {
     // Some tables are stored in an auto-generated file.
     const gendataPath = '5etools-src/data/generated/gendata-tables.json';
@@ -55,8 +80,6 @@ function getGendataTables(): ParsedTable[] {
 
     let tables: ParsedTable[] = gendata.table
         .filter((table) => {
-            // Tables with chapters are used for decorational purposes within books, and can't be looked up.
-            // Example: https://5e.tools/book.html#ps-a,5,appendix%3A%20planeswalkers%20and%20the%20multiverse,0 (table with images and location descriptions)
             if (!table.chapter) return table;
         })
         .map((table) => {
@@ -73,11 +96,11 @@ function getGendataTables(): ParsedTable[] {
     for (const tableGroup of gendata.tableGroup) {
         let items = tableGroup.tables
             .filter((table) => {
-                if (!table.chapter) return table; // See line 58
+                if (!table.chapter) return table;
             })
             .map((table) => {
                 return {
-                    name: `${tableGroup.name} [${table.caption}]`,
+                    name: `${tableGroup.name} [${getTableGroupTableCaption(table, tableGroup)}]`,
                     source: tableGroup.source,
                     url: getTablesUrl(tableGroup.name, tableGroup.source),
                     roll: getTableRollExpression(table),
@@ -94,7 +117,7 @@ function getGendataTables(): ParsedTable[] {
 export function getTables(data: any): ParsedTable[] {
     let tables: ParsedTable[] = (data.table as TableData[])
         .filter((table) => {
-            if (!table.chapter) return table; // See line 58
+            if (!table.chapter) return table;
         })
         .map((table) => {
             return {
