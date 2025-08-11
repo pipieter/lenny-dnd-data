@@ -474,7 +474,8 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
 
             const { strings, tables } = splitDescriptionTypes(entries);
             const entry = strings.join('\n');
-            return [cleanDNDText(`**${description.name}**: ${entry}`), ...tables];
+            const name = description.name.replace(/:$/, '');
+            return [cleanDNDText(`**${name}**: ${entry}`), ...tables];
         }
         case 'inline': {
             const entries = description.entries.flatMap(parseDescriptionBlock);
@@ -487,8 +488,10 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             const entries = description.entries.flatMap(parseDescriptionBlock);
             const { strings, tables } = splitDescriptionTypes(entries);
             let entry = strings.join('\n');
-            if (description.name)
-                return [cleanDNDText(`**${description.name}**: ${entry}`), ...tables];
+            if (description.name) {
+                const name = description.name.replace(/:$/, '');
+                return [cleanDNDText(`**${name}**: ${entry}`), ...tables];
+            }
             return [cleanDNDText(entry), ...tables];
         }
         case 'entry': {
@@ -506,7 +509,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             const titleDesc = description.type === 'abilityDc' ? 'Save DC' : 'Attack modifier';
 
             const abilityScores = description.attributes.map(parseAbilityScore);
-            const text = `${BulletPoint} *${description.name} ${titleDesc}:* ${joinStringsWithOr(abilityScores)} modifier + Proficiency Bonus`;
+            const text = `${BulletPoint} *${description.name} ${titleDesc}*: ${joinStringsWithOr(abilityScores)} modifier + Proficiency Bonus`;
             return [text];
         }
         case 'refClassFeature': {
@@ -540,7 +543,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
                 entries.push(...description.entries.map(parseDescriptionBlock));
             }
 
-            const title = count ? `Choose **${count}:**\n` : '';
+            const title = count ? `Choose **${count}**:\n` : '';
             return [`${title}${BulletPoint} ${entries.join(`\n${BulletPoint} `)}`];
         }
         case 'statblock': {
