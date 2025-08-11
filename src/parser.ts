@@ -678,9 +678,9 @@ function parseTableRow(values: any[] | any): string[] {
 
 export function parseDescriptionFromTable(description: any): Description {
     const title: string = description.caption || '';
-    const headers: string[] | null = !description.colLabels
-        ? null
-        : description.colLabels.map(cleanDNDText);
+    const headers: string[] | null = description.colLabels
+        ? description.colLabels.map(cleanDNDText)
+        : null;
     const rows: string[][] = description.rows.map(parseTableRow);
     const table: Table = { title, headers, rows };
 
