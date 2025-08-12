@@ -1,15 +1,16 @@
-import { readFileSync } from 'fs';
+import { accessSync, readFileSync } from 'fs';
 import {
     Description,
     parseCastingTime,
     parseComponents,
     parseDescriptions,
     parseDurationTime,
+    parseImageUrl,
     parseRange,
     parseSpellLevel,
     parseSpellSchool,
 } from './parser';
-import { getSpellsUrl } from './urls';
+import { getImageUrl, getSpellsUrl } from './urls';
 
 interface Caster {
     name: string;
@@ -26,6 +27,7 @@ interface Spell {
     components: string;
     duration: string;
     url: string;
+    image: string | null;
     description: Description[];
     classes: Caster[];
 }
@@ -41,8 +43,24 @@ function spellCmp(a: Caster | Spell, b: Caster | Spell): number {
     return a.name.localeCompare(b.name);
 }
 
-function loadSpellsFromFile(path: string): Spell[] {
+function getSpellImage(fluffs: any[], name: string, source: string): string | null {
+    for (const fluff of fluffs) {
+        if (fluff.name === name && fluff.source === source && fluff.images) {
+            return parseImageUrl(fluff.images);
+        }
+    }
+    return null;
+}
+
+function loadSpellsFromFile(path: string, fluffPath: string): Spell[] {
     const data = JSON.parse(readFileSync(path).toString());
+
+    let fluffs: any[] = [];
+    try {
+        fluffs = JSON.parse(readFileSync(fluffPath).toString())?.spellFluff || [];
+    } catch {
+        // Fluffs could not be loaded, most likely the file does not exist.
+    }
 
     const results: Spell[] = [];
 
@@ -58,6 +76,7 @@ function loadSpellsFromFile(path: string): Spell[] {
             components: parseComponents(spell.components),
             duration: parseDurationTime(spell.duration),
             url: url,
+            image: getSpellImage(fluffs, spell.name, spell.source),
             description: parseDescriptions('', spell.entries),
             classes: [],
         };
@@ -80,7 +99,7 @@ function loadSpells(path: string): Spell[] {
     const sources = JSON.parse(readFileSync(index).toString());
 
     for (const [_, file] of Object.entries(sources)) {
-        const spells = loadSpellsFromFile(`${path}/${file}`);
+        const spells = loadSpellsFromFile(`${path}/${file}`, `${path}/fluff-${file}`);
         results.push(...spells);
     }
 
