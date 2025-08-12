@@ -1,4 +1,10 @@
-import { cleanDNDText, parseDescriptions, parseItemValue, parseItemWeight } from './parser';
+import {
+    cleanDNDText,
+    parseDescriptions,
+    parseImageUrl,
+    parseItemValue,
+    parseItemWeight,
+} from './parser';
 import { getItemsUrl } from './urls';
 import { joinStringsWithOr } from './util';
 
@@ -71,6 +77,19 @@ function applyItemTemplate(item: any, entry: any, template: string): string {
     return template;
 }
 
+function getItemImage(data: any, name: string, source: string): string | null {
+    for (const item of data.itemFluff || []) {
+        if (item.name === name && item.source === source) {
+            if (item.images) {
+                return parseImageUrl(item.images);
+            } else if (item._copy) {
+                return getItemImage(data, item._copy.name, item._copy.source);
+            }
+        }
+    }
+    return null;
+}
+
 export function getItems(data: any): any[] {
     // TODO _copy items, item groups, item entries
 
@@ -95,6 +114,7 @@ export function getItems(data: any): any[] {
         result.name = cleanDNDText(item.name);
         result.source = item.source;
         result.url = url;
+        result.image = getItemImage(data, item.name, item.source);
         result.value = parseItemValue(item.value);
         if (item.weightNote) {
             result.weight = `${parseItemWeight(item.weight)} (${item.weightNote})`;

@@ -26,6 +26,7 @@ interface Spell {
     components: string;
     duration: string;
     url: string;
+    image: string | null;
     description: Description[];
     classes: Caster[];
 }
