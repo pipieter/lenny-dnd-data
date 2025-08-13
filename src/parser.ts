@@ -667,6 +667,8 @@ function parseTableRow(values: any[] | any): string[] {
                     text = `'${value.caption}' table`;
                 }
                 cells.push(text);
+            } else if (value.type == 'image') {
+                cells.push(`[image](${getImageUrl(value.href.path)})`);
             } else {
                 throw `Unsupported table value-type: '${value.type}' in ${JSON.stringify(value)}`;
             }
