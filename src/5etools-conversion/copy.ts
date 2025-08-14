@@ -7,6 +7,7 @@ function variadic(value: any): any[] {
 
 function addMod_replaceArr(copy: any, key: string, entry: any): void {
     const items = variadic(entry.items);
+    copy[key] = copy[key] || [];
     for (let i = 0; i < copy[key].length; i++) {
         if (copy[key][i].name === entry.replace) {
             copy[key].splice(i, 1, ...items);
@@ -17,6 +18,7 @@ function addMod_replaceArr(copy: any, key: string, entry: any): void {
 }
 
 function addMod_removeArr(copy: any, key: string, entry: any): void {
+    copy[key] = copy[key] || [];
     for (let i = 0; i < copy[key].length; i++) {
         if (copy[key][i].name === entry.names) {
             copy[key].splice(i, 1);
@@ -27,7 +29,13 @@ function addMod_removeArr(copy: any, key: string, entry: any): void {
 }
 
 function addMod_appendArr(copy: any, key: string, entry: any): void {
+    copy[key] = copy[key] || [];
     copy[key].push(...variadic(entry.items));
+}
+
+function addMod_prependArr(copy: any, key: string, entry: any): void {
+    copy[key] = copy[key] || [];
+    copy[key].splice(0, 0, ...variadic(entry.items));
 }
 
 function addMod(copy: any, mod: any): void {
@@ -38,6 +46,8 @@ function addMod(copy: any, mod: any): void {
                 addMod_replaceArr(copy, key, entry);
             } else if (entry.mode === 'appendArr') {
                 addMod_appendArr(copy, key, entry);
+            } else if (entry.mode === 'prependArr') {
+                addMod_prependArr(copy, key, entry);
             } else if (entry.mode === 'removeArr') {
                 addMod_removeArr(copy, key, entry);
             } else {
@@ -80,7 +90,7 @@ export function handleCopy(base: any, entries: any[]): any {
     return copy;
 }
 
-export function handleVersions(base: any, entries: any): any[] {
+export function handleVersions(base: any): any[] {
     base = structuredClone(base);
     if (!base._versions) return [];
 
@@ -90,14 +100,12 @@ export function handleVersions(base: any, entries: any): any[] {
             let version = structuredClone(base);
             let abstract = structuredClone(baseVersion._abstract) || {};
 
-
             for (const variable of Object.keys(implementation._variables)) {
                 version = applyTemplate(version, variable, implementation._variables[variable]);
                 abstract = applyTemplate(abstract, variable, implementation._variables[variable]);
             }
 
-            delete version._versions
-            console.log(abstract)
+            delete version._versions;
             version.name = abstract.name || version.name;
             version.source = abstract.source || version.source;
 

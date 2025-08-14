@@ -1,21 +1,10 @@
 // Note: in the files this is still referred to as 'race'
 
-import { capitalize, Description, parseImageUrl } from './parser';
+import { capitalize, Description, parseDescriptions, parseImageUrl } from './parser';
 import { getSpeciesUrl } from './urls';
 import { joinStringsWithOr } from './util';
-
-const Sizes = new Map<string, string>([
-    ['F', 'Fine'],
-    ['D', 'Diminutive'],
-    ['T', 'Tiny'],
-    ['S', 'Small'],
-    ['M', 'Medium'],
-    ['L', 'Large'],
-    ['H', 'Huge'],
-    ['G', 'Gargantuan'],
-    ['C', 'Colossal'],
-    ['V', 'Varies'],
-]); // parser.js:2947
+import { handleCopy, handleVersions } from './5etools-conversion/copy';
+import { CreatureSizes } from './5etools-conversion/data';
 
 const SpecialSpeedTypes = [/*'walk,'*/ 'burrow', 'climb', 'fly', 'swim']; // parser.js:333
 
@@ -27,13 +16,9 @@ interface Species {
     sizes: string[];
     speed: string;
     creatureType: string;
-    abilityScores: string[] | null;
-    languages: string[];
-    pronunciation: string | null;
     entries: Description[];
     info: Description[];
 }
-
 
 function speciesSort(a: Species, b: Species): number {
     if (a.name === b.name) {
@@ -42,17 +27,43 @@ function speciesSort(a: Species, b: Species): number {
     return a.name.localeCompare(b.name);
 }
 
-function getSpeciesImage(data: any, name: string, source: string): string | null {
+function getSpeciesFluff(data: any, name: string, source: string): any | null {
+    let found: any | null = null;
     for (const fluff of data.raceFluff) {
-        if (fluff.name === name && fluff.source === source && fluff.images) {
-            return parseImageUrl(fluff.images);
+        if (fluff.name === name && fluff.source === source) {
+            found = fluff;
+            break;
         }
+    }
+
+    if (!found) return null;
+    return handleCopy(found, data.raceFluff);
+}
+
+function getSpeciesImage(data: any, name: string, source: string): string | null {
+    const fluff = getSpeciesFluff(data, name, source);
+    if (fluff?.images) {
+        return parseImageUrl(fluff.images);
     }
     return null;
 }
 
+function getSpeciesInfo(data: any, name: string, source: string): Description[] {
+    const fluff = getSpeciesFluff(data, name, source);
+    if (fluff?.entries) {
+        return parseDescriptions('', fluff.entries);
+    }
+    return [];
+}
+
 function getSpeciesSizes(sizes: string[]) {
-    return sizes.map(Sizes.get).filter((s) => s !== undefined);
+    const results: string[] = [];
+    for (const size of sizes) {
+        if (CreatureSizes.has(size)) {
+            results.push(CreatureSizes.get(size)!);
+        }
+    }
+    return results;
 }
 
 function getSpeciesSpeed(speed: any): string {
@@ -85,9 +96,24 @@ function getSpeciesCreatureType(creatureTypes: string[]): string {
 }
 
 export function getSpecies(data: any): Species[] {
+    // Get raw entries, handling _copy and _versions
+    const raw: any[] = [];
+    for (const entry of data.race) {
+        const copy = handleCopy(entry, data.race);
+        const versions = [];
+
+        if (copy._versions) {
+            versions.push(...handleVersions(copy));
+            delete copy._versions;
+        }
+
+        raw.push(entry, ...versions);
+    }
+
+    // Parse raw entries, at this point every raw entry *should* have all the required data
     const species: Species[] = [];
 
-    for (const entry of data.race) {
+    for (const entry of raw) {
         let name = entry.name;
         if (entry.raceName) {
             name = `${entry.raceName} (${entry.name})`;
@@ -95,16 +121,24 @@ export function getSpecies(data: any): Species[] {
         const source = entry.source;
         const url = getSpeciesUrl(name, source);
         const image = getSpeciesImage(data, name, source);
-        const sizes = getSpeciesSizes(entry.size);
+        const sizes = getSpeciesSizes(entry.size || []);
         const speed = getSpeciesSpeed(entry.speed);
-        const creatureType = getSpeciesCreatureType(entry.creatureTypes);
-        // TODO abilityScores: string[] | null;
-        // TODO languages: string[];
-        // TODO pronunciation: string | null;
-        // TODO entries: Description[];
-        // TODO info: Description[];
-        // TODO _copy
+        const creatureType = getSpeciesCreatureType(entry.creatureTypes || []);
+        const entries = parseDescriptions('', entry.entries || []);
+        const info = getSpeciesInfo(data, name, source);
+
+        species.push({
+            name,
+            source,
+            url,
+            image,
+            sizes,
+            speed,
+            creatureType,
+            entries,
+            info,
+        });
     }
 
-    return [];
+    return species;
 }
