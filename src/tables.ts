@@ -27,7 +27,7 @@ interface TableData {
     colLabels: string[];
     rows: any[];
     footnotes?: string[];
-    chapter?: any; // Tables with chapters are used for decorational purposes within books, and can't be looked up.
+    chapter?: any;
 }
 
 interface ParsedTable {
@@ -83,36 +83,28 @@ function getGendataTables(): ParsedTable[] {
     const gendataPath = '5etools-src/data/generated/gendata-tables.json';
     const gendata: TableGendata = readJsonFile(gendataPath);
 
-    let tables: ParsedTable[] = gendata.table
-        .filter((table) => {
-            if (!table.chapter) return table;
-        })
-        .map((table) => {
+    let tables: ParsedTable[] = gendata.table.map((table) => {
+        return {
+            name: table.name,
+            source: table.source,
+            url: getTablesUrl(table.name, table.source),
+            roll: getTableRollExpression(table),
+            table: parseDescriptionFromTable(table),
+            footnotes: getFootnotes(table),
+        };
+    });
+
+    for (const tableGroup of gendata.tableGroup) {
+        let items = tableGroup.tables.map((table) => {
             return {
-                name: table.name,
-                source: table.source,
-                url: getTablesUrl(table.name, table.source),
+                name: `${tableGroup.name} [${getTableGroupTableCaption(table, tableGroup)}]`,
+                source: tableGroup.source,
+                url: getTablesUrl(tableGroup.name, tableGroup.source),
                 roll: getTableRollExpression(table),
                 table: parseDescriptionFromTable(table),
                 footnotes: getFootnotes(table),
             };
         });
-
-    for (const tableGroup of gendata.tableGroup) {
-        let items = tableGroup.tables
-            .filter((table) => {
-                if (!table.chapter) return table;
-            })
-            .map((table) => {
-                return {
-                    name: `${tableGroup.name} [${getTableGroupTableCaption(table, tableGroup)}]`,
-                    source: tableGroup.source,
-                    url: getTablesUrl(tableGroup.name, tableGroup.source),
-                    roll: getTableRollExpression(table),
-                    table: parseDescriptionFromTable(table),
-                    footnotes: getFootnotes(table),
-                };
-            });
         tables.push(...items);
     }
 
@@ -120,20 +112,16 @@ function getGendataTables(): ParsedTable[] {
 }
 
 export function getTables(data: any): ParsedTable[] {
-    let tables: ParsedTable[] = (data.table as TableData[])
-        .filter((table) => {
-            if (!table.chapter) return table;
-        })
-        .map((table) => {
-            return {
-                name: table.name,
-                source: table.source,
-                url: getTablesUrl(table.name, table.source),
-                roll: getTableRollExpression(table),
-                table: parseDescriptionFromTable(table),
-                footnotes: getFootnotes(table),
-            };
-        });
+    let tables: ParsedTable[] = (data.table as TableData[]).map((table) => {
+        return {
+            name: table.name,
+            source: table.source,
+            url: getTablesUrl(table.name, table.source),
+            roll: getTableRollExpression(table),
+            table: parseDescriptionFromTable(table),
+            footnotes: getFootnotes(table),
+        };
+    });
 
     tables.push(...getGendataTables());
 
