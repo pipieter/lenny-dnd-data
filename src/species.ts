@@ -107,7 +107,7 @@ export function getSpecies(data: any): Species[] {
             delete copy._versions;
         }
 
-        raw.push(entry, ...versions);
+        raw.push(copy, ...versions);
     }
 
     // Parse raw entries, at this point every raw entry *should* have all the required data
