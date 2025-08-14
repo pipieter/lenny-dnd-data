@@ -14,17 +14,10 @@ interface Species {
     url: string;
     image: string | null;
     sizes: string[];
-    speed: string;
-    creatureType: string;
+    speed: string[];
+    creatureType: string | null;
     entries: Description[];
     info: Description[];
-}
-
-function speciesSort(a: Species, b: Species): number {
-    if (a.name === b.name) {
-        return a.source.localeCompare(b.source);
-    }
-    return a.name.localeCompare(b.name);
 }
 
 function getSpeciesFluff(data: any, name: string, source: string): any | null {
@@ -66,13 +59,13 @@ function getSpeciesSizes(sizes: string[]) {
     return results;
 }
 
-function getSpeciesSpeed(speed: any): string {
+function getSpeciesSpeed(speed: any): string[] {
     if (!speed) {
-        return '-';
+        return [];
     }
 
     if (typeof speed === 'number') {
-        return `${speed} feet`;
+        return [`${speed} feet`];
     }
 
     const speeds = [];
@@ -88,11 +81,11 @@ function getSpeciesSpeed(speed: any): string {
         }
     }
 
-    return speeds.join(', ');
+    return speeds;
 }
 
-function getSpeciesCreatureType(creatureTypes: string[]): string {
-    return joinStringsWithOr(creatureTypes, true) || '-';
+function getSpeciesCreatureType(creatureTypes: string[]): string | null {
+    return joinStringsWithOr(creatureTypes, true) || null;
 }
 
 export function getSpecies(data: any): Species[] {
