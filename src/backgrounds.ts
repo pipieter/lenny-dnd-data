@@ -1,3 +1,4 @@
+import { handleCopy } from './5etools-conversion/copy';
 import { Description, parseAbilityScore, parseDescriptions } from './parser';
 import { getBackgroundsUrl } from './urls';
 
@@ -28,41 +29,23 @@ function parseBackgroundAbilities(background: any): string[] | null {
 }
 
 export function getBackgrounds(data: any): ParsedBackground[] {
-    let needInheritance: Background[] = [];
-    let backgrounds: ParsedBackground[] = [];
+    const raw: any[] = [];
 
-    (data.background as Background[]).map((background: Background) => {
-        if (background._copy) {
-            needInheritance.push(background);
-            return;
+    for (const entry of data.background) {
+        if (entry._copy) {
+            raw.push(handleCopy(entry, data.background));
+        } else {
+            raw.push(entry);
         }
-
-        backgrounds.push({
-            name: background.name,
-            source: background.source,
-            url: getBackgroundsUrl(background.name, background.source),
-            abilities: parseBackgroundAbilities(background),
-            description: parseDescriptions('', background.entries),
-        });
-    });
-
-    // Handle _copy
-    for (const child of needInheritance) {
-        const parentName = child._copy.name;
-        const parent = backgrounds.filter(
-            (background) => background.name.toLowerCase() === parentName.toLowerCase()
-        )[0];
-
-        if (!parent) continue;
-        // TODO Handle copy modifiers
-        backgrounds.push({
-            name: child.name,
-            source: child.source,
-            url: getBackgroundsUrl(child.name, child.source),
-            abilities: parent.abilities,
-            description: parent.description,
-        });
     }
+
+    const backgrounds: ParsedBackground[] = raw.map((background: Background) => ({
+        name: background.name,
+        source: background.source,
+        url: getBackgroundsUrl(background.name, background.source),
+        abilities: parseBackgroundAbilities(background),
+        description: parseDescriptions('', background.entries),
+    }));
 
     return backgrounds;
 }
