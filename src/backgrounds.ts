@@ -39,13 +39,11 @@ export function getBackgrounds(data: any): ParsedBackground[] {
         }
     }
 
-    const backgrounds: ParsedBackground[] = raw.map((background: Background) => ({
+    return raw.map((background: Background) => ({
         name: background.name,
         source: background.source,
         url: getBackgroundsUrl(background.name, background.source),
         abilities: parseBackgroundAbilities(background),
         description: parseDescriptions('', background.entries),
     }));
-
-    return backgrounds;
 }
