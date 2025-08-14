@@ -8,15 +8,15 @@ function variadic(value: any): any[] {
     return [value];
 }
 
-function addMod_replaceArr(copy: any, key: string, entry: any): void {
-    copy[key] = structuredClone(copy[key]) || [];
+function addMod_replaceArr(base: any, key: string, entry: any): void {
+    base[key] = structuredClone(base[key]) || [];
 
     const items = variadic(entry.items);
-    for (let i = 0; i < copy[key].length; i++) {
+    for (let i = 0; i < base[key].length; i++) {
         // If replace is given by name
         if (typeof entry.replace === 'string') {
-            if (copy[key][i].name === entry.replace) {
-                copy[key].splice(i, 1, ...items);
+            if (base[key][i].name === entry.replace) {
+                base[key].splice(i, 1, ...items);
                 return;
             }
         }
@@ -24,7 +24,7 @@ function addMod_replaceArr(copy: any, key: string, entry: any): void {
         else if (typeof entry.replace === 'object') {
             // if replace index in object form {index: _}
             if (entry.replace.index !== undefined) {
-                copy[key].splice(entry.replace.index, 1, ...items);
+                base[key].splice(entry.replace.index, 1, ...items);
                 return;
             } else {
                 throw `addMod_replaceArr: Invalid replace type '${JSON.stringify(entry.replace)}'`;
@@ -32,51 +32,74 @@ function addMod_replaceArr(copy: any, key: string, entry: any): void {
         }
     }
 
-    throw `addMod_replaceArr: Could not find '${entry.replace}' in ${copy.name}[${key}]`;
+    throw `addMod_replaceArr: Could not find '${entry.replace}' in ${base.name}[${key}]`;
 }
 
-function addMod_removeArr(copy: any, key: string, entry: any): void {
-    copy[key] = structuredClone(copy[key]) || [];
+function addMod_removeArr(base: any, key: string, entry: any): void {
+    base[key] = structuredClone(base[key]) || [];
 
-    for (let i = 0; i < copy[key].length; i++) {
-        if (copy[key][i].name === entry.names) {
-            copy[key].splice(i, 1);
+    for (let i = 0; i < base[key].length; i++) {
+        if (base[key][i].name === entry.names) {
+            base[key].splice(i, 1);
             return;
         }
     }
 
-    throw `addMod_removeArr: Could not find '${entry.replace}' in ${copy.name}[${key}]`;
+    throw `addMod_removeArr: Could not find '${entry.replace}' in ${base.name}[${key}]`;
 }
 
-function addMod_appendArr(copy: any, key: string, entry: any): void {
-    copy[key] = structuredClone(copy[key]) || [];
-    copy[key].push(...variadic(entry.items));
+function addMod_appendArr(base: any, key: string, entry: any): void {
+    base[key] = structuredClone(base[key]) || [];
+    base[key].push(...variadic(entry.items));
 }
 
-function addMod_prependArr(copy: any, key: string, entry: any): void {
-    copy[key] = structuredClone(copy[key]) || [];
-    copy[key].splice(0, 0, ...variadic(entry.items));
+function addMod_prependArr(base: any, key: string, entry: any): void {
+    base[key] = structuredClone(base[key]) || [];
+    base[key].splice(0, 0, ...variadic(entry.items));
 }
 
-function addMod_insertArr(copy: any, key: string, entry: any): void {
-    copy[key] = structuredClone(copy[key]) || [];
-    copy[key].splice(entry.index, 0, ...variadic(entry.items));
+function addMod_insertArr(base: any, key: string, entry: any): void {
+    base[key] = structuredClone(base[key]) || [];
+    base[key].splice(entry.index, 0, ...variadic(entry.items));
 }
 
-function addMod(copy: any, mod: any): void {
+function addMod_replaceTxt(base: any, key: string, entry: any): void {
+    base[key] = structuredClone(base[key]) || [];
+
+    const replace = entry.replace.slice(1);
+    const to = entry.with;
+
+    if (typeof base[key] === 'string') {
+        base[key] = base[key].replaceAll(replace, to);
+        return;
+    }
+
+    if (typeof base[key] === 'object') {
+        for (const subkey of Object.keys(base[key])) {
+            addMod_replaceTxt(base[key], subkey, entry);
+        }
+        return;
+    }
+
+    throw `addMod_replaceTxt: Unsupported replace type '${typeof base[key]}'`;
+}
+
+function addMod(base: any, mod: any): void {
     for (const key of Object.keys(mod)) {
         const entries = variadic(mod[key]);
         for (const entry of entries) {
             if (entry.mode === 'replaceArr') {
-                addMod_replaceArr(copy, key, entry);
+                addMod_replaceArr(base, key, entry);
             } else if (entry.mode === 'appendArr') {
-                addMod_appendArr(copy, key, entry);
+                addMod_appendArr(base, key, entry);
             } else if (entry.mode === 'prependArr') {
-                addMod_prependArr(copy, key, entry);
+                addMod_prependArr(base, key, entry);
             } else if (entry.mode === 'removeArr') {
-                addMod_removeArr(copy, key, entry);
+                addMod_removeArr(base, key, entry);
             } else if (entry.mode === 'insertArr') {
-                addMod_insertArr(copy, key, entry);
+                addMod_insertArr(base, key, entry);
+            } else if (entry.mode === 'replaceTxt') {
+                addMod_replaceTxt(base, key, entry);
             } else {
                 throw `addMod: unknown entry mode '${entry.mode}'`;
             }

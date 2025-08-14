@@ -1,3 +1,4 @@
+import { handleCopy } from './5etools-conversion/copy';
 import {
     cleanDNDText,
     parseDescriptions,
@@ -8,6 +9,7 @@ import {
 import { getItemsUrl } from './urls';
 import { joinStringsWithOr } from './util';
 
+// TODO move this to 5etools-conversion/data.ts
 const DamageTypes = new Map([
     ['A', 'Acid'],
     ['B', 'Bludgeoning'],
@@ -90,25 +92,109 @@ function getItemImage(data: any, name: string, source: string): string | null {
     return null;
 }
 
+function findItemEntry(entries: any[], name: string, source: string): any {
+    for (const entry of entries) {
+        if (entry.name === name && entry.source === source) {
+            return entry;
+        }
+    }
+    throw `Item entry not found ${name} (${source})`;
+}
+
+// TODO look at render.js:4778 applyTemplate
+// TODO make this more generic, by allowing a prefix such as 'item.'
+// TODO move this 5etools-conversion/copy.ts
+function resolveItemEntryTemplating(item: any, obj: any): any {
+    obj = structuredClone(obj);
+
+    if (!obj) return obj;
+
+    // TODO this seems like double work, considering parser and parseDescriptions
+    // Look into cleaning this up
+
+    if (Array.isArray(obj)) {
+        for (let i = 0; i < obj.length; i++) {
+            obj[i] = resolveItemEntryTemplating(item, obj[i]);
+        }
+        return obj;
+    }
+
+    if (typeof obj === 'object') {
+        for (const key of Object.keys(obj)) {
+            obj[key] = resolveItemEntryTemplating(item, obj[key]);
+        }
+        return obj;
+    }
+
+    if (typeof obj === 'string') {
+        for (const key of Object.keys(item)) {
+            obj = obj.replaceAll(`{{item.${key}}}`, item[key]);
+            if (typeof item[key] === 'string') {
+                obj = obj.replaceAll(`{{item.${key}}}_lower`, item[key].toLocaleLowerCase());
+            }
+
+            // TODO Specific case for Dragon Scale Mail, this needs to be fixed
+            obj = obj.replaceAll(`{{getFullImmRes item.resist}}`, item.resist);
+        }
+        return obj;
+    }
+
+    if (typeof obj === 'number' || typeof obj === 'boolean') {
+        return obj;
+    }
+
+    throw `resolveItemEntryTemplating: Unsupported obj type ${typeof obj}`;
+}
+
+function resolveItemEntry(item: any, itemEntries: any[]): any {
+    item = structuredClone(item);
+
+    if (!item.entries) return item;
+
+    const pattern1 = /\{#itemEntry ([^\}]*?)\|([^\}]*?)\}/;
+    const pattern2 = /\{#itemEntry ([^\}]*?)\}/;
+
+    for (let i = 0; i < item.entries.length; i++) {
+        if (pattern1.test(item.entries[i])) {
+            const matches = pattern1.exec(item.entries[i])!;
+            const name = matches[1];
+            const source = matches[2];
+            const entry = findItemEntry(itemEntries, name, source);
+            item.entries.splice(i, 1, ...entry.entriesTemplate);
+            i += entry.entriesTemplate - 1;
+        } else if (pattern2.test(item.entries[i])) {
+            const matches = pattern2.exec(item.entries[i])!;
+            const name = matches[1];
+            const source = item.source;
+            const entry = findItemEntry(itemEntries, name, source);
+            item.entries.splice(i, 1, ...entry.entriesTemplate);
+            i += entry.entriesTemplate - 1;
+        }
+    }
+
+    item = resolveItemEntryTemplating(item, item);
+
+    return item;
+}
+
 export function getItems(data: any): any[] {
     // TODO _copy items, item groups, item entries
 
+    // Resolve raw item data
     const items = [...data.item, ...data.baseitem];
+    const raw: any[] = [];
+    for (const item of items) {
+        raw.push(resolveItemEntry(handleCopy(item, items), data.itemEntry));
+    }
+
     const types = mapItemTypes(data);
     const masteries = mapItemMasteries(data);
     const properties = mapItemProperties(data);
 
     const results = [];
-    const toCopy = [];
 
-    for (const item of items) {
+    for (const item of raw) {
         const url = getItemsUrl(item.name, item.source);
-
-        if (item._copy) {
-            toCopy.push(item);
-            continue;
-        }
-
         const result: any = {};
 
         result.name = cleanDNDText(item.name);
@@ -244,9 +330,6 @@ export function getItems(data: any): any[] {
 
         results.push(result);
     }
-
-    // TODO
-    while (toCopy.length > 0) break;
 
     return results;
 }

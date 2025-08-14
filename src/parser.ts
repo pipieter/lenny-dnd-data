@@ -464,6 +464,11 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
         return [cleanDNDText(description)];
     }
 
+    // Specific scenario encountered once
+    if (!description.type && description.entries) {
+        return description.entries.flatMap(parseDescriptionBlock)
+    }
+
     const type = description.type;
     switch (type) {
         case 'quote': {
