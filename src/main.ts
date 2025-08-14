@@ -13,6 +13,7 @@ import { getLanguages } from './languages';
 import { getNames } from './names';
 import { getBackgrounds } from './backgrounds';
 import { getTables } from './tables';
+import { getSpecies } from './species';
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
@@ -57,6 +58,9 @@ function main(): void {
     const tables = getTables(data);
     stopwatch.log('Tables retrieved');
 
+    const species = getSpecies(data);
+    stopwatch.log('Species retrieved');
+
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
     writeFileSync('./generated/conditions.json', JSON.stringify(conditions, null, 2), 'utf-8');
@@ -71,6 +75,7 @@ function main(): void {
     writeFileSync('./generated/names.json', JSON.stringify(names, null, 2), 'utf-8');
     writeFileSync('./generated/backgrounds.json', JSON.stringify(backgrounds, null, 2), 'utf-8');
     writeFileSync('./generated/tables.json', JSON.stringify(tables, null, 2), 'utf-8');
+    writeFileSync('./generated/species.json', JSON.stringify(species, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');
     stopwatch.stop();

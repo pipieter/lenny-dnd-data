@@ -13,6 +13,10 @@ export function getImageUrl(path: string): string {
     return cleanUrl(`https://5e.tools/img/${path}`);
 }
 
+export function getAudioUrl(path: string): string {
+    return cleanUrl(`https://5e.tools/audio/${path}`);
+}
+
 /**
  * The generated URL is case-sensitive. Do not change the casing of `name`; use the original creature-name casing.
  */
@@ -73,6 +77,10 @@ export function getRulesUrl(name: string, source: string) {
 
 export function getSpellsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/spells.html`, name, source);
+}
+
+export function getSpeciesUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/races.html`, name, source);
 }
 
 export function getSubclassUrl(
