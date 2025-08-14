@@ -16,7 +16,7 @@ interface Species {
     sizes: string[];
     speed: string[];
     creatureType: string | null;
-    entries: Description[];
+    description: Description[];
     info: Description[];
 }
 
@@ -117,7 +117,7 @@ export function getSpecies(data: any): Species[] {
         const sizes = getSpeciesSizes(entry.size || []);
         const speed = getSpeciesSpeed(entry.speed);
         const creatureType = getSpeciesCreatureType(entry.creatureTypes || []);
-        const entries = parseDescriptions('', entry.entries || []);
+        const description = parseDescriptions('', entry.entries || []);
         const info = getSpeciesInfo(data, name, source);
 
         species.push({
@@ -128,7 +128,7 @@ export function getSpecies(data: any): Species[] {
             sizes,
             speed,
             creatureType,
-            entries,
+            description,
             info,
         });
     }
