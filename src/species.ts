@@ -1,4 +1,4 @@
-// Note: in the files this is still referred to as 'race'
+// Note: in the 5e.tools files this is still referred to as 'race'
 
 import { capitalize, Description, parseDescriptions, parseImageUrl } from './parser';
 import { getSpeciesUrl } from './urls';
