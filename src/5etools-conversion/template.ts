@@ -1,41 +1,59 @@
-// TODO it's possible that value is NOT a string, e.g. see item templating
-// This should be expanded, and applyItemTemplate should be replaced
-function applyTemplateToString(str: string, name: string, value: string): string {
-    let result = structuredClone(str);
-    result = result.replaceAll(`{{${name}}}`, value);
-    result = result.replaceAll(`{{${name}_lower}}`, value.toLocaleLowerCase());
-    return result;
-}
+/**
+ * Iterate over an object and replace within all fields a template with a given replacement.
+ * For example, consider a patter {{prop_name}} that needs to be replaced with value 'X'. The
+ * function call `applySingleTemplate(obj, 'prop_name', 'X')` will replace all occurrences
+ * within the object to fit the templating.
+ *
+ * If replacement is not a string or array of strings, templating will be ignored. If replacement
+ * is an array of strings, the first element of the array will be used as replacement.
+ *
+ * @param obj The base object which fields will be changed.
+ * @param template The pattern of the template, without the '{{' and '}}' symbols.
+ * @param replacement The replacement string.
+ * @returns A copy of obj with the replaced templates.
+ */
+export function applySingleTemplate(obj: any, template: string, replacement: string): any {
+    // Sometimes the value can be an array, in which case we iterate over the first value
+    if (Array.isArray(replacement)) replacement = replacement[0];
 
-export function applyTemplate(obj: any, name: string, value: string): any {
+    if (!['string', 'number', 'bigint', 'boolean'].includes(typeof replacement)) return obj;
+
     obj = structuredClone(obj);
 
-    // Sometimes the value can be an array, in which case we iterate over the first value
-    // TODO check if this is correct or not
-    if (Array.isArray(value)) {
-        value = value[0];
-    }
-
-    if (typeof obj === 'string') {
-        return applyTemplateToString(obj, name, value);
+    if (!obj) return obj;
+    if (['number', 'boolean', 'bigint'].includes(typeof obj)) {
+        return obj;
     }
 
     if (Array.isArray(obj)) {
-        for (let i = 0; i < obj.length; i++) {
-            obj[i] = applyTemplate(obj[i], name, value);
-        }
-        return obj;
+        return obj.map((entry) => applySingleTemplate(entry, template, replacement));
     }
+
     if (typeof obj === 'object') {
-        for (const key of Object.keys(obj)) {
-            obj[key] = applyTemplate(obj[key], name, value);
-        }
+        for (const key of Object.keys(obj))
+            obj[key] = applySingleTemplate(obj[key], template, replacement);
         return obj;
     }
 
-    if (typeof obj === 'number' || typeof obj === 'boolean' || obj === undefined) {
-        return obj;
+    if (typeof obj === 'string') {
+        return obj.replaceAll(`{{${template}}}`, replacement);
     }
 
-    throw `applyTemplate: Unsupported obj type '${typeof obj}'`;
+    throw `applySingleTemplate: Unknown obj type '${typeof obj}'`;
+}
+
+export function applyTemplatingFromParent(obj: any, parent: any, prefix: string = ''): any {
+    // Somewhat based on render.js:4778 applyTemplate
+    obj = structuredClone(obj);
+    parent = structuredClone(parent);
+
+    for (const key of Object.keys(parent)) {
+        obj = applySingleTemplate(obj, `${prefix}${key}`, parent[key]);
+    }
+
+    return obj;
+}
+
+export function applyTemplating(obj: any, prefix: string = ''): any {
+    return applyTemplatingFromParent(obj, obj, prefix);
 }

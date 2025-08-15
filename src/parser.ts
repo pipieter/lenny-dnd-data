@@ -466,7 +466,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
 
     // Specific scenario encountered once
     if (!description.type && description.entries) {
-        return description.entries.flatMap(parseDescriptionBlock)
+        return description.entries.flatMap(parseDescriptionBlock);
     }
 
     const type = description.type;

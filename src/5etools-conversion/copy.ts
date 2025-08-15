@@ -1,4 +1,4 @@
-import { applyTemplate } from './template';
+import { applySingleTemplate } from './template';
 
 // Note to future developers, it's useful to take a clone (through structuredClone)
 // as frequently as possible when copying something.
@@ -151,8 +151,16 @@ export function handleVersions(base: any): any[] {
             let abstract = structuredClone(baseVersion._abstract) || {};
 
             for (const variable of Object.keys(implementation._variables)) {
-                version = applyTemplate(version, variable, implementation._variables[variable]);
-                abstract = applyTemplate(abstract, variable, implementation._variables[variable]);
+                version = applySingleTemplate(
+                    version,
+                    variable,
+                    implementation._variables[variable]
+                );
+                abstract = applySingleTemplate(
+                    abstract,
+                    variable,
+                    implementation._variables[variable]
+                );
             }
 
             delete version._versions;

@@ -1,4 +1,5 @@
 import { handleCopy } from './5etools-conversion/copy';
+import { applySingleTemplate, applyTemplating } from './5etools-conversion/template';
 import {
     cleanDNDText,
     parseDescriptions,
@@ -6,25 +7,9 @@ import {
     parseItemValue,
     parseItemWeight,
 } from './parser';
+import { DamageTypes } from './5etools-conversion/data';
 import { getItemsUrl } from './urls';
 import { joinStringsWithOr } from './util';
-
-// TODO move this to 5etools-conversion/data.ts
-const DamageTypes = new Map([
-    ['A', 'Acid'],
-    ['B', 'Bludgeoning'],
-    ['C', 'Cold'],
-    ['F', 'Fire'],
-    ['O', 'Force'],
-    ['L', 'Lightning'],
-    ['N', 'Necrotic'],
-    ['P', 'Piercing'],
-    ['I', 'Poison'],
-    ['Y', 'Psychic'],
-    ['R', 'Radiant'],
-    ['S', 'Slashing'],
-    ['T', 'Thunder'],
-]);
 
 function mapItemMasteries(data: any): Map<string, any> {
     const masteries = new Map<string, any>();
@@ -57,24 +42,17 @@ function mapItemProperties(data: any): Map<string, any> {
     return properties;
 }
 
-function applyItemTemplate(item: any, entry: any, template: string): string {
-    template = template.replaceAll('{{prop_name}}', entry.name);
-    template = template.replaceAll('{{prop_name_lower}}', entry.name.toLowerCase());
+function applyItemPropertyTemplate(item: any, property: any, template: string): string {
+    template = template.replaceAll('{{prop_name}}', property.name);
+    template = template.replaceAll('{{prop_name_lower}}', property.name.toLowerCase());
 
-    let hasRemainingTemplate = true;
-    while (hasRemainingTemplate) {
-        const regex = /^.*\{\{item\.([^\}]*?)\}\}.*$/;
-        const matches = template.match(regex);
-        if (matches === null) {
-            hasRemainingTemplate = false;
-        } else {
-            const field = matches[1];
-            let result = item[field];
-            if (typeof result === 'string') {
-                result = result.split('|')[0]; // Sometimes specifics like sources will be shown, such as 'crossbow bolt|phb'
-            }
-            template = template.replace('{{item.' + field + '}}', result);
+    for (const key of Object.keys(item)) {
+        let replacement = item[key];
+        if (typeof replacement === 'object') continue;
+        if (typeof replacement === 'string') {
+            replacement = replacement.split('|')[0]; // Sometimes specifics like sources will be shown, such as 'crossbow bolt|phb'
         }
+        template = applySingleTemplate(template, `item.${key}`, replacement);
     }
     return template;
 }
@@ -99,51 +77,6 @@ function findItemEntry(entries: any[], name: string, source: string): any {
         }
     }
     throw `Item entry not found ${name} (${source})`;
-}
-
-// TODO look at render.js:4778 applyTemplate
-// TODO make this more generic, by allowing a prefix such as 'item.'
-// TODO move this 5etools-conversion/copy.ts
-function resolveItemEntryTemplating(item: any, obj: any): any {
-    obj = structuredClone(obj);
-
-    if (!obj) return obj;
-
-    // TODO this seems like double work, considering parser and parseDescriptions
-    // Look into cleaning this up
-
-    if (Array.isArray(obj)) {
-        for (let i = 0; i < obj.length; i++) {
-            obj[i] = resolveItemEntryTemplating(item, obj[i]);
-        }
-        return obj;
-    }
-
-    if (typeof obj === 'object') {
-        for (const key of Object.keys(obj)) {
-            obj[key] = resolveItemEntryTemplating(item, obj[key]);
-        }
-        return obj;
-    }
-
-    if (typeof obj === 'string') {
-        for (const key of Object.keys(item)) {
-            obj = obj.replaceAll(`{{item.${key}}}`, item[key]);
-            if (typeof item[key] === 'string') {
-                obj = obj.replaceAll(`{{item.${key}}}_lower`, item[key].toLocaleLowerCase());
-            }
-
-            // TODO Specific case for Dragon Scale Mail, this needs to be fixed
-            obj = obj.replaceAll(`{{getFullImmRes item.resist}}`, item.resist);
-        }
-        return obj;
-    }
-
-    if (typeof obj === 'number' || typeof obj === 'boolean') {
-        return obj;
-    }
-
-    throw `resolveItemEntryTemplating: Unsupported obj type ${typeof obj}`;
 }
 
 function resolveItemEntry(item: any, itemEntries: any[]): any {
@@ -172,14 +105,15 @@ function resolveItemEntry(item: any, itemEntries: any[]): any {
         }
     }
 
-    item = resolveItemEntryTemplating(item, item);
+    item = applyTemplating(item, 'item.');
+
+    // Specific template, required for Dragon Scail Mail armors
+    item = applySingleTemplate(item, 'getFullImmRes item.resist', item.resist);
 
     return item;
 }
 
 export function getItems(data: any): any[] {
-    // TODO _copy items, item groups, item entries
-
     // Resolve raw item data
     const items = [...data.item, ...data.baseitem];
     const raw: any[] = [];
@@ -303,12 +237,16 @@ export function getItems(data: any): any[] {
                     throw `Found property with more than one entry '${property.abbreviation}`;
 
                 const entry = entries[0];
-                const template = applyItemTemplate(item, entry, property.template).toLowerCase();
+                const template = applyItemPropertyTemplate(
+                    item,
+                    entry,
+                    property.template
+                ).toLowerCase();
                 result.properties.push(template);
 
                 // Apply template to entries of entry (required for Extended Reach)
                 for (let i = 0; i < entry.entries.length; i++) {
-                    entry.entries[i] = applyItemTemplate(item, entry, entry.entries[i]);
+                    entry.entries[i] = applyItemPropertyTemplate(item, entry, entry.entries[i]);
                 }
                 result.description.push(...parseDescriptions(entry.name, entry.entries));
             }
