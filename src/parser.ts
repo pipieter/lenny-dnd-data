@@ -835,7 +835,7 @@ export function parseClassResourceValue(value: any): string {
 }
 
 export function parseItemValue(value: number | undefined): string | null {
-    if (value === undefined || value === 0) return null;
+    if (!value) return null;
 
     const gp = Math.floor(value / 100);
     const sp = Math.floor((value % 100) / 10);
