@@ -1,3 +1,23 @@
+function isPrimitive(obj: any) {
+    return ['string', 'number', 'bigint', 'boolean'].includes(typeof obj);
+}
+
+// Recursively walk through an object or an array, and apply a function to each field and element
+function recursiveObjectApply(obj: any, applyFn: (value: string | number | boolean) => any): any {
+    if (!obj) return obj;
+
+    if (Array.isArray(obj)) {
+        return obj.map((entry) => recursiveObjectApply(entry, applyFn));
+    }
+
+    if (typeof obj === 'object') {
+        for (const key of Object.keys(obj)) obj[key] = recursiveObjectApply(obj[key], applyFn);
+        return obj;
+    }
+
+    return applyFn(obj);
+}
+
 /**
  * Iterate over an object and replace within all fields a template with a given replacement.
  * For example, consider a patter {{prop_name}} that needs to be replaced with value 'X'. The
@@ -13,33 +33,49 @@
  * @returns A copy of obj with the replaced templates.
  */
 export function applySingleTemplate(obj: any, template: string, replacement: string): any {
-    // Sometimes the value can be an array, in which case we iterate over the first value
-    if (Array.isArray(replacement)) replacement = replacement[0];
-
-    if (!['string', 'number', 'bigint', 'boolean'].includes(typeof replacement)) return obj;
-
     obj = structuredClone(obj);
 
+    // Sometimes the value can be an array, in which case we iterate over the first value
+    if (Array.isArray(replacement)) replacement = replacement[0];
+    if (!['string', 'number', 'bigint', 'boolean'].includes(typeof replacement)) return obj;
     if (!obj) return obj;
-    if (['number', 'boolean', 'bigint'].includes(typeof obj)) {
-        return obj;
-    }
 
-    if (Array.isArray(obj)) {
-        return obj.map((entry) => applySingleTemplate(entry, template, replacement));
-    }
+    return recursiveObjectApply(obj, (value) => {
+        if (typeof value === 'string') {
+            return value.replaceAll(`{{${template}}}`, replacement);
+        }
 
-    if (typeof obj === 'object') {
-        for (const key of Object.keys(obj))
-            obj[key] = applySingleTemplate(obj[key], template, replacement);
-        return obj;
-    }
+        if (isPrimitive(value)) {
+            return value;
+        }
 
-    if (typeof obj === 'string') {
-        return obj.replaceAll(`{{${template}}}`, replacement);
-    }
+        throw `applySingleTemplate: Unknown obj type '${typeof value}'`;
+    });
+}
 
-    throw `applySingleTemplate: Unknown obj type '${typeof obj}'`;
+// Variant, where {=variable} is replaced directly
+export function applyDirectSingleTemplate(base: any, obj: any): any {
+    obj = structuredClone(obj);
+    if (!obj) return obj;
+
+    return recursiveObjectApply(obj, (value) => {
+        if (typeof value === 'string') {
+            const pattern = /\{=([A-Za-z]+)\}/;
+            while (pattern.test(value)) {
+                const matches: any[] = pattern.exec(value) || [];
+                for (const match of matches) {
+                    value = value.replaceAll(`{=${match}}`, base[match]);
+                }
+            }
+            return value;
+        }
+
+        if (isPrimitive(value)) {
+            return value;
+        }
+
+        throw `applyDirectSingleTemplate: Unknown obj type '${typeof obj}'`;
+    });
 }
 
 export function applyTemplatingFromParent(obj: any, parent: any, prefix: string = ''): any {
@@ -50,6 +86,8 @@ export function applyTemplatingFromParent(obj: any, parent: any, prefix: string 
     for (const key of Object.keys(parent)) {
         obj = applySingleTemplate(obj, `${prefix}${key}`, parent[key]);
     }
+
+    obj = applyDirectSingleTemplate(obj, obj);
 
     return obj;
 }

@@ -25,6 +25,9 @@ function main(): void {
     const items = getItems(data);
     stopwatch.log('Items retrieved');
 
+    const itemVariants = getItems(data);
+    stopwatch.log('Items variant retrieved');
+
     const spells = getSpells('./5etools-src/data/spells');
     stopwatch.log('Spells retrieved');
 
@@ -62,6 +65,7 @@ function main(): void {
     stopwatch.log('Species retrieved');
 
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
+    writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
     writeFileSync('./generated/conditions.json', JSON.stringify(conditions, null, 2), 'utf-8');
     writeFileSync('./generated/diseases.json', JSON.stringify(diseases, null, 2), 'utf-8');
