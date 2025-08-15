@@ -42,6 +42,39 @@ export function applySingleTemplate(obj: any, template: string, replacement: str
     throw `applySingleTemplate: Unknown obj type '${typeof obj}'`;
 }
 
+// Variant, where {=variable} is replaced directly
+// TODO create a walker function
+export function applyDirectSingleTemplate(base: any, obj: any): any {
+    obj = structuredClone(obj);
+
+    if (!obj) return obj;
+    if (['number', 'boolean', 'bigint'].includes(typeof obj)) {
+        return obj;
+    }
+
+    if (Array.isArray(obj)) {
+        return obj.map((entry) => applyDirectSingleTemplate(base, entry));
+    }
+
+    if (typeof obj === 'object') {
+        for (const key of Object.keys(obj)) obj[key] = applyDirectSingleTemplate(base, obj[key]);
+        return obj;
+    }
+
+    if (typeof obj === 'string') {
+        const pattern = /\{=([A-Za-z]+)\}/;
+        while (pattern.test(obj)) {
+            const matches = pattern.exec(obj) || [];
+            for (const match of matches) {
+                obj = obj.replaceAll(`{=${match}}`, base[match]);
+            }
+        }
+        return obj;
+    }
+
+    throw `applySingleTemplate: Unknown obj type '${typeof obj}'`;
+}
+
 export function applyTemplatingFromParent(obj: any, parent: any, prefix: string = ''): any {
     // Somewhat based on render.js:4778 applyTemplate
     obj = structuredClone(obj);
@@ -50,6 +83,8 @@ export function applyTemplatingFromParent(obj: any, parent: any, prefix: string 
     for (const key of Object.keys(parent)) {
         obj = applySingleTemplate(obj, `${prefix}${key}`, parent[key]);
     }
+
+    obj = applyDirectSingleTemplate(obj, obj);
 
     return obj;
 }
