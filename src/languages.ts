@@ -35,7 +35,7 @@ function getTypicalSpeakers(language: Language): string | null {
 }
 
 function getLanguageType(language: Language): string {
-    const type = language.type ? capitalize(language.type) : 'Undefined';
+    const type = language.type ? capitalize(language.type) : 'Uncategorized';
     return `${type} language`;
 }
 
