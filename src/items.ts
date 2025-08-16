@@ -70,17 +70,13 @@ function applyItemPropertyTemplate(item: any, property: any, template: string): 
     return template;
 }
 
-function getItemImage(data: any, name: string, source: string): string | null {
-    for (const item of data.itemFluff || []) {
-        if (item.name === name && item.source === source) {
-            if (item.images) {
-                return parseImageUrl(item.images);
-            } else if (item._copy) {
-                return getItemImage(data, item._copy.name, item._copy.source);
-            }
+function getItemFluff(fluffs: any[], name: string, source: string): any {
+    for (const fluff of fluffs || []) {
+        if (fluff.name === name && fluff.source === source) {
+            return handleCopy(fluff, fluffs);
         }
     }
-    return null;
+    return {};
 }
 
 function findItemEntry(entries: any[], name: string, source: string): any {
@@ -174,6 +170,8 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
 }
 
 function parseItem(item: any, data: any): Item {
+    const fluff = getItemFluff(data.itemFluff, item.name, item.source);
+
     // TODO optimize these mappings beforehand
     const types = mapItemTypes(data);
     const masteries = mapItemMasteries(data);
@@ -195,7 +193,7 @@ function parseItem(item: any, data: any): Item {
     result.name = cleanDNDText(item.name);
     result.source = item.source;
     result.url = url;
-    result.image = getItemImage(data, item.name, item.source);
+    result.image = parseImageUrl(fluff.images || []);
     result.value = parseItemValue(item.value);
     if (item.weightNote) {
         result.weight = `${parseItemWeight(item.weight)} (${item.weightNote})`;

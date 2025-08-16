@@ -2,18 +2,6 @@ import { handleCopy } from './5etools-conversion/copy';
 import { Description, parseAbilityScore, parseDescriptions } from './parser';
 import { getBackgroundsUrl } from './urls';
 
-interface Background {
-    name: string;
-    source: string;
-    _copy?: any;
-    feats?: string[] | null;
-    skillProficiencies?: string[];
-    toolProficiencies?: string[];
-    startingEquipment?: string[];
-    ability?: string[];
-    entries: (string | any)[];
-}
-
 interface ParsedBackground {
     name: string;
     source: string;
@@ -29,17 +17,9 @@ function parseBackgroundAbilities(background: any): string[] | null {
 }
 
 export function getBackgrounds(data: any): ParsedBackground[] {
-    const raw: any[] = [];
+    const raw: any[] = data.background.map((e: any) => handleCopy(e, data.background));
 
-    for (const entry of data.background) {
-        if (entry._copy) {
-            raw.push(handleCopy(entry, data.background));
-        } else {
-            raw.push(entry);
-        }
-    }
-
-    return raw.map((background: Background) => ({
+    return raw.map((background: any) => ({
         name: background.name,
         source: background.source,
         url: getBackgroundsUrl(background.name, background.source),
