@@ -10,6 +10,7 @@ import {
     getTablesUrl,
     getTrapsUrl,
 } from './urls';
+import { AbilityScores, SpellSchools } from './5etools-conversion/data';
 
 export enum DescriptionType {
     text = 'text',
@@ -33,27 +34,6 @@ export interface Table {
     headers: string[] | null;
     rows: (string | Range)[][];
 }
-
-const SpellSchools = new Map([
-    ['A', 'Abjuration'],
-    ['C', 'Conjuration'],
-    ['D', 'Divination'],
-    ['E', 'Enchantment'],
-    ['V', 'Evocation'],
-    ['I', 'Illusion'],
-    ['N', 'Necromancy'],
-    ['P', 'Psionic'],
-    ['T', 'Transmutation'],
-]);
-
-const AbilityScores = new Map<string, string>([
-    ['str', 'Strength'],
-    ['dex', 'Dexterity'],
-    ['con', 'Constitution'],
-    ['int', 'Intelligence'],
-    ['wis', 'Wisdom'],
-    ['cha', 'Charisma'],
-]);
 
 export function checkForDisallowedSymbols(text: string) {
     const disallowedSymbols = ['{', '}', '|', '[object Object]'];

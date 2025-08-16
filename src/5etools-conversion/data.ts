@@ -11,7 +11,7 @@ export const CreatureSizes = new Map<string, string>([
     ['V', 'Varies'],
 ]); // parser.js:2947
 
-export const StatAbbreviations = new Map<string, string>([
+export const AbilityScores = new Map<string, string>([
     ['str', 'Strength'],
     ['dex', 'Dexterity'],
     ['con', 'Constitution'],
@@ -35,3 +35,18 @@ export const DamageTypes = new Map([
     ['S', 'Slashing'],
     ['T', 'Thunder'],
 ]);
+
+export const SpellSchools = new Map([
+    ['A', 'Abjuration'],
+    ['C', 'Conjuration'],
+    ['D', 'Divination'],
+    ['E', 'Enchantment'],
+    ['V', 'Evocation'],
+    ['I', 'Illusion'],
+    ['N', 'Necromancy'],
+    ['P', 'Psionic'],
+    ['T', 'Transmutation'],
+]);
+
+export const SpeedTypes = ['walk', 'burrow', 'climb', 'fly', 'swim']; // parser.js:333
+export const SpecialSpeedTypes = [/*'walk',*/ 'burrow', 'climb', 'fly', 'swim']; // parser.js:333
