@@ -15,6 +15,7 @@ import { AbilityScores, SpellSchools } from './5etools-conversion/data';
 export enum DescriptionType {
     text = 'text',
     table = 'table',
+    hr = 'hr',
 }
 
 export interface Description {
@@ -43,6 +44,35 @@ export function checkForDisallowedSymbols(text: string) {
     }
 }
 
+function cleanDNDatk(text: string): string {
+    // converterutils-creature.js:584
+    const replacements = new Map<string, string>([
+        ['{@atk mw}', 'Melee Weapon Attack'],
+        ['{@atk rw}', 'Ranged Weapon Attack'],
+        ['{@atk m}', 'Melee Attack'],
+        ['{@atk r}', 'Ranged Attack'],
+        ['{@atk a}', 'Area Attack'],
+        ['{@atk aw}', 'Area Weapon Attack'],
+        ['{@atk ms}', 'Melee Spell Attack'],
+        ['{@atk mw,rw}', 'Melee or Ranged Weapon Attack'],
+        ['{@atk rs}', 'Ranged Spell Attack'],
+        ['{@atk ms,rs}', 'Melee or Ranged Spell Attack'],
+        ['{@atk m,r}', 'Melee or Ranged Attack'],
+        ['{@atk mp}', 'Melee Power Attack'],
+        ['{@atk rp}', 'Ranged Power Attack'],
+        ['{@atk mp,rp}', 'Melee or Ranged Power Attack'],
+        ['{@atkr m}', 'Melee Attack Roll'],
+        ['{@atkr r}', 'Ranged Attack Roll'],
+        ['{@atkr m,r}', 'Melee or Ranged Attack Roll'],
+    ]);
+
+    for (const pattern of replacements.keys()) {
+        text = text.replaceAll(pattern + ' ', '+');
+    }
+
+    return text;
+}
+
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -57,6 +87,9 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
     }
+
+    // Attacks are done separately, as they have a fixed pattern
+    text = cleanDNDatk(text);
 
     // Note: all regexes should end with a g, which stands for "global"
     text = text.replaceAll(/\{@atk rw\} /g, '+');
@@ -603,6 +636,10 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             if (!url) throw `Unsupported ${type} ${description}`;
             return [`[${text}](${url})`];
         }
+        case 'hr': {
+            const hrRepeats = 2;
+            return Array(hrRepeats).fill('');
+        }
         default: {
             throw `Unsupported description type: '${type}'`;
         }
@@ -785,8 +822,8 @@ export function parseCreatureTypes(creature_type: string | any): string {
     throw `parseCreatureTypes: Unrecognized format: ${JSON.stringify(creature_type)}`;
 }
 
-export function parseCreatureSummonSpell(spell: string): string {
-    if (!spell) return '';
+export function parseCreatureSummonSpell(spell: string | null): string | null {
+    if (!spell) return null;
     return spell.split('|', 1)[0];
 }
 
