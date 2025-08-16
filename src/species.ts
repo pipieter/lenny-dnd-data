@@ -4,9 +4,7 @@ import { capitalize, Description, parseDescriptions, parseImageUrl } from './par
 import { getSpeciesUrl } from './urls';
 import { joinStringsWithOr } from './util';
 import { handleCopy, handleVersions } from './5etools-conversion/copy';
-import { CreatureSizes } from './5etools-conversion/data';
-
-const SpecialSpeedTypes = [/*'walk,'*/ 'burrow', 'climb', 'fly', 'swim']; // parser.js:333
+import { CreatureSizes, SpecialSpeedTypes } from './5etools-conversion/data';
 
 interface Species {
     name: string;
@@ -89,7 +87,7 @@ function getSpeciesCreatureType(creatureTypes: string[]): string | null {
 }
 
 export function getSpecies(data: any): Species[] {
-    // Get raw entries, handling _copy and _versions
+    // Get raw entries
     const raw: any[] = [];
     for (const entry of data.race) {
         const copy = handleCopy(entry, data.race);
