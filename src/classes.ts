@@ -766,6 +766,10 @@ function classFeatsToParsedFeats(
         'Subclass Feature', // Self-explanatory name, not unique between classes.
     ];
 
+    function getClassFeatName(name: string, level: number, className: string): string {
+        return `${name} (Lv. ${level} ${className})`;
+    }
+
     for (const key in classFeats) {
         const feats = classFeats[key];
         for (const feat of feats) {
@@ -773,8 +777,9 @@ function classFeatsToParsedFeats(
             if (blacklist.includes(feat.name)) continue;
 
             feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
+
             parsedFeats.push({
-                name: feat.name,
+                name: getClassFeatName(feat.name, feat.level, feat.className),
                 source: feat.source,
                 url: getClassesUrl(feat.className, feat.classSource),
                 type: `Lv. ${feat.level} ${feat.className} Class Feature`,
@@ -794,8 +799,9 @@ function classFeatsToParsedFeats(
                 throw `Subclass feat ${feat.name} does not have subclass name or source`;
 
             feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
+
             parsedFeats.push({
-                name: feat.name,
+                name: getClassFeatName(feat.name, feat.level, feat.subclassName),
                 source: feat.source,
                 url: getSubclassUrl(
                     feat.className,
