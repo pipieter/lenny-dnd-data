@@ -767,7 +767,7 @@ function classFeatsToParsedFeats(
     ];
 
     function getClassFeatName(name: string, level: number, className: string): string {
-        return `${name} [Lv. ${level} ${className}]`;
+        return `${name} (Lv. ${level} ${className})`;
     }
 
     for (const key in classFeats) {
