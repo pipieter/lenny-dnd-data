@@ -766,23 +766,9 @@ function classFeatsToParsedFeats(
         'Subclass Feature', // Self-explanatory name, not unique between classes.
     ];
 
-    let seenFeats = new Set();
-
-    function getClassFeatName(
-        name: string,
-        source: string,
-        level: number,
-        className: string
-    ): string {
-        let key = getKey(name, source);
-        if (!seenFeats.has(key)) {
-            seenFeats.add(key);
-            return name;
-        } else {
-            const suffix = `[Lv. ${level} ${className}]`;
-            key = key + ' ' + suffix;
-            return `${name} ${suffix};`;
-        }
+    function getClassFeatName(name: string, level: number, className: string): string {
+        const suffix = `[Lv. ${level} ${className}]`;
+        return `${name} ${suffix};`;
     }
 
     for (const key in classFeats) {
@@ -794,7 +780,7 @@ function classFeatsToParsedFeats(
             feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
 
             parsedFeats.push({
-                name: getClassFeatName(feat.name, feat.source, feat.level, feat.className),
+                name: getClassFeatName(feat.name, feat.level, feat.className),
                 source: feat.source,
                 url: getClassesUrl(feat.className, feat.classSource),
                 type: `Lv. ${feat.level} ${feat.className} Class Feature`,
@@ -816,7 +802,7 @@ function classFeatsToParsedFeats(
             feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
 
             parsedFeats.push({
-                name: getClassFeatName(feat.name, feat.source, feat.level, feat.subclassName),
+                name: getClassFeatName(feat.name, feat.level, feat.subclassName),
                 source: feat.source,
                 url: getSubclassUrl(
                     feat.className,
