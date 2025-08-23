@@ -318,8 +318,12 @@ export function parseSingleTime(time: any): string {
         }
     }
 
+    if (time.condition) {
+        result = `${result}, ${cleanDNDText(time.condition)}`;
+    }
+
     if (time.note) {
-        result = `${result} (${time.note})`;
+        result = `${result} (${cleanDNDText(time.note)})`;
     }
 
     return result;
