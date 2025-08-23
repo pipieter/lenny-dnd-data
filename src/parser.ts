@@ -318,6 +318,10 @@ export function parseSingleTime(time: any): string {
         }
     }
 
+    if (time.condition) {
+        result = `${result}, ${time.condition}`;
+    }
+
     if (time.note) {
         result = `${result} (${time.note})`;
     }
