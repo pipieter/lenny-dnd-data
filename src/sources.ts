@@ -3,7 +3,7 @@ interface Source {
     name: string;
     source: string;
     published: string;
-    author: string;
+    author: string | null;
     group: string;
 }
 
@@ -14,7 +14,7 @@ export function getSources(data: any): Source[] {
         name: book.name,
         source: book.source || book.id,
         published: book.published,
-        author: book.author,
-        group: book.group,
+        author: book.author ?? null,
+        group: book.group ?? null,
     }));
 }
