@@ -8,14 +8,13 @@ interface Source {
 }
 
 export function getSources(data: any): Source[] {
-    return data.book.map((source: any) => {
-        return {
-            id: source.id,
-            name: source.name,
-            source: source.source || source.id,
-            published: source.published,
-            author: source.author,
-            group: source.group,
-        };
-    });
+    const books = [...data.book, ...data.adventure];
+    return books.map((book: any) => ({
+        id: book.id,
+        name: book.name,
+        source: book.source || book.id,
+        published: book.published,
+        author: book.author,
+        group: book.group,
+    }));
 }
