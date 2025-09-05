@@ -54,12 +54,12 @@ export function getNames(data: any): ParsedNames[] {
                 race.tables.male.push(...table);
 
                 // GENDERLESS
-            } else if (['child', 'general'].some((o) => option.includes(o))) {
+            } else if (['child', 'general', 'virtue'].some((o) => option.includes(o))) {
                 race.tables.female.push(...table);
                 race.tables.male.push(...table);
 
                 // FAMILY
-            } else if (['clan', 'family', 'virtue'].some((o) => option.includes(o))) {
+            } else if (['clan', 'family'].some((o) => option.includes(o))) {
                 race.tables.family.push(...table);
 
                 // UNSUPPORTED
