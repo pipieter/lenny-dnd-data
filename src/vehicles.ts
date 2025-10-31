@@ -1,4 +1,4 @@
-import { Description, parseDescriptions } from './parser';
+import { Description, parseDescriptions, parseSizes } from './parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from './urls';
 
 interface Vehicle {
@@ -7,7 +7,7 @@ interface Vehicle {
     page: number;
     srd: boolean;
     vehicleType: string;
-    size: string;
+    size?: string | string[];
     dimensions?: string[];
     terrain: string[];
     capCrew: number;
@@ -91,6 +91,7 @@ interface ParsedVehicle {
     source: string;
     url: string;
     tokenUrl: string | null;
+    size: string | null;
     vehicleType: string;
     description: Description[];
 }
@@ -115,14 +116,16 @@ export function getVehicles(data: any): ParsedVehicle[] {
         const url = getVehiclesUrl(v.name, v.source);
         const tokenUrl = v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null;
         const description = v.entries ? parseDescriptions('', v.entries) : [];
+        const size = v.size ? parseSizes(v.size) : null;
 
         return {
             name: v.name,
             source: v.source,
-            url: url,
-            tokenUrl: tokenUrl,
-            vehicleType: vehicleType,
-            description: description,
+            url,
+            tokenUrl,
+            size,
+            vehicleType,
+            description,
         };
     });
 }

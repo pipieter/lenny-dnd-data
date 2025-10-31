@@ -27,7 +27,7 @@ export function getCreatureTokenUrl(name: string, source: string) {
 }
 
 export function getVehicleTokenUrl(name: string, source: string) {
-    source = source.toUpperCase(); // Can be enforced, is always uppercase
+    // Unlike creature tokens, the source may not be enforced to be uppercase.
     const url = `https://5e.tools/img/vehicles/tokens/${source}/${name}.webp`;
     return cleanUrl(url);
 }
