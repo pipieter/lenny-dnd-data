@@ -1,4 +1,9 @@
+import { SkillAbilities } from './data';
 import { applySingleTemplate } from './template';
+import { crToProficiencyBonus } from './parser';
+import { ascSortLower } from './sort';
+
+// TODO _templates (e.g. Zox Clammersham). This will most likely require data going global
 
 // Note to future developers, it's useful to take a clone (through structuredClone)
 // as frequently as possible when copying something.
@@ -37,15 +42,15 @@ function addMod_replaceArr(base: any, key: string, entry: any): void {
 
 function addMod_removeArr(base: any, key: string, entry: any): void {
     base[key] = structuredClone(base[key]) || [];
+    const names = variadic(entry.names);
 
-    for (let i = 0; i < base[key].length; i++) {
-        if (base[key][i].name === entry.names) {
-            base[key].splice(i, 1);
-            return;
+    for (const name of names) {
+        for (let i = 0; i < base[key].length; i++) {
+            if (base[key][i].name === name) {
+                base[key].splice(i, 1);
+            }
         }
     }
-
-    throw `addMod_removeArr: Could not find '${entry.replace}' in ${base.name}[${key}]`;
 }
 
 function addMod_appendArr(base: any, key: string, entry: any): void {
@@ -84,24 +89,201 @@ function addMod_replaceTxt(base: any, key: string, entry: any): void {
     throw `addMod_replaceTxt: Unsupported replace type '${typeof base[key]}'`;
 }
 
-function addMod(base: any, mod: any): void {
-    for (const key of Object.keys(mod)) {
-        const entries = variadic(mod[key]);
-        for (const entry of entries) {
-            if (entry.mode === 'replaceArr') {
-                addMod_replaceArr(base, key, entry);
-            } else if (entry.mode === 'appendArr') {
-                addMod_appendArr(base, key, entry);
-            } else if (entry.mode === 'prependArr') {
-                addMod_prependArr(base, key, entry);
-            } else if (entry.mode === 'removeArr') {
-                addMod_removeArr(base, key, entry);
-            } else if (entry.mode === 'insertArr') {
-                addMod_insertArr(base, key, entry);
-            } else if (entry.mode === 'replaceTxt') {
-                addMod_replaceTxt(base, key, entry);
+// utils.js:5468 _doMod_addSkills
+function addMod_addSkills(base: any, skills: any) {
+    base.skills = structuredClone(base.skills || {});
+
+    for (const [skill, mode] of Object.entries(skills)) {
+        // mode: 1 = proficient; 2 = expert
+        const ability = SkillAbilities.get(skill)!;
+        const abilityScore = base[ability];
+        const proficiency = crToProficiencyBonus(base.cr);
+        const total = proficiency * (mode as number) + abilityScore;
+
+        // Only update if total is higher than already there
+        if (!base.skills[skill] || base.skills[skill] < total) {
+            base.skills[skill] = total;
+        }
+    }
+}
+
+// utils.js:5557 _doMod_replaceSpells
+function addMod_replaceSpells(base: any, entry: any) {
+    if (!base.spellcasting) {
+        throw `addMod_replaceSpells: creature '${base.name}' does not have spellcasting`;
+    }
+
+    base.spellcasting = structuredClone(base.spellcasting);
+    const spellcasting = base.spellcasting[0];
+
+    function replaceSpell(spellList: any[], replace: string, to: string) {
+        if (!Array.isArray(spellList))
+            throw `addMod_replaceSpells: spell list is not an array, got ${JSON.stringify(spellList, null, 2)}`;
+
+        for (let i = 0; i < spellList.length; i++) {
+            if (spellList[i] === replace) {
+                spellList[i] = to;
+            }
+        }
+    }
+
+    if (entry.spells) {
+        for (const [level, list] of Object.entries(entry.spells)) {
+            for (const replace of list as any[]) {
+                replaceSpell(spellcasting.spells[level].spells, replace.replace, replace.with);
+            }
+        }
+    }
+
+    if (entry.daily) {
+        for (const [level, list] of Object.entries(entry.daily)) {
+            for (const replace of list as any[]) {
+                replaceSpell(spellcasting.daily[level], replace.replace, replace.with);
+            }
+        }
+    }
+}
+
+// utils.js:5600 _doMod_removeSpells
+function addMod_removeSpells(base: any, mod: any) {
+    if (!base.spellcasting) {
+        throw `addMod_removeSpells: creature '${base.name}' does not have spellcasting`;
+    }
+
+    base.spellcasting = structuredClone(base.spellcasting);
+    const spellcasting = base.spellcasting[0];
+
+    if (mod.spells) {
+        for (const level of Object.keys(mod.spells)) {
+            const list: any[] = mod.spells[level];
+            spellcasting.spells[level].spells = spellcasting.spells[level].filter(
+                (spell: any) => !list.includes(spell)
+            );
+        }
+    }
+
+    if (mod.daily) {
+        for (const level of Object.keys(mod.daily)) {
+            const list: any[] = mod.daily[level];
+            spellcasting.daily[level].spells = spellcasting.daily[level].filter(
+                (spell: any) => !list.includes(spell)
+            );
+        }
+    }
+}
+
+// utils.js:5505 _doMod_replaceSpells
+function addMod_addSpells(base: any, mod: any) {
+    if (!base.spellcasting) {
+        throw `addMod_addSpells: creature '${base.name}' does not have spellcasting`;
+    }
+
+    base.spellcasting = structuredClone(base.spellcasting);
+    const spellcasting = base.spellcasting[0];
+
+    if (mod.spells) {
+        const spells = spellcasting.spells;
+
+        Object.keys(mod.spells).forEach((k) => {
+            if (!spells[k]) spells[k] = mod.spells[k];
+            else {
+                // merge the objects
+                const spellCategoryNu = mod.spells[k];
+                const spellCategoryOld = spells[k];
+                Object.keys(spellCategoryNu).forEach((kk) => {
+                    if (!spellCategoryOld[kk]) spellCategoryOld[kk] = spellCategoryNu[kk];
+                    else {
+                        if (typeof spellCategoryOld[kk] === 'object') {
+                            if (spellCategoryOld[kk] instanceof Array)
+                                spellCategoryOld[kk] = spellCategoryOld[kk]
+                                    .concat(spellCategoryNu[kk])
+                                    .sort(ascSortLower);
+                            else throw `addMod_addSpells: object at key ${kk} not an array!`;
+                        } else spellCategoryOld[kk] = spellCategoryNu[kk];
+                    }
+                });
+            }
+        });
+    }
+
+    ['constant', 'will', 'ritual'].forEach((prop) => {
+        if (!mod[prop]) return;
+        mod[prop].forEach((sp: any) => (spellcasting[prop] = spellcasting[prop] || []).push(sp));
+    });
+
+    [
+        'recharge',
+        'legendary',
+        'charges',
+        'rest',
+        'restLong',
+        'daily',
+        'weekly',
+        'monthly',
+        'yearly',
+    ].forEach((prop) => {
+        if (!mod[prop]) return;
+
+        for (let i = 1; i <= 9; ++i) {
+            const e = `${i}e`;
+
+            spellcasting[prop] = spellcasting[prop] || {};
+
+            if (mod[prop][i]) {
+                mod[prop][i].forEach((sp: any) =>
+                    (spellcasting[prop][i] = spellcasting[prop][i] || []).push(sp)
+                );
+            }
+
+            if (mod[prop][e]) {
+                mod[prop][e].forEach((sp: any) =>
+                    (spellcasting[prop][e] = spellcasting[prop][e] || []).push(sp)
+                );
+            }
+        }
+    });
+}
+
+function addMod_Single(base: any, key: any, mod: any): void {
+    switch (mod.mode) {
+        case 'replaceArr':
+            return addMod_replaceArr(base, key, mod);
+        case 'appendIfNotExistsArr':
+        case 'appendArr':
+            return addMod_appendArr(base, key, mod);
+        case 'prependArr':
+            return addMod_prependArr(base, key, mod);
+        case 'removeArr':
+            return addMod_removeArr(base, key, mod);
+        case 'insertArr':
+            return addMod_insertArr(base, key, mod);
+        case 'replaceTxt':
+            return addMod_replaceTxt(base, key, mod);
+        case 'addSkills':
+            return addMod_addSkills(base, mod.skills);
+        case 'replaceSpells':
+            return addMod_replaceSpells(base, mod);
+        case 'addSpells':
+            return addMod_addSpells(base, mod);
+        case 'removeSpells':
+            return addMod_removeSpells(base, mod);
+        default:
+            throw `addMod_Single: unknown entry mode '${mod.mode}'`;
+    }
+}
+
+function addMod(base: any, mods: any): void {
+    for (const [key, modEntries_] of Object.entries(mods)) {
+        const modEntries = variadic(modEntries_);
+        for (const mod of modEntries) {
+            if (typeof mod === 'string') {
+                if (mod === 'remove') {
+                    delete base[key];
+                } else {
+                    throw `addMod: unknown mod interaction' ${mod}'`;
+                }
             } else {
-                throw `addMod: unknown entry mode '${entry.mode}'`;
+                addMod_Single(base, key, mod);
             }
         }
     }
@@ -118,9 +300,17 @@ export function handleCopy(base: any, entries: any[]): any {
 
     if (!copy._copy) return copy;
 
-    let parent = entries.find((e) => e.name === copy._copy.name && e.source === copy._copy.source);
+    let parent = entries.find((entry) => {
+        const entryName = entry.name.trim().toLowerCase();
+        const entrySource = entry.source.trim().toLowerCase();
+
+        const copyName = copy._copy.name.trim().toLowerCase();
+        const copySource = copy._copy.source.trim().toLowerCase();
+
+        return entryName === copyName && entrySource === copySource;
+    });
     if (!parent) {
-        throw `Could not find parent for ${copy.name} ${copy.source}`;
+        throw `Could not find parent for ${copy.name}|${copy.source}`;
     }
 
     // Handle parent being a copy itself
