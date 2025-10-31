@@ -50,6 +50,7 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
     for (const ability of feat.ability) {
         if (ability.hidden) continue;
 
+        const max = ability.max || 20;
         if (ability.choose) {
             // Prefer explicit entry if present
             if (ability.choose.entry) {
@@ -69,14 +70,16 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
             continue;
         }
 
+        const skipKeys = ['max']; // List of keys to skip, as they are either unimportant or already handled
         const keys = Object.keys(ability);
         if (keys.length > 0) {
             for (const key of keys) {
                 const score = parseAbilityScore(key);
                 const amount = ability[key];
 
+                if (skipKeys.includes(key)) continue;
                 if (score === key) throw `Unsupported feat-ability key ${key}`;
-                result.push(`Increase your ${score} score by ${amount}, to a maximum of 20.`);
+                result.push(`Increase your ${score} score by ${amount}, to a maximum of ${max}.`);
             }
             continue;
         }

@@ -1,4 +1,6 @@
-import { readJsonFile, getKey } from './data';
+import { handleCopy, handleVersions } from './5etools-conversion/copy';
+import { findEntry } from './5etools-conversion/find';
+import { readJsonFile } from './data';
 import {
     Description,
     parseCreatureSummonSpell,
@@ -10,172 +12,121 @@ import { getBestiaryUrl, getCreatureTokenUrl } from './urls';
 
 const BASEPATH = '5etools-src/data/bestiary/';
 
-interface JsonCreature {
+interface Creature {
     name: string;
     source: string;
+    url: string;
     subtitle: string | null;
+    tokenUrl: string | null;
     summonedBySpell: string | null;
 
-    tokenUrl: string | null;
-    url: string;
-
-    description: Description[] | null;
+    description: Description[];
+    fluffInfo: Description[];
 }
 
-class Creature {
-    name: string;
-    source: string;
-    subtitle: string | null = null;
-    summonedBySpell: string | null = null;
-    url: string;
-    tokenUrl: string | null = null;
+function loadCreaturesFromIndex(): [any[], any[]] {
+    const creatures: any[] = [];
+    const fluffs: any[] = [];
 
-    description: Description[] | null = null;
-    parentKey: string | null = null;
+    for (const file of ['fluff-index.json', 'index.json']) {
+        const indexPath = BASEPATH + file;
+        const indexData = readJsonFile(indexPath);
 
-    constructor(data: any, isFluff: boolean) {
-        this.name = data.name;
-        this.source = data.source;
-        this.url = getBestiaryUrl(this.name, this.source);
+        for (const [_, sourceIndexFile] of Object.entries(indexData)) {
+            const path = BASEPATH + sourceIndexFile;
+            const data = readJsonFile(path);
 
-        if (isFluff) {
-            this.description = this.getDescriptions(data); // TODO Improve performance
-        } else {
-            this.subtitle = this.getSubtitle(data);
-            this.summonedBySpell = data.summonedBySpell
-                ? parseCreatureSummonSpell(data.summonedBySpell)
-                : null;
-            const hasToken = data.hasToken || false;
-            this.tokenUrl = hasToken ? getCreatureTokenUrl(this.name, this.source) : null;
+            creatures.push(...(data.monster || []));
+            fluffs.push(...(data.monsterFluff || []));
         }
-
-        const _copy = data._copy || null;
-        if (_copy) this.parentKey = getKey(_copy.name, _copy.source);
     }
 
-    private getSubtitle(data: any): string | null {
-        const sizeData = data.size;
-        const typeData = data.type;
-
-        const size = sizeData ? parseSizes(sizeData) : null;
-        const type = typeData ? parseCreatureTypes(typeData) : null;
-
-        if (!size && !type) return null;
-
-        const text = size + ' ' + type;
-        return text.trim();
-    }
-
-    private getDescriptions(data: any): Description[] | null {
-        const entries = data.entries || null;
-        if (!entries) return null;
-
-        const filteredEntries = this.filterEntries(entries);
-        return parseDescriptions('', filteredEntries);
-    }
-
-    private filterEntries(entries: any[]): any[] {
-        // Creatures generally have way too many entries, impacting performance heavily. We pre-cut entries we may not need.
-        let filteredEntries: any[] = [];
-
-        entries.forEach((entry: any) => {
-            if (entry.type !== 'entries') return; // Only 'entries' hold information we'd want to use.
-            if (entry.name) return; // Entries with names generally refer to races and books, not of use to us.
-
-            filteredEntries.push(entry);
-            if (filteredEntries.length >= 2) return; // Generally the first two entries are the actual descriptions of a creature.
-        });
-
-        return filteredEntries;
-    }
-
-    mergeWithFluff(fluffCreature: Creature) {
-        this.description = fluffCreature.description;
-    }
-
-    inheritFrom(parent: Creature) {
-        if (!this.parentKey) return;
-
-        if (this.isFluff()) {
-            this.description = this.description ?? parent.description;
-            return;
-        }
-
-        this.subtitle = this.subtitle ?? parent.subtitle;
-        this.summonedBySpell = this.summonedBySpell ?? parent.summonedBySpell;
-    }
-
-    isFluff() {
-        return !this.subtitle && !this.summonedBySpell && !this.tokenUrl;
-    }
+    return [creatures, fluffs];
 }
 
-function loadCreaturesFromIndex(loadFluff: boolean): any {
-    const file = loadFluff ? 'fluff-index.json' : 'index.json';
-    const monsterKey = loadFluff ? 'monsterFluff' : 'monster';
-    const indexPath = BASEPATH + file;
-    const indexData = readJsonFile(indexPath);
+function buildCreature(creature: any, fluff: any | null): Creature {
+    const name = creature.name;
+    const source = creature.source;
+    const url = getBestiaryUrl(name, source);
+    const description = getDescriptions(creature);
+    const fluffInfo = getDescriptions(fluff);
+    const subtitle = getSubtitle(creature);
+    const summonedBySpell = parseCreatureSummonSpell(creature.summonedBySpell);
+    const tokenUrl = creature.hasToken ? getCreatureTokenUrl(name, source) : null;
 
-    let creatures: { [key: string]: Creature } = {};
-    for (const [source, sourceIndexFile] of Object.entries(indexData)) {
-        const path = BASEPATH + sourceIndexFile;
-        const data = readJsonFile(path);
-
-        if (!data[monsterKey]) {
-            console.warn(`${path} does not possess key ${monsterKey}`);
-            continue;
-        }
-
-        data[monsterKey].forEach((creatureData: any) => {
-            const creature = new Creature(creatureData, loadFluff);
-            const key = getKey(creature.name, creature.source);
-            creatures[key] = creature;
-        });
-    }
-
-    return creatures;
+    return {
+        name,
+        source,
+        subtitle,
+        summonedBySpell,
+        tokenUrl,
+        url,
+        description,
+        fluffInfo,
+    };
 }
 
-export function getCreatures(): JsonCreature[] {
-    const creatures = loadCreaturesFromIndex(false);
-    const fluffCreatures = loadCreaturesFromIndex(true);
+function getSubtitle(data: any): string | null {
+    const sizeData = data.size;
+    const typeData = data.type;
 
-    function recursivelyInherit(creature: Creature, creaturesMap: { [key: string]: Creature }) {
-        let current = creature;
-        const visited = new Set<string>();
-        while (current.parentKey && !visited.has(current.parentKey)) {
-            visited.add(current.parentKey);
-            const parent = creaturesMap[current.parentKey];
-            if (!parent) break;
+    const size = sizeData ? parseSizes(sizeData) : null;
+    const type = typeData ? parseCreatureTypes(typeData) : null;
 
-            current.inheritFrom(parent);
-            current = parent;
-        }
-    }
+    if (!size && !type) return null;
 
-    (Object.values(fluffCreatures) as Creature[]).forEach((creature: Creature) => {
-        if (!creature.parentKey) return;
-        recursivelyInherit(creature, fluffCreatures);
+    const text = size + ' ' + type;
+    return text.trim();
+}
+
+function getDescriptions(data: any | null): Description[] {
+    const entries = data?.entries || [];
+    if (!entries) return [];
+    const filteredEntries = filterEntries(entries);
+    return parseDescriptions('', filteredEntries);
+}
+
+function filterEntries(entries: any[]): any[] {
+    // Creatures generally have way too many entries, impacting performance heavily. We pre-cut entries we may not need.
+    let filteredEntries: any[] = [];
+
+    entries.forEach((entry: any) => {
+        if (entry.type !== 'entries') return; // Only 'entries' hold information we'd want to use.
+        if (entry.name) return; // Entries with names generally refer to races and books, not of use to us.
+
+        filteredEntries.push(entry);
+        if (filteredEntries.length >= 2) return; // Generally the first two entries are the actual descriptions of a creature.
     });
 
-    let creatureList: JsonCreature[] = [];
-    (Object.values(creatures) as Creature[]).forEach((creature: Creature) => {
-        recursivelyInherit(creature, creatures);
+    return filteredEntries;
+}
 
-        const key = getKey(creature.name, creature.source);
-        const fluffCreature = fluffCreatures[key];
-        if (fluffCreature) creature.mergeWithFluff(fluffCreature);
+export function getCreatures(): Creature[] {
+    const [baseCreatures, baseFluffs] = loadCreaturesFromIndex();
 
-        creatureList.push({
-            name: creature.name,
-            source: creature.source,
-            subtitle: creature.subtitle,
-            summonedBySpell: creature.summonedBySpell,
-            tokenUrl: creature.tokenUrl,
-            url: creature.url,
-            description: creature.description,
-        });
-    });
+    const creatures: Creature[] = [];
+    const fluffs: any[] = [];
 
-    return creatureList;
+    // Get creatures
+    for (const creature of baseCreatures) {
+        const fullCreature = handleCopy(creature, baseCreatures);
+        const versions = handleVersions(fullCreature);
+        creatures.push(fullCreature, ...versions);
+    }
+
+    // Get fluffs
+    for (const fluff of baseFluffs) {
+        const fullFluff = handleCopy(fluff, baseFluffs);
+        const versions = handleVersions(fullFluff);
+        fluffs.push(fullFluff, ...versions);
+    }
+
+    // Parse creatures
+    const parsed: Creature[] = [];
+    for (const creature of creatures) {
+        const fluff = findEntry(fluffs, creature.name, creature.source);
+        parsed.push(buildCreature(creature, fluff));
+    }
+
+    return parsed;
 }
