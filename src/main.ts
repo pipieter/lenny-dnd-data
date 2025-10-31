@@ -70,7 +70,7 @@ function main(): void {
     stopwatch.log('Sources retrieved');
 
     const vehicles = getVehicles(data);
-    stopwatch.log('Vehicles retrieved.')
+    stopwatch.log('Vehicles retrieved.');
 
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');
