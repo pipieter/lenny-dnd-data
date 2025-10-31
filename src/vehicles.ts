@@ -94,18 +94,34 @@ interface ParsedVehicle {
     description: Description[];
 }
 
+function getVehicleType(vehicle: Vehicle): string {
+    const typeMap: Record<string, string> = {
+        OBJECT: 'Object',
+        SHIP: 'Ship',
+        SPELLJAMMER: 'Spelljammer',
+        INFWAR: 'Infernal War Machine',
+        CREATURE: 'Creature',
+    };
+    const type = typeMap[vehicle.vehicleType];
+    if (type) return type;
+
+    throw `Unsupported vehicle type: ${vehicle.vehicleType}`;
+}
+
 export function getVehicles(data: any): ParsedVehicle[] {
     return (data.vehicle as Vehicle[]).map((v) => {
-        const url = getVehiclesUrl(v.name, v.source)
+        const vehicleType = getVehicleType(v);
+        const url = getVehiclesUrl(v.name, v.source);
         const tokenUrl = v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null;
         const description = v.entries ? parseDescriptions('', v.entries) : [];
 
         return {
             name: v.name,
             source: v.source,
+            vehicleType: vehicleType,
             url: url,
             tokenUrl: tokenUrl,
-            description: description
-        }
+            description: description,
+        };
     });
 }
