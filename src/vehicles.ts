@@ -89,11 +89,30 @@ interface Vehicle {
 interface ParsedVehicle {
     name: string;
     source: string;
+    subtitle: string;
     url: string;
     tokenUrl: string | null;
-    size: string | null;
-    vehicleType: string;
+    creatureCapacity: string | null;
+    cargoCapacity: string | null;
+    travelPace: string | null;
     description: Description[];
+}
+
+// CAPACITY
+function getVehicleCreatureCapacity(vehicle: Vehicle): string | null {
+    const parts: string[] = [];
+
+    if (vehicle.capCrew) parts.push(`${vehicle.capCrew} crew`);
+    if (vehicle.capPassenger) parts.push(`${vehicle.capPassenger} passengers`);
+
+    if (parts.length === 0) return null;
+    return parts.join(", ")
+}
+
+// SUBTITLE PARSING
+function getVehicleDimensions(vehicle: Vehicle): string {
+    if (!vehicle.dimensions || vehicle.dimensions.length === 0) return "";
+    return `(${vehicle.dimensions.join(" by ")})`;
 }
 
 function getVehicleType(vehicle: Vehicle): string {
@@ -110,21 +129,34 @@ function getVehicleType(vehicle: Vehicle): string {
     throw `Unsupported vehicle type: ${vehicle.vehicleType}`;
 }
 
+function getVehicleSubtitle(vehicle: Vehicle): string {
+    const parts: string[] = [];
+    if (vehicle.size) parts.push(parseSizes(vehicle.size));
+    parts.push(getVehicleType(vehicle));
+    if (vehicle.dimensions) parts.push(getVehicleDimensions(vehicle));
+
+    return parts.join(" ");
+}
+
+// MAIN COMMAND
 export function getVehicles(data: any): ParsedVehicle[] {
     return (data.vehicle as Vehicle[]).map((v) => {
-        const vehicleType = getVehicleType(v);
+        const subtitle = getVehicleSubtitle(v);
         const url = getVehiclesUrl(v.name, v.source);
         const tokenUrl = v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null;
+        const creatureCapacity = getVehicleCreatureCapacity(v);
+        const cargoCapacity = v.capCargo ? `${v.capCargo} tons` : null;
         const description = v.entries ? parseDescriptions('', v.entries) : [];
-        const size = v.size ? parseSizes(v.size) : null;
 
         return {
             name: v.name,
             source: v.source,
+            subtitle,
             url,
             tokenUrl,
-            size,
-            vehicleType,
+            creatureCapacity,
+            cargoCapacity,
+            travelPace: null, // TODO Parse pace & speed.
             description,
         };
     });
