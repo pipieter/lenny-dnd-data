@@ -94,6 +94,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Note: all regexes should end with a g, which stands for "global"
     text = text.replaceAll(/\{@atk rw\} /g, '+');
     text = text.replaceAll(/\{@atk rw\}/g, '+');
+    text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@action ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
