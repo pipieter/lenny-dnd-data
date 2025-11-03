@@ -106,13 +106,13 @@ function getVehicleCreatureCapacity(vehicle: Vehicle): string | null {
     if (vehicle.capPassenger) parts.push(`${vehicle.capPassenger} passengers`);
 
     if (parts.length === 0) return null;
-    return parts.join(", ")
+    return parts.join(', ');
 }
 
 // SUBTITLE PARSING
 function getVehicleDimensions(vehicle: Vehicle): string {
-    if (!vehicle.dimensions || vehicle.dimensions.length === 0) return "";
-    return `(${vehicle.dimensions.join(" by ")})`;
+    if (!vehicle.dimensions || vehicle.dimensions.length === 0) return '';
+    return `(${vehicle.dimensions.join(' by ')})`;
 }
 
 function getVehicleType(vehicle: Vehicle): string {
@@ -135,7 +135,7 @@ function getVehicleSubtitle(vehicle: Vehicle): string {
     parts.push(getVehicleType(vehicle));
     if (vehicle.dimensions) parts.push(getVehicleDimensions(vehicle));
 
-    return parts.join(" ");
+    return parts.join(' ');
 }
 
 // MAIN COMMAND
