@@ -1,6 +1,6 @@
-import { handleCopy, handleVersions } from './5etools-conversion/copy';
+import { writeFileSync } from 'fs';
 import { findEntry } from './5etools-conversion/find';
-import { readJsonFile } from './data';
+import { loadData, readJsonFile } from './data';
 import {
     Description,
     parseCreatureSummonSpell,
@@ -9,6 +9,7 @@ import {
     parseSizes,
 } from './parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from './urls';
+import { complete } from './5etools-conversion/copy';
 
 const BASEPATH = '5etools-src/data/bestiary/';
 
@@ -101,7 +102,12 @@ function filterEntries(entries: any[]): any[] {
     return filteredEntries;
 }
 
-export function getCreatures(): Creature[] {
+function getTemplates(): any[] {
+    return readJsonFile(BASEPATH + 'template.json').monsterTemplate;
+}
+
+export function getCreatures(data: any): Creature[] {
+    const templates = getTemplates();
     const [baseCreatures, baseFluffs] = loadCreaturesFromIndex();
 
     const creatures: Creature[] = [];
@@ -109,16 +115,14 @@ export function getCreatures(): Creature[] {
 
     // Get creatures
     for (const creature of baseCreatures) {
-        const fullCreature = handleCopy(creature, baseCreatures);
-        const versions = handleVersions(fullCreature);
-        creatures.push(fullCreature, ...versions);
+        const { full, versions } = complete(creature, baseCreatures, templates);
+        creatures.push(full, ...versions);
     }
 
     // Get fluffs
     for (const fluff of baseFluffs) {
-        const fullFluff = handleCopy(fluff, baseFluffs);
-        const versions = handleVersions(fullFluff);
-        fluffs.push(fullFluff, ...versions);
+        const { full, versions } = complete(fluff, baseFluffs, templates);
+        fluffs.push(full, ...versions);
     }
 
     // Parse creatures

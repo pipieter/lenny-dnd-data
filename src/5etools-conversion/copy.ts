@@ -364,3 +364,46 @@ export function handleVersions(base: any): any[] {
 
     return versions;
 }
+
+function handleTemplate(base: any, templates: any[]): any {
+    base = structuredClone(base);
+
+    if (!base._copy?._templates?.length) return base;
+
+    const baseTemplates: any[] = base._copy._templates;
+    if (baseTemplates.length !== 1) {
+        throw new Error(
+            `Expected one template for ${base.name}|${base.source}, received ${baseTemplates.length}`
+        );
+    }
+
+    const baseTemplate = baseTemplates[0];
+    const template = templates.find(
+        (template) => baseTemplate.name === template.name && template.source === baseTemplate.source
+    );
+
+    if (!template) {
+        throw new Error(
+            `Could not find template ${baseTemplate.name}|${baseTemplate.source} for ${base.name}`
+        );
+    }
+
+    return base;
+}
+
+export function complete(
+    base: any,
+    entries: any[],
+    templates?: any[]
+): { full: any; versions: any[] } {
+    let handled = handleCopy(base, entries);
+    if (templates) {
+        handled = handleTemplate(base, templates);
+    }
+    delete handled.variant; // Variants are not handled, as they provide additional information for the DM
+
+    const versions = handleVersions(handled);
+    delete handled._versions;
+
+    return { full: handled, versions };
+}

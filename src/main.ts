@@ -35,7 +35,7 @@ function main(): void {
     const { conditions, diseases } = getConditionsStatusesAndDiseases(data);
     stopwatch.log('Conditions & Diseases retrieved');
 
-    const creatures = getCreatures();
+    const creatures = getCreatures(data);
     stopwatch.log('Creatures retrieved');
 
     const { classes, classFeats } = getClassesAndClassFeats();
