@@ -64,6 +64,7 @@ function cleanDNDatk(text: string): string {
         ['{@atkr m}', 'Melee Attack Roll'],
         ['{@atkr r}', 'Ranged Attack Roll'],
         ['{@atkr m,r}', 'Melee or Ranged Attack Roll'],
+        ['{@atk g}', 'Magical Attack'],
     ]);
 
     for (const pattern of replacements.keys()) {

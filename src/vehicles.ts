@@ -98,7 +98,21 @@ interface ParsedVehicle {
     description: Description[];
 }
 
-// CAPACITY
+function getVehicleDescription(vehicle: Vehicle): Description[] {
+    let description: Description[] = [];
+    if (vehicle.entries) description.push(...parseDescriptions('', vehicle.entries));
+    if (vehicle.control) {
+        for (const control of vehicle.control)
+            description.push(...parseDescriptions(`Control: ${control.name}`, control.entries));
+    }
+    if (vehicle.weapon) {
+        for (const weapon of vehicle.weapon)
+            description.push(...parseDescriptions(`Weapon: ${weapon.name}`, weapon.entries));
+    }
+
+    return description;
+}
+
 function getVehicleCreatureCapacity(vehicle: Vehicle): string | null {
     const parts: string[] = [];
 
@@ -109,7 +123,6 @@ function getVehicleCreatureCapacity(vehicle: Vehicle): string | null {
     return parts.join(', ');
 }
 
-// SUBTITLE PARSING
 function getVehicleDimensions(vehicle: Vehicle): string {
     if (!vehicle.dimensions || vehicle.dimensions.length === 0) return '';
     return `(${vehicle.dimensions.join(' by ')})`;
@@ -146,7 +159,7 @@ export function getVehicles(data: any): ParsedVehicle[] {
         const tokenUrl = v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null;
         const creatureCapacity = getVehicleCreatureCapacity(v);
         const cargoCapacity = v.capCargo ? `${v.capCargo} tons` : null;
-        const description = v.entries ? parseDescriptions('', v.entries) : [];
+        const description = getVehicleDescription(v);
 
         return {
             name: v.name,

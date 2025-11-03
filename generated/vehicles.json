@@ -200,7 +200,13 @@
     "creatureCapacity": "5 crew, 60 passengers",
     "cargoCapacity": null,
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistas",
+        "type": "text",
+        "value": "+6 to hit, range 120/480 ft., one target. *Hit:* 16 (**3d10**) piercing damage."
+      }
+    ]
   },
   {
     "name": "Astral Skiff",
@@ -222,7 +228,28 @@
     "creatureCapacity": "20 crew, 10 passengers",
     "cargoCapacity": "1 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Control: Helm",
+        "type": "text",
+        "value": "Move up to the speed of the ship's propeller, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+      },
+      {
+        "name": "Control: Balloon",
+        "type": "text",
+        "value": "If its balloon is destroyed, a battle balloon cannot maintain altitude."
+      },
+      {
+        "name": "Weapon: Green Flame Arbalester",
+        "type": "text",
+        "value": "+8 to hit, range 200/800 ft. (can't hit targets within 60 ft. of it) one target. *Hit:* 16 (**3d10**) piercing damage and 22 (**4d10**) fire damage. If the attack misses, the DM determines where the arbalester bolt hits. Each creature within 10 feet of that spot must make a DC 15 Dexterity saving throw to avoid the bolt as it shatters, taking 5 (**1d10**) piercing damage and 5 (**1d10**) fire damage on a failed save."
+      },
+      {
+        "name": "Weapon: Harpoon Gun",
+        "type": "text",
+        "value": "+8 to hit, range 120/480 ft., one target. *Hit:* 11 (**2d10**) piercing damage, and the target is grappled (escape DC 16). Until the grapple ends, the target's speed is halved, and it can't move farther away from the battle balloon. Each of the battle balloon's harpoon guns can grapple one target. While it has one or more targets grappled with its harpoon gun attack, the battle balloon's speed is not halved."
+      }
+    ]
   },
   {
     "name": "Bombard",
@@ -233,7 +260,18 @@
     "creatureCapacity": "12 crew",
     "cargoCapacity": "150 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistae",
+        "type": "text",
+        "value": "It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Giant Cannon",
+        "type": "text",
+        "value": "It takes 3 actions to load the enormous cannon and 1 action to fire it."
+      }
+    ]
   },
   {
     "name": "Damselfly Ship",
@@ -244,7 +282,18 @@
     "creatureCapacity": "9 crew",
     "cargoCapacity": "5 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballista",
+        "type": "text",
+        "value": "It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Mangonel",
+        "type": "text",
+        "value": "It takes 2 actions to load the mangonel, 1 action to aim it using the turret rotator (area 2 on the accompanying deck plan), and 1 action to fire it."
+      }
+    ]
   },
   {
     "name": "Demon Grinder",
@@ -277,7 +326,18 @@
     "creatureCapacity": "10 crew",
     "cargoCapacity": "13 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballista",
+        "type": "text",
+        "value": "It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Mangonel",
+        "type": "text",
+        "value": "It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it."
+      }
+    ]
   },
   {
     "name": "Galley",
@@ -288,7 +348,28 @@
     "creatureCapacity": "80 crew, 40 passengers",
     "cargoCapacity": "150 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Control: Helm",
+        "type": "text",
+        "value": "Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the galley can't turn."
+      },
+      {
+        "name": "Weapon: Ballistas",
+        "type": "text",
+        "value": "+6 to hit, range 120/480 ft., one target. *Hit:* 16 (**3d10**) piercing damage."
+      },
+      {
+        "name": "Weapon: Mangonels",
+        "type": "text",
+        "value": "+5 to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. *Hit:* 27 (**5d10**) bludgeoning damage."
+      },
+      {
+        "name": "Weapon: Naval Ram",
+        "type": "text",
+        "value": "The galley has advantage on all saving throws relating to crashing when it crashes into a creature or an object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the galley."
+      }
+    ]
   },
   {
     "name": "Hammerhead Ship",
@@ -299,7 +380,23 @@
     "creatureCapacity": "15 crew",
     "cargoCapacity": "30 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballista",
+        "type": "text",
+        "value": "It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Mangonels",
+        "type": "text",
+        "value": "It takes 2 actions to load a mangonel, 2 actions to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Blunt Ram",
+        "type": "text",
+        "value": "The ship's spelljammer can make the following attack when the ship runs into another object or into a Gargantuan creature (see \"Crashing\" in chapter 2 of Astral Adventurer's Guide)."
+      }
+    ]
   },
   {
     "name": "Keelboat",
@@ -310,7 +407,23 @@
     "creatureCapacity": "3 crew, 4 passengers",
     "cargoCapacity": "0.5 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Control: Helm",
+        "type": "text",
+        "value": "Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the keelboat can't turn."
+      },
+      {
+        "name": "Weapon: Ballista",
+        "type": "text",
+        "value": "+6 to hit, range 120/480 ft., one target. *Hit:* 16 (**3d10**) piercing damage."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Keelboats typically include a ballista only when they are equipped for combat."
+      }
+    ]
   },
   {
     "name": "Lamprey Ship",
@@ -321,7 +434,18 @@
     "creatureCapacity": "15 crew",
     "cargoCapacity": "6 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistae",
+        "type": "text",
+        "value": "It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Grappling Jaws",
+        "type": "text",
+        "value": "It takes 1 action to make a Grappling Jaws attack."
+      }
+    ]
   },
   {
     "name": "Living Ship",
@@ -332,7 +456,13 @@
     "creatureCapacity": "5 crew",
     "cargoCapacity": "10 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballista",
+        "type": "text",
+        "value": "It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it."
+      }
+    ]
   },
   {
     "name": "Longship",
@@ -343,7 +473,13 @@
     "creatureCapacity": "40 crew, 100 passengers",
     "cargoCapacity": "10 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Control: Helm",
+        "type": "text",
+        "value": "Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the longship can't turn."
+      }
+    ]
   },
   {
     "name": "Mechanical Beholder",
@@ -354,7 +490,23 @@
     "creatureCapacity": "1 crew, 5 passengers",
     "cargoCapacity": "crew and passengers' normal gear tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Control: Helm",
+        "type": "text",
+        "value": "Move up to the speed of the ship's magical propulsion unit, with one 90-degree turn. The helm can be attacked only if the hull has taken 100 or more damage. If the helm is destroyed, the mechanical beholder can't move."
+      },
+      {
+        "name": "Weapon: Eye Ray Tentacles",
+        "type": "text",
+        "value": "+The mechanical beholder shoots the following magical eye rays at up to three targets that would be visible to the crew and are within 120 feet of it."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Disintegration Ray**: If the target is a creature, it must succeed on a DC 15 Dexterity saving throw or take 18 (**4d8**) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.\n• **Enervation Ray**: The targeted creature must make a DC 15 Constitution saving throw, taking 18 (**4d8**) necrotic damage on a failed save, or half as much damage on a successful one.\n• **Paralyzing Ray**: The targeted creature must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+      }
+    ]
   },
   {
     "name": "Nautiloid",
@@ -365,7 +517,23 @@
     "creatureCapacity": "20 crew",
     "cargoCapacity": "17 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistae",
+        "type": "text",
+        "value": "It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Mangonel",
+        "type": "text",
+        "value": "It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Tentacles",
+        "type": "text",
+        "value": "As an action, the ship's spelljammer can make one of the following attacks with the ship's tentacles."
+      }
+    ]
   },
   {
     "name": "Nightspider",
@@ -376,7 +544,18 @@
     "creatureCapacity": "25 crew",
     "cargoCapacity": "50 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistae",
+        "type": "text",
+        "value": "It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Mangonel",
+        "type": "text",
+        "value": "It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it."
+      }
+    ]
   },
   {
     "name": "Planar Raider",
@@ -387,7 +566,18 @@
     "creatureCapacity": "10 crew, 100 passengers",
     "cargoCapacity": null,
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistas",
+        "type": "text",
+        "value": "+6 to hit, range 120/480 ft., one target. *Hit:* 16 (**3d10**) piercing damage."
+      },
+      {
+        "name": "Weapon: Catapult",
+        "type": "text",
+        "value": "+5 to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. *Hit:* 27 (**5d10**) bludgeoning damage."
+      }
+    ]
   },
   {
     "name": "Rowboat",
@@ -409,7 +599,23 @@
     "creatureCapacity": "30 crew, 20 passengers",
     "cargoCapacity": "100 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Control: Helm",
+        "type": "text",
+        "value": "Move up to the speed of its sails, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+      },
+      {
+        "name": "Weapon: Ballista",
+        "type": "text",
+        "value": "+6 to hit, range 120/480 ft., one target. *Hit:* 16 (**3d10**) piercing damage."
+      },
+      {
+        "name": "Weapon: Mangonel",
+        "type": "text",
+        "value": "+5 to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. *Hit:* 27 (**5d10**) bludgeoning damage."
+      }
+    ]
   },
   {
     "name": "Scavenger",
@@ -431,7 +637,23 @@
     "creatureCapacity": "12 crew",
     "cargoCapacity": "12 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballista",
+        "type": "text",
+        "value": "It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Claws",
+        "type": "text",
+        "value": "It takes 1 action to make a Claw attack."
+      },
+      {
+        "name": "Weapon: Mangonel",
+        "type": "text",
+        "value": "It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it."
+      }
+    ]
   },
   {
     "name": "Shrike Ship",
@@ -442,7 +664,18 @@
     "creatureCapacity": "11 crew",
     "cargoCapacity": "20 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistae",
+        "type": "text",
+        "value": "It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Piercing Ram",
+        "type": "text",
+        "value": "The ship's spelljammer can make the following attack when the ship runs into another object or into a Gargantuan creature (see \"Crashing\" earlier in the chapter)."
+      }
+    ]
   },
   {
     "name": "Space Galleon",
@@ -453,7 +686,18 @@
     "creatureCapacity": "20 crew",
     "cargoCapacity": "20 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistae",
+        "type": "text",
+        "value": "It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Mangonel",
+        "type": "text",
+        "value": "It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it."
+      }
+    ]
   },
   {
     "name": "Squid Ship",
@@ -464,7 +708,23 @@
     "creatureCapacity": "13 crew",
     "cargoCapacity": "20 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballista",
+        "type": "text",
+        "value": "It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Mangonels",
+        "type": "text",
+        "value": "It takes 2 actions to load a mangonel, 2 actions to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Piercing Ram",
+        "type": "text",
+        "value": "The ship's spelljammer can make the following attack when the ship runs into another object or into a Gargantuan creature (see \"Crashing\" in chapter 2 of Astral Adventurer's Guide)."
+      }
+    ]
   },
   {
     "name": "Stahlmaster",
@@ -486,7 +746,18 @@
     "creatureCapacity": "13 crew",
     "cargoCapacity": "30 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistae",
+        "type": "text",
+        "value": "It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Mangonel",
+        "type": "text",
+        "value": "It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it."
+      }
+    ]
   },
   {
     "name": "Tasha's Creeping Keelboat",
@@ -530,7 +801,18 @@
     "creatureCapacity": "16 crew",
     "cargoCapacity": "30 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballistae",
+        "type": "text",
+        "value": "It takes 1 action to load a ballista, 1 action to aim it, and 1 action to fire it."
+      },
+      {
+        "name": "Weapon: Mangonel",
+        "type": "text",
+        "value": "It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it."
+      }
+    ]
   },
   {
     "name": "Tyrant Ship",
@@ -541,7 +823,13 @@
     "creatureCapacity": "10 crew",
     "cargoCapacity": "20 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Eyestalk Cannons",
+        "type": "text",
+        "value": "This weapon looks like an eye mounted on an eyestalk. A beholder stationed in one of the tyrant ship's meditation pods can see through the eye by *concentrating* on it (as if *concentrating* on a spell) and use an action to make the following attack."
+      }
+    ]
   },
   {
     "name": "Venatrix",
@@ -563,7 +851,28 @@
     "creatureCapacity": "40 crew, 60 passengers",
     "cargoCapacity": "200 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Control: Helm",
+        "type": "text",
+        "value": "Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the warship can't turn."
+      },
+      {
+        "name": "Weapon: Ballistas",
+        "type": "text",
+        "value": "+6 to hit, range 120/480 ft., one target. *Hit:* 16 (**3d10**) piercing damage."
+      },
+      {
+        "name": "Weapon: Mangonels",
+        "type": "text",
+        "value": "+5 to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. *Hit:* 27 (**5d10**) bludgeoning damage."
+      },
+      {
+        "name": "Weapon: Naval Ram",
+        "type": "text",
+        "value": "The warship has advantage on all saving throws relating to crashing when it crashes into a creature or object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the warship."
+      }
+    ]
   },
   {
     "name": "Wasp Ship",
@@ -574,6 +883,12 @@
     "creatureCapacity": "5 crew",
     "cargoCapacity": "10 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Weapon: Ballista",
+        "type": "text",
+        "value": "It takes 1 action to load the ballista, 1 action to aim it, and 1 action to fire it."
+      }
+    ]
   }
 ]
