@@ -190,6 +190,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@object ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@feat ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(
@@ -246,6 +247,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             /\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2, p3) => `[${p3}](${getObjectsUrl(p1, p2)})`
         );
+        text = text.replaceAll(/\{@object ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(
             /\{@feat ([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2) => `[${p1}](${getFeatsUrl(p1, p2)})`

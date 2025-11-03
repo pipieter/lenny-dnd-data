@@ -1,4 +1,4 @@
-import { Description, parseDescriptions, parseSizes } from './parser';
+import { Description, DescriptionType, parseDescriptions, parseSizes } from './parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from './urls';
 
 interface Vehicle {
@@ -51,7 +51,7 @@ interface Vehicle {
             mode: string;
             entries: string[];
         }[];
-    };
+    }[];
     weapon?: {
         name: string;
         crew?: number;
@@ -66,7 +66,7 @@ interface Vehicle {
         }[];
     }[];
     actionThresholds: object;
-    action: (string | any)[];
+    action?: (string | any)[];
     trait: {
         name: string;
         entries: string[];
@@ -100,15 +100,41 @@ interface ParsedVehicle {
 
 function getVehicleDescription(vehicle: Vehicle): Description[] {
     let description: Description[] = [];
-    if (vehicle.entries) description.push(...parseDescriptions('', vehicle.entries));
-    if (vehicle.control) {
-        for (const control of vehicle.control)
-            description.push(...parseDescriptions(`Control: ${control.name}`, control.entries));
+    if (vehicle.entries)
+        description.push(...parseDescriptions('', vehicle.entries));
+
+    if (vehicle.action)
+        description.push(...parseDescriptions('Actions', vehicle.action));
+
+    if (vehicle.control)
+        description.push(
+            ...vehicle.control.flatMap(c =>
+                parseDescriptions(`Control: ${c.name}`, c.entries)
+            )
+        );
+
+    if (vehicle.movement) {
+        const movements = vehicle.movement.map(m => {
+            const speedText = m.speed
+                .map(s => `*${s.mode} Speed:* ${s.entries.join('\n')}`)
+                .join('\n\n');
+
+            return {
+                name: `Movement: ${m.name}`,
+                type: DescriptionType.text,
+                value: speedText
+            } as Description;
+        });
+
+        description.push(...movements);
     }
-    if (vehicle.weapon) {
-        for (const weapon of vehicle.weapon)
-            description.push(...parseDescriptions(`Weapon: ${weapon.name}`, weapon.entries));
-    }
+
+    if (vehicle.weapon)
+        description.push(
+            ...vehicle.weapon.flatMap(w =>
+                parseDescriptions(`Weapon: ${w.name}`, w.entries)
+            )
+        );
 
     return description;
 }

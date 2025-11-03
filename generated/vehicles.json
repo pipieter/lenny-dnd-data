@@ -230,6 +230,16 @@
     "travelPace": null,
     "description": [
       {
+        "name": "Actions",
+        "type": "text",
+        "value": "On its turn the battle balloon can take 3 actions if it has twenty or more crew, 2 actions if it has ten or more crew, or 1 action if it has fewer than ten crew, choosing from the options below. It cannot take any actions if it has no remaining crew."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Fire Ballista**: The battle balloon can fire its harpoon guns.\n• **Fire Green Flame Arbalester**: The battle balloon can fire its green flame arbalester.\n• **Move**: The battle balloon can use its helm to move using its propeller. If the battle balloon enters a Large or smaller creature's space, that creature is automatically pushed to the edge of the battle balloon's space. The creature must also succeed on a DC 15 Dexterity saving throw or take 5 (**1d10**) bludgeoning damage.\n• **Harpoon Haul**: The battle balloon can pull each target grappled by it up to 30 feet toward the battle balloon."
+      },
+      {
         "name": "Control: Helm",
         "type": "text",
         "value": "Move up to the speed of the ship's propeller, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
@@ -238,6 +248,11 @@
         "name": "Control: Balloon",
         "type": "text",
         "value": "If its balloon is destroyed, a battle balloon cannot maintain altitude."
+      },
+      {
+        "name": "Movement: Propeller",
+        "type": "text",
+        "value": "*air Speed:* 80 ft.; 50 ft. while flying into the wind; 100 ft. while flying with the wind"
       },
       {
         "name": "Weapon: Green Flame Arbalester",
@@ -350,9 +365,29 @@
     "travelPace": null,
     "description": [
       {
+        "name": "Actions",
+        "type": "text",
+        "value": "On its turn, the galley can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than forty crew and only 1 action if it has fewer than twenty. It can't take these actions if it has fewer than three crew."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Fire Ballistas**: The galley can fire its [ballistas](https://5e.tools/objects.html) (DMG, ch. 8).\n• **Fire Mangonels**: The galley can fire its [mangonels](https://5e.tools/objects.html) (DMG, ch. 8).\n• **Move**: The galley can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+      },
+      {
         "name": "Control: Helm",
         "type": "text",
         "value": "Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the galley can't turn."
+      },
+      {
+        "name": "Movement: Oars",
+        "type": "text",
+        "value": "*water Speed:* 30 ft. (requires at least 40 crew)"
+      },
+      {
+        "name": "Movement: Sails",
+        "type": "text",
+        "value": "*water Speed:* 35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind"
       },
       {
         "name": "Weapon: Ballistas",
@@ -409,9 +444,29 @@
     "travelPace": null,
     "description": [
       {
+        "name": "Actions",
+        "type": "text",
+        "value": "On its turn, the keelboat can take 2 actions, choosing from the options below. It can take only 1 action if it has only one crew. It can't take these actions if it has no crew."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Fire Ballista**: The keelboat can fire its __ballista__ (DMG, ch. 8).\n• **Move**: The keelboat can use its helm to move with its oars or sails."
+      },
+      {
         "name": "Control: Helm",
         "type": "text",
         "value": "Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the keelboat can't turn."
+      },
+      {
+        "name": "Movement: Oars",
+        "type": "text",
+        "value": "*water Speed:* 20 ft."
+      },
+      {
+        "name": "Movement: Sails",
+        "type": "text",
+        "value": "*water Speed:* 25 ft.; 15 ft. while sailing into the wind; 35 ft. while sailing with the wind."
       },
       {
         "name": "Weapon: Ballista",
@@ -475,9 +530,29 @@
     "travelPace": null,
     "description": [
       {
+        "name": "Actions",
+        "type": "text",
+        "value": "On its turn, the longship can take the move action below. It can't take this action if it has no crew."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Move**: The longship can use its helm to move with its oars or sails."
+      },
+      {
         "name": "Control: Helm",
         "type": "text",
         "value": "Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the longship can't turn."
+      },
+      {
+        "name": "Movement: Oars",
+        "type": "text",
+        "value": "*water Speed:* 20 ft. (requires at least 20 crew)"
+      },
+      {
+        "name": "Movement: Sails",
+        "type": "text",
+        "value": "*water Speed:* 45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
       }
     ]
   },
@@ -492,9 +567,24 @@
     "travelPace": null,
     "description": [
       {
+        "name": "Actions",
+        "type": "text",
+        "value": "On its turn the mechanical beholder can take 1 action. It cannot take any actions if it has no crew."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Eye Rays**: The mechanical beholder can use its eye ray tentacles.\n• **Move**: The mechanical beholder can use its helm to move using its magical propulsion unit."
+      },
+      {
         "name": "Control: Helm",
         "type": "text",
         "value": "Move up to the speed of the ship's magical propulsion unit, with one 90-degree turn. The helm can be attacked only if the hull has taken 100 or more damage. If the helm is destroyed, the mechanical beholder can't move."
+      },
+      {
+        "name": "Movement: Magical Propulsion Unit",
+        "type": "text",
+        "value": "*magical Speed:* burrow 30 ft., fly 30 ft. (hover), swim 30 ft."
       },
       {
         "name": "Weapon: Eye Ray Tentacles",
@@ -588,7 +678,23 @@
     "creatureCapacity": "2 crew, 2 passengers",
     "cargoCapacity": "0.25 tons",
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Actions",
+        "type": "text",
+        "value": "On its turn, the rowboat can take the move action below. It can't take this action if it has no crew."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Move**: The rowboat can move using its oars."
+      },
+      {
+        "name": "Movement: Oars",
+        "type": "text",
+        "value": "*water Speed:* 15 ft.\nMove up to its speed, with one 90-degree turn. Without oars, the rowboat's speed is 0."
+      }
+    ]
   },
   {
     "name": "Sailing Ship",
@@ -601,9 +707,24 @@
     "travelPace": null,
     "description": [
       {
+        "name": "Actions",
+        "type": "text",
+        "value": "On its turn, the ship can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than twenty crew and only 1 action if it has fewer than ten. It can't take these actions if it has fewer than three crew."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Fire Ballista**: The ship can fire its __ballista__ (DMG, ch. 8).\n• **Fire Mangonel**: The ship can fire its __mangonel__ (DMG, ch. 8).\n• **Move**: The ship can use its helm to move with its sails."
+      },
+      {
         "name": "Control: Helm",
         "type": "text",
         "value": "Move up to the speed of its sails, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+      },
+      {
+        "name": "Movement: Sails",
+        "type": "text",
+        "value": "*water Speed:* 45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
       },
       {
         "name": "Weapon: Ballista",
@@ -735,7 +856,23 @@
     "creatureCapacity": null,
     "cargoCapacity": null,
     "travelPace": null,
-    "description": []
+    "description": [
+      {
+        "name": "Actions",
+        "type": "text",
+        "value": "The Stahlmaster makes two melee attacks, or one melee attack and one ranged attack."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "+6 to hit, reach 5 ft., one target. *Hit:* 9 (**1d10 + 4**) bludgeoning damage."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "+2 to hit, range 30/120 ft., one target. *Hit:* 6 (**1d12**) piercing damage."
+      }
+    ]
   },
   {
     "name": "Star Moth",
@@ -853,9 +990,29 @@
     "travelPace": null,
     "description": [
       {
+        "name": "Actions",
+        "type": "text",
+        "value": "On its turn, the warship can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than twenty crew and only 1 action if it has fewer than ten. It can't take these actions if it has fewer than three crew."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Fire Ballistas**: The warship can fire its [ballistas](https://5e.tools/objects.html) (DMG, ch. 8).\n• **Fire Mangonels**: The warship can fire its [mangonels](https://5e.tools/objects.html) (DMG, ch. 8).\n• **Move**: The warship can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+      },
+      {
         "name": "Control: Helm",
         "type": "text",
         "value": "Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the warship can't turn."
+      },
+      {
+        "name": "Movement: Oars",
+        "type": "text",
+        "value": "*water Speed:* 20 ft. (requires at least 20 crew)"
+      },
+      {
+        "name": "Movement: Sails",
+        "type": "text",
+        "value": "*water Speed:* 35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind."
       },
       {
         "name": "Weapon: Ballistas",
