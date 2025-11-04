@@ -101,7 +101,7 @@ function getVehiclePace(vehicle: Vehicle): string | null {
     if (vehicle.speed) {
         const speed = vehicle.speed;
         if (typeof speed === 'string' || typeof speed === 'number') {
-            parts.push(`${speed} ft.`)
+            parts.push(`${speed} ft.`);
         } else if (typeof speed === 'object') {
             let speedParts: string[] = [];
             let note = null;
@@ -116,17 +116,15 @@ function getVehiclePace(vehicle: Vehicle): string | null {
             let speedString = joinStringsWithOr(speedParts, false);
             if (note) speedString = `${speedString} ${note}`;
             parts.push(speedString);
-
         } else {
-            throw `vehicle.speed has unsupported type: ${typeof speed} (${speed})`
+            throw `vehicle.speed has unsupported type: ${typeof speed} (${speed})`;
         }
     }
 
     if (vehicle.pace) {
         const pace = vehicle.pace;
         if (typeof pace === 'string' || typeof pace === 'number') {
-            parts.push(`${pace} mph.`)
-
+            parts.push(`${pace} mph.`);
         } else if (typeof pace === 'object') {
             let paceParts: string[] = [];
             let note = null;
@@ -141,9 +139,8 @@ function getVehiclePace(vehicle: Vehicle): string | null {
             let paceString = joinStringsWithOr(paceParts, false);
             if (note) paceString = `${paceString} ${note}`;
             parts.push(paceString);
-
         } else {
-            throw `vehicle.speed has unsupported type: ${pace}`
+            throw `vehicle.speed has unsupported type: ${pace}`;
         }
     }
 
@@ -153,29 +150,25 @@ function getVehiclePace(vehicle: Vehicle): string | null {
 
 function getVehicleDescription(vehicle: Vehicle): Description[] {
     let description: Description[] = [];
-    if (vehicle.entries)
-        description.push(...parseDescriptions('', vehicle.entries));
+    if (vehicle.entries) description.push(...parseDescriptions('', vehicle.entries));
 
-    if (vehicle.action)
-        description.push(...parseDescriptions('Actions', vehicle.action));
+    if (vehicle.action) description.push(...parseDescriptions('Actions', vehicle.action));
 
     if (vehicle.control)
         description.push(
-            ...vehicle.control.flatMap(c =>
-                parseDescriptions(`Control: ${c.name}`, c.entries)
-            )
+            ...vehicle.control.flatMap((c) => parseDescriptions(`Control: ${c.name}`, c.entries))
         );
 
     if (vehicle.movement) {
-        const movements = vehicle.movement.map(m => {
+        const movements = vehicle.movement.map((m) => {
             const speedText = m.speed
-                .map(s => `*${s.mode} Speed:* ${s.entries.join('\n')}`)
+                .map((s) => `*${s.mode} Speed:* ${s.entries.join('\n')}`)
                 .join('\n\n');
 
             return {
                 name: `Movement: ${m.name}`,
                 type: DescriptionType.text,
-                value: speedText
+                value: speedText,
             } as Description;
         });
 
@@ -184,9 +177,7 @@ function getVehicleDescription(vehicle: Vehicle): Description[] {
 
     if (vehicle.weapon)
         description.push(
-            ...vehicle.weapon.flatMap(w =>
-                parseDescriptions(`Weapon: ${w.name}`, w.entries)
-            )
+            ...vehicle.weapon.flatMap((w) => parseDescriptions(`Weapon: ${w.name}`, w.entries))
         );
 
     return description;
