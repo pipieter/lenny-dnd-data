@@ -26,6 +26,11 @@ export function getCreatureTokenUrl(name: string, source: string) {
     return cleanUrl(url);
 }
 
+export function getObjectTokenUrl(name: string, source: string) {
+    const url = `https://5e.tools/img/objects/tokens/${source}/${name}.webp`;
+    return cleanUrl(url);
+}
+
 /*
  * ##### URLS WITH NAME-SOURCE QUERIES #####
  */
