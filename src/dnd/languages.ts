@@ -25,7 +25,7 @@ function getTypicalSpeakers(language: Language): string | null {
     const typicalSpeakers = language.typicalSpeakers;
     if (!typicalSpeakers) return null;
 
-    let speakers: string[] = [];
+    const speakers: string[] = [];
     for (const speaker of typicalSpeakers) {
         const cleanSpeaker = cleanDNDText(speaker, true);
         speakers.push(cleanSpeaker);

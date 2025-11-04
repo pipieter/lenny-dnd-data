@@ -60,7 +60,7 @@ function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): st
     if (table.caption) return table.caption;
 
     // Some tablegroup tables do not have captions, in this case we grab the unique labels as a caption.
-    let groupLabels = [];
+    const groupLabels = [];
     for (const groupTable of tableGroup.tables) {
         if (groupTable == table) continue;
         for (const label of groupTable.colLabels) {
@@ -68,7 +68,7 @@ function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): st
         }
     }
 
-    let uniqueLabels = [];
+    const uniqueLabels = [];
     for (const label of table.colLabels) {
         if (/^d\d+$/.test(label)) continue;
         if (groupLabels.includes(label)) continue;
@@ -83,7 +83,7 @@ function getGendataTables(): ParsedTable[] {
     const gendataPath = '5etools-src/data/generated/gendata-tables.json';
     const gendata: TableGendata = readJsonFile(gendataPath);
 
-    let tables: ParsedTable[] = gendata.table.map((table) => {
+    const tables: ParsedTable[] = gendata.table.map((table) => {
         return {
             name: table.name,
             source: table.source,
@@ -95,7 +95,7 @@ function getGendataTables(): ParsedTable[] {
     });
 
     for (const tableGroup of gendata.tableGroup) {
-        let items = tableGroup.tables.map((table) => {
+        const items = tableGroup.tables.map((table) => {
             return {
                 name: `${tableGroup.name} [${getTableGroupTableCaption(table, tableGroup)}]`,
                 source: tableGroup.source,
@@ -112,7 +112,7 @@ function getGendataTables(): ParsedTable[] {
 }
 
 export function getTables(data: any): ParsedTable[] {
-    let tables: ParsedTable[] = (data.table as TableData[]).map((table) => {
+    const tables: ParsedTable[] = (data.table as TableData[]).map((table) => {
         return {
             name: table.name,
             source: table.source,
@@ -135,7 +135,7 @@ export function getTables(data: any): ParsedTable[] {
             const ranges = row[0].split(/-|–/);
 
             if (ranges[0] == '00') ranges[0] = '100';
-            let min = parseInt(ranges[0]);
+            const min = parseInt(ranges[0]);
             let max = min;
 
             if (ranges.length > 1) {

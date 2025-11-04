@@ -91,11 +91,11 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
 function getFeatPrerequisites(feat: Feat): string | null {
     if (!feat.prerequisite) return null;
 
-    let prerequisites: string[][] = [];
+    const prerequisites: string[][] = [];
     for (const prerequisite of feat.prerequisite) {
         const keys = Object.keys(prerequisite);
 
-        let group: string[] = [];
+        const group: string[] = [];
         for (const key of keys) {
             const entry = prerequisite[key];
 
@@ -126,7 +126,7 @@ function getFeatPrerequisites(feat: Feat): string | null {
 
                 case 'ability':
                     const abilityKeys = Object.keys(entry[0]);
-                    let abilityGroup = [];
+                    const abilityGroup = [];
                     for (const abilityKey of abilityKeys) {
                         const score = parseAbilityScore(abilityKey);
                         const amount = entry[0][abilityKey];
@@ -142,7 +142,7 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     break;
 
                 case 'race':
-                    let races: string[] = [];
+                    const races: string[] = [];
                     for (const race of entry) {
                         if (race.displayEntry) {
                             races.push(race.displayEntry);
@@ -161,7 +161,7 @@ function getFeatPrerequisites(feat: Feat): string | null {
                 case 'proficiency':
                     const proficiencyKeys = Object.keys(entry[0]); // Only ever has 1 proficiency
 
-                    let proficiencies: string[] = [];
+                    const proficiencies: string[] = [];
                     for (const profKey of proficiencyKeys) {
                         const profValue = entry[0][profKey];
 

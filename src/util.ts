@@ -1,6 +1,6 @@
 import kleur = require('kleur');
 import { title } from './parser';
-var commandExistsSync = require('command-exists').sync;
+const commandExistsSync = require('command-exists').sync;
 
 export const BulletPoint = '\u2022'; // U+2022 •
 

@@ -1,5 +1,4 @@
-import { subtle } from 'crypto';
-import { Description, DescriptionType, parseDescriptions, parseSizes, title } from '../parser';
+import { Description, DescriptionType, parseDescriptions, parseSizes } from '../parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
@@ -105,14 +104,14 @@ interface ParsedVehicle {
 }
 
 function getVehiclePace(vehicle: Vehicle): string | null {
-    let parts: string[] = [];
+    const parts: string[] = [];
 
     if (vehicle.speed) {
         const speed = vehicle.speed;
         if (typeof speed === 'string' || typeof speed === 'number') {
             parts.push(`${speed} ft.`);
         } else if (typeof speed === 'object') {
-            let speedParts: string[] = [];
+            const speedParts: string[] = [];
             let note = null;
             for (const [k, v] of Object.entries(speed)) {
                 if (k === 'note') {
@@ -135,7 +134,7 @@ function getVehiclePace(vehicle: Vehicle): string | null {
         if (typeof pace === 'string' || typeof pace === 'number') {
             parts.push(`${pace} mph.`);
         } else if (typeof pace === 'object') {
-            let paceParts: string[] = [];
+            const paceParts: string[] = [];
             let note = null;
             for (const [k, v] of Object.entries(pace)) {
                 if (k === 'note') {
@@ -158,7 +157,7 @@ function getVehiclePace(vehicle: Vehicle): string | null {
 }
 
 function getVehicleDescription(vehicle: Vehicle): Description[] {
-    let description: Description[] = [];
+    const description: Description[] = [];
     if (vehicle.entries) description.push(...parseDescriptions('', vehicle.entries));
 
     if (vehicle.action) description.push(...parseDescriptions('Actions', vehicle.action));
@@ -231,7 +230,7 @@ function getVehicleSubtitle(vehicle: Vehicle): string {
 }
 
 function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
-    let types: string[] = [];
+    const types: string[] = [];
     const typeMap: Record<string, string> = {
         'SHP:H': 'Ship Upgrade, Hull',
         'SHP:M': 'Ship Upgrade, Movement',
