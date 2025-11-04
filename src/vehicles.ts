@@ -1,3 +1,4 @@
+import { subtle } from 'crypto';
 import { Description, DescriptionType, parseDescriptions, parseSizes, title } from './parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from './urls';
 import { joinStringsWithOr } from './util';
@@ -81,6 +82,14 @@ interface Vehicle {
     hasToken: boolean;
     hasFluff?: boolean;
     hasFluffImages: boolean;
+}
+
+interface VehicleUpgrade {
+    name: string;
+    source: string;
+    page: number;
+    upgradeType: string[];
+    entries: (string | any)[];
 }
 
 interface ParsedVehicle {
@@ -209,7 +218,7 @@ function getVehicleType(vehicle: Vehicle): string {
     const type = typeMap[vehicle.vehicleType];
     if (type) return type;
 
-    throw `Unsupported vehicle type: ${vehicle.vehicleType}`;
+    throw `Unsupported vehicle type in ${vehicle.name}: ${vehicle.vehicleType}`;
 }
 
 function getVehicleSubtitle(vehicle: Vehicle): string {
@@ -221,9 +230,31 @@ function getVehicleSubtitle(vehicle: Vehicle): string {
     return parts.join(' ');
 }
 
+function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
+    let types: string[] = [];
+    const typeMap: Record<string, string> = {
+        "SHP:H": "Ship Upgrade, Hull",
+        "SHP:M": "Ship Upgrade, Movement",
+        "SHP:W": "Ship Upgrade, Weapon",
+        "SHP:F": "Ship Upgrade, Figurehead",
+        "SHP:O": "Ship Upgrade, Miscellaneous",
+        "IWM:W": "Infernal War Machine Variant, Weapon",
+        "IWM:A": "Infernal War Machine Upgrade, Armor",
+        "IWM:G": "Infernal War Machine Upgrade, Gadget",
+    };
+    for (const upgradeType of upgrade.upgradeType) {
+        const type = typeMap[upgradeType];
+        if (!type) throw `Unsupported vehicle upgrade type in ${upgrade.name}: ${upgrade.upgradeType}`;
+        types.push(type);
+    }
+
+    return joinStringsWithOr(types, false);
+}
+
+
 // MAIN COMMAND
 export function getVehicles(data: any): ParsedVehicle[] {
-    return (data.vehicle as Vehicle[]).map((v) => {
+    const vehicles = (data.vehicle as Vehicle[]).map((v) => {
         const subtitle = getVehicleSubtitle(v);
         const url = getVehiclesUrl(v.name, v.source);
         const tokenUrl = v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null;
@@ -244,4 +275,19 @@ export function getVehicles(data: any): ParsedVehicle[] {
             description,
         };
     });
+    const vehicleUpgrades = (data.vehicleUpgrade as VehicleUpgrade[]).map((v) => {
+        return {
+            name: v.name,
+            source: v.source,
+            subtitle: 'TODO',
+            url: getVehiclesUrl(v.name, v.source),
+            tokenUrl: null,
+            creatureCapacity: null,
+            cargoCapacity: null,
+            travelPace: null,
+            description: v.entries ? parseDescriptions('', v.entries) : []
+        }
+    });
+
+    return [...vehicles, ...vehicleUpgrades];
 }
