@@ -30,7 +30,8 @@ export function getCreatureTokenUrl(name: string, source: string) {
 export function getObjectTokenUrl(name: string, source: string) {
     const url = `https://5e.tools/img/objects/tokens/${source}/${name}.webp`;
     return cleanUrl(url);
-  
+}
+
 export function getVehicleTokenUrl(name: string, source: string) {
     const url = `https://5e.tools/img/vehicles/tokens/${source}/${name}.webp`;
     return cleanUrl(url);
