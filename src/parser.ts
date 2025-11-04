@@ -797,6 +797,7 @@ export function parseSizes(sizes: string | string[]): string {
         ['L', 'Large'],
         ['H', 'Huge'],
         ['G', 'Gargantuan'],
+        ['V', 'Variable size'],
     ]);
 
     const words: string[] = [];

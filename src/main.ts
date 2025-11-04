@@ -1,4 +1,4 @@
-import { writeFileSync } from 'fs';
+import { write, writeFileSync } from 'fs';
 import { getConditionsStatusesAndDiseases } from './conditions';
 import { loadData } from './data';
 import { getSpells } from './spells';
@@ -15,6 +15,7 @@ import { getBackgrounds } from './backgrounds';
 import { getTables } from './tables';
 import { getSpecies } from './species';
 import { getSources } from './sources';
+import { getObjects } from './objects';
 import { getVehicles } from './vehicles';
 
 function main(): void {
@@ -69,6 +70,9 @@ function main(): void {
     const sources = getSources(data);
     stopwatch.log('Sources retrieved');
 
+    const objects = getObjects(data);
+    stopwatch.log('Objects retrieved');
+
     const vehicles = getVehicles(data);
     stopwatch.log('Vehicles retrieved.');
 
@@ -89,6 +93,7 @@ function main(): void {
     writeFileSync('./generated/tables.json', JSON.stringify(tables, null, 2), 'utf-8');
     writeFileSync('./generated/species.json', JSON.stringify(species, null, 2), 'utf-8');
     writeFileSync('./generated/sources.json', JSON.stringify(sources, null, 2), 'utf-8');
+    writeFileSync('./generated/objects.json', JSON.stringify(objects, null, 2), 'utf-8');
     writeFileSync('./generated/vehicles.json', JSON.stringify(vehicles, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');
