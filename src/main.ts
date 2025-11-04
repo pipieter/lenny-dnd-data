@@ -45,7 +45,7 @@ function main(): void {
     const { classes, classFeats } = getClassesAndClassFeats();
     stopwatch.log('Classes & ClassFeats retrieved');
 
-    const rules = getRules(data);
+    const rules = getRules();
     stopwatch.log('Rules retrieved');
 
     const actions = getActions(data);

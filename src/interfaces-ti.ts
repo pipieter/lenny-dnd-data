@@ -9,27 +9,128 @@ export const UID = t.iface([], {
     tag: 'string',
 });
 
+export const AdditionalSource = t.iface([], {
+    source: 'string',
+    page: 'number',
+});
+
+export const HRef = t.iface([], {
+    type: t.lit('internal'),
+    path: 'string',
+    hash: t.opt('string'),
+});
+
+export const ListItem = t.iface([], {
+    type: t.lit('item'),
+    name: 'string',
+    entry: t.opt('string'),
+    entries: t.opt(t.array('string')),
+});
+
+export const TableCell = t.iface([], {
+    type: t.lit('cell'),
+    width: 'number',
+    entry: 'string',
+});
+
+export const TableRow = t.iface([], {
+    type: t.lit('row'),
+    style: 'string',
+    row: t.array('string'),
+});
+
+export const GenTables = t.iface([], {
+    tableInclude: 'boolean',
+});
+
+export const TableData = t.iface([], {
+    genTables: 'GenTables',
+});
+
 export const DescriptionEntries = t.iface([], {
     type: t.lit('entries'),
     name: t.opt('string'),
+    page: t.opt('number'),
+    source: t.opt('string'),
     entries: t.array('Description'),
 });
 
 export const DescriptionList = t.iface([], {
     type: t.lit('list'),
-    items: t.array('string'),
+    name: t.opt('string'),
+    style: t.opt('string'),
+    columns: t.opt('number'),
+    items: t.array(t.union('string', 'ListItem')),
 });
 
 export const DescriptionTable = t.iface([], {
     type: t.lit('table'),
-    caption: 'string',
+    caption: t.opt('string'),
     colLabels: t.array('string'),
     colStyles: t.array('string'),
-    rows: t.array(t.array('string')),
+    rows: t.array(
+        t.union(t.array(t.union('string', 'number', 'Description', 'TableCell')), 'TableRow')
+    ),
+    footnotes: t.opt(t.array('string')),
+    isNameGenerator: t.opt('boolean'),
+    data: t.opt('TableData'),
+    srd52: t.opt('boolean'),
+    basicRules2024: t.opt('boolean'),
 });
 
 export const DescriptionInset = t.iface([], {
     type: t.lit('inset'),
+    name: 'string',
+    page: t.opt('number'),
+    source: t.opt('string'),
+    entries: t.array('Description'),
+});
+
+export const DescriptionInsetReadaloud = t.iface([], {
+    type: t.lit('insetReadaloud'),
+    page: 'number',
+    entries: t.array('Description'),
+});
+
+export const DescriptionQuote = t.iface([], {
+    type: t.lit('quote'),
+    by: 'string',
+    from: t.opt('string'),
+    skipMarks: t.opt('boolean'),
+    entries: t.array('Description'),
+});
+
+export const DescriptionStatblock = t.iface([], {
+    type: t.lit('statblock'),
+    name: 'string',
+    source: 'string',
+    page: 'number',
+    tag: 'string',
+});
+
+export const DescriptionInline = t.iface([], {
+    type: t.lit('inline'),
+    entries: t.array('Description'),
+});
+
+export const DescriptionLink = t.iface([], {
+    type: t.lit('link'),
+    href: 'HRef',
+    text: 'string',
+});
+
+export const DescriptionImage = t.iface([], {
+    type: t.lit('image'),
+    href: 'HRef',
+    title: t.opt('string'),
+    width: t.opt('number'),
+    height: t.opt('number'),
+    credit: t.opt('string'),
+    altText: t.opt('string'),
+});
+
+export const DescriptionSection = t.iface([], {
+    type: t.lit('section'),
     name: 'string',
     entries: t.array('Description'),
 });
@@ -39,7 +140,14 @@ export const Description = t.union(
     'DescriptionEntries',
     'DescriptionList',
     'DescriptionTable',
-    'DescriptionInset'
+    'DescriptionInset',
+    'DescriptionInsetReadaloud',
+    'DescriptionQuote',
+    'DescriptionStatblock',
+    'DescriptionInline',
+    'DescriptionLink',
+    'DescriptionImage',
+    'DescriptionSection'
 );
 
 export const Range = t.iface([], {
@@ -77,16 +185,45 @@ export const Action = t.iface([], {
     reprintedAs: t.opt(t.array(t.union('string', 'UID'))),
 });
 
+export const VariantRule = t.iface([], {
+    name: 'string',
+    source: 'string',
+    page: t.opt('number'),
+    additionalSources: t.opt(t.array('AdditionalSource')),
+    type: t.opt('string'),
+    srd: t.opt('boolean'),
+    srd52: t.opt('boolean'),
+    basicRules2024: t.opt('boolean'),
+    ruleType: t.opt(t.union(t.lit('C'), t.lit('O'), t.lit('V'), t.lit('VO'))),
+    entries: t.array('Description'),
+    reprintedAs: t.opt(t.array(t.union('string', 'UID'))),
+});
+
 const exportedTypeSuite: t.ITypeSuite = {
     UID,
+    AdditionalSource,
+    HRef,
+    ListItem,
+    TableCell,
+    TableRow,
+    GenTables,
+    TableData,
     DescriptionEntries,
     DescriptionList,
     DescriptionTable,
     DescriptionInset,
+    DescriptionInsetReadaloud,
+    DescriptionQuote,
+    DescriptionStatblock,
+    DescriptionInline,
+    DescriptionLink,
+    DescriptionImage,
+    DescriptionSection,
     Description,
     Range,
     TimeUnit,
     Time,
     Action,
+    VariantRule,
 };
 export default exportedTypeSuite;

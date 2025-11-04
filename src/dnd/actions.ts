@@ -1,14 +1,9 @@
 import { Description, parseDescriptions, parseSingleTime } from '../parser';
 import { joinStringsWithOr } from '../util';
 
-import interfacesTI from '../interfaces-ti';
-import { createCheckers } from 'ts-interface-checker';
-import { validate } from '../validate';
+import { ActionValidator } from '../validate';
 import { getActionsUrl } from '../urls';
-import { Action, Time } from '../interfaces';
-
-const checkers = createCheckers(interfacesTI);
-const ActionChecker = checkers.Action;
+import { Time } from '../interfaces';
 
 interface ParsedAction {
     name: string;
@@ -32,7 +27,7 @@ function parseActionTime(times: Time[] | undefined): string {
 }
 
 export function getActions(data: any): ParsedAction[] {
-    const actions = validate<Action>(data.action, ActionChecker);
+    const actions = ActionValidator.validate(data.action);
     const parsed: ParsedAction[] = actions.map((action) => ({
         name: action.name,
         source: action.source,
