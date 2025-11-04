@@ -2,7 +2,7 @@ import { DNDDataWithToken, ParsedDNDDataWithToken } from '../interfaces';
 import { parseDescriptions, parseSizes } from '../parser';
 import { getObjectsUrl, getObjectTokenUrl } from '../urls';
 
-interface Object extends DNDDataWithToken{
+interface Object extends DNDDataWithToken {
     size: string[];
     objectType: string; // Seemingly not used by 5e.tools, always shows 'object'.
     ac: number;

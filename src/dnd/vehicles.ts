@@ -1,4 +1,10 @@
-import { Description, DescriptionType, DNDData, DNDDataWithToken, ParsedDNDDataWithToken } from '../interfaces';
+import {
+    Description,
+    DescriptionType,
+    DNDData,
+    DNDDataWithToken,
+    ParsedDNDDataWithToken,
+} from '../interfaces';
 import { parseDescriptions, parseSizes } from '../parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';

@@ -1,9 +1,6 @@
 import { readJsonFile } from '../data';
 import { Description, DescriptionType, Table } from '../interfaces';
-import {
-    cleanDNDText,
-    parseDescriptionFromTable,
-} from '../parser';
+import { cleanDNDText, parseDescriptionFromTable } from '../parser';
 import { getTablesUrl } from '../urls';
 
 interface TableGroup {
