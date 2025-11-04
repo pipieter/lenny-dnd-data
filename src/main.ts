@@ -15,6 +15,7 @@ import { getBackgrounds } from './backgrounds';
 import { getTables } from './tables';
 import { getSpecies } from './species';
 import { getSources } from './sources';
+import { getTrapsAndHazards } from './hazards';
 import { getObjects } from './objects';
 import { getVehicles } from './vehicles';
 
@@ -70,6 +71,9 @@ function main(): void {
     const sources = getSources(data);
     stopwatch.log('Sources retrieved');
 
+    const { traps, hazards } = getTrapsAndHazards(data);
+    stopwatch.log('Traps & Hazards retrieved');
+
     const objects = getObjects(data);
     stopwatch.log('Objects retrieved');
 
@@ -93,6 +97,8 @@ function main(): void {
     writeFileSync('./generated/tables.json', JSON.stringify(tables, null, 2), 'utf-8');
     writeFileSync('./generated/species.json', JSON.stringify(species, null, 2), 'utf-8');
     writeFileSync('./generated/sources.json', JSON.stringify(sources, null, 2), 'utf-8');
+    writeFileSync('./generated/traps.json', JSON.stringify(traps, null, 2), 'utf-8');
+    writeFileSync('./generated/hazards.json', JSON.stringify(hazards, null, 2), 'utf-8');
     writeFileSync('./generated/objects.json', JSON.stringify(objects, null, 2), 'utf-8');
     writeFileSync('./generated/vehicles.json', JSON.stringify(vehicles, null, 2), 'utf-8');
 
