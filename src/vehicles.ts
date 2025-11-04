@@ -233,24 +233,24 @@ function getVehicleSubtitle(vehicle: Vehicle): string {
 function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
     let types: string[] = [];
     const typeMap: Record<string, string> = {
-        "SHP:H": "Ship Upgrade, Hull",
-        "SHP:M": "Ship Upgrade, Movement",
-        "SHP:W": "Ship Upgrade, Weapon",
-        "SHP:F": "Ship Upgrade, Figurehead",
-        "SHP:O": "Ship Upgrade, Miscellaneous",
-        "IWM:W": "Infernal War Machine Variant, Weapon",
-        "IWM:A": "Infernal War Machine Upgrade, Armor",
-        "IWM:G": "Infernal War Machine Upgrade, Gadget",
+        'SHP:H': 'Ship Upgrade, Hull',
+        'SHP:M': 'Ship Upgrade, Movement',
+        'SHP:W': 'Ship Upgrade, Weapon',
+        'SHP:F': 'Ship Upgrade, Figurehead',
+        'SHP:O': 'Ship Upgrade, Miscellaneous',
+        'IWM:W': 'Infernal War Machine Variant, Weapon',
+        'IWM:A': 'Infernal War Machine Upgrade, Armor',
+        'IWM:G': 'Infernal War Machine Upgrade, Gadget',
     };
     for (const upgradeType of upgrade.upgradeType) {
         const type = typeMap[upgradeType];
-        if (!type) throw `Unsupported vehicle upgrade type in ${upgrade.name}: ${upgrade.upgradeType}`;
+        if (!type)
+            throw `Unsupported vehicle upgrade type in ${upgrade.name}: ${upgrade.upgradeType}`;
         types.push(type);
     }
 
     return joinStringsWithAnd(types, false);
 }
-
 
 // MAIN COMMAND
 export function getVehicles(data: any): ParsedVehicle[] {
@@ -285,8 +285,8 @@ export function getVehicles(data: any): ParsedVehicle[] {
             creatureCapacity: null,
             cargoCapacity: null,
             travelPace: null,
-            description: v.entries ? parseDescriptions('', v.entries) : []
-        }
+            description: v.entries ? parseDescriptions('', v.entries) : [],
+        };
     });
 
     return [...vehicles, ...vehicleUpgrades];
