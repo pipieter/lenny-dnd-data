@@ -1,5 +1,5 @@
-import { Description, parseDescriptions, parseSizes } from './parser';
-import { getObjectsUrl, getObjectTokenUrl } from './urls';
+import { Description, parseDescriptions, parseSizes } from '../parser';
+import { getObjectsUrl, getObjectTokenUrl } from '../urls';
 
 interface Object {
     name: string;

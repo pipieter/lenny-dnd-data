@@ -1,6 +1,6 @@
-import { readJsonFile } from './data';
-import { Description, parseDescriptions } from './parser';
-import { getRulesUrl } from './urls';
+import { readJsonFile } from '../data';
+import { Description, parseDescriptions } from '../parser';
+import { getRulesUrl } from '../urls';
 
 interface VariantRule {
     name: string;

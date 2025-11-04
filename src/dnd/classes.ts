@@ -1,4 +1,4 @@
-import { getKey, readJsonFile } from './data';
+import { getKey, readJsonFile } from '../data';
 import { ParsedFeat } from './feats';
 import {
     capitalize,
@@ -10,9 +10,9 @@ import {
     parseClassResourceValue,
     parseDescriptions,
     title,
-} from './parser';
-import { getClassesUrl, getSubclassUrl } from './urls';
-import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from './util';
+} from '../parser';
+import { getClassesUrl, getSubclassUrl } from '../urls';
+import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from '../util';
 
 const BASEPATH = '5etools-src/data/class/';
 

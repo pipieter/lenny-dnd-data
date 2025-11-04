@@ -1,12 +1,12 @@
-import { readJsonFile } from './data';
+import { readJsonFile } from '../data';
 import {
     cleanDNDText,
     Description,
     DescriptionType,
     parseDescriptionFromTable,
     Table,
-} from './parser';
-import { getTablesUrl } from './urls';
+} from '../parser';
+import { getTablesUrl } from '../urls';
 
 interface TableGroup {
     name: string;

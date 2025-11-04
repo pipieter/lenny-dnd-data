@@ -1,5 +1,5 @@
-import { Description, parseDescriptions, parseImageUrl } from './parser';
-import { getConditionsDiseasesUrl } from './urls';
+import { Description, parseDescriptions, parseImageUrl } from '../parser';
+import { getConditionsDiseasesUrl } from '../urls';
 
 // Note, statuses and diseases also follow the same structure as Condition
 interface Condition {

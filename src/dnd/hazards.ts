@@ -1,6 +1,6 @@
 import { subscribe } from 'diagnostics_channel';
-import { capitalize, Description, parseDescriptions } from './parser';
-import { getTrapsUrl } from './urls';
+import { capitalize, Description, parseDescriptions } from '../parser';
+import { getTrapsUrl } from '../urls';
 
 interface Hazard {
     name: string;

@@ -1,14 +1,14 @@
-import { handleCopy, handleVersions } from './5etools-conversion/copy';
-import { findEntry } from './5etools-conversion/find';
-import { readJsonFile } from './data';
+import { handleCopy, handleVersions } from '../5etools-conversion/copy';
+import { findEntry } from '../5etools-conversion/find';
+import { readJsonFile } from '../data';
 import {
     Description,
     parseCreatureSummonSpell,
     parseCreatureTypes,
     parseDescriptions,
     parseSizes,
-} from './parser';
-import { getBestiaryUrl, getCreatureTokenUrl } from './urls';
+} from '../parser';
+import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
 
 const BASEPATH = '5etools-src/data/bestiary/';
 

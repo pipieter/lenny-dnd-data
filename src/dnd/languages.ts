@@ -1,6 +1,6 @@
-import { capitalize, cleanDNDText, Description, parseDescriptions } from './parser';
-import { getLanguagesUrl } from './urls';
-import { joinStringsWithAnd } from './util';
+import { capitalize, cleanDNDText, Description, parseDescriptions } from '../parser';
+import { getLanguagesUrl } from '../urls';
+import { joinStringsWithAnd } from '../util';
 
 interface Language {
     name: string;

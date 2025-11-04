@@ -1,10 +1,10 @@
 // Note: in the 5e.tools files this is still referred to as 'race'
 
-import { capitalize, Description, parseDescriptions, parseImageUrl } from './parser';
-import { getSpeciesUrl } from './urls';
-import { joinStringsWithOr } from './util';
-import { handleCopy, handleVersions } from './5etools-conversion/copy';
-import { CreatureSizes, SpecialSpeedTypes } from './5etools-conversion/data';
+import { capitalize, Description, parseDescriptions, parseImageUrl } from '../parser';
+import { getSpeciesUrl } from '../urls';
+import { joinStringsWithOr } from '../util';
+import { handleCopy, handleVersions } from '../5etools-conversion/copy';
+import { CreatureSizes, SpecialSpeedTypes } from '../5etools-conversion/data';
 
 interface Species {
     name: string;
