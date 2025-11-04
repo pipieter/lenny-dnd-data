@@ -1,6 +1,6 @@
-import { Description, parseAbilityScore, parseDescriptions, title } from './parser';
-import { getFeatsUrl } from './urls';
-import { joinStringsWithAnd, joinStringsWithOr } from './util';
+import { Description, parseAbilityScore, parseDescriptions, title } from '../parser';
+import { getFeatsUrl } from '../urls';
+import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
 interface Feat {
     name: string;
@@ -91,16 +91,16 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
 function getFeatPrerequisites(feat: Feat): string | null {
     if (!feat.prerequisite) return null;
 
-    let prerequisites: string[][] = [];
+    const prerequisites: string[][] = [];
     for (const prerequisite of feat.prerequisite) {
         const keys = Object.keys(prerequisite);
 
-        let group: string[] = [];
+        const group: string[] = [];
         for (const key of keys) {
             const entry = prerequisite[key];
 
             switch (key) {
-                case 'level':
+                case 'level': {
                     const level = entry;
 
                     if (level.level) {
@@ -110,23 +110,23 @@ function getFeatPrerequisites(feat: Feat): string | null {
 
                     group.push(`Level ${level}+`);
                     break;
-
-                case 'feat':
+                }
+                case 'feat': {
                     const feat: string = entry[0]; // Only ever has 1 feat
                     const parts = feat.split('|').map(title);
 
                     if (parts.length <= 2) group.push(parts[0]);
                     else group.push(parts[parts.length - 1]);
                     break;
-
-                case 'feature':
+                }
+                case 'feature': {
                     const feature = entry[0]; // Only ever has 1 feature
                     group.push(feature);
                     break;
-
-                case 'ability':
+                }
+                case 'ability': {
                     const abilityKeys = Object.keys(entry[0]);
-                    let abilityGroup = [];
+                    const abilityGroup = [];
                     for (const abilityKey of abilityKeys) {
                         const score = parseAbilityScore(abilityKey);
                         const amount = entry[0][abilityKey];
@@ -135,14 +135,14 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     }
                     group.push(joinStringsWithOr(abilityGroup, false));
                     break;
-
-                case 'background':
+                }
+                case 'background': {
                     const background = entry[0];
                     group.push(background.name);
                     break;
-
-                case 'race':
-                    let races: string[] = [];
+                }
+                case 'race': {
+                    const races: string[] = [];
                     for (const race of entry) {
                         if (race.displayEntry) {
                             races.push(race.displayEntry);
@@ -157,11 +157,11 @@ function getFeatPrerequisites(feat: Feat): string | null {
 
                     group.push(joinStringsWithOr(races, false));
                     break;
-
-                case 'proficiency':
+                }
+                case 'proficiency': {
                     const proficiencyKeys = Object.keys(entry[0]); // Only ever has 1 proficiency
 
-                    let proficiencies: string[] = [];
+                    const proficiencies: string[] = [];
                     for (const profKey of proficiencyKeys) {
                         const profValue = entry[0][profKey];
 
@@ -182,39 +182,40 @@ function getFeatPrerequisites(feat: Feat): string | null {
 
                     group.push(joinStringsWithAnd(proficiencies, true));
                     break;
-
-                case 'campaign':
+                }
+                case 'campaign': {
                     const campaign = `${entry[0]} Campaign`; // Only ever has 1 campaign
                     group.push(campaign);
                     break;
-
-                case 'spellcasting':
+                }
+                case 'spellcasting': {
                     group.push('The ability to cast at least one spell');
                     break;
-
-                case 'spellcasting2020':
+                }
+                case 'spellcasting2020': {
                     group.push('Spellcasting or Pact Magic Feature');
                     break;
-
-                case 'spellcastingFeature':
+                }
+                case 'spellcastingFeature': {
                     group.push('Spellcasting Feature');
                     break;
-
-                case 'spellcastingPrepared':
+                }
+                case 'spellcastingPrepared': {
                     group.push('Spellcasting feature from a class that prepares spells');
                     break;
-
-                case 'otherSummary':
+                }
+                case 'otherSummary': {
                     const summaryEntry = entry.entry;
                     group.push(summaryEntry);
                     break;
-
-                case 'other':
+                }
+                case 'other': {
                     group.push(entry);
                     break;
-
-                default:
+                }
+                default: {
                     throw `Unsupported feat prerequisite key ${key}`;
+                }
             }
         }
 

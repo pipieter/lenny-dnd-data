@@ -1,4 +1,4 @@
-import { getKey, readJsonFile } from './data';
+import { getKey, readJsonFile } from '../data';
 import { ParsedFeat } from './feats';
 import {
     capitalize,
@@ -10,9 +10,9 @@ import {
     parseClassResourceValue,
     parseDescriptions,
     title,
-} from './parser';
-import { getClassesUrl, getSubclassUrl } from './urls';
-import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from './util';
+} from '../parser';
+import { getClassesUrl, getSubclassUrl } from '../urls';
+import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from '../util';
 
 const BASEPATH = '5etools-src/data/class/';
 
@@ -157,10 +157,10 @@ class CharacterClass {
         if (!data.primaryAbility) return;
         const primaryAbility: any[] = data.primaryAbility;
 
-        let orGroups: string[] = [];
+        const orGroups: string[] = [];
 
         for (const abilityGroup of primaryAbility) {
-            let andGroup: string[] = [];
+            const andGroup: string[] = [];
 
             // Each abilityGroup is an object like { "str": true }
             Object.keys(abilityGroup).forEach((ability) => {
@@ -264,7 +264,7 @@ class CharacterClass {
     }
 
     private setBaseInfo(data: any) {
-        let info: Description[] = [];
+        const info: Description[] = [];
 
         // hpInfo
         if (data.hd) {
@@ -286,7 +286,7 @@ class CharacterClass {
         }
 
         // Saving Proficiencies
-        let profData: Description[] = [];
+        const profData: Description[] = [];
         if (data.proficiency) {
             let savingProficiencies: string[] = data.proficiency;
             savingProficiencies = savingProficiencies.map((proficiency) =>
@@ -315,7 +315,7 @@ class CharacterClass {
             const equipment = startingEquipment.default ?? startingEquipment.entries;
 
             if (equipment) {
-                let text = [];
+                const text = [];
                 for (let line of equipment) {
                     line = capitalize(cleanDNDText(line));
                     line = equipment.length !== 1 ? `${BulletPoint} ${line}` : line; // Only add bullet points if multiple entries
@@ -332,7 +332,7 @@ class CharacterClass {
 
         // multiclassing
         if (data.multiclassing && Object.keys(data.multiclassing).length > 0) {
-            let multiclassData = [];
+            const multiclassData = [];
             const multiclassing = data.multiclassing;
 
             let multiclassRequirements = multiclassing.requirements;
@@ -343,7 +343,7 @@ class CharacterClass {
                     useAnd = false;
                 }
 
-                let skills: string[] = [];
+                const skills: string[] = [];
                 for (const skill in multiclassRequirements) {
                     if (Object.prototype.hasOwnProperty.call(multiclassRequirements, skill)) {
                         const lvl = multiclassRequirements[skill];
@@ -354,7 +354,7 @@ class CharacterClass {
                 const requirements = useAnd
                     ? joinStringsWithAnd(skills)
                     : joinStringsWithOr(skills);
-                let text = `Ability requirements: At least ${requirements}`;
+                const text = `Ability requirements: At least ${requirements}`;
 
                 multiclassData.push({ name: '', type: DescriptionType.text, value: text });
             }
@@ -382,7 +382,7 @@ class CharacterClass {
 
     private getSpellLevelResources(data: any): string[] | null {
         // Initialize an array of 20 arrays, one for each level (1-20)
-        let spellResources: string[][] = Array.from({ length: 20 }, () => []);
+        const spellResources: string[][] = Array.from({ length: 20 }, () => []);
 
         if (data.cantripProgression) {
             for (let i = 0; i < data.cantripProgression.length; i++) {
@@ -418,7 +418,7 @@ class CharacterClass {
         // Check if all spellResources are empty
         if (spellResources.every((arr) => arr.length === 0)) return null;
 
-        let result: string[] = [];
+        const result: string[] = [];
         for (let i = 0; i < spellResources.length; i++) {
             result.push(spellResources[i].join('\n'));
         }
@@ -426,7 +426,7 @@ class CharacterClass {
     }
 
     private getClassResources(data: any): string[] | null {
-        let classResources: string[] = [];
+        const classResources: string[] = [];
 
         const classTableGroups = data.classTableGroups;
         if (!classTableGroups) return null;
@@ -439,7 +439,7 @@ class CharacterClass {
 
             for (let level = 0; level < rows.length; level++) {
                 const row = rows[level];
-                let text: string[] = [];
+                const text: string[] = [];
 
                 // Every class has the same proficiency-bonus scaling, starting on +2, scaling with 1 every 4 levels.
                 text.push(`+${2 + Math.floor(level / 4)} Proficiency Bonus`);
@@ -496,7 +496,7 @@ class CharacterClass {
 
         if (!spellSlotTables && !spellResources && !classResources) this.levelResources = null;
 
-        let levelResources: PaginatedDescriptions = {};
+        const levelResources: PaginatedDescriptions = {};
         for (let i = 0; i < 20; i++) {
             const level = i + 1;
             levelResources[level] = [];
@@ -525,7 +525,7 @@ class CharacterClass {
     }
 
     private setLevelFeatures(features: ClassFeatureDictionary) {
-        let levelFeatures: PaginatedDescriptions = {};
+        const levelFeatures: PaginatedDescriptions = {};
 
         Object.values(features)
             .flat()
@@ -549,7 +549,7 @@ class CharacterClass {
     }
 
     private setSubclassData(subclasses: SubclassDictionary, subclassFeats: ClassFeatureDictionary) {
-        let result: { [subclass: string]: PaginatedDescriptions } = {};
+        const result: { [subclass: string]: PaginatedDescriptions } = {};
         let lowestLevel = 999;
 
         for (const key in subclasses) {
@@ -641,7 +641,7 @@ function resolveClassFeatReference(
         );
 
         if (!feat?.descriptions) throw `Could not find ${type} for ${key}`;
-        let descs = feat.descriptions.map((d) => ({ ...d }));
+        const descs = feat.descriptions.map((d) => ({ ...d }));
         descs[0].value = `__${getKey(name, featSource)}__: ${descs[0].value}`;
 
         return descs;
@@ -718,8 +718,8 @@ function resolveReferences(
     }
 
     if (!isSubResolve) {
-        let indexesToResolve: number[] = [];
-        let entriesToSubResolve: Description[] = [];
+        const indexesToResolve: number[] = [];
+        const entriesToSubResolve: Description[] = [];
         for (let i = 0; i < resolvedEntries.length; i++) {
             const e = resolvedEntries[i];
             if (e.type === DescriptionType.text) {
@@ -755,7 +755,7 @@ function classFeatsToParsedFeats(
     classFeats: ClassFeatureDictionary,
     subclassFeats: ClassFeatureDictionary
 ): ParsedFeat[] {
-    let parsedFeats: ParsedFeat[] = [];
+    const parsedFeats: ParsedFeat[] = [];
     /* 
     Blacklist for certain feats that are generic, repetitive, or not useful as individual feats.
     Users can still access this information when looking up classes, but can't directly look up these feats.
@@ -826,15 +826,15 @@ export function getClassesAndClassFeats(): {
     classFeats: ParsedFeat[];
 } {
     const indexPath = BASEPATH + '/index.json';
-    let classes: any[] = [];
-    let classFeats: ParsedFeat[] = [];
+    const classes: any[] = [];
+    const classFeats: ParsedFeat[] = [];
 
     const indexData = readJsonFile(indexPath);
     for (const [className, classIndexFile] of Object.entries(indexData)) {
         const path = BASEPATH + classIndexFile;
         const data = readJsonFile(path);
 
-        let features: ClassFeatureDictionary = {};
+        const features: ClassFeatureDictionary = {};
 
         for (const featureData of data.classFeature) {
             const feature = new ClassFeature(featureData);
@@ -843,8 +843,8 @@ export function getClassesAndClassFeats(): {
             features[key].push(feature);
         }
 
-        let subclasses: SubclassDictionary = {};
-        let subclassFeatures: ClassFeatureDictionary = {};
+        const subclasses: SubclassDictionary = {};
+        const subclassFeatures: ClassFeatureDictionary = {};
         if (data.subclassFeature && data.subclass) {
             for (const featureData of data.subclassFeature) {
                 const feature = new ClassFeature(featureData);

@@ -1,20 +1,23 @@
 import { writeFileSync } from 'fs';
-import { getConditionsStatusesAndDiseases } from './conditions';
+import { getConditionsStatusesAndDiseases } from './dnd/conditions';
 import { loadData } from './data';
-import { getSpells } from './spells';
-import { getCreatures } from './creatures';
+import { getSpells } from './dnd/spells';
+import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
-import { getClassesAndClassFeats } from './classes';
-import { getItems } from './items';
-import { getRules } from './rules';
-import { getActions } from './actions';
-import { getFeats } from './feats';
-import { getLanguages } from './languages';
-import { getNames } from './names';
-import { getBackgrounds } from './backgrounds';
-import { getTables } from './tables';
-import { getSpecies } from './species';
-import { getSources } from './sources';
+import { getClassesAndClassFeats } from './dnd/classes';
+import { getItems } from './dnd/items';
+import { getRules } from './dnd/rules';
+import { getActions } from './dnd/actions';
+import { getFeats } from './dnd/feats';
+import { getLanguages } from './dnd/languages';
+import { getNames } from './dnd/names';
+import { getBackgrounds } from './dnd/backgrounds';
+import { getTables } from './dnd/tables';
+import { getSpecies } from './dnd/species';
+import { getSources } from './dnd/sources';
+import { getTrapsAndHazards } from './dnd/hazards';
+import { getObjects } from './dnd/objects';
+import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './skills';
 
 function main(): void {
@@ -69,6 +72,15 @@ function main(): void {
     const sources = getSources(data);
     stopwatch.log('Sources retrieved');
 
+    const { traps, hazards } = getTrapsAndHazards(data);
+    stopwatch.log('Traps & Hazards retrieved');
+
+    const objects = getObjects(data);
+    stopwatch.log('Objects retrieved');
+
+    const vehicles = getVehicles(data);
+    stopwatch.log('Vehicles retrieved.');
+
     const skills = getSkills(data);
     stopwatch.log('Skills retrieved.');
 
@@ -89,6 +101,10 @@ function main(): void {
     writeFileSync('./generated/tables.json', JSON.stringify(tables, null, 2), 'utf-8');
     writeFileSync('./generated/species.json', JSON.stringify(species, null, 2), 'utf-8');
     writeFileSync('./generated/sources.json', JSON.stringify(sources, null, 2), 'utf-8');
+    writeFileSync('./generated/traps.json', JSON.stringify(traps, null, 2), 'utf-8');
+    writeFileSync('./generated/hazards.json', JSON.stringify(hazards, null, 2), 'utf-8');
+    writeFileSync('./generated/objects.json', JSON.stringify(objects, null, 2), 'utf-8');
+    writeFileSync('./generated/vehicles.json', JSON.stringify(vehicles, null, 2), 'utf-8');
     writeFileSync('./generated/skills.json', JSON.stringify(skills, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');

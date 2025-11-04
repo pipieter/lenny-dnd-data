@@ -1,6 +1,6 @@
-import { Description, parseDescriptions, parseSingleTime } from './parser';
-import { getActionsUrl } from './urls';
-import { joinStringsWithOr } from './util';
+import { Description, parseDescriptions, parseSingleTime } from '../parser';
+import { getActionsUrl } from '../urls';
+import { joinStringsWithOr } from '../util';
 
 interface Action {
     name: string;
@@ -23,7 +23,7 @@ export interface ParsedAction {
 function parseActionTime(times: any[]): string {
     if (!times) return 'Uncategorized';
 
-    let results: string[] = [];
+    const results: string[] = [];
     for (const time of times) {
         const text = typeof time === 'string' ? time : parseSingleTime(time);
         if (!text) throw new Error(`Unsupported action-time ${JSON.stringify(time)}`);

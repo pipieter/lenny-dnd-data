@@ -1,5 +1,5 @@
-import { handleCopy } from './5etools-conversion/copy';
-import { applySingleTemplate, applyTemplating } from './5etools-conversion/template';
+import { handleCopy } from '../5etools-conversion/copy';
+import { applySingleTemplate, applyTemplating } from '../5etools-conversion/template';
 import {
     cleanDNDText,
     Description,
@@ -7,10 +7,10 @@ import {
     parseImageUrl,
     parseItemValue,
     parseItemWeight,
-} from './parser';
-import { DamageTypes } from './5etools-conversion/data';
-import { getItemsUrl } from './urls';
-import { joinStringsWithOr } from './util';
+} from '../parser';
+import { DamageTypes } from '../5etools-conversion/data';
+import { getItemsUrl } from '../urls';
+import { joinStringsWithOr } from '../util';
 
 interface Item {
     name: string;

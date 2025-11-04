@@ -1,6 +1,6 @@
-import { handleCopy } from './5etools-conversion/copy';
-import { Description, parseAbilityScore, parseDescriptions } from './parser';
-import { getBackgroundsUrl } from './urls';
+import { handleCopy } from '../5etools-conversion/copy';
+import { Description, parseAbilityScore, parseDescriptions } from '../parser';
+import { getBackgroundsUrl } from '../urls';
 
 interface ParsedBackground {
     name: string;
@@ -12,7 +12,7 @@ interface ParsedBackground {
 
 function parseBackgroundAbilities(background: any): string[] | null {
     if (!background.ability) return null;
-    let abilities = background.ability[0].choose.weighted.from;
+    const abilities = background.ability[0].choose.weighted.from;
     return abilities.map(parseAbilityScore);
 }
 
