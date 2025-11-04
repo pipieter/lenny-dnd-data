@@ -1,6 +1,6 @@
-import { subscribe } from "diagnostics_channel";
-import { capitalize, Description, parseDescriptions } from "./parser";
-import { getTrapsUrl } from "./urls";
+import { subscribe } from 'diagnostics_channel';
+import { capitalize, Description, parseDescriptions } from './parser';
+import { getTrapsUrl } from './urls';
 
 interface Hazard {
     name: string;
@@ -44,24 +44,24 @@ export function getTrapsAndHazards(data: any): {
     hazards: ParsedHazard[];
 } {
     const traps = (data.trap as Hazard[]).map((trap) => {
-            return {
-                name: trap.name,
-                source: trap.source,
-                subtitle: getTrapHazardSubtitle(trap, 'trap'),
-                url: getTrapsUrl(trap.name, trap.source),
-                description: trap.entries ? parseDescriptions('', trap.entries) : [],
-            };
-        });
+        return {
+            name: trap.name,
+            source: trap.source,
+            subtitle: getTrapHazardSubtitle(trap, 'trap'),
+            url: getTrapsUrl(trap.name, trap.source),
+            description: trap.entries ? parseDescriptions('', trap.entries) : [],
+        };
+    });
 
     const hazards = (data.hazard as Hazard[]).map((hazard) => {
-            return {
-                name: hazard.name,
-                source: hazard.source,
-                subtitle: getTrapHazardSubtitle(hazard, 'hazard'),
-                url: getTrapsUrl(hazard.name, hazard.source),
-                description: hazard.entries ? parseDescriptions('', hazard.entries) : [],
-            };
-        });
+        return {
+            name: hazard.name,
+            source: hazard.source,
+            subtitle: getTrapHazardSubtitle(hazard, 'hazard'),
+            url: getTrapsUrl(hazard.name, hazard.source),
+            description: hazard.entries ? parseDescriptions('', hazard.entries) : [],
+        };
+    });
 
-    return {traps, hazards};
+    return { traps, hazards };
 }

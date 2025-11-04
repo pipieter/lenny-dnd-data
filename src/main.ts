@@ -72,7 +72,6 @@ function main(): void {
     const { traps, hazards } = getTrapsAndHazards(data);
     stopwatch.log('Traps & Hazards retrieved');
 
-
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
