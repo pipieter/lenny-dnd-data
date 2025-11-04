@@ -1,34 +1,40 @@
 import { subscribe } from "diagnostics_channel";
-import { Description, parseDescriptions } from "./parser";
+import { capitalize, Description, parseDescriptions } from "./parser";
 import { getTrapsUrl } from "./urls";
 
 interface Hazard {
     name: string;
     source: string;
-    trapHazType: string;
+    trapHazType?: string;
     entries: (string | any)[];
 }
 
 interface ParsedHazard {
     name: string;
     source: string;
-    // subtitle: string;
+    subtitle: string;
     url: string;
     description: Description[];
 }
 
 function getTrapHazardSubtitle(hazard: Hazard, suffix: string): string {
+    if (!hazard.trapHazType) return capitalize(suffix);
+
     const typeMap: Record<string, string> = {
         MECH: 'Mechanical',
         SMPL: 'Simple',
-        TRP: '',
+        TRP: ' ', // Must have a space, to register in the return check.
         HAUNT: 'Haunted',
         MAG: 'Magic',
         CMPX: 'Complex',
-        WLD: 'Wilderness'
+        WLD: 'Wilderness',
+        WTH: 'Weather',
+        ENV: 'Environmental',
+        EST: 'Eldritch',
+        GEN: 'General',
     };
     const type = typeMap[hazard.trapHazType];
-    if (type) return `${type} ${suffix}`;
+    if (type) return capitalize(`${type} ${suffix}`.trim());
 
     throw `Unsupported trap/hazard type in ${hazard.name}: ${hazard.trapHazType}`;
 }
@@ -41,7 +47,7 @@ export function getTrapsAndHazards(data: any): {
             return {
                 name: trap.name,
                 source: trap.source,
-                // subtitle: getTrapHazardSubtitle(trap, 'trap'),
+                subtitle: getTrapHazardSubtitle(trap, 'trap'),
                 url: getTrapsUrl(trap.name, trap.source),
                 description: trap.entries ? parseDescriptions('', trap.entries) : [],
             };
@@ -51,7 +57,7 @@ export function getTrapsAndHazards(data: any): {
             return {
                 name: hazard.name,
                 source: hazard.source,
-                // subtitle: getTrapHazardSubtitle(hazard, 'hazard'),
+                subtitle: getTrapHazardSubtitle(hazard, 'hazard'),
                 url: getTrapsUrl(hazard.name, hazard.source),
                 description: hazard.entries ? parseDescriptions('', hazard.entries) : [],
             };
