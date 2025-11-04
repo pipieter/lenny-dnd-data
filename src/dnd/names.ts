@@ -26,8 +26,8 @@ interface ParsedNames {
 }
 
 export function getNames(data: any): ParsedNames[] {
-    let result: ParsedNames[] = [];
-    for (let namesList of data.name as RaceNames[]) {
+    const result: ParsedNames[] = [];
+    for (const namesList of data.name as RaceNames[]) {
         const race: ParsedNames = {
             name: namesList.name,
             source: namesList.source,
@@ -38,7 +38,7 @@ export function getNames(data: any): ParsedNames[] {
             },
         };
 
-        for (let nameTable of namesList.tables) {
+        for (const nameTable of namesList.tables) {
             const option = nameTable.option.toLowerCase();
             const table = nameTable.table.map((entry: { result: string }) => {
                 // Remove any text inside parentheses

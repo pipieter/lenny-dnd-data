@@ -30,13 +30,13 @@ export function loadData(dataPath: string): any {
         const data = readJsonFile(path);
 
         for (const key in data) {
-            if (!databank.hasOwnProperty(key)) {
-                // @ts-ignore next-line
+            if (!Object.prototype.hasOwnProperty.call(databank, key)) {
+                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
                 databank[key] = [];
             }
             const entries = data[key];
             if (Array.isArray(entries)) {
-                // @ts-ignore
+                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
                 databank[key].push(...entries);
             }
         }
