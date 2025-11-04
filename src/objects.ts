@@ -1,5 +1,5 @@
-import { Description, parseDescriptions, parseSizes } from "./parser";
-import { getObjectsUrl, getObjectTokenUrl } from "./urls";
+import { Description, parseDescriptions, parseSizes } from './parser';
+import { getObjectsUrl, getObjectTokenUrl } from './urls';
 
 interface Object {
     name: string;
@@ -18,7 +18,7 @@ interface Object {
     wis?: number;
     cha?: number;
     immune?: string[];
-    conditionImmune? : string[];
+    conditionImmune?: string[];
     entries: (string | object)[];
     actionEntries: (string | object)[];
     tokenCredit?: string;
@@ -26,7 +26,7 @@ interface Object {
     token?: {
         name: string;
         source: string;
-    }
+    };
     hasToken?: boolean;
     hasFluffImages?: boolean;
 }
