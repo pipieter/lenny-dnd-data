@@ -1,5 +1,4 @@
-import { ParsedAction } from './actions';
-import { parseAbilityScore, parseDescriptions } from './parser';
+import { Description, parseAbilityScore, parseDescriptions } from './parser';
 
 interface Skill {
     name: string;
@@ -13,10 +12,11 @@ interface Skill {
     entries: (string | any)[];
 }
 
-interface ParsedSkill extends ParsedAction {
-    url: null; // Skills do not have 5e.tools pages
-    time: null; // Not applicable to skills
+interface ParsedSkill {
+    name: string;
+    source: string;
     ability: string;
+    description: Description[];
 }
 
 export function getSkills(data: any): ParsedSkill[] {
@@ -24,8 +24,6 @@ export function getSkills(data: any): ParsedSkill[] {
         return {
             name: skill.name,
             source: skill.source,
-            url: null,
-            time: null,
             ability: parseAbilityScore(skill.ability),
             description: skill.entries ? parseDescriptions('', skill.entries) : [],
         };

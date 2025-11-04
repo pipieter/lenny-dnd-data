@@ -12,7 +12,7 @@ interface Action {
     entries: (string | any)[];
 }
 
-export interface ParsedAction {
+interface ParsedAction {
     name: string;
     source: string;
     url: string | null;
