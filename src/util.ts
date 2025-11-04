@@ -1,6 +1,6 @@
-import kleur = require('kleur');
 import { title } from './parser';
-var commandExistsSync = require('command-exists').sync;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+import kleur = require('kleur');
 
 export const BulletPoint = '\u2022'; // U+2022 •
 

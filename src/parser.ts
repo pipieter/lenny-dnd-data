@@ -532,7 +532,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
         }
         case 'inline': {
             const entries = description.entries.flatMap(parseDescriptionBlock);
-            let entry = entries.join('');
+            const entry = entries.join('');
             if (description.name) return [cleanDNDText(`**${description.name}**: ${entry}`)];
             return [cleanDNDText(entry)];
         }
@@ -540,7 +540,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
         case 'entries': {
             const entries = description.entries.flatMap(parseDescriptionBlock);
             const { strings, tables } = splitDescriptionTypes(entries);
-            let entry = strings.join('\n');
+            const entry = strings.join('\n');
             if (description.name) {
                 const name = description.name.replace(/:$/, '');
                 return [cleanDNDText(`**${name}**: ${entry}`), ...tables];
@@ -582,7 +582,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             throw `Unsupported ${type} ${subclassFeat}`;
         }
         case 'refOptionalfeature': {
-            let optionalFeature: string = description.optionalfeature;
+            const optionalFeature: string = description.optionalfeature;
             if (typeof optionalFeature === 'string') {
                 // Has to be resolved later
                 return [`{#${type} ${optionalFeature}}`];

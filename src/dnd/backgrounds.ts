@@ -12,7 +12,7 @@ interface ParsedBackground {
 
 function parseBackgroundAbilities(background: any): string[] | null {
     if (!background.ability) return null;
-    let abilities = background.ability[0].choose.weighted.from;
+    const abilities = background.ability[0].choose.weighted.from;
     return abilities.map(parseAbilityScore);
 }
 

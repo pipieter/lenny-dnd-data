@@ -61,6 +61,6 @@ function getVariantRules(data: any): ParsedRule[] {
 }
 
 export function getRules(data: any): ParsedRule[] {
-    let rules = [...getVariantRules(data), ...getGendataVariantRules()];
+    const rules = [...getVariantRules(data), ...getGendataVariantRules()];
     return rules.sort((a, b) => a.name.localeCompare(b.name));
 }
