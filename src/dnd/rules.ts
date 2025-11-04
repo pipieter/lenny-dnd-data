@@ -1,13 +1,8 @@
-import interfacesTI from '../interfaces-ti';
-import { createCheckers } from 'ts-interface-checker';
 import { readJsonFile } from '../data';
 import { Description, parseDescriptions } from '../parser';
 import { getRulesUrl } from '../urls';
 import { VariantRule } from '../interfaces';
-import { validate } from '../validate';
-
-const checkers = createCheckers(interfacesTI);
-const RuleChecker = checkers.VariantRule;
+import { VariantRuleValidator } from '../validate';
 
 interface ParsedRule {
     name: string;
@@ -39,8 +34,7 @@ function retrieveRules(): any[] {
 }
 
 export function getRules(): ParsedRule[] {
-    console.log(RuleChecker);
-    const rules = validate<VariantRule>(retrieveRules(), RuleChecker);
+    const rules = VariantRuleValidator.validate(retrieveRules());
     return rules.map((rule) => ({
         name: rule.name,
         source: rule.source,

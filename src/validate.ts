@@ -1,13 +1,28 @@
-import { Checker } from 'ts-interface-checker';
+import { Checker, createCheckers } from 'ts-interface-checker';
+import interfacesTI from './interfaces-ti';
 
-export function validate<T>(entries: readonly any[], checker: Checker): T[] {
-    for (const entry of entries) {
-        if (!checker.strictTest(entry)) {
-            console.error(`Invalid entry: ${JSON.stringify(entry)}`);
-            console.error();
-            checker.strictCheck(entry); // throw error
-        }
+import { Action, VariantRule } from './interfaces';
+
+const checkers = createCheckers(interfacesTI);
+
+class Validator<T> {
+    private readonly checker: Checker;
+
+    constructor(checker: Checker) {
+        this.checker = checker;
     }
 
-    return entries as T[];
+    public validate(entries: readonly any[]): T[] {
+        for (const entry of entries) {
+            if (!this.checker.strictTest(entry)) {
+                console.error(`Invalid entry: ${JSON.stringify(entry)}`);
+                console.error();
+                this.checker.strictCheck(entry); // throw error
+            }
+        }
+        return entries as T[];
+    }
 }
+
+export const ActionValidator = new Validator<Action>(checkers.Action);
+export const VariantRuleValidator = new Validator<VariantRule>(checkers.VariantRule);
