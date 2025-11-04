@@ -1,4 +1,4 @@
-import { Action } from "./interfaces";
+import { Action } from './interfaces';
 
 export const cleanUrl = encodeURI;
 
