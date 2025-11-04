@@ -15,8 +15,8 @@ interface Action {
 interface ParsedAction {
     name: string;
     source: string;
-    url: string;
-    time: string;
+    url: string | null;
+    time: string | null;
     description: Description[];
 }
 

@@ -18,6 +18,7 @@ import { getSources } from './dnd/sources';
 import { getTrapsAndHazards } from './dnd/hazards';
 import { getObjects } from './dnd/objects';
 import { getVehicles } from './dnd/vehicles';
+import { getSkills } from './skills';
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
@@ -80,6 +81,9 @@ function main(): void {
     const vehicles = getVehicles(data);
     stopwatch.log('Vehicles retrieved.');
 
+    const skills = getSkills(data);
+    stopwatch.log('Skills retrieved.');
+
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
@@ -101,6 +105,7 @@ function main(): void {
     writeFileSync('./generated/hazards.json', JSON.stringify(hazards, null, 2), 'utf-8');
     writeFileSync('./generated/objects.json', JSON.stringify(objects, null, 2), 'utf-8');
     writeFileSync('./generated/vehicles.json', JSON.stringify(vehicles, null, 2), 'utf-8');
+    writeFileSync('./generated/skills.json', JSON.stringify(skills, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
