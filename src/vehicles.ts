@@ -122,18 +122,30 @@ function getVehiclePace(vehicle: Vehicle): string | null {
         }
     }
 
-    // if (vehicle.pace) {
-    //     const pace = vehicle.pace;
-    //     if (typeof pace === 'string' || typeof pace === 'number') {
-    //         parts.push(`${pace} mph.`)
+    if (vehicle.pace) {
+        const pace = vehicle.pace;
+        if (typeof pace === 'string' || typeof pace === 'number') {
+            parts.push(`${pace} mph.`)
 
-    //     } else if (typeof pace === 'object') {
+        } else if (typeof pace === 'object') {
+            let paceParts: string[] = [];
+            let note = null;
+            for (const [k, v] of Object.entries(pace)) {
+                if (k === 'note') {
+                    note = v;
+                    continue;
+                }
+                paceParts.push(`${k} ${v} mph.`);
+            }
 
+            let paceString = joinStringsWithOr(paceParts, false);
+            if (note) paceString = `${paceString} ${note}`;
+            parts.push(paceString);
 
-    //     } else {
-    //         throw `vehicle.speed has unsupported type: ${pace}`
-    //     }
-    // }
+        } else {
+            throw `vehicle.speed has unsupported type: ${pace}`
+        }
+    }
 
     if (parts.length === 0) return null;
     return parts.join('\n');
