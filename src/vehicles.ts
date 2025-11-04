@@ -1,7 +1,7 @@
 import { subtle } from 'crypto';
 import { Description, DescriptionType, parseDescriptions, parseSizes, title } from './parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from './urls';
-import { joinStringsWithOr } from './util';
+import { joinStringsWithAnd, joinStringsWithOr } from './util';
 
 interface Vehicle {
     name: string;
@@ -248,7 +248,7 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
         types.push(type);
     }
 
-    return joinStringsWithOr(types, false);
+    return joinStringsWithAnd(types, false);
 }
 
 
@@ -279,7 +279,7 @@ export function getVehicles(data: any): ParsedVehicle[] {
         return {
             name: v.name,
             source: v.source,
-            subtitle: 'TODO',
+            subtitle: getVehicleUpgradeSubtitle(v),
             url: getVehiclesUrl(v.name, v.source),
             tokenUrl: null,
             creatureCapacity: null,
