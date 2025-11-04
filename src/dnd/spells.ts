@@ -1,4 +1,4 @@
-import { accessSync, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import {
     Description,
     parseCastingTime,
@@ -10,7 +10,7 @@ import {
     parseSpellLevel,
     parseSpellSchool,
 } from '../parser';
-import { getImageUrl, getSpellsUrl } from '../urls';
+import { getSpellsUrl } from '../urls';
 
 interface Caster {
     name: string;

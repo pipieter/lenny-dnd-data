@@ -88,7 +88,7 @@ function getDescriptions(data: any | null): Description[] {
 
 function filterEntries(entries: any[]): any[] {
     // Creatures generally have way too many entries, impacting performance heavily. We pre-cut entries we may not need.
-    let filteredEntries: any[] = [];
+    const filteredEntries: any[] = [];
 
     entries.forEach((entry: any) => {
         if (entry.type !== 'entries') return; // Only 'entries' hold information we'd want to use.
