@@ -4,6 +4,7 @@ export function validate<T>(entries: readonly any[], checker: Checker): T[] {
     for (const entry of entries) {
         if (!checker.strictTest(entry)) {
             console.error(`Invalid entry: ${JSON.stringify(entry)}`);
+            console.error();
             checker.strictCheck(entry); // throw error
         }
     }
