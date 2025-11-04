@@ -15,6 +15,7 @@ import { getBackgrounds } from './backgrounds';
 import { getTables } from './tables';
 import { getSpecies } from './species';
 import { getSources } from './sources';
+import { getTrapsAndHazards } from './hazards';
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
@@ -68,6 +69,10 @@ function main(): void {
     const sources = getSources(data);
     stopwatch.log('Sources retrieved');
 
+    const { traps, hazards } = getTrapsAndHazards(data);
+    stopwatch.log('Traps & Hazards retrieved');
+
+
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
@@ -85,6 +90,8 @@ function main(): void {
     writeFileSync('./generated/tables.json', JSON.stringify(tables, null, 2), 'utf-8');
     writeFileSync('./generated/species.json', JSON.stringify(species, null, 2), 'utf-8');
     writeFileSync('./generated/sources.json', JSON.stringify(sources, null, 2), 'utf-8');
+    writeFileSync('./generated/traps.json', JSON.stringify(traps, null, 2), 'utf-8');
+    writeFileSync('./generated/hazards.json', JSON.stringify(hazards, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
