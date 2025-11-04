@@ -1,16 +1,13 @@
+import interfacesTI from '../interfaces-ti';
+import { createCheckers } from 'ts-interface-checker';
 import { readJsonFile } from '../data';
 import { Description, parseDescriptions } from '../parser';
 import { getRulesUrl } from '../urls';
+import { VariantRule } from '../interfaces';
+import { validate } from '../validate';
 
-interface VariantRule {
-    name: string;
-    source: string;
-    page: number;
-    srd52: boolean;
-    basicRules2024: boolean;
-    ruleType: string;
-    entries: Array<string | object>;
-}
+const checkers = createCheckers(interfacesTI);
+const RuleChecker = checkers.VariantRule;
 
 interface ParsedRule {
     name: string;
@@ -29,38 +26,26 @@ function parseRuleType(rule: VariantRule): string {
         ['VO', 'Variant Optional'],
     ]);
 
+    if (!type) return 'Uncategorized';
     return RuleTypes.get(type) ?? 'Uncategorized';
 }
 
-function getGendataVariantRules(): ParsedRule[] {
-    // Some rules are stored in an auto-generated file.
-    const gendata_path = '5etools-src/data/generated/gendata-variantrules.json';
-    const data = readJsonFile(gendata_path);
-
-    return (data.variantrule as VariantRule[]).map((rule) => {
-        return {
-            name: rule.name,
-            source: rule.source,
-            url: getRulesUrl(rule.name, rule.source),
-            ruleType: parseRuleType(rule),
-            description: parseDescriptions('', rule.entries),
-        };
-    });
+function retrieveRules(): any[] {
+    const sources = [
+        '5etools-src/data/variantrules.json',
+        '5etools-src/data/generated/gendata-variantrules.json', // Some rules are stored in an auto-generated file.
+    ];
+    return sources.flatMap((source) => readJsonFile(source).variantrule);
 }
 
-function getVariantRules(data: any): ParsedRule[] {
-    return (data.variantrule as VariantRule[]).map((rule) => {
-        return {
-            name: rule.name,
-            source: rule.source,
-            url: getRulesUrl(rule.name, rule.source),
-            ruleType: parseRuleType(rule),
-            description: parseDescriptions('', rule.entries),
-        };
-    });
-}
-
-export function getRules(data: any): ParsedRule[] {
-    const rules = [...getVariantRules(data), ...getGendataVariantRules()];
-    return rules.sort((a, b) => a.name.localeCompare(b.name));
+export function getRules(): ParsedRule[] {
+    console.log(RuleChecker);
+    const rules = validate<VariantRule>(retrieveRules(), RuleChecker);
+    return rules.map((rule) => ({
+        name: rule.name,
+        source: rule.source,
+        url: getRulesUrl(rule),
+        ruleType: parseRuleType(rule),
+        description: parseDescriptions('', rule.entries),
+    }));
 }

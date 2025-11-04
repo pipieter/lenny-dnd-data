@@ -1,4 +1,4 @@
-import { Action } from './interfaces';
+import { Action, VariantRule } from './interfaces';
 
 export const cleanUrl = encodeURI;
 
@@ -84,8 +84,8 @@ export function getObjectsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/objects.html`, name, source);
 }
 
-export function getRulesUrl(name: string, source: string) {
-    return buildNameSourceUrl(`https://5e.tools/variantrules.html`, name, source);
+export function getRulesUrl(rule: VariantRule) {
+    return buildNameSourceUrl(`https://5e.tools/variantrules.html`, rule.name, rule.source);
 }
 
 export function getSpellsUrl(name: string, source: string) {
