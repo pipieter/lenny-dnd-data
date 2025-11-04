@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "generate": "ts-node src/main.ts",
-        "prettier": "prettier package.json \"./src/**/*.ts\" --write"
+        "prettier": "prettier package.json \"./src/**/*.ts\" --write",
+        "interfaces": "ts-interface-builder src/interfaces.ts"
     },
     "repository": {
         "type": "git",
@@ -21,11 +22,13 @@
         "command-exists": "^1.2.9",
         "kleur": "^4.1.5",
         "lenny-dnd-data": "file:",
+        "ts-interface-checker": "^1.0.2",
         "ts-node": "^10.9.2",
         "typescript": "^5.8.3"
     },
     "devDependencies": {
         "@types/command-exists": "^1.2.3",
-        "prettier": "^3.5.3"
+        "prettier": "^3.5.3",
+        "ts-interface-builder": "^0.3.3"
     }
 }
