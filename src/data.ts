@@ -30,7 +30,7 @@ export function loadData(dataPath: string): any {
         const data = readJsonFile(path);
 
         for (const key in data) {
-            if (!databank.hasOwnProperty(key)) {
+            if (!Object.prototype.hasOwnProperty.call(databank, key)) {
                 // @ts-ignore next-line
                 databank[key] = [];
             }
