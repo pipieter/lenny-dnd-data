@@ -20,7 +20,6 @@ export default tseslint.config(
       // IGNORE
       'no-useless-escape': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/ban-ts-comment': 'off',
     },
   },
 );

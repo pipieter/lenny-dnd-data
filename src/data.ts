@@ -31,12 +31,12 @@ export function loadData(dataPath: string): any {
 
         for (const key in data) {
             if (!Object.prototype.hasOwnProperty.call(databank, key)) {
-                // @ts-ignore next-line
+                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
                 databank[key] = [];
             }
             const entries = data[key];
             if (Array.isArray(entries)) {
-                // @ts-ignore
+                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
                 databank[key].push(...entries);
             }
         }
