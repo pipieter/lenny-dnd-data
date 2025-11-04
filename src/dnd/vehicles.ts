@@ -1,7 +1,7 @@
 import { subtle } from 'crypto';
-import { Description, DescriptionType, parseDescriptions, parseSizes, title } from './parser';
-import { getVehiclesUrl, getVehicleTokenUrl } from './urls';
-import { joinStringsWithAnd, joinStringsWithOr } from './util';
+import { Description, DescriptionType, parseDescriptions, parseSizes, title } from '../parser';
+import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
+import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
 interface Vehicle {
     name: string;

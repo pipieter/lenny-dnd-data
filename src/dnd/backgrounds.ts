@@ -1,6 +1,6 @@
-import { handleCopy } from './5etools-conversion/copy';
-import { Description, parseAbilityScore, parseDescriptions } from './parser';
-import { getBackgroundsUrl } from './urls';
+import { handleCopy } from '../5etools-conversion/copy';
+import { Description, parseAbilityScore, parseDescriptions } from '../parser';
+import { getBackgroundsUrl } from '../urls';
 
 interface ParsedBackground {
     name: string;

@@ -1,6 +1,6 @@
-import { Description, parseAbilityScore, parseDescriptions, title } from './parser';
-import { getFeatsUrl } from './urls';
-import { joinStringsWithAnd, joinStringsWithOr } from './util';
+import { Description, parseAbilityScore, parseDescriptions, title } from '../parser';
+import { getFeatsUrl } from '../urls';
+import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
 interface Feat {
     name: string;

@@ -1,6 +1,6 @@
-import { Description, parseDescriptions, parseSingleTime } from './parser';
-import { getActionsUrl } from './urls';
-import { joinStringsWithOr } from './util';
+import { Description, parseDescriptions, parseSingleTime } from '../parser';
+import { getActionsUrl } from '../urls';
+import { joinStringsWithOr } from '../util';
 
 interface Action {
     name: string;
