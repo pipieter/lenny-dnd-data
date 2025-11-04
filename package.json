@@ -6,7 +6,7 @@
     "scripts": {
         "generate": "ts-node src/main.ts",
         "prettier": "prettier package.json \"./src/**/*.ts\" --write",
-        "lint": "eslint ./src --ext .ts"
+        "lint": "npx eslint ./src --ext .ts,.tsx --ignore-pattern ./5etools-src"
     },
     "repository": {
         "type": "git",
