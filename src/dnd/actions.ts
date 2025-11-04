@@ -1,16 +1,14 @@
 import { Description, parseDescriptions, parseSingleTime } from '../parser';
-import { getActionsUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
 
-interface Action {
-    name: string;
-    source: string;
-    page: number;
-    srd: boolean;
-    basicRules: boolean;
-    time: any[];
-    entries: (string | any)[];
-}
+import interfacesTI from '../interfaces-ti';
+import { createCheckers } from 'ts-interface-checker';
+import { validate } from '../validate';
+import { getActionsUrl } from '../urls';
+import { Action, Time } from '../interfaces';
+
+const checkers = createCheckers(interfacesTI);
+const ActionChecker = checkers.Action;
 
 interface ParsedAction {
     name: string;
@@ -20,7 +18,7 @@ interface ParsedAction {
     description: Description[];
 }
 
-function parseActionTime(times: any[]): string {
+function parseActionTime(times: Time[] | undefined): string {
     if (!times) return 'Uncategorized';
 
     const results: string[] = [];
@@ -34,13 +32,14 @@ function parseActionTime(times: any[]): string {
 }
 
 export function getActions(data: any): ParsedAction[] {
-    return (data.action as Action[]).map((action) => {
-        return {
-            name: action.name,
-            source: action.source,
-            url: getActionsUrl(action.name, action.source),
-            time: parseActionTime(action.time),
-            description: parseDescriptions('', action.entries),
-        };
-    });
+    const actions = validate<Action>(data.action, ActionChecker);
+    const parsed: ParsedAction[] = actions.map((action) => ({
+        name: action.name,
+        source: action.source,
+        url: getActionsUrl(action),
+        time: parseActionTime(action.time),
+        description: parseDescriptions('', action.entries),
+    }));
+
+    return parsed;
 }
