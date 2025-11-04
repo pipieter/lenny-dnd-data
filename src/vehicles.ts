@@ -255,26 +255,19 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
 // MAIN COMMAND
 export function getVehicles(data: any): ParsedVehicle[] {
     const vehicles = (data.vehicle as Vehicle[]).map((v) => {
-        const subtitle = getVehicleSubtitle(v);
-        const url = getVehiclesUrl(v.name, v.source);
-        const tokenUrl = v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null;
-        const creatureCapacity = getVehicleCreatureCapacity(v);
-        const cargoCapacity = v.capCargo ? `${v.capCargo} tons` : null;
-        const travelPace = getVehiclePace(v);
-        const description = getVehicleDescription(v);
-
         return {
             name: v.name,
             source: v.source,
-            subtitle,
-            url,
-            tokenUrl,
-            creatureCapacity,
-            cargoCapacity,
-            travelPace,
-            description,
+            subtitle: getVehicleSubtitle(v),
+            url: getVehiclesUrl(v.name, v.source),
+            tokenUrl: v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null,
+            creatureCapacity: getVehicleCreatureCapacity(v),
+            cargoCapacity: v.capCargo ? `${v.capCargo} tons` : null,
+            travelPace: getVehiclePace(v),
+            description: getVehicleDescription(v),
         };
     });
+
     const vehicleUpgrades = (data.vehicleUpgrade as VehicleUpgrade[]).map((v) => {
         return {
             name: v.name,
