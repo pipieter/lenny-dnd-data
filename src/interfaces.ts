@@ -42,8 +42,8 @@ export interface Range {
 }
 
 export interface TimeUnit {
+    unit: 'action' | 'bonus' | 'reaction' | 'minute' | 'round' | 'hour';
     number: number;
-    unit: string;
 }
 
 export type Time = string | TimeUnit;

@@ -43,8 +43,8 @@ export const Range = t.iface([], {
 });
 
 export const TimeUnit = t.iface([], {
+  "unit": t.union(t.lit('action'), t.lit('bonus'), t.lit('reaction'), t.lit('minute'), t.lit('round'), t.lit('hour')),
   "number": "number",
-  "unit": "string",
 });
 
 export const Time = t.union("string", "TimeUnit");
