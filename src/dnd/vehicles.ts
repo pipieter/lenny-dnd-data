@@ -1,13 +1,9 @@
-import { subtle } from 'crypto';
-import { Description, DescriptionType, parseDescriptions, parseSizes, title } from '../parser';
+import { Description, DescriptionType, DNDData, DNDDataWithToken, ParsedDNDDataWithToken } from '../interfaces';
+import { parseDescriptions, parseSizes } from '../parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
-interface Vehicle {
-    name: string;
-    source: string;
-    page: number;
-    srd: boolean;
+interface Vehicle extends DNDDataWithToken {
     vehicleType: string;
     size?: string | string[];
     dimensions?: string[];
@@ -77,31 +73,16 @@ interface Vehicle {
         name: string;
         entries: string[];
     }[];
-    entries: (string | any)[];
-    tokenCredit?: string;
-    hasToken: boolean;
-    hasFluff?: boolean;
-    hasFluffImages: boolean;
 }
 
-interface VehicleUpgrade {
-    name: string;
-    source: string;
-    page: number;
+interface VehicleUpgrade extends DNDData {
     upgradeType: string[];
-    entries: (string | any)[];
 }
 
-interface ParsedVehicle {
-    name: string;
-    source: string;
-    subtitle: string;
-    url: string;
-    tokenUrl: string | null;
+interface ParsedVehicle extends ParsedDNDDataWithToken {
     creatureCapacity: string | null;
     cargoCapacity: string | null;
     travelPace: string | null;
-    description: Description[];
 }
 
 function getVehiclePace(vehicle: Vehicle): string | null {

@@ -1,23 +1,20 @@
-import { Description, parseDescriptions, parseImageUrl } from '../parser';
+import { ParsedDNDData } from '../interfaces';
+import { parseDescriptions, parseImageUrl } from '../parser';
 import { getConditionsDiseasesUrl } from '../urls';
 
 // Note, statuses and diseases also follow the same structure as Condition
-interface Condition {
-    name: string;
-    source: string;
-    url: string;
-    description: Description[];
+interface ParsedCondition extends ParsedDNDData {
     image: string | null;
 }
 
-function getConditions(type: string, data: any): Condition[] {
-    const results: Condition[] = [];
+function getConditions(type: string, data: any): ParsedCondition[] {
+    const results: ParsedCondition[] = [];
 
     const entries = data[type] || [];
     const fluffs = data[`${type}Fluff`] || [];
     for (const entry of entries) {
         const url = getConditionsDiseasesUrl(entry.name, entry.source);
-        const result: Condition = {
+        const result: ParsedCondition = {
             name: entry.name,
             source: entry.source,
             url: url,
@@ -40,10 +37,10 @@ function getConditions(type: string, data: any): Condition[] {
 }
 
 export function getConditionsStatusesAndDiseases(data: any): {
-    conditions: Condition[];
-    diseases: Condition[];
+    conditions: ParsedCondition[];
+    diseases: ParsedCondition[];
 } {
-    const conditions: Condition[] = [];
+    const conditions: ParsedCondition[] = [];
     conditions.push(...getConditions('condition', data));
     conditions.push(...getConditions('status', data));
     const diseases = getConditions('disease', data);

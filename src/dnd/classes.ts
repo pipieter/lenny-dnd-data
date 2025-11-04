@@ -4,8 +4,6 @@ import {
     capitalize,
     checkForDisallowedSymbols,
     cleanDNDText,
-    Description,
-    DescriptionType,
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
@@ -13,6 +11,7 @@ import {
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
 import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from '../util';
+import { Description, DescriptionType } from '../interfaces';
 
 const BASEPATH = '5etools-src/data/class/';
 

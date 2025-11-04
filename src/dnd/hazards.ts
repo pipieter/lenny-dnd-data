@@ -1,21 +1,11 @@
-import { subscribe } from 'diagnostics_channel';
-import { capitalize, Description, parseDescriptions } from '../parser';
+import { DNDData, ParsedDNDData } from '../interfaces';
+import { capitalize, parseDescriptions } from '../parser';
 import { getTrapsUrl } from '../urls';
 
-interface Hazard {
-    name: string;
-    source: string;
+interface Hazard extends DNDData {
     trapHazType?: string;
-    entries: (string | any)[];
 }
-
-interface ParsedHazard {
-    name: string;
-    source: string;
-    subtitle: string;
-    url: string;
-    description: Description[];
-}
+interface ParsedHazard extends ParsedDNDData {}
 
 function getTrapHazardSubtitle(hazard: Hazard, suffix: string): string {
     if (!hazard.trapHazType) return capitalize(suffix);

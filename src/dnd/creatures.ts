@@ -1,8 +1,8 @@
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { findEntry } from '../5etools-conversion/find';
 import { readJsonFile } from '../data';
+import { Description, ParsedDNDDataWithToken } from '../interfaces';
 import {
-    Description,
     parseCreatureSummonSpell,
     parseCreatureTypes,
     parseDescriptions,
@@ -12,15 +12,8 @@ import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
 
 const BASEPATH = '5etools-src/data/bestiary/';
 
-interface Creature {
-    name: string;
-    source: string;
-    url: string;
-    subtitle: string | null;
-    tokenUrl: string | null;
+interface ParsedCreature extends ParsedDNDDataWithToken {
     summonedBySpell: string | null;
-
-    description: Description[];
     fluffInfo: Description[];
 }
 
@@ -44,7 +37,7 @@ function loadCreaturesFromIndex(): [any[], any[]] {
     return [creatures, fluffs];
 }
 
-function buildCreature(creature: any, fluff: any | null): Creature {
+function buildCreature(creature: any, fluff: any | null): ParsedCreature {
     const name = creature.name;
     const source = creature.source;
     const url = getBestiaryUrl(name, source);
@@ -101,10 +94,10 @@ function filterEntries(entries: any[]): any[] {
     return filteredEntries;
 }
 
-export function getCreatures(): Creature[] {
+export function getCreatures(): ParsedCreature[] {
     const [baseCreatures, baseFluffs] = loadCreaturesFromIndex();
 
-    const creatures: Creature[] = [];
+    const creatures: ParsedCreature[] = [];
     const fluffs: any[] = [];
 
     // Get creatures
@@ -122,7 +115,7 @@ export function getCreatures(): Creature[] {
     }
 
     // Parse creatures
-    const parsed: Creature[] = [];
+    const parsed: ParsedCreature[] = [];
     for (const creature of creatures) {
         const fluff = findEntry(fluffs, creature.name, creature.source);
         parsed.push(buildCreature(creature, fluff));

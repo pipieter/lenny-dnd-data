@@ -2,7 +2,6 @@ import { handleCopy } from '../5etools-conversion/copy';
 import { applySingleTemplate, applyTemplating } from '../5etools-conversion/template';
 import {
     cleanDNDText,
-    Description,
     parseDescriptions,
     parseImageUrl,
     parseItemValue,
@@ -11,16 +10,13 @@ import {
 import { DamageTypes } from '../5etools-conversion/data';
 import { getItemsUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
+import { ParsedDNDData } from '../interfaces';
 
-interface Item {
-    name: string;
-    source: string;
-    url: string;
+interface ParsedItem extends ParsedDNDData {
     image: string | null;
     value: string | null;
     weight: string | null;
     type: string[];
-    description: Description[];
     properties: string[];
 }
 
@@ -169,7 +165,7 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
     return results;
 }
 
-function parseItem(item: any, data: any): Item {
+function parseItem(item: any, data: any): ParsedItem {
     const fluff = getItemFluff(data.itemFluff, item.name, item.source);
 
     // TODO optimize these mappings beforehand
@@ -178,7 +174,7 @@ function parseItem(item: any, data: any): Item {
     const properties = mapItemProperties(data);
 
     const url = getItemsUrl(item.name, item.source);
-    const result: Item = {
+    const result: ParsedItem = {
         name: '',
         source: '',
         url: '',

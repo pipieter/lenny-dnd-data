@@ -1,23 +1,14 @@
-import { Description, parseDescriptions, parseSingleTime } from '../parser';
+import { DNDData, ParsedDNDData } from '../interfaces';
+import { parseDescriptions, parseSingleTime } from '../parser';
 import { getActionsUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
 
-interface Action {
-    name: string;
-    source: string;
-    page: number;
-    srd: boolean;
-    basicRules: boolean;
+interface Action extends DNDData {
     time: any[];
-    entries: (string | any)[];
 }
 
-interface ParsedAction {
-    name: string;
-    source: string;
-    url: string;
+interface ParsedAction extends ParsedDNDData {
     time: string;
-    description: Description[];
 }
 
 function parseActionTime(times: any[]): string {

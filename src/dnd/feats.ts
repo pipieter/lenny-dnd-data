@@ -1,15 +1,9 @@
-import { Description, parseAbilityScore, parseDescriptions, title } from '../parser';
+import { DNDData, ParsedDNDData } from '../interfaces';
+import { parseAbilityScore, parseDescriptions, title } from '../parser';
 import { getFeatsUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
-interface Feat {
-    name: string;
-    source: string;
-    page: number;
-    srd52?: boolean;
-    basicRules2024?: boolean;
-
-    reprintedAs?: string[];
+interface Feat extends DNDData {
     category?: string;
     prerequisite?: any[];
     optionalfeatureProgression?: any[];
@@ -27,19 +21,12 @@ interface Feat {
     resist?: any[];
     senses?: any[];
     expertise?: any[];
-
-    entries: (string | any)[];
-    hasFluffImages?: boolean;
 }
 
-export interface ParsedFeat {
-    name: string;
-    source: string;
-    url: string;
+export interface ParsedFeat extends ParsedDNDData {
     type: string;
     prerequisite: string | null;
     abilityIncrease: string | null;
-    description: Description[];
 }
 
 function getFeatAbilityIncrease(feat: Feat): string | null {

@@ -11,30 +11,7 @@ import {
     getTrapsUrl,
 } from './urls';
 import { AbilityScores, SpellSchools } from './5etools-conversion/data';
-
-export enum DescriptionType {
-    text = 'text',
-    table = 'table',
-    hr = 'hr',
-}
-
-export interface Description {
-    name: string;
-    type: DescriptionType;
-    value: string | Table;
-}
-
-export interface Range {
-    type: 'range';
-    min: number;
-    max: number;
-}
-
-export interface Table {
-    title: string;
-    headers: string[] | null;
-    rows: (string | Range)[][];
-}
+import { Description, DescriptionType, Table } from './interfaces';
 
 export function checkForDisallowedSymbols(text: string) {
     const disallowedSymbols = ['{', '}', '|', '[object Object]'];

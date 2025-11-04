@@ -1,23 +1,14 @@
 import { readJsonFile } from '../data';
-import { Description, parseDescriptions } from '../parser';
+import { DNDData, ParsedDNDData } from '../interfaces';
+import { parseDescriptions } from '../parser';
 import { getRulesUrl } from '../urls';
 
-interface VariantRule {
-    name: string;
-    source: string;
-    page: number;
-    srd52: boolean;
-    basicRules2024: boolean;
+interface VariantRule extends DNDData {
     ruleType: string;
-    entries: Array<string | object>;
 }
 
-interface ParsedRule {
-    name: string;
-    source: string;
-    url: string;
+interface ParsedRule extends ParsedDNDData {
     ruleType: string;
-    description: Description[];
 }
 
 function parseRuleType(rule: VariantRule): string {

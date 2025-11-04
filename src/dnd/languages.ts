@@ -1,24 +1,18 @@
-import { capitalize, cleanDNDText, Description, parseDescriptions } from '../parser';
+import { DNDData, ParsedDNDData } from '../interfaces';
+import { capitalize, cleanDNDText, parseDescriptions } from '../parser';
 import { getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
-interface Language {
-    name: string;
-    source: string;
+interface Language extends DNDData {
     type?: string;
     typicalSpeakers?: string[];
     script?: string;
-    entries: (string | any)[];
 }
 
-interface ParsedLanguage {
-    name: string;
-    source: string;
-    url: string;
+interface ParsedLanguage extends ParsedDNDData {
     type: string;
     typicalSpeakers: string | null;
     script: string | null;
-    description: Description[] | null;
 }
 
 function getTypicalSpeakers(language: Language): string | null {
@@ -48,7 +42,7 @@ export function getLanguages(data: any): ParsedLanguage[] {
             type: getLanguageType(language),
             typicalSpeakers: getTypicalSpeakers(language),
             script: language.script ?? null,
-            description: language.entries ? parseDescriptions('', language.entries) : null,
+            description: language.entries ? parseDescriptions('', language.entries) : [],
         };
     });
 }

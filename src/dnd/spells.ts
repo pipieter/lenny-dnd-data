@@ -1,6 +1,5 @@
-import { accessSync, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import {
-    Description,
     parseCastingTime,
     parseComponents,
     parseDescriptions,
@@ -10,25 +9,22 @@ import {
     parseSpellLevel,
     parseSpellSchool,
 } from '../parser';
-import { getImageUrl, getSpellsUrl } from '../urls';
+import { getSpellsUrl } from '../urls';
+import { ParsedDNDData } from '../interfaces';
 
 interface Caster {
     name: string;
     source: string;
 }
 
-interface Spell {
-    name: string;
-    source: string;
+interface ParsedSpell extends ParsedDNDData {
     level: string;
     school: string;
     casting_time: string;
     range: string;
     components: string;
     duration: string;
-    url: string;
     image: string | null;
-    description: Description[];
     classes: Caster[];
 }
 
@@ -36,7 +32,7 @@ function spellKey(name: string, source: string): string {
     return `${name} (${source})`;
 }
 
-function spellCmp(a: Caster | Spell, b: Caster | Spell): number {
+function spellCmp(a: Caster | ParsedSpell, b: Caster | ParsedSpell): number {
     if (a.name == b.name) {
         return a.source.localeCompare(b.source);
     }
@@ -52,7 +48,7 @@ function getSpellImage(fluffs: any[], name: string, source: string): string | nu
     return null;
 }
 
-function loadSpellsFromFile(path: string, fluffPath: string): Spell[] {
+function loadSpellsFromFile(path: string, fluffPath: string): ParsedSpell[] {
     const data = JSON.parse(readFileSync(path).toString());
 
     let fluffs: any[] = [];
@@ -62,11 +58,11 @@ function loadSpellsFromFile(path: string, fluffPath: string): Spell[] {
         // Fluffs could not be loaded, most likely the file does not exist.
     }
 
-    const results: Spell[] = [];
+    const results: ParsedSpell[] = [];
 
     for (const spell of data.spell) {
         const url = getSpellsUrl(spell.name, spell.source);
-        const result: Spell = {
+        const result: ParsedSpell = {
             name: spell.name,
             source: spell.source,
             level: parseSpellLevel(spell.level),
@@ -93,8 +89,8 @@ function loadSpellsFromFile(path: string, fluffPath: string): Spell[] {
     return results;
 }
 
-function loadSpells(path: string): Spell[] {
-    const results: Spell[] = [];
+function loadSpells(path: string): ParsedSpell[] {
+    const results: ParsedSpell[] = [];
     const index = `${path}/index.json`;
     const sources = JSON.parse(readFileSync(index).toString());
 
@@ -134,7 +130,7 @@ function loadCasters(path: string): Map<string, Caster[]> {
     return map;
 }
 
-export function getSpells(path: string): Spell[] {
+export function getSpells(path: string): ParsedSpell[] {
     const spells = loadSpells(path);
     const casters = loadCasters(path);
 

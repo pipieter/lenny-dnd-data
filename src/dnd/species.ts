@@ -1,20 +1,17 @@
 // Note: in the 5e.tools files this is still referred to as 'race'
 
-import { capitalize, Description, parseDescriptions, parseImageUrl } from '../parser';
+import { capitalize, parseDescriptions, parseImageUrl } from '../parser';
 import { getSpeciesUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { CreatureSizes, SpecialSpeedTypes } from '../5etools-conversion/data';
+import { Description, ParsedDNDData } from '../interfaces';
 
-interface Species {
-    name: string;
-    source: string;
-    url: string;
+interface ParsedSpecies extends ParsedDNDData {
     image: string | null;
     sizes: string[];
     speed: string[];
     creatureType: string | null;
-    description: Description[];
     info: Description[];
 }
 
@@ -86,7 +83,7 @@ function getSpeciesCreatureType(creatureTypes: string[]): string | null {
     return joinStringsWithOr(creatureTypes, true) || null;
 }
 
-export function getSpecies(data: any): Species[] {
+export function getSpecies(data: any): ParsedSpecies[] {
     // Get raw entries
     const raw: any[] = [];
     for (const entry of data.race) {
@@ -102,7 +99,7 @@ export function getSpecies(data: any): Species[] {
     }
 
     // Parse raw entries, at this point every raw entry *should* have all the required data
-    const species: Species[] = [];
+    const species: ParsedSpecies[] = [];
 
     for (const entry of raw) {
         let name = entry.name;

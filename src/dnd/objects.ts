@@ -1,11 +1,8 @@
-import { Description, parseDescriptions, parseSizes } from '../parser';
+import { DNDDataWithToken, ParsedDNDDataWithToken } from '../interfaces';
+import { parseDescriptions, parseSizes } from '../parser';
 import { getObjectsUrl, getObjectTokenUrl } from '../urls';
 
-interface Object {
-    name: string;
-    source: string;
-    page: number;
-    reprintedAs?: string[];
+interface Object extends DNDDataWithToken{
     size: string[];
     objectType: string; // Seemingly not used by 5e.tools, always shows 'object'.
     ac: number;
@@ -19,26 +16,15 @@ interface Object {
     cha?: number;
     immune?: string[];
     conditionImmune?: string[];
-    entries: (string | object)[];
     actionEntries: (string | object)[];
-    tokenCredit?: string;
     altArt?: object[];
     token?: {
         name: string;
         source: string;
     };
-    hasToken?: boolean;
-    hasFluffImages?: boolean;
 }
 
-interface ParsedObject {
-    name: string;
-    source: string;
-    subtitle: string;
-    url: string;
-    tokenUrl: string | null;
-    description: Description[];
-}
+interface ParsedObject extends ParsedDNDDataWithToken {}
 
 function getObjectSubtitle(obj: Object): string {
     return `${parseSizes(obj.size)} object`;

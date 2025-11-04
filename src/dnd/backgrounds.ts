@@ -1,13 +1,10 @@
 import { handleCopy } from '../5etools-conversion/copy';
-import { Description, parseAbilityScore, parseDescriptions } from '../parser';
+import { ParsedDNDData } from '../interfaces';
+import { parseAbilityScore, parseDescriptions } from '../parser';
 import { getBackgroundsUrl } from '../urls';
 
-interface ParsedBackground {
-    name: string;
-    source: string;
-    url: string;
+interface ParsedBackground extends ParsedDNDData {
     abilities: string[] | null;
-    description: Description[] | null;
 }
 
 function parseBackgroundAbilities(background: any): string[] | null {

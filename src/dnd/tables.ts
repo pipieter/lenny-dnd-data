@@ -1,10 +1,8 @@
 import { readJsonFile } from '../data';
+import { Description, DescriptionType, Table } from '../interfaces';
 import {
     cleanDNDText,
-    Description,
-    DescriptionType,
     parseDescriptionFromTable,
-    Table,
 } from '../parser';
 import { getTablesUrl } from '../urls';
 
