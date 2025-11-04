@@ -64,6 +64,7 @@ function cleanDNDatk(text: string): string {
         ['{@atkr m}', 'Melee Attack Roll'],
         ['{@atkr r}', 'Ranged Attack Roll'],
         ['{@atkr m,r}', 'Melee or Ranged Attack Roll'],
+        ['{@atk g}', 'Magical Attack'],
     ]);
 
     for (const pattern of replacements.keys()) {
@@ -190,6 +191,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@object ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@feat ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(
@@ -246,6 +248,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             /\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2, p3) => `[${p3}](${getObjectsUrl(p1, p2)})`
         );
+        text = text.replaceAll(/\{@object ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(
             /\{@feat ([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2) => `[${p1}](${getFeatsUrl(p1, p2)})`
@@ -785,7 +788,8 @@ export function title(text: string): string {
     return text.split(' ').map(capitalize).join(' ');
 }
 
-export function parseSizes(sizes: string[]): string {
+export function parseSizes(sizes: string | string[]): string {
+    if (typeof sizes === 'string') sizes = [sizes];
     const sizeMap = new Map<string, string>([
         ['T', 'Tiny'],
         ['S', 'Small'],

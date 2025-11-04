@@ -26,6 +26,12 @@ export function getCreatureTokenUrl(name: string, source: string) {
     return cleanUrl(url);
 }
 
+export function getVehicleTokenUrl(name: string, source: string) {
+    // Unlike creature tokens, the source may not be enforced to be uppercase.
+    const url = `https://5e.tools/img/vehicles/tokens/${source}/${name}.webp`;
+    return cleanUrl(url);
+}
+
 /*
  * ##### URLS WITH NAME-SOURCE QUERIES #####
  */
@@ -106,4 +112,8 @@ export function getTablesUrl(name: string, source: string | null = null) {
 
 export function getTrapsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/trapshazards.html`, name, source);
+}
+
+export function getVehiclesUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/vehicles.html`, name, source);
 }

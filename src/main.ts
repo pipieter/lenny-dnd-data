@@ -15,6 +15,7 @@ import { getBackgrounds } from './backgrounds';
 import { getTables } from './tables';
 import { getSpecies } from './species';
 import { getSources } from './sources';
+import { getVehicles } from './vehicles';
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
@@ -68,6 +69,9 @@ function main(): void {
     const sources = getSources(data);
     stopwatch.log('Sources retrieved');
 
+    const vehicles = getVehicles(data);
+    stopwatch.log('Vehicles retrieved.');
+
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');
     writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
@@ -85,6 +89,7 @@ function main(): void {
     writeFileSync('./generated/tables.json', JSON.stringify(tables, null, 2), 'utf-8');
     writeFileSync('./generated/species.json', JSON.stringify(species, null, 2), 'utf-8');
     writeFileSync('./generated/sources.json', JSON.stringify(sources, null, 2), 'utf-8');
+    writeFileSync('./generated/vehicles.json', JSON.stringify(vehicles, null, 2), 'utf-8');
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
