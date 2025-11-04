@@ -1,5 +1,6 @@
-import { Description, DescriptionType, parseDescriptions, parseSizes } from './parser';
+import { Description, DescriptionType, parseDescriptions, parseSizes, title } from './parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from './urls';
+import { joinStringsWithOr } from './util';
 
 interface Vehicle {
     name: string;
@@ -15,11 +16,7 @@ interface Vehicle {
     capCargo?: number;
     cost?: number;
     pace?: number | object;
-    speed?: {
-        walk: number;
-        swim: number;
-        note: string;
-    };
+    speed?: number | object;
     ac?: number;
     str?: number;
     dex?: number;
@@ -96,6 +93,50 @@ interface ParsedVehicle {
     cargoCapacity: string | null;
     travelPace: string | null;
     description: Description[];
+}
+
+function getVehiclePace(vehicle: Vehicle): string | null {
+    let parts: string[] = [];
+
+    if (vehicle.speed) {
+        const speed = vehicle.speed;
+        if (typeof speed === 'string' || typeof speed === 'number') {
+            parts.push(`${speed} ft.`)
+        } else if (typeof speed === 'object') {
+            let speedParts: string[] = [];
+            let note = null;
+            for (const [k, v] of Object.entries(speed)) {
+                if (k === 'note') {
+                    note = v;
+                    continue;
+                }
+                speedParts.push(`${k} ${v} ft.`);
+            }
+
+            let speedString = joinStringsWithOr(speedParts, false);
+            if (note) speedString = `${speedString} ${note}`;
+            parts.push(speedString);
+
+        } else {
+            throw `vehicle.speed has unsupported type: ${typeof speed} (${speed})`
+        }
+    }
+
+    // if (vehicle.pace) {
+    //     const pace = vehicle.pace;
+    //     if (typeof pace === 'string' || typeof pace === 'number') {
+    //         parts.push(`${pace} mph.`)
+
+    //     } else if (typeof pace === 'object') {
+
+
+    //     } else {
+    //         throw `vehicle.speed has unsupported type: ${pace}`
+    //     }
+    // }
+
+    if (parts.length === 0) return null;
+    return parts.join('\n');
 }
 
 function getVehicleDescription(vehicle: Vehicle): Description[] {
@@ -185,6 +226,7 @@ export function getVehicles(data: any): ParsedVehicle[] {
         const tokenUrl = v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null;
         const creatureCapacity = getVehicleCreatureCapacity(v);
         const cargoCapacity = v.capCargo ? `${v.capCargo} tons` : null;
+        const travelPace = getVehiclePace(v);
         const description = getVehicleDescription(v);
 
         return {
@@ -195,7 +237,7 @@ export function getVehicles(data: any): ParsedVehicle[] {
             tokenUrl,
             creatureCapacity,
             cargoCapacity,
-            travelPace: null, // TODO Parse pace & speed.
+            travelPace,
             description,
         };
     });
