@@ -1,4 +1,4 @@
-import { Description, DescriptionType, parseDescriptions, parseSizes } from '../parser';
+import { capitalize, Description, DescriptionType, parseDescriptions, parseSizes } from '../parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
@@ -170,7 +170,7 @@ function getVehicleDescription(vehicle: Vehicle): Description[] {
     if (vehicle.movement) {
         const movements = vehicle.movement.map((m) => {
             const speedText = m.speed
-                .map((s) => `*${s.mode} Speed:* ${s.entries.join('\n')}`)
+                .map((s) => `*${capitalize(s.mode)} speed:* ${s.entries.join('\n')}`)
                 .join('\n\n');
 
             return {
@@ -195,10 +195,13 @@ function getVehicleCreatureCapacity(vehicle: Vehicle): string | null {
     const parts: string[] = [];
 
     if (vehicle.capCrew) parts.push(`${vehicle.capCrew} crew`);
-    if (vehicle.capPassenger) parts.push(`${vehicle.capPassenger} passengers`);
+    if (vehicle.capPassenger) {
+        if (vehicle.capPassenger === 1) parts.push(`1 passenger`);
+        else parts.push(`${vehicle.capPassenger} passengers`);
+    }
 
     if (parts.length === 0) return null;
-    return parts.join(', ');
+    return parts.join('\n');
 }
 
 function getVehicleDimensions(vehicle: Vehicle): string {
