@@ -4,18 +4,48 @@
 import * as t from "ts-interface-checker";
 // tslint:disable:object-literal-key-quotes
 
-export const TimeUnit = t.iface([], {
-  "number": "number",
-  "unit": "string",
+export const UID = t.iface([], {
+  "uid": "string",
+  "tag": "string",
 });
 
 export const DescriptionEntries = t.iface([], {
   "type": t.lit('entries'),
+  "name": t.opt("string"),
+  "entries": t.array("Description"),
+});
+
+export const DescriptionList = t.iface([], {
+  "type": t.lit('list'),
+  "items": t.array("string"),
+});
+
+export const DescriptionTable = t.iface([], {
+  "type": t.lit('table'),
+  "caption": "string",
+  "colLabels": t.array("string"),
+  "colStyles": t.array("string"),
+  "rows": t.array(t.array("string")),
+});
+
+export const DescriptionInset = t.iface([], {
+  "type": t.lit('inset'),
   "name": "string",
   "entries": t.array("Description"),
 });
 
-export const Description = t.union("string", "DescriptionEntries");
+export const Description = t.union("string", "DescriptionEntries", "DescriptionList", "DescriptionTable", "DescriptionInset");
+
+export const Range = t.iface([], {
+  "type": t.lit('range'),
+  "min": "number",
+  "max": "number",
+});
+
+export const TimeUnit = t.iface([], {
+  "number": "number",
+  "unit": "string",
+});
 
 export const Time = t.union("string", "TimeUnit");
 
@@ -24,15 +54,25 @@ export const Action = t.iface([], {
   "source": "string",
   "page": "number",
   "srd": t.opt("boolean"),
+  "srd52": t.opt("boolean"),
   "basicRules": t.opt("boolean"),
+  "basicRules2024": t.opt("boolean"),
+  "fromVariant": t.opt("string"),
   "time": t.opt(t.array("Time")),
   "seeAlsoAction": t.opt(t.array("string")),
+  "entries": t.array("Description"),
+  "reprintedAs": t.opt(t.array(t.union("string", "UID"))),
 });
 
 const exportedTypeSuite: t.ITypeSuite = {
-  TimeUnit,
+  UID,
   DescriptionEntries,
+  DescriptionList,
+  DescriptionTable,
+  DescriptionInset,
   Description,
+  Range,
+  TimeUnit,
   Time,
   Action,
 };

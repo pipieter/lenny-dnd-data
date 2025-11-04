@@ -1,9 +1,10 @@
-import { CheckerT } from 'ts-interface-checker';
+import { Checker } from 'ts-interface-checker';
 
-export function validate<T>(entries: readonly any[], checker: CheckerT<T>): T[] {
+export function validate<T>(entries: readonly any[], checker: Checker): T[] {
     for (const entry of entries) {
         if (!checker.strictTest(entry)) {
-            throw TypeError(`Entry did not match interface: '${entry}'!`);
+            console.error(`Invalid entry: ${JSON.stringify(entry)}`);
+            checker.strictCheck(entry); // throw error
         }
     }
 

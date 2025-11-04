@@ -1,3 +1,5 @@
+import { Action } from "./interfaces";
+
 export const cleanUrl = encodeURI;
 
 /*
@@ -46,8 +48,8 @@ function buildNameSourceUrl(baseUrl: string, name: string, source: string): stri
     return cleanUrl(baseUrl + query);
 }
 
-export function getActionsUrl(name: string, source: string) {
-    return buildNameSourceUrl(`https://5e.tools/actions.html`, name, source);
+export function getActionsUrl(action: Action) {
+    return buildNameSourceUrl(`https://5e.tools/actions.html`, action.name, action.source);
 }
 
 export function getBackgroundsUrl(name: string, source: string = 'PHB') {

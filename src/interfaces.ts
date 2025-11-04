@@ -1,23 +1,64 @@
-interface TimeUnit {
-    number: number;
-    unit: string;
+export interface UID {
+    uid: string;
+    tag: string;
 }
 
-interface DescriptionEntries {
+export interface DescriptionEntries {
     type: 'entries';
+    name?: string;
+    entries: Description[];
+}
+
+export interface DescriptionList {
+    type: 'list';
+    items: string[];
+}
+
+export interface DescriptionTable {
+    type: 'table';
+    caption: string;
+    colLabels: string[];
+    colStyles: string[];
+    rows: string[][];
+}
+
+export interface DescriptionInset {
+    type: 'inset';
     name: string;
     entries: Description[];
 }
 
-type Description = string | DescriptionEntries;
-type Time = string | TimeUnit;
+export type Description =
+    | string
+    | DescriptionEntries
+    | DescriptionList
+    | DescriptionTable
+    | DescriptionInset;
 
-interface Action {
+export interface Range {
+    type: 'range';
+    min: number;
+    max: number;
+}
+
+export interface TimeUnit {
+    number: number;
+    unit: string;
+}
+
+export type Time = string | TimeUnit;
+
+export interface Action {
     name: string;
     source: string;
     page: number;
     srd?: boolean;
+    srd52?: boolean;
     basicRules?: boolean;
+    basicRules2024?: boolean;
+    fromVariant?: string;
     time?: Time[];
     seeAlsoAction?: string[];
+    entries: Description[];
+    reprintedAs?: (string | UID)[];
 }
