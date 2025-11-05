@@ -37,6 +37,18 @@ export interface ListItem {
     entries?: string[];
 }
 
+/**
+ * Specific instance of DescriptionEntries that only allows strings. This is to
+ * avoid the specific scenario where the contents of a list entries are another entries
+ * (as can be seen in status.json:Concentration|PHB). The validator generator will
+ * otherwise be stuck in an infinite loop.
+ */
+export interface ListItemEntries {
+    type: 'entries';
+    name: string;
+    entries: string[];
+}
+
 export interface TableCell {
     type: 'cell';
     width: number;
@@ -70,7 +82,7 @@ export interface DescriptionList {
     name?: string;
     style?: string;
     columns?: number;
-    items: (string | ListItem)[];
+    items: (string | ListItem | ListItemEntries)[];
 }
 
 export interface DescriptionTable {
@@ -198,4 +210,22 @@ export interface Language extends BaseEntry {
 
 export interface LanguageFluff extends BaseEntry {
     images: DescriptionImage[];
+}
+
+export interface Condition extends BaseEntry {
+    entries: Description[];
+    hasFluffImages?: boolean;
+}
+
+export interface ConditionFluff extends BaseEntry {
+    images: DescriptionImage[];
+}
+
+export interface Disease extends BaseEntry {
+    type?: string;
+    entries: Description[];
+}
+
+export interface Status extends BaseEntry {
+    entries: Description[];
 }

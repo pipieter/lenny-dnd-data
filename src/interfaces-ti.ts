@@ -40,6 +40,12 @@ export const ListItem = t.iface([], {
     entries: t.opt(t.array('string')),
 });
 
+export const ListItemEntries = t.iface([], {
+    type: t.lit('entries'),
+    name: 'string',
+    entries: t.array('string'),
+});
+
 export const TableCell = t.iface([], {
     type: t.lit('cell'),
     width: 'number',
@@ -73,7 +79,7 @@ export const DescriptionList = t.iface([], {
     name: t.opt('string'),
     style: t.opt('string'),
     columns: t.opt('number'),
-    items: t.array(t.union('string', 'ListItem')),
+    items: t.array(t.union('string', 'ListItem', 'ListItemEntries')),
 });
 
 export const DescriptionTable = t.iface([], {
@@ -211,12 +217,31 @@ export const LanguageFluff = t.iface(['BaseEntry'], {
     images: t.array('DescriptionImage'),
 });
 
+export const Condition = t.iface(['BaseEntry'], {
+    entries: t.array('Description'),
+    hasFluffImages: t.opt('boolean'),
+});
+
+export const ConditionFluff = t.iface(['BaseEntry'], {
+    images: t.array('DescriptionImage'),
+});
+
+export const Disease = t.iface(['BaseEntry'], {
+    type: t.opt('string'),
+    entries: t.array('Description'),
+});
+
+export const Status = t.iface(['BaseEntry'], {
+    entries: t.array('Description'),
+});
+
 const exportedTypeSuite: t.ITypeSuite = {
     BaseEntry,
     UID,
     AdditionalSource,
     HRef,
     ListItem,
+    ListItemEntries,
     TableCell,
     TableRow,
     GenTables,
@@ -240,5 +265,9 @@ const exportedTypeSuite: t.ITypeSuite = {
     VariantRule,
     Language,
     LanguageFluff,
+    Condition,
+    ConditionFluff,
+    Disease,
+    Status,
 };
 export default exportedTypeSuite;

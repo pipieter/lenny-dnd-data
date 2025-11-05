@@ -1,8 +1,14 @@
+import { Condition, ConditionFluff, Disease, Status } from '../interfaces';
 import { Description, parseDescriptions, parseImageUrl } from '../parser';
 import { getConditionsDiseasesUrl } from '../urls';
+import {
+    ConditionFluffValidator,
+    ConditionValidator,
+    DiseaseValidator,
+    StatusValidator,
+} from '../validate';
 
-// Note, statuses and diseases also follow the same structure as Condition
-interface Condition {
+interface ParsedCondition {
     name: string;
     source: string;
     url: string;
@@ -10,43 +16,46 @@ interface Condition {
     image: string | null;
 }
 
-function getConditions(type: string, data: any): Condition[] {
-    const results: Condition[] = [];
+function getConditions(
+    conditions: (Condition | Disease | Status)[],
+    fluffs: ConditionFluff[]
+): ParsedCondition[] {
+    const parsed: ParsedCondition[] = [];
 
-    const entries = data[type] || [];
-    const fluffs = data[`${type}Fluff`] || [];
-    for (const entry of entries) {
-        const url = getConditionsDiseasesUrl(entry.name, entry.source);
-        const result: Condition = {
-            name: entry.name,
-            source: entry.source,
-            url: url,
-            description: parseDescriptions('Description', entry.entries),
-            image: null,
-        };
-
+    for (const condition of conditions) {
+        let image = null;
         for (const fluff of fluffs) {
-            if (fluff.name == entry.name && fluff.source == entry.source) {
-                if (fluff.images) {
-                    result.image = parseImageUrl(fluff.images);
-                }
+            if (fluff.name === condition.name && fluff.source === condition.source) {
+                image = parseImageUrl(fluff.images);
             }
         }
 
-        results.push(result);
+        parsed.push({
+            name: condition.name,
+            source: condition.source,
+            url: getConditionsDiseasesUrl(condition),
+            description: parseDescriptions('Description', condition.entries),
+            image,
+        });
     }
 
-    return results;
+    return parsed;
 }
 
 export function getConditionsStatusesAndDiseases(data: any): {
-    conditions: Condition[];
-    diseases: Condition[];
+    conditions: ParsedCondition[];
+    diseases: ParsedCondition[];
 } {
-    const conditions: Condition[] = [];
-    conditions.push(...getConditions('condition', data));
-    conditions.push(...getConditions('status', data));
-    const diseases = getConditions('disease', data);
+    const conditions = ConditionValidator.validate(data.condition);
+    const conditionFluffs = ConditionFluffValidator.validate(data.conditionFluff);
+    const diseases = DiseaseValidator.validate(data.disease);
+    const statuses = StatusValidator.validate(data.status);
 
-    return { conditions, diseases };
+    const parsedConditions = [
+        ...getConditions(conditions, conditionFluffs),
+        ...getConditions(statuses, []),
+    ];
+    const parsedDiseases = getConditions(diseases, []);
+
+    return { conditions: parsedConditions, diseases: parsedDiseases };
 }

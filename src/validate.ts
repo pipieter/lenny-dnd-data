@@ -1,7 +1,16 @@
 import { Checker, createCheckers } from 'ts-interface-checker';
 import interfacesTI from './interfaces-ti';
 
-import { Action, Language, LanguageFluff, VariantRule } from './interfaces';
+import {
+    Action,
+    Condition,
+    ConditionFluff,
+    Disease,
+    Language,
+    LanguageFluff,
+    Status,
+    VariantRule,
+} from './interfaces';
 
 const checkers = createCheckers(interfacesTI);
 
@@ -28,3 +37,7 @@ export const ActionValidator = new Validator<Action>(checkers.Action);
 export const VariantRuleValidator = new Validator<VariantRule>(checkers.VariantRule);
 export const LanguageValidator = new Validator<Language>(checkers.Language);
 export const LanguageFluffValidator = new Validator<LanguageFluff>(checkers.LanguageFluff);
+export const ConditionValidator = new Validator<Condition>(checkers.Condition);
+export const ConditionFluffValidator = new Validator<ConditionFluff>(checkers.ConditionFluff);
+export const DiseaseValidator = new Validator<Disease>(checkers.Disease);
+export const StatusValidator = new Validator<Status>(checkers.Status);

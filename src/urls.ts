@@ -1,4 +1,4 @@
-import { Action, VariantRule } from './interfaces';
+import { Action, Condition, Disease, Status, VariantRule } from './interfaces';
 
 export const cleanUrl = encodeURI;
 
@@ -64,8 +64,8 @@ export function getClassesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/classes.html`, name, source);
 }
 
-export function getConditionsDiseasesUrl(name: string, source: string) {
-    return buildNameSourceUrl(`https://5e.tools/conditionsdiseases.html`, name, source);
+export function getConditionsDiseasesUrl(con: Condition | Disease | Status) {
+    return buildNameSourceUrl(`https://5e.tools/conditionsdiseases.html`, con.name, con.source);
 }
 
 export function getFeatsUrl(name: string, source: string) {
