@@ -1,8 +1,9 @@
 import { capitalize, Description, DescriptionType, parseDescriptions, parseSizes } from '../parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
+import { VehicleUpgradeValidator, VehicleValidator } from '../validate';
 
-interface Vehicle {
+export interface Vehicle {
     name: string;
     source: string;
     page: number;
@@ -83,7 +84,7 @@ interface Vehicle {
     hasFluffImages: boolean;
 }
 
-interface VehicleUpgrade {
+export interface VehicleUpgrade {
     name: string;
     source: string;
     page: number;
@@ -256,7 +257,10 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
 
 // MAIN COMMAND
 export function getVehicles(data: any): ParsedVehicle[] {
-    const vehicles = (data.vehicle as Vehicle[]).map((v) => {
+    const vehicles = VehicleValidator.validate(data.vehicle);
+    const upgrades = VehicleUpgradeValidator.validate(data.vehicleUpgrade);
+
+    const parsedVehicles = vehicles.map((v) => {
         return {
             name: v.name,
             source: v.source,
@@ -270,7 +274,7 @@ export function getVehicles(data: any): ParsedVehicle[] {
         };
     });
 
-    const vehicleUpgrades = (data.vehicleUpgrade as VehicleUpgrade[]).map((v) => {
+    const parsedUpgrades = upgrades.map((v) => {
         return {
             name: v.name,
             source: v.source,
@@ -284,5 +288,5 @@ export function getVehicles(data: any): ParsedVehicle[] {
         };
     });
 
-    return [...vehicles, ...vehicleUpgrades];
+    return [...parsedVehicles, ...parsedUpgrades];
 }
