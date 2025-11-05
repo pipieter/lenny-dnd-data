@@ -1,7 +1,7 @@
 import { Checker, createCheckers } from 'ts-interface-checker';
 import interfacesTI from './interfaces-ti';
 
-import { Action, VariantRule } from './interfaces';
+import { Action, Language, LanguageFluff, VariantRule } from './interfaces';
 import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
 
 const checkers = createCheckers(interfacesTI);
@@ -27,6 +27,8 @@ class Validator<T> {
 
 export const ActionValidator = new Validator<Action>(checkers.Action);
 export const VariantRuleValidator = new Validator<VariantRule>(checkers.VariantRule);
+export const LanguageValidator = new Validator<Language>(checkers.Language);
+export const LanguageFluffValidator = new Validator<LanguageFluff>(checkers.LanguageFluff);
 
 export const VehicleValidator = new Validator<Vehicle>(checkers.vehicle);
 export const VehicleUpgradeValidator = new Validator<VehicleUpgrade>(checkers.vehicleUpgrade);

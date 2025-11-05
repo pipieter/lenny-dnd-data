@@ -4,6 +4,19 @@
 import * as t from 'ts-interface-checker';
 // tslint:disable:object-literal-key-quotes
 
+export const BaseEntry = t.iface([], {
+    name: 'string',
+    source: 'string',
+    page: t.opt('number'),
+    srd: t.opt('boolean'),
+    srd52: t.opt('boolean'),
+    basicRules: t.opt('boolean'),
+    basicRules2024: t.opt('boolean'),
+    reprintedAs: t.opt(t.array(t.union('string', 'UID'))),
+    additionalSources: t.opt(t.array('AdditionalSource')),
+    otherSources: t.opt(t.array('AdditionalSource')),
+});
+
 export const UID = t.iface([], {
     uid: 'string',
     tag: 'string',
@@ -11,7 +24,7 @@ export const UID = t.iface([], {
 
 export const AdditionalSource = t.iface([], {
     source: 'string',
-    page: 'number',
+    page: t.opt('number'),
 });
 
 export const HRef = t.iface([], {
@@ -170,36 +183,36 @@ export const TimeUnit = t.iface([], {
 
 export const Time = t.union('string', 'TimeUnit');
 
-export const Action = t.iface([], {
-    name: 'string',
-    source: 'string',
-    page: 'number',
-    srd: t.opt('boolean'),
-    srd52: t.opt('boolean'),
-    basicRules: t.opt('boolean'),
-    basicRules2024: t.opt('boolean'),
-    fromVariant: t.opt('string'),
-    time: t.opt(t.array('Time')),
-    seeAlsoAction: t.opt(t.array('string')),
+export const Action = t.iface(['BaseEntry'], {
     entries: t.array('Description'),
-    reprintedAs: t.opt(t.array(t.union('string', 'UID'))),
+    time: t.opt(t.array('Time')),
+    fromVariant: t.opt('string'),
+    seeAlsoAction: t.opt(t.array('string')),
 });
 
-export const VariantRule = t.iface([], {
-    name: 'string',
-    source: 'string',
-    page: t.opt('number'),
-    additionalSources: t.opt(t.array('AdditionalSource')),
+export const VariantRule = t.iface(['BaseEntry'], {
     type: t.opt('string'),
-    srd: t.opt('boolean'),
-    srd52: t.opt('boolean'),
-    basicRules2024: t.opt('boolean'),
     ruleType: t.opt(t.union(t.lit('C'), t.lit('O'), t.lit('V'), t.lit('VO'))),
     entries: t.array('Description'),
-    reprintedAs: t.opt(t.array(t.union('string', 'UID'))),
+});
+
+export const Language = t.iface(['BaseEntry'], {
+    typicalSpeakers: t.opt(t.array('string')),
+    script: t.opt('string'),
+    type: t.opt('string'),
+    origin: t.opt('string'),
+    entries: t.opt(t.array('Description')),
+    hasFluffImages: t.opt('boolean'),
+    fonts: t.opt(t.array('string')),
+    dialects: t.opt(t.array('string')),
+});
+
+export const LanguageFluff = t.iface(['BaseEntry'], {
+    images: t.array('DescriptionImage'),
 });
 
 const exportedTypeSuite: t.ITypeSuite = {
+    BaseEntry,
     UID,
     AdditionalSource,
     HRef,
@@ -225,5 +238,7 @@ const exportedTypeSuite: t.ITypeSuite = {
     Time,
     Action,
     VariantRule,
+    Language,
+    LanguageFluff,
 };
 export default exportedTypeSuite;
