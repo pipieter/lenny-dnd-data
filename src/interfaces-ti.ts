@@ -66,6 +66,12 @@ export const DescriptionEntries = t.iface([], {
     page: t.opt('number'),
     source: t.opt('string'),
     entries: t.array('Description'),
+    data: t.opt(
+        t.iface([], {
+            isFeature: t.opt('boolean'),
+            isAlternateFeature: t.opt('boolean'),
+        })
+    ),
 });
 
 export const DescriptionList = t.iface([], {
@@ -145,6 +151,7 @@ export const DescriptionImage = t.iface([], {
 export const DescriptionSection = t.iface([], {
     type: t.lit('section'),
     name: 'string',
+    id: t.opt('string'),
     entries: t.array('Description'),
 });
 
@@ -211,6 +218,160 @@ export const LanguageFluff = t.iface(['BaseEntry'], {
     images: t.array('DescriptionImage'),
 });
 
+export const StartingEquipmentEntry = t.union(
+    'EquipmentItem',
+    'EquipmentType',
+    'SpecialItem',
+    'Currency',
+    'string'
+);
+
+export const EquipmentItem = t.iface([], {
+    item: 'string',
+    displayName: t.opt('string'),
+    containsValue: t.opt('number'),
+    quantity: t.opt('number'),
+});
+
+export const EquipmentType = t.iface([], {
+    equipmentType: 'string',
+    displayName: t.opt('string'),
+});
+
+export const SpecialItem = t.iface([], {
+    special: 'string',
+    quantity: t.opt('number'),
+    worthValue: t.opt('number'),
+    containsValue: t.opt('number'),
+});
+
+export const Currency = t.iface([], {
+    value: 'number',
+});
+
+export const BackgroundAbilities = t.iface([], {
+    choose: t.iface([], {
+        weighted: t.iface([], {
+            from: t.array(
+                t.union(
+                    t.lit('str'),
+                    t.lit('dex'),
+                    t.lit('con'),
+                    t.lit('int'),
+                    t.lit('wis'),
+                    t.lit('cha')
+                )
+            ),
+            weights: t.array('number'),
+        }),
+    }),
+});
+
+export const ProficiencyChoices = t.iface([], {
+    arcana: t.opt('boolean'),
+    nature: t.opt('boolean'),
+    primordial: t.opt('boolean'),
+    'disguise kit': t.opt('boolean'),
+    deception: t.opt('boolean'),
+    history: t.opt('boolean'),
+    insight: t.opt('boolean'),
+    survival: t.opt('boolean'),
+    persuasion: t.opt('boolean'),
+    anyStandard: t.opt('number'),
+    choose: t.iface([], {
+        from: t.array('string'),
+        count: t.opt('number'),
+    }),
+});
+
+export const ProficiencyEntry = t.union(
+    'ProficiencyChoices',
+    t.iface([], {
+        [t.indexKey]: t.union('boolean', 'number'),
+    })
+);
+
+export const _ModEntries = t.iface([], {
+    name: t.opt('string'),
+    mode: t.union(t.lit('insertArr'), t.lit('replaceArr')),
+    index: t.opt('number'),
+    replace: t.opt(
+        t.union(
+            'string',
+            t.iface([], {
+                index: 'number',
+            })
+        )
+    ),
+    items: 'any',
+});
+
+export const _Copy = t.iface([], {
+    name: 'string',
+    source: 'string',
+    _mod: t.opt(
+        t.iface([], {
+            entries: t.union('_ModEntries', t.array('_ModEntries')),
+        })
+    ),
+});
+
+export const Background = t.iface(['BaseEntry'], {
+    prerequisite: t.opt(
+        t.array(
+            t.iface([], {
+                campaign: t.array('string'),
+            })
+        )
+    ),
+    edition: t.opt('string'),
+    ability: t.opt(t.array('BackgroundAbilities')),
+    feats: t.opt(
+        t.array(
+            t.iface([], {
+                [t.indexKey]: 'boolean',
+            })
+        )
+    ),
+    skillProficiencies: t.opt(t.array('ProficiencyEntry')),
+    toolProficiencies: t.opt(t.array('ProficiencyEntry')),
+    languageProficiencies: t.opt(t.array('ProficiencyEntry')),
+    skillToolLanguageProficiencies: t.opt(
+        t.array(
+            t.iface([], {
+                anyLanguage: t.opt('number'),
+                anyTool: t.opt('number'),
+            })
+        )
+    ),
+    startingEquipment: t.opt(
+        t.array(
+            t.iface([], {
+                [t.indexKey]: t.array('StartingEquipmentEntry'),
+            })
+        )
+    ),
+    additionalSpells: t.opt(
+        t.array(
+            t.iface([], {
+                expanded: t.iface([], {
+                    [t.indexKey]: t.array('string'),
+                }),
+            })
+        )
+    ),
+    fromFeature: t.opt(
+        t.iface([], {
+            additionalSpells: t.opt('boolean'),
+            feats: 'boolean',
+        })
+    ),
+    entries: t.opt(t.array('Description')),
+    _copy: t.opt('_Copy'),
+    hasFluff: t.opt('boolean'),
+    hasFluffImages: t.opt('boolean'),
+});
+
 const exportedTypeSuite: t.ITypeSuite = {
     BaseEntry,
     UID,
@@ -240,5 +401,16 @@ const exportedTypeSuite: t.ITypeSuite = {
     VariantRule,
     Language,
     LanguageFluff,
+    StartingEquipmentEntry,
+    EquipmentItem,
+    EquipmentType,
+    SpecialItem,
+    Currency,
+    BackgroundAbilities,
+    ProficiencyChoices,
+    ProficiencyEntry,
+    _ModEntries,
+    _Copy,
+    Background,
 };
 export default exportedTypeSuite;
