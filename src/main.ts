@@ -25,64 +25,64 @@ function main(): void {
 
     const path = './5etools-src/data';
     const data = loadData(path);
-    stopwatch.log('Loaded databanks');
+    stopwatch.log('Loaded databanks', 27);
 
     const items = getItems(data);
-    stopwatch.log('Items retrieved');
+    stopwatch.log('Items retrieved', 30);
 
     const itemVariants = getItems(data);
-    stopwatch.log('Items variant retrieved');
+    stopwatch.log('Items variant retrieved', 33);
 
     const spells = getSpells('./5etools-src/data/spells');
-    stopwatch.log('Spells retrieved');
+    stopwatch.log('Spells retrieved', 36);
 
     const { conditions, diseases } = getConditionsStatusesAndDiseases(data);
-    stopwatch.log('Conditions & Diseases retrieved');
+    stopwatch.log('Conditions & Diseases retrieved', 39);
 
     const creatures = getCreatures();
-    stopwatch.log('Creatures retrieved');
+    stopwatch.log('Creatures retrieved', 42);
 
     const { classes, classFeats } = getClassesAndClassFeats();
-    stopwatch.log('Classes & ClassFeats retrieved');
+    stopwatch.log('Classes & ClassFeats retrieved', 45);
 
     const rules = getRules();
-    stopwatch.log('Rules retrieved');
+    stopwatch.log('Rules retrieved', 48);
 
     const actions = getActions(data);
-    stopwatch.log('Actions retrieved');
+    stopwatch.log('Actions retrieved', 50);
 
     const backgrounds = getBackgrounds(data);
-    stopwatch.log('Backgrounds retrieved');
+    stopwatch.log('Backgrounds retrieved', 54);
 
     const feats = getFeats(data);
-    stopwatch.log('Feats retrieved');
+    stopwatch.log('Feats retrieved', 57);
 
     const languages = getLanguages(data);
-    stopwatch.log('Languages retrieved');
+    stopwatch.log('Languages retrieved', 60);
 
     const names = getNames(data);
-    stopwatch.log('Names retrieved');
+    stopwatch.log('Names retrieved', 63);
 
     const tables = getTables(data);
-    stopwatch.log('Tables retrieved');
+    stopwatch.log('Tables retrieved', 66);
 
     const species = getSpecies(data);
-    stopwatch.log('Species retrieved');
+    stopwatch.log('Species retrieved', 69);
 
     const sources = getSources(data);
-    stopwatch.log('Sources retrieved');
+    stopwatch.log('Sources retrieved', 72);
 
     const { traps, hazards } = getTrapsAndHazards(data);
-    stopwatch.log('Traps & Hazards retrieved');
+    stopwatch.log('Traps & Hazards retrieved', 75);
 
     const objects = getObjects(data);
-    stopwatch.log('Objects retrieved');
+    stopwatch.log('Objects retrieved', 78);
 
     const vehicles = getVehicles(data);
-    stopwatch.log('Vehicles retrieved.');
+    stopwatch.log('Vehicles retrieved.', 81);
 
     const skills = getSkills(data);
-    stopwatch.log('Skills retrieved.');
+    stopwatch.log('Skills retrieved.', 84);
 
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');

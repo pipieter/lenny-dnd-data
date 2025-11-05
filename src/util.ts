@@ -1,3 +1,4 @@
+import { func } from 'ts-interface-checker';
 import { title } from './parser';
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import kleur = require('kleur');
@@ -43,13 +44,14 @@ export class StopwatchLogger {
         this.previousTime = Date.now();
     }
 
-    log(label: string) {
+    log(label: string, line?: number) {
         const elapsedSeconds = (Date.now() - this.previousTime) / 1000;
         this.previousTime = Date.now();
 
         const color = this.getColor(elapsedSeconds);
         const elapsedStr = elapsedSeconds.toFixed(2).padStart(5, ' ');
         console.log(color(`+ ${elapsedStr}s | ${label} `));
+        if (line) logInGithubPr(`+ ${elapsedStr}s | ${label} `, './src/main.ts', line);
     }
 
     private getColor(elapsedSeconds: number): (text: string) => string {
@@ -64,4 +66,14 @@ export class StopwatchLogger {
         const elapsedStr = elapsedSeconds.toFixed(2).padStart(5, ' ');
         console.log(kleur.gray(`= ${elapsedStr}s | Total time elapsed`));
     }
+}
+
+export function logInGithubPr(message: string, file?: string, line?: number, col?: number) {
+    const location = [];
+    if (file) location.push(`file=${file}`);
+    if (line) location.push(`line=${line}`);
+    if (col) location.push(`col=${col}`);
+
+    const locationStr = location.length ? ` ${location.join(',')}` : '';
+    console.info(`::notice ${locationStr}::${message}`);
 }
