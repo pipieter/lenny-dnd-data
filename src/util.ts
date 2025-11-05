@@ -74,5 +74,5 @@ export function logInGithubPr(message: string, file?: string, line?: number, col
     if (col) location.push(`col=${col}`);
 
     const locationStr = location.length ? `${location.join(',')}` : '';
-    console.warn(`::notice ${locationStr}::${message}`);
+    console.log(`::notice ${locationStr}::${message}`);
 }
