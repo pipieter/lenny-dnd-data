@@ -211,6 +211,78 @@ export const LanguageFluff = t.iface(['BaseEntry'], {
     images: t.array('DescriptionImage'),
 });
 
+export const VehicleTrait = t.iface([], {
+    name: 'string',
+    entries: t.array('string')
+})
+
+export const VehicleSpeed = t.iface([], {
+    fly: t.opt(t.union('number', 'string')),
+    water: t.opt(t.union('number', 'string')),
+    note: t.opt('string')
+})
+
+export const VehicleHull = t.iface([], {
+    ac: 'number',
+    acFrom: t.opt(t.array('string')),
+    hp: 'number',
+    dt: 'number'
+})
+
+export const VehicleControl = t.iface([], {
+    name: 'string',
+    ac: 'number',
+    hp: 'number',
+    entries: t.array('string')
+})
+
+export const VehicleMovementSpeed = t.iface([], {});  // TODO
+
+export const VehicleMovement = t.iface([], {
+    name: 'string',
+    ac: 'number',
+    hp: 'number',
+    hpNote: 'string',
+    speed: t.array('VehicleMovementSpeed')
+})
+
+export const Vehicle = t.iface(['BaseEntry'], {
+    vehicleType: 'string', //TODO use literals
+    size: t.opt(t.union('string', t.array('string'))),
+    dimensions: t.opt(t.array('string')),
+    terrain: t.array('string'),
+    capCrew: 'number',
+    capPassenger: t.opt('number'),
+    capCargo: t.opt('number'),
+    cost: t.opt('number'),
+    pace: t.opt(t.union('number', 'VehicleSpeed')),
+    speed: t.opt(t.union('number', 'VehicleSpeed')),
+    ac: t.opt('number'),
+    str: t.opt('number'),
+    dex: t.opt('number'),
+    con: t.opt('number'),
+    int: t.opt('number'),
+    wis: t.opt('number'),
+    cha: t.opt('number'),
+    hp: t.opt(t.union('number', 'object')),
+    immune: t.opt(t.array('string')),
+    conditionImmune: t.opt(t.array('string')),
+    hull: t.opt('VehicleHull'),
+    control: t.opt(t.array('VehicleControl')),
+    movement: t.opt(t.array('object')), // TODO
+    weapon: t.opt(t.array('object')), // TODO
+    actionThresholds: t.opt('object'), // TODO
+    action: t.opt(t.array('Description')),
+    trait: t.opt(t.array('VehicleTrait')),
+    actionStation: t.opt(t.array('VehicleTrait')),
+    reaction: t.opt(t.array('VehicleTrait')),
+    entries: t.array('Description'),
+    tokenCredit: t.opt('string'),
+    hasToken: t.opt('boolean'),
+    hasFluff: t.opt('boolean'),
+    hasFluffImages: t.opt('boolean')
+})
+
 const exportedTypeSuite: t.ITypeSuite = {
     BaseEntry,
     UID,

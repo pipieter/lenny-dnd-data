@@ -30,5 +30,5 @@ export const VariantRuleValidator = new Validator<VariantRule>(checkers.VariantR
 export const LanguageValidator = new Validator<Language>(checkers.Language);
 export const LanguageFluffValidator = new Validator<LanguageFluff>(checkers.LanguageFluff);
 
-export const VehicleValidator = new Validator<Vehicle>(checkers.vehicle);
-export const VehicleUpgradeValidator = new Validator<VehicleUpgrade>(checkers.vehicleUpgrade);
+export const VehicleValidator = new Validator<Vehicle>(checkers.Vehicle);
+export const VehicleUpgradeValidator = new Validator<VehicleUpgrade>(checkers.VehicleUpgrade);
