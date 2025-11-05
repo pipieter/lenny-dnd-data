@@ -1,3 +1,17 @@
+/**  Base entry of a 5e.tools object. These values are expected in any used object. */
+interface BaseEntry {
+    name: string;
+    source: string;
+    page?: number;
+    srd?: boolean;
+    srd52?: boolean;
+    basicRules?: boolean;
+    basicRules2024?: boolean;
+    reprintedAs?: (string | UID)[];
+    additionalSources?: AdditionalSource[];
+    otherSources?: AdditionalSource[];
+}
+
 export interface UID {
     uid: string;
     tag: string;
@@ -5,7 +19,7 @@ export interface UID {
 
 export interface AdditionalSource {
     source: string;
-    page: number;
+    page?: number;
 }
 
 export interface HRef {
@@ -13,6 +27,8 @@ export interface HRef {
     path: string;
     hash?: string;
 }
+
+//region Descriptions
 
 export interface ListItem {
     type: 'item';
@@ -154,31 +170,32 @@ export interface TimeUnit {
 
 export type Time = string | TimeUnit;
 
-export interface Action {
-    name: string;
-    source: string;
-    page: number;
-    srd?: boolean;
-    srd52?: boolean;
-    basicRules?: boolean;
-    basicRules2024?: boolean;
-    fromVariant?: string;
-    time?: Time[];
-    seeAlsoAction?: string[];
+//region Raw data interfaces
+
+export interface Action extends BaseEntry {
     entries: Description[];
-    reprintedAs?: (string | UID)[];
+    time?: Time[];
+    fromVariant?: string;
+    seeAlsoAction?: string[];
 }
 
-export interface VariantRule {
-    name: string;
-    source: string;
-    page?: number;
-    additionalSources?: AdditionalSource[];
+export interface VariantRule extends BaseEntry {
     type?: string;
-    srd?: boolean;
-    srd52?: boolean;
-    basicRules2024?: boolean;
     ruleType?: 'C' | 'O' | 'V' | 'VO';
     entries: Description[];
-    reprintedAs?: (string | UID)[];
+}
+
+export interface Language extends BaseEntry {
+    typicalSpeakers?: string[];
+    script?: string;
+    type?: string;
+    origin?: string;
+    entries?: Description[];
+    hasFluffImages?: boolean;
+    fonts?: string[];
+    dialects?: string[];
+}
+
+export interface LanguageFluff extends BaseEntry {
+    images: DescriptionImage[];
 }

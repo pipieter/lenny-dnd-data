@@ -1,15 +1,8 @@
+import { Language, LanguageFluff } from '../interfaces';
 import { capitalize, cleanDNDText, Description, parseDescriptions } from '../parser';
-import { getLanguagesUrl } from '../urls';
+import { getImageUrl, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
-
-interface Language {
-    name: string;
-    source: string;
-    type?: string;
-    typicalSpeakers?: string[];
-    script?: string;
-    entries: (string | any)[];
-}
+import { LanguageFluffValidator, LanguageValidator } from '../validate';
 
 interface ParsedLanguage {
     name: string;
@@ -19,6 +12,7 @@ interface ParsedLanguage {
     typicalSpeakers: string | null;
     script: string | null;
     description: Description[] | null;
+    image: string | null;
 }
 
 function getTypicalSpeakers(language: Language): string | null {
@@ -39,8 +33,20 @@ function getLanguageType(language: Language): string {
     return `${type} language`;
 }
 
+function getLanguageImage(language: Language, fluffs: LanguageFluff[]): string | null {
+    const fluff = fluffs.find(
+        (fluff) => fluff.name === language.name && fluff.source === language.source
+    );
+    if (fluff && fluff.images.length) {
+        return getImageUrl(fluff.images[0].href.path);
+    }
+    return null;
+}
+
 export function getLanguages(data: any): ParsedLanguage[] {
-    return (data.language as Language[]).map((language) => {
+    const languages = LanguageValidator.validate(data.language);
+    const fluffs = LanguageFluffValidator.validate(data.languageFluff);
+    return languages.map((language) => {
         return {
             name: language.name,
             source: language.source,
@@ -49,6 +55,7 @@ export function getLanguages(data: any): ParsedLanguage[] {
             typicalSpeakers: getTypicalSpeakers(language),
             script: language.script ?? null,
             description: language.entries ? parseDescriptions('', language.entries) : null,
+            image: getLanguageImage(language, fluffs),
         };
     });
 }
