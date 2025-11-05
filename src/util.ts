@@ -50,7 +50,7 @@ export class StopwatchLogger {
         const color = this.getColor(elapsedSeconds);
         const elapsedStr = elapsedSeconds.toFixed(2).padStart(5, ' ');
         console.log(color(`+ ${elapsedStr}s | ${label} `));
-        if (line) logInGithubPr(`+ ${elapsedStr}s | ${label} `, './src/main.ts', line);
+        if (line) logInGithubPr(`+ ${elapsedStr}s | ${label} `, 'src/main.ts', line);
     }
 
     private getColor(elapsedSeconds: number): (text: string) => string {
