@@ -22,7 +22,6 @@ import { getSkills } from './skills';
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
-
     const path = './5etools-src/data';
     const data = loadData(path);
     stopwatch.log('Loaded databanks', 27);
@@ -107,7 +106,7 @@ function main(): void {
     writeFileSync('./generated/vehicles.json', JSON.stringify(vehicles, null, 2), 'utf-8');
     writeFileSync('./generated/skills.json', JSON.stringify(skills, null, 2), 'utf-8');
 
-    stopwatch.log('Data written to files');
+    stopwatch.log('Data written to files', 109);
     stopwatch.stop();
 }
 
