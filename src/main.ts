@@ -20,68 +20,86 @@ import { getObjects } from './dnd/objects';
 import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './skills';
 
+export class UnimplementedError extends Error {}
+process.on('uncaughtException', (err: Error) => {
+    if (err instanceof UnimplementedError) {
+        const match = err.stack?.match(/\((.*):(\d+):(\d+)\)/);
+
+        if (match) {
+            const [, file, line, col] = match;
+            const msg = String(err).replace('Error: ', '');
+            console.error(`::error file=${file},line=${line},col=${col}::${msg}`);
+        } else {
+            console.error(`::error ::${String(err)}`);
+        }
+        console.error(err.stack);
+        process.exit(1);
+    }
+    throw err;
+});
+
 function main(): void {
     const stopwatch = new StopwatchLogger();
     const path = './5etools-src/data';
     const data = loadData(path);
-    stopwatch.log('Loaded databanks', 27);
+    stopwatch.log('Loaded databanks');
 
     const items = getItems(data);
-    stopwatch.log('Items retrieved', 30);
+    stopwatch.log('Items retrieved');
 
     const itemVariants = getItems(data);
-    stopwatch.log('Items variant retrieved', 33);
+    stopwatch.log('Items variant retrieved');
 
     const spells = getSpells('./5etools-src/data/spells');
-    stopwatch.log('Spells retrieved', 36);
+    stopwatch.log('Spells retrieved');
 
     const { conditions, diseases } = getConditionsStatusesAndDiseases(data);
-    stopwatch.log('Conditions & Diseases retrieved', 39);
+    stopwatch.log('Conditions & Diseases retrieved');
 
     const creatures = getCreatures();
-    stopwatch.log('Creatures retrieved', 42);
+    stopwatch.log('Creatures retrieved');
 
     const { classes, classFeats } = getClassesAndClassFeats();
-    stopwatch.log('Classes & ClassFeats retrieved', 45);
+    stopwatch.log('Classes & ClassFeats retrieved');
 
     const rules = getRules();
-    stopwatch.log('Rules retrieved', 48);
+    stopwatch.log('Rules retrieved');
 
     const actions = getActions(data);
-    stopwatch.log('Actions retrieved', 50);
+    stopwatch.log('Actions retrieved');
 
     const backgrounds = getBackgrounds(data);
-    stopwatch.log('Backgrounds retrieved', 54);
+    stopwatch.log('Backgrounds retrieved');
 
     const feats = getFeats(data);
-    stopwatch.log('Feats retrieved', 57);
+    stopwatch.log('Feats retrieved');
 
     const languages = getLanguages(data);
-    stopwatch.log('Languages retrieved', 60);
+    stopwatch.log('Languages retrieved');
 
     const names = getNames(data);
-    stopwatch.log('Names retrieved', 63);
+    stopwatch.log('Names retrieved');
 
     const tables = getTables(data);
-    stopwatch.log('Tables retrieved', 66);
+    stopwatch.log('Tables retrieved');
 
     const species = getSpecies(data);
-    stopwatch.log('Species retrieved', 69);
+    stopwatch.log('Species retrieved');
 
     const sources = getSources(data);
-    stopwatch.log('Sources retrieved', 72);
+    stopwatch.log('Sources retrieved');
 
     const { traps, hazards } = getTrapsAndHazards(data);
-    stopwatch.log('Traps & Hazards retrieved', 75);
+    stopwatch.log('Traps & Hazards retrieved');
 
     const objects = getObjects(data);
-    stopwatch.log('Objects retrieved', 78);
+    stopwatch.log('Objects retrieved');
 
     const vehicles = getVehicles(data);
-    stopwatch.log('Vehicles retrieved.', 81);
+    stopwatch.log('Vehicles retrieved.');
 
     const skills = getSkills(data);
-    stopwatch.log('Skills retrieved.', 84);
+    stopwatch.log('Skills retrieved.');
 
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
     writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');
@@ -106,7 +124,7 @@ function main(): void {
     writeFileSync('./generated/vehicles.json', JSON.stringify(vehicles, null, 2), 'utf-8');
     writeFileSync('./generated/skills.json', JSON.stringify(skills, null, 2), 'utf-8');
 
-    stopwatch.log('Data written to files', 109);
+    stopwatch.log('Data written to files');
     stopwatch.stop();
 }
 
