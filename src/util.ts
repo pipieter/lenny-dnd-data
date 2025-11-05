@@ -1,4 +1,3 @@
-import { func } from 'ts-interface-checker';
 import { title } from './parser';
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import kleur = require('kleur');
@@ -75,5 +74,5 @@ export function logInGithubPr(message: string, file?: string, line?: number, col
     if (col) location.push(`col=${col}`);
 
     const locationStr = location.length ? `${location.join(',')}` : '';
-    console.info(`::notice ${locationStr}::${message}`);
+    console.warn(`::notice ${locationStr}::${message}`);
 }
