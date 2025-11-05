@@ -63,10 +63,6 @@ export interface DescriptionEntries {
     page?: number;
     source?: string;
     entries: Description[];
-    data?: {
-        isFeature?: boolean;
-        isAlternateFeature?: boolean;
-    }
 }
 
 export interface DescriptionList {
@@ -144,7 +140,6 @@ export interface DescriptionImage {
 export interface DescriptionSection {
     type: 'section';
     name: string;
-    id?: string;
     entries: Description[];
 }
 
@@ -203,108 +198,4 @@ export interface Language extends BaseEntry {
 
 export interface LanguageFluff extends BaseEntry {
     images: DescriptionImage[];
-}
-
-type StartingEquipmentEntry =
-  | EquipmentItem
-  | EquipmentType
-  | SpecialItem
-  | Currency
-  | string;
-
-interface EquipmentItem {
-  item: string;
-  displayName?: string;
-  containsValue?: number;
-  quantity?: number;
-}
-
-interface EquipmentType {
-    equipmentType: string;
-    displayName?: string;
-}
-
-interface SpecialItem {
-  special: string;
-  quantity?: number;
-  worthValue?: number;
-  containsValue?: number;
-}
-
-interface Currency {
-    value: number;
-}
-
-interface BackgroundAbilities {
-    choose: {
-        weighted: {
-            from: ('str' | 'dex' | 'con' | 'int' | 'wis' | 'cha')[];
-            weights: number[];
-        }
-    }
-}
-
-interface ProficiencyChoices {
-    arcana?: boolean;
-    nature?: boolean;
-    primordial?: boolean;
-    "disguise kit"?: boolean;
-    deception?: boolean;
-    history?: boolean;
-    insight?: boolean;
-    survival?: boolean;
-    persuasion?: boolean;
-    anyStandard?: number;
-    choose: {
-        from: string[];
-        count?: number;
-    }
-}
-
-export type ProficiencyEntry =
-    | ProficiencyChoices
-    | { [key: string]: boolean | number };
-
-interface _ModEntries {
-    name?: string;
-    mode: 'insertArr' | "replaceArr";
-    index?: number; // insertArr
-    replace?: string | {
-        index: number
-    }; // replaceArr
-    items: any; // TODO Fix javascript heap error and use Description | Description[]
-}
-
-export interface _Copy {
-    name: string;
-    source: string;
-    _mod?: { entries: _ModEntries | _ModEntries[]};
-}
-
-export interface Background extends BaseEntry {
-    prerequisite?: {
-        campaign: string[];
-    }[];
-    edition?: string;
-    ability?: BackgroundAbilities[];
-    feats?: { [key: string]: boolean }[];
-    skillProficiencies?: ProficiencyEntry[];
-    toolProficiencies?: ProficiencyEntry[];
-    languageProficiencies?: ProficiencyEntry[];
-    skillToolLanguageProficiencies?: {
-        anyLanguage?: number;
-        anyTool?: number;
-    }[];
-    startingEquipment?: { [key: string]: StartingEquipmentEntry[] }[];
-    additionalSpells?: {
-        expanded: {[key: string]: string[]};
-    }[];
-    fromFeature?: {
-        additionalSpells?: boolean;
-        feats: boolean;
-    };
-    entries?: Description[];
-    _copy?: _Copy;
-    hasFluff?: boolean;
-    hasFluffImages?: boolean;
 }

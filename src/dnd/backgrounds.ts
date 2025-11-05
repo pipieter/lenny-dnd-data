@@ -1,8 +1,6 @@
 import { handleCopy } from '../5etools-conversion/copy';
-import { Background } from '../interfaces';
 import { Description, parseAbilityScore, parseDescriptions } from '../parser';
 import { getBackgroundsUrl } from '../urls';
-import { BackgroundValidator } from '../validate';
 
 interface ParsedBackground {
     name: string;
@@ -19,8 +17,7 @@ function parseBackgroundAbilities(background: any): string[] | null {
 }
 
 export function getBackgrounds(data: any): ParsedBackground[] {
-    const backgrounds = BackgroundValidator.validate(data.background);
-    const raw: Background[] = backgrounds.map((e: any) => handleCopy(e, backgrounds));
+    const raw: any[] = data.background.map((e: any) => handleCopy(e, data.background));
 
     return raw.map((background: any) => ({
         name: background.name,

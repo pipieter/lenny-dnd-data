@@ -7,8 +7,7 @@
         "generate": "ts-node src/main.ts",
         "interfaces": "ts-interface-builder src/interfaces.ts && prettier package.json \"./src/interfaces-ti.ts\" --write",
         "prettier": "prettier package.json \"./src/**/*.ts\" --write",
-        "lint": "npx eslint ./src --ext .ts,.tsx --ignore-pattern ./5etools-src",
-        "dev": "npm run interfaces && npm run generate"
+        "lint": "npx eslint ./src --ext .ts,.tsx --ignore-pattern ./5etools-src"
     },
     "repository": {
         "type": "git",
