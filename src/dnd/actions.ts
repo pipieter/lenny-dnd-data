@@ -1,9 +1,14 @@
 import { Description, parseDescriptions, parseSingleTime } from '../parser';
 import { joinStringsWithOr } from '../util';
 
-import { ActionValidator } from '../validate';
 import { getActionsUrl } from '../urls';
-import { Time } from '../interfaces';
+
+interface Action {
+    name: string;
+    source: string;
+    time?: any[];
+    entries: any[];
+}
 
 interface ParsedAction {
     name: string;
@@ -13,7 +18,7 @@ interface ParsedAction {
     description: Description[];
 }
 
-function parseActionTime(times: Time[] | undefined): string {
+function parseActionTime(times: any[] | undefined): string {
     if (!times) return 'Uncategorized';
 
     const results: string[] = [];
@@ -27,11 +32,11 @@ function parseActionTime(times: Time[] | undefined): string {
 }
 
 export function getActions(data: any): ParsedAction[] {
-    const actions = ActionValidator.validate(data.action);
+    const actions: Action[] = data.action;
     const parsed: ParsedAction[] = actions.map((action) => ({
         name: action.name,
         source: action.source,
-        url: getActionsUrl(action),
+        url: getActionsUrl(action.name, action.source),
         time: parseActionTime(action.time),
         description: parseDescriptions('', action.entries),
     }));
