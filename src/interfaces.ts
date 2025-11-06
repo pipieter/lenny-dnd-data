@@ -1,5 +1,5 @@
 /**  Base entry of a 5e.tools object. These values are expected in any used object. */
-interface BaseEntry {
+interface BaseObject {
     name: string;
     source: string;
     page?: number;
@@ -172,20 +172,20 @@ export type Time = string | TimeUnit;
 
 //region Raw data interfaces
 
-export interface Action extends BaseEntry {
+export interface Action extends BaseObject {
     entries: Entry[];
     time?: Time[];
     fromVariant?: string;
     seeAlsoAction?: string[];
 }
 
-export interface VariantRule extends BaseEntry {
+export interface VariantRule extends BaseObject {
     type?: string;
     ruleType?: 'C' | 'O' | 'V' | 'VO';
     entries: Entry[];
 }
 
-export interface Language extends BaseEntry {
+export interface Language extends BaseObject {
     typicalSpeakers?: string[];
     script?: string;
     type?: string;
@@ -196,6 +196,6 @@ export interface Language extends BaseEntry {
     dialects?: string[];
 }
 
-export interface LanguageFluff extends BaseEntry {
+export interface LanguageFluff extends BaseObject {
     images: EntryImage[];
 }

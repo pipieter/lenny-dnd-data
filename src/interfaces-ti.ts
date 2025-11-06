@@ -4,7 +4,7 @@
 import * as t from 'ts-interface-checker';
 // tslint:disable:object-literal-key-quotes
 
-export const BaseEntry = t.iface([], {
+export const BaseObject = t.iface([], {
     name: 'string',
     source: 'string',
     page: t.opt('number'),
@@ -181,20 +181,20 @@ export const TimeUnit = t.iface([], {
 
 export const Time = t.union('string', 'TimeUnit');
 
-export const Action = t.iface(['BaseEntry'], {
+export const Action = t.iface(['BaseObject'], {
     entries: t.array('Entry'),
     time: t.opt(t.array('Time')),
     fromVariant: t.opt('string'),
     seeAlsoAction: t.opt(t.array('string')),
 });
 
-export const VariantRule = t.iface(['BaseEntry'], {
+export const VariantRule = t.iface(['BaseObject'], {
     type: t.opt('string'),
     ruleType: t.opt(t.union(t.lit('C'), t.lit('O'), t.lit('V'), t.lit('VO'))),
     entries: t.array('Entry'),
 });
 
-export const Language = t.iface(['BaseEntry'], {
+export const Language = t.iface(['BaseObject'], {
     typicalSpeakers: t.opt(t.array('string')),
     script: t.opt('string'),
     type: t.opt('string'),
@@ -205,12 +205,12 @@ export const Language = t.iface(['BaseEntry'], {
     dialects: t.opt(t.array('string')),
 });
 
-export const LanguageFluff = t.iface(['BaseEntry'], {
+export const LanguageFluff = t.iface(['BaseObject'], {
     images: t.array('EntryImage'),
 });
 
 const exportedTypeSuite: t.ITypeSuite = {
-    BaseEntry,
+    BaseObject,
     UID,
     AdditionalSource,
     HRef,
