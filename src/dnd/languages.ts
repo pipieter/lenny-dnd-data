@@ -1,8 +1,21 @@
-import { Language, LanguageFluff } from '../interfaces';
 import { capitalize, cleanDNDText, Description, parseDescriptions } from '../parser';
 import { getImageUrl, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
-import { LanguageFluffValidator, LanguageValidator } from '../validate';
+
+interface Language {
+    name: string;
+    source: string;
+    type?: string;
+    typicalSpeakers?: string[];
+    script?: string;
+    entries: any[];
+}
+
+interface LanguageFluff {
+    name: string;
+    source: string;
+    images: any[];
+}
 
 interface ParsedLanguage {
     name: string;
@@ -44,8 +57,8 @@ function getLanguageImage(language: Language, fluffs: LanguageFluff[]): string |
 }
 
 export function getLanguages(data: any): ParsedLanguage[] {
-    const languages = LanguageValidator.validate(data.language);
-    const fluffs = LanguageFluffValidator.validate(data.languageFluff);
+    const languages: Language[] = data.language;
+    const fluffs: LanguageFluff[] = data.languageFluff;
     return languages.map((language) => {
         return {
             name: language.name,
