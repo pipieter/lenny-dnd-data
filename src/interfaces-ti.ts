@@ -60,15 +60,15 @@ export const TableData = t.iface([], {
     genTables: 'GenTables',
 });
 
-export const DescriptionEntries = t.iface([], {
+export const EntryEntries = t.iface([], {
     type: t.lit('entries'),
     name: t.opt('string'),
     page: t.opt('number'),
     source: t.opt('string'),
-    entries: t.array('Description'),
+    entries: t.array('Entry'),
 });
 
-export const DescriptionList = t.iface([], {
+export const EntryList = t.iface([], {
     type: t.lit('list'),
     name: t.opt('string'),
     style: t.opt('string'),
@@ -76,14 +76,12 @@ export const DescriptionList = t.iface([], {
     items: t.array(t.union('string', 'ListItem')),
 });
 
-export const DescriptionTable = t.iface([], {
+export const EntryTable = t.iface([], {
     type: t.lit('table'),
     caption: t.opt('string'),
     colLabels: t.array('string'),
     colStyles: t.array('string'),
-    rows: t.array(
-        t.union(t.array(t.union('string', 'number', 'Description', 'TableCell')), 'TableRow')
-    ),
+    rows: t.array(t.union(t.array(t.union('string', 'number', 'Entry', 'TableCell')), 'TableRow')),
     footnotes: t.opt(t.array('string')),
     isNameGenerator: t.opt('boolean'),
     data: t.opt('TableData'),
@@ -91,29 +89,29 @@ export const DescriptionTable = t.iface([], {
     basicRules2024: t.opt('boolean'),
 });
 
-export const DescriptionInset = t.iface([], {
+export const EntryInset = t.iface([], {
     type: t.lit('inset'),
     name: 'string',
     page: t.opt('number'),
     source: t.opt('string'),
-    entries: t.array('Description'),
+    entries: t.array('Entry'),
 });
 
-export const DescriptionInsetReadaloud = t.iface([], {
+export const EntryInsetReadaloud = t.iface([], {
     type: t.lit('insetReadaloud'),
     page: 'number',
-    entries: t.array('Description'),
+    entries: t.array('Entry'),
 });
 
-export const DescriptionQuote = t.iface([], {
+export const EntryQuote = t.iface([], {
     type: t.lit('quote'),
     by: 'string',
     from: t.opt('string'),
     skipMarks: t.opt('boolean'),
-    entries: t.array('Description'),
+    entries: t.array('Entry'),
 });
 
-export const DescriptionStatblock = t.iface([], {
+export const EntryStatblock = t.iface([], {
     type: t.lit('statblock'),
     name: 'string',
     source: 'string',
@@ -121,18 +119,18 @@ export const DescriptionStatblock = t.iface([], {
     tag: 'string',
 });
 
-export const DescriptionInline = t.iface([], {
+export const EntryInline = t.iface([], {
     type: t.lit('inline'),
-    entries: t.array('Description'),
+    entries: t.array('Entry'),
 });
 
-export const DescriptionLink = t.iface([], {
+export const EntryLink = t.iface([], {
     type: t.lit('link'),
     href: 'HRef',
     text: 'string',
 });
 
-export const DescriptionImage = t.iface([], {
+export const EntryImage = t.iface([], {
     type: t.lit('image'),
     href: 'HRef',
     title: t.opt('string'),
@@ -142,25 +140,25 @@ export const DescriptionImage = t.iface([], {
     altText: t.opt('string'),
 });
 
-export const DescriptionSection = t.iface([], {
+export const EntrySection = t.iface([], {
     type: t.lit('section'),
     name: 'string',
-    entries: t.array('Description'),
+    entries: t.array('Entry'),
 });
 
-export const Description = t.union(
+export const Entry = t.union(
     'string',
-    'DescriptionEntries',
-    'DescriptionList',
-    'DescriptionTable',
-    'DescriptionInset',
-    'DescriptionInsetReadaloud',
-    'DescriptionQuote',
-    'DescriptionStatblock',
-    'DescriptionInline',
-    'DescriptionLink',
-    'DescriptionImage',
-    'DescriptionSection'
+    'EntryEntries',
+    'EntryList',
+    'EntryTable',
+    'EntryInset',
+    'EntryInsetReadaloud',
+    'EntryQuote',
+    'EntryStatblock',
+    'EntryInline',
+    'EntryLink',
+    'EntryImage',
+    'EntrySection'
 );
 
 export const Range = t.iface([], {
@@ -184,7 +182,7 @@ export const TimeUnit = t.iface([], {
 export const Time = t.union('string', 'TimeUnit');
 
 export const Action = t.iface(['BaseEntry'], {
-    entries: t.array('Description'),
+    entries: t.array('Entry'),
     time: t.opt(t.array('Time')),
     fromVariant: t.opt('string'),
     seeAlsoAction: t.opt(t.array('string')),
@@ -193,7 +191,7 @@ export const Action = t.iface(['BaseEntry'], {
 export const VariantRule = t.iface(['BaseEntry'], {
     type: t.opt('string'),
     ruleType: t.opt(t.union(t.lit('C'), t.lit('O'), t.lit('V'), t.lit('VO'))),
-    entries: t.array('Description'),
+    entries: t.array('Entry'),
 });
 
 export const Language = t.iface(['BaseEntry'], {
@@ -201,14 +199,14 @@ export const Language = t.iface(['BaseEntry'], {
     script: t.opt('string'),
     type: t.opt('string'),
     origin: t.opt('string'),
-    entries: t.opt(t.array('Description')),
+    entries: t.opt(t.array('Entry')),
     hasFluffImages: t.opt('boolean'),
     fonts: t.opt(t.array('string')),
     dialects: t.opt(t.array('string')),
 });
 
 export const LanguageFluff = t.iface(['BaseEntry'], {
-    images: t.array('DescriptionImage'),
+    images: t.array('EntryImage'),
 });
 
 const exportedTypeSuite: t.ITypeSuite = {
@@ -221,18 +219,18 @@ const exportedTypeSuite: t.ITypeSuite = {
     TableRow,
     GenTables,
     TableData,
-    DescriptionEntries,
-    DescriptionList,
-    DescriptionTable,
-    DescriptionInset,
-    DescriptionInsetReadaloud,
-    DescriptionQuote,
-    DescriptionStatblock,
-    DescriptionInline,
-    DescriptionLink,
-    DescriptionImage,
-    DescriptionSection,
-    Description,
+    EntryEntries,
+    EntryList,
+    EntryTable,
+    EntryInset,
+    EntryInsetReadaloud,
+    EntryQuote,
+    EntryStatblock,
+    EntryInline,
+    EntryLink,
+    EntryImage,
+    EntrySection,
+    Entry,
     Range,
     TimeUnit,
     Time,

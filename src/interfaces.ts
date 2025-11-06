@@ -57,15 +57,15 @@ export interface TableData {
     genTables: GenTables;
 }
 
-export interface DescriptionEntries {
+export interface EntryEntries {
     type: 'entries';
     name?: string;
     page?: number;
     source?: string;
-    entries: Description[];
+    entries: Entry[];
 }
 
-export interface DescriptionList {
+export interface EntryList {
     type: 'list';
     name?: string;
     style?: string;
@@ -73,12 +73,12 @@ export interface DescriptionList {
     items: (string | ListItem)[];
 }
 
-export interface DescriptionTable {
+export interface EntryTable {
     type: 'table';
     caption?: string;
     colLabels: string[];
     colStyles: string[];
-    rows: ((string | number | Description | TableCell)[] | TableRow)[];
+    rows: ((string | number | Entry | TableCell)[] | TableRow)[];
     footnotes?: string[];
     isNameGenerator?: boolean;
     data?: TableData;
@@ -86,29 +86,29 @@ export interface DescriptionTable {
     basicRules2024?: boolean;
 }
 
-export interface DescriptionInset {
+export interface EntryInset {
     type: 'inset';
     name: string;
     page?: number;
     source?: string;
-    entries: Description[];
+    entries: Entry[];
 }
 
-export interface DescriptionInsetReadaloud {
+export interface EntryInsetReadaloud {
     type: 'insetReadaloud';
     page: number;
-    entries: Description[];
+    entries: Entry[];
 }
 
-export interface DescriptionQuote {
+export interface EntryQuote {
     type: 'quote';
     by: string;
     from?: string;
     skipMarks?: boolean;
-    entries: Description[];
+    entries: Entry[];
 }
 
-export interface DescriptionStatblock {
+export interface EntryStatblock {
     type: 'statblock';
     name: string;
     source: string;
@@ -116,18 +116,18 @@ export interface DescriptionStatblock {
     tag: string;
 }
 
-export interface DescriptionInline {
+export interface EntryInline {
     type: 'inline';
-    entries: Description[];
+    entries: Entry[];
 }
 
-export interface DescriptionLink {
+export interface EntryLink {
     type: 'link';
     href: HRef;
     text: string;
 }
 
-export interface DescriptionImage {
+export interface EntryImage {
     type: 'image';
     href: HRef;
     title?: string;
@@ -137,25 +137,25 @@ export interface DescriptionImage {
     altText?: string;
 }
 
-export interface DescriptionSection {
+export interface EntrySection {
     type: 'section';
     name: string;
-    entries: Description[];
+    entries: Entry[];
 }
 
-export type Description =
+export type Entry =
     | string
-    | DescriptionEntries
-    | DescriptionList
-    | DescriptionTable
-    | DescriptionInset
-    | DescriptionInsetReadaloud
-    | DescriptionQuote
-    | DescriptionStatblock
-    | DescriptionInline
-    | DescriptionLink
-    | DescriptionImage
-    | DescriptionSection;
+    | EntryEntries
+    | EntryList
+    | EntryTable
+    | EntryInset
+    | EntryInsetReadaloud
+    | EntryQuote
+    | EntryStatblock
+    | EntryInline
+    | EntryLink
+    | EntryImage
+    | EntrySection;
 
 export interface Range {
     type: 'range';
@@ -173,7 +173,7 @@ export type Time = string | TimeUnit;
 //region Raw data interfaces
 
 export interface Action extends BaseEntry {
-    entries: Description[];
+    entries: Entry[];
     time?: Time[];
     fromVariant?: string;
     seeAlsoAction?: string[];
@@ -182,7 +182,7 @@ export interface Action extends BaseEntry {
 export interface VariantRule extends BaseEntry {
     type?: string;
     ruleType?: 'C' | 'O' | 'V' | 'VO';
-    entries: Description[];
+    entries: Entry[];
 }
 
 export interface Language extends BaseEntry {
@@ -190,12 +190,12 @@ export interface Language extends BaseEntry {
     script?: string;
     type?: string;
     origin?: string;
-    entries?: Description[];
+    entries?: Entry[];
     hasFluffImages?: boolean;
     fonts?: string[];
     dialects?: string[];
 }
 
 export interface LanguageFluff extends BaseEntry {
-    images: DescriptionImage[];
+    images: EntryImage[];
 }
