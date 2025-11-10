@@ -101,7 +101,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = cleanDNDatk(text);
 
     // Note: all regexes should end with a g, which stands for "global"
-    text = text.replace(/\b(\d+)\|([+-]?\d+)\b/g, '$2'); // 5/+5 support
     text = text.replace(/\{@ability (\w+) (\d+)\}/g, (_, ability, score) => {
         return `${score} ${parseAbilityScore(ability)}`;
     });
@@ -305,6 +304,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
     }
+
+
+    // Parses n|+n formats, should be done in the end to prevent other numerical data to be parsed wrongfully.
+    text = text.replace(/\b(\d+)\|([+-]?\d+)\b/g, '$2');
 
     // Note: notes should be parsed at the end, because they might contain subqueries
     text = text.replaceAll(/\{@note ([^\}]*?)\}/g, '\($1\)');
