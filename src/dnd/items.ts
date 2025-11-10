@@ -228,7 +228,7 @@ function parseItem(item: any, data: any): Item {
     }
 
     if (item.firearm) {
-        result.type.push(item.firearm);
+        result.type.push('firearm');
     }
 
     if (item.poison) {
