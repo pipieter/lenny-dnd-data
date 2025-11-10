@@ -49,7 +49,7 @@ function mapItemTypes(data: any): Map<string, any> {
 function mapItemProperties(data: any): Map<string, any> {
     const properties = new Map<string, any>();
 
-    const itemProperties = data.itemProperty ?? data.property ?? []
+    const itemProperties = data.itemProperty ?? data.property ?? [];
     for (const property of itemProperties) {
         properties.set(property.abbreviation, property);
     }
@@ -70,7 +70,7 @@ function applyItemPropertyTemplate(item: any, property: any, template: string | 
         }
         template = applySingleTemplate(template, `item.${key}`, replacement);
     }
-    return template;
+    return template!;
 }
 
 function getItemFluff(fluffs: any[], name: string, source: string): any {
