@@ -8,7 +8,7 @@ export interface Source {
 }
 
 export function getSources(data: any): Source[] {
-    const books = [...data.book, ...data.adventure, ...data.homebrewSources];
+    const books = [...data.book, ...data.adventure];
     return books.map((book: any) => ({
         id: book.id,
         name: book.name,

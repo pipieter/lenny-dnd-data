@@ -1,11 +1,11 @@
-import { writeFileSync } from 'fs';
+import { mkdirSync, writeFileSync } from 'fs';
 import { getConditionsStatusesAndDiseases } from './dnd/conditions';
-import { loadData } from './data';
+import { Databank, loadData, loadHomebrewData } from './data';
 import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
 import { getClassesAndClassFeats } from './dnd/classes';
-import { getItems } from './dnd/items';
+import { getItems, getItemVariants } from './dnd/items';
 import { getRules } from './dnd/rules';
 import { getActions } from './dnd/actions';
 import { getFeats } from './dnd/feats';
@@ -20,18 +20,17 @@ import { getObjects } from './dnd/objects';
 import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './skills';
 
-function main(): void {
-    const stopwatch = new StopwatchLogger();
+function saveJsonFile(dest_folder: string, filename: string, data: any[]) {
+    const path = `./generated/${dest_folder}`
+    mkdirSync(path, { recursive: true });
+    writeFileSync(`${path}/${filename}.json`, JSON.stringify(data, null, 2), 'utf-8');
+}
 
-    const path = './5etools-src/data';
-    const homebrewPath = './5etools-homebrew/data';
-    const data = loadData(path, homebrewPath);
-    stopwatch.log('Loaded databanks');
-
+function generateFiles(data: Databank, dest_folder: string, stopwatch: StopwatchLogger) {
     const items = getItems(data);
     stopwatch.log('Items retrieved');
 
-    const itemVariants = getItems(data);
+    const itemVariants = getItemVariants(data);
     stopwatch.log('Items variant retrieved');
 
     const spells = getSpells('./5etools-src/data/spells');
@@ -85,30 +84,43 @@ function main(): void {
     const skills = getSkills(data);
     stopwatch.log('Skills retrieved.');
 
-    writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
-    writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');
-    writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
-    writeFileSync('./generated/conditions.json', JSON.stringify(conditions, null, 2), 'utf-8');
-    writeFileSync('./generated/diseases.json', JSON.stringify(diseases, null, 2), 'utf-8');
-    writeFileSync('./generated/creatures.json', JSON.stringify(creatures, null, 2), 'utf-8');
-    writeFileSync('./generated/classes.json', JSON.stringify(classes, null, 2), 'utf-8');
-    writeFileSync('./generated/classfeats.json', JSON.stringify(classFeats, null, 2), 'utf-8');
-    writeFileSync('./generated/rules.json', JSON.stringify(rules, null, 2), 'utf-8');
-    writeFileSync('./generated/actions.json', JSON.stringify(actions, null, 2), 'utf-8');
-    writeFileSync('./generated/feats.json', JSON.stringify(feats, null, 2), 'utf-8');
-    writeFileSync('./generated/languages.json', JSON.stringify(languages, null, 2), 'utf-8');
-    writeFileSync('./generated/names.json', JSON.stringify(names, null, 2), 'utf-8');
-    writeFileSync('./generated/backgrounds.json', JSON.stringify(backgrounds, null, 2), 'utf-8');
-    writeFileSync('./generated/tables.json', JSON.stringify(tables, null, 2), 'utf-8');
-    writeFileSync('./generated/species.json', JSON.stringify(species, null, 2), 'utf-8');
-    writeFileSync('./generated/sources.json', JSON.stringify(sources, null, 2), 'utf-8');
-    writeFileSync('./generated/traps.json', JSON.stringify(traps, null, 2), 'utf-8');
-    writeFileSync('./generated/hazards.json', JSON.stringify(hazards, null, 2), 'utf-8');
-    writeFileSync('./generated/objects.json', JSON.stringify(objects, null, 2), 'utf-8');
-    writeFileSync('./generated/vehicles.json', JSON.stringify(vehicles, null, 2), 'utf-8');
-    writeFileSync('./generated/skills.json', JSON.stringify(skills, null, 2), 'utf-8');
+    saveJsonFile(dest_folder, 'items', items);
+    saveJsonFile(dest_folder, 'itemvariants', itemVariants);
+    saveJsonFile(dest_folder, 'spells', spells);
+    saveJsonFile(dest_folder, 'conditions', conditions);
+    saveJsonFile(dest_folder, 'diseases', diseases);
+    saveJsonFile(dest_folder, 'creatures', creatures);
+    saveJsonFile(dest_folder, 'classes', classes);
+    saveJsonFile(dest_folder, 'classfeats', classFeats);
+    saveJsonFile(dest_folder, 'rules', rules);
+    saveJsonFile(dest_folder, 'actions', actions);
+    saveJsonFile(dest_folder, 'feats', feats);
+    saveJsonFile(dest_folder, 'languages', languages);
+    saveJsonFile(dest_folder, 'names', names);
+    saveJsonFile(dest_folder, 'backgrounds', backgrounds);
+    saveJsonFile(dest_folder, 'tables', tables);
+    saveJsonFile(dest_folder, 'species', species);
+    saveJsonFile(dest_folder, 'sources', sources);
+    saveJsonFile(dest_folder, 'traps', traps);
+    saveJsonFile(dest_folder, 'hazards', hazards);
+    saveJsonFile(dest_folder, 'objects', objects);
+    saveJsonFile(dest_folder, 'vehicles', vehicles);
+    saveJsonFile(dest_folder, 'skills', skills);
+    stopwatch.log(`Data written to generated/${dest_folder}`);
+}
 
-    stopwatch.log('Data written to files');
+function main(): void {
+    const stopwatch = new StopwatchLogger();
+
+    const path = './5etools-src/data';
+    const homebrewPath = './5etools-homebrew/data';
+    const data = loadData(path);
+    const homebrewData = loadHomebrewData(homebrewPath);
+    stopwatch.log('Loaded databanks');
+
+    generateFiles(data, 'official', stopwatch);
+    console.log();
+    generateFiles(homebrewData, 'partnered', stopwatch);
     stopwatch.stop();
 }
 

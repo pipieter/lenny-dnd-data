@@ -33,17 +33,16 @@ function ignoreJsonFile(path: string): boolean {
     return false;
 }
 
-function appendHomebrewData(databank: Databank, homebrewPath: string): Databank {
-    const folders = readdirSync(homebrewPath, { withFileTypes: true })
+export function loadHomebrewData(dataPath: string): Databank {
+    let databank: Databank = {}
+
+    const folders = readdirSync(dataPath, { withFileTypes: true })
         .filter((entry) => isHomebrewDataDirectory(entry))
         .map((entry) => entry.name)
         .sort();
 
-    databank.homebrewSources = [];
-    const existingSourceIds = new Set(databank.homebrewSources.map((s) => s.id));
-
     for (const folder of folders) {
-        const folderPath = `${homebrewPath}/${folder}`;
+        const folderPath = `${dataPath}/${folder}`;
         const files = readdirSync(folderPath);
         const jsonPaths = files
             .filter((file) => file.endsWith('.json'))
@@ -54,31 +53,12 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
             if (ignoreJsonFile(filePath)) continue;
             const data = readJsonFile(filePath);
 
-            const keyBlacklist = new Set(['_meta', 'adventure', 'book']);
             for (const key in data) {
                 if (key == '_meta') {
                     const source = data['_meta']['sources'][0]; // Only ever one source
                     if (!source.partnered) break; // Filter out homebrew content
-
-                    const hasSourceAuthors =
-                        source.authors != null ? source.authors[0] != '' : false;
-                    const authors = hasSourceAuthors ? source.authors : source.convertedBy;
-                    const parsedSource: Source = {
-                        id: source.abbreviation,
-                        name: source.full,
-                        source: source.json,
-                        published: source.dateReleased,
-                        author: joinStringsWithAnd(authors),
-                        group: source.partnered ? 'partnered' : 'homebrew',
-                    };
-
-                    if (!existingSourceIds.has(parsedSource.source)) {
-                        databank.homebrewSources.push(parsedSource);
-                        existingSourceIds.add(parsedSource.source);
-                    }
+                    continue;
                 }
-
-                if (keyBlacklist.has(key)) continue;
 
                 if (!Array.isArray(data[key])) continue;
                 if (!databank[key]) databank[key] = [];
@@ -90,10 +70,9 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
     return databank;
 }
 
-export function loadData(dataPath: string, homebrewPath: string): Databank {
-    let databank: Databank = {
-        homebrewSources: [],
-    };
+export function loadData(dataPath: string): Databank {
+    let databank: Databank = {}
+
     const files = readdirSync(dataPath);
 
     for (const file of files) {
@@ -113,6 +92,5 @@ export function loadData(dataPath: string, homebrewPath: string): Databank {
         }
     }
 
-    databank = appendHomebrewData(databank, homebrewPath);
     return databank;
 }
