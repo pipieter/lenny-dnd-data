@@ -305,7 +305,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
     }
 
-
     // Parses n|+n formats, should be done in the end to prevent other numerical data to be parsed wrongfully.
     text = text.replace(/\b(\d+)\|([+-]?\d+)\b/g, '$2');
 
