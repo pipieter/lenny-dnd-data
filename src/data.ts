@@ -22,28 +22,28 @@ function ignoreJsonFile(path: string): boolean {
 function appendHomebrewData(databank: object, homebrewPath: string): object {
     const folders = [
         // 'book',
-        // 'boon',
+        'boon',
         // 'class',
-        // 'condition',
+        'condition',
         // 'creature',
-        // 'cult',
-        // 'deity',
-        // 'disease',
-        // 'facility',
+        'cult',
+        'deity',
+        'disease',
+        'facility',
         // 'feat',
-        // 'hazard',
+        'hazard',
         // 'item',
-        // 'language',
+        'language',
         // 'magicvariant',
-        // 'object',
+        'object',
         // 'optionalfeature',
-        // 'psionic',
+        'psionic',
         // 'race',
         'spell',
         // 'subclass',
-        // 'table',
-        // 'trap',
-        // 'variantrule',
+        // 'table', // UNMATCHED SYMB
+        // 'trap', // UNMATCHED SYMB
+        'variantrule',
         // 'vehicle'
     ];
 

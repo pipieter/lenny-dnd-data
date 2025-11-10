@@ -687,6 +687,19 @@
     "image": null
   },
   {
+    "name": "On Fire",
+    "source": "GiddyCondition",
+    "url": "https://5e.tools/conditionsdiseases.html#on%20fire_giddycondition",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "• A creature who is on fire takes **2d6** damage at the start of each of their turns.\n• The creature sheds bright light in a 20-foot radius and dim light for an additional 20 feet.\n• The effect can be ended early with the Extinguish action."
+      }
+    ],
+    "image": null
+  },
+  {
     "name": "Shocked",
     "source": "KibblesTasty:CC",
     "url": "https://5e.tools/conditionsdiseases.html#shocked_kibblestasty:cc",
@@ -695,6 +708,143 @@
         "name": "Description",
         "type": "text",
         "value": "• Shocked is a pseudo condition used in many Lightning spells that stuns a target until the start of their next turn. This effectively means they cannot take reactions, are incapacitated (interrupting some effects such as concentration), automatically fail Strength and Dexterity saves, and attacks against them have advantage.\n• This is a very powerful condition, but far less powerful than stunned them until the end of the turn, which also makes them lose their action."
+      }
+    ],
+    "image": null
+  },
+  {
+    "name": "Chest Trauma",
+    "source": "Bovenbrew Weapon Arts",
+    "url": "https://5e.tools/conditionsdiseases.html#chest%20trauma_bovenbrew%20weapon%20arts",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "• A creature with chest trauma has disadvantage on Constitution saving throws.\n• A creature with chest trauma is unable to use bonus actions for three turns unless they succeed on Constitution saving throw at the beginning of their turn.\n• The chest trauma condition can be removed by healing."
+      }
+    ],
+    "image": null
+  },
+  {
+    "name": "Crippled",
+    "source": "Bovenbrew Weapon Arts",
+    "url": "https://5e.tools/conditionsdiseases.html#crippled_bovenbrew%20weapon%20arts",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "• A crippled creature is unable to move for the first turn of the condition.\n• A crippled creature has disadvantage on Dexterity saving throws.\n• The crippled condition can be removed by healing."
+      }
+    ],
+    "image": null
+  },
+  {
+    "name": "Dazed",
+    "source": "Bovenbrew Weapon Arts",
+    "url": "https://5e.tools/conditionsdiseases.html#dazed_bovenbrew%20weapon%20arts",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "• A dazed creature has disadvantage on their next Wisdom saving throw.\n• A dazed creature cannot use reactions.\n• At the end of the creature's turn, they may attempt the Constitution saving throw again to end the dazed effect."
+      }
+    ],
+    "image": null
+  },
+  {
+    "name": "Gaping Wounds",
+    "source": "Bovenbrew Weapon Arts",
+    "url": "https://5e.tools/conditionsdiseases.html#gaping%20wounds_bovenbrew%20weapon%20arts",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "• Attacks against a creature with gaping wounds deal an additional 2 piercing damage.\n• The gaping wounds condition can be removed by healing."
+      }
+    ],
+    "image": null
+  },
+  {
+    "name": "Off Balance",
+    "source": "Bovenbrew Weapon Arts",
+    "url": "https://5e.tools/conditionsdiseases.html#off%20balance_bovenbrew%20weapon%20arts",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "• A creature who is off balance has disadvantage on Strength and Dexterity checks and attack rolls against it have advantage.\n• Attack rolls have advantage against a creature who is off balance.\n• A creature regains their balance if they take damage or are helped."
+      }
+    ],
+    "image": null
+  },
+  {
+    "name": "Weak Grip",
+    "source": "Bovenbrew Weapon Arts",
+    "url": "https://5e.tools/conditionsdiseases.html#weak%20grip_bovenbrew%20weapon%20arts",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "• A creature with weak grip has disadvantage on attack rolls.\n• A creature with weak grip has disadvantage on Strength saving throws.\n• The weak grip condition ends if the creature is helped. Also, the creature can repeat the saving throw at the end of their turn to end the condition."
+      }
+    ],
+    "image": null
+  },
+  {
+    "name": "Intoxicated",
+    "source": "3mxr-modnar",
+    "url": "https://5e.tools/conditionsdiseases.html#intoxicated_3mxr-modnar",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "After drinking begins make a Constitution DC 8 + 1 per drink to advance one level of Intoxication. "
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• 1 - **Buzzed**. Disadvantage on *Perception* checks & against effects that impart the Charmed condition. Advantage on saves versus things that impart the Frightened condition.\n• 2 - **Tipsy**. Disadvantage on all opposition ability checks (eg. against Persuasion, or grapple attempts). Gain d8 temporary Hp.\n• 3 - **Merry**. Gain Poisoned condition. Take -1 Dexterity, Intelligence, Wisdom, & Charisma attribute damage.\n• 4 - **Drunk** Requires ability checks to be successful on their desired actions (e.g. Running, Talking). Take -1 Dexterity, Intelligence, Wisdom, & Charisma attribute damage.\n• 5 - **Falling Down Drunk**. Gains Incapacitated condition, at this point failed recovery saves lead to the unconscious. Gain 1 levels of Exhaustion. Take -1 Dexterity, Intelligence, Wisdom, & Charisma attribute damage.\n• 6 - **Passed-Out Drunk**. Unconscious. Gain 1 levels of Exhaustion."
+      },
+      {
+        "name": "Recovery Saves",
+        "type": "text",
+        "value": "Each hour the creature makes another Constitution save check agasint the current DC to remove one level of intoxicated. Each hour the DC value lowers the creature's Constitution bonus per hour. Failed saves that fail by 10 or more, adds a level of Intoxication."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "This **can** mean the saves become more toxic for lower Constitution creatures and the person moves into deeper levels of intoxication or even death."
+      }
+    ],
+    "image": null
+  },
+  {
+    "name": "Famished",
+    "source": "3mxr-modnar",
+    "url": "https://5e.tools/conditionsdiseases.html#famished_3mxr-modnar",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "A creature that is hungry has been unable to sustain what they require to function without impairment. Be it food, drugs, etc -- the lack of this element is weakening, and leading to the creature's decline and likely death."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• Long Rests do not restore HD or Exhaustion, and HP (& MAX Hp) only are regained during a long by use of HD -- like with a short rest."
+      }
+    ],
+    "image": null
+  },
+  {
+    "name": "Bleeding",
+    "source": "3mxr-modnar",
+    "url": "https://5e.tools/conditionsdiseases.html#bleeding_3mxr-modnar",
+    "description": [
+      {
+        "name": "Description",
+        "type": "text",
+        "value": "• A creature who struck with the bleeding condition takes an additional point of damage of that type that imparted this condition, at the start of each of its rounds, until the take an action perform a healing check (DC 12 + any bonuses from spells/magical item or abilities.\n• The creature sheds bright light in a 20-foot radius and dim light for an additional 20 feet.\n• The effect can be ended early with the Extinguish action."
       }
     ],
     "image": null
