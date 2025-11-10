@@ -40,7 +40,7 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
         'deity',
         'disease',
         'facility',
-        // 'feat',
+        'feat',
         'hazard',
         // 'item',
         'language',

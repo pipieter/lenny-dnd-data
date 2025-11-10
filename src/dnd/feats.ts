@@ -176,7 +176,7 @@ function getFeatPrerequisites(feat: Feat): string | null {
                         } else if (profKey === 'weaponGroup') {
                             proficiencies.push(`${profValue} Proficiency`);
                         } else {
-                            throw `Unsupported feat-proficiency-prerequisite ${profKey}`;
+                            throw `Unsupported feat-proficiency-prerequisite in ${feat.name}: ${profKey}`;
                         }
                     }
 
@@ -204,6 +204,16 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     group.push('Spellcasting feature from a class that prepares spells');
                     break;
                 }
+                case 'spell': {
+                    for (const spell of entry) {
+                        group.push(spell.entry);
+                    }
+                }
+                case 'item': {
+                    for (const item of entry) {
+                        group.push(item);
+                    }
+                }
                 case 'otherSummary': {
                     const summaryEntry = entry.entry;
                     group.push(summaryEntry);
@@ -214,7 +224,7 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     break;
                 }
                 default: {
-                    throw `Unsupported feat prerequisite key ${key}`;
+                    throw `Unsupported feat prerequisite key in ${feat.name}: ${key}`;
                 }
             }
         }

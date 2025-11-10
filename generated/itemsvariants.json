@@ -83935,6 +83935,107 @@
     "properties": []
   },
   {
+    "name": "Improvised Light Weapon",
+    "source": "TalentTreesMod",
+    "url": "https://5e.tools/items.html#improvised%20light%20weapon_talenttreesmod",
+    "image": null,
+    "value": null,
+    "weight": "2 lb.",
+    "type": [
+      "improvised weapon",
+      "melee weapon"
+    ],
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "This improvised weapon requires the [Weapon Improvisation](https://5e.tools/feats.html#weapon%20improvisation_talenttreesmod) talent."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "***Special.*** Has the *Thrown* property only if you have the [Back-Alley Pitcher](https://5e.tools/feats.html#back-alley%20pitcher_talenttreesmod) talent."
+      },
+      {
+        "name": "Light",
+        "type": "text",
+        "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+      },
+      {
+        "name": "Thrown",
+        "type": "text",
+        "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+      }
+    ],
+    "properties": [
+      "**1d6** Bludgeoning",
+      "light",
+      "thrown (30/90 ft.)"
+    ]
+  },
+  {
+    "name": "Improvised Versatile Weapon",
+    "source": "TalentTreesMod",
+    "url": "https://5e.tools/items.html#improvised%20versatile%20weapon_talenttreesmod",
+    "image": null,
+    "value": null,
+    "weight": "6 lb.",
+    "type": [
+      "improvised weapon",
+      "melee weapon"
+    ],
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "This improvised weapon requires the [Weapon Improvisation](https://5e.tools/feats.html#weapon%20improvisation_talenttreesmod) talent."
+      },
+      {
+        "name": "Versatile",
+        "type": "text",
+        "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+      }
+    ],
+    "properties": [
+      "**1d8** Bludgeoning",
+      "versatile (1d10)"
+    ]
+  },
+  {
+    "name": "Improvised Heavy Weapon",
+    "source": "TalentTreesMod",
+    "url": "https://5e.tools/items.html#improvised%20heavy%20weapon_talenttreesmod",
+    "image": null,
+    "value": null,
+    "weight": "10 lb.",
+    "type": [
+      "improvised weapon",
+      "melee weapon"
+    ],
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "This improvised weapon requires the [Weapon Improvisation](https://5e.tools/feats.html#weapon%20improvisation_talenttreesmod) talent."
+      },
+      {
+        "name": "Heavy",
+        "type": "text",
+        "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+      },
+      {
+        "name": "Two-Handed",
+        "type": "text",
+        "value": "A Two-Handed weapon requires two hands when you attack with it."
+      }
+    ],
+    "properties": [
+      "**2d6** Bludgeoning",
+      "heavy",
+      "two-handed"
+    ]
+  },
+  {
     "name": "1-inch high pewter elf soldier, armed with a shield and longsword;",
     "source": "3mxt-modnar",
     "url": "https://5e.tools/items.html#1-inch%20high%20pewter%20elf%20soldier,%20armed%20with%20a%20shield%20and%20longsword;_3mxt-modnar",
