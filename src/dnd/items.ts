@@ -319,22 +319,18 @@ function parseItem(item: any, data: any): Item {
         if (typeof masteryKey === 'object') {
             note = ` (${masteryKey.note})`;
             masteryKey = masteryKey.uid;
-        }
-        else {
-            const parts: string[] = masteryKey.split('|')
-            if (parts.length > 2) { // Support for triple '|' (E.g. Scatter|GrimHollowPG24|Scatter)
+        } else {
+            const parts: string[] = masteryKey.split('|');
+            if (parts.length > 2) {
+                // Support for triple '|' (E.g. Scatter|GrimHollowPG24|Scatter)
                 note = ` ${parts[2].replaceAll(parts[0], '').trim()}`;
                 masteryKey = `${parts[0]}|${parts[1]}`;
             }
         }
 
         const mastery = masteries.get(masteryKey);
-
-        // TODO Fix Scatter|GrimHollowPG24|Scatter (x ft.) => varies from the norm of only 1 '|'
-        if (!mastery) {
-            console.log(masteryKey);
-            continue;
-        }
+        if (!mastery)
+            throw `No item-mastery found for mastery-key '${masteryKey}' in item '${item.name}'.`;
 
         const propertyName = `mastery: ${mastery.name}${note}`.toLowerCase();
         const propertyDesc = parseDescriptions(mastery.name, mastery.entries);
