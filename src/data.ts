@@ -1,5 +1,15 @@
 import { existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
 import { title } from './parser';
+import { Source } from './dnd/sources';
+import { joinStringsWithAnd } from './util';
+
+export type DatabankBase = {
+    [key: string]: object[];
+};
+
+export type Databank = DatabankBase & {
+    homebrewSources?: Source[];
+};
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -19,7 +29,7 @@ function ignoreJsonFile(path: string): boolean {
     return false;
 }
 
-function appendHomebrewData(databank: object, homebrewPath: string): object {
+function appendHomebrewData(databank: Databank, homebrewPath: string): Databank {
     const folders = [
         // 'book',
         'boon',
@@ -47,6 +57,9 @@ function appendHomebrewData(databank: object, homebrewPath: string): object {
         // 'vehicle'
     ];
 
+    databank.homebrewSources = [];
+    const existingSourceIds = new Set(databank.homebrewSources.map(s => s.id));
+
     for (const folder of folders) {
         const folderPath = `${homebrewPath}/${folder}`;
         const files = readdirSync(folderPath);
@@ -59,15 +72,28 @@ function appendHomebrewData(databank: object, homebrewPath: string): object {
             const data = readJsonFile(filePath);
 
             for (const key in data) {
-                if (key === '_meta') continue;
+                if (key === '_meta') {
+                    for (const source of data['_meta']['sources']) {
+                        const authors = source.authors[0] ? source.authors : source.convertedBy
+                        const parsedSource: Source = {
+                            id: source.abbreviation,
+                            name: source.full,
+                            source: source.json,
+                            published: source.dateReleased,
+                            author: joinStringsWithAnd(authors),
+                            group: source.partnered ? 'partnered' : 'homebrew',
+                        };
+
+                        if (!existingSourceIds.has(parsedSource.id)) {
+                            databank.homebrewSources.push(parsedSource);
+                            existingSourceIds.add(parsedSource.id);
+                        }
+                    }
+                    continue;
+                }
 
                 if (!Array.isArray(data[key])) continue;
-                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
-                if (!databank[key]) {
-                    // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
-                    databank[key] = [];
-                }
-                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
+                if (!databank[key]) databank[key] = [];
                 databank[key].push(...data[key]);
             }
         }
@@ -76,8 +102,10 @@ function appendHomebrewData(databank: object, homebrewPath: string): object {
     return databank;
 }
 
-export function loadData(dataPath: string, homebrewPath: string): any {
-    let databank: object = {};
+export function loadData(dataPath: string, homebrewPath: string): Databank {
+    let databank: Databank = {
+        homebrewSources: [],
+    };
     const files = readdirSync(dataPath);
 
     for (const file of files) {
@@ -88,12 +116,10 @@ export function loadData(dataPath: string, homebrewPath: string): any {
 
         for (const key in data) {
             if (!Object.prototype.hasOwnProperty.call(databank, key)) {
-                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
                 databank[key] = [];
             }
             const entries = data[key];
             if (Array.isArray(entries)) {
-                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
                 databank[key].push(...entries);
             }
         }

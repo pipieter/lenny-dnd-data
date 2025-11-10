@@ -1,4 +1,4 @@
-interface Source {
+export interface Source {
     id: string;
     name: string;
     source: string;
@@ -8,7 +8,7 @@ interface Source {
 }
 
 export function getSources(data: any): Source[] {
-    const books = [...data.book, ...data.adventure];
+    const books = [...data.book, ...data.adventure, ...data.homebrewSources];
     return books.map((book: any) => ({
         id: book.id,
         name: book.name,
