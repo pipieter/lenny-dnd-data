@@ -1,4 +1,4 @@
-import { existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
+import { Dirent, existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
 import { title } from './parser';
 import { Source } from './dnd/sources';
 import { joinStringsWithAnd } from './util';
@@ -20,6 +20,10 @@ export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
 }
 
+function isHomebrewDataDirectory(entry: Dirent<string>) {
+    return entry.isDirectory() && !entry.name.startsWith('_') && !entry.name.startsWith('.');
+}
+
 function ignoreJsonFile(path: string): boolean {
     if (!existsSync(path)) return true;
     if (!lstatSync(path).isFile()) return true;
@@ -31,10 +35,7 @@ function ignoreJsonFile(path: string): boolean {
 
 function appendHomebrewData(databank: Databank, homebrewPath: string): Databank {
     const folders = readdirSync(homebrewPath, { withFileTypes: true })
-        .filter(
-            (entry) =>
-                entry.isDirectory() && !entry.name.startsWith('_') && !entry.name.startsWith('.')
-        )
+        .filter((entry) => isHomebrewDataDirectory(entry))
         .map((entry) => entry.name);
 
     databank.homebrewSources = [];
