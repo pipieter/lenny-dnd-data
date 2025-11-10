@@ -342,7 +342,7 @@ export function getItems(data: any): any[] {
 export function getItemVariants(data: any): any[] {
     const items = [...data.item, ...data.baseitem];
     const variants = data.magicvariant.flatMap((m: any) => resolveMagicVariant(m, data.baseitem));
-    let seenVariants = new Set();
+    const seenVariants = new Set();
     const raw: any[] = [];
     for (const variant of variants) {
         const key = getKey(variant.name, variant.source);
