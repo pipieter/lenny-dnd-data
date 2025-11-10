@@ -216,6 +216,9 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     }
                     break;
                 }
+                case 'culture':
+                    group.push(`${joinStringsWithOr(entry)} culture`);
+                    break;
                 case 'otherSummary': {
                     const summaryEntry = entry.entry;
                     group.push(summaryEntry);
@@ -271,13 +274,22 @@ function getFeatType(feat: Feat): string {
         'FS:P': 'Fighting Style Replacement Feat (Paladin)',
         'FS:R': 'Fighting Style Replacement Feat (Ranger)',
         EB: 'Epic Boon Feat',
+        VtCom: 'Common Virtues',
+        VtBar: 'Virtues of the Bardings',
+        VtDwa: 'Virtues of the Dwarves',
+        VtElf: 'Virtues of the Elves',
+        VtHob: 'Virtues of the Hobbits',
+        VtMBr: 'Virtues of the Men of Bree',
+        VtNRg: 'Virtues of the Rangers of the North',
+        Craft: 'Craft',
+        B10L: 'Beyond 10th Level',
     };
 
     if (feat.category in categoryMap) {
         return categoryMap[feat.category];
     }
 
-    throw `Unsupported feat-type ${feat.category}`;
+    throw `Unsupported feat-type in ${feat.name}: '${feat.category}'`;
 }
 
 export function getFeats(data: any): ParsedFeat[] {

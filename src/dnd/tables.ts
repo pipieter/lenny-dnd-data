@@ -28,6 +28,7 @@ interface TableData {
     rows: any[];
     footnotes?: string[];
     chapter?: any;
+    type?: string;
 }
 
 interface ParsedTable {

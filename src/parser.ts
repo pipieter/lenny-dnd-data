@@ -83,35 +83,28 @@ function cleanDNDatk(text: string): string {
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@font ([^\}]*?)\|([^\}]*?)\}/g, '$1');
 
-    const replacements: [RegExp, string][] = noFormat
-        ? [
-            [/\{@b ([^}]*)\}/gi, '$1'],
-            [/\{@bold ([^}]*)\}/gi, '$1'],
-            [/\{@i ([^}]*)\}/gi, '$1'],
-            [/\{@italic ([^}]*)\}/gi, '$1'],
-        ]
-        : [
-            [/\{@b ([^}]*)\}/gi, '**$1**'],
-            [/\{@bold ([^}]*)\}/gi, '**$1**'],
-            [/\{@i ([^}]*)\}/gi, '*$1*'],
-            [/\{@italic ([^}]*)\}/gi, '*$1*'],
-        ];
-    
-    // Basic formatting has to be done multiple times, in case they're wrapped within eachother. (e.g. {@b {@i Sous Chef}})
-    let prev;
-    do {
-        prev = text;
-        for (const [pattern, repl] of replacements) {
-        text = text.replaceAll(pattern, repl);
-        }
-    } while (text.includes('{@') && text !== prev);
+    if (noFormat) {
+        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
+    } else {
+        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
+        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
+        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
+    }
 
     // Attacks are done separately, as they have a fixed pattern
     text = cleanDNDatk(text);
 
     // Note: all regexes should end with a g, which stands for "global"
-    text = text.replace(/\b(\d+)\|([+-]\d+)\b/g, '$2'); // 5/+5 support
+    text = text.replace(/\b(\d+)\|([+-]?\d+)\b/g, '$2'); // 5/+5 support
+    text = text.replace(/\{@ability (\w+) (\d+)\}/g, (_, ability, score) => {
+        return `${score} ${parseAbilityScore(ability)}`;
+    });
     text = text.replaceAll(/\{@atk rw\} /g, '+');
     text = text.replaceAll(/\{@atk rw\}/g, '+');
     text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
@@ -123,6 +116,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@cite ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@chance ([^\}]*?)\|\|\|([^\}]*?)\|([^\}]*?)\}/g, '$1 percent');
     text = text.replaceAll(/\{@chance ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$2');
     text = text.replaceAll(/\{@chance ([^\}]*?)\}/g, '$1 percent');
@@ -149,6 +143,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@hazard ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@hazard ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@hit ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@homebrew ([^\}]*?)\|([^\}]*?)\}/g, '$1'); // {@homebrew Reroll.|No 6th option was present in source on this table, adding reroll since there wasn't anything.} => only example
     text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -158,6 +153,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@language ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@link ([^\}]*?)\|([^\}]*?)\}/g, '[$1]($2)');
+    text = text.replaceAll(/\{@link ([^\}]*?)\}/g, '[$1]($1)');
     text = text.replaceAll(/\{@loader ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@optfeature ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@optfeature ([^\}]*?)\}/g, '$1');
@@ -200,7 +196,12 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{damage ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+        text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\}/g, '$2');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+        // text = text.replaceAll(/\{@scaledice ([^\}]*?)\}/g, (_, p1) => {
+        //     const parts = p1.split('|');
+        //     return `${parts[parts.length - 1]}`; // get the part after the last '|'
+        // });
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -214,6 +215,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@object ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@psionic ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@feat ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(
@@ -241,7 +243,12 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
+        text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\}/g, '**$2**');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
+        // text = text.replaceAll(/\{@scaledice ([^\}]*?)\}/g, (_, p1) => {
+        //     const parts = p1.split('|');
+        //     return `**${parts[parts.length - 1]}**`; // get the part after the last '|'
+        // });
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
@@ -271,6 +278,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             (_, p1, p2, p3) => `[${p3}](${getObjectsUrl(p1, p2)})`
         );
         text = text.replaceAll(/\{@object ([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(/\{@psionic ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(
             /\{@feat ([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2) => `[${p1}](${getFeatsUrl(p1, p2)})`
@@ -748,9 +756,10 @@ export function parseDescriptionFromTable(description: any): Description {
     const headers: string[] | null = description.colLabels
         ? description.colLabels.map(cleanDNDText)
         : null;
-    const rows: string[][] = description.rows.map(parseTableRow);
-    const table: Table = { title, headers, rows };
 
+    const rows: string[][] = description.rows ? description.rows.map(parseTableRow) : [];
+
+    const table: Table = { title, headers, rows };
     return { name: title, type: DescriptionType.table, value: table };
 }
 

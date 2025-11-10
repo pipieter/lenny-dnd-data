@@ -56,6 +56,7 @@ function mapItemProperties(data: any): Map<string, any> {
 }
 
 function applyItemPropertyTemplate(item: any, property: any, template: string): string {
+    if (!template) return '';
     template = template.replaceAll('{{prop_name}}', property.name);
     template = template.replaceAll('{{prop_name_lower}}', property.name.toLowerCase());
 
@@ -318,6 +319,8 @@ function parseItem(item: any, data: any): Item {
             masteryKey = masteryKey.uid;
         }
         const mastery = masteries.get(masteryKey);
+        if (!mastery) continue;
+
         const propertyName = `mastery: ${mastery.name}${note}`.toLowerCase();
         const propertyDesc = parseDescriptions(mastery.name, mastery.entries);
         result.properties.push(propertyName);

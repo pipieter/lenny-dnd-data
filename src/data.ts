@@ -30,48 +30,12 @@ function ignoreJsonFile(path: string): boolean {
 }
 
 function appendHomebrewData(databank: Databank, homebrewPath: string): Databank {
-    // TODO: REMOVE HARDCODED LIST
-    const folders = [
-        'action',
-        // 'adventure',
-        'background',
-        'baseitem',
-        // 'book',
-        'boon',
-        // 'charoption', // Doesn't add anything
-        // 'class',
-        // 'collection',
-        'condition',
-        // 'creature',
-        'cult',
-        // 'deck', // Doesn't add anything
-        'deity',
-        'disease',
-        'facility',
-        'feat',
-        'hazard',
-        // 'item',
-        'language',
-        'magicvariant',
-        // 'makebrew', // Doesn't add anything
-        'object',
-        // 'optionalfeature',
-        'psionic',
-        // 'race',
-        // 'recipe', // Doesn't add anything
-        // 'reward', // Doesn't add anything
-        'spell',
-        // 'subclass',
-        // 'subrace', // Doesn't add anyting
-        'table',
-        'trap',
-        'variantrule',
-        // 'vehicle'
-    ];
-    // TODO: Use the below code instead of hardcoded folders-list. Hardcode is only for testing.
-    // const folders = readdirSync(homebrewPath, { withFileTypes: true })
-    //     .filter(entry => entry.isDirectory() && !entry.name.startsWith('_') && !entry.name.startsWith('.'))
-    //     .map(entry => entry.name);
+    const folders = readdirSync(homebrewPath, { withFileTypes: true })
+        .filter(
+            (entry) =>
+                entry.isDirectory() && !entry.name.startsWith('_') && !entry.name.startsWith('.')
+        )
+        .map((entry) => entry.name);
 
     databank.homebrewSources = [];
     const existingSourceIds = new Set(databank.homebrewSources.map((s) => s.id));
