@@ -198,10 +198,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\}/g, '$2');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-        // text = text.replaceAll(/\{@scaledice ([^\}]*?)\}/g, (_, p1) => {
-        //     const parts = p1.split('|');
-        //     return `${parts[parts.length - 1]}`; // get the part after the last '|'
-        // });
+        text = text.replaceAll(/\{@scaledice ([^\}]*?)\}/g, (_, p1) => {
+            const parts = p1.split('-');
+            return `${parts[parts.length - 1]}`; // get the part after the last '-'
+        });
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -245,10 +245,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\}/g, '**$2**');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
-        // text = text.replaceAll(/\{@scaledice ([^\}]*?)\}/g, (_, p1) => {
-        //     const parts = p1.split('|');
-        //     return `**${parts[parts.length - 1]}**`; // get the part after the last '|'
-        // });
+        text = text.replaceAll(/\{@scaledice ([^\}]*?)\}/g, (_, p1) => {
+            const parts = p1.split('-');
+            return `**${parts[parts.length - 1]}**`; // get the part after the last '-'
+        });
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
