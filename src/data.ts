@@ -44,7 +44,7 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
         'hazard',
         // 'item',
         'language',
-        // 'magicvariant',
+        'magicvariant',
         'object',
         // 'optionalfeature',
         'psionic',
