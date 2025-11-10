@@ -56,6 +56,7 @@ function mapItemProperties(data: any): Map<string, any> {
 }
 
 function applyItemPropertyTemplate(item: any, property: any, template: string): string {
+    /* eslint-disable no-console -- NO TEMPLATE NEEDS TO BE INVESTIGATED */
     if (!template) return '';
     template = template.replaceAll('{{prop_name}}', property.name);
     template = template.replaceAll('{{prop_name_lower}}', property.name.toLowerCase());
@@ -319,6 +320,7 @@ function parseItem(item: any, data: any): Item {
             masteryKey = masteryKey.uid;
         }
         const mastery = masteries.get(masteryKey);
+        /* eslint-disable no-console -- NO MASTERY NEEDS TO BE INVESTIGATED */
         if (!mastery) continue;
 
         const propertyName = `mastery: ${mastery.name}${note}`.toLowerCase();
