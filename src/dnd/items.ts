@@ -11,6 +11,7 @@ import {
 import { DamageTypes } from '../5etools-conversion/data';
 import { getItemsUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
+import { getKey } from '../data';
 
 interface Item {
     name: string;
@@ -228,7 +229,7 @@ function parseItem(item: any, data: any): Item {
     }
 
     if (item.firearm) {
-        result.type.push(item.firearm);
+        result.type.push('firearm');
     }
 
     if (item.poison) {
@@ -341,9 +342,13 @@ export function getItems(data: any): any[] {
 export function getItemVariants(data: any): any[] {
     const items = [...data.item, ...data.baseitem];
     const variants = data.magicvariant.flatMap((m: any) => resolveMagicVariant(m, data.baseitem));
+    const seenVariants = new Set();
     const raw: any[] = [];
     for (const variant of variants) {
+        const key = getKey(variant.name, variant.source);
+        if (seenVariants.has(key)) continue;
         raw.push(resolveItemEntry(handleCopy(variant, items), data.itemEntry));
+        seenVariants.add(key);
     }
 
     return raw.map((variant) => parseItem(variant, data));

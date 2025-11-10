@@ -5,7 +5,7 @@ import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
 import { getClassesAndClassFeats } from './dnd/classes';
-import { getItems } from './dnd/items';
+import { getItems, getItemVariants } from './dnd/items';
 import { getRules } from './dnd/rules';
 import { getActions } from './dnd/actions';
 import { getFeats } from './dnd/feats';
@@ -30,7 +30,7 @@ function main(): void {
     const items = getItems(data);
     stopwatch.log('Items retrieved');
 
-    const itemVariants = getItems(data);
+    const itemVariants = getItemVariants(data);
     stopwatch.log('Items variant retrieved');
 
     const spells = getSpells('./5etools-src/data/spells');
