@@ -44,10 +44,8 @@ jobs:
         runs-on: ubuntu-latest
         name: prettier-check
         steps:
-            - name: Checkout repo and submodules
+            - name: Checkout repo
               uses: actions/checkout@v4
-              with:
-                  submodules: recursive
 
             - name: Set up Node.js
               uses: actions/setup-node@v4
@@ -64,10 +62,8 @@ jobs:
         runs-on: ubuntu-latest
         name: eslint-check
         steps:
-            - name: Checkout repo and submodules
+            - name: Checkout repo
               uses: actions/checkout@v4
-              with:
-                  submodules: recursive
 
             - name: Set up Node.js
               uses: actions/setup-node@v4
