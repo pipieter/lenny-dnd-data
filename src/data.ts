@@ -19,8 +19,65 @@ function ignoreJsonFile(path: string): boolean {
     return false;
 }
 
-export function loadData(dataPath: string): any {
-    const databank: object = {};
+function appendHomebrewData(databank: object, homebrewPath: string): object {
+    const folders = [
+        // 'book',
+        // 'boon',
+        // 'class',
+        // 'condition',
+        // 'creature',
+        // 'cult',
+        // 'deity',
+        // 'disease',
+        // 'facility',
+        // 'feat',
+        // 'hazard',
+        // 'item',
+        // 'language',
+        // 'magicvariant',
+        // 'object',
+        // 'optionalfeature',
+        // 'psionic',
+        // 'race',
+        'spell',
+        // 'subclass',
+        // 'table',
+        // 'trap',
+        // 'variantrule',
+        // 'vehicle'
+    ];
+
+    for (const folder of folders) {
+        const folderPath = `${homebrewPath}/${folder}`;
+        const files = readdirSync(folderPath);
+        const jsonPaths = files
+            .filter((file) => file.endsWith('.json'))
+            .map((file) => `${folderPath}/${file}`);
+
+        for (const filePath of jsonPaths) {
+            if (ignoreJsonFile(filePath)) continue;
+            const data = readJsonFile(filePath);
+
+            for (const key in data) {
+                if (key === '_meta') continue;
+
+                if (!Array.isArray(data[key])) continue;
+                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
+                if (!databank[key]) {
+                    // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
+                    databank[key] = [];
+                }
+                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
+                databank[key].push(...data[key]);
+            }
+        }
+    }
+
+    return databank;
+}
+
+export function loadData(dataPath: string, homebrewPath: string): any {
+    let databank: object = {};
     const files = readdirSync(dataPath);
 
     for (const file of files) {
@@ -42,5 +99,6 @@ export function loadData(dataPath: string): any {
         }
     }
 
+    databank = appendHomebrewData(databank, homebrewPath);
     return databank;
 }

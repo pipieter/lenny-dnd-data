@@ -24,7 +24,8 @@ function main(): void {
     const stopwatch = new StopwatchLogger();
 
     const path = './5etools-src/data';
-    const data = loadData(path);
+    const homebrewPath = './homebrew-src';
+    const data = loadData(path, homebrewPath);
     stopwatch.log('Loaded databanks');
 
     const items = getItems(data);
