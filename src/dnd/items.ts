@@ -27,7 +27,8 @@ interface Item {
 function mapItemMasteries(data: any): Map<string, any> {
     const masteries = new Map<string, any>();
 
-    for (const mastery of data.itemMastery || []) {
+    const itemMasteries = data.itemMastery ?? data.mastery ?? [];
+    for (const mastery of itemMasteries) {
         const key = `${mastery.name}|${mastery.source}`;
         masteries.set(key, mastery);
     }
@@ -48,16 +49,16 @@ function mapItemTypes(data: any): Map<string, any> {
 function mapItemProperties(data: any): Map<string, any> {
     const properties = new Map<string, any>();
 
-    for (const property of data.itemProperty || []) {
+    const itemProperties = data.itemProperty ?? data.property ?? []
+    for (const property of itemProperties) {
         properties.set(property.abbreviation, property);
     }
 
     return properties;
 }
 
-function applyItemPropertyTemplate(item: any, property: any, template: string): string {
-    /* eslint-disable no-console -- NO TEMPLATE NEEDS TO BE INVESTIGATED */
-    if (!template) return '';
+function applyItemPropertyTemplate(item: any, property: any, template: string | undefined): string {
+    if (!template) return cleanDNDText(property.entries[0]);
     template = template.replaceAll('{{prop_name}}', property.name);
     template = template.replaceAll('{{prop_name_lower}}', property.name.toLowerCase());
 
@@ -320,7 +321,8 @@ function parseItem(item: any, data: any): Item {
             masteryKey = masteryKey.uid;
         }
         const mastery = masteries.get(masteryKey);
-        /* eslint-disable no-console -- NO MASTERY NEEDS TO BE INVESTIGATED */
+
+        // TODO Fix Scatter|GrimHollowPG24|Scatter (x ft.) => varies from the norm of only 1 '|'
         if (!mastery) continue;
 
         const propertyName = `mastery: ${mastery.name}${note}`.toLowerCase();
