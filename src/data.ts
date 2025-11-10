@@ -71,26 +71,26 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
             if (ignoreJsonFile(filePath)) continue;
             const data = readJsonFile(filePath);
 
-            for (const key in data) {
-                if (key === '_meta') {
-                    for (const source of data['_meta']['sources']) {
-                        const authors = source.authors[0] ? source.authors : source.convertedBy;
-                        const parsedSource: Source = {
-                            id: source.abbreviation,
-                            name: source.full,
-                            source: source.json,
-                            published: source.dateReleased,
-                            author: joinStringsWithAnd(authors),
-                            group: source.partnered ? 'partnered' : 'homebrew',
-                        };
+            for (const source of data['_meta']['sources']) {
+                const authors = source.authors[0] ? source.authors : source.convertedBy;
+                const parsedSource: Source = {
+                    id: source.abbreviation,
+                    name: source.full,
+                    source: source.json,
+                    published: source.dateReleased,
+                    author: joinStringsWithAnd(authors),
+                    group: source.partnered ? 'partnered' : 'homebrew',
+                };
 
-                        if (!existingSourceIds.has(parsedSource.id)) {
-                            databank.homebrewSources.push(parsedSource);
-                            existingSourceIds.add(parsedSource.id);
-                        }
-                    }
-                    continue;
+                if (!existingSourceIds.has(parsedSource.id)) {
+                    databank.homebrewSources.push(parsedSource);
+                    existingSourceIds.add(parsedSource.id);
                 }
+            }
+
+            const keyBlacklist = new Set(['_meta', 'adventure', 'book']);
+            for (const key in data) {
+                if (keyBlacklist.has(key)) continue;
 
                 if (!Array.isArray(data[key])) continue;
                 if (!databank[key]) databank[key] = [];
