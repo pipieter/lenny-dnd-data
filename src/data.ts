@@ -58,7 +58,7 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
     ];
 
     databank.homebrewSources = [];
-    const existingSourceIds = new Set(databank.homebrewSources.map(s => s.id));
+    const existingSourceIds = new Set(databank.homebrewSources.map((s) => s.id));
 
     for (const folder of folders) {
         const folderPath = `${homebrewPath}/${folder}`;
@@ -74,7 +74,7 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
             for (const key in data) {
                 if (key === '_meta') {
                     for (const source of data['_meta']['sources']) {
-                        const authors = source.authors[0] ? source.authors : source.convertedBy
+                        const authors = source.authors[0] ? source.authors : source.convertedBy;
                         const parsedSource: Source = {
                             id: source.abbreviation,
                             name: source.full,
