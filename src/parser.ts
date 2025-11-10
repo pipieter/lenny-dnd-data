@@ -38,7 +38,13 @@ export interface Table {
 
 export function checkForDisallowedSymbols(text: string) {
     const disallowedSymbols = ['{', '}', '|', '[object Object]'];
-    const foundSymbols = disallowedSymbols.filter((s) => text.includes(s)).map((s) => `'${s}'`);
+    const whitelist = ['| EBERRON:'];
+    const foundSymbols = disallowedSymbols
+        .filter((s) => {
+            if (!text.includes(s)) return false;
+            return !whitelist.some((allowed) => text.includes(allowed));
+        })
+        .map((s) => `'${s}'`);
     if (foundSymbols.length > 0) {
         throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${text}'`;
     }
@@ -93,6 +99,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = cleanDNDatk(text);
 
     // Note: all regexes should end with a g, which stands for "global"
+    text = text.replace(/\b(\d+)\|([+-]\d+)\b/g, '$2'); // 5/+5 support
     text = text.replaceAll(/\{@atk rw\} /g, '+');
     text = text.replaceAll(/\{@atk rw\}/g, '+');
     text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
@@ -115,6 +122,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@d20 -([^\}]*?)\}/g, '-$1');
     text = text.replaceAll(/\{@d20 ([^\}]*?)\}/g, '+$1');
     text = text.replaceAll(/\{@dc ([^\}]*?)\}/g, 'DC $1');
+    text = text.replaceAll(/\{@coinflip ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@deck ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@deck ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -176,6 +184,8 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '$2');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\@{damage ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{damage ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');

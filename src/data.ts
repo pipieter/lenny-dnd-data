@@ -41,8 +41,8 @@ function appendHomebrewData(databank: object, homebrewPath: string): object {
         // 'race',
         'spell',
         // 'subclass',
-        // 'table', // UNMATCHED SYMB
-        // 'trap', // UNMATCHED SYMB
+        'table',
+        'trap',
         'variantrule',
         // 'vehicle'
     ];
