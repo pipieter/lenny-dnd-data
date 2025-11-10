@@ -36,7 +36,8 @@ function ignoreJsonFile(path: string): boolean {
 function appendHomebrewData(databank: Databank, homebrewPath: string): Databank {
     const folders = readdirSync(homebrewPath, { withFileTypes: true })
         .filter((entry) => isHomebrewDataDirectory(entry))
-        .map((entry) => entry.name);
+        .map((entry) => entry.name)
+        .sort();
 
     databank.homebrewSources = [];
     const existingSourceIds = new Set(databank.homebrewSources.map((s) => s.id));
@@ -46,7 +47,8 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
         const files = readdirSync(folderPath);
         const jsonPaths = files
             .filter((file) => file.endsWith('.json'))
-            .map((file) => `${folderPath}/${file}`);
+            .map((file) => `${folderPath}/${file}`)
+            .sort();
 
         for (const filePath of jsonPaths) {
             if (ignoreJsonFile(filePath)) continue;
