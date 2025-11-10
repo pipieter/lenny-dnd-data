@@ -136081,6 +136081,11 @@
         "name": "Two-Handed",
         "type": "text",
         "value": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Scatter",
+        "type": "text",
+        "value": "Scatter weapons can devastate multiple enemies at once. When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon's scatter range from the target's space (or one square the creature occupies if it is Large or larger). Creatures other than the original target that fall within the weapon's scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2). This damage is of the same type you dealt to the original target."
       }
     ],
     "properties": [
@@ -136089,7 +136094,8 @@
       "blackpowder weapons fire projectiles with ear-splitting noise, shredding armor with deadly force. when fired, blackpowder weapons emit a deafening crack audible 300 feet away. a blackpowder weapon exposed to heavy rain, submerged, or similarly drenched in water, can't fire until dried for 1 hour. these weapons use paper cartridge bullets as ammunition.",
       "cumbersome weapons are difficult to wield but are effective ranged tools for those strong enough to wield them. when making an attack with a cumbersome weapon, you must use your strength modifier for the attack and damage rolls.",
       "loading",
-      "two-handed"
+      "two-handed",
+      "mastery: scatter (10 ft.)"
     ]
   },
   {
@@ -136123,13 +136129,19 @@
         "name": "Loading",
         "type": "text",
         "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+      },
+      {
+        "name": "Scatter",
+        "type": "text",
+        "value": "Scatter weapons can devastate multiple enemies at once. When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon's scatter range from the target's space (or one square the creature occupies if it is Large or larger). Creatures other than the original target that fall within the weapon's scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2). This damage is of the same type you dealt to the original target."
       }
     ],
     "properties": [
       "**2d4** Piercing",
       "ammunition (range 15/60 ft.; paper cartridge bullet)",
       "blackpowder weapons fire projectiles with ear-splitting noise, shredding armor with deadly force. when fired, blackpowder weapons emit a deafening crack audible 300 feet away. a blackpowder weapon exposed to heavy rain, submerged, or similarly drenched in water, can't fire until dried for 1 hour. these weapons use paper cartridge bullets as ammunition.",
-      "loading"
+      "loading",
+      "mastery: scatter (5 ft.)"
     ]
   },
   {
@@ -136557,13 +136569,19 @@
         "name": "Loading",
         "type": "text",
         "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+      },
+      {
+        "name": "Scatter",
+        "type": "text",
+        "value": "Scatter weapons can devastate multiple enemies at once. When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon's scatter range from the target's space (or one square the creature occupies if it is Large or larger). Creatures other than the original target that fall within the weapon's scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2). This damage is of the same type you dealt to the original target."
       }
     ],
     "properties": [
       "**2d4** Piercing",
       "ammunition (range 20 ft.; dragon shot)",
       "blackpowder weapons fire projectiles with ear-splitting noise, shredding armor with deadly force. when fired, blackpowder weapons emit a deafening crack audible 300 feet away. a blackpowder weapon exposed to heavy rain, submerged, or similarly drenched in water, can't fire until dried for 1 hour. these weapons use paper cartridge bullets as ammunition.",
-      "loading"
+      "loading",
+      "mastery: scatter (5 ft.)"
     ]
   },
   {
@@ -136597,13 +136615,19 @@
         "name": "Loading",
         "type": "text",
         "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+      },
+      {
+        "name": "Scatter",
+        "type": "text",
+        "value": "Scatter weapons can devastate multiple enemies at once. When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon's scatter range from the target's space (or one square the creature occupies if it is Large or larger). Creatures other than the original target that fall within the weapon's scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2). This damage is of the same type you dealt to the original target."
       }
     ],
     "properties": [
       "**2d6** Piercing",
       "ammunition (range 30 ft.; dragon shot)",
       "blackpowder weapons fire projectiles with ear-splitting noise, shredding armor with deadly force. when fired, blackpowder weapons emit a deafening crack audible 300 feet away. a blackpowder weapon exposed to heavy rain, submerged, or similarly drenched in water, can't fire until dried for 1 hour. these weapons use paper cartridge bullets as ammunition.",
-      "loading"
+      "loading",
+      "mastery: scatter (10 ft.)"
     ]
   },
   {
@@ -136909,6 +136933,11 @@
         "name": "Two-Handed",
         "type": "text",
         "value": "A Two-Handed weapon requires two hands when you attack with it."
+      },
+      {
+        "name": "Scatter",
+        "type": "text",
+        "value": "Scatter weapons can devastate multiple enemies at once. When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon's scatter range from the target's space (or one square the creature occupies if it is Large or larger). Creatures other than the original target that fall within the weapon's scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2). This damage is of the same type you dealt to the original target."
       }
     ],
     "properties": [
@@ -136917,7 +136946,8 @@
       "cumbersome weapons are difficult to wield but are effective ranged tools for those strong enough to wield them. when making an attack with a cumbersome weapon, you must use your strength modifier for the attack and damage rolls.",
       "loading",
       "magazine ({{item.customproperties.magazine}})",
-      "two-handed"
+      "two-handed",
+      "mastery: scatter (10 ft.)"
     ]
   },
   {

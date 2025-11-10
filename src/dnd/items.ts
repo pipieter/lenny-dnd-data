@@ -320,10 +320,21 @@ function parseItem(item: any, data: any): Item {
             note = ` (${masteryKey.note})`;
             masteryKey = masteryKey.uid;
         }
+        else {
+            const parts: string[] = masteryKey.split('|')
+            if (parts.length > 2) { // Support for triple '|' (E.g. Scatter|GrimHollowPG24|Scatter)
+                note = ` ${parts[2].replaceAll(parts[0], '').trim()}`;
+                masteryKey = `${parts[0]}|${parts[1]}`;
+            }
+        }
+
         const mastery = masteries.get(masteryKey);
 
         // TODO Fix Scatter|GrimHollowPG24|Scatter (x ft.) => varies from the norm of only 1 '|'
-        if (!mastery) continue;
+        if (!mastery) {
+            console.log(masteryKey);
+            continue;
+        }
 
         const propertyName = `mastery: ${mastery.name}${note}`.toLowerCase();
         const propertyDesc = parseDescriptions(mastery.name, mastery.entries);
