@@ -208,11 +208,13 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     for (const spell of entry) {
                         group.push(spell.entry);
                     }
+                    break;
                 }
                 case 'item': {
                     for (const item of entry) {
                         group.push(item);
                     }
+                    break;
                 }
                 case 'otherSummary': {
                     const summaryEntry = entry.entry;
