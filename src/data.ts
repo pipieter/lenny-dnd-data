@@ -31,6 +31,10 @@ function ignoreJsonFile(path: string): boolean {
 
 function appendHomebrewData(databank: Databank, homebrewPath: string): Databank {
     const folders = [
+        'action',
+        // 'adventure',
+        'background',
+        'baseitem',
         // 'book',
         'boon',
         // 'class',
@@ -72,7 +76,8 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
             const data = readJsonFile(filePath);
 
             for (const source of data['_meta']['sources']) {
-                const authors = source.authors[0] ? source.authors : source.convertedBy;
+                const hasSourceAuthors = source.authors != null ? source.authors[0] != '' : false;
+                const authors = hasSourceAuthors ? source.authors : source.convertedBy;
                 const parsedSource: Source = {
                     id: source.abbreviation,
                     name: source.full,
@@ -82,9 +87,9 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
                     group: source.partnered ? 'partnered' : 'homebrew',
                 };
 
-                if (!existingSourceIds.has(parsedSource.id)) {
+                if (!existingSourceIds.has(parsedSource.source)) {
                     databank.homebrewSources.push(parsedSource);
-                    existingSourceIds.add(parsedSource.id);
+                    existingSourceIds.add(parsedSource.source);
                 }
             }
 

@@ -83,17 +83,29 @@ function cleanDNDatk(text: string): string {
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    if (noFormat) {
-        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
-    } else {
-        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
-        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
-        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
-        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
-    }
+
+    const replacements: [RegExp, string][] = noFormat
+        ? [
+            [/\{@b ([^}]*)\}/gi, '$1'],
+            [/\{@bold ([^}]*)\}/gi, '$1'],
+            [/\{@i ([^}]*)\}/gi, '$1'],
+            [/\{@italic ([^}]*)\}/gi, '$1'],
+        ]
+        : [
+            [/\{@b ([^}]*)\}/gi, '**$1**'],
+            [/\{@bold ([^}]*)\}/gi, '**$1**'],
+            [/\{@i ([^}]*)\}/gi, '*$1*'],
+            [/\{@italic ([^}]*)\}/gi, '*$1*'],
+        ];
+    
+    // Basic formatting has to be done multiple times, in case they're wrapped within eachother. (e.g. {@b {@i Sous Chef}})
+    let prev;
+    do {
+        prev = text;
+        for (const [pattern, repl] of replacements) {
+        text = text.replaceAll(pattern, repl);
+        }
+    } while (text.includes('{@') && text !== prev);
 
     // Attacks are done separately, as they have a fixed pattern
     text = cleanDNDatk(text);
