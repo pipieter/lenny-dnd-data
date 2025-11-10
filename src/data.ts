@@ -37,10 +37,13 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
         'baseitem',
         // 'book',
         'boon',
+        // 'charoption', // Doesn't add anything
         // 'class',
+        // 'collection',
         'condition',
         // 'creature',
         'cult',
+        // 'deck', // Doesn't add anything
         'deity',
         'disease',
         'facility',
@@ -49,12 +52,16 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
         // 'item',
         'language',
         'magicvariant',
+        // 'makebrew', // Doesn't add anything
         'object',
         // 'optionalfeature',
         'psionic',
         // 'race',
+        // 'recipe', // Doesn't add anything
+        // 'reward', // Doesn't add anything
         'spell',
         // 'subclass',
+        // 'subrace', // Doesn't add anyting
         'table',
         'trap',
         'variantrule',
@@ -75,26 +82,29 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
             if (ignoreJsonFile(filePath)) continue;
             const data = readJsonFile(filePath);
 
-            for (const source of data['_meta']['sources']) {
-                const hasSourceAuthors = source.authors != null ? source.authors[0] != '' : false;
-                const authors = hasSourceAuthors ? source.authors : source.convertedBy;
-                const parsedSource: Source = {
-                    id: source.abbreviation,
-                    name: source.full,
-                    source: source.json,
-                    published: source.dateReleased,
-                    author: joinStringsWithAnd(authors),
-                    group: source.partnered ? 'partnered' : 'homebrew',
-                };
-
-                if (!existingSourceIds.has(parsedSource.source)) {
-                    databank.homebrewSources.push(parsedSource);
-                    existingSourceIds.add(parsedSource.source);
-                }
-            }
-
             const keyBlacklist = new Set(['_meta', 'adventure', 'book']);
             for (const key in data) {
+                if (key == '_meta'){
+                    const source = data['_meta']['sources'][0]
+                    if (!source.partnered) break;
+
+                    const hasSourceAuthors = source.authors != null ? source.authors[0] != '' : false;
+                    const authors = hasSourceAuthors ? source.authors : source.convertedBy;
+                    const parsedSource: Source = {
+                        id: source.abbreviation,
+                        name: source.full,
+                        source: source.json,
+                        published: source.dateReleased,
+                        author: joinStringsWithAnd(authors),
+                        group: source.partnered ? 'partnered' : 'homebrew',
+                    };
+
+                    if (!existingSourceIds.has(parsedSource.source)) {
+                        databank.homebrewSources.push(parsedSource);
+                        existingSourceIds.add(parsedSource.source);
+                    }
+                }
+
                 if (keyBlacklist.has(key)) continue;
 
                 if (!Array.isArray(data[key])) continue;
