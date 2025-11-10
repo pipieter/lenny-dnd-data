@@ -30,6 +30,7 @@ function ignoreJsonFile(path: string): boolean {
 }
 
 function appendHomebrewData(databank: Databank, homebrewPath: string): Databank {
+    // TODO: REMOVE HARDCODED LIST
     const folders = [
         'action',
         // 'adventure',
@@ -67,6 +68,10 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
         'variantrule',
         // 'vehicle'
     ];
+    // TODO: Use the below code instead of hardcoded folders-list. Hardcode is only for testing.
+    // const folders = readdirSync(homebrewPath, { withFileTypes: true })
+    //     .filter(entry => entry.isDirectory() && !entry.name.startsWith('_') && !entry.name.startsWith('.'))
+    //     .map(entry => entry.name);
 
     databank.homebrewSources = [];
     const existingSourceIds = new Set(databank.homebrewSources.map((s) => s.id));
@@ -84,11 +89,12 @@ function appendHomebrewData(databank: Databank, homebrewPath: string): Databank 
 
             const keyBlacklist = new Set(['_meta', 'adventure', 'book']);
             for (const key in data) {
-                if (key == '_meta'){
-                    const source = data['_meta']['sources'][0]
-                    if (!source.partnered) break;
+                if (key == '_meta') {
+                    const source = data['_meta']['sources'][0]; // Only ever one source
+                    if (!source.partnered) break; // Filter out homebrew content
 
-                    const hasSourceAuthors = source.authors != null ? source.authors[0] != '' : false;
+                    const hasSourceAuthors =
+                        source.authors != null ? source.authors[0] != '' : false;
                     const authors = hasSourceAuthors ? source.authors : source.convertedBy;
                     const parsedSource: Source = {
                         id: source.abbreviation,
