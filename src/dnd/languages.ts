@@ -56,9 +56,9 @@ function getLanguageImage(language: Language, fluffs: LanguageFluff[]): string |
     return null;
 }
 
-export function getLanguages(data: any): ParsedLanguage[] {
+export function getLanguages(data: any, allData: any): ParsedLanguage[] {
     const languages: Language[] = data.language;
-    const fluffs: LanguageFluff[] = data.languageFluff;
+    const fluffs: LanguageFluff[] = allData.languageFluff;
     return languages.map((language) => {
         return {
             name: language.name,

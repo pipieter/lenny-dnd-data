@@ -256,33 +256,39 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
 
 // MAIN COMMAND
 export function getVehicles(data: any): ParsedVehicle[] {
-    const vehicles = (data.vehicle as Vehicle[]).map((v) => {
-        return {
-            name: v.name,
-            source: v.source,
-            subtitle: getVehicleSubtitle(v),
-            url: getVehiclesUrl(v.name, v.source),
-            tokenUrl: v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null,
-            creatureCapacity: getVehicleCreatureCapacity(v),
-            cargoCapacity: v.capCargo ? `${v.capCargo} tons` : null,
-            travelPace: getVehiclePace(v),
-            description: getVehicleDescription(v),
-        };
-    });
+    let vehicles: ParsedVehicle[] = [];
+    if (data.vehicle) {
+        vehicles = (data.vehicle as Vehicle[]).map((v) => {
+            return {
+                name: v.name,
+                source: v.source,
+                subtitle: getVehicleSubtitle(v),
+                url: getVehiclesUrl(v.name, v.source),
+                tokenUrl: v.hasToken ? getVehicleTokenUrl(v.name, v.source) : null,
+                creatureCapacity: getVehicleCreatureCapacity(v),
+                cargoCapacity: v.capCargo ? `${v.capCargo} tons` : null,
+                travelPace: getVehiclePace(v),
+                description: getVehicleDescription(v),
+            };
+        });
+    }
 
-    const vehicleUpgrades = (data.vehicleUpgrade as VehicleUpgrade[]).map((v) => {
-        return {
-            name: v.name,
-            source: v.source,
-            subtitle: getVehicleUpgradeSubtitle(v),
-            url: getVehiclesUrl(v.name, v.source),
-            tokenUrl: null,
-            creatureCapacity: null,
-            cargoCapacity: null,
-            travelPace: null,
-            description: v.entries ? parseDescriptions('', v.entries) : [],
-        };
-    });
+    let vehicleUpgrades: ParsedVehicle[] = [];
+    if (data.vehicleUpgrade) {
+        vehicleUpgrades = (data.vehicleUpgrade as VehicleUpgrade[]).map((v) => {
+            return {
+                name: v.name,
+                source: v.source,
+                subtitle: getVehicleUpgradeSubtitle(v),
+                url: getVehiclesUrl(v.name, v.source),
+                tokenUrl: null,
+                creatureCapacity: null,
+                cargoCapacity: null,
+                travelPace: null,
+                description: v.entries ? parseDescriptions('', v.entries) : [],
+            };
+        });
+    }
 
     return [...vehicles, ...vehicleUpgrades];
 }

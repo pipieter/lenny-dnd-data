@@ -11,7 +11,7 @@ import {
 import { DamageTypes } from '../5etools-conversion/data';
 import { getItemsUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
-import { getKey } from '../data';
+import { Databank, getKey } from '../data';
 
 interface Item {
     name: string;
@@ -173,13 +173,13 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
     return results;
 }
 
-function parseItem(item: any, data: any): Item {
+function parseItem(item: any, data: Databank, allData: Databank): Item {
     const fluff = getItemFluff(data.itemFluff, item.name, item.source);
 
     // TODO optimize these mappings beforehand
-    const types = mapItemTypes(data);
-    const masteries = mapItemMasteries(data);
-    const properties = mapItemProperties(data);
+    const types = mapItemTypes(allData);
+    const masteries = mapItemMasteries(allData);
+    const properties = mapItemProperties(allData);
 
     const url = getItemsUrl(item.name, item.source);
     const result: Item = {
@@ -342,7 +342,7 @@ function parseItem(item: any, data: any): Item {
     return result;
 }
 
-export function getItems(data: any): any[] {
+export function getItems(data: Databank, extraData: Databank): any[] {
     // Resolve raw item data
     const items = [...data.item, ...data.baseitem];
     const raw: any[] = [];
@@ -350,10 +350,10 @@ export function getItems(data: any): any[] {
         raw.push(resolveItemEntry(handleCopy(item, items), data.itemEntry));
     }
 
-    return raw.map((item) => parseItem(item, data));
+    return raw.map((item) => parseItem(item, data, extraData));
 }
 
-export function getItemVariants(data: any): any[] {
+export function getItemVariants(data: Databank, extraData: Databank): any[] {
     const items = [...data.item, ...data.baseitem];
     const variants = data.magicvariant.flatMap((m: any) => resolveMagicVariant(m, data.baseitem));
     const seenVariants = new Set();
@@ -365,5 +365,5 @@ export function getItemVariants(data: any): any[] {
         seenVariants.add(key);
     }
 
-    return raw.map((variant) => parseItem(variant, data));
+    return raw.map((variant) => parseItem(variant, data, extraData));
 }

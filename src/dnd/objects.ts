@@ -56,6 +56,8 @@ function parseObjectTokenURL(obj: Object): string | null {
 }
 
 export function getObjects(data: any): ParsedObject[] {
+    if (!data.object) return [];
+
     return (data.object as Object[]).map((obj) => {
         return {
             name: obj.name,

@@ -1,6 +1,6 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import { getConditionsStatusesAndDiseases } from './dnd/conditions';
-import { Databank, loadData, loadHomebrewData } from './data';
+import { Databank, loadData, loadHomebrewData, mergeDatabanks } from './data';
 import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
@@ -21,16 +21,21 @@ import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './skills';
 
 function saveJsonFile(dest_folder: string, filename: string, data: any[]) {
-    const path = `./generated/${dest_folder}`
+    const path = `./generated/${dest_folder}`;
     mkdirSync(path, { recursive: true });
     writeFileSync(`${path}/${filename}.json`, JSON.stringify(data, null, 2), 'utf-8');
 }
 
-function generateFiles(data: Databank, dest_folder: string, stopwatch: StopwatchLogger) {
-    const items = getItems(data);
+function generateFiles(
+    data: Databank,
+    allData: Databank,
+    dest_folder: string,
+    stopwatch: StopwatchLogger
+) {
+    const items = getItems(data, allData);
     stopwatch.log('Items retrieved');
 
-    const itemVariants = getItemVariants(data);
+    const itemVariants = getItemVariants(data, allData);
     stopwatch.log('Items variant retrieved');
 
     const spells = getSpells('./5etools-src/data/spells');
@@ -57,7 +62,7 @@ function generateFiles(data: Databank, dest_folder: string, stopwatch: Stopwatch
     const feats = getFeats(data);
     stopwatch.log('Feats retrieved');
 
-    const languages = getLanguages(data);
+    const languages = getLanguages(data, allData);
     stopwatch.log('Languages retrieved');
 
     const names = getNames(data);
@@ -112,15 +117,19 @@ function generateFiles(data: Databank, dest_folder: string, stopwatch: Stopwatch
 function main(): void {
     const stopwatch = new StopwatchLogger();
 
+    stopwatch.logSubtitle('Loading databanks');
     const path = './5etools-src/data';
     const homebrewPath = './5etools-homebrew/data';
+
     const data = loadData(path);
     const homebrewData = loadHomebrewData(homebrewPath);
+    const allData = mergeDatabanks(data, homebrewData);
     stopwatch.log('Loaded databanks');
 
-    generateFiles(data, 'official', stopwatch);
-    console.log();
-    generateFiles(homebrewData, 'partnered', stopwatch);
+    stopwatch.logSubtitle('Parsing official data');
+    generateFiles(data, allData, 'official', stopwatch);
+    stopwatch.logSubtitle('Parsing partnered data');
+    generateFiles(homebrewData, allData, 'partnered', stopwatch);
     stopwatch.stop();
 }
 

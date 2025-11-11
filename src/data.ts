@@ -1,15 +1,9 @@
 import { Dirent, existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
 import { title } from './parser';
-import { Source } from './dnd/sources';
-import { joinStringsWithAnd } from './util';
 
-export type DatabankBase = {
+export interface Databank {
     [key: string]: object[];
-};
-
-export type Databank = DatabankBase & {
-    homebrewSources?: Source[];
-};
+}
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -33,8 +27,21 @@ function ignoreJsonFile(path: string): boolean {
     return false;
 }
 
+export function mergeDatabanks(a: Databank, b: Databank): Databank {
+    const result: Databank = {};
+
+    const keys = new Set([...Object.keys(a), ...Object.keys(b)]);
+    for (const key of keys) {
+        const arrA = a[key] ?? [];
+        const arrB = b[key] ?? [];
+        result[key] = [...arrA, ...arrB];
+    }
+
+    return result;
+}
+
 export function loadHomebrewData(dataPath: string): Databank {
-    let databank: Databank = {}
+    const databank: Databank = {};
 
     const folders = readdirSync(dataPath, { withFileTypes: true })
         .filter((entry) => isHomebrewDataDirectory(entry))
@@ -71,7 +78,7 @@ export function loadHomebrewData(dataPath: string): Databank {
 }
 
 export function loadData(dataPath: string): Databank {
-    let databank: Databank = {}
+    const databank: Databank = {};
 
     const files = readdirSync(dataPath);
 

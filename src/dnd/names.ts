@@ -27,6 +27,9 @@ interface ParsedNames {
 
 export function getNames(data: any): ParsedNames[] {
     const result: ParsedNames[] = [];
+
+    if (!data.name) return [];
+
     for (const namesList of data.name as RaceNames[]) {
         const race: ParsedNames = {
             name: namesList.name,

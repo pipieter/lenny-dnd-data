@@ -64,4 +64,8 @@ export class StopwatchLogger {
         const elapsedStr = elapsedSeconds.toFixed(2).padStart(5, ' ');
         console.log(kleur.gray(`= ${elapsedStr}s | Total time elapsed`));
     }
+
+    logSubtitle(subtitle: string) {
+        console.log(kleur.cyan(`# ${subtitle}`.toUpperCase()));
+    }
 }
