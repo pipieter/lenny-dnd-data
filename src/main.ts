@@ -20,8 +20,8 @@ import { getObjects } from './dnd/objects';
 import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './skills';
 
-function saveJsonFile(dest_folder: string, filename: string, data: any[]) {
-    const path = `./generated/${dest_folder}`;
+function saveJsonFile(destFolder: string, filename: string, data: any[]) {
+    const path = `./generated/${destFolder}`;
     mkdirSync(path, { recursive: true });
     writeFileSync(`${path}/${filename}.json`, JSON.stringify(data, null, 2), 'utf-8');
 }
@@ -29,7 +29,7 @@ function saveJsonFile(dest_folder: string, filename: string, data: any[]) {
 function generateFiles(
     data: Databank,
     allData: Databank,
-    dest_folder: string,
+    destFolder: string,
     stopwatch: StopwatchLogger
 ) {
     const items = getItems(data, allData);
@@ -89,29 +89,29 @@ function generateFiles(
     const skills = getSkills(data);
     stopwatch.log('Skills retrieved.');
 
-    saveJsonFile(dest_folder, 'items', items);
-    saveJsonFile(dest_folder, 'itemvariants', itemVariants);
-    saveJsonFile(dest_folder, 'spells', spells);
-    saveJsonFile(dest_folder, 'conditions', conditions);
-    saveJsonFile(dest_folder, 'diseases', diseases);
-    saveJsonFile(dest_folder, 'creatures', creatures);
-    saveJsonFile(dest_folder, 'classes', classes);
-    saveJsonFile(dest_folder, 'classfeats', classFeats);
-    saveJsonFile(dest_folder, 'rules', rules);
-    saveJsonFile(dest_folder, 'actions', actions);
-    saveJsonFile(dest_folder, 'feats', feats);
-    saveJsonFile(dest_folder, 'languages', languages);
-    saveJsonFile(dest_folder, 'names', names);
-    saveJsonFile(dest_folder, 'backgrounds', backgrounds);
-    saveJsonFile(dest_folder, 'tables', tables);
-    saveJsonFile(dest_folder, 'species', species);
-    saveJsonFile(dest_folder, 'sources', sources);
-    saveJsonFile(dest_folder, 'traps', traps);
-    saveJsonFile(dest_folder, 'hazards', hazards);
-    saveJsonFile(dest_folder, 'objects', objects);
-    saveJsonFile(dest_folder, 'vehicles', vehicles);
-    saveJsonFile(dest_folder, 'skills', skills);
-    stopwatch.log(`Data written to generated/${dest_folder}`);
+    saveJsonFile(destFolder, 'items', items);
+    saveJsonFile(destFolder, 'itemvariants', itemVariants);
+    saveJsonFile(destFolder, 'spells', spells);
+    saveJsonFile(destFolder, 'conditions', conditions);
+    saveJsonFile(destFolder, 'diseases', diseases);
+    saveJsonFile(destFolder, 'creatures', creatures);
+    saveJsonFile(destFolder, 'classes', classes);
+    saveJsonFile(destFolder, 'classfeats', classFeats);
+    saveJsonFile(destFolder, 'rules', rules);
+    saveJsonFile(destFolder, 'actions', actions);
+    saveJsonFile(destFolder, 'feats', feats);
+    saveJsonFile(destFolder, 'languages', languages);
+    saveJsonFile(destFolder, 'names', names);
+    saveJsonFile(destFolder, 'backgrounds', backgrounds);
+    saveJsonFile(destFolder, 'tables', tables);
+    saveJsonFile(destFolder, 'species', species);
+    saveJsonFile(destFolder, 'sources', sources);
+    saveJsonFile(destFolder, 'traps', traps);
+    saveJsonFile(destFolder, 'hazards', hazards);
+    saveJsonFile(destFolder, 'objects', objects);
+    saveJsonFile(destFolder, 'vehicles', vehicles);
+    saveJsonFile(destFolder, 'skills', skills);
+    stopwatch.log(`Data written to generated/${destFolder}`);
 }
 
 function main(): void {
