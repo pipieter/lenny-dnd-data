@@ -1,5 +1,28 @@
 [
   {
+    "name": "Arcane Effluence",
+    "source": "NF",
+    "subtitle": "Hazard",
+    "url": "https://5e.tools/trapshazards.html#arcane%20effluence_nf",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Spoiled potions, broken magic items, or runoff from magical workshops can pollute waterways, creating a sludge called arcane effluence. While many Low Netherese individuals recognize the effluence's peculiar violet sheen, careless High Netherese mages usually don't even know such pollution exists."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "One patch of arcane effluence covers a 5-foot square, and creatures within 30 feet of it can smell its acrid, unnatural scent. A creature that comes into contact with arcane effluence takes 3 (1d6) Acid damage. The creature takes the damage again at the start of each of its turns until the effluence is scraped off (requiring an action) or destroyed."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The __Dispel Magic__ spell or a similar effect destroys arcane effluence."
+      }
+    ]
+  },
+  {
     "name": "Avalanche",
     "source": "IDRotF",
     "subtitle": "Wilderness hazard",
@@ -57,6 +80,24 @@
         "name": "",
         "type": "text",
         "value": "A creature that is not restrained or incapacitated can spend 1 minute freeing a buried creature. Once free, that creature is no longer blinded or restrained by the avalanche."
+      }
+    ]
+  },
+  {
+    "name": "Bile Lichen",
+    "source": "FRAiF",
+    "subtitle": "Hazard",
+    "url": "https://5e.tools/trapshazards.html#bile%20lichen_fraif",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Bile lichen is a toxic, green-yellow substance resembling vomit. It flourishes where extreme heat and cold mingle, such as at the steam-vent openings to Icewind Dale's Underdark. One patch of bile lichen covers a 5-foot square."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If a patch of bile lichen is touched, it releases a cloud of spores that fills a 10-foot Cube and dissipates after 1d4 hours. When a creature enters the cloud for the first time on a turn or starts its turn there, the creature makes a DC 14 Constitution saving throw, taking 11 (2d10) Poison damage and contracting Lichen Plague on a failed save (see \"Magical Contagions\" later in this chapter). On a successful save, the creature takes half as much damage only."
       }
     ]
   },
@@ -564,6 +605,34 @@
     ]
   },
   {
+    "name": "Glittermoss",
+    "source": "NF",
+    "subtitle": "Hazard",
+    "url": "https://5e.tools/trapshazards.html#glittermoss_nf",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Intense fields of unstable magic can produce a sparkling, multicolored moss called glittermoss. A patch of glittermoss covers a 5-foot square. Glittermoss is often found near communal telepathy zones (see earlier in this chapter), though it doesn't grow in direct sunlight."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A creature that comes into contact with glittermoss makes a DC 12 Constitution saving throw. On a failed save, the creature takes 11 (2d10) Radiant damage and has the Blinded condition. While Blinded in this way, the creature is illuminated by glittering spores and sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Glittermoss spores can leap to nearby creatures. While an affected creature is Blinded due to glittermoss, any creature that starts its turn within the Bright Light the affected creature sheds makes a DC 12 Constitution saving throw, taking 11 (2d10) Radiant damage on a failed save or half as much damage on a successful one."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Any amount of Fire or Necrotic damage destroys a patch of glittermoss instantly."
+      }
+    ]
+  },
+  {
     "name": "Green Slime",
     "source": "DMG",
     "subtitle": "Hazard",
@@ -909,6 +978,29 @@
         "name": "",
         "type": "text",
         "value": "An inferno damages any vegetation or object that isn't being worn or carried that it touches, dealing 22 (**4d10**) Fire damage immediately and again at the end of each minute. Any creature that enters the inferno for the first time on a turn or starts its turn there takes 22 (**4d10**) Fire damage and is burning."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Strikes",
+    "source": "FRAiF",
+    "subtitle": "Hazard",
+    "url": "https://5e.tools/trapshazards.html#lightning%20strikes_fraif",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever an area of the Calim Desert is subjected to both strong wind and heavy precipitation (see the Calim Desert Weather table), there is a 25 percent chance a lightning storm forms. Creatures within the area of such a storm are at risk of lightning strikes."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A lightning storm lasts for 1 hour. After each minute spent in the area of a lightning storm, a creature rolls **1d6**; on a 1, lightning streaks down to strike the creature. The creature makes a DC 15 Dexterity saving throw, taking **3d10** Lightning damage on a failed save or half as much damage on a successful one."
+      },
+      {
+        "name": "Detecting Lightning Storms",
+        "type": "text",
+        "value": "A creature that succeeds on a DC 10 Intelligence (*Nature*) or Wisdom (*Survival*) check predicts a lightning storm **1d4** hours before it forms in the vicinity."
       }
     ]
   },
@@ -1299,6 +1391,116 @@
     ]
   },
   {
+    "name": "Shadowbark",
+    "source": "NF",
+    "subtitle": "Hazard",
+    "url": "https://5e.tools/trapshazards.html#shadowbark_nf",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Netheril's flying cities cast huge shadows over the ground below, sometimes cutting off trees from the sunlight for weeks or months. Due to the magic emanating from these flying cities, the trees below sometimes generate shadowbark: a purple-and-black, moss-like coating that looks like a splotchy bruise."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Any creature that enters a space within 5 feet of shadowbark for the first time on a turn or starts its turn there makes a DC 12 Constitution saving throw. On a failed save, the creature takes 5 (1d10) Necrotic damage and can't regain Hit Points until the start of its next turn. On a successful save, the creature takes half as much damage only."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Any amount of Radiant damage destroys shadowbark instantly."
+      },
+      {
+        "name": "At Higher Levels",
+        "type": "text",
+        "value": "Shadowbark can spread quickly in a forest, growing in strength. You can scale the hazard for higher levels by increasing the Necrotic damage and save DC, as shown in the following table."
+      },
+      {
+        "name": "",
+        "type": "table",
+        "value": {
+          "title": "",
+          "headers": [
+            "Levels",
+            "Necrotic Damage",
+            "Save DC"
+          ],
+          "rows": [
+            [
+              "5–10",
+              "11 (2d10)",
+              "14"
+            ],
+            [
+              "11–16",
+              "22 (4d10)",
+              "16"
+            ],
+            [
+              "17–20",
+              "55 (10d10)",
+              "18"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Sinkhole",
+    "source": "FRAiF",
+    "subtitle": "Hazard",
+    "url": "https://5e.tools/trapshazards.html#sinkhole_fraif",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Sinkholes occur when sand fills the top half of a large cavity in rock or other hard earth. When a creature steps onto the sand, the ground collapses down into the bottom half of the cavity, injuring those caught in the sinkhole and leaving them stranded below the surface."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "As a Search action, a creature can detect a sinkhole with a successful DC 15 Wisdom (*Perception*) check. Once a sinkhole is spotted, it can usually be avoided by moving around it."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A creature that walks onto a sinkhole must succeed on a DC 10 Dexterity check or fall 10 feet to the bottom of the sinkhole. A creature without a Climb Speed can climb out of the sinkhole with a successful DC 15 Strength (*Athletics*) check."
+      },
+      {
+        "name": "At Higher Levels",
+        "type": "text",
+        "value": "You can scale the hazard for higher levels by increasing the sinkhole's depth, as shown in the following table."
+      },
+      {
+        "name": "",
+        "type": "table",
+        "value": {
+          "title": "",
+          "headers": [
+            "Levels",
+            "Sinkhole Depth"
+          ],
+          "rows": [
+            [
+              "5–10",
+              "30 feet"
+            ],
+            [
+              "11–16",
+              "60 feet"
+            ],
+            [
+              "17–20",
+              "120 feet"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
     "name": "Slippery Ice",
     "source": "DMG",
     "subtitle": "Wilderness hazard",
@@ -1539,6 +1741,88 @@
     ]
   },
   {
+    "name": "Wildstorm",
+    "source": "NF",
+    "subtitle": "Hazard",
+    "url": "https://5e.tools/trapshazards.html#wildstorm_nf",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Areas of unstable magic can spin into small, translucent tornadoes called wildstorms. A wildstorm fills a 10-foot Cube. It has a Speed of 50 feet. Each round on Initiative count 0 (losing ties), a wildstorm moves toward the nearest creature and stops in its space. A wildstorm dissipates after 1d4 minutes."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A creature that enters a wildstorm for the first time on a turn or starts its turn there is subjected to a random effect on the Wildstorm Effects table."
+      },
+      {
+        "name": "Wildstorm Effects",
+        "type": "table",
+        "value": {
+          "title": "Wildstorm Effects",
+          "headers": [
+            "1d20",
+            "Effect"
+          ],
+          "rows": [
+            [
+              "1–2",
+              "The wildstorm becomes momentarily incendiary around the creature. The creature takes 2 (1d4) Fire damage and is burning."
+            ],
+            [
+              "3–6",
+              "Shards of magical force whirl past the creature. The creature makes a DC 12 Dexterity saving throw, taking 5 (1d10) Force damage on a failed save or half as much damage on a successful one."
+            ],
+            [
+              "7–10",
+              "The wildstorm momentarily manifests toxic vapors around the creature. The creature must succeed on a DC 12 Constitution saving throw or have the Poisoned condition for 1 minute. If the creature already has the Poisoned condition, it instead takes 5 (2d4) Poison damage."
+            ],
+            [
+              "11–13",
+              "The creature hears mental cacophony and makes a DC 12 Wisdom saving throw, taking 5 (1d10) Psychic damage on a failed save or half as much damage on a successful one. Whether the saving throw succeeds or fails, the creature gains telepathy with a range of 10 feet for 1 minute."
+            ],
+            [
+              "14–17",
+              "The storm renders the creature more susceptible to its other erratic effects. The creature has Vulnerability to Fire, Force, Poison, and Psychic damage for 1 minute."
+            ],
+            [
+              "18–19",
+              "The creature's skin hardens. The creature gains a +2 bonus to AC for 1 minute."
+            ],
+            [
+              "20",
+              "The creature has the Invisible condition for 1 minute."
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Witchbriars",
+    "source": "NF",
+    "subtitle": "Hazard",
+    "url": "https://5e.tools/trapshazards.html#witchbriars_nf",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Some Low Netherese witches can enchant a patch of thorns to lash out at passersby. These enchanted thorn patches, called witchbriars, are often meant to ensnare Netherese mages who mistreat their workers, though witchbriars don't discriminate once they're animated. Witchbriars resemble an ordinary patch or hedge of thorny vines."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A patch of witchbriars occupies a 10-foot Cube and has AC 11; HP 30; and Immunity to Bludgeoning, Piercing, and Psychic damage. When a creature casts a spell using a spell slot within 10 feet of witchbriars, thorny vines reach out to entwine the creature. The creature must succeed on a DC 14 Strength saving throw or have the Grappled condition (escape DC 14). Druids automatically succeed on this saving throw. While the target is Grappled in this way, it has the Restrained condition and takes 11 (2d10) Piercing damage at the start of each of its turns. One patch of witchbriars can grapple up to four creatures at a time."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Any amount of Fire damage destroys a patch of witchbriars instantly."
+      }
+    ]
+  },
+  {
     "name": "Yellow Mold",
     "source": "DMG",
     "subtitle": "Hazard",
@@ -1571,6 +1855,24 @@
         "name": "",
         "type": "text",
         "value": "Direct sunlight or any amount of Fire damage destroys a patch of yellow mold."
+      }
+    ]
+  },
+  {
+    "name": "Zlanic Chardalyn",
+    "source": "FRAiF",
+    "subtitle": "Hazard",
+    "url": "https://5e.tools/trapshazards.html#zlanic%20chardalyn_fraif",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When __Zlan__ focuses on a piece of chardalyn, the material becomes charged with negative energy and acts as a conduit for Zlan's will. A creature touching chardalyn charged in this way makes a DC 12 Charisma saving throw. On a failed save, the creature is subject to one of the following effects (DM's choice), each of which ends 1 minute after the creature ceases to touch the stone:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• The creature has the Frightened condition.\n• The creature has the Stunned condition.\n• The creature is Charmed by Zlan and regards anyone who would separate it from the chardalyn as an enemy."
       }
     ]
   }
