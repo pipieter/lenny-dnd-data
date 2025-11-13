@@ -745,7 +745,7 @@ export function parseDescriptionFromTable(description: any): Description {
             cleanDNDText(
                 expandedRows
                     .map((row) => row[colIndex] || '')
-                    .join(' ')
+                    .join('\n')
                     .trim()
             )
         );
