@@ -1868,7 +1868,18 @@
       "type": "table",
       "value": {
         "title": "Wilderness Encounters",
-        "headers": null,
+        "headers": [
+          "Encounter",
+          "Beach\nd100",
+          "Jungle\nNo Undead\nd100",
+          "Jungle\nLesser Undead\nd100",
+          "Jungle\nGreater Undead\nd100",
+          "Mountains\nd100",
+          "Rivers\nd100",
+          "Ruins\nd100",
+          "Swamp\nd100",
+          "Wasteland\nd100"
+        ],
         "rows": [
           [
             "Aarakocra",
@@ -3553,7 +3564,12 @@
       "type": "table",
       "value": {
         "title": "Omu Encounters",
-        "headers": null,
+        "headers": [
+          "Encounter",
+          "Ruins\nd100",
+          "Palace\nd100",
+          "Swamp\nd100"
+        ],
         "rows": [
           [
             "Apes",
@@ -151352,7 +151368,13 @@
       "type": "table",
       "value": {
         "title": "Planar Portals",
-        "headers": null,
+        "headers": [
+          "d100",
+          "Portal Anchor",
+          "Destination\nSigil",
+          "Destination\nOther Plane",
+          "Sample Keys"
+        ],
         "rows": [
           [
             "01–03",
@@ -156873,7 +156895,12 @@
       "type": "table",
       "value": {
         "title": "Travel Pace",
-        "headers": null,
+        "headers": [
+          "Pace",
+          "Distance Traveled Per\nMinute",
+          "Distance Traveled Per\nHour",
+          "Distance Traveled Per\nDay"
+        ],
         "rows": [
           [
             "Fast",
@@ -162584,7 +162611,15 @@
       "type": "table",
       "value": {
         "title": "Mob Results",
-        "headers": null,
+        "headers": [
+          "Roll Needed\nNormal",
+          "Roll Needed\nWith Advantage",
+          "Roll Needed\nWith Disadvantage",
+          "Number of Successes\nOut of 4",
+          "Number of Successes\nOut of 5",
+          "Number of Successes\nOut of 6",
+          "Number of Successes\nOut of 8"
+        ],
         "rows": [
           [
             "1",
@@ -162801,7 +162836,12 @@
       "type": "table",
       "value": {
         "title": "Targets in Area of Effect",
-        "headers": null,
+        "headers": [
+          "Area Shape and Size\nCone",
+          "Area Shape and Size\nCube",
+          "Area Shape and Size\nCircular*",
+          "Area Shape and Size\nLine"
+        ],
         "rows": [
           [
             "10-foot",
@@ -164873,7 +164913,15 @@
       "type": "table",
       "value": {
         "title": "Building a Trap",
-        "headers": null,
+        "headers": [
+          "Levels",
+          "Nuisance Traps\nAttack Bonus",
+          "Nuisance Traps\nSave DC",
+          "Nuisance Traps\nDamage",
+          "Deadly Traps\nAttack Bonus",
+          "Deadly Traps\nSave DC",
+          "Deadly Traps\nDamage"
+        ],
         "rows": [
           [
             "1–4",
@@ -165706,7 +165754,12 @@
       "type": "table",
       "value": {
         "title": "XP Budget per Character",
-        "headers": null,
+        "headers": [
+          "Party's Level",
+          "Encounter Difficulty\nLow",
+          "Encounter Difficulty\nModerate",
+          "Encounter Difficulty\nHigh"
+        ],
         "rows": [
           [
             "1",
@@ -169966,7 +170019,12 @@
       "type": "table",
       "value": {
         "title": "Magic Item Rarities",
-        "headers": null,
+        "headers": [
+          "1d100 Roll\nLevels 1–4",
+          "1d100 Roll\nLevels 5–10",
+          "1d100 Roll\nLevels 11–16",
+          "1d100 Roll\nLevels 17–20"
+        ],
         "rows": [
           [
             "01–54",
@@ -177274,7 +177332,13 @@
       "type": "table",
       "value": {
         "title": "Travel Pace",
-        "headers": null,
+        "headers": [
+          "Pace",
+          "Distance Traveled Per\nMinute",
+          "Distance Traveled Per\nHour",
+          "Distance Traveled Per\nDay",
+          "Effect"
+        ],
         "rows": [
           [
             "Fast",

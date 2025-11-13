@@ -11,6 +11,7 @@ import {
     getTrapsUrl,
 } from './urls';
 import { AbilityScores, SpellSchools } from './5etools-conversion/data';
+import { ColLabelRows } from './dnd/tables';
 
 export enum DescriptionType {
     text = 'text',
@@ -723,9 +724,33 @@ function parseTableRow(values: any[] | any): string[] {
 
 export function parseDescriptionFromTable(description: any): Description {
     const title: string = description.caption || '';
-    const headers: string[] | null = description.colLabels
-        ? description.colLabels.map(cleanDNDText)
-        : null;
+
+    let headers: string[] | null = null;
+    if (description.colLabels) {
+        headers = description.colLabels.map(cleanDNDText);
+    } else if (description.colLabelRows) {
+        const colLabelRows: ColLabelRows = description.colLabelRows;
+        const expandedRows: string[][] = colLabelRows.map((row) =>
+            row.flatMap((cell) => {
+                if (typeof cell === 'string') return [cell];
+                if (cell && typeof cell === 'object' && 'entry' in cell) {
+                    const value = cell.entry.replace('...', '');
+                    return Array(cell.width).fill(value);
+                }
+                return [''];
+            })
+        );
+
+        headers = expandedRows[0].map((_, colIndex) =>
+            cleanDNDText(
+                expandedRows
+                    .map((row) => row[colIndex] || '')
+                    .join('\n')
+                    .trim()
+            )
+        );
+    }
+
     const rows: string[][] = description.rows.map(parseTableRow);
     const table: Table = { title, headers, rows };
 

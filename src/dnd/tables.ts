@@ -20,11 +20,19 @@ interface TableGendata {
     tableGroup: TableGroup[];
 }
 
+interface ColLabelRowCell {
+    entry: string;
+    width: number;
+}
+
+export type ColLabelRows = (string | ColLabelRowCell)[][];
+
 interface TableData {
     name: string;
     source: string;
     caption: string;
-    colLabels: string[];
+    colLabels?: string[];
+    colLabelRows?: ColLabelRows;
     rows: any[];
     footnotes?: string[];
     chapter?: any;
@@ -58,11 +66,13 @@ function getTableRollExpression(table: TableData): string | null {
 
 function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): string {
     if (table.caption) return table.caption;
+    if (!table.colLabels) return '';
 
     // Some tablegroup tables do not have captions, in this case we grab the unique labels as a caption.
     const groupLabels = [];
     for (const groupTable of tableGroup.tables) {
         if (groupTable == table) continue;
+        if (!groupTable.colLabels) continue;
         for (const label of groupTable.colLabels) {
             if (!/^d\d+$/.test(label)) groupLabels.push(label);
         }
