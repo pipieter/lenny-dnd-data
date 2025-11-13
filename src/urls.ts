@@ -17,16 +17,11 @@ export function getAudioUrl(path: string): string {
     return cleanUrl(`https://5e.tools/audio/${path}`);
 }
 
-/**
- * The generated URL is case-sensitive. Do not change the casing of `name`; use the original creature-name casing.
- */
 export function getCreatureTokenUrl(name: string, source: string) {
-    source = source.toUpperCase(); // Can be enforced, is always uppercase
     const url = `https://5e.tools/img/bestiary/tokens/${source}/${name}.webp`;
     return cleanUrl(url);
 }
 
-// Unlike creature tokens, the source may not be enforced to be uppercase on other token-urls.
 export function getObjectTokenUrl(name: string, source: string) {
     const url = `https://5e.tools/img/objects/tokens/${source}/${name}.webp`;
     return cleanUrl(url);
