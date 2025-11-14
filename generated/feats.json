@@ -400,6 +400,91 @@
     ]
   },
   {
+    "name": "Bloodlust",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#bloodlust_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase your Strength, Dexterity or Constitution score by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Powerful Recovery",
+        "type": "text",
+        "value": "When you roll a Hit Point Die to regain Hit Points, you can treat any roll of 1 or 2 as a 3."
+      },
+      {
+        "name": "Sanguine Feast",
+        "type": "text",
+        "value": "Once per turn when you hit a Bloodied creature that isn't a Construct or Undead with an attack roll, you can expend a Hit Point Die, roll it, and regain a number of Hit Points equal to the number rolled plus your Constitution modifier."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Bomber",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#bomber_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Far Lobber",
+        "type": "text",
+        "value": "When you use the Attack action to throw a vial or flask, you can target an object or creature you can see within 40 feet of yourself."
+      },
+      {
+        "name": "Long Shots",
+        "type": "text",
+        "value": "Attacking at long range doesn't impose Disadvantage on your attack rolls with Thrown weapons."
+      }
+    ]
+  },
+  {
+    "name": "Boon of Blazing Dawn",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#boon%20of%20blazing%20dawn_abh",
+    "type": "Epic Boon Feat",
+    "prerequisite": "Level 19+",
+    "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Beloved of the Sun",
+        "type": "text",
+        "value": "You have Immunity to Radiant damage."
+      },
+      {
+        "name": "Blazing Strike",
+        "type": "text",
+        "value": "When you hit a creature with a weapon attack, the damage can be Radiant or the weapon's normal damage type (your choice)."
+      },
+      {
+        "name": "Burst of Sunlight",
+        "type": "text",
+        "value": "Once per turn when you hit a creature with an attack that deals Radiant damage, you can emit Bright Light in a 30-foot radius from yourself and Dim Light for an additional 30 feet until the start of your next turn. This light is sunlight."
+      }
+    ]
+  },
+  {
     "name": "Boon of Bloodshed",
     "source": "FRHoF",
     "url": "https://5e.tools/feats.html#boon%20of%20bloodshed_frhof",
@@ -706,6 +791,56 @@
         "name": "Overwhelming Strike",
         "type": "text",
         "value": "When you roll a 20 on the d20 for an attack roll, you can deal extra damage to the target equal to the ability score increased by this feat. The extra damage's type is the same as the attack's type."
+      }
+    ]
+  },
+  {
+    "name": "Boon of Looming Shadows",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#boon%20of%20looming%20shadows_abh",
+    "type": "Epic Boon Feat",
+    "prerequisite": "Level 19+",
+    "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Shadowy Stretch",
+        "type": "text",
+        "value": "When you take the Attack action, your reach for your Melee weapon attacks increases by 10 feet until the end of your turn."
+      },
+      {
+        "name": "Dancing Silhouette",
+        "type": "text",
+        "value": "You can take the Dodge action as a Bonus Action."
+      }
+    ]
+  },
+  {
+    "name": "Boon of Misty Escape",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#boon%20of%20misty%20escape_abh",
+    "type": "Epic Boon Feat",
+    "prerequisite": "Level 19+",
+    "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Gaseous Form",
+        "type": "text",
+        "value": "If you drop to 0 Hit Points but aren't killed outright, you can instead drop to 1 Hit Point and cast __Gaseous Form__ without expending a spell slot (no action required). When you cast this spell this way, you can target only yourself, your Fly Speed is 20 feet, and you regain 10 Hit Points at the start of each of your turns for the spell's duration. The spell's spellcasting ability is the ability increased by this feat."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Once you use this benefit, you can't do so again until you finish a Long Rest."
       }
     ]
   },
@@ -1150,6 +1285,31 @@
     ]
   },
   {
+    "name": "Cloying Mists",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#cloying%20mists_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Arise, Fog",
+        "type": "text",
+        "value": "You always have the __Fog Cloud__ spell prepared. You can cast it without a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat."
+      },
+      {
+        "name": "Grasping Mist",
+        "type": "text",
+        "value": "Whenever you cast __Fog Cloud__, nonmagical flames in the spell's Sphere are extinguished, and creatures other than you and your allies have their Speed reduced by 5 feet while in the spell's Sphere."
+      }
+    ]
+  },
+  {
     "name": "Cohort of Chaos",
     "source": "SatO",
     "url": "https://5e.tools/feats.html#cohort%20of%20chaos_sato",
@@ -1500,6 +1660,26 @@
         "name": "Parry",
         "type": "text",
         "value": "If you're holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn."
+      }
+    ]
+  },
+  {
+    "name": "Delicious Pain",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#delicious%20pain_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Toughened Flesh",
+        "type": "text",
+        "value": "Immediately after you take Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to gain Resistance to Bludgeoning, Piercing, and Slashing damage until the start of your next turn. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
       }
     ]
   },
@@ -2849,6 +3029,36 @@
     ]
   },
   {
+    "name": "Light Bringer",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#light%20bringer_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Sacred Magic",
+        "type": "text",
+        "value": "You learn the __Light__ spell and can cast it without Material components. If you already know that cantrip, you learn a different Cleric cantrip of your choice. The spell's spellcasting ability is the ability increased by this feat."
+      },
+      {
+        "name": "Solar Luminance",
+        "type": "text",
+        "value": "When you cast __Light__, you can have the light from the spell be sunlight. Once you use this benefit, you can't use it again until you finish a Long Rest."
+      },
+      {
+        "name": "Sun's Healing",
+        "type": "text",
+        "value": "As a Bonus Action while within sunlight, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
+      }
+    ]
+  },
+  {
     "name": "Lightly Armored",
     "source": "PHB",
     "url": "https://5e.tools/feats.html#lightly%20armored_phb",
@@ -2955,6 +3165,26 @@
         "name": "Reassert Honor",
         "type": "text",
         "value": "When an enemy you can see deals damage to an ally of yours that is within 5 feet of you, you have Advantage on your next attack roll against that enemy before the end of your next turn."
+      }
+    ]
+  },
+  {
+    "name": "Love Bites",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#love%20bites_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Endearing Pain",
+        "type": "text",
+        "value": "Immediately after you damage a creature with a Melee weapon or an Unarmed Strike, you can take a Bonus Action to give the target the Charmed condition until the start of your next turn or until you or your allies damage it. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
       }
     ]
   },
@@ -3790,6 +4020,26 @@
     ]
   },
   {
+    "name": "Putrefy",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#putrefy_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Necrosis",
+        "type": "text",
+        "value": "When you make a damage roll that deals Necrotic damage, you can cause one creature taking that damage to have the Poisoned condition until the start of your next turn. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
+      }
+    ]
+  },
+  {
     "name": "Quicksmithing",
     "source": "PSK",
     "url": "https://5e.tools/feats.html#quicksmithing_psk",
@@ -3836,6 +4086,26 @@
         "name": "Music Box",
         "type": "text",
         "value": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
+      }
+    ]
+  },
+  {
+    "name": "Rebuke",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#rebuke_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Radiant Strike",
+        "type": "text",
+        "value": "When you make a damage roll that deals Radiant damage, you can cause one Huge or smaller creature taking the damage to have the Prone condition. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
       }
     ]
   },
@@ -5153,6 +5423,21 @@
     ]
   },
   {
+    "name": "Tireless Reveler",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#tireless%20reveler_abh",
+    "type": "Origin Feat",
+    "prerequisite": null,
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When an ally you can see within 60 feet of yourself expends Heroic Inspiration, you can gain Heroic Inspiration if you lack it. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest."
+      }
+    ]
+  },
+  {
     "name": "Tough",
     "source": "PHB",
     "url": "https://5e.tools/feats.html#tough_phb",
@@ -5179,6 +5464,31 @@
         "name": "",
         "type": "text",
         "value": "Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points."
+      }
+    ]
+  },
+  {
+    "name": "Treacherous Allure",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#treacherous%20allure_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Enchanting Presence",
+        "type": "text",
+        "value": "You always have the __Charm Person__ spell prepared. You can cast it without a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat."
+      },
+      {
+        "name": "Inevitable Betrayal",
+        "type": "text",
+        "value": "You have Advantage on attack rolls against creatures with the Charmed condition."
       }
     ]
   },
@@ -5239,6 +5549,81 @@
         "name": "",
         "type": "text",
         "value": "At the start of each of your turns, you can deal **1d4** Bludgeoning damage to one creature Grappled by you."
+      }
+    ]
+  },
+  {
+    "name": "Vampire Hunter",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#vampire%20hunter_abh",
+    "type": "Origin Feat",
+    "prerequisite": null,
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Adroit Escape",
+        "type": "text",
+        "value": "You have Advantage on checks to escape from nonmagical restraints or the Grappled condition."
+      },
+      {
+        "name": "Vitality Ward",
+        "type": "text",
+        "value": "When you take Necrotic damage, you can take a Reaction to mitigate the damage. Roll a number of d6s equal to your Proficiency Bonus, and add them together. Reduce the Necrotic damage you take by this total. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Vampire Touched",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#vampire%20touched_abh",
+    "type": "General Feat",
+    "prerequisite": "Level 4+",
+    "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Vampire Magic",
+        "type": "text",
+        "value": "Choose one level 1 spell from the Enchantment or Illusion school of magic. You always have that spell and the __Spider Climb__ spell prepared. You can cast each of these spells without expending a spell slot, but when you cast __Spider Climb__ this way, you must target yourself, and you must finish a Long Rest before you can cast each spell in this way again. You can also cast either spell using spell slots you have of the appropriate level. Your spellcasting ability for the spells is the ability increased by this feat."
+      }
+    ]
+  },
+  {
+    "name": "Vampire's Plaything",
+    "source": "ABH",
+    "url": "https://5e.tools/feats.html#vampire's%20plaything_abh",
+    "type": "Origin Feat",
+    "prerequisite": null,
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Decanting",
+        "type": "text",
+        "value": "When you finish a Long Rest, you can create one Potion of Healing or an Antitoxin, as long as you have an empty vial or flask. These liquids evaporate when you finish another Long Rest."
+      },
+      {
+        "name": "Timely Retreat",
+        "type": "text",
+        "value": "You can take a Bonus Action to take the Dash action or the Disengage action. You can use this benefit a number of times equal to your Proficiency Bonus, and you recover all expended uses when you finish a Long Rest."
+      },
+      {
+        "name": "Vampiric Connection",
+        "type": "text",
+        "value": "The DM determines the fate of your former vampire master. While you and your former vampire master are on the same plane of existence, the vampire can communicate with you telepathically, and you can choose to allow the vampire to perceive through your senses."
       }
     ]
   },
