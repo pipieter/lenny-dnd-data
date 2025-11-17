@@ -22,7 +22,7 @@ jobs:
             --no-progress
             --include-fragments
             --max-redirects 10
-            './data/**/*.json'
+            './generated/*.json'
 
       - name: Fail if dead links found
         if: steps.lychee.outcome == 'failure'
