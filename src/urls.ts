@@ -1,4 +1,20 @@
 export const cleanUrl = encodeURI;
+function removeAccents(str: string): string {
+    str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const replacements: Record<string, string> = {
+        æ: 'ae',
+        Æ: 'Ae',
+        œ: 'oe',
+        Œ: 'Oe',
+        ß: 'ss',
+        ø: 'o',
+        Ø: 'O',
+        ñ: 'n',
+        Ñ: 'N',
+    };
+
+    return str.replace(/[^A-Za-z0-9._-]/g, (c) => replacements[c] || c);
+}
 
 /*
  * ##### BASIC URLS #####
@@ -18,6 +34,7 @@ export function getAudioUrl(path: string): string {
 }
 
 export function getCreatureTokenUrl(name: string, source: string) {
+    name = removeAccents(name);
     const url = `https://5e.tools/img/bestiary/tokens/${source}/${name}.webp`;
     return cleanUrl(url);
 }
