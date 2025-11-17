@@ -1,6 +1,7 @@
 export const cleanUrl = encodeURI;
 function removeAccents(str: string): string {
     str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    str = str.replaceAll('"', '');
     const replacements: Record<string, string> = {
         æ: 'ae',
         Æ: 'Ae',
