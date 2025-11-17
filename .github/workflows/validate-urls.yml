@@ -24,13 +24,14 @@ jobs:
         uses: lycheeverse/lychee-action@v1
         with:
           fail: true
+          format: markdown
+          output: lychee/out.md
           args: >
             --verbose
             --no-progress
             --include-fragments
             --max-redirects 10
             --format markdown
-            --output lychee/out.md
             './generated/*.json'
 
       - name: Create issue on failure
