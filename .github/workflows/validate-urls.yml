@@ -27,11 +27,9 @@ jobs:
           format: markdown
           output: lychee/out.md
           args: >
-            --quiet
             --no-progress
             --include-fragments
             --max-redirects 10
-            --format markdown
             './generated/*.json'
 
       - name: Create issue on failure
