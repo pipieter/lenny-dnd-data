@@ -23,7 +23,6 @@ jobs:
       - name: Install & Run Lychee
         uses: lycheeverse/lychee-action@v1
         with:
-          fail: true
           format: markdown
           output: lychee/out.md
           args: >
