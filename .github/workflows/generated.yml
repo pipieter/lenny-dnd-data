@@ -1,4 +1,4 @@
-name: DATA
+name: GENERATED
 
 on:
   pull_request:
@@ -8,15 +8,22 @@ on:
       - ".github/**"
 
 jobs:
-  lychee-check:
+  link-check:
     runs-on: ubuntu-latest
-    name: validate URLs
     steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: recursive
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Check links inside JSON files
+      - name: Install lychee (link checker)
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --include-json "generated/**" --no-progress --max-concurrency 64
+          args: >
+            --verbose
+            --no-progress
+            --include-fragments
+            --max-redirects 10
+            './data/**/*.json'
+
+      - name: Fail if dead links found
+        if: steps.lychee.outcome == 'failure'
+        run: exit 1
