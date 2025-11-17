@@ -60,10 +60,9 @@ jobs:
               }
             );
 
-            const existing = issues.data.find(i => i.title === issueTitle);
+            const existing = issues.find(i => i.title === issueTitle);
 
             if (existing) {
-              // Add comment instead of opening a new issue
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -71,7 +70,6 @@ jobs:
                 body
               });
             } else {
-              // Create a new issue
               await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
