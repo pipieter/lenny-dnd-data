@@ -5,6 +5,7 @@ on:
     paths:
       - "generated/**"
       - "generated"
+      - ".github/**"
 
 jobs:
   lychee-check:
