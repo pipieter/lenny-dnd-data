@@ -5,7 +5,7 @@ on:
     paths:
       - "generated/**"
       - "generated"
-      - ".github/**"
+      - ".github/workflows/generated.yml"
 
 jobs:
   link-check:
