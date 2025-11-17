@@ -26,7 +26,7 @@ jobs:
           format: markdown
           output: lychee/out.md
           args: >
-            --verbose
+            --quiet
             --no-progress
             --include-fragments
             --max-redirects 10
