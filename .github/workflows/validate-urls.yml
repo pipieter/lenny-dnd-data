@@ -1,4 +1,4 @@
-name: GENERATED
+name: VALIDATE-URLS
 permissions:
   contents: read
 
@@ -10,13 +10,14 @@ on:
       - ".github/workflows/generated.yml"
 
 jobs:
-  link-check:
+  lychee-url-check:
     runs-on: ubuntu-latest
+    name: lychee
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install lychee (link checker)
+      - name: Install & Run Lychee
         uses: lycheeverse/lychee-action@v1
         with:
           args: >
