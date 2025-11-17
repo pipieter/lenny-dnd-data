@@ -322,6 +322,8 @@ export function handleCopy(base: any, entries: any[]): any {
     const preserve = copy._copy._preserve || {};
 
     copy = Object.assign({}, parent, copy);
+    copy.hasToken = base.hasToken ?? false; // Do not inherit hasToken
+
     addMod(copy, mod);
     addPreserve(copy, preserve);
 
