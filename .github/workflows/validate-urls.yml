@@ -5,9 +5,9 @@ permissions:
 on:
   pull_request:
     paths:
-      - "generated/**"
-      - "generated"
       - ".github/workflows/validate-urls.yml"
+  schedule:
+    - cron: "0 0 * * 0" # Runs every Sunday at 00:00 UTC
 
 jobs:
   lychee-url-check:
