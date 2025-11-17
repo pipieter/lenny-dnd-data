@@ -1,0 +1,21 @@
+name: DATA
+
+on:
+  pull_request:
+    paths:
+      - "generated/**"
+      - "generated"
+
+jobs:
+  lychee-check:
+    runs-on: ubuntu-latest
+    name: validate URLs
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Check links inside JSON files
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --include-json "generated/**" --no-progress --max-concurrency 64
