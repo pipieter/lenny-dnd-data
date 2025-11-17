@@ -7,7 +7,7 @@ on:
     paths:
       - "generated/**"
       - "generated"
-      - ".github/workflows/generated.yml"
+      - ".github/workflows/validate-urls.yml"
 
 jobs:
   lychee-url-check:
