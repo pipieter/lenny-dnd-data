@@ -180784,37 +180784,6 @@
     "footnotes": null
   },
   {
-    "name": "Seeing through a Mirage",
-    "source": "FRAiF",
-    "url": "https://5e.tools/tables.html#seeing%20through%20a%20mirage_fraif",
-    "roll": null,
-    "table": {
-      "name": "",
-      "type": "table",
-      "value": {
-        "title": "",
-        "headers": [
-          "Mirage Type",
-          "Inspection DC",
-          "Example"
-        ],
-        "rows": [
-          [
-            "Nonmagical",
-            "10",
-            "Distant shimmering water, far-off dragons, floating lights"
-          ],
-          [
-            "Magical",
-            "15",
-            "Lively oases, pristine ancient temples"
-          ]
-        ]
-      }
-    },
-    "footnotes": null
-  },
-  {
     "name": "Genie Factions; Genie Renown",
     "source": "FRAiF",
     "url": "https://5e.tools/tables.html#genie%20factions;%20genie%20renown_fraif",
@@ -184118,6 +184087,119 @@
             "Troll",
             "A scout for a larger band of trolls, this creature wants to clear the caldera of all threats before its companions move in.",
             "High"
+          ]
+        ]
+      }
+    },
+    "footnotes": null
+  },
+  {
+    "name": "Treefolk Stat Blocks",
+    "source": "LFL",
+    "url": "https://5e.tools/tables.html#treefolk%20stat%20blocks_lfl",
+    "roll": "1d4",
+    "table": {
+      "name": "",
+      "type": "table",
+      "value": {
+        "title": "",
+        "headers": [
+          "1d4",
+          "The Treefolk Is..."
+        ],
+        "rows": [
+          [
+            {
+              "type": "range",
+              "min": 1,
+              "max": 1
+            },
+            "An ash tree dedicated to defending the forest's people in Lorwyn or the forest's trees in Shadowmoor."
+          ],
+          [
+            {
+              "type": "range",
+              "min": 2,
+              "max": 2
+            },
+            "A black poplar tree that loves to contemplate philosophy."
+          ],
+          [
+            {
+              "type": "range",
+              "min": 3,
+              "max": 3
+            },
+            "A rowan tree that seeks to destroy all technology."
+          ],
+          [
+            {
+              "type": "range",
+              "min": 4,
+              "max": 4
+            },
+            "A yew tree of a variety so rare that they're rumored to be extinct."
+          ]
+        ]
+      }
+    },
+    "footnotes": null
+  },
+  {
+    "name": "Creature Descriptions",
+    "source": "LFL",
+    "url": "https://5e.tools/tables.html#creature%20descriptions_lfl",
+    "roll": null,
+    "table": {
+      "name": "",
+      "type": "table",
+      "value": {
+        "title": "",
+        "headers": [
+          "CR",
+          "Creature",
+          "Creature Type"
+        ],
+        "rows": [
+          [
+            "1/4",
+            "Noggle Ransacker",
+            "Fey"
+          ],
+          [
+            "1",
+            "Noggle Wild Mage",
+            "Fey"
+          ],
+          [
+            "4",
+            "Merrow Doublespeaker",
+            "Monstrosity"
+          ],
+          [
+            "5",
+            "Merrow Haranguer",
+            "Monstrosity"
+          ],
+          [
+            "6",
+            "Lorwyn Giant",
+            "Giant"
+          ],
+          [
+            "7",
+            "Incarnation of Transience",
+            "Fey"
+          ],
+          [
+            "8",
+            "Shadowmoor Giant",
+            "Giant"
+          ],
+          [
+            "10",
+            "Incarnation of Vibrance",
+            "Fey"
           ]
         ]
       }

@@ -420,7 +420,7 @@
       {
         "name": "Sanguine Feast",
         "type": "text",
-        "value": "Once per turn when you hit a Bloodied creature that isn't a Construct or Undead with an attack roll, you can expend a Hit Point Die, roll it, and regain a number of Hit Points equal to the number rolled plus your Constitution modifier."
+        "value": "Once per turn when you hit a *Bloodied* creature that isn't a Construct or Undead with an attack roll, you can expend a Hit Point Die, roll it, and regain a number of Hit Points equal to the number rolled plus your Constitution modifier."
       },
       {
         "name": "",
@@ -1281,6 +1281,36 @@
         "name": "Bolstering Treats",
         "type": "text",
         "value": "With 1 hour of work or when you finish a Long Rest, you can cook a number of treats equal to your Proficiency Bonus if you have ingredients and Cook's Utensils on hand. These special treats last 8 hours after being made. A creature can use a Bonus Action to eat one of those treats to gain a number of Temporary Hit Points equal to your Proficiency Bonus."
+      }
+    ]
+  },
+  {
+    "name": "Child of the Sun",
+    "source": "LFL",
+    "url": "https://5e.tools/feats.html#child%20of%20the%20sun_lfl",
+    "type": "Origin Feat",
+    "prerequisite": null,
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Eyes of Eirdu",
+        "type": "text",
+        "value": "You and allies within 10 feet of you have Advantage on saving throws made to avoid or end the Blinded condition."
+      },
+      {
+        "name": "Faerie Fire",
+        "type": "text",
+        "value": "You learn the __Faerie Fire__ spell. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you cast __Faerie Fire__ without a spell slot using this benefit, taking damage can't break your *Concentration* on the spell."
       }
     ]
   },
@@ -4555,6 +4585,31 @@
         "name": "Shadow Magic",
         "type": "text",
         "value": "Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the __Invisibility__ spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+      }
+    ]
+  },
+  {
+    "name": "Shadowmoor Hexer",
+    "source": "LFL",
+    "url": "https://5e.tools/feats.html#shadowmoor%20hexer_lfl",
+    "type": "Origin Feat",
+    "prerequisite": null,
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Hex",
+        "type": "text",
+        "value": "You always have the __Hex__ spell prepared. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat). You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have."
+      },
+      {
+        "name": "Curse Magic",
+        "type": "text",
+        "value": "When a creature that you've cursed with __Hex__ hits you with an attack roll, the creature takes Psychic damage equal to your Proficiency Bonus. A creature takes this damage only once per turn."
       }
     ]
   },
