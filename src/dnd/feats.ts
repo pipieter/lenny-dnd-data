@@ -225,9 +225,7 @@ function getFeatPrerequisites(feat: Feat): string | null {
                 }
                 case 'featCategory': {
                     const featCategories = entry.map((e: string) => FeatCategoryMap[e]);
-                    group.push(
-                        `Any ${joinStringsWithOr(featCategories, true)} Feat`
-                    );
+                    group.push(`Any ${joinStringsWithOr(featCategories, true)} Feat`);
                     break;
                 }
                 case 'exclusiveFeatCategory': {
