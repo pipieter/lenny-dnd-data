@@ -68,23 +68,41 @@ function readDirectoryFiles(directory: string) {
  * - A pure directory path. In this case, all files in the directory are considered and aggregated,
  *   such as is the case for partnered content.
  *
- * @param filepath The file or directory path
+ * In case undefined is given, an empty object is returned
+ *
+ * @param filepaths The file or directory path. Multiple can be given, in which case each is handled
+ *                  separately, and are then aggregated.
  * @returns An object that aggregates all data from the files
  */
-export function read(filepath: string): any {
-    // Check if file is an index file
-    if (filepath.endsWith('index.json')) {
-        return readIndexFile(filepath);
+export function read(filepaths: string | string[] | undefined): any {
+    if (!filepaths) {
+        return {};
     }
 
-    if (filepath.endsWith('.json')) {
-        return readJsonFile(filepath);
+    const data: any[] = [];
+
+    if (!Array.isArray(filepaths)) {
+        filepaths = [filepaths];
     }
 
-    const stats = fs.lstatSync(filepath);
-    if (stats.isDirectory()) {
-        return readDirectoryFiles(filepath);
+    for (const filepath of filepaths) {
+        const stats = fs.lstatSync(filepath);
+        // Check if file is an index file
+        if (filepath.endsWith('index.json')) {
+            data.push(readIndexFile(filepath));
+        } else if (filepath.endsWith('.json')) {
+            data.push(readJsonFile(filepath));
+        } else if (stats.isDirectory()) {
+            data.push(readDirectoryFiles(filepath));
+        } else {
+            throw new Error(`Unsupported filepath type: ${filepath}`);
+        }
     }
 
-    throw new Error(`Unsupported filepath type: ${filepath}`);
+    if (data.length === 1) {
+        // Specific case to handle single objects that do not handle combineContents well
+        return data[0];
+    }
+
+    return data.reduce(combineContents, {});
 }

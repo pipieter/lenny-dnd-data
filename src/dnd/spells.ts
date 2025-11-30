@@ -95,15 +95,15 @@ function getSpell(spell: any, fluffs: any[], sources: any): Spell {
 }
 
 interface GetSpellsArgs {
-    path: string;
-    fluffPath?: string;
-    sourcesPath?: string;
+    paths: string[];
+    fluffPaths?: string[];
+    sourcesPaths?: string[];
 }
 
 export function getSpells(paths: GetSpellsArgs): Spell[] {
-    const spells = read(paths.path).spell;
-    const fluffs = paths.fluffPath ? read(paths.fluffPath).spellFluff : [];
-    const sources = paths.sourcesPath ? read(paths.sourcesPath) : {};
+    const spells = read(paths.paths).spell;
+    const fluffs = read(paths.fluffPaths).spellFluff || [];
+    const sources = read(paths.sourcesPaths);
 
     const result = [];
     for (const spell of spells) {

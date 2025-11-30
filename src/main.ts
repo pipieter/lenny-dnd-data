@@ -34,9 +34,9 @@ function main(): void {
     stopwatch.log('Items variant retrieved');
 
     const spells = getSpells({
-        path: './5etools-src/data/spells/index.json',
-        fluffPath: './5etools-src/data/spells/fluff-index.json',
-        sourcesPath: './5etools-src/data/spells/sources.json',
+        paths: ['./5etools-src/data/spells/index.json'],
+        fluffPaths: ['./5etools-src/data/spells/fluff-index.json'],
+        sourcesPaths: ['./5etools-src/data/spells/sources.json'],
     });
     stopwatch.log('Spells retrieved');
 
