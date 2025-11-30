@@ -1,5 +1,676 @@
 [
   {
+    "name": "Spellcasting (Lv. 1 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 1 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You have learned how to channel magical energy through objects. See the Player's Handbook for the rules on spellcasting. The information below details how you use those rules with Artificer spells, which appear in the Artificer spell list later in the class's description."
+      },
+      {
+        "name": "Tools Required",
+        "type": "text",
+        "value": "You produce your Artificer spells through tools. You can use Thieves' Tools, Tinker's Tools, or another kind of Artisan's Tools with which you have proficiency as a Spellcasting Focus, and you must have one of those focuses in hand when you cast an Artificer spell (meaning the spell has an *M* component when you cast it)."
+      },
+      {
+        "name": "Cantrips",
+        "type": "text",
+        "value": "You know two Artificer cantrips of your choice. __Acid Splash__ and __Prestidigitation__ are recommended."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever you finish a Long Rest, you can replace one of your cantrips from this feature with another Artificer cantrip of your choice."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you reach Artificer levels 10 and 14, you learn another Artificer cantrip of your choice, as shown in the Cantrips column of the Artificer Features table."
+      },
+      {
+        "name": "Spell Slots",
+        "type": "text",
+        "value": "The Artificer Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest."
+      },
+      {
+        "name": "Prepared Spells of Level 1+",
+        "type": "text",
+        "value": "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Artificer spells. __Cure Wounds__ and __Grease__ are recommended."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The number of spells on your list increases as you gain Artificer levels, as shown in the Prepared Spells column of the Artificer Features table. Whenever that number increases, choose additional Artificer spells until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Artificer, your list of prepared spells can include six Artificer spells of levels 1 and 2 in any combination."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If another Artificer feature gives you spells that you always have prepared, those don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Artificer spells for you."
+      },
+      {
+        "name": "Changing Your Prepared Spells",
+        "type": "text",
+        "value": "Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Artificer spells for which you have spell slots."
+      },
+      {
+        "name": "Spellcasting Ability",
+        "type": "text",
+        "value": "Intelligence is your spellcasting ability for your Artificer spells."
+      }
+    ]
+  },
+  {
+    "name": "Tinker's Magic (Lv. 1 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 1 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You know the __Mending__ cantrip."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "As a Magic action while holding Tinker's Tools, you can create one item in an unoccupied space within 5 feet of yourself, choosing the item from the following list:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• Ball Bearings\n• Basket\n• Bedroll\n• Bell\n• Blanket\n• Block and Tackle\n• Bottle, Glass\n• Bucket\n• Caltrops\n• Candle\n• Crowbar\n• Flask\n• Grappling Hook\n• Hunting Trap\n• Jug\n• Lamp\n• Manacles\n• Net\n• Oil\n• Paper\n• Parchment\n• Pole\n• Pouch\n• Rope\n• Sack\n• Shovel\n• Spikes, Iron\n• String\n• Tinderbox\n• Torch\n• Vial"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "See the rules for the item in the Player's Handbook. The item lasts until you finish a Long Rest, at which point it vanishes."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Replicate Magic Item (Lv. 2 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 2 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You have learned arcane plans that you use to make magic items."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "*The Replicate Magic Item feature isn't the only way for an Artificer to make magic items. The Dungeon Master's Guide provides rules for characters—not just Artificers—who want to make magic items of all sorts. Though many different characters can make magic items, Artificers can do it faster than others; each Artificer subclass improves a character's speed at making items of a certain category.*\n*When an Artificer crafts a magic item using the normal rules in the Dungeon Master's Guide, the character gains no special connection to that item. Class features that refer to items created by your Replicate Magic Item feature don't apply to items you craft by other means.*"
+      },
+      {
+        "name": "Plans Known",
+        "type": "text",
+        "value": "When you gain this feature, choose four plans to learn from the Magic Item Plans (Artificer Level 2+) table (see the Dungeon Master's Guide for the items' descriptions). Bag of Holding, Cap of Water Breathing, Sending Stones, and Wand of the War Mage are recommended. Whenever you gain an Artificer level, you can replace one of the plans you know with a new plan for which you qualify."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You learn another plan of your choice when you reach certain Artificer levels, as shown in the Plans Known column of the Artificer Features table. When you choose a plan to learn, you choose it from any Magic Item Plans table for which you qualify; your qualification is based on your Artificer level."
+      },
+      {
+        "name": "Creating an Item",
+        "type": "text",
+        "value": "When you finish a Long Rest, you can create one or two different magic items if you have Tinker's Tools in hand. Each item is based on one of the plans you know for this feature."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If a created item requires Attunement, you can attune yourself to it the instant you create it. If you decide to attune to the item later, you must do so using the normal process for Attunement."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you reach certain Artificer levels specified in the Magic Items column of the Artificer Features table, the number of magic items you can create at the end of a Long Rest increases. Each item you create must be based on a different plan you know."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can't have more magic items from this feature than the number shown in the Magic Items column of the Artificer Features table for your level. If you try to exceed your maximum number of magic items for this feature, the oldest item vanishes, and then the new item appears."
+      },
+      {
+        "name": "Duration",
+        "type": "text",
+        "value": "A magic item created by this feature functions as the normal magic item, except its magic isn't permanent; when you die, the magic item vanishes after 1d4 days. If you replace a plan you know with a new plan, any magic item created with the replaced plan immediately vanishes."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If an item that you created with this feature is a container, such as a Bag of Holding, and it vanishes, its contents harmlessly appear in and around its space."
+      },
+      {
+        "name": "Spellcasting Focus",
+        "type": "text",
+        "value": "You can use any Wand or Weapon created by this feature as a Spellcasting Focus in lieu of using a set of Artisan's Tools."
+      },
+      {
+        "name": "Magic Item Plans (Artificer Level 2+)",
+        "type": "table",
+        "value": {
+          "title": "Magic Item Plans (Artificer Level 2+)",
+          "headers": [
+            "Magic Item Plan",
+            "Attunement"
+          ],
+          "rows": [
+            [
+              "Alchemy Jug",
+              "No"
+            ],
+            [
+              "Bag of Holding",
+              "No"
+            ],
+            [
+              "Cap of Water Breathing",
+              "No"
+            ],
+            [
+              "Common magic item that isn't a Potion, a Scroll, or cursed*",
+              "Varies"
+            ],
+            [
+              "Goggles of Night",
+              "No"
+            ],
+            [
+              "Manifold Tool",
+              "Yes"
+            ],
+            [
+              "Repeating Shot",
+              "Yes"
+            ],
+            [
+              "Returning Weapon",
+              "No"
+            ],
+            [
+              "Rope of Climbing",
+              "No"
+            ],
+            [
+              "Sending Stones",
+              "No"
+            ],
+            [
+              "Shield +1",
+              "No"
+            ],
+            [
+              "Wand of Magic Detection",
+              "No"
+            ],
+            [
+              "Wand of Secrets",
+              "No"
+            ],
+            [
+              "Wand of the War Mage +1",
+              "Yes"
+            ],
+            [
+              "Weapon +1",
+              "No"
+            ],
+            [
+              "Wraps of Unarmed Power, +1",
+              "No"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Magic Item Plans (Artificer Level 6+)",
+        "type": "table",
+        "value": {
+          "title": "Magic Item Plans (Artificer Level 6+)",
+          "headers": [
+            "Magic Item Plan",
+            "Attunement"
+          ],
+          "rows": [
+            [
+              "Armor +1",
+              "No"
+            ],
+            [
+              "Boots of Elvenkind",
+              "No"
+            ],
+            [
+              "Boots of the Winding Path",
+              "Yes"
+            ],
+            [
+              "Cloak of Elvenkind",
+              "Yes"
+            ],
+            [
+              "Cloak of the Manta Ray",
+              "Yes"
+            ],
+            [
+              "Dazzling Weapon",
+              "Yes"
+            ],
+            [
+              "Eyes of Charming",
+              "Yes"
+            ],
+            [
+              "Eyes of Minute Seeing",
+              "No"
+            ],
+            [
+              "Gloves of Thievery",
+              "No"
+            ],
+            [
+              "Helm of Awareness",
+              "No"
+            ],
+            [
+              "Lantern of Revealing",
+              "No"
+            ],
+            [
+              "Mind Sharpener",
+              "Yes"
+            ],
+            [
+              "Necklace of Adaptation",
+              "Yes"
+            ],
+            [
+              "Pipes of Haunting",
+              "No"
+            ],
+            [
+              "Repulsion Shield",
+              "No"
+            ],
+            [
+              "Ring of Swimming",
+              "No"
+            ],
+            [
+              "Ring of Water Walking",
+              "No"
+            ],
+            [
+              "Sentinel Shield",
+              "No"
+            ],
+            [
+              "Spell-Refueling Ring",
+              "Yes"
+            ],
+            [
+              "Wand of Magic Missiles",
+              "No"
+            ],
+            [
+              "Wand of Web",
+              "Yes"
+            ],
+            [
+              "Weapon of Warning",
+              "Yes"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Magic Item Plans (Artificer Level 10+)",
+        "type": "table",
+        "value": {
+          "title": "Magic Item Plans (Artificer Level 10+)",
+          "headers": [
+            "Magic Item Plan",
+            "Attunement"
+          ],
+          "rows": [
+            [
+              "Armor of Resistance",
+              "Yes"
+            ],
+            [
+              "Dagger of Venom",
+              "No"
+            ],
+            [
+              "Elven Chain",
+              "No"
+            ],
+            [
+              "Ring of Feather Falling",
+              "Yes"
+            ],
+            [
+              "Ring of Jumping",
+              "Yes"
+            ],
+            [
+              "Ring of Mind Shielding",
+              "Yes"
+            ],
+            [
+              "Shield, +2",
+              "No"
+            ],
+            [
+              "Uncommon Wondrous Item that isn't cursed*",
+              "Varies"
+            ],
+            [
+              "Wand of the War Mage, +2",
+              "Yes"
+            ],
+            [
+              "Weapon, +2",
+              "No"
+            ],
+            [
+              "Wraps of Unarmed Power, +2",
+              "No"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Magic Item Plans (Artificer Level 14+)",
+        "type": "table",
+        "value": {
+          "title": "Magic Item Plans (Artificer Level 14+)",
+          "headers": [
+            "Magic Item Plan",
+            "Attunement"
+          ],
+          "rows": [
+            [
+              "Armor, +2",
+              "No"
+            ],
+            [
+              "Arrow-Catching Shield",
+              "Yes"
+            ],
+            [
+              "Flame Tongue",
+              "Yes"
+            ],
+            [
+              "Rare Wondrous Item that isn't cursed*",
+              "Varies"
+            ],
+            [
+              "Ring of Free Action",
+              "Yes"
+            ],
+            [
+              "Ring of Protection",
+              "Yes"
+            ],
+            [
+              "Ring of the Ram",
+              "Yes"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Artificer Subclass (Lv. 3 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 3 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You gain an Artificer subclass of your choice. The __Alchemist__, __Armorer__, __Artillerist__, and __Battle Smith__, and __Cartographer__ subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Artificer levels. For the rest of your career, you gain each of your subclass's features that are of your Artificer level or lower."
+      }
+    ]
+  },
+  {
+    "name": "Subclass feature (Lv. 5 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 5 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You gain a feature from your Artificer Subclass."
+      }
+    ]
+  },
+  {
+    "name": "Magic Item Tinker (Lv. 6 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 6 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "Your Replicate Magic Item feature gains the following options."
+      },
+      {
+        "name": "Charge Magic Item",
+        "type": "text",
+        "value": "As a Bonus Action, you can touch a magic item within 5 feet of yourself that you created with Replicate Magic Item and that uses charges. You expend a level 1+ spell slot and recharge the item. The number of charges the item regains is equal to the level of spell slot expended."
+      },
+      {
+        "name": "Drain Magic Item",
+        "type": "text",
+        "value": "As a Bonus Action, you can touch a magic item within 5 feet of yourself that you created with Replicate Magic Item and cause the item to vanish, converting its magical energy into a spell slot. The slot is level 1 if the item is Common or level 2 if the item is Uncommon or Rare. Once you use this feature, you can't do so again until you finish a Long Rest. Any spell slot you create with this feature vanishes when you finish a Long Rest."
+      },
+      {
+        "name": "Transmute Magic Item",
+        "type": "text",
+        "value": "As a Magic action, you can touch one magic item within 5 feet of yourself that you created with Replicate Magic Item and transform it into a different magic item. The resulting item must be based on a magic item plan you know. Once you use this feature, you can't do so again until you finish a Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Flash of Genius (Lv. 7 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 7 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "When you or a creature you can see within 30 feet of you fails an ability check or a saving throw, you can take a Reaction to add a bonus to the roll, potentially causing it to succeed. The bonus equals your Intelligence modifier (minimum of +1)."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can take this Reaction a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Subclass feature (Lv. 9 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 9 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You gain a feature from your Artificer Subclass."
+      }
+    ]
+  },
+  {
+    "name": "Magic Item Adept (Lv. 10 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 10 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You can now attune to up to four magic items at once."
+      }
+    ]
+  },
+  {
+    "name": "Spell-Storing Item (Lv. 11 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 11 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "Whenever you finish a Long Rest, you can touch one Simple or Martial weapon or one item that you can use as a Spellcasting Focus, and you store a spell in it, choosing a level 1, 2, or 3 Artificer spell that has a casting time of an action and doesn't require a Material component that is consumed by the spell (you needn't have the spell prepared)."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "While holding the object, a creature can take a Magic action to produce the spell's effect from it, using your spellcasting ability modifier. If the spell requires *Concentration*, the creature must concentrate. Once a creature has used the object to produce the spell's effect, the object can't be used this way again until the start of the creature's next turn."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The spell stays in the object until it's been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object."
+      }
+    ]
+  },
+  {
+    "name": "Advanced Artifice (Lv. 14 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 14 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Magic Item Savant",
+        "type": "text",
+        "value": "You can now attune to up to five magic items at once."
+      },
+      {
+        "name": "Refreshed Genius",
+        "type": "text",
+        "value": "When you finish a Short Rest, you regain one expended use of your Flash of Genius feature."
+      }
+    ]
+  },
+  {
+    "name": "Subclass feature (Lv. 15 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 15 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You gain a feature from your Artificer Subclass."
+      }
+    ]
+  },
+  {
+    "name": "Magic Item Master (Lv. 18 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 18 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You can now attune to up to six magic items at once."
+      }
+    ]
+  },
+  {
+    "name": "Epic Boon (Lv. 19 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 19 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You gain an Epic Boon feat or another feat of your choice for which you qualify. [Boon of Energy Resistance](https://5e.tools/feats.html#boon%20of%20energy%20resistance_xphb) is recommended."
+      }
+    ]
+  },
+  {
+    "name": "Soul of Artifice (Lv. 20 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 20 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You have developed a mystical connection to your magic items, which you can draw on for aid. You gain the following benefits."
+      },
+      {
+        "name": "Cheat Death",
+        "type": "text",
+        "value": "If you're reduced to 0 Hit Points but not killed outright, you can disintegrate any number of Uncommon or Rare magic items created by your Replicate Magic Item feature. If you do so, your Hit Points instead change to a number equal to 20 times the number of magic items disintegrated."
+      },
+      {
+        "name": "Magical Guidance",
+        "type": "text",
+        "value": "When you finish a Short Rest, you regain all expended uses of your Flash of Genius if you have Attunement to at least one magic item."
+      }
+    ]
+  },
+  {
     "name": "Magical Tinkering (Lv. 1 Artificer)",
     "source": "TCE",
     "url": "https://5e.tools/classes.html#artificer_tce",
@@ -471,6 +1142,1645 @@
         "name": "",
         "type": "text",
         "value": "• You gain a +1 bonus to all saving throws per magic item you are currently attuned to.\n• If you're reduced to 0 hit points but not killed outright, you can use your reaction to end one of your artificer infusions, causing you to drop to 1 hit point instead of 0."
+      }
+    ]
+  },
+  {
+    "name": "Alchemist (Lv. 3 Alchemist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_alchemist_efa=b1",
+    "type": "Lv. 3 Alchemist Subclass Feature",
+    "prerequisite": "Alchemist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Alchemist (EFA) Features",
+        "type": "text",
+        "value": "*Craft Magic Elixirs and Potions*"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "An Alchemist is an expert at combining reagents to produce magical effects. Alchemists use their creations to give life and to leech it away."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Tools Of The Trade (EFA)__: You gain the following benefits."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Alchemist's Supplies and the Herbalism Kit. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan's Tools of your choice (or with two other types if you have both)."
+      },
+      {
+        "name": "Potion Crafting",
+        "type": "text",
+        "value": "When you brew a potion using the crafting rules in the Dungeon Master's Guide, the amount of time required to craft it is halved."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Alchemist Spells (EFA)__: When you reach an Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Alchemist Spells",
+        "type": "table",
+        "value": {
+          "title": "Alchemist Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Healing Word, Ray of Sickness"
+            ],
+            [
+              "5",
+              "Flaming Sphere, Melf's Acid Arrow"
+            ],
+            [
+              "9",
+              "Gaseous Form, Mass Healing Word"
+            ],
+            [
+              "13",
+              "Death Ward, Vitriolic Sphere"
+            ],
+            [
+              "17",
+              "Cloudkill, Raise Dead"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Experimental Elixir (EFA)__: Whenever you finish a Long Rest while holding Alchemist's Supplies, you can use that tool to magically produce two elixirs. For each elixir, roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. The elixir appears in a vial, and the vial vanishes when the elixir is drunk or poured out. If any elixir remains when you finish a Long Rest, the elixir and its vial vanish."
+      },
+      {
+        "name": "Drinking an Elixir",
+        "type": "text",
+        "value": "As a Bonus Action, a creature can drink the elixir or administer it to another creature within 5 feet of itself."
+      },
+      {
+        "name": "Creating Additional Elixirs",
+        "type": "text",
+        "value": "As a Magic action while holding Alchemist's Supplies, you can expend one spell slot to create another elixir. When you do so, you choose its effect from the Experimental Elixir table rather than rolling."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you reach certain Artificer levels, you can make an additional elixir at the end of each Long Rest: a total of three at level 5, four at level 9, and five at level 15."
+      },
+      {
+        "name": "Experimental Elixir",
+        "type": "table",
+        "value": {
+          "title": "Experimental Elixir",
+          "headers": [
+            "1d6",
+            "Effect"
+          ],
+          "rows": [
+            [
+              "1",
+              "Healing. The drinker regains a number of Hit Points equal to 2d8 plus your Intelligence modifier. The number of Hit Points restored increases by 1d8 when you reach Artificer levels 9 (3d8) and 15 (4d8)."
+            ],
+            [
+              "2",
+              "Swiftness. The drinker's Speed increases by 10 feet for 1 hour. This bonus increases when you reach Artificer levels 9 (15 feet) and 15 (20 feet)."
+            ],
+            [
+              "3",
+              "Resilience. The drinker gains a +1 bonus to AC for 10 minutes. The duration increases when you reach Artificer levels 9 (1 hour) and 15 (8 hours)."
+            ],
+            [
+              "4",
+              "Boldness. The drinker can roll 1d4 and add the number rolled to every attack roll and saving throw they make for the next minute. The duration increases when you reach Artificer levels 9 (10 minutes) and 15 (1 hour)."
+            ],
+            [
+              "5",
+              "Flight. The drinker gains a Fly Speed of 10 feet for 10 minutes. The Fly Speed increases when you reach Artificer levels 9 (20 feet) and 15 (30 feet)."
+            ],
+            [
+              "6",
+              "You determine the elixir's effect by choosing one of the other rows in this table."
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Alchemist Spells (Lv. 3 Alchemist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_alchemist_efa=b1",
+    "type": "Lv. 3 Alchemist Subclass Feature",
+    "prerequisite": "Alchemist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you reach an Artificer level specified in the Alchemist Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Alchemist Spells",
+        "type": "table",
+        "value": {
+          "title": "Alchemist Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Healing Word, Ray of Sickness"
+            ],
+            [
+              "5",
+              "Flaming Sphere, Melf's Acid Arrow"
+            ],
+            [
+              "9",
+              "Gaseous Form, Mass Healing Word"
+            ],
+            [
+              "13",
+              "Death Ward, Vitriolic Sphere"
+            ],
+            [
+              "17",
+              "Cloudkill, Raise Dead"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Experimental Elixir (Lv. 3 Alchemist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_alchemist_efa=b1",
+    "type": "Lv. 3 Alchemist Subclass Feature",
+    "prerequisite": "Alchemist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever you finish a Long Rest while holding Alchemist's Supplies, you can use that tool to magically produce two elixirs. For each elixir, roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir. The elixir appears in a vial, and the vial vanishes when the elixir is drunk or poured out. If any elixir remains when you finish a Long Rest, the elixir and its vial vanish."
+      },
+      {
+        "name": "Drinking an Elixir",
+        "type": "text",
+        "value": "As a Bonus Action, a creature can drink the elixir or administer it to another creature within 5 feet of itself."
+      },
+      {
+        "name": "Creating Additional Elixirs",
+        "type": "text",
+        "value": "As a Magic action while holding Alchemist's Supplies, you can expend one spell slot to create another elixir. When you do so, you choose its effect from the Experimental Elixir table rather than rolling."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you reach certain Artificer levels, you can make an additional elixir at the end of each Long Rest: a total of three at level 5, four at level 9, and five at level 15."
+      },
+      {
+        "name": "Experimental Elixir",
+        "type": "table",
+        "value": {
+          "title": "Experimental Elixir",
+          "headers": [
+            "1d6",
+            "Effect"
+          ],
+          "rows": [
+            [
+              "1",
+              "Healing. The drinker regains a number of Hit Points equal to 2d8 plus your Intelligence modifier. The number of Hit Points restored increases by 1d8 when you reach Artificer levels 9 (3d8) and 15 (4d8)."
+            ],
+            [
+              "2",
+              "Swiftness. The drinker's Speed increases by 10 feet for 1 hour. This bonus increases when you reach Artificer levels 9 (15 feet) and 15 (20 feet)."
+            ],
+            [
+              "3",
+              "Resilience. The drinker gains a +1 bonus to AC for 10 minutes. The duration increases when you reach Artificer levels 9 (1 hour) and 15 (8 hours)."
+            ],
+            [
+              "4",
+              "Boldness. The drinker can roll 1d4 and add the number rolled to every attack roll and saving throw they make for the next minute. The duration increases when you reach Artificer levels 9 (10 minutes) and 15 (1 hour)."
+            ],
+            [
+              "5",
+              "Flight. The drinker gains a Fly Speed of 10 feet for 10 minutes. The Fly Speed increases when you reach Artificer levels 9 (20 feet) and 15 (30 feet)."
+            ],
+            [
+              "6",
+              "You determine the elixir's effect by choosing one of the other rows in this table."
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Tools of the Trade (Lv. 3 Alchemist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_alchemist_efa=b1",
+    "type": "Lv. 3 Alchemist Subclass Feature",
+    "prerequisite": "Alchemist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Alchemist's Supplies and the Herbalism Kit. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan's Tools of your choice (or with two other types if you have both)."
+      },
+      {
+        "name": "Potion Crafting",
+        "type": "text",
+        "value": "When you brew a potion using the crafting rules in the Dungeon Master's Guide, the amount of time required to craft it is halved."
+      }
+    ]
+  },
+  {
+    "name": "Alchemical Savant (Lv. 5 Alchemist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s4-0~sub_alchemist_efa=b1",
+    "type": "Lv. 5 Alchemist Subclass Feature",
+    "prerequisite": "Alchemist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Alchemist (EFA) Features",
+        "type": "text",
+        "value": "Whenever you cast a spell using your Alchemist's Supplies as the Spellcasting Focus, you gain a bonus to one roll of the spell. That roll must restore Hit Points or be a damage roll that deals Acid, Fire, or Poison damage. The bonus equals your Intelligence modifier (minimum bonus of +1)."
+      }
+    ]
+  },
+  {
+    "name": "Restorative Reagents (Lv. 9 Alchemist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s8-0~sub_alchemist_efa=b1",
+    "type": "Lv. 9 Alchemist Subclass Feature",
+    "prerequisite": "Alchemist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Alchemist (EFA) Features",
+        "type": "text",
+        "value": "You can cast __Lesser Restoration__ without expending a spell slot and without preparing the spell, provided you use Alchemist's Supplies as the Spellcasting Focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Chemical Mastery (Lv. 15 Alchemist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s14-0~sub_alchemist_efa=b1",
+    "type": "Lv. 15 Alchemist Subclass Feature",
+    "prerequisite": "Alchemist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Alchemist (EFA) Features",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Alchemical Eruption",
+        "type": "text",
+        "value": "When you cast an Artificer spell that deals Acid, Fire, or Poison damage to a target, you can also deal **2d8** Force damage to that target. You can use this benefit only once on each of your turns."
+      },
+      {
+        "name": "Chemical Resistance",
+        "type": "text",
+        "value": "You gain Resistance to Acid damage and Poison damage. You also gain Immunity to the Poisoned condition."
+      },
+      {
+        "name": "Conjured Cauldron",
+        "type": "text",
+        "value": "You can cast __Tasha's Bubbling Cauldron__ without expending a spell slot, without preparing the spell, and without Material components, provided you use Alchemist's Supplies as the Spellcasting Focus. Once you use this feature, you can't use it again until you finish a Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Arcane Armor (Lv. 3 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
+    "type": "Lv. 3 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "As a Magic action while you have Smith's Tools in hand, you can turn a suit of armor you are wearing into Arcane Armor. The armor continues to be Arcane Armor until you don another suit of armor or you die."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits while wearing your Arcane Armor."
+      },
+      {
+        "name": "No Strength Requirement",
+        "type": "text",
+        "value": "If the armor normally has a Strength requirement, the Arcane Armor lacks this requirement for you."
+      },
+      {
+        "name": "Quick Don and Doff",
+        "type": "text",
+        "value": "You can don or doff the armor as a Utilize action. The armor can't be removed against your will."
+      },
+      {
+        "name": "Spellcasting Focus",
+        "type": "text",
+        "value": "You can use the Arcane Armor as a Spellcasting Focus for your Artificer spells."
+      }
+    ]
+  },
+  {
+    "name": "Armor Model (Lv. 3 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
+    "type": "Lv. 3 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can customize your Arcane Armor. When you do so, choose one of the following armor models: __Dreadnaught__, __Guardian__, or __Infiltrator__. The model you choose gives you special benefits while you wear it."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of your Strength or Dexterity modifier, to the attack and damage rolls."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can change the armor's model whenever you finish a Short or Long Rest if you have Smith's Tools in hand."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Dreadnaught (EFA)__: You design your armor to become a towering juggernaut in battle. It has the following features:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Force Demolisher**: An arcane wrecking ball or sledgehammer projects from your armor. The demolisher counts as a Simple Melee weapon with the Reach property, and it deals **1d10** Force damage on a hit. If you hit a creature that is at least one size smaller than you with the demolisher, you can push the creature up to 10 feet straight away from yourself or pull the creature up to 10 feet toward yourself.\n• **Giant Stature**: As a Bonus Action, you transform and enlarge your armor for 1 minute. For the duration, your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change. You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Guardian (EFA)__: You design your armor to be in the front line of conflict. It has the following features:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Thunder Pulse**: You can discharge concussive blasts with strikes from your armor. The pulse counts as a Simple Melee weapon and deals **1d8** Thunder damage on a hit. A creature hit by the pulse has Disadvantage on attack rolls against targets other than you until the start of your next turn."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Defensive Field**: While Bloodied, you can take a Bonus Action to gain Temporary Hit Points equal to your Artificer level. You lose these Temporary Hit Points if you doff the armor."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Infiltrator (EFA)__: You customize your armor for subtler undertakings. It has the following features:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Lightning Launcher**: A gemlike node appears on your armor, from which you can shoot bolts of lightning. The launcher counts as a Simple Ranged weapon with a normal range of 90 feet and a long range of 300 feet, and it deals **1d6** Lightning damage on a hit. Once on each of your turns when you hit a creature with the launcher, you can deal an extra **1d6** Lightning damage to that target.\n• **Powered Steps**: Your Speed increases by 5 feet.\n• **Dampening Field**: You have Advantage on Dexterity (*Stealth*) checks. If the armor imposes Disadvantage on such checks, the Advantage and Disadvantage cancel each other, as normal."
+      }
+    ]
+  },
+  {
+    "name": "Armorer (Lv. 3 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
+    "type": "Lv. 3 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Armorer (EFA) Features",
+        "type": "text",
+        "value": "*Craft Magic Armor to Enhance Your Abilities*"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "An Armorer modifies armor to function almost like a second skin. The armor is enhanced to hone the Armorer's magic, unleash potent attacks, and generate a formidable defense."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Tools Of The Trade (EFA)__: You gain the following benefits."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Alchemist's Supplies and the Herbalism Kit. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan's Tools of your choice (or with two other types if you have both)."
+      },
+      {
+        "name": "Potion Crafting",
+        "type": "text",
+        "value": "When you brew a potion using the crafting rules in the Dungeon Master's Guide, the amount of time required to craft it is halved."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Armorer Spells (EFA)__: When you reach an Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Armorer Spells",
+        "type": "table",
+        "value": {
+          "title": "Armorer Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Magic Missile, Thunderwave"
+            ],
+            [
+              "5",
+              "Mirror Image, Shatter"
+            ],
+            [
+              "9",
+              "Hypnotic Pattern, Lightning Bolt"
+            ],
+            [
+              "13",
+              "Fire Shield, Greater Invisibility"
+            ],
+            [
+              "17",
+              "Passwall, Wall of Force"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Arcane Armor (EFA)__: As a Magic action while you have Smith's Tools in hand, you can turn a suit of armor you are wearing into Arcane Armor. The armor continues to be Arcane Armor until you don another suit of armor or you die."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits while wearing your Arcane Armor."
+      },
+      {
+        "name": "No Strength Requirement",
+        "type": "text",
+        "value": "If the armor normally has a Strength requirement, the Arcane Armor lacks this requirement for you."
+      },
+      {
+        "name": "Quick Don and Doff",
+        "type": "text",
+        "value": "You can don or doff the armor as a Utilize action. The armor can't be removed against your will."
+      },
+      {
+        "name": "Spellcasting Focus",
+        "type": "text",
+        "value": "You can use the Arcane Armor as a Spellcasting Focus for your Artificer spells."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Armor Model (EFA)__: You can customize your Arcane Armor. When you do so, choose one of the following armor models: __Dreadnaught__, __Guardian__, or __Infiltrator__. The model you choose gives you special benefits while you wear it."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of your Strength or Dexterity modifier, to the attack and damage rolls."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can change the armor's model whenever you finish a Short or Long Rest if you have Smith's Tools in hand."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Dreadnaught (EFA)__: You design your armor to become a towering juggernaut in battle. It has the following features:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Force Demolisher**: An arcane wrecking ball or sledgehammer projects from your armor. The demolisher counts as a Simple Melee weapon with the Reach property, and it deals **1d10** Force damage on a hit. If you hit a creature that is at least one size smaller than you with the demolisher, you can push the creature up to 10 feet straight away from yourself or pull the creature up to 10 feet toward yourself.\n• **Giant Stature**: As a Bonus Action, you transform and enlarge your armor for 1 minute. For the duration, your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change. You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Guardian (EFA)__: You design your armor to be in the front line of conflict. It has the following features:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Thunder Pulse**: You can discharge concussive blasts with strikes from your armor. The pulse counts as a Simple Melee weapon and deals **1d8** Thunder damage on a hit. A creature hit by the pulse has Disadvantage on attack rolls against targets other than you until the start of your next turn."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Defensive Field**: While Bloodied, you can take a Bonus Action to gain Temporary Hit Points equal to your Artificer level. You lose these Temporary Hit Points if you doff the armor."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Infiltrator (EFA)__: You customize your armor for subtler undertakings. It has the following features:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Lightning Launcher**: A gemlike node appears on your armor, from which you can shoot bolts of lightning. The launcher counts as a Simple Ranged weapon with a normal range of 90 feet and a long range of 300 feet, and it deals **1d6** Lightning damage on a hit. Once on each of your turns when you hit a creature with the launcher, you can deal an extra **1d6** Lightning damage to that target.\n• **Powered Steps**: Your Speed increases by 5 feet.\n• **Dampening Field**: You have Advantage on Dexterity (*Stealth*) checks. If the armor imposes Disadvantage on such checks, the Advantage and Disadvantage cancel each other, as normal."
+      }
+    ]
+  },
+  {
+    "name": "Armorer Spells (Lv. 3 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
+    "type": "Lv. 3 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you reach an Artificer level specified in the Armorer Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Armorer Spells",
+        "type": "table",
+        "value": {
+          "title": "Armorer Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Magic Missile, Thunderwave"
+            ],
+            [
+              "5",
+              "Mirror Image, Shatter"
+            ],
+            [
+              "9",
+              "Hypnotic Pattern, Lightning Bolt"
+            ],
+            [
+              "13",
+              "Fire Shield, Greater Invisibility"
+            ],
+            [
+              "17",
+              "Passwall, Wall of Force"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Dreadnaught (Lv. 3 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
+    "type": "Lv. 3 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You design your armor to become a towering juggernaut in battle. It has the following features:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Force Demolisher**: An arcane wrecking ball or sledgehammer projects from your armor. The demolisher counts as a Simple Melee weapon with the Reach property, and it deals **1d10** Force damage on a hit. If you hit a creature that is at least one size smaller than you with the demolisher, you can push the creature up to 10 feet straight away from yourself or pull the creature up to 10 feet toward yourself.\n• **Giant Stature**: As a Bonus Action, you transform and enlarge your armor for 1 minute. For the duration, your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change. You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Guardian (Lv. 3 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
+    "type": "Lv. 3 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You design your armor to be in the front line of conflict. It has the following features:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Thunder Pulse**: You can discharge concussive blasts with strikes from your armor. The pulse counts as a Simple Melee weapon and deals **1d8** Thunder damage on a hit. A creature hit by the pulse has Disadvantage on attack rolls against targets other than you until the start of your next turn."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Defensive Field**: While Bloodied, you can take a Bonus Action to gain Temporary Hit Points equal to your Artificer level. You lose these Temporary Hit Points if you doff the armor."
+      }
+    ]
+  },
+  {
+    "name": "Infiltrator (Lv. 3 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
+    "type": "Lv. 3 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You customize your armor for subtler undertakings. It has the following features:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Lightning Launcher**: A gemlike node appears on your armor, from which you can shoot bolts of lightning. The launcher counts as a Simple Ranged weapon with a normal range of 90 feet and a long range of 300 feet, and it deals **1d6** Lightning damage on a hit. Once on each of your turns when you hit a creature with the launcher, you can deal an extra **1d6** Lightning damage to that target.\n• **Powered Steps**: Your Speed increases by 5 feet.\n• **Dampening Field**: You have Advantage on Dexterity (*Stealth*) checks. If the armor imposes Disadvantage on such checks, the Advantage and Disadvantage cancel each other, as normal."
+      }
+    ]
+  },
+  {
+    "name": "Tools of the Trade (Lv. 3 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
+    "type": "Lv. 3 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Armor Training",
+        "type": "text",
+        "value": "You gain training with Heavy armor."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Smith's Tools. If you already have this tool proficiency, you gain proficiency with one other type of Artisan's Tools of your choice."
+      },
+      {
+        "name": "Armor Crafting",
+        "type": "text",
+        "value": "When you craft nonmagical or magic armor, the amount of time required to craft it is halved."
+      }
+    ]
+  },
+  {
+    "name": "Improved Armorer (Lv. 9 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s8-0~sub_armorer_efa=b1",
+    "type": "Lv. 9 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Armorer (EFA) Features",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Armor Replication",
+        "type": "text",
+        "value": "You learn an additional plan for your Replicate Magic Item feature, and it must be in the Armor category. If you replace that plan, you must replace it with another Armor plan."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "In addition, you can create an additional item with that feature, and the item must also be in the Armor category."
+      },
+      {
+        "name": "Improved Arsenal",
+        "type": "text",
+        "value": "You gain a +1 bonus to attack and damage rolls made with the special weapon of your Arcane Armor model."
+      }
+    ]
+  },
+  {
+    "name": "Perfected Armor (Lv. 15 Armorer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s14-0~sub_armorer_efa=b1",
+    "type": "Lv. 15 Armorer Subclass Feature",
+    "prerequisite": "Armorer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Armorer (EFA) Features",
+        "type": "text",
+        "value": "Your Arcane Armor gains additional benefits based on its model, as detailed below."
+      },
+      {
+        "name": "Dreadnaught",
+        "type": "text",
+        "value": "The damage die of your Force Demolisher increases to **2d6** Force damage."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "In addition, when you use your Giant Stature, your reach increases by 10 feet, your size can increase to Large or Huge (your choice), and you have Advantage on Strength checks and Strength saving throws for the duration."
+      },
+      {
+        "name": "Guardian",
+        "type": "text",
+        "value": "The damage die of your Thunder Pulse increases to **1d10** Thunder damage."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "In addition, when a Huge or smaller creature you can see ends its turn within 30 feet of you, you can take a Reaction to magically force that creature to make a Strength saving throw against your spell save DC. On a failed save, you pull the creature up to 25 feet directly toward you to an unoccupied space. If you pull the target to a space within 5 feet of yourself, you can make a melee weapon attack against it as part of this Reaction."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can take this Reaction a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+      },
+      {
+        "name": "Infiltrator",
+        "type": "text",
+        "value": "The damage die of your Lightning Launcher increases to **2d6** Lightning damage. Any creature that takes Lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds Dim Light in a 5-foot radius, and it has Disadvantage on attack rolls against you, as the light jolts it if it attacks you."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Additionally, as a Bonus Action, you can gain a Fly Speed equal to twice your Speed until the end of the current turn. You can take this Bonus Action a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Artillerist (Lv. 3 Artillerist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_artillerist_efa=b1",
+    "type": "Lv. 3 Artillerist Subclass Feature",
+    "prerequisite": "Artillerist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Artillerist (EFA) Features",
+        "type": "text",
+        "value": "*Wield Destructive Power from Afar*"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Tools Of The Trade (EFA)__: You gain the following benefits."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Alchemist's Supplies and the Herbalism Kit. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan's Tools of your choice (or with two other types if you have both)."
+      },
+      {
+        "name": "Potion Crafting",
+        "type": "text",
+        "value": "When you brew a potion using the crafting rules in the Dungeon Master's Guide, the amount of time required to craft it is halved."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Artillerist Spells (EFA)__: When you reach an Artificer level specified in the Artillerist Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Artillerist Spells",
+        "type": "table",
+        "value": {
+          "title": "Artillerist Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Shield, Thunderwave"
+            ],
+            [
+              "5",
+              "Scorching Ray, Shatter"
+            ],
+            [
+              "9",
+              "Fireball, Wind Wall"
+            ],
+            [
+              "13",
+              "Ice Storm, Wall of Fire"
+            ],
+            [
+              "17",
+              "Cone of Cold, Wall of Force"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Eldritch Cannon (EFA)__: Using Smith's Tools or Woodcarver's Tools, you can take a Magic action to create a Small or Tiny __Eldritch Cannon__ in an unoccupied space on a horizontal surface within 5 feet of yourself. You determine its appearance, including whether you carry it or not (and your choice of legs or wheels, for the latter). It disappears if it is reduced to 0 Hit Points or after 1 hour. You can dismiss it early as a Magic action."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Once you create a cannon, you can't do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one cannon at a time and can't create one while you already have one."
+      }
+    ]
+  },
+  {
+    "name": "Artillerist Spells (Lv. 3 Artillerist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_artillerist_efa=b1",
+    "type": "Lv. 3 Artillerist Subclass Feature",
+    "prerequisite": "Artillerist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you reach an Artificer level specified in the Artillerist Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Artillerist Spells",
+        "type": "table",
+        "value": {
+          "title": "Artillerist Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Shield, Thunderwave"
+            ],
+            [
+              "5",
+              "Scorching Ray, Shatter"
+            ],
+            [
+              "9",
+              "Fireball, Wind Wall"
+            ],
+            [
+              "13",
+              "Ice Storm, Wall of Fire"
+            ],
+            [
+              "17",
+              "Cone of Cold, Wall of Force"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Eldritch Cannon (Lv. 3 Artillerist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_artillerist_efa=b1",
+    "type": "Lv. 3 Artillerist Subclass Feature",
+    "prerequisite": "Artillerist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Using Smith's Tools or Woodcarver's Tools, you can take a Magic action to create a Small or Tiny __Eldritch Cannon__ in an unoccupied space on a horizontal surface within 5 feet of yourself. You determine its appearance, including whether you carry it or not (and your choice of legs or wheels, for the latter). It disappears if it is reduced to 0 Hit Points or after 1 hour. You can dismiss it early as a Magic action."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Once you create a cannon, you can't do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one cannon at a time and can't create one while you already have one."
+      }
+    ]
+  },
+  {
+    "name": "Tools of the Trade (Lv. 3 Artillerist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_artillerist_efa=b1",
+    "type": "Lv. 3 Artillerist Subclass Feature",
+    "prerequisite": "Artillerist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Ranged Weaponry",
+        "type": "text",
+        "value": "You gain proficiency with Martial Ranged weapons."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Woodcarver's Tools. If you already have this proficiency, you gain proficiency with one other type of Artisan's Tools of your choice."
+      },
+      {
+        "name": "Wand Crafting",
+        "type": "text",
+        "value": "When you craft a magic Wand, the amount of time required to craft it is halved."
+      }
+    ]
+  },
+  {
+    "name": "Arcane Firearm (Lv. 5 Artillerist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s4-0~sub_artillerist_efa=b1",
+    "type": "Lv. 5 Artillerist Subclass Feature",
+    "prerequisite": "Artillerist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Artillerist (EFA) Features",
+        "type": "text",
+        "value": "When you finish a Long Rest, you can use Woodcarver's Tools to carve special sigils into a Rod, Staff, Wand, or Martial Ranged weapon and thereby turn it into your Arcane Firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use your Arcane Firearm as a Spellcasting Focus for your Artificer spells. When you cast an Artificer spell through the firearm, roll **1d8**, and you gain a bonus to one of the spell's damage rolls equal to the number rolled."
+      }
+    ]
+  },
+  {
+    "name": "Explosive Cannon (Lv. 9 Artillerist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s8-0~sub_artillerist_efa=b1",
+    "type": "Lv. 9 Artillerist Subclass Feature",
+    "prerequisite": "Artillerist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Artillerist (EFA) Features",
+        "type": "text",
+        "value": "Every __Eldritch Cannon__ you create is now more destructive. You gain the following benefits."
+      },
+      {
+        "name": "Detonate",
+        "type": "text",
+        "value": "When your cannon takes damage, you can take a Reaction to command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking **3d10** Force damage on a failed save or half as much damage on a successful one."
+      },
+      {
+        "name": "Firepower",
+        "type": "text",
+        "value": "The cannon's damage rolls and the number of Temporary Hit Points granted by Protector increase by 1d8."
+      }
+    ]
+  },
+  {
+    "name": "Fortified Position (Lv. 15 Artillerist)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s14-0~sub_artillerist_efa=b1",
+    "type": "Lv. 15 Artillerist Subclass Feature",
+    "prerequisite": "Artillerist (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Artillerist (EFA) Features",
+        "type": "text",
+        "value": "You're a master at forming well-defended emplacements using your __Eldritch Cannon__. You gain the following benefits."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Double Firepower**: You can now have two cannons at the same time, and you can create two with the same Magic action. (If you expend a spell slot to create the first cannon, you must expend another spell slot to create the second.) You can activate both of them with the same Bonus Action, ordering them to use the same activation option or different ones. You can't create a third cannon while you have two."
+      },
+      {
+        "name": "Shimmering Field Projection",
+        "type": "text",
+        "value": "You and your allies have Half Cover while within 10 feet of your __Eldritch Cannon__."
+      }
+    ]
+  },
+  {
+    "name": "Battle Ready (Lv. 3 Battle Smith)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_battle%20smith_efa=b1",
+    "type": "Lv. 3 Battle Smith Subclass Feature",
+    "prerequisite": "Battle Smith (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Your combat training and your experiments with magic have paid off in two ways."
+      },
+      {
+        "name": "Arcane Empowerment",
+        "type": "text",
+        "value": "When you attack with a magic weapon, you can use your Intelligence modifier, instead of your Strength or Dexterity modifier, for the attack and damage rolls."
+      },
+      {
+        "name": "Weapon Knowledge",
+        "type": "text",
+        "value": "You gain proficiency with Martial weapons. You can use a weapon with which you have proficiency as a Spellcasting Focus for your Artificer spells."
+      }
+    ]
+  },
+  {
+    "name": "Battle Smith (Lv. 3 Battle Smith)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_battle%20smith_efa=b1",
+    "type": "Lv. 3 Battle Smith Subclass Feature",
+    "prerequisite": "Battle Smith (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Battle Smith (EFA) Features",
+        "type": "text",
+        "value": "*Command a Construct Guardian*"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A Battle Smith is a combination of protector and medic, an expert at defending others and repairing both materiel and personnel. To aid in their work, Battle Smiths are accompanied by a __Steel Defender__, a protective companion of their own creation."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Tools Of The Trade (EFA)__: You gain the following benefits."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Alchemist's Supplies and the Herbalism Kit. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan's Tools of your choice (or with two other types if you have both)."
+      },
+      {
+        "name": "Potion Crafting",
+        "type": "text",
+        "value": "When you brew a potion using the crafting rules in the Dungeon Master's Guide, the amount of time required to craft it is halved."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Battle Smith Spells (EFA)__: When you reach an Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Battle Smith Spells",
+        "type": "table",
+        "value": {
+          "title": "Battle Smith Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Heroism, Shield"
+            ],
+            [
+              "5",
+              "Shining Smite, Warding Bond"
+            ],
+            [
+              "9",
+              "Aura of Vitality, Conjure Barrage"
+            ],
+            [
+              "13",
+              "Aura of Purity, Fire Shield"
+            ],
+            [
+              "17",
+              "Banishing Smite, Mass Cure Wounds"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Battle Ready (EFA)__: Your combat training and your experiments with magic have paid off in two ways."
+      },
+      {
+        "name": "Arcane Empowerment",
+        "type": "text",
+        "value": "When you attack with a magic weapon, you can use your Intelligence modifier, instead of your Strength or Dexterity modifier, for the attack and damage rolls."
+      },
+      {
+        "name": "Weapon Knowledge",
+        "type": "text",
+        "value": "You gain proficiency with Martial weapons. You can use a weapon with which you have proficiency as a Spellcasting Focus for your Artificer spells."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Steel Defender (EFA)__: Your tinkering has borne you a companion, a __Steel Defender__. You determine the defender's appearance and whether it has two legs or four; your choices don't affect the defender's game statistics."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The __defender__ is Friendly to you and your allies and obeys you. It vanishes if you die."
+      },
+      {
+        "name": "The Defender in Combat",
+        "type": "text",
+        "value": "In combat, the defender acts during your turn. It can move and take its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action. If you have the Incapacitated condition, the defender acts on its own and isn't limited to the Dodge action."
+      },
+      {
+        "name": "Restoring or Replacing the Defender",
+        "type": "text",
+        "value": "If the defender has died within the last hour, you can take a Magic action to touch it and expend a spell slot. The defender returns to life after 1 minute with all its Hit Points restored."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever you finish a Long Rest, you can create a new __defender__ if you have Smith's Tools in hand. If you already have a defender from this feature, the first one vanishes."
+      }
+    ]
+  },
+  {
+    "name": "Battle Smith Spells (Lv. 3 Battle Smith)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_battle%20smith_efa=b1",
+    "type": "Lv. 3 Battle Smith Subclass Feature",
+    "prerequisite": "Battle Smith (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you reach an Artificer level specified in the Battle Smith Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Battle Smith Spells",
+        "type": "table",
+        "value": {
+          "title": "Battle Smith Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Heroism, Shield"
+            ],
+            [
+              "5",
+              "Shining Smite, Warding Bond"
+            ],
+            [
+              "9",
+              "Aura of Vitality, Conjure Barrage"
+            ],
+            [
+              "13",
+              "Aura of Purity, Fire Shield"
+            ],
+            [
+              "17",
+              "Banishing Smite, Mass Cure Wounds"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Steel Defender (Lv. 3 Battle Smith)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_battle%20smith_efa=b1",
+    "type": "Lv. 3 Battle Smith Subclass Feature",
+    "prerequisite": "Battle Smith (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Your tinkering has borne you a companion, a __Steel Defender__. You determine the defender's appearance and whether it has two legs or four; your choices don't affect the defender's game statistics."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The __defender__ is Friendly to you and your allies and obeys you. It vanishes if you die."
+      },
+      {
+        "name": "The Defender in Combat",
+        "type": "text",
+        "value": "In combat, the defender acts during your turn. It can move and take its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action. If you have the Incapacitated condition, the defender acts on its own and isn't limited to the Dodge action."
+      },
+      {
+        "name": "Restoring or Replacing the Defender",
+        "type": "text",
+        "value": "If the defender has died within the last hour, you can take a Magic action to touch it and expend a spell slot. The defender returns to life after 1 minute with all its Hit Points restored."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever you finish a Long Rest, you can create a new __defender__ if you have Smith's Tools in hand. If you already have a defender from this feature, the first one vanishes."
+      }
+    ]
+  },
+  {
+    "name": "Tools of the Trade (Lv. 3 Battle Smith)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_battle%20smith_efa=b1",
+    "type": "Lv. 3 Battle Smith Subclass Feature",
+    "prerequisite": "Battle Smith (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Smith's Tools. If you already have this proficiency, you gain proficiency with one other type of Artisan's Tools of your choice."
+      },
+      {
+        "name": "Weapon Crafting",
+        "type": "text",
+        "value": "When you craft a nonmagical or magic weapon, the amount of time required to craft it is halved."
+      }
+    ]
+  },
+  {
+    "name": "Arcane Jolt (Lv. 9 Battle Smith)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s8-0~sub_battle%20smith_efa=b1",
+    "type": "Lv. 9 Battle Smith Subclass Feature",
+    "prerequisite": "Battle Smith (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Battle Smith (EFA) Features",
+        "type": "text",
+        "value": "When either you hit a target with an attack roll using a magic weapon or your __Steel Defender__ hits a target, you can channel magical energy through the strike to create one of the following effects:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Destructive Energy**: The target takes an extra **2d6** Force damage.\n• **Restorative Energy**: Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 Hit Points to it."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once per turn. You regain all expended uses when you finish a Long Rest."
+      }
+    ]
+  },
+  {
+    "name": "Improved Defender (Lv. 15 Battle Smith)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s14-0~sub_battle%20smith_efa=b1",
+    "type": "Lv. 15 Battle Smith Subclass Feature",
+    "prerequisite": "Battle Smith (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Battle Smith (EFA) Features",
+        "type": "text",
+        "value": "Your __Arcane Jolt__ and __Steel Defender__ have become more powerful, granting these benefits."
+      },
+      {
+        "name": "Improved Jolt",
+        "type": "text",
+        "value": "The extra damage and healing of your Arcane Jolt both increase to 4d6."
+      },
+      {
+        "name": "Improved Deflection",
+        "type": "text",
+        "value": "Whenever your __Steel Defender__ uses its Deflect Attack, the attacker takes Force damage equal to 1d4 plus your Intelligence modifier."
+      }
+    ]
+  },
+  {
+    "name": "Adventurer's Atlas (Lv. 3 Cartographer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_cartographer_efa=b1",
+    "type": "Lv. 3 Cartographer Subclass Feature",
+    "prerequisite": "Cartographer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever you finish a Long Rest while holding Cartographer's Tools, you can use that tool to create a set of magical maps by touching at least two creatures (one of whom can be yourself), up to a maximum number of creatures equal to 1 plus your Intelligence modifier (minimum of two creatures). Each target receives a magical map, which constantly updates to show the relative position of all the map holders but is illegible to all others. The maps last until you die or until you use this feature again, at which point any existing maps created by this feature immediately vanish."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "While carrying the map, a target gains the following benefits."
+      },
+      {
+        "name": "Awareness",
+        "type": "text",
+        "value": "The target adds 1d4 to its Initiative rolls."
+      },
+      {
+        "name": "Positioning",
+        "type": "text",
+        "value": "The target knows the location of all other map holders that are on the same plane of existence as itself. When casting a spell or creating another effect that requires being able to see the effect's target, a map holder can target another map holder regardless of sight or cover, so long as the other map holder is still within the effect's range."
+      }
+    ]
+  },
+  {
+    "name": "Cartographer (Lv. 3 Cartographer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_cartographer_efa=b1",
+    "type": "Lv. 3 Cartographer Subclass Feature",
+    "prerequisite": "Cartographer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Cartographer (EFA) Features",
+        "type": "text",
+        "value": "*Chart Advantageous Courses through Turmoil*"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Cartographers are the premier navigators and reconnaissance agents. Using their creations, Cartographers can highlight threats, safeguard allies, and carve portals to distant locations."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Tools Of The Trade (EFA)__: You gain the following benefits."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Alchemist's Supplies and the Herbalism Kit. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan's Tools of your choice (or with two other types if you have both)."
+      },
+      {
+        "name": "Potion Crafting",
+        "type": "text",
+        "value": "When you brew a potion using the crafting rules in the Dungeon Master's Guide, the amount of time required to craft it is halved."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Cartographer Spells (EFA)__: When you reach an Artificer level specified in the Cartographer Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Cartographer Spells",
+        "type": "table",
+        "value": {
+          "title": "Cartographer Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Faerie Fire, Guiding Bolt, Healing Word"
+            ],
+            [
+              "5",
+              "Locate Object, Mind Spike"
+            ],
+            [
+              "9",
+              "Call Lightning, Clairvoyance"
+            ],
+            [
+              "13",
+              "Banishment, Locate Creature"
+            ],
+            [
+              "17",
+              "Scrying, Teleportation Circle"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Adventurer's Atlas (EFA)__: Whenever you finish a Long Rest while holding Cartographer's Tools, you can use that tool to create a set of magical maps by touching at least two creatures (one of whom can be yourself), up to a maximum number of creatures equal to 1 plus your Intelligence modifier (minimum of two creatures). Each target receives a magical map, which constantly updates to show the relative position of all the map holders but is illegible to all others. The maps last until you die or until you use this feature again, at which point any existing maps created by this feature immediately vanish."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "While carrying the map, a target gains the following benefits."
+      },
+      {
+        "name": "Awareness",
+        "type": "text",
+        "value": "The target adds 1d4 to its Initiative rolls."
+      },
+      {
+        "name": "Positioning",
+        "type": "text",
+        "value": "The target knows the location of all other map holders that are on the same plane of existence as itself. When casting a spell or creating another effect that requires being able to see the effect's target, a map holder can target another map holder regardless of sight or cover, so long as the other map holder is still within the effect's range."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "__Mapping Magic (EFA)__: You gain the following benefits."
+      },
+      {
+        "name": "Illuminated Cartography",
+        "type": "text",
+        "value": "You can cast __Faerie Fire__ without expending a spell slot, outlining the affected creatures as if in ink. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+      },
+      {
+        "name": "Portal Jump",
+        "type": "text",
+        "value": "On your turn, you can spend an amount of movement equal to half your Speed (round down) to teleport to an unoccupied space you can see within 10 feet of yourself or within 5 feet of a creature that is within 30 feet of you and holding one of your Adventurer's Atlas maps. You can't use this benefit if your Speed is 0."
+      }
+    ]
+  },
+  {
+    "name": "Cartographer Spells (Lv. 3 Cartographer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_cartographer_efa=b1",
+    "type": "Lv. 3 Cartographer Subclass Feature",
+    "prerequisite": "Cartographer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you reach an Artificer level specified in the Cartographer Spells table, you thereafter always have the listed spells prepared."
+      },
+      {
+        "name": "Cartographer Spells",
+        "type": "table",
+        "value": {
+          "title": "Cartographer Spells",
+          "headers": [
+            "Artificer Level",
+            "Spells"
+          ],
+          "rows": [
+            [
+              "3",
+              "Faerie Fire, Guiding Bolt, Healing Word"
+            ],
+            [
+              "5",
+              "Locate Object, Mind Spike"
+            ],
+            [
+              "9",
+              "Call Lightning, Clairvoyance"
+            ],
+            [
+              "13",
+              "Banishment, Locate Creature"
+            ],
+            [
+              "17",
+              "Scrying, Teleportation Circle"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mapping Magic (Lv. 3 Cartographer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_cartographer_efa=b1",
+    "type": "Lv. 3 Cartographer Subclass Feature",
+    "prerequisite": "Cartographer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Illuminated Cartography",
+        "type": "text",
+        "value": "You can cast __Faerie Fire__ without expending a spell slot, outlining the affected creatures as if in ink. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+      },
+      {
+        "name": "Portal Jump",
+        "type": "text",
+        "value": "On your turn, you can spend an amount of movement equal to half your Speed (round down) to teleport to an unoccupied space you can see within 10 feet of yourself or within 5 feet of a creature that is within 30 feet of you and holding one of your Adventurer's Atlas maps. You can't use this benefit if your Speed is 0."
+      }
+    ]
+  },
+  {
+    "name": "Tools of the Trade (Lv. 3 Cartographer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_cartographer_efa=b1",
+    "type": "Lv. 3 Cartographer Subclass Feature",
+    "prerequisite": "Cartographer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain the following benefits."
+      },
+      {
+        "name": "Tool Proficiency",
+        "type": "text",
+        "value": "You gain proficiency with Calligrapher's Supplies and Cartographer's Tools. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan's Tools of your choice (or with two other types if you have both)."
+      },
+      {
+        "name": "Scroll Crafting",
+        "type": "text",
+        "value": "When you scribe a Spell Scroll using the crafting rules in the Player's Handbook, the amount of time required to craft it is halved."
+      }
+    ]
+  },
+  {
+    "name": "Guided Precision (Lv. 5 Cartographer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s4-0~sub_cartographer_efa=b1",
+    "type": "Lv. 5 Cartographer Subclass Feature",
+    "prerequisite": "Cartographer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Cartographer (EFA) Features",
+        "type": "text",
+        "value": "Once per turn, whenever you cast a spell from your Cartographer Spells list or hit a creature affected by your __Faerie Fire__ with an attack roll, you can add your Intelligence modifier to one damage roll of the spell or attack."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "In addition, taking damage can't cause you to lose *Concentration* on __Faerie Fire__."
+      }
+    ]
+  },
+  {
+    "name": "Ingenious Movement (Lv. 9 Cartographer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s8-0~sub_cartographer_efa=b1",
+    "type": "Lv. 9 Cartographer Subclass Feature",
+    "prerequisite": "Cartographer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Cartographer (EFA) Features",
+        "type": "text",
+        "value": "When you use your Flash of Genius, you or a willing creature of your choice that you can see within 30 feet of yourself can teleport up to 30 feet to an unoccupied space you can see as part of that same Reaction."
+      }
+    ]
+  },
+  {
+    "name": "Superior Atlas (Lv. 15 Cartographer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s14-0~sub_cartographer_efa=b1",
+    "type": "Lv. 15 Cartographer Subclass Feature",
+    "prerequisite": "Cartographer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Cartographer (EFA) Features",
+        "type": "text",
+        "value": "Your Adventurer's Atlas improves, gaining the following benefits."
+      },
+      {
+        "name": "Safe Haven",
+        "type": "text",
+        "value": "When a map holder would be reduced to 0 Hit Points but not killed outright, that creature can destroy its map. The creature's Hit Points instead change to a number equal to twice your Artificer level, and the creature is teleported to an unoccupied space within 5 feet of you or another map holder of its choice."
+      },
+      {
+        "name": "Unerring Path",
+        "type": "text",
+        "value": "If you are one of the map holders for your Adventurer's Atlas, you can cast __Find the Path__ without expending a spell slot, without preparing the spell, and without needing spell components. Once you use this benefit, you can't use it again until you finish a Long Rest."
       }
     ]
   },
