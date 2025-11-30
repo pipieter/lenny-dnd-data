@@ -22,9 +22,15 @@ import { getSkills } from './skills';
 
 function main(): void {
     const databank = new Databank();
+    // Load spells
     databank.add('./5etools-src/data/spells/index.json');
     databank.add('./5etools-src/data/spells/fluff-index.json');
     databank.addSpellSource('./5etools-src/data/spells/sources.json');
+    // Load items
+    databank.add('./5etools-src/data/items.json');
+    databank.add('./5etools-src/data/fluff-items.json');
+    databank.add('./5etools-src/data/items-base.json');
+    databank.add('./5etools-src/data/magicvariants.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -32,10 +38,10 @@ function main(): void {
     const data = loadData(path);
     stopwatch.log('Loaded databanks');
 
-    const items = getItems(data);
+    const items = getItems(databank);
     stopwatch.log('Items retrieved');
 
-    const itemVariants = getItemVariants(data);
+    const itemVariants = getItemVariants(databank);
     stopwatch.log('Items variant retrieved');
 
     const spells = getSpells(databank);
