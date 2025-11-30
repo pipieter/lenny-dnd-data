@@ -56,6 +56,9 @@ export class Databank {
         for (const key of Object.keys(data)) {
             if (key === '_meta') continue;
 
+            if ((this as any)[key] === undefined) {
+                throw new Error(`Databank error: key '${key}' not found!`);
+            }
             (this as any)[key].push(...data[key]);
         }
     }
