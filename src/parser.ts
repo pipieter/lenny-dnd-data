@@ -702,8 +702,8 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
 
         case 'attack': {
             const type = AttackAbbrMap.get(description.attackType.toLocaleLowerCase()) ?? 'Unknown';
-            const entries = joinStringsWithOr(description.attackEntries.map(cleanDNDText));
-            const hitEntries = joinStringsWithOr(description.hitEntries.map(cleanDNDText));
+            const entries = joinStringsWithOr(description.attackEntries.map(cleanDNDText), false);
+            const hitEntries = joinStringsWithOr(description.hitEntries.map(cleanDNDText), false);
             return [`*${type}:* ${entries} **Hit:** ${hitEntries}`];
         }
 
