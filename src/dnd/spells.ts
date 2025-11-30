@@ -10,7 +10,6 @@ import {
     parseSpellSchool,
 } from '../parser';
 import { getSpellsUrl } from '../urls';
-import { read } from '../read';
 import { Databank } from '../data';
 
 interface Caster {
