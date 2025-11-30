@@ -88,6 +88,16 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
     return result.length ? result.join('\n') : null;
 }
 
+const FeatCategoryMap: Record<string, string> = {
+    G: 'General Feat',
+    O: 'Origin Feat',
+    FS: 'Fighting Style Feat',
+    'FS:P': 'Fighting Style Replacement Feat (Paladin)',
+    'FS:R': 'Fighting Style Replacement Feat (Ranger)',
+    EB: 'Epic Boon Feat',
+    D: 'Dragonmark',
+};
+
 function getFeatPrerequisites(feat: Feat): string | null {
     if (!feat.prerequisite) return null;
 
@@ -213,6 +223,20 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     group.push(entry);
                     break;
                 }
+                case 'featCategory': {
+                    const featCategories = entry.map((e: string) => FeatCategoryMap[e]);
+                    group.push(
+                        `Any ${joinStringsWithOr(featCategories, true)} Feat`
+                    );
+                    break;
+                }
+                case 'exclusiveFeatCategory': {
+                    const featCategories = entry.map((e: string) => FeatCategoryMap[e]);
+                    group.push(
+                        `Can't Have Another ${joinStringsWithOr(featCategories, true)} Feat`
+                    );
+                    break;
+                }
                 default: {
                     throw `Unsupported feat prerequisite key ${key}`;
                 }
@@ -252,17 +276,8 @@ function getFeatPrerequisites(feat: Feat): string | null {
 function getFeatType(feat: Feat): string {
     if (!feat.category) return 'Uncategorized Feat';
 
-    const categoryMap: Record<string, string> = {
-        G: 'General Feat',
-        O: 'Origin Feat',
-        FS: 'Fighting Style Feat',
-        'FS:P': 'Fighting Style Replacement Feat (Paladin)',
-        'FS:R': 'Fighting Style Replacement Feat (Ranger)',
-        EB: 'Epic Boon Feat',
-    };
-
-    if (feat.category in categoryMap) {
-        return categoryMap[feat.category];
+    if (feat.category in FeatCategoryMap) {
+        return FeatCategoryMap[feat.category];
     }
 
     throw `Unsupported feat-type ${feat.category}`;
