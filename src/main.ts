@@ -31,6 +31,9 @@ function main(): void {
     databank.add('./5etools-src/data/fluff-items.json');
     databank.add('./5etools-src/data/items-base.json');
     databank.add('./5etools-src/data/magicvariants.json');
+    // Load conditions
+    databank.add('./5etools-src/data/conditionsdiseases.json');
+    databank.add('./5etools-src/data/fluff-conditionsdiseases.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -47,7 +50,7 @@ function main(): void {
     const spells = getSpells(databank);
     stopwatch.log('Spells retrieved');
 
-    const { conditions, diseases } = getConditionsStatusesAndDiseases(data);
+    const { conditions, diseases } = getConditionsStatusesAndDiseases(databank);
     stopwatch.log('Conditions & Diseases retrieved');
 
     const creatures = getCreatures();

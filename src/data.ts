@@ -62,6 +62,20 @@ export class Databank {
     public readonly itemMastery: any[] = [];
     public readonly magicvariant: any[] = [];
     public readonly itemFluff: any[] = [];
+    // Conditions
+    public readonly condition: any[] = [];
+    public readonly status: any[] = [];
+    public readonly disease: any[] = [];
+    public readonly conditionFluff: any[] = [];
+    public readonly statusFluff: any[] = [];
+    public readonly diseaseFluff: any[] = [];
+
+    public get(key: string): any[] {
+        if ((this as any)[key] === undefined) {
+            throw new Error(`Databank error: key '${key}' not found!`);
+        }
+        return (this as any)[key];
+    }
 
     public add(paths: string | string[]) {
         // Keys that will not be handled
@@ -71,10 +85,7 @@ export class Databank {
         for (const key of Object.keys(data)) {
             if (keysToIgnore.includes(key)) continue;
 
-            if ((this as any)[key] === undefined) {
-                throw new Error(`Databank error: key '${key}' not found!`);
-            }
-            (this as any)[key].push(...data[key]);
+            this.get(key).push(...data[key]);
         }
     }
 
@@ -100,5 +111,10 @@ export class Databank {
                 this.spellSource.push(...parsed);
             }
         }
+    }
+
+    public search(key: string, name: string, source: string): any | undefined {
+        const entries = this.get(key);
+        return entries.find((entry) => entry.name === name && entry.source === source);
     }
 }
