@@ -341,7 +341,9 @@ export function getItems(databank: Databank): any[] {
 
 export function getItemVariants(databank: Databank): any[] {
     const items = [...databank.item, ...databank.baseitem];
-    const variants = databank.magicvariant.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem));
+    const variants = databank.magicvariant.flatMap((m: any) =>
+        resolveMagicVariant(m, databank.baseitem)
+    );
     const seenVariants = new Set();
     const raw: any[] = [];
     for (const variant of variants) {
