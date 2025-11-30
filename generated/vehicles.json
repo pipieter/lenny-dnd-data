@@ -557,6 +557,45 @@
     ]
   },
   {
+    "name": "Lyrandar Air Cruiser",
+    "source": "EFA",
+    "subtitle": "Elemental Airship",
+    "url": "https://5e.tools/vehicles.html#lyrandar%20air%20cruiser_efa",
+    "tokenUrl": null,
+    "creatureCapacity": "10 crew\n40 passengers",
+    "cargoCapacity": "2 tons",
+    "travelPace": "fly [object Object] ft. or canHover true ft.\nfly 10 mph.",
+    "description": [
+      {
+        "name": "Weapon: Lightning Turret",
+        "type": "text",
+        "value": "This turret swivels to shoot lightning blasts and can accommodate up to one Medium creature."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A creature inside the turret has Three-Quarters Cover against attacks and other effects that originate outside it. While inside, a creature can take the Lightning Blast action to aim and fire the turret."
+      }
+    ]
+  },
+  {
+    "name": "Lyrandar Skyskiff",
+    "source": "EFA",
+    "subtitle": "Elemental Airship",
+    "url": "https://5e.tools/vehicles.html#lyrandar%20skyskiff_efa",
+    "tokenUrl": null,
+    "creatureCapacity": "2 crew\n2 passengers",
+    "cargoCapacity": "0.5 tons",
+    "travelPace": "fly [object Object] ft. or canHover true ft.\nfly 7 mph.",
+    "description": [
+      {
+        "name": "Weapon: Tow Cable",
+        "type": "text",
+        "value": "This station consists of a compact grappling hook, reinforced rope, and launcher. One creature can operate this station at a time. The crew member operating this station can take the Harpoon and Reel actions."
+      }
+    ]
+  },
+  {
     "name": "Mechanical Beholder",
     "source": "AI",
     "subtitle": "Huge Ship (15 ft. by 15 ft.)",
@@ -893,6 +932,23 @@
         "name": "Weapon: Mangonel",
         "type": "text",
         "value": "It takes 2 actions to load the mangonel, 2 actions to aim it, and 1 action to fire it."
+      }
+    ]
+  },
+  {
+    "name": "Strider Airship",
+    "source": "EFA",
+    "subtitle": "Elemental Airship",
+    "url": "https://5e.tools/vehicles.html#strider%20airship_efa",
+    "tokenUrl": null,
+    "creatureCapacity": "6 crew\n20 passengers",
+    "cargoCapacity": "1 tons",
+    "travelPace": "fly [object Object] ft. or canHover true ft.\nfly 8 mph.",
+    "description": [
+      {
+        "name": "Weapon: Arcane Launcher",
+        "type": "text",
+        "value": "This miniature cannon shoots bursts of magical force. A creature operating the Arcane Launcher can take the Energy Blast action to aim and fire the cannon."
       }
     ]
   },
@@ -1603,7 +1659,7 @@
       {
         "name": "",
         "type": "text",
-        "value": "This flexible hose is connected to a tank that holds 30 gallons of water from the River Styx. Each use of the weapon depletes 10 gallons of the water. Refilling the tank requires access to the Styx."
+        "value": "This flexible hose is connected to a tank that holds 30 gallons of water from the River Styx (BGDIA). Each use of the weapon depletes 10 gallons of the water. Refilling the tank requires access to the Styx."
       },
       {
         "name": "Styx Sprayer (Requires 1 Crew and Grants Half Cover; 3 Uses)",

@@ -216,6 +216,7 @@ function getVehicleType(vehicle: Vehicle): string {
         SPELLJAMMER: 'Spelljammer',
         INFWAR: 'Infernal War Machine',
         CREATURE: 'Creature',
+        ELEMENTAL_AIRSHIP: 'Elemental Airship',
     };
     const type = typeMap[vehicle.vehicleType];
     if (type) return type;
