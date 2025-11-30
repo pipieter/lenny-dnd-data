@@ -1,5 +1,6 @@
 import { existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
 import { title } from './parser';
+import { read } from './read';
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -43,4 +44,46 @@ export function loadData(dataPath: string): any {
     }
 
     return databank;
+}
+
+export class Databank {
+    public readonly spell: any[] = [];
+    public readonly spellFluff: any[] = [];
+    public readonly spellSource: any[] = [];
+
+    public add(paths: string | string[]) {
+        const data = read(paths);
+        for (const key of Object.keys(data)) {
+            if (key === '_meta') continue;
+
+            if ((this as any)[key] === undefined) {
+                throw new Error(`Databank error: key '${key}' not found!`);
+            }
+            (this as any)[key].push(...data[key]);
+        }
+    }
+
+    /**
+     * Spell sources are stored in a very special way, and thus need to be
+     * handled separately.
+     * @param source The source path of the spellcasters
+     */
+    public addSpellSource(path: string) {
+        const data = read(path);
+        for (const source of Object.keys(data)) {
+            for (const spell of Object.keys(data[source])) {
+                const classes = [
+                    ...(data[source][spell].class || []),
+                    ...(data[source][spell].classVariant || []),
+                ];
+                const parsed = classes.map((class$) => ({
+                    spellName: spell,
+                    spellSource: source,
+                    casterName: class$.name,
+                    casterSource: class$.source,
+                }));
+                this.spellSource.push(...parsed);
+            }
+        }
+    }
 }
