@@ -33,7 +33,11 @@ function main(): void {
     const itemVariants = getItemVariants(data);
     stopwatch.log('Items variant retrieved');
 
-    const spells = getSpells('./5etools-src/data/spells');
+    const spells = getSpells({
+        path: './5etools-src/data/spells/index.json',
+        fluffPath: './5etools-src/data/spells/fluff-index.json',
+        sourcesPath: './5etools-src/data/spells/sources.json',
+    });
     stopwatch.log('Spells retrieved');
 
     const { conditions, diseases } = getConditionsStatusesAndDiseases(data);
