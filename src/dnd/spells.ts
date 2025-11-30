@@ -11,6 +11,7 @@ import {
 } from '../parser';
 import { getSpellsUrl } from '../urls';
 import { read } from '../read';
+import { Databank } from '../data';
 
 interface Caster {
     name: string;
@@ -51,14 +52,11 @@ function getSpellDescription(spell: any): Description[] {
     return descriptions;
 }
 
-function getCasters(spell: any, sources: any): any[] {
+function getCasters(spell: any, sources: any[]): any[] {
     const fromSpell = spell.classes?.fromClassList || [];
-    const fromSourceEntries =
-        (sources[spell.source] ? sources[spell.source][spell.name] : {}) || {};
-    const fromSource = [
-        ...(fromSourceEntries.class || []),
-        ...(fromSourceEntries.classVariant || []),
-    ];
+    const fromSource = sources
+        .filter((source) => source.spellName === spell.name && source.spellSource === spell.source)
+        .map((source) => ({ name: source.casterName, source: source.casterSource }));
 
     const casters = [...fromSpell, ...fromSource].map((caster) => ({
         name: caster.name,
@@ -100,10 +98,10 @@ interface GetSpellsArgs {
     sourcesPaths?: string[];
 }
 
-export function getSpells(paths: GetSpellsArgs): Spell[] {
-    const spells = read(paths.paths).spell;
-    const fluffs = read(paths.fluffPaths).spellFluff || [];
-    const sources = read(paths.sourcesPaths);
+export function getSpells(databank: Databank): Spell[] {
+    const spells = databank.spell;
+    const fluffs = databank.spellFluff;
+    const sources = databank.spellSource;
 
     const result = [];
     for (const spell of spells) {

@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 import { getConditionsStatusesAndDiseases } from './dnd/conditions';
-import { loadData } from './data';
+import { Databank, loadData } from './data';
 import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
@@ -21,6 +21,11 @@ import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './skills';
 
 function main(): void {
+    const databank = new Databank();
+    databank.add('./5etools-src/data/spells/index.json');
+    databank.add('./5etools-src/data/spells/fluff-index.json');
+    databank.addSpellSource('./5etools-src/data/spells/sources.json');
+
     const stopwatch = new StopwatchLogger();
 
     const path = './5etools-src/data';
@@ -33,11 +38,7 @@ function main(): void {
     const itemVariants = getItemVariants(data);
     stopwatch.log('Items variant retrieved');
 
-    const spells = getSpells({
-        paths: ['./5etools-src/data/spells/index.json'],
-        fluffPaths: ['./5etools-src/data/spells/fluff-index.json'],
-        sourcesPaths: ['./5etools-src/data/spells/sources.json'],
-    });
+    const spells = getSpells(databank);
     stopwatch.log('Spells retrieved');
 
     const { conditions, diseases } = getConditionsStatusesAndDiseases(data);
