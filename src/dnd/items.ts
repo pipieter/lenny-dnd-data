@@ -11,7 +11,7 @@ import {
 import { DamageTypes } from '../5etools-conversion/data';
 import { getItemsUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
-import { getKey } from '../data';
+import { Databank, getKey } from '../data';
 
 interface Item {
     name: string;
@@ -328,28 +328,30 @@ function parseItem(item: any, data: any): Item {
     return result;
 }
 
-export function getItems(data: any): any[] {
+export function getItems(databank: Databank): any[] {
     // Resolve raw item data
-    const items = [...data.item, ...data.baseitem];
+    const items = [...databank.item, ...databank.baseitem];
     const raw: any[] = [];
     for (const item of items) {
-        raw.push(resolveItemEntry(handleCopy(item, items), data.itemEntry));
+        raw.push(resolveItemEntry(handleCopy(item, items), databank.itemEntry));
     }
 
-    return raw.map((item) => parseItem(item, data));
+    return raw.map((item) => parseItem(item, databank));
 }
 
-export function getItemVariants(data: any): any[] {
-    const items = [...data.item, ...data.baseitem];
-    const variants = data.magicvariant.flatMap((m: any) => resolveMagicVariant(m, data.baseitem));
+export function getItemVariants(databank: Databank): any[] {
+    const items = [...databank.item, ...databank.baseitem];
+    const variants = databank.magicvariant.flatMap((m: any) =>
+        resolveMagicVariant(m, databank.baseitem)
+    );
     const seenVariants = new Set();
     const raw: any[] = [];
     for (const variant of variants) {
         const key = getKey(variant.name, variant.source);
         if (seenVariants.has(key)) continue;
-        raw.push(resolveItemEntry(handleCopy(variant, items), data.itemEntry));
+        raw.push(resolveItemEntry(handleCopy(variant, items), databank.itemEntry));
         seenVariants.add(key);
     }
 
-    return raw.map((variant) => parseItem(variant, data));
+    return raw.map((variant) => parseItem(variant, databank));
 }

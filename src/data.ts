@@ -47,14 +47,29 @@ export function loadData(dataPath: string): any {
 }
 
 export class Databank {
+    // Spells
     public readonly spell: any[] = [];
     public readonly spellFluff: any[] = [];
     public readonly spellSource: any[] = [];
+    // Items
+    public readonly item: any[] = [];
+    public readonly baseitem: any[] = [];
+    public readonly itemGroup: any[] = [];
+    public readonly itemProperty: any[] = [];
+    public readonly itemType: any[] = [];
+    public readonly itemTypeAdditionalEntries: any[] = [];
+    public readonly itemEntry: any[] = [];
+    public readonly itemMastery: any[] = [];
+    public readonly magicvariant: any[] = [];
+    public readonly itemFluff: any[] = [];
 
     public add(paths: string | string[]) {
+        // Keys that will not be handled
+        const keysToIgnore = ['_meta', 'linkedLootTables'];
+
         const data = read(paths);
         for (const key of Object.keys(data)) {
-            if (key === '_meta') continue;
+            if (keysToIgnore.includes(key)) continue;
 
             if ((this as any)[key] === undefined) {
                 throw new Error(`Databank error: key '${key}' not found!`);
