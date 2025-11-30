@@ -235,7 +235,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@actSaveFail\}/g, 'Failure');
         text = text.replaceAll(
             /\{@actSave ([^\}]*?)\}/g,
-            (p1) => `${AbilityScores.get(p1)} Saving Throw:`
+            (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
         );
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
@@ -316,7 +316,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@actSaveFail\}/g, '*Failure*');
         text = text.replaceAll(
             /\{@actSave ([^\}]*?)\}/g,
-            (p1) => `*${AbilityScores.get(p1)} Saving Throw:*`
+            (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:*`
         );
     }
 
