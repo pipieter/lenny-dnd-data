@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 import { getConditionsStatusesAndDiseases } from './dnd/conditions';
-import { loadData } from './data';
+import { Databank, loadData } from './data';
 import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
@@ -21,19 +21,30 @@ import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './skills';
 
 function main(): void {
+    const databank = new Databank();
+    // Load spells
+    databank.add('./5etools-src/data/spells/index.json');
+    databank.add('./5etools-src/data/spells/fluff-index.json');
+    databank.addSpellSource('./5etools-src/data/spells/sources.json');
+    // Load items
+    databank.add('./5etools-src/data/items.json');
+    databank.add('./5etools-src/data/fluff-items.json');
+    databank.add('./5etools-src/data/items-base.json');
+    databank.add('./5etools-src/data/magicvariants.json');
+
     const stopwatch = new StopwatchLogger();
 
     const path = './5etools-src/data';
     const data = loadData(path);
     stopwatch.log('Loaded databanks');
 
-    const items = getItems(data);
+    const items = getItems(databank);
     stopwatch.log('Items retrieved');
 
-    const itemVariants = getItemVariants(data);
+    const itemVariants = getItemVariants(databank);
     stopwatch.log('Items variant retrieved');
 
-    const spells = getSpells('./5etools-src/data/spells');
+    const spells = getSpells(databank);
     stopwatch.log('Spells retrieved');
 
     const { conditions, diseases } = getConditionsStatusesAndDiseases(data);
