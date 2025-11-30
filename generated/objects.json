@@ -10,6 +10,11 @@
         "name": "",
         "type": "text",
         "value": "Aiming the Automatic Ballista requires the Utilize action. Then a creature can take the Ballista Bolt action."
+      },
+      {
+        "name": "Ballista Bolt (Requires Aim)",
+        "type": "text",
+        "value": "+6, range 120/480 ft. *Hit:* 22 (**4d10**) Piercing damage."
       }
     ]
   },
@@ -24,6 +29,11 @@
         "name": "",
         "type": "text",
         "value": "A ballista is a massive crossbow that fires heavy bolts. Before it can be fired, it must be loaded and aimed. It takes one action to load the weapon, one action to aim it, and one action to fire it."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Bolt**: *Ranged Weapon Attack:* +6 to hit, range 120/480 ft., one target. **Hit:** 16 (**3d10**) piercing damage."
       }
     ]
   },
@@ -38,6 +48,11 @@
         "name": "",
         "type": "text",
         "value": "A Ballista is a massive crossbow that fires heavy bolts. Loading a Ballista requires the Utilize action, and aiming it requires another Utilize action. Then a crew member can take the Ballista Bolt action."
+      },
+      {
+        "name": "Ballista Bolt (Requires Load and Aim)",
+        "type": "text",
+        "value": "+6, range 120/480 ft. *Hit:* 16 (**3d10**) Piercing damage."
       }
     ]
   },
@@ -52,6 +67,16 @@
         "name": "",
         "type": "text",
         "value": "This wagon-sized device is designed to look roughly like a dragon. Before it can be used, the boilerdrak must be lit and aimed. It takes 1 action to light the weapon, 1 action to aim it, and 1 action to fire it. When you use your action to fire it, roll a d20. If you roll a 2 or higher, use the Flames action. If you roll a 1, use the Explosion action."
+      },
+      {
+        "name": "Flames",
+        "type": "text",
+        "value": "The boilerdrak expels flames in a 60-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 27 (**5d10**) fire damage on a failed save, or half as much damage on a successful one."
+      },
+      {
+        "name": "Explosion",
+        "type": "text",
+        "value": "The boilerdrak explodes in a 30-foot-radius sphere and is destroyed. Each creature in that area must make a DC 15 Dexterity saving throw, taking 27 (**5d10**) fire damage on a failed save, or half as much damage on a successful one."
       }
     ]
   },
@@ -71,6 +96,11 @@
         "name": "",
         "type": "text",
         "value": "A cannon is usually supported in a wooden frame with wheels. Before it can be fired, the cannon must be loaded and aimed. It takes one action to load the weapon, one action to aim it, and one action to fire it."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Cannon Ball**: *Ranged Weapon Attack:* +6 to hit, range 600/2,400 ft., one target. **Hit:** 44 (**8d10**) bludgeoning damage."
       }
     ]
   },
@@ -85,6 +115,11 @@
         "name": "",
         "type": "text",
         "value": "A Cannon uses gunpowder or arcane power to propel heavy iron balls at destructive speeds. A Cannon is usually attached to a wooden frame with wheels. Loading a Cannon requires the Utilize action, and aiming it requires another Utilize action. Then a crew member can take the Cannonball action."
+      },
+      {
+        "name": "Cannonball (Requires Load and Aim)",
+        "type": "text",
+        "value": "+6, range 600/2,400 ft. *Hit:* 44 (**8d10**) Bludgeoning damage."
       }
     ]
   },
@@ -94,7 +129,13 @@
     "subtitle": "Large object",
     "url": "https://5e.tools/objects.html#captain%20a-hole_rmbre",
     "tokenUrl": "https://5e.tools/img/objects/tokens/RMBRE/Captain%20A-Hole.webp",
-    "description": []
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Cannon**: *Ranged Weapon Attack:* +5 to hit, range 30 ft., one target. **Hit:** 3 (**1d6**) bludgeoning damage."
+      }
+    ]
   },
   {
     "name": "Clockwork Trebuchet",
@@ -107,6 +148,11 @@
         "name": "",
         "type": "text",
         "value": "Pulling a lever of the Clockwork Trebuchet requires the Utilize action. Then a creature can take the Trebuchet Stone action."
+      },
+      {
+        "name": "Trebuchet Stone (Requires Lever Pull)",
+        "type": "text",
+        "value": "+5, range 200/800 ft. (can't hit targets within 30 feet of itself). Hit: 27 (**5d10**) Bludgeoning damage."
       }
     ]
   },
@@ -121,6 +167,11 @@
         "name": "",
         "type": "text",
         "value": "Loading a Decrepit Mangonel requires two Utilize actions, and aiming it requires one Utilize action. Then a creature can take the Sack of Hands action."
+      },
+      {
+        "name": "Sack of Hands (Requires Load and Aim)",
+        "type": "text",
+        "value": "A launched sack of writhing hands lands in a space 30 to 100 feet away from the mangonel. A __Swarm of Crawling Claws__ appears where the sack lands."
       }
     ]
   },
@@ -135,6 +186,16 @@
         "name": "",
         "type": "text",
         "value": "(Created by the __Eldritch Cannon__ subclass feature.)"
+      },
+      {
+        "name": "Activate Cannon (Requires You to be within 60 Feet of the Cannon)",
+        "type": "text",
+        "value": "As a Bonus Action, you order the cannon to use the Flamethrower, Force Ballista, or Protector option below; you can direct the cannon to move up to 15 feet before or after that option:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Flamethrower**: The cannon blasts fire in a 15-foot Cone. Each creature in that area makes a Dexterity saving throw against your spell save DC, taking **2d8** Fire damage on a failed save or half as much damage on a successful one. Flammable objects in the Cone that aren't being worn or carried start burning.\n• **Force Ballista**: Make a ranged spell attack originating from the cannon at one creature or object within 120 feet of it. On a hit, the target takes **2d8** Force damage, and if the target is a creature, it is pushed up to 5 feet away from the cannon.\n• **Protector**: The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of the cannon a number of Temporary Hit Points equal to 1d8 plus your Intelligence modifier (minimum of +1)."
       }
     ]
   },
@@ -149,6 +210,11 @@
         "name": "",
         "type": "text",
         "value": "(Created by the __Eldritch Cannon__ subclass feature.)"
+      },
+      {
+        "name": "Flamethrower",
+        "type": "text",
+        "value": "The cannon exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking **2d8** fire damage on a failed save or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being worn or carried."
       }
     ]
   },
@@ -163,6 +229,11 @@
         "name": "",
         "type": "text",
         "value": "(Created by the __Eldritch Cannon__ subclass feature.)"
+      },
+      {
+        "name": "Force Ballista",
+        "type": "text",
+        "value": "Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes **2d8** force damage, and if the target is a creature, it is pushed up to 5 feet away from the cannon."
       }
     ]
   },
@@ -177,6 +248,11 @@
         "name": "",
         "type": "text",
         "value": "(Created by the __Eldritch Cannon__ subclass feature.)"
+      },
+      {
+        "name": "Protector",
+        "type": "text",
+        "value": "The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of it a number of temporary hit points equal to **1d8** + your Intelligence modifier (minimum of +1)."
       }
     ]
   },
@@ -191,6 +267,11 @@
         "name": "",
         "type": "text",
         "value": "Loading the Enchanted Ballista requires the Utilize action. Then a creature can take the Ballista Bolt action."
+      },
+      {
+        "name": "Ballista Bolt (Requires Load)",
+        "type": "text",
+        "value": "+6, range 120/480 ft. *Hit:* 22 (**4d10**) Piercing damage."
       }
     ]
   },
@@ -215,6 +296,11 @@
         "name": "",
         "type": "text",
         "value": "The coach is designed for a crew of two: a driver and a gunner. The driver can take the Utilize action to move and turn the coach, which has a Speed of 30 feet, using levers and pedals inside. The gunner can use the Flamethrower action to aim and fire it."
+      },
+      {
+        "name": "Flamethrower",
+        "type": "text",
+        "value": "*Dexterity Saving Throw:* DC 15, each creature in a 60-foot-long, 5-foot-wide Line. *Failure* 14 (**4d6**) Fire damage, and the creature starts burning. *Success* Half damage only."
       }
     ]
   },
@@ -229,6 +315,11 @@
         "name": "",
         "type": "text",
         "value": "Aiming the Forge Launcher requires the Utilize action. Then a creature can take the Fiery Canister action."
+      },
+      {
+        "name": "Fiery Canister (Requires Aim)",
+        "type": "text",
+        "value": "*Dexterity Saving Throw:* DC 15, each creature in a 20-foot-radius Sphere centered on a point 30 to 300 feet from the launcher. *Failure* 14 (**4d6**) Fire damage. *Success* Half damage."
       }
     ]
   },
@@ -372,6 +463,16 @@
         "name": "",
         "type": "text",
         "value": "While taking an action to aim the gnomeflinger, you set the maximum horizontal distance of the Fling Personnel action to 60 feet, 150 feet, or 300 feet."
+      },
+      {
+        "name": "Fling Personnel",
+        "type": "text",
+        "value": "The gnomeflinger catapults a Medium or smaller creature at least 60 feet away horizontally, with a maximum horizontal distance of 60 feet, 150 feet, or 300 feet, depending on the option chosen when the catapult was aimed. During this trajectory, the creature always reaches a height of 60 feet vertically."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A creature that collides with another creature or an object during this trajectory takes 3 (**1d6**) bludgeoning damage for every 10 feet away from the gnomeflinger it is."
       }
     ]
   },
@@ -444,6 +545,11 @@
         "name": "",
         "type": "text",
         "value": "A back-mounted, wooden catapult flings small kegs of toxic gas. Loading a Keg Launcher requires the Utilize action, and aiming it requires another Utilize action. Then a crew member can take the Toxic Keg action."
+      },
+      {
+        "name": "Toxic Keg (Requires Load and Aim)",
+        "type": "text",
+        "value": "*Constitution Saving Throw:* DC 15, each creature in a 20-foot-radius Sphere centered on a point 30 to 300 feet from the launcher. *Failure* 14 (**4d6**) Poison damage. *Success* Half damage."
       }
     ]
   },
@@ -458,6 +564,11 @@
         "name": "",
         "type": "text",
         "value": "A Lightning Cannon is a small, bronze cannon inlaid with arcane runes and mounted on a heavy tripod device. It launches balls of crackling electricity. Aiming a Lightning Cannon requires the Utilize action, then a crew member can take the Lightning Ball action."
+      },
+      {
+        "name": "Lightning Ball (Requires Aim)",
+        "type": "text",
+        "value": "+6, range 300/1,200 ft. *Hit:* 22 (**4d10**) Lightning damage."
       }
     ]
   },
@@ -477,6 +588,11 @@
         "name": "",
         "type": "text",
         "value": "A mangonel typically hurls a heavy stone, although it can hurl other kinds of projectiles, with different effects."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Mangonel Stone**: *Ranged Weapon Attack:* +5 to hit, range 200/800 ft. (can't hit targets within 60 feet of it), one target. **Hit:** 27 (**5d10**) bludgeoning damage."
       }
     ]
   },
@@ -491,6 +607,11 @@
         "name": "",
         "type": "text",
         "value": "A Mangonel is a catapult that hurls heavy projectiles in a high arc, so it can hit targets behind walls. Loading a Mangonel requires two Utilize actions, and aiming it requires two more Utilize actions. Then a crew member can take the Mangonel Stone action."
+      },
+      {
+        "name": "Mangonel Stone (Requires Load and Aim)",
+        "type": "text",
+        "value": "+5, range 200/800 ft. (can't hit targets within 60 feet of itself). *Hit:* 27 (**5d10**) Bludgeoning damage."
       }
     ]
   },
@@ -515,6 +636,11 @@
         "name": "",
         "type": "text",
         "value": "It takes a minimum of four Medium creatures to operate a ram. Because of the gallery roof, these operators have Cover against attacks from above."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Ram**: *Melee Weapon Attack:* +8 to hit, reach 5 ft., one object. **Hit:** 16 (**3d10**) bludgeoning damage."
       }
     ]
   },
@@ -534,6 +660,11 @@
         "name": "",
         "type": "text",
         "value": "The gallery roof gives the operators Total Cover against attacks and other effects from above."
+      },
+      {
+        "name": "Ram (Requires Position)",
+        "type": "text",
+        "value": "+8, reach 5 ft. *Hit:* 16 (**3d10**) Bludgeoning damage."
       }
     ]
   },
@@ -590,6 +721,11 @@
         "name": "",
         "type": "text",
         "value": "Aiming a Storm Cannon requires the Utilize action, then a creature can take the Lightning Ball action."
+      },
+      {
+        "name": "Lightning Ball (Requires Aim)",
+        "type": "text",
+        "value": "+6, range 600/800 ft. *Hit:* 22 (**4d10**) Lightning damage."
       }
     ]
   },
@@ -609,6 +745,11 @@
         "name": "",
         "type": "text",
         "value": "Cauldrons can be filled with other liquids, such as acid or green slime, with different effects."
+      },
+      {
+        "name": "Boiling Oil",
+        "type": "text",
+        "value": "The cauldron pours boiling oil onto a 10-foot-square area directly below it. Any creature in the area must make a DC 15 Dexterity saving throw, taking 10 (**3d6**) fire damage on a failed save, or half as much damage on a successful one."
       }
     ]
   },
@@ -628,6 +769,11 @@
         "name": "",
         "type": "text",
         "value": "Cauldrons are typically filled with boiling oil but can be filled with other substances, such as acid or green slime (see \"Hazards\"), with different effects."
+      },
+      {
+        "name": "Spill (Requires a Full Cauldron)",
+        "type": "text",
+        "value": "*Dexterity Saving Throw:* DC 15, each creature in a 10-foot square directly below the cauldron. *Failure* 10 (**3d6**) Fire damage. *Success* Half damage."
       }
     ]
   },
@@ -660,6 +806,11 @@
         "name": "",
         "type": "text",
         "value": "A trebuchet typically hurls a heavy stone. However, it can launch other kinds of projectiles, such as barrels of oil or sewage, with different effects."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Trebuchet Stone**: *Ranged Weapon Attack:* +5 to hit, range 300/1,200 ft. (can't hit targets within 60 feet of it), one target. **Hit:** 44 (**8d10**) bludgeoning damage."
       }
     ]
   },
@@ -674,6 +825,11 @@
         "name": "",
         "type": "text",
         "value": "A Trebuchet is a catapult that throws its payload in a high arc so it can hit targets behind walls. Loading a Trebuchet requires two Utilize actions, and aiming it requires two more Utilize actions. Then a crew member can take the Trebuchet Stone action."
+      },
+      {
+        "name": "Trebuchet Stone (Requires Load and Aim)",
+        "type": "text",
+        "value": "+5, range 300/1,200 ft. (can't hit targets within 60 feet of itself). *Hit:* 44 (**8d10**) Bludgeoning damage."
       }
     ]
   },

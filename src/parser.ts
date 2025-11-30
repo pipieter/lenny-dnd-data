@@ -45,6 +45,27 @@ export function checkForDisallowedSymbols(text: string) {
     }
 }
 
+const AttackAbbrMap = new Map([
+    ['mw', 'Melee Weapon Attack'],
+    ['rw', 'Ranged Weapon Attack'],
+    ['m', 'Melee Attack'],
+    ['r', 'Ranged Attack'],
+    ['a', 'Area Attack'],
+    ['aw', 'Area Weapon Attack'],
+    ['ms', 'Melee Spell Attack'],
+    ['mw,rw', 'Melee or Ranged Weapon Attack'],
+    ['rs', 'Ranged Spell Attack'],
+    ['ms,rs', 'Melee or Ranged Spell Attack'],
+    ['m,r', 'Melee or Ranged Attack'],
+    ['mp', 'Melee Power Attack'],
+    ['rp', 'Ranged Power Attack'],
+    ['mp,rp', 'Melee or Ranged Power Attack'],
+    ['m', 'Melee Attack Roll'],
+    ['r', 'Ranged Attack Roll'],
+    ['m,r', 'Melee or Ranged Attack Roll'],
+    ['g', 'Magical Attack'],
+]);
+
 function cleanDNDatk(text: string): string {
     // converterutils-creature.js:584
     const replacements = new Map<string, string>([
@@ -161,6 +182,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         /\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
         `$3`
     );
+    text = text.replaceAll(/\{@dcYourSpellSave\}/g, 'your spell save DC');
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
@@ -209,6 +231,12 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@actSaveSuccess\}/g, 'Success');
+        text = text.replaceAll(/\{@actSaveFail\}/g, 'Failure');
+        text = text.replaceAll(
+            /\{@actSave ([^\}]*?)\}/g,
+            (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
+        );
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `__$3__`);
@@ -284,6 +312,12 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
+        text = text.replaceAll(/\{@actSaveSuccess\}/g, '*Success*');
+        text = text.replaceAll(/\{@actSaveFail\}/g, '*Failure*');
+        text = text.replaceAll(
+            /\{@actSave ([^\}]*?)\}/g,
+            (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:*`
+        );
     }
 
     // Note: notes should be parsed at the end, because they might contain subqueries
@@ -658,6 +692,21 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             const hrRepeats = 2;
             return Array(hrRepeats).fill('');
         }
+        case 'actions': {
+            const name = description.name;
+            const entries = description.entries.flatMap(parseDescriptionBlock);
+            const entry = entries.join('');
+
+            return [`**${name}**: ${entry}`];
+        }
+
+        case 'attack': {
+            const type = AttackAbbrMap.get(description.attackType.toLocaleLowerCase()) ?? 'Unknown';
+            const entries = joinStringsWithOr(description.attackEntries.map(cleanDNDText), false);
+            const hitEntries = joinStringsWithOr(description.hitEntries.map(cleanDNDText), false);
+            return [`*${type}:* ${entries} **Hit:** ${hitEntries}`];
+        }
+
         default: {
             throw `Unsupported description type: '${type}'`;
         }

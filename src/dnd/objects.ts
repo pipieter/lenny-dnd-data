@@ -20,7 +20,7 @@ interface Object {
     immune?: string[];
     conditionImmune?: string[];
     entries: (string | object)[];
-    actionEntries: (string | object)[];
+    actionEntries?: (string | object)[];
     tokenCredit?: string;
     altArt?: object[];
     token?: {
@@ -57,13 +57,17 @@ function parseObjectTokenURL(obj: Object): string | null {
 
 export function getObjects(data: any): ParsedObject[] {
     return (data.object as Object[]).map((obj) => {
+        const descriptions = [];
+        if (obj.entries) descriptions.push(...parseDescriptions('', obj.entries));
+        if (obj.actionEntries) descriptions.push(...parseDescriptions('', obj.actionEntries));
+
         return {
             name: obj.name,
             source: obj.source,
             subtitle: getObjectSubtitle(obj),
             url: getObjectsUrl(obj.name, obj.source),
             tokenUrl: parseObjectTokenURL(obj),
-            description: obj.entries ? parseDescriptions('', obj.entries) : [],
+            description: descriptions,
         };
     });
 }
