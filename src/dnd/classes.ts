@@ -1,4 +1,4 @@
-import { Databank, getKey, readJsonFile } from '../data';
+import { Databank, getKey } from '../data';
 import { ParsedFeat } from './feats';
 import {
     capitalize,
@@ -833,7 +833,7 @@ function getBundledClassData(
         return classKey === key;
     });
     const subclasses: any[] = databank.subclass.filter((s) => {
-        if (cls.source === "PHB" && s.source === "XPHB") return false;
+        if (cls.source === 'PHB' && s.source === 'XPHB') return false;
         return s.className === cls.name;
     });
     const subclassFeatures: any[] = databank.subclassFeature.filter((sf) => {
@@ -881,7 +881,7 @@ export function getClassesAndClassFeats(databank: Databank): {
         const parsedFeats = classFeatsToParsedFeats(features, subclassFeatures);
         for (const feat of parsedFeats) {
             const key = getKey(feat.name, feat.source);
-            if (classFeats.some(f => getKey(f.name, f.source) === key)) continue;
+            if (classFeats.some((f) => getKey(f.name, f.source) === key)) continue;
             classFeats.push(feat);
         }
 
