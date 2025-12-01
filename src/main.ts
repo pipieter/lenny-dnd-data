@@ -34,6 +34,8 @@ function main(): void {
     // Load conditions
     databank.add('./5etools-src/data/conditionsdiseases.json');
     databank.add('./5etools-src/data/fluff-conditionsdiseases.json');
+    // Load classes
+    databank.add('./5etools-src/data/class/index.json');
 
     const stopwatch = new StopwatchLogger();
 

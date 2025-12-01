@@ -69,6 +69,11 @@ export class Databank {
     public readonly conditionFluff: any[] = [];
     public readonly statusFluff: any[] = [];
     public readonly diseaseFluff: any[] = [];
+    // Classes
+    public readonly class: any[] = [];
+    public readonly classFeature: any[] = [];
+    public readonly subclass: any[] = [];
+    public readonly subclassFeature: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
