@@ -1,3 +1,4 @@
+import { Databank } from '../data';
 import { Description, parseDescriptions, parseImageUrl } from '../parser';
 import { getConditionsDiseasesUrl } from '../urls';
 
@@ -10,36 +11,29 @@ interface Condition {
     image: string | null;
 }
 
-function getConditions(type: string, data: any): Condition[] {
-    const results: Condition[] = [];
-
-    const entries = data[type] || [];
-    const fluffs = data[`${type}Fluff`] || [];
-    for (const entry of entries) {
-        const url = getConditionsDiseasesUrl(entry.name, entry.source);
+function getConditions(type: string, data: Databank): Condition[] {
+    const entries = data.get(type);
+    const results: Condition[] = entries.map((entry) => {
         const result: Condition = {
             name: entry.name,
             source: entry.source,
-            url: url,
+            url: getConditionsDiseasesUrl(entry.name, entry.source),
             description: parseDescriptions('Description', entry.entries),
             image: null,
         };
 
-        for (const fluff of fluffs) {
-            if (fluff.name == entry.name && fluff.source == entry.source) {
-                if (fluff.images) {
-                    result.image = parseImageUrl(fluff.images);
-                }
-            }
+        const fluff = data.search(`${type}Fluff`, entry.name, entry.source);
+        if (fluff && fluff.images) {
+            result.image = parseImageUrl(fluff.images);
         }
 
-        results.push(result);
-    }
+        return result;
+    });
 
     return results;
 }
 
-export function getConditionsStatusesAndDiseases(data: any): {
+export function getConditionsStatusesAndDiseases(data: Databank): {
     conditions: Condition[];
     diseases: Condition[];
 } {
