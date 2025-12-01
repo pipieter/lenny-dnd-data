@@ -58,7 +58,7 @@ function main(): void {
     const creatures = getCreatures();
     stopwatch.log('Creatures retrieved');
 
-    const { classes, classFeats } = getClassesAndClassFeats();
+    const { classes, classFeats } = getClassesAndClassFeats(databank);
     stopwatch.log('Classes & ClassFeats retrieved');
 
     const rules = getRules();
