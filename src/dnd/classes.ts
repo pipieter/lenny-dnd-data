@@ -834,6 +834,7 @@ function getBundledClassData(
     });
     const subclasses: any[] = databank.subclass.filter((s) => {
         if (cls.source === 'PHB' && s.source === 'XPHB') return false; // Don't show 2024 subclasses on 2014 classes
+        if (cls.source === 'XPHB' && s.source === 'PHB') return false; // Don't show 2014 subclasses on 2024 classes
         if (cls.source === 'TCE' && s.source === 'EFA') return false; // Don't mix Artificer TCE with EFA
         if (cls.source === 'EFA' && s.source === 'TCE') return false; // Don't mix Artificer EFA with TCE
         return s.className === cls.name;
