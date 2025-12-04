@@ -34,6 +34,8 @@ function main(): void {
     // Load conditions
     databank.add('./5etools-src/data/conditionsdiseases.json');
     databank.add('./5etools-src/data/fluff-conditionsdiseases.json');
+    // Load classes
+    databank.add('./5etools-src/data/class/index.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -56,7 +58,7 @@ function main(): void {
     const creatures = getCreatures();
     stopwatch.log('Creatures retrieved');
 
-    const { classes, classFeats } = getClassesAndClassFeats();
+    const { classes, classFeats } = getClassesAndClassFeats(databank);
     stopwatch.log('Classes & ClassFeats retrieved');
 
     const rules = getRules();
