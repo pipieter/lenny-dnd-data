@@ -97,6 +97,8 @@ export class Databank {
     // Tables
     public readonly table: TableData[] = [];
     public readonly tableGroup: any[] = [];
+    // Backgrounds
+    public readonly background: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {

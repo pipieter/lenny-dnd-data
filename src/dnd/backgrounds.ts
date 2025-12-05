@@ -1,4 +1,5 @@
 import { handleCopy } from '../5etools-conversion/copy';
+import { Databank } from '../data';
 import { Description, parseAbilityScore, parseDescriptions } from '../parser';
 import { getBackgroundsUrl } from '../urls';
 
@@ -16,8 +17,8 @@ function parseBackgroundAbilities(background: any): string[] | null {
     return abilities.map(parseAbilityScore);
 }
 
-export function getBackgrounds(data: any): ParsedBackground[] {
-    const raw: any[] = data.background.map((e: any) => handleCopy(e, data.background));
+export function getBackgrounds(databank: Databank): ParsedBackground[] {
+    const raw: any[] = databank.background.map((e: any) => handleCopy(e, databank.background));
 
     return raw.map((background: any) => ({
         name: background.name,
