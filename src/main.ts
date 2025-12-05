@@ -43,16 +43,19 @@ function main(): void {
     // Load classes
     databank.add('./5etools-src/data/class/index.json');
     // Load rules
-    databank.add('5etools-src/data/variantrules.json');
-    databank.add('5etools-src/data/generated/gendata-variantrules.json');
+    databank.add('./5etools-src/data/variantrules.json');
+    databank.add('./5etools-src/data/generated/gendata-variantrules.json');
     // Load hazards
-    databank.add('5etools-src/data/trapshazards.json');
-    databank.add('5etools-src/data/fluff-trapshazards.json');
+    databank.add('./5etools-src/data/trapshazards.json');
+    databank.add('./5etools-src/data/fluff-trapshazards.json');
     // Load books and adventures
     databank.add('5etools-src/data/books.json');
     databank.add('5etools-src/data/adventures.json');
     // Load actions
     databank.add('5etools-src/data/actions.json');
+    // Load tables
+    databank.add('./5etools-src/data/tables.json');
+    databank.add('./5etools-src/data/generated/gendata-tables.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -96,7 +99,7 @@ function main(): void {
     const names = getNames(data);
     stopwatch.log('Names retrieved');
 
-    const tables = getTables(data);
+    const tables = getTables(databank);
     stopwatch.log('Tables retrieved');
 
     const species = getSpecies(data);
