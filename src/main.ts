@@ -49,10 +49,10 @@ function main(): void {
     databank.add('./5etools-src/data/trapshazards.json');
     databank.add('./5etools-src/data/fluff-trapshazards.json');
     // Load books and adventures
-    databank.add('5etools-src/data/books.json');
-    databank.add('5etools-src/data/adventures.json');
+    databank.add('./5etools-src/data/books.json');
+    databank.add('./5etools-src/data/adventures.json');
     // Load actions
-    databank.add('5etools-src/data/actions.json');
+    databank.add('./5etools-src/data/actions.json');
     // Load tables
     databank.add('./5etools-src/data/tables.json');
     databank.add('./5etools-src/data/generated/gendata-tables.json');
