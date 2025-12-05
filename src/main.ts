@@ -46,8 +46,8 @@ function main(): void {
     databank.add('5etools-src/data/variantrules.json');
     databank.add('5etools-src/data/generated/gendata-variantrules.json');
     // Load hazards
-    databank.add("5etools-src/data/trapshazards.json")
-    databank.add("5etools-src/data/fluff-trapshazards.json")
+    databank.add('5etools-src/data/trapshazards.json');
+    databank.add('5etools-src/data/fluff-trapshazards.json');
 
     const stopwatch = new StopwatchLogger();
 
