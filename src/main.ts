@@ -51,6 +51,8 @@ function main(): void {
     // Load books and adventures
     databank.add("5etools-src/data/books.json")
     databank.add("5etools-src/data/adventures.json")
+    // Load actions
+    databank.add("5etools-src/data/actions.json")
 
     const stopwatch = new StopwatchLogger();
 

@@ -2,6 +2,7 @@ import { Description, parseDescriptions, parseSingleTime } from '../parser';
 import { joinStringsWithOr } from '../util';
 
 import { getActionsUrl } from '../urls';
+import { Databank } from '../data';
 
 interface Action {
     name: string;
@@ -31,7 +32,7 @@ function parseActionTime(times: any[] | undefined): string {
     return joinStringsWithOr(results);
 }
 
-export function getActions(data: any): ParsedAction[] {
+export function getActions(data: Databank): ParsedAction[] {
     const actions: Action[] = data.action;
     const parsed: ParsedAction[] = actions.map((action) => ({
         name: action.name,
