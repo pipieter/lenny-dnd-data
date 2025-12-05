@@ -1,4 +1,4 @@
-import { readJsonFile } from '../data';
+import { Databank } from '../data';
 import {
     cleanDNDText,
     Description,
@@ -27,7 +27,7 @@ interface ColLabelRowCell {
 
 export type ColLabelRows = (string | ColLabelRowCell)[][];
 
-interface TableData {
+export interface TableData {
     name: string;
     source: string;
     caption: string;
@@ -88,12 +88,8 @@ function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): st
     return uniqueLabels.join(' & ');
 }
 
-function getGendataTables(): ParsedTable[] {
-    // Some tables are stored in an auto-generated file.
-    const gendataPath = '5etools-src/data/generated/gendata-tables.json';
-    const gendata: TableGendata = readJsonFile(gendataPath);
-
-    const tables: ParsedTable[] = gendata.table.map((table) => {
+export function getTables(databank: Databank): ParsedTable[] {
+    const tables: ParsedTable[] = (databank.table as TableData[]).map((table) => {
         return {
             name: table.name,
             source: table.source,
@@ -104,8 +100,8 @@ function getGendataTables(): ParsedTable[] {
         };
     });
 
-    for (const tableGroup of gendata.tableGroup) {
-        const items = tableGroup.tables.map((table) => {
+    for (const tableGroup of databank.tableGroup) {
+        const items = tableGroup.tables.map((table: any) => {
             return {
                 name: `${tableGroup.name} [${getTableGroupTableCaption(table, tableGroup)}]`,
                 source: tableGroup.source,
@@ -117,23 +113,6 @@ function getGendataTables(): ParsedTable[] {
         });
         tables.push(...items);
     }
-
-    return tables;
-}
-
-export function getTables(data: any): ParsedTable[] {
-    const tables: ParsedTable[] = (data.table as TableData[]).map((table) => {
-        return {
-            name: table.name,
-            source: table.source,
-            url: getTablesUrl(table.name, table.source),
-            roll: getTableRollExpression(table),
-            table: parseDescriptionFromTable(table),
-            footnotes: getFootnotes(table),
-        };
-    });
-
-    tables.push(...getGendataTables());
 
     // Change d100 roll values into ranges
     for (const table of tables) {

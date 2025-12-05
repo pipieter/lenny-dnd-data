@@ -3,6 +3,7 @@ import { title } from './parser';
 import { read } from './read';
 import { Rule } from './dnd/rules';
 import { Hazard } from './dnd/hazards';
+import { TableData } from './dnd/tables';
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -93,6 +94,9 @@ export class Databank {
     // Books and adventures
     public readonly book: any[] = [];
     public readonly adventure: any[] = [];
+    // Tables
+    public readonly table: TableData[] = [];
+    public readonly tableGroup: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
