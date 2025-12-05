@@ -1,4 +1,4 @@
-import { getKey, readJsonFile } from '../data';
+import { Databank, getKey } from '../data';
 import { ParsedFeat } from './feats';
 import {
     capitalize,
@@ -13,8 +13,6 @@ import {
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
 import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from '../util';
-
-const BASEPATH = '5etools-src/data/class/';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ClassFeature[];
@@ -821,22 +819,45 @@ function classFeatsToParsedFeats(
     return parsedFeats;
 }
 
-export function getClassesAndClassFeats(): {
+function getBundledClassData(
+    databank: Databank,
+    cls: any
+): {
+    features: any[];
+    subclasses: any[];
+    subclassFeatures: any[];
+} {
+    const classKey = getKey(cls.name, cls.source);
+    const features: any[] = databank.classFeature.filter((c) => {
+        const key = getKey(c.className, c.classSource);
+        return classKey === key;
+    });
+    const subclasses: any[] = databank.subclass.filter((s) => {
+        if (cls.source === 'PHB' && s.source === 'XPHB') return false; // Don't show 2024 subclasses on 2014 classes
+        if (cls.source === 'XPHB' && s.source === 'PHB') return false; // Don't show 2014 subclasses on 2024 classes
+        if (cls.source === 'TCE' && s.source === 'EFA') return false; // Don't mix Artificer TCE with EFA
+        if (cls.source === 'EFA' && s.source === 'TCE') return false; // Don't mix Artificer EFA with TCE
+        return s.className === cls.name;
+    });
+    const subclassFeatures: any[] = databank.subclassFeature.filter((sf) => {
+        return sf.className === cls.name;
+    });
+
+    return { features, subclasses, subclassFeatures };
+}
+
+export function getClassesAndClassFeats(databank: Databank): {
     classes: any[];
     classFeats: ParsedFeat[];
 } {
-    const indexPath = BASEPATH + '/index.json';
     const classes: any[] = [];
     const classFeats: ParsedFeat[] = [];
 
-    const indexData = readJsonFile(indexPath);
-    for (const [className, classIndexFile] of Object.entries(indexData)) {
-        const path = BASEPATH + classIndexFile;
-        const data = readJsonFile(path);
+    for (const cls of databank.class) {
+        const data = getBundledClassData(databank, cls);
 
         const features: ClassFeatureDictionary = {};
-
-        for (const featureData of data.classFeature) {
+        for (const featureData of data.features) {
             const feature = new ClassFeature(featureData);
             const key = feature.classKey;
             if (!features[key]) features[key] = [];
@@ -845,31 +866,30 @@ export function getClassesAndClassFeats(): {
 
         const subclasses: SubclassDictionary = {};
         const subclassFeatures: ClassFeatureDictionary = {};
-        if (data.subclassFeature && data.subclass) {
-            for (const featureData of data.subclassFeature) {
+        if (data.subclassFeatures && data.subclasses) {
+            for (const featureData of data.subclassFeatures) {
                 const feature = new ClassFeature(featureData);
                 const key = feature.classKey;
                 if (!subclassFeatures[key]) subclassFeatures[key] = [];
                 subclassFeatures[key].push(feature);
             }
 
-            for (const subclassData of data.subclass) {
+            for (const subclassData of data.subclasses) {
                 const subclass = new CharacterSubclass(subclassData, subclassFeatures);
                 const key = subclass.key;
                 if (!subclasses[key]) subclasses[key] = subclass;
             }
         }
 
-        classFeats.push(...classFeatsToParsedFeats(features, subclassFeatures));
-        for (const classData of data.class) {
-            const characterClass = new CharacterClass(
-                classData,
-                features,
-                subclassFeatures,
-                subclasses
-            );
-            classes.push(characterClass.toJSON());
+        const parsedFeats = classFeatsToParsedFeats(features, subclassFeatures);
+        for (const feat of parsedFeats) {
+            const key = getKey(feat.name, feat.source);
+            if (classFeats.some((f) => getKey(f.name, f.source) === key)) continue;
+            classFeats.push(feat);
         }
+
+        const characterClass = new CharacterClass(cls, features, subclassFeatures, subclasses);
+        classes.push(characterClass.toJSON());
     }
 
     return { classes, classFeats };

@@ -73,6 +73,11 @@ export class Databank {
     public readonly language: any[] = [];
     public readonly languageFluff: any[] = [];
     public readonly languageScript: any[] = [];
+    // Classes
+    public readonly class: any[] = [];
+    public readonly classFeature: any[] = [];
+    public readonly subclass: any[] = [];
+    public readonly subclassFeature: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
