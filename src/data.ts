@@ -1,6 +1,7 @@
 import { existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
 import { title } from './parser';
 import { read } from './read';
+import { Rule } from './dnd/rules';
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -72,11 +73,17 @@ export class Databank {
     // Creatures
     public readonly monster: any[] = [];
     public readonly monsterFluff: any[] = [];
+    // Languages
+    public readonly language: any[] = [];
+    public readonly languageFluff: any[] = [];
+    public readonly languageScript: any[] = [];
     // Classes
     public readonly class: any[] = [];
     public readonly classFeature: any[] = [];
     public readonly subclass: any[] = [];
     public readonly subclassFeature: any[] = [];
+    // Rules
+    public readonly variantrule: Rule[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {

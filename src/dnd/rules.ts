@@ -1,8 +1,8 @@
-import { readJsonFile } from '../data';
+import { Databank } from '../data';
 import { Description, parseDescriptions } from '../parser';
 import { getRulesUrl } from '../urls';
 
-interface Rule {
+export interface Rule {
     name: string;
     source: string;
     type?: string;
@@ -31,17 +31,8 @@ function parseRuleType(rule: any): string {
     return RuleTypes.get(type) ?? 'Uncategorized';
 }
 
-function retrieveRules(): Rule[] {
-    const sources = [
-        '5etools-src/data/variantrules.json',
-        '5etools-src/data/generated/gendata-variantrules.json', // Some rules are stored in an auto-generated file.
-    ];
-    return sources.flatMap((source) => readJsonFile(source).variantrule);
-}
-
-export function getRules(): ParsedRule[] {
-    const rules = retrieveRules();
-    return rules.map((rule) => ({
+export function getRules(databank: Databank): ParsedRule[] {
+    return databank.variantrule.map((rule) => ({
         name: rule.name,
         source: rule.source,
         url: getRulesUrl(rule.name, rule.source),

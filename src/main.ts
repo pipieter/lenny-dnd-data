@@ -37,8 +37,14 @@ function main(): void {
     // Load Creatures
     databank.add('./5etools-src/data/bestiary/index.json');
     databank.add('./5etools-src/data/bestiary/fluff-index.json');
+    // Load languages
+    databank.add('./5etools-src/data/languages.json');
+    databank.add('./5etools-src/data/fluff-languages.json');
     // Load classes
     databank.add('./5etools-src/data/class/index.json');
+    // Load rules
+    databank.add('5etools-src/data/variantrules.json');
+    databank.add('5etools-src/data/generated/gendata-variantrules.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -64,7 +70,7 @@ function main(): void {
     const { classes, classFeats } = getClassesAndClassFeats(databank);
     stopwatch.log('Classes & ClassFeats retrieved');
 
-    const rules = getRules();
+    const rules = getRules(databank);
     stopwatch.log('Rules retrieved');
 
     const actions = getActions(data);
@@ -76,7 +82,7 @@ function main(): void {
     const feats = getFeats(data);
     stopwatch.log('Feats retrieved');
 
-    const languages = getLanguages(data);
+    const languages = getLanguages(databank);
     stopwatch.log('Languages retrieved');
 
     const names = getNames(data);
