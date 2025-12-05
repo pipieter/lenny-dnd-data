@@ -69,6 +69,9 @@ export class Databank {
     public readonly conditionFluff: any[] = [];
     public readonly statusFluff: any[] = [];
     public readonly diseaseFluff: any[] = [];
+    // Creatures
+    public readonly monster: any[] = [];
+    public readonly monsterFluff: any[] = [];
     // Classes
     public readonly class: any[] = [];
     public readonly classFeature: any[] = [];
