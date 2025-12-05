@@ -4,7 +4,7 @@ import { joinStringsWithOr } from '../util';
 import { getActionsUrl } from '../urls';
 import { Databank } from '../data';
 
-interface Action {
+export interface Action {
     name: string;
     source: string;
     time?: any[];
