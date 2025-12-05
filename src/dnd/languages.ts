@@ -1,3 +1,4 @@
+import { Databank } from '../data';
 import { capitalize, cleanDNDText, Description, parseDescriptions } from '../parser';
 import { getImageUrl, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
@@ -46,19 +47,16 @@ function getLanguageType(language: Language): string {
     return `${type} language`;
 }
 
-function getLanguageImage(language: Language, fluffs: LanguageFluff[]): string | null {
-    const fluff = fluffs.find(
-        (fluff) => fluff.name === language.name && fluff.source === language.source
-    );
+function getLanguageImage(language: Language, data: Databank): string | null {
+    const fluff = data.search('languageFluff', language.name, language.source);
     if (fluff && fluff.images.length) {
         return getImageUrl(fluff.images[0].href.path);
     }
     return null;
 }
 
-export function getLanguages(data: any): ParsedLanguage[] {
+export function getLanguages(data: Databank): ParsedLanguage[] {
     const languages: Language[] = data.language;
-    const fluffs: LanguageFluff[] = data.languageFluff;
     return languages.map((language) => {
         return {
             name: language.name,
@@ -68,7 +66,7 @@ export function getLanguages(data: any): ParsedLanguage[] {
             typicalSpeakers: getTypicalSpeakers(language),
             script: language.script ?? null,
             description: language.entries ? parseDescriptions('', language.entries) : null,
-            image: getLanguageImage(language, fluffs),
+            image: getLanguageImage(language, data),
         };
     });
 }
