@@ -39,6 +39,9 @@ function main(): void {
     databank.add('./5etools-src/data/fluff-languages.json');
     // Load classes
     databank.add('./5etools-src/data/class/index.json');
+    // Load rules
+    databank.add('5etools-src/data/variantrules.json');
+    databank.add('5etools-src/data/generated/gendata-variantrules.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -64,7 +67,7 @@ function main(): void {
     const { classes, classFeats } = getClassesAndClassFeats(databank);
     stopwatch.log('Classes & ClassFeats retrieved');
 
-    const rules = getRules();
+    const rules = getRules(databank);
     stopwatch.log('Rules retrieved');
 
     const actions = getActions(data);
