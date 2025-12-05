@@ -1,7 +1,8 @@
+import { Databank } from '../data';
 import { capitalize, Description, parseDescriptions } from '../parser';
 import { getTrapsUrl } from '../urls';
 
-interface Hazard {
+export interface Hazard {
     name: string;
     source: string;
     trapHazType?: string;
@@ -38,11 +39,11 @@ function getTrapHazardSubtitle(hazard: Hazard, suffix: string): string {
     throw `Unsupported trap/hazard type in ${hazard.name}: ${hazard.trapHazType}`;
 }
 
-export function getTrapsAndHazards(data: any): {
+export function getTrapsAndHazards(data: Databank): {
     traps: ParsedHazard[];
     hazards: ParsedHazard[];
 } {
-    const traps = (data.trap as Hazard[]).map((trap) => {
+    const traps = data.trap.map((trap) => {
         return {
             name: trap.name,
             source: trap.source,
@@ -52,7 +53,7 @@ export function getTrapsAndHazards(data: any): {
         };
     });
 
-    const hazards = (data.hazard as Hazard[]).map((hazard) => {
+    const hazards = data.hazard.map((hazard) => {
         return {
             name: hazard.name,
             source: hazard.source,
