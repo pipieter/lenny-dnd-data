@@ -54,6 +54,8 @@ function main(): void {
     // Load tables
     databank.add('./5etools-src/data/tables.json');
     databank.add('./5etools-src/data/generated/gendata-tables.json');
+    // Load Backgrounds
+    databank.add('./5etools-src/data/backgrounds.json');
 
     const stopwatch = new StopwatchLogger();
 
