@@ -48,6 +48,9 @@ function main(): void {
     // Load hazards
     databank.add('5etools-src/data/trapshazards.json');
     databank.add('5etools-src/data/fluff-trapshazards.json');
+    // Load books and adventures
+    databank.add("5etools-src/data/books.json")
+    databank.add("5etools-src/data/adventures.json")
 
     const stopwatch = new StopwatchLogger();
 
@@ -97,7 +100,7 @@ function main(): void {
     const species = getSpecies(data);
     stopwatch.log('Species retrieved');
 
-    const sources = getSources(data);
+    const sources = getSources(databank);
     stopwatch.log('Sources retrieved');
 
     const { traps, hazards } = getTrapsAndHazards(databank);

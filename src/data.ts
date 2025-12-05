@@ -90,6 +90,9 @@ export class Databank {
     public readonly hazard: Hazard[] = [];
     public readonly trapFluff: any[] = [];
     public readonly hazardFluff: any[] = [];
+    // Books and adventures
+    public readonly book: any[] = [];
+    public readonly adventure: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {

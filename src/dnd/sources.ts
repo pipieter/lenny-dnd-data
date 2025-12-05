@@ -1,3 +1,5 @@
+import { Databank } from '../data';
+
 interface Source {
     id: string;
     name: string;
@@ -7,7 +9,7 @@ interface Source {
     group: string;
 }
 
-export function getSources(data: any): Source[] {
+export function getSources(data: Databank): Source[] {
     const books = [...data.book, ...data.adventure];
     return books.map((book: any) => ({
         id: book.id,
