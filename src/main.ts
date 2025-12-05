@@ -34,6 +34,9 @@ function main(): void {
     // Load conditions
     databank.add('./5etools-src/data/conditionsdiseases.json');
     databank.add('./5etools-src/data/fluff-conditionsdiseases.json');
+    databank.add('./5etools-src/data/languages.json');
+    databank.add('./5etools-src/data/fluff-languages.json');
+    // Load languages
 
     const stopwatch = new StopwatchLogger();
 
@@ -71,7 +74,7 @@ function main(): void {
     const feats = getFeats(data);
     stopwatch.log('Feats retrieved');
 
-    const languages = getLanguages(data);
+    const languages = getLanguages(databank);
     stopwatch.log('Languages retrieved');
 
     const names = getNames(data);
