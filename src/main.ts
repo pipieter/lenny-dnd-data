@@ -49,8 +49,10 @@ function main(): void {
     databank.add('5etools-src/data/trapshazards.json');
     databank.add('5etools-src/data/fluff-trapshazards.json');
     // Load books and adventures
-    databank.add("5etools-src/data/books.json")
-    databank.add("5etools-src/data/adventures.json")
+    databank.add('5etools-src/data/books.json');
+    databank.add('5etools-src/data/adventures.json');
+    // Load backgrounds
+    databank.add('./5etools-src/data/backgrounds.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -82,7 +84,7 @@ function main(): void {
     const actions = getActions(data);
     stopwatch.log('Actions retrieved');
 
-    const backgrounds = getBackgrounds(data);
+    const backgrounds = getBackgrounds(databank);
     stopwatch.log('Backgrounds retrieved');
 
     const feats = getFeats(data);

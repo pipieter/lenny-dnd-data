@@ -93,6 +93,8 @@ export class Databank {
     // Books and adventures
     public readonly book: any[] = [];
     public readonly adventure: any[] = [];
+    // Backgrounds
+    public readonly background: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
