@@ -51,6 +51,8 @@ function main(): void {
     // Load books and adventures
     databank.add('./5etools-src/data/books.json');
     databank.add('./5etools-src/data/adventures.json');
+    // Load actions
+    databank.add('./5etools-src/data/actions.json');
     // Load tables
     databank.add('./5etools-src/data/tables.json');
     databank.add('./5etools-src/data/generated/gendata-tables.json');
@@ -84,7 +86,7 @@ function main(): void {
     const rules = getRules(databank);
     stopwatch.log('Rules retrieved');
 
-    const actions = getActions(data);
+    const actions = getActions(databank);
     stopwatch.log('Actions retrieved');
 
     const backgrounds = getBackgrounds(databank);

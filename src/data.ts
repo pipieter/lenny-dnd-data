@@ -4,6 +4,7 @@ import { read } from './read';
 import { Rule } from './dnd/rules';
 import { Hazard } from './dnd/hazards';
 import { TableData } from './dnd/tables';
+import { Action } from './dnd/actions';
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -94,6 +95,8 @@ export class Databank {
     // Books and adventures
     public readonly book: any[] = [];
     public readonly adventure: any[] = [];
+    // Actions
+    public readonly action: Action[] = [];
     // Tables
     public readonly table: TableData[] = [];
     public readonly tableGroup: any[] = [];
