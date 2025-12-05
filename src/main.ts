@@ -34,8 +34,11 @@ function main(): void {
     // Load conditions
     databank.add('./5etools-src/data/conditionsdiseases.json');
     databank.add('./5etools-src/data/fluff-conditionsdiseases.json');
-    databank.add('./5etools-src/data/languages.json');
+    // Load Creatures
+    databank.add('./5etools-src/data/bestiary/index.json');
+    databank.add('./5etools-src/data/bestiary/fluff-index.json');
     // Load languages
+    databank.add('./5etools-src/data/languages.json');
     databank.add('./5etools-src/data/fluff-languages.json');
     // Load classes
     databank.add('./5etools-src/data/class/index.json');
@@ -61,7 +64,7 @@ function main(): void {
     const { conditions, diseases } = getConditionsStatusesAndDiseases(databank);
     stopwatch.log('Conditions & Diseases retrieved');
 
-    const creatures = getCreatures();
+    const creatures = getCreatures(databank);
     stopwatch.log('Creatures retrieved');
 
     const { classes, classFeats } = getClassesAndClassFeats(databank);

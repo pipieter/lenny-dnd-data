@@ -1,6 +1,6 @@
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { findEntry } from '../5etools-conversion/find';
-import { readJsonFile } from '../data';
+import { Databank } from '../data';
 import {
     Description,
     parseCreatureSummonSpell,
@@ -9,8 +9,6 @@ import {
     parseSizes,
 } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
-
-const BASEPATH = '5etools-src/data/bestiary/';
 
 interface Creature {
     name: string;
@@ -22,26 +20,6 @@ interface Creature {
 
     description: Description[];
     fluffInfo: Description[];
-}
-
-function loadCreaturesFromIndex(): [any[], any[]] {
-    const creatures: any[] = [];
-    const fluffs: any[] = [];
-
-    for (const file of ['fluff-index.json', 'index.json']) {
-        const indexPath = BASEPATH + file;
-        const indexData = readJsonFile(indexPath);
-
-        for (const [_, sourceIndexFile] of Object.entries(indexData)) {
-            const path = BASEPATH + sourceIndexFile;
-            const data = readJsonFile(path);
-
-            creatures.push(...(data.monster || []));
-            fluffs.push(...(data.monsterFluff || []));
-        }
-    }
-
-    return [creatures, fluffs];
 }
 
 function buildCreature(creature: any, fluff: any | null): Creature {
@@ -101,22 +79,20 @@ function filterEntries(entries: any[]): any[] {
     return filteredEntries;
 }
 
-export function getCreatures(): Creature[] {
-    const [baseCreatures, baseFluffs] = loadCreaturesFromIndex();
-
+export function getCreatures(databank: Databank): Creature[] {
     const creatures: Creature[] = [];
     const fluffs: any[] = [];
 
     // Get creatures
-    for (const creature of baseCreatures) {
-        const fullCreature = handleCopy(creature, baseCreatures);
+    for (const creature of databank.monster) {
+        const fullCreature = handleCopy(creature, databank.monster);
         const versions = handleVersions(fullCreature);
         creatures.push(fullCreature, ...versions);
     }
 
     // Get fluffs
-    for (const fluff of baseFluffs) {
-        const fullFluff = handleCopy(fluff, baseFluffs);
+    for (const fluff of databank.monsterFluff) {
+        const fullFluff = handleCopy(fluff, databank.monsterFluff);
         const versions = handleVersions(fullFluff);
         fluffs.push(fullFluff, ...versions);
     }

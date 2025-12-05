@@ -70,6 +70,9 @@ export class Databank {
     public readonly conditionFluff: any[] = [];
     public readonly statusFluff: any[] = [];
     public readonly diseaseFluff: any[] = [];
+    // Creatures
+    public readonly monster: any[] = [];
+    public readonly monsterFluff: any[] = [];
     // Languages
     public readonly language: any[] = [];
     public readonly languageFluff: any[] = [];
