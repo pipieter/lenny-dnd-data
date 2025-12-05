@@ -84,7 +84,7 @@ function main(): void {
     const rules = getRules(databank);
     stopwatch.log('Rules retrieved');
 
-    const actions = getActions(data);
+    const actions = getActions(databank);
     stopwatch.log('Actions retrieved');
 
     const backgrounds = getBackgrounds(data);
