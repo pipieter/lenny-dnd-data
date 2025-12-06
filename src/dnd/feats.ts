@@ -1,8 +1,9 @@
+import { Databank } from '../data';
 import { Description, parseAbilityScore, parseDescriptions, title } from '../parser';
 import { getFeatsUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
-interface Feat {
+export interface Feat {
     name: string;
     source: string;
     page: number;
@@ -281,8 +282,8 @@ function getFeatType(feat: Feat): string {
     throw `Unsupported feat-type ${feat.category}`;
 }
 
-export function getFeats(data: any): ParsedFeat[] {
-    return (data.feat as Feat[]).map((feat) => {
+export function getFeats(data: Databank): ParsedFeat[] {
+    return data.feat.map((feat) => {
         return {
             name: feat.name,
             source: feat.source,

@@ -58,6 +58,8 @@ function main(): void {
     databank.add('./5etools-src/data/generated/gendata-tables.json');
     // Load Backgrounds
     databank.add('./5etools-src/data/backgrounds.json');
+    // Load feats
+    databank.add('./5etools-src/data/feats.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -92,7 +94,7 @@ function main(): void {
     const backgrounds = getBackgrounds(databank);
     stopwatch.log('Backgrounds retrieved');
 
-    const feats = getFeats(data);
+    const feats = getFeats(databank);
     stopwatch.log('Feats retrieved');
 
     const languages = getLanguages(databank);
