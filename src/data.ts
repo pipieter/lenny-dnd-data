@@ -5,6 +5,7 @@ import { Rule } from './dnd/rules';
 import { Hazard } from './dnd/hazards';
 import { TableData } from './dnd/tables';
 import { Action } from './dnd/actions';
+import { Feat } from './dnd/feats';
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -102,6 +103,8 @@ export class Databank {
     public readonly tableGroup: any[] = [];
     // Backgrounds
     public readonly background: any[] = [];
+    // Feats
+    public readonly feat: Feat[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
