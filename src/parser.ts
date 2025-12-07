@@ -885,6 +885,8 @@ export function title(text: string): string {
 export function parseSizes(sizes: string | string[]): string {
     if (typeof sizes === 'string') sizes = [sizes];
     const sizeMap = new Map<string, string>([
+        ['F', 'Fine'],
+        ['D', 'Diminutive'],
         ['T', 'Tiny'],
         ['S', 'Small'],
         ['M', 'Medium'],
