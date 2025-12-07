@@ -66,6 +66,7 @@ function main(): void {
     databank.add('./5etools-src/data/names.json');
     // Load species
     databank.add('./5etools-src/data/races.json');
+    databank.add('./5etools-src/data/fluff-races.json');
     // Load vehicles
     databank.add('./5etools-src/data/vehicles.json');
 
@@ -114,7 +115,7 @@ function main(): void {
     const tables = getTables(databank);
     stopwatch.log('Tables retrieved');
 
-    const species = getSpecies(data);
+    const species = getSpecies(databank);
     stopwatch.log('Species retrieved');
 
     const sources = getSources(databank);
