@@ -100,11 +100,19 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     if (noFormat) {
+        // Very specific case for Keith Baker's Frontiers of Eberron Quickstone, where
+        // A nested object with @i is used that completely surrounds another object.
+        // TODO a better solution would be to adapt the function to handle recursive styling
+        text = text.replaceAll(/^\{@i (.*)\}$/g, '$1');
+
         text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
     } else {
+        // Idem Keith baker
+        text = text.replaceAll(/^\{@i (.*)\}$/g, '*$1*');
+
         text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
