@@ -43,16 +43,16 @@ export class StopwatchLogger {
         this.previousTime = Date.now();
     }
 
-    log(label: string) {
+    log(label: string, color?: kleur.Color) {
         const elapsedSeconds = (Date.now() - this.previousTime) / 1000;
         this.previousTime = Date.now();
 
-        const color = this.getColor(elapsedSeconds);
+        if (!color) color = this.getColor(elapsedSeconds);
         const elapsedStr = elapsedSeconds.toFixed(2).padStart(5, ' ');
         console.log(color(`+ ${elapsedStr}s | ${label} `));
     }
 
-    private getColor(elapsedSeconds: number): (text: string) => string {
+    private getColor(elapsedSeconds: number): kleur.Color {
         if (elapsedSeconds >= 5) return kleur.bgRed;
         else if (elapsedSeconds >= 3) return kleur.red;
         else if (elapsedSeconds >= 1) return kleur.yellow;
