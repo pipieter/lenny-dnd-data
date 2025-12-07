@@ -18,7 +18,7 @@ import { getSources } from './dnd/sources';
 import { getTrapsAndHazards } from './dnd/hazards';
 import { getObjects } from './dnd/objects';
 import { getVehicles } from './dnd/vehicles';
-import { getSkills } from './skills';
+import { getSkills } from './dnd/skills';
 
 function main(): void {
     const databank = new Databank();
@@ -60,6 +60,8 @@ function main(): void {
     databank.add('./5etools-src/data/backgrounds.json');
     // Load feats
     databank.add('./5etools-src/data/feats.json');
+    // Load skills
+    databank.add("./5etools-src/data/skills.json")
 
     const stopwatch = new StopwatchLogger();
 
@@ -121,7 +123,7 @@ function main(): void {
     const vehicles = getVehicles(data);
     stopwatch.log('Vehicles retrieved.');
 
-    const skills = getSkills(data);
+    const skills = getSkills(databank);
     stopwatch.log('Skills retrieved.');
 
     writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
