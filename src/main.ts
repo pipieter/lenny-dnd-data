@@ -61,7 +61,7 @@ function main(): void {
     // Load feats
     databank.add('./5etools-src/data/feats.json');
     // Load skills
-    databank.add("./5etools-src/data/skills.json")
+    databank.add('./5etools-src/data/skills.json');
 
     const stopwatch = new StopwatchLogger();
 
