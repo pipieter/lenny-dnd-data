@@ -1,4 +1,3 @@
-import { existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
 import { title } from './parser';
 import { read } from './read';
 import { Rule } from './dnd/rules';
@@ -11,48 +10,8 @@ import { SpeciesName } from './dnd/names';
 import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
 import { DNDObject } from './dnd/objects';
 
-export function readJsonFile(path: string): any {
-    const contents = readFileSync(path, 'utf8');
-    return JSON.parse(contents);
-}
-
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
-}
-
-function ignoreJsonFile(path: string): boolean {
-    if (!existsSync(path)) return true;
-    if (!lstatSync(path).isFile()) return true;
-    if (!path.endsWith('.json')) return true;
-    if (path.includes('foundry-')) return true;
-    if (path.endsWith('changelog.json')) return true;
-    return false;
-}
-
-export function loadData(dataPath: string): any {
-    const databank: object = {};
-    const files = readdirSync(dataPath);
-
-    for (const file of files) {
-        const path = `${dataPath}/${file}`;
-        if (ignoreJsonFile(path)) continue;
-
-        const data = readJsonFile(path);
-
-        for (const key in data) {
-            if (!Object.prototype.hasOwnProperty.call(databank, key)) {
-                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
-                databank[key] = [];
-            }
-            const entries = data[key];
-            if (Array.isArray(entries)) {
-                // @ts-expect-error: databank typing is explicitly any and has index signature of type string.
-                databank[key].push(...entries);
-            }
-        }
-    }
-
-    return databank;
 }
 
 export class Databank {
@@ -130,11 +89,11 @@ export class Databank {
         return (this as any)[key];
     }
 
-    public add(paths: string | string[]) {
+    public add(path: string) {
         // Keys that will not be handled
         const keysToIgnore = ['_meta', 'linkedLootTables', 'raceFluffMeta'];
 
-        const data = read(paths);
+        const data = read(path);
         for (const key of Object.keys(data)) {
             if (keysToIgnore.includes(key)) continue;
 
@@ -169,5 +128,55 @@ export class Databank {
     public search(key: string, name: string, source: string): any | undefined {
         const entries = this.get(key);
         return entries.find((entry) => entry.name === name && entry.source === source);
+    }
+}
+
+export class OfficialDatabank extends Databank {
+    private getFullPath(path: string): string {
+        return `5etools-src/data/${path}`;
+    }
+
+    public override add(path: string) {
+        super.add(this.getFullPath(path));
+    }
+
+    public override addSpellSource(path: string) {
+        super.addSpellSource(this.getFullPath(path));
+    }
+
+    constructor() {
+        super();
+
+        this.add('actions.json');
+        this.add('adventures.json');
+        this.add('backgrounds.json');
+        this.add('bestiary/fluff-index.json');
+        this.add('bestiary/index.json');
+        this.add('books.json');
+        this.add('class/index.json');
+        this.add('conditionsdiseases.json');
+        this.add('feats.json');
+        this.add('fluff-conditionsdiseases.json');
+        this.add('fluff-items.json');
+        this.add('fluff-languages.json');
+        this.add('fluff-races.json');
+        this.add('fluff-trapshazards.json');
+        this.add('generated/gendata-tables.json');
+        this.add('generated/gendata-variantrules.json');
+        this.add('items-base.json');
+        this.add('items.json');
+        this.add('languages.json');
+        this.add('magicvariants.json');
+        this.add('names.json');
+        this.add('objects.json');
+        this.add('races.json');
+        this.add('skills.json');
+        this.add('spells/fluff-index.json');
+        this.add('spells/index.json');
+        this.add('tables.json');
+        this.add('trapshazards.json');
+        this.add('variantrules.json');
+        this.add('vehicles.json');
+        this.addSpellSource('spells/sources.json');
     }
 }

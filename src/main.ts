@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 import { getConditionsStatusesAndDiseases } from './dnd/conditions';
-import { Databank, loadData } from './data';
+import { OfficialDatabank } from './data';
 import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
@@ -21,61 +21,10 @@ import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './dnd/skills';
 
 function main(): void {
-    const databank = new Databank();
-    // Load spells
-    databank.add('./5etools-src/data/spells/index.json');
-    databank.add('./5etools-src/data/spells/fluff-index.json');
-    databank.addSpellSource('./5etools-src/data/spells/sources.json');
-    // Load items
-    databank.add('./5etools-src/data/items.json');
-    databank.add('./5etools-src/data/fluff-items.json');
-    databank.add('./5etools-src/data/items-base.json');
-    databank.add('./5etools-src/data/magicvariants.json');
-    // Load conditions
-    databank.add('./5etools-src/data/conditionsdiseases.json');
-    databank.add('./5etools-src/data/fluff-conditionsdiseases.json');
-    // Load Creatures
-    databank.add('./5etools-src/data/bestiary/index.json');
-    databank.add('./5etools-src/data/bestiary/fluff-index.json');
-    // Load languages
-    databank.add('./5etools-src/data/languages.json');
-    databank.add('./5etools-src/data/fluff-languages.json');
-    // Load classes
-    databank.add('./5etools-src/data/class/index.json');
-    // Load rules
-    databank.add('./5etools-src/data/variantrules.json');
-    databank.add('./5etools-src/data/generated/gendata-variantrules.json');
-    // Load hazards
-    databank.add('./5etools-src/data/trapshazards.json');
-    databank.add('./5etools-src/data/fluff-trapshazards.json');
-    // Load books and adventures
-    databank.add('./5etools-src/data/books.json');
-    databank.add('./5etools-src/data/adventures.json');
-    // Load actions
-    databank.add('./5etools-src/data/actions.json');
-    // Load tables
-    databank.add('./5etools-src/data/tables.json');
-    databank.add('./5etools-src/data/generated/gendata-tables.json');
-    // Load Backgrounds
-    databank.add('./5etools-src/data/backgrounds.json');
-    // Load feats
-    databank.add('./5etools-src/data/feats.json');
-    // Load skills
-    databank.add('./5etools-src/data/skills.json');
-    // Load names
-    databank.add('./5etools-src/data/names.json');
-    // Load species
-    databank.add('./5etools-src/data/races.json');
-    databank.add('./5etools-src/data/fluff-races.json');
-    // Load vehicles
-    databank.add('./5etools-src/data/vehicles.json');
-    // Load objects
-    databank.add('./5etools-src/data/objects.json');
+    const databank = new OfficialDatabank();
 
     const stopwatch = new StopwatchLogger();
 
-    const path = './5etools-src/data';
-    const data = loadData(path);
     stopwatch.log('Loaded databanks');
 
     const items = getItems(databank);
