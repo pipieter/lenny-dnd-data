@@ -8,6 +8,7 @@ import { Action } from './dnd/actions';
 import { Feat } from './dnd/feats';
 import { Skill } from './dnd/skills';
 import { SpeciesName } from './dnd/names';
+import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -115,6 +116,9 @@ export class Databank {
     public readonly race: any[] = [];
     public readonly subrace: any[] = [];
     public readonly raceFluff: any[] = [];
+    // Vehicles
+    public readonly vehicle: Vehicle[] = [];
+    public readonly vehicleUpgrade: VehicleUpgrade[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
