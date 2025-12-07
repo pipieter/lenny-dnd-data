@@ -51,6 +51,8 @@ export class Databank {
     public readonly classFeature: any[] = [];
     public readonly subclass: any[] = [];
     public readonly subclassFeature: any[] = [];
+    public readonly classFluff: any[] = [];
+    public readonly subclassFluff: any[] = [];
     // Rules
     public readonly variantrule: Rule[] = [];
     // Hazards
@@ -68,6 +70,7 @@ export class Databank {
     public readonly tableGroup: any[] = [];
     // Backgrounds
     public readonly background: any[] = [];
+    public readonly backgroundFluff: any[] = [];
     // Feats
     public readonly feat: Feat[] = [];
     // Skills
@@ -202,10 +205,8 @@ export class PartneredDatabank extends Databank {
             throw new Error(`Partnered databank expects a directory, received '${path}'!`);
         }
 
-        console.log(path);
         for (const file of readdirSync(path)) {
             const fullPath = join(path, file);
-            console.log(fullPath);
             const data = readJsonFile(fullPath);
             this.addContents(data, fullPath);
         }
@@ -224,20 +225,89 @@ export class PartneredDatabank extends Databank {
         if (this.filters.partnered && !partnered) return;
         if (!this.filters.allowPHB2014 && data._meta.edition === 'classic') return;
 
-        const keysToIgnore = ['_meta', 'linkedLootTables', 'raceFluffMeta'];
+        const prefixesToIgnore = ['foundry'];
+        const keysToIgnore = [
+            '$schema',
+            '_meta',
+            'linkedLootTables',
+            'raceFluffMeta',
+            'bookData',
+            'adventureData',
+            // The items below are not implemented *yet*, and should be TODO
+            'optionalfeature',
+            'reward',
+            'rewardFluff',
+            'deck',
+            'card',
+            'legendaryGroup',
+            'charoption',
+            'sense',
+            'facility',
+        ];
 
         for (const key of Object.keys(data)) {
+            if (prefixesToIgnore.some((prefix) => key.startsWith(prefix))) continue;
             if (keysToIgnore.includes(key)) continue;
 
             this.get(key).push(...data[key]);
         }
     }
 
-    constructor(filters: PartneredFilters) {
+    constructor(official: OfficialDatabank, filters: PartneredFilters) {
         super();
         this.filters = { ...filters };
 
+        // Load in some data from the official content
+        const entriesToCopy = [
+            'itemType',
+            'itemGroup',
+            'itemProperty',
+            'itemTypeAdditionalEntries',
+            'itemEntry',
+            'itemMastery',
+            'monster', // TODO these should be removed after
+            'monsterFluff',
+            'race',
+            'raceFluff',
+        ];
+        for (const entryToCopy of entriesToCopy) {
+            this.get(entryToCopy).push(...official.get(entryToCopy));
+        }
+
+        // Load homebrew
         this.add('action/');
+        this.add('adventure/');
         this.add('background/');
+        this.add('baseitem/');
+        this.add('book/');
+        this.add('boon/');
+        this.add('charoption/');
+        this.add('class/');
+        this.add('collection/');
+        this.add('creature/');
+        this.add('cult/');
+        this.add('deck/');
+        this.add('deity/');
+        this.add('disease/');
+        this.add('facility/');
+        this.add('feat/');
+        this.add('hazard/');
+        this.add('item/');
+        this.add('language/');
+        this.add('magicvariant/');
+        this.add('makebrew/');
+        this.add('object/');
+        this.add('optionalfeature/');
+        this.add('psionic/');
+        this.add('race/');
+        this.add('recipe/');
+        this.add('reward/');
+        this.add('spell/');
+        this.add('subclass/');
+        this.add('subrace/');
+        this.add('table/');
+        this.add('trap/');
+        this.add('variantrule/');
+        this.add('vehicle/');
     }
 }

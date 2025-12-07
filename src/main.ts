@@ -138,8 +138,8 @@ function main(): void {
     clearDirectory('./generated');
 
     const official = new OfficialDatabank();
-    const partnered = new PartneredDatabank({ partnered: true, allowPHB2014: false });
-    const homebrew = new PartneredDatabank({ partnered: false, allowPHB2014: false });
+    const partnered = new PartneredDatabank(official, { partnered: true, allowPHB2014: false });
+    const homebrew = new PartneredDatabank(official, { partnered: false, allowPHB2014: false });
 
     stopwatch.log('Loaded databanks');
 
