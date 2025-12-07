@@ -66,6 +66,8 @@ function main(): void {
     databank.add('./5etools-src/data/names.json');
     // Load species
     databank.add('./5etools-src/data/races.json');
+    // Load vehicles
+    databank.add('./5etools-src/data/vehicles.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -124,7 +126,7 @@ function main(): void {
     const objects = getObjects(data);
     stopwatch.log('Objects retrieved');
 
-    const vehicles = getVehicles(data);
+    const vehicles = getVehicles(databank);
     stopwatch.log('Vehicles retrieved.');
 
     const skills = getSkills(databank);

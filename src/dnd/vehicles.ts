@@ -1,8 +1,9 @@
+import { Databank } from '../data';
 import { capitalize, Description, DescriptionType, parseDescriptions, parseSizes } from '../parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
-interface Vehicle {
+export interface Vehicle {
     name: string;
     source: string;
     page: number;
@@ -83,7 +84,7 @@ interface Vehicle {
     hasFluffImages: boolean;
 }
 
-interface VehicleUpgrade {
+export interface VehicleUpgrade {
     name: string;
     source: string;
     page: number;
@@ -256,8 +257,8 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
 }
 
 // MAIN COMMAND
-export function getVehicles(data: any): ParsedVehicle[] {
-    const vehicles = (data.vehicle as Vehicle[]).map((v) => {
+export function getVehicles(data: Databank): ParsedVehicle[] {
+    const vehicles = data.vehicle.map((v) => {
         return {
             name: v.name,
             source: v.source,
@@ -271,7 +272,7 @@ export function getVehicles(data: any): ParsedVehicle[] {
         };
     });
 
-    const vehicleUpgrades = (data.vehicleUpgrade as VehicleUpgrade[]).map((v) => {
+    const vehicleUpgrades = data.vehicleUpgrade.map((v) => {
         return {
             name: v.name,
             source: v.source,
