@@ -156,6 +156,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@item ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+    text = text.replaceAll(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@language ([^\}]*?)\}/g, '$1');
@@ -164,6 +165,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@optfeature ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@optfeature ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@quickref ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@quickref ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@race ([^\}]*?)\|\|([^\}]*?)\}/g, '$2');
     text = text.replaceAll(/\{@race ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@race ([^\}]*?)\}/g, '$1');
@@ -201,6 +203,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '$2');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(
+            /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            '$5'
+        );
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -251,6 +257,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '**$2**');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
+        text = text.replaceAll(
+            /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            '**$5**'
+        );
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
@@ -486,7 +496,8 @@ export function parseRange(range: any): string {
             return `Hemisphere (${parseDistance(range.distance)})`;
         case 'special':
             return 'Special';
-
+        case 'cylinder':
+            return `Cylinder (${parseDistance(range.distance)})`;
         default: {
             throw `Unsupported range type: '${range.type}`;
         }
