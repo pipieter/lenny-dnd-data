@@ -1,4 +1,3 @@
-import { existsSync, lstatSync, readdirSync, readFileSync } from 'fs';
 import { title } from './parser';
 import { read } from './read';
 import { Rule } from './dnd/rules';
