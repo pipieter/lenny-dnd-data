@@ -187,6 +187,8 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@dcYourSpellSave\}/g, 'your spell save DC');
     text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@sup ([^\}]*?)\}/g, '[$1]');
+    text = text.replaceAll(/\{@homebrew ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@homebrew ([^\}]*?)\}/g, '$1');
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
