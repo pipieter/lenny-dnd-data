@@ -7,6 +7,7 @@ import { TableData } from './dnd/tables';
 import { Action } from './dnd/actions';
 import { Feat } from './dnd/feats';
 import { Skill } from './dnd/skills';
+import { SpeciesName } from './dnd/names';
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -108,6 +109,8 @@ export class Databank {
     public readonly feat: Feat[] = [];
     // Skills
     public readonly skill: Skill[] = [];
+    // Names
+    public readonly name: SpeciesName[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
