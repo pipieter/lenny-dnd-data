@@ -20,7 +20,7 @@ import { getObjects } from './dnd/objects';
 import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './dnd/skills';
 import { dirname, join } from 'path';
-import kleur = require('kleur');
+import * as kleur from 'kleur';
 
 // Clear the contents of a directory
 function clearDirectory(path: string) {
