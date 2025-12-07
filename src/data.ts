@@ -6,6 +6,7 @@ import { Hazard } from './dnd/hazards';
 import { TableData } from './dnd/tables';
 import { Action } from './dnd/actions';
 import { Feat } from './dnd/feats';
+import { Skill } from './dnd/skills';
 
 export function readJsonFile(path: string): any {
     const contents = readFileSync(path, 'utf8');
@@ -105,6 +106,8 @@ export class Databank {
     public readonly background: any[] = [];
     // Feats
     public readonly feat: Feat[] = [];
+    // Skills
+    public readonly skill: Skill[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {

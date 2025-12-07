@@ -1,6 +1,7 @@
-import { Description, parseAbilityScore, parseDescriptions } from './parser';
+import { Databank } from '../data';
+import { Description, parseAbilityScore, parseDescriptions } from '../parser';
 
-interface Skill {
+export interface Skill {
     name: string;
     source: string;
     page: number;
@@ -19,8 +20,8 @@ interface ParsedSkill {
     description: Description[];
 }
 
-export function getSkills(data: any): ParsedSkill[] {
-    return (data.skill as Skill[]).map((skill) => {
+export function getSkills(data: Databank): ParsedSkill[] {
+    return data.skill.map((skill) => {
         return {
             name: skill.name,
             source: skill.source,
