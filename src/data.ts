@@ -111,6 +111,10 @@ export class Databank {
     public readonly skill: Skill[] = [];
     // Names
     public readonly name: SpeciesName[] = [];
+    // Species
+    public readonly race: any[] = [];
+    public readonly subrace: any[] = [];
+    public readonly raceFluff: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
@@ -121,7 +125,7 @@ export class Databank {
 
     public add(paths: string | string[]) {
         // Keys that will not be handled
-        const keysToIgnore = ['_meta', 'linkedLootTables'];
+        const keysToIgnore = ['_meta', 'linkedLootTables', 'raceFluffMeta'];
 
         const data = read(paths);
         for (const key of Object.keys(data)) {
