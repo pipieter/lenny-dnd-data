@@ -1,5 +1,5 @@
 import { title } from './parser';
-import { read } from './read';
+import { read, readJsonFile } from './read';
 import { Rule } from './dnd/rules';
 import { Hazard } from './dnd/hazards';
 import { TableData } from './dnd/tables';
@@ -9,6 +9,8 @@ import { Skill } from './dnd/skills';
 import { SpeciesName } from './dnd/names';
 import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
 import { DNDObject } from './dnd/objects';
+import { lstatSync, readdirSync } from 'fs';
+import { join } from 'path';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -178,5 +180,64 @@ export class OfficialDatabank extends Databank {
         this.add('variantrules.json');
         this.add('vehicles.json');
         this.addSpellSource('spells/sources.json');
+    }
+}
+
+export interface PartneredFilters {
+    partnered: boolean;
+    allowPHB2014: boolean;
+}
+
+export class PartneredDatabank extends Databank {
+    public readonly filters: PartneredFilters;
+
+    private getFullPath(path: string): string {
+        return `5etools-homebrew/data/${path}`;
+    }
+
+    public override add(path: string) {
+        path = this.getFullPath(path);
+        const stats = lstatSync(path);
+        if (!stats.isDirectory()) {
+            throw new Error(`Partnered databank expects a directory, received '${path}'!`);
+        }
+
+        console.log(path);
+        for (const file of readdirSync(path)) {
+            const fullPath = join(path, file);
+            console.log(fullPath);
+            const data = readJsonFile(fullPath);
+            this.addContents(data, fullPath);
+        }
+    }
+
+    private addContents(data: any, path: string): void {
+        if (!data._meta) {
+            throw new Error(
+                `Partnered databank content expects a +meta field, but '${path}' didn't have one!`
+            );
+        }
+
+        const sources: any[] = data._meta.sources ?? [];
+        const partnered = sources.some((source) => source.partnered ?? false);
+
+        if (this.filters.partnered && !partnered) return;
+        if (!this.filters.allowPHB2014 && data._meta.edition === 'classic') return;
+
+        const keysToIgnore = ['_meta', 'linkedLootTables', 'raceFluffMeta'];
+
+        for (const key of Object.keys(data)) {
+            if (keysToIgnore.includes(key)) continue;
+
+            this.get(key).push(...data[key]);
+        }
+    }
+
+    constructor(filters: PartneredFilters) {
+        super();
+        this.filters = { ...filters };
+
+        this.add('action/');
+        this.add('background/');
     }
 }

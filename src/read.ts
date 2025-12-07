@@ -24,7 +24,7 @@ function combineContents(a: any, b: any): any {
     return combined;
 }
 
-function readJsonFile(filepath: string): any {
+export function readJsonFile(filepath: string): any {
     return JSON.parse(fs.readFileSync(filepath).toString());
 }
 

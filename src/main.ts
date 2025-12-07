@@ -1,6 +1,6 @@
 import { existsSync, lstatSync, mkdirSync, readdirSync, unlinkSync, writeFileSync } from 'fs';
 import { getConditionsStatusesAndDiseases } from './dnd/conditions';
-import { Databank, OfficialDatabank } from './data';
+import { Databank, OfficialDatabank, PartneredDatabank } from './data';
 import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
@@ -29,6 +29,9 @@ function clearDirectory(path: string) {
     const files = readdirSync(path);
     for (const file of files) {
         const fullPath = join(path, file);
+        const stats = lstatSync(fullPath);
+        if (stats.isDirectory()) continue;
+        if (!existsSync(fullPath)) continue;
         unlinkSync(fullPath);
     }
 }
@@ -134,11 +137,15 @@ function main(): void {
     clearDirectory('./generated/partnered');
     clearDirectory('./generated');
 
-    const databank = new OfficialDatabank();
+    const official = new OfficialDatabank();
+    const partnered = new PartneredDatabank({ partnered: true, allowPHB2014: false });
+    const homebrew = new PartneredDatabank({ partnered: false, allowPHB2014: false });
 
     stopwatch.log('Loaded databanks');
 
-    generate('official', databank, stopwatch);
+    generate('official', official, stopwatch);
+    generate('partnered', partnered, stopwatch);
+    generate('homebrew', homebrew, stopwatch);
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
