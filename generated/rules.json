@@ -1,5 +1,1523 @@
 [
   {
+    "name": "Parleying with Monsters",
+    "source": "TCE",
+    "url": "https://5e.tools/variantrules.html#parleying%20with%20monsters_tce",
+    "ruleType": "Optional",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "*Why fight if a lively chat is possible? If things get out of hand, just show yourself out with a dimension door.* - Tasha"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Meeting a monster doesn't have to spark a fight. An offering, like food, can calm some hostile monsters, and sapient creatures often prefer to talk than to draw weapons. If the adventurers try to parley with a monster, you may improvise the encounter or use the social interaction rules in the Dungeon Master's Guide. Consider granting the characters advantage on any ability check they make to communicate with a creature if they offer something it wants. The \"Monsters' Desires\" section below suggest things that a creature might like, depending on its type."
+      },
+      {
+        "name": "Monster Research",
+        "type": "text",
+        "value": "Adventurers can research what a creature is likely to desire. The Monster Research table suggests which skills can be used to learn about a creature of a particular type. The DC for a relevant ability check equals 10 + the creature's challenge rating."
+      },
+      {
+        "name": "Monster Research",
+        "type": "table",
+        "value": {
+          "title": "Monster Research",
+          "headers": [
+            "Type",
+            "Suggested Skills"
+          ],
+          "rows": [
+            [
+              "Aberration",
+              "Arcana"
+            ],
+            [
+              "Beast",
+              "Animal Handling, Nature, or Survival"
+            ],
+            [
+              "Celestial",
+              "Arcana or Religion"
+            ],
+            [
+              "Construct",
+              "Arcana"
+            ],
+            [
+              "Dragon",
+              "Arcana, History, or Nature"
+            ],
+            [
+              "Elemental",
+              "Arcana or Nature"
+            ],
+            [
+              "Fey",
+              "Arcana or Nature"
+            ],
+            [
+              "Fiend",
+              "Arcana or Religion"
+            ],
+            [
+              "Giant",
+              "History"
+            ],
+            [
+              "Humanoid",
+              "History"
+            ],
+            [
+              "Monstrosity",
+              "Nature or Survival"
+            ],
+            [
+              "Ooze",
+              "Arcana or Survival"
+            ],
+            [
+              "Plant",
+              "Nature or Survival"
+            ],
+            [
+              "Undead",
+              "Arcana or Religion"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Aberrations",
+        "type": "table",
+        "value": {
+          "title": "Aberrations",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "The brain or other organs of a rare creature"
+            ],
+            [
+              "2",
+              "Flattery and obsequiousness"
+            ],
+            [
+              "3",
+              "Secrets or lore it doesn't already know"
+            ],
+            [
+              "4",
+              "Accepting a strange, organic graft onto your body"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Beasts",
+        "type": "table",
+        "value": {
+          "title": "Beasts",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Fresh meat"
+            ],
+            [
+              "2",
+              "A soothing melody"
+            ],
+            [
+              "3",
+              "Brightly colored beads, cloth, feathers, or string"
+            ],
+            [
+              "4",
+              "An old stuffed animal or other soft trinket"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Celestials",
+        "type": "table",
+        "value": {
+          "title": "Celestials",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "The tale of a heroic figure"
+            ],
+            [
+              "2",
+              "An oath to do three charitable deeds before dawn"
+            ],
+            [
+              "3",
+              "The crown of a defeated tyrant"
+            ],
+            [
+              "4",
+              "A holy relic or treasured family heirloom"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Constructs",
+        "type": "table",
+        "value": {
+          "title": "Constructs",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Oil to apply to the construct's joints"
+            ],
+            [
+              "2",
+              "A magic item with charges, to be used as fuel"
+            ],
+            [
+              "3",
+              "A vessel infused with elemental power"
+            ],
+            [
+              "4",
+              "Adamantine or mithral components"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Dragons",
+        "type": "table",
+        "value": {
+          "title": "Dragons",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Gold or gems"
+            ],
+            [
+              "2",
+              "Anything from a draconic rival's hoard"
+            ],
+            [
+              "3",
+              "An antique passed down at least three generations"
+            ],
+            [
+              "4",
+              "A flattering artistic depiction of the dragon"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Elementals",
+        "type": "table",
+        "value": {
+          "title": "Elementals",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A gem worth at least 50 gp, which the creature eats"
+            ],
+            [
+              "2",
+              "An exceedingly pure sample of a favored element"
+            ],
+            [
+              "3",
+              "A way to return the elemental to its home plane"
+            ],
+            [
+              "4",
+              "Performing a dance from the elemental's home plane"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Fey",
+        "type": "table",
+        "value": {
+          "title": "Fey",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "The memory of your first kiss"
+            ],
+            [
+              "2",
+              "The color of your eyes"
+            ],
+            [
+              "3",
+              "An object of deep sentimental value to you"
+            ],
+            [
+              "4",
+              "Reciting a sublime poem"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Fiends",
+        "type": "table",
+        "value": {
+          "title": "Fiends",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Your soul"
+            ],
+            [
+              "2",
+              "A desecrated holy object"
+            ],
+            [
+              "3",
+              "Blood from a living or recently slain loved one"
+            ],
+            [
+              "4",
+              "Breaking a sacred promise in the fiend's presence"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Giants",
+        "type": "table",
+        "value": {
+          "title": "Giants",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A dwarf admitting giant-craft to be superior to dwarf-craft"
+            ],
+            [
+              "2",
+              "A strong working animal"
+            ],
+            [
+              "3",
+              "Multiple barrels of ale"
+            ],
+            [
+              "4",
+              "Treasure stolen from a rival giant"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Humanoids",
+        "type": "table",
+        "value": {
+          "title": "Humanoids",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Promising to find a lost item of great importance to their culture"
+            ],
+            [
+              "2",
+              "Challenging them to a type of friendly contest, such as dancing, singing, or drinking"
+            ],
+            [
+              "3",
+              "Recovering something they've lost"
+            ],
+            [
+              "4",
+              "Information on a foe's secrets or weaknesses"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Monstrosities",
+        "type": "table",
+        "value": {
+          "title": "Monstrosities",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "Dislodging the stuck scraps of the creature's last meal"
+            ],
+            [
+              "2",
+              "The creature's favorite food"
+            ],
+            [
+              "3",
+              "Driving off the creature's rival"
+            ],
+            [
+              "4",
+              "Making movements that mimic the monster's mating dance"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Oozes",
+        "type": "table",
+        "value": {
+          "title": "Oozes",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A vial of putrid liquids"
+            ],
+            [
+              "2",
+              "A cloth bearing a noxious odor"
+            ],
+            [
+              "3",
+              "Bones or metal, which the ooze promptly absorbs"
+            ],
+            [
+              "4",
+              "A gallon of any effervescent fluid"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Plants",
+        "type": "table",
+        "value": {
+          "title": "Plants",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A pound of mulch"
+            ],
+            [
+              "2",
+              "Water from a spring infused with Feywild energy"
+            ],
+            [
+              "3",
+              "Clearing invasive vegetation from the creature's territory"
+            ],
+            [
+              "4",
+              "Destroying all axes and fire-making implements the party carries"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Undead",
+        "type": "table",
+        "value": {
+          "title": "Undead",
+          "headers": [
+            "d4",
+            "Desired Offering"
+          ],
+          "rows": [
+            [
+              "1",
+              "A vial of blood"
+            ],
+            [
+              "2",
+              "A personal memento from the creature's past"
+            ],
+            [
+              "3",
+              "Materials, tools, or the skills to sun-proof a crumbling mausoleum"
+            ],
+            [
+              "4",
+              "Completing a task the creature was unable to finish in life"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Multiclassing",
+    "source": "XPHB",
+    "url": "https://5e.tools/variantrules.html#multiclassing_xphb",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Multiclassing allows you to gain levels in multiple classes. With this rule, you have the option of gaining a level in a new class whenever you advance in level instead of gaining a level in your current class. Doing so lets you mix the abilities of those classes to realize a character concept that might not be reflected in a single class."
+      },
+      {
+        "name": "Prerequisites",
+        "type": "text",
+        "value": "To qualify for a new class, you must have a score of at least 13 in the primary ability of the new class and your current classes. For example, a Barbarian who decides to multiclass into the Druid class must have Strength and Wisdom scores of 13 or higher, since Strength is the primary ability for Barbarians and Wisdom is the primary ability for Druids."
+      },
+      {
+        "name": "Experience Points",
+        "type": "text",
+        "value": "The Experience Point cost to gain a level is based on your total character level, not your level in a particular class, as shown in the Character Advancement table in this chapter. For example, if you are a level 6 Cleric / level 1 Fighter, you must gain enough XP to reach level 8 before you can take your second level as a Fighter or your seventh level as a Cleric."
+      },
+      {
+        "name": "Hit Points and Hit Point Dice",
+        "type": "text",
+        "value": "You gain the Hit Points from your new class as described for levels after 1. You gain the level 1 Hit Points for a class only when your total character level is 1."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Add together the Hit Dice granted by all your classes to form your pool of Hit Dice. If these dice are the same die type, you can pool them together. For example, both the Fighter and the Paladin have a d10 Hit Die, so if you are a level 5 Fighter / level 5 Paladin, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, track them separately. If you are a level 5 Cleric / level 5 Paladin, for example, you have five d8 Hit Dice and five d10 Hit Dice."
+      },
+      {
+        "name": "Proficiency Bonus",
+        "type": "text",
+        "value": "Your Proficiency Bonus is based on your total character level, not your level in a particular class, as shown in the Character Advancement table. For example, if you are a level 3 Fighter / level 2 Rogue, you have the Proficiency Bonus of a level 5 character, which is +3."
+      },
+      {
+        "name": "Proficiencies",
+        "type": "text",
+        "value": "When you gain your first level in a class other than your initial class, you gain only some of the new class's starting proficiencies, as detailed in each class's description in chapter 3."
+      },
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "When you gain a new level in a class, you get its features for that level. A few features have additional rules when you're multiclassing. Check the information about multiclassing included in each of your classes' descriptions."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Special rules apply to Extra Attack, Spellcasting, and features (such as Unarmored Defense) that give you alternative ways to calculate your Armor Class."
+      },
+      {
+        "name": "Armor Class",
+        "type": "text",
+        "value": "If you have multiple ways to calculate your Armor Class, you can benefit from only one at a time. For example, a Monk/Sorcerer with a Monk's Unarmored Defense feature and a Sorcerer's Draconic Resilience feature must choose only one of those features as a way to calculate Armor Class."
+      },
+      {
+        "name": "Extra Attack",
+        "type": "text",
+        "value": "If you gain the Extra Attack feature from more than one class, the features don't stack. You can't make more than two attacks with this feature unless you have a feature that says you can (such as the Fighter's Two Extra Attacks feature)."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Similarly, the Warlock's Thirsting Blade invocation, which grants you the Extra Attack feature with your pact weapon, doesn't give you additional attacks if you also have Extra Attack."
+      },
+      {
+        "name": "Spellcasting",
+        "type": "text",
+        "value": "Your capacity for spellcasting depends partly on your combined levels in all your spellcasting classes and partly on your individual levels in those classes. Once you have the Spellcasting feature from more than one class, use the rules below. If you multiclass but have the Spellcasting feature from only one class, follow the rules for that class."
+      },
+      {
+        "name": "Multiclass Spellcaster: Spell Slots per Spell Level",
+        "type": "table",
+        "value": {
+          "title": "Multiclass Spellcaster: Spell Slots per Spell Level",
+          "headers": [
+            "Level",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "rows": [
+            [
+              "1",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "2",
+              "3",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "3",
+              "4",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "4",
+              "4",
+              "3",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "5",
+              "4",
+              "3",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "6",
+              "4",
+              "3",
+              "3",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "7",
+              "4",
+              "3",
+              "3",
+              "1",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "8",
+              "4",
+              "3",
+              "3",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "9",
+              "4",
+              "3",
+              "3",
+              "3",
+              "1",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "10",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "—",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "11",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "12",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "—",
+              "—",
+              "—"
+            ],
+            [
+              "13",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "—",
+              "—"
+            ],
+            [
+              "14",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "—",
+              "—"
+            ],
+            [
+              "15",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "1",
+              "—"
+            ],
+            [
+              "16",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "1",
+              "—"
+            ],
+            [
+              "17",
+              "4",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "18",
+              "4",
+              "3",
+              "3",
+              "3",
+              "3",
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "19",
+              "4",
+              "3",
+              "3",
+              "3",
+              "3",
+              "2",
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "20",
+              "4",
+              "3",
+              "3",
+              "3",
+              "3",
+              "2",
+              "2",
+              "1",
+              "1"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Spells Prepared",
+        "type": "text",
+        "value": "You determine what spells you can prepare for each class individually, as if you were a single-classed member of that class. If you are a level 4 Ranger / level 3 Sorcerer, for example, you can prepare five level 1 Ranger spells, and you can prepare six Sorcerer spells of level 1 or 2 (as well as four Sorcerer cantrips)."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Each spell you prepare is associated with one of your classes, and you use the spellcasting ability of that class when you cast the spell."
+      },
+      {
+        "name": "Cantrips",
+        "type": "text",
+        "value": "If a cantrip of yours increases in power at higher levels, the increase is based on your total character level, not your level in a particular class, unless the spell says otherwise."
+      },
+      {
+        "name": "Spell Slots",
+        "type": "text",
+        "value": "You determine your available spell slots by adding together the following:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• All your levels in the Bard, Cleric, Druid, Sorcerer, and Wizard classes\n• Half your levels (round up) in the Paladin and Ranger classes\n• One third of your Fighter or Rogue levels (round down) if you have the Eldritch Knight or Arcane Trickster subclass."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Then look up this total level in the Level column of the Multiclass Spellcaster table. You use the slots for that level to cast spells of an appropriate level from any class whose Spellcasting feature you have."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "This table might give you spell slots of a higher level than the spells you prepare. You can use those slots but only to cast your lower-level spells. If a lower-level spell that you cast, like __Burning Hands__, has an enhanced effect when cast at a higher level, you can use the enhanced effect as normal."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "For example, if you are a level 4 Ranger / level 3 Sorcerer, you count as a level 5 character when determining your spell slots, counting all your levels as a Sorcerer and half your Ranger levels. As shown in the Multiclass Spellcaster table, you have four level 1 spell slots, three level 2 slots, and two level 3 slots. However, you can't prepare any level 3 spells, nor can you prepare any level 2 Ranger spells. You can use the spell slots of those levels to cast the spells you do prepare—and potentially enhance their effects."
+      },
+      {
+        "name": "Pact Magic",
+        "type": "text",
+        "value": "If you have the Pact Magic feature from the Warlock class and the Spellcasting feature, you can use the spell slots you gain from Pact Magic to cast spells you have prepared from classes with the Spellcasting feature, and you can use the spell slots you gain from the Spellcasting feature to cast Warlock spells you have prepared."
+      }
+    ]
+  },
+  {
+    "name": "Weapon Mastery Properties",
+    "source": "XPHB",
+    "url": "https://5e.tools/variantrules.html#weapon%20mastery%20properties_xphb",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below."
+      },
+      {
+        "name": "Cleave",
+        "type": "text",
+        "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+      },
+      {
+        "name": "Graze",
+        "type": "text",
+        "value": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+      },
+      {
+        "name": "Nick",
+        "type": "text",
+        "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+      },
+      {
+        "name": "Push",
+        "type": "text",
+        "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+      },
+      {
+        "name": "Sap",
+        "type": "text",
+        "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+      },
+      {
+        "name": "Slow",
+        "type": "text",
+        "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+      },
+      {
+        "name": "Topple",
+        "type": "text",
+        "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+      },
+      {
+        "name": "Vex",
+        "type": "text",
+        "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+      }
+    ]
+  },
+  {
+    "name": "Diagonal Movement",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#diagonal%20movement_xdmg",
+    "ruleType": "Variant",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "The Player's Handbook presents a simple method for counting movement and measuring range on a grid of squares: count every square as 5 feet, even if the creature is moving or counting diagonally. While fast in play, this rule breaks the laws of geometry."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you want more accuracy, use the following rule: the first diagonal square counts as 5 feet, but the second diagonal square counts as 10 feet. This pattern of 5 feet and then 10 feet continues whenever you're counting diagonally, even if the creature moves straight between different bits of diagonal movement. For example, a character might move 1 square diagonally (5 feet), then 3 squares straight (15 feet), and then another square diagonally (10 feet) for a total movement of 30 feet."
+      }
+    ]
+  },
+  {
+    "name": "Milestones",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#milestones_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can also award XP when characters complete significant milestones. When preparing your adventure, designate certain events or challenges as milestones, as with the following examples:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• Accomplishing one in a series of goals necessary to complete the adventure.\n• Discovering a hidden location or piece of information relevant to the adventure.\n• Reaching an important destination."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When awarding XP, treat a major milestone as a high-difficulty encounter and a minor milestone as a low-difficulty encounter."
+      },
+      {
+        "name": "Other Milestone Rewards",
+        "type": "text",
+        "value": "If you want to reward your players for their progress through an adventure with something more than XP and treasure, also give them small rewards at milestone points, such as the following:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• The adventurers gain the benefit of a Short Rest.\n• Characters recover a Hit Point Die or a level 1 spell slot.\n• Characters regain the use of magic items that have had their limited uses expended."
+      }
+    ]
+  },
+  {
+    "name": "Training to Gain Levels",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#training%20to%20gain%20levels_xdmg",
+    "ruleType": "Variant",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "As a variant rule, you can require characters to spend time between adventures training or studying before they gain the benefits of a new level. This variant slows the passage of time in the game world, which can help support a more realistic or gritty tone in your campaign."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you choose this option, after earning enough Experience Points to attain a new level, a character must train for a number of days before gaining any class features associated with the new level. You can decide whether the character can train independently or requires a trainer."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The training time required depends on the level to be gained, as shown on the Training to Gain Levels table. The training cost is for the total training time."
+      },
+      {
+        "name": "Training to Gain Levels",
+        "type": "table",
+        "value": {
+          "title": "Training to Gain Levels",
+          "headers": [
+            "Level Attained",
+            "Training Time",
+            "Training Cost"
+          ],
+          "rows": [
+            [
+              "2–4",
+              "10 days",
+              "20 GP"
+            ],
+            [
+              "5–10",
+              "20 days",
+              "40 GP"
+            ],
+            [
+              "11–16",
+              "30 days",
+              "60 GP"
+            ],
+            [
+              "17–20",
+              "40 days",
+              "80 GP"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Firearms",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#firearms_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "The Firearms table provides examples of modern and futuristic firearms. If you make them available for purchase (perhaps in the fantastical marketplaces of the City of Brass), treat modern items as Rare magic items and futuristic items as Very Rare ones (see chapter 7)."
+      },
+      {
+        "name": "Properties",
+        "type": "text",
+        "value": "Some weapons in the Firearms table have the following properties, in addition to properties described in the Player's Handbook."
+      },
+      {
+        "name": "Burst Fire",
+        "type": "text",
+        "value": "As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save."
+      },
+      {
+        "name": "Reload",
+        "type": "text",
+        "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+      },
+      {
+        "name": "Ammunition",
+        "type": "text",
+        "value": "Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at your discretion. An Energy Cell weighs 1/2 lb."
+      },
+      {
+        "name": "Firearms",
+        "type": "table",
+        "value": {
+          "title": "Firearms",
+          "headers": [
+            "Modern Item",
+            "Damage",
+            "Properties",
+            "Mastery",
+            "Weight"
+          ],
+          "rows": [
+            [
+              "Martial Ranged Weapons",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Automatic Rifle",
+              "2d8 Piercing",
+              "Ammunition (Range 80/240; Bullet), Burst Fire, Reload (30 shots), Two-Handed",
+              "Slow",
+              "8 lb."
+            ],
+            [
+              "Hunting Rifle",
+              "2d10 Piercing",
+              "Ammunition (Range 80/240; Bullet), Reload (5 shots), Two-Handed",
+              "Slow",
+              "8 lb."
+            ],
+            [
+              "Revolver",
+              "2d8 Piercing",
+              "Ammunition (Range 40/120; Bullet), Reload (6 shots)",
+              "Sap",
+              "3 lb."
+            ],
+            [
+              "Semiautomatic Pistol",
+              "2d6 Piercing",
+              "Ammunition (Range 50/150; Bullet), Reload (15 shots)",
+              "Vex",
+              "3 lb."
+            ],
+            [
+              "Shotgun",
+              "2d8 Piercing",
+              "Ammunition (Range 30/90; Bullet), Reload (2 shots), Two-Handed",
+              "Push",
+              "7 lb."
+            ]
+          ]
+        }
+      },
+      {
+        "name": "",
+        "type": "table",
+        "value": {
+          "title": "",
+          "headers": [
+            "Futuristic Item",
+            "Damage",
+            "Properties",
+            "Mastery",
+            "Weight"
+          ],
+          "rows": [
+            [
+              "Martial Ranged Weapons",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Antimatter Rifle",
+              "6d8 Necrotic",
+              "Ammunition (Range 120/360; Energy Cell), Reload (2 shots), Two-Handed",
+              "Sap",
+              "10 lb."
+            ],
+            [
+              "Laser Pistol",
+              "3d6 Radiant",
+              "Ammunition (Range 40/120; Energy Cell), Reload (50 shots)",
+              "Vex",
+              "2 lb."
+            ],
+            [
+              "Laser Rifle",
+              "3d8 Radiant",
+              "Ammunition (Range 100/300; Energy Cell), Reload (30 shots), Two-Handed",
+              "Slow",
+              "7 lb."
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Explosives",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#explosives_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "The Explosives table has examples of explosives. If no cost is given for an explosive, it can't typically be bought. If you make these explosives available for purchase, treat them as Rare magic items. Rules for explosives are given below."
+      },
+      {
+        "name": "Explosives",
+        "type": "table",
+        "value": {
+          "title": "Explosives",
+          "headers": [
+            "Item",
+            "Cost",
+            "Weight"
+          ],
+          "rows": [
+            [
+              "Bomb",
+              "100 GP",
+              "1 lb."
+            ],
+            [
+              "Dynamite Stick",
+              "—",
+              "1 lb."
+            ],
+            [
+              "Grenade, Fragmentation",
+              "—",
+              "1 lb."
+            ],
+            [
+              "Grenade Launcher",
+              "—",
+              "7 lb."
+            ],
+            [
+              "Grenade, Smoke",
+              "50 GP",
+              "2 lb."
+            ],
+            [
+              "Gunpowder (keg)",
+              "250 GP",
+              "20 lb."
+            ],
+            [
+              "Gunpowder (powder horn)",
+              "35 GP",
+              "2 lb."
+            ]
+          ]
+        }
+      },
+      {
+        "name": "Bomb",
+        "type": "text",
+        "value": "As an action, you can light a Bomb and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one."
+      },
+      {
+        "name": "Dynamite Stick",
+        "type": "text",
+        "value": "An an action, you can light a Dynamite Stick and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Force damage on a failed save or half as much damage on a successful one."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "It takes 1 minute to bind two or more Dynamite Sticks together so they explode at the same time. Each stick after the first increases the damage by 1d6 (to a maximum of 10d6) and the effect's radius by 5 feet (to a maximum of 20 feet)."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "It takes 1 minute to rig dynamite with a longer fuse so it explodes after a longer period of time, such as 1 minute or 10 minutes."
+      },
+      {
+        "name": "Grenades and Grenade Launchers",
+        "type": "text",
+        "value": "As an action, you can either throw a grenade at a point up to 60 feet away or use a Grenade Launcher to propel the grenade to a point up to 1,000 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius Sphere."
+      },
+      {
+        "name": "Fragmentation Grenade",
+        "type": "text",
+        "value": "Each creature in the Sphere makes a DC 15 Dexterity saving throw, taking 17 (5d6) Piercing damage on a failed save or half as much damage on a successful one."
+      },
+      {
+        "name": "Smoke Grenade",
+        "type": "text",
+        "value": "The area of the Sphere is Heavily Obscured by smoke for 1 minute. A strong wind (such as the __Gust of Wind__ spell) disperses the smoke."
+      },
+      {
+        "name": "Gunpowder",
+        "type": "text",
+        "value": "Setting fire to a container full of Gunpowder causes it to explode. When a container explodes, each creature in a 10-foot-radius Sphere centered on the container makes a DC 12 Dexterity saving throw, taking 10 (3d6) Fire damage (for a powder horn) or 24 (7d6) Fire damage (for a keg) on a failed save or half as much damage on a successful one."
+      }
+    ]
+  },
+  {
+    "name": "Alien Technology",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#alien%20technology_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When adventurers find a piece of technology that isn't from their world or time period, they can deduce what it is with a successful Intelligence (*Investigation*) check, with the DC depending on the complexity of the item: DC 10 for a relatively simple item like a calculator or a lighter, or DC 20 for a complex item such as a computer, a chainsaw, or a hovercraft. You may require a separate Intelligence (*Investigation*) check to determine whether a character can activate or operate the technology; a character who has observed the item in use or has operated a similar item either has Advantage on the check or succeeds on the check automatically (your choice)."
+      }
+    ]
+  },
+  {
+    "name": "Loyalty",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#loyalty_xdmg",
+    "ruleType": "Optional",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Loyalty is an optional rule you can use to determine how far an NPC party member will go to protect or assist the characters (even those the NPC doesn't particularly like). An NPC party member who is abused or ignored is likely to abandon or betray the party, whereas an NPC who owes a life debt to the characters or shares their goals might fight to the death for them. You can simply decide on an NPC's loyalty, or you can track a Loyalty Score using the following rules."
+      },
+      {
+        "name": "Loyalty Score",
+        "type": "text",
+        "value": "An NPC's loyalty is measured on a numerical scale from 0 to 20. The NPC's maximum Loyalty Score is equal to the highest Charisma score among all adventurers in the party, and its starting Loyalty Score is half that number. If the highest Charisma score changes—perhaps a character dies or leaves the group—adjust the NPC's Loyalty Score accordingly."
+      },
+      {
+        "name": "Tracking Loyalty",
+        "type": "text",
+        "value": "Keep track of an NPC's Loyalty Score in secret so that the players won't know for sure whether an NPC party member is loyal or disloyal."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "An NPC's Loyalty Score increases by 1d4 if other party members help the NPC achieve a personal goal. Likewise, an NPC's Loyalty Score increases by 1d4 if the NPC is treated particularly well (for example, given a magic weapon as a gift) or rescued by another party member. An NPC's Loyalty Score can never be raised above its maximum."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When other party members act in a manner that runs counter to the NPC's alignment or personality, reduce the NPC's Loyalty Score by 1d4. Reduce the NPC's Loyalty Score by 2d4 if the NPC is abused, misled, or endangered by other party members for purely selfish reasons. A Loyalty Score can never drop below 0."
+      },
+      {
+        "name": "Meaning of Loyalty",
+        "type": "text",
+        "value": "An NPC with a Loyalty Score of 10 or higher risks anything to help fellow party members. An NPC whose Loyalty Score is between 1 and 10 is tenuously faithful to the party. An NPC whose Loyalty Score drops to 0 no longer acts in the party's best interests. The disloyal NPC either leaves the party (attacking characters who attempt to intervene) or works in secret to bring about the party's downfall."
+      },
+      {
+        "name": "Crew Loyalty and Mutiny",
+        "type": "text",
+        "value": "If the characters own or operate a sailing ship or similar vessel, you can use these rules to track the loyalty of individual crew members or the ship's crew as a whole. If at least half the crew's Loyalty Scores drop to 0 during a voyage, the crew turns Hostile and stages a mutiny. If the ship is berthed, disloyal crew members leave the ship and never return."
+      }
+    ]
+  },
+  {
+    "name": "Renown",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#renown_xdmg",
+    "ruleType": "Optional",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Renown is an optional rule you can use to track characters' standing, individually or as a party, within a particular group, such as a faction, an organization, or a community."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A character's or party's Renown Score starts at 0, then increases as characters earn favor and reputation with respect to the group. You can tie benefits to a character's renown, including ranks, titles, and access to resources."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Players track renown separately for each group their characters are associated with. For example, an adventurer might have a Renown Score of 5 with one faction and a Renown Score of 20 with another, based on the character's interaction with each group."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use renown over the course of an entire campaign or within a single adventure. At a campaign scale, you might set up factions or guilds that characters can join, individually or as a group, and the characters pursue ranks and rewards by gaining Renown within their organizations. At an adventure level, you might decide that the characters as a group need to earn a Renown Score of 5+ with the council before the council trusts the characters enough to share resources with them."
+      },
+      {
+        "name": "Gaining Renown",
+        "type": "text",
+        "value": "At your discretion, a character or party can increase their renown in the following ways:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Completing Missions**: Advancing a group's interests increases a character's Renown Score within that group by 1. Completing a mission specifically assigned by that group or that directly benefits the group increases the character's Renown Score by 2. Hugely significant quests might grant Renown Score increases of 3 or 4 at once.\n• **Group Involvement**: Once a character has established a Renown Score of 1+ with a group, the character can gain renown by spending time between adventures undertaking minor tasks for the group and socializing with its members. After doing so for a number of days equal to 10 times the character's current Renown Score, the character's Renown Score increases by 1."
+      },
+      {
+        "name": "Benefits of Renown",
+        "type": "text",
+        "value": "Use these guidelines when determining the benefits of increasing renown."
+      },
+      {
+        "name": "Recognition",
+        "type": "text",
+        "value": "A character who has a Renown Score of 3+ with a group is a respected member of that group. Other members of the group are Friendly toward the character by default and provide the character with lodging and food in dire circumstances."
+      },
+      {
+        "name": "Rank",
+        "type": "text",
+        "value": "Some groups have hierarchies that characters can ascend as they improve their Renown Scores. Other groups have positions of honor that characters can apply for if their Renown Score is high enough. Characters can earn promotions as their Renown Scores increase. You can establish certain Renown Score thresholds as prerequisites (though not necessarily the only prerequisites) for advancing in rank. You can set these thresholds however you like, creating ranks and titles for the groups in your campaign."
+      },
+      {
+        "name": "Perks",
+        "type": "text",
+        "value": "Earning renown within a group might come with certain benefits. A character with a Renown Score of 3+ might gain access to a reliable contact, a safe house, or a discount on adventuring gear. With a Renown Score of 10+, a character might gain access to Potions and Scrolls, the ability to call in a favor, or backup on dangerous missions. A character whose Renown Score rises to 50 might be able to call on a small army, acquire a Rare magic item, gain access to a helpful spellcaster, or assign special missions to members of lower status."
+      },
+      {
+        "name": "Losing Renown",
+        "type": "text",
+        "value": "Disagreements with members of a group aren't enough to cause a loss of renown within that group. However, serious offenses committed against the group or its members can result in a loss of renown and rank within the organization. The extent of the loss depends on the infraction and is left to your discretion. A character's Renown Score with a group can never drop below 0."
+      },
+      {
+        "name": "Level-Based Renown",
+        "type": "text",
+        "value": "If you want to use the benefits of renown without tracking Renown Scores, you can use a character's level as a shorthand for the character's Renown Score with a group, assuming the character has worked with or for that group for most of the character's career. The Level-Based Renown table shows equivalencies between Renown Score and character level."
+      },
+      {
+        "name": "Level-Based Renown",
+        "type": "table",
+        "value": {
+          "title": "Level-Based Renown",
+          "headers": [
+            "Renown Score",
+            "Character Level"
+          ],
+          "rows": [
+            [
+              "1",
+              "1"
+            ],
+            [
+              "3",
+              "3"
+            ],
+            [
+              "10",
+              "5"
+            ],
+            [
+              "25",
+              "11"
+            ],
+            [
+              "50",
+              "17"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mixing Potions",
+    "source": "XDMG",
+    "url": "https://5e.tools/variantrules.html#mixing%20potions_xdmg",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "A character might drink one potion while still under the effects of another or pour several potions into a single container. The strange ingredients used in creating potions can result in unpredictable interactions."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When a character mixes two potions together, roll on the Potion Miscibility table. If more than two are combined, roll again for each subsequent potion, combining the results. Unless the effects are immediately obvious, reveal them only when they become evident."
+      },
+      {
+        "name": "Potion Miscibility",
+        "type": "table",
+        "value": {
+          "title": "Potion Miscibility",
+          "headers": [
+            "1d100",
+            "Result"
+          ],
+          "rows": [
+            [
+              "01",
+              "Both potions lose their effects, and the mixture creates a magical explosion in a 5-foot-radius Sphere centered on itself. Each creature in that area takes 4d10 Force damage."
+            ],
+            [
+              "02–08",
+              "Both potions lose their effects, and the mixture becomes an ingested poison of your choice (see \"Poison\" in chapter 3)."
+            ],
+            [
+              "09–15",
+              "Both potions lose their effects."
+            ],
+            [
+              "16–25",
+              "One potion loses its effect."
+            ],
+            [
+              "26–35",
+              "Both potions work, but with their numerical effects and durations halved. If a potion has no numerical effect and no duration, it instead loses its effect."
+            ],
+            [
+              "36–90",
+              "Both potions work normally."
+            ],
+            [
+              "91–99",
+              "Both potions work, but the numerical effects and duration of one potion are doubled. If neither potion has anything to double in this way, they work normally."
+            ],
+            [
+              "00",
+              "Only one potion works, but its effects are permanent. Choose the simplest effect to make permanent or the one that seems the most fun. For example, a Potion of Healing might increase the drinker's Hit Point maximum by 2d4 + 2, or a Potion of Invisibility might give the drinker the Invisible condition indefinitely. At your discretion, a Dispel Magic spell or similar magic might end this lasting effect."
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Death Saving Throws",
+    "source": "XScreen",
+    "url": "https://5e.tools/variantrules.html#death%20saving%20throws_xscreen",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you start your turn with 0 HP, roll 1d20, and you succeed on a 10+."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• **Third Success**: You become Stable.\n• **Third Failure**: You die.\n• **Rolling a 1**: Counts as two failures.\n• **Rolling a 20**: You regain 1 Hit Point."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you take damage at 0 HP, it counts as a failed Death Save or two failures if the damage is from a Critical Hit."
+      }
+    ]
+  },
+  {
     "name": "Ability Check",
     "source": "XPHB",
     "url": "https://5e.tools/variantrules.html#ability%20check_xphb",
@@ -16147,1524 +17665,6 @@
         "name": "",
         "type": "text",
         "value": "A weapon attack is an attack roll made with a weapon."
-      }
-    ]
-  },
-  {
-    "name": "Parleying with Monsters",
-    "source": "TCE",
-    "url": "https://5e.tools/variantrules.html#parleying%20with%20monsters_tce",
-    "ruleType": "Optional",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "*Why fight if a lively chat is possible? If things get out of hand, just show yourself out with a dimension door.* - Tasha"
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Meeting a monster doesn't have to spark a fight. An offering, like food, can calm some hostile monsters, and sapient creatures often prefer to talk than to draw weapons. If the adventurers try to parley with a monster, you may improvise the encounter or use the social interaction rules in the Dungeon Master's Guide. Consider granting the characters advantage on any ability check they make to communicate with a creature if they offer something it wants. The \"Monsters' Desires\" section below suggest things that a creature might like, depending on its type."
-      },
-      {
-        "name": "Monster Research",
-        "type": "text",
-        "value": "Adventurers can research what a creature is likely to desire. The Monster Research table suggests which skills can be used to learn about a creature of a particular type. The DC for a relevant ability check equals 10 + the creature's challenge rating."
-      },
-      {
-        "name": "Monster Research",
-        "type": "table",
-        "value": {
-          "title": "Monster Research",
-          "headers": [
-            "Type",
-            "Suggested Skills"
-          ],
-          "rows": [
-            [
-              "Aberration",
-              "Arcana"
-            ],
-            [
-              "Beast",
-              "Animal Handling, Nature, or Survival"
-            ],
-            [
-              "Celestial",
-              "Arcana or Religion"
-            ],
-            [
-              "Construct",
-              "Arcana"
-            ],
-            [
-              "Dragon",
-              "Arcana, History, or Nature"
-            ],
-            [
-              "Elemental",
-              "Arcana or Nature"
-            ],
-            [
-              "Fey",
-              "Arcana or Nature"
-            ],
-            [
-              "Fiend",
-              "Arcana or Religion"
-            ],
-            [
-              "Giant",
-              "History"
-            ],
-            [
-              "Humanoid",
-              "History"
-            ],
-            [
-              "Monstrosity",
-              "Nature or Survival"
-            ],
-            [
-              "Ooze",
-              "Arcana or Survival"
-            ],
-            [
-              "Plant",
-              "Nature or Survival"
-            ],
-            [
-              "Undead",
-              "Arcana or Religion"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Aberrations",
-        "type": "table",
-        "value": {
-          "title": "Aberrations",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "The brain or other organs of a rare creature"
-            ],
-            [
-              "2",
-              "Flattery and obsequiousness"
-            ],
-            [
-              "3",
-              "Secrets or lore it doesn't already know"
-            ],
-            [
-              "4",
-              "Accepting a strange, organic graft onto your body"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Beasts",
-        "type": "table",
-        "value": {
-          "title": "Beasts",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "Fresh meat"
-            ],
-            [
-              "2",
-              "A soothing melody"
-            ],
-            [
-              "3",
-              "Brightly colored beads, cloth, feathers, or string"
-            ],
-            [
-              "4",
-              "An old stuffed animal or other soft trinket"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Celestials",
-        "type": "table",
-        "value": {
-          "title": "Celestials",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "The tale of a heroic figure"
-            ],
-            [
-              "2",
-              "An oath to do three charitable deeds before dawn"
-            ],
-            [
-              "3",
-              "The crown of a defeated tyrant"
-            ],
-            [
-              "4",
-              "A holy relic or treasured family heirloom"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Constructs",
-        "type": "table",
-        "value": {
-          "title": "Constructs",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "Oil to apply to the construct's joints"
-            ],
-            [
-              "2",
-              "A magic item with charges, to be used as fuel"
-            ],
-            [
-              "3",
-              "A vessel infused with elemental power"
-            ],
-            [
-              "4",
-              "Adamantine or mithral components"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Dragons",
-        "type": "table",
-        "value": {
-          "title": "Dragons",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "Gold or gems"
-            ],
-            [
-              "2",
-              "Anything from a draconic rival's hoard"
-            ],
-            [
-              "3",
-              "An antique passed down at least three generations"
-            ],
-            [
-              "4",
-              "A flattering artistic depiction of the dragon"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Elementals",
-        "type": "table",
-        "value": {
-          "title": "Elementals",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "A gem worth at least 50 gp, which the creature eats"
-            ],
-            [
-              "2",
-              "An exceedingly pure sample of a favored element"
-            ],
-            [
-              "3",
-              "A way to return the elemental to its home plane"
-            ],
-            [
-              "4",
-              "Performing a dance from the elemental's home plane"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Fey",
-        "type": "table",
-        "value": {
-          "title": "Fey",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "The memory of your first kiss"
-            ],
-            [
-              "2",
-              "The color of your eyes"
-            ],
-            [
-              "3",
-              "An object of deep sentimental value to you"
-            ],
-            [
-              "4",
-              "Reciting a sublime poem"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Fiends",
-        "type": "table",
-        "value": {
-          "title": "Fiends",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "Your soul"
-            ],
-            [
-              "2",
-              "A desecrated holy object"
-            ],
-            [
-              "3",
-              "Blood from a living or recently slain loved one"
-            ],
-            [
-              "4",
-              "Breaking a sacred promise in the fiend's presence"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Giants",
-        "type": "table",
-        "value": {
-          "title": "Giants",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "A dwarf admitting giant-craft to be superior to dwarf-craft"
-            ],
-            [
-              "2",
-              "A strong working animal"
-            ],
-            [
-              "3",
-              "Multiple barrels of ale"
-            ],
-            [
-              "4",
-              "Treasure stolen from a rival giant"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Humanoids",
-        "type": "table",
-        "value": {
-          "title": "Humanoids",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "Promising to find a lost item of great importance to their culture"
-            ],
-            [
-              "2",
-              "Challenging them to a type of friendly contest, such as dancing, singing, or drinking"
-            ],
-            [
-              "3",
-              "Recovering something they've lost"
-            ],
-            [
-              "4",
-              "Information on a foe's secrets or weaknesses"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Monstrosities",
-        "type": "table",
-        "value": {
-          "title": "Monstrosities",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "Dislodging the stuck scraps of the creature's last meal"
-            ],
-            [
-              "2",
-              "The creature's favorite food"
-            ],
-            [
-              "3",
-              "Driving off the creature's rival"
-            ],
-            [
-              "4",
-              "Making movements that mimic the monster's mating dance"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Oozes",
-        "type": "table",
-        "value": {
-          "title": "Oozes",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "A vial of putrid liquids"
-            ],
-            [
-              "2",
-              "A cloth bearing a noxious odor"
-            ],
-            [
-              "3",
-              "Bones or metal, which the ooze promptly absorbs"
-            ],
-            [
-              "4",
-              "A gallon of any effervescent fluid"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Plants",
-        "type": "table",
-        "value": {
-          "title": "Plants",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "A pound of mulch"
-            ],
-            [
-              "2",
-              "Water from a spring infused with Feywild energy"
-            ],
-            [
-              "3",
-              "Clearing invasive vegetation from the creature's territory"
-            ],
-            [
-              "4",
-              "Destroying all axes and fire-making implements the party carries"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Undead",
-        "type": "table",
-        "value": {
-          "title": "Undead",
-          "headers": [
-            "d4",
-            "Desired Offering"
-          ],
-          "rows": [
-            [
-              "1",
-              "A vial of blood"
-            ],
-            [
-              "2",
-              "A personal memento from the creature's past"
-            ],
-            [
-              "3",
-              "Materials, tools, or the skills to sun-proof a crumbling mausoleum"
-            ],
-            [
-              "4",
-              "Completing a task the creature was unable to finish in life"
-            ]
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "name": "Multiclassing",
-    "source": "XPHB",
-    "url": "https://5e.tools/variantrules.html#multiclassing_xphb",
-    "ruleType": "Core",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Multiclassing allows you to gain levels in multiple classes. With this rule, you have the option of gaining a level in a new class whenever you advance in level instead of gaining a level in your current class. Doing so lets you mix the abilities of those classes to realize a character concept that might not be reflected in a single class."
-      },
-      {
-        "name": "Prerequisites",
-        "type": "text",
-        "value": "To qualify for a new class, you must have a score of at least 13 in the primary ability of the new class and your current classes. For example, a Barbarian who decides to multiclass into the Druid class must have Strength and Wisdom scores of 13 or higher, since Strength is the primary ability for Barbarians and Wisdom is the primary ability for Druids."
-      },
-      {
-        "name": "Experience Points",
-        "type": "text",
-        "value": "The Experience Point cost to gain a level is based on your total character level, not your level in a particular class, as shown in the Character Advancement table in this chapter. For example, if you are a level 6 Cleric / level 1 Fighter, you must gain enough XP to reach level 8 before you can take your second level as a Fighter or your seventh level as a Cleric."
-      },
-      {
-        "name": "Hit Points and Hit Point Dice",
-        "type": "text",
-        "value": "You gain the Hit Points from your new class as described for levels after 1. You gain the level 1 Hit Points for a class only when your total character level is 1."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Add together the Hit Dice granted by all your classes to form your pool of Hit Dice. If these dice are the same die type, you can pool them together. For example, both the Fighter and the Paladin have a d10 Hit Die, so if you are a level 5 Fighter / level 5 Paladin, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, track them separately. If you are a level 5 Cleric / level 5 Paladin, for example, you have five d8 Hit Dice and five d10 Hit Dice."
-      },
-      {
-        "name": "Proficiency Bonus",
-        "type": "text",
-        "value": "Your Proficiency Bonus is based on your total character level, not your level in a particular class, as shown in the Character Advancement table. For example, if you are a level 3 Fighter / level 2 Rogue, you have the Proficiency Bonus of a level 5 character, which is +3."
-      },
-      {
-        "name": "Proficiencies",
-        "type": "text",
-        "value": "When you gain your first level in a class other than your initial class, you gain only some of the new class's starting proficiencies, as detailed in each class's description in chapter 3."
-      },
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "When you gain a new level in a class, you get its features for that level. A few features have additional rules when you're multiclassing. Check the information about multiclassing included in each of your classes' descriptions."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Special rules apply to Extra Attack, Spellcasting, and features (such as Unarmored Defense) that give you alternative ways to calculate your Armor Class."
-      },
-      {
-        "name": "Armor Class",
-        "type": "text",
-        "value": "If you have multiple ways to calculate your Armor Class, you can benefit from only one at a time. For example, a Monk/Sorcerer with a Monk's Unarmored Defense feature and a Sorcerer's Draconic Resilience feature must choose only one of those features as a way to calculate Armor Class."
-      },
-      {
-        "name": "Extra Attack",
-        "type": "text",
-        "value": "If you gain the Extra Attack feature from more than one class, the features don't stack. You can't make more than two attacks with this feature unless you have a feature that says you can (such as the Fighter's Two Extra Attacks feature)."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Similarly, the Warlock's Thirsting Blade invocation, which grants you the Extra Attack feature with your pact weapon, doesn't give you additional attacks if you also have Extra Attack."
-      },
-      {
-        "name": "Spellcasting",
-        "type": "text",
-        "value": "Your capacity for spellcasting depends partly on your combined levels in all your spellcasting classes and partly on your individual levels in those classes. Once you have the Spellcasting feature from more than one class, use the rules below. If you multiclass but have the Spellcasting feature from only one class, follow the rules for that class."
-      },
-      {
-        "name": "Multiclass Spellcaster: Spell Slots per Spell Level",
-        "type": "table",
-        "value": {
-          "title": "Multiclass Spellcaster: Spell Slots per Spell Level",
-          "headers": [
-            "Level",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-          ],
-          "rows": [
-            [
-              "1",
-              "2",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "2",
-              "3",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "3",
-              "4",
-              "2",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "4",
-              "4",
-              "3",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "5",
-              "4",
-              "3",
-              "2",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "6",
-              "4",
-              "3",
-              "3",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "7",
-              "4",
-              "3",
-              "3",
-              "1",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "8",
-              "4",
-              "3",
-              "3",
-              "2",
-              "—",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "9",
-              "4",
-              "3",
-              "3",
-              "3",
-              "1",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "10",
-              "4",
-              "3",
-              "3",
-              "3",
-              "2",
-              "—",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "11",
-              "4",
-              "3",
-              "3",
-              "3",
-              "2",
-              "1",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "12",
-              "4",
-              "3",
-              "3",
-              "3",
-              "2",
-              "1",
-              "—",
-              "—",
-              "—"
-            ],
-            [
-              "13",
-              "4",
-              "3",
-              "3",
-              "3",
-              "2",
-              "1",
-              "1",
-              "—",
-              "—"
-            ],
-            [
-              "14",
-              "4",
-              "3",
-              "3",
-              "3",
-              "2",
-              "1",
-              "1",
-              "—",
-              "—"
-            ],
-            [
-              "15",
-              "4",
-              "3",
-              "3",
-              "3",
-              "2",
-              "1",
-              "1",
-              "1",
-              "—"
-            ],
-            [
-              "16",
-              "4",
-              "3",
-              "3",
-              "3",
-              "2",
-              "1",
-              "1",
-              "1",
-              "—"
-            ],
-            [
-              "17",
-              "4",
-              "3",
-              "3",
-              "3",
-              "2",
-              "1",
-              "1",
-              "1",
-              "1"
-            ],
-            [
-              "18",
-              "4",
-              "3",
-              "3",
-              "3",
-              "3",
-              "1",
-              "1",
-              "1",
-              "1"
-            ],
-            [
-              "19",
-              "4",
-              "3",
-              "3",
-              "3",
-              "3",
-              "2",
-              "1",
-              "1",
-              "1"
-            ],
-            [
-              "20",
-              "4",
-              "3",
-              "3",
-              "3",
-              "3",
-              "2",
-              "2",
-              "1",
-              "1"
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Spells Prepared",
-        "type": "text",
-        "value": "You determine what spells you can prepare for each class individually, as if you were a single-classed member of that class. If you are a level 4 Ranger / level 3 Sorcerer, for example, you can prepare five level 1 Ranger spells, and you can prepare six Sorcerer spells of level 1 or 2 (as well as four Sorcerer cantrips)."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Each spell you prepare is associated with one of your classes, and you use the spellcasting ability of that class when you cast the spell."
-      },
-      {
-        "name": "Cantrips",
-        "type": "text",
-        "value": "If a cantrip of yours increases in power at higher levels, the increase is based on your total character level, not your level in a particular class, unless the spell says otherwise."
-      },
-      {
-        "name": "Spell Slots",
-        "type": "text",
-        "value": "You determine your available spell slots by adding together the following:"
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "• All your levels in the Bard, Cleric, Druid, Sorcerer, and Wizard classes\n• Half your levels (round up) in the Paladin and Ranger classes\n• One third of your Fighter or Rogue levels (round down) if you have the Eldritch Knight or Arcane Trickster subclass."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Then look up this total level in the Level column of the Multiclass Spellcaster table. You use the slots for that level to cast spells of an appropriate level from any class whose Spellcasting feature you have."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "This table might give you spell slots of a higher level than the spells you prepare. You can use those slots but only to cast your lower-level spells. If a lower-level spell that you cast, like __Burning Hands__, has an enhanced effect when cast at a higher level, you can use the enhanced effect as normal."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "For example, if you are a level 4 Ranger / level 3 Sorcerer, you count as a level 5 character when determining your spell slots, counting all your levels as a Sorcerer and half your Ranger levels. As shown in the Multiclass Spellcaster table, you have four level 1 spell slots, three level 2 slots, and two level 3 slots. However, you can't prepare any level 3 spells, nor can you prepare any level 2 Ranger spells. You can use the spell slots of those levels to cast the spells you do prepare—and potentially enhance their effects."
-      },
-      {
-        "name": "Pact Magic",
-        "type": "text",
-        "value": "If you have the Pact Magic feature from the Warlock class and the Spellcasting feature, you can use the spell slots you gain from Pact Magic to cast spells you have prepared from classes with the Spellcasting feature, and you can use the spell slots you gain from the Spellcasting feature to cast Warlock spells you have prepared."
-      }
-    ]
-  },
-  {
-    "name": "Weapon Mastery Properties",
-    "source": "XPHB",
-    "url": "https://5e.tools/variantrules.html#weapon%20mastery%20properties_xphb",
-    "ruleType": "Core",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below."
-      },
-      {
-        "name": "Cleave",
-        "type": "text",
-        "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
-      },
-      {
-        "name": "Graze",
-        "type": "text",
-        "value": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
-      },
-      {
-        "name": "Nick",
-        "type": "text",
-        "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
-      },
-      {
-        "name": "Push",
-        "type": "text",
-        "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
-      },
-      {
-        "name": "Sap",
-        "type": "text",
-        "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
-      },
-      {
-        "name": "Slow",
-        "type": "text",
-        "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
-      },
-      {
-        "name": "Topple",
-        "type": "text",
-        "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
-      },
-      {
-        "name": "Vex",
-        "type": "text",
-        "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
-      }
-    ]
-  },
-  {
-    "name": "Diagonal Movement",
-    "source": "XDMG",
-    "url": "https://5e.tools/variantrules.html#diagonal%20movement_xdmg",
-    "ruleType": "Variant",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "The Player's Handbook presents a simple method for counting movement and measuring range on a grid of squares: count every square as 5 feet, even if the creature is moving or counting diagonally. While fast in play, this rule breaks the laws of geometry."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "If you want more accuracy, use the following rule: the first diagonal square counts as 5 feet, but the second diagonal square counts as 10 feet. This pattern of 5 feet and then 10 feet continues whenever you're counting diagonally, even if the creature moves straight between different bits of diagonal movement. For example, a character might move 1 square diagonally (5 feet), then 3 squares straight (15 feet), and then another square diagonally (10 feet) for a total movement of 30 feet."
-      }
-    ]
-  },
-  {
-    "name": "Milestones",
-    "source": "XDMG",
-    "url": "https://5e.tools/variantrules.html#milestones_xdmg",
-    "ruleType": "Core",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "You can also award XP when characters complete significant milestones. When preparing your adventure, designate certain events or challenges as milestones, as with the following examples:"
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "• Accomplishing one in a series of goals necessary to complete the adventure.\n• Discovering a hidden location or piece of information relevant to the adventure.\n• Reaching an important destination."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "When awarding XP, treat a major milestone as a high-difficulty encounter and a minor milestone as a low-difficulty encounter."
-      },
-      {
-        "name": "Other Milestone Rewards",
-        "type": "text",
-        "value": "If you want to reward your players for their progress through an adventure with something more than XP and treasure, also give them small rewards at milestone points, such as the following:"
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "• The adventurers gain the benefit of a Short Rest.\n• Characters recover a Hit Point Die or a level 1 spell slot.\n• Characters regain the use of magic items that have had their limited uses expended."
-      }
-    ]
-  },
-  {
-    "name": "Training to Gain Levels",
-    "source": "XDMG",
-    "url": "https://5e.tools/variantrules.html#training%20to%20gain%20levels_xdmg",
-    "ruleType": "Variant",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "As a variant rule, you can require characters to spend time between adventures training or studying before they gain the benefits of a new level. This variant slows the passage of time in the game world, which can help support a more realistic or gritty tone in your campaign."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "If you choose this option, after earning enough Experience Points to attain a new level, a character must train for a number of days before gaining any class features associated with the new level. You can decide whether the character can train independently or requires a trainer."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "The training time required depends on the level to be gained, as shown on the Training to Gain Levels table. The training cost is for the total training time."
-      },
-      {
-        "name": "Training to Gain Levels",
-        "type": "table",
-        "value": {
-          "title": "Training to Gain Levels",
-          "headers": [
-            "Level Attained",
-            "Training Time",
-            "Training Cost"
-          ],
-          "rows": [
-            [
-              "2–4",
-              "10 days",
-              "20 GP"
-            ],
-            [
-              "5–10",
-              "20 days",
-              "40 GP"
-            ],
-            [
-              "11–16",
-              "30 days",
-              "60 GP"
-            ],
-            [
-              "17–20",
-              "40 days",
-              "80 GP"
-            ]
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "name": "Firearms",
-    "source": "XDMG",
-    "url": "https://5e.tools/variantrules.html#firearms_xdmg",
-    "ruleType": "Core",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "The Firearms table provides examples of modern and futuristic firearms. If you make them available for purchase (perhaps in the fantastical marketplaces of the City of Brass), treat modern items as Rare magic items and futuristic items as Very Rare ones (see chapter 7)."
-      },
-      {
-        "name": "Properties",
-        "type": "text",
-        "value": "Some weapons in the Firearms table have the following properties, in addition to properties described in the Player's Handbook."
-      },
-      {
-        "name": "Burst Fire",
-        "type": "text",
-        "value": "As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save."
-      },
-      {
-        "name": "Reload",
-        "type": "text",
-        "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
-      },
-      {
-        "name": "Ammunition",
-        "type": "text",
-        "value": "Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at your discretion. An Energy Cell weighs 1/2 lb."
-      },
-      {
-        "name": "Firearms",
-        "type": "table",
-        "value": {
-          "title": "Firearms",
-          "headers": [
-            "Modern Item",
-            "Damage",
-            "Properties",
-            "Mastery",
-            "Weight"
-          ],
-          "rows": [
-            [
-              "Martial Ranged Weapons",
-              "",
-              "",
-              "",
-              ""
-            ],
-            [
-              "Automatic Rifle",
-              "2d8 Piercing",
-              "Ammunition (Range 80/240; Bullet), Burst Fire, Reload (30 shots), Two-Handed",
-              "Slow",
-              "8 lb."
-            ],
-            [
-              "Hunting Rifle",
-              "2d10 Piercing",
-              "Ammunition (Range 80/240; Bullet), Reload (5 shots), Two-Handed",
-              "Slow",
-              "8 lb."
-            ],
-            [
-              "Revolver",
-              "2d8 Piercing",
-              "Ammunition (Range 40/120; Bullet), Reload (6 shots)",
-              "Sap",
-              "3 lb."
-            ],
-            [
-              "Semiautomatic Pistol",
-              "2d6 Piercing",
-              "Ammunition (Range 50/150; Bullet), Reload (15 shots)",
-              "Vex",
-              "3 lb."
-            ],
-            [
-              "Shotgun",
-              "2d8 Piercing",
-              "Ammunition (Range 30/90; Bullet), Reload (2 shots), Two-Handed",
-              "Push",
-              "7 lb."
-            ]
-          ]
-        }
-      },
-      {
-        "name": "",
-        "type": "table",
-        "value": {
-          "title": "",
-          "headers": [
-            "Futuristic Item",
-            "Damage",
-            "Properties",
-            "Mastery",
-            "Weight"
-          ],
-          "rows": [
-            [
-              "Martial Ranged Weapons",
-              "",
-              "",
-              "",
-              ""
-            ],
-            [
-              "Antimatter Rifle",
-              "6d8 Necrotic",
-              "Ammunition (Range 120/360; Energy Cell), Reload (2 shots), Two-Handed",
-              "Sap",
-              "10 lb."
-            ],
-            [
-              "Laser Pistol",
-              "3d6 Radiant",
-              "Ammunition (Range 40/120; Energy Cell), Reload (50 shots)",
-              "Vex",
-              "2 lb."
-            ],
-            [
-              "Laser Rifle",
-              "3d8 Radiant",
-              "Ammunition (Range 100/300; Energy Cell), Reload (30 shots), Two-Handed",
-              "Slow",
-              "7 lb."
-            ]
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "name": "Explosives",
-    "source": "XDMG",
-    "url": "https://5e.tools/variantrules.html#explosives_xdmg",
-    "ruleType": "Core",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "The Explosives table has examples of explosives. If no cost is given for an explosive, it can't typically be bought. If you make these explosives available for purchase, treat them as Rare magic items. Rules for explosives are given below."
-      },
-      {
-        "name": "Explosives",
-        "type": "table",
-        "value": {
-          "title": "Explosives",
-          "headers": [
-            "Item",
-            "Cost",
-            "Weight"
-          ],
-          "rows": [
-            [
-              "Bomb",
-              "100 GP",
-              "1 lb."
-            ],
-            [
-              "Dynamite Stick",
-              "—",
-              "1 lb."
-            ],
-            [
-              "Grenade, Fragmentation",
-              "—",
-              "1 lb."
-            ],
-            [
-              "Grenade Launcher",
-              "—",
-              "7 lb."
-            ],
-            [
-              "Grenade, Smoke",
-              "50 GP",
-              "2 lb."
-            ],
-            [
-              "Gunpowder (keg)",
-              "250 GP",
-              "20 lb."
-            ],
-            [
-              "Gunpowder (powder horn)",
-              "35 GP",
-              "2 lb."
-            ]
-          ]
-        }
-      },
-      {
-        "name": "Bomb",
-        "type": "text",
-        "value": "As an action, you can light a Bomb and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one."
-      },
-      {
-        "name": "Dynamite Stick",
-        "type": "text",
-        "value": "An an action, you can light a Dynamite Stick and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Force damage on a failed save or half as much damage on a successful one."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "It takes 1 minute to bind two or more Dynamite Sticks together so they explode at the same time. Each stick after the first increases the damage by 1d6 (to a maximum of 10d6) and the effect's radius by 5 feet (to a maximum of 20 feet)."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "It takes 1 minute to rig dynamite with a longer fuse so it explodes after a longer period of time, such as 1 minute or 10 minutes."
-      },
-      {
-        "name": "Grenades and Grenade Launchers",
-        "type": "text",
-        "value": "As an action, you can either throw a grenade at a point up to 60 feet away or use a Grenade Launcher to propel the grenade to a point up to 1,000 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius Sphere."
-      },
-      {
-        "name": "Fragmentation Grenade",
-        "type": "text",
-        "value": "Each creature in the Sphere makes a DC 15 Dexterity saving throw, taking 17 (5d6) Piercing damage on a failed save or half as much damage on a successful one."
-      },
-      {
-        "name": "Smoke Grenade",
-        "type": "text",
-        "value": "The area of the Sphere is Heavily Obscured by smoke for 1 minute. A strong wind (such as the __Gust of Wind__ spell) disperses the smoke."
-      },
-      {
-        "name": "Gunpowder",
-        "type": "text",
-        "value": "Setting fire to a container full of Gunpowder causes it to explode. When a container explodes, each creature in a 10-foot-radius Sphere centered on the container makes a DC 12 Dexterity saving throw, taking 10 (3d6) Fire damage (for a powder horn) or 24 (7d6) Fire damage (for a keg) on a failed save or half as much damage on a successful one."
-      }
-    ]
-  },
-  {
-    "name": "Alien Technology",
-    "source": "XDMG",
-    "url": "https://5e.tools/variantrules.html#alien%20technology_xdmg",
-    "ruleType": "Core",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "When adventurers find a piece of technology that isn't from their world or time period, they can deduce what it is with a successful Intelligence (*Investigation*) check, with the DC depending on the complexity of the item: DC 10 for a relatively simple item like a calculator or a lighter, or DC 20 for a complex item such as a computer, a chainsaw, or a hovercraft. You may require a separate Intelligence (*Investigation*) check to determine whether a character can activate or operate the technology; a character who has observed the item in use or has operated a similar item either has Advantage on the check or succeeds on the check automatically (your choice)."
-      }
-    ]
-  },
-  {
-    "name": "Loyalty",
-    "source": "XDMG",
-    "url": "https://5e.tools/variantrules.html#loyalty_xdmg",
-    "ruleType": "Optional",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Loyalty is an optional rule you can use to determine how far an NPC party member will go to protect or assist the characters (even those the NPC doesn't particularly like). An NPC party member who is abused or ignored is likely to abandon or betray the party, whereas an NPC who owes a life debt to the characters or shares their goals might fight to the death for them. You can simply decide on an NPC's loyalty, or you can track a Loyalty Score using the following rules."
-      },
-      {
-        "name": "Loyalty Score",
-        "type": "text",
-        "value": "An NPC's loyalty is measured on a numerical scale from 0 to 20. The NPC's maximum Loyalty Score is equal to the highest Charisma score among all adventurers in the party, and its starting Loyalty Score is half that number. If the highest Charisma score changes—perhaps a character dies or leaves the group—adjust the NPC's Loyalty Score accordingly."
-      },
-      {
-        "name": "Tracking Loyalty",
-        "type": "text",
-        "value": "Keep track of an NPC's Loyalty Score in secret so that the players won't know for sure whether an NPC party member is loyal or disloyal."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "An NPC's Loyalty Score increases by 1d4 if other party members help the NPC achieve a personal goal. Likewise, an NPC's Loyalty Score increases by 1d4 if the NPC is treated particularly well (for example, given a magic weapon as a gift) or rescued by another party member. An NPC's Loyalty Score can never be raised above its maximum."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "When other party members act in a manner that runs counter to the NPC's alignment or personality, reduce the NPC's Loyalty Score by 1d4. Reduce the NPC's Loyalty Score by 2d4 if the NPC is abused, misled, or endangered by other party members for purely selfish reasons. A Loyalty Score can never drop below 0."
-      },
-      {
-        "name": "Meaning of Loyalty",
-        "type": "text",
-        "value": "An NPC with a Loyalty Score of 10 or higher risks anything to help fellow party members. An NPC whose Loyalty Score is between 1 and 10 is tenuously faithful to the party. An NPC whose Loyalty Score drops to 0 no longer acts in the party's best interests. The disloyal NPC either leaves the party (attacking characters who attempt to intervene) or works in secret to bring about the party's downfall."
-      },
-      {
-        "name": "Crew Loyalty and Mutiny",
-        "type": "text",
-        "value": "If the characters own or operate a sailing ship or similar vessel, you can use these rules to track the loyalty of individual crew members or the ship's crew as a whole. If at least half the crew's Loyalty Scores drop to 0 during a voyage, the crew turns Hostile and stages a mutiny. If the ship is berthed, disloyal crew members leave the ship and never return."
-      }
-    ]
-  },
-  {
-    "name": "Renown",
-    "source": "XDMG",
-    "url": "https://5e.tools/variantrules.html#renown_xdmg",
-    "ruleType": "Optional",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Renown is an optional rule you can use to track characters' standing, individually or as a party, within a particular group, such as a faction, an organization, or a community."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "A character's or party's Renown Score starts at 0, then increases as characters earn favor and reputation with respect to the group. You can tie benefits to a character's renown, including ranks, titles, and access to resources."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Players track renown separately for each group their characters are associated with. For example, an adventurer might have a Renown Score of 5 with one faction and a Renown Score of 20 with another, based on the character's interaction with each group."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "You can use renown over the course of an entire campaign or within a single adventure. At a campaign scale, you might set up factions or guilds that characters can join, individually or as a group, and the characters pursue ranks and rewards by gaining Renown within their organizations. At an adventure level, you might decide that the characters as a group need to earn a Renown Score of 5+ with the council before the council trusts the characters enough to share resources with them."
-      },
-      {
-        "name": "Gaining Renown",
-        "type": "text",
-        "value": "At your discretion, a character or party can increase their renown in the following ways:"
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "• **Completing Missions**: Advancing a group's interests increases a character's Renown Score within that group by 1. Completing a mission specifically assigned by that group or that directly benefits the group increases the character's Renown Score by 2. Hugely significant quests might grant Renown Score increases of 3 or 4 at once.\n• **Group Involvement**: Once a character has established a Renown Score of 1+ with a group, the character can gain renown by spending time between adventures undertaking minor tasks for the group and socializing with its members. After doing so for a number of days equal to 10 times the character's current Renown Score, the character's Renown Score increases by 1."
-      },
-      {
-        "name": "Benefits of Renown",
-        "type": "text",
-        "value": "Use these guidelines when determining the benefits of increasing renown."
-      },
-      {
-        "name": "Recognition",
-        "type": "text",
-        "value": "A character who has a Renown Score of 3+ with a group is a respected member of that group. Other members of the group are Friendly toward the character by default and provide the character with lodging and food in dire circumstances."
-      },
-      {
-        "name": "Rank",
-        "type": "text",
-        "value": "Some groups have hierarchies that characters can ascend as they improve their Renown Scores. Other groups have positions of honor that characters can apply for if their Renown Score is high enough. Characters can earn promotions as their Renown Scores increase. You can establish certain Renown Score thresholds as prerequisites (though not necessarily the only prerequisites) for advancing in rank. You can set these thresholds however you like, creating ranks and titles for the groups in your campaign."
-      },
-      {
-        "name": "Perks",
-        "type": "text",
-        "value": "Earning renown within a group might come with certain benefits. A character with a Renown Score of 3+ might gain access to a reliable contact, a safe house, or a discount on adventuring gear. With a Renown Score of 10+, a character might gain access to Potions and Scrolls, the ability to call in a favor, or backup on dangerous missions. A character whose Renown Score rises to 50 might be able to call on a small army, acquire a Rare magic item, gain access to a helpful spellcaster, or assign special missions to members of lower status."
-      },
-      {
-        "name": "Losing Renown",
-        "type": "text",
-        "value": "Disagreements with members of a group aren't enough to cause a loss of renown within that group. However, serious offenses committed against the group or its members can result in a loss of renown and rank within the organization. The extent of the loss depends on the infraction and is left to your discretion. A character's Renown Score with a group can never drop below 0."
-      },
-      {
-        "name": "Level-Based Renown",
-        "type": "text",
-        "value": "If you want to use the benefits of renown without tracking Renown Scores, you can use a character's level as a shorthand for the character's Renown Score with a group, assuming the character has worked with or for that group for most of the character's career. The Level-Based Renown table shows equivalencies between Renown Score and character level."
-      },
-      {
-        "name": "Level-Based Renown",
-        "type": "table",
-        "value": {
-          "title": "Level-Based Renown",
-          "headers": [
-            "Renown Score",
-            "Character Level"
-          ],
-          "rows": [
-            [
-              "1",
-              "1"
-            ],
-            [
-              "3",
-              "3"
-            ],
-            [
-              "10",
-              "5"
-            ],
-            [
-              "25",
-              "11"
-            ],
-            [
-              "50",
-              "17"
-            ]
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "name": "Mixing Potions",
-    "source": "XDMG",
-    "url": "https://5e.tools/variantrules.html#mixing%20potions_xdmg",
-    "ruleType": "Core",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "A character might drink one potion while still under the effects of another or pour several potions into a single container. The strange ingredients used in creating potions can result in unpredictable interactions."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "When a character mixes two potions together, roll on the Potion Miscibility table. If more than two are combined, roll again for each subsequent potion, combining the results. Unless the effects are immediately obvious, reveal them only when they become evident."
-      },
-      {
-        "name": "Potion Miscibility",
-        "type": "table",
-        "value": {
-          "title": "Potion Miscibility",
-          "headers": [
-            "1d100",
-            "Result"
-          ],
-          "rows": [
-            [
-              "01",
-              "Both potions lose their effects, and the mixture creates a magical explosion in a 5-foot-radius Sphere centered on itself. Each creature in that area takes 4d10 Force damage."
-            ],
-            [
-              "02–08",
-              "Both potions lose their effects, and the mixture becomes an ingested poison of your choice (see \"Poison\" in chapter 3)."
-            ],
-            [
-              "09–15",
-              "Both potions lose their effects."
-            ],
-            [
-              "16–25",
-              "One potion loses its effect."
-            ],
-            [
-              "26–35",
-              "Both potions work, but with their numerical effects and durations halved. If a potion has no numerical effect and no duration, it instead loses its effect."
-            ],
-            [
-              "36–90",
-              "Both potions work normally."
-            ],
-            [
-              "91–99",
-              "Both potions work, but the numerical effects and duration of one potion are doubled. If neither potion has anything to double in this way, they work normally."
-            ],
-            [
-              "00",
-              "Only one potion works, but its effects are permanent. Choose the simplest effect to make permanent or the one that seems the most fun. For example, a Potion of Healing might increase the drinker's Hit Point maximum by 2d4 + 2, or a Potion of Invisibility might give the drinker the Invisible condition indefinitely. At your discretion, a Dispel Magic spell or similar magic might end this lasting effect."
-            ]
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "name": "Death Saving Throws",
-    "source": "XScreen",
-    "url": "https://5e.tools/variantrules.html#death%20saving%20throws_xscreen",
-    "ruleType": "Core",
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "When you start your turn with 0 HP, roll 1d20, and you succeed on a 10+."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "• **Third Success**: You become Stable.\n• **Third Failure**: You die.\n• **Rolling a 1**: Counts as two failures.\n• **Rolling a 20**: You regain 1 Hit Point."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "If you take damage at 0 HP, it counts as a failed Death Save or two failures if the damage is from a Critical Hit."
       }
     ]
   }
