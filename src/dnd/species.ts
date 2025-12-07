@@ -5,6 +5,7 @@ import { getSpeciesUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { CreatureSizes, SpecialSpeedTypes } from '../5etools-conversion/data';
+import { Databank } from '../data';
 
 interface Species {
     name: string;
@@ -86,7 +87,7 @@ function getSpeciesCreatureType(creatureTypes: string[]): string | null {
     return joinStringsWithOr(creatureTypes, true) || null;
 }
 
-export function getSpecies(data: any): Species[] {
+export function getSpecies(data: Databank): Species[] {
     // Get raw entries
     const raw: any[] = [];
     for (const entry of data.race) {

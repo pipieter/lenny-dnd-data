@@ -64,6 +64,8 @@ function main(): void {
     databank.add('./5etools-src/data/skills.json');
     // Load names
     databank.add('./5etools-src/data/names.json');
+    // Load species
+    databank.add('./5etools-src/data/races.json');
 
     const stopwatch = new StopwatchLogger();
 

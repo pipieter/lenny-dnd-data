@@ -111,6 +111,9 @@ export class Databank {
     public readonly skill: Skill[] = [];
     // Names
     public readonly name: SpeciesName[] = [];
+    // Species
+    public readonly race: any[] = [];
+    public readonly subrace: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
