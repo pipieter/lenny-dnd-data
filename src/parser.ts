@@ -669,9 +669,11 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
                 case 'table':
                     link = getTablesUrl(name, source);
                     break;
+                case 'optfeature':
+                    link = getFeatsUrl(name, source);
             }
 
-            if (!link) throw `Unsupported ${type} ${tag}`;
+            if (!link) throw `Unsupported statblock ${tag}`;
             return [`[See ${name}'s stats here](${link})`];
         }
         case 'refFeat': {
