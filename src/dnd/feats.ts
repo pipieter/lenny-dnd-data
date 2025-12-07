@@ -240,6 +240,9 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     );
                     break;
                 }
+                case 'note':
+                    // Additional information, but not actually a prerequisite
+                    break;
                 default: {
                     throw `Unsupported feat prerequisite key ${key}`;
                 }
