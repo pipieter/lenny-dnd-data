@@ -69,6 +69,8 @@ function main(): void {
     databank.add('./5etools-src/data/fluff-races.json');
     // Load vehicles
     databank.add('./5etools-src/data/vehicles.json');
+    // Load objects
+    databank.add('./5etools-src/data/objects.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -124,7 +126,7 @@ function main(): void {
     const { traps, hazards } = getTrapsAndHazards(databank);
     stopwatch.log('Traps & Hazards retrieved');
 
-    const objects = getObjects(data);
+    const objects = getObjects(databank);
     stopwatch.log('Objects retrieved');
 
     const vehicles = getVehicles(databank);

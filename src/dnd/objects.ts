@@ -1,7 +1,8 @@
+import { Databank } from '../data';
 import { Description, parseDescriptions, parseSizes } from '../parser';
 import { getObjectsUrl, getObjectTokenUrl } from '../urls';
 
-interface Object {
+export interface DNDObject {
     name: string;
     source: string;
     page: number;
@@ -31,7 +32,7 @@ interface Object {
     hasFluffImages?: boolean;
 }
 
-interface ParsedObject {
+interface ParsedDNDObject {
     name: string;
     source: string;
     subtitle: string;
@@ -40,11 +41,11 @@ interface ParsedObject {
     description: Description[];
 }
 
-function getObjectSubtitle(obj: Object): string {
+function getObjectSubtitle(obj: DNDObject): string {
     return `${parseSizes(obj.size)} object`;
 }
 
-function parseObjectTokenURL(obj: Object): string | null {
+function parseObjectTokenURL(obj: DNDObject): string | null {
     if (obj.token) {
         // If obj.token is given, token is inherited from another object.
         return getObjectTokenUrl(obj.token.name, obj.token.source);
@@ -55,8 +56,8 @@ function parseObjectTokenURL(obj: Object): string | null {
     return null;
 }
 
-export function getObjects(data: any): ParsedObject[] {
-    return (data.object as Object[]).map((obj) => {
+export function getObjects(data: Databank): ParsedDNDObject[] {
+    return data.object.map((obj) => {
         const descriptions = [];
         if (obj.entries) descriptions.push(...parseDescriptions('', obj.entries));
         if (obj.actionEntries) descriptions.push(...parseDescriptions('', obj.actionEntries));
