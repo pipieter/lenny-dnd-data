@@ -1,21 +1,23 @@
-interface NameTableEntry {
+import { Databank } from '../data';
+
+interface SpeciesNameTableEntry {
     min: number;
     max: number;
     result: string;
 }
 
-interface NameTable {
+interface SpeciesNameTable {
     option: string;
-    table: NameTableEntry[];
+    table: SpeciesNameTableEntry[];
 }
 
-interface RaceNames {
+export interface SpeciesName {
     name: string;
     source: string;
-    tables: NameTable[];
+    tables: SpeciesNameTable[];
 }
 
-interface ParsedNames {
+interface ParsedSpeciesNames {
     name: string;
     source: string;
     tables: {
@@ -25,10 +27,10 @@ interface ParsedNames {
     };
 }
 
-export function getNames(data: any): ParsedNames[] {
-    const result: ParsedNames[] = [];
-    for (const namesList of data.name as RaceNames[]) {
-        const race: ParsedNames = {
+export function getNames(data: Databank): ParsedSpeciesNames[] {
+    const result: ParsedSpeciesNames[] = [];
+    for (const namesList of data.name) {
+        const species: ParsedSpeciesNames = {
             name: namesList.name,
             source: namesList.source,
             tables: {
@@ -47,28 +49,28 @@ export function getNames(data: any): ParsedNames[] {
 
             // FEMALE
             if (option.includes('female')) {
-                race.tables.female.push(...table);
+                species.tables.female.push(...table);
 
                 // MALE
             } else if (option.includes('male')) {
-                race.tables.male.push(...table);
+                species.tables.male.push(...table);
 
                 // GENDERLESS
             } else if (['child', 'general', 'virtue'].some((o) => option.includes(o))) {
-                race.tables.female.push(...table);
-                race.tables.male.push(...table);
+                species.tables.female.push(...table);
+                species.tables.male.push(...table);
 
                 // FAMILY
             } else if (['clan', 'family'].some((o) => option.includes(o))) {
-                race.tables.family.push(...table);
+                species.tables.family.push(...table);
 
                 // UNSUPPORTED
             } else {
-                throw `Unsupported name option in ${race.name} race: '${option}'`;
+                throw `Unsupported name option in ${species.name} species: '${option}'`;
             }
         }
 
-        result.push(race);
+        result.push(species);
     }
 
     return result;

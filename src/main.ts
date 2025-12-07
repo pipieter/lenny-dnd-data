@@ -62,6 +62,8 @@ function main(): void {
     databank.add('./5etools-src/data/feats.json');
     // Load skills
     databank.add('./5etools-src/data/skills.json');
+    // Load names
+    databank.add('./5etools-src/data/names.json');
 
     const stopwatch = new StopwatchLogger();
 
@@ -102,7 +104,7 @@ function main(): void {
     const languages = getLanguages(databank);
     stopwatch.log('Languages retrieved');
 
-    const names = getNames(data);
+    const names = getNames(databank);
     stopwatch.log('Names retrieved');
 
     const tables = getTables(databank);
