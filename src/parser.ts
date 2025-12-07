@@ -579,8 +579,12 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
 
             const { strings, tables } = splitDescriptionTypes(entries);
             const entry = strings.join('\n');
-            const name = description.name.replace(/:$/, '');
-            return [cleanDNDText(`**${name}**: ${entry}`), ...tables];
+            if (description.name) {
+                const name = description.name.replace(/:$/, '');
+                return [cleanDNDText(`**${name}**: ${entry}`), ...tables];
+            } else {
+                return [cleanDNDText(entry), ...tables];
+            }
         }
         case 'itemSpell': {
             const name = cleanDNDText(description.name);
