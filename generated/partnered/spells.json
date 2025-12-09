@@ -1885,7 +1885,7 @@
       {
         "name": "",
         "type": "text",
-        "value": "Each segment has AC 10 and 30 hit points. Reducing a segment of the wall to 0 hit points causes it to crumble, destroying it. The wall disappears when all the segments are destroyed or the spell ends."
+        "value": "Each segment has AC 10 and 30 Hit Points. Reducing a segment of the wall to 0 Hit Points causes it to crumble, destroying it. The wall disappears when all the segments are destroyed or the spell ends."
       }
     ],
     "classes": [
@@ -6964,6 +6964,59 @@
     "classes": [
       {
         "name": "Bard",
+        "source": "XPHB"
+      },
+      {
+        "name": "Sorcerer",
+        "source": "XPHB"
+      },
+      {
+        "name": "Warlock",
+        "source": "XPHB"
+      },
+      {
+        "name": "Wizard",
+        "source": "XPHB"
+      }
+    ]
+  },
+  {
+    "name": "Purge Contamination",
+    "source": "MonstersOfDrakkenheim",
+    "level": "Level 3",
+    "school": "Abjuration",
+    "casting_time": "1 hour",
+    "range": "Touch",
+    "components": "V, S, M (100 gp of alchemical fluids or holy water, which the spell consumes)",
+    "duration": "Instantaneous",
+    "url": "https://5e.tools/spells.html#purge%20contamination_monstersofdrakkenheim",
+    "image": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You apply alchemical fluids or holy water to a Contaminated Humanoid creature while reciting an exacting magical chant which expels eldritch contaminants from its body. When you finish casting the spell, all Contamination levels and mutations are removed from the creature. It then gains 1 level of Exhaustion for each Contamination level removed with this spell."
+      }
+    ],
+    "classes": [
+      {
+        "name": "Bard",
+        "source": "XPHB"
+      },
+      {
+        "name": "Cleric",
+        "source": "XPHB"
+      },
+      {
+        "name": "Druid",
+        "source": "XPHB"
+      },
+      {
+        "name": "Paladin",
+        "source": "XPHB"
+      },
+      {
+        "name": "Ranger",
         "source": "XPHB"
       },
       {

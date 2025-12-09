@@ -14075,7 +14075,7 @@
       {
         "name": "Starting Equipment",
         "type": "text",
-        "value": "*Choose A or B:* : (A) Tactical Nanofiber Vest (Studded Leather), 2 Antimatter Daggers, Antimatter Pistol, Concussion Rifle, Engineer's Pack, and 7 CR; or (B) 1,000 CR"
+        "value": "*Choose A or B:* (A) Tactical Nanofiber Vest (Studded Leather), 2 Antimatter Daggers, Antimatter Pistol, Concussion Rifle, Engineer's Pack, and 7 CR; or (B) 1,000 CR"
       },
       {
         "name": "Multiclassing",
@@ -18504,7 +18504,7 @@
           {
             "name": "Coalition Arcanist (DARKMATTER24) Features",
             "type": "text",
-            "value": "You can requisition magic items from the Coalition's armory for short-term use. When you finish a Long Rest, choose one of the following magic items, which is teleported to you: two Attractor Mines (which use your spell save DC), a Dome Projector, a Gravity Nullifier, a Jetpack, a Ring of Spacewalking (which is attuned to you automatically), or a Universal Translator. This item remains in your possession until you finish a Long Rest, at which time it is teleported back to the Coalition's armory."
+            "value": "You can requisition magic items from the Coalition's armory for short-term use. When you finish a Long Rest, choose one of the following magic items, which is teleported to you: a Concussion Grenade, Drive Wheel, Hoverboard, Jetpack, Nanobot Canister (Deconstructive or Reconstructive), Phase Suit, or Scout Scanner. If the magic item has a save DC, it uses your spell save DC. If it requires Attunement, it is attuned to you automatically. This item remains in your possession until you finish a Long Rest, at which time it is teleported back to the Coalition's armory."
           }
         ],
         "15": [
@@ -27631,7 +27631,7 @@
       {
         "name": "Starting Equipment",
         "type": "text",
-        "value": "*Choose A, B, or C:* (A) Chain Mail, Shield, Longsword, 6 Javelins, Explorer's Pack, and 29 GP; (B) Studded Leather Armor, 2 Shortswords, Longbow, 20 Arrows, Quiver, Explorer's Pack, and 11 GP; or (C) 170 GP"
+        "value": "*Choose A, B, or C:* (A) Chain Mail, Shield, Longsword, 6 Javelins, Explorer's Pack, and 29 GP; (B) Studded Leather Armor, 2 Shortswords, Longbow, 20 Arrows, Quiver, Explorer's Pack, and 11 GP; or (C) 140 GP"
       },
       {
         "name": "Multiclassing",
@@ -29759,7 +29759,7 @@
         {
           "name": "Class Features",
           "type": "text",
-          "value": "You gain an Alchemist subclass of your choice. A subclass is a specialization that grants you features at certain Alchemist levels. For the rest of your career, you gain eachof your subclass's features that are of your Alchemist level or lower."
+          "value": "You gain an Alchemist subclass of your choice. A subclass is a specialization that grants you features at certain Alchemist levels. For the rest of your career, you gain each of your subclass's features that are of your Alchemist level or lower."
         }
       ],
       "4": [
@@ -30712,7 +30712,7 @@
       {
         "name": "Proficiencies",
         "type": "text",
-        "value": "• Saving Throw Proficiencies: Constitution and Intelligence\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Arcana, Athletics, History, Investigation, Medicine, Perception or Persuasion\n• Tool Proficiencies: Any Artisan's Tools"
+        "value": "• Saving Throw Proficiencies: Constitution and Intelligence\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Arcana, Athletics, History, Investigation, Medicine, Perception or Persuasion\n• Tool Proficiencies: All Artisan's Tools"
       },
       {
         "name": "Starting Equipment",
@@ -31602,17 +31602,17 @@
           {
             "name": "Forgeknights (VALDACRAFTSMAN) Features",
             "type": "text",
-            "value": "Using your Customize Weapon, you can add the Explode property to any weapon that deals Fire damage. This property uses the following rules."
+            "value": "Using your Customize Weapon, you can add the __Explode__ property to any weapon that deals Fire damage. This property uses the following rules."
           },
           {
             "name": "Melee Explosions",
             "type": "text",
-            "value": "You can add the Explode property to a Melee weapon, but only you can use this property on such a weapon. When you use this property with a Melee weapon, the explosion is centered on a point within your reach, and you take no damage from the explosion."
+            "value": "You can add the __Explode__ property to a Melee weapon, but only you can use this property on such a weapon. When you use this property with a Melee weapon, the explosion is centered on a point within your reach, and you take no damage from the explosion."
           },
           {
             "name": "Saving Throws",
             "type": "text",
-            "value": "You can use the following calculation for the save DC of your Explode property: 8 plus your Intelligence modifier and Proficiency Bonus."
+            "value": "You can use the following calculation for the save DC of your __Explode__ property: 8 plus your Intelligence modifier and Proficiency Bonus."
           }
         ],
         "10": [
@@ -32919,6 +32919,140 @@
             "name": "Monstrous Transformation",
             "type": "text",
             "value": "As a Bonus Action, you can expend 3 Battle Dice to shape-shift into a monstrous form for 1 minute. While shape-shifted, your type is Monstrosity and your Strength and Dexterity scores are 24."
+          }
+        ]
+      },
+      "Digital Nomad (DARKMATTER24)": {
+        "3": [
+          {
+            "name": "Digital Nomad (DARKMATTER24) Features",
+            "type": "text",
+            "value": "*Wander the Infinite Realms of Cyberspace*"
+          },
+          {
+            "name": "",
+            "type": "text",
+            "value": "Digital Nomads are Vagabonds that wander Cyberspace, a neon plane of data that exists between Arcane Terminals on vast planetary networks. In their travels, they adopt the jargon and techniques of digital natives—a lexicon of points, games, and code. Even while far removed from a Datapad, these game systems follow them and ascribe points to every action they take on a vast leaderboard."
+          },
+          {
+            "name": "",
+            "type": "text",
+            "value": "__High Score (VALDAVAGABOND)__: Your connection to Cyberspace quantifies your success in combat through a system of Score Points."
+          },
+          {
+            "name": "Score Points",
+            "type": "text",
+            "value": "You have a pool of Score Points that starts at 0, representing your achievements in combat. If you don't gain or spend Score Points for 1 minute, your Score Points reset to 0."
+          },
+          {
+            "name": "Gaining Points",
+            "type": "text",
+            "value": "You gain Score Points for fulfilling conditions as shown on the Gaining Score Points table."
+          },
+          {
+            "name": "Spending Points",
+            "type": "text",
+            "value": "You can spend Score Points (no action required) to gain the benefits shown in the Spending Score Points table."
+          },
+          {
+            "name": "Gaining Score Points",
+            "type": "table",
+            "value": {
+              "title": "Gaining Score Points",
+              "headers": [
+                "Condition",
+                "Score Points Gained"
+              ],
+              "rows": [
+                [
+                  "Rolling Initiative",
+                  "Points equal to twice your Vagabond level"
+                ],
+                [
+                  "Reducing an enemy to 0 Hit Points",
+                  "Points equal to your Vagabond level"
+                ],
+                [
+                  "Roll a Battle Die for a Maneuver",
+                  "Points equal to the number rolled on the Battle Die"
+                ]
+              ]
+            }
+          },
+          {
+            "name": "Spending Score Points",
+            "type": "table",
+            "value": {
+              "title": "Spending Score Points",
+              "headers": [
+                "Score Point Cost",
+                "Benefit"
+              ],
+              "rows": [
+                [
+                  10,
+                  "Aimbot. You gain Advantage on an attack roll."
+                ],
+                [
+                  15,
+                  "Power-Up. You regain an expended Battle Die. You can only use this benefit once per turn."
+                ],
+                [
+                  5,
+                  "Turbo. You take the Dash or Disengage action as a Bonus Action."
+                ],
+                [
+                  15,
+                  "Weak Point. When you use a Maneuver that adds one or more Battle Dice to a damage roll, you add one additional die without expending it."
+                ]
+              ]
+            }
+          },
+          {
+            "name": "",
+            "type": "text",
+            "value": "__Technophile (VALDAVAGABOND)__: Your familiarity with Cyberspace grants you the following benefits."
+          },
+          {
+            "name": "Machine Code",
+            "type": "text",
+            "value": "You know Machine Code (DarkMatter24), the native code-language of machines. Due to this language, you know the __Technomancy__ cantrip."
+          },
+          {
+            "name": "Programming Training",
+            "type": "text",
+            "value": "You gain proficiency and Expertise in the *Data* skill."
+          }
+        ],
+        "6": [
+          {
+            "name": "Digital Nomad (DARKMATTER24) Features",
+            "type": "text",
+            "value": "Once on each of your turns when you spend Score Points, you can give an ally within 15 feet of yourself that can see or hear you Advantage on the next attack roll it makes before the end of its next turn."
+          }
+        ],
+        "10": [
+          {
+            "name": "Digital Nomad (DARKMATTER24) Features",
+            "type": "text",
+            "value": "While you're *Bloodied*, you can take a Bonus Action to expend any number of Score Points and regain the same number of Hit Points, up to half your Hit Point maximum."
+          }
+        ],
+        "14": [
+          {
+            "name": "Digital Nomad (DARKMATTER24) Features",
+            "type": "text",
+            "value": "You can spend 50 Score Points on your turn to use one of the following Cheat Codes (no action required). Once you use this feature, you can't use it again until you finish a Long Rest."
+          },
+          {
+            "name": "God Mode",
+            "type": "text",
+            "value": "Until the start of your next turn, you have Immunity to Bludgeoning, Piercing, and Slashing damage, Resistance to all other damage types, and Advantage on saving throws."
+          },
+          {
+            "name": "Instakill",
+            "type": "text",
+            "value": "Until the start of your next turn, if you deal damage to a creature that has 50 Hit Points or fewer after taking damage, it dies. Otherwise, it takes an extra Necrotic damage equal to four rolls of your Battle Die."
           }
         ]
       },
