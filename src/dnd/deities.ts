@@ -61,11 +61,6 @@ function parseDeityInlineDescriptions(deity: Deity): Description[] {
     descriptions.push({ name: 'Pantheon', type: DescriptionType.text, value: deity.pantheon });
     descriptions.push({ name: 'Province', type: DescriptionType.text, value: deity.province });
     descriptions.push({ name: 'Symbol', type: DescriptionType.text, value: deity.symbol });
-    // descriptions.push({ name: "", type: DescriptionType.text, value: "" });
-    // descriptions.push({ name: "", type: DescriptionType.text, value: "" });
-    // descriptions.push({ name: "", type: DescriptionType.text, value: "" });
-    // descriptions.push({ name: "", type: DescriptionType.text, value: "" });
-
     return descriptions;
 }
 
