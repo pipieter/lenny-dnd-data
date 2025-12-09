@@ -71,3 +71,16 @@ export const SkillAbilities = new Map<string, string>([
     ['performance', 'cha'],
     ['persuasion', 'cha'],
 ]);
+
+export const Alignments = new Map<string, string>([
+    ['L', 'lawful'],
+    ['N', 'neutral'],
+    ['NX', 'neutral (law/chaos axis)'],
+    ['NY', 'neutral (good/evil axis)'],
+    ['C', 'chaotic'],
+    ['G', 'good'],
+    ['E', 'evil'],
+    // "special" values
+    ['U', 'unaligned'],
+    ['A', 'any alignment'],
+]);

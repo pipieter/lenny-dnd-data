@@ -1,17 +1,18 @@
 import { Databank } from '../data';
-import { Description, parseDescriptions } from '../parser';
+import { Description, DescriptionType, parseAlignments, parseDescriptions } from '../parser';
 import { getDeitiesUrl, getImageUrl } from '../urls';
+import { joinStringsWithAnd } from '../util';
 
 export interface Deity {
     name: string;
     source: string;
     pantheon: string;
-    alignment: string[];
+    alignment?: string[];
     category: string;
     title?: string;
     worshipers?: string;
     plane?: string;
-    domains: string[];
+    domains?: string[];
     province: string;
     symbol: string;
     symbolImg?: DeitySymbolImg;
@@ -39,6 +40,35 @@ interface ParsedDeity {
     description: Description[];
 }
 
+function parseDeityInlineDescriptions(deity: Deity): Description[] {
+    const descriptions: Description[] = [];
+    if (deity.alignment) {
+        const alignments = parseAlignments(deity.alignment);
+        descriptions.push({
+            name: 'Alignment',
+            type: DescriptionType.text,
+            value: joinStringsWithAnd(alignments),
+        });
+    }
+    if (deity.domains) {
+        descriptions.push({
+            name: 'Domains',
+            type: DescriptionType.text,
+            value: joinStringsWithAnd(deity.domains),
+        });
+    }
+    descriptions.push({ name: 'Category', type: DescriptionType.text, value: deity.category });
+    descriptions.push({ name: 'Pantheon', type: DescriptionType.text, value: deity.pantheon });
+    descriptions.push({ name: 'Province', type: DescriptionType.text, value: deity.province });
+    descriptions.push({ name: 'Symbol', type: DescriptionType.text, value: deity.symbol });
+    // descriptions.push({ name: "", type: DescriptionType.text, value: "" });
+    // descriptions.push({ name: "", type: DescriptionType.text, value: "" });
+    // descriptions.push({ name: "", type: DescriptionType.text, value: "" });
+    // descriptions.push({ name: "", type: DescriptionType.text, value: "" });
+
+    return descriptions;
+}
+
 export function getDeities(data: Databank): ParsedDeity[] {
     return data.deity.map((d) => {
         return {
@@ -47,7 +77,7 @@ export function getDeities(data: Databank): ParsedDeity[] {
             subtitle: d.title ?? `${d.pantheon} Deity`,
             url: getDeitiesUrl(d.name, d.source),
             imgUrl: d.symbolImg ? getImageUrl(d.symbolImg.href.path) : null,
-            inlineDescription: [], // TODO
+            inlineDescription: parseDeityInlineDescriptions(d), // TODO
             description: d.entries ? parseDescriptions('', d.entries) : [],
         };
     });
