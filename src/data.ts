@@ -9,11 +9,19 @@ import { Skill } from './dnd/skills';
 import { SpeciesName } from './dnd/names';
 import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
 import { DNDObject } from './dnd/objects';
-import { lstatSync, readdirSync } from 'fs';
-import { join } from 'path';
+import { existsSync, lstatSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
+import { dirname, join } from 'path';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
+}
+
+export function write(path: string, contents: any) {
+    const directory = dirname(path);
+    if (!existsSync(directory)) {
+        mkdirSync(directory, { recursive: true });
+    }
+    writeFileSync(path, JSON.stringify(contents, null, 2), 'utf-8');
 }
 
 export class Databank {

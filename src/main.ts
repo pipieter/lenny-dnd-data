@@ -1,6 +1,5 @@
-import { existsSync, lstatSync, mkdirSync, readdirSync, unlinkSync, writeFileSync } from 'fs';
 import { getConditionsStatusesAndDiseases } from './dnd/conditions';
-import { Databank, OfficialDatabank, PartneredDatabank } from './data';
+import { Databank, OfficialDatabank, PartneredDatabank, write } from './data';
 import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
@@ -19,16 +18,7 @@ import { getTrapsAndHazards } from './dnd/hazards';
 import { getObjects } from './dnd/objects';
 import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './dnd/skills';
-import { dirname, join } from 'path';
 import * as kleur from 'kleur';
-
-function write(path: string, contents: any) {
-    const directory = dirname(path);
-    if (!existsSync(directory)) {
-        mkdirSync(directory, { recursive: true });
-    }
-    writeFileSync(path, JSON.stringify(contents, null, 2), 'utf-8');
-}
 
 function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) {
     stopwatch.log(`Generating ${name}`, kleur.cyan);
