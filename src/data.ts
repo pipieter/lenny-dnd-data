@@ -94,6 +94,7 @@ export class Databank {
     public readonly vehicleUpgrade: VehicleUpgrade[] = [];
     // Objects
     public readonly object: DNDObject[] = [];
+    public readonly objectFluff: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
@@ -172,6 +173,7 @@ export class OfficialDatabank extends Databank {
         this.add('fluff-conditionsdiseases.json');
         this.add('fluff-items.json');
         this.add('fluff-languages.json');
+        this.add('fluff-objects.json');
         this.add('fluff-races.json');
         this.add('fluff-trapshazards.json');
         this.add('generated/gendata-tables.json');

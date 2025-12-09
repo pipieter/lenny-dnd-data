@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { Description, parseDescriptions, parseSizes } from '../parser';
+import { Description, parseDescriptions, parseImageUrl, parseSizes } from '../parser';
 import { getObjectsUrl, getObjectTokenUrl } from '../urls';
 
 export interface DNDObject {
@@ -39,6 +39,7 @@ interface ParsedDNDObject {
     url: string;
     tokenUrl: string | null;
     description: Description[];
+    image: string | null;
 }
 
 function getObjectSubtitle(obj: DNDObject): string {
@@ -56,6 +57,14 @@ function parseObjectTokenURL(obj: DNDObject): string | null {
     return null;
 }
 
+function getObjectImage(obj: DNDObject, data: Databank): string | null {
+    const fluff = data.search('objectFluff', obj.name, obj.source);
+    if (fluff && fluff.images) {
+        return parseImageUrl(fluff.images);
+    }
+    return null;
+}
+
 export function getObjects(data: Databank): ParsedDNDObject[] {
     return data.object.map((obj) => {
         const descriptions = [];
@@ -69,6 +78,7 @@ export function getObjects(data: Databank): ParsedDNDObject[] {
             url: getObjectsUrl(obj.name, obj.source),
             tokenUrl: parseObjectTokenURL(obj),
             description: descriptions,
+            image: getObjectImage(obj, data),
         };
     });
 }
