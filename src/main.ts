@@ -22,20 +22,6 @@ import { getSkills } from './dnd/skills';
 import { dirname, join } from 'path';
 import * as kleur from 'kleur';
 
-// Clear the contents of a directory
-function clearDirectory(path: string) {
-    if (!existsSync(path)) return;
-
-    const files = readdirSync(path);
-    for (const file of files) {
-        const fullPath = join(path, file);
-        const stats = lstatSync(fullPath);
-        if (stats.isDirectory()) continue;
-        if (!existsSync(fullPath)) continue;
-        unlinkSync(fullPath);
-    }
-}
-
 function write(path: string, contents: any) {
     const directory = dirname(path);
     if (!existsSync(directory)) {
@@ -130,12 +116,6 @@ function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) 
 
 function main(): void {
     const stopwatch = new StopwatchLogger();
-
-    // Clear the contents of the generated directory
-    clearDirectory('./generated/official');
-    clearDirectory('./generated/homebrew');
-    clearDirectory('./generated/partnered');
-    clearDirectory('./generated');
 
     const official = new OfficialDatabank();
     const partnered = new PartneredDatabank(official, { partnered: true, allowPHB2014: false });
