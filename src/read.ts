@@ -74,6 +74,9 @@ function readDirectoryFiles(directory: string) {
  *                  separately, and are then aggregated.
  * @returns An object that aggregates all data from the files
  */
+
+
+
 export function read(filepaths: string | string[] | undefined): any {
     if (!filepaths) {
         return {};
