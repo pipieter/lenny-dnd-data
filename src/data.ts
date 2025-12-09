@@ -11,6 +11,7 @@ import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
 import { DNDObject } from './dnd/objects';
 import { existsSync, lstatSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
+import { Deity } from './dnd/deities';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -94,6 +95,8 @@ export class Databank {
     public readonly vehicleUpgrade: VehicleUpgrade[] = [];
     // Objects
     public readonly object: DNDObject[] = [];
+    // Deities
+    public readonly deity: Deity[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
@@ -168,6 +171,7 @@ export class OfficialDatabank extends Databank {
         this.add('books.json');
         this.add('class/index.json');
         this.add('conditionsdiseases.json');
+        this.add('deities.json');
         this.add('feats.json');
         this.add('fluff-conditionsdiseases.json');
         this.add('fluff-items.json');
