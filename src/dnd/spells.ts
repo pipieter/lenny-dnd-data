@@ -2,6 +2,7 @@ import {
     Description,
     parseCastingTime,
     parseComponents,
+    parseDescriptionFromTable,
     parseDescriptions,
     parseDurationTime,
     parseImageUrl,
@@ -45,7 +46,14 @@ function getSpellDescription(spell: any): Description[] {
     const descriptions = parseDescriptions('', spell.entries);
     if (spell.entriesHigherLevel) {
         for (const entry of spell.entriesHigherLevel) {
-            descriptions.push(...parseDescriptions(entry.name, entry.entries));
+            // Specific case for LasterLlama's Conjure Aberration
+            // TODO create a parseDescription function that handles a description immediately
+            // Without relying on entry.name and entry.entries
+            if (entry.type === 'table') {
+                descriptions.push(parseDescriptionFromTable(entry));
+            } else {
+                descriptions.push(...parseDescriptions(entry.name, entry.entries));
+            }
         }
     }
     return descriptions;

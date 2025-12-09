@@ -100,11 +100,19 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     if (noFormat) {
+        // Very specific case for Keith Baker's Frontiers of Eberron Quickstone, where
+        // A nested object with @i is used that completely surrounds another object.
+        // TODO a better solution would be to adapt the function to handle recursive styling
+        text = text.replaceAll(/^\{@i (.*)\}$/g, '$1');
+
         text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
     } else {
+        // Idem Keith baker
+        text = text.replaceAll(/^\{@i (.*)\}$/g, '*$1*');
+
         text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
@@ -156,6 +164,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@item ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
+    text = text.replaceAll(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@language ([^\}]*?)\}/g, '$1');
@@ -164,6 +173,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@optfeature ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@optfeature ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@quickref ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@quickref ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@race ([^\}]*?)\|\|([^\}]*?)\}/g, '$2');
     text = text.replaceAll(/\{@race ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@race ([^\}]*?)\}/g, '$1');
@@ -183,6 +193,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         `$3`
     );
     text = text.replaceAll(/\{@dcYourSpellSave\}/g, 'your spell save DC');
+    text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@sup ([^\}]*?)\}/g, '[$1]');
+    text = text.replaceAll(/\{@homebrew ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@homebrew ([^\}]*?)\}/g, '$1');
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
@@ -201,6 +215,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '$2');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(
+            /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            '$5'
+        );
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -251,6 +269,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '**$2**');
         text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
+        text = text.replaceAll(
+            /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            '**$5**'
+        );
         text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
         text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
@@ -486,7 +508,8 @@ export function parseRange(range: any): string {
             return `Hemisphere (${parseDistance(range.distance)})`;
         case 'special':
             return 'Special';
-
+        case 'cylinder':
+            return `Cylinder (${parseDistance(range.distance)})`;
         default: {
             throw `Unsupported range type: '${range.type}`;
         }
@@ -566,8 +589,12 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
 
             const { strings, tables } = splitDescriptionTypes(entries);
             const entry = strings.join('\n');
-            const name = description.name.replace(/:$/, '');
-            return [cleanDNDText(`**${name}**: ${entry}`), ...tables];
+            if (description.name) {
+                const name = description.name.replace(/:$/, '');
+                return [cleanDNDText(`**${name}**: ${entry}`), ...tables];
+            } else {
+                return [cleanDNDText(entry), ...tables];
+            }
         }
         case 'itemSpell': {
             const name = cleanDNDText(description.name);
@@ -658,9 +685,11 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
                 case 'table':
                     link = getTablesUrl(name, source);
                     break;
+                case 'optfeature':
+                    link = getFeatsUrl(name, source);
             }
 
-            if (!link) throw `Unsupported ${type} ${tag}`;
+            if (!link) throw `Unsupported statblock ${tag}`;
             return [`[See ${name}'s stats here](${link})`];
         }
         case 'refFeat': {
@@ -874,6 +903,8 @@ export function title(text: string): string {
 export function parseSizes(sizes: string | string[]): string {
     if (typeof sizes === 'string') sizes = [sizes];
     const sizeMap = new Map<string, string>([
+        ['F', 'Fine'],
+        ['D', 'Diminutive'],
         ['T', 'Tiny'],
         ['S', 'Small'],
         ['M', 'Medium'],
@@ -881,6 +912,7 @@ export function parseSizes(sizes: string | string[]): string {
         ['H', 'Huge'],
         ['G', 'Gargantuan'],
         ['V', 'Variable size'],
+        ['C', 'Colossal'],
     ]);
 
     const words: string[] = [];

@@ -1,6 +1,5 @@
-import { writeFileSync } from 'fs';
 import { getConditionsStatusesAndDiseases } from './dnd/conditions';
-import { OfficialDatabank } from './data';
+import { Databank, OfficialDatabank, PartneredDatabank, write } from './data';
 import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
@@ -19,13 +18,10 @@ import { getTrapsAndHazards } from './dnd/hazards';
 import { getObjects } from './dnd/objects';
 import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './dnd/skills';
+import * as kleur from 'kleur';
 
-function main(): void {
-    const databank = new OfficialDatabank();
-
-    const stopwatch = new StopwatchLogger();
-
-    stopwatch.log('Loaded databanks');
+function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) {
+    stopwatch.log(`Generating ${name}`, kleur.cyan);
 
     const items = getItems(databank);
     stopwatch.log('Items retrieved');
@@ -84,28 +80,42 @@ function main(): void {
     const skills = getSkills(databank);
     stopwatch.log('Skills retrieved.');
 
-    writeFileSync('./generated/items.json', JSON.stringify(items, null, 2), 'utf-8');
-    writeFileSync('./generated/itemsvariants.json', JSON.stringify(itemVariants, null, 2), 'utf-8');
-    writeFileSync('./generated/spells.json', JSON.stringify(spells, null, 2), 'utf-8');
-    writeFileSync('./generated/conditions.json', JSON.stringify(conditions, null, 2), 'utf-8');
-    writeFileSync('./generated/diseases.json', JSON.stringify(diseases, null, 2), 'utf-8');
-    writeFileSync('./generated/creatures.json', JSON.stringify(creatures, null, 2), 'utf-8');
-    writeFileSync('./generated/classes.json', JSON.stringify(classes, null, 2), 'utf-8');
-    writeFileSync('./generated/classfeats.json', JSON.stringify(classFeats, null, 2), 'utf-8');
-    writeFileSync('./generated/rules.json', JSON.stringify(rules, null, 2), 'utf-8');
-    writeFileSync('./generated/actions.json', JSON.stringify(actions, null, 2), 'utf-8');
-    writeFileSync('./generated/feats.json', JSON.stringify(feats, null, 2), 'utf-8');
-    writeFileSync('./generated/languages.json', JSON.stringify(languages, null, 2), 'utf-8');
-    writeFileSync('./generated/names.json', JSON.stringify(names, null, 2), 'utf-8');
-    writeFileSync('./generated/backgrounds.json', JSON.stringify(backgrounds, null, 2), 'utf-8');
-    writeFileSync('./generated/tables.json', JSON.stringify(tables, null, 2), 'utf-8');
-    writeFileSync('./generated/species.json', JSON.stringify(species, null, 2), 'utf-8');
-    writeFileSync('./generated/sources.json', JSON.stringify(sources, null, 2), 'utf-8');
-    writeFileSync('./generated/traps.json', JSON.stringify(traps, null, 2), 'utf-8');
-    writeFileSync('./generated/hazards.json', JSON.stringify(hazards, null, 2), 'utf-8');
-    writeFileSync('./generated/objects.json', JSON.stringify(objects, null, 2), 'utf-8');
-    writeFileSync('./generated/vehicles.json', JSON.stringify(vehicles, null, 2), 'utf-8');
-    writeFileSync('./generated/skills.json', JSON.stringify(skills, null, 2), 'utf-8');
+    write(`./generated/${name}/items.json`, items);
+    write(`./generated/${name}/itemsvariants.json`, itemVariants);
+    write(`./generated/${name}/spells.json`, spells);
+    write(`./generated/${name}/conditions.json`, conditions);
+    write(`./generated/${name}/diseases.json`, diseases);
+    write(`./generated/${name}/creatures.json`, creatures);
+    write(`./generated/${name}/classes.json`, classes);
+    write(`./generated/${name}/classfeats.json`, classFeats);
+    write(`./generated/${name}/rules.json`, rules);
+    write(`./generated/${name}/actions.json`, actions);
+    write(`./generated/${name}/feats.json`, feats);
+    write(`./generated/${name}/languages.json`, languages);
+    write(`./generated/${name}/names.json`, names);
+    write(`./generated/${name}/backgrounds.json`, backgrounds);
+    write(`./generated/${name}/tables.json`, tables);
+    write(`./generated/${name}/species.json`, species);
+    write(`./generated/${name}/sources.json`, sources);
+    write(`./generated/${name}/traps.json`, traps);
+    write(`./generated/${name}/hazards.json`, hazards);
+    write(`./generated/${name}/objects.json`, objects);
+    write(`./generated/${name}/vehicles.json`, vehicles);
+    write(`./generated/${name}/skills.json`, skills);
+}
+
+function main(): void {
+    const stopwatch = new StopwatchLogger();
+
+    const official = new OfficialDatabank();
+    const partnered = new PartneredDatabank(official, { partnered: true, allowPHB2014: false });
+    const homebrew = new PartneredDatabank(official, { partnered: false, allowPHB2014: false });
+
+    stopwatch.log('Loaded databanks');
+
+    generate('official', official, stopwatch);
+    generate('partnered', partnered, stopwatch);
+    generate('homebrew', homebrew, stopwatch);
 
     stopwatch.log('Data written to files');
     stopwatch.stop();

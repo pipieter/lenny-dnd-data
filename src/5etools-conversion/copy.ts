@@ -244,6 +244,22 @@ function addMod_addSpells(base: any, mod: any) {
     });
 }
 
+function addMod_renameArr(base: any, mod: any): void {
+    if (base?.name === mod.renames.rename) {
+        base.name = mod.renames.with;
+    }
+}
+
+function addMod_replaceOrAppendArr(base: any, key: any, mod: any): void {
+    try {
+        addMod_replaceArr(base, key, mod);
+    } catch {
+        // In case nothing was replaced in replaceArr, an error is thrown.
+        // This is caught here, and is thus appended instead.
+        addMod_appendArr(base, key, mod);
+    }
+}
+
 function addMod_Single(base: any, key: any, mod: any): void {
     switch (mod.mode) {
         case 'replaceArr':
@@ -267,6 +283,10 @@ function addMod_Single(base: any, key: any, mod: any): void {
             return addMod_addSpells(base, mod);
         case 'removeSpells':
             return addMod_removeSpells(base, mod);
+        case 'renameArr':
+            return addMod_renameArr(base, mod);
+        case 'replaceOrAppendArr':
+            return addMod_replaceOrAppendArr(base, key, mod);
         default:
             throw `addMod_Single: unknown entry mode '${mod.mode}'`;
     }

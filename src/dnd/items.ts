@@ -28,7 +28,8 @@ interface Item {
 function mapItemMasteries(data: any): Map<string, any> {
     const masteries = new Map<string, any>();
 
-    for (const mastery of data.itemMastery || []) {
+    const itemMasteries = data.itemMastery ?? data.mastery ?? [];
+    for (const mastery of itemMasteries) {
         const key = `${mastery.name}|${mastery.source}`;
         masteries.set(key, mastery);
     }
@@ -49,14 +50,17 @@ function mapItemTypes(data: any): Map<string, any> {
 function mapItemProperties(data: any): Map<string, any> {
     const properties = new Map<string, any>();
 
-    for (const property of data.itemProperty || []) {
+    const itemProperties = data.itemProperty ?? data.property ?? [];
+    for (const property of itemProperties) {
         properties.set(property.abbreviation, property);
     }
 
     return properties;
 }
 
-function applyItemPropertyTemplate(item: any, property: any, template: string): string {
+function applyItemPropertyTemplate(item: any, property: any, template: string | undefined): string {
+    if (!template) return cleanDNDText(property.entries[0]);
+
     template = template.replaceAll('{{prop_name}}', property.name);
     template = template.replaceAll('{{prop_name_lower}}', property.name.toLowerCase());
 
@@ -68,7 +72,7 @@ function applyItemPropertyTemplate(item: any, property: any, template: string): 
         }
         template = applySingleTemplate(template, `item.${key}`, replacement);
     }
-    return template;
+    return template!;
 }
 
 function getItemFluff(fluffs: any[], name: string, source: string): any {
@@ -317,6 +321,13 @@ function parseItem(item: any, data: any): Item {
         if (typeof masteryKey === 'object') {
             note = ` (${masteryKey.note})`;
             masteryKey = masteryKey.uid;
+        } else {
+            const parts: string[] = masteryKey.split('|');
+            if (parts.length > 2) {
+                // Support for triple '|' (E.g. Scatter|GrimHollowPG24|Scatter)
+                note = ` ${parts[2].replaceAll(parts[0], '').trim()}`;
+                masteryKey = `${parts[0]}|${parts[1]}`;
+            }
         }
         const mastery = masteries.get(masteryKey);
         const propertyName = `mastery: ${mastery.name}${note}`.toLowerCase();

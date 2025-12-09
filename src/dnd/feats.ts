@@ -115,7 +115,11 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     const level = entry;
 
                     if (level.level) {
-                        group.push(`Level ${level.level} ${level.class.name}`);
+                        if (level.class) {
+                            group.push(`Level ${level.level} ${level.class.name}`);
+                        } else {
+                            group.push(`Level ${level.level}`);
+                        }
                         continue;
                     }
 
@@ -236,6 +240,9 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     );
                     break;
                 }
+                case 'note':
+                    // Additional information, but not actually a prerequisite
+                    break;
                 default: {
                     throw `Unsupported feat prerequisite key ${key}`;
                 }

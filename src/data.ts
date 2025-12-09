@@ -1,5 +1,5 @@
 import { title } from './parser';
-import { read } from './read';
+import { read, readJsonFile } from './read';
 import { Rule } from './dnd/rules';
 import { Hazard } from './dnd/hazards';
 import { TableData } from './dnd/tables';
@@ -9,9 +9,19 @@ import { Skill } from './dnd/skills';
 import { SpeciesName } from './dnd/names';
 import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
 import { DNDObject } from './dnd/objects';
+import { existsSync, lstatSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
+import { dirname, join } from 'path';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
+}
+
+export function write(path: string, contents: any) {
+    const directory = dirname(path);
+    if (!existsSync(directory)) {
+        mkdirSync(directory, { recursive: true });
+    }
+    writeFileSync(path, JSON.stringify(contents, null, 2), 'utf-8');
 }
 
 export class Databank {
@@ -49,6 +59,8 @@ export class Databank {
     public readonly classFeature: any[] = [];
     public readonly subclass: any[] = [];
     public readonly subclassFeature: any[] = [];
+    public readonly classFluff: any[] = [];
+    public readonly subclassFluff: any[] = [];
     // Rules
     public readonly variantrule: Rule[] = [];
     // Hazards
@@ -66,6 +78,7 @@ export class Databank {
     public readonly tableGroup: any[] = [];
     // Backgrounds
     public readonly background: any[] = [];
+    public readonly backgroundFluff: any[] = [];
     // Feats
     public readonly feat: Feat[] = [];
     // Skills
@@ -178,5 +191,131 @@ export class OfficialDatabank extends Databank {
         this.add('variantrules.json');
         this.add('vehicles.json');
         this.addSpellSource('spells/sources.json');
+    }
+}
+
+export interface PartneredFilters {
+    partnered: boolean;
+    allowPHB2014: boolean;
+}
+
+export class PartneredDatabank extends Databank {
+    public readonly filters: PartneredFilters;
+
+    private getFullPath(path: string): string {
+        return `5etools-homebrew/data/${path}`;
+    }
+
+    public override add(path: string) {
+        path = this.getFullPath(path);
+        const stats = lstatSync(path);
+        if (!stats.isDirectory()) {
+            throw new Error(`Partnered databank expects a directory, received '${path}'!`);
+        }
+
+        for (const file of readdirSync(path)) {
+            const fullPath = join(path, file);
+            const data = readJsonFile(fullPath);
+            this.addContents(data, fullPath);
+        }
+    }
+
+    private addContents(data: any, path: string): void {
+        if (!data._meta) {
+            throw new Error(
+                `Partnered databank content expects a +meta field, but '${path}' didn't have one!`
+            );
+        }
+
+        const sources: any[] = data._meta.sources ?? [];
+        const partnered = sources.some((source) => source.partnered ?? false);
+
+        if (this.filters.partnered && !partnered) return;
+        if (!this.filters.allowPHB2014 && data._meta.edition === 'classic') return;
+
+        const prefixesToIgnore = ['foundry'];
+        const keysToIgnore = [
+            '$schema',
+            '_meta',
+            'linkedLootTables',
+            'raceFluffMeta',
+            'bookData',
+            'adventureData',
+            // The items below are not implemented *yet*, and should be TODO
+            'optionalfeature',
+            'reward',
+            'rewardFluff',
+            'deck',
+            'card',
+            'legendaryGroup',
+            'charoption',
+            'sense',
+            'facility',
+        ];
+
+        for (const key of Object.keys(data)) {
+            if (prefixesToIgnore.some((prefix) => key.startsWith(prefix))) continue;
+            if (keysToIgnore.includes(key)) continue;
+
+            this.get(key).push(...data[key]);
+        }
+    }
+
+    constructor(official: OfficialDatabank, filters: PartneredFilters) {
+        super();
+        this.filters = { ...filters };
+
+        // Load in some data from the official content
+        const entriesToCopy = [
+            'itemType',
+            'itemGroup',
+            'itemProperty',
+            'itemTypeAdditionalEntries',
+            'itemEntry',
+            'itemMastery',
+            'monster', // TODO these should be removed after
+            'monsterFluff',
+            'race',
+            'raceFluff',
+        ];
+        for (const entryToCopy of entriesToCopy) {
+            this.get(entryToCopy).push(...official.get(entryToCopy));
+        }
+
+        // Load homebrew
+        this.add('action/');
+        this.add('adventure/');
+        this.add('background/');
+        this.add('baseitem/');
+        this.add('book/');
+        this.add('boon/');
+        this.add('charoption/');
+        this.add('class/');
+        this.add('collection/');
+        this.add('creature/');
+        this.add('cult/');
+        this.add('deck/');
+        this.add('deity/');
+        this.add('disease/');
+        this.add('facility/');
+        this.add('feat/');
+        this.add('hazard/');
+        this.add('item/');
+        this.add('language/');
+        this.add('magicvariant/');
+        this.add('makebrew/');
+        this.add('object/');
+        this.add('optionalfeature/');
+        this.add('psionic/');
+        this.add('race/');
+        this.add('recipe/');
+        this.add('reward/');
+        this.add('spell/');
+        this.add('subclass/');
+        this.add('subrace/');
+        this.add('table/');
+        this.add('trap/');
+        this.add('variantrule/');
+        this.add('vehicle/');
     }
 }

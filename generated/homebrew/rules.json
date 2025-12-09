@@ -1,0 +1,509 @@
+[
+  {
+    "name": "Grievous Wound",
+    "source": "GrimHollowPG24",
+    "url": "https://5e.tools/variantrules.html#grievous%20wound_grimhollowpg24",
+    "ruleType": "Optional",
+    "description": [
+      {
+        "name": "Wounds in Grim Hollow",
+        "type": "text",
+        "value": "Grievous Wounds are applied to characters that would be dropped to 0 Hit Points, but instead choose to gain a lingering wound that stays with them. These wounds remain until a character takes a Long Rest (see Resting below) and undergoes treatment by a physician or someone trained in *Medicine*."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Permanent Wounds occur when a creature takes multiple Grievous Wounds, or when a character dies and is brought back to life. The challenges of Permanent Wounds can be offset with certain magic items or prosthetics."
+      },
+      {
+        "name": "Rests in Grim Hollow",
+        "type": "text",
+        "value": "The dark-fantasy vibe of Grim Hollow necessitates a change to the effects of Short and Long Rests. Grievous Wounds can be healed by taking a Long Rest, but those rests in Grim Hollow take 32 hours of resting in a completely safe environment."
+      }
+    ]
+  },
+  {
+    "name": "Wands as Weapons",
+    "source": "FoEQuickstone",
+    "url": "https://5e.tools/variantrules.html#wands%20as%20weapons_foequickstone",
+    "ruleType": "Optional",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Magic is a part of everyday life in the Five Nations. In the wake of the Last War, wandslingers have begun to displace traditional archers. But there are no rules that make a wandslinger's choice of weapon matter—there is no mechanical difference between using a Wand or a Staff. However, the 2024 version of the fifth edition Player's Handbook introduces Weapon Masteries—properties that reflect the full potential of a weapon, which can be unlocked by a skilled combatant. Adding Mastery properties to Arcane Focuses is a way to embrace the concept that Wands and the like are weapons in Eberron and to provide a distinct flavor to each focus. With these rules, the Wand is swift and vexing, the Rod staggers a target with brute force, and the Staff shoves them back with the power of its blast."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "This is an optional rule that must be approved by the DM. If it is used, add the following Masteries to spellcasting focuses:"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "• Wands have the __Vex__ property.\n• Rods have the __Slow__ property.\n• Staffs have the __Push__ property.\n• Orbs and Crystals have the __Sap__ property."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "These variants are treated just like regular weapons: a character must have the Weapon Mastery feature and choose the specific type of arcane focus to use with it. The Mastery property **can only be used when the character casts a cantrip that requires an attack roll:** they do not apply to any other type of spellcasting."
+      }
+    ]
+  },
+  {
+    "name": "Skill Trees",
+    "source": "WoSkTr",
+    "url": "https://5e.tools/variantrules.html#skill%20trees_wosktr",
+    "ruleType": "Uncategorized",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "The rules surrounding Skill Trees and Skill Features:"
+      },
+      {
+        "name": "Skill Features and Points",
+        "type": "text",
+        "value": "**Skill Features.** Skill Features are additional optional features that you can obtain through feats or being part of one of the classes (Artificer, Barbarian, Fighter, Monk, Paladin, Ranger, or Rogue) that you get them at certain levels. These features act a lot like feats, as in providing extra abilities your character can use. Whenever you use one of these abilities, you must expend the required amount of skill points."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Skill Points.** Skill Points (SP) are a representation of how many times you can use a skill feature. You have a number of Skill Points equal to your Proficiency Bonus + the Amount of Skill Features you have. You regain all skill points when you finish a Long Rest and a number equal to half your Proficiency bonus (rounded up) when you finish a  Short Rest"
+      },
+      {
+        "name": "Skill Features from Feats",
+        "type": "text",
+        "value": "**Feat Trees.** Certain Feats have been altered or added to be in a Skill Tree. This skill tree is always seperated into 4 Tiers, each tier getting its own abilities. The first Tier only has abilities with skill costs, if it allows you to cast spells. If you can only select Tier 4 with a feat, you may also pick another available Tier from another Feat. You only gain the ability bonus from the first feat."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Origin Feat.** When you are able to choose an Origin feat, you may instead choose the Skill Tree variant of it (if it has one). When you choose it in this way, you get the first two Tiers of that feat. When you get the [Magic Initiate](https://5e.tools/feats.html#magic%20initiate_xphb) feat, you can instead choose between the following Orgin Feats: [Divine Favour](https://5e.tools/feats.html#divine%20favour_wosktr), [Druidic](https://5e.tools/feats.html#druidic_wosktr), [Learned Caster](https://5e.tools/feats.html#learned%20caster_wosktr), [Musical Caster](https://5e.tools/feats.html#musical%20caster_wosktr), [Sorcerous Blood](https://5e.tools/feats.html#sorcerous%20blood_wosktr), and if you use the __Spiritualist__ [Spiritual Boon](https://5e.tools/feats.html#spiritual%20boon_wospha)."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**General Feat.** When you are able to choose a feat, you can instead choose a skill tree variant of a General or Origin feat. You always get the first two available Tiers of that feat. You cannot choose Tiers 3 or 4 with a feat, before reaching level 8."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Chosen from Class.** You get the first available tier of a Feat Tree. A Tier 1 and 2 feature can only be chosen after reaching level 3, Tier 3 after reaching level 5, and Tier 4 after reaching level 7."
+      },
+      {
+        "name": "Skill Features from Classes",
+        "type": "text",
+        "value": "**Common Rules.** When you reach a certain level in a martial or half caster, you can choose a skill feat from a skill tree of their class or a Feat Tree, provided they meet the prerequisites."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Martials.** A martial class (Barbarian, Fighter, Monk, and Rogue) may choose one skill feat when they reach level 3, and once again each odd level and level 20 gained in that class."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Half Casters.** A half caster (Artificer, Paladin, and Ranger) may choose one skill feat when they reach level 3, and once again every 3rd level and level 20 gained in that class."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Multiclassed.** When you have multiclassed into two classes that get skill feats, you may also pick from the Skill Tree of the other class. You must still meet the level requirements of that class to pick the feature."
+      },
+      {
+        "name": "Skill Features from Starter Package",
+        "type": "text",
+        "value": "**Level 3 Freebie.** When any PC reaches level 3, you gain 1 Skill Feature listed in the [Starter Package](https://5e.tools/feats.html#starter%20package_wosktr). You do not get an additional SP from this freebie."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Chosen from Feat.** When chosen as a feat, you can choose 2 Skill Features listed in the [Starter Package](https://5e.tools/feats.html#starter%20package_wosktr), as well as increase 1 ability of your choice by 1 (max 20). You also gain 2 SP."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "**Chosen from Class.** When chosen from a class, you can choose 1 Skill Feature listed in the [Starter Package](https://5e.tools/feats.html#starter%20package_wosktr). You also gain 1 SP."
+      }
+    ]
+  },
+  {
+    "name": "Magical Technology",
+    "source": "DarkMatter24",
+    "url": "https://5e.tools/variantrules.html#magical%20technology_darkmatter24",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "In Dark Matter, sufficiently advanced magic has become indistinguishable from technology. Magical Technology like Datapads and blasters have become as commonplace as pitchforks and horses once were and underpin life in the 'Verse. Nearly all technology is built upon magical fundamentals: flying cars utilize a variant on the __Levitate__ spell, blasters leverage bursts of Evocation magic, and ships crossing the 'Verse use a type of advanced __Plane Shift__."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Other gear, such as the Comms Set and Wristwatch are Magical Technology—devices powered by arcane batteries or other sources of magical energy. These devices don't rise to the complexity of magic items, but are still influenced by spells such as __Dispel Magic__ and fail in Dead Magic Zone."
+      }
+    ]
+  },
+  {
+    "name": "Explosion Saving Throw",
+    "source": "DarkMatter24",
+    "url": "https://5e.tools/variantrules.html#explosion%20saving%20throw_darkmatter24",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Explosion Saving Throw work similarly to Death Saving Throws."
+      }
+    ]
+  },
+  {
+    "name": "Captain",
+    "source": "DarkMatter24",
+    "url": "https://5e.tools/variantrules.html#captain_darkmatter24",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "As a Captain, the following actions are available to you."
+      },
+      {
+        "name": "Fire at Will",
+        "type": "text",
+        "value": "You can direct one Gunner to attack. That Gunner can take a Reaction to make one attack with a ship weapon."
+      },
+      {
+        "name": "Full Power to Shields",
+        "type": "text",
+        "value": "The ship regains all of its Shield Points."
+      },
+      {
+        "name": "Full Speed Ahead",
+        "type": "text",
+        "value": "You direct one Pilot to move. That Pilot can take a Reaction to move the ship half of its Speed within the cone of movement."
+      }
+    ]
+  },
+  {
+    "name": "Engineer",
+    "source": "DarkMatter24",
+    "url": "https://5e.tools/variantrules.html#engineer_darkmatter24",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "As an Engineer, you have the following actions and Bonus Action available to you."
+      },
+      {
+        "name": "Move Shield (Bonus Action)",
+        "type": "text",
+        "value": "You switch the direction the ship's shield faces. The shield only covers one of the ship's sides."
+      },
+      {
+        "name": "Emergency Repairs",
+        "type": "text",
+        "value": "Make a DC 15 Strength (*Athletics*) or Intelligence (*Technology*) check. On a success, the ship regains Mega Hit Points. To determine the number of Mega Hit Points regained, roll a number of d6s equal to half your character level (round down, to a minimum of 1d6) and add the ability modifier used to make this check."
+      },
+      {
+        "name": "Use System",
+        "type": "text",
+        "value": "You activate one system on your ship that requires the Use System action."
+      }
+    ]
+  },
+  {
+    "name": "Gunner",
+    "source": "DarkMatter24",
+    "url": "https://5e.tools/variantrules.html#gunner_darkmatter24",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "As a Gunner, the following actions are available to you."
+      },
+      {
+        "name": "Attack",
+        "type": "text",
+        "value": "You take the Attack action with any of the ship's weapons of your choice."
+      },
+      {
+        "name": "Arcane Cannon",
+        "type": "text",
+        "value": "Using the Arcane Cannon system, you can take a Magic action to cast a spell with the [Mega] tag or cast a spell that has a casting time of an action or Bonus Action and targets an area or a single creature other than yourself, which is magnified to Mega scale. The GM decides if a spell is inappropriate to be magnified."
+      }
+    ]
+  },
+  {
+    "name": "Pilot",
+    "source": "DarkMatter24",
+    "url": "https://5e.tools/variantrules.html#pilot_darkmatter24",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "As a Pilot, the following actions are available to you."
+      },
+      {
+        "name": "Move and Fire",
+        "type": "text",
+        "value": "You move your ship up to its Speed within the cone of movement and can take the Attack action. If your ship is Personal-sized or larger, you make only one attack and must use one of the ship's Melee weapons or one that has the Fixed property. Then, you can rotate your ship by up to its Maneuverability score. (See Movement and Position in Ship Combat.)"
+      },
+      {
+        "name": "Evasive Maneuvers",
+        "type": "text",
+        "value": "You move your ship 500 feet in any direction and rotate to face any way you choose. Make a DC 15 Dexterity (*Piloting*) check. On a success, until the start of your next turn, attack rolls against your ship have Disadvantage, and you make Dexterity saving throws on behalf of your ship with Advantage."
+      },
+      {
+        "name": "Targeted Strike",
+        "type": "text",
+        "value": "If your ship is Fighter-sized, you move your ship up to half of its Speed within the cone of movement and take the Attack action (one attack only). If this attack hits and deals damage that isn't blocked by the target's shields, you disable one of the ship's systems of your choice."
+      }
+    ]
+  },
+  {
+    "name": "Mega Hit Points",
+    "source": "DarkMatter24",
+    "url": "https://5e.tools/variantrules.html#mega%20hit%20points_darkmatter24",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Ships have Mega Hit Points and deal Mega damage, each of which is worth 100 points. Sizes are scaled up by 100 times to Mega scale."
+      }
+    ]
+  },
+  {
+    "name": "Shield Points",
+    "source": "DarkMatter24",
+    "url": "https://5e.tools/variantrules.html#shield%20points_darkmatter24",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Many ships have Shield Points (SP), expressed in Mega Hit Points. If a ship takes damage on a side protected by its shield, it loses Shield Points first, and any leftover damage carries over to the ship's Mega Hit Points. At the start of the Initiative order, a shield regains half its maximum Shield Points (round down)."
+      }
+    ]
+  },
+  {
+    "name": "Ship Combat Rules",
+    "source": "DarkMatter24",
+    "url": "https://5e.tools/variantrules.html#ship%20combat%20rules_darkmatter24",
+    "ruleType": "Core",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Combat between ships (or between ships and Mega creatures) uses the same rules as regular combat, with the following changes."
+      },
+      {
+        "name": "Rule of 100",
+        "type": "text",
+        "value": "Ships have Mega Hit Points and deal Mega damage, each of which is worth 100 points. Sizes are scaled up by 100 times to Mega scale."
+      },
+      {
+        "name": "Initiative",
+        "type": "text",
+        "value": "If the ship has a Captain, the Captain rolls Initiative for the entire ship. At the ship's turn in Initiative order, the Captain chooses the order in which the other crew members take their turns."
+      },
+      {
+        "name": "Saving Throws",
+        "type": "text",
+        "value": "If a ship is required to make a saving throw, its Pilot makes that saving throw on behalf of the ship. If a ship has no Pilot, it automatically fails its saving throw."
+      },
+      {
+        "name": "Critical Hits",
+        "type": "text",
+        "value": "When you score a Critical Hit against a ship, you can disable one system on that ship of your choice."
+      },
+      {
+        "name": "Mega Spells",
+        "type": "text",
+        "value": "Regular spells can be amplified to Mega scale for ship combat using an Arcane Cannon."
+      },
+      {
+        "name": "Damage and Repair",
+        "type": "text",
+        "value": "Ships use the following rules for damage."
+      },
+      {
+        "name": "Shield Points",
+        "type": "text",
+        "value": "Many ships have Shield Points (SP), expressed in Mega Hit Points. If a ship takes damage on a side protected by its shield, it loses Shield Points first, and any leftover damage carries over to the ship's Mega Hit Points. At the start of the Initiative order, a shield regains half its maximum Shield Points (round down)."
+      },
+      {
+        "name": "Immunities",
+        "type": "text",
+        "value": "Ships are immune to Poison and Psychic damage."
+      },
+      {
+        "name": "Repairing a Ship",
+        "type": "text",
+        "value": "An Engineer can take the Emergency Repairs action to restore Mega Hit Points to a ship. When the crew finishes a Long Rest, they perform repairs to restore all of a ship's Mega Hit Points. A ship must have at least 1 Mega Hit Points to be repaired in this way."
+      },
+      {
+        "name": "Repairing Systems",
+        "type": "text",
+        "value": "You can take a Utilize action to attempt to repair a disabled system with a DC 15 Intelligence (*Technology*) check. On a success, you re-enable the system."
+      },
+      {
+        "name": "Dropping to 0 Mega Hit Points",
+        "type": "text",
+        "value": "When your ship drops to 0 Mega Hit Points, its systems and weapons are all disabled. At the end of the Initiative order, one character makes an Explosion Saving Throw on behalf of the ship to determine whether it gets closer to exploding or becomes a derelict wreck. Explosion Saving Throw work similarly to Death Saving Throws (see Dark Matter's Ships chapter)."
+      },
+      {
+        "name": "Movement and Position",
+        "type": "text",
+        "value": "Ship combat takes place on a two-dimensional plane, using the following rules."
+      },
+      {
+        "name": "Facing",
+        "type": "text",
+        "value": "Each ship Faces a particular direction, which is normally in 45-degree intervals. The direction faced by the ship's shield and the direction of ship weapons with the Fixed property is relative to the ship."
+      },
+      {
+        "name": "Cone of Movement",
+        "type": "text",
+        "value": "To approximate momentum, a ship's movement is limited to a Cone of Movement. This Cone extends from the front of the ship in the direction the ship is facing, and it is as wide as the ship's Maneuverability score, measured in degrees."
+      },
+      {
+        "name": "NPC Ships",
+        "type": "text",
+        "value": "The GM doesn't play the individual Crew Roles for ships under their control. Instead, they use the Combat section of the ship's stat block and the following rules."
+      },
+      {
+        "name": "Ability Checks and Saving Throws",
+        "type": "text",
+        "value": "If the GM makes an ability check or saving throw for a ship under their control, they make a d20 roll and add the ship's Proficiency Bonus."
+      },
+      {
+        "name": "Movement Alternatives",
+        "type": "text",
+        "value": "Instead of moving normally, a ship can take the Pilot's Evasive Maneuvers or Hard Turn action."
+      },
+      {
+        "name": "Shields",
+        "type": "text",
+        "value": "If a ship has shields, it can reposition its shields once on each of its turns."
+      },
+      {
+        "name": "Repairing Systems",
+        "type": "text",
+        "value": "If one of the ship's systems is disabled, it can replace one of its attacks with attempting to repair the system with a DC 15 Intelligence (*Technology*) check."
+      },
+      {
+        "name": "Instant Death",
+        "type": "text",
+        "value": "Ships under the GM's control usually explode when dropping to 0 Mega Hit Points without making Explosion Saving Throws."
+      }
+    ]
+  },
+  {
+    "name": "Object Hit Points",
+    "source": "ASRT",
+    "url": "https://5e.tools/variantrules.html#object%20hit%20points_asrt",
+    "ruleType": "Variant Optional",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "[See Object Hit Points's stats here](https://5e.tools/tables.html#object%20hit%20points_asrt)"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "[See Object Armor Class's stats here](https://5e.tools/tables.html#object%20armor%20class_asrt)"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "*Most magical items and objects are of extraordinary artisanship. Thanks to a combination of careful crafting and magical reinforcement, a magic item is at least as durable as a nonmagical item of its kind.*\n*Other than potions and scrolls, most magical items have resistance to all damage.*"
+      },
+      {
+        "name": "Hit Points",
+        "type": "text",
+        "value": "An object's hit points measure how much damage it can take before losing its structural integrity. Resilient objects have more hit points than fragile ones. Large objects also tend to have more hit points than small ones, unless breaking a small part of the object is just as effective as breaking the whole thing. The Object Hit Points table (based on the one from pg247 of the DMG) provides suggested hit points for fragile and resilient objects that are Huge or smaller."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "When using the Object Hit Points table, first decide if the object is built stronger or weaker than normal, or has deteorated over time. A wooden gate at the entrance ofa cemetery is likely to have rotted over time, whereas the fence ofa new farm raising buffalo will have been built to withstand charges by the livestock. A fragile object will have half the HP ofa normal object, and a resilient object double."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "The size of your object determines the number of dice to roll for its hit points, and the material the object is made of determines which die is used."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "A normal door using this chart would have 14 (4d6) hit points. A strong metal door that might appear in a jail or a crypt would have 44 (8d10) hit points. If the party tries to break a padlock on a chest, it would have 22 (4d10) hit points, likely taking a few hits to break."
+      },
+      {
+        "name": "Damage Threshold",
+        "type": "text",
+        "value": "Large objects such as castle walls often have extra resilience represented by a damage threshold. An object with a damage threshold has immunity to all damage unless it takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, in which case it takes damage as normal. Any damage that fails to meet or exceed the object's damage threshold is considered superflcial and doesn't reduce the object's hit points. The Damage Threshold table sets minimum damage thresholds for different material types."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If an adventurer decides to break down a stone castle wall with his maul, he will have to deal 20 or more damage on a hit for the attack to do substantial damage to the structure and reduce the object's hit points. This likely means a maul alone will not be able to break through the walls ofa dungeon or fortress before the weapon itself breaks."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "[See Damage Threshold *'s stats here](https://5e.tools/tables.html#damage%20threshold%20*_asrt)"
+      }
+    ]
+  },
+  {
+    "name": "New Rules for Beasts",
+    "source": "LLCompendiumOfBeasts",
+    "url": "https://5e.tools/variantrules.html#new%20rules%20for%20beasts_llcompendiumofbeasts",
+    "ruleType": "Variant",
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Multiple creatures included in the laserllama compendium of Beasts use the new and alternate rules detailed below:"
+      },
+      {
+        "name": "Adjusted Challenge Ratings",
+        "type": "text",
+        "value": "Challenge Ratings (CR) have been updated to reflect the threat that such a Beast would pose to four adventurers of that level."
+      },
+      {
+        "name": "Beast Subtypes",
+        "type": "text",
+        "value": "Like other types of monsters (notably fiends), the Beasts here now each have one of the following subtypes: *Aquatic, Avian,Brute, Carnivore, Reptilian,* or *Vermin*."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Though, legends speak of extinct Beasts that might exist in the remote parts of the wild world with the *Ancient* subtype."
+      },
+      {
+        "name": "Recharge Features",
+        "type": "text",
+        "value": "If you use a feature to take on the shape of a creature with a Recharge feature (either on a d6 roll of 5–6 or after a short or long rest), you do not regain the use of that feature until thespecified recharge condition is met, even if you revert to yournormal form then take on the shape of that creature again."
+      },
+      {
+        "name": "Size: Diminutive",
+        "type": "text",
+        "value": "Diminutive is a new size category for creatures smaller than Tiny. Diminutive creatures are smaller than 1 foot × 1 foot, and include vermin, rodents, insects, and other small creatures."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "If you use a feature to take on the shape of a Diminutive creature, such as the __polymorph__[LL] spell or the __Druid's__ Wild Shape, you immediately revert to your normal form when you take any amount of damage or when you fail a saving throw."
+      }
+    ]
+  }
+]
