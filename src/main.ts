@@ -19,6 +19,7 @@ import { getObjects } from './dnd/objects';
 import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './dnd/skills';
 import * as kleur from 'kleur';
+import { getDeities } from './dnd/deities';
 
 function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) {
     stopwatch.log(`Generating ${name}`, kleur.cyan);
@@ -40,6 +41,9 @@ function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) 
 
     const { classes, classFeats } = getClassesAndClassFeats(databank);
     stopwatch.log('Classes & ClassFeats retrieved');
+
+    const deities = getDeities(databank);
+    stopwatch.log('Deities retrieved');
 
     const rules = getRules(databank);
     stopwatch.log('Rules retrieved');
@@ -85,6 +89,7 @@ function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) 
     write(`./generated/${name}/spells.json`, spells);
     write(`./generated/${name}/conditions.json`, conditions);
     write(`./generated/${name}/diseases.json`, diseases);
+    write(`./generated/${name}/deities.json`, deities);
     write(`./generated/${name}/creatures.json`, creatures);
     write(`./generated/${name}/classes.json`, classes);
     write(`./generated/${name}/classfeats.json`, classFeats);

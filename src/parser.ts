@@ -10,7 +10,7 @@ import {
     getTablesUrl,
     getTrapsUrl,
 } from './urls';
-import { AbilityScores, SpellSchools } from './5etools-conversion/data';
+import { AbilityScores, Alignments, SpellSchools } from './5etools-conversion/data';
 import { ColLabelRows } from './dnd/tables';
 
 export enum DescriptionType {
@@ -530,6 +530,16 @@ export function parseComponents(components: any): string {
     }
 
     return result.join(', ');
+}
+
+export function parseAlignments(alignments: string[]): string[] {
+    const result: string[] = [];
+    for (const alignment of alignments) {
+        const parsed = Alignments.get(alignment);
+        if (!parsed) throw `Unsupported Alignment: '${alignment}'`;
+        result.push(parsed);
+    }
+    return result;
 }
 
 function parseDescriptionBlockFromBlocks(descriptions: any[]): string {

@@ -79,6 +79,10 @@ export function getConditionsDiseasesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/conditionsdiseases.html`, name, source);
 }
 
+export function getDeitiesUrl(name: string, source: string) {
+    return buildNameSourceUrl('https://5e.tools/deities.html', name, source);
+}
+
 export function getFeatsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/feats.html`, name, source);
 }
