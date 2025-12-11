@@ -419,26 +419,6 @@
     ]
   },
   {
-    "name": "Action Surge (Lv. 17 Fighter)",
-    "source": "XPHB",
-    "url": "https://5e.tools/classes.html#fighter_xphb",
-    "type": "Lv. 17 Fighter Class Feature",
-    "prerequisite": "Fighter (XPHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Once you use this feature, you can't do so again until you finish a Short or Long Rest. Starting at level 17, you can use it twice before a rest but only once on a turn."
-      }
-    ]
-  },
-  {
     "name": "Action Surge (Lv. 2 Fighter)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#fighter_phb",
@@ -463,6 +443,26 @@
     "source": "XPHB",
     "url": "https://5e.tools/classes.html#fighter_xphb",
     "type": "Lv. 2 Fighter Class Feature",
+    "prerequisite": "Fighter (XPHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Once you use this feature, you can't do so again until you finish a Short or Long Rest. Starting at level 17, you can use it twice before a rest but only once on a turn."
+      }
+    ]
+  },
+  {
+    "name": "Action Surge (Lv. 17 Fighter)",
+    "source": "XPHB",
+    "url": "https://5e.tools/classes.html#fighter_xphb",
+    "type": "Lv. 17 Fighter Class Feature",
     "prerequisite": "Fighter (XPHB)",
     "abilityIncrease": null,
     "description": [
@@ -509,21 +509,6 @@
     ]
   },
   {
-    "name": "Additional Fighting Style (Lv. 10 Champion)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#fighter_phb,state:feature=s9-0~sub_champion_phb=b1",
-    "type": "Lv. 10 Champion Subclass Feature",
-    "prerequisite": "Champion (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Champion (PHB) Features",
-        "type": "text",
-        "value": "At 10th level, you can choose a second option from the Fighting Style class feature."
-      }
-    ]
-  },
-  {
     "name": "Additional Fighting Style (Lv. 7 Champion)",
     "source": "XPHB",
     "url": "https://5e.tools/classes.html#fighter_xphb,state:feature=s6-0~sub_champion_xphb=b1",
@@ -539,6 +524,21 @@
     ]
   },
   {
+    "name": "Additional Fighting Style (Lv. 10 Champion)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#fighter_phb,state:feature=s9-0~sub_champion_phb=b1",
+    "type": "Lv. 10 Champion Subclass Feature",
+    "prerequisite": "Champion (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Champion (PHB) Features",
+        "type": "text",
+        "value": "At 10th level, you can choose a second option from the Fighting Style class feature."
+      }
+    ]
+  },
+  {
     "name": "Additional Magical Secrets (Lv. 6 Lore)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#bard_phb,state:feature=s5-0~sub_lore_phb=b1",
@@ -550,6 +550,21 @@
         "name": "Lore (PHB) Features",
         "type": "text",
         "value": "At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know."
+      }
+    ]
+  },
+  {
+    "name": "Additional Maneuvers (Lv. 7 Battle Master)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#fighter_phb,state:feature=s6-0~sub_battle%20master_phb=b1",
+    "type": "Lv. 7 Battle Master Subclass Feature",
+    "prerequisite": "Battle Master (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "At 7th level, you learn two additional maneuvers of your choice."
       }
     ]
   },
@@ -584,21 +599,6 @@
     ]
   },
   {
-    "name": "Additional Maneuvers (Lv. 7 Battle Master)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#fighter_phb,state:feature=s6-0~sub_battle%20master_phb=b1",
-    "type": "Lv. 7 Battle Master Subclass Feature",
-    "prerequisite": "Battle Master (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "At 7th level, you learn two additional maneuvers of your choice."
-      }
-    ]
-  },
-  {
     "name": "Additional Rune Known (Lv. 15 Rune Knight)",
     "source": "TCE",
     "url": "https://5e.tools/classes.html#fighter_phb,state:feature=s14-0~sub_rune%20knight_tce=b1",
@@ -619,10 +619,10 @@
     ]
   },
   {
-    "name": "Additional Superiority Die (Lv. 15 Battle Master)",
+    "name": "Additional Superiority Die (Lv. 7 Battle Master)",
     "source": "PHB",
-    "url": "https://5e.tools/classes.html#fighter_phb,state:feature=s14-0~sub_battle%20master_phb=b1",
-    "type": "Lv. 15 Battle Master Subclass Feature",
+    "url": "https://5e.tools/classes.html#fighter_phb,state:feature=s6-0~sub_battle%20master_phb=b1",
+    "type": "Lv. 7 Battle Master Subclass Feature",
     "prerequisite": "Battle Master (PHB)",
     "abilityIncrease": null,
     "description": [
@@ -634,10 +634,10 @@
     ]
   },
   {
-    "name": "Additional Superiority Die (Lv. 7 Battle Master)",
+    "name": "Additional Superiority Die (Lv. 15 Battle Master)",
     "source": "PHB",
-    "url": "https://5e.tools/classes.html#fighter_phb,state:feature=s6-0~sub_battle%20master_phb=b1",
-    "type": "Lv. 7 Battle Master Subclass Feature",
+    "url": "https://5e.tools/classes.html#fighter_phb,state:feature=s14-0~sub_battle%20master_phb=b1",
+    "type": "Lv. 15 Battle Master Subclass Feature",
     "prerequisite": "Battle Master (PHB)",
     "abilityIncrease": null,
     "description": [
@@ -1964,6 +1964,21 @@
     ]
   },
   {
+    "name": "Arcane Tradition feature (Lv. 6 Wizard)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#wizard_phb",
+    "type": "Lv. 6 Wizard Class Feature",
+    "prerequisite": "Wizard (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 6th level, you gain a feature granted by your Arcane Tradition."
+      }
+    ]
+  },
+  {
     "name": "Arcane Tradition feature (Lv. 10 Wizard)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#wizard_phb",
@@ -1990,21 +2005,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 14th level, you gain a feature granted by your Arcane Tradition."
-      }
-    ]
-  },
-  {
-    "name": "Arcane Tradition feature (Lv. 6 Wizard)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#wizard_phb",
-    "type": "Lv. 6 Wizard Class Feature",
-    "prerequisite": "Wizard (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 6th level, you gain a feature granted by your Arcane Tradition."
       }
     ]
   },
@@ -3014,26 +3014,6 @@
     ]
   },
   {
-    "name": "Artificer Specialist Feature (Lv. 15 Artificer)",
-    "source": "TCE",
-    "url": "https://5e.tools/classes.html#artificer_tce",
-    "type": "Lv. 15 Artificer Class Feature",
-    "prerequisite": "Artificer (TCE)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "*15th-level artificer feature*"
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "You gain a feature granted by your Artificer Specialist choice."
-      }
-    ]
-  },
-  {
     "name": "Artificer Specialist Feature (Lv. 5 Artificer)",
     "source": "TCE",
     "url": "https://5e.tools/classes.html#artificer_tce",
@@ -3065,6 +3045,26 @@
         "name": "Class Features",
         "type": "text",
         "value": "*9th-level artificer feature*"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You gain a feature granted by your Artificer Specialist choice."
+      }
+    ]
+  },
+  {
+    "name": "Artificer Specialist Feature (Lv. 15 Artificer)",
+    "source": "TCE",
+    "url": "https://5e.tools/classes.html#artificer_tce",
+    "type": "Lv. 15 Artificer Class Feature",
+    "prerequisite": "Artificer (TCE)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "*15th-level artificer feature*"
       },
       {
         "name": "",
@@ -3986,6 +3986,21 @@
     ]
   },
   {
+    "name": "Avatar of Battle (Lv. 3 Avatar)",
+    "source": "UATheMysticClass",
+    "url": "https://5e.tools/classes.html#mystic_uathemysticclass,state:feature=s2-0~sub_avatar_uathemysticclass=b1",
+    "type": "Lv. 3 Avatar Subclass Feature",
+    "prerequisite": "Avatar (UATHEMYSTICCLASS)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Avatar (UATHEMYSTICCLASS) Features",
+        "type": "text",
+        "value": "Starting at 3rd level, you project an inspiring aura. While you aren't incapacitated, each ally within 30 feet of you who can see you gains a +2 bonus to initiative rolls."
+      }
+    ]
+  },
+  {
     "name": "Avatar of Battle (Lv. 17 Strength (PSA))",
     "source": "PSA",
     "url": "https://5e.tools/classes.html#cleric_phb,state:feature=s16-0~sub_strength%20(psa)_psa=b1",
@@ -4027,21 +4042,6 @@
         "name": "",
         "type": "text",
         "value": "You gain Resistance to Bludgeoning, Piercing, and Slashing damage."
-      }
-    ]
-  },
-  {
-    "name": "Avatar of Battle (Lv. 3 Avatar)",
-    "source": "UATheMysticClass",
-    "url": "https://5e.tools/classes.html#mystic_uathemysticclass,state:feature=s2-0~sub_avatar_uathemysticclass=b1",
-    "type": "Lv. 3 Avatar Subclass Feature",
-    "prerequisite": "Avatar (UATHEMYSTICCLASS)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Avatar (UATHEMYSTICCLASS) Features",
-        "type": "text",
-        "value": "Starting at 3rd level, you project an inspiring aura. While you aren't incapacitated, each ally within 30 feet of you who can see you gains a +2 bonus to initiative rolls."
       }
     ]
   },
@@ -4351,21 +4351,6 @@
     ]
   },
   {
-    "name": "Bard College feature (Lv. 14 Bard)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#bard_phb",
-    "type": "Lv. 14 Bard Class Feature",
-    "prerequisite": "Bard (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 14th level, you gain a feature from your Bard College."
-      }
-    ]
-  },
-  {
     "name": "Bard College feature (Lv. 6 Bard)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#bard_phb",
@@ -4377,6 +4362,21 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 6th level, you gain a feature from your Bard College."
+      }
+    ]
+  },
+  {
+    "name": "Bard College feature (Lv. 14 Bard)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#bard_phb",
+    "type": "Lv. 14 Bard Class Feature",
+    "prerequisite": "Bard (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 14th level, you gain a feature from your Bard College."
       }
     ]
   },
@@ -4411,6 +4411,21 @@
     ]
   },
   {
+    "name": "Bardic Inspiration (d8) (Lv. 5 Bard)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#bard_phb",
+    "type": "Lv. 5 Bard Class Feature",
+    "prerequisite": "Bard (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 5th level, your Bardic Inspiration die changes to a d8."
+      }
+    ]
+  },
+  {
     "name": "Bardic Inspiration (d10) (Lv. 10 Bard)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#bard_phb",
@@ -4437,21 +4452,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 15th level, your Bardic Inspiration die changes to a d12."
-      }
-    ]
-  },
-  {
-    "name": "Bardic Inspiration (d8) (Lv. 5 Bard)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#bard_phb",
-    "type": "Lv. 5 Bard Class Feature",
-    "prerequisite": "Bard (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 5th level, your Bardic Inspiration die changes to a d8."
       }
     ]
   },
@@ -5188,21 +5188,6 @@
     ]
   },
   {
-    "name": "Bear (Lv. 14 Totem Warrior)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
-    "type": "Lv. 14 Totem Warrior Subclass Feature",
-    "prerequisite": "Totem Warrior (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be frightened."
-      }
-    ]
-  },
-  {
     "name": "Bear (Lv. 3 Totem Warrior)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s2-0~sub_totem%20warrior_phb=b1",
@@ -5229,6 +5214,21 @@
         "name": "",
         "type": "text",
         "value": "You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects."
+      }
+    ]
+  },
+  {
+    "name": "Bear (Lv. 14 Totem Warrior)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
+    "type": "Lv. 14 Totem Warrior Subclass Feature",
+    "prerequisite": "Totem Warrior (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be frightened."
       }
     ]
   },
@@ -8185,21 +8185,6 @@
     ]
   },
   {
-    "name": "Channel Divinity (Lv. 18 Cleric)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#cleric_phb",
-    "type": "Lv. 18 Cleric Class Feature",
-    "prerequisite": "Cleric (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "Beginning at 18th level, you can use your Channel Divinity three times between rests."
-      }
-    ]
-  },
-  {
     "name": "Channel Divinity (Lv. 2 Cleric)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#cleric_phb",
@@ -8646,6 +8631,21 @@
         "name": "Class Features",
         "type": "text",
         "value": "Beginning at 6th level, you can use your Channel Divinity twice between rests."
+      }
+    ]
+  },
+  {
+    "name": "Channel Divinity (Lv. 18 Cleric)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#cleric_phb",
+    "type": "Lv. 18 Cleric Class Feature",
+    "prerequisite": "Cleric (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "Beginning at 18th level, you can use your Channel Divinity three times between rests."
       }
     ]
   },
@@ -14464,6 +14464,26 @@
     ]
   },
   {
+    "name": "Deft Explorer Improvement (Lv. 6 Ranger)",
+    "source": "TCE",
+    "url": "https://5e.tools/classes.html#ranger_phb",
+    "type": "Lv. 6 Ranger Class Feature",
+    "prerequisite": "Ranger (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You gain an additional benefit when you reach 6th level in this class."
+      },
+      {
+        "name": "Roving",
+        "type": "text",
+        "value": "Your walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed."
+      }
+    ]
+  },
+  {
     "name": "Deft Explorer Improvement (Lv. 10 Ranger)",
     "source": "TCE",
     "url": "https://5e.tools/classes.html#ranger_phb",
@@ -14485,26 +14505,6 @@
         "name": "",
         "type": "text",
         "value": "In addition, whenever you finish a short rest, your exhaustion level, if any, is decreased by 1."
-      }
-    ]
-  },
-  {
-    "name": "Deft Explorer Improvement (Lv. 6 Ranger)",
-    "source": "TCE",
-    "url": "https://5e.tools/classes.html#ranger_phb",
-    "type": "Lv. 6 Ranger Class Feature",
-    "prerequisite": "Ranger (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "You gain an additional benefit when you reach 6th level in this class."
-      },
-      {
-        "name": "Roving",
-        "type": "text",
-        "value": "Your walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed."
       }
     ]
   },
@@ -14569,21 +14569,6 @@
     ]
   },
   {
-    "name": "Desert (Lv. 14 Storm Herald)",
-    "source": "XGE",
-    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_storm%20herald_xge=b1",
-    "type": "Lv. 14 Storm Herald Subclass Feature",
-    "prerequisite": "Storm Herald (XGE)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level."
-      }
-    ]
-  },
-  {
     "name": "Desert (Lv. 3 Storm Herald)",
     "source": "XGE",
     "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s2-0~sub_storm%20herald_xge=b1",
@@ -14610,6 +14595,21 @@
         "name": "",
         "type": "text",
         "value": "You gain resistance to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire."
+      }
+    ]
+  },
+  {
+    "name": "Desert (Lv. 14 Storm Herald)",
+    "source": "XGE",
+    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_storm%20herald_xge=b1",
+    "type": "Lv. 14 Storm Herald Subclass Feature",
+    "prerequisite": "Storm Herald (XGE)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level."
       }
     ]
   },
@@ -14993,21 +14993,6 @@
     ]
   },
   {
-    "name": "Divine Domain feature (Lv. 17 Cleric)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#cleric_phb",
-    "type": "Lv. 17 Cleric Class Feature",
-    "prerequisite": "Cleric (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "At 17th level, you gain a feature from your Divine Domain."
-      }
-    ]
-  },
-  {
     "name": "Divine Domain feature (Lv. 2 Cleric)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#cleric_phb",
@@ -15049,6 +15034,21 @@
         "name": "",
         "type": "text",
         "value": "At 8th level, you gain a feature from your Divine Domain."
+      }
+    ]
+  },
+  {
+    "name": "Divine Domain feature (Lv. 17 Cleric)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#cleric_phb",
+    "type": "Lv. 17 Cleric Class Feature",
+    "prerequisite": "Cleric (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "At 17th level, you gain a feature from your Divine Domain."
       }
     ]
   },
@@ -16640,6 +16640,21 @@
     ]
   },
   {
+    "name": "Druid Circle feature (Lv. 6 Druid)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#druid_phb",
+    "type": "Lv. 6 Druid Class Feature",
+    "prerequisite": "Druid (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 6th level, you gain a feature granted by your Druid Circle."
+      }
+    ]
+  },
+  {
     "name": "Druid Circle feature (Lv. 10 Druid)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#druid_phb",
@@ -16666,21 +16681,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 14th level, you gain a feature granted by your Druid Circle feature."
-      }
-    ]
-  },
-  {
-    "name": "Druid Circle feature (Lv. 6 Druid)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#druid_phb",
-    "type": "Lv. 6 Druid Class Feature",
-    "prerequisite": "Druid (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 6th level, you gain a feature granted by your Druid Circle."
       }
     ]
   },
@@ -16795,21 +16795,6 @@
     ]
   },
   {
-    "name": "Eagle (Lv. 14 Totem Warrior)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
-    "type": "Lv. 14 Totem Warrior Subclass Feature",
-    "prerequisite": "Totem Warrior (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft."
-      }
-    ]
-  },
-  {
     "name": "Eagle (Lv. 3 Totem Warrior)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s2-0~sub_totem%20warrior_phb=b1",
@@ -16836,6 +16821,21 @@
         "name": "",
         "type": "text",
         "value": "You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom (*Perception*) checks."
+      }
+    ]
+  },
+  {
+    "name": "Eagle (Lv. 14 Totem Warrior)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
+    "type": "Lv. 14 Totem Warrior Subclass Feature",
+    "prerequisite": "Totem Warrior (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft."
       }
     ]
   },
@@ -17825,21 +17825,6 @@
     ]
   },
   {
-    "name": "Elk (Lv. 14 Totem Warrior)",
-    "source": "SCAG",
-    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
-    "type": "Lv. 14 Totem Warrior Subclass Feature",
-    "prerequisite": "Totem Warrior (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked prone and take bludgeoning damage equal to **1d12** + your Strength modifier."
-      }
-    ]
-  },
-  {
     "name": "Elk (Lv. 3 Totem Warrior)",
     "source": "SCAG",
     "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s2-0~sub_totem%20warrior_phb=b1",
@@ -17866,6 +17851,21 @@
         "name": "",
         "type": "text",
         "value": "Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 60 feet of you and you're not incapacitated. The elk spirit helps you roam far and fast."
+      }
+    ]
+  },
+  {
+    "name": "Elk (Lv. 14 Totem Warrior)",
+    "source": "SCAG",
+    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
+    "type": "Lv. 14 Totem Warrior Subclass Feature",
+    "prerequisite": "Totem Warrior (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked prone and take bludgeoning damage equal to **1d12** + your Strength modifier."
       }
     ]
   },
@@ -18475,21 +18475,6 @@
     ]
   },
   {
-    "name": "Evasion (Lv. 15 Hunter)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#ranger_phb,state:feature=s14-0~sub_hunter_phb=b1",
-    "type": "Lv. 15 Hunter Subclass Feature",
-    "prerequisite": "Hunter (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a __lightning bolt__ spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
-      }
-    ]
-  },
-  {
     "name": "Evasion (Lv. 7 Expert Sidekick)",
     "source": "TCE",
     "url": "https://5e.tools/classes.html#expert%20sidekick_tce",
@@ -18571,6 +18556,21 @@
         "name": "Class Features",
         "type": "text",
         "value": "You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition."
+      }
+    ]
+  },
+  {
+    "name": "Evasion (Lv. 15 Hunter)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#ranger_phb,state:feature=s14-0~sub_hunter_phb=b1",
+    "type": "Lv. 15 Hunter Subclass Feature",
+    "prerequisite": "Hunter (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a __lightning bolt__ spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
       }
     ]
   },
@@ -18994,41 +18994,6 @@
     ]
   },
   {
-    "name": "Expertise (Lv. 10 Bard)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#bard_phb",
-    "type": "Lv. 10 Bard Class Feature",
-    "prerequisite": "Bard (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "At 10th level, you can choose another two skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
-      }
-    ]
-  },
-  {
-    "name": "Expertise (Lv. 15 Expert Sidekick)",
-    "source": "TCE",
-    "url": "https://5e.tools/classes.html#expert%20sidekick_tce",
-    "type": "Lv. 15 Expert Sidekick Class Feature",
-    "prerequisite": "Expert Sidekick (TCE)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "*15th-level Expert feature*"
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Choose two of the sidekick's skill proficiencies. The sidekick's proficiency bonus is doubled for any ability check it makes that uses any of the chosen proficiencies."
-      }
-    ]
-  },
-  {
     "name": "Expertise (Lv. 2 Bard)",
     "source": "XPHB",
     "url": "https://5e.tools/classes.html#bard_xphb",
@@ -19150,6 +19115,41 @@
         "name": "Class Features",
         "type": "text",
         "value": "Choose two of your skill proficiencies with which you lack Expertise. You gain Expertise in those skills."
+      }
+    ]
+  },
+  {
+    "name": "Expertise (Lv. 10 Bard)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#bard_phb",
+    "type": "Lv. 10 Bard Class Feature",
+    "prerequisite": "Bard (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "At 10th level, you can choose another two skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+      }
+    ]
+  },
+  {
+    "name": "Expertise (Lv. 15 Expert Sidekick)",
+    "source": "TCE",
+    "url": "https://5e.tools/classes.html#expert%20sidekick_tce",
+    "type": "Lv. 15 Expert Sidekick Class Feature",
+    "prerequisite": "Expert Sidekick (TCE)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "*15th-level Expert feature*"
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Choose two of the sidekick's skill proficiencies. The sidekick's proficiency bonus is doubled for any ability check it makes that uses any of the chosen proficiencies."
       }
     ]
   },
@@ -19284,6 +19284,26 @@
     ]
   },
   {
+    "name": "Extra Elemental Discipline (Lv. 6 Four Elements)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#monk_phb,state:feature=s5-0~sub_four%20elements_phb=b1",
+    "type": "Lv. 6 Four Elements Subclass Feature",
+    "prerequisite": "Four Elements (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "You learn one additional elemental discipline of your choice. You should know 2 elemental disciplines, as well as Elemental Attunement."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline."
+      }
+    ]
+  },
+  {
     "name": "Extra Elemental Discipline (Lv. 11 Four Elements)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#monk_phb,state:feature=s10-0~sub_four%20elements_phb=b1",
@@ -19313,26 +19333,6 @@
     "description": [
       {
         "name": "Four Elements (PHB) Features",
-        "type": "text",
-        "value": "You learn one additional elemental discipline of your choice. You should know 2 elemental disciplines, as well as Elemental Attunement."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline."
-      }
-    ]
-  },
-  {
-    "name": "Extra Elemental Discipline (Lv. 6 Four Elements)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#monk_phb,state:feature=s5-0~sub_four%20elements_phb=b1",
-    "type": "Lv. 6 Four Elements Subclass Feature",
-    "prerequisite": "Four Elements (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
         "type": "text",
         "value": "You learn one additional elemental discipline of your choice. You should know 2 elemental disciplines, as well as Elemental Attunement."
       },
@@ -22265,21 +22265,6 @@
     ]
   },
   {
-    "name": "Glyph of Aegis (14th Level) (Lv. 14 Runechild)",
-    "source": "TDCSR",
-    "url": "https://5e.tools/classes.html#sorcerer_phb,state:feature=s13-0~sub_runechild_tdcsr=b1",
-    "type": "Lv. 14 Runechild Subclass Feature",
-    "prerequisite": "Runechild (TDCSR)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Runechild (TDCSR) Features",
-        "type": "text",
-        "value": "Your Glyph of Aegis die becomes a d8 at 14th level."
-      }
-    ]
-  },
-  {
     "name": "Glyph of Aegis (6th Level) (Lv. 6 Runechild)",
     "source": "TDCSR",
     "url": "https://5e.tools/classes.html#sorcerer_phb,state:feature=s5-0~sub_runechild_tdcsr=b1",
@@ -22291,6 +22276,21 @@
         "name": "Runechild (TDCSR) Features",
         "type": "text",
         "value": "When you reach 6th level, you can touch a creature as an action and expend up to 3 charged runes to transfer your protective power to it for up to 1 hour. The next time that creature takes damage within the next hour, it rolls 1d6 per charged rune spent and reduces the damage by the total. You can't transfer this power to a creature already under the effect of Glyph of Aegis."
+      }
+    ]
+  },
+  {
+    "name": "Glyph of Aegis (14th Level) (Lv. 14 Runechild)",
+    "source": "TDCSR",
+    "url": "https://5e.tools/classes.html#sorcerer_phb,state:feature=s13-0~sub_runechild_tdcsr=b1",
+    "type": "Lv. 14 Runechild Subclass Feature",
+    "prerequisite": "Runechild (TDCSR)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Runechild (TDCSR) Features",
+        "type": "text",
+        "value": "Your Glyph of Aegis die becomes a d8 at 14th level."
       }
     ]
   },
@@ -22756,26 +22756,6 @@
     ]
   },
   {
-    "name": "Guardian (Lv. 15 Armorer)",
-    "source": "TCE",
-    "url": "https://5e.tools/classes.html#artificer_tce,state:feature=s14-0~sub_armorer_tce=b1",
-    "type": "Lv. 15 Armorer Subclass Feature",
-    "prerequisite": "Armorer (TCE)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to magically force it to make a Strength saving throw against your spell save DC. On a failed save, you pull the creature up to 25 feet directly to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest."
-      }
-    ]
-  },
-  {
     "name": "Guardian (Lv. 3 Armorer)",
     "source": "EFA",
     "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
@@ -22797,6 +22777,26 @@
         "name": "",
         "type": "text",
         "value": "**Defensive Field**: While *Bloodied*, you can take a Bonus Action to gain Temporary Hit Points equal to your Artificer level. You lose these Temporary Hit Points if you doff the armor."
+      }
+    ]
+  },
+  {
+    "name": "Guardian (Lv. 15 Armorer)",
+    "source": "TCE",
+    "url": "https://5e.tools/classes.html#artificer_tce,state:feature=s14-0~sub_armorer_tce=b1",
+    "type": "Lv. 15 Armorer Subclass Feature",
+    "prerequisite": "Armorer (TCE)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to magically force it to make a Strength saving throw against your spell save DC. On a failed save, you pull the creature up to 25 feet directly to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest."
       }
     ]
   },
@@ -24804,6 +24804,46 @@
     ]
   },
   {
+    "name": "Indomitable (Lv. 9 Fighter)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#fighter_phb",
+    "type": "Lv. 9 Fighter Class Feature",
+    "prerequisite": "Fighter (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
+      }
+    ]
+  },
+  {
+    "name": "Indomitable (Lv. 9 Fighter)",
+    "source": "XPHB",
+    "url": "https://5e.tools/classes.html#fighter_xphb",
+    "type": "Lv. 9 Fighter Class Feature",
+    "prerequisite": "Fighter (XPHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "If you fail a saving throw, you can reroll it with a bonus equal to your Fighter level. You must use the new roll, and you can't use this feature again until you finish a Long Rest."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use this feature twice before a Long Rest starting at level 13 and three times before a Long Rest starting at level 17."
+      }
+    ]
+  },
+  {
     "name": "Indomitable (Lv. 11 Warrior Sidekick)",
     "source": "TCE",
     "url": "https://5e.tools/classes.html#warrior%20sidekick_tce",
@@ -24858,46 +24898,6 @@
     "description": [
       {
         "name": "",
-        "type": "text",
-        "value": "If you fail a saving throw, you can reroll it with a bonus equal to your Fighter level. You must use the new roll, and you can't use this feature again until you finish a Long Rest."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "You can use this feature twice before a Long Rest starting at level 13 and three times before a Long Rest starting at level 17."
-      }
-    ]
-  },
-  {
-    "name": "Indomitable (Lv. 9 Fighter)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#fighter_phb",
-    "type": "Lv. 9 Fighter Class Feature",
-    "prerequisite": "Fighter (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."
-      }
-    ]
-  },
-  {
-    "name": "Indomitable (Lv. 9 Fighter)",
-    "source": "XPHB",
-    "url": "https://5e.tools/classes.html#fighter_xphb",
-    "type": "Lv. 9 Fighter Class Feature",
-    "prerequisite": "Fighter (XPHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
         "type": "text",
         "value": "If you fail a saving throw, you can reroll it with a bonus equal to your Fighter level. You must use the new roll, and you can't use this feature again until you finish a Long Rest."
       },
@@ -25109,21 +25109,6 @@
     ]
   },
   {
-    "name": "Infiltrator (Lv. 15 Armorer)",
-    "source": "TCE",
-    "url": "https://5e.tools/classes.html#artificer_tce,state:feature=s14-0~sub_armorer_tce=b1",
-    "type": "Lv. 15 Armorer Subclass Feature",
-    "prerequisite": "Armorer (TCE)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Any creature that takes lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra **1d6** lightning damage."
-      }
-    ]
-  },
-  {
     "name": "Infiltrator (Lv. 3 Armorer)",
     "source": "EFA",
     "url": "https://5e.tools/classes.html#artificer_efa,state:feature=s2-0~sub_armorer_efa=b1",
@@ -25140,6 +25125,21 @@
         "name": "",
         "type": "text",
         "value": "• **Lightning Launcher**: A gemlike node appears on your armor, from which you can shoot bolts of lightning. The launcher counts as a Simple Ranged weapon with a normal range of 90 feet and a long range of 300 feet, and it deals **1d6** Lightning damage on a hit. Once on each of your turns when you hit a creature with the launcher, you can deal an extra **1d6** Lightning damage to that target.\n• **Powered Steps**: Your Speed increases by 5 feet.\n• **Dampening Field**: You have Advantage on Dexterity (*Stealth*) checks. If the armor imposes Disadvantage on such checks, the Advantage and Disadvantage cancel each other, as normal."
+      }
+    ]
+  },
+  {
+    "name": "Infiltrator (Lv. 15 Armorer)",
+    "source": "TCE",
+    "url": "https://5e.tools/classes.html#artificer_tce,state:feature=s14-0~sub_armorer_tce=b1",
+    "type": "Lv. 15 Armorer Subclass Feature",
+    "prerequisite": "Armorer (TCE)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Any creature that takes lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra **1d6** lightning damage."
       }
     ]
   },
@@ -27955,6 +27955,21 @@
     ]
   },
   {
+    "name": "Martial Archetype feature (Lv. 7 Fighter)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#fighter_phb",
+    "type": "Lv. 7 Fighter Class Feature",
+    "prerequisite": "Fighter (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 7th level, you gain a feature granted by your Martial Archetype."
+      }
+    ]
+  },
+  {
     "name": "Martial Archetype feature (Lv. 10 Fighter)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#fighter_phb",
@@ -27996,21 +28011,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 18th level, you gain a feature granted by your Martial Archetype."
-      }
-    ]
-  },
-  {
-    "name": "Martial Archetype feature (Lv. 7 Fighter)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#fighter_phb",
-    "type": "Lv. 7 Fighter Class Feature",
-    "prerequisite": "Fighter (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 7th level, you gain a feature granted by your Martial Archetype."
       }
     ]
   },
@@ -28465,6 +28465,56 @@
     ]
   },
   {
+    "name": "Metamagic (Lv. 2 Sorcerer)",
+    "source": "XPHB",
+    "url": "https://5e.tools/classes.html#sorcerer_xphb",
+    "type": "Lv. 2 Sorcerer Class Feature",
+    "prerequisite": "Sorcerer (XPHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Because your magic flows from within, you can alter your spells to suit your needs; you gain two Metamagic options of your choice from \"Metamagic Options\" later in this class's description. You use the chosen options to temporarily modify spells you cast. To use an option, you must spend the number of Sorcery Points that it costs."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use only one Metamagic option on a spell when you cast it unless otherwise noted in one of those options."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever you gain a Sorcerer level, you can replace one of your Metamagic options with one you don't know. You gain two more options at Sorcerer level 10 and two more at Sorcerer level 17."
+      }
+    ]
+  },
+  {
+    "name": "Metamagic (Lv. 3 Sorcerer)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#sorcerer_phb",
+    "type": "Lv. 3 Sorcerer Class Feature",
+    "prerequisite": "Sorcerer (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
+      },
+      {
+        "name": "",
+        "type": "text",
+        "value": "Choose **2**:\n• Careful Spell (PHB)\n• Distant Spell (PHB)\n• Empowered Spell (PHB)\n• Extended Spell (PHB)\n• Heightened Spell (PHB)\n• Quickened Spell (PHB)\n• Subtle Spell (PHB)\n• Twinned Spell (PHB)"
+      }
+    ]
+  },
+  {
     "name": "Metamagic (Lv. 10 Sorcerer)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#sorcerer_phb",
@@ -28541,56 +28591,6 @@
         "name": "",
         "type": "text",
         "value": "Whenever you gain a Sorcerer level, you can replace one of your Metamagic options with one you don't know."
-      }
-    ]
-  },
-  {
-    "name": "Metamagic (Lv. 2 Sorcerer)",
-    "source": "XPHB",
-    "url": "https://5e.tools/classes.html#sorcerer_xphb",
-    "type": "Lv. 2 Sorcerer Class Feature",
-    "prerequisite": "Sorcerer (XPHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Because your magic flows from within, you can alter your spells to suit your needs; you gain two Metamagic options of your choice from \"Metamagic Options\" later in this class's description. You use the chosen options to temporarily modify spells you cast. To use an option, you must spend the number of Sorcery Points that it costs."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "You can use only one Metamagic option on a spell when you cast it unless otherwise noted in one of those options."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Whenever you gain a Sorcerer level, you can replace one of your Metamagic options with one you don't know. You gain two more options at Sorcerer level 10 and two more at Sorcerer level 17."
-      }
-    ]
-  },
-  {
-    "name": "Metamagic (Lv. 3 Sorcerer)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#sorcerer_phb",
-    "type": "Lv. 3 Sorcerer Class Feature",
-    "prerequisite": "Sorcerer (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
-      },
-      {
-        "name": "",
-        "type": "text",
-        "value": "Choose **2**:\n• Careful Spell (PHB)\n• Distant Spell (PHB)\n• Empowered Spell (PHB)\n• Extended Spell (PHB)\n• Heightened Spell (PHB)\n• Quickened Spell (PHB)\n• Subtle Spell (PHB)\n• Twinned Spell (PHB)"
       }
     ]
   },
@@ -28970,6 +28970,21 @@
     ]
   },
   {
+    "name": "Monastic Tradition feature (Lv. 6 Monk)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#monk_phb",
+    "type": "Lv. 6 Monk Class Feature",
+    "prerequisite": "Monk (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "At 6th level, you gain one feature granted by your Monastic Tradition."
+      }
+    ]
+  },
+  {
     "name": "Monastic Tradition feature (Lv. 11 Monk)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#monk_phb",
@@ -28996,21 +29011,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 17th level, you gain one feature granted by your Monastic Tradition."
-      }
-    ]
-  },
-  {
-    "name": "Monastic Tradition feature (Lv. 6 Monk)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#monk_phb",
-    "type": "Lv. 6 Monk Class Feature",
-    "prerequisite": "Monk (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "At 6th level, you gain one feature granted by your Monastic Tradition."
       }
     ]
   },
@@ -29604,21 +29604,6 @@
     ]
   },
   {
-    "name": "Mystic Order feature (Lv. 14 Mystic)",
-    "source": "UATheMysticClass",
-    "url": "https://5e.tools/classes.html#mystic_uathemysticclass",
-    "type": "Lv. 14 Mystic Class Feature",
-    "prerequisite": "Mystic (UATHEMYSTICCLASS)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 14th level, you gain another feature from your Mystic Order."
-      }
-    ]
-  },
-  {
     "name": "Mystic Order feature (Lv. 3 Mystic)",
     "source": "UATheMysticClass",
     "url": "https://5e.tools/classes.html#mystic_uathemysticclass",
@@ -29645,6 +29630,21 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 6th level, you gain another feature from your Mystic Order."
+      }
+    ]
+  },
+  {
+    "name": "Mystic Order feature (Lv. 14 Mystic)",
+    "source": "UATheMysticClass",
+    "url": "https://5e.tools/classes.html#mystic_uathemysticclass",
+    "type": "Lv. 14 Mystic Class Feature",
+    "prerequisite": "Mystic (UATHEMYSTICCLASS)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 14th level, you gain another feature from your Mystic Order."
       }
     ]
   },
@@ -32841,6 +32841,21 @@
     ]
   },
   {
+    "name": "Otherworldly Patron feature (Lv. 6 Warlock)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#warlock_phb",
+    "type": "Lv. 6 Warlock Class Feature",
+    "prerequisite": "Warlock (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 6th level, you gain a feature granted by your Otherworldly Patron."
+      }
+    ]
+  },
+  {
     "name": "Otherworldly Patron feature (Lv. 10 Warlock)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#warlock_phb",
@@ -32867,21 +32882,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 14th level, you gain a feature granted by your Otherworldly Patron."
-      }
-    ]
-  },
-  {
-    "name": "Otherworldly Patron feature (Lv. 6 Warlock)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#warlock_phb",
-    "type": "Lv. 6 Warlock Class Feature",
-    "prerequisite": "Warlock (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 6th level, you gain a feature granted by your Otherworldly Patron."
       }
     ]
   },
@@ -33161,6 +33161,21 @@
     ]
   },
   {
+    "name": "Path Feature (Lv. 6 Barbarian)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#barbarian_phb",
+    "type": "Lv. 6 Barbarian Class Feature",
+    "prerequisite": "Barbarian (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 6th level, you gain a feature from your Primal Path."
+      }
+    ]
+  },
+  {
     "name": "Path feature (Lv. 10 Barbarian)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#barbarian_phb",
@@ -33187,21 +33202,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 14th level, you gain a feature from your Primal Path."
-      }
-    ]
-  },
-  {
-    "name": "Path Feature (Lv. 6 Barbarian)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#barbarian_phb",
-    "type": "Lv. 6 Barbarian Class Feature",
-    "prerequisite": "Barbarian (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 6th level, you gain a feature from your Primal Path."
       }
     ]
   },
@@ -36890,6 +36890,21 @@
     ]
   },
   {
+    "name": "Ranger Archetype feature (Lv. 7 Ranger)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#ranger_phb",
+    "type": "Lv. 7 Ranger Class Feature",
+    "prerequisite": "Ranger (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 7th level, you gain a feature granted to you by your Ranger Archetype."
+      }
+    ]
+  },
+  {
     "name": "Ranger Archetype feature (Lv. 11 Ranger)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#ranger_phb",
@@ -36916,21 +36931,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 15th level, you gain a feature granted to you by your Ranger Archetype."
-      }
-    ]
-  },
-  {
-    "name": "Ranger Archetype feature (Lv. 7 Ranger)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#ranger_phb",
-    "type": "Lv. 7 Ranger Class Feature",
-    "prerequisite": "Ranger (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 7th level, you gain a feature granted to you by your Ranger Archetype."
       }
     ]
   },
@@ -37230,6 +37230,21 @@
     ]
   },
   {
+    "name": "Reliable Talent (Lv. 7 Rogue)",
+    "source": "XPHB",
+    "url": "https://5e.tools/classes.html#rogue_xphb",
+    "type": "Lv. 7 Rogue Class Feature",
+    "prerequisite": "Rogue (XPHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10."
+      }
+    ]
+  },
+  {
     "name": "Reliable Talent (Lv. 11 Rogue)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#rogue_phb",
@@ -37261,21 +37276,6 @@
         "name": "",
         "type": "text",
         "value": "The sidekick has refined its skills to an exceptional degree. Whenever the sidekick makes an ability check that includes its whole proficiency bonus, it can treat a d20 roll of 9 or lower as a 10."
-      }
-    ]
-  },
-  {
-    "name": "Reliable Talent (Lv. 7 Rogue)",
-    "source": "XPHB",
-    "url": "https://5e.tools/classes.html#rogue_xphb",
-    "type": "Lv. 7 Rogue Class Feature",
-    "prerequisite": "Rogue (XPHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10."
       }
     ]
   },
@@ -38021,6 +38021,21 @@
     ]
   },
   {
+    "name": "Roguish Archetype feature (Lv. 9 Rogue)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#rogue_phb",
+    "type": "Lv. 9 Rogue Class Feature",
+    "prerequisite": "Rogue (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 9th level, you gain a feature granted by your Roguish Archetype."
+      }
+    ]
+  },
+  {
     "name": "Roguish Archetype feature (Lv. 13 Rogue)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#rogue_phb",
@@ -38047,21 +38062,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 17th level, you gain a feature granted by your Roguish Archetype."
-      }
-    ]
-  },
-  {
-    "name": "Roguish Archetype feature (Lv. 9 Rogue)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#rogue_phb",
-    "type": "Lv. 9 Rogue Class Feature",
-    "prerequisite": "Rogue (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 9th level, you gain a feature granted by your Roguish Archetype."
       }
     ]
   },
@@ -38540,6 +38540,21 @@
     ]
   },
   {
+    "name": "Sacred Oath feature (Lv. 7 Paladin)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#paladin_phb",
+    "type": "Lv. 7 Paladin Class Feature",
+    "prerequisite": "Paladin (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 7th level, you gain a feature granted to you by your Sacred Oath."
+      }
+    ]
+  },
+  {
     "name": "Sacred Oath feature (Lv. 15 Paladin)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#paladin_phb",
@@ -38566,21 +38581,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 20th level, you gain a feature granted to you by your Sacred Oath."
-      }
-    ]
-  },
-  {
-    "name": "Sacred Oath feature (Lv. 7 Paladin)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#paladin_phb",
-    "type": "Lv. 7 Paladin Class Feature",
-    "prerequisite": "Paladin (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 7th level, you gain a feature granted to you by your Sacred Oath."
       }
     ]
   },
@@ -39144,21 +39144,6 @@
     ]
   },
   {
-    "name": "Sea (Lv. 14 Storm Herald)",
-    "source": "XGE",
-    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_storm%20herald_xge=b1",
-    "type": "Lv. 14 Storm Herald Subclass Feature",
-    "prerequisite": "Storm Herald (XGE)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked prone, as if struck by a wave."
-      }
-    ]
-  },
-  {
     "name": "Sea (Lv. 3 Storm Herald)",
     "source": "XGE",
     "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s2-0~sub_storm%20herald_xge=b1",
@@ -39185,6 +39170,21 @@
         "name": "",
         "type": "text",
         "value": "You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet."
+      }
+    ]
+  },
+  {
+    "name": "Sea (Lv. 14 Storm Herald)",
+    "source": "XGE",
+    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_storm%20herald_xge=b1",
+    "type": "Lv. 14 Storm Herald Subclass Feature",
+    "prerequisite": "Storm Herald (XGE)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked prone, as if struck by a wave."
       }
     ]
   },
@@ -40289,36 +40289,6 @@
     ]
   },
   {
-    "name": "Song of Rest (d10) (Lv. 13 Bard)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#bard_phb",
-    "type": "Lv. 13 Bard Class Feature",
-    "prerequisite": "Bard (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 13th level, the extra hit points gained from Song of Rest increases to 1d10."
-      }
-    ]
-  },
-  {
-    "name": "Song of Rest (d12) (Lv. 17 Bard)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#bard_phb",
-    "type": "Lv. 17 Bard Class Feature",
-    "prerequisite": "Bard (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "At 17th level, the extra hit points gained from Song of Rest increases to 1d12."
-      }
-    ]
-  },
-  {
     "name": "Song of Rest (d6) (Lv. 2 Bard)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#bard_phb",
@@ -40350,6 +40320,36 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 9th level, the extra hit points gained from Song of Rest increases to 1d8."
+      }
+    ]
+  },
+  {
+    "name": "Song of Rest (d10) (Lv. 13 Bard)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#bard_phb",
+    "type": "Lv. 13 Bard Class Feature",
+    "prerequisite": "Bard (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 13th level, the extra hit points gained from Song of Rest increases to 1d10."
+      }
+    ]
+  },
+  {
+    "name": "Song of Rest (d12) (Lv. 17 Bard)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#bard_phb",
+    "type": "Lv. 17 Bard Class Feature",
+    "prerequisite": "Bard (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 17th level, the extra hit points gained from Song of Rest increases to 1d12."
       }
     ]
   },
@@ -40419,6 +40419,21 @@
     ]
   },
   {
+    "name": "Sorcerous Origin feature (Lv. 6 Sorcerer)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#sorcerer_phb",
+    "type": "Lv. 6 Sorcerer Class Feature",
+    "prerequisite": "Sorcerer (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "At 6th level, you gain a feature granted by your Sorcerous Origin."
+      }
+    ]
+  },
+  {
     "name": "Sorcerous Origin feature (Lv. 14 Sorcerer)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#sorcerer_phb",
@@ -40449,17 +40464,17 @@
     ]
   },
   {
-    "name": "Sorcerous Origin feature (Lv. 6 Sorcerer)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#sorcerer_phb",
-    "type": "Lv. 6 Sorcerer Class Feature",
-    "prerequisite": "Sorcerer (PHB)",
+    "name": "Sorcerous Restoration (Lv. 5 Sorcerer)",
+    "source": "XPHB",
+    "url": "https://5e.tools/classes.html#sorcerer_xphb",
+    "type": "Lv. 5 Sorcerer Class Feature",
+    "prerequisite": "Sorcerer (XPHB)",
     "abilityIncrease": null,
     "description": [
       {
         "name": "Class Features",
         "type": "text",
-        "value": "At 6th level, you gain a feature granted by your Sorcerous Origin."
+        "value": "When you finish a Short Rest, you can regain expended Sorcery Points, but no more than a number equal to half your Sorcerer level (round down). Once you use this feature, you can't do so again until you finish a Long Rest."
       }
     ]
   },
@@ -40475,21 +40490,6 @@
         "name": "Class Features",
         "type": "text",
         "value": "At 20th level, you regain 4 expended sorcery points whenever you finish a short rest."
-      }
-    ]
-  },
-  {
-    "name": "Sorcerous Restoration (Lv. 5 Sorcerer)",
-    "source": "XPHB",
-    "url": "https://5e.tools/classes.html#sorcerer_xphb",
-    "type": "Lv. 5 Sorcerer Class Feature",
-    "prerequisite": "Sorcerer (XPHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "When you finish a Short Rest, you can regain expended Sorcery Points, but no more than a number equal to half your Sorcerer level (round down). Once you use this feature, you can't do so again until you finish a Long Rest."
       }
     ]
   },
@@ -41028,6 +41028,21 @@
     ]
   },
   {
+    "name": "Spell Breaker (Lv. 6 Arcana)",
+    "source": "SCAG",
+    "url": "https://5e.tools/classes.html#cleric_phb,state:feature=s5-0~sub_arcana_scag=b1",
+    "type": "Lv. 6 Arcana Subclass Feature",
+    "prerequisite": "Arcana (SCAG)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Arcana (SCAG) Features",
+        "type": "text",
+        "value": "Starting at 6th level, when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell."
+      }
+    ]
+  },
+  {
     "name": "Spell Breaker (Lv. 10 Abjurer)",
     "source": "XPHB",
     "url": "https://5e.tools/classes.html#wizard_xphb,state:feature=s9-0~sub_abjurer_xphb=b1",
@@ -41044,21 +41059,6 @@
         "name": "",
         "type": "text",
         "value": "When you cast either spell with a spell slot, that slot isn't expended if the spell fails to stop a spell."
-      }
-    ]
-  },
-  {
-    "name": "Spell Breaker (Lv. 6 Arcana)",
-    "source": "SCAG",
-    "url": "https://5e.tools/classes.html#cleric_phb,state:feature=s5-0~sub_arcana_scag=b1",
-    "type": "Lv. 6 Arcana Subclass Feature",
-    "prerequisite": "Arcana (SCAG)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Arcana (SCAG) Features",
-        "type": "text",
-        "value": "Starting at 6th level, when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell."
       }
     ]
   },
@@ -43992,21 +43992,6 @@
     ]
   },
   {
-    "name": "Subclass feature (Lv. 15 Artificer)",
-    "source": "EFA",
-    "url": "https://5e.tools/classes.html#artificer_efa",
-    "type": "Lv. 15 Artificer Class Feature",
-    "prerequisite": "Artificer (EFA)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "Class Features",
-        "type": "text",
-        "value": "You gain a feature from your Artificer Subclass."
-      }
-    ]
-  },
-  {
     "name": "Subclass feature (Lv. 5 Artificer)",
     "source": "EFA",
     "url": "https://5e.tools/classes.html#artificer_efa",
@@ -44026,6 +44011,21 @@
     "source": "EFA",
     "url": "https://5e.tools/classes.html#artificer_efa",
     "type": "Lv. 9 Artificer Class Feature",
+    "prerequisite": "Artificer (EFA)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "Class Features",
+        "type": "text",
+        "value": "You gain a feature from your Artificer Subclass."
+      }
+    ]
+  },
+  {
+    "name": "Subclass feature (Lv. 15 Artificer)",
+    "source": "EFA",
+    "url": "https://5e.tools/classes.html#artificer_efa",
+    "type": "Lv. 15 Artificer Class Feature",
     "prerequisite": "Artificer (EFA)",
     "abilityIncrease": null,
     "description": [
@@ -46851,21 +46851,6 @@
     ]
   },
   {
-    "name": "Tiger (Lv. 14 Totem Warrior)",
-    "source": "SCAG",
-    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
-    "type": "Lv. 14 Totem Warrior Subclass Feature",
-    "prerequisite": "Totem Warrior (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."
-      }
-    ]
-  },
-  {
     "name": "Tiger (Lv. 3 Totem Warrior)",
     "source": "SCAG",
     "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s2-0~sub_totem%20warrior_phb=b1",
@@ -46892,6 +46877,21 @@
         "name": "",
         "type": "text",
         "value": "You gain proficiency in two skills from the following list: *Athletics*, *Acrobatics*, *Stealth*, and *Survival*. The cat spirit hones your survival instincts."
+      }
+    ]
+  },
+  {
+    "name": "Tiger (Lv. 14 Totem Warrior)",
+    "source": "SCAG",
+    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
+    "type": "Lv. 14 Totem Warrior Subclass Feature",
+    "prerequisite": "Totem Warrior (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."
       }
     ]
   },
@@ -47742,21 +47742,6 @@
     ]
   },
   {
-    "name": "Tundra (Lv. 14 Storm Herald)",
-    "source": "XGE",
-    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_storm%20herald_xge=b1",
-    "type": "Lv. 14 Storm Herald Subclass Feature",
-    "prerequisite": "Storm Herald (XGE)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it."
-      }
-    ]
-  },
-  {
     "name": "Tundra (Lv. 3 Storm Herald)",
     "source": "XGE",
     "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s2-0~sub_storm%20herald_xge=b1",
@@ -47783,6 +47768,21 @@
         "name": "",
         "type": "text",
         "value": "You gain resistance to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
+      }
+    ]
+  },
+  {
+    "name": "Tundra (Lv. 14 Storm Herald)",
+    "source": "XGE",
+    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_storm%20herald_xge=b1",
+    "type": "Lv. 14 Storm Herald Subclass Feature",
+    "prerequisite": "Storm Herald (XGE)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it."
       }
     ]
   },
@@ -48325,21 +48325,6 @@
     ]
   },
   {
-    "name": "Uncanny Dodge (Lv. 15 Hunter)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#ranger_phb,state:feature=s14-0~sub_hunter_phb=b1",
-    "type": "Lv. 15 Hunter Subclass Feature",
-    "prerequisite": "Hunter (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
-      }
-    ]
-  },
-  {
     "name": "Uncanny Dodge (Lv. 5 Rogue)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#rogue_phb",
@@ -48366,6 +48351,21 @@
         "name": "",
         "type": "text",
         "value": "When an attacker that you can see hits you with an attack roll, you can take a Reaction to halve the attack's damage against you (round down)."
+      }
+    ]
+  },
+  {
+    "name": "Uncanny Dodge (Lv. 15 Hunter)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#ranger_phb,state:feature=s14-0~sub_hunter_phb=b1",
+    "type": "Lv. 15 Hunter Subclass Feature",
+    "prerequisite": "Hunter (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
       }
     ]
   },
@@ -52018,21 +52018,6 @@
     ]
   },
   {
-    "name": "Wolf (Lv. 14 Totem Warrior)",
-    "source": "PHB",
-    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
-    "type": "Lv. 14 Totem Warrior Subclass Feature",
-    "prerequisite": "Totem Warrior (PHB)",
-    "abilityIncrease": null,
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "While you're raging, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with melee weapon attack."
-      }
-    ]
-  },
-  {
     "name": "Wolf (Lv. 3 Totem Warrior)",
     "source": "PHB",
     "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s2-0~sub_totem%20warrior_phb=b1",
@@ -52059,6 +52044,21 @@
         "name": "",
         "type": "text",
         "value": "You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace."
+      }
+    ]
+  },
+  {
+    "name": "Wolf (Lv. 14 Totem Warrior)",
+    "source": "PHB",
+    "url": "https://5e.tools/classes.html#barbarian_phb,state:feature=s13-0~sub_totem%20warrior_phb=b1",
+    "type": "Lv. 14 Totem Warrior Subclass Feature",
+    "prerequisite": "Totem Warrior (PHB)",
+    "abilityIncrease": null,
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "While you're raging, you can use a bonus action on your turn to knock a Large or smaller creature prone when you hit it with melee weapon attack."
       }
     ]
   },

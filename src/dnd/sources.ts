@@ -1,4 +1,5 @@
-import { Databank, getKey } from '../data';
+import { Databank } from '../data';
+import { keyedSort } from '../util';
 
 interface Source {
     id: string;
@@ -11,12 +12,14 @@ interface Source {
 
 export function getSources(data: Databank): Source[] {
     const books = [...data.book, ...data.adventure];
-    return books.map((book: any) => ({
+    const result = books.map((book: any) => ({
         id: book.id,
         name: book.name,
         source: book.source || book.id,
         published: book.published,
         author: book.author ?? null,
         group: book.group ?? null,
-    })).sort((a, b) => getKey(a.name, a.source).localeCompare(getKey(b.name, b.source)));
+    }));
+
+    return keyedSort(result);
 }

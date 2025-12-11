@@ -12,7 +12,7 @@ import {
     title,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
-import { BulletPoint, joinStringsWithAnd, joinStringsWithOr } from '../util';
+import { BulletPoint, joinStringsWithAnd, joinStringsWithOr, keyedSort } from '../util';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ClassFeature[];
@@ -892,7 +892,5 @@ export function getClassesAndClassFeats(databank: Databank): {
         classes.push(characterClass.toJSON());
     }
 
-    classes = classes.sort((a, b) => getKey(a.name, a.source).localeCompare(getKey(b.name, b.source)));
-    classFeats = classFeats.sort((a, b) => getKey(a.name, a.source).localeCompare(getKey(b.name, b.source)));
-    return { classes, classFeats };
+    return { classes: keyedSort(classes), classFeats: keyedSort(classFeats) };
 }
