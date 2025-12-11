@@ -5,15 +5,13 @@ import kleur = require('kleur');
 
 export const BulletPoint = '\u2022'; // U+2022 •
 
-export function keyedSort(entries: any[]): any[] {
-    // Sorts data to ensure it's the same between different operating systems.
-    return entries.sort((a, b) => {
-        const keyA = getKey(a.name, a.source);
-        const keyB = getKey(b.name, b.source);
-        return keyA.localeCompare(keyB, 'en', {
-            sensitivity: 'base',
-            numeric: true,
-        });
+export function entrySort(a: any, b: any): number {
+    // Sort entries list by keys, primarily used to patch OS-discrepancies.
+    const keyA = getKey(a.name, a.source);
+    const keyB = getKey(b.name, b.source);
+    return keyA.localeCompare(keyB, 'en', {
+        sensitivity: 'base',
+        numeric: true,
     });
 }
 

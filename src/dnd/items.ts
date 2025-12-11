@@ -11,7 +11,7 @@ import {
 } from '../parser';
 import { DamageTypes } from '../5etools-conversion/data';
 import { getItemsUrl } from '../urls';
-import { joinStringsWithOr, keyedSort } from '../util';
+import { joinStringsWithOr, entrySort } from '../util';
 import { Databank, getKey } from '../data';
 
 interface Item {
@@ -372,7 +372,8 @@ export function getItems(databank: Databank): any[] {
         raw.push(resolveItemEntry(handleCopy(item, items), databank.itemEntry));
     }
 
-    return keyedSort(raw.map((item) => parseItem(item, databank)));
+    const data = raw.map((item) => parseItem(item, databank));
+    return data.sort(entrySort);
 }
 
 export function getItemVariants(databank: Databank): any[] {
@@ -389,5 +390,5 @@ export function getItemVariants(databank: Databank): any[] {
         seenVariants.add(key);
     }
     const data = raw.map((variant) => parseItem(variant, databank));
-    return keyedSort(data);
+    return data.sort(entrySort);
 }

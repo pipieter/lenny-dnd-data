@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { keyedSort } from '../util';
+import { entrySort } from '../util';
 
 interface Source {
     id: string;
@@ -21,5 +21,5 @@ export function getSources(data: Databank): Source[] {
         group: book.group ?? null,
     }));
 
-    return keyedSort(result);
+    return result.sort(entrySort);
 }

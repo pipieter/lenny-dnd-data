@@ -12,7 +12,7 @@ import {
     title,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
-import { BulletPoint, joinStringsWithAnd, joinStringsWithOr, keyedSort } from '../util';
+import { BulletPoint, joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ClassFeature[];
@@ -853,11 +853,11 @@ export function getClassesAndClassFeats(databank: Databank): {
     const classes: any[] = [];
     const classFeats: ParsedFeat[] = [];
 
-    for (const cls of keyedSort(databank.class)) {
+    for (const cls of databank.class.sort(entrySort)) {
         const data = getBundledClassData(databank, cls);
 
         const features: ClassFeatureDictionary = {};
-        for (const featureData of keyedSort(data.features)) {
+        for (const featureData of data.features.sort(entrySort)) {
             const feature = new ClassFeature(featureData);
             const key = feature.classKey;
             if (!features[key]) features[key] = [];
@@ -867,14 +867,14 @@ export function getClassesAndClassFeats(databank: Databank): {
         const subclasses: SubclassDictionary = {};
         const subclassFeatures: ClassFeatureDictionary = {};
         if (data.subclassFeatures && data.subclasses) {
-            for (const featureData of keyedSort(data.subclassFeatures)) {
+            for (const featureData of data.subclassFeatures.sort(entrySort)) {
                 const feature = new ClassFeature(featureData);
                 const key = feature.classKey;
                 if (!subclassFeatures[key]) subclassFeatures[key] = [];
                 subclassFeatures[key].push(feature);
             }
 
-            for (const subclassData of keyedSort(data.subclasses)) {
+            for (const subclassData of data.subclasses.sort(entrySort)) {
                 const subclass = new CharacterSubclass(subclassData, subclassFeatures);
                 const key = subclass.key;
                 if (!subclasses[key]) subclasses[key] = subclass;
@@ -892,5 +892,5 @@ export function getClassesAndClassFeats(databank: Databank): {
         classes.push(characterClass.toJSON());
     }
 
-    return { classes: keyedSort(classes), classFeats: keyedSort(classFeats) };
+    return { classes: classes.sort(entrySort), classFeats: classFeats.sort(entrySort) };
 }
