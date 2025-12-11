@@ -850,8 +850,8 @@ export function getClassesAndClassFeats(databank: Databank): {
     classes: any[];
     classFeats: ParsedFeat[];
 } {
-    let classes: any[] = [];
-    let classFeats: ParsedFeat[] = [];
+    const classes: any[] = [];
+    const classFeats: ParsedFeat[] = [];
 
     for (const cls of databank.class) {
         const data = getBundledClassData(databank, cls);
