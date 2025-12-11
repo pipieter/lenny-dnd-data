@@ -205,16 +205,6 @@
         {
           "name": "",
           "type": "text",
-          "value": "You have a collection of powerful reagents that you use to brew potions and empower your Bombs. You have 2 Reagents. You regain one expended Reagent when you finish a Short Rest, and you regain all expended Reagents when you finish a Long Rest. You gain additional Reagents when you reach certain Alchemist levels, as shown in the Reagents column of the Alchemist Features table."
-        },
-        {
-          "name": "Empowered Bomb",
-          "type": "text",
-          "value": "When you deal damage with a Bomb, you can expend a number of Reagents up to your Proficiency Bonus and add 1d10 to the Bomb's damage roll for each expended Reagents. Additionally, if you use the Bomb's __Explode__ property, you can increase the radius of the explosion by 5 feet. You can do so once for each expended Reagents. For example, if you expend 2 Reagents, you can choose for the Sphere to be a 5, 10 or 15-foot radius."
-        },
-        {
-          "name": "",
-          "type": "text",
           "value": "You can spend 10 minutes and expend any number of Reagents to brew potions, which can be done during a Short Rest. You can have a total number of potions at one time up to your Intelligence modifier (minimum of 1). These potions retain potency until you finish a Long Rest, after which they become inert."
         },
         {
@@ -335,6 +325,16 @@
               ]
             ]
           }
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You have a collection of powerful reagents that you use to brew potions and empower your Bombs. You have 2 Reagents. You regain one expended Reagent when you finish a Short Rest, and you regain all expended Reagents when you finish a Long Rest. You gain additional Reagents when you reach certain Alchemist levels, as shown in the Reagents column of the Alchemist Features table."
+        },
+        {
+          "name": "Empowered Bomb",
+          "type": "text",
+          "value": "When you deal damage with a Bomb, you can expend a number of Reagents up to your Proficiency Bonus and add 1d10 to the Bomb's damage roll for each expended Reagents. Additionally, if you use the Bomb's __Explode__ property, you can increase the radius of the explosion by 5 feet. You can do so once for each expended Reagents. For example, if you expend 2 Reagents, you can choose for the Sphere to be a 5, 10 or 15-foot radius."
         }
       ],
       "2": [
@@ -507,6 +507,16 @@
         {
           "name": "Class Features",
           "type": "text",
+          "value": "You can utilize the most devastating Bomb Formula imaginable. By replacing your Bomb's explosive contents with your Philosopher's Stone, you can change it into a Nuclear Bomb. You must use the Bomb's Explosive property. This Bomb deals **10d10 + 100** Force damage instead of its normal Fire damage, and its explosion is a Sphere with a radius of 1 mile. A creature within 60 feet of the center of the Sphere gains no benefit from Evasion or similar features."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "This Bomb completely destroys your Philosopher's Stone."
+        },
+        {
+          "name": "",
+          "type": "text",
           "value": "You gain the crowning achievement of alchemy: a Philosopher's Stone, a dynamo of alchemical energy in a fist-sized, glowing jewel."
         },
         {
@@ -533,16 +543,6 @@
           "name": "Longevity",
           "type": "text",
           "value": "For every ten years that pass, your body ages only one year."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You can utilize the most devastating Bomb Formula imaginable. By replacing your Bomb's explosive contents with your Philosopher's Stone, you can change it into a Nuclear Bomb. You must use the Bomb's Explosive property. This Bomb deals **10d10 + 100** Force damage instead of its normal Fire damage, and its explosion is a Sphere with a radius of 1 mile. A creature within 60 feet of the center of the Sphere gains no benefit from Evasion or similar features."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "This Bomb completely destroys your Philosopher's Stone."
         }
       ]
     },
@@ -15945,6 +15945,16 @@
         {
           "name": "Class Features",
           "type": "text",
+          "value": "You can draw upon an inner nexus of necromantic power. You have a pool of Charnel Touch points equal to 5 x your Necromancer level that replenishes when you finish a Long Rest."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "As a Magic action, you can channel this negative energy through your touch. Choose a number of Charnel Touch points to expend, up to a maximum of 5 x your Proficiency Bonus, and make a melee spell attack against one creature within reach. On a hit, the target takes Necrotic damage equal to the number of points expended. This damage is doubled without expending additional points if the attack roll scores a Critical Hit. If the spell attack misses, the Charnel Touch points aren't expended."
+        },
+        {
+          "name": "",
+          "type": "text",
           "value": "Though it steadily burns away your very soul, you can cast necromantic spells."
         },
         {
@@ -15991,21 +16001,21 @@
           "name": "Spellcasting Focus",
           "type": "text",
           "value": "You can use an Arcane Focus as a Spellcasting Focus for your Necromancer spells."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You can draw upon an inner nexus of necromantic power. You have a pool of Charnel Touch points equal to 5 x your Necromancer level that replenishes when you finish a Long Rest."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "As a Magic action, you can channel this negative energy through your touch. Choose a number of Charnel Touch points to expend, up to a maximum of 5 x your Proficiency Bonus, and make a melee spell attack against one creature within reach. On a hit, the target takes Necrotic damage equal to the number of points expended. This damage is doubled without expending additional points if the attack roll scores a Critical Hit. If the spell attack misses, the Charnel Touch points aren't expended."
         }
       ],
       "2": [
         {
           "name": "Class Features",
+          "type": "text",
+          "value": "You gain an extradimensional space that can hold up to 12 Medium or smaller corpses, piles of bones, or Undead creatures. The extradimensional space is linked to an item of your choice, such as a bag, a cloak, or a backpack. As a Magic action, you can use the linked item to place a corpse, pile of bones, or willing Undead creature in the extradimensional space, or to dump out contents of your choice from the extradimensional space. Thralls stored in your Dead Space count toward the total number of thralls under your control. The contents land in spaces of your choice within 5 feet of you, or as near to you as possible if those spaces are occupied."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You can link any item you can carry to the extradimensional space by performing a ritual over the course of 1 hour which can be done during a Short Rest. The previous item linked to the space becomes disconnected when you link a new one."
+        },
+        {
+          "name": "",
           "type": "text",
           "value": "Unlike other spellcasters, you animate Undead creatures with a portion of your own life force, ensuring obedience."
         },
@@ -16131,28 +16141,18 @@
           "name": "",
           "type": "text",
           "value": "As always, you can't reanimate Undead that have been reduced to 0 Hit Points. Your Animate Thralls ritual, the __Animate Dead__ spell, and similar magic only affects Humanoid corpses, whereas your thralls are Undead creatures."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You gain an extradimensional space that can hold up to 12 Medium or smaller corpses, piles of bones, or Undead creatures. The extradimensional space is linked to an item of your choice, such as a bag, a cloak, or a backpack. As a Magic action, you can use the linked item to place a corpse, pile of bones, or willing Undead creature in the extradimensional space, or to dump out contents of your choice from the extradimensional space. Thralls stored in your Dead Space count toward the total number of thralls under your control. The contents land in spaces of your choice within 5 feet of you, or as near to you as possible if those spaces are occupied."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You can link any item you can carry to the extradimensional space by performing a ritual over the course of 1 hour which can be done during a Short Rest. The previous item linked to the space becomes disconnected when you link a new one."
         }
       ],
       "3": [
         {
           "name": "Class Features",
           "type": "text",
-          "value": "You gain a Necromancer subclass of your choice. A subclass is a specialization that grants you features at certain Necromancer levels. For the rest of your career, you gain each of your subclass's features that are of your Necromancer level or lower."
+          "value": "As a Bonus Action, you can expend a spell slot to replenish your Charnel Touch pool. The pool regains points equal to your Intelligence modifier plus 1d8 for each level of the spell slot expended, up to a maximum of your pool's total."
         },
         {
           "name": "",
           "type": "text",
-          "value": "As a Bonus Action, you can expend a spell slot to replenish your Charnel Touch pool. The pool regains points equal to your Intelligence modifier plus 1d8 for each level of the spell slot expended, up to a maximum of your pool's total."
+          "value": "You gain a Necromancer subclass of your choice. A subclass is a specialization that grants you features at certain Necromancer levels. For the rest of your career, you gain each of your subclass's features that are of your Necromancer level or lower."
         }
       ],
       "4": [
@@ -18239,6 +18239,11 @@
         {
           "name": "Class Features",
           "type": "text",
+          "value": "The pain you endure grants you remarkable bursts of strength. When taking the Attack Action, you can expend two Grit to make an additional attack as part of that same Action. At 9th level you can expend four Grit to make two additional attacks. At 17th level you can expend six Grit Points to make three additional attacks."
+        },
+        {
+          "name": "",
+          "type": "text",
           "value": "Your presence alone can be unsettling to others. Whenever a creature moves within 5 feet of you or starts its turn there, you can force that creature to make a Charisma Saving Throw against your Daunting Presence Save DC. On a fail the creature becomes fixated on you until the end of its next turn. A creature that is fixated on you cannot willingly move away from you and you gain a Grit whenever a creature that is fixated on you damages a creature other than you."
         },
         {
@@ -18250,23 +18255,18 @@
           "name": "",
           "type": "text",
           "value": "• *Daunting Presence Save DC*: Charisma modifier + Proficiency Bonus"
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "The pain you endure grants you remarkable bursts of strength. When taking the Attack Action, you can expend two Grit to make an additional attack as part of that same Action. At 9th level you can expend four Grit to make two additional attacks. At 17th level you can expend six Grit Points to make three additional attacks."
         }
       ],
       "3": [
         {
           "name": "Class Features",
           "type": "text",
-          "value": "You gain a Ruffian subclass of your choice. A subclass is a specialization that grants you features at certain Ruffian levels. For the rest of your career, you gain each of your subclass' features that are of your Ruffian level or lower."
+          "value": "Your reputation and your physique encourage other creatures to cooperate with you more readily. You gain Advantage on all Charisma based Ability Checks you make against a creature that is fixated on you."
         },
         {
           "name": "",
           "type": "text",
-          "value": "Your reputation and your physique encourage other creatures to cooperate with you more readily. You gain Advantage on all Charisma based Ability Checks you make against a creature that is fixated on you."
+          "value": "You gain a Ruffian subclass of your choice. A subclass is a specialization that grants you features at certain Ruffian levels. For the rest of your career, you gain each of your subclass' features that are of your Ruffian level or lower."
         }
       ],
       "4": [
@@ -18280,22 +18280,22 @@
         {
           "name": "Class Features",
           "type": "text",
-          "value": "You can abuse the fact that a foe is lowering their defense to attack. When you are hit by an Attack Roll and take damage from it, you can use your Reaction to make an Opportunity Attack against the creature that attacked you."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You can use your Barrage feature on this attack."
-        },
-        {
-          "name": "",
-          "type": "text",
           "value": "You are always prepared for a brawl. When you roll initiative, you gain Grit until you have one third of your maximum, rounded up."
         },
         {
           "name": "",
           "type": "text",
           "value": "Once you use this feature, you cannot use it again until you complete a Short or Long Rest."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You can abuse the fact that a foe is lowering their defense to attack. When you are hit by an Attack Roll and take damage from it, you can use your Reaction to make an Opportunity Attack against the creature that attacked you."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You can use your Barrage feature on this attack."
         }
       ],
       "6": [
@@ -18309,17 +18309,17 @@
         {
           "name": "Class Features",
           "type": "text",
+          "value": "You are quick to adapt to physically challenging tasks. When you fail a Strength or Dexterity based Ability Check, you can expend one Grit to reroll the check with a bonus equal to your Constitution modifier."
+        },
+        {
+          "name": "",
+          "type": "text",
           "value": "You are extraordinarily difficult to pin down. Whenever you are forced to make an Ability Check or Saving Throw to end or avoid a Condition on yourself you can expend two Grit to end or avoid the Condition without making the Ability Check or Saving Throw."
         },
         {
           "name": "",
           "type": "text",
           "value": "If the Ability Check or Saving Throw requires an Action you can use this feature as a Bonus Action instead."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You are quick to adapt to physically challenging tasks. When you fail a Strength or Dexterity based Ability Check, you can expend one Grit to reroll the check with a bonus equal to your Constitution modifier."
         }
       ],
       "8": [
@@ -20068,16 +20068,6 @@
         {
           "name": "Class Features",
           "type": "text",
-          "value": "For a reason that you keep utterly secret, you have committed to a life of endless travel. Choose this secret from the following options."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "Choose **1**:\n• Avenger (ValdaVagabond)\n• Cursed (ValdaVagabond)\n• Dying (ValdaVagabond)\n• Faction Agent (ValdaVagabond)\n• False Identity (ValdaVagabond)\n• Fugitive (ValdaVagabond)\n• Heretic (ValdaVagabond)\n• Monstrous (ValdaVagabond)\n• Nobility (ValdaVagabond)"
-        },
-        {
-          "name": "",
-          "type": "text",
           "value": "You learn maneuvers that are fueled by special dice called Battle Dice."
         },
         {
@@ -20098,6 +20088,16 @@
         {
           "name": "",
           "type": "text",
+          "value": "For a reason that you keep utterly secret, you have committed to a life of endless travel. Choose this secret from the following options."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "Choose **1**:\n• Avenger (ValdaVagabond)\n• Cursed (ValdaVagabond)\n• Dying (ValdaVagabond)\n• Faction Agent (ValdaVagabond)\n• False Identity (ValdaVagabond)\n• Fugitive (ValdaVagabond)\n• Heretic (ValdaVagabond)\n• Monstrous (ValdaVagabond)\n• Nobility (ValdaVagabond)"
+        },
+        {
+          "name": "",
+          "type": "text",
           "value": "Your training with weapons allows you to use the mastery properties of two kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices."
         },
         {
@@ -20110,24 +20110,24 @@
         {
           "name": "Class Features",
           "type": "text",
-          "value": "You have Advantage on attack rolls while you are *Bloodied*."
+          "value": "As an action, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point)."
         },
         {
           "name": "",
           "type": "text",
-          "value": "As an action, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point)."
+          "value": "You have Advantage on attack rolls while you are *Bloodied*."
         }
       ],
       "3": [
         {
           "name": "Class Features",
           "type": "text",
-          "value": "You gain a Vagabond subclass of your choice. A subclass is a specialization that grants you features at certain Vagabond levels. For the rest of your career, you gain each of your subclass's features that are of your Vagabond level or lower."
+          "value": "If you have no Battle Dice remaining, you can regain one Battle Die to immediately expend it and use a maneuver or Vagabond feature. When you do so, you take Necrotic damage equal to one roll of the Battle Die. This damage ignores your Resistance and Immunity, and bypasses your Temporary Hit Points."
         },
         {
           "name": "",
           "type": "text",
-          "value": "If you have no Battle Dice remaining, you can regain one Battle Die to immediately expend it and use a maneuver or Vagabond feature. When you do so, you take Necrotic damage equal to one roll of the Battle Die. This damage ignores your Resistance and Immunity, and bypasses your Temporary Hit Points."
+          "value": "You gain a Vagabond subclass of your choice. A subclass is a specialization that grants you features at certain Vagabond levels. For the rest of your career, you gain each of your subclass's features that are of your Vagabond level or lower."
         }
       ],
       "4": [
@@ -23370,6 +23370,21 @@
         {
           "name": "Class Features",
           "type": "text",
+          "value": "Choose where you first learned the basics of magic."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "*You can work with your GM to create an Arcane Initiation to suit your character's background. Choose two cantrips of your choice from any class's spell list; one cantrip should be suitable for combat, and the other for utility. Avoid choosing cantrips that are otherwise exclusive to another spellcaster. Also choose one skill.*"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "Choose **1**:\n• Adventurer (ValdaWarmage)\n• Arcane Event (ValdaWarmage)\n• Circus Performer (ValdaWarmage)\n• Mercenary (ValdaWarmage)\n• Self-Taught (ValdaWarmage)\n• Survivalist (ValdaWarmage)\n• Temple Initiate (ValdaWarmage)\n• Tower Apprentice (ValdaWarmage)"
+        },
+        {
+          "name": "",
+          "type": "text",
           "value": "You have learned the simple, yet potent brand of spellcasting for which Warmages are known."
         },
         {
@@ -23396,21 +23411,6 @@
           "name": "Spellcasting Focus",
           "type": "text",
           "value": "You can use an Arcane Focus as a Spellcasting Focus for your Warmage spells."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "Choose where you first learned the basics of magic."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "*You can work with your GM to create an Arcane Initiation to suit your character's background. Choose two cantrips of your choice from any class's spell list; one cantrip should be suitable for combat, and the other for utility. Avoid choosing cantrips that are otherwise exclusive to another spellcaster. Also choose one skill.*"
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "Choose **1**:\n• Adventurer (ValdaWarmage)\n• Arcane Event (ValdaWarmage)\n• Circus Performer (ValdaWarmage)\n• Mercenary (ValdaWarmage)\n• Self-Taught (ValdaWarmage)\n• Survivalist (ValdaWarmage)\n• Temple Initiate (ValdaWarmage)\n• Tower Apprentice (ValdaWarmage)"
         },
         {
           "name": "",
@@ -26593,6 +26593,26 @@
         {
           "name": "Class Features",
           "type": "text",
+          "value": "As an action, you can spend 9 Silk points to rapidly heal your wounds. When you do so, any other creature can use its reaction to make a single meelee attack against you if it is close enough to reach you. (This is similar to an Opportunity Attack, but it can take place even if an effect such as the Disengage action would normally prevent such an attack.)"
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "If you use Bind while airborne, you hover in place until it completes."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "If you take damage during this action, you immediately lose all your Silk points and fail to recover any Hit Points. Otherwise, roll a number of d6s equal to half your Weaver level (rounded up), and for each die rolled, add your Constitution modifier. You recover Hit Points equal to the result."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "This is similar to spending Hit Dice during a short rest, but your Hit Dice are not consumed. For example, if a level 7 Weaver with a +2 Constitution modifier uses Bind successfully, they will recover 4d6 + 8 Hit Points."
+        },
+        {
+          "name": "",
+          "type": "text",
           "value": "When you wield your longsword, it gains the Finesse property. Your longsword (or alternatively any two-handed melee weapon you wield that you are proficient in) is referred to as your Needle in other class features."
         },
         {
@@ -26659,26 +26679,6 @@
           "name": "Silk Ability",
           "type": "text",
           "value": "Intelligence is your Silk attack ability, since your power stems from your mind's ability to bind itself to techniques held by other Weavers. You use your Intelligence modifier whenever a feature refers to your Silk modifier."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "As an action, you can spend 9 Silk points to rapidly heal your wounds. When you do so, any other creature can use its reaction to make a single meelee attack against you if it is close enough to reach you. (This is similar to an Opportunity Attack, but it can take place even if an effect such as the Disengage action would normally prevent such an attack.)"
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "If you use Bind while airborne, you hover in place until it completes."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "If you take damage during this action, you immediately lose all your Silk points and fail to recover any Hit Points. Otherwise, roll a number of d6s equal to half your Weaver level (rounded up), and for each die rolled, add your Constitution modifier. You recover Hit Points equal to the result."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "This is similar to spending Hit Dice during a short rest, but your Hit Dice are not consumed. For example, if a level 7 Weaver with a +2 Constitution modifier uses Bind successfully, they will recover 4d6 + 8 Hit Points."
         }
       ],
       "2": [
@@ -26691,16 +26691,6 @@
       "3": [
         {
           "name": "Class Features",
-          "type": "text",
-          "value": "You gain a Crest to define your Weaver subclass."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "A subclass is a specialization that grants you features at certain Weaver levels. For the rest of your career, you gain each of your Crest's features that are of your Weaver level or lower."
-        },
-        {
-          "name": "",
           "type": "text",
           "value": "You can augment your power by equipping various tools. The tools you can use depend on your Weaver level and the Crest you choose."
         },
@@ -26728,6 +26718,16 @@
           "name": "Optional: Gathering Tools",
           "type": "text",
           "value": "Your DM may require some or all of your tools to be found somewhere in the world before you can equip them. If you find a tool this way, you do not need to meet its level requirement to equip it."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You gain a Crest to define your Weaver subclass."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "A subclass is a specialization that grants you features at certain Weaver levels. For the rest of your career, you gain each of your Crest's features that are of your Weaver level or lower."
         }
       ],
       "4": [
@@ -26853,11 +26853,6 @@
         {
           "name": "Class Features",
           "type": "text",
-          "value": "You are granted an improvement by your Weaver Crest."
-        },
-        {
-          "name": "",
-          "type": "text",
           "value": "You learn a new melody that can be played with your Needolin."
         },
         {
@@ -26879,6 +26874,11 @@
           "name": "",
           "type": "text",
           "value": "Additionally, you gain proficiency in the *Animal Handling* skill. If you are already proficient, you instead add double your proficiency bonus to these checks."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You are granted an improvement by your Weaver Crest."
         }
       ],
       "12": [
@@ -29249,6 +29249,16 @@
         {
           "name": "Class Features",
           "type": "text",
+          "value": "You learn a number of powerful cantrips, known as Hexes, derived from the same insidious magic that cursed you."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You know two Hexes of your choice from the Witch spell list, which don't count against your number of cantrips known. __Hex: Misfortune__ and __Hex: Ruin__ are recommended. Whenever you gain a Witch level, you can replace one of your Hexes with another Hex of your choice from the Witch spell list. When you gain certain Witch levels, you gain more Hexes of your choice, as shown in the Hexes column of the Witch Features table."
+        },
+        {
+          "name": "",
+          "type": "text",
           "value": "You have learned to mold and reshape the magic that curses you into spells."
         },
         {
@@ -29310,16 +29320,6 @@
           "name": "",
           "type": "text",
           "value": "Choose **1**:\n• Burned (ValdaWitch)\n• Drowned (ValdaWitch)\n• Feral (ValdaWitch)\n• Hideous (ValdaWitch)\n• Hollow (ValdaWitch)\n• Infested (ValdaWitch)\n• Loveless (ValdaWitch)\n• Possessed (ValdaWitch)\n• Starving (ValdaWitch)\n• Visions (ValdaWitch)\n• Whispers (ValdaWitch)"
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You learn a number of powerful cantrips, known as Hexes, derived from the same insidious magic that cursed you."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You know two Hexes of your choice from the Witch spell list, which don't count against your number of cantrips known. __Hex: Misfortune__ and __Hex: Ruin__ are recommended. Whenever you gain a Witch level, you can replace one of your Hexes with another Hex of your choice from the Witch spell list. When you gain certain Witch levels, you gain more Hexes of your choice, as shown in the Hexes column of the Witch Features table."
         }
       ],
       "2": [
@@ -31839,36 +31839,6 @@
         {
           "name": "",
           "type": "text",
-          "value": "You bring a touch of magic to everyday materials and tasks, and as a result, the fruits of your labor bear a subtle—but potent—power. Savvy witches soon learn that common chores can be just as useful as flashier forms of spellcasting; they can channel magic just as easily by cooking up restorative meals, growing strange medicines in their gardens, weaving charm bracelets, and stitching protection into the seams of clothes. They also empower their familiars to aid them in spellcasting."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "The minor results of a witch's craft—potions, salves, one-use charms, and favors—are commonly called tokens, and any given witch can expect to make countless numbers of them in their lifetime. Many witches make a living by trading tokens with those in need, although few ever become wealthy that way."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "Any level 1 Witch spell that targets one or more creatures can be crafted into a token with 1 hour of labor using Artisan's Tools or an Herbalism Kit. To craft it, you must have an unexpended spell slot of a high enough level to cast the spell (you need not have the spell prepared) and you must succeed on a Wisdom check using your tools with a DC of 10 + the spell's level. On a failure, the item isn't created unless you expend a spell slot of the spell's level."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You can attempt to make a single token during a Short or Long Rest. Tokens take a form appropriate to the tools you use to create them. An Herbalism Kit might produce a potion or salve; Cook's Utensils might produce a cupcake."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "Once created, a creature holding the token can cast the spell from it using your spell save DC, spell attack bonus, and spellcasting ability. If the spell requires Concentration, the creature must concentrate. The token then loses its magical properties, becoming a mundane item of its kind."
-        },
-        {
-          "name": "",
-          "type": "text",
-          "value": "You can maintain a number of active tokens equal to your Proficiency Bonus. If you make an additional token while at your limit, the magic fades from your oldest token."
-        },
-        {
-          "name": "",
-          "type": "text",
           "value": "A witch's familiar is their lifelong companion and friend. You can choose to form a magical connection with a willing __Badger__, __Bat__, __Cat__, __Crab__, __Frog (toad)__, __Goat__, __Hawk__, __Lizard__, __Octopus__, __Owl__, __Quipper (fish)__, __Rat__, __Raven__, __Sea Horse__, __Scorpion__, __Spider__, __Venomous Snake__, or __Weasel (fox)__, or any CR 0 creature approved by your GM."
         },
         {
@@ -31910,6 +31880,36 @@
           "name": "One Familiar Only",
           "type": "text",
           "value": "You can't have more than one familiar at a time. If you choose another animal as your witch's familiar, you lose your connection to your previous familiar."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You bring a touch of magic to everyday materials and tasks, and as a result, the fruits of your labor bear a subtle—but potent—power. Savvy witches soon learn that common chores can be just as useful as flashier forms of spellcasting; they can channel magic just as easily by cooking up restorative meals, growing strange medicines in their gardens, weaving charm bracelets, and stitching protection into the seams of clothes. They also empower their familiars to aid them in spellcasting."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "The minor results of a witch's craft—potions, salves, one-use charms, and favors—are commonly called tokens, and any given witch can expect to make countless numbers of them in their lifetime. Many witches make a living by trading tokens with those in need, although few ever become wealthy that way."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "Any level 1 Witch spell that targets one or more creatures can be crafted into a token with 1 hour of labor using Artisan's Tools or an Herbalism Kit. To craft it, you must have an unexpended spell slot of a high enough level to cast the spell (you need not have the spell prepared) and you must succeed on a Wisdom check using your tools with a DC of 10 + the spell's level. On a failure, the item isn't created unless you expend a spell slot of the spell's level."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You can attempt to make a single token during a Short or Long Rest. Tokens take a form appropriate to the tools you use to create them. An Herbalism Kit might produce a potion or salve; Cook's Utensils might produce a cupcake."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "Once created, a creature holding the token can cast the spell from it using your spell save DC, spell attack bonus, and spellcasting ability. If the spell requires Concentration, the creature must concentrate. The token then loses its magical properties, becoming a mundane item of its kind."
+        },
+        {
+          "name": "",
+          "type": "text",
+          "value": "You can maintain a number of active tokens equal to your Proficiency Bonus. If you make an additional token while at your limit, the magic fades from your oldest token."
         }
       ],
       "2": [
