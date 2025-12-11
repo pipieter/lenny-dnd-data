@@ -288,18 +288,18 @@ function parseItem(item: any, data: any): Item {
     // Armor properties, if applicable
     if (item.stealth) {
         result.description.push({
-            name: "Stealth Disadvantage",
+            name: 'Stealth Disadvantage',
             type: DescriptionType.text,
-            value: "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
-        })
+            value: 'The wearer has **Disadvantage** on Dexterity (Stealth) checks.',
+        });
     }
 
     if (item.strength && item.armor) {
         result.description.push({
-            name: "Strength Requirement",
+            name: 'Strength Requirement',
             type: DescriptionType.text,
-            value: `If the wearer has a Strength score lower than ${item.strength}, their speed is reduced by 10 feet.`
-        })
+            value: `If the wearer has a Strength score lower than ${item.strength}, their speed is reduced by 10 feet.`,
+        });
     }
 
     // Item properties
