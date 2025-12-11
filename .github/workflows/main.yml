@@ -19,7 +19,7 @@ jobs:
             - name: Checkout repo and submodules
               uses: actions/checkout@v4
               with:
-                  submodules: recursive
+                  submodules: true
 
             - name: Set up Node.js
               uses: actions/setup-node@v4
@@ -47,7 +47,7 @@ jobs:
             - name: Checkout repo and submodules
               uses: actions/checkout@v4
               with:
-                  submodules: recursive
+                  submodules: true
 
             - name: Set up Node.js
               uses: actions/setup-node@v4
@@ -67,7 +67,7 @@ jobs:
             - name: Checkout repo and submodules
               uses: actions/checkout@v4
               with:
-                  submodules: recursive
+                  submodules: true
 
             - name: Set up Node.js
               uses: actions/setup-node@v4
