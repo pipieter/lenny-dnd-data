@@ -3,6 +3,7 @@ import { applySingleTemplate, applyTemplating } from '../5etools-conversion/temp
 import {
     cleanDNDText,
     Description,
+    DescriptionType,
     parseDescriptions,
     parseImageUrl,
     parseItemValue,
@@ -275,6 +276,30 @@ function parseItem(item: any, data: any): Item {
     if (item.dmg1) {
         const damage = `**${item.dmg1}** ${DamageTypes.get(item.dmgType)}`;
         result.properties.push(damage);
+    }
+
+    // Armor properties, if applicable
+    if (item.ac) {
+        if (item.type.includes('LA')) result.properties.push(`AC ${item.ac} + Dex`);
+        else if (item.type.includes('MA')) result.properties.push(`AC ${item.ac} + Dex (max 2)`);
+        else if (item.type.includes('S')) result.properties.push(`+${item.ac} AC`);
+        else result.properties.push(`AC ${item.ac}`);
+    }
+
+    if (item.stealth) {
+        result.description.push({
+            name: 'Stealth Disadvantage',
+            type: DescriptionType.text,
+            value: 'The wearer has **Disadvantage** on Dexterity (Stealth) checks.',
+        });
+    }
+
+    if (item.strength && item.armor) {
+        result.description.push({
+            name: 'Strength Requirement',
+            type: DescriptionType.text,
+            value: `If the wearer has a Strength score lower than ${item.strength}, their speed is reduced by 10 feet.`,
+        });
     }
 
     // Item properties

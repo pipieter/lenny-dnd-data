@@ -658,7 +658,9 @@
         "value": "(Worn by __Scanlan Shorthalt__.)"
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "+2 Studded White Dragon Leather Armor of Cold Resistance",
@@ -687,7 +689,9 @@
         "value": "(Worn by __Vex'ahlia__.)"
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "+2 Wand of the War Mage",
@@ -2896,7 +2900,9 @@
         "value": "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Animated Shield",
@@ -2916,7 +2922,9 @@
         "value": "While holding this Shield, you can take a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The Shield remains animate for 1 minute, until you take a Bonus Action to end this effect, or until you die or have the Incapacitated condition, at which point the Shield falls to the ground or into your hand if you have one free."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Antigravity Belt",
@@ -3462,9 +3470,16 @@
         "name": "",
         "type": "text",
         "value": "You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Armor of Invulnerability",
@@ -3487,9 +3502,16 @@
         "name": "Metal Shell",
         "type": "text",
         "value": "You can take a Magic action to give yourself Immunity to Bludgeoning, Piercing, and Slashing damage for 10 minutes or until you are no longer wearing the armor. Once this property is used, it can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Armor of the Valiant Soul (Awakened)",
@@ -3519,12 +3541,18 @@
         "value": "While the Armor of the Valiant Soul is in a dormant state, you gain a +1 bonus to AC while wearing it. You can also cast the __command__ spell (save DC 14) while attuned to this armor. Once this property is used, it can't be used again until you finish a resting."
       },
       {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
         "name": "Vestige of Divergence",
         "type": "text",
         "value": "(This item is a Vestige of Divergence, see Tal'Dorei Treasures for more information.)"
       }
     ],
     "properties": [
+      "AC 14 + Dex (max 2)",
       "vestige"
     ]
   },
@@ -3551,12 +3579,18 @@
         "value": "While the Armor of the Valiant Soul is in a dormant state, you gain a +1 bonus to AC while wearing it. You can also cast the __command__ spell (save DC 14) while attuned to this armor. Once this property is used, it can't be used again until you finish a resting."
       },
       {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
         "name": "Vestige of Divergence",
         "type": "text",
         "value": "(This item is a Vestige of Divergence, see Tal'Dorei Treasures for more information.)"
       }
     ],
     "properties": [
+      "AC 14 + Dex (max 2)",
       "vestige"
     ]
   },
@@ -3593,12 +3627,18 @@
         "value": "While the Armor of the Valiant Soul is in a dormant state, you gain a +1 bonus to AC while wearing it. You can also cast the __command__ spell (save DC 14) while attuned to this armor. Once this property is used, it can't be used again until you finish a resting."
       },
       {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
         "name": "Vestige of Divergence",
         "type": "text",
         "value": "(This item is a Vestige of Divergence, see Tal'Dorei Treasures for more information.)"
       }
     ],
     "properties": [
+      "AC 14 + Dex (max 2)",
       "vestige"
     ]
   },
@@ -3623,9 +3663,16 @@
         "name": "Curse",
         "type": "text",
         "value": "This armor is cursed, a fact that is revealed only when an __identify__ spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the __remove curse__ spell or similar magic; removing the armor fails to end the curse. While cursed you have vulnerability to piercing and slashing damage."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Armor of Vulnerability (Piercing)",
@@ -3648,9 +3695,16 @@
         "name": "Curse",
         "type": "text",
         "value": "This armor is cursed, a fact that is revealed only when an __identify__ spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the __remove curse__ spell or similar magic; removing the armor fails to end the curse. While cursed you have vulnerability to bludgeoning and slashing damage."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Armor of Vulnerability (Slashing)",
@@ -3673,9 +3727,16 @@
         "name": "Curse",
         "type": "text",
         "value": "This armor is cursed, a fact that is revealed only when an __identify__ spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the __remove curse__ spell or similar magic; removing the armor fails to end the curse. While cursed you have vulnerability to bludgeoning and piercing damage."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Arrow-Catching Shield",
@@ -3695,7 +3756,9 @@
         "value": "You gain a +2 bonus to AC against ranged attacks while you wield this shield. This bonus is in addition to the shield's normal bonus to AC. In addition, whenever an attacker makes a ranged attack against a target within 5 feet of you, you can use your reaction to become the target of the attack instead."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Arrow-Catching Shield",
@@ -3720,7 +3783,9 @@
         "value": "Whenever an attacker makes a ranged attack roll against a target within 5 feet of you, you can take a Reaction to become the target of the attack instead."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Ascendant Dragon Vessel",
@@ -6258,7 +6323,9 @@
         "value": "Additionally, the shield has 3 charges, and it regains 1d3 expended charges daily at dawn. If you are holding the shield and push a creature within your reach at least 5 feet away, you can expend 1 charge to push that creature an additional 10 feet, knock it prone, or both."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Battle Standard of Infernal Power",
@@ -7164,9 +7231,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest black dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Black Dragon Scale Mail",
@@ -7194,9 +7268,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest black dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Black Ghost Orchid Seed",
@@ -8648,9 +8729,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest blue dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Blue Dragon Scale Mail",
@@ -8678,9 +8766,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest blue dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Blue Quartz",
@@ -9535,7 +9630,9 @@
         "value": "You can make a ranged weapon attack with this magic shield. It has a normal range of 20 feet and a long range of 60 feet, and it uses your Strength or Dexterity for the attack roll (your choice). If you're proficient with shields, you are proficient with attacks made using this shield. On a hit, it deals **1d6** slashing damage. If you throw the shield, it reappears in your hand the instant after it hits or misses a target."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Boots of Elvenkind",
@@ -10323,9 +10420,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest brass dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Brass Dragon Scale Mail",
@@ -10353,9 +10457,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest brass dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Brass mug with jade inlay",
@@ -10491,7 +10602,9 @@
         "value": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Breathing Bubble",
@@ -10679,9 +10792,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest bronze dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Bronze Dragon Scale Mail",
@@ -10709,9 +10829,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest bronze dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Bronze spyglass (Brazen Coalition)",
@@ -15617,9 +15744,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest copper dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Copper Dragon Scale Mail",
@@ -15647,9 +15781,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest copper dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Copper stein with silver filigree (Brazen Coalition)",
@@ -17840,6 +17981,7 @@
       }
     ],
     "properties": [
+      "AC 12 + Dex",
       "vestige"
     ]
   },
@@ -17872,6 +18014,7 @@
       }
     ],
     "properties": [
+      "AC 12 + Dex",
       "vestige"
     ]
   },
@@ -17914,6 +18057,7 @@
       }
     ],
     "properties": [
+      "AC 12 + Dex",
       "vestige"
     ]
   },
@@ -20352,9 +20496,16 @@
         "name": "Curse",
         "type": "text",
         "value": "Once you don this cursed armor, you can't doff it unless you are targeted by the __remove curse__ spell or similar magic. While wearing the armor, you have disadvantage on attack rolls against demons and on saving throws against their spells and special abilities."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Demonomicon of Iggwilv",
@@ -21767,7 +21918,9 @@
         "value": "This +1 breastplate has a gold dragon motif worked into its design. Created for a human hero of Neverwinter named Tergon, it grants its wearer advantage on saving throws against the breath weapons of creatures that have the dragon type."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Dragonguard",
@@ -21797,7 +21950,9 @@
         "value": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Dragonstaff of Ahghairon",
@@ -22458,9 +22613,16 @@
         "name": "",
         "type": "text",
         "value": "While wearing this armor, you gain a +2 bonus to AC. In addition, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 10 feet."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Dwarven Thrower",
@@ -22958,9 +23120,16 @@
         "name": "",
         "type": "text",
         "value": "While wearing this armor, you gain a +3 bonus to AC, you are immune to fire damage, and you can understand and speak Primordial. In addition, you can stand on and walk across molten rock as if it were solid ground."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 16"
+    ]
   },
   {
     "name": "Elder Cartographer's Glossography",
@@ -23573,7 +23742,9 @@
         "value": "You gain a +1 bonus to AC while you wear this armor. You are considered proficient with this armor even if you lack proficiency with medium armor."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 13 + Dex (max 2)"
+    ]
   },
   {
     "name": "Elven Thrower",
@@ -24620,7 +24791,9 @@
         "value": "• **Blessing of Euryale**: You have resistance to poison damage and are immune to the petrified condition.\n• **Petrifying Heraldry**: As a bonus action, you can make the front of the shield flare with a medusa's petrifying magic, causing the relief's eyes to glow brightly. Choose one creature you can see within 30 feet of you. The creature must succeed on a DC 20 Constitution saving throw, or it has the restrained condition as its body turns to stone. The restrained creature must make another DC 20 Constitution saving throw at the start of its next turn. On a failed save, the creature has the petrified condition for 24 hours. On a successful save, the restrained condition ends. Once this bonus action is used, it can't be used again until the next dawn.\n• **Spellcasting**: While wielding the shield, you can use an action to cast one of the following spells from it: __Lesser Restoration__, __Locate Creature__, __Transport via Plants__. Once you use the shield to cast a spell, the shield can't cast that spell again until the next dawn."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Everbright Lantern",
@@ -28853,7 +29026,9 @@
         "value": "While wearing this armor, you gain a +1 bonus to AC. You can also use a bonus action to speak the armor's command word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or remove the armor."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "Glamoured Studded Leather",
@@ -28873,7 +29048,9 @@
         "value": "While wearing this armor, you gain a +1 bonus to Armor Class. You can also take a Bonus Action to cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like—including color, style, and accessories—but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or doff the armor."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "Glass Bottle",
@@ -29747,9 +29924,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest gold dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Gold Dragon Scale Mail",
@@ -29777,9 +29961,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest gold dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Gold idol",
@@ -30571,9 +30762,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest green dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Green Dragon Scale Mail",
@@ -30601,9 +30799,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest green dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Grenade Launcher",
@@ -33233,7 +33438,9 @@
         "value": "Placing the armor inside an extradimensional space created by a bag of holding, a Heward's handy haversack, or a similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Hide of the Feral Guardian (Awakened)",
@@ -33279,6 +33486,7 @@
       }
     ],
     "properties": [
+      "AC 12 + Dex",
       "vestige"
     ]
   },
@@ -33316,6 +33524,7 @@
       }
     ],
     "properties": [
+      "AC 12 + Dex",
       "vestige"
     ]
   },
@@ -33373,6 +33582,7 @@
       }
     ],
     "properties": [
+      "AC 12 + Dex",
       "vestige"
     ]
   },
@@ -33578,6 +33788,7 @@
       }
     ],
     "properties": [
+      "+2 AC",
       "vestige"
     ]
   },
@@ -33610,6 +33821,7 @@
       }
     ],
     "properties": [
+      "+2 AC",
       "vestige"
     ]
   },
@@ -33652,6 +33864,7 @@
       }
     ],
     "properties": [
+      "+2 AC",
       "vestige"
     ]
   },
@@ -34772,7 +34985,9 @@
         "value": "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Hunting Trap",
@@ -35291,9 +35506,16 @@
         "name": "Corrupting",
         "type": "text",
         "value": "This item corrupts. See the \"Infernal Item Corruption (CoA)\" section."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Infernal Puzzle Box",
@@ -40725,7 +40947,9 @@
         "value": "• **Aversion of Fire**: If you take fire damage, you have disadvantage on attack rolls and ability checks until the end of your next turn.\n• **Berserk**: Whenever a critical hit is made against you, roll a d6. On a 6, the armor causes you to go berserk. On each of your turns while berserk, you attack the nearest creature you can see. If no creature is near enough to move to and attack, you attack an object, with preference for an object smaller than yourself. Once the armor causes you to go berserk, it cannot be removed. You continue to attack until you are incapacitated or until another creature is able to calm you with appropriate magic (such as a __calm emotions__ spell) or a successful DC 15 Charisma (*Persuasion*) check."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Leatherworker's Tools",
@@ -47210,9 +47434,16 @@
         "name": "",
         "type": "text",
         "value": "You gain a +2 bonus to AC and resistance to poison damage while you wear this armor. In addition, you gain advantage on ability checks and saving throws made to avoid or end the grappled condition on yourself."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Obsidian statuette with gold fittings and inlay",
@@ -49296,7 +49527,9 @@
         "value": "When a creature you can see within 5 feet of you takes damage, you can use your reaction to take that damage, instead of the creature taking it. When you do so, the damage type changes to force."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Pathfinder's Greataxe",
@@ -50447,9 +50680,16 @@
         "name": "",
         "type": "text",
         "value": "While you're wearing this armor, you can speak its command word as an action to gain the effect of the __etherealness__ spell, which lasts for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Plate of Knight's Fellowship",
@@ -50487,9 +50727,16 @@
         "name": "",
         "type": "text",
         "value": "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Plate of the Dawnmartyr (Awakened)",
@@ -50519,12 +50766,18 @@
         "value": "While the Plate of the Dawnmartyr is in a dormant state, you gain a +1 bonus to AC while wearing it. When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to rebuke that creature, dealing it **1d6** fire damage."
       },
       {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
         "name": "Vestige of Divergence",
         "type": "text",
         "value": "(This item is a Vestige of Divergence, see Tal'Dorei Treasures for more information.)"
       }
     ],
     "properties": [
+      "AC 18",
       "vestige"
     ]
   },
@@ -50551,12 +50804,18 @@
         "value": "While the Plate of the Dawnmartyr is in a dormant state, you gain a +1 bonus to AC while wearing it. When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to rebuke that creature, dealing it **1d6** fire damage."
       },
       {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
         "name": "Vestige of Divergence",
         "type": "text",
         "value": "(This item is a Vestige of Divergence, see Tal'Dorei Treasures for more information.)"
       }
     ],
     "properties": [
+      "AC 18",
       "vestige"
     ]
   },
@@ -50593,12 +50852,18 @@
         "value": "While the Plate of the Dawnmartyr is in a dormant state, you gain a +1 bonus to AC while wearing it. When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to rebuke that creature, dealing it **1d6** fire damage."
       },
       {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
         "name": "Vestige of Divergence",
         "type": "text",
         "value": "(This item is a Vestige of Divergence, see Tal'Dorei Treasures for more information.)"
       }
     ],
     "properties": [
+      "AC 18",
       "vestige"
     ]
   },
@@ -53596,7 +53861,9 @@
         "value": "*Depending on where and how it appears in the adventure, you might wish to modify the features of Kwalish's legendary powered armor.*\n***Automatic Defenses**: Unless Kwalish deactivates the suit's automatic defenses, no one can approach the armor without setting those defenses off. Treat the armor as a __shield guardian__ that has stored a __magic missile__ spell cast using a 4th-level spell slot. When the armor is reduced to 0 hit points, its defenses are rendered inert and it can be safely approached.*\n***Battle of Wills**: When donned by a new user, the armor deems itself superior and attempts to take possession of that user. The user must succeed on a DC 13 Charisma saving throw or be possessed by the armor. While possessed, the user is incapacitated and loses control of its body but retains its awareness. The armor uses the possessed user's statistics (as adjusted by the armor), but doesn't gain access to the user's knowledge, features, or proficiencies.\nFreeing a creature trapped inside the armor first requires defeating the armor's automatic defenses (as above). The trapped creature can also attempt a DC 20 Charisma saving throw each day at dawn. On a successful save, the armor no longer controls the creature and can be safely donned by that creature at any time.*\n***Stasis**: Whenever a creature wearing the armor drops to 0 hit points, the armor places that creature into a state of stasis. While in this state, the creature is stable and does not make death saving throws, but the armor takes control of the creature (as above). Additionally, the armor attempts to assume the identity of the user, assuring their allies that nothing is amiss. Freeing the user first requires defeating the armor's automatic defenses (as above). A creature in stasis does not make Charisma saving throws to break the armor's control.*\n***Alternative Power**: Powered armor originally required energy cells to fuel it, but was adapted by Kwalish to be fueled by the life energy of the creature wearing it. You might decide that the armor can also draw power from additional sources, or that energy cells can be recharged with the aid of a tinker, inventor, or artificer. It might also be possible for allies to connect to the armor through the use of magic that generates a conduit something like an astral silver cord. While so connected, a willing ally can give up hit points as a reaction to fuel the armor's abilities.*"
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Powered Armor",
@@ -55915,9 +56182,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest red dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Red Dragon Scale Mail",
@@ -55945,9 +56219,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest red dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Red Wizard Blade",
@@ -56162,7 +56443,9 @@
         "value": "The shield has 4 charges. While holding it, when a Large or smaller creature within 5 feet of you hits you with a melee attack roll, you can take a Reaction to expend 1 of the shield's charges and push the attacker up to 15 feet straight away. The shield regains 1d4 expended charges daily at dawn."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Residuum",
@@ -60233,7 +60516,9 @@
         "value": "If the Apotheon is killed or redeemed, all the ruidium in Exandria is destroyed instantly, and a ruidium shield becomes a +2 shield."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Ruin Card",
@@ -61269,7 +61554,9 @@
         "value": "As an action, you can use the shield to help you locate Aberrations until the end of your next turn. If any Aberrations are within 1 mile of you, the shield emits a low humming tone for a moment, and you know the direction of all Aberrations within that range. Once this property is used, it can't be used again until the next dawn."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Sardonyx",
@@ -61622,7 +61909,9 @@
         "value": "This armor is cursed. Whenever you don or doff it, you must make a DC 15 Constitution saving throw, taking 100 (**10d10 + 45**) poison damage on a failed save, or half as much damage on a successful one. Only a __wish__ spell can remove the armor's curse."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Scorpion Ship",
@@ -62865,7 +63154,9 @@
         "value": "While holding this shield, you have advantage on initiative rolls and Wisdom (*Perception*) checks. The shield is emblazoned with a symbol of an eye."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Sentinel Shield",
@@ -62885,7 +63176,9 @@
         "value": "While holding this Shield, you have Advantage on Initiative rolls and Wisdom (*Perception*) checks. The Shield is emblazoned with a symbol of an eye."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Serpent Scale Armor",
@@ -62905,7 +63198,9 @@
         "value": "This suit of magic armor is made from shimmering scales. While wearing it, you can apply your full Dexterity modifier (instead of a maximum of +2) when determining your Armor Class. In addition, this armor does not impose disadvantage on your Dexterity (*Stealth*) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Serpent Venom",
@@ -63537,7 +63832,9 @@
         "value": "The front of this Shield is shaped in the likeness of a face. While bearing the Shield, you can take a Bonus Action to alter the face's expression."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of Expression",
@@ -63557,7 +63854,9 @@
         "value": "The front of this shield is shaped in the likeness of a face. While bearing the shield, you can use a bonus action to alter the face's expression."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of Far Sight",
@@ -63582,7 +63881,9 @@
         "value": "If a shield of far sight is destroyed, the __mind flayer__ that created it is blinded for 2d12 hours."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of Missile Attraction",
@@ -63607,7 +63908,9 @@
         "value": "This shield is cursed. Attuning to it curses you until you are targeted by the __remove curse__ spell or similar magic. Removing the shield fails to end the curse on you. Whenever a ranged weapon attack is made against a target within 10 feet of you, the curse causes you to become the target instead."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of Missile Attraction",
@@ -63632,7 +63935,9 @@
         "value": "This Shield is cursed. Attuning to it curses you until you are targeted by a __Remove Curse__ spell or similar magic. Removing the Shield fails to end the curse on you. Whenever an attack with a Ranged weapon targets a creature within 10 feet of you, the curse causes you to become the target instead."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of Shouting",
@@ -63651,7 +63956,9 @@
         "value": "A __detect magic__ spell reveals an aura of transmutation magic around this shield, which has a minor magical property: words spoken by the shield's bearer are amplified and sound ten times louder than normal."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of the Blazing Dreadnought",
@@ -63696,7 +64003,9 @@
         "value": "Once the shield has been activated, it can't be activated again until the next dawn."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of the Cavalier",
@@ -63731,7 +64040,9 @@
         "value": "As a Reaction, when you or an ally you can see within 5 feet of you is targeted by an attack or makes a saving throw against an area of effect, you can use the Shield to create an immobile 5-foot Emanation originating from you. When the Emanation appears, any creatures or objects not fully contained within it are pushed into the nearest unoccupied spaces outside it. The attack or area of effect that triggered the Reaction has no effect on creatures and objects inside the Emanation, which lasts as long as you maintain *Concentration*, up to 1 minute. Nothing can pass into or out of the Emanation. A creature or object inside the Emanation can't be damaged by attacks or effects originating from outside, nor can a creature inside the Emanation damage anything outside it. Once this property is used, it can't be used again until the next dawn."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of the Hidden Lord",
@@ -63786,7 +64097,9 @@
         "value": "Casting __dispel evil and good__ on the shield has a 1 percent chance of freeing the pit fiend, or automatically succeeds if the spell is cast by a __solar__, a __planetar__, or an archdevil. A god can release the pit fiend by touching the shield and speaking Gargauth's name. When released, Gargauth appears in a random, unoccupied space as close to the shield as possible."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of the Silver Dragon",
@@ -63816,7 +64129,9 @@
         "value": "A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of the Tortoise",
@@ -63841,7 +64156,9 @@
         "value": "This item is cursed. Attuning to it extends the curse to you until you are targeted by a __Remove Curse__ spell or similar magic. You cannot discard the shield, and remain attuned to it, as long as you are cursed. As long as you are cursed, you are sluggish. Your speed is halved. When you roll initiative, treat the roll on your d20 as a 1. You can't change your initiative by any means."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield of the Uven Rune",
@@ -63886,7 +64203,9 @@
         "value": "You can transfer the shield's magic to a nonmagical weapon by tracing the uven rune on the weapon with one finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the shield is destroyed, and the rune is etched or burned into the chosen weapon. This weapon becomes a rare magic item that requires attunement. It has the properties of a +1 weapon. The bonus increases to +3 when the weapon is used against one of the following creature types, chosen by you at the time of the magic weapon's creation: aberrations, celestials, constructs, dragons, elementals, fey, fiends, giants, or undead."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shiftweave",
@@ -64618,9 +64937,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest silver dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Silver Dragon Scale Mail",
@@ -64648,9 +64974,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest silver dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Silver ewer",
@@ -67717,7 +68050,9 @@
         "value": "While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Spellguard Shield",
@@ -67737,7 +68072,9 @@
         "value": "While holding this Shield, you have Advantage on saving throws against spells and other magical effects, and spell attack rolls have Disadvantage against you."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Spelljamming Helm",
@@ -68221,7 +68558,9 @@
         "value": "As a Magic action, you can cause spikes to erupt from the Shield in a 30-foot Cone. Each creature in the Cone makes a DC 13 Dexterity saving throw, taking **3d6** Piercing damage on a failed save or half as much damage on a successful one. Once this property is used, it can't be used again until the next dawn."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Spindle of Fate",
@@ -71533,7 +71872,9 @@
         "value": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Stonemaker War Pick",
@@ -72279,9 +72620,16 @@
         "name": "",
         "type": "text",
         "value": "A creature wearing a survival mantle can breathe normally in any environment (including a vacuum) and has advantage on saving throws against harmful gases (such as those created by a __cloudkill__ spell, a __stinking cloud__ spell, inhaled poisons, and the breath weapons of some dragons)."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 15 + Dex (max 2)"
+    ]
   },
   {
     "name": "Suude (Blue)",
@@ -78940,7 +79288,9 @@
         "value": "While you wear this armor, you gain darkvision out to a range of 60 feet."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 13 + Dex (max 2)"
+    ]
   },
   {
     "name": "Velvet doublet with gold buttons (Legion of Dusk)",
@@ -79334,7 +79684,9 @@
         "value": "This armor is cursed, and attuning to it extends the curse to you. As long as you remain cursed, you're unwilling to part with the armor. Taking it off fails to end the curse. While cursed in this way, you feel disconnected from your body, continuously hearing whispers that call for you to join them. Whenever you finish a long rest while cursed, you must make a DC 11 Charisma saving throw. On a failed save, your soul is drawn from your body and trapped in an object on a different plane of existence. The object and location of this object are chosen by the DM (but might be the House of Cards; see chapter 18). While your soul is trapped in this way, your body is inert and doesn't age or require sustenance. Destroying the object frees your soul; otherwise, only a __Wish__ spell can restore your soul to your body."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "Voting Kit",
@@ -82303,9 +82655,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as an action to magically discern the distance and direction to the closest white dragon within 30 miles of you. This special action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "White Dragon Scale Mail",
@@ -82333,9 +82692,16 @@
         "name": "",
         "type": "text",
         "value": "Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest white dragon within 30 miles of yourself. This action can't be used again until the next dawn."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "White Ghost Orchid Seed",
@@ -84904,7 +85270,9 @@
         "value": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Breastplate",
@@ -84917,7 +85285,9 @@
       "medium armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Chain Mail",
@@ -84934,9 +85304,21 @@
         "name": "",
         "type": "text",
         "value": "Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Strength Requirement",
+        "type": "text",
+        "value": "If the wearer has a Strength score lower than 13, their speed is reduced by 10 feet."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 16"
+    ]
   },
   {
     "name": "Chain Mail",
@@ -84948,8 +85330,21 @@
     "type": [
       "heavy armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Strength Requirement",
+        "type": "text",
+        "value": "If the wearer has a Strength score lower than 13, their speed is reduced by 10 feet."
+      }
+    ],
+    "properties": [
+      "AC 16"
+    ]
   },
   {
     "name": "Chain Shirt",
@@ -84968,7 +85363,9 @@
         "value": "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 13 + Dex (max 2)"
+    ]
   },
   {
     "name": "Chain Shirt",
@@ -84981,7 +85378,9 @@
       "medium armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 13 + Dex (max 2)"
+    ]
   },
   {
     "name": "Cittern",
@@ -85900,9 +86299,16 @@
         "name": "",
         "type": "text",
         "value": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 15 + Dex (max 2)"
+    ]
   },
   {
     "name": "Half Plate Armor",
@@ -85914,8 +86320,16 @@
     "type": [
       "medium armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      }
+    ],
+    "properties": [
+      "AC 15 + Dex (max 2)"
+    ]
   },
   {
     "name": "Hand Crossbow",
@@ -86206,7 +86620,9 @@
         "value": "This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex (max 2)"
+    ]
   },
   {
     "name": "Hide Armor",
@@ -86219,7 +86635,9 @@
       "medium armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex (max 2)"
+    ]
   },
   {
     "name": "Hooked Shortspear",
@@ -86740,7 +87158,9 @@
         "value": "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Leather Armor",
@@ -86753,7 +87173,9 @@
       "light armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Light Crossbow",
@@ -87573,9 +87995,16 @@
         "name": "",
         "type": "text",
         "value": "Padded armor consists of quilted layers of cloth and batting."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Padded Armor",
@@ -87587,8 +88016,16 @@
     "type": [
       "light armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      }
+    ],
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Pan Flute",
@@ -87801,9 +88238,21 @@
         "name": "",
         "type": "text",
         "value": "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Strength Requirement",
+        "type": "text",
+        "value": "If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Plate Armor",
@@ -87815,8 +88264,21 @@
     "type": [
       "heavy armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Strength Requirement",
+        "type": "text",
+        "value": "If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
+      }
+    ],
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Quarterstaff",
@@ -88043,9 +88505,16 @@
         "name": "",
         "type": "text",
         "value": "This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14"
+    ]
   },
   {
     "name": "Ring Mail",
@@ -88057,8 +88526,16 @@
     "type": [
       "heavy armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      }
+    ],
+    "properties": [
+      "AC 14"
+    ]
   },
   {
     "name": "Rod",
@@ -88101,9 +88578,16 @@
         "name": "",
         "type": "text",
         "value": "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Scale Mail",
@@ -88115,8 +88599,16 @@
     "type": [
       "medium armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      }
+    ],
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Scimitar",
@@ -88308,7 +88800,9 @@
         "value": "A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shield",
@@ -88321,7 +88815,9 @@
       "shield"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Shortbow",
@@ -88842,9 +89338,16 @@
         "name": "",
         "type": "text",
         "value": "Spiked armor is a rare type of medium armor made by dwarves. It consists of a leather coat and leggings covered with spikes that are usually made of metal."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Splint Armor",
@@ -88861,9 +89364,21 @@
         "name": "",
         "type": "text",
         "value": "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
+      },
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Strength Requirement",
+        "type": "text",
+        "value": "If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 17"
+    ]
   },
   {
     "name": "Splint Armor",
@@ -88875,8 +89390,21 @@
     "type": [
       "heavy armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Strength Requirement",
+        "type": "text",
+        "value": "If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
+      }
+    ],
+    "properties": [
+      "AC 17"
+    ]
   },
   {
     "name": "Staff",
@@ -88949,7 +89477,9 @@
         "value": "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "Studded Leather Armor",
@@ -88962,7 +89492,9 @@
       "light armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "Tantan",

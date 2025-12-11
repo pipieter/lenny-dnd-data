@@ -236,7 +236,9 @@
       "light armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Drifter's Cloak",
@@ -260,7 +262,9 @@
         "value": "• You do not take fall damage unless you are incapacitated.\n• While you are falling, you may activate (or deactivate) this cloak, with no action required. While active, your descent is slowed to 10 feet per round, and for every 10 feet you fall vertically, you can glide up to 20 feet in any horizontal direction you choose."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "Faydown Cloak",
@@ -284,7 +288,9 @@
         "value": "If a feature grants you mastery with this armor, you gain all the benefits from the Drifter's Cloak description. Additionally, during your turn you can fly up to 20 feet in any direction with no action required. After doing so, you must hit a target with a melee weapon attack—or end your turn while not airborne—before you can fly again."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "Bauble Trap",
@@ -4347,6 +4353,7 @@
       }
     ],
     "properties": [
+      "AC 12 + Dex (max 2)",
       "ending your attunement to one of these items removes its curse, but the power of a cursed curio doesn't release its hold on the user easily. if you attune to it again within 28 days, the progression of its curse returns to where it was before you ended your attunement."
     ]
   },
@@ -4772,6 +4779,7 @@
       }
     ],
     "properties": [
+      "+2 AC",
       "each fabled heirloom is a magic item that grows in strength as its attuned owner gains power. the rarity of each heirloom increases as the character grows in level, as shown on the heirloom rarity table. an heirloom's description details the properties it always has, as well as the properties it gains as it increases in rarity. the heirloom has all the properties of its rarity and lower."
     ]
   },
@@ -4809,6 +4817,7 @@
       }
     ],
     "properties": [
+      "+2 AC",
       "each fabled heirloom is a magic item that grows in strength as its attuned owner gains power. the rarity of each heirloom increases as the character grows in level, as shown on the heirloom rarity table. an heirloom's description details the properties it always has, as well as the properties it gains as it increases in rarity. the heirloom has all the properties of its rarity and lower."
     ]
   },
@@ -4856,6 +4865,7 @@
       }
     ],
     "properties": [
+      "+2 AC",
       "each fabled heirloom is a magic item that grows in strength as its attuned owner gains power. the rarity of each heirloom increases as the character grows in level, as shown on the heirloom rarity table. an heirloom's description details the properties it always has, as well as the properties it gains as it increases in rarity. the heirloom has all the properties of its rarity and lower."
     ]
   },
@@ -9772,7 +9782,9 @@
         "value": "• **[Animus]**: Any Animus\n• **[Fluid]**: Contaminated Ichor\n• **[Hide]**: Shell from an Anomollusk\n• **[Hide]**: Skin from an Aberration"
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Rejuvenation Potion",
@@ -10687,7 +10699,9 @@
         "value": "As a Bonus Action while holding this shield, you can grant Temporary Hit Points equal to your level to the humanoid creature you can see within 60 feet of yourself that has the fewest Hit Points. If creatures you can see within range are tied for the fewest Hit Points, you can choose which of those creatures gains the Temporary Hit Points."
       }
     ],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Lightning Runner",
@@ -14656,7 +14670,9 @@
         "value": "If you are wearing this vest and carrying a Bounty Hunter's Carbine, you can treat the result of your Initiative rolls as 10, or your character level plus your Dexterity modifier, whichever is higher."
       }
     ],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "Brass Repeater",
@@ -21791,8 +21807,16 @@
     "type": [
       "light armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      }
+    ],
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Nanofiber Vest",
@@ -21805,7 +21829,9 @@
       "light armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 11 + Dex"
+    ]
   },
   {
     "name": "Tactical Nanofiber Vest",
@@ -21818,7 +21844,9 @@
       "light armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex"
+    ]
   },
   {
     "name": "Environ Suit",
@@ -21831,7 +21859,9 @@
       "medium armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 12 + Dex (max 2)"
+    ]
   },
   {
     "name": "Carbonic Suit",
@@ -21844,7 +21874,9 @@
       "medium armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 13 + Dex (max 2)"
+    ]
   },
   {
     "name": "Monoplate Suit",
@@ -21856,8 +21888,16 @@
     "type": [
       "medium armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      }
+    ],
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Triplate Suit",
@@ -21870,7 +21910,9 @@
       "medium armor"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "AC 14 + Dex (max 2)"
+    ]
   },
   {
     "name": "Hexaplate Suit",
@@ -21882,8 +21924,16 @@
     "type": [
       "medium armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      }
+    ],
+    "properties": [
+      "AC 15 + Dex (max 2)"
+    ]
   },
   {
     "name": "Ferrofiber Hardsuit",
@@ -21895,8 +21945,16 @@
     "type": [
       "heavy armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      }
+    ],
+    "properties": [
+      "AC 14"
+    ]
   },
   {
     "name": "Tactical Carbonic Hardsuit",
@@ -21908,8 +21966,21 @@
     "type": [
       "heavy armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Strength Requirement",
+        "type": "text",
+        "value": "If the wearer has a Strength score lower than 13, their speed is reduced by 10 feet."
+      }
+    ],
+    "properties": [
+      "AC 16"
+    ]
   },
   {
     "name": "Starshield Hardsuit",
@@ -21921,8 +21992,21 @@
     "type": [
       "heavy armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Strength Requirement",
+        "type": "text",
+        "value": "If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
+      }
+    ],
+    "properties": [
+      "AC 17"
+    ]
   },
   {
     "name": "Adamant Hardsuit",
@@ -21934,8 +22018,21 @@
     "type": [
       "heavy armor"
     ],
-    "description": [],
-    "properties": []
+    "description": [
+      {
+        "name": "Stealth Disadvantage",
+        "type": "text",
+        "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+      },
+      {
+        "name": "Strength Requirement",
+        "type": "text",
+        "value": "If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet."
+      }
+    ],
+    "properties": [
+      "AC 18"
+    ]
   },
   {
     "name": "Shield",
@@ -21948,7 +22045,9 @@
       "shield"
     ],
     "description": [],
-    "properties": []
+    "properties": [
+      "+2 AC"
+    ]
   },
   {
     "name": "Bomb",

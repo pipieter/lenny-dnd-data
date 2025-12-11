@@ -81,9 +81,7 @@ export function read(filepaths: string | string[] | undefined): any {
 
     const data: any[] = [];
 
-    if (!Array.isArray(filepaths)) {
-        filepaths = [filepaths];
-    }
+    if (!Array.isArray(filepaths)) filepaths = [filepaths];
 
     for (const filepath of filepaths) {
         const stats = fs.lstatSync(filepath);
