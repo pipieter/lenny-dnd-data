@@ -226,6 +226,44 @@
     "properties": []
   },
   {
+    "name": "Battle-Gauntlet",
+    "source": "alterNERDtiveTheRuffianRevised",
+    "url": "https://5e.tools/items.html#battle-gauntlet_alternerdtivetheruffianrevised",
+    "value": "30 gp",
+    "weight": "5 lb.",
+    "type": [
+      "martial weapon",
+      "melee weapon"
+    ],
+    "description": [
+      {
+        "name": "",
+        "type": "text",
+        "value": "Attacks made with this weapon count as Unarmed Strikes, and you can use the Grapple option while holding this weapon."
+      },
+      {
+        "name": "Special",
+        "type": "text",
+        "value": "When you score a Critical Hit with this weapon, you can push the target up to 5 feet straight away from you. This stacks with the Push mastery property."
+      },
+      {
+        "name": "Light",
+        "type": "text",
+        "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+      },
+      {
+        "name": "Push",
+        "type": "text",
+        "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+      }
+    ],
+    "properties": [
+      "**1d6** Bludgeoning",
+      "light",
+      "mastery: push"
+    ]
+  },
+  {
     "name": "Hunter's Cloak",
     "source": "Weaver",
     "url": "https://5e.tools/items.html#hunter's%20cloak_weaver",
@@ -1054,44 +1092,6 @@
       }
     ],
     "properties": []
-  },
-  {
-    "name": "Battle-Gauntlet",
-    "source": "alterNERDtiveTheRuffianRevised",
-    "url": "https://5e.tools/items.html#battle-gauntlet_alternerdtivetheruffianrevised",
-    "value": "30 gp",
-    "weight": "5 lb.",
-    "type": [
-      "martial weapon",
-      "melee weapon"
-    ],
-    "description": [
-      {
-        "name": "",
-        "type": "text",
-        "value": "Attacks made with this weapon count as Unarmed Strikes, and you can use the Grapple option while holding this weapon."
-      },
-      {
-        "name": "Special",
-        "type": "text",
-        "value": "When you score a Critical Hit with this weapon, you can push the target up to 5 feet straight away from you. This stacks with the Push mastery property."
-      },
-      {
-        "name": "Light",
-        "type": "text",
-        "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
-      },
-      {
-        "name": "Push",
-        "type": "text",
-        "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
-      }
-    ],
-    "properties": [
-      "**1d6** Bludgeoning",
-      "light",
-      "mastery: push"
-    ]
   },
   {
     "name": "Amber Birdcage",

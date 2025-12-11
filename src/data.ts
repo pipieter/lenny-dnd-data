@@ -115,6 +115,7 @@ export class Databank {
             if (keysToIgnore.includes(key)) continue;
 
             this.get(key).push(...data[key]);
+            this.get(key).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
         }
     }
 

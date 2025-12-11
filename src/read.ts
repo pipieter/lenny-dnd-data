@@ -82,6 +82,7 @@ export function read(filepaths: string | string[] | undefined): any {
     const data: any[] = [];
 
     if (!Array.isArray(filepaths)) filepaths = [filepaths];
+    filepaths = filepaths.sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
 
     for (const filepath of filepaths) {
         const stats = fs.lstatSync(filepath);
