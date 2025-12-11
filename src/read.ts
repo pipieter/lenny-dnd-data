@@ -80,7 +80,7 @@ export function read(filepaths: string | string[] | undefined): any {
         return {};
     }
 
-    const data: any[] = [];
+    let data: any[] = [];
 
     if (!Array.isArray(filepaths)) filepaths = [filepaths];
     filepaths = filepaths.sort();
@@ -104,5 +104,6 @@ export function read(filepaths: string | string[] | undefined): any {
         return data[0];
     }
 
+    data = data.sort();
     return data.reduce(combineContents, {});
 }
