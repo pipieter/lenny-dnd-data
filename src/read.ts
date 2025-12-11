@@ -81,9 +81,8 @@ export function read(filepaths: string | string[] | undefined): any {
 
     const data: any[] = [];
 
-    if (!Array.isArray(filepaths)) {
-        filepaths = [filepaths];
-    }
+    if (!Array.isArray(filepaths)) filepaths = [filepaths];
+    filepaths.sort(); // Required to ensure Linux & Windows parses the same.
 
     for (const filepath of filepaths) {
         const stats = fs.lstatSync(filepath);
