@@ -21,7 +21,6 @@ interface Item {
     image: string | null;
     value: string | null;
     weight: string | null;
-    ac: string | null;
     type: string[];
     description: Description[];
     properties: string[];
@@ -192,7 +191,6 @@ function parseItem(item: any, data: any): Item {
         image: null,
         value: null,
         weight: null,
-        ac: null,
         type: [],
         description: [],
         properties: [],
@@ -207,11 +205,6 @@ function parseItem(item: any, data: any): Item {
         result.weight = `${parseItemWeight(item.weight)} (${item.weightNote})`;
     } else {
         result.weight = parseItemWeight(item.weight);
-    }
-    if (item.ac) {
-        if (item.type.includes('LA')) result.ac = `AC ${item.ac} + Dex`;
-        else if (item.type.includes('MA')) result.ac = `AC ${item.ac} + Dex (max 2)`;
-        else result.ac = `AC ${item.ac}`;
     }
 
     // Item type information, see render.js:11480 (getHtmlAndTextTypes)
@@ -286,6 +279,13 @@ function parseItem(item: any, data: any): Item {
     }
 
     // Armor properties, if applicable
+    if (item.ac) {
+        if (item.type.includes('LA')) result.properties.push(`AC ${item.ac} + Dex`);
+        else if (item.type.includes('MA')) result.properties.push(`AC ${item.ac} + Dex (max 2)`);
+        else if (item.type.includes('S')) result.properties.push(`+${item.ac} AC`);
+        else result.properties.push(`AC ${item.ac}`);
+    }
+
     if (item.stealth) {
         result.description.push({
             name: 'Stealth Disadvantage',
