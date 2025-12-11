@@ -1,4 +1,4 @@
-import { Databank } from '../data';
+import { Databank, getKey } from '../data';
 
 interface Source {
     id: string;
@@ -18,5 +18,5 @@ export function getSources(data: Databank): Source[] {
         published: book.published,
         author: book.author ?? null,
         group: book.group ?? null,
-    }));
+    })).sort((a, b) => getKey(a.name, a.source).localeCompare(getKey(b.name, b.source)));
 }

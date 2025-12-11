@@ -850,8 +850,8 @@ export function getClassesAndClassFeats(databank: Databank): {
     classes: any[];
     classFeats: ParsedFeat[];
 } {
-    const classes: any[] = [];
-    const classFeats: ParsedFeat[] = [];
+    let classes: any[] = [];
+    let classFeats: ParsedFeat[] = [];
 
     for (const cls of databank.class) {
         const data = getBundledClassData(databank, cls);
@@ -892,5 +892,7 @@ export function getClassesAndClassFeats(databank: Databank): {
         classes.push(characterClass.toJSON());
     }
 
+    classes = classes.sort((a, b) => getKey(a.name, a.source).localeCompare(getKey(b.name, b.source)));
+    classFeats = classFeats.sort((a, b) => getKey(a.name, a.source).localeCompare(getKey(b.name, b.source)));
     return { classes, classFeats };
 }

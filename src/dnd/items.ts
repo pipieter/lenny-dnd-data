@@ -372,7 +372,7 @@ export function getItems(databank: Databank): any[] {
         raw.push(resolveItemEntry(handleCopy(item, items), databank.itemEntry));
     }
 
-    return raw.map((item) => parseItem(item, databank));
+    return raw.map((item) => parseItem(item, databank)).sort();
 }
 
 export function getItemVariants(databank: Databank): any[] {
@@ -389,5 +389,5 @@ export function getItemVariants(databank: Databank): any[] {
         seenVariants.add(key);
     }
 
-    return raw.map((variant) => parseItem(variant, databank));
+    return raw.map((variant) => parseItem(variant, databank)).sort((a, b) => getKey(a.name, a.source).localeCompare(getKey(b.name, b.source)));
 }
