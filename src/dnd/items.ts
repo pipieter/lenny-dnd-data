@@ -3,6 +3,7 @@ import { applySingleTemplate, applyTemplating } from '../5etools-conversion/temp
 import {
     cleanDNDText,
     Description,
+    DescriptionType,
     parseDescriptions,
     parseImageUrl,
     parseItemValue,
@@ -20,6 +21,7 @@ interface Item {
     image: string | null;
     value: string | null;
     weight: string | null;
+    ac: string | null;
     type: string[];
     description: Description[];
     properties: string[];
@@ -190,6 +192,7 @@ function parseItem(item: any, data: any): Item {
         image: null,
         value: null,
         weight: null,
+        ac: null,
         type: [],
         description: [],
         properties: [],
@@ -204,6 +207,11 @@ function parseItem(item: any, data: any): Item {
         result.weight = `${parseItemWeight(item.weight)} (${item.weightNote})`;
     } else {
         result.weight = parseItemWeight(item.weight);
+    }
+    if (item.ac) {
+        if (item.type.includes('LA')) result.ac = `AC ${item.ac} + Dex`;
+        else if (item.type.includes('MA')) result.ac = `AC ${item.ac} + Dex (max 2)`;
+        else result.ac = `AC ${item.ac}`;
     }
 
     // Item type information, see render.js:11480 (getHtmlAndTextTypes)
@@ -275,6 +283,15 @@ function parseItem(item: any, data: any): Item {
     if (item.dmg1) {
         const damage = `**${item.dmg1}** ${DamageTypes.get(item.dmgType)}`;
         result.properties.push(damage);
+    }
+
+    // Armor properties, if applicable
+    if (item.stealth) {
+        result.description.push({
+            name: "Stealth Disadvantage",
+            type: DescriptionType.text,
+            value: "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+        })
     }
 
     // Item properties
