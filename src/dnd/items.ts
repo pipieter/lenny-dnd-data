@@ -372,7 +372,7 @@ export function getItems(databank: Databank): any[] {
         raw.push(resolveItemEntry(handleCopy(item, items), databank.itemEntry));
     }
 
-    return raw.map((item) => parseItem(item, databank)).sort();
+    return keyedSort(raw.map((item) => parseItem(item, databank)));
 }
 
 export function getItemVariants(databank: Databank): any[] {
