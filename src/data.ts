@@ -114,7 +114,7 @@ export class Databank {
         for (const key of Object.keys(data)) {
             if (keysToIgnore.includes(key)) continue;
 
-            this.get(key).push(...data[key]);
+            this.get(key).push(...data[key].sort());
         }
     }
 
