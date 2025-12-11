@@ -123,7 +123,7 @@ export function getSpecies(data: Databank): Species[] {
             name,
             source,
             url,
-            image,
+            image: image ?? null,
             sizes,
             speed,
             creatureType,
