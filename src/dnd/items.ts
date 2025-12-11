@@ -294,6 +294,14 @@ function parseItem(item: any, data: any): Item {
         })
     }
 
+    if (item.strength && item.armor) {
+        result.description.push({
+            name: "Strength Requirement",
+            type: DescriptionType.text,
+            value: `If the wearer has a Strength score lower than ${item.strength}, their speed is reduced by 10 feet.`
+        })
+    }
+
     // Item properties
     for (let p of item.property || []) {
         let note = null;
