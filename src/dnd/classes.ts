@@ -853,11 +853,11 @@ export function getClassesAndClassFeats(databank: Databank): {
     const classes: any[] = [];
     const classFeats: ParsedFeat[] = [];
 
-    for (const cls of databank.class) {
+    for (const cls of keyedSort(databank.class)) {
         const data = getBundledClassData(databank, cls);
 
         const features: ClassFeatureDictionary = {};
-        for (const featureData of data.features) {
+        for (const featureData of keyedSort(data.features)) {
             const feature = new ClassFeature(featureData);
             const key = feature.classKey;
             if (!features[key]) features[key] = [];
@@ -867,14 +867,14 @@ export function getClassesAndClassFeats(databank: Databank): {
         const subclasses: SubclassDictionary = {};
         const subclassFeatures: ClassFeatureDictionary = {};
         if (data.subclassFeatures && data.subclasses) {
-            for (const featureData of data.subclassFeatures) {
+            for (const featureData of keyedSort(data.subclassFeatures)) {
                 const feature = new ClassFeature(featureData);
                 const key = feature.classKey;
                 if (!subclassFeatures[key]) subclassFeatures[key] = [];
                 subclassFeatures[key].push(feature);
             }
 
-            for (const subclassData of data.subclasses) {
+            for (const subclassData of keyedSort(data.subclasses)) {
                 const subclass = new CharacterSubclass(subclassData, subclassFeatures);
                 const key = subclass.key;
                 if (!subclasses[key]) subclasses[key] = subclass;
