@@ -34,7 +34,8 @@ function readIndexFile(filepath: string): object {
     let data: object = {};
     const directory = path.dirname(filepath);
     const contents = readJsonFile(filepath);
-    const files: string[] = Object.values(contents);
+    let files: string[] = Object.values(contents);
+    files = files.sort();
 
     for (const file of files) {
         const contentsPath = path.join(directory, file);
