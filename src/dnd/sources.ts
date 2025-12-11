@@ -1,4 +1,5 @@
 import { Databank } from '../data';
+import { entrySort } from '../util';
 
 interface Source {
     id: string;
@@ -11,7 +12,7 @@ interface Source {
 
 export function getSources(data: Databank): Source[] {
     const books = [...data.book, ...data.adventure];
-    return books.map((book: any) => ({
+    const result = books.map((book: any) => ({
         id: book.id,
         name: book.name,
         source: book.source || book.id,
@@ -19,4 +20,6 @@ export function getSources(data: Databank): Source[] {
         author: book.author ?? null,
         group: book.group ?? null,
     }));
+
+    return result.sort(entrySort);
 }
