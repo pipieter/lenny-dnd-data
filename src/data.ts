@@ -113,9 +113,7 @@ export class Databank {
         const data = read(path);
         for (const key of Object.keys(data)) {
             if (keysToIgnore.includes(key)) continue;
-
             this.get(key).push(...data[key]);
-            this.get(key).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
         }
     }
 
