@@ -18,7 +18,7 @@ function combineContents(a: any, b: any): any {
                 `Object '${JSON.stringify(cb)}' is not an array of objects (key '${key}')`
             );
 
-        combined[key] = [...ca, ...cb];
+        combined[key] = [...ca, ...cb].sort();
     }
 
     return combined;
