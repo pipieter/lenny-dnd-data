@@ -48,7 +48,7 @@ function readIndexFile(filepath: string): object {
 // In case of a raw directory, load all files in that directory
 function readDirectoryFiles(directory: string) {
     let data = {};
-    const files = fs.readdirSync(directory);
+    const files = fs.readdirSync(directory).sort();
     for (const file of files) {
         const contents = readJsonFile(file);
         data = combineContents(data, contents);
@@ -82,7 +82,7 @@ export function read(filepaths: string | string[] | undefined): any {
     const data: any[] = [];
 
     if (!Array.isArray(filepaths)) filepaths = [filepaths];
-    filepaths = filepaths.sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" }));
+    filepaths = filepaths.sort();
 
     for (const filepath of filepaths) {
         const stats = fs.lstatSync(filepath);
