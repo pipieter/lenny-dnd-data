@@ -197,6 +197,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@sup ([^\}]*?)\}/g, '[$1]');
     text = text.replaceAll(/\{@homebrew ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@homebrew ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@skillCheck [^\s]+ (-?\d+)\}/g, '$1');
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
