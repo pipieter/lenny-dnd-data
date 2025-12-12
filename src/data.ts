@@ -17,11 +17,9 @@ export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
 }
 
-export function write(path: string, contents: any) {
+export function write(path: string, contents: object[]) {
     const directory = dirname(path);
-    if (!existsSync(directory)) {
-        mkdirSync(directory, { recursive: true });
-    }
+    if (!existsSync(directory)) mkdirSync(directory, { recursive: true });
     writeFileSync(path, JSON.stringify(contents, null, 2), 'utf-8');
 }
 
