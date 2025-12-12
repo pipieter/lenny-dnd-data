@@ -22,7 +22,7 @@ import * as kleur from 'kleur';
 import { getDeities } from './dnd/deities';
 import { createHash } from 'crypto';
 
-const WrittenData = new Set<string>(); // Stores hashes of data that has been written to files already.
+const filteredData = new Set<string>(); // Stores hashes of data that has been written to files already.
 export function filter(contents: object[]): object[] {
     const filtered: object[] = [];
 
@@ -30,9 +30,9 @@ export function filter(contents: object[]): object[] {
         const hash = createHash('sha256')
             .update(JSON.stringify(content, Object.keys(content).sort()))
             .digest('hex');
-        if (WrittenData.has(hash)) continue;
 
-        WrittenData.add(hash);
+        if (filteredData.has(hash)) continue;
+        filteredData.add(hash);
         filtered.push(content);
     }
 
