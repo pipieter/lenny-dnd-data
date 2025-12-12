@@ -18,11 +18,10 @@ export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
 }
 
-const WrittenData = new Set<string>(); // Stores hashes of the saved objects (in write()), to prevent duplicates.
+const WrittenData = new Set<string>(); // Stores hashes of data that has been written to files already.
+export function filterDuplicates(contents: object[]): object[] {
+    const filtered: object[] = [];
 
-export function write(path: string, contents: any[]) {
-    const directory = dirname(path);
-    const filteredContents: any[] = [];
     for (const content of contents) {
         const hash = createHash('sha256')
             .update(JSON.stringify(content, Object.keys(content).sort()))
@@ -30,11 +29,17 @@ export function write(path: string, contents: any[]) {
         if (WrittenData.has(hash)) continue;
 
         WrittenData.add(hash);
-        filteredContents.push(content);
+        filtered.push(content);
     }
 
+    return filtered;
+}
+
+export function write(path: string, contents: object[]) {
+    const directory = dirname(path);
+    contents = filterDuplicates(contents);
     if (!existsSync(directory)) mkdirSync(directory, { recursive: true });
-    writeFileSync(path, JSON.stringify(filteredContents, null, 2), 'utf-8');
+    writeFileSync(path, JSON.stringify(contents, null, 2), 'utf-8');
 }
 
 export class Databank {
