@@ -20,6 +20,24 @@ import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './dnd/skills';
 import * as kleur from 'kleur';
 import { getDeities } from './dnd/deities';
+import { createHash } from 'crypto';
+
+const WrittenData = new Set<string>(); // Stores hashes of data that has been written to files already.
+export function filter(contents: object[]): object[] {
+    const filtered: object[] = [];
+
+    for (const content of contents) {
+        const hash = createHash('sha256')
+            .update(JSON.stringify(content, Object.keys(content).sort()))
+            .digest('hex');
+        if (WrittenData.has(hash)) continue;
+
+        WrittenData.add(hash);
+        filtered.push(content);
+    }
+
+    return filtered;
+}
 
 function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) {
     stopwatch.log(`Generating ${name}`, kleur.cyan);
@@ -84,29 +102,29 @@ function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) 
     const skills = getSkills(databank);
     stopwatch.log('Skills retrieved.');
 
-    write(`./generated/${name}/items.json`, items);
-    write(`./generated/${name}/itemsvariants.json`, itemVariants);
-    write(`./generated/${name}/spells.json`, spells);
-    write(`./generated/${name}/conditions.json`, conditions);
-    write(`./generated/${name}/diseases.json`, diseases);
-    write(`./generated/${name}/deities.json`, deities);
-    write(`./generated/${name}/creatures.json`, creatures);
-    write(`./generated/${name}/classes.json`, classes);
-    write(`./generated/${name}/classfeats.json`, classFeats);
-    write(`./generated/${name}/rules.json`, rules);
-    write(`./generated/${name}/actions.json`, actions);
-    write(`./generated/${name}/feats.json`, feats);
-    write(`./generated/${name}/languages.json`, languages);
-    write(`./generated/${name}/names.json`, names);
-    write(`./generated/${name}/backgrounds.json`, backgrounds);
-    write(`./generated/${name}/tables.json`, tables);
-    write(`./generated/${name}/species.json`, species);
-    write(`./generated/${name}/sources.json`, sources);
-    write(`./generated/${name}/traps.json`, traps);
-    write(`./generated/${name}/hazards.json`, hazards);
-    write(`./generated/${name}/objects.json`, objects);
-    write(`./generated/${name}/vehicles.json`, vehicles);
-    write(`./generated/${name}/skills.json`, skills);
+    write(`./generated/${name}/items.json`, filter(items));
+    write(`./generated/${name}/itemsvariants.json`, filter(itemVariants));
+    write(`./generated/${name}/spells.json`, filter(spells));
+    write(`./generated/${name}/conditions.json`, filter(conditions));
+    write(`./generated/${name}/diseases.json`, filter(diseases));
+    write(`./generated/${name}/deities.json`, filter(deities));
+    write(`./generated/${name}/creatures.json`, filter(creatures));
+    write(`./generated/${name}/classes.json`, filter(classes));
+    write(`./generated/${name}/classfeats.json`, filter(classFeats));
+    write(`./generated/${name}/rules.json`, filter(rules));
+    write(`./generated/${name}/actions.json`, filter(actions));
+    write(`./generated/${name}/feats.json`, filter(feats));
+    write(`./generated/${name}/languages.json`, filter(languages));
+    write(`./generated/${name}/names.json`, filter(names));
+    write(`./generated/${name}/backgrounds.json`, filter(backgrounds));
+    write(`./generated/${name}/tables.json`, filter(tables));
+    write(`./generated/${name}/species.json`, filter(species));
+    write(`./generated/${name}/sources.json`, filter(sources));
+    write(`./generated/${name}/traps.json`, filter(traps));
+    write(`./generated/${name}/hazards.json`, filter(hazards));
+    write(`./generated/${name}/objects.json`, filter(objects));
+    write(`./generated/${name}/vehicles.json`, filter(vehicles));
+    write(`./generated/${name}/skills.json`, filter(skills));
 }
 
 function main(): void {
