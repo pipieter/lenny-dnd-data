@@ -14,19 +14,19 @@ import { dirname, join } from 'path';
 import { Deity } from './dnd/deities';
 import { createHash } from 'crypto';
 
-
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
 }
 
-let WrittenData = new Set<string>(); // Stores hashes of the parsed objects, to prevent duplicates.
-
+const WrittenData = new Set<string>(); // Stores hashes of the saved objects (in write()), to prevent duplicates.
 
 export function write(path: string, contents: any[]) {
     const directory = dirname(path);
     const filteredContents: any[] = [];
     for (const content of contents) {
-        const hash = createHash("sha256").update(JSON.stringify(content, Object.keys(content).sort())).digest("hex");
+        const hash = createHash('sha256')
+            .update(JSON.stringify(content, Object.keys(content).sort()))
+            .digest('hex');
         if (WrittenData.has(hash)) continue;
 
         WrittenData.add(hash);
