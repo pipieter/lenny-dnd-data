@@ -5,6 +5,7 @@ import {
     DescriptionType,
     parseAlignments,
     parseDescriptions,
+    title,
 } from '../parser';
 import { getDeitiesUrl, getImageUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
@@ -12,7 +13,7 @@ import { joinStringsWithAnd } from '../util';
 export interface Deity {
     name: string;
     source: string;
-    pantheon?: string;
+    pantheon: string;
     alignment?: string[];
     category?: string;
     title?: string;
@@ -48,6 +49,8 @@ interface ParsedDeity {
 
 function parseDeityInlineDescriptions(deity: Deity): Description[] {
     const descriptions: Description[] = [];
+
+    descriptions.push({ name: 'Pantheon', type: DescriptionType.text, value: deity.pantheon });
     if (deity.alignment) {
         const alignments = joinStringsWithAnd(parseAlignments(deity.alignment));
         descriptions.push({ name: 'Alignment', type: DescriptionType.text, value: alignments });
@@ -58,9 +61,6 @@ function parseDeityInlineDescriptions(deity: Deity): Description[] {
     }
     if (deity.category) {
         descriptions.push({ name: 'Category', type: DescriptionType.text, value: deity.category });
-    }
-    if (deity.pantheon) {
-        descriptions.push({ name: 'Pantheon', type: DescriptionType.text, value: deity.pantheon });
     }
     if (deity.province) {
         descriptions.push({ name: 'Province', type: DescriptionType.text, value: deity.province });
@@ -81,8 +81,8 @@ export function getDeities(data: Databank): ParsedDeity[] {
         return {
             name: d.name,
             source: d.source,
-            subtitle: d.title ?? `${d.pantheon} Deity`,
-            url: getDeitiesUrl(d.name, d.source),
+            subtitle: d.title ? title(d.title) : `${d.pantheon} Deity`,
+            url: getDeitiesUrl(d.name, d.source, d.pantheon),
             imgUrl: d.symbolImg ? getImageUrl(d.symbolImg.href.path) : null,
             inlineDescription: parseDeityInlineDescriptions(d),
             description: d.entries ? parseDescriptions('', d.entries) : [],
