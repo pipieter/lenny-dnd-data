@@ -5,6 +5,7 @@ import {
     DescriptionType,
     parseAlignments,
     parseDescriptions,
+    title,
 } from '../parser';
 import { getDeitiesUrl, getImageUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
@@ -81,7 +82,7 @@ export function getDeities(data: Databank): ParsedDeity[] {
         return {
             name: d.name,
             source: d.source,
-            subtitle: d.title ?? `${d.pantheon} Deity`,
+            subtitle: d.title ? title(d.title) : `${d.pantheon} Deity`,
             url: getDeitiesUrl(d.name, d.source),
             imgUrl: d.symbolImg ? getImageUrl(d.symbolImg.href.path) : null,
             inlineDescription: parseDeityInlineDescriptions(d),
