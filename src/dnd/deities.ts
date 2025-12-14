@@ -1,20 +1,26 @@
 import { Databank } from '../data';
-import { Description, DescriptionType, parseAlignments, parseDescriptions } from '../parser';
+import {
+    cleanDNDText,
+    Description,
+    DescriptionType,
+    parseAlignments,
+    parseDescriptions,
+} from '../parser';
 import { getDeitiesUrl, getImageUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
 export interface Deity {
     name: string;
     source: string;
-    pantheon: string;
+    pantheon?: string;
     alignment?: string[];
-    category: string;
+    category?: string;
     title?: string;
     worshipers?: string;
     plane?: string;
     domains?: string[];
-    province: string;
-    symbol: string;
+    province?: string;
+    symbol?: string;
     symbolImg?: DeitySymbolImg;
     entries?: string[];
 }
@@ -43,24 +49,30 @@ interface ParsedDeity {
 function parseDeityInlineDescriptions(deity: Deity): Description[] {
     const descriptions: Description[] = [];
     if (deity.alignment) {
-        const alignments = parseAlignments(deity.alignment);
-        descriptions.push({
-            name: 'Alignment',
-            type: DescriptionType.text,
-            value: joinStringsWithAnd(alignments),
-        });
+        const alignments = joinStringsWithAnd(parseAlignments(deity.alignment));
+        descriptions.push({ name: 'Alignment', type: DescriptionType.text, value: alignments });
     }
     if (deity.domains) {
+        const domains = joinStringsWithAnd(deity.domains);
+        descriptions.push({ name: 'Domains', type: DescriptionType.text, value: domains });
+    }
+    if (deity.category) {
+        descriptions.push({ name: 'Category', type: DescriptionType.text, value: deity.category });
+    }
+    if (deity.pantheon) {
+        descriptions.push({ name: 'Pantheon', type: DescriptionType.text, value: deity.pantheon });
+    }
+    if (deity.province) {
+        descriptions.push({ name: 'Province', type: DescriptionType.text, value: deity.province });
+    }
+    if (deity.symbol) {
         descriptions.push({
-            name: 'Domains',
+            name: 'Symbol',
             type: DescriptionType.text,
-            value: joinStringsWithAnd(deity.domains),
+            value: cleanDNDText(deity.symbol),
         });
     }
-    descriptions.push({ name: 'Category', type: DescriptionType.text, value: deity.category });
-    descriptions.push({ name: 'Pantheon', type: DescriptionType.text, value: deity.pantheon });
-    descriptions.push({ name: 'Province', type: DescriptionType.text, value: deity.province });
-    descriptions.push({ name: 'Symbol', type: DescriptionType.text, value: deity.symbol });
+
     return descriptions;
 }
 
@@ -72,7 +84,7 @@ export function getDeities(data: Databank): ParsedDeity[] {
             subtitle: d.title ?? `${d.pantheon} Deity`,
             url: getDeitiesUrl(d.name, d.source),
             imgUrl: d.symbolImg ? getImageUrl(d.symbolImg.href.path) : null,
-            inlineDescription: parseDeityInlineDescriptions(d), // TODO
+            inlineDescription: parseDeityInlineDescriptions(d),
             description: d.entries ? parseDescriptions('', d.entries) : [],
         };
     });
