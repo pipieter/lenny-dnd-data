@@ -1,6 +1,6 @@
 import { join } from 'path';
 import { Databank } from '../data';
-import { Description, DescriptionType, parseAlignments, parseDescriptions } from '../parser';
+import { cleanDNDText, Description, DescriptionType, parseAlignments, parseDescriptions } from '../parser';
 import { getDeitiesUrl, getImageUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
@@ -61,7 +61,7 @@ function parseDeityInlineDescriptions(deity: Deity): Description[] {
         descriptions.push({ name: 'Province', type: DescriptionType.text, value: deity.province });
     }
     if (deity.symbol) {
-        descriptions.push({ name: 'Symbol', type: DescriptionType.text, value: deity.symbol });
+        descriptions.push({ name: 'Symbol', type: DescriptionType.text, value: cleanDNDText(deity.symbol) });
     }
 
     return descriptions;
