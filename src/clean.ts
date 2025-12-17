@@ -9,6 +9,8 @@ import {
     getTrapsUrl,
 } from './urls';
 
+// Note: all regexes should end with a g, which stands for "global"
+
 declare global {
     interface String {
         clean(func: (text: string, noFormat: boolean) => string, noFormat: boolean): string;
@@ -21,6 +23,31 @@ String.prototype.clean = function (
 ): string {
     return func(this.toString(), noFormat);
 };
+
+function styles(text: string, noFormat: boolean): string {
+    text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    if (noFormat) {
+        // Very specific case for Keith Baker's Frontiers of Eberron Quickstone, where
+        // A nested object with @i is used that completely surrounds another object.
+        // TODO a better solution would be to adapt the function to handle recursive styling
+        text = text.replaceAll(/^\{@i (.*)\}$/g, '$1');
+
+        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
+    } else {
+        // Idem Keith baker
+        text = text.replaceAll(/^\{@i (.*)\}$/g, '*$1*');
+
+        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
+        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
+        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
+    }
+
+    return text;
+}
 
 function atk(text: string, _noFormat: boolean): string {
     // converterutils-creature.js:584
@@ -62,36 +89,50 @@ function action(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function adventure(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
+    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    return text;
+}
+
+function area(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(/\{@area ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    return text;
+}
+
+function background(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
+        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(/\{@background ([^\}]*?)\}/g, `$1`);
+    } else {
+        text = text.replaceAll(
+            /\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, p2, p3) => `[${p3}](${getBackgroundsUrl(p1, p2)})`
+        );
+        text = text.replaceAll(
+            /\{@background ([^\}]*?)\|([^\}]*?)\}/g,
+            (_, p1, __) => `[${p1}](${getBackgroundsUrl(p1)})`
+        );
+        text = text.replaceAll(
+            /\{@background ([^\}]*?)\}/g,
+            (_, p1) => `[${p1}](${getBackgroundsUrl(p1)})`
+        );
+    }
+
+    return text;
+}
+
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
-    text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    if (noFormat) {
-        // Very specific case for Keith Baker's Frontiers of Eberron Quickstone, where
-        // A nested object with @i is used that completely surrounds another object.
-        // TODO a better solution would be to adapt the function to handle recursive styling
-        text = text.replaceAll(/^\{@i (.*)\}$/g, '$1');
-
-        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
-    } else {
-        // Idem Keith baker
-        text = text.replaceAll(/^\{@i (.*)\}$/g, '*$1*');
-
-        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
-        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
-        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
-        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
-    }
+    text = text.clean(styles, noFormat);
 
     text = text.clean(atk, noFormat);
     text = text.clean(action, noFormat);
+    text = text.clean(adventure, noFormat);
+    text = text.clean(area, noFormat);
+    text = text.clean(background, noFormat);
 
-    // Note: all regexes should end with a g, which stands for "global"
-    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
-    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@area ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -162,9 +203,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
-        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
-        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@background ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
@@ -248,18 +286,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(
             /\{@5etools ([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`
-        );
-        text = text.replaceAll(
-            /\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2, p3) => `[${p3}](${getBackgroundsUrl(p1, p2)})`
-        );
-        text = text.replaceAll(
-            /\{@background ([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, __) => `[${p1}](${getBackgroundsUrl(p1)})`
-        );
-        text = text.replaceAll(
-            /\{@background ([^\}]*?)\}/g,
-            (_, p1) => `[${p1}](${getBackgroundsUrl(p1)})`
         );
         text = text.replaceAll(
             /\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
