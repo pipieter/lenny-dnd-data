@@ -250,6 +250,22 @@ function deity(text: string, noFormat: boolean): string {
     return text;
 }
 
+function dice(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(/\{@dice #\$prompt([^\}]*?)\|([^\}]*?)\}/g, '$2'); // See rule Carrying Capacity
+    text = text.replaceAll(pattern('dice', 3), '$1 ($3)');
+    text = text.replaceAll(pattern('dice', 2), '$1 ($2)');
+    text = text.replaceAll(pattern('dice', 1), '$1');
+    return text;
+}
+
+function filter(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('filter', 4), '$1');
+    text = text.replaceAll(pattern('filter', 3), '$1');
+    text = text.replaceAll(pattern('filter', 2), '$1');
+    text = text.replaceAll(pattern('filter', 1), '$1');
+    return text;
+}
+
 /* =========================================================
  * Main function
  * ========================================================= */
@@ -281,15 +297,9 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.clean(dc, noFormat);
     text = text.clean(deck, noFormat);
     text = text.clean(deity, noFormat);
+    text = text.clean(dice, noFormat);
+    text = text.clean(filter, noFormat);
 
-    text = text.replaceAll(/\{@dice #\$prompt([^\}]*?)\|([^\}]*?)\}/g, '$2'); // See rule Carrying Capacity
-    text = text.replaceAll(/\{@dice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($3)');
-    text = text.replaceAll(/\{@dice ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
-    text = text.replaceAll(/\{@dice ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@filter ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@filter ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@hazard ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@hazard ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@hit ([^\}]*?)\}/g, '$1');
