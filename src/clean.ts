@@ -9,8 +9,6 @@ import {
     getTrapsUrl,
 } from './urls';
 
-// Note: all regexes should end with a g, which stands for "global"
-
 declare global {
     interface String {
         clean(func: (text: string, noFormat: boolean) => string, noFormat: boolean): string;
@@ -23,6 +21,29 @@ String.prototype.clean = function (
 ): string {
     return func(this.toString(), noFormat);
 };
+
+/**
+ * Creates a regular expression to match the 5e.tools patterns. For example, the pattern
+ * `{@item spellbook|PHB}` would be generated using `pattern('item', 2)`, as the expression
+ *  classifier is `item` and and the contents contains two sections.
+ *
+ * @param name The classifier of the 5e.tools pattern.
+ * @param count The amount of components in the 5e.tools pattern.
+ * @returns A regular expression which would match the requested 5e.tools expression.
+ */
+function pattern(name: string, count: number) {
+    const single = '([^\\}]*?)'; // A greedy regex that catches as many letters as possible, that aren't '}'
+    const elements = Array.from({ length: count }, () => single).flat();
+
+    // This regular expression would catch {@name *|*|...}, based on the number of components
+    const regexp = `\\{@${name} ${elements.join('\\|')}\\}`;
+
+    return new RegExp(regexp, 'g');
+}
+
+/* =========================================================
+ * Format functions
+ * ========================================================= */
 
 function styles(text: string, noFormat: boolean): string {
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -83,9 +104,9 @@ function atk(text: string, _noFormat: boolean): string {
 }
 
 function action(text: string, _noFormat: boolean): string {
-    text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-    text = text.replaceAll(/\{@action ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@action ([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(pattern('action', 3), '$3');
+    text = text.replaceAll(pattern('action', 2), '$1');
+    text = text.replaceAll(pattern('action', 1), '$1');
     return text;
 }
 
@@ -140,6 +161,10 @@ function chance(text: string, _noFormat: boolean): string {
     text = text.replaceAll(/\{@chance ([^\}]*?)\}/g, '$1 percent');
     return text;
 }
+
+/* =========================================================
+ * Main function
+ * ========================================================= */
 
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
