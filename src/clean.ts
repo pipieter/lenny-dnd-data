@@ -374,6 +374,19 @@ function loader(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function object(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('object', 3), `$3`);
+        text = text.replaceAll(pattern('object', 2), '$1');
+        text = text.replaceAll(pattern('object', 1), '$1');
+    } else {
+        text = text.replaceAll(pattern('object', 3), `__$3__`);
+        text = text.replaceAll(pattern('object', 2), '__$1__');
+        text = text.replaceAll(pattern('object', 1), '__$1__');
+    }
+    return text;
+}
+
 function optfeature(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('optfeature', 2), '$1');
     text = text.replaceAll(pattern('optfeature', 1), '$1');
@@ -502,6 +515,23 @@ function table(text: string, noFormat: boolean): string {
     return text;
 }
 
+function trap(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('trap', 3), `$3`);
+        text = text.replaceAll(pattern('trap', 2), `$1`);
+    } else {
+        text = text.replaceAll(
+            pattern('trap', 3),
+            (_, p1, p2, p3) => `[${p3}](${getTrapsUrl(p1, p2)})`
+        );
+        text = text.replaceAll(
+            pattern('trap', 2),
+            (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`
+        );
+    }
+    return text;
+}
+
 /* =========================================================
  * Main function
  * ========================================================= */
@@ -543,6 +573,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         language,
         link,
         loader,
+        object,
         optfeature,
         quickref,
         race,
@@ -559,6 +590,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         status,
         sup,
         table,
+        trap,
     ];
 
     for (const func of functions) {
@@ -566,12 +598,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     }
 
     if (noFormat) {
-        text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
-        text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@object ([^\}]*?)\| ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@object ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@feat ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(
@@ -596,12 +623,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`
         );
         text = text.replaceAll(
-            /\{@object ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2, p3) => `[${p3}](${getObjectsUrl(p1, p2)})`
-        );
-        text = text.replaceAll(/\{@object ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(/\{@object ([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(
             /\{@feat ([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2) => `[${p1}](${getFeatsUrl(p1, p2)})`
         );
@@ -616,10 +637,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         );
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(
-            /\{@trap ([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`
-        );
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
