@@ -525,6 +525,24 @@ function status(text: string, noFormat: boolean): string {
     return text;
 }
 
+function subclass(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('subclass', 4), `$1`);
+    } else {
+        text = text.replaceAll(pattern('subclass', 4), `__$1__`);
+    }
+    return text;
+}
+
+function subclassFeature(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('subclassFeature', 6), `$1`);
+    } else {
+        text = text.replaceAll(pattern('subclassFeature', 6), `__$1__`);
+    }
+    return text;
+}
+
 function sup(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('sup', 1), '[$1]');
     return text;
@@ -645,6 +663,8 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         skillCheck,
         spell,
         status,
+        subclass,
+        subclassFeature,
         sup,
         table,
         trap,
@@ -657,11 +677,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     }
 
     if (noFormat) {
-        text = text.replaceAll(
-            /\{@subclassFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            `$1`
-        );
-        text = text.replaceAll(/\{@subclass ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@actSaveSuccess\}/g, 'Success');
         text = text.replaceAll(/\{@actSaveFail\}/g, 'Failure');
         text = text.replaceAll(
@@ -669,14 +684,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
         );
     } else {
-        text = text.replaceAll(
-            /\{@subclassFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            `__$1__`
-        );
-        text = text.replaceAll(
-            /\{@subclass ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            `__$1__`
-        );
         text = text.replaceAll(/\{@actSaveSuccess\}/g, '*Success*');
         text = text.replaceAll(/\{@actSaveFail\}/g, '*Failure*');
         text = text.replaceAll(
