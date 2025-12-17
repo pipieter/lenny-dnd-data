@@ -130,6 +130,7 @@ function action(text: string, _noFormat: boolean): string {
 function adventure(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('adventure', 3), '$1 ($2)');
     text = text.replaceAll(pattern('adventure', 2), '$1');
+    text = text.replaceAll(pattern('adventure', 1), '$1');
     return text;
 }
 
@@ -256,6 +257,11 @@ function dc(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function dcYourSpellSave(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('dcYourSpellSave', 0), 'your spell save DC');
+    return text;
+}
+
 function deck(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('deck', 2), '$1');
     text = text.replaceAll(pattern('deck', 1), '$1');
@@ -319,6 +325,12 @@ function hit(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('h', 0), '*Hit:* ');
     }
 
+    return text;
+}
+
+function homebrew(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('homebrew', 2), '$1');
+    text = text.replaceAll(pattern('homebrew', 1), '$1');
     return text;
 }
 
@@ -391,8 +403,25 @@ function variantrule(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function recharge(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('recharge', 1), '');
+    text = text.replaceAll(pattern('recharge', 0), '');
+    return text;
+}
+
 function reward(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('reward', 2), '$1');
+    return text;
+}
+
+function skillCheck(text: string, _noFormat: boolean): string {
+    // Special case
+    text = text.replaceAll(/\{@skillCheck [^\s]+ (-?\d+)\}/g, '$1');
+    return text;
+}
+
+function sup(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('sup', 1), '[$1]');
     return text;
 }
 
@@ -414,9 +443,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         chance,
         class$,
         classFeature,
-        // Color is applied twice, because of 'Mage Hand Press; Dark Matter - 2024.json' which contains nested colors
-        // TODO a better solution would be try to repeat the entire clean-up multiple times
-        color,
+        color, // Color is applied twice, because of 'Mage Hand Press; Dark Matter - 2024.json' which contains nested colors
         color,
         comic,
         condition,
@@ -424,6 +451,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         d20,
         damage,
         dc,
+        dcYourSpellSave,
         deck,
         deity,
         dice,
@@ -431,6 +459,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         filter,
         hazard,
         hit,
+        homebrew,
         item,
         itemProperty,
         language,
@@ -442,21 +471,15 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         sense,
         table,
         variantrule,
+        recharge,
         reward,
+        skillCheck,
+        sup,
     ];
 
     for (const func of functions) {
         text = text.clean(func, noFormat);
     }
-
-    text = text.replaceAll(/\{@recharge}/g, '');
-    text = text.replaceAll(/\{@recharge ([^\}]*?)}/g, '');
-    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@dcYourSpellSave\}/g, 'your spell save DC');
-    text = text.replaceAll(/\{@sup ([^\}]*?)\}/g, '[$1]');
-    text = text.replaceAll(/\{@homebrew ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@homebrew ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@skillCheck [^\s]+ (-?\d+)\}/g, '$1');
 
     if (noFormat) {
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '$1');
