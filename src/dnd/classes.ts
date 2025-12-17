@@ -3,7 +3,6 @@ import { ParsedFeat } from './feats';
 import {
     capitalize,
     checkForDisallowedSymbols,
-    cleanDNDText,
     Description,
     DescriptionType,
     parseAbilityScore,
@@ -13,6 +12,7 @@ import {
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
 import { BulletPoint, joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
+import { cleanDNDText } from '../clean';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ClassFeature[];

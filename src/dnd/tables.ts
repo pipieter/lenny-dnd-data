@@ -1,6 +1,6 @@
+import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import {
-    cleanDNDText,
     Description,
     DescriptionType,
     parseDescriptionFromTable,
