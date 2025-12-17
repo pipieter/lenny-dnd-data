@@ -327,6 +327,42 @@ function itemProperty(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function language(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('language', 3), '$3');
+    text = text.replaceAll(pattern('language', 2), '$1 ($2)');
+    text = text.replaceAll(pattern('language', 1), '$1');
+    return text;
+}
+
+function link(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('link', 2), '[$1]($2)');
+    return text;
+}
+
+function loader(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('loader', 2), '$1');
+    return text;
+}
+
+function optfeature(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('optfeature', 2), '$1');
+    text = text.replaceAll(pattern('optfeature', 1), '$1');
+    return text;
+}
+
+function quickref(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('quickref', 3), '$1');
+    text = text.replaceAll(pattern('quickref', 1), '$1');
+    return text;
+}
+
+function race(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('race', 3), '$3');
+    text = text.replaceAll(pattern('race', 2), '$1');
+    text = text.replaceAll(pattern('race', 1), '$1');
+    return text;
+}
+
 /* =========================================================
  * Main function
  * ========================================================= */
@@ -364,24 +400,18 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         hit,
         item,
         itemProperty,
+        language,
+        link,
+        loader,
+        optfeature,
+        quickref,
+        race,
     ];
 
     for (const func of functions) {
         text = text.clean(func, noFormat);
     }
 
-    text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-    text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
-    text = text.replaceAll(/\{@language ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@link ([^\}]*?)\|([^\}]*?)\}/g, '[$1]($2)');
-    text = text.replaceAll(/\{@loader ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@optfeature ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@optfeature ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@quickref ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@quickref ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@race ([^\}]*?)\|\|([^\}]*?)\}/g, '$2');
-    text = text.replaceAll(/\{@race ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@race ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@sense ([^\}]*?)\|[^\}]*?\}/g, '$1');
     text = text.replaceAll(/\{@sense ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@table ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
