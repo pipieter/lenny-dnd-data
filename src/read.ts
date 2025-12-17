@@ -10,13 +10,9 @@ function combineContents(a: any, b: any): any {
         const cb = b[key] || [];
 
         if (!Array.isArray(ca))
-            throw new Error(
-                `Object '${JSON.stringify(ca)}' is not an array of objects (key '${key}')`
-            );
+            throw new Error(`Object '${JSON.stringify(ca)}' is not an array of objects (key '${key}')`);
         if (!Array.isArray(cb))
-            throw new Error(
-                `Object '${JSON.stringify(cb)}' is not an array of objects (key '${key}')`
-            );
+            throw new Error(`Object '${JSON.stringify(cb)}' is not an array of objects (key '${key}')`);
 
         combined[key] = [...ca, ...cb];
     }

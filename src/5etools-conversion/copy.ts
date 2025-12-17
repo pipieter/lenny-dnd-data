@@ -165,9 +165,7 @@ function addMod_removeSpells(base: any, mod: any) {
     if (mod.daily) {
         for (const level of Object.keys(mod.daily)) {
             const list: any[] = mod.daily[level];
-            spellcasting.daily[level].spells = spellcasting.daily[level].filter(
-                (spell: any) => !list.includes(spell)
-            );
+            spellcasting.daily[level].spells = spellcasting.daily[level].filter((spell: any) => !list.includes(spell));
         }
     }
 }
@@ -211,17 +209,7 @@ function addMod_addSpells(base: any, mod: any) {
         mod[prop].forEach((sp: any) => (spellcasting[prop] = spellcasting[prop] || []).push(sp));
     });
 
-    [
-        'recharge',
-        'legendary',
-        'charges',
-        'rest',
-        'restLong',
-        'daily',
-        'weekly',
-        'monthly',
-        'yearly',
-    ].forEach((prop) => {
+    ['recharge', 'legendary', 'charges', 'rest', 'restLong', 'daily', 'weekly', 'monthly', 'yearly'].forEach((prop) => {
         if (!mod[prop]) return;
 
         for (let i = 1; i <= 9; ++i) {
@@ -230,15 +218,11 @@ function addMod_addSpells(base: any, mod: any) {
             spellcasting[prop] = spellcasting[prop] || {};
 
             if (mod[prop][i]) {
-                mod[prop][i].forEach((sp: any) =>
-                    (spellcasting[prop][i] = spellcasting[prop][i] || []).push(sp)
-                );
+                mod[prop][i].forEach((sp: any) => (spellcasting[prop][i] = spellcasting[prop][i] || []).push(sp));
             }
 
             if (mod[prop][e]) {
-                mod[prop][e].forEach((sp: any) =>
-                    (spellcasting[prop][e] = spellcasting[prop][e] || []).push(sp)
-                );
+                mod[prop][e].forEach((sp: any) => (spellcasting[prop][e] = spellcasting[prop][e] || []).push(sp));
             }
         }
     });
@@ -363,16 +347,8 @@ export function handleVersions(base: any): any[] {
             let abstract = structuredClone(baseVersion._abstract) || {};
 
             for (const variable of Object.keys(implementation._variables)) {
-                version = applySingleTemplate(
-                    version,
-                    variable,
-                    implementation._variables[variable]
-                );
-                abstract = applySingleTemplate(
-                    abstract,
-                    variable,
-                    implementation._variables[variable]
-                );
+                version = applySingleTemplate(version, variable, implementation._variables[variable]);
+                abstract = applySingleTemplate(abstract, variable, implementation._variables[variable]);
             }
 
             delete version._versions;

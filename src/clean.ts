@@ -8,10 +8,7 @@ declare global {
     }
 }
 
-String.prototype.clean = function (
-    func: (text: string, noFormat: boolean) => string,
-    noFormat: boolean
-): string {
+String.prototype.clean = function (func: (text: string, noFormat: boolean) => string, noFormat: boolean): string {
     return func(this.toString(), noFormat);
 };
 
@@ -84,25 +81,16 @@ function $5etools(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('5etools', 2), `$1`);
     } else {
-        text = text.replaceAll(
-            pattern('5etools', 2),
-            (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`
-        );
+        text = text.replaceAll(pattern('5etools', 2), (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`);
     }
     return text;
 }
 
 function actSave(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(
-            pattern('actSave', 1),
-            (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
-        );
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`);
     } else {
-        text = text.replaceAll(
-            pattern('actSave', 1),
-            (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:*`
-        );
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:*`);
     }
     return text;
 }
@@ -183,18 +171,9 @@ function background(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('background', 2), `$1`);
         text = text.replaceAll(pattern('background', 1), `$1`);
     } else {
-        text = text.replaceAll(
-            pattern('background', 3),
-            (_, p1, p2, p3) => `[${p3}](${getBackgroundsUrl(p1, p2)})`
-        );
-        text = text.replaceAll(
-            pattern('background', 2),
-            (_, p1, __) => `[${p1}](${getBackgroundsUrl(p1)})`
-        );
-        text = text.replaceAll(
-            pattern('background', 1),
-            (_, p1) => `[${p1}](${getBackgroundsUrl(p1)})`
-        );
+        text = text.replaceAll(pattern('background', 3), (_, p1, p2, p3) => `[${p3}](${getBackgroundsUrl(p1, p2)})`);
+        text = text.replaceAll(pattern('background', 2), (_, p1, __) => `[${p1}](${getBackgroundsUrl(p1)})`);
+        text = text.replaceAll(pattern('background', 1), (_, p1) => `[${p1}](${getBackgroundsUrl(p1)})`);
     }
 
     return text;
@@ -585,14 +564,8 @@ function table(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('table', 2), '$1');
         text = text.replaceAll(pattern('table', 1), `$1`);
     } else {
-        text = text.replaceAll(
-            pattern('table', 3),
-            (_, p1, p2, p3) => `[${p3}](${getTablesUrl(p1, p2)})`
-        );
-        text = text.replaceAll(
-            pattern('table', 2),
-            (_, p1, p2) => `[${p1}](${getTablesUrl(p1, p2)})`
-        );
+        text = text.replaceAll(pattern('table', 3), (_, p1, p2, p3) => `[${p3}](${getTablesUrl(p1, p2)})`);
+        text = text.replaceAll(pattern('table', 2), (_, p1, p2) => `[${p1}](${getTablesUrl(p1, p2)})`);
         text = text.replaceAll(pattern('table', 1), (_, p1) => `[${p1}](${getTablesUrl(p1)})`);
     }
     return text;
@@ -603,14 +576,8 @@ function trap(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('trap', 3), `$3`);
         text = text.replaceAll(pattern('trap', 2), `$1`);
     } else {
-        text = text.replaceAll(
-            pattern('trap', 3),
-            (_, p1, p2, p3) => `[${p3}](${getTrapsUrl(p1, p2)})`
-        );
-        text = text.replaceAll(
-            pattern('trap', 2),
-            (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`
-        );
+        text = text.replaceAll(pattern('trap', 3), (_, p1, p2, p3) => `[${p3}](${getTrapsUrl(p1, p2)})`);
+        text = text.replaceAll(pattern('trap', 2), (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`);
     }
     return text;
 }

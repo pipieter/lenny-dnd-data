@@ -154,8 +154,7 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
     const results = [];
     for (const item of items) {
         const result = Object.assign({}, item, variant.inherits);
-        result.name =
-            (variant.inherits.namePrefix || '') + item.name + (variant.inherits.nameSuffix || '');
+        result.name = (variant.inherits.namePrefix || '') + item.name + (variant.inherits.nameSuffix || '');
 
         // Overwrite or combine entries
         if (variant.entries) {
@@ -252,8 +251,7 @@ function parseItem(item: any, data: any): Item {
         if (item.reqAttune) {
             if (item.reqAttune === true) attune = ' (requires attunement)';
             else if (item.reqAttune === 'optional') attune = ' (attunement optional)';
-            else if (item.reqAttune.startsWith('by'))
-                attune = ` (requires attunement ${cleanDNDText(item.reqAttune)})`;
+            else if (item.reqAttune.startsWith('by')) attune = ` (requires attunement ${cleanDNDText(item.reqAttune)})`;
         }
 
         if (item.rarity === 'none' || item.rarity.startsWith('unknown')) {
@@ -321,15 +319,10 @@ function parseItem(item: any, data: any): Item {
         } else {
             const entries = property.entries || property.entriesTemplate || [];
             if (entries.length === 0) continue;
-            if (entries.length > 1)
-                throw `Found property with more than one entry '${property.abbreviation}`;
+            if (entries.length > 1) throw `Found property with more than one entry '${property.abbreviation}`;
 
             const entry = entries[0];
-            const template = applyItemPropertyTemplate(
-                item,
-                entry,
-                property.template
-            ).toLowerCase();
+            const template = applyItemPropertyTemplate(item, entry, property.template).toLowerCase();
             result.properties.push(template);
 
             // Apply template to entries of entry (required for Extended Reach)
@@ -378,9 +371,7 @@ export function getItems(databank: Databank): any[] {
 
 export function getItemVariants(databank: Databank): any[] {
     const items = [...databank.item, ...databank.baseitem];
-    const variants = databank.magicvariant.flatMap((m: any) =>
-        resolveMagicVariant(m, databank.baseitem)
-    );
+    const variants = databank.magicvariant.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem));
     const seenVariants = new Set();
     const raw: any[] = [];
     for (const variant of variants) {

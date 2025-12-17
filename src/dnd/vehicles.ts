@@ -164,15 +164,11 @@ function getVehicleDescription(vehicle: Vehicle): Description[] {
     if (vehicle.action) description.push(...parseDescriptions('Actions', vehicle.action));
 
     if (vehicle.control)
-        description.push(
-            ...vehicle.control.flatMap((c) => parseDescriptions(`Control: ${c.name}`, c.entries))
-        );
+        description.push(...vehicle.control.flatMap((c) => parseDescriptions(`Control: ${c.name}`, c.entries)));
 
     if (vehicle.movement) {
         const movements = vehicle.movement.map((m) => {
-            const speedText = m.speed
-                .map((s) => `*${capitalize(s.mode)} speed:* ${s.entries.join('\n')}`)
-                .join('\n\n');
+            const speedText = m.speed.map((s) => `*${capitalize(s.mode)} speed:* ${s.entries.join('\n')}`).join('\n\n');
 
             return {
                 name: `Movement: ${m.name}`,
@@ -185,9 +181,7 @@ function getVehicleDescription(vehicle: Vehicle): Description[] {
     }
 
     if (vehicle.weapon)
-        description.push(
-            ...vehicle.weapon.flatMap((w) => parseDescriptions(`Weapon: ${w.name}`, w.entries))
-        );
+        description.push(...vehicle.weapon.flatMap((w) => parseDescriptions(`Weapon: ${w.name}`, w.entries)));
 
     return description;
 }
@@ -248,8 +242,7 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
     };
     for (const upgradeType of upgrade.upgradeType) {
         const type = typeMap[upgradeType];
-        if (!type)
-            throw `Unsupported vehicle upgrade type in ${upgrade.name}: ${upgrade.upgradeType}`;
+        if (!type) throw `Unsupported vehicle upgrade type in ${upgrade.name}: ${upgrade.upgradeType}`;
         types.push(type);
     }
 
