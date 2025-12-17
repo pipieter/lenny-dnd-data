@@ -22,6 +22,9 @@ String.prototype.clean = function (
     return func(this.toString(), noFormat);
 };
 
+// Cache to store already created regular expressions
+const PatternCache: Record<string, RegExp> = {};
+
 /**
  * Creates a regular expression to match the 5e.tools patterns. For example, the pattern
  * `{@item spellbook|PHB}` would be generated using `pattern('item', 2)`, as the expression
@@ -35,18 +38,23 @@ String.prototype.clean = function (
  * @returns A regular expression which would match the requested 5e.tools expression.
  */
 function pattern(name: string, count: number) {
-    if (count <= 0) {
-        const regexp = `\\{@${name}\\}`;
-        return new RegExp(regexp, 'g');
+    const cacheKey = `${name}-${count}`;
+    const cacheEntry = PatternCache[cacheKey];
+    if (cacheEntry) {
+        return cacheEntry;
     }
 
-    const single = '([^\\}]*?)'; // A greedy regex that catches as many letters as possible, that aren't '}'
-    const elements = Array.from({ length: count }, () => single).flat();
+    let regexp = new RegExp(`\\{@${name}\\}`, 'g');
+    if (count > 0) {
+        const single = '([^\\}]*?)'; // A greedy regex that catches as many letters as possible, that aren't '}'
+        const elements = Array.from({ length: count }, () => single).flat();
 
-    // This regular expression would catch {@name *|*|...}, based on the number of components
-    const regexp = `\\{@${name} ${elements.join('\\|')}\\}`;
+        // This regular expression would catch {@name *|*|...}, based on the number of components
+        regexp = new RegExp(`\\{@${name} ${elements.join('\\|')}\\}`, 'g');
+    }
 
-    return new RegExp(regexp, 'g');
+    PatternCache[cacheKey] = regexp;
+    return regexp;
 }
 
 /* =========================================================
