@@ -566,6 +566,26 @@ function trap(text: string, noFormat: boolean): string {
     return text;
 }
 
+function vehicle(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('vehicle', 2), `$1`);
+        text = text.replaceAll(pattern('vehicle', 1), `$1`);
+    } else {
+        text = text.replaceAll(pattern('vehicle', 2), `__$1__`);
+        text = text.replaceAll(pattern('vehicle', 1), `__$1__`);
+    }
+    return text;
+}
+
+function vehupgrade(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('vehupgrade', 2), `$1`);
+    } else {
+        text = text.replaceAll(pattern('vehupgrade', 2), `__$1__`);
+    }
+    return text;
+}
+
 /* =========================================================
  * Main function
  * ========================================================= */
@@ -628,6 +648,8 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         sup,
         table,
         trap,
+        vehicle,
+        vehupgrade,
     ];
 
     for (const func of functions) {
@@ -640,9 +662,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             `$1`
         );
         text = text.replaceAll(/\{@subclass ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@actSaveSuccess\}/g, 'Success');
         text = text.replaceAll(/\{@actSaveFail\}/g, 'Failure');
         text = text.replaceAll(
@@ -658,9 +677,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             /\{@subclass ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             `__$1__`
         );
-        text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@actSaveSuccess\}/g, '*Success*');
         text = text.replaceAll(/\{@actSaveFail\}/g, '*Failure*');
         text = text.replaceAll(
