@@ -166,14 +166,14 @@ function chance(text: string, _noFormat: boolean): string {
 }
 
 function class$(text: string, noFormat: boolean): string {
-    text = text.replaceAll(pattern('class', 5), `$3`);
-
     if (noFormat) {
+        text = text.replaceAll(pattern('class', 5), `$3`);
         text = text.replaceAll(pattern('class', 4), `$3`);
         text = text.replaceAll(pattern('class', 3), `$3`);
         text = text.replaceAll(pattern('class', 2), `$1`);
         text = text.replaceAll(pattern('class', 1), `$1`);
     } else {
+        text = text.replaceAll(pattern('class', 5), `__$3__`);
         text = text.replaceAll(pattern('class', 4), `__$3__`);
         text = text.replaceAll(pattern('class', 3), `__$3__`);
         text = text.replaceAll(pattern('class', 2), `__$1__`);
