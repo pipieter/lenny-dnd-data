@@ -399,12 +399,6 @@ function sense(text: string, _noFormat: boolean): string {
     return text;
 }
 
-function table(text: string, _noFormat: boolean): string {
-    text = text.replaceAll(pattern('table', 3), '$3');
-    text = text.replaceAll(pattern('table', 2), '$1');
-    return text;
-}
-
 function variantrule(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('variantrule', 3), '$3');
     text = text.replaceAll(pattern('variantrule', 2), '$1');
@@ -460,8 +454,51 @@ function skillCheck(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function spell(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('spell', 2), '$1');
+        text = text.replaceAll(pattern('spell', 1), '$1');
+    } else {
+        text = text.replaceAll(pattern('spell', 2), '__$1__');
+        text = text.replaceAll(pattern('spell', 1), '__$1__');
+    }
+    return text;
+}
+
+function status(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('status', 3), '$3');
+        text = text.replaceAll(pattern('status', 2), '$1');
+        text = text.replaceAll(pattern('status', 1), '$1');
+    } else {
+        text = text.replaceAll(pattern('status', 3), '*$3*');
+        text = text.replaceAll(pattern('status', 2), '*$1*');
+        text = text.replaceAll(pattern('status', 1), '*$1*');
+    }
+    return text;
+}
+
 function sup(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('sup', 1), '[$1]');
+    return text;
+}
+
+function table(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('table', 3), '$3');
+        text = text.replaceAll(pattern('table', 2), '$1');
+        text = text.replaceAll(pattern('table', 1), `$1`);
+    } else {
+        text = text.replaceAll(
+            pattern('table', 3),
+            (_, p1, p2, p3) => `[${p3}](${getTablesUrl(p1, p2)})`
+        );
+        text = text.replaceAll(
+            pattern('table', 2),
+            (_, p1, p2) => `[${p1}](${getTablesUrl(p1, p2)})`
+        );
+        text = text.replaceAll(pattern('table', 1), (_, p1) => `[${p1}](${getTablesUrl(p1)})`);
+    }
     return text;
 }
 
@@ -518,7 +555,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         scaledice,
         skill,
         skillCheck,
+        spell,
+        status,
         sup,
+        table,
     ];
 
     for (const func of functions) {
@@ -526,12 +566,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     }
 
     if (noFormat) {
-        text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@spell ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-        text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@table ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
         text = text.replaceAll(/\{@trap ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
@@ -557,12 +591,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
         );
     } else {
-        text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
-        text = text.replaceAll(/\{@spell ([^\}]*?)\}/g, '__$1__');
-        text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '*$3*');
-        text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
-        text = text.replaceAll(/\{@status ([^\}]*?)\}/g, '*$1*');
-        text = text.replaceAll(/\{@table ([^\}]*?)\}/g, (_, p1) => `[${p1}](${getTablesUrl(p1)})`);
         text = text.replaceAll(
             /\{@5etools ([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`
@@ -588,11 +616,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         );
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(
-            /\{@table ([^\}|]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2, p3) => `[${p3}](${getTablesUrl(p1, p2)})`
-        );
-        text = text.replaceAll(/\{@table ([^\}]*?)\}/g, (_, p1) => `[${p1}](${getTablesUrl(p1)})`);
         text = text.replaceAll(
             /\{@trap ([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`
