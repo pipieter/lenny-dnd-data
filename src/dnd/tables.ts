@@ -1,11 +1,6 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import {
-    Description,
-    DescriptionType,
-    parseDescriptionFromTable,
-    Table,
-} from '../parser';
+import { Description, DescriptionType, parseDescriptionFromTable, Table } from '../parser';
 import { getTablesUrl } from '../urls';
 
 interface TableGroup {
