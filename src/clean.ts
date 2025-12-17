@@ -87,6 +87,18 @@ function styles(text: string, noFormat: boolean): string {
     return text;
 }
 
+function $5etools(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('5etools', 2), `$1`);
+    } else {
+        text = text.replaceAll(
+            pattern('5etools', 2),
+            (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`
+        );
+    }
+    return text;
+}
+
 function atk(text: string, _noFormat: boolean): string {
     // converterutils-creature.js:584
     const replacements = new Map<string, string>([
@@ -307,6 +319,17 @@ function facility(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('facility', 2), '$1');
     } else {
         text = text.replaceAll(pattern('facility', 2), '__$1__');
+    }
+    return text;
+}
+
+function feat(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('feat', 2), `$1`);
+        text = text.replaceAll(pattern('feat', 1), `$1`);
+    } else {
+        text = text.replaceAll(pattern('feat', 2), `__$1__`);
+        text = text.replaceAll(pattern('feat', 1), `__$1__`);
     }
     return text;
 }
@@ -540,6 +563,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     const functions = [
         // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
         styles,
+        $5etools,
         atk,
         action,
         adventure,
@@ -564,6 +588,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         dice,
         disease,
         facility,
+        feat,
         filter,
         hazard,
         hit,
@@ -598,9 +623,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     }
 
     if (noFormat) {
-        text = text.replaceAll(/\{@5etools ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@feat ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(
             /\{@subclassFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             `$1`
@@ -618,15 +640,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
         );
     } else {
-        text = text.replaceAll(
-            /\{@5etools ([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`
-        );
-        text = text.replaceAll(
-            /\{@feat ([^\}]*?)\|([^\}]*?)\}/g,
-            (_, p1, p2) => `[${p1}](${getFeatsUrl(p1, p2)})`
-        );
-        text = text.replaceAll(/\{@feat ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(
             /\{@subclassFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             `__$1__`
