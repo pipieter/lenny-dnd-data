@@ -27,6 +27,9 @@ String.prototype.clean = function (
  * `{@item spellbook|PHB}` would be generated using `pattern('item', 2)`, as the expression
  *  classifier is `item` and and the contents contains two sections.
  *
+ * This method is slower than using global regular expressions, as the regular expressions
+ * are constructed each time. This method of working should be more readable however.
+ *
  * @param name The classifier of the 5e.tools pattern.
  * @param count The amount of components in the 5e.tools pattern.
  * @returns A regular expression which would match the requested 5e.tools expression.
@@ -53,18 +56,18 @@ function styles(text: string, noFormat: boolean): string {
         // TODO a better solution would be to adapt the function to handle recursive styling
         text = text.replaceAll(/^\{@i (.*)\}$/g, '$1');
 
-        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '$1');
+        text = text.replaceAll(pattern('i', 1), '$1');
+        text = text.replaceAll(pattern('b', 1), '$1');
+        text = text.replaceAll(pattern('bold', 1), '$1');
+        text = text.replaceAll(pattern('italic', 1), '$1');
     } else {
         // Idem Keith baker
         text = text.replaceAll(/^\{@i (.*)\}$/g, '*$1*');
 
-        text = text.replaceAll(/\{@b ([^\}]*?)\}/g, '**$1**');
-        text = text.replaceAll(/\{@bold ([^\}]*?)\}/g, '**$1**');
-        text = text.replaceAll(/\{@i ([^\}]*?)\}/g, '*$1*');
-        text = text.replaceAll(/\{@italic ([^\}]*?)\}/g, '*$1*');
+        text = text.replaceAll(pattern('i', 1), '*$1*');
+        text = text.replaceAll(pattern('b', 1), '**$1**');
+        text = text.replaceAll(pattern('bold', 1), '**$1**');
+        text = text.replaceAll(pattern('italic', 1), '*$1*');
     }
 
     return text;
@@ -111,32 +114,32 @@ function action(text: string, _noFormat: boolean): string {
 }
 
 function adventure(text: string, _noFormat: boolean): string {
-    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
-    text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(pattern('adventure', 3), '$1 ($2)');
+    text = text.replaceAll(pattern('adventure', 2), '$1');
     return text;
 }
 
 function area(text: string, _noFormat: boolean): string {
-    text = text.replaceAll(/\{@area ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(pattern('area', 2), '$1');
     return text;
 }
 
 function background(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
-        text = text.replaceAll(/\{@background ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@background ([^\}]*?)\}/g, `$1`);
+        text = text.replaceAll(pattern('background', 3), `$3`);
+        text = text.replaceAll(pattern('background', 2), `$1`);
+        text = text.replaceAll(pattern('background', 1), `$1`);
     } else {
         text = text.replaceAll(
-            /\{@background ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
+            pattern('background', 3),
             (_, p1, p2, p3) => `[${p3}](${getBackgroundsUrl(p1, p2)})`
         );
         text = text.replaceAll(
-            /\{@background ([^\}]*?)\|([^\}]*?)\}/g,
+            pattern('background', 2),
             (_, p1, __) => `[${p1}](${getBackgroundsUrl(p1)})`
         );
         text = text.replaceAll(
-            /\{@background ([^\}]*?)\}/g,
+            pattern('background', 1),
             (_, p1) => `[${p1}](${getBackgroundsUrl(p1)})`
         );
     }
@@ -145,20 +148,20 @@ function background(text: string, noFormat: boolean): string {
 }
 
 function book(text: string, _noFormat: boolean): string {
-    text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(pattern('book', 4), '$1');
+    text = text.replaceAll(pattern('book', 2), '$1');
     return text;
 }
 
 function card(text: string, _noFormat: boolean): string {
-    text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(pattern('card', 2), '$1');
     return text;
 }
 
 function chance(text: string, _noFormat: boolean): string {
-    text = text.replaceAll(/\{@chance ([^\}]*?)\|\|\|([^\}]*?)\|([^\}]*?)\}/g, '$1 percent');
-    text = text.replaceAll(/\{@chance ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$2');
-    text = text.replaceAll(/\{@chance ([^\}]*?)\}/g, '$1 percent');
+    text = text.replaceAll(pattern('chance', 5), '$1 percent');
+    text = text.replaceAll(pattern('chance', 4), '$2');
+    text = text.replaceAll(pattern('chance', 1), '$1 percent');
     return text;
 }
 
