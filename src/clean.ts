@@ -123,6 +123,24 @@ function background(text: string, noFormat: boolean): string {
     return text;
 }
 
+function book(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    return text;
+}
+
+function card(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    return text;
+}
+
+function chance(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(/\{@chance ([^\}]*?)\|\|\|([^\}]*?)\|([^\}]*?)\}/g, '$1 percent');
+    text = text.replaceAll(/\{@chance ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$2');
+    text = text.replaceAll(/\{@chance ([^\}]*?)\}/g, '$1 percent');
+    return text;
+}
+
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
     // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
     text = text.clean(styles, noFormat);
@@ -132,13 +150,10 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.clean(adventure, noFormat);
     text = text.clean(area, noFormat);
     text = text.clean(background, noFormat);
+    text = text.clean(book, noFormat);
+    text = text.clean(card, noFormat);
+    text = text.clean(chance, noFormat);
 
-    text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@book ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@card ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@chance ([^\}]*?)\|\|\|([^\}]*?)\|([^\}]*?)\}/g, '$1 percent');
-    text = text.replaceAll(/\{@chance ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$2');
-    text = text.replaceAll(/\{@chance ([^\}]*?)\}/g, '$1 percent');
     text = text.replaceAll(/\{@classFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@comic ([^\}]*?)\}/g, '$1');
