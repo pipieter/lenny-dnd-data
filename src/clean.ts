@@ -183,6 +183,16 @@ function class$(text: string, noFormat: boolean): string {
     return text;
 }
 
+function classFeature(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('classFeature', 4), '$1');
+    return text;
+}
+
+function color(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('color', 2), '$1');
+    return text;
+}
+
 /* =========================================================
  * Main function
  * ========================================================= */
@@ -200,9 +210,13 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.clean(card, noFormat);
     text = text.clean(chance, noFormat);
     text = text.clean(class$, noFormat);
+    text = text.clean(classFeature, noFormat);
 
-    text = text.replaceAll(/\{@classFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    // Color is applied twice, because of 'Mage Hand Press; Dark Matter - 2024.json' which contains nested colors
+    // TODO a better solution would be try to repeat the entire clean-up multiple times
+    text = text.clean(color, noFormat);
+    text = text.clean(color, noFormat);
+
     text = text.replaceAll(/\{@comic ([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@condition ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@condition ([^\}]*?)\}/g, '$1');
@@ -253,7 +267,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@recharge ([^\}]*?)}/g, '');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@dcYourSpellSave\}/g, 'your spell save DC');
-    text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@sup ([^\}]*?)\}/g, '[$1]');
     text = text.replaceAll(/\{@homebrew ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@homebrew ([^\}]*?)\}/g, '$1');
