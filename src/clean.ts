@@ -99,6 +99,39 @@ function $5etools(text: string, noFormat: boolean): string {
     return text;
 }
 
+function actSave(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(
+            pattern('actSave', 1),
+            (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
+        );
+    } else {
+        text = text.replaceAll(
+            pattern('actSave', 1),
+            (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:*`
+        );
+    }
+    return text;
+}
+
+function actSaveFail(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('actSaveFail', 0), 'Failure');
+    } else {
+        text = text.replaceAll(pattern('actSaveFail', 0), '*Failure*');
+    }
+    return text;
+}
+
+function actSaveSuccess(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('actSaveSuccess', 0), 'Success');
+    } else {
+        text = text.replaceAll(pattern('actSaveSuccess', 0), '*Success*');
+    }
+    return text;
+}
+
 function atk(text: string, _noFormat: boolean): string {
     // converterutils-creature.js:584
     const replacements = new Map<string, string>([
@@ -408,6 +441,11 @@ function loader(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function note(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('note', 1), '\($1\)');
+    return text;
+}
+
 function object(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('object', 3), `$3`);
@@ -613,6 +651,9 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
         styles,
         $5etools,
+        actSave,
+        actSaveFail,
+        actSaveSuccess,
         atk,
         action,
         adventure,
@@ -670,30 +711,13 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         trap,
         vehicle,
         vehupgrade,
+        // Notes should be parsed at the end, because they might contain subqueries
+        note,
     ];
 
     for (const func of functions) {
         text = text.clean(func, noFormat);
     }
-
-    if (noFormat) {
-        text = text.replaceAll(/\{@actSaveSuccess\}/g, 'Success');
-        text = text.replaceAll(/\{@actSaveFail\}/g, 'Failure');
-        text = text.replaceAll(
-            /\{@actSave ([^\}]*?)\}/g,
-            (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
-        );
-    } else {
-        text = text.replaceAll(/\{@actSaveSuccess\}/g, '*Success*');
-        text = text.replaceAll(/\{@actSaveFail\}/g, '*Failure*');
-        text = text.replaceAll(
-            /\{@actSave ([^\}]*?)\}/g,
-            (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:*`
-        );
-    }
-
-    // Note: notes should be parsed at the end, because they might contain subqueries
-    text = text.replaceAll(/\{@note ([^\}]*?)\}/g, '\($1\)');
 
     // Fix Bree-Yarking (normalizes discord italic/bold formatting)
     text = text.replace(/\*{4}([^\*]*?)\*{3}/g, '***$1**');
