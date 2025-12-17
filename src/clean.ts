@@ -35,6 +35,11 @@ String.prototype.clean = function (
  * @returns A regular expression which would match the requested 5e.tools expression.
  */
 function pattern(name: string, count: number) {
+    if (count <= 0) {
+        const regexp = `\\{@${name}\\}`;
+        return new RegExp(regexp, 'g');
+    }
+
     const single = '([^\\}]*?)'; // A greedy regex that catches as many letters as possible, that aren't '}'
     const elements = Array.from({ length: count }, () => single).flat();
 
@@ -290,6 +295,38 @@ function filter(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function hazard(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('hazard', 2), '$1');
+    text = text.replaceAll(pattern('hazard', 1), '$1');
+    return text;
+}
+
+function hit(text: string, noFormat: boolean): string {
+    text = text.replaceAll(pattern('hit', 1), '$1');
+
+    if (noFormat) {
+        text = text.replaceAll(pattern('h', 0), 'Hit: ');
+    } else {
+        text = text.replaceAll(pattern('h', 0), '*Hit:* ');
+    }
+
+    return text;
+}
+
+function item(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('item', 4), '$3');
+    text = text.replaceAll(pattern('item', 3), '$3');
+    text = text.replaceAll(pattern('item', 2), '$1');
+    text = text.replaceAll(pattern('item', 1), '$1');
+    return text;
+}
+
+function itemProperty(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('itemProperty', 3), '$3');
+    text = text.replaceAll(pattern('itemProperty', 2), '$1');
+    return text;
+}
+
 /* =========================================================
  * Main function
  * ========================================================= */
@@ -323,21 +360,16 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         dice,
         disease,
         filter,
+        hazard,
+        hit,
+        item,
+        itemProperty,
     ];
 
     for (const func of functions) {
         text = text.clean(func, noFormat);
     }
 
-    text = text.replaceAll(/\{@hazard ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@hazard ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@hit ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-    text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-    text = text.replaceAll(/\{@item ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@item ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-    text = text.replaceAll(/\{@itemProperty ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
     text = text.replaceAll(/\{@language ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
     text = text.replaceAll(/\{@language ([^\}]*?)\}/g, '$1');
@@ -368,7 +400,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@skillCheck [^\s]+ (-?\d+)\}/g, '$1');
 
     if (noFormat) {
-        text = text.replaceAll(/\{@h\}/g, 'Hit: ');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(
             /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
@@ -409,7 +440,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
         );
     } else {
-        text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
         text = text.replaceAll(
             /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
