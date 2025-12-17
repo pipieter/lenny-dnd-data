@@ -226,6 +226,17 @@ function d20(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function damage(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('damage', 2), '$2');
+        text = text.replaceAll(pattern('damage', 1), '$1');
+    } else {
+        text = text.replaceAll(pattern('damage', 2), '**$2**');
+        text = text.replaceAll(pattern('damage', 1), '**$1**');
+    }
+    return text;
+}
+
 function dc(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('dc', 1), 'DC $1');
     return text;
@@ -255,6 +266,19 @@ function dice(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('dice', 3), '$1 ($3)');
     text = text.replaceAll(pattern('dice', 2), '$1 ($2)');
     text = text.replaceAll(pattern('dice', 1), '$1');
+    return text;
+}
+
+function disease(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('disease', 3), '$3');
+        text = text.replaceAll(pattern('disease', 2), '$1');
+        text = text.replaceAll(pattern('disease', 1), '$1');
+    } else {
+        text = text.replaceAll(pattern('disease', 3), '__$3__');
+        text = text.replaceAll(pattern('disease', 2), '__$1__');
+        text = text.replaceAll(pattern('disease', 1), '__$1__');
+    }
     return text;
 }
 
@@ -294,10 +318,12 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.clean(condition, noFormat);
     text = text.clean(creature, noFormat);
     text = text.clean(d20, noFormat);
+    text = text.clean(damage, noFormat);
     text = text.clean(dc, noFormat);
     text = text.clean(deck, noFormat);
     text = text.clean(deity, noFormat);
     text = text.clean(dice, noFormat);
+    text = text.clean(disease, noFormat);
     text = text.clean(filter, noFormat);
 
     text = text.replaceAll(/\{@hazard ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -340,11 +366,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
-        text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-        text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '$2');
-        text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(
             /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
@@ -386,11 +407,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         );
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
-        text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
-        text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
-        text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '__$1__');
-        text = text.replaceAll(/\{@damage ([^\}]*?)\|([^\}]*?)\}/g, '**$2**');
-        text = text.replaceAll(/\{@damage ([^\}]*?)\}/g, '**$1**');
         text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
         text = text.replaceAll(
             /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
