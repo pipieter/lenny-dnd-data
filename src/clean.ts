@@ -462,13 +462,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         throw `{@...} pattern found in '${text}'`;
     }
 
-    if (text.includes('{#')) {
-        // Currently, {#itemEntry Item|Source} still remains in the text
-        // TODO this should be fixed in items.ts, but it is currently not a priority
-        // as such, ignore checking for remaining '{' and '}' for now
-        return text;
-    }
-
     checkForDisallowedSymbols(text);
     return text;
 }
