@@ -44,15 +44,16 @@ function pattern(name: string, count: number) {
         return cacheEntry;
     }
 
-    let regexp = new RegExp(`\\{@${name}\\}`, 'g');
+    let expression = `\\{@${name}\\}`;
     if (count > 0) {
         const single = '([^\\}]*?)'; // A greedy regex that catches as many letters as possible, that aren't '}'
         const elements = Array.from({ length: count }, () => single).flat();
 
         // This regular expression would catch {@name *|*|...}, based on the number of components
-        regexp = new RegExp(`\\{@${name} ${elements.join('\\|')}\\}`, 'g');
+        expression = `\\{@${name} ${elements.join('\\|')}\\}`;
     }
 
+    const regexp = new RegExp(expression, 'g');
     PatternCache[cacheKey] = regexp;
     return regexp;
 }
