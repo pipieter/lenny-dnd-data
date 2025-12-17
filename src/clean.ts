@@ -193,6 +193,63 @@ function color(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function comic(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('comic', 1), '$1');
+    return text;
+}
+
+function condition(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('condition', 2), '$1');
+    text = text.replaceAll(pattern('condition', 1), '$1');
+    return text;
+}
+
+function creature(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('creature', 3), '$3');
+        text = text.replaceAll(pattern('creature', 2), '$1');
+        text = text.replaceAll(pattern('creature', 1), '$1');
+    } else {
+        text = text.replaceAll(pattern('creature', 3), '__$3__');
+        text = text.replaceAll(pattern('creature', 2), '__$1__');
+        text = text.replaceAll(pattern('creature', 1), '__$1__');
+    }
+    return text;
+}
+
+function d20(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('d20', 1), (_, p1) => {
+        if (p1.startsWith('-')) return p1;
+        // If text doesn't start with a minus, explicitly add a plus
+        else return `+${p1}`;
+    });
+    return text;
+}
+
+function dc(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('dc', 1), 'DC $1');
+    return text;
+}
+
+function deck(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('deck', 2), '$1');
+    text = text.replaceAll(pattern('deck', 1), '$1');
+    return text;
+}
+
+function deity(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('deity', 3), `$1`);
+        text = text.replaceAll(pattern('deity', 2), `$1`);
+        text = text.replaceAll(pattern('deity', 1), `$1`);
+    } else {
+        text = text.replaceAll(pattern('deity', 3), `__$1__`);
+        text = text.replaceAll(pattern('deity', 2), `__$1__`);
+        text = text.replaceAll(pattern('deity', 1), `__$1__`);
+    }
+    return text;
+}
+
 /* =========================================================
  * Main function
  * ========================================================= */
@@ -217,15 +274,14 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.clean(color, noFormat);
     text = text.clean(color, noFormat);
 
-    text = text.replaceAll(/\{@comic ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@condition ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@condition ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@d20 -([^\}]*?)\}/g, '-$1');
-    text = text.replaceAll(/\{@d20 ([^\}]*?)\}/g, '+$1');
-    text = text.replaceAll(/\{@dc ([^\}]*?)\}/g, 'DC $1');
-    text = text.replaceAll(/\{@deck ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@deck ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
+    text = text.clean(comic, noFormat);
+    text = text.clean(condition, noFormat);
+    text = text.clean(creature, noFormat);
+    text = text.clean(d20, noFormat);
+    text = text.clean(dc, noFormat);
+    text = text.clean(deck, noFormat);
+    text = text.clean(deity, noFormat);
+
     text = text.replaceAll(/\{@dice #\$prompt([^\}]*?)\|([^\}]*?)\}/g, '$2'); // See rule Carrying Capacity
     text = text.replaceAll(/\{@dice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1 ($3)');
     text = text.replaceAll(/\{@dice ([^\}]*?)\|([^\}]*?)\}/g, '$1 ($2)');
@@ -274,8 +330,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
-        text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-        text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '$1');
         text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '$1');
@@ -311,8 +365,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         text = text.replaceAll(/\{@subclass ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
@@ -324,8 +376,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         );
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
-        text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
-        text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '__$1__');
         text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
         text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
         text = text.replaceAll(/\{@disease ([^\}]*?)\}/g, '__$1__');
@@ -371,8 +421,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         );
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@itemMastery ([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(/\{@deity ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(/\{@deity ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(
             /\{@table ([^\}|]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             (_, p1, p2, p3) => `[${p3}](${getTablesUrl(p1, p2)})`
