@@ -374,6 +374,17 @@ function item(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function itemMastery(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('itemMastery', 2), `$1`);
+        text = text.replaceAll(pattern('itemMastery', 1), `$1`);
+    } else {
+        text = text.replaceAll(pattern('itemMastery', 2), `__$1__`);
+        text = text.replaceAll(pattern('itemMastery', 1), `__$1__`);
+    }
+    return text;
+}
+
 function itemProperty(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('itemProperty', 3), '$3');
     text = text.replaceAll(pattern('itemProperty', 2), '$1');
@@ -595,6 +606,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         homebrew,
         item,
         itemProperty,
+        itemMastery,
         language,
         link,
         loader,
@@ -628,8 +640,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             `$1`
         );
         text = text.replaceAll(/\{@subclass ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@itemMastery ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
@@ -648,8 +658,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             /\{@subclass ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
             `__$1__`
         );
-        text = text.replaceAll(/\{@itemMastery ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(/\{@itemMastery ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehicle ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@vehupgrade ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
