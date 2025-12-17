@@ -1,13 +1,6 @@
 import { AbilityScores } from './5etools-conversion/data';
 import { checkForDisallowedSymbols } from './parser';
-import {
-    getTablesUrl,
-    get5eToolsUrl,
-    getBackgroundsUrl,
-    getObjectsUrl,
-    getFeatsUrl,
-    getTrapsUrl,
-} from './urls';
+import { getTablesUrl, get5eToolsUrl, getBackgroundsUrl, getTrapsUrl } from './urls';
 
 declare global {
     interface String {
