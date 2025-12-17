@@ -295,36 +295,39 @@ function filter(text: string, _noFormat: boolean): string {
  * ========================================================= */
 
 export function cleanDNDText(text: string, noFormat: boolean = false): string {
-    // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
-    text = text.clean(styles, noFormat);
+    const functions = [
+        // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
+        styles,
+        atk,
+        action,
+        adventure,
+        area,
+        background,
+        book,
+        card,
+        chance,
+        class$,
+        classFeature,
+        // Color is applied twice, because of 'Mage Hand Press; Dark Matter - 2024.json' which contains nested colors
+        // TODO a better solution would be try to repeat the entire clean-up multiple times
+        color,
+        color,
+        comic,
+        condition,
+        creature,
+        d20,
+        damage,
+        dc,
+        deck,
+        deity,
+        dice,
+        disease,
+        filter,
+    ];
 
-    text = text.clean(atk, noFormat);
-    text = text.clean(action, noFormat);
-    text = text.clean(adventure, noFormat);
-    text = text.clean(area, noFormat);
-    text = text.clean(background, noFormat);
-    text = text.clean(book, noFormat);
-    text = text.clean(card, noFormat);
-    text = text.clean(chance, noFormat);
-    text = text.clean(class$, noFormat);
-    text = text.clean(classFeature, noFormat);
-
-    // Color is applied twice, because of 'Mage Hand Press; Dark Matter - 2024.json' which contains nested colors
-    // TODO a better solution would be try to repeat the entire clean-up multiple times
-    text = text.clean(color, noFormat);
-    text = text.clean(color, noFormat);
-
-    text = text.clean(comic, noFormat);
-    text = text.clean(condition, noFormat);
-    text = text.clean(creature, noFormat);
-    text = text.clean(d20, noFormat);
-    text = text.clean(damage, noFormat);
-    text = text.clean(dc, noFormat);
-    text = text.clean(deck, noFormat);
-    text = text.clean(deity, noFormat);
-    text = text.clean(dice, noFormat);
-    text = text.clean(disease, noFormat);
-    text = text.clean(filter, noFormat);
+    for (const func of functions) {
+        text = text.clean(func, noFormat);
+    }
 
     text = text.replaceAll(/\{@hazard ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@hazard ([^\}]*?)\}/g, '$1');
