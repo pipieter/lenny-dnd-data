@@ -363,6 +363,30 @@ function race(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function sense(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('sense', 2), '$1');
+    text = text.replaceAll(pattern('sense', 1), '$1');
+    return text;
+}
+
+function table(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('table', 3), '$3');
+    text = text.replaceAll(pattern('table', 2), '$1');
+    return text;
+}
+
+function variantrule(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('variantrule', 3), '$3');
+    text = text.replaceAll(pattern('variantrule', 2), '$1');
+    text = text.replaceAll(pattern('variantrule', 1), '$1');
+    return text;
+}
+
+function reward(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('reward', 2), '$1');
+    return text;
+}
+
 /* =========================================================
  * Main function
  * ========================================================= */
@@ -406,20 +430,16 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         optfeature,
         quickref,
         race,
+        sense,
+        table,
+        variantrule,
+        reward,
     ];
 
     for (const func of functions) {
         text = text.clean(func, noFormat);
     }
 
-    text = text.replaceAll(/\{@sense ([^\}]*?)\|[^\}]*?\}/g, '$1');
-    text = text.replaceAll(/\{@sense ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@table ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-    text = text.replaceAll(/\{@table ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@variantrule ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-    text = text.replaceAll(/\{@variantrule ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@variantrule ([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(/\{@reward ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@recharge}/g, '');
     text = text.replaceAll(/\{@recharge ([^\}]*?)}/g, '');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
