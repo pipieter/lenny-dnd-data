@@ -302,6 +302,15 @@ function disease(text: string, noFormat: boolean): string {
     return text;
 }
 
+function facility(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('facility', 2), '$1');
+    } else {
+        text = text.replaceAll(pattern('facility', 2), '__$1__');
+    }
+    return text;
+}
+
 function filter(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('filter', 4), '$1');
     text = text.replaceAll(pattern('filter', 3), '$1');
@@ -414,6 +423,37 @@ function reward(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function scaledamage(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('scaledamage', 5), '$5');
+        text = text.replaceAll(pattern('scaledamage', 3), '$3');
+    } else {
+        text = text.replaceAll(pattern('scaledamage', 5), '**$5**');
+        text = text.replaceAll(pattern('scaledamage', 3), '**$3**');
+    }
+    return text;
+}
+
+function scaledice(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('scaledice', 3), '$3');
+    } else {
+        text = text.replaceAll(pattern('scaledice', 3), '**$3**');
+    }
+    return text;
+}
+
+function skill(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('skill', 2), '$1');
+        text = text.replaceAll(pattern('skill', 1), '$1');
+    } else {
+        text = text.replaceAll(pattern('skill', 2), '*$1*');
+        text = text.replaceAll(pattern('skill', 1), '*$1*');
+    }
+    return text;
+}
+
 function skillCheck(text: string, _noFormat: boolean): string {
     // Special case
     text = text.replaceAll(/\{@skillCheck [^\s]+ (-?\d+)\}/g, '$1');
@@ -456,6 +496,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         deity,
         dice,
         disease,
+        facility,
         filter,
         hazard,
         hit,
@@ -473,6 +514,9 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         variantrule,
         recharge,
         reward,
+        scaledamage,
+        scaledice,
+        skill,
         skillCheck,
         sup,
     ];
@@ -482,15 +526,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     }
 
     if (noFormat) {
-        text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(
-            /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            '$5'
-        );
-        text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-        text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
-        text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-        text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@spell ([^\}]*?)\}/g, '$1');
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
@@ -522,15 +557,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`
         );
     } else {
-        text = text.replaceAll(/\{@facility ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
-        text = text.replaceAll(
-            /\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-            '**$5**'
-        );
-        text = text.replaceAll(/\{@scaledamage ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
-        text = text.replaceAll(/\{@scaledice ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '**$3**');
-        text = text.replaceAll(/\{@skill ([^\}]*?)\|([^\}]*?)\}/g, '*$1*');
-        text = text.replaceAll(/\{@skill ([^\}]*?)\}/g, '*$1*');
         text = text.replaceAll(/\{@spell ([^\}]*?)\|([^\}]*?)\}/g, '__$1__');
         text = text.replaceAll(/\{@spell ([^\}]*?)\}/g, '__$1__');
         text = text.replaceAll(/\{@status ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '*$3*');
