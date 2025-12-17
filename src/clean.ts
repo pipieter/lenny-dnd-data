@@ -165,6 +165,24 @@ function chance(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function class$(text: string, noFormat: boolean): string {
+    text = text.replaceAll(pattern('class', 5), `$3`);
+
+    if (noFormat) {
+        text = text.replaceAll(pattern('class', 4), `$3`);
+        text = text.replaceAll(pattern('class', 3), `$3`);
+        text = text.replaceAll(pattern('class', 2), `$1`);
+        text = text.replaceAll(pattern('class', 1), `$1`);
+    } else {
+        text = text.replaceAll(pattern('class', 4), `__$3__`);
+        text = text.replaceAll(pattern('class', 3), `__$3__`);
+        text = text.replaceAll(pattern('class', 2), `__$1__`);
+        text = text.replaceAll(pattern('class', 1), `__$1__`);
+    }
+
+    return text;
+}
+
 /* =========================================================
  * Main function
  * ========================================================= */
@@ -181,6 +199,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.clean(book, noFormat);
     text = text.clean(card, noFormat);
     text = text.clean(chance, noFormat);
+    text = text.clean(class$, noFormat);
 
     text = text.replaceAll(/\{@classFeature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
@@ -233,10 +252,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     text = text.replaceAll(/\{@recharge}/g, '');
     text = text.replaceAll(/\{@recharge ([^\}]*?)}/g, '');
     text = text.replaceAll(/\{@adventure ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    text = text.replaceAll(
-        /\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g,
-        `$3`
-    );
     text = text.replaceAll(/\{@dcYourSpellSave\}/g, 'your spell save DC');
     text = text.replaceAll(/\{@color ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     text = text.replaceAll(/\{@sup ([^\}]*?)\}/g, '[$1]');
@@ -246,10 +261,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     if (noFormat) {
         text = text.replaceAll(/\{@h\}/g, 'Hit: ');
-        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
-        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `$3`);
-        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\}/g, `$1`);
-        text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `$1`);
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '$1');
         text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '$3');
@@ -300,10 +311,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         );
     } else {
         text = text.replaceAll(/\{@h\}/g, '*Hit:* ');
-        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `__$3__`);
-        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, `__$3__`);
-        text = text.replaceAll(/\{@class ([^\}]*?)\|([^\}]*?)\}/g, `__$1__`);
-        text = text.replaceAll(/\{@class ([^\}]*?)\}/g, `__$1__`);
         text = text.replaceAll(/\{@creature ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
         text = text.replaceAll(/\{@creature ([^\}]*?)(\|[^\}]*?)?\}/g, '__$1__');
         text = text.replaceAll(/\{@disease ([^\}]*?)\|([^\}]*?)\|([^\}]*?)\}/g, '__$3__');
