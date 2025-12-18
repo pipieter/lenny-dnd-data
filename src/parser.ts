@@ -1,12 +1,5 @@
 import { BulletPoint, getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
-import {
-    get5eToolsUrl,
-    getBestiaryUrl,
-    getFeatsUrl,
-    getImageUrl,
-    getItemsUrl,
-    getTablesUrl,
-} from './urls';
+import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, getTablesUrl } from './urls';
 import { AbilityScores, Alignments, SpellSchools } from './5etools-conversion/data';
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';

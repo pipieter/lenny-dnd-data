@@ -63,9 +63,7 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
 
             const options = from.map(parseAbilityScore);
             const optionText =
-                options.length === 6
-                    ? 'one ability score of your choice'
-                    : `your ${joinStringsWithOr(options)} score`;
+                options.length === 6 ? 'one ability score of your choice' : `your ${joinStringsWithOr(options)} score`;
 
             result.push(`Increase ${optionText} by ${amount}, to a maximum of ${max}.`);
             continue;
@@ -235,9 +233,7 @@ function getFeatPrerequisites(feat: Feat): string | null {
                 }
                 case 'exclusiveFeatCategory': {
                     const featCategories = entry.map((e: string) => FeatCategoryMap[e]);
-                    group.push(
-                        `Can't Have Another ${joinStringsWithOr(featCategories, true)} Feat`
-                    );
+                    group.push(`Can't Have Another ${joinStringsWithOr(featCategories, true)} Feat`);
                     break;
                 }
                 case 'note':
@@ -261,12 +257,8 @@ function getFeatPrerequisites(feat: Feat): string | null {
     }
 
     const groupCount = prerequisites.length;
-    const commonEntries = Object.keys(entryCounts).filter(
-        (entry) => entryCounts[entry] === groupCount
-    );
-    const filteredGroups = prerequisites.map((group) =>
-        group.filter((entry) => !commonEntries.includes(entry))
-    );
+    const commonEntries = Object.keys(entryCounts).filter((entry) => entryCounts[entry] === groupCount);
+    const filteredGroups = prerequisites.map((group) => group.filter((entry) => !commonEntries.includes(entry)));
     const joinedGroups = filteredGroups.map((group) => joinStringsWithAnd(group, false));
 
     if (commonEntries.length === 0) return joinStringsWithOr(joinedGroups, false);

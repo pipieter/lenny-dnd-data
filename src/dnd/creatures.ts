@@ -1,13 +1,7 @@
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { findEntry } from '../5etools-conversion/find';
 import { Databank } from '../data';
-import {
-    Description,
-    parseCreatureSummonSpell,
-    parseCreatureTypes,
-    parseDescriptions,
-    parseSizes,
-} from '../parser';
+import { Description, parseCreatureSummonSpell, parseCreatureTypes, parseDescriptions, parseSizes } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
 
 interface Creature {

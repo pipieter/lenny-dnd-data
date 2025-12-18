@@ -125,9 +125,7 @@ class CharacterClass {
         this.url = getClassesUrl(this.name, this.source);
 
         this.setPrimaryAbility(data);
-        this.spellcastAbility = data.spellcastingAbility
-            ? parseAbilityScore(data.spellcastingAbility)
-            : null;
+        this.spellcastAbility = data.spellcastingAbility ? parseAbilityScore(data.spellcastingAbility) : null;
         this.setBaseInfo(data);
 
         this.setLevelResources(data);
@@ -287,9 +285,7 @@ class CharacterClass {
         const profData: Description[] = [];
         if (data.proficiency) {
             let savingProficiencies: string[] = data.proficiency;
-            savingProficiencies = savingProficiencies.map((proficiency) =>
-                parseAbilityScore(proficiency)
-            );
+            savingProficiencies = savingProficiencies.map((proficiency) => parseAbilityScore(proficiency));
 
             const text = `${BulletPoint} Saving Throw Proficiencies: ${joinStringsWithAnd(savingProficiencies)}`;
             profData.push({ name: '', type: DescriptionType.text, value: text });
@@ -349,9 +345,7 @@ class CharacterClass {
                     }
                 }
 
-                const requirements = useAnd
-                    ? joinStringsWithAnd(skills)
-                    : joinStringsWithOr(skills);
+                const requirements = useAnd ? joinStringsWithAnd(skills) : joinStringsWithOr(skills);
                 const text = `Ability requirements: At least ${requirements}`;
 
                 multiclassData.push({ name: '', type: DescriptionType.text, value: text });
@@ -395,9 +389,7 @@ class CharacterClass {
         if (spellsKnown) {
             let spellTotal = 0;
             for (let i = 0; i < spellsKnown.length; i++) {
-                spellTotal = data.spellsKnownProgression
-                    ? spellsKnown[i]
-                    : spellTotal + spellsKnown[i];
+                spellTotal = data.spellsKnownProgression ? spellsKnown[i] : spellTotal + spellsKnown[i];
                 if (spellTotal != null) {
                     spellResources[i].push(`${spellTotal} Spells known`);
                 }
@@ -468,9 +460,7 @@ class CharacterClass {
             for (const tableGroup of data.classTableGroups) {
                 if (!tableGroup.rowsSpellProgression) continue;
 
-                const headers = tableGroup.colLabels.map((label: string) =>
-                    cleanDNDText(label, true)
-                );
+                const headers = tableGroup.colLabels.map((label: string) => cleanDNDText(label, true));
                 const title = tableGroup.title ?? 'Spell Slots per Spell Level';
 
                 for (const spellRow of tableGroup.rowsSpellProgression) {
@@ -574,11 +564,7 @@ class CharacterClass {
             for (const level in result[subclass]) {
                 if (result[subclass][level].length > 0) {
                     result[subclass][level][0].name = `${subclass} Features`;
-                    result[subclass][level] = resolveReferences(
-                        result[subclass][level],
-                        null,
-                        subclassFeats
-                    );
+                    result[subclass][level] = resolveReferences(result[subclass][level], null, subclassFeats);
                 }
             }
         }
@@ -634,9 +620,7 @@ function resolveClassFeatReference(
             ];
         }
 
-        const feat = feats[key].find(
-            (f) => f.name.trim().toLowerCase() === name.trim().toLowerCase()
-        );
+        const feat = feats[key].find((f) => f.name.trim().toLowerCase() === name.trim().toLowerCase());
 
         if (!feat?.descriptions) throw `Could not find ${type} for ${key}`;
         const descs = feat.descriptions.map((d) => ({ ...d }));
@@ -698,15 +682,10 @@ function resolveReferences(
             }
 
             if (text.includes(`refClassFeature`))
-                resolvedEntries.push(
-                    ...resolveClassFeatReference(text, classFeats, 'refClassFeature')
-                );
+                resolvedEntries.push(...resolveClassFeatReference(text, classFeats, 'refClassFeature'));
             else if (text.includes(`refSubclassFeature`))
-                resolvedEntries.push(
-                    ...resolveClassFeatReference(text, subclassFeats, 'refSubclassFeature')
-                );
-            else if (text.includes('refOptionalfeature'))
-                resolvedEntries.push(resolveOptionalFeatReference(entry));
+                resolvedEntries.push(...resolveClassFeatReference(text, subclassFeats, 'refSubclassFeature'));
+            else if (text.includes('refOptionalfeature')) resolvedEntries.push(resolveOptionalFeatReference(entry));
             else throw `Unsupported text-description reference-type in: ${text}`;
         } else if (entry.type === DescriptionType.table) {
             resolvedEntries.push(entry); // For now, tables don't have any references.
@@ -731,12 +710,7 @@ function resolveReferences(
 
         for (let j = indexesToResolve.length - 1; j >= 0; j--) {
             const index = indexesToResolve[j];
-            const resolved = resolveReferences(
-                [entriesToSubResolve[j]],
-                classFeats,
-                subclassFeats,
-                true
-            );
+            const resolved = resolveReferences([entriesToSubResolve[j]], classFeats, subclassFeats, true);
             resolvedEntries.splice(index, 1, ...resolved);
         }
     }

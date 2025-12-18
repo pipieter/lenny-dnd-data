@@ -125,10 +125,7 @@ export class Databank {
         const data = read(path);
         for (const source of Object.keys(data)) {
             for (const spell of Object.keys(data[source])) {
-                const classes = [
-                    ...(data[source][spell].class || []),
-                    ...(data[source][spell].classVariant || []),
-                ];
+                const classes = [...(data[source][spell].class || []), ...(data[source][spell].classVariant || [])];
                 const parsed = classes.map((class$) => ({
                     spellName: spell,
                     spellSource: source,
@@ -226,9 +223,7 @@ export class PartneredDatabank extends Databank {
 
     private addContents(data: any, path: string): void {
         if (!data._meta) {
-            throw new Error(
-                `Partnered databank content expects a +meta field, but '${path}' didn't have one!`
-            );
+            throw new Error(`Partnered databank content expects a +meta field, but '${path}' didn't have one!`);
         }
 
         const sources: any[] = data._meta.sources ?? [];
