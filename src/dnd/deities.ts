@@ -1,12 +1,6 @@
+import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import {
-    cleanDNDText,
-    Description,
-    DescriptionType,
-    parseAlignments,
-    parseDescriptions,
-    title,
-} from '../parser';
+import { Description, DescriptionType, parseAlignments, parseDescriptions, title } from '../parser';
 import { getDeitiesUrl, getImageUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 

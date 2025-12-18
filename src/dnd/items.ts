@@ -1,7 +1,6 @@
 import { handleCopy } from '../5etools-conversion/copy';
 import { applySingleTemplate, applyTemplating } from '../5etools-conversion/template';
 import {
-    cleanDNDText,
     Description,
     DescriptionType,
     parseDescriptions,
@@ -13,6 +12,7 @@ import { DamageTypes } from '../5etools-conversion/data';
 import { getItemsUrl } from '../urls';
 import { joinStringsWithOr, entrySort } from '../util';
 import { Databank, getKey } from '../data';
+import { cleanDNDText } from '../clean';
 
 interface Item {
     name: string;

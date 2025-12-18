@@ -1,5 +1,6 @@
+import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { capitalize, cleanDNDText, Description, parseDescriptions } from '../parser';
+import { capitalize, Description, parseDescriptions } from '../parser';
 import { getImageUrl, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
