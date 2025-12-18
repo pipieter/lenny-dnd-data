@@ -12,6 +12,7 @@ import { DNDObject } from './dnd/objects';
 import { existsSync, lstatSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { Deity } from './dnd/deities';
+import { Cult } from './dnd/cults';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -96,6 +97,10 @@ export class Databank {
     public readonly objectFluff: any[] = [];
     // Deities
     public readonly deity: Deity[] = [];
+    // Cults
+    public readonly cult: Cult[] = [];
+    // Boons
+    public readonly boon: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
@@ -167,6 +172,7 @@ export class OfficialDatabank extends Databank {
         this.add('books.json');
         this.add('class/index.json');
         this.add('conditionsdiseases.json');
+        this.add('cultsboons.json');
         this.add('deities.json');
         this.add('feats.json');
         this.add('fluff-conditionsdiseases.json');
