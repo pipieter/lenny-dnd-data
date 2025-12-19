@@ -22,6 +22,7 @@ import * as kleur from 'kleur';
 import { getDeities } from './dnd/deities';
 import { createHash } from 'crypto';
 import { getCults } from './dnd/cults';
+import { getBoons } from './dnd/boons';
 
 const filteredData = new Set<string>(); // Stores hashes of data that has been written to files already.
 export function filter(contents: object[]): object[] {
@@ -106,6 +107,9 @@ function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) 
     const cults = getCults(databank);
     stopwatch.log('Cults retrieved.');
 
+    const boons = getBoons(databank);
+    stopwatch.log('Boons retrieved.');
+
     write(`./generated/${name}/items.json`, filter(items));
     write(`./generated/${name}/itemsvariants.json`, filter(itemVariants));
     write(`./generated/${name}/spells.json`, filter(spells));
@@ -130,6 +134,7 @@ function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) 
     write(`./generated/${name}/vehicles.json`, filter(vehicles));
     write(`./generated/${name}/skills.json`, filter(skills));
     write(`./generated/${name}/cults.json`, filter(cults));
+    write(`./generated/${name}/boons.json`, filter(boons));
 }
 
 function main(): void {

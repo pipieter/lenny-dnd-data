@@ -13,6 +13,7 @@ import { existsSync, lstatSync, mkdirSync, readdirSync, writeFileSync } from 'fs
 import { dirname, join } from 'path';
 import { Deity } from './dnd/deities';
 import { Cult } from './dnd/cults';
+import { Boon } from './dnd/boons';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -100,7 +101,7 @@ export class Databank {
     // Cults
     public readonly cult: Cult[] = [];
     // Boons
-    public readonly boon: any[] = [];
+    public readonly boon: Boon[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
