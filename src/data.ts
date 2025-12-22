@@ -22,7 +22,7 @@ export function getKey(name: string, source: string): string {
 export function write(path: string, contents: object[]) {
     const directory = dirname(path);
     if (!existsSync(directory)) mkdirSync(directory, { recursive: true });
-    writeFileSync(path, JSON.stringify(contents, null, 2), 'utf-8');
+    writeFileSync(path, JSON.stringify(contents, null, 1), 'utf-8');
 }
 
 export class Databank {
