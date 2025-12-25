@@ -1,4 +1,9 @@
-export const cleanUrl = encodeURI;
+export function cleanUrl(url: string): string {
+    url = encodeURI(url);
+    url = url.replaceAll(',', '%2c');
+    return url;
+}
+
 function removeAccents(str: string): string {
     str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     str = str.replaceAll('"', '');
@@ -138,4 +143,8 @@ export function getTrapsUrl(name: string, source: string) {
 
 export function getVehiclesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/vehicles.html`, name, source);
+}
+
+export function getCultsBoonsUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/cultsboons.html`, name, source);
 }
