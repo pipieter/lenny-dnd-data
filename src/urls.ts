@@ -1,4 +1,3 @@
-export const cleanUrl = encodeURI;
 function removeAccents(str: string): string {
     str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     str = str.replaceAll('"', '');
@@ -23,40 +22,51 @@ function removeAccents(str: string): string {
 
 export function get5eToolsUrl(page: string): string {
     page = page.toLowerCase();
-    return cleanUrl(`https://5e.tools/${page}`);
+    return encodeURI(`https://5e.tools/${page}`);
 }
 
 export function getImageUrl(path: string): string {
-    return cleanUrl(`https://5e.tools/img/${path}`);
+    return encodeURI(`https://5e.tools/img/${path}`);
 }
 
 export function getAudioUrl(path: string): string {
-    return cleanUrl(`https://5e.tools/audio/${path}`);
+    return encodeURI(`https://5e.tools/audio/${path}`);
 }
 
 export function getCreatureTokenUrl(name: string, source: string) {
     name = removeAccents(name);
     const url = `https://5e.tools/img/bestiary/tokens/${source}/${name}.webp`;
-    return cleanUrl(url);
+    return encodeURI(url);
 }
 
 export function getObjectTokenUrl(name: string, source: string) {
     const url = `https://5e.tools/img/objects/tokens/${source}/${name}.webp`;
-    return cleanUrl(url);
+    return encodeURI(url);
 }
 
 export function getVehicleTokenUrl(name: string, source: string) {
     const url = `https://5e.tools/img/vehicles/tokens/${source}/${name}.webp`;
-    return cleanUrl(url);
+    return encodeURI(url);
 }
 
 /*
  * ##### URLS WITH NAME-SOURCE QUERIES #####
  */
 
+function cleanNameSourceUrlComponent(comp: string): string {
+    comp = comp.toLowerCase();
+    comp = encodeURIComponent(comp);
+    comp = comp.replaceAll(',', '%2c');
+    return comp;
+}
+
 function buildNameSourceUrl(baseUrl: string, name: string, source: string): string {
-    const query = name && source ? `#${name}_${source}`.toLowerCase() : '';
-    return cleanUrl(baseUrl + query);
+    // Clean special symbols from the name and source
+    name = cleanNameSourceUrlComponent(name);
+    source = cleanNameSourceUrlComponent(source);
+
+    const query = name && source ? `#${name}_${source}` : '';
+    return baseUrl + query;
 }
 
 export function getActionsUrl(name: string, source: string) {
@@ -119,12 +129,14 @@ export function getSubclassUrl(
     level: number | null = null
 ) {
     const classUrl = getClassesUrl(className, classSource);
+    subclassName = cleanNameSourceUrlComponent(subclassName);
+    subclassSource = cleanNameSourceUrlComponent(subclassSource);
     const subclassQuery = `sub_${subclassName.toLowerCase()}_${subclassSource.toLowerCase()}=b1`;
 
-    if (!level) return cleanUrl(`${classUrl},state:${subclassQuery}`);
+    if (!level) return `${classUrl},state:${subclassQuery}`;
 
     const levelInfoQuery = `feature=s${level - 1}-0`; // Level 1 = 0
-    return cleanUrl(`${classUrl},state:${levelInfoQuery}~${subclassQuery}`);
+    return `${classUrl},state:${levelInfoQuery}~${subclassQuery}`;
 }
 
 export function getTablesUrl(name: string, source: string | null = null) {
@@ -138,4 +150,8 @@ export function getTrapsUrl(name: string, source: string) {
 
 export function getVehiclesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/vehicles.html`, name, source);
+}
+
+export function getCultsBoonsUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/cultsboons.html`, name, source);
 }
