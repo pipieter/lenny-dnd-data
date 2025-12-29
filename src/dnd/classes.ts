@@ -742,6 +742,9 @@ function classFeatsToParsedFeats(
         return `${name} (Lv. ${level} ${className})`;
     }
 
+    let unmergedFeats: { [key: string]: ClassFeature[] } = {};
+
+    // CLASS FEATS
     for (const key in classFeats) {
         const feats = classFeats[key];
         for (const feat of feats) {
@@ -750,18 +753,33 @@ function classFeatsToParsedFeats(
 
             feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
 
-            parsedFeats.push({
-                name: getClassFeatName(feat.name, feat.level, feat.className),
-                source: feat.source,
-                url: getClassesUrl(feat.className, feat.classSource),
-                type: `Lv. ${feat.level} ${feat.className} Class Feature`,
-                prerequisite: feat.classKey,
-                abilityIncrease: null,
-                description: feat.descriptions,
-            });
+            if (!unmergedFeats[feat.name]) unmergedFeats[feat.name] = [];
+            unmergedFeats[feat.name].push(feat);
         }
     }
 
+    for (const key in unmergedFeats) {
+        const feats = unmergedFeats[key];
+        const description: Description[] = [];
+        for (const feat of feats) {
+            if (!feat.descriptions) continue;
+            feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className}`;
+            description.push(...feat.descriptions);
+        }
+
+        parsedFeats.push({
+            name: feats[0].name,
+            source: feats[0].source,
+            url: getClassesUrl(feats[0].className, feats[0].classSource),
+            type: `${feats[0].className} Class Feature`,
+            prerequisite: feats[0].classKey,
+            abilityIncrease: null,
+            description,
+        });
+    }
+
+    // SUBCLASS FEATS
+    unmergedFeats = {};
     for (const key in subclassFeats) {
         const feats = subclassFeats[key];
         for (const feat of feats) {
@@ -771,23 +789,35 @@ function classFeatsToParsedFeats(
                 throw `Subclass feat ${feat.name} does not have subclass name or source`;
 
             feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
-
-            parsedFeats.push({
-                name: getClassFeatName(feat.name, feat.level, feat.subclassName),
-                source: feat.source,
-                url: getSubclassUrl(
-                    feat.className,
-                    feat.classSource,
-                    feat.subclassName,
-                    feat.subclassSource,
-                    feat.level
-                ),
-                type: `Lv. ${feat.level} ${feat.subclassName} Subclass Feature`,
-                prerequisite: feat.subclassKey ?? feat.classKey,
-                abilityIncrease: null,
-                description: feat.descriptions,
-            });
+            if (!unmergedFeats[feat.name]) unmergedFeats[feat.name] = [];
+            unmergedFeats[feat.name].push(feat);
         }
+    }
+
+    for (const key in unmergedFeats) {
+        const feats = unmergedFeats[key];
+        const description: Description[] = [];
+        for (const feat of feats) {
+            if (!feat.descriptions) continue;
+            feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className} (${feat.subclassName})`;
+            description.push(...feat.descriptions);
+        }
+
+        parsedFeats.push({
+            name: feats[0].name,
+            source: feats[0].source,
+            url: getSubclassUrl(
+                feats[0].className,
+                feats[0].classSource,
+                feats[0].subclassName ?? '',
+                feats[0].subclassSource ?? '',
+                feats[0].level
+            ),
+            type: `${feats[0].className} Subclass Feature`,
+            prerequisite: feats[0].subclassKey ?? feats[0].classKey,
+            abilityIncrease: null,
+            description,
+        });
     }
 
     return parsedFeats;
