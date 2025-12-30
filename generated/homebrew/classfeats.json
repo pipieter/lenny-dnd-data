@@ -3913,16 +3913,26 @@
   "source": "DarkMatter24",
   "url": "https://5e.tools/classes.html#alchemist_valdaalchemist,state:feature=s2-0~sub_ionizer_darkmatter24=b1",
   "type": "Alchemist Subclass Feature",
-  "prerequisite": "Ionizer (DARKMATTER24) or Mutagenist (VALDAALCHEMIST)",
+  "prerequisite": "Ionizer (DARKMATTER24)",
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 3 Ionizer Alchemist (DarkMatter24)",
+    "name": "",
     "type": "text",
     "value": "You gain proficiency in the *Technology* skill."
-   },
+   }
+  ]
+ },
+ {
+  "name": "Bonus Proficiencies",
+  "source": "ValdaAlchemist",
+  "url": "https://5e.tools/classes.html#alchemist_valdaalchemist,state:feature=s2-0~sub_mutagenist_valdaalchemist=b1",
+  "type": "Alchemist Subclass Feature",
+  "prerequisite": "Mutagenist (VALDAALCHEMIST)",
+  "abilityIncrease": null,
+  "description": [
    {
-    "name": "Lv. 3 Mutagenist Alchemist (ValdaAlchemist)",
+    "name": "",
     "type": "text",
     "value": "You gain proficiency in your choice of the *Acrobatics* or *Athletics* skill."
    }
@@ -35517,11 +35527,11 @@
   "source": "DarkMatter24",
   "url": "https://5e.tools/classes.html#investigator_valdainvestigator,state:feature=s2-0~sub_decommissioner_darkmatter24=b1",
   "type": "Investigator Subclass Feature",
-  "prerequisite": "Decommissioner (DARKMATTER24), Time Operative (VALDAINVESTIGATOR), Spy (VALDAINVESTIGATOR), Medium (VALDAINVESTIGATOR), Antiquarian (VALDAINVESTIGATOR), Conspiracy Theorist (VALDAINVESTIGATOR), Containment Specialist (VALDAINVESTIGATOR), Detective (VALDAINVESTIGATOR), Exterminator (VALDAINVESTIGATOR), Infernum (VALDAINVESTIGATOR), Inquisitor (VALDAINVESTIGATOR), Kid Sleuth (VALDAINVESTIGATOR) or Archivist (VALDAINVESTIGATOR)",
+  "prerequisite": "Decommissioner (DARKMATTER24)",
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 3 Decommissioner Investigator (DarkMatter24)",
+    "name": "",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35539,246 +35549,6 @@
     "name": "Interrogation Field",
     "type": "text",
     "value": "You can cast __Zone of Truth__ without a spell slot."
-   },
-   {
-    "name": "Lv. 3 Time Operative Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Blank Tablet",
-    "type": "text",
-    "value": "As a Magic action, you touch a creature and end one condition on it: Blinded, Deafened, Paralyzed, or Poisoned. You can't remove a condition that a creature has had for longer than 1 minute."
-   },
-   {
-    "name": "Quicksilver Emblem",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Longstrider__ without a spell slot or components."
-   },
-   {
-    "name": "Weightless Sphere",
-    "type": "text",
-    "value": "You can cast __Feather Fall__ without a spell slot or components."
-   },
-   {
-    "name": "Lv. 3 Spy Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Glass Dust",
-    "type": "text",
-    "value": "As a Bonus Action, you can throw this pouch at a point you can see within 10 feet of you, filling a 5-foot-radius Sphere centered on that point with glittering dust until the start of your next turn. A creature that enters the Sphere for the first time on a turn or ends its turn there has the Invisible condition. This condition ends early for a creature that leaves the Sphere, makes an attack roll, deals damage, or casts a spell."
-   },
-   {
-    "name": "Horn-Rimmed Glasses",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Disguise Self__ without a spell slot or components."
-   },
-   {
-    "name": "Martini Glass",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Charm Person__ without a spell slot or components."
-   },
-   {
-    "name": "Lv. 3 Medium Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Dead Ringer",
-    "type": "text",
-    "value": "You can ring this bell to cast __Speak with Dead__ without a spell slot or components. When you cast the spell using this trinket, you can ask the corpse only one question."
-   },
-   {
-    "name": "Heptagonal Spectacles",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __See Invisibility__ once without a spell slot or components."
-   },
-   {
-    "name": "Lucent Mirror",
-    "type": "text",
-    "value": "As a Bonus Action, you can partially phase into the Ethereal Plane for 1 minute or until you dismiss it (no action required). You have a Fly Speed of 10 feet and can move through occupied spaces as if they were Difficult Terrain. If you end your turn in such a space, you are shunted to the last unoccupied space you were in."
-   },
-   {
-    "name": "Lv. 3 Antiquarian Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Hateful Arrowhead",
-    "type": "text",
-    "value": "You can cast __Ray of Enfeeblement__ or __Scorching Ray__ spell without a spell slot or components."
-   },
-   {
-    "name": "Warped Prism",
-    "type": "text",
-    "value": "You can cast __Blur__ or __Shield__ without a spell slot or components."
-   },
-   {
-    "name": "Razortooth Bandages",
-    "type": "text",
-    "value": "You can cast __Cure Wounds__ or __Inflict Wounds__ without a spell slot or components. When you restore Hit Points or deal damage using one of these spells using this trinket, you can add your Investigator level to the healing or damage dealt."
-   },
-   {
-    "name": "Lv. 3 Conspiracy Theorist Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Masonic Charm",
-    "type": "text",
-    "value": "As a Bonus Action, you attach this charm to a weapon you are holding. When you do so, choose a number from 10-19. For 1 minute, your attacks using the weapon score a Critical Hit on a roll of that number or a 20 on the d20."
-   },
-   {
-    "name": "Three-Headed Coin",
-    "type": "text",
-    "value": "You give yourself Advantage on one D20 Test before you roll the d20."
-   },
-   {
-    "name": "Unfathomable Metal",
-    "type": "text",
-    "value": "As a Bonus Action, you reveal this trinket to a creature within 5 feet of you. At the start of each of its turns for 1 minute, the target takes **2d6** Radiant damage and then makes a Constitution saving throw. On a failed save, the effect continues. On a successful save, the effect ends."
-   },
-   {
-    "name": "Lv. 3 Containment Specialist Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Antibell",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Silence__ without a spell slot or components."
-   },
-   {
-    "name": "Black Bag",
-    "type": "text",
-    "value": "As a Bonus Action, you can activate your Black Bag, an item linked to numerous extradimensional spaces, for 1 minute. While the bag is active, you can take a Utilize action to place an item in the bag or retrieve one from the bag. Any item placed within the bag is stored in its own extradimensional space, which is suffused by an __Antimagic Field__. The bag's mouth is 2 feet in diameter. It can hold up to 12 items, each weighing no more than 50 pounds, and weighs as much as the heaviest object stored within it. When you retrieve an item from the bag, you always grab the item you intended."
-   },
-   {
-    "name": "Cinnabar Compass",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Locate Object__ without using a spell slot or components."
-   },
-   {
-    "name": "Lv. 3 Detective Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Fogstone Periapt",
-    "type": "text",
-    "value": "You can cast __Misty Step__ without a spell slot or components."
-   },
-   {
-    "name": "Glass Medallion",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Invisibility__ on yourself without a spell slot or components."
-   },
-   {
-    "name": "Skeleton's Key",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Knock__ without a spell slot or components. When you cast the spell using this trinket, its casting is silent."
-   },
-   {
-    "name": "Lv. 3 Exterminator Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Consecrated Whetstone",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Magic Weapon__ once without a spell slot or components."
-   },
-   {
-    "name": "Gilded Dragon Scale",
-    "type": "text",
-    "value": "As a Bonus Action, choose Acid, Cold, Fire, Force, Lightning, Poison, or Thunder damage. You gain Resistance to the chosen damage type for 1 minute."
-   },
-   {
-    "name": "Mimic-Tooth Necklace",
-    "type": "text",
-    "value": "When you hit a creature with an attack using a weapon, you can take a Bonus Action to deal an extra **2d8** Acid damage to the creature."
-   },
-   {
-    "name": "Lv. 3 Infernum Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Demon's Eye",
-    "type": "text",
-    "value": "As a Bonus Action, you gain the ability to see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself for 1 minute."
-   },
-   {
-    "name": "Diabolical Barb",
-    "type": "text",
-    "value": "You can cast __Hellish Rebuke__ without a spell slot or components."
-   },
-   {
-    "name": "Hexagram Pendant",
-    "type": "text",
-    "value": "You can cast __Hex__ without a spell slot or components."
-   },
-   {
-    "name": "Lv. 3 Inquisitor Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Alabaster Balm",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Lesser Restoration__ without a spell slot or components."
-   },
-   {
-    "name": "Hallowed Chalice",
-    "type": "text",
-    "value": "As a Bonus Action, you can enchant a container, such as a cup, that you touch to produce a flask of Holy Water. You can produce one such flask when you use this trinket. For the next hour, you can use a Bonus Action to produce another flask of Holy Water, until you have created a total of five flasks. Once created, these flasks and Holy Water vanish after 1 hour."
-   },
-   {
-    "name": "Reliquary of Doubt",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Detect Thoughts__ without a spell slot or components. When you cast the spell using this trinket, you can only detect thoughts associated with negative emotions, such as guilt, apprehension, regret, or melancholy."
-   },
-   {
-    "name": "Lv. 3 Kid Sleuth Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Bag of Traps",
-    "type": "text",
-    "value": "As a Bonus Action, you can magically produce and take the Utilize action to use one of the following items: Ball Bearings, Caltrops, Chain, Hunting Trap, Manacles, or Oil (which you can only use to douse a space). If the item requires a saving throw, it uses your Investigator spell save DC. For the next minute, you can use a Bonus Action to produce and use another such item, until you have created a total of five items. Once created, these items vanish after 1 hour."
-   },
-   {
-    "name": "Dooby Snack",
-    "type": "text",
-    "value": "As a Bonus Action, you produce a tasty treat that lasts for 1 hour. A creature can use a Bonus Action to eat this treat to gain a number of Temporary Hit Points equal to your Intelligence modifier (minimum of 1). Until the start of its next turn, the creature has Advantage on the next D20 Test it makes."
-   },
-   {
-    "name": "Magnifying Glass",
-    "type": "text",
-    "value": "As a Bonus Action, you can cast __Clue__ without a spell slot or components. Additionally, when you cast this spell using this trinket, you can determine each type of creature that leaves footprints or fingerprints."
-   },
-   {
-    "name": "Lv. 3 Archivist Investigator (ValdaInvestigator)",
-    "type": "text",
-    "value": "You can use the following trinkets."
-   },
-   {
-    "name": "Aura Lenses",
-    "type": "text",
-    "value": "You can cast __Detect Magic__ without a spell slot or components."
-   },
-   {
-    "name": "Mnemonic Script",
-    "type": "text",
-    "value": "You can cast __Memorize__ without a spell slot or components."
-   },
-   {
-    "name": "Tongue Stone",
-    "type": "text",
-    "value": "You can cast __Comprehend Languages__ without a spell slot or components."
    }
   ]
  },

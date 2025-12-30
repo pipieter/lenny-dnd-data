@@ -738,6 +738,12 @@ function classFeatsToParsedFeats(
         'Subclass Feature', // Self-explanatory name, not unique between classes.
     ];
 
+    function getFeatKey(feat: ClassFeature): string {
+        return `${feat.name}|${feat.source}`;
+    }
+
+    // Temporary structure used to group feats by name and source.
+    // Instead of creating multiple features with the same name, all related feat data is bundled together here.
     let unmergedFeats: { [key: string]: ClassFeature[] } = {};
 
     // CLASS FEATS
@@ -750,8 +756,9 @@ function classFeatsToParsedFeats(
 
             feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
 
-            if (!unmergedFeats[feat.name]) unmergedFeats[feat.name] = [];
-            unmergedFeats[feat.name].push(feat);
+            const key = getFeatKey(feat);
+            if (!unmergedFeats[key]) unmergedFeats[key] = [];
+            unmergedFeats[key].push(feat);
         }
     }
 
@@ -793,8 +800,9 @@ function classFeatsToParsedFeats(
                 throw `Subclass feat ${feat.name} does not have subclass name or source`;
 
             feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
-            if (!unmergedFeats[feat.name]) unmergedFeats[feat.name] = [];
-            unmergedFeats[feat.name].push(feat);
+            const key = getFeatKey(feat);
+            if (!unmergedFeats[key]) unmergedFeats[key] = [];
+            unmergedFeats[key].push(feat);
         }
     }
 
