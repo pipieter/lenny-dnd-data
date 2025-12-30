@@ -738,10 +738,6 @@ function classFeatsToParsedFeats(
         'Subclass Feature', // Self-explanatory name, not unique between classes.
     ];
 
-    function getClassFeatName(name: string, level: number, className: string): string {
-        return `${name} (Lv. ${level} ${className})`;
-    }
-
     let unmergedFeats: { [key: string]: ClassFeature[] } = {};
 
     // CLASS FEATS
@@ -762,13 +758,16 @@ function classFeatsToParsedFeats(
     for (const key in unmergedFeats) {
         const feats = unmergedFeats[key];
         let description: Description[] = [];
+        const prerequisitesSet = new Set<string>();
         if (feats.length === 1 && feats) {
             description = feats[0].descriptions ?? [];
+            prerequisitesSet.add(feats[0].classKey);
         } else {
             for (const feat of feats) {
                 if (!feat.descriptions) continue;
-                feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className}`;
+                feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className} (${feat.classSource})`;
                 description.push(...feat.descriptions);
+                prerequisitesSet.add(feat.classKey);
             }
         }
 
@@ -777,7 +776,7 @@ function classFeatsToParsedFeats(
             source: feats[0].source,
             url: getClassesUrl(feats[0].className, feats[0].classSource),
             type: `${feats[0].className} Class Feature`,
-            prerequisite: feats[0].classKey,
+            prerequisite: joinStringsWithOr([...prerequisitesSet]),
             abilityIncrease: null,
             description,
         });
@@ -802,13 +801,16 @@ function classFeatsToParsedFeats(
     for (const key in unmergedFeats) {
         const feats = unmergedFeats[key];
         let description: Description[] = [];
+        const prerequisitesSet = new Set<string>();
         if (feats.length === 1 && feats) {
             description = feats[0].descriptions ?? [];
+            prerequisitesSet.add(feats[0].subclassKey ?? feats[0].classKey);
         } else {
             for (const feat of feats) {
                 if (!feat.descriptions) continue;
-                feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className} (${feat.subclassName})`;
+                feat.descriptions[0].name = `Lv. ${feat.level} ${feat.subclassName} ${feat.className} (${feat.subclassSource})`;
                 description.push(...feat.descriptions);
+                prerequisitesSet.add(feat.subclassKey ?? feat.classKey);
             }
         }
 
@@ -823,7 +825,7 @@ function classFeatsToParsedFeats(
                 feats[0].level
             ),
             type: `${feats[0].className} Subclass Feature`,
-            prerequisite: feats[0].subclassKey ?? feats[0].classKey,
+            prerequisite: joinStringsWithOr([...prerequisitesSet]),
             abilityIncrease: null,
             description,
         });

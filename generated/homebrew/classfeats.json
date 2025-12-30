@@ -1242,7 +1242,7 @@
   "source": "ValdaInvestigator",
   "url": "https://5e.tools/classes.html#investigator_valdainvestigator,state:feature=s5-0~sub_antiquarian_valdainvestigator=b1",
   "type": "Investigator Subclass Feature",
-  "prerequisite": "Antiquarian (VALDAINVESTIGATOR)",
+  "prerequisite": "Antiquarian (VALDAINVESTIGATOR) or Conspiracy Theorist (VALDAINVESTIGATOR)",
   "abilityIncrease": null,
   "description": [
    {
@@ -3913,16 +3913,16 @@
   "source": "DarkMatter24",
   "url": "https://5e.tools/classes.html#alchemist_valdaalchemist,state:feature=s2-0~sub_ionizer_darkmatter24=b1",
   "type": "Alchemist Subclass Feature",
-  "prerequisite": "Ionizer (DARKMATTER24)",
+  "prerequisite": "Ionizer (DARKMATTER24) or Mutagenist (VALDAALCHEMIST)",
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 3 Alchemist (Ionizer)",
+    "name": "Lv. 3 Ionizer Alchemist (DarkMatter24)",
     "type": "text",
     "value": "You gain proficiency in the *Technology* skill."
    },
    {
-    "name": "Lv. 3 Alchemist (Mutagenist)",
+    "name": "Lv. 3 Mutagenist Alchemist (ValdaAlchemist)",
     "type": "text",
     "value": "You gain proficiency in your choice of the *Acrobatics* or *Athletics* skill."
    }
@@ -7378,16 +7378,16 @@
   "source": "ValdaGunslingerExtras",
   "url": "https://5e.tools/classes.html#gunslinger_valdagunslinger,state:feature=s2-0~sub_pistolero_valdagunslingerextras=b1",
   "type": "Gunslinger Subclass Feature",
-  "prerequisite": "Pistolero (VALDAGUNSLINGEREXTRAS)",
+  "prerequisite": "Pistolero (VALDAGUNSLINGEREXTRAS) or Gun-Ko Master (VALDAGUNSLINGEREXTRAS)",
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 3 Gunslinger (Pistolero)",
+    "name": "Lv. 3 Pistolero Gunslinger (ValdaGunslingerExtras)",
     "type": "text",
     "value": "Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons."
    },
    {
-    "name": "Lv. 3 Gunslinger (Gun-Ko Master)",
+    "name": "Lv. 3 Gun-Ko Master Gunslinger (ValdaGunslingerExtras)",
     "type": "text",
     "value": "Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons."
    }
@@ -7537,7 +7537,7 @@
     "value": "Your Cohort has proficiency in skills and saving throws listed in its statistics. Your Cohort uses your Proficiency Bonus instead of its own. Because Cohort statistics already include a +2 Proficiency Bonus, you need only adjust skill and saving throw proficiencies starting at level 5."
    },
    {
-    "name": "Lv. 5 Captain",
+    "name": "Lv. 5 Captain (ValdaCaptain)",
     "type": "text",
     "value": "Your Cohort improves and gains a new feature."
    },
@@ -7702,7 +7702,7 @@
     "value": "Your bond is defined by a specific type of companionship. Choose one Companionship Style option. You cannot choose one Companionship Style more than once, even when you later get to choose again at 10th level."
    },
    {
-    "name": "Lv. 10 Kitsune Witch",
+    "name": "Lv. 10 Kitsune Witch (WoKiWi)",
     "type": "text",
     "value": "Your bond is defined by a second specific type of companionship. Choose one Companionship Style option. You cannot choose one Companionship Style more than once."
    }
@@ -19160,7 +19160,7 @@
     "value": "At Martyr level 17, the first time you use your Sacrificial Strike on each of your turns, you can do so without taking a Bonus Action."
    },
    {
-    "name": "Lv. 17 Martyr",
+    "name": "Lv. 17 Martyr (ValdaMartyr)",
     "type": "text",
     "value": "The first time you use your Sacrificial Strike on each of your turns, you can do so without taking a Bonus Action."
    }
@@ -20362,11 +20362,11 @@
   "source": "WoKiWi",
   "url": "https://5e.tools/classes.html#kitsune%20witch_wokiwi,state:feature=s2-0~sub_crippling_wokiwi=b1",
   "type": "Kitsune Witch Subclass Feature",
-  "prerequisite": "Crippling (WOKIWI)",
+  "prerequisite": "Crippling (WOKIWI), Guarding (WOKIWI), Invigorating (WOKIWI) or Scarring (WOKIWI)",
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 3 Kitsune Witch (Crippling)",
+    "name": "Lv. 3 Crippling Kitsune Witch (WoKiWi)",
     "type": "text",
     "value": "Your kitsune companion gains their aspect. This aspect shows which kitsune sheet you'll be using from now on, as well as certain subclass features you'll gain. Choose one of these aspects:"
    },
@@ -20376,7 +20376,7 @@
     "value": "• **Dark**: A kitsune aspected to darkness prefers to operate from the shadows. There they'll lie in wait and debilitate their enemy, until they are weak enough to kill. If you choose this aspect, you now use the __Dark Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Shadow Veil's stats here](https://5e.tools/feats.html#shadow%20veil_wokiwi)\n• **Time**: Kitsunes aspected to time will use it to their advantage. They'll set out traps across time, just so the enemy can be killed in one hit whenever the kitsune meets them. If you choose this aspect, you now use the __Time Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Time Delay's stats here](https://5e.tools/feats.html#time%20delay_wokiwi)"
    },
    {
-    "name": "Lv. 3 Kitsune Witch (Guarding)",
+    "name": "Lv. 3 Guarding Kitsune Witch (WoKiWi)",
     "type": "text",
     "value": "Your kitsune companion gains their aspect. This aspect shows which kitsune sheet you'll be using from now on, as well as certain subclass features you'll gain. Choose one of these aspects:"
    },
@@ -20386,7 +20386,7 @@
     "value": "• **Earth**: A kitsune aspected to earth can be moulded as easily as clay, making their skin hard to break. If you choose this aspect, you now use the __Earth Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Mouldable Earth's stats here](https://5e.tools/feats.html#mouldable%20earth_wokiwi)\n• **Forest**: A kitsune aspected to the forest is a kitsune who has skin as hard as bark, and knows that nature will win eventually. If you choose this aspect, you now use the __Forest Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Blocking Forest's stats here](https://5e.tools/feats.html#blocking%20forest_wokiwi)\n• **Mountain**: A kitsune aspected to the mountain is one that cannot be swayed to move from their place. You may be hurting it, but they'll never show that you are. If you choose this aspect, you now use the __Mountain Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Mountain Wall's stats here](https://5e.tools/feats.html#mountain%20wall_wokiwi)"
    },
    {
-    "name": "Lv. 3 Kitsune Witch (Invigorating)",
+    "name": "Lv. 3 Invigorating Kitsune Witch (WoKiWi)",
     "type": "text",
     "value": "Your kitsune companion gains their aspect. This aspect shows which kitsune sheet you'll be using from now on, as well as certain subclass features you'll gain. Choose one of these aspects:"
    },
@@ -20396,7 +20396,7 @@
     "value": "• **Heaven**: A kitsune aspected to heaven is the best judge of character and aids any person in need. However, they will only form bonds with those who are pure of heart. If you choose this aspect, you now use the __Heaven Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Soothing Heaven's stats here](https://5e.tools/feats.html#soothing%20heaven_wokiwi)\n• **Ocean**: A kitsune aspected to the ocean is as vast and complex as the ocean itself. However, if the tides allow it they will prioritise helping those in need. If you choose this aspect, you now use the __Ocean Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Ocean Waves's stats here](https://5e.tools/feats.html#ocean%20waves_wokiwi)\n• **River**: A kitsune aspected to the river sees life as a one way road. To them it is precious to let everyone enjoy their travel, because their end of the road may be soon. If you choose this aspect, you now use the __River Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See River's Flow's stats here](https://5e.tools/feats.html#river's%20flow_wokiwi)\n• **Spirit**: A kitsune aspected to the spirit is obsessed with making people do as much good as they can, just so they aren't tortured after death. If you choose this aspect, you now use the __Spirit Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Spirit Touch's stats here](https://5e.tools/feats.html#spirit%20touch_wokiwi)"
    },
    {
-    "name": "Lv. 3 Kitsune Witch (Scarring)",
+    "name": "Lv. 3 Scarring Kitsune Witch (WoKiWi)",
     "type": "text",
     "value": "Your kitsune companion gains their aspect. This aspect shows which kitsune sheet you'll be using from now on, as well as certain subclass features you'll gain. Choose one of these aspects:"
    },
@@ -21552,7 +21552,7 @@
   "source": "ABWeaver",
   "url": "https://5e.tools/classes.html#weaver_abweaver,state:feature=s9-0~sub_architect_abweaver=b1",
   "type": "Weaver Subclass Feature",
-  "prerequisite": "Architect (ABWEAVER)",
+  "prerequisite": "Architect (ABWEAVER), Beast (ABWEAVER), Hunter (ABWEAVER), Reaper (ABWEAVER), Shaman (ABWEAVER), Wanderer (ABWEAVER) or Witch (ABWEAVER)",
   "abilityIncrease": null,
   "description": [
    {
@@ -22946,16 +22946,16 @@
   "source": "ValdaWarmage",
   "url": "https://5e.tools/classes.html#warmage_valdawarmage,state:feature=s2-0~sub_knights_valdawarmage=b1",
   "type": "Warmage Subclass Feature",
-  "prerequisite": "Knights (VALDAWARMAGE)",
+  "prerequisite": "Knights (VALDAWARMAGE) or Kings (VALDAWARMAGE)",
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 3 Warmage (Knights)",
+    "name": "Lv. 3 Knights Warmage (ValdaWarmage)",
     "type": "text",
     "value": "You gain proficiency with Martial weapons and training with Medium armor, Heavy armor, and Shields. You can ignore the Strength requirement for wearing Heavy armor and wielding weapons with Heavy."
    },
    {
-    "name": "Lv. 3 Warmage (Kings)",
+    "name": "Lv. 3 Kings Warmage (ValdaWarmage)",
     "type": "text",
     "value": "You gain proficiency with Martial weapons and training with Medium armor and Shields."
    }
@@ -27522,7 +27522,7 @@
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 1 Alchemist",
+    "name": "Lv. 1 Alchemist (ValdaAlchemist)",
     "type": "text",
     "value": "You can spend 10 minutes and expend any number of Reagents to brew potions, which can be done during a Short Rest. You can have a total number of potions at one time up to your Intelligence modifier (minimum of 1). These potions retain potency until you finish a Long Rest, after which they become inert."
    },
@@ -27646,7 +27646,7 @@
     }
    },
    {
-    "name": "Lv. 5 Alchemist",
+    "name": "Lv. 5 Alchemist (ValdaAlchemist)",
     "type": "text",
     "value": "Your Potion Brewing feature gains new potions for you to brew."
    },
@@ -31345,17 +31345,17 @@
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 4 Weaver",
+    "name": "Lv. 4 Weaver (ABWeaver)",
     "type": "text",
     "value": "You learn how to produce Silk on your own. When you start your turn with fewer Silk Spools than Silk Hearts, you can add 1 Silk Spool to a maximum of 1 (no action required). You gain an additional Silk Heart at Weaver level 8 and 12. You can also see your maximum Silk Hearts in the Silk Heart column of the Weaver Features table."
    },
    {
-    "name": "Lv. 8 Weaver",
+    "name": "Lv. 8 Weaver (ABWeaver)",
     "type": "text",
     "value": "You learn how to produce Silk on your own. When you start your turn with fewer Silk Spools than Silk Hearts, you can add 1 Silk Spool to a maximum of 1 (no action required). You can also see your maximum Silk Hearts in the Silk Heart column of the Weaver Features table."
    },
    {
-    "name": "Lv. 12 Weaver",
+    "name": "Lv. 12 Weaver (ABWeaver)",
     "type": "text",
     "value": "You learn how to produce Silk on your own. When you start your turn with fewer Silk Spools than Silk Hearts, you can add 1 Silk Spool to a maximum of 1 (no action required). You can also see your maximum Silk Hearts in the Silk Heart column of the Weaver Features table."
    }
@@ -31385,7 +31385,7 @@
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 10 Weaver",
+    "name": "Lv. 10 Weaver (Weaver)",
     "type": "text",
     "value": "You can regain 1 Silk point at the start of your turn, up to a maximum of 2 Silk points."
    },
@@ -35517,11 +35517,11 @@
   "source": "DarkMatter24",
   "url": "https://5e.tools/classes.html#investigator_valdainvestigator,state:feature=s2-0~sub_decommissioner_darkmatter24=b1",
   "type": "Investigator Subclass Feature",
-  "prerequisite": "Decommissioner (DARKMATTER24)",
+  "prerequisite": "Decommissioner (DARKMATTER24), Time Operative (VALDAINVESTIGATOR), Spy (VALDAINVESTIGATOR), Medium (VALDAINVESTIGATOR), Antiquarian (VALDAINVESTIGATOR), Conspiracy Theorist (VALDAINVESTIGATOR), Containment Specialist (VALDAINVESTIGATOR), Detective (VALDAINVESTIGATOR), Exterminator (VALDAINVESTIGATOR), Infernum (VALDAINVESTIGATOR), Inquisitor (VALDAINVESTIGATOR), Kid Sleuth (VALDAINVESTIGATOR) or Archivist (VALDAINVESTIGATOR)",
   "abilityIncrease": null,
   "description": [
    {
-    "name": "Lv. 3 Investigator (Decommissioner)",
+    "name": "Lv. 3 Decommissioner Investigator (DarkMatter24)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35541,7 +35541,7 @@
     "value": "You can cast __Zone of Truth__ without a spell slot."
    },
    {
-    "name": "Lv. 3 Investigator (Time Operative)",
+    "name": "Lv. 3 Time Operative Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35561,7 +35561,7 @@
     "value": "You can cast __Feather Fall__ without a spell slot or components."
    },
    {
-    "name": "Lv. 3 Investigator (Spy)",
+    "name": "Lv. 3 Spy Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35581,7 +35581,7 @@
     "value": "As a Bonus Action, you can cast __Charm Person__ without a spell slot or components."
    },
    {
-    "name": "Lv. 3 Investigator (Medium)",
+    "name": "Lv. 3 Medium Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35601,7 +35601,7 @@
     "value": "As a Bonus Action, you can partially phase into the Ethereal Plane for 1 minute or until you dismiss it (no action required). You have a Fly Speed of 10 feet and can move through occupied spaces as if they were Difficult Terrain. If you end your turn in such a space, you are shunted to the last unoccupied space you were in."
    },
    {
-    "name": "Lv. 3 Investigator (Antiquarian)",
+    "name": "Lv. 3 Antiquarian Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35621,7 +35621,7 @@
     "value": "You can cast __Cure Wounds__ or __Inflict Wounds__ without a spell slot or components. When you restore Hit Points or deal damage using one of these spells using this trinket, you can add your Investigator level to the healing or damage dealt."
    },
    {
-    "name": "Lv. 3 Investigator (Conspiracy Theorist)",
+    "name": "Lv. 3 Conspiracy Theorist Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35641,7 +35641,7 @@
     "value": "As a Bonus Action, you reveal this trinket to a creature within 5 feet of you. At the start of each of its turns for 1 minute, the target takes **2d6** Radiant damage and then makes a Constitution saving throw. On a failed save, the effect continues. On a successful save, the effect ends."
    },
    {
-    "name": "Lv. 3 Investigator (Containment Specialist)",
+    "name": "Lv. 3 Containment Specialist Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35661,7 +35661,7 @@
     "value": "As a Bonus Action, you can cast __Locate Object__ without using a spell slot or components."
    },
    {
-    "name": "Lv. 3 Investigator (Detective)",
+    "name": "Lv. 3 Detective Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35681,7 +35681,7 @@
     "value": "As a Bonus Action, you can cast __Knock__ without a spell slot or components. When you cast the spell using this trinket, its casting is silent."
    },
    {
-    "name": "Lv. 3 Investigator (Exterminator)",
+    "name": "Lv. 3 Exterminator Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35701,7 +35701,7 @@
     "value": "When you hit a creature with an attack using a weapon, you can take a Bonus Action to deal an extra **2d8** Acid damage to the creature."
    },
    {
-    "name": "Lv. 3 Investigator (Infernum)",
+    "name": "Lv. 3 Infernum Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35721,7 +35721,7 @@
     "value": "You can cast __Hex__ without a spell slot or components."
    },
    {
-    "name": "Lv. 3 Investigator (Inquisitor)",
+    "name": "Lv. 3 Inquisitor Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35741,7 +35741,7 @@
     "value": "As a Bonus Action, you can cast __Detect Thoughts__ without a spell slot or components. When you cast the spell using this trinket, you can only detect thoughts associated with negative emotions, such as guilt, apprehension, regret, or melancholy."
    },
    {
-    "name": "Lv. 3 Investigator (Kid Sleuth)",
+    "name": "Lv. 3 Kid Sleuth Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
@@ -35761,7 +35761,7 @@
     "value": "As a Bonus Action, you can cast __Clue__ without a spell slot or components. Additionally, when you cast this spell using this trinket, you can determine each type of creature that leaves footprints or fingerprints."
    },
    {
-    "name": "Lv. 3 Investigator (Archivist)",
+    "name": "Lv. 3 Archivist Investigator (ValdaInvestigator)",
     "type": "text",
     "value": "You can use the following trinkets."
    },
