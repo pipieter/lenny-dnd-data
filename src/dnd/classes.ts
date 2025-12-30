@@ -750,6 +750,7 @@ function classFeatsToParsedFeats(
         for (const feat of feats) {
             if (!feat.descriptions) continue;
             if (blacklist.includes(feat.name)) continue;
+            if (feat.name.endsWith(' Subclass')) continue; // Each class has feats to state that a subclass can be taken, we don't need to parse this.
 
             feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
 
