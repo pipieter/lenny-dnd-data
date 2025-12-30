@@ -812,7 +812,6 @@ function classFeatsToParsedFeats(
             }
         }
 
-
         parsedFeats.push({
             name: feats[0].name,
             source: feats[0].source,
