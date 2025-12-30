@@ -727,7 +727,6 @@ function classFeatsToParsedFeats(
     classFeats: ClassFeatureDictionary,
     subclassFeats: ClassFeatureDictionary
 ): ParsedFeat[] {
-    const parsedFeats: ParsedFeat[] = [];
     /* 
     Blacklist for certain feats that are generic, repetitive, or not useful as individual feats.
     Users can still access this information when looking up classes, but can't directly look up these feats.
@@ -738,108 +737,67 @@ function classFeatsToParsedFeats(
         'Subclass Feature', // Self-explanatory name, not unique between classes.
     ];
 
-    function getFeatKey(feat: ClassFeature): string {
-        return `${feat.name}|${feat.source}`;
-    }
+    const processFeats = (featDict: ClassFeatureDictionary, isSubclass: boolean): ParsedFeat[] => {
+        // Feats are grouped by name and source first, so we don't end up with a large collection of similar feats.
+        // e.g. Barbarian (PHB)'s Bear feat gains new properties on different levels. By merging that data we end up with one "master" Bear feat, rather than 3 feats per level.
+        const unmergedFeats: Record<string, ClassFeature[]> = {};
 
-    // Temporary structure used to group feats by name and source.
-    // Instead of creating multiple features with the same name, all related feat data is bundled together here.
-    let unmergedFeats: { [key: string]: ClassFeature[] } = {};
-
-    // CLASS FEATS
-    for (const key in classFeats) {
-        const feats = classFeats[key];
-        for (const feat of feats) {
-            if (!feat.descriptions) continue;
-            if (blacklist.includes(feat.name)) continue;
-            if (feat.name.endsWith(' Subclass')) continue; // Each class has feats to state that a subclass can be taken, we don't need to parse this.
-
-            feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
-
-            const key = getFeatKey(feat);
-            if (!unmergedFeats[key]) unmergedFeats[key] = [];
-            unmergedFeats[key].push(feat);
-        }
-    }
-
-    for (const key in unmergedFeats) {
-        const feats = unmergedFeats[key];
-        let description: Description[] = [];
-        const prerequisitesSet = new Set<string>();
-        if (feats.length === 1 && feats) {
-            description = feats[0].descriptions ?? [];
-            prerequisitesSet.add(feats[0].classKey);
-        } else {
+        // Filter and Group
+        for (const feats of Object.values(featDict)) {
             for (const feat of feats) {
                 if (!feat.descriptions) continue;
-                feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className} (${feat.classSource})`;
-                description.push(...feat.descriptions);
-                prerequisitesSet.add(feat.classKey);
+                if (blacklist.includes(feat.name)) continue;
+                if (feat.name.endsWith(' Subclass')) continue; // Filter out "feats" stating a class can have a subclass, as this is default D&D behavior.
+
+                feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
+
+                const key = `${feat.name}|${feat.source}`;
+                unmergedFeats[key] = unmergedFeats[key] ?? [];
+                unmergedFeats[key].push(feat);
             }
         }
 
-        parsedFeats.push({
-            name: feats[0].name,
-            source: feats[0].source,
-            url: getClassesUrl(feats[0].className, feats[0].classSource),
-            type: `${feats[0].className} Class Feature`,
-            prerequisite: joinStringsWithOr([...prerequisitesSet]),
-            abilityIncrease: null,
-            description,
+        // Merge and Transform
+        return Object.values(unmergedFeats).map((group) => {
+            const first = group[0];
+            const prerequisitesSet = new Set<string>();
+            const descriptions: Description[] = [];
+
+            group.forEach((feat) => {
+                const prereq = isSubclass ? (feat.subclassKey ?? feat.classKey) : feat.classKey;
+                prerequisitesSet.add(prereq);
+
+                if (group.length > 1 && feat.descriptions) {
+                    const label = isSubclass
+                        ? `Lv. ${feat.level} ${feat.subclassName} ${feat.className}`
+                        : `Lv. ${feat.level} ${feat.className}`;
+                    feat.descriptions[0].name = `${label} (${feat.subclassSource ?? feat.classSource})`;
+                }
+
+                descriptions.push(...(feat.descriptions ?? []));
+            });
+
+            return {
+                name: first.name,
+                source: first.source,
+                url: isSubclass
+                    ? getSubclassUrl(
+                          first.className,
+                          first.classSource,
+                          first.subclassName!,
+                          first.subclassSource!,
+                          first.level
+                      )
+                    : getClassesUrl(first.className, first.classSource),
+                type: `${first.className} ${isSubclass ? 'Subclass' : 'Class'} Feature`,
+                prerequisite: joinStringsWithOr([...prerequisitesSet]),
+                abilityIncrease: null,
+                description: descriptions,
+            };
         });
-    }
+    };
 
-    // SUBCLASS FEATS
-    unmergedFeats = {};
-    for (const key in subclassFeats) {
-        const feats = subclassFeats[key];
-        for (const feat of feats) {
-            if (!feat.descriptions) continue;
-            if (blacklist.includes(feat.name)) continue;
-            if (!feat.subclassName || !feat.subclassSource)
-                throw `Subclass feat ${feat.name} does not have subclass name or source`;
-
-            feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
-            const key = getFeatKey(feat);
-            if (!unmergedFeats[key]) unmergedFeats[key] = [];
-            unmergedFeats[key].push(feat);
-        }
-    }
-
-    for (const key in unmergedFeats) {
-        const feats = unmergedFeats[key];
-        let description: Description[] = [];
-        const prerequisitesSet = new Set<string>();
-        if (feats.length === 1 && feats) {
-            description = feats[0].descriptions ?? [];
-            prerequisitesSet.add(feats[0].subclassKey ?? feats[0].classKey);
-        } else {
-            for (const feat of feats) {
-                if (!feat.descriptions) continue;
-                feat.descriptions[0].name = `Lv. ${feat.level} ${feat.subclassName} ${feat.className} (${feat.subclassSource})`;
-                description.push(...feat.descriptions);
-                prerequisitesSet.add(feat.subclassKey ?? feat.classKey);
-            }
-        }
-
-        parsedFeats.push({
-            name: feats[0].name,
-            source: feats[0].source,
-            url: getSubclassUrl(
-                feats[0].className,
-                feats[0].classSource,
-                feats[0].subclassName ?? '',
-                feats[0].subclassSource ?? '',
-                feats[0].level
-            ),
-            type: `${feats[0].className} Subclass Feature`,
-            prerequisite: joinStringsWithOr([...prerequisitesSet]),
-            abilityIncrease: null,
-            description,
-        });
-    }
-
-    return parsedFeats;
+    return [...processFeats(classFeats, false), ...processFeats(subclassFeats, true)];
 }
 
 function getBundledClassData(
