@@ -761,11 +761,15 @@ function classFeatsToParsedFeats(
 
     for (const key in unmergedFeats) {
         const feats = unmergedFeats[key];
-        const description: Description[] = [];
-        for (const feat of feats) {
-            if (!feat.descriptions) continue;
-            feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className}`;
-            description.push(...feat.descriptions);
+        let description: Description[] = [];
+        if (feats.length === 1 && feats) {
+            description = feats[0].descriptions ?? [];
+        } else {
+            for (const feat of feats) {
+                if (!feat.descriptions) continue;
+                feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className}`;
+                description.push(...feat.descriptions);
+            }
         }
 
         parsedFeats.push({
@@ -797,12 +801,17 @@ function classFeatsToParsedFeats(
 
     for (const key in unmergedFeats) {
         const feats = unmergedFeats[key];
-        const description: Description[] = [];
-        for (const feat of feats) {
-            if (!feat.descriptions) continue;
-            feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className} (${feat.subclassName})`;
-            description.push(...feat.descriptions);
+        let description: Description[] = [];
+        if (feats.length === 1 && feats) {
+            description = feats[0].descriptions ?? [];
+        } else {
+            for (const feat of feats) {
+                if (!feat.descriptions) continue;
+                feat.descriptions[0].name = `Lv. ${feat.level} ${feat.className} (${feat.subclassName})`;
+                description.push(...feat.descriptions);
+            }
         }
+
 
         parsedFeats.push({
             name: feats[0].name,
