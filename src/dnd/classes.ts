@@ -81,11 +81,7 @@ class CharacterSubclass {
             const featName = parts[0];
             const featClassName = parts[1];
             const featClassSource = parts[2] || 'PHB';
-
             const featClassKey = getKey(featClassName, featClassSource);
-            const level = parseInt(parts[5]);
-
-            if (typeof level !== 'number') throw `Subclass feature-level was not a number ${parts}`;
 
             for (const feat of features) {
                 if (featClassKey !== feat.classKey) continue;
@@ -93,7 +89,6 @@ class CharacterSubclass {
                 if (feat.name !== featName) continue;
 
                 if (this.levelFeatures === null) this.levelFeatures = [];
-                feat.level = level;
                 this.levelFeatures.push(feat);
             }
         }
@@ -771,14 +766,14 @@ function classFeatsToParsedFeats(
                 // Clone descriptions to avoid mutating original dictionary data
                 const processedDescriptions = feat.descriptions!.map((desc, index) => {
                     if (group.length > 1 && index === 0) {
-                        let label = isSubclass
+                        const label = isSubclass
                             ? `Lv. ${feat.level} ${feat.subclassName} ${feat.className}`
                             : `Lv. ${feat.level} ${feat.className}`;
 
                         // Spread into a new object to break the reference link
                         return {
                             ...desc,
-                            name: `${label} (${feat.subclassSource ?? feat.classSource})`
+                            name: `${label} (${feat.subclassSource ?? feat.classSource})`,
                         };
                     }
                     return desc;
@@ -792,12 +787,12 @@ function classFeatsToParsedFeats(
                 source: first.source,
                 url: isSubclass
                     ? getSubclassUrl(
-                        first.className,
-                        first.classSource,
-                        first.subclassName!,
-                        first.subclassSource!,
-                        first.level
-                    )
+                          first.className,
+                          first.classSource,
+                          first.subclassName!,
+                          first.subclassSource!,
+                          first.level
+                      )
                     : getClassesUrl(first.className, first.classSource),
                 type: `${first.className} ${isSubclass ? 'Subclass' : 'Class'} Feature`,
                 prerequisite: joinStringsWithOr([...prerequisitesSet]),
@@ -860,6 +855,7 @@ export function getClassesAndClassFeats(databank: Databank): {
         if (data.subclassFeatures && data.subclasses) {
             for (const featureData of data.subclassFeatures.sort(entrySort)) {
                 const feature = new ClassFeature(featureData);
+
                 const key = feature.classKey;
                 if (!subclassFeatures[key]) subclassFeatures[key] = [];
                 subclassFeatures[key].push(feature);
