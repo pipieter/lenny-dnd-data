@@ -93,8 +93,7 @@ class CharacterSubclass {
                 if (feat.name !== featName) continue;
 
                 if (this.levelFeatures === null) this.levelFeatures = [];
-                feat.level = level;
-                this.levelFeatures.push(feat);
+                this.levelFeatures.push({ ...feat, level: level });
             }
         }
     }
