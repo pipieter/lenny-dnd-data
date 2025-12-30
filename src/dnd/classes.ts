@@ -762,20 +762,29 @@ function classFeatsToParsedFeats(
         return Object.values(unmergedFeats).map((group) => {
             const first = group[0];
             const prerequisitesSet = new Set<string>();
-            const descriptions: Description[] = [];
+            const mergedDescriptions: Description[] = [];
 
             group.forEach((feat) => {
                 const prereq = isSubclass ? (feat.subclassKey ?? feat.classKey) : feat.classKey;
                 prerequisitesSet.add(prereq);
 
-                if (group.length > 1 && feat.descriptions) {
-                    const label = isSubclass
-                        ? `Lv. ${feat.level} ${feat.subclassName} ${feat.className}`
-                        : `Lv. ${feat.level} ${feat.className}`;
-                    feat.descriptions[0].name = `${label} (${feat.subclassSource ?? feat.classSource})`;
-                }
+                // Clone descriptions to avoid mutating original dictionary data
+                const processedDescriptions = feat.descriptions!.map((desc, index) => {
+                    if (group.length > 1 && index === 0) {
+                        let label = isSubclass
+                            ? `Lv. ${feat.level} ${feat.subclassName} ${feat.className}`
+                            : `Lv. ${feat.level} ${feat.className}`;
 
-                descriptions.push(...(feat.descriptions ?? []));
+                        // Spread into a new object to break the reference link
+                        return {
+                            ...desc,
+                            name: `${label} (${feat.subclassSource ?? feat.classSource})`
+                        };
+                    }
+                    return desc;
+                });
+
+                mergedDescriptions.push(...processedDescriptions);
             });
 
             return {
@@ -793,7 +802,7 @@ function classFeatsToParsedFeats(
                 type: `${first.className} ${isSubclass ? 'Subclass' : 'Class'} Feature`,
                 prerequisite: joinStringsWithOr([...prerequisitesSet]),
                 abilityIncrease: null,
-                description: descriptions,
+                description: mergedDescriptions,
             };
         });
     };
