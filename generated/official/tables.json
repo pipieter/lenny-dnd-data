@@ -159363,50 +159363,7 @@
     "title": "Weather",
     "headers": [
      "1d20",
-     "Temperature"
-    ],
-    "rows": [
-     [
-      {
-       "type": "range",
-       "min": 1,
-       "max": 14
-      },
-      "Normal for the season"
-     ],
-     [
-      {
-       "type": "range",
-       "min": 15,
-       "max": 17
-      },
-      "1d4 × 10 degrees Fahrenheit colder"
-     ],
-     [
-      {
-       "type": "range",
-       "min": 18,
-       "max": 20
-      },
-      "1d4 × 10 degrees Fahrenheit hotter"
-     ]
-    ]
-   }
-  },
-  "footnotes": null
- },
- {
-  "name": "Weather; 2",
-  "source": "XDMG",
-  "url": "https://5e.tools/tables.html#weather%3B%202_xdmg",
-  "roll": "1d20",
-  "table": {
-   "name": "",
-   "type": "table",
-   "value": {
-    "title": "",
-    "headers": [
-     "1d20",
+     "Temperature",
      "Wind",
      "Precipitation"
     ],
@@ -159415,17 +159372,19 @@
       {
        "type": "range",
        "min": 1,
-       "max": 12
+       "max": 14
       },
+      "Normal for the season",
       "None",
       "None"
      ],
      [
       {
        "type": "range",
-       "min": 13,
+       "min": 15,
        "max": 17
       },
+      "1d4 × 10 degrees Fahrenheit colder",
       "Light",
       "Light rain or light snowfall"
      ],
@@ -159435,6 +159394,7 @@
        "min": 18,
        "max": 20
       },
+      "1d4 × 10 degrees Fahrenheit hotter",
       "Strong",
       "Heavy rain or heavy snowfall"
      ]
