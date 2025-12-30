@@ -739,7 +739,8 @@ function classFeatsToParsedFeats(
 
     const processFeats = (featDict: ClassFeatureDictionary, isSubclass: boolean): ParsedFeat[] => {
         // Feats are grouped by name and source first, so we don't end up with a large collection of similar feats.
-        // e.g. Barbarian (PHB)'s Bear feat gains new properties on different levels. By merging that data we end up with one "master" Bear feat, rather than 3 feats per level.
+        // e.g. Barbarian (PHB)'s Bear feat gains new properties on different levels.
+        // By merging this data we end up with one "master" Bear feat, rather than 3 separate feats (one per level).
         const unmergedFeats: Record<string, ClassFeature[]> = {};
 
         // Filter and Group
@@ -782,12 +783,12 @@ function classFeatsToParsedFeats(
                 source: first.source,
                 url: isSubclass
                     ? getSubclassUrl(
-                          first.className,
-                          first.classSource,
-                          first.subclassName!,
-                          first.subclassSource!,
-                          first.level
-                      )
+                        first.className,
+                        first.classSource,
+                        first.subclassName!,
+                        first.subclassSource!,
+                        first.level
+                    )
                     : getClassesUrl(first.className, first.classSource),
                 type: `${first.className} ${isSubclass ? 'Subclass' : 'Class'} Feature`,
                 prerequisite: joinStringsWithOr([...prerequisitesSet]),
