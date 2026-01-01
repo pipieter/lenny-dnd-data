@@ -8612,9 +8612,119 @@
     "value": "• **Skill Proficiencies**: *Deception*, *Survival*\n• **Tool Proficiencies**: One type of musical instrument\n• **Languages**: One of your choice of Elvish, Gnomish, Goblin, or Sylvan\n• **Equipment**: A musical instrument (one of your choice), a set of traveler's clothes, three trinkets (each determined by rolling on the Feywild Trinkets table), and a pouch containing 8 gp"
    },
    {
+    "name": "Feature: Feywild Connection",
+    "type": "text",
+    "value": "Your mannerisms and knowledge of fey customs are recognized by natives of the Feywild, who see you as one of their own. Because of this, friendly Fey creatures are inclined to come to your aid if you are lost or need help in the Feywild."
+   },
+   {
+    "name": "Fey Mark",
+    "type": "text",
+    "value": "You were transformed in some small way by your stay in the Feywild and gained a fey mark, determined by rolling on the Fey Mark table."
+   },
+   {
+    "name": "Fey Mark",
+    "type": "table",
+    "value": {
+     "title": "Fey Mark",
+     "headers": [
+      "d8",
+      "Fey Mark"
+     ],
+     "rows": [
+      [
+       "1",
+       "Your eyes swirl with iridescent colors."
+      ],
+      [
+       "2",
+       "You have a sweet scent, like that of nectar or honey."
+      ],
+      [
+       "3",
+       "You have long whiskers like those of a cat."
+      ],
+      [
+       "4",
+       "Your ears are covered with soft tufts of fur."
+      ],
+      [
+       "5",
+       "Your skin sparkles in moonlight."
+      ],
+      [
+       "6",
+       "Flowers either bloom or wilt (your choice) in your presence."
+      ],
+      [
+       "7",
+       "Your hair is made of vines or brambles and grows back to normal length within 1 hour of being cut."
+      ],
+      [
+       "8",
+       "You have a tail like that of a dog or another animal."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Feywild Visitor",
+    "type": "text",
+    "value": "Whenever you're sound asleep or in a deep trance during a long rest, a spirit of the Feywild might pay you a visit, if the DM wishes it. Determine the spirit's form by rolling on the Feywild Visitor table. No harm ever comes to you as a result of such visits, which can last for minutes or hours, and you remember each visit when you wake up. Conversations that occur with a visitor can contain any number of things, from messages and insights to nonsense and red herrings, at the DM's discretion. Such conversations are always conducted in a language you can understand, even if the Feywild visitor can't speak that language normally."
+   },
+   {
+    "name": "Feywild Visitor",
+    "type": "table",
+    "value": {
+     "title": "Feywild Visitor",
+     "headers": [
+      "d8",
+      "Visitor"
+     ],
+     "rows": [
+      [
+       "1",
+       "Awakened creature (a Beast or an ordinary plant that has had the awaken spell cast on it)"
+      ],
+      [
+       "2",
+       "Centaur"
+      ],
+      [
+       "3",
+       "Dryad"
+      ],
+      [
+       "4",
+       "Faerie dragon"
+      ],
+      [
+       "5",
+       "Pixie"
+      ],
+      [
+       "6",
+       "Satyr"
+      ],
+      [
+       "7",
+       "Sprite"
+      ],
+      [
+       "8",
+       "Unicorn"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Character Traits",
+    "type": "text",
+    "value": "As the players choose backgrounds for their characters, they can use the following tables to help determine their characters' personality traits, ideals, bonds, and flaws. Players can use these tables instead of the ones that appear in the Player's Handbook, or they can mix and match them. If a rolled result doesn't make sense for a character, the player can roll again or choose a more appropriate entry on the table."
+   },
+   {
     "name": "",
     "type": "text",
-    "value": "**Character Traits**: As the players choose backgrounds for their characters, they can use the following tables to help determine their characters' personality traits, ideals, bonds, and flaws. Players can use these tables instead of the ones that appear in the Player's Handbook, or they can mix and match them. If a rolled result doesn't make sense for a character, the player can roll again or choose a more appropriate entry on the table.\nThese tables, while optional, are well suited to Feywild-themed adventures and are ideal for any character who has the feylost or Witchlight hand background."
+    "value": "These tables, while optional, are well suited to Feywild-themed adventures and are ideal for any character who has the feylost or Witchlight hand background."
    },
    {
     "name": "Personality Traits",
@@ -8792,111 +8902,6 @@
       [
        "8",
        "I'm always changing my mind—well, almost always."
-      ]
-     ]
-    }
-   },
-   {
-    "name": "Feature: Feywild Connection",
-    "type": "text",
-    "value": "Your mannerisms and knowledge of fey customs are recognized by natives of the Feywild, who see you as one of their own. Because of this, friendly Fey creatures are inclined to come to your aid if you are lost or need help in the Feywild."
-   },
-   {
-    "name": "Fey Mark",
-    "type": "text",
-    "value": "You were transformed in some small way by your stay in the Feywild and gained a fey mark, determined by rolling on the Fey Mark table."
-   },
-   {
-    "name": "Fey Mark",
-    "type": "table",
-    "value": {
-     "title": "Fey Mark",
-     "headers": [
-      "d8",
-      "Fey Mark"
-     ],
-     "rows": [
-      [
-       "1",
-       "Your eyes swirl with iridescent colors."
-      ],
-      [
-       "2",
-       "You have a sweet scent, like that of nectar or honey."
-      ],
-      [
-       "3",
-       "You have long whiskers like those of a cat."
-      ],
-      [
-       "4",
-       "Your ears are covered with soft tufts of fur."
-      ],
-      [
-       "5",
-       "Your skin sparkles in moonlight."
-      ],
-      [
-       "6",
-       "Flowers either bloom or wilt (your choice) in your presence."
-      ],
-      [
-       "7",
-       "Your hair is made of vines or brambles and grows back to normal length within 1 hour of being cut."
-      ],
-      [
-       "8",
-       "You have a tail like that of a dog or another animal."
-      ]
-     ]
-    }
-   },
-   {
-    "name": "Feywild Visitor",
-    "type": "text",
-    "value": "Whenever you're sound asleep or in a deep trance during a long rest, a spirit of the Feywild might pay you a visit, if the DM wishes it. Determine the spirit's form by rolling on the Feywild Visitor table. No harm ever comes to you as a result of such visits, which can last for minutes or hours, and you remember each visit when you wake up. Conversations that occur with a visitor can contain any number of things, from messages and insights to nonsense and red herrings, at the DM's discretion. Such conversations are always conducted in a language you can understand, even if the Feywild visitor can't speak that language normally."
-   },
-   {
-    "name": "Feywild Visitor",
-    "type": "table",
-    "value": {
-     "title": "Feywild Visitor",
-     "headers": [
-      "d8",
-      "Visitor"
-     ],
-     "rows": [
-      [
-       "1",
-       "Awakened creature (a Beast or an ordinary plant that has had the awaken spell cast on it)"
-      ],
-      [
-       "2",
-       "Centaur"
-      ],
-      [
-       "3",
-       "Dryad"
-      ],
-      [
-       "4",
-       "Faerie dragon"
-      ],
-      [
-       "5",
-       "Pixie"
-      ],
-      [
-       "6",
-       "Satyr"
-      ],
-      [
-       "7",
-       "Sprite"
-      ],
-      [
-       "8",
-       "Unicorn"
       ]
      ]
     }
@@ -11374,9 +11379,72 @@
     "value": "• **Skill Proficiencies**: Choose two from among *Arcana*, *Investigation*, *Religion*, or *Survival*\n• **Languages**: Choose two, one of which must be Abyssal, Celestial, Deep Speech, Draconic, Infernal, Primordial, Sylvan, or Undercommon\n• **Equipment**: Monster hunter's pack (containing a chest, a crowbar, a hammer, three wooden stakes, a holy symbol, a flask of holy water, a set of manacles, a steel mirror, a flask of oil, a tinderbox, and 3 torches), a set of common clothes, one trinket of special significance (choose one or roll on the Horror Trinkets table), and 1 sp"
    },
    {
-    "name": "",
+    "name": "Feature: Heart of Darkness",
     "type": "text",
-    "value": "**Horror Characteristics**: Characters in a horror-focused campaign might have distinct motivations and characteristics. Use the following tables to supplement your background's suggested characteristics or to inspire those of your own design."
+    "value": "Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+   },
+   {
+    "name": "Harrowing Event",
+    "type": "text",
+    "value": "Prior to becoming an adventurer, your path in life was defined by one dark moment, one fateful decision, or one tragedy. Now you feel a darkness threatening to consume you, and you fear there may be no hope of escape. Choose a harrowing event that haunts you, or roll one on the Harrowing Events table."
+   },
+   {
+    "name": "Harrowing Event",
+    "type": "table",
+    "value": {
+     "title": "Harrowing Event",
+     "headers": [
+      "d10",
+      "Event"
+     ],
+     "rows": [
+      [
+       "1",
+       "A monster that slaughtered dozens of innocent people spared your life, and you don't know why."
+      ],
+      [
+       "2",
+       "You were born under a dark star. You can feel it watching you, coldly and distantly. Sometimes it beckons you in the dead of night."
+      ],
+      [
+       "3",
+       "An apparition that has haunted your family for generations now haunts you. You don't know what it wants, and it won't leave you alone."
+      ],
+      [
+       "4",
+       "Your family has a history of practicing the dark arts. You dabbled once and felt something horrible clutch at your soul, whereupon you fled in terror."
+      ],
+      [
+       "5",
+       "An oni took your sibling one cold, dark night, and you were unable to stop it."
+      ],
+      [
+       "6",
+       "You were cursed with lycanthropy and later cured. You are now haunted by the innocents you slaughtered."
+      ],
+      [
+       "7",
+       "A hag kidnapped and raised you. You escaped, but the hag still has a magical hold over you and fills your mind with evil thoughts."
+      ],
+      [
+       "8",
+       "You opened an eldritch tome and saw things unfit for a sane mind. You burned the book, but its words and images are burned into your psyche."
+      ],
+      [
+       "9",
+       "A fiend possessed you as a child. You were locked away but escaped. The fiend is still inside you, but now you try to keep it bottled up."
+      ],
+      [
+       "10",
+       "You did terrible things to avenge the murder of someone you loved. You became a monster, and it haunts your waking dreams."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Horror Characteristics",
+    "type": "text",
+    "value": "Characters in a horror-focused campaign might have distinct motivations and characteristics. Use the following tables to supplement your background's suggested characteristics or to inspire those of your own design."
    },
    {
     "name": "Horror Character Personality Traits",
@@ -11618,69 +11686,6 @@
       [
        "12",
        "I know the ends always justify the means and am quick to make sacrifices to attain my goals."
-      ]
-     ]
-    }
-   },
-   {
-    "name": "Feature: Heart of Darkness",
-    "type": "text",
-    "value": "Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
-   },
-   {
-    "name": "Harrowing Event",
-    "type": "text",
-    "value": "Prior to becoming an adventurer, your path in life was defined by one dark moment, one fateful decision, or one tragedy. Now you feel a darkness threatening to consume you, and you fear there may be no hope of escape. Choose a harrowing event that haunts you, or roll one on the Harrowing Events table."
-   },
-   {
-    "name": "Harrowing Event",
-    "type": "table",
-    "value": {
-     "title": "Harrowing Event",
-     "headers": [
-      "d10",
-      "Event"
-     ],
-     "rows": [
-      [
-       "1",
-       "A monster that slaughtered dozens of innocent people spared your life, and you don't know why."
-      ],
-      [
-       "2",
-       "You were born under a dark star. You can feel it watching you, coldly and distantly. Sometimes it beckons you in the dead of night."
-      ],
-      [
-       "3",
-       "An apparition that has haunted your family for generations now haunts you. You don't know what it wants, and it won't leave you alone."
-      ],
-      [
-       "4",
-       "Your family has a history of practicing the dark arts. You dabbled once and felt something horrible clutch at your soul, whereupon you fled in terror."
-      ],
-      [
-       "5",
-       "An oni took your sibling one cold, dark night, and you were unable to stop it."
-      ],
-      [
-       "6",
-       "You were cursed with lycanthropy and later cured. You are now haunted by the innocents you slaughtered."
-      ],
-      [
-       "7",
-       "A hag kidnapped and raised you. You escaped, but the hag still has a magical hold over you and fills your mind with evil thoughts."
-      ],
-      [
-       "8",
-       "You opened an eldritch tome and saw things unfit for a sane mind. You burned the book, but its words and images are burned into your psyche."
-      ],
-      [
-       "9",
-       "A fiend possessed you as a child. You were locked away but escaped. The fiend is still inside you, but now you try to keep it bottled up."
-      ],
-      [
-       "10",
-       "You did terrible things to avenge the murder of someone you loved. You became a monster, and it haunts your waking dreams."
       ]
      ]
     }
@@ -13346,9 +13351,64 @@
     "value": "• **Skill Proficiencies**: Choose two from among *Insight*, *Investigation*, or *Perception*\n• **Tool Proficiencies**: Disguise kit, Thieves' tools\n• **Equipment**: A magnifying glass, evidence from a past case (choose one or roll for a trinket from the Horror Trinkets later in this chapter), a set of common clothes, and 10 gp"
    },
    {
-    "name": "",
+    "name": "Feature: Official Inquiry",
     "type": "text",
-    "value": "**Horror Characteristics**: Characters in a horror-focused campaign might have distinct motivations and characteristics. Use the following tables to supplement your background's suggested characteristics or to inspire those of your own design."
+    "value": "You're experienced at gaining access to people and places to get the information you need. Through a combination of fast-talking, determination, and official-looking documentation, you can gain access to a place or an individual related to a crime you're investigating. Those who aren't involved in your investigation avoid impeding you or pass along your requests. Additionally, local law enforcement has firm opinions about you, viewing you as either a nuisance or one of their own."
+   },
+   {
+    "name": "Path to Mystery",
+    "type": "text",
+    "value": "Your first case influenced the types of mysteries you're interested in. Why was this case so impactful, personal, or traumatic? Whom did it affect besides you? Why and how did you get involved? Was it solved? How did it set you on the path to investigating other mysteries? Roll on or choose details from the First Case table to develop the mystery that started your career as an investigator."
+   },
+   {
+    "name": "First Case",
+    "type": "table",
+    "value": {
+     "title": "First Case",
+     "headers": [
+      "d8",
+      "Case"
+     ],
+     "rows": [
+      [
+       "1",
+       "A friend was wrongfully accused of murder. You tracked down the actual killer, proving your friend's innocence and starting your career as a detective."
+      ],
+      [
+       "2",
+       "You're told you went missing for weeks. When you were found, you had no memory of being gone. Now you search to discover what happened to you."
+      ],
+      [
+       "3",
+       "You helped a spirit find peace by finding its missing corpse. Ever since, other spectral clients have sought you out to help them find rest."
+      ],
+      [
+       "4",
+       "You revealed that the monsters terrorizing your home were illusions created by a cruel mage. The magic-user escaped, but you've continued to uncover magical hoaxes."
+      ],
+      [
+       "5",
+       "You were wrongfully accused and convicted of a crime. You managed to escape and seek to help others avoid the experience you suffered, even while still being pursued by the law."
+      ],
+      [
+       "6",
+       "You survived the destructive use of a magic device that wiped out your home. Members of a secret organization found you. You now work with them, tracking down dangerous supernatural phenomena and preventing them from doing harm."
+      ],
+      [
+       "7",
+       "You found evidence of a conspiracy underpinning society. You tried to expose this mysterious cabal, but no one believed you. You're still trying to prove what you know is true."
+      ],
+      [
+       "8",
+       "You got a job with an agency that investigates crimes that local law enforcement can't solve. You often wonder which you value more, the truth or your pay."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Horror Characteristics",
+    "type": "text",
+    "value": "Characters in a horror-focused campaign might have distinct motivations and characteristics. Use the following tables to supplement your background's suggested characteristics or to inspire those of your own design."
    },
    {
     "name": "Horror Character Personality Traits",
@@ -13590,61 +13650,6 @@
       [
        "12",
        "I know the ends always justify the means and am quick to make sacrifices to attain my goals."
-      ]
-     ]
-    }
-   },
-   {
-    "name": "Feature: Official Inquiry",
-    "type": "text",
-    "value": "You're experienced at gaining access to people and places to get the information you need. Through a combination of fast-talking, determination, and official-looking documentation, you can gain access to a place or an individual related to a crime you're investigating. Those who aren't involved in your investigation avoid impeding you or pass along your requests. Additionally, local law enforcement has firm opinions about you, viewing you as either a nuisance or one of their own."
-   },
-   {
-    "name": "Path to Mystery",
-    "type": "text",
-    "value": "Your first case influenced the types of mysteries you're interested in. Why was this case so impactful, personal, or traumatic? Whom did it affect besides you? Why and how did you get involved? Was it solved? How did it set you on the path to investigating other mysteries? Roll on or choose details from the First Case table to develop the mystery that started your career as an investigator."
-   },
-   {
-    "name": "First Case",
-    "type": "table",
-    "value": {
-     "title": "First Case",
-     "headers": [
-      "d8",
-      "Case"
-     ],
-     "rows": [
-      [
-       "1",
-       "A friend was wrongfully accused of murder. You tracked down the actual killer, proving your friend's innocence and starting your career as a detective."
-      ],
-      [
-       "2",
-       "You're told you went missing for weeks. When you were found, you had no memory of being gone. Now you search to discover what happened to you."
-      ],
-      [
-       "3",
-       "You helped a spirit find peace by finding its missing corpse. Ever since, other spectral clients have sought you out to help them find rest."
-      ],
-      [
-       "4",
-       "You revealed that the monsters terrorizing your home were illusions created by a cruel mage. The magic-user escaped, but you've continued to uncover magical hoaxes."
-      ],
-      [
-       "5",
-       "You were wrongfully accused and convicted of a crime. You managed to escape and seek to help others avoid the experience you suffered, even while still being pursued by the law."
-      ],
-      [
-       "6",
-       "You survived the destructive use of a magic device that wiped out your home. Members of a secret organization found you. You now work with them, tracking down dangerous supernatural phenomena and preventing them from doing harm."
-      ],
-      [
-       "7",
-       "You found evidence of a conspiracy underpinning society. You tried to expose this mysterious cabal, but no one believed you. You're still trying to prove what you know is true."
-      ],
-      [
-       "8",
-       "You got a job with an agency that investigates crimes that local law enforcement can't solve. You often wonder which you value more, the truth or your pay."
       ]
      ]
     }
@@ -21587,11 +21592,6 @@
     "value": "• **Skill Proficiencies**: *Athletics*, *Survival*\n• **Languages**: Any one of your choice\n• **Tool Proficiencies**: One type of musical instrument or artisan's tools\n• **Equipment**: A hunting trap, a totemic token or set of tattoos marking your loyalty to Uthgar and your tribal totem, a set of traveler's clothes, and a pouch containing 10 gp"
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Suggested Characteristics**: Use the tables for the [outlander](https://5e.tools/backgrounds.html#outlander_phb) background in the Player's Handbook as the basis for your traits and motivations, modifying the entries when appropriate to suit your identity as a member of an Uthgardt tribe.\nEven if you have left your tribe behind (at least for now), you hold to the traditions of your people. You will never cut down a still-living tree, and you may not countenance such an act being done in your presence. The Uthgardt ancestral mounds - great hills where the totem spirits were defeated by Uthgar and where the heroes of the tribes are interred - are sacred to you.\nYour bond is undoubtedly associated with your tribe or some aspect of Uthgardt philosophy or culture (perhaps even Uthgar himself). Your ideal is a personal choice that probably hews closely to the ethos of your people and certainly doesn't contradict or compromise what being an Uthgardt stands for."
-   },
-   {
     "name": "Feature: Uthgardt Heritage",
     "type": "text",
     "value": "You have an excellent knowledge of not only your tribe's territory, but also the terrain and natural resources of the rest of the North. You are familiar enough with any wilderness area that you can find twice as much food and water as you normally would when you forage there."
@@ -21600,6 +21600,21 @@
     "name": "",
     "type": "text",
     "value": "Additionally, you can call upon the hospitality of your people, and those allied with your tribe, often including members of the druid circles, tribes of nomadic elves, the Harpers, and the priesthoods devoted to the gods of the First Circle."
+   },
+   {
+    "name": "Suggested Characteristics",
+    "type": "text",
+    "value": "Use the tables for the [outlander](https://5e.tools/backgrounds.html#outlander_phb) background in the Player's Handbook as the basis for your traits and motivations, modifying the entries when appropriate to suit your identity as a member of an Uthgardt tribe."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Even if you have left your tribe behind (at least for now), you hold to the traditions of your people. You will never cut down a still-living tree, and you may not countenance such an act being done in your presence. The Uthgardt ancestral mounds - great hills where the totem spirits were defeated by Uthgar and where the heroes of the tribes are interred - are sacred to you."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your bond is undoubtedly associated with your tribe or some aspect of Uthgardt philosophy or culture (perhaps even Uthgar himself). Your ideal is a personal choice that probably hews closely to the ethos of your people and certainly doesn't contradict or compromise what being an Uthgardt stands for."
    }
   ]
  },
@@ -23516,11 +23531,6 @@
     "value": "• **Skill Proficiencies**: *History*, *Persuasion*\n• **Languages**: Any one of your choice\n• **Tool Proficiencies**: One type of gaming set or musical instrument\n• **Equipment**: A set of fine clothes, a signet ring or brooch, a scroll of pedigree, a skin of fine zzar or wine, and a purse containing 20 gp"
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Suggested Characteristics**: Use the tables for the [noble](https://5e.tools/backgrounds.html#noble_phb) background in the Player's Handbook as the basis for your traits and motivations, modifying the entries when appropriate to suit your identity as a member of a Waterdhavian family.\nLike other nobles, you were born and raised in a different world from the one that most folk know - one that grants you privilege but also calls you to fulfill a duty befitting your station. Your bond might be associated with your family alone, or it could be concerned with another noble house that sides with or opposes your own. Your ideal depends to some extent on how you view your role in the family, and how you intend to conduct yourself in the world at large as a representative of your house."
-   },
-   {
     "name": "Feature: Kept in Style",
     "type": "text",
     "value": "While you are in Waterdeep or elsewhere in the North, your house sees to your everyday needs. Your name and signet are sufficient to cover most of your expenses; the inns, taverns, and festhalls you frequent are glad to record your debt and send an accounting to your family's estate in Waterdeep to settle what you owe."
@@ -23529,6 +23539,16 @@
     "name": "",
     "type": "text",
     "value": "This advantage enables you to live a comfortable lifestyle without having to pay 2 gp a day for it, or reduces the cost of a wealthy or aristocratic lifestyle by that amount. You may not maintain a less affluent lifestyle and use the difference as income—the benefit is a line of credit, not an actual monetary reward."
+   },
+   {
+    "name": "Suggested Characteristics",
+    "type": "text",
+    "value": "Use the tables for the [noble](https://5e.tools/backgrounds.html#noble_phb) background in the Player's Handbook as the basis for your traits and motivations, modifying the entries when appropriate to suit your identity as a member of a Waterdhavian family."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Like other nobles, you were born and raised in a different world from the one that most folk know - one that grants you privilege but also calls you to fulfill a duty befitting your station. Your bond might be associated with your family alone, or it could be concerned with another noble house that sides with or opposes your own. Your ideal depends to some extent on how you view your role in the family, and how you intend to conduct yourself in the world at large as a representative of your house."
    }
   ]
  },
@@ -23637,9 +23657,74 @@
     "value": "• **Skill Proficiencies**: *Performance*, *Sleight of Hand*\n• **Tool Proficiencies**: Disguise kit or one type of musical Instrument\n• **Languages**: One of your choice\n• **Equipment**: A disguise kit or a musical instrument of your choice, a deck of cards, a carnival uniform or costume, one trinket (determined by rolling on the Feywild Trinkets), and a pouch containing 8 gp"
    },
    {
+    "name": "Feature: Carnival Fixture",
+    "type": "text",
+    "value": "The Witchlight Carnival provides you with free, modest lodging and food. In addition, you may wander about the carnival and partake of its many wonders at no cost to you, provided you don't disrupt its shows or cause any other trouble."
+   },
+   {
+    "name": "Carnival Companion",
+    "type": "text",
+    "value": "Over the years, you have earned the friendship of another carnival fixture. Roll a d8 and consult the Carnival Companion table to determine whom or what you've befriended, or you can choose an option that you like. Work with your DM to flesh out this friendship. This companion hangs around you while you're in the carnival, but it won't voluntarily leave the carnival."
+   },
+   {
     "name": "",
     "type": "text",
-    "value": "**Character Traits**: As the players choose backgrounds for their characters, they can use the following tables to help determine their characters' personality traits, ideals, bonds, and flaws. Players can use these tables instead of the ones that appear in the Player's Handbook, or they can mix and match them. If a rolled result doesn't make sense for a character, the player can roll again or choose a more appropriate entry on the table.\nThese tables, while optional, are well suited to Feywild-themed adventures and are ideal for any character who has the feylost or Witchlight hand background."
+    "value": "The DM can use the __Witchlight hand__ stat block in chapter 1 (WBtW) to represent hands, performers, and animal trainers who serve as carnival companions. Statistics for the other companions appear in the Monster Manual."
+   },
+   {
+    "name": "Carnival Companion",
+    "type": "table",
+    "value": {
+     "title": "Carnival Companion",
+     "headers": [
+      "d8",
+      "Companion"
+     ],
+     "rows": [
+      [
+       "1",
+       "Old, cantankerous Witchlight hand"
+      ],
+      [
+       "2",
+       "Young, impressionable Witchlight hand"
+      ],
+      [
+       "3",
+       "Performer (such as an acrobat, a clown, or a musician)"
+      ],
+      [
+       "4",
+       "Retired performer"
+      ],
+      [
+       "5",
+       "Seasoned animal trainer"
+      ],
+      [
+       "6",
+       "Old blink dog"
+      ],
+      [
+       "7",
+       "Cheery sprite"
+      ],
+      [
+       "8",
+       "Harmless, magical wisp of light (no stat block required) that has a flying speed of 30 feet, can hover, and sheds bright light in a 5-foot radius and dim light for an additional 5 feet"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Character Traits",
+    "type": "text",
+    "value": "As the players choose backgrounds for their characters, they can use the following tables to help determine their characters' personality traits, ideals, bonds, and flaws. Players can use these tables instead of the ones that appear in the Player's Handbook, or they can mix and match them. If a rolled result doesn't make sense for a character, the player can roll again or choose a more appropriate entry on the table."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "These tables, while optional, are well suited to Feywild-themed adventures and are ideal for any character who has the feylost or Witchlight hand background."
    },
    {
     "name": "Personality Traits",
@@ -23817,66 +23902,6 @@
       [
        "8",
        "I'm always changing my mind—well, almost always."
-      ]
-     ]
-    }
-   },
-   {
-    "name": "Feature: Carnival Fixture",
-    "type": "text",
-    "value": "The Witchlight Carnival provides you with free, modest lodging and food. In addition, you may wander about the carnival and partake of its many wonders at no cost to you, provided you don't disrupt its shows or cause any other trouble."
-   },
-   {
-    "name": "Carnival Companion",
-    "type": "text",
-    "value": "Over the years, you have earned the friendship of another carnival fixture. Roll a d8 and consult the Carnival Companion table to determine whom or what you've befriended, or you can choose an option that you like. Work with your DM to flesh out this friendship. This companion hangs around you while you're in the carnival, but it won't voluntarily leave the carnival."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The DM can use the __Witchlight hand__ stat block in chapter 1 (WBtW) to represent hands, performers, and animal trainers who serve as carnival companions. Statistics for the other companions appear in the Monster Manual."
-   },
-   {
-    "name": "Carnival Companion",
-    "type": "table",
-    "value": {
-     "title": "Carnival Companion",
-     "headers": [
-      "d8",
-      "Companion"
-     ],
-     "rows": [
-      [
-       "1",
-       "Old, cantankerous Witchlight hand"
-      ],
-      [
-       "2",
-       "Young, impressionable Witchlight hand"
-      ],
-      [
-       "3",
-       "Performer (such as an acrobat, a clown, or a musician)"
-      ],
-      [
-       "4",
-       "Retired performer"
-      ],
-      [
-       "5",
-       "Seasoned animal trainer"
-      ],
-      [
-       "6",
-       "Old blink dog"
-      ],
-      [
-       "7",
-       "Cheery sprite"
-      ],
-      [
-       "8",
-       "Harmless, magical wisp of light (no stat block required) that has a flying speed of 30 feet, can hover, and sheds bright light in a 5-foot radius and dim light for an additional 5 feet"
       ]
      ]
     }
