@@ -555,10 +555,10 @@ export function parseDescriptions(name: string, descriptions: any[]): Descriptio
         // These will be handled separately
         if (typeof desc == 'string') blocks.push(cleanDNDText(desc as string));
         else {
-            if (desc.type == 'entries') {
+            if (desc.type === 'entries' || desc.type === 'section') {
                 const descName = cleanDNDText(desc.name || '', true);
                 subdescriptions.push(...parseDescriptions(descName, desc.entries));
-            } else if (desc.type == 'table') {
+            } else if (desc.type === 'table') {
                 subdescriptions.push(parseDescriptionFromTable(desc));
             } else {
                 blocks.push(...parseDescriptionBlock(desc));
