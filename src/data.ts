@@ -176,6 +176,7 @@ export class OfficialDatabank extends Databank {
         this.add('cultsboons.json');
         this.add('deities.json');
         this.add('feats.json');
+        this.add('fluff-backgrounds.json');
         this.add('fluff-conditionsdiseases.json');
         this.add('fluff-items.json');
         this.add('fluff-languages.json');
