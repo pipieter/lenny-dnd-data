@@ -713,3 +713,25 @@ export function parseItemWeight(weight: number | undefined): string | null {
     }
     return `${weight} lb.`;
 }
+
+export function parsePrerequisite(prerequisite: any): string | null {
+    if (!prerequisite) return null;
+
+    const prerequisites: string[] = [];
+
+    for (const key of Object.keys(prerequisite)) {
+        switch (key) {
+            case 'campaign': {
+                const campaigns = prerequisite.campaign;
+                prerequisites.push(`${joinStringsWithOr(campaigns)} campaign`);
+                break;
+            }
+            default: {
+                throw `parsePrerequisite: Unknown key '${key}'!`;
+            }
+        }
+    }
+
+    if (prerequisites.length === 0) return null;
+    return joinStringsWithAnd(prerequisites, false);
+}
