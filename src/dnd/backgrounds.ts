@@ -40,10 +40,10 @@ function getPreformattedBackgroundValue(background: any, name: string): string |
     for (const item of entries.items) {
         if (item.name === name) {
             if (item.entry) {
-                return cleanDNDText(item.entry) || null;
+                return cleanDNDText(item.entry, true) || null;
             }
             if (item.entries) {
-                return cleanDNDText(item.entries[0]) || null;
+                return cleanDNDText(item.entries[0], true) || null;
             }
             throw `Unsupported getPreformattedBackgroundValue entry '${JSON.stringify(item)}'`;
         }
