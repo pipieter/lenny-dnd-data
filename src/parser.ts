@@ -129,7 +129,7 @@ export function parseCastingTime(time: any, meta: any): string {
     if (Array.isArray(time)) {
         const castingTimes = time.map(parseSingleTime);
         if (is_ritual) castingTimes.push('Ritual');
-        return castingTimes.join(' or ');
+        return joinStringsWithOr(castingTimes, false);
     }
 
     if (is_ritual) return `${parseSingleTime(time)} or Ritual`;
