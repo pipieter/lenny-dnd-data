@@ -149,8 +149,10 @@ export function parseDurationTime(duration: any): string {
         case 'timed': {
             const amount = duration.duration.amount;
             const unit = duration.duration.type;
-            if (amount > 1) return `${amount} ${unit}s`;
-            return `${amount} ${unit}`;
+            const time = (amount > 1) ? `${amount} ${unit}s` : `${amount} ${unit}`;
+
+            if (duration.concentration) return `Concentration, up to ${time}`
+            return time;
         }
         default: {
             throw `Unsupported duration type: ${duration.type}`;
