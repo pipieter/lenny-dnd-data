@@ -145,7 +145,7 @@ export function parseDurationTime(duration: any): string {
         case 'special':
             return 'Special';
         case 'permanent':
-            return 'Permanent';
+            return 'Until dispelled';
         case 'timed': {
             const amount = duration.duration.amount;
             const unit = duration.duration.type;
