@@ -88,7 +88,7 @@ function getSpell(spell: any, fluffs: any[], sources: any): Spell {
         source: spell.source,
         level: parseSpellLevel(spell.level),
         school: parseSpellSchool(spell.school),
-        casting_time: parseCastingTime(spell.time),
+        casting_time: parseCastingTime(spell.time, spell.meta),
         range: parseRange(spell.range),
         components: parseComponents(spell.components),
         duration: parseDurationTime(spell.duration),
