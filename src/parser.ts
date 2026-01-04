@@ -136,31 +136,37 @@ export function parseCastingTime(time: any, meta: any): string {
     return parseSingleTime(time);
 }
 
-export function parseDurationTime(duration: any): string {
-    if (Array.isArray(duration)) {
-        // TODO if (duration.length > 1)
-        duration = duration[0];
-    }
+export function parseDurationTime(durations: any[] | any): string {
+    if (!Array.isArray(durations)) durations = [durations];
 
-    switch (duration.type) {
-        case 'instant':
-            return 'Instantaneous';
-        case 'special':
-            return 'Special';
-        case 'permanent':
-            return 'Until dispelled';
-        case 'timed': {
-            const amount = duration.duration.amount;
-            const unit = duration.duration.type;
-            const time = amount > 1 ? `${amount} ${unit}s` : `${amount} ${unit}`;
+    const results: string[] = durations.map(
+        (d: { type: any; duration: { amount: any; type: any }; concentration: any }) => {
+            switch (d.type) {
+                case 'instant':
+                    return 'Instantaneous';
 
-            if (duration.concentration) return `Concentration, up to ${time}`;
-            return time;
+                case 'special':
+                    return 'Special';
+
+                case 'permanent':
+                    return 'Until dispelled';
+
+                case 'timed': {
+                    const amount = d.duration.amount;
+                    const unit = d.duration.type;
+                    const time = amount > 1 ? `${amount} ${unit}s` : `${amount} ${unit}`;
+
+                    return d.concentration ? `Concentration, up to ${time}` : time;
+                }
+
+                default:
+                    throw new Error(`Unsupported duration type: ${d.type}`);
+            }
         }
-        default: {
-            throw `Unsupported duration type: ${duration.type}`;
-        }
-    }
+    );
+
+    if (durations.length > 1) return `${joinStringsWithOr(results, false)} (see below)`; // If there's more than one duration, there's always an explanation as to why.
+    return joinStringsWithOr(results, false);
 }
 
 export function parseDistance(distance: any): string {
