@@ -124,13 +124,16 @@ export function parseSingleTime(time: any): string {
     return result;
 }
 
-export function parseCastingTime(time: any): string {
+export function parseCastingTime(time: any, meta: any): string {
+    const is_ritual = meta != undefined && meta.ritual;
     if (Array.isArray(time)) {
         const castingTimes = time.map(parseSingleTime);
-        return castingTimes.join(' or ');
-    } else {
-        return parseSingleTime(time);
+        if (is_ritual) castingTimes.push('Ritual');
+        return joinStringsWithOr(castingTimes, false);
     }
+
+    if (is_ritual) return `${parseSingleTime(time)} or Ritual`;
+    return parseSingleTime(time);
 }
 
 export function parseDurationTime(duration: any): string {
