@@ -4,18 +4,6 @@ import { AbilityScores, Alignments, SpellSchools } from './5etools-conversion/da
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 
-export enum DescriptionType {
-    text = 'text',
-    table = 'table',
-    hr = 'hr',
-}
-
-export interface Description {
-    name: string;
-    type: DescriptionType;
-    value: string | Table;
-}
-
 export interface Range {
     type: 'range';
     min: number;
@@ -27,6 +15,31 @@ export interface Table {
     headers: string[] | null;
     rows: (string | Range)[][];
 }
+
+export enum DescriptionType {
+    text = 'text',
+    table = 'table',
+    hr = 'hr',
+}
+
+export interface DescriptionHr {
+    name: string;
+    type: DescriptionType.hr;
+}
+
+export interface DescriptionText {
+    name: string;
+    type: DescriptionType.text;
+    value: string;
+}
+
+export interface DescriptionTable {
+    name: string;
+    type: DescriptionType.table;
+    table: Table;
+}
+
+export type Description = DescriptionHr | DescriptionText | DescriptionTable;
 
 export function checkForDisallowedSymbols(text: string) {
     const disallowedSymbols = ['{', '}', '|', '[object Object]'];
@@ -250,7 +263,10 @@ function parseDescriptionBlockFromBlocks(descriptions: any[]): string {
     return blocks.join('\n\n');
 }
 
-function splitDescriptionTypes(values: (string | Table)[]): { strings: string[]; tables: Table[] } {
+function splitDescriptionTypes(values: (string | Table)[]): {
+    strings: string[];
+    tables: Table[];
+} {
     const strings = [];
     const tables = [];
     for (const value of values) {
@@ -336,7 +352,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
         }
         case 'table': {
             const table = parseDescriptionFromTable(description);
-            return [table.value];
+            return [table.table];
         }
         case 'image': {
             return []; // Images will not be handled within descriptions
@@ -522,7 +538,7 @@ function parseTableRow(values: any[] | any): string[] {
     return cells;
 }
 
-export function parseDescriptionFromTable(description: any): Description {
+export function parseDescriptionFromTable(description: any): DescriptionTable {
     const title: string = description.caption || '';
 
     let headers: string[] | null = null;
@@ -554,7 +570,7 @@ export function parseDescriptionFromTable(description: any): Description {
     const rows: string[][] = description.rows.map(parseTableRow);
     const table: Table = { title, headers, rows };
 
-    return { name: title, type: DescriptionType.table, value: table };
+    return { name: title, type: DescriptionType.table, table: table };
 }
 
 export function parseDescriptions(name: string, descriptions: any[]): Description[] {
@@ -578,12 +594,19 @@ export function parseDescriptions(name: string, descriptions: any[]): Descriptio
     }
 
     function toDescription(name: string, value: string | Table): Description {
-        name = typeof value === 'string' ? name : name || value.title;
-        return {
-            name,
-            type: typeof value === 'string' ? DescriptionType.text : DescriptionType.table,
-            value,
-        };
+        if (typeof value === 'string') {
+            return {
+                name,
+                type: DescriptionType.text,
+                value,
+            };
+        } else {
+            return {
+                name,
+                type: DescriptionType.table,
+                table: value,
+            };
+        }
     }
 
     const results: Description[] = [];
@@ -597,7 +620,7 @@ export function parseDescriptions(name: string, descriptions: any[]): Descriptio
 
     // Unsupported types may append empty strings, these are removed here.
     const cleaned: Description[] = results.filter((desc) => {
-        if (typeof desc.value === 'string') {
+        if (desc.type === DescriptionType.text) {
             return desc.value.trim();
         }
         return true; // Keep non-string values

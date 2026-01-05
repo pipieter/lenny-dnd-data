@@ -4,6 +4,8 @@ import {
     capitalize,
     checkForDisallowedSymbols,
     Description,
+    DescriptionTable,
+    DescriptionText,
     DescriptionType,
     parseAbilityScore,
     parseClassResourceValue,
@@ -171,8 +173,8 @@ class CharacterClass {
         this.primaryAbility = joinStringsWithOr(orGroups);
     }
 
-    private handleProficiencies(proficiencies: { [type: string]: any }): Description[] {
-        const info: Description[] = [];
+    private handleProficiencies(proficiencies: { [type: string]: any }): DescriptionText[] {
+        const info: DescriptionText[] = [];
 
         for (const [type, proficiency] of Object.entries(proficiencies)) {
             let label = title(type);
@@ -282,7 +284,7 @@ class CharacterClass {
         }
 
         // Saving Proficiencies
-        const profData: Description[] = [];
+        const profData: DescriptionText[] = [];
         if (data.proficiency) {
             let savingProficiencies: string[] = data.proficiency;
             savingProficiencies = savingProficiencies.map((proficiency) => parseAbilityScore(proficiency));
@@ -455,7 +457,7 @@ class CharacterClass {
     }
 
     private setLevelResources(data: any) {
-        const spellSlotTables: Description[] = [];
+        const spellSlotTables: DescriptionTable[] = [];
         if (data.classTableGroups) {
             for (const tableGroup of data.classTableGroups) {
                 if (!tableGroup.rowsSpellProgression) continue;
@@ -467,7 +469,7 @@ class CharacterClass {
                     spellSlotTables.push({
                         name: title,
                         type: DescriptionType.table,
-                        value: {
+                        table: {
                             title,
                             headers,
                             rows: [spellRow],
@@ -624,7 +626,9 @@ function resolveClassFeatReference(
 
         if (!feat?.descriptions) throw `Could not find ${type} for ${key}`;
         const descs = feat.descriptions.map((d) => ({ ...d }));
-        descs[0].value = `__${getKey(name, featSource)}__: ${descs[0].value}`;
+        if (descs[0].type === DescriptionType.text) {
+            descs[0].value = `__${getKey(name, featSource)}__: ${descs[0].value}`;
+        }
 
         return descs;
     }
@@ -647,7 +651,7 @@ function resolveClassFeatReference(
     ];
 }
 
-function resolveOptionalFeatReference(entry: Description): Description {
+function resolveOptionalFeatReference(entry: DescriptionText): DescriptionText {
     const value = entry.value as string;
 
     const updatedValue = value.replace(
