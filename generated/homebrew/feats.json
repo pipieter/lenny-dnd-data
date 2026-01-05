@@ -55,7 +55,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "• **Weapon Proficiency**: You gain proficiency in Simple finesse weapons. Additionally, you gain proficiency in one of the following:\n• • simple melee weapons\n• simple ranged weapons\n• **Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.\n• **Repeatable**: You can take this feat more than once."
+    "value": "• **Weapon Proficiency**: You gain proficiency in one of the following:\n• • simple melee weapons\n• simple ranged and simple finesse weapons\n• **Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.\n• **Repeatable**: You can take this feat more than once."
    }
   ]
  },
@@ -686,36 +686,6 @@
     "name": "",
     "type": "text",
     "value": "Learn 2 masteries. Whenever you gain a level you can replace one of these masteries."
-   }
-  ]
- },
- {
-  "name": "Blind",
-  "source": "GaldeveerTanksandFlanks",
-  "url": "https://5e.tools/feats.html#blind_galdeveertanksandflanks",
-  "type": "Origin Feat",
-  "prerequisite": "No higher than 1st-level or you're blind",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "• **Blinded**: You are blind, but you have 120 ft of tremorsense\n• **Heighten Senses**: As a bonus action you can gain advantage on perception checks for one minute. You can do this a number of times equal to your proficiency bonus and regain all uses on a long rest.\n• **Voice Lock**: As an action you can force a creature you see to make a charisma saving throw. For the next ten minutes, whenever you're sensing the target with your tremorsense you can hear what it's saying. You regain this ability after a long rest."
-   }
-  ]
- },
- {
-  "name": "Amputee",
-  "source": "GaldeveerTanksandFlanks",
-  "url": "https://5e.tools/feats.html#amputee_galdeveertanksandflanks",
-  "type": "Origin Feat",
-  "prerequisite": "No higher than 1st level unless one of your hands is unusable and not already affected by this feat",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "• **Unusuable**: You lose the use of one of your hands. Nothing changes if the hand is already unusuable. This might come in the form of a missing arm, missing hand, nerve damaged, etc.\n• **Presthetique**: As an action you can attach up to 1 item to the hand you can't use. It counts as holding that item. As an action you can detach it. It cannot be forcibly removed while you're conscious unless you are willing.\n• **Fancy Feet**: As a reaction to a creature missing an attack roll against you, you can move up to half your movement speed in a straight line without provoking opportunity attacks. You can do this a number of times equal to your proficiency bonus and regain all uses on a long rest.\n• **Repeatable**: You can take this feat more than once, but you must choose a different hand each time for unusable."
    }
   ]
  },
@@ -6084,11 +6054,6 @@
     "value": "You have logged thousands of hours at a starship's helm, granting you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Ship Feats**: Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter.\n**Gaining a Ship Feat**: The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
-   },
-   {
     "name": "Piloting Expert",
     "type": "text",
     "value": "You gain proficiency in the *Piloting* skill. If you are already proficient in the skill, you have Expertise in it."
@@ -6102,6 +6067,16 @@
     "name": "Ramming Maneuver",
     "type": "text",
     "value": "You have Advantage on attack rolls you make with ship Melee weapons as a part of the Pilot Crew Role."
+   },
+   {
+    "name": "Ship Feats",
+    "type": "text",
+    "value": "Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter."
+   },
+   {
+    "name": "Gaining a Ship Feat",
+    "type": "text",
+    "value": "The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
    }
   ]
  },
@@ -6124,11 +6099,6 @@
     "value": "Your experience casting spells from a starship's Arcane Cannon grants you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Ship Feats**: Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter.\n**Gaining a Ship Feat**: The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
-   },
-   {
     "name": "Mega Cantrip",
     "type": "text",
     "value": "When you use the Arcane Cannon action to magnify a cantrip that deals damage to Mega scale, you can add your Proficiency Bonus to the damage roll."
@@ -6137,6 +6107,16 @@
     "name": "Over-Cast",
     "type": "text",
     "value": "When you cast a Mega spell that forces a creature to make a saving throw, you can give one target of the spell Disadvantage on saves against the spell. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
+   },
+   {
+    "name": "Ship Feats",
+    "type": "text",
+    "value": "Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter."
+   },
+   {
+    "name": "Gaining a Ship Feat",
+    "type": "text",
+    "value": "The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
    }
   ]
  },
@@ -6159,11 +6139,6 @@
     "value": "As a full-fledged Battleframe Pilot, known as a Dragoon, your combat prowess grants you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Ship Feats**: Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter.\n**Gaining a Ship Feat**: The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
-   },
-   {
     "name": "Kaiju Slayer",
     "type": "text",
     "value": "Once on each of your turns, you can gain Advantage on an attack roll you make against a Mega creature."
@@ -6177,6 +6152,16 @@
     "name": "One Hundred to Oni",
     "type": "text",
     "value": "After one hundred recorded kills, you earn the rank of Oni. Record whenever you reduce an enemy to 0 Hit Points. When you reach 100, you gain the Faction feat __Lakshay: Oni__."
+   },
+   {
+    "name": "Ship Feats",
+    "type": "text",
+    "value": "Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter."
+   },
+   {
+    "name": "Gaining a Ship Feat",
+    "type": "text",
+    "value": "The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
    }
   ]
  },
@@ -6199,11 +6184,6 @@
     "value": "You are a brilliant engineer, knowledgeable of every system on board your ship, and capable of fixing just about anything. You gain the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Ship Feats**: Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter.\n**Gaining a Ship Feat**: The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
-   },
-   {
     "name": "Technology Expert",
     "type": "text",
     "value": "You gain proficiency in the *Technology* skill. If you are already proficient in the skill, you have Expertise in it."
@@ -6217,6 +6197,16 @@
     "name": "Ship Firewall",
     "type": "text",
     "value": "While you are in the Engineer role, the Pilot has Advantage on Intelligence, Wisdom, and Charisma saving throws they make on behalf of the ship."
+   },
+   {
+    "name": "Ship Feats",
+    "type": "text",
+    "value": "Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter."
+   },
+   {
+    "name": "Gaining a Ship Feat",
+    "type": "text",
+    "value": "The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
    }
   ]
  },
@@ -6239,11 +6229,6 @@
     "value": "Your dogfighting instincts guide you in the heat of combat, and grant you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Ship Feats**: Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter.\n**Gaining a Ship Feat**: The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
-   },
-   {
     "name": "Barrel Roll",
     "type": "text",
     "value": "When your ship is hit by an attack that reduces it to 0 Mega Hit Points while you are the Pilot, you can perform a Barrel Roll as a Reaction to cause that attack to miss. You can only take this Reaction in a Fighter. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
@@ -6252,6 +6237,16 @@
     "name": "Precision Strike",
     "type": "text",
     "value": "You have Advantage on attack rolls when you take the Targeted Strike action."
+   },
+   {
+    "name": "Ship Feats",
+    "type": "text",
+    "value": "Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter."
+   },
+   {
+    "name": "Gaining a Ship Feat",
+    "type": "text",
+    "value": "The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
    }
   ]
  },
@@ -6274,11 +6269,6 @@
     "value": "Your experience behind massive shipbound weapons grants you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Ship Feats**: Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter.\n**Gaining a Ship Feat**: The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
-   },
-   {
     "name": "Ship Weapon Mastery",
     "type": "text",
     "value": "You can use the mastery property of two kinds of ship weapons of your choice, provided you have proficiency with them. Whenever you finish a Long Rest, you can change the kinds of weapons to other eligible kinds."
@@ -6287,6 +6277,16 @@
     "name": "Expanded Critical",
     "type": "text",
     "value": "Your attack rolls with ship weapons can score a Critical Hit on a roll of 19 or 20 on the d20."
+   },
+   {
+    "name": "Ship Feats",
+    "type": "text",
+    "value": "Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter."
+   },
+   {
+    "name": "Gaining a Ship Feat",
+    "type": "text",
+    "value": "The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
    }
   ]
  },
@@ -6309,11 +6309,6 @@
     "value": "With you at the bridge, the crew operates like a well-oiled machine, granting you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Ship Feats**: Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter.\n**Gaining a Ship Feat**: The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
-   },
-   {
     "name": "All Hands on Deck",
     "type": "text",
     "value": "When you take an action from the Captain Crew Role, you can take another action from that role as a Bonus Action. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
@@ -6327,6 +6322,16 @@
     "name": "Galactic Diplomat",
     "type": "text",
     "value": "You gain proficiency in the *Persuasion* skill. If you are already proficient in the skill, you have Expertise in it."
+   },
+   {
+    "name": "Ship Feats",
+    "type": "text",
+    "value": "Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter."
+   },
+   {
+    "name": "Gaining a Ship Feat",
+    "type": "text",
+    "value": "The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
    }
   ]
  },
@@ -6349,11 +6354,6 @@
     "value": "You may not have a regularly-assigned Crew Role, but you've learned how to make yourself useful in dire situations. You gain the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Ship Feats**: Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter.\n**Gaining a Ship Feat**: The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
-   },
-   {
     "name": "Engineer Helper",
     "type": "text",
     "value": "You can take the Help action to assist the Engineer. When you do so, the ship regains Shield Points equal to your Proficiency Bonus, and other ships have Disadvantage on saving throws made against this ship's systems until the start of your next turn."
@@ -6367,6 +6367,16 @@
     "name": "Pilot Helper",
     "type": "text",
     "value": "You can take the Help action to assist the Pilot. When you do so, the Pilot has Advantage on saving throws it makes on behalf of the ship."
+   },
+   {
+    "name": "Ship Feats",
+    "type": "text",
+    "value": "Life on a starship is arduous, and those without proper training can find themselves completely unprepared to face the challenges posed by deep space. Even a simple run-in with a spaceshark or a pack of var'zuul grubs can spell disaster for the uninitiated. Ship feats each correspond to a Crew Role aboard a starship and represent training and expertise in that role. Ship roles are detailed in the Ships chapter."
+   },
+   {
+    "name": "Gaining a Ship Feat",
+    "type": "text",
+    "value": "The GM can grant you a Ship feat to solidify your chosen role aboard the ship or to award you for excellence in a particular role."
    }
   ]
  },
@@ -6389,11 +6399,6 @@
     "value": "As a starguide for Astrogations Inc., you receive flashes of prescience to help you navigate the Galactic Frontier, granting you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Momentary Prescience",
     "type": "text",
     "value": "When you roll the d20 for a D20 Test, you can flip the d20 over and use the number on the bottom. Note that for a balanced d20, the top and bottom numbers add up to 21. Once you use this benefit, you can't use it again until you finish a Long Rest."
@@ -6402,6 +6407,21 @@
     "name": "Navigator's Discount",
     "type": "text",
     "value": "You receive a 50 percent discount on Star Charts you purchase from Astrogations Inc."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6424,11 +6444,6 @@
     "value": "You have passed the legal and ritualistic exams necessary to become a bonded soul broker for the Cabal, granting you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Fractional Soul Dividends",
     "type": "text",
     "value": "When you reduce an enemy to 0 Hit Points, you can steal a percentage of its soul based on its Challenge Rating. A creature with a Challenge Rating of 1 provides 1 percent of its soul, a creature with a Challenge Rating of 2 provides 2 percent of its soul, and so on. You can exchange 10 percent of a soul for 100 CR."
@@ -6437,6 +6452,21 @@
     "name": "Moral Relativism",
     "type": "text",
     "value": "When you make an Influence check against a Hostile creature, you can give yourself Advantage on the roll instead of Disadvantage. Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6459,11 +6489,6 @@
     "value": "For pledging yourself and potentially your soul to the Sun Above, you have become an adherent of the faith, granting you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Dogma",
     "type": "text",
     "value": "You gain proficiency in the *Religion* skill."
@@ -6477,6 +6502,21 @@
     "name": "",
     "type": "text",
     "value": "You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6499,11 +6539,6 @@
     "value": "To join the Coalition, you have undergone a rigorous training regime or accomplished a feat representative of it, granting you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Basic Training",
     "type": "text",
     "value": "You gain one of the following benefits of your choice: proficiency in the *Athletics* skill, proficiency with Martial Weapons, training with Light Armor, or training with Shields. If you have all of these benefits already, you gain Weapon Mastery with the Repeater or Standard Carbine, and it doesn't count against the number of weapons you can use with Weapon Mastery."
@@ -6512,6 +6547,21 @@
     "name": "Dive for Cover",
     "type": "text",
     "value": "When you make a Dexterity saving throw against an effect with an area of effect, you can take a Reaction to move up to 15 feet without provoking Opportunity Attacks, potentially leaving the effect's area. Once you take this Reaction, you can't do so again until you finish a Long Rest."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6534,11 +6584,6 @@
     "value": "You are one of DD&D's renowned Artifactors, tasked with acquiring valuable magic items, be it through shrewd negotiation or daring expedition. You gain the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Additional Attunement",
     "type": "text",
     "value": "You can attune to up to four magic items at once rather than three."
@@ -6547,6 +6592,21 @@
     "name": "Eye for Quality",
     "type": "text",
     "value": "You can cast __Identify__ without a spell slot or components. When you cast __Identify__, you also appraise the target item, learning its market value in Gold Pieces."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6569,11 +6629,6 @@
     "value": "As a licensed Contractor, you know that while the pen is mightier than the sword, the dagger is stronger still. You gain the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Backstabber",
     "type": "text",
     "value": "Whenever you hit a creature with a Simple weapon that deals **1d4** damage, you deal **2d4** damage instead."
@@ -6582,6 +6637,21 @@
     "name": "Expertise",
     "type": "text",
     "value": "You gain Expertise in one of your skill proficiencies of your choice."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6604,11 +6674,6 @@
     "value": "Your privileged association with the Galactic Bank has earned you the honorary title of \"Trustee\" and a Platinum Member bank account, granting you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Line of Credit",
     "type": "text",
     "value": "You can spend Credits you don't have via a line of credit to the Galactic Bank. The amount you can spend using your line of credit starts at 1,000 CR and increases when you reach character levels 5 (10,000 CR), 11 (50,000 CR), and 17 (100,000 CR). For every ten days that elapse without paying back the amount you owe, the total amount increases by 100 CR."
@@ -6617,6 +6682,21 @@
     "name": "Platinum Member Discounts",
     "type": "text",
     "value": "Whenever you buy an item worth 100 CR or less, you receive a 20 percent discount on it."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6639,14 +6719,24 @@
     "value": "Grax's Guys are known for being tough and dependable. You gain the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Plucky",
     "type": "text",
     "value": "When you roll a 1 the d20 for a saving throw, you gain Heroic Inspiration. You can't use this Heroic Inspiration to reroll the triggering save."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6669,11 +6759,6 @@
     "value": "Affiliation with Lakshay grants the Ship feat __Battleframe Dragoon__ instead of a Origin Feat. Only once a Dragoon has proven their prowess do they gain the rank of Oni and the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Battleframe Expertise",
     "type": "text",
     "value": "You have Advantage on Dexterity (*Piloting*) checks you make while piloting a Battleframe."
@@ -6687,6 +6772,21 @@
     "name": "Oni's Skill",
     "type": "text",
     "value": "You can add your Proficiency Bonus to one damage roll or saving throw you make, or to your AC against one attack that hits you, potentially causing it to miss. Once you add your Proficiency Bonus in this way, you can't do so again until the start of your next turn."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6709,11 +6809,6 @@
     "value": "As a fully-inducted Tower Agent, you are familiar with the organization's cryptic ciphers and are trained in their clandestine, magical arts. You gain the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Mark of Induction",
     "type": "text",
     "value": "You bear a tattoo which is visible only to other Tower Agents, used to mark your membership."
@@ -6727,6 +6822,21 @@
     "name": "Subtle Spell",
     "type": "text",
     "value": "When you cast a spell, you can cast it without any Verbal, Somatic, or Material components, except Material components that are consumed by the spell or that have a cost specified in the spell. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6749,11 +6859,6 @@
     "value": "As one of Scale & Fang's illustrious bodyguards, your duty is to protect your charge, no matter the cost. You gain the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Block",
     "type": "text",
     "value": "As a Bonus Action, you can choose one ally you can see. Until the start of your next turn, the ally's AC equals your AC if it is lower than that while the ally is within 5 feet of you. This effect ends early if you or the ally have the Incapacitated condition."
@@ -6762,6 +6867,21 @@
     "name": "Quick Shield",
     "type": "text",
     "value": "You can don or doff a Shield as a Bonus Action."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6784,11 +6904,6 @@
     "value": "You've been inducted into a Knight's Precinct as a deputy lawbringer or a knight-in-training. This appointment confers a badge and gun, granting you the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "Badge",
     "type": "text",
     "value": "You can display your badge on your turn (no action required). Creatures that see it will regard you as they do the Sepulcher Knights as a whole: law-abiding citizens will often be Friendly and criminals will often be Hostile."
@@ -6802,6 +6917,21 @@
     "name": "Gun",
     "type": "text",
     "value": "You have an assigned service weapon, a Repeater. You have proficiency with this weapon and can use its Mastery property even if you don't have the Weapon Mastery feature, and it doesn't count against the number of weapons you can use."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },
@@ -6824,11 +6954,6 @@
     "value": "You are a shining beacon of law and order, bringing justice and peace to those of the Frontier. You gain the following benefits."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "**Faction Feats**: Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse.\nOf course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats.\n**Gaining a Faction Feat**: The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
-   },
-   {
     "name": "First Aid",
     "type": "text",
     "value": "You have proficiency in the *Medicine* skill. You also learn the __Spare the Dying__ cantrip and can cast it as a Bonus Action."
@@ -6837,6 +6962,21 @@
     "name": "White Angel's Vengeance",
     "type": "text",
     "value": "When an enemy you can see within 60 feet of you deals damage that causes you or an ally you can see within 60 feet to become *Bloodied*, you can take a Reaction to gain Advantage on D20 Tests until the end of your next turn. Once you use this benefit, you can't use it again until you finish a Long Rest."
+   },
+   {
+    "name": "Faction Feats",
+    "type": "text",
+    "value": "Veteran adventurers are likely to make enemies across the 'Verse, but if they're lucky, they might forge some alliances too. The greatest of these alliances are likely to be with factions, which provide work, services, and connections to spacers everywhere. Factions in Dark Matter are detailed in Chapter 1: The 'Verse."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Of course, such allies don't come free. Factions generally also require work and commitment from their members, which might come in the form of small tasks, important favors for higher ranking members, or even regular obligations for the organization. For their efforts, adventurers gain specific and useful skills from their factions, as represented by Faction feats."
+   },
+   {
+    "name": "Gaining a Faction Feat",
+    "type": "text",
+    "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
    }
   ]
  },

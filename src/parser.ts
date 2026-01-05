@@ -124,38 +124,49 @@ export function parseSingleTime(time: any): string {
     return result;
 }
 
-export function parseCastingTime(time: any): string {
+export function parseCastingTime(time: any, meta: any): string {
+    const is_ritual = meta != undefined && meta.ritual;
     if (Array.isArray(time)) {
         const castingTimes = time.map(parseSingleTime);
-        return castingTimes.join(' or ');
-    } else {
-        return parseSingleTime(time);
+        if (is_ritual) castingTimes.push('Ritual');
+        return joinStringsWithOr(castingTimes, false);
     }
+
+    if (is_ritual) return `${parseSingleTime(time)} or Ritual`;
+    return parseSingleTime(time);
 }
 
-export function parseDurationTime(duration: any): string {
-    if (Array.isArray(duration)) {
-        // TODO if (duration.length > 1)
-        duration = duration[0];
-    }
+export function parseDurationTime(durations: any[] | any): string {
+    if (!Array.isArray(durations)) durations = [durations];
 
-    switch (duration.type) {
-        case 'instant':
-            return 'Instantaneous';
-        case 'special':
-            return 'Special';
-        case 'permanent':
-            return 'Permanent';
-        case 'timed': {
-            const amount = duration.duration.amount;
-            const unit = duration.duration.type;
-            if (amount > 1) return `${amount} ${unit}s`;
-            return `${amount} ${unit}`;
+    const results: string[] = durations.map(
+        (d: { type: any; duration: { amount: any; type: any }; concentration: any }) => {
+            switch (d.type) {
+                case 'instant':
+                    return 'Instantaneous';
+
+                case 'special':
+                    return 'Special';
+
+                case 'permanent':
+                    return 'Until dispelled';
+
+                case 'timed': {
+                    const amount = d.duration.amount;
+                    const unit = d.duration.type;
+                    const time = amount > 1 ? `${amount} ${unit}s` : `${amount} ${unit}`;
+
+                    return d.concentration ? `Concentration, up to ${time}` : time;
+                }
+
+                default:
+                    throw new Error(`Unsupported duration type: ${d.type}`);
+            }
         }
-        default: {
-            throw `Unsupported duration type: ${duration.type}`;
-        }
-    }
+    );
+
+    if (durations.length > 1) return `${joinStringsWithOr(results, false)} (see below)`; // If there's more than one duration, there's always an explanation as to why.
+    return joinStringsWithOr(results, false);
 }
 
 export function parseDistance(distance: any): string {
@@ -555,10 +566,10 @@ export function parseDescriptions(name: string, descriptions: any[]): Descriptio
         // These will be handled separately
         if (typeof desc == 'string') blocks.push(cleanDNDText(desc as string));
         else {
-            if (desc.type == 'entries') {
+            if (desc.type === 'entries' || desc.type === 'section') {
                 const descName = cleanDNDText(desc.name || '', true);
                 subdescriptions.push(...parseDescriptions(descName, desc.entries));
-            } else if (desc.type == 'table') {
+            } else if (desc.type === 'table') {
                 subdescriptions.push(parseDescriptionFromTable(desc));
             } else {
                 blocks.push(...parseDescriptionBlock(desc));
@@ -712,4 +723,26 @@ export function parseItemWeight(weight: number | undefined): string | null {
         return `${weight * 16} oz.`;
     }
     return `${weight} lb.`;
+}
+
+export function parsePrerequisite(prerequisite: any): string | null {
+    if (!prerequisite) return null;
+
+    const prerequisites: string[] = [];
+
+    for (const key of Object.keys(prerequisite)) {
+        switch (key) {
+            case 'campaign': {
+                const campaigns = prerequisite.campaign;
+                prerequisites.push(`${joinStringsWithOr(campaigns)} campaign`);
+                break;
+            }
+            default: {
+                throw `parsePrerequisite: Unknown key '${key}'!`;
+            }
+        }
+    }
+
+    if (prerequisites.length === 0) return null;
+    return joinStringsWithAnd(prerequisites, false);
 }
