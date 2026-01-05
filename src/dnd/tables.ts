@@ -1,6 +1,6 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, DescriptionType, parseDescriptionFromTable, Table } from '../parser';
+import { DescriptionType, parseDescriptionFromTable, DescriptionTable } from '../parser';
 import { getTablesUrl } from '../urls';
 
 interface TableGroup {
@@ -38,7 +38,7 @@ interface ParsedTable {
     source: string;
     url: string;
     roll: string | null;
-    table: Description;
+    table: DescriptionTable;
     footnotes: string[] | null;
 }
 
@@ -113,8 +113,7 @@ export function getTables(databank: Databank): ParsedTable[] {
     for (const table of tables) {
         if (!table.roll) continue;
         if (table.table.type != DescriptionType.table) continue;
-        const tableValue = table.table.value as Table;
-        for (const row of tableValue.rows) {
+        for (const row of table.table.table.rows) {
             if (typeof row[0] !== 'string') continue;
             const ranges = row[0].split(/-|–/);
 
