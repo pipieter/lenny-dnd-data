@@ -321,7 +321,7 @@ class CharacterClass {
 
             if (equipment) {
                 const entries: string[] = [];
-                for (let line of equipment) {
+                for (const line of equipment) {
                     entries.push(capitalize(cleanDNDText(line)));
                 }
 
