@@ -3660,8 +3660,8 @@
        "type": "list",
        "caption": "",
        "entries": [
-        "{#refSubclassFeature Thunder Gauntlets|Artificer|TCE|Armorer|TCE|3}",
-        "{#refSubclassFeature Defensive Field|Artificer|TCE|Armorer|TCE|3}"
+        "__Thunder Gauntlets (TCE)__: Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals **1d8** thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else.",
+        "__Defensive Field (TCE)__: As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
        ]
       }
      },
@@ -3677,9 +3677,9 @@
        "type": "list",
        "caption": "",
        "entries": [
-        "{#refSubclassFeature Lightning Launcher|Artificer|TCE|Armorer|TCE|3}",
-        "{#refSubclassFeature Powered Steps|Artificer|TCE|Armorer|TCE|3}",
-        "{#refSubclassFeature Dampening Field|Artificer|TCE|Armorer|TCE|3}"
+        "__Lightning Launcher (TCE)__: A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals **1d6** lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra **1d6** lightning damage to that target.",
+        "__Powered Steps (TCE)__: Your walking speed increases by 5 feet.",
+        "__Dampening Field (TCE)__: You have advantage on Dexterity (*Stealth*) checks. If the armor normally imposes disadvantage on such checks, the advantage and disadvantage cancel each other, as normal."
        ]
       }
      }
@@ -4889,8 +4889,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.",
+        "__Sea (PHB)__: When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes **1d6** lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to **2d6** at 10th level, **3d6** at 15th level, and **4d6** at 20th level.",
+        "__Tundra (PHB)__: When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+       ]
+      }
      }
     ],
     "6": [
@@ -4901,8 +4909,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.",
+        "__Sea (PHB)__: When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes **1d6** lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to **2d6** at 10th level, **3d6** at 15th level, and **4d6** at 20th level.",
+        "__Tundra (PHB)__: When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+       ]
+      }
      }
     ],
     "10": [
@@ -4920,8 +4936,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.",
+        "__Sea (PHB)__: When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes **1d6** lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to **2d6** at 10th level, **3d6** at 15th level, and **4d6** at 20th level.",
+        "__Tundra (PHB)__: When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+       ]
+      }
      }
     ]
    },
@@ -4954,8 +4978,18 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Bear (PHB)\n• Eagle (PHB)\n• Elk (PHB)\n• Tiger (PHB)\n• Wolf (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "__Bear (PHB)__: While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.",
+        "__Eagle (PHB)__: While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.",
+        "__Elk (PHB)__: While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift.",
+        "__Tiger (PHB)__: While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps.",
+        "__Wolf (PHB)__: While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."
+       ]
+      }
      }
     ],
     "6": [
@@ -4966,8 +5000,18 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Bear (PHB)\n• Eagle (PHB)\n• Elk (PHB)\n• Tiger (PHB)\n• Wolf (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "__Bear (PHB)__: While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.",
+        "__Eagle (PHB)__: While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.",
+        "__Elk (PHB)__: While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift.",
+        "__Tiger (PHB)__: While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps.",
+        "__Wolf (PHB)__: While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."
+       ]
+      }
      }
     ],
     "10": [
@@ -4985,8 +5029,18 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Bear (PHB)\n• Eagle (PHB)\n• Elk (PHB)\n• Tiger (PHB)\n• Wolf (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "__Bear (PHB)__: While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment.",
+        "__Eagle (PHB)__: While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the Dash action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease.",
+        "__Elk (PHB)__: While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift.",
+        "__Tiger (PHB)__: While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps.",
+        "__Wolf (PHB)__: While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."
+       ]
+      }
      }
     ]
    },
@@ -6051,8 +6105,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.",
+        "__Sea (PHB)__: When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes **1d6** lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to **2d6** at 10th level, **3d6** at 15th level, and **4d6** at 20th level.",
+        "__Tundra (PHB)__: When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+       ]
+      }
      }
     ],
     "6": [
@@ -6063,8 +6125,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.",
+        "__Sea (PHB)__: When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes **1d6** lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to **2d6** at 10th level, **3d6** at 15th level, and **4d6** at 20th level.",
+        "__Tundra (PHB)__: When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+       ]
+      }
      }
     ],
     "10": [
@@ -6082,8 +6152,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Desert (PHB)__: When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.",
+        "__Sea (PHB)__: When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes **1d6** lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to **2d6** at 10th level, **3d6** at 15th level, and **4d6** at 20th level.",
+        "__Tundra (PHB)__: When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+       ]
+      }
      }
     ]
    },
@@ -8243,8 +8321,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Dueling (PHB)\n• Two-Weapon Fighting (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "Dueling (PHB)",
+        "Two-Weapon Fighting (PHB)"
+       ]
+      }
      },
      {
       "name": "",
@@ -8258,8 +8343,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Defensive Flourish (PHB)__: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Defensive Flourish (PHB)__: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn.",
+        "__Slashing Flourish (PHB)__: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die.",
+        "__Mobile Flourish (PHB)__: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on that die. You can then immediately use your reaction to move up to your walking speed to an unoccupied space within 5 feet of the target."
+       ]
+      }
      }
     ],
     "6": [
@@ -10254,8 +10347,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Dueling (PHB)\n• Two-Weapon Fighting (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "Dueling (PHB)",
+        "Two-Weapon Fighting (PHB)"
+       ]
+      }
      },
      {
       "name": "",
@@ -10269,8 +10369,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Defensive Flourish (PHB)__: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Defensive Flourish (PHB)__: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn.",
+        "__Slashing Flourish (PHB)__: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die.",
+        "__Mobile Flourish (PHB)__: You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on that die. You can then immediately use your reaction to move up to your walking speed to an unoccupied space within 5 feet of the target."
+       ]
+      }
      }
     ],
     "6": [
@@ -12558,7 +12666,7 @@
       "value": "Kefnet's domain is identical to the __Knowledge domain in the Player's Handbook__."
      },
      {
-      "name": "Knowledge (PHB) Features",
+      "name": "",
       "type": "text",
       "value": "__Knowledge Domain (PHB)__: The gods of knowledge—including __Oghma__, __Boccob__, __Gilean__, __Aureon__, and __Thoth__—value learning and understanding above all. Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention. Some deities hoard knowledge and keep its secrets to themselves. And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse. Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can. Some gods of knowledge promote the practical knowledge of craft and invention, including smith deities like __Gond__, __Reorx__, __Onatar__, __Moradin__, __Hephaestus__, and __Goibhniu__."
      },
@@ -15001,8 +15109,15 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Protector (XPHB)\n• Thaumaturge (XPHB)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "__Protector (XPHB)__: Trained for battle, you gain proficiency with Martial weapons and training with Heavy armor.",
+       "__Thaumaturge (XPHB)__: You know one extra cantrip from the Cleric spell list. In addition, your mystical connection to the divine gives you a bonus to your Intelligence (*Arcana* or *Religion*) checks. The bonus equals your Wisdom modifier (minimum of +1)."
+      ]
+     }
     },
     {
      "name": "",
@@ -20774,8 +20889,15 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Magician (XPHB)\n• Warden (XPHB)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "__Magician (XPHB)__: You know one extra cantrip from the Druid spell list. In addition, your mystical connection to nature gives you a bonus to your Intelligence (*Arcana* or *Nature*) checks. The bonus equals your Wisdom modifier (minimum bonus of +1).",
+       "__Warden (XPHB)__: Trained for battle, you gain proficiency with Martial weapons and training with Medium armor."
+      ]
+     }
     },
     {
      "name": "",
@@ -20974,8 +21096,15 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Potent Spellcasting (XPHB)\n• Primal Strike (XPHB)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "__Potent Spellcasting (XPHB)__: Add your Wisdom modifier to the damage you deal with any Druid cantrip.",
+       "__Primal Strike (XPHB)__: Once on each of your turns when you hit a creature with an attack roll using a weapon or a Beast form's attack in Wild Shape, you can cause the target to take an extra **1d8** Cold, Fire, Lightning, or Thunder damage (choose when you hit)."
+      ]
+     }
     },
     {
      "name": "",
@@ -23033,8 +23162,24 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Archery (PHB)\n• Defense (PHB)\n• Dueling (PHB)\n• Great Weapon Fighting (PHB)\n• Protection (PHB)\n• Two-Weapon Fighting (PHB)\n• Blind Fighting (TCE)\n• Interception (TCE)\n• Superior Technique (TCE)\n• Thrown Weapon Fighting (TCE)\n• Unarmed Fighting (TCE)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Archery (PHB)",
+       "Defense (PHB)",
+       "Dueling (PHB)",
+       "Great Weapon Fighting (PHB)",
+       "Protection (PHB)",
+       "Two-Weapon Fighting (PHB)",
+       "Blind Fighting (TCE)",
+       "Interception (TCE)",
+       "Superior Technique (TCE)",
+       "Thrown Weapon Fighting (TCE)",
+       "Unarmed Fighting (TCE)"
+      ]
+     }
     },
     {
      "name": "",
@@ -23303,8 +23448,21 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **2**:\n• Banishing Arrow (XGE)\n• Beguiling Arrow (XGE)\n• Bursting Arrow (XGE)\n• Enfeebling Arrow (XGE)\n• Grasping Arrow (XGE)\n• Piercing Arrow (XGE)\n• Seeking Arrow (XGE)\n• Shadow Arrow (XGE)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **2**:",
+       "entries": [
+        "Banishing Arrow (XGE)",
+        "Beguiling Arrow (XGE)",
+        "Bursting Arrow (XGE)",
+        "Enfeebling Arrow (XGE)",
+        "Grasping Arrow (XGE)",
+        "Piercing Arrow (XGE)",
+        "Seeking Arrow (XGE)",
+        "Shadow Arrow (XGE)"
+       ]
+      }
      }
     ],
     "7": [
@@ -23497,8 +23655,29 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **3**:\n• Commander's Strike (PHB)\n• Disarming Attack (PHB)\n• Distracting Strike (PHB)\n• Evasive Footwork (PHB)\n• Feinting Attack (PHB)\n• Goading Attack (PHB)\n• Lunging Attack (PHB)\n• Maneuvering Attack (PHB)\n• Menacing Attack (PHB)\n• Parry (PHB)\n• Precision Attack (PHB)\n• Pushing Attack (PHB)\n• Rally (PHB)\n• Riposte (PHB)\n• Sweeping Attack (PHB)\n• Trip Attack (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **3**:",
+       "entries": [
+        "Commander's Strike (PHB)",
+        "Disarming Attack (PHB)",
+        "Distracting Strike (PHB)",
+        "Evasive Footwork (PHB)",
+        "Feinting Attack (PHB)",
+        "Goading Attack (PHB)",
+        "Lunging Attack (PHB)",
+        "Maneuvering Attack (PHB)",
+        "Menacing Attack (PHB)",
+        "Parry (PHB)",
+        "Precision Attack (PHB)",
+        "Pushing Attack (PHB)",
+        "Rally (PHB)",
+        "Riposte (PHB)",
+        "Sweeping Attack (PHB)",
+        "Trip Attack (PHB)"
+       ]
+      }
      },
      {
       "name": "",
@@ -23512,8 +23691,20 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Ambush (TCE)\n• Bait and Switch (TCE)\n• Brace (TCE)\n• Commanding Presence (TCE)\n• Grappling Strike (TCE)\n• Quick Toss (TCE)\n• Tactical Assessment (TCE)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Ambush (TCE)",
+        "Bait and Switch (TCE)",
+        "Brace (TCE)",
+        "Commanding Presence (TCE)",
+        "Grappling Strike (TCE)",
+        "Quick Toss (TCE)",
+        "Tactical Assessment (TCE)"
+       ]
+      }
      }
     ],
     "7": [
@@ -23977,8 +24168,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Protective Field (PHB)__: When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Protective Field (PHB)__: When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.",
+        "__Psionic Strike (PHB)__: You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier.",
+        "__Telekinetic Movement (PHB)__: You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+       ]
+      }
      }
     ],
     "7": [
@@ -23994,8 +24193,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Psi-Powered Leap (PHB)__: As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Psi-Powered Leap (PHB)__: As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.",
+        "__Telekinetic Thrust (PHB)__: When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally."
+       ]
+      }
      }
     ],
     "10": [
@@ -24166,8 +24372,19 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **2**:\n• Cloud Rune (TCE)\n• Fire Rune (TCE)\n• Frost Rune (TCE)\n• Stone Rune (TCE)\n• Hill Rune (TCE)\n• Storm Rune (TCE)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **2**:",
+       "entries": [
+        "Cloud Rune (TCE)",
+        "Fire Rune (TCE)",
+        "Frost Rune (TCE)",
+        "Stone Rune (TCE)",
+        "Hill Rune (TCE)",
+        "Storm Rune (TCE)"
+       ]
+      }
      },
      {
       "name": "Runes Known",
@@ -24819,8 +25036,21 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **2**:\n• Banishing Arrow (XGE)\n• Beguiling Arrow (XGE)\n• Bursting Arrow (XGE)\n• Enfeebling Arrow (XGE)\n• Grasping Arrow (XGE)\n• Piercing Arrow (XGE)\n• Seeking Arrow (XGE)\n• Shadow Arrow (XGE)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **2**:",
+       "entries": [
+        "Banishing Arrow (XGE)",
+        "Beguiling Arrow (XGE)",
+        "Bursting Arrow (XGE)",
+        "Enfeebling Arrow (XGE)",
+        "Grasping Arrow (XGE)",
+        "Piercing Arrow (XGE)",
+        "Seeking Arrow (XGE)",
+        "Shadow Arrow (XGE)"
+       ]
+      }
      }
     ],
     "7": [
@@ -25013,8 +25243,33 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **3**:\n• Ambush (XPHB)\n• Bait and Switch (XPHB)\n• Commander's Strike (XPHB)\n• Commanding Presence (XPHB)\n• Disarming Attack (XPHB)\n• Distracting Strike (XPHB)\n• Evasive Footwork (XPHB)\n• Feinting Attack (XPHB)\n• Goading Attack (XPHB)\n• Lunging Attack (XPHB)\n• Maneuvering Attack (XPHB)\n• Menacing Attack (XPHB)\n• Parry (XPHB)\n• Precision Attack (XPHB)\n• Pushing Attack (XPHB)\n• Rally (XPHB)\n• Riposte (XPHB)\n• Sweeping Attack (XPHB)\n• Tactical Assessment (XPHB)\n• Trip Attack (XPHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **3**:",
+       "entries": [
+        "Ambush (XPHB)",
+        "Bait and Switch (XPHB)",
+        "Commander's Strike (XPHB)",
+        "Commanding Presence (XPHB)",
+        "Disarming Attack (XPHB)",
+        "Distracting Strike (XPHB)",
+        "Evasive Footwork (XPHB)",
+        "Feinting Attack (XPHB)",
+        "Goading Attack (XPHB)",
+        "Lunging Attack (XPHB)",
+        "Maneuvering Attack (XPHB)",
+        "Menacing Attack (XPHB)",
+        "Parry (XPHB)",
+        "Precision Attack (XPHB)",
+        "Pushing Attack (XPHB)",
+        "Rally (XPHB)",
+        "Riposte (XPHB)",
+        "Sweeping Attack (XPHB)",
+        "Tactical Assessment (XPHB)",
+        "Trip Attack (XPHB)"
+       ]
+      }
      }
     ],
     "7": [
@@ -25456,8 +25711,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Protective Field (PHB)__: When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Protective Field (PHB)__: When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.",
+        "__Psionic Strike (PHB)__: You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier.",
+        "__Telekinetic Movement (PHB)__: You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+       ]
+      }
      }
     ],
     "7": [
@@ -25473,8 +25736,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Psi-Powered Leap (PHB)__: As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Psi-Powered Leap (PHB)__: As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.",
+        "__Telekinetic Thrust (PHB)__: When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally."
+       ]
+      }
      }
     ],
     "10": [
@@ -25787,8 +26057,19 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **2**:\n• Cloud Rune (TCE)\n• Fire Rune (TCE)\n• Frost Rune (TCE)\n• Stone Rune (TCE)\n• Hill Rune (TCE)\n• Storm Rune (TCE)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **2**:",
+       "entries": [
+        "Cloud Rune (TCE)",
+        "Fire Rune (TCE)",
+        "Frost Rune (TCE)",
+        "Stone Rune (TCE)",
+        "Hill Rune (TCE)",
+        "Storm Rune (TCE)"
+       ]
+      }
      },
      {
       "name": "Runes Known",
@@ -27056,8 +27337,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Leap To Your Feet (PHB)__: When you're prone, you can stand up by spending 5 feet of movement, rather than half your speed."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Leap To Your Feet (PHB)__: When you're prone, you can stand up by spending 5 feet of movement, rather than half your speed.",
+        "__Redirect Attack (PHB)__: When a creature misses you with a melee attack roll, you can spend 1 ki point as a reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you."
+       ]
+      }
      }
     ],
     "11": [
@@ -27154,8 +27442,30 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **2**:\n• Breath of Winter (PHB)\n• Clench of the North Wind (PHB)\n• Elemental Attunement (PHB)\n• Eternal Mountain Defense (PHB)\n• Fangs of the Fire Snake (PHB)\n• Fist of Four Thunders (PHB)\n• Unbroken Air (PHB)\n• Flames of the Phoenix (PHB)\n• Gong of the Summit (PHB)\n• Mist Stance (PHB)\n• Ride the Wind (PHB)\n• River of Hungry Flame (PHB)\n• Rush of the Gale Spirits (PHB)\n• Shape the Flowing River (PHB)\n• Sweeping Cinder Strike (PHB)\n• Water Whip (PHB)\n• Wave of Rolling Earth (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **2**:",
+       "entries": [
+        "Breath of Winter (PHB)",
+        "Clench of the North Wind (PHB)",
+        "Elemental Attunement (PHB)",
+        "Eternal Mountain Defense (PHB)",
+        "Fangs of the Fire Snake (PHB)",
+        "Fist of Four Thunders (PHB)",
+        "Unbroken Air (PHB)",
+        "Flames of the Phoenix (PHB)",
+        "Gong of the Summit (PHB)",
+        "Mist Stance (PHB)",
+        "Ride the Wind (PHB)",
+        "River of Hungry Flame (PHB)",
+        "Rush of the Gale Spirits (PHB)",
+        "Shape the Flowing River (PHB)",
+        "Sweeping Cinder Strike (PHB)",
+        "Water Whip (PHB)",
+        "Wave of Rolling Earth (PHB)"
+       ]
+      }
      }
     ],
     "6": [
@@ -27214,8 +27524,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Agile Parry (PHB)__: If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't incapacitated."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Agile Parry (PHB)__: If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't incapacitated.",
+        "__Kensei's Shot (PHB)__: You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon takes an extra **1d4** damage of the weapon's type. You retain this benefit until the end of the current turn."
+       ]
+      }
      },
      {
       "name": "Kensei Weapons",
@@ -28680,8 +28997,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Leap To Your Feet (PHB)__: When you're prone, you can stand up by spending 5 feet of movement, rather than half your speed."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Leap To Your Feet (PHB)__: When you're prone, you can stand up by spending 5 feet of movement, rather than half your speed.",
+        "__Redirect Attack (PHB)__: When a creature misses you with a melee attack roll, you can spend 1 ki point as a reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you."
+       ]
+      }
      }
     ],
     "11": [
@@ -28718,8 +29042,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Agile Parry (PHB)__: If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't incapacitated."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Agile Parry (PHB)__: If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't incapacitated.",
+        "__Kensei's Shot (PHB)__: You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon takes an extra **1d4** damage of the weapon's type. You retain this benefit until the end of the current turn."
+       ]
+      }
      },
      {
       "name": "Kensei Weapons",
@@ -30370,8 +30701,20 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Defense (PHB)\n• Dueling (PHB)\n• Great Weapon Fighting (PHB)\n• Protection (PHB)\n• Blessed Warrior (TCE)\n• Blind Fighting (TCE)\n• Interception (TCE)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Defense (PHB)",
+       "Dueling (PHB)",
+       "Great Weapon Fighting (PHB)",
+       "Protection (PHB)",
+       "Blessed Warrior (TCE)",
+       "Blind Fighting (TCE)",
+       "Interception (TCE)"
+      ]
+     }
     },
     {
      "name": "",
@@ -35303,8 +35646,20 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Archery (PHB)\n• Defense (PHB)\n• Dueling (PHB)\n• Two-Weapon Fighting (PHB)\n• Blind Fighting (TCE)\n• Druidic Warrior (TCE)\n• Thrown Weapon Fighting (TCE)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Archery (PHB)",
+       "Defense (PHB)",
+       "Dueling (PHB)",
+       "Two-Weapon Fighting (PHB)",
+       "Blind Fighting (TCE)",
+       "Druidic Warrior (TCE)",
+       "Thrown Weapon Fighting (TCE)"
+      ]
+     }
     },
     {
      "name": "",
@@ -36273,8 +36628,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Colossus Slayer (PHB)\n• Giant Killer (PHB)\n• Horde Breaker (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "__Colossus Slayer (PHB)__: Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra **1d8** damage if it's below its hit point maximum. You can deal this extra damage only once per turn.",
+        "__Giant Killer (PHB)__: When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.",
+        "__Horde Breaker (PHB)__: Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
+       ]
+      }
      }
     ],
     "7": [
@@ -36285,8 +36648,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Escape The Horde (PHB)\n• Multiattack Defense (PHB)\n• Steel Will (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "__Escape The Horde (PHB)__: Opportunity attacks against you are made with disadvantage.",
+        "__Multiattack Defense (PHB)__: When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.",
+        "__Steel Will (PHB)__: You have advantage on saving throws against being frightened."
+       ]
+      }
      }
     ],
     "11": [
@@ -36297,8 +36668,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Volley (PHB)\n• Whirlwind Attack (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "__Volley (PHB)__: You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.",
+        "__Whirlwind Attack (PHB)__: You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target."
+       ]
+      }
      }
     ],
     "15": [
@@ -36309,8 +36687,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Evasion (PHB)\n• Stand Against The Tide (PHB)\n• Uncanny Dodge (PHB)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "__Evasion (PHB)__: You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a __lightning bolt__ spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.",
+        "__Stand Against The Tide (PHB)__: When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.",
+        "__Uncanny Dodge (PHB)__: When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+       ]
+      }
      }
     ]
    },
@@ -40040,8 +40426,20 @@
      },
      {
       "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Psi-Bolstered Knack (PHB)__: When your non-psionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.",
+        "__Psychic Whispers (PHB)__: You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other."
+       ]
+      }
+     },
+     {
+      "name": "",
       "type": "text",
-      "value": "__Psi-Bolstered Knack (PHB)__: When your non-psionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds."
+      "value": "The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die."
      },
      {
       "name": "",
@@ -40072,8 +40470,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Homing Strikes (PHB)__: If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Homing Strikes (PHB)__: If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.",
+        "__Psychic Teleportation (PHB)__: As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes."
+       ]
+      }
      }
     ],
     "13": [
@@ -41255,8 +41660,20 @@
      },
      {
       "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Psi-Bolstered Knack (PHB)__: When your non-psionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.",
+        "__Psychic Whispers (PHB)__: You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other."
+       ]
+      }
+     },
+     {
+      "name": "",
       "type": "text",
-      "value": "__Psi-Bolstered Knack (PHB)__: When your non-psionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds."
+      "value": "The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die."
      },
      {
       "name": "",
@@ -41287,8 +41704,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Homing Strikes (PHB)__: If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Homing Strikes (PHB)__: If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.",
+        "__Psychic Teleportation (PHB)__: As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes."
+       ]
+      }
      }
     ],
     "13": [
@@ -42730,8 +43154,21 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **2**:\n• Careful Spell (PHB)\n• Distant Spell (PHB)\n• Empowered Spell (PHB)\n• Extended Spell (PHB)\n• Heightened Spell (PHB)\n• Quickened Spell (PHB)\n• Subtle Spell (PHB)\n• Twinned Spell (PHB)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **2**:",
+      "entries": [
+       "Careful Spell (PHB)",
+       "Distant Spell (PHB)",
+       "Empowered Spell (PHB)",
+       "Extended Spell (PHB)",
+       "Heightened Spell (PHB)",
+       "Quickened Spell (PHB)",
+       "Subtle Spell (PHB)",
+       "Twinned Spell (PHB)"
+      ]
+     }
     },
     {
      "name": "",
@@ -42745,8 +43182,15 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• Seeking Spell (TCE)\n• Transmuted Spell (TCE)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "Seeking Spell (TCE)",
+       "Transmuted Spell (TCE)"
+      ]
+     }
     }
    ],
    "4": [
@@ -45323,8 +45767,23 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **2**:\n• Careful Spell (XPHB)\n• Distant Spell (XPHB)\n• Empowered Spell (XPHB)\n• Extended Spell (XPHB)\n• Heightened Spell (XPHB)\n• Quickened Spell (XPHB)\n• Seeking Spell (XPHB)\n• Subtle Spell (XPHB)\n• Transmuted Spell (XPHB)\n• Twinned Spell (XPHB)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **2**:",
+      "entries": [
+       "Careful Spell (XPHB)",
+       "Distant Spell (XPHB)",
+       "Empowered Spell (XPHB)",
+       "Extended Spell (XPHB)",
+       "Heightened Spell (XPHB)",
+       "Quickened Spell (XPHB)",
+       "Seeking Spell (XPHB)",
+       "Subtle Spell (XPHB)",
+       "Transmuted Spell (XPHB)",
+       "Twinned Spell (XPHB)"
+      ]
+     }
     }
    ],
    "3": [
@@ -47829,8 +48288,17 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Pact of the Chain (PHB)\n• Pact of the Blade (PHB)\n• Pact of the Tome (PHB)\n• Pact of the Talisman (TCE)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Pact of the Chain (PHB)",
+       "Pact of the Blade (PHB)",
+       "Pact of the Tome (PHB)",
+       "Pact of the Talisman (TCE)"
+      ]
+     }
     }
    ],
    "4": [
@@ -48469,8 +48937,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Bottled Respite (PHB)__: As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Bottled Respite (PHB)__: As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest.",
+        "__Genie's Wrath (PHB)__: Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid)."
+       ]
+      }
      },
      {
       "name": "",
@@ -49437,8 +49912,41 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Agonizing Blast (XPHB)\n• Armor of Shadows (XPHB)\n• Ascendant Step (XPHB)\n• Devil's Sight (XPHB)\n• Devouring Blade (XPHB)\n• Eldritch Mind (XPHB)\n• Eldritch Smite (XPHB)\n• Eldritch Spear (XPHB)\n• Fiendish Vigor (XPHB)\n• Gaze of Two Minds (XPHB)\n• Gift of the Depths (XPHB)\n• Gift of the Protectors (XPHB)\n• Investment of the Chain Master (XPHB)\n• Lessons of the First Ones (XPHB)\n• Lifedrinker (XPHB)\n• Mask of Many Faces (XPHB)\n• Master of Myriad Forms (XPHB)\n• Misty Visions (XPHB)\n• One with Shadows (XPHB)\n• Otherworldly Leap (XPHB)\n• Pact of the Blade (XPHB)\n• Pact of the Chain (XPHB)\n• Pact of the Tome (XPHB)\n• Repelling Blast (XPHB)\n• Thirsting Blade (XPHB)\n• Visions of Distant Realms (XPHB)\n• Whispers of the Grave (XPHB)\n• Witch Sight (XPHB)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Agonizing Blast (XPHB)",
+       "Armor of Shadows (XPHB)",
+       "Ascendant Step (XPHB)",
+       "Devil's Sight (XPHB)",
+       "Devouring Blade (XPHB)",
+       "Eldritch Mind (XPHB)",
+       "Eldritch Smite (XPHB)",
+       "Eldritch Spear (XPHB)",
+       "Fiendish Vigor (XPHB)",
+       "Gaze of Two Minds (XPHB)",
+       "Gift of the Depths (XPHB)",
+       "Gift of the Protectors (XPHB)",
+       "Investment of the Chain Master (XPHB)",
+       "Lessons of the First Ones (XPHB)",
+       "Lifedrinker (XPHB)",
+       "Mask of Many Faces (XPHB)",
+       "Master of Myriad Forms (XPHB)",
+       "Misty Visions (XPHB)",
+       "One with Shadows (XPHB)",
+       "Otherworldly Leap (XPHB)",
+       "Pact of the Blade (XPHB)",
+       "Pact of the Chain (XPHB)",
+       "Pact of the Tome (XPHB)",
+       "Repelling Blast (XPHB)",
+       "Thirsting Blade (XPHB)",
+       "Visions of Distant Realms (XPHB)",
+       "Whispers of the Grave (XPHB)",
+       "Witch Sight (XPHB)"
+      ]
+     }
     },
     {
      "name": "",
@@ -50317,8 +50825,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "__Bottled Respite (PHB)__: As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "__Bottled Respite (PHB)__: As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest.",
+        "__Genie's Wrath (PHB)__: Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid)."
+       ]
+      }
      },
      {
       "name": "",
@@ -53042,8 +53557,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Darkvision**: You gain darkvision out to a range of 60 feet.\n• **Ethereal Sight**: You can see into the Ethereal Plane within 60 feet of you.\n• **Greater Comprehension**: You can read any language.\n• **See Invisibility**: You can see invisible creatures and objects within 10 feet of you that are within line of sight."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Darkvision**: You gain darkvision out to a range of 60 feet.",
+        "**Ethereal Sight**: You can see into the Ethereal Plane within 60 feet of you.",
+        "**Greater Comprehension**: You can read any language.",
+        "**See Invisibility**: You can see invisible creatures and objects within 10 feet of you that are within line of sight."
+       ]
+      }
      }
     ],
     "14": [
@@ -53355,8 +53879,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Major Transformation**: You can transmute one nonmagical object—no larger than a 5-foot cube—into another nonmagical object of similar size and mass and of equal or lesser value. You must spend 10 minutes handling the object to transform it.\n• **Panacea**: You remove all curses, diseases, and poisons affecting a creature that you touch with the transmuter's stone. The creature also regains all its hit points.\n• **Restore Life**: You cast the __raise dead__ spell on a creature you touch with the transmuter's stone, without expending a spell slot or needing to have the spell in your spellbook.\n• **Restore Youth**: You touch the transmuter's stone to a willing creature, and that creature's apparent age is reduced by 3d10 years, to a minimum of 13 years. This effect doesn't extend the creature's lifespan."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Major Transformation**: You can transmute one nonmagical object—no larger than a 5-foot cube—into another nonmagical object of similar size and mass and of equal or lesser value. You must spend 10 minutes handling the object to transform it.",
+        "**Panacea**: You remove all curses, diseases, and poisons affecting a creature that you touch with the transmuter's stone. The creature also regains all its hit points.",
+        "**Restore Life**: You cast the __raise dead__ spell on a creature you touch with the transmuter's stone, without expending a spell slot or needing to have the spell in your spellbook.",
+        "**Restore Youth**: You touch the transmuter's stone to a willing creature, and that creature's apparent age is reduced by 3d10 years, to a minimum of 13 years. This effect doesn't extend the creature's lifespan."
+       ]
+      }
      }
     ]
    },

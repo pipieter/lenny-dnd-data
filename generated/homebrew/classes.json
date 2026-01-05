@@ -2645,8 +2645,18 @@
     },
     {
      "name": "Maneuver Options",
-     "type": "text",
-     "value": "• Bolster (ValdaCaptain)\n• Born Leader (ValdaCaptain)\n• Morale Boost (ValdaCaptain)\n• Rally (ValdaCaptain)\n• Staggering Strike (ValdaCaptain)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "Bolster (ValdaCaptain)",
+       "Born Leader (ValdaCaptain)",
+       "Morale Boost (ValdaCaptain)",
+       "Rally (ValdaCaptain)",
+       "Staggering Strike (ValdaCaptain)"
+      ]
+     }
     },
     {
      "name": "",
@@ -2864,12 +2874,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Adrenaline (VALDAVAGABOND)"
+      "value": "Adrenaline (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Stim Potion (VALDAVAGABOND)"
+      "value": "Stim Potion (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -2903,12 +2913,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Ambush [Maneuver] (VALDAVAGABOND)"
+      "value": "Ambush [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Craven (VALDAVAGABOND)"
+      "value": "Craven (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3227,12 +3237,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Bloody Rampage (VALDAVAGABOND)"
+      "value": "Bloody Rampage (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Mutations (VALDAVAGABOND)"
+      "value": "Mutations (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3266,12 +3276,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Fey Moods (VALDAVAGABOND)"
+      "value": "Fey Moods (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Frenzied Strike [Maneuver] (VALDAVAGABOND)"
+      "value": "Frenzied Strike [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3310,12 +3320,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Fine Cuisine (VALDAVAGABOND)"
+      "value": "Fine Cuisine (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Monster Meal (VALDAVAGABOND)"
+      "value": "Monster Meal (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3444,17 +3454,17 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Faithful Hound (VALDAVAGABOND)"
+      "value": "Faithful Hound (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Sick 'Em! [Maneuver] (VALDAVAGABOND)"
+      "value": "Sick 'Em! [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Desperate Companion (VALDAVAGABOND)"
+      "value": "Desperate Companion (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3553,12 +3563,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Chivalrous Oath (VALDAVAGABOND)"
+      "value": "Chivalrous Oath (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Knight's Challenge (VALDAVAGABOND)"
+      "value": "Knight's Challenge (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3637,12 +3647,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Physician (VALDAVAGABOND)"
+      "value": "Physician (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Remedy [Maneuver] (VALDAVAGABOND)"
+      "value": "Remedy [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3676,12 +3686,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Hand-to-Hand (VALDAVAGABOND)"
+      "value": "Hand-to-Hand (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Shrug Off [Maneuver] (VALDAVAGABOND)"
+      "value": "Shrug Off [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3715,12 +3725,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Infamy (VALDAVAGABOND)"
+      "value": "Infamy (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Grudge (VALDAVAGABOND)"
+      "value": "Grudge (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -4119,12 +4129,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Folk Musician (VALDAVAGABOND)"
+      "value": "Folk Musician (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Inspiring Tune [Maneuver] (VALDAVAGABOND)"
+      "value": "Inspiring Tune [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -17503,8 +17513,22 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Avenger (ValdaVagabond)\n• Cursed (ValdaVagabond)\n• Dying (ValdaVagabond)\n• Faction Agent (ValdaVagabond)\n• False Identity (ValdaVagabond)\n• Fugitive (ValdaVagabond)\n• Heretic (ValdaVagabond)\n• Monstrous (ValdaVagabond)\n• Nobility (ValdaVagabond)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Avenger (ValdaVagabond)",
+       "Cursed (ValdaVagabond)",
+       "Dying (ValdaVagabond)",
+       "Faction Agent (ValdaVagabond)",
+       "False Identity (ValdaVagabond)",
+       "Fugitive (ValdaVagabond)",
+       "Heretic (ValdaVagabond)",
+       "Monstrous (ValdaVagabond)",
+       "Nobility (ValdaVagabond)"
+      ]
+     }
     },
     {
      "name": "",
@@ -17827,12 +17851,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Covert Tactics (VALDACAPTAIN)"
+      "value": "Covert Tactics (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Effortless Dodge [Maneuver] (VALDACAPTAIN)"
+      "value": "Effortless Dodge [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -18007,12 +18031,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Critical Focus (VALDACAPTAIN)"
+      "value": "Critical Focus (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Rampage [Maneuver] (VALDACAPTAIN)"
+      "value": "Rampage [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -18046,12 +18070,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Eagle Eye [Maneuver] (VALDACAPTAIN)"
+      "value": "Eagle Eye [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Close-Quarters Shooting (VALDACAPTAIN)"
+      "value": "Close-Quarters Shooting (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -18525,12 +18549,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Skirmish [Maneuver] (VALDACAPTAIN)"
+      "value": "Skirmish [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Scallywag (VALDACAPTAIN)"
+      "value": "Scallywag (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -18864,12 +18888,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Sports Fanatic (VALDACAPTAIN)"
+      "value": "Sports Fanatic (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Team Inspiration [Maneuver] (VALDACAPTAIN)"
+      "value": "Team Inspiration [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -18908,12 +18932,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Iron Wall [Maneuver] (VALDACAPTAIN)"
+      "value": "Iron Wall [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Siege Defense (VALDACAPTAIN)"
+      "value": "Siege Defense (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -19017,12 +19041,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Frenzied Strike [Maneuver] (VALDACAPTAIN)"
+      "value": "Frenzied Strike [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Eldritch Herald (VALDACAPTAIN)"
+      "value": "Eldritch Herald (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -20794,8 +20818,21 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Adventurer (ValdaWarmage)\n• Arcane Event (ValdaWarmage)\n• Circus Performer (ValdaWarmage)\n• Mercenary (ValdaWarmage)\n• Self-Taught (ValdaWarmage)\n• Survivalist (ValdaWarmage)\n• Temple Initiate (ValdaWarmage)\n• Tower Apprentice (ValdaWarmage)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Adventurer (ValdaWarmage)",
+       "Arcane Event (ValdaWarmage)",
+       "Circus Performer (ValdaWarmage)",
+       "Mercenary (ValdaWarmage)",
+       "Self-Taught (ValdaWarmage)",
+       "Survivalist (ValdaWarmage)",
+       "Temple Initiate (ValdaWarmage)",
+       "Tower Apprentice (ValdaWarmage)"
+      ]
+     }
     },
     {
      "name": "",
@@ -21576,8 +21613,19 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Blitz (ValdaWarmage)\n• Check (ValdaWarmage)\n• Flash of Brilliance (ValdaWarmage)\n• Gambit (ValdaWarmage)\n• Morale Boost (ValdaWarmage)\n• Stalemate (ValdaWarmage)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Blitz (ValdaWarmage)",
+        "Check (ValdaWarmage)",
+        "Flash of Brilliance (ValdaWarmage)",
+        "Gambit (ValdaWarmage)",
+        "Morale Boost (ValdaWarmage)",
+        "Stalemate (ValdaWarmage)"
+       ]
+      }
      }
     ],
     "7": [
@@ -26811,8 +26859,24 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Burned (ValdaWitch)\n• Drowned (ValdaWitch)\n• Feral (ValdaWitch)\n• Hideous (ValdaWitch)\n• Hollow (ValdaWitch)\n• Infested (ValdaWitch)\n• Loveless (ValdaWitch)\n• Possessed (ValdaWitch)\n• Starving (ValdaWitch)\n• Visions (ValdaWitch)\n• Whispers (ValdaWitch)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Burned (ValdaWitch)",
+       "Drowned (ValdaWitch)",
+       "Feral (ValdaWitch)",
+       "Hideous (ValdaWitch)",
+       "Hollow (ValdaWitch)",
+       "Infested (ValdaWitch)",
+       "Loveless (ValdaWitch)",
+       "Possessed (ValdaWitch)",
+       "Starving (ValdaWitch)",
+       "Visions (ValdaWitch)",
+       "Whispers (ValdaWitch)"
+      ]
+     }
     }
    ],
    "2": [
@@ -27435,8 +27499,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Lash Out (WorldsBeyondNumberWitch)\n• Lurk (WorldsBeyondNumberWitch)\n• Red in Tooth and Claw (WorldsBeyondNumberWitch)\n• Steady Will (WorldsBeyondNumberWitch)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "Lash Out (WorldsBeyondNumberWitch)",
+        "Lurk (WorldsBeyondNumberWitch)",
+        "Red in Tooth and Claw (WorldsBeyondNumberWitch)",
+        "Steady Will (WorldsBeyondNumberWitch)"
+       ]
+      }
      }
     ]
    },
@@ -30299,8 +30372,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Lash Out (WorldsBeyondNumberWitch)\n• Lurk (WorldsBeyondNumberWitch)\n• Red in Tooth and Claw (WorldsBeyondNumberWitch)\n• Steady Will (WorldsBeyondNumberWitch)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "Lash Out (WorldsBeyondNumberWitch)",
+        "Lurk (WorldsBeyondNumberWitch)",
+        "Red in Tooth and Claw (WorldsBeyondNumberWitch)",
+        "Steady Will (WorldsBeyondNumberWitch)"
+       ]
+      }
      }
     ]
    },

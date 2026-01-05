@@ -241,8 +241,19 @@
     },
     {
      "name": "Maneuver Options",
-     "type": "text",
-     "value": "• Bite the Bullet (ValdaGunslinger)\n• Blindfire (ValdaGunslinger)\n• Dodge Roll (ValdaGunslinger)\n• Grazing Shot (ValdaGunslinger)\n• Maverick Spirit (ValdaGunslinger)\n• Skin of Your Teeth (ValdaGunslinger)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "Bite the Bullet (ValdaGunslinger)",
+       "Blindfire (ValdaGunslinger)",
+       "Dodge Roll (ValdaGunslinger)",
+       "Grazing Shot (ValdaGunslinger)",
+       "Maverick Spirit (ValdaGunslinger)",
+       "Skin of Your Teeth (ValdaGunslinger)"
+      ]
+     }
     }
    ],
    "3": [
