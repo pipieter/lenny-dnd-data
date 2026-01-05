@@ -13,7 +13,7 @@ import {
     title,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
-import { BulletPoint, joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
+import { joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
 import { cleanDNDText } from '../clean';
 
 export interface ClassFeatureDictionary {
@@ -294,8 +294,15 @@ class CharacterClass {
             let savingProficiencies: string[] = data.proficiency;
             savingProficiencies = savingProficiencies.map((proficiency) => parseAbilityScore(proficiency));
 
-            const text = `${BulletPoint} Saving Throw Proficiencies: ${joinStringsWithAnd(savingProficiencies)}`;
-            profData.push({ name: '', type: DescriptionType.text, value: text });
+            profData.push({
+                name: '',
+                type: DescriptionType.list,
+                list: {
+                    type: 'list',
+                    caption: 'Saving Throw Proficiencies',
+                    entries: savingProficiencies,
+                },
+            });
         }
 
         // startingProficiencies
@@ -313,18 +320,29 @@ class CharacterClass {
             const equipment = startingEquipment.default ?? startingEquipment.entries;
 
             if (equipment) {
-                const text = [];
+                const entries: string[] = [];
                 for (let line of equipment) {
-                    line = capitalize(cleanDNDText(line));
-                    line = equipment.length !== 1 ? `${BulletPoint} ${line}` : line; // Only add bullet points if multiple entries
-                    text.push(line);
+                    entries.push(capitalize(cleanDNDText(line)));
                 }
 
-                info.push({
-                    name: 'Starting Equipment',
-                    type: DescriptionType.text,
-                    value: text.join('\n'),
-                });
+                // If entries only has one item, return a text
+                if (entries.length === 1) {
+                    info.push({
+                        name: 'Starting Equipment',
+                        type: DescriptionType.text,
+                        value: entries[0],
+                    });
+                } else {
+                    info.push({
+                        name: 'Starting Equipment',
+                        type: DescriptionType.list,
+                        list: {
+                            type: 'list',
+                            caption: '',
+                            entries: entries,
+                        },
+                    });
+                }
             }
         }
 
@@ -362,7 +380,7 @@ class CharacterClass {
 
             // Add a section divider to the multiclassing data
             if (multiclassData.length > 0) {
-                multiclassData[0].name = "Multiclassing"
+                multiclassData[0].name = 'Multiclassing';
             }
             info.push(...multiclassData);
         } else if (!this.name.toLowerCase().includes('sidekick')) {
