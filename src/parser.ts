@@ -1,4 +1,4 @@
-import { BulletPoint, getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
+import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, getTablesUrl } from './urls';
 import { AbilityScores, Alignments, SpellSchools } from './5etools-conversion/data';
 import { ColLabelRows } from './dnd/tables';
@@ -443,7 +443,13 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             const feat = description.feat;
             const [name, source] = feat.split('|');
             const link = getFeatsUrl(name, source);
-            return [`${BulletPoint} [${name}](${link})`];
+            return [
+                {
+                    type: 'list',
+                    caption: '',
+                    entries: [`[${name}](${link})`],
+                },
+            ];
         }
         case 'link': {
             const text = description.text;
