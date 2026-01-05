@@ -17,8 +17,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Wands have the __Vex__ property.\n• Rods have the __Slow__ property.\n• Staffs have the __Push__ property.\n• Orbs and Crystals have the __Sap__ property."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Wands have the __Vex__ property.",
+      "Rods have the __Slow__ property.",
+      "Staffs have the __Push__ property.",
+      "Orbs and Crystals have the __Sap__ property."
+     ]
+    }
    },
    {
     "name": "",

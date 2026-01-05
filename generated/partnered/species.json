@@ -711,6 +711,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "1d6",
@@ -784,6 +785,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "1d6",
@@ -1600,8 +1602,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Path's Grace**: You cast the __Bless__ spell, requiring no Material components.\n• **Zealous Charge**: You take the Dash action. The first time you make an attack roll before the end of your turn, on a hit or miss, the target takes an extra **2d6** Radiant damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Path's Grace**: You cast the __Bless__ spell, requiring no Material components.",
+      "**Zealous Charge**: You take the Dash action. The first time you make an attack roll before the end of your turn, on a hit or miss, the target takes an extra **2d6** Radiant damage."
+     ]
+    }
    },
    {
     "name": "",
@@ -1769,8 +1778,14 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Accursed that strongly resemble other humanoids might have a longevity only slightly different than those other folk. However, unusual Accursed might age quickly or live effectively ageless lives until cut down by tragedy."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Accursed that strongly resemble other humanoids might have a longevity only slightly different than those other folk. However, unusual Accursed might age quickly or live effectively ageless lives until cut down by tragedy."
+     ]
+    }
    },
    {
     "name": "",
@@ -1822,13 +1837,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Some Arisen age slowly, their artificial nature sloughing off the worst effects of age. Others age more quickly, worn down by unnatural magic that imbues them. Arisen may live into their second or third century, or decline well before their sixtieth year."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Some Arisen age slowly, their artificial nature sloughing off the worst effects of age. Others age more quickly, worn down by unnatural magic that imbues them. Arisen may live into their second or third century, or decline well before their sixtieth year."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*The artificial forms that all Arisen share often establish the baseline of their talents and instincts.*\n***Combat Traits**: • Magical Fortification\n• Tenacious\n• Toughness*\n***Exploration Traits**: • Artificial Form\n• Inured to the Elements*\n***Roleplaying Traits**: • Embrace the Past\n• Magical Insight\n• Unnatural Healer*"
+    "value": "*The artificial forms that all Arisen share often establish the baseline of their talents and instincts.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Magical Fortification",
+      "Tenacious",
+      "Toughness"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Artificial Form",
+      "Inured to the Elements"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Embrace the Past",
+      "Magical Insight",
+      "Unnatural Healer"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -1885,13 +1944,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: The curse that creates a Dhampir makes them ageless, letting them ignore the passage of time—though they can succumb to death in many other ways."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: The curse that creates a Dhampir makes them ageless, letting them ignore the passage of time—though they can succumb to death in many other ways."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*The vampiric features they inherit inevitably mark the Dhampir as who they are.*\n***Combat Traits**: • Draining Attack\n• Natural Attack (Fangs)\n• Well Protected*\n***Exploration Traits**: • Climber\n• Darkvision*\n***Roleplaying Traits**: • Eager Deceiver\n• Magical Savvy (__Charm Person__)\n• Magical Savvy (__Friends__)*"
+    "value": "*The vampiric features they inherit inevitably mark the Dhampir as who they are.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Draining Attack",
+      "Natural Attack (Fangs)",
+      "Well Protected"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Climber",
+      "Darkvision"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Eager Deceiver",
+      "Magical Savvy (__Charm Person__)",
+      "Magical Savvy (__Friends__)"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -1948,13 +2051,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: The Disembodied mature at a much slower rate than the Humanoids they once were, with their life expectancy doubled or even tripled."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: The Disembodied mature at a much slower rate than the Humanoids they once were, with their life expectancy doubled or even tripled."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*Most Disembodied retain a touch of the ethereal magic that marks them as creatures of two worlds.*\n***Combat Traits**: • Magical Fortification\n• Master of Distraction\n• Out of Phase*\n***Exploration Traits**: • Ethereal Fade\n• Inured to the Elements*\n***Roleplaying Traits**: • Magical Insight\n• Magical Savvy (__Feather Fall__)\n• Magical Savvy (__Dancing Lights__)*"
+    "value": "*Most Disembodied retain a touch of the ethereal magic that marks them as creatures of two worlds.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Magical Fortification",
+      "Master of Distraction",
+      "Out of Phase"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Ethereal Fade",
+      "Inured to the Elements"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Magical Insight",
+      "Magical Savvy (__Feather Fall__)",
+      "Magical Savvy (__Dancing Lights__)"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2005,13 +2152,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Stripped of their immortality, the Downcast nevertheless possess long lifespans to rival elves. They mature in their late teens, and can live up to 800 years."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Stripped of their immortality, the Downcast nevertheless possess long lifespans to rival elves. They mature in their late teens, and can live up to 800 years."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*Many Downcast channel magic driven by the vestiges of celestial power that still flow through them.*\n***Combat Traits**: • Divine Sangromancy\n• Touch of Life*\n***Exploration Traits**: • Inured to the Elements\n• Meditative Rest\n• Tireless*\n***Roleplaying Traits**: • Magical Savvy (Cleric spells only)\n• Magical Savvy (__Thaumaturgy__)\n• Moved by Faith*"
+    "value": "*Many Downcast channel magic driven by the vestiges of celestial power that still flow through them.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Divine Sangromancy",
+      "Touch of Life"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Inured to the Elements",
+      "Meditative Rest",
+      "Tireless"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Magical Savvy (Cleric spells only)",
+      "Magical Savvy (__Thaumaturgy__)",
+      "Moved by Faith"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2062,13 +2253,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Young Dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. Dragonborn live to be about 80."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Young Dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. Dragonborn live to be about 80."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*For most Dragonborn, a unique physiology defines and shapes their innate capabilities.*\n***Combat Traits**: • Breath Weapon\n• Damage Resistance (same as Breath Weapon)\n• Menacing Roar*\n***Exploration Traits**: • Darkvision\n• Natural Movement\n• Powerful Build*\n***Roleplaying Traits**: • Firm Influence\n• Moved by Faith*"
+    "value": "*For most Dragonborn, a unique physiology defines and shapes their innate capabilities.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Breath Weapon",
+      "Damage Resistance (same as Breath Weapon)",
+      "Menacing Roar"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Darkvision",
+      "Natural Movement",
+      "Powerful Build"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Firm Influence",
+      "Moved by Faith"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2119,13 +2354,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: The magic that kept the Dreamers in stasis during their long slumber has also served to preserve their bodies from natural aging. Dreamers mature at the age of 18 and can live to be 250 years old."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: The magic that kept the Dreamers in stasis during their long slumber has also served to preserve their bodies from natural aging. Dreamers mature at the age of 18 and can live to be 250 years old."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*Their long sleep and the lingering dreams that come with it shape the minds and instincts of many Dreamers.*\n***Combat Traits**: • Quick Initiative\n• Stalwart Reserves*\n***Exploration Traits**: • Darkvision\n• Helping Hand\n• Power Nap*\n***Roleplaying Traits**: • Dreamwalking\n• Improviser\n• Inborn Perception*"
+    "value": "*Their long sleep and the lingering dreams that come with it shape the minds and instincts of many Dreamers.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Quick Initiative",
+      "Stalwart Reserves"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Darkvision",
+      "Helping Hand",
+      "Power Nap"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Dreamwalking",
+      "Improviser",
+      "Inborn Perception"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2181,13 +2460,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Dwarves physically mature by their late teens, but are considered young until they reach the age of 50. On average, they live about 350 years."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Dwarves physically mature by their late teens, but are considered young until they reach the age of 50. On average, they live about 350 years."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*Dwarves are known for their natural resilience and for the degree to which they have adapted to living in the deeps beneath hills and mountains, where few other folks can thrive.*\n***Combat Traits**: • Damage Resistance (Poison)\n• Toughness\n• Weapon Aptitude*\n***Exploration Traits**: • Darkvision\n• Poison Resilience\n• Steady*\n***Roleplaying Traits**: • Artisanal Focus (Brewer's Supplies, Mason's Tools, or Smith's Tools)\n• Crafter's Eye*"
+    "value": "*Dwarves are known for their natural resilience and for the degree to which they have adapted to living in the deeps beneath hills and mountains, where few other folks can thrive.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Damage Resistance (Poison)",
+      "Toughness",
+      "Weapon Aptitude"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Darkvision",
+      "Poison Resilience",
+      "Steady"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Artisanal Focus (Brewer's Supplies, Mason's Tools, or Smith's Tools)",
+      "Crafter's Eye"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2243,13 +2566,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An Elf typically claims adulthood and an adult name around the age of 100, and can live to be 750 years old."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An Elf typically claims adulthood and an adult name around the age of 100, and can live to be 750 years old."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*The ancient traditions followed by many Elves reflect a mastery of mind, body, and magic.*\n***Combat Traits**: • Awakened Mind\n• Focused Mind\n• Weapon Aptitude*\n***Exploration Traits**: • Darkvision\n• Meditative Rest\n• Shroud of the Wild*\n***Roleplaying Traits**: • Inborn Perception\n• Magical Savvy (any cantrip)*"
+    "value": "*The ancient traditions followed by many Elves reflect a mastery of mind, body, and magic.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Awakened Mind",
+      "Focused Mind",
+      "Weapon Aptitude"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Darkvision",
+      "Meditative Rest",
+      "Shroud of the Wild"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Inborn Perception",
+      "Magical Savvy (any cantrip)"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2300,13 +2667,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Gnomes are physically mature by 18, and most are expected to settle down into an adult life by around age 40. They can live to almost 500 years."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Gnomes are physically mature by 18, and most are expected to settle down into an adult life by around age 40. They can live to almost 500 years."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*For many Gnomes, an instinctive quickness of body and mind shapes their approach to life and learning.*\n***Combat Traits**: • Magical Fortification\n• Quick Slip*\n***Exploration Traits**: • Artifice Expertise\n• Darkvision\n• Fade Away*\n***Roleplaying Traits**: • Magical Savvy\n• Masterful Aptitude\n• Nature's Voice*"
+    "value": "*For many Gnomes, an instinctive quickness of body and mind shapes their approach to life and learning.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Magical Fortification",
+      "Quick Slip"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Artifice Expertise",
+      "Darkvision",
+      "Fade Away"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Magical Savvy",
+      "Masterful Aptitude",
+      "Nature's Voice"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2367,13 +2778,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Grudgels reach adulthood at about the age of 16, and can live to their seventh decade or more."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Grudgels reach adulthood at about the age of 16, and can live to their seventh decade or more."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*Many Grudgels are shaped by living as wanderers and by a long-held fascination with crafting and magic.*\n***Combat Traits**: • Battlefield Control\n• Centered*\n***Exploration Traits**: • Darkvision\n• Powerful Build\n• Tireless*\n***Roleplaying Traits**: • Artisanal Focus\n• Impromptu Artisan\n• Magical Savvy (any cantrip)*"
+    "value": "*Many Grudgels are shaped by living as wanderers and by a long-held fascination with crafting and magic.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Battlefield Control",
+      "Centered"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Darkvision",
+      "Powerful Build",
+      "Tireless"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Artisanal Focus",
+      "Impromptu Artisan",
+      "Magical Savvy (any cantrip)"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2429,13 +2884,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: A Halfling reaches adulthood at the age of 20 and generally lives into the middle of their second century."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: A Halfling reaches adulthood at the age of 20 and generally lives into the middle of their second century."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*Many Halflings possess innate instincts of courage and curiosity, even if only a few get the chance to use them.*\n***Combat Traits**: • Brave\n• Creature Cover\n• Lucky*\n***Exploration Traits**: • Helping Hand\n• Pass Through\n• Power Nap*\n***Roleplaying Traits**: • Artisanal Focus (Brewer's Supplies, Cook's Utensils, or Potter's Tools)\n• Embrace the Past*"
+    "value": "*Many Halflings possess innate instincts of courage and curiosity, even if only a few get the chance to use them.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Brave",
+      "Creature Cover",
+      "Lucky"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Helping Hand",
+      "Pass Through",
+      "Power Nap"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Artisanal Focus (Brewer's Supplies, Cook's Utensils, or Potter's Tools)",
+      "Embrace the Past"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2486,13 +2985,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Humans reach adulthood in their late teens and live less than a century."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Humans reach adulthood in their late teens and live less than a century."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*Though Humans are no more drawn to violence than any other folk, many possess an innate ambition, a hunger for exploration, and a willingness to stand against danger.*\n***Combat Traits**: • Awesome Critical\n• First Strike\n• Weapon Aptitude*\n***Exploration Traits**: • Helping Hand\n• Intrinsic Orientation*\n***Roleplaying Traits**: • Artisanal Focus\n• Keen Survivor\n• Skill Prowess*"
+    "value": "*Though Humans are no more drawn to violence than any other folk, many possess an innate ambition, a hunger for exploration, and a willingness to stand against danger.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Awesome Critical",
+      "First Strike",
+      "Weapon Aptitude"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Helping Hand",
+      "Intrinsic Orientation"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Artisanal Focus",
+      "Keen Survivor",
+      "Skill Prowess"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2544,13 +3087,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Laneshi mature quickly, reaching adulthood at around 14, and can live up to 150 years."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Laneshi mature quickly, reaching adulthood at around 14, and can live up to 150 years."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*Their unique undersea culture shapes the talents and drives of many Laneshi.*\n***Combat Traits**: • Awakened Mind\n• Psychic Spirit*\n***Exploration Traits**: • Amphibious\n• Darkvision\n• Swimmer*\n***Roleplaying Traits**: • Animal Friend\n• Magical Savvy (any Necromancy cantrip)\n• Nature's Voice*"
+    "value": "*Their unique undersea culture shapes the talents and drives of many Laneshi.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Awakened Mind",
+      "Psychic Spirit"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Amphibious",
+      "Darkvision",
+      "Swimmer"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Animal Friend",
+      "Magical Savvy (any Necromancy cantrip)",
+      "Nature's Voice"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2601,13 +3188,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Ogresh reach maturity around age 25 but are considered youthful by their kin for decades afterward. They can live as long as 300 years."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Ogresh reach maturity around age 25 but are considered youthful by their kin for decades afterward. They can live as long as 300 years."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*A wandering lifestyle, and an innate ability to read other creatures, shapes and defines many Ogresh.*\n***Combat Traits**: • Enemy in Motion\n• Focused Mind*\n***Exploration Traits**: • Environmental Awareness\n• Natural Movement\n• Powerful Build*\n***Roleplaying Traits**: • Calculating Listener\n• Commanding Insight\n• Persuasive Knack*"
+    "value": "*A wandering lifestyle, and an innate ability to read other creatures, shapes and defines many Ogresh.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Enemy in Motion",
+      "Focused Mind"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Environmental Awareness",
+      "Natural Movement",
+      "Powerful Build"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Calculating Listener",
+      "Commanding Insight",
+      "Persuasive Knack"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2653,13 +3284,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Wechselkind do not age as normal creatures do, forever trapped in the doll-like visage of their creation. Their maximum age is a function of natural wear and damage, and they are immune to magical aging effects."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Wechselkind do not age as normal creatures do, forever trapped in the doll-like visage of their creation. Their maximum age is a function of natural wear and damage, and they are immune to magical aging effects."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*The magical and artificial nature shapes the aptitudes and innate features of all Wechselkind.*\n***Combat Traits**: • Creature Cover\n• Magical Fortification*\n***Exploration Traits**: • Artificial Form\n• Helping Hand\n• Pass Through*\n***Roleplaying Traits**: • Magical Savvy (__Disguise Self__)\n• Magical Savvy (__Minor Illusion__)\n• Intuitive Acrobat*"
+    "value": "*The magical and artificial nature shapes the aptitudes and innate features of all Wechselkind.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Creature Cover",
+      "Magical Fortification"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Artificial Form",
+      "Helping Hand",
+      "Pass Through"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Magical Savvy (__Disguise Self__)",
+      "Magical Savvy (__Minor Illusion__)",
+      "Intuitive Acrobat"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
@@ -2711,13 +3386,57 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Age**: Wulven mature at the same rate as others of their original heritage, but the magic that spawns them lessens the debilitating effects of aging, and they remain fit even in their later years."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Age**: Wulven mature at the same rate as others of their original heritage, but the magic that spawns them lessens the debilitating effects of aging, and they remain fit even in their later years."
+     ]
+    }
    },
    {
     "name": "",
     "type": "text",
-    "value": "*Many Wulven channel the natural instincts—and often the natural fierceness—of the creature their curse links them to.*\n***Combat Traits**: • Hunter's Instinct\n• Natural Attack (Claws)\n• Pack Hunter*\n***Exploration Traits**: • Burst of Speed\n• Climber*\n***Roleplaying Traits**: • Athlete's Spirit\n• Inborn Perception\n• Nature's Voice*"
+    "value": "*Many Wulven channel the natural instincts—and often the natural fierceness—of the creature their curse links them to.*\n***Combat Traits**: *\n***Exploration Traits**: *\n***Roleplaying Traits**: *"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Hunter's Instinct",
+      "Natural Attack (Claws)",
+      "Pack Hunter"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Burst of Speed",
+      "Climber"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Athlete's Spirit",
+      "Inborn Perception",
+      "Nature's Voice"
+     ]
+    }
    },
    {
     "name": "Trait Selection",
