@@ -470,6 +470,7 @@ class CharacterClass {
                         name: title,
                         type: DescriptionType.table,
                         table: {
+                            type: 'table',
                             title,
                             headers,
                             rows: [spellRow],
@@ -693,6 +694,8 @@ function resolveReferences(
             else throw `Unsupported text-description reference-type in: ${text}`;
         } else if (entry.type === DescriptionType.table) {
             resolvedEntries.push(entry); // For now, tables don't have any references.
+        } else if (entry.type === DescriptionType.list) {
+            resolvedEntries.push(entry); // For now, lists don't have any references.
         } else {
             throw `Could not resolve unsupported DescriptionType ${entry.type}`;
         }
