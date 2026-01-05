@@ -9,13 +9,55 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Gunslinger HP: 8 + Con. mod\n• HP per Gunslinger level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Gunslinger HP: 8 + Con. mod",
+      "HP per Gunslinger level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Charisma\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Martial Ranged Weapons weapons\n• Skill Proficiencies: Choose 2: Acrobatics, Animal Handling, Athletics, Deception, Insight, Intimidation, Perception, Persuasion, Sleight Of Hand or Stealth"
+    "value": "• Saving Throw Proficiencies: Dexterity and Charisma"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial Ranged weapons"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Animal Handling, Athletics, Deception, Insight, Intimidation, Perception, Persuasion, Sleight Of Hand or Stealth"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -24,8 +66,14 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial Ranged Weapons weapons"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial Ranged weapons"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -851,13 +899,57 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Monster Hunter HP: 10 + Con. mod\n• HP per Monster Hunter level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Monster Hunter HP: 10 + Con. mod",
+      "HP per Monster Hunter level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 3: Athletics, History, Investigation, Medicine, Nature, Perception, Religion or Survival"
+    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Athletics, History, Investigation, Medicine, Nature, Perception, Religion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -866,8 +958,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {

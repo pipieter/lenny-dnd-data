@@ -9,13 +9,66 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Alchemist HP: 8 + Con. mod\n• HP per Alchemist level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Alchemist HP: 8 + Con. mod",
+      "HP per Alchemist level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Bomb weapons\n• Skill Proficiencies: Choose 3: Arcana, History, Insight, Medicine, Nature, Perception, Sleight Of Hand or Survival\n• Tool Proficiencies: Alchemist's Supplies"
+    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Bomb"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Arcana, History, Insight, Medicine, Nature, Perception, Sleight Of Hand or Survival"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Alchemist's Supplies"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -24,8 +77,25 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor\n• Tool Proficiencies: Alchemist's Supplies"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Alchemist's Supplies"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -1324,13 +1394,68 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Blood Hunter HP: 10 + Con. mod\n• HP per Blood Hunter level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Blood Hunter HP: 10 + Con. mod",
+      "HP per Blood Hunter level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Tool Proficiencies: Alchemist's Supplies\n• Skill Proficiencies: Choose 3: Athletics, Acrobatics, Arcana, History, Insight, Investigation, Religion or Survival"
+    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Alchemist's Supplies"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Athletics, Acrobatics, Arcana, History, Insight, Investigation, Religion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -1339,8 +1464,47 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Martial weapons\n• Tool Proficiencies: Alchemist's Supplies\n• Skill Proficiencies: Choose 1: Athletics, Acrobatics, Arcana, History, Insight, Investigation, Religion or Survival"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Alchemist's Supplies"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 1: Athletics, Acrobatics, Arcana, History, Insight, Investigation, Religion or Survival"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -2460,13 +2624,58 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Captain HP: 8 + Con. mod\n• HP per Captain level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Captain HP: 8 + Con. mod",
+      "HP per Captain level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Constitution and Charisma\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Animal Handling, Athletics, Deception, History, Insight, Intimidation, Perception or Persuasion"
+    "value": "• Saving Throw Proficiencies: Constitution and Charisma"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Heavy armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Animal Handling, Athletics, Deception, History, Insight, Intimidation, Perception or Persuasion"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -2475,8 +2684,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -4245,13 +4473,69 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Craftsman HP: 10 + Con. mod\n• HP per Craftsman level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Craftsman HP: 10 + Con. mod",
+      "HP per Craftsman level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Constitution and Intelligence\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Arcana, Athletics, History, Investigation, Medicine, Perception or Persuasion\n• Tool Proficiencies: All Artisan's Tools"
+    "value": "• Saving Throw Proficiencies: Constitution and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Heavy armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Arcana, Athletics, History, Investigation, Medicine, Perception or Persuasion"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "All Artisan's Tools"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -4260,8 +4544,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -6011,13 +6314,55 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d6\n• Level 1 Gadgeteer HP: 6 + Con. mod\n• HP per Gadgeteer level: 1d6 + Con. mod *or* 4 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d6",
+      "Level 1 Gadgeteer HP: 6 + Con. mod",
+      "HP per Gadgeteer level: 1d6 + Con. mod *or* 4 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 3: Arcana, Data|DarkMatter24, Deception, History, Investigation, Medicine, Nature, Piloting|DarkMatter24, Religion, Sleight Of Hand or Technology|DarkMatter24"
+    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Arcana, Data|DarkMatter24, Deception, History, Investigation, Medicine, Nature, Piloting|DarkMatter24, Religion, Sleight Of Hand or Technology|DarkMatter24"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -6026,8 +6371,25 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light armor"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -6888,13 +7250,55 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Investigator HP: 8 + Con. mod\n• HP per Investigator level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Investigator HP: 8 + Con. mod",
+      "HP per Investigator level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Weapon Proficiencies: Simple and Martial weapons\n• Armor Proficiencies: Light armor\n• Skill Proficiencies: Choose 3: Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Persuasion, Religion, Stealth, Sleight Of Hand or Survival"
+    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Persuasion, Religion, Stealth, Sleight Of Hand or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -8369,13 +8773,73 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Kitsune Witch HP: 8 + Con. mod\n• HP per Kitsune Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Kitsune Witch HP: 8 + Con. mod",
+      "HP per Kitsune Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Charisma\n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Simple, Rapier, Scimitar, Shortsword, Whip, Blowgun and Longbow weapons\n• Skill Proficiencies: Choose 3: Animal Handling, Deception, Insight, Nature, Perception, Performance, Persuasion or Survival\n• Tool Proficiencies: Thieves' Tools Or One Arisan's Tool, And One Musical Instrument."
+    "value": "• Saving Throw Proficiencies: Dexterity and Charisma"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Rapier",
+      "Scimitar",
+      "Shortsword",
+      "Whip",
+      "Blowgun",
+      "Longbow"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Animal Handling, Deception, Insight, Nature, Perception, Performance, Persuasion or Survival"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Thieves' Tools or one Arisan's Tool, and one musical instrument."
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -8384,8 +8848,26 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor and Shields\n• Tool Proficiencies: One Of Thieves' Tools, One Artisan's Tool, Or One Musical Instrument."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "One of Thieves' Tools, one Artisan's Tool, or one musical instrument."
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -10201,13 +10683,56 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d12\n• Level 1 Martyr HP: 12 + Con. mod\n• HP per Martyr level: 1d12 + Con. mod *or* 7 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d12",
+      "Level 1 Martyr HP: 12 + Con. mod",
+      "HP per Martyr level: 1d12 + Con. mod *or* 7 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Strength and Wisdom\n• Armor Proficiencies: Light armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Athletics, History, Insight, Intimidation, Medicine, Persuasion or Religion"
+    "value": "• Saving Throw Proficiencies: Strength and Wisdom"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Athletics, History, Insight, Intimidation, Medicine, Persuasion or Religion"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -10216,8 +10741,26 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -12430,13 +12973,43 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d6\n• Level 1 Necromancer HP: 6 + Con. mod\n• HP per Necromancer level: 1d6 + Con. mod *or* 4 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d6",
+      "Level 1 Necromancer HP: 6 + Con. mod",
+      "HP per Necromancer level: 1d6 + Con. mod *or* 4 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Constitution and Intelligence\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Arcana, Deception, History, Intimidation, Investigation, Medicine, Persuasion, Religion or Stealth"
+    "value": "• Saving Throw Proficiencies: Constitution and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Arcana, Deception, History, Intimidation, Investigation, Medicine, Persuasion, Religion or Stealth"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -15420,13 +15993,68 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d12\n• Level 1 Ruffian HP: 12 + Con. mod\n• HP per Ruffian level: 1d12 + Con. mod *or* 7 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d12",
+      "Level 1 Ruffian HP: 12 + Con. mod",
+      "HP per Ruffian level: 1d12 + Con. mod *or* 7 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Strength and Constitution\n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Athletics, Deception, Perception, Persuasion, Sleight Of Hand, Stealth or Survival\n• Tool Proficiencies: One Musical Instrument Or Gaming Set"
+    "value": "• Saving Throw Proficiencies: Strength and Constitution"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Athletics, Deception, Perception, Persuasion, Sleight Of Hand, Stealth or Survival"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "one Musical Instrument or Gaming Set"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -15436,7 +16064,31 @@
    {
     "name": "Multiclassing",
     "type": "text",
-    "value": "Ability requirements: At least 13 Strength  and 13 Charisma \n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Martial weapons"
+    "value": "Ability requirements: At least 13 Strength  and 13 Charisma "
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -16168,13 +16820,66 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Spiritualist HP: 8 + Con. mod\n• HP per Spiritualist level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Spiritualist HP: 8 + Con. mod",
+      "HP per Spiritualist level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Wisdom and Charisma\n• Armor Proficiencies: Light armor and Shields\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Arcana, Deception, Insight, Investigation, Perception, Performance, Persuasion or Religion\n• Tool Proficiencies: One Of Calligrapher's Supplies, Dice Set, Painter's Supplies, Playing Cards, Or One Musical Instrument"
+    "value": "• Saving Throw Proficiencies: Wisdom and Charisma"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Arcana, Deception, Insight, Investigation, Perception, Performance, Persuasion or Religion"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "One of calligrapher's supplies, dice set, painter's supplies, playing cards, or one musical instrument"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -16183,8 +16888,26 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor and Shields\n• Tool Proficiencies: One Of Calligrapher's Supplies, Dice Set, Painter's Supplies, Playing Cards, Or One Musical Instrument"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "One of calligrapher's supplies, dice set, painter's supplies, playing cards, or one musical instrument"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -17323,13 +18046,58 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Vagabond HP: 10 + Con. mod\n• HP per Vagabond level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Vagabond HP: 10 + Con. mod",
+      "HP per Vagabond level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Strength and Constitution\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Acrobatics, Animal Handling, Athletics, Deception, Insight, Investigation, Perception, Stealth or Survival"
+    "value": "• Saving Throw Proficiencies: Strength and Constitution"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Heavy armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Animal Handling, Athletics, Deception, Insight, Investigation, Perception, Stealth or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -17338,8 +18106,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -19077,13 +19864,58 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Warden HP: 10 + Con. mod\n• HP per Warden level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Warden HP: 10 + Con. mod",
+      "HP per Warden level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Strength and Constitution\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Animal Handling, Athletics, Insight, Intimidation, Medicine, Perception, Persuasion or Survival"
+    "value": "• Saving Throw Proficiencies: Strength and Constitution"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Heavy armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Animal Handling, Athletics, Insight, Intimidation, Medicine, Perception, Persuasion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -19092,8 +19924,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -20548,13 +21399,54 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Warmage HP: 8 + Con. mod\n• HP per Warmage level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Warmage HP: 8 + Con. mod",
+      "HP per Warmage level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Constitution and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Acrobatics, Animal Handling, Arcana, Athletics, History, Investigation, Medicine, Perception or Survival"
+    "value": "• Saving Throw Proficiencies: Constitution and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Animal Handling, Arcana, Athletics, History, Investigation, Medicine, Perception or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -22068,13 +22960,67 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Weaver HP: 8 + Con. mod\n• HP per Weaver level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Weaver HP: 8 + Con. mod",
+      "HP per Weaver level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Martial Melee Weapons That Have The Finesse Or Light Property weapons\n• Tool Proficiencies: Weaver's Tools and Cartographer's Tools\n• Skill Proficiencies: Choose 2: Acrobatics, Arcana, Athletics, History, Insight, Investigation, Nature, Perception, Stealth or Survival"
+    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial melee weapons that have the Finesse or Light property"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Weaver's tools",
+      "Cartographer's tools"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Arcana, Athletics, History, Insight, Investigation, Nature, Perception, Stealth or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -22084,7 +23030,29 @@
    {
     "name": "Multiclassing",
     "type": "text",
-    "value": "Ability requirements: At least 13 Dexterity  and 13 Intelligence \n• Weapon Proficiencies: Simple weapons\n• Armor Proficiencies: Light armor"
+    "value": "Ability requirements: At least 13 Dexterity  and 13 Intelligence "
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -23920,13 +24888,55 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d6\n• Level 1 Weaver HP: 6 + Con. mod\n• HP per Weaver level: 1d6 + Con. mod *or* 4 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d6",
+      "Level 1 Weaver HP: 6 + Con. mod",
+      "HP per Weaver level: 1d6 + Con. mod *or* 4 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Longswords weapons\n• Skill Proficiencies: Choose 2: Acrobatics, Animal Handling, Arcana, Insight, Investigation, Perception, Performance, Religion, Stealth or Survival"
+    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Longswords"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Animal Handling, Arcana, Insight, Investigation, Perception, Performance, Religion, Stealth or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -25884,13 +26894,54 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Witch HP: 8 + Con. mod\n• HP per Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Witch HP: 8 + Con. mod",
+      "HP per Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Wisdom and Charisma\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Arcana, Deception, Insight, Intimidation, Nature, Persuasion, Religion or Survival"
+    "value": "• Saving Throw Proficiencies: Wisdom and Charisma"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Arcana, Deception, Insight, Intimidation, Nature, Persuasion, Religion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -25899,8 +26950,14 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -29087,13 +30144,65 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Witch HP: 8 + Con. mod\n• HP per Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Witch HP: 8 + Con. mod",
+      "HP per Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
+    "name": "",
     "type": "text",
-    "value": "• Saving Throw Proficiencies: Wisdom and Charisma\n• Armor Proficiencies: Light armor\n• Tool Proficiencies: Two Types Of Artisan's Tools\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Animal Handling, Arcana, Insight, Intimidation, Medicine, Nature, Perception, Persuasion or Survival"
+    "value": "• Saving Throw Proficiencies: Wisdom and Charisma"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Two types of artisan's tools"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Animal Handling, Arcana, Insight, Intimidation, Medicine, Nature, Perception, Persuasion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -29103,7 +30212,18 @@
    {
     "name": "Multiclassing",
     "type": "text",
-    "value": "Ability requirements: At least 13 Wisdom \n• Armor Proficiencies: Light armor"
+    "value": "Ability requirements: At least 13 Wisdom "
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
    }
   ],
   "levelResources": {
