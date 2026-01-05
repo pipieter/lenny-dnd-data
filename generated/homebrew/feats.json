@@ -55,7 +55,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "• **Weapon Proficiency**: You gain proficiency in one of the following:\n• • simple melee weapons\n• simple ranged and simple finesse weapons\n• **Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.\n• **Repeatable**: You can take this feat more than once."
+    "value": "• **Weapon Proficiency**: You gain proficiency in Simple finesse weapons. Additionally, you gain proficiency in one of the following:\n• • simple melee weapons\n• simple ranged weapons\n• **Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.\n• **Repeatable**: You can take this feat more than once."
    }
   ]
  },
@@ -690,6 +690,36 @@
   ]
  },
  {
+  "name": "Blind",
+  "source": "GaldeveerTanksandFlanks",
+  "url": "https://5e.tools/feats.html#blind_galdeveertanksandflanks",
+  "type": "Origin Feat",
+  "prerequisite": "No higher than 1st-level or you're blind",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "• **Blinded**: You are blind, but you have 120 ft of tremorsense\n• **Heighten Senses**: As a bonus action you can gain advantage on perception checks for one minute. You can do this a number of times equal to your proficiency bonus and regain all uses on a long rest.\n• **Voice Lock**: As an action you can force a creature you see to make a charisma saving throw. For the next ten minutes, whenever you're sensing the target with your tremorsense you can hear what it's saying. You regain this ability after a long rest."
+   }
+  ]
+ },
+ {
+  "name": "Amputee",
+  "source": "GaldeveerTanksandFlanks",
+  "url": "https://5e.tools/feats.html#amputee_galdeveertanksandflanks",
+  "type": "Origin Feat",
+  "prerequisite": "No higher than 1st level unless one of your hands is unusable and not already affected by this feat",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "• **Unusuable**: You lose the use of one of your hands. Nothing changes if the hand is already unusuable. This might come in the form of a missing arm, missing hand, nerve damaged, etc.\n• **Presthetique**: As an action you can attach up to 1 item to the hand you can't use. It counts as holding that item. As an action you can detach it. It cannot be forcibly removed while you're conscious unless you are willing.\n• **Fancy Feet**: As a reaction to a creature missing an attack roll against you, you can move up to half your movement speed in a straight line without provoking opportunity attacks. You can do this a number of times equal to your proficiency bonus and regain all uses on a long rest.\n• **Repeatable**: You can take this feat more than once, but you must choose a different hand each time for unusable."
+   }
+  ]
+ },
+ {
   "name": "Patient Disciple",
   "source": "GaldeveerTanksandFlanks",
   "url": "https://5e.tools/feats.html#patient%20disciple_galdeveertanksandflanks",
@@ -1025,7 +1055,7 @@
    {
     "name": "Lesser Dragonmark Benefit",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Lesser Dragonmark Benefit",
      "headers": [
       "Mark",
@@ -1160,7 +1190,7 @@
    {
     "name": "Ashbound Spells",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Ashbound Spells",
      "headers": [
       "Spell Level",
@@ -1228,7 +1258,7 @@
    {
     "name": "Gatekeeper Spells",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Gatekeeper Spells",
      "headers": [
       "Spell Level",
@@ -1301,7 +1331,7 @@
    {
     "name": "Greensinger Spells",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Greensinger Spells",
      "headers": [
       "Spell Level",
@@ -1464,7 +1494,7 @@
    {
     "name": "Shadow's Gift of Stone Spells",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Shadow's Gift of Stone Spells",
      "headers": [
       "Character Level",
@@ -1577,7 +1607,7 @@
    {
     "name": "Voice of the Fury Spells",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Voice of the Fury Spells",
      "headers": [
       "Character Level",
@@ -1680,7 +1710,7 @@
    {
     "name": "Warden of the Wood Spells",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Warden of the Wood Spells",
      "headers": [
       "Spell Level",
@@ -1768,7 +1798,7 @@
    {
     "name": "Children of Winter Spells",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Children of Winter Spells",
      "headers": [
       "Spell Level",

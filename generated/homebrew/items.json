@@ -46,40 +46,6 @@
   "properties": []
  },
  {
-  "name": "AI Core",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#ai%20core_darkmatter24",
-  "image": null,
-  "value": "800 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Your ship's Arcane Terminal has a sentient onboard artificial intelligence. This AI keeps the ship in running order and informs the crew of imminent danger."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The AI has an Intelligence of 17, a Wisdom of 13, and a Charisma of 14. It is proficient in the *Data* and *Technology* skills (with a +2 Proficiency Bonus).  The AI has a +3 modifier on D20 Tests that rely on Strength, Dexterity or Constitution. It can take the Study action and will inform its passengers of any information it knows."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "When needed, the AI can assume any Crew Role aboard the ship and perform any action provided by that role. The AI takes its turn at the end of the Initiative order."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "AI personalities can vary wildly. Some are snarky and pull pranks on their crew, while others are humorless and fiercely logical."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Amphibious Adaptation",
   "source": "ValdaAlchemist",
   "url": "https://5e.tools/items.html#amphibious%20adaptation_valdaalchemist",
@@ -491,25 +457,6 @@
   ]
  },
  {
-  "name": "Arcane Cannon",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#arcane%20cannon_darkmatter24",
-  "image": null,
-  "value": "700 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The Arcane Cannon magnifies a spellcaster's power, allowing them to cast Mega spells. This system is used by the Gunner with the Arcane Cannon action."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Arcane Resonator",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#arcane%20resonator_darkmatter24",
@@ -801,7 +748,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "School of Magic",
@@ -866,7 +813,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "School of Magic",
@@ -2685,25 +2632,6 @@
   "properties": []
  },
  {
-  "name": "Captain's Chair",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#captain's%20chair_darkmatter24",
-  "image": null,
-  "value": "750 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The ship gains the Captain Crew Role."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Carbonic Suit",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#carbonic%20suit_darkmatter24",
@@ -2884,25 +2812,6 @@
     "name": "",
     "type": "text",
     "value": "You have replaced or complemented your lower limbs with those of a climbing creature. You have a Climb Speed equal to your Speed."
-   }
-  ],
-  "properties": []
- },
- {
-  "name": "Cloaking",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#cloaking_darkmatter24",
-  "image": null,
-  "value": "3.000 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The Cloaking system has 6 charges and regains 1d6 expended charges daily at dawn. The Engineer can take the Use System action to expend 1 charge and give the ship the Invisible condition for 1 minute. This condition ends immediately after the ship attacks, deals damage, or moves more than 1,000 feet on its turn."
    }
   ],
   "properties": []
@@ -3437,7 +3346,7 @@
    {
     "name": "Potion Effects",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Potion Effects",
      "headers": [
       "d6",
@@ -4393,25 +4302,6 @@
   "properties": []
  },
  {
-  "name": "Engineer's Station",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#engineer's%20station_darkmatter24",
-  "image": null,
-  "value": "3.000 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The ship gains the Engineer role."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Environ Suit",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#environ%20suit_darkmatter24",
@@ -4425,30 +4315,6 @@
   "properties": [
    "AC 12 + Dex (max 2)"
   ]
- },
- {
-  "name": "Escape Pods",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#escape%20pods_darkmatter24",
-  "image": null,
-  "value": "600 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "This ship contains a bay with sufficient Escape Pods for each crew member and passenger. A creature can take the Utilize action to board an Escape Pod and eject from the ship. On a Fighter, the Pilot ejects automatically when the ship drops to 0 Mega Hit Points."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The pod travels far enough to clear any explosion of the ship and then drifts aimlessly. The pod has minimal thrusters—enough to change direction two or three times—and enough air, power, and rations to sustain a passenger for 7 days. Each Escape Pod automatically produces a distress signal that can be detected by any ship with Sensors, though such a signal only travels at the speed of light. An Escape Pod and its passenger can survive reentry on most planets."
-   }
-  ],
-  "properties": []
  },
  {
   "name": "Estoc",
@@ -4630,30 +4496,6 @@
   "properties": [
    "AC 14"
   ]
- },
- {
-  "name": "Fighter Bay",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#fighter%20bay_darkmatter24",
-  "image": null,
-  "value": "850 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The ship gains the ability to dock a Fighter-size ship within it. A creature can take a Bonus Action to board the Fighter and eject it from the ship, entering the Pilot role in that ship. A Fighter can dock into a Fighter Bay as an action."
-   },
-   {
-    "name": "Repeatable",
-    "type": "text",
-    "value": "You can install this system more than once into a ship, depending on the ship's size: Transport (2 bays), Corvette (3 bays), Frigate (3 bays), Cruiser (4 bays), and Capital (4 bays)."
-   }
-  ],
-  "properties": []
  },
  {
   "name": "Figurine of Wondrous Power, Byeshk Worg Pack",
@@ -5062,7 +4904,7 @@
    {
     "name": "Hardlight Spells",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Hardlight Spells",
      "headers": [
       "Spell",
@@ -5554,30 +5396,6 @@
     "name": "",
     "type": "text",
     "value": "A pack contains a maximum of 10 cakes. So long as at least 1 cake remains uneaten and unspoiled, the pack regenerates 1d6 cakes per day. If you take Fire or Acid damage while carrying a pack of Grist Cakes, 1d4 cakes permanently spoil and will no longer regenerate."
-   }
-  ],
-  "properties": []
- },
- {
-  "name": "Gunner Bay",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#gunner%20bay_darkmatter24",
-  "image": null,
-  "value": "500 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The ship gains the Gunner role."
-   },
-   {
-    "name": "Repeatable",
-    "type": "text",
-    "value": "You can install this system more than once into a ship."
    }
   ],
   "properties": []
@@ -6956,35 +6774,6 @@
   "properties": []
  },
  {
-  "name": "Life Support",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#life%20support_darkmatter24",
-  "image": null,
-  "value": "400 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Providing a ship with air, heat, and artificial gravity, Life Support is a ship's most essential system. If Life Support is disabled, a temporary backup will be engaged, providing the ship with air and heat for up to 1 hour, but not restoring artificial gravity."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "For less conventional starships, such as those shaped as galleons, the Life Support extends a bubble of heat and atmosphere around the entire ship."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "An Engineer (or a creature that hacks into the ship computer) can take the Use System action to disable Life Support. Depending on the ship, this may allow them to vent the atmosphere from parts of the ship, disable the artificial gravity (rendering the entire ship a Zero-Gravity environment, if it's in space), or disable the ship's heating and cooling."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Lightning Runner",
   "source": "FoEQuickstone",
   "url": "https://5e.tools/items.html#lightning%20runner_foequickstone",
@@ -7250,25 +7039,6 @@
    "heavy",
    "mastery: overheat"
   ]
- },
- {
-  "name": "Manipulators",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#manipulators_darkmatter24",
-  "image": null,
-  "value": "550 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A ship's Manipulators are collapsible devices that allow the ship to interact with ships and objects, sometimes resembling arms, tentacles, or extensions of the hull. An Engineer can take the Use System action to use the Manipulators on a target within 500 feet of the ship. It can transport an object into the ship's cargo hold, clear space debris, open a hatch on a ship, or push a Mega-sized target smaller than the ship up to 1,000 feet away from the ship."
-   }
-  ],
-  "properties": []
  },
  {
   "name": "Marine's Pack",
@@ -8003,30 +7773,6 @@
   ]
  },
  {
-  "name": "Pilot's Seat",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#pilot's%20seat_darkmatter24",
-  "image": null,
-  "value": "400 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The ship gains the Pilot role."
-   },
-   {
-    "name": "Repeatable",
-    "type": "text",
-    "value": "If the ship is Personal size or larger, you can install this system twice into a ship. If more than one creature is in the Pilot Crew Role, the two Pilots must take different actions during each round of combat."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Plasma Cutter",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#plasma%20cutter_darkmatter24",
@@ -8263,25 +8009,6 @@
     "name": "",
     "type": "text",
     "value": "You attach a muscular, prehensile tail, which you can use to make Unarmed Strikes. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to 1d6 plus your Strength or Dexterity modifier instead of the strike's normal damage. Additionally, you can hold and manipulate objects and weapons with your tail, but you can't make attacks with weapons held by your tail or wield a Shield with your tail and gain its benefits."
-   }
-  ],
-  "properties": []
- },
- {
-  "name": "Probe",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#probe_darkmatter24",
-  "image": null,
-  "value": "450 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A Probe is a remotely-piloted drone deployed from the ship to inspect potentially hazardous targets and environments. The Engineer can take the Use System action to launch, dock, or control the Probe. The Probe has 5 Mega Hit Points, AC 12, a Speed of 1,500 feet, and 360-degree Maneuverability. The Engineer can see and hear through the Probe's sensors and also detect a wide variety of other metrics, such as levels of temperature, gravity, and radiation."
    }
   ],
   "properties": []
@@ -8966,7 +8693,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "d6",
@@ -9137,12 +8864,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Ocoulori Radavitis (called a Roach by many spacers) is an insectlike creature that is consumed to improve the results of a void jump."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "Consuming the ten-legged insectoid known as a Roach creates a wave of euphoria that allows one to see the entire universe at once and perform accurate void jumps. However, long-term roach consumption can be addictive and psychologically harmful. "
+    "value": "Ocoulori Radavitis (called a Roach by many spacers) is an insectlike creature that is consumed to improve the results of a void jump. See the Ships chapter for more details."
    }
   ],
   "properties": []
@@ -9511,35 +9233,6 @@
   "properties": []
  },
  {
-  "name": "Sensors",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#sensors_darkmatter24",
-  "image": null,
-  "value": "400 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A ship's Sensors allow it to perceive ships and obstacles and communicate with other ships out to a range of 1,000 miles. Communications between ships can include audio, video, and holographic transmissions. If Sensors are disabled, the ship has Disadvantage on attack rolls."
-   },
-   {
-    "name": "Deep Scan",
-    "type": "text",
-    "value": "If the ship has an Engineer, they can take the Use System action to perform a deep scan on an object of interest within 1 mile of the ship. The Engineer makes an Intelligence (*Investigation*) check to examine the target. On a success, the Engineer learns of lifesigns within the target, whether the target has functional power, and other details of the GM's choice."
-   },
-   {
-    "name": "Planetary Scan",
-    "type": "text",
-    "value": "If the ship has an Engineer, they can take the Use System action to perform a scan of a planet within 1,000 miles of the ship. The Engineer makes an Intelligence (*Investigation*) check. On a success, you learn if the planet has major environmental hazards, if the planet's surface is inhabited, and other details of the GM's choice."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Shield",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#shield_darkmatter24",
@@ -9570,30 +9263,6 @@
     "name": "",
     "type": "text",
     "value": "This device emits a shimmering field of magical force around you, protecting you from a single blow. You can activate this device as a Bonus Action. The next attack made against you within the next hour has a -10 penalty to hit. Then, the emitter must recharge and can't be used again until the next dawn."
-   }
-  ],
-  "properties": []
- },
- {
-  "name": "Shield Generator",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#shield%20generator_darkmatter24",
-  "image": null,
-  "value": "500 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The Shield Generator projects a directional shield around the ship. By default, the shield is forward-facing, and it can be repositioned by the ship's Engineer as a Bonus Action. If the Shield Generator is disabled, the ship loses all of its Shield Points until it is repaired."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The number of Shield Points provided by a Shield Generator depend on a ship's size, as detailed on the Shield Points table."
    }
   ],
   "properties": []
@@ -9658,7 +9327,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Quality",
@@ -9816,25 +9485,6 @@
    "two-handed",
    "mastery: push"
   ]
- },
- {
-  "name": "Signal Jammer",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#signal%20jammer_darkmatter24",
-  "image": null,
-  "value": "2.500 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The Engineer can take a Use System action to activate a Signal Jammer, attempting to disrupt the Sensors of a ship within 3,000 feet, which makes a Wisdom saving throw (DC 8 plus the Engineer's Intelligence modifier and Proficiency Bonus). On a failed save, the target ship's Sensors are disabled until the start of the Engineer's next turn; the ship has Disadvantage on attack rolls for the duration."
-   }
-  ],
-  "properties": []
  },
  {
   "name": "Singularity Emitter",
@@ -10028,7 +9678,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "When you throw this oblong metal container as a Magic action, it unfolds into a __Mechanical Spider__ (see Monsters chapter for statistics). Your spider acts independently of you, but it always obeys your commands. In combat, it takes its turn immediately before or after your turn each round (your choice). If the spider drops to 0 Hit Points, it can't be repaired. You can collapse the spider back down into its pod as a Magic action. You can only have 3 spiders under your control at any time."
+    "value": "When you throw this oblong metal container as a Magic action, it unfolds into a Mechanical Spider (see Monsters chapter for statistics). Your spider acts independently of you, but it always obeys your commands. In combat, it takes its turn immediately before or after your turn each round (your choice). If the spider drops to 0 Hit Points, it can't be repaired. You can collapse the spider back down into its pod as a Magic action. You can only have 3 spiders under your control at any time."
    }
   ],
   "properties": []
@@ -10150,7 +9800,7 @@
    {
     "name": "Staff of the Coven Spells",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Staff of the Coven Spells",
      "headers": [
       "Spell",
@@ -10872,35 +10522,6 @@
   "properties": []
  },
  {
-  "name": "Teleporters",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#teleporters_darkmatter24",
-  "image": null,
-  "value": "2.000 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The Teleporters power a set of permanent __Teleportation Circle__ designed for short-range transportation. The Engineer can take the Use System action to activate the Teleporters, targeting an unmoving location within 100 miles of the ship, creating a temporary destination circle at that location. This circle lasts for 1 minute or until another destination circle is created."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "Because the resonance of a Dark Matter engine interferes with the teleportation magic, you can't create a destination circle inside a ship with a functioning Dark Matter engine unless both ships coordinate to allow transit."
-   },
-   {
-    "name": "Repeatable",
-    "type": "text",
-    "value": "You can install this system twice into a ship of Frigate size or larger. The second set of __Teleportation Circle__ is constantly active and facilitates quick transportation around the ship."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Terraforming Engine",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#terraforming%20engine_darkmatter24",
@@ -11217,35 +10838,6 @@
     "name": "",
     "type": "text",
     "value": "Retractable spikes in your legs allow you to ignore Difficult Terrain. Additionally, you have Advantage on saving throws you make to avoid the Prone condition."
-   }
-  ],
-  "properties": []
- },
- {
-  "name": "Tractor Beam",
-  "source": "DarkMatter24",
-  "url": "https://5e.tools/items.html#tractor%20beam_darkmatter24",
-  "image": null,
-  "value": "1.000 gp",
-  "weight": null,
-  "type": [
-   "ship system"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A Tractor Beam is a device designed to pull spacecraft and other objects toward the ship. An Engineer can take the Use System action to target a Mega-sized ship, object, or creature within 3,000 feet. A Mega creature or ship makes a Dexterity saving throw (DC 8 plus the Engineer's Strength or Intelligence modifier and Proficiency Bonus). A creature or ship larger than your ship automatically succeeds on this save."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "On a failed save, the target is caught in the Tractor Beam and is pulled up to 1,000 feet closer to the ship. The target's Speed is 0. At the start of each of the Engineer's turns, it can take a Utilize action to pull the target up to 1,000 feet closer to the ship."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target repeats the save at the end of each of its turns, escaping the Tractor Beam on a success."
    }
   ],
   "properties": []

@@ -556,7 +556,7 @@
    {
     "name": "Precipitation",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Precipitation",
      "headers": [
       "Stage",
@@ -595,7 +595,7 @@
    {
     "name": "Temperature",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Temperature",
      "headers": [
       "Stage",
@@ -644,7 +644,7 @@
    {
     "name": "Wind",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Wind",
      "headers": [
       "Stage",
@@ -938,40 +938,6 @@
    },
    {
     "name": "Warlock",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Angel Blood",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "M (Drop of angel blood)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#angel%20blood_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose a target you can see within range. Restore hit points to them equal to 1d4 + your spellcasting modifier. They cannot be angered until the end of your next turn. If they are already angered, then the condition is suppressed for the duration"
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d4 for each spell slot level above 1"
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
     "source": "XPHB"
    }
   ]
@@ -1455,7 +1421,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Slot Level",
@@ -1712,10 +1678,6 @@
    {
     "name": "Bard",
     "source": "XPHB"
-   },
-   {
-    "name": "Investigator",
-    "source": "ValdaInvestigator"
    },
    {
     "name": "Necromancer",
@@ -2360,35 +2322,6 @@
   ]
  },
  {
-  "name": "Aura of Life",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 4",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "Emanation (30 feet)",
-  "components": "V",
-  "duration": "Concentration, up to 10 minutes",
-  "url": "https://5e.tools/spells.html#aura%20of%20life_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can't be reduced. If an ally with zero or less Hit Points starts its turn in the aura, that ally regains hit points equal to 3d10 + your spellcasting modifier."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Aura of Terror",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 5",
@@ -2462,39 +2395,6 @@
    {
     "name": "Wizard",
     "source": "PHB"
-   }
-  ]
- },
- {
-  "name": "Aura of Vitality",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 3",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "Emanation (30 feet)",
-  "components": "V",
-  "duration": "Concentration, up to 1 minute",
-  "url": "https://5e.tools/spells.html#aura%20of%20vitality_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "An aura radiates from you in a 30-foot emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d4 Hit Points to one creature in it. That creature has an extra 15 ft of movement until the start of your next turn."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Paladin",
-    "source": "XPHB"
    }
   ]
  },
@@ -2611,105 +2511,6 @@
   ]
  },
  {
-  "name": "Awaken Familiar",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "10 feet",
-  "components": "V, S",
-  "duration": "Until dispelled",
-  "url": "https://5e.tools/spells.html#awaken%20familiar_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You expend a piece of your life force to awaken a creature as your familiar. Choose a tiny beast you can see within 10 ft that has a CR of zero. It becomes your familiar. At any time you or the familiar can end this spell. While this spell is active, your maximum hit points are reduced by twice this spell's level."
-   },
-   {
-    "name": "Mind",
-    "type": "text",
-    "value": "They are as intelligent as a person and know any languages that you know. Add 5 to their intelligence score. They have telepathy with you while you are within 120ft of them. They are your ally and generally obey your commands."
-   },
-   {
-    "name": "Stats",
-    "type": "text",
-    "value": "Your familiar uses your proficiency bonus instead of its own. Add half the level of this spell to your familiar's AC. Add twice this spell's level to their hit point maximum. Add half of this spell's level rounded up whenever they make a wisdom or dexterity ability check or saving throw."
-   },
-   {
-    "name": "Attacking",
-    "type": "text",
-    "value": "When your familiar makes an attack roll, it uses your spellcasting attack modifier. Whenever they hit with an attack, they deal extra damage equal to this spell's level. The damage type is thunder, lightning, fire, cold or acid. Choose the damage type when you cast this spell. You can change it whenever you level up."
-   },
-   {
-    "name": "Deliver Spell",
-    "type": "text",
-    "value": "When you cast a spell with a range of touch, the familiar can spend their reaction to deliver the spell with its touch. They must be within 120 feet of you to do so."
-   },
-   {
-    "name": "Spell Slot",
-    "type": "text",
-    "value": "Until this spell ends, you cannot use the spell slot you used to cast this spell and you cannot unprepared this spell. If you expend a use of a feature and it has an effect on this spell for its full duration, you can't use that use until this spell ends."
-   },
-   {
-    "name": "Recasting",
-    "type": "text",
-    "value": "If the target already has this spell on it, end it and replace it with this one."
-   },
-   {
-    "name": "Death",
-    "type": "text",
-    "value": "If your familiar dies or otherwise stops being your familiar, this spell ends and you gain a stress. The familiar cannot be dispelled."
-   },
-   {
-    "name": "Higher CR",
-    "type": "text",
-    "value": "If their CR is greater than zero, divide their hit point maximum, any damage they deal, and any hit points they recover from hit dice by the corresponding value below. Do this before apply any bonuses granted by this spell or elsewhere. Additionally, any time this spell refers to spell level, reduce it by the corresponding level."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "CR ⅛:  5, 1 level"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "CR ¼:  6, 2 levels"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "CR ½:  7, 3 levels"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "CR 1: 13, 4 levels"
-   },
-   {
-    "name": "Size",
-    "type": "text",
-    "value": "If you choose a creature that is not tiny, subtract 1 from their AC for each size greater or smaller than tiny."
-   },
-   {
-    "name": "At Higher Levels",
-    "type": "text",
-    "value": "Special"
-   }
-  ],
-  "classes": [
-   {
-    "name": "Ranger",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Awaken Plant",
   "source": "llspell",
   "level": "Level 2",
@@ -2754,7 +2555,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Slot Level",
@@ -2818,100 +2619,6 @@
    },
    {
     "name": "Paladin",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Awaken Steed",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 2",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "10 feet",
-  "components": "V, S",
-  "duration": "1 day",
-  "url": "https://5e.tools/spells.html#awaken%20steed_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You expend a piece of your life force to awaken a creature as your steed. Choose a large beast you can see within 10 ft that has a CR of zero. It becomes your steed. At any time you or the steed can end this spell. While this spell is active, your maximum hit points are reduced by twice this spell's level."
-   },
-   {
-    "name": "Mind",
-    "type": "text",
-    "value": "They are as intelligent as a person and know any languages that you know. Add 5 to their intelligence score. They have telepathy with you while you are within 120ft of them. They are your ally and generally obey your commands."
-   },
-   {
-    "name": "Stats",
-    "type": "text",
-    "value": "Your Steed uses your proficiency bonus instead of its own. Add half the level of this spell to your Steed's AC. Add quadruple this spell's level to their hit point maximum. Add half of this spell's level rounded up whenever they make a strength or constitution ability check or saving throw."
-   },
-   {
-    "name": "Attacking",
-    "type": "text",
-    "value": "When your Steed makes an attack roll, it uses half of your spellcasting attack modifier. Whenever they hit with an attack, they deal extra damage equal to twice this spell's level. The damage type is thunder, lightning, fire, cold or acid. Choose the damage type when you cast this spell. You can change it whenever you level up."
-   },
-   {
-    "name": "Spell Slot",
-    "type": "text",
-    "value": "Until this spell ends, you cannot use the spell slot you used to cast this spell and you cannot unprepared this spell. If you expend a use of a feature that has an effect on the spell for its full duration, you can't expend that use until the spell ends."
-   },
-   {
-    "name": "Recasting",
-    "type": "text",
-    "value": "If the target already has this spell on it, end it and replace it with this one."
-   },
-   {
-    "name": "Death",
-    "type": "text",
-    "value": "If your steed dies or otherwise stops being your steed, this spell ends and you gain a stress. The steed cannot be dispelled."
-   },
-   {
-    "name": "Higher CR",
-    "type": "text",
-    "value": "If their CR is greater than zero, divide their hit point maximum, any damage they deal, and any hit points they recover from hit dice by the corresponding value below. Do this before apply any bonuses granted by this spell or elsewhere. Additionally, any time this spell refers to spell level, reduce it by the corresponding level."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "CR ⅛:  5, 1 level"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "CR ¼:  6, 2 levels"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "CR ½:  7, 3 levels"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "CR 1: 13, 4 levels"
-   },
-   {
-    "name": "Size",
-    "type": "text",
-    "value": "If you choose a creature that is not large, subtract 1 from their AC for each size greater or smaller than large."
-   },
-   {
-    "name": "At Higher Levels",
-    "type": "text",
-    "value": "Special"
-   }
-  ],
-  "classes": [
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   },
-   {
-    "name": "Ranger",
     "source": "XPHB"
    }
   ]
@@ -3223,31 +2930,6 @@
    },
    {
     "name": "Warlock",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Banishing Smite",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 5",
-  "school": "Conjuration",
-  "casting_time": "Bonus action, which you take immediately after hitting a creature with a weapon attack",
-  "range": "Self",
-  "components": "V",
-  "duration": "Concentration, up to 1 minute",
-  "url": "https://5e.tools/spells.html#banishing%20smite_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target hit by the attack roll takes an extra **5d10** Force damage from the attack. If the attack reduces the target to 50 Hit Points or fewer, the target must succeed on a Charisma saving throw. They repeat this saving throw at the start of each of their turns. If they fail three times, they are transported to a harmless demiplane for the duration and they stop making the saving throws. While there, the target has the Incapacitated condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. If they succeed three times the spell ends. Use d8s instead if the attack is ranged."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Paladin",
     "source": "XPHB"
    }
   ]
@@ -3816,12 +3498,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "You blast the mind of a creature that you can see within range. The target makes Intelligence saving throw now and at the end of each of its turns."
+    "value": "You blast the mind of a creature that you can see within range. The target makes an Intelligence saving throw."
    },
    {
     "name": "",
     "type": "text",
-    "value": "   If the target succeeds three times the spell ends. If they failed three times, they take **10d12** Psychic damage and can't cast spells or take the Magic action. At the end of every 30 days, the target starts making the saves again, ending the effect on three successes. The effect can also be ended by the __Greater Restoration__, __Heal__, or __Wish__ spell."
+    "value": "On a failed save, the target takes **10d12** Psychic damage and can't cast spells or take the Magic action. At the end of every 30 days, the target repeats the save, ending the effect on a success. The effect can also be ended by the __Greater Restoration__, __Heal__, or __Wish__ spell."
    },
    {
     "name": "",
@@ -4041,7 +3723,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "d4",
@@ -4327,48 +4009,6 @@
    {
     "name": "Warlock",
     "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Blade",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "1 reaction, which you take before a creature you can see within 60 ft hits or misses an attack roll that has disadvantage",
-  "range": "60 feet",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#blade_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Add 1 to the attack roll. The bonus is not applied if the attack roll is already being increased by a spell. The target can forgo such increases in order to benefit from this spell."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the bonus by 1 for each additional spell level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Warlock",
-    "source": "PHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "PHB"
    },
    {
     "name": "Wizard",
@@ -4856,36 +4496,6 @@
   ]
  },
  {
-  "name": "Blinding Smite",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 3",
-  "school": "Evocation",
-  "casting_time": "Bonus action, which you take immediately after hitting a creature with a weapon attack",
-  "range": "Self",
-  "components": "V",
-  "duration": "1 minute",
-  "url": "https://5e.tools/spells.html#blinding%20smite_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target hit by the strike takes an extra **3d8** Radiant damage from the attack, and the target has the Blinded condition until the spell ends. At the end of each of its turns, the Blinded target makes a Constitution saving throw, ending the spell on itself on a success. Use d6s instead if the attack is ranged."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The extra damage increases by **1d8** for each spell slot level above 3. Use d6s instead if the attack is ranged."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Blinding Smite (Alternate)",
   "source": "llspell",
   "level": "Level 3",
@@ -5070,40 +4680,6 @@
    },
    {
     "name": "Sorcerer",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Blood Curse",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Necromancy",
-  "casting_time": "1 reaction, which you can take when a target you can see within range forces a creature you can touch to make a saving throw",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "1 day",
-  "url": "https://5e.tools/spells.html#blood%20curse_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "If the creature you touched has forced the triggering creature or its allies to make a saving throw within the past 10 minutes, this spell has no effect. Once within the next day you can deal **1d8** necrotic damage to the triggering creature."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The damage increases by 1d8 for each additional level. "
-   }
-  ],
-  "classes": [
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
     "source": "XPHB"
    }
   ]
@@ -5765,12 +5341,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes thunder damage equal to your proficiency bonus, and the spell ends. You can forgo this additional damage. If you do not, add 1 less mastery to this attack."
+    "value": "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes **1d8** thunder damage, and the spell ends."
    },
    {
-    "name": "Cantrip Upgrade",
+    "name": "At Higher Levels",
     "type": "text",
-    "value": "When you reach 5th level, the melee attack deals extra damage of the weapon's damage die on a hit. This increase by 1 die again at 11th level and 17th level."
+    "value": "When you reach 5th level, the melee attack deals an extra **1d8** thunder damage to the target on a hit, and the damage the target takes for moving increases to **2d8**. Both damage rolls increase by 1d8 at 11th level (**2d8** and **3d8**) and again at 17th level (**3d8** and **4d8**)."
    }
   ],
   "classes": [
@@ -6010,78 +5586,6 @@
   "classes": [
    {
     "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Briar Cast",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 6",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "30 feet",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#briar%20cast_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A creature you can see within range regains 50 hit points. The target can deal piercing damage to any creature that leaves their commanded space. The total damage they can deal in this way is equal to 15."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The damage increases by 3 and healing increases by 7 for each additional spell level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Briar Stitch",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "30 feet",
-  "components": "V, S, M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#briar%20stitch_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A creature you can see within range regains a number of Hit Points equal to 1d12. Once before the end of your next turn when a creature would leave the target's commanded space the target can deal piercing damage to them equal to 1d4 plus your spellcasting modifier."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d12 and the damage increases by 1d4 for each spell slot level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Artificer",
-    "source": "TCE"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Ranger",
     "source": "XPHB"
    }
   ]
@@ -8088,7 +7592,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "d100",
@@ -8419,7 +7923,7 @@
    {
     "name": "Command Objects Statistics",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Command Objects Statistics",
      "headers": [
       "Size",
@@ -8570,55 +8074,6 @@
    }
   ],
   "classes": []
- },
- {
-  "name": "Concealed Shot",
-  "source": "ValdaSpire24",
-  "level": "Cantrip",
-  "school": "Illusion",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "S, M (a Ranged weapon)",
-  "duration": "1 minute",
-  "url": "https://5e.tools/spells.html#concealed%20shot_valdaspire24",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A Ranged weapon you touch is made supernaturally subtle. For the duration, when you make a ranged attack using the weapon, the weapon or ammunition you're using becomes invisible while in flight and the weapon becomes silent. If the weapon produces smoke or light, the spell suppresses these effects. The weapon or projectile you're using becomes visible again after the attack hits or misses. If you are hidden and the target is 80 feet or further from you, the attack doesn't reveal your location."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Necromancer",
-    "source": "ValdaNecromancer"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warmage",
-    "source": "ValdaWarmage"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
  },
  {
   "name": "Cone of Dimness",
@@ -8814,7 +8269,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Die Roll",
@@ -9274,7 +8729,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Spell Slot",
@@ -10415,51 +9870,6 @@
   ]
  },
  {
-  "name": "Create Lifelines",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 4",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S, M (undefined)",
-  "duration": "1 hour",
-  "url": "https://5e.tools/spells.html#create%20lifelines_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You choose up to 7 willing targets, and a point that is within 20 ft of those targets, that you can see within range. If the point is on an object, it moves with the object. When the target leaves a 20 ft radius around the point, they are teleported to the unoccupied space that is nearest to the chosen point. As a reaction they can prevent themself from teleporting in this way. If the point is on an object that is connected to a structure, you can choose for the radius to be around the structure instead when you cast this spell."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "TCE"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "PHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "PHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Create Monstrosity",
   "source": "llspell",
   "level": "Level 6",
@@ -10494,7 +9904,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Slot Level",
@@ -10573,7 +9983,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Slot",
@@ -10822,7 +10232,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Slot Level",
@@ -11153,11 +10563,157 @@
     "source": "ValdaWarmage"
    },
    {
-    "name": "Witch",
-    "source": "ValdaWitch"
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Cure Arm Wounds",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 1",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "Touch",
+  "components": "V, S",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#cure%20arm%20wounds_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature you touch regains a number of Hit Points equal to 2d4. Once within the next minute before they hit or miss with a weapon attack they can choose to deal extra damage. On a hit, they deal extra damage of the weapon's damage type equal to the amount they were healed plus your spellcasting ability modifier."
    },
    {
-    "name": "Wizard",
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "The healing increases by **2d4** for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "TCE"
+   },
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Cure Head Wounds",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 1",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "Touch",
+  "components": "V, S",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#cure%20head%20wounds_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature you touch regains a number of Hit Points equal to 2d4. Once within the next minute when they take damage they can reduce the damage by an amount equal to the amount they were healed plus your spellcasting ability modifier."
+   },
+   {
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "The healing increases by **2d4** for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "TCE"
+   },
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Cure Leg Wounds",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 1",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "Touch",
+  "components": "V, S",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#cure%20leg%20wounds_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature you touch regains a number of Hit Points equal to 2d4. Once within the next minute they can increase their movement speed by an amount equal to the amount they were healed plus your spellcasting ability modifier until the start of their next turn."
+   },
+   {
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "The healing increases by **2d4** for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "TCE"
+   },
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
     "source": "XPHB"
    }
   ]
@@ -12397,44 +11953,6 @@
   ]
  },
  {
-  "name": "Deathmarch",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "90 feet",
-  "components": "V, S, M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#deathmarch_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You grant temporary hit points equal to 1d8 plus your spellcasting modifier to a target you can see within 90 ft. They have immunity to the incapacitated, paralyzed, stunned and unconscious conditions until the end of their next round. Reduce their temporary hit points by the amount gained at the end of their next turn."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the temporary hit points by 1d8 for each additional level. "
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Decomposition",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 2",
@@ -12543,40 +12061,6 @@
    },
    {
     "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Deepen Shadow",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 6",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#deepen%20shadow_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose three creatures that you can see within range. Darkness pours into their shadows, restoring hit points to each target. You can heal up to a total of 35 hit points in this way. Once within the next minute when one of the targets is missed by an attack you can deal damage to the attacker equal to 35 minus the total amount healed."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 5 for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
     "source": "XPHB"
    }
   ]
@@ -12853,40 +12337,6 @@
    },
    {
     "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Demon Blood",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "M (Drop of demon blood)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#demon%20blood_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose a target you can see within 60 ft. Restore hit points to them equal to 1d4 + your spellcasting modifier. They cannot be frightened until the end of your next turn. If they are already frightened, then the condition is suppressed for the duration."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d4 for each spell slot level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
     "source": "XPHB"
    }
   ]
@@ -13353,7 +12803,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Size",
@@ -13536,97 +12986,6 @@
     "name": "Ranger",
     "source": "XPHB"
    },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Disguise Object",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Illusion",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "1 hour",
-  "url": "https://5e.tools/spells.html#disguise%20object_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You make an object look different until the spell ends. The object can seem up to a fifth larger or smaller and heavier or lighter. The disguise must have the same basic shape as the original object. Otherwise, the extent of the illusion is up to you."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to make the object larger, objects can pass through the additional mass, and anyone who touches it would see their hand pass through."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "To discern the disguised, a creature must take the Study action to look for illusions and succeed on an Intelligence (Investigation) check against your spell save DC."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Artificer",
-    "source": "TCE"
-   },
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Disintegrate",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 6",
-  "school": "Transmutation",
-  "casting_time": "Action",
-  "range": "60 feet",
-  "components": "V, S, M (a lodestone and dust)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#disintegrate_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You launch a green ray at a target you can see within range. The target can be a creature, a nonmagical object, or a creation of magical force, such as the wall created by __Wall of Force__."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "A creature targeted by this spell makes a Dexterity saving throw. On a failed save, the target takes **10d6 + 40** Force damage. If this damage reduces it to 0 Hit Points, it rolls a death saving throw. On a failure, it and everything nonmagical it is wearing and carrying are disintegrated into gray dust. The target can be revived only by a __True Resurrection__ or a __Wish__ spell."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If such a target is Huge or larger, this spell disintegrates a 10-foot-Cube portion of it."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The damage increases by **3d6** for each spell slot level above 6."
-   }
-  ],
-  "classes": [
    {
     "name": "Sorcerer",
     "source": "XPHB"
@@ -14097,41 +13456,6 @@
   ]
  },
  {
-  "name": "Divine Blade",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Cantrip",
-  "school": "Evocation",
-  "casting_time": "Action",
-  "range": "Self",
-  "components": "S, M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#divine%20blade_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "When you learn this cantrip choose the rogue, monk or paladin class. Then, choose a weapon mastery from that class's mastery list. You can learn this cantrip multiple times. If you do, instead of learning this cantrip again choose another mastery."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You brandish the weapon used in the spell's casting and make a melee attack with it. On a hit, the target suffers the weapon attack's normal effects. You can use any of the chosen weapon masteries on this attack."
-   },
-   {
-    "name": "Cantrip Upgrade",
-    "type": "text",
-    "value": "At 5th level, the attack deals extra damage equal to the weapon's damage die of the weapons damage type. This increases by one weapon damage die at 11th level and 17th level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Divine Favor (Alternate)",
   "source": "llspell",
   "level": "Level 1",
@@ -14282,36 +13606,6 @@
     "name": "Cleric",
     "source": "XPHB"
    },
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Divine Smite",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Evocation",
-  "casting_time": "Bonus action, which you take immediately after hitting a target with a weapon attack",
-  "range": "Self",
-  "components": "V",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#divine%20smite_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target takes an extra **2d8** Radiant damage from the attack. The damage increases by **1d8** if the target is a Fiend or an Undead. Use d6s instead of the attack is ranged."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The damage increases by **1d8** for each spell slot level above 1. Use d6s instead of the attack is ranged."
-   }
-  ],
-  "classes": [
    {
     "name": "Paladin",
     "source": "XPHB"
@@ -14513,6 +13807,44 @@
    {
     "name": "Druid",
     "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Downtick",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "casting_time": "1 reaction, which you take when a creature you can see within 90 ft would succeed on an attack roll, ability check or saving throw",
+  "range": "90 feet",
+  "components": "V",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#downtick_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You tick back time a single second, forcing the target to make a wisdom saving throw. If they fail, they roll another d20. Compare the number on the die of both rolls to 3. If the new number's distance from 3 is greater than the old number's distance from 3, it replaces it. "
+   },
+   {
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "When you cast this spell at a higher level, add 1 to the number your comparing to for each additional slot level."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "PHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "PHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "PHB"
    }
   ]
  },
@@ -15436,12 +14768,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes **1d4** Force damage. At the end of their next turn, they take **1d6** force damage."
+    "value": "You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes **1d10** Force damage and until the end of your next turn it treats willingly moving towards you as difficult terrain. This only applies while they can see you and they are moving towards every creature that inflicted this effect (or equivalent) onto them. Other effects treat this effect the same way they treat the angered condition."
    },
    {
-    "name": "Cantrip Upgrade",
+    "name": "At Higher Levels",
     "type": "text",
-    "value": "The initial damage increases by 1d4 and the delayed damage increases by 1d6 when you reach levels 5 (2d4) (2d6), 11 (3d4) (3d6), and 17 (4d4) (4d6)."
+    "value": "The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)."
    }
   ],
   "classes": [
@@ -15633,48 +14965,6 @@
    {
     "name": "Sorcerer",
     "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Electromagical Pulse",
-  "source": "DarkMatter24",
-  "level": "Level 4",
-  "school": "Evocation",
-  "casting_time": "Action",
-  "range": "Self",
-  "components": "V, S, M (a bit of frayed wire)",
-  "duration": "Concentration, up to 1 minute",
-  "url": "https://5e.tools/spells.html#electromagical%20pulse_darkmatter24",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "With a clap of your hands, you unleash a wave of energy in a 30-foot Emanation originating from you. Magical Technology is disabled for the duration. A creature can take the Utilize action to reboot a piece of Magical Technology within its reach, restoring it to functionality."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "Each Construct within the Emanation must succeed on a Constitution saving throw or have the Incapacitated condition and its Speed is 0 for the duration. An Incapacitated Construct repeats the saving throw at the end of each of its turns, ending the effect on itself on a success."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Witch",
-    "source": "ValdaWitch"
    },
    {
     "name": "Wizard",
@@ -17458,47 +16748,6 @@
   ]
  },
  {
-  "name": "Familiar Eyes",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Divination",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "S",
-  "duration": "1 hour",
-  "url": "https://5e.tools/spells.html#familiar%20eyes_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a target to link their senses to your own for an hour. As a Bonus Action, you use the target's sight and hearing instead of your own. While doing so, their eyes look like yours and your own eyes look blank. You can use your bonus action again to switch back to your own sight and hearing. You benefit from any special senses the target has while you're using their sight and hearing in this way. "
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Familiar Pocket",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 1",
@@ -18136,34 +17385,39 @@
   "casting_time": "Action",
   "range": "10 feet",
   "components": "V, S",
-  "duration": "1 hour",
+  "duration": "1 day",
   "url": "https://5e.tools/spells.html#find%20familiar_galdeveertanksandflanks",
   "image": null,
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "You summon an otherworldly spirit to act as your familiar. It manifests as a little animal in an unoccupied space you can see within range. This creature uses the __Otherworldly Familiar__ stat block."
+    "value": "You gain the service of a familiar, an otherworldly spirit which manifests as a little animal in an unoccupied space you can see within range. This creature uses the __Otherworldly Familiar__ stat block. If you already have a familiar from this spell, it is replaced by the new one."
    },
    {
     "name": "",
     "type": "text",
-    "value": "Choose the familiar's creature type when you prepare this spell: Celestial, Fey, or Fiend. Choose what type of animal the familiar is when you summon it: Bird, Fish, Quadraped, Insect. The familiar resembles a Tiny animal of your choice—such as an owl, a cat, or a frog. Both choices determine certain traits in the stat block. The familiar is your ally and obeys all of your commands."
+    "value": "When you prepare the spell, choose the familiar's creature type: Celestial, Fey, or Fiend. It can choose to also be treated as a beast by specific effects. Whenever you cast the spell, choose the familiar's environment: Air, Land, or Water. The familiar resembles a Tiny animal of your choice—such as an owl, a cat, or a frog—that is native to the chosen environment. Both choices—creature type and environment—determine certain traits in the stat block. The familiar is your ally and obeys all of your commands."
    },
    {
     "name": "Disappearance of the familiar",
     "type": "text",
-    "value": "The familiar disappears if it drops to 0 hit points or the spell ends. When it does, it leaves behind anything it was wearing or carrying. When you cast this spell, you decide whether you summon a familiar that has previously disappeared or a different one."
+    "value": "The familiar disappears if it drops to 0 hit points or if you die. When it does, it leaves behind anything it was wearing or carrying. If you cast this spell again, you decide whether you summon the familiar that disappeared or a different one."
+   },
+   {
+    "name": "Remote Scouting",
+    "type": "text",
+    "value": "As a Bonus Action, you can see through the familiar's eyes and hear what it hears while it is within 120 ft of you until the start of your next turn, gaining the benefits of any special senses it has."
    },
    {
     "name": "At Higher Levels",
     "type": "text",
-    "value": "Special"
+    "value": "Use the spell slot's level for the spell's level in the stat block."
    }
   ],
   "classes": [
    {
-    "name": "Druid",
+    "name": "Ranger",
     "source": "XPHB"
    },
    {
@@ -18243,43 +17497,43 @@
  {
   "name": "Find Steed",
   "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
+  "level": "Level 2",
   "school": "Conjuration",
   "casting_time": "Action",
   "range": "10 feet",
   "components": "V, S",
-  "duration": "1 hour",
+  "duration": "1 day",
   "url": "https://5e.tools/spells.html#find%20steed_galdeveertanksandflanks",
   "image": null,
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "You summon an otherworldly spirit to act as your Steed. It manifests as a large animal in an unoccupied space you can see within range. This creature uses the __Otherworldly Steed__ stat block."
+    "value": "You summon an otherworldly being that appears as a loyal steed in an unoccupied space you can see within range. The steed resembles a Large, rideable animal of your choice, such as a horse, a camel, a dire wolf, or an elk. If you already have a steed from this spell, it is replaced by the new one."
    },
    {
     "name": "",
     "type": "text",
-    "value": "Choose the Steed's creature type when you prepare this spell: Celestial, Fey, or Fiend. Choose the steed's environment when you summon it: Air, Water, Land. The Steed resembles a large animal of your choice—such as an horse, a shark, or a hippogriff—that is native to the chosen environment. Both choices determine certain traits in the stat block. The Steed is your ally and obeys all of your commands."
+    "value": "When you prepare this spell, choose the steed's creature type—Celestial, Fey, or Fiend. It can choose to also be treated as a beast by specific effects. This creature uses the __Otherworldly Steed__ stat block. When you cast the spell, choose the steed's mythology—Idyllic, Biblical, or Exalted—which determines certain traits in the stat block. The steed is your ally and obeys all of your commands."
    },
    {
     "name": "Disappearance of the Steed",
     "type": "text",
-    "value": "The steed disappears if it drops to 0 hit points or the spell ends. When it does, it leaves behind anything it was wearing or carrying. When you cast this spell, you decide whether you summon a steed that has previously disappeared or a different one."
+    "value": "The steed disappears if it drops to 0 Hit Points or if you die. When it disappears, it leaves behind anything it was wearing or carrying. If you cast this spell again, you decide whether you summon the steed that disappeared or a different one."
    },
    {
     "name": "Using a Higher-Level Spell Slot",
     "type": "text",
-    "value": "Special."
+    "value": "Use the spell slot's level for the spell's level in the stat block."
    }
   ],
   "classes": [
    {
-    "name": "Cleric",
+    "name": "Paladin",
     "source": "XPHB"
    },
    {
-    "name": "Paladin",
+    "name": "Ranger",
     "source": "XPHB"
    }
   ]
@@ -19151,10 +18405,6 @@
    {
     "name": "Necromancer",
     "source": "ValdaNecromancer"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
    },
    {
     "name": "Warlock",
@@ -20451,44 +19701,6 @@
   ]
  },
  {
-  "name": "Freeze Wound",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#freeze%20wound_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a creature and grant them 1d12 hit points. Until the end of your next turn whenever a creature moves in their commanded space they can reduce their movement. They can remove no more than 10 ft of movement in this way."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d12 and the total movement they can reduce increases by 10 ft for each additional spell level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Artificer",
-    "source": "TCE"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Ranger",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Freezing Fog",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 6",
@@ -20811,7 +20023,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Roll Result",
@@ -22431,90 +21643,6 @@
   ]
  },
  {
-  "name": "Greater Recall Scout",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 3",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "5 feet",
-  "components": "V, S, M (undefined)",
-  "duration": "1 hour",
-  "url": "https://5e.tools/spells.html#greater%20recall%20scout_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You anchor a willing creature you can see within range to you. When the target takes the magic or attack action, the spell ends on them. When the target takes damage, the spell ends on them unless they are unwilling. When the spell ends on a target, they teleport to the unoccupied location nearest to you unless they are unwilling. If you take damage, the spell ends."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "When you cast this spell at higher levels, you can choose an additional target for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Greater Recall Thief",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 3",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S, M (undefined)",
-  "duration": "10 minutes",
-  "url": "https://5e.tools/spells.html#greater%20recall%20thief_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a willing target, anchoring them to their current location. When the target takes damage, you make a saving throw against the damage as if you are *Concentrating* on this spell. On a failure, the spell ends on the target. When the spell ends on a target, they teleport to the location they were at when the spell was casted as long as it is unoccupied and within 300ft. The teleportation fails if the location is in a different plane of existence."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "When you cast this spell at higher levels, you can choose an additional target for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "TCE"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Greater Restoration",
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 5",
@@ -22579,12 +21707,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "You brandish the weapon used in the spell's casting and make an attack with it against one creature. On a hit, the target suffers the weapon attack's normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier. If you do target a second creature, add 1 less mastery to this attack."
+    "value": "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier."
    },
    {
-    "name": "Cantrip Upgrade",
+    "name": "At Higher Levels",
     "type": "text",
-    "value": "This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals extra damage equal to the weapon's damage die of the weapon's damage type, and the fire damage to the second creature increases to **1d8** + your spellcasting ability modifier. Both damage rolls recieve the same increase again at 11th level and 17th level."
+    "value": "This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra **1d8** fire damage to the target on a hit, and the fire damage to the second creature increases to **1d8** + your spellcasting ability modifier. Both damage rolls increase by **1d8** at 11th level (**2d8** and **2d8**) and 17th level (**3d8** and **3d8**)."
    }
   ],
   "classes": [
@@ -22662,7 +21790,7 @@
   "source": "GaldeveerTanksandFlanks",
   "level": "Cantrip",
   "school": "Divination",
-  "casting_time": "1 reaction, which you take when a willing creature within 10 feet makes an ability check",
+  "casting_time": "1 reaction, which you take when a willing creature within 10 feet would fail an ability check",
   "range": "10 feet",
   "components": "V, S",
   "duration": "Instantaneous",
@@ -22672,12 +21800,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "Add a d4. Do not add it if a positive bonus has already been applied to the roll by a spell. You can forgo such bonuses to benefit from this spell. You can cast this once and regain this ability after a short rest."
+    "value": "Add a d4, potentially turning it into a success. Do not add it if a positive bonus has already been applied to the roll by a spell. You can cast this once and regain all uses after a short rest."
    },
    {
-    "name": "Cantrip Upgrade",
+    "name": "At Higher Levels",
     "type": "text",
-    "value": "The number of d4s increases by 1 at 5th level (2d4), 11th level (3d4), and 17th level (4d4). Only use the highest roll."
+    "value": "The number of uses increases by 1 at 5th level (2 uses), 11th level (3 uses), and 17th level (4 uses). "
    }
   ],
   "classes": [
@@ -22734,40 +21862,6 @@
    {
     "name": "Wizard",
     "source": "PHB"
-   }
-  ]
- },
- {
-  "name": "Guilt Curse",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Necromancy",
-  "casting_time": "1 reaction, which you can take when a target harms a creature you can touch",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "1 day",
-  "url": "https://5e.tools/spells.html#guilt%20curse_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "If the creature you touched has harmed the triggering creature or its allies within the past hour, this spell has no effect. Once within the next day you can reduce the triggering creature's movement speed by 5 ft. Once you do, at the start of each of their turns they can make a wisdom saving throw, ending the effect on a success."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "When you cast this spell at a higher level you can reduced their movement speed by an additional 5 ft for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
    }
   ]
  },
@@ -24671,40 +23765,6 @@
   ]
  },
  {
-  "name": "Holy Phrase",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 6",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#holy%20phrase_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose a creature that you can see within range. Positive energy washes through the target, restoring up to 35 Hit Points. Once within the next minute before the target hits or misses with a weapon attack they can imbue their weapon with holy light. If they hit, they deal damage equal to 35 minus the amount healed. They emanate 10 ft of bright light and 10 ft of dim light until the spell ends."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 5 for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Holy Star",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 7",
@@ -24808,40 +23868,6 @@
    },
    {
     "name": "Paladin",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Holy Word",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#holy%20word_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A creature you can see within 60 ft regains a number of Hit Points equal to 1d4. Once before the end of your next turn before they hit or miss with a weapon attack they can imbue their weapon with holy light. If they hit, they deal extra radiant damage equal to 1d6 plus your spellcasting modifier."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by **1d4** and damage increases by 1d6 for each additional spell level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
     "source": "XPHB"
    }
   ]
@@ -27019,12 +26045,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "You touch a willing creature. Once before the start of your next turn they can move up to 10 ft during a jump without spending movement. That movement does not count towards your max jump distance."
+    "value": "You touch a willing creature. Until the start of your next turn, their jump distance increases by 10 ft. Additionally, once within the duration they can move up to 10 ft during a jump without spending movement."
    },
    {
-    "name": "Using a Higher-Level Spell Slot",
+    "name": "At Higher Levels",
     "type": "text",
-    "value": "When you cast this spell using a spell slot of level 2 or higher, the distance they can move without spending movement increases by 10ft for each slot level above 1st."
+    "value": "When you cast this spell using a spell slot of level 2 or higher, their jump distance and the distance they can move without spending movement increases by 10ft for each slot level above 1st."
    }
   ],
   "classes": [
@@ -27235,7 +26261,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "CR",
@@ -27449,7 +26475,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "d100",
@@ -27721,6 +26747,44 @@
   "classes": [
    {
     "name": "Cleric",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Lifeline",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "Touch",
+  "components": "S, M (undefined)",
+  "duration": "10 minutes",
+  "url": "https://5e.tools/spells.html#lifeline_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You touch a willing creature. If it takes damage or you spend your action to activate the spell while the target is within 20 ft of you it teleports to an unoccupied space within your reach. If no such place exists, it teleports to the nearest unoccupied space. After it teleports back, the spell ends."
+   },
+   {
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "When you cast this spell at higher levels increase the range the target can be teleported back from by 20 ft for each additional level."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "ERLW"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -28249,47 +27313,6 @@
   ]
  },
  {
-  "name": "Link Thoughts",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Divination",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "S",
-  "duration": "10 minutes",
-  "url": "https://5e.tools/spells.html#link%20thoughts_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a creature to establish a telepathy with them. You have telepathy with the target for the next ten minutes while they are within 120 ft of you."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Ranger",
-    "source": "XPHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Lion's Charge",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 2",
@@ -28533,7 +27556,7 @@
    {
     "name": "Locate Creature",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Locate Creature",
      "headers": [
       "Slot Level",
@@ -28627,44 +27650,6 @@
   ]
  },
  {
-  "name": "Lost Trinket",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Conjuration",
-  "casting_time": "1 reaction, which you take when a creature you can see within range drops an object.",
-  "range": "10 feet",
-  "components": "M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#lost%20trinket_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Teleport the object to a location you can see within 10 ft of it."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "When you cast this spell at higher levels, add 10 to the distance you can teleport it and to the range of this spell for each additional spell level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Artificer",
-    "source": "TCE"
-   },
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Love's Lament",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 3",
@@ -28753,40 +27738,6 @@
    },
    {
     "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Luck Curse",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Necromancy",
-  "casting_time": "1 reaction, which you can take when a target breaks a promise to a creature you can touch",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "1 round",
-  "url": "https://5e.tools/spells.html#luck%20curse_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "If the creature you touched or one of its allies have broken a promise to the triggering creature or its allies within the last hour, the spell has no effect. Once within the next day you can subtract 1 from an ability check the triggering creature makes before it succeeds or fails."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The number of times you can reduce ability checks increases by 1 for each additional level. You can reduce the same ability check multiple times."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
     "source": "XPHB"
    }
   ]
@@ -28980,40 +27931,6 @@
    },
    {
     "name": "Warlock",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Mage Armor",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S, M (a piece of cured leather)",
-  "duration": "Concentration, up to 8 hours",
-  "url": "https://5e.tools/spells.html#mage%20armor_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 10 plus its Dexterity modifier plus this spell's level. The spell ends early if the target dons armor."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Special"
-   }
-  ],
-  "classes": [
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -30103,6 +29020,120 @@
   ]
  },
  {
+  "name": "Mass Cure Arm Wounds",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 5",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#mass%20cure%20arm%20wounds_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A wave of healing energy washes out from a point you can see within range. Choose up to six creatures in a 30-foot-radius Sphere centered on that point. Each target regains Hit Points equal to 5d4. Once within the next minute before they hit or miss with a weapon attack they can choose to deal extra damage. On a hit, they deal extra damage of the weapon's damage type equal to the amount they were healed plus your spellcasting ability modifier."
+   },
+   {
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "The healing increases by **1d4** for each spell slot level above 5."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Mass Cure Head Wounds",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 5",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#mass%20cure%20head%20wounds_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A wave of healing energy washes out from a point you can see within range. Choose up to six creatures in a 30-foot-radius Sphere centered on that point. Each target regains Hit Points equal to 5d4. Once within the next minute when they take damage they can reduce the damage by an amount equal to the amount they were healed plus your spellcasting ability modifier."
+   },
+   {
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "The healing increases by **1d4** for each spell slot level above 5."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Mass Cure Leg Wounds",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 5",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#mass%20cure%20leg%20wounds_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A wave of healing energy washes out from a point you can see within range. Choose up to six creatures in a 30-foot-radius Sphere centered on that point. Each target regains Hit Points equal to 5d4. Once within the next minute they can increase their movement speed by an amount equal to the amount they were healed plus your spellcasting ability modifier until the start of their next turn."
+   },
+   {
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "The healing increases by **1d4** for each spell slot level above 5."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Mass Freeze",
   "source": "SpellsThatDontSuck",
   "level": "Level 5",
@@ -30134,116 +29165,6 @@
    {
     "name": "Wizard",
     "source": "PHB"
-   }
-  ]
- },
- {
-  "name": "Mass Freeze Wounds",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 5",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "60 feet",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#mass%20freeze%20wounds_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A wave of freezing energy washes out from a point you can see within range. Choose up to six creatures in a 30-foot-radius Sphere centered on that point. Each target regains Hit Points equal to 5d6 plus your spellcasting ability modifier. Force each creature within the area of effect that was not chosen to make a constitution saving throw. On a failure, their movement is reduced by 15 ft until the end of their next round."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d6 and the amount their movement is reduced increases by 5 ft for each additional level. "
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Mass Petrify Wounds",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 5",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "60 feet",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#mass%20petrify%20wounds_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose up to six creatures in a 30-foot-radius Sphere centered on a point within range. Each target regains Hit Points equal to 5d6 plus your spellcasting ability modifier. Until the end of your next turn whenever a creature would be hit by an attack roll a target that can touch them can increase their AC against that attack roll. This spell can add no more than 5 to AC in total. They cannot do this if their AC is already being increased by a spell. They can forgo such increases to benefit from this."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The total amount AC can be increased by increases by 1 for each spell slot level above 5."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Mass Pixie Dust",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 3",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#mass%20pixie%20dust_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Up to 6 creatures you can see within 90 ft regain hit points equal to 2 + your spellcasting modifier and can immediately fly up to 5 ft. "
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1 and the movement increases by 5 ft for each spell slot level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
    }
   ]
  },
@@ -30296,78 +29217,6 @@
    },
    {
     "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Mass Sear Wounds",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 5",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "60 feet",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#mass%20sear%20wounds_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A pulse of fire ripples out from a point you can see within range. Choose up to six creatures in a 30-foot-radius Sphere centered on that point. Each target regains Hit Points equal to 5d6 plus your spellcasting ability modifier. Instead of granting healing to a target, you can force that target to make a dexterity saving throw. On a failure, they take **5d6** fire damage. On a success they take half as much damage."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing and damage increases by 1d4 for each spell slot level above 5."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Mass Warding Word",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 3",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#mass%20warding%20word_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Up to six creatures of your choice that you can see within range regain Hit Points equal to 1d4 plus your spellcasting ability modifier. Until the end of your turn whenever one of the targets is damaged by an attack you can reduce it by 1d4. You can do this a number of times equal to the number of targets."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing and reduction increases by **1d4** for each spell slot level above 3."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
     "source": "XPHB"
    }
   ]
@@ -30567,41 +29416,6 @@
   ]
  },
  {
-  "name": "Maze",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 8",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "60 feet",
-  "components": "V, S",
-  "duration": "Concentration, up to 10 minutes",
-  "url": "https://5e.tools/spells.html#maze_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target can take a Study action to try to escape. When it does so, it makes a DC 20 Intelligence (*Investigation*) check. If it succeeds three times, it escapes, and the spell ends. For every 30 ft it moves in the maze it can take the study action without spending its action. If they target the maze with an effect, that is the same as targeting you. Damage they deal to you in this way does not cause you to make checks to maintain *Concentration*. If they target you in this way, until the end of your next turn you can target them as if you were the maze and you could see them. "
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Mechanus Mind",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 2",
@@ -30708,40 +29522,6 @@
    }
   ],
   "classes": [
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Mend Shadow",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#mend%20shadow_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Up to 3 creatures you can see within range regain hit points. The total amount you can heal in this way is equal to 1d6 + your spellcasting modifier. Once before the end of your next turn when a creature misses one of the targets with an attack you can deal necrotic damage to the attacker equal to 1d4."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d6 and the damage increases by 1d4 for each spell slot above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
    {
     "name": "Druid",
     "source": "XPHB"
@@ -30910,12 +29690,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "You touch a willing target and expend one of your hit dice. Roll it and add your constitution modifier. They regain a number of Hit Points equal to the roll."
+    "value": "You touch a willing target and expend one of its hit dice. Roll it. They regain a number of Hit Points equal to the roll plus your spellcasting modifier. You can this once and regain all uses on a short rest."
    },
    {
     "name": "At Higher Levels",
     "type": "text",
-    "value": "You can expend an additional hit die when you reach levels 5 (2 hit dice), 11 (3 hit dice), and 17 (4 hit dice). This only applies to cleric and druid levels."
+    "value": "You gain an additional use when you reach levels 5 (2 uses), 11 (3 uses), and 17 (4 uses)."
    }
   ],
   "classes": [
@@ -31095,7 +29875,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Circumstances",
@@ -31560,6 +30340,48 @@
   ]
  },
  {
+  "name": "Misty Step",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "casting_time": "Bonus action",
+  "range": "Self",
+  "components": "V",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#misty%20step_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Briefly surrounded by silvery mist, you teleport up to 10 feet to an unoccupied space you can see."
+   },
+   {
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "When you cast this spell at higher spell levels, increase the distance you teleport by 10 ft for each additional level."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Ranger",
+    "source": "PHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Mold Earth",
   "source": "GaldeveerTanksandFlanks",
   "level": "Cantrip",
@@ -31701,43 +30523,6 @@
    {
     "name": "Warmage",
     "source": "ValdaWarmage"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Momento Recall",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 7",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S, M (undefined)",
-  "duration": "1 week",
-  "url": "https://5e.tools/spells.html#momento%20recall_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a willing target and an object they are touching. The target can choose to end the spell on themself at any time. The spell ends if the object is destroyed. When the spell ends, they teleport to the unoccupied space that is nearest to the object."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "TCE"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
    },
    {
     "name": "Wizard",
@@ -32791,7 +31576,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "d10",
@@ -33089,40 +31874,6 @@
    {
     "name": "Ranger",
     "source": "PHB"
-   }
-  ]
- },
- {
-  "name": "Offerknot",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Necromancy",
-  "casting_time": "1 reaction, which you can take when a creature you can see or hear within 90 ft prevents or protests the taking of that which was freely offered",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "1 hour",
-  "url": "https://5e.tools/spells.html#offerknot_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target makes a saving throw. On a failure, they become frightened or angered by the taker for one hour. If frightened was chosen, this lasts until the taker harms a creature that is frightened by them. If angered was chosen, this lasts until the taker harms a creature that isn't angered by them."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the duration by 1 hour for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
    }
   ]
  },
@@ -33445,82 +32196,6 @@
   "classes": []
  },
  {
-  "name": "Painkill",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 6",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "30 feet",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#painkill_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose 3 creatures you can see within 30 ft. Once when one of the targets takes damage before the end of your next turn, they can reduce it by 4d10 plus your spellcasting modifier. Creatures in a 60 ft line starting at the target are forced to make a constitution saving throw. They take psychic damage equal to the amount of damage that was removed on a failure or half as much damage on a success"
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The amount reduced increases by 1d10 for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Painshift",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "30 feet",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#painshift_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose 3 creatures you can see within range. Until the end of your next turn whenever a target takes damage you can reduce it. The total amount you can reduce in this way is equal to 1d12 plus your spellcasting modifier. The creature that dealt the damage takes psychic damage equal to the amount reduced. If there isn't a creature that dealt the damage, the damage cannot be reduced in this way. "
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The amount reduced increases by 1d12 for each spell level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Artificer",
-    "source": "TCE"
-   },
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   },
-   {
-    "name": "Ranger",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Panacea",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 4",
@@ -33579,66 +32254,6 @@
   ]
  },
  {
-  "name": "Patchwork",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Transmutation",
-  "casting_time": "Bonus action",
-  "range": "30 feet",
-  "components": "V, S, M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#patchwork_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Target a creature you can see within range. Once within the next minute choose a downtime check it starts making. Add 1 to it. If the downtime check takes a minute or less, double this bonus. Do not add this bonus if a spell would already add a bonus to this check. They can forgo such bonuses to benefit from this spell. The bonus cannot apply to checks that take longer than a day. You can cast this spell again to extend that limit by a day. The remaining time in that limit can never exceed 2 days."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the bonus by 1 for each additional spell level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Artificer",
-    "source": "TCE"
-   }
-  ]
- },
- {
-  "name": "Patronage",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 2",
-  "school": "Divination",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S, M (undefined)",
-  "duration": "Concentration, up to 10 minutes",
-  "url": "https://5e.tools/spells.html#patronage_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a target creating a bond that allows you to act as a patron for them for the next hour. You can spend your reaction to allow the target to cast a spell you know that has a range of self. They cast it at 2nd level or lower and it expends your spell slots. If it requires a non-costly material component, it can use any spellcasting focus that you would be able to cast it with. All spells casted in this way end when this spell ends."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The maximum level of spell they can cast in this way is increased by 1 for each additional spell level. "
-   }
-  ],
-  "classes": [
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Pearly Gate",
   "source": "GaldeveerTanksandFlanks",
   "level": "Cantrip",
@@ -33673,40 +32288,6 @@
    {
     "name": "Sorcerer",
     "source": "PHB"
-   }
-  ]
- },
- {
-  "name": "Penance",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "1 reaction, which you take after a creature you can touch is damaged by an attack",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "1 round",
-  "url": "https://5e.tools/spells.html#penance_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target gains temporary hit points equal to 1d6. The amount of temporary hit points gained cannot exceed the amount of damage they took from the attack. They gain the temporary hit points after taking the damage. If the temporary hit points are still there after a minute, they disappear."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The temporary hit points increases by 1d6 for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Paladin",
-    "source": "XPHB"
    }
   ]
  },
@@ -33883,48 +32464,6 @@
    {
     "name": "Wizard",
     "source": "PHB"
-   }
-  ]
- },
- {
-  "name": "Petrify Wound",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S, M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#petrify%20wound_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A creature you see within 30 ft regains a number of Hit Points equal to 1d10 plus your spellcasting modifier. Until the end of your next turn whenever a creature the target can touch would be hit with an attack roll the target can increase their AC against that attack. No more than 1 can be added to AC in this way. Do not apply this bonus if a bonus is already being added to their AC by a spell. They can forgo such bonuses to benefit from this spell."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d10 and the total amount they can add to their AC increases by 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Paladin",
-    "source": "XPHB"
    }
   ]
  },
@@ -34159,7 +32698,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "d10",
@@ -34321,44 +32860,6 @@
   ]
  },
  {
-  "name": "Phantom Prosthesis",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Necromancy",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#phantom%20prosthesis_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a willing creature to allow them to ignore some of their wounds for 1 minute. The total rank of those wounds must be 1 or less."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the rank by 1 for each additional spell level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Artificer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Pharaoh's Curse",
   "source": "ValdaSpire24",
   "level": "Level 5",
@@ -34429,78 +32930,6 @@
    {
     "name": "Druid",
     "source": "PHB"
-   }
-  ]
- },
- {
-  "name": "Pixie Dust",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 2",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V, M (A fleck of pixie dust)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#pixie%20dust_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A creature you can see within range regains hit points equal to 1d4 + your spellcasting modifier and can immediately fly up to 10 ft."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d4 and the movement increases by 5 ft for each spell slot level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Pixie Jar",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "Line (30 feet)",
-  "components": "V, S, M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#pixie%20jar_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose a target you can see within 60 ft. Once when they drop to zero or less hit points they can heal themself 2d10 + your spellcasting modifier. If the spell ends before this happens, grant the healing. This cannot bring their hit points to a total higher than what they were at when this spell was casted."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by **2d10** for each spell slot level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Ranger",
-    "source": "XPHB"
    }
   ]
  },
@@ -35316,41 +33745,6 @@
   ]
  },
  {
-  "name": "Primal Blade",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Cantrip",
-  "school": "Evocation",
-  "casting_time": "Action",
-  "range": "Self",
-  "components": "S, M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#primal%20blade_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "When you learn this cantrip choose the barbarian, fighter or ranger class. Then, choose a weapon mastery from that class's mastery list. You can learn this cantrip multiple times. If you do, instead of learning this cantrip again choose another mastery."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You brandish the weapon used in the spell's casting and make a melee attack with it. On a hit, the target suffers the weapon attack's normal effects. You can use any of the chosen weapon masteries on this attack."
-   },
-   {
-    "name": "Cantrip Upgrade",
-    "type": "text",
-    "value": "At 5th level, the attack deals extra damage equal to the weapon's damage die of the weapons damage type. This increases by one weapon damage die at 11th level and 17th level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Primal Form",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 4",
@@ -35448,7 +33842,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "1d8",
@@ -35537,7 +33931,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "d8",
@@ -35611,7 +34005,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "d8",
@@ -35700,7 +34094,7 @@
    {
     "name": "Prismatic Layers",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Prismatic Layers",
      "headers": [
       "Order",
@@ -35784,48 +34178,6 @@
    },
    {
     "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Promise",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Divination",
-  "casting_time": "Action",
-  "range": "120 feet",
-  "components": "S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#promise_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You lace a promise that was just spoken within the last minute by a target you can hear within range with an enchantment. If the promise is broken or the spell ends, the target knows it. Any creature that the promise was made too also knows it if they were within range when the spell was casted."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "When you cast the spell at higher levels, the duration increases to 1 week (2nd level), 1 month (3rd level), 1 year (4th level), Until Dispelled (5th level)"
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
     "source": "XPHB"
    }
   ]
@@ -35923,6 +34275,31 @@
    {
     "name": "Bard",
     "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Prototype",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "S, M (undefined)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#prototype_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Make a crafting check to make an object. Failing the crafting check does not negatively affect the materials. If the object you craft can be attuned to, the first attempt to attune to it is instantaneous. The object has no uses of any magical limited-use features that do not regain uses at dawn, after a long rest or after a short rest. After an hour, the object turns back into the materials it was crafted out of."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "TCE"
    }
   ]
  },
@@ -36494,74 +34871,6 @@
   ]
  },
  {
-  "name": "Rain Angelblood",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 3",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#rain%20angelblood_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose up to 6 targets you can see within 60 ft. Restore hit points to them equal to 1d4 + your spellcasting modifier. They cannot be angered until the end of your next turn. If they are already angered, then the condition is suppressed for the duration"
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d4 and the movement increases by 5 ft for each spell slot level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Rain Demonblood",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 3",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#rain%20demonblood_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose up to 6 targets you can see within 60 ft. Restore hit points to them equal to 1d4 + your spellcasting modifier. They cannot be frightened until the end of your next turn. If they are already frightened, then the condition is suppressed for the duration"
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d4 and the movement increases by 5 ft for each spell slot level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Rain of Fire",
   "source": "SpellsThatDontSuck",
   "level": "Level 7",
@@ -36628,7 +34937,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Result",
@@ -36744,7 +35053,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You touch a creature that has been dead for no longer than 10 days and wasn't Undead when it died. It must make a DC 10 death saving throw."
+    "value": "You touch creature that has been dead for no longer than 10 days and wasn't Undead when it died. It must make a DC 10 death saving throw."
    },
    {
     "name": "",
@@ -37137,7 +35446,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "Result",
@@ -37481,90 +35790,6 @@
   ]
  },
  {
-  "name": "Recall Scout",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "5 feet",
-  "components": "V, S, M (undefined)",
-  "duration": "1 hour",
-  "url": "https://5e.tools/spells.html#recall%20scout_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You anchor a willing creature you can see within range to yourself. When the target takes the attack or magic action or it takes damage, the spell ends on them. When the spell ends on a target, they teleport to the unoccupied location nearest to you. The teleportation fails if the location is in a different plane of existence. If you take damage, the spell ends."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "When you cast this spell at higher levels, you can choose an additional target for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "TCE"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Recall Thief",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S, M (undefined)",
-  "duration": "10 minutes",
-  "url": "https://5e.tools/spells.html#recall%20thief_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a target, anchoring them to their current location. When the target takes damage, the spell ends on them. When the spell ends on a target, they teleport to the location they were at when the spell was casted as long as it is unoccupied and within 100ft. The teleportation fails if the location is in a different plane of existence."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "When you cast this spell at higher levels, you can choose an additional target for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "TCE"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "PHB"
-   },
-   {
-    "name": "Warlock",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "PHB"
-   }
-  ]
- },
- {
   "name": "Reciprocal Gyre",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 5",
@@ -37641,45 +35866,6 @@
   ]
  },
  {
-  "name": "Red Ribbons",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "1 reaction, which you take when a creature you can touch would fail one of the chosen types of saving throws",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "1 round",
-  "url": "https://5e.tools/spells.html#red%20ribbons_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Choose three types of saving throws when you prepare this spell. "
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "Add 1 to the saving throw. Do not add this if a spell is already adding a positive bonus to the saving throw. The target can forgo such a bonus in order to benefit from this spell."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the amount added by 1 for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Ranger",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Red Tide",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 8",
@@ -37711,6 +35897,44 @@
    {
     "name": "Druid",
     "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Reflect",
+  "source": "GaldeveerTanksandFlanks",
+  "level": "Level 5",
+  "school": "Abjuration",
+  "casting_time": "1 reaction, which you take before a creature you can touch is targeted by a spell.",
+  "range": "Touch",
+  "components": "V, S, M (a hand mirror)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#reflect_galdeveertanksandflanks",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spell your reflecting must choose specific targets or be a line area of effect. The creature that casted the spell must make a constitution saving throw. Subtract the level of the spell you're reflecting from half the level your casting this spell at rounded up. Add the total to your Spell Save DC. On a failure, the spell is reflected. If the spell chooses specific targets, change the target to a creature you can see within the reflected spell's remaining range. If the spell is a line area of effect, change its direction starting at a point on the line you can touch."
+   },
+   {
+    "name": "At Higher Levels",
+    "type": "text",
+    "value": "Special (see description)"
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "PHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "PHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "PHB"
    }
   ]
  },
@@ -38107,12 +36331,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "Add a d4, potentially turning it into a success. Do not add it if a positive bonus has already been applied to the roll by a spell. You can forgo such bonuses to benefit from this spell. You can cast this once and regain this ability after a short rest."
+    "value": "Add a d4, potentially turning it into a success. Do not add it if a positive bonus has already been applied to the roll by a spell. You can cast this once and regain all uses after a short rest."
    },
    {
-    "name": "Cantrip Upgrade",
+    "name": "At Higher Levels",
     "type": "text",
-    "value": "The number of d4s increases by 1 at 5th level (2d4), 11th level (3d4), and 17th level (4d4). Only use the highest d4 roll."
+    "value": "The number of uses increases by 1 at 5th level (2 uses), 11th level (3 uses), and 17th level (4 uses)."
    }
   ],
   "classes": [
@@ -38231,7 +36455,7 @@
    {
     "name": "Restoration",
     "type": "table",
-    "value": {
+    "table": {
      "title": "Restoration",
      "headers": [
       "Slot Level",
@@ -38423,40 +36647,6 @@
    },
    {
     "name": "Cleric",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Retribution",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Necromancy",
-  "casting_time": "1 reaction, which you can take when a target forces a creature you can touch to make a saving throw",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "10 minutes",
-  "url": "https://5e.tools/spells.html#retribution_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Once within the next 10 minutes when the triggering creature would succeed on a saving throw of the same type, you can subtract one from it."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the amount subtract by 1 for each additional level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   },
-   {
-    "name": "Warlock",
     "source": "XPHB"
    }
   ]
@@ -39079,10 +37269,6 @@
     "source": "ValdaNecromancer"
    },
    {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
     "name": "Witch",
     "source": "ValdaWitch"
    },
@@ -39507,7 +37693,7 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
      "title": "",
      "headers": [
       "1d8",
@@ -39922,74 +38108,6 @@
   ]
  },
  {
-  "name": "Sear Wounds",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#sear%20wounds_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "A creature you touch regains a number of Hit Points equal to 1d10 plus your spellcasting modifier. Once before the end of your next turn before they hit or miss with a weapon attack they can imbue their attack with fire. If it hits, they can deal extra fire damage equal to 1d8."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d10 and the damage increases by 1d8 for each spell slot level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Ranger",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Searing Smite",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Evocation",
-  "casting_time": "Bonus action, which you take immediately after hitting a target with a weapon attack",
-  "range": "Self",
-  "components": "V",
-  "duration": "1 minute",
-  "url": "https://5e.tools/spells.html#searing%20smite_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "As you hit the target, it takes an extra **1d6** Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes **1d6** Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends. Use d4s instead of the attack is ranged."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "All the damage increases by **1d6** for each spell slot level above 1. Use d4s instead of the attack is ranged."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Searing Smite (Alternate)",
   "source": "llspell",
   "level": "Level 1",
@@ -40159,39 +38277,6 @@
    },
    {
     "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Sensing",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 7",
-  "school": "Divination",
-  "casting_time": "Action",
-  "range": "Unlimited",
-  "components": "V, S, M (a silver wire)",
-  "duration": "10 minutes",
-  "url": "https://5e.tools/spells.html#sensing_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain telepathy with a willing creature you have met or a willing creature described to you by someone who has met it. It lasts for 10 minutes. While you have this telepathy you can sense what the target senses. The spell fails if they are in a different plane than you."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
     "source": "XPHB"
    },
    {
@@ -41053,22 +39138,22 @@
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 1",
   "school": "Abjuration",
-  "casting_time": "1 reaction, which you take when a creature you can touch would get hit by an attack roll",
+  "casting_time": "1 reaction, which you take when you see a creature you can touch get hit by an attack or targeted by the Magic Missiles spell",
   "range": "Touch",
   "components": "V, S",
-  "duration": "Instantaneous",
+  "duration": "1 minute",
   "url": "https://5e.tools/spells.html#shield_galdeveertanksandflanks",
   "image": null,
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "The target gains 1 AC against the triggering attack roll. The bonus is not applied if the target's AC is already increased by a spell. The target can forgo such increases in order to benefit from this spell."
+    "value": "A spectral shield appears and protects the creature you touched for one minute. They can gain 2 AC against one attack of their choice that would hit them. They can choose to instead gain immunity to 4 magic missiles (from the Magic Missiles spell) of their choice that target them. They do not apply the bonus to their AC if a positive bonus is already being applied to it by a spell."
    },
    {
-    "name": "Using a Higher-Level Spell Slot",
+    "name": "At Higher Levels",
     "type": "text",
-    "value": "Increase the bonus by 1 for each additional spell level."
+    "value": "When you cast this spell at higher levels, the number of attacks or magic missiles they can choose increases by one for each slot level above 1."
    }
   ],
   "classes": [
@@ -41271,47 +39356,22 @@
    {
     "name": "",
     "type": "text",
-    "value": "A Club, Greatclub, Warclub, Staff or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon."
+    "value": "A Club, Greatclub, Warclub, Staff or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice)."
    },
    {
     "name": "",
     "type": "text",
     "value": "The spell ends early if you cast it again or if you let go of the weapon."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage die changes when you reach levels 5 (**d10**), 11 (**d12**), and 17 (**2d6**)."
    }
   ],
   "classes": [
    {
     "name": "Druid",
-    "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Shining Smite",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 2",
-  "school": "Transmutation",
-  "casting_time": "Bonus action, which you take immediately after hitting a creature with a weapon attack",
-  "range": "Self",
-  "components": "V",
-  "duration": "Concentration, up to 1 minute",
-  "url": "https://5e.tools/spells.html#shining%20smite_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target hit by the strike takes an extra **2d6** Radiant damage from the attack. Until the spell ends, the target sheds Bright Light in a 5-foot radius, attack rolls against it have Advantage, and it can't benefit from the Invisible condition. Use d4s instead of the attack is ranged."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The damage increases by **1d6** for each spell slot level above 2. Use d4s instead of the attack is ranged."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Paladin",
     "source": "XPHB"
    }
   ]
@@ -41623,7 +39683,7 @@
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 1",
   "school": "Enchantment",
-  "casting_time": "1 reaction, which you take before a creature you can see within 60 feet of yourself succeeds or fails on a d20 test",
+  "casting_time": "1 reaction, which you take when a creature you can see within 60 feet of yourself succeeds on an attack roll, an ability check, or a saving throw",
   "range": "60 feet",
   "components": "V",
   "duration": "Instantaneous",
@@ -41633,12 +39693,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You grow a reflective barbed plant around a piece of yourself and use it to distract or direct a creature by reflecting light. Reroll the d20 test. The new roll is only used if it is no more than 1 greater or less than the previous roll. If the new roll is not used, you take 1 piercing damage."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the damage and the amount the new roll can be greater or less than the previous roll by 1 for each additional spell level."
+    "value": "This spell has been replaced by the Downtick and Uptick spells. If a feature would teach you this spell, learn Downtick or Uptick instead."
    }
   ],
   "classes": [
@@ -44666,41 +42721,6 @@
   ]
  },
  {
-  "name": "Storied Blade",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Cantrip",
-  "school": "Evocation",
-  "casting_time": "Action",
-  "range": "Self",
-  "components": "S, M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#storied%20blade_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "When you learn this cantrip choose the Artificer, Warlock, Fighter or Monk class. Then, choose a weapon mastery from that class's mastery list. You can learn this cantrip multiple times. If you do, instead of learning this cantrip again choose another mastery."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You brandish the weapon used in the spell's casting and make a melee attack with it. On a hit, the target suffers the weapon attack's normal effects. You can use any of the chosen weapon masteries on this attack."
-   },
-   {
-    "name": "Cantrip Upgrade",
-    "type": "text",
-    "value": "At 5th level, the attack deals extra damage equal to the weapon's damage die of the weapons damage type. This increases by one weapon damage die at 11th level and 17th level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Storm of Elemental Fury",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 8",
@@ -45865,40 +43885,6 @@
   ]
  },
  {
-  "name": "Takeknot",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Necromancy",
-  "casting_time": "1 reaction, which you can take when a creature you can see or hear within 90 ft partakes in that which was freely offered.",
-  "range": "Touch",
-  "components": "V, S",
-  "duration": "1 round",
-  "url": "https://5e.tools/spells.html#takeknot_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The thing they partake in must be something they need that has consequences if they don't receive it. For example, not eating can result in exhaustion, therefore eating food that is freely offered can trigger this. The target becomes charmed for three hours by the creature that offered them what they partook in. They are also charmed by anyone else who partook in what was offered. If one of the charming creatures harms the triggering creature or its allies or is unreasonably inhospitable to them, the triggering creature is no longer charmed by them and their allies. This spell counts as a curse. The target knows that its charmed. "
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the duration by three hours for each additional spell level."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Druid",
-    "source": "XPHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Tasha's Mind Whip",
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 2",
@@ -45913,7 +43899,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You psychically lash out at one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, the target takes **3d6** psychic damage, and it can't take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three. On a successful save, the target takes half as much damage and suffers none of the spell's other effects. At any time a target can take psychic damage equal to 1d6 plus their level to end this spell on themself. If they don't have a level, they use their max number of hit dice instead. "
+    "value": "You psychically lash out at one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, the target takes **3d6** psychic damage, and it can't take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three. On a successful save, the target takes half as much damage and suffers none of the spell's other effects."
    },
    {
     "name": "At Higher Levels",
@@ -46447,36 +44433,6 @@
   ]
  },
  {
-  "name": "Thunderous Smite",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Evocation",
-  "casting_time": "Bonus action, which you take immediately after hitting a target with a weapon attack",
-  "range": "Self",
-  "components": "V",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#thunderous%20smite_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Your strike rings with thunder that is audible within 300 feet of you, and the target takes an extra **2d6** Thunder damage from the attack. Additionally, if the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet away from you and have the Prone condition. Use d4s instead if the weapon attack is ranged."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The damage increases by **1d6** for each spell slot level above 1. Use d4s instead if the weapon attack is ranged."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Paladin",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Thunderous Smite (Alternate)",
   "source": "llspell",
   "level": "Level 1",
@@ -46508,56 +44464,6 @@
    {
     "name": "Paladin",
     "source": "PHB"
-   }
-  ]
- },
- {
-  "name": "Tinkertoy",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Cantrip",
-  "school": "Transmutation",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#tinkertoy_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a Tiny non-magical object and give it a magical properties. Choose the property from the options below."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The properties last indefinitely, but they end if you forget the cantrip. You can have no more than three properties at the same time. If you try to exceed the maximum, one of the properties ends and the new property applies. A single object can bear only one of these properties at a time. As an action, you can end one of the properties."
-   },
-   {
-    "name": "Light",
-    "type": "text",
-    "value": "The object sheds bright light in a 10-foot cone and dim light for an additional 10 feet in the direction it is pointed."
-   },
-   {
-    "name": "Recording",
-    "type": "text",
-    "value": "Whenever tapped by a creature, the object emits a recorded message that can be heard within a radius of your choice (max 30ft). You utter the message and choose the radius when you bestow this property on the object, and the recording can be no more than 6 seconds long."
-   },
-   {
-    "name": "Odor",
-    "type": "text",
-    "value": "The object continuously emits your choice of a mild odor or nonverbal sound (wind, waves, chirping, or the like) that can be sensed within a radius of your choice (max 30 ft)."
-   },
-   {
-    "name": "Stamp",
-    "type": "text",
-    "value": "A static visual effect appears on one of the object's surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Artificer",
-    "source": "TCE"
    }
   ]
  },
@@ -47319,8 +45225,8 @@
   "source": "GaldeveerTanksandFlanks",
   "level": "Cantrip",
   "school": "Divination",
-  "casting_time": "1 reaction, which you take when a willing creature within 15 feet would miss an attack roll that has disadvantage",
-  "range": "15 feet",
+  "casting_time": "1 reaction, which you take when a willing creature within 10 feet would fail an attack roll",
+  "range": "10 feet",
   "components": "V, S",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#true%20strike_galdeveertanksandflanks",
@@ -47329,12 +45235,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "Add a d4, potentially turning it into a success. Do not add it if a positive bonus has already been applied to the roll by a spell. You can cast this once and regain the ability to do so after a short rest."
+    "value": "Add a d4, potentially turning it into a success. Do not add it if a positive bonus has already been applied to the roll by a spell. You can cast this once and regain all uses after a short rest."
    },
    {
-    "name": "Cantrip Upgrade",
+    "name": "At Higher Levels",
     "type": "text",
-    "value": "The number of d4s increases by 1 at 5th level (2d4), 11th level (3d4), and 17th level (4d4). Only use the highest roll."
+    "value": "The number of uses increases by 1 at 5th level (2 uses), 11th level (3 uses), and 17th level (4 uses)."
    }
   ],
   "classes": [
@@ -47855,32 +45761,40 @@
   ]
  },
  {
-  "name": "Upgrade",
+  "name": "Uptick",
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, M (50 gp worth of Gold Dust)",
+  "casting_time": "1 reaction, which you take when a creature you can see within 90 ft would fail an attack roll, ability check or saving throw",
+  "range": "90 feet",
+  "components": "V",
   "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#upgrade_galdeveertanksandflanks",
+  "url": "https://5e.tools/spells.html#uptick_galdeveertanksandflanks",
   "image": null,
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "You touch an object, turning it into an upgraded version of itself that costs 50 gp more. You can't cast this on an object that costs more than the costly component. Roll a d4. On a 1 or 2 the spell fails and material components are wasted. Otherwise, the object's cost increases and it becomes a similar magic item that matches the new cost. For example, a sword might become a +1 sword. It's up to the DM how it gets upgraded. The DM might decide you can't cast the spell at a certain level on a certain object if there isn't a close enough magic item for it to become. Instead of gaining improvements, the item might loose a curse."
+    "value": "You tick back time a single second, allowing the target to roll another d20. Compare the number on the die of both rolls to 18. If the new number's distance from 18 is greater than the old number's distance from 18, it replaces it."
    },
    {
-    "name": "Using a Higher-Level Spell Slot",
+    "name": "At Higher Levels",
     "type": "text",
-    "value": "The cost of the material component and the cost increase are multiplied by 4 for each additional spell level."
+    "value": "When you cast this spell at a higher level, subtract 1 from the number your comparing to for each additional spell level."
    }
   ],
   "classes": [
    {
-    "name": "Artificer",
-    "source": "TCE"
+    "name": "Bard",
+    "source": "PHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "PHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "PHB"
    }
   ]
  },
@@ -48219,40 +46133,6 @@
   ]
  },
  {
-  "name": "Vision",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 2",
-  "school": "Divination",
-  "casting_time": "1 reaction, which you take immediately before a target you can touch would be targeted by a creature.",
-  "range": "Touch",
-  "components": "S",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#vision_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target can move up to 10 ft. If the targeter did something immediately before the triggering event that caused said event, they can choose to stop before they do it. The thing they chose to stop doing doesn't expend or do anything because it never happened. You and the target are the only ones that remember it happening."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the movement by 10 ft for each addtional spell level"
-   }
-  ],
-  "classes": [
-   {
-    "name": "Cleric",
-    "source": "PHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Voice of the Dragon",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 4",
@@ -48351,39 +46231,6 @@
    {
     "name": "Wizard",
     "source": "XPHB"
-   }
-  ]
- },
- {
-  "name": "Vortex Seed",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Conjuration",
-  "casting_time": "Action",
-  "range": "Touch",
-  "components": "V, S, M (undefined)",
-  "duration": "Concentration, up to 1 hour",
-  "url": "https://5e.tools/spells.html#vortex%20seed_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You touch a willing creature. For the next 10 minutes as a reaction when the target moves or falls prone within 60 ft of you, you can teleport them to an unoccupied space you touch."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "PHB"
-   },
-   {
-    "name": "Sorcerer",
-    "source": "PHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "PHB"
    }
   ]
  },
@@ -48826,40 +46673,6 @@
   ]
  },
  {
-  "name": "Ward",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "1 reaction, which you take when a creature you can touch would get hit by an attack roll",
-  "range": "Touch",
-  "components": "V, S, M (undefined)",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#ward_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Prevent the next 5 damage that the target takes before the end of your next turn. The damage can be spread out across multiple instances."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "Increase the damage prevented by 3 for each additional spell level"
-   }
-  ],
-  "classes": [
-   {
-    "name": "Sorcerer",
-    "source": "XPHB"
-   },
-   {
-    "name": "Wizard",
-    "source": "XPHB"
-   }
-  ]
- },
- {
   "name": "Warding Sigil",
   "source": "SpellsThatDontSuck",
   "level": "Level 1",
@@ -48903,44 +46716,6 @@
    {
     "name": "Wizard",
     "source": "PHB"
-   }
-  ]
- },
- {
-  "name": "Warding Word",
-  "source": "GaldeveerTanksandFlanks",
-  "level": "Level 1",
-  "school": "Abjuration",
-  "casting_time": "Bonus action",
-  "range": "60 feet",
-  "components": "V",
-  "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#warding%20word_galdeveertanksandflanks",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "3 creatures you can see within range regain hit points. The total amount that can be regained collectively is equal to 1d6 + your spellcasting modifier. Once when one of them takes damage before the end of your next turn you can reduce it by 1d4."
-   },
-   {
-    "name": "Using a Higher-Level Spell Slot",
-    "type": "text",
-    "value": "The healing increases by 1d6 and the damage reduction increases by 1d4 for each spell slot level above 1."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
-    "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
-    "source": "XPHB"
    }
   ]
  },
@@ -50631,16 +48406,12 @@
     "source": "XPHB"
    },
    {
-    "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "name": "Investigator",
+    "source": "ValdaInvestigator"
    },
    {
     "name": "Sorcerer",
     "source": "XPHB"
-   },
-   {
-    "name": "Witch",
-    "source": "ValdaWitch"
    },
    {
     "name": "Wizard",
