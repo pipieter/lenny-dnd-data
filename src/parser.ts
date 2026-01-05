@@ -379,7 +379,7 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             const titleDesc = description.type === 'abilityDc' ? 'Save DC' : 'Attack modifier';
 
             const abilityScores = description.attributes.map(parseAbilityScore);
-            const text = `${BulletPoint} *${description.name} ${titleDesc}*: ${joinStringsWithOr(abilityScores)} modifier + Proficiency Bonus`;
+            const text = `*${description.name} ${titleDesc}*: ${joinStringsWithOr(abilityScores)} modifier + Proficiency Bonus`;
             return [text];
         }
         case 'refClassFeature': {
