@@ -410,11 +410,12 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             const entries: string[] = [];
             const count = description.count;
             if (description.entries) {
-                entries.push(...description.entries.map(parseDescriptionBlock));
+                entries.push(...description.entries.flatMap(parseDescriptionBlock));
             }
 
-            const title = count ? `Choose **${count}**:\n` : '';
-            return [`${title}${BulletPoint} ${entries.join(`\n${BulletPoint} `)}`];
+            const title = count ? `Choose **${count}**:` : '';
+            const list: List = { type: 'list', caption: title, entries: entries };
+            return [list];
         }
         case 'statblock': {
             const tag = description.tag;

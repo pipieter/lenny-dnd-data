@@ -4,6 +4,7 @@ import {
     capitalize,
     checkForDisallowedSymbols,
     Description,
+    DescriptionList,
     DescriptionTable,
     DescriptionText,
     DescriptionType,
@@ -581,7 +582,7 @@ function resolveClassFeatReference(
     text: string,
     feats: ClassFeatureDictionary | null,
     type: 'refClassFeature' | 'refSubclassFeature'
-): Description[] {
+): { resolved: string; additionalEntries: Description[] } {
     const regex = new RegExp(`\\{#${type}\\s+([^}]+)\\}`, 'g');
     const matches = [...text.matchAll(regex)];
 
@@ -614,24 +615,21 @@ function resolveClassFeatReference(
         const key = getKey(className, featSource);
 
         if (!feats || !feats[key]) {
-            return [
-                {
-                    name: '',
-                    type: DescriptionType.text,
-                    value: `${BulletPoint} ${getKey(name, featSource)}`,
-                },
-            ];
+            return { resolved: getKey(name, featSource), additionalEntries: [] };
         }
 
         const feat = feats[key].find((f) => f.name.trim().toLowerCase() === name.trim().toLowerCase());
 
         if (!feat?.descriptions) throw `Could not find ${type} for ${key}`;
         const descs = feat.descriptions.map((d) => ({ ...d }));
-        if (descs[0].type === DescriptionType.text) {
-            descs[0].value = `__${getKey(name, featSource)}__: ${descs[0].value}`;
+
+        if (descs[0].type !== DescriptionType.text) {
+            throw new Error(`First class feat of ${text} does not start with a text.`);
         }
 
-        return descs;
+        const resolved = `__${getKey(name, featSource)}__: ${descs[0].value}`;
+        const additionalEntries = descs.slice(1);
+        return { resolved, additionalEntries };
     }
 
     // Case 2: Inline substitution (multiple references or formatting like bullets)
@@ -643,19 +641,11 @@ function resolveClassFeatReference(
         return getKey(name, featSource);
     });
 
-    return [
-        {
-            name: '',
-            type: DescriptionType.text,
-            value: updatedText,
-        },
-    ];
+    return { resolved: updatedText, additionalEntries: [] };
 }
 
-function resolveOptionalFeatReference(entry: DescriptionText): DescriptionText {
-    const value = entry.value as string;
-
-    const updatedValue = value.replace(
+function resolveOptionalFeatReference(text: string): string {
+    const updatedValue = text.replace(
         /\{#refOptionalfeature\s+([^|}]+)(?:\|([^}]+))?\}/g,
         (_, name: string, source?: string) => {
             const finalSource = source?.trim() || 'PHB';
@@ -663,10 +653,28 @@ function resolveOptionalFeatReference(entry: DescriptionText): DescriptionText {
         }
     );
 
-    return {
-        ...entry,
-        value: updatedValue,
-    };
+    return updatedValue;
+}
+
+function resolveSingleReference(
+    text: string,
+    classFeats: ClassFeatureDictionary | null,
+    subclassFeats: ClassFeatureDictionary | null
+): { resolved: string | null; additionalEntries: Description[] } {
+    if (!text.includes(`{#`)) {
+        return { resolved: text, additionalEntries: [] };
+    }
+
+    if (text.includes(`refClassFeature`)) {
+        return resolveClassFeatReference(text, classFeats, 'refClassFeature');
+    } else if (text.includes(`refSubclassFeature`)) {
+        return resolveClassFeatReference(text, subclassFeats, 'refSubclassFeature');
+    } else if (text.includes('refOptionalfeature')) {
+        const resolved = resolveOptionalFeatReference(text);
+        return { resolved, additionalEntries: [] };
+    } else {
+        throw `Unsupported text-description reference-type in: ${text}`;
+    }
 }
 
 function resolveReferences(
@@ -680,22 +688,36 @@ function resolveReferences(
     for (const entry of entries) {
         if (entry.type === DescriptionType.text) {
             const text = entry.value as string;
+            const { resolved, additionalEntries } = resolveSingleReference(text, classFeats, subclassFeats);
 
-            if (!text.includes(`{#`)) {
+            if (resolved) {
+                resolvedEntries.push({ ...entry, value: resolved });
+                resolvedEntries.push(...additionalEntries);
+            } else {
                 resolvedEntries.push(entry);
-                continue;
             }
-
-            if (text.includes(`refClassFeature`))
-                resolvedEntries.push(...resolveClassFeatReference(text, classFeats, 'refClassFeature'));
-            else if (text.includes(`refSubclassFeature`))
-                resolvedEntries.push(...resolveClassFeatReference(text, subclassFeats, 'refSubclassFeature'));
-            else if (text.includes('refOptionalfeature')) resolvedEntries.push(resolveOptionalFeatReference(entry));
-            else throw `Unsupported text-description reference-type in: ${text}`;
         } else if (entry.type === DescriptionType.table) {
             resolvedEntries.push(entry); // For now, tables don't have any references.
         } else if (entry.type === DescriptionType.list) {
-            resolvedEntries.push(entry); // For now, lists don't have any references.
+            const subResolutions: Description[] = [];
+            const resolvedList: DescriptionList = {
+                name: entry.name,
+                type: DescriptionType.list,
+                list: {
+                    type: 'list',
+                    caption: entry.list.caption,
+                    entries: [],
+                },
+            };
+            for (const subentry of entry.list.entries) {
+                const { resolved, additionalEntries } = resolveSingleReference(subentry, classFeats, subclassFeats);
+                if (resolved) {
+                    resolvedList.list.entries.push(resolved);
+                }
+                subResolutions.push(...additionalEntries);
+            }
+            resolvedEntries.push(resolvedList);
+            resolvedEntries.push(...subResolutions);
         } else {
             throw `Could not resolve unsupported DescriptionType ${entry.type}`;
         }
