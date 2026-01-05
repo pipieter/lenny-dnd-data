@@ -6,7 +6,6 @@ import {
     Description,
     DescriptionList,
     DescriptionTable,
-    DescriptionText,
     DescriptionType,
     parseAbilityScore,
     parseClassResourceValue,
@@ -174,8 +173,8 @@ class CharacterClass {
         this.primaryAbility = joinStringsWithOr(orGroups);
     }
 
-    private handleProficiencies(proficiencies: { [type: string]: any }): DescriptionText[] {
-        const info: DescriptionText[] = [];
+    private handleProficiencies(proficiencies: { [type: string]: any }): Description[] {
+        const info: Description[] = [];
 
         for (const [type, proficiency] of Object.entries(proficiencies)) {
             let label = title(type);
@@ -183,7 +182,7 @@ class CharacterClass {
                 label = label.slice(0, -1);
             }
 
-            let text = '';
+            let entries: string[] = [];
 
             switch (type) {
                 case 'armor': {
@@ -196,11 +195,11 @@ class CharacterClass {
                             continue;
                         }
 
-                        armor.push(armorType);
+                        armor.push(`${capitalize(armorType)} armor`);
                     }
-                    text = `${joinStringsWithAnd(armor)} armor`;
+                    entries = armor;
                     if (hasShields) {
-                        text += ' and Shields';
+                        entries.push('Shields');
                     }
                     break;
                 }
@@ -210,27 +209,24 @@ class CharacterClass {
                         if (typeof weaponType === 'object' && weaponType !== null) {
                             const weaponProficiency = weaponType.proficiency;
                             if (weaponProficiency) {
-                                weapons.push(weaponProficiency);
+                                weapons.push(capitalize(weaponProficiency));
                             }
                         } else {
-                            weapons.push(cleanDNDText(weaponType));
+                            weapons.push(capitalize(cleanDNDText(weaponType)));
                         }
                     }
-                    text = `${joinStringsWithAnd(weapons)} weapons`;
+                    entries = weapons;
                     break;
                 }
 
                 case 'skills': {
                     for (const skillProficiencies of proficiency) {
-                        if (text !== '') {
-                            text += '\n';
-                        }
                         const choose = skillProficiencies.choose;
                         if (!choose) continue;
                         const skills = choose.from;
                         const count = parseInt(choose.count ?? '0');
                         if (!skills || count === 0) continue;
-                        text += `Choose ${count}: ${joinStringsWithOr(skills)}`;
+                        entries.push(`Choose ${count}: ${joinStringsWithOr(skills)}`);
                     }
                     break;
                 }
@@ -240,7 +236,7 @@ class CharacterClass {
                         const toolText = cleanDNDText(tool);
                         tools.push(toolText);
                     }
-                    text = `${joinStringsWithAnd(tools)}`;
+                    entries = tools;
                     break;
                 }
                 case 'toolProficiencies':
@@ -251,11 +247,15 @@ class CharacterClass {
                     throw new Error('Unknown proficiency type: ' + type);
             }
 
-            if (text !== '') {
+            if (entries.length > 0) {
                 info.push({
                     name: '',
-                    type: DescriptionType.text,
-                    value: `${BulletPoint} ${label} Proficiencies: ${text}`,
+                    type: DescriptionType.list,
+                    list: {
+                        type: 'list',
+                        caption: `${label} Proficiencies`,
+                        entries: entries,
+                    },
                 });
             }
         }
@@ -275,17 +275,21 @@ class CharacterClass {
             const averageHp = Math.floor(faces / 2) + 1;
             const conMod = 'Con. mod';
 
-            const text = [
-                `${BulletPoint} HP Die: ${die}`,
-                `${BulletPoint} Level 1 ${this.name} HP: ${faces} + ${conMod}`,
-                `${BulletPoint} HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
-            ].join('\n');
+            const entries = [
+                `HP Die: ${die}`,
+                `Level 1 ${this.name} HP: ${faces} + ${conMod}`,
+                `HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
+            ];
 
-            info.push({ name: 'Health', type: DescriptionType.text, value: text });
+            info.push({
+                name: 'Health',
+                type: DescriptionType.list,
+                list: { type: 'list', caption: '', entries: entries },
+            });
         }
 
         // Saving Proficiencies
-        const profData: DescriptionText[] = [];
+        const profData: Description[] = [];
         if (data.proficiency) {
             let savingProficiencies: string[] = data.proficiency;
             savingProficiencies = savingProficiencies.map((proficiency) => parseAbilityScore(proficiency));
@@ -300,10 +304,7 @@ class CharacterClass {
             profData.push(...startingProficiencies);
         }
 
-        if (profData.length > 0) {
-            const mergedText = profData.map((d) => d.value).join('\n');
-            info.push({ name: 'Proficiencies', type: DescriptionType.text, value: mergedText });
-        }
+        info.push(...profData);
 
         // startEquipment
         if (data.startingEquipment) {
@@ -329,7 +330,7 @@ class CharacterClass {
 
         // multiclassing
         if (data.multiclassing && Object.keys(data.multiclassing).length > 0) {
-            const multiclassData = [];
+            const multiclassData: Description[] = [];
             const multiclassing = data.multiclassing;
 
             let multiclassRequirements = multiclassing.requirements;
@@ -359,10 +360,11 @@ class CharacterClass {
                 multiclassData.push(...this.handleProficiencies(multiclassProficiencies));
             }
 
+            // Add a section divider to the multiclassing data
             if (multiclassData.length > 0) {
-                const mergedText = multiclassData.map((d) => d.value).join('\n');
-                info.push({ name: 'Multiclassing', type: DescriptionType.text, value: mergedText });
+                multiclassData[0].name = "Multiclassing"
             }
+            info.push(...multiclassData);
         } else if (!this.name.toLowerCase().includes('sidekick')) {
             // If no multiclass data is present, use default. (Does not apply to sidekick classes)
             info.push({
