@@ -673,6 +673,10 @@ function resolveOptionalFeatReference(text: string): string {
         }
     );
 
+    if (text === updatedValue) {
+        console.log(text);
+    }
+
     return updatedValue;
 }
 
@@ -748,13 +752,8 @@ function resolveReferences(
         const entriesToSubResolve: Description[] = [];
         for (let i = 0; i < resolvedEntries.length; i++) {
             const e = resolvedEntries[i];
-            if (e.type === DescriptionType.text) {
-                const val = e.value as string;
-                if (!val.includes('{#')) continue;
-
-                indexesToResolve.push(i);
-                entriesToSubResolve.push(e);
-            }
+            indexesToResolve.push(i);
+            entriesToSubResolve.push(e);
         }
 
         for (let j = indexesToResolve.length - 1; j >= 0; j--) {
@@ -765,8 +764,17 @@ function resolveReferences(
     }
 
     for (const resolvedEntry of resolvedEntries) {
-        if (resolvedEntry.type !== DescriptionType.text) continue;
-        checkForDisallowedSymbols(resolvedEntry.value as string);
+        if (resolvedEntry.type === DescriptionType.text) {
+            checkForDisallowedSymbols(resolvedEntry.value);
+        } else if (resolvedEntry.type === DescriptionType.table) {
+            continue; // Tables don't have references
+        } else if (resolvedEntry.type === DescriptionType.list) {
+            for (const listEntry of resolvedEntry.list.entries) {
+                checkForDisallowedSymbols(listEntry);
+            }
+        } else {
+            throw `Error: reference validation code for ${JSON.stringify(resolvedEntry)} not supported`;
+        }
     }
 
     return resolvedEntries;
