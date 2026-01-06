@@ -43,6 +43,21 @@ export interface ClassFeature {
     descriptions: Description[] | null;
 }
 
+interface Class {
+    name: string;
+    source: string;
+    url: string;
+
+    primaryAbility: string | null;
+    spellcastAbility: string | null;
+    baseInfo: Description[] | null;
+
+    levelResources: PaginatedDescriptions | null;
+    levelFeatures: PaginatedDescriptions | null;
+    subclassLevelFeatures: { [subclass: string]: PaginatedDescriptions } | null;
+    subclassUnlockLevel: number | null;
+}
+
 interface Subclass {
     name: string;
     source: string;
@@ -105,7 +120,9 @@ function parseSubclass(data: any, subclassFeatures: ClassFeatureDictionary): Sub
             const featClassKey = getKey(featClassName, featClassSource);
             const level = parseInt(parts[5]);
 
-            if (typeof level !== 'number') throw `Subclass feature-level was not a number ${parts}`;
+            if (typeof level !== 'number') {
+                throw `Subclass feature-level was not a number ${parts}`;
+            }
 
             for (const feat of features) {
                 if (featClassKey !== feat.classKey) continue;
@@ -128,501 +145,309 @@ function parseSubclass(data: any, subclassFeatures: ClassFeatureDictionary): Sub
     };
 }
 
-class CharacterClass {
-    name: string;
-    source: string;
-    url: string;
+function parseClass(
+    data: any,
+    features: ClassFeatureDictionary,
+    subclassFeatures: ClassFeatureDictionary,
+    subclasses: SubclassDictionary
+): Class {
+    const name = data.name;
+    const source = data.source;
+    const url = getClassesUrl(name, source);
 
-    primaryAbility: string | null = null;
-    spellcastAbility: string | null = null;
-    baseInfo: Description[] | null = null;
+    const primaryAbility = parsePrimaryAbility(data);
+    const spellcastAbility = parseSpellcastAbility(data);
+    const baseInfo = parseBaseInfo(data);
 
-    levelResources: PaginatedDescriptions | null = null;
-    levelFeatures: PaginatedDescriptions | null = null;
-    subclassLevelFeatures: { [subclass: string]: PaginatedDescriptions } | null = null;
-    subclassUnlockLevel: number | null = null;
+    const levelResources = null;
+    const levelFeatures = null;
+    const subclassLevelFeatures = null;
+    const subclassUnlockLevel = 0;
 
-    constructor(
-        data: any,
-        features: ClassFeatureDictionary,
-        subclassFeatures: ClassFeatureDictionary,
-        subclasses: SubclassDictionary
-    ) {
-        this.name = data.name;
-        this.source = data.source;
-        this.url = getClassesUrl(this.name, this.source);
+    // TODO
+    // const levelResources = parseLevelResources(data);
+    // const levelFeatures = parseLevelFeatures(features);
+    // const { subclassLevelFeatures, subclassUnlockLevel } = parseSubclassData(subclasses, subclassFeatures);
 
-        this.setPrimaryAbility(data);
-        this.spellcastAbility = data.spellcastingAbility ? parseAbilityScore(data.spellcastingAbility) : null;
-        this.setBaseInfo(data);
+    return {
+        name,
+        source,
+        url,
+        primaryAbility,
+        spellcastAbility,
+        baseInfo,
+        levelResources,
+        levelFeatures,
+        subclassLevelFeatures,
+        subclassUnlockLevel,
+    };
+}
 
-        this.setLevelResources(data);
-        this.setLevelFeatures(features);
-        this.setSubclassData(subclasses, subclassFeatures);
+function parsePrimaryAbility(data: any): string | null {
+    if (!data.primaryAbility) {
+        return null;
     }
 
-    toJSON() {
-        // This function isn't strictly required, but it forces the name & source to be at the top, making the files easier to read.
-        return {
-            name: this.name,
-            source: this.source,
-            url: this.url,
-            subclassUnlockLevel: this.subclassUnlockLevel,
-            primaryAbility: this.primaryAbility,
-            spellcastAbility: this.spellcastAbility,
-            baseInfo: this.baseInfo,
-            levelResources: this.levelResources,
-            levelFeatures: this.levelFeatures,
-            subclassLevelFeatures: this.subclassLevelFeatures,
-        };
+    const groups: string[] = [];
+
+    for (const abilityGroup of data.primaryAbility) {
+        const andGroup: string[] = [];
+
+        // Each abilityGroup is an object like { "str": true }
+        Object.keys(abilityGroup).forEach((ability) => {
+            if (abilityGroup[ability]) {
+                andGroup.push(parseAbilityScore(ability));
+            }
+        });
+
+        groups.push(joinStringsWithAnd(andGroup));
     }
 
-    private setPrimaryAbility(data: any) {
-        if (!data.primaryAbility) return;
-        const primaryAbility: any[] = data.primaryAbility;
+    return joinStringsWithOr(groups);
+}
 
-        const orGroups: string[] = [];
+function parseSpellcastAbility(data: any): string | null {
+    if (!data.spellcastAbility) {
+        return null;
+    }
+    return parseAbilityScore(data.spellcastAbility);
+}
 
-        for (const abilityGroup of primaryAbility) {
-            const andGroup: string[] = [];
+function parseClassArmorProficiencies(proficiency: any): string[] {
+    const armors: string[] = [];
+    let hasShields = false;
 
-            // Each abilityGroup is an object like { "str": true }
-            Object.keys(abilityGroup).forEach((ability) => {
-                if (abilityGroup[ability]) {
-                    andGroup.push(parseAbilityScore(ability));
-                }
-            });
-
-            orGroups.push(joinStringsWithAnd(andGroup));
+    for (let armorType of proficiency) {
+        const armor = armorType.proficiency ? armorType.proficiency : armorType;
+        if (armor === 'shield') {
+            hasShields = true;
+        } else if (armor) {
+            armors.push(`${armor} armor`);
         }
-
-        this.primaryAbility = joinStringsWithOr(orGroups);
+    }
+    if (hasShields) {
+        armors.push('shields');
     }
 
-    private handleProficiencies(proficiencies: { [type: string]: any }): Description[] {
-        const info: Description[] = [];
+    return armors;
+}
 
-        const entries: string[] = [];
-        for (const [type, proficiency] of Object.entries(proficiencies)) {
-            let label = title(type);
-            if (label.endsWith('s')) {
-                label = label.slice(0, -1);
+function parseClassWeaponProficiencies(proficiency: any): string[] {
+    const weapons: string[] = [];
+    for (const weaponType of proficiency as any) {
+        if (typeof weaponType === 'object' && weaponType !== null) {
+            if (weaponType.proficiency) {
+                weapons.push(capitalize(weaponType.proficiency));
             }
-
-            switch (type) {
-                case 'armor': {
-                    const armor: string[] = [];
-                    let hasShields = false;
-                    for (let armorType of proficiency) {
-                        if (armorType.proficiency) armorType = armorType.proficiency;
-                        if (armorType === 'shield') {
-                            hasShields = true;
-                            continue;
-                        }
-
-                        armor.push(`${capitalize(armorType)} armor`);
-                    }
-                    if (hasShields) {
-                        armor.push('Shields');
-                    }
-                    entries.push(`Armor Proficiencies: ${joinStringsWithAnd(armor)}`);
-                    break;
-                }
-                case 'weapons': {
-                    const weapons: string[] = [];
-                    for (const weaponType of proficiency) {
-                        if (typeof weaponType === 'object' && weaponType !== null) {
-                            const weaponProficiency = weaponType.proficiency;
-                            if (weaponProficiency) {
-                                weapons.push(capitalize(weaponProficiency));
-                            }
-                        } else {
-                            weapons.push(capitalize(cleanDNDText(weaponType)));
-                        }
-                    }
-                    entries.push(`Weapon Proficiencies: ${joinStringsWithAnd(weapons)}`);
-                    break;
-                }
-
-                case 'skills': {
-                    const skills = [];
-                    for (const skillProficiencies of proficiency) {
-                        const choose = skillProficiencies.choose;
-                        if (!choose) continue;
-                        const chooseFrom = choose.from;
-                        const count = parseInt(choose.count ?? '0');
-                        if (!chooseFrom || count === 0) continue;
-                        skills.push(`Choose ${count}: ${joinStringsWithOr(chooseFrom)}`);
-                    }
-                    entries.push(`Skill Proficiencies: ${joinStringsWithAnd(skills)}`);
-                    break;
-                }
-                case 'tools': {
-                    const tools: string[] = [];
-                    for (const tool of proficiency) {
-                        const toolText = cleanDNDText(tool);
-                        tools.push(toolText);
-                    }
-                    entries.push(`Tool Proficiencies: ${joinStringsWithAnd(tools)}`);
-                    break;
-                }
-                case 'toolProficiencies':
-                case 'weaponProficiencies':
-                    // Data is not of use
-                    continue;
-                default:
-                    throw new Error('Unknown proficiency type: ' + type);
-            }
+        } else {
+            weapons.push(capitalize(cleanDNDText(weaponType)));
         }
-
-        if (entries.length > 0) {
-            info.push({
-                name: 'Proficiencies',
-                type: DescriptionType.list,
-                list: {
-                    type: 'list',
-                    caption: '',
-                    entries: entries,
-                },
-            });
-        }
-        return info;
     }
 
-    private setBaseInfo(data: any) {
-        const info: Description[] = [];
+    return weapons;
+}
 
-        // hpInfo
-        if (data.hd) {
-            const hd = data.hd;
-            const sides: number = parseInt(hd.number);
-            const faces: number = parseInt(hd.faces);
+function parseClassSkillProficiencies(proficiency: any): string[] {
+    const skills = [];
+    for (const skillProficiencies of proficiency as any) {
+        const choose = skillProficiencies.choose;
+        if (!choose) continue;
+        const chooseFrom = choose.from;
+        const count = parseInt(choose.count ?? '0');
+        if (!chooseFrom || count === 0) continue;
+        skills.push(`Choose ${count}: ${joinStringsWithOr(chooseFrom)}`);
+    }
 
-            const die = `${sides}d${faces}`;
-            const averageHp = Math.floor(faces / 2) + 1;
-            const conMod = 'Con. mod';
+    return skills;
+}
 
-            const entries = [
-                `HP Die: ${die}`,
-                `Level 1 ${this.name} HP: ${faces} + ${conMod}`,
-                `HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
-            ];
+function parseClassToolProficiencies(proficiency: any): string[] {
+    return proficiency.map(cleanDNDText);
+}
 
-            info.push({
-                name: 'Health',
-                type: DescriptionType.list,
-                list: { type: 'list', caption: '', entries: entries },
-            });
+function parseClassProficiencies(proficiencies: any): Description[] {
+    if (!proficiencies) {
+        return [];
+    }
+
+    const entries: string[] = [];
+
+    for (const [type, proficiency] of Object.entries(proficiencies)) {
+        switch (type) {
+            case 'armor': {
+                const armor = parseClassArmorProficiencies(proficiency);
+                entries.push(`Armor Proficiencies: ${joinStringsWithAnd(armor)}`);
+                break;
+            }
+            case 'weapons': {
+                const weapons = parseClassWeaponProficiencies(proficiency);
+                entries.push(`Weapon Proficiencies: ${joinStringsWithAnd(weapons)}`);
+                break;
+            }
+            case 'skills': {
+                const skills = parseClassSkillProficiencies(proficiency);
+                entries.push(`Skill Proficiencies: ${joinStringsWithAnd(skills)}`);
+                break;
+            }
+            case 'tools': {
+                const tools = parseClassToolProficiencies(proficiency);
+                entries.push(`Tool Proficiencies: ${joinStringsWithAnd(tools)}`);
+                break;
+            }
+            case 'toolProficiencies':
+            case 'weaponProficiencies':
+                // Data is not of use
+                continue;
+            default:
+                throw new Error('Unknown proficiency type: ' + type);
+        }
+    }
+
+    if (entries.length === 0) {
+        return [];
+    }
+
+    return [
+        {
+            name: 'Proficiencies',
+            type: DescriptionType.list,
+            list: {
+                type: 'list',
+                caption: '',
+                entries: entries,
+            },
+        },
+    ];
+}
+
+function parseMulticlassing(data: any): Description[] {
+    if (!data) {
+        return [];
+    }
+
+    if (Object.keys(data).length === 0) {
+        return [];
+    }
+
+    const multiclassData: Description[] = [];
+
+    // Requirements
+    let requirements = data.requirements;
+    if (requirements) {
+        let useAnd = true;
+        if (requirements.or) {
+            requirements = requirements.or[0];
+            useAnd = false;
         }
 
-        // Saving Proficiencies
-        const profData: Description[] = [];
-        if (data.proficiency) {
-            let savingProficiencies: string[] = data.proficiency;
-            savingProficiencies = savingProficiencies.map((proficiency) => parseAbilityScore(proficiency));
-
-            profData.push({
-                name: 'Saving Throw Proficiencies',
-                type: DescriptionType.list,
-                list: {
-                    type: 'list',
-                    caption: '',
-                    entries: savingProficiencies,
-                },
-            });
-        }
-
-        // startingProficiencies
-        if (data.startingProficiencies) {
-            const startingProficiencies = this.handleProficiencies(data.startingProficiencies);
-            profData.push(...startingProficiencies);
-        }
-
-        info.push(...profData);
-
-        // startEquipment
-        if (data.startingEquipment) {
-            // Old class notation uses 'default', new uses 'entries'
-            const startingEquipment = data.startingEquipment;
-            const equipment = startingEquipment.default ?? startingEquipment.entries;
-
-            if (equipment) {
-                const entries: string[] = [];
-                for (const line of equipment) {
-                    entries.push(capitalize(cleanDNDText(line)));
-                }
-
-                // If entries only has one item, return a text
-                if (entries.length === 1) {
-                    info.push({
-                        name: 'Starting Equipment',
-                        type: DescriptionType.text,
-                        value: entries[0],
-                    });
-                } else {
-                    info.push({
-                        name: 'Starting Equipment',
-                        type: DescriptionType.list,
-                        list: {
-                            type: 'list',
-                            caption: '',
-                            entries: entries,
-                        },
-                    });
-                }
+        const skills: string[] = [];
+        for (const skill in requirements) {
+            if (Object.prototype.hasOwnProperty.call(requirements, skill)) {
+                const lvl = requirements[skill];
+                skills.push(`${lvl} ${parseAbilityScore(skill)} `);
             }
         }
 
-        // multiclassing
-        if (data.multiclassing && Object.keys(data.multiclassing).length > 0) {
-            const multiclassData: Description[] = [];
-            const multiclassing = data.multiclassing;
+        const reqs = useAnd ? joinStringsWithAnd(skills) : joinStringsWithOr(skills);
+        const text = `Ability requirements: At least ${reqs}`;
 
-            let multiclassRequirements = multiclassing.requirements;
-            if (multiclassRequirements) {
-                let useAnd = true;
-                if (multiclassRequirements.or) {
-                    multiclassRequirements = multiclassRequirements.or[0];
-                    useAnd = false;
-                }
+        multiclassData.push({
+            name: '',
+            type: DescriptionType.text,
+            value: text,
+        });
+    }
 
-                const skills: string[] = [];
-                for (const skill in multiclassRequirements) {
-                    if (Object.prototype.hasOwnProperty.call(multiclassRequirements, skill)) {
-                        const lvl = multiclassRequirements[skill];
-                        skills.push(`${lvl} ${parseAbilityScore(skill)} `);
-                    }
-                }
+    // Proficiencies
+    if (data.proficienciesGained) {
+        multiclassData.push(...parseClassProficiencies(data.proficienciesGained));
+    }
 
-                const requirements = useAnd ? joinStringsWithAnd(skills) : joinStringsWithOr(skills);
-                const text = `Ability requirements: At least ${requirements}`;
+    return multiclassData;
+}
 
-                multiclassData.push({ name: '', type: DescriptionType.text, value: text });
+function parseBaseInfo(data: any): Description[] {
+    const info: Description[] = [];
+
+    const name = data.name;
+
+    // Hit dice
+    if (data.hd) {
+        const sides = parseInt(data.hd.number);
+        const faces = parseInt(data.hd.faces);
+
+        const die = `${sides}d${faces}`;
+        const averageHp = Math.floor(faces / 2) + 1;
+        const entries = [
+            `HP Die: ${die}`,
+            `Level 1 ${name} HP: ${faces} + Con. mod`,
+            `HP per ${name} level: ${die} + Con. mod *or* ${averageHp} + Con. mod`,
+        ];
+
+        info.push({
+            name: 'Health',
+            type: DescriptionType.list,
+            list: { type: 'list', caption: '', entries: entries },
+        });
+    }
+
+    // Saving throw proficiencies
+    if (data.proficiency) {
+        const savingProficiencies = data.proficiency.map(parseAbilityScore);
+        info.push({
+            name: 'Saving Throw Proficiencies',
+            type: DescriptionType.list,
+            list: { type: 'list', caption: '', entries: savingProficiencies },
+        });
+    }
+
+    // Starting proficiencies (e.g. skills, tools, armor...)
+    if (data.startingProficiencies) {
+        info.push(...parseClassProficiencies(data.startingProficiencies));
+    }
+
+    // Starting equipment
+    if (data.startingEquipment) {
+        const equipment = data.startingEquipment.default ?? data.startingEquipment.entries;
+
+        if (equipment) {
+            const entries = equipment.map(cleanDNDText).map(capitalize);
+            // If entries only has one item, return a text
+            if (entries.length === 1) {
+                info.push({
+                    name: 'Starting Equipment',
+                    type: DescriptionType.text,
+                    value: entries[0],
+                });
+            } else {
+                info.push({
+                    name: 'Starting Equipment',
+                    type: DescriptionType.list,
+                    list: { type: 'list', caption: '', entries: entries },
+                });
             }
+        }
+    }
 
-            const multiclassProficiencies = multiclassing.proficienciesGained;
-            if (multiclassProficiencies) {
-                multiclassData.push(...this.handleProficiencies(multiclassProficiencies));
-            }
-
-            // Add a section divider to the multiclassing data
-            if (multiclassData.length > 0) {
-                multiclassData[0].name = 'Multiclassing';
-            }
-            info.push(...multiclassData);
-        } else if (!this.name.toLowerCase().includes('sidekick')) {
-            // If no multiclass data is present, use default. (Does not apply to sidekick classes)
+    // Multi-classing
+    if (data.multiclassing) {
+        const multiclassing = parseMulticlassing(data.multiclassing);
+        if (multiclassing.length > 0) {
+            // Add the multiclassing header
+            multiclassing[0].name = 'Multiclassing';
+            info.push(...multiclassing);
+        }
+        // If no multiclass data is present, use default. (Does not apply to sidekick classes)
+        else if (!name.toLowerCase().includes('sidekick')) {
             info.push({
                 name: 'Multiclassing',
                 type: DescriptionType.text,
                 value: 'To qualify for a new class, you must have a score of at least 13 in the primary ability of the new class and your current classes.',
             });
         }
-
-        this.baseInfo = info;
     }
 
-    private getSpellLevelResources(data: any): string[] | null {
-        // Initialize an array of 20 arrays, one for each level (1-20)
-        const spellResources: string[][] = Array.from({ length: 20 }, () => []);
-
-        if (data.cantripProgression) {
-            for (let i = 0; i < data.cantripProgression.length; i++) {
-                const cantripCount = data.cantripProgression[i];
-                if (cantripCount != null) {
-                    spellResources[i].push(`${cantripCount} Cantrips known`);
-                }
-            }
-        }
-
-        const spellsKnown = data.spellsKnownProgression ?? data.spellsKnownProgressionFixed;
-        if (spellsKnown) {
-            let spellTotal = 0;
-            for (let i = 0; i < spellsKnown.length; i++) {
-                spellTotal = data.spellsKnownProgression ? spellsKnown[i] : spellTotal + spellsKnown[i];
-                if (spellTotal != null) {
-                    spellResources[i].push(`${spellTotal} Spells known`);
-                }
-            }
-        }
-
-        if (data.preparedSpellsProgression) {
-            for (let i = 0; i < data.preparedSpellsProgression.length; i++) {
-                const preparedCount = data.preparedSpellsProgression[i];
-                if (preparedCount != null) {
-                    spellResources[i].push(`${preparedCount} Prepared Spells`);
-                }
-            }
-        }
-
-        // Check if all spellResources are empty
-        if (spellResources.every((arr) => arr.length === 0)) return null;
-
-        const result: string[] = [];
-        for (let i = 0; i < spellResources.length; i++) {
-            result.push(spellResources[i].join('\n'));
-        }
-        return result;
-    }
-
-    private getClassResources(data: any): string[] | null {
-        const classResources: string[] = [];
-
-        const classTableGroups = data.classTableGroups;
-        if (!classTableGroups) return null;
-
-        for (const tableGroup of classTableGroups) {
-            const colLabels = tableGroup.colLabels;
-            const rows = tableGroup.rows;
-
-            if (!rows) continue;
-
-            for (let level = 0; level < rows.length; level++) {
-                const row = rows[level];
-                const text: string[] = [];
-
-                // Every class has the same proficiency-bonus scaling, starting on +2, scaling with 1 every 4 levels.
-                text.push(`+${2 + Math.floor(level / 4)} Proficiency Bonus`);
-
-                for (let i = 0; i < row.length; i++) {
-                    const label = cleanDNDText(colLabels[i]);
-
-                    if (label.toLowerCase().includes('spell')) continue;
-                    if (label.toLowerCase().includes('cantrip')) continue;
-
-                    let value = row[i];
-                    if (value.type) value = parseClassResourceValue(value);
-                    if (typeof value === 'string') value = cleanDNDText(value);
-
-                    text.push(`${value} ${label}`);
-                }
-
-                classResources.push(text.join('\n'));
-            }
-        }
-
-        return classResources.length === 0 ? null : classResources;
-    }
-
-    private setLevelResources(data: any) {
-        const spellSlotTables: DescriptionTable[] = [];
-        if (data.classTableGroups) {
-            for (const tableGroup of data.classTableGroups) {
-                if (!tableGroup.rowsSpellProgression) continue;
-
-                const headers = tableGroup.colLabels.map((label: string) => cleanDNDText(label, true));
-                const title = tableGroup.title ?? 'Spell Slots per Spell Level';
-
-                for (const spellRow of tableGroup.rowsSpellProgression) {
-                    spellSlotTables.push({
-                        name: title,
-                        type: DescriptionType.table,
-                        table: {
-                            type: 'table',
-                            title,
-                            headers,
-                            rows: [spellRow],
-                        },
-                    });
-                }
-
-                break;
-            }
-        }
-
-        const spellResources = this.getSpellLevelResources(data);
-        const classResources = this.getClassResources(data);
-
-        if (!spellSlotTables && !spellResources && !classResources) this.levelResources = null;
-
-        const levelResources: PaginatedDescriptions = {};
-        for (let i = 0; i < 20; i++) {
-            const level = i + 1;
-            levelResources[level] = [];
-
-            if (spellSlotTables && spellSlotTables[i]) {
-                levelResources[level].push(spellSlotTables[i]);
-            }
-
-            if (spellResources && spellResources[i]) {
-                levelResources[level].push({
-                    name: 'Spellcasting',
-                    type: DescriptionType.text,
-                    value: spellResources[i],
-                });
-            }
-            if (classResources && classResources[i]) {
-                levelResources[level].push({
-                    name: 'Class Resources',
-                    type: DescriptionType.text,
-                    value: classResources[i],
-                });
-            }
-        }
-
-        this.levelResources = levelResources;
-    }
-
-    private setLevelFeatures(features: ClassFeatureDictionary) {
-        const levelFeatures: PaginatedDescriptions = {};
-
-        Object.values(features)
-            .flat()
-            .forEach((feature) => {
-                if (feature.classKey !== getKey(this.name, this.source)) return;
-                const levelKey = feature.level;
-                if (feature.descriptions) {
-                    if (!levelFeatures[levelKey]) levelFeatures[levelKey] = [];
-                    levelFeatures[levelKey].push(...feature.descriptions);
-                }
-            });
-
-        for (const level in levelFeatures) {
-            if (levelFeatures[level].length > 0) {
-                levelFeatures[level][0].name = 'Class Features';
-                levelFeatures[level] = resolveReferences(levelFeatures[level], features, null);
-            }
-        }
-
-        this.levelFeatures = levelFeatures;
-    }
-
-    private setSubclassData(subclasses: SubclassDictionary, subclassFeats: ClassFeatureDictionary) {
-        const result: { [subclass: string]: PaginatedDescriptions } = {};
-        let lowestLevel = 999;
-
-        for (const key in subclasses) {
-            const subclass = subclasses[key];
-
-            if (!subclass.levelFeatures) continue;
-
-            for (const feature of subclass.levelFeatures) {
-                const subclassKey = feature.subclassKey;
-                const levelKey = feature.level;
-
-                if (!subclassKey) continue;
-                if (!feature.descriptions) continue;
-
-                if (feature.level < lowestLevel) lowestLevel = feature.level;
-                if (!result[subclassKey]) result[subclassKey] = {};
-                if (!result[subclassKey][levelKey]) result[subclassKey][levelKey] = [];
-
-                result[subclassKey][levelKey].push(...feature.descriptions);
-            }
-        }
-
-        for (const subclass in result) {
-            for (const level in result[subclass]) {
-                if (result[subclass][level].length > 0) {
-                    result[subclass][level][0].name = `${subclass} Features`;
-                    result[subclass][level] = resolveReferences(result[subclass][level], null, subclassFeats);
-                }
-            }
-        }
-
-        this.subclassUnlockLevel = lowestLevel === 999 ? null : lowestLevel;
-        this.subclassLevelFeatures = result;
-    }
+    return info;
 }
 
 function resolveClassFeatReference(
@@ -969,8 +794,8 @@ export function getClassesAndClassFeats(databank: Databank): {
             classFeats.push(feat);
         }
 
-        const characterClass = new CharacterClass(cls, features, subclassFeatures, subclasses);
-        classes.push(characterClass.toJSON());
+        const class$ = parseClass(cls, features, subclassFeatures, subclasses);
+        classes.push(class$);
     }
 
     return { classes: classes.sort(entrySort), classFeats: classFeats.sort(entrySort) };
