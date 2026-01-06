@@ -22,14 +22,14 @@ export interface ClassFeatureDictionary {
 }
 
 interface SubclassDictionary {
-    [subclassKey: string]: CharacterSubclass;
+    [subclassKey: string]: Subclass;
 }
 
 interface PaginatedDescriptions {
     [level: number]: Description[];
 }
 
-export class ClassFeature {
+export interface ClassFeature {
     name: string;
     source: string;
     level: number;
@@ -37,48 +37,65 @@ export class ClassFeature {
     className: string;
     classSource: string;
     classKey: string;
-    subclassName: string | null = null;
-    subclassSource: string | null = null;
-    subclassKey: string | null = null;
-    descriptions: Description[] | null = null;
-
-    constructor(data: any) {
-        this.name = data.name;
-        this.source = data.source;
-        this.level = data.level;
-
-        this.className = data.className;
-        this.classSource = data.classSource || 'PHB';
-        this.classKey = getKey(this.className, this.classSource);
-        if (data.subclassShortName && data.subclassSource) {
-            this.subclassName = data.subclassShortName;
-            this.subclassSource = data.subclassSource;
-            this.subclassKey = getKey(data.subclassShortName, data.subclassSource);
-        }
-
-        if (data.entries) {
-            const parsedDescriptions = parseDescriptions('', data.entries);
-            if (parsedDescriptions.length > 0) this.descriptions = parsedDescriptions;
-        }
-    }
+    subclassName: string | null;
+    subclassSource: string | null;
+    subclassKey: string | null;
+    descriptions: Description[] | null;
 }
 
-class CharacterSubclass {
+interface Subclass {
     name: string;
     source: string;
     key: string;
     classKey: string;
-    levelFeatures: ClassFeature[] | null = null;
+    levelFeatures: ClassFeature[] | null;
+}
 
-    constructor(data: any, subclassFeatures: ClassFeatureDictionary) {
-        this.name = data.name;
-        this.source = data.source;
-        this.key = getKey(data.shortName, data.source);
-        this.classKey = getKey(data.className, data.classSource);
+function parseClassFeature(feature: any): ClassFeature {
+    const name = feature.name;
+    const source = feature.source;
+    const level = feature.level;
+    const className = feature.className;
+    const classSource = feature.classSource || 'PHB';
+    const classKey = getKey(className, classSource);
 
-        if (!data.subclassFeatures) return;
+    let subclassName = null;
+    let subclassSource = null;
+    let subclassKey = null;
+    if (feature.subclassShortName && feature.subclassSource) {
+        subclassName = feature.subclassShortName ?? null;
+        subclassSource = feature.subclassSource ?? null;
+        subclassKey = getKey(subclassName, subclassSource);
+    }
 
-        const features = subclassFeatures[this.classKey];
+    let descriptions: Description[] | null = null;
+    if (feature.entries) {
+        descriptions = parseDescriptions('', feature.entries);
+    }
+
+    return {
+        name,
+        source,
+        level,
+        className,
+        classSource,
+        classKey,
+        subclassName,
+        subclassSource,
+        subclassKey,
+        descriptions,
+    };
+}
+
+function parseSubclass(data: any, subclassFeatures: ClassFeatureDictionary): Subclass {
+    const name = data.name;
+    const source = data.source;
+    const key = getKey(data.shortName, data.source);
+    const classKey = getKey(data.className, data.classSource);
+
+    let levelFeatures: ClassFeature[] | null = null;
+    if (data.subclassFeatures) {
+        const features = subclassFeatures[classKey];
         for (const subclassFeature of data.subclassFeatures) {
             const parts = subclassFeature.split('|');
             const featName = parts[0];
@@ -92,15 +109,23 @@ class CharacterSubclass {
 
             for (const feat of features) {
                 if (featClassKey !== feat.classKey) continue;
-                if (feat.subclassKey !== this.key) continue;
+                if (feat.subclassKey !== key) continue;
                 if (feat.name !== featName) continue;
                 if (feat.level !== level) continue;
 
-                if (this.levelFeatures === null) this.levelFeatures = [];
-                this.levelFeatures.push({ ...feat, level: level });
+                if (levelFeatures === null) levelFeatures = [];
+                levelFeatures.push({ ...feat, level: level });
             }
         }
     }
+
+    return {
+        name,
+        source,
+        key,
+        classKey,
+        levelFeatures,
+    };
 }
 
 class CharacterClass {
@@ -914,7 +939,7 @@ export function getClassesAndClassFeats(databank: Databank): {
 
         const features: ClassFeatureDictionary = {};
         for (const featureData of data.features.sort(entrySort)) {
-            const feature = new ClassFeature(featureData);
+            const feature = parseClassFeature(featureData);
             const key = feature.classKey;
             if (!features[key]) features[key] = [];
             features[key].push(feature);
@@ -924,14 +949,14 @@ export function getClassesAndClassFeats(databank: Databank): {
         const subclassFeatures: ClassFeatureDictionary = {};
         if (data.subclassFeatures && data.subclasses) {
             for (const featureData of data.subclassFeatures.sort(entrySort)) {
-                const feature = new ClassFeature(featureData);
+                const feature = parseClassFeature(featureData);
                 const key = feature.classKey;
                 if (!subclassFeatures[key]) subclassFeatures[key] = [];
                 subclassFeatures[key].push(feature);
             }
 
             for (const subclassData of data.subclasses.sort(entrySort)) {
-                const subclass = new CharacterSubclass(subclassData, subclassFeatures);
+                const subclass = parseSubclass(subclassData, subclassFeatures);
                 const key = subclass.key;
                 if (!subclasses[key]) subclasses[key] = subclass;
             }
