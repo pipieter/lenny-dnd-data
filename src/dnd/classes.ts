@@ -52,8 +52,8 @@ interface Class {
     spellcastAbility: string | null;
     baseInfo: Description[] | null;
 
-    levelResources: PaginatedDescriptions | null;
-    levelFeatures: PaginatedDescriptions | null;
+    levelResources: PaginatedDescriptions;
+    levelFeatures: PaginatedDescriptions;
     subclassLevelFeatures: { [subclass: string]: PaginatedDescriptions } | null;
     subclassUnlockLevel: number | null;
 }
@@ -160,10 +160,9 @@ function parseClass(
     const baseInfo = parseBaseInfo(data);
 
     const levelResources = parseLevelResources(data);
+    const levelFeatures = parseLevelFeatures(name, source, features);
 
     // TODO
-    // const levelFeatures = parseLevelFeatures(features);
-    const levelFeatures = null;
     // const { subclassLevelFeatures, subclassUnlockLevel } = parseSubclassData(subclasses, subclassFeatures);
     const subclassLevelFeatures = null;
     const subclassUnlockLevel = 0;
@@ -592,6 +591,30 @@ function parseLevelResources(data: any): PaginatedDescriptions {
     }
 
     return levelResources;
+}
+
+function parseLevelFeatures(name: string, source: string, features: ClassFeatureDictionary): PaginatedDescriptions {
+    const levelFeatures: PaginatedDescriptions = {};
+
+    Object.values(features)
+        .flat()
+        .forEach((feature) => {
+            if (feature.classKey !== getKey(name, source)) return;
+            const levelKey = feature.level;
+            if (feature.descriptions) {
+                if (!levelFeatures[levelKey]) levelFeatures[levelKey] = [];
+                levelFeatures[levelKey].push(...feature.descriptions);
+            }
+        });
+
+    for (const level in levelFeatures) {
+        if (levelFeatures[level].length > 0) {
+            levelFeatures[level][0].name = 'Class Features';
+            levelFeatures[level] = resolveReferences(levelFeatures[level], features, null);
+        }
+    }
+
+    return levelFeatures;
 }
 
 function resolveClassFeatReference(
