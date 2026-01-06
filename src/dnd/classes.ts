@@ -159,27 +159,26 @@ function parseClass(
     const spellcastAbility = parseSpellcastAbility(data);
     const baseInfo = parseBaseInfo(data);
 
-    const levelResources = null;
-    const levelFeatures = null;
-    const subclassLevelFeatures = null;
-    const subclassUnlockLevel = 0;
+    const levelResources = parseLevelResources(data);
 
     // TODO
-    // const levelResources = parseLevelResources(data);
     // const levelFeatures = parseLevelFeatures(features);
+    const levelFeatures = null;
     // const { subclassLevelFeatures, subclassUnlockLevel } = parseSubclassData(subclasses, subclassFeatures);
+    const subclassLevelFeatures = null;
+    const subclassUnlockLevel = 0;
 
     return {
         name,
         source,
         url,
+        subclassUnlockLevel,
         primaryAbility,
         spellcastAbility,
         baseInfo,
         levelResources,
         levelFeatures,
         subclassLevelFeatures,
-        subclassUnlockLevel,
     };
 }
 
@@ -448,6 +447,151 @@ function parseBaseInfo(data: any): Description[] {
     }
 
     return info;
+}
+
+function parseSpellSlotTables(data: any): DescriptionTable[] {
+    if (!data.classTableGroups) {
+        return [];
+    }
+    const spellSlotTables: DescriptionTable[] = [];
+    for (const tableGroup of data.classTableGroups) {
+        if (!tableGroup.rowsSpellProgression) continue;
+
+        const headers = tableGroup.colLabels.map((label: string) => cleanDNDText(label, true));
+        const title = tableGroup.title ?? 'Spell Slots per Spell Level';
+
+        for (const spellRow of tableGroup.rowsSpellProgression) {
+            spellSlotTables.push({
+                name: title,
+                type: DescriptionType.table,
+                table: {
+                    type: 'table',
+                    title,
+                    headers,
+                    rows: [spellRow],
+                },
+            });
+        }
+
+        break;
+    }
+
+    return spellSlotTables;
+}
+
+function parseSpellLevelResources(data: any): string[] {
+    // Initialize an array of 20 arrays, one for each level (1-20)
+    const spellResources: string[][] = Array.from({ length: 20 }, () => []);
+
+    if (data.cantripProgression) {
+        for (let i = 0; i < data.cantripProgression.length; i++) {
+            const cantripCount = data.cantripProgression[i];
+            if (cantripCount != null) {
+                spellResources[i].push(`${cantripCount} Cantrips known`);
+            }
+        }
+    }
+
+    const spellsKnown = data.spellsKnownProgression ?? data.spellsKnownProgressionFixed;
+    if (spellsKnown) {
+        let spellTotal = 0;
+        for (let i = 0; i < spellsKnown.length; i++) {
+            spellTotal = data.spellsKnownProgression ? spellsKnown[i] : spellTotal + spellsKnown[i];
+            if (spellTotal != null) {
+                spellResources[i].push(`${spellTotal} Spells known`);
+            }
+        }
+    }
+
+    if (data.preparedSpellsProgression) {
+        for (let i = 0; i < data.preparedSpellsProgression.length; i++) {
+            const preparedCount = data.preparedSpellsProgression[i];
+            if (preparedCount != null) {
+                spellResources[i].push(`${preparedCount} Prepared Spells`);
+            }
+        }
+    }
+
+    // Check if all spellResources are empty
+    if (spellResources.every((arr) => arr.length === 0)) return [];
+
+    const result: string[] = [];
+    for (let i = 0; i < spellResources.length; i++) {
+        result.push(spellResources[i].join('\n'));
+    }
+    return result;
+}
+
+function parseClassResources(data: any): string[] {
+    const classResources: string[] = [];
+
+    const classTableGroups = data.classTableGroups;
+    if (!classTableGroups) return [];
+
+    for (const tableGroup of classTableGroups) {
+        const colLabels = tableGroup.colLabels;
+        const rows = tableGroup.rows;
+
+        if (!rows) continue;
+
+        for (let level = 0; level < rows.length; level++) {
+            const row = rows[level];
+            const text: string[] = [];
+
+            // Every class has the same proficiency-bonus scaling, starting on +2, scaling with 1 every 4 levels.
+            text.push(`+${2 + Math.floor(level / 4)} Proficiency Bonus`);
+
+            for (let i = 0; i < row.length; i++) {
+                const label = cleanDNDText(colLabels[i]);
+
+                if (label.toLowerCase().includes('spell')) continue;
+                if (label.toLowerCase().includes('cantrip')) continue;
+
+                let value = row[i];
+                if (value.type) value = parseClassResourceValue(value);
+                if (typeof value === 'string') value = cleanDNDText(value);
+
+                text.push(`${value} ${label}`);
+            }
+
+            classResources.push(text.join('\n'));
+        }
+    }
+
+    return classResources;
+}
+
+function parseLevelResources(data: any): PaginatedDescriptions {
+    const spellSlotTables = parseSpellSlotTables(data);
+    const spellResources = parseSpellLevelResources(data);
+    const classResources = parseClassResources(data);
+
+    const levelResources: PaginatedDescriptions = {};
+    for (let i = 0; i < 20; i++) {
+        const level = i + 1;
+        levelResources[level] = [];
+
+        if (spellSlotTables[i]) {
+            levelResources[level].push(spellSlotTables[i]);
+        }
+
+        if (spellResources[i]) {
+            levelResources[level].push({
+                name: 'Spellcasting',
+                type: DescriptionType.text,
+                value: spellResources[i],
+            });
+        }
+        if (classResources[i]) {
+            levelResources[level].push({
+                name: 'Class Resources',
+                type: DescriptionType.text,
+                value: classResources[i],
+            });
+        }
+    }
+
+    return levelResources;
 }
 
 function resolveClassFeatReference(
