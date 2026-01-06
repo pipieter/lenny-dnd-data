@@ -11,7 +11,6 @@ import {
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
-    title,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
@@ -211,7 +210,7 @@ function parseClassArmorProficiencies(proficiency: any): string[] {
     const armors: string[] = [];
     let hasShields = false;
 
-    for (let armorType of proficiency) {
+    for (const armorType of proficiency) {
         const armor = armorType.proficiency ? armorType.proficiency : armorType;
         if (armor === 'shield') {
             hasShields = true;
