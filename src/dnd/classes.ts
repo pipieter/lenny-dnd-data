@@ -206,10 +206,10 @@ function parsePrimaryAbility(data: any): string | null {
 }
 
 function parseSpellcastAbility(data: any): string | null {
-    if (!data.spellcastAbility) {
+    if (!data.spellcastingAbility) {
         return null;
     }
-    return parseAbilityScore(data.spellcastAbility);
+    return parseAbilityScore(data.spellcastingAbility);
 }
 
 function parseClassArmorProficiencies(proficiency: any): string[] {
