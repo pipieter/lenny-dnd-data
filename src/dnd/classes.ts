@@ -607,7 +607,7 @@ function parseLevelFeatures(name: string, source: string, features: ClassFeature
     for (const level in levelFeatures) {
         if (levelFeatures[level].length > 0) {
             levelFeatures[level][0].name = 'Class Features';
-            levelFeatures[level] = resolveReferences(levelFeatures[level], features, null);
+            levelFeatures[level] = resolveDescriptionReferences(levelFeatures[level], features, null);
         }
     }
 
@@ -648,7 +648,7 @@ function parseSubclassData(
         for (const level in result[subclass]) {
             if (result[subclass][level].length > 0) {
                 result[subclass][level][0].name = `${subclass} Features`;
-                result[subclass][level] = resolveReferences(result[subclass][level], null, subclassFeats);
+                result[subclass][level] = resolveDescriptionReferences(result[subclass][level], null, subclassFeats);
             }
         }
     }
@@ -741,11 +741,11 @@ function resolveOptionalFeatReference(text: string): string {
     return updatedValue;
 }
 
-function resolveSingleReference(
+function resolveReference(
     text: string,
     classFeats: ClassFeatureDictionary | null,
     subclassFeats: ClassFeatureDictionary | null
-): { resolved: string | null; additionalEntries: Description[] } {
+): { resolved: string; additionalEntries: Description[] } {
     if (!text.includes(`{#`)) {
         return { resolved: text, additionalEntries: [] };
     }
@@ -762,7 +762,42 @@ function resolveSingleReference(
     }
 }
 
-function resolveReferences(
+function resolveListReferences(
+    list: List,
+    classFeats: ClassFeatureDictionary | null,
+    subclassFeats: ClassFeatureDictionary | null
+): { resolved: List; additionalEntries: Description[] } {
+    const resolved: List = { type: 'list', caption: list.caption, entries: [] };
+    const additionalEntries: Description[] = [];
+
+    if (!list.entries) {
+        return { resolved, additionalEntries };
+    }
+
+    for (const subentry of list.entries) {
+        if (typeof subentry === 'string') {
+            const { resolved: subresolved, additionalEntries: subadditionalEntries } = resolveReference(
+                subentry,
+                classFeats,
+                subclassFeats
+            );
+            resolved.entries.push(subresolved);
+            additionalEntries.push(...subadditionalEntries);
+        } else {
+            const { resolved: subresolved, additionalEntries: subadditionalEntries } = resolveListReferences(
+                subentry,
+                classFeats,
+                subclassFeats
+            );
+            resolved.entries.push(subresolved);
+            additionalEntries.push(...subadditionalEntries);
+        }
+    }
+
+    return { resolved, additionalEntries };
+}
+
+function resolveDescriptionReferences(
     entries: Description[],
     classFeats: ClassFeatureDictionary | null = null,
     subclassFeats: ClassFeatureDictionary | null = null,
@@ -771,62 +806,20 @@ function resolveReferences(
     const resolvedEntries: Description[] = [];
 
     for (const entry of entries) {
+        // DescriptionText
         if (entry.type === DescriptionType.text) {
-            const text = entry.value as string;
-            const { resolved, additionalEntries } = resolveSingleReference(text, classFeats, subclassFeats);
-
-            if (resolved) {
-                resolvedEntries.push({ ...entry, value: resolved });
-                resolvedEntries.push(...additionalEntries);
-            } else {
-                resolvedEntries.push(entry);
-            }
-        } else if (entry.type === DescriptionType.table) {
+            const { resolved, additionalEntries } = resolveReference(entry.value, classFeats, subclassFeats);
+            resolvedEntries.push({ ...entry, value: resolved });
+            resolvedEntries.push(...additionalEntries);
+        }
+        // DescriptionTable
+        else if (entry.type === DescriptionType.table) {
             resolvedEntries.push(entry); // For now, tables don't have any references.
-        } else if (entry.type === DescriptionType.list) {
-            function resolveDescriptionList(description: DescriptionList): {
-                resolved: Description;
-                additionalEntries: Description[];
-            } {
-                const additionalEntries: Description[] = [];
-
-                function resolveList(list: List): List {
-                    const result: List = {
-                        type: 'list',
-                        caption: list.caption,
-                        entries: [],
-                    };
-                    if (!list.entries) {
-                        return result;
-                    }
-
-                    for (const subentry of list.entries) {
-                        if (typeof subentry === 'string') {
-                            const { resolved: subresolved, additionalEntries: subadditionalEntries } =
-                                resolveSingleReference(subentry, classFeats, subclassFeats);
-                            if (subresolved) {
-                                result.entries.push(subresolved);
-                            }
-                            additionalEntries.push(...subadditionalEntries);
-                        } else {
-                            const subresolved = resolveList(subentry);
-                            result.entries.push(subresolved);
-                        }
-                    }
-
-                    return result;
-                }
-
-                const resolvedList: DescriptionList = {
-                    name: entry.name,
-                    type: DescriptionType.list,
-                    list: resolveList(description.list),
-                };
-
-                return { resolved: resolvedList, additionalEntries };
-            }
-            const { resolved, additionalEntries } = resolveDescriptionList(entry);
-            resolvedEntries.push(resolved);
+        }
+        // DescriptionList
+        else if (entry.type === DescriptionType.list) {
+            const { resolved, additionalEntries } = resolveListReferences(entry.list, classFeats, subclassFeats);
+            resolvedEntries.push({ ...entry, list: resolved });
             resolvedEntries.push(...additionalEntries);
         } else {
             throw `Could not resolve unsupported DescriptionType ${entry.type}`;
@@ -844,11 +837,12 @@ function resolveReferences(
 
         for (let j = indexesToResolve.length - 1; j >= 0; j--) {
             const index = indexesToResolve[j];
-            const resolved = resolveReferences([entriesToSubResolve[j]], classFeats, subclassFeats, true);
+            const resolved = resolveDescriptionReferences([entriesToSubResolve[j]], classFeats, subclassFeats, true);
             resolvedEntries.splice(index, 1, ...resolved);
         }
     }
 
+    // Validate the results to ensure no remaining references remain
     for (const resolvedEntry of resolvedEntries) {
         if (resolvedEntry.type === DescriptionType.text) {
             checkForDisallowedSymbols(resolvedEntry.value);
@@ -889,7 +883,7 @@ function classFeatsToParsedFeats(
             if (!feat.descriptions) continue;
             if (blacklist.includes(feat.name)) continue;
 
-            feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
+            feat.descriptions = resolveDescriptionReferences(feat.descriptions, classFeats, subclassFeats);
 
             parsedFeats.push({
                 name: getClassFeatName(feat.name, feat.level, feat.className),
@@ -911,7 +905,7 @@ function classFeatsToParsedFeats(
             if (!feat.subclassName || !feat.subclassSource)
                 throw `Subclass feat ${feat.name} does not have subclass name or source`;
 
-            feat.descriptions = resolveReferences(feat.descriptions, classFeats, subclassFeats);
+            feat.descriptions = resolveDescriptionReferences(feat.descriptions, classFeats, subclassFeats);
 
             parsedFeats.push({
                 name: getClassFeatName(feat.name, feat.level, feat.subclassName),
