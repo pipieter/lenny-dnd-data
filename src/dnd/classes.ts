@@ -177,13 +177,12 @@ class CharacterClass {
     private handleProficiencies(proficiencies: { [type: string]: any }): Description[] {
         const info: Description[] = [];
 
+        const entries: string[] = [];
         for (const [type, proficiency] of Object.entries(proficiencies)) {
             let label = title(type);
             if (label.endsWith('s')) {
                 label = label.slice(0, -1);
             }
-
-            let entries: string[] = [];
 
             switch (type) {
                 case 'armor': {
@@ -198,10 +197,10 @@ class CharacterClass {
 
                         armor.push(`${capitalize(armorType)} armor`);
                     }
-                    entries = armor;
                     if (hasShields) {
-                        entries.push('Shields');
+                        armor.push('Shields');
                     }
+                    entries.push(`Armor Proficiencies: ${joinStringsWithAnd(armor)}`);
                     break;
                 }
                 case 'weapons': {
@@ -216,19 +215,21 @@ class CharacterClass {
                             weapons.push(capitalize(cleanDNDText(weaponType)));
                         }
                     }
-                    entries = weapons;
+                    entries.push(`Weapon Proficiencies: ${joinStringsWithAnd(weapons)}`);
                     break;
                 }
 
                 case 'skills': {
+                    const skills = [];
                     for (const skillProficiencies of proficiency) {
                         const choose = skillProficiencies.choose;
                         if (!choose) continue;
-                        const skills = choose.from;
+                        const chooseFrom = choose.from;
                         const count = parseInt(choose.count ?? '0');
-                        if (!skills || count === 0) continue;
-                        entries.push(`Choose ${count}: ${joinStringsWithOr(skills)}`);
+                        if (!chooseFrom || count === 0) continue;
+                        skills.push(`Choose ${count}: ${joinStringsWithOr(chooseFrom)}`);
                     }
+                    entries.push(`Skill Proficiencies: ${joinStringsWithAnd(skills)}`);
                     break;
                 }
                 case 'tools': {
@@ -237,7 +238,7 @@ class CharacterClass {
                         const toolText = cleanDNDText(tool);
                         tools.push(toolText);
                     }
-                    entries = tools;
+                    entries.push(`Tool Proficiencies: ${joinStringsWithAnd(tools)}`);
                     break;
                 }
                 case 'toolProficiencies':
@@ -247,18 +248,18 @@ class CharacterClass {
                 default:
                     throw new Error('Unknown proficiency type: ' + type);
             }
+        }
 
-            if (entries.length > 0) {
-                info.push({
-                    name: '',
-                    type: DescriptionType.list,
-                    list: {
-                        type: 'list',
-                        caption: `${label} Proficiencies`,
-                        entries: entries,
-                    },
-                });
-            }
+        if (entries.length > 0) {
+            info.push({
+                name: '',
+                type: DescriptionType.list,
+                list: {
+                    type: 'list',
+                    caption: 'Proficiencies',
+                    entries: entries,
+                },
+            });
         }
         return info;
     }
