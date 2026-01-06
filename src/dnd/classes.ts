@@ -252,11 +252,11 @@ class CharacterClass {
 
         if (entries.length > 0) {
             info.push({
-                name: '',
+                name: 'Proficiencies',
                 type: DescriptionType.list,
                 list: {
                     type: 'list',
-                    caption: 'Proficiencies',
+                    caption: '',
                     entries: entries,
                 },
             });
@@ -297,11 +297,11 @@ class CharacterClass {
             savingProficiencies = savingProficiencies.map((proficiency) => parseAbilityScore(proficiency));
 
             profData.push({
-                name: '',
+                name: 'Saving Throw Proficiencies',
                 type: DescriptionType.list,
                 list: {
                     type: 'list',
-                    caption: 'Saving Throw Proficiencies',
+                    caption: '',
                     entries: savingProficiencies,
                 },
             });
