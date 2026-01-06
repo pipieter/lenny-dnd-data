@@ -161,11 +161,7 @@ function parseClass(
 
     const levelResources = parseLevelResources(data);
     const levelFeatures = parseLevelFeatures(name, source, features);
-
-    // TODO
-    // const { subclassLevelFeatures, subclassUnlockLevel } = parseSubclassData(subclasses, subclassFeatures);
-    const subclassLevelFeatures = null;
-    const subclassUnlockLevel = 0;
+    const { subclassLevelFeatures, subclassUnlockLevel } = parseSubclassData(subclasses, subclassFeatures);
 
     return {
         name,
@@ -428,21 +424,23 @@ function parseBaseInfo(data: any): Description[] {
     }
 
     // Multi-classing
+    let multiclassing = [];
     if (data.multiclassing) {
-        const multiclassing = parseMulticlassing(data.multiclassing);
+        multiclassing = parseMulticlassing(data.multiclassing);
         if (multiclassing.length > 0) {
             // Add the multiclassing header
             multiclassing[0].name = 'Multiclassing';
             info.push(...multiclassing);
         }
-        // If no multiclass data is present, use default. (Does not apply to sidekick classes)
-        else if (!name.toLowerCase().includes('sidekick')) {
-            info.push({
-                name: 'Multiclassing',
-                type: DescriptionType.text,
-                value: 'To qualify for a new class, you must have a score of at least 13 in the primary ability of the new class and your current classes.',
-            });
-        }
+    }
+
+    // If no multiclass data is present, use default. (Does not apply to sidekick classes)
+    if (multiclassing.length === 0 && !name.toLowerCase().includes('sidekick')) {
+        info.push({
+            name: 'Multiclassing',
+            type: DescriptionType.text,
+            value: 'To qualify for a new class, you must have a score of at least 13 in the primary ability of the new class and your current classes.',
+        });
     }
 
     return info;
@@ -615,6 +613,51 @@ function parseLevelFeatures(name: string, source: string, features: ClassFeature
     }
 
     return levelFeatures;
+}
+
+function parseSubclassData(
+    subclasses: SubclassDictionary,
+    subclassFeats: ClassFeatureDictionary
+): {
+    subclassUnlockLevel: number | null;
+    subclassLevelFeatures: Record<string, PaginatedDescriptions>;
+} {
+    const result: { [subclass: string]: PaginatedDescriptions } = {};
+    let lowestLevel = 999;
+
+    for (const key in subclasses) {
+        const subclass = subclasses[key];
+
+        if (!subclass.levelFeatures) continue;
+
+        for (const feature of subclass.levelFeatures) {
+            const subclassKey = feature.subclassKey;
+            const levelKey = feature.level;
+
+            if (!subclassKey) continue;
+            if (!feature.descriptions) continue;
+
+            if (feature.level < lowestLevel) lowestLevel = feature.level;
+            if (!result[subclassKey]) result[subclassKey] = {};
+            if (!result[subclassKey][levelKey]) result[subclassKey][levelKey] = [];
+
+            result[subclassKey][levelKey].push(...feature.descriptions);
+        }
+    }
+
+    for (const subclass in result) {
+        for (const level in result[subclass]) {
+            if (result[subclass][level].length > 0) {
+                result[subclass][level][0].name = `${subclass} Features`;
+                result[subclass][level] = resolveReferences(result[subclass][level], null, subclassFeats);
+            }
+        }
+    }
+
+    const subclassUnlockLevel = lowestLevel === 999 ? null : lowestLevel;
+    const subclassLevelFeatures = result;
+
+    return { subclassUnlockLevel, subclassLevelFeatures };
 }
 
 function resolveClassFeatReference(
