@@ -60,20 +60,16 @@
      "caption": "",
      "entries": [
       "**Weapon Proficiency**: You gain proficiency in one of the following:",
+      {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "simple melee weapons",
+        "simple ranged and simple finesse weapons"
+       ]
+      },
       "**Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.",
       "**Repeatable**: You can take this feat more than once."
-     ]
-    }
-   },
-   {
-    "name": "",
-    "type": "list",
-    "list": {
-     "type": "list",
-     "caption": "",
-     "entries": [
-      "simple melee weapons",
-      "simple ranged and simple finesse weapons"
      ]
     }
    }
@@ -1112,20 +1108,16 @@
      "caption": "",
      "entries": [
       "**Ignore Pain**: Choose one of the following:",
+      {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Whenever you would make a constitution saving throw to maintain concentration, make a wisdom saving throw instead.",
+        "Use wisdom instead of constitution for maximum hit points and rolling hit dice."
+       ]
+      },
       "**Ignore Death**: Once as a bonus action you can ignore all of the negative effects of having zero or less hit points (including death saving throws) for 5 rounds which conclude at the start of your turn. Rounds where you do not spend any movement do not count towards the duration of the effect. You regain this ability after a long rest.",
       "**Repeatable**: You can take this one additional time, but if you do you must pick the other option for ignore pain."
-     ]
-    }
-   },
-   {
-    "name": "",
-    "type": "list",
-    "list": {
-     "type": "list",
-     "caption": "",
-     "entries": [
-      "Whenever you would make a constitution saving throw to maintain concentration, make a wisdom saving throw instead.",
-      "Use wisdom instead of constitution for maximum hit points and rolling hit dice."
      ]
     }
    }
