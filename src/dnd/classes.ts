@@ -736,6 +736,9 @@ function resolveReferences(
                         caption: list.caption,
                         entries: [],
                     };
+                    if (!list.entries) {
+                        return result;
+                    }
 
                     for (const subentry of list.entries) {
                         if (typeof subentry === 'string') {

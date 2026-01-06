@@ -318,9 +318,11 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
         }
         case 'list': {
             const entries = description.items.flatMap(parseDescriptionBlock);
-            const { strings, tables, lists } = splitDescriptionTypes(entries);
-            const list: List = { type: 'list', caption: '', entries: strings };
-            return [list, ...lists, ...tables];
+            // Remove tables and append them afterwards
+            const tables = entries.filter((entry: any) => entry.type === 'table');
+            const nontables = entries.filter((entry: any) => entry.type !== 'table');
+            const list: List = { type: 'list', caption: '', entries: nontables };
+            return [list, ...tables];
         }
         case 'inset':
         case 'insetReadaloud': {
