@@ -137,8 +137,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Left Eye**: You cast the __legend lore__ spell, targeting one creature or object you can see.\n• **Right Eye**: You cast the __scrying__ spell.\n• **Forehead**: You cast the __divination__ spell."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Left Eye**: You cast the __legend lore__ spell, targeting one creature or object you can see.",
+      "**Right Eye**: You cast the __scrying__ spell.",
+      "**Forehead**: You cast the __divination__ spell."
+     ]
+    }
    },
    {
     "name": "",
@@ -802,6 +810,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "School of Magic",
@@ -867,6 +876,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "School of Magic",
@@ -1443,8 +1453,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Bauble Trap (Uncommon)\n• Bauble Trap (Rare)"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Bauble Trap (Uncommon)",
+      "Bauble Trap (Rare)"
+     ]
+    }
    }
   ],
   "properties": []
@@ -3337,8 +3354,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Craftwork Grimoire (Uncommon)\n• Craftwork Grimoire (Rare)\n• Craftwork Grimoire (Very Rare)"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Craftwork Grimoire (Uncommon)",
+      "Craftwork Grimoire (Rare)",
+      "Craftwork Grimoire (Very Rare)"
+     ]
+    }
    }
   ],
   "properties": []
@@ -3438,6 +3463,7 @@
     "name": "Potion Effects",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Potion Effects",
      "headers": [
       "d6",
@@ -3918,8 +3944,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You do not take fall damage unless you are incapacitated.\n• While you are falling, you may activate (or deactivate) this cloak, with no action required. While active, your descent is slowed to 10 feet per round, and for every 10 feet you fall vertically, you can glide up to 20 feet in any horizontal direction you choose."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You do not take fall damage unless you are incapacitated.",
+      "While you are falling, you may activate (or deactivate) this cloak, with no action required. While active, your descent is slowed to 10 feet per round, and for every 10 feet you fall vertically, you can glide up to 20 feet in any horizontal direction you choose."
+     ]
+    }
    }
   ],
   "properties": [
@@ -5063,6 +5096,7 @@
     "name": "Hardlight Spells",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Hardlight Spells",
      "headers": [
       "Spell",
@@ -5823,8 +5857,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Hearth Keeper's Ladle (Uncommon)\n• Hearth Keeper's Ladle (Rare)\n• Hearth Keeper's Ladle (Very Rare)"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Hearth Keeper's Ladle (Uncommon)",
+      "Hearth Keeper's Ladle (Rare)",
+      "Hearth Keeper's Ladle (Very Rare)"
+     ]
+    }
    }
   ],
   "properties": []
@@ -6624,8 +6666,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• 2 [minor beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20beneficial%20properties_xdmg) properties\n• 1 [major beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20major%20beneficial%20properties_xdmg) property\n• 2 [minor detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20detrimental%20properties_xdmg) properties"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "2 [minor beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20beneficial%20properties_xdmg) properties",
+      "1 [major beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20major%20beneficial%20properties_xdmg) property",
+      "2 [minor detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20detrimental%20properties_xdmg) properties"
+     ]
+    }
    },
    {
     "name": "Surety of Dominance",
@@ -7693,8 +7743,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• 2 [minor beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20beneficial%20properties_xdmg) properties\n• 2 [minor detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20detrimental%20properties_xdmg) properties\n• 1 [major beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20major%20beneficial%20properties_xdmg) property\n• 1 [major detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20major%20detrimental%20properties_xdmg) property"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "2 [minor beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20beneficial%20properties_xdmg) properties",
+      "2 [minor detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20detrimental%20properties_xdmg) properties",
+      "1 [major beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20major%20beneficial%20properties_xdmg) property",
+      "1 [major detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20major%20detrimental%20properties_xdmg) property"
+     ]
+    }
    },
    {
     "name": "# Voice of the Daelkyr",
@@ -8967,6 +9026,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d6",
@@ -9438,8 +9498,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Targets of the __bless__ spell are treated as being under the __bane__ spell.\n• A target of the __lesser restoration__ spell gains a level of exhaustion.\n• A target of the __protection from energy__ spell gains vulnerability to the selected element instead of resistance.\n• A target of the __death ward__ spell has disadvantage on death saving throws."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Targets of the __bless__ spell are treated as being under the __bane__ spell.",
+      "A target of the __lesser restoration__ spell gains a level of exhaustion.",
+      "A target of the __protection from energy__ spell gains vulnerability to the selected element instead of resistance.",
+      "A target of the __death ward__ spell has disadvantage on death saving throws."
+     ]
+    }
    }
   ],
   "properties": []
@@ -9659,6 +9728,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Quality",
@@ -9743,8 +9813,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The picks have the Light weapon property.\n• You gain a +1 bonus to attack and damage rolls made with the picks.\n• The picks have 3 charges, which they share. They regain 1d3 expended charges daily at dawn.\n• When you hit a target with a Melee attack using Shock, you can expend 1 charge as a bonus action to deal an additional **2d8** Lightning damage. A creature affected by this damage can't take Reactions until the start of its next turn.\n• When you hit a target with a Melee attack using Ore, you can expend 1 charge to cast __Earth Tremor__ XGE as a Reaction, centered on the target."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The picks have the Light weapon property.",
+      "You gain a +1 bonus to attack and damage rolls made with the picks.",
+      "The picks have 3 charges, which they share. They regain 1d3 expended charges daily at dawn.",
+      "When you hit a target with a Melee attack using Shock, you can expend 1 charge as a bonus action to deal an additional **2d8** Lightning damage. A creature affected by this damage can't take Reactions until the start of its next turn.",
+      "When you hit a target with a Melee attack using Ore, you can expend 1 charge to cast __Earth Tremor__ XGE as a Reaction, centered on the target."
+     ]
+    }
    },
    {
     "name": "Versatile",
@@ -10151,6 +10231,7 @@
     "name": "Staff of the Coven Spells",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Staff of the Coven Spells",
      "headers": [
       "Spell",
@@ -10865,8 +10946,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Talon Athame (Uncommon)\n• Talon Athame (Rare)\n• Talon Athame (Very Rare)"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Talon Athame (Uncommon)",
+      "Talon Athame (Rare)",
+      "Talon Athame (Very Rare)"
+     ]
+    }
    }
   ],
   "properties": []
@@ -11574,8 +11663,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Vine Braid (Uncommon)\n• Vine Braid (Rare)\n• Vine Braid (Very Rare)"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Vine Braid (Uncommon)",
+      "Vine Braid (Rare)",
+      "Vine Braid (Very Rare)"
+     ]
+    }
    }
   ],
   "properties": []

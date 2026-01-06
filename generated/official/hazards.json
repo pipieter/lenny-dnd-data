@@ -257,6 +257,7 @@
     "name": "Water Needs per Day",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Water Needs per Day",
      "headers": [
       "Size",
@@ -322,6 +323,7 @@
     "name": "Flesh Warping",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Flesh Warping",
      "headers": [
       "d100",
@@ -829,6 +831,7 @@
     "name": "Improvising Damage",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Improvising Damage",
      "headers": [
       "Dice",
@@ -866,6 +869,7 @@
     "name": "Damage Severity and Level",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Damage Severity and Level",
      "headers": [
       "Character Level",
@@ -933,6 +937,7 @@
     "name": "Improvising Damage",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Improvising Damage",
      "headers": [
       "Damage",
@@ -970,6 +975,7 @@
     "name": "Damage Severity and Level",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Damage Severity and Level",
      "headers": [
       "Character Levels",
@@ -1096,6 +1102,7 @@
     "name": "Food Needs per Day",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Food Needs per Day",
      "headers": [
       "Size",
@@ -1235,6 +1242,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Levels",
@@ -1323,6 +1331,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Levels",
@@ -1528,6 +1537,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Levels",
@@ -1585,6 +1595,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Levels",
@@ -1762,6 +1773,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Levels",
@@ -1868,6 +1880,7 @@
     "name": "Wildstorm Effects",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Wildstorm Effects",
      "headers": [
       "1d20",
@@ -1979,8 +1992,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The creature has the Frightened condition.\n• The creature has the Stunned condition.\n• The creature is Charmed by Zlan and regards anyone who would separate it from the chardalyn as an enemy."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The creature has the Frightened condition.",
+      "The creature has the Stunned condition.",
+      "The creature is Charmed by Zlan and regards anyone who would separate it from the chardalyn as an enemy."
+     ]
+    }
    }
   ]
  }

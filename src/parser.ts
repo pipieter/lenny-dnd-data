@@ -1,4 +1,4 @@
-import { BulletPoint, getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
+import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, getTablesUrl } from './urls';
 import { AbilityScores, Alignments, SpellSchools } from './5etools-conversion/data';
 import { ColLabelRows } from './dnd/tables';
@@ -11,15 +11,23 @@ export interface Range {
 }
 
 export interface Table {
+    type: 'table';
     title: string;
     headers: string[] | null;
     rows: (string | Range)[][];
+}
+
+export interface List {
+    type: 'list';
+    caption: string;
+    entries: (string | List)[];
 }
 
 export enum DescriptionType {
     text = 'text',
     table = 'table',
     hr = 'hr',
+    list = 'list',
 }
 
 export interface DescriptionHr {
@@ -39,13 +47,25 @@ export interface DescriptionTable {
     table: Table;
 }
 
-export type Description = DescriptionHr | DescriptionText | DescriptionTable;
+export interface DescriptionList {
+    name: string;
+    type: DescriptionType.list;
+    list: List;
+}
 
-export function checkForDisallowedSymbols(text: string) {
-    const disallowedSymbols = ['{', '}', '|', '[object Object]'];
-    const foundSymbols = disallowedSymbols.filter((s) => text.includes(s)).map((s) => `'${s}'`);
-    if (foundSymbols.length > 0) {
-        throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${text}'`;
+export type Description = DescriptionHr | DescriptionText | DescriptionTable | DescriptionList;
+
+export function checkForDisallowedSymbols(value: string | List) {
+    if (typeof value === 'string') {
+        const disallowedSymbols = ['{', '}', '|', '[object Object]'];
+        const foundSymbols = disallowedSymbols.filter((s) => value.includes(s)).map((s) => `'${s}'`);
+        if (foundSymbols.length > 0) {
+            throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${value}'`;
+        }
+    } else {
+        for (const entry of value.entries) {
+            checkForDisallowedSymbols(entry);
+        }
     }
 }
 
@@ -263,20 +283,23 @@ function parseDescriptionBlockFromBlocks(descriptions: any[]): string {
     return blocks.join('\n\n');
 }
 
-function splitDescriptionTypes(values: (string | Table)[]): {
+function splitDescriptionTypes(values: (string | Table | List)[]): {
     strings: string[];
     tables: Table[];
+    lists: List[];
 } {
-    const strings = [];
-    const tables = [];
+    const strings: string[] = [];
+    const tables: Table[] = [];
+    const lists: List[] = [];
     for (const value of values) {
         if (typeof value === 'string') strings.push(value);
+        else if (value.type === 'list') lists.push(value);
         else tables.push(value);
     }
-    return { strings, tables };
+    return { strings, tables, lists };
 }
 
-function parseDescriptionBlock(description: string | any): (string | Table)[] {
+function parseDescriptionBlock(description: string | any): (string | Table | List)[] {
     if (typeof description == 'string') {
         return [cleanDNDText(description)];
     }
@@ -295,19 +318,21 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
         }
         case 'list': {
             const entries = description.items.flatMap(parseDescriptionBlock);
-            const { strings, tables } = splitDescriptionTypes(entries);
-            const points = strings.map((str) => `${BulletPoint} ${str}`).join('\n');
-            return [points, ...tables];
+            // Remove tables and append them afterwards
+            const tables = entries.filter((entry: any) => entry.type === 'table');
+            const nontables = entries.filter((entry: any) => entry.type !== 'table');
+            const list: List = { type: 'list', caption: '', entries: nontables };
+            return [list, ...tables];
         }
         case 'inset':
         case 'insetReadaloud': {
             const entries = description.entries.flatMap(parseDescriptionBlock);
-            const { strings, tables } = splitDescriptionTypes(entries);
+            const { strings, tables, lists } = splitDescriptionTypes(entries);
             const entry = strings.map((str) => `*${str}*`).join('\n');
-            return [entry, ...tables];
+            return [entry, ...lists, ...tables];
         }
         case 'item': {
-            const entries: (string | Table)[] = [];
+            const entries: (string | Table | List)[] = [];
             if (description.entries) {
                 entries.push(...description.entries.flatMap(parseDescriptionBlock));
             } else if (description.entry) {
@@ -316,13 +341,13 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
                 throw "Could not find entry in description block with type 'item'";
             }
 
-            const { strings, tables } = splitDescriptionTypes(entries);
+            const { strings, tables, lists } = splitDescriptionTypes(entries);
             const entry = strings.join('\n');
             if (description.name) {
                 const name = description.name.replace(/:$/, '');
-                return [cleanDNDText(`**${name}**: ${entry}`), ...tables];
+                return [cleanDNDText(`**${name}**: ${entry}`), ...lists, ...tables];
             } else {
-                return [cleanDNDText(entry), ...tables];
+                return [cleanDNDText(entry), ...lists, ...tables];
             }
         }
         case 'itemSpell': {
@@ -339,11 +364,11 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
         case 'section':
         case 'entries': {
             const entries = description.entries.flatMap(parseDescriptionBlock);
-            const { strings, tables } = splitDescriptionTypes(entries);
+            const { strings, tables, lists } = splitDescriptionTypes(entries);
             const entry = strings.join('\n');
             if (description.name) {
                 const name = description.name.replace(/:$/, '');
-                return [cleanDNDText(`**${name}**: ${entry}`), ...tables];
+                return [cleanDNDText(`**${name}**: ${entry}`), ...lists, ...tables];
             }
             return [cleanDNDText(entry), ...tables];
         }
@@ -362,7 +387,7 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             const titleDesc = description.type === 'abilityDc' ? 'Save DC' : 'Attack modifier';
 
             const abilityScores = description.attributes.map(parseAbilityScore);
-            const text = `${BulletPoint} *${description.name} ${titleDesc}*: ${joinStringsWithOr(abilityScores)} modifier + Proficiency Bonus`;
+            const text = `*${description.name} ${titleDesc}*: ${joinStringsWithOr(abilityScores)} modifier + Proficiency Bonus`;
             return [text];
         }
         case 'refClassFeature': {
@@ -393,11 +418,12 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             const entries: string[] = [];
             const count = description.count;
             if (description.entries) {
-                entries.push(...description.entries.map(parseDescriptionBlock));
+                entries.push(...description.entries.flatMap(parseDescriptionBlock));
             }
 
-            const title = count ? `Choose **${count}**:\n` : '';
-            return [`${title}${BulletPoint} ${entries.join(`\n${BulletPoint} `)}`];
+            const title = count ? `Choose **${count}**:` : '';
+            const list: List = { type: 'list', caption: title, entries: entries };
+            return [list];
         }
         case 'statblock': {
             const tag = description.tag;
@@ -425,7 +451,13 @@ function parseDescriptionBlock(description: string | any): (string | Table)[] {
             const feat = description.feat;
             const [name, source] = feat.split('|');
             const link = getFeatsUrl(name, source);
-            return [`${BulletPoint} [${name}](${link})`];
+            return [
+                {
+                    type: 'list',
+                    caption: '',
+                    entries: [`[${name}](${link})`],
+                },
+            ];
         }
         case 'link': {
             const text = description.text;
@@ -568,14 +600,14 @@ export function parseDescriptionFromTable(description: any): DescriptionTable {
     }
 
     const rows: string[][] = description.rows.map(parseTableRow);
-    const table: Table = { title, headers, rows };
+    const table: Table = { type: 'table', title, headers, rows };
 
     return { name: title, type: DescriptionType.table, table: table };
 }
 
 export function parseDescriptions(name: string, descriptions: any[]): Description[] {
     const subdescriptions: Description[] = [];
-    const blocks: (string | Table)[] = [];
+    const blocks: (string | Table | List)[] = [];
 
     for (const desc of descriptions) {
         // Special case scenario where an entry is a description on its own
@@ -593,19 +625,27 @@ export function parseDescriptions(name: string, descriptions: any[]): Descriptio
         }
     }
 
-    function toDescription(name: string, value: string | Table): Description {
+    function toDescription(name: string, value: string | Table | List): Description {
         if (typeof value === 'string') {
             return {
                 name,
                 type: DescriptionType.text,
                 value,
             };
-        } else {
+        } else if (value.type === 'table') {
             return {
                 name,
                 type: DescriptionType.table,
                 table: value,
             };
+        } else if (value.type === 'list') {
+            return {
+                name,
+                type: DescriptionType.list,
+                list: value,
+            };
+        } else {
+            throw `toDescription: Unknown description type ${value}`;
         }
     }
 

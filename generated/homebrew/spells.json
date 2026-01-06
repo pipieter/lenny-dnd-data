@@ -409,8 +409,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The creature grows gills and webbing between its digits. It can breathe underwater and gains a swimming speed equal to its walking speed.\n• The creature grows a membrane between its limbs. When the creature falls, it can use its reaction to subtract up to 100 feet from the fall when calculating falling damage and can glide horizontally a number of feet equal to its walking speed.\n• The creature grows a prehensile tail. The tail has a 5-foot reach and can lift a number of pounds equal to five times the creature's Strength score. It can grasp, lift, drop, hold, push, or pull an object or a creature, open or close a door or a container, grapple someone, or make an unarmed strike.\n• The creature's appearance changes. For the duration, it can use an action to change its height, weight, facial features, voice, hair length and coloration, and distinguishing characteristics. It cannot change its size or number of limbs.\n• The creature grows a natural weapon. Unarmed strikes with the weapon deal **1d6** bludgeoning, piercing, or slashing damage as appropriate. The natural weapon is magical and has a +1 bonus to its attack and damage rolls."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The creature grows gills and webbing between its digits. It can breathe underwater and gains a swimming speed equal to its walking speed.",
+      "The creature grows a membrane between its limbs. When the creature falls, it can use its reaction to subtract up to 100 feet from the fall when calculating falling damage and can glide horizontally a number of feet equal to its walking speed.",
+      "The creature grows a prehensile tail. The tail has a 5-foot reach and can lift a number of pounds equal to five times the creature's Strength score. It can grasp, lift, drop, hold, push, or pull an object or a creature, open or close a door or a container, grapple someone, or make an unarmed strike.",
+      "The creature's appearance changes. For the duration, it can use an action to change its height, weight, facial features, voice, hair length and coloration, and distinguishing characteristics. It cannot change its size or number of limbs.",
+      "The creature grows a natural weapon. Unarmed strikes with the weapon deal **1d6** bludgeoning, piercing, or slashing damage as appropriate. The natural weapon is magical and has a +1 bonus to its attack and damage rolls."
+     ]
+    }
    },
    {
     "name": "At Higher Levels",
@@ -557,6 +567,7 @@
     "name": "Precipitation",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Precipitation",
      "headers": [
       "Stage",
@@ -596,6 +607,7 @@
     "name": "Temperature",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Temperature",
      "headers": [
       "Stage",
@@ -645,6 +657,7 @@
     "name": "Wind",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Wind",
      "headers": [
       "Stage",
@@ -852,8 +865,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• What key or command word is needed to activate the portal.\n• Any special circumstances governing the portal's use (such as specific times when it can be activated).\n• A glimpse of the area where the portal leads."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "What key or command word is needed to activate the portal.",
+      "Any special circumstances governing the portal's use (such as specific times when it can be activated).",
+      "A glimpse of the area where the portal leads."
+     ]
+    }
    }
   ],
   "classes": [
@@ -1101,8 +1122,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The beast can add your proficiency bonus to all of its ability checks.\n• The beast deals an extra **1d6** damage to a target whenever it hits with an attack.\n• The beast has advantage on attack rolls against any creature you have attacked since the start of your last turn."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The beast can add your proficiency bonus to all of its ability checks.",
+      "The beast deals an extra **1d6** damage to a target whenever it hits with an attack.",
+      "The beast has advantage on attack rolls against any creature you have attacked since the start of your last turn."
+     ]
+    }
    },
    {
     "name": "At Higher Levels",
@@ -1256,8 +1285,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Statistics**: The Undead Thrall is a shambling corpse with no memory of any abilities it had in life. It uses the same stat block, but its creature type becomes Undead, it has hit points equal to 7 times the level of the spell slot you spent to create it, and it uses your Spellcasting ability for attack and damage rolls. If commanded to attack, it only makes a single attack, even if it could have made more attacks in life.\nThralls cannot benefit from short or long rests or regain hit points. They are immune to the Exhaustion condition. If it is destroyed, it cannot be raised as an Undead Thrall again.\n• **Control**: Undead Thralls follow your commands without quesion. If not given commands, a Thrall will not move and will only act to defend itself. In combat, all Undead Thralls share your initiative and act during your turn.\nAs a bonus action, you can mentally command any number of Thralls created with this spell so long as they are all within 120 feet. You can issue an individual command to each where you determine exactly how it acts, or you set a general course of action for it ('defend this hall'). So long as it is under your control, Thralls will follow commands until completed.\n• **Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.\n• **Undead Bond**: While a Thrall is under your control, you cannot regain the spell slot you spent to create it. However, when you finish a long rest, you can end your control over a Thrall to regain the slot. If you do so, that Thrall is freed and is hostile to all living things, the spellcaster in particular."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Statistics**: The Undead Thrall is a shambling corpse with no memory of any abilities it had in life. It uses the same stat block, but its creature type becomes Undead, it has hit points equal to 7 times the level of the spell slot you spent to create it, and it uses your Spellcasting ability for attack and damage rolls. If commanded to attack, it only makes a single attack, even if it could have made more attacks in life.\nThralls cannot benefit from short or long rests or regain hit points. They are immune to the Exhaustion condition. If it is destroyed, it cannot be raised as an Undead Thrall again.",
+      "**Control**: Undead Thralls follow your commands without quesion. If not given commands, a Thrall will not move and will only act to defend itself. In combat, all Undead Thralls share your initiative and act during your turn.\nAs a bonus action, you can mentally command any number of Thralls created with this spell so long as they are all within 120 feet. You can issue an individual command to each where you determine exactly how it acts, or you set a general course of action for it ('defend this hall'). So long as it is under your control, Thralls will follow commands until completed.",
+      "**Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.",
+      "**Undead Bond**: While a Thrall is under your control, you cannot regain the spell slot you spent to create it. However, when you finish a long rest, you can end your control over a Thrall to regain the slot. If you do so, that Thrall is freed and is hostile to all living things, the spellcaster in particular."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -1456,6 +1494,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Slot Level",
@@ -1867,8 +1906,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Attack:** The sword moves up to 20 feet toward a creature and makes a melee spell attack against it. On a hit, the target takes force damage equal to **3d10** + your spellcasting ability modifier.\n• **Guard:** The sword moves up to 20 feet into a creature's space and grants the creature half cover as it attempts to deflect incoming attacks. The first time a hostile creature comes within 5 feet of the sword, the sword makes a melee spell attack against that creature. On a hit, the target takes force damage equal to [@damage 3d10] + your spellcasting ability modifier. The sword cannot attack again until you command it again.\n• **Spin:**  The sword moves up to 20 feet toward a point and then begins to spin in a deadly whirl. A creature that starts in the sword's space or passes within 5 feet of the sword on its turn must succeed on a Dexterity saving throw or take **3d10** force damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Attack:** The sword moves up to 20 feet toward a creature and makes a melee spell attack against it. On a hit, the target takes force damage equal to **3d10** + your spellcasting ability modifier.",
+      "**Guard:** The sword moves up to 20 feet into a creature's space and grants the creature half cover as it attempts to deflect incoming attacks. The first time a hostile creature comes within 5 feet of the sword, the sword makes a melee spell attack against that creature. On a hit, the target takes force damage equal to [@damage 3d10] + your spellcasting ability modifier. The sword cannot attack again until you command it again.",
+      "**Spin:**  The sword moves up to 20 feet toward a point and then begins to spin in a deadly whirl. A creature that starts in the sword's space or passes within 5 feet of the sword on its turn must succeed on a Dexterity saving throw or take **3d10** force damage."
+     ]
+    }
    }
   ],
   "classes": [
@@ -2166,8 +2213,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Metals and alloys (such as bronze, iron, or silver)\n• Organic byproducts (such as canvas, silk, or wool)\n• Plant matter (such as flax, hemp, or oak)\n• Stone (such as granite, marble, or sandstone)"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Metals and alloys (such as bronze, iron, or silver)",
+      "Organic byproducts (such as canvas, silk, or wool)",
+      "Plant matter (such as flax, hemp, or oak)",
+      "Stone (such as granite, marble, or sandstone)"
+     ]
+    }
    },
    {
     "name": "",
@@ -2755,6 +2811,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Slot Level",
@@ -3586,8 +3643,20 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Darkvision.** You gain darkvision out to 30 feet.\n• **Echolocation.** You gain blindsight out to 10 feet, but only if you continuously make high-pitched sounds, preventing you from speaking normally while you do. Your squeaking can be heard from up to 60 feet away.\n• **Keen Hearing.** You have advantage on Wisdom (Perception) checks that rely on hearing.\n• **Keen Sight.** You have advantage on Wisdom (Perception) checks that rely on sight.\n• **Keen Smell.** You have advantage on Wisdom (Perception) checks that rely on smell.\n• **Tremorsense.** You gain tremorsense out to 30 feet.\n• **Websense.** While in contact with a web, you know the exact location of any other creature in contact with the same web."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Darkvision.** You gain darkvision out to 30 feet.",
+      "**Echolocation.** You gain blindsight out to 10 feet, but only if you continuously make high-pitched sounds, preventing you from speaking normally while you do. Your squeaking can be heard from up to 60 feet away.",
+      "**Keen Hearing.** You have advantage on Wisdom (Perception) checks that rely on hearing.",
+      "**Keen Sight.** You have advantage on Wisdom (Perception) checks that rely on sight.",
+      "**Keen Smell.** You have advantage on Wisdom (Perception) checks that rely on smell.",
+      "**Tremorsense.** You gain tremorsense out to 30 feet.",
+      "**Websense.** While in contact with a web, you know the exact location of any other creature in contact with the same web."
+     ]
+    }
    }
   ],
   "classes": [
@@ -4042,6 +4111,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d4",
@@ -5862,8 +5932,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• A creature's surface thoughts.\n• A piece of information that the target knows about a specific topic, thing or being.\n• The thoughts and memories of one creature of the group in detail."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A creature's surface thoughts.",
+      "A piece of information that the target knows about a specific topic, thing or being.",
+      "The thoughts and memories of one creature of the group in detail."
+     ]
+    }
    },
    {
     "name": "",
@@ -6432,8 +6510,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Light:** You create a shower of sparks, blinding onlookers. Each creature in a 10-foot radius must make a Constitution saving throw or be blinded until the end of your next turn. If you target an existing flame, the radius increases to 20 feet.\n• **Heat:** You conjure a blast of intense heat. Each creature in a 10-foot radius must make a Constitution saving throw. On a failed save, a creature takes **3d6 fire** damage, or half as much on a successful save. If you target an existing flame, the damage increases to **4d6**.\n• **Smoke:** You create a 15-foot radius cloud of thick, oily smoke. It spreads around corners, and its area is heavily obscured. If you target an existing flame, the radius is 30 feet. The cloud lasts for 1 minute or until dispersed by a strong breeze."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Light:** You create a shower of sparks, blinding onlookers. Each creature in a 10-foot radius must make a Constitution saving throw or be blinded until the end of your next turn. If you target an existing flame, the radius increases to 20 feet.",
+      "**Heat:** You conjure a blast of intense heat. Each creature in a 10-foot radius must make a Constitution saving throw. On a failed save, a creature takes **3d6 fire** damage, or half as much on a successful save. If you target an existing flame, the damage increases to **4d6**.",
+      "**Smoke:** You create a 15-foot radius cloud of thick, oily smoke. It spreads around corners, and its area is heavily obscured. If you target an existing flame, the radius is 30 feet. The cloud lasts for 1 minute or until dispersed by a strong breeze."
+     ]
+    }
    }
   ],
   "classes": [
@@ -7704,8 +7790,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The target can breathe underwater in addition to its normal mode of respiration.\n• Any creature has disadvantage on attack rolls against the target. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.\n• The target's movement is unaffected by difficult terrain, and spells and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The target can breathe underwater in addition to its normal mode of respiration.",
+      "Any creature has disadvantage on attack rolls against the target. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.",
+      "The target's movement is unaffected by difficult terrain, and spells and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained."
+     ]
+    }
    },
    {
     "name": "",
@@ -8089,6 +8183,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d100",
@@ -8420,6 +8515,7 @@
     "name": "Command Objects Statistics",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Command Objects Statistics",
      "headers": [
       "Size",
@@ -8815,6 +8911,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Die Roll",
@@ -8879,8 +8976,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Statistics**: The spirit appears in an unoccupied space of your choice that you can see in range. The Fey spirit takes on the statistics and appearance of one Beast of CR 1 or lower, choosing from among the Beasts you have seen before.\n• **Combat**: In combat, the Beast shares your initiative and it acts during your turn. You can issue it verbal commands (no action required). If the Beast has not received a command, it will move and defend itself to the best of its abilities. When the Beast is reduced to 0 hit points, the spirit disappears."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Statistics**: The spirit appears in an unoccupied space of your choice that you can see in range. The Fey spirit takes on the statistics and appearance of one Beast of CR 1 or lower, choosing from among the Beasts you have seen before.",
+      "**Combat**: In combat, the Beast shares your initiative and it acts during your turn. You can issue it verbal commands (no action required). If the Beast has not received a command, it will move and defend itself to the best of its abilities. When the Beast is reduced to 0 hit points, the spirit disappears."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -8972,8 +9076,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Statistics**: The Celestial appears in an unoccupied space of your choice you can see in range. When it appears, you can cause it to take on the appearance and statistics of a different Celestial of your choice equal to its CR, or lower.\n• **Combat**: This Celestial shares your initiative and it acts during your turn. You can give it verbal commands (no action required). If the Celestial does not receive a command, or its commands are completed, it will move and defend itself.\n• **Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Statistics**: The Celestial appears in an unoccupied space of your choice you can see in range. When it appears, you can cause it to take on the appearance and statistics of a different Celestial of your choice equal to its CR, or lower.",
+      "**Combat**: This Celestial shares your initiative and it acts during your turn. You can give it verbal commands (no action required). If the Celestial does not receive a command, or its commands are completed, it will move and defend itself.",
+      "**Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -9011,8 +9123,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Statistics**: The draconic essence manifests in the form of a Dragon of CR 5 or lower, which must match the color of the scale used as the material component for the spell. It appears in an unoccupied space of your choice within range.\n• **Combat**: In combat, this Dragon shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Dragon does not receive any commands, or if its commands are completed, it defend itself with prejudice.\n• **Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.\n• **Control**: If your concentration ends, the Dragon instantly disappears, the essence returning to the Ancient Dragon."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Statistics**: The draconic essence manifests in the form of a Dragon of CR 5 or lower, which must match the color of the scale used as the material component for the spell. It appears in an unoccupied space of your choice within range.",
+      "**Combat**: In combat, this Dragon shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Dragon does not receive any commands, or if its commands are completed, it defend itself with prejudice.",
+      "**Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.",
+      "**Control**: If your concentration ends, the Dragon instantly disappears, the essence returning to the Ancient Dragon."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -9050,8 +9171,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Statistics**: The Elemental appears in an unoccupied space of your choice you can see in range. It takes on the statistics and appearance of an Elemental of CR 3 or lower, so long as its makeup matches that of the material component.\n• **Combat**: The Elemental shares your initiative and it acts during your turn. You can give it verbal commands (no action required). If the Elemental does not receive a command, or its commands are completed, it will only defend itself.\n• **Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.\n• **Control**: If your concentration on this spell is broken, the Elemental remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Elemental will act according to its alignment, spreading chaos and destruction wherever it can."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Statistics**: The Elemental appears in an unoccupied space of your choice you can see in range. It takes on the statistics and appearance of an Elemental of CR 3 or lower, so long as its makeup matches that of the material component.",
+      "**Combat**: The Elemental shares your initiative and it acts during your turn. You can give it verbal commands (no action required). If the Elemental does not receive a command, or its commands are completed, it will only defend itself.",
+      "**Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.",
+      "**Control**: If your concentration on this spell is broken, the Elemental remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Elemental will act according to its alignment, spreading chaos and destruction wherever it can."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -9097,8 +9227,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Statistics**: Your Familiar manifests as a CR 0 Beast of your choice, but its creature type is Celestial, Fey, or Fiend. Familiars often reflect the true nature of the caster's soul in appearance and alignment. You can only have one Familiar, but you can perform the ritual again to change its form.\n• **Control**: In combat, the Familiar shares your initiative and acts during your turn. It cannot attack, but can otherwise act normally. If it drops to 0 hit points your Familiar is destroyed. If it is destroyed, you regain the maximum hit points spent in its creation at the end of your next long rest.\n• **Dismissal**: As an action, you can shunt your Familiar to a unique pocket dimension, or dismiss it forever. As an aciton, you can recall your Familiar from its pocket dimension, and it reappears in an unoccupied space you can see within 10 ft.\n• **Soul Bond**: While your Familiar is within 100 ft., you can communicate with it Telepathically. As an action, you can use your Familiar's senses in place of your own until you end this effect (no action required) or you are Incapacitated. While you do so, you are blind and deaf to your own surroundings.\n• **Spellcasting**: When you cast a spell with a range of touch and your Familiar is within 100 ft., your Familiar can use its reaction to deliver that spell using your Spellcasting ability."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Statistics**: Your Familiar manifests as a CR 0 Beast of your choice, but its creature type is Celestial, Fey, or Fiend. Familiars often reflect the true nature of the caster's soul in appearance and alignment. You can only have one Familiar, but you can perform the ritual again to change its form.",
+      "**Control**: In combat, the Familiar shares your initiative and acts during your turn. It cannot attack, but can otherwise act normally. If it drops to 0 hit points your Familiar is destroyed. If it is destroyed, you regain the maximum hit points spent in its creation at the end of your next long rest.",
+      "**Dismissal**: As an action, you can shunt your Familiar to a unique pocket dimension, or dismiss it forever. As an aciton, you can recall your Familiar from its pocket dimension, and it reappears in an unoccupied space you can see within 10 ft.",
+      "**Soul Bond**: While your Familiar is within 100 ft., you can communicate with it Telepathically. As an action, you can use your Familiar's senses in place of your own until you end this effect (no action required) or you are Incapacitated. While you do so, you are blind and deaf to your own surroundings.",
+      "**Spellcasting**: When you cast a spell with a range of touch and your Familiar is within 100 ft., your Familiar can use its reaction to deliver that spell using your Spellcasting ability."
+     ]
+    }
    }
   ],
   "classes": [
@@ -9162,8 +9302,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Statistics**: The Fey spirit appears in an unoccupied space of your choice that you can see within range. It takes on the appearance and statistics of any Fey of CR 3 or lower.\n• **Combat**: The Fey shares your initiative and it acts on your turn. You can give it verbal commands (no action required). If the Fey does not receive any commands, or its commands are completed, it moves and defends itself as best it can.\n• **Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.\n• **Control**: If the spell ends because your concentration was broken, the Fey remains, but is no longer under your control. For the duration of the spell, or until reduced to 0 hit points, the Fey acts according to its alignment, and either becomes Hostile toward you and your allies or flees."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Statistics**: The Fey spirit appears in an unoccupied space of your choice that you can see within range. It takes on the appearance and statistics of any Fey of CR 3 or lower.",
+      "**Combat**: The Fey shares your initiative and it acts on your turn. You can give it verbal commands (no action required). If the Fey does not receive any commands, or its commands are completed, it moves and defends itself as best it can.",
+      "**Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.",
+      "**Control**: If the spell ends because your concentration was broken, the Fey remains, but is no longer under your control. For the duration of the spell, or until reduced to 0 hit points, the Fey acts according to its alignment, and either becomes Hostile toward you and your allies or flees."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -9209,8 +9358,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Statistics**: The Fiend appears in an unoccupied space of your choice you can see within range. When it appears, you can force the Fiend to take on the appearance and statistics of another Fiend of your choice equal to its CR, or lower.\n• **Combat**: The Fiend shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Fiend does not receive any commands, or its commands are completed, it can move defend itself with prejudice.\n• **Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.\n• **Control**: If your concentration on this spell is broken, the Fiend remains. It instantly returns to its true form and is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, it is Hostile to you and your allies, and will act according to its alignment. Devils seek to kill the spellcaster, and Demons kill indiscriminately."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Statistics**: The Fiend appears in an unoccupied space of your choice you can see within range. When it appears, you can force the Fiend to take on the appearance and statistics of another Fiend of your choice equal to its CR, or lower.",
+      "**Combat**: The Fiend shares your initiative and acts on your turn. You can give it verbal commands (no action required). If the Fiend does not receive any commands, or its commands are completed, it can move defend itself with prejudice.",
+      "**Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.",
+      "**Control**: If your concentration on this spell is broken, the Fiend remains. It instantly returns to its true form and is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, it is Hostile to you and your allies, and will act according to its alignment. Devils seek to kill the spellcaster, and Demons kill indiscriminately."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -9275,6 +9433,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Spell Slot",
@@ -9336,8 +9495,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Ward.** The herald is cast at a particular location, or on a statue or other object with a mouth, and is fixed to that point. It is invisible and motionless until a specific condition is met within 30 feet of its location. When the condition is met, it appears and recites its message. If cast on an object, it moves the object's mouth rather than appearing directly. You determine whether it does so once or disappears again and repeats the message every time the condition is met. When cast in this way, the herald lasts until dispelled.\n• **Announcement.** The herald floats through the air up to 100 feet up and 30 feet per round, repeating its message every round. It traverses an area up to a 5-mile radius around its location, conveying its message to every creature it sees. When cast in this way, the herald lasts for 1 hour."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Ward.** The herald is cast at a particular location, or on a statue or other object with a mouth, and is fixed to that point. It is invisible and motionless until a specific condition is met within 30 feet of its location. When the condition is met, it appears and recites its message. If cast on an object, it moves the object's mouth rather than appearing directly. You determine whether it does so once or disappears again and repeats the message every time the condition is met. When cast in this way, the herald lasts until dispelled.",
+      "**Announcement.** The herald floats through the air up to 100 feet up and 30 feet per round, repeating its message every round. It traverses an area up to a 5-mile radius around its location, conveying its message to every creature it sees. When cast in this way, the herald lasts for 1 hour."
+     ]
+    }
    }
   ],
   "classes": [
@@ -9771,8 +9937,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You instantaneously create a new flame within 5 ft of it that fits within a 5-foot cube. Until the end of your next turn the new flame persists without fuel.\n• You instantaneously extinguish the flames within the cube.\n• You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.\n• You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You instantaneously create a new flame within 5 ft of it that fits within a 5-foot cube. Until the end of your next turn the new flame persists without fuel.",
+      "You instantaneously extinguish the flames within the cube.",
+      "You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.",
+      "You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour."
+     ]
+    }
    },
    {
     "name": "",
@@ -10495,6 +10670,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Slot Level",
@@ -10574,6 +10750,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Slot",
@@ -10811,8 +10988,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Control**: Undead follow your commands without quesion. If not given a command, an Undead won't move and will only act to defend itself. In combat, any Undead you created share your initiative and act during your turn.\nAs a bonus action, you can mentally command any number of Undead you created with within 120 feet. You can issue an individual command to each, determining exactly how it will act, or setting a general course of action ('defend this hall'). So long as they remain under your control, your Undead will follow commands until completed.\n• **Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.\n• **Undead Bond**: While an Undead is under your control, you cannot regain the maximum hit points you spent to create it. However, when you finish a long rest, you can release control over any Undead that you created to regain the maximum hit points you spent to create them. When freed, Undead become hostil to all living things, the spellcaster in particular."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Control**: Undead follow your commands without quesion. If not given a command, an Undead won't move and will only act to defend itself. In combat, any Undead you created share your initiative and act during your turn.\nAs a bonus action, you can mentally command any number of Undead you created with within 120 feet. You can issue an individual command to each, determining exactly how it will act, or setting a general course of action ('defend this hall'). So long as they remain under your control, your Undead will follow commands until completed.",
+      "**Spellcasting**: If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.",
+      "**Undead Bond**: While an Undead is under your control, you cannot regain the maximum hit points you spent to create it. However, when you finish a long rest, you can release control over any Undead that you created to regain the maximum hit points you spent to create them. When freed, Undead become hostil to all living things, the spellcaster in particular."
+     ]
+    }
    },
    {
     "name": "At Higher Levels",
@@ -10823,6 +11008,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Slot Level",
@@ -10893,8 +11079,14 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Inverse Casting**:  You can use this spell to destory water. You destroy up to 10 gallons of water in open containers in range, or destroy fog in a 30-foot radius centered on you."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Inverse Casting**:  You can use this spell to destory water. You destroy up to 10 gallons of water in open containers in range, or destroy fog in a 30-foot radius centered on you."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -12172,8 +12364,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You gain 75 temporary hit points. If any of these remain when the spell ends, they are lost.\n• You are proficient with your unarmed strikes and your reach with your unarmed strikes increases by 5 feet. Your unarmed strikes deal 2d6+ your spellcasting ability modifier slashing damage plus **4d6** necrotic damage.\n• When you make an unarmed strike, you can use your spellcasting modifier, instead of Strength, for the attack and damage rolls.\n• You can attack twice, instead of once, when you take the Attack action on your turn.\n• You have resistance to necrotic damage, immunity to poison damage and cannot be poisoned.\n• You have advantage on saving throws against spells and other magical effects."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain 75 temporary hit points. If any of these remain when the spell ends, they are lost.",
+      "You are proficient with your unarmed strikes and your reach with your unarmed strikes increases by 5 feet. Your unarmed strikes deal 2d6+ your spellcasting ability modifier slashing damage plus **4d6** necrotic damage.",
+      "When you make an unarmed strike, you can use your spellcasting modifier, instead of Strength, for the attack and damage rolls.",
+      "You can attack twice, instead of once, when you take the Attack action on your turn.",
+      "You have resistance to necrotic damage, immunity to poison damage and cannot be poisoned.",
+      "You have advantage on saving throws against spells and other magical effects."
+     ]
+    }
    }
   ],
   "classes": [
@@ -13354,6 +13557,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Size",
@@ -14081,8 +14285,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The target has advantage on Dexterity ability checks and on attack rolls made using a finesse or a ranged weapon.\n• The target can attack twice, instead of once, when it takes the Attack action on its turn. It ignores this benefit if it already has a feature, like Extra Attack, that gives it extra attacks.\n• Whenever the target is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The target has advantage on Dexterity ability checks and on attack rolls made using a finesse or a ranged weapon.",
+      "The target can attack twice, instead of once, when it takes the Attack action on its turn. It ignores this benefit if it already has a feature, like Extra Attack, that gives it extra attacks.",
+      "Whenever the target is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+     ]
+    }
    }
   ],
   "classes": [
@@ -14647,8 +14859,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Dragons have disadvantage on attack rolls against the target.\n• The target has advantage on saving throws against Dragon breath weapons.\n• The target is can't be frightened."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Dragons have disadvantage on attack rolls against the target.",
+      "The target has advantage on saving throws against Dragon breath weapons.",
+      "The target is can't be frightened."
+     ]
+    }
    }
   ],
   "classes": [
@@ -15814,8 +16034,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Acid.** The target takes **1d4** acid damage at the end of its next turn.\n• **Cold.** The target's speed is reduced by 10 feet until the end of your next turn.\n• **Fire.** The attack ignites flammable objects not being worn or carried.\n• **Lightning.** The target can't take reactions until the start of its next turn.\n• **Thunder.** The target is deafened until the end of its next turn."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Acid.** The target takes **1d4** acid damage at the end of its next turn.",
+      "**Cold.** The target's speed is reduced by 10 feet until the end of your next turn.",
+      "**Fire.** The attack ignites flammable objects not being worn or carried.",
+      "**Lightning.** The target can't take reactions until the start of its next turn.",
+      "**Thunder.** The target is deafened until the end of its next turn."
+     ]
+    }
    },
    {
     "name": "At Higher Levels",
@@ -15915,8 +16145,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Charge.** If the creature moves at least 20 feet straight toward a creature then hits it with a melee attack on the same turn, the creature takes an extra **2d6** damage and must succeed on a Strength saving throw against your spell save DC or be knocked prone.\n• **Rampage.** When the target reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make another melee attack.\n• **Pack tactics.** The target has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn't incapacitated.\n• **Blood Frenzy.** The target has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Charge.** If the creature moves at least 20 feet straight toward a creature then hits it with a melee attack on the same turn, the creature takes an extra **2d6** damage and must succeed on a Strength saving throw against your spell save DC or be knocked prone.",
+      "**Rampage.** When the target reduces a creature to 0 hit points with a melee attack on its turn, it can take a bonus action to move up to half its speed and make another melee attack.",
+      "**Pack tactics.** The target has advantage on an attack roll against a creature if at least one of its allies is within 5 feet of the creature and the ally isn't incapacitated.",
+      "**Blood Frenzy.** The target has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+     ]
+    }
    },
    {
     "name": "At Higher Levels",
@@ -16558,8 +16797,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The creature inside the cocoon heals 1 hp at the end of each of its turns.\n• The creature inside the cocoon takes. **4d6** force damage whenever it hits the cocoon with a melee or ranged attack."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The creature inside the cocoon heals 1 hp at the end of each of its turns.",
+      "The creature inside the cocoon takes. **4d6** force damage whenever it hits the cocoon with a melee or ranged attack."
+     ]
+    }
    },
    {
     "name": "",
@@ -17584,8 +17830,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The machine's speed is increased to 50 feet.\n• The machine gains a climbing speed equal to its walking speed. It can climb up, down and across vertical surfaces and upside down along ceilings.\n• The machine gains a fly speed of 25 feet."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The machine's speed is increased to 50 feet.",
+      "The machine gains a climbing speed equal to its walking speed. It can climb up, down and across vertical surfaces and upside down along ceilings.",
+      "The machine gains a fly speed of 25 feet."
+     ]
+    }
    },
    {
     "name": "",
@@ -18800,8 +19054,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• An effect that charmed or petrified the target.\n• A curse, including the target's attunement to a cursed magic item.\n• A reduction to one of the target's ability scores.\n• An effect reducing the target's hit points.\n• A disease.\n• Any of the following conditions: blinded, deafened, paralyzed or poisoned."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "An effect that charmed or petrified the target.",
+      "A curse, including the target's attunement to a cursed magic item.",
+      "A reduction to one of the target's ability scores.",
+      "An effect reducing the target's hit points.",
+      "A disease.",
+      "Any of the following conditions: blinded, deafened, paralyzed or poisoned."
+     ]
+    }
    },
    {
     "name": "",
@@ -19947,8 +20212,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You are immune to fire damage.\n• You can move through the space of other creatures and ignore difficult terrain. The first time on your turn you enter the space of another creature, it takes **2d6** fire damage.\n• If a creature within 5 feet hits you with a melee attack, it takes **2d6** fire damage.\n• You can use your action to create a line of fire 30 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes **6d6** fire damage on a failed save, or half as much damage on a successful one.\n• During your turn, if you roll fire damage, you can maximize one die of the fire damage dealt."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You are immune to fire damage.",
+      "You can move through the space of other creatures and ignore difficult terrain. The first time on your turn you enter the space of another creature, it takes **2d6** fire damage.",
+      "If a creature within 5 feet hits you with a melee attack, it takes **2d6** fire damage.",
+      "You can use your action to create a line of fire 30 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes **6d6** fire damage on a failed save, or half as much damage on a successful one.",
+      "During your turn, if you roll fire damage, you can maximize one die of the fire damage dealt."
+     ]
+    }
    }
   ],
   "classes": [
@@ -19998,8 +20273,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You are immune to cold damage.\n• You can move across difficult terrain created by ice or snow without spending extra movement.\n• The ground in a 15-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.\n• You can use your action to create a 30-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes **4d8** cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.\n• During your turn, if you roll cold damage, you gain temporary hit points equal to one die rolled (your choice)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You are immune to cold damage.",
+      "You can move across difficult terrain created by ice or snow without spending extra movement.",
+      "The ground in a 15-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.",
+      "You can use your action to create a 30-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes **4d8** cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.",
+      "During your turn, if you roll cold damage, you gain temporary hit points equal to one die rolled (your choice)."
+     ]
+    }
    }
   ],
   "classes": [
@@ -20045,8 +20330,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.\n• You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn.\n• You can use your action to call spikes of stone to raise from the ground. All creatures of your choice within 15 feet of you must make a Dexterity saving throw. A creature takes **4d8** piercing damage on a failed save, or half as much on a successful one. Its space becomes difficult terrain either way."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
+      "You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn.",
+      "You can use your action to call spikes of stone to raise from the ground. All creatures of your choice within 15 feet of you must make a Dexterity saving throw. A creature takes **4d8** piercing damage on a failed save, or half as much on a successful one. Its space becomes difficult terrain either way."
+     ]
+    }
    }
   ],
   "classes": [
@@ -20092,8 +20385,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.\n• You can move through the space of other creatures and ignore difficult terrain; the first time you move through a Large or smaller creature, it must pass a Strength saving throw or be knocked prone.\n• You can use your action to unleash a blast of water 15 feet long and 5 feet wide extending from you in a direction of your choice. Each creature in the line must make a Strength saving throw. A creature takes **5d6** bludgeoning damage and is knocked prone on a failed save, or half as much and isn't knocked prone on a successful one."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
+      "You can move through the space of other creatures and ignore difficult terrain; the first time you move through a Large or smaller creature, it must pass a Strength saving throw or be knocked prone.",
+      "You can use your action to unleash a blast of water 15 feet long and 5 feet wide extending from you in a direction of your choice. Each creature in the line must make a Strength saving throw. A creature takes **5d6** bludgeoning damage and is knocked prone on a failed save, or half as much and isn't knocked prone on a successful one."
+     ]
+    }
    }
   ],
   "classes": [
@@ -20139,8 +20440,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You have a flying speed of 60 feet.\n• You can move through and occupy the space of other creatures, and you ignore difficult terrain.\n• You are invisible.\n• You can use your action to unleash a powerful blast of wind in a 30 foot cone. Each creature in the cone must make a Strength saving throw. A creature takes **4d8** bludgeoning damage and is knocked 15 feet away from you on a failed save, or takes half as much damage and isn't knocked backward on a successful one."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have a flying speed of 60 feet.",
+      "You can move through and occupy the space of other creatures, and you ignore difficult terrain.",
+      "You are invisible.",
+      "You can use your action to unleash a powerful blast of wind in a 30 foot cone. Each creature in the cone must make a Strength saving throw. A creature takes **4d8** bludgeoning damage and is knocked 15 feet away from you on a failed save, or takes half as much damage and isn't knocked backward on a successful one."
+     ]
+    }
    }
   ],
   "classes": [
@@ -20812,6 +21122,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Roll Result",
@@ -21894,8 +22205,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Days.** You sense the events of the past, up to seven days previously. You gain detailed knowledge of the people, conversations, and events that transpired.\n• **Weeks.** You gain a summary of the events of the past, up to one year previously. Exact wording and details are lost, but you know all the participants and highlights of the conversations and events that took place.\n• **Years.** You gain a general idea of the events of the past, up to 100 years previously. You notice only noteworthy events such as deaths, battles, scenes of great emotion, important discoveries, and significant happenings.\n• **Centuries.** You gain a general idea of the events of the past, up to 1000 years previously. You notice only the most remarkable of events, such as coronations, deaths of important personages, major battles and other truly historic happenings."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Days.** You sense the events of the past, up to seven days previously. You gain detailed knowledge of the people, conversations, and events that transpired.",
+      "**Weeks.** You gain a summary of the events of the past, up to one year previously. Exact wording and details are lost, but you know all the participants and highlights of the conversations and events that took place.",
+      "**Years.** You gain a general idea of the events of the past, up to 100 years previously. You notice only noteworthy events such as deaths, battles, scenes of great emotion, important discoveries, and significant happenings.",
+      "**Centuries.** You gain a general idea of the events of the past, up to 1000 years previously. You notice only the most remarkable of events, such as coronations, deaths of important personages, major battles and other truly historic happenings."
+     ]
+    }
    }
   ],
   "classes": [
@@ -22020,8 +22340,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Weakness (Amethyst).** Each target must make a Strength saving throw. On a failure, it suffers crippling weakness for 1 hour. Its speed drops to 15 feet, and all its weapon attacks deal damage as if it rolled the minimum result.\n• **Binding (Topaz).** Each target must make a Dexterity saving throw. On a failure, it is restrained by magical lines of force for 1 hour.\n• **Death (Black Sapphire).** Each target must make a Constitution saving throw, dropping to 0 hit points on a failure or suffering **10d8** necrotic damage on a success.\n• **Bafflement (Citrine).** Each target must make an Intelligence saving throw. On a failed save, it loses its ability to understand the world for 1 hour. It cannot cast spells and has disadvantage on all ability checks and attack rolls.\n• **Rage (Garnet).** Each target must make a Wisdom saving throw. On a failed save, it becomes hostile to all other creatures and attacks the nearest target. It can repeat the save at the end of each of its turns.\n• **Stupor (Emerald).** Each target must make a Charisma saving throw, or enter a dazed state, its mind disconnected from its body. A creature takes no actions, and its speed is reduced by half. It recovers after 1 hour or when it takes any damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Weakness (Amethyst).** Each target must make a Strength saving throw. On a failure, it suffers crippling weakness for 1 hour. Its speed drops to 15 feet, and all its weapon attacks deal damage as if it rolled the minimum result.",
+      "**Binding (Topaz).** Each target must make a Dexterity saving throw. On a failure, it is restrained by magical lines of force for 1 hour.",
+      "**Death (Black Sapphire).** Each target must make a Constitution saving throw, dropping to 0 hit points on a failure or suffering **10d8** necrotic damage on a success.",
+      "**Bafflement (Citrine).** Each target must make an Intelligence saving throw. On a failed save, it loses its ability to understand the world for 1 hour. It cannot cast spells and has disadvantage on all ability checks and attack rolls.",
+      "**Rage (Garnet).** Each target must make a Wisdom saving throw. On a failed save, it becomes hostile to all other creatures and attacks the nearest target. It can repeat the save at the end of each of its turns.",
+      "**Stupor (Emerald).** Each target must make a Charisma saving throw, or enter a dazed state, its mind disconnected from its body. A creature takes no actions, and its speed is reduced by half. It recovers after 1 hour or when it takes any damage."
+     ]
+    }
    }
   ],
   "classes": [
@@ -22533,8 +22864,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• 1 Exhaustion level\n• The Charmed or Petrified condition\n• A curse with a spell level equal to or less than this spell's level or their attunement to a cursed magic item.\n• Any reduction to one of the target's ability scores\n• Any reduction to the target's Hit Point maximum"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "1 Exhaustion level",
+      "The Charmed or Petrified condition",
+      "A curse with a spell level equal to or less than this spell's level or their attunement to a cursed magic item.",
+      "Any reduction to one of the target's ability scores",
+      "Any reduction to the target's Hit Point maximum"
+     ]
+    }
    }
   ],
   "classes": [
@@ -22790,8 +23131,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 10 feet away from you.\n• You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage. Until the end of your next turn it is held aloft as long as it is not holding anything else aloft\n• You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 10 feet away from you.",
+      "You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage. Until the end of your next turn it is held aloft as long as it is not holding anything else aloft",
+      "You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze."
+     ]
+    }
    }
   ],
   "classes": [
@@ -24723,8 +25072,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Spell Turning** If you are targeted by a magic missile, a line spell, or a spell that requires a ranged attack roll of 5th level or lower, you may use your reaction and spend a charge to reflect the effect back at the caster as though it originated from you, turning the caster into the target.\n• **Protection** If you are hit by an attack, you may use your reaction and spend a charge to grant yourself +10 AC, including against the triggering attack, until the start of your next turn.\n• **Fire Star** As an action on your turn, you may spend a charge to make a ranged spell attack against a creature you can see within 90 feet of you. On a hit, the target takes **12d6** fire damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Spell Turning** If you are targeted by a magic missile, a line spell, or a spell that requires a ranged attack roll of 5th level or lower, you may use your reaction and spend a charge to reflect the effect back at the caster as though it originated from you, turning the caster into the target.",
+      "**Protection** If you are hit by an attack, you may use your reaction and spend a charge to grant yourself +10 AC, including against the triggering attack, until the start of your next turn.",
+      "**Fire Star** As an action on your turn, you may spend a charge to make a ranged spell attack against a creature you can see within 90 feet of you. On a hit, the target takes **12d6** fire damage."
+     ]
+    }
    },
    {
     "name": "",
@@ -24797,8 +25154,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Your creature type becomes Celestial.\n• You gain a flying speed equal to your walking speed and can hover.\n• You have darkvision out to a range of 60 feet.\n• Your weapon attacks are magical.\n• When you hit with any weapon, the weapon deals an extra **1d4** radiant damage.\n• You gain the ability to speak and understand Celestial."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your creature type becomes Celestial.",
+      "You gain a flying speed equal to your walking speed and can hover.",
+      "You have darkvision out to a range of 60 feet.",
+      "Your weapon attacks are magical.",
+      "When you hit with any weapon, the weapon deals an extra **1d4** radiant damage.",
+      "You gain the ability to speak and understand Celestial."
+     ]
+    }
    }
   ],
   "classes": [
@@ -25728,8 +26096,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Acid:** The target takes **2d4** acid damage at the end of its next turn.\n• **Cold:** The target's movement speed is halved until the end of its next turn.\n• **Fire:** The target takes **1d6** additional fire damage.\n• **Lightning:** The target can't take reactions until the end of its next turn."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Acid:** The target takes **2d4** acid damage at the end of its next turn.",
+      "**Cold:** The target's movement speed is halved until the end of its next turn.",
+      "**Fire:** The target takes **1d6** additional fire damage.",
+      "**Lightning:** The target can't take reactions until the end of its next turn."
+     ]
+    }
    },
    {
     "name": "At Higher Levels",
@@ -26227,8 +26604,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Muscle Weakness.** The creature's arms become unbearably weak. It has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength. Its attacks using Strength deal half damage.\n• **Trembling Spasms.** The creature is overcome with terrible tremors. It has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity. Its attacks using Dexterity do half damage.\n• **Skinslough.** The creature's skin becomes paper-thin and causes agonizing pain when it tears. It has disadvantage on Constitution checks and Constitution saving throws, except those caused by this spell. In addition, when the creature takes damage, its speed is reduced to 10 feet until the end of its next turn.\n• **Mindrot.** The creature becomes disoriented and confused. The creature has disadvantage on Intelligence checks and Intelligence saving throws and cannot tell friend from foe in combat.\n• **Fire-eyes Fever.** The creature's eyes turn milky white and are searingly painful. It has disadvantage on Wisdom checks and Wisdom saving throws and is blinded.\n• **Flesh Rot.** The creature's flesh decays. It has disadvantage on Charisma checks and Charisma saving throws and takes 5 additional points of damage when it suffers bludgeoning, piercing, or slashing damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Muscle Weakness.** The creature's arms become unbearably weak. It has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength. Its attacks using Strength deal half damage.",
+      "**Trembling Spasms.** The creature is overcome with terrible tremors. It has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity. Its attacks using Dexterity do half damage.",
+      "**Skinslough.** The creature's skin becomes paper-thin and causes agonizing pain when it tears. It has disadvantage on Constitution checks and Constitution saving throws, except those caused by this spell. In addition, when the creature takes damage, its speed is reduced to 10 feet until the end of its next turn.",
+      "**Mindrot.** The creature becomes disoriented and confused. The creature has disadvantage on Intelligence checks and Intelligence saving throws and cannot tell friend from foe in combat.",
+      "**Fire-eyes Fever.** The creature's eyes turn milky white and are searingly painful. It has disadvantage on Wisdom checks and Wisdom saving throws and is blinded.",
+      "**Flesh Rot.** The creature's flesh decays. It has disadvantage on Charisma checks and Charisma saving throws and takes 5 additional points of damage when it suffers bludgeoning, piercing, or slashing damage."
+     ]
+    }
    }
   ],
   "classes": [
@@ -27236,6 +27624,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "CR",
@@ -27292,8 +27681,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• What damage immunities it has.\n• What damage resistances it has.\n• What condition immunities it has.\n• What damage vulnerabilities it has."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "What damage immunities it has.",
+      "What damage resistances it has.",
+      "What condition immunities it has.",
+      "What damage vulnerabilities it has."
+     ]
+    }
    }
   ],
   "classes": [
@@ -27450,6 +27848,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d100",
@@ -28534,6 +28933,7 @@
     "name": "Locate Creature",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Locate Creature",
      "headers": [
       "Slot Level",
@@ -28960,8 +29360,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Hysteria:** The creature falls into fits of uncontrollable laughter or crying. It is incapacitated and takes **4d6** psychic damage at the start of each of its turns.\n• **Panic:** The creature becomes frightened of all other creatures.\n• **Violent Hallucinations:** The creature uses its action each turn to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature uses its movement to move as close as it can to the nearest creature it is aware of first.\n• **Stupor:** The creature falls prone as it curls up on the floor, oblivious to what is going on around it. While the spell lasts, it is paralyzed."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Hysteria:** The creature falls into fits of uncontrollable laughter or crying. It is incapacitated and takes **4d6** psychic damage at the start of each of its turns.",
+      "**Panic:** The creature becomes frightened of all other creatures.",
+      "**Violent Hallucinations:** The creature uses its action each turn to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature uses its movement to move as close as it can to the nearest creature it is aware of first.",
+      "**Stupor:** The creature falls prone as it curls up on the floor, oblivious to what is going on around it. While the spell lasts, it is paralyzed."
+     ]
+    }
    },
    {
     "name": "",
@@ -29230,8 +29639,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• the container or body is destroyed\n• the body drops to zero hit points, dies or ceases to be humanoid\n• the spell ends on a body or the container"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "the container or body is destroyed",
+      "the body drops to zero hit points, dies or ceases to be humanoid",
+      "the spell ends on a body or the container"
+     ]
+    }
    },
    {
     "name": "",
@@ -29733,8 +30150,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You can excavate a 5-foot cube of loose dirt or soil and move it along the ground to another unoccupied space within 5 feet.\n• You can make minor alterations to dirt or stone, such as changing its color or carving small, simple shapes.\n• You can turn a 5-foot square of earth or stone into difficult terrain for 1 hour. You can create up to three patches of difficult terrain this way; if you create additional patches, the first one you created returns to normal terrain."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can excavate a 5-foot cube of loose dirt or soil and move it along the ground to another unoccupied space within 5 feet.",
+      "You can make minor alterations to dirt or stone, such as changing its color or carving small, simple shapes.",
+      "You can turn a 5-foot square of earth or stone into difficult terrain for 1 hour. You can create up to three patches of difficult terrain this way; if you create additional patches, the first one you created returns to normal terrain."
+     ]
+    }
    }
   ],
   "classes": [
@@ -29784,8 +30209,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You can grant a creature of your choice within range resistance to fire damage until the start of your next turn.\n• You can spark or spread fire in a 5-foot cube, as long as there is fuel that can be ignited within the area.\n• You can douse fire within a 5-foot cube.\n• You can adjust a flame's brightness (halving or doubling it), color (turning the flames to any color of your choice), or shape (forming simple shapes) within a 5-foot cube for 10 minutes."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can grant a creature of your choice within range resistance to fire damage until the start of your next turn.",
+      "You can spark or spread fire in a 5-foot cube, as long as there is fuel that can be ignited within the area.",
+      "You can douse fire within a 5-foot cube.",
+      "You can adjust a flame's brightness (halving or doubling it), color (turning the flames to any color of your choice), or shape (forming simple shapes) within a 5-foot cube for 10 minutes."
+     ]
+    }
    }
   ],
   "classes": [
@@ -29835,8 +30269,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You can move or direct the flow of a 5-foot cube of water in a direction of your choice, but the water will revert back to its natural flow at the start of your next turn unless you concentrate on keeping it in place.\n• You can mold the water into small shapes or simple animations. This change lasts for 1 minute.\n• You can change the color or opacity of a 5-foot cube of water. This change lasts for 1 hour.\n• You can freeze up to a 5-foot cube of unoccupied water or thaw up to a 5-foot cube of ice. The water unfreezes or refreezes naturally based on the environmental conditions (usually taking an hour or more to completely melt or freeze unless in extreme conditions)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can move or direct the flow of a 5-foot cube of water in a direction of your choice, but the water will revert back to its natural flow at the start of your next turn unless you concentrate on keeping it in place.",
+      "You can mold the water into small shapes or simple animations. This change lasts for 1 minute.",
+      "You can change the color or opacity of a 5-foot cube of water. This change lasts for 1 hour.",
+      "You can freeze up to a 5-foot cube of unoccupied water or thaw up to a 5-foot cube of ice. The water unfreezes or refreezes naturally based on the environmental conditions (usually taking an hour or more to completely melt or freeze unless in extreme conditions)."
+     ]
+    }
    }
   ],
   "classes": [
@@ -29886,8 +30329,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The next ranged weapon attack against a creature of your choice within range has disadvantage.\n• One Large or smaller creature of your choice within range must succeed on a Strength saving throw or be pushed 5 feet or knocked prone (your choice).\n• You can increase the next jump made by a creature of your choice within range by 5 feet.\n• You manipulate the wind in a minor way, such as pushing a light object up to 10 feet, rustling plants, slamming a door, or similar effects. These aren't powerful enough to move creatures or deal damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The next ranged weapon attack against a creature of your choice within range has disadvantage.",
+      "One Large or smaller creature of your choice within range must succeed on a Strength saving throw or be pushed 5 feet or knocked prone (your choice).",
+      "You can increase the next jump made by a creature of your choice within range by 5 feet.",
+      "You manipulate the wind in a minor way, such as pushing a light object up to 10 feet, rustling plants, slamming a door, or similar effects. These aren't powerful enough to move creatures or deal damage."
+     ]
+    }
    }
   ],
   "classes": [
@@ -30039,8 +30491,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Track Object.** For the duration, you sense the direction of the object, regardless of distance. If you are within 100 feet of the object, you know its precise location. This spell ceases to function if the object is on another plane of existence or if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.\n•  **Discern Owner.** For the duration, you can call to mind an image of the object's owner in clear detail. If the object is a magic item that requires attunement, the owner is always considered to be the creature currently attuned to the item. If the object is non-magical or does not require attunement, the owner is determined by the DM."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Track Object.** For the duration, you sense the direction of the object, regardless of distance. If you are within 100 feet of the object, you know its precise location. This spell ceases to function if the object is on another plane of existence or if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.",
+      " **Discern Owner.** For the duration, you can call to mind an image of the object's owner in clear detail. If the object is a magic item that requires attunement, the owner is always considered to be the creature currently attuned to the item. If the object is non-magical or does not require attunement, the owner is determined by the DM."
+     ]
+    }
    }
   ],
   "classes": [
@@ -30086,8 +30545,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You gain 50 temporary hit points for the duration.\n• You have advantage on attack rolls that you make with simple and martial weapons.\n• You have advantage on all weapon attacks, and when you hit a target with a weapon attack, it takes an extra **2d12** force damage.\n• You have proficiency in all armor, shields, simple weapons, martial weapons, and with Strength and Constitution saving throws.\n• You can attack twice, instead of once, when you take the Attack action on your turn, unless you already have a feature (such as Extra Attack) which gives you extra attacks.\n• You can conjure and equip (as part of the action used to cast the spell) any armor and any simple or martial weapon of your choice. These items have no strength requirements and are magical in nature, but otherwise have the same properties as their nonmagical counterparts. The equipment vanishes when the spell ends."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain 50 temporary hit points for the duration.",
+      "You have advantage on attack rolls that you make with simple and martial weapons.",
+      "You have advantage on all weapon attacks, and when you hit a target with a weapon attack, it takes an extra **2d12** force damage.",
+      "You have proficiency in all armor, shields, simple weapons, martial weapons, and with Strength and Constitution saving throws.",
+      "You can attack twice, instead of once, when you take the Attack action on your turn, unless you already have a feature (such as Extra Attack) which gives you extra attacks.",
+      "You can conjure and equip (as part of the action used to cast the spell) any armor and any simple or martial weapon of your choice. These items have no strength requirements and are magical in nature, but otherwise have the same properties as their nonmagical counterparts. The equipment vanishes when the spell ends."
+     ]
+    }
    },
    {
     "name": "",
@@ -31096,6 +31566,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Circumstances",
@@ -31578,8 +32049,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage. Until the end of your next turn it is held aloft as long as it is not holding anything else aloft.\n• You create a sculpture out of the stone or dirt that weighs 5 lbs or less and consist of simple shapes. The changes last for 1 hour.\n• If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage. Until the end of your next turn it is held aloft as long as it is not holding anything else aloft.",
+      "You create a sculpture out of the stone or dirt that weighs 5 lbs or less and consist of simple shapes. The changes last for 1 hour.",
+      "If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour."
+     ]
+    }
    },
    {
     "name": "",
@@ -32214,8 +32693,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The target gains 100 temporary hit points.\n• The target has advantage on Strength, Dexterity and Constitution based ability checks as well as attack rolls that it makes with unarmed attacks.\n• The target's unarmed attacks deal an additional **2d12** damage and count as magical for the purpose of overcoming resistance or immunity to nonmagical attacks and damage.\n• The target's size doubles in all dimensions, and its weight is multiplied by eight. It increases its size by one size category.\n• The target can take an additional action on each of its turns, which can only be used to take the attack, dash, disengage, or hide action."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The target gains 100 temporary hit points.",
+      "The target has advantage on Strength, Dexterity and Constitution based ability checks as well as attack rolls that it makes with unarmed attacks.",
+      "The target's unarmed attacks deal an additional **2d12** damage and count as magical for the purpose of overcoming resistance or immunity to nonmagical attacks and damage.",
+      "The target's size doubles in all dimensions, and its weight is multiplied by eight. It increases its size by one size category.",
+      "The target can take an additional action on each of its turns, which can only be used to take the attack, dash, disengage, or hide action."
+     ]
+    }
    },
    {
     "name": "",
@@ -32318,8 +32807,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Trees.** A tree erupts from the ground and reaches out to rake your enemies with its branches. Each creature of your choice within 10 feet must succeed on a Dexterity saving throw or take **6d6** slashing damage.\n• **Roots.** Roots erupt from the ground, seizing creatures within a 10-foot radius. Each creature must make a Strength saving throw or become restrained. Any creature within 5 feet of a restrained creature can use an action to make a Strength (Athletics) check against your spell save DC, ending the effect on a success.\n• **Rocks.** You conjure a boulder and hurl it at a creature. Make a ranged spell attack. On a hit, the target takes **6d10** bludgeoning damage and is knocked prone if it is Large or smaller.\n• **Wind.** You summon a mighty gust. The gust takes the shape of a line 60 feet long and 20 feet wide, originating at a location you can see and traveling in a direction of your choice. All Large or smaller creatures within the area must succeed on a Strength saving throw or be swept 25 feet in the direction of the gust and knocked prone."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Trees.** A tree erupts from the ground and reaches out to rake your enemies with its branches. Each creature of your choice within 10 feet must succeed on a Dexterity saving throw or take **6d6** slashing damage.",
+      "**Roots.** Roots erupt from the ground, seizing creatures within a 10-foot radius. Each creature must make a Strength saving throw or become restrained. Any creature within 5 feet of a restrained creature can use an action to make a Strength (Athletics) check against your spell save DC, ending the effect on a success.",
+      "**Rocks.** You conjure a boulder and hurl it at a creature. Make a ranged spell attack. On a hit, the target takes **6d10** bludgeoning damage and is knocked prone if it is Large or smaller.",
+      "**Wind.** You summon a mighty gust. The gust takes the shape of a line 60 feet long and 20 feet wide, originating at a location you can see and traveling in a direction of your choice. All Large or smaller creatures within the area must succeed on a Strength saving throw or be swept 25 feet in the direction of the gust and knocked prone."
+     ]
+    }
    }
   ],
   "classes": [
@@ -32387,8 +32885,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Outdoor Site or Cavern.** A rampart or dike of earth and stone rises 5 feet high on one side, with a 5 foot deep ditch on the other side.\n• **Marshy or Low-Lying Site.** In areas such as marsh, bog, swamp or tundra, you create a water-filled ditch 5-feet deep. A creature forced to wade the ditch must spend 4 feet of movement for every 1 foot it moves."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Outdoor Site or Cavern.** A rampart or dike of earth and stone rises 5 feet high on one side, with a 5 foot deep ditch on the other side.",
+      "**Marshy or Low-Lying Site.** In areas such as marsh, bog, swamp or tundra, you create a water-filled ditch 5-feet deep. A creature forced to wade the ditch must spend 4 feet of movement for every 1 foot it moves."
+     ]
+    }
    },
    {
     "name": "",
@@ -32792,6 +33297,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d10",
@@ -32891,8 +33397,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You gain a climbing speed equal to your walking speed and can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check\n• You ignore the first 30 feet when determining how much falling damage you would take.\n• You have proficiency with simple weapons, hand crossbows, rapiers, longswords, and short swords.\n• You have advantage on all Dexterity checks and Dexterity saving throws.\n• Once per turn, you can deal an extra **5d6** damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain a climbing speed equal to your walking speed and can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check",
+      "You ignore the first 30 feet when determining how much falling damage you would take.",
+      "You have proficiency with simple weapons, hand crossbows, rapiers, longswords, and short swords.",
+      "You have advantage on all Dexterity checks and Dexterity saving throws.",
+      "Once per turn, you can deal an extra **5d6** damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll."
+     ]
+    }
    }
   ],
   "classes": [
@@ -32951,8 +33467,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Flash**: Fox-fire erupts in a 20-foot radius around the target. Any creature in that area must succeed a Constitution saving throw or take **7d6** Radiant damage. Half as much on a successful save.\n• **Fly**: The target gains a flying speed of 60 feet, until the end of its next turn.\n• **Invisibility**: The target becomes invisible until the end of its next turn.\n• **Recover**: The target heals itself for 5d6 Hit Points.\n• **Zoom**: You make the object that the creature will end up holding appear as if it is the original object it was holding. When the creature tries to use it or stops holding it, the illusion fades."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Flash**: Fox-fire erupts in a 20-foot radius around the target. Any creature in that area must succeed a Constitution saving throw or take **7d6** Radiant damage. Half as much on a successful save.",
+      "**Fly**: The target gains a flying speed of 60 feet, until the end of its next turn.",
+      "**Invisibility**: The target becomes invisible until the end of its next turn.",
+      "**Recover**: The target heals itself for 5d6 Hit Points.",
+      "**Zoom**: You make the object that the creature will end up holding appear as if it is the original object it was holding. When the creature tries to use it or stops holding it, the illusion fades."
+     ]
+    }
    }
   ],
   "classes": [
@@ -33323,8 +33849,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Acid.** The target is poisoned until the end of its next turn.\n• **Cold.** The target's speed is reduced to 0 until the end of its next turn.\n• **Fire.** The target takes an additional **2d8** fire damage and each creature within 5 feet of the target must succeed on a Constitution saving throw or take **1d8** fire damage.\n• **Force.** The target is pushed 10 feet directly away from you.\n• **Lightning.** The target is blinded until the end of its next turn.\n• **Thunder** The target falls prone."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Acid.** The target is poisoned until the end of its next turn.",
+      "**Cold.** The target's speed is reduced to 0 until the end of its next turn.",
+      "**Fire.** The target takes an additional **2d8** fire damage and each creature within 5 feet of the target must succeed on a Constitution saving throw or take **1d8** fire damage.",
+      "**Force.** The target is pushed 10 feet directly away from you.",
+      "**Lightning.** The target is blinded until the end of its next turn.",
+      "**Thunder** The target falls prone."
+     ]
+    }
    },
    {
     "name": "At Higher Levels",
@@ -33952,8 +34489,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Blinded.** Your phantasm blocks the target's sight, blinded it.\n• **Restrained.** Your phantasm entangles the target, restrained it.\n• **Terrified.** Your phantasm takes the form of the target's greatest fears, making it frightened.\n• **Assailed.** Your phantasm is real enough to cause harm. The target takes **2d10** psychic damage at the start of each of its turns."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Blinded.** Your phantasm blocks the target's sight, blinded it.",
+      "**Restrained.** Your phantasm entangles the target, restrained it.",
+      "**Terrified.** Your phantasm takes the form of the target's greatest fears, making it frightened.",
+      "**Assailed.** Your phantasm is real enough to cause harm. The target takes **2d10** psychic damage at the start of each of its turns."
+     ]
+    }
    },
    {
     "name": "",
@@ -34160,6 +34706,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d10",
@@ -34592,8 +35139,22 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Material Plane.** The atmosphere is comfortable and dry inside the bubble. In addition, the area is lit by sunlight, which provides bright light throughout the entire area.\n• **Feywild.** All sensations, both sensory and emotional are heightened within the area and magic runs more freely. Once per turn, when a creature casts a spell using a spell slot of 1st level or higher inside the area they must roll on the Wild Magic Surge table to create an additional magical effect.\n• **Shadowfell.** Colors and light seem to leech away in the bubble, and those inside the area are filled with a persistent sense of dread. Any light source in the area that would normally produce bright light produces dim light instead and all sources of dim light are darkness. In addition, creatures in the area have vulnerability to necrotic damage.\n• **Ethereal Plane.** The bubble is filled with swirling fog that limits vision. Anything further than 10 feet away in the area is heavily obscured and no sound can pass into or out of the area. In addition, creatures in the area have a flying speed equal to their walking speed.\n• **Astral Plane.** The bubble becomes a silvery void, where creatures and objects stop aging and do not suffer from hunger or thirst. As a plane of thought, each creature's walking speed is equal to 3x their Intelligence score as long as they remain in the area.\n• **Elemental Plane of Air.** Powerful winds whip throughout the bubble, causing any ranged attacks into or out of the area to be made with disadvantage. Any creature that enters the area for the first time on a turn or starts its turn there must succeed on a Strength saving throw or be pushed 10 feet directly away from the center of the area. If this spell is cast on a creature, that creature is immune to being pushed by this spell\n• **Elemental plane of Earth.** The entire bubble is filled with constantly churning sediment, blinding any creature as long as it remains in the area while also providing total cover. There is no air present in the area, so a creature that needs to breathe must hold its breath or begin to suffocate. In addition, a creature moving through the area must spend 4 feet of movement for every 1 foot it moves unless it has a burrowing speed.\n• **Elemental plane of Fire.** The bubble is filled with a sweltering heat. Any creature that enters the area for the first time on a turn or starts its turn there; it must succeed on a Constitution saving throw or take **1d8** fire damage. Creatures wearing medium or heavy armor, or who are clad in heavy clothing, have disadvantage on the saving throw. Flammable objects in the area that are not being worn or carried ignite.\n• **Elemental plane of Water.** The entire bubble is filled with water drawn from frigid, crushing depths. While in the area, a creature suffers from the normal effects of Frigid Waters (see \"Unusual Environments\" in chapter 5 of the Dungeon Master's Guide)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Material Plane.** The atmosphere is comfortable and dry inside the bubble. In addition, the area is lit by sunlight, which provides bright light throughout the entire area.",
+      "**Feywild.** All sensations, both sensory and emotional are heightened within the area and magic runs more freely. Once per turn, when a creature casts a spell using a spell slot of 1st level or higher inside the area they must roll on the Wild Magic Surge table to create an additional magical effect.",
+      "**Shadowfell.** Colors and light seem to leech away in the bubble, and those inside the area are filled with a persistent sense of dread. Any light source in the area that would normally produce bright light produces dim light instead and all sources of dim light are darkness. In addition, creatures in the area have vulnerability to necrotic damage.",
+      "**Ethereal Plane.** The bubble is filled with swirling fog that limits vision. Anything further than 10 feet away in the area is heavily obscured and no sound can pass into or out of the area. In addition, creatures in the area have a flying speed equal to their walking speed.",
+      "**Astral Plane.** The bubble becomes a silvery void, where creatures and objects stop aging and do not suffer from hunger or thirst. As a plane of thought, each creature's walking speed is equal to 3x their Intelligence score as long as they remain in the area.",
+      "**Elemental Plane of Air.** Powerful winds whip throughout the bubble, causing any ranged attacks into or out of the area to be made with disadvantage. Any creature that enters the area for the first time on a turn or starts its turn there must succeed on a Strength saving throw or be pushed 10 feet directly away from the center of the area. If this spell is cast on a creature, that creature is immune to being pushed by this spell",
+      "**Elemental plane of Earth.** The entire bubble is filled with constantly churning sediment, blinding any creature as long as it remains in the area while also providing total cover. There is no air present in the area, so a creature that needs to breathe must hold its breath or begin to suffocate. In addition, a creature moving through the area must spend 4 feet of movement for every 1 foot it moves unless it has a burrowing speed.",
+      "**Elemental plane of Fire.** The bubble is filled with a sweltering heat. Any creature that enters the area for the first time on a turn or starts its turn there; it must succeed on a Constitution saving throw or take **1d8** fire damage. Creatures wearing medium or heavy armor, or who are clad in heavy clothing, have disadvantage on the saving throw. Flammable objects in the area that are not being worn or carried ignite.",
+      "**Elemental plane of Water.** The entire bubble is filled with water drawn from frigid, crushing depths. While in the area, a creature suffers from the normal effects of Frigid Waters (see \"Unusual Environments\" in chapter 5 of the Dungeon Master's Guide)."
+     ]
+    }
    }
   ],
   "classes": [
@@ -35449,6 +36010,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "1d8",
@@ -35538,6 +36100,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d8",
@@ -35612,6 +36175,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d8",
@@ -35701,6 +36265,7 @@
     "name": "Prismatic Layers",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Prismatic Layers",
      "headers": [
       "Order",
@@ -36115,8 +36680,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Creature.** You attempt to move a Huge or smaller creature, including yourself. The creature must make a Strength saving throw. A creature can willingly fail this save. On a failure, you move the creature up to 30 feet in any direction within the spell's range, and you may restrain the creature until the end of your next turn.\n• **Object.** You attempt to move an object that weighs up to 1,000 pounds and can exert fine control on it. If the object isn't being worn or carried, you move it up to 30 feet in any direction within the spell's range. If the object is worn or carried by a creature, the creature must make a Strength saving throw. On a failure, you pull the object away from that creature and can move it up to 30 feet in any direction within the spell's range."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Creature.** You attempt to move a Huge or smaller creature, including yourself. The creature must make a Strength saving throw. A creature can willingly fail this save. On a failure, you move the creature up to 30 feet in any direction within the spell's range, and you may restrain the creature until the end of your next turn.",
+      "**Object.** You attempt to move an object that weighs up to 1,000 pounds and can exert fine control on it. If the object isn't being worn or carried, you move it up to 30 feet in any direction within the spell's range. If the object is worn or carried by a creature, the creature must make a Strength saving throw. On a failure, you pull the object away from that creature and can move it up to 30 feet in any direction within the spell's range."
+     ]
+    }
    },
    {
     "name": "",
@@ -36629,6 +37201,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Result",
@@ -37138,6 +37711,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Result",
@@ -37267,8 +37841,20 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Its type becomes Undead.\n• Its Strength becomes 10 if it was lower.\n• Its Dexterity becomes 14 if it was lower.\n• Its Constitution becomes 15, Its Intelligence becomes 6, its Wisdom becomes 8, and its Charisma becomes 5.\n• It gains vulnerability to bludgeoning damage, immunity to poison damage, and immunity to the exhaustion and poisoned conditions.\n• It has 60-foot darkvision.\n• Its hit points become 13 if they were lower than 13."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Its type becomes Undead.",
+      "Its Strength becomes 10 if it was lower.",
+      "Its Dexterity becomes 14 if it was lower.",
+      "Its Constitution becomes 15, Its Intelligence becomes 6, its Wisdom becomes 8, and its Charisma becomes 5.",
+      "It gains vulnerability to bludgeoning damage, immunity to poison damage, and immunity to the exhaustion and poisoned conditions.",
+      "It has 60-foot darkvision.",
+      "Its hit points become 13 if they were lower than 13."
+     ]
+    }
    },
    {
     "name": "",
@@ -37282,8 +37868,22 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Its type becomes Undead.\n• Its Strength becomes 13 if it was lower.\n• Its Dexterity becomes 6 if it was higher.\n• Its Constitution becomes 16, Its Intelligence becomes 3, its Wisdom becomes 6, and its Charisma becomes 5.\n• Its speed is reduced by 10 feet.\n• It gains immunity to poison damage, and immunity to the poisoned condition.\n• It has 60-foot darkvision.\n• Its hit points become 22 if they were lower than 22.\n• It gains the trait: Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Its type becomes Undead.",
+      "Its Strength becomes 13 if it was lower.",
+      "Its Dexterity becomes 6 if it was higher.",
+      "Its Constitution becomes 16, Its Intelligence becomes 3, its Wisdom becomes 6, and its Charisma becomes 5.",
+      "Its speed is reduced by 10 feet.",
+      "It gains immunity to poison damage, and immunity to the poisoned condition.",
+      "It has 60-foot darkvision.",
+      "Its hit points become 22 if they were lower than 22.",
+      "It gains the trait: Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+     ]
+    }
    },
    {
     "name": "",
@@ -37350,8 +37950,21 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Its type becomes Undead.\n• Its Strength becomes 10 if it was lower.\n• Its Dexterity becomes 14 if it was lower.\n• Its Constitution becomes 15, Its Intelligence becomes 6, its Wisdom becomes 8, and its Charisma becomes 5.\n• It gains vulnerability to bludgeoning damage, immunity to poison damage, and immunity to the exhaustion and poisoned conditions.\n• It has 60-foot darkvision.\n• Its hit points become 13 if they were lower than 13.\n• Its challenge rating becomes 1/4 if it was lower than 1/4."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Its type becomes Undead.",
+      "Its Strength becomes 10 if it was lower.",
+      "Its Dexterity becomes 14 if it was lower.",
+      "Its Constitution becomes 15, Its Intelligence becomes 6, its Wisdom becomes 8, and its Charisma becomes 5.",
+      "It gains vulnerability to bludgeoning damage, immunity to poison damage, and immunity to the exhaustion and poisoned conditions.",
+      "It has 60-foot darkvision.",
+      "Its hit points become 13 if they were lower than 13.",
+      "Its challenge rating becomes 1/4 if it was lower than 1/4."
+     ]
+    }
    },
    {
     "name": "",
@@ -37365,8 +37978,23 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Its type becomes Undead.\n• Its Strength becomes 13 if it was lower.\n• Its Dexterity becomes 6 if it was higher.\n• Its Constitution becomes 16, Its Intelligence becomes 3, its Wisdom becomes 6, and its Charisma becomes 5.\n• Its speed is reduced by 10 feet.\n• It gains immunity to poison damage, and immunity to the poisoned condition.\n• It has 60-foot darkvision.\n• Its hit points become 22 if they were lower than 22.\n• Its challenge rating becomes 1/4 if it was lower than 1/4.\n• It gains the trait: **Undead Fortitude.** If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Its type becomes Undead.",
+      "Its Strength becomes 13 if it was lower.",
+      "Its Dexterity becomes 6 if it was higher.",
+      "Its Constitution becomes 16, Its Intelligence becomes 3, its Wisdom becomes 6, and its Charisma becomes 5.",
+      "Its speed is reduced by 10 feet.",
+      "It gains immunity to poison damage, and immunity to the poisoned condition.",
+      "It has 60-foot darkvision.",
+      "Its hit points become 22 if they were lower than 22.",
+      "Its challenge rating becomes 1/4 if it was lower than 1/4.",
+      "It gains the trait: **Undead Fortitude.** If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+     ]
+    }
    },
    {
     "name": "",
@@ -37380,8 +38008,23 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Its type becomes Undead.\n• Its Strength becomes 13 if it was lower.\n• Its Dexterity becomes 15 if it was higher.\n• Its Constitution becomes 10, Its Intelligence becomes 7, its Wisdom becomes 10, and its Charisma becomes 6.\n• It gains immunity to poison damage, and immunity to the charmed, exhausted, and poisoned conditions.\n• It has 60-foot darkvision.\n• Its hit points become 22 if they were lower than 22.\n• Its challenge rating becomes 1 if it was lower than 1.\n• It gains a bite attack, which deals **2d6** damage on a hit.\n• It gains a claw attack, which deals **2d4** damage on a hit and can use its Dexterity modifier in place of Strength. Additionally, once on each of its turns when it hits with this attack, it can force the target to make a DC 10 Constitution saving throw or be paralyzed for one minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. Elves and the undead are immune to this effect."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Its type becomes Undead.",
+      "Its Strength becomes 13 if it was lower.",
+      "Its Dexterity becomes 15 if it was higher.",
+      "Its Constitution becomes 10, Its Intelligence becomes 7, its Wisdom becomes 10, and its Charisma becomes 6.",
+      "It gains immunity to poison damage, and immunity to the charmed, exhausted, and poisoned conditions.",
+      "It has 60-foot darkvision.",
+      "Its hit points become 22 if they were lower than 22.",
+      "Its challenge rating becomes 1 if it was lower than 1.",
+      "It gains a bite attack, which deals **2d6** damage on a hit.",
+      "It gains a claw attack, which deals **2d4** damage on a hit and can use its Dexterity modifier in place of Strength. Additionally, once on each of its turns when it hits with this attack, it can force the target to make a DC 10 Constitution saving throw or be paralyzed for one minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. Elves and the undead are immune to this effect."
+     ]
+    }
    },
    {
     "name": "",
@@ -37992,8 +38635,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• One effect that charmed or petrified the target.\n• One curse, including the target's attunement to a cursed magic item.\n• Any reduction to one of the target's ability scores.\n• One effect reducing the target's hit point maximum."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "One effect that charmed or petrified the target.",
+      "One curse, including the target's attunement to a cursed magic item.",
+      "Any reduction to one of the target's ability scores.",
+      "One effect reducing the target's hit point maximum."
+     ]
+    }
    },
    {
     "name": "",
@@ -38232,6 +38884,7 @@
     "name": "Restoration",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Restoration",
      "headers": [
       "Slot Level",
@@ -38300,8 +38953,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• One effect that charmed or petrified the target.\n• One curse, including the target's attunement to a cursed magic item.\n• Any reduction to one of the target's ability scores.\n• One effect reducing the target's hit point maximum."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "One effect that charmed or petrified the target.",
+      "One curse, including the target's attunement to a cursed magic item.",
+      "Any reduction to one of the target's ability scores.",
+      "One effect reducing the target's hit point maximum."
+     ]
+    }
    }
   ],
   "classes": [
@@ -39508,6 +40170,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "1d8",
@@ -39877,8 +40540,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You create an instantaneous, harmless sensory effect, such as a flickering azure flame, an unnaturally chill breeze, rhythmic chanting, or the smell of incense.\n• A minor spirit briefly appears and fades away.\n• You instantaneously light or snuff out a candle, torch, or a small campfire.\n• A mote or iridescent light points to the closest place of spiritual power, recent death, or new birth.\n• Ley lines within range briefly reveal themselves as they flicker with otherworldly light."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You create an instantaneous, harmless sensory effect, such as a flickering azure flame, an unnaturally chill breeze, rhythmic chanting, or the smell of incense.",
+      "A minor spirit briefly appears and fades away.",
+      "You instantaneously light or snuff out a candle, torch, or a small campfire.",
+      "A mote or iridescent light points to the closest place of spiritual power, recent death, or new birth.",
+      "Ley lines within range briefly reveal themselves as they flicker with otherworldly light."
+     ]
+    }
    }
   ],
   "classes": []
@@ -40649,8 +41322,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage. Until the end of your next turn the water is held aloft as long as it is not holding anything else aloft.\n• You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.\n• You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.\n• You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage. Until the end of your next turn the water is held aloft as long as it is not holding anything else aloft.",
+      "You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.",
+      "You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.",
+      "You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour."
+     ]
+    }
    },
    {
     "name": "",
@@ -41930,8 +42612,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Terror.** A creature failing the save is frightened of the omen.\n• **Awe.** A creature failing the save is charmed and will not willingly move anywhere it cannot see the omen.\n• **Courage.** A creature has advantage on saving throws against fear and charm effects while it can see the omen."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Terror.** A creature failing the save is frightened of the omen.",
+      "**Awe.** A creature failing the save is charmed and will not willingly move anywhere it cannot see the omen.",
+      "**Courage.** A creature has advantage on saving throws against fear and charm effects while it can see the omen."
+     ]
+    }
    },
    {
     "name": "At Higher Levels",
@@ -44494,8 +45184,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• While you are not wearing armor, your armor class becomes 17. You can use a shield and still gain this benefit.\n• You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost. \n• You are immune to any other spell or affect that would alter your form.\n• You have advantage on Constitution saving throws.\n• You have resistance to poison damage and resistance to bludgeoning, piercing and slashing damage from nonmagical attacks that aren't adamantine."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "While you are not wearing armor, your armor class becomes 17. You can use a shield and still gain this benefit.",
+      "You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost. ",
+      "You are immune to any other spell or affect that would alter your form.",
+      "You have advantage on Constitution saving throws.",
+      "You have resistance to poison damage and resistance to bludgeoning, piercing and slashing damage from nonmagical attacks that aren't adamantine."
+     ]
+    }
    }
   ],
   "classes": [
@@ -44582,8 +45282,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Stone Meld.** You and up to 7 other Large or smaller creatures you choose are able to meld with the stone. Until the end of your next round, each willing creature can touch a 5 foot area of the stone and be absorbed into it. While absorbed, a creature cannot see or hear anything, but has tremorsense within 30 feet. A creature may exit the stone voluntarily as an action, or be ejected if the stone is destroyed or the spell ends.\n• **Stone Armor.** The stone joins with you, covering your body in a rocky exterior. You gain 10 temporary hit points and have resistance to nonmagical damage as long as you have these temporary hit points.\n• **Stone Step.** Your feet blend into the stone. You gain tremorsense within 30 feet, and as long as you are standing on the ground, you are immune to the prone condition or to being moved against your will."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Stone Meld.** You and up to 7 other Large or smaller creatures you choose are able to meld with the stone. Until the end of your next round, each willing creature can touch a 5 foot area of the stone and be absorbed into it. While absorbed, a creature cannot see or hear anything, but has tremorsense within 30 feet. A creature may exit the stone voluntarily as an action, or be ejected if the stone is destroyed or the spell ends.",
+      "**Stone Armor.** The stone joins with you, covering your body in a rocky exterior. You gain 10 temporary hit points and have resistance to nonmagical damage as long as you have these temporary hit points.",
+      "**Stone Step.** Your feet blend into the stone. You gain tremorsense within 30 feet, and as long as you are standing on the ground, you are immune to the prone condition or to being moved against your will."
+     ]
+    }
    }
   ],
   "classes": [
@@ -44724,8 +45432,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Fire.** Flames pelt the area beneath the storm cloud. Each creature in the area must make a Dexterity saving throw. A creature takes **12d8** fire damage on a failed save, or half as much on a successful one.\n• **Earth.** Chunks of rock fall from the sky. Each creature in the area must make a Dexterity saving throw. A creature takes **10d8** bludgeoning damage on a failed save, or half as much on a successful one. In addition, the rubble left behind is difficult terrain\n• **Water.** A deluge of rain extinguishes unprotected flames. Everything in the area is heavily obscured. In addition, a creature moving through the area must spend 4 feet of movement for every 1 foot it moves."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fire.** Flames pelt the area beneath the storm cloud. Each creature in the area must make a Dexterity saving throw. A creature takes **12d8** fire damage on a failed save, or half as much on a successful one.",
+      "**Earth.** Chunks of rock fall from the sky. Each creature in the area must make a Dexterity saving throw. A creature takes **10d8** bludgeoning damage on a failed save, or half as much on a successful one. In addition, the rubble left behind is difficult terrain",
+      "**Water.** A deluge of rain extinguishes unprotected flames. Everything in the area is heavily obscured. In addition, a creature moving through the area must spend 4 feet of movement for every 1 foot it moves."
+     ]
+    }
    }
   ],
   "classes": [
@@ -46034,8 +46750,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Lightning.** Lightning strikes rain down. As a bonus action, you can designate two points below the cloud to be struck by lightning. All creatures within a 10-foot radius of either point must make a Dexterity saving throw, taking **4d12** lightning damage on a failure or half as much on a success.\n• **Downpour.** Torrential rain falls. The storm's entire area becomes difficult terrain, and heavily obscured to every creature except you.\n• **Hurricane.** Gusting winds whip with brutal ferocity. Ranged weapon attacks in the area automatically miss. Every Huge or smaller creature starting its turn below the cloud must succeed on a Strength saving throw or be thrown 30 feet in a random direction and knocked prone.\n• **Hailstorm.** Icy stones rain down. Each creature starting its turn below the cloud takes **2d10** bludgeoning damage. Any creature below the cloud has disadvantage on saving throws it makes to maintain *concentration*.\n• **Expansion.** You can move the storm 120 feet or increase its radius by 60 feet. You can add this effect any number of times."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Lightning.** Lightning strikes rain down. As a bonus action, you can designate two points below the cloud to be struck by lightning. All creatures within a 10-foot radius of either point must make a Dexterity saving throw, taking **4d12** lightning damage on a failure or half as much on a success.",
+      "**Downpour.** Torrential rain falls. The storm's entire area becomes difficult terrain, and heavily obscured to every creature except you.",
+      "**Hurricane.** Gusting winds whip with brutal ferocity. Ranged weapon attacks in the area automatically miss. Every Huge or smaller creature starting its turn below the cloud must succeed on a Strength saving throw or be thrown 30 feet in a random direction and knocked prone.",
+      "**Hailstorm.** Icy stones rain down. Each creature starting its turn below the cloud takes **2d10** bludgeoning damage. Any creature below the cloud has disadvantage on saving throws it makes to maintain *concentration*.",
+      "**Expansion.** You can move the storm 120 feet or increase its radius by 60 feet. You can add this effect any number of times."
+     ]
+    }
    }
   ],
   "classes": [
@@ -46137,8 +46863,22 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.\n• You have advantage on attack rolls that you make with simple and martial weapons.\n• When you hit a target with a weapon attack, that target takes an extra **2d12** force damage.\n• You have proficiency with all armor, shields, simple weapons, and martial weapons.\n• You have proficiency in Strength and Constitution saving throws.\n• You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks.\n• You can drop or stow anything your holding\n• You can draw up to two weapons\n• You can instantly don armor that you have on your person"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.",
+      "You have advantage on attack rolls that you make with simple and martial weapons.",
+      "When you hit a target with a weapon attack, that target takes an extra **2d12** force damage.",
+      "You have proficiency with all armor, shields, simple weapons, and martial weapons.",
+      "You have proficiency in Strength and Constitution saving throws.",
+      "You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks.",
+      "You can drop or stow anything your holding",
+      "You can draw up to two weapons",
+      "You can instantly don armor that you have on your person"
+     ]
+    }
    },
    {
     "name": "",
@@ -46624,8 +47364,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Tiny toads, snakes, moths, or other vermin\n• Short-lived wildflowers in full bloom\n• Black filth or bile\n• Fairy tales and nursery rhymes\n• Unflattering, unrelated truths about the target or those they are addressing"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Tiny toads, snakes, moths, or other vermin",
+      "Short-lived wildflowers in full bloom",
+      "Black filth or bile",
+      "Fairy tales and nursery rhymes",
+      "Unflattering, unrelated truths about the target or those they are addressing"
+     ]
+    }
    },
    {
     "name": "",
@@ -47108,8 +47858,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Normal Switch**: Both items switch normally.\n• **Damaging Switch**: You damage the object that the creature will end up holding. For example glass will shatter, wood will crack, and metal will be bent.\n• **Illusory Switch**: You make the object that the creature will end up holding appear as if it is the original object it was holding. When the creature tries to use it or stops holding it, the illusion fades."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Normal Switch**: Both items switch normally.",
+      "**Damaging Switch**: You damage the object that the creature will end up holding. For example glass will shatter, wood will crack, and metal will be bent.",
+      "**Illusory Switch**: You make the object that the creature will end up holding appear as if it is the original object it was holding. When the creature tries to use it or stops holding it, the illusion fades."
+     ]
+    }
    }
   ],
   "classes": [
@@ -48101,8 +48859,21 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• If the target has an Intelligence of less than 12, its Intelligence becomes 12.\n• The target gains resistance to cold damage as well as resistance to bludgeoning, piercing and slashing from nonmagical attacks.\n• The target has advantage on saving throws against spells and other magic effects.\n• The target gains immunity to fire and poison damage.\n• The target is immune to the poisoned condition.\n• The target has telepathy out to 120 feet.\n• The target gains darkvision out to 120 feet.\n• •The target gains the Fiend creature type in addition to its Undead creature type. It can be affected by any game effects that work on either of its creature types."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "If the target has an Intelligence of less than 12, its Intelligence becomes 12.",
+      "The target gains resistance to cold damage as well as resistance to bludgeoning, piercing and slashing from nonmagical attacks.",
+      "The target has advantage on saving throws against spells and other magic effects.",
+      "The target gains immunity to fire and poison damage.",
+      "The target is immune to the poisoned condition.",
+      "The target has telepathy out to 120 feet.",
+      "The target gains darkvision out to 120 feet.",
+      "•The target gains the Fiend creature type in addition to its Undead creature type. It can be affected by any game effects that work on either of its creature types."
+     ]
+    }
    }
   ],
   "classes": [
@@ -48135,8 +48906,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Climbing.** The vines form into convenient handholds and footholds throughout the entire area. Any creature can climb them as easily as a regular ladder.\n• **Binding.** The vines wrap themselves around anything in the area. Each creature that ends its turn in the area must succeed on a Strength saving throw or be restrained by the vines until the spell ends or you change the effect. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success it frees itself.\n• **Hindering.** The vines are thick and gnarled, turning the entire area into difficult terrain.\n• **Camouflage.** The vines sprout a thick cover of foliage. Any creature in the area is heavily obscured."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Climbing.** The vines form into convenient handholds and footholds throughout the entire area. Any creature can climb them as easily as a regular ladder.",
+      "**Binding.** The vines wrap themselves around anything in the area. Each creature that ends its turn in the area must succeed on a Strength saving throw or be restrained by the vines until the spell ends or you change the effect. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success it frees itself.",
+      "**Hindering.** The vines are thick and gnarled, turning the entire area into difficult terrain.",
+      "**Camouflage.** The vines sprout a thick cover of foliage. Any creature in the area is heavily obscured."
+     ]
+    }
    }
   ],
   "classes": [
@@ -48165,8 +48945,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The target gains resistance to acid, cold and lightning damage if they are Evil, or resistance to cold, fire and radiant damage if they are Good or Neutral.\n• The target can use Charisma instead of Strength or Dexterity for attack and damage rolls with weapon attacks.\n• The target gains darkvision out to a range of 60 feet."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The target gains resistance to acid, cold and lightning damage if they are Evil, or resistance to cold, fire and radiant damage if they are Good or Neutral.",
+      "The target can use Charisma instead of Strength or Dexterity for attack and damage rolls with weapon attacks.",
+      "The target gains darkvision out to a range of 60 feet."
+     ]
+    }
    }
   ],
   "classes": [
@@ -49083,8 +49871,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Dowsing.** The pendulum tugs in a direction with increasing urgency as you near your destination, informing you of its distance and direction.\n• **Ascertainment.** Whenever you are presented with a choice of paths along the way to the destination, the pendulum points towards the shortest and most direct route (ignoring safety).\n• **Forecast.** The mirror displays images of the next 30 miles on the path to the destination, granting a general awareness of natural hazards or obstacles, such as decaying bridges or cliffs."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Dowsing.** The pendulum tugs in a direction with increasing urgency as you near your destination, informing you of its distance and direction.",
+      "**Ascertainment.** Whenever you are presented with a choice of paths along the way to the destination, the pendulum points towards the shortest and most direct route (ignoring safety).",
+      "**Forecast.** The mirror displays images of the next 30 miles on the path to the destination, granting a general awareness of natural hazards or obstacles, such as decaying bridges or cliffs."
+     ]
+    }
    }
   ],
   "classes": [
@@ -49890,8 +50686,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Arms.** The affected creature cannot use objects (including using weapons) or cast spells with somatic components. The target drops anything it was holding when the spell was cast.\n• **Legs.** The affected creature falls prone and is unable to stand up while the spell lasts. The target's speed is reduced by 10 feet.\n• **Wings.** The affected creature loses the use of its wings. If it has a fly speed requiring the use of its wings, its fly speed is reduced to 0."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Arms.** The affected creature cannot use objects (including using weapons) or cast spells with somatic components. The target drops anything it was holding when the spell was cast.",
+      "**Legs.** The affected creature falls prone and is unable to stand up while the spell lasts. The target's speed is reduced by 10 feet.",
+      "**Wings.** The affected creature loses the use of its wings. If it has a fly speed requiring the use of its wings, its fly speed is reduced to 0."
+     ]
+    }
    },
    {
     "name": "",
@@ -50483,8 +51287,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Huge, molting feathers and a flying speed of 30 feet\n• Squamous skin, the ability to breathe water, and a swimming speed of 60 feet\n• Shaggy fur hide and an AC of 13 + your Wisdom modifier."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Huge, molting feathers and a flying speed of 30 feet",
+      "Squamous skin, the ability to breathe water, and a swimming speed of 60 feet",
+      "Shaggy fur hide and an AC of 13 + your Wisdom modifier."
+     ]
+    }
    },
    {
     "name": "",

@@ -24,6 +24,7 @@
     "name": "Monster Research",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Monster Research",
      "headers": [
       "Type",
@@ -93,6 +94,7 @@
     "name": "Aberrations",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Aberrations",
      "headers": [
       "d4",
@@ -122,6 +124,7 @@
     "name": "Beasts",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Beasts",
      "headers": [
       "d4",
@@ -151,6 +154,7 @@
     "name": "Celestials",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Celestials",
      "headers": [
       "d4",
@@ -180,6 +184,7 @@
     "name": "Constructs",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Constructs",
      "headers": [
       "d4",
@@ -209,6 +214,7 @@
     "name": "Dragons",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Dragons",
      "headers": [
       "d4",
@@ -238,6 +244,7 @@
     "name": "Elementals",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Elementals",
      "headers": [
       "d4",
@@ -267,6 +274,7 @@
     "name": "Fey",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Fey",
      "headers": [
       "d4",
@@ -296,6 +304,7 @@
     "name": "Fiends",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Fiends",
      "headers": [
       "d4",
@@ -325,6 +334,7 @@
     "name": "Giants",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Giants",
      "headers": [
       "d4",
@@ -354,6 +364,7 @@
     "name": "Humanoids",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Humanoids",
      "headers": [
       "d4",
@@ -383,6 +394,7 @@
     "name": "Monstrosities",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Monstrosities",
      "headers": [
       "d4",
@@ -412,6 +424,7 @@
     "name": "Oozes",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Oozes",
      "headers": [
       "d4",
@@ -441,6 +454,7 @@
     "name": "Plants",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Plants",
      "headers": [
       "d4",
@@ -470,6 +484,7 @@
     "name": "Undead",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Undead",
      "headers": [
       "d4",
@@ -572,6 +587,7 @@
     "name": "Multiclass Spellcaster: Spell Slots per Spell Level",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Multiclass Spellcaster: Spell Slots per Spell Level",
      "headers": [
       "Level",
@@ -851,8 +867,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• All your levels in the Bard, Cleric, Druid, Sorcerer, and Wizard classes\n• Half your levels (round up) in the Paladin and Ranger classes\n• One third of your Fighter or Rogue levels (round down) if you have the Eldritch Knight or Arcane Trickster subclass."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "All your levels in the Bard, Cleric, Druid, Sorcerer, and Wizard classes",
+      "Half your levels (round up) in the Paladin and Ranger classes",
+      "One third of your Fighter or Rogue levels (round down) if you have the Eldritch Knight or Arcane Trickster subclass."
+     ]
+    }
    },
    {
     "name": "",
@@ -960,8 +984,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Accomplishing one in a series of goals necessary to complete the adventure.\n• Discovering a hidden location or piece of information relevant to the adventure.\n• Reaching an important destination."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Accomplishing one in a series of goals necessary to complete the adventure.",
+      "Discovering a hidden location or piece of information relevant to the adventure.",
+      "Reaching an important destination."
+     ]
+    }
    },
    {
     "name": "",
@@ -975,8 +1007,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The adventurers gain the benefit of a Short Rest.\n• Characters recover a Hit Point Die or a level 1 spell slot.\n• Characters regain the use of magic items that have had their limited uses expended."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The adventurers gain the benefit of a Short Rest.",
+      "Characters recover a Hit Point Die or a level 1 spell slot.",
+      "Characters regain the use of magic items that have had their limited uses expended."
+     ]
+    }
    }
   ]
  },
@@ -1005,6 +1045,7 @@
     "name": "Training to Gain Levels",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Training to Gain Levels",
      "headers": [
       "Level Attained",
@@ -1072,6 +1113,7 @@
     "name": "Firearms",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Firearms",
      "headers": [
       "Modern Item",
@@ -1130,6 +1172,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Futuristic Item",
@@ -1187,6 +1230,7 @@
     "name": "Explosives",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Explosives",
      "headers": [
       "Item",
@@ -1363,8 +1407,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Completing Missions**: Advancing a group's interests increases a character's Renown Score within that group by 1. Completing a mission specifically assigned by that group or that directly benefits the group increases the character's Renown Score by 2. Hugely significant quests might grant Renown Score increases of 3 or 4 at once.\n• **Group Involvement**: Once a character has established a Renown Score of 1+ with a group, the character can gain renown by spending time between adventures undertaking minor tasks for the group and socializing with its members. After doing so for a number of days equal to 10 times the character's current Renown Score, the character's Renown Score increases by 1."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Completing Missions**: Advancing a group's interests increases a character's Renown Score within that group by 1. Completing a mission specifically assigned by that group or that directly benefits the group increases the character's Renown Score by 2. Hugely significant quests might grant Renown Score increases of 3 or 4 at once.",
+      "**Group Involvement**: Once a character has established a Renown Score of 1+ with a group, the character can gain renown by spending time between adventures undertaking minor tasks for the group and socializing with its members. After doing so for a number of days equal to 10 times the character's current Renown Score, the character's Renown Score increases by 1."
+     ]
+    }
    },
    {
     "name": "Benefits of Renown",
@@ -1400,6 +1451,7 @@
     "name": "Level-Based Renown",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Level-Based Renown",
      "headers": [
       "Renown Score",
@@ -1451,6 +1503,7 @@
     "name": "Potion Miscibility",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Potion Miscibility",
      "headers": [
       "1d100",
@@ -1507,8 +1560,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Third Success**: You become Stable.\n• **Third Failure**: You die.\n• **Rolling a 1**: Counts as two failures.\n• **Rolling a 20**: You regain 1 Hit Point."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Third Success**: You become Stable.",
+      "**Third Failure**: You die.",
+      "**Rolling a 1**: Counts as two failures.",
+      "**Rolling a 20**: You regain 1 Hit Point."
+     ]
+    }
    },
    {
     "name": "",
@@ -1556,8 +1618,25 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Attack\n• Dodge\n• Dash\n• Help\n• Disengage\n• Hide\n• Influence\n• Magic\n• Ready\n• Search\n• Study\n• Utilize"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Attack",
+      "Dodge",
+      "Dash",
+      "Help",
+      "Disengage",
+      "Hide",
+      "Influence",
+      "Magic",
+      "Ready",
+      "Search",
+      "Study",
+      "Utilize"
+     ]
+    }
    }
   ]
  },
@@ -1698,6 +1777,7 @@
     "name": "Figuring Out Alien Technology",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Figuring Out Alien Technology",
      "headers": [
       "Int. Check Total",
@@ -1787,8 +1867,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Cone\n• Cube\n• Cylinder\n• Emanation\n• Line\n• Sphere"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Cone",
+      "Cube",
+      "Cylinder",
+      "Emanation",
+      "Line",
+      "Sphere"
+     ]
+    }
    },
    {
     "name": "",
@@ -1933,6 +2024,7 @@
     "name": "Object Armor Class",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Object Armor Class",
      "headers": [
       "AC",
@@ -1979,6 +2071,7 @@
     "name": "Object Hit Points",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Object Hit Points",
      "headers": [
       "Size",
@@ -2098,6 +2191,7 @@
     "name": "Carrying Capacity",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Carrying Capacity",
      "headers": [
       "Creature Size",
@@ -2218,8 +2312,28 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Blinded\n• Charmed\n• Deafened\n• Exhaustion\n• Frightened\n• Grappled\n• Incapacitated\n• Invisible\n• Paralyzed\n• Petrified\n• Poisoned\n• Prone\n• Restrained\n• Stunned\n• Unconscious"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Blinded",
+      "Charmed",
+      "Deafened",
+      "Exhaustion",
+      "Frightened",
+      "Grappled",
+      "Incapacitated",
+      "Invisible",
+      "Paralyzed",
+      "Petrified",
+      "Poisoned",
+      "Prone",
+      "Restrained",
+      "Stunned",
+      "Unconscious"
+     ]
+    }
    },
    {
     "name": "",
@@ -2284,6 +2398,7 @@
     "name": "Crash Damage",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Crash Damage",
      "headers": [
       "Size of Creature or Object Struck",
@@ -2346,8 +2461,27 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Aberration\n• Beast\n• Celestial\n• Construct\n• Dragon\n• Elemental\n• Fey\n• Fiend\n• Giant\n• Humanoid\n• Monstrosity\n• Ooze\n• Plant\n• Undead"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Aberration",
+      "Beast",
+      "Celestial",
+      "Construct",
+      "Dragon",
+      "Elemental",
+      "Fey",
+      "Fiend",
+      "Giant",
+      "Humanoid",
+      "Monstrosity",
+      "Ooze",
+      "Plant",
+      "Undead"
+     ]
+    }
    },
    {
     "name": "",
@@ -2443,6 +2577,7 @@
     "name": "Ability Score Point Cost",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Ability Score Point Cost",
      "headers": [
       "Score",
@@ -2546,6 +2681,7 @@
     "name": "Proficiency Swaps",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Proficiency Swaps",
      "headers": [
       "Proficiency",
@@ -2583,7 +2719,24 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Instead of choosing one of the game's races for your character at 1st level, you can use the following traits to represent your character's lineage, giving you full control over how your character's origin shaped them:*\n*• **Creature Type**: You are a humanoid. You determine your appearance and whether you resemble any of your kin.\n• **Size**: You are Small or Medium (your choice).\n• **Speed**: Your base walking speed is 30 feet.\n• **Ability Score Increase**: One ability score of your choice increases by 2.\n• **Feat**: You gain one feat of your choice for which you qualify.\n• **Variable Trait**: You gain one of the following options of your choice: (a) darkvision with a range of 60 feet or (b) proficiency in one skill of your choice.\n• **Languages**: You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character.*"
+    "value": "*Instead of choosing one of the game's races for your character at 1st level, you can use the following traits to represent your character's lineage, giving you full control over how your character's origin shaped them:*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Creature Type**: You are a humanoid. You determine your appearance and whether you resemble any of your kin.",
+      "**Size**: You are Small or Medium (your choice).",
+      "**Speed**: Your base walking speed is 30 feet.",
+      "**Ability Score Increase**: One ability score of your choice increases by 2.",
+      "**Feat**: You gain one feat of your choice for which you qualify.",
+      "**Variable Trait**: You gain one of the following options of your choice: (a) darkvision with a range of 60 feet or (b) proficiency in one skill of your choice.",
+      "**Languages**: You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+     ]
+    }
    }
   ]
  },
@@ -2672,6 +2825,7 @@
     "name": "Damage Types",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Damage Types",
      "headers": [
       "Type",
@@ -2820,8 +2974,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• A creature that isn't Tiny or your ally\n• Furniture that is sized for creatures of your size or larger\n• Heavy snow, ice, rubble, or undergrowth\n• Liquid that's between shin- and waist-deep\n• A narrow opening sized for a creature one size smaller than you\n• A slope of 20 degrees or more"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A creature that isn't Tiny or your ally",
+      "Furniture that is sized for creatures of your size or larger",
+      "Heavy snow, ice, rubble, or undergrowth",
+      "Liquid that's between shin- and waist-deep",
+      "A narrow opening sized for a creature one size smaller than you",
+      "A slope of 20 degrees or more"
+     ]
+    }
    }
   ]
  },
@@ -2889,6 +3054,7 @@
     "name": "Building a Stronghold",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Building a Stronghold",
      "headers": [
       "Stronghold",
@@ -2991,6 +3157,7 @@
     "name": "Buying Magic Items",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Buying Magic Items",
      "headers": [
       "Check Total",
@@ -3040,6 +3207,7 @@
     "name": "Magic Item Price",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Magic Item Price",
      "headers": [
       "Rarity",
@@ -3078,6 +3246,7 @@
     "name": "Magic Item Purchase Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Magic Item Purchase Complications",
      "headers": [
       "d12",
@@ -3157,6 +3326,7 @@
     "name": "Carousing",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Carousing",
      "headers": [
       "d100 + Level",
@@ -3276,6 +3446,7 @@
     "name": "Carousing",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Carousing",
      "headers": [
       "Check Total",
@@ -3314,6 +3485,7 @@
     "name": "Lower-Class Carousing Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Lower-Class Carousing Complications",
      "headers": [
       "d8",
@@ -3359,6 +3531,7 @@
     "name": "Middle-Class Carousing Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Middle-Class Carousing Complications",
      "headers": [
       "d8",
@@ -3404,6 +3577,7 @@
     "name": "Upper-Class Carousing Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Upper-Class Carousing Complications",
      "headers": [
       "d8",
@@ -3530,6 +3704,7 @@
     "name": "Crafting Magic Items",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Crafting Magic Items",
      "headers": [
       "Item Rarity",
@@ -3602,6 +3777,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Proficiency",
@@ -3676,6 +3852,7 @@
     "name": "Magic Item Ingredients",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Magic Item Ingredients",
      "headers": [
       "Item Rarity",
@@ -3709,6 +3886,7 @@
     "name": "Magic Item Crafting Time and Cost",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Magic Item Crafting Time and Cost",
      "headers": [
       "Item Rarity",
@@ -3753,6 +3931,7 @@
     "name": "Crafting Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Crafting Complications",
      "headers": [
       "d6",
@@ -3795,6 +3974,7 @@
     "name": "Potion of Healing Creation",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Potion of Healing Creation",
      "headers": [
       "Type",
@@ -3882,6 +4062,7 @@
     "name": "Loot Value",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Loot Value",
      "headers": [
       "DC",
@@ -3916,6 +4097,7 @@
     "name": "Crime Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Crime Complications",
      "headers": [
       "d8",
@@ -4002,6 +4184,7 @@
     "name": "Gambling Results",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Gambling Results",
      "headers": [
       "Result",
@@ -4036,6 +4219,7 @@
     "name": "Gambling Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Gambling Complications",
      "headers": [
       "d6",
@@ -4124,6 +4308,7 @@
     "name": "Pit Fighting Results",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Pit Fighting Results",
      "headers": [
       "Result",
@@ -4158,6 +4343,7 @@
     "name": "Pit Fighting Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Pit Fighting Complications",
      "headers": [
       "d6",
@@ -4234,8 +4420,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• End one effect on you that prevents you from regaining hit points.\n• For the next 24 hours, gain advantage on saving throws against one disease or poison currently affecting you."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "End one effect on you that prevents you from regaining hit points.",
+      "For the next 24 hours, gain advantage on saving throws against one disease or poison currently affecting you."
+     ]
+    }
    }
   ]
  },
@@ -4302,6 +4495,7 @@
     "name": "Religious Service",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Religious Service",
      "headers": [
       "Check Total",
@@ -4332,6 +4526,7 @@
     "name": "Religious Service Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Religious Service Complications",
      "headers": [
       "d6",
@@ -4402,6 +4597,7 @@
     "name": "Research Outcomes",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Research Outcomes",
      "headers": [
       "Check Total",
@@ -4441,6 +4637,7 @@
     "name": "Research Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Research Complications",
      "headers": [
       "d6",
@@ -4524,6 +4721,7 @@
     "name": "Running a Business",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Running a Business",
      "headers": [
       "d100 + Days",
@@ -4588,6 +4786,7 @@
     "name": "Spell Scroll Costs",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Spell Scroll Costs",
      "headers": [
       "Spell Level",
@@ -4657,6 +4856,7 @@
     "name": "Scribe a Scroll Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Scribe a Scroll Complications",
      "headers": [
       "d6",
@@ -4717,6 +4917,7 @@
     "name": "Magic Item Base Prices",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Magic Item Base Prices",
      "headers": [
       "Rarity",
@@ -4750,6 +4951,7 @@
     "name": "Magic Item Offer",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Magic Item Offer",
      "headers": [
       "Check Total",
@@ -4780,6 +4982,7 @@
     "name": "Magic Item Sale Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Magic Item Sale Complications",
      "headers": [
       "d6",
@@ -4855,6 +5058,7 @@
     "name": "Salable Magic Items",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Salable Magic Items",
      "headers": [
       "Rarity",
@@ -4894,6 +5098,7 @@
     "name": "Selling a Magic Item",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Selling a Magic Item",
      "headers": [
       "d100 + Mod",
@@ -4955,6 +5160,7 @@
     "name": "Sowing Rumors",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Sowing Rumors",
      "headers": [
       "Settlement Size",
@@ -5026,6 +5232,7 @@
     "name": "Training Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Training Complications",
      "headers": [
       "d6",
@@ -5081,6 +5288,7 @@
     "name": "Training to Gain Levels",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Training to Gain Levels",
      "headers": [
       "Level Attained",
@@ -5138,6 +5346,7 @@
     "name": "Wages",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Wages",
      "headers": [
       "Check Total",
@@ -5172,6 +5381,7 @@
     "name": "Work Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Work Complications",
      "headers": [
       "d6",
@@ -5232,6 +5442,7 @@
     "name": "Exploration Discoveries",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Exploration Discoveries",
      "headers": [
       "Check Total",
@@ -5313,6 +5524,7 @@
     "name": "Explore Territory Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Explore Territory Complications",
      "headers": [
       "d6",
@@ -5388,6 +5600,7 @@
     "name": "Franchise Restructuring",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Franchise Restructuring",
      "headers": [
       "Successes",
@@ -5418,6 +5631,7 @@
     "name": "Franchise Restructuring Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Franchise Restructuring Complications",
      "headers": [
       "d6",
@@ -5488,6 +5702,7 @@
     "name": "Headquarters Modification",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Headquarters Modification",
      "headers": [
       "Successes",
@@ -5522,6 +5737,7 @@
     "name": "Headquarters Modification Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Headquarters Modification Complications",
      "headers": [
       "d6",
@@ -5592,6 +5808,7 @@
     "name": "Marketeering",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Marketeering",
      "headers": [
       "Successes",
@@ -5626,6 +5843,7 @@
     "name": "Marketeering Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Marketeering Complications",
      "headers": [
       "d8",
@@ -5699,6 +5917,7 @@
     "name": "Philanthropic Enterprise",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Philanthropic Enterprise",
      "headers": [
       "Check Total",
@@ -5742,6 +5961,7 @@
     "name": "Philanthropic Enterprise Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Philanthropic Enterprise Complications",
      "headers": [
       "d6",
@@ -5807,6 +6027,7 @@
     "name": "Running a Franchise",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Running a Franchise",
      "headers": [
       "d100 + Days",
@@ -5885,6 +6106,7 @@
     "name": "Running a Franchise Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Running a Franchise Complications",
      "headers": [
       "d6",
@@ -5950,6 +6172,7 @@
     "name": "Schmoozing",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Schmoozing",
      "headers": [
       "Check Total",
@@ -5988,6 +6211,7 @@
     "name": "Schmoozing Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Schmoozing Complications",
      "headers": [
       "d6",
@@ -6053,6 +6277,7 @@
     "name": "Scrutineering",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Scrutineering",
      "headers": [
       "Check Total",
@@ -6087,6 +6312,7 @@
     "name": "Scrutineering Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Scrutineering Complications",
      "headers": [
       "d6",
@@ -6162,6 +6388,7 @@
     "name": "Shady Business Practice",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Shady Business Practice",
      "headers": [
       "Successes",
@@ -6196,6 +6423,7 @@
     "name": "Shady Business Practice Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Shady Business Practice Complications",
      "headers": [
       "d6",
@@ -6271,6 +6499,7 @@
     "name": "Team Building",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Team Building",
      "headers": [
       "Check Total",
@@ -6324,6 +6553,7 @@
     "name": "Team Building Complications",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Team Building Complications",
      "headers": [
       "d6",
@@ -6419,6 +6649,7 @@
     "name": "Rival",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Rival",
      "headers": [
       "d20",
@@ -6585,8 +6816,26 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Buying a Magic Item\n• Carousing\n• Crafting an Item\n• Crime\n• Gambling\n• Pit Fighting\n• Relaxation\n• Religious Service\n• Research\n• Scribing a Spell Scroll\n• Selling a Magic Item\n• Training\n• Work"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Buying a Magic Item",
+      "Carousing",
+      "Crafting an Item",
+      "Crime",
+      "Gambling",
+      "Pit Fighting",
+      "Relaxation",
+      "Religious Service",
+      "Research",
+      "Scribing a Spell Scroll",
+      "Selling a Magic Item",
+      "Training",
+      "Work"
+     ]
+    }
    }
   ]
  },
@@ -6694,6 +6943,7 @@
     "name": "Open Water Encounters (Levels 1–4)",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Open Water Encounters (Levels 1–4)",
      "headers": [
       "d100",
@@ -6807,6 +7057,7 @@
     "name": "Open Water Encounters (Levels 5–10)",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Open Water Encounters (Levels 5–10)",
      "headers": [
       "d100",
@@ -6924,6 +7175,7 @@
     "name": "Open Water Encounters (Levels 11–20)",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Open Water Encounters (Levels 11–20)",
      "headers": [
       "d100",
@@ -7324,6 +7576,7 @@
     "name": "Seeds of Fear",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Seeds of Fear",
      "headers": [
       "d12",
@@ -7403,8 +7656,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The character experiences one of their Seeds of Fear.\n• An enemy is immune to the character's attacks or spells.\n• An enemy demonstrates it can deal enough damage to reduce a character to 0 hit points in one blow.\n• A creature is alien or monstrous in ways the character never could have imagined.\n• An object undermines a character's understanding of reality."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The character experiences one of their Seeds of Fear.",
+      "An enemy is immune to the character's attacks or spells.",
+      "An enemy demonstrates it can deal enough damage to reduce a character to 0 hit points in one blow.",
+      "A creature is alien or monstrous in ways the character never could have imagined.",
+      "An object undermines a character's understanding of reality."
+     ]
+    }
    },
    {
     "name": "Stress",
@@ -7418,8 +7681,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• A tense, dramatic moment, especially one involving one of a character's Seeds of Fear\n• Every 24 hours the character goes without finishing a long rest\n• Witnessing the death of a loved one\n• A nightmare or darkest fear made real\n• Shattering the character's fundamental understanding of reality\n• Witnessing a person transform into a horrid or unnatural creature"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A tense, dramatic moment, especially one involving one of a character's Seeds of Fear",
+      "Every 24 hours the character goes without finishing a long rest",
+      "Witnessing the death of a loved one",
+      "A nightmare or darkest fear made real",
+      "Shattering the character's fundamental understanding of reality",
+      "Witnessing a person transform into a horrid or unnatural creature"
+     ]
+    }
    },
    {
     "name": "",
@@ -7652,8 +7926,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• [Danse Macabre](https://5e.tools/trapshazards.html#danse%20macabre_vrgr)\n• [Faceless Malice](https://5e.tools/trapshazards.html#faceless%20malice_vrgr)\n• [Icon of the Lower Aerial Kingdoms](https://5e.tools/trapshazards.html#icon%20of%20the%20lower%20aerial%20kingdoms_vrgr)\n• [Morbid Memory](https://5e.tools/trapshazards.html#morbid%20memory_vrgr)"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "[Danse Macabre](https://5e.tools/trapshazards.html#danse%20macabre_vrgr)",
+      "[Faceless Malice](https://5e.tools/trapshazards.html#faceless%20malice_vrgr)",
+      "[Icon of the Lower Aerial Kingdoms](https://5e.tools/trapshazards.html#icon%20of%20the%20lower%20aerial%20kingdoms_vrgr)",
+      "[Morbid Memory](https://5e.tools/trapshazards.html#morbid%20memory_vrgr)"
+     ]
+    }
    }
   ]
  },
@@ -7891,8 +8174,32 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Arkaiun**: Dambrathan (written in Espruar)\n• **Bedine**: Midani\n• **Calishite**: Alzhedo\n• **Chondathan**: Chondathan\n• **Damaran**: Damaran (written in Dethek)\n• **Ffolk**: Waelan\n• **Gur**: Guran (a patois of Roushoum and Rashemi)\n• **Halruaan**: Halruaan (written in Draconic)\n• **Illuskan**: Illuskan\n• **Imaskari**: Roushoum\n• **Mulan**: Chessentan, Mulhorandi, Untheric, or Thayan\n• **Nar**: Damaran\n• **Rashemi**: Rashemi\n• **Shaaran**: Shaaran (written in Dethek)\n• **Shou**: Shou\n• **Tethyrian**: Chondathan\n• **Tuigan**: Tuigan\n• **Turami**: Turmic\n• **Ulutiun**: Uluik"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Arkaiun**: Dambrathan (written in Espruar)",
+      "**Bedine**: Midani",
+      "**Calishite**: Alzhedo",
+      "**Chondathan**: Chondathan",
+      "**Damaran**: Damaran (written in Dethek)",
+      "**Ffolk**: Waelan",
+      "**Gur**: Guran (a patois of Roushoum and Rashemi)",
+      "**Halruaan**: Halruaan (written in Draconic)",
+      "**Illuskan**: Illuskan",
+      "**Imaskari**: Roushoum",
+      "**Mulan**: Chessentan, Mulhorandi, Untheric, or Thayan",
+      "**Nar**: Damaran",
+      "**Rashemi**: Rashemi",
+      "**Shaaran**: Shaaran (written in Dethek)",
+      "**Shou**: Shou",
+      "**Tethyrian**: Chondathan",
+      "**Tuigan**: Tuigan",
+      "**Turami**: Turmic",
+      "**Ulutiun**: Uluik"
+     ]
+    }
    },
    {
     "name": "",
@@ -8081,6 +8388,7 @@
     "name": "Speed Factor Initiative Modifiers",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Speed Factor Initiative Modifiers",
      "headers": [
       "Factor",
@@ -8114,6 +8422,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Creature Size",
@@ -8182,8 +8491,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• When it takes a critical hit\n• When it drops to 0 hit points but isn't killed outright\n• When it fails a death saving throw by 5 or more"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When it takes a critical hit",
+      "When it drops to 0 hit points but isn't killed outright",
+      "When it fails a death saving throw by 5 or more"
+     ]
+    }
    },
    {
     "name": "",
@@ -8199,6 +8516,7 @@
     "name": "Lingering Injuries",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Lingering Injuries",
      "headers": [
       "d20",
@@ -8543,13 +8861,31 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Regain All HP**: You regain all lost Hit Points and all spent Hit Point Dice. If your Hit Point maximum was reduced, it returns to normal.\n• **Ability Scores Restored**: If any of your ability scores were reduced, they return to normal.\n• **Exhaustion Reduced**: If you have the Exhaustion condition, its level decreases by 1.\n• **Special Feature**: Some features are recharged by a Long Rest. If you have such a feature, it recharges in the way specified in its description."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Regain All HP**: You regain all lost Hit Points and all spent Hit Point Dice. If your Hit Point maximum was reduced, it returns to normal.",
+      "**Ability Scores Restored**: If any of your ability scores were reduced, they return to normal.",
+      "**Exhaustion Reduced**: If you have the Exhaustion condition, its level decreases by 1.",
+      "**Special Feature**: Some features are recharged by a Long Rest. If you have such a feature, it recharges in the way specified in its description."
+     ]
+    }
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Rolling Initiative\n• Casting a spell other than a cantrip\n• Taking any damage\n• 1 hour of walking or other physical exertion."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Rolling Initiative",
+      "Casting a spell other than a cantrip",
+      "Taking any damage",
+      "1 hour of walking or other physical exertion."
+     ]
+    }
    },
    {
     "name": "",
@@ -8661,6 +8997,7 @@
     "name": "Short-Term Madness",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Short-Term Madness",
      "headers": [
       "d100",
@@ -8714,6 +9051,7 @@
     "name": "Long-Term Madness",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Long-Term Madness",
      "headers": [
       "d100",
@@ -8775,6 +9113,7 @@
     "name": "Indefinite Madness",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Indefinite Madness",
      "headers": [
       "d100",
@@ -8872,6 +9211,7 @@
     "name": "System Shock",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "System Shock",
      "headers": [
       "d10",
@@ -8916,8 +9256,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Accomplishing one in a series of goals necessary to complete the adventure.\n• Discovering a hidden location or piece of information relevant to the adventure.\n• Reaching an important destination."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Accomplishing one in a series of goals necessary to complete the adventure.",
+      "Discovering a hidden location or piece of information relevant to the adventure.",
+      "Reaching an important destination."
+     ]
+    }
    },
    {
     "name": "",
@@ -8926,8 +9274,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The adventurers gain the benefit of a short rest.\n• Characters can recover a Hit Die or a low-level spell slot.\n• Characters can regain the use of magic items that have had their limited uses expended."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The adventurers gain the benefit of a short rest.",
+      "Characters can recover a Hit Die or a low-level spell slot.",
+      "Characters can regain the use of magic items that have had their limited uses expended."
+     ]
+    }
    }
   ]
  },
@@ -8951,6 +9307,7 @@
     "name": "Potion Miscibility",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Potion Miscibility",
      "headers": [
       "d100",
@@ -9025,8 +9382,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The creature is *surprised*.\n• The creature is reduced to half its hit points or fewer for the first time in the battle.\n• The creature has no way to harm the opposing side on its turn."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The creature is *surprised*.",
+      "The creature is reduced to half its hit points or fewer for the first time in the battle.",
+      "The creature has no way to harm the opposing side on its turn."
+     ]
+    }
    },
    {
     "name": "",
@@ -9035,8 +9400,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• All the creatures in the group are *surprised*.\n• The group's leader is reduced to 0 hit points, incapacitated, taken prisoner, or removed from battle.\n• The group is reduced to half its original size with no losses on the opposing side."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "All the creatures in the group are *surprised*.",
+      "The group's leader is reduced to 0 hit points, incapacitated, taken prisoner, or removed from battle.",
+      "The group is reduced to half its original size with no losses on the opposing side."
+     ]
+    }
    },
    {
     "name": "",
@@ -9098,6 +9471,7 @@
     "name": "Multiclassing Prerequisites",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Multiclassing Prerequisites",
      "headers": [
       "Class",
@@ -9184,6 +9558,7 @@
     "name": "Multiclassing Proficiencies",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Multiclassing Proficiencies",
      "headers": [
       "Class",
@@ -9300,6 +9675,7 @@
     "name": "Multiclass Spellcaster: Spell Slots per Spell Level",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Multiclass Spellcaster: Spell Slots per Spell Level",
      "headers": [
       "Lvl.",
@@ -9589,6 +9965,7 @@
     "name": "Island Theme",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Island Theme",
      "headers": [
       "d6",
@@ -9631,6 +10008,7 @@
     "name": "Alien Island Leader",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Alien Island Leader",
      "headers": [
       "d4",
@@ -9660,6 +10038,7 @@
     "name": "Alien Island Inhabitants",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Alien Island Inhabitants",
      "headers": [
       "d6",
@@ -9693,6 +10072,7 @@
     "name": "Alien Inhabitant Reactions",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Alien Inhabitant Reactions",
      "headers": [
       "d6",
@@ -9730,6 +10110,7 @@
     "name": "Alien Island Story Hooks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Alien Island Story Hooks",
      "headers": [
       "d4",
@@ -9764,6 +10145,7 @@
     "name": "Island Curses",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Island Curses",
      "headers": [
       "d6",
@@ -9801,6 +10183,7 @@
     "name": "Cursed Island Inhabitants",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Cursed Island Inhabitants",
      "headers": [
       "d6",
@@ -9838,6 +10221,7 @@
     "name": "Cursed Island Story Hooks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Cursed Island Story Hooks",
      "headers": [
       "d4",
@@ -9872,6 +10256,7 @@
     "name": "Hostile Island Leader",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Hostile Island Leader",
      "headers": [
       "d6",
@@ -9909,6 +10294,7 @@
     "name": "Hostile Island Leader Motivations",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Hostile Island Leader Motivations",
      "headers": [
       "d4",
@@ -9938,6 +10324,7 @@
     "name": "Hostile Inhabitants",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Hostile Inhabitants",
      "headers": [
       "d6",
@@ -9975,6 +10362,7 @@
     "name": "Hostile Island Story Hooks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Hostile Island Story Hooks",
      "headers": [
       "d4",
@@ -10009,6 +10397,7 @@
     "name": "Sanctum Island Leader",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Sanctum Island Leader",
      "headers": [
       "d6",
@@ -10046,6 +10435,7 @@
     "name": "Sanctum Island Inhabitants",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Sanctum Island Inhabitants",
      "headers": [
       "d6",
@@ -10083,6 +10473,7 @@
     "name": "Sanctum Island Reactions",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Sanctum Island Reactions",
      "headers": [
       "d6",
@@ -10120,6 +10511,7 @@
     "name": "Sanctum Island Story Hooks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Sanctum Island Story Hooks",
      "headers": [
       "d4",
@@ -10154,6 +10546,7 @@
     "name": "Welcoming Island Leader",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Welcoming Island Leader",
      "headers": [
       "d6",
@@ -10191,6 +10584,7 @@
     "name": "Welcoming Island Inhabitants",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Welcoming Island Inhabitants",
      "headers": [
       "d6",
@@ -10228,6 +10622,7 @@
     "name": "Welcoming Island Story Hooks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Welcoming Island Story Hooks",
      "headers": [
       "d4",
@@ -10262,6 +10657,7 @@
     "name": "Wild Island Features",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Wild Island Features",
      "headers": [
       "d6",
@@ -10299,6 +10695,7 @@
     "name": "Wild Island Encounters",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Wild Island Encounters",
      "headers": [
       "d20",
@@ -10392,6 +10789,7 @@
     "name": "Wild Island Story Hooks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Wild Island Story Hooks",
      "headers": [
       "d4",
@@ -10442,8 +10840,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• If your players use the standard array of ability scores, add one 11 to the array for each optional ability you add.\n• If your players use the optional point-buy system, add 3 points to the number of points for each optional ability you add.\n• If your players roll their ability scores, have them roll for the added ability scores."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "If your players use the standard array of ability scores, add one 11 to the array for each optional ability you add.",
+      "If your players use the optional point-buy system, add 3 points to the number of points for each optional ability you add.",
+      "If your players roll their ability scores, have them roll for the added ability scores."
+     ]
+    }
    },
    {
     "name": "",
@@ -10472,8 +10878,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Being unsure how to act with honor\n• Surrendering while trying to save face\n• Trying to determine another character's Honor score\n• Trying to use the proper etiquette in a delicate social situation\n• Using his or her honorable or dishonorable reputation to influence someone else"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Being unsure how to act with honor",
+      "Surrendering while trying to save face",
+      "Trying to determine another character's Honor score",
+      "Trying to use the proper etiquette in a delicate social situation",
+      "Using his or her honorable or dishonorable reputation to influence someone else"
+     ]
+    }
    },
    {
     "name": "Honor Saving Throws",
@@ -10482,8 +10898,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Avoiding an accidental breach of honor or etiquette\n• Resisting the urge to respond to goading or insults from an enemy\n• Recognizing when an enemy attempts to trick a character into a breach of honor"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Avoiding an accidental breach of honor or etiquette",
+      "Resisting the urge to respond to goading or insults from an enemy",
+      "Recognizing when an enemy attempts to trick a character into a breach of honor"
+     ]
+    }
    },
    {
     "name": "Sanity Score",
@@ -10502,8 +10926,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Deciphering a piece of text written in a language so alien that it threatens to break a character's mind\n• Overcoming the lingering effects of madness\n• Comprehending a piece of alien magic foreign to all normal understanding of magic"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Deciphering a piece of text written in a language so alien that it threatens to break a character's mind",
+      "Overcoming the lingering effects of madness",
+      "Comprehending a piece of alien magic foreign to all normal understanding of magic"
+     ]
+    }
    },
    {
     "name": "Sanity Saving Throws",
@@ -10512,8 +10944,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Seeing a creature from the Far Realm or other alien realms for the first time\n• Making direct contact with the mind of an alien creature\n• Being subjected to spells that affect mental stability, such as the insanity option of the __symbol__ spell\n• Passing through a demiplane built on alien physics\n• Resisting an effect conferred by an attack or spell that deals psychic damage"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Seeing a creature from the Far Realm or other alien realms for the first time",
+      "Making direct contact with the mind of an alien creature",
+      "Being subjected to spells that affect mental stability, such as the insanity option of the __symbol__ spell",
+      "Passing through a demiplane built on alien physics",
+      "Resisting an effect conferred by an attack or spell that deals psychic damage"
+     ]
+    }
    },
    {
     "name": "",
@@ -10586,6 +11028,7 @@
     "name": "Hiding in Blue Holes",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Hiding in Blue Holes",
      "headers": [
       "d10",
@@ -10704,6 +11147,7 @@
     "name": "Objects and Water Pressure",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Objects and Water Pressure",
      "headers": [
       "Material",
@@ -10751,6 +11195,7 @@
     "name": "Eldritch Mist Types",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Eldritch Mist Types",
      "headers": [
       "d6",
@@ -10781,6 +11226,7 @@
     "name": "Mist Thickness",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Mist Thickness",
      "headers": [
       "d10",
@@ -10810,6 +11256,7 @@
     "name": "Mist Obfuscation",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Mist Obfuscation",
      "headers": [
       "Thickness",
@@ -10919,6 +11366,7 @@
     "name": "Magical Storm Type",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Magical Storm Type",
      "headers": [
       "d8",
@@ -11014,6 +11462,7 @@
     "name": "Sandbar DCs",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Sandbar DCs",
      "headers": [
       "DC",
@@ -11054,6 +11503,7 @@
     "name": "Shipwreck Contents",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Shipwreck Contents",
      "headers": [
       "d10",
@@ -11112,6 +11562,7 @@
     "name": "Whirlpool Rank",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Whirlpool Rank",
      "headers": [
       "Rank",
@@ -11171,6 +11622,7 @@
     "name": "Whirlpool Checks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Whirlpool Checks",
      "headers": [
       "Officer",
@@ -11200,6 +11652,7 @@
     "name": "Whirlpool Check Results",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Whirlpool Check Results",
      "headers": [
       "Result",
@@ -11234,6 +11687,7 @@
     "name": "Whirlpool Destinations",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Whirlpool Destinations",
      "headers": [
       "d10",
@@ -11464,6 +11918,7 @@
     "name": "Feywild Time Warp",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Feywild Time Warp",
      "headers": [
       "d20",
@@ -11521,6 +11976,7 @@
     "name": "Shadowfell Despair",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Shadowfell Despair",
      "headers": [
       "d6",
@@ -11621,6 +12077,7 @@
     "name": "Abyssal Corruption",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Abyssal Corruption",
      "headers": [
       "d10",
@@ -11959,6 +12416,7 @@
     "name": "Proficiency Dice",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Proficiency Dice",
      "headers": [
       "Level",
@@ -12009,18 +12467,44 @@
    },
    {
     "name": "How To Play",
-    "type": "text",
-    "value": "• Separate out the High Deck cards, marked with the Crown symbol. Shuffle them, and place this deck to one side.\n• Choose a Dealer to shuffle the remaining cards, called the Common Deck. The person to the Dealer's left then draws a card from this deck and places it face-up in the centre of the table. This is the Focus card.\n• The Dealer then places one card per player face-down around the Focus. These are the player's Fate cards. Players may look at their own Fate card at any time.\n• Each player is then dealt 6 cards and the Common Deck is placed within easy reach of all players. Discarded cards should be placed face-up, next to the Common Deck.\n• The goal of the game is to refine your hand down to 3 cards, which will be combined with the hidden Fate cards and shared Focus card to make the best hand possible."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Separate out the High Deck cards, marked with the Crown symbol. Shuffle them, and place this deck to one side.",
+      "Choose a Dealer to shuffle the remaining cards, called the Common Deck. The person to the Dealer's left then draws a card from this deck and places it face-up in the centre of the table. This is the Focus card.",
+      "The Dealer then places one card per player face-down around the Focus. These are the player's Fate cards. Players may look at their own Fate card at any time.",
+      "Each player is then dealt 6 cards and the Common Deck is placed within easy reach of all players. Discarded cards should be placed face-up, next to the Common Deck.",
+      "The goal of the game is to refine your hand down to 3 cards, which will be combined with the hidden Fate cards and shared Focus card to make the best hand possible."
+     ]
+    }
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Each player selects one card from their hand, these are all played face-up simultaneously."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Each player selects one card from their hand, these are all played face-up simultaneously."
+     ]
+    }
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The player with the highest numbered card in front of them may discard their Fate card and replace it with a new card from the deck. They then take the first turn this round.\n• Each player takes a turn (moving clockwise) to **Play** one card from their hand, covering their previously played card, or discard a card to **Risk** activating the top card of the High Deck.\n• **Play**: If the card is a Master (an unnumbered Common Deck card) or has a number lower than that of the player to their right then the current player may draw a new card from the Common Deck before discarding one from their hand.\n• **Risk**: Each card in the High Deck triggers a different special ability which is resolved immediately before being discarded. These abilities are detailed in the section titled 'High Deck Rules'.\n• Once each player has had one turn a new round begins."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The player with the highest numbered card in front of them may discard their Fate card and replace it with a new card from the deck. They then take the first turn this round.",
+      "Each player takes a turn (moving clockwise) to **Play** one card from their hand, covering their previously played card, or discard a card to **Risk** activating the top card of the High Deck.",
+      "**Play**: If the card is a Master (an unnumbered Common Deck card) or has a number lower than that of the player to their right then the current player may draw a new card from the Common Deck before discarding one from their hand.",
+      "**Risk**: Each card in the High Deck triggers a different special ability which is resolved immediately before being discarded. These abilities are detailed in the section titled 'High Deck Rules'.",
+      "Once each player has had one turn a new round begins."
+     ]
+    }
    },
    {
     "name": "",
@@ -12029,13 +12513,25 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• After the second round the player who has the highest numbered card showing decides whether to 'kill' (discard) or 'save' (keep) the Focus card. If it is killed then the Focus card is out of play and players' final hands will now only be four-cards strong."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "After the second round the player who has the highest numbered card showing decides whether to 'kill' (discard) or 'save' (keep) the Focus card. If it is killed then the Focus card is out of play and players' final hands will now only be four-cards strong."
+     ]
+    }
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Finally, players reveal their hand of cards and Fate cards. The player with the best combination of cards using their hand, Fate, and possibly Focus cards is the winner."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Finally, players reveal their hand of cards and Fate cards. The player with the best combination of cards using their hand, Fate, and possibly Focus cards is the winner."
+     ]
+    }
    },
    {
     "name": "Ties",
@@ -12044,8 +12540,22 @@
    },
    {
     "name": "Order of Winning Hands (Strongest to Weakest)",
-    "type": "text",
-    "value": "• Family (Five cards of the same suit, in numerical order)\n• Circle (four of a kind)\n• Fortune (a triple and a pair)\n• Village (five cards in numerical order)\n• Guild (five cards of one suit)\n• A triple\n• Two pairs\n• A pair\n• High card"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Family (Five cards of the same suit, in numerical order)",
+      "Circle (four of a kind)",
+      "Fortune (a triple and a pair)",
+      "Village (five cards in numerical order)",
+      "Guild (five cards of one suit)",
+      "A triple",
+      "Two pairs",
+      "A pair",
+      "High card"
+     ]
+    }
    },
    {
     "name": "High Deck Rules",
@@ -12054,8 +12564,27 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Artifact**: Swap your Fate card with the Focus card.\n• **Beast**: Each player discards a card, then draws a card from the Common Deck.\n• **Broken One**: Discard all the remaining cards in your hand. Then draw a new card from the Common Deck for each one discarded.\n• **Darklord**: Choose another player. Look at their hand of cards and choose one for them to discard. Then they draw a card from the Common Deck.\n• **Donjon**: Each player must discard cards until they have three left in their hand. The game immediately advances to the Reveal.\n• **Executioner**: Keep this card on the table in front of you. Regardless of who wins the execution you decide whether to kill or save the Focus card.\n• **Mists**: Rotate the Fate cards one player clockwise.\n• **Ghost**: Take a card from the discard pile, then discard a card.\n• **Horseman**: Draw two cards from the Common Deck and then discard two cards.\n• **Innocent**: Keep this card on the table in front of you. You and your cards can't be affected by any future High Deck cards.\n• **Marionette**: Choose another player who hasn't had a turn this round. That player must either play their highest or lowest numbered card, as directed by you.\n• **Raven**: Each player chooses a card from their hand and passes it to the player on their left.\n• **Seer**: Look at all player's Fate cards once.\n• **Tempter**: Choose a card from your hand and a random card from another player's hand to swap."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Artifact**: Swap your Fate card with the Focus card.",
+      "**Beast**: Each player discards a card, then draws a card from the Common Deck.",
+      "**Broken One**: Discard all the remaining cards in your hand. Then draw a new card from the Common Deck for each one discarded.",
+      "**Darklord**: Choose another player. Look at their hand of cards and choose one for them to discard. Then they draw a card from the Common Deck.",
+      "**Donjon**: Each player must discard cards until they have three left in their hand. The game immediately advances to the Reveal.",
+      "**Executioner**: Keep this card on the table in front of you. Regardless of who wins the execution you decide whether to kill or save the Focus card.",
+      "**Mists**: Rotate the Fate cards one player clockwise.",
+      "**Ghost**: Take a card from the discard pile, then discard a card.",
+      "**Horseman**: Draw two cards from the Common Deck and then discard two cards.",
+      "**Innocent**: Keep this card on the table in front of you. You and your cards can't be affected by any future High Deck cards.",
+      "**Marionette**: Choose another player who hasn't had a turn this round. That player must either play their highest or lowest numbered card, as directed by you.",
+      "**Raven**: Each player chooses a card from their hand and passes it to the player on their left.",
+      "**Seer**: Look at all player's Fate cards once.",
+      "**Tempter**: Choose a card from your hand and a random card from another player's hand to swap."
+     ]
+    }
    }
   ]
  },
@@ -12079,6 +12608,7 @@
     "name": "Ship Type",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Ship Type",
      "headers": [
       "d100",
@@ -12121,6 +12651,7 @@
     "name": "Ship Names",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Ship Names",
      "headers": [
       "d20",
@@ -12245,6 +12776,7 @@
     "name": "Crew Member Name",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Crew Member Name",
      "headers": [
       "d20",
@@ -12364,6 +12896,7 @@
     "name": "Ship Purpose",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Ship Purpose",
      "headers": [
       "d100",
@@ -12473,8 +13006,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The ship has resistance to the following damage types: acid, fire, lightning, and thunder, as well as bludgeoning, piercing, and slashing from nonmagical attacks.\n• The ship is immune to cold, necrotic, poison, and psychic damage.\n• The ship can move through other creatures and objects as if they were difficult terrain. It takes 5 (**1d10**) force damage if it ends its turn inside an object."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The ship has resistance to the following damage types: acid, fire, lightning, and thunder, as well as bludgeoning, piercing, and slashing from nonmagical attacks.",
+      "The ship is immune to cold, necrotic, poison, and psychic damage.",
+      "The ship can move through other creatures and objects as if they were difficult terrain. It takes 5 (**1d10**) force damage if it ends its turn inside an object."
+     ]
+    }
    },
    {
     "name": "",
@@ -12495,6 +13036,7 @@
     "name": "Ship Attitude",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Ship Attitude",
      "headers": [
       "d6",
@@ -12520,6 +13062,7 @@
     "name": "Friendly Ship",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Friendly Ship",
      "headers": [
       "d100",
@@ -12561,6 +13104,7 @@
     "name": "Neutral Ship",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Neutral Ship",
      "headers": [
       "d100",
@@ -12602,6 +13146,7 @@
     "name": "Hostile Ship",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Hostile Ship",
      "headers": [
       "d100",
@@ -12648,6 +13193,7 @@
     "name": "Ship Disposition",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Ship Disposition",
      "headers": [
       "d10",
@@ -12700,6 +13246,7 @@
     "name": "Ship Emergency",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Ship Emergency",
      "headers": [
       "d4",
@@ -12815,6 +13362,7 @@
     "name": "Examples of Faction Ranks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Examples of Faction Ranks",
      "headers": [
       "Renown",
@@ -13023,6 +13571,7 @@
     "name": "Scroll Mishap",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Scroll Mishap",
      "headers": [
       "d6",
@@ -13109,8 +13658,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• At levels 1–4, reaching 4 checkpoints is sufficient to advance to the next level.\n• At level 5 or higher, reaching 8 checkpoints is needed to advance to the next level."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "At levels 1–4, reaching 4 checkpoints is sufficient to advance to the next level.",
+      "At level 5 or higher, reaching 8 checkpoints is needed to advance to the next level."
+     ]
+    }
    },
    {
     "name": "",
@@ -13136,6 +13692,7 @@
     "name": "Individual Treasure",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Individual Treasure",
      "headers": [
       "Level Gained",
@@ -13178,8 +13735,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• 1 treasure point is awarded for every 2 hours played in a tier 1 or tier 2 adventure.\n• 1 treasure point is awarded for every 1 hour played in a tier 3 or tier 4 adventure."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "1 treasure point is awarded for every 2 hours played in a tier 1 or tier 2 adventure.",
+      "1 treasure point is awarded for every 1 hour played in a tier 3 or tier 4 adventure."
+     ]
+    }
    },
    {
     "name": "",
@@ -13210,6 +13774,7 @@
     "name": "Magic Items by Tier",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Magic Items by Tier",
      "headers": [
       "Magic Item Table",
@@ -13289,6 +13854,7 @@
     "name": "Potions for Sale",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Potions for Sale",
      "headers": [
       "Potion of...",
@@ -13334,6 +13900,7 @@
     "name": "Spell Scrolls for Sale",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Spell Scrolls for Sale",
      "headers": [
       "Spell Level",
@@ -13525,8 +14092,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• __Galley__\n• __Keelboat__\n• __Longship__\n• __Rowboat__\n• __Sailing Ship__\n• __Warship__"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Galley__",
+      "__Keelboat__",
+      "__Longship__",
+      "__Rowboat__",
+      "__Sailing Ship__",
+      "__Warship__"
+     ]
+    }
    },
    {
     "name": "",
@@ -13555,6 +14133,7 @@
     "name": "Starting Encounter Distance",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Starting Encounter Distance",
      "headers": [
       "Distance",
@@ -13678,6 +14257,7 @@
     "name": "Crash Damage",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Crash Damage",
      "headers": [
       "Size",
@@ -13722,8 +14302,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Rolling Initiative\n• Casting a spell other than a cantrip\n• Taking any damage"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Rolling Initiative",
+      "Casting a spell other than a cantrip",
+      "Taking any damage"
+     ]
+    }
    },
    {
     "name": "",
@@ -13737,8 +14325,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Spend Hit Point Dice**: You can spend one or more of your Hit Point Dice to regain Hit Points. For each Hit Point Die you spend in this way, roll the die and add your Constitution modifier to it. You regain Hit Points equal to the total (minimum of 1 Hit Point). You can decide to spend an additional Hit Point Die after each roll.\n• **Special Feature**: Some features are recharged by a Short Rest. If you have such a feature, it recharges in the way specified in its description."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Spend Hit Point Dice**: You can spend one or more of your Hit Point Dice to regain Hit Points. For each Hit Point Die you spend in this way, roll the die and add your Constitution modifier to it. You regain Hit Points equal to the total (minimum of 1 Hit Point). You can decide to spend an additional Hit Point Die after each roll.",
+      "**Special Feature**: Some features are recharged by a Short Rest. If you have such a feature, it recharges in the way specified in its description."
+     ]
+    }
    },
    {
     "name": "Interrupting the Rest",
@@ -13795,8 +14390,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• __Spellcaster__\n• __Expert__\n• __Warrior__"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Spellcaster__",
+      "__Expert__",
+      "__Warrior__"
+     ]
+    }
    },
    {
     "name": "Proficiencies",
@@ -13822,6 +14425,7 @@
     "name": "Experts Beyond 1st Level",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Experts Beyond 1st Level",
      "headers": [
       "Level",
@@ -13861,6 +14465,7 @@
     "name": "Spellcasters Beyond 1st Level",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Spellcasters Beyond 1st Level",
      "headers": [
       "Level",
@@ -13900,6 +14505,7 @@
     "name": "Warriors Beyond 1st Level",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Warriors Beyond 1st Level",
      "headers": [
       "Level",
@@ -13975,8 +14581,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• A player plays the sidekick as their second character-ideal when you have only one or two players.\n• A player plays the sidekick as their only character-ideal for a player who wants a character who's simpler than a typical player character.\n• The players jointly play the sidekick.\n• You play the sidekick."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A player plays the sidekick as their second character-ideal when you have only one or two players.",
+      "A player plays the sidekick as their only character-ideal for a player who wants a character who's simpler than a typical player character.",
+      "The players jointly play the sidekick.",
+      "You play the sidekick."
+     ]
+    }
    },
    {
     "name": "",
@@ -14117,6 +14732,7 @@
     "name": "Ability Check Proficiency by Class",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Ability Check Proficiency by Class",
      "headers": [
       "Class",
@@ -14376,6 +14992,7 @@
     "name": "Spell Point Cost",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Spell Point Cost",
      "headers": [
       "Spell Level",
@@ -14425,6 +15042,7 @@
     "name": "Spell Points by Level",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Spell Points by Level",
      "headers": [
       "Class Level",
@@ -14855,8 +15473,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• __Churning Hull__\n• __Death Vessel__\n• __Frost-Locked Hull__\n• __Living Vessel__\n• __Reinforced Hull__\n• __Vigilant Watch__"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Churning Hull__",
+      "__Death Vessel__",
+      "__Frost-Locked Hull__",
+      "__Living Vessel__",
+      "__Reinforced Hull__",
+      "__Vigilant Watch__"
+     ]
+    }
    },
    {
     "name": "Movement Upgrades",
@@ -14865,8 +15494,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• __Clockwork Oars__\n• __Ever-Full Sails__\n• __Defiant Sails__\n• __Dragon Sails__\n• __Screaming Sails__\n• __Scything Oars__"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Clockwork Oars__",
+      "__Ever-Full Sails__",
+      "__Defiant Sails__",
+      "__Dragon Sails__",
+      "__Screaming Sails__",
+      "__Scything Oars__"
+     ]
+    }
    },
    {
     "name": "Weapon Upgrades",
@@ -14875,8 +15515,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• __Arcane Artillery__\n• __Concussive Rounds__\n• __Explosive Rounds__\n• __Grasping Rounds__"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Arcane Artillery__",
+      "__Concussive Rounds__",
+      "__Explosive Rounds__",
+      "__Grasping Rounds__"
+     ]
+    }
    },
    {
     "name": "Figurehead Upgrades",
@@ -14885,8 +15534,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• __Guardian Figurehead__\n• __Red Dragon Figurehead__\n• __Storm Giant Figurehead__"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Guardian Figurehead__",
+      "__Red Dragon Figurehead__",
+      "__Storm Giant Figurehead__"
+     ]
+    }
    },
    {
     "name": "Miscellaneous Upgrades",
@@ -14895,8 +15552,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• __Bones of Endless Toil__\n• __Smuggler's Banner__\n• __Taskmaster's Drums__"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Bones of Endless Toil__",
+      "__Smuggler's Banner__",
+      "__Taskmaster's Drums__"
+     ]
+    }
    }
   ]
  },
@@ -14923,8 +15588,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• __Apprentice__\n• __Sneak__\n• __Disciple__\n• __Squire__"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Apprentice__",
+      "__Sneak__",
+      "__Disciple__",
+      "__Squire__"
+     ]
+    }
    },
    {
     "name": "Using Survivors",
@@ -14938,8 +15612,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Survivors serve as the first constables on the scene during a serial killer's crime. Afterward, when the players' other characters get involved in the investigations, the players know the details.\n• Survivors give every player a part to play in one character's ominous nightmares, such as those resulting from encounters with the mind flayers of Bluetspur (see chapter 3).\n• Survivors provide players front row seats to important historic events. It's one thing to hear about the massacre at Castle Ravenloft following Strahd von Zarovich's transformation into a vampire, but it's another to play it."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Survivors serve as the first constables on the scene during a serial killer's crime. Afterward, when the players' other characters get involved in the investigations, the players know the details.",
+      "Survivors give every player a part to play in one character's ominous nightmares, such as those resulting from encounters with the mind flayers of Bluetspur (see chapter 3).",
+      "Survivors provide players front row seats to important historic events. It's one thing to hear about the massacre at Castle Ravenloft following Strahd von Zarovich's transformation into a vampire, but it's another to play it."
+     ]
+    }
    },
    {
     "name": "Mindtaker Mists",
@@ -15000,6 +15682,7 @@
     "name": "Survivor Progression",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Survivor Progression",
      "headers": [
       "Level",
@@ -15306,6 +15989,7 @@
     "name": "Alchemist's Supplies",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Alchemist's Supplies",
      "headers": [
       "Activity",
@@ -15369,6 +16053,7 @@
     "name": "Brewer's Supplies",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Brewer's Supplies",
      "headers": [
       "Activity",
@@ -15419,6 +16104,7 @@
     "name": "Calligrapher's Supplies",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Calligrapher's Supplies",
      "headers": [
       "Activity",
@@ -15488,6 +16174,7 @@
     "name": "Carpenter's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Carpenter's Tools",
      "headers": [
       "Activity",
@@ -15547,6 +16234,7 @@
     "name": "Cartographer's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Cartographer's Tools",
      "headers": [
       "Activity",
@@ -15606,6 +16294,7 @@
     "name": "Cobbler's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Cobbler's Tools",
      "headers": [
       "Activity",
@@ -15657,6 +16346,7 @@
     "name": "Cook's Utensils",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Cook's Utensils",
      "headers": [
       "Activity",
@@ -15726,6 +16416,7 @@
     "name": "Disguise Kit",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Disguise Kit",
      "headers": [
       "Activity",
@@ -15791,6 +16482,7 @@
     "name": "Forgery Kit",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Forgery Kit",
      "headers": [
       "Activity",
@@ -15837,6 +16529,7 @@
     "name": "Gaming Set",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Gaming Set",
      "headers": [
       "Activity",
@@ -15883,6 +16576,7 @@
     "name": "Glassblower's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Glassblower's Tools",
      "headers": [
       "Activity",
@@ -15939,6 +16633,7 @@
     "name": "Herbalism Kit",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Herbalism Kit",
      "headers": [
       "Activity",
@@ -15985,6 +16680,7 @@
     "name": "Jeweler's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Jeweler's Tools",
      "headers": [
       "Activity",
@@ -16031,6 +16727,7 @@
     "name": "Vehicles",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Vehicles",
      "headers": [
       "Activity",
@@ -16081,6 +16778,7 @@
     "name": "Leatherworker's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Leatherworker's Tools",
      "headers": [
       "Activity",
@@ -16132,6 +16830,7 @@
     "name": "Mason's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Mason's Tools",
      "headers": [
       "Activity",
@@ -16173,6 +16872,7 @@
     "name": "Musical Instrument",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Musical Instrument",
      "headers": [
       "Activity",
@@ -16214,6 +16914,7 @@
     "name": "Navigator's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Navigator's Tools",
      "headers": [
       "Activity",
@@ -16260,6 +16961,7 @@
     "name": "Painter's Supplies",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Painter's Supplies",
      "headers": [
       "Activity",
@@ -16316,6 +17018,7 @@
     "name": "Poisoner's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Poisoner's Tools",
      "headers": [
       "Activity",
@@ -16362,6 +17065,7 @@
     "name": "Potter's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Potter's Tools",
      "headers": [
       "Activity",
@@ -16412,6 +17116,7 @@
     "name": "Smith's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Smith's Tools",
      "headers": [
       "Activity",
@@ -16462,6 +17167,7 @@
     "name": "Thieves' Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Thieves' Tools",
      "headers": [
       "Activity",
@@ -16508,6 +17214,7 @@
     "name": "Tinker's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Tinker's Tools",
      "headers": [
       "Activity",
@@ -16563,6 +17270,7 @@
     "name": "Weaver's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Weaver's Tools",
      "headers": [
       "Activity",
@@ -16618,6 +17326,7 @@
     "name": "Woodcarver's Tools",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Woodcarver's Tools",
      "headers": [
       "Activity",
@@ -16747,6 +17456,7 @@
     "name": "Hazard Type",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Hazard Type",
      "headers": [
       "d20",
@@ -16780,6 +17490,7 @@
     "name": "Hazard DC",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Hazard DC",
      "headers": [
       "d20",
@@ -16829,6 +17540,7 @@
     "name": "Crew Conflict DCs",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Crew Conflict DCs",
      "headers": [
       "DC",
@@ -16858,6 +17570,7 @@
     "name": "Crew Conflict Checks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Crew Conflict Checks",
      "headers": [
       "Officer",
@@ -16883,6 +17596,7 @@
     "name": "Crew Conflict Check Results",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Crew Conflict Check Results",
      "headers": [
       "Result",
@@ -16927,6 +17641,7 @@
     "name": "Fire DCs",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Fire DCs",
      "headers": [
       "DC",
@@ -16956,6 +17671,7 @@
     "name": "Fire Checks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Fire Checks",
      "headers": [
       "Officer",
@@ -16985,6 +17701,7 @@
     "name": "Fire Check Results",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Fire Check Results",
      "headers": [
       "Result",
@@ -17029,6 +17746,7 @@
     "name": "Fog DCs",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Fog DCs",
      "headers": [
       "DC",
@@ -17058,6 +17776,7 @@
     "name": "Fog Checks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Fog Checks",
      "headers": [
       "Officer",
@@ -17079,6 +17798,7 @@
     "name": "Fog Check Results",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Fog Check Results",
      "headers": [
       "Result",
@@ -17123,6 +17843,7 @@
     "name": "Infestation DCs",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Infestation DCs",
      "headers": [
       "DC",
@@ -17152,6 +17873,7 @@
     "name": "Infestation Checks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Infestation Checks",
      "headers": [
       "Officer",
@@ -17181,6 +17903,7 @@
     "name": "Infestation Check Results",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Infestation Check Results",
      "headers": [
       "Result",
@@ -17225,6 +17948,7 @@
     "name": "Storm DCs",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Storm DCs",
      "headers": [
       "DC",
@@ -17254,6 +17978,7 @@
     "name": "Storm Checks",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Storm Checks",
      "headers": [
       "Officer",
@@ -17283,6 +18008,7 @@
     "name": "Storm Check Results",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Storm Check Results",
      "headers": [
       "Result",

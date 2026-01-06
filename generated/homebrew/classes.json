@@ -9,13 +9,73 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Alchemist HP: 8 + Con. mod\n• HP per Alchemist level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Alchemist HP: 8 + Con. mod",
+      "HP per Alchemist level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Bomb weapons\n• Skill Proficiencies: Choose 3: Arcana, History, Insight, Medicine, Nature, Perception, Sleight Of Hand or Survival\n• Tool Proficiencies: Alchemist's Supplies"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Dexterity",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Bomb"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Arcana, History, Insight, Medicine, Nature, Perception, Sleight Of Hand or Survival"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Alchemist's Supplies"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -24,8 +84,25 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor\n• Tool Proficiencies: Alchemist's Supplies"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Alchemist's Supplies"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -221,6 +298,7 @@
      "name": "",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "",
       "headers": [
        "Potion",
@@ -905,6 +983,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Item",
@@ -999,6 +1078,7 @@
       "name": "Magical Pigments",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Magical Pigments",
        "headers": [
         "Color",
@@ -1242,6 +1322,7 @@
       "name": "Examine Specimen",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Examine Specimen",
        "headers": [
         "Skill",
@@ -1320,13 +1401,75 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Blood Hunter HP: 10 + Con. mod\n• HP per Blood Hunter level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Blood Hunter HP: 10 + Con. mod",
+      "HP per Blood Hunter level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Tool Proficiencies: Alchemist's Supplies\n• Skill Proficiencies: Choose 3: Athletics, Acrobatics, Arcana, History, Insight, Investigation, Religion or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Dexterity",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Alchemist's Supplies"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Athletics, Acrobatics, Arcana, History, Insight, Investigation, Religion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -1335,8 +1478,47 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Martial weapons\n• Tool Proficiencies: Alchemist's Supplies\n• Skill Proficiencies: Choose 1: Athletics, Acrobatics, Arcana, History, Insight, Investigation, Religion or Survival"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Alchemist's Supplies"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 1: Athletics, Acrobatics, Arcana, History, Insight, Investigation, Religion or Survival"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -1783,8 +1965,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Your weapon sheds Bright Light out to a range of 20 feet.\n• You have Resistance to Necrotic damage.\n• When you hit an Undead creature with a weapon for which the Rite of the Dawn is active, you roll an additional hemocraft die when determining the extra damage from the rite."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Your weapon sheds Bright Light out to a range of 20 feet.",
+        "You have Resistance to Necrotic damage.",
+        "When you hit an Undead creature with a weapon for which the Rite of the Dawn is active, you roll an additional hemocraft die when determining the extra damage from the rite."
+       ]
+      }
      },
      {
       "name": "",
@@ -1981,8 +2171,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• You inflict Psychic damage on the branded creature equal to one roll of your Hemocraft Die plus your Hemocraft Modifier.\n• You activate an ability that requires you to roll your Hemocraft Die and take the damage rolled, without taking any additional damage."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "You inflict Psychic damage on the branded creature equal to one roll of your Hemocraft Die plus your Hemocraft Modifier.",
+        "You activate an ability that requires you to roll your Hemocraft Die and take the damage rolled, without taking any additional damage."
+       ]
+      }
      }
     ],
     "15": [
@@ -2005,8 +2202,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• You immediately become stable. You can use this ability a number of times equal to your Hemocraft Modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n• You rise again for a number of turns equal to your Hemocraft Modifier. You remain at 0 Hit Points, you cannot benefit from any healing, and you are Immune to all damage types, including from your own Hemocraft Die. You can still use any abilities activated by rolling your Hemocraft Die but you treat the result of the roll as a 0 for the purposes of inflicting damage to yourself. While you are in this state you cannot take reactions and you can use either an action or a bonus action, not both. At the end of the last turn, you instantly die, and your corpse is under the effects of the spell Gentle Repose. After you use this ability, roll your Hemocraft Die; you can't use this ability again until you finish a number of Long Rests equal to the number rolled on your Hemocraft Die."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "You immediately become stable. You can use this ability a number of times equal to your Hemocraft Modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
+        "You rise again for a number of turns equal to your Hemocraft Modifier. You remain at 0 Hit Points, you cannot benefit from any healing, and you are Immune to all damage types, including from your own Hemocraft Die. You can still use any abilities activated by rolling your Hemocraft Die but you treat the result of the roll as a 0 for the purposes of inflicting damage to yourself. While you are in this state you cannot take reactions and you can use either an action or a bonus action, not both. At the end of the last turn, you instantly die, and your corpse is under the effects of the spell Gentle Repose. After you use this ability, roll your Hemocraft Die; you can't use this ability again until you finish a number of Long Rests equal to the number rolled on your Hemocraft Die."
+       ]
+      }
      }
     ]
    },
@@ -2153,6 +2357,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -2433,13 +2638,65 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Captain HP: 8 + Con. mod\n• HP per Captain level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Captain HP: 8 + Con. mod",
+      "HP per Captain level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Constitution and Charisma\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Animal Handling, Athletics, Deception, History, Insight, Intimidation, Perception or Persuasion"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Constitution",
+      "Charisma"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Heavy armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Animal Handling, Athletics, Deception, History, Insight, Intimidation, Perception or Persuasion"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -2448,8 +2705,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -2618,8 +2894,18 @@
     },
     {
      "name": "Maneuver Options",
-     "type": "text",
-     "value": "• Bolster (ValdaCaptain)\n• Born Leader (ValdaCaptain)\n• Morale Boost (ValdaCaptain)\n• Rally (ValdaCaptain)\n• Staggering Strike (ValdaCaptain)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "Bolster (ValdaCaptain)",
+       "Born Leader (ValdaCaptain)",
+       "Morale Boost (ValdaCaptain)",
+       "Rally (ValdaCaptain)",
+       "Staggering Strike (ValdaCaptain)"
+      ]
+     }
     },
     {
      "name": "",
@@ -2837,12 +3123,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Adrenaline (VALDAVAGABOND)"
+      "value": "Adrenaline (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Stim Potion (VALDAVAGABOND)"
+      "value": "Stim Potion (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -2876,12 +3162,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Ambush [Maneuver] (VALDAVAGABOND)"
+      "value": "Ambush [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Craven (VALDAVAGABOND)"
+      "value": "Craven (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3200,12 +3486,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Bloody Rampage (VALDAVAGABOND)"
+      "value": "Bloody Rampage (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Mutations (VALDAVAGABOND)"
+      "value": "Mutations (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3239,12 +3525,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Fey Moods (VALDAVAGABOND)"
+      "value": "Fey Moods (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Frenzied Strike [Maneuver] (VALDAVAGABOND)"
+      "value": "Frenzied Strike [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3283,12 +3569,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Fine Cuisine (VALDAVAGABOND)"
+      "value": "Fine Cuisine (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Monster Meal (VALDAVAGABOND)"
+      "value": "Monster Meal (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3417,17 +3703,17 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Faithful Hound (VALDAVAGABOND)"
+      "value": "Faithful Hound (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Sick 'Em! [Maneuver] (VALDAVAGABOND)"
+      "value": "Sick 'Em! [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Desperate Companion (VALDAVAGABOND)"
+      "value": "Desperate Companion (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3526,12 +3812,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Chivalrous Oath (VALDAVAGABOND)"
+      "value": "Chivalrous Oath (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Knight's Challenge (VALDAVAGABOND)"
+      "value": "Knight's Challenge (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3610,12 +3896,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Physician (VALDAVAGABOND)"
+      "value": "Physician (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Remedy [Maneuver] (VALDAVAGABOND)"
+      "value": "Remedy [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3649,12 +3935,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Hand-to-Hand (VALDAVAGABOND)"
+      "value": "Hand-to-Hand (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Shrug Off [Maneuver] (VALDAVAGABOND)"
+      "value": "Shrug Off [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -3688,12 +3974,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Infamy (VALDAVAGABOND)"
+      "value": "Infamy (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Grudge (VALDAVAGABOND)"
+      "value": "Grudge (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -4092,12 +4378,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Folk Musician (VALDAVAGABOND)"
+      "value": "Folk Musician (VALDAVAGABOND)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Inspiring Tune [Maneuver] (VALDAVAGABOND)"
+      "value": "Inspiring Tune [Maneuver] (VALDAVAGABOND)"
      },
      {
       "name": "",
@@ -4208,13 +4494,76 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Craftsman HP: 10 + Con. mod\n• HP per Craftsman level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Craftsman HP: 10 + Con. mod",
+      "HP per Craftsman level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Constitution and Intelligence\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Arcana, Athletics, History, Investigation, Medicine, Perception or Persuasion\n• Tool Proficiencies: All Artisan's Tools"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Constitution",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Heavy armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Arcana, Athletics, History, Investigation, Medicine, Perception or Persuasion"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "All Artisan's Tools"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -4223,8 +4572,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -4753,6 +5121,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level 3, [100 GP]",
@@ -4790,6 +5159,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level 6, [250 GP]",
@@ -4831,6 +5201,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level 10, [500 GP]",
@@ -4860,6 +5231,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level 14, [2,500 GP]",
@@ -5093,6 +5465,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Damage Die",
@@ -5807,8 +6180,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Ball Bearings\n• Ballista Trap\n• Caltrops\n• Hunting Trap"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Ball Bearings",
+        "Ballista Trap",
+        "Caltrops",
+        "Hunting Trap"
+       ]
+      }
      },
      {
       "name": "Quick Deployment",
@@ -5960,13 +6342,62 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d6\n• Level 1 Gadgeteer HP: 6 + Con. mod\n• HP per Gadgeteer level: 1d6 + Con. mod *or* 4 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d6",
+      "Level 1 Gadgeteer HP: 6 + Con. mod",
+      "HP per Gadgeteer level: 1d6 + Con. mod *or* 4 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 3: Arcana, Data|DarkMatter24, Deception, History, Investigation, Medicine, Nature, Piloting|DarkMatter24, Religion, Sleight Of Hand or Technology|DarkMatter24"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Dexterity",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Arcana, Data|DarkMatter24, Deception, History, Investigation, Medicine, Nature, Piloting|DarkMatter24, Religion, Sleight Of Hand or Technology|DarkMatter24"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -5975,8 +6406,25 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light armor"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -6556,6 +7004,7 @@
       "name": "Hologram Projector Table",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Hologram Projector Table",
        "headers": [
         "Gadgeteer Level",
@@ -6836,13 +7285,62 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Investigator HP: 8 + Con. mod\n• HP per Investigator level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Investigator HP: 8 + Con. mod",
+      "HP per Investigator level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Weapon Proficiencies: Simple and Martial weapons\n• Armor Proficiencies: Light armor\n• Skill Proficiencies: Choose 3: Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Persuasion, Religion, Stealth, Sleight Of Hand or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Dexterity",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Arcana, Athletics, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Persuasion, Religion, Stealth, Sleight Of Hand or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -8317,13 +8815,80 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Kitsune Witch HP: 8 + Con. mod\n• HP per Kitsune Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Kitsune Witch HP: 8 + Con. mod",
+      "HP per Kitsune Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Charisma\n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Simple, Rapier, Scimitar, Shortsword, Whip, Blowgun and Longbow weapons\n• Skill Proficiencies: Choose 3: Animal Handling, Deception, Insight, Nature, Perception, Performance, Persuasion or Survival\n• Tool Proficiencies: Thieves' Tools Or One Arisan's Tool, And One Musical Instrument."
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Dexterity",
+      "Charisma"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Rapier",
+      "Scimitar",
+      "Shortsword",
+      "Whip",
+      "Blowgun",
+      "Longbow"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Animal Handling, Deception, Insight, Nature, Perception, Performance, Persuasion or Survival"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Thieves' Tools or one Arisan's Tool, and one musical instrument."
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -8332,8 +8897,26 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor and Shields\n• Tool Proficiencies: One Of Thieves' Tools, One Artisan's Tool, Or One Musical Instrument."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "One of Thieves' Tools, one Artisan's Tool, or one musical instrument."
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -8342,6 +8925,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8377,6 +8961,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8412,6 +8997,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8447,6 +9033,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8482,6 +9069,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8517,6 +9105,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8552,6 +9141,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8587,6 +9177,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8622,6 +9213,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8657,6 +9249,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8692,6 +9285,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8727,6 +9321,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8762,6 +9357,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8797,6 +9393,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8832,6 +9429,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8867,6 +9465,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8902,6 +9501,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8937,6 +9537,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -8972,6 +9573,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -9007,6 +9609,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -9047,13 +9650,26 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• **Combat**: Your kitsune companion obeys your commands as best they can (no action required). They share your initiative count, taking their turn directly after yours. You determine their actions, decisions, attitudes, and so on. If you are incapacitated or absent, your companion acts on their own. If you die, the companion will run away.\n• **Statistics**: Your kitsune companion uses your proficiency bonus instead of their own. In addition to that, your Wisdom modifier is used for various features and abilities, as indicated on one of the __kitsune__ sheet. In addition to that you determine your kitsune companion's ability scores, using the stats provided below.\n• **Hit Points**: For each level you gain after  1st, your kitsune companion gains an additional hit die and increases Hit Points accordingly, as shown on the __sheet__.\n• **Stat Increase**: Whenever you choose an __Ability Score Improvement__ or other Feat, your kitsune companion may increase their ability score as well, in the same fashion as picking the ability score improvement feat. The kitsune companion cannot increase an ability score above 20, using this feature.\n• **Proficiencies**: Your kitsune companion gains proficiency in two skills of your choice and proficiency in Dexterity and Charisma saving throws.\n• **Dying and Restoration**: Whenever your kitsune companion is reduced to 0 Hit Points and isn't stable, they will make Death Saving Throws. On three failures they won't die, but will remain unconscious until you spend a Long Rest in quiet contemplation over their body to reawaken it. However, effects that destroy the body will still outright kill it. If this happens, or you don't have access to the body, you can spend a Long Rest and 25 gold worth of offerings to resummon the spirit of your companion. Your companion will then appear at the end of the Long Rest.\n• **Personality**: Your kitsune companion has a personality of their own. You can choose or roll for a personality trait, ideal, and flaw from the tables below. Its bond is always \"The witch who is my companion is someone who I would protect at all costs, as long as they would do the same.\""
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "**Combat**: Your kitsune companion obeys your commands as best they can (no action required). They share your initiative count, taking their turn directly after yours. You determine their actions, decisions, attitudes, and so on. If you are incapacitated or absent, your companion acts on their own. If you die, the companion will run away.",
+       "**Statistics**: Your kitsune companion uses your proficiency bonus instead of their own. In addition to that, your Wisdom modifier is used for various features and abilities, as indicated on one of the __kitsune__ sheet. In addition to that you determine your kitsune companion's ability scores, using the stats provided below.",
+       "**Hit Points**: For each level you gain after  1st, your kitsune companion gains an additional hit die and increases Hit Points accordingly, as shown on the __sheet__.",
+       "**Stat Increase**: Whenever you choose an __Ability Score Improvement__ or other Feat, your kitsune companion may increase their ability score as well, in the same fashion as picking the ability score improvement feat. The kitsune companion cannot increase an ability score above 20, using this feature.",
+       "**Proficiencies**: Your kitsune companion gains proficiency in two skills of your choice and proficiency in Dexterity and Charisma saving throws.",
+       "**Dying and Restoration**: Whenever your kitsune companion is reduced to 0 Hit Points and isn't stable, they will make Death Saving Throws. On three failures they won't die, but will remain unconscious until you spend a Long Rest in quiet contemplation over their body to reawaken it. However, effects that destroy the body will still outright kill it. If this happens, or you don't have access to the body, you can spend a Long Rest and 25 gold worth of offerings to resummon the spirit of your companion. Your companion will then appear at the end of the Long Rest.",
+       "**Personality**: Your kitsune companion has a personality of their own. You can choose or roll for a personality trait, ideal, and flaw from the tables below. Its bond is always \"The witch who is my companion is someone who I would protect at all costs, as long as they would do the same.\""
+      ]
+     }
     },
     {
      "name": "",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Kitsune Stat Array Options",
       "headers": null,
       "rows": [
@@ -9100,6 +9716,7 @@
      "name": "",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Personality Traits",
       "headers": [
        "d6",
@@ -9137,6 +9754,7 @@
      "name": "",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Ideals",
       "headers": [
        "d6",
@@ -9174,6 +9792,7 @@
      "name": "",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Flaws",
       "headers": [
        "d6",
@@ -9214,8 +9833,17 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• **Cantrips (0-Level Spells)**: At 1st level, you know two cantrips of your choice from the kitsune witch spell list. At higher levels, you learn additional kitsune witch cantrips of your choice, as shown in the Cantrips Known column of the Kitsune Witch table.\nWhen you gain a level in this class, you can replace one of the kitsune witch cantrips you know with another cantrip from the kitsune witch spell list.\n• **Preparing and Casting Spells**: The Kitsune Witch table shows how many spell slots you have to cast your kitsune witch spells. To cast one of your kitsune witch spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a Long Rest.\nYou prepare the list of kitsune witch spells that are available for you to cast, choosing from the kitsune witch spell list. When you do so, choose a number of kitsune witch spells equal to the prepared spells shown in the Kitsune Witch table. The spells must be of a level for which you have spell slots.\nFor example, if you are a 5th-level kitsune witch, you have four 1st-level and two 2nd-level spell slots, with 6 prepared spells. Your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of Kitsune Witch spells requires time spent playing or spending time with your kitsune companion: at least 1 minute per spell level for each spell on your list.\n• **Spellcasting Ability**: Wisdom is your spellcasting ability for your kitsune witch spells, since their power derives from the understanding you have with your kitsune companion. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a kitsune witch spell you cast and when making an attack roll with one.\n• *Spell Save DC*: Wisdom modifier + Proficiency Bonus\n• *Spell Attack modifier*: Wisdom modifier + Proficiency Bonus\n• **Spellcasting Focus**: You can use a druidic focus as your spellcasting focus. This focus usually symbolises the bond you share with your kitsune companion."
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "**Cantrips (0-Level Spells)**: At 1st level, you know two cantrips of your choice from the kitsune witch spell list. At higher levels, you learn additional kitsune witch cantrips of your choice, as shown in the Cantrips Known column of the Kitsune Witch table.\nWhen you gain a level in this class, you can replace one of the kitsune witch cantrips you know with another cantrip from the kitsune witch spell list.",
+       "**Preparing and Casting Spells**: The Kitsune Witch table shows how many spell slots you have to cast your kitsune witch spells. To cast one of your kitsune witch spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a Long Rest.\nYou prepare the list of kitsune witch spells that are available for you to cast, choosing from the kitsune witch spell list. When you do so, choose a number of kitsune witch spells equal to the prepared spells shown in the Kitsune Witch table. The spells must be of a level for which you have spell slots.\nFor example, if you are a 5th-level kitsune witch, you have four 1st-level and two 2nd-level spell slots, with 6 prepared spells. Your list of prepared spells can include four spells of 1st or 2nd-level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.\nYou can change your list of prepared spells when you finish a long rest. Preparing a new list of Kitsune Witch spells requires time spent playing or spending time with your kitsune companion: at least 1 minute per spell level for each spell on your list.",
+       "**Spellcasting Ability**: Wisdom is your spellcasting ability for your kitsune witch spells, since their power derives from the understanding you have with your kitsune companion. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a kitsune witch spell you cast and when making an attack roll with one.\n*Spell Save DC*: Wisdom modifier + Proficiency Bonus\n*Spell Attack modifier*: Wisdom modifier + Proficiency Bonus",
+       "**Spellcasting Focus**: You can use a druidic focus as your spellcasting focus. This focus usually symbolises the bond you share with your kitsune companion."
+      ]
+     }
     },
     {
      "name": "",
@@ -9403,6 +10031,7 @@
       "name": "Ancestral Domain Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Ancestral Domain Spells",
        "headers": [
         "Cleric Level",
@@ -9439,8 +10068,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Dark**: A kitsune aspected to darkness prefers to operate from the shadows. There they'll lie in wait and debilitate their enemy, until they are weak enough to kill. If you choose this aspect, you now use the __Dark Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Shadow Veil's stats here](https://5e.tools/feats.html#shadow%20veil_wokiwi)\n• **Time**: Kitsunes aspected to time will use it to their advantage. They'll set out traps across time, just so the enemy can be killed in one hit whenever the kitsune meets them. If you choose this aspect, you now use the __Time Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Time Delay's stats here](https://5e.tools/feats.html#time%20delay_wokiwi)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Dark**: A kitsune aspected to darkness prefers to operate from the shadows. There they'll lie in wait and debilitate their enemy, until they are weak enough to kill. If you choose this aspect, you now use the __Dark Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Shadow Veil's stats here](https://5e.tools/feats.html#shadow%20veil_wokiwi)",
+        "**Time**: Kitsunes aspected to time will use it to their advantage. They'll set out traps across time, just so the enemy can be killed in one hit whenever the kitsune meets them. If you choose this aspect, you now use the __Time Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Time Delay's stats here](https://5e.tools/feats.html#time%20delay_wokiwi)"
+       ]
+      }
      },
      {
       "name": "",
@@ -9478,8 +10114,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Attacks Affected**: They have disadvantage on all attack rolls.\n• **No Movement**: Their movement is 0 and cannot be increased.\n• **No Reaction**: They cannot take Reactions."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Attacks Affected**: They have disadvantage on all attack rolls.",
+        "**No Movement**: Their movement is 0 and cannot be increased.",
+        "**No Reaction**: They cannot take Reactions."
+       ]
+      }
      },
      {
       "name": "",
@@ -9522,8 +10166,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Rolls Affected**: Enemies within your aura have disadvantage on all D20 Tests.\n• **Weakened Armour**: Enemies within your aura have a -2 penalty to their AC.\n• **Attacks Affected**: Enemies within your aura cannot regain Hit Points."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Rolls Affected**: Enemies within your aura have disadvantage on all D20 Tests.",
+        "**Weakened Armour**: Enemies within your aura have a -2 penalty to their AC.",
+        "**Attacks Affected**: Enemies within your aura cannot regain Hit Points."
+       ]
+      }
      },
      {
       "name": "",
@@ -9553,6 +10205,7 @@
       "name": "Ancestral Domain Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Ancestral Domain Spells",
        "headers": [
         "Cleric Level",
@@ -9589,8 +10242,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Dark**: A kitsune aspected to darkness prefers to operate from the shadows. There they'll lie in wait and debilitate their enemy, until they are weak enough to kill. If you choose this aspect, you now use the __Dark Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Shadow Veil's stats here](https://5e.tools/feats.html#shadow%20veil_wokiwi)\n• **Time**: Kitsunes aspected to time will use it to their advantage. They'll set out traps across time, just so the enemy can be killed in one hit whenever the kitsune meets them. If you choose this aspect, you now use the __Time Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Time Delay's stats here](https://5e.tools/feats.html#time%20delay_wokiwi)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Dark**: A kitsune aspected to darkness prefers to operate from the shadows. There they'll lie in wait and debilitate their enemy, until they are weak enough to kill. If you choose this aspect, you now use the __Dark Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Shadow Veil's stats here](https://5e.tools/feats.html#shadow%20veil_wokiwi)",
+        "**Time**: Kitsunes aspected to time will use it to their advantage. They'll set out traps across time, just so the enemy can be killed in one hit whenever the kitsune meets them. If you choose this aspect, you now use the __Time Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Time Delay's stats here](https://5e.tools/feats.html#time%20delay_wokiwi)"
+       ]
+      }
      },
      {
       "name": "",
@@ -9672,8 +10332,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Resistance**: You and all allies in the aura have resistance to all damage.\n• **Protection**: You and all allies who start their turn within the aura gain 20 Temporary Hit Points.\n• **Guardian**: Enemies within the aura have disadvantage on all attack rolls."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Resistance**: You and all allies in the aura have resistance to all damage.",
+        "**Protection**: You and all allies who start their turn within the aura gain 20 Temporary Hit Points.",
+        "**Guardian**: Enemies within the aura have disadvantage on all attack rolls."
+       ]
+      }
      },
      {
       "name": "",
@@ -9703,6 +10371,7 @@
       "name": "Ancestral Domain Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Ancestral Domain Spells",
        "headers": [
         "Cleric Level",
@@ -9739,8 +10408,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Dark**: A kitsune aspected to darkness prefers to operate from the shadows. There they'll lie in wait and debilitate their enemy, until they are weak enough to kill. If you choose this aspect, you now use the __Dark Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Shadow Veil's stats here](https://5e.tools/feats.html#shadow%20veil_wokiwi)\n• **Time**: Kitsunes aspected to time will use it to their advantage. They'll set out traps across time, just so the enemy can be killed in one hit whenever the kitsune meets them. If you choose this aspect, you now use the __Time Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Time Delay's stats here](https://5e.tools/feats.html#time%20delay_wokiwi)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Dark**: A kitsune aspected to darkness prefers to operate from the shadows. There they'll lie in wait and debilitate their enemy, until they are weak enough to kill. If you choose this aspect, you now use the __Dark Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Shadow Veil's stats here](https://5e.tools/feats.html#shadow%20veil_wokiwi)",
+        "**Time**: Kitsunes aspected to time will use it to their advantage. They'll set out traps across time, just so the enemy can be killed in one hit whenever the kitsune meets them. If you choose this aspect, you now use the __Time Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Time Delay's stats here](https://5e.tools/feats.html#time%20delay_wokiwi)"
+       ]
+      }
      },
      {
       "name": "",
@@ -9788,8 +10464,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Temporary Health**: Gain Temporary Hit Points equal to two times your Kitsune Witch level + your Wisdom modifier.\n• **Magical Strength**: Instead of using their Strength or Dexterity modifier for any D20 Test, they can use your Wisdom modifier.\n• **Psychic Resistance**: Gain resistance to psychic damage."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Temporary Health**: Gain Temporary Hit Points equal to two times your Kitsune Witch level + your Wisdom modifier.",
+        "**Magical Strength**: Instead of using their Strength or Dexterity modifier for any D20 Test, they can use your Wisdom modifier.",
+        "**Psychic Resistance**: Gain resistance to psychic damage."
+       ]
+      }
      },
      {
       "name": "",
@@ -9842,8 +10526,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Restoration**: You and allies, within the aura, regain 10 Hit Points at the end of their turn.\n• **Protection**: You and allies, within the aura, gain advantage on Attack Rolls.\n• **Condition Immunity**: You cannot be affected by the Blinded, Charmed, Deafened, Diseased, Frightened, Paralysed, Petrified, and Poisoned conditions. If you are affected by one of those conditions, before activation of this feature, it becomes suppressed while the feature is active."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Restoration**: You and allies, within the aura, regain 10 Hit Points at the end of their turn.",
+        "**Protection**: You and allies, within the aura, gain advantage on Attack Rolls.",
+        "**Condition Immunity**: You cannot be affected by the Blinded, Charmed, Deafened, Diseased, Frightened, Paralysed, Petrified, and Poisoned conditions. If you are affected by one of those conditions, before activation of this feature, it becomes suppressed while the feature is active."
+       ]
+      }
      },
      {
       "name": "",
@@ -9873,6 +10565,7 @@
       "name": "Ancestral Domain Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Ancestral Domain Spells",
        "headers": [
         "Cleric Level",
@@ -9909,8 +10602,15 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Dark**: A kitsune aspected to darkness prefers to operate from the shadows. There they'll lie in wait and debilitate their enemy, until they are weak enough to kill. If you choose this aspect, you now use the __Dark Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Shadow Veil's stats here](https://5e.tools/feats.html#shadow%20veil_wokiwi)\n• **Time**: Kitsunes aspected to time will use it to their advantage. They'll set out traps across time, just so the enemy can be killed in one hit whenever the kitsune meets them. If you choose this aspect, you now use the __Time Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Time Delay's stats here](https://5e.tools/feats.html#time%20delay_wokiwi)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Dark**: A kitsune aspected to darkness prefers to operate from the shadows. There they'll lie in wait and debilitate their enemy, until they are weak enough to kill. If you choose this aspect, you now use the __Dark Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Shadow Veil's stats here](https://5e.tools/feats.html#shadow%20veil_wokiwi)",
+        "**Time**: Kitsunes aspected to time will use it to their advantage. They'll set out traps across time, just so the enemy can be killed in one hit whenever the kitsune meets them. If you choose this aspect, you now use the __Time Kitsune__ statblock for your kitsune companion and gain the following feature:\n[See Time Delay's stats here](https://5e.tools/feats.html#time%20delay_wokiwi)"
+       ]
+      }
      },
      {
       "name": "",
@@ -10002,8 +10702,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Damaging Aura**: The extra damage from the aura now also adds your Kitsune Witch level to it.\n• **Extra Attack**: You may make an additional attack, as part of the attack action.\n• **Extra Opportunity Attack**: You may make an additional attack as part of the Opportunity Attack reaction."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Damaging Aura**: The extra damage from the aura now also adds your Kitsune Witch level to it.",
+        "**Extra Attack**: You may make an additional attack, as part of the attack action.",
+        "**Extra Opportunity Attack**: You may make an additional attack as part of the Opportunity Attack reaction."
+       ]
+      }
      },
      {
       "name": "",
@@ -10024,13 +10732,63 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d12\n• Level 1 Martyr HP: 12 + Con. mod\n• HP per Martyr level: 1d12 + Con. mod *or* 7 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d12",
+      "Level 1 Martyr HP: 12 + Con. mod",
+      "HP per Martyr level: 1d12 + Con. mod *or* 7 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Strength and Wisdom\n• Armor Proficiencies: Light armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Athletics, History, Insight, Intimidation, Medicine, Persuasion or Religion"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Strength",
+      "Wisdom"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Athletics, History, Insight, Intimidation, Medicine, Persuasion or Religion"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -10039,8 +10797,26 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -10321,6 +11097,7 @@
      "name": "Hit Point Spellcasting",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Hit Point Spellcasting",
       "headers": [
        "Spell Slot Level",
@@ -10632,6 +11409,7 @@
       "name": "Anonymity Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Anonymity Spells",
        "headers": [
         "Martyr Level",
@@ -10750,6 +11528,7 @@
       "name": "Ascension Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Ascension Spells",
        "headers": [
         "Martyr Level",
@@ -10858,6 +11637,7 @@
       "name": "Atonement Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Atonement Spells",
        "headers": [
         "Martyr Level",
@@ -10921,8 +11701,18 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• 1 Exhaustion level\n• A curse, including the target's Attunement to a cursed magic item\n• Any reduction to one of the target's ability scores\n• Any reduction to the target's Hit Point maximum\n• The Blinded, Charmed, Deafened, Paralyzed, Petrified, Poisoned, or Stunned conditions"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "1 Exhaustion level",
+        "A curse, including the target's Attunement to a cursed magic item",
+        "Any reduction to one of the target's ability scores",
+        "Any reduction to the target's Hit Point maximum",
+        "The Blinded, Charmed, Deafened, Paralyzed, Petrified, Poisoned, or Stunned conditions"
+       ]
+      }
      }
     ],
     "14": [
@@ -10976,6 +11766,7 @@
       "name": "Awakening Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Awakening Spells",
        "headers": [
         "Martyr Level",
@@ -11084,6 +11875,7 @@
       "name": "Calamity Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Calamity Spells",
        "headers": [
         "Martyr Level",
@@ -11192,6 +11984,7 @@
       "name": "Discord Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Discord Spells",
        "headers": [
         "Martyr Level",
@@ -11235,6 +12028,7 @@
       "name": "Havoc!",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Havoc!",
        "headers": [
         "d10",
@@ -11338,6 +12132,7 @@
       "name": "Fame Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Fame Spells",
        "headers": [
         "Martyr Level",
@@ -11436,6 +12231,7 @@
       "name": "Levity Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Levity Spells",
        "headers": [
         "Martyr Level",
@@ -11534,6 +12330,7 @@
       "name": "Mercy Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Mercy Spells",
        "headers": [
         "Martyr Level",
@@ -11647,6 +12444,7 @@
       "name": "Odyssey Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Odyssey Spells",
        "headers": [
         "Martyr Level",
@@ -11740,6 +12538,7 @@
       "name": "Rebirth Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Rebirth Spells",
        "headers": [
         "Martyr Level",
@@ -11843,6 +12642,7 @@
       "name": "Revolution Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Revolution Spells",
        "headers": [
         "Martyr Level",
@@ -11941,6 +12741,7 @@
       "name": "End Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "End Spells",
        "headers": [
         "Martyr Level",
@@ -12044,6 +12845,7 @@
       "name": "Truth Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Truth Spells",
        "headers": [
         "Martyr Level",
@@ -12137,6 +12939,7 @@
       "name": "Tyranny Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Tyranny Spells",
        "headers": [
         "Martyr Level",
@@ -12226,13 +13029,50 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d6\n• Level 1 Necromancer HP: 6 + Con. mod\n• HP per Necromancer level: 1d6 + Con. mod *or* 4 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d6",
+      "Level 1 Necromancer HP: 6 + Con. mod",
+      "HP per Necromancer level: 1d6 + Con. mod *or* 4 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Constitution and Intelligence\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Arcana, Deception, History, Intimidation, Investigation, Medicine, Persuasion, Religion or Stealth"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Constitution",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Arcana, Deception, History, Intimidation, Investigation, Medicine, Persuasion, Religion or Stealth"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -12246,6 +13086,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12289,6 +13130,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12332,6 +13174,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12375,6 +13218,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12418,6 +13262,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12461,6 +13306,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12504,6 +13350,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12547,6 +13394,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12590,6 +13438,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12633,6 +13482,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12676,6 +13526,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12719,6 +13570,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12762,6 +13614,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12805,6 +13658,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12848,6 +13702,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12891,6 +13746,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12934,6 +13790,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -12977,6 +13834,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -13020,6 +13878,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -13063,6 +13922,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -13195,6 +14055,7 @@
      "name": "Undead Thralls",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Undead Thralls",
       "headers": [
        "Name",
@@ -13589,6 +14450,7 @@
       "name": "Blood Ascendent Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Blood Ascendent Spells",
        "headers": [
         "Necromancer Level",
@@ -13698,6 +14560,7 @@
       "name": "Corpse Florist Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Corpse Florist Spells",
        "headers": [
         "Necromancer Level",
@@ -13817,6 +14680,7 @@
       "name": "Crone Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Crone Spells",
        "headers": [
         "Necromancer Level",
@@ -13902,6 +14766,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Spell",
@@ -13971,6 +14836,7 @@
       "name": "Cyber Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Cyber Spells",
        "headers": [
         "Necromancer Level",
@@ -14120,6 +14986,7 @@
       "name": "Dead Mist Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Dead Mist Spells",
        "headers": [
         "Necromancer Level",
@@ -14329,6 +15196,7 @@
       "name": "Backup Dancers",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Backup Dancers",
        "headers": [
         "Dancers",
@@ -14433,6 +15301,7 @@
       "name": "Overlord Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Overlord Spells",
        "headers": [
         "Necromancer Level",
@@ -14513,6 +15382,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Spell",
@@ -14570,6 +15440,7 @@
       "name": "Pale Master Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Pale Master Spells",
        "headers": [
         "Necromancer Level",
@@ -14674,6 +15545,7 @@
       "name": "Pharaoh Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Pharaoh Spells",
        "headers": [
         "Necromancer Level",
@@ -14998,6 +15870,7 @@
       "name": "Reaper Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Reaper Spells",
        "headers": [
         "Necromancer Level",
@@ -15183,13 +16056,75 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d12\n• Level 1 Ruffian HP: 12 + Con. mod\n• HP per Ruffian level: 1d12 + Con. mod *or* 7 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d12",
+      "Level 1 Ruffian HP: 12 + Con. mod",
+      "HP per Ruffian level: 1d12 + Con. mod *or* 7 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Strength and Constitution\n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Athletics, Deception, Perception, Persuasion, Sleight Of Hand, Stealth or Survival\n• Tool Proficiencies: One Musical Instrument Or Gaming Set"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Strength",
+      "Constitution"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Athletics, Deception, Perception, Persuasion, Sleight Of Hand, Stealth or Survival"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "one Musical Instrument or Gaming Set"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -15199,7 +16134,31 @@
    {
     "name": "Multiclassing",
     "type": "text",
-    "value": "Ability requirements: At least 13 Strength  and 13 Charisma \n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Martial weapons"
+    "value": "Ability requirements: At least 13 Strength  and 13 Charisma "
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -15416,7 +16375,7 @@
     {
      "name": "",
      "type": "text",
-     "value": "• *Daunting Presence Save DC*: Charisma modifier + Proficiency Bonus"
+     "value": "*Daunting Presence Save DC*: Charisma modifier + Proficiency Bonus"
     }
    ],
    "3": [
@@ -15581,8 +16540,17 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• You gain Resistance to all damage.\n• You remove all Conditions from yourself and become immune to all Conditions.\n• You gain Advantage on all Melee Attack Rolls you make.\n• Your movement cannot be restricted in any way."
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "You gain Resistance to all damage.",
+       "You remove all Conditions from yourself and become immune to all Conditions.",
+       "You gain Advantage on all Melee Attack Rolls you make.",
+       "Your movement cannot be restricted in any way."
+      ]
+     }
     },
     {
      "name": "",
@@ -15922,13 +16890,73 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Spiritualist HP: 8 + Con. mod\n• HP per Spiritualist level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Spiritualist HP: 8 + Con. mod",
+      "HP per Spiritualist level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Wisdom and Charisma\n• Armor Proficiencies: Light armor and Shields\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Arcana, Deception, Insight, Investigation, Perception, Performance, Persuasion or Religion\n• Tool Proficiencies: One Of Calligrapher's Supplies, Dice Set, Painter's Supplies, Playing Cards, Or One Musical Instrument"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Wisdom",
+      "Charisma"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Arcana, Deception, Insight, Investigation, Perception, Performance, Persuasion or Religion"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "One of calligrapher's supplies, dice set, painter's supplies, playing cards, or one musical instrument"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -15937,8 +16965,26 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor and Shields\n• Tool Proficiencies: One Of Calligrapher's Supplies, Dice Set, Painter's Supplies, Playing Cards, Or One Musical Instrument"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "One of calligrapher's supplies, dice set, painter's supplies, playing cards, or one musical instrument"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -16282,8 +17328,16 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• Make an Attack Roll against an enemy, using your Cantrips or Spells.\n• Force an enemy to make a Saving Throw, using your Cantrips or Spells.\n• Take a Bonus Action to extend your Séance"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "Make an Attack Roll against an enemy, using your Cantrips or Spells.",
+       "Force an enemy to make a Saving Throw, using your Cantrips or Spells.",
+       "Take a Bonus Action to extend your Séance"
+      ]
+     }
     },
     {
      "name": "",
@@ -16503,6 +17557,7 @@
       "name": "Biokinetic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Biokinetic Spells",
        "headers": [
         "Spiritualist Level",
@@ -16612,6 +17667,7 @@
       "name": "Cryokinetic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Cryokinetic Spells",
        "headers": [
         "Spiritualist Level",
@@ -16721,6 +17777,7 @@
       "name": "Electrokinetic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Electrokinetic Spells",
        "headers": [
         "Spiritualist Level",
@@ -16845,6 +17902,7 @@
       "name": "Pyrokinetic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Pyrokinetic Spells",
        "headers": [
         "Spiritualist Level",
@@ -16944,6 +18002,7 @@
       "name": "Telekinetic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Telekinetic Spells",
        "headers": [
         "Spiritualist Level",
@@ -17064,13 +18123,65 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Vagabond HP: 10 + Con. mod\n• HP per Vagabond level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Vagabond HP: 10 + Con. mod",
+      "HP per Vagabond level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Strength and Constitution\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Acrobatics, Animal Handling, Athletics, Deception, Insight, Investigation, Perception, Stealth or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Strength",
+      "Constitution"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Heavy armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Animal Handling, Athletics, Deception, Insight, Investigation, Perception, Stealth or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -17079,8 +18190,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -17254,8 +18384,22 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Avenger (ValdaVagabond)\n• Cursed (ValdaVagabond)\n• Dying (ValdaVagabond)\n• Faction Agent (ValdaVagabond)\n• False Identity (ValdaVagabond)\n• Fugitive (ValdaVagabond)\n• Heretic (ValdaVagabond)\n• Monstrous (ValdaVagabond)\n• Nobility (ValdaVagabond)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Avenger (ValdaVagabond)",
+       "Cursed (ValdaVagabond)",
+       "Dying (ValdaVagabond)",
+       "Faction Agent (ValdaVagabond)",
+       "False Identity (ValdaVagabond)",
+       "Fugitive (ValdaVagabond)",
+       "Heretic (ValdaVagabond)",
+       "Monstrous (ValdaVagabond)",
+       "Nobility (ValdaVagabond)"
+      ]
+     }
     },
     {
      "name": "",
@@ -17578,12 +18722,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Covert Tactics (VALDACAPTAIN)"
+      "value": "Covert Tactics (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Effortless Dodge [Maneuver] (VALDACAPTAIN)"
+      "value": "Effortless Dodge [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -17638,6 +18782,7 @@
       "name": "Gaining Score Points",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Gaining Score Points",
        "headers": [
         "Condition",
@@ -17663,6 +18808,7 @@
       "name": "Spending Score Points",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Spending Score Points",
        "headers": [
         "Score Point Cost",
@@ -17756,12 +18902,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Critical Focus (VALDACAPTAIN)"
+      "value": "Critical Focus (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Rampage [Maneuver] (VALDACAPTAIN)"
+      "value": "Rampage [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -17795,12 +18941,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Eagle Eye [Maneuver] (VALDACAPTAIN)"
+      "value": "Eagle Eye [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Close-Quarters Shooting (VALDACAPTAIN)"
+      "value": "Close-Quarters Shooting (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -17945,6 +19091,7 @@
       "name": "Fey Moods",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Fey Moods",
        "headers": [
         "d8",
@@ -18065,6 +19212,7 @@
       "name": "Monster Meal",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Monster Meal",
        "headers": [
         "Creature Type",
@@ -18272,12 +19420,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Skirmish [Maneuver] (VALDACAPTAIN)"
+      "value": "Skirmish [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Scallywag (VALDACAPTAIN)"
+      "value": "Scallywag (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -18611,12 +19759,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Sports Fanatic (VALDACAPTAIN)"
+      "value": "Sports Fanatic (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Team Inspiration [Maneuver] (VALDACAPTAIN)"
+      "value": "Team Inspiration [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -18655,12 +19803,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Iron Wall [Maneuver] (VALDACAPTAIN)"
+      "value": "Iron Wall [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Siege Defense (VALDACAPTAIN)"
+      "value": "Siege Defense (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -18764,12 +19912,12 @@
      {
       "name": "",
       "type": "text",
-      "value": "• Frenzied Strike [Maneuver] (VALDACAPTAIN)"
+      "value": "Frenzied Strike [Maneuver] (VALDACAPTAIN)"
      },
      {
       "name": "",
       "type": "text",
-      "value": "• Eldritch Herald (VALDACAPTAIN)"
+      "value": "Eldritch Herald (VALDACAPTAIN)"
      },
      {
       "name": "",
@@ -18800,13 +19948,65 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Warden HP: 10 + Con. mod\n• HP per Warden level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Warden HP: 10 + Con. mod",
+      "HP per Warden level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Strength and Constitution\n• Armor Proficiencies: Light, Medium and Heavy armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 2: Animal Handling, Athletics, Insight, Intimidation, Medicine, Perception, Persuasion or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Strength",
+      "Constitution"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Heavy armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Animal Handling, Athletics, Insight, Intimidation, Medicine, Perception, Persuasion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -18815,8 +20015,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -20271,13 +21490,61 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Warmage HP: 8 + Con. mod\n• HP per Warmage level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Warmage HP: 8 + Con. mod",
+      "HP per Warmage level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Constitution and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Acrobatics, Animal Handling, Arcana, Athletics, History, Investigation, Medicine, Perception or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Constitution",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Animal Handling, Arcana, Athletics, History, Investigation, Medicine, Perception or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -20541,8 +21808,21 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Adventurer (ValdaWarmage)\n• Arcane Event (ValdaWarmage)\n• Circus Performer (ValdaWarmage)\n• Mercenary (ValdaWarmage)\n• Self-Taught (ValdaWarmage)\n• Survivalist (ValdaWarmage)\n• Temple Initiate (ValdaWarmage)\n• Tower Apprentice (ValdaWarmage)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Adventurer (ValdaWarmage)",
+       "Arcane Event (ValdaWarmage)",
+       "Circus Performer (ValdaWarmage)",
+       "Mercenary (ValdaWarmage)",
+       "Self-Taught (ValdaWarmage)",
+       "Survivalist (ValdaWarmage)",
+       "Temple Initiate (ValdaWarmage)",
+       "Tower Apprentice (ValdaWarmage)"
+      ]
+     }
     },
     {
      "name": "",
@@ -20884,6 +22164,7 @@
       "name": "Hands",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Hands",
        "headers": [
         "Result",
@@ -21097,6 +22378,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "2d6",
@@ -21288,6 +22570,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Warmage Level",
@@ -21320,8 +22603,19 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Blitz (ValdaWarmage)\n• Check (ValdaWarmage)\n• Flash of Brilliance (ValdaWarmage)\n• Gambit (ValdaWarmage)\n• Morale Boost (ValdaWarmage)\n• Stalemate (ValdaWarmage)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Blitz (ValdaWarmage)",
+        "Check (ValdaWarmage)",
+        "Flash of Brilliance (ValdaWarmage)",
+        "Gambit (ValdaWarmage)",
+        "Morale Boost (ValdaWarmage)",
+        "Stalemate (ValdaWarmage)"
+       ]
+      }
      }
     ],
     "7": [
@@ -21692,6 +22986,7 @@
       "name": "Roulette Bets",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Roulette Bets",
        "headers": [
         "Bet",
@@ -21763,13 +23058,74 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Weaver HP: 8 + Con. mod\n• HP per Weaver level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Weaver HP: 8 + Con. mod",
+      "HP per Weaver level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Martial Melee Weapons That Have The Finesse Or Light Property weapons\n• Tool Proficiencies: Weaver's Tools and Cartographer's Tools\n• Skill Proficiencies: Choose 2: Acrobatics, Arcana, Athletics, History, Insight, Investigation, Nature, Perception, Stealth or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Dexterity",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial melee weapons that have the Finesse or Light property"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Weaver's tools",
+      "Cartographer's tools"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Arcana, Athletics, History, Insight, Investigation, Nature, Perception, Stealth or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -21779,7 +23135,29 @@
    {
     "name": "Multiclassing",
     "type": "text",
-    "value": "Ability requirements: At least 13 Dexterity  and 13 Intelligence \n• Weapon Proficiencies: Simple weapons\n• Armor Proficiencies: Light armor"
+    "value": "Ability requirements: At least 13 Dexterity  and 13 Intelligence "
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -21984,12 +23362,12 @@
     {
      "name": "",
      "type": "text",
-     "value": "• *Silk Save DC*: Intelligence modifier + Proficiency Bonus"
+     "value": "*Silk Save DC*: Intelligence modifier + Proficiency Bonus"
     },
     {
      "name": "",
      "type": "text",
-     "value": "• *Silk Attack modifier*: Intelligence modifier + Proficiency Bonus"
+     "value": "*Silk Attack modifier*: Intelligence modifier + Proficiency Bonus"
     },
     {
      "name": "",
@@ -22005,8 +23383,16 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• Your movement speed increases by 5 feet. Additionally, you can use a Bonus Action to rush up to 10 feet in any direction without taking Opportunity Attacks\n• When you are subjected to an effect that allows you to make a Dexterity saving throw, you can use your Reaction to take no damage on a success rather than half damage.\n• You can determine your jump distance using your Dexterity rather than your Strength"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "Your movement speed increases by 5 feet. Additionally, you can use a Bonus Action to rush up to 10 feet in any direction without taking Opportunity Attacks",
+       "When you are subjected to an effect that allows you to make a Dexterity saving throw, you can use your Reaction to take no damage on a success rather than half damage.",
+       "You can determine your jump distance using your Dexterity rather than your Strength"
+      ]
+     }
     }
    ],
    "3": [
@@ -22233,6 +23619,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -22352,6 +23739,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -22434,6 +23822,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -22488,8 +23877,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• You can make an additional attack as part of the Attack action\n• Your movement speed increases by 10 feet\n• You have advantage on Dexterity saving throws\n• Once per turn, you regain Hit Points equal to your Unarmed Strike die when you hit an enemy"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "You can make an additional attack as part of the Attack action",
+        "Your movement speed increases by 10 feet",
+        "You have advantage on Dexterity saving throws",
+        "Once per turn, you regain Hit Points equal to your Unarmed Strike die when you hit an enemy"
+       ]
+      }
      }
     ],
     "10": [
@@ -22541,8 +23939,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Your attack rolls are made with advantage.\n• You can make a single attack as a Bonus Action.\n• When you deal damage, you can recover 1d6 Hit Points. This recovery increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level. For every d6 you roll, add your Constitution modifier to the amount of Hit Points you recover. Similar to damage dice, these recovery dice are doubled when you land a Critical Hit (but your Constitution modifier is not added to the extra dice)."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Your attack rolls are made with advantage.",
+        "You can make a single attack as a Bonus Action.",
+        "When you deal damage, you can recover 1d6 Hit Points. This recovery increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level. For every d6 you roll, add your Constitution modifier to the amount of Hit Points you recover. Similar to damage dice, these recovery dice are doubled when you land a Critical Hit (but your Constitution modifier is not added to the extra dice)."
+       ]
+      }
      },
      {
       "name": "",
@@ -22558,6 +23964,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -22629,6 +24036,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -22728,6 +24136,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -22815,6 +24224,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -22919,6 +24329,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -23011,6 +24422,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -23113,13 +24525,21 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Choose a number of creatures up to your Silk modifier within 15 feet of you. They regain Hit Points equal to half of your total restored Hit Points.\n• One creature of your choice that you can touch regains Hit Points equal to the full amount that you recover."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Choose a number of creatures up to your Silk modifier within 15 feet of you. They regain Hit Points equal to half of your total restored Hit Points.",
+        "One creature of your choice that you can touch regains Hit Points equal to the full amount that you recover."
+       ]
+      }
      },
      {
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -23196,6 +24616,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -23295,6 +24716,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -23382,6 +24804,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -23501,6 +24924,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -23569,18 +24993,76 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d6\n• Level 1 Weaver HP: 6 + Con. mod\n• HP per Weaver level: 1d6 + Con. mod *or* 4 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d6",
+      "Level 1 Weaver HP: 6 + Con. mod",
+      "HP per Weaver level: 1d6 + Con. mod *or* 4 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Longswords weapons\n• Skill Proficiencies: Choose 2: Acrobatics, Animal Handling, Arcana, Insight, Investigation, Perception, Performance, Religion, Stealth or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Dexterity",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Longswords"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Animal Handling, Arcana, Insight, Investigation, Perception, Performance, Religion, Stealth or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
-    "type": "text",
-    "value": "• A longsword\n• A Hunter's Cloak\n• (a) a dungeoneer's pack or (b) an explorer's pack\n• (a) cartographer's tools or (b) weaver's tools"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A longsword",
+      "A Hunter's Cloak",
+      "(a) a dungeoneer's pack or (b) an explorer's pack",
+      "(a) cartographer's tools or (b) weaver's tools"
+     ]
+    }
    },
    {
     "name": "Multiclassing",
@@ -23780,12 +25262,12 @@
     {
      "name": "",
      "type": "text",
-     "value": "• *Silk Save DC*: Intelligence modifier + Proficiency Bonus"
+     "value": "*Silk Save DC*: Intelligence modifier + Proficiency Bonus"
     },
     {
      "name": "",
      "type": "text",
-     "value": "• *Silk Attack modifier*: Intelligence modifier + Proficiency Bonus"
+     "value": "*Silk Attack modifier*: Intelligence modifier + Proficiency Bonus"
     },
     {
      "name": "Gaining Silk",
@@ -23902,8 +25384,15 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• You gain the effects of the Disengage action.\n• Any Dexterity (*Acrobatics*) checks made during this turn have advantage."
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "You gain the effects of the Disengage action.",
+       "Any Dexterity (*Acrobatics*) checks made during this turn have advantage."
+      ]
+     }
     },
     {
      "name": "",
@@ -23951,8 +25440,16 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• You gain the effects of __Detect Magic__ within this radius: you see a faint aura around any visible creature or object in the area that bears any magical effects, and if an effect was created by a spell, you learn the spell's school of magic.\n• The Needolin might open certain doors or activate other magical effects, at your DM's discretion.\n• Other creatures feel an urge to sing along."
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "You gain the effects of __Detect Magic__ within this radius: you see a faint aura around any visible creature or object in the area that bears any magical effects, and if an effect was created by a spell, you learn the spell's school of magic.",
+       "The Needolin might open certain doors or activate other magical effects, at your DM's discretion.",
+       "Other creatures feel an urge to sing along."
+      ]
+     }
     },
     {
      "name": "",
@@ -24144,6 +25641,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -24263,6 +25761,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -24345,6 +25844,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -24399,8 +25899,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• You can make an additional attack as part of the Attack action\n• Your movement speed increases by 10 feet\n• You have advantage on Dexterity saving throws\n• Once per turn, you regain Hit Points equal to your Unarmed Strike die when you hit an enemy"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "You can make an additional attack as part of the Attack action",
+        "Your movement speed increases by 10 feet",
+        "You have advantage on Dexterity saving throws",
+        "Once per turn, you regain Hit Points equal to your Unarmed Strike die when you hit an enemy"
+       ]
+      }
      }
     ],
     "10": [
@@ -24452,8 +25961,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Your attack rolls are made with advantage.\n• You can make a single attack as a Bonus Action.\n• When you deal damage, you can recover 1d6 Hit Points. This recovery increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level. For every d6 you roll, add your Constitution modifier to the amount of Hit Points you recover. Similar to damage dice, these recovery dice are doubled when you land a Critical Hit (but your Constitution modifier is not added to the extra dice)."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Your attack rolls are made with advantage.",
+        "You can make a single attack as a Bonus Action.",
+        "When you deal damage, you can recover 1d6 Hit Points. This recovery increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level. For every d6 you roll, add your Constitution modifier to the amount of Hit Points you recover. Similar to damage dice, these recovery dice are doubled when you land a Critical Hit (but your Constitution modifier is not added to the extra dice)."
+       ]
+      }
      },
      {
       "name": "",
@@ -24469,6 +25986,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -24540,6 +26058,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -24639,6 +26158,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -24726,6 +26246,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -24830,6 +26351,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -24922,6 +26444,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -25024,13 +26547,21 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Choose a number of creatures up to your Silk modifier within 15 feet of you. They regain Hit Points equal to half of your total restored Hit Points.\n• One creature of your choice that you can touch regains Hit Points equal to the full amount that you recover."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Choose a number of creatures up to your Silk modifier within 15 feet of you. They regain Hit Points equal to half of your total restored Hit Points.",
+        "One creature of your choice that you can touch regains Hit Points equal to the full amount that you recover."
+       ]
+      }
      },
      {
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -25107,6 +26638,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -25206,6 +26738,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -25293,6 +26826,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Character Level",
@@ -25412,6 +26946,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "Level",
@@ -25480,13 +27015,61 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Witch HP: 8 + Con. mod\n• HP per Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Witch HP: 8 + Con. mod",
+      "HP per Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Wisdom and Charisma\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Arcana, Deception, Insight, Intimidation, Nature, Persuasion, Religion or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Wisdom",
+      "Charisma"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Arcana, Deception, Insight, Intimidation, Nature, Persuasion, Religion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -25495,8 +27078,14 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Armor Proficiencies: Light armor"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -25505,6 +27094,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25548,6 +27138,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25591,6 +27182,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25634,6 +27226,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25677,6 +27270,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25720,6 +27314,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25763,6 +27358,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25806,6 +27402,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25849,6 +27446,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25892,6 +27490,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25935,6 +27534,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -25978,6 +27578,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -26021,6 +27622,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -26064,6 +27666,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -26107,6 +27710,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -26150,6 +27754,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -26193,6 +27798,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -26236,6 +27842,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -26279,6 +27886,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -26322,6 +27930,7 @@
      "name": "Spell Slots per Spell Level",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Spell Slots per Spell Level",
       "headers": [
        "1st",
@@ -26435,8 +28044,24 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "Choose **1**:\n• Burned (ValdaWitch)\n• Drowned (ValdaWitch)\n• Feral (ValdaWitch)\n• Hideous (ValdaWitch)\n• Hollow (ValdaWitch)\n• Infested (ValdaWitch)\n• Loveless (ValdaWitch)\n• Possessed (ValdaWitch)\n• Starving (ValdaWitch)\n• Visions (ValdaWitch)\n• Whispers (ValdaWitch)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "Burned (ValdaWitch)",
+       "Drowned (ValdaWitch)",
+       "Feral (ValdaWitch)",
+       "Hideous (ValdaWitch)",
+       "Hollow (ValdaWitch)",
+       "Infested (ValdaWitch)",
+       "Loveless (ValdaWitch)",
+       "Possessed (ValdaWitch)",
+       "Starving (ValdaWitch)",
+       "Visions (ValdaWitch)",
+       "Whispers (ValdaWitch)"
+      ]
+     }
     }
    ],
    "2": [
@@ -26655,6 +28280,7 @@
       "name": "Black Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Black Magic Spells",
        "headers": [
         "Witch Level",
@@ -26749,6 +28375,7 @@
       "name": "Blood Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Blood Spells",
        "headers": [
         "Witch Level",
@@ -26817,6 +28444,7 @@
       "name": "Hemomantic Recovery",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Hemomantic Recovery",
        "headers": [
         "Spell Level",
@@ -26946,6 +28574,7 @@
       "name": "Coven of the Claw Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Coven of the Claw Spells",
        "headers": [
         "Witch Level",
@@ -26978,8 +28607,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• You have Advantage on the first attack roll against it you make on a turn.\n• You don't provoke Opportunity Attack from it.\n• You have Advantage on any Wisdom (*Perception* or *Survival*) check you make to find it."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "You have Advantage on the first attack roll against it you make on a turn.",
+        "You don't provoke Opportunity Attack from it.",
+        "You have Advantage on any Wisdom (*Perception* or *Survival*) check you make to find it."
+       ]
+      }
      },
      {
       "name": "",
@@ -26993,8 +28630,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• While you aren't wearing Medium or Heavy armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Wisdom modifiers.\n• Your Hit Point maximum increases by 2, and each time you gain a level in the witch class your Hit Point maximum increases by an additional 1 Hit Point.\n• You can use Wisdom instead of Strength or Dexterity for your weapon attack and damage rolls, including unarmed strikes."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "While you aren't wearing Medium or Heavy armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Wisdom modifiers.",
+        "Your Hit Point maximum increases by 2, and each time you gain a level in the witch class your Hit Point maximum increases by an additional 1 Hit Point.",
+        "You can use Wisdom instead of Strength or Dexterity for your weapon attack and damage rolls, including unarmed strikes."
+       ]
+      }
      },
      {
       "name": "",
@@ -27039,8 +28684,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Lash Out (WorldsBeyondNumberWitch)\n• Lurk (WorldsBeyondNumberWitch)\n• Red in Tooth and Claw (WorldsBeyondNumberWitch)\n• Steady Will (WorldsBeyondNumberWitch)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "Lash Out (WorldsBeyondNumberWitch)",
+        "Lurk (WorldsBeyondNumberWitch)",
+        "Red in Tooth and Claw (WorldsBeyondNumberWitch)",
+        "Steady Will (WorldsBeyondNumberWitch)"
+       ]
+      }
      }
     ]
    },
@@ -27060,6 +28714,7 @@
       "name": "Coven of the Green Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Coven of the Green Spells",
        "headers": [
         "Witch Level",
@@ -27107,8 +28762,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• ***Deep Roots.*** Whenever creatures of your choice in the Emanation make a Strength or Constitution saving throw, they add 1d4 to the save.\n• ***Green Dreams.*** At the end of your turn, you can force one creature in the Emanation to succeed on a Constitution saving throw against your spell save DC or gain 1 Exhaustion level, to a maximum of 1 level. This maximum increases when you reach Witch levels 5 (2 levels), 9 (3 levels), 13 (4 levels) and 17 (5 levels).\n• ***Tangled Tread.*** The ground in the Emanation is Difficult Terrain for your enemies. When you move or this effect ends, the ground you affected is covered in moss."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "***Deep Roots.*** Whenever creatures of your choice in the Emanation make a Strength or Constitution saving throw, they add 1d4 to the save.",
+        "***Green Dreams.*** At the end of your turn, you can force one creature in the Emanation to succeed on a Constitution saving throw against your spell save DC or gain 1 Exhaustion level, to a maximum of 1 level. This maximum increases when you reach Witch levels 5 (2 levels), 9 (3 levels), 13 (4 levels) and 17 (5 levels).",
+        "***Tangled Tread.*** The ground in the Emanation is Difficult Terrain for your enemies. When you move or this effect ends, the ground you affected is covered in moss."
+       ]
+      }
      },
      {
       "name": "",
@@ -27129,8 +28792,21 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Elixir of Health\n• Potion of Animal Friendship\n• Potion of Fire Breath\n• Potion of Growth\n• Potion of Healing\n• Potion of Mind Reading\n• Potion of Resistance (you choose the damage type for a potion when you create it)\n• Potion of Water Breathing"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Elixir of Health",
+        "Potion of Animal Friendship",
+        "Potion of Fire Breath",
+        "Potion of Growth",
+        "Potion of Healing",
+        "Potion of Mind Reading",
+        "Potion of Resistance (you choose the damage type for a potion when you create it)",
+        "Potion of Water Breathing"
+       ]
+      }
      },
      {
       "name": "",
@@ -27158,8 +28834,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• ***Deep Roots.*** At the end of your turn, you can choose one creature in the Emanation to gain Half Cover until the start of your next turn or until it leaves the Emanation.\n• ***Green Dreams.*** When a creature fails the Constitution saving throw for this effect, it gains 2 Exhaustion levels instead of 1. If it fails the saving throw by 5 or more, it gains the Incapacitated condition until the end of its next turn.\n• ***Tangled Tread.*** When an enemy attempts to move out of the Emanation, it must succeed on a Strength saving throw against your spell save DC or be unable to move outside the area this turn."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "***Deep Roots.*** At the end of your turn, you can choose one creature in the Emanation to gain Half Cover until the start of your next turn or until it leaves the Emanation.",
+        "***Green Dreams.*** When a creature fails the Constitution saving throw for this effect, it gains 2 Exhaustion levels instead of 1. If it fails the saving throw by 5 or more, it gains the Incapacitated condition until the end of its next turn.",
+        "***Tangled Tread.*** When an enemy attempts to move out of the Emanation, it must succeed on a Strength saving throw against your spell save DC or be unable to move outside the area this turn."
+       ]
+      }
      }
     ]
    },
@@ -27179,6 +28863,7 @@
       "name": "Coven of the Heart Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Coven of the Heart Spells",
        "headers": [
         "Witch Level",
@@ -27313,6 +28998,7 @@
       "name": "Coven of the Wicked Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Coven of the Wicked Spells",
        "headers": [
         "Witch Level",
@@ -27416,8 +29102,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Any Critical Hit against you that doesn't include Radiant damage is a normal hit instead.\n• You have Advantage on saving throws to avoid or end the Poisoned and Stunned conditions.\n• You can see normally in Darkness, both magical and nonmagical, out to a distance of 60 feet.\n• Nonmagical plants within 30 feet of you wither after 1 hour in your presence. If you live in one location for at least a year, nonmagical plants within 5 miles of that place wither and the soil becomes barren."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Any Critical Hit against you that doesn't include Radiant damage is a normal hit instead.",
+        "You have Advantage on saving throws to avoid or end the Poisoned and Stunned conditions.",
+        "You can see normally in Darkness, both magical and nonmagical, out to a distance of 60 feet.",
+        "Nonmagical plants within 30 feet of you wither after 1 hour in your presence. If you live in one location for at least a year, nonmagical plants within 5 miles of that place wither and the soil becomes barren."
+       ]
+      }
      }
     ]
    },
@@ -27442,6 +29137,7 @@
       "name": "Fragrant Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Fragrant Spells",
        "headers": [
         "Witch Level",
@@ -27551,6 +29247,7 @@
       "name": "Gingerbread Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Gingerbread Spells",
        "headers": [
         "Witch Level",
@@ -27588,8 +29285,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Blindsight**: Your familiar has Blindsight with a range of 10 feet.\n• **Distracting Aroma**: An enemy within 5 feet of the familiar that can see and smell it has Disadvantage on attack rolls against creatures other than it.\n• **Fragile**: Your familiar only adds your Witch level, instead of twice your Witch level, to its Hit Point maximum."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Blindsight**: Your familiar has Blindsight with a range of 10 feet.",
+        "**Distracting Aroma**: An enemy within 5 feet of the familiar that can see and smell it has Disadvantage on attack rolls against creatures other than it.",
+        "**Fragile**: Your familiar only adds your Witch level, instead of twice your Witch level, to its Hit Point maximum."
+       ]
+      }
      }
     ],
     "6": [
@@ -27650,6 +29355,7 @@
       "name": "Green Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Green Magic Spells",
        "headers": [
         "Witch Level",
@@ -27739,6 +29445,7 @@
       "name": "Lunar Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Lunar Spells",
        "headers": [
         "Witch Level",
@@ -27797,6 +29504,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "1d6",
@@ -27863,6 +29571,7 @@
       "name": "Purple Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Purple Magic Spells",
        "headers": [
         "Witch Level",
@@ -27957,6 +29666,7 @@
       "name": "Red Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Red Magic Spells",
        "headers": [
         "Witch Level",
@@ -28046,6 +29756,7 @@
       "name": "Sky Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Sky Spells",
        "headers": [
         "Witch Level",
@@ -28165,6 +29876,7 @@
       "name": "Steel Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Steel Spells",
        "headers": [
         "Witch Level",
@@ -28264,6 +29976,7 @@
       "name": "Tea Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Tea Spells",
        "headers": [
         "Witch Level",
@@ -28363,6 +30076,7 @@
       "name": "Technicolor Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Technicolor Spells",
        "headers": [
         "Witch Level",
@@ -28477,6 +30191,7 @@
       "name": "White Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "White Magic Spells",
        "headers": [
         "Witch Level",
@@ -28557,13 +30272,72 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Witch HP: 8 + Con. mod\n• HP per Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Witch HP: 8 + Con. mod",
+      "HP per Witch level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Wisdom and Charisma\n• Armor Proficiencies: Light armor\n• Tool Proficiencies: Two Types Of Artisan's Tools\n• Weapon Proficiencies: Simple weapons\n• Skill Proficiencies: Choose 2: Animal Handling, Arcana, Insight, Intimidation, Medicine, Nature, Perception, Persuasion or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Wisdom",
+      "Charisma"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Tool Proficiencies",
+     "entries": [
+      "Two types of artisan's tools"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Animal Handling, Arcana, Insight, Intimidation, Medicine, Nature, Perception, Persuasion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -28573,7 +30347,18 @@
    {
     "name": "Multiclassing",
     "type": "text",
-    "value": "Ability requirements: At least 13 Wisdom \n• Armor Proficiencies: Light armor"
+    "value": "Ability requirements: At least 13 Wisdom "
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -28884,6 +30669,7 @@
      "name": "Curse Spells",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Curse Spells",
       "headers": [
        "Spell Level",
@@ -29037,8 +30823,16 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• **Harm.** The creature attacks or deals damage to you, your familiar, or a creature holding a token or talisman you created.\n• **Threat.** The creature forces you to make a saving throw.\n• **Betrayal.** The creature intentionally breaks a promise to you."
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "**Harm.** The creature attacks or deals damage to you, your familiar, or a creature holding a token or talisman you created.",
+       "**Threat.** The creature forces you to make a saving throw.",
+       "**Betrayal.** The creature intentionally breaks a promise to you."
+      ]
+     }
     },
     {
      "name": "",
@@ -29047,8 +30841,17 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• **Bloodguilt.** The first time on a turn that the target deals damage to another creature, it takes Psychic damage equal to 1d6 + your Proficiency Bonus.\n• **Leaden Shoes.** The target's movement speed is reduced to 5 feet and it can't make Opportunity Attack.\n• **Uncanny Jinx.** Whenever the target makes a D20 Test, it must subtract 1d4 from the total.\n• **Vengeful Gleam.** The target glows with a green witch-light that sheds Dim Light in a 5-foot radius. It can't benefit from the Invisible condition, and attacks against it have Advantage if the attacker can see it."
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "**Bloodguilt.** The first time on a turn that the target deals damage to another creature, it takes Psychic damage equal to 1d6 + your Proficiency Bonus.",
+       "**Leaden Shoes.** The target's movement speed is reduced to 5 feet and it can't make Opportunity Attack.",
+       "**Uncanny Jinx.** Whenever the target makes a D20 Test, it must subtract 1d4 from the total.",
+       "**Vengeful Gleam.** The target glows with a green witch-light that sheds Dim Light in a 5-foot radius. It can't benefit from the Invisible condition, and attacks against it have Advantage if the attacker can see it."
+      ]
+     }
     },
     {
      "name": "",
@@ -29120,6 +30923,7 @@
      "name": "Common and Uncommon Items",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Common and Uncommon Items",
       "headers": [
        "Magic Item",
@@ -29201,6 +31005,7 @@
      "name": "Rare Items",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Rare Items",
       "headers": [
        "Magic Item",
@@ -29302,8 +31107,17 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "• **Shared Suffering.** The target has the Poisoned condition for 1 minute. Each time it casts a spell or forces another creature to make a saving throw, it takes 1d8 + your Proficiency Bonus Poison damage.\n• **Enervation.** The target subtracts 1d8 from all its damage rolls.\n• **Muzzle.** The target can't use bite attacks or breath weapons, and it can't cast spells that require Verbal components.\n• **Painful Reflection.** The next time the target deals damage to a creature, it gains Vulnerability to one type of damage dealt (your choice) until the curse ends."
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "**Shared Suffering.** The target has the Poisoned condition for 1 minute. Each time it casts a spell or forces another creature to make a saving throw, it takes 1d8 + your Proficiency Bonus Poison damage.",
+       "**Enervation.** The target subtracts 1d8 from all its damage rolls.",
+       "**Muzzle.** The target can't use bite attacks or breath weapons, and it can't cast spells that require Verbal components.",
+       "**Painful Reflection.** The next time the target deals damage to a creature, it gains Vulnerability to one type of damage dealt (your choice) until the curse ends."
+      ]
+     }
     }
    ],
    "10": [
@@ -29409,6 +31223,7 @@
       "name": "Black Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Black Magic Spells",
        "headers": [
         "Witch Level",
@@ -29503,6 +31318,7 @@
       "name": "Blood Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Blood Spells",
        "headers": [
         "Witch Level",
@@ -29571,6 +31387,7 @@
       "name": "Hemomantic Recovery",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Hemomantic Recovery",
        "headers": [
         "Spell Level",
@@ -29700,6 +31517,7 @@
       "name": "Coven of the Claw Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Coven of the Claw Spells",
        "headers": [
         "Witch Level",
@@ -29732,8 +31550,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• You have Advantage on the first attack roll against it you make on a turn.\n• You don't provoke Opportunity Attack from it.\n• You have Advantage on any Wisdom (*Perception* or *Survival*) check you make to find it."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "You have Advantage on the first attack roll against it you make on a turn.",
+        "You don't provoke Opportunity Attack from it.",
+        "You have Advantage on any Wisdom (*Perception* or *Survival*) check you make to find it."
+       ]
+      }
      },
      {
       "name": "",
@@ -29747,8 +31573,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• While you aren't wearing Medium or Heavy armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Wisdom modifiers.\n• Your Hit Point maximum increases by 2, and each time you gain a level in the witch class your Hit Point maximum increases by an additional 1 Hit Point.\n• You can use Wisdom instead of Strength or Dexterity for your weapon attack and damage rolls, including unarmed strikes."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "While you aren't wearing Medium or Heavy armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Wisdom modifiers.",
+        "Your Hit Point maximum increases by 2, and each time you gain a level in the witch class your Hit Point maximum increases by an additional 1 Hit Point.",
+        "You can use Wisdom instead of Strength or Dexterity for your weapon attack and damage rolls, including unarmed strikes."
+       ]
+      }
      },
      {
       "name": "",
@@ -29793,8 +31627,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "Choose **1**:\n• Lash Out (WorldsBeyondNumberWitch)\n• Lurk (WorldsBeyondNumberWitch)\n• Red in Tooth and Claw (WorldsBeyondNumberWitch)\n• Steady Will (WorldsBeyondNumberWitch)"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "Choose **1**:",
+       "entries": [
+        "Lash Out (WorldsBeyondNumberWitch)",
+        "Lurk (WorldsBeyondNumberWitch)",
+        "Red in Tooth and Claw (WorldsBeyondNumberWitch)",
+        "Steady Will (WorldsBeyondNumberWitch)"
+       ]
+      }
      }
     ]
    },
@@ -29814,6 +31657,7 @@
       "name": "Coven of the Green Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Coven of the Green Spells",
        "headers": [
         "Witch Level",
@@ -29861,8 +31705,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• ***Deep Roots.*** Whenever creatures of your choice in the Emanation make a Strength or Constitution saving throw, they add 1d4 to the save.\n• ***Green Dreams.*** At the end of your turn, you can force one creature in the Emanation to succeed on a Constitution saving throw against your spell save DC or gain 1 Exhaustion level, to a maximum of 1 level. This maximum increases when you reach Witch levels 5 (2 levels), 9 (3 levels), 13 (4 levels) and 17 (5 levels).\n• ***Tangled Tread.*** The ground in the Emanation is Difficult Terrain for your enemies. When you move or this effect ends, the ground you affected is covered in moss."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "***Deep Roots.*** Whenever creatures of your choice in the Emanation make a Strength or Constitution saving throw, they add 1d4 to the save.",
+        "***Green Dreams.*** At the end of your turn, you can force one creature in the Emanation to succeed on a Constitution saving throw against your spell save DC or gain 1 Exhaustion level, to a maximum of 1 level. This maximum increases when you reach Witch levels 5 (2 levels), 9 (3 levels), 13 (4 levels) and 17 (5 levels).",
+        "***Tangled Tread.*** The ground in the Emanation is Difficult Terrain for your enemies. When you move or this effect ends, the ground you affected is covered in moss."
+       ]
+      }
      },
      {
       "name": "",
@@ -29883,8 +31735,21 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Elixir of Health\n• Potion of Animal Friendship\n• Potion of Fire Breath\n• Potion of Growth\n• Potion of Healing\n• Potion of Mind Reading\n• Potion of Resistance (you choose the damage type for a potion when you create it)\n• Potion of Water Breathing"
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Elixir of Health",
+        "Potion of Animal Friendship",
+        "Potion of Fire Breath",
+        "Potion of Growth",
+        "Potion of Healing",
+        "Potion of Mind Reading",
+        "Potion of Resistance (you choose the damage type for a potion when you create it)",
+        "Potion of Water Breathing"
+       ]
+      }
      },
      {
       "name": "",
@@ -29912,8 +31777,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• ***Deep Roots.*** At the end of your turn, you can choose one creature in the Emanation to gain Half Cover until the start of your next turn or until it leaves the Emanation.\n• ***Green Dreams.*** When a creature fails the Constitution saving throw for this effect, it gains 2 Exhaustion levels instead of 1. If it fails the saving throw by 5 or more, it gains the Incapacitated condition until the end of its next turn.\n• ***Tangled Tread.*** When an enemy attempts to move out of the Emanation, it must succeed on a Strength saving throw against your spell save DC or be unable to move outside the area this turn."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "***Deep Roots.*** At the end of your turn, you can choose one creature in the Emanation to gain Half Cover until the start of your next turn or until it leaves the Emanation.",
+        "***Green Dreams.*** When a creature fails the Constitution saving throw for this effect, it gains 2 Exhaustion levels instead of 1. If it fails the saving throw by 5 or more, it gains the Incapacitated condition until the end of its next turn.",
+        "***Tangled Tread.*** When an enemy attempts to move out of the Emanation, it must succeed on a Strength saving throw against your spell save DC or be unable to move outside the area this turn."
+       ]
+      }
      }
     ]
    },
@@ -29933,6 +31806,7 @@
       "name": "Coven of the Heart Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Coven of the Heart Spells",
        "headers": [
         "Witch Level",
@@ -30067,6 +31941,7 @@
       "name": "Coven of the Wicked Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Coven of the Wicked Spells",
        "headers": [
         "Witch Level",
@@ -30170,8 +32045,17 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• Any Critical Hit against you that doesn't include Radiant damage is a normal hit instead.\n• You have Advantage on saving throws to avoid or end the Poisoned and Stunned conditions.\n• You can see normally in Darkness, both magical and nonmagical, out to a distance of 60 feet.\n• Nonmagical plants within 30 feet of you wither after 1 hour in your presence. If you live in one location for at least a year, nonmagical plants within 5 miles of that place wither and the soil becomes barren."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Any Critical Hit against you that doesn't include Radiant damage is a normal hit instead.",
+        "You have Advantage on saving throws to avoid or end the Poisoned and Stunned conditions.",
+        "You can see normally in Darkness, both magical and nonmagical, out to a distance of 60 feet.",
+        "Nonmagical plants within 30 feet of you wither after 1 hour in your presence. If you live in one location for at least a year, nonmagical plants within 5 miles of that place wither and the soil becomes barren."
+       ]
+      }
      }
     ]
    },
@@ -30196,6 +32080,7 @@
       "name": "Fragrant Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Fragrant Spells",
        "headers": [
         "Witch Level",
@@ -30305,6 +32190,7 @@
       "name": "Gingerbread Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Gingerbread Spells",
        "headers": [
         "Witch Level",
@@ -30342,8 +32228,16 @@
      },
      {
       "name": "",
-      "type": "text",
-      "value": "• **Blindsight**: Your familiar has Blindsight with a range of 10 feet.\n• **Distracting Aroma**: An enemy within 5 feet of the familiar that can see and smell it has Disadvantage on attack rolls against creatures other than it.\n• **Fragile**: Your familiar only adds your Witch level, instead of twice your Witch level, to its Hit Point maximum."
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Blindsight**: Your familiar has Blindsight with a range of 10 feet.",
+        "**Distracting Aroma**: An enemy within 5 feet of the familiar that can see and smell it has Disadvantage on attack rolls against creatures other than it.",
+        "**Fragile**: Your familiar only adds your Witch level, instead of twice your Witch level, to its Hit Point maximum."
+       ]
+      }
      }
     ],
     "6": [
@@ -30404,6 +32298,7 @@
       "name": "Green Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Green Magic Spells",
        "headers": [
         "Witch Level",
@@ -30493,6 +32388,7 @@
       "name": "Lunar Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Lunar Spells",
        "headers": [
         "Witch Level",
@@ -30551,6 +32447,7 @@
       "name": "",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "",
        "headers": [
         "1d6",
@@ -30617,6 +32514,7 @@
       "name": "Purple Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Purple Magic Spells",
        "headers": [
         "Witch Level",
@@ -30711,6 +32609,7 @@
       "name": "Red Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Red Magic Spells",
        "headers": [
         "Witch Level",
@@ -30800,6 +32699,7 @@
       "name": "Sky Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Sky Spells",
        "headers": [
         "Witch Level",
@@ -30919,6 +32819,7 @@
       "name": "Steel Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Steel Spells",
        "headers": [
         "Witch Level",
@@ -31018,6 +32919,7 @@
       "name": "Tea Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Tea Spells",
        "headers": [
         "Witch Level",
@@ -31117,6 +33019,7 @@
       "name": "Technicolor Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "Technicolor Spells",
        "headers": [
         "Witch Level",
@@ -31231,6 +33134,7 @@
       "name": "White Magic Spells",
       "type": "table",
       "table": {
+       "type": "table",
        "title": "White Magic Spells",
        "headers": [
         "Witch Level",

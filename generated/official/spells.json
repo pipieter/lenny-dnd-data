@@ -441,8 +441,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Audible Alarm**: The alarm produces the sound of a handbell for 10 seconds within 60 feet of the warded area.\n• **Mental Alarm**: You are alerted by a mental ping if you are within 1 mile of the warded area. This ping awakens you if you're asleep."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Audible Alarm**: The alarm produces the sound of a handbell for 10 seconds within 60 feet of the warded area.",
+      "**Mental Alarm**: You are alerted by a mental ping if you are within 1 mile of the warded area. This ping awakens you if you're asleep."
+     ]
+    }
    }
   ],
   "classes": [
@@ -580,8 +587,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Liberation**: When you fail a saving throw to avoid or end the Frightened, Grappled, or Restrained condition, you can take a Reaction to succeed on the save instead.\n• **Respite**: As a Magic action, you or an ally within the area regains Hit Points equal to 4d10 plus your spellcasting ability modifier."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Liberation**: When you fail a saving throw to avoid or end the Frightened, Grappled, or Restrained condition, you can take a Reaction to succeed on the save instead.",
+      "**Respite**: As a Magic action, you or an ally within the area regains Hit Points equal to 4d10 plus your spellcasting ability modifier."
+     ]
+    }
    }
   ],
   "classes": [
@@ -959,6 +973,7 @@
     "name": "Animated Object Statistics",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Animated Object Statistics",
      "headers": [
       "Size",
@@ -1407,8 +1422,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Antipathy**: The creature has the Frightened condition. The Frightened creature must use its movement on its turns to get as far away as possible from the target, moving by the safest route.\n• **Sympathy**: The creature has the Charmed condition. The Charmed creature must use its movement on its turns to get as close as possible to the target, moving by the safest route. If the creature is within 5 feet of the target, the creature can't willingly move away. If the target damages the Charmed creature, that creature can make a Wisdom saving throw to end the effect, as described below."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Antipathy**: The creature has the Frightened condition. The Frightened creature must use its movement on its turns to get as far away as possible from the target, moving by the safest route.",
+      "**Sympathy**: The creature has the Charmed condition. The Charmed creature must use its movement on its turns to get as close as possible to the target, moving by the safest route. If the creature is within 5 feet of the target, the creature can't willingly move away. If the target damages the Charmed creature, that creature can make a Wisdom saving throw to end the effect, as described below."
+     ]
+    }
    },
    {
     "name": "Ending the Effect",
@@ -2004,8 +2026,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Weal, for good results\n• Woe, for bad results\n• Weal and woe, for both good and bad results\n• Nothing, for results that aren't especially good or bad"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Weal, for good results",
+      "Woe, for bad results",
+      "Weal and woe, for both good and bad results",
+      "Nothing, for results that aren't especially good or bad"
+     ]
+    }
    },
    {
     "name": "",
@@ -2064,6 +2095,7 @@
     "name": "Omens",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Omens",
      "headers": [
       "Omen",
@@ -2900,8 +2932,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.\n• While cursed, the target has disadvantage on attack rolls against you.\n• While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.\n• While the target is cursed, your attacks and spells deal an extra **1d8** necrotic damage to the target."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.",
+      "While cursed, the target has disadvantage on attack rolls against you.",
+      "While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.",
+      "While the target is cursed, your attacks and spells deal an extra **1d8** necrotic damage to the target."
+     ]
+    }
    },
    {
     "name": "",
@@ -2948,8 +2989,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Choose one ability. The target has Disadvantage on ability checks and saving throws made with that ability.\n• The target has Disadvantage on attack rolls against you.\n• In combat, the target must succeed on a Wisdom saving throw at the start of each of its turns or be forced to take the Dodge action on that turn.\n• If you deal damage to the target with an attack roll or a spell, the target takes an extra **1d8** Necrotic damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Choose one ability. The target has Disadvantage on ability checks and saving throws made with that ability.",
+      "The target has Disadvantage on attack rolls against you.",
+      "In combat, the target must succeed on a Wisdom saving throw at the start of each of its turns or be forced to take the Dodge action on that turn.",
+      "If you deal damage to the target with an attack roll or a spell, the target takes an extra **1d8** Necrotic damage."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -3069,8 +3119,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Clenched Fist**: The hand strikes a target within 5 feet of it. Make a melee spell attack. On a hit, the target takes **5d8** Force damage.\n• **Forceful Hand**: The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it.\n• **Grasping Hand**: The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the Grappled condition, with an escape DC equal to your spell save DC. While the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to **4d6** plus your spellcasting ability modifier.\n• **Interposing Hand**: The hand grants you Half Cover against attacks and other effects that originate from its space or that pass through it. In addition, its space counts as Difficult Terrain for your enemies."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Clenched Fist**: The hand strikes a target within 5 feet of it. Make a melee spell attack. On a hit, the target takes **5d8** Force damage.",
+      "**Forceful Hand**: The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it.",
+      "**Grasping Hand**: The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the Grappled condition, with an escape DC equal to your spell save DC. While the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to **4d6** plus your spellcasting ability modifier.",
+      "**Interposing Hand**: The hand grants you Half Cover against attacks and other effects that originate from its space or that pass through it. In addition, its space counts as Difficult Terrain for your enemies."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -4247,8 +4306,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The creature has Immunity to the Charmed and Frightened conditions until the spell ends. If the creature was already Charmed or Frightened, those conditions are suppressed for the duration.\n• The creature becomes Indifferent about creatures of your choice that it's Hostile toward. This indifference ends if the target takes damage or witnesses its allies taking damage. When the spell ends, the creature's attitude returns to normal."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The creature has Immunity to the Charmed and Frightened conditions until the spell ends. If the creature was already Charmed or Frightened, those conditions are suppressed for the duration.",
+      "The creature becomes Indifferent about creatures of your choice that it's Hostile toward. This indifference ends if the target takes damage or witnesses its allies taking damage. When the spell ends, the creature's attitude returns to normal."
+     ]
+    }
    }
   ],
   "classes": [
@@ -4580,6 +4646,7 @@
     "name": "Chaos Bolt",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Chaos Bolt",
      "headers": [
       "d8",
@@ -5608,8 +5675,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Approach**: The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.\n• **Drop**: The target drops whatever it is holding and then ends its turn.\n• **Flee**: The target spends its turn moving away from you by the fastest available means.\n• **Grovel**: The target has the Prone condition and then ends its turn.\n• **Halt**: On its turn, the target doesn't move and takes no action or Bonus Action."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Approach**: The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.",
+      "**Drop**: The target drops whatever it is holding and then ends its turn.",
+      "**Flee**: The target spends its turn moving away from you by the fastest available means.",
+      "**Grovel**: The target has the Prone condition and then ends its turn.",
+      "**Halt**: On its turn, the target doesn't move and takes no action or Bonus Action."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -5726,8 +5803,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• terrain and bodies of water\n• prevalent plants, minerals, animals, or peoples\n• powerful celestials, fey, fiends, elementals, or undead\n• influence from other planes of existence\n• buildings"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "terrain and bodies of water",
+      "prevalent plants, minerals, animals, or peoples",
+      "powerful celestials, fey, fiends, elementals, or undead",
+      "influence from other planes of existence",
+      "buildings"
+     ]
+    }
    },
    {
     "name": "",
@@ -5770,8 +5857,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Locations of settlements\n• Locations of portals to other planes of existence\n• Location of one Challenge Rating 10+ creature (DM's choice) that is a Celestial, an Elemental, a Fey, a Fiend, or an Undead\n• The most prevalent kind of plant, mineral, or Beast (you choose which to learn)\n• Locations of bodies of water"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Locations of settlements",
+      "Locations of portals to other planes of existence",
+      "Location of one Challenge Rating 10+ creature (DM's choice) that is a Celestial, an Elemental, a Fey, a Fiend, or an Undead",
+      "The most prevalent kind of plant, mineral, or Beast (you choose which to learn)",
+      "Locations of bodies of water"
+     ]
+    }
    },
    {
     "name": "",
@@ -6101,6 +6198,7 @@
     "name": "Confusion Behavior",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Confusion Behavior",
      "headers": [
       "d10",
@@ -6177,6 +6275,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "1d10",
@@ -6246,8 +6345,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• One beast of challenge rating 2 or lower\n• Two beasts of challenge rating 1 or lower\n• Four beasts of challenge rating 1/2 or lower\n• Eight beasts of challenge rating 1/4 or lower"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "One beast of challenge rating 2 or lower",
+      "Two beasts of challenge rating 1 or lower",
+      "Four beasts of challenge rating 1/2 or lower",
+      "Eight beasts of challenge rating 1/4 or lower"
+     ]
+    }
    },
    {
     "name": "",
@@ -6439,8 +6547,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Healing Light**: The target regains Hit Points equal to 4d12 plus your spellcasting ability modifier.\n• **Searing Light**: The target makes a Dexterity saving throw, taking **6d12** Radiant damage on a failed save or half as much damage on a successful one."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Healing Light**: The target regains Hit Points equal to 4d12 plus your spellcasting ability modifier.",
+      "**Searing Light**: The target makes a Dexterity saving throw, taking **6d12** Radiant damage on a failed save or half as much damage on a successful one."
+     ]
+    }
    },
    {
     "name": "",
@@ -6484,8 +6599,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Clockwork Force**: The target makes a Dexterity saving throw, taking **3d6** Force damage on a failed save or half as much damage on a successful one.\n• **Orderly Ward**: The target gains Temporary Hit Points equal to 1d6 plus your spellcasting ability modifier."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Clockwork Force**: The target makes a Dexterity saving throw, taking **3d6** Force damage on a failed save or half as much damage on a successful one.",
+      "**Orderly Ward**: The target gains Temporary Hit Points equal to 1d6 plus your spellcasting ability modifier."
+     ]
+    }
    },
    {
     "name": "",
@@ -6696,8 +6818,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• One elemental of challenge rating 2 or lower\n• Two elementals of challenge rating 1 or lower\n• Four elementals of challenge rating 1/2 or lower\n• Eight elementals of challenge rating 1/4 or lower."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "One elemental of challenge rating 2 or lower",
+      "Two elementals of challenge rating 1 or lower",
+      "Four elementals of challenge rating 1/2 or lower",
+      "Eight elementals of challenge rating 1/4 or lower."
+     ]
+    }
    },
    {
     "name": "",
@@ -6839,8 +6970,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• One fey creature of challenge rating 2 or lower\n• Two fey creatures of challenge rating 1 or lower\n• Four fey creatures of challenge rating 1/2 or lower\n• Eight fey creatures of challenge rating 1/4 or lower"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "One fey creature of challenge rating 2 or lower",
+      "Two fey creatures of challenge rating 1 or lower",
+      "Four fey creatures of challenge rating 1/2 or lower",
+      "Eight fey creatures of challenge rating 1/4 or lower"
+     ]
+    }
    },
    {
     "name": "",
@@ -7252,8 +7392,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.\n• You instantaneously extinguish the flames within the cube.\n• You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.\n• You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.",
+      "You instantaneously extinguish the flames within the cube.",
+      "You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.",
+      "You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour."
+     ]
+    }
    },
    {
     "name": "",
@@ -7450,6 +7599,7 @@
     "name": "Precipitation",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Precipitation",
      "headers": [
       "Stage",
@@ -7483,6 +7633,7 @@
     "name": "Temperature",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Temperature",
      "headers": [
       "Stage",
@@ -7520,6 +7671,7 @@
     "name": "Wind",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Wind",
      "headers": [
       "Stage",
@@ -7596,6 +7748,7 @@
     "name": "Precipitation",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Precipitation",
      "headers": [
       "Stage",
@@ -7629,6 +7782,7 @@
     "name": "Temperature",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Temperature",
      "headers": [
       "Stage",
@@ -7666,6 +7820,7 @@
     "name": "Wind",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Wind",
      "headers": [
       "Stage",
@@ -8186,8 +8341,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Create Water**: You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot Cube within range, extinguishing exposed flames there.\n• **Destroy Water**: You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot Cube within range."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Create Water**: You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot Cube within range, extinguishing exposed flames there.",
+      "**Destroy Water**: You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot Cube within range."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -8366,6 +8528,7 @@
     "name": "Creation",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Creation",
      "headers": [
       "Material",
@@ -8442,6 +8605,7 @@
     "name": "Materials",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Materials",
      "headers": [
       "Material",
@@ -10853,8 +11017,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• 50 hit points or fewer: deafened for 1 minute\n• 40 hit points or fewer: deafened and blinded for 10 minutes\n• 30 hit points or fewer: blinded, deafened, and stunned for 1 hour\n• 20 hit points or fewer: killed instantly"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "50 hit points or fewer: deafened for 1 minute",
+      "40 hit points or fewer: deafened and blinded for 10 minutes",
+      "30 hit points or fewer: blinded, deafened, and stunned for 1 hour",
+      "20 hit points or fewer: killed instantly"
+     ]
+    }
    },
    {
     "name": "",
@@ -10890,6 +11063,7 @@
     "name": "Divine Word Effects",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Divine Word Effects",
      "headers": [
       "Hit Points",
@@ -11306,8 +11480,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Blindsight**: You have blindsight with a range of 30 feet. Within that range, you can effectively see anything that isn't behind Cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature, unless the creature successfully hides from you.\n• **Breath Weapon**: When you cast this spell, and as a bonus action on subsequent turns for the duration, you can exhale shimmering energy in a 60-foot cone. Each creature in that area must make a Dexterity saving throw, taking **6d8** force damage on a failed save, or half as much damage on a successful one.\n• **Wings**: Incorporeal wings sprout from your back, giving you a flying speed of 60 feet."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Blindsight**: You have blindsight with a range of 30 feet. Within that range, you can effectively see anything that isn't behind Cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature, unless the creature successfully hides from you.",
+      "**Breath Weapon**: When you cast this spell, and as a bonus action on subsequent turns for the duration, you can exhale shimmering energy in a 60-foot cone. Each creature in that area must make a Dexterity saving throw, taking **6d8** force damage on a failed save, or half as much damage on a successful one.",
+      "**Wings**: Incorporeal wings sprout from your back, giving you a flying speed of 60 feet."
+     ]
+    }
    }
   ],
   "classes": [
@@ -11672,8 +11854,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• A constant __gust of wind__ in two locations of your choice\n• __Spike growth__ in one location of your choice\n• __Wind wall__ in two locations of your choice"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A constant __gust of wind__ in two locations of your choice",
+      "__Spike growth__ in one location of your choice",
+      "__Wind wall__ in two locations of your choice"
+     ]
+    }
    },
    {
     "name": "",
@@ -11731,8 +11921,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.\n• You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.\n• You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.\n• You instantly light or snuff out a candle, a torch, or a small campfire."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.",
+      "You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.",
+      "You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.",
+      "You instantly light or snuff out a candle, a torch, or a small campfire."
+     ]
+    }
    }
   ],
   "classes": [
@@ -12363,8 +12562,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Absorb Energy**: When you take Acid, Cold, Fire, Lightning, or Thunder damage, you can take a Reaction to expend one sphere and give yourself Resistance to the triggering damage type until the start of your next turn.\n• **Energy Blast**: As a Bonus Action, you send one sphere hurtling toward a target within 120 feet of yourself. Make a ranged spell attack. On a hit, the target takes **3d6** Acid, Cold, Fire, Lightning, or Thunder damage (your choice). Regardless of whether you hit, the sphere is expended."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Absorb Energy**: When you take Acid, Cold, Fire, Lightning, or Thunder damage, you can take a Reaction to expend one sphere and give yourself Resistance to the triggering damage type until the start of your next turn.",
+      "**Energy Blast**: As a Bonus Action, you send one sphere hurtling toward a target within 120 feet of yourself. Make a ranged spell attack. On a hit, the target takes **3d6** Acid, Cold, Fire, Lightning, or Thunder damage (your choice). Regardless of whether you hit, the sphere is expended."
+     ]
+    }
    },
    {
     "name": "",
@@ -14887,8 +15093,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Cover**: The creature has Cover.\n• **Damage Resistance**: The creature has resistance to acid, cold, fire, lightning, and poison damage.\n• **Evasion**: If the creature is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Cover**: The creature has Cover.",
+      "**Damage Resistance**: The creature has resistance to acid, cold, fire, lightning, and poison damage.",
+      "**Evasion**: If the creature is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+     ]
+    }
    },
    {
     "name": "",
@@ -16223,8 +16437,20 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• A bedroom with a bed, chairs, chest, and magical fireplace\n• A study with desks, books, bookshelves, parchments, ink, and ink pens\n• A dining space with a table, chairs, magical fireplace, containers, and cooking utensils\n• A lounge with couches, armchairs, side tables and footstools\n• A washroom with toilets, washtubs, a magical brazier, and sauna benches\n• An observatory with a telescope and maps of the night sky\n• An unfurnished, empty room"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A bedroom with a bed, chairs, chest, and magical fireplace",
+      "A study with desks, books, bookshelves, parchments, ink, and ink pens",
+      "A dining space with a table, chairs, magical fireplace, containers, and cooking utensils",
+      "A lounge with couches, armchairs, side tables and footstools",
+      "A washroom with toilets, washtubs, a magical brazier, and sauna benches",
+      "An observatory with a telescope and maps of the night sky",
+      "An unfurnished, empty room"
+     ]
+    }
    },
    {
     "name": "",
@@ -17480,8 +17706,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• One effect that charmed or petrified the target\n• One curse, including the target's attunement to a cursed magic item\n• Any reduction to one of the target's ability scores\n• One effect reducing the target's hit point maximum"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "One effect that charmed or petrified the target",
+      "One curse, including the target's attunement to a cursed magic item",
+      "Any reduction to one of the target's ability scores",
+      "One effect reducing the target's hit point maximum"
+     ]
+    }
    }
   ],
   "classes": [
@@ -17526,8 +17761,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• 1 Exhaustion level\n• The Charmed or Petrified condition\n• A curse, including the target's Attunement to a cursed magic item\n• Any reduction to one of the target's ability scores\n• Any reduction to the target's Hit Point maximum"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "1 Exhaustion level",
+      "The Charmed or Petrified condition",
+      "A curse, including the target's Attunement to a cursed magic item",
+      "Any reduction to one of the target's ability scores",
+      "Any reduction to the target's Hit Point maximum"
+     ]
+    }
    }
   ],
   "classes": [
@@ -17714,13 +17959,31 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Your walking speed increases by 10 feet.\n• You gain darkvision with a range of 120 feet.\n• You make Strength-based attack rolls with advantage.\n• Your melee weapon attacks deal an extra **1d6** force damage on a hit."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your walking speed increases by 10 feet.",
+      "You gain darkvision with a range of 120 feet.",
+      "You make Strength-based attack rolls with advantage.",
+      "Your melee weapon attacks deal an extra **1d6** force damage on a hit."
+     ]
+    }
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You gain 10 temporary hit points.\n• You make Constitution saving throws with advantage.\n• You make Dexterity- and Wisdom-based attack rolls with advantage.\n• While you are on the ground, the ground within 15 feet of you is difficult terrain for your enemies."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain 10 temporary hit points.",
+      "You make Constitution saving throws with advantage.",
+      "You make Dexterity- and Wisdom-based attack rolls with advantage.",
+      "While you are on the ground, the ground within 15 feet of you is difficult terrain for your enemies."
+     ]
+    }
    },
    {
     "name": "Primal Beast",
@@ -17811,8 +18074,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Place __dancing lights__ in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.\n• Place __magic mouth__ in two locations.\n• Place __stinking cloud__ in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.\n• Place a constant __gust of wind__ in one corridor or room.\n• Place a __suggestion__ in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Place __dancing lights__ in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.",
+      "Place __magic mouth__ in two locations.",
+      "Place __stinking cloud__ in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.",
+      "Place a constant __gust of wind__ in one corridor or room.",
+      "Place a __suggestion__ in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally."
+     ]
+    }
    }
   ],
   "classes": [
@@ -17875,8 +18148,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• __Dancing Lights__ in four corridors, with a simple program that the lights repeat as long as Guards and Wards lasts\n• __Magic Mouth__ in two locations\n• __Stinking Cloud__ in two locations (the vapors return within 10 minutes if dispersed while Guards and Wards lasts)\n• __Gust of Wind__ in one corridor or room (the wind blows continuously while the spell lasts)\n• __Suggestion__ in one 5-foot square; any creature that enters that square receives the suggestion mentally"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Dancing Lights__ in four corridors, with a simple program that the lights repeat as long as Guards and Wards lasts",
+      "__Magic Mouth__ in two locations",
+      "__Stinking Cloud__ in two locations (the vapors return within 10 minutes if dispersed while Guards and Wards lasts)",
+      "__Gust of Wind__ in one corridor or room (the wind blows continuously while the spell lasts)",
+      "__Suggestion__ in one 5-foot square; any creature that enters that square receives the suggestion mentally"
+     ]
+    }
    }
   ],
   "classes": [
@@ -18035,8 +18318,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.\n• You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.\n• You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.",
+      "You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.",
+      "You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze."
+     ]
+    }
    }
   ],
   "classes": [
@@ -18344,8 +18635,23 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Courage**: Creatures of any types you choose can't gain the Frightened condition while in the area.\n• **Darkness**: Darkness fills the area. Normal light, as well as magical light created by spells of a level lower than this spell, can't illuminate the area.\n• **Daylight**: Bright light fills the area. Magical Darkness created by spells of a level lower than this spell can't extinguish the light.\n• **Peaceful Rest**: Dead bodies interred in the area can't be turned into Undead.\n• **Extradimensional Interference**: Creatures of any types you choose can't enter or exit the area using teleportation or interplanar travel.\n• **Fear**: Creatures of any types you choose have the Frightened condition while in the area.\n• **Resistance**: Creatures of any types you choose have Resistance to one damage type of your choice while in the area.\n• **Silence**: No sound can emanate from within the area, and no sound can reach into it.\n• **Tongues**: Creatures of any types you choose can communicate with any other creature in the area even if they don't share a common language.\n• **Vulnerability**: Creatures of any types you choose have Vulnerability to one damage type of your choice while in the area."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Courage**: Creatures of any types you choose can't gain the Frightened condition while in the area.",
+      "**Darkness**: Darkness fills the area. Normal light, as well as magical light created by spells of a level lower than this spell, can't illuminate the area.",
+      "**Daylight**: Bright light fills the area. Magical Darkness created by spells of a level lower than this spell can't extinguish the light.",
+      "**Peaceful Rest**: Dead bodies interred in the area can't be turned into Undead.",
+      "**Extradimensional Interference**: Creatures of any types you choose can't enter or exit the area using teleportation or interplanar travel.",
+      "**Fear**: Creatures of any types you choose have the Frightened condition while in the area.",
+      "**Resistance**: Creatures of any types you choose have Resistance to one damage type of your choice while in the area.",
+      "**Silence**: No sound can emanate from within the area, and no sound can reach into it.",
+      "**Tongues**: Creatures of any types you choose can communicate with any other creature in the area even if they don't share a common language.",
+      "**Vulnerability**: Creatures of any types you choose have Vulnerability to one damage type of your choice while in the area."
+     ]
+    }
    }
   ],
   "classes": [
@@ -20258,8 +20564,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Burial**: The target is entombed beneath the earth in a hollow globe of magical force that is just large enough to contain the target. Nothing can pass into or out of the globe.\n• **Chaining**: Chains firmly rooted in the ground hold the target in place. The target has the Restrained condition and can't be moved by any means.\n• **Hedged Prison**: The target is trapped in a demiplane that is warded against teleportation and planar travel. The demiplane is your choice of a labyrinth, a cage, a tower, or the like.\n• **Minimus Containment**: The target becomes 1 inch tall and is trapped inside an indestructible gemstone or a similar object. Light can pass through the gemstone (allowing the target to see out and other creatures to see in), but nothing else can pass through by any means.\n• **Slumber**: The target has the Unconscious condition and can't be awoken."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Burial**: The target is entombed beneath the earth in a hollow globe of magical force that is just large enough to contain the target. Nothing can pass into or out of the globe.",
+      "**Chaining**: Chains firmly rooted in the ground hold the target in place. The target has the Restrained condition and can't be moved by any means.",
+      "**Hedged Prison**: The target is trapped in a demiplane that is warded against teleportation and planar travel. The demiplane is your choice of a labyrinth, a cage, a tower, or the like.",
+      "**Minimus Containment**: The target becomes 1 inch tall and is trapped inside an indestructible gemstone or a similar object. Light can pass through the gemstone (allowing the target to see out and other creatures to see in), but nothing else can pass through by any means.",
+      "**Slumber**: The target has the Unconscious condition and can't be awoken."
+     ]
+    }
    },
    {
     "name": "Ending the Spell",
@@ -20766,8 +21082,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You are immune to fire damage and have resistance to cold damage.\n• Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes **1d10** fire damage.\n• You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes **4d8** fire damage on a failed save, or half as much damage on a successful one."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You are immune to fire damage and have resistance to cold damage.",
+      "Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes **1d10** fire damage.",
+      "You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes **4d8** fire damage on a failed save, or half as much damage on a successful one."
+     ]
+    }
    }
   ],
   "classes": [
@@ -20824,8 +21148,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You are immune to cold damage and have resistance to fire damage.\n• You can move across difficult terrain created by ice or snow without spending extra movement.\n• The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.\n• You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes **4d6** cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You are immune to cold damage and have resistance to fire damage.",
+      "You can move across difficult terrain created by ice or snow without spending extra movement.",
+      "The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.",
+      "You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes **4d6** cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn."
+     ]
+    }
    }
   ],
   "classes": [
@@ -20882,8 +21215,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.\n• You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked prone.\n• You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
+      "You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked prone.",
+      "You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn."
+     ]
+    }
    }
   ],
   "classes": [
@@ -20940,8 +21281,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Ranged weapon attacks made against you have disadvantage on the attack roll.\n• You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it.\n• You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes **2d10** bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Ranged weapon attacks made against you have disadvantage on the attack roll.",
+      "You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it.",
+      "You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes **2d10** bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube."
+     ]
+    }
    }
   ],
   "classes": [
@@ -21323,8 +21672,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Your walking speed increases by 10 feet.\n• You don't provoke opportunity attacks.\n• You can move through the space of another creature, and it doesn't count as difficult terrain. If you end your turn in another creature's space, you are shunted to the last unoccupied space you occupied, and you take **1d8** force damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your walking speed increases by 10 feet.",
+      "You don't provoke opportunity attacks.",
+      "You can move through the space of another creature, and it doesn't count as difficult terrain. If you end your turn in another creature's space, you are shunted to the last unoccupied space you occupied, and you take **1d8** force damage."
+     ]
+    }
    }
   ],
   "classes": [
@@ -22992,8 +23349,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The creature can't willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.\n• The creature has disadvantage on attack rolls against targets within the cylinder.\n• Targets within the cylinder can't be charmed, frightened, or possessed by the creature."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The creature can't willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.",
+      "The creature has disadvantage on attack rolls against targets within the cylinder.",
+      "Targets within the cylinder can't be charmed, frightened, or possessed by the creature."
+     ]
+    }
    },
    {
     "name": "",
@@ -23049,8 +23414,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The creature can't willingly enter the Cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.\n• The creature has Disadvantage on attack rolls against targets within the Cylinder.\n• Targets within the Cylinder can't be possessed by or gain the Charmed or Frightened condition from the creature."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The creature can't willingly enter the Cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a Charisma saving throw.",
+      "The creature has Disadvantage on attack rolls against targets within the Cylinder.",
+      "Targets within the Cylinder can't be possessed by or gain the Charmed or Frightened condition from the creature."
+     ]
+    }
    },
    {
     "name": "",
@@ -25436,8 +25809,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage.\n• You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.\n• If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage.",
+      "You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.",
+      "If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour."
+     ]
+    }
    },
    {
     "name": "",
@@ -25747,8 +26128,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Sound can't pass through the barrier at the edge of the warded area.\n• The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it.\n• Sensors created by divination spells can't appear inside the protected area or pass through the barrier at its perimeter.\n• Creatures in the area can't be targeted by divination spells.\n• Nothing can teleport into or out of the warded area.\n• Planar travel is blocked within the warded area."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Sound can't pass through the barrier at the edge of the warded area.",
+      "The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it.",
+      "Sensors created by divination spells can't appear inside the protected area or pass through the barrier at its perimeter.",
+      "Creatures in the area can't be targeted by divination spells.",
+      "Nothing can teleport into or out of the warded area.",
+      "Planar travel is blocked within the warded area."
+     ]
+    }
    },
    {
     "name": "",
@@ -25796,8 +26188,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Sound can't pass through the barrier at the edge of the warded area.\n• The barrier of the warded area appears dark and foggy, preventing vision (including Darkvision) through it.\n• Sensors created by Divination spells can't appear inside the protected area or pass through the barrier at its perimeter.\n• Creatures in the area can't be targeted by Divination spells.\n• Nothing can teleport into or out of the warded area.\n• Planar travel is blocked within the warded area."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Sound can't pass through the barrier at the edge of the warded area.",
+      "The barrier of the warded area appears dark and foggy, preventing vision (including Darkvision) through it.",
+      "Sensors created by Divination spells can't appear inside the protected area or pass through the barrier at its perimeter.",
+      "Creatures in the area can't be targeted by Divination spells.",
+      "Nothing can teleport into or out of the warded area.",
+      "Planar travel is blocked within the warded area."
+     ]
+    }
    },
    {
     "name": "",
@@ -26063,6 +26466,7 @@
     "name": "Mischievous Surge",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Mischievous Surge",
      "headers": [
       "d4",
@@ -27868,8 +28272,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\n• You instantaneously light or snuff out a candle, a torch, or a small campfire.\n• You instantaneously clean or soil an object no larger than 1 cubic foot.\n• You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\n• You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\n• You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.",
+      "You instantaneously light or snuff out a candle, a torch, or a small campfire.",
+      "You instantaneously clean or soil an object no larger than 1 cubic foot.",
+      "You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.",
+      "You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.",
+      "You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn."
+     ]
+    }
    },
    {
     "name": "",
@@ -28133,6 +28548,7 @@
     "name": "Prismatic Rays",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Prismatic Rays",
      "headers": [
       "1d8",
@@ -28310,6 +28726,7 @@
     "name": "Prismatic Layers",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Prismatic Layers",
      "headers": [
       "Order",
@@ -29585,6 +30002,7 @@
     "name": "Reality Break Effects",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Reality Break Effects",
      "headers": [
       "d10",
@@ -29715,6 +30133,7 @@
     "name": "Reincarnate Races",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Reincarnate Races",
      "headers": [
       "d100",
@@ -29814,6 +30233,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "1d10",
@@ -30694,6 +31114,7 @@
     "name": "Knowledge of Target",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Knowledge of Target",
      "headers": [
       "Knowledge",
@@ -30719,6 +31140,7 @@
     "name": "Connection to Target",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Connection to Target",
      "headers": [
       "Connection",
@@ -30800,6 +31222,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Your Knowledge of the Target Is...",
@@ -30825,6 +31248,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "You Have the Target's...",
@@ -31363,8 +31787,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.\n• You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.\n• You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.\n• You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.",
+      "You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.",
+      "You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.",
+      "You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour."
+     ]
+    }
    },
    {
     "name": "",
@@ -32721,8 +33154,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Elemental Immunity**: When you cast this spell, choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You have Resistance to the chosen damage type.\n• **Elemental Pulse**: When you cast this spell and at the start of each of your subsequent turns, you release a burst of elemental energy in a 15-foot Emanation originating from yourself. Each creature of your choice in that area makes a Dexterity saving throw. On a failed save, a creature takes **2d6** Acid, Cold, Fire, Lightning, or Thunder damage (your choice) and has the Prone condition. On a successful save, a creature takes half as much damage only.\n• **Flight**: You gain a Fly Speed of 30 feet and can hover."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Elemental Immunity**: When you cast this spell, choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. You have Resistance to the chosen damage type.",
+      "**Elemental Pulse**: When you cast this spell and at the start of each of your subsequent turns, you release a burst of elemental energy in a 15-foot Emanation originating from yourself. Each creature of your choice in that area makes a Dexterity saving throw. On a failed save, a creature takes **2d6** Acid, Cold, Fire, Lightning, or Thunder damage (your choice) and has the Prone condition. On a successful save, a creature takes half as much damage only.",
+      "**Flight**: You gain a Fly Speed of 30 feet and can hover."
+     ]
+    }
    },
    {
     "name": "Casting as a Circle Spell",
@@ -33246,6 +33687,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Secondary Casters",
@@ -35137,6 +35579,7 @@
     "name": "",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d6",
@@ -35653,8 +36096,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Climbing**: You gain a Climb Speed equal to your Speed.\n• **Venomous Bite**: As a Magic action, you can make a ranged spell attack using the snake against one creature within 50 feet. On a hit, the target takes **1d6** Force damage and has the Poisoned condition until the start of your next turn. While Poisoned, the target has the Incapacitated condition."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Climbing**: You gain a Climb Speed equal to your Speed.",
+      "**Venomous Bite**: As a Magic action, you can make a ranged spell attack using the snake against one creature within 50 feet. On a hit, the target takes **1d6** Force damage and has the Poisoned condition until the start of your next turn. While Poisoned, the target has the Incapacitated condition."
+     ]
+    }
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -36169,8 +36619,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You are immune to fire and poison damage (Lower Planes) or radiant and necrotic damage (Upper Planes).\n• You are immune to the poisoned condition (Lower Planes) or the charmed condition (Upper Planes).\n• Spectral wings appear on your back, giving you a flying speed of 40 feet.\n• You have a +2 bonus to AC.\n• All your weapon attacks are magical, and when you make a weapon attack, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls.\n• You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that lets you attack more than once when you take the Attack action on your turn."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You are immune to fire and poison damage (Lower Planes) or radiant and necrotic damage (Upper Planes).",
+      "You are immune to the poisoned condition (Lower Planes) or the charmed condition (Upper Planes).",
+      "Spectral wings appear on your back, giving you a flying speed of 40 feet.",
+      "You have a +2 bonus to AC.",
+      "All your weapon attacks are magical, and when you make a weapon attack, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls.",
+      "You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that lets you attack more than once when you take the Attack action on your turn."
+     ]
+    }
    }
   ],
   "classes": [
@@ -36399,6 +36860,7 @@
     "name": "Teleportation",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Teleportation",
      "headers": [
       "Familiarity",
@@ -36527,6 +36989,7 @@
     "name": "Teleportation Outcome",
     "type": "table",
     "table": {
+     "type": "table",
      "title": "Teleportation Outcome",
      "headers": [
       "Familiarity",
@@ -36588,8 +37051,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• \"Permanent circle\" means a permanent teleportation circle whose sigil sequence you know.\n• \"Linked object\" means you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library.\n• \"Very familiar\" is a place you have visited often, a place you have carefully studied, or a place you can see when you cast the spell.\n• \"Seen casually\" is a place you have seen more than once but with which you aren't very familiar.\n• \"Viewed once or described\" is a place you have seen once, possibly using magic, or a place you know through someone else's description, perhaps from a map.\n• \"False destination\" is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a location that no longer exists."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "\"Permanent circle\" means a permanent teleportation circle whose sigil sequence you know.",
+      "\"Linked object\" means you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library.",
+      "\"Very familiar\" is a place you have visited often, a place you have carefully studied, or a place you can see when you cast the spell.",
+      "\"Seen casually\" is a place you have seen more than once but with which you aren't very familiar.",
+      "\"Viewed once or described\" is a place you have seen once, possibly using magic, or a place you know through someone else's description, perhaps from a map.",
+      "\"False destination\" is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a location that no longer exists."
+     ]
+    }
    },
    {
     "name": "Mishap",
@@ -36904,8 +37378,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.\n• You have advantage on attack rolls that you make with simple and martial weapons.\n• When you hit a target with a weapon attack, that target takes an extra **2d12** force damage.\n• You have proficiency with all armor, shields, simple weapons, and martial weapons.\n• You have proficiency in Strength and Constitution saving throws.\n• You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.",
+      "You have advantage on attack rolls that you make with simple and martial weapons.",
+      "When you hit a target with a weapon attack, that target takes an extra **2d12** force damage.",
+      "You have proficiency with all armor, shields, simple weapons, and martial weapons.",
+      "You have proficiency in Strength and Constitution saving throws.",
+      "You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks."
+     ]
+    }
    },
    {
     "name": "",
@@ -36963,8 +37448,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Your voice booms up to three times as loud as normal for 1 minute.\n• You cause flames to flicker, brighten, dim, or change color for 1 minute.\n• You cause harmless tremors in the ground for 1 minute.\n• You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\n• You instantaneously cause an unlocked door or window to fly open or slam shut.\n• You alter the appearance of your eyes for 1 minute."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your voice booms up to three times as loud as normal for 1 minute.",
+      "You cause flames to flicker, brighten, dim, or change color for 1 minute.",
+      "You cause harmless tremors in the ground for 1 minute.",
+      "You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.",
+      "You instantaneously cause an unlocked door or window to fly open or slam shut.",
+      "You alter the appearance of your eyes for 1 minute."
+     ]
+    }
    },
    {
     "name": "",
@@ -39462,8 +39958,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• It deafened you and other creatures in its area.\n• It extinguishes unprotected flames in its area that are torch-sized or smaller.\n• It hedges out vapor, gas, and fog that can be dispersed by strong wind.\n• The area is difficult terrain for creatures other than you.\n• The attack rolls of ranged weapon attacks have disadvantage if the attacks pass in or out of the wind."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "It deafened you and other creatures in its area.",
+      "It extinguishes unprotected flames in its area that are torch-sized or smaller.",
+      "It hedges out vapor, gas, and fog that can be dispersed by strong wind.",
+      "The area is difficult terrain for creatures other than you.",
+      "The attack rolls of ranged weapon attacks have disadvantage if the attacks pass in or out of the wind."
+     ]
+    }
    }
   ],
   "classes": [
@@ -40181,8 +40687,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You create one object of up to 25,000 gp in value that isn't a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space you can see on the ground.\n• You allow up to twenty creatures that you can see to regain all hit points, and you end all effects on them described in the __greater restoration__ spell.\n• You grant up to ten creatures that you can see resistance to a damage type you choose.\n• You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours. For instance, you could make yourself and all your companions immune to a __lich__'s life drain attack.\n• You undo a single recent event by forcing a reroll of any roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a __wish__ spell could undo an opponent's successful save, a foe's critical hit, or a friend's failed save. You can force the reroll to be made with advantage or disadvantage, and you can choose whether to use the reroll or the original roll."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You create one object of up to 25,000 gp in value that isn't a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space you can see on the ground.",
+      "You allow up to twenty creatures that you can see to regain all hit points, and you end all effects on them described in the __greater restoration__ spell.",
+      "You grant up to ten creatures that you can see resistance to a damage type you choose.",
+      "You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours. For instance, you could make yourself and all your companions immune to a __lich__'s life drain attack.",
+      "You undo a single recent event by forcing a reroll of any roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a __wish__ spell could undo an opponent's successful save, a foe's critical hit, or a friend's failed save. You can force the reroll to be made with advantage or disadvantage, and you can choose whether to use the reroll or the original roll."
+     ]
+    }
    },
    {
     "name": "",
@@ -40235,8 +40751,20 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Object Creation**: You create one object of up to 25,000 GP in value that isn't a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space that you can see on the ground.\n• **Instant Health**: You allow yourself and up to twenty creatures that you can see to regain all Hit Points, and you end all effects on them listed in the __Greater Restoration__ spell.\n• **Resistance**: You grant up to ten creatures that you can see Resistance to one damage type that you choose. This Resistance is permanent.\n• **Spell Immunity**: You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours.\n• **Sudden Learning**: You replace one of your feats with another feat for which you are eligible. You lose all the benefits of the old feat and gain the benefits of the new one. You can't replace a feat that is a prerequisite for any of your other feats or features.\n• **Roll Redo**: You undo a single recent event by forcing a reroll of any die roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a Wish spell could undo an ally's failed saving throw or a foe's Critical Hit. You can force the reroll to be made with Advantage or Disadvantage, and you choose whether to use the reroll or the original roll.\n• **Reshape Reality**: You may wish for something not included in any of the other effects. To do so, state your wish to the DM as precisely as possible. The DM has great latitude in ruling what occurs in such an instance; the greater the wish, the greater the likelihood that something goes wrong. This spell might simply fail, the effect you desire might be achieved only in part, or you might suffer an unforeseen consequence as a result of how you worded the wish. For example, wishing that a villain were dead might propel you forward in time to a period when that villain is no longer alive, effectively removing you from the game. Similarly, wishing for a Legendary magic item or an Artifact might instantly transport you to the presence of the item's current owner. If your wish is granted and its effects have consequences for a whole community, region, or world, you are likely to attract powerful foes. If your wish would affect a god, the god's divine servants might instantly intervene to prevent it or to encourage you to craft the wish in a particular way. If your wish would undo the multiverse itself, threaten the City of Sigil, or affect the Lady of Pain in any way, you see an image of her in your mind for a moment; she shakes her head, and your wish fails."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Object Creation**: You create one object of up to 25,000 GP in value that isn't a magic item. The object can be no more than 300 feet in any dimension, and it appears in an unoccupied space that you can see on the ground.",
+      "**Instant Health**: You allow yourself and up to twenty creatures that you can see to regain all Hit Points, and you end all effects on them listed in the __Greater Restoration__ spell.",
+      "**Resistance**: You grant up to ten creatures that you can see Resistance to one damage type that you choose. This Resistance is permanent.",
+      "**Spell Immunity**: You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours.",
+      "**Sudden Learning**: You replace one of your feats with another feat for which you are eligible. You lose all the benefits of the old feat and gain the benefits of the new one. You can't replace a feat that is a prerequisite for any of your other feats or features.",
+      "**Roll Redo**: You undo a single recent event by forcing a reroll of any die roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a Wish spell could undo an ally's failed saving throw or a foe's Critical Hit. You can force the reroll to be made with Advantage or Disadvantage, and you choose whether to use the reroll or the original roll.",
+      "**Reshape Reality**: You may wish for something not included in any of the other effects. To do so, state your wish to the DM as precisely as possible. The DM has great latitude in ruling what occurs in such an instance; the greater the wish, the greater the likelihood that something goes wrong. This spell might simply fail, the effect you desire might be achieved only in part, or you might suffer an unforeseen consequence as a result of how you worded the wish. For example, wishing that a villain were dead might propel you forward in time to a period when that villain is no longer alive, effectively removing you from the game. Similarly, wishing for a Legendary magic item or an Artifact might instantly transport you to the presence of the item's current owner. If your wish is granted and its effects have consequences for a whole community, region, or world, you are likely to attract powerful foes. If your wish would affect a god, the god's divine servants might instantly intervene to prevent it or to encourage you to craft the wish in a particular way. If your wish would undo the multiverse itself, threaten the City of Sigil, or affect the Lady of Pain in any way, you see an image of her in your mind for a moment; she shakes her head, and your wish fails."
+     ]
+    }
    },
    {
     "name": "",

@@ -9,13 +9,62 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d8\n• Level 1 Gunslinger HP: 8 + Con. mod\n• HP per Gunslinger level: 1d8 + Con. mod *or* 5 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Gunslinger HP: 8 + Con. mod",
+      "HP per Gunslinger level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Charisma\n• Armor Proficiencies: Light armor\n• Weapon Proficiencies: Simple and Martial Ranged Weapons weapons\n• Skill Proficiencies: Choose 2: Acrobatics, Animal Handling, Athletics, Deception, Insight, Intimidation, Perception, Persuasion, Sleight Of Hand or Stealth"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Dexterity",
+      "Charisma"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial Ranged weapons"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 2: Acrobatics, Animal Handling, Athletics, Deception, Insight, Intimidation, Perception, Persuasion, Sleight Of Hand or Stealth"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -24,8 +73,14 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial Ranged Weapons weapons"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial Ranged weapons"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -241,8 +296,19 @@
     },
     {
      "name": "Maneuver Options",
-     "type": "text",
-     "value": "• Bite the Bullet (ValdaGunslinger)\n• Blindfire (ValdaGunslinger)\n• Dodge Roll (ValdaGunslinger)\n• Grazing Shot (ValdaGunslinger)\n• Maverick Spirit (ValdaGunslinger)\n• Skin of Your Teeth (ValdaGunslinger)"
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "Bite the Bullet (ValdaGunslinger)",
+       "Blindfire (ValdaGunslinger)",
+       "Dodge Roll (ValdaGunslinger)",
+       "Grazing Shot (ValdaGunslinger)",
+       "Maverick Spirit (ValdaGunslinger)",
+       "Skin of Your Teeth (ValdaGunslinger)"
+      ]
+     }
     }
    ],
    "3": [
@@ -840,13 +906,64 @@
   "baseInfo": [
    {
     "name": "Health",
-    "type": "text",
-    "value": "• HP Die: 1d10\n• Level 1 Monster Hunter HP: 10 + Con. mod\n• HP per Monster Hunter level: 1d10 + Con. mod *or* 6 + Con. mod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Monster Hunter HP: 10 + Con. mod",
+      "HP per Monster Hunter level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
    },
    {
-    "name": "Proficiencies",
-    "type": "text",
-    "value": "• Saving Throw Proficiencies: Dexterity and Intelligence\n• Armor Proficiencies: Light and Medium armor and Shields\n• Weapon Proficiencies: Simple and Martial weapons\n• Skill Proficiencies: Choose 3: Athletics, History, Investigation, Medicine, Nature, Perception, Religion or Survival"
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Saving Throw Proficiencies",
+     "entries": [
+      "Dexterity",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Simple",
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Skill Proficiencies",
+     "entries": [
+      "Choose 3: Athletics, History, Investigation, Medicine, Nature, Perception, Religion or Survival"
+     ]
+    }
    },
    {
     "name": "Starting Equipment",
@@ -855,8 +972,27 @@
    },
    {
     "name": "Multiclassing",
-    "type": "text",
-    "value": "• Weapon Proficiencies: Martial weapons\n• Armor Proficiencies: Light and Medium armor and Shields"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Weapon Proficiencies",
+     "entries": [
+      "Martial"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "Armor Proficiencies",
+     "entries": [
+      "Light armor",
+      "Medium armor",
+      "Shields"
+     ]
+    }
    }
   ],
   "levelResources": {
@@ -1032,6 +1168,7 @@
      "name": "Monster Type Language",
      "type": "table",
      "table": {
+      "type": "table",
       "title": "Monster Type Language",
       "headers": [
        "Monster Type",
@@ -1655,7 +1792,7 @@
      {
       "name": "",
       "type": "text",
-      "value": "• *Trapper Gadgets Save DC*: Intelligence modifier + Proficiency Bonus"
+      "value": "*Trapper Gadgets Save DC*: Intelligence modifier + Proficiency Bonus"
      }
     ],
     "7": [

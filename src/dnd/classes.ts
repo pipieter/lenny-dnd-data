@@ -4,16 +4,17 @@ import {
     capitalize,
     checkForDisallowedSymbols,
     Description,
+    DescriptionList,
     DescriptionTable,
-    DescriptionText,
     DescriptionType,
+    List,
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
     title,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
-import { BulletPoint, joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
+import { joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
 import { cleanDNDText } from '../clean';
 
 export interface ClassFeatureDictionary {
@@ -173,8 +174,8 @@ class CharacterClass {
         this.primaryAbility = joinStringsWithOr(orGroups);
     }
 
-    private handleProficiencies(proficiencies: { [type: string]: any }): DescriptionText[] {
-        const info: DescriptionText[] = [];
+    private handleProficiencies(proficiencies: { [type: string]: any }): Description[] {
+        const info: Description[] = [];
 
         for (const [type, proficiency] of Object.entries(proficiencies)) {
             let label = title(type);
@@ -182,7 +183,7 @@ class CharacterClass {
                 label = label.slice(0, -1);
             }
 
-            let text = '';
+            let entries: string[] = [];
 
             switch (type) {
                 case 'armor': {
@@ -195,11 +196,11 @@ class CharacterClass {
                             continue;
                         }
 
-                        armor.push(armorType);
+                        armor.push(`${capitalize(armorType)} armor`);
                     }
-                    text = `${joinStringsWithAnd(armor)} armor`;
+                    entries = armor;
                     if (hasShields) {
-                        text += ' and Shields';
+                        entries.push('Shields');
                     }
                     break;
                 }
@@ -209,27 +210,24 @@ class CharacterClass {
                         if (typeof weaponType === 'object' && weaponType !== null) {
                             const weaponProficiency = weaponType.proficiency;
                             if (weaponProficiency) {
-                                weapons.push(weaponProficiency);
+                                weapons.push(capitalize(weaponProficiency));
                             }
                         } else {
-                            weapons.push(cleanDNDText(weaponType));
+                            weapons.push(capitalize(cleanDNDText(weaponType)));
                         }
                     }
-                    text = `${joinStringsWithAnd(weapons)} weapons`;
+                    entries = weapons;
                     break;
                 }
 
                 case 'skills': {
                     for (const skillProficiencies of proficiency) {
-                        if (text !== '') {
-                            text += '\n';
-                        }
                         const choose = skillProficiencies.choose;
                         if (!choose) continue;
                         const skills = choose.from;
                         const count = parseInt(choose.count ?? '0');
                         if (!skills || count === 0) continue;
-                        text += `Choose ${count}: ${joinStringsWithOr(skills)}`;
+                        entries.push(`Choose ${count}: ${joinStringsWithOr(skills)}`);
                     }
                     break;
                 }
@@ -239,7 +237,7 @@ class CharacterClass {
                         const toolText = cleanDNDText(tool);
                         tools.push(toolText);
                     }
-                    text = `${joinStringsWithAnd(tools)}`;
+                    entries = tools;
                     break;
                 }
                 case 'toolProficiencies':
@@ -250,11 +248,15 @@ class CharacterClass {
                     throw new Error('Unknown proficiency type: ' + type);
             }
 
-            if (text !== '') {
+            if (entries.length > 0) {
                 info.push({
                     name: '',
-                    type: DescriptionType.text,
-                    value: `${BulletPoint} ${label} Proficiencies: ${text}`,
+                    type: DescriptionType.list,
+                    list: {
+                        type: 'list',
+                        caption: `${label} Proficiencies`,
+                        entries: entries,
+                    },
                 });
             }
         }
@@ -274,23 +276,34 @@ class CharacterClass {
             const averageHp = Math.floor(faces / 2) + 1;
             const conMod = 'Con. mod';
 
-            const text = [
-                `${BulletPoint} HP Die: ${die}`,
-                `${BulletPoint} Level 1 ${this.name} HP: ${faces} + ${conMod}`,
-                `${BulletPoint} HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
-            ].join('\n');
+            const entries = [
+                `HP Die: ${die}`,
+                `Level 1 ${this.name} HP: ${faces} + ${conMod}`,
+                `HP per ${this.name} level: ${die} + ${conMod} *or* ${averageHp} + ${conMod}`,
+            ];
 
-            info.push({ name: 'Health', type: DescriptionType.text, value: text });
+            info.push({
+                name: 'Health',
+                type: DescriptionType.list,
+                list: { type: 'list', caption: '', entries: entries },
+            });
         }
 
         // Saving Proficiencies
-        const profData: DescriptionText[] = [];
+        const profData: Description[] = [];
         if (data.proficiency) {
             let savingProficiencies: string[] = data.proficiency;
             savingProficiencies = savingProficiencies.map((proficiency) => parseAbilityScore(proficiency));
 
-            const text = `${BulletPoint} Saving Throw Proficiencies: ${joinStringsWithAnd(savingProficiencies)}`;
-            profData.push({ name: '', type: DescriptionType.text, value: text });
+            profData.push({
+                name: '',
+                type: DescriptionType.list,
+                list: {
+                    type: 'list',
+                    caption: 'Saving Throw Proficiencies',
+                    entries: savingProficiencies,
+                },
+            });
         }
 
         // startingProficiencies
@@ -299,10 +312,7 @@ class CharacterClass {
             profData.push(...startingProficiencies);
         }
 
-        if (profData.length > 0) {
-            const mergedText = profData.map((d) => d.value).join('\n');
-            info.push({ name: 'Proficiencies', type: DescriptionType.text, value: mergedText });
-        }
+        info.push(...profData);
 
         // startEquipment
         if (data.startingEquipment) {
@@ -311,24 +321,35 @@ class CharacterClass {
             const equipment = startingEquipment.default ?? startingEquipment.entries;
 
             if (equipment) {
-                const text = [];
-                for (let line of equipment) {
-                    line = capitalize(cleanDNDText(line));
-                    line = equipment.length !== 1 ? `${BulletPoint} ${line}` : line; // Only add bullet points if multiple entries
-                    text.push(line);
+                const entries: string[] = [];
+                for (const line of equipment) {
+                    entries.push(capitalize(cleanDNDText(line)));
                 }
 
-                info.push({
-                    name: 'Starting Equipment',
-                    type: DescriptionType.text,
-                    value: text.join('\n'),
-                });
+                // If entries only has one item, return a text
+                if (entries.length === 1) {
+                    info.push({
+                        name: 'Starting Equipment',
+                        type: DescriptionType.text,
+                        value: entries[0],
+                    });
+                } else {
+                    info.push({
+                        name: 'Starting Equipment',
+                        type: DescriptionType.list,
+                        list: {
+                            type: 'list',
+                            caption: '',
+                            entries: entries,
+                        },
+                    });
+                }
             }
         }
 
         // multiclassing
         if (data.multiclassing && Object.keys(data.multiclassing).length > 0) {
-            const multiclassData = [];
+            const multiclassData: Description[] = [];
             const multiclassing = data.multiclassing;
 
             let multiclassRequirements = multiclassing.requirements;
@@ -358,10 +379,11 @@ class CharacterClass {
                 multiclassData.push(...this.handleProficiencies(multiclassProficiencies));
             }
 
+            // Add a section divider to the multiclassing data
             if (multiclassData.length > 0) {
-                const mergedText = multiclassData.map((d) => d.value).join('\n');
-                info.push({ name: 'Multiclassing', type: DescriptionType.text, value: mergedText });
+                multiclassData[0].name = 'Multiclassing';
             }
+            info.push(...multiclassData);
         } else if (!this.name.toLowerCase().includes('sidekick')) {
             // If no multiclass data is present, use default. (Does not apply to sidekick classes)
             info.push({
@@ -470,6 +492,7 @@ class CharacterClass {
                         name: title,
                         type: DescriptionType.table,
                         table: {
+                            type: 'table',
                             title,
                             headers,
                             rows: [spellRow],
@@ -580,7 +603,7 @@ function resolveClassFeatReference(
     text: string,
     feats: ClassFeatureDictionary | null,
     type: 'refClassFeature' | 'refSubclassFeature'
-): Description[] {
+): { resolved: string; additionalEntries: Description[] } {
     const regex = new RegExp(`\\{#${type}\\s+([^}]+)\\}`, 'g');
     const matches = [...text.matchAll(regex)];
 
@@ -613,24 +636,21 @@ function resolveClassFeatReference(
         const key = getKey(className, featSource);
 
         if (!feats || !feats[key]) {
-            return [
-                {
-                    name: '',
-                    type: DescriptionType.text,
-                    value: `${BulletPoint} ${getKey(name, featSource)}`,
-                },
-            ];
+            return { resolved: getKey(name, featSource), additionalEntries: [] };
         }
 
         const feat = feats[key].find((f) => f.name.trim().toLowerCase() === name.trim().toLowerCase());
 
         if (!feat?.descriptions) throw `Could not find ${type} for ${key}`;
         const descs = feat.descriptions.map((d) => ({ ...d }));
-        if (descs[0].type === DescriptionType.text) {
-            descs[0].value = `__${getKey(name, featSource)}__: ${descs[0].value}`;
+
+        if (descs[0].type !== DescriptionType.text) {
+            throw new Error(`First class feat of ${text} does not start with a text.`);
         }
 
-        return descs;
+        const resolved = `__${getKey(name, featSource)}__: ${descs[0].value}`;
+        const additionalEntries = descs.slice(1);
+        return { resolved, additionalEntries };
     }
 
     // Case 2: Inline substitution (multiple references or formatting like bullets)
@@ -642,19 +662,11 @@ function resolveClassFeatReference(
         return getKey(name, featSource);
     });
 
-    return [
-        {
-            name: '',
-            type: DescriptionType.text,
-            value: updatedText,
-        },
-    ];
+    return { resolved: updatedText, additionalEntries: [] };
 }
 
-function resolveOptionalFeatReference(entry: DescriptionText): DescriptionText {
-    const value = entry.value as string;
-
-    const updatedValue = value.replace(
+function resolveOptionalFeatReference(text: string): string {
+    const updatedValue = text.replace(
         /\{#refOptionalfeature\s+([^|}]+)(?:\|([^}]+))?\}/g,
         (_, name: string, source?: string) => {
             const finalSource = source?.trim() || 'PHB';
@@ -662,10 +674,32 @@ function resolveOptionalFeatReference(entry: DescriptionText): DescriptionText {
         }
     );
 
-    return {
-        ...entry,
-        value: updatedValue,
-    };
+    if (text === updatedValue) {
+        console.log(text);
+    }
+
+    return updatedValue;
+}
+
+function resolveSingleReference(
+    text: string,
+    classFeats: ClassFeatureDictionary | null,
+    subclassFeats: ClassFeatureDictionary | null
+): { resolved: string | null; additionalEntries: Description[] } {
+    if (!text.includes(`{#`)) {
+        return { resolved: text, additionalEntries: [] };
+    }
+
+    if (text.includes(`refClassFeature`)) {
+        return resolveClassFeatReference(text, classFeats, 'refClassFeature');
+    } else if (text.includes(`refSubclassFeature`)) {
+        return resolveClassFeatReference(text, subclassFeats, 'refSubclassFeature');
+    } else if (text.includes('refOptionalfeature')) {
+        const resolved = resolveOptionalFeatReference(text);
+        return { resolved, additionalEntries: [] };
+    } else {
+        throw `Unsupported text-description reference-type in: ${text}`;
+    }
 }
 
 function resolveReferences(
@@ -679,20 +713,61 @@ function resolveReferences(
     for (const entry of entries) {
         if (entry.type === DescriptionType.text) {
             const text = entry.value as string;
+            const { resolved, additionalEntries } = resolveSingleReference(text, classFeats, subclassFeats);
 
-            if (!text.includes(`{#`)) {
+            if (resolved) {
+                resolvedEntries.push({ ...entry, value: resolved });
+                resolvedEntries.push(...additionalEntries);
+            } else {
                 resolvedEntries.push(entry);
-                continue;
             }
-
-            if (text.includes(`refClassFeature`))
-                resolvedEntries.push(...resolveClassFeatReference(text, classFeats, 'refClassFeature'));
-            else if (text.includes(`refSubclassFeature`))
-                resolvedEntries.push(...resolveClassFeatReference(text, subclassFeats, 'refSubclassFeature'));
-            else if (text.includes('refOptionalfeature')) resolvedEntries.push(resolveOptionalFeatReference(entry));
-            else throw `Unsupported text-description reference-type in: ${text}`;
         } else if (entry.type === DescriptionType.table) {
             resolvedEntries.push(entry); // For now, tables don't have any references.
+        } else if (entry.type === DescriptionType.list) {
+            function resolveDescriptionList(description: DescriptionList): {
+                resolved: Description;
+                additionalEntries: Description[];
+            } {
+                const additionalEntries: Description[] = [];
+
+                function resolveList(list: List): List {
+                    const result: List = {
+                        type: 'list',
+                        caption: list.caption,
+                        entries: [],
+                    };
+                    if (!list.entries) {
+                        return result;
+                    }
+
+                    for (const subentry of list.entries) {
+                        if (typeof subentry === 'string') {
+                            const { resolved: subresolved, additionalEntries: subadditionalEntries } =
+                                resolveSingleReference(subentry, classFeats, subclassFeats);
+                            if (subresolved) {
+                                result.entries.push(subresolved);
+                            }
+                            additionalEntries.push(...subadditionalEntries);
+                        } else {
+                            const subresolved = resolveList(subentry);
+                            result.entries.push(subresolved);
+                        }
+                    }
+
+                    return result;
+                }
+
+                const resolvedList: DescriptionList = {
+                    name: entry.name,
+                    type: DescriptionType.list,
+                    list: resolveList(description.list),
+                };
+
+                return { resolved: resolvedList, additionalEntries };
+            }
+            const { resolved, additionalEntries } = resolveDescriptionList(entry);
+            resolvedEntries.push(resolved);
+            resolvedEntries.push(...additionalEntries);
         } else {
             throw `Could not resolve unsupported DescriptionType ${entry.type}`;
         }
@@ -703,13 +778,8 @@ function resolveReferences(
         const entriesToSubResolve: Description[] = [];
         for (let i = 0; i < resolvedEntries.length; i++) {
             const e = resolvedEntries[i];
-            if (e.type === DescriptionType.text) {
-                const val = e.value as string;
-                if (!val.includes('{#')) continue;
-
-                indexesToResolve.push(i);
-                entriesToSubResolve.push(e);
-            }
+            indexesToResolve.push(i);
+            entriesToSubResolve.push(e);
         }
 
         for (let j = indexesToResolve.length - 1; j >= 0; j--) {
@@ -720,8 +790,15 @@ function resolveReferences(
     }
 
     for (const resolvedEntry of resolvedEntries) {
-        if (resolvedEntry.type !== DescriptionType.text) continue;
-        checkForDisallowedSymbols(resolvedEntry.value as string);
+        if (resolvedEntry.type === DescriptionType.text) {
+            checkForDisallowedSymbols(resolvedEntry.value);
+        } else if (resolvedEntry.type === DescriptionType.table) {
+            continue; // Tables don't have references
+        } else if (resolvedEntry.type === DescriptionType.list) {
+            checkForDisallowedSymbols(resolvedEntry.list);
+        } else {
+            throw `Error: reference validation code for ${JSON.stringify(resolvedEntry)} not supported`;
+        }
     }
 
     return resolvedEntries;
