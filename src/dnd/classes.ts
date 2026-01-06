@@ -7,6 +7,7 @@ import {
     DescriptionList,
     DescriptionTable,
     DescriptionType,
+    List,
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
@@ -723,25 +724,47 @@ function resolveReferences(
         } else if (entry.type === DescriptionType.table) {
             resolvedEntries.push(entry); // For now, tables don't have any references.
         } else if (entry.type === DescriptionType.list) {
-            const subResolutions: Description[] = [];
-            const resolvedList: DescriptionList = {
-                name: entry.name,
-                type: DescriptionType.list,
-                list: {
-                    type: 'list',
-                    caption: entry.list.caption,
-                    entries: [],
-                },
-            };
-            for (const subentry of entry.list.entries) {
-                const { resolved, additionalEntries } = resolveSingleReference(subentry, classFeats, subclassFeats);
-                if (resolved) {
-                    resolvedList.list.entries.push(resolved);
+            function resolveDescriptionList(description: DescriptionList): {
+                resolved: Description;
+                additionalEntries: Description[];
+            } {
+                const additionalEntries: Description[] = [];
+
+                function resolveList(list: List): List {
+                    const result: List = {
+                        type: 'list',
+                        caption: list.caption,
+                        entries: [],
+                    };
+
+                    for (const subentry of list.entries) {
+                        if (typeof subentry === 'string') {
+                            const { resolved: subresolved, additionalEntries: subadditionalEntries } =
+                                resolveSingleReference(subentry, classFeats, subclassFeats);
+                            if (subresolved) {
+                                result.entries.push(subresolved);
+                            }
+                            additionalEntries.push(...subadditionalEntries);
+                        } else {
+                            const subresolved = resolveList(subentry);
+                            result.entries.push(subresolved);
+                        }
+                    }
+
+                    return result;
                 }
-                subResolutions.push(...additionalEntries);
+
+                const resolvedList: DescriptionList = {
+                    name: entry.name,
+                    type: DescriptionType.list,
+                    list: resolveList(description.list),
+                };
+
+                return { resolved: resolvedList, additionalEntries };
             }
-            resolvedEntries.push(resolvedList);
-            resolvedEntries.push(...subResolutions);
+            const { resolved, additionalEntries } = resolveDescriptionList(entry);
+            resolvedEntries.push(resolved);
+            resolvedEntries.push(...additionalEntries);
         } else {
             throw `Could not resolve unsupported DescriptionType ${entry.type}`;
         }
@@ -769,9 +792,7 @@ function resolveReferences(
         } else if (resolvedEntry.type === DescriptionType.table) {
             continue; // Tables don't have references
         } else if (resolvedEntry.type === DescriptionType.list) {
-            for (const listEntry of resolvedEntry.list.entries) {
-                checkForDisallowedSymbols(listEntry);
-            }
+            checkForDisallowedSymbols(resolvedEntry.list);
         } else {
             throw `Error: reference validation code for ${JSON.stringify(resolvedEntry)} not supported`;
         }

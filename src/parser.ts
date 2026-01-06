@@ -20,7 +20,7 @@ export interface Table {
 export interface List {
     type: 'list';
     caption: string;
-    entries: string[];
+    entries: (string | List)[];
 }
 
 export enum DescriptionType {
@@ -55,11 +55,17 @@ export interface DescriptionList {
 
 export type Description = DescriptionHr | DescriptionText | DescriptionTable | DescriptionList;
 
-export function checkForDisallowedSymbols(text: string) {
-    const disallowedSymbols = ['{', '}', '|', '[object Object]'];
-    const foundSymbols = disallowedSymbols.filter((s) => text.includes(s)).map((s) => `'${s}'`);
-    if (foundSymbols.length > 0) {
-        throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${text}'`;
+export function checkForDisallowedSymbols(value: string | List) {
+    if (typeof value === 'string') {
+        const disallowedSymbols = ['{', '}', '|', '[object Object]'];
+        const foundSymbols = disallowedSymbols.filter((s) => value.includes(s)).map((s) => `'${s}'`);
+        if (foundSymbols.length > 0) {
+            throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${value}'`;
+        }
+    } else {
+        for (const entry of value.entries) {
+            checkForDisallowedSymbols(entry);
+        }
     }
 }
 
