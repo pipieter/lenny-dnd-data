@@ -236,6 +236,31 @@
   ]
  },
  {
+  "name": "Acid Burn",
+  "source": "CommunityDrakkenheim",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "Cone (15 feet)",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#acid%20burn_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You magically produce a spray of acidic formula in a 15-foot Cone in front of you. All creatures in the cone must succeed on a Dexterity saving throw or take **1d6** Acid damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+   }
+  ],
+  "classes": []
+ },
+ {
   "name": "Acid Mitt",
   "source": "GaldeveerTanksandFlanks",
   "level": "Cantrip",
@@ -266,6 +291,45 @@
    {
     "name": "Rogue",
     "source": "PHB"
+   }
+  ]
+ },
+ {
+  "name": "Acid Rain",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 5",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "150 feet",
+  "components": "V, S, M (a pinch of sulfur and ground coal)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#acid%20rain_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Until the spell ends, acid rain falls in a 40-foot-tall Cylinder with a 40-foot radius centered on a point you choose within range. The area is Lightly Obscured, and exposed flames in the area are doused."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Chemical pools accumulate on the ground in the area, making it Difficult Terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it takes **3d6** Acid damage and must make a Dexterity saving throw. On a failed save, it falls Prone in the pools, taking an additional **3d6** Acid damage."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 6th level or higher, the Acid damage increases by 1d6 for each slot level above 5th."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -377,6 +441,48 @@
   "classes": [
    {
     "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Acrid Orb",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 1",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a vial of stomach acid and a pinch of sulfate)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#acrid%20orb_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create an orb of acid gel and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes **2d6** Acid damage. Whether the attack hits or misses, the orb explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take **2d6** Acid damage."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 2nd level or higher, the exploding Acid damage increases by 1d6 for each slot level above 1st."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
     "source": "XPHB"
    },
    {
@@ -3146,6 +3252,44 @@
   ]
  },
  {
+  "name": "Bacterial Barrage",
+  "source": "CommunityDrakkenheim",
+  "level": "Cantrip",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#bacterial%20barrage_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You attack a creature in range with a quick spreading infection that takes advantage of existing conditions. Make a ranged spell attack against a target, on a hit the infection does **1d8** Necrotic damage to the target. If the target is suffering from the Poisoned condition or a disease, it instead takes **1d12** Necrotic damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Ball Lightning",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 5",
@@ -3283,6 +3427,51 @@
     "source": "XPHB"
    }
   ]
+ },
+ {
+  "name": "Banish to the Space Between Worlds",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 8",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a delerium fragment worth 100gp, which the spell consumes)",
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#banish%20to%20the%20space%20between%20worlds_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You banish a creature that you can see within range into the Space Between Worlds. Upon this roiling plane of chaotic potential, the target wanders incomprehensible vistas searching for a way back via strange and absurd exits. The target remains there for the duration or until it escapes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The target can use its action to attempt to escape. When it does so, it makes an Intelligence check against your spell save DC. If it succeeds, it escapes, and the spell ends. On a failed check, the target takes **4d6** Psychic damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Time passes differently for the target within the Space Between Worlds, and it perceives its time spent there as having lasted hundreds or perhaps thousands of years, even if it was only gone for rounds or minutes in the mortal world."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature which dies in the Space Between Worlds does not return."
+   }
+  ],
+  "classes": []
  },
  {
   "name": "Banishing Smite",
@@ -4187,6 +4376,48 @@
   "classes": [
    {
     "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Biohazard",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 2",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a withered root and a drop of vinegar)",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#biohazard_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You coat a 15-foot-wide Cube with toxic sludge for the spell's duration. The area is Difficult Terrain and filled with dangerous fumes. A creature that enters the area or starts its turn there must make a Constitution saving throw. On a failed saving throw, the creature takes **1d8** Poison damage and is Poisoned until the start of its next turn. Creatures are affected even if they hold their breath or don't need to breathe."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd"
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
     "source": "XPHB"
    },
    {
@@ -5386,6 +5617,44 @@
   ]
  },
  {
+  "name": "Blood Worm",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (a jar full of leeches)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#blood%20worm_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You infect a creature you can see within range with a magical disease in the form of a malignant parasite. Once per turn when a creature hits the infected target with a weapon attack, that attack deals an additional **4d6** Necrotic damage, and the attacker regains Hit Points equal to the Necrotic damage dealt. Each time the infected target takes this Necrotic damage, it makes a Constitution saving throw against the spell. If the saving throw succeeds, the spell ends."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 5th level or higher, the Necrotic damage increases by 1d6 for each slot level above 4th."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Bloodhound",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 1",
@@ -6055,6 +6324,44 @@
   "classes": [
    {
     "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Breath of Nightshade",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 8",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "Cone (60 feet)",
+  "components": "V, S, M (A pair of deadly nightshade flowers)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#breath%20of%20nightshade_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You exhale a 60-foot Cone of lethal poison. Each creature in the area when you cast the spell must make a Constitution saving throw. On a failed save, the creature becomes Poisoned for 1 hour. While Poisoned by this spell, the creature is Paralyzed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spell ends for an affected creature if it takes any damage."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
     "source": "XPHB"
    },
    {
@@ -7079,6 +7386,49 @@
    }
   ],
   "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Caustic Grip",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 2",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "S",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#caustic%20grip_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "For the spell's duration, your hand secretes sticky burning acid which you can use to hold a creature in a painful clutch. When you cast this spell, and as a Magic action on your turn until the spell ends, you can make a melee spell attack against one creature within 5 feet of you. On a hit, you deal **4d4** Acid damage to the target, and the creature is Restrained in your acidic grip until the end of your next turn. You can attack the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature Restrained by your grip can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer Restrained. Each time a creature ends its turn Restrained by this spell, it takes an additional **4d4** Acid damage."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
    {
     "name": "Warlock",
     "source": "XPHB"
@@ -8410,6 +8760,36 @@
     "source": "XPHB"
    }
   ]
+ },
+ {
+  "name": "Comet Shards",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 1",
+  "school": "Enchantment",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a delerium chip worth 10 gp, which the spell consumes)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#comet%20shards_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You shatter the delerium fragment in your hand into three glowing comet-like motes of magical force which you hurl at your foes. Each comet hits a creature of your choice that you can see within range. A comet deals **2d4** + your spellcasting ability modifier Force damage to its target and pushes it 10 feet away from you. The comets all strike simultaneously, and you can direct them to hit one creature or several."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more comet for each slot level above 1st."
+   }
+  ],
+  "classes": []
  },
  {
   "name": "Command Beast",
@@ -9786,6 +10166,90 @@
   ]
  },
  {
+  "name": "Contaminated Hands",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 5",
+  "school": "Enchantment",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a delerium fragment worth 100gp, which the spell consumes)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#contaminated%20hands_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create two Large hands of shimmering, octarine force in an unoccupied space that you can see within range. The hands last for the spell's duration. Both hands move at your command, mimicking the movements of your own hands."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each hand is an object that has AC 20 and Hit Points equal to your Hit Point maximum. If one or both of the hands drop to 0 Hit Points, the spell ends. Each hand has a Strength of 26 (+8) and a Dexterity of 10 (+0) and occupies its space."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you cast the spell, and as an action on your subsequent turns, you can move the hands up to 60 feet and then cause one of the following effects with each. Both hands can perform the same action, or different ones. The two hands must move to remain within 30 feet of each other."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Arcane Slam**: The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes **4d12** Necrotic damage. If you direct both hands to attack the same target, they gain Advantage on the attack roll.",
+      "**Forceful Throw**: The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength (*Athletics*) check of the target. If the target is Medium or smaller, you have Advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it. If both hands are used against the same target, you can throw them ten times your spellcasting ability modifier, and gain Advantage on the check against a Large or smaller target.",
+      "**Eldritch Grip**: The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have Advantage on the check. If both the hands are used against the same target, they can grapple a creature regardless of its size, and you have Advantage on the grapple check against a Large or smaller target.",
+      "**Contaminated Crush**: You can have a hand crush a target it is grappling. When you do so, the target takes Bludgeoning damage equal to **2d12** + your spellcasting ability modifier. In addition, the target must make a Constitution saving throw or gain 1 Contamination level. If both the hands are grappling the same target, you can have them rip the grappled target limb from limb. They deal an extra **4d12** necrotic damage."
+     ]
+    }
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 6th level or higher, the damage from the arcane slam and contaminated crush options increases by **2d12** and the damage from the eldritch grip increases by **2d6** for each slot level above 5th."
+   }
+  ],
+  "classes": []
+ },
+ {
+  "name": "Contamination Immunity",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 7",
+  "school": "Abjuration",
+  "casting_time": "1 minute",
+  "range": "Touch",
+  "components": "V, S, M (an eldritch lily mixed into 250 gp worth of purified fluids per target, which the spell consumes)",
+  "duration": "24 hours",
+  "url": "https://5e.tools/spells.html#contamination%20immunity_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Until the spell ends, one willing creature you touch is Immune to Necrotic damage and cannot gain Contamination levels. The affected creature may rest normally within the Haze."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell ends immediately if the creature casts a contaminated spell."
+   },
+   {
+    "name": "Researching the Spell:",
+    "type": "text",
+    "value": "A character who can cast 7th level spells, knows the __Neutralizing Field__ spell, and who has visited the Delerium Heart can research contamination immunity."
+   }
+  ],
+  "classes": []
+ },
+ {
   "name": "Contingent Energy Resistance",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 4",
@@ -9969,6 +10433,53 @@
     "source": "XPHB"
    }
   ]
+ },
+ {
+  "name": "Controlled Mutation",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (a delerium chip worth 100gp)",
+  "duration": "Concentration, up to 1 hour",
+  "url": "https://5e.tools/spells.html#controlled%20mutation_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You weave contaminated energy to temporarily imbue a creature within range with a beneficial mutation. Choose one of the following effects; the target gains that effect until the spell ends."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Dizziness**: The target can't take Reactions.",
+      "**Strength**: The target has Advantage on Strength attack rolls, ability checks, and saving throws. The target can choose to gain a Contamination level. If it does, its melee weapon attacks deal an additional **2d6** Necrotic damage for the spell's duration.",
+      "**Constitution**: The target has Advantage on Constitution checks and saving throws. The target can choose to gain a Contamination level. If it does, it gains Resistance to Bludgeoning, Piercing, and Slashing damage for the spell's duration.",
+      "**Dexterity**: The target has Advantage on Dexterity attack rolls, ability checks, and saving throws. The target can choose to gain a Contamination level. If it does, its attacks with ranged and Finesse weapons score a Critical Hit on an 18-20 for the spell's duration.",
+      "**Intelligence**: The target has Advantage on Intelligence ability checks and saving throws, as well as spell attack rolls. The target can also choose to gain a Contamination level. If it does, for the duration of this spell, while the target is *Concentrating* on a spell it has cast, it's *Concentration* can't be broken as a result of taking damage.",
+      "**Wisdom**: The target has Advantage on Wisdom ability checks and saving throws, as well as spell attack rolls. The target can also choose to gain a Contamination level. If it does, for the duration of this spell, it gains Blindsight to a range of 60 feet and can't be *Surprised* while it is conscious.",
+      "**Charisma**: The target has Advantage on Charisma ability checks and saving throws, as well as spell attack rolls. In addition, the target can choose to gain a Contamination level. If it does, for the duration of this spell, when the target makes a Charisma (*Persuasion*) or Charisma (*Deception*) check, it can treat a d20 roll of 9 or lower as a 10."
+     ]
+    }
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 3rd level or higher, you can choose one additional effect for every two slot levels above 2nd."
+   }
+  ],
+  "classes": []
  },
  {
   "name": "Conviction",
@@ -10163,6 +10674,40 @@
   ]
  },
  {
+  "name": "Corpse Explosion",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Necromancy",
+  "casting_time": "1 reaction, which you take when a creature you can see dies within 120 feet of you.",
+  "range": "120 feet",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#corpse%20explosion_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You cause the triggering creature's body to explode in a violent shower of gore and infected flesh. Creatures within 10 feet of a point centered on the triggering creature's body take **4d8** Necrotic damage and **4d8** Acid damage, or half as much damage on a successful Dexterity saving throw."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a spell slot of 5th level or higher, the damage increases by **1d8** Acid damage for each slot level above 4th."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Corpse Puppets",
   "source": "SpellsThatDontSuck",
   "level": "Level 5",
@@ -10212,6 +10757,45 @@
    {
     "name": "Wizard",
     "source": "PHB"
+   }
+  ]
+ },
+ {
+  "name": "Corrosive Blast",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 3",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "Cone (30 feet)",
+  "components": "V, S, M (a vial of acid)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#corrosive%20blast_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A spew of acrid chemicals erupts from your hands. Each creature in a 30-foot Cone must make a Dexterity saving throw. A creature takes **10d4** Acid damage on a failed save, or half as much damage on a successful one."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The acid destroys any objects made of organic materials in the spell's area. A creature killed by this spell has its flesh entirely dissolved, leaving behind only a corroded skeleton."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 4th level or higher, the Acid damage increases by 2d4 for each slot level above 3rd."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -10292,6 +10876,80 @@
    },
    {
     "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Corrupted Cure",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 1",
+  "school": "Enchantment",
+  "casting_time": "1 bonus action",
+  "range": "90 feet",
+  "components": "V, M (a delerium chip worth 10 gp)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#corrupted%20cure_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature of your choice that you can see within range regains Hit Points equal to 4d6 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you cast this spell, the target can choose to gain a Contamination level as well. If it does, it instead regains Hit Points equal to 8d6 + your spellcasting ability modifier."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 2d6 for each slot level above 1st, or 4d6 if the target chooses to gain a Contamination level."
+   }
+  ],
+  "classes": []
+ },
+ {
+  "name": "Corrupting Spores",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Necromancy",
+  "casting_time": "Bonus action",
+  "range": "120 feet",
+  "components": "V, S, M (a dried mushroom)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#corrupting%20spores_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A small patch of three poison mushrooms magically sprout in a 5-foot square that you can see within range. The mushrooms emit toxic spores, and any creature that starts its turn within 10 feet of the mushroom patch must make a Constitution saving throw. On a failed save, the creature takes **1d8** Poison damage for each mushroom in the patch and is Poisoned until the start of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Until the spell ends, you can use a Bonus Action on your turn to cause an additional mushroom to sprout within the patch."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 5th level or higher, one additional mushroom sprouts with the initial patch for each slot level above 4th."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
     "source": "XPHB"
    }
   ]
@@ -12979,6 +13637,41 @@
     "source": "XPHB"
    }
   ]
+ },
+ {
+  "name": "Delerium Meteor Swarm",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 9",
+  "school": "Enchantment",
+  "casting_time": "Action",
+  "range": "1 mile",
+  "components": "V, S, M (an igneous rock and a delerium fragment worth 100gp, which the spell consumes)",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#delerium%20meteor%20swarm_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You call down eldritch falling stars that crash into the earth at four points you can see within range. Each creature within a 40-foot-radius Sphere centered on each point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes **10d6** Radiant damage, **10d6** Necrotic damage, **10d6** Thunder damage, **10d6** Psychic damage, and **10d6** Force damage on a failed saving throw, or half as much damage on a successful one. A creature in the area of more than one burst is affected only once."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The falling stars leave lasting contamination in the areas they affect, which lasts for one hour. A creature that starts its turn within the affected area must make a Constitution saving throw. On a failed saving throw, the creature takes **5d6** Necrotic damage and gains 1 Contamination level. It takes half as much damage and does not gain any Contamination levels on a successful save. A creature reduced to 0 Hit Points by this damage immediately undergoes a Monstrous Transformation as if they had gained 6 Contamination levels."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spell damages structures and objects in the area that aren't being worn or carried."
+   }
+  ],
+  "classes": []
  },
  {
   "name": "Delusions of Grandeur",
@@ -16821,6 +17514,54 @@
   ]
  },
  {
+  "name": "Envenom",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a vial of basic poison)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#envenom_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose a creature you can see within range to inflict with a magical poison. The target takes **2d4** Poison damage and must make a Constitution saving throw. On a failed saving throw, it becomes Poisoned for the spell's duration."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While Poisoned in this way, the target must make a Constitution saving throw at the end of each of its turns. It takes **2d4** Poison damage on a failed saving throw. On a success, the spell ends on that target."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A __Lesser Restoration__ spell cast on the target ends this spell early."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st"
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Erudition",
   "source": "SpellsThatDontSuck",
   "level": "Level 3",
@@ -18121,6 +18862,45 @@
    },
    {
     "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Fetid Blade",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 3",
+  "school": "Evocation",
+  "casting_time": "Bonus action",
+  "range": "Touch",
+  "components": "V, S, M (a drop of acid and a pinch of iron dust)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#fetid%20blade_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You coat a weapon you touch in an acidic substance. Until the spell ends, weapon attacks made with it deal an extra **2d4** Acid damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, a creature hit with a melee attack using the weapon must make a Constitution saving throw. On a failed save, it becomes Poisoned until the end of the attacker's next turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 4th level or higher, the Acid damage increases by 1d4 for each slot level above 3rd."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
     "source": "XPHB"
    }
   ]
@@ -22543,6 +23323,49 @@
   ]
  },
  {
+  "name": "Grasping Ghost",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 2",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "S, M (a finger bone and a scrap of fabric)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#grasping%20ghost_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A flock of floating spectral hands appear and grasp a target you can see within range. The target must succeed on a Strength saving throw. A target takes **3d8** Necrotic damage on a failed save, or half as much damage on a successful one."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, on a failed saving throw the ghostly hands grapple the target until the end of your next turn, and immediately move the target up to 30 feet in a direction of your choice (but not upward). On its turn, the creature can use an action to attempt to escape the grapple by making a Strength or Dexterity check (its choice) against your spell save DC. If it succeeds, the grapple ends."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a spell slot of 3rd level or higher, the grasping ghost can target one additional creature within range for each spell level above 2nd."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Grasping Vine (Alternate)",
   "source": "llspell",
   "level": "Level 3",
@@ -22995,6 +23818,39 @@
    {
     "name": "Wizard",
     "source": "PHB"
+   }
+  ]
+ },
+ {
+  "name": "Grievous Wounds",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 7",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a needle and several stitches)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#grievous%20wounds_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose a creature you can see within range. You momentarily strip the target's physiology of all resilience, enough that a mere scratch can become a terrible injury. Until the end of your next turn, the target loses any damage Resistances or Immunities, becomes vulnerable to all damage, and makes all its saving throws with Disadvantage."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -25252,6 +26108,61 @@
   ]
  },
  {
+  "name": "Horrific Transformation",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "Touch",
+  "components": "V, S, M (see description)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#horrific%20transformation_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell transforms a willing creature that you touch into a horrific monstrosity. The spell has no effect on a shapechanger or a creature with 0 Hit Points. The transformation lasts for the duration, or until the target drops to 0 Hit Points or dies."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The new form can be an aberration with a Challenge Rating of 4 or lower."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen aberration. It retains its alignment and personality."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The target assumes the Hit Points of its new form. When it reverts to its normal form, the creature returns to the number of Hit Points it had before it transformed. If it reverts as a result of dropping to 0 Hit Points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 Hit Points, it isn't knocked Unconscious."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition to a delerium fragment worth 100gp, you must provide either the heart or brain (or equivalent organ in the case of aberrations with a truly alien physiology) taken from a creature of the same type: the organ must either be recently harvested or magically preserved via __Gentle Repose__ or similar magic. As part of casting the spell, you drive the delerium fragment into the organ, and both are consumed by the spell. The Game Master determines if an aberration's physiology makes its organs suitable for use with this spell."
+   }
+  ],
+  "classes": []
+ },
+ {
   "name": "Howling Chain",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 6",
@@ -26440,6 +27351,49 @@
   ]
  },
  {
+  "name": "Infect",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 1",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a petri dish)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#infect_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You inflict a creature you can see within range with a magical disease. At the start of each of the target's turns, it must make a Constitution saving throw. The creature takes **1d12** Necrotic damage on a failed saving throw, or half as much on a successful one. If a target succeeds on three of these saves, the spell ends."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A __Lesser Restoration__ spell cast on the target ends this spell early."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d12 for every two slot levels above 1st."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Infernal Army",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 7",
@@ -26893,6 +27847,48 @@
    {
     "name": "Witch",
     "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Invigorate",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 2",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "S, M (a syringe and a blood sample)",
+  "duration": "1 hour",
+  "url": "https://5e.tools/spells.html#invigorate_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose up to three creatures within range. Each target gains 10 Temporary Hit Points."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 2nd level or higher, the Temporary Hit Points increase by 5 for each slot level above 2nd."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
    },
    {
     "name": "Wizard",
@@ -27918,6 +28914,50 @@
   "classes": [
    {
     "name": "Druid",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Last Rites",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a small piece of brass, a rose petal, and a drop of holy water)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#last%20rites_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You target a creature you can see within range with a beam of holy light that shines down upon them. The target must make a Wisdom saving throw. The target takes **8d8** Radiant damage on a failed save, or half as much damage on a successful one. This spell has no effect on celestials or constructs."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you target an undead or fiend, it makes the saving throw with Disadvantage, and the spell deals maximum damage to it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If an undead or fiend is reduced to 0 Hit Points by this spell, it dies and its body is reduced to ash."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 5th level or higher, you may target an additional creature within 30 feet of each other for each spell level above 5th."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Paladin",
     "source": "XPHB"
    }
   ]
@@ -31273,6 +32313,49 @@
   ]
  },
  {
+  "name": "Mephitic Vapors",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 6",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a vial of chlorine)",
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#mephitic%20vapors_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You douse a 20-foot radius area centered on a point you can see within range with acrid slime, which remains for the spell's duration. The area becomes Difficult Terrain, and any creature wholly within the area is Blinded and can't take Reactions."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature who starts its turn in the area must succeed on a Constitution saving throw or take **2d8** Poison damage and **2d8** Acid damage and gain one level of Exhaustion."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a spell slot of 7th level or higher, the damage increases by **1d8** Poison damage and **1d8** Acid damage for each slot level above 6th."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Mesmerizing Glare",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 2",
@@ -31422,6 +32505,55 @@
     "name": "Cleric",
     "source": "XPHB"
    },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Miasma",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 7",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a freshly harvested corpse lily)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#miasma_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create a wall of sickly, yellowish green, toxic fumes on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes **10d4** acid damage, or half as much damage on a successful save."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "One side of the wall, selected by you when you cast this spell, emits toxic fumes. It deals **8d8** Poison damage to each creature that ends its turn within 30 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn. The other side of the wall deals no damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature who takes Poison damage from the wall must make a Constitution saving throw or become Poisoned for the duration of the spell"
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 8th level or higher, the damage increases by 2d8 for each slot level above 7th."
+   }
+  ],
+  "classes": [
    {
     "name": "Sorcerer",
     "source": "XPHB"
@@ -33153,6 +34285,54 @@
   ]
  },
  {
+  "name": "Nerve Gas",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 5",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (samples of phosphate and chlorine mixed with a drop of pure alcohol)",
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#nerve%20gas_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create a 10-foot-radius Sphere of toxic fog centered on a point you choose within range. The fog spreads around corners."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "It lasts for the duration or until strong wind disperses the fog, ending the spell. The fog's area is Heavily Obscured."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make an Intelligence saving throw. On a failed saving throw, the creature takes **3d6** Psychic damage and becomes Stunned until the start of its next turn. On a successful saving throw, the creature takes half as much damage and is not Stunned. Creatures are affected even if they hold their breath or don't need to breathe."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a spell slot of 6th level or higher, the damage increases by **1d6** Psychic damage for each slot level above 5th."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Nerveskitter",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 1",
@@ -33232,6 +34412,31 @@
     "source": "XPHB"
    }
   ]
+ },
+ {
+  "name": "Neutralizing Field",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 5",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "Emanation (10 feet)",
+  "components": "V, S, M (A delerium crystal or holy relic worth 1,000 gp)",
+  "duration": "Concentration, up to 1 hour",
+  "url": "https://5e.tools/spells.html#neutralizing%20field_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You negate contaminated magical energies in a 10-foot Emanation. Creatures in the Emanation (including you) can't gain Contamination levels and have Immunity to Necrotic damage. Contaminated spells can't be cast by creatures in the area."
+   },
+   {
+    "name": "Researching the Spell:",
+    "type": "text",
+    "value": "A character who can cast 5th level spells, knows the __Purge Contamination__ spell, and has created at least 1 dose of Aqua Expurgo may research neutralizing field."
+   }
+  ],
+  "classes": []
  },
  {
   "name": "Night's Caress",
@@ -33615,6 +34820,80 @@
    {
     "name": "Ranger",
     "source": "PHB"
+   }
+  ]
+ },
+ {
+  "name": "Octarine Sword",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 7",
+  "school": "Enchantment",
+  "casting_time": "1 bonus action",
+  "range": "60 feet",
+  "components": "V, S, M (a delerium fragment worth 100gp, and a dagger)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#octarine%20sword_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create a sword-shaped plane of contaminated energy that hovers within range. It lasts for the duration or until you cast this spell again."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes **4d10** Force damage, and the target must make a Constitution saving throw. On a failed save, the target takes an additional **4d6** Necrotic damage and gains 1 Contamination level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Until the spell ends, you can use a Bonus Action on each of your turns to move the sword up to 30 feet to a spot you can see and repeat this attack against the same target or a different one."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 8th level or higher, the Force damage increases by **1d10** and the Necrotic damage increases by **1d6** for each slot level above 7th."
+   }
+  ],
+  "classes": []
+ },
+ {
+  "name": "Ocular Necrosis",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 2",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#ocular%20necrosis_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Make a ranged spell attack against a creature you can see in range. If you hit, you wrack the creature with a deadly toxin that causes their eyes to bleed. The creature takes **2d6** Necrotic damage and is Blinded until the end of your next turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 3rd level or higher, the Necrotic damage increases by 1d6 for each slot above 2nd."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -34087,6 +35366,50 @@
   ]
  },
  {
+  "name": "Pandemic",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 9",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (the fetid corpse of a plague rat)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#pandemic_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You infect one creature you can see within range with a deadly and highly infectious disease which lasts until it is cured by __Greater Restoration__, __Heal__ or __Wish__. Other spells and magical effects which remove diseases fail to cure the infection caused by this spell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While infected, a creature must make a Constitution saving throw at the start of each of its turns. On a failed saving throw, it takes **10d8** Necrotic damage and becomes Incapacitated until the start of its next turn. On a successful save, it takes half as much damage and is not Incapacitated. An infected creature must make the saving throw at the start of each of its turns until it dies or is cured."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature who starts its turn within 10 feet of a creature infected by this spell must make a Constitution saving throw. On a failed saving throw, that creature contracts the infection."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you cast the spell, you can choose yourself and up to eight other creatures to be unaffected by the infection caused by this casting of the spell."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Pass Without Trace (Alternate)",
   "source": "llspell",
   "level": "Level 2",
@@ -34354,6 +35677,48 @@
    },
    {
     "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Pestilence",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 3",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "90 feet",
+  "components": "V, S, M (a withered flower)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#pestilence_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You infect up to three creatures you can see within range with a magical disease. At the start of each of the target's turns, it must make a Constitution saving throw. On a failed saving throw, the creature takes **3d6** Necrotic damage and gains 1 level of Exhaustion. If a target succeeds on three of these saves, the spell ends for that creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A __Lesser Restoration__ spell cast on a target ends this spell early for that creature."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
     "source": "XPHB"
    },
    {
@@ -35121,6 +36486,39 @@
   ]
  },
  {
+  "name": "Plague Wind",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 8",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "Cone (120 feet)",
+  "components": "V, S, M (mucus from a ghoul)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#plague%20wind_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You summon a roiling wind of flesh devouring disease and excruciating blood boiling fumes that sweeps over the area emanating from you in a 120-foot Cone. Creatures in the area must make a Constitution saving throw. On a failed saving throw a creature takes **5d8** Poison damage and **5d8** Necrotic damage or half as much damage on a success. After taking this damage, any affected creature with 25 Hit Points or fewer remaining immediately dies and is reduced to a weathered skeleton as their flesh and soft tissue blows off like ash."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Planar Bubble",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 7",
@@ -35298,6 +36696,53 @@
   ]
  },
  {
+  "name": "Poison Needle",
+  "source": "CommunityDrakkenheim",
+  "level": "Cantrip",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#poison%20needle_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You launch a conjured dart coated with lethal poison at a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes **1d10** Poison damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the poison damage reduces the target to 0 Hit Points, the target is stable but Poisoned for 1 hour, even after regaining Hit Points, and is Paralyzed while Poisoned in this way."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Poison Spray",
   "source": "GaldeveerTanksandFlanks",
   "level": "Cantrip",
@@ -35457,6 +36902,49 @@
    },
    {
     "name": "Ranger",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Poison Wave",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "Emanation (30 feet)",
+  "components": "V, S, M (a withered root and a drop of vinegar)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#poison%20wave_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A wave of poisonous fumes emanates from you. Creatures in a 30 feet Emanation make a Constitution saving throw."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "On a failed save, each creature takes **4d12** Poison damage and is Poisoned until the end of your next turn. On a successful saving throw, a creature takes half as much damage and does not become Poisoned."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d12 for each slot level above 4th."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -40912,6 +42400,44 @@
   ]
  },
  {
+  "name": "Septic Shock",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 5",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "150 feet",
+  "components": "V, S, M (a piece of a rotten liver)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#septic%20shock_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose a creature you can see within range that doesn't have all its Hit Points. You infect the target's wounds with putrefying bacteria. The target must make a Constitution saving throw."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If it has less than half its maximum Hit Points remaining, it makes the saving throw with Disadvantage. On a failed save, the target takes **10d8** Necrotic damage and gains 1 level of Exhaustion. On a successful save, it takes half as much damage and does not gain any Exhaustion levels."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Serene Visage",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 1",
@@ -42468,6 +43994,46 @@
     "source": "PHB"
    }
   ]
+ },
+ {
+  "name": "Siphon Time",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a broken clock, and a delerium fragment worth 100gp, which the spell consumes)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#siphon%20time_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You seize upon the flow of time around up to three creatures of your choice within range, drawing seconds from them to use them yourself. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "An affected target can't take Reactions. On its turn, it must choose to either move, take an action, or a Bonus Action: a target can do only one of the three."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature affected by this spell can spend its action to try to pull back the threads of time. If it does, it can make another Wisdom saving throw. On a successful save, the effect ends for it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While at least one other creature is affected by this spell, you gain an additional action on each of your turns. That action can be used only to take the Attack (one weapon attack only), Magic, Dash, Disengage, Hide, or Utilize action. If you use take the Magic action, that spell must be a cantrip with a casting time of one action."
+   }
+  ],
+  "classes": []
  },
  {
   "name": "Sirine's Grace",
@@ -45409,6 +46975,36 @@
   ]
  },
  {
+  "name": "Storm of Contamination",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 6",
+  "school": "Enchantment",
+  "casting_time": "Action",
+  "range": "150 feet",
+  "components": "V, S, M (a delerium fragment worth 100 gp, which the spell consumes)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#storm%20of%20contamination_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create an arcing bolt of eldritch lightning that strikes a target of your choice that you can see within range. Multiple bolts then leap from that target to up to five other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A target must make a Dexterity saving throw. The target takes **10d12** Lightning damage on a failed save, or half as much damage on a successful one. In addition, a target which fails the saving throw gains 1 Contamination level."
+   }
+  ],
+  "classes": []
+ },
+ {
   "name": "Storm of Elemental Fury",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 8",
@@ -45615,6 +47211,44 @@
    },
    {
     "name": "Druid",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Stream of Consumption",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 1",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "V, S",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#stream%20of%20consumption_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "For the spell's duration, your tongue becomes an elongated tether of necrotic green energy you can use to drink the vitality of other creatures. One creature of your choice within 60 feet of you that you can see must make a Constitution saving throw. On a failed save, the target gains 1 level of Exhaustion, and you regain Hit Points equal to 1d4 + your spellcasting ability modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "On each of your turns until the spell ends, you can use your action to target the same creature or a different one, but can't target a creature again if it has succeeded on a saving throw against this casting of stream of consumption."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -45934,6 +47568,46 @@
   ]
  },
  {
+  "name": "Summon Delerium Elemental",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "90 feet",
+  "components": "V, S, M (a delerium fragment worth 100 gp, which the spell consumes)",
+  "duration": "Concentration, up to 1 hour",
+  "url": "https://5e.tools/spells.html#summon%20delerium%20elemental_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You call forth a __contaminated elemental__ to do your bidding. Choose air, earth, fire, or water. Eldritch energy conjures a contaminated elemental of the chosen type, which appears in an unoccupied space within range: either an animated sludge (water), entropic flame (fire), living haze (air), or walking geode (earth). Each uses the summoned delerium elemental stat block below, but gains different traits based on the chosen element used to conjure the elemental. The elemental disappears when it drops to 0 Hit Points or when the spell ends."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The elemental is friendly to you and your companions for the duration of the spell. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys any verbal command you give it (no action required by you). If you don't give any commands, it attacks the closest hostile creature it can see, moving towards it by the most direct route."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The elemental doesn't disappear if you lose *Concentration* on this spell. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it attacks you. An uncontrolled elemental can't be dismissed by you, and it remains until it is destroyed."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the stat block."
+   }
+  ],
+  "classes": []
+ },
+ {
   "name": "Summon Golem",
   "source": "SpellsThatDontSuck",
   "level": "Level 4",
@@ -46010,6 +47684,49 @@
    {
     "name": "Occultist",
     "source": "KT:O"
+   }
+  ]
+ },
+ {
+  "name": "Summon the Thing with the Writhing Tail",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "90 feet",
+  "components": "V, S, M (a tuft of cat hair and a dead rat)",
+  "duration": "Concentration, up to 1 hour",
+  "url": "https://5e.tools/spells.html#summon%20the%20thing%20with%20the%20writhing%20tail_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You call forth __The Thing with the Writhing Tail__. It manifests in an unoccupied space that you can see within range. This corporeal form uses the stat block below. The creature disappears when it drops to 0 Hit Points or when the spell ends."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The creature is an ally to you and your companions. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the stat block."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -47485,6 +49202,48 @@
   "classes": []
  },
  {
+  "name": "Touch of Death",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 9",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "Touch",
+  "components": "V, S, M (the finger of a hag)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#touch%20of%20death_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Make a melee spell attack against a target within 5 feet of you. On a hit, the target takes 200 Poison damage. This damage ignores any Resistance or Immunity the creature has to Poison damage, and can't be reduced or prevented in any way."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The potent poison lingers in the targets body and pulls it towards death. A target reduced to zero Hit Points by this Poison damage automatically fails Death Saving Throws until it finishes a Long Rest. A __Heal__ or __Greater Restoration__ spell cast on the target also ends this effect."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Touch of Filth",
   "source": "SpellsThatDontSuck",
   "level": "Level 2",
@@ -47565,6 +49324,117 @@
    },
    {
     "name": "Warlock",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Toxic Barrage",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 5",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (Four death cap mushrooms)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#toxic%20barrage_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create four rays of pure poison and hurl them at targets within range. You can hurl them at one target or several."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Make a ranged spell attack for each ray. On a hit, the target takes **3d6** Poison damage. If a target is hit by one or more of these rays, it must make a Constitution saving throw. On a failed save, the target is Poisoned for 1 minute. While Poisoned in this way, the target can repeat the saving throw at the end of each of its turns. On a success, it is no longer Poisoned."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 6th level or higher, you create one additional ray for each slot level above 5th"
+   }
+  ],
+  "classes": [
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Toxic Shield",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "S, M (a drop of dwarven blood)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#toxic%20shield_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain Resistance to Poison damage and Advantage on saves against being Poisoned for the duration. In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield sprays them with poison, dealing **1d8** Poison damage to the attacker."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 2nd level or higher, the Poison damage increases by 1d8 for every 2 slot levels above 1st."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Tranquilizing Toxin",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 3",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#tranquilizing%20toxin_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One target you choose within range must make a Constitution saving throw or take **8d6** Poison damage and become Poisoned until the end of your next turn. While Poisoned in this way, the target is also Stunned. On a successful saving throw, the target takes half damage and is not Poisoned."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 4th level or higher, the Poison damage increases by 1d6 for each slot level above 3rd."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -48247,6 +50117,46 @@
   ]
  },
  {
+  "name": "Unbind Gravity",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 7",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "100 feet",
+  "components": "V, S, M (a delerium fragment worth 100gp, which the spell consumes)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#unbind%20gravity_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell allows you to control gravity in a 100-foot Cube centered on a point within range. When you cast this spell and at the start of each of your turns for the spell's duration, you decide which direction gravity pulls within the area. All creatures and objects that aren't somehow anchored to the ground in the area fall in the direction you choose until they reach the edge of the area. A creature can make a Dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it just as they would during a normal downward fall. If an object or creature reaches the edge of the area without striking anything, it remains there, oscillating slightly, for the duration."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Alternatively, you can decide to prevent gravity from acting within the area. When you do, creatures within the area levitate in midair, and must move by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows them to move as if they were climbing. Unattended objects float around randomly."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the end of the duration, affected objects and creatures fall back down."
+   }
+  ],
+  "classes": []
+ },
+ {
   "name": "Unbinding",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 9",
@@ -48672,6 +50582,36 @@
   ]
  },
  {
+  "name": "Vanish to the Space Between Worlds",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 3",
+  "school": "Abjuration",
+  "casting_time": "1 reaction, which you take when you take damage",
+  "range": "Self",
+  "components": "S, M (a delerium chip worth 10 gp)",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#vanish%20to%20the%20space%20between%20worlds_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you cast this spell, you vanish from your current plane of existence and appear in the Space Between Worlds (avoiding the triggering damage). At the start of your next turn, you return to an unoccupied space of your choice within 30 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While within the Space Between Worlds, you can see and hear the plane you originated from, which is cast as a roiling blur, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures in the Space Between Worlds. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so."
+   }
+  ],
+  "classes": []
+ },
+ {
   "name": "Veil of Shadow",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Cantrip",
@@ -48712,6 +50652,31 @@
    },
    {
     "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Venomous Aura",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 3",
+  "school": "Transmutation",
+  "casting_time": "Bonus action",
+  "range": "Emanation (10 feet)",
+  "components": "V, S, M (scales or fangs of a venomous snake)",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#venomous%20aura_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You emit a baleful aura which disorients creatures who approach you. Any creatures that start their turn within your 10 feet Emanation are Poisoned until the start of their next turn."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
     "source": "XPHB"
    }
   ]
@@ -48888,6 +50853,49 @@
   ]
  },
  {
+  "name": "Vile Necrosis",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 6",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a vial of coagulated blood)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#vile%20necrosis_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You point your finger towards a creature within range, projecting a pale green beam of debilitating energy at them."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Make a ranged spell attack against the target. On a hit, the target takes **12d6** Necrotic damage, and it becomes Weakened."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weakened target can make a Constitution saving throw at the end of each of its turns. On a successful save, the weakness ends."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Vine Mine",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 3",
@@ -49036,6 +51044,40 @@
    },
    {
     "name": "Cleric",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Vitriol Ichor",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 4",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (a vial of nitric acid and a flask of water)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#vitriol%20ichor_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose a creature within range that has natural armor or is wearing armor. You magically cause the creature's natural or manufactured armor to become corroded and brittle for the spell's duration. While its armor is corroded, the creature's AC becomes 10 + the creature's Dexterity modifier."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 5th level or higher, you may target one additional creature for each slot level above 4th."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -49984,6 +52026,36 @@
     "source": "XPHB"
    }
   ]
+ },
+ {
+  "name": "Weave the Elder Sign",
+  "source": "CommunityDrakkenheim",
+  "level": "Level 3",
+  "school": "Illusion",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "S, M (a delerium chip worth 10gp, which the spell consumes)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#weave%20the%20elder%20sign_communitydrakkenheim",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*When you cast this spell, you gain 1 Contamination level.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You weave an impossible sign from an inscrutable reality in the air inside a 30-foot Cube within range. It appears for only a moment before vanishing. Each creature in the area who sees the sign must make an Intelligence saving throw. On a failed saving throw, the creature becomes Blinded and Stunned for the spell's duration. On a successful saving throw, a creature is Blinded until the end of your next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spell ends for a Stunned creature if it takes any damage, or if someone else uses an action to shake the creature out of its stupor. When the spell ends for a Stunned creature, it takes **3d6** Psychic damage."
+   }
+  ],
+  "classes": []
  },
  {
   "name": "Web",
