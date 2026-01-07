@@ -205,6 +205,21 @@
   ]
  },
  {
+  "name": "Advanced Psychology (Lv. 3 Alienist)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24,state:feature=s2-0~sub_alienist_eldritchdrakkenheim24=b1",
+  "type": "Lv. 3 Alienist Subclass Feature",
+  "prerequisite": "Alienist (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You learn the __Eldritch Blast__ cantrip. You gain proficiency in the *Arcana* skill. If you already have this proficiency, you gain proficiency with another skill of your choice."
+   }
+  ]
+ },
+ {
   "name": "Advanced Subroutines (Lv. 3 AI Futurist)",
   "source": "DarkMatter24",
   "url": "https://5e.tools/classes.html#gadgeteer_darkmatter24,state:feature=s2-0~sub_ai%20futurist_darkmatter24=b1",
@@ -456,6 +471,137 @@
     "name": "",
     "type": "text",
     "value": "You gain an Alchemist subclass of your choice. A subclass is a specialization that grants you features at certain Alchemist levels. For the rest of your career, you gain each of your subclass's features that are of your Alchemist level or lower."
+   }
+  ]
+ },
+ {
+  "name": "Alienist (Lv. 3 Alienist)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24,state:feature=s2-0~sub_alienist_eldritchdrakkenheim24=b1",
+  "type": "Lv. 3 Alienist Subclass Feature",
+  "prerequisite": "Alienist (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "An Alienist seeks to master the mysteries of the mind. Having devoted years to studying the inner workings of the brain, and unlocking its latent potential, an Alienist is able to read and manipulate the thoughts of others, and bend reality itself. They tap into unfathomable realities and shift the world to their will using the psychic energies they call upon from eldritch lore and arcane knowledge."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Advanced Psychology (ELDRITCHDRAKKENHEIM24)__: You learn the __Eldritch Blast__ cantrip. You gain proficiency in the *Arcana* skill. If you already have this proficiency, you gain proficiency with another skill of your choice."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Alienist Spells (ELDRITCHDRAKKENHEIM24)__: You always have certain spells prepared after you reach particular levels in this class, as shown in the Alienist Spells table. These spells count as Apothecary spells for you, but they don't count against the number of Apothecary spells you prepare."
+   },
+   {
+    "name": "Alienist Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Alienist Spells",
+     "headers": [
+      "Apothecary Level",
+      "Spell"
+     ],
+     "rows": [
+      [
+       "1st",
+       "Charm person, tasha's hideous laughter"
+      ],
+      [
+       "3rd",
+       "Detect Thoughts, Suggestion"
+      ],
+      [
+       "5th",
+       "Hypnotic Pattern, Major Image"
+      ],
+      [
+       "7th",
+       "Arcane Eye, Dimension Door"
+      ],
+      [
+       "9th",
+       "Animate Objects, Modify Memory"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Mental Influence (ELDRITCHDRAKKENHEIM24)__: You have studied hard to unlock the deepest recesses of your psyche, unleashing untapped psychic potential within yourself. This energy is represented by a pool of Psychic Points. You have four Psychic Points. You gain two more at 6th level, another two at 10th, and two more again at 14th level, which you can expend to use the various psionic powers you have detailed below. If you have expended all your Psychic Points, you cannot use these powers. You regain all your expended Psychic Points when you finish a Short or Long Rest."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "***Cerebral Breakthrough.*** When you cast an Apothecary spell that deals damage, you can expend a Psychic Point to re-roll any number of the dice. You must use the new rolls.",
+      "***Mind Over Matter.*** Whenever you take damage, you can use your Reaction and expend a Psychic Point, reducing the damage taken by an amount equal to your Apothecary level.",
+      "***Mind Whisperer.*** When you cast an Apothecary spell which does not deal damage, you may spend a Psychic Point to cast it without any somatic or verbal components."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Metaphysical Tether (ELDRITCHDRAKKENHEIM24)__: As a Magic action, you can touch a willing creature to create a psychic link with it which lasts a number of hours equal to your Apothecary level or until you end the link (no action required). The maximum number of links you can have at any time is equal to your Proficiency Bonus. All the creatures tethered in this way can communicate telepathically with one another as long as they are within 100 feet of each other."
+   }
+  ]
+ },
+ {
+  "name": "Alienist Spells (Lv. 3 Alienist)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24,state:feature=s2-0~sub_alienist_eldritchdrakkenheim24=b1",
+  "type": "Lv. 3 Alienist Subclass Feature",
+  "prerequisite": "Alienist (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You always have certain spells prepared after you reach particular levels in this class, as shown in the Alienist Spells table. These spells count as Apothecary spells for you, but they don't count against the number of Apothecary spells you prepare."
+   },
+   {
+    "name": "Alienist Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Alienist Spells",
+     "headers": [
+      "Apothecary Level",
+      "Spell"
+     ],
+     "rows": [
+      [
+       "1st",
+       "Charm person, tasha's hideous laughter"
+      ],
+      [
+       "3rd",
+       "Detect Thoughts, Suggestion"
+      ],
+      [
+       "5th",
+       "Hypnotic Pattern, Major Image"
+      ],
+      [
+       "7th",
+       "Arcane Eye, Dimension Door"
+      ],
+      [
+       "9th",
+       "Animate Objects, Modify Memory"
+      ]
+     ]
+    }
    }
   ]
  },
@@ -851,6 +997,112 @@
     "name": "",
     "type": "text",
     "value": "You can use this formula a number of times equal to your Intelligence modifier (minimum of once) and regain all expended uses when you finish a Long Rest."
+   }
+  ]
+ },
+ {
+  "name": "Apothecary Magic (Lv. 1 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 1 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Class Features",
+    "type": "text",
+    "value": "Your arcane research has given you facility with spells. Refer to the Core Rules for the general rules of spellcasting and the Spells Listing in this book for the Apothecary spell list."
+   },
+   {
+    "name": "Cantrips",
+    "type": "text",
+    "value": "You know three cantrips of your choice from the Apothecary spell list. You learn additional Apothecary cantrips of your choice at higher levels, as shown in the Cantrips column of the Apothecary Features table. Whenever you finish a Long Rest, you can replace one of your cantrips from this feature with another Apothecary cantrip of your choice."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you reach Apothecary levels 4 and 10, you learn another Apothecary cantrip of your choice, as shown in the Cantrips column of the Apothecary Features table."
+   },
+   {
+    "name": "Formula Book",
+    "type": "text",
+    "value": "You have a book or collection of notes that you study to prepare your Apothecary spells, develop your Esoteric Theories, and record your occult practices. You may use your formula book as an Arcane Focus for your Apothecary spells. You may describe this book any way you like. Some examples of your book's appearance include:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A large leatherbound tome with yellowing pages bound shut with an iron lock",
+      "A scattered assortment of scribbled notes loosely held together by rope",
+      "A pristine journal with perfect edges and beautiful penmanship",
+      "A leather briefcase with two small golden locks",
+      "A medical bag with surgical symbols on the sides",
+      "A beat-up satchel slung over one shoulder with vials and bottles poking out of every pocket"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the book is destroyed or lost, you can recreate it using inks and paper during a Long Rest."
+   },
+   {
+    "name": "Spell Slots",
+    "type": "text",
+    "value": "The Apothecary Features table shows how many spell slots you have to cast your Apothecary spells of levels 1-5. The table also shows the level of those slots, all of which are the same level. To cast one of your Apothecary spells of 1st level or higher, you must expend a spell slot. You regain all expended Apothecary Magic spell slots when you finish a Short or Long Rest."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "For example, when you're a level 5 Apothecary, you have three level 3 spell slots. To cast the level 1 spell __Fog Cloud__, you must spend one of those slots, and you cast it as a level 3 spell."
+   },
+   {
+    "name": "Prepared Spells of Level 1+",
+    "type": "text",
+    "value": "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Apothecary spells."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The number of spells on your list increases as you gain Apothecary levels, as shown in the Prepared Spells column of the Apothecary Features table. Whenever that number increases, choose additional Apothecary spells until the number of spells on your list matches the number in the table. The chosen spells must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach level 6, for example, you learn a new Apothecary spell, which can be of levels 1-3."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If another Apothecary feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Apothecary spells for you."
+   },
+   {
+    "name": "Changing Your Prepared Spells",
+    "type": "text",
+    "value": "Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Apothecary spells for which you have spell slots."
+   },
+   {
+    "name": "Spellcasting Ability",
+    "type": "text",
+    "value": "Intelligence is your spellcasting ability for your Apothecary spells, since you learn your spells through dedicated study and occult knowledge. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for an Apothecary spell you cast and when making an attack roll with one."
+   },
+   {
+    "name": "Spellcasting Focus",
+    "type": "text",
+    "value": "You can use an Arcane Focus or your formula book as a Spellcasting Focus for your Apothecary spells."
+   }
+  ]
+ },
+ {
+  "name": "Apothecary Subclass (Lv. 3 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 3 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Class Features",
+    "type": "text",
+    "value": "You gain a Apothecary subclass of your choice. A subclass is a specialization that grants you features at certain Apothecary levels. For the rest of your career, you gain each of your subclass's features that are of your Apothecary level or lower."
    }
   ]
  },
@@ -13206,6 +13458,21 @@
   ]
  },
  {
+  "name": "Epic Boon (Lv. 19 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 19 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Class Features",
+    "type": "text",
+    "value": "You gain an Epic Boon feat or another feat of your choice for which you qualify. __Boon of the Soul Drinker__ is recommended."
+   }
+  ]
+ },
+ {
   "name": "Epic Boon (Lv. 19 Blood Hunter)",
   "source": "BloodHunter2024",
   "url": "https://5e.tools/classes.html#blood%20hunter_bloodhunter2024",
@@ -13482,6 +13749,26 @@
     "name": "",
     "type": "text",
     "value": "You can use this feature a number of times equal to your Masterwork Bonus. You regain all expended uses when you finish a Long Rest."
+   }
+  ]
+ },
+ {
+  "name": "Esoteric Theories (Lv. 1 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 1 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have discovered esoteric theories, scraps of forbidden lore that you can use to augment your magical abilities."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At 1st level, you gain one Esoteric Theory of your choice. Your theory options are detailed at the end of the class description. When you gain certain Apothecary levels, you gain additional theories of your choice, as shown in the Theories column of the Apothecary Features table. Additionally, when you gain a level in this class, you can choose one of the theories you know and replace it with another theory that you could learn at that level."
    }
   ]
  },
@@ -15107,6 +15394,21 @@
   ]
  },
  {
+  "name": "Force Manipulation (Lv. 6 Alienist)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24,state:feature=s5-0~sub_alienist_eldritchdrakkenheim24=b1",
+  "type": "Lv. 6 Alienist Subclass Feature",
+  "prerequisite": "Alienist (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your mental prowess allows you to control the very fabric of your own reality around you, allowing you to defy gravity and push yourself through the air using only your mind. As a Bonus Action, you can expend a Psychic Point to give yourself a Fly Speed equal to your walking Speed for 1 minute, during which you can Hover."
+   }
+  ]
+ },
+ {
   "name": "Forceful Eyes (Lv. 6 Telekinetic)",
   "source": "WoSpHa",
   "url": "https://5e.tools/classes.html#spiritualist_wospha,state:feature=s5-0~sub_telekinetic_wospha=b1",
@@ -16449,6 +16751,111 @@
     "name": "",
     "type": "text",
     "value": "When you miss with a ranged attack roll, you can expend one Battle Die (no action required) to deal damage to that creature equal to a roll of the die plus your Dexterity modifier (minimum). This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier. You can only deal this damage once per turn."
+   }
+  ]
+ },
+ {
+  "name": "Greater Formula (Lv. 11 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 11 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Class Features",
+    "type": "text",
+    "value": "You have discovered esoteric theories, scraps of forbidden lore that you can use to augment your magical abilities. Choose one level 6 Apothecary spell as this formula."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can cast your formula spell once without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As shown in the Apothecary Features table, you gain another Apothecary spell of your choice that can be cast in this way when you reach Apothecary levels 13 (level 7 spell), 15 (level 8 spell), and 17 (level 9 spell). You also gain an additional spell of your choice for level 7 and 8 spells at Apothecary levels 19 and 20 respectively. You regain all uses of your Greater Formula when you finish a Long Rest."
+   },
+   {
+    "name": "Master Reformulation",
+    "type": "text",
+    "value": "Whenever you finish a Long Rest and consult your formula book, you can replace one spell you gained from this feature with another spell of the same level from the Apothecary spell list."
+   }
+  ]
+ },
+ {
+  "name": "Greater Formula (Lv. 13 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 13 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Class Features",
+    "type": "text",
+    "value": "You gain a level 7 Apothecary spell of your choice."
+   }
+  ]
+ },
+ {
+  "name": "Greater Formula (Lv. 15 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 15 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Class Features",
+    "type": "text",
+    "value": "You gain a level 8 Apothecary spell of your choice."
+   }
+  ]
+ },
+ {
+  "name": "Greater Formula (Lv. 17 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 17 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Class Features",
+    "type": "text",
+    "value": "You gain a level 9 Apothecary spell of your choice."
+   }
+  ]
+ },
+ {
+  "name": "Greater Formula (Lv. 19 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 19 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain another level 6 Apothecary spell of your choice."
+   }
+  ]
+ },
+ {
+  "name": "Greater Formula (Lv. 20 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 20 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Class Features",
+    "type": "text",
+    "value": "You gain another level 7 Apothecary spell of your choice."
    }
   ]
  },
@@ -19358,6 +19765,21 @@
     "name": "",
     "type": "text",
     "value": "[See Time Impairing Aura's stats here](https://5e.tools/feats.html#time%20impairing%20aura_wokiwi)"
+   }
+  ]
+ },
+ {
+  "name": "Impenetrable Mind (Lv. 18 Alienist)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24,state:feature=s17-0~sub_alienist_eldritchdrakkenheim24=b1",
+  "type": "Lv. 18 Alienist Subclass Feature",
+  "prerequisite": "Alienist (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have Resistance to Psychic damage and Immunity to being Charmed or Frightened. Magic cannot put you to sleep and you have Advantage on saving throws against spells that attempt to read your thoughts or control your mind or actions, such as __Dominate Person__. Additionally, when you use the Self-Diagnosis feature to regain Psychic Points using a spell slot, you now regain Psychic Points equal to the spell's level."
    }
   ]
  },
@@ -24395,6 +24817,21 @@
   ]
  },
  {
+  "name": "Medical Expertise (Lv. 2 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 2 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Class Features",
+    "type": "text",
+    "value": "You gain proficiency in the *Medicine* and *Nature* skills. Your Proficiency Bonus is doubled for any ability check you make that uses either of these skills."
+   }
+  ]
+ },
+ {
   "name": "Medium (Lv. 3 Medium)",
   "source": "ValdaInvestigator",
   "url": "https://5e.tools/classes.html#investigator_valdainvestigator,state:feature=s2-0~sub_medium_valdainvestigator=b1",
@@ -24480,6 +24917,62 @@
   ]
  },
  {
+  "name": "Mental Influence (Lv. 3 Alienist)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24,state:feature=s2-0~sub_alienist_eldritchdrakkenheim24=b1",
+  "type": "Lv. 3 Alienist Subclass Feature",
+  "prerequisite": "Alienist (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have studied hard to unlock the deepest recesses of your psyche, unleashing untapped psychic potential within yourself. This energy is represented by a pool of Psychic Points. You have four Psychic Points. You gain two more at 6th level, another two at 10th, and two more again at 14th level, which you can expend to use the various psionic powers you have detailed below. If you have expended all your Psychic Points, you cannot use these powers. You regain all your expended Psychic Points when you finish a Short or Long Rest."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "***Cerebral Breakthrough.*** When you cast an Apothecary spell that deals damage, you can expend a Psychic Point to re-roll any number of the dice. You must use the new rolls.",
+      "***Mind Over Matter.*** Whenever you take damage, you can use your Reaction and expend a Psychic Point, reducing the damage taken by an amount equal to your Apothecary level.",
+      "***Mind Whisperer.*** When you cast an Apothecary spell which does not deal damage, you may spend a Psychic Point to cast it without any somatic or verbal components."
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "Mental Magic (Lv. 10 Alienist)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24,state:feature=s9-0~sub_alienist_eldritchdrakkenheim24=b1",
+  "type": "Lv. 10 Alienist Subclass Feature",
+  "prerequisite": "Alienist (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain new ways to use your latent psychic powers to manipulate the essence of your spells and spellcasting. You gain three new ways to use your Psychic Points:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "***Prescribed Effects.*** Once per turn when a target you can see within 30 feet of you succeeds on an Intelligence, Wisdom, or Charisma saving throw against a spell you cast, you can expend a Psychic Point to fill its mind with scrambled psionic energy, forcing it to reroll the d20 and use the lower roll for its saving throw, possibly turning a success into a failure.",
+      "***Mentally Prepared.*** Once per turn, when a target you can see within 30 feet of you, including yourself, fails an Intelligence, Wisdom, or Charisma saving throw, you can use a Psychic Point and add your Intelligence modifier to the creature's saving throw, potentially turning the failure into a success.",
+      "***Fight or Flight Response.*** As a Bonus Action, you can expend a Psychic Point and teleport up to 30 feet to an unoccupied space you can see. You immediately gain Temporary Hit Points equal to twice your intelligence modifier."
+     ]
+    }
+   }
+  ]
+ },
+ {
   "name": "Merciful Healing (Lv. 3 Mercy)",
   "source": "ValdaMartyr",
   "url": "https://5e.tools/classes.html#martyr_valdamartyr,state:feature=s2-0~sub_mercy_valdamartyr=b1",
@@ -24506,6 +24999,21 @@
     "name": "Feylost (VALDAVAGABOND) Features",
     "type": "text",
     "value": "As a Bonus Action, you can expend one Battle Die to activate any Fey Mood option of your choice. This mood lasts for 1 minute. If you already have a Fey Mood active or you become *Bloodied* while this mood is active, you can have both moods active at once."
+   }
+  ]
+ },
+ {
+  "name": "Metaphysical Tether (Lv. 3 Alienist)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24,state:feature=s2-0~sub_alienist_eldritchdrakkenheim24=b1",
+  "type": "Lv. 3 Alienist Subclass Feature",
+  "prerequisite": "Alienist (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Magic action, you can touch a willing creature to create a psychic link with it which lasts a number of hours equal to your Apothecary level or until you end the link (no action required). The maximum number of links you can have at any time is equal to your Proficiency Bonus. All the creatures tethered in this way can communicate telepathically with one another as long as they are within 100 feet of each other."
    }
   ]
  },
@@ -24621,6 +25129,21 @@
     "name": "",
     "type": "text",
     "value": "As you gain Martyr levels, you can expend more dice each time you use this feature, adding your Constitution modifier to each Hit Point Die you roll. The number of Hit Point Dice you can expend equals half your Martyr level, round down."
+   }
+  ]
+ },
+ {
+  "name": "Miraculous Recovery (Lv. 20 Apothecary)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24",
+  "type": "Lv. 20 Apothecary Class Feature",
+  "prerequisite": "Apothecary (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "At 20th level, you can spend 5 minutes channeling power into a number of creatures (which can include yourself) equal to your Intelligence modifier to facilitate an abnormally fast recovery. You must tend to the creatures during this period, using a Healer's Kit with at least one use remaining. The targets regain Hit Points, spell slots, Hit Point Dice, and other abilities as if they completed a Long Rest. A creature can only benefit from one Miraculous Recovery in a 24-hour period. Once you use this feature, you can't do so again until you finish a Long Rest."
    }
   ]
  },
@@ -31574,6 +32097,38 @@
     "name": "Truth (VALDAMARTYR) Features",
     "type": "text",
     "value": "You have Blindsight with a range of 30 feet."
+   }
+  ]
+ },
+ {
+  "name": "Self-Diagnosis (Lv. 14 Alienist)",
+  "source": "EldritchDrakkenheim24",
+  "url": "https://5e.tools/classes.html#apothecary_eldritchdrakkenheim24,state:feature=s13-0~sub_alienist_eldritchdrakkenheim24=b1",
+  "type": "Lv. 14 Alienist Subclass Feature",
+  "prerequisite": "Alienist (ELDRITCHDRAKKENHEIM24)",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you have no Psychic Points remaining, you can use a Bonus Action and expend a spell slot to regain 1d4 Psychic Points."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You also gain two additional psychic features:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Careful Examination**: Whenever you cast a spell that restores Hit Points to a creature, you may expend a Psychic Point. If you do, all creatures targeted by the spell regain an additional amount of Hit Points equal to twice your Intelligence modifier.",
+      "**Enhanced Cerebellum**: When you cast any spell of 1st level or higher from your Alienist Spells feature, you can cast it by expending a spell slot as normal or by spending a number of Psychic Points equal to the spell's level."
+     ]
+    }
    }
   ]
  },

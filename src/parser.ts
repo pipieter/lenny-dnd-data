@@ -219,6 +219,7 @@ export function parseDistance(distance: any): string {
             return 'Unlimited';
         case 'feet':
             return `${distance.amount} feet`;
+        case 'mile':
         case 'miles': {
             if (distance.amount == 1) return '1 mile';
             return `${distance.amount} miles`;
