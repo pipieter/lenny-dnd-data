@@ -590,24 +590,23 @@ function parseLevelResources(data: any): PaginatedDescriptions {
     return levelResources;
 }
 
-function parseLevelFeatures(name: string, source: string, features: ClassFeatureDictionary): PaginatedDescriptions {
+function parseLevelFeatures(
+    name: string,
+    source: string,
+    classFeatures: ClassFeatureDictionary
+): PaginatedDescriptions {
+    const key = getKey(name, source);
+    const features = classFeatures[key];
+
     const levelFeatures: PaginatedDescriptions = {};
+    for (const feature of features) {
+        const level = feature.level;
+        levelFeatures[level] ??= [];
 
-    Object.values(features)
-        .flat()
-        .forEach((feature) => {
-            if (feature.classKey !== getKey(name, source)) return;
-            const levelKey = feature.level;
-            if (feature.descriptions) {
-                if (!levelFeatures[levelKey]) levelFeatures[levelKey] = [];
-                levelFeatures[levelKey].push(...feature.descriptions);
-            }
-        });
-
-    for (const level in levelFeatures) {
-        if (levelFeatures[level].length > 0) {
-            levelFeatures[level][0].name = 'Class Features';
-            levelFeatures[level] = resolveDescriptionReferences(levelFeatures[level], features, null);
+        if (feature.descriptions) {
+            const descriptions = feature.descriptions.map((desc) => ({ ...desc }));
+            descriptions[0].name = feature.name;
+            levelFeatures[level].push(...descriptions);
         }
     }
 
