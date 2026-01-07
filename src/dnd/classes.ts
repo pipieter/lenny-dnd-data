@@ -1019,8 +1019,7 @@ export function getClassesAndClassFeats(databank: Databank): {
             }
         }
 
-        const class$ = parseClass(cls, features, subclassFeatures, subclasses);
-        classes.push(class$);
+        classes.push(parseClass(cls, features, subclassFeatures, subclasses));
     }
 
     return { classes: classes.sort(entrySort), classFeats: classFeats.sort(entrySort) };
