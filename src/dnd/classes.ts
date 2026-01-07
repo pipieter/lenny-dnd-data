@@ -1003,6 +1003,7 @@ export function getClassesAndClassFeats(databank: Databank): {
 } {
     const classes: any[] = [];
     const classFeats: ParsedFeat[] = [];
+    const visitedFeats = new Set<string>();
 
     for (const cls of databank.class.sort(entrySort)) {
         const features = getClassFeatures(databank, cls.name, cls.source);
@@ -1012,8 +1013,10 @@ export function getClassesAndClassFeats(databank: Databank): {
         const parsedFeats = classFeatsToParsedFeats(features, subclassFeatures);
         for (const feat of parsedFeats) {
             const key = getKey(feat.name, feat.source);
-            if (classFeats.some((f) => getKey(f.name, f.source) === key)) continue;
-            classFeats.push(feat);
+            if (!visitedFeats.has(key)) {
+                visitedFeats.add(key);
+                classFeats.push(feat);
+            }
         }
 
         const class$ = parseClass(cls, features, subclassFeatures, subclasses);
