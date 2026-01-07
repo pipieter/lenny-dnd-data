@@ -60,8 +60,7 @@ const disallowedSymbols = ['{', '}', '|', '[object Object]'];
 export function containsDisallowedSymbols(value: string | List) {
     // String
     if (typeof value === 'string') {
-        const foundSymbols = disallowedSymbols.filter((s) => value.includes(s)).map((s) => `'${s}'`);
-        return foundSymbols.length > 0;
+        return disallowedSymbols.some((s) => value.includes(s));
     }
     // List
     else {
