@@ -42,7 +42,7 @@ export interface ClassFeature {
     descriptions: Description[] | null;
 }
 
-interface Class {
+interface ParsedClass {
     name: string;
     source: string;
     url: string;
@@ -149,7 +149,7 @@ function parseClass(
     features: ClassFeatureDictionary,
     subclassFeatures: ClassFeatureDictionary,
     subclasses: SubclassDictionary
-): Class {
+): ParsedClass {
     const name = data.name;
     const source = data.source;
     const url = getClassesUrl(name, source);
@@ -776,21 +776,13 @@ function resolveListReferences(
 
     for (const subentry of list.entries) {
         if (typeof subentry === 'string') {
-            const { resolved: subresolved, additionalEntries: subadditionalEntries } = resolveReference(
-                subentry,
-                classFeats,
-                subclassFeats
-            );
-            resolved.entries.push(subresolved);
-            additionalEntries.push(...subadditionalEntries);
+            const subresolved = resolveReference(subentry, classFeats, subclassFeats);
+            resolved.entries.push(subresolved.resolved);
+            additionalEntries.push(...subresolved.additionalEntries);
         } else {
-            const { resolved: subresolved, additionalEntries: subadditionalEntries } = resolveListReferences(
-                subentry,
-                classFeats,
-                subclassFeats
-            );
-            resolved.entries.push(subresolved);
-            additionalEntries.push(...subadditionalEntries);
+            const subresolved = resolveListReferences(subentry, classFeats, subclassFeats);
+            resolved.entries.push(subresolved.resolved);
+            additionalEntries.push(...subresolved.additionalEntries);
         }
     }
 
@@ -997,10 +989,10 @@ function getClassSubclassFeatures(databank: Databank, name: string, _source: str
 }
 
 export function getClassesAndClassFeats(databank: Databank): {
-    classes: any[];
+    classes: ParsedClass[];
     classFeats: ParsedFeat[];
 } {
-    const classes: any[] = [];
+    const classes: ParsedClass[] = [];
     const classFeats: ParsedFeat[] = [];
     const visitedFeats = new Set<string>();
 
