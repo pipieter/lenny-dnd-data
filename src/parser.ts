@@ -55,17 +55,22 @@ export interface DescriptionList {
 
 export type Description = DescriptionHr | DescriptionText | DescriptionTable | DescriptionList;
 
-export function checkForDisallowedSymbols(value: string | List) {
+const disallowedSymbols = ['{', '}', '|', '[object Object]'];
+
+export function containsDisallowedSymbols(value: string | List) {
+    // String
     if (typeof value === 'string') {
-        const disallowedSymbols = ['{', '}', '|', '[object Object]'];
-        const foundSymbols = disallowedSymbols.filter((s) => value.includes(s)).map((s) => `'${s}'`);
-        if (foundSymbols.length > 0) {
-            throw `Unmatched symbol${foundSymbols.length > 1 ? 's' : ''} ${joinStringsWithAnd(foundSymbols)} found in '${value}'`;
-        }
-    } else {
-        for (const entry of value.entries) {
-            checkForDisallowedSymbols(entry);
-        }
+        return disallowedSymbols.some((s) => value.includes(s));
+    }
+    // List
+    else {
+        return value.entries.some(containsDisallowedSymbols);
+    }
+}
+
+export function checkForDisallowedSymbols(value: string | List) {
+    if (containsDisallowedSymbols(value)) {
+        throw `Disallowed symbols found in '${JSON.stringify(value)}'`;
     }
 }
 
