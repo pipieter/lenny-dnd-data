@@ -3,6 +3,7 @@ import { ParsedFeat } from './feats';
 import {
     capitalize,
     checkForDisallowedSymbols,
+    containsDisallowedSymbols,
     Description,
     DescriptionList,
     DescriptionTable,
@@ -797,49 +798,55 @@ function resolveListReferences(
     return { resolved, additionalEntries };
 }
 
+function containsUnresolvedReferences(description: Description): boolean {
+    if (description.type === DescriptionType.text) {
+        return containsDisallowedSymbols(description.value);
+    }
+
+    if (description.type === DescriptionType.table) {
+        return false; // For now, tables don't have any references.
+    }
+
+    if (description.type === DescriptionType.list) {
+        return containsDisallowedSymbols(description.list);
+    }
+
+    throw `Unsupported unresolved description references type '${description.type}'`;
+}
+
 function resolveDescriptionReferences(
     entries: Description[],
     classFeats: ClassFeatureDictionary | null = null,
     subclassFeats: ClassFeatureDictionary | null = null,
     isSubResolve: boolean = false
 ): Description[] {
-    const resolvedEntries: Description[] = [];
+    let resolvedEntries: Description[] = entries;
 
-    for (const entry of entries) {
-        // DescriptionText
-        if (entry.type === DescriptionType.text) {
-            const { resolved, additionalEntries } = resolveReference(entry.value, classFeats, subclassFeats);
-            resolvedEntries.push({ ...entry, value: resolved });
-            resolvedEntries.push(...additionalEntries);
-        }
-        // DescriptionTable
-        else if (entry.type === DescriptionType.table) {
-            resolvedEntries.push(entry); // For now, tables don't have any references.
-        }
-        // DescriptionList
-        else if (entry.type === DescriptionType.list) {
-            const { resolved, additionalEntries } = resolveListReferences(entry.list, classFeats, subclassFeats);
-            resolvedEntries.push({ ...entry, list: resolved });
-            resolvedEntries.push(...additionalEntries);
-        } else {
-            throw `Could not resolve unsupported DescriptionType ${entry.type}`;
-        }
-    }
+    while (resolvedEntries.some(containsUnresolvedReferences)) {
+        const newResolvedEntries: Description[] = [];
 
-    if (!isSubResolve) {
-        const indexesToResolve: number[] = [];
-        const entriesToSubResolve: Description[] = [];
-        for (let i = 0; i < resolvedEntries.length; i++) {
-            const e = resolvedEntries[i];
-            indexesToResolve.push(i);
-            entriesToSubResolve.push(e);
+        for (const entry of resolvedEntries) {
+            // DescriptionText
+            if (entry.type === DescriptionType.text) {
+                const { resolved, additionalEntries } = resolveReference(entry.value, classFeats, subclassFeats);
+                newResolvedEntries.push({ ...entry, value: resolved });
+                newResolvedEntries.push(...additionalEntries);
+            }
+            // DescriptionTable
+            else if (entry.type === DescriptionType.table) {
+                newResolvedEntries.push(entry); // For now, tables don't have any references.
+            }
+            // DescriptionList
+            else if (entry.type === DescriptionType.list) {
+                const { resolved, additionalEntries } = resolveListReferences(entry.list, classFeats, subclassFeats);
+                newResolvedEntries.push({ ...entry, list: resolved });
+                newResolvedEntries.push(...additionalEntries);
+            } else {
+                throw `Could not resolve unsupported DescriptionType ${entry.type}`;
+            }
         }
 
-        for (let j = indexesToResolve.length - 1; j >= 0; j--) {
-            const index = indexesToResolve[j];
-            const resolved = resolveDescriptionReferences([entriesToSubResolve[j]], classFeats, subclassFeats, true);
-            resolvedEntries.splice(index, 1, ...resolved);
-        }
+        resolvedEntries = newResolvedEntries;
     }
 
     // Validate the results to ensure no remaining references remain
