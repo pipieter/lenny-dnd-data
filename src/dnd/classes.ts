@@ -934,6 +934,76 @@ function classFeatsToParsedFeats(
     return parsedFeats;
 }
 
+function getClassFeatures(databank: Databank, name: string, source: string): ClassFeatureDictionary {
+    const classKey = getKey(name, source);
+    const features: any[] = databank.classFeature.filter((c) => {
+        const key = getKey(c.className, c.classSource);
+        return classKey === key;
+    });
+
+    const dictionary: ClassFeatureDictionary = {};
+    for (const featureData of features.sort(entrySort)) {
+        const feature = parseClassFeature(featureData);
+        if (!dictionary[feature.classKey]) dictionary[feature.classKey] = [];
+        dictionary[feature.classKey].push(feature);
+    }
+
+    return dictionary;
+}
+
+function getSubclasses(
+    databank: Databank,
+    name: string,
+    source: string,
+    subclassFeatures: ClassFeatureDictionary
+): SubclassDictionary {
+    const blacklistSourceCombinations: [string, string][] = [
+        ['PHB', 'XPHB'], // Don't show 2024 subclasses on 2014 classes
+        ['XPHB', 'PHB'], // Don't show 2014 subclasses on 2024 classes
+        ['TCE', 'EFA'], // Don't mix Artificer TCE with EFA
+        ['EFA', 'TCE'], // Don't mix Artificer EFA with TCE
+    ];
+
+    const subclasses = databank.subclass.filter((sub) => {
+        if (blacklistSourceCombinations.some((blacklist) => blacklist[0] === source && blacklist[1] === sub.source)) {
+            return false;
+        }
+        return name === sub.classNames;
+    });
+
+    const dictionary: SubclassDictionary = {};
+    for (const subclassData of subclasses.sort(entrySort)) {
+        const subclass = parseSubclass(subclassData, subclassFeatures);
+        if (!dictionary[subclass.key]) {
+            dictionary[subclass.key] = subclass;
+        }
+    }
+
+    return dictionary;
+}
+
+function getClassSubclassFeatures(databank: Databank, name: string, _source: string): ClassFeatureDictionary {
+    const subclassFeatures: any[] = databank.subclassFeature
+        .filter((sf) => {
+            // The source is not checked, as this may prevent older content not being applied to newer content.
+            // For example, subclasses from XGE are originally designed for PHB'14, but they are also compatible
+            // with PHB'24. In order to not lose compatibility, the source is thus not checked. In the future
+            // this might change.
+            // sf.classSource === source
+            return sf.className === name;
+        })
+        .sort(entrySort);
+
+    const dictionary: ClassFeatureDictionary = {};
+    for (const featureData of subclassFeatures.sort(entrySort)) {
+        const feature = parseClassFeature(featureData);
+        if (!dictionary[feature.classKey]) dictionary[feature.classKey] = [];
+        dictionary[feature.classKey].push(feature);
+    }
+
+    return dictionary;
+}
+
 function getBundledClassData(
     databank: Databank,
     cls: any
@@ -971,24 +1041,11 @@ export function getClassesAndClassFeats(databank: Databank): {
     for (const cls of databank.class.sort(entrySort)) {
         const data = getBundledClassData(databank, cls);
 
-        const features: ClassFeatureDictionary = {};
-        for (const featureData of data.features.sort(entrySort)) {
-            const feature = parseClassFeature(featureData);
-            const key = feature.classKey;
-            if (!features[key]) features[key] = [];
-            features[key].push(feature);
-        }
+        const features = getClassFeatures(databank, cls.name, cls.source);
+        const subclassFeatures = getClassSubclassFeatures(databank, cls.name, cls.source);
 
         const subclasses: SubclassDictionary = {};
-        const subclassFeatures: ClassFeatureDictionary = {};
         if (data.subclassFeatures && data.subclasses) {
-            for (const featureData of data.subclassFeatures.sort(entrySort)) {
-                const feature = parseClassFeature(featureData);
-                const key = feature.classKey;
-                if (!subclassFeatures[key]) subclassFeatures[key] = [];
-                subclassFeatures[key].push(feature);
-            }
-
             for (const subclassData of data.subclasses.sort(entrySort)) {
                 const subclass = parseSubclass(subclassData, subclassFeatures);
                 const key = subclass.key;
