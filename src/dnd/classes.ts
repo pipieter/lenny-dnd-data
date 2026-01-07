@@ -957,26 +957,19 @@ function getSubclasses(
     source: string,
     subclassFeatures: ClassFeatureDictionary
 ): SubclassDictionary {
-    const blacklistSourceCombinations: [string, string][] = [
-        ['PHB', 'XPHB'], // Don't show 2024 subclasses on 2014 classes
-        ['XPHB', 'PHB'], // Don't show 2014 subclasses on 2024 classes
-        ['TCE', 'EFA'], // Don't mix Artificer TCE with EFA
-        ['EFA', 'TCE'], // Don't mix Artificer EFA with TCE
-    ];
-
-    const subclasses = databank.subclass.filter((sub) => {
-        if (blacklistSourceCombinations.some((blacklist) => blacklist[0] === source && blacklist[1] === sub.source)) {
-            return false;
-        }
-        return name === sub.classNames;
+    const subclasses: any[] = databank.subclass.filter((s) => {
+        if (source === 'PHB' && s.source === 'XPHB') return false; // Don't show 2024 subclasses on 2014 classes
+        if (source === 'XPHB' && s.source === 'PHB') return false; // Don't show 2014 subclasses on 2024 classes
+        if (source === 'TCE' && s.source === 'EFA') return false; // Don't mix Artificer TCE with EFA
+        if (source === 'EFA' && s.source === 'TCE') return false; // Don't mix Artificer EFA with TCE
+        return s.className === name;
     });
 
     const dictionary: SubclassDictionary = {};
     for (const subclassData of subclasses.sort(entrySort)) {
         const subclass = parseSubclass(subclassData, subclassFeatures);
-        if (!dictionary[subclass.key]) {
-            dictionary[subclass.key] = subclass;
-        }
+        const key = subclass.key;
+        if (!dictionary[key]) dictionary[key] = subclass;
     }
 
     return dictionary;
@@ -1004,33 +997,6 @@ function getClassSubclassFeatures(databank: Databank, name: string, _source: str
     return dictionary;
 }
 
-function getBundledClassData(
-    databank: Databank,
-    cls: any
-): {
-    features: any[];
-    subclasses: any[];
-    subclassFeatures: any[];
-} {
-    const classKey = getKey(cls.name, cls.source);
-    const features: any[] = databank.classFeature.filter((c) => {
-        const key = getKey(c.className, c.classSource);
-        return classKey === key;
-    });
-    const subclasses: any[] = databank.subclass.filter((s) => {
-        if (cls.source === 'PHB' && s.source === 'XPHB') return false; // Don't show 2024 subclasses on 2014 classes
-        if (cls.source === 'XPHB' && s.source === 'PHB') return false; // Don't show 2014 subclasses on 2024 classes
-        if (cls.source === 'TCE' && s.source === 'EFA') return false; // Don't mix Artificer TCE with EFA
-        if (cls.source === 'EFA' && s.source === 'TCE') return false; // Don't mix Artificer EFA with TCE
-        return s.className === cls.name;
-    });
-    const subclassFeatures: any[] = databank.subclassFeature.filter((sf) => {
-        return sf.className === cls.name;
-    });
-
-    return { features, subclasses, subclassFeatures };
-}
-
 export function getClassesAndClassFeats(databank: Databank): {
     classes: any[];
     classFeats: ParsedFeat[];
@@ -1039,19 +1005,9 @@ export function getClassesAndClassFeats(databank: Databank): {
     const classFeats: ParsedFeat[] = [];
 
     for (const cls of databank.class.sort(entrySort)) {
-        const data = getBundledClassData(databank, cls);
-
         const features = getClassFeatures(databank, cls.name, cls.source);
         const subclassFeatures = getClassSubclassFeatures(databank, cls.name, cls.source);
-
-        const subclasses: SubclassDictionary = {};
-        if (data.subclassFeatures && data.subclasses) {
-            for (const subclassData of data.subclasses.sort(entrySort)) {
-                const subclass = parseSubclass(subclassData, subclassFeatures);
-                const key = subclass.key;
-                if (!subclasses[key]) subclasses[key] = subclass;
-            }
-        }
+        const subclasses = getSubclasses(databank, cls.name, cls.source, subclassFeatures);
 
         const parsedFeats = classFeatsToParsedFeats(features, subclassFeatures);
         for (const feat of parsedFeats) {
