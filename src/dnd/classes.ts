@@ -817,8 +817,7 @@ function containsUnresolvedReferences(description: Description): boolean {
 function resolveDescriptionReferences(
     entries: Description[],
     classFeats: ClassFeatureDictionary | null = null,
-    subclassFeats: ClassFeatureDictionary | null = null,
-    isSubResolve: boolean = false
+    subclassFeats: ClassFeatureDictionary | null = null
 ): Description[] {
     let resolvedEntries: Description[] = entries;
 
