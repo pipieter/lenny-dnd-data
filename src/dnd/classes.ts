@@ -5,7 +5,6 @@ import {
     checkForDisallowedSymbols,
     containsDisallowedSymbols,
     Description,
-    DescriptionList,
     DescriptionTable,
     DescriptionType,
     List,
