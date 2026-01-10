@@ -38,7 +38,7 @@ function getPreformattedBackgroundValue(background: any, name: string): string |
     }
 
     for (const item of entries.items) {
-        if (item.name === name) {
+        if (item.name.trim() === name.trim()) {
             if (item.entry) {
                 return cleanDNDText(item.entry, true) || null;
             }
@@ -48,7 +48,6 @@ function getPreformattedBackgroundValue(background: any, name: string): string |
             throw `Unsupported getPreformattedBackgroundValue entry '${JSON.stringify(item)}'`;
         }
     }
-
     return null;
 }
 
@@ -65,8 +64,12 @@ function parseBackgroundFeats(background: any): string | null {
 function parseSkillProficiencies(background: any): string | null {
     return getPreformattedBackgroundValue(background, 'Skill Proficiencies:');
 }
+
 function parseToolProficiencies(background: any): string | null {
-    return getPreformattedBackgroundValue(background, 'Tool Proficiencies:');
+    return (
+        getPreformattedBackgroundValue(background, 'Tool Proficiencies:') ||
+        getPreformattedBackgroundValue(background, 'Tool Proficiency:')
+    );
 }
 
 function parseLanguages(background: any): string | null {
