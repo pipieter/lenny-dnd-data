@@ -48,7 +48,6 @@ function getPreformattedBackgroundValue(background: any, name: string): string |
             throw `Unsupported getPreformattedBackgroundValue entry '${JSON.stringify(item)}'`;
         }
     }
-    if (background.name === "Guide") console.log(entries);
     return null;
 }
 
@@ -67,8 +66,8 @@ function parseSkillProficiencies(background: any): string | null {
 }
 
 function parseToolProficiencies(background: any): string | null {
-    const proficiencies = getPreformattedBackgroundValue(background, 'Tool Proficiencies:')
-    if (proficiencies) return proficiencies
+    const proficiencies = getPreformattedBackgroundValue(background, 'Tool Proficiencies:');
+    if (proficiencies) return proficiencies;
     return getPreformattedBackgroundValue(background, 'Tool Proficiency:');
 }
 
