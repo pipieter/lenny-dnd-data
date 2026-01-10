@@ -1334,8 +1334,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Dodgy**: While you aren't wearing armor or wielding a Shield, you can take the Dodge action as a Bonus Action.\n• **Slippery**: While you are Grappled or Restrained, your attacks don't have Disadvantage and attacks against you don't have Advantage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Dodgy**: While you aren't wearing armor or wielding a Shield, you can take the Dodge action as a Bonus Action.",
+      "**Slippery**: While you are Grappled or Restrained, your attacks don't have Disadvantage and attacks against you don't have Advantage."
+     ]
+    }
    }
   ]
  },

@@ -112,7 +112,8 @@
    {
     "name": "Contamination Symptoms",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Contamination Symptoms",
      "headers": [
       "Level",
@@ -163,8 +164,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The __Purge Contamination__ spell\n• __Heal__ removes all Contamination levels and mutations in addition to its other effects.\n• Contamination is not a curse, poison, or disease. Spells such as __Lesser Restoration__, __Protection from Poison__, and __Remove Curse__ do not remove Contamination levels.\n• Being raised from the dead reduces a creature's Contamination level by 1."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The __Purge Contamination__ spell",
+      "__Heal__ removes all Contamination levels and mutations in addition to its other effects.",
+      "Contamination is not a curse, poison, or disease. Spells such as __Lesser Restoration__, __Protection from Poison__, and __Remove Curse__ do not remove Contamination levels.",
+      "Being raised from the dead reduces a creature's Contamination level by 1."
+     ]
+    }
    },
    {
     "name": "",
@@ -188,8 +198,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The Game Master chooses the new form, which is most often an Aberration or Monstrosity of some kind such as a __Gibbering Mouther__, __Delerium Dreg__, or __Pyknic Maunder__.\n• Your game statistics are entirely replaced by those of the chosen monster, including the new form's Hit Points and Hit Dice.\n• All Contamination levels are removed, though the GM may grant additional traits to the new form similar to any beneficial mutations gained from Contamination Levels.\n• The Game Master determines what remains of the original creature's personality and memories, if anything. Regardless, the creature falls under the Game Master's control."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The Game Master chooses the new form, which is most often an Aberration or Monstrosity of some kind such as a __Gibbering Mouther__, __Delerium Dreg__, or __Pyknic Maunder__.",
+      "Your game statistics are entirely replaced by those of the chosen monster, including the new form's Hit Points and Hit Dice.",
+      "All Contamination levels are removed, though the GM may grant additional traits to the new form similar to any beneficial mutations gained from Contamination Levels.",
+      "The Game Master determines what remains of the original creature's personality and memories, if anything. Regardless, the creature falls under the Game Master's control."
+     ]
+    }
    },
    {
     "name": "Reversing the Transformation",
@@ -255,8 +274,23 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• \"I wish I didn't have all these useless organs inside me.\"\n• \"The contamination is a blessing which will transform me into a wondrous creature.\"\n• \"The monsters are civilians trying to live a peaceful life! We need to protect them!\"\n• \"I must wear a flesh-coat made from my slain enemies to gain their strength!\"\n• \"My companions died in the ruins. I'm sorry friends, you are merely ghosts haunting me, you aren't real. Stop trying to talk to other people.\"\n• \"I need to eat everything I can find. It's probably going to be my last meal.\"\n• \"Drakkenheim is so beautiful at night. I could spend forever wandering the streets by moonlight. We should go tonight! Let's go every night!\"\n• \"Don't you fools get it?! If you die in Drakkenheim, you die IN REAL LIFE!!!!\"\n• \"A sinister cabal of disembodied hands is plotting against me.\"\n• \"I must go into the ruins and kill. Rip and tear, until it is done.\""
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "\"I wish I didn't have all these useless organs inside me.\"",
+      "\"The contamination is a blessing which will transform me into a wondrous creature.\"",
+      "\"The monsters are civilians trying to live a peaceful life! We need to protect them!\"",
+      "\"I must wear a flesh-coat made from my slain enemies to gain their strength!\"",
+      "\"My companions died in the ruins. I'm sorry friends, you are merely ghosts haunting me, you aren't real. Stop trying to talk to other people.\"",
+      "\"I need to eat everything I can find. It's probably going to be my last meal.\"",
+      "\"Drakkenheim is so beautiful at night. I could spend forever wandering the streets by moonlight. We should go tonight! Let's go every night!\"",
+      "\"Don't you fools get it?! If you die in Drakkenheim, you die IN REAL LIFE!!!!\"",
+      "\"A sinister cabal of disembodied hands is plotting against me.\"",
+      "\"I must go into the ruins and kill. Rip and tear, until it is done.\""
+     ]
+    }
    }
   ],
   "image": null
@@ -286,8 +320,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• You're Immobilized and Defenseless.\n• You're Helpless against attacks made with a weapon that deals Bludgeoning damage.\n• You or another creature take an action to break the ice away. To do so, you must succeed on a Strength (*Athletics*) check. On a successful check, the condition ends. The DC is indicated by the condition, such as Frozen (DC 15).\n• This condition ends on you if you take 20 Bludgeoning or Fire damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You're Immobilized and Defenseless.",
+      "You're Helpless against attacks made with a weapon that deals Bludgeoning damage.",
+      "You or another creature take an action to break the ice away. To do so, you must succeed on a Strength (*Athletics*) check. On a successful check, the condition ends. The DC is indicated by the condition, such as Frozen (DC 15).",
+      "This condition ends on you if you take 20 Bludgeoning or Fire damage."
+     ]
+    }
    }
   ],
   "image": null
@@ -312,8 +355,15 @@
   "description": [
    {
     "name": "Description",
-    "type": "text",
-    "value": "• Your Speed becomes 0, and you can't benefit from any bonuses to your Speed.\n• If you're flying when you become Immobilized, you fall."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your Speed becomes 0, and you can't benefit from any bonuses to your Speed.",
+      "If you're flying when you become Immobilized, you fall."
+     ]
+    }
    }
   ],
   "image": null
@@ -338,8 +388,16 @@
   "description": [
    {
     "name": "Description",
-    "type": "text",
-    "value": "• You're Dazed and Defenseless.\n• You drop whatever you're holding in your hands.\n• You must spend an action to draw, stow, or pick up an object."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You're Dazed and Defenseless.",
+      "You drop whatever you're holding in your hands.",
+      "You must spend an action to draw, stow, or pick up an object."
+     ]
+    }
    }
   ],
   "image": null

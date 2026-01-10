@@ -31,7 +31,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d6",
@@ -440,8 +441,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• It has an Intelligence score of 12 (+2).\n• It has telepathy out to a range of 30 feet."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "It has an Intelligence score of 12 (+2).",
+      "It has telepathy out to a range of 30 feet."
+     ]
+    }
    }
   ]
  },
@@ -1538,8 +1546,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Charm of Air Bubbles\n• Charm of Instant Tools"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Charm of Air Bubbles",
+      "Charm of Instant Tools"
+     ]
+    }
    }
   ]
  },
@@ -2046,8 +2061,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Replace the comet's Intelligence, Wisdom, and Charisma scores with those of its creator.\n• Replace the comet's alignment and languages with those of its creator."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Replace the comet's Intelligence, Wisdom, and Charisma scores with those of its creator.",
+      "Replace the comet's alignment and languages with those of its creator."
+     ]
+    }
    }
   ]
  },
@@ -5784,7 +5806,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d6",
@@ -6321,8 +6344,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Charm of the Mirage\n• Charm of the Water Bearer"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Charm of the Mirage",
+      "Charm of the Water Bearer"
+     ]
+    }
    },
    {
     "name": "Humanoid Fascination",
@@ -8750,8 +8780,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Strahd attacks at the most advantageous moment and from the most advantageous position.\n• Strahd knows when he's in over his head. If he begins taking more damage than he can regenerate, he moves beyond the reach of melee combatants and spellcasters, or he flies away (using summoned wolves or swarms of bats or rats to guard his retreat).\n• Strahd observes the characters to see who among them are most easily swayed, then tries to charm characters who have low Wisdom scores and use them as thralls. At the very least, he can order a charmed character to guard him against other members of the adventuring party."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Strahd attacks at the most advantageous moment and from the most advantageous position.",
+      "Strahd knows when he's in over his head. If he begins taking more damage than he can regenerate, he moves beyond the reach of melee combatants and spellcasters, or he flies away (using summoned wolves or swarms of bats or rats to guard his retreat).",
+      "Strahd observes the characters to see who among them are most easily swayed, then tries to charm characters who have low Wisdom scores and use them as thralls. At the very least, he can order a charmed character to guard him against other members of the adventuring party."
+     ]
+    }
    },
    {
     "name": "The Vampire's Minions",
@@ -8766,7 +8804,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d20",
@@ -9070,8 +9109,19 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Vladimir's alignment is lawful evil.\n• His Armor Class is 17 (half plate).\n• He has 192 hit points.\n• He speaks Common and Draconic.\n• Vladimir wields a +2 greatsword with a hilt sculpted to resemble silver dragon wings and a pommel shaped like a silver dragon's head clutching a black opal between its teeth. As an action, he can make two attacks with the sword (+9 to hit). It deals 20 (**4d6 + 6**) slashing damage on a hit. Against Strahd, Vladimir deals an extra 14 (**4d6**) slashing damage with the weapon.\n• Vladimir has a challenge rating of 7 (2,900 XP)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Vladimir's alignment is lawful evil.",
+      "His Armor Class is 17 (half plate).",
+      "He has 192 hit points.",
+      "He speaks Common and Draconic.",
+      "Vladimir wields a +2 greatsword with a hilt sculpted to resemble silver dragon wings and a pommel shaped like a silver dragon's head clutching a black opal between its teeth. As an action, he can make two attacks with the sword (+9 to hit). It deals 20 (**4d6 + 6**) slashing damage on a hit. Against Strahd, Vladimir deals an extra 14 (**4d6**) slashing damage with the weapon.",
+      "Vladimir has a challenge rating of 7 (2,900 XP)."
+     ]
+    }
    },
    {
     "name": "Enemies of Strahd",
@@ -12754,7 +12804,8 @@
    {
     "name": "Madness of Belashyrra",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Madness of Belashyrra",
      "headers": [
       "d6",
@@ -12932,7 +12983,8 @@
    {
     "name": "Dusk Hag Prophecies",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Dusk Hag Prophecies",
      "headers": [
       "d10",
@@ -13031,7 +13083,8 @@
    {
     "name": "Madness of Dyrrn",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Madness of Dyrrn",
      "headers": [
       "d6",
@@ -13438,7 +13491,8 @@
    {
     "name": "Living Spell Customization",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Living Spell Customization",
      "headers": [
       "Spell Level",
@@ -13519,7 +13573,8 @@
    {
     "name": "Living Spell Customization",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Living Spell Customization",
      "headers": [
       "Spell Level",
@@ -13600,7 +13655,8 @@
    {
     "name": "Living Spell Customization",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Living Spell Customization",
      "headers": [
       "Spell Level",
@@ -13851,7 +13907,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d6",
@@ -14095,7 +14152,8 @@
    {
     "name": "Ancestral Traits",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Ancestral Traits",
      "headers": [
       "d8",
@@ -14171,7 +14229,8 @@
    {
     "name": "Ancestral Traits",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Ancestral Traits",
      "headers": [
       "d8",
@@ -14247,7 +14306,8 @@
    {
     "name": "Ancestral Traits",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Ancestral Traits",
      "headers": [
       "d8",
@@ -14312,8 +14372,20 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• \"Arkus\" (Colossus WX-11) lies prone at the bottom of the Glowing Chasm in the northern part of the Mournland, with one of its arms torn off.\n• \"Artorok\" (Colossus WX-73) sits at the bottom of Lake Cyre amid the scaffolding of a sunken House Cannith workshop, flooded but otherwise intact.\n• \"Hanamar\" (Colossus WX-42) stands at the bottom of Kraken Bay, near the coast of Valenar, buried up to its knees in sand and flooded, but it is otherwise intact.\n• \"Karrnslayer\" (Colossus WX-31) lost its legs but crawls through the Mournland, using its arms to drag its great bulk across the ground. It is always prone and can't use its Stomp action, but makes three extra turret attacks when it takes the Multiattack action option.\n• \"Landro\" (Colossus WX-33) is partially phased into a mountainside on the border of Cyre and Breland, but still explorable and potentially salvageable.\n• \"Norr\" (Colossus WX-5) is slumped amid the ruins of Metrol, the former capital of Cyre.\n• \"Tymber\" (Colossus WX-12) squats in the Crawling Swamp, in the northwest corner of the Shadow Marches. How it got there, no one knows."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "\"Arkus\" (Colossus WX-11) lies prone at the bottom of the Glowing Chasm in the northern part of the Mournland, with one of its arms torn off.",
+      "\"Artorok\" (Colossus WX-73) sits at the bottom of Lake Cyre amid the scaffolding of a sunken House Cannith workshop, flooded but otherwise intact.",
+      "\"Hanamar\" (Colossus WX-42) stands at the bottom of Kraken Bay, near the coast of Valenar, buried up to its knees in sand and flooded, but it is otherwise intact.",
+      "\"Karrnslayer\" (Colossus WX-31) lost its legs but crawls through the Mournland, using its arms to drag its great bulk across the ground. It is always prone and can't use its Stomp action, but makes three extra turret attacks when it takes the Multiattack action option.",
+      "\"Landro\" (Colossus WX-33) is partially phased into a mountainside on the border of Cyre and Breland, but still explorable and potentially salvageable.",
+      "\"Norr\" (Colossus WX-5) is slumped amid the ruins of Metrol, the former capital of Cyre.",
+      "\"Tymber\" (Colossus WX-12) squats in the Crawling Swamp, in the northwest corner of the Shadow Marches. How it got there, no one knows."
+     ]
+    }
    },
    {
     "name": "Hollow Structure",
@@ -16766,7 +16838,8 @@
    {
     "name": "Major Adaptations",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Major Adaptations",
      "headers": [
       "d8",
@@ -16811,7 +16884,8 @@
    {
     "name": "Minor Adaptations",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Minor Adaptations",
      "headers": [
       "d8",
@@ -16882,7 +16956,8 @@
    {
     "name": "Major Adaptations",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Major Adaptations",
      "headers": [
       "d8",
@@ -16927,7 +17002,8 @@
    {
     "name": "Minor Adaptations",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Minor Adaptations",
      "headers": [
       "d8",
@@ -16998,7 +17074,8 @@
    {
     "name": "Major Adaptations",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Major Adaptations",
      "headers": [
       "d8",
@@ -17043,7 +17120,8 @@
    {
     "name": "Minor Adaptations",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Minor Adaptations",
      "headers": [
       "d8",
@@ -17375,7 +17453,8 @@
    {
     "name": "Madness Severity",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Madness Severity",
      "headers": [
       "Failed Saves",
@@ -17420,7 +17499,8 @@
    {
     "name": "Primary Features",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Primary Features",
      "headers": [
       "d4",
@@ -17449,7 +17529,8 @@
    {
     "name": "Secondary Features",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Secondary Features",
      "headers": [
       "d4",
@@ -18291,7 +18372,8 @@
    {
     "name": "Madness Severity",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Madness Severity",
      "headers": [
       "Failed Saves",
@@ -18336,7 +18418,8 @@
    {
     "name": "Primary Features",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Primary Features",
      "headers": [
       "d4",
@@ -18365,7 +18448,8 @@
    {
     "name": "Secondary Features",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Secondary Features",
      "headers": [
       "d4",
@@ -18466,7 +18550,8 @@
    {
     "name": "Madness Severity",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Madness Severity",
      "headers": [
       "Failed Saves",
@@ -18511,7 +18596,8 @@
    {
     "name": "Primary Features",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Primary Features",
      "headers": [
       "d4",
@@ -18540,7 +18626,8 @@
    {
     "name": "Secondary Features",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Secondary Features",
      "headers": [
       "d4",
@@ -20710,8 +20797,20 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Charm of Biting Cold\n• Charm of Bounty\n• Charm of Cold Resistance\n• Charm of Snowball Strike\n• Charm of the Ice Troll\n• Charm of the Snow Walker\n• Charm of the Traveler's Haven"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Charm of Biting Cold",
+      "Charm of Bounty",
+      "Charm of Cold Resistance",
+      "Charm of Snowball Strike",
+      "Charm of the Ice Troll",
+      "Charm of the Snow Walker",
+      "Charm of the Traveler's Haven"
+     ]
+    }
    }
   ]
  },
@@ -21227,8 +21326,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• A creature that eats the heart gains the ability to regenerate for the next 24 hours, regaining 5 hit points at the start of each of its turns. If the creature takes acid or fire damage, this trait doesn't function at the start of its next turn. The creature dies only if it starts its turn with 0 hit points and doesn't regenerate.\n• If buried in the ground under a foot or more of earth, the heart melts away and summons a blizzard like that created by the __control weather__ spell. It takes 10 minutes for the heart to melt and the blizzard to form. The blizzard lasts for 8 hours.\n• A hag or similar creature can perform a ritual that turns the heart into a magical talisman that acts like a patch of brown mold (see \"Brown Mold\" in the Dungeon Master's Guide). This effect lasts until the heart is destroyed.\n• A creature proficient with alchemist's supplies can squeeze enough residual fluid out of the heart to mix with other alchemical ingredients, creating one potion of resistance (cold). It takes 1 hour to create this potion. "
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A creature that eats the heart gains the ability to regenerate for the next 24 hours, regaining 5 hit points at the start of each of its turns. If the creature takes acid or fire damage, this trait doesn't function at the start of its next turn. The creature dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+      "If buried in the ground under a foot or more of earth, the heart melts away and summons a blizzard like that created by the __control weather__ spell. It takes 10 minutes for the heart to melt and the blizzard to form. The blizzard lasts for 8 hours.",
+      "A hag or similar creature can perform a ritual that turns the heart into a magical talisman that acts like a patch of brown mold (see \"Brown Mold\" in the Dungeon Master's Guide). This effect lasts until the heart is destroyed.",
+      "A creature proficient with alchemist's supplies can squeeze enough residual fluid out of the heart to mix with other alchemical ingredients, creating one potion of resistance (cold). It takes 1 hour to create this potion. "
+     ]
+    }
    }
   ]
  },
@@ -31510,7 +31618,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Dragon Color",
@@ -31587,7 +31696,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Dragon Color",
@@ -31664,7 +31774,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Dragon Color",
@@ -31741,7 +31852,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Dragon Color",
@@ -31818,7 +31930,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Dragon Color",
@@ -31895,7 +32008,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Dragon Color",
@@ -31972,7 +32086,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Dragon Color",
@@ -49037,7 +49152,8 @@
    {
     "name": "Grey Render Quirk",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Grey Render Quirk",
      "headers": [
       "d12",
@@ -51551,7 +51667,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "1d6",
@@ -51832,8 +51949,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The awakened zurkhwood has darkvision out to a range of 120 feet.\n• If the awakened zurkhwood was created by a myconid sovereign, it can't speak.\n• The awakened zurkhwood's False Appearance feature allows it to be mistaken for a normal zurkhwood mushroom (instead of a tree)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The awakened zurkhwood has darkvision out to a range of 120 feet.",
+      "If the awakened zurkhwood was created by a myconid sovereign, it can't speak.",
+      "The awakened zurkhwood's False Appearance feature allows it to be mistaken for a normal zurkhwood mushroom (instead of a tree)."
+     ]
+    }
    }
   ]
  },
@@ -54900,8 +55025,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Most white-aligned geists are benevolent, sheltering spirits, and they generally possess the living for their own protection.\n• Blue-aligned geists are prone to performing repetitive actions—knocking, arranging things in patterns, stacking objects, making marks, and so on. When they possess the living, they often induce this same kind of obsessive behavior.\n• Black-aligned geists hate the living, hungering eternally for life, power, or the settling of a wicked grudge. The victims they possess are forced to commit terrible crimes of violence and murder, and are often left injured, permanently crippled, or dying. These geists might be represented by the __shadow__, __specter__, __will-o'-wisp__, or __wraith__ statistics in the Monster Manual.\n• Human spirits motivated by fury sometimes return as red-aligned geists called __poltergeists__. Use the __specter__ statistics from the Monster Manual with the __poltergeist__ variant for these creatures.\n• Rarely, human spirits return as benevolent green-aligned geists. Similar to white geists, these spirits protect homes nestled in the forest and keep watch over orchards and groves."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Most white-aligned geists are benevolent, sheltering spirits, and they generally possess the living for their own protection.",
+      "Blue-aligned geists are prone to performing repetitive actions—knocking, arranging things in patterns, stacking objects, making marks, and so on. When they possess the living, they often induce this same kind of obsessive behavior.",
+      "Black-aligned geists hate the living, hungering eternally for life, power, or the settling of a wicked grudge. The victims they possess are forced to commit terrible crimes of violence and murder, and are often left injured, permanently crippled, or dying. These geists might be represented by the __shadow__, __specter__, __will-o'-wisp__, or __wraith__ statistics in the Monster Manual.",
+      "Human spirits motivated by fury sometimes return as red-aligned geists called __poltergeists__. Use the __specter__ statistics from the Monster Manual with the __poltergeist__ variant for these creatures.",
+      "Rarely, human spirits return as benevolent green-aligned geists. Similar to white geists, these spirits protect homes nestled in the forest and keep watch over orchards and groves."
+     ]
+    }
    }
   ]
  },
@@ -58305,7 +58440,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d4",
@@ -58722,7 +58858,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d6",
@@ -59691,8 +59828,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Murgaxor is a bullywug who attended Strixhaven 200 years ago. He was a member of Witherbloom College, though there are no records of him participating in any activities or working on campus.\n• A mean-spirited, egotistical spellcaster, Murgaxor was censured repeatedly for disregarding safety protocols, hexing and cursing peers, and using harmful magic while on campus.\n• University officials believe Murgaxor began his illicit experiments with life-draining magic shortly after he enrolled as a student.\n• In his third year, Murgaxor was expelled for using life-draining magic when it resulted in another student's death. Murgaxor fled before he could be handed over to authorities.\n• For a few years after his expulsion, Murgaxor was reportedly sighted around the outskirts of campus, specifically in Sedgemoor and the Detention Bog. Authorities believed something about those locations enhanced his magic, but he was never caught. Sightings soon stopped, and no further evidence of Murgaxor's presence was found. Officials assumed he was dead and struck Murgaxor from Strixhaven's records, as they considered him a blot on the university's reputation."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Murgaxor is a bullywug who attended Strixhaven 200 years ago. He was a member of Witherbloom College, though there are no records of him participating in any activities or working on campus.",
+      "A mean-spirited, egotistical spellcaster, Murgaxor was censured repeatedly for disregarding safety protocols, hexing and cursing peers, and using harmful magic while on campus.",
+      "University officials believe Murgaxor began his illicit experiments with life-draining magic shortly after he enrolled as a student.",
+      "In his third year, Murgaxor was expelled for using life-draining magic when it resulted in another student's death. Murgaxor fled before he could be handed over to authorities.",
+      "For a few years after his expulsion, Murgaxor was reportedly sighted around the outskirts of campus, specifically in Sedgemoor and the Detention Bog. Authorities believed something about those locations enhanced his magic, but he was never caught. Sightings soon stopped, and no further evidence of Murgaxor's presence was found. Officials assumed he was dead and struck Murgaxor from Strixhaven's records, as they considered him a blot on the university's reputation."
+     ]
+    }
    }
   ]
  },
@@ -61426,7 +61573,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Category",
@@ -61833,7 +61981,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Category",
@@ -63729,7 +63878,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "Category",
@@ -67517,7 +67667,8 @@
    {
     "name": "",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "",
      "headers": [
       "d6",
@@ -70787,8 +70938,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• It has a challenge rating of 22 (41,000 XP).\n• It speaks Deep Speech and Undercommon, and has telepathy out to a range of 120 feet.\n• It has the Magic Resistance and Innate Spellcasting (Psionics) traits, as well as the Tentacles, Extract Brain, and Mind Blast action options (all described below). So long as a mind flayer lich feeds captured souls to its phylactery, it maintains the muscular power of its tentacles and the ability to extract brains.\n• Its suite of legendary actions (described below) is different from that of the normal lich."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "It has a challenge rating of 22 (41,000 XP).",
+      "It speaks Deep Speech and Undercommon, and has telepathy out to a range of 120 feet.",
+      "It has the Magic Resistance and Innate Spellcasting (Psionics) traits, as well as the Tentacles, Extract Brain, and Mind Blast action options (all described below). So long as a mind flayer lich feeds captured souls to its phylactery, it maintains the muscular power of its tentacles and the ability to extract brains.",
+      "Its suite of legendary actions (described below) is different from that of the normal lich."
+     ]
+    }
    },
    {
     "name": "Magic Resistance",
@@ -73957,7 +74117,8 @@
    {
     "name": "Podling Behavior",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Podling Behavior",
      "headers": [
       "d6",
@@ -74150,7 +74311,8 @@
    {
     "name": "Swarm Behavior",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Swarm Behavior",
      "headers": [
       "d4",
@@ -74195,7 +74357,8 @@
    {
     "name": "Swarm Behavior",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Swarm Behavior",
      "headers": [
       "d4",
@@ -74245,7 +74408,8 @@
    {
     "name": "Zombie Apocalypses",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Zombie Apocalypses",
      "headers": [
       "d4",
@@ -74383,7 +74547,8 @@
    {
     "name": "Zombie Apocalypses",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Zombie Apocalypses",
      "headers": [
       "d4",
@@ -74433,7 +74598,8 @@
    {
     "name": "Zombie Apocalypses",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Zombie Apocalypses",
      "headers": [
       "d4",
@@ -76249,8 +76415,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The simulacrum has no special equipment. Consequently, it has AC 12 and lacks the Magic Resistance trait and the Staff of Power action option.\n• It loses all spell slots of 6th level and higher.\n• It has a challenge rating of 8 (3,900 XP)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The simulacrum has no special equipment. Consequently, it has AC 12 and lacks the Magic Resistance trait and the Staff of Power action option.",
+      "It loses all spell slots of 6th level and higher.",
+      "It has a challenge rating of 8 (3,900 XP)."
+     ]
+    }
    }
   ]
  },
@@ -76275,8 +76449,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• The simulacrum has no special equipment. Consequently, it has AC 12 and lacks the Magic Resistance trait and the Staff of Power action option.\n• It loses all spell slots of 6th level and higher.\n• It has a challenge rating of 8 (3,900 XP)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The simulacrum has no special equipment. Consequently, it has AC 12 and lacks the Magic Resistance trait and the Staff of Power action option.",
+      "It loses all spell slots of 6th level and higher.",
+      "It has a challenge rating of 8 (3,900 XP)."
+     ]
+    }
    }
   ]
  },
@@ -76363,8 +76545,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Meloon is neutral good.\n• He loses his telepathy, and his ability to speak and understand Deep Speech.\n• He can attune to Azuredge (see appendix A)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Meloon is neutral good.",
+      "He loses his telepathy, and his ability to speak and understand Deep Speech.",
+      "He can attune to Azuredge (see appendix A)."
+     ]
+    }
    }
   ]
  },

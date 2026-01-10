@@ -54,8 +54,24 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Weapon Proficiency**: You gain proficiency in Simple finesse weapons. Additionally, you gain proficiency in one of the following:\n• • simple melee weapons\n• simple ranged weapons\n• **Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.\n• **Repeatable**: You can take this feat more than once."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Weapon Proficiency**: You gain proficiency in one of the following:",
+      {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "simple melee weapons",
+        "simple ranged and simple finesse weapons"
+       ]
+      },
+      "**Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.",
+      "**Repeatable**: You can take this feat more than once."
+     ]
+    }
    }
   ]
  },
@@ -74,8 +90,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Shrapnel**: When you make an attack with a ranged weapon against a creature that is behind cover and hit, deal extra damage equal to your proficiency bonus.\n• **Firing in Melee**: Being within reach of an enemy doesn't impose Disadvantage on your ranged Attack Rolls with Weapons.\n• **Long Shots**: Attacking at Long Range doesn't impose Disadvantage on your ranged Attack Rolls with Weapons."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Shrapnel**: When you make an attack with a ranged weapon against a creature that is behind cover and hit, deal extra damage equal to your proficiency bonus.",
+      "**Firing in Melee**: Being within reach of an enemy doesn't impose Disadvantage on your ranged Attack Rolls with Weapons.",
+      "**Long Shots**: Attacking at Long Range doesn't impose Disadvantage on your ranged Attack Rolls with Weapons."
+     ]
+    }
    }
   ]
  },
@@ -94,8 +118,14 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Damage Reduction**: While you're wearing Heavy Armor, reduce any damage dealt to you by weapon attacks by an amount equal to your proficiency bonus."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Damage Reduction**: While you're wearing Heavy Armor, reduce any damage dealt to you by weapon attacks by an amount equal to your proficiency bonus."
+     ]
+    }
    }
   ]
  },
@@ -114,8 +144,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Movement Speed**: You gain movement equal to half your movement speed whenever you take an action other than the magic action or the attack action.\n• **Jumping**: Your max jump distance is doubled."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Movement Speed**: You gain movement equal to half your movement speed whenever you take an action other than the magic action or the attack action.",
+      "**Jumping**: Your max jump distance is doubled."
+     ]
+    }
    }
   ]
  },
@@ -134,8 +171,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Shatter Mind**: If you force a creature to make a saving throw to maintain concentration by damaging them with a weapon attack and they fail by 5 or more, the attack becomes a crit. If it was already a crit, then the next time you force them to make a saving throw to maintain concentration within the next minute they have disadvantage.\n• **Guard Mind**: Before you make an intelligence, charisma or wisdom saving throw, you can choose to add your proficiency bonus to the roll. If you do and fail, you cannot use this again until you finish a long rest."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Shatter Mind**: If you force a creature to make a saving throw to maintain concentration by damaging them with a weapon attack and they fail by 5 or more, the attack becomes a crit. If it was already a crit, then the next time you force them to make a saving throw to maintain concentration within the next minute they have disadvantage.",
+      "**Guard Mind**: Before you make an intelligence, charisma or wisdom saving throw, you can choose to add your proficiency bonus to the roll. If you do and fail, you cannot use this again until you finish a long rest."
+     ]
+    }
    }
   ]
  },
@@ -154,8 +198,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Break Concentration**: Once per turn before a creature would succeed or fail on a saving throw to maintain concentration that you caused them to make, you can subtract your proficiency bonus from their saving throw.\n• **Spellguard**: If someone you can touch would fail a saving throw against a spell, you can add twice your proficiency bonus potentially changing it into a success. Once you use this benefit, you can't use it again until you finish a Long or Short Rest."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Break Concentration**: Once per turn before a creature would succeed or fail on a saving throw to maintain concentration that you caused them to make, you can subtract your proficiency bonus from their saving throw.",
+      "**Spellguard**: If someone you can touch would fail a saving throw against a spell, you can add twice your proficiency bonus potentially changing it into a success. Once you use this benefit, you can't use it again until you finish a Long or Short Rest."
+     ]
+    }
    }
   ]
  },
@@ -174,8 +225,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Shrapnel**: When you hit a creature that is behind cover with a spell attack, deal extra damage equal to your proficiency bonus.\n• **Casting in Melee**: Being within reach of an enemy doesn't impose Disadvantage on your Attack Rolls with Spells.\n• **Increased Range**: When you cast a Spell that has a range of at least 10 feet and that requires you to make an Attack Roll, you can increase the Spell's range by 60 feet."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Shrapnel**: When you hit a creature that is behind cover with a spell attack, deal extra damage equal to your proficiency bonus.",
+      "**Casting in Melee**: Being within reach of an enemy doesn't impose Disadvantage on your Attack Rolls with Spells.",
+      "**Increased Range**: When you cast a Spell that has a range of at least 10 feet and that requires you to make an Attack Roll, you can increase the Spell's range by 60 feet."
+     ]
+    }
    }
   ]
  },
@@ -194,8 +253,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Climb Speed**: You have a Climb Speed equal to your Speed\n• **Hop Up**: When you are Prone, getting up only spends 5ft of movement\n• **Jumping**: Once at any time you can add 5 times your proficiency bonus to your jump distance until the start of your next turn. You regain this ability on a short or long rest."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Climb Speed**: You have a Climb Speed equal to your Speed",
+      "**Hop Up**: When you are Prone, getting up only spends 5ft of movement",
+      "**Jumping**: Once at any time you can add 5 times your proficiency bonus to your jump distance until the start of your next turn. You regain this ability on a short or long rest."
+     ]
+    }
    }
   ]
  },
@@ -214,8 +281,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Ignore Loading**: You ignore the Loading property of the Hand Crossbow, Heavy Crossbow, and Crossbow (all called crossbows elsewhere in this feat).\n• **Firing in Melee**: Being within reach of an enemy doesn't impose Disadvantage on your Attack Rolls with crossbows.\n• **Dual Wielding**: When you make the extra attack of the Light weapon property, you can add your Ability Modifier to the damage if that attack is with a crossbow and you aren't already adding that modifier to the damage"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Ignore Loading**: You ignore the Loading property of the Hand Crossbow, Heavy Crossbow, and Crossbow (all called crossbows elsewhere in this feat).",
+      "**Firing in Melee**: Being within reach of an enemy doesn't impose Disadvantage on your Attack Rolls with crossbows.",
+      "**Dual Wielding**: When you make the extra attack of the Light weapon property, you can add your Ability Modifier to the damage if that attack is with a crossbow and you aren't already adding that modifier to the damage"
+     ]
+    }
    }
   ]
  },
@@ -234,8 +309,14 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Flurry**: You can attack twice, instead of once, as part of the light property."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Flurry**: You can attack twice, instead of once, as part of the light property."
+     ]
+    }
    }
   ]
  },
@@ -269,8 +350,15 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Proficiency**: You gain proficiency in one skill of your choice.\n• **Expertise**: Gain expertise in a skill offered by the class that granted you this feat. If you were proficient in that skill, gain proficiency in a skill of your choice."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Proficiency**: You gain proficiency in one skill of your choice.",
+      "**Expertise**: Gain expertise in a skill offered by the class that granted you this feat. If you were proficient in that skill, gain proficiency in a skill of your choice."
+     ]
+    }
    }
   ]
  },
@@ -289,8 +377,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Proficiency**: You gain proficiency in simple weapons and martial weapons.\n• **Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.\n• **Repeatable**: You can take this feat more than once."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Proficiency**: You gain proficiency in simple weapons and martial weapons.",
+      "**Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.",
+      "**Repeatable**: You can take this feat more than once."
+     ]
+    }
    }
   ]
  },
@@ -309,8 +405,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Chosen Element**: When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.\n• **Elemental Affinity**: You gain immunity to the chosen damage type and you can change any damage you deal with spells to the chosen damage type.\n• **Repeatable**: You can take this feat more than once, but you must choose a different element each time for Chosen Element."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Chosen Element**: When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.",
+      "**Elemental Affinity**: You gain immunity to the chosen damage type and you can change any damage you deal with spells to the chosen damage type.",
+      "**Repeatable**: You can take this feat more than once, but you must choose a different element each time for Chosen Element."
+     ]
+    }
    }
   ]
  },
@@ -329,8 +433,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Patient**: You can set two triggers when you hold your action or bonus action.\n• **Counter Damage**: If you reduce damage using an instaneous reaction, reduce by twice as much."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Patient**: You can set two triggers when you hold your action or bonus action.",
+      "**Counter Damage**: If you reduce damage using an instaneous reaction, reduce by twice as much."
+     ]
+    }
    }
   ]
  },
@@ -364,8 +475,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Damage Reduction**: When you take damage from a weapon attack you can reduce the damage by an amount equal to the level of a spell you're concentrating on. If you do, you cannot do so again until the start of your next turn.\n• **Opportunity Spell**: When a creature provokes an Opportunity Attack from you, you can use your Reaction to cast a Spell at the creature, rather than making an Opportunity Attack. The Spell must have a casting time of one Action and must target only that creature."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Damage Reduction**: When you take damage from a weapon attack you can reduce the damage by an amount equal to the level of a spell you're concentrating on. If you do, you cannot do so again until the start of your next turn.",
+      "**Opportunity Spell**: When a creature provokes an Opportunity Attack from you, you can use your Reaction to cast a Spell at the creature, rather than making an Opportunity Attack. The Spell must have a casting time of one Action and must target only that creature."
+     ]
+    }
    }
   ]
  },
@@ -384,8 +502,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Spread Madness**: Whenever you fail a saving throw to maintain concentration, enemies within 5 ft of your must succeed on a constitution saving throw or take psychic damage equal to the level of the spell you're concentrating on plus your proficiency bonus.\n• **Mad Magecraft**: Choose a number of spells you know equal to your proficiency bonus. For each of those spells, choose a damage type. Whenever you cast one of those spells, you can change its damage type to the chosen damage type. You can change one of the spells you chose (and its corresponding damage type) whenever you gain a level in the class that granted you this feat."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Spread Madness**: Whenever you fail a saving throw to maintain concentration, enemies within 5 ft of your must succeed on a constitution saving throw or take psychic damage equal to the level of the spell you're concentrating on plus your proficiency bonus.",
+      "**Mad Magecraft**: Choose a number of spells you know equal to your proficiency bonus. For each of those spells, choose a damage type. Whenever you cast one of those spells, you can change its damage type to the chosen damage type. You can change one of the spells you chose (and its corresponding damage type) whenever you gain a level in the class that granted you this feat."
+     ]
+    }
    }
   ]
  },
@@ -404,8 +529,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Deep Concentration**: Before you take damage you can choose to add your proficiency bonus to a saving throw to maintain concentration that you make as a result of that damage. If you do and fail, you cannot use this again until you finish a short rest.\n• **Vast Memory**: Learn a number of level 1+ spells equal to your proficiency bonus. They must be spells you can already learn from your spellcasting features. You can replace one of the spells with a different one whenever you level up."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Deep Concentration**: Before you take damage you can choose to add your proficiency bonus to a saving throw to maintain concentration that you make as a result of that damage. If you do and fail, you cannot use this again until you finish a short rest.",
+      "**Vast Memory**: Learn a number of level 1+ spells equal to your proficiency bonus. They must be spells you can already learn from your spellcasting features. You can replace one of the spells with a different one whenever you level up."
+     ]
+    }
    }
   ]
  },
@@ -419,8 +551,14 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Large**: Your are one size larger and the weight of your body is multiplied by 4."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Large**: Your are one size larger and the weight of your body is multiplied by 4."
+     ]
+    }
    }
   ]
  },
@@ -434,8 +572,16 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Small**: You are one size smaller and the weight of your body is divided by 4\n• **Dart**: Once when you take the dash action you can increase your movement speed by 10 ft until the start of your next turn. You regain this ability at the start of your next turn.\n• **Crowded**: You can occupy the space of other creatures (no more than one at a time)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Small**: You are one size smaller and the weight of your body is divided by 4",
+      "**Dart**: Once when you take the dash action you can increase your movement speed by 10 ft until the start of your next turn. You regain this ability at the start of your next turn.",
+      "**Crowded**: You can occupy the space of other creatures (no more than one at a time)."
+     ]
+    }
    }
   ]
  },
@@ -454,8 +600,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Tool Proficiency**: You gain proficiency in an Artisan's Tool of your choice.\n• **Slapdash**: When you make or help with a crafting check you can divide the time spent modifier by 2. If you do, you cannot do so again until after a short rest.\n• **Recycle**: When you fail a crafting check there is a 10% chance that your materials are not negatively affected."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Tool Proficiency**: You gain proficiency in an Artisan's Tool of your choice.",
+      "**Slapdash**: When you make or help with a crafting check you can divide the time spent modifier by 2. If you do, you cannot do so again until after a short rest.",
+      "**Recycle**: When you fail a crafting check there is a 10% chance that your materials are not negatively affected."
+     ]
+    }
    }
   ]
  },
@@ -474,8 +628,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Instrument Training**: You gain proficiency in a Musical Instrument of your choice.\n• **Inspiring Song**: As you finish a Long Rest or short rest, you can play a song on a Musical Instrument with which you have Tool Proficiency and give Inspiration to allies who hear the song and do not have any inspiration. The number of allies you can affect in this way equals your Proficiency Bonus."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Instrument Training**: You gain proficiency in a Musical Instrument of your choice.",
+      "**Inspiring Song**: As you finish a Long Rest or short rest, you can play a song on a Musical Instrument with which you have Tool Proficiency and give Inspiration to allies who hear the song and do not have any inspiration. The number of allies you can affect in this way equals your Proficiency Bonus."
+     ]
+    }
    }
   ]
  },
@@ -690,36 +851,6 @@
   ]
  },
  {
-  "name": "Blind",
-  "source": "GaldeveerTanksandFlanks",
-  "url": "https://5e.tools/feats.html#blind_galdeveertanksandflanks",
-  "type": "Origin Feat",
-  "prerequisite": "No higher than 1st-level or you're blind",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "• **Blinded**: You are blind, but you have 120 ft of tremorsense\n• **Heighten Senses**: As a bonus action you can gain advantage on perception checks for one minute. You can do this a number of times equal to your proficiency bonus and regain all uses on a long rest.\n• **Voice Lock**: As an action you can force a creature you see to make a charisma saving throw. For the next ten minutes, whenever you're sensing the target with your tremorsense you can hear what it's saying. You regain this ability after a long rest."
-   }
-  ]
- },
- {
-  "name": "Amputee",
-  "source": "GaldeveerTanksandFlanks",
-  "url": "https://5e.tools/feats.html#amputee_galdeveertanksandflanks",
-  "type": "Origin Feat",
-  "prerequisite": "No higher than 1st level unless one of your hands is unusable and not already affected by this feat",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "• **Unusuable**: You lose the use of one of your hands. Nothing changes if the hand is already unusuable. This might come in the form of a missing arm, missing hand, nerve damaged, etc.\n• **Presthetique**: As an action you can attach up to 1 item to the hand you can't use. It counts as holding that item. As an action you can detach it. It cannot be forcibly removed while you're conscious unless you are willing.\n• **Fancy Feet**: As a reaction to a creature missing an attack roll against you, you can move up to half your movement speed in a straight line without provoking opportunity attacks. You can do this a number of times equal to your proficiency bonus and regain all uses on a long rest.\n• **Repeatable**: You can take this feat more than once, but you must choose a different hand each time for unusable."
-   }
-  ]
- },
- {
   "name": "Patient Disciple",
   "source": "GaldeveerTanksandFlanks",
   "url": "https://5e.tools/feats.html#patient%20disciple_galdeveertanksandflanks",
@@ -734,8 +865,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Clash**: If you make an attack roll with a versatile weapon against a target immediately when it would hit with an attack roll or would be hit by an attack roll, you can choose to clash. If your attack roll is higher than the opposing attack roll, then the opposing attack misses. Additionally, you can choose to make your attack miss the target.\n• **Patience**: If you spend your reaction to use a held action, regain your expended reaction."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Clash**: If you make an attack roll with a versatile weapon against a target immediately when it would hit with an attack roll or would be hit by an attack roll, you can choose to clash. If your attack roll is higher than the opposing attack roll, then the opposing attack misses. Additionally, you can choose to make your attack miss the target.",
+      "**Patience**: If you spend your reaction to use a held action, regain your expended reaction."
+     ]
+    }
    }
   ]
  },
@@ -749,8 +887,17 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Tools**: Gain proficiency in two tools.\n• **Ease of Use**: You can make an ability check with one of these tools without holding it as long as it is on your person.\n• **Masteries**: Gain 2 masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.\n• **Repeatable**: You can take this feat more than once."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Tools**: Gain proficiency in two tools.",
+      "**Ease of Use**: You can make an ability check with one of these tools without holding it as long as it is on your person.",
+      "**Masteries**: Gain 2 masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.",
+      "**Repeatable**: You can take this feat more than once."
+     ]
+    }
    }
   ]
  },
@@ -764,8 +911,17 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Tools**: Gain proficiency in two tools that are not alliances.\n• **Mechanical Focus**: You can use those tools as spell focuses.\n• **Two Cantrips**: Learn two cantrips from a class of your choice. Your spellcasting ability for these cantrips is the spellcasting ability of that class. You can replace these cantrips whenever you gain a level.\n• **Repeatable**: You can take this feat more than once."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Tools**: Gain proficiency in two tools that are not alliances.",
+      "**Mechanical Focus**: You can use those tools as spell focuses.",
+      "**Two Cantrips**: Learn two cantrips from a class of your choice. Your spellcasting ability for these cantrips is the spellcasting ability of that class. You can replace these cantrips whenever you gain a level.",
+      "**Repeatable**: You can take this feat more than once."
+     ]
+    }
    }
   ]
  },
@@ -779,8 +935,14 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Extra Opportunity Attack**: You can attack twice, instead of once, when you make an opportunity attack."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Extra Opportunity Attack**: You can attack twice, instead of once, when you make an opportunity attack."
+     ]
+    }
    }
   ]
  },
@@ -794,8 +956,15 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Somatic Components**: You can perform the Somatic Components of a spell with a hand that is holding a shield.\n• **Protect Concentration**: If you receive a bonus to your AC from your shield or cover against an effect and that effect causes you to make a saving throw to maintain concentration, add those AC bonuses to the saving throw."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Somatic Components**: You can perform the Somatic Components of a spell with a hand that is holding a shield.",
+      "**Protect Concentration**: If you receive a bonus to your AC from your shield or cover against an effect and that effect causes you to make a saving throw to maintain concentration, add those AC bonuses to the saving throw."
+     ]
+    }
    }
   ]
  },
@@ -814,8 +983,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Twin Shield**: You can benefit from up to two shields at the same time.\n• **Weaponized Defenses**: While wielding a shield, you can use 1d6 as the damage die for your unarmed strikes and your opportunity attacks can be unarmed strikes even if you don't have an empty hand.\n• **Dual Don**: You can don or doff two shields when you normally would don or doff one."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Twin Shield**: You can benefit from up to two shields at the same time.",
+      "**Weaponized Defenses**: While wielding a shield, you can use 1d6 as the damage die for your unarmed strikes and your opportunity attacks can be unarmed strikes even if you don't have an empty hand.",
+      "**Dual Don**: You can don or doff two shields when you normally would don or doff one."
+     ]
+    }
    }
   ]
  },
@@ -834,8 +1011,14 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Invocation**: You learn one Eldritch Invocation option of your choice from the warlock class. Your spellcasting ability for any spells granted by this invocation is the ability you increased with this feat. If the invocation has a prerequisite of any kind, you can choose that invocation only if you meet the prerequisite. If the prerequisite states that you must be atleast a level 2 warlock, ignore that requirement. Whenever you gain a level, you can replace the invocation with another one from the warlock class."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Invocation**: You learn one Eldritch Invocation option of your choice from the warlock class. Your spellcasting ability for any spells granted by this invocation is the ability you increased with this feat. If the invocation has a prerequisite of any kind, you can choose that invocation only if you meet the prerequisite. If the prerequisite states that you must be atleast a level 2 warlock, ignore that requirement. Whenever you gain a level, you can replace the invocation with another one from the warlock class."
+     ]
+    }
    }
   ]
  },
@@ -849,8 +1032,15 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Impenetrable**: When you use a reaction granted by a shield you can regain your expended reaction. If you do, you cannot do so again until the start of your next turn. It must be a reaction you haven't used this turn and you cannot use it again this turn.\n• **Swap**: When you would normally draw or stow a weapon, you can instead swap (stow then draw) one shield you're holding with another shield on your person."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Impenetrable**: When you use a reaction granted by a shield you can regain your expended reaction. If you do, you cannot do so again until the start of your next turn. It must be a reaction you haven't used this turn and you cannot use it again this turn.",
+      "**Swap**: When you would normally draw or stow a weapon, you can instead swap (stow then draw) one shield you're holding with another shield on your person."
+     ]
+    }
    }
   ]
  },
@@ -864,8 +1054,17 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Windstep**: Once you can jump without a surface to push off of as long as you are held aloft or have a reduced fall speed. You regain this ability at the start of your next turn.\n• **Feather Fall**: You know the Feather Fall spell and can cast it once without expending a spell slot. You regain this ability after a short rest.\n• **Launch**: As a reaction to getting pushed or pulled you can double the distance that it pushes or pulls you.\n• **Repeatable**: You can take this feat more than once."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Windstep**: Once you can jump without a surface to push off of as long as you are held aloft or have a reduced fall speed. You regain this ability at the start of your next turn.",
+      "**Feather Fall**: You know the Feather Fall spell and can cast it once without expending a spell slot. You regain this ability after a short rest.",
+      "**Launch**: As a reaction to getting pushed or pulled you can double the distance that it pushes or pulls you.",
+      "**Repeatable**: You can take this feat more than once."
+     ]
+    }
    }
   ]
  },
@@ -879,8 +1078,17 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• You gain the following benefits:\n• **Propel**: As a bonus action you can double your Fly, Glide or Hover speed until the end of your next turn. You can do this a number of times equal to your proficiency bonus and regain all uses after a long rest.\n• **Crash Landing**: Once as a reaction before you take damage from falling you can reduce the damage by a number of d6s equal to half your level. You regain this ability after a short rest.\n• **Repeatable**: You can take this feat more than once."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain the following benefits:",
+      "**Propel**: As a bonus action you can double your Fly, Glide or Hover speed until the end of your next turn. You can do this a number of times equal to your proficiency bonus and regain all uses after a long rest.",
+      "**Crash Landing**: Once as a reaction before you take damage from falling you can reduce the damage by a number of d6s equal to half your level. You regain this ability after a short rest.",
+      "**Repeatable**: You can take this feat more than once."
+     ]
+    }
    }
   ]
  },
@@ -894,8 +1102,24 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Ignore Pain**: Choose one of the following:\n• • Whenever you would make a constitution saving throw to maintain concentration, make a wisdom saving throw instead.\n• Use wisdom instead of constitution for maximum hit points and rolling hit dice.\n• **Ignore Death**: Once as a bonus action you can ignore all of the negative effects of having zero or less hit points (including death saving throws) for 5 rounds which conclude at the start of your turn. Rounds where you do not spend any movement do not count towards the duration of the effect. You regain this ability after a long rest.\n• **Repeatable**: You can take this one additional time, but if you do you must pick the other option for ignore pain."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Ignore Pain**: Choose one of the following:",
+      {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Whenever you would make a constitution saving throw to maintain concentration, make a wisdom saving throw instead.",
+        "Use wisdom instead of constitution for maximum hit points and rolling hit dice."
+       ]
+      },
+      "**Ignore Death**: Once as a bonus action you can ignore all of the negative effects of having zero or less hit points (including death saving throws) for 5 rounds which conclude at the start of your turn. Rounds where you do not spend any movement do not count towards the duration of the effect. You regain this ability after a long rest.",
+      "**Repeatable**: You can take this one additional time, but if you do you must pick the other option for ignore pain."
+     ]
+    }
    }
   ]
  },
@@ -909,8 +1133,15 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Emergency Attention**: Immediately before you take the help action to attempt to stabilize a creature you can halve the creature's negative hit points (The hit points must be less than zero). You can use this a number of times equal to your proficiency bonus and regain all uses on a long rest.\n• **Miraculous Recovery**: For every healing die that rolls the highest number it can roll, add a die of that type. This only applies when you are healed or when you heal a creature other than you (choose when you gain this feat)."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Emergency Attention**: Immediately before you take the help action to attempt to stabilize a creature you can halve the creature's negative hit points (The hit points must be less than zero). You can use this a number of times equal to your proficiency bonus and regain all uses on a long rest.",
+      "**Miraculous Recovery**: For every healing die that rolls the highest number it can roll, add a die of that type. This only applies when you are healed or when you heal a creature other than you (choose when you gain this feat)."
+     ]
+    }
    }
   ]
  },
@@ -924,8 +1155,15 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Hazardous Distraction**: As a reaction immediately before a creature you can see within a distance equal to a third of your movement speed is affected by a harmful area of effect you can move up to a third of your movement speed straight towards them. If you end your movement in the area of effect, you can make an opportunity attack with a melee weapon against them.\n• **Avoid Hazard**: When you take the dodge action you can gain immunity to a damage type of your choice until the end of your next turn. You can do this a number of times equal to your proficiency bonus and regain all uses after a long rest."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Hazardous Distraction**: As a reaction immediately before a creature you can see within a distance equal to a third of your movement speed is affected by a harmful area of effect you can move up to a third of your movement speed straight towards them. If you end your movement in the area of effect, you can make an opportunity attack with a melee weapon against them.",
+      "**Avoid Hazard**: When you take the dodge action you can gain immunity to a damage type of your choice until the end of your next turn. You can do this a number of times equal to your proficiency bonus and regain all uses after a long rest."
+     ]
+    }
    }
   ]
  },
@@ -939,8 +1177,15 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Run Away**: When you use the Take Cover reaction you can move three times as far and until the end of the turn you can apply the bonus granted to you by cover to any saving throw you make.\n• **Keep Safe**: When you take the dodge action until the end of your next turn creatures other than you that you can touch have advantage on dexterity saving throws and attack rolls against them have disadvantage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Run Away**: When you use the Take Cover reaction you can move three times as far and until the end of the turn you can apply the bonus granted to you by cover to any saving throw you make.",
+      "**Keep Safe**: When you take the dodge action until the end of your next turn creatures other than you that you can touch have advantage on dexterity saving throws and attack rolls against them have disadvantage."
+     ]
+    }
    }
   ]
  },
@@ -954,8 +1199,15 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Chosen Chemicals**: Choose Poison damage or Acid damage.\n• **Adjust for Species**: Once at any time you can pick a creature type. Until the start of your next turn, damage you deal of the chosen type to creatures of the type you picked ignores resistance and immunity. Additionally, if any of the damage dice roll their highest value add an additional damage die. It is the same damage type and die type. Additional dice can be added in this way no more than a number of times equal to twice the ability modifier increased by this feat to each instance of damage. You can do this a number of times equal to your proficiency bonus and regain all uses on a long rest."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Chosen Chemicals**: Choose Poison damage or Acid damage.",
+      "**Adjust for Species**: Once at any time you can pick a creature type. Until the start of your next turn, damage you deal of the chosen type to creatures of the type you picked ignores resistance and immunity. Additionally, if any of the damage dice roll their highest value add an additional damage die. It is the same damage type and die type. Additional dice can be added in this way no more than a number of times equal to twice the ability modifier increased by this feat to each instance of damage. You can do this a number of times equal to your proficiency bonus and regain all uses on a long rest."
+     ]
+    }
    }
   ]
  },
@@ -969,8 +1221,16 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Proficiency**: You gain proficiency in one tool of your choice.\n• **Expertise**: Gain expertise in a tool offered by the class that granted you this feat. If you were proficient in that tool, gain proficiency in a tool of your choice.\n• **Repeatable**: You can take this feat more than once."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Proficiency**: You gain proficiency in one tool of your choice.",
+      "**Expertise**: Gain expertise in a tool offered by the class that granted you this feat. If you were proficient in that tool, gain proficiency in a tool of your choice.",
+      "**Repeatable**: You can take this feat more than once."
+     ]
+    }
    }
   ]
  },
@@ -984,8 +1244,14 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **1st-level feat**: Gain a first level feat."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**1st-level feat**: Gain a first level feat."
+     ]
+    }
    }
   ]
  },
@@ -999,8 +1265,17 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Concealed Weapon**: Attacking with a light weapon does not reveal you from hiding.\n• **Offhand Punch**: Your unarmed strikes count as light weapons.\n• **Bleed**: Once when you hit with a light weapon you can make the target bleed. If you do, they take damage equal to your proficiency bonus at the end of each of their turns until they use their action to stop it. You regain this ability after a long rest.\n• **Repeatable**: You can take this feat more than once."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Concealed Weapon**: Attacking with a light weapon does not reveal you from hiding.",
+      "**Offhand Punch**: Your unarmed strikes count as light weapons.",
+      "**Bleed**: Once when you hit with a light weapon you can make the target bleed. If you do, they take damage equal to your proficiency bonus at the end of each of their turns until they use their action to stop it. You regain this ability after a long rest.",
+      "**Repeatable**: You can take this feat more than once."
+     ]
+    }
    }
   ]
  },
@@ -1014,8 +1289,16 @@
   "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "• **Toss**: When you take the attack action you can spend one of its attacks to use a consumable that would normally take an action to use. If you do, you cannot do so again until the start of your next turn. You can do this a number of times equal to your proficiency bonus and regain all uses after a long rest.\n• **Fuse**: As an action you can attach a consumable to a surface. Choose a number of rounds up to a minute, concluding at the end of your turn. It must be a consumable that takes an action to use. When someone steps on the 5ft square of surface it's attached to or the fuse's duration has passed, the item is used. The effect is centered on the space adjacent to the surface it was attached to.\n• **At the ready**: You can draw or stow a consumable that takes an action to use when you would normally draw or stow a weapon."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Toss**: When you take the attack action you can spend one of its attacks to use a consumable that would normally take an action to use. If you do, you cannot do so again until the start of your next turn. You can do this a number of times equal to your proficiency bonus and regain all uses after a long rest.",
+      "**Fuse**: As an action you can attach a consumable to a surface. Choose a number of rounds up to a minute, concluding at the end of your turn. It must be a consumable that takes an action to use. When someone steps on the 5ft square of surface it's attached to or the fuse's duration has passed, the item is used. The effect is centered on the space adjacent to the surface it was attached to.",
+      "**At the ready**: You can draw or stow a consumable that takes an action to use when you would normally draw or stow a weapon."
+     ]
+    }
    }
   ]
  },
@@ -1055,7 +1338,8 @@
    {
     "name": "Lesser Dragonmark Benefit",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Lesser Dragonmark Benefit",
      "headers": [
       "Mark",
@@ -1190,7 +1474,8 @@
    {
     "name": "Ashbound Spells",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Ashbound Spells",
      "headers": [
       "Spell Level",
@@ -1258,7 +1543,8 @@
    {
     "name": "Gatekeeper Spells",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Gatekeeper Spells",
      "headers": [
       "Spell Level",
@@ -1331,7 +1617,8 @@
    {
     "name": "Greensinger Spells",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Greensinger Spells",
      "headers": [
       "Spell Level",
@@ -1494,7 +1781,8 @@
    {
     "name": "Shadow's Gift of Stone Spells",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Shadow's Gift of Stone Spells",
      "headers": [
       "Character Level",
@@ -1607,7 +1895,8 @@
    {
     "name": "Voice of the Fury Spells",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Voice of the Fury Spells",
      "headers": [
       "Character Level",
@@ -1710,7 +1999,8 @@
    {
     "name": "Warden of the Wood Spells",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Warden of the Wood Spells",
      "headers": [
       "Spell Level",
@@ -1798,7 +2088,8 @@
    {
     "name": "Children of Winter Spells",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Children of Winter Spells",
      "headers": [
       "Spell Level",
@@ -7040,8 +7331,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Blaster Roulette**: If you roll the same number of two damage dice for a weapon with the Firearm property, you deal bonus damage equal to that number. You can only add this bonus damage once per turn.\n• **Ignore Cooldown**: You ignore the Cooldown property of weapons.\n• **Run and Gun**: When you take the Dash or Disengage action, you can make a ranged attack using a weapon as a Bonus Action."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Blaster Roulette**: If you roll the same number of two damage dice for a weapon with the Firearm property, you deal bonus damage equal to that number. You can only add this bonus damage once per turn.",
+      "**Ignore Cooldown**: You ignore the Cooldown property of weapons.",
+      "**Run and Gun**: When you take the Dash or Disengage action, you can make a ranged attack using a weapon as a Bonus Action."
+     ]
+    }
    }
   ]
  }

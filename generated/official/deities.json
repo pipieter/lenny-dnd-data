@@ -925,8 +925,18 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Scatterstrike**: The halflings run in every direction as if in a panic, but then they regroup and circle back to attack with a concentrated effort.\n• **Turtle Shell**: Halflings cluster together and cover each other with shields, washtubs, wheelbarrows, coffer lids, or anything else that can deflect a blow.\n• **Troll Knocker**: A few halflings act as bait to lure a troll or other large creature into a clearing where the rest of the group can hurl stones at it from concealment to confuse the monster, persuading it to seek other prey.\n• **Swarming Stickwhackers**: Halflings rush an intruder in waves, swatting the enemy with sticks on all sides.\n• **Fiddle and Crack**: A halfling fiddler lures the monster into a trap, usually a net or a pit, followed by several burly halflings wielding large sticks and hitting the monster from a safe vantage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Scatterstrike**: The halflings run in every direction as if in a panic, but then they regroup and circle back to attack with a concentrated effort.",
+      "**Turtle Shell**: Halflings cluster together and cover each other with shields, washtubs, wheelbarrows, coffer lids, or anything else that can deflect a blow.",
+      "**Troll Knocker**: A few halflings act as bait to lure a troll or other large creature into a clearing where the rest of the group can hurl stones at it from concealment to confuse the monster, persuading it to seek other prey.",
+      "**Swarming Stickwhackers**: Halflings rush an intruder in waves, swatting the enemy with sticks on all sides.",
+      "**Fiddle and Crack**: A halfling fiddler lures the monster into a trap, usually a net or a pit, followed by several burly halflings wielding large sticks and hitting the monster from a safe vantage."
+     ]
+    }
    }
   ]
  },
@@ -1051,8 +1061,16 @@
    },
    {
     "name": "Commandments of Asmodeus",
-    "type": "text",
-    "value": "• Assert dominance and power over others. Show your strength of will in the image of the Asmodeus.\n• Repay cruelty done unto you with further evil. If others show you kindness, exploit it.\n• As you ascend to power, do not pity or show mercy to those you climb over to get there. Compassion is for the weak."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Assert dominance and power over others. Show your strength of will in the image of the Asmodeus.",
+      "Repay cruelty done unto you with further evil. If others show you kindness, exploit it.",
+      "As you ascend to power, do not pity or show mercy to those you climb over to get there. Compassion is for the weak."
+     ]
+    }
    }
   ]
  },
@@ -1255,7 +1273,30 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Athreos eternally performs a remarkable labor, ferrying mortal souls to the Underworld. During the River Guide's ages of toil, he has inspired a number of legends.*\n*• **The Athrean Obols**: Some claim that Athreos doesn't collect coins out of greed but because he's looking for five specific treasures. Apocryphal writings in the Underworld library of Oneirrakthys say that Athreos was the first mortal to die. When he came to face the gods, he brought a single treasure as an offering to each of Theros's five mightiest deities, hoping to receive a peaceful place among them in return.*\n*The gods realized what Athreos's spirit represented: the first of an endless flood of mortal souls that would soon begin to join Athreos in death. Unwilling to spend eternity sorting the endless stream of dead mortals themselves, the other gods did give Athreos a place among them, as well as charging him with his impossible task. They also offered him a measure of hope. The gods cast Athreos's offerings back into the mortal world in the form of five coins. They promised Athreos that, once he collected the coins anew, the gods would free the River Guide from his service and welcome him into their ranks. Ever since, Athreos has labored, both at ferrying the dead and in search of his five lost coins, called the Athrean Obols. It's said that any who bring the River Guide one of the coins will be rewarded with a wish for anything Athreos can grant—even exception from death.*\n*• **Death's Denier**: Some legends tell of an ancient shade who has tarried at the banks of the Tartyx longer than any other—a woman, ancient beyond years and clad only in her own flowing hair and sagging skin, who some passing souls mistake for Athreos. This figure is Solyssia, once an oracle of Meletis. Solyssia refuses to pay Athreos's price, or to have it paid for her. For untold centuries, she has harassed the newly dead, learning an incredible amount about the mortal world in the process. The only thing she's less impressed with than the state of the modern world is Athreos, whom she curses like a bitter old friend whenever the River Guide draws near. If any mortal has ever truly known Athreos, it is her.\n• **Eight Exceptions**: Eight times in the course of history, Athreos has purposely allowed a mortal to delay their death or temporarily return from the Underworld. These individuals were restored as living beings (not as Returned) to complete particular tasks. As a record of these exceptions, Athreos bears a Returned-like mask of each individual. Despite centuries between bargains, though, no one who Athreos has made an exception for has ever returned. As a result, the River Guide refuses to make another exception. He might be convinced to do otherwise were someone to bring one of the eight lost souls—such as Biaas the Poison Drinker, Dianyan Half-Heart, or Hundred-Damned Thasmudyan—before him for punishment.*"
+    "value": "*Athreos eternally performs a remarkable labor, ferrying mortal souls to the Underworld. During the River Guide's ages of toil, he has inspired a number of legends.*\n*The gods realized what Athreos's spirit represented: the first of an endless flood of mortal souls that would soon begin to join Athreos in death. Unwilling to spend eternity sorting the endless stream of dead mortals themselves, the other gods did give Athreos a place among them, as well as charging him with his impossible task. They also offered him a measure of hope. The gods cast Athreos's offerings back into the mortal world in the form of five coins. They promised Athreos that, once he collected the coins anew, the gods would free the River Guide from his service and welcome him into their ranks. Ever since, Athreos has labored, both at ferrying the dead and in search of his five lost coins, called the Athrean Obols. It's said that any who bring the River Guide one of the coins will be rewarded with a wish for anything Athreos can grant—even exception from death.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**The Athrean Obols**: Some claim that Athreos doesn't collect coins out of greed but because he's looking for five specific treasures. Apocryphal writings in the Underworld library of Oneirrakthys say that Athreos was the first mortal to die. When he came to face the gods, he brought a single treasure as an offering to each of Theros's five mightiest deities, hoping to receive a peaceful place among them in return."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Death's Denier**: Some legends tell of an ancient shade who has tarried at the banks of the Tartyx longer than any other—a woman, ancient beyond years and clad only in her own flowing hair and sagging skin, who some passing souls mistake for Athreos. This figure is Solyssia, once an oracle of Meletis. Solyssia refuses to pay Athreos's price, or to have it paid for her. For untold centuries, she has harassed the newly dead, learning an incredible amount about the mortal world in the process. The only thing she's less impressed with than the state of the modern world is Athreos, whom she curses like a bitter old friend whenever the River Guide draws near. If any mortal has ever truly known Athreos, it is her.",
+      "**Eight Exceptions**: Eight times in the course of history, Athreos has purposely allowed a mortal to delay their death or temporarily return from the Underworld. These individuals were restored as living beings (not as Returned) to complete particular tasks. As a record of these exceptions, Athreos bears a Returned-like mask of each individual. Despite centuries between bargains, though, no one who Athreos has made an exception for has ever returned. As a result, the River Guide refuses to make another exception. He might be convinced to do otherwise were someone to bring one of the eight lost souls—such as Biaas the Poison Drinker, Dianyan Half-Heart, or Hundred-Damned Thasmudyan—before him for punishment."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -1290,7 +1331,8 @@
    {
     "name": "Athreos's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Athreos's Favor",
      "headers": [
       "d6",
@@ -1332,7 +1374,8 @@
    {
     "name": "Athreos's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Athreos's Ideals",
      "headers": [
       "d6",
@@ -1373,8 +1416,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Providing coins and overseeing burial rites for those slain during a tragedy\n• Ensuring that the deeds and knowledge of someone who has died are preserved\n• Slaying a Returned and its associated eidolon"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Providing coins and overseeing burial rites for those slain during a tragedy",
+      "Ensuring that the deeds and knowledge of someone who has died are preserved",
+      "Slaying a Returned and its associated eidolon"
+     ]
+    }
    },
    {
     "name": "",
@@ -1383,13 +1434,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Denying a dying person their final rites\n• Removing wealth from a corpse or defiling a tomb\n• Aiding those who seek to escape from the Underworld, or who already have"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Denying a dying person their final rites",
+      "Removing wealth from a corpse or defiling a tomb",
+      "Aiding those who seek to escape from the Underworld, or who already have"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Athreos's Devotee\n• Athreos's Votary\n• Athreos's Disciple\n• Champion of the Passage"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Athreos's Devotee",
+      "Athreos's Votary",
+      "Athreos's Disciple",
+      "Champion of the Passage"
+     ]
+    }
    }
   ]
  },
@@ -1677,8 +1745,16 @@
    },
    {
     "name": "Commandments of Avandra",
-    "type": "text",
-    "value": "• Luck favors the bold. Your fate is your own to grasp, and to do so is to have the Change Bringer behind you.\n• Change is inevitable. The righteous can ensure that such change is for the better.\n• Rise against tyranny. Fight for the freedom of yourself and others when you can, and inspire others to fight when you cannot."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Luck favors the bold. Your fate is your own to grasp, and to do so is to have the Change Bringer behind you.",
+      "Change is inevitable. The righteous can ensure that such change is for the better.",
+      "Rise against tyranny. Fight for the freedom of yourself and others when you can, and inspire others to fight when you cannot."
+     ]
+    }
    }
   ]
  },
@@ -1961,8 +2037,16 @@
    },
    {
     "name": "Commandments of Bahamut",
-    "type": "text",
-    "value": "• Stand as a paragon of honor and justice.\n• Smite evil wherever it is found, yet show compassion to those who have strayed from the path of righteousness.\n• Defend the weak, bring freedom to the persecuted, and protect the ideals of justice and order."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Stand as a paragon of honor and justice.",
+      "Smite evil wherever it is found, yet show compassion to those who have strayed from the path of righteousness.",
+      "Defend the weak, bring freedom to the persecuted, and protect the ideals of justice and order."
+     ]
+    }
    }
   ]
  },
@@ -2259,8 +2343,16 @@
    },
    {
     "name": "Commandments of Bane",
-    "type": "text",
-    "value": "• Fear is your ally. Conquer your fear and inspire it in your foes.\n• Disorder and rebellion are to be punished severely.\n• Combat is the greatest gift, and perfecting your skills to master it is the greatest pursuit."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Fear is your ally. Conquer your fear and inspire it in your foes.",
+      "Disorder and rebellion are to be punished severely.",
+      "Combat is the greatest gift, and perfecting your skills to master it is the greatest pursuit."
+     ]
+    }
    }
   ]
  },
@@ -4074,8 +4166,16 @@
    },
    {
     "name": "Commandments of Corellon",
-    "type": "text",
-    "value": "• Create, inspire, and find beauty in all that you do.\n• Follow the echoes of lost magics, forgotten sites, and ancient art, for within these lie the Arch Heart's first works.\n• Combat the followers of Lolth wherever they might be."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Create, inspire, and find beauty in all that you do.",
+      "Follow the echoes of lost magics, forgotten sites, and ancient art, for within these lie the Arch Heart's first works.",
+      "Combat the followers of Lolth wherever they might be."
+     ]
+    }
    }
   ]
  },
@@ -5847,7 +5947,22 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Ephara's deeds demonstrate her commitment to the poleis and those who seek their improvement.*\n*• **Founding of Meletis**: The city-state of Meletis was once part of the archon Agnomakhos's empire. The archon ruled his territory with absolute cruelty. Ephara bestowed her magic on the subjugated populace to enable them to fight back and overthrow Agnomakhos. The newly freed people then established Meletis, as the settlement on that site is known today. The founding of Ephara's favored city is still celebrated today, both in Meletis and elsewhere among the god's followers, as the summer holiday of Polidrysion, which gives its name to the fourth month in the Meletian calendar.\n• **Earthquake in Meletis**: The temple of Ephara in Meletis is the god's largest and grandest place of worship on Theros. It is kept in perfect repair, and worn or damaged pieces of the structure are quickly replaced. During an enormous earthquake, many of the structures in Meletis crumbled. Ephara kept her temple standing throughout the mighty quake, making it a place for Meletians to take refuge in the following days during the aftershocks. After the cataclysm, she shared designs from her scrolls of sacred knowledge with the architects of Meletis so they could rebuild the city to be much more resistant to earthquakes.\n• **The Library of Glossion**: The small town of Glossion boasts a remarkable library that according to local legend was a gift from Ephara. Other tales suggest that the library was actually founded by an ancient sage named Anatheia, but then a terrible fire destroyed the place, and along with it generations of collected knowledge. Once the people finished rebuilding the structure to start the library over, Ephara is said to have appeared and restored the books and scrolls the library had lost, copying the information from her personal scrolls of sacred knowledge.\n• **Savior of Altrisos**: A kraken that escaped its sea lock once threatened the small seaside city of Altrisos. Recently weakened by a triton raid, the city had no defenses left and would be destroyed by an attack. The people prayed to Ephara, and the large image of her face on the city's wall came to life. The walls of the city grew impossibly high and strong, and the kraken could do no more than dash its head against the impassable barrier. The monster soon returned to the ocean to find an easier meal.\n• **Trial of Aristhenes**: A man named Aristhenes committed many murders, targeting members of the government and some of their family members. When he was arrested and put to trial, he claimed that no one could fairly judge him because every qualified judge was personally affected by the case. Ephara herself came to the city to serve as judge for the trial, since no one could accuse her of anything but perfect impartiality, and she found Aristhenes guilty.*"
+    "value": "*Ephara's deeds demonstrate her commitment to the poleis and those who seek their improvement.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Founding of Meletis**: The city-state of Meletis was once part of the archon Agnomakhos's empire. The archon ruled his territory with absolute cruelty. Ephara bestowed her magic on the subjugated populace to enable them to fight back and overthrow Agnomakhos. The newly freed people then established Meletis, as the settlement on that site is known today. The founding of Ephara's favored city is still celebrated today, both in Meletis and elsewhere among the god's followers, as the summer holiday of Polidrysion, which gives its name to the fourth month in the Meletian calendar.",
+      "**Earthquake in Meletis**: The temple of Ephara in Meletis is the god's largest and grandest place of worship on Theros. It is kept in perfect repair, and worn or damaged pieces of the structure are quickly replaced. During an enormous earthquake, many of the structures in Meletis crumbled. Ephara kept her temple standing throughout the mighty quake, making it a place for Meletians to take refuge in the following days during the aftershocks. After the cataclysm, she shared designs from her scrolls of sacred knowledge with the architects of Meletis so they could rebuild the city to be much more resistant to earthquakes.",
+      "**The Library of Glossion**: The small town of Glossion boasts a remarkable library that according to local legend was a gift from Ephara. Other tales suggest that the library was actually founded by an ancient sage named Anatheia, but then a terrible fire destroyed the place, and along with it generations of collected knowledge. Once the people finished rebuilding the structure to start the library over, Ephara is said to have appeared and restored the books and scrolls the library had lost, copying the information from her personal scrolls of sacred knowledge.",
+      "**Savior of Altrisos**: A kraken that escaped its sea lock once threatened the small seaside city of Altrisos. Recently weakened by a triton raid, the city had no defenses left and would be destroyed by an attack. The people prayed to Ephara, and the large image of her face on the city's wall came to life. The walls of the city grew impossibly high and strong, and the kraken could do no more than dash its head against the impassable barrier. The monster soon returned to the ocean to find an easier meal.",
+      "**Trial of Aristhenes**: A man named Aristhenes committed many murders, targeting members of the government and some of their family members. When he was arrested and put to trial, he claimed that no one could fairly judge him because every qualified judge was personally affected by the case. Ephara herself came to the city to serve as judge for the trial, since no one could accuse her of anything but perfect impartiality, and she found Aristhenes guilty."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -5882,7 +5997,8 @@
    {
     "name": "Ephara's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Ephara's Favor",
      "headers": [
       "d6",
@@ -5924,7 +6040,8 @@
    {
     "name": "Ephara's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Ephara's Ideals",
      "headers": [
       "d6",
@@ -5965,8 +6082,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Defending a city from a major threat\n• Defeating a tyrant who threatens a city's freedom\n• Creating a masterwork, such as a building or a poem"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Defending a city from a major threat",
+      "Defeating a tyrant who threatens a city's freedom",
+      "Creating a masterwork, such as a building or a poem"
+     ]
+    }
    },
    {
     "name": "",
@@ -5975,13 +6100,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Betraying one's trust to commit acts of corruption or tyranny\n• Destroying a civic institution or sowing chaos within a city\n• Willfully breaking just laws for personal gain"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Betraying one's trust to commit acts of corruption or tyranny",
+      "Destroying a civic institution or sowing chaos within a city",
+      "Willfully breaking just laws for personal gain"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Ephara's Devotee\n• Ephara's Votary\n• Ephara's Disciple\n• Champion of the Polis"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Ephara's Devotee",
+      "Ephara's Votary",
+      "Ephara's Disciple",
+      "Champion of the Polis"
+     ]
+    }
    }
   ]
  },
@@ -6076,8 +6218,16 @@
    },
    {
     "name": "Commandments of Erathis",
-    "type": "text",
-    "value": "• Utilize the company and aid of others. The efforts of the individual often pale against the capabilities of the community.\n• Strive to tame the wilds in the name of civilization, and defend the points of light and order against the chaos of darkness.\n• Uphold and revere the spirit of invention. Create new settlements, build where inspiration strikes, and expand the edicts of the Law Bearer."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Utilize the company and aid of others. The efforts of the individual often pale against the capabilities of the community.",
+      "Strive to tame the wilds in the name of civilization, and defend the points of light and order against the chaos of darkness.",
+      "Uphold and revere the spirit of invention. Create new settlements, build where inspiration strikes, and expand the edicts of the Law Bearer."
+     ]
+    }
    }
   ]
  },
@@ -6188,7 +6338,21 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Erebos appears in many god-stories, often as a villain or a foil to the other gods. The stories told by his followers emphasize his power, the wealth of the Underworld, and the inevitability of death.*\n*• **Kytheon's Escape**: Many know the story of Kytheon Iora, an Akroan orphan who took up Heliod's spear and attempted to kill Erebos himself. The tale ends in tragedy, as Kytheon was struck down along with his friends. Only the high priests of Erebos, however, know that Kytheon's soul isn't in the Underworld, having somehow escaped right before Erebos's eyes. Suspecting that either Heliod or Kruphix knows where Kytheon's soul went, Erebos will reward anyone who can tell him.\n• **Menelaia's Song**: Long ago, a master lyrist named Menelaia mourned her lover, Pero. She entered the Winter Nexus, a cave on the edge of Setessa that leads to the Underworld, and played a love song to lure Pero's soul back to the mortal world. When Erebos saw this, he became furious, and he extended his whip to draw both of the lovers back. But Menelaia was beloved of Nylea, and that god blocked Erebos's whip with vines. The two lovers lived long lives together. Erebos had the last word, however, tormenting both of the lovers in the Underworld. To this day, this turn of events plagues Nylea, who seeks a way to bring the lovers peace.\n• **The Return of Daxos**: Daxos of Meletis was a powerful oracle who heard the voices of all the gods. Daxos tragically died at the hands of his lover, the champion of Heliod, Elspeth, through the duplicity of the satyr Xenagos. Daxos's soul passed into the Underworld, and Elspeth sought Erebos's help to travel into Nyx. After passing Erebos's test for admittance, Elspeth demanded an additional reward: she would trade her life for Daxos's. Erebos, always eager to claim a champion of the sun god, agreed. Elspeth died shortly after her triumph over Xenagos, whereupon Erebos kept his word—but in a treacherous fashion, allowing Daxos's body to go back to the mortal world as a Returned. Bereft of memories, he wanders aimlessly.\n• **A Shadowed World**: Heliod's followers maintain that their god gave rise to Erebos by casting a shadow in the sun's first light. Followers of Erebos say that this tale is self-refuting. Before there ever was a sun, the entire world stood in shadow, and the shadow was Erebos—elder to Heliod. Only with the first dawning was Erebos's form diminished enough that Heliod could overpower him, and the god of the dead has never forgiven his upstart brother. The faithful of both Erebos and Heliod viciously argue the details of their gods' origins, some risking their lives in battle over which of their gods came into being first.*"
+    "value": "*Erebos appears in many god-stories, often as a villain or a foil to the other gods. The stories told by his followers emphasize his power, the wealth of the Underworld, and the inevitability of death.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Kytheon's Escape**: Many know the story of Kytheon Iora, an Akroan orphan who took up Heliod's spear and attempted to kill Erebos himself. The tale ends in tragedy, as Kytheon was struck down along with his friends. Only the high priests of Erebos, however, know that Kytheon's soul isn't in the Underworld, having somehow escaped right before Erebos's eyes. Suspecting that either Heliod or Kruphix knows where Kytheon's soul went, Erebos will reward anyone who can tell him.",
+      "**Menelaia's Song**: Long ago, a master lyrist named Menelaia mourned her lover, Pero. She entered the Winter Nexus, a cave on the edge of Setessa that leads to the Underworld, and played a love song to lure Pero's soul back to the mortal world. When Erebos saw this, he became furious, and he extended his whip to draw both of the lovers back. But Menelaia was beloved of Nylea, and that god blocked Erebos's whip with vines. The two lovers lived long lives together. Erebos had the last word, however, tormenting both of the lovers in the Underworld. To this day, this turn of events plagues Nylea, who seeks a way to bring the lovers peace.",
+      "**The Return of Daxos**: Daxos of Meletis was a powerful oracle who heard the voices of all the gods. Daxos tragically died at the hands of his lover, the champion of Heliod, Elspeth, through the duplicity of the satyr Xenagos. Daxos's soul passed into the Underworld, and Elspeth sought Erebos's help to travel into Nyx. After passing Erebos's test for admittance, Elspeth demanded an additional reward: she would trade her life for Daxos's. Erebos, always eager to claim a champion of the sun god, agreed. Elspeth died shortly after her triumph over Xenagos, whereupon Erebos kept his word—but in a treacherous fashion, allowing Daxos's body to go back to the mortal world as a Returned. Bereft of memories, he wanders aimlessly.",
+      "**A Shadowed World**: Heliod's followers maintain that their god gave rise to Erebos by casting a shadow in the sun's first light. Followers of Erebos say that this tale is self-refuting. Before there ever was a sun, the entire world stood in shadow, and the shadow was Erebos—elder to Heliod. Only with the first dawning was Erebos's form diminished enough that Heliod could overpower him, and the god of the dead has never forgiven his upstart brother. The faithful of both Erebos and Heliod viciously argue the details of their gods' origins, some risking their lives in battle over which of their gods came into being first."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -6223,7 +6387,8 @@
    {
     "name": "Erebos's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Erebos's Favor",
      "headers": [
       "d6",
@@ -6265,7 +6430,8 @@
    {
     "name": "Erebos's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Erebos's Ideals",
      "headers": [
       "d6",
@@ -6306,8 +6472,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Convincing a group of people to accept misfortune\n• Easing someone's death or assisting with funeral arrangements\n• Retrieving a prominent figure's eidolon or Returned form\n• Thwarting the schemes of Heliod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Convincing a group of people to accept misfortune",
+      "Easing someone's death or assisting with funeral arrangements",
+      "Retrieving a prominent figure's eidolon or Returned form",
+      "Thwarting the schemes of Heliod"
+     ]
+    }
    },
    {
     "name": "",
@@ -6316,13 +6491,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Saving a life without securing compensation for Erebos\n• Forsaking your duties for personal gain or pleasure\n• Allowing a soul to escape the Underworld"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Saving a life without securing compensation for Erebos",
+      "Forsaking your duties for personal gain or pleasure",
+      "Allowing a soul to escape the Underworld"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Erebos's Devotee\n• Erebos's Votary\n• Erebos's Disciple\n• Champion of the Dead"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Erebos's Devotee",
+      "Erebos's Votary",
+      "Erebos's Disciple",
+      "Champion of the Dead"
+     ]
+    }
    }
   ]
  },
@@ -7600,8 +7792,16 @@
    },
    {
     "name": "Commandments of Gruumsh",
-    "type": "text",
-    "value": "• Ruin. Conquer. Kill.\n• The weak exist to be crushed by the strong. Be the strong.\n• There are no emotions but fury and joy. The rest are weakness."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Ruin. Conquer. Kill.",
+      "The weak exist to be crushed by the strong. Be the strong.",
+      "There are no emotions but fury and joy. The rest are weakness."
+     ]
+    }
    }
   ]
  },
@@ -8346,7 +8546,20 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Many legends about Heliod highlight his mercurial nature, even while acclaiming him as a god of bravery and justice.*\n***Battle with Purphoros**: In his desire to establish himself as the leader of the pantheon, Heliod attempted to commission Purphoros to rebuild Nyx in Heliod's image. Angered by Heliod's claim to rulership, Purphoros forged the sword Godsend to fight Heliod. As their conflict raged, Purphoros's sword cut the fabric of Nyx, opening the boundary between the realms of gods and mortals. As a result, the hydra Polukranos fell to the mortal world, but Heliod and Nylea joined forces to bind the hydra in the Nessian Wood. Years later, the hydra broke free of its bonds, and Heliod chose a mortal, Elspeth Tirel, to slay the hydra as his champion—using a spear called Godsend, forged from Purphoros's sword.\n• **Birth of Erebos**: Some myths claim that Heliod was the first of the gods, though most people believe that distinction belongs to Kruphix. These myths also say that when the light of Heliod's own sun fell on him, Heliod saw his shadow and feared it. He banished the shadow to the land beyond the Rivers That Ring the World, and it became Erebos, god of the dead and ruler of the Underworld.\n• **Origin of the Catoblepas**: When a herder boasted that his cattle were the finest in Theros because Heliod and Nylea had created them, the gods grew angry at this falsehood. Heliod persuaded Mogis to curse the cattle, transforming them into the first catoblepases. As a result, many animal breeders prove excessively modest to this day, with humble-boasts being common and well understood among both buyers and sellers. Livestock that are \"as Heliod intended\" or \"praiseless beasts\" might be considered second to none.\n• **Road to the Sun**: After a life in Heliod's service, the aged oracle Solsemon departed on a final pilgrimage: setting forth to visit the sun. Day after day he journeyed east, seeking the lands from which the sun rose. He journeyed far and was mocked everywhere people learned of his quest. Worse, his sight grew ever weaker as he spent days staring at the sun. Yet still he traveled on. Even when blindness claimed Solsemon's sight, the oracle continued undaunted. Finally, one day, Solsemon found a warm, calm place. There, a powerful voice he'd heard in his dreams welcomed him to his journey's end. Praising Heliod, the oracle took his rest, and after several long, contented hours, peacefully died. Ever since, the tale of Solsemon has been argued as both a parable of determination and a warning not to pursue that which is divine.*\n***Spear of Heliod**: Heliod wields the spear Khrusor, which can strike any point on Theros, even in the depths of the Underworld. One tale describes how a wrathful Heliod used his spear to smite a human polis whose people angered him with their hubris: the entire city of Olantin sunk beneath the sea when Heliod struck it with his spear.*"
+    "value": "*Many legends about Heliod highlight his mercurial nature, even while acclaiming him as a god of bravery and justice.*\n***Battle with Purphoros**: In his desire to establish himself as the leader of the pantheon, Heliod attempted to commission Purphoros to rebuild Nyx in Heliod's image. Angered by Heliod's claim to rulership, Purphoros forged the sword Godsend to fight Heliod. As their conflict raged, Purphoros's sword cut the fabric of Nyx, opening the boundary between the realms of gods and mortals. As a result, the hydra Polukranos fell to the mortal world, but Heliod and Nylea joined forces to bind the hydra in the Nessian Wood. Years later, the hydra broke free of its bonds, and Heliod chose a mortal, Elspeth Tirel, to slay the hydra as his champion—using a spear called Godsend, forged from Purphoros's sword.*\n***Spear of Heliod**: Heliod wields the spear Khrusor, which can strike any point on Theros, even in the depths of the Underworld. One tale describes how a wrathful Heliod used his spear to smite a human polis whose people angered him with their hubris: the entire city of Olantin sunk beneath the sea when Heliod struck it with his spear.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Birth of Erebos**: Some myths claim that Heliod was the first of the gods, though most people believe that distinction belongs to Kruphix. These myths also say that when the light of Heliod's own sun fell on him, Heliod saw his shadow and feared it. He banished the shadow to the land beyond the Rivers That Ring the World, and it became Erebos, god of the dead and ruler of the Underworld.",
+      "**Origin of the Catoblepas**: When a herder boasted that his cattle were the finest in Theros because Heliod and Nylea had created them, the gods grew angry at this falsehood. Heliod persuaded Mogis to curse the cattle, transforming them into the first catoblepases. As a result, many animal breeders prove excessively modest to this day, with humble-boasts being common and well understood among both buyers and sellers. Livestock that are \"as Heliod intended\" or \"praiseless beasts\" might be considered second to none.",
+      "**Road to the Sun**: After a life in Heliod's service, the aged oracle Solsemon departed on a final pilgrimage: setting forth to visit the sun. Day after day he journeyed east, seeking the lands from which the sun rose. He journeyed far and was mocked everywhere people learned of his quest. Worse, his sight grew ever weaker as he spent days staring at the sun. Yet still he traveled on. Even when blindness claimed Solsemon's sight, the oracle continued undaunted. Finally, one day, Solsemon found a warm, calm place. There, a powerful voice he'd heard in his dreams welcomed him to his journey's end. Praising Heliod, the oracle took his rest, and after several long, contented hours, peacefully died. Ever since, the tale of Solsemon has been argued as both a parable of determination and a warning not to pursue that which is divine."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -8391,7 +8604,8 @@
    {
     "name": "Heliod's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Heliod's Favor",
      "headers": [
       "d6",
@@ -8433,7 +8647,8 @@
    {
     "name": "Heliod's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Heliod's Ideals",
      "headers": [
       "d6",
@@ -8474,8 +8689,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Carrying out punishment on a fugitive from justice\n• Exacting vengeance for a significant wrong done to you\n• Defending a polis from attacking monsters\n• Building or restoring a temple to Heliod"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Carrying out punishment on a fugitive from justice",
+      "Exacting vengeance for a significant wrong done to you",
+      "Defending a polis from attacking monsters",
+      "Building or restoring a temple to Heliod"
+     ]
+    }
    },
    {
     "name": "",
@@ -8484,13 +8708,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Breaking an explicit promise or oath\n• Violating any just law\n• Putting others at risk through your own cowardice"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Breaking an explicit promise or oath",
+      "Violating any just law",
+      "Putting others at risk through your own cowardice"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Heliod's Devotee\n• Heliod's Votary\n• Heliod's Disciple\n• Champion of the Sun"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Heliod's Devotee",
+      "Heliod's Votary",
+      "Heliod's Disciple",
+      "Champion of the Sun"
+     ]
+    }
    }
   ]
  },
@@ -9402,8 +9643,16 @@
    },
    {
     "name": "Commandments of Ioun",
-    "type": "text",
-    "value": "• Unmask those who would destroy Ioun. Learn their secrets and unveil them to the world.\n• Uphold and teach the importance of reason, perception, and truth in guiding one's emotions and path.\n• Condemn those who lie without moral cause, for evil folk gain power when their followers obscure the truth. Never stoop to the level of selfish liars."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Unmask those who would destroy Ioun. Learn their secrets and unveil them to the world.",
+      "Uphold and teach the importance of reason, perception, and truth in guiding one's emotions and path.",
+      "Condemn those who lie without moral cause, for evil folk gain power when their followers obscure the truth. Never stoop to the level of selfish liars."
+     ]
+    }
    }
   ]
  },
@@ -9504,7 +9753,20 @@
    {
     "name": "",
     "type": "text",
-    "value": "*The myths told about Iroas's deeds acclaim his valor and bravery as well as his inflexibility and stubbornness. Countless tales tell of him or his champions besting terrible beasts, enemy armies, or threats to the world. Still other stories rise beyond accounts of his victories.*\n*• **Bulwark of Brotherhood**: Iroas carries a battle-worn bronze shield called the Bulwark of Brotherhood. It symbolizes the protective bond shared by all soldiers at war and his determination, ironically, to defeat his own brother. In the myth of Rygyra the Slinger, the soldier never missed when she launched stones from her magic sling. Yet, even so, her every shot bounced off the giant minotaur, Raksolcs Ravage-Soul. As the minotaur terror closed in on her, Rygyra whispered a prayer to Iroas and braced her flimsy wooden shield, knowing it would offer no defense against the giant's strikes. Yet, when the blow came, the shield resounded with the barest metallic clang—like a pin falling on bronze. Opening her eyes, Rygyra discovered that her shield had transformed into a gleaming bulwark—Iroas's own shield. Enraged, Raksolcs beat on the shield, leaving not even a dent. After hours of this, the minotaur collapsed, panting and exhausted. Only then did Rygyra emerge and strangle the brute with his own tongue.\n• **Draught of Glory**: Followers of Iroas often push their physical and emotional limits, pursuing victory above all things. Even as priests of Iroas coach their followers to be the best, the most experienced religious leaders—particularly those who have retired from athletic competition—warn of growing addicted to triumph. Ultimately, they teach, only Iroas can drink endlessly from the river of glory and suffer no ill effects. Mortals, though, can grow intoxicated by victory and sickened by unattainable ideas of honor or eternal praise. Therefore, wise competitors are encouraged to seek only their draught of glory—a finite amount that they might revel in but that allows them to experience a life beyond grasping for greatness. Those who don't find themselves upon the path to despair, personal harm, and the temptations of Mogis.\n• **Kalemne, Disciple of Iroas**: One of the greatest of Iroas's champions, Kalemne is a stone giant sworn to the service of the god of war. A warrior of tremendous strength and tactical skill, she has imposed martial discipline on the most unruly of troops and has led squads of giants and minotaurs to glorious victories. Her devotion to Iroas is absolute, and her commitment to victory is unwavering. Countless petitioners have sought out Kalemne over the years, seeking her aid in righting wrongs or preventing disasters. Though she sympathizes with all who tell her their tragic tales, Kalemne has committed to aiding only those who can defeat her in a contest of athletic skill or a test of speed. Those who do can count on her aid, and possibly that of her troops. Those who can't must seek other answers to their problems.*"
+    "value": "*The myths told about Iroas's deeds acclaim his valor and bravery as well as his inflexibility and stubbornness. Countless tales tell of him or his champions besting terrible beasts, enemy armies, or threats to the world. Still other stories rise beyond accounts of his victories.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Bulwark of Brotherhood**: Iroas carries a battle-worn bronze shield called the Bulwark of Brotherhood. It symbolizes the protective bond shared by all soldiers at war and his determination, ironically, to defeat his own brother. In the myth of Rygyra the Slinger, the soldier never missed when she launched stones from her magic sling. Yet, even so, her every shot bounced off the giant minotaur, Raksolcs Ravage-Soul. As the minotaur terror closed in on her, Rygyra whispered a prayer to Iroas and braced her flimsy wooden shield, knowing it would offer no defense against the giant's strikes. Yet, when the blow came, the shield resounded with the barest metallic clang—like a pin falling on bronze. Opening her eyes, Rygyra discovered that her shield had transformed into a gleaming bulwark—Iroas's own shield. Enraged, Raksolcs beat on the shield, leaving not even a dent. After hours of this, the minotaur collapsed, panting and exhausted. Only then did Rygyra emerge and strangle the brute with his own tongue.",
+      "**Draught of Glory**: Followers of Iroas often push their physical and emotional limits, pursuing victory above all things. Even as priests of Iroas coach their followers to be the best, the most experienced religious leaders—particularly those who have retired from athletic competition—warn of growing addicted to triumph. Ultimately, they teach, only Iroas can drink endlessly from the river of glory and suffer no ill effects. Mortals, though, can grow intoxicated by victory and sickened by unattainable ideas of honor or eternal praise. Therefore, wise competitors are encouraged to seek only their draught of glory—a finite amount that they might revel in but that allows them to experience a life beyond grasping for greatness. Those who don't find themselves upon the path to despair, personal harm, and the temptations of Mogis.",
+      "**Kalemne, Disciple of Iroas**: One of the greatest of Iroas's champions, Kalemne is a stone giant sworn to the service of the god of war. A warrior of tremendous strength and tactical skill, she has imposed martial discipline on the most unruly of troops and has led squads of giants and minotaurs to glorious victories. Her devotion to Iroas is absolute, and her commitment to victory is unwavering. Countless petitioners have sought out Kalemne over the years, seeking her aid in righting wrongs or preventing disasters. Though she sympathizes with all who tell her their tragic tales, Kalemne has committed to aiding only those who can defeat her in a contest of athletic skill or a test of speed. Those who do can count on her aid, and possibly that of her troops. Those who can't must seek other answers to their problems."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -9544,7 +9806,8 @@
    {
     "name": "Iroas's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Iroas's Favor",
      "headers": [
       "d6",
@@ -9586,7 +9849,8 @@
    {
     "name": "Iroas's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Iroas's Ideals",
      "headers": [
       "d6",
@@ -9627,8 +9891,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Achieving a great victory\n• Overcoming long odds honorably\n• Defeating a skilled foe in single combat\n• Winning a great feat of strength or skill"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Achieving a great victory",
+      "Overcoming long odds honorably",
+      "Defeating a skilled foe in single combat",
+      "Winning a great feat of strength or skill"
+     ]
+    }
    },
    {
     "name": "",
@@ -9637,13 +9910,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Showing cowardice in battle\n• Besting an honorable foe through deceit\n• Harming innocents or noncombatants"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Showing cowardice in battle",
+      "Besting an honorable foe through deceit",
+      "Harming innocents or noncombatants"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Iroas's Devotee\n• Iroas's Votary\n• Iroas's Disciple\n• Champion of Victory"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Iroas's Devotee",
+      "Iroas's Votary",
+      "Iroas's Disciple",
+      "Champion of Victory"
+     ]
+    }
    }
   ]
  },
@@ -9955,7 +10245,22 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Karametra rarely engages in legendary undertakings. It is her unshakable reliability that makes her a popular deity.*\n*• **The Miraculous Field**: Outside Setessa is a farm that produces incredible fruits and grains that can heal illnesses, increase fertility, and stave off hunger for days. The field is said to be Karametra's tribute to her beloved human priest, Thamuzus, who died there. While many seek the farm, it is said that the vineyard around it is so labyrinthine that few have ever reached its center.\n• **The Old Harvest**: In rare, remote settlements, high summer ceremonies acknowledge ancient rural practices devoted to a less merciful vision of Karametra. These communities offer abundant sacrifices to the god, but also guard their ancient rituals from outsiders, as Karametra's organized clergy harshly forbids discussion of abandoned religious practices. However, occasionally, a centuries-old depiction of the goddess breaks, revealing an ancient icon inside, typically a primitive mud idol of a woman bearing a sheaf of grain in one hand and a skull in the other.\n• **Partners in Possibility**: The fall holiday known as the Blessing of the Beasts (or, in Meletis, the Therimakarion) celebrates humans' partnership with domestic animals. The horses and oxen that pull plows, the cats that guard the granaries, and the roosters that wake families and call them to their work are given blessings, special treats, and a day of rest. Stories say that strays found on this day are servants of Karametra and destined for great things. Others claim that on this day domestic animals can speak—that is, if they have anything they care to say to their supposed owners.\n• **Striving for Perfection**: Although Karametra delights in nature's bounty, she ever strives to tap its greater potential. Her followers recount legends of breeders and horticulturalists who cultivated remarkable new types of plants and animals—such as the everfruit of Dakra or the storied Oraniad dragon-hens. Yet, while Karametra looks on such innovations with delight, some other gods see them as blasphemies.\n• **The Years of Rage**: The tales about Karametra don't specify what ignited the god's rage in ancient times, but they do record that for a year, she tore down her own temples and refused to let any plants grow. The mortals of the world, threatened with starvation, beseeched her to curb her wrath. In an effort led by Karametra's priests, nearly all of humanity prayed for a week, neither eating nor sleeping, praising Karametra for her serenity and generosity. After that time, she relented and produced a miraculous crop of grapes that cured illness and fed the people. Ever since then, her statues have been adorned with twining grape vines around their left wrists in commemoration of that event.*"
+    "value": "*Karametra rarely engages in legendary undertakings. It is her unshakable reliability that makes her a popular deity.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**The Miraculous Field**: Outside Setessa is a farm that produces incredible fruits and grains that can heal illnesses, increase fertility, and stave off hunger for days. The field is said to be Karametra's tribute to her beloved human priest, Thamuzus, who died there. While many seek the farm, it is said that the vineyard around it is so labyrinthine that few have ever reached its center.",
+      "**The Old Harvest**: In rare, remote settlements, high summer ceremonies acknowledge ancient rural practices devoted to a less merciful vision of Karametra. These communities offer abundant sacrifices to the god, but also guard their ancient rituals from outsiders, as Karametra's organized clergy harshly forbids discussion of abandoned religious practices. However, occasionally, a centuries-old depiction of the goddess breaks, revealing an ancient icon inside, typically a primitive mud idol of a woman bearing a sheaf of grain in one hand and a skull in the other.",
+      "**Partners in Possibility**: The fall holiday known as the Blessing of the Beasts (or, in Meletis, the Therimakarion) celebrates humans' partnership with domestic animals. The horses and oxen that pull plows, the cats that guard the granaries, and the roosters that wake families and call them to their work are given blessings, special treats, and a day of rest. Stories say that strays found on this day are servants of Karametra and destined for great things. Others claim that on this day domestic animals can speak—that is, if they have anything they care to say to their supposed owners.",
+      "**Striving for Perfection**: Although Karametra delights in nature's bounty, she ever strives to tap its greater potential. Her followers recount legends of breeders and horticulturalists who cultivated remarkable new types of plants and animals—such as the everfruit of Dakra or the storied Oraniad dragon-hens. Yet, while Karametra looks on such innovations with delight, some other gods see them as blasphemies.",
+      "**The Years of Rage**: The tales about Karametra don't specify what ignited the god's rage in ancient times, but they do record that for a year, she tore down her own temples and refused to let any plants grow. The mortals of the world, threatened with starvation, beseeched her to curb her wrath. In an effort led by Karametra's priests, nearly all of humanity prayed for a week, neither eating nor sleeping, praising Karametra for her serenity and generosity. After that time, she relented and produced a miraculous crop of grapes that cured illness and fed the people. Ever since then, her statues have been adorned with twining grape vines around their left wrists in commemoration of that event."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -9995,7 +10300,8 @@
    {
     "name": "Karametra's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Karametra's Favor",
      "headers": [
       "d6",
@@ -10037,7 +10343,8 @@
    {
     "name": "Karametra's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Karametra's Ideals",
      "headers": [
       "d6",
@@ -10078,8 +10385,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Turning a wild field into fertile cropland\n• Feeding those who are starving\n• Defending a farm from monsters\n• Building or restoring a temple to Karametra"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Turning a wild field into fertile cropland",
+      "Feeding those who are starving",
+      "Defending a farm from monsters",
+      "Building or restoring a temple to Karametra"
+     ]
+    }
    },
    {
     "name": "",
@@ -10088,13 +10404,31 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Destroying a settlement's food source\n• Releasing and scattering domestic animals\n• Diverting a water source needed for irrigation\n• Starting a fire that threatens a settlement"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Destroying a settlement's food source",
+      "Releasing and scattering domestic animals",
+      "Diverting a water source needed for irrigation",
+      "Starting a fire that threatens a settlement"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Karametra's Devotee\n• Karametra's Votary\n• Karametra's Disciple\n• Champion of Harvests"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Karametra's Devotee",
+      "Karametra's Votary",
+      "Karametra's Disciple",
+      "Champion of Harvests"
+     ]
+    }
    }
   ]
  },
@@ -10378,7 +10712,22 @@
    {
     "name": "",
     "type": "text",
-    "value": "*The myths and legends told of Keranos's deeds demonstrate his wisdom and wrath, dispensed in equal measure.*\n*• **Epiphany**: The lightning bolt is a symbol of both Keranos's fury and his ability to inspire. Pondering this combination, he entreated Purphoros to create a mighty weapon, a javelin that strikes with the force of the storm. Keranos channeled his anger into a furious storm, which Purphoros then captured and smithed into a gleaming javelin that hummed with power. When Keranos wants to send a message, of either destruction or enlightenment, Epiphany is his tool of choice.\n• **Font of Fortunes**: In ages past, Keranos created a bronze font fed by a pure mountain stream that would grant great oracular power if one drank deeply from it. As Keranos wanted only the wisest and most clever mortals to gain his favor, the font lies at the end of a series of fierce traps and riddles. It exists both in and out of Nyx, hidden to all but the most diligent of seekers.\n• **Lightning Diadem**: Years ago, Keranos received an exquisitely cut sapphire set in a delicate silver diadem as an offering. Deeply appreciative of the skill and craftsmanship required to create it, Keranos imbued the gem with a spark of divine genius. Inventors and philosophers coveted the diadem, for it conferred a fraction of Keranos's inspiration to the wearer—granting incredible insights or fracturing the wearer's sanity. Its last owner, the tormented genius Zexso the Unblinking, is said to have created a massive contraption to assure that the lightning diadem wouldn't shatter the mind of any other mortal. The inventor's machine launched the diadem into the heavens, where it's said to have landed upon a griffin-inhabited island floating in the clouds.\n• **Riddle of Lightning**: Once, an arrogant oracle boasted of her infallible insight, which flowed from Keranos himself. Bemused, the storm lord arranged for the oracle to meet a particularly cunning sphinx and engage in an epic battle of wits. The objective set forth by Keranos was to solve the Riddle of Lightning, an enigma devised by Keranos himself. After days of deliberation, the oracle realized the answer, only to be struck down by a bolt from the heavens. Among the faithful nowadays, the term \"Riddle of Lightning\" is used to denote a question that one is better off not knowing the answer to.\n• **Silent Storm**: Occasionally, Keranos seeks to make his will known with all the subtlety of the master of storms. Should lightning strike the same point multiple times yet never echo with thunder, followers of Keranos claim that is the way their god draws attention to secrets he wishes to share. While repeat lightning strikes would normally cause considerable damage, strikes that convey the god's will often leave a scorch in the shape of Keranos's symbol or no mark at all.*"
+    "value": "*The myths and legends told of Keranos's deeds demonstrate his wisdom and wrath, dispensed in equal measure.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Epiphany**: The lightning bolt is a symbol of both Keranos's fury and his ability to inspire. Pondering this combination, he entreated Purphoros to create a mighty weapon, a javelin that strikes with the force of the storm. Keranos channeled his anger into a furious storm, which Purphoros then captured and smithed into a gleaming javelin that hummed with power. When Keranos wants to send a message, of either destruction or enlightenment, Epiphany is his tool of choice.",
+      "**Font of Fortunes**: In ages past, Keranos created a bronze font fed by a pure mountain stream that would grant great oracular power if one drank deeply from it. As Keranos wanted only the wisest and most clever mortals to gain his favor, the font lies at the end of a series of fierce traps and riddles. It exists both in and out of Nyx, hidden to all but the most diligent of seekers.",
+      "**Lightning Diadem**: Years ago, Keranos received an exquisitely cut sapphire set in a delicate silver diadem as an offering. Deeply appreciative of the skill and craftsmanship required to create it, Keranos imbued the gem with a spark of divine genius. Inventors and philosophers coveted the diadem, for it conferred a fraction of Keranos's inspiration to the wearer—granting incredible insights or fracturing the wearer's sanity. Its last owner, the tormented genius Zexso the Unblinking, is said to have created a massive contraption to assure that the lightning diadem wouldn't shatter the mind of any other mortal. The inventor's machine launched the diadem into the heavens, where it's said to have landed upon a griffin-inhabited island floating in the clouds.",
+      "**Riddle of Lightning**: Once, an arrogant oracle boasted of her infallible insight, which flowed from Keranos himself. Bemused, the storm lord arranged for the oracle to meet a particularly cunning sphinx and engage in an epic battle of wits. The objective set forth by Keranos was to solve the Riddle of Lightning, an enigma devised by Keranos himself. After days of deliberation, the oracle realized the answer, only to be struck down by a bolt from the heavens. Among the faithful nowadays, the term \"Riddle of Lightning\" is used to denote a question that one is better off not knowing the answer to.",
+      "**Silent Storm**: Occasionally, Keranos seeks to make his will known with all the subtlety of the master of storms. Should lightning strike the same point multiple times yet never echo with thunder, followers of Keranos claim that is the way their god draws attention to secrets he wishes to share. While repeat lightning strikes would normally cause considerable damage, strikes that convey the god's will often leave a scorch in the shape of Keranos's symbol or no mark at all."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -10418,7 +10767,8 @@
    {
     "name": "Keranos's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Keranos's Favor",
      "headers": [
       "d6",
@@ -10460,7 +10810,8 @@
    {
     "name": "Keranos's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Keranos's Ideals",
      "headers": [
       "d6",
@@ -10501,8 +10852,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Solving a challenging riddle or puzzle\n• Smiting the unwise and foolish in Keranos's name\n• Helping a polis successfully plan for or adapt to a threat\n• Building or restoring a temple to Keranos"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Solving a challenging riddle or puzzle",
+      "Smiting the unwise and foolish in Keranos's name",
+      "Helping a polis successfully plan for or adapt to a threat",
+      "Building or restoring a temple to Keranos"
+     ]
+    }
    },
    {
     "name": "",
@@ -10511,13 +10871,31 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Jeopardizing others through rash or foolish actions\n• Willingly subverting or impeding a wise course of action\n• Failing to plan appropriately for a challenge\n• Giving in to wanton fury and destruction"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Jeopardizing others through rash or foolish actions",
+      "Willingly subverting or impeding a wise course of action",
+      "Failing to plan appropriately for a challenge",
+      "Giving in to wanton fury and destruction"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Keranos's Devotee\n• Keranos's Votary\n• Keranos's Disciple\n• Champion of Storms"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Keranos's Devotee",
+      "Keranos's Votary",
+      "Keranos's Disciple",
+      "Champion of Storms"
+     ]
+    }
    }
   ]
  },
@@ -10825,7 +11203,21 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Klothys is barely remembered in the mortal world, having sequestered herself in the Underworld while human civilization was in its infancy. Some surviving myths speak of a personified \"destiny\" in a way that vaguely suggests the possibility of an actual god's involvement.*\n*• **Rage of Titans**: The greatest threat to the young world of Theros was the godlike race of titans, born from the same swirling chaos as the world itself. Before any order could be imposed on the world, the titans had to be contained. Kruphix and Klothys worked together to imprison the titans in the deepest pits of the Underworld. Klothys voluntarily bound herself in the Underworld to keep the titans imprisoned, but that is, after all, the nature of destiny: once the natural order of the world had been put in place and preserved, no further action should have been required on her part to maintain it.\n• **The Smoking Strand**: Hidden far from civilized coasts lies a strand of Klothys's hair that she purposefully plucked. Knotted in on itself, the strand appears as a seething ball of dense smoke. Any who touch the strand risk having it invade them, infecting them with a pernicious destiny that Klothys herself tore from the natural order. None can say what terrible destiny the Smoking Strand drives its possessor toward, but the ruins within which it lies might give some hint—caverns burrowed deep into a mountain of petrified bodies, the twisted obsidian corpses of humanoids and animals alike.\n• **Twins at War**: The newly formed gods Kruphix and Klothys emerged from opposite sides of the roiling tangle of possibilities that eventually gave birth to Theros. At first the two battled for supremacy, but they soon realized their conflict left their young world vulnerable to dangers from both inside and out. Putting their rivalry aside, the pair agreed it was better to share and have something than let their struggles destroy all creation.\n• **Walkers of Woe**: The nightmarish creatures known as woe striders are said to be products of Klothys's punishment. These beings descend from an age when some mortals learned to unshackle themselves from the strands of destiny. To what end is a question lost to time, but Klothys put a quick end to these blasphemers and eradicated nearly all knowledge of their methods. Ever since, the shades of these accursed mortals have walked the Underworld as woe striders, monstrosities endlessly seeking strands of destiny that they might use to replace their own discarded lots.*"
+    "value": "*Klothys is barely remembered in the mortal world, having sequestered herself in the Underworld while human civilization was in its infancy. Some surviving myths speak of a personified \"destiny\" in a way that vaguely suggests the possibility of an actual god's involvement.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Rage of Titans**: The greatest threat to the young world of Theros was the godlike race of titans, born from the same swirling chaos as the world itself. Before any order could be imposed on the world, the titans had to be contained. Kruphix and Klothys worked together to imprison the titans in the deepest pits of the Underworld. Klothys voluntarily bound herself in the Underworld to keep the titans imprisoned, but that is, after all, the nature of destiny: once the natural order of the world had been put in place and preserved, no further action should have been required on her part to maintain it.",
+      "**The Smoking Strand**: Hidden far from civilized coasts lies a strand of Klothys's hair that she purposefully plucked. Knotted in on itself, the strand appears as a seething ball of dense smoke. Any who touch the strand risk having it invade them, infecting them with a pernicious destiny that Klothys herself tore from the natural order. None can say what terrible destiny the Smoking Strand drives its possessor toward, but the ruins within which it lies might give some hint—caverns burrowed deep into a mountain of petrified bodies, the twisted obsidian corpses of humanoids and animals alike.",
+      "**Twins at War**: The newly formed gods Kruphix and Klothys emerged from opposite sides of the roiling tangle of possibilities that eventually gave birth to Theros. At first the two battled for supremacy, but they soon realized their conflict left their young world vulnerable to dangers from both inside and out. Putting their rivalry aside, the pair agreed it was better to share and have something than let their struggles destroy all creation.",
+      "**Walkers of Woe**: The nightmarish creatures known as woe striders are said to be products of Klothys's punishment. These beings descend from an age when some mortals learned to unshackle themselves from the strands of destiny. To what end is a question lost to time, but Klothys put a quick end to these blasphemers and eradicated nearly all knowledge of their methods. Ever since, the shades of these accursed mortals have walked the Underworld as woe striders, monstrosities endlessly seeking strands of destiny that they might use to replace their own discarded lots."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -10860,7 +11252,8 @@
    {
     "name": "Klothys's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Klothys's Favor",
      "headers": [
       "d6",
@@ -10902,7 +11295,8 @@
    {
     "name": "Klothys's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Klothys's Ideals",
      "headers": [
       "d6",
@@ -10943,8 +11337,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Defeating a creature that has stepped out of its place\n• Repairing a significant wound dealt to destiny by the gods' ambitions\n• Teaching people about Klothys, her nature, and her return"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Defeating a creature that has stepped out of its place",
+      "Repairing a significant wound dealt to destiny by the gods' ambitions",
+      "Teaching people about Klothys, her nature, and her return"
+     ]
+    }
    },
    {
     "name": "",
@@ -10953,13 +11355,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Undoing a deserved punishment or curse suffered by another creature\n• Willfully destroying a natural wonder\n• Assisting a creature in undermining the natural order or exploiting destiny"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Undoing a deserved punishment or curse suffered by another creature",
+      "Willfully destroying a natural wonder",
+      "Assisting a creature in undermining the natural order or exploiting destiny"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Klothys's Devotee\n• Klothys's Votary\n• Klothys's Disciple\n• Champion of Destiny"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Klothys's Devotee",
+      "Klothys's Votary",
+      "Klothys's Disciple",
+      "Champion of Destiny"
+     ]
+    }
    }
   ]
  },
@@ -11130,8 +11549,16 @@
    },
    {
     "name": "Commandments of Kord",
-    "type": "text",
-    "value": "• Bravery above all. There is no glory in cowardice.\n• Strength is the path to greatness, but greatness is the responsible use of strength.\n• The glory of the Storm Lord lives through your own glory on the battlefield."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Bravery above all. There is no glory in cowardice.",
+      "Strength is the path to greatness, but greatness is the responsible use of strength.",
+      "The glory of the Storm Lord lives through your own glory on the battlefield."
+     ]
+    }
    }
   ]
  },
@@ -11317,7 +11744,21 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Kruphix appears in stories in an ancillary role, often as the impartial judge who ends a conflict between gods. Initiates in Kruphix's mystery cult know other stories in which he plays a more active role, including special versions of well-known legends, but they seldom share these tales with others.*\n*• **The First Nyxborn**: According to one tale, it was Kruphix, not Purphoros, who was the first to fashion living Nyxborn creatures from the fabric of Nyx. Kruphix created the divine artisan Nykthos and ordered him to build altars to the gods. Nykthos's story isn't widely known among mortals, but the Shrine to Nyx is still called Nykthos in his honor.\n• **Kruphix's Warning**: When Purphoros attacked Heliod in a destructive rage, Heliod demanded that Kruphix intervene. Kruphix constrained the forge-god's mind and memory in punishment for his attack. He warned all the gods that if they threatened the mortal realm with their disruptive quarrels, he would bind them to Nyx for as long as he saw fit. As of yet, no god has dared to test Kruphix's threat, but there are certainly those among them who might try if they could see a way to retain their own powers.\n• **The Silence**: When the squabbling of the gods threatened the world once more despite Kruphix's warning, he etched all their names—including his own—in the bark of his great tree at the edge of the world. Immediately, the gods' oracles could no longer hear them, their blessings faded, and the night sky held only unmoving stars. The great Silence of the gods serves as the backdrop for numerous tales of heroism and sacrifice. Many alive today witnessed the sky go dark and the temples grow quiet. Most consider the Silence a terrible mistake that led to the rise of the usurper god Xenagos, but followers of Kruphix know that it was a grim necessity to prevent far worse calamity.\n• **Theophilian Mysteries**: Some of Kruphix's worshipers don't identify with their inscrutable deity, but with Theophilia, a legendary naiad who entered Nyx and whose transcendent encounter with Kruphix each initiate strives to duplicate. The naiad's journey is celebrated in hushed chants as blindfolded initiates are led across a boundary—often stepping into a river or over a low stone wall, an act that symbolizes crossing the horizon. Then the blindfolds are removed as the faithful intone a paean to Kruphix. The hope is that Kruphix will choose to reveal himself at the climax of the ritual, whether by the appearance of some omen or in a personal epiphany. Such a revelation isn't always positive, though, as Kruphix often imparts a glimpse of cosmic truths for which mortals have no possible context.*"
+    "value": "*Kruphix appears in stories in an ancillary role, often as the impartial judge who ends a conflict between gods. Initiates in Kruphix's mystery cult know other stories in which he plays a more active role, including special versions of well-known legends, but they seldom share these tales with others.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**The First Nyxborn**: According to one tale, it was Kruphix, not Purphoros, who was the first to fashion living Nyxborn creatures from the fabric of Nyx. Kruphix created the divine artisan Nykthos and ordered him to build altars to the gods. Nykthos's story isn't widely known among mortals, but the Shrine to Nyx is still called Nykthos in his honor.",
+      "**Kruphix's Warning**: When Purphoros attacked Heliod in a destructive rage, Heliod demanded that Kruphix intervene. Kruphix constrained the forge-god's mind and memory in punishment for his attack. He warned all the gods that if they threatened the mortal realm with their disruptive quarrels, he would bind them to Nyx for as long as he saw fit. As of yet, no god has dared to test Kruphix's threat, but there are certainly those among them who might try if they could see a way to retain their own powers.",
+      "**The Silence**: When the squabbling of the gods threatened the world once more despite Kruphix's warning, he etched all their names—including his own—in the bark of his great tree at the edge of the world. Immediately, the gods' oracles could no longer hear them, their blessings faded, and the night sky held only unmoving stars. The great Silence of the gods serves as the backdrop for numerous tales of heroism and sacrifice. Many alive today witnessed the sky go dark and the temples grow quiet. Most consider the Silence a terrible mistake that led to the rise of the usurper god Xenagos, but followers of Kruphix know that it was a grim necessity to prevent far worse calamity.",
+      "**Theophilian Mysteries**: Some of Kruphix's worshipers don't identify with their inscrutable deity, but with Theophilia, a legendary naiad who entered Nyx and whose transcendent encounter with Kruphix each initiate strives to duplicate. The naiad's journey is celebrated in hushed chants as blindfolded initiates are led across a boundary—often stepping into a river or over a low stone wall, an act that symbolizes crossing the horizon. Then the blindfolds are removed as the faithful intone a paean to Kruphix. The hope is that Kruphix will choose to reveal himself at the climax of the ritual, whether by the appearance of some omen or in a personal epiphany. Such a revelation isn't always positive, though, as Kruphix often imparts a glimpse of cosmic truths for which mortals have no possible context."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -11352,7 +11793,8 @@
    {
     "name": "Kruphix's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Kruphix's Favor",
      "headers": [
       "d6",
@@ -11394,7 +11836,8 @@
    {
     "name": "Kruphix's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Kruphix's Ideals",
      "headers": [
       "d6",
@@ -11435,8 +11878,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Keeping a dangerous secret despite personal cost\n• Revealing a critical truth at an important moment\n• Mediating a major dispute or conflict\n• Aiding the weak or impeding the strong"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Keeping a dangerous secret despite personal cost",
+      "Revealing a critical truth at an important moment",
+      "Mediating a major dispute or conflict",
+      "Aiding the weak or impeding the strong"
+     ]
+    }
    },
    {
     "name": "",
@@ -11445,8 +11897,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Revealing a secret that should remain unknown\n• Selfishly refusing to share information\n• Showing favoritism toward any other god or group\n• Furthering the aims of another god in defiance of Kruphix's will"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Revealing a secret that should remain unknown",
+      "Selfishly refusing to share information",
+      "Showing favoritism toward any other god or group",
+      "Furthering the aims of another god in defiance of Kruphix's will"
+     ]
+    }
    },
    {
     "name": "",
@@ -11455,8 +11916,17 @@
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Kruphix's Devotee\n• Kruphix's Votary\n• Kruphix's Disciple\n• Champion of Horizons"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Kruphix's Devotee",
+      "Kruphix's Votary",
+      "Kruphix's Disciple",
+      "Champion of Horizons"
+     ]
+    }
    }
   ]
  },
@@ -12224,8 +12694,16 @@
    },
    {
     "name": "Commandments of Lolth",
-    "type": "text",
-    "value": "• It is better to be loved than feared, but you may certainly try to be both.\n• Misdirection, slander, and shadowed steps have more function than direct conflict.\n• Death to the elves who live under the sun, and death to all their allies!"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "It is better to be loved than feared, but you may certainly try to be both.",
+      "Misdirection, slander, and shadowed steps have more function than direct conflict.",
+      "Death to the elves who live under the sun, and death to all their allies!"
+     ]
+    }
    }
   ]
  },
@@ -13372,8 +13850,16 @@
    },
    {
     "name": "Commandments of Melora",
-    "type": "text",
-    "value": "• Protect the untamed wilderness from exploitation and destruction.\n• Slay abominations and other mockeries of nature.\n• Embrace and respect the savage nature of the world. Exist in harmony with it."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Protect the untamed wilderness from exploitation and destruction.",
+      "Slay abominations and other mockeries of nature.",
+      "Embrace and respect the savage nature of the world. Exist in harmony with it."
+     ]
+    }
    }
   ]
  },
@@ -13815,7 +14301,22 @@
    {
     "name": "",
     "type": "text",
-    "value": "*The tales of Mogis's deeds exemplify his need to unmake, his brutality, and his desire to destroy his hated brother.*\n*• **The Endless Feud**: One legend claims that Mogis and Iroas were once a single being, the act of war personified. But the inherent tension between honor and brutality in combat led to a dichotomy of purpose too great for a single god to reconcile. Ripping himself apart, the god split in two, and so did Mogis and Iroas come into existence, embodiments of the two aspects of war that are forever in conflict. Though no tales of either Mogis or Iroas's faith speak of such, whispers among the servants of other gods claim that there might be a way to piece the fractured god back together. Doing so would require an incredible feat, though, likely involving the cooperation of both Mogis and Iroas themselves.\n• **Mogis's Warhound**: Mogis generally fights alone, because he often loses control of his temper and strikes allies as well as foes in the heat of battle. Still, Mogis sought a creature that would go before him, instilling fear in his foes before his mighty axe fell upon them. Mogis took a ferocious cerberus and bound it together with the fires of his eternal rage. This terrible new creation became his personal harbinger and battle companion. The god of slaughter didn't name his pet, refusing to do so until the beast had claimed a hundred thousand lives and so proved itself truly worthy of his esteem.\n• **Origin of the Minotaur**: In ages past, a warrior of tremendous strength stalked the battlefield. As a lone combatant, he was unbeatable, but he suffered when groups rose to oppose him. After one such defeat, the warrior was so filled with wrath that he murdered his entire village in Mogis's name. The god, delighted by this display, gifted the warrior with his own ferocity, remaking him as a reflection of Mogis's wrath and an engine of destruction in combat. This warrior became the first minotaur, and many minotaurs still worship Mogis, as he is their creator and they were made in his image.\n• **Revel in Ruin**: The summer festival of the Megasphagion is a domesticated version of Mogis's typical rites. It involves the sacrifice of many cattle to avert Mogis's wrath. The meat is then cooked and distributed among all who attend the festival. The grand feast that follows tends to devolve into a drunken revel. In some tales, individuals or communities with long-held grudges find themselves incensed during the festival, leading them to seek violent ends to their rivalries.\n• **Wrathbringer**: Shortly after his birth, Mogis decided to create a weapon with which to kill his brother. Mogis assembled his champions and sent them out to battlefields, where they collected the essences of rage, hatred, and bloodlust. Under a blood-red moon, Mogis used those ingredients to forge a black iron greataxe of manifest violence, Wrathbringer.*"
+    "value": "*The tales of Mogis's deeds exemplify his need to unmake, his brutality, and his desire to destroy his hated brother.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**The Endless Feud**: One legend claims that Mogis and Iroas were once a single being, the act of war personified. But the inherent tension between honor and brutality in combat led to a dichotomy of purpose too great for a single god to reconcile. Ripping himself apart, the god split in two, and so did Mogis and Iroas come into existence, embodiments of the two aspects of war that are forever in conflict. Though no tales of either Mogis or Iroas's faith speak of such, whispers among the servants of other gods claim that there might be a way to piece the fractured god back together. Doing so would require an incredible feat, though, likely involving the cooperation of both Mogis and Iroas themselves.",
+      "**Mogis's Warhound**: Mogis generally fights alone, because he often loses control of his temper and strikes allies as well as foes in the heat of battle. Still, Mogis sought a creature that would go before him, instilling fear in his foes before his mighty axe fell upon them. Mogis took a ferocious cerberus and bound it together with the fires of his eternal rage. This terrible new creation became his personal harbinger and battle companion. The god of slaughter didn't name his pet, refusing to do so until the beast had claimed a hundred thousand lives and so proved itself truly worthy of his esteem.",
+      "**Origin of the Minotaur**: In ages past, a warrior of tremendous strength stalked the battlefield. As a lone combatant, he was unbeatable, but he suffered when groups rose to oppose him. After one such defeat, the warrior was so filled with wrath that he murdered his entire village in Mogis's name. The god, delighted by this display, gifted the warrior with his own ferocity, remaking him as a reflection of Mogis's wrath and an engine of destruction in combat. This warrior became the first minotaur, and many minotaurs still worship Mogis, as he is their creator and they were made in his image.",
+      "**Revel in Ruin**: The summer festival of the Megasphagion is a domesticated version of Mogis's typical rites. It involves the sacrifice of many cattle to avert Mogis's wrath. The meat is then cooked and distributed among all who attend the festival. The grand feast that follows tends to devolve into a drunken revel. In some tales, individuals or communities with long-held grudges find themselves incensed during the festival, leading them to seek violent ends to their rivalries.",
+      "**Wrathbringer**: Shortly after his birth, Mogis decided to create a weapon with which to kill his brother. Mogis assembled his champions and sent them out to battlefields, where they collected the essences of rage, hatred, and bloodlust. Under a blood-red moon, Mogis used those ingredients to forge a black iron greataxe of manifest violence, Wrathbringer."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -13855,7 +14356,8 @@
    {
     "name": "Mogis's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Mogis's Favor",
      "headers": [
       "d6",
@@ -13897,7 +14399,8 @@
    {
     "name": "Mogis's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Mogis's Ideals",
      "headers": [
       "d6",
@@ -13938,8 +14441,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Defeating a champion of Iroas\n• Taking vengeance against a powerful foe\n• Burning a polis or a settlement to the ground\n• Desecrating a temple to Iroas as an offering to Mogis"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Defeating a champion of Iroas",
+      "Taking vengeance against a powerful foe",
+      "Burning a polis or a settlement to the ground",
+      "Desecrating a temple to Iroas as an offering to Mogis"
+     ]
+    }
    },
    {
     "name": "",
@@ -13948,13 +14460,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Failing to carry out a sworn vendetta\n• Publicly displaying weakness or compassion\n• Rejecting a duel or a challenge out of fear"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Failing to carry out a sworn vendetta",
+      "Publicly displaying weakness or compassion",
+      "Rejecting a duel or a challenge out of fear"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Mogis's Devotee\n• Mogis's Votary\n• Mogis's Disciple\n• Champion of Slaughter"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Mogis's Devotee",
+      "Mogis's Votary",
+      "Mogis's Disciple",
+      "Champion of Slaughter"
+     ]
+    }
    }
   ]
  },
@@ -14049,8 +14578,16 @@
    },
    {
     "name": "Commandments of Moradin",
-    "type": "text",
-    "value": "• Remain stoic and tenacious in the face of catastrophe.\n• Uphold and promote loyalty to your family, loyalty to your clan, and loyalty to your people.\n• Legacy is paramount. To create something that lasts is to change the world for the better."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Remain stoic and tenacious in the face of catastrophe.",
+      "Uphold and promote loyalty to your family, loyalty to your clan, and loyalty to your people.",
+      "Legacy is paramount. To create something that lasts is to change the world for the better."
+     ]
+    }
    }
   ]
  },
@@ -15170,7 +15707,30 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Most of the myths about Nylea are cautionary tales about the fate of mortals who profane her sacred forests.*\n*• **The First Hunt**: Each spring, communities observe the festival of the First Hunt, the Protokynion. In ancient times, the festival involved hunting, but in the modern form of observance, it is a day of picnics, outdoor games, and frolicking that has little to do with Nylea except that it celebrates the full flowering of spring. Tales tell of Nylea being passingly bitter about the celebration and, annually, visiting a First Hunt celebration in disguise. If she finds herself duly honored during the revelry, she blesses the event and might personally participate. If she finds no mention of her works, she curses those in attendance, sometimes sending rampaging beasts to disrupt the event or turning participants into game animals for true hunters to stalk.*\n***Origin of the Catoblepas, Another Perspective**: When a herder boasted that his cattle were Theros's finest because Heliod and Nylea had created them, Heliod persuaded Mogis to curse the cattle, transforming them into the first __catoblepases__. Heliod had hoped to win Nylea's favor by defending her honor in this way, but she was outraged to be associated with the creation of these abominations. To this day, Nylea offers a boon to anyone who hunts down a catoblepas and brings its head to her sacred grove.\n• **The Three Hunters**: Three young men from wealthy families were hunting for sport in the Nessian Wood. Nylea accosted them before they had taken any prey and gave each man a chance to bring her a gift that would atone for his intentions. The first man killed a stag and made an offering of it in her name, so she turned him into a stag to compensate for the one he had killed. The second offered wealth from his family coffers, so she turned him into a tree clinging to a cliff face by one root. The third, remorseful, threw himself on a bed of moss, and a cerulean butterfly came to rest on his hand. Carefully, he carried the butterfly back to Nylea. She not only spared him, but blessed his house and all his descendants.\n• **The Tragedy of Arasta**: In ages long past, Nylea loved her dryad companion, Arasta, as a sister and the two spread wonders across Theros. One day, Phenax, envious of the pair and stung by some forgotten slight, transformed Arasta into a terrible monster to prove that the goddess's love was based on beauty, not true kinship. Seeing the unfamiliar creature, Nylea was horrified and drove her away. Shattered, Arasta retreated and has terrorized the gods' servants ever since. To this day, Nylea remains deeply pained by Arasta's loss. Knowing that only Phenax can undo the curse he laid upon the dryad, Nylea often sends her champions to learn the secret of what might restore her friend.*"
+    "value": "*Most of the myths about Nylea are cautionary tales about the fate of mortals who profane her sacred forests.*\n***Origin of the Catoblepas, Another Perspective**: When a herder boasted that his cattle were Theros's finest because Heliod and Nylea had created them, Heliod persuaded Mogis to curse the cattle, transforming them into the first __catoblepases__. Heliod had hoped to win Nylea's favor by defending her honor in this way, but she was outraged to be associated with the creation of these abominations. To this day, Nylea offers a boon to anyone who hunts down a catoblepas and brings its head to her sacred grove.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**The First Hunt**: Each spring, communities observe the festival of the First Hunt, the Protokynion. In ancient times, the festival involved hunting, but in the modern form of observance, it is a day of picnics, outdoor games, and frolicking that has little to do with Nylea except that it celebrates the full flowering of spring. Tales tell of Nylea being passingly bitter about the celebration and, annually, visiting a First Hunt celebration in disguise. If she finds herself duly honored during the revelry, she blesses the event and might personally participate. If she finds no mention of her works, she curses those in attendance, sometimes sending rampaging beasts to disrupt the event or turning participants into game animals for true hunters to stalk."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**The Three Hunters**: Three young men from wealthy families were hunting for sport in the Nessian Wood. Nylea accosted them before they had taken any prey and gave each man a chance to bring her a gift that would atone for his intentions. The first man killed a stag and made an offering of it in her name, so she turned him into a stag to compensate for the one he had killed. The second offered wealth from his family coffers, so she turned him into a tree clinging to a cliff face by one root. The third, remorseful, threw himself on a bed of moss, and a cerulean butterfly came to rest on his hand. Carefully, he carried the butterfly back to Nylea. She not only spared him, but blessed his house and all his descendants.",
+      "**The Tragedy of Arasta**: In ages long past, Nylea loved her dryad companion, Arasta, as a sister and the two spread wonders across Theros. One day, Phenax, envious of the pair and stung by some forgotten slight, transformed Arasta into a terrible monster to prove that the goddess's love was based on beauty, not true kinship. Seeing the unfamiliar creature, Nylea was horrified and drove her away. Shattered, Arasta retreated and has terrorized the gods' servants ever since. To this day, Nylea remains deeply pained by Arasta's loss. Knowing that only Phenax can undo the curse he laid upon the dryad, Nylea often sends her champions to learn the secret of what might restore her friend."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -15210,7 +15770,8 @@
    {
     "name": "Nylea's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Nylea's Favor",
      "headers": [
       "d6",
@@ -15252,7 +15813,8 @@
    {
     "name": "Nylea's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Nylea's Ideals",
      "headers": [
       "d6",
@@ -15293,8 +15855,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Healing a sick or injured wild animal\n• Stopping those who hunt for sport or profit\n• Proving your worth in a contest of archery\n• Slaying an aberration, a fiend, or an undead"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Healing a sick or injured wild animal",
+      "Stopping those who hunt for sport or profit",
+      "Proving your worth in a contest of archery",
+      "Slaying an aberration, a fiend, or an undead"
+     ]
+    }
    },
    {
     "name": "",
@@ -15303,13 +15874,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Killing an animal for any reason other than necessity\n• Dedicating a building or making a sacrifice to any god, including Nylea\n• Protecting a city or farm from natural dangers"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Killing an animal for any reason other than necessity",
+      "Dedicating a building or making a sacrifice to any god, including Nylea",
+      "Protecting a city or farm from natural dangers"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Nylea's Devotee\n• Nylea's Votary\n• Nylea's Disciple\n• Champion of the Hunt"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Nylea's Devotee",
+      "Nylea's Votary",
+      "Nylea's Disciple",
+      "Champion of the Hunt"
+     ]
+    }
    }
   ]
  },
@@ -16004,8 +16592,16 @@
    },
    {
     "name": "Commandments of Pelor",
-    "type": "text",
-    "value": "• Be ever vigilant for evil. People are quick to forget the lessons of the past.\n• Help relieve the suffering of the innocent.\n• Deliver the light of Pelor where darkness dwells, with kindness, compassion, and mercy."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Be ever vigilant for evil. People are quick to forget the lessons of the past.",
+      "Help relieve the suffering of the innocent.",
+      "Deliver the light of Pelor where darkness dwells, with kindness, compassion, and mercy."
+     ]
+    }
    }
   ]
  },
@@ -16151,7 +16747,22 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Tales of Pharika emphasize her secret knowledge, with many legends hinting at apocrypha that a listener might track down to discover the god's most exalted lore.*\n*• **Aestraste's Reward**: So impressed was she with the deeds of her champion Aestraste that Pharika offered to fill her kylix with any draught for Aestraste to imbibe. The champion asked to taste the nectar of pure joy, and the god obliged. But when Aestraste took a sip, passion took hold of her, and she quaffed the entire elixir. Overwhelmed with ecstasy, the champion perished, having forgotten that too much of anything—even happiness—can be fatal.\n• **The Basilisk's Greed**: In Pharika's earliest days, her mind overflowed with knowledge, and she retreated to a secret, verdant glen. There, she set to scribing her secrets into the garden's fruits, hiding within each a dozen deaths and their cures. When she retired wearily to bathe, a lizard crept into her grove and gobbled up much of the fruit. It's said that this original basilisk and its progeny are still heavy with undigested secrets, and that if basilisk blood is distilled into ink, it can be used to write out forgotten lore.\n• **Day of Affliction**: During the first week of the eleventh month, Meletis observes Pharika's winter festival, the Cheimazion. The sick and infirm sleep in the god's temples during this festival in hopes of receiving a miraculous cure, and the truly devout imbibe near-lethal doses of poison, trusting Pharika to oversee their recovery. In some tales, a cobra with rainbow scales appears in Pharika's temple and bites some incurable soul. The envenomed victim pitches and babbles for three days, but their disjointed words prove to be a font of alchemical truths, sometimes bearing the secrets to healing others around them. In most of these myths, the victim expires at the end of these three days—Pharika's price for sharing her secrets—but in some, the patient recovers, thereafter exhibiting remarkable resistance to illness and poisons.\n• **Dragon Balm**: Some texts of Pharika claim that within the chemical makeup of each individual dragon lies the cure to one specific disease or venom. Those desperate for a cure to a rare affliction often pray to the goddess to reveal the monster that embodies the malady tormenting them. Such insight, though, rarely decreases the danger of dragon hunting.\n• **The Medusa's Curse**: To seed the world with knowledge, Pharika gathered her medusa children and granted a hundred secrets to each, bidding them to hide their revelations throughout the mortal realm. Selfishly, the medusas each kept secrets for themselves, using these as currency to bargain with mortals. Angered that her children would hoard any of her secrets, Pharika cursed them, so that they could never after behold their own reflections without risking death.*"
+    "value": "*Tales of Pharika emphasize her secret knowledge, with many legends hinting at apocrypha that a listener might track down to discover the god's most exalted lore.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Aestraste's Reward**: So impressed was she with the deeds of her champion Aestraste that Pharika offered to fill her kylix with any draught for Aestraste to imbibe. The champion asked to taste the nectar of pure joy, and the god obliged. But when Aestraste took a sip, passion took hold of her, and she quaffed the entire elixir. Overwhelmed with ecstasy, the champion perished, having forgotten that too much of anything—even happiness—can be fatal.",
+      "**The Basilisk's Greed**: In Pharika's earliest days, her mind overflowed with knowledge, and she retreated to a secret, verdant glen. There, she set to scribing her secrets into the garden's fruits, hiding within each a dozen deaths and their cures. When she retired wearily to bathe, a lizard crept into her grove and gobbled up much of the fruit. It's said that this original basilisk and its progeny are still heavy with undigested secrets, and that if basilisk blood is distilled into ink, it can be used to write out forgotten lore.",
+      "**Day of Affliction**: During the first week of the eleventh month, Meletis observes Pharika's winter festival, the Cheimazion. The sick and infirm sleep in the god's temples during this festival in hopes of receiving a miraculous cure, and the truly devout imbibe near-lethal doses of poison, trusting Pharika to oversee their recovery. In some tales, a cobra with rainbow scales appears in Pharika's temple and bites some incurable soul. The envenomed victim pitches and babbles for three days, but their disjointed words prove to be a font of alchemical truths, sometimes bearing the secrets to healing others around them. In most of these myths, the victim expires at the end of these three days—Pharika's price for sharing her secrets—but in some, the patient recovers, thereafter exhibiting remarkable resistance to illness and poisons.",
+      "**Dragon Balm**: Some texts of Pharika claim that within the chemical makeup of each individual dragon lies the cure to one specific disease or venom. Those desperate for a cure to a rare affliction often pray to the goddess to reveal the monster that embodies the malady tormenting them. Such insight, though, rarely decreases the danger of dragon hunting.",
+      "**The Medusa's Curse**: To seed the world with knowledge, Pharika gathered her medusa children and granted a hundred secrets to each, bidding them to hide their revelations throughout the mortal realm. Selfishly, the medusas each kept secrets for themselves, using these as currency to bargain with mortals. Angered that her children would hoard any of her secrets, Pharika cursed them, so that they could never after behold their own reflections without risking death."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -16186,7 +16797,8 @@
    {
     "name": "Pharika's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Pharika's Favor",
      "headers": [
       "d6",
@@ -16228,7 +16840,8 @@
    {
     "name": "Pharika's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Pharika's Ideals",
      "headers": [
       "d6",
@@ -16269,8 +16882,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Creating a cure for a dangerous affliction\n• Defeating a powerful foe by using poison\n• Discovering or documenting an unknown people or a poorly understood creature\n• Building or restoring a temple to Pharika, or a site that glorifies serpentine creatures"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Creating a cure for a dangerous affliction",
+      "Defeating a powerful foe by using poison",
+      "Discovering or documenting an unknown people or a poorly understood creature",
+      "Building or restoring a temple to Pharika, or a site that glorifies serpentine creatures"
+     ]
+    }
    },
    {
     "name": "",
@@ -16279,13 +16901,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Destroying alchemical, medical, pathological, or similar research\n• Performing a notable act of healing without exacting a significant price\n• Slaying a medusa or serpent"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Destroying alchemical, medical, pathological, or similar research",
+      "Performing a notable act of healing without exacting a significant price",
+      "Slaying a medusa or serpent"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Pharika's Devotee\n• Pharika's Votary\n• Pharika's Disciple\n• Champion of Affliction"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Pharika's Devotee",
+      "Pharika's Votary",
+      "Pharika's Disciple",
+      "Champion of Affliction"
+     ]
+    }
    }
   ]
  },
@@ -16386,7 +17025,20 @@
    {
     "name": "",
     "type": "text",
-    "value": "*The tales told of Phenax's deeds speak of his duplicity, cunning, and wit.*\n*• **The Path of Phenax**: Phenax was once a mortal who, like all mortals, passed on to Erebos's care in the Underworld when his time among the living came to an end. But Phenax found a way to escape the Underworld by sacrificing his identity to the memory-draining waters therein. He was able to cross the Rivers That Ring the World wrapped in a shred of Athreos's cloak. Since he had no identity, Athreos couldn't detect him, and thus Erebos couldn't use his great lash to pull Phenax back. When he emerged back into the realm of mortals, he did so as the first of the Returned. In time, others discovered this quandary of metaphysics, which is now known as the Path of Phenax.\n• **Black Oak of Odunos**: Before Odunos became a necropolis, it was a thriving city akin to Akros or Meletis. When the city fell before Phenax's assembled forces, some of the populace begged the god of lies to spare them the touch of Erebos's dread lash. Never one to miss an opportunity to cheat Erebos, Phenax made a solemn promise to those asking for his mercy, assuring them that they wouldn't be forced into the Underworld, on his honor. Soon afterward, the Returned that had invaded the city murdered these people to the last one—whereupon Phenax, true to his word, bound their bodies and souls to a great oak, making a terrifying amalgam of undeath to guard Odunos and haunt the living for eternity.\n• **Feud with Nylea**: A pair of accomplished hunters, both fervent followers of Nylea, had a bet with one another to prove who was better with a bow. After countless tests found them equally matched, the hunters' rivalry drew Phenax's attention. Assuming the form of a dryad, Phenax goaded and taunted the hunters. Though amusing at first, Phenax's words cut deep, making the hunters careless. Thus, when the dryad suggested a blindfolded test of marksmanship, the hunters agreed. Once blinded, Phenax positioned the hunters to shoot one another. In the moment they fired, though, Nylea noticed Phenax's trick. She curved her hunters' arrows mid-flight and multiplied their number. Phenax's disguise shattered as he was riddled with arrows that pinned him to a great tree. Nylea appeared to the trapped god, mocked his pointless duplicity, and warned him never to threaten her followers again. She then left him to struggle free from the deeply embedded arrows, an escape that took him over a week. During that time, the god concocted plot after plot to have his revenge on Nylea. Some tales claim that this embarrassment directly led to tragedy for Nylea's favorite dryad companion, while others warn that Phenax's revenge has only just begun.*"
+    "value": "*The tales told of Phenax's deeds speak of his duplicity, cunning, and wit.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**The Path of Phenax**: Phenax was once a mortal who, like all mortals, passed on to Erebos's care in the Underworld when his time among the living came to an end. But Phenax found a way to escape the Underworld by sacrificing his identity to the memory-draining waters therein. He was able to cross the Rivers That Ring the World wrapped in a shred of Athreos's cloak. Since he had no identity, Athreos couldn't detect him, and thus Erebos couldn't use his great lash to pull Phenax back. When he emerged back into the realm of mortals, he did so as the first of the Returned. In time, others discovered this quandary of metaphysics, which is now known as the Path of Phenax.",
+      "**Black Oak of Odunos**: Before Odunos became a necropolis, it was a thriving city akin to Akros or Meletis. When the city fell before Phenax's assembled forces, some of the populace begged the god of lies to spare them the touch of Erebos's dread lash. Never one to miss an opportunity to cheat Erebos, Phenax made a solemn promise to those asking for his mercy, assuring them that they wouldn't be forced into the Underworld, on his honor. Soon afterward, the Returned that had invaded the city murdered these people to the last one—whereupon Phenax, true to his word, bound their bodies and souls to a great oak, making a terrifying amalgam of undeath to guard Odunos and haunt the living for eternity.",
+      "**Feud with Nylea**: A pair of accomplished hunters, both fervent followers of Nylea, had a bet with one another to prove who was better with a bow. After countless tests found them equally matched, the hunters' rivalry drew Phenax's attention. Assuming the form of a dryad, Phenax goaded and taunted the hunters. Though amusing at first, Phenax's words cut deep, making the hunters careless. Thus, when the dryad suggested a blindfolded test of marksmanship, the hunters agreed. Once blinded, Phenax positioned the hunters to shoot one another. In the moment they fired, though, Nylea noticed Phenax's trick. She curved her hunters' arrows mid-flight and multiplied their number. Phenax's disguise shattered as he was riddled with arrows that pinned him to a great tree. Nylea appeared to the trapped god, mocked his pointless duplicity, and warned him never to threaten her followers again. She then left him to struggle free from the deeply embedded arrows, an escape that took him over a week. During that time, the god concocted plot after plot to have his revenge on Nylea. Some tales claim that this embarrassment directly led to tragedy for Nylea's favorite dryad companion, while others warn that Phenax's revenge has only just begun."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -16426,7 +17078,8 @@
    {
     "name": "Phenax's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Phenax's Favor",
      "headers": [
       "d6",
@@ -16468,7 +17121,8 @@
    {
     "name": "Phenax's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Phenax's Ideals",
      "headers": [
       "d6",
@@ -16509,8 +17163,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Helping a fugitive escape justice\n• Pulling off a daring robbery\n• Obstruct champions of other gods\n• Building or restoring a temple to Phenax"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Helping a fugitive escape justice",
+      "Pulling off a daring robbery",
+      "Obstruct champions of other gods",
+      "Building or restoring a temple to Phenax"
+     ]
+    }
    },
    {
     "name": "",
@@ -16519,13 +17182,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Forthrightly assisting lawgivers in their duties\n• Swearing and then honoring an oath\n• Bringing order in times of chaos"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Forthrightly assisting lawgivers in their duties",
+      "Swearing and then honoring an oath",
+      "Bringing order in times of chaos"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Phenax's Devotee\n• Phenax's Votary\n• Phenax's Disciple\n• Champion of Deception"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Phenax's Devotee",
+      "Phenax's Votary",
+      "Phenax's Disciple",
+      "Champion of Deception"
+     ]
+    }
    }
   ]
  },
@@ -16787,7 +17467,30 @@
    {
     "name": "",
     "type": "text",
-    "value": "*The myths about Purphoros revolve around one of two themes: his wonderful creations or his explosive anger.*\n*• **The Gift of Bronze**: Long ago, mortals on Theros fought and hunted using weapons made of stone and wood. According to legend, it was a satyr smith named Tecton who discovered how to refine copper ore and work it into tools and weapons. Purphoros, delighted, saw this as the mortals' first tentative steps toward true craft. Some smiths, hastily copying Tecton's methods, devised a way to blend copper and arsenic into a crude form of bronze, but the forging method was dangerous and often yielded defective results.*\n*To reward the smith who took the first steps, Purphoros appeared to Tecton and granted the satyr the secret of smelting copper and tin into true bronze. The manufacture and use of bronze weapons spread across Theros, launching an age in which heroes conquered the wilds and founded great civilizations. Bronze is still the most used metal on Theros—and will remain so, at least until Purphoros decides that more than a few are ready for the secret of iron.*\n*• **Purphoros's Twin**: When the world was young, Purphoros was jealous of Iroas and Mogis and wanted a twin of his own. He created Petros, a Nyxborn double of himself crafted of divine bronze with a touch of mortal flesh. Petros aged as the eons passed, and Purphoros was forced to patch cracks with strips of bronze and refill the vessel of his Nyxborn twin. Petros lacks the spark of true life, though, and can't speak. He toils day and night in Purphoros's forge, making wonders that would shame any mortal smith but can never match Purphoros's work in beauty or originality.\n• **The Stone Winter**: In Theros's earliest days, the people vociferously honored Heliod, Nylea, and Thassa for the comforts of nature. Gradually, Purphoros grew bitter that mortals never acknowledged his flames, which kept the earth warm and fertile. So, Purphoros quenched the world's core. For a year, a lifeless winter gripped the world, with neither the sun nor the seasons warming the corpse-chill earth. Ultimately, it was the mortal engineer Chersio who brought about the winter's end. Instead of cursing the situation, Chersio sought a solution, creating a hypocaust system to bring warmth to her community. Delighted with the innovation, Purphoros waited until Chersio completed and lit her substructure furnace. When she did, the god returned warmth to the entire world. Today, an autumnal festival called the Kindling or the Forge-Lighting (the Chalcanapsion) lends its name to the seventh month in the Meletian calendar. During this festival, worshipers keep a bonfire burning from sundown to sunrise, acknowledging that Purphoros warms the earth and makes the harvest possible.*"
+    "value": "*The myths about Purphoros revolve around one of two themes: his wonderful creations or his explosive anger.*\n*To reward the smith who took the first steps, Purphoros appeared to Tecton and granted the satyr the secret of smelting copper and tin into true bronze. The manufacture and use of bronze weapons spread across Theros, launching an age in which heroes conquered the wilds and founded great civilizations. Bronze is still the most used metal on Theros—and will remain so, at least until Purphoros decides that more than a few are ready for the secret of iron.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**The Gift of Bronze**: Long ago, mortals on Theros fought and hunted using weapons made of stone and wood. According to legend, it was a satyr smith named Tecton who discovered how to refine copper ore and work it into tools and weapons. Purphoros, delighted, saw this as the mortals' first tentative steps toward true craft. Some smiths, hastily copying Tecton's methods, devised a way to blend copper and arsenic into a crude form of bronze, but the forging method was dangerous and often yielded defective results."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Purphoros's Twin**: When the world was young, Purphoros was jealous of Iroas and Mogis and wanted a twin of his own. He created Petros, a Nyxborn double of himself crafted of divine bronze with a touch of mortal flesh. Petros aged as the eons passed, and Purphoros was forced to patch cracks with strips of bronze and refill the vessel of his Nyxborn twin. Petros lacks the spark of true life, though, and can't speak. He toils day and night in Purphoros's forge, making wonders that would shame any mortal smith but can never match Purphoros's work in beauty or originality.",
+      "**The Stone Winter**: In Theros's earliest days, the people vociferously honored Heliod, Nylea, and Thassa for the comforts of nature. Gradually, Purphoros grew bitter that mortals never acknowledged his flames, which kept the earth warm and fertile. So, Purphoros quenched the world's core. For a year, a lifeless winter gripped the world, with neither the sun nor the seasons warming the corpse-chill earth. Ultimately, it was the mortal engineer Chersio who brought about the winter's end. Instead of cursing the situation, Chersio sought a solution, creating a hypocaust system to bring warmth to her community. Delighted with the innovation, Purphoros waited until Chersio completed and lit her substructure furnace. When she did, the god returned warmth to the entire world. Today, an autumnal festival called the Kindling or the Forge-Lighting (the Chalcanapsion) lends its name to the seventh month in the Meletian calendar. During this festival, worshipers keep a bonfire burning from sundown to sunrise, acknowledging that Purphoros warms the earth and makes the harvest possible."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -16832,7 +17535,8 @@
    {
     "name": "Purphoros's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Purphoros's Favor",
      "headers": [
       "d6",
@@ -16874,7 +17578,8 @@
    {
     "name": "Purphoros's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Purphoros's Ideals",
      "headers": [
       "d6",
@@ -16915,8 +17620,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Fighting against those who would rule over others\n• Taking decisive action on impulse\n• Destroying something that has outlived its usefulness\n• Creating something wondrous in Purphoros's name"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Fighting against those who would rule over others",
+      "Taking decisive action on impulse",
+      "Destroying something that has outlived its usefulness",
+      "Creating something wondrous in Purphoros's name"
+     ]
+    }
    },
    {
     "name": "",
@@ -16925,13 +17639,30 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Following an unjust law despite your misgivings\n• Creating something shoddy or flawed\n• Backing down from a fight or a contest"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Following an unjust law despite your misgivings",
+      "Creating something shoddy or flawed",
+      "Backing down from a fight or a contest"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Purphoros's Devotee\n• Purphoros's Votary\n• Purphoros's Disciple\n• Champion of the Forge"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Purphoros's Devotee",
+      "Purphoros's Votary",
+      "Purphoros's Disciple",
+      "Champion of the Forge"
+     ]
+    }
    }
   ]
  },
@@ -17052,8 +17783,16 @@
    },
    {
     "name": "Commandments of Raei",
-    "type": "text",
-    "value": "• Lead with mercy, patience, and compassion. Inspire others to unite in fellowship.\n• Aid those who are without guidance. Heal those who are without hope.\n• Those who are beyond redemption, who revel in slaughter and remorseless evil, must be dispatched with swift justice."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Lead with mercy, patience, and compassion. Inspire others to unite in fellowship.",
+      "Aid those who are without guidance. Heal those who are without hope.",
+      "Those who are beyond redemption, who revel in slaughter and remorseless evil, must be dispatched with swift justice."
+     ]
+    }
    }
   ]
  },
@@ -17898,8 +18637,16 @@
    },
    {
     "name": "Commandments of Sehanine",
-    "type": "text",
-    "value": "• Seize your own destiny by pursuing your passions.\n• Let the shadows protect you from the burning light of fanatical good and the absolute darkness of evil.\n• Walk unbridled and untethered, forging new memories and experiences."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Seize your own destiny by pursuing your passions.",
+      "Let the shadows protect you from the burning light of fanatical good and the absolute darkness of evil.",
+      "Walk unbridled and untethered, forging new memories and experiences."
+     ]
+    }
    }
   ]
  },
@@ -20448,8 +21195,16 @@
    },
    {
     "name": "Commandments of Tharizdun",
-    "type": "text",
-    "value": "• Offer and siphon power to Tharizdun until his liberation comes.\n• Uncover, restore, and exalt forgotten shrines and relics in his honor.\n• Ruin and raze the realms to prepare for the Epoch of Ends."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Offer and siphon power to Tharizdun until his liberation comes.",
+      "Uncover, restore, and exalt forgotten shrines and relics in his honor.",
+      "Ruin and raze the realms to prepare for the Epoch of Ends."
+     ]
+    }
    }
   ]
  },
@@ -20640,7 +21395,20 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Tales about Thassa typically demonstrate that she is often patient, but never kind.*\n***Callaphe the False**: During the last great Silence of the gods, a triton appeared, impersonated a mariner named Callaphe, and traveled the waves aboard Callaphe's living ship,The Monsoon. This false Callaphe misled the tritons with false prophecies and pulled a kraken from the depths, hoping to harness his power. When the Silence was lifted and Thassa returned to the world, she struck the impostor down with such fury that she shattered her bident. Purphoros, remembering Thassa's kindness to him on many occasions, replaced her sacred weapon.\n• **Dreams in the Deep**: While Purphoros is renowned for his endless creations and desires to bring new ideas into being, Thassa secretly shares similar creative desires. Endlessly bored with the predictable denizens of the land and sky, in the deepest ocean trenches, Thassa wills immortal dreams and nightmares into being. Delicate beauty, undulating grace, and tentacular terrors are birthed in the absolute dark, iterate for generations, and suffer swift extinctions at the god's whim, never knowing the sun's touch. Sapient mortals aren't welcome in these maddening ateliers; Thassa remains bitterly unwilling to reveal her work until her creations—and the time—are absolutely perfect.\n• **Every Tear the Sea**: Few myths tell of those who escaped Thassa's wrath. This isn't one of them. When the infamous explorer Rasiao failed to steal one of Thassa's Tidelock Pearls, wave-controlling treasures protected by vicious mollusks, she spent years avoiding the waves before finding her way back to the mainland. Although she'd failed to abscond with one of Thassa's treasures, she'd avoided the sea god's wrath, a claim she valued more preciously than gold. For years, Rasiao lived far from ocean or river, making her home in the driest reaches of Theros. She lived a long life, but on one trip to Akros to resupply and brag, she drowned in a bowl of ox stew. Those who found Rasiao discovered a pearl, too large to pass her lips, lodged in her mouth. Fearing further reprisal, Rasiao's daughters committed their mother's body to the Deyda River and Thassa's clutches. The explorer's daughters never forgot that just as countless drops make the sea, so too is every raindrop, tear, and cup part of Thassa's domain.\n• **Thief's Fate**: According to legend, a mortal sailor once stole Thassa's bident and used it to sink an enemy fleet. Thassa cared nothing for the vanquished fleet, but punished the sailor for his thievery by turning his family into eels. The sailor tried to care for the eels, but they blamed him for their fate and disappeared into the sea, leaving the sailor weeping on the shore.*"
+    "value": "*Tales about Thassa typically demonstrate that she is often patient, but never kind.*\n***Callaphe the False**: During the last great Silence of the gods, a triton appeared, impersonated a mariner named Callaphe, and traveled the waves aboard Callaphe's living ship,The Monsoon. This false Callaphe misled the tritons with false prophecies and pulled a kraken from the depths, hoping to harness his power. When the Silence was lifted and Thassa returned to the world, she struck the impostor down with such fury that she shattered her bident. Purphoros, remembering Thassa's kindness to him on many occasions, replaced her sacred weapon.*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Dreams in the Deep**: While Purphoros is renowned for his endless creations and desires to bring new ideas into being, Thassa secretly shares similar creative desires. Endlessly bored with the predictable denizens of the land and sky, in the deepest ocean trenches, Thassa wills immortal dreams and nightmares into being. Delicate beauty, undulating grace, and tentacular terrors are birthed in the absolute dark, iterate for generations, and suffer swift extinctions at the god's whim, never knowing the sun's touch. Sapient mortals aren't welcome in these maddening ateliers; Thassa remains bitterly unwilling to reveal her work until her creations—and the time—are absolutely perfect.",
+      "**Every Tear the Sea**: Few myths tell of those who escaped Thassa's wrath. This isn't one of them. When the infamous explorer Rasiao failed to steal one of Thassa's Tidelock Pearls, wave-controlling treasures protected by vicious mollusks, she spent years avoiding the waves before finding her way back to the mainland. Although she'd failed to abscond with one of Thassa's treasures, she'd avoided the sea god's wrath, a claim she valued more preciously than gold. For years, Rasiao lived far from ocean or river, making her home in the driest reaches of Theros. She lived a long life, but on one trip to Akros to resupply and brag, she drowned in a bowl of ox stew. Those who found Rasiao discovered a pearl, too large to pass her lips, lodged in her mouth. Fearing further reprisal, Rasiao's daughters committed their mother's body to the Deyda River and Thassa's clutches. The explorer's daughters never forgot that just as countless drops make the sea, so too is every raindrop, tear, and cup part of Thassa's domain.",
+      "**Thief's Fate**: According to legend, a mortal sailor once stole Thassa's bident and used it to sink an enemy fleet. Thassa cared nothing for the vanquished fleet, but punished the sailor for his thievery by turning his family into eels. The sailor tried to care for the eels, but they blamed him for their fate and disappeared into the sea, leaving the sailor weeping on the shore."
+     ]
+    }
    },
    {
     "name": "Alignment",
@@ -20675,7 +21443,8 @@
    {
     "name": "Thassa's Favor",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Thassa's Favor",
      "headers": [
       "d6",
@@ -20717,7 +21486,8 @@
    {
     "name": "Thassa's Ideals",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Thassa's Ideals",
      "headers": [
       "d6",
@@ -20758,8 +21528,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Supporting those who would reform or overturn institutions\n• Preventing cataclysmic change\n• Offering a treasure to the sea\n• Defending or maintaining a temple to Thassa"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Supporting those who would reform or overturn institutions",
+      "Preventing cataclysmic change",
+      "Offering a treasure to the sea",
+      "Defending or maintaining a temple to Thassa"
+     ]
+    }
    },
    {
     "name": "",
@@ -20768,13 +21547,31 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• Trying to keep a secret from Thassa\n• Using magic to calm the sea's fury\n• Upholding an institution not devoted to Thassa\n• Bowing to the desires or demands of another god"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Trying to keep a secret from Thassa",
+      "Using magic to calm the sea's fury",
+      "Upholding an institution not devoted to Thassa",
+      "Bowing to the desires or demands of another god"
+     ]
+    }
    },
    {
     "name": "Benefits of Piety",
-    "type": "text",
-    "value": "• Thassa's Devotee\n• Thassa's Votary\n• Thassa's Disciple\n• Champion of the Sea"
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Thassa's Devotee",
+      "Thassa's Votary",
+      "Thassa's Disciple",
+      "Champion of the Sea"
+     ]
+    }
    }
   ]
  },
@@ -21460,8 +22257,16 @@
    },
    {
     "name": "Commandments of the Raven Queen",
-    "type": "text",
-    "value": "• Death is the natural end of life. There is no pity for those who have fallen.\n• The path of Fate is sacrosanct. Those who pridefully attempt to cast off their destiny must be punished.\n• Undeath is an atrocity. Those who would pervert the transition of the soul must be brought down."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Death is the natural end of life. There is no pity for those who have fallen.",
+      "The path of Fate is sacrosanct. Those who pridefully attempt to cast off their destiny must be punished.",
+      "Undeath is an atrocity. Those who would pervert the transition of the soul must be brought down."
+     ]
+    }
    }
   ]
  },
@@ -22181,8 +22986,16 @@
    },
    {
     "name": "Commandments of Tiamat",
-    "type": "text",
-    "value": "• Amass wealth, but spend little. The gold—and the power that comes with it—is sufficient reward in itself.\n• Do not forgive nor forget an indignity to yourself. Let no affront go unpunished.\n• Take what you covet. Those without the strength to defend their dominion are not worthy to have one."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Amass wealth, but spend little. The gold—and the power that comes with it—is sufficient reward in itself.",
+      "Do not forgive nor forget an indignity to yourself. Let no affront go unpunished.",
+      "Take what you covet. Those without the strength to defend their dominion are not worthy to have one."
+     ]
+    }
    }
   ]
  },
@@ -22444,8 +23257,16 @@
    },
    {
     "name": "Commandments of Torog",
-    "type": "text",
-    "value": "• Seek and exalt places where no light touches.\n• Revel in the pain you inflict on others, and relish the pain you suffer yourself as an offering to Torog.\n• Imprison those who cannot resist you, and drag all life into the darkness."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Seek and exalt places where no light touches.",
+      "Revel in the pain you inflict on others, and relish the pain you suffer yourself as an offering to Torog.",
+      "Imprison those who cannot resist you, and drag all life into the darkness."
+     ]
+    }
    }
   ]
  },
@@ -23474,8 +24295,16 @@
    },
    {
     "name": "Commandments of Vecna",
-    "type": "text",
-    "value": "• Learn all you can, and keep hidden that which you know. Reveal what pieces you must, but never the whole.\n• Express and cultivate the evil within yourself, and in doing so, recognize it in others to exploit them for your own benefit.\n• Seed the ruin of all who worship other deities, until only those who kneel before Vecna remain."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Learn all you can, and keep hidden that which you know. Reveal what pieces you must, but never the whole.",
+      "Express and cultivate the evil within yourself, and in doing so, recognize it in others to exploit them for your own benefit.",
+      "Seed the ruin of all who worship other deities, until only those who kneel before Vecna remain."
+     ]
+    }
    }
   ]
  },
@@ -24393,8 +25222,16 @@
    },
    {
     "name": "Commandments of Zehir",
-    "type": "text",
-    "value": "• Keep your acts obfuscated and secret. The night is your greatest ally.\n• Strike quickly and without reason. Blind the target with their own confusion.\n• Kill slowly. Agonizingly. Or worse, make them enjoy it."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Keep your acts obfuscated and secret. The night is your greatest ally.",
+      "Strike quickly and without reason. Blind the target with their own confusion.",
+      "Kill slowly. Agonizingly. Or worse, make them enjoy it."
+     ]
+    }
    }
   ]
  },

@@ -32,7 +32,8 @@
    {
     "name": "Apparatus of Kwalish Levers:",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Apparatus of Kwalish Levers:",
      "headers": [
       "Lever",
@@ -128,7 +129,8 @@
    {
     "name": "Apparatus of Kwalish Levers",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Apparatus of Kwalish Levers",
      "headers": [
       "Lever",
@@ -236,8 +238,17 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Fire Ballista**: The battle balloon can fire its harpoon guns.\n• **Fire Green Flame Arbalester**: The battle balloon can fire its green flame arbalester.\n• **Move**: The battle balloon can use its helm to move using its propeller. If the battle balloon enters a Large or smaller creature's space, that creature is automatically pushed to the edge of the battle balloon's space. The creature must also succeed on a DC 15 Dexterity saving throw or take 5 (**1d10**) bludgeoning damage.\n• **Harpoon Haul**: The battle balloon can pull each target grappled by it up to 30 feet toward the battle balloon."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fire Ballista**: The battle balloon can fire its harpoon guns.",
+      "**Fire Green Flame Arbalester**: The battle balloon can fire its green flame arbalester.",
+      "**Move**: The battle balloon can use its helm to move using its propeller. If the battle balloon enters a Large or smaller creature's space, that creature is automatically pushed to the edge of the battle balloon's space. The creature must also succeed on a DC 15 Dexterity saving throw or take 5 (**1d10**) bludgeoning damage.",
+      "**Harpoon Haul**: The battle balloon can pull each target grappled by it up to 30 feet toward the battle balloon."
+     ]
+    }
    },
    {
     "name": "Control: Helm",
@@ -371,8 +382,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Fire Ballistas**: The galley can fire its __ballistas__ (DMG, ch. 8).\n• **Fire Mangonels**: The galley can fire its __mangonels__ (DMG, ch. 8).\n• **Move**: The galley can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fire Ballistas**: The galley can fire its __ballistas__ (DMG, ch. 8).",
+      "**Fire Mangonels**: The galley can fire its __mangonels__ (DMG, ch. 8).",
+      "**Move**: The galley can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+     ]
+    }
    },
    {
     "name": "Control: Helm",
@@ -450,8 +469,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Fire Ballista**: The keelboat can fire its __ballista__ (DMG, ch. 8).\n• **Move**: The keelboat can use its helm to move with its oars or sails."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fire Ballista**: The keelboat can fire its __ballista__ (DMG, ch. 8).",
+      "**Move**: The keelboat can use its helm to move with its oars or sails."
+     ]
+    }
    },
    {
     "name": "Control: Helm",
@@ -536,8 +562,14 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Move**: The longship can use its helm to move with its oars or sails."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Move**: The longship can use its helm to move with its oars or sails."
+     ]
+    }
    },
    {
     "name": "Control: Helm",
@@ -612,8 +644,15 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Eye Rays**: The mechanical beholder can use its eye ray tentacles.\n• **Move**: The mechanical beholder can use its helm to move using its magical propulsion unit."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Eye Rays**: The mechanical beholder can use its eye ray tentacles.",
+      "**Move**: The mechanical beholder can use its helm to move using its magical propulsion unit."
+     ]
+    }
    },
    {
     "name": "Control: Helm",
@@ -632,8 +671,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Disintegration Ray**: If the target is a creature, it must succeed on a DC 15 Dexterity saving throw or take 18 (**4d8**) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.\n• **Enervation Ray**: The targeted creature must make a DC 15 Constitution saving throw, taking 18 (**4d8**) necrotic damage on a failed save, or half as much damage on a successful one.\n• **Paralyzing Ray**: The targeted creature must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Disintegration Ray**: If the target is a creature, it must succeed on a DC 15 Dexterity saving throw or take 18 (**4d8**) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
+      "**Enervation Ray**: The targeted creature must make a DC 15 Constitution saving throw, taking 18 (**4d8**) necrotic damage on a failed save, or half as much damage on a successful one.",
+      "**Paralyzing Ray**: The targeted creature must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+     ]
+    }
    }
   ]
  },
@@ -725,8 +772,14 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Move**: The rowboat can move using its oars."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Move**: The rowboat can move using its oars."
+     ]
+    }
    },
    {
     "name": "Movement: Oars",
@@ -752,8 +805,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Fire Ballista**: The ship can fire its __ballista__ (DMG, ch. 8).\n• **Fire Mangonel**: The ship can fire its __mangonel__ (DMG, ch. 8).\n• **Move**: The ship can use its helm to move with its sails."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fire Ballista**: The ship can fire its __ballista__ (DMG, ch. 8).",
+      "**Fire Mangonel**: The ship can fire its __mangonel__ (DMG, ch. 8).",
+      "**Move**: The ship can use its helm to move with its sails."
+     ]
+    }
    },
    {
     "name": "Control: Helm",
@@ -1052,8 +1113,16 @@
    },
    {
     "name": "",
-    "type": "text",
-    "value": "• **Fire Ballistas**: The warship can fire its __ballistas__ (DMG, ch. 8).\n• **Fire Mangonels**: The warship can fire its __mangonels__ (DMG, ch. 8).\n• **Move**: The warship can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fire Ballistas**: The warship can fire its __ballistas__ (DMG, ch. 8).",
+      "**Fire Mangonels**: The warship can fire its __mangonels__ (DMG, ch. 8).",
+      "**Move**: The warship can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+     ]
+    }
    },
    {
     "name": "Control: Helm",
@@ -1285,7 +1354,8 @@
    {
     "name": "Dragon Sails",
     "type": "table",
-    "value": {
+    "table": {
+     "type": "table",
      "title": "Dragon Sails",
      "headers": [
       "Dragon Type",

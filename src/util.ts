@@ -3,8 +3,6 @@ import { title } from './parser';
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import kleur = require('kleur');
 
-export const BulletPoint = '\u2022'; // U+2022 •
-
 export function entrySort(a: any, b: any): number {
     // Sort entries list by keys, primarily used to patch OS-discrepancies.
     const keyA = getKey(a.name, a.source);
