@@ -66,9 +66,10 @@ function parseSkillProficiencies(background: any): string | null {
 }
 
 function parseToolProficiencies(background: any): string | null {
-    const proficiencies = getPreformattedBackgroundValue(background, 'Tool Proficiencies:');
-    if (proficiencies) return proficiencies;
-    return getPreformattedBackgroundValue(background, 'Tool Proficiency:');
+    return (
+        getPreformattedBackgroundValue(background, 'Tool Proficiencies:') ||
+        getPreformattedBackgroundValue(background, 'Tool Proficiency:')
+    );
 }
 
 function parseLanguages(background: any): string | null {
