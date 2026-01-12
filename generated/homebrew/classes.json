@@ -1399,18 +1399,8 @@
    },
    {
     "name": "Starting Equipment",
-    "type": "list",
-    "list": {
-     "type": "list",
-     "caption": "",
-     "entries": [
-      "(a) a Light Crossbow and 20 Bolts, (b) a Shortsword or (c) any simple weapon",
-      "(a) a Component Pouch or (b) an Arcane Focus",
-      "(a) a Scholar's Pack or (b) a Dungeoneer's Pack",
-      "Hide Armor, any simple weapon, and two Daggers",
-      "A Healer's Kit"
-     ]
-    }
+    "type": "text",
+    "value": "*Choose A, B, or C:* (A) Light Crossbow, 20 Bolts, Component Pouch, Scholar's Pack, Hide Armor, any simple weapon, and two Daggers, Healer's Kit and 5 GP; (B) Shortsword, Arcane Focus, Dungeoneer's Pack, Hide Armor, any simple weapon, and two Daggers, Healer's Kit and and 5 GP; or (C) 100 GP"
    },
    {
     "name": "Multiclassing",
@@ -1771,7 +1761,7 @@
     {
      "name": "Medical Expertise",
      "type": "text",
-     "value": "You gain proficiency in the *Medicine* and *Nature* skills. Your Proficiency Bonus is doubled for any ability check you make that uses either of these skills."
+     "value": "You gain Expertise in the *Medicine* and *Nature* skills."
     }
    ],
    "3": [
@@ -1884,7 +1874,7 @@
     {
      "name": "Epic Boon",
      "type": "text",
-     "value": "You gain an Epic Boon feat or another feat of your choice for which you qualify. __Boon of the Soul Drinker__ is recommended."
+     "value": "You gain an Epic Boon feat or another feat of your choice for which you qualify."
     },
     {
      "name": "Greater Formula",
@@ -1936,7 +1926,7 @@
        "rows": [
         [
          "1st",
-         "Charm person, tasha's hideous laughter"
+         "Charm Person, tasha's hideous laughter"
         ],
         [
          "3rd",
@@ -2003,7 +1993,7 @@
        "entries": [
         "***Prescribed Effects.*** Once per turn when a target you can see within 30 feet of you succeeds on an Intelligence, Wisdom, or Charisma saving throw against a spell you cast, you can expend a Psychic Point to fill its mind with scrambled psionic energy, forcing it to reroll the d20 and use the lower roll for its saving throw, possibly turning a success into a failure.",
         "***Mentally Prepared.*** Once per turn, when a target you can see within 30 feet of you, including yourself, fails an Intelligence, Wisdom, or Charisma saving throw, you can use a Psychic Point and add your Intelligence modifier to the creature's saving throw, potentially turning the failure into a success.",
-        "***Fight or Flight Response.*** As a Bonus Action, you can expend a Psychic Point and teleport up to 30 feet to an unoccupied space you can see. You immediately gain Temporary Hit Points equal to twice your intelligence modifier."
+        "***Fight or Flight Response.*** As a Bonus Action, you can expend a Psychic Point and teleport up to 30 feet to an unoccupied space you can see. You immediately gain Temporary Hit Points equal to twice your Intelligence modifier."
        ]
       }
      }
@@ -2037,6 +2027,686 @@
       "name": "Alienist (ELDRITCHDRAKKENHEIM24) Features",
       "type": "text",
       "value": "You have Resistance to Psychic damage and Immunity to being Charmed or Frightened. Magic cannot put you to sleep and you have Advantage on saving throws against spells that attempt to read your thoughts or control your mind or actions, such as __Dominate Person__. Additionally, when you use the Self-Diagnosis feature to regain Psychic Points using a spell slot, you now regain Psychic Points equal to the spell's level."
+     }
+    ]
+   },
+   "Chemist (ELDRITCHDRAKKENHEIM24)": {
+    "3": [
+     {
+      "name": "Chemist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "A Chemist is a studied scientist whose advanced research in to chemical compounds has granted them the ability to terrorize their enemies with alchemical explosions, devastating gasses, and other horrific concoctions. Chemists love testing their new compounds in the field, and are always keen to advance their study and research further, finding new combinations to combust their foes with."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Chemical Compound (ELDRITCHDRAKKENHEIM24)__: You gain proficiency in Alchemist's Supplies if you do not already have it. You also learn the __Fire Bolt__ cantrip and one additional Evocation cantrip of your choice from the Wizard spell list. These cantrips count as Apothecary cantrips for you, but do not count against your cantrips known."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Chemist Spells (ELDRITCHDRAKKENHEIM24)__: You always have certain spells prepared after you reach particular levels in this class, as shown in the Chemist Spells table. These spells count as Apothecary spells for you, but they don't count against the number of Apothecary spells you prepare."
+     },
+     {
+      "name": "Chemist Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Chemist Spells",
+       "headers": [
+        "Apothecary Level",
+        "Spell"
+       ],
+       "rows": [
+        [
+         "1st",
+         "Burning Hands, Grease"
+        ],
+        [
+         "3rd",
+         "Melf's acid arrow, Flaming Sphere"
+        ],
+        [
+         "5th",
+         "Fireball, Stinking Cloud"
+        ],
+        [
+         "7th",
+         "Ice Storm, Wall of Fire"
+        ],
+        [
+         "9th",
+         "Cloudkill, Cone of Cold"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Precise Application (ELDRITCHDRAKKENHEIM24)__: When you cast a spell that deals Acid, Cold, Fire, Lightning, or Poison damage to other creatures that you can see, you can choose a number of them equal to your Intelligence modifier. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+     }
+    ],
+    "6": [
+     {
+      "name": "Chemist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "When you cast an Apothecary cantrip that normally targets only one creature and deals Acid, Cold, Fire, Lightning, or Poison damage, the spell can instead target two creatures that are within the spell's range."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "As a Magic action, you give one creature you touch (including possibly yourself) resistance to Acid, Cold, Fire, Lightning, or Poison damage for 1 hour. This benefit ends immediately if you use this feature again."
+     }
+    ],
+    "10": [
+     {
+      "name": "Chemist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "You can store a spell from your Chemist Spells feature as a liquid in a small vial or bottle you touch when you cast the spell. The spell has no effect other than to be stored in the bottle. The spell remains stored inside until a creature opens the bottle. Once you use this feature, any unused bottled spell you previously created becomes inert, and you can't bottle another spell until you finish a short rest. Any creature holding the bottle may spend an action to open it and cast the spell inside. The spell uses your spell attack bonus and save DC, but the spell treats the creature who released it as the caster in all other respects."
+     }
+    ],
+    "14": [
+     {
+      "name": "Chemist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "When you cast a spell using an Apothecary spell slot which deals a type of damage from the following list, you can change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, or Poison."
+     }
+    ],
+    "18": [
+     {
+      "name": "Chemist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "When you cast a spell that deals Acid, Cold, Fire, Lighting, or Poison damage using an Apothecary spell slot, it is treated as if it was cast using a 7th-level spell slot."
+     }
+    ]
+   },
+   "Exorcist (ELDRITCHDRAKKENHEIM24)": {
+    "3": [
+     {
+      "name": "Exorcist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "An Exorcist comes prepared to deal with evil entities, sinister spirits, and fearsome fiends. Equipped with their holy symbol, a book of prayers, and a bag of ritualistic baubles, they stand ready to face the most unnatural and otherworldly entities of the realms. An Exorcist is accustomed to facing down insurmountable threats, with a holy symbol in hand they fear nothing, and stand as a shield between the realms of men, and those of monsters."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Spiritual Study (ELDRITCHDRAKKENHEIM24)__: You gain proficiency in heavy armor and the *Religion* skill. If you already have this proficiency, you gain proficiency with another skill of your choice. You can use a Holy Symbol as an Arcane Focus for your Apothecary spells and you gain a cantrip of your choice from the Cleric spell list. This cantrip counts as an Apothecary cantrip for you."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Exorcist Spells (ELDRITCHDRAKKENHEIM24)__: You always have certain spells prepared after you reach particular levels in this class, as shown in the Exorcist Spells table. These spells count as Apothecary spells for you, but they don't count against the number of Apothecary spells you prepare."
+     },
+     {
+      "name": "Exorcist Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Exorcist Spells",
+       "headers": [
+        "Apothecary Level",
+        "Spell"
+       ],
+       "rows": [
+        [
+         "1st",
+         "Bless, Protection from Evil and Good"
+        ],
+        [
+         "3rd",
+         "Spiritual Weapon, Zone of Truth"
+        ],
+        [
+         "5th",
+         "Counterspell, Spirit Guardians"
+        ],
+        [
+         "7th",
+         "Banishment, Last Rites"
+        ],
+        [
+         "9th",
+         "Dispel Evil and Good, Flame Strike"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Exorcism (ELDRITCHDRAKKENHEIM24)__: At 3rd level you gain the ability to imbue divine energy through your Holy Symbol to expel evil entities in the area, or purge their harmful effects from your allies."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When you use this feature, you choose which effect to create. You can use this feature a number of times equal to half your Proficiency Bonus rounded down, you regain all expended uses on a Short or Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "If an Exorcism effect requires a saving throw, the DC equals your Apothecary spell save DC."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Starting at 5th level, when an undead or fiend fails its saving throw against your Expel Evil feature, that creature suffers **4d8** Radiant damage."
+     },
+     {
+      "name": "Expel Evil",
+      "type": "text",
+      "value": "As a Magic action, you present your Holy Symbol and speak a prayer censuring creatures that mean you harm. Each undead, celestial, fey, or fiend that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take Reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+     },
+     {
+      "name": "Purge Corruption",
+      "type": "text",
+      "value": "You touch a creature or item and can end either one condition afflicting it. The condition can be Blinded, Charmed, Deafened, Frightened, Paralyzed, or Poisoned."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Additionally, if a creature is possessed or mind controlled by a spirit or foreign entity, you can use this feature to remove any traits or other features related to the possession. If possessed, the creature possessing it is shunted out of its host to an unoccupied space within 5 feet and takes Psychic damage equal to 2d8 + your Apothecary level."
+     }
+    ],
+    "6": [
+     {
+      "name": "Exorcist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "You are Immune to the Frightened condition, and cannot be possessed or cursed. You also have Advantage on saving throws against being Charmed."
+     }
+    ],
+    "10": [
+     {
+      "name": "Exorcist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "As a Reaction when a hostile creature you can see targets an ally with an attack, spell, or other effect, you can expend an Apothecary spell slot to force it to make a Charisma saving throw against your spell save DC. On a failure, the action they were attempting fails and resources used are wasted."
+     }
+    ],
+    "14": [
+     {
+      "name": "Exorcist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "Whenever you cast a spell that heals a creature, that spell deals maximum healing and the creature immediately gains Temporary Hit Points equal to your Apothecary level."
+     }
+    ],
+    "18": [
+     {
+      "name": "Exorcist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "As a Devout Witness, you speak on behalf of your gods and can feel their powers surging through you. Commanding spirits and vanquishing evil is second nature to you. You have added benefits that bolster your abilities."
+     },
+     {
+      "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Creatures who fail their saving throws against your Exorcism: Expel Evil feature take an additional **4d8** Radiant damage.",
+        "Creatures who are aided by your Exorcism: Purge Corruption feature gain 4d8 Temporary Hit Points."
+       ]
+      }
+     }
+    ]
+   },
+   "Mutagenist (ELDRITCHDRAKKENHEIM24)": {
+    "3": [
+     {
+      "name": "Mutagenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "Mutagenists have researched a serum that they inject to transform into a monstrous form. They use themselves as the conduit for this power and hurl themselves towards their enemies as a hulking abomination. They spend their lives researching and discovering new ways to improve and modify the serum in hopes of becoming the perfect form."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Natural Philosophy (ELDRITCHDRAKKENHEIM24)__: You gain proficiency with Alchemist's Supplies and either the Herbalism Kit or Poisoner's Kit. You also gain proficiency in two additional languages and the *Nature* skill. If you already have this proficiency, you gain proficiency with another skill of your choice."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Mutagenist Spells (ELDRITCHDRAKKENHEIM24)__: You always have certain spells prepared after you reach particular levels in this class, as shown in the Mutagenist Spells table. These spells count as Apothecary spells for you, but they don't count against the number of Apothecary spells you prepare."
+     },
+     {
+      "name": "Mutagenist Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Mutagenist Spells",
+       "headers": [
+        "Apothecary Level",
+        "Spell"
+       ],
+       "rows": [
+        [
+         "1st",
+         "Jump, Toxic Shield"
+        ],
+        [
+         "3rd",
+         "Alter Self, Enhance Ability"
+        ],
+        [
+         "5th",
+         "Haste, Water Breathing"
+        ],
+        [
+         "7th",
+         "Polymorph, Stoneskin"
+        ],
+        [
+         "9th",
+         "Reincarnate, Septic Shock"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Transmogrifying Elixir (ELDRITCHDRAKKENHEIM24)__: As a Bonus Action, you may expend a spell slot to undergo a grotesque transformation. The transformation ends after one minute, or if you are reduced to 0 Hit Points or Incapacitated. When you undergo this transformation you maintain your personality, alignment, and game statistics. However, several changes occur:"
+     },
+     {
+      "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Your Strength and Intelligence ability scores are swapped.",
+        "Your size becomes Large, your Jump distance is doubled, and you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+        "Each of your hands transform into a big meaty fist, which you can use to make melee weapon attacks. It counts as a simple weapon for you. Your big meaty fists deal **1d10** + your Strength modifier + your Apothecary level Bludgeoning damage on a hit.",
+        "You cannot cast or *Concentrate* on spells.",
+        "You have Darkvision out to a range of 120 feet.",
+        "You gain Temporary Hit Points equal to five times your Apothecary level."
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You also amplify your abilities based on the potency of your concoction. This is related to the spell slot you used to undergo the transformation:"
+     },
+     {
+      "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "Your Speed increases by 5 feet per level of spell slot used.",
+        "Your AC is 13 + the level of spell slot used.",
+        "At the start of each of your turns and as long as you have at least 1 Hit Point remaining, you regain a number of Hit Points equal to the level of the spell slot used."
+       ]
+      }
+     }
+    ],
+    "6": [
+     {
+      "name": "Mutagenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "Beginning at 6th level, you attack twice, instead of once, whenever you take the Attack action on your turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When you are in your transmogrified form, you have more powerful attacks capable of bypassing your enemy's greatest defenses. Your big meaty fist attacks count as magical for overcoming Resistance and Immunity to non-magical attacks and damage."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When you hit with an attack using your big meaty fists, you can expend a spell slot to empower the force of your blow with breaking unnatural energy. When you expend a spell slot in this way you deal an additional **1d8** Force damage per level of spell slot used."
+     }
+    ],
+    "10": [
+     {
+      "name": "Mutagenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "You are able to use your changed biology to protect yourself from the clutches of death. When you are reduced to 0 Hit Points in either your natural, or transmogrified state, your other self is ready to take over."
+     },
+     {
+      "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "When in your natural form and reduced to 0 Hit Points you can immediately transform using your Transmogrifying Elixir feature expending a spell slot as normal. You regain a number of Hit Points equal to your Apothecary level when you do (in addition to gaining Temporary Hit Points from your transformation).",
+        "When you are reduced to 0 Hit Points in your transmogrified form, you revert to your natural form with 1 Hit Point remaining. If you do, you can't assume your transmogrified form again until you finish a Short or Long Rest."
+       ]
+      }
+     }
+    ],
+    "14": [
+     {
+      "name": "Mutagenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "You can use your Greater Formulas feature to transmogrify as if you had used a spell slot of that level. When you transform in this way you gain one of the additional genome mutations listed below."
+     },
+     {
+      "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "***Draconic Genome.*** You grow fleshy wings from your back and your skin takes on a scaly appearance. You gain a Fly Speed equal to your walking Speed and as an action can spew bile in a 30-foot Cone. All creatures in the area must succeed on a Constitution saving throw against your spell save DC or take **8d6** Acid damage, or half as much on a successful save. Once you use this feature, you can not do so again until you finish a Short or Long Rest.",
+        "***Giant Genome.*** You become a hulking mass of flesh and muscle, turning yourself into a living siege weapon. Your size becomes Huge and all damage dealt to objects and structures is now doubled. As an action, you can expend a spell slot on your turn to slam your fists into the ground, sending shockwaves and rubble crashing around you. All creatures in a 30-foot radius Emanation must succeed on a Dexterity saving throw against your spell save DC or they take **8d6** Bludgeoning damage and are knocked Prone. If they succeed on the saving throw, they take half damage and are not knocked Prone.",
+        "***Cerebellum Genome.*** You maintain a fraction of your mind as you transform, allowing remnants of your studies to linger in your monstrous brain. You now have the ability to maintain *Concentration* on spells while in your transmogrified form. While transmogrified, your *Concentration* can't be broken as a result of taking damage."
+       ]
+      }
+     }
+    ],
+    "18": [
+     {
+      "name": "Mutagenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "You have perfected your Transmogrifying Elixir, breaking the confines of evolution and pushing your form to what you deem the apex of evolution. You gain the following benefits while transmogrified:"
+     },
+     {
+      "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "As long as you have one or more Hit Points remaining, you can use a Bonus Action and expend a spell slot to regain Hit Points equal to ten times the level of the spell slot used.",
+        "If you fail a saving throw, as a Reaction you can expend a spell slot to succeed instead.",
+        "Your Strength score becomes equal to your Intelligence score when transmogrified. Additionally, you can cast spells while in your transmogrified form."
+       ]
+      }
+     }
+    ]
+   },
+   "Pathogenist (ELDRITCHDRAKKENHEIM24)": {
+    "3": [
+     {
+      "name": "Pathogenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "The study of diseases opens doorways to many dangerous scientific discoveries. As experts in both ridding the body of sickness and the mutations of infectious disease, Pathogenists bring their study to the battlefield by using monsters and enemies as test subjects for their infections. Long years spent carefully monitoring the causes and effects of such plagues allows them to be experts at disease mutation, allowing their sickness to spread in a terrifying manner and riddle their foes with debilitating symptoms, crippling their bodies and rattling their minds."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Plague Proficiency (ELDRITCHDRAKKENHEIM24)__: You learn the __Chill Touch__ cantrip. You gain proficiency with the Herbalism Kit. If you already have this proficiency, you gain proficiency with one other type of Artisan's Tools of your choice."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Pathogenist Spells (ELDRITCHDRAKKENHEIM24)__: You always have certain spells prepared after you reach particular levels in this class, as shown in the Pathogenist Spells table. These spells count as Apothecary spells for you, but they don't count against the number of Apothecary spells you prepare."
+     },
+     {
+      "name": "Pathogenist Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Pathogenist Spells",
+       "headers": [
+        "Apothecary Level",
+        "Spell"
+       ],
+       "rows": [
+        [
+         "1st",
+         "Infect, Inflict Wounds"
+        ],
+        [
+         "3rd",
+         "Blindness/Deafness, Biohazard"
+        ],
+        [
+         "5th",
+         "Pestilence, Venomous Aura"
+        ],
+        [
+         "7th",
+         "Blight, Blood Worm"
+        ],
+        [
+         "9th",
+         "Contagion, Insect Plague"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Pernicious Pathogens (ELDRITCHDRAKKENHEIM24)__: Whenever a creature casts a spell or uses a trait or feature that would cure or remove one of your diseases (such as casting __Lesser Restoration__ to remove your __Infect__ spell), the creature must first make an ability check using its spellcasting ability (or its Charisma modifier, if the spell or special ability does not specify a spellcasting ability score). The DC equals your spell save DC."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "On a failed check, the creature's spell, trait, or feature fails and has no effect. Any material components used are expended, and any spell slot expended is wasted."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Mutant Strain (ELDRITCHDRAKKENHEIM24)__: You can evolve your diseases to cause new symptoms. You learn two mutant strains of your choice, and each time you gain a level in this class, you can replace one mutant strain you know with a different one from this feature. When you reach certain levels in this class, you learn additional mutant strains, as shown in the Mutant Strains Known table."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Whenever you cast a spell which inflicts diseases (such as __Infect__ or __Contagion__) you can apply an additional effect from your mutant strain to one of the targets of the spell, which lasts for the duration of that spell."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The following mutant strains are available to you when you learn a mutant strain. If a strain has a level requirement, you must be at least that level in this class to learn the strain."
+     },
+     {
+      "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Dizziness**: The target can't take Reactions.",
+        "**Fatigue**: Each time the target fails a saving throw against your disease, its Speed is reduced to five feet until the start of its next turn.",
+        "**Coughing Fits**: At the start of each of the target's turns, it must make a Constitution saving throw against your spell save DC. On a failed save, it is unable to speak until the start of its next turn.",
+        "**Shivers**: The target shakes uncontrollably. At the start of each of the target's turns, it drops whatever it is holding in its hands.",
+        "**Weakness (9th level)**: The target deals half damage with melee weapon attacks.",
+        "**Dry Eyes (9th level)**: Each time the target fails a saving throw against your disease, it becomes Blinded until the start of its next turn.",
+        "**Intense Fever (9th level)**: The target can't regain Hit Points.",
+        "**Lesions (9th level)**: The target loses any damage Resistances.",
+        "**Nausea (15th level)**: Each time a target fails a saving throw against your disease, it becomes Incapacitated until the start of its next turn.",
+        "**Dystrophy (15th level)**: The target becomes Vulnerable to Bludgeoning, Piercing, and Slashing damage."
+       ]
+      }
+     },
+     {
+      "name": "Mutant Strains Known",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Mutant Strains Known",
+       "headers": [
+        "Apothecary Level",
+        "Number of Strains"
+       ],
+       "rows": [
+        [
+         "3rd",
+         "2"
+        ],
+        [
+         "9th",
+         "3"
+        ],
+        [
+         "15th",
+         "4"
+        ]
+       ]
+      }
+     }
+    ],
+    "6": [
+     {
+      "name": "Pathogenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "When you cast a spell using an Apothecary spell slot or your Greater Formula feature that causes disease, that spell ignores any creature's Immunity to disease. Such creatures instead make any saving throws against your diseases with Advantage."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When a creature infected by one of your diseases dies, you can use your Reaction to spread the disease to a different creature you can see within 30 feet of that creature."
+     }
+    ],
+    "10": [
+     {
+      "name": "Pathogenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "When you start casting __Infect__, you can modify it so that it doesn't require *Concentration*. If you do so, the spell's duration becomes 1 minute for that casting. You must finish a Short or Long Rest before using this feature again."
+     }
+    ],
+    "14": [
+     {
+      "name": "Pathogenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "A creature infected with one of your diseases (such as __Infect__ or __Contagion__) has Disadvantage on saving throws against your Apothecary spells."
+     }
+    ],
+    "18": [
+     {
+      "name": "Pathogenist (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "Whenever you cast a spell which inflicts diseases, you can apply two additional effects from your mutant strain to one of the targets of the spell, instead of one."
+     }
+    ]
+   },
+   "Reanimator (ELDRITCHDRAKKENHEIM24)": {
+    "3": [
+     {
+      "name": "Reanimator (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "A Reanimator is the master of life and death. Years spent perfecting their formula to bring the recently dead back, or to construct new life out of discarded flesh and patchwork anatomy, have left most Reanimators in a state constantly riding the lines between genius and madness. A Reanimator's skills at clutching life from the jaws of death make them exquisitely suited for dealing with death, and undeath. Their mad genius is presented with the construction of a creature made from the scrap body parts left behind by their enemies which storms forward into battle on their command."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Spark Of Life (ELDRITCHDRAKKENHEIM24)__: You learn the __Shocking Grasp__ and __Spare the Dying__ cantrips. These count as Apothecary spells for you, and don't count against the number of Apothecary cantrips you know."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Reanimator Spells (ELDRITCHDRAKKENHEIM24)__: You always have certain spells prepared after you reach particular levels in this class, as shown in the Reanimator Spells table. These spells count as Apothecary spells for you, but they don't count against the number of Apothecary spells you prepare."
+     },
+     {
+      "name": "Reanimator Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Reanimator Spells",
+       "headers": [
+        "Apothecary Level",
+        "Spell"
+       ],
+       "rows": [
+        [
+         "1st",
+         "False Life, Inflict Wounds"
+        ],
+        [
+         "3rd",
+         "Gentle Repose, Invigorate"
+        ],
+        [
+         "5th",
+         "Lightning Bolt, Revivify"
+        ],
+        [
+         "7th",
+         "Death Ward, Corpse Explosion"
+        ],
+        [
+         "9th",
+         "Raise Dead, Nerve Gas"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Corpsewrought Creature (ELDRITCHDRAKKENHEIM24)__: You have constructed a companion from scavenged body parts and brought it to life with your occult magic: a __corpsewrought creature__. The creature is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying __Corpsewrought Creature__ stat block, which uses your Proficiency Bonus (PB) in several places. You can determine the cosmetic characteristics of the creature; your choice has no effect on its game statistics."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It can move and use its Reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a Bonus Action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the creature can take any action of its choice, not just Dodge."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "If your corpsewrought creature has died within the last hour, you can use your Healer's Kit as an action to revive it, provided you are within 5 feet of it and you expend an Apothecary spell slot. The corpsewrought companion returns to life after 1 minute with all its Hit Points restored."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "At the end of a Long Rest, you can create a new corpsewrought creature if you have your Healer's Kit with you and access to suitable \"materials.\" If you already have a corpsewrought creature from this feature, the first one immediately perishes. The creature also perishes if you die."
+     }
+    ],
+    "6": [
+     {
+      "name": "Reanimator (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "When a creature within 5 feet of your corpsewrought creature makes an attack against you, it can use its Reaction to make a melee weapon attack against the attacking creature. In addition, your corpsewrought creature's slam attack counts as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In addition, you can cast __Animate Dead__ once using an Apothecary spell slot. Once you do, you can't cast the spell again until you finish a Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You have reanimated the head of a dead humanoid creature which now serves you in your studies. You may use the head as a spellcasting focus. The head speaks common and one other language of your choice."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Whenever you make an Intelligence ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10. Additionally, you gain proficiency in the *Arcana* and *Investigation* skills."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can use the head to cast __Speak with Dead__ without expending a spell slot. Once you use this feature you can't do so again until you finish a Short or Long Rest."
+     }
+    ],
+    "10": [
+     {
+      "name": "Reanimator (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "Your corpsewrought creature's size increases to Large, and its Speed increases to 40 feet."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When your corpsewrought creature hits a creature with a melee attack, it can immediately make a grapple attempt against the target. The DC to escape this grapple is equal to 8 + the corpsewrought creature's strength modifier (+4)  + your PB."
+     }
+    ],
+    "14": [
+     {
+      "name": "Reanimator (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "When you command your corpsewrought creature to take the Attack action, the creature can make two attacks."
+     }
+    ],
+    "18": [
+     {
+      "name": "Reanimator (ELDRITCHDRAKKENHEIM24) Features",
+      "type": "text",
+      "value": "Your corpsewrought creature increases in size to Huge, gains a reach of 10 feet, and its Speed increases to 50 feet. Its slam attack deals an additional **1d8** Bludgeoning damage."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Additionally, the weight your corpsewrought creature can push or lift is doubled."
      }
     ]
    }

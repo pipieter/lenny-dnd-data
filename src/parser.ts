@@ -268,7 +268,9 @@ export function parseComponents(components: any): string {
         if (typeof material != 'string') {
             material = material.text;
         }
-        result.push(`M (${material})`);
+
+        if (material) result.push(`M (${material})`);
+        else result.push('M');
     }
 
     return result.join(', ');
@@ -804,6 +806,12 @@ export function parsePrerequisite(prerequisite: any): string | null {
             case 'campaign': {
                 const campaigns = prerequisite.campaign;
                 prerequisites.push(`${joinStringsWithOr(campaigns)} campaign`);
+                break;
+            }
+            case 'level': {
+                const lvl = prerequisite.level.level;
+                const classname = prerequisite.level.class.name;
+                prerequisites.push(`Lv. ${lvl} ${classname}`);
                 break;
             }
             default: {
