@@ -34,7 +34,7 @@ function getPreformattedBackgroundValue(background: any, name: string): string |
     // taken for a nice result without having to do any manual parsing.
     // Sometimes it is possible that the first entry is a string instead, usually comments about the class and how to use it.
 
-    const entries = typeof background.entries[0] !== "string" ? background.entries[0] : background.entries[1];
+    const entries = typeof background.entries[0] !== 'string' ? background.entries[0] : background.entries[1];
     if (entries.type !== 'list') {
         throw `getPreformattedBackgroundValue: The first entry is required to be a list, instead received a ${entries.type}: ${JSON.stringify(background)}`;
     }

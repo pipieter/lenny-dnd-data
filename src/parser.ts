@@ -270,7 +270,7 @@ export function parseComponents(components: any): string {
         }
 
         if (material) result.push(`M (${material})`);
-        else result.push("M");
+        else result.push('M');
     }
 
     return result.join(', ');
@@ -811,7 +811,7 @@ export function parsePrerequisite(prerequisite: any): string | null {
             case 'level': {
                 const lvl = prerequisite.level.level;
                 const classname = prerequisite.level.class.name;
-                prerequisites.push(`Lv. ${lvl} ${classname}`)
+                prerequisites.push(`Lv. ${lvl} ${classname}`);
                 break;
             }
             default: {
