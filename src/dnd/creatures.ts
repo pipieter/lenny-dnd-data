@@ -141,19 +141,47 @@ function getCreatureDetails(creature: any): DescriptionList {
     if (creature.skill) {
         const results: string[] = [];
         for (let [skill, value] of Object.entries(creature.skill) as [string, any][]) {
-            results.push(`${skill} ${value}`)
+            results.push(`${skill} ${value}`);
         }
         const skills = results.join(', ');
         list.entries.push(`**Skills**: ${cleanDNDText(skills)}`);
     }
 
     if (creature.resist) {
-        const resistances = creature.resist.join(', ');
+        const results = [];
+        const extra = [];
+        for (const r of creature.resist) {
+            if (typeof r === 'string') results.push(r);
+            else if (r.resist) {
+                const cond = r.resist.join(', ');
+                extra.push(`${cond} ${r.note}`);
+            }
+            else if (r.special) results.push(r.special);
+            else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.resist)}.`
+        }
+        let resistances = results.join(', ');
+        let conditions = extra.join(';');
+        if (extra.length !== 0) resistances = resistances ? `${resistances}; ${conditions}` : conditions;
+
         list.entries.push(`**Resistances**: ${cleanDNDText(resistances)}`);
     }
 
     if (creature.immune) {
-        const immunities = creature.immune.join(', ');
+        const results = [];
+        const extra = [];
+        for (const i of creature.immune) {
+            if (typeof i === 'string') results.push(i);
+            else if (i.immune) {
+                const cond = i.immune.join(', ');
+                extra.push(`${cond} ${i.note}`);
+            }
+            else if (i.special) results.push(i.special);
+            else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.immune)}.`
+        }
+        let immunities = results.join(', ');
+        let conditions = extra.join(';');
+        if (extra.length !== 0) immunities = immunities ? `${immunities}; ${conditions}` : conditions;
+
         list.entries.push(`**Immunities**: ${cleanDNDText(immunities)}`);
     }
 
@@ -165,6 +193,14 @@ function getCreatureDetails(creature: any): DescriptionList {
     if (creature.languages) {
         const languages = creature.languages.join(', ');
         list.entries.push(`**Languages**: ${cleanDNDText(languages)}`);
+    }
+
+    if (creature.cr) {
+        let result;
+        if (typeof creature.cr === 'string') result = creature.cr;
+        else if (creature.cr.cr) result = creature.cr.cr;
+        else throw `Unsupported creature CR in ${creature.name}: ${JSON.stringify(creature.cr)}`
+        list.entries.push(`**CR**: ${result}`);
     }
 
     return {
