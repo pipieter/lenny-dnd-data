@@ -3,7 +3,19 @@ import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { findEntry } from '../5etools-conversion/find';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, DescriptionList, DescriptionTable, DescriptionType, List, parseAbilityScore, parseCreatureSummonSpell, parseCreatureTypes, parseDescriptions, parseSizes, Table } from '../parser';
+import {
+    Description,
+    DescriptionList,
+    DescriptionTable,
+    DescriptionType,
+    List,
+    parseAbilityScore,
+    parseCreatureSummonSpell,
+    parseCreatureTypes,
+    parseDescriptions,
+    parseSizes,
+    Table,
+} from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
 import { calculateAbilityMod, joinStringsWithAnd, joinStringsWithOr, variadic } from '../util';
 
@@ -23,27 +35,27 @@ interface Creature {
 }
 
 function parseCreatureSummonClass(creature: any): string | null {
-    if (!creature.summonedByClass) return null
-    const parts = creature.summonedByClass.split("|");
-    return `${parts[0]} (${parts[1]})`
+    if (!creature.summonedByClass) return null;
+    const parts = creature.summonedByClass.split('|');
+    return `${parts[0]} (${parts[1]})`;
 }
 
 function getCreatureStats(creature: any): DescriptionTable {
     let stats = {
-        'str': creature.str ?? null,
-        'dex': creature.dex ?? null,
-        'con': creature.con ?? null,
-        'int': creature.int ?? null,
-        'wis': creature.wis ?? null,
-        'cha': creature.cha ?? null
-    }
+        str: creature.str ?? null,
+        dex: creature.dex ?? null,
+        con: creature.con ?? null,
+        int: creature.int ?? null,
+        wis: creature.wis ?? null,
+        cha: creature.cha ?? null,
+    };
 
     const statTable: Table = {
         type: 'table',
         title: 'Stats',
-        headers: [""],
-        rows: [['Score'], ['Mod.'], ['Save.']]
-    }
+        headers: [''],
+        rows: [['Score'], ['Mod.'], ['Save.']],
+    };
 
     for (const [stat, score] of Object.entries(stats)) {
         if (score === null) continue;
@@ -59,16 +71,16 @@ function getCreatureStats(creature: any): DescriptionTable {
     return {
         name: 'Stats',
         type: DescriptionType.table,
-        table: statTable
-    }
+        table: statTable,
+    };
 }
 
 function getCreatureDetails(creature: any): DescriptionList {
     const list: List = {
         type: 'list',
         caption: '',
-        entries: []
-    }
+        entries: [],
+    };
 
     if (creature.ac) {
         const results: string[] = [];
@@ -86,12 +98,12 @@ function getCreatureDetails(creature: any): DescriptionList {
             }
         }
         const totalAC = joinStringsWithOr(results);
-        list.entries.push(`**AC**: ${cleanDNDText(totalAC)}`)
+        list.entries.push(`**AC**: ${cleanDNDText(totalAC)}`);
     }
 
     if (creature.hp) {
         const hp = creature.hp;
-        let totalHP = "";
+        let totalHP = '';
         if (typeof hp === 'number') {
             totalHP = hp.toString();
         } else if (hp.special) {
@@ -102,7 +114,7 @@ function getCreatureDetails(creature: any): DescriptionList {
             throw `Unsupported creature-HP: ${JSON.stringify(hp)}`;
         }
         // TODO Companion special HP
-        list.entries.push(`**HP**: ${cleanDNDText(totalHP)}`)
+        list.entries.push(`**HP**: ${cleanDNDText(totalHP)}`);
     }
 
     if (creature.speed) {
@@ -116,14 +128,15 @@ function getCreatureDetails(creature: any): DescriptionList {
 
             for (const s of speed) {
                 if (typeof s === 'number') speeds.push(`${s} ft.`);
-                else if (typeof s === 'boolean') continue; // TODO Special movement types, like hovering.
+                else if (typeof s === 'boolean')
+                    continue; // TODO Special movement types, like hovering.
                 else if (s.condition) speeds.push(`${s.number} ft. ${s.condition}`);
-                else throw `Unsupported creature-speed in ${creature.name}: ${JSON.stringify(creature.speed)}`
+                else throw `Unsupported creature-speed in ${creature.name}: ${JSON.stringify(creature.speed)}`;
             }
             results.push(`*${type}* ${joinStringsWithOr(speeds)}`);
         }
         const totalSpeed = results.join('; ');
-        list.entries.push(`**Speed**: ${cleanDNDText(totalSpeed)}`)
+        list.entries.push(`**Speed**: ${cleanDNDText(totalSpeed)}`);
     }
 
     if (creature.initiative) {
@@ -131,17 +144,29 @@ function getCreatureDetails(creature: any): DescriptionList {
         let result;
 
         if (initiative.proficiency) result = initiative.proficiency.toString();
-        else if (initiative.advantageMode) result = creature.dex.toString(); // TODO figure this out, is possibly more complex than just the dex value.
+        else if (initiative.advantageMode)
+            result = creature.dex.toString(); // TODO figure this out, is possibly more complex than just the dex value.
         else if (initiative.initiative != null) result = initiative.initiative.toString();
-        else throw `Unsupported creature-initiative in ${creature.name}: ${JSON.stringify(initiative)}` // TODO Should possible always revert to dex?
+        else throw `Unsupported creature-initiative in ${creature.name}: ${JSON.stringify(initiative)}`; // TODO Should possible always revert to dex?
 
-        list.entries.push(`**Initiative**: ${cleanDNDText(result)}`)
+        list.entries.push(`**Initiative**: ${cleanDNDText(result)}`);
     }
 
     if (creature.skill) {
         const results: string[] = [];
         for (let [skill, value] of Object.entries(creature.skill) as [string, any][]) {
-            results.push(`${skill} ${value}`);
+            value = variadic(value)[0]; // TODO -> multi-value support?
+            if (skill === 'other') {
+                if (value.oneOf) {
+                    const other: string[] = [];
+                    for (let [s, v] of Object.entries(value.oneOf) as [string, any][]) {
+                        other.push(`${s} ${v}`);
+                    }
+                    results.push(`plus one of the following: ${joinStringsWithOr(other)}`);
+                } else {
+                    throw `Unsupported creature-skill (other) in ${creature.name}: ${JSON.stringify(value)}`;
+                }
+            } else results.push(`${skill} ${value}`);
         }
         const skills = results.join(', ');
         list.entries.push(`**Skills**: ${cleanDNDText(skills)}`);
@@ -155,9 +180,8 @@ function getCreatureDetails(creature: any): DescriptionList {
             else if (r.resist) {
                 const cond = r.resist.join(', ');
                 extra.push(`${cond} ${r.note}`);
-            }
-            else if (r.special) results.push(r.special);
-            else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.resist)}.`
+            } else if (r.special) results.push(r.special);
+            else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.resist)}.`;
         }
         let resistances = results.join(', ');
         let conditions = extra.join(';');
@@ -174,9 +198,8 @@ function getCreatureDetails(creature: any): DescriptionList {
             else if (i.immune) {
                 const cond = i.immune.join(', ');
                 extra.push(`${cond} ${i.note}`);
-            }
-            else if (i.special) results.push(i.special);
-            else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.immune)}.`
+            } else if (i.special) results.push(i.special);
+            else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.immune)}.`;
         }
         let immunities = results.join(', ');
         let conditions = extra.join(';');
@@ -199,7 +222,7 @@ function getCreatureDetails(creature: any): DescriptionList {
         let result;
         if (typeof creature.cr === 'string') result = creature.cr;
         else if (creature.cr.cr) result = creature.cr.cr;
-        else throw `Unsupported creature CR in ${creature.name}: ${JSON.stringify(creature.cr)}`
+        else throw `Unsupported creature CR in ${creature.name}: ${JSON.stringify(creature.cr)}`;
         list.entries.push(`**CR**: ${result}`);
     }
 
@@ -207,7 +230,7 @@ function getCreatureDetails(creature: any): DescriptionList {
         name: '',
         type: DescriptionType.list,
         list: list,
-    }
+    };
 }
 
 function buildCreature(creature: any, fluff: any | null): Creature {
@@ -231,7 +254,7 @@ function buildCreature(creature: any, fluff: any | null): Creature {
         description,
         fluffInfo,
         stats: getCreatureStats(creature),
-        details: getCreatureDetails(creature)
+        details: getCreatureDetails(creature),
     };
 }
 
