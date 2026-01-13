@@ -150,7 +150,6 @@ function parseSkills(creature: any): string {
 }
 
 function parseResistances(creature: any): string {
-    // TODO Make parsing recursive, to support resistance exceptions within exceptions.
     const iterateResistances = (resists: any): { results: string[]; extra: string[] } => {
         const results: string[] = [];
         const extra: string[] = [];
@@ -181,22 +180,33 @@ function parseResistances(creature: any): string {
 }
 
 function parseImmunities(creature: any): string {
-    // TODO Make parsing recursive, to support immunities exceptions within exceptions.
-    // TODO conditionImmune
-    const results = [];
-    const extra = [];
-    for (const i of creature.immune) {
-        if (typeof i === 'string') results.push(i);
-        else if (i.immune) {
-            const cond = i.immune.join(', ');
-            extra.push(`${cond} ${i.note} `);
-        } else if (i.special) results.push(i.special);
-        else throw `Unsupported creature - resistance in ${creature.name}: ${JSON.stringify(creature.immune)}.`;
-    }
-    let immunities = results.join(', ');
-    const conditions = extra.join(';');
-    if (extra.length !== 0) immunities = immunities ? `${immunities}; ${conditions} ` : conditions;
-    return immunities;
+    const iterateImmunities = (immunities: any): { results: string[]; extra: string[] } => {
+        const results: string[] = [];
+        const extra: string[] = [];
+
+        for (const i of immunities) {
+            if (typeof i === 'string') results.push(i);
+            else if (i.special) results.push(i.special);
+            else if (i.immune) {
+                const iterated = iterateImmunities(i.immune);
+                const prefix = i.preNote ?? '';
+                const suffix = i.note ?? '';
+                const innerResistances = iterated.results.join(', ');
+                let inner = `${prefix} ${innerResistances} ${suffix}`.trim();
+                if (iterated.extra.length > 0) inner = inner + '; ' + joinStringsWithAnd(iterated.extra);
+                extra.push(inner);
+            } else throw `Unsupported creature - immunities in ${creature.name}: ${JSON.stringify(i)}.`;
+        }
+
+        return { results, extra };
+    };
+
+    const immunities = iterateImmunities(creature.immune);
+    const main = immunities.results.join(', ');
+    const special = immunities.extra.join(', ');
+    if (immunities.results.length == 0) return special;
+    if (immunities.extra.length != 0) return `${main}; ${special}`;
+    return main;
 }
 
 function parseCR(creature: any): string {
@@ -220,6 +230,7 @@ function getCreatureDetails(creature: any): DescriptionList {
     if (creature.skill) list.entries.push(`**Skills**: ${parseSkills(creature)}`);
     if (creature.resist) list.entries.push(`**Resistances**: ${parseResistances(creature)}`);
     if (creature.immune) list.entries.push(`**Immunities**: ${parseImmunities(creature)}`);
+    // TODO add conditionImmune, normally is displayed with Immunities, but is easier to handle separately.
     if (creature.senses) {
         const senses = creature.senses.join(', ');
         list.entries.push(`**Senses**: ${cleanDNDText(senses)}`);
