@@ -114,7 +114,7 @@ function parseSpeed(creature: any): string {
             else if (s.condition) speeds.push(`${s.number} ft.${s.condition}`);
             else throw `Unsupported creature - speed in ${creature.name}: ${JSON.stringify(creature.speed)}`;
         }
-        results.push(`* ${type} * ${joinStringsWithOr(speeds)}`);
+        results.push(`*${type}* ${joinStringsWithOr(speeds)}`);
     }
     return results.join(', ');
 }
@@ -211,11 +211,11 @@ function getCreatureDetails(creature: any): DescriptionList {
     if (creature.immune) list.entries.push(`**Immunities**: ${parseImmunities(creature)}`);
     if (creature.senses) {
         const senses = creature.senses.join(', ');
-        list.entries.push(`**Senses**: ${cleanDNDText(senses)} `);
+        list.entries.push(`**Senses**: ${cleanDNDText(senses)}`);
     }
     if (creature.languages) {
         const languages = creature.languages.join(', ');
-        list.entries.push(`**Languages**: ${cleanDNDText(languages)} `);
+        list.entries.push(`**Languages**: ${cleanDNDText(languages)}`);
     }
     if (creature.cr) list.entries.push(`**CR**: ${parseCR(creature)}`);
 

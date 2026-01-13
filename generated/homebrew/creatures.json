@@ -64,7 +64,7 @@
     "entries": [
      "**AC**: 21 (Natural Armor)",
      "**HP**: 245 (20d10 + 140)",
-     "**Speed**: *walk* 50 Ft.; *fly* 150 Ft.",
+     "**Speed**: *walk* 50 Ft., *fly* 150 Ft.",
      "**Skills**: deception +17, perception +14",
      "**Resistances**: bludgeoning, piercing, slashing from nonmagical attacks",
      "**Immunities**: necrotic, poison, radiant",
@@ -210,7 +210,7 @@
     "type": "list",
     "caption": "",
     "entries": [
-     "**AC**: 18 (Chain Mail And Shield)",
+     "**AC**: 18 ({@item Chain Mail|phb} And {@item Shield|phb})",
      "**HP**: 11 (2d8 + 2)",
      "**Speed**: *walk* 30 Ft.",
      "**Senses**: darkvision 60 ft.",
@@ -355,7 +355,7 @@
     "type": "list",
     "caption": "",
     "entries": [
-     "**AC**: 15 (Breastplate)",
+     "**AC**: 15 ({@item Breastplate|phb})",
      "**HP**: 9 (2d8)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: deception +5, insight +4, persuasion +5",
@@ -428,7 +428,7 @@
     "type": "list",
     "caption": "",
     "entries": [
-     "**AC**: 15 (Chain Shirt)",
+     "**AC**: 15 ({@item Chain Shirt|phb})",
      "**HP**: 16 (3d6 + 6)",
      "**Speed**: *walk* 20 Ft.",
      "**Skills**: investigation +3, perception +2, stealth +4",
@@ -504,7 +504,7 @@
     "entries": [
      "**AC**: 11 + PB",
      "**HP**: 32 (5d10 + 5)",
-     "**Speed**: *walk* 25 Ft.; *swim* 35 Ft.",
+     "**Speed**: *walk* 25 Ft., *swim* 35 Ft.",
      "**Skills**: athletics +2 + PB",
      "**Senses**: Darkvision 30 ft.",
      "**CR**: 1"
@@ -577,7 +577,7 @@
     "entries": [
      "**AC**: 11 + PB",
      "**HP**: 19 (3d10 + 3)",
-     "**Speed**: *walk* 40 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 40 Ft., *fly* 60 Ft.",
      "**Skills**: perception +1 + PB",
      "**CR**: 1"
     ]
@@ -726,7 +726,7 @@
     "type": "list",
     "caption": "",
     "entries": [
-     "**AC**: 15 (Leather Armor And Shield)",
+     "**AC**: 15 ({@item Leather Armor|phb} And {@item Shield|phb})",
      "**HP**: 7 (2d6)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: stealth +6",
@@ -802,7 +802,7 @@
     "entries": [
      "**AC**: 13 + PB (natural Armor)",
      "**HP**: 59 (7d10 + 21)",
-     "**Speed**: *walk* 60 Ft.; *fly* 90 Ft.",
+     "**Speed**: *walk* 60 Ft., *fly* 90 Ft.",
      "**Skills**: athletics +4 + PB",
      "**Immunities**: fire",
      "**Languages**: understands Abyssal, Common, and Infernal but can't speak",
@@ -947,7 +947,7 @@
     "type": "list",
     "caption": "",
     "entries": [
-     "**AC**: 18 (Plate Armor)",
+     "**AC**: 18 ({@item Plate Armor|phb})",
      "**HP**: 52 (8d8 + 16)",
      "**Speed**: *walk* 30 Ft.",
      "**Languages**: any one language (usually Common)",
@@ -1170,7 +1170,7 @@
     "entries": [
      "**AC**: 13 (Light)",
      "**HP**: health levels equal to their level",
-     "**Speed**: *walk* 30 Ft. (dependant On Ancestry)",
+     "**Speed**: *walk* 30 Ft.(dependant On Ancestry)",
      "**Skills**: arcana +2, insight +2",
      "**Senses**: appropriate to ancestry",
      "**Languages**: appropriate to ancestry (usually Common)",
@@ -1244,9 +1244,9 @@
     "entries": [
      "**AC**: 21 (Natural Armor)",
      "**HP**: 243 (18d10 + 144)",
-     "**Speed**: *walk* 50 Ft.; *fly* 150 Ft.",
+     "**Speed**: *walk* 50 Ft., *fly* 150 Ft.",
      "**Skills**: insight +15, perception +15",
-     "**Resistances**: radiant; bludgeoning, piercing, slashing from nonmagical attacks",
+     "**Resistances**: radiant; bludgeoning, piercing, slashing from nonmagical attacks ",
      "**Immunities**: fire, necrotic, poison",
      "**Senses**: Truesight 120 ft.",
      "**Languages**: all, telepathy 120 ft.",
@@ -1318,9 +1318,9 @@
     "type": "list",
     "caption": "",
     "entries": [
-     "**AC**: 10 or 13 With __Mage Armor__",
+     "**AC**: 10 or 13 With {@spell Mage Armor}",
      "**HP**: 78 (12d8 + 24)",
-     "**Speed**: *walk* 30 Ft. Swim 30 Ft.",
+     "**Speed**: *walk* 30 Ft.swim 30 Ft.",
      "**Skills**: arcana +7, history +7, perception +3, stealth +3",
      "**Resistances**: cold",
      "**Senses**: Darkvision 60 ft.",
@@ -1508,9 +1508,9 @@
     "entries": [
      "**AC**: 17 (Natural Armor)",
      "**HP**: 136 (16d8 + 64)",
-     "**Speed**: *walk* 30 Ft.; *fly* 90 Ft.",
+     "**Speed**: *walk* 30 Ft., *fly* 90 Ft.",
      "**Skills**: insight +9, perception +9",
-     "**Resistances**: radiant; bludgeoning, piercing, slashing from nonmagical attacks",
+     "**Resistances**: radiant; bludgeoning, piercing, slashing from nonmagical attacks ",
      "**Senses**: darkvision 120 ft.",
      "**Languages**: all, telepathy 120 ft.",
      "**CR**: 10"
@@ -1583,7 +1583,7 @@
     "entries": [
      "**AC**: 15",
      "**HP**: 1 (1d4 - 1)",
-     "**Speed**: *walk* 10 Ft.; *fly* 30 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 30 Ft.",
      "**Skills**: perception +4, stealth +7",
      "**Languages**: Sylvan",
      "**CR**: 1/4"
@@ -1656,7 +1656,7 @@
     "entries": [
      "**AC**: 15 (Natural Armor)",
      "**HP**: 97 (13d8 + 39)",
-     "**Speed**: *walk* 40 Ft.; *climb* 40 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 40 Ft.",
      "**Skills**: stealth +7",
      "**Senses**: Blindsight 120 ft.",
      "**Languages**: understands all languages but speaks only through the use of their Mimicry trait",
@@ -1766,7 +1766,7 @@
     "entries": [
      "**AC**: 18 (Natural Armor)",
      "**HP**: 168 (16d10 + 80)",
-     "**Speed**: *walk* 40 Ft.; *fly* 80 Ft.",
+     "**Speed**: *walk* 40 Ft., *fly* 80 Ft.",
      "**Skills**: arcana +6, history +6, perception +8, stealth +4",
      "**Immunities**: cold",
      "**Senses**: blindsight 30 ft., darkvision 120 ft.",
@@ -2066,7 +2066,7 @@
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: arcana +19, history +12, insight +9, perception +9",
      "**Resistances**: cold, lightning, necrotic",
-     "**Immunities**: poison; bludgeoning, piercing, slashing from nonmagical attacks",
+     "**Immunities**: poison; bludgeoning, piercing, slashing from nonmagical attacks  ",
      "**Senses**: truesight 120 ft.",
      "**Languages**: Common plus up to five other languages",
      "**CR**: 21"
@@ -2141,7 +2141,7 @@
      "**HP**: 112 (15d8 + 45)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: deception +6, insight +5, perception +5, stealth +5",
-     "**Resistances**: cold, fire; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered",
+     "**Resistances**: cold, fire; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered ",
      "**Senses**: darkvision 120 ft.",
      "**Languages**: Abyssal, Common, Infernal, Primordial",
      "**CR**: 5"
@@ -2286,7 +2286,7 @@
     "entries": [
      "**AC**: 17 (Natural Armor)",
      "**HP**: 52 (8d8 + 16)",
-     "**Speed**: *walk* 30 Ft.; *burrow* 15 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 30 Ft., *burrow* 15 Ft., *fly* 60 Ft.",
      "**Skills**: perception +4, stealth +2",
      "**Immunities**: lightning",
      "**Senses**: blindsight 10 ft., darkvision 60 ft.",
@@ -2437,7 +2437,7 @@
      "**AC**: 13 (Natural Armor)",
      "**HP**: 52 (8d8 + 16)",
      "**Speed**: *walk* 30 Ft.",
-     "**Resistances**: cold; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered",
+     "**Resistances**: cold; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered ",
      "**Immunities**: fire, poison",
      "**Senses**: darkvision 120 ft.",
      "**Languages**: Infernal, telepathy 120 ft.",
@@ -2511,8 +2511,8 @@
     "entries": [
      "**AC**: 15 (Natural Armor)",
      "**HP**: 67 (9d8 + 27)",
-     "**Speed**: *walk* 0 Ft.; *fly* 60 Ft. (hover); *canHover* ",
-     "**Resistances**: acid, cold, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered",
+     "**Speed**: *walk* 0 Ft., *fly* 60 Ft.(hover), *canHover*",
+     "**Resistances**: acid, cold, fire, lightning, thunder; bludgeoning, piercing, slashing from nonmagical attacks that aren't silvered ",
      "**Immunities**: necrotic, poison",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: the languages it knew in life",
@@ -2585,8 +2585,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft.",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
@@ -2657,8 +2657,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft.",
      "**Resistances**: necrotic",
      "**Senses**: magical Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -2730,8 +2730,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 15 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 15 Ft.",
      "**Resistances**: bludgeoning",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -2803,8 +2803,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft.",
      "**Resistances**: fire",
      "**Senses**: magical Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -2876,8 +2876,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.; *climb* 30 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft., *climb* 30 Ft.",
      "**Resistances**: poison",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -2949,8 +2949,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft.",
      "**Resistances**: radiant",
      "**Senses**: magical Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -3022,8 +3022,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.; *climb* 30 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft., *climb* 30 Ft.",
      "**Resistances**: piercing",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -3095,8 +3095,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.; *swim* 30 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft., *swim* 30 Ft.",
      "**Resistances**: cold",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -3168,8 +3168,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.; *swim* 30 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft., *swim* 30 Ft.",
      "**Resistances**: acid",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -3241,8 +3241,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft.",
      "**Resistances**: thunder",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -3314,8 +3314,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.; *fly* 15 Ft. (hover)",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft., *fly* 15 Ft.(hover)",
      "**Resistances**: psychic",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -3387,8 +3387,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 35 Ft.; *burrow* 5 Ft.; *fly* 10 Ft. (hover)",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 35 Ft., *burrow* 5 Ft., *fly* 10 Ft.(hover)",
      "**Resistances**: lightning",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -3460,8 +3460,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.; *fly* 15 Ft. (hover)",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft., *fly* 15 Ft.(hover)",
      "**Resistances**: force",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -3533,8 +3533,8 @@
     "caption": "",
     "entries": [
      "**AC**: 8 + [Its Dexterity Modifier + Your Proficieny Bonus]",
-     "**HP**: 8 + *[Its Constitution modifier]*; For each level you gain after 1st: 5 (1d8) + *[Its Constitution modifier]*; It has a number of Hit Dice *[d8]*, equal to your level.",
-     "**Speed**: *walk* 40 Ft.; *burrow* 5 Ft.; *fly* 5 Ft. (hover)",
+     "**HP**: 8 + {@i [Its Constitution modifier]}; For each level you gain after 1st: 5 (1d8) + {@i [Its Constitution modifier]}; It has a number of Hit Dice {@i [d8]}, equal to your level.",
+     "**Speed**: *walk* 40 Ft., *burrow* 5 Ft., *fly* 5 Ft.(hover)",
      "**Resistances**: slashing",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
@@ -3607,7 +3607,7 @@
     "entries": [
      "**AC**: 11 + The Spell's Level",
      "**HP**: 20 (Air only) or 30 (Land and Water only) + 10 for each spell level above 3",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft. (Land Only); *fly* 40 Ft. (Air Only); *swim* 30 Ft. (Water Only)",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.(Land Only), *fly* 40 Ft.(Air Only), *swim* 30 Ft.(Water Only)",
      "**Skills**: stealth +1 plus PB, survival +2 plus PB",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages you know"
@@ -3680,7 +3680,7 @@
     "entries": [
      "**AC**: 10 + 2 (Quadraped Only) + Half Of This Spell's Level Rounded Up",
      "**HP**: 2 + 2 per spell level (the familiar has a number of Hit Dice [d4s] equal to the spell's level)",
-     "**Speed**: *walk* 30 Ft. (-15ft If Bird); *fly* 30 Ft. (Bird Only); *swim* 30 Ft. (Fish Only); *climb* 30 Ft. (insect Only)",
+     "**Speed**: *walk* 30 Ft.(-15ft If Bird), *fly* 30 Ft.(Bird Only), *swim* 30 Ft.(Fish Only), *climb* 30 Ft.(insect Only)",
      "**Skills**: perception +3 + PB Bonus, stealth +1 + PB Bonus",
      "**Languages**: Telepathy 120ft (works only with you)",
      "**CR**: spell level"
@@ -3825,7 +3825,7 @@
     "entries": [
      "**AC**: 10 + 1 Half Of This Spell's Level Rounded Down",
      "**HP**: 2 + 4 per spell level (the steed has a number of Hit Dice [d8s] equal to the spell's level)",
-     "**Speed**: *walk* 60 Ft. (-30ft If Air); *fly* 60 Ft. (Air Only); *swim* 60 Ft. (Water Only)",
+     "**Speed**: *walk* 60 Ft.(-30ft If Air), *fly* 60 Ft.(Air Only), *swim* 60 Ft.(Water Only)",
      "**Languages**: Telepathy 120 ft (works only with you)",
      "**CR**: spell level"
     ]
@@ -3897,9 +3897,9 @@
     "entries": [
      "**AC**: 12 + [Level Of The Spell]",
      "**HP**: 30 + 10 for each spell level above 3rd",
-     "**Speed**: *walk* 5 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined;fire (Hateful);force (Poltergeist);lightning (Energised);psychic (Possession)",
-     "**Immunities**: necrotic, poison undefined;cold (Chilling)",
+     "**Immunities**: necrotic, poison undefined ;cold (Chilling) ",
      "**Senses**: darkvison 60 ft.",
      "**Languages**: Understands the languages you know"
     ]
@@ -3971,9 +3971,9 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 9 (2d8)",
-     "**Speed**: *walk* 5 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1/2"
@@ -4046,10 +4046,10 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 9 (2d8)",
-     "**Speed**: *walk* 5 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Skills**: perception +3",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 60 ft.",
      "**CR**: 1"
     ]
@@ -4121,9 +4121,9 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 13 (2d10+2)",
-     "**Speed**: *walk* 5 Ft.; *fly* 60 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 60 Ft.(hover), *canHover*",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1/2"
@@ -4196,9 +4196,9 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 65 (10d8+20)",
-     "**Speed**: *walk* 5 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 6"
@@ -4271,11 +4271,11 @@
     "entries": [
      "**AC**: 17 (Natural Armor)",
      "**HP**: 170 (20d8+80)",
-     "**Speed**: *walk* 5 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Initiative**: 2",
      "**Skills**: arcana +11, history +11, religion +12",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 13"
@@ -4348,10 +4348,10 @@
     "entries": [
      "**AC**: 20 (Natural Armor)",
      "**HP**: 190 (20d10+80)",
-     "**Speed**: *walk* 5 Ft.; *fly* 40 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 40 Ft.(hover), *canHover*",
      "**Skills**: perception +8",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 120 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 8"
@@ -4424,11 +4424,11 @@
     "entries": [
      "**AC**: 16 (Natural Armor)",
      "**HP**: 32 (5d8+10)",
-     "**Speed**: *walk* 5 Ft.; *fly* 60 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 60 Ft.(hover), *canHover*",
      "**Initiative**: 1",
      "**Skills**: perception +4, stealth +2",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 60 ft.",
      "**Languages**: Draconic",
      "**CR**: 3"
@@ -4501,11 +4501,11 @@
     "entries": [
      "**AC**: 17 (Natural Armor)",
      "**HP**: 123 (13d10+52)",
-     "**Speed**: *walk* 5 Ft.; *fly* 60 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 60 Ft.(hover), *canHover*",
      "**Initiative**: 2",
      "**Skills**: perception +7, stealth +3",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 120 ft.",
      "**Languages**: Common, Draconic",
      "**CR**: 6"
@@ -4578,11 +4578,11 @@
     "entries": [
      "**AC**: 18 (Natural Armor)",
      "**HP**: 200 (16d12+96)",
-     "**Speed**: *walk* 5 Ft.; *fly* 80 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 80 Ft.(hover), *canHover*",
      "**Initiative**: 2",
      "**Skills**: perception +12, stealth +5",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 120 ft.",
      "**Languages**: Common, Draconic",
      "**CR**: 13"
@@ -4655,11 +4655,11 @@
     "entries": [
      "**AC**: 20 (Natural Armor)",
      "**HP**: 333 (18d20+144)",
-     "**Speed**: *walk* 5 Ft.; *fly* 80 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 80 Ft.(hover), *canHover*",
      "**Initiative**: 2",
      "**Skills**: perception +16, stealth +5",
      "**Resistances**: bludgeoning, cold, piercing, slashing, thunder undefined",
-     "**Immunities**: necrotic, poison undefined",
+     "**Immunities**: necrotic, poison undefined ",
      "**Senses**: darkvison 120 ft.",
      "**Languages**: Common, Draconic",
      "**CR**: 20"
@@ -4805,7 +4805,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 10 (4d4)",
-     "**Speed**: *walk* 5 Ft.; *fly* 40 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 5 Ft., *fly* 40 Ft.(hover), *canHover*",
      "**Immunities**: poison, psychic",
      "**Senses**: Thermalsight 60 ft.",
      "**Languages**: Machine Code"
@@ -4877,7 +4877,7 @@
     "caption": "",
     "entries": [
      "**AC**: 15 + 3 (Juggernaut Only)",
-     "**Speed**: *walk* 30 Ft. (Juggernaut Or Turret) Or 50 Ft. (Mobile Only); *climb* 50 Ft. (Mobile Only); *swim* 50 Ft. (Mobile Only)",
+     "**Speed**: *walk* 30 Ft.(Juggernaut Or Turret) Or 50 Ft. (Mobile Only), *climb* 50 Ft.(Mobile Only), *swim* 50 Ft.(Mobile Only)",
      "**Senses**: thermalsight 60 ft.",
      "**Languages**: Machine Code"
     ]
@@ -5171,7 +5171,7 @@
     "entries": [
      "**AC**: 15",
      "**HP**: 76 (9d8 + 36)",
-     "**Speed**: *walk* 30 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Immunities**: poison",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Common",
@@ -5318,7 +5318,7 @@
     "entries": [
      "**AC**: 15",
      "**HP**: 9 (2d4 + 4)",
-     "**Speed**: *walk* 15 Ft.; *climb* 15 Ft.",
+     "**Speed**: *walk* 15 Ft., *climb* 15 Ft.",
      "**Resistances**: fire",
      "**Senses**: Blindsight 30 ft.",
      "**CR**: 1/4"
@@ -5391,7 +5391,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 5 (2d4)",
-     "**Speed**: *walk* 0 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 0 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Initiative**: 1",
      "**Immunities**: poison, psychic",
      "**Senses**: Blindsight 30 ft.",
@@ -5465,7 +5465,7 @@
     "entries": [
      "**AC**: 14",
      "**HP**: 21 (6d6)",
-     "**Speed**: *walk* 0 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 0 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Resistances**: acid, cold, fire, lightning, necrotic, thunder",
      "**Immunities**: poison",
      "**Senses**: Darkvision 60 ft.",
@@ -5540,7 +5540,7 @@
     "entries": [
      "**AC**: 14",
      "**HP**: 21 (6d4 + 6)",
-     "**Speed**: *walk* 15 Ft.; *fly* 50 Ft.",
+     "**Speed**: *walk* 15 Ft., *fly* 50 Ft.",
      "**Skills**: perception +4, sleight of hand +6, stealth +6",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands Common but can't speak",
@@ -5614,7 +5614,7 @@
     "entries": [
      "**AC**: 11",
      "**HP**: 1 (1d4 - 1)",
-     "**Speed**: *swim* 20 Ft.; *fly* 20 Ft. (hover); *canHover* ",
+     "**Speed**: *swim* 20 Ft., *fly* 20 Ft.(hover), *canHover*",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 1/8"
     ]
@@ -6134,7 +6134,7 @@
     "entries": [
      "**AC**: 13 Plus Your Charisma Modifier",
      "**HP**: 5 plus five times your Witch level (the familiar has a number of Hit Dice [d8s] equal to your Witch level)",
-     "**Speed**: *walk* 40 Ft.; *climb* 40 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 40 Ft.",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages you know"
     ]
@@ -6280,7 +6280,7 @@
     "entries": [
      "**AC**: 15",
      "**HP**: 9 (2d8)",
-     "**Speed**: *walk* 30 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Initiative**: -1",
      "**Resistances**: bludgeoning, piercing, slashing",
      "**Immunities**: necrotic, poison",
@@ -6653,7 +6653,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 75 (10d8 + 30)",
-     "**Speed**: *walk* 20 Ft.; *climb* 20 Ft.",
+     "**Speed**: *walk* 20 Ft., *climb* 20 Ft.",
      "**Skills**: stealth +3",
      "**Immunities**: necrotic, poison",
      "**Senses**: Blindsight 60 ft.",
@@ -6803,7 +6803,7 @@
     "entries": [
      "**AC**: 14",
      "**HP**: 30 (4d8 + 12)",
-     "**Speed**: *walk* 30 Ft.; *fly* 30 Ft. (Hover); *canHover* ",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.(Hover), *canHover*",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, necrotic, piercing, slashing, thunder",
      "**Immunities**: poison, necrotic",
      "**Senses**: Darkvision 120 ft.",
@@ -7311,7 +7311,7 @@
     "entries": [
      "**AC**: 15",
      "**HP**: 6 plus six times your Captain level (the hunter has a number of Hit Dice [d8s] equal to your Captain level)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Skills**: perception +3, survival +3",
      "**Languages**: Common plus one other language"
     ]
@@ -8083,7 +8083,7 @@
     "entries": [
      "**AC**: 15 (Natural Armor)",
      "**HP**: 13 (3d6 + 3)",
-     "**Speed**: *walk* 20 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 20 Ft., *swim* 30 Ft.",
      "**Skills**: stealth +3",
      "**CR**: 1/8"
     ]
@@ -8155,7 +8155,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 60 (8d12 + 8)",
-     "**Speed**: *walk* 30 Ft.; *climb* 20 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 20 Ft., *swim* 30 Ft.",
      "**Skills**: athletics +8",
      "**CR**: 2"
     ]
@@ -8298,7 +8298,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 3 (1d4 + 1)",
-     "**Speed**: *walk* 20 Ft.; *burrow* 5 Ft.",
+     "**Speed**: *walk* 20 Ft., *burrow* 5 Ft.",
      "**Senses**: Darkvision 30 ft.",
      "**CR**: 0"
     ]
@@ -8370,7 +8370,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 1 (1)",
-     "**Speed**: *walk* 5 Ft.; *fly* 30 Ft.",
+     "**Speed**: *walk* 5 Ft., *fly* 30 Ft.",
      "**Senses**: Blindsight 60 ft.",
      "**CR**: 0"
     ]
@@ -8442,7 +8442,7 @@
     "entries": [
      "**AC**: 11 (Natural Armor)",
      "**HP**: 19 (3d8 + 6)",
-     "**Speed**: *walk* 40 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
      "**CR**: 1/2"
     ]
    }
@@ -8513,7 +8513,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 13 (2d10 + 2)",
-     "**Speed**: *walk* 30 Ft.; *climb* 20 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 20 Ft., *swim* 30 Ft.",
      "**CR**: 1/4"
     ]
    }
@@ -8727,7 +8727,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 2 (1d4)",
-     "**Speed**: *walk* 40 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
      "**Skills**: perception +3, stealth +4",
      "**Senses**: Darkvision 30 ft.",
      "**CR**: 0"
@@ -8800,7 +8800,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 80 (8d10 + 36)",
-     "**Speed**: *walk* 40 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
      "**Skills**: intimidation +8, perception +3, survival +3",
      "**Senses**: Darkvision 120 ft.",
      "**CR**: 4"
@@ -8873,7 +8873,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 19 (4d8)",
-     "**Speed**: *walk* 40 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
      "**Initiative**: 1",
      "**Skills**: perception +4, stealth +5",
      "**Senses**: Darkvision 30 ft.",
@@ -9018,7 +9018,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 19 (3d8 + 6)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Skills**: acrobatics +4, athletics +5",
      "**CR**: 1/2"
     ]
@@ -9090,7 +9090,7 @@
     "entries": [
      "**AC**: 17 (Natural Armor)",
      "**HP**: 95 (10d12 + 30)",
-     "**Speed**: *walk* 30 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 30 Ft., *swim* 40 Ft.",
      "**Skills**: perception +3, stealth +2",
      "**Senses**: Blindsight 60 ft.",
      "**CR**: 5"
@@ -9163,7 +9163,7 @@
     "entries": [
      "**AC**: 14 (Natural Armor)",
      "**HP**: 85 (9d12 + 27)",
-     "**Speed**: *walk* 30 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *swim* 30 Ft.",
      "**Resistances**: acid, poison",
      "**Senses**: Darkvision 120 ft.",
      "**CR**: 4"
@@ -9236,7 +9236,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 2 (1d4)",
-     "**Speed**: *walk* 5 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 5 Ft., *swim* 30 Ft.",
      "**CR**: 0"
     ]
    }
@@ -9307,7 +9307,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 32 (5d10 + 5)",
-     "**Speed**: *walk* 30 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 30 Ft., *swim* 40 Ft.",
      "**Skills**: stealth +2",
      "**CR**: 1"
     ]
@@ -9379,7 +9379,7 @@
     "entries": [
      "**AC**: 15",
      "**HP**: 95 (10d12 + 30)",
-     "**Speed**: *walk* 50 Ft.; *climb* 40 Ft.",
+     "**Speed**: *walk* 50 Ft., *climb* 40 Ft.",
      "**Skills**: perception +5, stealth +11, survival +5",
      "**Senses**: Darkvision 120 ft.",
      "**CR**: 5"
@@ -9524,7 +9524,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 11 (2d8 + 2)",
-     "**Speed**: *walk* 0 Ft.; *swim* 60 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 60 Ft.",
      "**Skills**: acrobatics +3",
      "**Senses**: Blindsight 60 ft.",
      "**CR**: 1/8"
@@ -9597,7 +9597,7 @@
     "entries": [
      "**AC**: 14",
      "**HP**: 27 (5d8 + 5)",
-     "**Speed**: *walk* 10 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 60 Ft.",
      "**Skills**: acrobatics +6, perception +6",
      "**CR**: 1"
     ]
@@ -9669,7 +9669,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 16 (3d8 + 3)",
-     "**Speed**: *walk* 0 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 30 Ft.",
      "**Resistances**: Lighting",
      "**CR**: 1/4"
     ]
@@ -9885,7 +9885,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 10 (4d4)",
-     "**Speed**: *walk* 10 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 60 Ft.",
      "**Initiative**: 1",
      "**Skills**: acrobatics +5, perception +6",
      "**CR**: 1/4"
@@ -9958,7 +9958,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 1 (1)",
-     "**Speed**: *walk* 10 Ft.; *fly* 20 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 20 Ft.",
      "**Skills**: acrobatics +2",
      "**CR**: 0"
     ]
@@ -10030,7 +10030,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 1 (1)",
-     "**Speed**: *walk* 0 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 40 Ft.",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 0"
     ]
@@ -10102,7 +10102,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 2 (1d4)",
-     "**Speed**: *walk* 30 Ft.; *burrow* 5 Ft.",
+     "**Speed**: *walk* 30 Ft., *burrow* 5 Ft.",
      "**Skills**: perception +3, stealth +5",
      "**CR**: 0"
     ]
@@ -10174,7 +10174,7 @@
     "entries": [
      "**AC**: 11",
      "**HP**: 1 (1)",
-     "**Speed**: *walk* 20 Ft.; *climb* 20 Ft.; *swim* 20 Ft.",
+     "**Speed**: *walk* 20 Ft., *climb* 20 Ft., *swim* 20 Ft.",
      "**Skills**: stealth +3",
      "**CR**: 0"
     ]
@@ -10246,7 +10246,7 @@
     "entries": [
      "**AC**: 17 (Natural Armor)",
      "**HP**: 59 (8d10 + 16)",
-     "**Speed**: *walk* 30 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 30 Ft., *swim* 40 Ft.",
      "**Skills**: stealth +3",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 3"
@@ -10319,7 +10319,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 13 (2d8 + 4)",
-     "**Speed**: *walk* 30 Ft.; *burrow* 10 Ft.",
+     "**Speed**: *walk* 30 Ft., *burrow* 10 Ft.",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 1/4"
     ]
@@ -10391,7 +10391,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 33 (6d10)",
-     "**Speed**: *walk* 10 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 60 Ft.",
      "**Senses**: Blindsight 90 ft.",
      "**CR**: 1"
     ]
@@ -10463,7 +10463,7 @@
     "entries": [
      "**AC**: 13 (Natural Armor)",
      "**HP**: 13 (3d6 + 3)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.; *fly* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft., *fly* 30 Ft.",
      "**CR**: 1/8"
     ]
    }
@@ -10605,7 +10605,7 @@
     "entries": [
      "**AC**: 13 (Natural Armor)",
      "**HP**: 115 (10d12 + 50)",
-     "**Speed**: *walk* 60 Ft.; *climb* 40 Ft.",
+     "**Speed**: *walk* 60 Ft., *climb* 40 Ft.",
      "**Skills**: intimidation +10, perception +5, survival +5",
      "**Senses**: Darkvision 120 ft.",
      "**CR**: 6"
@@ -10678,7 +10678,7 @@
     "entries": [
      "**AC**: 13 (Natural Armor)",
      "**HP**: 13 (3d6 + 3)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Senses**: Blindsight 30 ft.",
      "**CR**: 1/4"
     ]
@@ -10750,7 +10750,7 @@
     "entries": [
      "**AC**: 11",
      "**HP**: 13 (3d8)",
-     "**Speed**: *walk* 30 Ft.; *fly* 10 Ft.",
+     "**Speed**: *walk* 30 Ft., *fly* 10 Ft.",
      "**Senses**: intimidation +4, perception +2",
      "**CR**: 1/4"
     ]
@@ -10822,7 +10822,7 @@
     "entries": [
      "**AC**: 15 (Natural Armor)",
      "**HP**: 13 (3d8)",
-     "**Speed**: *walk* 25 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 25 Ft., *swim* 30 Ft.",
      "**Skills**: stealth +4",
      "**Senses**: Blindsight 30 ft.",
      "**CR**: 1/8"
@@ -10895,7 +10895,7 @@
     "entries": [
      "**AC**: 14 (Natural Armor)",
      "**HP**: 115 (10d12 + 50)",
-     "**Speed**: *walk* 40 Ft.; *swim* 60 Ft.",
+     "**Speed**: *walk* 40 Ft., *swim* 60 Ft.",
      "**CR**: 6"
     ]
    }
@@ -10966,7 +10966,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 52 (6d10 + 18)",
-     "**Speed**: *walk* 0 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 40 Ft.",
      "**Resistances**: lightning",
      "**CR**: 3"
     ]
@@ -11110,7 +11110,7 @@
     "entries": [
      "**AC**: 15",
      "**HP**: 44 (8d10)",
-     "**Speed**: *walk* 10 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 60 Ft.",
      "**Skills**: acrobatics +7, perception +6",
      "**CR**: 3"
     ]
@@ -11182,7 +11182,7 @@
     "entries": [
      "**AC**: 13 (Natural Armor)",
      "**HP**: 16 (3d10)",
-     "**Speed**: *walk* 0 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 40 Ft.",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 1/4"
     ]
@@ -11254,7 +11254,7 @@
     "entries": [
      "**AC**: 11",
      "**HP**: 18 (4d8)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft., *swim* 30 Ft.",
      "**Skills**: stealth +3",
      "**CR**: 1/4"
     ]
@@ -11326,7 +11326,7 @@
     "entries": [
      "**AC**: 11 (Natural Armor)",
      "**HP**: 19 (3d10 + 3)",
-     "**Speed**: *walk* 40 Ft.; *climb* 40 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 40 Ft.",
      "**Skills**: athletics +5",
      "**CR**: 1/2"
     ]
@@ -11398,7 +11398,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 115 (10d12 + 50)",
-     "**Speed**: *walk* 50 Ft.; *climb* 50 Ft.",
+     "**Speed**: *walk* 50 Ft., *climb* 50 Ft.",
      "**Skills**: athletics +9, intimidation +9",
      "**CR**: 6"
     ]
@@ -11470,7 +11470,7 @@
     "entries": [
      "**AC**: 14",
      "**HP**: 45 (7d10 + 7)",
-     "**Speed**: *walk* 20 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 20 Ft., *fly* 60 Ft.",
      "**Skills**: acrobatics +6, perception +6",
      "**CR**: 2"
     ]
@@ -11542,7 +11542,7 @@
     "entries": [
      "**AC**: 14",
      "**HP**: 75 (10d12 + 24)",
-     "**Speed**: *walk* 30 Ft.; *fly* 80 Ft.",
+     "**Speed**: *walk* 30 Ft., *fly* 80 Ft.",
      "**Skills**: perception +7, stealth +6, survival +5",
      "**CR**: 4"
     ]
@@ -11614,7 +11614,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 19 (3d10 + 3)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Senses**: dakrvision 30 ft.",
      "**CR**: 1/4"
     ]
@@ -11686,7 +11686,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 52 (8d10 + 8)",
-     "**Speed**: *walk* 15 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 15 Ft., *swim* 30 Ft.",
      "**Skills**: sleight of hand +4, stealth +4",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 1"
@@ -11759,7 +11759,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 31 (5d10 + 5)",
-     "**Speed**: *walk* 10 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 60 Ft.",
      "**Skills**: perception +5, stealth +4",
      "**Senses**: Darkvision 120 ft.",
      "**CR**: 1"
@@ -11832,7 +11832,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 7 (2d6)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft., *swim* 30 Ft.",
      "**Skills**: sleight of hand +4, stealth +4",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 1/8"
@@ -11977,7 +11977,7 @@
     "entries": [
      "**AC**: 13 (Natural Armor)",
      "**HP**: 126 (11d12 + 55)",
-     "**Speed**: *walk* 0 Ft.; *swim* 90 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 90 Ft.",
      "**Skills**: perception +3",
      "**Senses**: Blindsight 60 ft.",
      "**CR**: 6"
@@ -12050,7 +12050,7 @@
     "entries": [
      "**AC**: 16 (Natural Armor)",
      "**HP**: 104 (11d12 + 33)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft., *swim* 30 Ft.",
      "**CR**: 5"
     ]
    }
@@ -12121,7 +12121,7 @@
     "entries": [
      "**AC**: 14 (Natural Armor)",
      "**HP**: 19 (3d8 + 6)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Senses**: Blindsight 30 ft.",
      "**CR**: 1/2"
     ]
@@ -12193,7 +12193,7 @@
     "entries": [
      "**AC**: 14 (Natural Armor)",
      "**HP**: 32 (5d10 + 5)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Skills**: stealth +4",
      "**Senses**: Blindsight 20 ft., Darkvision 60 ft.",
      "**CR**: 1"
@@ -12266,7 +12266,7 @@
     "entries": [
      "**AC**: 14",
      "**HP**: 112 (15d12 + 15)",
-     "**Speed**: *walk* 5 Ft.; *swim* 90 Ft.",
+     "**Speed**: *walk* 5 Ft., *swim* 90 Ft.",
      "**Senses**: Darkvision 120 ft.",
      "**CR**: 5"
     ]
@@ -12410,7 +12410,7 @@
     "entries": [
      "**AC**: 15 (Natural Armor)",
      "**HP**: 60 (8d10 + 16)",
-     "**Speed**: *walk* 30 Ft.; *climb* 10 Ft.; *fly* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 10 Ft., *fly* 30 Ft.",
      "**Skills**: intimidation +6",
      "**CR**: 2"
     ]
@@ -12482,7 +12482,7 @@
     "entries": [
      "**AC**: 11",
      "**HP**: 39 (6d10 + 6)",
-     "**Speed**: *walk* 20 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 20 Ft., *swim* 40 Ft.",
      "**Senses**: Darkvision 30 ft.",
      "**CR**: 1"
     ]
@@ -12625,7 +12625,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 29 (5d10 + 8)",
-     "**Speed**: *walk* 10 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 60 Ft.",
      "**Skills**: perception +2",
      "**CR**: 1"
     ]
@@ -12697,7 +12697,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 85 (9d12 + 27)",
-     "**Speed**: *walk* 20 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 20 Ft., *swim* 40 Ft.",
      "**Skills**: intimidation +8",
      "**Resistances**: cold",
      "**Senses**: Darkvision 60 ft.",
@@ -12771,7 +12771,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 13 (3d8)",
-     "**Speed**: *walk* 10 Ft.; *fly* 50 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 50 Ft.",
      "**Skills**: acrobatics +4",
      "**CR**: 1/2"
     ]
@@ -12915,7 +12915,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 11 (2d8 + 2)",
-     "**Speed**: *walk* 40 Ft.; *climb* 40 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 40 Ft.",
      "**Skills**: stealth +5",
      "**Senses**: Blindsight 10 ft., Darkvision 60 ft.",
      "**CR**: 1/4"
@@ -13060,7 +13060,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 4 (1d8)",
-     "**Speed**: *walk* 30 Ft.; *climb* 20 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 20 Ft.",
      "**Skills**: athletics +3",
      "**CR**: 0"
     ]
@@ -13132,7 +13132,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 36 (5d10 + 5)",
-     "**Speed**: *walk* 40 Ft.; *climb* 40 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 40 Ft.",
      "**Skills**: athletics +6, intimidation +6",
      "**CR**: 1"
     ]
@@ -13204,7 +13204,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 51 (6d10 + 18)",
-     "**Speed**: *walk* 40 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
      "**Skills**: intimidation +6, perception +3",
      "**CR**: 2"
     ]
@@ -13276,7 +13276,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 1 (1d4 - 1)",
-     "**Speed**: *walk* 20 Ft.; *burrow* 5 Ft.",
+     "**Speed**: *walk* 20 Ft., *burrow* 5 Ft.",
      "**Initiative**: 1",
      "**Skills**: perception +2, stealth +5",
      "**Senses**: Darkvision 30 ft.",
@@ -13350,7 +13350,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 7 (3d4)",
-     "**Speed**: *walk* 10 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 60 Ft.",
      "**Skills**: acrobatics +4, perception +6",
      "**CR**: 1/8"
     ]
@@ -13422,7 +13422,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 7 (2d6)",
-     "**Speed**: *walk* 10 Ft.; *fly* 40 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 40 Ft.",
      "**Skills**: perception +6, stealth +4",
      "**CR**: 1/8"
     ]
@@ -13494,7 +13494,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 67 (8d10 + 24)",
-     "**Speed**: *walk* 25 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 25 Ft., *swim* 30 Ft.",
      "**Skills**: intimidation +6",
      "**CR**: 3"
     ]
@@ -13637,7 +13637,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 45 (6d10 + 12)",
-     "**Speed**: *walk* 0 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 40 Ft.",
      "**Skills**: perception +2",
      "**Senses**: Blindsight 30 ft.",
      "**CR**: 2"
@@ -13782,7 +13782,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 67 (8d10 + 24)",
-     "**Speed**: *walk* 0 Ft.; *swim* 60 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 60 Ft.",
      "**Skills**: perception +3",
      "**Senses**: Blindsight 120 ft.",
      "**CR**: 3"
@@ -13855,7 +13855,7 @@
     "entries": [
      "**AC**: 14",
      "**HP**: 27 (5d8 + 5)",
-     "**Speed**: *walk* 30 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *swim* 30 Ft.",
      "**Skills**: perception +2, stealth +6",
      "**CR**: 1"
     ]
@@ -13927,7 +13927,7 @@
     "entries": [
      "**AC**: 11",
      "**HP**: 19 (3d10 + 3)",
-     "**Speed**: *walk* 30 Ft.; *climb* 30 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft., *swim* 30 Ft.",
      "**Skills**: perception +2",
      "**Resistances**: poison",
      "**CR**: 1/2"
@@ -14073,7 +14073,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 1 (1)",
-     "**Speed**: *walk* 20 Ft.; *climb* 20 Ft.",
+     "**Speed**: *walk* 20 Ft., *climb* 20 Ft.",
      "**Skills**: stealth +2",
      "**CR**: 0"
     ]
@@ -14145,7 +14145,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 13 (2d8 + 4)",
-     "**Speed**: *walk* 40 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
      "**Skills**: athletics +3",
      "**CR**: 1/8"
     ]
@@ -14289,7 +14289,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 2 (1d4)",
-     "**Speed**: *walk* 25 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 25 Ft., *climb* 30 Ft.",
      "**Skills**: acrobatics +6, sleight of hand +4",
      "**CR**: 0"
     ]
@@ -14433,7 +14433,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 3 (1d6)",
-     "**Speed**: *walk* 5 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 5 Ft., *swim* 30 Ft.",
      "**Skills**: sleight of hand +4, stealth +4",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 0"
@@ -14506,7 +14506,7 @@
     "entries": [
      "**AC**: 11",
      "**HP**: 1 (1d4 - 1)",
-     "**Speed**: *walk* 5 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 5 Ft., *fly* 60 Ft.",
      "**Skills**: perception +5, stealth +3",
      "**Senses**: Darkvision 120 ft.",
      "**CR**: 0"
@@ -14650,7 +14650,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 13 (3d8)",
-     "**Speed**: *walk* 40 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
      "**Skills**: perception +4, stealth +4",
      "**Senses**: dakrvision 60 ft.",
      "**CR**: 1/4"
@@ -14723,7 +14723,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 51 (6d10 + 5)",
-     "**Speed**: *walk* 40 Ft.; *climb* 30 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft., *swim* 30 Ft.",
      "**Skills**: intimidation +6, perception +3",
      "**Resistances**: cold",
      "**CR**: 2"
@@ -14796,7 +14796,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 1 (1d4 - 1)",
-     "**Speed**: *walk* 10 Ft.; *fly* 50 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 50 Ft.",
      "**Skills**: perception +3",
      "**CR**: 0"
     ]
@@ -14868,7 +14868,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 22 (4d8 + 4)",
-     "**Speed**: *walk* 0 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 40 Ft.",
      "**Senses**: Blindsight 30 ft.",
      "**CR**: 1/2"
     ]
@@ -15012,7 +15012,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 1 (1)",
-     "**Speed**: *walk* 20 Ft.; *climb* 20 Ft.; *swim* 20 Ft.",
+     "**Speed**: *walk* 20 Ft., *climb* 20 Ft., *swim* 20 Ft.",
      "**Initiative**: 1",
      "**Skills**: sleight of hand +2, stealth +2",
      "**Senses**: Darkvision 30 ft.",
@@ -15086,7 +15086,7 @@
     "entries": [
      "**AC**: 16",
      "**HP**: 95 (10d12 + 30)",
-     "**Speed**: *walk* 30 Ft.; *fly* 90 Ft.",
+     "**Speed**: *walk* 30 Ft., *fly* 90 Ft.",
      "**Initiative**: 1",
      "**Skills**: acrobatics +9, perception +8",
      "**CR**: 6"
@@ -15304,7 +15304,7 @@
     "entries": [
      "**AC**: 13 (Natural Armor)",
      "**HP**: 192 (12d20 + 60)",
-     "**Speed**: *walk* 0 Ft.; *swim* 60 Ft.",
+     "**Speed**: *walk* 0 Ft., *swim* 60 Ft.",
      "**Resistances**: cold",
      "**Senses**: Blindsight 120 ft.",
      "**CR**: 8"
@@ -15377,7 +15377,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 1 (1)",
-     "**Speed**: *walk* 20 Ft.; *climb* 20 Ft.",
+     "**Speed**: *walk* 20 Ft., *climb* 20 Ft.",
      "**Skills**: stealth +4",
      "**Senses**: Darkvision 30 ft.",
      "**CR**: 0"
@@ -15594,7 +15594,7 @@
     "entries": [
      "**AC**: 13",
      "**HP**: 37 (5d10 + 10)",
-     "**Speed**: *walk* 40 Ft.; *climb* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
      "**Skills**: perception +3, stealth +7",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 1"
@@ -15667,7 +15667,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 130 (9d20 + 36)",
-     "**Speed**: *walk* 40 Ft.; *climb* 40 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 40 Ft., *swim* 40 Ft.",
      "**CR**: 5"
     ]
    }
@@ -15809,7 +15809,7 @@
     "entries": [
      "**AC**: 12",
      "**HP**: 7 (3d4)",
-     "**Speed**: *walk* 30 Ft.; *swim* 30 Ft.",
+     "**Speed**: *walk* 30 Ft., *swim* 30 Ft.",
      "**Skills**: stealth +4",
      "**CR**: 1/8"
     ]
@@ -15881,7 +15881,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 4 (1d6 + 1)",
-     "**Speed**: *walk* 5 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 5 Ft., *fly* 60 Ft.",
      "**Skills**: perception +3",
      "**CR**: 0"
     ]
@@ -15953,7 +15953,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 22 (3d10 + 6)",
-     "**Speed**: *walk* 20 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 20 Ft., *swim* 40 Ft.",
      "**Resistances**: cold",
      "**CR**: 1/2"
     ]
@@ -16169,7 +16169,7 @@
     "entries": [
      "**AC**: 16 (Natural Armor)",
      "**HP**: 30 (4d8 + 12)",
-     "**Speed**: *walk* 40 Ft.; *fly* 30 Ft.",
+     "**Speed**: *walk* 40 Ft., *fly* 30 Ft.",
      "**Initiative**: 1",
      "**Skills**: arcana +5, history +3, intimidation +8",
      "**Resistances**: fire, psychic, radiant",
@@ -16244,7 +16244,7 @@
     "entries": [
      "**AC**: 14 (Natural Armor)",
      "**HP**: 51 (6d10 + 18)",
-     "**Speed**: *walk* 40 Ft.; *climb* 20 Ft.; *swim* 40 Ft.",
+     "**Speed**: *walk* 40 Ft., *climb* 20 Ft., *swim* 40 Ft.",
      "**Skills**: athletics +6, intimidation +6",
      "**Immunities**: poison",
      "**Senses**: Darkvision 60 ft.",
@@ -16318,7 +16318,7 @@
     "entries": [
      "**AC**: 10",
      "**HP**: (As Target)",
-     "**Speed**: *walk* 30 Ft.; *climb* 20 Ft.; *swim* 20 Ft.",
+     "**Speed**: *walk* 30 Ft., *climb* 20 Ft., *swim* 20 Ft.",
      "**Immunities**: acid",
      "**Senses**: Blindsight 30 ft.",
      "**Languages**: Understands all the languages of the target, but can't speak"
@@ -16391,9 +16391,9 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 20",
-     "**Speed**: *walk* 25 Ft.; *burrow* 25 Ft. (Earth Only); *fly* 25 Ft. (hover) (Air Only); *swim* 25 Ft. (Water Only); *canHover* ",
+     "**Speed**: *walk* 25 Ft., *burrow* 25 Ft.(Earth Only), *fly* 25 Ft.(hover) (Air Only), *swim* 25 Ft.(Water Only), *canHover*",
      "**Resistances**: acid (Water only);lightning, thunder (Air only);piercing, slashing (Earth only)",
-     "**Immunities**: poison undefined;fire (Fire only)",
+     "**Immunities**: poison undefined ;fire (Fire only) ",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Primordial, understands the languages you speak"
     ]
@@ -16465,7 +16465,7 @@
     "entries": [
      "**AC**: 13 (Natural Armor)",
      "**HP**: 5 (2d4)",
-     "**Speed**: *walk* 20 Ft.; *fly* 30 Ft.",
+     "**Speed**: *walk* 20 Ft., *fly* 30 Ft.",
      "**Senses**: Blindsight 60 ft. (blind beyond this radius)",
      "**Languages**: understand the languages you speak but can't speak.",
      "**CR**: 0"
@@ -16538,7 +16538,7 @@
     "entries": [
      "**AC**: 15 (Natural Armor)",
      "**HP**: 45 (7d8 + 14)",
-     "**Speed**: *walk* 10 Ft.; *fly* 60 Ft.",
+     "**Speed**: *walk* 10 Ft., *fly* 60 Ft.",
      "**Skills**: perception +5",
      "**Immunities**: fire",
      "**Senses**: Blindsight 60 ft.",
@@ -16759,8 +16759,8 @@
     "entries": [
      "**AC**: Spell Save DC",
      "**HP**: 10 x Spell Slot",
-     "**Speed**: *walk* 30 Ft.; *fly* 30 Ft. (hover)",
-     "**Resistances**: poison; bludgeoning, piercing, slashing from nonmagical attacks"
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.(hover)",
+     "**Resistances**: poison; bludgeoning, piercing, slashing from nonmagical attacks "
     ]
    }
   }
@@ -16902,7 +16902,7 @@
      "**AC**: Your Spellcasting Ability",
      "**HP**: 10 x Spell Slot",
      "**Speed**: *walk* 30 Ft.",
-     "**Resistances**: poison; bludgeoning, piercing, slashing from nonmagical attacks",
+     "**Resistances**: poison; bludgeoning, piercing, slashing from nonmagical attacks ",
      "**Senses**: Darkvision 120 ft."
     ]
    }
@@ -16973,8 +16973,8 @@
     "entries": [
      "**AC**: Your Spellcasting Ability",
      "**HP**: The amount its creator's maximum hit points were reduced by when casting the spell to create it ",
-     "**Speed**: *walk* 25 Ft.; *fly* 30 Ft.",
-     "**Resistances**: poison; bludgeoning, piercing, slashing from nonmagical attacks",
+     "**Speed**: *walk* 25 Ft., *fly* 30 Ft.",
+     "**Resistances**: poison; bludgeoning, piercing, slashing from nonmagical attacks ",
      "**Senses**: Darkvision 120 ft."
     ]
    }
@@ -17268,7 +17268,7 @@
     "entries": [
      "**AC**: 12 + The Level Of The Spell (natural Armor)",
      "**HP**: 15 (Sky) or 25 (Earth & Sea) + 5 for each spell level above 2nd",
-     "**Speed**: *walk* 30 Ft. Earth, 10 Ft Sea, 15 Ft Sky; *climb* 30 Ft. Earth; *swim* 30 Ft. Sea; *fly* 60 Ft. Sky",
+     "**Speed**: *walk* 30 Ft.Earth, 10 Ft Sea, 15 Ft Sky, *climb* 30 Ft.Earth, *swim* 30 Ft.Sea, *fly* 60 Ft.Sky",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages you speak"
     ]
@@ -17341,7 +17341,7 @@
      "**AC**: 11 + The Level Of The Spell (natural Armor, Flesh) Or 13 + The Level Of The Spell (natural Armor, Iron & Stone)",
      "**HP**: 50 + 15 for each spell level above 4th (Flesh) or 35 + 10 for each spell level above 4th (Iron & Stone)",
      "**Speed**: *walk* 30 Ft.",
-     "**Immunities**: lightning undefined;fire undefined",
+     "**Immunities**: lightning undefined ;fire undefined ",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages you speak"
     ]
@@ -17413,7 +17413,7 @@
     "entries": [
      "**AC**: 10 + The Level Of The Spell (natural Armor)",
      "**HP**: 15 (Ethereal) or 25 (Ghoulish & Bone) + 10 for each spell level above 3rd",
-     "**Speed**: *walk* 30 Ft. (Ghoulish & Bone); *fly* 20 Ft. (Ethereal)",
+     "**Speed**: *walk* 30 Ft.(Ghoulish & Bone), *fly* 20 Ft.(Ethereal)",
      "**Immunities**: necrotic, poison",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages you speak"
@@ -17486,7 +17486,7 @@
     "entries": [
      "**AC**: 16 (Natural Armor)",
      "**HP**: 10 + five times your Bard level",
-     "**Speed**: *walk* 30 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Immunities**: necrotic, poison",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages you speak"
@@ -17559,7 +17559,7 @@
     "entries": [
      "**AC**: 13 (Natural Armor)",
      "**HP**: 5 plus five times your Druid level",
-     "**Speed**: *walk* 30 Ft.; *fly* 30 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.(hover), *canHover*",
      "**Immunities**: fire",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages you speak"
@@ -17705,7 +17705,7 @@
     "entries": [
      "**AC**: 12 (Natural Armor)",
      "**HP**: 20 plus half of your Warlock level",
-     "**Speed**: *walk* 0 Ft.; *fly* 50 Ft. (hover); *canHover* ",
+     "**Speed**: *walk* 0 Ft., *fly* 50 Ft.(hover), *canHover*",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
      "**Immunities**: necrotic, poison",
      "**Senses**: Darkvision 60 ft.",
