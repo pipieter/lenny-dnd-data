@@ -60,11 +60,13 @@ function getCreatureStats(creature: any): DescriptionTable {
         if (score === null) continue;
 
         const mod = calculateAbilityMod(score);
-        const save = creature.stats?.[stat] ?? mod;
+        const save = creature.save?.[stat] ?? mod;
+        console.log(save, creature.save);
+
         statTable.headers?.push(parseAbilityScore(stat));
         statTable.rows[0].push(score.toString());
         statTable.rows[1].push(mod.toString());
-        statTable.rows[2].push(save.toString()); // TODO, seemingly doesn't work (Drake Companion)?
+        statTable.rows[2].push(save.toString());
     }
 
     return {
