@@ -1,5 +1,6 @@
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { findEntry } from '../5etools-conversion/find';
+import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { Description, parseCreatureSummonSpell, parseCreatureTypes, parseDescriptions, parseSizes } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
@@ -11,9 +12,16 @@ interface Creature {
     subtitle: string | null;
     tokenUrl: string | null;
     summonedBySpell: string | null;
+    summonedByClass: string | null;
 
     description: Description[];
     fluffInfo: Description[];
+}
+
+function parseCreatureSummonClass(creature: any): string | null {
+    if (!creature.summonedByClass) return null
+    const parts = creature.summonedByClass.split("|");
+    return `${parts[0]} (${parts[1]})`
 }
 
 function buildCreature(creature: any, fluff: any | null): Creature {
@@ -31,6 +39,7 @@ function buildCreature(creature: any, fluff: any | null): Creature {
         source,
         subtitle,
         summonedBySpell,
+        summonedByClass: parseCreatureSummonClass(creature),
         tokenUrl,
         url,
         description,
