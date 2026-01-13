@@ -74,6 +74,127 @@ function getCreatureStats(creature: any): DescriptionTable {
     };
 }
 
+function parseAC(creature: any): string {
+    const results: string[] = [];
+    for (const ac of creature.ac) {
+        if (typeof ac === 'number') results.push(ac.toString());
+        else if (ac.special) results.push(ac.special);
+        else if (ac.condition) results.push(`${ac.ac} ${ac.condition}`);
+        else if (ac.from) results.push(`${ac.ac} (${joinStringsWithAnd(ac.from)})`);
+        else throw `Unsupported creature-AC in ${creature.name}: ${JSON.stringify(ac)}`;
+    }
+
+    return joinStringsWithOr(results);
+}
+
+function parseHP(creature: any): string {
+    // TODO Companion special HP
+    const hp = creature.hp;
+
+    if (typeof hp === 'number') return hp.toString();
+    if (hp.special) return hp.special;
+    if (hp.average) return hp.formula ? `${hp.average} (${hp.formula})` : hp.average.toString();
+    throw `Unsupported creature-HP in ${creature.name}: ${JSON.stringify(hp)}`;
+}
+
+function parseSpeed(creature: any): string {
+    const results: string[] = [];
+    // eslint-disable-next-line prefer-const
+    for (let [type, speed] of Object.entries(creature.speed) as [string, any][]) {
+        speed = variadic(speed);
+        const speeds = [];
+
+        if (type === 'alternate') continue; // TODO Alternate movement speeds.
+        if (type == 'choose') continue; // TODO Choose speeds
+
+        for (const s of speed) {
+            if (typeof s === 'number') speeds.push(`${s} ft.`);
+            else if (typeof s === 'boolean')
+                continue; // TODO Special movement types, like hovering.
+            else if (s.condition) speeds.push(`${s.number} ft.${s.condition}`);
+            else throw `Unsupported creature - speed in ${creature.name}: ${JSON.stringify(creature.speed)}`;
+        }
+        results.push(`* ${type} * ${joinStringsWithOr(speeds)}`);
+    }
+    return results.join(', ');
+}
+
+function parseInitiative(creature: any): string {
+    const initiative = creature.initiative;
+
+    if (initiative.proficiency) return initiative.proficiency.toString();
+    if (initiative.advantageMode) return creature.dex.toString(); // TODO figure this out, is possibly more complex than just the dex value.
+    if (initiative.initiative != null) return initiative.initiative.toString();
+
+    throw `Unsupported creature - initiative in ${creature.name}: ${JSON.stringify(initiative)}`; // TODO Should possible always revert to dex?
+}
+
+function parseSkills(creature: any): string {
+    const results: string[] = [];
+    // eslint-disable-next-line prefer-const
+    for (let [skill, value] of Object.entries(creature.skill) as [string, any][]) {
+        value = variadic(value)[0]; // TODO -> multi-value support?
+        if (skill === 'other') {
+            // TODO Cleanup, possibly recursion?
+            if (value.oneOf) {
+                const other: string[] = [];
+                for (const [s, v] of Object.entries(value.oneOf) as [string, any][]) {
+                    other.push(`${s} ${v}`);
+                }
+                results.push(`plus one of the following: ${joinStringsWithOr(other)}`);
+            } else {
+                throw `Unsupported creature - skill(other) in ${creature.name}: ${JSON.stringify(value)}`;
+            }
+        } else results.push(`${skill} ${value}`);
+    }
+
+    return results.join(', ');
+}
+
+function parseResistances(creature: any): string {
+    // TODO Make parsing recursive, to support resistance exceptions within exceptions.
+    const results = [];
+    const extra = [];
+    for (const r of creature.resist) {
+        if (typeof r === 'string') results.push(r);
+        else if (r.resist) {
+            const cond = r.resist.join(', ');
+            extra.push(`${cond} ${r.note}`);
+        } else if (r.special) results.push(r.special);
+        else throw `Unsupported creature - resistance in ${creature.name}: ${JSON.stringify(creature.resist)}.`;
+    }
+    let resistances = results.join(', ');
+    const conditions = extra.join(';');
+    if (extra.length !== 0) resistances = resistances ? `${resistances}; ${conditions} ` : conditions;
+    return resistances;
+}
+
+function parseImmunities(creature: any): string {
+    // TODO Make parsing recursive, to support immunities exceptions within exceptions.
+    // TODO conditionImmune
+    const results = [];
+    const extra = [];
+    for (const i of creature.immune) {
+        if (typeof i === 'string') results.push(i);
+        else if (i.immune) {
+            const cond = i.immune.join(', ');
+            extra.push(`${cond} ${i.note} `);
+        } else if (i.special) results.push(i.special);
+        else throw `Unsupported creature - resistance in ${creature.name}: ${JSON.stringify(creature.immune)}.`;
+    }
+    let immunities = results.join(', ');
+    const conditions = extra.join(';');
+    if (extra.length !== 0) immunities = immunities ? `${immunities}; ${conditions} ` : conditions;
+    return immunities;
+}
+
+function parseCR(creature: any): string {
+    // TODO XP?
+    if (typeof creature.cr === 'string') return creature.cr;
+    else if (creature.cr.cr) return creature.cr.cr;
+    else throw `Unsupported creature CR in ${creature.name}: ${JSON.stringify(creature.cr)} `;
+}
+
 function getCreatureDetails(creature: any): DescriptionList {
     const list: List = {
         type: 'list',
@@ -81,154 +202,22 @@ function getCreatureDetails(creature: any): DescriptionList {
         entries: [],
     };
 
-    if (creature.ac) {
-        const results: string[] = [];
-        for (const ac of creature.ac) {
-            if (typeof ac === 'number') {
-                results.push(ac.toString());
-            } else if (ac.special) {
-                results.push(ac.special);
-            } else if (ac.condition) {
-                results.push(`${ac.ac} ${ac.condition}`);
-            } else if (ac.from) {
-                results.push(`${ac.ac} (${joinStringsWithAnd(ac.from)})`);
-            } else {
-                throw `Unsupported creature-AC: ${JSON.stringify(ac)}`;
-            }
-        }
-        const totalAC = joinStringsWithOr(results);
-        list.entries.push(`**AC**: ${cleanDNDText(totalAC)}`);
-    }
-
-    if (creature.hp) {
-        const hp = creature.hp;
-        let totalHP = '';
-        if (typeof hp === 'number') {
-            totalHP = hp.toString();
-        } else if (hp.special) {
-            totalHP = hp.special;
-        } else if (hp.average) {
-            totalHP = hp.formula ? `${hp.average} (${hp.formula})` : hp.average.toString();
-        } else {
-            throw `Unsupported creature-HP: ${JSON.stringify(hp)}`;
-        }
-        // TODO Companion special HP
-        list.entries.push(`**HP**: ${cleanDNDText(totalHP)}`);
-    }
-
-    if (creature.speed) {
-        const results: string[] = [];
-        // eslint-disable-next-line prefer-const
-        for (let [type, speed] of Object.entries(creature.speed) as [string, any][]) {
-            speed = variadic(speed);
-            const speeds = [];
-
-            if (type === 'alternate') continue; // TODO Alternate movement speeds.
-            if (type == 'choose') continue; // TODO Choose speeds
-
-            for (const s of speed) {
-                if (typeof s === 'number') speeds.push(`${s} ft.`);
-                else if (typeof s === 'boolean')
-                    continue; // TODO Special movement types, like hovering.
-                else if (s.condition) speeds.push(`${s.number} ft. ${s.condition}`);
-                else throw `Unsupported creature-speed in ${creature.name}: ${JSON.stringify(creature.speed)}`;
-            }
-            results.push(`*${type}* ${joinStringsWithOr(speeds)}`);
-        }
-        const totalSpeed = results.join('; ');
-        list.entries.push(`**Speed**: ${cleanDNDText(totalSpeed)}`);
-    }
-
-    if (creature.initiative) {
-        const initiative = creature.initiative;
-        let result;
-
-        if (initiative.proficiency) result = initiative.proficiency.toString();
-        else if (initiative.advantageMode)
-            result = creature.dex.toString(); // TODO figure this out, is possibly more complex than just the dex value.
-        else if (initiative.initiative != null) result = initiative.initiative.toString();
-        else throw `Unsupported creature-initiative in ${creature.name}: ${JSON.stringify(initiative)}`; // TODO Should possible always revert to dex?
-
-        list.entries.push(`**Initiative**: ${cleanDNDText(result)}`);
-    }
-
-    if (creature.skill) {
-        const results: string[] = [];
-        // eslint-disable-next-line prefer-const
-        for (let [skill, value] of Object.entries(creature.skill) as [string, any][]) {
-            value = variadic(value)[0]; // TODO -> multi-value support?
-            if (skill === 'other') {
-                if (value.oneOf) {
-                    const other: string[] = [];
-                    for (const [s, v] of Object.entries(value.oneOf) as [string, any][]) {
-                        other.push(`${s} ${v}`);
-                    }
-                    results.push(`plus one of the following: ${joinStringsWithOr(other)}`);
-                } else {
-                    throw `Unsupported creature-skill (other) in ${creature.name}: ${JSON.stringify(value)}`;
-                }
-            } else results.push(`${skill} ${value}`);
-        }
-        const skills = results.join(', ');
-        list.entries.push(`**Skills**: ${cleanDNDText(skills)}`);
-    }
-
-    if (creature.resist) {
-        const results = [];
-        const extra = [];
-        for (const r of creature.resist) {
-            if (typeof r === 'string') results.push(r);
-            else if (r.resist) {
-                const cond = r.resist.join(', ');
-                extra.push(`${cond} ${r.note}`);
-            } else if (r.special) results.push(r.special);
-            else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.resist)}.`;
-        }
-        let resistances = results.join(', ');
-        const conditions = extra.join(';');
-        if (extra.length !== 0) resistances = resistances ? `${resistances}; ${conditions}` : conditions;
-
-        // list.entries.push(`**Resistances**: ${cleanDNDText(resistances)}`);
-        list.entries.push(`**Resistances**: ${resistances}`); // TODO Make parsing recursive, to support resistance exceptions within exceptions.
-    }
-
-    if (creature.immune) {
-        // TODO conditionImmune
-        const results = [];
-        const extra = [];
-        for (const i of creature.immune) {
-            if (typeof i === 'string') results.push(i);
-            else if (i.immune) {
-                const cond = i.immune.join(', ');
-                extra.push(`${cond} ${i.note}`);
-            } else if (i.special) results.push(i.special);
-            else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.immune)}.`;
-        }
-        let immunities = results.join(', ');
-        const conditions = extra.join(';');
-        if (extra.length !== 0) immunities = immunities ? `${immunities}; ${conditions}` : conditions;
-
-        // list.entries.push(`**Immunities**: ${cleanDNDText(immunities)}`);
-        list.entries.push(`**Immunities**: ${immunities}`); // TODO Make parsing recursive, to support immunities exceptions within exceptions.
-    }
-
+    if (creature.ac) list.entries.push(`**AC**: ${parseAC(creature)}`);
+    if (creature.hp) list.entries.push(`**HP**: ${parseHP(creature)}`);
+    if (creature.speed) list.entries.push(`**Speed**: ${parseSpeed(creature)}`);
+    if (creature.initiative) list.entries.push(`**Initiative**: ${parseInitiative(creature)}`);
+    if (creature.skill) list.entries.push(`**Skills**: ${parseSkills(creature)}`);
+    if (creature.resist) list.entries.push(`**Resistances**: ${parseResistances(creature)}`);
+    if (creature.immune) list.entries.push(`**Immunities**: ${parseImmunities(creature)}`);
     if (creature.senses) {
         const senses = creature.senses.join(', ');
-        list.entries.push(`**Senses**: ${cleanDNDText(senses)}`);
+        list.entries.push(`**Senses**: ${cleanDNDText(senses)} `);
     }
-
     if (creature.languages) {
         const languages = creature.languages.join(', ');
-        list.entries.push(`**Languages**: ${cleanDNDText(languages)}`);
+        list.entries.push(`**Languages**: ${cleanDNDText(languages)} `);
     }
-
-    if (creature.cr) {
-        let result;
-        if (typeof creature.cr === 'string') result = creature.cr;
-        else if (creature.cr.cr) result = creature.cr.cr;
-        else throw `Unsupported creature CR in ${creature.name}: ${JSON.stringify(creature.cr)}`;
-        list.entries.push(`**CR**: ${result}`);
-    }
+    if (creature.cr) list.entries.push(`**CR**: ${parseCR(creature)}`);
 
     return {
         name: '',
