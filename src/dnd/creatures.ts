@@ -116,7 +116,7 @@ function parseSpeed(creature: any): string {
         }
         results.push(`*${type}* ${joinStringsWithOr(speeds)}`);
     }
-    return results.join(', ');
+    return results.join(', ').trim();
 }
 
 function parseInitiative(creature: any): string {
@@ -130,25 +130,23 @@ function parseInitiative(creature: any): string {
 }
 
 function parseSkills(creature: any): string {
-    const results: string[] = [];
-    // eslint-disable-next-line prefer-const
-    for (let [skill, value] of Object.entries(creature.skill) as [string, any][]) {
-        value = variadic(value)[0]; // TODO -> multi-value support?
-        if (skill === 'other') {
-            // TODO Cleanup, possibly recursion?
-            if (value.oneOf) {
-                const other: string[] = [];
-                for (const [s, v] of Object.entries(value.oneOf) as [string, any][]) {
-                    other.push(`${s} ${v}`);
-                }
-                results.push(`plus one of the following: ${joinStringsWithOr(other)}`);
-            } else {
-                throw `Unsupported creature - skill(other) in ${creature.name}: ${JSON.stringify(value)}`;
-            }
-        } else results.push(`${skill} ${value}`);
-    }
+    const iterateSkills = (s: any, isOneOf = false): string => {
+        const entries = Object.entries(s) as [string, any][];
+        const parts = entries.map(([skill, value]) => {
+            const val = variadic(value)[0];
 
-    return results.join(', ');
+            if (skill === 'other') {
+                if (!val.oneOf) throw `Unsupported creature skill(other) in ${creature.name}: ${JSON.stringify(val)}`;
+                return `plus one of the following: ${iterateSkills(val.oneOf, true)}`;
+            }
+
+            return `${skill} ${val}`;
+        });
+
+        return isOneOf ? joinStringsWithOr(parts) : parts.join(', ');
+    };
+
+    return iterateSkills(creature.skill || {});
 }
 
 function parseResistances(creature: any): string {
