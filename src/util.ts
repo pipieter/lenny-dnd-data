@@ -43,6 +43,11 @@ export function joinStringsWithAnd(values: string[], capitalize: boolean = true)
     return joinStringsWith('and', values, capitalize);
 }
 
+export function calculateAbilityMod(abilityScore: number): number {
+    const mod = (abilityScore - 10) / 2;
+    return Math.floor(mod);
+}
+
 export class StopwatchLogger {
     private startTime: number;
     private previousTime: number;

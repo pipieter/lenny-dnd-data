@@ -1,9 +1,11 @@
+import { name } from 'ts-interface-checker';
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { findEntry } from '../5etools-conversion/find';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, parseCreatureSummonSpell, parseCreatureTypes, parseDescriptions, parseSizes } from '../parser';
+import { Description, DescriptionTable, DescriptionType, parseAbilityScore, parseCreatureSummonSpell, parseCreatureTypes, parseDescriptions, parseSizes, Table } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
+import { calculateAbilityMod } from '../util';
 
 interface Creature {
     name: string;
@@ -16,12 +18,49 @@ interface Creature {
 
     description: Description[];
     fluffInfo: Description[];
+    stats: DescriptionTable;
 }
 
 function parseCreatureSummonClass(creature: any): string | null {
     if (!creature.summonedByClass) return null
     const parts = creature.summonedByClass.split("|");
     return `${parts[0]} (${parts[1]})`
+}
+
+function getCreatureStats(creature: any): DescriptionTable {
+    let stats = {
+        'str': creature.str ?? null,
+        'dex': creature.dex ?? null,
+        'con': creature.con ?? null,
+        'int': creature.int ?? null,
+        'wis': creature.wis ?? null,
+        'cha': creature.cha ?? null
+    }
+
+    const statTable: Table = {
+        type: 'table',
+        title: 'Stats',
+        headers: [""],
+        rows: [['Score'], ['Mod.'], ['Save.']]
+    }
+
+    for (const [stat, score] of Object.entries(stats)) {
+        if (score === null) continue;
+
+        const mod = calculateAbilityMod(score);
+        const save = creature.stats ?? creature.stats[stat] ?? mod;
+        statTable.headers?.push(parseAbilityScore(stat));
+        statTable.rows[0].push(score);
+        statTable.rows[1].push(mod.toString());
+        statTable.rows[2].push(save);
+    }
+
+    return {
+        name: 'Stats',
+        type: DescriptionType.table,
+        table: statTable
+    }
+
 }
 
 function buildCreature(creature: any, fluff: any | null): Creature {
@@ -44,6 +83,7 @@ function buildCreature(creature: any, fluff: any | null): Creature {
         url,
         description,
         fluffInfo,
+        stats: getCreatureStats(creature)
     };
 }
 
