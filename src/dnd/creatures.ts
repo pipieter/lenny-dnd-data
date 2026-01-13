@@ -126,6 +126,18 @@ function getCreatureDetails(creature: any): DescriptionList {
         list.entries.push(`**Speed**: ${cleanDNDText(totalSpeed)}`)
     }
 
+    if (creature.initiative) {
+        const initiative = creature.initiative;
+        let result;
+
+        if (initiative.proficiency) result = initiative.proficiency.toString();
+        else if (initiative.advantageMode) result = creature.dex.toString(); // TODO figure this out, is possibly more complex than just the dex value.
+        else if (initiative.initiative != null) result = initiative.initiative.toString();
+        else throw `Unsupported creature-initiative in ${creature.name}: ${JSON.stringify(initiative)}`
+
+        list.entries.push(`**Initiative**: ${result}`)
+    }
+
     return {
         name: '',
         type: DescriptionType.list,
