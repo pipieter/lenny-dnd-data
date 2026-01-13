@@ -47,12 +47,12 @@ function getCreatureStats(creature: any): DescriptionTable {
     for (const [stat, score] of Object.entries(stats)) {
         if (score === null) continue;
 
-        const mod = calculateAbilityMod(score);
-        const save = creature.stats ?? creature.stats[stat] ?? mod;
+        let mod = calculateAbilityMod(score);
+        const save = creature.stats?.[stat] ?? mod;
         statTable.headers?.push(parseAbilityScore(stat));
-        statTable.rows[0].push(score);
+        statTable.rows[0].push(score.toString());
         statTable.rows[1].push(mod.toString());
-        statTable.rows[2].push(save);
+        statTable.rows[2].push(save.toString());
     }
 
     return {
