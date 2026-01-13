@@ -150,6 +150,7 @@ function parseSkills(creature: any): string {
 }
 
 function parseResistances(creature: any): string {
+    // TODO Use of sublists could make rendering clearer.
     const iterateResistances = (resists: any): { results: string[]; extra: string[] } => {
         const results: string[] = [];
         const extra: string[] = [];
@@ -180,6 +181,8 @@ function parseResistances(creature: any): string {
 }
 
 function parseImmunities(creature: any): string {
+    // TODO Use of sublists could make rendering clearer.
+    // TODO add conditionImmune, currently only shows damage immunities.
     const iterateImmunities = (immunities: any): { results: string[]; extra: string[] } => {
         const results: string[] = [];
         const extra: string[] = [];
@@ -210,18 +213,13 @@ function parseImmunities(creature: any): string {
 }
 
 function parseCR(creature: any): string {
-    // TODO XP?
     if (typeof creature.cr === 'string') return creature.cr;
     else if (creature.cr.cr) return creature.cr.cr;
-    else throw `Unsupported creature CR in ${creature.name}: ${JSON.stringify(creature.cr)} `;
+    throw `Unsupported creature CR in ${creature.name}: ${JSON.stringify(creature.cr)} `;
 }
 
 function getCreatureDetails(creature: any): DescriptionList {
-    const list: List = {
-        type: 'list',
-        caption: '',
-        entries: [],
-    };
+    const list: List = { type: 'list', caption: '', entries: [] };
 
     if (creature.ac) list.entries.push(`**AC**: ${parseAC(creature)}`);
     if (creature.hp) list.entries.push(`**HP**: ${parseHP(creature)}`);
@@ -230,22 +228,20 @@ function getCreatureDetails(creature: any): DescriptionList {
     if (creature.skill) list.entries.push(`**Skills**: ${parseSkills(creature)}`);
     if (creature.resist) list.entries.push(`**Resistances**: ${parseResistances(creature)}`);
     if (creature.immune) list.entries.push(`**Immunities**: ${parseImmunities(creature)}`);
-    // TODO add conditionImmune, normally is displayed with Immunities, but is easier to handle separately.
     if (creature.senses) {
         const senses = creature.senses.join(', ');
-        list.entries.push(`**Senses**: ${cleanDNDText(senses)}`);
+        list.entries.push(`**Senses**: ${senses}`);
     }
     if (creature.languages) {
         const languages = creature.languages.join(', ');
-        list.entries.push(`**Languages**: ${cleanDNDText(languages)}`);
+        list.entries.push(`**Languages**: ${languages}`);
     }
     if (creature.cr) list.entries.push(`**CR**: ${parseCR(creature)}`);
 
-    return {
-        name: '',
-        type: DescriptionType.list,
-        list: list,
-    };
+    list.entries = list.entries.map((entry: string | List) =>
+        typeof entry === 'string' ? cleanDNDText(entry as string).trim() : entry
+    );
+    return { name: '', type: DescriptionType.list, list: list };
 }
 
 function buildCreature(creature: any, fluff: any | null): Creature {
@@ -269,7 +265,7 @@ function buildCreature(creature: any, fluff: any | null): Creature {
         description,
         fluffInfo,
         stats: getCreatureStats(creature),
-        details: getCreatureDetails(creature),
+        details: getCreatureDetails(creature), // TODO Possibly not store all values in details, would be easier to customize things in front-end.
     };
 }
 
