@@ -48,6 +48,10 @@ export function calculateAbilityMod(abilityScore: number): number {
     return Math.floor(mod);
 }
 
+export function variadic<T>(values: T | T[]): T[] {
+    return Array.isArray(values) ? values : [values];
+}
+
 export class StopwatchLogger {
     private startTime: number;
     private previousTime: number;

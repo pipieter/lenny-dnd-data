@@ -5,7 +5,7 @@ import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { Description, DescriptionList, DescriptionTable, DescriptionType, List, parseAbilityScore, parseCreatureSummonSpell, parseCreatureTypes, parseDescriptions, parseSizes, Table } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
-import { calculateAbilityMod, joinStringsWithAnd, joinStringsWithOr } from '../util';
+import { calculateAbilityMod, joinStringsWithAnd, joinStringsWithOr, variadic } from '../util';
 
 interface Creature {
     name: string;
@@ -103,6 +103,27 @@ function getCreatureDetails(creature: any): DescriptionList {
         }
         // TODO Companion special HP
         list.entries.push(`**HP**: ${cleanDNDText(totalHP)}`)
+    }
+
+    if (creature.speed) {
+        const results: string[] = [];
+        for (let [type, speed] of Object.entries(creature.speed) as [string, any][]) {
+            speed = variadic(speed);
+            const speeds = [];
+
+            if (type === 'alternate') continue; // TODO Alternate movement speeds.
+            if (type == 'choose') continue; // TODO Choose speeds
+
+            for (const s of speed) {
+                if (typeof s === 'number') speeds.push(`${s} ft.`);
+                else if (typeof s === 'boolean') continue; // TODO Special movement types, like hovering.
+                else if (s.condition) speeds.push(`${s.number} ft. ${s.condition}`);
+                else throw `Unsupported creature-speed in ${creature.name}: ${JSON.stringify(creature.speed)}`
+            }
+            results.push(`*${type}* ${joinStringsWithOr(speeds)}`);
+        }
+        const totalSpeed = results.join('; ');
+        list.entries.push(`**Speed**: ${cleanDNDText(totalSpeed)}`)
     }
 
     return {
