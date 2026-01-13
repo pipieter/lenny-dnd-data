@@ -3,9 +3,9 @@ import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { findEntry } from '../5etools-conversion/find';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, DescriptionTable, DescriptionType, parseAbilityScore, parseCreatureSummonSpell, parseCreatureTypes, parseDescriptions, parseSizes, Table } from '../parser';
+import { Description, DescriptionList, DescriptionTable, DescriptionType, List, parseAbilityScore, parseCreatureSummonSpell, parseCreatureTypes, parseDescriptions, parseSizes, Table } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
-import { calculateAbilityMod } from '../util';
+import { calculateAbilityMod, joinStringsWithAnd, joinStringsWithOr } from '../util';
 
 interface Creature {
     name: string;
@@ -19,6 +19,7 @@ interface Creature {
     description: Description[];
     fluffInfo: Description[];
     stats: DescriptionTable;
+    details: DescriptionList;
 }
 
 function parseCreatureSummonClass(creature: any): string | null {
@@ -60,7 +61,39 @@ function getCreatureStats(creature: any): DescriptionTable {
         type: DescriptionType.table,
         table: statTable
     }
+}
 
+function getCreatureDetails(creature: any): DescriptionList {
+    const list: List = {
+        type: 'list',
+        caption: '',
+        entries: []
+    }
+
+    if (creature.ac) {
+        const results: string[] = [];
+        for (const ac of creature.ac) {
+            if (typeof ac === 'number') {
+                results.push(ac.toString());
+            } else if (ac.special) {
+                results.push(ac.special);
+            } else if (ac.condition) {
+                results.push(`${ac.ac} ${ac.condition}`);
+            } else if (ac.from) {
+                results.push(`${ac.ac} (${joinStringsWithAnd(ac.from)})`);
+            } else {
+                throw `Unsupported creature-AC: ${ac}`;
+            }
+        }
+        const totalAC = joinStringsWithOr(results);
+        list.entries.push(`**AC**: ${cleanDNDText(totalAC)}`)
+    }
+
+    return {
+        name: '',
+        type: DescriptionType.list,
+        list: list,
+    }
 }
 
 function buildCreature(creature: any, fluff: any | null): Creature {
@@ -83,7 +116,8 @@ function buildCreature(creature: any, fluff: any | null): Creature {
         url,
         description,
         fluffInfo,
-        stats: getCreatureStats(creature)
+        stats: getCreatureStats(creature),
+        details: getCreatureDetails(creature)
     };
 }
 
