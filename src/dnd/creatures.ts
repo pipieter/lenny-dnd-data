@@ -133,9 +133,28 @@ function getCreatureDetails(creature: any): DescriptionList {
         if (initiative.proficiency) result = initiative.proficiency.toString();
         else if (initiative.advantageMode) result = creature.dex.toString(); // TODO figure this out, is possibly more complex than just the dex value.
         else if (initiative.initiative != null) result = initiative.initiative.toString();
-        else throw `Unsupported creature-initiative in ${creature.name}: ${JSON.stringify(initiative)}`
+        else throw `Unsupported creature-initiative in ${creature.name}: ${JSON.stringify(initiative)}` // TODO Should possible always revert to dex?
 
         list.entries.push(`**Initiative**: ${result}`)
+    }
+
+    if (creature.skill) {
+        const results: string[] = [];
+        for (let [skill, value] of Object.entries(creature.skill) as [string, any][]) {
+            results.push(`${skill} ${value}`)
+        }
+        const skills = results.join(', ');
+        list.entries.push(`**Skills**: ${skills}`);
+    }
+
+    if (creature.resist) {
+        const resistances = creature.resist.join(', ');
+        list.entries.push(`**Resistances**: ${resistances}`);
+    }
+
+    if (creature.immune) {
+        const immunities = creature.immune.join(', ');
+        list.entries.push(`**Immunities**: ${immunities}`);
     }
 
     return {
