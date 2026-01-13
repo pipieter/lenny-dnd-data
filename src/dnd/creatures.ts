@@ -53,7 +53,7 @@ function getCreatureStats(creature: any): DescriptionTable {
         statTable.headers?.push(parseAbilityScore(stat));
         statTable.rows[0].push(score.toString());
         statTable.rows[1].push(mod.toString());
-        statTable.rows[2].push(save.toString());
+        statTable.rows[2].push(save.toString()); // TODO, seemingly doesn't work (Drake Companion)?
     }
 
     return {
@@ -82,11 +82,27 @@ function getCreatureDetails(creature: any): DescriptionList {
             } else if (ac.from) {
                 results.push(`${ac.ac} (${joinStringsWithAnd(ac.from)})`);
             } else {
-                throw `Unsupported creature-AC: ${ac}`;
+                throw `Unsupported creature-AC: ${JSON.stringify(ac)}`;
             }
         }
         const totalAC = joinStringsWithOr(results);
         list.entries.push(`**AC**: ${cleanDNDText(totalAC)}`)
+    }
+
+    if (creature.hp) {
+        const hp = creature.hp;
+        let totalHP = "";
+        if (typeof hp === 'number') {
+            totalHP = hp.toString();
+        } else if (hp.special) {
+            totalHP = hp.special;
+        } else if (hp.average) {
+            totalHP = hp.formula ? `${hp.average} (${hp.formula})` : hp.average.toString();
+        } else {
+            throw `Unsupported creature-HP: ${JSON.stringify(hp)}`;
+        }
+        // TODO Companion special HP
+        list.entries.push(`**HP**: ${cleanDNDText(totalHP)}`)
     }
 
     return {
