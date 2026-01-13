@@ -192,6 +192,7 @@ function getCreatureDetails(creature: any): DescriptionList {
     }
 
     if (creature.immune) {
+        // TODO conditionImmune
         const results = [];
         const extra = [];
         for (const i of creature.immune) {
