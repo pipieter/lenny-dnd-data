@@ -151,20 +151,33 @@ function parseSkills(creature: any): string {
 
 function parseResistances(creature: any): string {
     // TODO Make parsing recursive, to support resistance exceptions within exceptions.
-    const results = [];
-    const extra = [];
-    for (const r of creature.resist) {
-        if (typeof r === 'string') results.push(r);
-        else if (r.resist) {
-            const cond = r.resist.join(', ');
-            extra.push(`${cond} ${r.note}`);
-        } else if (r.special) results.push(r.special);
-        else throw `Unsupported creature - resistance in ${creature.name}: ${JSON.stringify(creature.resist)}.`;
-    }
-    let resistances = results.join(', ');
-    const conditions = extra.join(';');
-    if (extra.length !== 0) resistances = resistances ? `${resistances}; ${conditions} ` : conditions;
-    return resistances;
+    const iterateResistances = (resists: any): { results: string[]; extra: string[] } => {
+        const results: string[] = [];
+        const extra: string[] = [];
+
+        for (const r of resists) {
+            if (typeof r === 'string') results.push(r);
+            else if (r.special) results.push(r.special);
+            else if (r.resist) {
+                const iterated = iterateResistances(r.resist);
+                const prefix = r.preNote ?? '';
+                const suffix = r.note ?? '';
+                const innerResistances = iterated.results.join(', ');
+                let inner = `${prefix} ${innerResistances} ${suffix}`.trim();
+                if (iterated.extra.length > 0) inner = inner + '; ' + joinStringsWithAnd(iterated.extra);
+                extra.push(inner);
+            } else throw `Unsupported creature - resistance in ${creature.name}: ${JSON.stringify(r)}.`;
+        }
+
+        return { results, extra };
+    };
+
+    const resistances = iterateResistances(creature.resist);
+    const main = resistances.results.join(', ');
+    const special = resistances.extra.join(', ');
+    if (resistances.results.length == 0) return special;
+    if (resistances.extra.length != 0) return `${main}; ${special}`;
+    return main;
 }
 
 function parseImmunities(creature: any): string {
