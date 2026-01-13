@@ -48,6 +48,12 @@ export function calculateAbilityMod(abilityScore: number): number {
     return Math.floor(mod);
 }
 
+export function formatModifier(mod: string | number): string {
+    if (typeof mod === 'string') mod = parseInt(mod);
+    if (mod >= 0) return `+${mod}`;
+    return mod.toString();
+}
+
 export function variadic<T>(values: T | T[]): T[] {
     return Array.isArray(values) ? values : [values];
 }

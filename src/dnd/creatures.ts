@@ -16,7 +16,7 @@ import {
     Table,
 } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
-import { calculateAbilityMod, joinStringsWithAnd, joinStringsWithOr, variadic } from '../util';
+import { calculateAbilityMod, formatModifier, joinStringsWithAnd, joinStringsWithOr, variadic } from '../util';
 
 interface Creature {
     name: string;
@@ -61,12 +61,11 @@ function getCreatureStats(creature: any): DescriptionTable {
 
         const mod = calculateAbilityMod(score);
         const save = creature.save?.[stat] ?? mod;
-        console.log(save, creature.save);
 
         statTable.headers?.push(parseAbilityScore(stat));
         statTable.rows[0].push(score.toString());
-        statTable.rows[1].push(mod.toString());
-        statTable.rows[2].push(save.toString());
+        statTable.rows[1].push(formatModifier(mod));
+        statTable.rows[2].push(formatModifier(save));
     }
 
     return {
