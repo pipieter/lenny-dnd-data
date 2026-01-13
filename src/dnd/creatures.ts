@@ -135,7 +135,7 @@ function getCreatureDetails(creature: any): DescriptionList {
         else if (initiative.initiative != null) result = initiative.initiative.toString();
         else throw `Unsupported creature-initiative in ${creature.name}: ${JSON.stringify(initiative)}` // TODO Should possible always revert to dex?
 
-        list.entries.push(`**Initiative**: ${result}`)
+        list.entries.push(`**Initiative**: ${cleanDNDText(result)}`)
     }
 
     if (creature.skill) {
@@ -144,17 +144,27 @@ function getCreatureDetails(creature: any): DescriptionList {
             results.push(`${skill} ${value}`)
         }
         const skills = results.join(', ');
-        list.entries.push(`**Skills**: ${skills}`);
+        list.entries.push(`**Skills**: ${cleanDNDText(skills)}`);
     }
 
     if (creature.resist) {
         const resistances = creature.resist.join(', ');
-        list.entries.push(`**Resistances**: ${resistances}`);
+        list.entries.push(`**Resistances**: ${cleanDNDText(resistances)}`);
     }
 
     if (creature.immune) {
         const immunities = creature.immune.join(', ');
-        list.entries.push(`**Immunities**: ${immunities}`);
+        list.entries.push(`**Immunities**: ${cleanDNDText(immunities)}`);
+    }
+
+    if (creature.senses) {
+        const senses = creature.senses.join(', ');
+        list.entries.push(`**Senses**: ${cleanDNDText(senses)}`);
+    }
+
+    if (creature.languages) {
+        const languages = creature.languages.join(', ');
+        list.entries.push(`**Languages**: ${cleanDNDText(languages)}`);
     }
 
     return {
