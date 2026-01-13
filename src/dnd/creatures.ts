@@ -187,7 +187,8 @@ function getCreatureDetails(creature: any): DescriptionList {
         let conditions = extra.join(';');
         if (extra.length !== 0) resistances = resistances ? `${resistances}; ${conditions}` : conditions;
 
-        list.entries.push(`**Resistances**: ${cleanDNDText(resistances)}`);
+        // list.entries.push(`**Resistances**: ${cleanDNDText(resistances)}`);
+        list.entries.push(`**Resistances**: ${resistances}`); // TODO Make parsing recursive, to support resistance exceptions within exceptions.
     }
 
     if (creature.immune) {
@@ -205,7 +206,8 @@ function getCreatureDetails(creature: any): DescriptionList {
         let conditions = extra.join(';');
         if (extra.length !== 0) immunities = immunities ? `${immunities}; ${conditions}` : conditions;
 
-        list.entries.push(`**Immunities**: ${cleanDNDText(immunities)}`);
+        // list.entries.push(`**Immunities**: ${cleanDNDText(immunities)}`);
+        list.entries.push(`**Immunities**: ${immunities}`); // TODO Make parsing recursive, to support immunities exceptions within exceptions.
     }
 
     if (creature.senses) {
