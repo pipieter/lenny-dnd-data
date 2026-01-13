@@ -1,4 +1,3 @@
-import { name } from 'ts-interface-checker';
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { findEntry } from '../5etools-conversion/find';
 import { cleanDNDText } from '../clean';
@@ -41,7 +40,7 @@ function parseCreatureSummonClass(creature: any): string | null {
 }
 
 function getCreatureStats(creature: any): DescriptionTable {
-    let stats = {
+    const stats = {
         str: creature.str ?? null,
         dex: creature.dex ?? null,
         con: creature.con ?? null,
@@ -60,7 +59,7 @@ function getCreatureStats(creature: any): DescriptionTable {
     for (const [stat, score] of Object.entries(stats)) {
         if (score === null) continue;
 
-        let mod = calculateAbilityMod(score);
+        const mod = calculateAbilityMod(score);
         const save = creature.stats?.[stat] ?? mod;
         statTable.headers?.push(parseAbilityScore(stat));
         statTable.rows[0].push(score.toString());
@@ -119,6 +118,7 @@ function getCreatureDetails(creature: any): DescriptionList {
 
     if (creature.speed) {
         const results: string[] = [];
+        // eslint-disable-next-line prefer-const
         for (let [type, speed] of Object.entries(creature.speed) as [string, any][]) {
             speed = variadic(speed);
             const speeds = [];
@@ -154,12 +154,13 @@ function getCreatureDetails(creature: any): DescriptionList {
 
     if (creature.skill) {
         const results: string[] = [];
+        // eslint-disable-next-line prefer-const
         for (let [skill, value] of Object.entries(creature.skill) as [string, any][]) {
             value = variadic(value)[0]; // TODO -> multi-value support?
             if (skill === 'other') {
                 if (value.oneOf) {
                     const other: string[] = [];
-                    for (let [s, v] of Object.entries(value.oneOf) as [string, any][]) {
+                    for (const [s, v] of Object.entries(value.oneOf) as [string, any][]) {
                         other.push(`${s} ${v}`);
                     }
                     results.push(`plus one of the following: ${joinStringsWithOr(other)}`);
@@ -184,7 +185,7 @@ function getCreatureDetails(creature: any): DescriptionList {
             else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.resist)}.`;
         }
         let resistances = results.join(', ');
-        let conditions = extra.join(';');
+        const conditions = extra.join(';');
         if (extra.length !== 0) resistances = resistances ? `${resistances}; ${conditions}` : conditions;
 
         // list.entries.push(`**Resistances**: ${cleanDNDText(resistances)}`);
@@ -204,7 +205,7 @@ function getCreatureDetails(creature: any): DescriptionList {
             else throw `Unsupported creature-resistance in ${creature.name}: ${JSON.stringify(creature.immune)}.`;
         }
         let immunities = results.join(', ');
-        let conditions = extra.join(';');
+        const conditions = extra.join(';');
         if (extra.length !== 0) immunities = immunities ? `${immunities}; ${conditions}` : conditions;
 
         // list.entries.push(`**Immunities**: ${cleanDNDText(immunities)}`);
