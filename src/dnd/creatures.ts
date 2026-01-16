@@ -119,8 +119,16 @@ function parseSpeed(creature: any): string {
 
             for (const s of speed) {
                 if (typeof s === 'number') speeds.push(`${s} ft.`);
-                else if (typeof s === 'boolean')
-                    continue; // TODO Special movement types, like hovering.
+                else if (typeof s === 'boolean') {
+                    switch (type) {
+                        case 'canHover':
+                            speeds.push(`(hover)`);
+                            break;
+
+                        default:
+                            throw `Unsupported creature speed movement-type in ${creature.name}: ${type}`
+                    }
+                }
                 else if (s.condition) speeds.push(`${s.number} ft. ${s.condition}`);
                 else throw `Unsupported creature - speed in ${creature.name}: ${JSON.stringify(creature.speed)}`;
             }
