@@ -9,6 +9,7 @@ import {
     DescriptionType,
     List,
     parseAbilityScore,
+    parseAdvantage,
     parseCreatureSummonSpell,
     parseCreatureTypes,
     parseDescriptions,
@@ -144,7 +145,8 @@ function parseInitiative(creature: any): string {
     const initiative = creature.initiative;
 
     if (initiative.proficiency) return initiative.proficiency.toString();
-    if (initiative.advantageMode) return creature.dex.toString(); // TODO figure this out, is possibly more complex than just the dex value.
+    if (initiative.advantageMode)
+        return `${creature.dex.toString()} (with ${parseAdvantage(initiative.advantageMode)})`; // TODO Figure out correct initiative formula.
     if (initiative.initiative != null) return initiative.initiative.toString();
 
     throw `Unsupported creature - initiative in ${creature.name}: ${JSON.stringify(initiative)}`;
