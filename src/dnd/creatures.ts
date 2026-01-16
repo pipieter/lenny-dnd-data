@@ -110,9 +110,9 @@ function parseSpeed(creature: any): string {
 
             if (type == 'choose') {
                 const options = joinStringsWithOr(speed.from, false);
-                results.push(`*${options}* ${speed.amount} ft. ${speed.note}`.trim())
+                results.push(`*${options}* ${speed.amount} ft. ${speed.note}`.trim());
                 continue;
-            };
+            }
 
             speed = variadic(speed);
             const speeds = [];
@@ -126,17 +126,16 @@ function parseSpeed(creature: any): string {
                             break;
 
                         default:
-                            throw `Unsupported creature speed movement-type in ${creature.name}: ${type}`
+                            throw `Unsupported creature speed movement-type in ${creature.name}: ${type}`;
                     }
-                }
-                else if (s.condition) speeds.push(`${s.number} ft. ${s.condition}`);
+                } else if (s.condition) speeds.push(`${s.number} ft. ${s.condition}`);
                 else throw `Unsupported creature - speed in ${creature.name}: ${JSON.stringify(creature.speed)}`;
             }
             results.push(`*${type}* ${joinStringsWithOr(speeds)}`);
         }
 
         return results;
-    }
+    };
 
     return iterateSpeed(creature.speed).join(', ').trim();
 }
