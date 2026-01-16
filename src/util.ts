@@ -43,6 +43,21 @@ export function joinStringsWithAnd(values: string[], capitalize: boolean = true)
     return joinStringsWith('and', values, capitalize);
 }
 
+export function calculateAbilityMod(abilityScore: number): number {
+    const mod = (abilityScore - 10) / 2;
+    return Math.floor(mod);
+}
+
+export function formatModifier(mod: string | number): string {
+    if (typeof mod === 'string') mod = parseInt(mod);
+    if (mod >= 0) return `+${mod}`;
+    return mod.toString();
+}
+
+export function variadic<T>(values: T | T[]): T[] {
+    return Array.isArray(values) ? values : [values];
+}
+
 export class StopwatchLogger {
     private startTime: number;
     private previousTime: number;

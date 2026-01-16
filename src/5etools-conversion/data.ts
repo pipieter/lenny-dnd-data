@@ -20,6 +20,11 @@ export const AbilityScores = new Map<string, string>([
     ['cha', 'Charisma'],
 ]);
 
+export const Advantages = new Map([
+    ['adv', 'Advantage'],
+    ['dis', 'Disadvantage'],
+]);
+
 export const DamageTypes = new Map([
     ['A', 'Acid'],
     ['B', 'Bludgeoning'],
