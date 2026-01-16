@@ -145,9 +145,12 @@ function parseInitiative(creature: any): string {
     const initiative = creature.initiative;
 
     if (initiative.proficiency) return initiative.proficiency.toString();
-    if (initiative.advantageMode)
-        return `${creature.dex.toString()} (with ${parseAdvantage(initiative.advantageMode)})`; // TODO Figure out correct initiative formula.
     if (initiative.initiative != null) return initiative.initiative.toString();
+    if (initiative.advantageMode) {
+        const mod = calculateAbilityMod(creature.dex);
+        const advantage = parseAdvantage(initiative.advantageMode);
+        return `${formatModifier(mod)} (with ${advantage})`;
+    }
 
     throw `Unsupported creature - initiative in ${creature.name}: ${JSON.stringify(initiative)}`;
 }
