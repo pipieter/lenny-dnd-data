@@ -89,7 +89,6 @@ function parseAC(creature: any): string {
 }
 
 function parseHP(creature: any): string {
-    // TODO Companion special HP
     const hp = creature.hp;
 
     if (typeof hp === 'number') return hp.toString();
@@ -99,25 +98,35 @@ function parseHP(creature: any): string {
 }
 
 function parseSpeed(creature: any): string {
-    const results: string[] = [];
-    // eslint-disable-next-line prefer-const
-    for (let [type, speed] of Object.entries(creature.speed) as [string, any][]) {
-        speed = variadic(speed);
-        const speeds = [];
+    const iterateSpeed = (speedBlock: any) => {
+        const results: string[] = [];
 
-        if (type === 'alternate') continue; // TODO Alternate movement speeds.
-        if (type == 'choose') continue; // TODO Choose speeds
+        // eslint-disable-next-line prefer-const
+        for (let [type, speed] of Object.entries(speedBlock) as [string, any][]) {
+            if (type === 'alternate') {
+                results.push(...iterateSpeed(speed));
+                continue;
+            }
 
-        for (const s of speed) {
-            if (typeof s === 'number') speeds.push(`${s} ft.`);
-            else if (typeof s === 'boolean')
-                continue; // TODO Special movement types, like hovering.
-            else if (s.condition) speeds.push(`${s.number} ft.${s.condition}`);
-            else throw `Unsupported creature - speed in ${creature.name}: ${JSON.stringify(creature.speed)}`;
+            if (type == 'choose') continue; // TODO Choose speeds
+
+            speed = variadic(speed);
+            const speeds = [];
+
+            for (const s of speed) {
+                if (typeof s === 'number') speeds.push(`${s} ft.`);
+                else if (typeof s === 'boolean')
+                    continue; // TODO Special movement types, like hovering.
+                else if (s.condition) speeds.push(`${s.number} ft. ${s.condition}`);
+                else throw `Unsupported creature - speed in ${creature.name}: ${JSON.stringify(creature.speed)}`;
+            }
+            results.push(`*${type}* ${joinStringsWithOr(speeds)}`);
         }
-        results.push(`*${type}* ${joinStringsWithOr(speeds)}`);
+
+        return results;
     }
-    return results.join(', ').trim();
+
+    return iterateSpeed(creature.speed).join(', ').trim();
 }
 
 function parseInitiative(creature: any): string {
@@ -127,7 +136,7 @@ function parseInitiative(creature: any): string {
     if (initiative.advantageMode) return creature.dex.toString(); // TODO figure this out, is possibly more complex than just the dex value.
     if (initiative.initiative != null) return initiative.initiative.toString();
 
-    throw `Unsupported creature - initiative in ${creature.name}: ${JSON.stringify(initiative)}`; // TODO Should possible always revert to dex?
+    throw `Unsupported creature - initiative in ${creature.name}: ${JSON.stringify(initiative)}`;
 }
 
 function parseSkills(creature: any): string {
