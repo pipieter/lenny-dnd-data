@@ -108,7 +108,11 @@ function parseSpeed(creature: any): string {
                 continue;
             }
 
-            if (type == 'choose') continue; // TODO Choose speeds
+            if (type == 'choose') {
+                const options = joinStringsWithOr(speed.from, false);
+                results.push(`*${options}* ${speed.amount} ft. ${speed.note}`.trim())
+                continue;
+            };
 
             speed = variadic(speed);
             const speeds = [];
