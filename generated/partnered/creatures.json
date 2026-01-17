@@ -358,7 +358,7 @@
      "**Initiative**: 1",
      "**Skills**: deception +7, perception +7",
      "**Resistances**: cold, fire, lightning",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: Truesight 120 ft.",
      "**Languages**: Abyssal; telepathy 120 ft.",
      "**CR**: 9"
@@ -446,7 +446,7 @@
      "**Initiative**: 2",
      "**Skills**: insight +9, perception +9, persuasion +9, stealth +9",
      "**Resistances**: poison",
-     "**Immunities**: radiant",
+     "**Immunities**: radiant; charmed, blinded",
      "**Senses**: Blindsight 60 ft, Darkvision 120 ft",
      "**Languages**: Common, Draconic, Sylvan",
      "**CR**: 15"
@@ -1186,7 +1186,7 @@
      "**Speed**: *walk* 30 Ft., *swim* 30 Ft.",
      "**Skills**: stealth +6",
      "**Resistances**: fire",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: understands Primordial (Aquan) but can't speak",
      "**CR**: 6"
@@ -1519,7 +1519,7 @@
      "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Initiative**: 7",
      "**Skills**: deception +9, intimidation +9, medicine +12, perception +8, stealth +7",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common, Deep Speech, Sylvan",
      "**CR**: 10"
@@ -1600,7 +1600,7 @@
      "**HP**: 38 (11d4 + 11)",
      "**Speed**: *walk* 20 Ft.",
      "**Skills**: perception +1",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, frightened, poisoned",
      "**Languages**: understands Common but can't speak",
      "**CR**: 1"
     ]
@@ -1686,7 +1686,7 @@
      "**Speed**: *walk* 20 Ft., *fly* 60 Ft.",
      "**Skills**: deception +8, perception +2, stealth +4",
      "**Resistances**: acid, fire",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: darkvision 120 ft.",
      "**Languages**: Abyssal, Common; telepathy 90 ft.",
      "**CR**: 4"
@@ -2024,7 +2024,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Initiative**: 1",
      "**Skills**: deception +9, perception +7, stealth +9",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, poisoned",
      "**Senses**: blindsight 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 14"
@@ -2112,7 +2112,7 @@
      "**Initiative**: 1",
      "**Skills**: perception +4, stealth +5",
      "**Resistances**: bludgeoning, cold, fire, piercing, slashing",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Abyssal, Common; telepathy 120 ft.",
      "**CR**: 3"
@@ -2270,7 +2270,7 @@
      "**HP**: 75 (10d8 + 30)",
      "**Speed**: *walk* 40 Ft., *burrow* 40 Ft.",
      "**Skills**: perception +3, stealth +5",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: darkvision 120 ft., tremorsense 120 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 4"
@@ -2430,7 +2430,7 @@
      "**HP**: 22 (4d4 + 12)",
      "**Speed**: *walk* 10 Ft., *fly* 20 Ft. (hover), *canHover* (hover)",
      "**Skills**: medicine +3, perception +3",
-     "**Immunities**: fire, poison",
+     "**Immunities**: fire, poison; poisoned",
      "**Senses**: blindsight 30 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1"
@@ -2893,7 +2893,7 @@
      "**AC**: 8",
      "**HP**: 15 (2d8 + 6)",
      "**Speed**: *walk* 20 Ft.",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands Common plus one other language but can't speak",
      "**CR**: 1/4"
@@ -2979,7 +2979,7 @@
      "**HP**: 75 (10d8 + 30)",
      "**Speed**: *walk* 30 Ft., *walk* 40 Ft. With Coffin Boat",
      "**Resistances**: necrotic",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, frightened, poisoned, prone (with Coffin Boat)",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 6"
@@ -3065,7 +3065,7 @@
      "**HP**: 207 (18d12 + 90)",
      "**Speed**: *walk* 40 Ft.",
      "**Skills**: perception +2",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; exhaustion, poisoned, stunned, unconscious",
      "**Senses**: blindsight 60 ft.",
      "**Languages**: understands Common and Giant but can't speak",
      "**CR**: 11"
@@ -3297,7 +3297,7 @@
      "**HP**: 104 (11d10 + 44)",
      "**Speed**: *walk* 50 Ft.",
      "**Skills**: athletics +8, intimidation +6, perception +5",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; exhaustion, paralyzed, petrified",
      "**Senses**: blindsight 60 ft.",
      "**Languages**: Common",
      "**CR**: 6"
@@ -4138,7 +4138,7 @@
      "**AC**: 13 Plus Your Wisdom Modifier",
      "**HP**: 5 plus five times your Ranger level (the grim has a number of Hit Dice [d8s] equal to your Ranger level)",
      "**Speed**: *walk* 40 Ft.",
-     "**Immunities**: necrotic",
+     "**Immunities**: necrotic; frightened, grappled, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: understands the languages you know"
     ]
@@ -4219,7 +4219,7 @@
      "**Speed**: *walk* 20 Ft., *fly* 40 Ft.",
      "**Skills**: athletics +2, stealth +7",
      "**Resistances**: cold, fire",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, frightened, poisoned",
      "**Senses**: blindsight 60 ft.",
      "**Languages**: Common",
      "**CR**: 1"
@@ -4695,7 +4695,7 @@
      "**Speed**: *walk* 10 Ft.",
      "**Initiative**: 1",
      "**Skills**: athletics +11, deception +8",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, grappled, petrified, poisoned, prone, restrained",
      "**Senses**: blindsight 60 ft.",
      "**Languages**: understands Common plus one other language but can't speak",
      "**CR**: 13"
@@ -5161,7 +5161,7 @@
      "**HP**: 45 (10d8)",
      "**Speed**: *walk* 5 Ft., *fly* 40 Ft. (hover), *canHover* (hover)",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 4"
@@ -5490,7 +5490,7 @@
      "**Speed**: *walk* 5 Ft., *fly* 60 Ft. (hover), *canHover* (hover)",
      "**Skills**: stealth +6",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 7"
@@ -5576,7 +5576,7 @@
      "**HP**: 97 (13d10 + 26)",
      "**Speed**: *walk* 50 Ft.",
      "**Skills**: arcana +6, medicine +8, stealth +6",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; exhaustion, poisoned",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common, Sylvan",
      "**CR**: 6"
@@ -5820,7 +5820,7 @@
      "**Speed**: *walk* 20 Ft., *swim* 50 Ft.",
      "**Skills**: stealth +8",
      "**Resistances**: necrotic, psychic",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, poisoned",
      "**Senses**: darkvision 60 ft.",
      "**CR**: 9"
     ]
@@ -6391,7 +6391,7 @@
      "**HP**: 22 (5d4 + 10)",
      "**Speed**: *walk* 5 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, necrotic, piercing, slashing, thunder",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
      "**Senses**: darkvision 60 ft., Detect Life (see below)",
      "**Languages**: Common plus one other language",
      "**CR**: 1"
@@ -6704,7 +6704,7 @@
      "**HP**: 17 (5d4 + 5)",
      "**Speed**: *walk* 10 Ft., *fly* 40 Ft. (hover), *canHover* (hover)",
      "**Skills**: arcana +5, perception +2, stealth +4",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; charmed, frightened",
      "**Senses**: blindsight 30 ft.",
      "**Languages**: Deep Speech; telepathy 30 ft.",
      "**CR**: 1"
@@ -6876,7 +6876,7 @@
      "**HP**: 75 (10d10 + 20)",
      "**Speed**: *walk* 40 Ft., *climb* 40 Ft.",
      "**Skills**: survival +5",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, poisoned; charmed (except from its creator)",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 4"
@@ -7340,7 +7340,7 @@
      "**Speed**: *walk* 60 Ft.",
      "**Skills**: athletics +6, perception +5",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 9"
@@ -7586,7 +7586,7 @@
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: deception +6, stealth +4",
      "**Resistances**: necrotic",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, poisoned",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: understands Common plus one other language but only speaks using Mimicry",
      "**CR**: 3"
@@ -7740,7 +7740,7 @@
      "**HP**: 30 (12d4)",
      "**Speed**: *walk* 10 Ft., *fly* 50 Ft.",
      "**Skills**: perception +3",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, poisoned",
      "**Senses**: darkvision 60 ft.",
      "**CR**: 1"
     ]
@@ -7826,7 +7826,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Skills**: acrobatics +6, perception +4, performance +11",
      "**Resistances**: cold, fire",
-     "**Immunities**: poison, thunder",
+     "**Immunities**: poison, thunder; deafened, poisoned",
      "**Senses**: blindsight 10 ft. (Drone only), darkvision 60 ft.",
      "**Languages**: Common; telepathy 120 ft.",
      "**CR**: 6"
@@ -7913,7 +7913,7 @@
      "**Speed**: *walk* 40 Ft., *walk* 60 Ft. (Hero Only)",
      "**Skills**: arcana +6, history +6, perception +6, performance +13",
      "**Resistances**: cold, fire",
-     "**Immunities**: poison, psychic",
+     "**Immunities**: poison, psychic; charmed, poisoned",
      "**Senses**: darkvision 60 ft., truesight 120 ft. (Witch only)",
      "**Languages**: Common; telepathy 120 ft.",
      "**CR**: 9"
@@ -7998,7 +7998,7 @@
      "**AC**: 13",
      "**HP**: 38 (7d8 + 7)",
      "**Speed**: *walk* 40 Ft.",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; poisoned",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common, Sylvan",
      "**CR**: 1"
@@ -8252,7 +8252,7 @@
      "**Initiative**: 3",
      "**Skills**: perception +3, stealth +4",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, prone, restrained",
      "**Senses**: blindsight 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 4"
@@ -8790,7 +8790,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Skills**: perception +3",
      "**Resistances**: bludgeoning, piercing, slashing",
-     "**Immunities**: fire, poison",
+     "**Immunities**: fire, poison; exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Primordial (Ignan)",
      "**CR**: 4"
@@ -8952,7 +8952,7 @@
      "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Initiative**: 7",
      "**Skills**: deception +9, intimidation +9, medicine +12, perception +8, stealth +7",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common, Deep Speech, Sylvan",
      "**CR**: 10"
@@ -9040,7 +9040,7 @@
      "**Initiative**: 2",
      "**Skills**: intimidation +14, perception +11",
      "**Resistances**: cold, fire, lightning",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, poisoned, stunned",
      "**Senses**: truesight 120 ft.",
      "**Languages**: Common",
      "**CR**: 22"
@@ -9127,7 +9127,7 @@
      "**Speed**: *walk* 60 Ft.",
      "**Initiative**: 2",
      "**Skills**: arcana +6, athletics +11, perception +9",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, paralyzed, poisoned",
      "**Senses**: darkvision 120 ft.",
      "**Languages**: Common, Elvish, Sylvan",
      "**CR**: 10"
@@ -9215,7 +9215,7 @@
      "**Initiative**: 2",
      "**Skills**: arcana +12, perception +11, survival +11",
      "**Resistances**: cold, lightning",
-     "**Immunities**: fire, poison",
+     "**Immunities**: fire, poison; charmed, frightened, paralyzed, poisoned",
      "**Senses**: truesight 120 ft.",
      "**Languages**: all; telepathy 120 ft.",
      "**CR**: 25"
@@ -9303,7 +9303,7 @@
      "**Initiative**: 2",
      "**Skills**: nature +4, perception +7, survival +7",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common, Orc",
      "**CR**: 11"
@@ -9390,7 +9390,7 @@
      "**Speed**: *walk* 40 Ft., *climb* 40 Ft., *fly* 80 Ft.",
      "**Initiative**: 2",
      "**Skills**: athletics +9, insight +7, intimidation +7, perception +7",
-     "**Immunities**: necrotic",
+     "**Immunities**: necrotic; charmed, exhaustion, frightened",
      "**Senses**: darkvision 120 ft.",
      "**Languages**: Common, Elvish",
      "**CR**: 8"
@@ -9466,7 +9466,7 @@
      "**Speed**: *walk* 5 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
      "**Skills**: perception +4, stealth +3",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1"
@@ -9554,7 +9554,7 @@
      "**Initiative**: 2",
      "**Skills**: intimidation +14, perception +9, stealth +9",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: necrotic, poison, psychic",
+     "**Immunities**: necrotic, poison, psychic; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned",
      "**Senses**: truesight 120 ft.",
      "**Languages**: understands all but can't speak",
      "**CR**: 24"
@@ -9642,7 +9642,7 @@
      "**Initiative**: 2",
      "**Skills**: athletics +12, intimidation +10, perception +8",
      "**Resistances**: necrotic",
-     "**Immunities**: fire, poison",
+     "**Immunities**: fire, poison; charmed, frightened, exhaustion, poisoned",
      "**Senses**: darkvision 120 ft.",
      "**Languages**: Common; telepathy 120 ft.",
      "**CR**: 18"
@@ -9725,7 +9725,7 @@
      "**Initiative**: 2",
      "**Skills**: athletics +6",
      "**Resistances**: fire, necrotic",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, frightened, poisoned",
      "**Senses**: blindsight 60 ft.",
      "**Languages**: understands all but can't speak",
      "**CR**: 4"
@@ -9888,7 +9888,7 @@
      "**Speed**: *walk* 5 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
      "**Skills**: perception +4, stealth +3",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1"
@@ -9976,7 +9976,7 @@
      "**Initiative**: 2",
      "**Skills**: deception +10, perception +8, stealth +7",
      "**Resistances**: cold, fire, lightning",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, frightened, poisoned (except for its Unraveling Song trait)",
      "**Senses**: blindsight 30 ft., darkvision 120 ft.",
      "**Languages**: all; telepathy 120 ft.",
      "**CR**: 6"
@@ -10059,7 +10059,7 @@
      "**Initiative**: 2",
      "**Skills**: athletics +12, intimidation +12, perception +12",
      "**Resistances**: cold, fire",
-     "**Immunities**: poison, psychic",
+     "**Immunities**: poison, psychic; charmed, frightened, poisoned",
      "**Senses**: truesight 120 ft.",
      "**Languages**: all; telepathy 120 ft.",
      "**CR**: 17"
@@ -10135,7 +10135,7 @@
      "**Speed**: *walk* 5 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
      "**Skills**: perception +4, stealth +3",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1"
@@ -10309,7 +10309,7 @@
      "**Speed**: *walk* 50 Ft.",
      "**Initiative**: 2",
      "**Skills**: deception +11, intimidation +11, perception +7, performance +11",
-     "**Immunities**: poison",
+     "**Immunities**: poison; frightened, poisoned",
      "**Senses**: truesight 120 ft.",
      "**Languages**: all; telepathy 120 ft.",
      "**CR**: 13"
@@ -10385,7 +10385,7 @@
      "**Speed**: *walk* 5 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
      "**Skills**: perception +4, stealth +3",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1"
@@ -10461,7 +10461,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Skills**: stealth +6",
      "**Resistances**: acid, cold, fire, lightning, thunder",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 1/2"
     ]
@@ -10536,7 +10536,7 @@
      "**Speed**: *walk* 5 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
      "**Skills**: perception +4, stealth +3",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1"
@@ -10612,7 +10612,7 @@
      "**Speed**: *walk* 5 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
      "**Skills**: perception +4, stealth +3",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1"
@@ -10699,7 +10699,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Initiative**: 2",
      "**Skills**: acrobatics +12, perception +15, stealth +18",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; charmed, exhaustion, frightened",
      "**Senses**: truesight 120 ft.",
      "**Languages**: Common, Sylvan; telepathy 120 ft.",
      "**CR**: 20"
@@ -10854,7 +10854,7 @@
      "**Initiative**: 2",
      "**Skills**: arcana +8, intimidation +10, perception +6",
      "**Resistances**: psychic",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, frightened, poisoned",
      "**Senses**: darkvision 120 ft.",
      "**Languages**: Common, Deep Speech, Infernal, Primordial (Auran), Sylvan",
      "**CR**: 14"
@@ -11108,7 +11108,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Initiative**: 2",
      "**Skills**: perception +5",
-     "**Immunities**: fire, poison",
+     "**Immunities**: fire, poison; charmed, exhaustion, frightened, incapacitated, paralyzed, petrified, poisoned, stunned, unconscious",
      "**Senses**: truesight 120 ft.",
      "**Languages**: understands all but can't speak",
      "**CR**: 15"
@@ -11195,7 +11195,7 @@
      "**Speed**: *walk* 50 Ft.",
      "**Initiative**: 2",
      "**Skills**: athletics +17, perception +10, survival +10",
-     "**Immunities**: cold",
+     "**Immunities**: cold; charmed, frightened, stunned",
      "**Senses**: blindsight 30 ft., darkvision 120 ft.",
      "**Languages**: Common, Giant, Primordial (Terran)",
      "**CR**: 21"
@@ -11821,7 +11821,7 @@
      "**Speed**: *walk* 5 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
      "**Skills**: perception +4, stealth +3",
      "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**Languages**: Common plus one other language",
      "**CR**: 1"
@@ -12227,7 +12227,7 @@
      "**Speed**: *walk* 5 Ft., *fly* 60 Ft. (hover), *canHover* (hover)",
      "**Skills**: perception +7, stealth +7",
      "**Resistances**: acid, bludgeoning, lightning, piercing, slashing, thunder",
-     "**Immunities**: fire, necrotic, poison",
+     "**Immunities**: fire, necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: darkvision 60 ft.",
      "**CR**: 5"
     ]
@@ -12474,7 +12474,7 @@
      "**HP**: 21 (6d4 + 6)",
      "**Speed**: *walk* 20 Ft.",
      "**Skills**: nature +4, stealth +5",
-     "**Immunities**: poison",
+     "**Immunities**: poison; deafened, exhaustion, paralyzed, petrified, poisoned",
      "**Senses**: blindsight 60 ft.",
      "**Languages**: understands Sylvan but can't speak",
      "**CR**: 1"
@@ -12718,7 +12718,7 @@
      "**HP**: 135 (18d10 + 36)",
      "**Speed**: *walk* 20 Ft., *fly* 60 Ft.",
      "**Skills**: perception +5, stealth +9",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 8"
@@ -12794,7 +12794,7 @@
      "**Speed**: *walk* 60 Ft., *swim* 60 Ft.",
      "**Initiative**: 16",
      "**Skills**: arcana +13, insight +11, nature +13, perception +11",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Blindsight 120 ft., Darkvision 240 ft.",
      "**Languages**: all",
      "**CR**: 22"
@@ -13017,7 +13017,7 @@
      "**Speed**: *walk* 50 Ft.",
      "**Initiative**: 1",
      "**Skills**: perception +3",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, frightened, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: all, but can't speak",
      "**CR**: 8"
@@ -13092,7 +13092,7 @@
      "**HP**: 161 (14d10 + 84)",
      "**Speed**: *walk* 40 Ft., *fly* 80 Ft.",
      "**Skills**: arcana +7, medicine +6, perception +6",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Elder Thing plus 1d6 others",
      "**CR**: 9"
@@ -13168,7 +13168,7 @@
      "**Speed**: *walk* 40 Ft., *fly* 60 Ft.",
      "**Initiative**: 6",
      "**Skills**: arcana +12, intimidation +4, perception +7",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common plus 1d4 others",
      "**CR**: 10"
@@ -13243,7 +13243,7 @@
      "**HP**: 138 (12d10 + 72)",
      "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
      "**Skills**: arcana +4, perception +5",
-     "**Immunities**: acid, cold, lightning, slashing",
+     "**Immunities**: acid, cold, lightning, slashing; charmed, deafened, exhaustion, frightened, grappled, prone, restrained",
      "**Senses**: Blindsight 60 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 9"
@@ -13319,7 +13319,7 @@
      "**Speed**: *walk* 50 Ft.",
      "**Initiative**: 2",
      "**Skills**: athletics +10, perception +6, survival +6",
-     "**Immunities**: cold, poison",
+     "**Immunities**: cold, poison; charmed, frightened, poisoned",
      "**Senses**: Tremorsense 120 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 8"
@@ -13395,7 +13395,7 @@
      "**Speed**: *walk* 60 Ft., *fly* 120 Ft., *swim* 60 Ft.",
      "**Initiative**: 1",
      "**Skills**: arcana +15, history +15, insight +17, perception +17",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Blindsight 60 ft., Darkvision 120 ft.",
      "**Languages**: all",
      "**CR**: 30"
@@ -13471,7 +13471,7 @@
      "**Speed**: *walk* 60 Ft.",
      "**Initiative**: 2",
      "**Skills**: arcana +9, deception +4, history +9, nature +9, perception +6, religion +9",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common plus 1d4 + 2 other languages",
      "**CR**: 12"
@@ -13547,7 +13547,7 @@
      "**Speed**: *walk* 30 Ft.",
      "**Initiative**: 1",
      "**Skills**: arcana +10, insight +7, perception +7",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 60 ft., Tremorsense 30 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 10"
@@ -13623,7 +13623,7 @@
      "**Speed**: *walk* 60 Ft.",
      "**Initiative**: 1",
      "**Skills**: perception +10",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 60 ft., Tremorsense 30 ft.",
      "**Languages**: Common plus 1d3 other languages",
      "**CR**: 12"
@@ -13699,7 +13699,7 @@
      "**Speed**: *walk* 80 Ft., *fly* 60 Ft., *swim* 60 Ft.",
      "**Initiative**: 1",
      "**Skills**: arcana +9, history +9, intimidation +6, perception +7",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 14"
@@ -13774,7 +13774,7 @@
      "**HP**: 184 (16d12 + 80)",
      "**Speed**: *walk* 40 Ft., *fly* 120 Ft.",
      "**Skills**: arcana +6, investigation +6, perception +7, survival +11",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, frightened, poisoned",
      "**Senses**: Blindsight 90 ft., Darkvision 120 ft.",
      "**Languages**: Common plus 1d6 other languages",
      "**CR**: 11"
@@ -13849,7 +13849,7 @@
      "**HP**: 59 (9d8 + 18)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: arcana +6, insight +3, perception +3",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 3"
@@ -13925,7 +13925,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Initiative**: 1",
      "**Skills**: perception +5",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 60 ft., Tremorsense 30 ft.",
      "**Languages**: Common plus 1d3 other languages",
      "**CR**: 4"
@@ -14000,7 +14000,7 @@
      "**HP**: 153 (18d10 + 54)",
      "**Speed**: *walk* 60 Ft., *fly* 40 Ft., *swim* 60 Ft.",
      "**Skills**: arcana +5, history +5, intimidation +3, perception +4",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 6"
@@ -14075,7 +14075,7 @@
      "**HP**: 104 (16d8 + 32)",
      "**Speed**: *walk* 30 Ft., *fly* 50 Ft.",
      "**Skills**: arcana +7, medicine +7, perception +5",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 7"
@@ -14151,7 +14151,7 @@
      "**Speed**: *walk* 60 Ft.",
      "**Initiative**: 1",
      "**Skills**: arcana +12, deception +16, insight +10, investigation +12, perception +10",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Blindsight 120 ft., Darkvision 240 ft.",
      "**Languages**: all",
      "**CR**: 19"
@@ -14373,7 +14373,7 @@
      "**HP**: 276 (24d12 + 120)",
      "**Speed**: *walk* 60 Ft., *swim* 40 Ft.",
      "**Skills**: perception +6",
-     "**Immunities**: acid, necrotic, poison",
+     "**Immunities**: acid, necrotic, poison; blinded, charmed, deafened, frightened, poisoned, prone",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 15"
@@ -14448,7 +14448,7 @@
      "**HP**: 276 (24d12 + 120)",
      "**Speed**: *walk* 60 Ft., *swim* 40 Ft.",
      "**Skills**: arcana +9, deception +3, history +9, insight +6, perception +6",
-     "**Immunities**: acid, necrotic, poison",
+     "**Immunities**: acid, necrotic, poison; blinded, charmed, deafened, frightened, poisoned, prone",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common plus 1d4 other languages",
      "**CR**: 15"
@@ -14524,7 +14524,7 @@
      "**Speed**: *walk* 50 Ft.",
      "**Initiative**: 16",
      "**Skills**: insight +13, nature +11, perception +13, survival +13",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, frightened, poisoned",
      "**Senses**: Blindsight 60 ft., Darkvision 120 ft.",
      "**Languages**: all",
      "**CR**: 24"
@@ -14599,7 +14599,7 @@
      "**HP**: 70 + 10 for each spell level above 7",
      "**Speed**: *walk* 30 Ft.",
      "**Resistances**: psychic",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, frightened, paralyzed, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages known by the target"
     ]
@@ -15842,7 +15842,7 @@
      "**Speed**: *walk* 30 Ft., *fly* 30 Ft. (Hover), *canHover* (hover)",
      "**Initiative**: 1",
      "**Skills**: arcana +8, deception +7, insight +8, medicine +8, perception +8, persuasion +7",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; charmed",
      "**Languages**: telepathy 30 ft. Any six languages",
      "**CR**: 11"
     ]
@@ -16119,7 +16119,7 @@
      "**Speed**: *walk* 5 Ft.",
      "**Initiative**: 2",
      "**Skills**: arcana +13, deception +12, insight +11, perception +11",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; charmed, exhaustion, frightened, paralyzed, petrified, poisoned, prone, stunned",
      "**Senses**: Truesight 60 ft.",
      "**Languages**: all; telepathy 1 mile",
      "**CR**: 23"
@@ -16310,7 +16310,7 @@
      "**AC**: 14",
      "**HP**: 114 (12d10 + 48)",
      "**Speed**: *walk* 30 Ft., *swim* 90 Ft.",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 5"
     ]
@@ -16736,7 +16736,7 @@
      "**Speed**: *walk* 0 Ft., *fly* 60 Ft.",
      "**Initiative**: 1",
      "**Resistances**: acid, cold, fire, lightning, thunder; bludgeoning, piercing, slashing from Nonmagical Attacks that aren't Silvered",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: The languages it knew in life",
      "**CR**: 6"
@@ -18620,7 +18620,7 @@
      "**Speed**: *walk* 30 Ft., *climb* 30 Ft., *fly* 30 Ft.",
      "**Initiative**: 1",
      "**Resistances**: acid, fire, force, lightning, necrotic, poison, psychic, radiant",
-     "**Immunities**: bludgeoning, piercing, slashing",
+     "**Immunities**: bludgeoning, piercing, slashing; blinded, charmed, deafened, exhaustion, frightened, prone",
      "**Senses**: Blindsight 60 ft.",
      "**CR**: 12"
     ]
@@ -18972,7 +18972,7 @@
      "**AC**: 16",
      "**HP**: 33 (6d10)",
      "**Speed**: *walk* 30 Ft.",
-     "**Immunities**: poison, psychic",
+     "**Immunities**: poison, psychic; charmed, exhaustion, frightened, grappled, paralyzed, poisoned, prone, restrained, stunned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: all",
      "**CR**: 3"
@@ -20089,7 +20089,7 @@
      "**HP**: 120 (16d8 + 48)",
      "**Speed**: *walk* 0 Ft.",
      "**Resistances**: cold, necrotic",
-     "**Immunities**: poison",
+     "**Immunities**: poison; grappled, poisoned, prone, restrained",
      "**Senses**: Tremorsense 60 ft.",
      "**CR**: 5"
     ]
@@ -20162,7 +20162,7 @@
      "**AC**: 15",
      "**HP**: 90 (12d8 + 36)",
      "**Speed**: *walk* 30 Ft.",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, poisoned",
      "**Senses**: Blindsight 30 ft.",
      "**Languages**: Common",
      "**CR**: 5"
@@ -21047,7 +21047,7 @@
      "**Speed**: *walk* 0 Ft., *fly* 40 Ft. (Hover), *canHover* (hover)",
      "**Initiative**: 1",
      "**Skills**: deception +8, insight +7, perception +7",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; blinded, charmed, deafened, exhaustion, frightened, prone",
      "**Senses**: Blindsight 60 ft.",
      "**Languages**: Common; telepathy 30 ft.",
      "**CR**: 10"
@@ -21948,7 +21948,7 @@
      "**HP**: 210 (12d20 + 84)",
      "**Speed**: *walk* 30 Ft., *fly* 120 Ft.",
      "**Initiative**: 1",
-     "**Immunities**: cold, fire, lightning, poison, thunder",
+     "**Immunities**: cold, fire, lightning, poison, thunder; exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common",
      "**CR**: 13"
@@ -22438,7 +22438,7 @@
      "**AC**: 17",
      "**HP**: 105 (10d10 + 50)",
      "**Speed**: *walk* 40 Ft.",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, poisoned, stunned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Giant",
      "**CR**: 8"
@@ -22559,7 +22559,7 @@
      "**HP**: 91 (14d10 + 14)",
      "**Speed**: *walk* 30 Ft.",
      "**Initiative**: 1",
-     "**Immunities**: fire, poison",
+     "**Immunities**: fire, poison; exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Deep Speech",
      "**CR**: 5"
@@ -22838,7 +22838,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Initiative**: 1",
      "**Skills**: perception +20",
-     "**Immunities**: poison, psychic",
+     "**Immunities**: poison, psychic; charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
      "**Senses**: Truesight 120 ft.",
      "**Languages**: understands Common but doesn't speak",
      "**CR**: 25"
@@ -23226,7 +23226,7 @@
      "**Initiative**: 1",
      "**Skills**: arcana +11, deception +5, perception +6, persuasion +5, stealth +7",
      "**Resistances**: cold, necrotic",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; charmed, frightened",
      "**Senses**: Blindsight 120 ft.",
      "**Languages**: telepathy 120 ft. understands all languages but can't speak",
      "**CR**: 8"
@@ -23369,7 +23369,7 @@
      "**Initiative**: 1",
      "**Skills**: arcana +10, deception +5, perception +6, persuasion +5, stealth +6",
      "**Resistances**: cold, necrotic",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; charmed, frightened",
      "**Senses**: Blindsight 120 ft.",
      "**Languages**: telepathy 120 ft. understands all languages but can't speak",
      "**CR**: 5"
@@ -23446,7 +23446,7 @@
      "**Initiative**: 1",
      "**Skills**: arcana +16, deception +9, perception +9, persuasion +9, stealth +10",
      "**Resistances**: cold, necrotic",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; charmed, frightened",
      "**Senses**: Blindsight 300 ft.",
      "**Languages**: telepathy 120 ft. Understand all languages but can't speak",
      "**CR**: 15"
@@ -23624,7 +23624,7 @@
      "**Initiative**: 1",
      "**Skills**: arcana +8, insight +6, intimidation +9",
      "**Resistances**: cold, fire, lightning",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Abyssal, Common, Infernal",
      "**CR**: 12"
@@ -23882,7 +23882,7 @@
      "**Speed**: *walk* 0 Ft., *fly* 40 Ft. (Hover), *canHover* (hover)",
      "**Initiative**: 1",
      "**Resistances**: acid, cold, fire, lightning, thunder",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; grappled, paralyzed, petrified, prone, restrained",
      "**Senses**: Truesight 60 ft.",
      "**CR**: 11"
     ]
@@ -24932,7 +24932,7 @@
      "**HP**: 75 (10d8 + 30)",
      "**Speed**: *walk* 30 Ft.",
      "**Initiative**: 1",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Common",
      "**CR**: 4"
@@ -25007,7 +25007,7 @@
      "**HP**: 52 (7d8 + 21)",
      "**Speed**: *walk* 30 Ft.",
      "**Initiative**: 2",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Common",
      "**CR**: 3"
@@ -25268,7 +25268,7 @@
      "**HP**: 81 (18d4 + 36)",
      "**Speed**: *walk* 5 Ft., *climb* 5 Ft.",
      "**Skills**: history +7, insight +5, investigation +4, perception +8",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: Blindsight 120 ft., Truesight 120 ft.",
      "**Languages**: all; telepathy 120 ft.",
      "**CR**: 6"
@@ -26192,7 +26192,7 @@
      "**AC**: 10",
      "**HP**: 7 (1d8 + 3)",
      "**Speed**: *walk* 30 Ft.",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages it knew in life but can't speak",
      "**CR**: 1/4"
@@ -26502,7 +26502,7 @@
      "**HP**: 65 (10d8 + 20)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: perception +3, stealth +4",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: The languages it knew in life",
      "**CR**: 3"
@@ -27592,7 +27592,7 @@
      "**Initiative**: 1",
      "**Skills**: deception +24, insight +13, perception +13, persuasion +24",
      "**Resistances**: cold, fire, lightning",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, poisoned",
      "**Senses**: Truesight 120 ft.",
      "**Languages**: all; telepathy 1 mile",
      "**CR**: 27"
@@ -27667,7 +27667,7 @@
      "**HP**: 5 (2d4)",
      "**Speed**: *walk* 20 Ft., *climb* 20 Ft.",
      "**Skills**: sleight of hand +5, stealth +5",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: Blindsight 30 ft.",
      "**Languages**: understands the languages of its creator but can't speak",
      "**CR**: 1/4"
@@ -28585,7 +28585,7 @@
      "**Speed**: *walk* 30 Ft.",
      "**Initiative**: 1",
      "**Skills**: medicine +7, perception +7",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: understands the languages it knew in life but can't speak",
      "**CR**: 11"
@@ -28707,7 +28707,7 @@
      "**Speed**: *walk* 40 Ft., *climb* 20 Ft.",
      "**Initiative**: 1",
      "**Skills**: acrobatics +5, stealth +7",
-     "**Immunities**: poison",
+     "**Immunities**: poison; paralyzed, petrified, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Common",
      "**CR**: 2"
@@ -29144,7 +29144,7 @@
      "**Speed**: *walk* 50 Ft.",
      "**Initiative**: 1",
      "**Resistances**: acid",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, charmed, deafened, frightened, poisoned, stunned, unconscious, burning",
      "**Senses**: Blindsight 60 ft., Tremorsense 300 ft.",
      "**Languages**: understands the languages of its creator but can't speak",
      "**CR**: 18"
@@ -29623,7 +29623,7 @@
      "**HP**: 27 (6d8)",
      "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Resistances**: acid, cold, fire, lightning, thunder",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: Blindsight 60 ft.",
      "**Languages**: Common",
      "**CR**: 1"
@@ -30109,7 +30109,7 @@
      "**HP**: 60 (8d10 + 16)",
      "**Speed**: *walk* 20 Ft.",
      "**Resistances**: acid, fire, lightning",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, frightened, grappled",
      "**Senses**: Blindsight 20 ft.",
      "**CR**: 3"
     ]
@@ -30350,7 +30350,7 @@
      "**HP**: 90 (12d10 + 24)",
      "**Speed**: *walk* 0 Ft., *fly* 90 Ft. (Hover), *canHover* (hover)",
      "**Initiative**: 2",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Deep Speech",
      "**CR**: 5"
@@ -30615,7 +30615,7 @@
      "**HP**: 55 (10d8 + 10)",
      "**Speed**: *walk* 40 Ft.",
      "**Initiative**: 1",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**CR**: 3"
     ]
@@ -31046,7 +31046,7 @@
      "**HP**: 168 (16d10 + 80)",
      "**Speed**: *walk* 0 Ft., *fly* 30 Ft. (Hover), *canHover* (hover)",
      "**Skills**: perception +8",
-     "**Immunities**: cold, necrotic",
+     "**Immunities**: cold, necrotic; charmed, frightened, prone",
      "**Senses**: Darkvision 120 ft. (unimpeded by magical Darkness)",
      "**Languages**: telepathy 120 ft. understands all languages but can't speak",
      "**CR**: 10"
@@ -31333,7 +31333,7 @@
      "**HP**: 105 (10d10 + 50)",
      "**Speed**: *walk* 40 Ft.",
      "**Resistances**: cold",
-     "**Immunities**: fire",
+     "**Immunities**: fire; burning",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Giant",
      "**CR**: 7"
@@ -32443,7 +32443,7 @@
      "**Initiative**: 1",
      "**Skills**: nature +3",
      "**Resistances**: bludgeoning, cold, lightning, piercing, thunder",
-     "**Immunities**: poison, psychic",
+     "**Immunities**: poison, psychic; poisoned",
      "**CR**: 9"
     ]
    }
@@ -32714,7 +32714,7 @@
      "**HP**: 76 (8d8 + 40) plus 76 (8d8 + 40) per player character",
      "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
      "**Skills**: arcana +10, deception +6, history +10, perception +8",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, frightened, paralyzed, petrified, poisoned, restrained",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: Common and any five languages",
      "**CR**: 15"
@@ -32851,7 +32851,7 @@
      "**Initiative**: 1",
      "**Skills**: arcana +8, medicine +10, nature +8, perception +6",
      "**Resistances**: acid",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: Blindsight 10 ft.",
      "**Languages**: Common and two other languages",
      "**CR**: 12"
@@ -33460,7 +33460,7 @@
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: deception +6, persuasion +6",
      "**Resistances**: necrotic, poison",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; charmed, frightened",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Common (only repeats phrases it has heard)",
      "**CR**: 6"
@@ -33900,7 +33900,7 @@
      "**Initiative**: 11",
      "**Skills**: arcana +14, insight +17, intimidation +12, perception +24",
      "**Resistances**: acid, cold, fire, lightning, thunder",
-     "**Immunities**: necrotic, poison",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, grappled, poisoned, stunned",
      "**Senses**: Truesight 120 ft.",
      "**Languages**: all; telepathy 1 mile",
      "**CR**: 23"
@@ -35018,7 +35018,7 @@
      "**HP**: 42 (4d10 + 20) plus 42 (4d10 + 20) per player character",
      "**Speed**: *walk* 15 Ft.",
      "**Initiative**: 1",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, deafened, poisoned, prone",
      "**Senses**: Blindsight 60 ft., Tremorsense 300 ft.",
      "**Languages**: Common",
      "**CR**: 8"
@@ -35094,7 +35094,7 @@
      "**Speed**: *walk* 30 Ft.",
      "**Initiative**: 2",
      "**Skills**: stealth +5",
-     "**Immunities**: poison",
+     "**Immunities**: poison; poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Common",
      "**CR**: 1"
@@ -35374,7 +35374,7 @@
      "**Speed**: *walk* 50 Ft., *climb* 50 Ft.",
      "**Initiative**: 2",
      "**Skills**: athletics +9, perception +7",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, exhaustion, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: understands the languages it knew in life but can't speak",
      "**CR**: 10"
@@ -35516,7 +35516,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Initiative**: 1",
      "**Skills**: athletics +12, perception +8",
-     "**Immunities**: poison",
+     "**Immunities**: poison; charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: understands the languages it knew in life but can't speak",
      "**CR**: 13"
@@ -35749,7 +35749,7 @@
      "**Speed**: *walk* 40 Ft.",
      "**Initiative**: 1",
      "**Skills**: athletics +11, perception +7",
-     "**Immunities**: poison, psychic",
+     "**Immunities**: poison, psychic; charmed, frightened, poisoned",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: understands the languages it knew in life but can't speak",
      "**CR**: 15"
@@ -36565,7 +36565,7 @@
      "**Initiative**: 1",
      "**Skills**: arcana +14, history +14, insight +11, nature +14, perception +11",
      "**Resistances**: acid, cold, fire, lightning, poison, thunder",
-     "**Immunities**: psychic",
+     "**Immunities**: psychic; charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
      "**Senses**: Blindsight 1 mile",
      "**Languages**: all; telepathy 1 mile",
      "**CR**: 17"
@@ -36707,7 +36707,7 @@
      "**Speed**: *walk* 20 Ft., *swim* 40 Ft.",
      "**Initiative**: 2",
      "**Resistances**: acid, cold, fire",
-     "**Immunities**: poison",
+     "**Immunities**: poison; blinded, deafened, exhaustion, poisoned",
      "**Senses**: Blindsight 60 ft.",
      "**Languages**: understands Common but doesn't speak",
      "**CR**: 7"
@@ -37218,7 +37218,7 @@
      "**AC**: 13",
      "**HP**: 27 (6d8)",
      "**Speed**: *walk* 30 Ft.",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, frightened, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands Common but can't speak",
      "**CR**: 1"
@@ -37293,7 +37293,7 @@
      "**HP**: 45 (10d8)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: arcana +4, perception +3",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, frightened, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands Common but can't speak",
      "**CR**: 3"
@@ -37367,7 +37367,7 @@
      "**AC**: 15",
      "**HP**: 27 (6d8)",
      "**Speed**: *walk* 30 Ft.",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, frightened, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands Common but can't speak",
      "**CR**: 1"
@@ -38319,7 +38319,7 @@
      "**Speed**: *walk* 30 Ft.",
      "**Initiative**: 1",
      "**Skills**: medicine +12, perception +8",
-     "**Immunities**: poison, psychic",
+     "**Immunities**: poison, psychic; charmed, exhaustion, frightened, poisoned",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: understands the languages of its creator but can't speak",
      "**CR**: 12"
@@ -38464,7 +38464,7 @@
      "**AC**: 15",
      "**HP**: 105 (10d10 + 50)",
      "**Speed**: *walk* 40 Ft.",
-     "**Immunities**: lightning, thunder",
+     "**Immunities**: lightning, thunder; shocked",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Giant",
      "**CR**: 7"
@@ -38959,7 +38959,7 @@
      "**AC**: 17",
      "**HP**: 95 (10d10 + 40)",
      "**Speed**: *walk* 20 Ft.",
-     "**Immunities**: acid, poison",
+     "**Immunities**: acid, poison; frightened, poisoned, burning",
      "**Senses**: Blindsight 30 ft.",
      "**Languages**: understands the languages of its creator but can't speak",
      "**CR**: 5"
@@ -39263,7 +39263,7 @@
      "**Speed**: *walk* 30 Ft.",
      "**Initiative**: 12",
      "**Skills**: history +19, insight +14, intimidation +9, perception +23",
-     "**Immunities**: cold, fire, lightning, necrotic, poison, psychic",
+     "**Immunities**: cold, fire, lightning, necrotic, poison, psychic; blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, stunned",
      "**Senses**: Truesight 250 ft.",
      "**Languages**: all",
      "**CR**: 30"
@@ -39546,7 +39546,7 @@
      "**Speed**: *walk* 60 Ft.",
      "**Initiative**: 1",
      "**Skills**: deception +17, insight +12, perception +12, persuasion +24",
-     "**Immunities**: poison, psychic",
+     "**Immunities**: poison, psychic; charmed, exhaustion, frightened, poisoned",
      "**Senses**: Truesight 120 ft.",
      "**Languages**: all; telepathy 1 mile",
      "**CR**: 21"
@@ -39772,7 +39772,7 @@
      "**Speed**: *walk* 60 Ft., *fly* 120 Ft. (Hover), *canHover* (hover)",
      "**Initiative**: 1",
      "**Skills**: deception +20, insight +14, perception +14, persuasion +13",
-     "**Immunities**: necrotic, psychic",
+     "**Immunities**: necrotic, psychic; charmed, exhaustion, frightened",
      "**Senses**: Truesight 120 ft.",
      "**Languages**: all; telepathy 1 mile",
      "**CR**: 24"
@@ -40059,7 +40059,7 @@
      "**Speed**: *walk* 40 Ft., *fly* 80 Ft., *swim* 40 Ft.",
      "**Initiative**: 1",
      "**Skills**: insight +4, perception +7, stealth +3",
-     "**Immunities**: lightning",
+     "**Immunities**: lightning; charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
      "**Senses**: Blindsight 30 ft., Truesight 120 ft.",
      "**Languages**: Common, Draconic",
      "**CR**: 10"
@@ -40644,7 +40644,7 @@
      "**AC**: 16",
      "**HP**: 75 (10d6 + 40)",
      "**Speed**: *walk* 15 Ft.",
-     "**Immunities**: bludgeoning, slashing",
+     "**Immunities**: bludgeoning, slashing; blinded, charmed, deafened, exhaustion, frightened, prone",
      "**Senses**: Blindsight 30 ft.",
      "**CR**: 7"
     ]
@@ -41584,7 +41584,7 @@
      "**HP**: 126 (12d10 + 60)",
      "**Speed**: *walk* 30 Ft., *burrow* 30 Ft.",
      "**Resistances**: radiant, thunder",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, paralyzed, petrified, poisoned, unconscious",
      "**Senses**: Darkvision 60 ft., Tremorsense 60 ft.",
      "**Languages**: Deep Speech",
      "**CR**: 5"
@@ -41721,7 +41721,7 @@
      "**Speed**: *walk* 30 Ft., *fly* 60 Ft.",
      "**Initiative**: 1",
      "**Skills**: perception +6",
-     "**Immunities**: poison",
+     "**Immunities**: poison; exhaustion, petrified, poisoned",
      "**Senses**: Truesight 120 ft.",
      "**Languages**: Common",
      "**CR**: 2"
@@ -42125,7 +42125,7 @@
      "**HP**: 45 (10d8)",
      "**Speed**: *walk* 0 Ft., *fly* 40 Ft.",
      "**Resistances**: acid, bludgeoning, fire, lightning, piercing, slashing, thunder",
-     "**Immunities**: cold, necrotic, poison",
+     "**Immunities**: cold, necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: The languages it knew in life",
      "**CR**: 4"
@@ -42271,7 +42271,7 @@
      "**HP**: 105 (10d10 + 50)",
      "**Speed**: *walk* 40 Ft.",
      "**Initiative**: 1",
-     "**Immunities**: cold",
+     "**Immunities**: cold; frozen",
      "**Senses**: Darkvision 60 ft.",
      "**Languages**: Giant",
      "**CR**: 6"
