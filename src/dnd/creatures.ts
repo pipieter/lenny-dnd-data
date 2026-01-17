@@ -32,6 +32,7 @@ interface Creature {
     fluffInfo: Description[];
     stats: DescriptionTable;
     details: DescriptionList;
+    traits: Description[];
 }
 
 function parseCreatureSummonClass(creature: any): string | null {
@@ -279,6 +280,7 @@ function buildCreature(creature: any, fluff: any | null): Creature {
     const subtitle = getSubtitle(creature);
     const summonedBySpell = parseCreatureSummonSpell(creature.summonedBySpell);
     const tokenUrl = creature.hasToken ? getCreatureTokenUrl(name, source) : null;
+    const traits = creature.trait ? parseDescriptions('', creature.trait) : [];
 
     return {
         name,
@@ -292,6 +294,7 @@ function buildCreature(creature: any, fluff: any | null): Creature {
         fluffInfo,
         stats: getCreatureStats(creature),
         details: getCreatureDetails(creature), // TODO Possibly not store all values in details, would be easier to customize things in front-end.
+        traits,
     };
 }
 

@@ -512,6 +512,12 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             return [`*${type}:* ${entries} **Hit:** ${hitEntries}`];
         }
 
+        case 'itemSub': {
+            if (!description.name) return [cleanDNDText(description.entry)];
+            const itemSub = `*${description.name}*. ${description.entry}`;
+            return [cleanDNDText(itemSub)];
+        }
+
         default: {
             throw `Unsupported description type: '${type}'`;
         }
