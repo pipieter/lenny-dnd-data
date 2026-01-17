@@ -208,34 +208,45 @@ function parseResistances(creature: any): string {
 
 function parseImmunities(creature: any): string {
     // TODO Use of sublists could make rendering clearer.
-    // TODO add conditionImmune, currently only shows damage immunities.
     const iterateImmunities = (immunities: any): { results: string[]; extra: string[] } => {
         const results: string[] = [];
         const extra: string[] = [];
 
         for (const i of immunities) {
-            if (typeof i === 'string') results.push(i);
-            else if (i.special) results.push(i.special);
-            else if (i.immune) {
-                const iterated = iterateImmunities(i.immune);
+            if (typeof i === 'string') {
+                const parts = i.split('|'); // Some homebrew creatures have conditions which specify a source (e.g. burning|MonstersOfDrakkenheim)
+                results.push(cleanDNDText(parts[0]));
+            } else if (i.immune || i.conditionImmune) {
+                const nestedList = i.immune || i.conditionImmune;
+                const iterated = iterateImmunities(nestedList);
+
                 const prefix = i.preNote ?? '';
                 const suffix = i.note ?? '';
                 const innerResistances = iterated.results.join(', ');
+
                 let inner = `${prefix} ${innerResistances} ${suffix}`.trim();
                 if (iterated.extra.length > 0) inner = inner + '; ' + joinStringsWithAnd(iterated.extra);
                 extra.push(inner);
-            } else throw `Unsupported creature - immunities in ${creature.name}: ${JSON.stringify(i)}.`;
+            } else if (i.special) results.push(i.special);
+            else throw `Unsupported creature - immunities in ${creature.name}: ${JSON.stringify(i)}.`;
         }
 
         return { results, extra };
     };
 
-    const immunities = iterateImmunities(creature.immune);
-    const main = immunities.results.join(', ');
-    const special = immunities.extra.join(', ');
-    if (immunities.results.length == 0) return special;
-    if (immunities.extra.length != 0) return `${main}; ${special}`;
-    return main;
+    const finalParts: string[] = [];
+
+    const processCategory = (list?: any[]) => {
+        if (!list || !list.length) return;
+        const { results, extra } = iterateImmunities(list);
+        if (results.length) finalParts.push(results.join(', '));
+        if (extra.length) finalParts.push(extra.join('; '));
+    };
+
+    processCategory(creature.immune);
+    processCategory(creature.conditionImmune);
+
+    return finalParts.join('; ');
 }
 
 function parseCR(creature: any): string {
