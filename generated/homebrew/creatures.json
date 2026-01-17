@@ -73,7 +73,54 @@
      "**CR**: 24"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Anahita's weapon attacks are magical. When Anahita hits with any weapon, the weapon deals an extra **6d8** radiant damage (included in the attack)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Anahita knows if she hears a lie."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever Anahita fires an arrow, she can enhance it with one of the following shots. She can only use one shot per attack."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature hit by the arrow and all other creatures within 10 feet of the target must succeed on a DC 25 Constitution saving throw or be blinded for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the arrow hits the target, all other creatures within 10 feet of the target take 18 (**4d8**) radiant damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature hit by the arrow must succeed on a DC 25 Wisdom saving throw or the damage dealt by its weapon attacks is halved. The target can repeat this saving throw at the end of its turns, ending the effect on a success."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Anahita does not make an attack roll when she fires this arrow. Instead, the arrow shoots forward in a line, which is 5 feet wide and 60 feet long, before disappearing. The arrow passes harmlessly through objects, ignoring cover. Each creature in the line must make a DC 23 Dexterity saving throw, taking damage as if it were hit by the arrow on a failed save, or half as much damage on a successful one."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If Anahita fails a saving throw, she can choose to succeed instead."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Anahita has advantage on saving throws against spells and other magical effects."
+   }
+  ]
  },
  {
   "name": "Basilisk Mount",
@@ -145,7 +192,29 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "During a long rest, the basilisk can designate one creature that rode it within the last 10 days as its rider. The basilisk gains temporary hit points equal to 3 times the rider's level or challenge rating after completing the long rest. The basilisk uses its rider's proficiency bonus in place of its own proficiency bonus for AC, ability checks, attack rolls, saving throws, and the DC made to save against certain action effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Medium and smaller creatures can ride the basilisk. The basilisk's rider has advantage on saving throws against being dismounted from the basilisk."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The basilisk can afflict supernatural effects on creatures it locks eyes with. If a hostile creature starts its turn within 30 feet of the basilisk, and the two of them can see each other, the creature's movement speed is reduced by 5 feet."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature that isn't *surprised* can avert its eyes at the start of its turn to avoid this effect, as well as the basilisk's Hardening Gaze and Petrifying Glare actions. If it does so, the creature can't see the basilisk or the rider until the start of the creature's next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save."
+   }
+  ]
  },
  {
   "name": "Buckton",
@@ -218,7 +287,14 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, the hobgoblin can deal an extra 7 (**2d6**) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated."
+   }
+  ]
  },
  {
   "name": "Chu'Ratha",
@@ -290,7 +366,8 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Dallas",
@@ -363,7 +440,8 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Dindar",
@@ -437,7 +515,19 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The gnome has advantage on Dexterity (*Stealth*) checks made to hide in rocky terrain."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The gnome has advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+   }
+  ]
  },
  {
   "name": "Giant Toad Mount",
@@ -510,7 +600,24 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "During a long rest, the toad can designate one creature that rode it within the last 10 days as its rider. The toad gains temporary hit points equal to 4 times the rider's level or challenge rating after completing the long rest. The toad uses its rider's proficiency bonus in place of its own proficiency bonus for AC, ability checks, attack rolls, saving throws, and the DC made to save against certain action effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The toad can breathe air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The toad's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
+   }
+  ]
  },
  {
   "name": "Hippogriff Mount",
@@ -582,7 +689,24 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "During a long rest, the hippogriff can designate one creature that rode it within the last 10 days as its rider. The hippogriff gains temporary hit points equal to 4 times the rider's level or challenge rating after completing the long rest. The hippogriff uses its rider's proficiency bonus in place of its own proficiency bonus for AC, ability checks, attack rolls, saving throws, and the DC made to save against certain action effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the hippogriff starts its turn adjacent to any creature other than its rider, the hippogriff and all creatures adjacent to it gain a 10-foot bonus to movement speed until the start of the hippogriff's next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hippogriff is unaffected by nonmagical difficult terrain."
+   }
+  ]
  },
  {
   "name": "Large Awakened Tree",
@@ -661,7 +785,14 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While the tree remains motionless, it is indistinguishable from a normal tree."
+   }
+  ]
  },
  {
   "name": "Lowtletti",
@@ -735,7 +866,14 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+   }
+  ]
  },
  {
   "name": "Nightmare Mount",
@@ -809,7 +947,29 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "During a long rest, the nightmare mount can designate one creature that rode it within the last 10 days as its rider. The nightmare mount gains temporary hit points equal to 3 times the rider's level or challenge rating after completing the long rest. The nightmare mount uses its rider's proficiency bonus in place of its own proficiency bonus for AC, ability checks, attack rolls, saving throws, and the DC made to save against certain action effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While a rider is mounted on the nightmare, the rider gains resistance to fire damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The nightmare begins charging if it moves at least 20 feet in a straight line and continues charging until it stops moving forward. While charging, the nightmare ignores difficult terrain and leaves behind a trail of fire that scorches the area until the start of its next turn. A creature takes **1d8** fire damage when it enters the nightmare's wake for the first time on a turn or ends their turn there."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The nightmare sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+   }
+  ]
  },
  {
   "name": "Owlbear Mount",
@@ -882,7 +1042,19 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "During a long rest, the owlbear can designate one creature that rode it within the last 10 days as its rider. The owlbear gains temporary hit points equal to 3 times the rider's level or challenge rating after completing the long rest. The owlbear uses its rider's proficiency bonus in place of its own proficiency bonus for AC, ability checks, attack rolls, saving throws, and the DC made to save against certain action effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The owlbear's long jump is up to 15 feet without a running start, and up to 30 feet with a running start. While falling, the owlbear's rate of descent is 60 feet per round."
+   }
+  ]
  },
  {
   "name": "Rosskar",
@@ -954,7 +1126,14 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The knight has advantage on saving throws against being frightened."
+   }
+  ]
  },
  {
   "name": "S.A.M. Shield Guardian",
@@ -1028,7 +1207,19 @@
      "**CR**: 7"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The shield guardian regains 10 hit points at the start of its turn if it has at least 1 hit point."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The shield guardian has advantage against saving throws from spells and other magical effects."
+   }
+  ]
  },
  {
   "name": "Tenn Drakes",
@@ -1103,7 +1294,8 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Titanic Mage",
@@ -1177,7 +1369,14 @@
      "**CR**: Unknown"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This creature is a Retainer, as described in Strongholds and Followers"
+   }
+  ]
  },
  {
   "name": "Uqaviel",
@@ -1253,7 +1452,29 @@
      "**CR**: 23"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Uqaviel's weapon attacks are magical. When Uqaviel hits with any weapon, the weapon deals an extra **8d8** fire damage (included in the attack). Fire damage dealt by Uqaviel's attacks ignores resistance to fire damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Uqaviel knows if he hears a lie."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If Uqaviel fails a saving throw, he can choose to succeed instead."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Uqaviel has advantage on saving throws against spells and other magical effects."
+   }
+  ]
  },
  {
   "name": "Valdek Karuul",
@@ -1328,7 +1549,37 @@
      "**CR**: 7"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Valdek can breathe air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Valdek has advantage on saving throws against being charmed, and magic can't put him to sleep."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Valdek has 12 sorcery points, which he regains after finishing a long rest. He can spend 1 or more sorcery points when he casts a spell to produce one of the following effects:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "*Careful Spell (1 Point)*. undefined",
+      "*Empowered Spell (1 Point)*. undefined",
+      "*Heightened Spell (3 Points)*. undefined"
+     ]
+    }
+   }
+  ]
  },
  {
   "name": "Warhorse Mount",
@@ -1400,7 +1651,19 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "During a long rest, the horse can designate one creature that rode it within the last 10 days as its rider. The horse gains temporary hit points equal to 4 times the rider's level or challenge rating after completing the long rest. The horse uses its rider's proficiency bonus in place of its own proficiency bonus for AC, ability checks, attack rolls, saving throws, and the DC made to save against certain action effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The horse begins charging if it moves at least 15 feet in a straight line and continues charging until it stops moving forward. While charging, the horse's long jump is up to 30 feet and it ignores difficult terrain."
+   }
+  ]
  },
  {
   "name": "Artimitei",
@@ -1516,7 +1779,19 @@
      "**CR**: 10"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra **4d8** radiant damage (included in the attack)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The deva has advantage on saving throws against spells and other magical effects."
+   }
+  ]
  },
  {
   "name": "Corrupting Angel",
@@ -1589,7 +1864,14 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The pixie has advantage on saving throws against spells and other magical effects."
+   }
+  ]
  },
  {
   "name": "Crescent Devourer",
@@ -1663,7 +1945,24 @@
      "**CR**: 6"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crescent devourer can mimic Beast sounds and Humanoid voices. A creature that hears the sounds can tell they are imitations with a successful DC 15 Wisdom (*Insight*) check."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crescent devourer can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While in sunlight, the crescent devourer has disadvantage on attack rolls, as well as on Wisdom (*Perception*) checks that rely on sight."
+   }
+  ]
  },
  {
   "name": "Falathin",
@@ -1774,7 +2073,8 @@
      "**CR**: 9"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Flurgnob",
@@ -1847,7 +2147,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Flurgnobs live in a diamond fortress floating on a rock in the Astral Plane. If a flurgnob is destroyed, they gain a new body in the Astral Plane 1d4 minutes later, regaining all their hit points and becoming active again. The new body appears within the diamond fortress."
+   }
+  ]
  },
  {
   "name": "Kollektor",
@@ -1920,7 +2227,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Flurgnobs live in a diamond fortress floating on a rock in the Astral Plane. If a flurgnob is destroyed, they gain a new body in the Astral Plane 1d4 minutes later, regaining all their hit points and becoming active again. The new body appears within the diamond fortress."
+   }
+  ]
  },
  {
   "name": "Kotoz the Glutton",
@@ -2072,7 +2386,24 @@
      "**CR**: 21"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the lich fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If it has a phylactery, a destroyed lich gains a new body in 1d10 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The lich has advantage on saving throws against any effect that turns undead."
+   }
+  ]
  },
  {
   "name": "Putrid Agnes",
@@ -2147,7 +2478,29 @@
      "**CR**: 5"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hag has advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A night hag carries two very rare magic items that she must craft for herself. If either object is lost, the night hag will go to great lengths to retrieve it, as creating a new tool takes time and effort."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Heartstone: This lustrous black gem allows a night hag to become ethereal while it is in her possession. The touch of a heartstone also cures any disease. Crafting a heartstone takes 30 days."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Soul Bag: When an evil humanoid dies as a result of a night hag's Nightmare Haunting, the hag catches the soul in this black sack made of stitched flesh. A soul bag can hold only one evil soul at a time, and only the night hag who crafted the bag can catch a soul with it. Crafting a soul bag takes 7 days and a humanoid sacrifice (whose flesh is used to make the bag)."
+   }
+  ]
  },
  {
   "name": "Shadow of Cowardice",
@@ -2219,7 +2572,24 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the  __greater restoration__ spell or other magic."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature that isn't *surprised* can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze."
+   }
+  ]
  },
  {
   "name": "Shadow of Greed",
@@ -2294,7 +2664,8 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Shadow of Recklessness",
@@ -2369,7 +2740,19 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hound has advantage on Wisdom (*Perception*) checks that rely on hearing or smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated."
+   }
+  ]
  },
  {
   "name": "Shadow of Wrath",
@@ -2444,7 +2827,24 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Magical darkness doesn't impede the devil's darkvision."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The devil has advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The devil can't be frightened while it can see an allied creature within 30 feet of it."
+   }
+  ]
  },
  {
   "name": "Time Wraith",
@@ -2519,7 +2919,19 @@
      "**CR**: 5"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (**1d10**) force damage if it ends its turn inside an object."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom (*Perception*) checks that rely on sight."
+   }
+  ]
  },
  {
   "name": "Kitsune",
@@ -2591,7 +3003,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Dark Kitsune",
@@ -2664,7 +3088,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Bat__, __Cat__, __Rat__, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Earth Kitsune",
@@ -2737,7 +3173,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Badger__, __Cat__, __Scorpion__, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Fire Kitsune",
@@ -2810,7 +3258,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, __Giant Fire Beetle__, lit Hooded Lantern, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Forest Kitsune",
@@ -2883,7 +3343,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Awakened Shrub__, __Cat__, __Deer__, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Heaven Kitsune",
@@ -2956,7 +3428,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, __Hawk__, Small Bell with a Sooting Chime, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Mountain Kitsune",
@@ -3029,7 +3513,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, __Goat__, Unbreakable Rope (50 ft.), __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Ocean Kitsune",
@@ -3102,7 +3598,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, __Crab__, __Octopus__, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "River Kitsune",
@@ -3175,7 +3683,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, __Frog__, __Piranha__, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Sound Kitsune",
@@ -3248,7 +3768,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, __Shrieker Fungus__, Signal Whistle, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Spirit Kitsune",
@@ -3321,7 +3853,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, Orb, __Raven__, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Thunder Kitsune",
@@ -3394,7 +3938,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, __Lizard__, Metal Wand, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Time Kitsune",
@@ -3467,7 +4023,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, Hourglass, __Owl__, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Wind Kitsune",
@@ -3540,7 +4108,19 @@
      "**Languages**: Understands the languages of the Kitsune Witch, but cannot speak."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kitsune has advantage on Wisdom (Perception) checks."
+   },
+   {
+    "name": "Shapechanger",
+    "type": "text",
+    "value": "The Kitsune can use its action to transform into a __Cat__, __Eagle__, __Vulture__, __Weasel__, or back into its original form. It retains its own skill and saving throw proficiencies, Intelligence, Wisdom, and Charisma ability scores, health, known spells, known companion features, and multiattack in all forms. It uses the other statistics from the form it is currently in. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+   }
+  ]
  },
  {
   "name": "Allied Hunter",
@@ -3613,7 +4193,34 @@
      "**Languages**: understands the languages you know"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hunter has Advantage on attack rolls against a creature that has the Frightened, Grappled, or Incapacitated conditions, or that is under the effects of a curse you place or a curse spell you cast."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, when the hunter deals damage to a creature that is under the effects of a curse you place or a curse spell that you cast, the hunter regains Hit Points equal to your Proficiency Bonus."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hunter can breathe only underwater. It has Advantage on ability checks and saving throws that rely on Dexterity while in aquatic environments."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the hunter is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hunter has Advantage on ability checks and saving throws made to avoid or end the Grappled condition."
+   }
+  ]
  },
  {
   "name": "Otherworldly Familiar",
@@ -3686,7 +4293,24 @@
      "**CR**: spell level"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The familiar can breathe air and water. You can choose to make it so it cannot breathe air. If you do, it has one tolerance to one damage type of your choice."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Decrease the familiar's size by 1."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the otherworldly familiar makes a dexterity or wisdom ability check or saving throw, it can add half the spell's level rounded down."
+   }
+  ]
  },
  {
   "name": "Animated Object",
@@ -3758,7 +4382,8 @@
      "**Languages**: understands the languages you know"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Otherworldly Steed",
@@ -3830,7 +4455,19 @@
      "**CR**: spell level"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the otherworldly Steed makes a strength or constitution ability check or saving throw, it can add half the spell's level rounded down."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Steed can breathe air and water. You can choose to make it so it cannot breathe air. If you do, it has one tolerance to one damage type of your choice."
+   }
+  ]
  },
  {
   "name": "Manifested Ghost",
@@ -3904,7 +4541,19 @@
      "**Languages**: Understands the languages you know"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures, unless an ability allows them to."
+   }
+  ]
  },
  {
   "name": "Common Ghost",
@@ -3979,7 +4628,24 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "Ghost Dog",
@@ -4054,7 +4720,34 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost has Advantage on Wisdom (perception) checks that rely on hearing or smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost has Advantage on an attack roll against a creature if at least one of the ghost's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "Ghost Horse",
@@ -4129,7 +4822,24 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "Fierce Ghost",
@@ -4204,7 +4914,24 @@
      "**CR**: 6"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "Ancient Ghost",
@@ -4281,7 +5008,24 @@
      "**CR**: 13"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "Ghost Beholder",
@@ -4357,7 +5101,24 @@
      "**CR**: 8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "Ghost Dragon Wyrmling",
@@ -4434,7 +5195,24 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "Ghost Young Dragon",
@@ -4511,7 +5289,24 @@
      "**CR**: 6"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "Ghost Adult Dragon",
@@ -4588,7 +5383,29 @@
      "**CR**: 13"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the ghost fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "Ghost Ancient Dragon",
@@ -4665,7 +5482,29 @@
      "**CR**: 20"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghosts can move through other creatures and objects as if it is Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object or creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the ghost fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghost cannot move or pick up objects or creatures."
+   }
+  ]
  },
  {
   "name": "M.A.C.",
@@ -4738,7 +5577,19 @@
      "**Languages**: Machine Code, one language you know"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you are within 5 feet of M.A.C., attacks against you have Disadvantage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "M.A.C. counts as one size larger for the purpose of determining its carrying capacity."
+   }
+  ]
  },
  {
   "name": "Personal Drone",
@@ -4811,7 +5662,14 @@
      "**Languages**: Machine Code"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The drone doesn't provoke an Opportunity Attack when it flies out of an enemy's reach."
+   }
+  ]
  },
  {
   "name": "Construct Form",
@@ -4882,7 +5740,39 @@
      "**Languages**: Machine Code"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the construct is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the construct instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the Incapacitated condition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the construct is subjected to an effect that allows it to make a Constitution saving throw to take only half damage, the construct instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the Incapacitated condition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The construct has Advantage on saving throws it makes to avoid or end a condition on itself."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The construct has a Fly Speed of 50 feet."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The construct has Resistance to Bludgeoning, Piercing, and Slashing damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The construct has Advantage on ranged attack rolls."
+   }
+  ]
  },
  {
   "name": "Soul Broker",
@@ -4956,7 +5846,8 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Advocate",
@@ -5030,7 +5921,8 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Husk",
@@ -5104,7 +5996,8 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Forlorn Husk",
@@ -5178,7 +6071,14 @@
      "**CR**: 4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The husk creates a magical vacuum in an 5-foot Emanation originating from itself. A creature that ends its turn within the Emanation gains 1 Exhaustion level (even if it has a breathing apparatus, such as a Life Suit). When a creature leaves the Emanation, it removes all levels of Exhaustion it gained from suffocating."
+   }
+  ]
  },
  {
   "name": "Space Kobold",
@@ -5251,7 +6151,14 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kobold has Advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and overlords that deter spacesharks the ally doesn't have the Incapacitated condition."
+   }
+  ]
  },
  {
   "name": "Death Snail",
@@ -5324,7 +6231,8 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Flying Book",
@@ -5398,7 +6306,8 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Fright",
@@ -5473,7 +6382,14 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The fright can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object."
+   }
+  ]
  },
  {
   "name": "Grep",
@@ -5547,7 +6463,14 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The grep can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful DC 10 Wisdom (*Insight*) check."
+   }
+  ]
  },
  {
   "name": "Moon Jelly",
@@ -5619,7 +6542,19 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The jelly can breathe air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The jelly sheds Dim Light in a 10-foot radius."
+   }
+  ]
  },
  {
   "name": "Mock",
@@ -5694,7 +6629,14 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The mock adheres to anything that touches it. The mock has Advantage on attack rolls against any creature adhered to it. The target or a creature within 5 feet of it can detach the mock as an action."
+   }
+  ]
  },
  {
   "name": "Pet Rock",
@@ -5768,7 +6710,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The rock counts as an object. Additionally, it can't take actions and its Speed can't be increased."
+   }
+  ]
  },
  {
   "name": "Rag Doll",
@@ -5844,7 +6793,8 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Winter Wolf Pup",
@@ -5918,7 +6868,14 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The pup has Advantage on attack rolls against a creature if at least one of the pup's Allies is within 5 feet of the creature and the Ally doesn't have the Incapacitated condition."
+   }
+  ]
  },
  {
   "name": "Tin Soldier",
@@ -5992,7 +6949,8 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Yarn Golem",
@@ -6067,7 +7025,8 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Abominable Familiar",
@@ -6139,7 +7098,8 @@
      "**Languages**: understands the languages you know"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Skeleton",
@@ -6213,7 +7173,8 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Spirit",
@@ -6289,7 +7250,14 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spirit can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object."
+   }
+  ]
  },
  {
   "name": "Zombie",
@@ -6363,7 +7331,14 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If damage reduces the zombie to 0 Hit Points, it makes a Constitution saving throw (DC 5 plus the damage taken) unless the damage is Radiant or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead."
+   }
+  ]
  },
  {
   "name": "Bone Beast",
@@ -6438,7 +7413,14 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The beast has Advantage on an attack roll against a creature if at least one of the beast's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+   }
+  ]
  },
  {
   "name": "Gorger",
@@ -6512,7 +7494,8 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Deadnaught",
@@ -6586,7 +7569,19 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can only animate and control a deadnaught once you reach Necromancer level 7. While you control a deadnaught, you can't control other thralls."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The deadnaught regains 5 Hit Points at the start of each of its turns if it has at least 1 Hit Point."
+   }
+  ]
  },
  {
   "name": "Bloodlurk",
@@ -6660,7 +7655,19 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The bloodlurk can move through a space as narrow as 1 inch without expending extra movement to do so."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The bloodlurk can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+   }
+  ]
  },
  {
   "name": "Slaymate",
@@ -6736,7 +7743,14 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The slaymate can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 15 Wisdom (*Insight*) check."
+   }
+  ]
  },
  {
   "name": "Duskfog",
@@ -6811,7 +7825,14 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The duskfog can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object."
+   }
+  ]
  },
  {
   "name": "Demon Cohort",
@@ -6884,7 +7905,29 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple and Martial weapons"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Magic Resistance. The demon has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Flight. The demon has a Fly Speed of 60 feet."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Legendary Resistance (2/Day). If the demon fails a saving throw, it can choose to succeed instead."
+   }
+  ]
  },
  {
   "name": "Ascetic",
@@ -6956,7 +7999,19 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple weapons"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Martial Excellence. The ascetic has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   }
+  ]
  },
  {
   "name": "Berserker",
@@ -7028,7 +8083,29 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple and Martial weapons; Shields"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While *Bloodied*, the berserker has Advantage on attack rolls and saving throws."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Martial Excellence. The berserker has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Bloodied* Resolve. While *Bloodied*, the berserker has Resistance to Bludgeoning, Piercing, and Slashing damage."
+   }
+  ]
  },
  {
   "name": "Champion",
@@ -7100,7 +8177,24 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple and Martial weapons; Light, Medium, and Heavy armor, Shields"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Martial Excellence. The champion has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Indomitable (2/Day). The champion rerolls a failed saving throw with a bonus equal to your Captain level."
+   }
+  ]
  },
  {
   "name": "Construct Cohort",
@@ -7172,7 +8266,34 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The construct is Small, Medium, or Large. It gains an action corresponding to its size."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Construct Excellence. The construct has a +1 bonus to its AC, attack, and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Death Burst. The construct explodes when it dies. *Dexterity Saving Throw:* DC equals your Cohort save DC, each creature in a 10-foot Emanation originating from the construct. *Failure* **6d6** Fire damage. *Success* Half damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Magic Resistance. The construct has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Unerring Strike (3/Day). When the construct misses with an attack, it hits instead."
+   }
+  ]
  },
  {
   "name": "Cultist",
@@ -7244,7 +8365,24 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple weapons; Light armor"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Arcane Excellence. The cultist has a +1 bonus to its spell attack rolls and spell save DC. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Greater Curse. The cultist can choose the Necrotic Damage effect of its Eldritch Curse in addition to another effect. At Captain level 9, the Necrotic Damage effect deals 2d8 plus your Charisma modifier Necrotic damage."
+   }
+  ]
  },
  {
   "name": "Hunter",
@@ -7316,7 +8454,24 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple and Martial weapons; Light and Medium armor, Shields"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Martial Excellence. The hunter has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Elusive. Ranged attacks against the hunter have Disadvantage."
+   }
+  ]
  },
  {
   "name": "Minstrel",
@@ -7388,7 +8543,24 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple weapons; Light armor"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Martial Excellence. The minstrel has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Dramatic Opening. During the first round of combat, the minstrel has Advantage on D20 Tests and attacks against it have Disadvantage."
+   }
+  ]
  },
  {
   "name": "Scoundrel",
@@ -7460,7 +8632,24 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple weapons, Martial weapons that have the Finesse or Light property; Light armor"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Martial Excellence. The scoundrel has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Assassinate (1/Day). During the first round of combat, the scoundrel turns a hit that it makes into a Critical Hit."
+   }
+  ]
  },
  {
   "name": "Templar",
@@ -7532,7 +8721,34 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple and Martial weapons; Light, Medium, and Heavy armor, Shields"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Martial Excellence. The templar has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Improved Smite. The Radiant damage of the templar's Smite increases by 1d8 (3d8) and again at level 17 (4d8)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Zealous. The templar adds your Charisma modifier to its saving throws."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Blessed Blade. The templar has Advantage on attack rolls."
+   }
+  ]
  },
  {
   "name": "Corporeal Undead",
@@ -7605,7 +8821,29 @@
      "**Languages**: understands Common plus one other language, but can't speak"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Simple weapons; Light and Medium armor, Shields"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If reduced to 0 Hit Points but not destroyed outright, the undead revives with half of its Hit Points after 1 minute."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Undead Excellence. The undead has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Regeneration. The undead regains 5 Hit Points at the start of each of its turns if it is *Bloodied* and has at least 1 Hit Point."
+   }
+  ]
  },
  {
   "name": "Incorporeal Undead",
@@ -7679,7 +8917,24 @@
      "**Languages**: Common plus one other language"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The undead can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Undead Excellence. The undead has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Resistance__. The undead has Resistance to all damage types except Radiant and Force."
+   }
+  ]
  },
  {
   "name": "Alchemy Golem",
@@ -7752,7 +9007,19 @@
      "**Languages**: understands the languages of its creator but can't speak"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Add your Proficiency Bonus to any ability check or saving throw the beast makes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The golem has Advantage on saving throws against spells and other magical effects."
+   }
+  ]
  },
  {
   "name": "Clockwork Construct",
@@ -7825,7 +9092,8 @@
      "**Languages**: understands the languages you know"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Mechanaut's Apparatus",
@@ -7898,7 +9166,19 @@
      "**Senses**: Blindsight 10 ft."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While the apparatus is being piloted, add the pilot's Proficiency Bonus to the apparatus's Strength and Constitution saving throws."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While the apparatus is being piloted, it has Resistance to all damage. Each time it takes damage, the pilot takes the same amount of damage."
+   }
+  ]
  },
  {
   "name": "Hound",
@@ -7969,7 +9249,19 @@
      "**Skills**: perception +3, survival +3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hound adds your Proficiency Bonus to any ability check or saving throw it makes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hound has Advantage on attack rolls against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+   }
+  ]
  },
  {
   "name": "Commoner",
@@ -8016,7 +9308,44 @@
      "**Languages**: Common"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Assign the following numbers to the commoner's ability scores: 15, 14, 13, 12, 10, 8. The Commoner's Constitution can be assigned a score no higher than 13. The commoner's Hit Point maximum increases by your Captain level times its Constitution modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The commoner gives itself Advantage on a D20 Test."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Pick any 2 skills to gain proficiency in."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The commoner gains one of the following Origin feats: __Magic Initiate__, __Savage Attacker__, or __Skilled__. At Captain levels 5, 9, 13, and 17, the commoner gains a General feat."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Martial Excellence. The commoner has a +1 bonus to its attack and damage rolls. This bonus increases to +2 at Captain level 9, and +3 at Captain level 13. Actions"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d4** plus your Charisma modifier Bludgeoning damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **1d4** plus your Charisma modifier Bludgeoning damage."
+   }
+  ]
  },
  {
   "name": "Alligator Turtle",
@@ -8088,7 +9417,24 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Alligator Turtle can hold its breath for up to 1 hour."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Alligator Turtle has advantage on *Stealth* checks to Hide in water, mud, and swamps."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Alligator Turtle hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple the creature in its jaws (escape DC 12). When Grappling a creature it cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Anaconda",
@@ -8160,7 +9506,24 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Anaconda takes cold damage its speed is halved and it cannot take reactions until the end of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Anaconda counts as two sizes smaller for the purposes of moving through passageways."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Anaconda knows the exact location of any warm-blooded creatures within 30 ft. of it."
+   }
+  ]
  },
  {
   "name": "Aurochs",
@@ -8231,7 +9594,19 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Aurochs counts as one size larger for the purposes of determining its carrying capacity."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Aurochs moves at least 20 ft. in a line and hits a creature equal to its size (or smaller) with a Gore attack, it is knocked Prone and the Aurochs can use a bonus action to make a Stomp attack at it."
+   }
+  ]
  },
  {
   "name": "Badger",
@@ -8303,7 +9678,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Badger has advantage on all Wisdom ability checks that rely on its sense of smell."
+   }
+  ]
  },
  {
   "name": "Bat",
@@ -8375,7 +9757,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Bat makes a *Perception* check with its hearing it treats a d20 roll of 9 or lower as a 10. It loses this benefit and its Blindsight if it is Deafened."
+   }
+  ]
  },
  {
   "name": "Black Bear",
@@ -8446,7 +9835,24 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Black Bear has advantage on Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Black Bear hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple it in its jaws (escape DC 12). When Grappling a creature, the Black Bear cannot use its Bite attack on other targets."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Black Bear takes damage it reduces it by its Constitution modifier (2). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Boa Constrictor",
@@ -8517,7 +9923,24 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Boa Constrictor takes cold damage its speed is halved and it cannot take reactions until the end of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Boa Constrictor counts as two sizes smaller for the purposes of moving through passages."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Boa Constrictor knows the exact location of any warm-blooded creature within 30 feet."
+   }
+  ]
  },
  {
   "name": "Boar",
@@ -8588,7 +10011,24 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Boar takes damage it reduces it by its Constitution modifier (1). Force, psychic, and radiant damage ignore this feature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Boar moves at least 20 ft. in a line and hits a creature equal to its size (or smaller) with its Tusk attack, it is knocked Prone. The Boar can then use its bonus action to use its Stomp against it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Boar would be reduced to 0 points, but not killed outright, it falls to 1 hit point."
+   }
+  ]
  },
  {
   "name": "Camel",
@@ -8660,7 +10100,14 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Camel has advantage on all saving throws to resist hostile effects of desert environments. It can also survive up to 15 days without food or water."
+   }
+  ]
  },
  {
   "name": "Cat",
@@ -8733,7 +10180,19 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Cat has advantage on all Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Cat moves at least 20 ft. in a straight line, then hits a creature equal to its size or smaller with a Claw attack, the target is knocked Prone."
+   }
+  ]
  },
  {
   "name": "Cave Bear",
@@ -8806,7 +10265,29 @@
      "**CR**: 4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Bear uses its Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Bear has advantage on Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Bear hits a creature equal to its size (or smaller) with its Bite, it can Grapple it in its jaws (escape DC 16). While it is Grappling, it cannot Bite other targets."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Bear takes damage it reduces it by its Constitution modifier (4). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Cheetah",
@@ -8880,7 +10361,29 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Cheetah has advantage on all Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Cheetah moves 20 ft. in a line, then hits a target equal to its size (or smaller) with its Claw attack, it is knocked Prone. If it falls Prone, the Cheetah can then use its bonus action to make one Bite attack against it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Cheetah has advantage on all *Stealth* checks to Hide is grasslands."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Cheetah takes the Dash action while walking, its speed triples, and opportunity attacks against it are made with disadvantage until the end of its turn."
+   }
+  ]
  },
  {
   "name": "Chicken",
@@ -8951,7 +10454,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Chicken falls at least 10 feet it can glide 2 feet horizontally for every 1 foot it falls. When the Chicken uses this trait, a Medium or smaller creature can hold on to the Chicken's feet to glide along with it."
+   }
+  ]
  },
  {
   "name": "Chimpanzee",
@@ -9023,7 +10533,14 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Chimpanzee can manipulate tools and objects as well as a __Commoner__, though it can't use weapons, shields, or complex artisan's tools."
+   }
+  ]
  },
  {
   "name": "Colossal Crab",
@@ -9096,7 +10613,34 @@
      "**CR**: 5"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crab can breathe both air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Underwater, the Crab has advantage on *Perception* checks to smell creatures within 600 ft. of it that are below their hit point maximum. The Crab also automatically succeeds on *Perception* checks to smell dead creatures within 1 mile it is while underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Crab hits a creature equal to its size (or smaller) with a Claw attack, it can automatically Grapple the target (escape DC 15). The Crab has two claws, and it can Grapple one target in each of its claws at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crab's attacks deal the maximum damage, in place of rolling, against objects and boats."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While it remains motionless while underwater, the Crab is indistinguishable from its surroundings due to the coral and wreckage on its shell."
+   }
+  ]
  },
  {
   "name": "Colossal Toad",
@@ -9169,7 +10713,39 @@
      "**CR**: 4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Toad can breath both air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, the Toad can expend 5 feet of its movement long jump up to 30 ft., or a high jump up to 20 ft., even if this exceeds is remaining speed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Toad hits a creature equal to its size (or smaller) with its Toxic Bite attack, it can Grapple the target in its jaws (escape DC 15). While it is Grappling a creature, it cannot use its Toxic Bite attack on other targets."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Toad hits a creature it is Grappling that is at least one size smaller than it with its Toxic Bite, it can swallow it. While swallowed, that creature is Restrained and Blinded, it has total cover from attacks and effects outside of the Toad, and it takes 14 (**4d6**) acid damage at the start of each of the Toad's turns."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of each of its turns, the Toad must succeed on a Constitution saving throw (DC is the total damage it has taken since the end of its last turn) or a swallowed creature lands Prone in an unoccupied space within 5 ft."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Toad takes damage it reduces it by its Constitution modifier (3). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Crab",
@@ -9240,7 +10816,29 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crab can breathe both air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Underwater, the Crab has advantage on *Perception* checks to smell creatures within 120 feet of it that are below their hit point maximum. The Crab also automatically succeeds on *Perception* checks to smell dead creatures within 1 mile it is while underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crab has advantage on *Stealth* while underwater or when covered in sand, mud, or dirt."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Crab hits a target with its Claw attack it can automatically Grapple the target (escape DC 6). If the target is larger than the Crab, its speed is not reduced to 0, but the Crab automatically moves with the target."
+   }
+  ]
  },
  {
   "name": "Crocodile",
@@ -9312,7 +10910,29 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Crocodile damages a creature that is holding its breath underwater, the air is knocked from its lungs and it begins to suffocate. A suffocating creature must succeed on a Constitution saving throw (DC 12) at the start of each of its turns or it suffers one level of Exhaustion. This Exhaustion lasts until the creature can breathe again."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crocodile can hold its breath for up to 30 minutes while it is underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crocodile has advantage on *Stealth* checks while it is in swampland, marshes, or underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Crocodile hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple the creature in its jaws (escape DC 13). When Grappling another creature the Crocodile cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Dire Tiger",
@@ -9385,7 +11005,29 @@
      "**CR**: 5"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Tiger has advantage on Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Tiger moves 20 ft. in a line, then hits a target equal to its size (or smaller) with its Claw attack, it is knocked Prone. If it falls Prone, the Tiger can then use its bonus action to make one Bite attack against it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Tiger adds double its Proficiency Bonus to *Stealth* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Tiger hits a creature equal to its size (or smaller) with its Bite attack, it can Grapple the target in its jaws (escape DC 16). While it is Grappling a creature, it cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Dire Wolf",
@@ -9457,7 +11099,24 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Dire Wolf has advantage on Wisdom ability checks that rely on its hearing or smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Dire Wolf has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Dire Wolf."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Dire Wolf hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple the target in its jaws (escape DC 13). While it is Grappling a creature, it cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Dolphin",
@@ -9530,7 +11189,29 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Dolphin moves 20 ft. in a line then hits a creature equal to its size (or smaller) with its Slam, it is Stunned until the start of the Dolphin's next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Dolphin makes a *Perception* check using its hearing, it treats a roll of 9 or lower on the d20 as a 10. The Dolphin loses this benefit and its Blindsight if it is Deafened."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Dolphin can hold its breath for up to 30 minutes while it is underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Dolphin has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Dolphin."
+   }
+  ]
  },
  {
   "name": "Eagle",
@@ -9602,7 +11283,24 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Eagle is forced to make a Dexterity saving throw to avoid damage while flying, it takes no damage on a success, and half on a failure."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Eagle adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Opportunity attacks against the Eagle have disadvantage while it is using its flying speed."
+   }
+  ]
  },
  {
   "name": "Electric Eel",
@@ -9674,7 +11372,24 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Electric Eel can only breath underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While underwater, the Electric Eel knows the exact location of any living creature within 30 feet."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Opportunity attacks are made at disadvantage against the Electric Eel while it is underwater."
+   }
+  ]
  },
  {
   "name": "Elephant",
@@ -9746,7 +11461,29 @@
      "**CR**: 4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, when the Elephant hits a creature equal to its size (or smaller) with Stomp, it can force it to make a Constitution saving throw (DC 16) or be Stunned until the start of the Elephant's next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Elephant uses its Strength, in place of Charisma, for *Intimidation* checks (see above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Elephant takes damage it reduces it by its Constitution modifier (3). Force, psychic, and radiant damage ignore this feature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Elephant moves at least 20 ft. in a line and hits with a Gore attack, it deals a bonus 5 (**1d8**) damage. If the target is equal to the Elephant's size (or smaller), it is also knocked Prone, and the Elephant can use a bonus action to use its Stomp attack on it."
+   }
+  ]
  },
  {
   "name": "Emu",
@@ -9818,7 +11555,14 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Emu has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Emu."
+   }
+  ]
  },
  {
   "name": "Falcon",
@@ -9891,7 +11635,24 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Falcon takes the Dash action while it is flying, its speed triples, and opportunity attacks against it are made with disadvantage until the end of its turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Falcon moves 40 ft. straight down in a line then hits a target with a Talons attack, it deals a bonus 4 (**1d6**) damage on hit. If the target is equal to the Falcon's size (or smaller) it is knocked Prone."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Falcon adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   }
+  ]
  },
  {
   "name": "Firefly",
@@ -9963,7 +11724,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Firefly has advantage on all Dexterity ability checks and saving throws while using its flying speed."
+   }
+  ]
  },
  {
   "name": "Fish",
@@ -10035,7 +11803,24 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Fish can only breathe underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Underwater, the Fish has advantage on *Perception* checks to smell creatures within 120 feet of it that are below their hit point maximum. The Fish also automatically succeeds on *Perception* checks to smell dead creatures within 1 mile it is while underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Fish has advantage on *Stealth* checks to hide while it is underwater."
+   }
+  ]
  },
  {
   "name": "Fox",
@@ -10107,7 +11892,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Fox has advantage on all Wisdom ability checks that rely on its sense of hearing."
+   }
+  ]
  },
  {
   "name": "Frog",
@@ -10179,7 +11971,19 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Frog can breathe both air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Frog can do a long jump of 10 ft. and a standing jump of 5 ft. without a running start."
+   }
+  ]
  },
  {
   "name": "Giant Alligator Turtle",
@@ -10252,7 +12056,24 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Alligator Turtle can hold its breath for up to 1 hour."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Alligator Turtle has advantage on *Stealth* checks to Hide in water, mud, and swamps."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Alligator Turtle hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple the creature in its jaws (escape DC 14). When Grappling a creature it cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Giant Badger",
@@ -10324,7 +12145,14 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Badger has advantage on all Wisdom ability checks that incorporate its sense of smell."
+   }
+  ]
  },
  {
   "name": "Giant Bat",
@@ -10396,7 +12224,24 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Bat makes a *Perception* check with its hearing it treats a d20 roll of 9 or lower as a 10. It loses this benefit and its Blindsight if it is Deafened."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Bat hits a target at least one size smaller than it with its Claw attack, it can choose to automatically Grapple the target (escape DC 13)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When in dim light or darkness, the Bat has advantage on *Stealth* checks and it does not provoke opportunity attacks when flying out of an enemy's reach."
+   }
+  ]
  },
  {
   "name": "Giant Beetle",
@@ -10467,7 +12312,14 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Beetle ends its turn while flying it falls to the ground, but it takes no falling damage."
+   }
+  ]
  },
  {
   "name": "Giant Boar",
@@ -10538,7 +12390,24 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Boar takes damage it reduces it by its Constitution modifier (3). Force, psychic, and radiant damage ignore this feature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Boar moves at least 20 ft. in a line and hits a creature equal to its size (or smaller) with a Tusk attack, it deals a bonus **1d6** damage and the target is knocked Prone. The Boar can then use a bonus action to make one Stomp against it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Boar is reduced to 0 points, but not killed outright, it falls to 3 hit points."
+   }
+  ]
  },
  {
   "name": "Giant Cave Bear",
@@ -10611,7 +12480,29 @@
      "**CR**: 6"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Bear uses it Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Bear has advantage on all Wisdom ability checks that incorporate its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Bear hits a creature equal to its size (or smaller) with its Bite attack, it can Grapple the target in its jaws (escape DC 18). While it is Grappling a creature, it cannot use its Bite attack on other targets."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Bear takes damage it reduces it by its Constitution modifier (5). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Giant Centipede",
@@ -10683,7 +12574,19 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Centipede hits a target with its Bite attack it can force it to make a Constitution saving throw (DC 11). On a failure, it takes **3d6** poison damage and is Poisoned. On a success, it takes half as much poison damage and is not Poisoned."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Poisoned creature repeats this saving throw at the end of each of its turns. On a success, the effect ends, but on a failure, it takes **1d6** poison damage. A creature reduced to 0 hit points by this venom is stable, but it is Paralyzed until it regains hit points."
+   }
+  ]
  },
  {
   "name": "Giant Chicken",
@@ -10755,7 +12658,19 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Chicken uses Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Chicken ends its turn while flying it falls. Whenever it falls at least 10 feet it can glide 2 feet horizontally for every 1 foot it falls. When using this trait, a Large or smaller creature can hold on to the Chicken's feet to glide along with it."
+   }
+  ]
  },
  {
   "name": "Giant Crab",
@@ -10828,7 +12743,29 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crab can breathe both air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Underwater, the Crab has advantage on *Perception* checks to smell creatures within 120 feet of it that are below their hit point maximum. The Crab also automatically succeeds on *Perception* checks to smell dead creatures within 1 mile it is while underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crab has advantage on *Stealth* checks to Hide while underwater or when it is covered with sand, mud, or dirt."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Crab hits a creature equal to its size (or smaller) with its Claw attack it can automatically Grapple the target (escape DC 11)."
+   }
+  ]
  },
  {
   "name": "Giant Crocodile",
@@ -10899,7 +12836,29 @@
      "**CR**: 6"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While it remains motionless in the water, the Crocodile is indistinguishable from its natural surroundings due to the algae buildup on its scales."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Crocodile damages a creature that is holding its breath underwater, the creature must make a Constitution saving throw (DC 16) or suffer one level of Exhaustion, which lasts until it comes up for air."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crocodile can hold its breath for up to 2 hours while it is underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Crocodile hits a creature equal to its size (or smaller) with its Bite attack, it can Grapple the target in its jaws (escape DC 18). While it is Grappling a creature, it cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Giant Electric Eel",
@@ -10971,7 +12930,29 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Electric Eel can only breath underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Electric Eel knows the exact location of any living creature within 90 ft. of it while underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Opportunity attacks are made at disadvantage against the Electric Eel while it is underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Eel hits a target with its Shocking Bite attack, it can force it to make a Constitution saving throw (DC 13). On a failure, it takes 11 (**3d6**) lightning damage and is Stunned until the end of the Eel's next turn. On a success, it takes half damage and its speed is halved until the start of the Eel's next turn."
+   }
+  ]
  },
  {
   "name": "Giant Emu",
@@ -11043,7 +13024,19 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Emu uses Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Emu has advantage on any attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Emu."
+   }
+  ]
  },
  {
   "name": "Giant Falcon",
@@ -11115,7 +13108,29 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Falcon takes the Dash action while it is flying, its speed triples, and opportunity attacks against it are made with disadvantage until the end of its turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Falcon moves 40 ft. straight down in a line then hits a target with a Talons attack, it deals a bonus 7 (**2d6**) damage on hit. If the target is equal to the Falcon's size (or smaller) it falls Prone and is Stunned until the start of the Falcon's next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Falcon hits a target at least one size smaller than it with its Talons attack, it can automatically Grapple the target (escape DC 15)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Falcon adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   }
+  ]
  },
  {
   "name": "Giant Fish",
@@ -11187,7 +13202,29 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Fish can only breathe underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Underwater, the Fish has advantage on *Perception* checks to smell creatures within 120 feet of it that are below their hit point maximum. The Fish also automatically succeeds on *Perception* checks to smell dead creatures within 1 mile it is while underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Fish moves 20 ft. in a line, then hits a target with its Slam, it rolls one bonus damage die. If the target is Large (or smaller) it is knocked back 20 ft. in a line."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Fish has advantage on *Stealth* checks to hide while it is underwater."
+   }
+  ]
  },
  {
   "name": "Giant Frog",
@@ -11259,7 +13296,29 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Frog can breath both air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, the Frog can expend 5 feet of its movement long jump up to 20 feet, or high jump up to 10 feet, even if this exceeds is remaining speed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Frog hits a creature it is Grappling with a Bite attack, it can swallow it. While swallowed, a creature is Blinded and Restrained, it has total cover from attacks and effects outside of the Frog, and it takes 5 (**2d4**) acid damage at the start of each of the Frog's turns."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of each of its turns, the Frog must succeed on a Constitution saving throw (DC is the total damage it has taken since the end of its last turn) or a swallowed creature lands Prone in an unoccupied space within 5 ft."
+   }
+  ]
  },
  {
   "name": "Giant Goat",
@@ -11331,7 +13390,19 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Goat moves at least 20 ft. in a straight line, then hits a creature with a Headbutt attack, it rolls one bonus damage die, and if the target is equal to the Goats size or smaller it is knocked back 25 ft. in a line."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Goat has advantage on saving throws to resist being knocked Prone or moved against its will."
+   }
+  ]
  },
  {
   "name": "Giant Gorilla",
@@ -11403,7 +13474,29 @@
      "**CR**: 6"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, when the Gorilla hits a creature equal to its size (or smaller) with a Fist attack, it can force it to make a Constitution saving throw (DC 17) or be Stunned until the start of the Gorilla's next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Gorilla uses its Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Gorilla has advantage on all Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of its turn, the Gorilla flies into a Fury which lasts until the start of its next turn. For the duration, it has advantage on all Strength attacks, checks, and saving throws, but all attacks against it have advantage."
+   }
+  ]
  },
  {
   "name": "Giant Hawk",
@@ -11475,7 +13568,29 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Hawk is forced to make a Dexterity saving throw to avoid damage while flying, it takes no damage on a success, and half on a failure."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Hawk hits a target at least one size smaller than it with a Talons attack, it can choose to automatically Grapple the target (escape DC 13)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hawk adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hawk has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Hawk."
+   }
+  ]
  },
  {
   "name": "Giant Heron",
@@ -11547,7 +13662,29 @@
      "**CR**: 4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Heron has advantage on *Stealth* checks to Hide in marshes and swamps, and creatures have disadvantage on any ability check made to detect the Heron while it is standing still."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Heron hits a creature with its Beak attack while it is unaware of the Heron, the attack deals a bonus 14 (**3d8**) damage on hit."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Heron hits a target at least one size smaller than it with its Talons attack, it can choose to automatically Grapple the target (escape DC 14)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Heron adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   }
+  ]
  },
  {
   "name": "Giant Lizard",
@@ -11619,7 +13756,24 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Lizard takes cold damage its speed is halved and it cannot take reactions until the end of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Lizard has advantage on *Stealth* checks to Hide in natural environments."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Lizard can climb up sheer surfaces and upside down without making an ability check."
+   }
+  ]
  },
  {
   "name": "Giant Octopus",
@@ -11692,7 +13846,29 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Octopus can only breathe underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Octopus can hold its breath for up to 1 hour while it is out of the water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Octopus can move through gaps as narrow as 3-inches wide without having to squeeze."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Octopus has advantage on *Stealth* checks made to Hide while it is underwater."
+   }
+  ]
  },
  {
   "name": "Giant Owl",
@@ -11765,7 +13941,24 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Owl hits a target at least one size smaller than it with its Talons attack, it can choose to automatically Grapple the target (escape DC 11)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Owl adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While in dim light or darkness, the Owl has advantage on *Stealth* checks and it does not provoke opportunity attacks when it flies out of an enemy's reach."
+   }
+  ]
  },
  {
   "name": "Giant Rodent",
@@ -11838,7 +14031,19 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Rodent has advantage on all Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Rodent has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Rodent."
+   }
+  ]
  },
  {
   "name": "Giant Scorpion",
@@ -11910,7 +14115,14 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Scorpion hits a target equal to its size (or smaller) with its Claw attack it can automatically Grapple it (escape DC 13). The Scorpion has two Claws and each can only Grapple one target at a time."
+   }
+  ]
  },
  {
   "name": "Giant Shark",
@@ -11983,7 +14195,39 @@
      "**CR**: 6"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Shark can only breathe underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Shark knows the direction of any creature with less than its maximum hit points within 10 miles, so long as they are in the same body of water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Shark has advantage on Bite attacks against creatures with less than their maximum hit points."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Shark is reduced to 0 points, but not killed, it falls to 11 (1d12 + 5) hit points."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Any creature that is Swallowed by the Shark is Blinded and Restrained, it has total cover from all outside attacks and effects outside the Shark, and it takes 7 (**2d6**) acid damage at the start of each of the Shark's turns."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of each of its turns, the Shark must succeed on a Constitution saving throw (DC is the total damage it has taken since its previous turn) or swallowed creatures land Prone in an unoccupied space within 5 ft. of it."
+   }
+  ]
  },
  {
   "name": "Giant Sloth",
@@ -12054,7 +14298,29 @@
      "**CR**: 5"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Sloth has advantage on Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Sloth has disadvantage on all Dexterity ability checks and saving throws, and it cannot Dash."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Sloth takes damage it reduces it by its Constitution modifier (3). Force, psychic, and radiant damage ignore this feature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While it remains motionless in a jungle environment, the Sloth is indistinguishable from its surroundings due to the moss growing from its fur."
+   }
+  ]
  },
  {
   "name": "Giant Soldier Ant",
@@ -12126,7 +14392,24 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "For each additional **Soldier Ant** or **Ant Queen** within 30 ft., the Soldier Ant gains a +1 bonus to attack rolls, ability checks, and saving throws (maximum +10)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Soldier Ant hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple the target in its jaws (escape DC 12). When Grappling a creature it cannot use its Bite attack on other targets."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Soldier Ant counts as two sizes larger for the purpose of its carrying capacity and the amount of weight it can push, pull, drag, or lift at once. Its speed is also not halved while it is Grappling a creature."
+   }
+  ]
  },
  {
   "name": "Giant Spider",
@@ -12199,7 +14482,29 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Spider can climb sheer surfaces, upside down, and along webs without an ability check. It also ignores movement restrictions caused by webs and it can sense other creatures touching the same web as it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Spider targets a creature equal to its size (or smaller) with __Web__, the target must make a Dexterity saving throw (DC 12) or it is covered in webbing and its speed becomes 0. As an action, a webbed creature can make a Strength check, escaping the web on a success."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Spider hits a creature with its Bite attack it can force it to make a Constitution saving throw (DC 12). On a failure it takes 9 (**2d8**) poison damage and is Poisoned."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Poisoned creature repeats this saving throw at the end of each of its turns. On a success, the effect ends, but on a failure, it takes **1d8** poison damage. A creature reduced to 0 hit points by this venom is stable, but it is Paralyzed until it regains hit points."
+   }
+  ]
  },
  {
   "name": "Giant Squid",
@@ -12271,7 +14576,19 @@
      "**CR**: 5"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Squid can only breathe underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Squid's attacks deal maximum damage, in place of rolling, against objects and boats."
+   }
+  ]
  },
  {
   "name": "Giant Stag",
@@ -12343,7 +14660,19 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Stag can long jump up to 40 ft. and high jump up to 25 ft. with only 10 ft. running start."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Stag moves at least 20 ft. in a line and hits a creature equal to its size (or smaller) with its Antler attack, it is knocked Prone and the Stag can use a bonus action to use its Hooves against it."
+   }
+  ]
  },
  {
   "name": "Giant Stag Beetle",
@@ -12415,7 +14744,24 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Beetle uses Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Beetle ends its turn while flying it falls to the ground, but it takes no falling damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Beetle moves at least 20 ft. in a line and hits with a Gore attack, it deals a bonus 9 (**2d8**) damage, and if the target was equal to the Beetle's size (or smaller), it is also knocked Prone."
+   }
+  ]
  },
  {
   "name": "Giant Toad",
@@ -12487,7 +14833,34 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Toad can breath both air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, the Toad can expend 5 feet of its movement long jump up to 20 feet, or high jump up to 10 feet, even if this exceeds is remaining speed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Toad hits a creature equal to its size (or smaller) with its Toxic Bite attack, it can Grapple the target in its jaws (escape DC 13). While it is Grappling a creature, it cannot use its Toxic Bite attack on other targets."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Toad hits a creature it is Grappling that is at least one size smaller than it with its Toxic Bite, it can swallow it. While swallowed, that creature is Restrained and Blinded, it has total cover from attacks and effects outside of the Toad, and it takes 11 (**3d6**) acid damage at the start of each of the Toad's turns."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of each of its turns, the Toad must succeed on a Constitution saving throw (DC is the total damage it has taken since the end of its last turn) or a swallowed creature lands Prone in an unoccupied space within 5 ft."
+   }
+  ]
  },
  {
   "name": "Giant Tortoise",
@@ -12558,7 +14931,14 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Tortoise takes damage it can reduce it by its Constitution modifier (3). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Giant Vulture",
@@ -12630,7 +15010,29 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Vulture has advantage on *Perception* checks to smell creatures within 120 ft. that are below their hit point maximum. It automatically succeeds on *Perception* checks to smell dead creatures within 1 mile."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Vulture hits a target at least one size smaller than it with its Talons attack, it can automatically Grapple the target (escape DC 12)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Vulture has advantage on all Wisdom ability checks that rely on its sight or smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Vulture has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Vulture."
+   }
+  ]
  },
  {
   "name": "Giant Walrus",
@@ -12704,7 +15106,24 @@
      "**CR**: 4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Walrus can hold its breath for 1 hour."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Walrus uses its Strength, instead of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Walrus takes damage it can reduce it by its Constitution modifier (3). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Giant Wasp",
@@ -12776,7 +15195,24 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Wasp has advantage on Dexterity ability checks and saving throws while using its flying speed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Wasp hits a creature with a Sting attack it can force it to make a Constitution saving throw (DC 10). On a failure, it takes 11 (**3d6**) poison damage and is Poisoned. On a success, it takes half as much poison damage and is not Poisoned."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Poisoned creature repeats this saving throw at the end of each of its turns. On a success, the effect ends, but on a failure, it takes **1d6** poison damage. A creature reduced to 0 hit points by this venom is stable, but it is Paralyzed until it regains hit points."
+   }
+  ]
  },
  {
   "name": "Giant Wild Dog",
@@ -12848,7 +15284,19 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Wild Dog has advantage on Wisdom ability checks that rely on its hearing or smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Wild Dog has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Wild Dog."
+   }
+  ]
  },
  {
   "name": "Giant Wolf Spider",
@@ -12921,7 +15369,24 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Spider can climb sheer surfaces, upside down, and along webs without an ability check. It also ignores movement restrictions caused by webs and it can sense other creatures touching the same web as it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Spider hits a creature with its Bite attack it can force it to make a Constitution saving throw (DC 11). On a failure, it takes 7 (**2d6**) poison damage and is Poisoned. On a success, it takes half as much poison damage and is not Poisoned."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Poisoned creature repeats this saving throw at the end of each of its turns. On a success, the effect ends, but on a failure, it takes 4 (**1d6**) poison damage. A creature reduced to 0 hit points by this venom is stable, but it is Paralyzed until it regains hit points."
+   }
+  ]
  },
  {
   "name": "Giraffe",
@@ -12993,7 +15458,24 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Giraffe has advantage on Wisdom ability checks that rely on its sight while it is standing upright."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Giraffe counts as a Large creature for the purposes of its carrying capacity, Trampling Charge, and all other features except for the space it occupies."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Giraffe moves at least 20 ft. in a line and hits a creature equal to its size (or smaller) with its Neck attack, it is knocked Prone and the Giraffe can use its bonus action to make a Hooves attack on it."
+   }
+  ]
  },
  {
   "name": "Goat",
@@ -13065,7 +15547,19 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Goat moves at least 20 ft. in a straight line, then hits a creature with a Headbutt attack, it rolls one bonus damage die, and if the target is equal to the Goats size or smaller it is knocked back 10 ft. in a line."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Goat has advantage on saving throws to resist being knocked Prone or moved against its will."
+   }
+  ]
  },
  {
   "name": "Gorilla",
@@ -13137,7 +15631,24 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, when the Gorilla hits a creature equal to its size (or smaller) with a Fist attack, it can force it to make a Constitution saving throw (DC 14) or be Stunned until the start of the Gorilla's next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Gorilla uses Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Gorilla has advantage on all Wisdom ability checks that rely on its sense of smell."
+   }
+  ]
  },
  {
   "name": "Grizzly Bear",
@@ -13209,7 +15720,29 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Bear uses its Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Bear has advantage on all Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Bear hits a creature equal to its size (or smaller) with its Bite attack, it can Grapple the target in its jaws (escape DC 14). While it is Grappling a creature, it cannot use its Bite attack on other targets."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Bear takes damage it reduces it by its Constitution modifier (3). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Hare",
@@ -13283,7 +15816,19 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hare has advantage on all Wisdom ability checks that rely on its sense of hearing."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hare can do a long jump of 10 ft. and a standing jump of 5 ft. without a running start."
+   }
+  ]
  },
  {
   "name": "Hawk",
@@ -13355,7 +15900,19 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hawk adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hawk has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Hawk."
+   }
+  ]
  },
  {
   "name": "Heron",
@@ -13427,7 +15984,24 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Heron has advantage on *Stealth* checks to Hide in marshes and swamps, and creatures have disadvantage on any ability check made to detect the Heron while it is standing still."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Heron hits a creature with its Beak attack while it is unaware of the Heron, the attack deals a bonus **2d4** damage on hit."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Heron adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   }
+  ]
  },
  {
   "name": "Hippopotamus",
@@ -13499,7 +16073,24 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hippopotamus can hold its breath for up to 30 minutes while it is underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hippopotamus uses Strength, in place of Charisma, for *Intimidation* checks (see above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Hippopotamus hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple the creature in its jaws (escape DC 14). When it is Grappling another creature in this way the Hippopotamus cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Horse",
@@ -13570,7 +16161,14 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Horse moves at least 20 ft. in a line and hits a creature equal to its size (or smaller) with a Hooves attack, it is knocked Prone and the Horse can use a bonus action to make another Hooves attack."
+   }
+  ]
  },
  {
   "name": "Hunter Shark",
@@ -13643,7 +16241,24 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Shark can only breathe underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Shark knows the direction of any creature with less than its maximum hit points within 1 mile, so long as they are in the same body of water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Shark has advantage on Bite attacks against creatures with less than their maximum hit points."
+   }
+  ]
  },
  {
   "name": "Hunting Dog",
@@ -13715,7 +16330,24 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hunting Dog has advantage on Wisdom ability checks that rely on hearing or smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hunting Dog has advantage on saving throws to resist the Charmed and Frightened conditions while there is a conscious allied creature within 30 feet of it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Hunting Dog hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple the creature in its jaws (escape DC 11). When Grappling a creature it cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Killer Whale",
@@ -13788,7 +16420,29 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Whale makes a *Perception* check with its hearing it treats a d20 roll of 9 or lower as a 10. It loses this benefit and its Blindsight when Deafened."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Whale can hold its breath for up to 30 minutes while it is underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Whale uses Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Whale hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple the creature in its jaws (escape DC 14). When Grappling a creature this way the Whale cannot use its Bite on other targets."
+   }
+  ]
  },
  {
   "name": "King Cobra",
@@ -13860,7 +16514,34 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the King Cobra takes cold damage its speed is halved and it cannot take reactions until the end of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The King Cobra counts as one size smaller for the purposes of moving through passageways."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The King Cobra knows the exact location of any warm-blooded creatures within 30 feet of it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the King Cobra hits a creature with its Strike attack, it can force the target to make a Constitution saving throw (DC 11). On a failure, the creature takes 9 (**2d8**) poison damage and is Poisoned."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Poisoned creature repeats this saving throw at the end of each of its turns. On a success, the effect ends, but on a failure, it takes an additional 9 (**2d8**) poison damage."
+   }
+  ]
  },
  {
   "name": "Komodo Dragon",
@@ -13933,7 +16614,19 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Komodo Dragon takes cold damage its speed is halved and it cannot take reactions until the end of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Komodo Dragon hits a target equal to its size (or smaller) with a Bite attack, it can Grapple the target in its jaws (escape DC 12). When Grappling a creature it cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Lion",
@@ -14006,7 +16699,29 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Lion uses Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Lion has advantage on Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Lion has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Lion."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Lion moves 20 ft. in a line, then hits a target equal to its size (or smaller) with its Claw attack, it is knocked Prone. If it falls Prone, the Lion can then use its bonus action to make one Bite attack against it."
+   }
+  ]
  },
  {
   "name": "Lizard",
@@ -14078,7 +16793,24 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Lizard takes cold damage its speed is halved and it cannot take reactions until the end of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Lizard has advantage on *Stealth* checks to Hide in natural environments."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Lizard can climb up sheer surfaces and upside down without making an ability check."
+   }
+  ]
  },
  {
   "name": "Llama",
@@ -14150,7 +16882,19 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Llama counts as one size larger for the purposes of determining its carrying capacity."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Llama has advantage on saving throws to resist being knocked prone or moved against its will."
+   }
+  ]
  },
  {
   "name": "Mammoth",
@@ -14222,7 +16966,29 @@
      "**CR**: 6"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, if the Mammoth hits a creature equal to its size (or smaller) with Stomp, it can force it to make a Constitution saving throw (DC 18) or be Stunned until the start of the Mammoth's next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Mammoth uses its Strength, in place of Charisma, for *Intimidation* checks (see above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Mammoth takes damage it reduces it by its Constitution modifier (5). Force, psychic, and radiant damage ignore this feature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Mammoth moves at least 20 ft. in a line and hits with a Gore attack, it deals a bonus 5 (**1d8**) damage. If the target is equal to the Mammoth's size (or smaller), it is also knocked Prone, and the Mammoth can use a bonus action to use its Stomp attack on it."
+   }
+  ]
  },
  {
   "name": "Monkey",
@@ -14294,7 +17060,24 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Monkey adds double its Proficiency Bonus to any *Acrobatics* checks it makes (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Monkey can manipulate tools and objects as well as a __Commoner__, though it cannot wield weapons, shields, or complex artisan's tools."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Monkey can use its tail to hold Tiny objects and grab surfaces to aid in climbing."
+   }
+  ]
  },
  {
   "name": "Mule",
@@ -14366,7 +17149,19 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Mule counts as one size larger for the purposes of determining its carrying capacity."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Mule has advantage on saving throws to resist being knocked prone or moved against its will."
+   }
+  ]
  },
  {
   "name": "Octopus",
@@ -14439,7 +17234,29 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Octopus can only breathe underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Octopus can hold its breath for up to 30 minutes while it is out of the water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Octopus can move through gaps as narrow as 1-inch wide without having to squeeze."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Octopus has advantage on *Stealth* checks made to Hide while it is underwater."
+   }
+  ]
  },
  {
   "name": "Owl",
@@ -14512,7 +17329,19 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Owl adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While in dim light or darkness, the Owl has advantage on *Stealth* checks and it does not provoke opportunity attacks when it flies out of an enemy's reach."
+   }
+  ]
  },
  {
   "name": "Ox",
@@ -14583,7 +17412,19 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Ox counts as one size larger for the purposes of determining its carrying capacity."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Ox moves 20 ft. in a line, then hits a target with its Gore, and if the target is equal to the Ox in size (or smaller) it is knocked Prone."
+   }
+  ]
  },
  {
   "name": "Panther",
@@ -14656,7 +17497,24 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Panther has advantage on all Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Panther moves 20 ft. in a line, then hits a target equal to its size (or smaller) with its Claw attack, it is knocked Prone. If it falls Prone, the Panther can then use its bonus action to make one Bite attack against it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Panther has advantage on all *Stealth* checks while it is in dim light or darkness."
+   }
+  ]
  },
  {
   "name": "Polar Bear",
@@ -14729,7 +17587,34 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Bear can move across and climb icy surfaces without making an ability check. Additionally, the Bear can ignore Difficult Terrain imposed by ice or snow."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Bear uses its Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Bear has advantage on all Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Bear hits a creature equal to its size (or smaller) with its Bite attack, it can Grapple the target in its jaws (escape DC 14). While it is Grappling a creature, it cannot use its Bite attack on other targets."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Bear takes damage it reduces it by its Constitution modifier (3). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Raven",
@@ -14801,7 +17686,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Raven can perfectly mimic simple sounds it has heard, like a person's voice or an animal chittering. A successful DC 10 *Insight* check reveals this mimicry."
+   }
+  ]
  },
  {
   "name": "Reef Shark",
@@ -14873,7 +17765,19 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Reef Shark can only breathe underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Reef Shark knows the direction of any creature with less than its maximum hit points within 1 mile, so long as they are in the same body of water."
+   }
+  ]
  },
  {
   "name": "Rhinoceros",
@@ -14945,7 +17849,24 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Rhinoceros uses its Strength, in place of Charisma, for *Intimidation* checks (see above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Rhinoceros takes damage it reduces it by its Constitution modifier (2). Force, psychic, and radiant damage ignore this feature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Rhinoceros moves at least 20 ft. in a line and hits with a Gore attack, it deals a bonus **1d8** damage. If the target is equal to the Rhinoeros's size (or smaller), it is also knocked Prone, and the Rhinoceros can use a bonus action to use its Stomp attack on it."
+   }
+  ]
  },
  {
   "name": "Rodent",
@@ -15019,7 +17940,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Rodent has advantage on all Wisdom ability checks that rely on its sense of smell."
+   }
+  ]
  },
  {
   "name": "Royal Eagle",
@@ -15092,7 +18020,29 @@
      "**CR**: 6"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Eagle is forced to make a Dexterity saving throw to avoid damage while flying, it takes no damage on a success, and half on a failure."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Eagle hits a target at least one size smaller than it with its Talons attack, it can choose to automatically Grapple the target (escape DC 15)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Eagle adds double its Proficiency Bonus to its *Perception* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Opportunity attacks against the Eagle have disadvantage while it is using its flying speed."
+   }
+  ]
  },
  {
   "name": "Saber-Toothed Tiger",
@@ -15165,7 +18115,34 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Tiger has advantage on Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Tiger moves 20 ft. in a line, then hits a target equal to its size (or smaller) with its Claw attack, it is knocked Prone. If it falls Prone, the Tiger can then use its bonus action to make one Bite attack against it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Tiger adds double its Proficiency Bonus to *Stealth* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Tiger hits a creature equal to its size (or smaller) with its Bite attack, it can Grapple the target in its jaws (escape DC 14). While it is Grappling a creature, it cannot use its Bite attack on other targets."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Any creature that starts its turn Grappled by the Tiger in this way takes **1d6** slashing damage."
+   }
+  ]
  },
  {
   "name": "Scorpion",
@@ -15237,7 +18214,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Scorpion hits a target with its Claw attack it can automatically Grapple the target (escape DC 6). If the target is larger than the Scorpion, its speed isn't reduced to 0, but the Scorpion automatically moves with it."
+   }
+  ]
  },
  {
   "name": "Sperm Whale",
@@ -15310,7 +18294,39 @@
      "**CR**: 8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Whale makes a *Perception* check with its hearing it treats a d20 roll of 9 or lower as a 10. It loses this benefit and its Blindsight if it is Deafened."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Whale can hold its breath for up to 2 hours while it is underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Whale's attacks deal maximum damage, in place of rolling, against objects and boats."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Any creature that is Swallowed by the Whale is Blinded and Restrained, it has total cover from all outside attacks and effects, and it takes 7 (**2d6**) acid damage at the start of each of the Whale's turns."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of each of its turns, the Whale must succeed on a Constitution saving throw (DC is the total damage it has taken since its previous turn) or swallowed creatures land Prone in an unoccupied space within 5 ft. of it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Whale takes damage it reduces it by its Constitution modifier (5). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Spider",
@@ -15383,7 +18399,24 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Spider can climb sheer surfaces, upside down, and along webs without an ability check. It also ignores movement restrictions caused by webs and it can sense other creatures touching the same web as it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Spider hits a creature with its Bite attack it can force it to make a Constitution saving throw (DC 9). On a failure it is Poisoned."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Poisoned creature repeats this saving throw at the end of each of its turns. On a success, the effect ends, but on a failure, it takes **1d4** poison damage. A creature reduced to 0 hit points by this venom is stable, but it is Paralyzed until it regains hit points."
+   }
+  ]
  },
  {
   "name": "Stag",
@@ -15455,7 +18488,19 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Stag can long jump up to 30 ft. and high jump up to 15 ft. with only 10 ft. running start."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Stag moves at least 20 ft. in a line and hits a creature equal to its size (or smaller) with its Antler attack, it is knocked Prone and the Stag can use a bonus action to use its Hooves against it."
+   }
+  ]
  },
  {
   "name": "Terror Bird",
@@ -15527,7 +18572,24 @@
      "**CR**: 5"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Terror Bird uses Strength, in place of Charisma, for *Intimidation* checks (see above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn, the Terror Bird can expend 5 ft. of its movement to long jump up to 30 ft., or high jump to 20 ft., even if this exceeds is remaining speed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Terror Bird hits a creature equal to its size (or smaller) with a Beak attack, it can Grapple it in its beak (escape DC 16)."
+   }
+  ]
  },
  {
   "name": "Tiger",
@@ -15600,7 +18662,29 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Tiger has advantage on Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Tiger moves 20 ft. in a line, then hits a target equal to its size (or smaller) with its Claw attack, it is knocked Prone. If it falls Prone, the Tiger can then use its bonus action to make one Bite attack against it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Tiger adds double its Proficiency Bonus to *Stealth* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Tiger hits a creature equal to its size (or smaller) with its Bite attack, it can Grapple the target in its jaws (escape DC 13). While it is Grappling a creature, it cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Titanoboa",
@@ -15671,7 +18755,34 @@
      "**CR**: 5"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Titanoboa takes cold damage its speed is halved and it cannot take reactions until the end of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Titanoboa counts as two sizes smaller for the purposes of moving through passageways."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Titanoboa knows the exact location of any warm-blooded creatures within 90 ft. of it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Titanoboa hits a Grappled creature that is at least one size smaller than it with a Strike attack, it swallows it. A swallowed creature is Blinded and Restrained, has total cover from outside attacks and effects, and it takes 18 (**5d6**) acid damage at the start of each of the Titanoboa's turns."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of its turn, the Titanoboa must succeed on a Constitution saving throw (DC is the total damage it has taken since its previous turn) or any swallowed creatures land Prone in an unoccupied space within 5 ft. of it."
+   }
+  ]
  },
  {
   "name": "Tortoise",
@@ -15742,7 +18853,14 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Tortoise has advantage on saving throws to resist being moved against its will."
+   }
+  ]
  },
  {
   "name": "Viper",
@@ -15814,7 +18932,29 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Viper takes cold damage its speed is halved and it cannot take reactions until the end of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Viper knows the exact location of any warm-blooded creatures within 30 feet of it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Viper hits a creature with a Strike attack it can force it to make a Constitution saving throw (DC 10). On a failure, the creature takes **2d4** poison damage and is Poisoned."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Poisoned creature repeats this saving throw at the end of each of its turns. On a success, the effect ends, but on a failure, it takes an additional **1d4** poison damage."
+   }
+  ]
  },
  {
   "name": "Vulture",
@@ -15886,7 +19026,19 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Vulture has advantage on *Perception* checks to smell creatures within 120 ft. that are below their hit point maximum. It automatically succeeds on *Perception* checks to smell dead creatures within 1 mile."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Vulture has advantage on all Wisdom ability checks that rely on its sight or smell."
+   }
+  ]
  },
  {
   "name": "Walrus",
@@ -15958,7 +19110,19 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Walrus can hold its breath for up to 30 minutes while it is underwater."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the Walrus takes damage it can reduce it by its Constitution modifier (2). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Wild Dog",
@@ -16030,7 +19194,19 @@
      "**CR**: 1/8"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Wild Dog has advantage on Wisdom ability checks that rely on hearing or smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Wild Dog has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Wild Dog."
+   }
+  ]
  },
  {
   "name": "Wolf",
@@ -16102,7 +19278,24 @@
      "**CR**: 1/4"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Wolf has advantage on any Wisdom ability checks that rely on its hearing or smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Wolf has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the Wolf."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Wolf hits a creature equal to its size (or smaller) with a Bite attack, it can Grapple the target in its jaws (escape DC 11). When Grappling a creature it cannot use its Bite attack on other targets."
+   }
+  ]
  },
  {
   "name": "Laser Llama",
@@ -16177,7 +19370,19 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Llama counts as one size larger for the purposes of determining its carrying capacity."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Llama has advantage on saving throws to resist being knocked prone or moved against its will."
+   }
+  ]
  },
  {
   "name": "Rodent of Unusual Size",
@@ -16251,7 +19456,29 @@
      "**CR**: 2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The R.O.U.S. uses Strength, in place of Charisma, for *Intimidation* checks (included above)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The R.O.U.S. has advantage on all Wisdom ability checks that rely on its sense of smell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The R.O.U.S. has advantage on attack rolls against hostile targets that are within 5 feet of another conscious creature that is allied with the R.O.U.S."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever the R.O.U.S. takes damage it reduces it by its Constitution modifier (3). Force, psychic, and radiant damage ignore this feature."
+   }
+  ]
  },
  {
   "name": "Amorphous Creature",
@@ -16324,7 +19551,24 @@
      "**Languages**: Understands all the languages of the target, but can't speak"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The amorphous creature can move through a space as narrow as 1 inch wide without squeezing."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The amorphous creature can breathe air and water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The amorphous creature can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+   }
+  ]
  },
  {
   "name": "Animated Element",
@@ -16398,7 +19642,14 @@
      "**Languages**: Primordial, understands the languages you speak"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "(Air, Fire, and Water Only). The animated element can move through a space as narrow as 1 inch wide without squeezing."
+   }
+  ]
  },
  {
   "name": "Bogun",
@@ -16471,7 +19722,8 @@
      "**CR**: 0"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Eye of the King",
@@ -16546,7 +19798,19 @@
      "**CR**: 3"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The bat can't use its blindsight while deafened."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The bat has advantage on Wisdom (*Perception*) checks that rely on hearing."
+   }
+  ]
  },
  {
   "name": "Fantastic Machine",
@@ -16619,7 +19883,8 @@
      "**Languages**: understands and can speak the languages you speak"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Skeletal Guard",
@@ -16692,7 +19957,8 @@
      "**Languages**: understands the languages you speak"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Animated Object",
@@ -16763,7 +20029,8 @@
      "**Resistances**: poison; bludgeoning, piercing, slashing from nonmagical attacks"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Awakened Plant",
@@ -16834,7 +20101,14 @@
      "**Resistances**: bludgeoning, piercing"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While the Awakened Plant remains motionless, it is indistinguishable from a normal plant."
+   }
+  ]
  },
  {
   "name": "Golem Servant",
@@ -16906,7 +20180,14 @@
      "**Senses**: Darkvision 120 ft."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When its creator is targeted by an attack, the Golem can move up to its speed toward it. If it ends its movement within 5 feet, the Golem can switch places with its creator and become the target of that attack."
+   }
+  ]
  },
  {
   "name": "Homunculus",
@@ -16978,7 +20259,14 @@
      "**Senses**: Darkvision 120 ft."
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While on the same plane of existence, the Homunculus and its creator can speak Telepathically, and it can magically shares anything it senses with its creator."
+   }
+  ]
  },
  {
   "name": "Minor Fiend",
@@ -17053,7 +20341,14 @@
      "**CR**: 1"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The fiend has advantage on saving throws against spells and other magical effects."
+   }
+  ]
  },
  {
   "name": "Skeleton Corpse Puppet",
@@ -17127,7 +20422,8 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Zombie Corpse Puppet",
@@ -17201,7 +20497,19 @@
      "**CR**: 1/2"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC equal to the damage taken, unless the damage is radiant or from a critical hit. On a success, the puppet drops to 1 hit point instead."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The puppet has advantage on its grapple check against a creature if at least one other allied Zombie Puppet is within 5 feet of the creature and the ally isn't incapacitated."
+   }
+  ]
  },
  {
   "name": "Animal Spirit",
@@ -17273,7 +20581,29 @@
      "**Languages**: understands the languages you speak"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The animal doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The animal has advantage on attacks against enemies within 5 feet of an ally who isn't incapacitated."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The animal has advantage on attacks against enemies below their maximum hit points."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The animal can breathe underwater."
+   }
+  ]
  },
  {
   "name": "Golem Spirit",
@@ -17346,7 +20676,19 @@
      "**Languages**: understands the languages you speak"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the golem starts its turn below half its maximum hit points, it goes berserk. It gains advantage on all its attacks, but loses 5 hit points at the end of its turn if it does not attack anything."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once per turn when the golem hits a creature with an attack, it can force the target to make a Wisdom saving throw against your spell save DC. On a failure, the target's speed is halved and it can no longer take reactions until the end of its next turn."
+   }
+  ]
  },
  {
   "name": "Grave Spirit",
@@ -17419,7 +20761,24 @@
      "**Languages**: understands the languages you speak"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spirit can move through creatures and objects as if they were difficult terrain. If it ends its turn inside an object, it appears in the nearest unoccupied space and takes **1d10** force damage for every 5 feet traveled."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once on its turn when it hits an enemy with a melee attack, the spirit can force the target to make a Wisdom saving throw against your spell save DC or become frightened until the end of its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When reduced to 0 hp by anything other than a critical hit or bludgeoning, force, or radiant damage, the spirit leaves its bones behind rather than disappearing. As a bonus action, you can revive it at 1 hit point."
+   }
+  ]
  },
  {
   "name": "Dancing Item",
@@ -17492,7 +20851,19 @@
      "**Languages**: understands the languages you speak"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The item is immune to any spell or effect that would alter its form."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When any creature starts its turn within 10 feet of the item, the item can increase or decrease (your choice) the Speed of that creature by 10 feet until the end of the turn, provided the item doesn't have the Incapacitated condition."
+   }
+  ]
  },
  {
   "name": "Wildfire Spirit",
@@ -17565,7 +20936,8 @@
      "**Languages**: understands the languages you speak"
     ]
    }
-  }
+  },
+  "traits": []
  },
  {
   "name": "Drake Companion",
@@ -17638,7 +21010,14 @@
      "**Languages**: draconic"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you summon the drake, choose a damage type: Acid, Cold, Fire, Lightning, or Poison. The chosen type determines the drake's damage Immunity and the damage of its Infused Strikes trait."
+   }
+  ]
  },
  {
   "name": "Accursed Specter",
@@ -17712,6 +21091,13 @@
      "**Languages**: understands all languages it knew in life, but can't speak"
     ]
    }
-  }
+  },
+  "traits": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Accursed Specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object."
+   }
+  ]
  }
 ]

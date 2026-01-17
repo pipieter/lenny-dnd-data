@@ -113,6 +113,15 @@ function actSaveSuccess(text: string, noFormat: boolean): string {
     return text;
 }
 
+function actSaveSuccessOrFail(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('actSaveSuccessOrFail', 0), 'Failure or Success:');
+    } else {
+        text = text.replaceAll(pattern('actSaveSuccessOrFail', 0), '*Failure or Success*:');
+    }
+    return text;
+}
+
 function atk(text: string, _noFormat: boolean): string {
     // converterutils-creature.js:584
     const replacements = new Map<string, string>([
@@ -614,6 +623,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         actSave,
         actSaveFail,
         actSaveSuccess,
+        actSaveSuccessOrFail,
         atk,
         action,
         adventure,
