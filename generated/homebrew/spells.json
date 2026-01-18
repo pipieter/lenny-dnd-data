@@ -1,5 +1,84 @@
 [
  {
+  "name": "Abduct",
+  "source": "ValdaSpire24",
+  "level": "Level 7",
+  "school": "Conjuration",
+  "casting_time": "1 minute",
+  "range": "1 mile",
+  "components": "V, S, M (a silver saucer)",
+  "duration": "1 hour",
+  "url": "https://5e.tools/spells.html#abduct_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell attempts to teleport a creature within range to your location. You must know the target's precise location when you cast this spell; if it is more than 100 feet from its supposed location, the spell fails. The target must succeed on a Charisma saving throw or be teleported to an unoccupied space you can see within 30 feet of yourself. You can magically bind the target with nearby restraints, such as Manacles, when it is teleported. When the spell ends, you choose whether the target remains in its location or if it is teleported back to the location from which it left."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Aberrate",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "V, S",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#aberrate_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell causes your anatomy to become fluid. For the duration, any Critical Hit against you becomes a normal hit."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after you take damage while this spell is active, you can take a Reaction to gain Resistance to that damage type until this spell ends or until you take this Reaction to gain Resistance to a different damage type. This Resistance doesn't apply to the triggering damage."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Absorb Elements",
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 1",
@@ -492,6 +571,39 @@
   ]
  },
  {
+  "name": "Action",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (a shaving of licorice root)",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#action_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose a willing creature that you can see within range. During its next turn, the target gains an additional action. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Utilize action."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Adaptation",
   "source": "SpellsThatDontSuck",
   "level": "Level 2",
@@ -554,6 +666,52 @@
    {
     "name": "Wizard",
     "source": "PHB"
+   }
+  ]
+ },
+ {
+  "name": "Aerial Alacrity",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a feather from a bird of prey)",
+  "duration": "10 minutes",
+  "url": "https://5e.tools/spells.html#aerial%20alacrity_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Target a willing creature you can see within range that has a Fly Speed (including one with a temporary or magically bestowed Fly Speed). That creature gains the following benefits for the duration while it has a Fly Speed and is flying:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The target can take the Dash or Disengage action as a Bonus Action.",
+      "The target can hover.",
+      "The target has Advantage on Dexterity checks and saving throws."
+     ]
+    }
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -1647,6 +1805,39 @@
   ]
  },
  {
+  "name": "Antiballistics Field",
+  "source": "ValdaSpire24",
+  "level": "Level 6",
+  "school": "Abjuration",
+  "casting_time": "Action",
+  "range": "Emanation (40 feet)",
+  "components": "V, S, M (a pinch of wet gunpowder)",
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#antiballistics%20field_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A 40-foot Emanation extends from you, disrupting projectiles and causing Ranged weapons to malfunction. Within the Emanation, whenever a Ranged weapon is used for an attack, the weapon immediately malfunctions and the attack is lost. A malfunctioning weapon can't be used to make an attack until a creature takes the Utilize action to fix the weapon malfunction. Ranged attacks using weapons whose projectiles pass through the Emanation have Disadvantage and deal only half damage on a hit."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Antimagic Ray",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 7",
@@ -1800,6 +1991,31 @@
     "source": "ValdaWarmage"
    }
   ]
+ },
+ {
+  "name": "Arc Blade",
+  "source": "ValdaSpire24",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "15 feet",
+  "components": "S, M (a Melee weapon with which you have proficiency and that is worth 1+ CP)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#arc%20blade_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As lightning surges through the weapon used in the spell's casting, you make one attack. This attack can be a melee attack or ranged spell attack using the weapon with a range of 15 feet, as a wave of energy extends from the weapon. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If it is a ranged attack, it deals Lightning damage. Otherwise, it can deal Lightning damage or the weapon's normal damage type (your choice)."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "Whether you deal Lightning damage or the weapon's normal damage type, the attack deals extra Lightning damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6)."
+   }
+  ],
+  "classes": []
  },
  {
   "name": "Arc of Lightning",
@@ -3323,6 +3539,36 @@
    },
    {
     "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Ballistic Smite",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Evocation",
+  "casting_time": "Bonus action, which you take immediately after hitting a creature with a Ranged weapon",
+  "range": "Self",
+  "components": "V",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#ballistic%20smite_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose Acid, Cold, Fire, Lightning, Poison, or Thunder damage. The target hit by the attack takes an extra **2d6** damage of the chosen type. The triggering attack can deal the chosen damage type or its normal damage type (your choice)."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d6 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Paladin",
     "source": "XPHB"
    }
   ]
@@ -5459,15 +5705,7 @@
   ],
   "classes": [
    {
-    "name": "Bard",
-    "source": "XPHB"
-   },
-   {
     "name": "Cleric",
-    "source": "XPHB"
-   },
-   {
-    "name": "Druid",
     "source": "XPHB"
    },
    {
@@ -5481,10 +5719,6 @@
    {
     "name": "Necromancer",
     "source": "ValdaNecromancer"
-   },
-   {
-    "name": "Paladin",
-    "source": "XPHB"
    },
    {
     "name": "Ranger",
@@ -5719,6 +5953,49 @@
    {
     "name": "Warlock",
     "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Blunder",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Enchantment",
+  "casting_time": "1 reaction, which you take when a creature you can see within range hits a target with an attack roll",
+  "range": "30 feet",
+  "components": "S, M (a banana peel)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#blunder_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The attacker must succeed on a Wisdom saving throw or suffer one of the following effects of your choice:"
+   },
+   {
+    "name": "Fumble",
+    "type": "text",
+    "value": "The target drops one object of your choice that it's holding, with the object landing in a space you choose up to 10 feet away from the target. If the target drops the weapon it is using for the attack roll, it can make an Unarmed Strike for the triggering attack."
+   },
+   {
+    "name": "Prat Fall",
+    "type": "text",
+    "value": "The target has the Prone condition. The Disadvantage from the Prone condition applies against the triggering attack, potentially causing it to miss."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
    },
    {
     "name": "Wizard",
@@ -6657,19 +6934,19 @@
   "casting_time": "Action",
   "range": "Self",
   "components": "S, M (a Melee weapon with which you have proficiency and that is worth 1+ CP)",
-  "duration": "1 round",
+  "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#burning%20blade_valdaspire24",
   "image": null,
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "Engulfing the weapon used in the spell's casting in flames, you make one attack. This attack and any other attacks you make using the weapon until the start of your next turn use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If such an attack deals damage, it can be Fire damage or the weapon's normal damage type (your choice)."
+    "value": "Encasing the weapon used in the spell's casting in flames, you make one attack. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Fire damage or the weapon's normal damage type (your choice). If the weapon's damage die or any of the spell's damage dice roll the highest number, you can roll that die again and add it to the damage, rolling again if it is the highest number, and so on. You can add a maximum number of dice to the damage roll equal to your spellcasting ability modifier."
    },
    {
     "name": "Cantrip Upgrade",
     "type": "text",
-    "value": "Whether you deal Fire damage or the weapon's normal damage type, attacks you make using this weapon until the start of your next turn deal extra Fire damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6)."
+    "value": "Whether you deal Fire damage or the weapon's normal damage type, the attack deals extra Fire damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6)."
    }
   ],
   "classes": [
@@ -7116,7 +7393,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You summon a handful of hard candy—boiled sweets, mints, jelly beans, etc.—and hurl them at a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes **1d8** Force damage and the candy forms a pile on the ground in its space, causing a 5-foot-square area of your choice in the target's space to become Difficult Terrain. The candy produced by this pell is edible, but has no nutritional value, and vanishes after 1 minute, ending any Difficult Terrain."
+    "value": "You summon a handful of hard candy—boiled sweets, mints, jelly beans, etc.—and hurl them at a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes **1d8** Force damage and the candy forms a pile on the ground in its space, causing a 5-foot-square area of your choice in the target's space to become Difficult Terrain. The candy produced by this spell is edible, but has no nutritional value, and vanishes after 1 minute, ending any Difficult Terrain."
    },
    {
     "name": "Cantrip Upgrade",
@@ -7253,14 +7530,6 @@
    {
     "name": "Bard",
     "source": "XPHB"
-   },
-   {
-    "name": "Warmage",
-    "source": "ValdaWarmage"
-   },
-   {
-    "name": "Witch",
-    "source": "ValdaWitch"
    },
    {
     "name": "Wizard",
@@ -9485,6 +9754,57 @@
   ]
  },
  {
+  "name": "Conjure Cover",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "casting_time": "Bonus action",
+  "range": "10 feet",
+  "components": "V, S, M (a duck figurine)",
+  "duration": "Concentration, up to 1 hour",
+  "url": "https://5e.tools/spells.html#conjure%20cover_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You conjure a low cobblestone wall along the ground at a point you can see within range. The wall is 18 inches thick and is composed of three 5-foot-long, 3-foot-high segments. Each segment must be contiguous with at least one other segment."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Medium creature that hunkers behind the wall has Half Cover, and a Small creature that hunkers behind it has Three-Quarters Cover. The wall can be leapt over without spending any additional movement."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each segment has AC 10 and 30 Hit Points. Reducing a segment of the wall to 0 Hit Points causes it to crumble, destroying it. The wall disappears when all the segments are destroyed or the spell ends."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Investigator",
+    "source": "ValdaInvestigator"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Conjure Dragon (Alternate)",
   "source": "llspell",
   "level": "Level 5",
@@ -10991,6 +11311,53 @@
    {
     "name": "Witch",
     "source": "ValdaWitch"
+   }
+  ]
+ },
+ {
+  "name": "Cosmic Horror",
+  "source": "ValdaSpire24",
+  "level": "Level 3",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a dream journal)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#cosmic%20horror_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "For the briefest moment, you open a portal to an eldritch dimension in a 10-foot-radius Sphere centered on a point you can see within range. Each creature within the Sphere makes a Wisdom saving throw as it beholds the nightmarish dimension. On a failed save, a creature takes **6d6** Psychic damage and has the Frightened condition for the duration. On a successful save, a creature takes half as much damage only."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature Frightened by this spell makes another Wisdom saving throw at the end of each of its turns, ending the effect on itself on a success."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d6 for each spell slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -12830,7 +13197,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "An 10-foot-radius Sphere of necromantic fog appears centered on a point you can see within range. The fog lasts for the duration or until strong wind (such as the one created by Gust of Wind) disperses it, ending the spell. Its area is Heavily Obscured."
+    "value": "A 10-foot-radius Sphere of necromantic fog appears centered on a point you can see within range. The fog lasts for the duration or until strong wind (such as the one created by Gust of Wind) disperses it, ending the spell. Its area is Heavily Obscured."
    },
    {
     "name": "",
@@ -14337,12 +14704,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "You receive a message of up to 6 words from yourself in the future, warning you of a critical threat or pointing you toward a fruitful avenue. At some point in the future, once you have learned why you sent the message, you must perform a ritual over the course of 10 minutes, which can be done during a Short Rest, to deliver the message back in time to your past self."
+    "value": "You receive a message of up to 6 words from yourself in the future, warning you of a critical threat or pointing you toward a fruitful avenue. The GM determines this message. At some point in the future, once you have learned why you sent the message, you must perform a ritual over the course of 10 minutes, which can be done during a Short or Long Rest, to deliver the message back in time to your past self. If you cast this spell and receive no message, it indicates that you will never complete the ritual in the future, possibly owing to your death or another hindrance."
    },
    {
     "name": "",
     "type": "text",
-    "value": "Once you cast this spell, you can't cast it again for 7 days or until you perform this ritual. If you cast this spell and receive no message, it indicates that you will never complete the ritual in the future, possibly owing to your death or another hindrance."
+    "value": "Once you cast this spell, you can't cast it again for 7 days or until you perform its ritual."
    }
   ],
   "classes": [
@@ -15293,7 +15660,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You deliver a mote of divine wrath to a point you can see within range. Each creature you choose in a 10-foot-radius Sphere centered on that point must make a Constitution saving throw. On a failed save, a creature takes **4d10** Necrotic or Radiant damage (your choice), or half as much damage on a successful save. If this damage reduces a creature to 0 Hit Points, the creature is disintegrated into salt and everything it was wearing or carrying falls in its space. The target can be revived only by a True Resurrection or a Wish spell."
+    "value": "You deliver a mote of divine wrath to a point you can see within range. Each creature you choose in a 10-foot-radius Sphere centered on that point must make a Constitution saving throw. On a failed save, a creature takes **4d10** Necrotic or Radiant damage (your choice), or half as much damage on a successful save. If this damage reduces a creature to 0 Hit Points, the creature is disintegrated into salt and everything it was wearing or carrying falls in its space. The target can be revived only by a __True Resurrection__ or a __Wish__ spell."
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -16379,7 +16746,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You fling a ball of eldritch energy at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes **1d8** Force damage and explodes in a 5-foot Emanation. Each creature in the Emanation makes a Dexterity saving throw, taking half the amount of Force damage on a failed save, or none on a successful one."
+    "value": "You fling a ball of eldritch energy at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes **1d8** Force damage and explodes in a 5-foot Emanation. Each creature other than the target within the Emanation makes a Dexterity saving throw, taking half the amount of Force damage on a failed save, or none on a successful one."
    },
    {
     "name": "Cantrip Upgrade",
@@ -16693,7 +17060,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A spark leaps from your finger to a creature you touch, spreading in bright cracks across its skin. The target must succeed on a Constitution saving throw or be cursed for the duration. The cursed target has Vulnerability to your choice of Acid, Cold, Fire, Lightning, or Thunder damage. If the creature has Resistance to the chosen damage type, it instead loses that Resistance. If the target has Immunity to the chosen damage type, it instead has Resistance to that damage type."
+    "value": "A spark leaps from your finger to a creature you touch, spreading in bright cracks across its skin. The target must succeed on a Constitution saving throw or be cursed for the duration. The cursed target has Vulnerability to your choice of Acid, Cold, Fire, Lightning, or Thunder damage. If the creature has Resistance to the chosen damage type, it instead loses that __Resistance__. If the target has Immunity to the chosen damage type, it instead has Resistance to that damage type."
    }
   ],
   "classes": [
@@ -17388,7 +17755,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Each creature (other than you) in the area when you cast the spell must succeed on a Strength saving throw or have the Restrained condition until the spell ends. At the start of each of the restrained creature’s turns it can repeat the saving throw, breaking free on a success. A Restrained creature or a creature it is within reach of can take an action to make a Strength (*Athletics*) check against your spell save DC. On a success, it breaks free."
+    "value": "Each creature (other than you) in the area when you cast the spell must succeed on a Strength saving throw or have the Restrained condition until the spell ends. At the start of each of the restrained creature's turns it can repeat the saving throw, breaking free on a success. A Restrained creature or a creature it is within reach of can take an action to make a Strength (*Athletics*) check against your spell save DC. On a success, it breaks free."
    }
   ],
   "classes": [
@@ -17655,6 +18022,61 @@
    {
     "name": "Paladin",
     "source": "PHB"
+   }
+  ]
+ },
+ {
+  "name": "Ethereal Jaunt",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Conjuration",
+  "casting_time": "Bonus action",
+  "range": "Touch",
+  "components": "V, S",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#ethereal%20jaunt_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A willing creature you touch briefly steps into the border regions of the Ethereal Plane until the start of your next turn. The spell ends instantly if the target is already on that plane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While on the Ethereal Plane, the target can only affect and be affected only by creatures, objects, and effects on that plane. It can perceive the plane it left, which looks gray, and it can't see anything there more than 60 feet away. Creatures that aren't on the Ethereal Plane can't perceive or interact with the target unless a feature gives them the ability to do so. The target can move in any direction on the Ethereal Plane. If it moves up or down, every foot of movement costs an extra foot."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the spell ends, the target returns to the plane it left in the spot that corresponds to its space in the Border Ethereal. If it appears in an occupied space, it is shunted to the nearest unoccupied space."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Martyr",
+    "source": "ValdaMartyr"
+   },
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -18058,6 +18480,44 @@
   ]
  },
  {
+  "name": "Eye of Anubis",
+  "source": "ValdaSpire24",
+  "level": "Cantrip",
+  "school": "Necromancy",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "M (a Holy Symbol)",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#eye%20of%20anubis_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A beam of moonlight streaks from each of your eyes. Make two spell attack rolls directed at one target or two different targets within range. On a hit, the target takes **1d4** Necrotic damage and has a 1d4 penalty on the next attack roll it makes before the start of your next turn. This penalty is 1d6 if you hit the target with both spell attack rolls."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage of each beam increases by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   }
+  ]
+ },
+ {
   "name": "Eye of Power",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 9",
@@ -18083,6 +18543,36 @@
   "classes": [
    {
     "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Eye of Ra",
+  "source": "ValdaSpire24",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "M (a Holy Symbol)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#eye%20of%20ra_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A beam of sunlight streaks from each of your eyes. Make two spell attack rolls directed at one target or two different targets within range. On a hit, the target takes **1d4** Radiant damage and the next attack roll against it with a weapon or Unarmed Strike before the start of your next turn has a 1d4 bonus. This bonus is 1d6 if you hit the target with both spell attack rolls."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage of each beam increases by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
     "source": "XPHB"
    }
   ]
@@ -20129,6 +20619,48 @@
   ]
  },
  {
+  "name": "Flashback",
+  "source": "ValdaSpire24",
+  "level": "Level 3",
+  "school": "Divination",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#flashback_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Casting your mind through time, you make a subtle alteration to history, allowing you to make preparations for the current situation within the last 24 hours. Describe to your GM how the precautions you took ahead of time to affect the current situation. For example, you might have packed a particular piece of gear or arranged for a distraction to occur at this exact moment. The GM might call for an ability check if the preparations are sufficiently challenging; on a failure, the spell fails and has no effect."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Flashback's effects are limited, as reality reasserts itself with the fewest possible changes to accommodate the alteration in history. The spell can't remove creatures or objects from an encounter, harm a creature, or cause creatures and objects that aren't being worn or carried by you to move. It can generally add an element to an encounter, but can't generally subtract them. The GM decides on the extent of the Flashback's effect."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Investigator",
+    "source": "ValdaInvestigator"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Flashburst",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 3",
@@ -20230,7 +20762,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You touch a dead Humanoid that has been no longer than 10 days and revive it as an intelligent Undead creature. The creature returns to life with 1 Hit Point. This spell closes all mortal wounds, but it doesn't restore missing body parts."
+    "value": "You touch a dead Humanoid that has dead been no longer than 10 days and revive it as an intelligent Undead creature. The creature returns to life with 1 Hit Point. This spell closes all mortal wounds, but it doesn't restore missing body parts."
    },
    {
     "name": "",
@@ -20240,7 +20772,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "The Undead body deteriorates over time. Whenever the creature finishes a Long Rest, its Hit Point maximum permanently decreases by 1. The creature's Hit Point maximum can only be restored by the __Greater Restoration__ spell. If the creature dies and is later targeted by Resurrection or similar magic, it can be returned to life with its original creature type."
+    "value": "The Undead body deteriorates over time. Whenever the creature finishes a Long Rest, its Hit Point maximum permanently decreases by 1. The creature's Hit Point maximum can only be restored by the __Greater Restoration__ spell. If the creature dies and is later targeted by __Resurrection__ or similar magic, it can be returned to life with its original creature type."
    }
   ],
   "classes": [
@@ -21498,6 +22030,44 @@
   ]
  },
  {
+  "name": "Free Throw",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "150 feet",
+  "components": "S, M (an object weighing 5 pounds or less)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#free%20throw_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You throw the object used in the spell's casting with incredible momentum at a creature or to a point within the spell's range. You choose the object's exact trajectory, allowing it to navigate around obstacles and corners. The target creature makes a Dexterity saving throw, taking **5d4** Bludgeoning damage on a failed save or half as much damage on a successful one. The target gains no benefit from Half Cover or Three-Quarters Cover for this save."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 2d4 and the maximum weight of the thrown object increases by 5 pounds for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Freeze",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 6",
@@ -21657,7 +22227,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "The Frenzied condition ends after 1 minute, or when the spell ends. At the end of its turn, an affected creature can repeat its saving throw, ending the condition on itself early on a success."
+    "value": "At the end of its turn, an affected creature can repeat its saving throw, ending the condition on itself early on a success."
    }
   ],
   "classes": [
@@ -21782,6 +22352,57 @@
    {
     "name": "Warmage",
     "source": "ValdaWarmage"
+   }
+  ]
+ },
+ {
+  "name": "Frolicking Fountain",
+  "source": "ValdaSpire24",
+  "level": "Level 5",
+  "school": "Enchantment",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a conductor's baton)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#frolicking%20fountain_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You conjure a 5-foot Cube of water that swirls in a hypnotic motion in an unoccupied space within range. When the Cube appears and as a Bonus Action on subsequent turns, you can command the water to lash out in a 20-foot Emanation originating from the water. Each creature you choose within the Emanation makes a Dexterity saving throw. A creature takes **5d6** Bludgeoning damage on a failed save or half as much damage on a successful one."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a creature tries to leave the area, you can force it to make a Wisdom saving throw. On a failed save, its Speed is 0 until the start of its next turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d6 for each spell slot level above 5."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -21974,7 +22595,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "The manor is staffed by 50 Skeletons obedient to you, and contains enough food to serve 50 people each day for a week. The skeletons can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Any skeleton that leaves the estate's perimeter dies. Any Humanoid buried in the manor's courtyard rises 24 hours later as a Ghoul indefinitely under your control. You can have up to 10 such ghouls at once. If given no instructions, these ghouls patrol the estate. Any Undead created by this spell dies if it leaves the estate's perimeter."
+    "value": "The manor is staffed by 50 __Skeletons__ obedient to you. The skeletons can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Any skeleton that leaves the estate's perimeter dies. Any Humanoid buried in the manor's courtyard rises 24 hours later as a __Ghoul__ indefinitely under your control. You can have up to 10 such ghouls at once. If given no instructions, these ghouls patrol the estate. Any Undead created by this spell dies if it leaves the estate's perimeter."
    },
    {
     "name": "",
@@ -22080,6 +22701,10 @@
    {
     "name": "Necromancer",
     "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
    }
   ]
  },
@@ -22098,12 +22723,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "You magically compel a creature within range that can hear and understand you to a nonmagical game with vital consequences. An unwilling creature can make a Wisdom saving throw to resist this effect. On a failed save, the creature is compelled to join you in the game."
+    "value": "You magically compel a creature within range that can hear and understand you to a nonmagical game with vital consequences. An unwilling creature must succeed on a Wisdom saving throw or be compelled to join you in the game."
    },
    {
     "name": "",
     "type": "text",
-    "value": "The loser of the game takes **6d6** Psychic damage. If no player loses or has won by the end of the spell's duration, both you and the target take this damage. If you or one of your Allies harms the target, you forfeit the game, and vice versa if the target or one of its Allies harms you. Additionally, you and the target creature can negotiate for greater stakes. You can wager for higher Psychic damage (up to a maximum of 12d6), property, or more esoteric rewards, such as bestowal of a noble title. The spell reveals if a creature attempts to bet property it doesn't own. A bet is finalized when you and the target agree on the bet, solidifying the bet with a handshake or similar gesture. Property or currency bet on the game is teleported to the winner at the game's conclusion. The loser is also magically compelled to take any action (such as bestowing a noble title) wagered as part of a bet."
+    "value": "The loser of the game takes **6d6** Psychic damage. If no player has won or lost by the end of the spell's duration, both you and the target take this damage. If you or one of your allies harms the target, you forfeit the game, and vice versa if the target or one of its allies harms you. Additionally, you and the target creature can negotiate for greater stakes. You can wager for higher Psychic damage (up to a maximum of 12d6), currency, property, or more esoteric rewards, such as bestowal of a noble title. The spell reveals if a creature attempts to place a bet it can't fulfill. A bet is finalized when you and the target agree on the bet, solidifying the bet with a handshake or similar gesture. Property or currency bet on the game is teleported to the winner at the game's conclusion. The loser is also magically compelled to take any action (such as bestowing a noble title) wagered as part of a bet."
    },
    {
     "name": "",
@@ -22329,6 +22954,43 @@
   "classes": [
    {
     "name": "Cleric",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Geomantic Discernment",
+  "source": "ValdaSpire24",
+  "level": "Level 3",
+  "school": "Divination",
+  "casting_time": "Action or Ritual",
+  "range": "Emanation (60 feet)",
+  "components": "V, S",
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#geomantic%20discernment_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the ability to sense valuable minerals in a 60-foot Emanation originating from you. A glowing aura that only you can see appears around valuable metals, gems, ores, native elements, or other resources in that Emanation for the spell's duration. You can see this aura through any amount of nonmagical material."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Investigator",
+    "source": "ValdaInvestigator"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -23453,6 +24115,40 @@
   ]
  },
  {
+  "name": "Gravity Well",
+  "source": "ValdaSpire24",
+  "level": "Level 3",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a lodestone and iron filings)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#gravity%20well_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A 15-foot-radius Sphere of gravitational force forms centered on a point you choose within range. Choose whether the direction of gravity is inward toward the center of the Sphere or outward away from it. Each creature in the Sphere makes a Strength saving throw. On a failed save, a creature takes **5d8** Force damage and is pulled 15 feet toward the center of the Sphere or is pushed 15 feet away from it, according to the direction you chose. On a successful save, a creature takes half as much damage only."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 for each spell slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Gray Gaze",
   "source": "FoEQuickstone",
   "level": "Cantrip",
@@ -24231,6 +24927,10 @@
   ],
   "classes": [
    {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
     "name": "Martyr",
     "source": "ValdaMartyr"
    }
@@ -24308,6 +25008,44 @@
    },
    {
     "name": "Paladin",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Hangover",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Enchantment",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (a vial of strong liquor)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#hangover_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You emit a drunken aura that quickly washes away, leaving an intense hangover. A creature you choose within range makes a Constitution saving throw. On a failed save, the creature takes **3d8** Psychic damage and has the Poisoned condition until the end of your next turn. On a successful save, the target takes half as much damage only. The target has Disadvantage on Constitution saving throws it makes to maintain *Concentration* as a result of this damage."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -25042,20 +25780,20 @@
  },
  {
   "name": "Hex: Blood Curse",
-  "source": "ValdaWitch",
+  "source": "ValdaSpire24",
   "level": "Cantrip",
   "school": "Transmutation",
   "casting_time": "Action",
   "range": "60 feet",
   "components": "V, S",
   "duration": "1 round",
-  "url": "https://5e.tools/spells.html#hex%3A%20blood%20curse_valdawitch",
+  "url": "https://5e.tools/spells.html#hex%3A%20blood%20curse_valdaspire24",
   "image": null,
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "You mark a creature you can see within range with a sinister blood curse. The target must succeed on a Constitution saving throw or be cursed until the spell ends at the end of your next turn. If the target takes damage while cursed and has fewer than 5 Hit Points after taking damage, it drops to 0 Hit Point."
+    "value": "A creature you can see within range becomes cursed until the spell ends at the end of your next turn. If the target takes damage while cursed and has fewer than 5 Hit Points after taking damage, it drops to 0 Hit Point."
    },
    {
     "name": "Cantrip Upgrade",
@@ -25092,14 +25830,14 @@
  },
  {
   "name": "Hex: Decay",
-  "source": "ValdaWitch",
+  "source": "ValdaSpire24",
   "level": "Cantrip",
   "school": "Necromancy",
   "casting_time": "Action",
   "range": "60 feet",
   "components": "V, S",
   "duration": "1 round",
-  "url": "https://5e.tools/spells.html#hex%3A%20decay_valdawitch",
+  "url": "https://5e.tools/spells.html#hex%3A%20decay_valdaspire24",
   "image": null,
   "description": [
    {
@@ -25135,7 +25873,7 @@
    {
     "name": "Cantrip Upgrade",
     "type": "text",
-    "value": "The die subtracted from attack rolls changes when you reach level 5 (1d6), 11 (1d8), and 17 (1d10)."
+    "value": "The die subtracted from attack rolls changes when you reach levels 5 (1d6), 11 (1d8), and 17 (1d10)."
    }
   ],
   "classes": [
@@ -25271,40 +26009,15 @@
   ]
  },
  {
-  "name": "Hex: Go Unseen",
-  "source": "ValdaSpire24",
-  "level": "Cantrip",
-  "school": "Illusion",
-  "casting_time": "1 minute",
-  "range": "Self",
-  "components": "V, S",
-  "duration": "1 round",
-  "url": "https://5e.tools/spells.html#hex%3A%20go%20unseen_valdaspire24",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Repeating an ancient chant, you have the Invisible condition until the spell ends at the end of your next turn. Creatures within 10 feet of yourself that can hear can detect your location for the spell's duration. The spell ends early if you make an attack roll, deal damage, or cast a spell."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Witch",
-    "source": "ValdaWitch"
-   }
-  ]
- },
- {
   "name": "Hex: Hallucination",
-  "source": "ValdaWitch",
+  "source": "ValdaSpire24",
   "level": "Cantrip",
   "school": "Enchantment",
   "casting_time": "Action",
   "range": "60 feet",
   "components": "V, S",
   "duration": "1 round",
-  "url": "https://5e.tools/spells.html#hex%3A%20hallucination_valdawitch",
+  "url": "https://5e.tools/spells.html#hex%3A%20hallucination_valdaspire24",
   "image": null,
   "description": [
    {
@@ -25342,14 +26055,14 @@
  },
  {
   "name": "Hex: Imperil",
-  "source": "ValdaWitch",
+  "source": "ValdaSpire24",
   "level": "Cantrip",
   "school": "Transmutation",
   "casting_time": "Action",
   "range": "60 feet",
   "components": "V, S",
   "duration": "1 round",
-  "url": "https://5e.tools/spells.html#hex%3A%20imperil_valdawitch",
+  "url": "https://5e.tools/spells.html#hex%3A%20imperil_valdaspire24",
   "image": null,
   "description": [
    {
@@ -25412,14 +26125,14 @@
  },
  {
   "name": "Hex: Musical Interlude",
-  "source": "ValdaWitch",
+  "source": "ValdaSpire24",
   "level": "Cantrip",
   "school": "Divination",
   "casting_time": "Action",
   "range": "Emanation (30 feet)",
   "components": "V, S",
   "duration": "1 round",
-  "url": "https://5e.tools/spells.html#hex%3A%20musical%20interlude_valdawitch",
+  "url": "https://5e.tools/spells.html#hex%3A%20musical%20interlude_valdaspire24",
   "image": null,
   "description": [
    {
@@ -25567,14 +26280,14 @@
  },
  {
   "name": "Hex: Sweet Tooth",
-  "source": "ValdaWitch",
+  "source": "ValdaSpire24",
   "level": "Cantrip",
   "school": "Transmutation",
   "casting_time": "Action",
   "range": "Touch",
   "components": "V, S",
   "duration": "1 round",
-  "url": "https://5e.tools/spells.html#hex%3A%20sweet%20tooth_valdawitch",
+  "url": "https://5e.tools/spells.html#hex%3A%20sweet%20tooth_valdaspire24",
   "image": null,
   "description": [
    {
@@ -25601,6 +26314,31 @@
     "name": "",
     "type": "text",
     "value": "A miniature earthquake shakes the ground in a 5-foot Emanation originating from you. Each creature on the ground in the Emanation must succeed on a Dexterity saving throw or have the Prone condition. A creature that enters the Emanation or ends its turn there must also succeed on that save or fall Prone. This spell ends at the end of your next turn."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   }
+  ]
+ },
+ {
+  "name": "Hex: Vanish",
+  "source": "ValdaSpire24",
+  "level": "Cantrip",
+  "school": "Illusion",
+  "casting_time": "1 minute",
+  "range": "Self",
+  "components": "V, S",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#hex%3A%20vanish_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Repeating an ancient chant, you have the Invisible condition until the spell ends at the end of your next turn. Creatures within 20 feet of yourself that can hear can detect your location for the spell's duration. The spell ends early if you make an attack roll, deal damage, or cast a spell."
    }
   ],
   "classes": [
@@ -26241,6 +26979,53 @@
   ]
  },
  {
+  "name": "Hunger of the Earth",
+  "source": "ValdaSpire24",
+  "level": "Level 4",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#hunger%20of%20the%20earth_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ground opens up beneath a creature you choose on the ground within range. The target must succeed on a Strength saving throw or be pulled underground for the duration. On a successful save, its Speed is 0 until the start of your next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature pulled underground has the Blinded and Restrained conditions, can't teleport, has Total Cover against attacks and other effects outside the ground, and takes **4d6** Bludgeoning damage at the end of each of its turns. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "You can target one additional creature for each spell slot level above 4."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Hunter's Mark",
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 1",
@@ -26774,6 +27559,48 @@
   ]
  },
  {
+  "name": "Icicle Javelin",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a small icicle)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#icicle%20javelin_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You fling a massive icicle toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes **3d8** Cold damage. If the target is also adjacent to a wall, or a similar fixed object, its Speed is 0 until the start of your next turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Id Insinuation",
   "source": "llspell",
   "level": "Level 1",
@@ -27171,6 +27998,35 @@
   ]
  },
  {
+  "name": "Impressions of the Past",
+  "source": "ValdaSpire24",
+  "level": "Level 7",
+  "school": "Divination",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "V, S, M (an hourglass and a glass eye worth 100+ GP)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#impressions%20of%20the%20past_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You cast your senses back in time to perceive your current location as it was at some point in the past, including any events that were happening at that time. You must specify the exact time you wish to see, which can't be more than 100 years ago. The past appears dreamlike and shadowy. While viewing the past, you can look in any direction, discern detail, and hear speech as normal, but you can't move or speak."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Improvisation",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 1",
@@ -27297,6 +28153,45 @@
   "classes": [
    {
     "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Inevitable Boulder",
+  "source": "ValdaSpire24",
+  "level": "Level 7",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (an almost spherical stone)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#inevitable%20boulder_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Large 8-foot-diameter boulder appears in an unoccupied space within range and begins to roll in pursuit of one creature that you can see. The boulder has AC 18, 100 Hit Points, and Immunity to Poison and Psychic damage. If the boulder is reduced to 0 Hit Points, it vanishes and the spell ends."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of each of your turns, the boulder moves 60 feet in the direction of its target. If the boulder enters a creature's space, the creature must make a Dexterity saving throw. On a failed save, it takes **6d10** Bludgeoning damage and has the Prone condition. On a success, the creature takes half as much damage and doesn't have the Prone condition. The boulder also crushes nonmagical objects smaller than itself in its path. If the boulder reaches its target, it rolls over it and continues on, moving until it completes its movement or reaches an obstacle larger than itself. The boulder pursues its target for the duration, rolling over it more than once if possible."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you maintain your *Concentration* on this spell for the entire possible duration, the boulder continues to pursue its target for up to 1 hour or until you dismiss it. The spell no longer requires your *Concentration* for this duration. Once the boulder strikes its target, it vanishes and the spell ends."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
     "source": "XPHB"
    },
    {
@@ -27784,6 +28679,108 @@
   ]
  },
  {
+  "name": "Instant Replay",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "casting_time": "Bonus action, which you take immediately after missing a target with an attack",
+  "range": "Self",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#instant%20replay_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As your attack misses the target, you instantly reset yourself to the moment before the attack and repeat the attack roll against the same target, potentially causing it to hit."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Martyr",
+    "source": "ValdaMartyr"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Intensify Gravity",
+  "source": "ValdaSpire24",
+  "level": "Level 4",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "100 feet",
+  "components": "V, S, M (a lodestone and iron filings)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#intensify%20gravity_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell intensifies gravity in a 50-foot-radius, 100-foot-high Cylinder centered on a point within range."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature in the area must spend 2 feet of movement for every 1 foot it moves. Combined with Difficult Terrain, a creature must spend 3 feet of movement for every 1 foot it moves. If a creature with the Prone condition attempts to right itself, it must succeed on a Strength check against your spell save DC. On a failure, its Speed is 0 until the end of the current turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Objects in the area, including those being worn or carried, weigh double their usual weight. This may cause creatures to become encumbered or cause spells with a weight limit, such as __Levitate__, to fail."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Fly Speed of a creature in an area of high gravity is reduced to 0."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Lastly, creatures and objects take double damage from falling."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Interplanar Telepathic Bond",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 6",
@@ -27911,7 +28908,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A 120-foot Emanation originating from you disrupts invisibility. Each creature within the Emanation is outlined with a magical aura and can't benefit from the Invisible condition. Invisible objects within the Emanation are rendered visible."
+    "value": "You release a burst of magic to disrupt invisibility in a 120-foot Emanation originating from yourself. Each Invisible creature and object within the Emanation is outlined with a magical aura and can't benefit from the Invisible condition for the duration. An affected creature must succeed on a Constitution saving throw or have the Stunned condition until the start of your next turn."
    }
   ],
   "classes": [
@@ -28282,6 +29279,39 @@
    },
    {
     "name": "Ranger",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Jam Weapon",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "casting_time": "1 reaction, which you take when a creature you can see within range makes an attack using a Ranged weapon",
+  "range": "60 feet",
+  "components": "V, S, M (a pinch of wet gunpowder)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#jam%20weapon_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The weapon you target suffers a malfunction and the attack fails. A malfunctioning weapon can't be used to make an attack until a creature takes the Utilize action to fix the weapon malfunction."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -28780,6 +29810,48 @@
   ]
  },
  {
+  "name": "Lashing Tendrils",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "Emanation (5 feet)",
+  "components": "V, S, M (the tip of an octopus tentacle)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#lashing%20tendrils_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You sprout grotesque tendrils that whip around in a 5-foot Emanation originating from you. Whenever the Emanation enters the space of a creature and whenever a creature enters the Emanation or ends its turn there, you can deal **2d4** Bludgeoning damage to that creature. A creature takes this damage only once per turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d4 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Lashing Vine",
   "source": "SpellsThatDontSuck",
   "level": "Level 2",
@@ -29001,6 +30073,44 @@
    },
    {
     "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Legendary Libation",
+  "source": "ValdaSpire24",
+  "level": "Cantrip",
+  "school": "Conjuration",
+  "casting_time": "Bonus action",
+  "range": "30 feet",
+  "components": "V, M (a container, such as a glass, mug, or flask)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#legendary%20libation_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A container of your choice magically fills with a drink, such as ale or tea, which can be imbibed as a Bonus Action or Utilize action. A creature that consumes the drink gains 1d6 Temporary Hit Points and has Advantage on saving throws to avoid or end the Frightened condition. The drink's benefits, including the Temporary Hit Points, last until the start of the creature's next turn. If the drink isn't consumed, it vanishes at the start of your next turn."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The Temporary Hit Points increase by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
     "source": "XPHB"
    }
   ]
@@ -31045,12 +32155,17 @@
    {
     "name": "",
     "type": "text",
-    "value": "You touch a Small or smaller Beast. The Beast then transforms into a Humanoid with the statistics of a Commoner and an appearance of your choosing. The commoner is friendly to you and your Allies, has a basic understanding of all simple unskilled tasks, and can understand the languages you speak, but doesn't speak. The commoner wears Fine Clothes, but has no other equipment."
+    "value": "You touch a Medium or smaller Beast, which shape-shifts into a Humanoid with an appearance of your choice. The Beast's statistics are replaced by the stat block of a __Commoner__ but retains its Hit Points and Hit Point Dice. You choose the Commoner's skill proficiency. The commoner wears Fine Clothes but has no other equipment, and has a basic understanding of all unskilled tasks."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The target gains 10 Temporary Hit Points. The spell ends early on the target if it has no Temporary Hit Points left. When the spell ends, the Fine Clothes dissipate into smoke."
    },
    {
     "name": "Combat",
     "type": "text",
-    "value": "The commoner is an Ally to you and your Allies. It rolls its own Initiative and acts on its own turn. It behaves as though it is dutifully employed by you."
+    "value": "The commoner is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. It behaves as though it is dutifully employed by you."
    },
    {
     "name": "Duration",
@@ -31058,20 +32173,19 @@
     "value": "This spell's duration varies depending upon when and where it was cast. If cast in a location where time passes normally, the spell lasts until the twelfth stroke of the next midnight, however long that may be. Elsewhere, the spell lasts for 24 hours."
    },
    {
-    "name": "Ending the Transformation",
-    "type": "text",
-    "value": "The transformation lasts for the duration, or until the commoner drops to 0 Hit Points or dies. When it reverts to its true form, the Beast returns to the number of Hit Points it had before it transformed and its clothes dissipate into smoke. If it reverts as a result of dropping to 0 Hit Points, any excess damage carries over to its true form. As long as the excess damage doesn't reduce the Beast's normal form to 0 Hit Points, it isn't knocked Unconscious."
-   },
-   {
     "name": "Using a Higher-Level Spell Slot",
     "type": "text",
-    "value": "You can transform one additional Beast for each spell slot above 4."
+    "value": "You can shape-shift one additional Beast for each spell slot level above 4."
    }
   ],
   "classes": [
    {
     "name": "Witch",
     "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -31469,6 +32583,55 @@
   ]
  },
  {
+  "name": "Map",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Divination",
+  "casting_time": "1 minute or Ritual",
+  "range": "60 feet",
+  "components": "V, S, M (Ink Pen, Paper, and ink worth 10+ GP, which the spell consumes)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#map_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell magically generates a gridded Map of an area you choose within range. The Map shows a 50-foot Square area on a 5-foot grid and includes scale-accurate details of non-moving objects in that area. The map is rendered without color, and doesn't include secret doors, traps, or creatures. In a multi-level structure, the map only details the level on which the spell is cast."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Investigator",
+    "source": "ValdaInvestigator"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Mark of the Outcast",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 2",
@@ -31849,6 +33012,39 @@
   ]
  },
  {
+  "name": "Mass Skirmish",
+  "source": "ValdaSpire24",
+  "level": "Level 6",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a branch from a tree)",
+  "duration": "10 minutes",
+  "url": "https://5e.tools/spells.html#mass%20skirmish_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You enhance the mobility of up to six willing creatures of your choice that you can see within range. For the duration, each target's Speed is doubled, its movement is unaffected by Difficult Terrain, and it doesn't provoke Opportunity Attacks."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Mass Warding Word",
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 3",
@@ -32160,7 +33356,7 @@
   "school": "Enchantment",
   "casting_time": "Action or Ritual",
   "range": "Touch",
-  "components": "V, S, M (a page of written text and a length of silver string worth 10+ GP, tied in a knot, which the spell consumes)",
+  "components": "V, S, M (silver string worth 10+ GP, tied in a knot, which the spell consumes)",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#memorize_valdaspire24",
   "image": null,
@@ -32168,7 +33364,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "While casting this spell, your eyes pass over the words on a page, which are committed to your memory. For the next year, you remember the exact details of all information on the page. After that time, you have advantage on all Intelligence checks you make to recall this information."
+    "value": "When you cast this spell, your eyes pass over a page of written text that is committed to your memory. For the next year, you remember the exact details of all information on the page. After that time, you have Advantage on all Intelligence checks you make to recall this information."
    }
   ],
   "classes": [
@@ -34697,18 +35893,18 @@
   "name": "Nondescript",
   "source": "ValdaSpire24",
   "level": "Level 2",
-  "school": "Illusion",
+  "school": "Enchantment",
   "casting_time": "Action",
   "range": "Self",
-  "components": "V, S",
-  "duration": "Concentration, up to 10 minutes",
+  "components": "V, S, M (a paper bag)",
+  "duration": "1 hour",
   "url": "https://5e.tools/spells.html#nondescript_valdaspire24",
   "image": null,
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "This spell makes you seem unremarkable to others, though it doesn't change your actual appearance. For the duration, a creature that sees or hears you is unable to recall specific details about you, though it can remember actions you took or events that transpired around you."
+    "value": "This spell makes you seem unremarkable, though it doesn't change your actual appearance. Creatures that see or hear you for the duration are unable to recall your appearance or voice."
    }
   ],
   "classes": [
@@ -35410,6 +36606,47 @@
   ]
  },
  {
+  "name": "Paradox",
+  "source": "ValdaSpire24",
+  "level": "Level 9",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#paradox_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "By twisting the flow of time into knots, you cause one action of your choice taken within range within the last round to be undone. Reality then reasserts itself, recoiling from the damage caused by removing an event from time. The direct effects of that action, such as damage dealt by an attack or spell, are undone, but the indirect effects, such as creatures choosing to move to different locations, are not. The creature that took the action takes **10d8** Psychic damage, as it copes with its history being modified."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Pass Without Trace (Alternate)",
   "source": "llspell",
   "level": "Level 2",
@@ -35619,12 +36856,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "As your attack hits or misses the target, the weapon or ammunition transforms into a 5-foot-wide Line of magical energy that extends out to the weapon's normal range. The Line includes the attack's original target."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "Each creature within the Line makes a Dexterity saving throw, taking Force damage equal to the weapon's normal damage on a failed save or half as much damage on a successful one."
+    "value": "As your attack hits or misses the target, the weapon or ammunition transforms into a 5-foot-wide Line of magical energy that extends out to the weapon's normal range. The Line includes the attack's original target. Each creature within the Line makes a Dexterity saving throw, taking Force damage equal to the weapon's normal damage on a failed save or half as much damage on a successful one."
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -35724,6 +36956,45 @@
    {
     "name": "Wizard",
     "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Petal Storm",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a handful of flower petals)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#petal%20storm_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "An elemental force of swirling winds fills a 10-foot Cube that you can see within range. Until the spell ends, the area is Heavily Obscured and you can take a Magic action on later turns to move the Cube up to 30 feet."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Cube appears, each creature in it makes a Dexterity saving throw, taking **2d6** Slashing damage or half as much damage on a successful save. The damage increases by 1d6, to a maximum of 4d6, whenever you take a Magic action to move the Cube. A creature also makes the save when the spell's area moves into its space and when it enters the spell's area or ends its turn there. A creature makes this save only once per turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The base and maximum damage increase by 1d6 for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
    }
   ]
  },
@@ -35918,6 +37189,49 @@
    {
     "name": "Warlock",
     "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Phantasmal Beauty",
+  "source": "ValdaSpire24",
+  "level": "Level 3",
+  "school": "Illusion",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#phantasmal%20beauty_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You tap into the dreams of a creature you can see within range and create an illusory manifestation of its deepest desires, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target has the Charmed and Incapacitated conditions and a Speed of 0 for the duration."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The target makes a Wisdom saving throw whenever it takes damage and at the end of each of its turns for the duration. On a successful save, it takes **4d10** Psychic damage and the spell ends."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d10 for each spell slot level above 4."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
    },
    {
     "name": "Wizard",
@@ -36341,6 +37655,63 @@
    {
     "name": "Druid",
     "source": "PHB"
+   }
+  ]
+ },
+ {
+  "name": "Pit Trap",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (a Shovel)",
+  "duration": "8 hours",
+  "url": "https://5e.tools/spells.html#pit%20trap_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell magically creates a [hidden pit](https://5e.tools/trapshazards.html#hidden%20pit_xdmg) trap at an unoccupied space you can see on the ground within range. The 5-foot square lid of the trap looks identical to the surrounding floor. The pit drops 10 feet into an extradimensional space. If the pit extends into an open space below the lid, such as a lower floor, the pit opens into that space instead."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Study action, a creature can examine the section of floor that forms the pit's lid and make an Intelligence (*Investigation*) check against your spell save DC, detecting the pit on a successful check."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a Large or smaller creature moves onto the lid, it swings open like a trapdoor. The creature makes a Dexterity saving throw or falls into the pit, taking **1d6** Bludgeoning damage for every 10 feet it falls. On a successful save, the creature moves to a space next to the lid without falling. A creature that falls into the pit can climb or fly out as normal."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spell ends 1 minute after a creature falls into the pit. When the spell ends, the extradimensional space vanishes and creatures or objects within the pit are deposited at the top of the pit."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The pit is 10 feet deeper for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -36945,6 +38316,51 @@
    },
    {
     "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Polybrachia",
+  "source": "ValdaSpire24",
+  "level": "Level 3",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "Touch",
+  "components": "V, S, M (a pair of armbands)",
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#polybrachia_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Two muscular arms of brilliant arcane energy appear on a willing creature that you touch. These arms are fully functional and can be used to wield weapons and Shields (allowing the target to simultaneously hold 2 two-handed weapons, or 4 one-handed weapons), perform Somatic components of spells, and perform other actions. For the duration, the target has Advantage on Strength (*Athletics*) checks. The target can take a Bonus Action to make a melee attack using a weapon wielded by the arms."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Martyr",
+    "source": "ValdaMartyr"
+   },
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
     "source": "XPHB"
    }
   ]
@@ -40965,6 +42381,52 @@
   ]
  },
  {
+  "name": "Rocks Fall",
+  "source": "ValdaSpire24",
+  "level": "Level 8",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (ten dice)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#rocks%20fall_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Boulders appear in the air and fall in a 60-foot-radius, 120-foot-high Cylinder centered on a point within range. Each creature in the Cylinder makes a Dexterity saving throw. On a failed save, a target takes **10d8** Bludgeoning damage and is buried under the rubble. On a successful save, a target takes half as much damage only."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A buried creature has the Prone and Restrained conditions, and can take an action to make a Strength (*Athletics*) check against your spell save DC, freeing itself from the boulders on a success and is no longer Prone or Restrained by them."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Rope Trick",
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 2",
@@ -41113,6 +42575,48 @@
   ]
  },
  {
+  "name": "Rumbling Charge",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "V, S, M (a lump of granite)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#rumbling%20charge_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You imbue yourself with the elemental power of a landslide. When you cast this spell, you immediately move up to 30 feet in a straight line on the ground without expending movement or provoking Opportunity Attacks. If you end this movement within 5 feet of a creature, you can force that creature to make a Strength saving throw, taking **2d12** Bludgeoning damage on a failed save or half as much damage on a successful save."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d12 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Rumor",
   "source": "ValdaSpire24",
   "level": "Level 1",
@@ -41127,7 +42631,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You magically spread a rumor of 10 words or less in a 100-foot Emanation centered on you. Any creature within the Emanation that is near three or more other creatures that share a common language believes that they hear the rumor being repeated by someone nearby. Different creatures hear the rumor from different people, so a concrete origin point is impossible to discern. Generally, creatures won't become Hostile upon hearing even the most vicious rumors, but hearing a rumor can affect their attitude positively or negatively."
+    "value": "You magically spread a rumor of 10 words or less in a 100-foot Emanation originating from you. Any creature within the Emanation that can hear and understand three or more other creatures believes that they hear the rumor being repeated by someone nearby. Different creatures hear the rumor from different people, so a concrete origin is impossible to discern. Generally, creatures won't become Hostile upon hearing even the most vicious rumors, but hearing a rumor can affect their attitude positively or negatively."
    }
   ],
   "classes": [
@@ -41885,8 +43389,8 @@
     "source": "ValdaInvestigator"
    },
    {
-    "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "name": "Ranger",
+    "source": "XPHB"
    },
    {
     "name": "Wizard",
@@ -41921,6 +43425,10 @@
    {
     "name": "Witch",
     "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -42215,7 +43723,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "The portal key and any creature within the demiplane can't be targeted by any Divination spell, though a Wish spell can reveal the location of the portal key."
+    "value": "The portal key and any creature within the demiplane can't be targeted by any Divination spell, though a __Wish__ spell can reveal the location of the portal key."
    },
    {
     "name": "",
@@ -43632,6 +45140,10 @@
   ],
   "classes": [
    {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
     "name": "Witch",
     "source": "ValdaWitch"
    }
@@ -44150,6 +45662,43 @@
   ]
  },
  {
+  "name": "Skirmish",
+  "source": "ValdaSpire24",
+  "level": "Level 3",
+  "school": "Transmutation",
+  "casting_time": "Bonus action",
+  "range": "Touch",
+  "components": "V, S, M (a branch from a tree)",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#skirmish_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You enhance the mobility of one willing creature you touch, enabling them to move easily through enemy formations. For the duration, the target's Speed is doubled, its movement is unaffected by Difficult Terrain, and it doesn't provoke Opportunity Attacks."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Sky Omen",
   "source": "SpellsThatDontSuck",
   "level": "Level 6",
@@ -44448,6 +45997,48 @@
    {
     "name": "Rogue",
     "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Solar Wind",
+  "source": "ValdaSpire24",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#solar%20wind_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A gust of solar radiance bombards a creature that you can see within range. The target must succeed on a Dexterity saving throw or take **1d8** Radiant damage and be pushed 10 feet away from you."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
    }
   ]
  },
@@ -44958,7 +46549,7 @@
    {
     "name": "Harm",
     "type": "text",
-    "value": "You prod the effigy and deal **2d8** damage to the target. This damage is Bludgeoning, Piercing, Slashing or another damage type, appropriate to the means by which you harm the effigy. This damage ignores Resistance and Immunity."
+    "value": "You prod the effigy and deal **2d8** damage to the target. This damage is Bludgeoning, Piercing, Slashing, or another damage type, appropriate to the means by which you harm the effigy. This damage ignores Resistance and Immunity."
    },
    {
     "name": "Restrain",
@@ -47761,6 +49352,53 @@
   ]
  },
  {
+  "name": "Suspend",
+  "source": "ValdaSpire24",
+  "level": "Level 5",
+  "school": "Transmutation",
+  "casting_time": "Bonus action",
+  "range": "60 feet",
+  "components": "V, S",
+  "duration": "1 hour",
+  "url": "https://5e.tools/spells.html#suspend_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You temporarily end one of the following effects on a creature you can see within range. The effect resumes when the spell ends."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "One of the following conditions: Blinded, Deafened, Paralyzed, Petrified, or Poisoned",
+      "One spell affecting the target. The duration of the spell is paused and the spellcaster doesn't need to maintain *Concentration* until this spell ends.",
+      "Any reduction to one of the target's ability scores",
+      "Any reduction to the target's Hit Point maximum"
+     ]
+    }
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Suspended Silence",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 3",
@@ -48041,6 +49679,57 @@
    },
    {
     "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Sword of Judgement",
+  "source": "ValdaSpire24",
+  "level": "Level 5",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a strand of horse hair)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#sword%20of%20judgement_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell designates an area of protection in a 20-foot-radius Sphere centered on a point you choose within range. Within that Sphere, a spectral sword appears over each creature, following the creature as long as it remains within the Sphere."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever a creature within the Sphere makes an attack or casts a spell, you can force that creature to make a Dexterity saving throw, as the sword above it falls. Resolve the Dexterity saving throw before the triggering attack or spell. On a failed save, the target takes **4d8** Force damage, or half as much damage on a successful save. A creature makes this save only once per turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 for each spell slot level above 5."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Martyr",
+    "source": "ValdaMartyr"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
     "source": "XPHB"
    },
    {
@@ -48965,6 +50654,40 @@
    {
     "name": "Paladin",
     "source": "PHB"
+   }
+  ]
+ },
+ {
+  "name": "Time Hop",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "casting_time": "Bonus action",
+  "range": "Self",
+  "components": "V, S, M (the second hand of a clock)",
+  "duration": "Special",
+  "url": "https://5e.tools/spells.html#time%20hop_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You shunt yourself a few seconds into the future. Choose a duration: 1 round, 2 rounds, or 3 rounds. You vanish, reappearing after the duration at the start of your turn in the nearest unoccupied space to where you disappeared. While vanished, you are outside time; you can't take Actions or Reactions, your Speed is 0, time doesn't pass for you, your spell effects are suspended, and you can't be affected by attacks or effects."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you cast this spell using a level 3-5 spell slot you can choose a duration of 1 minute. If you cast this spell using a level 5+ spell slot, you can choose a duration of 1 hour."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ]
  },
@@ -50464,6 +52187,53 @@
   ]
  },
  {
+  "name": "Unseen Artisan",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Conjuration",
+  "casting_time": "Action or Ritual",
+  "range": "60 feet",
+  "components": "V, S, M (a pouch containing 5+ GP, which the spell consumes)",
+  "duration": "8 hours",
+  "url": "https://5e.tools/spells.html#unseen%20artisan_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell creates an Invisible, mindless, shapeless, Medium force that performs specialized tasks at your command until the spell ends. The artisan springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 Hit Point, and a Strength of 10, and it can't attack. If it drops to 0 Hit Points, the spell ends."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once on each of your turns as a Bonus Action, you can mentally command the artisan to take the Utilize action with a set of tools within range or to craft a nonmagical item. The artisan has proficiency with all Artisan's Tools and can perform tasks that a skilled human worker could do. You must provide the artisan with the tools and necessary raw materials for its work. If the artisan must make an ability check, it uses your spellcasting ability for the ability check."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you command the artisan to perform a task that would move it more than 60 feet away from you, the spell ends."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Investigator",
+    "source": "ValdaInvestigator"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Unyielding Roots",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 8",
@@ -51852,6 +53622,53 @@
   ]
  },
  {
+  "name": "Watery Tentacles",
+  "source": "ValdaSpire24",
+  "level": "Level 4",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (an octopus tentacle)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#watery%20tentacles_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Four tentacles made of water appear around you for the duration. You can direct each tentacle to force a creature you can see within range to make a Strength saving throw. A creature makes this save only once per turn. On a failed save, a creature takes **2d8** Bludgeoning damage and has the Restrained condition until the spell ends. For the duration, a Restrained creature makes a Strength saving throw at the end of each of its turns. On a failed save, it takes the Bludgeoning damage again. Whenever a creature succeeds on its saving throw against this spell, that tentacle is destroyed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Magic action, you can move each Restrained creature up to 30 feet, direct tentacles to attempt to Restrain a creature you can see within 30 feet of yourself, or use the tentacles to move a Huge or smaller object that isn't being worn or carried."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The spell creates one more tentacle for each spell slot level above 4."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Wave of Grief",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 2",
@@ -52432,6 +54249,60 @@
   ]
  },
  {
+  "name": "Whispering Wind",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Evocation",
+  "casting_time": "Action or Ritual",
+  "range": "1 mile",
+  "components": "V, S, M (a feather)",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#whispering%20wind_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You whisper a message of twenty-five words or less, while specifying up to six creatures to be the targets. If a target is in range, it can hear the message carried on the wind and can reply in a whisper that only you can hear."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The message is blocked if every path within range to the target is blocked by solid objects or areas of magical silence."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Investigator",
+    "source": "ValdaInvestigator"
+   },
+   {
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
+   },
+   {
+    "name": "Witch",
+    "source": "ValdaWitch"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Wind at Back",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 3",
@@ -52511,6 +54382,44 @@
   "classes": [
    {
     "name": "Druid",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Winter Flower",
+  "source": "ValdaSpire24",
+  "level": "Level 6",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a crystal flower)",
+  "duration": "24 hours",
+  "url": "https://5e.tools/spells.html#winter%20flower_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You cause a Tiny white flower to sprout at a point on the ground you can see within range. The flower has AC 15, 1 HP, Vulnerability to Fire damage, and Immunity to Cold and Psychic damage. During the spell's duration, you can take a Bonus Action to detonate the flower in a shower of ice. Alternatively, the flower explodes if it is reduced to 0 Hit Points."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the flower explodes, each creature within a 30-foot Emanation must make a Dexterity saving throw. On a failed save, a creature takes **10d8** Cold damage, or half as much on a successful one. The flower withers and dies if it doesn't explode within the duration. Casting this spell on the same spot every day for seven days makes the spell last until dispelled."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
     "source": "XPHB"
    }
   ]
@@ -52900,7 +54809,7 @@
   "casting_time": "Bonus action",
   "range": "30 feet",
   "components": "V",
-  "duration": "Instantaneous",
+  "duration": "1 round",
   "url": "https://5e.tools/spells.html#word%20of%20control_valdaspire24",
   "image": null,
   "description": [
@@ -52916,6 +54825,10 @@
    }
   ],
   "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
    {
     "name": "Martyr",
     "source": "ValdaMartyr"
@@ -52943,6 +54856,31 @@
     "name": "Using a Higher-Level Spell Slot",
     "type": "text",
     "value": "The damage increases by 1d6 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Martyr",
+    "source": "ValdaMartyr"
+   }
+  ]
+ },
+ {
+  "name": "Word of Frailty",
+  "source": "ValdaSpire24",
+  "level": "Level 3",
+  "school": "Necromancy",
+  "casting_time": "Bonus action",
+  "range": "30 feet",
+  "components": "V",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#word%20of%20frailty_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You recite a withering magical word to a creature you can see within range, which makes a Constitution saving throw. On a failed save, the creature's Armor Class is 10 until the end of your next turn if its AC is higher than that."
    }
   ],
   "classes": [
@@ -52995,7 +54933,7 @@
   "casting_time": "Bonus action",
   "range": "30 feet",
   "components": "V",
-  "duration": "Instantaneous",
+  "duration": "1 round",
   "url": "https://5e.tools/spells.html#word%20of%20terror_valdaspire24",
   "image": null,
   "description": [
@@ -53014,41 +54952,10 @@
    {
     "name": "Martyr",
     "source": "ValdaMartyr"
-   }
-  ]
- },
- {
-  "name": "Word of Transience",
-  "source": "ValdaSpire24",
-  "level": "Level 3",
-  "school": "Conjuration",
-  "casting_time": "Bonus action",
-  "range": "30 feet",
-  "components": "V",
-  "duration": "1 round",
-  "url": "https://5e.tools/spells.html#word%20of%20transience_valdaspire24",
-  "image": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You recite a word of banishment to a creature you can see within range, which must make a Charisma saving throw. On a failed save, the creature vanishes from its current plane of existence and appears on the Ethereal Plane (the spell ends instantly if it is already on that plane)."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "You can give the target the Incapacitated condition while it is on the Ethereal Plane. While on the Ethereal Plane, the target can perceive the plane it left, which is cast in shades of gray. It can affect and be affected only by other creatures on the Ethereal Plane, and creatures on the other plane can't perceive it unless they have a special ability that lets them perceive things on the Ethereal Plane."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target returns to the plane it left at the start of your next turn, appearing in the nearest unoccupied space to the location it left."
-   }
-  ],
-  "classes": [
-   {
-    "name": "Martyr",
-    "source": "ValdaMartyr"
+    "name": "Necromancer",
+    "source": "ValdaNecromancer"
    }
   ]
  },
@@ -53482,6 +55389,52 @@
   ]
  },
  {
+  "name": "Zephyr's Feather",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "V, S, M (a dove's feather)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#zephyr's%20feather_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You wave your hand and four alabaster feathers, magically sharpened to a razor's edge, appear and orbit around you until the spell ends. When you cast this spell and as Bonus Action on your later turns, you can expend one of the feathers and make a ranged spell attack using it against a creature you can see within 120 feet of yourself. On a hit, the target takes **1d8** Force damage."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Zero Gravity",
   "source": "ValdaSpire24",
   "level": "Level 4",
@@ -53496,17 +55449,22 @@
    {
     "name": "",
     "type": "text",
-    "value": "This spell creates a zero gravity environment within a 30-foot radius Sphere, centered on a point you can see within range."
+    "value": "This spell creates a zero gravity environment within a 30-foot-radius Sphere, centered on a point you can see within range."
    },
    {
     "name": "",
     "type": "text",
-    "value": "In a zero gravity environment, creatures and objects hang in the air until they are moved. A creature in zero gravity can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. Its Speed is otherwise 0. Once a creature or object is set into motion, it can't stop moving until it collides with an obstacle. A creature automatically continues its movement at the same speed at the start of each of its turns, and an object set in motion moves with the same speed each round after it was moved."
+    "value": "In a zero gravity environment, creatures and objects hang in the air until they are moved. A creature in zero gravity can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. Its Speed is otherwise 0. Once a creature or object is set into motion, it can't stop moving until it collides with an obstacle. A creature automatically continues its movement at the same Speed at the start of each of its turns, and an object set in motion moves with the same Speed each round after it was moved."
    },
    {
     "name": "",
     "type": "text",
-    "value": "Creatures and objects in an area of zero gravity have no weight, but still may require significant force to move. When the spell ends, affected objects and creatures fall downward."
+    "value": "Creatures and objects in an area of zero gravity have no weight, but still may require significant force to move."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the spell ends, creatures and objects in the air fall if nothing is holding them aloft."
    }
   ],
   "classes": [

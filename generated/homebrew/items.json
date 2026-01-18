@@ -81,10 +81,10 @@
  },
  {
   "name": "Amphibious Adaptation",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#amphibious%20adaptation_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#amphibious%20adaptation_valdaspire24",
   "image": null,
-  "value": "400 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
@@ -94,12 +94,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Donor: Any Creature With the Amphibious or Water Breathing trait*"
+    "value": "*Donor: Any Creature with the Amphibious or Water Breathing Trait*"
    },
    {
     "name": "",
     "type": "text",
-    "value": "You have grafted the fins and gills of an aquatic creature to your body. You have a Swim Speed equal to your Speed and you can breathe air and water."
+    "value": "This graft attaches the fins and gills of an aquatic creature to your body. You have a Swim Speed equal to your Speed and you can breathe air and water."
    }
   ],
   "properties": []
@@ -192,6 +192,31 @@
   "properties": []
  },
  {
+  "name": "Angelic Wings",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#angelic%20wings_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Celestial with a Fly Speed*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While this graft is attached, you have a Fly Speed equal to your Speed."
+   }
+  ],
+  "properties": []
+ },
+ {
   "name": "Ankh of Ra",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#ankh%20of%20ra_darkmatter24",
@@ -212,6 +237,76 @@
     "name": "Magic Item Set",
     "type": "text",
     "value": "Attuning to this ankh and a Heretical Sunstaff of Ra and Solar Wings of Ra counts as being attuned to a single item. If you are attuned to this ankh and one of these items, the ankh doesn't become nonmagical once used. Instead, it temporarily loses its luster and can't be used again until the next dawn."
+   }
+  ],
+  "properties": []
+ },
+ {
+  "name": "Antimagic Eye",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#antimagic%20eye_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "varies"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with Magic Resistance Trait*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use this graft to cast __Dispel Magic__. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast it with this graft (choose each time you install this graft). When you cast the spell using this graft, the level of spell that you automatically end on the target is determined by the donor's Challenge Rating, as shown on the Antimagic Eyes table."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once you activate this graft, you can't do so again until you finish a Long Rest."
+   },
+   {
+    "name": "Antimagic Eyes",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Antimagic Eyes",
+     "headers": [
+      "Name",
+      "Donor's CR",
+      "Spell Level",
+      "Rarity"
+     ],
+     "rows": [
+      [
+       "Lesser",
+       "1/8-4",
+       "1",
+       "Common"
+      ],
+      [
+       "Greater",
+       "5-10",
+       "3",
+       "Uncommon"
+      ],
+      [
+       "Superior",
+       "11-16",
+       "5",
+       "Rare"
+      ],
+      [
+       "Supreme",
+       "17+",
+       "7",
+       "Very Rare"
+      ]
+     ]
+    }
    }
   ],
   "properties": []
@@ -559,10 +654,10 @@
  },
  {
   "name": "Arcane Synapses",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#arcane%20synapses_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#arcane%20synapses_valdaspire24",
   "image": null,
-  "value": "800 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
@@ -572,12 +667,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Donor: Any Creature with a Spellcasting Action*"
+    "value": "*Donor: Any Creature with the Spellcasting Action*"
    },
    {
     "name": "",
     "type": "text",
-    "value": "You have stolen a bit of arcane potential by inserting additional nerves into your brain. You learn one cantrip of your choice from the Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this cantrip when you cast it with this graft (choose each time you install this graft)."
+    "value": "These additional nerves grant arcane potential once installed in the brain. The GM chooses one of the donor's spells. You always have that spell prepared. You can cast it once using this graft without expending a spell slot. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast it with this graft (choose each time you install this graft)."
    }
   ],
   "properties": []
@@ -1467,31 +1562,6 @@
   "properties": []
  },
  {
-  "name": "Beast's Hide",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#beast's%20hide_valdaalchemist",
-  "image": null,
-  "value": "700 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "uncommon"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Large or Larger Beast*"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have transplanted the thick hide from a wild Beast onto your body. Your base Armor Class equals 13 plus your Dexterity modifier. You can wear armor on top of your Beast's Hide, and you can use either armor to determine your AC. You can use a Shield and still gain this benefit."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Beggar's Wisdom",
   "source": "FoEQuickstone",
   "url": "https://5e.tools/items.html#beggar's%20wisdom_foequickstone",
@@ -1507,36 +1577,6 @@
     "name": "",
     "type": "text",
     "value": "The wit and wisdom of Beggar Dane is considered to be one of the national treasures of Breland. This small leatherbound book is a comprehensive, enchanted edition of his proverbs and advice. As a Magic action while holding this book, you can declare your desire for assistance with a particular task, causing the book to open to a page containing a quip or mote of wisdom that is strangely relevant to the situation at hand. You add 1d4 to the next ability check you make within the next minute. Once this property is used, you cannot benefit from any copy of *Beggar's Wisdom* until the next dawn."
-   }
-  ],
-  "properties": []
- },
- {
-  "name": "Bestial Weapons",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#bestial%20weapons_valdaalchemist",
-  "image": null,
-  "value": "150 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "common"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Any Creature with a Bite or Claw Action*"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have implanted either the teeth or claws from a monster into yourself, which you can use to make Unarmed Strikes. A set of claws occupy the Arms slot, whereas teeth occupy the Head slot."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Slashing damage (for Claws) or Piercing damage (for Teeth) equal to 1d6 plus your Strength or Dexterity modifier instead of the strike's normal damage."
    }
   ],
   "properties": []
@@ -2683,6 +2723,31 @@
   ]
  },
  {
+  "name": "Burrowing Adaptation",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#burrowing%20adaptation_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with a Burrow Speed of 10+ Feet*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have a Burrow Speed equal to half your Speed. You can dig through sand, earth, mud, or ice, but you can't burrow through solid rock."
+   }
+  ],
+  "properties": []
+ },
+ {
   "name": "Caltrops",
   "source": "ValdaCraftsman",
   "url": "https://5e.tools/items.html#caltrops_valdacraftsman",
@@ -2796,31 +2861,6 @@
   ]
  },
  {
-  "name": "Charging Hooves",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#charging%20hooves_valdaalchemist",
-  "image": null,
-  "value": "500 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "uncommon"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Any Creature with a Gore or Hooves Action*"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have replaced your legs with those of a running creature. Once on each of your turns, when you move at least 15 feet in a straight line, you can move up to 10 additional feet in that direction without spending movement."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Claw Gauntlet",
   "source": "ValdaSpire24",
   "url": "https://5e.tools/items.html#claw%20gauntlet_valdaspire24",
@@ -2882,10 +2922,10 @@
  },
  {
   "name": "Climbing Apparatus",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#climbing%20apparatus_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#climbing%20apparatus_valdaspire24",
   "image": null,
-  "value": "800 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
@@ -2900,7 +2940,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You have replaced or complemented your lower limbs with those of a climbing creature. You have a Climb Speed equal to your Speed."
+    "value": "Once attached, this graft allows you to cling to surfaces and climb with agility. You gain a Climb Speed equal to your Speed."
    }
   ],
   "properties": []
@@ -3493,31 +3533,6 @@
   "properties": []
  },
  {
-  "name": "Darkvision",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#darkvision_valdaalchemist",
-  "image": null,
-  "value": "200 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "uncommon"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Any Creature with Darkvision*"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have replaced your own eyes with those of a nocturnal or subterranean monster. You have Darkvision with a range of 60 feet."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Data Drive",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#data%20drive_darkmatter24",
@@ -3800,31 +3815,6 @@
   "properties": []
  },
  {
-  "name": "Doppel-Blooded",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#doppel-blooded_valdaalchemist",
-  "image": null,
-  "value": "1.200 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "uncommon"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Any Creature with the Shape-Shift Action*"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "As a Magic action, you can alter your appearance for up to 1 hour. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and other distinguishing characteristics, if any. You can make yourself appear as a member of another species, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this ability to become quadrupedal, for instance."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Double Laser Sword",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#double%20laser%20sword_darkmatter24",
@@ -3868,60 +3858,85 @@
  },
  {
   "name": "Draconis Fundamentum",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#draconis%20fundamentum_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#draconis%20fundamentum_valdaspire24",
   "image": null,
-  "value": "750 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
-   "uncommon"
+   "varies"
   ],
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "*Donor: Dragon, Humanoid, or Monstrosity with a Breath Weapon Action (such as Fire Breath)*"
+    "value": "*Donor: Any Dragon with a Breath Weapon, Such as Fire Breath*"
    },
    {
     "name": "",
     "type": "text",
-    "value": "You have installed the mighty source of breath weapons into your body. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes **1d10** damage. The damage is the same type as the donor's breath weapon. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10)."
+    "value": "This graft installs the source of breath weapons into your body. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a Cone. Each creature in that Cone must make a Dexterity saving throw, taking damage as shown on the Draconis Fundamentum table of the same type as the donor's breath weapon, or half as much damage on a successful save. The breath weapon's damage, save DC, and area of effect vary with the donor's Challenge Rating, as shown on the Draconis Fundamentum table."
    },
    {
     "name": "",
     "type": "text",
-    "value": "You can use this graft a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
-   }
-  ],
-  "properties": []
- },
- {
-  "name": "Dragon's Hide",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#dragon's%20hide_valdaalchemist",
-  "image": null,
-  "value": "5.000 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "rare"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Large or Larger Dragon*"
+    "value": "Once you activate this graft, you can't do so again until you finish a Long Rest. You can also restore your use of it by expending a number of Hit Point Dice as shown on the Draconis Fundamentum table (no action required)."
    },
    {
-    "name": "",
-    "type": "text",
-    "value": "You have transplanted the scaly, diamond-like hide of a Dragon onto your body. Your base Armor Class equals 17 (your Dexterity modifier doesn't affect this number). You can wear armor on top of your Dragon's Hide, and you can use either armor to determine your AC. You can use a Shield and still gain this benefit."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You also gain Resistance to one of the following damage types to which the donor Dragon was immune: Acid, Cold, Fire, Lightning, or Poison damage."
+    "name": "Draconis Fundamentum",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Draconis Fundamentum",
+     "headers": [
+      "Name",
+      "Donor's CR",
+      "Damage",
+      "DC",
+      "Cone Area",
+      "Hit Point Dice",
+      "Rarity"
+     ],
+     "rows": [
+      [
+       "Wyrmling",
+       "1/8-4",
+       "2d8",
+       "13",
+       "15 feet",
+       "1",
+       "Uncommon"
+      ],
+      [
+       "Young",
+       "5-10",
+       "4d8",
+       "15",
+       "30 feet",
+       "2",
+       "Rare"
+      ],
+      [
+       "Adult",
+       "11-16",
+       "6d8",
+       "17",
+       "60 feet",
+       "4",
+       "Very Rare"
+      ],
+      [
+       "Ancient",
+       "17+",
+       "8d8",
+       "19",
+       "90 feet",
+       "6",
+       "Legendary"
+      ]
+     ]
+    }
    }
   ],
   "properties": []
@@ -4377,31 +4392,6 @@
     "name": "",
     "type": "text",
     "value": "This book catalogs many hundreds of bloody ink blots. While holding the book, you can cast __Blood Print__ from it. If you consult the book as a Magic action, you can determine the following about any such print: the specific kind of creature to which the blood belongs (such as a human or a unicorn), its approximate age, sex, and its health (assessed as poor or healthy)."
-   }
-  ],
-  "properties": []
- },
- {
-  "name": "Energetic Suture",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#energetic%20suture_valdaalchemist",
-  "image": null,
-  "value": "3.000 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "rare"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Any Creature with Immunity or Resistance to Acid, Cold, Fire, Lightning, Poison, or Thunder damage*"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have Resistance to one of the following damage types to which the donor had Resistance or Immunity: Acid, Cold, Fire, Lightning, Poison, or Thunder."
    }
   ],
   "properties": []
@@ -5740,10 +5730,10 @@
  },
  {
   "name": "Heart of Steel",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#heart%20of%20steel_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#heart%20of%20steel_valdaspire24",
   "image": null,
-  "value": "350 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
@@ -5758,7 +5748,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You have replaced your heart with a Construct's core. You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a motionless state, during which you retain consciousness."
+    "value": "This Construct core acts as a replacement for one's heart. Once installed, you don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a motionless state, during which you retain consciousness."
    }
   ],
   "properties": []
@@ -5892,6 +5882,61 @@
     "name": "",
     "type": "text",
     "value": "You also count as one size larger when determining your carrying capacity."
+   }
+  ],
+  "properties": []
+ },
+ {
+  "name": "Heavy Legs",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#heavy%20legs_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Large or Larger Monstrosity*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once these legs are installed, you can use your Bonus Action to kick a creature of Large size or smaller within 5 feet of you. Make an Unarmed Strike. On a hit, the target takes no damage but is pushed 5 feet away from you."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You also count as one size larger when determining your carrying capacity."
+   }
+  ],
+  "properties": []
+ },
+ {
+  "name": "Hellfire Blood",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#hellfire%20blood_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Fiend*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you take damage from a creature you can see within 30 feet of yourself, you can take a Reaction and expend a Hit Point Die to throw vengeful hellfire. The creature that damaged you takes Fire damage equal to one roll of the Hit Point Die plus your Constitution modifier."
    }
   ],
   "properties": []
@@ -6075,31 +6120,6 @@
   ]
  },
  {
-  "name": "Horns",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#horns_valdaalchemist",
-  "image": null,
-  "value": "200 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "uncommon"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Any Creature with a Gore, Horns, Ram, or Tusks Action*"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You attach a sturdy pair of horns or tusks onto your body that you can use to make Unarmed Strikes. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal damage equal to 1d6 plus your Strength or Dexterity modifier instead of the strike's normal damage. The damage is the same type as the donor's attack. If you move at least 20 feet straight toward the target immediately before the hit, the target has the Prone condition, if it is Large or smaller."
-   }
-  ],
-  "properties": []
- },
- {
   "name": "Hoverboard",
   "source": "DarkMatter24",
   "url": "https://5e.tools/items.html#hoverboard_darkmatter24",
@@ -6232,31 +6252,6 @@
     "name": "",
     "type": "text",
     "value": "You have installed thrusters into your legs and back. Once on each of your turns, when you move at least 15 feet in a straight Line, you can move up to 10 additional feet in that direction without spending movement. Alternatively, you can spend 10 feet of movement to jump 10 feet vertically."
-   }
-  ],
-  "properties": []
- },
- {
-  "name": "Indiscernible Anatomy",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#indiscernible%20anatomy_valdaalchemist",
-  "image": null,
-  "value": "1.500 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "uncommon"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Medium or Larger Aberration*"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have spliced aberrant genetics into your body, which have altered your internal organs. Any Critical Hit against you becomes a normal hit."
    }
   ],
   "properties": []
@@ -6937,10 +6932,10 @@
  },
  {
   "name": "Leaping Legs",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#leaping%20legs_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#leaping%20legs_valdaspire24",
   "image": null,
-  "value": "300 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
@@ -6950,17 +6945,42 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Donor: Any Creature with the Standing Leap Trait or Pounce Action*"
+    "value": "*Donor: Any Creature with the Standing Leap Trait or Leap Bonus Action*"
    },
    {
     "name": "",
     "type": "text",
-    "value": "The distance of your Long and High Jumps increases by 10 feet (this extra distance costs movement as normal). You suffer no penalty for making a standing High or Long Jump."
+    "value": "You can take a Bonus Action to jump up to 15 feet by spending 5 feet of movement."
+   }
+  ],
+  "properties": []
+ },
+ {
+  "name": "Legendary Trophy",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#legendary%20trophy_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with Legendary Actions*"
    },
    {
     "name": "",
     "type": "text",
-    "value": "You can take a Reaction when you fall to reduce any damage you take from the fall by an amount equal to five times your Proficiency Bonus."
+    "value": "You can take a Magic action to display this trophy-graft and give yourself and each of your allies within 30 feet of yourself Heroic Inspiration."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once you activate this graft, you can't do so again until you finish a Long Rest."
    }
   ],
   "properties": []
@@ -7365,6 +7385,31 @@
   "properties": []
  },
  {
+  "name": "Mechanical Limb",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#mechanical%20limb_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Medium or Larger Construct*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This additional arm installs beneath your normal arms. This arm can be used to hold weapons and Shields (allowing you to simultaneously hold a two-handed weapon and a one-handed weapon), perform Somatic components of spells, and perform other actions, though the arm doesn't grant you additional actions."
+   }
+  ],
+  "properties": []
+ },
+ {
   "name": "Meteor Chain",
   "source": "ValdaSpire24",
   "url": "https://5e.tools/items.html#meteor%20chain_valdaspire24",
@@ -7459,6 +7504,81 @@
   "properties": [
    "AC 14 + Dex (max 2)"
   ]
+ },
+ {
+  "name": "Monstrous Bite",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#monstrous%20bite_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with a Bite Action*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This graft attaches the teeth of a monster onto your jaws. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Piercing damage equal to 1d6 plus your Strength or Dexterity modifier instead of the strike's normal damage. When you score a Critical Hit with a melee attack, you can make an attack with your Monstrous Bite as a Bonus Action."
+   }
+  ],
+  "properties": []
+ },
+ {
+  "name": "Monstrous Hide",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#monstrous%20hide_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with AC 17+ Without Armor*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your base Armor Class equals 13 plus your Dexterity modifier. You can wear armor on top of your Monstrous Hide, and you can use either armor to determine your AC. You can use a Shield and still gain this benefit."
+   }
+  ],
+  "properties": []
+ },
+ {
+  "name": "Monstrous Weapon",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#monstrous%20weapon_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "varies"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with a Claw or Rend Action*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This graft attaches a monster's prominent claws onto your hands. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Slashing damage as shown on the Monstrous Weapon table plus your Strength or Dexterity modifier instead of the strike's normal damage."
+   }
+  ],
+  "properties": []
  },
  {
   "name": "Motion Tracker",
@@ -7627,6 +7747,31 @@
   ]
  },
  {
+  "name": "Nocturnal Eyes",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#nocturnal%20eyes_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with Darkvision*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "These eyes can see in the dark. Once installed, you gain Darkvision with a range of 60 feet."
+   }
+  ],
+  "properties": []
+ },
+ {
   "name": "Nunchaku",
   "source": "ValdaSpire24",
   "url": "https://5e.tools/items.html#nunchaku_valdaspire24",
@@ -7715,6 +7860,31 @@
     "name": "",
     "type": "text",
     "value": "The original Oni Braid was designed by a hobgoblin artificer who wished to see eye to eye with all the people of Droaam, though it's rumored that she designed it to set everyone's height to be one inch less than her own."
+   }
+  ],
+  "properties": []
+ },
+ {
+  "name": "Ooze Infusion",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#ooze%20infusion_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Ooze*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This graft causes your internal anatomy to become semi-fluid. Any Critical Hit against you becomes a normal hit."
    }
   ],
   "properties": []
@@ -7810,25 +7980,25 @@
  },
  {
   "name": "Oversized Arms",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#oversized%20arms_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#oversized%20arms_valdaspire24",
   "image": null,
-  "value": "6.000 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
-   "uncommon"
+   "rare"
   ],
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "*Donor: Giant*"
+    "value": "*Donor: Any Giant*"
    },
    {
     "name": "",
     "type": "text",
-    "value": "You have replaced your arms with a Giant's massive limbs. Your reach is 5 feet greater whenever you make an attack with a Melee weapon or Unarmed Strike. Additionally, you have Advantage on Strength checks and saving throws."
+    "value": "Once this graft is installed, your reach is 5 feet greater whenever you make an attack with a Melee weapon or Unarmed Strike."
    }
   ],
   "properties": []
@@ -8303,25 +8473,25 @@
  },
  {
   "name": "Prehensile Tail",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#prehensile%20tail_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#prehensile%20tail_valdaspire24",
   "image": null,
-  "value": "400 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
-   "uncommon"
+   "common"
   ],
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "*Donor: Any Creature with a Tail Action*"
+    "value": "*Donor: Any Creature with a Tail*"
    },
    {
     "name": "",
     "type": "text",
-    "value": "You attach a muscular, prehensile tail, which you can use to make Unarmed Strikes. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to 1d6 plus your Strength or Dexterity modifier instead of the strike's normal damage. Additionally, you can hold and manipulate objects and weapons with your tail, but you can't make attacks with weapons held by your tail or wield a Shield with your tail and gain its benefits."
+    "value": "This graft attaches a flexible tail to your body. You can hold and manipulate objects and weapons with your tail, but you can't make attacks with it and it can't hold a Shield."
    }
   ],
   "properties": []
@@ -8700,10 +8870,10 @@
  },
  {
   "name": "Regenerating Marrow",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#regenerating%20marrow_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#regenerating%20marrow_valdaspire24",
   "image": null,
-  "value": "2.500 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
@@ -8718,7 +8888,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You have replaced your bone marrow with that of a regenerating creature. If you are *Bloodied* and have at least 1 Hit Point at the start of each of your turns, you can expend one of your Hit Dice, roll the die, and regain a number of Hit Points equal to the roll plus your Constitution modifier."
+    "value": "If you are *Bloodied* and have at least 1 Hit Point at the start of each of your turns, you can take a Bonus Action and expend one of your Hit Dice, roll the die, and regain a number of Hit Points equal to the roll plus your Constitution modifier (no action required)."
    }
   ],
   "properties": []
@@ -8929,10 +9099,10 @@
  },
  {
   "name": "Replacement",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#replacement_valdaalchemist",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#replacement_valdaspire24",
   "image": null,
-  "value": "100 gp",
+  "value": null,
   "weight": null,
   "type": [
    "monstrous graft",
@@ -8942,12 +9112,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "*Donor: Any*"
+    "value": "*Donor: Any Donor*"
    },
    {
     "name": "",
     "type": "text",
-    "value": "One or more of your organs or limbs has been replaced with a part harvested from a monster. A Replacement can replace an amputated limb or missing organ but can't revive a creature that has died. Replacement limbs can look like the original limb, or can demonstrate obvious monstrous characteristics, depending on the donor. A Replacement organ or limb takes up one body slot relevant to it; for example, a troll's hand takes the Arms slot and a replacement kidney takes up the Internal slot. You can have more than one Replacement in a single body slot."
+    "value": "This graft replaces an organ or limb. A Replacement can replace an amputated limb or missing organ but can't revive a creature that has died. A Replacement organ or limb takes up one body slot relevant to it; for example, a monstrous hand takes the Arms slot and a Replacement kidney takes up the Internal slot. You can have more than one Replacement in a single body slot."
    }
   ],
   "properties": []
@@ -9059,6 +9229,31 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": []
+ },
+ {
+  "name": "Resistance Suture",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#resistance%20suture_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with Immunity to Acid, Cold, Fire, Lightning, Poison, or Thunder Damage*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have Resistance to one of the following damage types to which the donor had Immunity: Acid, Cold, Fire, Lightning, Poison, or Thunder."
    }
   ],
   "properties": []
@@ -9604,6 +9799,31 @@
     "name": "Planetary Scan",
     "type": "text",
     "value": "If the ship has an Engineer, they can take the Use System action to perform a scan of a planet within 1,000 miles of the ship. The Engineer makes an Intelligence (*Investigation*) check. On a success, you learn if the planet has major environmental hazards, if the planet's surface is inhabited, and other details of the GM's choice."
+   }
+  ],
+  "properties": []
+ },
+ {
+  "name": "Shapeshifter Blood",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#shapeshifter%20blood_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with the Shape-Shift Action or Bonus Action*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can shape-shift over the course of 1 minute to perfectly alter your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and other distinguishing characteristics. You can make yourself appear as a member of another species, though none of your statistics change. You can't appear as a creature of a different size, and your basic shape stays the same."
    }
   ],
   "properties": []
@@ -10199,6 +10419,31 @@
   "properties": []
  },
  {
+  "name": "Sprinting Legs",
+  "source": "ValdaSpire24",
+  "url": "https://5e.tools/items.html#sprinting%20legs_valdaspire24",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "monstrous graft",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Donor: Any Creature with Speed of 60+ feet*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While this graft is attached, your Speed increases by 10 feet and Opportunity Attacks have Disadvantage against you."
+   }
+  ],
+  "properties": []
+ },
+ {
   "name": "Staff of the Coven",
   "source": "WorldsBeyondNumberWitch",
   "url": "https://5e.tools/items.html#staff%20of%20the%20coven_worldsbeyondnumberwitch",
@@ -10494,36 +10739,6 @@
    "finesse",
    "mastery: topple"
   ]
- },
- {
-  "name": "Stench",
-  "source": "ValdaAlchemist",
-  "url": "https://5e.tools/items.html#stench_valdaalchemist",
-  "image": null,
-  "value": "4.000 gp",
-  "weight": null,
-  "type": [
-   "monstrous graft",
-   "rare"
-  ],
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "*Donor: Any Creature with the Stench Trait*"
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "As a Bonus Action, you can release a foul liquid contained within an organ taken from the donor creature. A creature you choose within 10 feet of you must succeed on a Constitution saving throw (DC 8 plus your Constitution modifier and your Proficiency Bonus) or have the Poisoned condition until the end of your next turn."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You can use this graft a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
-   }
-  ],
-  "properties": []
  },
  {
   "name": "Superior Shipmending Spray",
