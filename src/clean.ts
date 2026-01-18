@@ -55,19 +55,11 @@ function pattern(name: string, count: number) {
 function styles(text: string, noFormat: boolean): string {
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     if (noFormat) {
-        // Very specific case for Keith Baker's Frontiers of Eberron Quickstone, where
-        // A nested object with @i is used that completely surrounds another object.
-        // TODO a better solution would be to adapt the function to handle recursive styling
-        text = text.replaceAll(/^\{@i (.*)\}$/g, '$1');
-
         text = text.replaceAll(pattern('i', 1), '$1');
         text = text.replaceAll(pattern('b', 1), '$1');
         text = text.replaceAll(pattern('bold', 1), '$1');
         text = text.replaceAll(pattern('italic', 1), '$1');
     } else {
-        // Idem Keith baker
-        text = text.replaceAll(/^\{@i (.*)\}$/g, '*$1*');
-
         text = text.replaceAll(pattern('i', 1), '*$1*');
         text = text.replaceAll(pattern('b', 1), '**$1**');
         text = text.replaceAll(pattern('bold', 1), '**$1**');
@@ -137,37 +129,41 @@ function actSaveSuccessOrFail(text: string, noFormat: boolean): string {
     return text;
 }
 
-function atk(text: string, _noFormat: boolean): string {
+function atk(text: string, noFormat: boolean): string {
     // converterutils-creature.js:584
     const replacements = new Map<string, string>([
-        ['{@atk mw}', 'Melee Weapon Attack'],
-        ['{@atk rw}', 'Ranged Weapon Attack'],
-        ['{@atk m}', 'Melee Attack'],
-        ['{@atk r}', 'Ranged Attack'],
-        ['{@atk a}', 'Area Attack'],
-        ['{@atk aw}', 'Area Weapon Attack'],
-        ['{@atk ms}', 'Melee Spell Attack'],
-        ['{@atk mw,rw}', 'Melee or Ranged Weapon Attack'],
-        ['{@atk rs}', 'Ranged Spell Attack'],
-        ['{@atk ms,rs}', 'Melee or Ranged Spell Attack'],
-        ['{@atk m,r}', 'Melee or Ranged Attack'],
-        ['{@atk mp}', 'Melee Power Attack'],
-        ['{@atk rp}', 'Ranged Power Attack'],
-        ['{@atk mp,rp}', 'Melee or Ranged Power Attack'],
-        ['{@atkr m}', 'Melee Attack Roll'],
-        ['{@atkr mw}', 'Melee Weapon Attack Roll'],
-        ['{@atkr ms}', 'Melee Spell Attack Roll'],
-        ['{@atkr r}', 'Ranged Attack Roll'],
-        ['{@atkr m,r}', 'Melee or Ranged Attack Roll'],
-        ['{@atk g}', 'Magical Attack'],
+        ['{@atk mw}', 'Melee Weapon Attack:'],
+        ['{@atk rw}', 'Ranged Weapon Attack:'],
+        ['{@atk m}', 'Melee Attack:'],
+        ['{@atk r}', 'Ranged Attack:'],
+        ['{@atk a}', 'Area Attack:'],
+        ['{@atk aw}', 'Area Weapon Attack:'],
+        ['{@atk ms}', 'Melee Spell Attack:'],
+        ['{@atk mw,rw}', 'Melee or Ranged Weapon Attack:'],
+        ['{@atk rs}', 'Ranged Spell Attack:'],
+        ['{@atk ms,rs}', 'Melee or Ranged Spell Attack:'],
+        ['{@atk m,r}', 'Melee or Ranged Attack:'],
+        ['{@atk mp}', 'Melee Power Attack:'],
+        ['{@atk rp}', 'Ranged Power Attack:'],
+        ['{@atk mp,rp}', 'Melee or Ranged Power Attack:'],
+        ['{@atkr m}', 'Melee Attack Roll:'],
+        ['{@atkr mw}', 'Melee Weapon Attack Roll:'],
+        ['{@atkr ms}', 'Melee Spell Attack Roll:'],
+        ['{@atkr r}', 'Ranged Attack Roll:'],
+        ['{@atkr m,r}', 'Melee or Ranged Attack Roll:'],
+        ['{@atk g}', 'Magical Attack:'],
     ]);
 
-    for (const pattern of replacements.keys()) {
-        text = text.replaceAll(pattern + ' ', '+');
+    if (!noFormat) {
+        // if formatted, surround the replacements with italics
+        for (const [pattern, replace] of replacements.entries()) {
+            replacements.set(pattern, `*${replace}*`);
+        }
     }
 
-    text = text.replaceAll(/\{@atk rw\} /g, '+');
-    text = text.replaceAll(/\{@atk rw\}/g, '+');
+    for (const [pattern, replace] of replacements.entries()) {
+        text = text.replaceAll(pattern, replace);
+    }
 
     return text;
 }
@@ -387,7 +383,13 @@ function hazard(text: string, _noFormat: boolean): string {
 }
 
 function hit(text: string, noFormat: boolean): string {
-    text = text.replaceAll(pattern('hit', 1), '$1');
+    text = text.replaceAll(pattern('hit', 1), (_, p1) => {
+        if (!p1.startsWith('+') && !p1.startsWith('-')) {
+            // Add missing plus symbol in cases like {@hit 10} (should become +10)
+            p1 = '+' + p1;
+        }
+        return p1;
+    });
 
     if (noFormat) {
         text = text.replaceAll(pattern('h', 0), 'Hit: ');
@@ -656,9 +658,8 @@ function vehupgrade(text: string, noFormat: boolean): string {
  * Main function
  * ========================================================= */
 
-export function cleanDNDText(text: string, noFormat: boolean = false): string {
+function cleanSingleText(text: string, noFormat: boolean): string {
     const functions = [
-        // Styles are handled the earliest as possible, these often appear within other brackets so should be handled first.
         styles,
         $5etools,
         actSave,
@@ -676,7 +677,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         chance,
         class$,
         classFeature,
-        color, // Color is applied twice, because of 'Mage Hand Press; Dark Matter - 2024.json' which contains nested colors
         color,
         comic,
         condition,
@@ -726,12 +726,48 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         trap,
         vehicle,
         vehupgrade,
-        // Notes should be parsed at the end, because they might contain subqueries
         note,
     ];
 
     for (const func of functions) {
         text = text.clean(func, noFormat);
+    }
+
+    return text;
+}
+
+export function cleanDNDText(text: string, noFormat: boolean = false): string {
+    // It is possible for text to contain nested tags (e.g. {@ bold {@i ...}}).
+    // The nested values should be handled first. In order to do so, a stack is
+    // used to keep track of the most recently found '{', which is then cleaned
+    // first.
+    const original = text; // Keep track of the original for debugging
+
+    const stack: number[] = [];
+    let i = 0;
+    while (i < text.length) {
+        if (text[i] === '{') {
+            stack.push(i);
+            i++;
+        } else if (text[i] === '}') {
+            const start = stack.pop();
+            if (start === undefined) {
+                throw new Error(`String '${text}' in '${original}' contains unclosed '}'`);
+            }
+
+            const substring = text.slice(start, i + 1);
+            const cleaned = cleanSingleText(substring, noFormat);
+            text = text.replaceAll(substring, cleaned);
+            i = Math.max(i - substring.length, 0);
+        } else {
+            i++;
+        }
+    }
+
+    if (stack.length > 0) {
+        throw new Error(
+            `String '${text}' contains an unresolved tag at index ${stack[stack.length - 1]} in '${original}'`
+        );
     }
 
     // Fix Bree-Yarking (normalizes discord italic/bold formatting)
