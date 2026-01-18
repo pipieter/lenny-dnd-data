@@ -55,19 +55,11 @@ function pattern(name: string, count: number) {
 function styles(text: string, noFormat: boolean): string {
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     if (noFormat) {
-        // Very specific case for Keith Baker's Frontiers of Eberron Quickstone, where
-        // A nested object with @i is used that completely surrounds another object.
-        // TODO a better solution would be to adapt the function to handle recursive styling
-        text = text.replaceAll(/^\{@i (.*)\}$/g, '$1');
-
         text = text.replaceAll(pattern('i', 1), '$1');
         text = text.replaceAll(pattern('b', 1), '$1');
         text = text.replaceAll(pattern('bold', 1), '$1');
         text = text.replaceAll(pattern('italic', 1), '$1');
     } else {
-        // Idem Keith baker
-        text = text.replaceAll(/^\{@i (.*)\}$/g, '*$1*');
-
         text = text.replaceAll(pattern('i', 1), '*$1*');
         text = text.replaceAll(pattern('b', 1), '**$1**');
         text = text.replaceAll(pattern('bold', 1), '**$1**');
