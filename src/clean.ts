@@ -97,10 +97,12 @@ function actSave(text: string, noFormat: boolean): string {
 
 function actSaveFail(text: string, noFormat: boolean): string {
     if (noFormat) {
+        text = text.replaceAll(pattern('actSaveFail 3', 0), 'Third Failure: ');
         text = text.replaceAll(pattern('actSaveFail 2', 0), 'Second Failure: ');
         text = text.replaceAll(pattern('actSaveFail 1', 0), 'First Failure: ');
         text = text.replaceAll(pattern('actSaveFail', 0), 'Failure: ');
     } else {
+        text = text.replaceAll(pattern('actSaveFail 3', 0), '*Third Failure:* ');
         text = text.replaceAll(pattern('actSaveFail 2', 0), '*Second Failure:* ');
         text = text.replaceAll(pattern('actSaveFail 1', 0), '*First Failure:* ');
         text = text.replaceAll(pattern('actSaveFail', 0), '*Failure:* ');
@@ -153,6 +155,8 @@ function atk(text: string, _noFormat: boolean): string {
         ['{@atk rp}', 'Ranged Power Attack'],
         ['{@atk mp,rp}', 'Melee or Ranged Power Attack'],
         ['{@atkr m}', 'Melee Attack Roll'],
+        ['{@atkr mw}', 'Melee Weapon Attack Roll'],
+        ['{@atkr ms}', 'Melee Spell Attack Roll'],
         ['{@atkr r}', 'Ranged Attack Roll'],
         ['{@atkr m,r}', 'Melee or Ranged Attack Roll'],
         ['{@atk g}', 'Magical Attack'],
