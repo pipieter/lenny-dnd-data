@@ -7818,7 +7818,7 @@
      "**AC**: 14",
      "**HP**: 30 (4d8 + 12)",
      "**Speed**: *walk* 30 Ft., *fly* 30 Ft. (Hover), *canHover* (hover)",
-     "**Resistances**: acid, bludgeoning, cold, fire, lightning, necrotic, piercing, slashing, thunder",
+     "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
      "**Immunities**: poison, necrotic; exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
      "**Senses**: Darkvision 120 ft.",
      "**Languages**: understands Common plus one other language but can't speak",
@@ -7864,7 +7864,7 @@
       "Score",
       "14",
       "14",
-      "11",
+      "13",
       "10",
       "12",
       "12"
@@ -7873,18 +7873,18 @@
       "Mod.",
       "+2",
       "+2",
-      "+0",
+      "+1",
       "+0",
       "+1",
       "+1"
      ],
      [
       "Save.",
-      "+4",
       "+2",
-      "+3",
+      "+2",
+      "+1",
       "+0",
-      "+3",
+      "+1",
       "+1"
      ]
     ]
@@ -8171,7 +8171,7 @@
     "caption": "",
     "entries": [
      "**AC**: 18",
-     "**HP**: 7 plus seven times your Captain level (the champion has a number of Hit Dice [d8s] equal to your Captain level)",
+     "**HP**: 6 plus six times your Captain level (the champion has a number of Hit Dice [d8s] equal to your Captain level)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: animal handling +2, athletics +5",
      "**Languages**: Common plus one other language"
@@ -8736,7 +8736,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Improved Smite. The Radiant damage of the templar's Smite increases by 1d8 (3d8) and again at level 17 (4d8)."
+    "value": "Improved Smite. The Radiant damage of the templar's Smite increases by 1d8 (3d8) and again at Captain level 17 (4d8)."
    },
    {
     "name": "",
@@ -8939,7 +8939,7 @@
  {
   "name": "Alchemy Golem",
   "source": "ValdaAlchemist",
-  "subtitle": "Large monstrosity",
+  "subtitle": "Large construct",
   "summonedBySpell": null,
   "summonedByClass": "Alchemist (ValdaAlchemist)",
   "tokenUrl": null,
@@ -9002,7 +9002,6 @@
      "**AC**: 13 Plus Your Intelligence Modifier",
      "**HP**: 5 plus five times your Alchemist level (the golem has a number of Hit Dice [d8s] equal to your Alchemist level)",
      "**Speed**: *walk* 30 Ft.",
-     "**Initiative**: -1",
      "**Senses**: Blindsight 30 ft.",
      "**Languages**: understands the languages of its creator but can't speak"
     ]

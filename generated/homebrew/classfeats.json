@@ -818,7 +818,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "You always have the __Animate Dead__ spell prepared. When you cast this spell, its casting time is an action instead of 1 minute. You can also create a __Spirit__ using the spell. Additionally, you can animate the corpse of any Medium or Small creature that isn't Undead, instead of only Humanoids. The resulting Undead always uses the statistics of a __Skeleton__, __Spirit__, or __Zombie__."
+    "value": "You always have the __Animate Dead__ spell prepared. When you cast this spell, its casting time is an action instead of 1 minute. You can also create a __Spirit__ using the spell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Additionally, when you cast __Animate Dead__, you can reanimate the corpse of any type of Medium or Small creature that isn't Undead, instead of only Humanoids.. The resulting Undead always uses the statistics of a __Skeleton__, __Spirit__, or __Zombie__."
    }
   ]
  },
@@ -1831,7 +1836,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Though most Investigators fill their grimoires with hard- won knowledge borne from encounters with supernatural threats, some prefer to do bookkeeping instead. Such Archivists seek to accumulate knowledge, more so than trinkets, by spending untold hours digging through disparate tomes of occult secrets and compiling them into encyclopedic texts. Through their research, Archivists become academic masters of the arcane and priceless reservoirs of obscure knowledge."
+    "value": "Though most Investigators fill their grimoires with hard-won knowledge borne from encounters with supernatural threats, some prefer to do bookkeeping instead. Such Archivists seek to accumulate knowledge, more so than trinkets, by spending untold hours digging through disparate tomes of occult secrets and compiling them into encyclopedic texts. Through their research, Archivists become academic masters of the arcane and priceless reservoirs of obscure knowledge."
    },
    {
     "name": "",
@@ -1986,7 +1991,7 @@
    {
     "name": "Winged",
     "type": "text",
-    "value": "While wearing this armor, you can take a Bonus Action to have a Fly Speed equal to your speed until the end of your turn."
+    "value": "While wearing this armor, you can take a Bonus Action to have a Fly Speed equal to your Speed until the end of your turn."
    }
   ]
  },
@@ -2595,11 +2600,11 @@
     "value": "If a maneuver requires a saving throw, the DC equals to your spell save DC."
    },
    {
-    "name": "",
+    "name": "Battle Dice",
     "type": "table",
     "table": {
      "type": "table",
-     "title": "",
+     "title": "Battle Dice",
      "headers": [
       "Warmage Level",
       "Battle Dice"
@@ -3369,7 +3374,12 @@
    {
     "name": "Charnel Strike",
     "type": "text",
-    "value": "When you use Charnel Touch, you can make a melee attack with a weapon as a Bonus Action later on the same turn."
+    "value": "When you take the Attack action, you can use your Charnel Touch as a Bonus Action."
+   },
+   {
+    "name": "Intelligent Armor",
+    "type": "text",
+    "value": "While you are wearing armor, you can add your Intelligence modifier, instead of your Dexterity modifier, to your Armor Class."
    },
    {
     "name": "Skeletal Mount",
@@ -4485,14 +4495,14 @@
    {
     "name": "Improved Bottled Oozes",
     "type": "text",
-    "value": "At higher Alchemist levels, you can distill more powerful slimes into Bottled Oozes that you create, as shown on the following table. An Ooze by your Bottled Ooze can't take the Split Reaction."
+    "value": "At higher Alchemist levels, you can distill more powerful slimes into Bottled Oozes that you create, as shown on the Improved Bottled Oozes table. An Ooze by your Bottled Ooze can't take the Split Reaction."
    },
    {
-    "name": "",
+    "name": "Improved Bottled Oozes",
     "type": "table",
     "table": {
      "type": "table",
-     "title": "",
+     "title": "Improved Bottled Oozes",
      "headers": [
       "Item",
       "Reagents"
@@ -7008,7 +7018,7 @@
    {
     "name": "Mercy (VALDAMARTYR) Features",
     "type": "text",
-    "value": "As a Magic action, you emanate a radiant light in a 30-foot Emanantion that lasts for 1 minute or until you have the Incapacitated condition. Choose Aberrations, Celestials, Elementals, Fey, Fiends, or Undead."
+    "value": "As a Magic action, you emanate a radiant light in a 30-foot Emanation that lasts for 1 minute or until you have the Incapacitated condition. Choose Aberrations, Celestials, Elementals, Fey, Fiends, or Undead."
    },
    {
     "name": "",
@@ -7138,14 +7148,14 @@
    {
     "name": "",
     "type": "text",
-    "value": "You can expend two of your __Dice of Fate__ as a Magic action, rolling them on the table below to create a chaotic surge of energy."
+    "value": "You can expend two of your __Dice of Fate__ as a Magic action, rolling them on the Chaos Roll table to create a chaotic surge of energy."
    },
    {
-    "name": "",
+    "name": "Chaos Roll",
     "type": "table",
     "table": {
      "type": "table",
-     "title": "",
+     "title": "Chaos Roll",
      "headers": [
       "2d6",
       "Effect"
@@ -7546,7 +7556,7 @@
    {
     "name": "Kings (VALDAWARMAGE) Features",
     "type": "text",
-    "value": "When you hit a creature with an attack, you can expend one Battle Die as a Bonus Action to direct an Ally within 60 feet of yourself that can see or hear you to strike. The Ally can take a Reaction to cast a cantrip or make one attack with a weapon or Unarmed Strike. The Ally adds the Battle Die to the attack or cantrip's damage roll."
+    "value": "When you hit a creature with an attack, you can expend one Battle Die as a Bonus Action to direct an Ally within 60 feet of yourself that can see or hear you to strike. The Ally can take a Reaction to cast a cantrip or make one attack with a weapon or Unarmed Strike. The ally adds the Battle Die to one damage roll of the attack or cantrip."
    }
   ]
  },
@@ -7999,7 +8009,7 @@
    {
     "name": "Backup Body",
     "type": "text",
-    "value": "You can spend 10 days and materials worth 1,000+ GP to build an additional clockwork body to act as a safeguard against death. Whenever you die, your soul transfers to another clockwork body of your choice that you have built. If you have no clockwork bodies available, you reform at your soul jar in the body of a __Slaymate__, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores, and the ability to build a clockwork body."
+    "value": "You can spend 10 days and materials worth 1,000+ GP to build an additional clockwork body to act as a safeguard against death. Whenever you die, your soul transfers to another clockwork body of your choice that you have built. If you have no clockwork bodies available, you reform at your spirit jar in the body of a __Slaymate__, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores, and the ability to build a clockwork body."
    }
   ]
  },
@@ -8222,6 +8232,16 @@
     "value": "You gain a loyal Cohort who carries your banner and follows your lead."
    },
    {
+    "name": "",
+    "type": "text",
+    "value": "*When you initiate a new Humanoid Cohort, you can also give it one of the following traits to reflect its species.*\n***Dragonborn: Draconic Ancestry**: The Cohort has Resistance to one of the following types of damage associated with its dragon progenitor (Captain's choice): Acid, Cold, Fire, Lightning, or Poison.*\n***Dwarf: Resistances and Immunities**: The Cohort has Resistance to Poison damage and Immunity to the Poisoned condition.*\n***Elf: Fey Ancestry**: The Cohort has Advantage on saving throws it makes to avoid or end the Charmed condition.*\n***Gnome: Saving Throws**: The Cohort has proficiency in one of the following saving throws: Intelligence, Wisdom, or Charisma.*\n***Goliath: Powerful Build**: The Cohort has Advantage on any ability check it makes to end the Grappled condition. It also counts as one size larger when determining its carrying capacity.*\n***Halfling: Brave**: The Cohort has Advantage on saving throws it makes to avoid or end the Frightened condition.*\n***Human: Skillful**: The Cohort has proficiency with one skill of your choice.*\n***Orc: Relentless (1/Day)**: When the Cohort is reduced to 0 Hit Points, it is reduced to 1 Hit Point instead.*\n***Tiefling: Fiendish Ancestry**: The Cohort has Resistance to one of the following types of damage associated with its fiendish progenitor (Captain's choice): Fire, Necrotic, or Poison.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Throughout your adventure, you may wish to customize the spells listed in a Cohort's stat block. You can exchange one of the spells listed in the Spellcasting feature with another of the same level. Your GM decides if a spell is appropriate for a Cohort. Generally, the __Priest's__ spells are from the Cleric spell list, the __Mage's__ spells are from the Wizard spell list, and the __Shaman's__ spells are from the Druid spell list.*"
+   },
+   {
     "name": "Initiating a Cohort",
     "type": "text",
     "value": "Choose your Cohort's stat block from those listed later in the class description. Following an 8-hour initiation period, which can be done during a Long Rest, that creature becomes your Cohort until you initiate a new Cohort to replace it. You can have only one Cohort at a time."
@@ -8384,7 +8404,12 @@
    {
     "name": "Charnel Strike",
     "type": "text",
-    "value": "When you use Charnel Touch, you can make a melee attack with a weapon as a Bonus Action later on the same turn."
+    "value": "When you take the Attack action, you can use your Charnel Touch as a Bonus Action."
+   },
+   {
+    "name": "Intelligent Armor",
+    "type": "text",
+    "value": "While you are wearing armor, you can add your Intelligence modifier, instead of your Dexterity modifier, to your Armor Class."
    },
    {
     "name": "Somatic Components",
@@ -8904,7 +8929,12 @@
    {
     "name": "Charnel Strike",
     "type": "text",
-    "value": "When you use Charnel Touch, you can make a melee attack with a weapon as a Bonus Action later on the same turn."
+    "value": "When you take the Attack action, you can use your Charnel Touch as a Bonus Action."
+   },
+   {
+    "name": "Intelligent Armor",
+    "type": "text",
+    "value": "While you are wearing armor, you can add your Intelligence modifier, instead of your Dexterity modifier, to your Armor Class."
    },
    {
     "name": "Skeletal Mount",
@@ -11479,7 +11509,12 @@
    {
     "name": "Charnel Strike",
     "type": "text",
-    "value": "When you use Charnel Touch, you can make a melee attack with a weapon as a Bonus Action later on the same turn."
+    "value": "When you take the Attack action, you can use your Charnel Touch as a Bonus Action."
+   },
+   {
+    "name": "Intelligent Armor",
+    "type": "text",
+    "value": "While you are wearing armor, you can add your Intelligence modifier, instead of your Dexterity modifier, to your Armor Class."
    },
    {
     "name": "Somatic Components",
@@ -12655,7 +12690,7 @@
    {
     "name": "Inquisitor (VALDAINVESTIGATOR) Features",
     "type": "text",
-    "value": "Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra **1d8** Necrotic or Radiant damage (your choice)."
+    "value": "Once on each of your turns when you take the Attack action and hit a creature with a weapon, you can cause the target to take an extra **1d8** Necrotic or Radiant damage (your choice)."
    }
   ]
  },
@@ -13060,7 +13095,7 @@
    {
     "name": "Damage Resistance",
     "type": "text",
-    "value": "You have Resistance to Bludgeoning, Piercing, and Slashing damage."
+    "value": "You and youe mount have Resistance to Bludgeoning, Piercing, and Slashing damage."
    },
    {
     "name": "Nightmare",
@@ -13230,7 +13265,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You always have the __Speak with Animals__ spell prepared and can cast it without a spell slot."
+    "value": "You can cast __Speak with Animals__ without a spell slot."
    }
   ]
  },
@@ -14340,7 +14375,7 @@
    {
     "name": "Inquisitor (VALDAINVESTIGATOR) Features",
     "type": "text",
-    "value": "As a Bonus Action, you can emblazon a mark of condemnation upon a creature you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or be marked for 1 minute. While marked, the target takes **6d6** Radiant damage at the start of each of its turns, can't regain Hit Points, and can't have Advantage on D20 Tests. A marked target can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success."
+    "value": "As a Bonus Action, you can emblazon a mark of condemnation upon a creature you can see within 60 feet of you. The target must succeed on a Wisdom saving throw against your spell save DC or be marked for 1 minute. While marked, the target takes **6d6** Radiant damage at the start of each of its turns, can't regain Hit Points, and can't have Advantage on D20 Tests. A marked target can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success."
    },
    {
     "name": "",
@@ -14748,7 +14783,7 @@
    {
     "name": "Overnight Crafting",
     "type": "text",
-    "value": "When you take a Long Rest, you can craft nonmagical items whose combined cost in GP is no greater than your Craftsman level times 10. If an item's cost exceeds this number, you can complete it over multiple Long Rests; these rests needn't be consecutive. You must have normally required tools and raw materials. When you craft a weapon or suit of armor, the item has Resistance to damage it takes."
+    "value": "When you take a Long Rest, you can craft nonmagical items whose combined cost in GP is no greater than your Craftsman level times 10. If an item's cost exceeds this number, you can complete it over multiple Long Rests; these rests needn't be consecutive. You must have the normally required tools and raw materials. When you craft a weapon or suit of armor, the item has Resistance to damage it takes."
    }
   ]
  },
@@ -15889,7 +15924,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "When you modify a weapon with Customize Weapon, you can also change its damage type to one of the following: Bludgeoning, Piercing, Slashing, Cold, Fire, or Lightning. You can't change a damage type that is a prerequisite for one of the weapon's mastery properties."
+    "value": "When you modify a weapon with Customize Weapon, you can also change its damage type to one of the following: Bludgeoning, Cold, Fire, Lightning, Piercing, or Slashing. You can't change a damage type that is a prerequisite for one of the weapon's mastery properties."
    }
   ]
  },
@@ -17500,7 +17535,7 @@
      "rows": [
       [
        "3",
-       "Barkskin, Druidcraft, Entangle, Goodberry, Locate Animals or Plants"
+       "Barkskin, Druidcraft, Entangle, Locate Animals or Plants, Speak with Animals"
       ],
       [
        "5",
@@ -17520,7 +17555,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "__Elder Tongue (VALDAWITCH)__: You always have the __Speak with Animals__ spell prepared and can cast it without a spell slot."
+    "value": "__Elder Tongue (VALDAWITCH)__: You can cast __Speak with Animals__ without a spell slot."
    },
    {
     "name": "",
@@ -17555,7 +17590,7 @@
      "rows": [
       [
        "3",
-       "Barkskin, Druidcraft, Entangle, Goodberry, Locate Animals or Plants"
+       "Barkskin, Druidcraft, Entangle, Locate Animals or Plants, Speak with Animals"
       ],
       [
        "5",
@@ -17755,7 +17790,7 @@
    {
     "name": "Black Rider (VALDANECROMANCER) Features",
     "type": "text",
-    "value": "If you make an attack with a weapon while mounted, you can take a Bonus Action to command your mount to make one attack of its own with its Reaction. You can only use this Bonus Action if your mount has moved 20 feet or further on the current turn."
+    "value": "As a Magic action, you can give each of your thralls that isn't a controlled mount a spectral steed that it rides into combat. Each such thrall has a Speed of 60 feet for 10 minutes."
    }
   ]
  },
@@ -18150,7 +18185,7 @@
    {
     "name": "Unarmed Strike Damage",
     "type": "text",
-    "value": "You can roll a d6 in place of the normal damage of your Unarmed Strikes. The damage die changes when you reach levels 5 (d8), 11 (d10), and 17 (d12)."
+    "value": "You can roll a d6 in place of the normal damage of your Unarmed Strikes. The damage die changes when you reach Warmage levels 5 (d8), 11 (d10), and 17 (d12)."
    },
    {
     "name": "Intelligent Strikes",
@@ -19524,14 +19559,14 @@
    {
     "name": "",
     "type": "text",
-    "value": "__Chaos Roll (VALDAWARMAGE)__: You can expend two of your __Dice of Fate__ as a Magic action, rolling them on the table below to create a chaotic surge of energy."
+    "value": "__Chaos Roll (VALDAWARMAGE)__: You can expend two of your __Dice of Fate__ as a Magic action, rolling them on the Chaos Roll table to create a chaotic surge of energy."
    },
    {
-    "name": "",
+    "name": "Chaos Roll",
     "type": "table",
     "table": {
      "type": "table",
-     "title": "",
+     "title": "Chaos Roll",
      "headers": [
       "2d6",
       "Effect"
@@ -19670,11 +19705,11 @@
     "value": "If a maneuver requires a saving throw, the DC equals to your spell save DC."
    },
    {
-    "name": "",
+    "name": "Battle Dice",
     "type": "table",
     "table": {
      "type": "table",
-     "title": "",
+     "title": "Battle Dice",
      "headers": [
       "Warmage Level",
       "Battle Dice"
@@ -19808,7 +19843,7 @@
    {
     "name": "Unarmed Strike Damage",
     "type": "text",
-    "value": "You can roll a d6 in place of the normal damage of your Unarmed Strikes. The damage die changes when you reach levels 5 (d8), 11 (d10), and 17 (d12)."
+    "value": "You can roll a d6 in place of the normal damage of your Unarmed Strikes. The damage die changes when you reach Warmage levels 5 (d8), 11 (d10), and 17 (d12)."
    },
    {
     "name": "Intelligent Strikes",
@@ -19987,7 +20022,7 @@
    {
     "name": "Scatter Shot",
     "type": "text",
-    "value": "You launch several projectiles in a 20- foot Cone. Make a separate ranged attack roll against each target in that Cone."
+    "value": "You launch several projectiles in a 20-foot Cone. Make a separate ranged attack roll against each target in that Cone."
    }
   ]
  },
@@ -20417,19 +20452,14 @@
     "value": "You have reached the pinnacle of Necromancy and transformed yourself into a lich. Due to your martial capabilities and inner nexus of necromantic power, you have transformed into an imperator lich—an Undead creature unmatched in both arcane and combat prowess. You gain the following benefits in addition to those of your Lichdom feature."
    },
    {
-    "name": "Heavy Armor Training",
-    "type": "text",
-    "value": "You gain training with Heavy Armor."
-   },
-   {
     "name": "Damage Resistance",
     "type": "text",
     "value": "You gain Resistance to Bludgeoning, Piercing, and Slashing damage."
    },
    {
-    "name": "Improved Charnel Strike",
+    "name": "Two Extra Attacks",
     "type": "text",
-    "value": "When you use Charnel Touch, you can make two melee attacks with a weapon as a Bonus action later on the same turn."
+    "value": "You can attack three times instead of once whenever you take the Attack action on your turn."
    },
    {
     "name": "Peerless Necrotic Damage",
@@ -21263,7 +21293,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You can take a Bonus Action to and inspire another creature within 60 feet of yourself who can see or hear you. Give that creature one of your unexpended Battle Dice. A creature can have only one Battle Die from this maneuver at a time."
+    "value": "You can take a Bonus Action to inspire another creature within 60 feet of yourself who can see or hear you. Give that creature one of your unexpended Battle Dice. A creature can have only one Battle Die from this maneuver at a time."
    },
    {
     "name": "",
@@ -21283,7 +21313,7 @@
    {
     "name": "Demon Brand (VALDACAPTAIN) Features",
     "type": "text",
-    "value": "When you take damage, you can take a Reaction to shape- shift into the demon or return to your normal form. You have Resistance to the triggering damage."
+    "value": "When you take damage, you can take a Reaction to shape-shift into the demon or return to your normal form. You have Resistance to the triggering damage."
    },
    {
     "name": "",
@@ -21323,7 +21353,7 @@
    {
     "name": "Enchantment Detection",
     "type": "text",
-    "value": "You discern if a creature is cursed, possessed, or has the Charmed or Frightened conditions."
+    "value": "You can discern if a creature is cursed, possessed, or has the Charmed or Frightened conditions."
    },
    {
     "name": "Illusion Detection",
@@ -21383,7 +21413,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "When you use Horrific Strike, you can perform a frightening display in a 10-foot Emanantion originating from you. Each creature you choose in the Emanation must succeed on a Wisdom saving throw against your Maneuver save DC or have the Frightened condition until the start of your next turn."
+    "value": "When you use Horrific Strike, you can perform a frightening display in a 10-foot Emanation originating from you. Each creature you choose in the Emanation must succeed on a Wisdom saving throw against your Maneuver save DC or have the Frightened condition until the start of your next turn."
    }
   ]
  },
@@ -22519,7 +22549,7 @@
    {
     "name": "Reanimator (VALDANECROMANCER) Features",
     "type": "text",
-    "value": "As a Magic action, you can drive a bolt into the torso of a creature within 5 feet of you that has died within the last minute and shock it back to life. That creature revives with 1 Hit Point. This feature can't return to life a creature that lacks a heart, a creature that has died of old age, or a creature that is missing vital organs."
+    "value": "As a Magic action, you can drive a bolt into the torso of a creature within 5 feet of you that has died within the last minute and shock it back to life. That creature revives with 1 Hit Point and gains Temporary Hit Points equal to twice your Necromancer level. This feature can't return to life a creature that lacks a heart, a creature that has died of old age, or a creature that is missing vital organs."
    },
    {
     "name": "",
@@ -24163,14 +24193,14 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an action or a Bonus Action; otherwise, reloading it takes an action. The number of attacks is determined by the size of the weapon's damage die or dice, as follows."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an action or a Bonus Action; otherwise, reloading it takes an action. The number of attacks is determined by the size of the weapon's damage die or dice, as shown on the Reload Attacks table."
    },
    {
-    "name": "",
+    "name": "Reload Attacks",
     "type": "table",
     "table": {
      "type": "table",
-     "title": "",
+     "title": "Reload Attacks",
      "headers": [
       "Damage Die",
       "Reload Attacks"
@@ -24700,7 +24730,7 @@
    {
     "name": "Dragon Banner (VALDACAPTAIN) Features",
     "type": "text",
-    "value": "You can use your Bonus Action to regain all of your expended Battle Dice."
+    "value": "You can take a Bonus Action to regain all of your expended Battle Dice."
    },
    {
     "name": "",
@@ -25407,7 +25437,7 @@
    {
     "name": "Mechanized Grappling Hook",
     "type": "text",
-    "value": "This launcher contains 80 feet of rope affixed to a Grappling Hook. As a Utilize action, you can launch the Grappling Hook at a railing, ledge, or another catch within 80 feet of yourself, the hook catches on if you succeed on a DC 13 Dexterity (*Acrobatics*) check. A mechanized winch then retracts the rope and up to 350 pounds of attached weight at a rate of 10 feet per minute."
+    "value": "This launcher contains 80 feet of rope affixed to a Grappling Hook. As a Utilize action, you can launch the Grappling Hook at a railing, ledge, or another catch within 80 feet of yourself, the hook catches on if you succeed on a DC 13 Dexterity (*Acrobatics*) check. A mechanized winch then retracts the rope and up to 350 pounds of attached weight at a rate of 10 feet per round (100 feet per minute)."
    },
    {
     "name": "Ram Helm",
@@ -25962,7 +25992,12 @@
    {
     "name": "Exterminator (VALDAINVESTIGATOR) Features",
     "type": "text",
-    "value": "As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike. You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Short or Long Rest."
+    "value": "As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest."
    }
   ]
  },
@@ -29058,7 +29093,7 @@
    {
     "name": "Golem Body",
     "type": "text",
-    "value": "Your soul jar is your artificial golem body. It has a specific weakness, which you must discuss with your GM. Your rejuvenation is only stopped when your body is completely destroyed using its weakness. When you drop to 0 Hit Points, you temporarily die and reanimate with half of your Hit Points after 1 hour."
+    "value": "Your spirit jar is your artificial golem body. It has a specific weakness, which you must discuss with your GM. Your rejuvenation is only stopped when your body is completely destroyed using its weakness. When you drop to 0 Hit Points, you temporarily die and reanimate with half of your Hit Points after 1 hour."
    },
    {
     "name": "Gruesome Physicality",
@@ -29073,7 +29108,7 @@
    {
     "name": "Self-Stitches",
     "type": "text",
-    "value": "You can apply any number of Spell- Stiches to yourself as a Magic action, expending Charnel Touch points as normal. __Spell-Stitch__ applied in this way last until you finish a Long Rest."
+    "value": "You can apply any number of Spell-Stiches to yourself as a Magic action, expending Charnel Touch points as normal. __Spell-Stitch__ applied in this way last until you finish a Long Rest."
    }
   ]
  },
@@ -30039,14 +30074,19 @@
    {
     "name": "",
     "type": "text",
-    "value": "The number of Reagents and the Alchemist level required to brew a potion are given on the Potions table."
+    "value": "Your potions don't have unpredictable effects if a creature drinks one of your potions while still under the effects of another."
    },
    {
     "name": "",
+    "type": "text",
+    "value": "The number of Reagents and the Alchemist level required to brew a potion are given on the Potions table."
+   },
+   {
+    "name": "Potions",
     "type": "table",
     "table": {
      "type": "table",
-     "title": "",
+     "title": "Potions",
      "headers": [
       "Potion",
       "Reagents"
@@ -31104,7 +31144,12 @@
    {
     "name": "Empowered Bomb",
     "type": "text",
-    "value": "When you deal damage with a Bomb, you can expend a number of Reagents up to your Proficiency Bonus and add 1d10 to the Bomb's damage roll for each expended Reagents. Additionally, if you use the Bomb's __Explode__ property, you can increase the radius of the explosion by 5 feet. You can do so once for each expended Reagents. For example, if you expend 2 Reagents, you can choose for the Sphere to be a 5, 10 or 15-foot radius."
+    "value": "When you deal damage with a Bomb, you can expend a number of Reagents up to your Proficiency Bonus and add 1d10 to the Bomb's damage roll for each expended Reagents."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Additionally, if you use the Bomb's __Explode__ property, you can increase the radius of the explosion by 5 feet. You can do so once for each expended Reagents. For example, if you expend 2 Reagents, you can choose for the Sphere to be a 5, 10 or 15-foot radius."
    }
   ]
  },
@@ -34068,7 +34113,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "__Team Inspiration [Maneuver] (VALDACAPTAIN)__: You can take a Bonus Action to and inspire another creature within 60 feet of yourself who can see or hear you. Give that creature one of your unexpended Battle Dice. A creature can have only one Battle Die from this maneuver at a time."
+    "value": "__Team Inspiration [Maneuver] (VALDACAPTAIN)__: You can take a Bonus Action to inspire another creature within 60 feet of yourself who can see or hear you. Give that creature one of your unexpended Battle Dice. A creature can have only one Battle Die from this maneuver at a time."
    },
    {
     "name": "",
@@ -35351,7 +35396,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "When you reach Witch levels 4 and 10, you learn another cantrip of your choice from the Witch spell list, as shown in the Cantrips column of the Witch Features table"
+    "value": "When you reach Witch levels 4 and 10, you learn another cantrip of your choice from the Witch spell list, as shown in the Cantrips column of the Witch Features table."
    },
    {
     "name": "Spell Slots",
@@ -37272,7 +37317,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "While holding a creature hostage, you have Three- Quarters cover. Attacks that miss you hit the hostage instead. Additionally, you have Advantage on Charisma (*Intimidation*) checks against the hostage's allies."
+    "value": "While holding a creature hostage, you have Three-Quarters Cover. Attacks that miss you hit the hostage instead. Additionally, you have Advantage on Charisma (*Intimidation*) checks against the hostage's allies."
    },
    {
     "name": "",
@@ -37477,7 +37522,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You can take a Bonus Action to and inspire another creature within 60 feet of yourself who can see or hear you. Give that creature one of your unexpended Battle Dice. A creature can have only one Battle Die from this maneuver at a time."
+    "value": "You can take a Bonus Action to inspire another creature within 60 feet of yourself who can see or hear you. Give that creature one of your unexpended Battle Dice. A creature can have only one Battle Die from this maneuver at a time."
    },
    {
     "name": "",
@@ -38731,7 +38776,7 @@
    {
     "name": "Unfathomable Metal",
     "type": "text",
-    "value": "As a Bonus Action, you reveal this trinket to a creature within 5 feet of you. At the start of each of its turns for 1 minute, the target takes **2d6** Radiant damage and then makes a Constitution saving throw. On a failed save, the effect continues. On a successful save, the effect ends."
+    "value": "As a Bonus Action, you reveal this trinket to a creature within 5 feet of you. At the start of each of its turns for 1 minute, the target takes **2d6** Radiant damage and then makes a Constitution saving throw against your spell save DC. On a failed save, the effect continues. On a successful save, the effect ends."
    }
   ]
  },
@@ -38946,7 +38991,7 @@
    {
     "name": "Bag of Traps",
     "type": "text",
-    "value": "As a Bonus Action, you can magically produce and take the Utilize action to use one of the following items: Ball Bearings, Caltrops, Chain, Hunting Trap, Manacles, or Oil (which you can only use to douse a space). If the item requires a saving throw, it uses your Investigator spell save DC. For the next minute, you can use a Bonus Action to produce and use another such item, until you have created a total of five items. Once created, these items vanish after 1 hour."
+    "value": "As a Bonus Action, you can magically produce and take the Utilize action to use one of the following items: Ball Bearings, Caltrops, Chain, Hunting Trap, Manacles, or Oil (which you can only use to douse a space). If the item requires a saving throw, it uses your spell save DC. For the next minute, you can use a Bonus Action to produce and use another such item, until you have created a total of five items. Once created, these items vanish after 1 hour."
    },
    {
     "name": "Dooby Snack",
@@ -39392,7 +39437,7 @@
    {
     "name": "Possession",
     "type": "text",
-    "value": "If you drop to 0 Hit Points, you can choose to possess a nearby body instead of reforming at your spirit jar. When you do so, choose a Humanoid or one of your thralls within 120 feet of yourself. A Humanoid must succeed on a Charisma saving throw against your spell save DC or be possessed."
+    "value": "If you drop to 0 Hit Points, you can choose to possess a nearby body instead of reforming at your spirit jar. When you do so, choose a Humanoid or one of your thralls within 120 feet of yourself. A Humanoid must succeed on a Charisma saving throw against your spell save DC or be possessed. A creature that succeeds its saving throw against your Possession is immune to your Possession for 24 hours."
    },
    {
     "name": "",
@@ -39402,7 +39447,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A possessed Humanoid can repeat its saving throw every 8 hours. On a success, the possession ends and you are ejected from the body. The possession also ends if the body drops to 0 Hit Points or you choose to end it as a Magic action. A creature that succeeds its saving throw against your possession is immune to your Possession for 24 hours."
+    "value": "A possessed Humanoid can repeat its saving throw every 8 hours. On a success, the Possession ends and you are ejected from the body. The Possession also ends if the body drops to 0 Hit Points or you choose to end it as a Magic action."
    },
    {
     "name": "Domination Spells",
@@ -42130,7 +42175,7 @@
    {
     "name": "Odyssey (VALDAMARTYR) Features",
     "type": "text",
-    "value": "Whenever you end your turn 30 feet or further away from where you began, you are enveloped in a blur of speed. Until the start of your next turn, attack rolls against you have Disadvantage and you don't take Radiant damage from your Sacrificial Strike."
+    "value": "Whenever you move into a space 30 feet or further away from where you started your turn, you are enveloped in a blur of speed. Until the start of your next turn, attack rolls against you have Disadvantage and you don't take Radiant damage from your Sacrificial Strike."
    }
   ]
  },
