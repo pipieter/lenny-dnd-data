@@ -359,7 +359,13 @@ function hazard(text: string, _noFormat: boolean): string {
 }
 
 function hit(text: string, noFormat: boolean): string {
-    text = text.replaceAll(pattern('hit', 1), '$1');
+    text = text.replaceAll(pattern('hit', 1), (_, p1) => {
+        if (!p1.startsWith('+') && !p1.startsWith('-')) {
+            // Add missing plus symbol in cases like {@hit 10} (should become +10)
+            p1 = '+' + p1;
+        }
+        return p1;
+    });
 
     if (noFormat) {
         text = text.replaceAll(pattern('h', 0), 'Hit: ');
