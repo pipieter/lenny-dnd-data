@@ -311,7 +311,7 @@ function buildCreature(creature: any, fluff: any | null): Creature {
         details: getCreatureDetails(creature), // TODO Possibly not store all values in details, would be easier to customize things in front-end.
         traits,
         actions,
-        bonusActions
+        bonusActions,
     };
 }
 
