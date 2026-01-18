@@ -89,9 +89,24 @@ function actSave(text: string, noFormat: boolean): string {
 
 function actSaveFail(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('actSaveFail', 0), 'Failure');
+        text = text.replaceAll(pattern('actSaveFail 3', 0), 'Third Failure: ');
+        text = text.replaceAll(pattern('actSaveFail 2', 0), 'Second Failure: ');
+        text = text.replaceAll(pattern('actSaveFail 1', 0), 'First Failure: ');
+        text = text.replaceAll(pattern('actSaveFail', 0), 'Failure: ');
     } else {
-        text = text.replaceAll(pattern('actSaveFail', 0), '*Failure*');
+        text = text.replaceAll(pattern('actSaveFail 3', 0), '*Third Failure:* ');
+        text = text.replaceAll(pattern('actSaveFail 2', 0), '*Second Failure:* ');
+        text = text.replaceAll(pattern('actSaveFail 1', 0), '*First Failure:* ');
+        text = text.replaceAll(pattern('actSaveFail', 0), '*Failure:* ');
+    }
+    return text;
+}
+
+function actSaveFailBy(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('actSaveFailBy', 1), 'Failure by $1 or More: ');
+    } else {
+        text = text.replaceAll(pattern('actSaveFailBy', 1), '*Failure by $1 or More:* ');
     }
     return text;
 }
@@ -132,6 +147,8 @@ function atk(text: string, noFormat: boolean): string {
         ['{@atk rp}', 'Ranged Power Attack:'],
         ['{@atk mp,rp}', 'Melee or Ranged Power Attack:'],
         ['{@atkr m}', 'Melee Attack Roll:'],
+        ['{@atkr mw}', 'Melee Weapon Attack Roll:'],
+        ['{@atkr ms}', 'Melee Spell Attack Roll:'],
         ['{@atkr r}', 'Ranged Attack Roll:'],
         ['{@atkr m,r}', 'Melee or Ranged Attack Roll:'],
         ['{@atk g}', 'Magical Attack:'],
@@ -198,6 +215,7 @@ function card(text: string, _noFormat: boolean): string {
 function chance(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('chance', 5), '$1 percent');
     text = text.replaceAll(pattern('chance', 4), '$2');
+    text = text.replaceAll(pattern('chance', 3), '$2');
     text = text.replaceAll(pattern('chance', 1), '$1 percent');
     return text;
 }
@@ -352,6 +370,12 @@ function filter(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function footnote(text: string, noFormat: boolean): string {
+    // Footnote allows people to hover over and see extra information in 5e.tools, we can't do this in discord.
+    text = text.replaceAll(pattern('footnote', 2), `$1 ($2)`);
+    return text;
+}
+
 function hazard(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('hazard', 2), '$1');
     text = text.replaceAll(pattern('hazard', 1), '$1');
@@ -371,6 +395,23 @@ function hit(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('h', 0), 'Hit: ');
     } else {
         text = text.replaceAll(pattern('h', 0), '*Hit:* ');
+    }
+
+    return text;
+}
+
+function hitYourSpellAttack(text: string, noFormat: boolean): string {
+    // hitYourSpellAttack is used for 5e-tools rolling functionality, we don't need to format it.
+    text = text.replaceAll(pattern('hitYourSpellAttack', 1), '$1');
+    text = text.replaceAll(pattern('hitYourSpellAttack', 0), 'your spell attack modifier');
+    return text;
+}
+
+function hom(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('hom', 0), 'Hit or Miss: ');
+    } else {
+        text = text.replaceAll(pattern('hom', 0), '*Hit or Miss:* ');
     }
 
     return text;
@@ -623,6 +664,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         $5etools,
         actSave,
         actSaveFail,
+        actSaveFailBy,
         actSaveSuccess,
         actSaveSuccessOrFail,
         atk,
@@ -650,8 +692,11 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         facility,
         feat,
         filter,
+        footnote,
         hazard,
         hit,
+        hitYourSpellAttack,
+        hom,
         homebrew,
         item,
         itemProperty,
