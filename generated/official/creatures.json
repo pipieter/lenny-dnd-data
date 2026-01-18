@@ -862,10 +862,10 @@
      "type": "list",
      "caption": "",
      "entries": [
-      "*Forbiddance*. undefined",
-      "*Running Water*. undefined",
-      "*Stake to the Heart*. undefined",
-      "*Sunlight*. undefined"
+      "*Forbiddance*. The vampire can't enter a residence without an invitation from an occupant.",
+      "*Running Water*. The vampire takes 20 Acid damage if it ends its turn in running water.",
+      "*Stake to the Heart*. If a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the Incapacitated condition in its resting place, the vampire has the Paralyzed condition until the weapon is removed.",
+      "*Sunlight*. The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks."
      ]
     }
    }
@@ -998,11 +998,11 @@
      "type": "list",
      "caption": "",
      "entries": [
-      "*Forbiddance*. undefined",
-      "*Running Water*. undefined",
-      "*Stake to the Heart*. undefined",
-      "*Sunlight*. undefined",
-      "*Immobile Restoration*. undefined"
+      "*Forbiddance*. The vampire can't enter a residence without an invitation from an occupant.",
+      "*Running Water*. The vampire takes 20 Acid damage if it ends its turn in running water.",
+      "*Stake to the Heart*. If a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the Incapacitated condition, the vampire has the Paralyzed condition until the weapon is removed.",
+      "*Sunlight*. The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks.",
+      "*Immobile Restoration*. If the vampire drops to 0 Hit Points while it doesn't have the Petrified condition, it turns to stone, regains 50 Hit Points, and has the Petrified condition for 1 hour."
      ]
     }
    }
@@ -175374,10 +175374,10 @@
       "*3. Fear Ray*. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*4. Slowing Ray*. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*5. Enervation Ray*. The targeted creature must make a DC 16 Constitution saving throw, taking 36 (**8d8**) necrotic damage on a failed save, or half as much damage on a successful one.",
-      "*6. Telekinetic Ray*. undefined",
+      "*6. Telekinetic Ray*. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated.\nIf the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
       "*7. Sleep Ray*. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
       "*8. Petrification Ray*. The targeted creature must make a DC 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the  __greater restoration__ spell or other magic.",
-      "*9. Disintegration Ray*. undefined",
+      "*9. Disintegration Ray*. If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 (**10d8**) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.\nIf the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
       "*10. Death Ray*. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (**10d10**) necrotic damage. The target dies if the ray reduces it to 0 hit points."
      ]
     }
@@ -175532,7 +175532,7 @@
       "*1. Paralyzing Ray*. The targeted creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*2. Fear Ray*. The targeted creature must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*3. Enervation Ray*. The targeted creature must make a DC 14 Constitution saving throw, taking 36 (**8d8**) necrotic damage on a failed save, or half as much damage on a successful one.",
-      "*4. Disintegration Ray*. undefined"
+      "*4. Disintegration Ray*. If the target is a creature, it must succeed on a DC 14 Dexterity saving throw or take 45 (**10d8**) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.\nIf the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it."
      ]
     }
    }
@@ -181172,10 +181172,10 @@
       "*3. Fear Ray*. The targeted creature must succeed on a DC 17 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*4. Slowing Ray*. The targeted creature must succeed on a DC 17 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*5. Enervation Ray*. The targeted creature must make a DC 17 Constitution saving throw, taking 36 (**8d8**) necrotic damage on a failed save, or half as much damage on a successful one.",
-      "*6. Telekinetic Ray*. undefined",
+      "*6. Telekinetic Ray*. If the target is a creature, it must succeed on a DC 17 Strength saving throw or the death tyrant moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the death tyrant's next turn or until the death tyrant is incapacitated.\nIf the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The death tyrant can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
       "*7. Sleep Ray*. The targeted creature must succeed on a DC 17 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
       "*8. Petrification Ray*. The targeted creature must make a DC 17 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the  __greater restoration__ spell or other magic.",
-      "*9. Disintegration Ray*. undefined",
+      "*9. Disintegration Ray*. If the target is a creature, it must succeed on a DC 17 Dexterity saving throw or take 45 (**10d8**) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.\nIf the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
       "*10. Death Ray*. The targeted creature must succeed on a DC 17 Dexterity saving throw or take 55 (**10d10**) necrotic damage. The target dies if the ray reduces it to 0 hit points."
      ]
     }
@@ -290933,7 +290933,7 @@
       "*3. Fear Ray*. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*4. Slowing Ray*. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*5. Enervation Ray*. The targeted creature must make a DC 16 Constitution saving throw, taking 36 (**8d8**) necrotic damage on a failed save, or half as much damage on a successful one.",
-      "*6. Telekinetic Ray*. undefined"
+      "*6. Telekinetic Ray*. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated.\nIf the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."
      ]
     }
    }
@@ -294744,10 +294744,10 @@
       "*3. Fear Ray*. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*4. Slowing Ray*. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*5. Enervation Ray*. The targeted creature must make a DC 16 Constitution saving throw, taking 36 (**8d8**) necrotic damage on a failed save, or half as much damage on a successful one.",
-      "*6. Telekinetic Ray*. undefined",
+      "*6. Telekinetic Ray*. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated.\nIf the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
       "*7. Sleep Ray*. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
       "*8. Petrification Ray*. The targeted creature must make a DC 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the  __greater restoration__ spell or other magic.",
-      "*9. Disintegration Ray*. undefined",
+      "*9. Disintegration Ray*. If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 (**10d8**) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.\nIf the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
       "*10. Death Ray*. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (**10d10**) necrotic damage. The target dies if the ray reduces it to 0 hit points."
      ]
     }
@@ -367205,10 +367205,10 @@
       "*3. Fear Ray*. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*4. Slowing Ray*. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*5. Enervation Ray*. The targeted creature must make a DC 16 Constitution saving throw, taking 36 (**8d8**) necrotic damage on a failed save, or half as much damage on a successful one.",
-      "*6. Telekinetic Ray*. undefined",
+      "*6. Telekinetic Ray*. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated.\nIf the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
       "*7. Sleep Ray*. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
       "*8. Petrification Ray*. The targeted creature must make a DC 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the  __greater restoration__ spell or other magic.",
-      "*9. Disintegration Ray*. undefined",
+      "*9. Disintegration Ray*. If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 (**10d8**) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.\nIf the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
       "*10. Death Ray*. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (**10d10**) necrotic damage. The target dies if the ray reduces it to 0 hit points."
      ]
     }
@@ -399480,7 +399480,7 @@
       "*1. Dazing Ray*. The targeted creature must succeed on a DC 12 Wisdom saving throw or be charmed until the start of the gazer's next turn. While the target is charmed in this way, its speed is halved, and it has disadvantage on attack rolls.",
       "*2. Fear Ray*. The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened until the start of the gazer's next turn.",
       "*3. Frost Ray*. The targeted creature must succeed on a DC 12 Dexterity saving throw or take 10 (**3d6**) cold damage.",
-      "*4. Telekinetic Ray*. undefined"
+      "*4. Telekinetic Ray*. If the target is a creature that is Medium or smaller, it must succeed on a DC 12 Strength saving throw or be moved up to 30 feet directly away from the gazer.\nIf the target is an object weighing 10 pounds or less that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container."
      ]
     }
    }
@@ -403142,7 +403142,7 @@
       "*3. Psychic Ray*. The target must succeed on a DC 13 Intelligence saving throw or take 27 (**6d8**) psychic damage.",
       "*4. Slowing Ray*. The targeted creature must make a DC 13 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn but not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*5. Stunning Ray*. The targeted creature must succeed on a DC 13 Constitution saving throw or be stunned for 1 minute. The target can repeat the saving throw at the start of each of its turns, ending the effect on itself on a success.",
-      "*6. Telekinetic Ray*. undefined"
+      "*6. Telekinetic Ray*. If the target is a creature, it must make a DC 13 Strength saving throw. On a failed save, the mindwitness moves it up to 30 feet in any direction, and it is restrained by the ray's telekinetic grip until the start of the mindwitness's next turn or until the mindwitness is incapacitated.\nIf the target is an object weighing 300 pounds or less that isn't being worn or carried, it is telekinetically moved up to 30 feet in any direction. The mindwitness can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."
      ]
     }
    }
@@ -430525,10 +430525,10 @@
       "*3. Fear Ray*. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*4. Slowing Ray*. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
       "*5. Enervation Ray*. The targeted creature must make a DC 16 Constitution saving throw, taking 36 (**8d8**) necrotic damage on a failed save, or half as much damage on a successful one.",
-      "*6. Telekinetic Ray*. undefined",
+      "*6. Telekinetic Ray*. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated.\nIf the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
       "*7. Sleep Ray*. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
       "*8. Petrification Ray*. The targeted creature must make a DC 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the  __greater restoration__ spell or other magic.",
-      "*9. Disintegration Ray*. undefined",
+      "*9. Disintegration Ray*. If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 (**10d8**) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.\nIf the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
       "*10. Death Ray*. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (**10d10**) necrotic damage. The target dies if the ray reduces it to 0 hit points."
      ]
     }

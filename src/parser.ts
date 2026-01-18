@@ -513,7 +513,8 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
         }
 
         case 'itemSub': {
-            const itemSub = description.name ? `*${description.name}*. ${description.entry}` : description.entry;
+            let entry = description.entries ? description.entries.join('\n') : description.entry ?? null;
+            const itemSub = description.name ? `*${description.name}*. ${entry}` : entry;
             return [cleanDNDText(itemSub)];
         }
 
