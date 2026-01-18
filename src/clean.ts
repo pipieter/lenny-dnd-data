@@ -516,8 +516,13 @@ function variantrule(text: string, _noFormat: boolean): string {
 }
 
 function recharge(text: string, _noFormat: boolean): string {
-    text = text.replaceAll(pattern('recharge', 1), '');
-    text = text.replaceAll(pattern('recharge', 0), '');
+    text = text.replaceAll(pattern('recharge', 1), (_, p1) => {
+        const parts = p1.split('|');
+        const recharge = parts[0] !== "6" ? `Recharge ${parts[0]}-6` : `Recharge 6`;
+        if (parts[1] === 'm') return `${recharge}`
+        return `(${recharge})`
+    });
+    text = text.replaceAll(pattern('recharge', 0), '(Recharge 5-6)');
     return text;
 }
 
