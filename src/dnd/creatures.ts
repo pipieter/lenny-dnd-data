@@ -293,7 +293,7 @@ function buildCreature(creature: any, fluff: any | null): Creature {
     const subtitle = getSubtitle(creature);
     const summonedBySpell = parseCreatureSummonSpell(creature.summonedBySpell);
     const tokenUrl = creature.hasToken ? getCreatureTokenUrl(name, source) : null;
-    const traits = creature.trait ? parseDescriptions('', creature.trait) : [];
+    const traits = creature.trait?.flatMap((trait: any) => parseDescriptions(trait.name, trait.entries)) ?? [];
     const actions = creature.action?.flatMap((action: any) => parseDescriptions(action.name, action.entries)) ?? [];
     const bonusActions = creature.bonus?.flatMap((bonus: any) => parseDescriptions(bonus.name, bonus.entries)) ?? [];
 
