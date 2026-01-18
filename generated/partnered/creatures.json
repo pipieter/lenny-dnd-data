@@ -159,7 +159,8 @@
      ]
     }
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Anaya",
@@ -240,7 +241,8 @@
     "type": "text",
     "value": "+6, range 60 ft. *Hit:* 11 (**2d10**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Tharian (Possessed)",
@@ -341,7 +343,8 @@
     "type": "text",
     "value": "+7, reach 5 ft. *Hit:* 10 (**1d12 + 4**) Slashing damage plus 13 (3d8) Necroticor Poisondamage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Xarashtar",
@@ -453,7 +456,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 17, one creature Grappled by Xarashtar. *Failure:*  15 (**3d6 + 5**) Bludgeoning damage. *Success* Half damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Great Fir Drake",
@@ -575,7 +579,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 19, each creature in a 90 ft long, 5 ft wide Line. *Failure:*  55 (**10d10**) Radiant damage. *Success* Half damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Pudding Gremlin",
@@ -689,7 +694,8 @@
     "type": "text",
     "value": "If the pudding gremlin is within 10 ft of an ordinary pudding, it can turn the ordinary pudding into another pudding gremlin. This new pudding gremlin appears in an unoccupied space within 10 ft of the original pudding gremlin and acts as its ally."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Snow Sphinx",
@@ -795,6 +801,13 @@
     "type": "text",
     "value": "+6, reach 5 ft, *Hit:* 12 (**2d8 + 3**) Slashing damage plus 14 (**4d6**) Cold damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 13, each creature in a 30-foot Cone. *First Failure:*  The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. *Second Failure:*  The target has the Petrified condition instead of the Restrained condition, and is turned into an ice statue."
+   }
   ]
  },
  {
@@ -876,7 +889,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. *Hit:* 5 (**1d8 + 1**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Adelaide Langtree",
@@ -973,7 +987,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Slashing damage plus 1 Necrotic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Alda Farnum",
@@ -1054,7 +1069,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. *Hit:* 5 (**1d8 + 1**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Alpengrendel",
@@ -1175,7 +1191,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 15, each creature in a 30-foot Cone. *Failure:*  21 (**6d6**) Cold damage. Until the start of the alpengrendel's next turn, the target's Speed is halved, and it has Disadvantage on attack rolls. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Baltus Tolliver",
@@ -1256,7 +1273,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 6 (**1d8 + 2**) Slashing damage plus 7 (**2d6**) Necrotic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Bat Hound",
@@ -1365,6 +1383,13 @@
     "name": "",
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 8 (**1d10 + 3**) Piercing damage plus 3 (**1d6**) Necrotic damage. If the target is a creature, the bat hound regains a number of Hit Points equal to the Necrotic damage taken, and if the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13)."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The bat hound takes the Dash and Disengage actions, and until the end of the turn, needn't spend extra movement to move a creature it is grappling."
    }
   ]
  },
@@ -1477,7 +1502,8 @@
     "type": "text",
     "value": "Swamp water and plants roil around the elemental. *Strength Saving Throw:* DC 16, each creature on the ground in a 20-foot Emanation originating from the elemental. *Failure:*  11 (**2d10**) Poison damage, and the target has the Restrained condition for 1 minute, until the elemental has the Incapacitated condition, or until the elemental dies. The target or a creature within 5 feet of it can take an action to make a DC 16 Strength (*Athletics*) check, ending the Restrained condition on the target on a success."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Beatrice Wells",
@@ -1563,7 +1589,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Boneflayer",
@@ -1678,6 +1705,13 @@
     "name": "",
     "type": "text",
     "value": "+7, reach 5 ft. *Hit:* 11 (**2d6 + 4**) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 14) from both talons. While Grappled, the target has the Restrained condition."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the boneflayer has a creature Grappled, the boneflayer flies up to half its Fly Speed without provoking Opportunity Attacks and drops that creature."
    }
   ]
  },
@@ -1795,7 +1829,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 10 (**4d4**) Piercing damage, or 5 (**2d4**) Piercing damage if the swarm is *Bloodied*. If the target is a creature that has teeth, it must succeed on a DC 12 Constitution saving throw or lose one of its teeth. The swarm immediately implants the tooth into one of its mouths. A creature that has already lost a tooth to this attack automatically succeeds on the saving throw."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Centipede Hag",
@@ -1911,7 +1946,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 17, one creature within 5 feet. *Failure:*  19 (**4d6 + 5**) Necrotic damage, and the target gains 1 Exhaustion level. Until the target's Exhaustion level is reduced to 0, its body is warped and twisted, and it has Disadvantage on ability checks and saving throws that use Strength or Dexterity. *Success* Half damage only. *Failure or Success*: If a Humanoid dies from this action, the hag can spend 2 days of work to shape its corpse into a __Deepdreck__, or it can combine it with the corpse of a horse to create a __Fleshdobbin__."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Corn Dolly",
@@ -2020,7 +2056,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 13, each creature of the corn dolly's choice in a 15-foot Cone. *Failure:*  The target has the Frightened condition until the end of its next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Corvodaemon",
@@ -2151,7 +2188,8 @@
     "type": "text",
     "value": "The corvodaemon enters a voracious feeding frenzy, driven by its insatiable hunger for souls. Until the start of its next turn, the corvodaemon's Speed doubles, and when it damages a creature, it gains Temporary Hit Points equal to half the damage taken."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Crimson Clergy",
@@ -2267,7 +2305,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. or range 60 ft. *Hit:* 10 (**2d6 + 3**) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the damage taken, and the clergy regains Hit Points equal to that amount."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Crooked Effigy",
@@ -2372,7 +2411,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 8 (**1d10 + 3**) Piercing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two branch arms. Until the grapple ends, the target has the Restrained condition."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Crooked Hare",
@@ -2466,7 +2506,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 5 (**1d4 + 3**) Piercing damage plus 7 (**2d6**) Poison damage, and if the target is a creature, it must succeed on a DC 11 Charisma saving throw or become cursed for 24 hours. The cursed creature's limbs sporadically twist and move in unnatural ways, giving the creature Disadvantage on attack rolls and on ability checks that rely on Charisma."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Crooked Man",
@@ -2597,6 +2638,13 @@
     "type": "text",
     "value": "Fly Speed reduced to 0."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crooked man has the Invisible condition for 1 minute and teleports to an unoccupied space he can see within 60 feet. The condition ends immediately after the crooked man deals any damage."
+   }
   ]
  },
  {
@@ -2714,7 +2762,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 13, each creature in a 30-foot Emanation originating from the swarm. *Failure:*  10 (**3d6**) Psychic damage, and the target has the Frightened condition until the start of the swarm's next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Dani Jenkin",
@@ -2800,7 +2849,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Deepdreck",
@@ -2920,7 +2970,8 @@
     "type": "text",
     "value": "+6, range 60 ft. *Hit:* 8 (**1d8 + 4**) Poison damage, and the target has the Poisoned condition until the start of the deepdreck's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Devil's Glove",
@@ -3027,6 +3078,13 @@
     "name": "",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 12, each creature in a 10-foot Emanation originating from the devil's glove. *Failure:*  9 (**2d8**) Necrotic damage, and the target can't regain Hit Points until the start of the devil's glove's next turn. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The devil's glove forms a magical bond with a willing creature it touches. The bonded creature doesn't need to eat or drink, and the creature has Advantage on saving throws to avoid or end the Poisoned condition. The bond ends when the creature dies, the devil's glove dies, the devil's glove ends the bond (no action required), or when the devil's glove uses this Bonus Action again."
    }
   ]
  },
@@ -3138,7 +3196,8 @@
     "type": "text",
     "value": "As a Bonus Action, a creature can drink the elixir to gain startling luck for 10 minutes. When the creature fails an ability check or a saving throw, it can reroll the d20 and use the new roll. Once this causes a roll to succeed, the effects of the elixir end early."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Doctor Belkin",
@@ -3246,7 +3305,8 @@
     "type": "text",
     "value": "The surgeon unleashes a spray of worm-ridden cerebral fluid. *Dexterity Saving Throw:* DC 14, each creature in a 20-foot Cone. *Failure:*  17 (**5d6**) Psychic damage, and the target is infested with larval parasitic worms. The target takes 7 (**2d6**) Psychic damage at the end of each of its turns as the worms burrow toward its brain. The ongoing damage ends when the target takes Poison damage or is targeted by an effect that ends the Poisoned condition. *Success* Half damage only. *Failure or Success*: If the target is reduced to 0 Hit Points by this Psychic damage, the worms reach its brain and it dies. A Humanoid slain in this way rises 24 hours later as a wormhost surgeon."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Doris Squire",
@@ -3336,7 +3396,8 @@
     "type": "text",
     "value": "+2, range 100/400 ft. *Hit:* 11 (**2d10**) Piercing damage plus 4 (**1d8**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Drakkenhob",
@@ -3444,6 +3505,13 @@
     "name": "",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 15, each creature in a 30-foot Cone. *Failure:*  14 (**4d6**) Psychic damage, and the target drops whatever it is holding and has the Frightened condition. A Frightened target takes the Dash action and moves away from the drakkenhob by the safest route on each of its turns unless there's nowhere to move. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The drakkenhob lets out a wolf-like howl and magically summons three hunting hounds (use the Wolf stat block) that appear in unoccupied spaces within 60 feet of it. The hounds take their turn immediately after the drakkenhob on the same Initiative count, and they obey the drakkenhob's mental commands. The hounds vanish when they or the drakkenhob drop to 0 Hit Points, or when the drakkenhob uses this Bonus Action again."
    }
   ]
  },
@@ -3564,6 +3632,13 @@
     "type": "text",
     "value": "The dream eater unfurls its tongue and devours the dreams from a creature's mind. *Charisma Saving Throw:* DC 16, a creature the dream eater is grappling, or a creature within 5 feet of it that has the Incapacitated condition (Incapacitated creatures fail automatically). *Failure:*  18 (**4d8**) Psychic damage, and the creature's Charisma score decreases by 1d6. A creature reduced to 0 Charisma by this effect doesn't recover lost Charisma when it finishes a Long Rest, and it has the Incapacitated condition until its mind is restored with a __Greater Restoration__, __Heal__, or __Wish__ spell. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The dream eater's wings shine with dazzling rainbow colors until the start of its next turn, emitting Bright Light in a 30-foot Emanation originating from the dream eater and Dim Light for an additional 30 feet. *Wisdom Saving Throw:* DC 16, each creature in the dream eater's Bright Light. *Failure:*  Until the start of the dream eater's next turn, the target has the Incapacitated condition, and its Speed is 0."
+   }
   ]
  },
  {
@@ -3645,7 +3720,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. *Hit:* 5 (**1d8 + 1**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Elias Greaves",
@@ -3733,7 +3809,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. *Hit:* 5 (**1d8 + 1**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Ferryman",
@@ -3863,7 +3940,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 13, each creature of the ferryman's choice in a 30-foot Cone. *Failure:*  The creature is cursed for 1 minute and must subtract 1d4 from D20 Tests."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Festerhulk",
@@ -3983,7 +4061,8 @@
     "type": "text",
     "value": "The festerhulk disgorges a mass of ravenous slime mold into an unoccupied space within 20 feet. This mass uses the Black Pudding stat block except it is a Plant, and its size is Medium. The mass acts on the festerhulk's Initiative. It, and any masses it Split into, dries up and dies in 1 hour."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Filthy Jasper",
@@ -4091,7 +4170,8 @@
     "type": "text",
     "value": "*Charisma Saving Throw:* DC 12, one creature the familiar can see within 5 feet. *Failure:*  21 (**6d6**) Necrotic damage, and the target is affected by the __Confusion__ spell until the start of the familiar's next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Finneas Trout",
@@ -4177,7 +4257,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Fleshdobbin",
@@ -4297,7 +4378,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 15, each creature in a 30-foot Cone. *Failure:*  28 (**8d6**) Psychic damage. In addition, the target has the Frightened condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Friar Olaf",
@@ -4388,7 +4470,8 @@
     "type": "text",
     "value": "+5, range 60 ft. *Hit:* 11 (**2d10**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gareth Creed",
@@ -4474,7 +4557,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gaston Doray",
@@ -4555,7 +4639,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 6 (**1d8 + 2**) Slashing damage plus 7 (**2d6**) Necrotic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Geneva Fairchild",
@@ -4641,7 +4726,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Ghost Crawler",
@@ -4760,7 +4846,8 @@
     "type": "text",
     "value": "The crawler fills a 5-foot Cube with Invisible, ephemeral webs for 8 hours. If the web isn't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the web collapses on itself and vanishes. When a creature touches the webbing, the crawler knows the location of the creature as long as they are on the same plane of existence."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gilly Jenkin",
@@ -4846,7 +4933,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gloomwood",
@@ -4972,7 +5060,8 @@
     "type": "text",
     "value": "+10, reach 5 ft. *Hit:* 17 (**2d10 + 6**) Bludgeoning damage. *Hit or Miss:* Each creature within a 20-foot Sphere centered on the target must make the following saving throw. *Constitution Saving Throw:* DC 15. *Failure:*  36 (**8d8**) Poison damage, and the target has the Poisoned condition until the end of its next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Goatstealer",
@@ -5070,7 +5159,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 5 (**1d6 + 2**) Piercing damage plus 3 (**1d6**) Poison damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 12). Until the grapple ends, at the start of each of the goatstealer's turns, the target takes 3 (**1d6**) Poison damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gobblegeist",
@@ -5188,7 +5278,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 14, each creature in a 120-foot-long, 5-foot-wide line. *Failure:*  6 (**1d12**) Psychic damage, and the target has the Stunned condition until the start of the gobblegeist's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Golub Graygullet",
@@ -5297,6 +5388,13 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 19, each creature in a 60-foot Cone. *Failure:*  A target takes 45 (**10d8**) Psychic damage and has the Incapacitated condition until the start of the hag's next turn. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hag shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+   }
   ]
  },
  {
@@ -5389,7 +5487,8 @@
     "type": "text",
     "value": "+Bonus equals your spell attack modifier, reach 5 ft. *Hit:* 1d6 + 3 plus your Wisdom modifier Necrotic damage, and if the target is a creature, it has the Frightened condition until the start of your next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Hemonculus",
@@ -5505,7 +5604,8 @@
     "type": "text",
     "value": "The hemonculus magically draws blood from nearby creatures. *Constitution Saving Throw:* DC 13, each creature of the hemonculus' choice in a 15-foot Emanation originating from the hemonculus. *Failure:*  10 (**3d6**) Necrotic damage, and the target can't regain Hit Points until the start of the hemonculus's next turn. *Success* Half damage only. *Failure or Success*: If the hemonculus is attached to a creature, the hemonculus regains Hit Points equal to the Necrotic damage taken by that target."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Herald of Fools",
@@ -5619,7 +5719,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 15, a creature the herald can see within 60 feet. *Failure:*  24 (**7d6**) Psychic damage, and the target's Speed is 0 until the end of its next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Hilda Brom",
@@ -5710,7 +5811,8 @@
     "type": "text",
     "value": "+4, range 150/600 ft. *Hit:* 6 (**1d8 + 2**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Holly Aster",
@@ -5796,7 +5898,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Hospital Horror",
@@ -5906,6 +6009,13 @@
     "type": "text",
     "value": "+6, reach 5 ft. *Hit:* 7 (**1d6 + 4**) Slashing damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The horror takes the Dash action and can jump up to 30 feet by spending 10 feet of movement."
+   }
   ]
  },
  {
@@ -5997,7 +6107,8 @@
     "type": "text",
     "value": "+5, range 30/90 ft. *Hit:* 8 (**1d10 + 3**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "House of Horror",
@@ -6128,6 +6239,13 @@
     "type": "text",
     "value": "The house's stolen souls torment a victim. *Wisdom Saving Throw:* DC 16, a creature within 10 feet of the house. *Failure:*  36 (**8d8**) Necrotic damage. *Success* Half damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The house can reshape itself to change the location of walls, doors, floors, and other features of its construction. When one of these features appears or disappears, a creature within 5 feet of a changing feature can make a DC 18 Dexterity saving throw. On a successful save, the creature chooses which side of a feature it ends up on, or it moves to the nearest unoccupied space to avoid falling."
+   }
   ]
  },
  {
@@ -6214,6 +6332,13 @@
     "name": "",
     "type": "text",
     "value": "+4, range 30/120 ft. *Hit:* 5 (**1d6 + 2**) Piercing damage plus 7 (**2d6**) Poison damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spy takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -6343,7 +6468,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 16, each creature in a 30-foot Cone. *Failure:*  9 (**2d8**) Psychic damage, and the target has the Frightened condition until the start of the brute's next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Hypnovulfen",
@@ -6462,6 +6588,13 @@
     "type": "text",
     "value": "If the hypnovulfen takes 30 damage or more on a single turn from the swallowed creature, the hypnovulfen must succeed on a DC 16 Constitution saving throw at the end of that turn or regurgitate the creature, which falls in a space within 10 feet of the hypnovulfen and has the Prone condition. If the hypnovulfen dies, a swallowed creature is no longer Restrained and can escape from the corpse by using 15 feet of movement, exiting Prone."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Wisdom Saving Throw:* DC 19, each creature in a 30-foot Cone. A creature holding a keepsake from a loved one succeeds automatically. *Failure:*  The creature has the Charmed condition until it takes damage. While charmed, it has the Incapacitated condition and must move as close to the hypnovulfen as possible by the safest route. The creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+   }
   ]
  },
  {
@@ -6552,7 +6685,8 @@
     "type": "text",
     "value": "+2, range 100/400 ft. *Hit:* 11 (**2d10**) Piercing damage plus 4 (**1d8**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Invader Out of Space",
@@ -6682,7 +6816,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 16, one creature the invader can see within 60 feet. *Failure:*  The target has the Incapacitated condition until the start of the invader's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Isolde",
@@ -6796,7 +6931,8 @@
     "type": "text",
     "value": "The possession lasts until the body drops to 0 Hit Points or the ghost leaves as a Bonus Action. When the possession ends, the ghost appears in an unoccupied space within 5 feet of the target, and the target is immune to this ghost's Possession for 24 hours. *Success* The target is immune to this ghost's Possession for 24 hours."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Jean Myriel",
@@ -6882,7 +7018,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 9 (**1d12 + 3**) Slashing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Jeremiah Stover",
@@ -6973,7 +7110,8 @@
     "type": "text",
     "value": "+3, range 100/400 ft. *Hit:* 6 (**1d10 + 1**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Jonah Sawyer",
@@ -7090,7 +7228,8 @@
     "type": "text",
     "value": "+3, range 100/400 ft. *Hit:* 6 (**1d10 + 1**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Kackle",
@@ -7215,6 +7354,13 @@
     "name": "",
     "type": "text",
     "value": "15 (**2d10 + 4**) Fire damage, and the target starts burning, taking 5 (**1d10**) Fire damage instead of the regular burning damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kackle teleports up to 60 feet to an unoccupied space it can see. The kackle can then change its lantern color, and it can create the following—*Dexterity Saving Throw:* DC 15, each creature in a 5-foot Emanation originating from the kackle's destination space. *Failure:*  13 (**3d8**) damage of the same type as the current Lantern Flame color. *Success* Half damage."
    }
   ]
  },
@@ -7356,7 +7502,8 @@
     "type": "text",
     "value": "The area is Difficult Terrain, and a creature has the Poisoned condition while within the area. The fungus remains for 1 minute, until the keeper uses this effect again, or until it dies."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Ketgrinn",
@@ -7480,6 +7627,13 @@
     "type": "text",
     "value": "The target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If it fails three of these saving throws, the loss is permanent, and its voice only returns when the ketgrinn dies. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ketgrinn teleports up to 40 feet to an unoccupied space it can see."
+   }
   ]
  },
  {
@@ -7566,7 +7720,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lake Dredger",
@@ -7680,6 +7835,18 @@
     "name": "",
     "type": "text",
     "value": "+10, reach 15 ft. *Hit:* 24 (**4d8 + 6**) Bludgeoning damage. If the target is a Huge or smaller creature, it has the Prone condition."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 18, one Large or smaller creature Grappled by the lake dredger (the lake dredger can only have one creature swallowed at a time). *Failure:*  The lake dredger swallows the target, which is no longer Grappled. While swallowed, the creature has the Restrained condition, has Three-Quarters Cover against attacks and other effects outside the lake dredger, and takes 21 (**6d6**) Necrotic damage at the start of each of the lake dredger's turns."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As an action, the swallowed creature can escape through the lake dredger's ribcage. The creature takes 11 (**2d10**) Piercing damage and emerges in a space within 5 feet of the lake dredger. If the lake dredger dies, a swallowed creature is no longer Restrained and can escape from the corpse by using 15 feet of movement, exiting Prone."
    }
   ]
  },
@@ -7797,6 +7964,13 @@
     "type": "text",
     "value": "+6, reach 10 ft. *Hit:* 9 (**1d10 + 4**) Slashing damage, and if the target is a Medium or smaller creature, it has the Grappled condition (escape DC 14) from one of two claws. Until the grapple ends, the target has the Restrained condition."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While the lurker isn't in Bright Light, it teleports up to 120 feet to an unoccupied space it can see. If the destination space isn't in Bright Light, the lurker doesn't need to see it. A creature the lurker is grappling must succeed on a DC 13 Charisma saving throw or teleport with the lurker to an unoccupied space closest to the lurker's destination."
+   }
   ]
  },
  {
@@ -7888,7 +8062,8 @@
     "type": "text",
     "value": "+5, range 60 ft. *Hit:* 11 (**2d10**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Magpie of Omens",
@@ -7985,6 +8160,13 @@
     "name": "",
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 5 (**1d4 + 3**) Piercing damage plus 3 (**1d6**) Radiant damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The magpie can form or dissolve a magical bond with a willing creature within 5 feet. While the bond lasts, the bonded creature can speak through the magpie using the creature's own voice and language, but with a birdlike lilt. The bond ends when the creature dies or if the magpie creates a new bond."
    }
   ]
  },
@@ -8096,6 +8278,13 @@
     "type": "text",
     "value": "+10, reach 5 ft. *Hit:* 11 (**1d10 + 6**) Piercing damage. If the target has the Restrained condition, it takes an extra 18 (**4d8**) Piercing damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The maidenwood shapes its lure into a Small or Medium Humanoid, or it retracts the lure. The maidenwood can speak through the lure and move it anywhere within reach of its tendrils, and it causes the following effect—*Intelligence Saving Throw:* DC 15, one creature within 30 feet of the lure. *Failure:*  The target has the Charmed condition until the start of the maidenwood's next turn. The Charmed target must approach the lure as closely as it can. The maidenwood has Advantage on attack rolls against the Charmed target. If the target takes damage, the Charmed condition ends at the end of the current turn."
+   }
   ]
  },
  {
@@ -8187,7 +8376,8 @@
     "type": "text",
     "value": "+4, range 150/600 ft. *Hit:* 6 (**1d8 + 2**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Martha Langtree",
@@ -8294,7 +8484,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Moonshine",
@@ -8419,7 +8610,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 11, one creature that isn't a Construct or Undead the moonshine can see within 5 feet. *Failure:*  The target has the Stunned condition until the end of the moonshine's next turn, and the moonshine or a creature of its choice within 30 feet regains 3 (1d6) Hit Points."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Morgan",
@@ -8510,7 +8702,8 @@
     "type": "text",
     "value": "+5, range 90 ft. *Hit:* 10 (**3d6**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Mori Shade",
@@ -8601,7 +8794,8 @@
     "type": "text",
     "value": "+4, range 150/600 ft. *Hit:* 6 (**1d8 + 2**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Mutant Nurse",
@@ -8728,6 +8922,13 @@
      ]
     }
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The nurse injects itself with a stimulant. Until the start of the nurse's next turn, its Speed is doubled, it can make one extra Stab attack when it takes the Multiattack action, and it gains a +2 bonus to AC."
+   }
   ]
  },
  {
@@ -8823,7 +9024,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 9 (**1d12 + 3**) Psychic damage, and if the target is a creature, it has the Frightened condition until the start of the nameless thing's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Necrolisk",
@@ -8953,6 +9155,18 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 16, each creature in a 60-foot-long, 5-foot-wide Line. *Failure:*  42 (**12d6**) Force damage, and the target has the Restrained condition until the end of its next turn. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 18, one Large or smaller creature Grappled by the necrolisk (the necrolisk can only have one creature swallowed at a time). *Failure:*  The necrolisk swallows the target, which is no longer Grappled. While swallowed, the creature has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the necrolisk, and takes 21 (**6d6**) Force damage at the start of each of the necrolisk's turns."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the necrolisk takes 30 damage or more on a single turn from the swallowed creature, the necrolisk must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls in a space within 10 feet of the necrolisk and has the Prone condition. If the necrolisk dies, a swallowed creature is no longer Restrained and can escape from the corpse by using 15 feet of movement, exiting Prone."
+   }
   ]
  },
  {
@@ -9078,6 +9292,13 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 14, one creature within 5 feet that is willing or that has the Grappled, Incapacitated, or Restrained condition. *Failure:*  6 (**1d4 + 4**) Piercing damage plus 7 (**2d6**) Necrotic damage. The target's Hit Point maximum decreases by an amount equal to the Necrotic damage taken, and the night creature regains Hit Points equal to that amount."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the night creature isn't in sunlight, it shape-shifts into a Medium Humanoid or returns to its true form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+   }
   ]
  },
  {
@@ -9194,6 +9415,13 @@
      ]
     }
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The nurse injects itself with a stimulant. Until the start of the nurse's next turn, its Speed is doubled, it can make one extra Stab attack when it takes the Multiattack action, and it gains a +2 bonus to AC."
+   }
   ]
  },
  {
@@ -9280,7 +9508,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 9 (**1d12 + 3**) Slashing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Old Ways Chosen",
@@ -9403,6 +9632,13 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 14, each creature of the chosen's choice in a 20-foot Emanation originating from the chosen. *Failure:*  31 (**9d6**) Fire damage. *Success* Half damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The chosen casts __Jump__, using the same spell components and spellcasting ability as Spellcasting."
+   }
   ]
  },
  {
@@ -9489,7 +9725,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Peeping Albert",
@@ -9602,7 +9839,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 12, one creature the familiar can see within 5 feet. *Failure:*  21 (**6d6**) Psychic damage, and the target has the Frightened condition until the end of the familiar's next turn. The Frightened target uses its movement on its turn to get as far away as possible from the familiar, moving by the safest route. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Phantom Hearse",
@@ -9723,6 +9961,23 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 16, each creature of the hearse's choice that it can see in a 30-foot Emanation originating from the hearse. *Failure:*  44 (**8d10**) Psychic damage, and the creature's Speed is halved until the start of the hearse's next turn. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 16, one creature Grappled by the hearse (it can have up to three creatures entombed at a time). *Failure:*  The target is entombed in a coffin in the hearse, and the Grappled condition ends."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "An entombed target has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the hearse, and at the start of each of the hearse's turns it takes 21 (**6d6**) Necrotic damage and gains 1 Exhaustion level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the hearse takes 20 damage or more on a single turn from a creature inside a coffin, the hearse must succeed on a DC 12 Constitution saving throw at the end of that turn or release all entombed creatures, each of which falls in a space within 5 feet of the hearse and has the Prone condition. If the hearse dies, any entombed creature falls to the ground with the Prone condition in the hearse's former space."
+   }
   ]
  },
  {
@@ -9804,7 +10059,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. *Hit:* 5 (**1d8 + 1**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Pigeon Hag",
@@ -9923,6 +10179,13 @@
     "name": "",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 19, each creature in a 60-foot Cone. *Failure:*  A target takes 45 (**10d8**) Psychic damage and has the Incapacitated condition until the start of the hag's next turn. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hag shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed."
    }
   ]
  },
@@ -10045,7 +10308,8 @@
     "type": "text",
     "value": "The pumpkin head consumes a victim's memories. *Intelligence Saving Throw:* DC 12, one creature the pumpkin head can see within 30 feet. *Failure:*  The target has the Stunned condition until the end of its next turn, and its Intelligence score decreases by 1d4. The target dies if this reduces that score to 0. A Humanoid slain in this way is replaced by a __Pumpkin Head__ 1d8 hours later unless its body is burned."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Randall Graham",
@@ -10126,7 +10390,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 6 (**1d8 + 2**) Slashing damage plus 7 (**2d6**) Necrotic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Ravencraft",
@@ -10225,7 +10490,8 @@
     "type": "text",
     "value": "The ravencraft lets out a wail of anguish commingling with the croaking of ravens. *Wisdom Saving Throw:* DC 11, one creature within 60 feet. *Failure:*  5 (**1d10**) Psychic damage, and the target has the Frightened condition until the end of its next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Reveler of Song",
@@ -10356,7 +10622,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 16, one creature the reveler can see within 60 feet. *Failure:*  40 (**9d8**) Thunder damage, and the target has the Stunned condition until the end of the reveler's next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Reveler of Stories",
@@ -10492,7 +10759,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 17, each creature in a 60-foot Cone. *Failure:*  27 (**6d8**) Lightning damage, and the target has the Frightened condition. While Frightened in this way, the target's Speed is 0. A Frightened target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Rotweaver",
@@ -10611,7 +10879,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 13, each creature in a 30-foot Cone. *Failure:*  11 (**2d10**) Necrotic damage, and the target has the Poisoned condition until the end of its next turn. *Success* Half damage only. *Failure or Success*: The horn call is audible out to 300 feet, and any noncreature plants in the Cone die from fungus and rot."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Salmon of Knowledge",
@@ -10721,7 +10990,8 @@
     "type": "text",
     "value": "A creature the salmon can see within 30 feet gains a flash of foresight. Once in the next minute, when the creature fails a D20 Test, it can roll 1d4 and add it to the total, potentially turning the failure into a success."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Serum Brute",
@@ -10860,7 +11130,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 16, each creature in a 30-foot Cone. *Failure:*  9 (**2d8**) Psychic damage, and the target has the Frightened condition until the start of the brute's next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Shrouded",
@@ -11002,7 +11273,8 @@
     "type": "text",
     "value": "*Intelligence Saving Throw:* DC 13, each creature that isn't a Construct or Undead in a 30-foot Emanation originating from the shrouded. *Failure:*  7 (**2d6**) Psychic damage, and the target has the Frightened condition until the start of the shrouded's next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Shuck",
@@ -11089,7 +11361,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 5 (**1d6 + 2**) Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Sister Rain",
@@ -11180,7 +11453,8 @@
     "type": "text",
     "value": "+5, range 60 ft. *Hit:* 11 (**2d10**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Siv Harga",
@@ -11271,7 +11545,8 @@
     "type": "text",
     "value": "+4, range 150/600 ft. *Hit:* 6 (**1d8 + 2**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Skitterswarm",
@@ -11380,7 +11655,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 7 (**2d6**) Piercing damage, or 3 (**1d6**) Piercing damage if the swarm is *Bloodied*. If the target is a creature, a centipede infests its body. While infested, the target takes 3 (**1d6**) Necrotic damage at the start of each of its turns. The infestation ends when the target regains Hit Points or is targeted by an effect that ends the Poisoned condition."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Slippery Oswald",
@@ -11493,7 +11769,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 12, one creature the familiar can see within 5 feet. *Failure:*  10 (**3d6**) Poison damage, and the target has the Poisoned condition until the end of the familiar's next turn. While Poisoned in this way, the target has the Paralyzed condition. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Solomon Roderick",
@@ -11574,7 +11851,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. or range 20/60 ft. *Hit:* 4 (**1d6 + 1**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Soulfire Stoker",
@@ -11695,6 +11973,13 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 7 (**1d8 + 3**) Fire damage, and the target has Disadvantage on the next attack roll it makes before the start of the elemental's next turn."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The stoker unleashes a blast of glowing spectral steam. *Dexterity Saving Throw:* DC 13, each creature in a 30-foot Cone. *Failure:*  For 1 minute, the target sheds Dim Light in a 10-foot radius and can't benefit from the Invisible condition."
+   }
   ]
  },
  {
@@ -11805,7 +12090,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 5 (**2d4**) Piercing damage, or 2 (**1d4**) Piercing damage if the swarm is *Bloodied*. If the swarm isn't *Bloodied* and the target is a creature, the target has the Charmed condition until the start of the swarm's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Stonoga Blackstinger",
@@ -11910,7 +12196,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 17, one creature within 5 feet. *Failure:*  19 (**4d6 + 5**) Necrotic damage, and the target gains 1 Exhaustion level. Until the target's Exhaustion level is reduced to 0, its body is warped and twisted, and it has Disadvantage on ability checks and saving throws that use Strength or Dexterity. *Success* Half damage only. *Failure or Success*: If a Humanoid dies from this action, the hag can spend 2 days of work to shape its corpse into a __Deepdreck__, or it can combine it with the corpse of a horse to create a __Fleshdobbin__."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Barrow King",
@@ -12047,7 +12334,8 @@
     "type": "text",
     "value": "The king's blade flies in a deadly arc around him. *Dexterity Saving Throw:* DC 22, each creature of the king's choice in a 20-foot Emanation originating from him. *Failure:*  A creature takes 35 (**10d6**) Force damage and has the Prone condition. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Beast of Blight",
@@ -12177,6 +12465,13 @@
     "name": "",
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 17, each creature in a 60-foot Cone. *Failure:*  18 (**4d8**) Necrotic damage, and the target has the Poisoned condition. The target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it automatically succeeds. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The beast teleports to an unoccupied space within 60 feet. Either its starting or destination space must contain fungus or rotting organic matter."
    }
   ]
  },
@@ -12320,7 +12615,8 @@
     "type": "text",
     "value": "+18, range 150 ft. *Hit:* 15 (**1d10 + 10**) Bludgeoning damage plus 7 (**2d6**) Fire damage, and the target has the Prone condition."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Chained Reaper",
@@ -12457,7 +12753,8 @@
     "type": "text",
     "value": "The reaper throws a Large or smaller creature Grappled by it to a space it can see within 30 feet of itself that isn't in the air. *Dexterity Saving Throw:* DC 17, the creature thrown and each creature in the destination space. *Failure:*  9 (**2d8**) Bludgeoning damage, and the target has the Prone condition. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Crimson Abbot",
@@ -12583,7 +12880,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 15, one creature other than a Construct or Undead within 30 feet. *Failure:*  7 (**2d6**) Necrotic damage, and the target's Hit Point maximum is reduced by the damage taken. *Success* Half damage only. *Failure or Success*: The abbot regains Hit Points equal to the damage taken. A Humanoid reduced to 0 Hit Points by this damage and then buried rises the following sunset as a __Crimson Clergy__ under the abbot's control."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Daydreamer",
@@ -12678,7 +12976,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 10 (**3d6**) Psychic damage, and the target gains 1 Exhaustion level. This can't raise the target's Exhaustion level above 5, and all Exhaustion levels gained from this action end when the target finishes a Short or Long Rest, or if it receives a __Lesser Restoration__ spell or similar magic."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Dusk Mother",
@@ -12815,6 +13114,23 @@
     "type": "text",
     "value": "The mother focuses her wail into her bell. *Wisdom Saving Throw:* DC 22, each creature in a 30-foot Emanation originating from the mother (Constructs, Undead, and creatures that have ever been raised from the dead succeed automatically). *Failure:*  77 (**14d10**) Psychic damage that ignores the target's __Resistance__, if any, and the target has the Stunned condition until the end of the mother's next turn. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The mother targets the corpse of a creature she killed within the last minute. The target's soul is drawn out and transforms into a ceramic doll of the creature. The doll is a Tiny object with AC 15, HP equal to half the creature's maximum Hit Points, Vulnerability to Thunder damage, and Immunity to Poison damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The soul can dimly see and hear its surroundings, and creatures with telepathy can communicate with the soul."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the doll is destroyed, the soul arises from the doll as a Shadow under the mother's control. The creature can't be returned to life unless its soul is freed from the doll by a __Wish__ spell, or by destroying the shadow it spawned."
+   }
   ]
  },
  {
@@ -12942,7 +13258,8 @@
     "type": "text",
     "value": "The headsman hurls its skull, after which it reappears in the headsman's hand. *Dexterity Saving Throw:* DC 20, each creature in a 90-foot-long, 10-foot-wide Line. *Failure:*  63 (**14d8**) Fire damage. *Success* Half damage. *Failure or Success*: The target starts burning."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Ghostlight Locomotive",
@@ -13054,7 +13371,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 13, each creature in a 30-foot Cone. *Failure:*  10 (**3d6**) Necrotic damage. *Success* Half damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Grinning Sinner",
@@ -13197,7 +13515,8 @@
      ]
     }
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Harlequin",
@@ -13292,7 +13611,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 10 (**3d6**) Psychic damage, and the target gains 1 Exhaustion level. This can't raise the target's Exhaustion level above 5, and all Exhaustion levels gained from this action end when the target finishes a Short or Long Rest, or if it receives a __Lesser Restoration__ spell or similar magic."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Harvest Terror",
@@ -13429,7 +13749,8 @@
     "type": "text",
     "value": "After 1 minute, it succeeds automatically. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Horned King",
@@ -13551,6 +13872,13 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 19, each creature in a 60-foot Cone. *Failure:*  The target has the Frightened condition. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Horned King casts __Detect Thoughts__, requiring no spell components and using Charisma for the spellcasting ability (spell save DC 20)."
+   }
   ]
  },
  {
@@ -13646,7 +13974,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 10 (**3d6**) Psychic damage, and the target gains 1 Exhaustion level. This can't raise the target's Exhaustion level above 5, and all Exhaustion levels gained from this action end when the target finishes a Short or Long Rest, or if it receives a __Lesser Restoration__ spell or similar magic."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Jinxed Leviathan",
@@ -13782,7 +14111,8 @@
     "type": "text",
     "value": "If the leviathan takes 50 damage or more on a single turn from a creature inside it, the leviathan must succeed on a DC 25 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the leviathan and has the Prone condition. If the leviathan dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 15 feet of movement, exiting Prone."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Lord of Fools",
@@ -13913,6 +14243,13 @@
     "type": "text",
     "value": "The lord throws a massive pie that explodes in corrosive custard. *Dexterity Saving Throw:* DC 18, each creature in a 20-foot-radius Sphere centered on a point the lord can see within 100 feet. *Failure:*  16 (**3d10**) Acid damage, and the target has the Blinded condition until the end of the lord's next turn. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The lord vanishes in a burst of confetti and ribbons and teleports to an unoccupied space he can see within 30 feet."
+   }
   ]
  },
  {
@@ -14008,7 +14345,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 10 (**3d6**) Psychic damage, and the target gains 1 Exhaustion level. This can't raise the target's Exhaustion level above 5, and all Exhaustion levels gained from this action end when the target finishes a Short or Long Rest, or if it receives a __Lesser Restoration__ spell or similar magic."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Phantom Trainhopper",
@@ -14101,6 +14439,13 @@
     "name": "",
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 5 (**1d6 + 2**) Necrotic damage, and the target's Strength score decreases by 1d4. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse 1d4 hours later."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While in Dim Light or Darkness, the shadow takes the Hide action."
    }
   ]
  },
@@ -14197,7 +14542,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 10 (**3d6**) Psychic damage, and the target gains 1 Exhaustion level. This can't raise the target's Exhaustion level above 5, and all Exhaustion levels gained from this action end when the target finishes a Short or Long Rest, or if it receives a __Lesser Restoration__ spell or similar magic."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Sweetheart",
@@ -14292,7 +14638,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 10 (**3d6**) Psychic damage, and the target gains 1 Exhaustion level. This can't raise the target's Exhaustion level above 5, and all Exhaustion levels gained from this action end when the target finishes a Short or Long Rest, or if it receives a __Lesser Restoration__ spell or similar magic."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Tall Man",
@@ -14408,6 +14755,13 @@
     "type": "text",
     "value": "+12, reach 15 ft. *Hit:* 13 (**2d6 + 6**) Slashing damage plus 14 (**4d6**) Psychic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 14) from one of two claws, and has the Restrained condition until the grapple ends."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Tall Man magically transforms into a Small or Medium Humanoid, or back to his true form. His statistics, other than his size, are the same in each form. Any equipment he is wearing or carrying changes to accommodate his new form. He can take on any features he chooses, but he is always unnaturally tall for whatever guise he takes. He returns to his true form if he dies."
+   }
   ]
  },
  {
@@ -14494,7 +14848,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Vermintoll Abomination",
@@ -14611,7 +14966,8 @@
     "type": "text",
     "value": "+7, range 90 ft. *Hit:* 20 (**4d8 + 2**) Acid damage, and the target takes a -2 penalty to AC until the end of the abomination's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Weeping Widow",
@@ -14735,7 +15091,8 @@
      ]
     }
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The White Worm",
@@ -14882,7 +15239,8 @@
      ]
     }
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Wicker Man",
@@ -15008,7 +15366,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 18, each creature in a 60-foot Cone. *Failure:*  35 (**10d6**) Fire damage. *Success* Half damage. *Failure or Success*: A creature reduced to 0 Hit Points by this damage is reduced to ash, and its soul is absorbed into the Wicker Man. The creature can't be restored to life by any means until the wicker man is destroyed."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Wild Titan",
@@ -15139,7 +15498,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 19, each of the titan's enemies in a 100-foot Emanation originating from the titan. *Failure:*  The target has the Charmed condition until the start of the titan's next turn. While Charmed in this way, the creature must use its action to make its most powerful melee or ranged attacks against the nearest creature it can see."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Theodora Mayville",
@@ -15248,6 +15608,13 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 19, each creature in a 60-foot Cone. *Failure:*  A target takes 45 (**10d8**) Psychic damage and has the Incapacitated condition until the start of the hag's next turn. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hag shape-shifts into a Small or Medium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+   }
   ]
  },
  {
@@ -15334,7 +15701,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Vander Boone",
@@ -15425,7 +15793,8 @@
     "type": "text",
     "value": "+5, range 30/90 ft. *Hit:* 8 (**1d10 + 3**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Vermin Familiar",
@@ -15569,7 +15938,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 12, one creature the familiar can see within 5 feet. *Failure:*  21 (**6d6**) Psychic damage, and the target has the Frightened condition until the end of the familiar's next turn. The Frightened target uses its movement on its turn to get as far away as possible from the familiar, moving by the safest route. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Vermin Infestation",
@@ -15692,7 +16062,8 @@
      ]
     }
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Vessla Browntooth",
@@ -15802,6 +16173,13 @@
     "type": "text",
     "value": "While Frightened in this way, the target perceives its allies as enemies born from its nightmares, but it isn't compelled to act against or harm them. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hag shape-shifts to resemble a Tiny __weasel__ (Speed 30 ft., Climb 30 ft.) or a Small or Medium Humanoid, or back into her true form. Her game statistics, other than her Speed as a weasel and her size, are the same in each form. Any equipment she is wearing or carrying isn't transformed."
+   }
   ]
  },
  {
@@ -15888,7 +16266,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Wayward Haint",
@@ -15994,7 +16373,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 10 (**3d6**) Psychic damage, and the target gains 1 Exhaustion level. This can't raise the target's Exhaustion level above 5, and all Exhaustion levels gained from this action end when the target finishes a Short or Long Rest, or if it receives a __Lesser Restoration__ spell or similar magic."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Weasel Hag",
@@ -16115,6 +16495,13 @@
     "type": "text",
     "value": "While Frightened in this way, the target perceives its allies as enemies born from its nightmares, but it isn't compelled to act against or harm them. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hag shape-shifts to resemble a Tiny __weasel__ (Speed 30 ft., Climb 30 ft.) or a Small or Medium Humanoid, or back into her true form. Her game statistics, other than her Speed as a weasel and her size, are the same in each form. Any equipment she is wearing or carrying isn't transformed."
+   }
   ]
  },
  {
@@ -16230,7 +16617,8 @@
     "type": "text",
     "value": "*Strength Saving Throw:* DC 16, one Medium or smaller creature the wellwyrm can see within 5 feet. *Failure:*  13 (**2d8 + 4**) Bludgeoning damage. The target has the Grappled condition (escape DC 14), and it has the Restrained condition until the grapple ends. The wellwyrm needn't spend extra movement to move during this grapple."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Wendel Somerton",
@@ -16321,7 +16709,8 @@
     "type": "text",
     "value": "+5, range 60 ft. *Hit:* 11 (**2d10**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Weston Murdoch",
@@ -16412,7 +16801,8 @@
     "type": "text",
     "value": "+5, range 60 ft. *Hit:* 11 (**2d10**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Wildpyre",
@@ -16527,7 +16917,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 15, one creature the wildpyre can see within 60 feet. *Failure:*  The target has the Restrained condition. At the end of each of the target's turns, it repeats the saving throw, ending the effect on itself on a success. During the target's turn, it can choose to end the Restrained condition by taking 6 (**1d12**) Fire damage plus 6 (**1d12**) Necrotic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "William Lodge",
@@ -16634,7 +17025,8 @@
     "type": "text",
     "value": "+2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Wisp",
@@ -16747,6 +17139,13 @@
     "type": "text",
     "value": "The target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If it fails three of these saving throws, the loss is permanent, and its voice only returns when the ketgrinn dies. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ketgrinn teleports up to 40 feet to an unoccupied space it can see."
+   }
   ]
  },
  {
@@ -16836,7 +17235,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage plus 3 (**1d6**) Necrotic damage, and if the target is a creature, it has Disadvantage on attack rolls until the start of the witchwoven's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Woodwarped",
@@ -16949,7 +17349,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 13, each creature in a 15-foot Emanation originating from the woodwarped, with Disadvantage if Grappled by it. *Failure:*  14 (**4d6**) Piercing damage, and the target has the Poisoned condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Wormhost Surgeon",
@@ -17068,7 +17469,8 @@
     "type": "text",
     "value": "The surgeon unleashes a spray of worm-ridden cerebral fluid. *Dexterity Saving Throw:* DC 14, each creature in a 20-foot Cone. *Failure:*  17 (**5d6**) Psychic damage, and the target is infested with larval parasitic worms. The target takes 7 (**2d6**) Psychic damage at the end of each of its turns as the worms burrow toward its brain. The ongoing damage ends when the target takes Poison damage or is targeted by an effect that ends the Poisoned condition. *Success* Half damage only. *Failure or Success*: If the target is reduced to 0 Hit Points by this Psychic damage, the worms reach its brain and it dies. A Humanoid slain in this way rises 24 hours later as a wormhost surgeon."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Colour Out of Space",
@@ -17166,6 +17568,13 @@
     "name": "",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 17, non-Mythos creatures in a 30-foot Emanation centered on the colour out of space. *Failure:*  44 (**8d10**) Necrotic damage. *Success* Half damage. If three or more creatures fail their saving throw against this effect, the colour out of space gains an additional action on its next turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The colour out of space destroys an unattended, non-magical object that it can touch that has Hit Points less than or equal to the colour's maximum Hit Points."
    }
   ]
  },
@@ -17292,7 +17701,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 24, creatures of Dagon's choice within 120 ft. of it; *First Failure:*  The target takes 11 (**2d10**) Force damage, and gains the Restrained condition until the end of its next turn, when it repeats the save. *Second Failure:*  The target takes 4d20 (22) Force damage its Speed is reduced to 0 and cannot be increased until it uses an action to make a successful DC 24 Strength (*Athletics*) check."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Deep One",
@@ -17394,7 +17804,8 @@
     "type": "text",
     "value": "+5, Reach 5 ft. *Hit:* 7 (**1d6 + 3**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Deep One Hybrid",
@@ -17487,7 +17898,8 @@
     "type": "text",
     "value": "+2, range 80/320 ft. *Hit:* 5 (**1d8**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Dimensional Shambler",
@@ -17597,6 +18009,28 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 14, one creature Grappled by the dimensional shambler. *Failure:*  The target is teleported up to 30 feet to an unoccupied space the dimensional shambler can see."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A dimensional shambler can spend 3 Dimension Points to gain an extra use of Legendary Action. It must use the additional use before its next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A dimensional shambler can spend 1 Dimension Point to extend its claws through space and time, increasing its Reach with Dimensional Claw to 30 feet and allowing it to ignore all cover with those attacks until the end of its turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A dimensional shambler can spend 3 Dimension Points to teleport itself and all creatures it has Grappled to a chosen destination it has visited within the past month."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The dimensional shambler teleports up to 60 feet to an unoccupied space it can see."
+   }
   ]
  },
  {
@@ -17701,6 +18135,13 @@
     "type": "text",
     "value": "1/day: __Cone of Cold__, __Fear__, __Ice Storm__."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The elder thing assesses the anatomy of a creature it can see within 30 ft. and makes a DC 15 Intelligence (*Medicine*) check. If it succeeds, its attacks against the target are critical hits on die rolls of 18 or higher for the next minute or until it uses Surgical Eye against a different target. If the elder thing succeeds on this check a second time against the same creature, its attacks against the target are instead critical hits on die rolls of 16 or higher for the next minute or until it uses Surgical Eye against a different target."
+   }
   ]
  },
  {
@@ -17800,6 +18241,18 @@
     "name": "",
     "type": "text",
     "value": "*Strength Saving Throw:* DC 24, each creature in a 20-foot-radius Sphere centered on a point the flying polyp can see within 120 feet. *Failure:*  18 (**4d8**) Cold damage and the target is pushed up to 30 feet away from the flying polyp in a straight line. *Success* Half damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 24, on creature within 2,000 feet. The flying polyp must have an unblocked line between it and its target, but the line does not need to be straight. The polyp does not need to see the target. *Failure:*  The target's Speed is reduced to 0 and cannot be increased until the end of the flying polyp's next turn. *Success* No effect."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The flying polyp gains the Invisible condition until the end of its next turn."
    }
   ]
  },
@@ -17915,7 +18368,8 @@
     "type": "text",
     "value": "The formless spawn throws a Medium or smaller creature Grappled by it to a space it can see within 30 feet of itself that isn't in the air. *Dexterity Saving Throw:* DC 18, the creature thrown and each creature in the destination space. *Failure:*  14 (**4d6**) Bludgeoning damage, and the target has the Prone condition. *Success* Half damage only"
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gnoph-Keh",
@@ -18009,6 +18463,18 @@
     "name": "",
     "type": "text",
     "value": "+10, Reach 10 ft. *Hit:* 12 (**1d8 + 7**) Slashing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The gnoph-keh can generate a supernatural storm that fills the area around it in a howling blizzard. Driving snow and wind fill the area in a 300-foot Emanation centered on the gnoph-keh. The area is Heavily Obscured, and exposed flames in the area are doused. This effect ends if the gnoph-keh has the Incapacitated condition or dies. It can also dismiss the effect as a Bonus Action."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature that ends its turn in this Emanation takes 3 (**1d6**) Cold damage."
    }
   ]
  },
@@ -18125,7 +18591,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 23, creatures of Great Cthulhu's choice that can see or hear it within 500 ft. *First Failure:*  The target takes 110 (**20d10**) Psychic damage, and is Frightened of Great Cthulhu until the end of its next turn, when it repeats the save. *Second Failure:*  On its next turn, Great Cthulhu controls the target. This effect ends at the end of that turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Great Race of Yith",
@@ -18225,7 +18692,8 @@
     "type": "text",
     "value": "+11, Reach 15 ft. *Hit:* 29 (**4d10 + 7**) Slashing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Greater Crawling One",
@@ -18320,7 +18788,8 @@
     "type": "text",
     "value": "+7, Reach 5 ft. *Hit:* 8 (**1d8 + 3**) Necrotic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Greater Dark Young of Shub-Niggurath",
@@ -18415,7 +18884,8 @@
     "type": "text",
     "value": "+10, Reach 30 ft. *Hit:* 15 (**2d8 + 6**) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 18)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Greater Star-Spawn of Cthulhu",
@@ -18515,7 +18985,8 @@
     "type": "text",
     "value": "+11, Reach 20 ft. *Hit:* 28 (**4d10 + 6**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Hunting Horror",
@@ -18619,6 +19090,18 @@
     "type": "text",
     "value": "+10, Reach 20 ft. *Hit:* 15 (**2d8 + 6**) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 18)."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The horror unravels a target's life force with a bite. The hunting horror studies one creature it can see within 30 feet of itself. For 1 minute, once on each of the hunting horror's turns when it hits the target with an attack roll using its Bite attack, it can cause the target to take an extra 18 (**4d8**) Necrotic damage, and the target can't regain Hit Points until the end of hunting horror's next turn. On each of the hunting horror's subsequent turns, it can take a Bonus Action to deal 18 (**4d8**) Necrotic damage to the target automatically."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This effect ends if the target is ever outside the range, if it has Total Cover from the hunting horror, if it is on a different plane of existence, or if hunting horror uses this Bonus Action on a different creature."
+   }
   ]
  },
  {
@@ -18713,7 +19196,8 @@
     "type": "text",
     "value": "+3, Reach 5 ft. *Hit:* 6 (**1d8 + 1**) Necrotic damage, and a Medium or smaller creature has its Speed reduced by 10 feet until the end of its next turn as it is covered in slime and maggots."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lesser Dark Young of Shub-Niggurath",
@@ -18808,7 +19292,8 @@
     "type": "text",
     "value": "+5, Reach 20 ft. *Hit:* 8 (**1d8 + 3**) Bludgeoning damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lesser Star-Spawn of Cthulhu",
@@ -18907,7 +19392,8 @@
     "type": "text",
     "value": "+8, Reach 15 ft. *Hit:* 22 (**3d10 + 5**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Mi-Go",
@@ -19005,6 +19491,23 @@
     "name": "",
     "type": "text",
     "value": "+5, Reach 5 ft. *Hit:* 7 (**1d8 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The mi-go confers with a human brain it has sealed away in a jar. The specimen is specifically chosen for the knowledge it can provide to the mi-go, allowing it to adapt to a variety of situations. The mi-go chooses one of the following benefits: It gains Advantage on attack rolls until the end of its turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "It uses the Dodge action as part of this Bonus Action."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "It gains a +2 bonus to its spell save DC until the end of its turn."
    }
   ]
  },
@@ -19131,7 +19634,8 @@
     "type": "text",
     "value": "Nyarlathotep shape-shifts into a Small or Medium Humanoid, or it returns to this form. Other than his size, his game statistics are the same in each form. Any equipment he is wearing or carrying isn't transformed."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Rat-Thing",
@@ -19224,7 +19728,8 @@
     "type": "text",
     "value": "+4, Reach 5 ft. *Hit:* 4 (**1d3 + 2**) Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Shadow Spirit",
@@ -19326,7 +19831,8 @@
     "type": "text",
     "value": "+Bonus equals your spell attack modifier, range 150 ft. *Hit:* **2d4 + 3 + summonSpellLevel** Cold damage. If the spirit was hidden when it made the attack, the attack deals an additional **2d4** Cold damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Shoggoth",
@@ -19439,6 +19945,13 @@
     "name": "",
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 20, each creature in a 60-foot Cone. *Failure:*  44 (**8d10**) Acid damage. *Success* Half damage. For 1 minute, the area within the Cone is drenched with slimy acid. When a creature enters the area for the first time on a turn or ends its turn there, it takes 22 (**4d10**) Acid damage. A creature can take this damage only once per turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 23, one creature Grappled by the shoggoth. *Failure:*  The target takes 32 (**4d10 + 10**) Acid damage."
    }
   ]
  },
@@ -19553,6 +20066,13 @@
     "name": "",
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 20, each creature in a 60-foot Cone. *Failure:*  44 (**8d10**) Acid damage. *Success* Half damage. For 1 minute, the area within the Cone is drenched with slimy acid. When a creature enters the area for the first time on a turn or ends its turn there, it takes 22 (**4d10**) Acid damage. A creature can take this damage only once per turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 23, one creature Grappled by the shoggoth. *Failure:*  The target takes 32 (**4d10 + 10**) Acid damage."
    }
   ]
  },
@@ -19694,6 +20214,13 @@
     "type": "text",
     "value": "*Strength Saving Throw:* DC 25, creatures of Shub-Niggurath's choice within 200 ft. of Shub-Niggurath and the ground. *Failure:*  The target takes 110 (**20d10**) Bludgeoning damage, is pulled to the ground beneath it if it is flying, and gains the Prone and Restrained conditions as fibrous plant tendrils erupt from the ground. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. *Success* Half damage, and the target is pulled to the ground beneath it if it is flying."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Shub-Niggurath may teleport to any open space, provided she ends that teleportation within 10 feet of a friendly Plant creature she can see."
+   }
   ]
  },
  {
@@ -19781,7 +20308,8 @@
     "type": "text",
     "value": "The fleshling construct constricts a target that it is grappling, doing **2d8 + summonSpellLevel** Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gasdra",
@@ -19880,7 +20408,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 5 (**1d6 + 2**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Plant Spirit",
@@ -19976,7 +20505,8 @@
     "type": "text",
     "value": "+Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d8 + 3 + summonSpellLevel** Bludgeoning or Piercing damage (Thorny Only)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Primal Guardian",
@@ -20072,7 +20602,8 @@
     "type": "text",
     "value": "+Bonus equals your attack modifier using Strength, reach 5 ft. *Hit:* **1d4 + 2** plus your Rage Damage bonus Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Primal Striker",
@@ -20173,7 +20704,8 @@
     "type": "text",
     "value": "+Bonus equals your attack modifier using Strength, reach 5 ft. *Hit:* **1d8 + 2** plus your Rage Damage bonus Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Sea Serpent Spirit",
@@ -20280,7 +20812,8 @@
     "type": "text",
     "value": "+Bonus equals your spell attack modifier, reach 10 ft. *Hit:* **1d10 + 3 + summonSpellLevel** Bludgeoning damage and the target is pushed 5 feet away from the sea serpent."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Swarm of Vermin",
@@ -20372,7 +20905,8 @@
     "type": "text",
     "value": "+Bonus equals your spell attack modifier, reach 0 ft. *Hit:* **2d6 + 1 + summonSpellLevel** Piercing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Aberrant Host",
@@ -20567,7 +21101,8 @@
     "type": "text",
     "value": "*Intelligence Saving Throw:* DC 17, up to three creatures the host can see within 60 feet. *Failure:*  28 (**8d6**) Psychic damage, and the target has the Jinxed condition (1d8; save ends). *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Academy Apprentice",
@@ -20648,7 +21183,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. or range 60 ft. *Hit:* 7 (**2d4 + 2**) Force damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Academy Grandmaster",
@@ -20742,6 +21278,13 @@
     "type": "text",
     "value": "+9, reach 5 ft. or range 120 ft. *Hit:* 18 (**4d8**) Cold, Fire, or Lightning damage (mage's choice)."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The mage casts __Misty Step__ using the spellcasting ability from Spellcasting."
+   }
   ]
  },
  {
@@ -20834,6 +21377,13 @@
     "type": "text",
     "value": "+5, reach 5 ft. or range 120 ft. *Hit:* 14 (**4d6**) Cold, Fire, or Lightning damage (mage's choice)."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The mage casts __Misty Step__ using the spellcasting ability from Spellcasting."
+   }
   ]
  },
  {
@@ -20919,6 +21469,13 @@
     "name": "",
     "type": "text",
     "value": "+5, range 120 ft. *Hit:* 14 (**4d6**) Necrotic damage, and the target can't regain Hit Points until the start of the outcast's next turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The outcast magically summons three __Dretches__ or one __Quasit__. The summoned creatures appear in an unoccupied space within 60 feet of the outcast, whom they obey. They take their turns immediately after the outcast. The creatures remain for 1 hour, until the outcast dies, or until dismissed by the outcast as a Bonus Action."
    }
   ]
  },
@@ -21082,7 +21639,8 @@
     "type": "text",
     "value": "The dragon chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The dragon can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Agog",
@@ -21244,6 +21802,13 @@
     "name": "",
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 7 (**2d4 + 2**) Slashing damage, and if the target is Medium or smaller, it has the Prone condition."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The agog makes a Bite attack against a Prone creature."
    }
   ]
  },
@@ -21414,6 +21979,13 @@
     "type": "text",
     "value": "A creature that enters the fog for the first time on a turn or starts its turn there is subjected to the following effect. *Intelligence Saving Throw:* DC 16. *Failure:*  35 (**10d6**) Psychic damage, and the target has the Incapacitated condition until the start of its next turn. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The alienist teleports to an unoccupied space it can see within 60 feet."
+   }
   ]
  },
  {
@@ -21578,6 +22150,13 @@
     "name": "",
     "type": "text",
     "value": "+4, reach 5 ft. or range 20/60 ft. *Hit:* 5 (**1d6 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The allopine takes the Disengage or Hide action."
    }
   ]
  },
@@ -21790,7 +22369,8 @@
     "type": "text",
     "value": "The Amalgamation chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The Amalgamation can use this Epic Action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Ancient Delerium Dragon",
@@ -21967,7 +22547,8 @@
     "type": "text",
     "value": "The dragon chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The dragon can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Animated Delerium Sludge",
@@ -22115,7 +22696,8 @@
     "type": "text",
     "value": "A creature within 5 feet of the elemental can take an action to pull a creature or object out of it with a successful DC 15 Strength (*Athletics*) check."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Anomollusk",
@@ -22254,7 +22836,8 @@
     "type": "text",
     "value": "The anomollusk moves up to its Speed, and can enter the spaces of Large or smaller creatures as it does. Each creature whose space it enters is subjected once to the following effect. *Strength Saving Throw:* DC 17. *Success* The target is pushed 5 feet away from the anomollusk into a space of its choice. If the target chooses not to move, it suffers the effects of a failure. *Failure:*  The target has the Prone condition and is subjected to Snail Trail."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Apex",
@@ -22463,6 +23046,23 @@
     "type": "text",
     "value": "+10, reach 10 ft. *Hit:* 27 (**4d10 + 5**) Bludgeoning damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 18, each creature in a 120-foot long, 5-foot wide Line. *Failure:*  22 (**4d10**) Lightning damage, and the target has the Shocked condition until the end of its next turn. *Success* Half damage only."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "+10, range 120 ft. *Hit:* 23 (**4d8 + 5**) Fire damage, and the target and each creature within 10 feet of it is subjected to the following effect. *Dexterity Saving Throw:* DC 18. *Failure:*  The target has the Burning condition (4d8 Fire)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 18, one creature the Apex can see within 120 feet. *Failure:*  45 (**10d8**) Cold damage, and the target has the Frozen condition (DC 18). *Success* Half damage only."
+   }
   ]
  },
  {
@@ -22609,7 +23209,8 @@
     "type": "text",
     "value": "*Intelligence Saving Throw:* DC 14, each creature in a 30-foot Cube centered on a point the arcane wraith can see. *Failure:*  The target has the Blinded condition (save ends). While Blinded, the target has the Immobilized condition. The effect ends for the target if it takes damage or another creature takes an action to shake it out of its nightmare. When the effect ends, the target takes 14 (**4d6**) Psychic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Ascendant Vladimir von Drakken",
@@ -22766,7 +23367,8 @@
     "type": "text",
     "value": "Vladimir von Drakken chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11+, the effect ends on him. He can use this action even if he would otherwise be unable to take actions, his actions are being controlled by another creature, or if a spell or effect alters his game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Beetle Knight",
@@ -22907,6 +23509,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 10 ft. *Hit:* 15 (**2d10 + 4**) Piercing damage, or 26 (**4d10 + 4**) Piercing damage if the beetle knight moved 20+ feet straight toward the target immediately before the hit. If the target is Medium or smaller, it has the Grappled condition (escape DC 14). While Grappled, the target has the Restrained condition and the beetle knight can't use its Pincer Horn against another target."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 14, one creature Grappled by the beetle knight. *Failure:*  The target is thrown up to 1d6 × 10 feet, landing with the Prone condition. If the target strikes a solid surface, it takes 3 (**1d6**) Bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 14 Dexterity saving throw or take the same damage and have the Prone condition."
    }
   ]
  },
@@ -23078,6 +23687,13 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 15, each creature in a 30-foot Emanation originating from the belfray that can hear it. *Failure:*  22 (**4d8 + 4**) Thunder damage, and the target has the Weakened condition (save ends). *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While in Dim Light or Darkness, the belfray takes the Hide action."
+   }
   ]
  },
  {
@@ -23243,7 +23859,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 16, each creature in a 30-foot Cone. *Failure:*  63 (**14d8**) Acid damage. *Success* Half damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Bigger Linda",
@@ -23391,7 +24008,8 @@
     "type": "text",
     "value": "Bigger Linda chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on her. Bigger Linda can use this Epic Action even if she would otherwise be unable to take actions, her actions are being controlled by another creature, or if a spell or effect alters her game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Blackjack Mel",
@@ -23477,6 +24095,13 @@
     "name": "",
     "type": "text",
     "value": "+5, reach 5 ft. or range 30 ft. *Hit:* 6 (**1d4 + 4**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Blackjack Mel takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -23631,7 +24256,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 11, each creature in a 15-foot Cone. *Failure:*  5 (**2d4**) Acid damage and is Burning (2d4 Acid)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Bloated Hive",
@@ -23794,6 +24420,13 @@
     "type": "text",
     "value": "The bloated hive creates a __Swarm of Contaminated Insects__, which appears in an unoccupied space within 5 feet. The swarm takes its turn immediately after the bloated hive."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The bloated hive causes its Insect Swarm to fly in the face of a creature within 5 feet of it. The target can't take Reactions until the end of the bloated hive's turn."
+   }
   ]
  },
  {
@@ -23890,6 +24523,18 @@
     "name": "",
     "type": "text",
     "value": "A creature within 5 feet can take an action to detach the leech with a successful DC 13 Wisdom (*Medicine*) check. *Failure:*  The leech is still detached, but the target has the Bleeding condition (2d4). Failure by 5 or More: The leech isn't detached and the target takes 8 (**2d4 + 3**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The leech can use this Bonus Action only when it is attached to a creature. The attached creature loses 10 (3d6) Hit Points due to blood loss, and the blood leech fills one of its empty blood bags with some of the target's blood."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The leech can use this Bonus Action only when it is attached to a creature and has at least one filled blood bag. The attached creature regains 10 3d6 Hit Points, and the leech empties one of its filled blood bags."
    }
   ]
  },
@@ -24049,6 +24694,13 @@
     "name": "",
     "type": "text",
     "value": "+7, reach 10 ft. *Hit:* 11 (**2d6 + 4**) Bludgeoning damage, and if the target is a Medium or smaller creature, it has the Grappled condition (escape DC 15). Until this grapple ends, the body snatcher can't use this hand against another target. The body snatcher has four hands, each of which can grapple one target."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The body snatcher teleports up to 120 feet to an unoccupied space that it can see that is in Dim Light or Darkness. It can bring any Medium or smaller creature it is grappling, teleporting that creature to an unoccupied space it can see within 5 feet of its destination that is also in Dim Light or Darkness. An unwilling creature can make a DC 13 Charisma saving throw to resist being teleported. On a successful save, neither the creature nor the body snatcher __Teleport__."
    }
   ]
  },
@@ -24223,6 +24875,13 @@
     "name": "",
     "type": "text",
     "value": "+7 to hit, range 30/60 ft. *Hit:* 14 (**4d4 + 4**) Acid damage and the target is Burning (2d4 Acid). While Burning in this way, the target's AC becomes 10 + its Dexterity modifier."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The bojack takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -24465,7 +25124,8 @@
     "type": "text",
     "value": "The cacophonous chimera chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The cacophonous chimera can use this Epic Action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Captain Ansom Lang",
@@ -24562,6 +25222,13 @@
     "name": "",
     "type": "text",
     "value": "+7, range 150/600 ft. *Hit:* 8 (**1d8 + 4**) Piercing damage, and the target has the Slowed condition until the end of Ansom's next turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Ansom makes two Shortsword attacks."
    }
   ]
  },
@@ -24758,7 +25425,8 @@
     "type": "text",
     "value": "*Intelligence Saving Throw:* DC 16, each creature in a 20-foot Emanation originating from the cerebrograft. *Failure:*  22 (**4d10**) Psychic damage, and the target has the Dazed condition (save ends). Failure by 5 or More: The target instead has the Stunned condition (save ends). *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Chemist",
@@ -24926,6 +25594,13 @@
     "name": "",
     "type": "text",
     "value": "A creature that enters the area for the first time on a turn or starts its turn there is subjected to the following effect. *Dexterity Saving Throw:* DC 17. *Failure:*  30 (**12d4**) Acid damage, and the target has the Prone condition. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The chemist administers a restorative poultice to itself or a creature it can see within 5 feet that isn't a Construct or Undead. The target regains 35 10d6 Hit Points. Once a creature benefits from Emergency Dose, it can't do so again until it finishes a Short or Long Rest."
    }
   ]
  },
@@ -25127,7 +25802,8 @@
     "type": "text",
     "value": "The chemystral can hold only one Large creature or up to four Medium or smaller creatures inside it at a time. An engulfed creature can take an action to escape with a successful DC 17 Strength check, entering a space of its choice within 5 feet of the ooze."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Chitinous Dreg",
@@ -25286,7 +25962,8 @@
     "type": "text",
     "value": "+6, reach 5 ft. *Hit:* 14 (**3d6 + 4**) Force damage, and the target has Disadvantage on attack rolls against any creature other than the dreg until the end of its next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Chitter",
@@ -25454,6 +26131,13 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 13, each creature within 120 feet of the chitter that can hear it. *Failure:*  The target has the Dazed condition until the end of the chitter's next turn."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The chitter moves up to its Speed toward a Hostile creature it can see. If it ends this movement adjacent to the creature, it gains Advantage on attack rolls against that creature until the end of its turn."
+   }
   ]
  },
  {
@@ -25547,7 +26231,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 13 (**4d4 + 3**) Psychic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Congregation",
@@ -25649,6 +26334,13 @@
     "name": "",
     "type": "text",
     "value": "+8, reach 0 ft. *Hit:* 28 (**8d6**) Piercing damage, or 14 (**4d6**) Piercing damage if the congregation has the *Bloodied* condition. The target has the Prone condition."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 16, one creature in the congregation's space that has the Prone condition. *Failure:*  17 (**2d10 + 6**) Bludgeoning damage. *Success* Half damage."
    }
   ]
  },
@@ -25803,7 +26495,8 @@
     "type": "text",
     "value": "The wurm moves up to its Speed, entering the spaces of Large or smaller creatures. Each creature whose space it enters is subjected once to the following effect. At the end of its movement, the wurm can make one Bite attack against a Prone creature as a Bonus Action. *Strength Saving Throw:* DC 22. *Success* The target is pushed 5 feet away from the wurm into a space of its choice. If the target chooses not to move, it suffers the effects of a failure. *Failure:*  35 (**10d6**) Bludgeoning damage, and the target is pushed 10 feet away from the wurm and has the Prone condition."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Crimson Countess",
@@ -25996,7 +26689,8 @@
     "type": "text",
     "value": "The Crimson Countess chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on them. The Crimson Countess can use this action even if they would otherwise be unable to take actions, their actions are being controlled by another creature, or if a spell or effect alters their game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Crimson Knight",
@@ -26201,6 +26895,13 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 15, one creature within 5 feet that is willing or has the Grappled, Incapacitated, or Restrained condition. *Failure:*  14 (**3d6 + 4**) Necrotic damage, and the vampire regains Hit Points equal to the Necrotic damage dealt."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The vampire moves up to its Speed toward a Hostile creature it can see. If it ends this movement within 5 feet of the creature, it has Advantage on the next attack roll it makes against that creature before the end of its turn."
+   }
   ]
  },
  {
@@ -26343,7 +27044,8 @@
     "type": "text",
     "value": "Vladimir von Drakken chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11+, the effect ends on him. He can use this action even if he would otherwise be unable to take actions, his actions are being controlled by another creature, or if a spell or effect alters his game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Crystalline Dreg",
@@ -26495,7 +27197,8 @@
     "type": "text",
     "value": "The target has the Shocked Condition until the end of its next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Cyclopean Hulk",
@@ -26645,6 +27348,13 @@
     "name": "",
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 14, each creature in a 60-foot-long, 5-foot-wide Line. *Failure:*  18 (**4d8**) Force damage. *Success* Half damage. *Failure or Success*: If the target is a creature and this damage reduces it to 0 Hit Points, it disintegrates into a pile of fine delerium dust."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hulk vanishes from the Material Plane and is transported to the Space Between Worlds. At the start of its next turn, it returns to an unoccupied space of its choice within 10 feet of the space it vanished from. If no unoccupied space is available within that range, it appears in the nearest unoccupied space (chosen at random if more than one space is equally near)."
    }
   ]
  },
@@ -26847,7 +27557,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 16, each creature in a 10-foot radius, 40-foot high Cylinder centered on a point the vampire can see within 120 feet. *Failure:*  14 (**4d6**) Necrotic damage plus 14 (**4d6**) Fire damage, and the target has the Staggered condition until the end of its next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Dark Growth",
@@ -27016,7 +27727,8 @@
     "type": "text",
     "value": "An infected creature that dies or undergoes a Monstrous Transformation becomes a Dark Growth Shambler. A __Lesser Restoration__ spell or similar magic that removes diseases ends Dark Decay, as does any magic that removes Contamination levels."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Dark Growth Shambler",
@@ -27113,7 +27825,8 @@
     "type": "text",
     "value": "An infected creature that dies or undergoes a Monstrous Transformation becomes a Dark Growth Shambler. A __Lesser Restoration__ spell or similar magic that removes diseases ends Dark Decay, as does any magic that removes Contamination levels."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Deep Dreg Warrior",
@@ -27277,7 +27990,8 @@
     "type": "text",
     "value": "+3 to hit, range 5/15 ft., one Large or smaller creature. *Hit:* The target has the Restrained condition. A creature can take an action to free itself or another creature in a net with a successful DC 10 Strength check. Dealing 5 Slashing damage to the net (AC 10) frees the target without harming it and destroys the net."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Deep Knight",
@@ -27446,6 +28160,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 5 ft. or range 20/60 ft. *Hit:* 11 (**2d6 + 4**) Piercing damage, and if the target is a Huge or smaller creature, it is subjected to the following effect. *Strength Saving Throw:* DC 14. *Failure:*  The target is pulled up to 20 feet toward the deep knight."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "+6, reach 5 ft. *Hit:* 9 (**2d4 + 4**) Bludgeoning damage, and if the target is a Huge or smaller creature, it is subjected to the following effect. *Strength Saving Throw:* DC 14. *Failure:*  The target has the Prone condition."
    }
   ]
  },
@@ -27622,6 +28343,13 @@
     "type": "text",
     "value": "The changes wrought by this effect fail to hold up to physical inspection. For example, the siren could appear to have smooth skin, but someone touching them would feel their fishy flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 15 Intelligence (*Investigation*) check to discern that the siren is disguised."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The deep siren magically teleports to an unoccupied space it can see within 30 feet."
+   }
   ]
  },
  {
@@ -27736,6 +28464,13 @@
     "name": "",
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 15, each creature in a 30-foot Cone. *Failure:*  10 (**3d6**) Necrotic damage plus 10 (**3d6**) Psychic damage plus 10 (**3d6**) Radiant damage. *Success* Half damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The dragon teleports to an unoccupied space it can see within 30 feet."
    }
   ]
  },
@@ -27890,7 +28625,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Slashing damage plus 10 (**3d6**) Necrotic damage. Critical *Hit:* *Constitution Saving Throw:* DC 10. *Failure:*  The target gains one level of Contamination."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Digipede",
@@ -28039,7 +28775,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 15, each creature in a 60-foot long, 5-foot wide Line. *Failure:*  35 (**10d6**) Lightning damage, and the target has the Slowed condition. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. *Second Failure:*  The target has the Immobilized condition. *Third Failure:*  The target has the Paralyzed condition. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Disembodied Psyche",
@@ -28205,6 +28942,13 @@
     "type": "text",
     "value": "The possession lasts until the body drops to 0 Hit Points or the psyche leaves as a Bonus Action. Whenever the target takes damage, it repeats the save, ending the possession on a success. When the possession ends, the psyche appears in an unoccupied space within 5 feet of the target, and the target is immune to this psyche's Mental Possession for 24 hours."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The psyche teleports to an unoccupied space within 60 feet."
+   }
   ]
  },
  {
@@ -28356,6 +29100,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 5 ft. *Hit:* 6 (**1d6 + 3**) Slashing damage plus 10 (**3d6**) Necrotic damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The dreg teleports up to 60 feet to an unoccupied space it can see. Before or after teleporting, the dreg can make one melee attack. If this attack hits, it deals an extra 10 (**3d6**) Psychic damage."
    }
   ]
  },
@@ -28542,6 +29293,13 @@
     "type": "text",
     "value": "The Reanimator targets the corpse of one of its destroyed creations it can see within 30 feet. The target returns to life with 45 (10d8) Hit Points. The target has Resistance to all damage and Advantage on saving throws until the end of its next turn."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Reanimator chooses a creature it can see that was reanimated or created by it. The target can use its Reaction to make an attack with Advantage or move up to its Speed without provoking Opportunity Attack action."
+   }
   ]
  },
  {
@@ -28711,7 +29469,8 @@
     "type": "text",
     "value": "+11, reach 15 ft., one creature Grappled by the sewer gator. *Hit:* 33 (**4d12 + 7**) Piercing damage. *Strength Saving Throw:* DC 19. *Failure:*  The target has the Dazed and Helpless conditions until it escapes the sewer gator's grapple."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Druid of the Sanguine Rite",
@@ -28905,7 +29664,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 17, each creature in a 30-foot Emanation originating from the vampire. *Failure:*  21 (**6d6**) Piercing damage, and the target has the Restrained condition (save ends). *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Effulgent Cnidarian",
@@ -29079,7 +29839,8 @@
     "type": "text",
     "value": "+8, reach 10 ft. *Hit:* 27 (**6d8**) Necrotic damage, or 48 Necrotic damage if the target is Charmed by the cnidarian."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Eldrick Runeweaver",
@@ -29204,7 +29965,8 @@
     "type": "text",
     "value": "Eldrick chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11+, the effect ends on him. Eldrick can use this action even if he would otherwise be unable to take actions, his actions are being controlled by another creature, or if a spell or effect alters his game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Eldritch Cataclysm",
@@ -29364,7 +30126,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 17, each creature in a 30-foot Emanation originating from the cataclysm. *Failure:*  28 (**8d6**) Thunder damage, and the target has the Prone condition. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Eldritch Crawler",
@@ -29529,6 +30292,13 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 12, one target within 40 feet. *Failure:*  18 (**4d8**) Necrotic damage, and the target gains one Contamination level. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The eldritch crawler climbs through a tear in reality, traveling from the Material Plane to the Space Between Worlds or vice versa."
+   }
   ]
  },
  {
@@ -29687,6 +30457,13 @@
     "type": "text",
     "value": "The dreg unleashes a storm of psychic energy in a 10-foot-radius sphere centered on a point within 60 feet of it. Each creature in that area must make a DC 13 Intelligence saving throw or take 14 (**4d6**) Psychic damage and has the Dazed condition (save ends)."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The dreg chooses a creature it can see within 60 feet of it and one of the following conditions: Addled, Clumsy, Enfeebled, or Sickened. *Charisma Saving Throw:* DC 13, the targeted creature. *Failure:*  The target becomes cursed by the dreg for one minute or until the dreg dies or uses this ability again. While cursed in this manner, a creature becomes vulnerable to Psychic damage and gains the chosen condition (sane ends). *Success* The target is immune to the dreg's Hazewarp Hex for 24 hours."
+   }
   ]
  },
  {
@@ -29773,6 +30550,13 @@
     "name": "",
     "type": "text",
     "value": "+5, reach 5 ft. or range 120 ft. *Hit:* 17 (**4d6 + 3**) Psychic damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The trickster takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -29948,6 +30732,43 @@
     "type": "text",
     "value": "The troll blasts a corrupting beam at a point it can see within 300 feet. *Constitution Saving Throw:* DC 16, all creatures in a 10-foot-radius Sphere centered on that point. *Failure:*  18 (**4d8**) Necrotic damage and gains a level of Contamination. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The troll is so contaminated that it changes form constantly, growing new appendages or exploding out of its old skin into a new form. The troll may manifest one of the following mutations. The mutation stays in effect until a new one is chosen."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The troll gains a Fly Speed equal to is Speed, but it falls if it ends its turn in the air."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Corrupting Blast now recharges on a 4-6, and the troll gains Truesight 30 ft."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The troll can make two additional Claw attacks as part of the Multiattack action."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The troll gains a Climb Speed equal to its Speed and can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The troll has the Invisible condition until it makes an attack."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The troll's Armor Class becomes 20."
+   }
   ]
  },
  {
@@ -30097,6 +30918,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 5 ft. or range 120 ft. *Hit:* 13 (**3d6 + 3**) Fire damage, and the target has the Burning condition (3d6 Fire)."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The elemental teleports to an unoccupied space it can see within 60 feet."
    }
   ]
  },
@@ -30316,7 +31144,8 @@
     "type": "text",
     "value": "The entropic watcher chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The entropic watcher can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Executioner",
@@ -30527,7 +31356,8 @@
     "type": "text",
     "value": "The Executioner chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The Executioner can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Exorcist",
@@ -30700,6 +31530,13 @@
     "name": "",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 15, one creature the exorcist can see within 60 feet that isn't a Celestial or Construct (Fiends and Undead have Disadvantage). *Failure:*  36 (**8d8**) Radiant damage. If the target is a Fiend or Undead, it instead takes 64 Radiant damage and is turned to ash if the effect reduces it to 0 Hit Points. *Success* Half damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One creature the exorcist can see regains 35 10d6 Hit Points. Once a creature benefits from Spiritual Healing, it can't do so again until it finishes a Short or Long Rest."
    }
   ]
  },
@@ -30895,6 +31732,13 @@
     "type": "text",
     "value": "*Intelligence Saving Throw:* DC 16, each creature in a 30-foot Emanation originating from the host. *Failure:*  21 (**6d6**) Psychic damage, and the target has the Frightened condition until the end of the host's next turn. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The host teleports to an unoccupied space it can see within 30 feet."
+   }
   ]
  },
  {
@@ -31005,6 +31849,13 @@
     "name": "",
     "type": "text",
     "value": "*Intelligence Saving Throw:* DC 16, each creature in a 60-foot Cone (creatures maintaining *Concentration* have Disadvantage). *Failure:*  28 (**8d6**) Psychic damage, or 48 Psychic damage if the target was maintaining *Concentration*. *Success* Half damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Wisdom Saving Throw:* DC 16, one creature within 60 feet of the far dweller. *Failure:*  14 (**4d6**) Psychic damage, and the target must immediately use its Reaction to move up to its Speed toward a creature of the far dweller's choice. If it ends this movement within reach of the creature, it must make a melee weapon attack against the creature with Advantage. *Success* Half damage only."
    }
   ]
  },
@@ -31193,6 +32044,13 @@
     "type": "text",
     "value": "The far dweller casts __Plane Shift__ without components, targeting itself and each Incapacitated creature within 10 feet of it."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The far dweller magically teleports to an unoccupied space it can see within 60 feet."
+   }
   ]
  },
  {
@@ -31336,7 +32194,8 @@
     "type": "text",
     "value": "The far dweller chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The far dweller can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Fiendish Host",
@@ -31532,6 +32391,13 @@
     "type": "text",
     "value": "*Strength Saving Throw:* DC 17, one creature the host can see within 30 feet. *Failure:*  18 (**4d8**) Fire damage, and the target has the Restrained condition. While Restrained, the target takes 10 (**3d6**) Fire damage at the start of each of its turns. At the end of each of its turns, the target makes a DC 17 Strength check, ending the effect on itself on a success."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The host takes the Dash or Disengage action."
+   }
   ]
  },
  {
@@ -31624,7 +32490,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 14, each creature of the flamekeeper's choice in a 30-foot Emanation originating from the flamekeeper. *Failure:*  16 (**3d10**) Radiant damage. *Success* Half damage. *Failure or Success*: Magical Darkness in the area is dispelled."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Fractal Lepidoptera",
@@ -31876,7 +32743,8 @@
     "type": "text",
     "value": "If the target has the Staggered condition, it instead takes no damage, that condition ends, and the target has the Incapacitated condition (save ends). While Incapacitated, the target mutters rhymes in a singsong voice and dances to an unheard rhythm, moving up to its Speed in a random direction at the start of each of its turns."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Frenzied Dreg",
@@ -32034,6 +32902,13 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 6 (**1d6 + 3**) Slashing damage plus 14 (**4d6**) Necrotic damage. Critical *Hit:* *Constitution Saving Throw:* DC 12. *Failure:*  The target gains one level of Contamination."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The dreg jumps 20 feet. This movement does not count toward its total movement for the round."
+   }
   ]
  },
  {
@@ -32188,7 +33063,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 13 (**3d6 + 3**) Necrotic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Garmyr Berserker",
@@ -32352,6 +33228,13 @@
     "name": "",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 16, each Hostile creature in a 30-foot Emanation originating from the garmyr that can hear it. *Failure:*  The target has the Frightened condition (save ends)."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The garmyr takes the Dash action to move toward a Hostile creature it can see."
    }
   ]
  },
@@ -32533,7 +33416,8 @@
     "type": "text",
     "value": "+7, range 150/600 ft. *Hit:* 8 (**1d8 + 4**) Piercing damage, and the target has the Slowed condition until the start of the garmyr's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Garmyr Thaumaturge",
@@ -32707,6 +33591,13 @@
     "type": "text",
     "value": "+7, reach 5 ft. or range 60 ft. *Hit:* 18 (**4d8**) Necrotic damage, and the target has the Bleeding condition (2d4)."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The garmyr makes a Bite attack against a *Bloodied* target."
+   }
   ]
  },
  {
@@ -32860,6 +33751,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 5 ft. *Hit:* 11 (**2d6 + 4**) Piercing damage, and if the target is Medium or smaller, it has the Prone condition."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The war dog makes a Bite attack against a *Bloodied* target."
    }
   ]
  },
@@ -33030,6 +33928,13 @@
     "type": "text",
     "value": "+5, reach 5 ft. or range 20/60 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage, or 7 (**1d8 + 3**) Piercing damage if wielded with two hands to make a melee attack."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The garmyr makes a Bite attack against a *Bloodied* target."
+   }
   ]
  },
  {
@@ -33129,6 +34034,13 @@
     "type": "text",
     "value": "+6, range 120 ft. *Hit:* 10 (**3d6**) Necrotic damage, and the target is pulled 15 feet toward the ghoul lord."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 14, one creature within 5 feet of the ghoul lord. *Failure:*  The target is pushed 10 feet away from the ghoul lord and has the Prone condition."
+   }
   ]
  },
  {
@@ -33211,6 +34123,13 @@
     "name": "",
     "type": "text",
     "value": "+5, reach 5 ft. or range 120 ft. *Hit:* 25 (**4d10 + 3**) Necrotic damage, and the target can't regain Hit Points until the start of the ghoul priest's next turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghoul priest chooses the corpse of a ghoul it can see within 60 feet. The ghoul returns to life with 5 Hit Points and stands up."
    }
   ]
  },
@@ -33381,6 +34300,13 @@
     "type": "text",
     "value": "The giant ratling picks up a willing Medium or smaller ratling ally or corpse within 5 feet. *Dexterity Saving Throw:* DC 14, one creature the giant ratling can see within 30 feet. *Failure:*  18 (**4d8**) Bludgeoning damage, and the target has the Prone condition. *Success* Half damage only. *Failure or Success*: The hurled ratling takes the same damage and lands with the Prone condition."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The giant ratling gains 15 Temporary Hit Points. Until the Temporary Hit Points are lost, the giant ratling has Advantage on Strength-based D20 Tests."
+   }
   ]
  },
  {
@@ -33546,7 +34472,8 @@
     "type": "text",
     "value": "The graffiti conjures a swarm of Drakkenheim citizen spirits within 120 feet of itself. The swarm uses the Chorus stat block. The chorus acts immediately after the graffiti on the same Initiative count, and it obeys the graffiti. The chorus disappears after 1 minute or the graffiti dies"
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Grasping Shadow",
@@ -33639,7 +34566,8 @@
     "type": "text",
     "value": "The shadow moves up to its Speed, pulling a creature it has Grappled with it."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gravekeeper",
@@ -33825,7 +34753,8 @@
     "type": "text",
     "value": "The gravekeeper chooses one condition, spell, or other effect currently affecting it and rolls 1d20. On an 11+, the effect ends on it. The gravekeeper can use this Epic Action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Grim Custodian",
@@ -33999,6 +34928,13 @@
     "name": "",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 15, one creature within 5 feet that is willing or has the Grappled, Incapacitated, or Restrained condition. *Failure:*  14 (**3d6 + 4**) Necrotic damage, and the vampire regains Hit Points equal to the Necrotic damage dealt."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The vampire teleports to an unoccupied space it can see within 60 feet."
    }
   ]
  },
@@ -34174,7 +35110,8 @@
     "type": "text",
     "value": "+12, range 120/300 ft. *Hit:* 26 (**4d8 + 8**) Bludgeoning damage and the target has the Prone condition. *Hit or Miss:* The delerium chunk explodes creating the following effect. *Constitution Saving Throw:* DC 20, the targeted creature and each creature within 10 feet of it. *Failure:*  36 (**8d8**) Necrotic damage and gain one level of Contamination. *Success* Half damage only. *Failure or Success*: An [Arcane Anomalies](https://5e.tools/tables.html#arcane%20anomalies_monstersofdrakkenheim) occurs in the space where the delerium chunk exploded."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gutbuster Hulk",
@@ -34335,7 +35272,8 @@
     "type": "text",
     "value": "The Gutbuster Hulk rips off a chunk of its mutated flesh and hurls it at a point it can see within 120 feet. *Constitution Saving Throw:* DC 14, each creature within a 10-foot-radius Sphere centered on that point. *Failure:*  28 (**8d6**) Necrotic damage. *Success* Half damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Gutwretch Dreg",
@@ -34502,7 +35440,8 @@
     "type": "text",
     "value": "+5, reach 15 ft. *Hit:* 12 (**2d8 + 3**) Bludgeoning damage and the target has the Prone condition."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Haze Hulk",
@@ -34599,7 +35538,8 @@
     "type": "text",
     "value": "The hulk moves its speed. During this movement, it can move through the spaces of Medium and smaller creatures, as well as structures made of wood or stone that are less than 1 foot thick. When the hulk enters another creature's space for the first time during this movement, it can make one Slam attack against that creature. If the target is a creature, it is subject to the following effect. *Strength Saving Throw:* DC 16. *Failure:*  The targeted creature has the Prone condition."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Haze Husk",
@@ -34681,7 +35621,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. *Hit:* 4 (**1d6 + 1**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Haze Regent Lenore von Kessel",
@@ -34899,7 +35840,8 @@
     "type": "text",
     "value": "Lenore chooses one condition, spell, or other effect currently affecting her and rolls 1d20. On an 11 or higher, the effect ends on her. Lenore can use this Epic Action even if she would otherwise be unable to take actions, her actions are being controlled by another creature, or if a spell or effect alters her game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Haze Wight",
@@ -35057,6 +35999,13 @@
     "name": "",
     "type": "text",
     "value": "+5, reach 5 ft. or range 60 ft. *Hit:* 13 (**3d6 + 3**) Necrotic damage. The first time the target is hit by a Contaminated Blast each turn, it is subjected to the following effect. *Constitution Saving Throw:* DC 13. *Failure:*  The target gains one Contamination level."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The haze wight reanimates the corpse of a haze husk it can see within 60 feet. The haze husk is revived with 5 Hit Points and immediately stands."
    }
   ]
  },
@@ -35242,6 +36191,13 @@
     "type": "text",
     "value": "The vampire touches a delerium shard and regains 10 (3d6) Hit Points. Once the vampire has used a delerium shard in this way, it can't be used in this manner again for 24 hours."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The vampire moves up to its Speed toward a Hostile creature it can see."
+   }
   ]
  },
  {
@@ -35411,6 +36367,13 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 15, each creature in the Emanation that can hear the harpy. *Failure:*  21 (**6d6**) Thunder damage. *Success* Half damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The harpy takes the Dash or Disengage action."
+   }
   ]
  },
  {
@@ -35564,6 +36527,13 @@
     "name": "",
     "type": "text",
     "value": "+5, range 150/600 ft. *Hit:* 7 (**1d8 + 3**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The harpy takes the Dash or Disengage action."
    }
   ]
  },
@@ -35729,6 +36699,13 @@
     "type": "text",
     "value": "+7, reach 5 ft. or range 30/60 ft. *Hit:* 8 (**1d8 + 4**) Piercing damage plus 10 (**3d6**) Lightning damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The harpy takes the Dash or Disengage action."
+   }
   ]
  },
  {
@@ -35871,6 +36848,13 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 13, each creature in a 30-foot Emanation originating from the hazewing moth. *Failure:*  14 (**4d6**) Radiant damage, and the target has the Addled condition (save ends)."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Intelligence Saving Throw:* DC 13, each creature in a 60-foot Emanation of the hazewing moth that can see it (hazewing moths automatically succeed). *Failure:*  The target has the Slowed condition (save ends). If the target is already Slowed, it instead has the Immobilized condition (save ends). If the target is already Immobilized, it also has the Incapacitated condition (save ends both)."
+   }
   ]
  },
  {
@@ -35997,7 +36981,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Piercing damage plus 10 (**3d6**) Necrotic damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Hazewing Moth Chrysalis",
@@ -36134,7 +37119,8 @@
     "type": "text",
     "value": "The chrysalis regains 7 (2d6) Hit Points, gaining any excess healing as Temporary Hit Points."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "He Who Laughs Last",
@@ -36368,7 +37354,8 @@
     "type": "text",
     "value": "He Who Laughs Last chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11+, the effect ends on him. He Who Laughs Last can use this action even if he would otherwise be unable to take actions, his actions are being controlled by another creature, or if a spell or effect alters his game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Helpful Hand",
@@ -36462,6 +37449,13 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* The hand attaches itself to the target. While latched, the hand cannot attack. Instead, at the start of each of the hand's turns, the latched creature takes 2 (**1d4**) Necrotic damage. A creature within 5 feet can take an action to detach the hand with a successful DC 13 Strength check. The hand can also detach itself at any time during its turn (no action required)."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hand takes the Help action."
+   }
   ]
  },
  {
@@ -36549,6 +37543,13 @@
     "name": "",
     "type": "text",
     "value": "+8, reach 5 ft. or range 30 ft. *Hit:* 25 (**6d6 + 4**) Radiant damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Ophelia casts __Healing Word__ using the spellcasting ability from Spellcasting."
    }
   ]
  },
@@ -36640,6 +37641,13 @@
     "name": "",
     "type": "text",
     "value": "The apothecary touches another creature. The target regains 20 (4d8 + 2) Hit Points, and the apothecary ends one disease or condition affecting the target, choosing from the Blinded, Deafened, Paralyzed, and Poisoned conditions."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One ally within 5 feet of the apothecary can use its Reaction to move up to its Speed and make an attack."
    }
   ]
  },
@@ -36733,7 +37741,8 @@
     "type": "text",
     "value": "+5, range 150/600 ft. *Hit:* 7 (**1d8 + 3**) Piercing damage, and the target has the Slowed condition until the end of the scout's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Hooded Lantern Trapper",
@@ -36860,7 +37869,8 @@
      ]
     }
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Hooded Lantern Veteran",
@@ -36951,6 +37961,18 @@
     "name": "",
     "type": "text",
     "value": "+5, range 150/600 ft. *Hit:* 7 (**1d8 + 3**) Piercing damage, and the target has the Slowed condition until the end of the veteran's next turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The veteran casts __Hunter's Mark__, using the spellcasting ability from Spellcasting."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The veteran moves up to 30 feet in a straight line in any direction, provided it ends its turn adjacent to a solid surface."
    }
   ]
  },
@@ -37141,7 +38163,8 @@
     "type": "text",
     "value": "The troll chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. A troll can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Hunter Hulk",
@@ -37303,6 +38326,13 @@
     "type": "text",
     "value": "The hulk casts __Invisibility__ on itself, requiring no spell components and using Wisdom as the spell-casting ability."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hulk pulls each creature Grappled by it up to 25 feet straight toward it."
+   }
   ]
  },
  {
@@ -37455,7 +38485,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 10, each creature in a 30-foot Emanation originating from the eldritch blossom. *Failure:*  The target has the Charmed condition for 1 minute. While Charmed, the target has the Incapacitated condition and must approach the eldritch blossom on its turns, taking the most direct path possible and moving through hazards. The effect ends early if a creature takes an action to shake the target out of its stupor."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Injector",
@@ -37644,7 +38675,8 @@
     "type": "text",
     "value": "The target has the Valor condition 1d4 for 1 minute."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Innocent Harvester",
@@ -37794,6 +38826,13 @@
     "name": "",
     "type": "text",
     "value": "The harvester moves up to its Speed. If it ends this movement within 5 feet of a Medium or larger creature, it can make one Surgical Claw attack against that creature. *Hit:* The harvester attaches to the target. While attached, the harvester has Advantage on attack rolls against the target. The attached harvester moves with the target, using none of the harvester's movement. The harvester can detach itself by using 5 feet of movement on its turn. A creature within 5 feet, including the target, can take an action to detach the harvester with a successful DC 13 Strength (*Athletics*) check."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The harvester takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -38010,6 +39049,13 @@
     "type": "text",
     "value": "The interloper casts __Plane Shift__ targeting only itself, requiring no components and using Charisma as its spellcasting ability."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The interloper teleports to an unoccupied space it can see within 30 feet."
+   }
   ]
  },
  {
@@ -38177,6 +39223,13 @@
     "name": "",
     "type": "text",
     "value": "The hulk twirls its blades around it in a violent, heavy swing. *Strength Saving Throw:* DC 17, each creature within 10 feet of the hulk. *Failure:*  27 (**6d6 + 6**) Slashing damage, and the target has the Prone condition. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hulk makes one Rusty Blade attack against a Prone creature."
    }
   ]
  },
@@ -38394,7 +39447,8 @@
     "type": "text",
     "value": "The hydra chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The hydra can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Knight-Captain Theodore Marshal",
@@ -38524,7 +39578,8 @@
     "type": "text",
     "value": "Theodore chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11+, the effect ends on him. Theodore can use this action even if he would otherwise be unable to take actions, his actions are being controlled by another creature, or if a spell or effect alters his game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Kronen",
@@ -38677,6 +39732,13 @@
     "name": "",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 15, each creature that can see the kronen. *Failure:*  18 (**4d8**) Psychic damage, and the target has the Frightened condition for 1 minute (save ends). If the creature's saving throw is successful or the effect ends for it, it is immune to the kronen's Loathsome Presence for 24 hours."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The kronen takes the Dash action."
    }
   ]
  },
@@ -38855,7 +39917,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 15, each creature within 30 feet. *Failure:*  14 (**4d6**) Radiant damage plus 14 (**4d6**) Necrotic damage and gain one level of Contamination. *Success* Half damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Last Memory",
@@ -39005,7 +40068,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 10, each creature in a 30-foot Emanation originating from the last memory that can hear it. *Failure:*  10 (**3d6**) Psychic damage and the target becomes Jinxed 1d6 (save ends)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lenore von Kessel",
@@ -39183,6 +40247,13 @@
     "type": "text",
     "value": "+6, reach 10 ft. *Hit:* 5 (**1d4 + 3**) Piercing damage plus 14 (**4d6**) Necrotic damage, and if the target is a creature it is subjected to the following effect. *Constitution Saving Throw:* DC 14. *Failure:*  The target gains one level of Contamination."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 15, each creature in a 30-foot Cone. *Failure:*  22 (**4d10**) Radiant damage and the target gains one level of Contamination. *Success* Half damage only. If Lenore sees her reflection within the Cone, she gains the Blinded and Incapacitated conditions for 1d6 hours."
+   }
   ]
  },
  {
@@ -39274,6 +40345,13 @@
     "name": "",
     "type": "text",
     "value": "+7, range 150/600 ft. *Hit:* 8 (**1d8 + 4**) Piercing damage, and the target has the Slowed condition until the end of Petra's next turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Petra takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -39460,6 +40538,13 @@
     "type": "text",
     "value": "*Charisma Saving Throw:* DC 13, one creature the liminal herald can see within 90 feet. *Failure:*  10 (**3d6**) Psychic damage, and the target is teleported into an unoccupied space the liminal herald can see within 60 feet. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The liminal herald teleports to an unoccupied space it can see within 30 feet."
+   }
   ]
  },
  {
@@ -39594,7 +40679,8 @@
     "type": "text",
     "value": "+5, reach 10 ft. *Hit:* 10 (**4d4**) Acid damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Living City",
@@ -39804,7 +40890,8 @@
     "type": "text",
     "value": "The living city chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The living city can use this Epic Action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Living Deep Haze",
@@ -39939,7 +41026,8 @@
     "type": "text",
     "value": "+8, reach 5 ft. *Hit:* 14 (**2d8 + 5**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Loathsome Gag Fly",
@@ -40092,7 +41180,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 13, each creature in a 15-foot Cone. *Failure:*  5 (**2d4**) Acid damage, and the target has the Burning condition (2d4 Acid). *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lob Frog",
@@ -40256,7 +41345,8 @@
     "type": "text",
     "value": "Every hour, the target is subjected to the following effect. *Constitution Saving Throw:* DC 12. *Failure:*  The target gains one Contamination level. Contamination levels gained in this way can't be removed until the disease is cured. If the target suffers a Monstrous Transformation, it dies and its flesh falls away, birthing a Lob Frog."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lord Commander Elias Drexel",
@@ -40382,7 +41472,8 @@
     "type": "text",
     "value": "Elias chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11+, the effect ends on him. Elias can use this action even if he would otherwise be unable to take actions, his actions are being controlled by another creature, or if a spell or effect alters his game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lord of the Feast",
@@ -40597,7 +41688,8 @@
     "type": "text",
     "value": "The Lord of the Feast chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11+, the effect ends on him. The Lord of the Feast can use this action even if he would otherwise be unable to take actions, his actions are being controlled by another creature, or if a spell or effect alters his game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lucretia Mathias",
@@ -40748,7 +41840,8 @@
     "type": "text",
     "value": "Lucretia chooses one condition, spell, or other effect currently affecting her and rolls 1d20. On an 11+, the effect ends on her. Lucretia can use this action even if she would otherwise be unable to take actions, her actions are being controlled by another creature, or if a spell or effect alters her game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lurker on the Threshold",
@@ -40937,7 +42030,8 @@
      ]
     }
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Lurking Dreg",
@@ -41101,6 +42195,13 @@
     "name": "",
     "type": "text",
     "value": "The dreg makes two Dagger attacks."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The dreg takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -41277,7 +42378,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 16, each creature in a 20-foot-radius Sphere centered on the troll. *Failure:*  14 (**4d6**) Fire damage and has the Blinded condition until it or another creature within 5 of it uses an action to clean the ash from their eyes. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Master Mage",
@@ -41369,7 +42471,8 @@
     "type": "text",
     "value": "+6, reach 5 ft. or range 120 ft. *Hit:* 14 (**4d6**) Cold, Fire, or Lightning damage (mage's choice)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Maw Vermin",
@@ -41544,7 +42647,8 @@
     "type": "text",
     "value": "The maw vermin coats a swallowed creature in acidic goo and launches it at a point within 120 feet of it. *Dexterity Saving Throw:* DC 15, each creature within 10 feet of the launched creature as it lands (the launched creature automatically fails). *Failure:*  21 (**6d6**) Acid damage, and the target has the Burning condition (4d6 Acid). While Burning, the target has the Restrained condition."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Minazorond",
@@ -41738,7 +42842,8 @@
     "type": "text",
     "value": "Minazorond chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. Minazorond can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Mind Leech",
@@ -41835,6 +42940,18 @@
     "type": "text",
     "value": "A creature within 5 feet can take an action to detach the leech with a successful DC 13 Wisdom (*Medicine*) check. *Failure:*  The leech is still detached, but the target has the Bleeding condition (2d4). Failure by 5 or More: The leech isn't detached and the target takes 8 (**2d4 + 3**) Piercing damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The leech can use this Bonus Action only when it is attached to a creature. That creature is subjected to the following effect. *Intelligence Saving Throw:* DC 11. *Failure:*  The target's Intelligence score is reduced by 1d4, and one of the leech's memory banks is filled. If this effect reduces the target's Intelligence score to 0, it has the Unconscious condition until it regains at least 1 point of Intelligence. Otherwise, the reduction lasts until the creature finishes a Short or Long Rest."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The leech can use this Bonus Action only when it is attached to a creature and has at least one filled memory bank. The attached creature gains Advantage on Intelligence-based D20 Tests for 1 minute, and the leech empties one of its filled memory banks."
+   }
   ]
  },
  {
@@ -41926,6 +43043,13 @@
     "name": "",
     "type": "text",
     "value": "+5, range 120 ft. *Hit:* 14 (**4d6**) Radiant damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The missionary casts __Healing Word__ using the spellcasting ability from Spellcasting."
    }
   ]
  },
@@ -42095,6 +43219,13 @@
     "type": "text",
     "value": "The mutagenist injects itself with a transmogrifying elixir. The mutagenist transforms, using the Grotesque Gargantuan stat block for their altered form. The mutagenist reverts to its normal form after 1 hour or if its transmogrified form is reduced to 0 Hit Points."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The mutagenist gains Advantage on Scalpel attacks until the start of its next turn, as long as it has not moved this turn. The mutagenist's Speed becomes 0 until the start of its next turn."
+   }
   ]
  },
  {
@@ -42188,7 +43319,8 @@
     "type": "text",
     "value": "+6, reach 5 ft. or range 120 ft. *Hit:* 35 (**10d6**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Night Blade",
@@ -42392,6 +43524,13 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 16, one creature within 5 feet that is willing or has the Grappled, Incapacitated, or Restrained condition. *Failure:*  15 (**3d6 + 5**) Necrotic damage, and the vampire regains Hit Points equal to the Necrotic damage dealt."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "In Dim Light or Darkness, the vampire casts __Invisibility__ on itself, requiring no components and using Charisma as its spellcasting ability."
+   }
   ]
  },
  {
@@ -42559,6 +43698,18 @@
     "name": "",
     "type": "text",
     "value": "+8, reach 10 ft. *Hit:* 23 (**4d8 + 5**) Piercing damage and if the target is a creature, the target has the Bleeding condition (2d8) as thick splinters pierce and remain in the creature's flesh."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The troll regains its Shroud of Leaves trait."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As long as the troll has its Shroud of Leaves, it can shed its Shroud of Leaves in a burst, losing the trait in the process. *Dexterity Saving Throw:* DC 16, each creature within 15 feet of the troll. *Failure:*  7 (**2d6**) Slashing damage and has the Blinded condition until the end of their next turn."
    }
   ]
  },
@@ -42735,6 +43886,13 @@
     "type": "text",
     "value": "+10, range 60/120 ft. *Hit:* 15 (**2d8 + 6**) Necrotic damage. *Constitution Saving Throw:* DC 18. *Failure:*  The target gains one Contamination level. Failure by 5 or More: The target triggers an [Arcane Anomalies](https://5e.tools/tables.html#arcane%20anomalies_monstersofdrakkenheim) centered on itself."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the octarine tree has not moved this round, it can plant itself into the ground. It regains 18 (4d8) Hit Points and has the Immobilized condition until the start of its next turn. While Immobilized, the octarine tree has Immunity to the Grappled, Prone, and Restrained conditions, and its AC increases to 20. These benefits end early if the tree takes Fire damage."
+   }
   ]
  },
  {
@@ -42900,6 +44058,13 @@
     "name": "",
     "type": "text",
     "value": "*Charisma Saving Throw:* DC 16, each Hostile creature in a 60-foot Emanation originating from the ratling that can hear it. *Failure:*  55 (**10d10**) Psychic damage. *Success* Half damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ratling takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -43086,7 +44251,8 @@
     "type": "text",
     "value": "The Pale Man chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11 or higher, the effect ends on him. The Pale Man can use this Epic Action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Pathogenist",
@@ -43257,6 +44423,13 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 16, each creature in a 60-foot Cone. *Failure:*  22 (**5d8**) Poison damage plus 23 (**5d8**) Necrotic damage. *Success* Half damage. *Failure or Success*: If the target has 25 Hit Points or fewer after taking this damage, it dies and its flesh turns to ash, leaving a weathered skeleton."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The pathogenist ends the Charmed or Frightened condition on itself."
+   }
   ]
  },
  {
@@ -43419,7 +44592,8 @@
     "type": "text",
     "value": "The phage digests the spell it has stored, teleporting to an unoccupied space it can see within 30 feet and making a Spit attack with Advantage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Pilgrim",
@@ -43505,7 +44679,8 @@
     "type": "text",
     "value": "+3, reach 5 ft. *Hit:* 4 (**1d6 + 1**) Bludgeoning damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Plague Carrier",
@@ -43663,7 +44838,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 13, each creature in a 15-foot Cone. *Failure:*  9 (**2d8**) Necrotic damage, and the target is infected with the plague carrier's Plague Symptoms. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Protean Abomination",
@@ -43840,7 +45016,8 @@
     "type": "text",
     "value": "The abomination engulfs a Large or smaller creature Grappled by it. Until the grapple ends the target has the Blinded and Restrained conditions, is suffocating, and has Total Cover against attacks and other effects outside the abomination. If the abomination moves, the engulfed target moves with it. The abomination can have only one creature engulfed at a time. *Constitution Saving Throw:* DC 15. *Failure:*  18 (**3d8 + 5**) Bludgeoning damage. The engulfed creature repeats the save at the start of each of the abomination's turns Success: The target escapes and enters the nearest unoccupied space."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Psychophant",
@@ -44000,6 +45177,18 @@
     "type": "text",
     "value": "The psychophant shape-shifts into a Small or Medium Humanoid it has seen or reverts to its true form. Its game statistics are the same in each form."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The psychophant deals 7 (**2d6**) Necrotic damage to a creature it damaged this turn with Psychic Grasp, then regains Hit Points equal to the Necrotic damage dealt."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The psychophant teleports to an unoccupied space it can see within 30 feet. It can bring one creature Immobilized by its Psychic Grasp, which teleports to an unoccupied space within 5 feet of the psychophant's destination space."
+   }
   ]
  },
  {
@@ -44151,6 +45340,13 @@
     "type": "text",
     "value": "+6, range 60 ft. *Hit:* 13 (**2d8 + 4**) Radiant damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Wisdom Saving Throw:* DC 10, each creature in a 30-foot Emanation originating from the maunder that can hear it. *Failure:*  7 (**2d6**) Psychic damage, and the target has the Dazed condition until the start of its next turn."
+   }
   ]
  },
  {
@@ -44292,7 +45488,8 @@
     "type": "text",
     "value": "The Queen of Thieves chooses one condition, spell, or other effect currently affecting her and rolls 1d20. On an 11+, the effect ends on her. She can use this action even if she would otherwise be unable to take actions, her actions are being controlled by another creature, or if a spell or effect alters her game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Rat Crown-Prince",
@@ -44429,7 +45626,8 @@
     "type": "text",
     "value": "The Rat Crown-Prince chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11+, the effect ends on him. The Rat Crown-Prince can use this action even if he would otherwise be unable to take actions, his actions are being controlled by another creature, or if a spell or effect alters his game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Rat God",
@@ -44642,7 +45840,8 @@
     "type": "text",
     "value": "The Rat God chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The Rat God can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Rat King",
@@ -44800,7 +45999,8 @@
     "type": "text",
     "value": "*Intelligence Saving Throw:* DC 16, each creature in a 60-foot Cone. *Failure:*  21 (**6d6**) Psychic damage, and the target is Jinxed 1d10 (save ends)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Rat Prince",
@@ -44974,6 +46174,13 @@
     "name": "",
     "type": "text",
     "value": "+6, range 30/120 ft. *Hit:* 7 (**1d6 + 4**) Piercing damage plus 10 (**3d6**) Poison damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Rat Prince takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -45151,6 +46358,13 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 15, each creature in a 10-foot radius Sphere centered on a point the ratling can see within 60 feet. *Failure:*  21 (**6d6**) Fire damage plus 18 (**4d8**) Necrotic damage. *Failure or Success*: An [Arcane Anomalies](https://5e.tools/tables.html#arcane%20anomalies_monstersofdrakkenheim) occurs in the area."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ratling takes the Dash, Disengage, or Hide action."
+   }
   ]
  },
  {
@@ -45310,6 +46524,13 @@
     "name": "",
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 13, one creature within reach of the ratling. *Failure:*  The target is pushed 5 feet away from the ratling and has the Prone condition."
    }
   ]
  },
@@ -45481,6 +46702,13 @@
     "type": "text",
     "value": "+5, range 30/120 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage plus 10 (**3d6**) Poison damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ratling takes the Dash, Disengage, or Hide action."
+   }
   ]
  },
  {
@@ -45651,6 +46879,13 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 14, one creature within 15 feet that is infected with a disease. *Failure:*  The target has one of the following conditions (the ratling's choice): Addled, Clumsy, or Enfeebled (save ends). The condition immediately ends and is replace by a new condition if the ratling uses Metastasize on the target again. *Failure or Success*: 9 (**2d8**) Necrotic damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ratling spreads its Infection from an infected target to another creature adjacent to that target."
+   }
   ]
  },
  {
@@ -45815,6 +47050,13 @@
     "name": "",
     "type": "text",
     "value": "+4, range 30/120 ft. *Hit:* 4 (**1d4 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ratling takes the Dash, Disengage, or Hide action."
    }
   ]
  },
@@ -45994,7 +47236,8 @@
     "type": "text",
     "value": "The ravenous flora chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The ravenous flora can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Ravenous Ghoul",
@@ -46083,6 +47326,13 @@
     "name": "",
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage plus 10 (**3d6**) Poison damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ghoul moves up to its Speed toward a Hostile creature it can see."
    }
   ]
  },
@@ -46235,6 +47485,13 @@
     "name": "",
     "type": "text",
     "value": "+7, reach 5 ft. or range 120 ft. *Hit:* 19 (**4d6 + 5**) Psychic damage, and the target has the Dazed condition until the end of the reality cyst's next turn. The reality cyst can target a creature Immobilized by its Unhinged Reality with this attack even if the creature has Total Cover."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each creature Immobilized by Unhinged Reality takes 10 (**3d6**) Psychic damage. The reality cyst regains Hit Points equal to the total damage dealt, and its Hit Point Maximum increases by the same amount."
    }
   ]
  },
@@ -46417,6 +47674,13 @@
     "type": "text",
     "value": "+9, reach 5 ft., one Prone target. *Hit:* 15 (**3d6 + 5**) Piercing damage, and if the target is Large or smaller, it has the Grappled condition (escape DC 17). While Grappled, the target has the Restrained condition and the reautomata can't make Entrapping Rend attacks against another target."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The reautomata moves up to its Speed toward a Hostile creature it can see. This movement doesn't provoke Opportunity Attack action."
+   }
   ]
  },
  {
@@ -46588,6 +47852,18 @@
     "type": "text",
     "value": "The reautomata moves up to its Speed in a straight line, moving through the space of any Medium or smaller creature on its path. The first time its enters each creature's space during this move, it can make a Drill or Wrecking Ball attack against that creature."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The reautomata's Destructive Rampage recharges, and it gains Immunity to all damage and conditions until the end of its next turn. For the duration, the reautomata automatically succeeds on all saving throws and Strength, Dexterity, and Constitution-based ability checks and has Advantage on attack rolls. It can't be forced to move or affected by spells of level 8 or lower unless it chooses to be. Features and effects that ignore Resistances and Immunities, such as a Vorpal Weapon, don't function against the reautomata unless those effects are caused by a level 9 spell or an artifact."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the end of its next turn, the reautomata dies and explodes. *Dexterity Saving Throw:* DC 20, each creature in a 20-foot Emanation originating from the reautomata when it dies. *Failure:*  20 (**8d4**) Acid damage plus 36 (**8d8**) Necrotic damage. *Success* Half damage."
+   }
   ]
  },
  {
@@ -46753,7 +48029,8 @@
     "type": "text",
     "value": "Vladimir von Drakken chooses one condition, spell, or other effect currently affecting him and rolls 1d20. On an 11+, the effect ends on him. He can use this action even if he would otherwise be unable to take actions, his actions are being controlled by another creature, or if a spell or effect alters his game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Ripper",
@@ -46939,7 +48216,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 15, each creature that can see the ripper. *Failure:*  14 (**4d6**) Psychic damage, and the target has the Frightened condition (save ends). While Frightened, the target's Speed becomes 0 and can't increase."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "River, Amethyst Academy Liaison",
@@ -47027,6 +48305,13 @@
     "name": "",
     "type": "text",
     "value": "+7, range 120 ft. *Hit:* 28 (**8d6**) Force damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "River casts __Misty Step__ using the spellcasting ability from Spellcasting."
    }
   ]
  },
@@ -47135,6 +48420,13 @@
      ]
     }
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The assassin takes the Dash, Disengage, or Hide action."
+   }
   ]
  },
  {
@@ -47232,6 +48524,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 5 ft. *Hit:* 8 (**1d8 + 4**) Slashing damage, or 9 (**1d10 + 4**) Slashing damage if wielded with two hands, plus 9 (**2d8**) Radiant damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The knight touches another creature. The target regains 11 (2d8 + 2) Hit Points and is cured of one disease or the Poisoned condition."
    }
   ]
  },
@@ -47342,6 +48641,13 @@
     "type": "text",
     "value": "+6, range 20/60 ft. *Hit:* 6 (**1d4 + 4**) Piercing damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The monk teleports to an unoccupied space it can see within 60 feet that is in Bright Light. It gains Advantage on its next melee attack."
+   }
   ]
  },
  {
@@ -47439,7 +48745,8 @@
     "type": "text",
     "value": "+5, range 120 ft. *Hit:* 14 (**4d6**) Radiant damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Sanguine Witch",
@@ -47649,7 +48956,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 15, each creature in a 30-foot Emanation originating from the vampire. *Failure:*  14 (**4d6**) Necrotic damage plus 14 (**4d6**) Psychic damage. *Success* Half damage. *Failure or Success*: The vampire regains Hit Points equal to the Necrotic damage dealt."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Scrap Reautomata",
@@ -47807,6 +49115,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 5 ft. *Hit:* 11 (**2d6 + 4**) Slashing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The reautomata has the Burning condition (2d6 Fire)."
    }
   ]
  },
@@ -47995,7 +49310,8 @@
     "type": "text",
     "value": "The sentient planetoid casts any spell of level 5 or lower, using Intelligence as its spellcasting ability (spell save DC 22, +14 to spell attacks)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Sewer Thing",
@@ -48186,7 +49502,8 @@
     "type": "text",
     "value": "If the sewer thing moves, the target moves with it. The sewer thing can have up to four creatures engulfed at a time. An engulfed creature can take an action to escape with a successful DC 16 Strength (*Athletics*) check, landing in an unoccupied space within 5 feet of the sewer thing."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Shardmaul Manticore",
@@ -48359,7 +49676,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 15, each creature in a 20-foot Emanation originating from the manticore (flying creatures have Disadvantage). *Failure:*  28 (**8d6**) Piercing damage, and if the target is flying, it has the Prone condition. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Silver Order Cavalier",
@@ -48462,6 +49780,13 @@
     "type": "text",
     "value": "+7, reach 5 ft. or range 30/120 ft. *Hit:* 7 (**1d6 + 4**) Force damage plus 9 (**2d8**) Radiant damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The cavalier magically summons a Griffon, which appears in an unoccupied space within 60 feet of the cavalier and obeys its commands. The steed takes its turn immediately before or after the cavalier. It remains until it or the cavalier dies, or the cavalier dismisses it as a Bonus Action."
+   }
   ]
  },
  {
@@ -48559,6 +49884,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 5 ft. or range 30/120 ft. *Hit:* 7 (**1d6 + 4**) Force damage plus 9 (**2d8**) Radiant damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The paladin touches another creature. The target regains 11 (2d8 + 2) Hit Points and is cured of one disease or the Poisoned condition."
    }
   ]
  },
@@ -48661,7 +49993,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* The target is pushed 5 feet away from the recruit and has the Staggered condition (save ends)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Silver Order Squire",
@@ -48762,7 +50095,8 @@
     "type": "text",
     "value": "The squire grants a creature within 5 feet of them Valor (1d4) until the end of that creature's next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Skeleton Archer",
@@ -48848,6 +50182,13 @@
     "name": "",
     "type": "text",
     "value": "+5, range 150/600 ft. *Hit:* 7 (**1d8 + 3**) Piercing damage plus 10 (**3d6**) Cold damage. Critical *Hit:* The target has the Frozen condition (DC 10)."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The skeleton archer grants itself Advantage on its next ranged attack roll this turn. It can use this Bonus Action only if it hasn't moved during this turn, and after it uses this Bonus Action, its Speed becomes 0 and can't increase until the end of this turn."
    }
   ]
  },
@@ -48942,6 +50283,13 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 13, each creature in a 15-foot Cube originating from the skeleton mage. *Failure:*  13 (**3d8**) Thunder damage, and the target is pushed 10 feet away from the skeleton mage. *Success* Half damage only."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The skeleton mage teleports to an unoccupied space it can see within 60 feet."
+   }
   ]
  },
  {
@@ -49023,6 +50371,13 @@
     "name": "",
     "type": "text",
     "value": "+5, reach 5 ft. or range 20/60 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage plus 10 (**3d6**) Poison damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 13, one creature within 5 feet of the skeleton soldier. *Failure:*  The target is pushed 5 feet away from the skeleton soldier and has the Prone condition."
    }
   ]
  },
@@ -49182,6 +50537,13 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 15 (**3d8 + 2**) Bludgeoning damage, and if the target is Medium or smaller, it has the Grappled condition (escape DC 12). While Grappled, the target has the Restrained condition and Disadvantage on Strength checks and Strength saving throws, and the skin crawler can't Bind another target."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 12, one creature Grappled by the skin crawler. *Failure:*  10 (**3d6**) Bludgeoning damage, and the skin crawler regains an equal number of Hit Points. If this damage kills the target, the skin crawler assumes its form. The skin crawler's game statistics are the same in each form. It reverts to its true form if it dies."
+   }
   ]
  },
  {
@@ -49335,7 +50697,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 10 (**2d6 + 3**) Slashing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Skretch",
@@ -49496,7 +50859,8 @@
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 13, each creature in a 10-foot radius Sphere directly beneath the skretch. *Failure:*  20 (**8d4**) Acid damage, and the target has the Burning condition (4d4 Acid). Each time the target takes damage from this condition, it must succeed on a DC 13 Constitution saving throw or gain one Contamination level. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Speaking Skull",
@@ -49590,7 +50954,8 @@
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 12, one creature the skull can see within 10 feet. *Failure:*  5 (**2d4**) Psychic damage, and the target has Disadvantage on the next attack roll it makes before the end of its next turn."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Spell Leech",
@@ -49686,6 +51051,18 @@
     "name": "",
     "type": "text",
     "value": "A creature within 5 feet can take an action to detach the leech with a successful DC 13 Wisdom (*Medicine*) check. *Failure:*  The leech is still detached, but the target has the Bleeding condition (2d4). Failure by 5 or More: The leech isn't detached and the target takes 8 (**2d4 + 3**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The leech can use this Bonus Action only when it is attached to a creature. The attached creature is subjected to the following effect. *Intelligence Saving Throw:* DC 13. *Failure:*  10 (**3d6**) Psychic damage, and the target has the Bewildered condition until the start of the leech's next turn. If the target has spell slots, the leech drains one randomly determined spell slot which can be no higher than level 3. It then fills its spell glands with the same number of spell levels."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The leech can use this Bonus Action only when it is attached to a creature and has at least one level worth of spells in its Spell Glands. The leech empties any number of spell levels from its Spell Glands, and the creature it is attached to regains an equal number of spell levels worth of spell slots."
    }
   ]
  },
@@ -49850,7 +51227,8 @@
     "type": "text",
     "value": "+6, reach 5 ft., or range 20/60 ft. *Hit:* 6 (**1d4 + 4**) Piercing damage plus 7 (**2d6**) Necrotic damage. Critical *Hit:* *Constitution Saving Throw:* DC 10. *Failure:*  The target gains one level of Contamination."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Star Warden",
@@ -50030,6 +51408,13 @@
     "name": "",
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 17, each creature in a 30-foot Cone. *Failure:*  18 (**4d6 + 4**) Radiant damage and the target has the Burning condition (4d6 Radiant)."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 17, one creature within 120 feet of the star warden that teleported this turn. *Failure:*  The target has the Frozen condition. *Success* 10 (**3d6**) Cold damage."
    }
   ]
  },
@@ -50230,7 +51615,8 @@
      ]
     }
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Storm Troll",
@@ -50409,7 +51795,8 @@
     "type": "text",
     "value": "The troll hurls a magical lightning bolt at a point it can see within 300 feet of it. *Dexterity Saving Throw:* DC 16, each creature in a 10-foot-radius Sphere centered on that point. *Failure:*  18 (**4d8**) Lightning damage and has the Shocked condition until the end of the troll's next turn. *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Striga",
@@ -50624,7 +52011,8 @@
     "type": "text",
     "value": "The striga chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The striga can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Swarm of Contaminated Insects",
@@ -50711,7 +52099,8 @@
     "type": "text",
     "value": "+4, reach 0 ft. *Hit:* 10 (**3d6**) Necrotic damage, or 3 (**1d6**) Necrotic damage if the swarm has the *Bloodied* condition. *Constitution Saving Throw:* DC 10. *Failure:*  The target gains one Contamination level."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Swarm of Ratlings",
@@ -50885,6 +52274,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 0 ft. *Hit:* 28 (**8d6**) Piercing damage, or 14 (**4d6**) Piercing damage if the swarm has the *Bloodied* condition. If the target is a creature, it has the Grappled condition (escape DC 14)."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The swarm takes the Dash action."
    }
   ]
  },
@@ -51063,7 +52459,8 @@
      ]
     }
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Tentacled Dreg",
@@ -51230,7 +52627,8 @@
     "type": "text",
     "value": "+5, reach 15 ft. *Hit:* 10 (**2d6 + 3**) Bludgeoning damage plus 7 (**2d6**) Necrotic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 13). Until this grapple ends, the target has the Restrained condition, takes 10 (**2d6 + 3**) Bludgeoning damage plus 7 (**2d6**) Necrotic damage at the start of each of its turns, and the dreg can't make Constricting Tentacle attacks."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Algorithm",
@@ -51448,7 +52846,8 @@
     "type": "text",
     "value": "The Algorithm chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The Algorithm can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Duchess",
@@ -51669,7 +53068,8 @@
     "type": "text",
     "value": "The Duchess chooses one condition, spell, or other effect currently affecting her and rolls 1d20. On an 11+, the effect ends on her. The Duchess can use this action even if she would otherwise be unable to take actions, her actions are being controlled by another creature, or if a spell or effect alters her game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The Whispered Promise",
@@ -51881,7 +53281,8 @@
     "type": "text",
     "value": "The Whispered Promise chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on them. The Whispered Promise can use this action even if they would otherwise be unable to take actions, their actions are being controlled by another creature, or if a spell or effect alters their game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "The World Ender",
@@ -52055,7 +53456,8 @@
     "type": "text",
     "value": "The World Ender chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The World Ender can use this Epic Action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Thing with the Writhing Tail",
@@ -52290,7 +53692,8 @@
     "type": "text",
     "value": "The Thing with the Writhing Tail chooses one condition, spell, or other effect currently affecting it and rolls 1d20. On an 11+, the effect ends on it. The Thing with the Writhing Tail can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Think Tank",
@@ -52522,7 +53925,8 @@
     "type": "text",
     "value": "The Think Tank chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The Think Tank can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Tower Dragon",
@@ -52713,7 +54117,8 @@
     "type": "text",
     "value": "*Strength Saving Throw:* DC 15, each creature in a 30-foot Cone. *Failure:*  The target is pushed up to 40 feet away from the dragon."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Troll Hag",
@@ -52905,6 +54310,13 @@
     "name": "",
     "type": "text",
     "value": "+6, range 30/120 ft. *Hit:* 19 (**3d10 + 3**) Acid damage and the target has the Burning condition (3d10 Acid)."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The troll hag magically teleports to an unoccupied space it can see within 60 feet of it."
    }
   ]
  },
@@ -53119,7 +54531,8 @@
     "type": "text",
     "value": "*Intelligence Saving Throw:* DC 16. *Failure:*  19 (**3d10 + 3**) Psychic damage and the target has the Jinxed (1d6) condition (save ends)."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Uncontained Growth",
@@ -53260,7 +54673,8 @@
     "type": "text",
     "value": "If the growth takes 20 damage or more on a single turn from a creature inside it, the growth must succeed on a DC 17 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which land with the Prone condition in unoccupied spaces within 10 feet of the growth. If the growth dies, a swallowed creature no longer has the Restrained condition and can escape from the corpse using 20 feet of movement, exiting with the Prone condition."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Undulating Polyp",
@@ -53412,6 +54826,13 @@
     "name": "",
     "type": "text",
     "value": "The polyp teleports to an unoccupied space it can see within 20 feet. *Constitution Saving Throw:* DC 15, each creature in a 10-foot Emanation originating from the polyp when it reappears. *Failure:*  16 (**3d10**) Force damage. Failure by 5 or More: The target triggers an [Arcane Anomalies](https://5e.tools/tables.html#arcane%20anomalies_monstersofdrakkenheim) centered on itself. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The polyp teleports to an unoccupied space it can see within 60 feet."
    }
   ]
  },
@@ -53647,6 +55068,13 @@
     "type": "text",
     "value": "+9, range 30/120 ft. *Hit:* 14 (**2d8 + 5**) Piercing damage."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One void pirate squib or quartermaster within 60 feet of the void pirate can use its Reaction to move up to half its Speed or make an attack."
+   }
   ]
  },
  {
@@ -53874,6 +55302,13 @@
     "name": "",
     "type": "text",
     "value": "+6, reach 5 ft. or range 120 ft. *Hit:* 19 (**3d10 + 3**) Force damage, and the target is knocked 10 feet away from the void pirate."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The void pirate magically summons an __Entropic Flame__, __Walking Geode__, __Living Deep Haze__, or __Animated Delerium Sludge__. The elemental appears in an unoccupied space within 60 feet of the void pirate, whom it obeys. It takes its turn immediately after the void pirate. It lasts for 1 hour, until it or the void pirate dies, or the void pirate dismisses it as a Bonus Action."
    }
   ]
  },
@@ -54112,6 +55547,13 @@
     "type": "text",
     "value": "+6, range 150/600 ft. *Hit:* 13 (**3d6 + 3**) Piercing damage, and the target has the Slowed condition until the end of its next turn."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One void pirate squib within 60 feet of the void pirate can use its Reaction to move up to half its Speed or make an attack."
+   }
   ]
  },
  {
@@ -54344,6 +55786,13 @@
     "type": "text",
     "value": "+6, reach 5 ft. or range 15/30 ft. *Hit:* The target has the Restrained and Defenseless conditions. A creature can take an action to free itself or another creature in a net with a successful DC 14 Strength check. Dealing 10 Slashing damage to the net (AC 12) frees the target without harming it and destroys the net."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The void pirate loads an artillery weapon, such as a cannon or ballista."
+   }
   ]
  },
  {
@@ -54494,7 +55943,8 @@
     "type": "text",
     "value": "+8, reach 10 ft. *Hit:* 14 (**2d8 + 5**) Bludgeoning damage. *Constitution Saving Throw:* DC 16. *Failure:*  10 (**3d6**) Necrotic damage, and the target gains one Contamination level."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Wall Gargoyle",
@@ -54665,7 +56115,8 @@
     "type": "text",
     "value": "+4, reach 5 ft. *Hit:* 5 (**1d6 + 2**) Slashing damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Warlock of the Rat God",
@@ -54830,6 +56281,13 @@
     "name": "",
     "type": "text",
     "value": "The ratling conjures two Swarms of Rats, which appear in unoccupied spaces within 60 feet. The swarms act immediately after the ratling in Initiative. The swarms remain for 1 minute or until destroyed."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The ratling teleports to an unoccupied space it can see within 60 feet."
    }
   ]
  },
@@ -55041,6 +56499,13 @@
     "type": "text",
     "value": "The warp marauder pulls each creature Grappled by it up to 30 feet straight toward it."
    }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The warp marauder teleports to an unoccupied space within 120 feet. Alternatively, it travels from the Material Plane to the Space Between Worlds or vice versa."
+   }
   ]
  },
  {
@@ -55195,6 +56660,13 @@
     "name": "",
     "type": "text",
     "value": "The possession lasts until the body drops to 0 Hit Points, the witch ends it as a Bonus Action, or the witch is turned or forced out by an effect like the __Dispel Evil and Good__ spell. When the possession ends, the witch reappears in an unoccupied space within 5 feet of the body. If the target succeeds on its save or the effect ends for it, it is immune to this warp witch's Possession for 24 hours."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Charisma Saving Throw:* DC 13, one creature the warp witch is possessing. *Failure:*  The target gains one Contamination level and a mutation."
    }
   ]
  },
@@ -55376,7 +56848,8 @@
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 16, each creature in a 30-foot Cone. *Failure:*  18 (**4d8**) Cold damage and has the Frozen condition (escape DC 16). *Success* Half damage only."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Wretched Patient",
@@ -55581,7 +57054,8 @@
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 7 (**1d8 + 3**) Slashing damage plus 7 (**2d6**) Poison damage."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Young Delerium Dragon",
@@ -55714,7 +57188,8 @@
     "type": "text",
     "value": "The dragon chooses one condition, spell, or other effect currently affecting them and rolls 1d20. On an 11+, the effect ends on it. The dragon can use this action even if it would otherwise be unable to take actions, its actions are being controlled by another creature, or if a spell or effect alters its game statistics."
    }
-  ]
+  ],
+  "bonusActions": []
  },
  {
   "name": "Zealot",
@@ -55805,6 +57280,13 @@
     "name": "",
     "type": "text",
     "value": "+5, reach 5 ft. *Hit:* 10 (**2d6 + 3**) Slashing damage plus 7 (**2d6**) Radiant damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Allies of the zealot within 60 feet of it that can hear it gain Advantage on attack rolls and saving throws until the start of the zealot's next turn."
    }
   ]
  },
@@ -55996,6 +57478,13 @@
     "name": "",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 16, one creature within 5 feet that is willing or has the Grappled, Incapacitated, or Restrained condition. *Failure:*  15 (**3d6 + 5**) Necrotic damage. The target's Hit Point Maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains Hit Points equal to that amount."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The vampire howls at the moon, gaining Resistance to all damage except Acid and Radiant damage for 1 minute or until it has the Incapacitated condition. As part of this Bonus Action, the vampire moves up to half its Speed toward a Hostile creature without provoking Opportunity Attack action."
    }
   ]
  }
