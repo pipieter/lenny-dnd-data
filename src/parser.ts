@@ -152,6 +152,10 @@ export function parseSingleTime(time: any): string {
             else result = `${amount} bonus actions`;
             break;
         }
+        case 'special': {
+            result = `Special`;
+            break;
+        }
         default: {
             if (amount == 1) result = `${amount} ${unit}`;
             else result = `${amount} ${unit}s`;
