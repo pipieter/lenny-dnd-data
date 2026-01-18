@@ -628,6 +628,7 @@ export function parseDescriptionFromTable(description: any): DescriptionTable {
 export function parseDescriptions(name: string, descriptions: any[]): Description[] {
     const subdescriptions: Description[] = [];
     const blocks: (string | Table | List)[] = [];
+    if (name.trim() !== '') name = cleanDNDText(name).trim();
 
     for (const desc of descriptions) {
         // Special case scenario where an entry is a description on its own
