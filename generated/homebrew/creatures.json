@@ -123,22 +123,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "Anahita makes two attacks, each of which can be a chain whip or longbow attack."
    },
    {
-    "name": "",
+    "name": "Chain Whip",
     "type": "text",
-    "value": "+15 to hit, reach 10 ft., one target. *Hit:* 22 (**4d6 + 8**) slashing damage plus 27 (**6d8**) radiant damage and the target is grappled (escape DC 21). Until this grapple ends, the target is restrained. On each of her turns while the target is restrained, Anahita can use her action to deal 22 (**4d6 + 8**) slashing damage plus 27 (**6d8**) radiant damage to the target automatically. The target is no longer restrained if Anahita uses her action to attack another target."
+    "value": "*Melee Weapon Attack:* +15 to hit, reach 10 ft., one target. *Hit:* 22 (**4d6 + 8**) slashing damage plus 27 (**6d8**) radiant damage and the target is grappled (escape DC 21). Until this grapple ends, the target is restrained. On each of her turns while the target is restrained, Anahita can use her action to deal 22 (**4d6 + 8**) slashing damage plus 27 (**6d8**) radiant damage to the target automatically. The target is no longer restrained if Anahita uses her action to attack another target."
    },
    {
-    "name": "",
+    "name": "Incandescent Longbow",
     "type": "text",
-    "value": "+15 to hit, range 150/600 ft., one target. *Hit:* 18 (**3d6 + 8**) piercing damage plus 27 (**6d8**) radiant damage."
+    "value": "*Ranged Weapon Attack:* +15 to hit, range 150/600 ft., one target. *Hit:* 18 (**3d6 + 8**) piercing damage plus 27 (**6d8**) radiant damage."
    },
    {
-    "name": "",
+    "name": "Healing Touch (4/Day)",
     "type": "text",
     "value": "Anahita touches another creature. The target magically regains 40 (8d8 + 4) hit points and is freed from any curse, disease, poison, blindness, or deafness."
    }
@@ -240,17 +240,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Calcifying Bite",
     "type": "text",
-    "value": "+3 + PB to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) piercing damage. The target must succeed on a DC 10 + PB Constitution saving throw or have its movement speed halved until the end of the basilisk's next turn."
+    "value": "*Melee Weapon Attack:* +3 + PB to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) piercing damage. The target must succeed on a DC 10 + PB Constitution saving throw or have its movement speed halved until the end of the basilisk's next turn."
    },
    {
-    "name": "",
+    "name": "Hardening Glare",
     "type": "text",
     "value": "The basilisk locks eyes with a creature it can see within 30 feet of it. The target must make a DC 10 + PB Constitution saving throw. On a failed save, the target suddenly feels stiff and is restrained until the end of the basilisk's next turn."
    },
    {
-    "name": "",
+    "name": "Lesser Petrifying Gaze (1/Day)",
     "type": "text",
     "value": "The basilisk locks eyes with a creature it can see within 30 feet of it. The creature must make a DC 10 + PB Constitution saving throw. On a failed save, the creature visibly begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 1 hour or until freed by the __lesser restoration__ spell or similar magic."
    }
@@ -338,14 +338,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Longsword",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d8 + 1**) slashing damage, or 6 (**1d10 + 1**) slashing damage if used with two hands."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d8 + 1**) slashing damage, or 6 (**1d10 + 1**) slashing damage if used with two hands."
    },
    {
-    "name": "",
+    "name": "Longbow",
     "type": "text",
-    "value": "+3 to hit, range 150/600 ft., one target. *Hit:* 5 (**1d8 + 1**) piercing damage."
+    "value": "*Ranged Weapon Attack:* +3 to hit, range 150/600 ft., one target. *Hit:* 5 (**1d8 + 1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -424,9 +424,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Club",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 2 (**1d4**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (**1d4**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -506,9 +506,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Rapier",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d8 + 1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d8 + 1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -600,14 +600,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "War Pick",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d8 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d8 + 2**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Poisoned Dart",
     "type": "text",
-    "value": "+4 to hit, range 30/120 ft., one creature. *Hit:* 4 (**1d4 + 2**) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success"
+    "value": "*Ranged Weapon Attack:* +4 to hit, range 30/120 ft., one creature. *Hit:* 4 (**1d4 + 2**) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success"
    }
   ],
   "bonusActions": []
@@ -703,17 +703,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+2 + PB to hit, reach 5 ft., one target. *Hit:* 7 (**1d10 + 2**) piercing damage. If the target is restrained, the bite deals an additional 7 (**2d6**) poison damage."
+    "value": "*Melee Weapon Attack:* +2 + PB to hit, reach 5 ft., one target. *Hit:* 7 (**1d10 + 2**) piercing damage. If the target is restrained, the bite deals an additional 7 (**2d6**) poison damage."
    },
    {
-    "name": "",
+    "name": "Tongue Lash",
     "type": "text",
-    "value": "+2 + PB to hit, reach 10 ft., one target. *Hit:* 9 (**2d6 + 2**) bludgeoning damage, and the target is grappled (escape DC 10 + PB). Until this grapple ends, the target is restrained. If the target is Medium or smaller, the toad can drag or carry the target while grappling it without any movement penalty."
+    "value": "*Melee Weapon Attack:* +2 + PB to hit, reach 10 ft., one target. *Hit:* 9 (**2d6 + 2**) bludgeoning damage, and the target is grappled (escape DC 10 + PB). Until this grapple ends, the target is restrained. If the target is Medium or smaller, the toad can drag or carry the target while grappling it without any movement penalty."
    },
    {
-    "name": "",
+    "name": "Power Hop (2/Day)",
     "type": "text",
     "value": "The toad leaps 40 feet into the air. The toad can release any creature it grapples at the peak of the jump, causing the creature to immediately plummet before the toad if the creature does not have a means of staying aloft."
    },
@@ -815,12 +815,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Claw Swipe",
     "type": "text",
-    "value": "+3 + PB to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) slashing damage. If the target is a Medium or smaller creature, it must succeed on a DC 11 + PB Strength saving throw or drop one object it is holding."
+    "value": "*Melee Weapon Attack:* +3 + PB to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) slashing damage. If the target is a Medium or smaller creature, it must succeed on a DC 11 + PB Strength saving throw or drop one object it is holding."
    },
    {
-    "name": "",
+    "name": "Divebomb (3/Day)",
     "type": "text",
     "value": "The hippogriff flies up to 60 feet in a straight line. This movement doesn't provoke opportunity attacks. At the end of this movement, the hippogriff's rider can make a melee weapon attack. On a hit, the attack deals an extra **1d6 + 2** bludgeoning damage for every 10 feet the hippogriff moved (rounded down)."
    }
@@ -914,9 +914,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+6 to hit, reach 10 ft., one target. *Hit:* 14 (**3d6 + 4**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 10 ft., one target. *Hit:* 14 (**3d6 + 4**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -1003,14 +1003,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Scimitar",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 2**) slashing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 2**) slashing damage."
    },
    {
-    "name": "",
+    "name": "Shortbow",
     "type": "text",
-    "value": "+4 to hit, range 80/320 ft., one target. *Hit:* 5 (**1d6 + 2**) piercing damage."
+    "value": "*Ranged Weapon Attack:* +4 to hit, range 80/320 ft., one target. *Hit:* 5 (**1d6 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -1112,17 +1112,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Flaming Stomp",
     "type": "text",
-    "value": "+4 + PB to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) bludgeoning damage plus 3 (**1d6**) fire damage. If the target is a Medium or smaller creature, it must succeed on a DC 12 + PB Strength saving throw or be knocked prone."
+    "value": "*Melee Weapon Attack:* +4 + PB to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) bludgeoning damage plus 3 (**1d6**) fire damage. If the target is a Medium or smaller creature, it must succeed on a DC 12 + PB Strength saving throw or be knocked prone."
    },
    {
-    "name": "",
+    "name": "Blazing Charge (3/Day)",
     "type": "text",
     "value": "The nightmare doesn't provoke opportunity attacks when it moves out of an enemy's reach, and can move through spaces occupied by other creatures until the end of its turn. If the nightmare charges on the same turn, any creatures in the nightmare's way must make a DC 12* Strength saving throw or take 15 (**2d10 + 4**) fire damage and be knocked prone. On a successful save, the creature takes half as much damage isn't knocked prone."
    },
    {
-    "name": "",
+    "name": "Ethereal Stride",
     "type": "text",
     "value": "The nightmare, its rider, and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa."
    }
@@ -1215,17 +1215,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Paw Swipe",
     "type": "text",
-    "value": "+5 + PB to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) slashing damage. If the target is a Medium or smaller creature, it must succeed on a DC 13 + PB Strength saving throw or be knocked prone."
+    "value": "*Melee Weapon Attack:* +5 + PB to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) slashing damage. If the target is a Medium or smaller creature, it must succeed on a DC 13 + PB Strength saving throw or be knocked prone."
    },
    {
-    "name": "",
+    "name": "Bear Hug",
     "type": "text",
-    "value": "+5 + PB to hit, reach 5 ft., one Medium or smaller creature. *Hit:* 16 (**2d10 + 5**) bludgeoning damage. The target is grappled (escape DC 13 + PB) and restrained until this grapple ends. The owlbear can grapple only one target at a time."
+    "value": "*Melee Weapon Attack:* +5 + PB to hit, reach 5 ft., one Medium or smaller creature. *Hit:* 16 (**2d10 + 5**) bludgeoning damage. The target is grappled (escape DC 13 + PB) and restrained until this grapple ends. The owlbear can grapple only one target at a time."
    },
    {
-    "name": "",
+    "name": "Monstrous Ferocity (1/Day)",
     "type": "text",
     "value": "The owlbear flares its feathers to make itself look more fearsome for 1 minute. The rider is heavily obscured behind the owlbear's plumage. Any creature that targets the owlbear or its rider with an attack or a harmful spell that targets a single creature must first succeed on a DC 6 + PB Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell."
    }
@@ -1312,22 +1312,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The knight makes two melee attacks."
    },
    {
-    "name": "",
+    "name": "Greatsword",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) slashing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) slashing damage."
    },
    {
-    "name": "",
+    "name": "Heavy Crossbow",
     "type": "text",
-    "value": "+2 to hit, range 100/400 ft., one target. *Hit:* 5 (**1d10**) piercing damage."
+    "value": "*Ranged Weapon Attack:* +2 to hit, range 100/400 ft., one target. *Hit:* 5 (**1d10**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Leadership (Recharges after a Short or Long Rest)",
     "type": "text",
     "value": "For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated."
    }
@@ -1421,14 +1421,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The shield guardian makes two greatsword attacks."
    },
    {
-    "name": "",
+    "name": "Greatsword",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -1510,17 +1510,17 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "Tenn Drakes can use her Dreadful Glare and makes one attack with her rotting whip."
    },
    {
-    "name": "",
+    "name": "Rotting Whip",
     "type": "text",
-    "value": "+5 to hit, reach 10 ft., one target. *Hit:* 10 (**2d6 + 3**) slashing damage plus 10 (**3d6**) necrotic damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the __remove curse__ spell or other magic."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit:* 10 (**2d6 + 3**) slashing damage plus 10 (**3d6**) necrotic damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the __remove curse__ spell or other magic."
    },
    {
-    "name": "",
+    "name": "Dreadful Glare",
     "type": "text",
     "value": "The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours."
    }
@@ -1609,12 +1609,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Signature Attack",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 4 (**1d8**) lightning damage, and the target cannot take reactions until the start of its next turn. You have advantage on the attack roll if the target is wearing armor made of metal."
+    "value": "*Melee Spell Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 4 (**1d8**) lightning damage, and the target cannot take reactions until the start of its next turn. You have advantage on the attack roll if the target is wearing armor made of metal."
    },
    {
-    "name": "",
+    "name": "Greater Growth (3/Day)",
     "type": "text",
     "value": "*Prerequisite: 3rd-level retainer*"
    },
@@ -1624,7 +1624,7 @@
     "value": "The titanic mage grows in size as if affected by the __enlarge/reduce__ spell and gains a +2 bonus to AC while the effect is active. This effect does not require *concentration*."
    },
    {
-    "name": "",
+    "name": "Terrakinesis (1/Day)",
     "type": "text",
     "value": "*Prerequisite: 5th-level retainer*"
    },
@@ -1634,7 +1634,7 @@
     "value": "The titanic mage gathers a giant mass of rock and earth, then throws it to a point within 40 feet of the mage. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a creature takes 16 (**3d10**) force damage and is knocked prone. On a successful save, a creature takes half as much damage and isn't knocked prone."
    },
    {
-    "name": "",
+    "name": "Titan's Presence (3/Day)",
     "type": "text",
     "value": "*Prerequisite: 7th-level retainer*"
    },
@@ -1745,27 +1745,27 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "Uqaviel makes two attacks: one with each of his different chakram attacks."
    },
    {
-    "name": "",
+    "name": "Chakram of the Firmament",
     "type": "text",
-    "value": "+15 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 22 (**4d6 + 8**) slashing damage plus 36 (**8d8**) fire damage. The target must succeed on a DC 23 Dexterity saving throw or be knocked 60 feet in the air. Any target without a flying speed falls at the end of its next turn, taking 21 (**6d6**) bludgeoning damage from the fall and landing prone."
+    "value": "*Melee or Ranged Weapon Attack:* +15 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 22 (**4d6 + 8**) slashing damage plus 36 (**8d8**) fire damage. The target must succeed on a DC 23 Dexterity saving throw or be knocked 60 feet in the air. Any target without a flying speed falls at the end of its next turn, taking 21 (**6d6**) bludgeoning damage from the fall and landing prone."
    },
    {
-    "name": "",
+    "name": "Chakram of the Mantle",
     "type": "text",
-    "value": "+15 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 22 (**4d6 + 8**) slashing damage plus 36 (**8d8**) fire damage. The target must succeed on a DC 23 Strength saving throw or be knocked prone and stunned until the end of its next turn."
+    "value": "*Melee or Ranged Weapon Attack:* +15 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 22 (**4d6 + 8**) slashing damage plus 36 (**8d8**) fire damage. The target must succeed on a DC 23 Strength saving throw or be knocked prone and stunned until the end of its next turn."
    },
    {
-    "name": "",
+    "name": "Flying Chakram",
     "type": "text",
     "value": "Uqaviel commands one of his chakrams to hover magically in an unoccupied space within 5 feet of him. If Uqaviel can see the chakram, he can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to Uqaviel's hand. If the hovering weapon is targeted by any effect, Uqaviel is considered to be holding it. The chakram falls if Uqaviel dies."
    },
    {
-    "name": "",
+    "name": "Burning Touch (4/Day)",
     "type": "text",
     "value": "Uqaviel touches another creature within 5 feet of him. The target must make a DC 23 Constitution saving throw. On a failure, the creature takes 36 (**8d8**) fire damage and is blinded, deafened, or poisoned (Uqaviel's choice). On a success, the creature takes half as much damage and is not inflicted with a condition."
    }
@@ -1878,14 +1878,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Trident",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 2 (**1d6 − 1**) piercing damage or 3 (**1d8 − 1**) piercing damage if used with two hands."
+    "value": "*Melee or Ranged Weapon Attack:* +2 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 2 (**1d6 − 1**) piercing damage or 3 (**1d8 − 1**) piercing damage if used with two hands."
    },
    {
-    "name": "",
+    "name": "Titan Manifestation (3/Day)",
     "type": "text",
-    "value": "Valdek enters a titan form for 1 minute. While in this form, his size increases to Large and his AC increases by 4, he can attack with his trident twice as an action, and his bonus to hit with his trident becomes 8 and it deals 10 (**1d6 + 1d4 + 5**) piercing damage on a hit. In addition, while in titan form, Valdek knows and can cast the __blaze__, __cataclysm__, __daybreak__, __glacier__, and __quake__ spells as sorcerer spells."
+    "value": "Valdek enters a titan form for 1 minute. While in this form, his size increases to Large and his AC increases by 4, he can attack with his trident twice as an action, and his bonus to hit with his trident becomes +8 and it deals 10 (**1d6 + 1d4 + 5**) piercing damage on a hit. In addition, while in titan form, Valdek knows and can cast the __blaze__, __cataclysm__, __daybreak__, __glacier__, and __quake__ spells as sorcerer spells."
    }
   ],
   "bonusActions": []
@@ -1975,17 +1975,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Combat Stomp",
     "type": "text",
-    "value": "+4 + PB to hit, reach 5 ft., one target. *Hit:* 9 (**2d4 + 4**) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a DC 12 + PB Strength saving throw or be knocked prone."
+    "value": "*Melee Weapon Attack:* +4 + PB to hit, reach 5 ft., one target. *Hit:* 9 (**2d4 + 4**) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a DC 12 + PB Strength saving throw or be knocked prone."
    },
    {
-    "name": "",
+    "name": "Battle Neigh (1/Day)",
     "type": "text",
     "value": "The horse lets out a mighty bellow. Allied creatures within 10 feet of the horse that can hear it gain 2d6 temporary hit points. Each enemy within 10 feet of the horse that can hear it must succeed on a DC 9 + PB Wisdom saving throw or be frightened of the horse until the end of the enemy's next turn."
    },
    {
-    "name": "",
+    "name": "War Charge (3/Day)",
     "type": "text",
     "value": "The horse gains resistance to bludgeoning, piercing, and slashing damage, doesn't provoke opportunity attacks when it moves out of an enemy's reach, and can move through spaces occupied by other creatures until the end of its turn. If the horse charges on the same turn, each creature in the horse's way must make a DC 12 + PB Strength saving throw or take 13 (**2d8 + 4**) bludgeoning damage and be knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone."
    }
@@ -2121,22 +2121,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The deva makes two melee attacks."
    },
    {
-    "name": "",
+    "name": "Mace",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 4**) bludgeoning damage plus 18 (**4d8**) radiant damage."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 4**) bludgeoning damage plus 18 (**4d8**) radiant damage."
    },
    {
-    "name": "",
+    "name": "Healing Touch (3/Day)",
     "type": "text",
     "value": "The deva touches another creature. The target magically regains 20 (4d8 + 2) hit points and is freed from any curse, disease, poison, blindness, or deafness."
    },
    {
-    "name": "",
+    "name": "Change Shape",
     "type": "text",
     "value": "The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice)."
    },
@@ -2229,7 +2229,7 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Superior Invisibility",
     "type": "text",
     "value": "The pixie magically turns invisible until its *concentration* ends (as if *concentrating* on a spell). Any equipment the pixie wears or carries is invisible with it."
    }
@@ -2328,14 +2328,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The crescent devourer makes three Sin Strike attacks. They can't attack the same target twice in one turn."
    },
    {
-    "name": "",
+    "name": "Sin Strike",
     "type": "text",
-    "value": "+7 to hit, reach 10 ft., one target. *Hit:* 8 (**1d8 + 4**) psychic damage and the target suffers one of the following effects based on their fault:"
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 10 ft., one target. *Hit:* 8 (**1d8 + 4**) psychic damage and the target suffers one of the following effects based on their fault:"
    },
    {
     "name": "",
@@ -2473,22 +2473,22 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The dragon makes three attacks: one with its bite and two with its claws."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+10 to hit, reach 10 ft., one target. *Hit:* 17 (**2d10 + 6**) piercing damage."
+    "value": "*Melee Weapon Attack:* +10 to hit, reach 10 ft., one target. *Hit:* 17 (**2d10 + 6**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+10 to hit, reach 5 ft., one target. *Hit:* 13 (**2d6 + 6**) slashing damage."
+    "value": "*Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 13 (**2d6 + 6**) slashing damage."
    },
    {
-    "name": "",
+    "name": "Breath Weapons {@recharge 5}",
     "type": "text",
     "value": "The dragon uses one of the following breath weapons."
    },
@@ -2588,12 +2588,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+0 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage."
+    "value": "*Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage."
    },
    {
-    "name": "",
+    "name": "Return Souls",
     "type": "text",
     "value": "While in the Astral Plane, a flurgnob can target up to eight willing souls within 60 feet of them. Those souls are returned to the Material Plane and restored to life with all their hit points and their original bodies."
    }
@@ -2681,12 +2681,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+0 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage."
+    "value": "*Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 piercing damage."
    },
    {
-    "name": "",
+    "name": "Return Souls",
     "type": "text",
     "value": "While in the Astral Plane, a flurgnob can target up to eight willing souls within 60 feet of them. Those souls are returned to the Material Plane and restored to life with all their hit points and their original bodies."
    }
@@ -2863,9 +2863,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Paralyzing Touch",
     "type": "text",
-    "value": "+12 to hit, reach 5 ft., one creature. *Hit:* 10 (**3d6**) cold damage. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    "value": "*Melee Spell Attack:* +12 to hit, reach 5 ft., one creature. *Hit:* 10 (**3d6**) cold damage. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
    }
   ],
   "bonusActions": []
@@ -2968,22 +2968,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Claws (Hag Form Only)",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) slashing damage."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) slashing damage."
    },
    {
-    "name": "",
+    "name": "Change Shape",
     "type": "text",
     "value": "The hag magically polymorphs into a Small or Medium female humanoid, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies."
    },
    {
-    "name": "",
+    "name": "Etherealness",
     "type": "text",
     "value": "The hag magically enters the Ethereal Plane from the Material Plane, or vice versa. To do so, the hag must have a heartstone in her possession."
    },
    {
-    "name": "",
+    "name": "Nightmare Haunting (1/Day)",
     "type": "text",
     "value": "While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane. A __protection from evil and good__ spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (1d10). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the  __greater restoration__ spell or similar magic."
    }
@@ -3080,9 +3080,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage plus 7 (**2d6**) poison damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage plus 7 (**2d6**) poison damage."
    }
   ],
   "bonusActions": []
@@ -3164,12 +3164,12 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d10 + 3**) piercing damage plus 3 (**1d6**) lightning damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d10 + 3**) piercing damage plus 3 (**1d6**) lightning damage."
    },
    {
-    "name": "",
+    "name": "Lightning Breath {@recharge 5}",
     "type": "text",
     "value": "The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 22 (**4d10**) lightning damage on a failed save, or half as much damage on a successful one."
    }
@@ -3264,12 +3264,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) piercing damage plus 7 (**2d6**) fire damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) piercing damage plus 7 (**2d6**) fire damage."
    },
    {
-    "name": "",
+    "name": "Fire Breath {@recharge 5}",
     "type": "text",
     "value": "The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (**6d6**) fire damage on a failed save, or half as much damage on a successful one."
    }
@@ -3369,19 +3369,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The devil makes two attacks: one with its beard and one with its glaive."
    },
    {
-    "name": "",
+    "name": "Beard",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one creature. *Hit:* 6 (**1d8 + 2**) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one creature. *Hit:* 6 (**1d8 + 2**) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
    },
    {
-    "name": "",
+    "name": "Glaive",
     "type": "text",
-    "value": "+5 to hit, reach 10 ft., one target. *Hit:* 8 (**1d10 + 3**) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (**1d10**). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (*Medicine*) check. The wound also closes if the target receives magical healing."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit:* 8 (**1d10 + 3**) slashing damage. If the target is a creature other than an undead or a construct, it must succeed on a DC 12 Constitution saving throw or lose 5 (1d10) hit points at the start of each of its turns due to an infernal wound. Each time the devil hits the wounded target with this attack, the damage dealt by the wound increases by 5 (**1d10**). Any creature can take an action to stanch the wound with a successful DC 12 Wisdom (*Medicine*) check. The wound also closes if the target receives magical healing."
    }
   ],
   "bonusActions": []
@@ -3474,14 +3474,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Life Drain",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one creature. *Hit:* 21 (**4d8 + 3**) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one creature. *Hit:* 21 (**4d8 + 3**) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
    },
    {
-    "name": "",
+    "name": "Time Drain",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one creature. *Hit:* 24 (**6d6 + 3**) psychic damage and the target becomes older or younger (wraith's choice) by a number of years equal to the damage taken. This aging effect is reversed when the target finishes a long rest. The time wraith also gains temporary hit points equal to the damage taken."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one creature. *Hit:* 24 (**6d6 + 3**) psychic damage and the target becomes older or younger (wraith's choice) by a number of years equal to the damage taken. This aging effect is reversed when the target finishes a long rest. The time wraith also gains temporary hit points equal to the damage taken."
    }
   ],
   "bonusActions": []
@@ -3571,9 +3571,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage."
    }
   ],
   "bonusActions": []
@@ -3666,7 +3666,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
    },
    {
     "name": "Howl of Darkness",
@@ -3769,7 +3769,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
    },
    {
     "name": "Disrupt Earth",
@@ -3872,7 +3872,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage and **1d4** Fire damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage and **1d4** Fire damage."
    },
    {
     "name": "Howl of Fire",
@@ -3975,7 +3975,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
    },
    {
     "name": "Nature's Protection",
@@ -4078,7 +4078,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
    },
    {
     "name": "Heavenly Heal",
@@ -4181,7 +4181,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
    },
    {
     "name": "Standfast",
@@ -4284,7 +4284,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
    }
   ],
   "bonusActions": []
@@ -4377,7 +4377,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
    }
   ],
   "bonusActions": []
@@ -4470,7 +4470,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage and **1d4** Thunder damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage and **1d4** Thunder damage."
    },
    {
     "name": "Deafening Howl",
@@ -4573,7 +4573,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
    },
    {
     "name": "Spirit Walk",
@@ -4676,7 +4676,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage and **1d4** Lightning damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage and **1d4** Lightning damage."
    },
    {
     "name": "Lightning Shake",
@@ -4779,7 +4779,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d8** + *[Its Strength or Dexterity modifier]* Piercing damage."
    },
    {
     "name": "Time Shift",
@@ -4882,7 +4882,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "+*[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage and **1d4** Slashing damage."
+    "value": "*Melee Attack Roll:* *[Its Strength or Dexterity modifier + your Proficieny Bonus]* to hit, reach 5 ft., one target. *Hit:*  **1d6** + *[Its Strength or Dexterity modifier]* Piercing damage and **1d4** Slashing damage."
    },
    {
     "name": "As the Wind Blows",
@@ -4998,14 +4998,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The hunter makes a number of attacks equal to half this spell's level (rounded down)."
    },
    {
-    "name": "",
+    "name": "Hunter's Strike",
     "type": "text",
-    "value": "+Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d8 + 4 + summonSpellLevel** Piercing damage, and if the hunter's environment is Land, the target has the Grappled condition (escape DC equals your spell save DC)."
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d8 + 4 + summonSpellLevel** Piercing damage, and if the hunter's environment is Land, the target has the Grappled condition (escape DC equals your spell save DC)."
    }
   ],
   "bonusActions": []
@@ -5101,9 +5101,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Otherworldly Scratch",
     "type": "text",
-    "value": "+Bonus equal your Spell Attack Modifier, reach 5 ft. *Hit:* 1 + the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
+    "value": "*Melee Attack:* Bonus equal your Spell Attack Modifier, reach 5 ft. *Hit:* 1 + the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
    }
   ],
   "bonusActions": []
@@ -5182,9 +5182,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+Bonus equals your spell attack modifier, reach 5 ft. *Hit:* Force damage equal to **1d4 - 3** + your spellcasting ability modifier (Medium or smaller), **2d6** + your spellcasting ability modifier (Large), or **2d12 + 3** + your spellcasting ability modifier (Huge)."
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* Force damage equal to **1d4 - 3** + your spellcasting ability modifier (Medium or smaller), **2d6** + your spellcasting ability modifier (Large), or **2d12 + 3** + your spellcasting ability modifier (Huge)."
    }
   ],
   "bonusActions": []
@@ -5274,9 +5274,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Otherworldly Maul",
     "type": "text",
-    "value": "+Bonus equals half your spell attack modifier, reach 5 ft. *Hit:*  1 + twice the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
+    "value": "*Melee Attack:* Bonus equals half your spell attack modifier, reach 5 ft. *Hit:*  1 + twice the spell's level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage."
    }
   ],
   "bonusActions": []
@@ -5368,14 +5368,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The ghost makes a number of Withering Touch attacks equal to half this spell's level (round down)."
    },
    {
-    "name": "",
+    "name": "Withering Touch",
     "type": "text",
-    "value": "+equal to your spellcasting modifier, reach 5 ft., one target. *Hit:* **2d6 + 3 + summonSpellLevel** Necrotic damage."
+    "value": "*Melee Weapon Attack:* equal to your spellcasting modifier, reach 5 ft., one target. *Hit:* **2d6 + 3 + summonSpellLevel** Necrotic damage."
    }
   ],
   "bonusActions": [
@@ -5494,12 +5494,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Withering Touch",
     "type": "text",
-    "value": "+2, reach 5 ft. *Hit:* 3 (**1d6**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +2, reach 5 ft. *Hit:* 3 (**1d6**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Visage",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 10, each creature in a 15-foot Cone that can see the ghost and isn't an Undead. *Failure:*  7 (**2d6**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    }
@@ -5609,12 +5609,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Withering Bite",
     "type": "text",
-    "value": "+4, reach 5 ft. *Hit:* 5 (**1d6+2**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 5 (**1d6+2**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Howl",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 11, each creature in a 10-foot radius that can hear the ghost and isn't an Undead. *Failure:*  8 (**2d6 + 1**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    }
@@ -5714,12 +5714,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Withering Hooves",
     "type": "text",
-    "value": "+5, reach 5 ft. *Hit:* 6 (**1d6+3**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (**1d6+3**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Neigh",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 10, each creature in a 10-foot radius that can hear the ghost and isn't an Undead. *Failure:*  7 (**2d6**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    }
@@ -5819,17 +5819,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The ghost makes two Withering Touch attacks."
    },
    {
-    "name": "",
+    "name": "Withering Touch",
     "type": "text",
-    "value": "+6, reach 5 ft. *Hit:* 19 (**3d10+3**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +6, reach 5 ft. *Hit:* 19 (**3d10+3**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Visage",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 14, each creature in a 60-foot Cone that can see the ghost and isn't an Undead. *Failure:*  10 (**2d6+3**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    }
@@ -5942,22 +5942,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The ghost makes three Withering Touch attacks. It can replace one attack with a Horrifying Presence."
    },
    {
-    "name": "",
+    "name": "Withering Touch",
     "type": "text",
-    "value": "+10, reach 5 ft. *Hit:* 21 (**3d10+5**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +10, reach 5 ft. *Hit:* 21 (**3d10+5**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Visage",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 18, each creature in a 60-foot Cone that can see the ghost and isn't an Undead. *Failure:*  19 (**4d6+5**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    },
    {
-    "name": "",
+    "name": "Unsettling Presence {@recharge 5}",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 18, All creatures within 30 feet of the ghost (Undead and Construct are unaffected). *Failure:*  36 (**8d8**) Necrotic damage. *Success* Half damage. *Failure or Success*: Hit Point Maximum is reduced by half the damage taken (round down) until it finishes a Long Rest."
    }
@@ -6069,22 +6069,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The ghost uses Eye Rays three times."
    },
    {
-    "name": "",
+    "name": "Withering Bite",
     "type": "text",
-    "value": "+6, reach 5 ft. *Hit:* 13 (**3d6+3**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +6, reach 5 ft. *Hit:* 13 (**3d6+3**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Presence",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 14, each creature in a 60-foot Cone that can hear the ghost and isn't an Undead. *Failure:*  13 (**3d6+3**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    },
    {
-    "name": "",
+    "name": "Eye rays",
     "type": "text",
     "value": "The ghost randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll 1d6; reroll if the ghost has already used that ray during this turn):"
    },
@@ -6202,22 +6202,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The ghost makes two Withering Rend attacks."
    },
    {
-    "name": "",
+    "name": "Withering Rend",
     "type": "text",
-    "value": "+5, reach 5 ft. *Hit:* 10 (**2d6+3**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 10 (**2d6+3**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Presence",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 10, each creature in a 15-foot Cone that can see the ghost and isn't an Undead. *Failure:*  7 (**2d6**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    },
    {
-    "name": "",
+    "name": "Withering Breath {@recharge 5}",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 12, each creature in a 15-foot Cone. *Failure:*  22 (**5d8**) Necrotic damage. *Success* Half damage."
    }
@@ -6319,22 +6319,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The ghost makes three Withering Rend attacks."
    },
    {
-    "name": "",
+    "name": "Withering Rend",
     "type": "text",
-    "value": "+8, reach 5 ft. *Hit:* 14 (**3d6+5**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +8, reach 5 ft. *Hit:* 14 (**3d6+5**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Presence",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 14, each creature in a 30-foot Cone that can see the ghost and isn't an Undead. *Failure:*  10 (**2d6+3**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    },
    {
-    "name": "",
+    "name": "Withering Breath {@recharge 5}",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 15, each creature in a 30-foot Cone. *Failure:*  40 (**9d8**) Necrotic damage. *Success* Half damage."
    }
@@ -6441,22 +6441,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The ghost makes three Withering Rend attacks."
    },
    {
-    "name": "",
+    "name": "Withering Rend",
     "type": "text",
-    "value": "+12, reach 5 ft. *Hit:* 20 (**3d8+7**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +12, reach 5 ft. *Hit:* 20 (**3d8+7**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Presence",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 18, each creature in a 60-foot Cone that can see the ghost and isn't an Undead. *Failure:*  21 (**4d6+5**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    },
    {
-    "name": "",
+    "name": "Withering Breath {@recharge 5}",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 19, each creature in a 60-foot Cone. *Failure:*  54 (**12d8**) Necrotic damage. *Success* Half damage."
    }
@@ -6563,22 +6563,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The ghost uses its Horrifying Presence and then makes three Withering Rend attacks."
    },
    {
-    "name": "",
+    "name": "Withering Rend",
     "type": "text",
-    "value": "+15, reach 5 ft. *Hit:* 27 (**4d8+9**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +15, reach 5 ft. *Hit:* 27 (**4d8+9**) Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Horrifying Presence",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 21, each creature in a 90-foot Cone that can see the ghost and isn't an Undead. *Failure:*  23 (**4d6+7**) Psychic damage, and the target has the Frightened condition until the start of the ghost's next turn. *Success* The target is immune to this ghost's Horrifying Visage for 24 hours."
    },
    {
-    "name": "",
+    "name": "Withering Breath {@recharge 5}",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 22, each creature in a 90-foot Cone. *Failure:*  63 (**12d8**) Necrotic damage. *Success* Half damage."
    }
@@ -6671,14 +6671,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Integrated Mace",
     "type": "text",
-    "value": "+Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6 + 2** plus your Intelligence modifier Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6 + 2** plus your Intelligence modifier Bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Integrated Phaser",
     "type": "text",
-    "value": "+Bonus equals your Intelligence modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **2d4** Lightning damage."
+    "value": "*Ranged Attack Roll:* Bonus equals your Intelligence modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **2d4** Lightning damage."
    }
   ],
   "bonusActions": []
@@ -6764,17 +6764,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Integrated Blaster (Assault Only)",
     "type": "text",
-    "value": "+5, range 30/120 ft. *Hit:* 5 (**2d4**) Radiant damage."
+    "value": "*Ranged Attack Roll:* +5, range 30/120 ft. *Hit:* 5 (**2d4**) Radiant damage."
    },
    {
-    "name": "",
+    "name": "Revival Protocol (Medical Only, 1/Day)",
     "type": "text",
     "value": "The drone restores 9 (2d8) Hit Points to a creature within 5 feet of it."
    },
    {
-    "name": "",
+    "name": "Shield Projector (Shield Only)",
     "type": "text",
     "value": "The drone projects a shield around a creature within 5 feet of it. The next time that the creature is hit by an attack roll before the start of the drone's next turn, roll a d6 and add it to the creature's AC, potentially causing the attack to miss."
    }
@@ -6885,19 +6885,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack (Level 5)",
     "type": "text",
     "value": "The construct makes additional attacks in any combination when you reach Druid levels 5 (2 attacks), 11 (3 attacks), and 17 (4 attacks)."
    },
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d8** + your Wisdom modifier Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d8** + your Wisdom modifier Bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Photon Cannon (Turret Only)",
     "type": "text",
-    "value": "+Bonus equals your spell attack modifier, range 60/240 ft. *Hit:* **2d6** + your Wisdom modifier Radiant damage."
+    "value": "*Ranged Attack Roll:* Bonus equals your spell attack modifier, range 60/240 ft. *Hit:* **2d6** + your Wisdom modifier Radiant damage."
    }
   ],
   "bonusActions": []
@@ -6978,9 +6978,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Fiendish Flame",
     "type": "text",
-    "value": "+5, reach 5 ft. or range 60 ft. *Hit:* 12 (**2d8 + 3**) Fire damage."
+    "value": "*Melee or Ranged Attack Roll:* +5, reach 5 ft. or range 60 ft. *Hit:* 12 (**2d8 + 3**) Fire damage."
    }
   ],
   "bonusActions": []
@@ -7061,14 +7061,14 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The advocate makes two Fiendish Flame attacks."
    },
    {
-    "name": "",
+    "name": "Fiendish Flame",
     "type": "text",
-    "value": "+8, reach 5 ft. or range 60 ft. *Hit:* 23 (**4d8 + 5**) Fire damage."
+    "value": "*Melee or Ranged Attack Roll:* +8, reach 5 ft. or range 60 ft. *Hit:* 23 (**4d8 + 5**) Fire damage."
    }
   ],
   "bonusActions": []
@@ -7149,9 +7149,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Suffocating Slam",
     "type": "text",
-    "value": "+4, reach 5 ft. *Hit:* 9 (**2d6 + 2**) Necrotic damage, and the target has Disadvantage on D20 Tests until the end of the husk's next turn."
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 9 (**2d6 + 2**) Necrotic damage, and the target has Disadvantage on D20 Tests until the end of the husk's next turn."
    }
   ],
   "bonusActions": []
@@ -7238,17 +7238,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The husk makes two Suffocating Slam attacks. It can replace one attack with a use of Gravitational Crush."
    },
    {
-    "name": "",
+    "name": "Suffocating Slam",
     "type": "text",
-    "value": "+6, reach 5 ft. *Hit:* 11 (**2d6 + 4**) Necrotic damage, and the target has Disadvantage on D20 Tests until the end of the husk's next turn."
+    "value": "*Melee Attack Roll:* +6, reach 5 ft. *Hit:* 11 (**2d6 + 4**) Necrotic damage, and the target has Disadvantage on D20 Tests until the end of the husk's next turn."
    },
    {
-    "name": "",
+    "name": "Gravitational Crush",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 14, one creature within 30 feet. *Failure:*  13 (**3d8**) Force damage and the target's Speed is 0 until the end of the husk's next turn. *Success* Half damage only."
    }
@@ -7336,12 +7336,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Composite Spear",
     "type": "text",
-    "value": "+4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Slashing damage."
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Slashing damage."
    },
    {
-    "name": "",
+    "name": "Harpoon Gun {@recharge 5}",
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 12, one creature the kobold can see within 60 feet. *Failure:*  7 (**2d6**) Piercing damage and the target's Speed is 0 until the start of the kobold's next turn. *Success* Half damage."
    }
@@ -7423,9 +7423,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Leech",
     "type": "text",
-    "value": "+4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Necrotic damage and the snail regains Hit Points equal to the Necrotic damage dealt."
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Necrotic damage and the snail regains Hit Points equal to the Necrotic damage dealt."
    }
   ],
   "bonusActions": []
@@ -7506,9 +7506,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Bludgeoning damage."
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -7596,9 +7596,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Life Drain",
     "type": "text",
-    "value": "+4, reach 5 ft. *Hit:* 9 (**2d8**) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken."
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 9 (**2d8**) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken."
    }
   ],
   "bonusActions": []
@@ -7685,9 +7685,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+6, reach 5 ft. *Hit:* 7 (**1d6 + 4**) Slashing damage."
+    "value": "*Melee Attack Roll:* +6, reach 5 ft. *Hit:* 7 (**1d6 + 4**) Slashing damage."
    }
   ],
   "bonusActions": []
@@ -7777,9 +7777,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Sting",
     "type": "text",
-    "value": "+3, reach 5 ft. *Hit:* 5 (**2d4**) Poison damage."
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 5 (**2d4**) Poison damage."
    }
   ],
   "bonusActions": []
@@ -7867,9 +7867,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Piercing damage plus 2 (**1d4**) Acid damage."
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Piercing damage plus 2 (**1d4**) Acid damage."
    }
   ],
   "bonusActions": [
@@ -7960,7 +7960,6 @@
     "value": "The rock counts as an object. Additionally, it can't take actions and its Speed can't be increased."
    }
   ],
-  "actions": [],
   "bonusActions": []
  },
  {
@@ -8041,9 +8040,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Bludgeoning damage."
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -8130,9 +8129,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Piercing damage plus 2 (**1d4**) Cold damage."
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Piercing damage plus 2 (**1d4**) Cold damage."
    }
   ],
   "bonusActions": []
@@ -8213,12 +8212,12 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Bayonet",
     "type": "text",
-    "value": "+4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Piercing damage."
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Piercing damage."
    },
    {
-    "name": "",
+    "name": "Rifle {@recharge}",
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 12, one creature that the tin soldier can see within 30 feet. *Failure:*  7 (**2d6**) Piercing damage."
    }
@@ -8302,12 +8301,12 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Poke",
     "type": "text",
-    "value": "+5, reach 5 ft. *Hit:* 8 (**2d4 + 3**) Piercing damage."
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 8 (**2d4 + 3**) Piercing damage."
    },
    {
-    "name": "",
+    "name": "Tangle {@recharge}",
     "type": "text",
     "value": "*Dexterity Saving Throw:* DC 12, one creature that the golem can see within 5 feet. *Failure:*  If the target is Medium or smaller, it has the Grappled condition (escape DC 12). While Grappled, the target has the Restrained condition."
    }
@@ -8388,14 +8387,14 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The familiar two Rend attacks. When you reach Witch level 17, it makes three Rend attacks."
    },
    {
-    "name": "",
+    "name": "Rend",
     "type": "text",
-    "value": "+Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d8 + 4** plus your Charisma modifier Force damage."
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d8 + 4** plus your Charisma modifier Force damage."
    }
   ],
   "bonusActions": [
@@ -8482,14 +8481,14 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Shortsword",
     "type": "text",
-    "value": "+5, reach 5 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage."
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage."
    },
    {
-    "name": "",
+    "name": "Shortbow",
     "type": "text",
-    "value": "+5, range 80/320 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage."
+    "value": "*Ranged Attack Roll:* +5, range 80/320 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage."
    }
   ],
   "bonusActions": []
@@ -8578,9 +8577,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Grave Touch",
     "type": "text",
-    "value": "+5, reach 5 ft. *Hit:* 5 (**1d4 + 3**) Necrotic damage."
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 5 (**1d4 + 3**) Necrotic damage."
    }
   ],
   "bonusActions": []
@@ -8667,9 +8666,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+3, reach 5 ft. *Hit:* 5 (**1d8 + 1**) Bludgeoning damage."
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 5 (**1d8 + 1**) Bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -8757,9 +8756,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5, reach 5 ft. *Hit:* 10 (**2d6 + 3**) Piercing damage, and the target has the Prone condition if it is Large or smaller."
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 10 (**2d6 + 3**) Piercing damage, and the target has the Prone condition if it is Large or smaller."
    }
   ],
   "bonusActions": []
@@ -8840,9 +8839,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5, reach 5 ft. *Hit:* 10 (**2d6 + 3**) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 13)."
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 10 (**2d6 + 3**) Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 13)."
    }
   ],
   "bonusActions": []
@@ -8934,14 +8933,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The deadnaught makes two attacks. It makes three attacks when you reach Necromancer level 13, and four attacks when you reach Necromancer level 17."
    },
    {
-    "name": "",
+    "name": "Warhammer",
     "type": "text",
-    "value": "+Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d10 + 4** Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d10 + 4** Bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -9033,7 +9032,7 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Blood Splash",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 13, each creature of the bloodlurk's choice in a 5-foot Emanation origination from the lurker. *Failure:*  17 (**5d6**) Necrotic damage. *Success* Half damage."
    }
@@ -9124,9 +9123,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Scratch",
     "type": "text",
-    "value": "+3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Slashing damage."
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Slashing damage."
    }
   ],
   "bonusActions": []
@@ -9214,7 +9213,7 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Misty Embrace",
     "type": "text",
     "value": "*Constitution Saving Throw:* DC 14, one creature the duskfog can see within 5 feet. *Failure:*  18 (**4d8**) Necrotic damage and the duskfog regains Hit Points equal to the Necrotic damage dealt."
    }
@@ -9317,17 +9316,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The demon makes two attacks. At Captain level 11, the demon makes three attacks."
    },
    {
-    "name": "",
+    "name": "Abyssal Claw",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Force damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Force damage."
    },
    {
-    "name": "",
+    "name": "Level 5:",
     "type": "text",
     "value": "Hurl Flame (2/Day). *Dexterity Saving Throw:* DC equals your Cohort save DC, each creature within a 15-foot-radius Sphere centered on a point the demon can see within 120 feet. *Failure:*  **6d6** Fire damage. *Success* Half damage. This damage increases by 2d6 at Captain level 9 (8d6), 13 (10d6), and 17 (12d6)."
    }
@@ -9419,17 +9418,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Unarmed Strike",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6** plus your Charisma modifier Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6** plus your Charisma modifier Bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Level 9:",
     "type": "text",
     "value": "Multiattack. The ascetic makes two Unarmed Strikes."
    },
    {
-    "name": "",
+    "name": "Level 17:",
     "type": "text",
     "value": "Stunning Strike (2/Day). *Constitution Saving Throw:* DC equals your Cohort save DC, one creature within 5 feet. *Failure:*  The target has the Stunned condition until the end of its next turn. *Success* The target's speed is halved and the next attack roll made against the target before then has Advantage."
    }
@@ -9542,14 +9541,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Greataxe",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d12** plus your Charisma modifier Slashing damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d12** plus your Charisma modifier Slashing damage."
    },
    {
-    "name": "",
+    "name": "Handaxe",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft or range 20/60 ft. *Hit:* **1d6** plus your Charisma modifier Slashing damage."
+    "value": "*Melee or Ranged Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft or range 20/60 ft. *Hit:* **1d6** plus your Charisma modifier Slashing damage."
    }
   ],
   "bonusActions": [
@@ -9655,22 +9654,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Battleaxe",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Slashing damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Slashing damage."
    },
    {
-    "name": "",
+    "name": "Javelin",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
+    "value": "*Ranged Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
    },
    {
-    "name": "",
+    "name": "Level 5:",
     "type": "text",
     "value": "Flurry (1/Day). The champion makes three attacks in any combination with Disadvantage, regardless of circumstance."
    },
    {
-    "name": "",
+    "name": "Level 17:",
     "type": "text",
     "value": "Multiattack. The champion makes two attacks in any combination."
    }
@@ -9788,19 +9787,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Jolt (Small Only)",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, range 30 ft. *Hit:* **1d8** plus your Charisma modifier Lightning damage and he target can't make Opportunity Attacks until the start of the construct's next turn."
+    "value": "*Ranged Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, range 30 ft. *Hit:* **1d8** plus your Charisma modifier Lightning damage and he target can't make Opportunity Attacks until the start of the construct's next turn."
    },
    {
-    "name": "",
+    "name": "Slam (Medium Only)",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Bludgeoning damage and the target has Disadvantage on its next attack roll before the start of the construct's next turn."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Bludgeoning damage and the target has Disadvantage on its next attack roll before the start of the construct's next turn."
    },
    {
-    "name": "",
+    "name": "Stomp (Large Only)",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Bludgeoning damage. If the target is Medium or smaller, it has the Prone condition."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Bludgeoning damage. If the target is Medium or smaller, it has the Prone condition."
    }
   ],
   "bonusActions": [
@@ -9901,32 +9900,32 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Eldritch Curse",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC equals your Cohort save DC, one creature within 60 feet. *Failure:*  The cultist chooses one of the following effects."
    },
    {
-    "name": "",
+    "name": "Bleeding",
     "type": "text",
     "value": "Until the start of the cultist's next turn, the target takes an extra **1d4** Necrotic damage whenever it takes damage."
    },
    {
-    "name": "",
+    "name": "Evil Eye",
     "type": "text",
     "value": "The target has the Frightened condition until the start of the cultist's next turn."
    },
    {
-    "name": "",
+    "name": "Hobbled",
     "type": "text",
     "value": "The target's Speed is reduced to 10 feet until the start of the cultist's next turn."
    },
    {
-    "name": "",
+    "name": "Necrotic Damage",
     "type": "text",
     "value": "The target takes 1d8 plus your Charisma modifier Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Level 17:",
     "type": "text",
     "value": "Vulnerability Curse (2/Day). *Constitution Saving Throw:* DC equals your Cohort save DC, one creature within 60 feet. *Failure:*  The target has Vulnerability to one damage type of the cultist's choice until the start of the cultist's next turn. This Vulnerability ends early after the target takes the chosen type of damage."
    }
@@ -10023,17 +10022,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Scimitar",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
    },
    {
-    "name": "",
+    "name": "Longbow",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, range 80/320 ft. *Hit:* **1d8** plus your Charisma modifier Piercing damage."
+    "value": "*Ranged Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, range 80/320 ft. *Hit:* **1d8** plus your Charisma modifier Piercing damage."
    },
    {
-    "name": "",
+    "name": "Level 5:",
     "type": "text",
     "value": "Trick Shot. *Dexterity Saving Throw:* DC equals your Cohort save DC, one creature within range of the hunter's weapon. *Failure:*  The hunter chooses one of the following effects:"
    },
@@ -10159,22 +10158,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Dagger",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. or range 20/60. *Hit:* **1d4** plus your Charisma modifier Piercing damage."
+    "value": "*Melee or Ranged Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. or range 20/60. *Hit:* **1d4** plus your Charisma modifier Piercing damage."
    },
    {
-    "name": "",
+    "name": "Encouraging Tune",
     "type": "text",
     "value": "One creature within 60 feet of the minstrel that can see or hear it has Advantage on the next attack it makes before the start of the minstrel's next turn."
    },
    {
-    "name": "",
+    "name": "Taunt",
     "type": "text",
     "value": "One creature that can hear the minstrel within 60 feet has Disadvantage on its next attack roll before the start of the minstrel's next turn."
    },
    {
-    "name": "",
+    "name": "Level 5:",
     "type": "text",
     "value": "Multiattack. The minstrel uses Encouraging Tune or Taunt twice in any combination. It can replace one of its uses with a Dagger attack. At Captain level 13, it uses Encouraging Tune or Taunt three times in any combination."
    }
@@ -10282,14 +10281,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Shortsword",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
    },
    {
-    "name": "",
+    "name": "Shortbow",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, range 80/320 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
+    "value": "*Ranged Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, range 80/320 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
    }
   ],
   "bonusActions": [
@@ -10410,14 +10409,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Greatsword",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **2d6** plus your Charisma modifier Slashing damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **2d6** plus your Charisma modifier Slashing damage."
    },
    {
-    "name": "",
+    "name": "Javelin",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
+    "value": "*Ranged Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **1d6** plus your Charisma modifier Piercing damage."
    }
   ],
   "bonusActions": [
@@ -10524,12 +10523,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC equals your Cohort save DC)."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC equals your Cohort save DC)."
    },
    {
-    "name": "",
+    "name": "Level 17:",
     "type": "text",
     "value": "Paralytic Bite (2/Day). *Constitution Saving Throw:* DC equals your Cohort save DC, one creature within 5 feet. *Failure:*  The target has the Paralyzed condition until the end of its next turn. *Success* The target's Speed is halved until the start of the undead's next turn."
    }
@@ -10634,12 +10633,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Death Touch",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Necrotic damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d8** plus your Charisma modifier Necrotic damage."
    },
    {
-    "name": "",
+    "name": "Level 17:",
     "type": "text",
     "value": "Life Drain (2/Day). *Constitution Saving Throw:* DC equals your Cohort save DC, one creature within 5 feet. *Failure:*  **8d8** Necrotic damage and the undead regains Hit Points equal to the Necrotic damage taken. *Success* Half damage only."
    }
@@ -10737,19 +10736,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The golem makes one Slam and one Unarmed Strike."
    },
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft.  *Hit:* **1d8 + 3** plus your Intelligence modifier Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft.  *Hit:* **1d8 + 3** plus your Intelligence modifier Bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Unarmed Strike",
     "type": "text",
-    "value": "+Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6 + 3** plus your Intelligence modifier Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6 + 3** plus your Intelligence modifier Bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -10829,14 +10828,14 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Crossbow (Bolter Only)",
     "type": "text",
-    "value": "+Bonus equals your Intelligence modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **1d6 + 1** Piercing damage."
+    "value": "*Ranged Attack Roll:* Bonus equals your Intelligence modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **1d6 + 1** Piercing damage."
    },
    {
-    "name": "",
+    "name": "Mace (Macer Only)",
     "type": "text",
-    "value": "+Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6 + 1** Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6 + 1** Bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -10927,14 +10926,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Maul (Left Hand)",
     "type": "text",
-    "value": "+Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **2d6** plus your Intelligence modifier Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **2d6** plus your Intelligence modifier Bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Maul (Right Hand)",
     "type": "text",
-    "value": "+Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **2d6** plus your Intelligence modifier Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Intelligence modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **2d6** plus your Intelligence modifier Bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -11023,9 +11022,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+Bonus equals your Strength or Dexterity modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6** plus your Strength or Dexterity modifier Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition."
+    "value": "*Melee Attack Roll:* Bonus equals your Strength or Dexterity modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d6** plus your Strength or Dexterity modifier Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition."
    }
   ],
   "bonusActions": []
@@ -11105,15 +11104,14 @@
    {
     "name": "",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d4** plus your Charisma modifier Bludgeoning damage."
+    "value": "*Melee Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, reach 5 ft. *Hit:* **1d4** plus your Charisma modifier Bludgeoning damage."
    },
    {
     "name": "",
     "type": "text",
-    "value": "+Bonus equals your Charisma modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **1d4** plus your Charisma modifier Bludgeoning damage."
+    "value": "*Ranged Attack Roll:* Bonus equals your Charisma modifier plus your Proficiency Bonus, range 30/120 ft. *Hit:* **1d4** plus your Charisma modifier Bludgeoning damage."
    }
   ],
-  "actions": [],
   "bonusActions": []
  },
  {
@@ -11206,9 +11204,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. Hit:5 (**1d4 + 2**) slashing damage. If it is Grappled by the Alligator Turtle, it takes a bonus **1d4** damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. Hit:5 (**1d4 + 2**) slashing damage. If it is Grappled by the Alligator Turtle, it takes a bonus **1d4** damage."
    }
   ],
   "bonusActions": []
@@ -11303,17 +11301,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Strike",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) piercing damage. This attack has advantage against creatures Grappled by the Anaconda."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) piercing damage. This attack has advantage against creatures Grappled by the Anaconda."
    },
    {
-    "name": "",
+    "name": "Constrict",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 14 (**2d8 + 5**) bludgeoning damage and the target is Grappled (escape DC 15) and Restrained, and the Anaconda cannot Grapple another target."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (**2d8 + 5**) bludgeoning damage and the target is Grappled (escape DC 15) and Restrained, and the Anaconda cannot Grapple another target."
    },
    {
-    "name": "",
+    "name": "Crush",
     "type": "text",
     "value": "The Anaconda forces one creature it is Grappling to make a Strength saving throw (DC 15). On a failure, the creature suffers one level of Exhaustion."
    }
@@ -11404,14 +11402,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Gore",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Stomp",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d4 + 4**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d4 + 4**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -11496,9 +11494,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
    }
   ],
   "bonusActions": [
@@ -11589,9 +11587,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -11685,14 +11683,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 7 (**2d4 + 2**) slashing damage, and a target equal to the Black Bear's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (**2d4 + 2**) slashing damage, and a target equal to the Black Bear's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": []
@@ -11786,17 +11784,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Strike",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage. This attack has advantage against Grappled creatures."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage. This attack has advantage against Grappled creatures."
    },
    {
-    "name": "",
+    "name": "Constrict",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 2**) bludgeoning damage and the target is Grappled (escape DC 12). While Grappled, the target is Restrained and it can't Grapple another target."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 2**) bludgeoning damage and the target is Grappled (escape DC 12). While Grappled, the target is Restrained and it can't Grapple another target."
    },
    {
-    "name": "",
+    "name": "Crush",
     "type": "text",
     "value": "The Boa Constrictor forces one creature that it is Grappling to make a Strength saving throw (DC 12). On a failure, the creature suffers one level of Exhaustion."
    }
@@ -11892,14 +11890,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Stomp",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Tusk",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -11984,14 +11982,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Spit",
     "type": "text",
-    "value": "+4 to hit, range 15/30 ft., one target. *Hit:* The creature has disadvantage on attack rolls against all targets other than the Camel until the beginning of the Camel's next turn."
+    "value": "*Ranged Weapon Attack:* +4 to hit, range 15/30 ft., one target. *Hit:* The creature has disadvantage on attack rolls against all targets other than the Camel until the beginning of the Camel's next turn."
    }
   ],
   "bonusActions": []
@@ -12082,9 +12080,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) slashing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -12185,19 +12183,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Bear makes two attacks, using its Bite and its Claw attacks in any combination."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 15 (**2d8 + 6**) piercing damage."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 15 (**2d8 + 6**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 14 (**3d6 + 6**) slashing damage, and any creature equal to the Bear's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 14 (**3d6 + 6**) slashing damage, and any creature equal to the Bear's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": [
@@ -12310,14 +12308,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 6 (**1d4 + 3**) slashing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (**1d4 + 3**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -12401,9 +12399,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -12488,14 +12486,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Fist",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Hurl",
     "type": "text",
-    "value": "The Chimpanzee throws a Tiny (or smaller) object it is holding. 5 to hit, range 25/50 ft., one target. *Hit:* 7 (**1d6 + 3**) bludgeoning damage."
+    "value": "The Chimpanzee throws a Tiny (or smaller) object it is holding. +5 to hit, range 25/50 ft., one target. *Hit:* 7 (**1d6 + 3**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -12601,14 +12599,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Crab makes one attack with each Claw."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+7 to hit, reach 15 ft., one target. *Hit:* 18 (**3d8 + 4**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 15 ft., one target. *Hit:* 18 (**3d8 + 4**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -12719,12 +12717,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Toxic Bite",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 16 (2d10 + 5) piercing plus 11 (**2d10**) poison damage."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 16 (2d10 + 5) piercing plus 11 (**2d10**) poison damage."
    },
    {
-    "name": "",
+    "name": "Sticky Tongue",
     "type": "text",
     "value": "The Toad forces a target it can see within 20 ft. that is at least one size smaller than it to make a Strength saving throw (DC 15). On a failure, the target is pulled to an unoccupied space within 5 ft. of the Toad, then the Toad can use its Toxic Bite attack against it as a bonus action."
    }
@@ -12825,9 +12823,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) bludgeoning damage, and it uses Pincer."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) bludgeoning damage, and it uses Pincer."
    }
   ],
   "bonusActions": []
@@ -12927,19 +12925,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 9 (**1d10 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 9 (**1d10 + 3**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Death Roll",
     "type": "text",
     "value": "The Crocodile forces one creature it is Grappling to make a Strength saving throw (DC 12). It takes 14 (**2d10 + 3**) slashing damage on a failure, and half that on a success."
    },
    {
-    "name": "",
+    "name": "Tail",
     "type": "text",
-    "value": "+5 to hit, reach 10 ft., one target. *Hit:* 8 (**1d8 + 3**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit:* 8 (**1d8 + 3**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -13040,19 +13038,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Tiger makes two attacks, using its Bite and Claw in any combination."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 14 (**2d8 + 5**) piercing damage."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 14 (**2d8 + 5**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 16 (**2d10 + 5**) slashing damage."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 16 (**2d10 + 5**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -13147,14 +13145,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 9 (**1d10 + 3**) slashing damage. If it is equal to the Dire Wolf's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 9 (**1d10 + 3**) slashing damage. If it is equal to the Dire Wolf's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": [
@@ -13261,9 +13259,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -13358,14 +13356,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 8 (**1d6 + 4**) piercing damage, and the creature must make a Dexterity saving throw (DC 14) or become Blinded until the start of the Eagle's next turn."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 8 (**1d6 + 4**) piercing damage, and the creature must make a Dexterity saving throw (DC 14) or become Blinded until the start of the Eagle's next turn."
    },
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 8 (**1d6 + 4**) slashing damage, and the target has disadvantage on attack rolls against all targets other than the Eagle until the start of the Eagle's next turn."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 8 (**1d6 + 4**) slashing damage, and the target has disadvantage on attack rolls against all targets other than the Eagle until the start of the Eagle's next turn."
    }
   ],
   "bonusActions": []
@@ -13460,9 +13458,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Shocking Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage plus 3 (1d4) lighting damage, and the creature cannot take reactions until the start of the Electric Eels next turn."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage plus 3 (1d4) lighting damage, and the creature cannot take reactions until the start of the Electric Eels next turn."
    }
   ],
   "bonusActions": []
@@ -13562,14 +13560,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Gore",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 15 (**2d8 + 6**) piercing damage."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 15 (**2d8 + 6**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Stomp",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 17 (**2d10 + 6**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 17 (**2d10 + 6**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -13654,14 +13652,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) piercing damage. This attack deals a bonus (1d6) damage against Prone targets."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) piercing damage. This attack deals a bonus (1d6) damage against Prone targets."
    },
    {
-    "name": "",
+    "name": "Kick",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) slashing damage, and a target equal to the Emu's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) slashing damage, and a target equal to the Emu's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": [
@@ -13763,9 +13761,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) slashing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -13850,7 +13848,7 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Illumination",
     "type": "text",
     "value": "The Firefly emits (or ends) bright light in a 10-foot radius and dim light 10 feet beyond that."
    }
@@ -13945,7 +13943,6 @@
     "value": "The Fish has advantage on *Stealth* checks to hide while it is underwater."
    }
   ],
-  "actions": [],
   "bonusActions": []
  },
  {
@@ -14028,9 +14025,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
    }
   ],
   "bonusActions": [
@@ -14124,7 +14121,6 @@
     "value": "The Frog can do a long jump of 10 ft. and a standing jump of 5 ft. without a running start."
    }
   ],
-  "actions": [],
   "bonusActions": []
  },
  {
@@ -14218,9 +14214,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 18 (**4d6 + 4**) slashing damage. If it is Grappled by the Alligator Turtle, it takes a bonus 7 (**2d6**) damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 18 (**4d6 + 4**) slashing damage. If it is Grappled by the Alligator Turtle, it takes a bonus 7 (**2d6**) damage."
    }
   ],
   "bonusActions": []
@@ -14305,9 +14301,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) piercing damage."
    }
   ],
   "bonusActions": [
@@ -14408,14 +14404,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 2**) slashing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 2**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -14499,9 +14495,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 4 (**1d4 + 1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (**1d4 + 1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -14595,14 +14591,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Stomp",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Tusk",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -14703,19 +14699,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Bear makes two attacks, using its Bite and its Claw attacks in any combination."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+10 to hit, reach 5 ft., one target. *Hit:* 18 (**2d10 + 7**) piercing damage."
+    "value": "*Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 18 (**2d10 + 7**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+10 to hit, reach 5 ft., one target. *Hit:* 21 (**3d8 + 7**) slashing damage, and any creature equal to the Bear's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 21 (**3d8 + 7**) slashing damage, and any creature equal to the Bear's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": [
@@ -14816,9 +14812,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -14908,14 +14904,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage. This attack deals a bonus (2d6) damage against Prone targets."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage. This attack deals a bonus (2d6) damage against Prone targets."
    },
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) slashing damage, and its speed is reduced by 10 feet until the end of its next turn."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) slashing damage, and its speed is reduced by 10 feet until the end of its next turn."
    }
   ],
   "bonusActions": []
@@ -15016,9 +15012,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -15117,24 +15113,24 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Crocodile makes two attacks, a Bite and a Tail attack. It can replace its Bite attack with Death Roll."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 27 (**4d10 + 5**) piercing damage."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 27 (**4d10 + 5**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Death Roll",
     "type": "text",
     "value": "The Crocodile forces one Grappled creature to make a Strength saving throw (DC 16). It takes (4d10) slashing damage on a failure, and half that on a success."
    },
    {
-    "name": "",
+    "name": "Tail",
     "type": "text",
-    "value": "+5 to hit, reach 10 ft., one target. *Hit:* 14 (**2d8 + 5**) bludgeoning damage, and a target equal to the Crocodile's size (or smaller) is knocked 10 ft. back in a straight line and falls Prone."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit:* 14 (**2d8 + 5**) bludgeoning damage, and a target equal to the Crocodile's size (or smaller) is knocked 10 ft. back in a straight line and falls Prone."
    }
   ],
   "bonusActions": []
@@ -15234,14 +15230,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Eel makes two Shocking Bite attacks."
    },
    {
-    "name": "",
+    "name": "Shocking Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage plus 4 (**1d6**) lighting damage, and the creature cannot take reactions until the start of the Eel's next turn."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage plus 4 (**1d6**) lighting damage, and the creature cannot take reactions until the start of the Eel's next turn."
    }
   ],
   "bonusActions": []
@@ -15331,14 +15327,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Kick",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage, and any creature equal to the Emu's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage, and any creature equal to the Emu's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": [
@@ -15449,14 +15445,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 13 (**3d4 + 5**) piercing damage, and the creature must succeed on a Dexterity saving throw (DC 15) or it is Blinded until the start of the Falcon's next turn."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (**3d4 + 5**) piercing damage, and the creature must succeed on a Dexterity saving throw (DC 15) or it is Blinded until the start of the Falcon's next turn."
    },
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 14 (**3d6 + 3**) slashing damage."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (**3d6 + 3**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -15556,9 +15552,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -15658,9 +15654,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) bludgeoning damage, and a target smaller than the Frog is Grappled (escape DC 12) and Restrained, and the Frog cannot Bite another target."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) bludgeoning damage, and a target smaller than the Frog is Grappled (escape DC 12) and Restrained, and the Frog cannot Bite another target."
    }
   ],
   "bonusActions": []
@@ -15750,9 +15746,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Headbutt",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -15852,22 +15848,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Gorilla uses its Intimidating Show, then it makes two First or Hurl attacks in any combination."
    },
    {
-    "name": "",
+    "name": "Fist",
     "type": "text",
-    "value": "+9 to hit, reach 5 ft., one target. *Hit:* 20 (**3d8 + 6**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 20 (**3d8 + 6**) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Hurl",
     "type": "text",
-    "value": "+9 to hit, range 30/60 ft., one target. *Hit:* 17 (**2d10 + 6**) bludgeoning damage. It throws one Medium (or smaller) object or creature it is holding."
+    "value": "*Ranged Weapon Attack:* +9 to hit, range 30/60 ft., one target. *Hit:* 17 (**2d10 + 6**) bludgeoning damage. It throws one Medium (or smaller) object or creature it is holding."
    },
    {
-    "name": "",
+    "name": "Intimidating Show",
     "type": "text",
     "value": "The Gorilla forces hostile creatures that can see or hear it within 30 ft. to make a Wisdom saving throw (DC 17). On a failed save, they are Frightened of the Gorilla for 1 minute. Creatures repeat this saving throw at the end of their turn, ending the effect on a success."
    },
@@ -15974,14 +15970,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 9 (**2d4 + 4**) piercing damage, and the creature must succeed on a Dexterity saving throw (DC 14) or it is Blinded until the start of the Hawk's next turn."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (**2d4 + 4**) piercing damage, and the creature must succeed on a Dexterity saving throw (DC 14) or it is Blinded until the start of the Hawk's next turn."
    },
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -16081,14 +16077,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 18 (**3d8 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 18 (**3d8 + 4**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 15 (**3d6 + 4**) slashing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 15 (**3d6 + 4**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -16183,9 +16179,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -16286,9 +16282,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Tentacle",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) bludgeoning damage, and if the target is equal to the Octopus' size (or smaller) then it is automatially Grappled (escape DC 13), and the Octopus cannot attack other targets with that tentacle."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) bludgeoning damage, and if the target is equal to the Octopus' size (or smaller) then it is automatially Grappled (escape DC 13), and the Octopus cannot attack other targets with that tentacle."
    }
   ],
   "bonusActions": []
@@ -16384,9 +16380,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 9 (**2d6 + 2**) slashing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 9 (**2d6 + 2**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -16477,9 +16473,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage."
    }
   ],
   "bonusActions": [
@@ -16570,19 +16566,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Scorpion makes three attacks, one with each of its Claws, then one with its Stinger."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) slashing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) slashing damage."
    },
    {
-    "name": "",
+    "name": "Stinger",
     "type": "text",
-    "value": "+5 to hit, reach 10 ft., one target. *Hit:* 9 (**1d10 + 3**) piercing damage. If the target is a creature, it must make a Constitution saving throw (DC 13) or it takes 22 (**4d10**) poison damage and become Poisoned until the start of the Scorpion's next turn."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit:* 9 (**1d10 + 3**) piercing damage. If the target is a creature, it must make a Constitution saving throw (DC 13) or it takes 22 (**4d10**) poison damage and become Poisoned until the start of the Scorpion's next turn."
    }
   ],
   "bonusActions": []
@@ -16693,9 +16689,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+9 to hit, reach 5 ft., one target. *Hit:* 34 (**5d10 + 6**) piercing damage, and a target that is two sizes smaller than it must succeed on a Dexterity saving throw (DC 17) or be Swallowed."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 34 (**5d10 + 6**) piercing damage, and a target that is two sizes smaller than it must succeed on a Dexterity saving throw (DC 17) or be Swallowed."
    }
   ],
   "bonusActions": []
@@ -16794,19 +16790,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Sloth makes two Claw attacks. It can replace one of these with a Fetid Bite attack."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+9 to hit, reach 10 ft., one target. *Hit:* 17 (**2d10 + 6**) bludgeoning damage, and a target smaller than the Sloth is knocked back 10 ft. and must make a Dexterity saving throw (DC 17) or fall Prone."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 17 (**2d10 + 6**) bludgeoning damage, and a target smaller than the Sloth is knocked back 10 ft. and must make a Dexterity saving throw (DC 17) or fall Prone."
    },
    {
-    "name": "",
+    "name": "Fetid Bite",
     "type": "text",
-    "value": "+9 to hit, reach 5 ft., one target. *Hit:* 17 (**2d10 + 6**) piercing damage, and it must succeed on a Constitution saving throw (DC 17) or it is Poisoned until the start of the Sloth's next turn."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 17 (**2d10 + 6**) piercing damage, and it must succeed on a Constitution saving throw (DC 17) or it is Poisoned until the start of the Sloth's next turn."
    }
   ],
   "bonusActions": []
@@ -16901,9 +16897,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -17004,12 +17000,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Web Strand",
     "type": "text",
     "value": "The Spider shoots a thin strand of webbing at a target it can see within 30 ft., forming a continuous line of webbing from where it is standing to the target."
    }
@@ -17101,19 +17097,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Squid makes two attacks using its Bite and Tentacle attack in any combination."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+9 to hit, reach 5 ft., one target. *Hit:* 20 (**3d8 + 6**) piercing damage."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 20 (**3d8 + 6**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Tentacle",
     "type": "text",
-    "value": "+9 to hit, reach 15 ft., one target. *Hit:* 17 (**2d10 + 6**) bludgeoning damage, and if the target is equal to the Squid's size (or smaller) then it can automatically Grapple its target (escape DC 17)."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 15 ft., one target. *Hit:* 17 (**2d10 + 6**) bludgeoning damage, and if the target is equal to the Squid's size (or smaller) then it can automatically Grapple its target (escape DC 17)."
    }
   ],
   "bonusActions": []
@@ -17203,14 +17199,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Antler",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Hooves",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 9 (**2d4 + 4**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (**2d4 + 4**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -17305,9 +17301,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Gore",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -17412,12 +17408,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Toxic Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 8 (1d10 + 2) piercing plus 6 (**1d10**) poison damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 8 (1d10 + 2) piercing plus 6 (**1d10**) poison damage."
    },
    {
-    "name": "",
+    "name": "Sticky Tongue",
     "type": "text",
     "value": "The Toad forces a target it can see within 15 ft. that is at least one size smaller than it to make a Strength saving throw (DC 12). On a failure, the target is pulled to an unoccupied space within 5 ft. of the Toad, then the Toad can use its Toxic Bite attack against it as a bonus action."
    }
@@ -17503,12 +17499,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) slashing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) slashing damage."
    },
    {
-    "name": "",
+    "name": "Withdraw",
     "type": "text",
     "value": "The Tortoise recedes into its shell gaining a +2 bonus to Armor Class and resistance to all damage except for force, psychic, and radiant damage. However, its speed is reduced to 0 and it can't use its Bite attack. As an action, it can emerge and return to normal."
    }
@@ -17610,14 +17606,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 7 (**2d4 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (**2d4 + 2**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 9 (**2d6 + 2**) slashing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 9 (**2d6 + 2**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -17714,14 +17710,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 15 (**2d8 + 6**) bludgeoning damage, and a target equal to the Walrus' size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 15 (**2d8 + 6**) bludgeoning damage, and a target equal to the Walrus' size (or smaller) is knocked Prone."
    },
    {
-    "name": "",
+    "name": "Tusk",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 17 (**3d6 + 6**) piercing damage, and the creature must make a Constitution saving throw (DC 16). On a failure, its Armor Class is reduced by 2 and its speed is halved until the start of the Walrus' next turn."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 17 (**3d6 + 6**) piercing damage, and the creature must make a Constitution saving throw (DC 16). On a failure, its Armor Class is reduced by 2 and its speed is halved until the start of the Walrus' next turn."
    }
   ],
   "bonusActions": []
@@ -17816,9 +17812,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Sting",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -17908,9 +17904,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) piercing damage."
    }
   ],
   "bonusActions": [
@@ -18012,12 +18008,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Web Strand",
     "type": "text",
     "value": "The Spider shoots a thin strand of webbing at a target it can see within 20 ft., forming a continuous line of webbing from where it is standing to the target."
    }
@@ -18114,14 +18110,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Hooves",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 9 (**2d6 + 2**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 9 (**2d6 + 2**) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Neck",
     "type": "text",
-    "value": "+4 to hit, reach 10 ft., one target. *Hit:* 7 (**1d8 + 2**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 10 ft., one target. *Hit:* 7 (**1d8 + 2**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -18211,9 +18207,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Headbutt",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:*  3 (1d4) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:*  3 (1d4) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -18308,22 +18304,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Gorilla makes two attacks with its Fist. It can replace one or both attacks with Hurl."
    },
    {
-    "name": "",
+    "name": "Fist",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 8 (**1d6 + 4**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 8 (**1d6 + 4**) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Hurl",
     "type": "text",
-    "value": "+6 to hit, range 30/60 ft., one target. *Hit:* 9 (**1d8 + 4**) bludgeoning damage. To use this the Gorilla must be Grappling or holding one Small (or smaller) object or creature to use as a projectile."
+    "value": "*Ranged Weapon Attack:* +6 to hit, range 30/60 ft., one target. *Hit:* 9 (**1d8 + 4**) bludgeoning damage. To use this the Gorilla must be Grappling or holding one Small (or smaller) object or creature to use as a projectile."
    },
    {
-    "name": "",
+    "name": "Intimidating Show",
     "type": "text",
     "value": "The Gorilla forces hostile creatures that can see or hear it within 30 ft. to make a Wisdom saving throw (DC 14). On a failure, they are Frightened of the Gorilla for 1 minute. They repeat the saving throw at the end of their turn, ending the effect on a success."
    },
@@ -18430,19 +18426,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Bear makes two attacks, using its Bite and its Claw attacks in any combination."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 9 (**1d8 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (**1d8 + 4**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage, and any creature equal to the Bear's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage, and any creature equal to the Bear's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": [
@@ -18543,7 +18539,6 @@
     "value": "The Hare can do a long jump of 10 ft. and a standing jump of 5 ft. without a running start."
    }
   ],
-  "actions": [],
   "bonusActions": [
    {
     "name": "",
@@ -18637,9 +18632,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) slashing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -18734,9 +18729,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -18831,14 +18826,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Hippopotamus makes two Bite attacks."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) piercing damage, and the creature must make a Constitution saving throw (DC 14). On a failure, its Armor Class is reduced by 2 and its speed is halved until the start of the Hippopotamus's next turn."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) piercing damage, and the creature must make a Constitution saving throw (DC 14). On a failure, its Armor Class is reduced by 2 and its speed is halved until the start of the Hippopotamus's next turn."
    }
   ],
   "bonusActions": []
@@ -18922,9 +18917,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Hooves",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 9 (**2d4 + 4**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (**2d4 + 4**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -19020,9 +19015,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) piercing damage."
    }
   ],
   "bonusActions": [
@@ -19123,9 +19118,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -19226,9 +19221,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 22 (**5d6 + 4**) piercing damage, and the creature must make a Constitution saving throw (DC 14). On a failure, its Armor Class is reduced by 2 and its speed is halved until the start of the Whale's next turn."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 22 (**5d6 + 4**) piercing damage, and the creature must make a Constitution saving throw (DC 14). On a failure, its Armor Class is reduced by 2 and its speed is halved until the start of the Whale's next turn."
    }
   ],
   "bonusActions": []
@@ -19333,12 +19328,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Strike",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 9 (**1d8 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (**1d8 + 4**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Hypnotic Gaze",
     "type": "text",
     "value": "The King Cobra rears up and forces one creature that can see it within 20 ft. to make a Wisdom saving throw (DC 14). On a failure, the target is Charmed and Stunned until the start of the King Cobra's next turn. This effect ends early if the creature is attacked or forced to make an ability check or saving throw."
    },
@@ -19436,14 +19431,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing + 4 (**1d6**) poison damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing + 4 (**1d6**) poison damage."
    },
    {
-    "name": "",
+    "name": "Tail",
     "type": "text",
-    "value": "+4 to hit, reach 10 ft., one target. *Hit:* 7 (**1d8 + 2**) bludgeoning damage, and a target equal to the Komodo's size (or smaller) falls Prone."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 10 ft., one target. *Hit:* 7 (**1d8 + 2**) bludgeoning damage, and a target equal to the Komodo's size (or smaller) falls Prone."
    }
   ],
   "bonusActions": []
@@ -19544,17 +19539,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+5 to hit, reach 10 ft., one target. *Hit:* 7 (**1d6 + 3**) slashing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit:* 7 (**1d6 + 3**) slashing damage."
    },
    {
-    "name": "",
+    "name": "Roar",
     "type": "text",
     "value": "The Lion forces all hostile creatures that can hear it within 30 ft. to make a Wisdom saving throw (DC 13). On a failed save, creatures are Frightened of the Lion for 1 minute. Creatures repeat this saving throw at the end of their turns, ending the effect on a success."
    },
@@ -19656,9 +19651,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -19748,14 +19743,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 4 (**1d4 + 1**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (**1d4 + 1**) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Spit",
     "type": "text",
-    "value": "+2 to hit, range 15/30 ft., one target. *Hit:* The creature has disadvantage on attack rolls against all targets other than the Llama until the beginning of the Llama's next turn."
+    "value": "*Ranged Weapon Attack:* +2 to hit, range 15/30 ft., one target. *Hit:* The creature has disadvantage on attack rolls against all targets other than the Llama until the beginning of the Llama's next turn."
    }
   ],
   "bonusActions": []
@@ -19855,14 +19850,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Gore",
     "type": "text",
-    "value": "+10 to hit, reach 5 ft., one target. *Hit:* 25 (**4d8 + 7**) piercing damage."
+    "value": "*Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 25 (**4d8 + 7**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Stomp",
     "type": "text",
-    "value": "+10 to hit, reach 5 ft., one target. *Hit:* 29 (**4d10 + 7**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +10 to hit, reach 5 ft., one target. *Hit:* 29 (**4d10 + 7**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -19957,9 +19952,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -20049,9 +20044,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Hooves",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 4 (**1d4 + 1**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (**1d4 + 1**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -20152,9 +20147,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Tentacle",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) bludgeoning damage. If the target is equal to its size or smaller it is Grappled (escape DC 12) and the Octopus can only attack it with this Tentacle."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) bludgeoning damage. If the target is equal to its size or smaller it is Grappled (escape DC 12) and the Octopus can only attack it with this Tentacle."
    }
   ],
   "bonusActions": []
@@ -20245,9 +20240,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) slashing damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -20336,9 +20331,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Gore",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d6 + 3**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -20434,14 +20429,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) slashing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -20547,19 +20542,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Bear makes two attacks, using its Bite and its Claw attacks in any combination."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 9 (**1d8 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 9 (**1d8 + 4**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage, and any creature equal to the Bear's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) slashing damage, and any creature equal to the Bear's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": [
@@ -20650,9 +20645,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) slashing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -20742,9 +20737,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -20839,14 +20834,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Gore",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 14 (**2d8 + 5**) piercing damage."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 14 (**2d8 + 5**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Stomp",
     "type": "text",
-    "value": "+7 to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -20933,9 +20928,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
    }
   ],
   "bonusActions": [
@@ -21042,22 +21037,22 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Eagle uses its Screech (if available), then makes two Beak or Talons attacks in any combination."
    },
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+9 to hit, reach 5 ft., one target. *Hit:* 15 (**2d8 + 6**) piercing damage, and the creature must succeed on a Dexterity saving throw (DC 17) or it is Blinded until the start of the Eagle's next turn."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 15 (**2d8 + 6**) piercing damage, and the creature must succeed on a Dexterity saving throw (DC 17) or it is Blinded until the start of the Eagle's next turn."
    },
    {
-    "name": "",
+    "name": "Talons",
     "type": "text",
-    "value": "+9 to hit, reach 5 ft., one target. *Hit:* 17 (**2d10 + 6**) slashing damage, and the target has disadvantage on attack rolls against all targets other than the Eagle until the start of the Eagle's next turn."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 17 (**2d10 + 6**) slashing damage, and the target has disadvantage on attack rolls against all targets other than the Eagle until the start of the Eagle's next turn."
    },
    {
-    "name": "",
+    "name": "Screech {@recharge 4}",
     "type": "text",
     "value": "The Eagle forces hostile targets that can see or hear it within 120 ft. to make a Wisdom saving throw (DC 17). On a failure, they are Frightened of the Eagle for 1 minute. They repeat the saving throw at the end of their turn, ending the effect on a success."
    },
@@ -21170,14 +21165,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) slashing damage."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (**2d8 + 4**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -21262,14 +21257,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Stinger",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage. On hit, the target must make a Constitution saving throw (DC 9) or it takes **1d6** poison damage and is Poisoned until its next turn ends."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage. On hit, the target must make a Constitution saving throw (DC 9) or it takes **1d6** poison damage and is Poisoned until its next turn ends."
    }
   ],
   "bonusActions": []
@@ -21380,19 +21375,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Whale makes two attacks using its Bite and Tail attacks in any combination."
    },
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+11 to hit, reach 5 ft., one target. *Hit:* 22 (**3d8 + 8**) piercing damage, and if the target is two sizes smaller than the Whale, it must succeed on a Dexterity saving throw (DC 19) or it is Swallowed."
+    "value": "*Melee Weapon Attack:* +11 to hit, reach 5 ft., one target. *Hit:* 22 (**3d8 + 8**) piercing damage, and if the target is two sizes smaller than the Whale, it must succeed on a Dexterity saving throw (DC 19) or it is Swallowed."
    },
    {
-    "name": "",
+    "name": "Tail",
     "type": "text",
-    "value": "+11 to hit, reach 15 ft., one target. *Hit:* 19 (**3d6 + 8**) bludgeoning damage, and a target equal to the Whale's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +11 to hit, reach 15 ft., one target. *Hit:* 19 (**3d6 + 8**) bludgeoning damage, and a target equal to the Whale's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": []
@@ -21488,12 +21483,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Web Strand",
     "type": "text",
     "value": "The Spider shoots a thin strand of webbing at a target it can see within 10 ft., forming a continuous line of webbing from where it is standing to the target."
    }
@@ -21585,14 +21580,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Antler",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Hooves",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**2d4 + 3**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -21687,19 +21682,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The Terror Bird makes two attacks, using its Beak and Kick in any combination."
    },
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 15 (**2d10 + 5**) slashing damage."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 15 (**2d10 + 5**) slashing damage."
    },
    {
-    "name": "",
+    "name": "Kick",
     "type": "text",
-    "value": "+8 to hit, reach 5 ft., one target. *Hit:* 14 (**2d8 + 5**) slashing damage, and a target equal to the Terror Bird's size (or smaller) is knocked Prone."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 14 (**2d8 + 5**) slashing damage, and a target equal to the Terror Bird's size (or smaller) is knocked Prone."
    }
   ],
   "bonusActions": [
@@ -21806,14 +21801,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 9 (**1d10 + 3**) piercing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 9 (**1d10 + 3**) piercing damage."
    },
    {
-    "name": "",
+    "name": "Claw",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) slashing damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 3**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -21917,14 +21912,14 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Strike",
     "type": "text",
-    "value": "+9 to hit, reach 10 ft., one target. *Hit:* 16 (**2d10 + 5**) piercing damage. This attack has advantage against creatures Grappled by the Titanoboa."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 16 (**2d10 + 5**) piercing damage. This attack has advantage against creatures Grappled by the Titanoboa."
    },
    {
-    "name": "",
+    "name": "Constrict",
     "type": "text",
-    "value": "+9 to hit, reach 5 ft., one target. *Hit:* 18 (**2d12 + 5**) bludgeoning damage and the target is Grappled (escape DC 17) and Restrained. If a creature ends its turn Grappled this way, it suffers one level of Exhaustion."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 18 (**2d12 + 5**) bludgeoning damage and the target is Grappled (escape DC 17) and Restrained. If a creature ends its turn Grappled this way, it suffers one level of Exhaustion."
    }
   ],
   "bonusActions": []
@@ -22008,12 +22003,12 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) slashing damage."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 (**1**) slashing damage."
    },
    {
-    "name": "",
+    "name": "Withdraw",
     "type": "text",
     "value": "The Tortoise recedes into its shell gaining a +2 bonus to its Armor Class but its speed becomes 0. As an action, it can emerge and return to normal."
    }
@@ -22115,9 +22110,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Strike",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -22207,9 +22202,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Beak",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 3 (**1d4**) piercing damage."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 3 (**1d4**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -22299,9 +22294,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Tusk",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 7 (**2d4 + 2**) piercing damage, and if the target is smaller than the Walrus, its speed is halved until the end of its next turn."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (**2d4 + 2**) piercing damage, and if the target is smaller than the Walrus, its speed is halved until the end of its next turn."
    }
   ],
   "bonusActions": []
@@ -22391,9 +22386,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+2 to hit, reach 5 ft., one target. *Hit:* 4 (**1d6**) piercing damage."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 4 (**1d6**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -22488,9 +22483,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+4 to hit, reach 5 ft., one target. *Hit:* 7 (**2d4 + 2**) piercing damage."
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 7 (**2d4 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -22583,19 +22578,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+3 to hit, reach 5 ft., one target. *Hit:*  4 (1d4 + 1) bludgeoning damage."
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:*  4 (1d4 + 1) bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Laser",
     "type": "text",
-    "value": "+6 to hit, range 90/120 ft., one target. *Hit:* 25 (**4d10 + 5**) radiant damage."
+    "value": "*Ranged Spell Attack:* +6 to hit, range 90/120 ft., one target. *Hit:* 25 (**4d10 + 5**) radiant damage."
    },
    {
-    "name": "",
+    "name": "Spit",
     "type": "text",
-    "value": "+3 to hit, range 15/30 ft., one target. *Hit:* The creature has disadvantage on attack rolls against all targets other than the Llama until the beginning of the Llama's next turn."
+    "value": "*Ranged Weapon Attack:* +3 to hit, range 15/30 ft., one target. *Hit:* The creature has disadvantage on attack rolls against all targets other than the Llama until the beginning of the Llama's next turn."
    }
   ],
   "bonusActions": []
@@ -22697,9 +22692,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Fetid Bite",
     "type": "text",
-    "value": "+6 to hit, reach 5 ft., one target. *Hit:*  11 (2d6 + 4) piercing damage, and the target is Poisoned until the start of the R.O.U.S.'s next turn."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:*  11 (2d6 + 4) piercing damage, and the target is Poisoned until the start of the R.O.U.S.'s next turn."
    }
   ],
   "bonusActions": [
@@ -22801,7 +22796,7 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
     "value": "The Amorphous Creature makes one"
    },
@@ -22816,7 +22811,7 @@
     "value": "bludgeoning damage on a hit."
    },
    {
-    "name": "",
+    "name": "Resume Form",
     "type": "text",
     "value": "The Amorphous Creature ends the"
    },
@@ -22910,9 +22905,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam.",
     "type": "text",
-    "value": "+4 to hit, reach 5ft.,"
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5ft.,"
    },
    {
     "name": "",
@@ -23007,9 +23002,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Claws.",
     "type": "text",
-    "value": "+4 to hit, reach 5ft.,"
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5ft.,"
    },
    {
     "name": "",
@@ -23112,9 +23107,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft.,"
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft.,"
    },
    {
     "name": "",
@@ -23127,7 +23122,7 @@
     "value": "(2d6) fire damage."
    },
    {
-    "name": "",
+    "name": "Fire Breath {@recharge 5}",
     "type": "text",
     "value": "The bat exhales fire in a"
    },
@@ -23227,7 +23222,6 @@
    }
   },
   "traits": [],
-  "actions": [],
   "bonusActions": []
  },
  {
@@ -23305,19 +23299,19 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The skeletal guard makes two attacks, either with its longsword or its longbow."
    },
    {
-    "name": "",
+    "name": "Longsword",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 4**) slashing damage, or 9 (**1d10 + 4**) slashing damage if used with both hands, plus 7 (**2d6**) necrotic damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d8 + 4**) slashing damage, or 9 (**1d10 + 4**) slashing damage if used with both hands, plus 7 (**2d6**) necrotic damage."
    },
    {
-    "name": "",
+    "name": "Longbow",
     "type": "text",
-    "value": "+5 to hit, range 150/600 ft., one target. *Hit:* 8 (**1d8 + 4**) piercing damage, plus 7 (**2d6**) necrotic damage."
+    "value": "*Ranged Weapon Attack:* +5 to hit, range 150/600 ft., one target. *Hit:* 8 (**1d8 + 4**) piercing damage, plus 7 (**2d6**) necrotic damage."
    }
   ],
   "bonusActions": []
@@ -23395,9 +23389,9 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+your Spell Attack Modifier to hit, reach 5 ft., one target. Hit: (2d4 +PB) bludgeoning, piercing, or slashing damage (appropriate to its shape)."
+    "value": "*Melee Weapon Attack:* your Spell Attack Modifier to hit, reach 5 ft., one target. Hit: (2d4 +PB) bludgeoning, piercing, or slashing damage (appropriate to its shape)."
    }
   ],
   "bonusActions": []
@@ -23481,9 +23475,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+Melee Weapon Attack: your Spell Attack Modifier to hit, reach 5 ft., one target. Hit: (2d4 +PB) bludgeoning or slashing damage, and a target equal to the Awakened Plant's size or smaller is Grappled (Spell save DC to end)."
+    "value": "*Melee Weapon Attack:* Melee Weapon Attack: your Spell Attack Modifier to hit, reach 5 ft., one target. Hit: (2d4 +PB) bludgeoning or slashing damage, and a target equal to the Awakened Plant's size or smaller is Grappled (Spell save DC to end)."
    }
   ],
   "bonusActions": []
@@ -23568,9 +23562,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+Melee Weapon Attack: your Spell Attack Mod to hit, reach 5 ft., one target. Hit: (2d6 +PB) bludgeoning, piercing, or slashing damage plus (2d6) force damage."
+    "value": "*Melee Weapon Attack:* Melee Weapon Attack: your Spell Attack Mod to hit, reach 5 ft., one target. Hit: (2d6 +PB) bludgeoning, piercing, or slashing damage plus (2d6) force damage."
    }
   ],
   "bonusActions": []
@@ -23655,9 +23649,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Slam",
     "type": "text",
-    "value": "+Melee Weapon Attack: your Spell Attack Mod to hit, reach 5 ft., one target. Hit: (1d4 +PB) piercing damage."
+    "value": "*Melee Weapon Attack:* Melee Weapon Attack: your Spell Attack Mod to hit, reach 5 ft., one target. Hit: (1d4 +PB) piercing damage."
    }
   ],
   "bonusActions": []
@@ -23745,19 +23739,24 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack",
     "type": "text",
     "value": "The fiend can make two attacks, only one of which can be Abyssal Bile."
    },
    {
-    "name": "",
+    "name": "Claws",
     "type": "text",
-    "value": "+5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3 slashing**) damage."
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3 slashing**) damage."
+   },
+   {
+    "name": "Abyssal Bile",
+    "type": "text",
+    "value": "The fiend sprays abyssal bile at one creature within 10 feet of it. The target must make a Charisma saving throw. On a failure, it rolls 1d4 and is afflicted by a condition according to the result."
    },
    {
     "name": "",
     "type": "text",
-    "value": "The fiend sprays abyssal bile at one creature within 10 feet of it. The target must make a Charisma saving throw. On a failure, it rolls 1d4 and is afflicted by a condition according to the result."
+    "value": "The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. Once a creature successfully saves against this ability, it is immune for 24 hours."
    },
    {
     "name": "",
@@ -23788,11 +23787,6 @@
       ]
      ]
     }
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. Once a creature successfully saves against this ability, it is immune for 24 hours."
    }
   ],
   "bonusActions": []
@@ -23873,14 +23867,14 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack.",
     "type": "text",
     "value": "The puppet makes two Skeletal Slash attacks."
    },
    {
-    "name": "",
+    "name": "Skeletal Slash.",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target. *Hit:* 4 **1d6 + 1 slashing** damage."
+    "value": "*Melee Weapon Attack:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* 4 **1d6 + 1 slashing** damage."
    }
   ],
   "bonusActions": []
@@ -23972,9 +23966,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Body Bash.",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **2d4 + 2** bludgeoning damage."
+    "value": "*Melee Weapon Attack:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **2d4 + 2** bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -24074,19 +24068,19 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack.",
     "type": "text",
     "value": "The animal makes a number of attacks equal to half this spell's level (rounded down)."
    },
    {
-    "name": "",
+    "name": "Maul (Earth and Sea Only).",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d6 + 3** + the spell's level piercing damage."
+    "value": "*Melee Weapon Attack:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d6 + 3** + the spell's level piercing damage."
    },
    {
-    "name": "",
+    "name": "Talons (Sky Only).",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d4 + 1** + the spell's level slashing damage."
+    "value": "*Melee Weapon Attack:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d4 + 1** + the spell's level slashing damage."
    }
   ],
   "bonusActions": []
@@ -24177,17 +24171,17 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack.",
     "type": "text",
     "value": "The golem makes a number of attacks equal to half this spell's level (rounded down). Only one can be a Poisonous Gas attack, if available."
    },
    {
-    "name": "",
+    "name": "Slam.",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d8 + 4** + the spell's level bludgeoning damage."
+    "value": "*Melee Weapon Attack:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d8 + 4** + the spell's level bludgeoning damage."
    },
    {
-    "name": "",
+    "name": "Poisonous Gas (Iron Only).",
     "type": "text",
     "value": "All other creatures within 5 feet must make a Constitution saving throw against your spell save DC. On a failure, a creature takes **1d12** + the spell's level poison damage and is poisoned until the end of its next turn."
    }
@@ -24285,24 +24279,24 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Multiattack.",
     "type": "text",
     "value": "The spirit makes a number of attacks equal to half this spell's level (rounded down)."
    },
    {
-    "name": "",
+    "name": "Deathly Chill (Ethereal Only).",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d4 + 2** + the spell's level necrotic damage."
+    "value": "*Melee Weapon Attack:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d4 + 2** + the spell's level necrotic damage."
    },
    {
-    "name": "",
+    "name": "Bone Arrow (Bone Only).",
     "type": "text",
-    "value": "+your spell attack modifier to hit, range 80/320, one target. *Hit:* **1d6 + 2** + the spell's level piercing damage."
+    "value": "*Ranged Weapon Attack:* your spell attack modifier to hit, range 80/320, one target. *Hit:* **1d6 + 2** + the spell's level piercing damage."
    },
    {
-    "name": "",
+    "name": "Vile Claws (Ghoulish Only).",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d6 + 3** + the spell's level slashing damage. The target must make a Constitution saving throw against your spell save DC or become poisoned until the end of its next turn. If the target is already poisoned, it is paralyzed instead."
+    "value": "*Melee Weapon Attack:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d6 + 3** + the spell's level slashing damage. The target must make a Constitution saving throw against your spell save DC or become poisoned until the end of its next turn. If the target is already poisoned, it is paralyzed instead."
    }
   ],
   "bonusActions": []
@@ -24393,9 +24387,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Force-Empowered Slam",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target you can see. *Hit:* **1d10** plus your Charisma modifier Force damage"
+    "value": "*Melee Weapon Attack Roll:* your spell attack modifier to hit, reach 5 ft., one target you can see. *Hit:* **1d10** plus your Charisma modifier Force damage"
    }
   ],
   "bonusActions": []
@@ -24475,12 +24469,12 @@
   "traits": [],
   "actions": [
    {
-    "name": "",
+    "name": "Flame Seed",
     "type": "text",
-    "value": "+your spell attack modifier to hit, range 60 ft., one target you can see. *Hit:* **1d6** + your Wisdom modifier Fire damage"
+    "value": "*Ranged Attack Roll:* your spell attack modifier to hit, range 60 ft., one target you can see. *Hit:* **1d6** + your Wisdom modifier Fire damage"
    },
    {
-    "name": "",
+    "name": "Fiery Teleportation",
     "type": "text",
     "value": "The Spirit and each willing creature of your choice within 5 feet of it teleport up to 15 feet to unoccupied spaces you can see. Then each creature within 5 feet of the space that the spirit left must succeed on a Dexterity saving throw against your spell save DC or take **1d6** + your Wisdom modifier Fire damage."
    }
@@ -24568,9 +24562,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Bite",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d6** plus your Wisdom modifier Piercing damage"
+    "value": "*Melee Weapon Attack Roll:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d6** plus your Wisdom modifier Piercing damage"
    }
   ],
   "bonusActions": []
@@ -24657,9 +24651,9 @@
   ],
   "actions": [
    {
-    "name": "",
+    "name": "Accursed Touch",
     "type": "text",
-    "value": "+your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d10** plus your Charisma modifier Necrotic damage, and the target can't regain Hit Points until the end of the Accursed Specter's next turn."
+    "value": "*Melee Spell Attack Roll:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d10** plus your Charisma modifier Necrotic damage, and the target can't regain Hit Points until the end of the Accursed Specter's next turn."
    }
   ],
   "bonusActions": []
