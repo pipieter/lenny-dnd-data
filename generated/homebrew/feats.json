@@ -15,7 +15,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "When a feature such as Bind or the Hunter's __Focus__ is interrupted as a result of taking damage, you can make a DC 10 Constitution saving throw. If you succeed, the damage you took does not interrupt any Weaver features."
+    "value": "When a Weaver feature (such as Bind, Pin Badge, or the Hunter's __Focus__) is interrupted as a result of taking damage, you can make a DC 10 Constitution saving throw. If you succeed, the damage you took does not interrupt any Weaver features."
    },
    {
     "name": "",
@@ -59,16 +59,35 @@
      "type": "list",
      "caption": "",
      "entries": [
-      "**Weapon Proficiency**: You gain proficiency in one of the following:",
-      {
-       "type": "list",
-       "caption": "",
-       "entries": [
-        "simple melee weapons",
-        "simple ranged and simple finesse weapons"
-       ]
-      },
-      "**Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.",
+      "**Weapon Proficiency**: You gain proficiency in two weapons",
+      "**Weapon Mastery**: Choose a class. Gain 2 Masteries from that class's mastery list. Whenever you gain a level you can swap one of these masteries with a different mastery from the same list.",
+      "**Repeatable**: You can take this feat more than once."
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "Styled Fighter",
+  "source": "GaldeveerTanksandFlanks",
+  "url": "https://5e.tools/feats.html#styled%20fighter_galdeveertanksandflanks",
+  "type": "Origin Feat",
+  "prerequisite": "13 Strength",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You learn a fighting style:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fighting Style**: You gain a fighting style feat",
       "**Repeatable**: You can take this feat more than once."
      ]
     }
@@ -286,9 +305,9 @@
      "type": "list",
      "caption": "",
      "entries": [
-      "**Ignore Loading**: You ignore the Loading property of the Hand Crossbow, Heavy Crossbow, and Crossbow (all called crossbows elsewhere in this feat).",
-      "**Firing in Melee**: Being within reach of an enemy doesn't impose Disadvantage on your Attack Rolls with crossbows.",
-      "**Dual Wielding**: When you make the extra attack of the Light weapon property, you can add your Ability Modifier to the damage if that attack is with a crossbow and you aren't already adding that modifier to the damage"
+      "**Ignore Loading**: You ignore the Loading property.",
+      "**Firing in Melee**: Being within reach of an enemy doesn't impose Disadvantage on your Attack Rolls with crossbows, arbelests or hand crossbows.",
+      "**Recoil**: Whenever you make an attack with a crossbow, arbelests or hand crossbow you are pushed 5ft in the opposite direction of the attack."
      ]
     }
    }
@@ -382,8 +401,8 @@
      "type": "list",
      "caption": "",
      "entries": [
-      "**Proficiency**: You gain proficiency in simple weapons and martial weapons.",
-      "**Weapon Mastery**: Gain 2 Masteries. Whenever you gain a level you can swap one of these masteries with a different mastery.",
+      "**Proficiency**: You gain proficiency in three weapons.",
+      "**Weapon Mastery**: Choose a class. Gain 5 Masteries from that list. Whenever you take a long rest you canchange one of those masteries to a different mastery on the same list.",
       "**Repeatable**: You can take this feat more than once."
      ]
     }
@@ -614,9 +633,9 @@
   ]
  },
  {
-  "name": "Muscician",
+  "name": "Musician",
   "source": "GaldeveerTanksandFlanks",
-  "url": "https://5e.tools/feats.html#muscician_galdeveertanksandflanks",
+  "url": "https://5e.tools/feats.html#musician_galdeveertanksandflanks",
   "type": "Origin Feat",
   "prerequisite": null,
   "abilityIncrease": null,
@@ -681,7 +700,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You can use a shield as a d6 martial bludgeoning weapon with the guard property. If you have training with the shield then you're proficient in it as a weapon. This does not allow you to draw or stow the shield when you would normally draw or stow a weapon. Gain a weapon mastery from any class that can be used with this weapon."
+    "value": "You can use a shield as a d6 bludgeoning weapon with the guard property. If you have training with the shield then you're proficient in it as a weapon. This does not allow you to draw or stow the shield when you would normally draw or stow a weapon. Gain a weapon mastery from any class that can be used with this weapon."
    }
   ]
  },
@@ -841,7 +860,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You have +1 ac while you are wearing medium, composite armor or heavy armor."
+    "value": "You have +1 ac while you are wearing medium or composite armor."
    }
   ]
  },
@@ -891,9 +910,9 @@
   ]
  },
  {
-  "name": "Two Weapon Fighting",
+  "name": "Two-Weapon Fighting",
   "source": "GaldeveerTanksandFlanks",
-  "url": "https://5e.tools/feats.html#two%20weapon%20fighting_galdeveertanksandflanks",
+  "url": "https://5e.tools/feats.html#two-weapon%20fighting_galdeveertanksandflanks",
   "type": "Fighting Style Feat",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
@@ -906,9 +925,9 @@
   ]
  },
  {
-  "name": "Feather Grip",
+  "name": "Dual Wielding",
   "source": "GaldeveerTanksandFlanks",
-  "url": "https://5e.tools/feats.html#feather%20grip_galdeveertanksandflanks",
+  "url": "https://5e.tools/feats.html#dual%20wielding_galdeveertanksandflanks",
   "type": "Fighting Style Feat",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
@@ -1346,8 +1365,7 @@
      "caption": "",
      "entries": [
       "**Concealed Weapon**: Attacking with a light weapon does not reveal you from hiding.",
-      "**Offhand Punch**: Your unarmed strikes count as light weapons.",
-      "**Bleed**: Once when you hit with a light weapon you can make the target bleed. If you do, they take damage equal to your proficiency bonus at the end of each of their turns until they use their action to stop it. You regain this ability after a long rest.",
+      "**Bleed**: Once when you hit with a light weapon you can make the target bleed. If you do, they take damage equal to your proficiency bonus at the end of each of their turns until they use their action to stop it. You regain this ability after a short rest.",
       "**Repeatable**: You can take this feat more than once."
      ]
     }
@@ -7373,6 +7391,34 @@
     "name": "Gaining a Faction Feat",
     "type": "text",
     "value": "The GM can award you a Faction feat for joining a faction or completing a quest for one. If allegiance to a faction is important to your backstory, the GM can also replace the feat granted by your background with an appropriate Faction feat."
+   }
+  ]
+ },
+ {
+  "name": "Blaster Master",
+  "source": "ValdaSpire24Extras",
+  "url": "https://5e.tools/feats.html#blaster%20master_valdaspire24extras",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and 13 Dexterity",
+  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Blaster Roulette**: If you roll the same number of two damage dice for a weapon with the Firearm property, you deal bonus damage equal to that number. You can only add this bonus damage once per turn.",
+      "**Ignore Cooldown**: You ignore the Cooldown property of weapons.",
+      "**Run and Gun**: When you take the Dash or Disengage action, you can make a ranged attack using a weapon as a Bonus Action."
+     ]
+    }
    }
   ]
  },
