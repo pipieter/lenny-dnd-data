@@ -198,6 +198,58 @@
   ]
  },
  {
+  "name": "Accelerate/Decelerate",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "casting_time": "1 reaction, which you take when you see an attack roll hit a creature within 60 feet of yourself",
+  "range": "60 feet",
+  "components": "V, S, M (a drop of oil or molasses)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#accelerate%2Fdecelerate_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell accelerates or decelerates an attack (see the chosen effect below) the instant before it strikes, lessening or multiplying its force."
+   },
+   {
+    "name": "Accelerate",
+    "type": "text",
+    "value": "The target takes an extra **2d6** damage from the attack. This extra damage is the same type dealt by the triggering attack."
+   },
+   {
+    "name": "Decelerate",
+    "type": "text",
+    "value": "Reduce the damage the target takes by 2d6 (to a minimum of 0 damage)."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The extra damage or reduction in damage increases by 1d6 for each slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Accursed Act",
   "source": "ValdaSpire24",
   "level": "Level 1",
@@ -223,7 +275,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -741,7 +793,7 @@
   "classes": [
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Ranger",
@@ -1829,7 +1881,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -1988,7 +2040,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -2076,11 +2128,11 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -2088,7 +2140,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -4494,15 +4546,15 @@
   "classes": [
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -5710,15 +5762,15 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Ranger",
@@ -5730,7 +5782,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -5995,7 +6047,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -6952,7 +7004,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -7408,7 +7460,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -7530,6 +7582,10 @@
    {
     "name": "Bard",
     "source": "XPHB"
+   },
+   {
+    "name": "Warmage",
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -8024,7 +8080,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -8036,11 +8092,11 @@
    },
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -8707,7 +8763,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Paladin",
@@ -8719,7 +8775,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -9345,7 +9401,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -9357,7 +9413,7 @@
    },
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -9707,6 +9763,40 @@
   ]
  },
  {
+  "name": "Conjure Cannonball",
+  "source": "ValdaSpire24",
+  "level": "Level 3",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "600 feet",
+  "components": "V, S, M (a small replica cannon)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#conjure%20cannonball_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You summon a cannonball, mid-flight and at full velocity, which explodes on impact. Make a ranged spell attack roll against a target you can see within range. On a hit, the target takes **5d10** Bludgeoning damage and an explosion extends from it in a 5-foot Emanation. Each creature other than the target within the Emanation makes a Dexterity saving throw, taking half as much damage as the target on a failed save."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d10 for each slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Conjure Celestial (Alternate)",
   "source": "llspell",
   "level": "Level 5",
@@ -9788,7 +9878,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Paladin",
@@ -10368,7 +10458,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -11310,7 +11400,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -11345,7 +11435,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -12355,7 +12445,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -12367,11 +12457,11 @@
    },
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -12440,7 +12530,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -12465,7 +12555,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -12490,7 +12580,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -12529,11 +12619,11 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -12562,7 +12652,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -12711,11 +12801,11 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Paladin",
@@ -12727,7 +12817,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -13197,7 +13287,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A 10-foot-radius Sphere of necromantic fog appears centered on a point you can see within range. The fog lasts for the duration or until strong wind (such as the one created by Gust of Wind) disperses it, ending the spell. Its area is Heavily Obscured."
+    "value": "A 10-foot-radius Sphere of necromantic fog appears centered on a point you can see within range. The fog lasts for the duration or until strong wind (such as the one created by __Gust of Wind__) disperses it, ending the spell. Its area is Heavily Obscured."
    },
    {
     "name": "",
@@ -13218,7 +13308,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -13253,7 +13343,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -13890,6 +13980,44 @@
   ]
  },
  {
+  "name": "Defenestration",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#defenestration_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A wave of force erupts from your open hand, hurling a creature you can see within range through a window. The target makes a Strength saving throw. On a failure, the target is pushed up to 20 feet and thrown through a window of your choice. If there is no window within 20 feet of the target, it is instead pushed up to 20 feet in a direction of your choice and thrown through a window of arcane force, which materializes behind the creature and vanishes after it shatters. The target takes **4d6** Slashing damage and has the Prone condition when it is thrown through a window. On a successful save, the target is instead only pushed 10 feet and takes no damage."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d6 and the distance the target is pushed on a success or failure increases by 5 feet for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Deflect",
   "source": "SpellsThatDontSuck",
   "level": "Level 1",
@@ -14006,6 +14134,39 @@
   ]
  },
  {
+  "name": "Delay",
+  "source": "ValdaSpire24",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (an octagonal sign)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#delay_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You briefly slow time for a creature of your choice that you can see within range. The target must succeed on a Wisdom saving throw or be moved to last place in the Initiative order from the start of the next round onwards."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Delerium Meteor Swarm",
   "source": "CommunityDrakkenheim",
   "level": "Level 9",
@@ -14112,7 +14273,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -14719,11 +14880,11 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -15369,7 +15530,7 @@
   ]
  },
  {
-  "name": "Divine Blade",
+  "name": "Divine Edge",
   "source": "GaldeveerTanksandFlanks",
   "level": "Cantrip",
   "school": "Evocation",
@@ -15377,7 +15538,7 @@
   "range": "Self",
   "components": "S, M",
   "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#divine%20blade_galdeveertanksandflanks",
+  "url": "https://5e.tools/spells.html#divine%20edge_galdeveertanksandflanks",
   "image": null,
   "description": [
    {
@@ -15388,7 +15549,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You brandish the weapon used in the spell's casting and make a melee attack with it. On a hit, the target suffers the weapon attack's normal effects. You can use any of the chosen weapon masteries on this attack."
+    "value": "You brandish the weapon used in the spell's casting and make an attack with it. On a hit, the target suffers the weapon attack's normal effects. You can use any of the chosen weapon masteries on this attack."
    },
    {
     "name": "Cantrip Upgrade",
@@ -15671,7 +15832,7 @@
   "classes": [
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -16757,7 +16918,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Warlock",
@@ -16765,7 +16926,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -16954,7 +17115,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -17066,7 +17227,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -18056,11 +18217,11 @@
   "classes": [
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -18072,7 +18233,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -18321,7 +18482,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -18509,11 +18670,11 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -18728,7 +18889,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -19959,6 +20120,44 @@
   ]
  },
  {
+  "name": "Finger Guns",
+  "source": "ValdaSpire24",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "casting_time": "Bonus action",
+  "range": "Self",
+  "components": "V, S",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#finger%20guns_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You extend your forefinger and thumb, a dangerous gesture mimicking a gun. For the duration, your hand counts as a Simple Ranged weapon with a range of 60/240 feet and the __Slow__ mastery property. You can use your spellcasting ability instead of Dexterity for the attack rolls of this weapon. On a hit, the weapon deals **2d6** Force damage and doesn't add your ability modifier to damage."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The weapon's normal range increases by 30 feet and its long range increases by 120 feet when you reach levels 5 (90/360 feet), 11 (120/480 feet), and 17 (150/600 feet)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Fins to Feet",
   "source": "SpellsofAntiquityCompleteEdition",
   "level": "Level 2",
@@ -20652,7 +20851,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -20727,7 +20926,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -20739,7 +20938,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -20778,7 +20977,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -21061,7 +21260,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -21161,7 +21360,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -21260,7 +21459,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -22237,11 +22436,11 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -22351,7 +22550,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -22398,7 +22597,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -22606,7 +22805,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -22631,11 +22830,11 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -22665,7 +22864,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -22700,7 +22899,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Warlock",
@@ -22743,7 +22942,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -22983,7 +23182,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Ranger",
@@ -23980,7 +24179,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -24932,7 +25131,7 @@
    },
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -25724,7 +25923,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -25749,7 +25948,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -25774,7 +25973,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -25824,7 +26023,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -25879,7 +26078,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -25904,7 +26103,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -25929,7 +26128,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -25954,7 +26153,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -25979,7 +26178,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26004,7 +26203,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26049,7 +26248,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26094,7 +26293,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26119,7 +26318,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26169,7 +26368,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26194,7 +26393,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26219,7 +26418,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26249,7 +26448,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26274,7 +26473,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26319,7 +26518,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26344,7 +26543,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26374,7 +26573,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26510,7 +26709,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Warlock",
@@ -26518,7 +26717,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -26553,7 +26752,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -26565,7 +26764,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -27013,7 +27212,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -27689,7 +27888,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -28241,7 +28440,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -28703,7 +28902,7 @@
    },
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Paladin",
@@ -28764,7 +28963,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -28772,7 +28971,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -28843,7 +29042,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -28918,7 +29117,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -28926,7 +29125,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -29308,7 +29507,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -29381,7 +29580,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Ranger",
@@ -29835,7 +30034,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -30730,7 +30929,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -30742,7 +30941,7 @@
    },
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -31712,7 +31911,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -32136,7 +32335,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -32181,7 +32380,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -32229,7 +32428,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -32615,7 +32814,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Ranger",
@@ -33378,11 +33577,11 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -33854,7 +34053,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -34180,7 +34379,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -34188,7 +34387,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -34507,7 +34706,7 @@
    },
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -35914,11 +36113,11 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -35926,7 +36125,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -36626,7 +36825,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -36638,7 +36837,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -36867,7 +37066,7 @@
   "classes": [
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Paladin",
@@ -36994,7 +37193,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -37231,7 +37430,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -37542,7 +37741,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -37605,11 +37804,11 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -37703,7 +37902,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Ranger",
@@ -38345,11 +38544,11 @@
    },
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Paladin",
@@ -38701,7 +38900,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -38781,7 +38980,7 @@
   ]
  },
  {
-  "name": "Primal Blade",
+  "name": "Primal Edge",
   "source": "GaldeveerTanksandFlanks",
   "level": "Cantrip",
   "school": "Evocation",
@@ -38789,7 +38988,7 @@
   "range": "Self",
   "components": "S, M",
   "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#primal%20blade_galdeveertanksandflanks",
+  "url": "https://5e.tools/spells.html#primal%20edge_galdeveertanksandflanks",
   "image": null,
   "description": [
    {
@@ -38800,7 +38999,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You brandish the weapon used in the spell's casting and make a melee attack with it. On a hit, the target suffers the weapon attack's normal effects. You can use any of the chosen weapon masteries on this attack."
+    "value": "You brandish the weapon used in the spell's casting and make an attack with it. On a hit, the target suffers the weapon attack's normal effects. You can use any of the chosen weapon masteries on this attack."
    },
    {
     "name": "Cantrip Upgrade",
@@ -39325,11 +39524,11 @@
   "classes": [
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -39337,7 +39536,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -39478,7 +39677,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -39811,7 +40010,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -41028,6 +41227,35 @@
   ]
  },
  {
+  "name": "Recall",
+  "source": "ValdaSpire24",
+  "level": "Level 2",
+  "school": "Conjuration",
+  "casting_time": "Bonus action",
+  "range": "Self",
+  "components": "V, S",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#recall_valdaspire24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Record your location when you cast this spell. Until the end of your next turn, you can take a Reaction in response to an attack roll, a creature casting a spell, or a creature moving within 5 feet of you to teleport back to that location, or to the nearest unoccupied space if that space is occupied. This teleportation precedes the triggering attack or spell. The spell then ends."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Recall Scout",
   "source": "GaldeveerTanksandFlanks",
   "level": "Level 1",
@@ -41906,7 +42134,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -42410,7 +42638,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -42537,11 +42765,11 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -42641,11 +42869,11 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -42730,7 +42958,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -42738,7 +42966,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -42983,7 +43211,7 @@
   "classes": [
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -43386,7 +43614,7 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Ranger",
@@ -43424,7 +43652,7 @@
   "classes": [
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -43578,15 +43806,15 @@
   "classes": [
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -43738,7 +43966,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -45145,7 +45373,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -46038,7 +46266,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -46186,7 +46414,7 @@
    },
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -46560,11 +46788,11 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -46780,7 +47008,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -47788,7 +48016,7 @@
    },
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -48387,15 +48615,15 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Paladin",
@@ -48531,7 +48759,7 @@
   ]
  },
  {
-  "name": "Storied Blade",
+  "name": "Storied Edge",
   "source": "GaldeveerTanksandFlanks",
   "level": "Cantrip",
   "school": "Evocation",
@@ -48539,7 +48767,7 @@
   "range": "Self",
   "components": "S, M",
   "duration": "Instantaneous",
-  "url": "https://5e.tools/spells.html#storied%20blade_galdeveertanksandflanks",
+  "url": "https://5e.tools/spells.html#storied%20edge_galdeveertanksandflanks",
   "image": null,
   "description": [
    {
@@ -48550,7 +48778,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You brandish the weapon used in the spell's casting and make a melee attack with it. On a hit, the target suffers the weapon attack's normal effects. You can use any of the chosen weapon masteries on this attack."
+    "value": "You brandish the weapon used in the spell's casting and make an attack with it. On a hit, the target suffers the weapon attack's normal effects. You can use any of the chosen weapon masteries on this attack."
    },
    {
     "name": "Cantrip Upgrade",
@@ -49090,7 +49318,7 @@
   "classes": [
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -49098,11 +49326,11 @@
    },
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -49530,7 +49758,7 @@
   "classes": [
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -49538,7 +49766,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -49722,7 +49950,7 @@
    },
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Paladin",
@@ -50070,7 +50298,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -50082,11 +50310,11 @@
    },
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -50275,9 +50503,9 @@
      "caption": "",
      "entries": [
       "You gain 50 temporary hit points. If any of these remain when the spell ends, they are lost.",
-      "You have advantage on attack rolls that you make with simple and martial weapons.",
+      "You have advantage on attack rolls that you make with  weapons.",
       "When you hit a target with a weapon attack, that target takes an extra **2d12** force damage.",
-      "You have proficiency with all armor, shields, simple weapons, and martial weapons.",
+      "You have proficiency with all armor, shields, and weapons.",
       "You have proficiency in Strength and Constitution saving throws.",
       "You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that gives you extra attacks.",
       "You can drop or stow anything your holding",
@@ -50558,7 +50786,7 @@
   "classes": [
    {
     "name": "Warmage",
-    "source": "ValdaWarmage"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -51226,11 +51454,11 @@
   "classes": [
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -52221,11 +52449,11 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -53660,7 +53888,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -54286,15 +54514,15 @@
    },
    {
     "name": "Investigator",
-    "source": "ValdaInvestigator"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
@@ -54831,7 +55059,7 @@
    },
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -54861,7 +55089,7 @@
   "classes": [
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -54886,7 +55114,7 @@
   "classes": [
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -54951,11 +55179,11 @@
   "classes": [
    {
     "name": "Martyr",
-    "source": "ValdaMartyr"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    }
   ]
  },
@@ -55474,7 +55702,7 @@
    },
    {
     "name": "Necromancer",
-    "source": "ValdaNecromancer"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Sorcerer",
@@ -55482,7 +55710,7 @@
    },
    {
     "name": "Witch",
-    "source": "ValdaWitch"
+    "source": "ValdaSpire24"
    },
    {
     "name": "Wizard",
