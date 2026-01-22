@@ -465,6 +465,42 @@
   "image": null
  },
  {
+  "name": "Shaking Plague",
+  "source": "FRAiF",
+  "url": "https://5e.tools/conditionsdiseases.html#shaking%20plague_fraif",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "Magical experiments gone awry gave rise to Shaking Plague, which affects Humanoids. A creature suffers the following effects 1d4 days after infection:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fatigue**: The creature gains 1 Exhaustion level. While the creature has any Exhaustion levels, finishing a Long Rest doesn't reduce the creature's Exhaustion level.",
+      "**Pus Boils**: While the creature has any Exhaustion levels, its skin is covered in pus-filled boils.",
+      "**Shaking**: While the creature has any Exhaustion levels, magic-dampening tremors afflict it. The creature has Disadvantage on Dexterity checks and saving throws, and whenever the creature casts a spell with a Somatic component, it must succeed on a DC 11 Constitution saving throw, or the spell dissipates with no effect and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, that slot isn't expended."
+     ]
+    }
+   },
+   {
+    "name": "Fighting the Contagion",
+    "type": "text",
+    "value": "Daily at dawn, an infected creature makes a DC 11 Constitution saving throw. On a failed save, the creature gains 1 Exhaustion level as its fatigue worsens. On a successful save, the creature's Exhaustion level decreases by 1. If the creature's Exhaustion level is reduced to 0, the contagion ends on the creature."
+   },
+   {
+    "name": "Spreading the Contagion",
+    "type": "text",
+    "value": "Any Humanoid that makes skin contact with a creature infected with Shaking Plague must succeed on a DC 11 Constitution saving throw or also become infected with the contagion. On a successful save, the Humanoid can't catch the contagion from that particular infected creature for the next 24 hours."
+   }
+  ],
+  "image": null
+ },
+ {
   "name": "Shivering Sickness",
   "source": "ToA",
   "url": "https://5e.tools/conditionsdiseases.html#shivering%20sickness_toa",
@@ -626,6 +662,47 @@
     "name": "Immunity",
     "type": "text",
     "value": "All forms of rats and wererats are immune to the Gnawing Plague."
+   }
+  ],
+  "image": null
+ },
+ {
+  "name": "The Rusting",
+  "source": "FRAiF",
+  "url": "https://5e.tools/conditionsdiseases.html#the%20rusting_fraif",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "The Rusting manifests as a thin, iron coating that grows over a victim's body. When exposed to moisture, this iron skin corrodes into a rust-colored plaque. As the Rusting covers the victim, the victim eventually transforms into a type of creature known as a Rusted (see chapter 9)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Any creature that is wounded by a Rusted creature or spends 1 hour in an area where the Rusting has manifested makes a DC 10 Constitution saving throw. Constructs and Undead automatically succeed on this save. On a failed save, the creature is afflicted by the Rusting and suffers the following effects:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Curse**: The creature gains 1 Exhaustion level and is cursed. While the creature is cursed, finishing a Long Rest doesn't reduce the creature's Exhaustion level.",
+      "**Plated Joints**: The creature's Speed is reduced by 5 feet.",
+      "**Rusted Fate**: When a cursed creature's Exhaustion level reaches 6, it doesn't die. Instead, the creature transforms into a Rusted version of its former self; its creature type becomes Construct, and it gains Immunity to Poison damage and the Exhaustion, Petrified, and Poisoned conditions. The curse then ends for that creature."
+     ]
+    }
+   },
+   {
+    "name": "Fighting the Contagion",
+    "type": "text",
+    "value": "Daily at dawn, an afflicted creature makes a DC 10 Constitution saving throw. On a failed save, the creature gains 1 Exhaustion level as more iron coats its skin. On a successful save, the creature's Exhaustion level decreases by 1. If the creature's Exhaustion level is reduced to 0, the contagion ends on the creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Removing the curse immediately ends the contagion for a creature."
    }
   ],
   "image": null

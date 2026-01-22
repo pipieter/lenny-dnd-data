@@ -3796,7 +3796,7 @@
    {
     "name": "Dagger",
     "type": "text",
-    "value": "*Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage"
+    "value": "*Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -34905,13 +34905,7 @@
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/CM/Dragon%20Tortoise.webp",
   "url": "https://5e.tools/bestiary.html#dragon%20tortoise_cm",
   "description": [],
-  "fluffInfo": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Ogruhl has been trapped here for millennia, restrained by magic chains. Ogruhl was the prisoner of a cruel Netherese wizard. When the city around the tortoise was abandoned, Ogruhl was left to die. A band of chwingas found the tortoise and brought it food and water little by little to keep it alive. Over time, the chwingas and Ogruhl developed a symbiotic relationship—it defended them and provided a home for them, and they helped it to survive."
-   }
-  ],
+  "fluffInfo": [],
   "stats": {
    "name": "Stats",
    "type": "table",
@@ -36913,6 +36907,109 @@
     "name": "Storm of Shattered Glass (Recharge 5-6)",
     "type": "text",
     "value": "Nintra targets a point she can see within 60 feet of her and creates a 20-foot-radius sphere of swirling glass shards centered on that point. Each creature in the sphere must make a DC 20 Dexterity saving throw, taking 28 (**8d6**) slashing damage on a failed save, or half as much damage on a successful save. If Nintra is in the sphere, the shards deal no damage to her."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Ogruhl",
+  "source": "CM",
+  "subtitle": "Gargantuan dragon",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/CM/Ogruhl.webp",
+  "url": "https://5e.tools/bestiary.html#ogruhl_cm",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "Strength",
+     "Dexterity",
+     "Constitution",
+     "Intelligence",
+     "Wisdom",
+     "Charisma"
+    ],
+    "rows": [
+     [
+      "Score",
+      "25",
+      "10",
+      "20",
+      "10",
+      "12",
+      "12"
+     ],
+     [
+      "Mod.",
+      "+7",
+      "+0",
+      "+5",
+      "+0",
+      "+1",
+      "+1"
+     ],
+     [
+      "Save.",
+      "+7",
+      "+6",
+      "+11",
+      "+0",
+      "+7",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 20 (Natural Armor)",
+     "**HP**: 341 (22d20 + 110)",
+     "**Speed**: *walk* 20 Ft.",
+     "**Resistances**: fire",
+     "**Senses**: darkvision 120 ft.",
+     "**Languages**: Draconic, Terran",
+     "**CR**: 17"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks."
+   },
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +13 to hit, reach 15 ft., one target. *Hit:* 26 (**3d12 + 7**) piercing damage."
+   },
+   {
+    "name": "Claw",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +13 to hit, reach 10 ft., one target. *Hit:* 16 (**2d8 + 7**) slashing damage."
+   },
+   {
+    "name": "Tail",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +13 to hit, reach 15 ft., one target. *Hit:* 26 (**3d12 + 7**) bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone."
+   },
+   {
+    "name": "Sand Breath (Recharge 5-6)",
+    "type": "text",
+    "value": "The dragon tortoise exhales abrasive sand in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (**15d6**) slashing damage on a failed save, or half as much damage on a successful one."
    }
   ],
   "bonusActions": []
@@ -155241,7 +155338,7 @@
    {
     "name": "Greatsword",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) slashing damage"
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) slashing damage."
    }
   ],
   "bonusActions": [
@@ -168089,7 +168186,7 @@
    {
     "name": "Sludge Slap",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 12 (**1d8 + 8**) bludgeoning damage, plus 4 (**1d8**) acid damage. Sludge Slap does both bludgeoning and acid damage"
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 12 (**1d8 + 8**) bludgeoning damage, plus 4 (**1d8**) acid damage. Sludge Slap does both bludgeoning and acid damage."
    }
   ],
   "bonusActions": []
@@ -199780,7 +199877,7 @@
    {
     "name": "Fist",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 2 (**1d4**) bludgeoning damage"
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 2 (**1d4**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -208307,7 +208404,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage"
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -216649,7 +216746,7 @@
    {
     "name": "Stomp",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (**3d10 + 6**) bludgeoning damage"
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (**3d10 + 6**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -227812,7 +227909,7 @@
    {
     "name": "Tail",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +8 to hit, reach 20 ft., one target. *Hit:* 32 (**6d8 + 5**) bludgeoning damage"
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 20 ft., one target. *Hit:* 32 (**6d8 + 5**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -240850,7 +240947,7 @@
    {
     "name": "Shortsword",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 3**) piercing damage plus 3 (**1d6**) necrotic damage"
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 3**) piercing damage plus 3 (**1d6**) necrotic damage."
    },
    {
     "name": "Shadow Teleport (Recharge 5-6)",
@@ -284436,7 +284533,7 @@
    {
     "name": "Scimitar",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (**1d6 + 1**) slashing damage"
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 4 (**1d6 + 1**) slashing damage."
    }
   ],
   "bonusActions": []
@@ -288374,6 +288471,104 @@
   "bonusActions": []
  },
  {
+  "name": "Female Steeder",
+  "source": "OotA",
+  "subtitle": "Large beast",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/OotA/Female%20Steeder.webp",
+  "url": "https://5e.tools/bestiary.html#female%20steeder_oota",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "Strength",
+     "Dexterity",
+     "Constitution",
+     "Intelligence",
+     "Wisdom",
+     "Charisma"
+    ],
+    "rows": [
+     [
+      "Score",
+      "15",
+      "16",
+      "14",
+      "2",
+      "10",
+      "3"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+3",
+      "+2",
+      "-4",
+      "+0",
+      "-4"
+     ],
+     [
+      "Save.",
+      "+2",
+      "+3",
+      "+2",
+      "-4",
+      "+0",
+      "-4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14 (Natural Armor)",
+     "**HP**: 30 (4d10 + 8)",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
+     "**Skills**: stealth +7",
+     "**Senses**: darkvision 120 ft.",
+     "**CR**: 1"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Spider Climb",
+    "type": "text",
+    "value": "The steeder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+   },
+   {
+    "name": "Leap",
+    "type": "text",
+    "value": "The steeder can expend all its movement on its turn to jump up to 90 feet vertically or horizontally, provided that its speed is at least 30 feet."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one creature. *Hit:* 7 (**1d8 + 3**) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 9 (**2d8**) acid damage on a failed save, or half as much damage on a successful one."
+   },
+   {
+    "name": "Sticky Leg (Recharges when the Steeder Has No Creatures Grappled)",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one Medium or smaller creature. *Hit:* The target is stuck to the steeder's leg and grappled until it escapes (escape DC 12)."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Fiendish Giant Spider",
   "source": "OotA",
   "subtitle": "Medium beast",
@@ -289338,7 +289533,7 @@
    {
     "name": "+1 Flail",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) bludgeoning damage"
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -290391,7 +290586,7 @@
      "**HP**: 27 (6d8)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: deception +5, insight +4, investigation +5, perception +6, persuasion +5, sleight of hand +4, stealth +4",
-     "**Languages**: any two languages, Undercommon",
+     "**Languages**: Common, Elvish, Undercommon, Undercommon",
      "**CR**: 1"
     ]
    }
@@ -290400,7 +290595,7 @@
    {
     "name": "Special Equipment",
     "type": "text",
-    "value": "Khalessa owns a hat of disguise, which she uses to appear as a female drow while in the company of drow."
+    "value": "Khalessa owns a hat of disguise, which she uses to appear as a female drow while in the company of drow, and she wears a piwafwi."
    },
    {
     "name": "Cunning Action",
@@ -290936,6 +291131,104 @@
       "*6. Telekinetic Ray*. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated.\nIf the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."
      ]
     }
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Male Steeder",
+  "source": "OotA",
+  "subtitle": "Medium beast",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/OotA/Male%20Steeder.webp",
+  "url": "https://5e.tools/bestiary.html#male%20steeder_oota",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "Strength",
+     "Dexterity",
+     "Constitution",
+     "Intelligence",
+     "Wisdom",
+     "Charisma"
+    ],
+    "rows": [
+     [
+      "Score",
+      "15",
+      "12",
+      "14",
+      "2",
+      "10",
+      "3"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+1",
+      "+2",
+      "-4",
+      "+0",
+      "-4"
+     ],
+     [
+      "Save.",
+      "+2",
+      "+1",
+      "+2",
+      "-4",
+      "+0",
+      "-4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12 (Natural Armor)",
+     "**HP**: 13 (2d8 + 4)",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
+     "**Skills**: stealth +5",
+     "**Senses**: darkvision 120 ft.",
+     "**CR**: 1/4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Spider Climb",
+    "type": "text",
+    "value": "The steeder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+   },
+   {
+    "name": "Leap",
+    "type": "text",
+    "value": "The steeder can expend all its movement on its turn to jump up to 60 feet vertically or horizontally, provided that its speed is at least 30 feet."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one creature. *Hit:* 7 (**1d8 + 2**) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 4 (**1d8**) acid damage on a failed save, or half as much damage on a successful one."
+   },
+   {
+    "name": "Sticky Leg (Recharges when the Steeder Has No Creatures Grappled)",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one Small or Tiny creature. *Hit:* The target is stuck to the steeder's leg and grappled until it escapes (escape DC 12)."
    }
   ],
   "bonusActions": []
@@ -305737,7 +306030,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage"
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -310137,7 +310430,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage"
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -312300,7 +312593,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage"
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -312982,7 +313275,7 @@
    {
     "name": "Stomp",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (**3d10 + 6**) bludgeoning damage"
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (**3d10 + 6**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -317264,7 +317557,7 @@
    {
     "name": "Stomp",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (**3d10 + 6**) bludgeoning damage"
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (**3d10 + 6**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -317634,7 +317927,7 @@
    {
     "name": "Bite",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage"
+    "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 6 (**2d4 + 1**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -320934,7 +321227,7 @@
    {
     "name": "Stomp",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (**3d10 + 6**) bludgeoning damage"
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one prone creature. *Hit:* 22 (**3d10 + 6**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -345479,7 +345772,7 @@
    {
     "name": "Greatsword",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) slashing damage"
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) slashing damage."
    },
    {
     "name": "Heavy Crossbow",
@@ -349674,7 +349967,7 @@
    {
     "name": "Slam",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +12 to hit, reach 15 ft., one target. *Hit:* 15 (**3d6 + 5**) bludgeoning damage plus 35 (**10d6**) fire damage"
+    "value": "*Melee Weapon Attack:* +12 to hit, reach 15 ft., one target. *Hit:* 15 (**3d6 + 5**) bludgeoning damage plus 35 (**10d6**) fire damage,"
    }
   ],
   "bonusActions": []
@@ -349935,7 +350228,7 @@
    {
     "name": "Club",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 1**) bludgeoning damage"
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 1**) bludgeoning damage."
    },
    {
     "name": "Heavy Crossbow",
@@ -357008,7 +357301,7 @@
    {
     "name": "Shred",
     "type": "text",
-    "value": "*Melee Weapon Attack:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d4 + 3 + PB** slashing damage"
+    "value": "*Melee Weapon Attack:* your spell attack modifier to hit, reach 5 ft., one target. *Hit:* **1d4 + 3 + PB** slashing damage."
    }
   ],
   "bonusActions": []
@@ -387349,13 +387642,13 @@
   "bonusActions": []
  },
  {
-  "name": "Inda",
+  "name": "Inda Malayuri",
   "source": "VEoR",
   "subtitle": "Medium celestial",
   "summonedBySpell": null,
   "summonedByClass": null,
-  "tokenUrl": "https://5e.tools/img/bestiary/tokens/VEoR/Inda.webp",
-  "url": "https://5e.tools/bestiary.html#inda_veor",
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/VEoR/Inda%20Malayuri.webp",
+  "url": "https://5e.tools/bestiary.html#inda%20malayuri_veor",
   "description": [],
   "fluffInfo": [],
   "stats": {
@@ -421225,7 +421518,7 @@
    {
     "name": "Greataxe",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 11 (**1d12 + 5**) slashing damage"
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 11 (**1d12 + 5**) slashing damage."
    },
    {
     "name": "Heavy Crossbow",
@@ -431274,7 +431567,7 @@
    {
     "name": "Magic Bolt",
     "type": "text",
-    "value": "*Ranged Weapon Attack:* +6 to hit, range 120 ft., one target. *Hit:* 16 (**3d10**) fire damage"
+    "value": "*Ranged Weapon Attack:* +6 to hit, range 120 ft., one target. *Hit:* 16 (**3d10**) fire damage."
    }
   ],
   "bonusActions": []
