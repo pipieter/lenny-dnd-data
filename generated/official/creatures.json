@@ -422131,26 +422131,21 @@
     "caption": "",
     "entries": [
      "**AC**: 10",
-     "**HP**: 4 (1d8)",
+     "**HP**: 3 (1d6)",
      "**Speed**: *walk* 25 Ft.",
-     "**Languages**: Common, Halfling",
+     "**Languages**: any one language (usually Common)",
      "**CR**: 0"
     ]
    }
   },
-  "traits": [
+  "traits": [],
+  "actions": [
    {
-    "name": "Halfling Nimbleness",
+    "name": "Club",
     "type": "text",
-    "value": "Bepis can move through a space occupied by a creature of a size larger than him"
-   },
-   {
-    "name": "Brave",
-    "type": "text",
-    "value": "Bepis has advantage on saving throws against being frightened."
+    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (**1d4**) bludgeoning damage."
    }
   ],
-  "actions": [],
   "bonusActions": []
  },
  {
@@ -423276,7 +423271,7 @@
  {
   "name": "Engineer",
   "source": "WDH",
-  "subtitle": "Small humanoid",
+  "subtitle": "Medium humanoid",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDH/Engineer.webp",
@@ -423344,26 +423339,19 @@
     "entries": [
      "**AC**: 10",
      "**HP**: 7 (2d6)",
-     "**Speed**: *walk* 25 Ft.",
+     "**Speed**: *walk* 30 Ft.",
      "**Skills**: arcana +4, history +4",
-     "**Senses**: darkvision 60 ft.",
      "**Languages**: Common, Gnomish",
      "**CR**: 1/4"
     ]
    }
   },
-  "traits": [
-   {
-    "name": "Gnome Cunning",
-    "type": "text",
-    "value": "The gnome has advantage on all Intelligence, Wisdom and Charisma saving throws against magic."
-   }
-  ],
+  "traits": [],
   "actions": [
    {
     "name": "Dagger",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 2 (**1d4**) piercing damage. Or Ranged Weapon Attack: +2 to hit, range 20/60 ft., one target. *Hit:* 2 (**1d4**) piercing damage."
+    "value": "*Melee or Ranged Weapon Attack:* +2 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 2 (**1d4**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -423439,26 +423427,19 @@
     "entries": [
      "**AC**: 11 or 16 With __Barkskin__",
      "**HP**: 27 (5d8 + 5)",
-     "**Speed**: *walk* 35 Ft.",
+     "**Speed**: *walk* 30 Ft.",
      "**Skills**: medicine +4, nature +3, perception +4",
-     "**Senses**: darkvision 60 ft.",
      "**Languages**: Druidic, Common, Elvish",
      "**CR**: 2"
     ]
    }
   },
-  "traits": [
-   {
-    "name": "Fey Ancestry",
-    "type": "text",
-    "value": "Fala has advantage on saving throws against being charmed, and magic can't put them to sleep."
-   }
-  ],
+  "traits": [],
   "actions": [
    {
     "name": "Quarterstaff",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +2 to hit or Melee Weapon Attack +4 to hit with shillelagh, reach 5 ft., one target. *Hit:* 3 (**1d6**) bludgeoning damage, or 6 (**1d8 + 2**) bludgeoning damage with shillelagh or if wielded with two hands."
+    "value": "*Melee Weapon Attack:* +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. *Hit:* 3 (**1d6**) bludgeoning damage, 4 (**1d8**) bludgeoning damage if wielded with two hands, or 6 (**1d8 + 2**) bludgeoning damage with __shillelagh__."
    }
   ],
   "bonusActions": []
@@ -425100,7 +425081,7 @@
    {
     "name": "Dagger",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage."
+    "value": "*Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -425708,7 +425689,7 @@
  {
   "name": "Losser Mirklav",
   "source": "WDH",
-  "subtitle": "Small humanoid",
+  "subtitle": "Medium humanoid",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDH/Losser%20Mirklav.webp",
@@ -425776,30 +425757,19 @@
     "entries": [
      "**AC**: 12 or 15 With __Mage Armor__",
      "**HP**: 31 (9d6)",
-     "**Speed**: *walk* 25 Ft.",
+     "**Speed**: *walk* 30 Ft.",
      "**Skills**: arcana +6, history +6",
-     "**Languages**: Common, Halfling",
+     "**Languages**: any four languages",
      "**CR**: 6"
     ]
    }
   },
-  "traits": [
-   {
-    "name": "Halfling Nimbleness",
-    "type": "text",
-    "value": "Losser can move through the space of a creature that is a size bigger than him."
-   },
-   {
-    "name": "Brave",
-    "type": "text",
-    "value": "Losser has advantage on saving throws against being frightened."
-   }
-  ],
+  "traits": [],
   "actions": [
    {
     "name": "Dagger",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage."
+    "value": "*Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -425902,7 +425872,7 @@
  {
   "name": "Manafret Cherryport",
   "source": "WDH",
-  "subtitle": "Small humanoid",
+  "subtitle": "Medium humanoid",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDH/Manafret%20Cherryport.webp",
@@ -425970,7 +425940,7 @@
     "entries": [
      "**AC**: 12 or 15 With __Mage Armor__",
      "**HP**: 31 (9d6)",
-     "**Speed**: *walk* 25 Ft.",
+     "**Speed**: *walk* 30 Ft.",
      "**Skills**: arcana +6, history +6",
      "**Languages**: Common, Halfling",
      "**CR**: 6"
@@ -425979,21 +425949,16 @@
   },
   "traits": [
    {
-    "name": "Halfling Nimbleness",
+    "name": "Special Equipment",
     "type": "text",
-    "value": "Manafret can move through a space of a Medium or larger creature."
-   },
-   {
-    "name": "Brave",
-    "type": "text",
-    "value": "Manafret has advantage on saving throws against being frightened."
+    "value": "Manafret wears a teleporter ring."
    }
   ],
   "actions": [
    {
     "name": "Dagger",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage. Or Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage."
+    "value": "*Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage."
    }
   ],
   "bonusActions": []
@@ -428233,7 +428198,7 @@
    {
     "name": "Dagger",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 6 (**1d4 + 4**) piercing damage. Or Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. *Hit:* 6 (**1d4 + 4**) piercing damage."
+    "value": "*Melee or Ranged Weapon Attack:* +6 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 6 (**1d4 + 4**) piercing damage."
    },
    {
     "name": "Rapier",
@@ -428409,7 +428374,7 @@
      "**AC**: 17 (Splint Armor)",
      "**HP**: 58 (9d8 + 18)",
      "**Speed**: *walk* 30 Ft.",
-     "**Skills**: athletics +5, perception +2, intimidation +4",
+     "**Skills**: athletics +5, perception +2",
      "**Languages**: Common",
      "**CR**: 3"
     ]
@@ -428420,7 +428385,7 @@
    {
     "name": "Multiattack",
     "type": "text",
-    "value": "Saeth makes two longsword attacks. If he has a shortsword drawn, he can also make a shortsword attack."
+    "value": "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack."
    },
    {
     "name": "Longsword",
@@ -429990,24 +429955,24 @@
    {
     "name": "Assassinate",
     "type": "text",
-    "value": "During its first turn, Urstul has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Urstul scores against a *surprised* creature is a critical hit."
+    "value": "During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a *surprised* creature is a critical hit."
    },
    {
     "name": "Evasion",
     "type": "text",
-    "value": "If Urstul is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Urstul instead takes no damage if he succeeds on the saving throw, and only half damage if it fails."
+    "value": "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
    },
    {
     "name": "Sneak Attack (1/Turn)",
     "type": "text",
-    "value": "Urstul deals an extra 14 (**4d6**) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Urstul that isn't incapacitated and Urstul doesn't have disadvantage on the attack roll."
+    "value": "The assassin deals an extra 14 (**4d6**) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll."
    }
   ],
   "actions": [
    {
     "name": "Multiattack",
     "type": "text",
-    "value": "Urstul makes two shortsword attacks."
+    "value": "The assassin makes two shortsword attacks."
    },
    {
     "name": "Shortsword",
@@ -430991,8 +430956,8 @@
       "11",
       "12",
       "11",
-      "12",
       "16",
+      "14",
       "16"
      ],
      [
@@ -431000,8 +430965,8 @@
       "+0",
       "+1",
       "+0",
-      "+1",
       "+3",
+      "+2",
       "+3"
      ],
      [
@@ -431009,8 +430974,8 @@
       "+0",
       "+1",
       "+0",
-      "+1",
       "+3",
+      "+2",
       "+3"
      ]
     ]
@@ -431026,7 +430991,7 @@
      "**AC**: 15 (Breastplate)",
      "**HP**: 9 (2d8)",
      "**Speed**: *walk* 30 Ft.",
-     "**Skills**: deception +5, insight +5, persuasion +5",
+     "**Skills**: deception +5, insight +4, persuasion +5",
      "**Languages**: Common, Infernal",
      "**CR**: 1/8"
     ]
@@ -431155,7 +431120,7 @@
  {
   "name": "Zhent Martial Arts Adept",
   "source": "WDH",
-  "subtitle": "Small humanoid",
+  "subtitle": "Medium humanoid",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDH/Zhent%20Martial%20Arts%20Adept.webp",
@@ -431165,7 +431130,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "The adepts believe that Manshoon should be the Zhantarim leader and serves him fearlessly"
+    "value": "The adepts believe that Manshoon should be the Zhantarim leader and serves him fearlessly."
    }
   ],
   "stats": {
@@ -431223,7 +431188,7 @@
     "entries": [
      "**AC**: 16",
      "**HP**: 49 (11d6 + 11)",
-     "**Speed**: *walk* 25 Ft.",
+     "**Speed**: *walk* 40 Ft.",
      "**Skills**: acrobatics +5, insight +5, stealth +5",
      "**Languages**: Common, Halfling",
      "**CR**: 3"
@@ -431232,19 +431197,14 @@
   },
   "traits": [
    {
-    "name": "Halfling Nimbleness",
-    "type": "text",
-    "value": "The adept can move through the space of a medium of larger creature."
-   },
-   {
-    "name": "Brave",
-    "type": "text",
-    "value": "The adept has advantage on any saving throws against being frightened."
-   },
-   {
     "name": "Unarmored Defense",
     "type": "text",
-    "value": "While the adept is wearing no armor and wielding no shield, their AC includes their Wisdom modifier."
+    "value": "While the adept is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+   },
+   {
+    "name": "Special Equipment",
+    "type": "text",
+    "value": "The adept wears a teleporter ring."
    }
   ],
   "actions": [
