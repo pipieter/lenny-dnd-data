@@ -8,7 +8,6 @@ import {
     DescriptionTable,
     DescriptionType,
     List,
-    parseAbilityScore,
     parseAdvantage,
     parseCreatureSummonSpell,
     parseCreatureTypes,
@@ -66,7 +65,7 @@ function getCreatureStats(creature: any): DescriptionTable {
         const mod = calculateAbilityMod(score);
         const save = creature.save?.[stat] ?? mod;
 
-        statTable.headers?.push(parseAbilityScore(stat));
+        statTable.headers?.push(stat.toUpperCase());
         statTable.rows[0].push(score.toString());
         statTable.rows[1].push(formatModifier(mod));
         statTable.rows[2].push(formatModifier(save));
