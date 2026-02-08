@@ -47237,6 +47237,93 @@
   "bonusActions": []
  },
  {
+  "name": "Cat Skeleton",
+  "source": "CoS",
+  "subtitle": "Tiny beast",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/CoS/Cat%20Skeleton.webp",
+  "url": "https://5e.tools/bestiary.html#cat%20skeleton_cos",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "3",
+      "15",
+      "10",
+      "3",
+      "12",
+      "7"
+     ],
+     [
+      "Mod.",
+      "-4",
+      "+2",
+      "+0",
+      "-4",
+      "+1",
+      "-2"
+     ],
+     [
+      "Save.",
+      "-4",
+      "+2",
+      "+0",
+      "-4",
+      "+1",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12",
+     "**HP**: 2 (1d4)",
+     "**Speed**: *walk* 40 Ft., *climb* 30 Ft.",
+     "**Skills**: perception +3, stealth +4",
+     "**CR**: 0"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Keen Smell",
+    "type": "text",
+    "value": "The cat has advantage on Wisdom (*Perception*) checks that rely on smell."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Claws",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +0 to hit, reach 5 ft., one target. *Hit:* 1 slashing damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Clovin Belview",
   "source": "CoS",
   "subtitle": "Medium humanoid",
@@ -49360,7 +49447,7 @@
    {
     "name": "Fey Ancestry",
     "type": "text",
-    "value": "Kasimir has advantage on saving throws against being charmed, and magic can't put the him to sleep."
+    "value": "Kasimir has advantage on saving throws against being charmed, and magic can't put him to sleep."
    },
    {
     "name": "Special Equipment",
@@ -335504,7 +335591,7 @@
    {
     "name": "Draconic Majesty",
     "type": "text",
-    "value": "While wearing no armor and wearing the Blue Dragon Mask, Galvan adds his Charisma bonus to her AC (included)."
+    "value": "While wearing no armor and wearing the Blue Dragon Mask, Galvan adds his Charisma bonus to his AC (included)."
    },
    {
     "name": "Lingering Shock",
