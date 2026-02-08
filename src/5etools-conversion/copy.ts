@@ -244,6 +244,10 @@ function addMod_replaceOrAppendArr(base: any, key: any, mod: any): void {
     }
 }
 
+function addMod_setProp(base: any, mod: any): void {
+    base[mod.prop] = mod.value;
+}
+
 function addMod_Single(base: any, key: any, mod: any): void {
     switch (mod.mode) {
         case 'replaceArr':
@@ -271,6 +275,8 @@ function addMod_Single(base: any, key: any, mod: any): void {
             return addMod_renameArr(base, mod);
         case 'replaceOrAppendArr':
             return addMod_replaceOrAppendArr(base, key, mod);
+        case 'setProp':
+            return addMod_setProp(base, mod);
         default:
             throw `addMod_Single: unknown entry mode '${mod.mode}'`;
     }
