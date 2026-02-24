@@ -271,6 +271,48 @@
   ]
  },
  {
+  "name": "Aundair's Silent Sanctum",
+  "source": "ExploringEberron24",
+  "level": "Cantrip",
+  "school": "Illusion",
+  "casting_time": "Action",
+  "range": "Emanation (5 feet)",
+  "components": "S",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#aundair's%20silent%20sanctum_exploringeberron24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You surround yourself with an invisible bubble of energy in a 5-foot Emanation. The sphere muffles sound in both directions. Creatures outside of the Emanation have Disadvantage on Wisdom (*Perception*) checks made to hear any sounds from within the Emanation, and creatures inside the Emanation have Disadvantage on Wisdom (*Perception*) checks made to hear sounds outside of the Emanation."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, creatures have Advantage on saving throws against effects that require them to hear a sound from the other side of the Emanation, such as the __Command__ spell."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "EFA"
+   },
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Ballistic Smite",
   "source": "ValdaGunslinger",
   "level": "Level 1",
@@ -1787,6 +1829,40 @@
    },
    {
     "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Concussive Burst",
+  "source": "ExploringEberron24",
+  "level": "Level 1",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#concussive%20burst_exploringeberron24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A pulse of energy ripples through the air at a point you choose within range, dealing minor damage over a wide area. Each creature within a 20-foot-radius Sphere centered on that point makes a Constitution saving throw, taking **2d4** Force damage on a failed save and has the Deafened condition until the end of your next turn. On a successful save, a creature takes half as much damage only."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 2d4 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
     "source": "XPHB"
    },
    {
@@ -4667,6 +4743,44 @@
   ]
  },
  {
+  "name": "Force Blast",
+  "source": "ExploringEberron24",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "180 feet",
+  "components": "V, S",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#force%20blast_exploringeberron24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You unleash a bolt of mystical power at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes **1d8** Force damage."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "This damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "EFA"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Frightful Start",
   "source": "GrimHollowPG24",
   "level": "Cantrip",
@@ -5848,6 +5962,39 @@
    }
   ],
   "classes": [
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Magecraft",
+  "source": "ExploringEberron24",
+  "level": "Cantrip",
+  "school": "Divination",
+  "casting_time": "Action",
+  "range": "Self",
+  "components": "V, S, M (a set of Artisan's Tools or a Herbalism Kit)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#magecraft_exploringeberron24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You channel your arcane talent through a set of tools. Choose an Artisan Tool or Herbalism Kit. Until the spell ends, you add 1d6 to ability checks you make when you take the Utilize action with the chosen tool."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "EFA"
+   },
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
    {
     "name": "Wizard",
     "source": "XPHB"
