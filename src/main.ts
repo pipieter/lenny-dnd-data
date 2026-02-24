@@ -142,13 +142,15 @@ function main(): void {
 
     const official = new OfficialDatabank();
     const partnered = new PartneredDatabank(official, { partnered: true, allowPHB2014: false });
-    const homebrew = new PartneredDatabank(official, { partnered: false, allowPHB2014: false });
 
     stopwatch.log('Loaded databanks');
 
     generate('official', official, stopwatch);
     generate('partnered', partnered, stopwatch);
-    generate('homebrew', homebrew, stopwatch);
+
+    // In case homebrew content needs to be enabled, uncomment the following lines
+    // const homebrew = new PartneredDatabank(official, { partnered: false, allowPHB2014: false });
+    // generate('homebrew', homebrew, stopwatch);
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
