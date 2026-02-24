@@ -733,10 +733,6 @@ function resolveOptionalFeatReference(text: string): string {
         }
     );
 
-    if (text === updatedValue) {
-        console.log(text);
-    }
-
     return updatedValue;
 }
 
