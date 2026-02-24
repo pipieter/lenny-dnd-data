@@ -19,7 +19,7 @@ interface LanguageFluff {
     images: any[];
 }
 
-interface ParsedLanguage {
+export interface ParsedLanguage {
     name: string;
     source: string;
     url: string;

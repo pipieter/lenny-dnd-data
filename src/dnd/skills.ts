@@ -13,7 +13,7 @@ export interface Skill {
     entries: (string | any)[];
 }
 
-interface ParsedSkill {
+export interface ParsedSkill {
     name: string;
     source: string;
     ability: string;

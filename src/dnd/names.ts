@@ -17,7 +17,7 @@ export interface SpeciesName {
     tables: SpeciesNameTable[];
 }
 
-interface ParsedSpeciesNames {
+export interface ParsedSpeciesNames {
     name: string;
     source: string;
     tables: {

@@ -32,7 +32,7 @@ export interface DNDObject {
     hasFluffImages?: boolean;
 }
 
-interface ParsedDNDObject {
+export interface ParsedDNDObject {
     name: string;
     source: string;
     subtitle: string;

@@ -4,7 +4,7 @@ import { Databank } from '../data';
 import { Description, parseAbilityScore, parseDescriptions, parsePrerequisite } from '../parser';
 import { getBackgroundsUrl } from '../urls';
 
-interface ParsedBackground {
+export interface ParsedBackground {
     name: string;
     source: string;
     url: string;

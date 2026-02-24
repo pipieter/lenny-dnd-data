@@ -9,7 +9,7 @@ export interface Hazard {
     entries: (string | any)[];
 }
 
-interface ParsedHazard {
+export interface ParsedHazard {
     name: string;
     source: string;
     subtitle: string;

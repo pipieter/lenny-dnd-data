@@ -18,7 +18,7 @@ import {
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
 import { calculateAbilityMod, formatModifier, joinStringsWithAnd, joinStringsWithOr, variadic } from '../util';
 
-interface Creature {
+export interface ParsedCreature {
     name: string;
     source: string;
     url: string;
@@ -283,7 +283,7 @@ function getCreatureDetails(creature: any): DescriptionList {
     return { name: '', type: DescriptionType.list, list: list };
 }
 
-function buildCreature(creature: any, fluff: any | null): Creature {
+function buildCreature(creature: any, fluff: any | null): ParsedCreature {
     const name = creature.name;
     const source = creature.source;
     const url = getBestiaryUrl(name, source);
@@ -349,8 +349,8 @@ function filterEntries(entries: any[]): any[] {
     return filteredEntries;
 }
 
-export function getCreatures(databank: Databank): Creature[] {
-    const creatures: Creature[] = [];
+export function getCreatures(databank: Databank): ParsedCreature[] {
+    const creatures: ParsedCreature[] = [];
     const fluffs: any[] = [];
 
     // Get creatures
@@ -368,7 +368,7 @@ export function getCreatures(databank: Databank): Creature[] {
     }
 
     // Parse creatures
-    const parsed: Creature[] = [];
+    const parsed: ParsedCreature[] = [];
     for (const creature of creatures) {
         const fluff = findEntry(fluffs, creature.name, creature.source);
         parsed.push(buildCreature(creature, fluff));

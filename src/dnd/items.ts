@@ -14,7 +14,7 @@ import { joinStringsWithOr, entrySort } from '../util';
 import { Databank, getKey } from '../data';
 import { cleanDNDText } from '../clean';
 
-interface Item {
+export interface ParsedItem {
     name: string;
     source: string;
     url: string;
@@ -174,7 +174,7 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
     return results;
 }
 
-function parseItem(item: any, data: any): Item {
+function parseItem(item: any, data: any): ParsedItem {
     const fluff = getItemFluff(data.itemFluff, item.name, item.source);
 
     // TODO optimize these mappings beforehand
@@ -183,7 +183,7 @@ function parseItem(item: any, data: any): Item {
     const properties = mapItemProperties(data);
 
     const url = getItemsUrl(item.name, item.source);
-    const result: Item = {
+    const result: ParsedItem = {
         name: '',
         source: '',
         url: '',
@@ -357,7 +357,7 @@ function parseItem(item: any, data: any): Item {
     return result;
 }
 
-export function getItems(databank: Databank): any[] {
+export function getItems(databank: Databank): ParsedItem[] {
     // Resolve raw item data
     const items = [...databank.item, ...databank.baseitem];
     const raw: any[] = [];
@@ -369,7 +369,7 @@ export function getItems(databank: Databank): any[] {
     return data.sort(entrySort);
 }
 
-export function getItemVariants(databank: Databank): any[] {
+export function getItemVariants(databank: Databank): ParsedItem[] {
     const items = [...databank.item, ...databank.baseitem];
     const variants = databank.magicvariant.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem));
     const seenVariants = new Set();

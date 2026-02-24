@@ -7,7 +7,7 @@ import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { CreatureSizes, SpecialSpeedTypes } from '../5etools-conversion/data';
 import { Databank } from '../data';
 
-interface Species {
+export interface ParsedSpecies {
     name: string;
     source: string;
     url: string;
@@ -87,7 +87,7 @@ function getSpeciesCreatureType(creatureTypes: string[]): string | null {
     return joinStringsWithOr(creatureTypes, true) || null;
 }
 
-export function getSpecies(data: Databank): Species[] {
+export function getSpecies(data: Databank): ParsedSpecies[] {
     // Get raw entries
     const raw: any[] = [];
     for (const entry of data.race) {
@@ -103,7 +103,7 @@ export function getSpecies(data: Databank): Species[] {
     }
 
     // Parse raw entries, at this point every raw entry *should* have all the required data
-    const species: Species[] = [];
+    const species: ParsedSpecies[] = [];
 
     for (const entry of raw) {
         let name = entry.name;

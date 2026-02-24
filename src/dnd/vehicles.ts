@@ -92,7 +92,7 @@ export interface VehicleUpgrade {
     entries: (string | any)[];
 }
 
-interface ParsedVehicle {
+export interface ParsedVehicle {
     name: string;
     source: string;
     subtitle: string;

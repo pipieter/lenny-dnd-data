@@ -3,7 +3,7 @@ import { Description, parseDescriptions, parseImageUrl } from '../parser';
 import { getConditionsDiseasesUrl } from '../urls';
 
 // Note, statuses and diseases also follow the same structure as Condition
-interface Condition {
+export interface ParsedCondition {
     name: string;
     source: string;
     url: string;
@@ -11,10 +11,10 @@ interface Condition {
     image: string | null;
 }
 
-function getConditions(type: string, data: Databank): Condition[] {
+function getConditions(type: string, data: Databank): ParsedCondition[] {
     const entries = data.get(type);
-    const results: Condition[] = entries.map((entry) => {
-        const result: Condition = {
+    const results: ParsedCondition[] = entries.map((entry) => {
+        const result: ParsedCondition = {
             name: entry.name,
             source: entry.source,
             url: getConditionsDiseasesUrl(entry.name, entry.source),
@@ -34,10 +34,10 @@ function getConditions(type: string, data: Databank): Condition[] {
 }
 
 export function getConditionsStatusesAndDiseases(data: Databank): {
-    conditions: Condition[];
-    diseases: Condition[];
+    conditions: ParsedCondition[];
+    diseases: ParsedCondition[];
 } {
-    const conditions: Condition[] = [];
+    const conditions: ParsedCondition[] = [];
     conditions.push(...getConditions('condition', data));
     conditions.push(...getConditions('status', data));
     const diseases = getConditions('disease', data);
