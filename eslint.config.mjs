@@ -6,6 +6,7 @@ import eslintPluginUnusedImports from 'eslint-plugin-unused-imports';
 export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommended,
+
   {
     plugins: {
       'unused-imports': eslintPluginUnusedImports,
@@ -16,11 +17,19 @@ export default tseslint.config(
         'warn',
         { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
       ],
-      "no-console": "error",
+      'no-console': 'error',
 
       // IGNORE
       'no-useless-escape': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
+
+  // Ignore console.log in util.ts
+  {
+    files: ['src/util.ts'],
+    rules: {
+      'no-console': 'off',
+    },
+  }
 );
