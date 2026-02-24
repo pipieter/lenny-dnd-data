@@ -42,7 +42,7 @@ export interface ClassFeature {
     descriptions: Description[] | null;
 }
 
-interface ParsedClass {
+export interface ParsedClass {
     name: string;
     source: string;
     url: string;

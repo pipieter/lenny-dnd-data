@@ -31,7 +31,7 @@ interface DeitySymbolImg {
     height: number;
 }
 
-interface ParsedDeity {
+export interface ParsedDeity {
     name: string;
     source: string;
     subtitle: string;

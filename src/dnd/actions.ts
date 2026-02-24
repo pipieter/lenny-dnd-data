@@ -11,7 +11,7 @@ export interface Action {
     entries: any[];
 }
 
-interface ParsedAction {
+export interface ParsedAction {
     name: string;
     source: string;
     url: string | null;

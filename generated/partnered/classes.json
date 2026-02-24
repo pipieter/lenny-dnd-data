@@ -1784,5 +1784,1029 @@
     ]
    }
   }
+ },
+ {
+  "name": "Pugilist",
+  "source": "Pugilist2024",
+  "url": "https://5e.tools/classes.html#pugilist_pugilist2024",
+  "subclassUnlockLevel": 3,
+  "primaryAbility": "Strength",
+  "spellcastAbility": null,
+  "baseInfo": [
+   {
+    "name": "Health",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d10",
+      "Level 1 Pugilist HP: 10 + Con. mod",
+      "HP per Pugilist level: 1d10 + Con. mod *or* 6 + Con. mod"
+     ]
+    }
+   },
+   {
+    "name": "Saving Throw Proficiencies",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Strength",
+      "Constitution"
+     ]
+    }
+   },
+   {
+    "name": "Proficiencies",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Armor Proficiencies: Light Armor",
+      "Weapon Proficiencies: Simple and Improvised",
+      "Tool Proficiencies: Choose One Type Of Gaming Set",
+      "Skill Proficiencies: Choose 2: Acrobatics, Athletics, Deception, Intimidation, Perception, Sleight Of Hand Or Stealth"
+     ]
+    }
+   },
+   {
+    "name": "Starting Equipment",
+    "type": "text",
+    "value": "*Choose A or B:* (A) Club, Handaxe, Gaming Set (chosen for the tool proficiency above), Dungeoneer's Pack, and 31 GP; or (B) 50 GP"
+   },
+   {
+    "name": "Multiclassing",
+    "type": "text",
+    "value": "Ability requirements: At least 13 Strength  and 13 Constitution "
+   },
+   {
+    "name": "Proficiencies",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Armor Proficiencies: Light Armor",
+      "Weapon Proficiencies: Improvised"
+     ]
+    }
+   }
+  ],
+  "levelResources": {
+   "1": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+2 Proficiency Bonus\n1d8 Fisticuffs\n0 Moxie Points"
+    }
+   ],
+   "2": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+2 Proficiency Bonus\n1d8 Fisticuffs\n2 Moxie Points"
+    }
+   ],
+   "3": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+2 Proficiency Bonus\n1d8 Fisticuffs\n2 Moxie Points"
+    }
+   ],
+   "4": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+2 Proficiency Bonus\n1d8 Fisticuffs\n3 Moxie Points"
+    }
+   ],
+   "5": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+3 Proficiency Bonus\n1d10 Fisticuffs\n3 Moxie Points"
+    }
+   ],
+   "6": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+3 Proficiency Bonus\n1d10 Fisticuffs\n4 Moxie Points"
+    }
+   ],
+   "7": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+3 Proficiency Bonus\n1d10 Fisticuffs\n4 Moxie Points"
+    }
+   ],
+   "8": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+3 Proficiency Bonus\n1d10 Fisticuffs\n5 Moxie Points"
+    }
+   ],
+   "9": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+4 Proficiency Bonus\n1d10 Fisticuffs\n5 Moxie Points"
+    }
+   ],
+   "10": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+4 Proficiency Bonus\n1d10 Fisticuffs\n6 Moxie Points"
+    }
+   ],
+   "11": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+4 Proficiency Bonus\n1d12 Fisticuffs\n6 Moxie Points"
+    }
+   ],
+   "12": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+4 Proficiency Bonus\n1d12 Fisticuffs\n7 Moxie Points"
+    }
+   ],
+   "13": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+5 Proficiency Bonus\n1d12 Fisticuffs\n7 Moxie Points"
+    }
+   ],
+   "14": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+5 Proficiency Bonus\n1d12 Fisticuffs\n8 Moxie Points"
+    }
+   ],
+   "15": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+5 Proficiency Bonus\n1d12 Fisticuffs\n8 Moxie Points"
+    }
+   ],
+   "16": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+5 Proficiency Bonus\n1d12 Fisticuffs\n9 Moxie Points"
+    }
+   ],
+   "17": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+6 Proficiency Bonus\n2d6 Fisticuffs\n9 Moxie Points"
+    }
+   ],
+   "18": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+6 Proficiency Bonus\n2d6 Fisticuffs\n10 Moxie Points"
+    }
+   ],
+   "19": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+6 Proficiency Bonus\n2d6 Fisticuffs\n11 Moxie Points"
+    }
+   ],
+   "20": [
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+6 Proficiency Bonus\n2d6 Fisticuffs\n12 Moxie Points"
+    }
+   ]
+  },
+  "levelFeatures": {
+   "1": [
+    {
+     "name": "Fisticuffs",
+     "type": "text",
+     "value": "Your years of fighting in back alleys and taverns have given you mastery over combat styles that use Unarmed Strikes and Pugilist weapons, which are the following:"
+    },
+    {
+     "name": "",
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "Simple Melee Weapons",
+       "Improvised Weapons"
+      ]
+     }
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "You gain the following benefits while you are unarmed or wielding only Pugilist weapons and you are wearing Light or no armor and are not wielding a Shield."
+    },
+    {
+     "name": "Bonus Unarmed Strike",
+     "type": "text",
+     "value": "You can make an Unarmed Strike as a Bonus Action."
+    },
+    {
+     "name": "Fisticuffs Die",
+     "type": "text",
+     "value": "You can roll 1d8 in place of the normal damage of your Unarmed Strike or Pugilist weapons. This die changes as you gain Pugilist levels, as shown in the Fisticuffs column of the Pugilist Features table."
+    },
+    {
+     "name": "Improved Improvisation",
+     "type": "text",
+     "value": "Your talent for turning everything into a weapon allows you to use the mastery properties of Improvised Weapons. All Improvised Weapons count as having the __Sap__ mastery property for you."
+    },
+    {
+     "name": "Iron Chin",
+     "type": "text",
+     "value": "While you are wearing Light or no armor and not wielding a Shield, your base Armor Class equals 12 plus your Constitution modifier."
+    }
+   ],
+   "2": [
+    {
+     "name": "Bloodied But Unbowed",
+     "type": "text",
+     "value": "When you take damage, you can take a Reaction to regain all your expended Moxie. If you are *Bloodied* when you take this Reaction, you also gain Temporary Hit Points equal to four times your Pugilist level. These Temporary Hit Points vanish if any remain when you finish a Short Rest."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't use it again until you finish a Short or Long Rest."
+    },
+    {
+     "name": "Moxie",
+     "type": "text",
+     "value": "Your experiences of beating the odds have given you a moxie you can channel in the midst of battle. This swagger is represented by a number of Moxie Points. Your Pugilist level determines the maximum number of points you have, as shown in the Moxie Points column of the Pugilist Features table."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "You can spend these points to enhance or fuel certain Pugilist features. You start knowing three such features: Brace Up, One-Two Punch, and Stick and Move, each of which is detailed below."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "When you expend a Moxie Point, it is unavailable until you finish a Short or Long Rest, at the end of which you regain all your expended points."
+    },
+    {
+     "name": "Brace Up",
+     "type": "text",
+     "value": "You can use a Bonus Action and expend 1 Moxie Point to brace for attacks. When you do so, roll your Fisticuffs die, and gain a number of Temporary Hit Points equal to the number rolled plus your Pugilist level and your Constitution modifier. These Temporary Hit Points vanish if any remain after 10 minutes."
+    },
+    {
+     "name": "One-Two Punch",
+     "type": "text",
+     "value": "You can expend 1 Moxie Point to make two Unarmed Strikes as a Bonus Action."
+    },
+    {
+     "name": "Stick and Move",
+     "type": "text",
+     "value": "You can use a Bonus Action and expend 1 Moxie Point to make an Unarmed Strike and take the Dash or Disengage action."
+    },
+    {
+     "name": "Swagger Streak",
+     "type": "text",
+     "value": "When you fail a Strength, Dexterity, Constitution, or Charisma check, you can expend a Moxie to attempt to swagger your way to success. Roll your Fisticuffs die and add the number rolled to the ability check, potentially turning it into a success. If the ability check still fails, you regain the expended Moxie Point and can't use this feature again until you finish a Short or Long Rest."
+    }
+   ],
+   "3": [
+    {
+     "name": "Heavy Hitter",
+     "type": "text",
+     "value": "When you hit a creature with an Unarmed Strike, you can use both the Damage and your choice of the Grapple or Shove option."
+    },
+    {
+     "name": "Pugilist Subclass",
+     "type": "text",
+     "value": "You gain a Pugilist subclass of your choice. A subclass is a specialization that grants you features at certain Pugilist levels. For the rest of your career, you gain each of your subclass's features that are of your Pugilist level or lower."
+    }
+   ],
+   "4": [
+    {
+     "name": "Ability Score Improvement",
+     "type": "text",
+     "value": "You gain the __Ability Score Improvement__ feat or another [feat](https://5e.tools/feats.html) of your choice for which you qualify."
+    },
+    {
+     "name": "Dig Deep",
+     "type": "text",
+     "value": "You can use a Bonus Action to dig deep. For 10 minutes, you have Resistance to Bludgeoning, Piercing, and Slashing damage and you ignore the effects of Exhaustion levels less than 6."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't use it again until you finish a Long Rest unless you gain 1 Exhaustion level (no action required by you) to restore your use of it."
+    }
+   ],
+   "5": [
+    {
+     "name": "Extra Attack",
+     "type": "text",
+     "value": "You can attack twice instead of once whenever you take the Attack action on your turn."
+    },
+    {
+     "name": "Haymaker",
+     "type": "text",
+     "value": "When you make an attack with an Unarmed Strike or Pugilist weapon, you can expend 1 Moxie to swing with wild abandon. On a hit, regain the expended Moxie Point and you deal maximum damage with that attack."
+    }
+   ],
+   "6": [
+    {
+     "name": "Moxie-Fueled Fists",
+     "type": "text",
+     "value": "Whenever you deal damage with your Unarmed Strike or an attack with an improvised weapon, it can deal your choice of Force damage or its normal damage type."
+    },
+    {
+     "name": "Subclass Feature",
+     "type": "text",
+     "value": "You gain a feature from your Pugilist Subclass."
+    }
+   ],
+   "7": [
+    {
+     "name": "Down But Not Out",
+     "type": "text",
+     "value": "When you use your Bloodied But Unbowed while you are *Bloodied*, you can add a bonus to the damage of your Unarmed Strikes and attacks with Pugilist weapons for the next minute. This bonus equals your Constitution modifier plus the number of levels of Exhaustion you have."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+    }
+   ],
+   "8": [
+    {
+     "name": "Ability Score Improvement",
+     "type": "text",
+     "value": "You gain the __Ability Score Improvement__ feat or another [feat](https://5e.tools/feats.html) of your choice for which you qualify."
+    }
+   ],
+   "9": [
+    {
+     "name": "School of Hard Knocks",
+     "type": "text",
+     "value": "Once per turn, you can deal an extra **1d12** damage when you hit with an Unarmed Strike or attack with a Pugilist weapon. This damage is the same type dealt by the weapon or Unarmed Strike. You can forgo this extra damage to apply one of the following effects."
+    },
+    {
+     "name": "Endanger",
+     "type": "text",
+     "value": "The next time the creature is hit by an attack, the attack deals the maximum result of the attack's damage dice rather than rolling."
+    },
+    {
+     "name": "Provoke",
+     "type": "text",
+     "value": "The creature has Disadvantage on attack rolls against creatures other than you until the end of your next turn."
+    }
+   ],
+   "10": [
+    {
+     "name": "Herculean",
+     "type": "text",
+     "value": "You gain the following benefits."
+    },
+    {
+     "name": "Heavy Lifter",
+     "type": "text",
+     "value": "Your Strength score is doubled when determining your carrying capacity."
+    },
+    {
+     "name": "Pillar Breaker",
+     "type": "text",
+     "value": "When you hit an object with an Unarmed Strike, the hit is a Critical Hit."
+    },
+    {
+     "name": "Unmatched Athlete",
+     "type": "text",
+     "value": "Your jump distance is doubled."
+    },
+    {
+     "name": "Shake It Off",
+     "type": "text",
+     "value": "With unflappable resolve, you can remove one of the following conditions from yourself at the start of each of your turns: Blinded, Charmed, Deafened, one level of Exhaustion, Frightened, Paralyzed, Poisoned, Restrained, or Stunned."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't use it again until you finish a Long Rest unless you take a level of Exhaustion (no action required by you) to restore your use of it."
+    }
+   ],
+   "11": [
+    {
+     "name": "Subclass Feature",
+     "type": "text",
+     "value": "You gain a feature from your Pugilist Subclass."
+    }
+   ],
+   "12": [
+    {
+     "name": "Ability Score Improvement",
+     "type": "text",
+     "value": "You gain the __Ability Score Improvement__ feat or another [feat](https://5e.tools/feats.html) of your choice for which you qualify."
+    }
+   ],
+   "13": [
+    {
+     "name": "Dig Deeper",
+     "type": "text",
+     "value": "You can use a Bonus Action to dig deeper. For 1 minute, you have all the benefits of your Dig Deep and can use your School of Hard Knocks twice per turn instead of once."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't use it again until you finish a Long Rest. Starting at level 20, you can use it twice before a Long Rest."
+    }
+   ],
+   "14": [
+    {
+     "name": "Unbreakable",
+     "type": "text",
+     "value": "You have Advantage on Strength, Dexterity, and Constitution saving throws."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Additionally, whenever you make a saving throw and fail, you can expend 1 Moxie to reroll it, and you must use the new roll."
+    }
+   ],
+   "15": [
+    {
+     "name": "Pugnacious",
+     "type": "text",
+     "value": "When you roll Initiative, you can remove one level of Exhaustion on yourself and regain your uses of Down But Not Out, Dig Deep, and Shake It Off."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+    }
+   ],
+   "16": [
+    {
+     "name": "Ability Score Improvement",
+     "type": "text",
+     "value": "You gain the __Ability Score Improvement__ feat or another [feat](https://5e.tools/feats.html) of your choice for which you qualify."
+    }
+   ],
+   "17": [
+    {
+     "name": "Subclass Feature",
+     "type": "text",
+     "value": "You gain a feature from your Pugilist Subclass."
+    }
+   ],
+   "18": [
+    {
+     "name": "Fighting Spirit",
+     "type": "text",
+     "value": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. When you do, you gain Temporary Hit Points equal to half of your maximum Hit Points, regain all your expended Moxie, and have Resistance to all damage except Force for the next minute."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+    }
+   ],
+   "19": [
+    {
+     "name": "Epic Boon",
+     "type": "text",
+     "value": "You gain an Epic Boon feat or another feat of your choice for which you qualify. __Boon of Combat Prowess__ is recommended."
+    }
+   ],
+   "20": [
+    {
+     "name": "Peak Physical Condition",
+     "type": "text",
+     "value": "Your strength and resilience are the stuff of legends. You gain the following benefits."
+    },
+    {
+     "name": "Hale and Hearty",
+     "type": "text",
+     "value": "Your Strength and Constitution scores increase by 2, to a maximum of 23."
+    },
+    {
+     "name": "Sleep It Off",
+     "type": "text",
+     "value": "When you finish a Long Rest and you have the Exhaustion condition, you lose all levels of Exhaustion."
+    },
+    {
+     "name": "Vim and Vigor",
+     "type": "text",
+     "value": "When you finish a Short Rest, you regain Hit Points equal to twice your Pugilist level."
+    }
+   ]
+  },
+  "subclassLevelFeatures": {
+   "Dog And Hound (PUGILIST2024)": {
+    "3": [
+     {
+      "name": "Dog And Hound (PUGILIST2024) Features",
+      "type": "text",
+      "value": "*Fight Side by Side with a Brawler's Best Friend*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Pugilists know what it's like to be an underdog, so it's no surprise some form a battleforged bond with a canine companion. They're used to being disappointed by friends that walk on two legs but a friend on four is as loyal as they come. When a fight breaks out, this duo's bite is even worse than its bark."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Brawler's Best Friend (PUGILIST2024)__: You summon and form a bond with a wild or stray dog, which draws strength from your bottomless well of resilience using the __Hound__ stat block."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The hound is Friendly to you and your allies and obeys your commands. It flees if you die."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "[See Hound's stats here](https://5e.tools/bestiary.html#hound_pugilist2024)"
+     },
+     {
+      "name": "The Hound in Combat",
+      "type": "text",
+      "value": "In combat, the hound acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the hound to take the Bite action. If you have the Incapacitated condition, the hound acts on its own and isn't limited to the Dodge action."
+     },
+     {
+      "name": "Restoring or Replacing the Hound",
+      "type": "text",
+      "value": "If the hound died within the last hour, you can take a Magic action to touch it and expend 2 Moxie. The hound returns to life after 1 minute with all its Hit Points restored."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Whenever you finish a Long Rest, you can summon and bond with a new dog, which appears in an unoccupied space within 5 feet of you. If you already have a hound from this feature, the old one vanishes when the new one appears."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Mutt With Moxie (PUGILIST2024)__: You share everything with your faithful hound: food, shelter, even moxie. When you use abilities granted by your Moxie feature, your hound gains a benefit as well."
+     },
+     {
+      "name": "Brace Up",
+      "type": "text",
+      "value": "When you gain Temporary Hit Points from your Brace Up ability, your hound gains the same number of Temporary Hit Points."
+     },
+     {
+      "name": "One-Two Punch",
+      "type": "text",
+      "value": "When you use your One-Two Punch ability, your hound can make one or both attacks instead of you."
+     },
+     {
+      "name": "Stick and Move",
+      "type": "text",
+      "value": "When you use your Stick and Move ability, your hound can take your choice of the Dash, Disengage, or Help action."
+     }
+    ],
+    "6": [
+     {
+      "name": "Dog And Hound (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When you make an attack against a creature and your hound is within 5 feet of it, your hound can take a Reaction to give your attack Advantage. On a hit, you deal an extra **3d4** damage."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Additionally, whenever your hound hits with an attack roll and deals damage, it can deal your choice of Force damage or its normal damage type."
+     }
+    ],
+    "11": [
+     {
+      "name": "Dog And Hound (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When a creature deals damage to your hound with an attack, you can take a Reaction to move up to half your Speed and make one melee attack with a Pugilist weapon or an Unarmed Strike against that creature."
+     }
+    ],
+    "17": [
+     {
+      "name": "Dog And Hound (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When your hound takes damage that causes it to become *Bloodied* or takes damage while it is *Bloodied*, you can take a Reaction to let your hound off the chain. When you do so, the hound gains Temporary Hit Points equal to five times your Pugilist level and, for the next minute, its Speed increases by 15 feet and you can command it to use its Bite without taking a Bonus Action."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending 3 Moxie (no action required)."
+     }
+    ]
+   },
+   "Hand Of Dread (PUGILIST2024)": {
+    "3": [
+     {
+      "name": "Hand Of Dread (PUGILIST2024) Features",
+      "type": "text",
+      "value": "*Dabble With Dread Powers*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In your darkest hour, you pleaded for the strength to take what you wanted from the world and a dread power took notice. At first, you may have relished the cathartic rush that came with channeling your eldritch might to claim what you felt you deserved, but this pact came with strings attached. In times of distress you hear the entity whispering in the back of your mind, urging you to indulge your most base impulses."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Black Magic (PUGILIST2024)__: As a result of your relationship with your dread power, you gain the following benefits."
+     },
+     {
+      "name": "Two Cantrips",
+      "type": "text",
+      "value": "You learn two cantrips of your choice from the Warlock spell list. Constitution is your spellcasting ability for your Black Magic spells."
+     },
+     {
+      "name": "Level 1 Spell",
+      "type": "text",
+      "value": "Choose a level 1 spell from the Warlock spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have."
+     },
+     {
+      "name": "Spell Change",
+      "type": "text",
+      "value": "Whenever you gain a new level, you can replace one of the spells you chose with this feature with a different spell of the same level from the Warlock spell list."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Dread Hand (PUGILIST2024)__: When you take the Attack action on your turn, you can manifest the evidence of your foul pledge to otherworldly powers. When you do, one of your limbs transmogrifies into a monstrous appearance reminiscent of your dread power and you gain the benefits below for 1 minute. Once you use this feature, you can't use it again until you finish a Short or Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "*A dread power can be any powerful malevolent entity capable of bestowing a portion of its power onto a mortal. Archdemons, Fey royalty, ancient liches, and unfathomable intelligences from beyond space and time are all possibilities.*"
+     },
+     {
+      "name": "Revenging Strike",
+      "type": "text",
+      "value": "When you are hit by a melee attack, you can take a Reaction to make an Unarmed Strike against the creature that attacked you if it is within reach."
+     },
+     {
+      "name": "Unslakeable Bloodlust",
+      "type": "text",
+      "value": "When you hit a target with an Unarmed Strike, you can roll the attack's damage dice twice and use either roll against the target."
+     },
+     {
+      "name": "Whirlwind of Violence",
+      "type": "text",
+      "value": "The first time you miss with an Unarmed Strike each turn, you can reroll the attack and must use the new result."
+     }
+    ],
+    "6": [
+     {
+      "name": "Hand Of Dread (PUGILIST2024) Features",
+      "type": "text",
+      "value": "You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice."
+     },
+     {
+      "name": "Cloak of Shadows",
+      "type": "text",
+      "value": "You can cast __Invisibility__ once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest."
+     },
+     {
+      "name": "Mask of Many Faces",
+      "type": "text",
+      "value": "You can cast __Disguise Self__ without expending a spell slot."
+     },
+     {
+      "name": "Otherworldly Walk",
+      "type": "text",
+      "value": "You can cast __Misty Step__ once without a spell slot, and you regain the ability to cast it in this way when you finish a Short or Long Rest."
+     }
+    ],
+    "11": [
+     {
+      "name": "Hand Of Dread (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When you use your __Dread Hand__ feature, you gain the benefits of the Enlarge effect of the __Enlarge/Reduce__ spell and have a 10-foot reach."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Long Rest unless you take a level of Exhaustion (no action required by you) to restore your use of it."
+     }
+    ],
+    "17": [
+     {
+      "name": "Hand Of Dread (PUGILIST2024) Features",
+      "type": "text",
+      "value": "You can take a Magic action and expend 6 Moxie to attempt to execute a creature of your choice within reach by magically burrowing your hand into its body and extracting its innards. The creature must make a Dexterity saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failure, the creature takes 100 Piercing damage. On a success, the creature takes 50 Piercing damage instead."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "If this damage reduces the target to 0 Hit Points, it immediately dies as you rip a hole through it, creating a stomach-turning fountain of viscera. When this happens, each creature of your choice within a 30-foot Emanation originating from you must succeed on a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or have the Frightened condition for 1 minute. A creature that fails the saving throw can repeat the Wisdom saving throw again at the end of each of its turns, ending the Frightened condition on itself on a success."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you must finish a Long Rest before you can use it again."
+     }
+    ]
+   },
+   "Piss And Vinegar (PUGILIST2024)": {
+    "3": [
+     {
+      "name": "Piss And Vinegar (PUGILIST2024) Features",
+      "type": "text",
+      "value": "*Throw Barbs and Hands*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Some Pugilists revel in their reputations as heels, happily playing up their bad behavior for notoriety. Despised by their enemies for their obscene curses and dirty tricks, these Pugilists take pride in their ability to provoke and willingness to win fights at any cost."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Bad Attitude (PUGILIST2024)__: You gain proficiency in the *Intimidation* skill if you don't have it already. Additionally, you gain a bonus to checks using this skill equal to your Strength modifier (minimum bonus of +1)."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Salty Salute (PUGILIST2024)__: You have mastered the art of the enraging insult. As a Bonus Action, you can provoke a creature within 60 feet that can see or hear you. That creature must succeed on a Wisdom saving throw or take Psychic damage equal to a roll of your Fisticuffs die plus your Constitution modifier and have Disadvantage on any attack rolls it makes against creatures other than you until the start of your next turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The saving throw DC for this and all other features from this subclass equals 8 plus your Constitution modifier and Proficiency Bonus."
+     }
+    ],
+    "6": [
+     {
+      "name": "Piss And Vinegar (PUGILIST2024) Features",
+      "type": "text",
+      "value": "You have a few tricks up your sleeve to even the odds when the going gets tough. You can use one of the following Dirty Tricks. You can use one Dirty Trick each turn, and once you use a dirty trick, you can't use that trick again until you finish a Short or Long Rest."
+     },
+     {
+      "name": "Heelstomper",
+      "type": "text",
+      "value": "When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, the creature must succeed on a Dexterity saving throw or its Speed is reduced to 0 for one minute. An affected creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
+     },
+     {
+      "name": "Low Blow",
+      "type": "text",
+      "value": "When you deal damage to a creature with an Unarmed Strike or Pugilist weapon, you can hit the creature below the belt. When you do, the creature must succeed on a Strength saving throw or attacks against the creature have Advantage until the end of your next turn."
+     },
+     {
+      "name": "Pocket Sand",
+      "type": "text",
+      "value": "As a Bonus Action, you toss detritus into the eyes of a creature within 10 feet. The creature must succeed on a Constitution saving throw or have the Blinded condition until the end of its next turn."
+     }
+    ],
+    "11": [
+     {
+      "name": "Piss And Vinegar (PUGILIST2024) Features",
+      "type": "text",
+      "value": "You can offend every creature in the room with the flick of a wrist and a few curt words. As a Bonus Action, you can choose a number of targets within 30 feet of yourself that can see or hear you up to your level in this class. Each chosen creature must succeed on a Wisdom saving throw or take Psychic damage equal to a roll of your Fisticuffs die plus your Constitution modifier and have Disadvantage on attack rolls it makes against creatures other than you until the start of your next turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you must finish a Short or Long Rest before you use it again. You can also restore your use of it by expending 3 Moxie (no action required)."
+     }
+    ],
+    "17": [
+     {
+      "name": "Piss And Vinegar (PUGILIST2024) Features",
+      "type": "text",
+      "value": "You gain the following additional Dirty Tricks. You can use one Dirty Trick each turn, and once you use a dirty trick, you can't use that trick again until you finish a Short or Long Rest."
+     },
+     {
+      "name": "Rabbit Punch",
+      "type": "text",
+      "value": "When you hit a creature with an Unarmed Strike or a Pugilist weapon, you strike its head. Until the end of your next turn, the creature loses Resistance to Psychic damage if it has it and has Disadvantage on saving throws."
+     },
+     {
+      "name": "Sucker Punch",
+      "type": "text",
+      "value": "When you hit a creature with an Unarmed Strike or Pugilist weapon, you can turn the hit into a Critical Hit. For this Critical Hit, you roll the attack's damage dice three times and add them together, instead of twice as normal."
+     }
+    ]
+   },
+   "Squared Circle (PUGILIST2024)": {
+    "3": [
+     {
+      "name": "Squared Circle (PUGILIST2024) Features",
+      "type": "text",
+      "value": "*Drop and Lock Your Foes*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Pugilists who fight in the Squared Circle know the fastest way to win a fight is to force a submission. These wrestlers focus on controlling their most powerful opponents with chokeholds and arm bars, forcing the enemy to fight on the Pugilist's terms."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Groundwork (PUGILIST2024)__: You gain the following benefits."
+     },
+     {
+      "name": "Compression Lock",
+      "type": "text",
+      "value": "When you start your turn with one or more creatures Grappled, you can deal Bludgeoning damage to each creature you have Grappled (no action required). The damage equals one roll of your Fisticuffs die plus your Strength modifier."
+     },
+     {
+      "name": "Inescapable",
+      "type": "text",
+      "value": "When a creature makes a saving throw or ability check against your grapple or shove DC, you can expend 1 Moxie to give that roll Disadvantage."
+     },
+     {
+      "name": "Stop and Drop",
+      "type": "text",
+      "value": "When you hit a creature with an Unarmed Strike and don't use a mastery property as part of the attack, you can use both the Grapple and Shove option."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Muscle Mass (PUGILIST2024)__: Choose the *Acrobatics* or *Athletics* skill. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it."
+     }
+    ],
+    "6": [
+     {
+      "name": "Squared Circle (PUGILIST2024) Features",
+      "type": "text",
+      "value": "While you have a creature Grappled, you gain Half Cover against attacks made by creatures you aren't Grappling. When a creature you aren't Grappling misses you with an attack roll, you can take a Reaction and expend 1 Moxie to force that creature make the same attack with a new attack roll against a creature you are Grappling."
+     }
+    ],
+    "11": [
+     {
+      "name": "Squared Circle (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When you use the Grapple or Shove option of your Unarmed Strike, you count as being one size larger. Additionally, you don't have to spend extra movement to move a creature Grappled by you if the creature is your size or smaller."
+     }
+    ],
+    "17": [
+     {
+      "name": "Squared Circle (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When a creature ends its turn Grappled by you, you can take a Reaction to force it to make a Constitution saving throw against your grapple's escape DC or have the Incapacitated condition until the end of its next turn. If the creature is *Bloodied* and already Incapacitated by this feature, its Hit Points are reduced to 0 instead."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature to reduce a creature to 0 Hit Points, you can't use it again until you finish a Long Rest."
+     }
+    ]
+   },
+   "Street Saint (PUGILIST2024)": {
+    "3": [
+     {
+      "name": "Street Saint (PUGILIST2024) Features",
+      "type": "text",
+      "value": "*Devote Yourself to Prayer and Pummeling*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Pugilists rise above the adversity they face. Those known as Street Saints do so with the aid of their deep and abiding faith in the gods. These Pugilists were tested and came out the other side with their righteous resolve to live in service to the gods strengthened. A resolve their gods have taken note of."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Channel Divinity (PUGILIST2024)__: You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with two such effects: Fists of Faith and Grace of the Gods. Each time you use this subclass's Channel Divinity, you choose which effect from this subclass to create."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this subclass's Channel Divinity, you can't use it again until you finish a Short or Long Rest."
+     },
+     {
+      "name": "Fists of Faith",
+      "type": "text",
+      "value": "As a Bonus Action, you can imbue your fists with righteous fury. For the next minute, your Unarmed Strikes deal an extra **1d4** Radiant damage or 2d4 if the target is a Fiend or Undead."
+     },
+     {
+      "name": "Grace of the Gods",
+      "type": "text",
+      "value": "As a Bonus Action, you beseech the gods for their grace. For the next minute, you have Resistance to Necrotic damage and when you make a saving throw you can roll 1d4 and add it to the result."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Lay On Hands (PUGILIST2024)__: Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points equal to three times your Pugilist level."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature."
+     }
+    ],
+    "6": [
+     {
+      "name": "Street Saint (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When you use your Bloodied But Unbowed, you can fully replenish your __Lay On Hands__ healing pool."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+     }
+    ],
+    "11": [
+     {
+      "name": "Street Saint (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When you use your Dig Deep, you can radiate a protective, unseeable aura in a 10-foot Emanation that originates from you for the next 10 minutes. The aura is inactive while you have the Incapacitated condition. Your allies within the aura gain Resistance to Bludgeoning, Piercing, and Slashing damage."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you must finish a Long Rest before you can use it again."
+     }
+    ],
+    "17": [
+     {
+      "name": "Street Saint (PUGILIST2024) Features",
+      "type": "text",
+      "value": "Once on each of your turns when you hit a creature with an Unarmed Strike or Pugilist weapon, you can expend a number of points from your __Lay On Hands__ healing pool to deal extra Radiant damage to the target, to a maximum of your Pugilist level. The damage equals the number of points expended, or twice as much if the target is a Fiend or Undead."
+     }
+    ]
+   },
+   "Sweet Science (PUGILIST2024)": {
+    "3": [
+     {
+      "name": "Sweet Science (PUGILIST2024) Features",
+      "type": "text",
+      "value": "*Float Like a Butterfly, Sting Like a Bee*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Pugilists who practice the Sweet Science hit hard, fast, and often. These Pugilists sometimes battle for the entertainment of the upper classes, but just as often duke it out in back alleys and bars where their next breath depends on a knockout."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Bare Knuckle Boxer (PUGILIST2024)__: Your attacks with Unarmed Strikes can score a Critical Hit on a roll of 19 or 20 on the d20."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Cross Counter (PUGILIST2024)__: You can block the brunt of an attack and launch one of your own in the same fluid motion. When you take damage from a melee attack, you can take a Reaction and expend 1 Moxie to reduce the damage dealt to you by that attack by 1d10 plus your Strength modifier and Pugilist level."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "If you reduce the damage to 0, you can make an Unarmed Strike or attack with a Pugilist weapon against a creature within your reach as part of the same Reaction."
+     }
+    ],
+    "6": [
+     {
+      "name": "Sweet Science (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When you deal damage with an Unarmed Strike against a creature, instead of also choosing the Grapple or Shove option with your Heavy Hitter, you can give yourself Advantage on attack rolls you make against that target before the start of your next turn."
+     }
+    ],
+    "11": [
+     {
+      "name": "Sweet Science (PUGILIST2024) Features",
+      "type": "text",
+      "value": "When you use your __Cross Counter__ and reduce the triggering damage to 0, you regain 1 Moxie."
+     }
+    ],
+    "17": [
+     {
+      "name": "Sweet Science (PUGILIST2024) Features",
+      "type": "text",
+      "value": "You gain the following benefits."
+     },
+     {
+      "name": "Coldcock",
+      "type": "text",
+      "value": "When you score a Critical Hit against a creature, it must make a Constitution saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, it has the Unconscious condition for 1 minute or until it takes any damage."
+     },
+     {
+      "name": "Uppercut",
+      "type": "text",
+      "value": "When you hit a creature with an Unarmed Strike you can take a Reaction and expend 1 Moxie to make the attack a Critical Hit. Once you take this Reaction, you can't do so again until you finish a Short or Long Rest."
+     }
+    ]
+   }
+  }
  }
 ]

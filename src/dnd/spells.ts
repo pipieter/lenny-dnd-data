@@ -18,7 +18,7 @@ interface Caster {
     source: string;
 }
 
-interface Spell {
+export interface ParsedSpell {
     name: string;
     source: string;
     level: string;
@@ -82,7 +82,7 @@ function getCasters(spell: any, sources: any[]): any[] {
     return casters;
 }
 
-function getSpell(spell: any, fluffs: any[], sources: any): Spell {
+function getSpell(spell: any, fluffs: any[], sources: any): ParsedSpell {
     return {
         name: spell.name,
         source: spell.source,
@@ -105,7 +105,7 @@ interface GetSpellsArgs {
     sourcesPaths?: string[];
 }
 
-export function getSpells(databank: Databank): Spell[] {
+export function getSpells(databank: Databank): ParsedSpell[] {
     const spells = databank.spell;
     const fluffs = databank.spellFluff;
     const sources = databank.spellSource;

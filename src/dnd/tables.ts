@@ -33,7 +33,7 @@ export interface TableData {
     chapter?: any;
 }
 
-interface ParsedTable {
+export interface ParsedTable {
     name: string;
     source: string;
     url: string;

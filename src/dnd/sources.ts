@@ -1,7 +1,7 @@
 import { Databank } from '../data';
 import { entrySort } from '../util';
 
-interface Source {
+export interface ParsedSource {
     id: string;
     name: string;
     source: string;
@@ -10,7 +10,7 @@ interface Source {
     group: string;
 }
 
-export function getSources(data: Databank): Source[] {
+export function getSources(data: Databank): ParsedSource[] {
     const books = [...data.book, ...data.adventure];
     const result = books.map((book: any) => ({
         id: book.id,

@@ -10,7 +10,7 @@ export interface Rule {
     entries: any[];
 }
 
-interface ParsedRule {
+export interface ParsedRule {
     name: string;
     source: string;
     url: string;

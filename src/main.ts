@@ -1,5 +1,5 @@
 import { getConditionsStatusesAndDiseases } from './dnd/conditions';
-import { Databank, OfficialDatabank, PartneredDatabank, write } from './data';
+import { Databank, OfficialDatabank, PartneredDatabank } from './data';
 import { getSpells } from './dnd/spells';
 import { getCreatures } from './dnd/creatures';
 import { StopwatchLogger } from './util';
@@ -20,28 +20,12 @@ import { getVehicles } from './dnd/vehicles';
 import { getSkills } from './dnd/skills';
 import * as kleur from 'kleur';
 import { getDeities } from './dnd/deities';
-import { createHash } from 'crypto';
 import { getCults } from './dnd/cults';
 import { getBoons } from './dnd/boons';
+import { ParsedDatabank } from './parsed';
 
-const filteredData = new Set<string>(); // Stores hashes of data that has been written to files already.
-export function filter(contents: object[]): object[] {
-    const filtered: object[] = [];
-
-    for (const content of contents) {
-        const hash = createHash('sha256')
-            .update(JSON.stringify(content, Object.keys(content).sort()))
-            .digest('hex');
-
-        if (filteredData.has(hash)) continue;
-        filteredData.add(hash);
-        filtered.push(content);
-    }
-
-    return filtered;
-}
-
-function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) {
+function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): ParsedDatabank {
+    const parsed = new ParsedDatabank();
     stopwatch.log(`Generating ${name}`, kleur.cyan);
 
     const items = getItems(databank);
@@ -110,31 +94,33 @@ function generate(name: string, databank: Databank, stopwatch: StopwatchLogger) 
     const boons = getBoons(databank);
     stopwatch.log('Boons retrieved.');
 
-    write(`./generated/${name}/items.json`, filter(items));
-    write(`./generated/${name}/itemsvariants.json`, filter(itemVariants));
-    write(`./generated/${name}/spells.json`, filter(spells));
-    write(`./generated/${name}/conditions.json`, filter(conditions));
-    write(`./generated/${name}/diseases.json`, filter(diseases));
-    write(`./generated/${name}/deities.json`, filter(deities));
-    write(`./generated/${name}/creatures.json`, filter(creatures));
-    write(`./generated/${name}/classes.json`, filter(classes));
-    write(`./generated/${name}/classfeats.json`, filter(classFeats));
-    write(`./generated/${name}/rules.json`, filter(rules));
-    write(`./generated/${name}/actions.json`, filter(actions));
-    write(`./generated/${name}/feats.json`, filter(feats));
-    write(`./generated/${name}/languages.json`, filter(languages));
-    write(`./generated/${name}/names.json`, filter(names));
-    write(`./generated/${name}/backgrounds.json`, filter(backgrounds));
-    write(`./generated/${name}/tables.json`, filter(tables));
-    write(`./generated/${name}/species.json`, filter(species));
-    write(`./generated/${name}/sources.json`, filter(sources));
-    write(`./generated/${name}/traps.json`, filter(traps));
-    write(`./generated/${name}/hazards.json`, filter(hazards));
-    write(`./generated/${name}/objects.json`, filter(objects));
-    write(`./generated/${name}/vehicles.json`, filter(vehicles));
-    write(`./generated/${name}/skills.json`, filter(skills));
-    write(`./generated/${name}/cults.json`, filter(cults));
-    write(`./generated/${name}/boons.json`, filter(boons));
+    parsed.items.push(...items);
+    parsed.itemsvariants.push(...itemVariants);
+    parsed.spells.push(...spells);
+    parsed.conditions.push(...conditions);
+    parsed.diseases.push(...diseases);
+    parsed.deities.push(...deities);
+    parsed.creatures.push(...creatures);
+    parsed.classes.push(...classes);
+    parsed.classfeats.push(...classFeats);
+    parsed.rules.push(...rules);
+    parsed.actions.push(...actions);
+    parsed.feats.push(...feats);
+    parsed.languages.push(...languages);
+    parsed.names.push(...names);
+    parsed.backgrounds.push(...backgrounds);
+    parsed.tables.push(...tables);
+    parsed.species.push(...species);
+    parsed.sources.push(...sources);
+    parsed.traps.push(...traps);
+    parsed.hazards.push(...hazards);
+    parsed.objects.push(...objects);
+    parsed.vehicles.push(...vehicles);
+    parsed.skills.push(...skills);
+    parsed.cults.push(...cults);
+    parsed.boons.push(...boons);
+
+    return parsed;
 }
 
 function main(): void {
@@ -145,12 +131,20 @@ function main(): void {
 
     stopwatch.log('Loaded databanks');
 
-    generate('official', official, stopwatch);
-    generate('partnered', partnered, stopwatch);
+    const parsedOfficial = parse('official', official, stopwatch);
+    const parsedPartnered = parse('partnered', partnered, stopwatch);
+
+    const officialSources = new Set(parsedOfficial.sources.map((source) => source.source));
+    parsedPartnered.removeSources(officialSources);
+
+    parsedOfficial.write('./generated/official/');
+    parsedPartnered.write('./generated/partnered/');
 
     // In case homebrew content needs to be enabled, uncomment the following lines
     // const homebrew = new PartneredDatabank(official, { partnered: false, allowPHB2014: false });
-    // generate('homebrew', homebrew, stopwatch);
+    // const parsedHomebrew = parse('homebrew', homebrew, stopwatch);
+    // parsedHomebrew.removeSources(officialSources)
+    // parsedHomebrew.write("./generated/homebrew/")
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
