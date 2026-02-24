@@ -281,6 +281,7 @@ export class PartneredDatabank extends Databank {
             'itemEntry',
             'itemMastery',
             'monster', // TODO these should be removed after
+            'item', // TODO These should be removed after
             'monsterFluff',
             'race',
             'raceFluff',
