@@ -16,6 +16,7 @@ export default tseslint.config(
         'warn',
         { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
       ],
+      "no-console": "error",
 
       // IGNORE
       'no-useless-escape': 'off',
