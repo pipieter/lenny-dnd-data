@@ -372,6 +372,7 @@ function filter(text: string, _noFormat: boolean): string {
 
 function footnote(text: string, noFormat: boolean): string {
     // Footnote allows people to hover over and see extra information in 5e.tools, we can't do this in discord.
+    text = text.replaceAll(pattern('footnote', 3), `$1 ($2)`);
     text = text.replaceAll(pattern('footnote', 2), `$1 ($2)`);
     return text;
 }
