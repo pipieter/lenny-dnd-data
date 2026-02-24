@@ -273,6 +273,7 @@ export class PartneredDatabank extends Databank {
         this.filters = { ...filters };
 
         // Load in some data from the official content
+        // The data from the official sources is later removed by ParsedDatabank.removeSources
         const entriesToCopy = [
             'itemType',
             'itemGroup',
@@ -280,8 +281,8 @@ export class PartneredDatabank extends Databank {
             'itemTypeAdditionalEntries',
             'itemEntry',
             'itemMastery',
-            'monster', // TODO these should be removed after
-            'item', // TODO These should be removed after
+            'monster',
+            'item',
             'monsterFluff',
             'race',
             'raceFluff',
