@@ -309,8 +309,48 @@ function addMod_Single(base: any, key: any, mod: any): void {
 }
 
 function addMod(base: any, mods: any): void {
+    // Some mods take priority over others, and should be handled first
+    const modsPriority = [
+        'replaceArr',
+        'addSkills',
+        'addSpells',
+        'appendArr',
+        'appendIfNotExistsArr',
+        'insertArr',
+        'prependArr',
+        'removeArr',
+        'removeSpells',
+        'renameArr',
+        'replaceOrAppendArr',
+        'replaceSpells',
+        'scalarAddHit',
+        'setProp',
+        'replaceTxt',
+    ];
+
     for (const [key, modEntries_] of Object.entries(mods)) {
-        const modEntries = variadic(modEntries_);
+        // Handle the mods in a specific order, as determined by modsPriority
+        const modEntries = variadic(modEntries_).sort((a: string | any, b: string | any) => {
+            // If a and b are both strings (most likely remove then), do a locale string compare
+            if (typeof a === 'string' && typeof b === 'string') {
+                return a.localeCompare(b);
+            }
+            // if a is a string and b isn't, do a first
+            else if (typeof a === 'string') return 1;
+            // if b is a string and a isn't, do b first
+            else if (typeof b === 'string') return -1;
+
+            const ia = modsPriority.indexOf(a.mode);
+            const ib = modsPriority.indexOf(b.mode);
+
+            if (ia === -1) throw `addMod: unknown mod interaction' ${a.mode}'`;
+            if (ib === -1) throw `addMod: unknown mod interaction' ${b.mode}'`;
+
+            // Otherwise, compare the indices of the priority list
+            return ia - ib;
+        });
+
+        
         for (const mod of modEntries) {
             if (typeof mod === 'string') {
                 if (mod === 'remove') {
