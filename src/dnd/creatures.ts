@@ -1,5 +1,4 @@
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
-import { findEntry } from '../5etools-conversion/find';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import {
@@ -370,7 +369,7 @@ export function getCreatures(databank: Databank): ParsedCreature[] {
     // Parse creatures
     const parsed: ParsedCreature[] = [];
     for (const creature of creatures) {
-        const fluff = findEntry(fluffs, creature.name, creature.source);
+        const fluff = fluffs.find((fluff) => fluff.name === creature.name && fluff.source === creature.source);
         parsed.push(buildCreature(creature, fluff));
     }
 
