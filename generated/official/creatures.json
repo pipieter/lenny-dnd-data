@@ -42784,6 +42784,99 @@
   "bonusActions": []
  },
  {
+  "name": "Azal",
+  "source": "WDMM",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDMM/Azal.webp",
+  "url": "https://5e.tools/bestiary.html#azal_wdmm",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "13",
+      "18",
+      "15",
+      "16",
+      "17",
+      "12"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+4",
+      "+2",
+      "+3",
+      "+3",
+      "+1"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+7",
+      "+2",
+      "+6",
+      "+6",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 84 (13d8 + 26)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: arcana +6, insight +6, perception +6",
+     "**Languages**: Gith",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Psychic Defense",
+    "type": "text",
+    "value": "While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The githzerai makes two unarmed strikes."
+   },
+   {
+    "name": "Unarmed Strike",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) bludgeoning damage plus 13 (**3d8**) psychic damage. This is a magic weapon attack."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Azbara Jos",
   "source": "HotDQ",
   "subtitle": "Medium humanoid",
@@ -54476,7 +54569,7 @@
   ],
   "bonusActions": [
    {
-    "name": "Extra Parts",
+    "name": "Fused Form",
     "type": "text",
     "value": "As a bonus action, Berlain can use her extra mouth and arms to cast any cantrip she has prepared."
    }
@@ -182440,115 +182533,6 @@
   "bonusActions": []
  },
  {
-  "name": "Giant Mutated Drow",
-  "source": "WDMM",
-  "subtitle": "Huge giant",
-  "summonedBySpell": null,
-  "summonedByClass": null,
-  "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDMM/Giant%20Mutated%20Drow.webp",
-  "url": "https://5e.tools/bestiary.html#giant%20mutated%20drow_wdmm",
-  "description": [],
-  "fluffInfo": [],
-  "stats": {
-   "name": "Stats",
-   "type": "table",
-   "table": {
-    "type": "table",
-    "title": "Stats",
-    "headers": [
-     "",
-     "STR",
-     "DEX",
-     "CON",
-     "INT",
-     "WIS",
-     "CHA"
-    ],
-    "rows": [
-     [
-      "Score",
-      "27",
-      "10",
-      "22",
-      "12",
-      "16",
-      "16"
-     ],
-     [
-      "Mod.",
-      "+8",
-      "+0",
-      "+6",
-      "+1",
-      "+3",
-      "+3"
-     ],
-     [
-      "Save.",
-      "+8",
-      "+0",
-      "+10",
-      "+1",
-      "+7",
-      "+7"
-     ]
-    ]
-   }
-  },
-  "details": {
-   "name": "",
-   "type": "list",
-   "list": {
-    "type": "list",
-    "caption": "",
-    "entries": [
-     "**AC**: 14 (Natural Armor)",
-     "**HP**: 200 (16d12 + 96)",
-     "**Speed**: *walk* 40 Ft.",
-     "**Skills**: insight +7, perception +7",
-     "**Senses**: darkvision 120 ft.",
-     "**Languages**: Elvish, Undercommon",
-     "**CR**: 9"
-    ]
-   }
-  },
-  "traits": [
-   {
-    "name": "Keen Smell",
-    "type": "text",
-    "value": "The giant has advantage on Wisdom (*Perception*) checks that rely on smell."
-   },
-   {
-    "name": "Fey Ancestry",
-    "type": "text",
-    "value": "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
-   },
-   {
-    "name": "Sunlight Sensitivity",
-    "type": "text",
-    "value": "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (*Perception*) checks that rely on sight."
-   }
-  ],
-  "actions": [
-   {
-    "name": "Multiattack",
-    "type": "text",
-    "value": "The giant makes two morningstar attacks."
-   },
-   {
-    "name": "Morningstar",
-    "type": "text",
-    "value": "*Melee Weapon Attack:* +12 to hit, reach 10 ft., one target. *Hit:* 21 (**3d8 + 8**) piercing damage."
-   },
-   {
-    "name": "Rock",
-    "type": "text",
-    "value": "*Ranged Weapon Attack:* +12 to hit, range 60/240 ft., one target. *Hit:* 30 (**4d10 + 8**) bludgeoning damage."
-   }
-  ],
-  "bonusActions": []
- },
- {
   "name": "Giant Octopus",
   "source": "MM",
   "subtitle": "Large beast",
@@ -237565,7 +237549,7 @@
  {
   "name": "Iron Spider",
   "source": "WDMM",
-  "subtitle": "Medium construct",
+  "subtitle": "Large construct",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDMM/Iron%20Spider.webp",
@@ -237633,7 +237617,18 @@
     ]
    }
   },
-  "traits": [],
+  "traits": [
+   {
+    "name": "Spider Climb",
+    "type": "text",
+    "value": "The iron spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+   },
+   {
+    "name": "Antimagic Susceptibility",
+    "type": "text",
+    "value": "The iron spider is incapacitated while in the area of an __antimagic field__. If targeted by __dispel magic__, the iron spider must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute."
+   }
+  ],
   "actions": [
    {
     "name": "Web Cable",
@@ -245232,7 +245227,7 @@
      "**HP**: 27 (5d8 + 5)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: medicine +7, persuasion +3, religion +5",
-     "**Languages**: any two languages",
+     "**Languages**: Elvish, Undercommon",
      "**CR**: 2"
     ]
    }
@@ -248609,13 +248604,13 @@
   "bonusActions": []
  },
  {
-  "name": "Kavil",
+  "name": "Kavil Mereshanter",
   "source": "WDMM",
   "subtitle": "Medium humanoid",
   "summonedBySpell": null,
   "summonedByClass": null,
-  "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDMM/Kavil.webp",
-  "url": "https://5e.tools/bestiary.html#kavil_wdmm",
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDMM/Kavil%20Mereshanter.webp",
+  "url": "https://5e.tools/bestiary.html#kavil%20mereshanter_wdmm",
   "description": [],
   "fluffInfo": [],
   "stats": {
@@ -288618,7 +288613,7 @@
     "caption": "",
     "entries": [
      "**AC**: 16 (Natural Armor)",
-     "**HP**: 13 (3d8)",
+     "**HP**: 24 (3d8)",
      "**Speed**: *walk* 10 Ft., *fly* 50 Ft.",
      "**Immunities**: poison, psychic; charmed, frightened, paralyzed, petrified, poisoned",
      "**Senses**: darkvision 60 ft.",
@@ -300641,6 +300636,115 @@
     "name": "Bone Blade",
     "type": "text",
     "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 3**) slashing damage plus 3 (**1d6**) radiant damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Mutated Drow",
+  "source": "WDMM",
+  "subtitle": "Huge giant",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDMM/Mutated%20Drow.webp",
+  "url": "https://5e.tools/bestiary.html#mutated%20drow_wdmm",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "27",
+      "10",
+      "22",
+      "12",
+      "16",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+8",
+      "+0",
+      "+6",
+      "+1",
+      "+3",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+8",
+      "+0",
+      "+10",
+      "+1",
+      "+7",
+      "+7"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14 (Natural Armor)",
+     "**HP**: 200 (16d12 + 96)",
+     "**Speed**: *walk* 40 Ft.",
+     "**Skills**: insight +7, perception +7",
+     "**Senses**: darkvision 120 ft.",
+     "**Languages**: Elvish, Undercommon",
+     "**CR**: 9"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Keen Smell",
+    "type": "text",
+    "value": "The giant has advantage on Wisdom (*Perception*) checks that rely on smell."
+   },
+   {
+    "name": "Fey Ancestry",
+    "type": "text",
+    "value": "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+   },
+   {
+    "name": "Sunlight Sensitivity",
+    "type": "text",
+    "value": "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (*Perception*) checks that rely on sight."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The giant makes two morningstar attacks."
+   },
+   {
+    "name": "Morningstar",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +12 to hit, reach 10 ft., one target. *Hit:* 21 (**3d8 + 8**) piercing damage."
+   },
+   {
+    "name": "Rock",
+    "type": "text",
+    "value": "*Ranged Weapon Attack:* +12 to hit, range 60/240 ft., one target. *Hit:* 30 (**4d10 + 8**) bludgeoning damage."
    }
   ],
   "bonusActions": []
@@ -358693,6 +358797,99 @@
   "bonusActions": []
  },
  {
+  "name": "Rishindar",
+  "source": "WDMM",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDMM/Rishindar.webp",
+  "url": "https://5e.tools/bestiary.html#rishindar_wdmm",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "13",
+      "18",
+      "15",
+      "16",
+      "17",
+      "12"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+4",
+      "+2",
+      "+3",
+      "+3",
+      "+1"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+7",
+      "+2",
+      "+6",
+      "+6",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 84 (13d8 + 26)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: arcana +6, insight +6, perception +6",
+     "**Languages**: Gith",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Psychic Defense",
+    "type": "text",
+    "value": "While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The githzerai makes two unarmed strikes."
+   },
+   {
+    "name": "Unarmed Strike",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) bludgeoning damage plus 13 (**3d8**) psychic damage. This is a magic weapon attack."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "River Mist",
   "source": "ToA",
   "subtitle": "Medium humanoid",
@@ -403913,11 +404110,6 @@
     "name": "Magic Weapons",
     "type": "text",
     "value": "The golem's weapon attacks are magical."
-   },
-   {
-    "name": "Magic Theft",
-    "type": "text",
-    "value": "As a bonus action, the golem targets one creature it can see within 30 feet of it. The target must succeed on a DC 17 Charisma saving throw, or all magic items in its possession are teleported to the bottom of the pit in area 31 (WDMM)."
    }
   ],
   "actions": [
@@ -403937,7 +404129,13 @@
     "value": "The golem targets one or more creatures it can see within 10 feet of it. Each target must make a DC 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
    }
   ],
-  "bonusActions": []
+  "bonusActions": [
+   {
+    "name": "Magic Theft",
+    "type": "text",
+    "value": "The golem targets one creature it can see within 30 feet of it. The target must succeed on a DC 17 Charisma saving throw, or all magic items in its possession are teleported to the bottom of the pit in area 31 (WDMM)."
+   }
+  ]
  },
  {
   "name": "Steam Mephit",
@@ -427947,7 +428145,7 @@
      "**HP**: 143 (22d8 + 44)",
      "**Speed**: *walk* 30 Ft.",
      "**Skills**: athletics +9, intimidation +5, perception +6",
-     "**Languages**: any one language (usually Common)",
+     "**Languages**: Common, Dwarvish",
      "**CR**: 9"
     ]
    }
@@ -457119,6 +457317,99 @@
     "name": "Dagger",
     "type": "text",
     "value": "*Melee or Ranged Weapon Attack:* +3 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 3 (**1d4 + 1**) piercing damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Vond",
+  "source": "WDMM",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDMM/Vond.webp",
+  "url": "https://5e.tools/bestiary.html#vond_wdmm",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "13",
+      "18",
+      "15",
+      "16",
+      "17",
+      "12"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+4",
+      "+2",
+      "+3",
+      "+3",
+      "+1"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+7",
+      "+2",
+      "+6",
+      "+6",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 84 (13d8 + 26)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: arcana +6, insight +6, perception +6",
+     "**Languages**: Gith",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Psychic Defense",
+    "type": "text",
+    "value": "While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The githzerai makes two unarmed strikes."
+   },
+   {
+    "name": "Unarmed Strike",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) bludgeoning damage plus 13 (**3d8**) psychic damage. This is a magic weapon attack."
    }
   ],
   "bonusActions": []
@@ -486727,6 +487018,104 @@
     "name": "Rapier",
     "type": "text",
     "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d8 + 1**) piercing damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Yrlakka",
+  "source": "WDMM",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/WDMM/Yrlakka.webp",
+  "url": "https://5e.tools/bestiary.html#yrlakka_wdmm",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "13",
+      "18",
+      "15",
+      "16",
+      "17",
+      "12"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+4",
+      "+2",
+      "+3",
+      "+3",
+      "+1"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+7",
+      "+2",
+      "+6",
+      "+6",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 84 (13d8 + 26)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: arcana +6, insight +6, perception +6",
+     "**Languages**: Gith",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Psychic Defense",
+    "type": "text",
+    "value": "While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+   },
+   {
+    "name": "Special Equipment",
+    "type": "text",
+    "value": "Yrlakka carries a potion of resistance (fire) in a tiny crystal vial fastened to a cord around his right ankle, and he has a wand of magic detection hanging from his belt."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The githzerai makes two unarmed strikes."
+   },
+   {
+    "name": "Unarmed Strike",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 11 (**2d6 + 4**) bludgeoning damage plus 13 (**3d8**) psychic damage. This is a magic weapon attack."
    }
   ],
   "bonusActions": []
