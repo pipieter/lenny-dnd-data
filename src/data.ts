@@ -244,7 +244,7 @@ export class PartneredDatabank extends Databank {
         const keysToIgnore = [
             '$schema',
             '_meta',
-            "_test",
+            '_test',
             'linkedLootTables',
             'raceFluffMeta',
             'bookData',
