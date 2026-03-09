@@ -4730,7 +4730,6 @@
   "type": [
    "simple weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -4757,11 +4756,6 @@
     }
    },
    {
-    "name": "Light",
-    "type": "text",
-    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
-   },
-   {
     "name": "Push",
     "type": "text",
     "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
@@ -4769,7 +4763,6 @@
   ],
   "properties": [
    "**1d4** Bludgeoning",
-   "light",
    "mastery: push"
   ]
  },
@@ -4783,7 +4776,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -4808,21 +4800,6 @@
       "**Drain Life**: When you hit a creature with this weapon, you can choose to expend one Hit Die to deal additional damage with the attack, and as you do, drain the life from your foes. Roll the Hit Die and add your Constitution modifier; the attack deals extra Necrotic damage equal to the result, and you regain an equal number of Hit Points."
      ]
     }
-   },
-   {
-    "name": "Hafted",
-    "type": "text",
-    "value": "A Hafted weapon's haft can function well as an off-hand attack. After you use the Attack action to attack with a Hafted weapon, you can use a Bonus Action to make a melee attack with the haft. The haft deals **1d6** Bludgeoning damage, and you add your ability modifier to damage."
-   },
-   {
-    "name": "Reach",
-    "type": "text",
-    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Entangling",
@@ -4837,9 +4814,6 @@
   ],
   "properties": [
    "**1d6** Piercing",
-   "a hafted weapon's haft can function well as an off-hand attack. after you use the attack action to attack with a hafted weapon, you can use a bonus action to make a melee attack with the haft. the haft deals **1d6** bludgeoning damage, and you add your ability modifier to damage.",
-   "reach",
-   "two-handed",
    "mastery: entangling"
   ]
  },
@@ -4853,7 +4827,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -4880,11 +4853,6 @@
     }
    },
    {
-    "name": "Momentum",
-    "type": "text",
-    "value": "Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit with a Momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon's Momentum Dice value."
-   },
-   {
     "name": "Swift",
     "type": "text",
     "value": "Swift weapons help you recover quickly from missed attacks. When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra **1d4** damage of the weapon's normal damage type."
@@ -4892,7 +4860,6 @@
   ],
   "properties": [
    "**1d8** Bludgeoning",
-   "momentum ({{item.customproperties.momentum}})",
    "mastery: swift"
   ]
  },
@@ -4906,7 +4873,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -4933,16 +4899,6 @@
     }
    },
    {
-    "name": "Armor-Piercing",
-    "type": "text",
-    "value": "An Armor-Piercing weapon is a Melee weapon designed to punch through armor or thick hide. When you make an attack roll using an Armor-Piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has an Armor Class of 18 or higher."
-   },
-   {
-    "name": "Momentum",
-    "type": "text",
-    "value": "Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit with a Momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon's Momentum Dice value."
-   },
-   {
     "name": "Slow",
     "type": "text",
     "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
@@ -4950,8 +4906,6 @@
   ],
   "properties": [
    "**1d8** Bludgeoning",
-   "an armor-piercing weapon is a melee weapon designed to punch through armor or thick hide. when you make an attack roll using an armor-piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has an armor class of 18 or higher.",
-   "momentum ({{item.customproperties.momentum}})",
    "mastery: slow"
   ]
  },
@@ -4965,7 +4919,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -4992,16 +4945,6 @@
     }
    },
    {
-    "name": "Armor-Piercing",
-    "type": "text",
-    "value": "An Armor-Piercing weapon is a Melee weapon designed to punch through armor or thick hide. When you make an attack roll using an Armor-Piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has an Armor Class of 18 or higher."
-   },
-   {
-    "name": "Momentum",
-    "type": "text",
-    "value": "Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit with a Momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon's Momentum Dice value."
-   },
-   {
     "name": "Sap",
     "type": "text",
     "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
@@ -5009,8 +4952,6 @@
   ],
   "properties": [
    "**1d8** Piercing",
-   "an armor-piercing weapon is a melee weapon designed to punch through armor or thick hide. when you make an attack roll using an armor-piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has an armor class of 18 or higher.",
-   "momentum ({{item.customproperties.momentum}})",
    "mastery: sap"
   ]
  },
@@ -5024,7 +4965,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5051,21 +4991,6 @@
     }
    },
    {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
-    "name": "Light",
-    "type": "text",
-    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
-   },
-   {
-    "name": "Thrown",
-    "type": "text",
-    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
-   },
-   {
     "name": "Returning",
     "type": "text",
     "value": "A Returning weapon allows you to hurl the weapon in such a way that it returns to you. When you make a ranged attack with a Returning weapon, the weapon returns to you immediately after hitting or missing the target. You can catch the weapon if you have a hand free to do so."
@@ -5073,9 +4998,6 @@
   ],
   "properties": [
    "**1d6** Slashing",
-   "finesse",
-   "light",
-   "thrown (30/120 ft.)",
    "mastery: returning"
   ]
  },
@@ -5089,7 +5011,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5114,16 +5035,6 @@
       "**Drain Life**: When you hit a creature with this weapon, you can choose to expend one Hit Die to deal additional damage with the attack, and as you do, drain the life from your foes. Roll the Hit Die and add your Constitution modifier; the attack deals extra Necrotic damage equal to the result, and you regain an equal number of Hit Points."
      ]
     }
-   },
-   {
-    "name": "Heavy",
-    "type": "text",
-    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Brutal",
@@ -5138,8 +5049,6 @@
   ],
   "properties": [
    "**2d6** Slashing",
-   "heavy",
-   "two-handed",
    "mastery: brutal"
   ]
  },
@@ -5153,7 +5062,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5180,21 +5088,6 @@
     }
    },
    {
-    "name": "Double",
-    "type": "text",
-    "value": "A Double weapon functions as two Light weapons, one in each hand, for the purposes of two-weapon fighting. If a Double weapon has Reach, you can use only one of these properties per turn."
-   },
-   {
-    "name": "Momentum",
-    "type": "text",
-    "value": "Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit with a Momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon's Momentum Dice value."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
-   },
-   {
     "name": "Set",
     "type": "text",
     "value": "Weapons with the Set property allow you to prepare for an oncoming attack. If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target."
@@ -5202,9 +5095,6 @@
   ],
   "properties": [
    "**1d6** Slashing",
-   "a double weapon functions as two light weapons, one in each hand, for the purposes of two-weapon fighting. if a double weapon has reach, you can use only one of these properties per turn.",
-   "momentum ({{item.customproperties.momentum}})",
-   "two-handed",
    "mastery: set"
   ]
  },
@@ -5218,7 +5108,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5245,21 +5134,6 @@
     }
    },
    {
-    "name": "Double",
-    "type": "text",
-    "value": "A Double weapon functions as two Light weapons, one in each hand, for the purposes of two-weapon fighting. If a Double weapon has Reach, you can use only one of these properties per turn."
-   },
-   {
-    "name": "Momentum",
-    "type": "text",
-    "value": "Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit with a Momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon's Momentum Dice value."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
-   },
-   {
     "name": "Set",
     "type": "text",
     "value": "Weapons with the Set property allow you to prepare for an oncoming attack. If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target."
@@ -5267,9 +5141,6 @@
   ],
   "properties": [
    "**1d6** Piercing",
-   "a double weapon functions as two light weapons, one in each hand, for the purposes of two-weapon fighting. if a double weapon has reach, you can use only one of these properties per turn.",
-   "momentum ({{item.customproperties.momentum}})",
-   "two-handed",
    "mastery: set"
   ]
  },
@@ -5283,7 +5154,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5310,11 +5180,6 @@
     }
    },
    {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
     "name": "Swift",
     "type": "text",
     "value": "Swift weapons help you recover quickly from missed attacks. When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra **1d4** damage of the weapon's normal damage type."
@@ -5322,7 +5187,6 @@
   ],
   "properties": [
    "**1d8** Piercing",
-   "finesse",
    "mastery: swift"
   ]
  },
@@ -5336,7 +5200,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5361,26 +5224,6 @@
       "**Drain Life**: When you hit a creature with this weapon, you can choose to expend one Hit Die to deal additional damage with the attack, and as you do, drain the life from your foes. Roll the Hit Die and add your Constitution modifier; the attack deals extra Necrotic damage equal to the result, and you regain an equal number of Hit Points."
      ]
     }
-   },
-   {
-    "name": "Double",
-    "type": "text",
-    "value": "A Double weapon functions as two Light weapons, one in each hand, for the purposes of two-weapon fighting. If a Double weapon has Reach, you can use only one of these properties per turn."
-   },
-   {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
-    "name": "Reach",
-    "type": "text",
-    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Disarming",
@@ -5395,10 +5238,6 @@
   ],
   "properties": [
    "**1d4** Bludgeoning",
-   "a double weapon functions as two light weapons, one in each hand, for the purposes of two-weapon fighting. if a double weapon has reach, you can use only one of these properties per turn.",
-   "finesse",
-   "reach",
-   "two-handed",
    "mastery: disarming"
   ]
  },
@@ -5412,7 +5251,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5437,26 +5275,6 @@
       "**Drain Life**: When you hit a creature with this weapon, you can choose to expend one Hit Die to deal additional damage with the attack, and as you do, drain the life from your foes. Roll the Hit Die and add your Constitution modifier; the attack deals extra Necrotic damage equal to the result, and you regain an equal number of Hit Points."
      ]
     }
-   },
-   {
-    "name": "Double",
-    "type": "text",
-    "value": "A Double weapon functions as two Light weapons, one in each hand, for the purposes of two-weapon fighting. If a Double weapon has Reach, you can use only one of these properties per turn."
-   },
-   {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
-    "name": "Reach",
-    "type": "text",
-    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Brutal",
@@ -5471,10 +5289,6 @@
   ],
   "properties": [
    "**1d6** Slashing",
-   "a double weapon functions as two light weapons, one in each hand, for the purposes of two-weapon fighting. if a double weapon has reach, you can use only one of these properties per turn.",
-   "finesse",
-   "reach",
-   "two-handed",
    "mastery: brutal"
   ]
  },
@@ -5488,7 +5302,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5515,31 +5328,6 @@
     }
    },
    {
-    "name": "Damage",
-    "type": "text",
-    "value": "A Damage property weapon can deal different types of damage. When you hit with an attack from this weapon, choose one of the damage types allowed."
-   },
-   {
-    "name": "Double",
-    "type": "text",
-    "value": "A Double weapon functions as two Light weapons, one in each hand, for the purposes of two-weapon fighting. If a Double weapon has Reach, you can use only one of these properties per turn."
-   },
-   {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
-    "name": "Reach",
-    "type": "text",
-    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
-   },
-   {
     "name": "Entangling",
     "type": "text",
     "value": "When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 plus your Proficiency Bonus) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger."
@@ -5552,11 +5340,6 @@
   ],
   "properties": [
    "**1d4** Bludgeoning",
-   "damage ({{item.customproperties.damage}})",
-   "a double weapon functions as two light weapons, one in each hand, for the purposes of two-weapon fighting. if a double weapon has reach, you can use only one of these properties per turn.",
-   "finesse",
-   "reach",
-   "two-handed",
    "mastery: entangling"
   ]
  },
@@ -5570,7 +5353,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5595,31 +5377,6 @@
       "**Drain Life**: When you hit a creature with this weapon, you can choose to expend one Hit Die to deal additional damage with the attack, and as you do, drain the life from your foes. Roll the Hit Die and add your Constitution modifier; the attack deals extra Necrotic damage equal to the result, and you regain an equal number of Hit Points."
      ]
     }
-   },
-   {
-    "name": "Damage",
-    "type": "text",
-    "value": "A Damage property weapon can deal different types of damage. When you hit with an attack from this weapon, choose one of the damage types allowed."
-   },
-   {
-    "name": "Double",
-    "type": "text",
-    "value": "A Double weapon functions as two Light weapons, one in each hand, for the purposes of two-weapon fighting. If a Double weapon has Reach, you can use only one of these properties per turn."
-   },
-   {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
-    "name": "Reach",
-    "type": "text",
-    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Entangling",
@@ -5634,11 +5391,6 @@
   ],
   "properties": [
    "**1d4** Bludgeoning",
-   "damage ({{item.customproperties.damage}})",
-   "a double weapon functions as two light weapons, one in each hand, for the purposes of two-weapon fighting. if a double weapon has reach, you can use only one of these properties per turn.",
-   "finesse",
-   "reach",
-   "two-handed",
    "mastery: entangling"
   ]
  },
@@ -5652,7 +5404,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5677,11 +5428,6 @@
       "**Drain Life**: When you hit a creature with this weapon, you can choose to expend one Hit Die to deal additional damage with the attack, and as you do, drain the life from your foes. Roll the Hit Die and add your Constitution modifier; the attack deals extra Necrotic damage equal to the result, and you regain an equal number of Hit Points."
      ]
     }
-   },
-   {
-    "name": "Thrown",
-    "type": "text",
-    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
    },
    {
     "name": "Entangling",
@@ -5696,7 +5442,6 @@
   ],
   "properties": [
    "**1d6** Bludgeoning",
-   "thrown (10/30 ft.)",
    "mastery: entangling"
   ]
  },
@@ -5710,7 +5455,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5737,31 +5481,6 @@
     }
    },
    {
-    "name": "Damage",
-    "type": "text",
-    "value": "A Damage property weapon can deal different types of damage. When you hit with an attack from this weapon, choose one of the damage types allowed."
-   },
-   {
-    "name": "Hafted",
-    "type": "text",
-    "value": "A Hafted weapon's haft can function well as an off-hand attack. After you use the Attack action to attack with a Hafted weapon, you can use a Bonus Action to make a melee attack with the haft. The haft deals **1d6** Bludgeoning damage, and you add your ability modifier to damage."
-   },
-   {
-    "name": "Heavy",
-    "type": "text",
-    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
-   },
-   {
-    "name": "Reach",
-    "type": "text",
-    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
-   },
-   {
     "name": "Set",
     "type": "text",
     "value": "Weapons with the Set property allow you to prepare for an oncoming attack. If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target."
@@ -5769,11 +5488,6 @@
   ],
   "properties": [
    "**1d10** Slashing",
-   "damage ({{item.customproperties.damage}})",
-   "a hafted weapon's haft can function well as an off-hand attack. after you use the attack action to attack with a hafted weapon, you can use a bonus action to make a melee attack with the haft. the haft deals **1d6** bludgeoning damage, and you add your ability modifier to damage.",
-   "heavy",
-   "reach",
-   "two-handed",
    "mastery: set"
   ]
  },
@@ -5787,7 +5501,6 @@
   "type": [
    "simple weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5814,16 +5527,6 @@
     }
    },
    {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
-    "name": "Light",
-    "type": "text",
-    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
-   },
-   {
     "name": "Vex",
     "type": "text",
     "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
@@ -5831,8 +5534,6 @@
   ],
   "properties": [
    "**1d4** Slashing",
-   "finesse",
-   "light",
    "mastery: vex"
   ]
  },
@@ -5846,7 +5547,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5873,21 +5573,6 @@
     }
    },
    {
-    "name": "Momentum",
-    "type": "text",
-    "value": "Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit with a Momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon's Momentum Dice value."
-   },
-   {
-    "name": "Reach",
-    "type": "text",
-    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
-   },
-   {
     "name": "Set",
     "type": "text",
     "value": "Weapons with the Set property allow you to prepare for an oncoming attack. If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target."
@@ -5895,9 +5580,6 @@
   ],
   "properties": [
    "**2d6** Piercing",
-   "momentum ({{item.customproperties.momentum}})",
-   "reach",
-   "two-handed",
    "mastery: set"
   ]
  },
@@ -5911,7 +5593,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5938,11 +5619,6 @@
     }
    },
    {
-    "name": "Versatile",
-    "type": "text",
-    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
-   },
-   {
     "name": "Defending",
     "type": "text",
     "value": "A Defending weapon is either made for parrying, has advanced techniques for use in parrying, or both. When wielding a Defending weapon, you may use your Reaction when you are hit by a melee attack roll. Roll 1d4 and add the result to your AC, including against the triggering attack."
@@ -5950,7 +5626,6 @@
   ],
   "properties": [
    "**1d8** Slashing",
-   "versatile (1d10)",
    "mastery: defending"
   ]
  },
@@ -5964,7 +5639,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -5989,26 +5663,6 @@
       "**Drain Life**: When you hit a creature with this weapon, you can choose to expend one Hit Die to deal additional damage with the attack, and as you do, drain the life from your foes. Roll the Hit Die and add your Constitution modifier; the attack deals extra Necrotic damage equal to the result, and you regain an equal number of Hit Points."
      ]
     }
-   },
-   {
-    "name": "Hafted",
-    "type": "text",
-    "value": "A Hafted weapon's haft can function well as an off-hand attack. After you use the Attack action to attack with a Hafted weapon, you can use a Bonus Action to make a melee attack with the haft. The haft deals **1d6** Bludgeoning damage, and you add your ability modifier to damage."
-   },
-   {
-    "name": "Heavy",
-    "type": "text",
-    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
-   },
-   {
-    "name": "Reach",
-    "type": "text",
-    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Disarming",
@@ -6023,10 +5677,6 @@
   ],
   "properties": [
    "**2d6** Piercing",
-   "a hafted weapon's haft can function well as an off-hand attack. after you use the attack action to attack with a hafted weapon, you can use a bonus action to make a melee attack with the haft. the haft deals **1d6** bludgeoning damage, and you add your ability modifier to damage.",
-   "heavy",
-   "reach",
-   "two-handed",
    "mastery: disarming"
   ]
  },
@@ -6040,7 +5690,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6065,21 +5714,6 @@
       "**Drain Life**: When you hit a creature with this weapon, you can choose to expend one Hit Die to deal additional damage with the attack, and as you do, drain the life from your foes. Roll the Hit Die and add your Constitution modifier; the attack deals extra Necrotic damage equal to the result, and you regain an equal number of Hit Points."
      ]
     }
-   },
-   {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
-    "name": "Light",
-    "type": "text",
-    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
-   },
-   {
-    "name": "Thrown",
-    "type": "text",
-    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
    },
    {
     "name": "Disarming",
@@ -6094,9 +5728,6 @@
   ],
   "properties": [
    "**1d4** Piercing",
-   "finesse",
-   "light",
-   "thrown (20/60 ft.)",
    "mastery: disarming"
   ]
  },
@@ -6110,7 +5741,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6137,26 +5767,6 @@
     }
    },
    {
-    "name": "Hafted",
-    "type": "text",
-    "value": "A Hafted weapon's haft can function well as an off-hand attack. After you use the Attack action to attack with a Hafted weapon, you can use a Bonus Action to make a melee attack with the haft. The haft deals **1d6** Bludgeoning damage, and you add your ability modifier to damage."
-   },
-   {
-    "name": "Heavy",
-    "type": "text",
-    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
-   },
-   {
-    "name": "Reach",
-    "type": "text",
-    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
-   },
-   {
     "name": "Set",
     "type": "text",
     "value": "Weapons with the Set property allow you to prepare for an oncoming attack. If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target."
@@ -6164,10 +5774,6 @@
   ],
   "properties": [
    "**1d12** Piercing",
-   "a hafted weapon's haft can function well as an off-hand attack. after you use the attack action to attack with a hafted weapon, you can use a bonus action to make a melee attack with the haft. the haft deals **1d6** bludgeoning damage, and you add your ability modifier to damage.",
-   "heavy",
-   "reach",
-   "two-handed",
    "mastery: set"
   ]
  },
@@ -6181,7 +5787,6 @@
   "type": [
    "simple weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6228,7 +5833,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6255,21 +5859,6 @@
     }
    },
    {
-    "name": "Armor-Piercing",
-    "type": "text",
-    "value": "An Armor-Piercing weapon is a Melee weapon designed to punch through armor or thick hide. When you make an attack roll using an Armor-Piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has an Armor Class of 18 or higher."
-   },
-   {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
-    "name": "Light",
-    "type": "text",
-    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
-   },
-   {
     "name": "Defending",
     "type": "text",
     "value": "A Defending weapon is either made for parrying, has advanced techniques for use in parrying, or both. When wielding a Defending weapon, you may use your Reaction when you are hit by a melee attack roll. Roll 1d4 and add the result to your AC, including against the triggering attack."
@@ -6277,9 +5866,6 @@
   ],
   "properties": [
    "**1d4** Piercing",
-   "an armor-piercing weapon is a melee weapon designed to punch through armor or thick hide. when you make an attack roll using an armor-piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has an armor class of 18 or higher.",
-   "finesse",
-   "light",
    "mastery: defending"
   ]
  },
@@ -6293,7 +5879,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6320,16 +5905,6 @@
     }
    },
    {
-    "name": "Light",
-    "type": "text",
-    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
-   },
-   {
-    "name": "Thrown",
-    "type": "text",
-    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
-   },
-   {
     "name": "Returning",
     "type": "text",
     "value": "A Returning weapon allows you to hurl the weapon in such a way that it returns to you. When you make a ranged attack with a Returning weapon, the weapon returns to you immediately after hitting or missing the target. You can catch the weapon if you have a hand free to do so."
@@ -6337,8 +5912,6 @@
   ],
   "properties": [
    "**1d4** Bludgeoning",
-   "light",
-   "thrown (20/60 ft.)",
    "mastery: returning"
   ]
  },
@@ -6352,7 +5925,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6379,11 +5951,6 @@
     }
    },
    {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
     "name": "Swift",
     "type": "text",
     "value": "Swift weapons help you recover quickly from missed attacks. When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra **1d4** damage of the weapon's normal damage type."
@@ -6391,7 +5958,6 @@
   ],
   "properties": [
    "**1d8** Slashing",
-   "finesse",
    "mastery: swift"
   ]
  },
@@ -6405,7 +5971,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6432,11 +5997,6 @@
     }
    },
    {
-    "name": "Double",
-    "type": "text",
-    "value": "A Double weapon functions as two Light weapons, one in each hand, for the purposes of two-weapon fighting. If a Double weapon has Reach, you can use only one of these properties per turn."
-   },
-   {
     "name": "Topple",
     "type": "text",
     "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
@@ -6444,7 +6004,6 @@
   ],
   "properties": [
    "**1d6** Bludgeoning",
-   "a double weapon functions as two light weapons, one in each hand, for the purposes of two-weapon fighting. if a double weapon has reach, you can use only one of these properties per turn.",
    "mastery: topple"
   ]
  },
@@ -6458,7 +6017,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6485,16 +6043,6 @@
     }
    },
    {
-    "name": "Finesse",
-    "type": "text",
-    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
-   },
-   {
-    "name": "Light",
-    "type": "text",
-    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
-   },
-   {
     "name": "Swift",
     "type": "text",
     "value": "Swift weapons help you recover quickly from missed attacks. When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra **1d4** damage of the weapon's normal damage type."
@@ -6502,8 +6050,6 @@
   ],
   "properties": [
    "**1d4** Bludgeoning",
-   "finesse",
-   "light",
    "mastery: swift"
   ]
  },
@@ -6517,7 +6063,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6542,26 +6087,6 @@
       "**Drain Life**: When you hit a creature with this weapon, you can choose to expend one Hit Die to deal additional damage with the attack, and as you do, drain the life from your foes. Roll the Hit Die and add your Constitution modifier; the attack deals extra Necrotic damage equal to the result, and you regain an equal number of Hit Points."
      ]
     }
-   },
-   {
-    "name": "Hafted",
-    "type": "text",
-    "value": "A Hafted weapon's haft can function well as an off-hand attack. After you use the Attack action to attack with a Hafted weapon, you can use a Bonus Action to make a melee attack with the haft. The haft deals **1d6** Bludgeoning damage, and you add your ability modifier to damage."
-   },
-   {
-    "name": "Heavy",
-    "type": "text",
-    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
-   },
-   {
-    "name": "Momentum",
-    "type": "text",
-    "value": "Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit with a Momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon's Momentum Dice value."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Brutal",
@@ -6576,10 +6101,6 @@
   ],
   "properties": [
    "**2d6** Slashing",
-   "a hafted weapon's haft can function well as an off-hand attack. after you use the attack action to attack with a hafted weapon, you can use a bonus action to make a melee attack with the haft. the haft deals **1d6** bludgeoning damage, and you add your ability modifier to damage.",
-   "heavy",
-   "momentum ({{item.customproperties.momentum}})",
-   "two-handed",
    "mastery: brutal"
   ]
  },
@@ -6593,7 +6114,6 @@
   "type": [
    "advanced weapon",
    "melee weapon",
-   "symbiont",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -6620,26 +6140,6 @@
     }
    },
    {
-    "name": "Hafted",
-    "type": "text",
-    "value": "A Hafted weapon's haft can function well as an off-hand attack. After you use the Attack action to attack with a Hafted weapon, you can use a Bonus Action to make a melee attack with the haft. The haft deals **1d6** Bludgeoning damage, and you add your ability modifier to damage."
-   },
-   {
-    "name": "Heavy",
-    "type": "text",
-    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
-   },
-   {
-    "name": "Momentum",
-    "type": "text",
-    "value": "Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit with a Momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon's Momentum Dice value."
-   },
-   {
-    "name": "Two-Handed",
-    "type": "text",
-    "value": "A Two-Handed weapon requires two hands when you attack with it."
-   },
-   {
     "name": "Brutal",
     "type": "text",
     "value": "A Brutal weapon is designed for maximum damage. Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20)."
@@ -6652,10 +6152,6 @@
   ],
   "properties": [
    "**2d6** Bludgeoning",
-   "a hafted weapon's haft can function well as an off-hand attack. after you use the attack action to attack with a hafted weapon, you can use a bonus action to make a melee attack with the haft. the haft deals **1d6** bludgeoning damage, and you add your ability modifier to damage.",
-   "heavy",
-   "momentum ({{item.customproperties.momentum}})",
-   "two-handed",
    "mastery: brutal"
   ]
  },
