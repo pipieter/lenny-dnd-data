@@ -112,7 +112,7 @@ export class Databank {
 
     public add(path: string) {
         // Keys that will not be handled
-        const keysToIgnore = ['_meta', 'linkedLootTables', 'raceFluffMeta'];
+        const keysToIgnore = ['_meta', '_test', 'linkedLootTables', 'raceFluffMeta'];
 
         const data = read(path);
         for (const key of Object.keys(data)) {
@@ -244,6 +244,7 @@ export class PartneredDatabank extends Databank {
         const keysToIgnore = [
             '$schema',
             '_meta',
+            '_test',
             'linkedLootTables',
             'raceFluffMeta',
             'bookData',
