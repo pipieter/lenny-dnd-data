@@ -220,6 +220,13 @@ function chance(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function charoption(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('charoption', 3), '$3');
+    text = text.replaceAll(pattern('charoption', 2), '$1');
+    text = text.replaceAll(pattern('charoption', 1), '$1');
+    return text;
+}
+
 function class$(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('class', 5), `$3`);
@@ -680,6 +687,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         book,
         card,
         chance,
+        charoption,
         class$,
         classFeature,
         color,
