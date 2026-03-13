@@ -571,6 +571,13 @@ function parseTableRow(values: any[] | any): string[] {
                 } else {
                     throw `Unsupported table value entries-type ${value}`;
                 }
+            } else if (value.type === 'item') {
+                // Item is similar to entries, except it has both the name and entries, and entries is more parseable
+                const name = cleanDNDText(value.name, true);
+                const entries = value.entries.map((entry: string) => cleanDNDText(entry, true));
+                const entry = entries.join('\n');
+                const combined = `${name}. ${entry}`;
+                cells.push(combined);
             } else if (value.type == 'table') {
                 // TODO: Handle tables within tables, these tables should be parsed and added to tables.json
                 let text = '';
