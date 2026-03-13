@@ -3697,6 +3697,132 @@
   ]
  },
  {
+  "name": "Avatar of Slaughter",
+  "source": "GrimHollowCG24",
+  "subtitle": "Large fiend",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Avatar%20of%20Slaughter.webp",
+  "url": "https://5e.tools/bestiary.html#avatar%20of%20slaughter_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "26",
+      "14",
+      "20",
+      "10",
+      "14",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+8",
+      "+2",
+      "+5",
+      "+0",
+      "+2",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+13",
+      "+2",
+      "+10",
+      "+0",
+      "+2",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 262 (25d10 + 125)",
+     "**Speed**: *walk* 60 Ft.",
+     "**Skills**: athletics +13",
+     "**Resistances**: bludgeoning, cold, fire, lightning, piercing, slashing",
+     "**Immunities**: poison; charmed, frightened, poisoned",
+     "**Senses**: darkvision 120 ft.",
+     "**Languages**: All languages known before the curse",
+     "**CR**: 14"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Blood Frenzy",
+    "type": "text",
+    "value": "The Avatar of Slaughter has Advantage on attack rolls against any creature that doesn't have all its Hit Points."
+   },
+   {
+    "name": "Imprison in Weapon",
+    "type": "text",
+    "value": "When the Avatar of Slaughter is reduced to 0 Hit Points by a melee Weapon Attack by a creature within 5 feet, its spirit infests the weapon that struck the blow. The weapon gains the properties and Curse associated with a Berserker Axe, though it retains its original weapon type. Additionally, while the curse remains the weapon is sentient and can telepathically communicate with any creature that wields it, encouraging violence and malice."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The Avatar of Slaughter has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Rejuvenation",
+    "type": "text",
+    "value": "If the Avatar of Slaughter is destroyed, and not imprisoned in a weapon, it reforms and regains all its Hit Points in 1d6 days unless a __Wish__ spell is cast on its remains."
+   },
+   {
+    "name": "Silver Weakness",
+    "type": "text",
+    "value": "Damage dealt by Silver weapons ignores the avatar's Resistance to Bludgeoning, Piercing, and Slashing damage."
+   },
+   {
+    "name": "Standing Leap",
+    "type": "text",
+    "value": "The Avatar of Slaughter's Long Jump is up to 60 feet and its High Jump is up to 30 feet, with or without a running start."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Avatar of Slaughter makes four Fist attacks. It can replace one attack with a Gore attack."
+   },
+   {
+    "name": "Fist",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +13 to hit, reach 5 ft., one target. *Hit:* 17 (**2d8 + 8**) Bludgeoning damage."
+   },
+   {
+    "name": "Gore",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +13 to hit, reach 5 ft., one target. *Hit:* 26 (**4d8 + 8**) Piercing damage. If the target is a Large or smaller creature and the Avatar of Slaughter moved at least 20 feet straight toward it immediately before the hit, the target takes an extra 9 (**2d8**) Piercing damage and has the Stunned condition until the end of the target's next turn."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Baltus Tolliver",
   "source": "CrookedMoon24",
   "subtitle": "Medium humanoid",
@@ -5512,6 +5638,127 @@
   "bonusActions": []
  },
  {
+  "name": "Bloated Gastromorph",
+  "source": "GrimHollowCG24",
+  "subtitle": "Gargantuan monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Bloated%20Gastromorph.webp",
+  "url": "https://5e.tools/bestiary.html#bloated%20gastromorph_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "21",
+      "7",
+      "21",
+      "11",
+      "15",
+      "5"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "-2",
+      "+5",
+      "+0",
+      "+2",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+9",
+      "-2",
+      "+9",
+      "+0",
+      "+6",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 217 (14d20 + 70)",
+     "**Speed**: *walk* 25 Ft., *climb* 25 Ft.",
+     "**Skills**: perception +6",
+     "**Immunities**: poison; poisoned",
+     "**Senses**: darkvision 120 ft.",
+     "**Languages**: All languages known before the curse",
+     "**CR**: 11"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Regeneration",
+    "type": "text",
+    "value": "The Bloated Gastromorph regains 10 Hit Points at the start of each of its turns. If the Bloated Gastromorph takes Acid or Fire damage, this trait doesn't function on the Bloated Gastromorph's next turn. The Bloated Gastromorph dies only if it starts its turn with 0 Hit Points and doesn't regenerate."
+   },
+   {
+    "name": "Spider Climb",
+    "type": "text",
+    "value": "The Bloated Gastromorph can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Bloated Gastromorph makes three Claw attacks. It can replace one attack with a Tongue attack."
+   },
+   {
+    "name": "Claw",
+    "type": "text",
+    "value": "*Melee Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 18 (**3d8 + 5**) Slashing damage, and the target has the Grappled condition (escape DC 15) and is moved up to 5 feet toward the Bloated Gastromorph."
+   },
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 27 (**4d10 + 5**) Piercing damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Bloated Gastromorph takes 40 damage or more on a single turn from a creature inside it, it regurgitates all swallowed creatures at the end of that turn, each of which falls in a space within 10 feet of the gastromorph and has the Prone condition. If the Bloated Gastromorph dies, any swallowed creature no longer has the Restrained condition and can escape from the corpse using 15 feet of movement, exiting with the Prone condition."
+   },
+   {
+    "name": "Tongue (Recharge 5-6)",
+    "type": "text",
+    "value": "*Melee Attack:* +9 to hit, reach 25 ft., one target. *Hit:* 31 (**4d12 + 5**) Acid damage. A creature that is hit by this attack is subjected to the following effect. *Constitution Saving Throw:* DC 17. *Failure:*  The target has the Paralyzed condition and is moved up to 20 feet toward the gastromorph. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Swallow",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 17, one Large or smaller creature Grappled by the gastromorph (it can have up to two creatures swallowed at a time). *Failure:*  The target is swallowed by the gastromorph, and the Grappled condition ends. A swallowed creature has the Blinded and Restrained conditions, has Total Cover against attacks and other effects outside the gastromorph, and taks 21 (**6d6**) Acid damage at the start of each of the gastromorph's turns."
+   }
+  ]
+ },
+ {
   "name": "Bloated Hive",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Medium monstrosity",
@@ -5789,6 +6036,111 @@
     "value": "The leech can use this Bonus Action only when it is attached to a creature and has at least one filled blood bag. The attached creature regains 10 3d6 Hit Points, and the leech empties one of its filled blood bags."
    }
   ]
+ },
+ {
+  "name": "Body Snatcher",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Body%20Snatcher.webp",
+  "url": "https://5e.tools/bestiary.html#body%20snatcher_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "18",
+      "15",
+      "14",
+      "7",
+      "14",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+2",
+      "+2",
+      "-2",
+      "+2",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+5",
+      "+2",
+      "-2",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 123 (19d8 + 38)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: athletics +7, deception +7, stealth +8",
+     "**Immunities**: lightning",
+     "**Senses**: darkvision 60 ft.",
+     "**Languages**: all languages known before the curse, and all languages known by its host",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Electric Invigoration",
+    "type": "text",
+    "value": "Whenever a Body Snatcher would take Lightning damage, it absorbs the energy and instead gains Temporary Hit Points equal to half the damage, rounded down. The Body Snatcher also immediately recharges its Electric Torrent ability."
+   },
+   {
+    "name": "Skin Sack",
+    "type": "text",
+    "value": "The Body Snatcher is physically indistinguishable from its host and cannot be detected by nonmagical means. If the Body Snatcher is reduced to 0 Hit Points, and it has been inside its current host for less than 24 hours, the host regurgitates it then has the Unconscious condition and 1 Hit Point."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Body Snatcher makes two Slam attacks."
+   },
+   {
+    "name": "Invade",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 15; one Humanoid creature Grappled by the Body Snatcher. *Failure:*  The Body Snatcher departs its current host and moves into the Grappled creature. It then regains all Hit Points and recharges Electric Torrent. If it had been inside its previous host for less than 24 hours, that creature has the Unconscious condition and 1 Hit Point. Otherwise, the previous host body becomes a lifeless skin sack."
+   },
+   {
+    "name": "Electric Torrent (Recharge 5-6)",
+    "type": "text",
+    "value": "The Body Snatcher unleashes a large electric pulse. *Dexterity Saving Throw:* DC 15, each other creature within 20 feet of the Body Snatcher. *Failure:*  28 (**8d6**) Lightning damage. *Success* Half damage."
+   }
+  ],
+  "bonusActions": []
  },
  {
   "name": "Body Snatcher",
@@ -15373,6 +15725,149 @@
   ]
  },
  {
+  "name": "Dream Whisperer",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium aberration",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Dream%20Whisperer.webp",
+  "url": "https://5e.tools/bestiary.html#dream%20whisperer_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "11",
+      "18",
+      "15",
+      "6",
+      "15",
+      "9"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+4",
+      "+2",
+      "-2",
+      "+2",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+7",
+      "+2",
+      "-2",
+      "+2",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 130 (20d8 + 40)",
+     "**Speed**: *walk* 35 Ft., *climb* 35 Ft.",
+     "**Skills**: perception +5, stealth +7",
+     "**Resistances**: psychic",
+     "**Senses**: darkvision 120 ft.",
+     "**Languages**: all languages known before the curse",
+     "**CR**: 7"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Aura of Confusion",
+    "type": "text",
+    "value": "A creature that starts its turn or moves within 25 feet of a Dream Whisperer must succeed on a DC 13 Intelligence saving throw or be affected as if they had failed a save against the __Confusion__ spell."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The Dream Whisperer has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Spider Climb",
+    "type": "text",
+    "value": "The Dream Whisperer can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Dream Whisperer makes three Claw attacks."
+   },
+   {
+    "name": "Claw",
+    "type": "text",
+    "value": "*Melee Attack:* +7 to hit, reach 10 ft., one target. *Hit:* 13 (**2d8 + 4**) Slashing damage, and the target is subjected to the following effect. *Intelligence Saving Throw:* DC 13. *Failure:*  The Dream Whisperer gains Advantage on attack rolls against the target for 1 minute, and the target rolls on the Lost Memories table."
+   },
+   {
+    "name": "Lost Memories",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Lost Memories",
+     "headers": [
+      "d6",
+      "Effect"
+     ],
+     "rows": [
+      [
+       "1",
+       "The target becomes deeply suspicious of a character or NPC of the GM's choice. They gain the following flaw: \"I know they are seeking to betray me. I have to act first—it's me or them!\""
+      ],
+      [
+       "2",
+       "The target forgets all memories of a loved one of the GM's choice. The next time the target sees them, it's as if they are meeting them for the first time."
+      ],
+      [
+       "3",
+       "The target becomes stricken with doubt and gains the following flaw: \"\"The world is out to get me, and I can't win. I may as well give up now.\""
+      ],
+      [
+       "4",
+       "The target forgets how to speak in one language known, decided by the GM."
+      ],
+      [
+       "5",
+       "The target forgets the location of something important to them, of the GM's choice. It may be the location of a goal, their home settlement, or a hidden treasure."
+      ],
+      [
+       "6",
+       "The target loses an inconsequential memory such as what they ate a few nights ago or the name of an unimportant NPC."
+      ]
+     ]
+    }
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Drevin",
   "source": "TftYP",
   "subtitle": "Medium humanoid",
@@ -16267,6 +16762,228 @@
    }
   ],
   "bonusActions": []
+ },
+ {
+  "name": "Ebon Syndicate Elite Assassin",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#ebon%20syndicate%20elite%20assassin_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "20",
+      "14",
+      "14",
+      "16",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+5",
+      "+2",
+      "+2",
+      "+3",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+9",
+      "+2",
+      "+6",
+      "+3",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 162 (25d8 + 50)",
+     "**Speed**: *walk* 30 Ft., *climb* 30 Ft.",
+     "**Initiative**: 2",
+     "**Skills**: deception +7, insight +7, perception +11, sleight of hand +9, stealth +13",
+     "**Languages**: Thieves' Cant, plus three other languages",
+     "**CR**: 10"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Customized Poison",
+    "type": "text",
+    "value": "The assassin prepares and applies specialized poisons to its weapons. The first time each turn that the assassin deals weapon damage to a creature, choose one of the following:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Abduction**: *Wisdom Saving Throw:* DC 15. *Failure:*  The target has the Unconscious condition for 1 minute. The condition ends if the target takes damage or a creature within 5 feet of it takes an action to wake it. *Success* The target has the Incapacitated condition until the end of its next turn.",
+      "**Annihilation**: The target takes 28 (**8d6**) Poison damage.",
+      "**Debilitation**: The target takes 17 (**5d6**) Poison damage, and has the Poisoned condition until the start of the assassin's next turn.",
+      "**Suffocation**: The target has the Poisoned condition for 1 minute. While Poisoned in this way, the target can't speak or breathe."
+     ]
+    }
+   },
+   {
+    "name": "Evasion",
+    "type": "text",
+    "value": "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the Incapacitated condition."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The assassin makes three attacks using its Daggers or one attack using its Heavy Crossbow."
+   },
+   {
+    "name": "Dagger",
+    "type": "text",
+    "value": "*Melee or Ranged Weapon Attack:* +9 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 15 (**4d4 + 5**) Piercing damage."
+   },
+   {
+    "name": "Heavy Crossbow",
+    "type": "text",
+    "value": "*Ranged Weapon Attack:* +9 to hit, range 100/400 ft., one target. *Hit:* 27 (**4d10 + 5**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Cunning Action",
+    "type": "text",
+    "value": "The assassin takes the Dash, Disengage, or Hide action."
+   }
+  ]
+ },
+ {
+  "name": "Ebon Syndicate Enforcer",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#ebon%20syndicate%20enforcer_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "15",
+      "16",
+      "14",
+      "10",
+      "12",
+      "12"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+3",
+      "+2",
+      "+0",
+      "+1",
+      "+1"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+5",
+      "+2",
+      "+0",
+      "+1",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 52 (8d8 + 16)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: athletics +4, stealth +5",
+     "**Languages**: Thieves' Cant, plus three other languages",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The enforcer makes two attacks using their Dagger and Fighting Chain in any combination."
+   },
+   {
+    "name": "Dagger",
+    "type": "text",
+    "value": "*Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 5 (**1d4 + 3**) Piercing damage."
+   },
+   {
+    "name": "Fighting Chain",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 3**) Bludgeoning damage, and the target has the Grappled condition (escape DC 12). The enforcer can only have one creature grappled by its fighting chain."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Strangle",
+    "type": "text",
+    "value": "The enforcer deals 4 (**1d4 + 2**) Bludgeoning damage to a target Grappled by its Fighting Chain, and the target is unable to speak until the start of the enforcer's next turn or until it is no longer Grappled."
+   }
+  ]
  },
  {
   "name": "Effulgent Cnidarian",
@@ -22851,6 +23568,677 @@
     "value": "The fractine can imprison only one creature at a time and can release that creature as a bonus action. If the fractine is reduced to 0 hit points, any creature in the fractine's demiplane is released instantly. A released creature reappears in an unoccupied space as close to the fractine (or where it died) as possible. A creature can leave the demiplane on its own by using magic that enables planar travel, such as the __plane shift__ spell."
    }
   ]
+ },
+ {
+  "name": "Free Swords Archer",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#free%20swords%20archer_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "14",
+      "14",
+      "10",
+      "10",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+2",
+      "+0",
+      "+0",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+2",
+      "+0",
+      "+0",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 75 (10d8 + 30)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: athletics +5, insight +2, perception +6",
+     "**Languages**: any three languages",
+     "**CR**: 4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Arms Expert",
+    "type": "text",
+    "value": "The Veteran can don or doff its Shield whenever it changes weapons."
+   },
+   {
+    "name": "Group Discipline",
+    "type": "text",
+    "value": "The Veteran has Advantage on all saving throws if at least one of its allies is within 5 feet and both the Veteran and the ally don't have the Incapacitated condition."
+   },
+   {
+    "name": "Individual Skill",
+    "type": "text",
+    "value": "The first time on a turn that the Veteran deals damage with an attack, the attack deals an additional **1d8** damage if the Veteran has no allies within 5 feet of it."
+   },
+   {
+    "name": "Power Shot",
+    "type": "text",
+    "value": "The first time the archer deals damage with a Ranged Weapon on its turn, it deal an additional 9 (**2d8**) Piercing damage to the target, and the target's Speed is reduced by 10 feet until the end of the archer's next turn."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Veteran makes two Longsword or Longbow attacks."
+   },
+   {
+    "name": "Longsword",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) Slashing damage."
+   },
+   {
+    "name": "Longbow",
+    "type": "text",
+    "value": "*Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (**1d8 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Free Swords Battlemage",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#free%20swords%20battlemage_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "14",
+      "14",
+      "16",
+      "10",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+2",
+      "+3",
+      "+0",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+2",
+      "+5",
+      "+0",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 75 (10d8 + 30)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +5, athletics +5, insight +2, perception +2",
+     "**Languages**: any three languages",
+     "**CR**: 4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Arms Expert",
+    "type": "text",
+    "value": "The Veteran can don or doff its Shield whenever it changes weapons."
+   },
+   {
+    "name": "Group Discipline",
+    "type": "text",
+    "value": "The Veteran has Advantage on all saving throws if at least one of its allies is within 5 feet and both the Veteran and the ally don't have the Incapacitated condition."
+   },
+   {
+    "name": "Individual Skill",
+    "type": "text",
+    "value": "The first time on a turn that the Veteran deals damage with an attack, the attack deals an additional **1d8** damage if the Veteran has no allies within 5 feet of it."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Veteran makes two Longsword or Longbow attacks."
+   },
+   {
+    "name": "Longsword",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) Slashing damage."
+   },
+   {
+    "name": "Longbow",
+    "type": "text",
+    "value": "*Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (**1d8 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Free Swords Captain",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#free%20swords%20captain_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "21",
+      "20",
+      "18",
+      "14",
+      "16",
+      "14"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+5",
+      "+4",
+      "+2",
+      "+3",
+      "+2"
+     ],
+     [
+      "Save.",
+      "+9",
+      "+9",
+      "+8",
+      "+2",
+      "+7",
+      "+2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 20",
+     "**HP**: 161 (19d8 + 76)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: athletics +9, insight +7, perception +7",
+     "**Languages**: any four languages",
+     "**CR**: 10"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Arms Expert",
+    "type": "text",
+    "value": "The captain can don or doff its Shield whenever it changes weapons."
+   },
+   {
+    "name": "Field Commander",
+    "type": "text",
+    "value": "Allies within 60 feet who can see or hear the captain have Advantage on all saving throws."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The captain makes three attacks using Longsword or Longbow in any combination."
+   },
+   {
+    "name": "Longsword",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 14 (**2d8 + 5**) Slashing damage."
+   },
+   {
+    "name": "Longbow",
+    "type": "text",
+    "value": "*Ranged Weapon Attack:* +9 to hit, range 150/600 ft., one target. *Hit:* 14 (**2d8 + 5**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Tactical Advance",
+    "type": "text",
+    "value": "Each Free Swords ally within 30 feet of the captain can take a Reaction to move up to half its Speed without provoking Opportunity Attacks."
+   }
+  ]
+ },
+ {
+  "name": "Free Swords Infiltrator",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#free%20swords%20infiltrator_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "14",
+      "14",
+      "10",
+      "10",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+2",
+      "+0",
+      "+0",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+2",
+      "+0",
+      "+0",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 75 (10d8 + 30)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: athletics +5, insight +2, perception +2, stealth +7",
+     "**Languages**: any three languages",
+     "**CR**: 4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Arms Expert",
+    "type": "text",
+    "value": "The Veteran can don or doff its Shield whenever it changes weapons."
+   },
+   {
+    "name": "Group Discipline",
+    "type": "text",
+    "value": "The Veteran has Advantage on all saving throws if at least one of its allies is within 5 feet and both the Veteran and the ally don't have the Incapacitated condition."
+   },
+   {
+    "name": "Individual Skill",
+    "type": "text",
+    "value": "The first time on a turn that the Veteran deals damage with an attack, the attack deals an additional **1d8** damage if the Veteran has no allies within 5 feet of it."
+   },
+   {
+    "name": "Poisonous Blade",
+    "type": "text",
+    "value": "The first time the infiltrator deals damage with a Melee Weapon on its turn, it deals an additional 10 (**3d6**) Poison damage, and the target has the Poisoned condition until the end of the infiltrator's next turn."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Veteran makes two Longsword or Longbow attacks."
+   },
+   {
+    "name": "Longsword",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) Slashing damage."
+   },
+   {
+    "name": "Longbow",
+    "type": "text",
+    "value": "*Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (**1d8 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Free Swords Sapper",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#free%20swords%20sapper_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "14",
+      "14",
+      "10",
+      "10",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+2",
+      "+0",
+      "+0",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+2",
+      "+0",
+      "+0",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 75 (10d8 + 30)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 2",
+     "**Skills**: athletics +5, insight +2, perception +2",
+     "**Languages**: any three languages",
+     "**CR**: 4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Arms Expert",
+    "type": "text",
+    "value": "The Veteran can don or doff its Shield whenever it changes weapons."
+   },
+   {
+    "name": "Group Discipline",
+    "type": "text",
+    "value": "The Veteran has Advantage on all saving throws if at least one of its allies is within 5 feet and both the Veteran and the ally don't have the Incapacitated condition."
+   },
+   {
+    "name": "Individual Skill",
+    "type": "text",
+    "value": "The first time on a turn that the Veteran deals damage with an attack, the attack deals an additional **1d8** damage if the Veteran has no allies within 5 feet of it."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Veteran makes two Longsword or Longbow attacks."
+   },
+   {
+    "name": "Longsword",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) Slashing damage."
+   },
+   {
+    "name": "Longbow",
+    "type": "text",
+    "value": "*Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (**1d8 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Acid Bomb (2/day)",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 15, each creature in a 20-foot-radius Sphere centered on a point within 60 feet. *Failure:*  22 (**4d8 + 4**) Acid damage. *Success* Half damage only. Success or Fail: The area becomes Heavily Obscured for 1 minute or until dispersed by a Strong wind."
+   }
+  ]
+ },
+ {
+  "name": "Free Swords Veteran",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#free%20swords%20veteran_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "14",
+      "14",
+      "10",
+      "10",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+2",
+      "+0",
+      "+0",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+2",
+      "+0",
+      "+0",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 65 (10d8 + 20)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: athletics +5, insight +2, perception +2",
+     "**Languages**: any three languages",
+     "**CR**: 3"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Arms Expert",
+    "type": "text",
+    "value": "The Veteran can don or doff its Shield whenever it changes weapons."
+   },
+   {
+    "name": "Group Discipline",
+    "type": "text",
+    "value": "The Veteran has Advantage on all saving throws if at least one of its allies is within 5 feet and both the Veteran and the ally don't have the Incapacitated condition."
+   },
+   {
+    "name": "Individual Skill",
+    "type": "text",
+    "value": "The first time on a turn that the Veteran deals damage with an attack, the attack deals an additional **1d8** damage if the Veteran has no allies within 5 feet of it."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Veteran makes two Longsword or Longbow attacks."
+   },
+   {
+    "name": "Longsword",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) Slashing damage."
+   },
+   {
+    "name": "Longbow",
+    "type": "text",
+    "value": "*Ranged Weapon Attack:* +4 to hit, range 150/600 ft., one target. *Hit:* 6 (**1d8 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": []
  },
  {
   "name": "Frenzied Dreg",
@@ -31370,6 +32758,112 @@
   "bonusActions": []
  },
  {
+  "name": "Herald of Calamity",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Herald%20of%20Calamity.webp",
+  "url": "https://5e.tools/bestiary.html#herald%20of%20calamity_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "7",
+      "16",
+      "14",
+      "19",
+      "18",
+      "17"
+     ],
+     [
+      "Mod.",
+      "-2",
+      "+3",
+      "+2",
+      "+4",
+      "+4",
+      "+3"
+     ],
+     [
+      "Save.",
+      "-2",
+      "+3",
+      "+2",
+      "+8",
+      "+8",
+      "+7"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 130 (20d8 + 40)",
+     "**Speed**: *walk* 0 Ft., *fly* 40 Ft., *canHover* (hover)",
+     "**Skills**: perception +8",
+     "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
+     "**Senses**: darkvision 60 ft.",
+     "**Languages**: all languages known before the curse",
+     "**CR**: 9"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Aura of Calamity",
+    "type": "text",
+    "value": "An aura of misfortune surrounds the herald in a 30-foot Emanation. Creatures other than the herald within the area have Disadvantage on d20 Tests. Whenever a creature in the area other than the herald takes damage from any source other than another creature (such as a trap, a hazard, or a fall), it takes the maximum possible damage."
+   },
+   {
+    "name": "Incorporeal Movement",
+    "type": "text",
+    "value": "The Herald of Calamity can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object."
+   },
+   {
+    "name": "Invisibility",
+    "type": "text",
+    "value": "The Herald of Calamity has the Invisible condition unless it is in an area illuminated by moonlight."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Herald of Calamity makes two Life Drain attacks."
+   },
+   {
+    "name": "Life Drain",
+    "type": "text",
+    "value": "*Melee Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 21 (**4d8 + 3**) Necrotic damage, and the Herald of Calamity regains Hit Points equal to half the amount of Necrotic damage dealt."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Herald of Fools",
   "source": "CrookedMoon24",
   "subtitle": "Medium fiend",
@@ -31576,6 +33070,117 @@
     "name": "Healing Word (3/Day)",
     "type": "text",
     "value": "Ophelia casts __Healing Word__ using the spellcasting ability from Spellcasting."
+   }
+  ]
+ },
+ {
+  "name": "High Priest",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#high%20priest_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "12",
+      "16",
+      "13",
+      "20",
+      "18"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+1",
+      "+3",
+      "+1",
+      "+5",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+1",
+      "+3",
+      "+1",
+      "+9",
+      "+8"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 180 (24d8 + 72)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +5, deception +8, insight +9, intimidation +8, perception +9, persuasion +8, religion +5",
+     "**Resistances**: radiant, necrotic",
+     "**Languages**: one regional language plus two other languages",
+     "**CR**: 11"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Enraging Sacrifice",
+    "type": "text",
+    "value": "When the priest dies, each ally within 40 feet who can see the priest gains 20 Temporary Hit Points and a +4 bonus to attack and damage rolls for 1 hour."
+   },
+   {
+    "name": "Zealous Aura",
+    "type": "text",
+    "value": "The priest radiates an aura of zeal in a 40-foot Emanation originating from it. Each ally in the area has Advantage on Initiative checks, and their successful attacks deal an extra **3d6** Radiant damage. This aura becomes inactive if the priest has the Incapacitated condition."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The high priest makes three Sharp Rebuke attacks."
+   },
+   {
+    "name": "Sharp Rebuke",
+    "type": "text",
+    "value": "*Melee or Ranged Spell Attack:* +10 to hit, reach 5 ft. or range 60 ft., one target. *Hit:* 18 (**3d8 + 5**) Radiant damage, and one ally of the priest within 20 feet of the target can take a Reaction to regain 9 (**1d8 + 5**) Hit Points and make a melee attack."
+   },
+   {
+    "name": "Call Soldiers of the Faith",
+    "type": "text",
+    "value": "The high priest calls forth celestials that take the form of 1d4 + 1 (Warrior Veterans) __Warrior Veterans__ or 1d3 (Lions) __Lions__ that enter the Initiative at the end of the high priest's turn. The celestials follow the priest's commands and remain for 1 minute or until slain."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Inspiring Monologue (3/Day)",
+    "type": "text",
+    "value": "The priest chooses any number of allies within 60 feet who can hear the priest. Until the end of the priest's next turn, each target has  Immunity to the Charmed, Exhaustion, and Frightened conditions and does not provoke Opportunity Attacks."
    }
   ]
  },
@@ -43688,6 +45293,121 @@
   ]
  },
  {
+  "name": "Mind Siphon",
+  "source": "GrimHollowCG24",
+  "subtitle": "Large aberration",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Mind%20Siphon.webp",
+  "url": "https://5e.tools/bestiary.html#mind%20siphon_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "18",
+      "14",
+      "15",
+      "19",
+      "12",
+      "11"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+2",
+      "+2",
+      "+4",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+8",
+      "+6",
+      "+6",
+      "+8",
+      "+1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 154 (22d10 + 44)",
+     "**Speed**: *walk* 40 Ft., *climb* 40 Ft.",
+     "**Skills**: perception +5, stealth +6",
+     "**Immunities**: psychic; charmed, frightened",
+     "**Senses**: darkvision 120 ft.",
+     "**Languages**: telepathy 120 ft.",
+     "**CR**: 10"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Displacement",
+    "type": "text",
+    "value": "Attack rolls against the Mind Siphon have Disadvantage, since it projects an illusion that makes it appear near its actual location. This trait is suppressed while the Mind Siphon has the Incapacitated condition."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The Mind Siphon has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Spider Climb",
+    "type": "text",
+    "value": "The Mind Siphon can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Mind Siphon makes two Tentacle Tongue attacks at different targets."
+   },
+   {
+    "name": "Tentacle Tongue",
+    "type": "text",
+    "value": "*Melee Attack:* +8 to hit, reach 15 ft., one target. *Hit:* 26 (**5d8 + 4**) Psychic damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 16) from the Mind Siphon's Tentacle Tongue, and the target has the Stunned condition until the Grapple ends. The Mind Siphon can Grapple up to two creatures at the same time."
+   },
+   {
+    "name": "Consume Head (Recharge 6)",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 16, one creature Grappled by Tentacle Tongue. *Failure:*  44 (**8d10**) Piercing damage. *Success* Half damage. *Failure or Success*: If this damage reduces the target to 0 Hit Points, the Mind Siphon kills it and devours its head."
+   },
+   {
+    "name": "Synaptic Eruption (Recharge 5-6)",
+    "type": "text",
+    "value": "*Intelligence Saving Throw:* DC 16, each creature within 30 feet of the Mind Siphon. *Failure:*  36 (**8d8**) Psychic damage, and the target has the Stunned condition until the end of the Mind Siphon's next turn. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Missionary",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Medium humanoid",
@@ -49470,6 +51190,122 @@
   "bonusActions": []
  },
  {
+  "name": "Plague Carrion",
+  "source": "GrimHollowCG24",
+  "subtitle": "Large monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Plague%20Carrion.webp",
+  "url": "https://5e.tools/bestiary.html#plague%20carrion_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "14",
+      "10",
+      "19",
+      "13",
+      "17",
+      "5"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+0",
+      "+4",
+      "+1",
+      "+3",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+2",
+      "+0",
+      "+9",
+      "+1",
+      "+8",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 247 (26d10 + 104)",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
+     "**Skills**: perception +8",
+     "**Resistances**: necrotic",
+     "**Immunities**: acid, poison; poisoned",
+     "**Senses**: darkvision 60 ft.",
+     "**Languages**: all languages known before the curse",
+     "**CR**: 14"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Cloud of Blight",
+    "type": "text",
+    "value": "A miasma surrounds the Plague Carrion in a 20-foot Emanation. Each time another creature starts its turn or enters the area, it gains a -1 penalty to damage rolls. Multiple instances of this penalty stack, but a creature can't gain it more than once each round. The penalty is removed when the creature finishes a Quick, Short, or Long Rest."
+   },
+   {
+    "name": "Death Burst",
+    "type": "text",
+    "value": "When the Plague Carrion dies, it explodes in a cloud of sickening gas. *Constitution Saving Throw:* DC 17, each creature in a 10-foot Emanation centered on the Plague Carrion. *Failure:*  27 (**6d8**) Poison damage, and the creature's Hit Point maximum is reduced by an amount equal to half the Poison damage taken (rounding down). *Success* Half damage only."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Hit Point maximum reduction lasts until the creature finishes a Short or Long Rest."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Plague Carrion makes one Bite attack and one Plague Touch attack, or two Plague Beam attacks."
+   },
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 20 (**4d8 + 2**) Piercing damage."
+   },
+   {
+    "name": "Plague Touch",
+    "type": "text",
+    "value": "*Melee Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 49 (**10d8 + 4**) Poison damage. *Constitution Saving Throw:* DC 17. *Failure:*  The target's Hit Point maximum is reduced by an amount equal to half the Poison damage taken (rounding down)."
+   },
+   {
+    "name": "Plague Beam",
+    "type": "text",
+    "value": "*Ranged Attack:* +8 to hit, range 60 ft., one target. *Hit:* 16 (**3d8 + 3**) Poison damage, and the target has the Poisoned condition until the end of the Plague Carrion's next turn."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Plant Spirit",
   "source": "GrimHollowPG24",
   "subtitle": "Medium or Large Plant",
@@ -49708,6 +51544,143 @@
     "name": "Shape-Shift",
     "type": "text",
     "value": "The plasmid shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true amorphous form. Any equipment it is wearing or carrying isn't transformed."
+   }
+  ]
+ },
+ {
+  "name": "Preceptor",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#preceptor_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "9",
+      "14",
+      "14",
+      "20",
+      "13",
+      "11"
+     ],
+     [
+      "Mod.",
+      "-1",
+      "+2",
+      "+2",
+      "+5",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "-1",
+      "+2",
+      "+2",
+      "+5",
+      "+1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12",
+     "**HP**: 104 (16d8 + 32)",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.",
+     "**Skills**: animal handling +5, arcana +9, history +9, investigation +9, medicine +5, nature +9",
+     "**Languages**: Any five languages",
+     "**CR**: 9"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Academic Specialty",
+    "type": "text",
+    "value": "The Preceptor has Advantage on all ability checks using their chosen specialty and gains Resistance to a type of damage."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Biothurge, Master of Warbreed: Medicine, Poison",
+      "Blastwright, Master of Machines: Arcana, Fire",
+      "Decosopher, Master of Alchemy: Nature, Acid"
+     ]
+    }
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Preceptor makes three Scalpel attacks. It can replace one Scalpel attack with an Acid Flask, Incendiary Bomb, or Neurotoxic Cloud."
+   },
+   {
+    "name": "Scalpel",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 7 (**1d4 + 5**) Slashing damage, plus 7 (**2d6**) Poison damage."
+   },
+   {
+    "name": "Acid Flask (Decosopher)",
+    "type": "text",
+    "value": "*Melee or Ranged Weapon Attack:* +9 to hit, reach 5 ft. or range 60 ft., *Hit:* 12 (**2d6 + 5**) Acid damage and 7 (**2d6**) Acid damage at the end of the target's next turn."
+   },
+   {
+    "name": "Incendiary Bomb (Blastwright)",
+    "type": "text",
+    "value": "*Melee or Ranged Weapon Attack:* +9 to hit, reach 5 ft. or range 60 ft., *Hit:* 18 (**4d8**) Fire damage and the target has the Prone condition."
+   },
+   {
+    "name": "Neurotoxic Cloud (Biothurge)",
+    "type": "text",
+    "value": "Targets in a 20-ft. Cone take 10 (**3d6**) Necrotic damage and have the Poisoned condition for 1 minute. If the target succeeds on a DC 17 Constitution saving throw, it takes half damage and is not Poisoned."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Impromptu Golem (Biothurge, 1/Day)",
+    "type": "text",
+    "value": "The biothurge turns a twisted mass spare bodies parts into a **__Zombie__**. The zombie lasts until the end of the biothurge's next turn or until it is destroyed. The biothurge can use a Bonus Action to extend the duration for 1 round."
+   },
+   {
+    "name": "Latent Decoction (Decosopher, 1/Day)",
+    "type": "text",
+    "value": "The decosopher activates a potion stored in its blood stream. The decosopher is affected by its choice of: *Haste, Healing (Superior), Speed, or Water Breathing*."
+   },
+   {
+    "name": "Magitek Interference (Blastwright, 1/Day)",
+    "type": "text",
+    "value": "The blastwright enjoins a magical item or golem to cease functioning until the beginning of the blastwright's next turn. If the item is held or is a creature, a successful DC 17 Intelligence saving throw resists the interference."
    }
   ]
  },
@@ -60904,6 +62877,115 @@
   "bonusActions": []
  },
  {
+  "name": "Sightless Agony",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Sightless%20Agony.webp",
+  "url": "https://5e.tools/bestiary.html#sightless%20agony_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "20",
+      "15",
+      "18",
+      "10",
+      "10",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+2",
+      "+4",
+      "+0",
+      "+0",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+9",
+      "+2",
+      "+9",
+      "+0",
+      "+0",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 187 (22d8 + 88)",
+     "**Speed**: *walk* 30 Ft., *fly* 40 Ft.",
+     "**Resistances**: bludgeoning, piercing, slashing",
+     "**Senses**: blindsight 60 ft.",
+     "**Languages**: all languages known before the curse",
+     "**CR**: 10"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Shared Agony",
+    "type": "text",
+    "value": "When a Sightless Agony takes damage, it emits a wave of energy, causing each creature within 5 feet of it to take an amount of Psychic damage equal to half the triggering damage (rounding down)."
+   },
+   {
+    "name": "Stunted Flight",
+    "type": "text",
+    "value": "When a Sightless Agony chooses to fly, it must land by the end of its turn or have the Prone condition."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Sightless Agony makes one Bite attack, two Claw attacks, and one Tail attack."
+   },
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) Piercing damage plus 14 (**2d8 + 5**) Psychic damage."
+   },
+   {
+    "name": "Claw",
+    "type": "text",
+    "value": "*Melee Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 12 (**2d6 + 5**) Slashing damage plus 14 (**2d8 + 5**) Psychic damage. If both Claw attacks hit the same creature, the target has the Grappled condition (escape DC 17). Checks made to escape the grapple have Disadvantage."
+   },
+   {
+    "name": "Tail",
+    "type": "text",
+    "value": "*Melee Attack:* +9 to hit, reach 10 ft., one target. *Hit:* 14 (**2d8 + 5**) Piercing damage plus 18 (**3d8 + 5**) Psychic damage, and the target is subjected to the following effect. *Strength Saving Throw:* DC 17. *Failure:*  The target has the Prone condition."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Silver Order Cavalier",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Medium humanoid",
@@ -66394,6 +68476,268 @@
    }
   ],
   "bonusActions": []
+ },
+ {
+  "name": "Thaumaturge Archmage",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#thaumaturge%20archmage_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "18",
+      "18",
+      "21",
+      "18",
+      "18"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+4",
+      "+4",
+      "+5",
+      "+4",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+4",
+      "+4",
+      "+10",
+      "+9",
+      "+9"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 187 (22d8 + 88)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 2",
+     "**Skills**: arcana +15, history +15, insight +9, perception +9",
+     "**Senses**: truesight 120 ft.",
+     "**Languages**: one regional language plus five other languages",
+     "**CR**: 15"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Collaborative Rift Control",
+    "type": "text",
+    "value": "When multiple Thaumaturge Archmages capable of creating and controlling Arcane Rifts are present, they can interact with each other's rifts, and for every additional Thaumaturge Archmage, the maximum possible level of each rift increases by 2, up to a maximum of 15."
+   },
+   {
+    "name": "Legendary Resistance (3/Day)",
+    "type": "text",
+    "value": "If the archmage fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The archmage has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Personalized Arcane Burst",
+    "type": "text",
+    "value": "Each archmage is specialized in one pair of damage types from the following list:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Acid and Poison",
+      "Bludgeoning and Necrotic",
+      "Cold and Fire"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the archmage uses the Arcane Burst action, it can choose to change the attack's damage type from Force to one of the two selected damage types."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The archmage makes four Arcane Burst attacks or makes two Arcane Burst attacks and uses the Spellcasting action."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Spell Attack:* +10 to hit, reach 5 ft. or range 150 ft., one target. *Hit:* 27 (**4d10 + 5**) Force damage and the creature is pushed back 10 feet."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Misty Step",
+    "type": "text",
+    "value": "The archmage casts __Misty Step__, using the same spellcasting ability as Spellcasting."
+   }
+  ]
+ },
+ {
+  "name": "Thaumaturge Initiated",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium or Small humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#thaumaturge%20initiated_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "9",
+      "14",
+      "11",
+      "18",
+      "12",
+      "10"
+     ],
+     [
+      "Mod.",
+      "-1",
+      "+2",
+      "+0",
+      "+4",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "-1",
+      "+2",
+      "+0",
+      "+7",
+      "+4",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 81 (18d8)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: arcana +7, deception +3, perception +4, stealth +5",
+     "**Senses**: darkvision 150 ft.",
+     "**Languages**: one regional language plus three other languages",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Disguise Other",
+    "type": "text",
+    "value": "When the initiated casts __Disguise Self__, it can choose to have it affect up to 3 additional creatures (including Hostiles) that it can see within 60 feet. It can choose the same or different disguises for each affected creature. When cast in this manner, the effect lasts for 1 minute or until the initiated chooses to dismiss it from that creature."
+   },
+   {
+    "name": "Personalized Arcane Burst",
+    "type": "text",
+    "value": "Each initiated is specialized in one pair of damage types from the following list:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Acid and Poison",
+      "Bludgeoning and Necrotic",
+      "Cold and Fire"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the initiated uses the Arcane Burst action, it can choose to change the attack's damage type from Force to one of the two selected damage types."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The initiated makes three Arcane Burst attacks."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Spell Attack:* +7 to hit, reach 5 ft. or range 120 ft., one target. *Hit:* 17 (**3d8 + 4**) Force damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Malignant Transposition (3/Day)",
+    "type": "text",
+    "value": "The initiated creates clouds in a 5-ft radius Sphere in its space and in up to three additional spaces it can see within 60 feet. The Spheres are Heavily Obscured except to the initiated. The Spheres last until the start of the initiate's next turn, or they can be dispersed by a strong wind."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the clouds appear, the initiated can target one creature in one cloud with the following effect. *Charisma Saving Throw:* DC 15. *Failure:*  The creature swaps places with the initiated. The initiated can also teleport themselves to an unoccupied space within one of the other clouds."
+   }
+  ]
  },
  {
   "name": "Thayan Apprentice",
@@ -72617,6 +74961,105 @@
   "bonusActions": []
  },
  {
+  "name": "Trade Factor",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#trade%20factor_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "8",
+      "14",
+      "12",
+      "15",
+      "13",
+      "17"
+     ],
+     [
+      "Mod.",
+      "-1",
+      "+2",
+      "+1",
+      "+2",
+      "+1",
+      "+3"
+     ],
+     [
+      "Save.",
+      "-1",
+      "+2",
+      "+1",
+      "+4",
+      "+1",
+      "+5"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 33 (6d8 + 6)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: deception +5, insight +3, intimidation +5, persuasion +5",
+     "**Languages**: any three languages",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Silver Tongue",
+    "type": "text",
+    "value": "The Trade Factor has Advantage on *Deception*, *Insight*, and *Persuasion* checks when discussing trade deals or contracts."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Trade Factor makes two attacks using its Rapier."
+   },
+   {
+    "name": "Rapier",
+    "type": "text",
+    "value": "*Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d8 + 2**) Piercing damage, plus 3 (**1d6**) Poison damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Gold Talks",
+    "type": "text",
+    "value": "The Trade Factor throws 10 GP to creature within 30 feet. The creature must succeed on a DC 13 Wisdom saving throw or gain the Charmed condition until the end of the factor's next turn."
+   }
+  ]
+ },
+ {
   "name": "Troll Hag (Coven Variant)",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Large giant",
@@ -74167,6 +76610,110 @@
     "value": "Verminaard or one creature he can see within 60 feet of himself magically regains 17 (2d12 + 4) hit points."
    }
   ]
+ },
+ {
+  "name": "Verminous Abomination",
+  "source": "GrimHollowCG24",
+  "subtitle": "Large monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Verminous%20Abomination.webp",
+  "url": "https://5e.tools/bestiary.html#verminous%20abomination_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "13",
+      "14",
+      "13",
+      "14",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+1",
+      "+2",
+      "+1",
+      "+2",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+6",
+      "+1",
+      "+5",
+      "+1",
+      "+2",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 120 (16d10 + 32)",
+     "**Speed**: *walk* 40 Ft., *burrow* 40 Ft.",
+     "**Skills**: perception +5, stealth +7",
+     "**Senses**: darkvision 120 ft.",
+     "**Languages**: all languages known before the curse",
+     "**CR**: 5"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Tunneler",
+    "type": "text",
+    "value": "The Verminous Abomination can burrow through solid rock at half its Speed and leaves a 10-foot-wide, 10-foot-high tunnel in its wake."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Verminous Abomination makes two attacks: one with its Bite and one with its Claws."
+   },
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 12 (**2d8 + 3**) Piercing damage. *Constitution Saving Throw:* DC 15. *Failure:*  13 (**3d8**) Poison damage and have the Poisoned condition for 1 minute. *Success* Half damage only."
+   },
+   {
+    "name": "Claws",
+    "type": "text",
+    "value": "*Melee Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) Slashing damage."
+   },
+   {
+    "name": "Birth Ratlings (Recharge 5-6)",
+    "type": "text",
+    "value": "The Verminous Abomination spawns 1d4+2 __Swarm of Rats__ within 5 feet of it. The swarms may immediately move and use actions. On later turns, they move and take actions on the same Initiative as the Verminous Abomination."
+   }
+  ],
+  "bonusActions": []
  },
  {
   "name": "Vessla Browntooth",
@@ -76311,6 +78858,111 @@
   "bonusActions": []
  },
  {
+  "name": "Watchful Priest",
+  "source": "GrimHollowCG24",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#watchful%20priest_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "8",
+      "10",
+      "13",
+      "13",
+      "17",
+      "16"
+     ],
+     [
+      "Mod.",
+      "-1",
+      "+0",
+      "+1",
+      "+1",
+      "+3",
+      "+3"
+     ],
+     [
+      "Save.",
+      "-1",
+      "+0",
+      "+1",
+      "+1",
+      "+5",
+      "+5"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 60 (11d8 + 11)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: deception +5, insight +5, intimidation +5, perception +5, persuasion +5, religion +3",
+     "**Languages**: one regional language plus one other language",
+     "**CR**: 3"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Enraging Sacrifice",
+    "type": "text",
+    "value": "When the priest dies, each ally within 20 feet who can see the priest gains 10 Temporary Hit Points and a +2 bonus to attack and damage rolls for 1 minute."
+   },
+   {
+    "name": "Zealous Aura",
+    "type": "text",
+    "value": "The priest radiates an aura of zeal in a 20-foot Emanation originating from it. Each ally in the area has Advantage on Initiative checks, and their successful attacks deal an extra **1d4** Radiant damage. This aura becomes inactive if the priest has the Incapacitated condition."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The priest makes two Castigating Word attacks."
+   },
+   {
+    "name": "Castigating Word",
+    "type": "text",
+    "value": "*Melee or Ranged Spell Attack:* +5 to hit, reach 5 ft. or range 60 ft., one target. *Hit:* 7 (**2d6**) Radiant damage, and one ally of the priest within 20 feet of the target can take a Reaction to make a melee attack."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Righteous Morale (1/Day)",
+    "type": "text",
+    "value": "The priest chooses up to three other creatures it can see within 20 feet of it. Each target regains 4 (**1d8**) Hit Points and has  Immunity to the Charmed and Frightened conditions until the start of the priest's next turn."
+   }
+  ]
+ },
+ {
   "name": "Wayward Haint",
   "source": "CrookedMoon24",
   "subtitle": "Medium undead",
@@ -76544,6 +79196,121 @@
     "value": "The hag shape-shifts to resemble a Tiny __weasel__ (Speed 30 ft., Climb 30 ft.) or a Small or Medium Humanoid, or back into her true form. Her game statistics, other than her Speed as a weasel and her size, are the same in each form. Any equipment she is wearing or carrying isn't transformed."
    }
   ]
+ },
+ {
+  "name": "Weeping Willow",
+  "source": "GrimHollowCG24",
+  "subtitle": "Large plant",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowCG24/Weeping%20Willow.webp",
+  "url": "https://5e.tools/bestiary.html#weeping%20willow_grimhollowcg24",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "17",
+      "10",
+      "19",
+      "13",
+      "15",
+      "21"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+0",
+      "+4",
+      "+1",
+      "+2",
+      "+5"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+0",
+      "+9",
+      "+1",
+      "+7",
+      "+10"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 228 (24d10 + 96)",
+     "**Speed**: *walk* 10 Ft.",
+     "**Skills**: deception +15, persuasion +15",
+     "**Resistances**: bludgeoning, piercing, slashing",
+     "**Senses**: darkvision 120 ft.",
+     "**Languages**: telepathy 120 ft.",
+     "**CR**: 14"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Alluring Cry",
+    "type": "text",
+    "value": "The cry of the Weeping Willow attracts creatures in a 120-foot Emanation from the willow. At the start of each of its turns, a creature within the area must succeed on a DC 18 Charisma save or have the Charmed condition for 1 hour. On a success, the target is immune to this Weeping Willow's Alluring Cry for 24 hours."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While Charmed, the target also has the Incapacitated condition. On each of its turns, a Charmed creature must use its movement to approach the Weeping Willow by the most direct route, stopping when it is within 5 feet of the Weeping Willow. It doesn't avoid Opportunity Attacks, but if this movement would obviously cause damage (such as by walking through fire), the creature repeats the save before entering that space."
+   },
+   {
+    "name": "Deep Rooted",
+    "type": "text",
+    "value": "The Weeping Willow is immune to effects that would move it."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The Weeping Willow has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The Weeping Willow makes two Slam attacks."
+   },
+   {
+    "name": "Slam",
+    "type": "text",
+    "value": "*Melee Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 25 (**4d10 + 3**) Bludgeoning damage."
+   },
+   {
+    "name": "Lignify",
+    "type": "text",
+    "value": "*Constitution Saving Throw:*, one creature within 5 feet: DC 17. *Failure:*  The target has the Restrained condition and repeats the save at the end of its next turn if it is still Restrained, ending the effect on itself on a success. *Failure:*  The target has the Petrified condition instead of the Restrained condition, becoming a tree permanently. __Greater Restoration__ or similar magic returns an affected creature to their original form."
+   }
+  ],
+  "bonusActions": []
  },
  {
   "name": "Wellwyrm",

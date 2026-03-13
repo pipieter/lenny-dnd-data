@@ -1,5 +1,384 @@
 [
  {
+  "name": "Alternative Rest System",
+  "source": "GrimHollowCG24",
+  "url": "https://5e.tools/variantrules.html#alternative%20rest%20system_grimhollowcg24",
+  "ruleType": "Variant",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Rests are crucial for characters to regain their resources, including Hit Points, class features, and spell slots. For players seeking a grittier or more challenging campaign experience, this alternative rest system replaces the rest mechanics found in the core fifth edition rules. Any references to Short or Long Rests elsewhere in the core rules now refer to these rules."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Intentions of rules are just as important to understand as the rules themselves. The intention of the alternative resting rules is to challenge characters, not to destroy them. The main reason some campaigns seem too easy or not challenging enough is the abundance of resources that characters have, and those resources are regained through Short, or Long Rests.*\n*This alternative resting system is meant to ensure that characters can regain the Hit Points necessary to take part in encounters without always having the most powerful of their abilities to use every time.*\n*Even more important than survivability with this new resting variant is story-driven decision making. In order to take a Long Rest, characters must not just rest longer, they must rest in a place of safety. This can mean making a hard choice: should we push further into the monster's lair or the Hostile territory, or should we retreat to a place of safety?*\n*It also places an emphasis on the characters making it a priority to find, cultivate, or maybe even create a place of safety. That threatened village may not mean much to the characters in terms of the connections they've made, but it means much more when it might be the only place they are able to rest in the area. You'll find that the people and places of Etharis become much more important to the players when their valuable adventuring resources hinge on having a safe place to sleep.*"
+   },
+   {
+    "name": "Quick Rest",
+    "type": "text",
+    "value": "A Quick Rest is a 1-hour period of relaxation, where a creature does nothing more strenuous than reading, talking, eating, or standing watch. A Quick Rest can occur anywhere. To start a Quick Rest, you must have at least 1 Hit Point."
+   },
+   {
+    "name": "Benefits of a Quick Rest",
+    "type": "text",
+    "value": "When you finish the Quick Rest, you gain the following benefits:"
+   },
+   {
+    "name": "Spend Hit Point Dice",
+    "type": "text",
+    "value": "You can spend one or more of your Hit Point Dice to regain Hit Points. For each Hit Point Dice spent in this way, roll the Hit Point Dice and add your Constitution modifier to it. You regain Hit Points equal to the total (minimum of 1 Hit Point). You can decide to spend an additional Hit Point Dice after each roll."
+   },
+   {
+    "name": "Interrupting a Quick Rest",
+    "type": "text",
+    "value": "A Quick Rest is stopped by the following interruptions:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Rolling Initiative",
+      "Casting a spell other than a cantrip",
+      "Taking any damage"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "An interrupted Quick Rest confers no benefits and must be restarted to gain any benefits."
+   },
+   {
+    "name": "Short Rest",
+    "type": "text",
+    "value": "A Short Rest is an extended period of rest—at least 8 hours— available to any creature. During a Short Rest, you sleep for at least 6 hours and perform no more than 2 hours of light activity, such as reading, talking, eating, or standing watch."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Short Rest can occur in any location where you can sleep without interruption. This might take place in a dangerous location that has been temporarily secured and guarded. During sleep, you have the Unconscious condition. After you finish a Short Rest, you must wait at least 8 hours before starting another one or starting a Long Rest."
+   },
+   {
+    "name": "Benefits of a Short Rest",
+    "type": "text",
+    "value": "To start a Short Rest, you must have at least 1 Hit Point. When you finish the rest, you gain the following benefits:"
+   },
+   {
+    "name": "Regain Half Hit Point Dice",
+    "type": "text",
+    "value": "You regain a number of spent Hit Point Dice equal to half of your total number of Hit Point Dice (minimum of 1). For example, if you have eight Hit Point Dice, you regain up to four spent Hit Point Dice."
+   },
+   {
+    "name": "Spend Hit Point Dice",
+    "type": "text",
+    "value": "After you regain Hit Point Dice, you can spend one or more Hit Point Dice to regain Hit Points. For each Hit Point Dice you spend in this way, roll the die and add your Constitution modifier to it. You regain Hit Points equal to the total (minimum of 1 Hit Point). You can decide to spend an additional Hit Point Dice after each roll."
+   },
+   {
+    "name": "Exhaustion Reduced",
+    "type": "text",
+    "value": "If you have the Exhaustion condition, its level decreases by 1."
+   },
+   {
+    "name": "Special Feature",
+    "type": "text",
+    "value": "Some features are recharged by a Short Rest. If you have such a feature, it recharges in the way specified in its description."
+   },
+   {
+    "name": "Interrupting a Short Rest",
+    "type": "text",
+    "value": "A Short Rest is stopped by the following interruptions:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Rolling Initiative",
+      "Casting a spell other than a cantrip",
+      "Taking any damage"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "An interrupted Short Rest confers no benefits. The interrupted Short Rest must be restarted from the beginning to gain its benefits. If the interrupted Short Rest goes for at least 1 hour, the party can treat it as a Quick Rest instead, but they cannot take another Quick Rest as part of this interrupted Short Rest."
+   },
+   {
+    "name": "Long Rest",
+    "type": "text",
+    "value": "A Long Rest is a period of extended downtime—at least 32 hours—available to any creature. During a Long Rest, you sleep for at least two 6-hour periods separated by 16 hours of light activity, such as reading, talking, eating, crafting, trading, or performing downtime activities."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Long Rest can only occur in safe locations that provide shelter, warmth, comfort, and resources like food and water. This could be a settlement, homestead, stronghold, inn, castle, or large city. A Long Rest cannot be completed in areas of discomfort or danger, such as a wilderness, dungeon, alley, or sewer. If the location is dangerous enough that characters feel the need to post watch, it cannot accommodate a Long Rest."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "During sleep, you have the Unconscious condition. After you finish a Long Rest, you must wait at least 16 hours before starting another one or a Short Rest."
+   },
+   {
+    "name": "Benefits of a Long Rest",
+    "type": "text",
+    "value": "To start a Long Rest, you must have at least 1 Hit Point. When you finish the rest, you gain the following benefits:"
+   },
+   {
+    "name": "Regain All HP",
+    "type": "text",
+    "value": "You regain all lost Hit Points and all spent Hit Point Dice. If your Hit Point maximum was reduced, it returns to normal."
+   },
+   {
+    "name": "Ability Scores Restored",
+    "type": "text",
+    "value": "If any of your ability scores were reduced, they return to normal."
+   },
+   {
+    "name": "Exhaustion Recovered",
+    "type": "text",
+    "value": "If you have the Exhaustion condition, its level decreases to 0."
+   },
+   {
+    "name": "Grievous Wounds Recovered",
+    "type": "text",
+    "value": "If you have one or more Grievous Wounds, you or another creature can attempt to treat them. See Grievous Wounds, below, for details."
+   },
+   {
+    "name": "Special Feature",
+    "type": "text",
+    "value": "Some features are recharged by a Long Rest. If you have such a feature, it recharges in the way specified in its description."
+   },
+   {
+    "name": "Interrupting the Long Rest",
+    "type": "text",
+    "value": "A Long Rest is stopped by the following interruptions:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Rolling Initiative",
+      "Casting a spell other than a cantrip",
+      "Taking any damage",
+      "Leaving the location of relative safety"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you rested at least 8 hours, including at least 6 hours of sleep, before the interruption, you gain the benefits of a Short Rest. You can only take 1 Short Rest during an attempt of a Long Rest."
+   }
+  ]
+ },
+ {
+  "name": "Creating Legendary Foes",
+  "source": "GrimHollowCG24",
+  "url": "https://5e.tools/variantrules.html#creating%20legendary%20foes_grimhollowcg24",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When creating encounters, it is often situationally appropriate to pit the party against a singular enemy. However, what is meant to be a dangerous and climactic boss fight sometimes ends as a one-way romp, not presenting a challenge for the players. This is largely due to the single creature taking far fewer actions per round of combat than the party. Legendary templates are designed to assist in this process and help make non-legendary creatures present a greater threat."
+   },
+   {
+    "name": "Legendary Templates",
+    "type": "text",
+    "value": "To implement a legendary template, select a monster that does not already have Legendary Actions. This monster should be CR 3 or higher, and it should be one that you want to be a difficult challenge for the characters to overcome."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Next, select a template from the options below. Add the Legendary Actions listed to the monster's stats. You should select a template that fits the existing abilities of the monster, such as the Spellcaster template for a Mage or a Commander for a Hobgoblin Captain."
+   },
+   {
+    "name": "Bruiser",
+    "type": "text",
+    "value": "*Legendary Action Uses: 3. Immediately after another creature's turn, the bruiser can expend a use to take one of the following actions. The bruiser regains all expended uses at the start of each of its turns.*"
+   },
+   {
+    "name": "Charge",
+    "type": "text",
+    "value": "The bruiser moves up to half its Speed directly toward an enemy creature. If this move brings it within 5 feet of that target, it can make a Weapon Attack or an Unarmed Strike against that creature. If this attack hits, the target has the Prone condition."
+   },
+   {
+    "name": "Fortify",
+    "type": "text",
+    "value": "The bruiser gains a +3 bonus to its AC until the end of its next turn. The Bruiser can't take this action again until the start of its next turn."
+   },
+   {
+    "name": "Heal",
+    "type": "text",
+    "value": "The bruiser regains Hit Points equal to 1d10 + #$prompt_number:min=1,title=Enter a CR,default=0$# (1d10 + its CR). The bruiser can't take this action again until the start of its next turn."
+   },
+   {
+    "name": "Commander",
+    "type": "text",
+    "value": "*Legendary Action Uses: 3 (4 in Lair). Immediately after another creature's turn, the commander can expend a use to take one of the following actions. The commander regains all expended uses at the start of each of its turns.*"
+   },
+   {
+    "name": "Maneuver Ally",
+    "type": "text",
+    "value": "The commander chooses up to three allies it can see within 30 feet of it. If a target can see and hear the commander, it can take a Reaction to move up to half its Speed without provoking Opportunity Attacks."
+   },
+   {
+    "name": "Command Ally",
+    "type": "text",
+    "value": "The commander chooses one ally it can see within 30 feet of it. If the target can see and hear the Commander, it can take a Reaction to make one Weapon Attack or Unarmed Strike with Advantage on the attack roll. If the attack hits, the target regains the use of its Reaction."
+   },
+   {
+    "name": "Summon Allies (Costs 3 Actions)",
+    "type": "text",
+    "value": "The Commander summons 1d4+1 Friendly creatures of a CR no greater than one quarter the Commander's CR (rounded down), assuming such creatures would be available at the location. The creatures appear within 30 feet of the Commander in an unoccupied space. The commander can't take this action again for 1 hour."
+   },
+   {
+    "name": "Practiced Spellcaster",
+    "type": "text",
+    "value": "*Legendary Action Uses: 3. Immediately after another creature's turn, the practiced spellcaster can expend a use to take one of the following actions. The practiced spellcaster regains all expended uses at the start of each of its turns.*"
+   },
+   {
+    "name": "Cast Cantrip",
+    "type": "text",
+    "value": "The practiced spellcaster casts a cantrip it knows, or a spell in its stat block that can be cast at will."
+   },
+   {
+    "name": "Teleport",
+    "type": "text",
+    "value": "The practiced spellcaster magically teleports up to 120 feet to an unoccupied space it can see. The practiced spellcaster can't take this action again until the start of its next turn."
+   },
+   {
+    "name": "Cast a Spell (Costs 3 Actions)",
+    "type": "text",
+    "value": "The Practiced Spellcaster casts a spell from its list of spells, using a spell slot as normal."
+   },
+   {
+    "name": "Skirmisher",
+    "type": "text",
+    "value": "*Legendary Action Uses: 3. Immediately after another creature's turn, the skirmisher can expend a use to take one of the following actions. The skirmisher regains all expended uses at the start of each of its turns.*"
+   },
+   {
+    "name": "Move",
+    "type": "text",
+    "value": "The skirmisher moves up to its Speed without provoking Opportunity Attacks."
+   },
+   {
+    "name": "Weapon Attack",
+    "type": "text",
+    "value": "The skirmisher makes a Weapon Attack or an Unarmed Strike."
+   },
+   {
+    "name": "Calculated Strike (Costs 3 Actions)",
+    "type": "text",
+    "value": "The Skirmisher makes a Weapon Attack or Unarmed Strike against a target. If the attack hits, it scores a Critical Hit."
+   }
+  ]
+ },
+ {
+  "name": "Diseases and Afflictions",
+  "source": "GrimHollowCG24",
+  "url": "https://5e.tools/variantrules.html#diseases%20and%20afflictions_grimhollowcg24",
+  "ruleType": "Variant Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Diseases hold an odd position in fantasy worlds. They are meant to be as dangerous as real-world epidemics; however, magical cures and remedies are readily available to characters at lower levels, making them difficult to use as either an interesting game mechanic or a viable storytelling hook or plot device. In fact, 2024 5e rules barely mention diseases as a game element."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Grim Hollow, however, wants diseases to be a relevant— and even crucial—factor in adventures and campaigns set in Etharis. The Weeping Pox is an important piece of lore in Etharis's history, so to eliminate them completely flies in the face of everything Grim Hollow is about."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a way of making diseases, contagions, and afflictions a viable tool for GMs to tell stories, use the following rules."
+   },
+   {
+    "name": "Natural Diseases",
+    "type": "text",
+    "value": "Various naturally occurring viruses and bacteria regularly rampage through Etharis, causing both isolated cases of a disease as well as more dire epidemics. These diseases, however, can be combated with normal medicine, as well as eradicated by magic. Sometimes the symptoms of even the most contagious and debilitating disease can be managed with lower-level magic, or cured completely with spells such as __Lesser Restoration__."
+   },
+   {
+    "name": "Rules for Natural Diseases",
+    "type": "text",
+    "value": "For a standard, nonmagical disease or affliction, an exposed creature can make a DC 10 Constitution saving throw. For harsher diseases, the DC could increase as necessary to enforce the deadly nature of the disease."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "On a successful save, the character might show very mild symptoms but suffer no other game-mechanically relevant effects. On a failed save, the character gains 1 Exhaustion level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After two days have passed, the character can repeat the saving throw. On a failed save, they gain another Exhaustion level. If they did not complete a Long Rest over that 2-day stretch, they have Disadvantage on the check. On a success, they have resisted the disease."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This process continues until the character has either resisted the disease by succeeding on a saving throw, been cured via medicine or magic, or die from gaining 6 Exhaustion levels."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A GM can determine the ways in which *Medicine* checks or other healing efforts might succeed. It's important to let characters with proficiency in skills or tools use those avenues for healing."
+   },
+   {
+    "name": "Magical Diseases and Contagions",
+    "type": "text",
+    "value": "The Core Rules for 2024 fifth edition have rules and examples of magical contagions, but the rules here could supplement them to show the particularly deadly place these contagions hold in Etharis."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Magical diseases and contagions have a similar effect and method of resolution to natural diseases. However, there may be affects in addition to Exhaustion levels. The DC for resisting the magical diseases is 15 instead of 10, and typical magic or rest cannot remove Exhaustion levels."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The other rules for suffering from and resting the magical diseases and contagions should follow the pattern set in the previous section."
+   },
+   {
+    "name": "Curse Diseases and Afflictions",
+    "type": "text",
+    "value": "Even more virulent, pervasive, and deadly are curse diseases and afflictions. These are not just magical in nature, they are harder to shake and have more potentially dire consequences if not healed in a reasonable time. The __Weeping Pox__ is an example of a curse disease that is highly unlikely to be cured easily, even with magic."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Unlike the lesser varieties of diseases and magical contagions, curse diseases and afflictions cannot be cured by __Lesser Restoration__ or other lower-level spells or powers. Magic on the level of Wish is needed to even have a chance of curing such afflictions, and even then it is not a sure thing."
+   },
+   {
+    "name": "The Weeping Pox",
+    "type": "text",
+    "value": "An example of a curse disease in Etharis is the Weeping Pox. A person subjected to the disease must succeed on a DC 20 Constitution saving throw once each day they are exposed. If they succeed, they are safe for 24 hours. On a failed save, they have the affliction and begin to show symptoms within 24 hours."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At first a sick person will be subject to fever causing sharpened senses, overexcitement, and a sense of wellbeing. For the first three days, creatures suffering from the Weeping Pox must succeed on a DC 20 Constitution saving throw each day. If any of those saving throws fail, the creature reaches critical stages at the end of those 72 hours."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After 72 hours, these original symptoms transition to delirium, burning fever, insatiable thirst, and weltering lesions that have given the illness its name. Beyond this, nearly all who contract the disease die withing the next 72 hours. Most people succumb to the pox within the week, while the most resilient may hold on for almost two weeks."
+   }
+  ]
+ },
+ {
   "name": "Epic Action",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/variantrules.html#epic%20action_monstersofdrakkenheim",
@@ -47,6 +426,349 @@
     "name": "Rests in Grim Hollow",
     "type": "text",
     "value": "The dark-fantasy vibe of Grim Hollow necessitates a change to the effects of Short and Long Rests. Grievous Wounds can be healed by taking a Long Rest, but those rests in Grim Hollow take 32 hours of resting in a completely safe environment."
+   }
+  ]
+ },
+ {
+  "name": "Grievous Wounds",
+  "source": "GrimHollowCG24",
+  "url": "https://5e.tools/variantrules.html#grievous%20wounds_grimhollowcg24",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A consistent theme throughout dark fantasy and related genres is the fragility of life and the consequences of actions. While the roleplaying ramifications of a party's decision can be highlighted through story outcomes, combat ramifications can be a little harder to implement."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Grievous Wounds add grit and realism to combat encounters, bringing the consequences of a difficult fight to the forefront of storytelling."
+   },
+   {
+    "name": "Implementing Grievous Wounds",
+    "type": "text",
+    "value": "Grievous Wounds come into play whenever a character is reduced to 0 Hit Points. When a character is reduced to 0 Hit Points, they roll 2d10 and add them together. Then they subtract from the result the number of existing [Grievous Wounds](https://5e.tools/tables.html#grievous%20wounds_grimhollowcg24) they have."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "With that result, consult the Grievous Wound table. If a player rolls the same result as one they already have a wound for, they skip this result and select the next lowest result they do not have as a wound. Results with a [*] next to them can be taken more than once."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "For example, if the modified result is a 6, and the character already has the Grievous Wound listed as result 6, they gain the Grievous Wound listed as result 5."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Upon completing a Long Rest, if the character or someone helping them succeeds at a Wisdom (Medicine) check, a player can remove all effects from Grievous Wounds, but not Permanent Wounds. The DC for the Ability Check equals 10 plus the number of Grievous Wounds the character has. A character with a Healer's Kit automatically succeeds the check by expending one use of a Healer's Kit."
+   },
+   {
+    "name": "Grievous Wounds",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Grievous Wounds",
+     "headers": [
+      "2d10",
+      "Grievous Wound"
+     ],
+     "rows": [
+      [
+       "2-3",
+       "Permanent Wound. You sustain a grisly wound that may haunt you forever.. Roll 1d10 on the Permanent Wounds table and apply the result."
+      ],
+      [
+       "4",
+       "Festering Wound. Your injury becomes infected, causing a fever. You have the Poisoned condition. While Poisoned, you have Disadvantage on Constitution saving throws. A creature cannot ignore this instance of the Poisoned condition through Immunity."
+      ],
+      [
+       "5",
+       "Internal Bleeding[*]. You suffer an internal hemorrhage and bruising. Your Hit Point maximum is reduced by three times your character level."
+      ],
+      [
+       "6",
+       "Wracked With Pain. Your injury causes intense pain that limits your agility. You have Disadvantage on Dexterity saving throws."
+      ],
+      [
+       "7",
+       "Concussion. A brain contusion leaves you struggling to focus. You gain the Dazed condition."
+      ],
+      [
+       "8",
+       "Laceration. Blood wells unabaited from a deep injury. You gain the Bleeding condition."
+      ],
+      [
+       "9",
+       "Deep Wound[*]. You endure a blow that would kill many, but merely staggers you. When you are reduced to 0 Hit Points, you start with one failed Death Saving Throw."
+      ],
+      [
+       "10",
+       "Battered[*]. Your muscles ache and you have had the wind knocked out of you. You gain 1 Exhaustion level."
+      ],
+      [
+       "11",
+       "Injured Wrist[*]. You have badly sprained your wrist or fractured a bone in your arm and are unable to use it effectively. You are unable to hold objects in one of your hands and you cannot take actions that require that arm."
+      ],
+      [
+       "12",
+       "Damaged Eardrum. A blow to your head impairs your hearing. You have the Deafened condition."
+      ],
+      [
+       "13",
+       "System Shock. You suffer a severe nervous shock. You have Disadvantage on Initiative rolls."
+      ],
+      [
+       "14",
+       "Injured Leg[*]. An injury to your leg or foot slows your movement. Reduce your Speed by 10 feet, to a minimum of 5 feet. Your Speed can't be increased, and you can't take the Dash action."
+      ],
+      [
+       "15",
+       "Torn Muscle[*]. This injury reduces your combat prowess. When you deal damage with a Weapon Attack or an Unarmed Strike, roll 1d4;1d6;1d8;1d10;1d12 (1d4) and subtract the result from the damage dealt. Each additional time you receive this wound, increase the size of the die rolled (to 1d6, 1d8, 1d10, and 1d12). After reaching the maximum die size listed, replace further Torn Muscle results with Injured Leg."
+      ],
+      [
+       "16",
+       "Stymied Recovery. Your injury slows your overall recovery. The total number of Hit Point Dice you can spend during a Short or Quick Rest is equal to your Constitution modifier (minimum of 1)."
+      ],
+      [
+       "17",
+       "Severe Swelling. Your swollen injuries give you an uncouth appearance. You have Disadvantage on Charisma (Performance) and Charisma (Persuasion) checks."
+      ],
+      [
+       "18-20",
+       "Close Call[*]. You narrowly miss an otherwise dangerous blow. Instead of being reduced to 0 Hit Points, you have 1 Hit Point and have the Prone condition."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Permanent Wounds",
+    "type": "text",
+    "value": "Permanent Wounds are injuries that were not necessarily lethal but left the recipient permanently injured. They represent a serious impediment that requires creativity to overcome, especially at lower levels."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The effects of a Permanent Wound are irreversible unless the recipient is targeted with the Regenerate spell, upon which one Permanent Wound is removed. Some of the effects of Permanent Wounds can be offset with Prosthetics or magical items."
+   },
+   {
+    "name": "Permanent Wounds",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Permanent Wounds",
+     "headers": [
+      "1d10",
+      "Permanent Wound"
+     ],
+     "rows": [
+      [
+       "1",
+       "Fatal Wound. Through an unrecoverable injury, you have been fatally wounded. You are now dead but can be brought back through normal methods."
+      ],
+      [
+       "2",
+       "Lost Arm[*]. A serious injury disables or destroys one of your arms. You can't use that arm to wield a weapon or a Shield, or to perform the Somatic component of a spell."
+      ],
+      [
+       "3",
+       "Lost Leg[*]. A serious injury disables or destroys one of your legs. Reduce your Speed by 15 feet, to a minimum of 5 feet. Your Speed can't be increased, and you can't take the Dash action. If you receive this result again your Speed is reduced by another 15 feet (to a minimum of 5 feet)."
+      ],
+      [
+       "4",
+       "Lost Eye[*]. You lose an eye. You have Disadvantage on Wisdom (Perception) and Intelligence (Investigation) checks that rely on sight. If you receive this result again, you gain the Blinded condition."
+      ],
+      [
+       "5",
+       "Dizzy Spells. Undertaking vigorous activities leaves you addled. On odd numbered combat rounds, if you take an action, you cannot take a Bonus Action until the start of your next turn. If you take a Bonus Action, you cannot take an action until the start of your next turn."
+      ],
+      [
+       "6",
+       "Scarred Lungs. Your injury makes it a struggle to breathe. Your Hit Points maximum is permanently reduced by 1 for each of your character levels. Additionally, when you gain a level, your Hit Point maximum is reduced by 1."
+      ],
+      [
+       "7",
+       "Hideous Scar. You are horribly and visibly scarred.You have Disadvantage on Charisma (Performance) and Charisma (Persuasion) checks and Advantage on Charisma (Intimidation) checks."
+      ],
+      [
+       "8",
+       "Adrenaline Rush. Your injuries make you vulnerable to further damage, but your survival instincts are heightened in moments of danger. If you are Bloodied, any Critical Hit against you becomes a normal hit. If you are not Bloodied, attack rolls made against you score a Critical Hit on a roll of 19 or 20 on the d20."
+      ],
+      [
+       "9",
+       "Hesitant. Your psyche has been scarred more than your body. The first time after a Short, or Long Rest that you have to make a saving throw to avoid the Frightened condition, you are Frightened even if you succeed on the saving throw."
+      ],
+      [
+       "10",
+       "Old Pain. This lingering injury causes you intense pain when it flares up. When you roll a natural 1 on any D20 Test, you have the Incapacitated condition until the end of your next turn."
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "Heroism and Corruption",
+  "source": "GrimHollowCG24",
+  "url": "https://5e.tools/variantrules.html#heroism%20and%20corruption_grimhollowcg24",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Though the gods of Etharis are gone, the weave of Fate still governs the lives of its inhabitants. Without oversight, however, that once-indomitable force has become unStable and susceptible to outside influence. The interplay between heroism and corruption plays an important role in the lives of the people and creatures of Etharis. This is handled by Resolve Dice and Beast Dice."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While playing in Grim Hollow, the players and the GM each have a pool of six-sided dice to draw upon in order to shift Fate in their favor. The players' dice are known as Resolve Dice, while the GM's pool consists of Beast Dice. The dice in each pool can be spent to activate a number of different abilities, representing the ways in which Fate has been altered for good or for ill."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of a campaign, each pool contains a single d6, but events during the game add or remove dice from the pools. Also, at the end of each session, if either pool has at least 2 fewer dice than the other, the GM should add one d6 to that pool. This represents Fate attempting to correct the imbalance."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The size of each dice pool is known to the GM and players at all times. This allows players to consider the dice pools when plotting their next course of action."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The dice pools are also great tools for storytelling and roleplaying. For example, as dice are added to the Beast Pool, NPCs likely grow wearier or more scared by current events. News may reach the party of a supernatural phenomenon that has locals on edge, or an informant might warn of increased monster attacks in the area. Omens and portents foretell disaster. Monsters can appear more twisted, and even the environment itself might become more disturbing, all to represent the growing threat."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "By contrast, a growing Resolve Pool can spur a more positive attitude in the characters. Confidence and good humor should increase while the Resolve Pool outweighs the Beast Pool, as characters grasp a rare and fleeting moment of optimism."
+   },
+   {
+    "name": "Resolve Pool",
+    "type": "text",
+    "value": "The characters in a Grim Hollow campaign face a world of overwhelming odds. In order to triumph, they must draw upon deep personal reservoirs of courage and willpower. This is represented by the Resolve Pool, a special pool of six-sided dice that the players can use to thwart Fate and seize victory from the jaws of defeat."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Resolve Pool starts with a single d6. Events happening within the game can add dice to that pool, up to a maximum of six d6. The GM award Resolve Dice to the party based on their actions and at specific plot moments within the game. If a player accurately and faithfully represents their character's heroic attributes in difficult circumstances, it's appropriate for the GM to awards a Resolve Die based on their roleplaying."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Furthermore, events or actions that dramatically bolster the party's determination can also add a Resolve Die to the pool. These rare instances of self-sacrifice, kindness, and charity provide a light in the darkness, helping the party to forge ahead and achieve success."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Finally, if the characters manage to heroically overcome a horrific event that had added a die to the Beast Pool (see below), add a die to the Resolve Pool. Overcoming dire challenges is the surest way to gain courage."
+   },
+   {
+    "name": "Resolve Abilities",
+    "type": "text",
+    "value": "Once there are dice in the Resolve Pool, the party can draw upon them to activate special abilities throughout the game. Resolve Abilities can only be activated by spending dice from the Resolve Pool, and each ability has a certain cost as detailed in the description. Feel free to come up with your own list of abilities for the players to use their Resolve Dice on, but certain examples may include the following:"
+   },
+   {
+    "name": "Hasty Recovery",
+    "type": "text",
+    "value": "The character spends 1 Resolve Die during a Short Rest to remove 1 Exhaustion level. Once during that rest, the character may roll the Resolve Die and add it to a saving throw they make."
+   },
+   {
+    "name": "Inner Strength",
+    "type": "text",
+    "value": "When a character would expend a Hit Point Dice, they may instead spend 1 Resolve Die, rolling and using its result if necessary."
+   },
+   {
+    "name": "Final Push",
+    "type": "text",
+    "value": "After a character rolls a Death Saving Throw, they may spend 2 Resolve Dice. Roll both dice and add the result to the triggering Death Save."
+   },
+   {
+    "name": "I've Just the Thing",
+    "type": "text",
+    "value": "During their turn, a character may spend any number of Resolve Dice. They immediately gain a non-magical item whose GP cost does not exceed 10 times the number of Resolve Dice spent."
+   },
+   {
+    "name": "Blaze of Glory",
+    "type": "text",
+    "value": "During their turn, a character can spend 6 Resolve Dice to instill heroic might into up to 6 creatures within 120 feet. Until the end of that character's next turn, each target has Advantage on D20 Tests and has Resistance to all types of damage. In addition, damage rolls by each affected character are doubled."
+   },
+   {
+    "name": "Beast Pool",
+    "type": "text",
+    "value": "The Great Beast is a powerful supernatural entity that stalks the lands of Etharis, and the Beast Pool represents how its influence twists the weave of Fate to oppose the characters' efforts. The Beast Pool begins with a single d6, but certain callous, evil, or horrific actions and events add more dice to represent the growing threat. Like the Resolve Pool, the Beast Pool can hold a maximum of six d6."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Ironically, the characters themselves may be the most significant cause for a growing Beast Pool. Whenever a character takes an action that darkens the tone of the game, the GM may add another d6 to the Beast Pool. Such actions include killing an innocent creature, choosing selfishness or callousness at the expense of others, working to undermine the common good, and so forth."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Horrific events can also add dice to the Beast Pool. When the party encounters a particularly strong evil creature, or when they witness something extremely disturbing, the GM can add a d6 to the Beast Pool. Reserve this for rare moments that truly shake the resolve or threaten the psyches of the characters. Simple fear effects and the Frightened condition aren't enough to increase the Beast Pool."
+   },
+   {
+    "name": "Spending Beast Dice",
+    "type": "text",
+    "value": "The GM can spend Beast Dice to hinder characters or bolster enemies, altering the balance of encounters at critical moments. This option is best used to build tension and raise the stakes of an important encounter, rather than as a blunt tool to simply defeat the party."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Here are some sample effects the GM can use or adapt:"
+   },
+   {
+    "name": "Bitter Disposition",
+    "type": "text",
+    "value": "The GM may spend one Beast Die in order to decrease the starting disposition of an NPC from Friendly to Indifferent, or from Indifferent to Hostile, in order to make the scene more memorable or challenging."
+   },
+   {
+    "name": "Death Rattle",
+    "type": "text",
+    "value": "When a character is reduced to 0 Hit Points, the GM may spend one Beast Die and roll it. On a 5 or 6, that character immediately suffers a Death Saving Throw failure."
+   },
+   {
+    "name": "Outnumbered",
+    "type": "text",
+    "value": "The GM may spend any number of Beast Dice at the start of an encounter to increase the number of creatures facing the party. For each die spent, the GM may add an additional creature with Challenge Rating no greater than half the party's average level, rounded down."
+   },
+   {
+    "name": "Affliction",
+    "type": "text",
+    "value": "Before or during a session, the GM can spend 4 Beast Dice to inflict a serious ailment upon a character or significant NPC important to the party. The target gains a Shadowsteel Curse, a cursed affliction, or a Transformation of the GM's choice. Before applying a Transformation to a character, check with the player to ensure this is acceptable."
+   },
+   {
+    "name": "The Beast",
+    "type": "text",
+    "value": "Before or during a session, the GM may spend 6 Beast Dice to have the Great Beast manifest near the characters' location. The effects of its presence are soon felt throughout the region, perhaps as an onslaught of vicious gnolls or the transformation of a forest into a writhing nest of corrupted plants. Alternatively, this option may be used to represent a different major and lasting threat to the local populace, such as an outbreak of coldfire in the Valikan Clans or the arrival of a Crimson Court member in Ostoya."
+   },
+   {
+    "name": "Etharis Abilities",
+    "type": "text",
+    "value": "Apart from Resolve Abilities and Beast Abilities, there are a set of abilities that can be activated with dice drawn from either pool. Both the GM and the party have access to Etharis Abilities, which represent more general methods of shaping the whims of Fate in your favor."
+   },
+   {
+    "name": "Minor Fate",
+    "type": "text",
+    "value": "Roll one die and add the total to a single D20 Test after the check has been made but before the result is known."
+   },
+   {
+    "name": "Bolster",
+    "type": "text",
+    "value": "Roll two dice and increase the Hit Point maximum of a creature by the total for eight hours."
+   },
+   {
+    "name": "Brutal Strike",
+    "type": "text",
+    "value": "Whenever a creature is hit by an attack roll, the attacker may spend two dice and inflict a condition on the target for one round. This condition may be Bleeding, Dazed, or Stunned."
+   },
+   {
+    "name": "Stroke of Luck",
+    "type": "text",
+    "value": "By spending two dice, the GM or a player may cause a minor alteration to the environment, such as adding a small item or feature, moving an existing object five feet, or slightly altering weather conditions or lighting. Examples would be a dropped weapon rolling out of reach or suggesting that phosphorescent fungi might bring a cave's lighting up to Dim Light rather than total darkness."
    }
   ]
  }

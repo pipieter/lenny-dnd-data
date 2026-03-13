@@ -27,6 +27,19 @@
  },
  {
   "name": "Bleeding",
+  "source": "GrimHollowCG24",
+  "url": "https://5e.tools/conditionsdiseases.html#bleeding_grimhollowcg24",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "If you have the Bleeding condition, you cannot regain Hit Points except by spending Hit Point Dice or completing a Long Rest. The condition ends when a creature finishes a Quick, Short, or Long Rest"
+   }
+  ],
+  "image": null
+ },
+ {
+  "name": "Bleeding",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/conditionsdiseases.html#bleeding_monstersofdrakkenheim",
   "description": [
@@ -219,6 +232,47 @@
     "name": "",
     "type": "text",
     "value": "Note that the means of reversing a monstrous transformation are completely unknown at the outset of the campaign. A Monstrous Transformation is widely regarded as permanent."
+   }
+  ],
+  "image": null
+ },
+ {
+  "name": "Corruption",
+  "source": "GrimHollowCG24",
+  "url": "https://5e.tools/conditionsdiseases.html#corruption_grimhollowcg24",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "While you have the Corruption condition, you experience the following effects."
+   },
+   {
+    "name": "Heroic Corruption",
+    "type": "text",
+    "value": "You cannot have Heroic Inspiration or give it to another player character who lacks it."
+   },
+   {
+    "name": "Corruption Levels",
+    "type": "text",
+    "value": "This condition is cumulative. Each time you receive it, you gain 1 Corruption level. If your Corruption level is 6, you either die or transform into a creature of the GM's choosing, under their control."
+   },
+   {
+    "name": "Removing Corruption Levels",
+    "type": "text",
+    "value": "The __Greater Restoration__, __Heal__, or __Wish__ spell removes all of your Corruption levels and ends the condition."
+   }
+  ],
+  "image": null
+ },
+ {
+  "name": "Dazed",
+  "source": "GrimHollowCG24",
+  "url": "https://5e.tools/conditionsdiseases.html#dazed_grimhollowcg24",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "If you have the Dazed condition, you cannot maintain Concentration."
    }
   ],
   "image": null
