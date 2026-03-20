@@ -10,11 +10,6 @@ interface TableGroup {
     source: string;
 }
 
-interface TableGendata {
-    table: TableData[];
-    tableGroup: TableGroup[];
-}
-
 interface ColLabelRowCell {
     entry: string;
     width: number;
@@ -120,6 +115,15 @@ export function getTables(databank: Databank): ParsedTable[] {
             if (ranges[0] == '00') ranges[0] = '100';
             const min = parseInt(ranges[0]);
             let max = min;
+
+            if (!min) {
+                // In certain tables, like 'Choose Languages; Standard Languages' there are default values in the rollable table.
+                // We want to mark these with 'null', so a rollable table understands that this is a value related to the table,
+                // but not a result we can actually roll.
+                // Choose Languages; Standard Languages - https://5e.tools/tables.html#choose%20languages%3b%20standard%20languages_xphb
+                row[0] = null;
+                continue;
+            }
 
             if (ranges.length > 1) {
                 if (ranges[1] == '00') ranges[1] = '100';

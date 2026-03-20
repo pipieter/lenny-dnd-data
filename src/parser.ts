@@ -14,7 +14,7 @@ export interface Table {
     type: 'table';
     title: string;
     headers: string[] | null;
-    rows: (string | Range)[][];
+    rows: (string | Range | null | number)[][];
 }
 
 export interface List {
