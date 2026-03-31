@@ -90,7 +90,7 @@
    {
     "name": "Trapper (GRIMHOLLOWPG24) Features",
     "type": "text",
-    "value": "You have become a ferocious ambusher. When you roll Initiative, you can add your Intelligence modifier to the roll. Additionally, you can't be *surprised* by enemies that inlcude creature types in your Monster Grimoire."
+    "value": "You have become a ferocious ambusher. When you roll Initiative, you can add your Intelligence modifier to the roll. Additionally, you can't be *surprised* by enemies that include creature types in your Monster Grimoire."
    }
   ]
  },
@@ -763,12 +763,22 @@
     "value": "__Transmuting Metabolism (GRIMHOLLOWPG24)__: You gain the ability to consume monster remains, which causes your body to adopt powerful and frightening mutations. These appear in the \"Mutations\" section later in the subclass's description."
    },
    {
-    "name": "",
+    "name": "Salvaging Portions",
     "type": "text",
-    "value": "Mutations"
+    "value": "As a Utilize action, you can harvest a single portion from the physical remains of a creature. Only one portion can be harvested from each creature. Record the monster's creature type. A harvested portion lasts until you finish a Long Rest, at which point it loses its potency."
+   },
+   {
+    "name": "Consuming Portions",
+    "type": "text",
+    "value": "As a Bonus Action, you can consume a portion. After you consume the portion, you choose a mutation to gain, depending on the creature's type. You can gain the benefits of consumed portions a number of times up to 1 plus your Intelligence modifier (minimum of 1). When you finish a Long Rest, you regain the ability to safely consume portions."
    },
    {
     "name": "",
+    "type": "text",
+    "value": "You can benefit from multiple portions simultaneously, but you can't gain the same mutation more than once at the same time."
+   },
+   {
+    "name": "Mutations",
     "type": "text",
     "value": "The mutations are presented here in alphabetical order, with required creature types shown in brackets after the mutation's name."
    },
@@ -826,21 +836,6 @@
     "name": "",
     "type": "text",
     "value": "Telepathy (Aberration, Fiend, Plant) (GrimHollowPG24)"
-   },
-   {
-    "name": "Salvaging Portions",
-    "type": "text",
-    "value": "As a Utilize action, you can harvest a single portion from the physical remains of a creature. Only one portion can be harvested from each creature. Record the monster's creature type. A harvested portion lasts until you finish a Long Rest, at which point it loses its potency."
-   },
-   {
-    "name": "Consuming Portions",
-    "type": "text",
-    "value": "As a Bonus Action, you can consume a portion. After you consume the portion, you choose a mutation to gain, depending on the creature's type. You can gain the benefits of consumed portions a number of times up to 1 plus your Intelligence modifier (minimum of 1). When you finish a Long Rest, you regain the ability to safely consume portions."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You can benefit from multiple portions simultaneously, but you can't gain the same mutation more than once at the same time."
    }
   ]
  },
@@ -3472,12 +3467,22 @@
     "value": "You gain the ability to consume monster remains, which causes your body to adopt powerful and frightening mutations. These appear in the \"Mutations\" section later in the subclass's description."
    },
    {
-    "name": "",
+    "name": "Salvaging Portions",
     "type": "text",
-    "value": "Mutations"
+    "value": "As a Utilize action, you can harvest a single portion from the physical remains of a creature. Only one portion can be harvested from each creature. Record the monster's creature type. A harvested portion lasts until you finish a Long Rest, at which point it loses its potency."
+   },
+   {
+    "name": "Consuming Portions",
+    "type": "text",
+    "value": "As a Bonus Action, you can consume a portion. After you consume the portion, you choose a mutation to gain, depending on the creature's type. You can gain the benefits of consumed portions a number of times up to 1 plus your Intelligence modifier (minimum of 1). When you finish a Long Rest, you regain the ability to safely consume portions."
    },
    {
     "name": "",
+    "type": "text",
+    "value": "You can benefit from multiple portions simultaneously, but you can't gain the same mutation more than once at the same time."
+   },
+   {
+    "name": "Mutations",
     "type": "text",
     "value": "The mutations are presented here in alphabetical order, with required creature types shown in brackets after the mutation's name."
    },
@@ -3535,21 +3540,6 @@
     "name": "",
     "type": "text",
     "value": "Telepathy (Aberration, Fiend, Plant) (GrimHollowPG24)"
-   },
-   {
-    "name": "Salvaging Portions",
-    "type": "text",
-    "value": "As a Utilize action, you can harvest a single portion from the physical remains of a creature. Only one portion can be harvested from each creature. Record the monster's creature type. A harvested portion lasts until you finish a Long Rest, at which point it loses its potency."
-   },
-   {
-    "name": "Consuming Portions",
-    "type": "text",
-    "value": "As a Bonus Action, you can consume a portion. After you consume the portion, you choose a mutation to gain, depending on the creature's type. You can gain the benefits of consumed portions a number of times up to 1 plus your Intelligence modifier (minimum of 1). When you finish a Long Rest, you regain the ability to safely consume portions."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You can benefit from multiple portions simultaneously, but you can't gain the same mutation more than once at the same time."
    }
   ]
  },
