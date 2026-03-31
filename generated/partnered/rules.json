@@ -149,7 +149,7 @@
    {
     "name": "Grievous Wounds Recovered",
     "type": "text",
-    "value": "If you have one or more Grievous Wounds, you or another creature can attempt to treat them. See Grievous Wounds, below, for details."
+    "value": "If you have one or more Grievous Wounds, you or another creature can attempt to treat them."
    },
    {
     "name": "Special Feature",
@@ -407,29 +407,6 @@
   ]
  },
  {
-  "name": "Grievous Wound",
-  "source": "GrimHollowPG24",
-  "url": "https://5e.tools/variantrules.html#grievous%20wound_grimhollowpg24",
-  "ruleType": "Optional",
-  "description": [
-   {
-    "name": "Wounds in Grim Hollow",
-    "type": "text",
-    "value": "Grievous Wounds are applied to characters that would be dropped to 0 Hit Points, but instead choose to gain a lingering wound that stays with them. These wounds remain until a character takes a Long Rest (see Resting below) and undergoes treatment by a physician or someone trained in *Medicine*."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "Permanent Wounds occur when a creature takes multiple Grievous Wounds, or when a character dies and is brought back to life. The challenges of Permanent Wounds can be offset with certain magic items or prosthetics."
-   },
-   {
-    "name": "Rests in Grim Hollow",
-    "type": "text",
-    "value": "The dark-fantasy vibe of Grim Hollow necessitates a change to the effects of Short and Long Rests. Grievous Wounds can be healed by taking a Long Rest, but those rests in Grim Hollow take 32 hours of resting in a completely safe environment."
-   }
-  ]
- },
- {
   "name": "Grievous Wounds",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/variantrules.html#grievous%20wounds_grimhollowcg24",
@@ -463,7 +440,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Upon completing a Long Rest, if the character or someone helping them succeeds at a Wisdom (Medicine) check, a player can remove all effects from Grievous Wounds, but not Permanent Wounds. The DC for the Ability Check equals 10 plus the number of Grievous Wounds the character has. A character with a Healer's Kit automatically succeeds the check by expending one use of a Healer's Kit."
+    "value": "Upon completing a Long Rest, if the character or someone helping them succeeds at a Wisdom (*Medicine*) check, a player can remove all effects from Grievous Wounds, but not Permanent Wounds. The DC for the Ability Check equals 10 plus the number of Grievous Wounds the character has. A character with a Healer's Kit automatically succeeds the check by expending one use of a Healer's Kit."
    },
    {
     "name": "Grievous Wounds",
@@ -539,70 +516,6 @@
       [
        "18-20",
        "Close Call[*]. You narrowly miss an otherwise dangerous blow. Instead of being reduced to 0 Hit Points, you have 1 Hit Point and have the Prone condition."
-      ]
-     ]
-    }
-   },
-   {
-    "name": "Permanent Wounds",
-    "type": "text",
-    "value": "Permanent Wounds are injuries that were not necessarily lethal but left the recipient permanently injured. They represent a serious impediment that requires creativity to overcome, especially at lower levels."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "The effects of a Permanent Wound are irreversible unless the recipient is targeted with the Regenerate spell, upon which one Permanent Wound is removed. Some of the effects of Permanent Wounds can be offset with Prosthetics or magical items."
-   },
-   {
-    "name": "Permanent Wounds",
-    "type": "table",
-    "table": {
-     "type": "table",
-     "title": "Permanent Wounds",
-     "headers": [
-      "1d10",
-      "Permanent Wound"
-     ],
-     "rows": [
-      [
-       "1",
-       "Fatal Wound. Through an unrecoverable injury, you have been fatally wounded. You are now dead but can be brought back through normal methods."
-      ],
-      [
-       "2",
-       "Lost Arm[*]. A serious injury disables or destroys one of your arms. You can't use that arm to wield a weapon or a Shield, or to perform the Somatic component of a spell."
-      ],
-      [
-       "3",
-       "Lost Leg[*]. A serious injury disables or destroys one of your legs. Reduce your Speed by 15 feet, to a minimum of 5 feet. Your Speed can't be increased, and you can't take the Dash action. If you receive this result again your Speed is reduced by another 15 feet (to a minimum of 5 feet)."
-      ],
-      [
-       "4",
-       "Lost Eye[*]. You lose an eye. You have Disadvantage on Wisdom (Perception) and Intelligence (Investigation) checks that rely on sight. If you receive this result again, you gain the Blinded condition."
-      ],
-      [
-       "5",
-       "Dizzy Spells. Undertaking vigorous activities leaves you addled. On odd numbered combat rounds, if you take an action, you cannot take a Bonus Action until the start of your next turn. If you take a Bonus Action, you cannot take an action until the start of your next turn."
-      ],
-      [
-       "6",
-       "Scarred Lungs. Your injury makes it a struggle to breathe. Your Hit Points maximum is permanently reduced by 1 for each of your character levels. Additionally, when you gain a level, your Hit Point maximum is reduced by 1."
-      ],
-      [
-       "7",
-       "Hideous Scar. You are horribly and visibly scarred.You have Disadvantage on Charisma (Performance) and Charisma (Persuasion) checks and Advantage on Charisma (Intimidation) checks."
-      ],
-      [
-       "8",
-       "Adrenaline Rush. Your injuries make you vulnerable to further damage, but your survival instincts are heightened in moments of danger. If you are Bloodied, any Critical Hit against you becomes a normal hit. If you are not Bloodied, attack rolls made against you score a Critical Hit on a roll of 19 or 20 on the d20."
-      ],
-      [
-       "9",
-       "Hesitant. Your psyche has been scarred more than your body. The first time after a Short, or Long Rest that you have to make a saving throw to avoid the Frightened condition, you are Frightened even if you succeed on the saving throw."
-      ],
-      [
-       "10",
-       "Old Pain. This lingering injury causes you intense pain when it flares up. When you roll a natural 1 on any D20 Test, you have the Incapacitated condition until the end of your next turn."
       ]
      ]
     }
@@ -769,6 +682,78 @@
     "name": "Stroke of Luck",
     "type": "text",
     "value": "By spending two dice, the GM or a player may cause a minor alteration to the environment, such as adding a small item or feature, moving an existing object five feet, or slightly altering weather conditions or lighting. Examples would be a dropped weapon rolling out of reach or suggesting that phosphorescent fungi might bring a cave's lighting up to Dim Light rather than total darkness."
+   }
+  ]
+ },
+ {
+  "name": "Permanent Wounds",
+  "source": "GrimHollowCG24",
+  "url": "https://5e.tools/variantrules.html#permanent%20wounds_grimhollowcg24",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Permanent Wounds are injuries that were not necessarily lethal but left the recipient permanently injured. They represent a serious impediment that requires creativity to overcome, especially at lower levels."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The effects of a Permanent Wound are irreversible unless the recipient is targeted with the __Regenerate__ spell, upon which one Permanent Wound is removed. Some of the effects of Permanent Wounds can be offset with Prosthetics or magical items."
+   },
+   {
+    "name": "Permanent Wounds",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Permanent Wounds",
+     "headers": [
+      "1d10",
+      "Permanent Wound"
+     ],
+     "rows": [
+      [
+       "1",
+       "Fatal Wound. Through an unrecoverable injury, you have been fatally wounded. You are now dead but can be brought back through normal methods."
+      ],
+      [
+       "2",
+       "Lost Arm[*]. A serious injury disables or destroys one of your arms. You can't use that arm to wield a weapon or a Shield, or to perform the Somatic component of a spell."
+      ],
+      [
+       "3",
+       "Lost Leg[*]. A serious injury disables or destroys one of your legs. Reduce your Speed by 15 feet, to a minimum of 5 feet. Your Speed can't be increased, and you can't take the Dash action. If you receive this result again your Speed is reduced by another 15 feet (to a minimum of 5 feet)."
+      ],
+      [
+       "4",
+       "Lost Eye[*]. You lose an eye. You have Disadvantage on Wisdom (Perception) and Intelligence (Investigation) checks that rely on sight. If you receive this result again, you gain the Blinded condition."
+      ],
+      [
+       "5",
+       "Dizzy Spells. Undertaking vigorous activities leaves you addled. On odd numbered combat rounds, if you take an action, you cannot take a Bonus Action until the start of your next turn. If you take a Bonus Action, you cannot take an action until the start of your next turn."
+      ],
+      [
+       "6",
+       "Scarred Lungs. Your injury makes it a struggle to breathe. Your Hit Points maximum is permanently reduced by 1 for each of your character levels. Additionally, when you gain a level, your Hit Point maximum is reduced by 1."
+      ],
+      [
+       "7",
+       "Hideous Scar. You are horribly and visibly scarred. You have Disadvantage on Charisma (Performance) and Charisma (Persuasion) checks and Advantage on Charisma (Intimidation) checks."
+      ],
+      [
+       "8",
+       "Adrenaline Rush. Your injuries make you vulnerable to further damage, but your survival instincts are heightened in moments of danger. If you are Bloodied, any Critical Hit against you becomes a normal hit. If you are not Bloodied, attack rolls made against you score a Critical Hit on a roll of 19 or 20 on the d20."
+      ],
+      [
+       "9",
+       "Hesitant. Your psyche has been scarred more than your body. The first time after a Short, or Long Rest that you have to make a saving throw to avoid the Frightened condition, you are Frightened even if you succeed on the saving throw."
+      ],
+      [
+       "10",
+       "Old Pain. This lingering injury causes you intense pain when it flares up. When you roll a natural 1 on any D20 Test, you have the Incapacitated condition until the end of your next turn."
+      ]
+     ]
+    }
    }
   ]
  }

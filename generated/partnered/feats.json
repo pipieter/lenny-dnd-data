@@ -1,10 +1,10 @@
 [
  {
-  "name": "Advanced Weapon Proficiency",
+  "name": "Advanced Weapon Proficiency (FS)",
   "source": "GrimHollowPG24",
-  "url": "https://5e.tools/feats.html#advanced%20weapon%20proficiency_grimhollowpg24",
+  "url": "https://5e.tools/feats.html#advanced%20weapon%20proficiency%20(fs)_grimhollowpg24",
   "type": "Fighting Style Feat",
-  "prerequisite": "Fighting Style and Special",
+  "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
    {
@@ -16,11 +16,26 @@
     "name": "Weapon Proficiency",
     "type": "text",
     "value": "You have proficiency with Advanced weapons, and your training allows you to use the mastery properties of those weapons."
+   }
+  ]
+ },
+ {
+  "name": "Advanced Weapon Proficiency (G)",
+  "source": "GrimHollowPG24",
+  "url": "https://5e.tools/feats.html#advanced%20weapon%20proficiency%20(g)_grimhollowpg24",
+  "type": "General Feat",
+  "prerequisite": "Level 8+",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
    },
    {
-    "name": "Special",
+    "name": "Weapon Proficiency",
     "type": "text",
-    "value": "This feat can be taken as a General feat by a character of level 8 or higher."
+    "value": "You have proficiency with Advanced weapons, and your training allows you to use the mastery properties of those weapons."
    }
   ]
  },
@@ -1540,7 +1555,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Alternatively, you can cure one Grievous Wound affecting the creature (see Grim Hollow Campaign Guide)."
+    "value": "Alternatively, you can cure one Grievous Wound affecting the creature."
    }
   ]
  },
@@ -1652,7 +1667,7 @@
    {
     "name": "Defensive",
     "type": "text",
-    "value": "When you have the Prone condition, you don't have Disadvantage on attack rolls. Attack roll against you doesn't have Advantage because of the Prone condition."
+    "value": "When you have the Prone condition, you don't have Disadvantage on attack rolls. Attack rolls against you don't have Advantage because of the Prone condition."
    },
    {
     "name": "Hop Up",
@@ -2027,7 +2042,7 @@
    {
     "name": "Returning",
     "type": "text",
-    "value": "Simple weapons with Thrown that you are proficient with also have the Returning property (see Chapter 8: Advanced Weapons & Equipment)."
+    "value": "Simple weapons with Thrown that you are proficient with also have the __Returning__ mastery property."
    }
   ]
  },
