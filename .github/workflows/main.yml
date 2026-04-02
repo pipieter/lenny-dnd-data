@@ -11,10 +11,10 @@ permissions:
     contents: read
 
 jobs:
-    test:
+    generate:
         # Test if the script runs without throwing any errors
         runs-on: ubuntu-latest
-        name: test-generate
+        name: generate
         steps:
             - name: Checkout repo and submodules
               uses: actions/checkout@v4
