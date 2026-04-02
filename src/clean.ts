@@ -671,6 +671,8 @@ function vehupgrade(text: string, noFormat: boolean): string {
  * ========================================================= */
 
 function cleanSingleText(text: string, noFormat: boolean): string {
+    const originalText = text;
+
     const functions = [
         styles,
         $5etools,
@@ -744,6 +746,14 @@ function cleanSingleText(text: string, noFormat: boolean): string {
 
     for (const func of functions) {
         text = text.clean(func, noFormat);
+    }
+
+    // cleanSingleText is only called when a '}' symbol is encountered, and thus
+    // a change should always be made. If no change is made however, it means that
+    // we have an unsupported expression and an error should be thrown to notify
+    // the developers.
+    if (originalText === text) {
+        throw `Unsupported cleaning expression found in '${text}'`;
     }
 
     return text;
