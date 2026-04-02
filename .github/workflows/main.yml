@@ -32,12 +32,19 @@ jobs:
             - name: Run generate script
               run: npm run generate
 
-            - name: Check for generated data
+            - name: Commit and Push
               run: |
-                  if ! git diff --quiet ./generated; then
-                    echo "Script generated new data. Please manually run the generate script locally and commit any updated files to the branch."
-                    exit 1
-                  fi
+                git config user.name "github-actions[bot]"
+                git config user.email "github-actions[bot]@users.noreply.github.com"
+
+                # Only proceed if the generation script actually changed something
+                if [[ -n "$(git status --porcelain)" ]]; then
+                  git add .
+                  git commit -m "Generate data [skip ci]"
+                  git push origin HEAD:${{ github.head_ref }}
+                else
+                  echo "No changes detected after dependency update."
+                fi
 
     prettier:
         # Check if prettier needs to be applied
