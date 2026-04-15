@@ -29,7 +29,7 @@
   "tokenUrl": "https://5e.tools/img/vehicles/tokens/DMG/Apparatus%20of%20Kwalish.webp",
   "creatureCapacity": "1 crew\n1 passenger",
   "cargoCapacity": null,
-  "travelPace": "walk 30 ft. or swim [object Object] ft.",
+  "travelPace": "walk 30 ft. or swim 30 ft. (or 0 ft. for both if the legs aren't extended)",
   "description": [
    {
     "name": "",
@@ -126,7 +126,7 @@
   "tokenUrl": "https://5e.tools/img/vehicles/tokens/XDMG/Apparatus%20of%20Kwalish.webp",
   "creatureCapacity": "1 crew\n1 passenger",
   "cargoCapacity": null,
-  "travelPace": "walk 30 ft. or swim [object Object] ft.",
+  "travelPace": "walk 30 ft. or swim 30 ft. (or 0 ft. for both if the legs aren't extended)",
   "description": [
    {
     "name": "",
@@ -993,7 +993,7 @@
   "tokenUrl": "https://5e.tools/img/vehicles/tokens/EFA/Lyrandar%20Air%20Cruiser.webp",
   "creatureCapacity": "10 crew\n40 passengers",
   "cargoCapacity": "2 tons",
-  "travelPace": "fly [object Object] ft. or canHover true ft.\nfly 10 mph.",
+  "travelPace": "fly 100 ft. [hover]\nfly 10 mph.",
   "description": [
    {
     "name": "Weapon: Lightning Turret",
@@ -1015,7 +1015,7 @@
   "tokenUrl": "https://5e.tools/img/vehicles/tokens/EFA/Lyrandar%20Skyskiff.webp",
   "creatureCapacity": "2 crew\n2 passengers",
   "cargoCapacity": "0.5 tons",
-  "travelPace": "fly [object Object] ft. or canHover true ft.\nfly 7 mph.",
+  "travelPace": "fly 70 ft. [hover]\nfly 7 mph.",
   "description": [
    {
     "name": "Weapon: Tow Cable",
@@ -1547,7 +1547,7 @@
   "tokenUrl": "https://5e.tools/img/vehicles/tokens/EFA/Strider%20Airship.webp",
   "creatureCapacity": "6 crew\n20 passengers",
   "cargoCapacity": "1 tons",
-  "travelPace": "fly [object Object] ft. or canHover true ft.\nfly 8 mph.",
+  "travelPace": "fly 80 ft. [hover]\nfly 8 mph.",
   "description": [
    {
     "name": "Weapon: Arcane Launcher",
@@ -1586,7 +1586,7 @@
   "tokenUrl": "https://5e.tools/img/vehicles/tokens/DitLCoT/Tasha's%20Creeping%20Keelboat.webp",
   "creatureCapacity": null,
   "cargoCapacity": "0.5 tons",
-  "travelPace": "walk 20 ft. or swim [object Object] ft.",
+  "travelPace": "walk 20 ft. or swim 20 ft. (can't travel underwater)",
   "description": [
    {
     "name": "",
