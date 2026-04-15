@@ -804,6 +804,8 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         throw `{@...} pattern found in '${text}'`;
     }
 
+    if (text.includes('[object Object]')) throw `[object Object] detected in text: ${text}`;
+
     checkForDisallowedSymbols(text);
     return text;
 }
