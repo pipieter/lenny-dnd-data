@@ -794,7 +794,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     }
 
     // 5e.tools data often contains double spaces.
-    text = text.replaceAll("  ", " ")
+    text = text.replaceAll('  ', ' ');
 
     // Fix Bree-Yarking (normalizes discord italic/bold formatting)
     text = text.replace(/\*{4}([^\*]*?)\*{3}/g, '***$1**');
