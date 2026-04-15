@@ -75884,13 +75884,7 @@
     ]
    }
   },
-  "traits": [
-   {
-    "name": "Tied Down",
-    "type": "text",
-    "value": "While lashed to the floor, the creature is prone and restrained. It also suffers from two levels of exhaustion."
-   }
-  ],
+  "traits": [],
   "actions": [
    {
     "name": "Multiattack",
@@ -88756,14 +88750,16 @@
     "value": "The robot fires a grenade at a point it can see within 120 feet of itself. The grenade explodes in a 20-foot-radius sphere centered on that point, creating one of the following effects (robot's choice):"
    },
    {
-    "name": "Concussion Grenade",
-    "type": "text",
-    "value": "Each creature in the sphere must make a DC 15 Dexterity saving throw, taking 21 (**6d6**) force damage on a failed save or half as much damage on a successful one."
-   },
-   {
-    "name": "Sleep Grenade",
-    "type": "text",
-    "value": "Each creature in the sphere must succeed on a DC 15 Constitution saving throw or have the unconscious condition for 1 hour. The condition ends on a creature early if the creature takes damage or if another creature uses an action to shake it awake."
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Concussion Grenade**: Each creature in the sphere must make a DC 15 Dexterity saving throw, taking 21 (**6d6**) force damage on a failed save or half as much damage on a successful one.",
+      "**Sleep Grenade**: Each creature in the sphere must succeed on a DC 15 Constitution saving throw or have the unconscious condition for 1 hour. The condition ends on a creature early if the creature takes damage or if another creature uses an action to shake it awake."
+     ]
+    }
    }
   ],
   "bonusActions": [
@@ -108854,7 +108850,7 @@
      [
       "Save.",
       "-5",
-      "+5",
+      "+11",
       "+6",
       "+11",
       "+9",
