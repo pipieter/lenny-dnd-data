@@ -129,7 +129,6 @@ function getVehiclePace(vehicle: Vehicle): string | null {
                 } else {
                     speedParts.push(`${k} ${v} ft.`);
                 }
-
             }
 
             let speedString = joinStringsWithOr(speedParts, false);
@@ -165,7 +164,8 @@ function getVehiclePace(vehicle: Vehicle): string | null {
 
     if (parts.length === 0) return null;
     const result = parts.join('\n');
-    if (result.includes('[object Object]')) throw `Improperly parsed object detected in vehicle pace: ${vehicle.name} (${vehicle.source}) -> [object Object]`
+    if (result.includes('[object Object]'))
+        throw `Improperly parsed object detected in vehicle pace: ${vehicle.name} (${vehicle.source}) -> [object Object]`;
     return result;
 }
 
