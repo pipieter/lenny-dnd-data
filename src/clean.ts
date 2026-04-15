@@ -80,9 +80,9 @@ function $5etools(text: string, noFormat: boolean): string {
 
 function actSave(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`);
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${AbilityScores.get(p1)} Saving Throw: `);
     } else {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:*`);
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:* `);
     }
     return text;
 }
@@ -792,6 +792,9 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
             `String '${text}' contains an unresolved tag at index ${stack[stack.length - 1]} in '${original}'`
         );
     }
+
+    // 5e.tools data often contains double spaces.
+    text = text.replaceAll('  ', ' ');
 
     // Fix Bree-Yarking (normalizes discord italic/bold formatting)
     text = text.replace(/\*{4}([^\*]*?)\*{3}/g, '***$1**');
