@@ -1,3 +1,4 @@
+import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { capitalize, Description, DescriptionType, parseDescriptions, parseSizes } from '../parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
@@ -164,9 +165,7 @@ function getVehiclePace(vehicle: Vehicle): string | null {
 
     if (parts.length === 0) return null;
     const result = parts.join('\n');
-    if (result.includes('[object Object]'))
-        throw `Improperly parsed object detected in vehicle pace: ${vehicle.name} (${vehicle.source}) -> [object Object]`;
-    return result;
+    return cleanDNDText(result);
 }
 
 function getVehicleDescription(vehicle: Vehicle): Description[] {
