@@ -115,11 +115,21 @@ function getVehiclePace(vehicle: Vehicle): string | null {
             const speedParts: string[] = [];
             let note = null;
             for (const [k, v] of Object.entries(speed)) {
+                if (typeof v === 'boolean') continue;
+
                 if (k === 'note') {
                     note = v;
                     continue;
                 }
-                speedParts.push(`${k} ${v} ft.`);
+
+                if (typeof v === 'object' && v !== null) {
+                    const val = (v as any).number;
+                    const cond = (v as any).condition ? ` ${(v as any).condition}` : '';
+                    speedParts.push(`${k} ${val} ft.${cond}`);
+                } else {
+                    speedParts.push(`${k} ${v} ft.`);
+                }
+
             }
 
             let speedString = joinStringsWithOr(speedParts, false);
@@ -154,7 +164,9 @@ function getVehiclePace(vehicle: Vehicle): string | null {
     }
 
     if (parts.length === 0) return null;
-    return parts.join('\n');
+    const result = parts.join('\n');
+    if (result.includes('[object Object]')) throw `Improperly parsed object detected in vehicle pace: ${vehicle.name} (${vehicle.source}) -> [object Object]`
+    return result;
 }
 
 function getVehicleDescription(vehicle: Vehicle): Description[] {
