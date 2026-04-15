@@ -80,33 +80,33 @@ function $5etools(text: string, noFormat: boolean): string {
 
 function actSave(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${AbilityScores.get(p1)} Saving Throw:`);
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${AbilityScores.get(p1)} Saving Throw: `);
     } else {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:*`);
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:* `);
     }
     return text;
 }
 
 function actSaveFail(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('actSaveFail 3', 0), 'Third Failure:');
-        text = text.replaceAll(pattern('actSaveFail 2', 0), 'Second Failure:');
-        text = text.replaceAll(pattern('actSaveFail 1', 0), 'First Failure:');
-        text = text.replaceAll(pattern('actSaveFail', 0), 'Failure:');
+        text = text.replaceAll(pattern('actSaveFail 3', 0), 'Third Failure: ');
+        text = text.replaceAll(pattern('actSaveFail 2', 0), 'Second Failure: ');
+        text = text.replaceAll(pattern('actSaveFail 1', 0), 'First Failure: ');
+        text = text.replaceAll(pattern('actSaveFail', 0), 'Failure: ');
     } else {
-        text = text.replaceAll(pattern('actSaveFail 3', 0), '*Third Failure:*');
-        text = text.replaceAll(pattern('actSaveFail 2', 0), '*Second Failure:*');
-        text = text.replaceAll(pattern('actSaveFail 1', 0), '*First Failure:*');
-        text = text.replaceAll(pattern('actSaveFail', 0), '*Failure:*');
+        text = text.replaceAll(pattern('actSaveFail 3', 0), '*Third Failure:* ');
+        text = text.replaceAll(pattern('actSaveFail 2', 0), '*Second Failure:* ');
+        text = text.replaceAll(pattern('actSaveFail 1', 0), '*First Failure:* ');
+        text = text.replaceAll(pattern('actSaveFail', 0), '*Failure:* ');
     }
     return text;
 }
 
 function actSaveFailBy(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('actSaveFailBy', 1), 'Failure by $1 or More:');
+        text = text.replaceAll(pattern('actSaveFailBy', 1), 'Failure by $1 or More: ');
     } else {
-        text = text.replaceAll(pattern('actSaveFailBy', 1), '*Failure by $1 or More:*');
+        text = text.replaceAll(pattern('actSaveFailBy', 1), '*Failure by $1 or More:* ');
     }
     return text;
 }
@@ -399,9 +399,9 @@ function hit(text: string, noFormat: boolean): string {
     });
 
     if (noFormat) {
-        text = text.replaceAll(pattern('h', 0), 'Hit:');
+        text = text.replaceAll(pattern('h', 0), 'Hit: ');
     } else {
-        text = text.replaceAll(pattern('h', 0), '*Hit:*');
+        text = text.replaceAll(pattern('h', 0), '*Hit:* ');
     }
 
     return text;
@@ -416,9 +416,9 @@ function hitYourSpellAttack(text: string, noFormat: boolean): string {
 
 function hom(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('hom', 0), 'Hit or Miss:');
+        text = text.replaceAll(pattern('hom', 0), 'Hit or Miss: ');
     } else {
-        text = text.replaceAll(pattern('hom', 0), '*Hit or Miss:*');
+        text = text.replaceAll(pattern('hom', 0), '*Hit or Miss:* ');
     }
 
     return text;
