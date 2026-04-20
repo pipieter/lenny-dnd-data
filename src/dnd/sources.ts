@@ -5,7 +5,7 @@ export interface ParsedSource {
     id: string;
     name: string;
     source: string;
-    published: string;
+    published: string | null;
     author: string | null;
     group: string;
 }
@@ -13,24 +13,25 @@ export interface ParsedSource {
 export function getSources(data: Databank): ParsedSource[] {
     const books = [...data.book, ...data.adventure];
     const unseenSources = data.getAllSources();
+    const sources: ParsedSource[] = [];
 
-    const result = books.map((book: any) => {
-        if (book.id in unseenSources) unseenSources.delete(book.id);
+    for (const book of books) {
+        unseenSources.delete(book.id);
 
-        return {
+        sources.push({
             id: book.id,
             name: book.name,
             source: book.source || book.id,
             published: book.published,
             author: book.author ?? null,
             group: book.group ?? null,
-        };
-    });
+        });
+    }
 
     // Some sources aren't documented in books or adventures and are even hard-coded in 5e.tools code.
     // We have to append sources with less detailed data, as they are still of importance.
     for (const source of unseenSources) {
-        result.push({
+        sources.push({
             id: source,
             name: source,
             source,
@@ -40,5 +41,5 @@ export function getSources(data: Databank): ParsedSource[] {
         });
     }
 
-    return result.sort(entrySort);
+    return sources.sort(entrySort);
 }
