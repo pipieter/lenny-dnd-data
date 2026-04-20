@@ -35,7 +35,7 @@ export function getSources(data: Databank): ParsedSource[] {
             published: null,
             author: null,
             group: 'no-detail',
-        })
+        });
     }
 
     return result.sort(entrySort);
