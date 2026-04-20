@@ -27,6 +27,8 @@ export function getSources(data: Databank): ParsedSource[] {
         };
     });
 
+    // Some sources aren't documented in books or adventures and are even hard-coded in 5e.tools code.
+    // We have to append sources with less detailed data, as they are still of importance.
     for (const source of unseenSources) {
         result.push({
             id: source,
