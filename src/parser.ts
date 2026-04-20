@@ -385,11 +385,19 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             const entries = description.entries.flatMap(parseDescriptionBlock);
             const { strings, tables, lists } = splitDescriptionTypes(entries);
             const entry = strings.join('\n');
-            if (description.name) {
-                const name = description.name.replace(/:$/, '');
-                return [cleanDNDText(`**${name}**: ${entry}`), ...lists, ...tables];
+
+            if (!description.name) return [cleanDNDText(entry), ...tables];
+            const name = description.name.replace(/:$/, '');
+
+            // Fix partnered species formatting (e.g. Dhampir GrimHollow '24)
+            // This data uses the 'entries' type to give a caption to lists, instead of using the caption field.
+            if (entries.length == 1 && typeof entries[0] !== 'string' && entries[0].type === 'list') {
+                const list = entries[0];
+                list.caption = name;
+                return entries;
             }
-            return [cleanDNDText(entry), ...tables];
+
+            return [cleanDNDText(`**${name}**: ${entry}`), ...lists, ...tables];
         }
         case 'entry': {
             return [cleanDNDText(description.entry)];
