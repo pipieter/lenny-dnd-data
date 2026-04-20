@@ -147,6 +147,23 @@ export class Databank {
         const entries = this.get(key);
         return entries.find((entry) => entry.name === name && entry.source === source);
     }
+
+    public getAllSources(): Set<string> {
+        const sources = new Set<string>();
+        const keys = Object.keys(this) as (keyof Databank)[];
+
+        for (const key of keys) {
+            const value = this[key];
+
+            if (!Array.isArray(value)) continue;
+            for (const entry of value) {
+                if (entry && 'source' in entry) {
+                    sources.add(entry.source);
+                }
+            }
+        }
+        return sources;
+    }
 }
 
 export class OfficialDatabank extends Databank {
