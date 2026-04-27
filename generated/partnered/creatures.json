@@ -936,7 +936,7 @@
    {
     "name": "(10+) Attack the Fallen",
     "type": "text",
-    "value": "You are aware of the creature's"
+    "value": "You are aware of the creature's Gobble Bonus Action."
    },
    {
     "name": "(15+) Dim but Sturdy",
@@ -1207,7 +1207,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Medicine* or *Arcana* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to Study an Alienist, learning the following based on the result:"
+    "value": "Characters proficient in *Medicine* or *Arcana* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to study an Alienist, learning the following based on the result:"
    },
    {
     "name": "(10+) Mental Master",
@@ -1694,6 +1694,11 @@
     "name": "Natural Weapons:",
     "type": "text",
     "value": "Tentacles, Teeth."
+   },
+   {
+    "name": "Hair:",
+    "type": "text",
+    "value": "Hair."
    },
    {
     "name": "Hide:",
@@ -6345,7 +6350,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Medicine* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to Study a Chemist, learning the following based on the result:"
+    "value": "Characters proficient in *Medicine* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to study a Chemist, learning the following based on the result:"
    },
    {
     "name": "(10+) Resistance from Exposure",
@@ -9391,7 +9396,7 @@
    {
     "name": "(10+) Deadly Response",
     "type": "text",
-    "value": "You are aware of the Dark"
+    "value": "You are aware of the Dark Confessor's Bloody Rebuke Reaction."
    },
    {
     "name": "(15+) Weaknesses",
@@ -12048,7 +12053,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Medicine* or *Survival* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to Study the Reanimator, learning the following based on the result:"
+    "value": "Characters proficient in *Medicine* or *Survival* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to study the Reanimator, learning the following based on the result:"
    },
    {
     "name": "(10+) Protected by the Reanimated",
@@ -14323,7 +14328,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) checks to Study an Eldritch Troll, learning the following information based on the result:"
+    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) checks to study an Eldritch Troll, learning the following information based on the result:"
    },
    {
     "name": "(5+) From Harsh Environments",
@@ -15322,7 +15327,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Medicine* or *Religion* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to Study an Exorcist, learning the following based on the result:"
+    "value": "Characters proficient in *Medicine* or *Religion* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to study an Exorcist, learning the following based on the result:"
    },
    {
     "name": "(5+) Demons and Undead",
@@ -18579,7 +18584,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) check to Study a Fungal Trolling, learning the following information based on the result:"
+    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) check to study a Fungal Trolling, learning the following information based on the result:"
    },
    {
     "name": "(5+) From Harsh Environments",
@@ -20528,6 +20533,117 @@
   "bonusActions": []
  },
  {
+  "name": "Glacier Bulette",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Large monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#glacier%20bulette_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "19",
+      "11",
+      "22",
+      "2",
+      "10",
+      "5"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+0",
+      "+6",
+      "-4",
+      "+0",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+0",
+      "+6",
+      "-4",
+      "+0",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 103 (9d10 + 54)",
+     "**Speed**: *walk* 40 Ft., *burrow* 40 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +6",
+     "**Resistances**: cold",
+     "**Immunities**: fire",
+     "**Senses**: Darkvision 60 ft., Tremorsense 120 ft.",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Ice Walk",
+    "type": "text",
+    "value": "The bulette can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn't cost it extra movement."
+   },
+   {
+    "name": "Steam Aura",
+    "type": "text",
+    "value": "At the end of each of the bulette's turns, each creature of the bulette's choice in a 5-foot Emanation originating from the bulette takes 5 (**1d10**) Fire damage unless the bulette has the Incapacitated condition."
+   },
+   {
+    "name": "Tunneler",
+    "type": "text",
+    "value": "The bulette can burrow through solid ice and leaves a slick, 10-foot-diameter tunnel in its wake."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The bulette makes two Bite attacks."
+   },
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7, reach 5 ft. *Hit:* 17 (**2d12 + 4**) Piercing damage plus 3 (**1d6**) Fire damage."
+   },
+   {
+    "name": "Steam Eruption (Recharge 5-6)",
+    "type": "text",
+    "value": "If the bulette is burrowed no more than 20 feet deep in solid ice, it spends 5 feet of movement to burrow directly upward, emerging from the ice and jumping to a space within 5 feet of where it emerged. *Dexterity Saving Throw:* DC 15, each creature in the space where the bulette emerged or its destination space. *Failure:* 11 (**2d10**) Bludgeoning damage plus 7 (**2d6**) Fire damage, and the target has the Prone condition. *Success* Half damage. *Failure or Success*: The target is pushed to the nearest unoccupied space within 5 feet of where the bulette emerged or its destination space."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Gloomwood",
   "source": "CrookedMoon24",
   "subtitle": "Huge plant",
@@ -22176,6 +22292,100 @@
   "bonusActions": []
  },
  {
+  "name": "Greater Winged Wretch",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Large monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#greater%20winged%20wretch_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "18",
+      "17",
+      "15",
+      "10",
+      "12",
+      "9"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+3",
+      "+2",
+      "+0",
+      "+1",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+6",
+      "+3",
+      "+4",
+      "+0",
+      "+3",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 75 (10d10 + 20)",
+     "**Speed**: *walk* 40 Ft., *fly* 60 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +5",
+     "**Senses**: Blindsight 60 ft.",
+     "**Languages**: Undercommon",
+     "**CR**: 4"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The winged wretch makes three Rend attacks."
+   },
+   {
+    "name": "Rend",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +6, reach 5 ft. *Hit:* 11 (**2d6 + 4**) Slashing damage."
+   },
+   {
+    "name": "Thunderous Shriek (Recharge 5-6)",
+    "type": "text",
+    "value": "The winged wretch emits a cacophonous wave of energy. *Constitution Saving Throw:* DC 12, each creature in a 30-foot Cone. *Failure:* 17 (**5d6**) Thunder damage, and the target has the Deafened condition for 1 minute. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Grim",
   "source": "CrookedMoon24",
   "subtitle": "Medium undead",
@@ -22301,7 +22511,7 @@
    {
     "name": "Combat Tactics",
     "type": "text",
-    "value": "The Grim Custodian does everything in their power to avoid combat, liberally using __Suggestion__ and __Detect Thoughts__. When directly confronted and with no one to protect them, they cast __Invisibility__ on themselves and flee. They focus on hiding their undead nature. Grim Custodians can use __Nystul's Magic Aura__ and __nontection__ to foil divinations which would otherwise detect them, and __Major Image__ and Seeming to further disguise the truth."
+    "value": "The Grim Custodian does everything in their power to avoid combat, liberally using __Suggestion__ and __Detect Thoughts__. When directly confronted and with no one to protect them, they cast __Invisibility__ on themselves and flee. They focus on hiding their undead nature. Grim Custodians can use __Nystul's Magic Aura__ and __nondetection__ to foil divinations which would otherwise detect them, and __Major Image__ and Seeming to further disguise the truth."
    },
    {
     "name": "Animus:",
@@ -24067,7 +24277,7 @@
    {
     "name": "(5+) Agile Flier",
     "type": "text",
-    "value": "You learn of the creature's Aerial Maneuver"
+    "value": "You learn of the creature's Aerial Maneuver Bonus Action."
    },
    {
     "name": "(10+) Dangerous Talons",
@@ -26796,7 +27006,7 @@
    {
     "name": "(5+) From Harsh Environments",
     "type": "text",
-    "value": "You know the troll's Spore"
+    "value": "You know the troll's Spore Slam and Grasping Tendrils Actions."
    },
    {
     "name": "(10+) Hard to Kill",
@@ -27526,6 +27736,107 @@
     "value": "*Wisdom Saving Throw:* DC 19, each creature in a 30-foot Cone. A creature holding a keepsake from a loved one succeeds automatically. *Failure:* The creature has the Charmed condition until it takes damage. While charmed, it has the Incapacitated condition and must move as close to the hypnovulfen as possible by the safest route. The creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
    }
   ]
+ },
+ {
+  "name": "Ice Gargoyle",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Medium elemental",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#ice%20gargoyle_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "15",
+      "13",
+      "15",
+      "6",
+      "6",
+      "5"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+1",
+      "+2",
+      "-2",
+      "-2",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+2",
+      "+1",
+      "+2",
+      "-2",
+      "-2",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 58 (9d8 + 18)",
+     "**Speed**: *walk* 30 Ft., *climb* 20 Ft., *fly* 60 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: stealth +5",
+     "**Immunities**: cold, poison; exhaustion, petrified, poisoned",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Primordial (Aquan, Auran)",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Flyby",
+    "type": "text",
+    "value": "The gargoyle doesn't provoke an Opportunity Attack when it flies out of an enemy's reach."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The gargoyle makes two attacks, using Claw or Ice Dart in any combination."
+   },
+   {
+    "name": "Claw",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 7 (**1d10 + 2**) Slashing damage."
+   },
+   {
+    "name": "Ice Dart",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +4, range 30/60 ft. *Hit:* 7 (**2d4 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": []
  },
  {
   "name": "Injector",
@@ -28409,6 +28720,99 @@
     "name": "Unnerving Glare (Recharge 5-6)",
     "type": "text",
     "value": "*Wisdom Saving Throw:* DC 16, one creature the invader can see within 60 feet. *Failure:* The target has the Incapacitated condition until the start of the invader's next turn."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Invisiboar",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Large monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#invisiboar_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "12",
+      "15",
+      "2",
+      "8",
+      "5"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+1",
+      "+2",
+      "-4",
+      "-1",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+1",
+      "+2",
+      "-4",
+      "-1",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12",
+     "**HP**: 30 (4d10 + 8)",
+     "**Speed**: *walk* 40 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: stealth +3",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Death Flash",
+    "type": "text",
+    "value": "The invisiboar emits a bright flash of light when it dies. *Constitution Saving Throw:* DC 13, each creature in a 10-foot Emanation originating from the invisiboar. *Failure:* The target has the Blinded condition. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+   },
+   {
+    "name": "Invisible",
+    "type": "text",
+    "value": "The invisiboar always has the Invisible condition unless it's in the area of an __Antimagic Field__ spell or similar effect."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Gore",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 10 (**2d6 + 3**) Slashing damage. If the target is a Large or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 7 (**2d6**) Piercing damage and has the Prone condition."
    }
   ],
   "bonusActions": []
@@ -33009,7 +33413,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Insight* gain Advantage on Intelligence (*Arcana*) check to Study a Lurking Dreg, learning the following based on their result:"
+    "value": "Characters proficient in *Insight* gain Advantage on Intelligence (*Arcana*) check to study a Lurking Dreg, learning the following based on their result:"
    },
    {
     "name": "(10+) Something's Off",
@@ -33273,7 +33677,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) checks to Study a Magma Troll, learning the following information based on the result:"
+    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) checks to study a Magma Troll, learning the following information based on the result:"
    },
    {
     "name": "(5+) From Harsh Environments",
@@ -33974,7 +34378,7 @@
    {
     "name": "(15+) Chew and Spit!",
     "type": "text",
-    "value": "You learn the details of the Maw"
+    "value": "You learn the details of the Maw Vermin's Bite, and Glob Launcher."
    },
    {
     "name": "(20+) Dim but Enduring",
@@ -35950,6 +36354,100 @@
   ]
  },
  {
+  "name": "Nicrone Dendallen",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#nicrone%20dendallen_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "11",
+      "16",
+      "14",
+      "20",
+      "13",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+2",
+      "+5",
+      "+1",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+2",
+      "+9",
+      "+5",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 156 (24d8 + 48)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +9, history +9, medicine +9, perception +9",
+     "**Resistances**: necrotic, poison",
+     "**Languages**: Common plus three other languages",
+     "**CR**: 11"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "Dendallen makes four attacks, using Staff or Chilling Ray in any combination. He can (A) replace one attack with a use of Spellcasting to cast __Magic Missile__ or (B) replace two attacks with a use of Spellcasting to cast __Blight__ (level 5 version)."
+   },
+   {
+    "name": "Staff",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +9, reach 5 ft. *Hit:* 8 (**1d6 + 5**) Force damage. If the target is a creature, it is subjected to the following effect. *Constitution Saving Throw:* DC 17. *Failure:* 11 (**2d10**) Necrotic damage, and the target has Disadvantage on any ability check or saving throw that uses Strength or Constitution. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+   },
+   {
+    "name": "Chilling Ray",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +9, range 120 ft. *Hit:* 18 (**4d8**) Cold damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Night Blade",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Medium undead",
@@ -37608,7 +38106,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Medicine* or *Survival* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to Study a Pathogenist, learning the following based on the result:"
+    "value": "Characters proficient in *Medicine* or *Survival* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to study a Pathogenist, learning the following based on the result:"
    },
    {
     "name": "(10+) Poison Master",
@@ -40286,7 +40784,73 @@
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/MonstersOfDrakkenheim/Rat%20Crown-Prince.webp",
   "url": "https://5e.tools/bestiary.html#rat%20crown-prince_monstersofdrakkenheim",
   "description": [],
-  "fluffInfo": [],
+  "fluffInfo": [
+   {
+    "name": "Study the Foe",
+    "type": "text",
+    "value": "Characters proficient in *History* or *Insight* gain Advantage on Intelligence (*Arcana*) checks to Study the Rat Prince, learning the following based on the result:"
+   },
+   {
+    "name": "(5+) Fearsome Leader",
+    "type": "text",
+    "value": "You know he has the traits of a typical ratling, though he is much more formidable."
+   },
+   {
+    "name": "(10+) Delerium Teeth",
+    "type": "text",
+    "value": "You recognize the Rat Prince's Contaminated Bite attack."
+   },
+   {
+    "name": "(15+) Adverse to Logic",
+    "type": "text",
+    "value": "You are aware of the Rat Prince's strongest and weakest ability scores and saving throws, as well as the flaws noted in the Rat Prince's roleplaying traits."
+   },
+   {
+    "name": "Combat Tactics",
+    "type": "text",
+    "value": "Leading other ratlings into battle, the Rat Prince is a ferocious combatant. He uses his Sacrificial Pawn Reaction to avoid attacks while firing his crossbow or attacking ferociously with his Contaminated Bite. He uses Ratling Cunning to ensure that he remains adjacent to another ratling he can use as a body shield."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Caught alone, the Rat Prince doesn't fight: he flees. If he can't, he cries and begs for his life. He will sell out other ratlings if it means his own survival. When this rat is cornered, he offers anything he can think of to convince characters to let him go free, and will claim he can lead characters to fantastic treasures, secret passages through the city, vast amounts of \"the shiny,\" and boasts that his favorable reputation amongst the ratlings can guarantee safety. Whether or not these are true is up to you. Unless the characters can make the Rat Prince loyal in some other way (through food, fear, or magic), he tries to escape at the earliest opportunity."
+   },
+   {
+    "name": "Animus:",
+    "type": "text",
+    "value": "Monstrosity."
+   },
+   {
+    "name": "Fluid:",
+    "type": "text",
+    "value": "Monster Blood, Contaminated Ichor."
+   },
+   {
+    "name": "Organs:",
+    "type": "text",
+    "value": "Eyes, Heart, Brain, Guts, Flesh."
+   },
+   {
+    "name": "Bones:",
+    "type": "text",
+    "value": "Skull, Ribs, Spine."
+   },
+   {
+    "name": "Natural Weapons:",
+    "type": "text",
+    "value": "Claws, Teeth."
+   },
+   {
+    "name": "Hair:",
+    "type": "text",
+    "value": "Fur."
+   },
+   {
+    "name": "Hide:",
+    "type": "text",
+    "value": "Skin."
+   }
+  ],
   "stats": {
    "name": "Stats",
    "type": "table",
@@ -43469,6 +44033,106 @@
   "bonusActions": []
  },
  {
+  "name": "Risen Sporehusk",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Medium undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#risen%20sporehusk_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "15",
+      "10",
+      "14",
+      "3",
+      "6",
+      "5"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+0",
+      "+2",
+      "-4",
+      "-2",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+2",
+      "+0",
+      "+2",
+      "-4",
+      "-2",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12",
+     "**HP**: 32 (5d8 + 10)",
+     "**Speed**: *walk* 20 Ft.",
+     "**Resistances**: poison",
+     "**Senses**: Blindsight 15 ft., Darkvision 60 ft.",
+     "**Languages**: understands Common plus one other language it knew but can't speak",
+     "**CR**: 1"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Regeneration",
+    "type": "text",
+    "value": "The sporehusk regains 5 Hit Points at the start of its turn. If the sporehusk takes Fire or Radiant damage, this trait doesn't function on the sporehusk's next turn. The sporehusk dies only if it starts its turn with 0 Hit Points and doesn't regenerate."
+   },
+   {
+    "name": "Sunlight Weakness",
+    "type": "text",
+    "value": "While in sunlight, the sporehusk has Disadvantage on D20 Tests."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Grab",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 5 (**1d6 + 2**) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 11)."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. (must target a creature Grappled by the sporehusk). *Hit:* 6 (**1d8 + 2**) Piercing damage."
+   }
+  ]
+ },
+ {
   "name": "River, Amethyst Academy Liaison",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Medium humanoid",
@@ -44568,6 +45232,121 @@
    }
   ],
   "bonusActions": []
+ },
+ {
+  "name": "Scout Sporehusk",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Small or Medium undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#scout%20sporehusk_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "13",
+      "12",
+      "14",
+      "6",
+      "11",
+      "9"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+1",
+      "+2",
+      "-2",
+      "+0",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+1",
+      "+1",
+      "+2",
+      "-2",
+      "+0",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 32 (5d8 + 10)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Resistances**: poison",
+     "**Senses**: Blindsight 15 ft., Darkvision 60 ft.",
+     "**Languages**: understands Common but can't speak",
+     "**CR**: 1"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Regeneration",
+    "type": "text",
+    "value": "The sporehusk regains 5 Hit Points at the start of each of its turns. If it takes Fire or Radiant damage, this trait doesn't function on the sporehusk's next turn. The sporehusk dies only if it starts its turn with 0 Hit Points and doesn't regenerate."
+   },
+   {
+    "name": "Sunlight Weakness",
+    "type": "text",
+    "value": "While in sunlight, the sporehusk has Disadvantage on D20 Tests."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The scout makes two attacks, using Shortsword and Longbow in any combination."
+   },
+   {
+    "name": "Grab",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 4 (**1d6 + 1**) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 11)."
+   },
+   {
+    "name": "Shortsword",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 4 (**1d6 + 1**) Piercing damage."
+   },
+   {
+    "name": "Longbow",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +3, range 150/600 ft. *Hit:* 5 (**1d8 + 1**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. (must target a creature Grappled by the sporehusk). *Hit:* 5 (**1d8 + 1**) Piercing damage."
+   }
+  ]
  },
  {
   "name": "Scrap Reautomata",
@@ -48652,6 +49431,148 @@
   "bonusActions": []
  },
  {
+  "name": "Spirit of Dendallen",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Huge undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#spirit%20of%20dendallen_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "19",
+      "17",
+      "23",
+      "22",
+      "19",
+      "17"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+3",
+      "+6",
+      "+6",
+      "+4",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+10",
+      "+6",
+      "+13",
+      "+11",
+      "+10"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 225 (18d12 + 108)",
+     "**Speed**: *walk* 0 Ft. (see The Incorporeal Tether Trait)",
+     "**Initiative**: 2",
+     "**Skills**: arcana +20, deception +17, history +13, insight +11, medicine +11, perception +11",
+     "**Resistances**: acid, bludgeoning, cold, fire, lightning, piercing, slashing, thunder",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious",
+     "**Senses**: Darkvision 120 ft., Truesight 15 ft.",
+     "**Languages**: Common plus three other languages; telepathy 120 ft.",
+     "**CR**: 21"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Attuned Thrall",
+    "type": "text",
+    "value": "*Charisma Saving Throw:* DC 21, the creature that attuned to three Remnants of Dendallen (if the creature has Immunity to the Charmed condition or can't be possessed, it can still be affected, but it makes its saves against this effect with Advantage). *Failure:* The target has the Charmed condition, becoming the host to the Spirit of Dendallen. On the spirit's turn, it can issue verbal or telepathic commands to the target (no action required). The target does its best to obey on its turn. If it completes an order and doesn't receive further direction from the spirit, it acts and moves as it likes, seemingly unaware of or unbothered by the presence of the spirit. The spirit can also command the target to take a Reaction but must take its own Reaction to do so."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The target repeats the save at the end of each of its turns, ending the effect and dismissing the spirit on a success. The DC for this save decreases when the spirit drops to certain Hit Point thresholds, reducing by 1 at 150 HP (DC 20), 100 HP (DC 19), and 50 HP (DC 18)."
+   },
+   {
+    "name": "Immutable Form",
+    "type": "text",
+    "value": "The spirit can't shape-shift."
+   },
+   {
+    "name": "Incorporeal Tether",
+    "type": "text",
+    "value": "The spirit can't move on its own. Instead, as the spirit's host moves, the spirit is moved with it (remaining centered on the host), even through other creatures and objects. The spirit can occupy another creature's space and vice versa."
+   },
+   {
+    "name": "Legendary Resistance (3/Day)",
+    "type": "text",
+    "value": "If the spirit fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The spirit has advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Persistent Tendrils",
+    "type": "text",
+    "value": "If the spirit doesn't have any tendrils at the end of its turn, one Tendril of Dendallen is created, as if by the Create Tendrils action."
+   },
+   {
+    "name": "Unstable Conduit",
+    "type": "text",
+    "value": "If the spirit's host dies, the spirit is destroyed in an explosion of necromantic energy, and the host is disintegrated into gray dust, leaving behind any Remnants of Dendallen it was wearing or carrying. The host can be revived only by a __True Resurrection__ or a __Wish__ spell. *Dexterity Saving Throw:* DC 16, each creature in a 30-foot Emanation originating from the host. *Failure:* 33 (**6d10**) Necrotic damage. *Success* Half damage."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The spirit makes two attacks, using Slam or Decaying Ray in any combination. It can (A) replace one attack with a use of Spellcasting to cast __Magic Missile__ (level 2 version) or (B) replace two attacks with a use of Spellcasting to cast __Blight__ (level 9 version)."
+   },
+   {
+    "name": "Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +13, reach 10 ft. *Hit:* 15 (**2d8 + 6**) Force damage plus 11 (**2d10**) Acid damage."
+   },
+   {
+    "name": "Decaying Ray",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +13, range 120 ft. *Hit:* 19 (**3d8 + 6**) Necrotic damage. If the target is a creature, it is subjected to the following effect. *Constitution Saving Throw:* DC 21. *Failure:* The target gains 1 Exhaustion level. It repeats the save at the end of each of its turns, taking 5 (**1d10**) Necrotic damage on a failure or losing all Exhaustion levels caused by this effect on a success. After 1 minute, it succeeds automatically."
+   },
+   {
+    "name": "Create Tendrils (Recharge 5-6)",
+    "type": "text",
+    "value": "The spirit creates 1d4 + 2 Tendrils of Dendallen, each appearing in unoccupied spaces the spirit can see on solid surfaces within 150 feet of itself. The spirit can have no more than six tendrils at a time. The tendrils take their turns immediately after the spirit on the same Initiative count, and they obey the spirit. A tendril remains for 1 minute or until it's reduced to 0 Hit Points."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Squabswarm",
   "source": "CrookedMoon24",
   "subtitle": "Medium fey",
@@ -49269,7 +50190,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) checks to Study a Storm Troll, learning the following information based on the result:"
+    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) checks to study a Storm Troll, learning the following information based on the result:"
    },
    {
     "name": "(5+) From Harsh Environments",
@@ -50109,6 +51030,88 @@
   "bonusActions": []
  },
  {
+  "name": "Swordbeak",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Huge monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#swordbeak_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "21",
+      "17",
+      "15",
+      "3",
+      "10",
+      "7"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+3",
+      "+2",
+      "-4",
+      "+0",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+5",
+      "+6",
+      "+2",
+      "-4",
+      "+0",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 93 (11d12 + 22)",
+     "**Speed**: *walk* 10 Ft., *fly* 80 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +3",
+     "**CR**: 5"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Beak",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +8, reach 15 ft. *Hit:* 21 (**3d10 + 5**) Slashing damage. If the swordbeak moved 30+ feet straight toward the target immediately before the hit, the target takes an extra 10 (**3d6**) Slashing damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Tanker",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Large construct",
@@ -50282,6 +51285,120 @@
       "**Chlorine Gas**: *Constitution Saving Throw:* DC 15. *Failure:* 14 (**4d6**) Poison damage, and the target has the Poisoned condition (save ends). While Poisoned, the target has the Blinded condition. *Success* Half damage only."
      ]
     }
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "Tendril of Dendallen",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Large undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#tendril%20of%20dendallen_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "20",
+      "17",
+      "15",
+      "2",
+      "6",
+      "3"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+3",
+      "+2",
+      "-4",
+      "-2",
+      "-4"
+     ],
+     [
+      "Save.",
+      "+5",
+      "+3",
+      "+2",
+      "-4",
+      "-2",
+      "-4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 37 (5d10 + 10)",
+     "**Speed**: *walk* 0 Ft.",
+     "**Initiative**: 3",
+     "**Resistances**: acid, cold, fire, lightning, psychic, thunder",
+     "**Immunities**: necrotic, poison; blinded, charmed, deafened, exhaustion, frightened, grappled, poisoned, restrained, unconscious",
+     "**Senses**: Blindsight 120 ft.",
+     "**CR**: 3"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Immovable",
+    "type": "text",
+    "value": "The tendril can't move or be moved except via teleportation or interplanar travel."
+   },
+   {
+    "name": "Immutable Form",
+    "type": "text",
+    "value": "The tendril can't shape-shift."
+   },
+   {
+    "name": "Necromantic Demise",
+    "type": "text",
+    "value": "The tendril disappears if the Spirit of Dendallen is destroyed or dismissed."
+   },
+   {
+    "name": "Will of Dendallen",
+    "type": "text",
+    "value": "The tendril has a telepathic link with the spirit and the spirit's host while it's on the same plane of existence as them. The tendril doesn't provide cover to enemies against attacks and effects that pass through its space."
+   },
+   {
+    "name": "Grasp",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7, reach 10 ft. *Hit:* 16 (**2d10 + 5**) Force damage plus 4 (**1d8**) Acid damage. If the target is a Huge or smaller creature, it has the Grappled condition (escape DC 15) and is pulled up to 5 feet toward the tendril. The tendril can have only one target Grappled in this way at a time."
+   },
+   {
+    "name": "Fling",
+    "type": "text",
+    "value": "The tendril throws a Medium or smaller creature Grappled by it to a space it can see within 60 feet of itself that isn't in the air. *Dexterity Saving Throw:* DC 15, the creature thrown and each creature in the destination space. *Failure:* 18 (**4d8**) Bludgeoning damage, and the target has the Prone condition. *Success* Half damage only."
+   },
+   {
+    "name": "Teleport",
+    "type": "text",
+    "value": "The tendril teleports up to 120 feet to an unoccupied space it can see on a solid surface."
    }
   ],
   "bonusActions": []
@@ -56688,7 +57805,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Arcana* or *Medicine* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to Study an Uncontained Growth, learning the following based on the result:"
+    "value": "Characters proficient in *Arcana* or *Medicine* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to study an Uncontained Growth, learning the following based on the result:"
    },
    {
     "name": "(10+) Resistant Flesh",
@@ -60376,6 +61493,117 @@
   "bonusActions": []
  },
  {
+  "name": "Weremammoth",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Small or Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#weremammoth_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "24",
+      "10",
+      "21",
+      "11",
+      "12",
+      "1"
+     ],
+     [
+      "Mod.",
+      "+7",
+      "+0",
+      "+5",
+      "+0",
+      "+1",
+      "-5"
+     ],
+     [
+      "Save.",
+      "+7",
+      "+0",
+      "+5",
+      "+0",
+      "+1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 133 (14d8 + 70)",
+     "**Speed**: *walk* 30 Ft., *walk* 40 Ft. (hybrid Form Only) or 50 Ft. (mammoth Form Only)",
+     "**Initiative**: 1",
+     "**Skills**: perception +7",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Common (can't speak in mammoth form)",
+     "**CR**: 8"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Adapted",
+    "type": "text",
+    "value": "The weremammoth can tolerate temperatures of 0 degrees Fahrenheit or lower without being subjected to the effects of extreme cold."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The weremammoth makes three attacks, using Spear or Trample in any combination. It can replace one attack with a Gore attack."
+   },
+   {
+    "name": "Gore (Mammoth or Hybrid Form Only)",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +10, reach 5 ft. *Hit:* 16 (**2d8 + 7**) Piercing damage. If the target is a Humanoid, it is subjected to the following effect. *Constitution Saving Throw:* DC 12. *Failure:* The target is cursed. If the cursed target drops to 0 Hit Points, it instead becomes a Weremammoth under the GM's control and has 10 Hit Points. *Success* The target is immune to this weremammoth's curse for 24 hours."
+   },
+   {
+    "name": "Spear (Humanoid or Hybrid Form Only)",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +10, reach 5 ft. or range 20/60 ft. *Hit:* 17 (**3d6 + 7**) Piercing damage."
+   },
+   {
+    "name": "Trample (Mammoth or Hybrid Form Only)",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +10, reach 5 ft. *Hit:* 18 (**2d10 + 7**) Bludgeoning damage. If the target is a Large or smaller creature and the weremammoth moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Shape-Shift",
+    "type": "text",
+    "value": "The werewolf shape-shifts into a Large mammoth-humanoid hybrid or a Huge mammoth, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+   }
+  ]
+ },
+ {
   "name": "Weston Murdoch",
   "source": "CrookedMoon24",
   "subtitle": "Medium humanoid",
@@ -60463,6 +61691,113 @@
     "name": "Radiant Flame",
     "type": "text",
     "value": "*Ranged Attack Roll:* +5, range 60 ft. *Hit:* 11 (**2d10**) Radiant damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
+  "name": "White Wraith",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Medium undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#white%20wraith_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "6",
+      "16",
+      "17",
+      "9",
+      "16",
+      "15"
+     ],
+     [
+      "Mod.",
+      "-2",
+      "+3",
+      "+3",
+      "-1",
+      "+3",
+      "+2"
+     ],
+     [
+      "Save.",
+      "-2",
+      "+3",
+      "+5",
+      "-1",
+      "+3",
+      "+2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: HP 60 (8d8 + 24)",
+     "**Speed**: *walk* 30 Ft., *fly* 60 Ft. (hover), *canHover* (hover)",
+     "**Initiative**: 1",
+     "**Skills**: perception +6, stealth +6",
+     "**Resistances**: bludgeoning, fire, lightning, piercing, slashing",
+     "**Immunities**: cold, necrotic, poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Common plus two other languages",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Blizzard Stalker",
+    "type": "text",
+    "value": "Inclement weather (such as fog, snow or wind) doesn't impede the wraith's vision, and it has Advantage on Dexterity (*Stealth*) checks it makes in such conditions."
+   },
+   {
+    "name": "Incorporeal Movement",
+    "type": "text",
+    "value": "The wraith can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Life Drain",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +6 (with Advantage during the first round of each combat), reach 5 ft. *Hit:* 16 (**3d8 + 3**) Necrotic damage plus 16 (**3d10**) Cold damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the Necrotic damage taken."
+   },
+   {
+    "name": "Freezing Gale (Recharge 5-6)",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 14, each creature in a 30-foot Cone. *Failure:* 28 (**8d6**) Cold damage. *Success* Half damage."
+   },
+   {
+    "name": "Create Walker (2/Day)",
+    "type": "text",
+    "value": "The wraith targets a Humanoid corpse within 10 feet of itself that died from either Cold damage or exposure to extreme cold. The target's remains animate as either a Skeleton or a Zombie (depending on the state of the corpse, as determined by the GM) that has Immunity to Cold and Necrotic damage and shares the wraith's Blizzard Stalker trait. The animated creature is under the wraith's control. The wraith can have no more than ten animated creatures under its control at a time."
    }
   ],
   "bonusActions": []
@@ -60692,6 +62027,94 @@
   "bonusActions": []
  },
  {
+  "name": "Winged Wretch",
+  "source": "24GriffonsSaddlebag1",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#winged%20wretch_24griffonssaddlebag1",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "13",
+      "16",
+      "12",
+      "7",
+      "12",
+      "7"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+3",
+      "+1",
+      "-2",
+      "+1",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+1",
+      "+3",
+      "+1",
+      "-2",
+      "+1",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 27 (5d8 + 5)",
+     "**Speed**: *walk* 30 Ft., *fly* 50 Ft.",
+     "**Skills**: perception +3",
+     "**Senses**: Blindsight 60 ft.",
+     "**Languages**: Undercommon",
+     "**CR**: 1/2"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The winged wretch makes two Rend attacks."
+   },
+   {
+    "name": "Rend",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 5 (**1d8 + 1**) Slashing damage."
+   }
+  ],
+  "bonusActions": []
+ },
+ {
   "name": "Winter Troll",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Large giant",
@@ -60704,7 +62127,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) checks to Study a Winter Troll, learning the following information based on the result:"
+    "value": "Characters proficient in *Nature* or *Survival* gain Advantage on Intelligence (*Arcana*) checks to study a Winter Troll, learning the following information based on the result:"
    },
    {
     "name": "(5+) From Harsh Environments",
@@ -61487,7 +62910,7 @@
    {
     "name": "Study the Foe",
     "type": "text",
-    "value": "Characters proficient in *Medicine* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to Study a Wretched Patient, learning the following based on the result:"
+    "value": "Characters proficient in *Medicine* gain Advantage on Wisdom (*Insight*) or Intelligence (*Investigation*) checks to study a Wretched Patient, learning the following based on the result:"
    },
    {
     "name": "(10+) Broken by Experimentation",
