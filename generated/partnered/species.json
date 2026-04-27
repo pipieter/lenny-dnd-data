@@ -102,7 +102,7 @@
    {
     "name": "Herald of Death",
     "type": "text",
-    "value": "You know the __Toll The Dead__ cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose the ability when you select this species)."
+    "value": "You know the __Toll the Dead__ cantrip. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose the ability when you select this species)."
    },
    {
     "name": "Celestial Revelation",
@@ -1830,6 +1830,109 @@
     "value": "The common heritages of Etharis include the Humans who now rule the continent and the folk of the elder peoples who have been forced to reckon with new lives in lands they once ruled or dominated."
    }
   ]
+ },
+ {
+  "name": "Feathren",
+  "source": "24GriffonsSaddlebag1",
+  "url": "https://5e.tools/races.html#feathren_24griffonssaddlebag1",
+  "image": null,
+  "sizes": [
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Darkvision",
+    "type": "text",
+    "value": "You have Darkvision with a range of 60 feet."
+   },
+   {
+    "name": "Feathren Ancestry",
+    "type": "text",
+    "value": "Your unique mix of avian and feline ancestry grants you supernatural abilities. Use the Feathren Ancestry tables to determine your combination of physical features, choosing one Avian option and one Feline option."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You know the cantrip corresponding to your avian ancestry and the __Identify__ spell. At character level 3, you learn the spell corresponding to your feline ancestry. At character level 5, you learn the __Enhance Ability__ spell. You always have these spells prepared. You can cast each spell once without a spell slot or Material component, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spells using any spell slots you have of an appropriate level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the ancestries)."
+   },
+   {
+    "name": "Avian Feathren Ancestry",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Avian Feathren Ancestry",
+     "headers": [
+      "Avian Ancestry",
+      "Cantrip"
+     ],
+     "rows": [
+      [
+       "Jay, Owl, or Raven",
+       "Thaumaturgy"
+      ],
+      [
+       "Eagle, Falcon, or Hawk",
+       "Message"
+      ],
+      [
+       "Cardinal, Mockingbird, or Parrot",
+       "Prestidigitation"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Feline Feathren Ancestry",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Feline Feathren Ancestry",
+     "headers": [
+      "Feline Ancestry",
+      "Spell"
+     ],
+     "rows": [
+      [
+       "Lion, Panther, or Saber-Toothed Tiger",
+       "Detect Evil and Good"
+      ],
+      [
+       "Cheetah, Serval, or Tiger",
+       "Detect Poison and Disease"
+      ],
+      [
+       "Jaguar, Lynx, or Snow Leopard",
+       "Detect Magic"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Kindred Speech",
+    "type": "text",
+    "value": "You can communicate simple ideas to birds and cats that are Large or smaller, including griffons. They can understand your words, though you have no special ability to understand them in return. You have Advantage on Wisdom (*Animal Handling*) checks and Charisma checks you make to influence them."
+   },
+   {
+    "name": "Natural Creator",
+    "type": "text",
+    "value": "You are imbued with a mote of the astral griffon's creative essence. You have proficiency with two Artisan's Tools of your choice, and you can gain proficiency with a new tool in half the normal amount of time."
+   },
+   {
+    "name": "Talons",
+    "type": "text",
+    "value": "When you use your Unarmed Strike to deal damage with your talons, it deals **1d6** Piercing damage instead of the usual Bludgeoning damage."
+   }
+  ],
+  "info": []
  },
  {
   "name": "Geppettin",
