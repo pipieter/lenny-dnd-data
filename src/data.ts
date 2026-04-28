@@ -276,7 +276,6 @@ export class PartneredDatabank extends Databank {
             'card',
             'legendaryGroup',
             'charoption',
-            'sense',
             'facility',
         ];
 
