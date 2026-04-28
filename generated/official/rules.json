@@ -425,6 +425,32 @@
   ]
  },
  {
+  "name": "Blindsight",
+  "source": "PHB",
+  "url": null,
+  "ruleType": "Sense",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense."
+   }
+  ]
+ },
+ {
+  "name": "Blindsight",
+  "source": "XPHB",
+  "url": null,
+  "ruleType": "Sense",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you have Blindsight, you can see within a specific range without relying on physical sight. Within that range, you can see anything that isn't behind Total Cover even if you have the Blinded condition or are in Darkness. Moreover, in that range, you can see something that has the Invisible condition."
+   }
+  ]
+ },
+ {
   "name": "Bonus Action",
   "source": "XPHB",
   "url": "https://5e.tools/variantrules.html#bonus%20action_xphb",
@@ -1332,6 +1358,32 @@
     "name": "",
     "type": "text",
     "value": "An area of Darkness is Heavily Obscured."
+   }
+  ]
+ },
+ {
+  "name": "Darkvision",
+  "source": "PHB",
+  "url": null,
+  "ruleType": "Sense",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Many creatures in fantasy gaming worlds, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in dim light as if it were bright light and in darkness as if it were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can't discern color in that darkness, only shades of gray."
+   }
+  ]
+ },
+ {
+  "name": "Darkvision",
+  "source": "XPHB",
+  "url": null,
+  "ruleType": "Sense",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you have Darkvision, you can see in Dim Light within a specified range as if it were Bright Light and in Darkness within that range as if it were Dim Light. You discern colors in that Darkness only as shades of gray."
    }
   ]
  },
@@ -17978,6 +18030,78 @@
        "Total Failure",
        "The ship's components each take 10d10 bludgeoning damage. The crew's quality score decreases by 2, and 10 percent of the crew is washed overboard and lost. The ship is blown off course and struggles to recover its bearings, moving in a random direction."
       ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "name": "Tremorsense",
+  "source": "MM",
+  "url": null,
+  "ruleType": "Sense",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature with tremorsense can detect and pinpoint the origin of vibrations within a specific radius, provided that the creature and the source of the vibrations are in contact with the same ground or substance. Tremorsense can't be used to detect flying or incorporeal creatures. Many burrowing creatures, such as ankhegs and umber hulks, have this special sense."
+   }
+  ]
+ },
+ {
+  "name": "Tremorsense",
+  "source": "XPHB",
+  "url": null,
+  "ruleType": "Sense",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature with Tremorsense can pinpoint the location of creatures and moving objects within a specific range, provided that the creature with Tremorsense and anything it is detecting are both in contact with the same surface (such as the ground, a wall, or a ceiling) or the same liquid."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Tremorsense can't detect creatures or objects in the air, and it doesn't count as a form of sight."
+   }
+  ]
+ },
+ {
+  "name": "Truesight",
+  "source": "PHB",
+  "url": null,
+  "ruleType": "Sense",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane."
+   }
+  ]
+ },
+ {
+  "name": "Truesight",
+  "source": "XPHB",
+  "url": null,
+  "ruleType": "Sense",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you have Truesight, your vision is enhanced within a specified range. Within that range, your vision pierces through the following:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Darkness**: You can see in normal and magical Darkness.",
+      "**Invisibility**: You see creatures and objects that have the Invisible condition.",
+      "**Visual Illusions**: Visual illusions appear transparent to you, and you automatically succeed on saving throws against them.",
+      "**Transformations**: You discern the true form of any creature or object you see that has been transformed by magic.",
+      "**Ethereal Plane**: You see into the Ethereal Plane."
      ]
     }
    }

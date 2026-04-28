@@ -64,6 +64,7 @@ export class Databank {
     public readonly subclassFluff: any[] = [];
     // Rules
     public readonly variantrule: Rule[] = [];
+    public readonly sense: any[] = [];
     // Hazards
     public readonly trap: Hazard[] = [];
     public readonly hazard: Hazard[] = [];
@@ -209,6 +210,7 @@ export class OfficialDatabank extends Databank {
         this.add('names.json');
         this.add('objects.json');
         this.add('races.json');
+        this.add('senses.json');
         this.add('skills.json');
         this.add('spells/fluff-index.json');
         this.add('spells/index.json');
@@ -274,7 +276,6 @@ export class PartneredDatabank extends Databank {
             'card',
             'legendaryGroup',
             'charoption',
-            'sense',
             'facility',
         ];
 
