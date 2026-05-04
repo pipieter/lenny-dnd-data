@@ -23,6 +23,7 @@ import { getDeities } from './dnd/deities';
 import { getCults } from './dnd/cults';
 import { getBoons } from './dnd/boons';
 import { ParsedDatabank } from './parsed';
+import { getLife } from './dnd/life';
 
 function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): ParsedDatabank {
     const parsed = new ParsedDatabank();
@@ -94,6 +95,9 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
     const boons = getBoons(databank);
     stopwatch.log('Boons retrieved.');
 
+    const life = getLife(databank);
+    stopwatch.log('Life retrieved.');
+
     parsed.items.push(...items);
     parsed.itemsvariants.push(...itemVariants);
     parsed.spells.push(...spells);
@@ -119,6 +123,7 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
     parsed.skills.push(...skills);
     parsed.cults.push(...cults);
     parsed.boons.push(...boons);
+    parsed.life.push(...life);
 
     return parsed;
 }
