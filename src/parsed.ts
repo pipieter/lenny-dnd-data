@@ -11,6 +11,7 @@ import { ParsedFeat } from './dnd/feats';
 import { ParsedHazard } from './dnd/hazards';
 import { ParsedItem } from './dnd/items';
 import { ParsedLanguage } from './dnd/languages';
+import { ParsedLife } from './dnd/life';
 import { ParsedSpeciesNames } from './dnd/names';
 import { ParsedDNDObject } from './dnd/objects';
 import { ParsedRule } from './dnd/rules';
@@ -38,6 +39,7 @@ export class ParsedDatabank {
     public readonly items: ParsedItem[] = [];
     public readonly itemsvariants: ParsedItem[] = [];
     public readonly languages: ParsedLanguage[] = [];
+    public readonly life: ParsedLife[] = [];
     public readonly names: ParsedSpeciesNames[] = [];
     public readonly objects: ParsedDNDObject[] = [];
     public readonly rules: ParsedRule[] = [];

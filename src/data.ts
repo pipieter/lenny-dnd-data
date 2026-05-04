@@ -14,6 +14,7 @@ import { dirname, join } from 'path';
 import { Deity } from './dnd/deities';
 import { Cult } from './dnd/cults';
 import { Boon } from './dnd/boons';
+import { LifeBackground, LifeClass } from './dnd/life';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -103,6 +104,10 @@ export class Databank {
     public readonly cult: Cult[] = [];
     // Boons
     public readonly boon: Boon[] = [];
+    // Life
+    public readonly lifeClass: LifeClass[] = [];
+    public readonly lifeBackground: LifeBackground[] = [];
+    public readonly lifeTrinket: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
@@ -158,6 +163,7 @@ export class Databank {
 
             if (!Array.isArray(value)) continue;
             for (const entry of value) {
+                if (typeof entry === 'string') continue;
                 if (entry && 'source' in entry) {
                     sources.add(entry.source);
                 }
@@ -206,6 +212,7 @@ export class OfficialDatabank extends Databank {
         this.add('items-base.json');
         this.add('items.json');
         this.add('languages.json');
+        this.add('life.json');
         this.add('magicvariants.json');
         this.add('names.json');
         this.add('objects.json');
