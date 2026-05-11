@@ -95,6 +95,7 @@ const FeatCategoryMap: Record<string, string> = {
     'FS:R': 'Fighting Style Replacement Feat (Ranger)',
     EB: 'Epic Boon Feat',
     D: 'Dragonmark',
+    PlanarPact: 'Planar Pact',
 };
 
 function getFeatPrerequisites(feat: Feat): string | null {

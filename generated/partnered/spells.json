@@ -271,6 +271,76 @@
   ]
  },
  {
+  "name": "Astral Flood",
+  "source": "DnDBeyondDrops",
+  "level": "Level 3",
+  "school": "Evocation",
+  "casting_time": "Action",
+  "range": "Cone (30 feet)",
+  "components": "V, S, M (a mixture of water and powdered silver)",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#astral%20flood_dndbeyonddrops",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You channel energy from the Astral Sea to unleash a torrent of magic from you in a 30-foot Cone. Each creature in the Cone must succeed on a Dexterity saving throw or take **4d10** Cold or Radiant damage (chosen when you cast this spell). Your choice of damage type determines an additional effect:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Cold Damage**: The target has Disadvantage on the next D20 Test it makes before the end of your next turn.",
+      "**Radiant Damage**: The target can see only within 15 feet of itself, and it has the Blinded condition for everything beyond that distance until the end of your next turn."
+     ]
+    }
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d10 for each spell slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "PHB"
+   },
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "PHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "PHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "PHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Aundair's Silent Sanctum",
   "source": "ExploringEberron24",
   "level": "Cantrip",
@@ -1038,6 +1108,64 @@
    {
     "name": "Warlock",
     "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Buzzing Bee",
+  "source": "DnDBeyondDrops",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a dab of honey)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#buzzing%20bee_dndbeyonddrops",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You call forth a noisy spectral bee. You target a creature that you can see within range. The bee hovers around the target, distracting it with loud buzzing. For the duration, the target has Disadvantage on Wisdom (*Perception*) checks, Dexterity (*Stealth*) checks, and Constitution saving throws made to maintain *Concentration*. In addition, the target cannot benefit from the Invisible condition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The bee moves with the target, hovering within 3 feet of it as long as the target is within 120 feet of you. The bee disappears when the spell ends or if the target moves out of range."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "PHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "PHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "PHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "PHB"
    },
    {
     "name": "Wizard",
@@ -5462,6 +5590,40 @@
   ]
  },
  {
+  "name": "Insidious Rhythm",
+  "source": "DnDBeyondDrops",
+  "level": "Level 1",
+  "school": "Enchantment",
+  "casting_time": "Action",
+  "range": "120 feet",
+  "components": "V, S",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#insidious%20rhythm_dndbeyonddrops",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One creature of your choice that you can see within range hears a haunting yet catchy tune that continuously repeats in its mind. The target must succeed on a Wisdom saving throw, or it has Disadvantage on Intelligence checks and on Constitution saving throws made to maintain *Concentration*. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "You can target one additional creature for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "PHB"
+   },
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
   "name": "Intaglio",
   "source": "GrimHollowPG24",
   "level": "Level 1",
@@ -5728,6 +5890,61 @@
    {
     "name": "Ranger",
     "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Leomund's Lamentable Belaborment",
+  "source": "DnDBeyondDrops",
+  "level": "Level 6",
+  "school": "Enchantment",
+  "casting_time": "Action",
+  "range": "30 feet",
+  "components": "V",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#leomund's%20lamentable%20belaborment_dndbeyonddrops",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You proclaim an insightful or inflammatory statement, such as a claim about the politics of a nearby town. Each creature in a 10-foot-radius Sphere centered on a point you choose within range must succeed on an Intelligence saving throw or have the Charmed condition until the spell ends. Any creature that doesn't share a language with you or that has an Intelligence score lower than 3 automatically succeeds on the saving throw."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While Charmed, a target must spend its turn discussing or arguing for or against your statement. For the duration, the target has a Speed of 0 and has the Blinded and Deafened conditions with respect to everyone except you and other targets affected by this spell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the end of each of its turns, the target repeats the save, ending the spell on itself on a success."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "PHB"
+   },
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "PHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "PHB"
    },
    {
     "name": "Wizard",
@@ -8430,6 +8647,66 @@
   "classes": [
    {
     "name": "Warlock",
+    "source": "XPHB"
+   }
+  ]
+ },
+ {
+  "name": "Sticks to Snakes",
+  "source": "DnDBeyondDrops",
+  "level": "Level 4",
+  "school": "Transmutation",
+  "casting_time": "Action",
+  "range": "90 feet",
+  "components": "V, S, M (a small piece of bark and several snake scales)",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#sticks%20to%20snakes_dndbeyonddrops",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can choose up to four nonmagical sticks no longer than a Quarterstaff (or similar pieces of nonmagical wood, such as Torches, Spears, etc.) that you can see within range to shape-shift into snakes. Creatures that are holding a targeted object can make a Charisma saving throw, preventing the target from shape-shifting on a success. Each shape-shifted target uses the __Venomous Snake__ stat block."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each of these snakes is Friendly to you and your allies. In combat, it shares your Initiative count and takes its turn immediately after yours."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Until the spell ends, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. When the creature drops to 0 Hit Points, it reverts to its object form, and any remaining damage carries over to that form."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "You can target two additional objects for each spell slot level above 4."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "PHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "PHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "PHB"
+   },
+   {
+    "name": "Ranger",
     "source": "XPHB"
    }
   ]
