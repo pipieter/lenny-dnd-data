@@ -96,6 +96,7 @@ const FeatCategoryMap: Record<string, string> = {
     EB: 'Epic Boon Feat',
     D: 'Dragonmark',
     PlanarPact: 'Planar Pact',
+    PPact: 'Planar Pact',
 };
 
 function getFeatPrerequisites(feat: Feat): string | null {
