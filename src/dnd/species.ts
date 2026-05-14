@@ -8,8 +8,8 @@ import { CreatureSizes, SpecialSpeedTypes } from '../5etools-conversion/data';
 import { Databank } from '../data';
 
 interface ProficiencyChoices {
-    options: string[] | null; // Null means any proficiency can be chosen.
-    amount: number;
+    options: string[] | 'any'; // Null means any proficiency can be chosen.
+    amount: number | 'all';
 }
 
 export interface ParsedSpecies {
@@ -22,7 +22,7 @@ export interface ParsedSpecies {
     creatureType: string | null;
     description: Description[];
     info: Description[];
-    skillProficiencies: string[] | ProficiencyChoices;
+    skillProficiencies: null | ProficiencyChoices;
 }
 
 function getSpeciesFluff(data: any, name: string, source: string): any | null {
@@ -93,13 +93,13 @@ function getSpeciesCreatureType(creatureTypes: string[]): string | null {
     return joinStringsWithOr(creatureTypes, true) || null;
 }
 
-function getSpeciesSkillProficiency(entry: any): string[] | ProficiencyChoices {
+function getSpeciesSkillProficiency(entry: any): ProficiencyChoices | null {
     // At the time of writing (14/05/2026), 5e.tools data does not use skillProficiencies where
     // there are guaranteed proficiencies AND choices. Because of this we return string[] | ProficiencyChoices.
     // This is easier to work with, please note that if data changes where there ARE guaranteed proficiencies AND choices, this logic
     // Has to be adjusted.
 
-    if (!entry.skillProficiencies) return [];
+    if (!entry.skillProficiencies) return null;
     const prof = entry.skillProficiencies[0];
 
     const proficiencies = [];
@@ -120,7 +120,7 @@ function getSpeciesSkillProficiency(entry: any): string[] | ProficiencyChoices {
 
         if (key === 'any') {
             return {
-                options: null,
+                options: 'any',
                 amount: prof[key],
             };
         }
@@ -128,7 +128,10 @@ function getSpeciesSkillProficiency(entry: any): string[] | ProficiencyChoices {
         throw `Unsupported species proficiency-key: ${key}`;
     }
 
-    return proficiencies;
+    return {
+        options: proficiencies,
+        amount: 'all',
+    };
 }
 
 export function getSpecies(data: Databank): ParsedSpecies[] {
