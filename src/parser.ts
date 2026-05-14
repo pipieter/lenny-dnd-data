@@ -902,3 +902,29 @@ export function parseSkillProficiency(skillProficiencies: any[] | undefined): Pr
         amount: 'all',
     };
 }
+
+export function parseProficiencyList(profData: any[]): string[] {
+    const result: string[] = [];
+    for (const index in profData) {
+        // Index is used since iterating with 'of' breaks in some cases.
+        const prof = profData[index];
+        if (typeof prof === 'string') {
+            result.push(cleanDNDText(prof, true));
+            continue;
+        }
+
+        if (prof.full) {
+            result.push(cleanDNDText(prof.full, true));
+            continue;
+        }
+
+        if (prof.optional) {
+            result.push(`${cleanDNDText(prof.proficiency, true)} (optional)`);
+            continue;
+        }
+
+        throw `Unsupported class startingProficiency data: ${profData}`;
+    }
+
+    return result;
+}

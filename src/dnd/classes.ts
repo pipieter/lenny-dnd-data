@@ -11,6 +11,7 @@ import {
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
+    parseProficiencyList,
     parseSkillProficiency,
     ProficiencyOptions,
 } from '../parser';
@@ -158,31 +159,6 @@ function parseSubclass(data: any, subclassFeatures: ClassFeatureDictionary): Sub
 function parseStartingProficiencies(data: any): StartingProficiencies | null {
     if (!data.startingProficiencies) return null;
     const prof = data.startingProficiencies;
-
-    function parseProficiencyList(profData: any[]): string[] {
-        const result: string[] = [];
-        for (const i in profData) {
-            const prof = profData[i];
-            if (typeof prof === 'string') {
-                result.push(cleanDNDText(prof, true));
-                continue;
-            }
-
-            if (prof.full) {
-                result.push(cleanDNDText(prof.full, true));
-                continue;
-            }
-
-            if (prof.optional) {
-                result.push(`${cleanDNDText(prof.proficiency, true)} (optional)`);
-                continue;
-            }
-
-            throw `Unsupported class startingProficiency data: ${profData}`;
-        }
-
-        return result;
-    }
 
     const armor: string[] = parseProficiencyList(prof.armor);
     const tools = prof.tools ? prof.tools.map((t: string) => cleanDNDText(t, true)) : [];
