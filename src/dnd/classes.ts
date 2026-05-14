@@ -157,28 +157,34 @@ function parseStartingProficiencies(data: any): StartingProficiencies | null {
     if (!data.startingProficiencies) return null;
     const prof = data.startingProficiencies;
 
-    const armor: string[] = [];
-    for (const i in prof.armor) {
-        const armorProf = prof.armor[i]
-        if (typeof armorProf === "string") {
-            armor.push(cleanDNDText(armorProf, true));
-            continue
-        }
-        console.log(armorProf);
+    function parseProficiencyList(profData: any[]): string[] {
+        const result: string[] = [];
+        for (const i in profData) {
+            const prof = profData[i]
+            if (typeof prof === "string") {
+                result.push(cleanDNDText(prof, true));
+                continue;
+            }
 
-        // TODO - Druids have special armor proficiencies
-    }
-    const tools = prof.tools ? prof.tools.map(cleanDNDText) : [];
-    const weapons = [];
-    for (const weaponProf of prof.weapons) {
-        if (typeof weaponProf === "string") {
-            weapons.push(cleanDNDText(weaponProf, true));
-            continue
-        }
-        console.log(weaponProf);
+            if (prof.full) {
+                result.push(cleanDNDText(prof.full, true));
+                continue;
+            }
 
-        // TODO - Handle optional firearm proficiencies
+            if (prof.optional) {
+                result.push(`${cleanDNDText(prof.proficiency, true)} (optional)`);
+                continue;
+            }
+
+            throw `Unsupported class startingProficiency data: ${profData}`
+        }
+
+        return result
     }
+
+    const armor: string[] = parseProficiencyList(prof.armor)
+    const tools = prof.tools ? prof.tools.map((t: string) => cleanDNDText(t, true)) : [];
+    const weapons = parseProficiencyList(prof.weapons);
     const skills = {
         options: ['TODO'],
         amount: 0,
