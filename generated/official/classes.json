@@ -6,6 +6,37 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": "Intelligence",
   "spellcastAbility": "Intelligence",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "shield"
+   ],
+   "tools": [
+    "Thieves' Tools",
+    "Tinker's Tools",
+    "one type of Artisan's Tools of your choice"
+   ],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "history",
+     "investigation",
+     "medicine",
+     "nature",
+     "perception",
+     "sleight of hand"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "con",
+    "int"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -2226,6 +2257,38 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": null,
   "spellcastAbility": "Intelligence",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "shield"
+   ],
+   "tools": [
+    "thieves' tools",
+    "tinker's tools",
+    "one type of artisan's tools of your choice"
+   ],
+   "weapons": [
+    "simple",
+    "firearms (optional)"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "history",
+     "investigation",
+     "medicine",
+     "nature",
+     "perception",
+     "sleight of hand"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "con",
+    "int"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -4132,6 +4195,33 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": null,
   "spellcastAbility": null,
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple",
+    "martial"
+   ],
+   "skills": {
+    "options": [
+     "animal handling",
+     "athletics",
+     "intimidation",
+     "nature",
+     "perception",
+     "survival"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "str",
+    "con"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -5381,6 +5471,33 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": "Strength",
   "spellcastAbility": null,
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple",
+    "martial"
+   ],
+   "skills": {
+    "options": [
+     "animal handling",
+     "athletics",
+     "intimidation",
+     "nature",
+     "perception",
+     "survival"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "str",
+    "con"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -6762,6 +6879,29 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": null,
   "spellcastAbility": "Charisma",
+  "startingProficiencies": {
+   "armor": [
+    "light"
+   ],
+   "tools": [
+    "three musical instruments of your choice"
+   ],
+   "weapons": [
+    "simple",
+    "hand crossbows",
+    "longswords",
+    "rapiers",
+    "shortswords"
+   ],
+   "skills": {
+    "options": "any",
+    "amount": 3
+   },
+   "saving": [
+    "dex",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -8814,6 +8954,25 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": "Charisma",
   "spellcastAbility": "Charisma",
+  "startingProficiencies": {
+   "armor": [
+    "light"
+   ],
+   "tools": [
+    "Choose three Musical Instruments"
+   ],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": "any",
+    "amount": 3
+   },
+   "saving": [
+    "dex",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -10902,6 +11061,31 @@
   "subclassUnlockLevel": 1,
   "primaryAbility": null,
   "spellcastAbility": "Wisdom",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": [
+     "history",
+     "insight",
+     "medicine",
+     "persuasion",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "wis",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -14503,6 +14687,31 @@
   "subclassUnlockLevel": 1,
   "primaryAbility": "Wisdom",
   "spellcastAbility": "Wisdom",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": [
+     "history",
+     "insight",
+     "medicine",
+     "persuasion",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "wis",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -17666,6 +17875,45 @@
   "subclassUnlockLevel": 2,
   "primaryAbility": null,
   "spellcastAbility": "Wisdom",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "shields (druids will not wear armor or use shields made of metal)"
+   ],
+   "tools": [
+    "Herbalism kit"
+   ],
+   "weapons": [
+    "clubs",
+    "daggers",
+    "darts",
+    "javelins",
+    "maces",
+    "quarterstaffs",
+    "scimitars",
+    "sickles",
+    "slings",
+    "spears"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "animal handling",
+     "insight",
+     "medicine",
+     "nature",
+     "perception",
+     "religion",
+     "survival"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "int",
+    "wis"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -20350,6 +20598,35 @@
   "subclassUnlockLevel": 2,
   "primaryAbility": "Wisdom",
   "spellcastAbility": "Wisdom",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "shield"
+   ],
+   "tools": [
+    "Herbalism Kit"
+   ],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "animal handling",
+     "insight",
+     "medicine",
+     "nature",
+     "perception",
+     "religion",
+     "survival"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "int",
+    "wis"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -23242,6 +23519,7 @@
   "subclassUnlockLevel": null,
   "primaryAbility": null,
   "spellcastAbility": null,
+  "startingProficiencies": null,
   "baseInfo": [],
   "levelResources": {
    "1": [],
@@ -23533,6 +23811,36 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": null,
   "spellcastAbility": null,
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "heavy",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple",
+    "martial"
+   ],
+   "skills": {
+    "options": [
+     "acrobatics",
+     "animal handling",
+     "athletics",
+     "history",
+     "insight",
+     "intimidation",
+     "perception",
+     "survival"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "str",
+    "con"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -25078,6 +25386,37 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": "Strength or Dexterity",
   "spellcastAbility": null,
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "heavy",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple",
+    "martial"
+   ],
+   "skills": {
+    "options": [
+     "acrobatics",
+     "animal handling",
+     "athletics",
+     "history",
+     "insight",
+     "intimidation",
+     "persuasion",
+     "perception",
+     "survival"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "str",
+    "con"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -26798,6 +27137,31 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": null,
   "spellcastAbility": null,
+  "startingProficiencies": {
+   "armor": [],
+   "tools": [
+    "any one type of artisan's tools or any one musical instrument of your choice"
+   ],
+   "weapons": [
+    "simple",
+    "shortswords"
+   ],
+   "skills": {
+    "options": [
+     "acrobatics",
+     "athletics",
+     "history",
+     "insight",
+     "religion",
+     "stealth"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "str",
+    "dex"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -28294,6 +28658,31 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": "Dexterity And Wisdom",
   "spellcastAbility": null,
+  "startingProficiencies": {
+   "armor": [],
+   "tools": [
+    "Choose one type of Artisan's Tools or Musical Instrument"
+   ],
+   "weapons": [
+    "simple",
+    "Martial weapons that have the Light property"
+   ],
+   "skills": {
+    "options": [
+     "acrobatics",
+     "athletics",
+     "history",
+     "insight",
+     "religion",
+     "stealth"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "str",
+    "dex"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -29787,6 +30176,31 @@
   "subclassUnlockLevel": 1,
   "primaryAbility": null,
   "spellcastAbility": null,
+  "startingProficiencies": {
+   "armor": [
+    "light"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "history",
+     "insight",
+     "medicine",
+     "nature",
+     "perception",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "int",
+    "wis"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -30731,6 +31145,34 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": null,
   "spellcastAbility": "Charisma",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "heavy",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple",
+    "martial"
+   ],
+   "skills": {
+    "options": [
+     "athletics",
+     "insight",
+     "intimidation",
+     "medicine",
+     "persuasion",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "wis",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -33024,6 +33466,34 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": "Strength And Charisma",
   "spellcastAbility": "Charisma",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "heavy",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple",
+    "martial"
+   ],
+   "skills": {
+    "options": [
+     "athletics",
+     "insight",
+     "intimidation",
+     "medicine",
+     "persuasion",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "wis",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -35500,6 +35970,35 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": null,
   "spellcastAbility": "Wisdom",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple",
+    "martial"
+   ],
+   "skills": {
+    "options": [
+     "animal handling",
+     "athletics",
+     "insight",
+     "investigation",
+     "nature",
+     "perception",
+     "stealth",
+     "survival"
+    ],
+    "amount": 3
+   },
+   "saving": [
+    "str",
+    "dex"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -37867,6 +38366,35 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": "Dexterity And Wisdom",
   "spellcastAbility": "Wisdom",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "shield"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple",
+    "martial"
+   ],
+   "skills": {
+    "options": [
+     "animal handling",
+     "athletics",
+     "insight",
+     "investigation",
+     "nature",
+     "perception",
+     "stealth",
+     "survival"
+    ],
+    "amount": 3
+   },
+   "saving": [
+    "str",
+    "dex"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -40240,6 +40768,41 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": null,
   "spellcastAbility": null,
+  "startingProficiencies": {
+   "armor": [
+    "light"
+   ],
+   "tools": [
+    "thieves' tools"
+   ],
+   "weapons": [
+    "simple",
+    "hand crossbows",
+    "longswords",
+    "rapiers",
+    "shortswords"
+   ],
+   "skills": {
+    "options": [
+     "acrobatics",
+     "athletics",
+     "deception",
+     "insight",
+     "intimidation",
+     "investigation",
+     "perception",
+     "performance",
+     "persuasion",
+     "sleight of hand",
+     "stealth"
+    ],
+    "amount": 4
+   },
+   "saving": [
+    "dex",
+    "int"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -41483,6 +42046,37 @@
   "subclassUnlockLevel": 3,
   "primaryAbility": "Dexterity",
   "spellcastAbility": null,
+  "startingProficiencies": {
+   "armor": [
+    "light"
+   ],
+   "tools": [
+    "Thieves' Tools"
+   ],
+   "weapons": [
+    "simple",
+    "Martial weapons that have the Finesse or Light property"
+   ],
+   "skills": {
+    "options": [
+     "acrobatics",
+     "athletics",
+     "deception",
+     "insight",
+     "intimidation",
+     "investigation",
+     "perception",
+     "persuasion",
+     "sleight of hand",
+     "stealth"
+    ],
+    "amount": 4
+   },
+   "saving": [
+    "dex",
+    "int"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -42944,6 +43538,32 @@
   "subclassUnlockLevel": 1,
   "primaryAbility": null,
   "spellcastAbility": "Charisma",
+  "startingProficiencies": {
+   "armor": [],
+   "tools": [],
+   "weapons": [
+    "daggers",
+    "darts",
+    "slings",
+    "quarterstaffs",
+    "light crossbows"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "deception",
+     "insight",
+     "intimidation",
+     "persuasion",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "con",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -45621,6 +46241,28 @@
   "subclassUnlockLevel": 1,
   "primaryAbility": "Charisma",
   "spellcastAbility": "Charisma",
+  "startingProficiencies": {
+   "armor": [],
+   "tools": [],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "deception",
+     "insight",
+     "intimidation",
+     "persuasion",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "con",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -48387,6 +49029,7 @@
   "subclassUnlockLevel": null,
   "primaryAbility": null,
   "spellcastAbility": null,
+  "startingProficiencies": null,
   "baseInfo": [],
   "levelResources": {
    "1": [
@@ -48884,6 +49527,31 @@
   "subclassUnlockLevel": 1,
   "primaryAbility": null,
   "spellcastAbility": "Charisma",
+  "startingProficiencies": {
+   "armor": [
+    "light"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "deception",
+     "history",
+     "intimidation",
+     "investigation",
+     "nature",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "wis",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -50641,6 +51309,31 @@
   "subclassUnlockLevel": 1,
   "primaryAbility": "Charisma",
   "spellcastAbility": "Charisma",
+  "startingProficiencies": {
+   "armor": [
+    "light"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "deception",
+     "history",
+     "intimidation",
+     "investigation",
+     "nature",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "wis",
+    "cha"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -52479,6 +53172,7 @@
   "subclassUnlockLevel": null,
   "primaryAbility": null,
   "spellcastAbility": null,
+  "startingProficiencies": null,
   "baseInfo": [],
   "levelResources": {
    "1": [],
@@ -52807,6 +53501,32 @@
   "subclassUnlockLevel": 2,
   "primaryAbility": null,
   "spellcastAbility": "Intelligence",
+  "startingProficiencies": {
+   "armor": [],
+   "tools": [],
+   "weapons": [
+    "daggers",
+    "darts",
+    "slings",
+    "quarterstaffs",
+    "light crossbows"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "history",
+     "insight",
+     "investigation",
+     "medicine",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "int",
+    "wis"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",
@@ -55039,6 +55759,29 @@
   "subclassUnlockLevel": 2,
   "primaryAbility": "Intelligence",
   "spellcastAbility": "Intelligence",
+  "startingProficiencies": {
+   "armor": [],
+   "tools": [],
+   "weapons": [
+    "simple"
+   ],
+   "skills": {
+    "options": [
+     "arcana",
+     "history",
+     "insight",
+     "investigation",
+     "medicine",
+     "nature",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "int",
+    "wis"
+   ]
+  },
   "baseInfo": [
    {
     "name": "Health",

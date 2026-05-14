@@ -862,15 +862,14 @@ export interface ProficiencyOptions {
     amount: number | 'all';
 }
 
-export function parseSkillProficiency(entry: any): ProficiencyOptions | null {
-    if (!entry.skillProficiencies) return null;
+export function parseSkillProficiency(skillProficiencies: any[] | undefined): ProficiencyOptions | null {
+    if (!skillProficiencies) return null;
 
     // At the time of writing (14/05/2026), 5e.tools data does not use skillProficiencies where
     // there are guaranteed proficiencies AND choices. Because of this we return one instance of ProficiencyChoices
     // This is easier to work with, but has the downside of losing certain (unused) flexibility.
-    if (entry.skillProficiencies.length > 1)
-        throw `More than one skillProficiency-object in ${entry.name} (${entry.source}): ${entry.skillProficiencies}`;
-    const prof = entry.skillProficiencies[0];
+    if (skillProficiencies.length > 1) throw `More than one skillProficiency-object in ${skillProficiencies}`;
+    const prof = skillProficiencies[0];
 
     const proficiencies = [];
     for (const key of Object.keys(prof)) {
@@ -902,4 +901,30 @@ export function parseSkillProficiency(entry: any): ProficiencyOptions | null {
         options: proficiencies,
         amount: 'all',
     };
+}
+
+export function parseProficiencyList(profData: any[]): string[] {
+    const result: string[] = [];
+    for (const index in profData) {
+        // Index is used since iterating with 'of' breaks in some cases.
+        const prof = profData[index];
+        if (typeof prof === 'string') {
+            result.push(cleanDNDText(prof, true));
+            continue;
+        }
+
+        if (prof.full) {
+            result.push(cleanDNDText(prof.full, true));
+            continue;
+        }
+
+        if (prof.optional) {
+            result.push(`${cleanDNDText(prof.proficiency, true)} (optional)`);
+            continue;
+        }
+
+        throw `Unsupported class startingProficiency data: ${profData}`;
+    }
+
+    return result;
 }
