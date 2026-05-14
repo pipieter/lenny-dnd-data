@@ -157,9 +157,28 @@ function parseStartingProficiencies(data: any): StartingProficiencies | null {
     if (!data.startingProficiencies) return null;
     const prof = data.startingProficiencies;
 
-    const armor = ['TODO']; // TODO - Druids have special armor proficiencies
+    const armor: string[] = [];
+    for (const i in prof.armor) {
+        const armorProf = prof.armor[i]
+        if (typeof armorProf === "string") {
+            armor.push(cleanDNDText(armorProf, true));
+            continue
+        }
+        console.log(armorProf);
+
+        // TODO - Druids have special armor proficiencies
+    }
     const tools = prof.tools ? prof.tools.map(cleanDNDText) : [];
-    const weapons = ['TODO'];
+    const weapons = [];
+    for (const weaponProf of prof.weapons) {
+        if (typeof weaponProf === "string") {
+            weapons.push(cleanDNDText(weaponProf, true));
+            continue
+        }
+        console.log(weaponProf);
+
+        // TODO - Handle optional firearm proficiencies
+    }
     const skills = {
         options: ['TODO'],
         amount: 0,
