@@ -126,7 +126,7 @@ export function getSpecies(data: Databank): ParsedSpecies[] {
         const creatureType = getSpeciesCreatureType(entry.creatureTypes || []);
         const description = parseDescriptions('', entry.entries || []);
         const info = getSpeciesInfo(data, name, source);
-        const skillProficiencies = parseSkillProficiency(entry);
+        const skillProficiencies = parseSkillProficiency(entry.skillProficiencies);
 
         species.push({
             name,

@@ -11,6 +11,7 @@ import {
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
+    parseSkillProficiency,
     ProficiencyOptions,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
@@ -47,7 +48,7 @@ interface StartingProficiencies {
     armor: string[];
     weapons: string[];
     tools: string[];
-    skills: ProficiencyOptions;
+    skills: ProficiencyOptions | null;
 }
 
 export interface ParsedClass {
@@ -185,10 +186,7 @@ function parseStartingProficiencies(data: any): StartingProficiencies | null {
     const armor: string[] = parseProficiencyList(prof.armor)
     const tools = prof.tools ? prof.tools.map((t: string) => cleanDNDText(t, true)) : [];
     const weapons = parseProficiencyList(prof.weapons);
-    const skills = {
-        options: ['TODO'],
-        amount: 0,
-    };
+    const skills = parseSkillProficiency(prof.skills);
 
     return {
         armor,

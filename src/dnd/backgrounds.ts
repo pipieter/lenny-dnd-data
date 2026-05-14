@@ -117,7 +117,7 @@ export function getBackgrounds(databank: Databank): ParsedBackground[] {
             description: parseBackgroundDescription(background),
             prerequisite: parsePrerequisite((background.prerequisite ?? [])[0]),
             fluff: parseBackgroundFluff(fluff),
-            skillProficiencies: parseSkillProficiency(background),
+            skillProficiencies: parseSkillProficiency(background.skillProficiencies),
         };
     });
 }
