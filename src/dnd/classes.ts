@@ -49,6 +49,7 @@ interface StartingProficiencies {
     weapons: string[];
     tools: string[];
     skills: ProficiencyOptions | null;
+    saving: string[];
 }
 
 export interface ParsedClass {
@@ -187,12 +188,14 @@ function parseStartingProficiencies(data: any): StartingProficiencies | null {
     const tools = prof.tools ? prof.tools.map((t: string) => cleanDNDText(t, true)) : [];
     const weapons = parseProficiencyList(prof.weapons);
     const skills = parseSkillProficiency(prof.skills);
+    const saving = data.proficiency?.map((p: string) => cleanDNDText(p, true)) ?? [];
 
     return {
         armor,
         tools,
         weapons,
         skills,
+        saving
     };
 }
 
