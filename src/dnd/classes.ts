@@ -11,6 +11,7 @@ import {
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
+    ProficiencyOptions,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
@@ -42,6 +43,13 @@ export interface ClassFeature {
     descriptions: Description[] | null;
 }
 
+interface StartingProficiencies {
+    armor: string[];
+    weapons: string[];
+    tools: string[];
+    skills: ProficiencyOptions;
+}
+
 export interface ParsedClass {
     name: string;
     source: string;
@@ -49,6 +57,7 @@ export interface ParsedClass {
 
     primaryAbility: string | null;
     spellcastAbility: string | null;
+    startingProficiencies: StartingProficiencies | null;
     baseInfo: Description[] | null;
 
     levelResources: PaginatedDescriptions;
@@ -144,6 +153,26 @@ function parseSubclass(data: any, subclassFeatures: ClassFeatureDictionary): Sub
     };
 }
 
+function parseStartingProficiencies(data: any): StartingProficiencies | null {
+    if (!data.startingProficiencies) return null;
+    const prof = data.startingProficiencies;
+
+    const armor = ['TODO']; // TODO - Druids have special armor proficiencies
+    const tools = prof.tools ? prof.tools.map(cleanDNDText) : [];
+    const weapons = ['TODO'];
+    const skills = {
+        options: ['TODO'],
+        amount: 0,
+    };
+
+    return {
+        armor,
+        tools,
+        weapons,
+        skills,
+    };
+}
+
 function parseClass(
     data: any,
     features: ClassFeatureDictionary,
@@ -156,6 +185,7 @@ function parseClass(
 
     const primaryAbility = parsePrimaryAbility(data);
     const spellcastAbility = parseSpellcastAbility(data);
+    const startingProficiencies = parseStartingProficiencies(data);
     const baseInfo = parseBaseInfo(data);
 
     const levelResources = parseLevelResources(data);
@@ -169,6 +199,7 @@ function parseClass(
         subclassUnlockLevel,
         primaryAbility,
         spellcastAbility,
+        startingProficiencies,
         baseInfo,
         levelResources,
         levelFeatures,
