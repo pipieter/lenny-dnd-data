@@ -1,7 +1,14 @@
 import { handleCopy } from '../5etools-conversion/copy';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, parseAbilityScore, parseDescriptions, parsePrerequisite } from '../parser';
+import {
+    Description,
+    parseAbilityScore,
+    parseDescriptions,
+    parsePrerequisite,
+    parseSkillProficiency,
+    ProficiencyOptions,
+} from '../parser';
 import { getBackgroundsUrl } from '../urls';
 
 export interface ParsedBackground {
@@ -17,6 +24,7 @@ export interface ParsedBackground {
     prerequisite: string | null;
     description: Description[];
     fluff: Description[];
+    skillProficiencies: ProficiencyOptions | null;
 }
 
 function parseBackgroundDescription(background: any): Description[] {
@@ -109,6 +117,7 @@ export function getBackgrounds(databank: Databank): ParsedBackground[] {
             description: parseBackgroundDescription(background),
             prerequisite: parsePrerequisite((background.prerequisite ?? [])[0]),
             fluff: parseBackgroundFluff(fluff),
+            skillProficiencies: parseSkillProficiency(background),
         };
     });
 }

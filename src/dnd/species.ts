@@ -1,6 +1,13 @@
 // Note: in the 5e.tools files this is still referred to as 'race'
 
-import { capitalize, Description, parseDescriptions, parseImageUrl } from '../parser';
+import {
+    capitalize,
+    Description,
+    parseSkillProficiency,
+    parseDescriptions,
+    parseImageUrl,
+    ProficiencyOptions,
+} from '../parser';
 import { getSpeciesUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
@@ -17,6 +24,7 @@ export interface ParsedSpecies {
     creatureType: string | null;
     description: Description[];
     info: Description[];
+    skillProficiencies: null | ProficiencyOptions;
 }
 
 function getSpeciesFluff(data: any, name: string, source: string): any | null {
@@ -118,6 +126,7 @@ export function getSpecies(data: Databank): ParsedSpecies[] {
         const creatureType = getSpeciesCreatureType(entry.creatureTypes || []);
         const description = parseDescriptions('', entry.entries || []);
         const info = getSpeciesInfo(data, name, source);
+        const skillProficiencies = parseSkillProficiency(entry);
 
         species.push({
             name,
@@ -129,6 +138,7 @@ export function getSpecies(data: Databank): ParsedSpecies[] {
             creatureType,
             description,
             info,
+            skillProficiencies,
         });
     }
 

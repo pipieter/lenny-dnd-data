@@ -68,7 +68,8 @@
     "type": "text",
     "value": "If your Aasimar's powers flow from Fernia, you are infused with otherworldly fire."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Aasimar (Mabaran)",
@@ -139,7 +140,8 @@
     "type": "text",
     "value": "If your Aasimar's powers are drawn from Mabar, you are bound to shadows and despair."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Accursed",
@@ -198,7 +200,8 @@
     "type": "text",
     "value": "The eldritch heritages of Grim Hollow cover a range of folk shaped by magical intent, unnatural power, or the touch of ancient curses. Almost universally, folk of these heritages are fated to make their way alone through a troubled and dangerous world."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Ankylier",
@@ -244,7 +247,8 @@
     "value": "You know Archosauric (species don't usually provide languages, but we feel that it is fitting here)."
    }
   ],
-  "info": []
+  "info": [],
+  "skillProficiencies": null
  },
  {
   "name": "Arisen",
@@ -351,7 +355,8 @@
     "type": "text",
     "value": "The eldritch heritages of Grim Hollow cover a range of folk shaped by magical intent, unnatural power, or the touch of ancient curses. Almost universally, folk of these heritages are fated to make their way alone through a troubled and dangerous world."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Ashborn",
@@ -413,7 +418,8 @@
     "type": "text",
     "value": "Their short stature ranges from slight to stout, but this makes them no less dangerous, for each ashborn has a venomous tail resembling a scorpion's, always ready to strike. They sport horns and skin tones in varying shades of red and gray that reflect their devilish origin, and they typically live 100 years."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Ashborn",
@@ -470,7 +476,8 @@
     "type": "text",
     "value": "Their short stature ranges from slight to stout, but this makes them no less dangerous, for each ashborn has a venomous tail resembling a scorpion's, always ready to strike. They sport horns and skin tones in varying shades of red and gray that reflect their devilish origin, and they typically live 100 years."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Azureborn",
@@ -523,7 +530,8 @@
     "type": "text",
     "value": "Sprouting feathers across their entire body and wings attached to each of their arms, this diverse folk can resemble all manner of avian creatures, from raptors with earthy tones to tropical birds of vibrant and colorful plumage. They typically live 100 years, although many of the wisest among them have lived up to 400."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Azureborn",
@@ -576,7 +584,8 @@
     "type": "text",
     "value": "Sprouting feathers across their entire body and wings attached to each of their arms, this diverse folk can resemble all manner of avian creatures, from raptors with earthy tones to tropical birds of vibrant and colorful plumage. They typically live 100 years, although many of the wisest among them have lived up to 400."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Bogborn",
@@ -643,7 +652,14 @@
     "type": "text",
     "value": "Towering over most, these hearty folk can face any trial of nature, and they often utilize their athleticism in pursuits of hunting and survival. Bearing prominent noses and tusks, their tough hides are generally shades of green or blue. Bogborn typically live 100 years before moving on to the spirit world."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "perception",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Bogborn",
@@ -710,7 +726,14 @@
     "type": "text",
     "value": "Towering over most, these hearty folk can face any trial of nature, and they often utilize their athleticism in pursuits of hunting and survival. Bearing prominent noses and tusks, their tough hides are generally shades of green or blue. Bogborn typically live 100 years before moving on to the spirit world."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "perception",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Canisar",
@@ -763,7 +786,15 @@
     "type": "text",
     "value": "Canisars are covered in coarse fur that can vary between deep brown, grey, white, orange or black, which often comes with facial stripes or ringed markings. Most canisars live in woodland burrows, hidden beneath thick vegetation, mud or snow. Others roam the surface world, integrating into wider society while maintaining ties to their original burrows. Canisar culture is deeply ancestral, guided by reverence for family and lineage. Each canisar travels with stories and relics of their ancestors, and gives gifts to their friends and family throughout the year during different canisar festivals."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "nature",
+    "survival",
+    "stealth"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Child of Seth",
@@ -810,7 +841,15 @@
     "value": "You know Archosauric and one additional language of your choice (species don't usually provide languages, but we feel that it is fitting here)."
    }
   ],
-  "info": []
+  "info": [],
+  "skillProficiencies": {
+   "options": [
+    "arcana",
+    "religion",
+    "history"
+   ],
+   "amount": 2
+  }
  },
  {
   "name": "Curseborn",
@@ -862,7 +901,15 @@
     "type": "text",
     "value": "Covered head to toe with thick fur and bearing sharp teeth and claws, this lupine species evokes the hallmarks and appearance of wolves but with clearly humanoid physiology. If not brought to an early grave by the Grey, they typically live for up to 100 years, although technological advancement has led to certain individuals approaching 200 years old."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "investigation",
+    "perception",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Curseborn",
@@ -914,7 +961,15 @@
     "type": "text",
     "value": "Covered head to toe with thick fur and bearing sharp teeth and claws, this lupine species evokes the hallmarks and appearance of wolves but with clearly humanoid physiology. If not brought to an early grave by the Grey, they typically live for up to 100 years, although technological advancement has led to certain individuals approaching 200 years old."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "investigation",
+    "perception",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Deepborn",
@@ -993,7 +1048,8 @@
     "type": "text",
     "value": "While they are primarily piscine in their anatomy, they can possess features found in a wide variety of sea creatures, including cephalopods and crustaceans. They typically live for around 150 years, but certain members of occult orders have been known to live for 600 years."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Deepborn",
@@ -1067,7 +1123,8 @@
     "type": "text",
     "value": "While they are primarily piscine in their anatomy, they can possess features found in a wide variety of sea creatures, including cephalopods and crustaceans. They typically live for around 150 years, but certain members of occult orders have been known to live for 600 years."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Dhakaani Ghaal'dar (Hobgoblin)",
@@ -1109,7 +1166,16 @@
     "type": "text",
     "value": "Dhakaani hobgoblins are known as ghaal'dar, \"mighty folk\"—not to be confused with the Ghaal'dar tribes that dominate Darguun. The ghaal'dar are soldiers, scholars, and leaders, valued for their versatility and their vision."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "athletics",
+    "history",
+    "intimidation",
+    "performance"
+   ],
+   "amount": 2
+  }
  },
  {
   "name": "Dhakaani Golin'dar (Goblin)",
@@ -1151,7 +1217,8 @@
     "type": "text",
     "value": "Dhakaani goblins are known as golin'dar, \"quick folk.\" They reproduce and mature faster than other dar, and form the bulk of the labor force in Dhakaani society. This includes menial labor, agriculture, food preparation, and skilled craftwork. Though ghaal'dar are the primary smiths of weapons and armor, most other manufacturing is done by the golin'dar. While this work may be less dramatic than the martial paths of the ghaal'dar and guul'dar, it's vital to survival and the golin'dar are respected for their contributions. Other golin'dar take a different path, that of the Khesh'dar, the Silent Folk who live in the shadows of the empire."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Dhakaani Guul'dar (Bugbear)",
@@ -1198,7 +1265,8 @@
     "type": "text",
     "value": "Dhakaani bugbears are known as guul'dar, \"strong folk,\" and are celebrated for their strength and courage. They help perform heavy labor where strength is required, but most yearn to prove their mettle on the battlefield, risking their lives to earn the glory known as atcha."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Dhampir",
@@ -1305,7 +1373,8 @@
     "type": "text",
     "value": "The eldritch heritages of Grim Hollow cover a range of folk shaped by magical intent, unnatural power, or the touch of ancient curses. Almost universally, folk of these heritages are fated to make their way alone through a troubled and dangerous world."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Disembodied",
@@ -1407,7 +1476,8 @@
     "type": "text",
     "value": "The eldritch heritages of Grim Hollow cover a range of folk shaped by magical intent, unnatural power, or the touch of ancient curses. Almost universally, folk of these heritages are fated to make their way alone through a troubled and dangerous world."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Downcast",
@@ -1508,7 +1578,8 @@
     "type": "text",
     "value": "The eldritch heritages of Grim Hollow cover a range of folk shaped by magical intent, unnatural power, or the touch of ancient curses. Almost universally, folk of these heritages are fated to make their way alone through a troubled and dangerous world."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Dragonborn",
@@ -1609,7 +1680,8 @@
     "type": "text",
     "value": "The common heritages of Etharis include the Humans who now rule the continent and the folk of the elder peoples who have been forced to reckon with new lives in lands they once ruled or dominated."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Dreamer",
@@ -1715,7 +1787,8 @@
     "type": "text",
     "value": "Folk of the rare heritages of Etharis have dwelled long in isolation or on the fringes between the lands and cultures of more populous folk. Characters of these heritages face the same struggles as all people, but often possess unique views of the world that others struggle to understand."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Dwarf",
@@ -1821,7 +1894,8 @@
     "type": "text",
     "value": "The common heritages of Etharis include the Humans who now rule the continent and the folk of the elder peoples who have been forced to reckon with new lives in lands they once ruled or dominated."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Elf",
@@ -1922,7 +1996,8 @@
     "type": "text",
     "value": "The common heritages of Etharis include the Humans who now rule the continent and the folk of the elder peoples who have been forced to reckon with new lives in lands they once ruled or dominated."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Feathren",
@@ -2025,7 +2100,8 @@
     "value": "When you use your Unarmed Strike to deal damage with your talons, it deals **1d6** Piercing damage instead of the usual Bludgeoning damage."
    }
   ],
-  "info": []
+  "info": [],
+  "skillProficiencies": null
  },
  {
   "name": "Geppettin",
@@ -2118,7 +2194,15 @@
     "type": "text",
     "value": "Plushies, also called raggedies, are any form of stuffed or soft geppettin. Though they often look Humanoid, they may also look like animals, monsters, or any other anthropomorphic creature."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "intimidation",
+    "performance",
+    "persuasion"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Gnarlborn",
@@ -2180,7 +2264,8 @@
     "type": "text",
     "value": "Resembling gnarled trees with glowing faces hollowed into the bark, their individual patterns of branches, moss, and lichen can result in a wide diversity of appearances. Most gnarlborn live for over 500 years, but those with the strongest connection to the Elderwoods have been said to live to be thousands of years old."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Gnarlborn",
@@ -2237,7 +2322,8 @@
     "type": "text",
     "value": "Resembling gnarled trees with glowing faces hollowed into the bark, their individual patterns of branches, moss, and lichen can result in a wide diversity of appearances. Most gnarlborn live for over 500 years, but those with the strongest connection to the Elderwoods have been said to live to be thousands of years old."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Gnoll",
@@ -2284,7 +2370,15 @@
     "type": "text",
     "value": "Gnolls that are bound to the overlords are vicious and wild. Those who have escaped this bondage still have a fiendish spark within, but they contain and control this power. Some learn to wield it as Warlocks. Others known as hwyri train to fight demons and other supernatural threats. Even free gnolls can be aggressive, but they are gifted hunters and fiercely loyal to those they choose as family."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "perception",
+    "stealth",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Gnome",
@@ -2395,7 +2489,8 @@
     "type": "text",
     "value": "The common heritages of Etharis include the Humans who now rule the continent and the folk of the elder peoples who have been forced to reckon with new lives in lands they once ruled or dominated."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Graveborn",
@@ -2452,7 +2547,8 @@
     "type": "text",
     "value": "Appearing as the corpses of twisted Humanoids, graveborn have powerful snouts and jaws with elongated teeth and tongues that assist in the devouring of flesh and bone. Their physiology is sturdy, as if magically designed to be perfected for war. If not killed in war, as befalls many of their kind, they can live up to 300 years before decaying away."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Graveborn",
@@ -2504,7 +2600,8 @@
     "type": "text",
     "value": "Appearing as the corpses of twisted Humanoids, graveborn have powerful snouts and jaws with elongated teeth and tongues that assist in the devouring of flesh and bone. Their physiology is sturdy, as if magically designed to be perfected for war. If not killed in war, as befalls many of their kind, they can live up to 300 years before decaying away."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Grudgel",
@@ -2610,7 +2707,8 @@
     "type": "text",
     "value": "Folk of the rare heritages of Etharis have dwelled long in isolation or on the fringes between the lands and cultures of more populous folk. Characters of these heritages face the same struggles as all people, but often possess unique views of the world that others struggle to understand."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Halfling",
@@ -2711,7 +2809,8 @@
     "type": "text",
     "value": "The common heritages of Etharis include the Humans who now rule the continent and the folk of the elder peoples who have been forced to reckon with new lives in lands they once ruled or dominated."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Harvestborn",
@@ -2773,7 +2872,8 @@
     "type": "text",
     "value": "As a constructed species resembling any manner of scarecrow, their bodies are comprised of a mixture of wood, metal, straw, and other implements. Their glowing-eyed heads might be made from a burlap sack or a crop such as a pumpkin or turnip. Staying true to the cycle, they generally live 100 years before accepting the next step of death and becoming reborn once more."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Harvestborn",
@@ -2825,7 +2925,8 @@
     "type": "text",
     "value": "As a constructed species resembling any manner of scarecrow, their bodies are comprised of a mixture of wood, metal, straw, and other implements. Their glowing-eyed heads might be made from a burlap sack or a crop such as a pumpkin or turnip. Staying true to the cycle, they generally live 100 years before accepting the next step of death and becoming reborn once more."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Hederan",
@@ -2878,7 +2979,8 @@
     "type": "text",
     "value": "Once planted by their parent, a hederan forms a deep bond with the soil of its homeland. They serve as guardians of winter forests, and maintain the balance of nature. Solitary by nature, they can live for centuries without meeting another of their kind, and no one knows how many exist across the world."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Human",
@@ -2979,7 +3081,8 @@
     "type": "text",
     "value": "The common heritages of Etharis include the Humans who now rule the continent and the folk of the elder peoples who have been forced to reckon with new lives in lands they once ruled or dominated."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Jeholrak",
@@ -3037,7 +3140,8 @@
     "value": "*Cutthroat Society is designed for wands, daggers, hand axes, hand clubs, and other small items. It cannot be used to hide a shortsword, for example.*"
    }
   ],
-  "info": []
+  "info": [],
+  "skillProficiencies": null
  },
  {
   "name": "Jhorgun'taal (Half-Orc)",
@@ -3079,7 +3183,8 @@
     "type": "text",
     "value": "As House Tharashk has spread across Khorvaire, Jhorgun'taal are often found as inquisitives, bounty hunters, and prospectors. The __Mark of Finding__ can manifest on humans, orcs, or Jhorgun'taal who can trace their ancestry to the Shadow Marches."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Kalamer Landwalker (Merfolk)",
@@ -3127,7 +3232,15 @@
     "type": "text",
     "value": "The Kalamer merfolk dwell in the Thunder Sea, and most spend their entire lives beneath the waves. However, a few are called to walk above the water. Those that embrace this path may become Kalamer Landwalkers, gaining the magical ability to transform their fish-tail into a pair of humanoid legs. Landwalkers are exceptionally rare, and few surface-dwellers have ever seen one. Some Kalamer Landwalkers feel a call to accomplish a specific goal, fulfilling a mission for the good of the world. Others are driven purely by curiosity, and yearn to see new places and find wondrous things."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "nature",
+    "performance",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Laneshi",
@@ -3229,7 +3342,8 @@
     "type": "text",
     "value": "Folk of the rare heritages of Etharis have dwelled long in isolation or on the fringes between the lands and cultures of more populous folk. Characters of these heritages face the same struggles as all people, but often possess unique views of the world that others struggle to understand."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Limukin",
@@ -3281,7 +3395,8 @@
     "value": "You know Archosauric (species don't usually provide languages, but we feel that it is fitting here)."
    }
   ],
-  "info": []
+  "info": [],
+  "skillProficiencies": null
  },
  {
   "name": "Mandrake",
@@ -3368,7 +3483,14 @@
     "type": "text",
     "value": "Today, mandrakes are rare and make their homes in the forests near where villages and cities meet the true wilds. They live for hundreds of years, growing wider and more gnarled with age."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "nature",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Manyhorn",
@@ -3429,7 +3551,8 @@
     "value": "You know Archosauric (species don't usually provide languages, but we feel that it is fitting here."
    }
   ],
-  "info": []
+  "info": [],
+  "skillProficiencies": null
  },
  {
   "name": "Ogresh",
@@ -3525,7 +3648,8 @@
     "type": "text",
     "value": "Folk of the rare heritages of Etharis have dwelled long in isolation or on the fringes between the lands and cultures of more populous folk. Characters of these heritages face the same struggles as all people, but often possess unique views of the world that others struggle to understand."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Plagueborn",
@@ -3589,7 +3713,14 @@
     "type": "text",
     "value": "Appearing as large plague rats with humanoid physiology, their short fur ranges from grays and browns to various shades of green. They bear jagged teeth and claws that all carry a strain of plague to which they are immune but can prove deadly to others. Their nimble tails can vary greatly in length and thickness, often reflecting their family, clan, or guild. Plagueborn usually live no longer than 100 years."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "deception",
+    "stealth"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Plagueborn",
@@ -3648,7 +3779,14 @@
     "type": "text",
     "value": "Appearing as large plague rats with humanoid physiology, their short fur ranges from grays and browns to various shades of green. They bear jagged teeth and claws that all carry a strain of plague to which they are immune but can prove deadly to others. Their nimble tails can vary greatly in length and thickness, often reflecting their family, clan, or guild. Plagueborn usually live no longer than 100 years."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "deception",
+    "stealth"
+   ],
+   "amount": 2
+  }
  },
  {
   "name": "Pluvenn",
@@ -3695,7 +3833,8 @@
     "value": "You know Archosauric (species don't usually provide languages, but we feel that it is fitting here)."
    }
   ],
-  "info": []
+  "info": [],
+  "skillProficiencies": null
  },
  {
   "name": "Relicborn",
@@ -3752,7 +3891,8 @@
     "type": "text",
     "value": "Relicborn typically live for 250 years before losing their form and collapsing into a pile of bones."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Relicborn",
@@ -3804,7 +3944,8 @@
     "type": "text",
     "value": "Relicborn typically live for 250 years before losing their form and collapsing into a pile of bones."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Ruinbound",
@@ -3908,7 +4049,8 @@
     "type": "text",
     "value": "When making a Ruinbound character, work with your DM to determine the appearance of your Personal Symbiont. It is organic and clearly alien, and when you cast a cantrip with this trait, it should be obvious that the symbiont is the source. A symbiont that casts __Mage Hand__ could be a thin tentacle or an ectoplasmic insect that emerges from your body and performs the action. An eyestalk protruding from your shoulder could grant you __Guidance__ as it studies the situation and telepathically advises you—or it might blast your enemies with a __Mind Sliver__."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Sahuagin",
@@ -3966,7 +4108,8 @@
     "type": "text",
     "value": "Sahuagin are amphibious humanoids with leathery skin, sharp teeth, and webbed hands and feet. They have finlike crests on their heads, which extend and retract in response to their mood. While the majority of sahuagin have gray-green scales, others have scales with dramatic, colorful patterns."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Silkborn",
@@ -4024,7 +4167,8 @@
     "type": "text",
     "value": "While this species has humanoid proportions, they have arachnid features—hardened carapace skin, numerous eyes, segmented limbs that grow from their backs, and mandibles that sprout from their mouths. They generally live for 250 years, but those at the higher echelons of their civilizations have been known to live nearly 800 years."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Silkborn",
@@ -4077,7 +4221,8 @@
     "type": "text",
     "value": "While this species has humanoid proportions, they have arachnid features—hardened carapace skin, numerous eyes, segmented limbs that grow from their backs, and mandibles that sprout from their mouths. They generally live for 250 years, but those at the higher echelons of their civilizations have been known to live nearly 800 years."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Snowborn",
@@ -4125,7 +4270,8 @@
     "type": "text",
     "value": "A snowborn's body is formed of compacted snow. They have a small sphere for a head, branch-like limbs, and they can harden into ice to protect themselves. Despite their coal eyes and carrot noses, they perceive the world as keenly as any other species. Snowborn enjoy using clothing as self-expression, like a jaunty hat or colourful scarf."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Stoneborn",
@@ -4194,7 +4340,15 @@
     "type": "text",
     "value": "Their stony skin matches the same hue and pattern as the stone they were carved from. While all of their kind have broad wings that carry their dense, heavy bodies, their biology can evoke a wide variety of creatures—including bats, fiends, dragons, birds, angels, dogs, and lizards—often combining features into a chimeric blend. They usually live for 300 years before crumbling into rubble."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "insight",
+    "perception",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Stoneborn",
@@ -4255,7 +4409,15 @@
     "type": "text",
     "value": "Their stony skin matches the same hue and pattern as the stone they were carved from. While all of their kind have broad wings that carry their dense, heavy bodies, their biology can evoke a wide variety of creatures—including bats, fiends, dragons, birds, angels, dogs, and lizards—often combining features into a chimeric blend. They usually live for 300 years before crumbling into rubble."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "insight",
+    "perception",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Tarandus",
@@ -4312,7 +4474,14 @@
     "type": "text",
     "value": "Tarandus herds are large and communal, sharing duties such as child-rearing and foraging. They maintain strong ties between herds through regular gatherings where new maps and discoveries are exchanged. As most tarandus are used to the safety and rhythm of herd life, those who travel alone often join adventuring groups as temporary companions."
    }
-  ]
+  ],
+  "skillProficiencies": {
+   "options": [
+    "perception",
+    "survival"
+   ],
+   "amount": 1
+  }
  },
  {
   "name": "Threadborn",
@@ -4380,7 +4549,8 @@
     "type": "text",
     "value": "As living dolls, these folk are constructed with a variety of materials, including cloth, wood, metal, porcelain, stuffing, yarn, and anything else a toy might be made of. With the most varied body shapes of all Druskenvald's species, each threadborn represents a unique representation of fun. They usually live for 100 years before falling apart and needing to be rebuilt."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Threadborn",
@@ -4433,7 +4603,8 @@
     "type": "text",
     "value": "As living dolls, these folk are constructed with a variety of materials, including cloth, wood, metal, porcelain, stuffing, yarn, and anything else a toy might be made of. With the most varied body shapes of all Druskenvald's species, each threadborn represents a unique representation of fun. They usually live for 100 years before falling apart and needing to be rebuilt."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Wechselkind",
@@ -4534,7 +4705,8 @@
     "type": "text",
     "value": "The eldritch heritages of Grim Hollow cover a range of folk shaped by magical intent, unnatural power, or the touch of ancient curses. Almost universally, folk of these heritages are fated to make their way alone through a troubled and dangerous world."
    }
-  ]
+  ],
+  "skillProficiencies": null
  },
  {
   "name": "Wulven",
@@ -4636,6 +4808,7 @@
     "type": "text",
     "value": "The eldritch heritages of Grim Hollow cover a range of folk shaped by magical intent, unnatural power, or the touch of ancient curses. Almost universally, folk of these heritages are fated to make their way alone through a troubled and dangerous world."
    }
-  ]
+  ],
+  "skillProficiencies": null
  }
 ]
