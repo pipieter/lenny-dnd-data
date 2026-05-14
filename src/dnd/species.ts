@@ -7,6 +7,11 @@ import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { CreatureSizes, SpecialSpeedTypes } from '../5etools-conversion/data';
 import { Databank } from '../data';
 
+interface ProficiencyChoices {
+    options: string[] | null; // Null means any proficiency can be chosen.
+    amount: number;
+}
+
 export interface ParsedSpecies {
     name: string;
     source: string;
@@ -17,6 +22,7 @@ export interface ParsedSpecies {
     creatureType: string | null;
     description: Description[];
     info: Description[];
+    skillProficiencies: (string | ProficiencyChoices)[];
 }
 
 function getSpeciesFluff(data: any, name: string, source: string): any | null {
@@ -87,6 +93,41 @@ function getSpeciesCreatureType(creatureTypes: string[]): string | null {
     return joinStringsWithOr(creatureTypes, true) || null;
 }
 
+function getSpeciesSkillProficiency(entry: any): (string | ProficiencyChoices)[] {
+    if (!entry.skillProficiencies) return [];
+    const prof = entry.skillProficiencies[0];
+
+    const proficiencies = [];
+    for (const key of Object.keys(prof)) {
+        if (prof[key] === true) {
+            proficiencies.push(key);
+            continue;
+        }
+
+        if (key === 'choose') {
+            const amount = prof[key].count ?? 1;
+            const options = prof[key].from;
+            proficiencies.push({
+                options,
+                amount,
+            });
+            continue;
+        }
+
+        if (key === 'any') {
+            proficiencies.push({
+                options: null,
+                amount: prof[key],
+            });
+            continue;
+        }
+
+        throw `Unsupported species proficiency-key: ${key}`;
+    }
+
+    return proficiencies;
+}
+
 export function getSpecies(data: Databank): ParsedSpecies[] {
     // Get raw entries
     const raw: any[] = [];
@@ -118,6 +159,7 @@ export function getSpecies(data: Databank): ParsedSpecies[] {
         const creatureType = getSpeciesCreatureType(entry.creatureTypes || []);
         const description = parseDescriptions('', entry.entries || []);
         const info = getSpeciesInfo(data, name, source);
+        const skillProficiencies = getSpeciesSkillProficiency(entry);
 
         species.push({
             name,
@@ -129,6 +171,7 @@ export function getSpecies(data: Databank): ParsedSpecies[] {
             creatureType,
             description,
             info,
+            skillProficiencies,
         });
     }
 
