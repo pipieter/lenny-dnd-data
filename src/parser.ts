@@ -868,8 +868,7 @@ export function parseSkillProficiency(skillProficiencies: any[] | undefined): Pr
     // At the time of writing (14/05/2026), 5e.tools data does not use skillProficiencies where
     // there are guaranteed proficiencies AND choices. Because of this we return one instance of ProficiencyChoices
     // This is easier to work with, but has the downside of losing certain (unused) flexibility.
-    if (skillProficiencies.length > 1)
-        throw `More than one skillProficiency-object in ${skillProficiencies}`;
+    if (skillProficiencies.length > 1) throw `More than one skillProficiency-object in ${skillProficiencies}`;
     const prof = skillProficiencies[0];
 
     const proficiencies = [];

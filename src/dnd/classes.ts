@@ -162,8 +162,8 @@ function parseStartingProficiencies(data: any): StartingProficiencies | null {
     function parseProficiencyList(profData: any[]): string[] {
         const result: string[] = [];
         for (const i in profData) {
-            const prof = profData[i]
-            if (typeof prof === "string") {
+            const prof = profData[i];
+            if (typeof prof === 'string') {
                 result.push(cleanDNDText(prof, true));
                 continue;
             }
@@ -178,13 +178,13 @@ function parseStartingProficiencies(data: any): StartingProficiencies | null {
                 continue;
             }
 
-            throw `Unsupported class startingProficiency data: ${profData}`
+            throw `Unsupported class startingProficiency data: ${profData}`;
         }
 
-        return result
+        return result;
     }
 
-    const armor: string[] = parseProficiencyList(prof.armor)
+    const armor: string[] = parseProficiencyList(prof.armor);
     const tools = prof.tools ? prof.tools.map((t: string) => cleanDNDText(t, true)) : [];
     const weapons = parseProficiencyList(prof.weapons);
     const skills = parseSkillProficiency(prof.skills);
@@ -195,7 +195,7 @@ function parseStartingProficiencies(data: any): StartingProficiencies | null {
         tools,
         weapons,
         skills,
-        saving
+        saving,
     };
 }
 
