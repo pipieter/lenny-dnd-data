@@ -856,3 +856,50 @@ export function parsePrerequisite(prerequisite: any): string | null {
     if (prerequisites.length === 0) return null;
     return joinStringsWithAnd(prerequisites, false);
 }
+
+export interface ProficiencyOptions {
+    options: string[] | 'any';
+    amount: number | 'all';
+}
+
+export function parseSkillProficiency(entry: any): ProficiencyOptions | null {
+    if (!entry.skillProficiencies) return null;
+
+    // At the time of writing (14/05/2026), 5e.tools data does not use skillProficiencies where
+    // there are guaranteed proficiencies AND choices. Because of this we return one instance of ProficiencyChoices
+    // This is easier to work with, but has the downside of losing certain (unused) flexibility.
+    if (entry.skillProficiencies.length > 1)
+        throw `More than one skillProficiency-object in ${entry.name} (${entry.source}): ${entry.skillProficiencies}`;
+    const prof = entry.skillProficiencies[0];
+
+    const proficiencies = [];
+    for (const key of Object.keys(prof)) {
+        if (prof[key] === true) {
+            proficiencies.push(key);
+            continue;
+        }
+
+        if (key === 'choose') {
+            const amount = prof[key].count ?? 1;
+            const options = prof[key].from;
+            return {
+                options,
+                amount,
+            };
+        }
+
+        if (key === 'any') {
+            return {
+                options: 'any',
+                amount: prof[key],
+            };
+        }
+
+        throw `Unsupported species proficiency-key: ${key}`;
+    }
+
+    return {
+        options: proficiencies,
+        amount: 'all',
+    };
+}

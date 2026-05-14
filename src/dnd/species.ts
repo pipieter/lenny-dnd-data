@@ -1,16 +1,18 @@
 // Note: in the 5e.tools files this is still referred to as 'race'
 
-import { capitalize, Description, parseDescriptions, parseImageUrl } from '../parser';
+import {
+    capitalize,
+    Description,
+    parseSkillProficiency,
+    parseDescriptions,
+    parseImageUrl,
+    ProficiencyOptions,
+} from '../parser';
 import { getSpeciesUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { CreatureSizes, SpecialSpeedTypes } from '../5etools-conversion/data';
 import { Databank } from '../data';
-
-interface ProficiencyChoices {
-    options: string[] | 'any'; // Null means any proficiency can be chosen.
-    amount: number | 'all';
-}
 
 export interface ParsedSpecies {
     name: string;
@@ -22,7 +24,7 @@ export interface ParsedSpecies {
     creatureType: string | null;
     description: Description[];
     info: Description[];
-    skillProficiencies: null | ProficiencyChoices;
+    skillProficiencies: null | ProficiencyOptions;
 }
 
 function getSpeciesFluff(data: any, name: string, source: string): any | null {
@@ -93,47 +95,6 @@ function getSpeciesCreatureType(creatureTypes: string[]): string | null {
     return joinStringsWithOr(creatureTypes, true) || null;
 }
 
-function getSpeciesSkillProficiency(entry: any): ProficiencyChoices | null {
-    // At the time of writing (14/05/2026), 5e.tools data does not use skillProficiencies where
-    // there are guaranteed proficiencies AND choices. Because of this we return string[] | ProficiencyChoices.
-    // This is easier to work with, please note that if data changes where there ARE guaranteed proficiencies AND choices, this logic
-    // Has to be adjusted.
-
-    if (!entry.skillProficiencies) return null;
-    const prof = entry.skillProficiencies[0];
-
-    const proficiencies = [];
-    for (const key of Object.keys(prof)) {
-        if (prof[key] === true) {
-            proficiencies.push(key);
-            continue;
-        }
-
-        if (key === 'choose') {
-            const amount = prof[key].count ?? 1;
-            const options = prof[key].from;
-            return {
-                options,
-                amount,
-            };
-        }
-
-        if (key === 'any') {
-            return {
-                options: 'any',
-                amount: prof[key],
-            };
-        }
-
-        throw `Unsupported species proficiency-key: ${key}`;
-    }
-
-    return {
-        options: proficiencies,
-        amount: 'all',
-    };
-}
-
 export function getSpecies(data: Databank): ParsedSpecies[] {
     // Get raw entries
     const raw: any[] = [];
@@ -165,7 +126,7 @@ export function getSpecies(data: Databank): ParsedSpecies[] {
         const creatureType = getSpeciesCreatureType(entry.creatureTypes || []);
         const description = parseDescriptions('', entry.entries || []);
         const info = getSpeciesInfo(data, name, source);
-        const skillProficiencies = getSpeciesSkillProficiency(entry);
+        const skillProficiencies = parseSkillProficiency(entry);
 
         species.push({
             name,
