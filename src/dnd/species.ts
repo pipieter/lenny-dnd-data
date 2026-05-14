@@ -22,7 +22,7 @@ export interface ParsedSpecies {
     creatureType: string | null;
     description: Description[];
     info: Description[];
-    skillProficiencies: (string | ProficiencyChoices)[];
+    skillProficiencies: string[] | ProficiencyChoices;
 }
 
 function getSpeciesFluff(data: any, name: string, source: string): any | null {
@@ -93,7 +93,12 @@ function getSpeciesCreatureType(creatureTypes: string[]): string | null {
     return joinStringsWithOr(creatureTypes, true) || null;
 }
 
-function getSpeciesSkillProficiency(entry: any): (string | ProficiencyChoices)[] {
+function getSpeciesSkillProficiency(entry: any): string[] | ProficiencyChoices {
+    // At the time of writing (14/05/2026), 5e.tools data does not use skillProficiencies where
+    // there are guaranteed proficiencies AND choices. Because of this we return string[] | ProficiencyChoices.
+    // This is easier to work with, please note that if data changes where there ARE guaranteed proficiencies AND choices, this logic
+    // Has to be adjusted.
+
     if (!entry.skillProficiencies) return [];
     const prof = entry.skillProficiencies[0];
 
@@ -107,19 +112,17 @@ function getSpeciesSkillProficiency(entry: any): (string | ProficiencyChoices)[]
         if (key === 'choose') {
             const amount = prof[key].count ?? 1;
             const options = prof[key].from;
-            proficiencies.push({
+            return {
                 options,
                 amount,
-            });
-            continue;
+            };
         }
 
         if (key === 'any') {
-            proficiencies.push({
+            return {
                 options: null,
                 amount: prof[key],
-            });
-            continue;
+            };
         }
 
         throw `Unsupported species proficiency-key: ${key}`;
