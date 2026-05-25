@@ -11,7 +11,9 @@ import {
     parseCreatureSummonSpell,
     parseCreatureTypes,
     parseDescriptions,
+    parseReprint,
     parseSizes,
+    ReprintData,
     Table,
 } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
@@ -33,6 +35,8 @@ export interface ParsedCreature {
     traits: Description[];
     actions: Description[];
     bonusActions: Description[];
+
+    reprint: ReprintData | null;
 }
 
 function parseCreatureSummonClass(creature: any): string | null {
@@ -294,6 +298,7 @@ function buildCreature(creature: any, fluff: any | null): ParsedCreature {
     const traits = creature.trait?.flatMap((trait: any) => parseDescriptions(trait.name, trait.entries)) ?? [];
     const actions = creature.action?.flatMap((action: any) => parseDescriptions(action.name, action.entries)) ?? [];
     const bonusActions = creature.bonus?.flatMap((bonus: any) => parseDescriptions(bonus.name, bonus.entries)) ?? [];
+    const reprint = parseReprint(creature);
 
     return {
         name,
@@ -310,6 +315,7 @@ function buildCreature(creature: any, fluff: any | null): ParsedCreature {
         traits,
         actions,
         bonusActions,
+        reprint,
     };
 }
 

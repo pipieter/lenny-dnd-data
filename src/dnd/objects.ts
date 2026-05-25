@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { Description, parseDescriptions, parseImageUrl, parseSizes } from '../parser';
+import { Description, parseDescriptions, parseImageUrl, parseReprint, parseSizes, ReprintData } from '../parser';
 import { getObjectsUrl, getObjectTokenUrl } from '../urls';
 
 export interface DNDObject {
@@ -40,6 +40,7 @@ export interface ParsedDNDObject {
     tokenUrl: string | null;
     description: Description[];
     image: string | null;
+    reprint: ReprintData | null;
 }
 
 function getObjectSubtitle(obj: DNDObject): string {
@@ -79,6 +80,7 @@ export function getObjects(data: Databank): ParsedDNDObject[] {
             tokenUrl: parseObjectTokenURL(obj),
             description: descriptions,
             image: getObjectImage(obj, data),
+            reprint: parseReprint(obj),
         };
     });
 }

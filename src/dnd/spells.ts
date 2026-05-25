@@ -7,8 +7,10 @@ import {
     parseDurationTime,
     parseImageUrl,
     parseRange,
+    parseReprint,
     parseSpellLevel,
     parseSpellSchool,
+    ReprintData,
 } from '../parser';
 import { getSpellsUrl } from '../urls';
 import { Databank } from '../data';
@@ -31,6 +33,7 @@ export interface ParsedSpell {
     image: string | null;
     description: Description[];
     classes: Caster[];
+    reprint: ReprintData | null;
 }
 
 function getSpellImage(fluffs: any[], name: string, source: string): string | null {
@@ -96,6 +99,7 @@ function getSpell(spell: any, fluffs: any[], sources: any): ParsedSpell {
         image: getSpellImage(fluffs, spell.name, spell.source),
         description: getSpellDescription(spell),
         classes: getCasters(spell, sources),
+        reprint: parseReprint(spell),
     };
 }
 

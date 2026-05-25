@@ -1,6 +1,6 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, parseDescriptions } from '../parser';
+import { Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
 import { getCultsBoonsUrl } from '../urls';
 
 export interface Boon {
@@ -20,6 +20,7 @@ export interface ParsedBoon {
     ability: string | null;
     signatureSpells: string | null;
     description: Description[];
+    reprint: ReprintData | null;
 }
 
 export function getBoons(databank: Databank): ParsedBoon[] {
@@ -31,6 +32,7 @@ export function getBoons(databank: Databank): ParsedBoon[] {
         const ability = boon.ability ? cleanDNDText(boon.ability.entry) : null;
         const signatureSpells = boon.signatureSpells ? cleanDNDText(boon.signatureSpells.entry) : null;
         const description = parseDescriptions('', boon.entries);
+        const reprint = parseReprint(boon);
 
         return {
             name,
@@ -40,6 +42,7 @@ export function getBoons(databank: Databank): ParsedBoon[] {
             ability,
             signatureSpells,
             description,
+            reprint,
         };
     });
 

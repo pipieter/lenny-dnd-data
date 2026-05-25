@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { Description, parseDescriptions } from '../parser';
+import { Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
 import { getRulesUrl } from '../urls';
 
 export interface Rule {
@@ -16,6 +16,7 @@ export interface ParsedRule {
     url: string | null;
     ruleType: string;
     description: Description[];
+    reprint: ReprintData | null;
 }
 
 function parseRuleType(rule: any): string {
@@ -38,6 +39,7 @@ export function getRules(databank: Databank): ParsedRule[] {
         url: getRulesUrl(rule.name, rule.source),
         ruleType: parseRuleType(rule),
         description: parseDescriptions('', rule.entries),
+        reprint: parseReprint(rule),
     }));
 
     // The descriptions of senses are very meta, thus we treat them as rules.
@@ -47,6 +49,7 @@ export function getRules(databank: Databank): ParsedRule[] {
         url: null, // There is no dedicated info page for senses.
         ruleType: 'Sense',
         description: parseDescriptions('', sense.entries),
+        reprint: parseReprint(sense),
     }));
 
     return [...rules, ...senses];

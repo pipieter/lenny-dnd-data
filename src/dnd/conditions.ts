@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { Description, parseDescriptions, parseImageUrl } from '../parser';
+import { Description, parseDescriptions, parseImageUrl, parseReprint, ReprintData } from '../parser';
 import { getConditionsDiseasesUrl } from '../urls';
 
 // Note, statuses and diseases also follow the same structure as Condition
@@ -9,6 +9,7 @@ export interface ParsedCondition {
     url: string;
     description: Description[];
     image: string | null;
+    reprint: ReprintData | null;
 }
 
 function getConditions(type: string, data: Databank): ParsedCondition[] {
@@ -20,6 +21,7 @@ function getConditions(type: string, data: Databank): ParsedCondition[] {
             url: getConditionsDiseasesUrl(entry.name, entry.source),
             description: parseDescriptions('Description', entry.entries),
             image: null,
+            reprint: parseReprint(entry),
         };
 
         const fluff = data.search(`${type}Fluff`, entry.name, entry.source);

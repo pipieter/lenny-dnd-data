@@ -7,6 +7,8 @@ import {
     parseDescriptions,
     parseImageUrl,
     ProficiencyOptions,
+    ReprintData,
+    parseReprint,
 } from '../parser';
 import { getSpeciesUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
@@ -25,6 +27,7 @@ export interface ParsedSpecies {
     description: Description[];
     info: Description[];
     skillProficiencies: null | ProficiencyOptions;
+    reprint: ReprintData | null;
 }
 
 function getSpeciesFluff(data: any, name: string, source: string): any | null {
@@ -127,6 +130,7 @@ export function getSpecies(data: Databank): ParsedSpecies[] {
         const description = parseDescriptions('', entry.entries || []);
         const info = getSpeciesInfo(data, name, source);
         const skillProficiencies = parseSkillProficiency(entry.skillProficiencies);
+        const reprint = parseReprint(entry);
 
         species.push({
             name,
@@ -139,6 +143,7 @@ export function getSpecies(data: Databank): ParsedSpecies[] {
             description,
             info,
             skillProficiencies,
+            reprint,
         });
     }
 
