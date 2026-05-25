@@ -1,4 +1,4 @@
-import { Description, parseDescriptions, parseSingleTime } from '../parser';
+import { Description, parseDescriptions, parseReprint, parseSingleTime, ReprintData } from '../parser';
 import { joinStringsWithOr } from '../util';
 
 import { getActionsUrl } from '../urls';
@@ -9,6 +9,7 @@ export interface Action {
     source: string;
     time?: any[];
     entries: any[];
+    reprintedAs: any;
 }
 
 export interface ParsedAction {
@@ -17,6 +18,7 @@ export interface ParsedAction {
     url: string | null;
     time: string | null;
     description: Description[];
+    reprint: ReprintData | null;
 }
 
 function parseActionTime(times: any[] | undefined): string {
@@ -40,6 +42,7 @@ export function getActions(data: Databank): ParsedAction[] {
         url: getActionsUrl(action.name, action.source),
         time: parseActionTime(action.time),
         description: parseDescriptions('', action.entries),
+        reprint: parseReprint(action),
     }));
 
     return parsed;

@@ -7,6 +7,8 @@ import {
     parseImageUrl,
     parseItemValue,
     parseItemWeight,
+    parseReprint,
+    ReprintData,
 } from '../parser';
 import { DamageTypes } from '../5etools-conversion/data';
 import { getItemsUrl } from '../urls';
@@ -24,6 +26,7 @@ export interface ParsedItem {
     type: string[];
     description: Description[];
     properties: string[];
+    reprint: ReprintData | null;
 }
 
 function mapItemMasteries(data: any): Map<string, any> {
@@ -193,6 +196,7 @@ function parseItem(item: any, data: any): ParsedItem {
         type: [],
         description: [],
         properties: [],
+        reprint: parseReprint(item),
     };
 
     result.name = cleanDNDText(item.name);

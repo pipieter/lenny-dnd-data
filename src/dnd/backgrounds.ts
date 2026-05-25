@@ -6,8 +6,10 @@ import {
     parseAbilityScore,
     parseDescriptions,
     parsePrerequisite,
+    parseReprint,
     parseSkillProficiency,
     ProficiencyOptions,
+    ReprintData,
 } from '../parser';
 import { getBackgroundsUrl } from '../urls';
 
@@ -25,6 +27,7 @@ export interface ParsedBackground {
     description: Description[];
     fluff: Description[];
     skillProficiencies: ProficiencyOptions | null;
+    reprint: ReprintData | null;
 }
 
 function parseBackgroundDescription(background: any): Description[] {
@@ -118,6 +121,7 @@ export function getBackgrounds(databank: Databank): ParsedBackground[] {
             prerequisite: parsePrerequisite((background.prerequisite ?? [])[0]),
             fluff: parseBackgroundFluff(fluff),
             skillProficiencies: parseSkillProficiency(background.skillProficiencies),
+            reprint: parseReprint(background),
         };
     });
 }

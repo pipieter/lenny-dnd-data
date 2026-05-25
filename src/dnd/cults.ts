@@ -1,6 +1,6 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, parseDescriptions } from '../parser';
+import { Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
 import { getCultsBoonsUrl } from '../urls';
 
 export interface Cult {
@@ -11,6 +11,7 @@ export interface Cult {
     cultists?: any;
     signatureSpells?: any;
     entries: any[];
+    reprintedAs: any[];
 }
 
 export interface ParsedCult {
@@ -22,6 +23,7 @@ export interface ParsedCult {
     cultists: string | null;
     signatureSpells: string | null;
     description: Description[];
+    reprint: ReprintData | null;
 }
 
 export function getCults(databank: Databank): ParsedCult[] {
@@ -36,6 +38,7 @@ export function getCults(databank: Databank): ParsedCult[] {
         const cultists = cult.cultists ? cleanDNDText(cult.cultists.entry) : null;
         const signatureSpells = cult.signatureSpells ? cleanDNDText(cult.signatureSpells.entry) : null;
         const description = parseDescriptions('', cult.entries);
+        const reprint = parseReprint(cult);
 
         cults.push({
             name,
@@ -46,6 +49,7 @@ export function getCults(databank: Databank): ParsedCult[] {
             cultists,
             signatureSpells,
             description,
+            reprint,
         });
     }
 

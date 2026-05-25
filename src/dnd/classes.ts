@@ -12,8 +12,10 @@ import {
     parseClassResourceValue,
     parseDescriptions,
     parseProficiencyList,
+    parseReprint,
     parseSkillProficiency,
     ProficiencyOptions,
+    ReprintData,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
@@ -67,6 +69,8 @@ export interface ParsedClass {
     levelFeatures: PaginatedDescriptions;
     subclassLevelFeatures: { [subclass: string]: PaginatedDescriptions } | null;
     subclassUnlockLevel: number | null;
+
+    reprint: ReprintData | null;
 }
 
 interface Subclass {
@@ -75,6 +79,8 @@ interface Subclass {
     key: string;
     classKey: string;
     levelFeatures: ClassFeature[] | null;
+
+    reprint: ReprintData | null;
 }
 
 function parseClassFeature(feature: any): ClassFeature {
@@ -147,12 +153,15 @@ function parseSubclass(data: any, subclassFeatures: ClassFeatureDictionary): Sub
         }
     }
 
+    const reprint = parseReprint(data);
+
     return {
         name,
         source,
         key,
         classKey,
         levelFeatures,
+        reprint,
     };
 }
 
@@ -194,6 +203,8 @@ function parseClass(
     const levelFeatures = parseLevelFeatures(name, source, features);
     const { subclassLevelFeatures, subclassUnlockLevel } = parseSubclassData(subclasses, subclassFeatures);
 
+    const reprint = parseReprint(data);
+
     return {
         name,
         source,
@@ -206,6 +217,7 @@ function parseClass(
         levelResources,
         levelFeatures,
         subclassLevelFeatures,
+        reprint,
     };
 }
 
@@ -918,6 +930,7 @@ function classFeatsToParsedFeats(
                 prerequisite: feat.classKey,
                 abilityIncrease: null,
                 description: feat.descriptions,
+                reprint: parseReprint(feat),
             });
         }
     }
@@ -946,6 +959,7 @@ function classFeatsToParsedFeats(
                 prerequisite: feat.subclassKey ?? feat.classKey,
                 abilityIncrease: null,
                 description: feat.descriptions,
+                reprint: parseReprint(feat),
             });
         }
     }

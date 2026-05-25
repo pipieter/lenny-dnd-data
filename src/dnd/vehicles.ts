@@ -1,6 +1,14 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { capitalize, Description, DescriptionType, parseDescriptions, parseSizes } from '../parser';
+import {
+    capitalize,
+    Description,
+    DescriptionType,
+    parseDescriptions,
+    parseReprint,
+    parseSizes,
+    ReprintData,
+} from '../parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
@@ -103,6 +111,7 @@ export interface ParsedVehicle {
     cargoCapacity: string | null;
     travelPace: string | null;
     description: Description[];
+    reprint: ReprintData | null;
 }
 
 function getVehiclePace(vehicle: Vehicle): string | null {
@@ -273,6 +282,7 @@ export function getVehicles(data: Databank): ParsedVehicle[] {
             cargoCapacity: v.capCargo ? `${v.capCargo} tons` : null,
             travelPace: getVehiclePace(v),
             description: getVehicleDescription(v),
+            reprint: parseReprint(v),
         };
     });
 
@@ -287,6 +297,7 @@ export function getVehicles(data: Databank): ParsedVehicle[] {
             cargoCapacity: null,
             travelPace: null,
             description: v.entries ? parseDescriptions('', v.entries) : [],
+            reprint: parseReprint(v),
         };
     });
 

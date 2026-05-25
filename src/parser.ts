@@ -928,3 +928,45 @@ export function parseProficiencyList(profData: any[]): string[] {
 
     return result;
 }
+
+export interface ReprintData {
+    name: string;
+    source: string;
+    tag: string | null; // Tags are used if information was moved to a different section, e.g. an action became a variantrule.
+}
+
+export function parseReprint(data: any): ReprintData | null {
+    const reprintedAs = data['reprintedAs'] ?? null;
+    if (reprintedAs === null) return null;
+    if (reprintedAs === true) return null; // TODO Fix _copy to handle reprintedAs copying.
+    if (!Array.isArray(reprintedAs))
+        throw `Unsupported reprintedAs format in ${data.name} (${data.source}), not an array: ${reprintedAs}`;
+    let name = null;
+    let source = null;
+
+    const reprint = reprintedAs[0];
+    let parts;
+    if (typeof reprint === 'string') parts = reprint.split('|');
+    else parts = reprint.uid.split('|');
+
+    if (parts.length === 2) {
+        name = parts[0];
+        source = parts[1];
+    } else if (parts.length === 4) {
+        // Example of this is subclasses, where index 2 and 4 point towards the class this subclass is reprinted in.
+        name = parts[0];
+        source = parts[3];
+    } else {
+        throw `Unsupported reprintedAs part length: ${reprint}`;
+    }
+
+    if (name === null || source === null) {
+        throw `Unsupported reprintedAs format in ${data.name} (${data.source}): ${typeof reprint}`;
+    }
+
+    return {
+        name,
+        source,
+        tag: reprint.tag ?? null,
+    };
+}

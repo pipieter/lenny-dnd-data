@@ -39,6 +39,7 @@ export interface ParsedDeity {
     imgUrl: string | null;
     inlineDescription: Description[];
     description: Description[];
+    // TODO Handles reprints differently.
 }
 
 function parseDeityInlineDescriptions(deity: Deity): Description[] {

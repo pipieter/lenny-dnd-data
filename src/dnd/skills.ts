@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { Description, parseAbilityScore, parseDescriptions } from '../parser';
+import { Description, parseAbilityScore, parseDescriptions, parseReprint, ReprintData } from '../parser';
 
 export interface Skill {
     name: string;
@@ -18,6 +18,7 @@ export interface ParsedSkill {
     source: string;
     ability: string;
     description: Description[];
+    reprint: ReprintData | null;
 }
 
 export function getSkills(data: Databank): ParsedSkill[] {
@@ -27,6 +28,7 @@ export function getSkills(data: Databank): ParsedSkill[] {
             source: skill.source,
             ability: parseAbilityScore(skill.ability),
             description: skill.entries ? parseDescriptions('', skill.entries) : [],
+            reprint: parseReprint(skill),
         };
     });
 }

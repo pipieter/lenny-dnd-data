@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { capitalize, Description, parseDescriptions } from '../parser';
+import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
 import { getTrapsUrl } from '../urls';
 
 export interface Hazard {
@@ -15,6 +15,7 @@ export interface ParsedHazard {
     subtitle: string;
     url: string;
     description: Description[];
+    reprint: ReprintData | null;
 }
 
 function getTrapHazardSubtitle(hazard: Hazard, suffix: string): string {
@@ -50,6 +51,7 @@ export function getTrapsAndHazards(data: Databank): {
             subtitle: getTrapHazardSubtitle(trap, 'trap'),
             url: getTrapsUrl(trap.name, trap.source),
             description: trap.entries ? parseDescriptions('', trap.entries) : [],
+            reprint: parseReprint(trap),
         };
     });
 
@@ -60,6 +62,7 @@ export function getTrapsAndHazards(data: Databank): {
             subtitle: getTrapHazardSubtitle(hazard, 'hazard'),
             url: getTrapsUrl(hazard.name, hazard.source),
             description: hazard.entries ? parseDescriptions('', hazard.entries) : [],
+            reprint: parseReprint(hazard),
         };
     });
 
