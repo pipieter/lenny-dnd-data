@@ -938,7 +938,6 @@ export interface ReprintData {
 export function parseReprint(data: any): ReprintData | null {
     const reprintedAs = data['reprintedAs'] ?? null;
     if (reprintedAs === null) return null;
-    if (reprintedAs === true) return null; // TODO Fix _copy to handle reprintedAs copying.
     if (!Array.isArray(reprintedAs))
         throw `Unsupported reprintedAs format in ${data.name} (${data.source}), not an array: ${reprintedAs}`;
     let name = null;
