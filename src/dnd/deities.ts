@@ -39,6 +39,7 @@ export interface ParsedDeity {
     imgUrl: string | null;
     inlineDescription: Description[];
     description: Description[];
+    // Deities do not handle reprinting in data.
 }
 
 function parseDeityInlineDescriptions(deity: Deity): Description[] {

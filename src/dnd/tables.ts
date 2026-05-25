@@ -1,6 +1,6 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { DescriptionType, parseDescriptionFromTable, DescriptionTable } from '../parser';
+import { DescriptionType, parseDescriptionFromTable, DescriptionTable, ReprintData, parseReprint } from '../parser';
 import { getTablesUrl } from '../urls';
 
 interface TableGroup {
@@ -35,6 +35,7 @@ export interface ParsedTable {
     roll: string | null;
     table: DescriptionTable;
     footnotes: string[] | null;
+    reprint: ReprintData | null;
 }
 
 function getFootnotes(table: TableData): string[] | null {
@@ -87,6 +88,7 @@ export function getTables(databank: Databank): ParsedTable[] {
             roll: getTableRollExpression(table),
             table: parseDescriptionFromTable(table),
             footnotes: getFootnotes(table),
+            reprint: parseReprint(table),
         };
     });
 

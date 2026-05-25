@@ -1,6 +1,6 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { capitalize, Description, parseDescriptions } from '../parser';
+import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
 import { getImageUrl, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
@@ -28,6 +28,7 @@ export interface ParsedLanguage {
     script: string | null;
     description: Description[] | null;
     image: string | null;
+    reprint: ReprintData | null;
 }
 
 function getTypicalSpeakers(language: Language): string | null {
@@ -68,6 +69,7 @@ export function getLanguages(data: Databank): ParsedLanguage[] {
             script: language.script ?? null,
             description: language.entries ? parseDescriptions('', language.entries) : null,
             image: getLanguageImage(language, data),
+            reprint: parseReprint(language),
         };
     });
 }

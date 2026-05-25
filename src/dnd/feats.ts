@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { Description, parseAbilityScore, parseDescriptions, title } from '../parser';
+import { Description, parseAbilityScore, parseDescriptions, parseReprint, ReprintData, title } from '../parser';
 import { getFeatsUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
@@ -10,7 +10,7 @@ export interface Feat {
     srd52?: boolean;
     basicRules2024?: boolean;
 
-    reprintedAs?: string[];
+    reprintedAs?: any[];
     category?: string;
     prerequisite?: any[];
     optionalfeatureProgression?: any[];
@@ -41,6 +41,7 @@ export interface ParsedFeat {
     prerequisite: string | null;
     abilityIncrease: string | null;
     description: Description[];
+    reprint: ReprintData | null;
 }
 
 function getFeatAbilityIncrease(feat: Feat): string | null {
@@ -293,6 +294,7 @@ export function getFeats(data: Databank): ParsedFeat[] {
             prerequisite: getFeatPrerequisites(feat),
             abilityIncrease: getFeatAbilityIncrease(feat),
             description: parseDescriptions('', feat.entries),
+            reprint: parseReprint(feat),
         };
     });
 }

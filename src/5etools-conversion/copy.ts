@@ -299,9 +299,10 @@ function addMod(base: any, mods: any): void {
     }
 }
 
-function addPreserve(copy: any, preserve: any): void {
+function addPreserve(copy: any, parent: any, preserve: any): void {
     for (const key of Object.keys(preserve)) {
-        copy[key] = preserve[key];
+        if (key === 'reprintedAs') copy[key] = parent[key];
+        else copy[key] = preserve[key];
     }
 }
 
@@ -335,7 +336,7 @@ export function handleCopy(base: any, entries: any[]): any {
     copy.hasToken = base.hasToken ?? false; // Do not inherit hasToken
 
     addMod(copy, mod);
-    addPreserve(copy, preserve);
+    addPreserve(copy, parent, preserve);
 
     delete copy._copy;
 
