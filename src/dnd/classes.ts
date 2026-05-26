@@ -63,6 +63,7 @@ export interface ParsedClass {
     primaryAbility: string | null;
     spellcastAbility: string | null;
     startingProficiencies: StartingProficiencies | null;
+    hp: number | null;
     baseInfo: Description[] | null;
 
     levelResources: PaginatedDescriptions;
@@ -197,6 +198,7 @@ function parseClass(
     const primaryAbility = parsePrimaryAbility(data);
     const spellcastAbility = parseSpellcastAbility(data);
     const startingProficiencies = parseStartingProficiencies(data);
+    const hp = data.hd?.faces ?? null; // The faces-value is also the starting hp value. The HP-die's 'number' value is always 1 (1dN)
     const baseInfo = parseBaseInfo(data);
 
     const levelResources = parseLevelResources(data);
@@ -213,6 +215,7 @@ function parseClass(
         primaryAbility,
         spellcastAbility,
         startingProficiencies,
+        hp,
         baseInfo,
         levelResources,
         levelFeatures,
