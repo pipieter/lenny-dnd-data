@@ -25642,7 +25642,7 @@
        "min": 49,
        "max": 54
       },
-      "Aberrations, fiends, and undead in the region give off a crimson glow for 1 minute. The creatures shed dim light in a 10-foot radius, attacks against them have advantage if the attacker can see them, and the creatures can't benefit from being invisible."
+      "Aberrations, fiends, and undead in the region give off a crimson glow for 1 minute. The creatures shed Vision and Light in a 10-foot radius, attacks against them have advantage if the attacker can see them, and the creatures can't benefit from being invisible."
      ],
      [
       {
@@ -67036,7 +67036,7 @@
        "min": 4,
        "max": 4
       },
-      "Your dragonmark emits dim light in a 5-foot radius for 10 minutes whenever you use it."
+      "Your dragonmark emits Vision and Light in a 5-foot radius for 10 minutes whenever you use it."
      ],
      [
       {
@@ -109495,7 +109495,7 @@
        "min": 16,
        "max": 20
       },
-      "All bright light weakens to dim light for 24 hours. Sources that provide dim light, such as candles, do not shed any light."
+      "All Vision and Light weakens to Vision and Light for 24 hours. Sources that provide Vision and Light, such as candles, do not shed any light."
      ],
      [
       {
@@ -132591,30 +132591,22 @@
       {
        "type": "range",
        "min": 91,
-       "max": 92
+       "max": 93
       },
       "Walloping Ammunition"
      ],
      [
       {
        "type": "range",
-       "min": 93,
-       "max": 94
+       "min": 94,
+       "max": 96
       },
       "Wand of Conducting"
      ],
      [
       {
        "type": "range",
-       "min": 95,
-       "max": 97
-      },
-      "Wand of Enemy Detection"
-     ],
-     [
-      {
-       "type": "range",
-       "min": 98,
+       "min": 97,
        "max": 100
       },
       "Wand of Pyrotechnics"
@@ -134228,7 +134220,7 @@
        "min": 11,
        "max": 15
       },
-      "A swarm of bioluminescent flies converges on one random creature in the region. For the next minute, the creature sheds dim light in a 10-foot radius, any attack against it has advantage if the attacker can see it, and the creature can't benefit from being invisible."
+      "A swarm of bioluminescent flies converges on one random creature in the region. For the next minute, the creature sheds Vision and Light in a 10-foot radius, any attack against it has advantage if the attacker can see it, and the creature can't benefit from being invisible."
      ],
      [
       {
@@ -161616,7 +161608,7 @@
        "min": 2,
        "max": 2
       },
-      "Light Sensitivity. A creature of the night sky, the Nyxborn has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight, while it is in bright light."
+      "Light Sensitivity. A creature of the night sky, the Nyxborn has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight, while it is in Vision and Light."
      ],
      [
       {
@@ -161648,7 +161640,7 @@
        "min": 6,
        "max": 6
       },
-      "Starlight Form. The Nyxborn glows with the soft light of the night sky, shedding dim light in a 15-foot radius."
+      "Starlight Form. The Nyxborn glows with the soft light of the night sky, shedding Vision and Light in a 15-foot radius."
      ]
     ]
    }
@@ -173207,7 +173199,7 @@
        "min": 1,
        "max": 1
       },
-      "The creature regains 3d8 + 4 hit points, and its skin sheds bright light in a 5-foot radius and dim light for an additional 5 feet for 1 hour"
+      "The creature regains 3d8 + 4 hit points, and its skin sheds Vision and Light in a 5-foot radius and Vision and Light for an additional 5 feet for 1 hour"
      ],
      [
       {
@@ -173239,7 +173231,7 @@
        "min": 5,
        "max": 5
       },
-      "Euphoric visions of bright light swim through the creature's mind. The creature gains the benefits of the death ward spell for 8 hours and must succeed on a DC 13 Constitution saving throw or be poisoned for the duration."
+      "Euphoric visions of Vision and Light swim through the creature's mind. The creature gains the benefits of the death ward spell for 8 hours and must succeed on a DC 13 Constitution saving throw or be poisoned for the duration."
      ],
      [
       {
@@ -181026,30 +181018,22 @@
       {
        "type": "range",
        "min": 91,
-       "max": 92
+       "max": 93
       },
       "Walloping Ammunition"
      ],
      [
       {
        "type": "range",
-       "min": 93,
-       "max": 94
+       "min": 94,
+       "max": 96
       },
       "Wand of Conducting"
      ],
      [
       {
        "type": "range",
-       "min": 95,
-       "max": 97
-      },
-      "Wand of Enemy Detection"
-     ],
-     [
-      {
-       "type": "range",
-       "min": 98,
+       "min": 97,
        "max": 100
       },
       "Wand of Pyrotechnics"
@@ -193883,15 +193867,15 @@
     ],
     "rows": [
      [
-      "Half cover",
+      "Cover",
       "+2 bonus to AC and Dexterity saving throws against attacks and effects that originate on the opposite side of the cover"
      ],
      [
-      "Three-quarters cover",
+      "Cover",
       "+5 bonus to AC and Dexterity saving throws against attacks and effects that originate on the opposite side of the cover"
      ],
      [
-      "Total cover",
+      "Cover",
       "Can't be targeted directly by an attack or a spell"
      ]
     ]
@@ -194403,12 +194387,12 @@
     ],
     "rows": [
      [
-      "Lightly obscured",
+      "Vision and Light",
       "Creatures have disadvantage on Wisdom (Perception) checks that rely on sight.",
-      "Dim light, patchy fog, moderate foliage"
+      "Vision and Light, patchy fog, moderate foliage"
      ],
      [
-      "Heavily obscured",
+      "Vision and Light",
       "Vision is blocked; creatures are effectively blinded.",
       "Darkness, opaque fog, dense foliage"
      ]
@@ -204984,7 +204968,7 @@
        "min": 1,
        "max": 1
       },
-      "Beacon. The bearer can use a bonus action to cause the item to shed bright light in a 10-foot radius and dim light for an additional 10 feet, or to extinguish the light."
+      "Beacon. The bearer can use a bonus action to cause the item to shed Vision and Light in a 10-foot radius and Vision and Light for an additional 10 feet, or to extinguish the light."
      ],
      [
       {
@@ -205372,7 +205356,7 @@
        "min": 16,
        "max": 16
       },
-      "Fey. The item is exquisitely crafted from the finest materials and glows with a pale radiance in moonlight, shedding dim light in a 5-foot radius Any metal in the item is silver or mithral, rather than iron or steel."
+      "Fey. The item is exquisitely crafted from the finest materials and glows with a pale radiance in moonlight, shedding Vision and Light in a 5-foot radius Any metal in the item is silver or mithral, rather than iron or steel."
      ],
      [
       {
@@ -227428,11 +227412,11 @@
     ],
     "rows": [
      [
-      "Clear water, bright light",
+      "Clear water, Vision and Light",
       "60 ft."
      ],
      [
-      "Clear water, dim light",
+      "Clear water, Vision and Light",
       "30 ft."
      ],
      [
@@ -228619,7 +228603,7 @@
        "min": 66,
        "max": 70
       },
-      "One random creature in the region crackles with sparks of light for 1 hour. For the duration, the creature magically sheds bright light in a 10-foot radius and dim light for an additional 10 feet. In addition, any creature it touches (requiring an unarmed strike if the target is unwilling) takes 1d6 force damage."
+      "One random creature in the region crackles with sparks of light for 1 hour. For the duration, the creature magically sheds Vision and Light in a 10-foot radius and Vision and Light for an additional 10 feet. In addition, any creature it touches (requiring an unarmed strike if the target is unwilling) takes 1d6 force damage."
      ],
      [
       {
@@ -236664,7 +236648,7 @@
        "min": 5,
        "max": 5
       },
-      "Harmless fireflies gather and flit around one character in the region, sharing that character's space for 1 hour. The fireflies generate bright light out to a range of 10 feet and dim light for an additional 10 feet. While surrounded by the fireflies, the character feels a profound sense of purpose and gains the benefit of the bless spell."
+      "Harmless fireflies gather and flit around one character in the region, sharing that character's space for 1 hour. The fireflies generate Vision and Light out to a range of 10 feet and Vision and Light for an additional 10 feet. While surrounded by the fireflies, the character feels a profound sense of purpose and gains the benefit of the bless spell."
      ],
      [
       {
