@@ -931,7 +931,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Choose a Humanoid of your size that you can see in range. You physically transform to become an exact duplicate of that creature for the duration. Even a thorough physical examination fails to find any differences between you and the target."
+    "value": "Choose a Humanoid of your size that you can see. You physically transform to become an exact duplicate of that creature for the duration. Even a thorough physical examination fails to find any differences between you and the target."
    },
    {
     "name": "",
@@ -3585,7 +3585,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A creature becomes filled with spite as it tries to spread the disease to its enemies. It takes the Dash action and moves toward its nearest enemy by the safest route on each of its turns unless there is nowhere to move. When an enemy is within 5 feet of it, it makes an Unarmed Strike against that target."
+    "value": "A creature becomes filled with spite as it tries to spread the disease to its enemies. It takes the Dash action and moves toward its nearest enemy by the safest route on each of its turns unless it is within 5 feet of a hostile creature."
    }
   ],
   "classes": [
@@ -4223,7 +4223,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You conjure a cloud of fine dust that harms supernatural creatures. You create a 30-foot-radius Sphere of dust centered on a point within range. Choose a creature type other than Beast or Humanoid. Each creature of the chosen type within the Sphere take 20 Force damage. A creature also takes this damage when the Sphere moves into its space and when it enters the Sphere or ends its turn there. A creature can take this damage only once per turn."
+    "value": "You conjure a cloud of fine dust that harms supernatural creatures. You create a 30-foot-radius Sphere of dust centered on a point within range. Choose a creature type other than Beast or Humanoid. Each creature of the chosen type within the Sphere take 20 Force damage. A creature also takes this damage when it enters the Sphere or ends its turn there. A creature can take this damage only once per turn."
    }
   ],
   "classes": [
@@ -4609,7 +4609,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes **4d6** Slashing damage at the start of each of their turns, and they have Disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the Prone condition, taking another **2d6** Slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity saving throw, ending the spell on itself on a success."
+    "value": "A horde of spectral cats rushes from your outstretched hands to swarm over an area. You target creatures of your choice in a 20-foot-radius Sphere centered on a point within range. Each target must succeed on a Dexterity saving throw or be affected by this spell for the duration. An affected target takes **4d6** Slashing damage at the start of each of their turns, and they have Disadvantage on all ability checks and attack rolls. If they attempt to move, they must make a Constitution saving throw or gain the Prone condition, taking another **2d6** Slashing damage from the startled cats. At the end of their turn an affected creature makes another Dexterity saving throw, ending the spell on itself on a success."
    },
    {
     "name": "Using a Higher-Level Spell Slot",
@@ -4924,7 +4924,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You conjure a horrid tendril of Yog-Sothoth into reality to batter your foe. One creature of your choice that you can see within range makes a Strength saving throw. On a failed save, it takes **8d6** Necrotic damage, has the Prone condition, and you move it up to 40 feet in any direction within the spell's range. On a successful save, it takes **8d6** Necrotic damage only."
+    "value": "You conjure a horrid tendril of Yog-Sothoth into reality to batter your foe. One creature of your choice that you can see within range makes a Strength saving throw. On a failed save, it takes **8d6** Necrotic damage, has the Prone condition, and you move it up to 40 feet in any direction. On a successful save, it takes **8d6** Necrotic damage only."
    }
   ],
   "classes": [
@@ -8750,7 +8750,7 @@
      "caption": "",
      "entries": [
       "**The Darkness Hides Terrors**: Creatures of your choice in the area must make Dexterity saving throws. A target takes **4d8** Psychic damage on a failed save and must use a reaction to move as far away as it can from the point you chose, using the safest route. On a successful save, the target takes half as much damage only.",
-      "**Tomb of Shadows**: Creatures of your choice in the area must make Constitution saving throws. A target takes **4d8** Necrotic damage on a failed save and its Speed is reduced by 20 feet. On a successful save, the target takes half as much damage only."
+      "**Tomb of Shadows**: Creatures of your choice in the area must make Constitution saving throws. A target takes **4d8** Necrotic damage on a failed save and its Speed is reduced by 20 feet for 1 minute. On a successful save, the target takes half as much damage only."
      ]
     }
    },
