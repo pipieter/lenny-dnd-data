@@ -1853,7 +1853,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "This ornate silver tiara grants you power over certain flying creatures. While wearing the circlet, you can cast __Animal Messenger__ or Speak with Animals from it. A target isn't affected by these spells if it doesn't have a Fly Speed."
+    "value": "This ornate silver tiara grants you power over certain flying creatures. While wearing the circlet, you can cast __Animal Messenger__ or __Speak with Animals__ from it. A target isn't affected by these spells if it doesn't have a Fly Speed."
    },
    {
     "name": "",
@@ -5687,7 +5687,7 @@
    {
     "name": "Explode",
     "type": "text",
-    "value": "When you take the Attack action, you can replace one of your attacks with an explosion from this weapon's projectile. This explosion is a 5-foot-radius Sphere centered on a point you choose within the weapon's normal range. Each creature within the Sphere makes a Dexterity saving throw (DC 8 plus your Strength or Dexterity modifier and your Proficiency Bonus). On a failed save, a creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. On a successful save, a creature takes half as much damage. You can create an explosion only once per turn."
+    "value": "When you take the Attack action, you can replace one of your attacks with an explosion from this weapon's projectile. This explosion is a 5-foot-radius Sphere centered on a point you choose within the weapon's normal range. Each creature within the Sphere makes a Dexterity saving throw (DC 8 plus your Strength or Dexterity modifier and your Proficiency Bonus). On a failed save, a creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. On a successful save, a creature takes half as much damage. You can create this explosion only once per turn."
    }
   ],
   "properties": [
@@ -6196,7 +6196,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "In addition, while wearing the helmet, you can cast the __Polymorph__ spell from it, transforming yourself into a Triceratops. Once this property is used, it can't be used again until 2 days have passed."
+    "value": "In addition, while wearing the helmet, you can cast the __Polymorph__ spell from it, transforming yourself into a __Triceratops__. Once this property is used, it can't be used again until 2 days have passed."
    }
   ],
   "properties": [],
@@ -7953,6 +7953,11 @@
     "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
    },
    {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
     "name": "Slow",
     "type": "text",
     "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
@@ -7962,6 +7967,7 @@
    "**1d4** Slashing",
    "finesse",
    "reach",
+   "light",
    "mastery: slow"
   ],
   "reprint": null
@@ -9584,6 +9590,11 @@
     "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
     "name": "Topple",
     "type": "text",
     "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
@@ -9592,6 +9603,7 @@
   "properties": [
    "**1d6** Bludgeoning",
    "versatile (1d8)",
+   "finesse",
    "mastery: topple"
   ],
   "reprint": null
@@ -9637,7 +9649,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Once a creature's death has been predicted in this way, all future Doomsday Cookie papers will predict the same outcome for that creature. If a creature dies in a way foretold by the cookie (at the GM's discretion), the cookie's paper transforms into a Spell Scroll of Revivify. This scroll can only be used on the creature whose passing it foretold. If the scroll is unused within 1 minute, it crumbles into flour."
+    "value": "Once a creature's death has been predicted in this way, all future Doomsday Cookie papers will predict the same outcome for that creature. If a creature dies in a way foretold by the cookie (at the GM's discretion), the cookie's paper transforms into a Spell Scroll of __Revivify__. This scroll can only be used on the creature whose passing it foretold. If the scroll is unused within 1 minute, it crumbles into flour."
    },
    {
     "name": "",
@@ -10408,7 +10420,7 @@
    {
     "name": "Summon Giant Eagle",
     "type": "text",
-    "value": "You can focus on the glove for 1 hour to magically summon a Giant Eagle that appears in an unoccupied space that you can see within 30 feet of you. It disappears when it drops to 0 Hit Points, after 12 hours, or if you dismiss it (no action required). Once the creature disappears, it can't be summoned again until 2 days have passed."
+    "value": "You can focus on the glove for 1 hour to magically summon a __Giant Eagle__ that appears in an unoccupied space that you can see within 30 feet of you. It disappears when it drops to 0 Hit Points, after 12 hours, or if you dismiss it (no action required). Once the creature disappears, it can't be summoned again until 2 days have passed."
    },
    {
     "name": "",
@@ -12271,7 +12283,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "While holding the wand, you can expend 1 or more charges to cast either Flame Blade (2 charges) or Produce Flame (0 charges, or 1 charge to cast at level 5) from it, using an attack bonus of +5. When you cast the __Flame Blade__ spell using this wand, the sword's fiery blade appears above the wand's haft instead of in a free hand."
+    "value": "While holding the wand, you can expend 1 or more charges to cast either __Flame Blade__ (2 charges) or __Produce Flame__ (0 charges, or 1 charge to cast at level 5) from it, using an attack bonus of +5. When you cast the __Flame Blade__ spell using this wand, the sword's fiery blade appears above the wand's haft instead of in a free hand."
    },
    {
     "name": "",
@@ -15131,7 +15143,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "While holding the hat, you can expend 1 charge to cast the __Find Familiar__ spell from it as a Magic action instead of its normal casting time, pulling the familiar from the hat. The summoned familiar must take the form of either a rabbit or dove, using the statistics of a Weasel or Owl, respectively. The familiar remains for up to 1 minute and can't be used to deliver spells."
+    "value": "While holding the hat, you can expend 1 charge to cast the __Find Familiar__ spell from it as a Magic action instead of its normal casting time, pulling the familiar from the hat. The summoned familiar must take the form of either a rabbit or dove, using the statistics of a __Weasel__ or __Owl__, respectively. The familiar remains for up to 1 minute and can't be used to deliver spells."
    },
    {
     "name": "",
@@ -15212,6 +15224,21 @@
     "value": "The rope and boulder that make this weapon are magically attached and can't be separated. The boulder weighs 200 pounds but is effortless for you to lift once you attune to the weapon."
    },
    {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
     "name": "Sap",
     "type": "text",
     "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
@@ -15219,6 +15246,9 @@
   ],
   "properties": [
    "**1d8** Bludgeoning",
+   "reach",
+   "two-handed",
+   "heavy",
    "mastery: sap"
   ],
   "reprint": null
@@ -15723,6 +15753,11 @@
     "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
     "name": "Topple",
     "type": "text",
     "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
@@ -15732,6 +15767,7 @@
    "**1d8** Piercing",
    "thrown (20/60 ft.)",
    "versatile (1d10)",
+   "heavy",
    "mastery: topple"
   ],
   "reprint": null
@@ -20802,6 +20838,11 @@
     "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
     "name": "Sap",
     "type": "text",
     "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
@@ -20811,6 +20852,7 @@
    "**1d6** Piercing",
    "thrown (20/60 ft.)",
    "versatile (1d8)",
+   "light",
    "mastery: sap"
   ],
   "reprint": null
@@ -21337,6 +21379,11 @@
     "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
     "name": "Push",
     "type": "text",
     "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
@@ -21345,6 +21392,7 @@
   "properties": [
    "**1d8** Bludgeoning",
    "two-handed",
+   "heavy",
    "mastery: push"
   ],
   "reprint": null
@@ -22380,6 +22428,11 @@
     "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
     "name": "Topple",
     "type": "text",
     "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
@@ -22388,6 +22441,7 @@
   "properties": [
    "**1d8** Slashing",
    "versatile (1d10)",
+   "thrown ({{item.range}} ft.)",
    "mastery: topple"
   ],
   "reprint": null
@@ -24657,11 +24711,6 @@
     "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
    },
    {
-    "name": "Loading",
-    "type": "text",
-    "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
-   },
-   {
     "name": "Two-Handed",
     "type": "text",
     "value": "A Two-Handed weapon requires two hands when you attack with it."
@@ -24675,7 +24724,6 @@
   "properties": [
    "**1d8** Force",
    "ammunition (range 80/320 ft.; bolt)",
-   "loading",
    "two-handed",
    "mastery: slow"
   ],
@@ -31540,6 +31588,11 @@
     "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
     "name": "Sap",
     "type": "text",
     "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
@@ -31548,6 +31601,7 @@
   "properties": [
    "**1d8** Slashing",
    "versatile (1d10)",
+   "finesse",
    "mastery: sap"
   ],
   "reprint": null
@@ -32649,6 +32703,11 @@
     "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
     "name": "Topple",
     "type": "text",
     "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
@@ -32657,6 +32716,7 @@
   "properties": [
    "**1d6** Bludgeoning",
    "versatile (1d8)",
+   "finesse",
    "mastery: topple"
   ],
   "reprint": null
@@ -34396,11 +34456,6 @@
     "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
    },
    {
-    "name": "Loading",
-    "type": "text",
-    "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
-   },
-   {
     "name": "Vex",
     "type": "text",
     "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
@@ -34410,7 +34465,6 @@
    "**1d6** Piercing",
    "ammunition (range 30/120 ft.; bolt)",
    "light",
-   "loading",
    "mastery: vex"
   ],
   "reprint": null
@@ -35675,6 +35729,11 @@
     "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
     "name": "Sap",
     "type": "text",
     "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
@@ -35683,6 +35742,7 @@
   "properties": [
    "**1d8** Slashing",
    "versatile (1d10)",
+   "finesse",
    "mastery: sap"
   ],
   "reprint": null
