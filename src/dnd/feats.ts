@@ -91,13 +91,14 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
 const FeatCategoryMap: Record<string, string> = {
     G: 'General Feat',
     O: 'Origin Feat',
-    FS: 'Fighting Style Feat',
+    FS: 'Fighting Style',
     'FS:P': 'Fighting Style Replacement Feat (Paladin)',
     'FS:R': 'Fighting Style Replacement Feat (Ranger)',
-    EB: 'Epic Boon Feat',
+    EB: 'Epic Boon',
     D: 'Dragonmark',
     PlanarPact: 'Planar Pact',
     PPact: 'Planar Pact',
+    DG: "Dark Gift"
 };
 
 function getFeatPrerequisites(feat: Feat): string | null {
