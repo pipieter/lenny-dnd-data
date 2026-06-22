@@ -1,5 +1,41 @@
 [
  {
+  "name": "Aberrant Anatomy",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#aberrant%20anatomy_rhw",
+  "type": "Dark Gift",
+  "prerequisite": "Ravenloft Campaign",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Exposure to alien horrors like those of the Far Realm has warped your physical form in supernatural ways. You gain the following features."
+   },
+   {
+    "name": "Breathless",
+    "type": "text",
+    "value": "You can hold your breath for 1 hour."
+   },
+   {
+    "name": "Extrasensory Perception",
+    "type": "text",
+    "value": "You have proficiency in the *Perception* skill, if you lack it. You also gain Expertise in that skill."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, you have Blindsight with a range of 15 feet."
+   },
+   {
+    "name": "Warping Flesh",
+    "type": "text",
+    "value": "Immediately after you make a D20 Test and roll a 1 on the d20, the aberrant influence infecting your form flares, wrenching control of your flesh. Make a Constitution saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you have the Stunned condition until the end of your next turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Aberrant Dragonmark",
   "source": "EFA",
   "url": "https://5e.tools/feats.html#aberrant%20dragonmark_efa",
@@ -376,7 +412,7 @@
   "name": "Archery",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#archery_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -528,7 +564,7 @@
   "name": "Blind Fighting",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#blind%20fighting_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -601,7 +637,7 @@
   "name": "Boon of Blazing Dawn",
   "source": "ABH",
   "url": "https://5e.tools/feats.html#boon%20of%20blazing%20dawn_abh",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -632,7 +668,7 @@
   "name": "Boon of Bloodshed",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20bloodshed_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -658,7 +694,7 @@
   "name": "Boon of Bountiful Health",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20bountiful%20health_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -684,7 +720,7 @@
   "name": "Boon of Combat Prowess",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20combat%20prowess_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -705,7 +741,7 @@
   "name": "Boon of Communication",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20communication_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
   "description": [
@@ -736,7 +772,7 @@
   "name": "Boon of Desperate Resilience",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20desperate%20resilience_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
   "description": [
@@ -757,7 +793,7 @@
   "name": "Boon of Dimensional Travel",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20dimensional%20travel_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -778,7 +814,7 @@
   "name": "Boon of Energy Resistance",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20energy%20resistance_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -804,7 +840,7 @@
   "name": "Boon of Exquisite Radiance",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20exquisite%20radiance_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -830,7 +866,7 @@
   "name": "Boon of Fate",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20fate_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -851,7 +887,7 @@
   "name": "Boon of Fluid Forms",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20fluid%20forms_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
   "description": [
@@ -887,7 +923,7 @@
   "name": "Boon of Fortitude",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20fortitude_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -908,7 +944,7 @@
   "name": "Boon of Fortune's Favor",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20fortune's%20favor_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -929,7 +965,7 @@
   "name": "Boon of Irresistible Offense",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20irresistible%20offense_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
   "description": [
@@ -955,7 +991,7 @@
   "name": "Boon of Looming Shadows",
   "source": "ABH",
   "url": "https://5e.tools/feats.html#boon%20of%20looming%20shadows_abh",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -981,7 +1017,7 @@
   "name": "Boon of Misty Escape",
   "source": "ABH",
   "url": "https://5e.tools/feats.html#boon%20of%20misty%20escape_abh",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
   "description": [
@@ -1007,7 +1043,7 @@
   "name": "Boon of Poison Mastery",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20poison%20mastery_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -1033,7 +1069,7 @@
   "name": "Boon of Recovery",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20recovery_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -1059,7 +1095,7 @@
   "name": "Boon of Revelry",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20revelry_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
   "description": [
@@ -1090,7 +1126,7 @@
   "name": "Boon of Siberys",
   "source": "EFA",
   "url": "https://5e.tools/feats.html#boon%20of%20siberys_efa",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+ and Eberron Campaign",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -1173,7 +1209,7 @@
   "name": "Boon of Skill",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20skill_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -1199,7 +1235,7 @@
   "name": "Boon of Speed",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20speed_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -1225,7 +1261,7 @@
   "name": "Boon of Spell Recall",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20spell%20recall_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+ and Spellcasting or Pact Magic Feature",
   "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
   "description": [
@@ -1246,7 +1282,7 @@
   "name": "Boon of Terror",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20terror_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase your Charisma score by 1, to a maximum of 30.",
   "description": [
@@ -1277,7 +1313,7 @@
   "name": "Boon of the Bright Sun",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20the%20bright%20sun_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase your Constitution, Wisdom or Charisma score by 1, to a maximum of 20.",
   "description": [
@@ -1303,7 +1339,7 @@
   "name": "Boon of the Furious Storm",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20the%20furious%20storm_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+ and Spellcasting or Pact Magic Feature",
   "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
   "description": [
@@ -1329,7 +1365,7 @@
   "name": "Boon of the Night Spirit",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20the%20night%20spirit_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -1355,7 +1391,7 @@
   "name": "Boon of the Soul Drinker",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#boon%20of%20the%20soul%20drinker_frhof",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -1381,7 +1417,7 @@
   "name": "Boon of Truesight",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#boon%20of%20truesight_xphb",
-  "type": "Epic Boon Feat",
+  "type": "Epic Boon",
   "prerequisite": "Level 19+",
   "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
   "description": [
@@ -1941,7 +1977,7 @@
   "name": "Defense",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#defense_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -2253,7 +2289,7 @@
   "name": "Dueling",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#dueling_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -2375,6 +2411,42 @@
       "Whenever you take the Dodge action in combat, you can spend one Hit Die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1)."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Echoing Soul",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#echoing%20soul_rhw",
+  "type": "Dark Gift",
+  "prerequisite": "Ravenloft Campaign",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You experience echoes from a past or alternate life. You gain the following features."
+   },
+   {
+    "name": "Channeled Prowess",
+    "type": "text",
+    "value": "You have proficiency in two skills of your choice."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, choose one skill you have proficiency in. You gain Expertise in that skill. Whenever you finish a Long Rest, you can change your choice for this benefit."
+   },
+   {
+    "name": "Inherent Tongues",
+    "type": "text",
+    "value": "You know one additional language of your choice, which you choose from the language tables in the Player's Handbook."
+   },
+   {
+    "name": "Intrusive Echoes",
+    "type": "text",
+    "value": "Immediately after you make a D20 Test and roll a 1 on the d20, memories and sensations from your soul's other life threaten to overtake you. Make a Constitution saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you have the Incapacitated condition until the end of your next turn. While you are Incapacitated in this way, your Speed is halved."
    }
   ],
   "reprint": null
@@ -2779,6 +2851,42 @@
   "reprint": null
  },
  {
+  "name": "Gathered Whispers",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#gathered%20whispers_rhw",
+  "type": "Dark Gift",
+  "prerequisite": "Ravenloft Campaign",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You are haunted by a cacophony of whispering spirits only you can hear. You gain the following features."
+   },
+   {
+    "name": "Spirit Whispers",
+    "type": "text",
+    "value": "You learn the __Message__ spell and can cast it without Material components. Additionally, you always have the __Augury__ spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast the spell using any spell slots you have."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Intelligence, Wisdom, or Charisma is your spellcasting ability for this benefit (choose when you select this feat)."
+   },
+   {
+    "name": "Unearthly Scream",
+    "type": "text",
+    "value": "When you are hit by an attack roll, you can take a Reaction to channel your haunting spirits into a protective, otherworldly scream. You can add your Proficiency Bonus to your AC against that attack, potentially causing it to miss. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Voices from Beyond",
+    "type": "text",
+    "value": "Immediately after you make a D20 Test and roll a 1 on the d20, the haunting voices rise to a ghastly volume. Make a Wisdom saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you have the Deafened condition until the end of your next turn. While Deafened, you have Disadvantage on ability checks and attack rolls."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Genie Magic",
   "source": "FRHoF",
   "url": "https://5e.tools/feats.html#genie%20magic_frhof",
@@ -2959,7 +3067,7 @@
   "name": "Great Weapon Fighting",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#great%20weapon%20fighting_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -3782,7 +3890,7 @@
   "name": "Interception",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#interception_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -4082,6 +4190,63 @@
      "entries": [
       "You learn three languages of your choice.",
       "You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Living Shadow",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#living%20shadow_rhw",
+  "type": "Dark Gift",
+  "prerequisite": "Ravenloft Campaign",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The shadow you cast is animate and ever-present—sometimes it even acts according to its own will. You gain the following features."
+   },
+   {
+    "name": "Grasping Shadow",
+    "type": "text",
+    "value": "You learn the __Mage Hand__ spell and can cast it without spell components. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat)."
+   },
+   {
+    "name": "Lengthened Strike",
+    "type": "text",
+    "value": "When you make a melee attack roll as part of the Attack or Magic action on your turn, you can increase your reach for that attack by 10 feet, as your shadow stretches to aid you. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Ominous Will",
+    "type": "text",
+    "value": "Immediately after you make a D20 Test and roll a 1 on the d20, your shadow attempts to exert its will. Make a Wisdom saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you have the Incapacitated condition until the start of your next turn, at which point you must roll on the Shadow's Will table to determine what you do during that turn."
+   },
+   {
+    "name": "Shadow's Will",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Shadow's Will",
+     "headers": [
+      "1d8",
+      "Behavior"
+     ],
+     "rows": [
+      [
+       "1",
+       "You don't take an action or a Bonus Action, and you use all your movement to move. Roll 1d4 for the direction: 1, north; 2, east; 3, south; or 4, west."
+      ],
+      [
+       "2-6",
+       "You don't move or take a Bonus Action, and you take the Attack action to make one melee attack against a random creature within reach. If none are within reach, you take no action."
+      ],
+      [
+       "7-8",
+       "You have the Prone condition, and your turn ends."
+      ]
      ]
     }
    }
@@ -5318,6 +5483,37 @@
   "reprint": null
  },
  {
+  "name": "Mist Walker",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#mist%20walker_rhw",
+  "type": "Dark Gift",
+  "prerequisite": "Ravenloft Campaign",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You know how to slip through the Mists' grasp, but this freedom comes at a price: If you remain in one area for too long, the Mists find you and drain your life force. You gain the following features."
+   },
+   {
+    "name": "Domain Traveler",
+    "type": "text",
+    "value": "When you enter the Mists intent on reaching a specific domain, you are treated as if you possess a Mist talisman keyed to that domain. To use this feature, you must know the name of the domain you have chosen as your destination, but you don't need to have previously visited that land. This trait doesn't allow you to bypass domain borders closed by a Darklord's will."
+   },
+   {
+    "name": "Mist Walk",
+    "type": "text",
+    "value": "When you take damage or fail a saving throw to avoid or end the Grappled or Restrained condition, you can take a Reaction and teleport up to 15 feet to an unoccupied space you can see. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Poisoned Roots",
+    "type": "text",
+    "value": "When you finish a Long Rest, the world around you in a 10-mile radius becomes a siphon that leeches away at your vitality. Whenever you finish a Short Rest in that area, make a Constitution saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you get no benefits from finishing that rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Mobile",
   "source": "PHB",
   "url": "https://5e.tools/feats.html#mobile_phb",
@@ -5956,7 +6152,7 @@
   "name": "Protection",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#protection_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -6490,6 +6686,80 @@
   "reprint": null
  },
  {
+  "name": "Second Skin",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#second%20skin_rhw",
+  "type": "Dark Gift",
+  "prerequisite": "Ravenloft Campaign",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "There is another side of you that most people never see: a beast, a terrifying avenger, or a walking nightmare. You gain the following features."
+   },
+   {
+    "name": "Alternate Form",
+    "type": "text",
+    "value": "You always have the __Alter Self__ spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you cast __Alter Self__ without a spell slot using this feature, it doesn't require *Concentration*."
+   },
+   {
+    "name": "Involuntary Change",
+    "type": "text",
+    "value": "Certain circumstances can involuntarily trigger your transformation. When you select this feat, roll on the Change Catalyst table to determine what triggers your change."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After you experience the catalyst, at the start of your next turn, make a Charisma saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you immediately use Alternate Form to cast __Alter Self__ without a spell slot. If you've already expended the use of that feature, you instead have the Stunned condition until the start of your next turn."
+   },
+   {
+    "name": "Change Catalyst",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Change Catalyst",
+     "headers": [
+      "1d6",
+      "Catalyst"
+     ],
+     "rows": [
+      [
+       "1",
+       "Seeing a particular phase of the moon"
+      ],
+      [
+       "2",
+       "Smelling the scent of a certain type of flower"
+      ],
+      [
+       "3",
+       "Hearing temple bells ringing"
+      ],
+      [
+       "4",
+       "Hearing a particular melody"
+      ],
+      [
+       "5",
+       "Touching pure silver with your bare skin"
+      ],
+      [
+       "6",
+       "Seeing someone who resembles a specific individual"
+      ]
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Sentinel",
   "source": "PHB",
   "url": "https://5e.tools/feats.html#sentinel_phb",
@@ -6648,6 +6918,22 @@
     "name": "Curse Magic",
     "type": "text",
     "value": "When a creature that you've cursed with __Hex__ hits you with an attack roll, the creature takes Psychic damage equal to your Proficiency Bonus. A creature takes this damage only once per turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Sharp Eye",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#sharp%20eye_rhw",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you take the Search or Study action, you can give yourself Advantage on any ability check made as part of that action. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest. If the check fails, the use of this feature isn't expended."
    }
   ],
   "reprint": null
@@ -7420,6 +7706,37 @@
   "reprint": null
  },
  {
+  "name": "Survivor",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#survivor_rhw",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Hypervigilance",
+    "type": "text",
+    "value": "Whenever you roll Initiative, you can reroll the d20 if the number rolled is 9 or lower. You must use the new roll."
+   },
+   {
+    "name": "Steel Yourself",
+    "type": "text",
+    "value": "When you fail a saving throw to avoid or end the Charmed or Frightened condition, you can take a Reaction to add a bonus to the roll, potentially causing it to succeed. The bonus is equal to your Proficiency Bonus."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once you take this Reaction, you can't do so again until you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Svirfneblin Magic",
   "source": "MTF",
   "url": "https://5e.tools/feats.html#svirfneblin%20magic_mtf",
@@ -7436,6 +7753,52 @@
     "name": "",
     "type": "text",
     "value": "Intelligence is your spellcasting ability for these spells, and you cast them at their lowest possible levels."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Symbiotic Being",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#symbiotic%20being_rhw",
+  "type": "Dark Gift",
+  "prerequisite": "Ravenloft Campaign",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A second being resides within your body, offering knowledge and assistance while furthering its own agenda. You gain the following features."
+   },
+   {
+    "name": "Entwined Existence",
+    "type": "text",
+    "value": "The symbiote can't be targeted. If you die, so does your symbiote. If you are returned to life, your symbiote also revives."
+   },
+   {
+    "name": "Second Mind",
+    "type": "text",
+    "value": "You gain proficiency in one of the following skills: *Arcana*, *Deception*, *History*, *Intimidation*, *Insight*, *Investigation*, *Nature*, *Religion*, *Perception*, or *Persuasion*. You also know one additional language of your choice, chosen from the language tables in the Player's Handbook."
+   },
+   {
+    "name": "Sustained Symbiosis",
+    "type": "text",
+    "value": "When you fail a saving throw, you can take a Reaction and expend one of your Hit Dice. Roll the die and add the number rolled to the saving throw, potentially turning the failure into a success."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Symbiotic Agenda",
+    "type": "text",
+    "value": "Immediately after you make a D20 Test and roll a 1 on the d20, your symbiote attempts to assert control. Make a Charisma saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you have the Charmed condition for 1d12 hours. While Charmed, you must try to follow the symbiote's commands and further its goals, as determined by the DM. Whenever you take damage, you can repeat this save, ending the effect on a success."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the DM's discretion, you might make this saving throw whenever you act contrary to the symbiote's agenda."
    }
   ],
   "reprint": null
@@ -7629,7 +7992,7 @@
   "name": "Thrown Weapon Fighting",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#thrown%20weapon%20fighting_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -7653,6 +8016,32 @@
     "name": "",
     "type": "text",
     "value": "When an ally you can see within 60 feet of yourself expends Heroic Inspiration, you can gain Heroic Inspiration if you lack it. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Touch of Death",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#touch%20of%20death_rhw",
+  "type": "Dark Gift",
+  "prerequisite": "Ravenloft Campaign",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Deathly power resides within you, bursting out at the slightest provocation. You gain the following features."
+   },
+   {
+    "name": "Death Touch",
+    "type": "text",
+    "value": "You learn the __Chill Touch__ spell and can cast it without spell components. Necrotic damage you deal with this spell ignores __Resistance__. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat)."
+   },
+   {
+    "name": "Pull of the Grave",
+    "type": "text",
+    "value": "You have Disadvantage on Death Saving Throws."
    }
   ],
   "reprint": null
@@ -7723,7 +8112,7 @@
   "name": "Two-Weapon Fighting",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#two-weapon%20fighting_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -7765,7 +8154,7 @@
   "name": "Unarmed Fighting",
   "source": "XPHB",
   "url": "https://5e.tools/feats.html#unarmed%20fighting_xphb",
-  "type": "Fighting Style Feat",
+  "type": "Fighting Style",
   "prerequisite": "Fighting Style",
   "abilityIncrease": null,
   "description": [
@@ -7964,6 +8353,42 @@
     "name": "Somatic Components",
     "type": "text",
     "value": "You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Watchers",
+  "source": "RHW",
+  "url": "https://5e.tools/feats.html#watchers_rhw",
+  "type": "Dark Gift",
+  "prerequisite": "Ravenloft Campaign",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Something unnatural is always watching you, taking the form of scurrying vermin and other eerie creatures. You gain the following features."
+   },
+   {
+    "name": "Borrowed Eyes",
+    "type": "text",
+    "value": "You always have the __Beast Sense__ and __Speak with Animals__ spells prepared. You can cast each spell without a spell slot, and you must finish a Long Rest before you can cast it in this way again. You can also cast these spells using spell slots you have of the appropriate level."
+   },
+   {
+    "name": "Heightened Suspicion",
+    "type": "text",
+    "value": "Whenever you take the Search action, you can roll 1d4 and add the number rolled to any ability check made as part of that action."
+   },
+   {
+    "name": "Incessant Watchers",
+    "type": "text",
+    "value": "You have Disadvantage on saving throws made against the __Scrying__ spell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, immediately after you make a D20 Test and roll a 1 on the d20, paranoia threatens to overwhelm you. Make a Wisdom saving throw (DC 13 plus your Proficiency Bonus). On a failed save, you have Disadvantage on D20 Tests for 1 minute. You can repeat the save at the end of each of your turns, ending the effect early on a success."
    }
   ],
   "reprint": null

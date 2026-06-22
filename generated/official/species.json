@@ -2198,9 +2198,9 @@
  },
  {
   "name": "Dhampir",
-  "source": "ABH",
-  "url": "https://5e.tools/races.html#dhampir_abh",
-  "image": "https://5e.tools/img/races/ABH/Dhampir.webp",
+  "source": "RHW",
+  "url": "https://5e.tools/races.html#dhampir_rhw",
+  "image": "https://5e.tools/img/races/RHW/Dhampir.webp",
   "sizes": [
    "Small",
    "Medium"
@@ -2229,7 +2229,7 @@
    {
     "name": "Vampiric Bite",
     "type": "text",
-    "value": "When you use your Unarmed Strike and deal damage, you can choose to bite with your fangs. You deal Piercing damage equal to 1d4 plus your Constitution modifier instead of the normal damage of an Unarmed Strike."
+    "value": "When you use your Unarmed Strike and deal damage, you can choose to bite with your fangs. You deal Piercing damage equal to **1d4** plus your Constitution modifier instead of the normal damage of an Unarmed Strike."
    },
    {
     "name": "",
@@ -2456,7 +2456,7 @@
   "skillProficiencies": null,
   "reprint": {
    "name": "Dhampir",
-   "source": "ABH",
+   "source": "RHW",
    "tag": null
   }
  },
@@ -7875,6 +7875,54 @@
  },
  {
   "name": "Hexblood",
+  "source": "RHW",
+  "url": "https://5e.tools/races.html#hexblood_rhw",
+  "image": "https://5e.tools/img/races/RHW/Hexblood.webp",
+  "sizes": [
+   "Small",
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Fey",
+  "description": [
+   {
+    "name": "Darkvision",
+    "type": "text",
+    "value": "You have Darkvision with a range of 60 feet."
+   },
+   {
+    "name": "Eerie Token",
+    "type": "text",
+    "value": "As a Bonus Action, you can create a magical token by harmlessly removing a lock of hair, detaching a nail, or using some other method. While the token exists, you gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Distant Message**: As a Magic action, you can send a telepathic message of 25 words or fewer to a creature holding or carrying the token, as long as you are within 10 miles of it.",
+      "**Remote Viewing**: If you are within 10 miles of the token, you can take a Magic action to extend your senses through the token for 1 minute, until you have the Incapacitated condition, or until you end this state (no action required). During this state, you can see and hear from the token as if you were located where it is. When this state ends, the token is harmlessly destroyed.\nUnless the token is destroyed early, it lasts until you finish a Long Rest. Once you create a token using this feature, you can't do so again until you finish a Long Rest.",
+      "**Hex Magic**: You always have the __Disguise Self__ and __Hex__ spells prepared. You can cast each spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select this species)."
+     ]
+    }
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Hexbloods are individuals infused with fey magic as a result of eldritch energy or mysterious witchcraft. Many hexbloods are transformed into such beings after making a deal with a powerful hag, but other strange forces can result in the birth of a hexblood. A hexblood's strange fey power manifests as eerie clairvoyance and beguiling magic."
+   }
+  ],
+  "skillProficiencies": null,
+  "reprint": null
+ },
+ {
+  "name": "Hexblood",
   "source": "VRGR",
   "url": "https://5e.tools/races.html#hexblood_vrgr",
   "image": "https://5e.tools/img/races/VRGR/Hexblood.webp",
@@ -8014,7 +8062,11 @@
    "options": "any",
    "amount": 2
   },
-  "reprint": null
+  "reprint": {
+   "name": "Hexblood",
+   "source": "RHW",
+   "tag": null
+  }
  },
  {
   "name": "Hobgoblin",
@@ -10565,6 +10617,63 @@
   "reprint": null
  },
  {
+  "name": "Lupin",
+  "source": "RHW",
+  "url": "https://5e.tools/races.html#lupin_rhw",
+  "image": "https://5e.tools/img/races/RHW/Lupin.webp",
+  "sizes": [
+   "Small",
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Darkvision",
+    "type": "text",
+    "value": "You have Darkvision with a range of 60 feet."
+   },
+   {
+    "name": "Feral Pounce",
+    "type": "text",
+    "value": "Your Unarmed Strikes deal Slashing damage instead of Bludgeoning damage. In addition, when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can use both the Damage and the Shove options. You can use this benefit only once per turn."
+   },
+   {
+    "name": "Howl",
+    "type": "text",
+    "value": "As a Bonus Action, you let out an unearthly howl. Each creature of your choice within 15 feet of you must succeed on a Wisdom saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or have Disadvantage on attack rolls and saving throws until the start of your next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Werewolf Instincts",
+    "type": "text",
+    "value": "You have proficiency in the *Perception*, *Stealth*, or *Survival* skill."
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "With their bristling fur and snarling muzzles, lupins cast imposing shadows in the Mists. Lupins often arise from encounters with werewolves in which the curse of lycanthropy didn't fully take hold. Unlike true werewolves, lupins can't shift between wolf and humanoid form but are instead stuck as a hybrid transformation. This cursed wolflike physiology affords lupins bestial might, enhanced instincts, and a dread-inducing howl."
+   }
+  ],
+  "skillProficiencies": {
+   "options": [
+    "perception",
+    "stealth",
+    "survival"
+   ],
+   "amount": 1
+  },
+  "reprint": null
+ },
+ {
   "name": "Merfolk",
   "source": "DMG",
   "url": "https://5e.tools/races.html#merfolk_dmg",
@@ -11807,6 +11916,59 @@
  },
  {
   "name": "Reborn",
+  "source": "RHW",
+  "url": "https://5e.tools/races.html#reborn_rhw",
+  "image": "https://5e.tools/img/races/RHW/Reborn.webp",
+  "sizes": [
+   "Small",
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Escaped Death",
+    "type": "text",
+    "value": "You have Advantage on Death Saving Throws."
+   },
+   {
+    "name": "Everlasting",
+    "type": "text",
+    "value": "You don't gain Exhaustion levels from dehydration, malnutrition, or suffocation. You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness."
+   },
+   {
+    "name": "Knowledge from a Past Life",
+    "type": "text",
+    "value": "You gain proficiency in one skill of your choice."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, you can temporarily peer into the past to aid you in the present. When you fail an ability check, you can roll 1d6 and add the number rolled to the d20, potentially turning the failure into a success. You can do this a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Strange Endurance",
+    "type": "text",
+    "value": "You have Resistance to one of the following damage types of your choice: Cold, Necrotic, or Poison."
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Reborn are individuals who have died yet inexplicably still live. Some reborn exhibit the scars of fatal ends, their ashen flesh or bloodless veins making it clear that they've escaped death. Other reborn are marvels of magic or science, being stitched together from disparate beings or bearing mysterious minds in manufactured bodies. Whatever their origins, reborn know a new life and seek experiences and answers all their own."
+   }
+  ],
+  "skillProficiencies": {
+   "options": "any",
+   "amount": 1
+  },
+  "reprint": null
+ },
+ {
+  "name": "Reborn",
   "source": "VRGR",
   "url": "https://5e.tools/races.html#reborn_vrgr",
   "image": "https://5e.tools/img/races/VRGR/Reborn.webp",
@@ -11966,7 +12128,11 @@
    }
   ],
   "skillProficiencies": null,
-  "reprint": null
+  "reprint": {
+   "name": "Reborn",
+   "source": "RHW",
+   "tag": null
+  }
  },
  {
   "name": "Rimekin",

@@ -2248,6 +2248,165 @@
       "value": "If you are one of the map holders for your Adventurer's Atlas, you can cast __Find the Path__ without expending a spell slot, without preparing the spell, and without needing spell components. Once you use this benefit, you can't use it again until you finish a Long Rest."
      }
     ]
+   },
+   "Reanimator (RHW)": {
+    "3": [
+     {
+      "name": "Reanimator (RHW) Features",
+      "type": "text",
+      "value": "*Reassemble Corpses and Raise the Dead*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Reanimators defy the laws of nature in pursuit of gruesome experiments. These grim Artificers stitch together servants from disparate corpses, use foul magic to strengthen the living, and transform the art of necromancy into a terrifying science."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Reanimator Spells (EFA)__: When you reach an Artificer level specified in the Reanimator Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Reanimator Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Reanimator Spells",
+       "headers": [
+        "Artificer Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "False Life, Spare the Dying, Witch Bolt"
+        ],
+        [
+         "5",
+         "Blindness/Deafness, Enhance Ability"
+        ],
+        [
+         "9",
+         "Animate Dead, Lightning Bolt"
+        ],
+        [
+         "13",
+         "Blight, Death Ward"
+        ],
+        [
+         "17",
+         "Antilife Shell, Raise Dead"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Reanimator's Skill Set (EFA)__: You gain the following benefits."
+     },
+     {
+      "name": "Jolt to Life",
+      "type": "text",
+      "value": "When you cast __Spare the Dying__, you can modify the spell so that it sends a jolt of electricity through the target, reviving it. The target regains a number of Hit Points equal to your Artificer level, and each creature of your choice in a 10-foot Emanation originating from the target makes a Dexterity saving throw against your spell save DC, taking **2d4** Lightning damage on a failed save or half as much damage on a successful one."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can modify the spell this way a number of times equal to your Intelligence modifier, and you regain all expended uses when you finish a Long Rest. The Lightning damage of this feature increases by 1d4 when you reach Artificer levels 11 (3d4) and 17 (4d4)."
+     },
+     {
+      "name": "Reanimator's Tools",
+      "type": "text",
+      "value": "You gain proficiency with Alchemist's Supplies. If you already have this proficiency, you gain proficiency with one other type of Artisan's Tools of your choice."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Reanimated Companion (EFA)__: Using Tinker's Tools or another type of Artisan's Tools with which you have proficiency, you can take a Magic action to create a __Reanimated Companion__ through the power of necromancy and science. The companion manifests in an unoccupied space within 5 feet of you. You determine the companion's appearance; your choices don't affect the companion's game statistics."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The companion is Friendly to you and your allies and obeys you. It lasts until you finish a Long Rest or until you take a Magic action to dismiss it early, at which point it harmlessly collapses into a pile of viscera. It immediately drops to 0 Hit Points and dies (triggering its Death Burst trait) if you die."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you create a companion, you can't do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one companion at a time and can't create one while your companion is present."
+     },
+     {
+      "name": "The Companion in Combat",
+      "type": "text",
+      "value": "In combat, the companion acts during your turn. It can move and take its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action. If you have the Incapacitated condition, the companion acts on its own and isn't limited to the Dodge action."
+     }
+    ],
+    "5": [
+     {
+      "name": "Reanimator (RHW) Features",
+      "type": "text",
+      "value": "Whenever you create a __Reanimated Companion__, it gains one of the following options of your choice; choose when you create the companion."
+     },
+     {
+      "name": "Arcane Conduit",
+      "type": "text",
+      "value": "You can cast spells as though you were in the companion's space, but you must use your own senses. Once per turn, when you cast an Artificer spell from the Evocation or Necromancy school and deal damage while your companion is within 120 feet of you, you can add your Intelligence modifier to one damage roll of that spell."
+     },
+     {
+      "name": "Ferocity",
+      "type": "text",
+      "value": "The damage die of the companion's Dreadful Swipe increases to 1d6."
+     }
+    ],
+    "9": [
+     {
+      "name": "Reanimator (RHW) Features",
+      "type": "text",
+      "value": "The damage of your __Reanimated Companion's__ Death Burst increases to 4d4. Necrotic damage dealt by your companion ignores Resistance."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You experiment and alter your companion further. Whenever you create a __Reanimated Companion__, the companion now gains two options for Strange Modifications, instead of one. Additionally, when picking options for Strange Modifications, you can also choose from the following options."
+     },
+     {
+      "name": "Bloated",
+      "type": "text",
+      "value": "The companion becomes Large. Whenever it hits a Large or smaller creature with its Dreadful Swipe action, that creature is pushed up to 10 feet away from the companion. Additionally, you can add your Intelligence modifier to the damage dealt by the companion's Death Burst."
+     },
+     {
+      "name": "Gaunt",
+      "type": "text",
+      "value": "The companion's Speed increases to 45 feet, and it gains a Climb Speed equal to its Speed. It can climb difficult surfaces, including along ceilings, without needing to make an ability check. In addition, whenever a creature of your choice starts its turn within a 10-foot Emanation originating from your companion, the creature must succeed on a Wisdom saving throw against your spell save DC or have the Frightened condition until the start of its next turn."
+     },
+     {
+      "name": "Moist",
+      "type": "text",
+      "value": "The companion gains a Swim Speed equal to its Speed, and it can move through a space as narrow as 1 inch without expending extra movement to do so. In addition, whenever the companion is hit by an attack roll from a creature within 10 feet of itself, the attacker takes Acid damage equal to your Intelligence modifier."
+     }
+    ],
+    "15": [
+     {
+      "name": "Reanimator (RHW) Features",
+      "type": "text",
+      "value": "You have mastered the science of revivification, granting you the following benefits."
+     },
+     {
+      "name": "Facilitated Revival",
+      "type": "text",
+      "value": "You can cast __Raise Dead__ once without expending a spell slot and without Material components, provided you use Tinker's Tools or another type of Artisan's Tools with which you have proficiency as the Spellcasting Focus. Once you use this feature, you can't use it again until you finish a Long Rest."
+     },
+     {
+      "name": "Life Transfer",
+      "type": "text",
+      "value": "You can siphon the animating magic of your __Reanimated Companion__ to bolster yourself. When you or your companion takes damage, you can take a Reaction to gain a number of Hit Points equal to your companion's current Hit Points. The companion then immediately drops to 0 Hit Points and dies (triggering its Death Burst trait)."
+     },
+     {
+      "name": "Superior Modifications",
+      "type": "text",
+      "value": "Whenever you create a __Reanimated Companion__, the companion now gains three options for Strange Modifications."
+     }
+    ]
    }
   },
   "reprint": null
@@ -4186,6 +4345,165 @@
         "Whenever your steel defender uses its Deflect Attack, the attacker takes force damage equal to **1d4** + your Intelligence modifier."
        ]
       }
+     }
+    ]
+   },
+   "Reanimator (RHW)": {
+    "3": [
+     {
+      "name": "Reanimator (RHW) Features",
+      "type": "text",
+      "value": "*Reassemble Corpses and Raise the Dead*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Reanimators defy the laws of nature in pursuit of gruesome experiments. These grim Artificers stitch together servants from disparate corpses, use foul magic to strengthen the living, and transform the art of necromancy into a terrifying science."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Reanimator Spells (EFA)__: When you reach an Artificer level specified in the Reanimator Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Reanimator Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Reanimator Spells",
+       "headers": [
+        "Artificer Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "False Life, Spare the Dying, Witch Bolt"
+        ],
+        [
+         "5",
+         "Blindness/Deafness, Enhance Ability"
+        ],
+        [
+         "9",
+         "Animate Dead, Lightning Bolt"
+        ],
+        [
+         "13",
+         "Blight, Death Ward"
+        ],
+        [
+         "17",
+         "Antilife Shell, Raise Dead"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Reanimator's Skill Set (EFA)__: You gain the following benefits."
+     },
+     {
+      "name": "Jolt to Life",
+      "type": "text",
+      "value": "When you cast __Spare the Dying__, you can modify the spell so that it sends a jolt of electricity through the target, reviving it. The target regains a number of Hit Points equal to your Artificer level, and each creature of your choice in a 10-foot Emanation originating from the target makes a Dexterity saving throw against your spell save DC, taking **2d4** Lightning damage on a failed save or half as much damage on a successful one."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can modify the spell this way a number of times equal to your Intelligence modifier, and you regain all expended uses when you finish a Long Rest. The Lightning damage of this feature increases by 1d4 when you reach Artificer levels 11 (3d4) and 17 (4d4)."
+     },
+     {
+      "name": "Reanimator's Tools",
+      "type": "text",
+      "value": "You gain proficiency with Alchemist's Supplies. If you already have this proficiency, you gain proficiency with one other type of Artisan's Tools of your choice."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Reanimated Companion (EFA)__: Using Tinker's Tools or another type of Artisan's Tools with which you have proficiency, you can take a Magic action to create a __Reanimated Companion__ through the power of necromancy and science. The companion manifests in an unoccupied space within 5 feet of you. You determine the companion's appearance; your choices don't affect the companion's game statistics."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The companion is Friendly to you and your allies and obeys you. It lasts until you finish a Long Rest or until you take a Magic action to dismiss it early, at which point it harmlessly collapses into a pile of viscera. It immediately drops to 0 Hit Points and dies (triggering its Death Burst trait) if you die."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you create a companion, you can't do so again until you finish a Long Rest or expend a spell slot to create one. You can have only one companion at a time and can't create one while your companion is present."
+     },
+     {
+      "name": "The Companion in Combat",
+      "type": "text",
+      "value": "In combat, the companion acts during your turn. It can move and take its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action. If you have the Incapacitated condition, the companion acts on its own and isn't limited to the Dodge action."
+     }
+    ],
+    "5": [
+     {
+      "name": "Reanimator (RHW) Features",
+      "type": "text",
+      "value": "Whenever you create a __Reanimated Companion__, it gains one of the following options of your choice; choose when you create the companion."
+     },
+     {
+      "name": "Arcane Conduit",
+      "type": "text",
+      "value": "You can cast spells as though you were in the companion's space, but you must use your own senses. Once per turn, when you cast an Artificer spell from the Evocation or Necromancy school and deal damage while your companion is within 120 feet of you, you can add your Intelligence modifier to one damage roll of that spell."
+     },
+     {
+      "name": "Ferocity",
+      "type": "text",
+      "value": "The damage die of the companion's Dreadful Swipe increases to 1d6."
+     }
+    ],
+    "9": [
+     {
+      "name": "Reanimator (RHW) Features",
+      "type": "text",
+      "value": "The damage of your __Reanimated Companion's__ Death Burst increases to 4d4. Necrotic damage dealt by your companion ignores Resistance."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You experiment and alter your companion further. Whenever you create a __Reanimated Companion__, the companion now gains two options for Strange Modifications, instead of one. Additionally, when picking options for Strange Modifications, you can also choose from the following options."
+     },
+     {
+      "name": "Bloated",
+      "type": "text",
+      "value": "The companion becomes Large. Whenever it hits a Large or smaller creature with its Dreadful Swipe action, that creature is pushed up to 10 feet away from the companion. Additionally, you can add your Intelligence modifier to the damage dealt by the companion's Death Burst."
+     },
+     {
+      "name": "Gaunt",
+      "type": "text",
+      "value": "The companion's Speed increases to 45 feet, and it gains a Climb Speed equal to its Speed. It can climb difficult surfaces, including along ceilings, without needing to make an ability check. In addition, whenever a creature of your choice starts its turn within a 10-foot Emanation originating from your companion, the creature must succeed on a Wisdom saving throw against your spell save DC or have the Frightened condition until the start of its next turn."
+     },
+     {
+      "name": "Moist",
+      "type": "text",
+      "value": "The companion gains a Swim Speed equal to its Speed, and it can move through a space as narrow as 1 inch without expending extra movement to do so. In addition, whenever the companion is hit by an attack roll from a creature within 10 feet of itself, the attacker takes Acid damage equal to your Intelligence modifier."
+     }
+    ],
+    "15": [
+     {
+      "name": "Reanimator (RHW) Features",
+      "type": "text",
+      "value": "You have mastered the science of revivification, granting you the following benefits."
+     },
+     {
+      "name": "Facilitated Revival",
+      "type": "text",
+      "value": "You can cast __Raise Dead__ once without expending a spell slot and without Material components, provided you use Tinker's Tools or another type of Artisan's Tools with which you have proficiency as the Spellcasting Focus. Once you use this feature, you can't use it again until you finish a Long Rest."
+     },
+     {
+      "name": "Life Transfer",
+      "type": "text",
+      "value": "You can siphon the animating magic of your __Reanimated Companion__ to bolster yourself. When you or your companion takes damage, you can take a Reaction to gain a number of Hit Points equal to your companion's current Hit Points. The companion then immediately drops to 0 Hit Points and dies (triggering its Death Burst trait)."
+     },
+     {
+      "name": "Superior Modifications",
+      "type": "text",
+      "value": "Whenever you create a __Reanimated Companion__, the companion now gains three options for Strange Modifications."
      }
     ]
    }
@@ -8510,6 +8828,141 @@
      }
     ]
    },
+   "Spirits (RHW)": {
+    "3": [
+     {
+      "name": "Spirits (RHW) Features",
+      "type": "text",
+      "value": "*Call Forth Spirits from Beyond the Grave*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Bards of the College of Spirits conjure legendary spirits to change the world. But such entities are capricious, and what a Bard summons isn't always entirely under their control."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Channeler (XPHB)__: You learn how to contact spirits beyond the grave, letting their power and knowledge flow through you. You gain the following benefits."
+     },
+     {
+      "name": "Guiding Whispers",
+      "type": "text",
+      "value": "You know the __Guidance__ cantrip. It has a range of 60 feet when you cast it."
+     },
+     {
+      "name": "Spiritual Focus",
+      "type": "text",
+      "value": "You employ tools that aid you in channeling spirits. You gain a Gaming Set (playing cards). You have proficiency with this Gaming Set, and you can use it or one of the following items as a Spellcasting Focus for your Bard spells: Arcane Focus (crystal or orb), Candle, or Ink Pen."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Spirits From Beyond (XPHB)__: You can call forth spirits of the dead to empower you and your allies. When you take a Bonus Action to give a creature a Bardic Inspiration die, you can call forth the powers of a random spirit. To determine the spirit you channel, roll the Bardic Inspiration die and refer to the Spirits from Beyond table. The spirit remains channeled until you unleash it or until you finish a Short or Long Rest."
+     },
+     {
+      "name": "Controlled Channeling",
+      "type": "text",
+      "value": "As a Bonus Action, you can expend a use of your Bardic Inspiration and channel a specific spirit. When you do so, choose the spirit from the Spirits from Beyond table rather than rolling. The chosen spirit's corresponding number must be less than or equal to the highest number on your Bardic Inspiration die; for example, if your Bardic Inspiration die is a d8, you can choose to channel any spirit up to (and including) the Shade."
+     },
+     {
+      "name": "Unleashing a Spirit",
+      "type": "text",
+      "value": "As a Magic action, you can unleash one of your channeled spirits. Choose one creature you can see within 30 feet of yourself as the spirit's target. The spirit then takes effect; if a spirit's effect requires a saving throw, the DC equals your Bard spell save DC."
+     },
+     {
+      "name": "Spirits from Beyond",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Spirits from Beyond",
+       "headers": [
+        "Bardic Insp. Die",
+        "Spirit and Unleash Effect"
+       ],
+       "rows": [
+        [
+         "1",
+         "Beloved. The target regains Hit Points equal to a roll of your Bardic Inspiration die plus your Charisma modifier."
+        ],
+        [
+         "2",
+         "Sharpshooter. The target takes Force damage equal to a roll of your Bardic Inspiration die plus your Charisma modifier."
+        ],
+        [
+         "3",
+         "Avenger. Until the end of your next turn, any creature that hits the target with a melee attack roll takes Force damage equal to a roll of your Bardic Inspiration die."
+        ],
+        [
+         "4",
+         "Renegade. The target can immediately take a Reaction to teleport up to 30 feet to an unoccupied space it can see."
+        ],
+        [
+         "5",
+         "Fortune Teller. The target has Advantage on D20 Tests until the start of your next turn."
+        ],
+        [
+         "6",
+         "Wayfarer. The target gains Temporary Hit Points equal to a roll of your Bardic Inspiration die plus your Bard level. While the target has these Temporary Hit Points, its Speed increases by 10 feet."
+        ],
+        [
+         "7",
+         "Trickster. The target makes a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to two rolls of your Bardic Inspiration die and has the Charmed condition until the start of your next turn. On a successful save, the target takes half as much damage only."
+        ],
+        [
+         "8",
+         "Shade. The target has the Invisible condition until the end of its next turn or until the target makes an attack roll, deals damage, or casts a spell. When the invisibility ends, each creature in a 5-foot Emanation originating from the target must succeed on a Constitution saving throw or take Necrotic damage equal to two rolls of your Bardic Inspiration die."
+        ],
+        [
+         "9",
+         "Arsonist. The target makes a Dexterity saving throw, taking Fire damage equal to four rolls of your Bardic Inspiration die on a failed save or half as much damage on a successful one."
+        ],
+        [
+         "10",
+         "Coward. The target and each creature of your choice in a 30-foot Emanation originating from the target must succeed on a Wisdom saving throw or have the Frightened condition until the start of your next turn. While a creature is Frightened, its Speed is halved (round down), and it can take either an action or a Bonus Action, not both."
+        ],
+        [
+         "11",
+         "Brute. Each creature of your choice in a 30-foot Emanation originating from the target makes a Strength saving throw. On a failed save, a creature takes Thunder damage equal to three rolls of your Bardic Inspiration die and has the Prone condition. On a successful save, a creature takes half as much damage only."
+        ],
+        [
+         "12",
+         "Priest. The target regains Hit Points equal to two rolls of your Bardic Inspiration die, and one of the following conditions of your choice ends on the target: Blinded, Charmed, Deafened, Paralyzed, Poisoned, or Stunned."
+        ]
+       ]
+      }
+     }
+    ],
+    "6": [
+     {
+      "name": "Spirits (RHW) Features",
+      "type": "text",
+      "value": "Your ability to channel spirits improves. You gain the following benefits."
+     },
+     {
+      "name": "Power from Beyond",
+      "type": "text",
+      "value": "Once per turn, when you cast a Bard spell with a spell slot that deals damage or restores Hit Points, roll 1d6. You gain a bonus equal to the number rolled to one of the spell's damage rolls or to the total Hit Points the spell restores."
+     },
+     {
+      "name": "Spiritual Manifestation",
+      "type": "text",
+      "value": "You always have the __Spirit Guardians__ spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Whenever you cast the spell, you can modify it so the spirits also guard against worldly threats. When you cast the spell in this way, you and allies within the spell's Emanation have [Half Cover](https://5e.tools/tables.html#cover_xphb). Once you modify the spell in this way, you can't do so again until you finish a Short or Long Rest."
+     }
+    ],
+    "14": [
+     {
+      "name": "Spirits (RHW) Features",
+      "type": "text",
+      "value": "You gain mastery over the spirits you call forth. Whenever you roll on the Spirits from Beyond table, you can roll the die twice and choose which of the two effects to bestow. If you roll the same number on both dice, you can instead choose any effect on the table."
+     }
+    ]
+   },
    "Spirits (VRGR)": {
     "3": [
      {
@@ -10595,6 +11048,141 @@
       "name": "Lore (XPHB) Features",
       "type": "text",
       "value": "When you make an ability check or attack roll and fail, you can expend one use of Bardic Inspiration; roll the Bardic Inspiration die, and add the number rolled to the d20, potentially turning a failure into a success. On a failure, the Bardic Inspiration isn't expended."
+     }
+    ]
+   },
+   "Spirits (RHW)": {
+    "3": [
+     {
+      "name": "Spirits (RHW) Features",
+      "type": "text",
+      "value": "*Call Forth Spirits from Beyond the Grave*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Bards of the College of Spirits conjure legendary spirits to change the world. But such entities are capricious, and what a Bard summons isn't always entirely under their control."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Channeler (XPHB)__: You learn how to contact spirits beyond the grave, letting their power and knowledge flow through you. You gain the following benefits."
+     },
+     {
+      "name": "Guiding Whispers",
+      "type": "text",
+      "value": "You know the __Guidance__ cantrip. It has a range of 60 feet when you cast it."
+     },
+     {
+      "name": "Spiritual Focus",
+      "type": "text",
+      "value": "You employ tools that aid you in channeling spirits. You gain a Gaming Set (playing cards). You have proficiency with this Gaming Set, and you can use it or one of the following items as a Spellcasting Focus for your Bard spells: Arcane Focus (crystal or orb), Candle, or Ink Pen."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Spirits From Beyond (XPHB)__: You can call forth spirits of the dead to empower you and your allies. When you take a Bonus Action to give a creature a Bardic Inspiration die, you can call forth the powers of a random spirit. To determine the spirit you channel, roll the Bardic Inspiration die and refer to the Spirits from Beyond table. The spirit remains channeled until you unleash it or until you finish a Short or Long Rest."
+     },
+     {
+      "name": "Controlled Channeling",
+      "type": "text",
+      "value": "As a Bonus Action, you can expend a use of your Bardic Inspiration and channel a specific spirit. When you do so, choose the spirit from the Spirits from Beyond table rather than rolling. The chosen spirit's corresponding number must be less than or equal to the highest number on your Bardic Inspiration die; for example, if your Bardic Inspiration die is a d8, you can choose to channel any spirit up to (and including) the Shade."
+     },
+     {
+      "name": "Unleashing a Spirit",
+      "type": "text",
+      "value": "As a Magic action, you can unleash one of your channeled spirits. Choose one creature you can see within 30 feet of yourself as the spirit's target. The spirit then takes effect; if a spirit's effect requires a saving throw, the DC equals your Bard spell save DC."
+     },
+     {
+      "name": "Spirits from Beyond",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Spirits from Beyond",
+       "headers": [
+        "Bardic Insp. Die",
+        "Spirit and Unleash Effect"
+       ],
+       "rows": [
+        [
+         "1",
+         "Beloved. The target regains Hit Points equal to a roll of your Bardic Inspiration die plus your Charisma modifier."
+        ],
+        [
+         "2",
+         "Sharpshooter. The target takes Force damage equal to a roll of your Bardic Inspiration die plus your Charisma modifier."
+        ],
+        [
+         "3",
+         "Avenger. Until the end of your next turn, any creature that hits the target with a melee attack roll takes Force damage equal to a roll of your Bardic Inspiration die."
+        ],
+        [
+         "4",
+         "Renegade. The target can immediately take a Reaction to teleport up to 30 feet to an unoccupied space it can see."
+        ],
+        [
+         "5",
+         "Fortune Teller. The target has Advantage on D20 Tests until the start of your next turn."
+        ],
+        [
+         "6",
+         "Wayfarer. The target gains Temporary Hit Points equal to a roll of your Bardic Inspiration die plus your Bard level. While the target has these Temporary Hit Points, its Speed increases by 10 feet."
+        ],
+        [
+         "7",
+         "Trickster. The target makes a Wisdom saving throw. On a failed save, the target takes Psychic damage equal to two rolls of your Bardic Inspiration die and has the Charmed condition until the start of your next turn. On a successful save, the target takes half as much damage only."
+        ],
+        [
+         "8",
+         "Shade. The target has the Invisible condition until the end of its next turn or until the target makes an attack roll, deals damage, or casts a spell. When the invisibility ends, each creature in a 5-foot Emanation originating from the target must succeed on a Constitution saving throw or take Necrotic damage equal to two rolls of your Bardic Inspiration die."
+        ],
+        [
+         "9",
+         "Arsonist. The target makes a Dexterity saving throw, taking Fire damage equal to four rolls of your Bardic Inspiration die on a failed save or half as much damage on a successful one."
+        ],
+        [
+         "10",
+         "Coward. The target and each creature of your choice in a 30-foot Emanation originating from the target must succeed on a Wisdom saving throw or have the Frightened condition until the start of your next turn. While a creature is Frightened, its Speed is halved (round down), and it can take either an action or a Bonus Action, not both."
+        ],
+        [
+         "11",
+         "Brute. Each creature of your choice in a 30-foot Emanation originating from the target makes a Strength saving throw. On a failed save, a creature takes Thunder damage equal to three rolls of your Bardic Inspiration die and has the Prone condition. On a successful save, a creature takes half as much damage only."
+        ],
+        [
+         "12",
+         "Priest. The target regains Hit Points equal to two rolls of your Bardic Inspiration die, and one of the following conditions of your choice ends on the target: Blinded, Charmed, Deafened, Paralyzed, Poisoned, or Stunned."
+        ]
+       ]
+      }
+     }
+    ],
+    "6": [
+     {
+      "name": "Spirits (RHW) Features",
+      "type": "text",
+      "value": "Your ability to channel spirits improves. You gain the following benefits."
+     },
+     {
+      "name": "Power from Beyond",
+      "type": "text",
+      "value": "Once per turn, when you cast a Bard spell with a spell slot that deals damage or restores Hit Points, roll 1d6. You gain a bonus equal to the number rolled to one of the spell's damage rolls or to the total Hit Points the spell restores."
+     },
+     {
+      "name": "Spiritual Manifestation",
+      "type": "text",
+      "value": "You always have the __Spirit Guardians__ spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Whenever you cast the spell, you can modify it so the spirits also guard against worldly threats. When you cast the spell in this way, you and allies within the spell's Emanation have [Half Cover](https://5e.tools/tables.html#cover_xphb). Once you modify the spell in this way, you can't do so again until you finish a Short or Long Rest."
+     }
+    ],
+    "14": [
+     {
+      "name": "Spirits (RHW) Features",
+      "type": "text",
+      "value": "You gain mastery over the spirits you call forth. Whenever you roll on the Spirits from Beyond table, you can roll the die twice and choose which of the two effects to bestow. If you roll the same number on both dice, you can instead choose any effect on the table."
      }
     ]
    },
@@ -12841,6 +13429,119 @@
         "While wearing heavy armor, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks."
        ]
       }
+     }
+    ]
+   },
+   "Grave (RHW)": {
+    "3": [
+     {
+      "name": "Grave (RHW) Features",
+      "type": "text",
+      "value": "*Embody Deific Forces of Death*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The Grave Domain concerns itself with the boundary between life and death. To those who tap into this domain's power, death is a natural and inevitable part of the multiverse. Such Clerics seek to destroy undead and shepherd spirits."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The magic of this domain also allows these Clerics to stave off death for a time. But this is merely a delay of death, not a denial of it, for the grave will always claim its due."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Grave Domain Spells (XPHB)__: Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Grave Domain Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Grave Domain Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Grave Domain Spells",
+       "headers": [
+        "Cleric Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Detect Evil and Good, False Life, Gentle Repose, Ray of Enfeeblement, Spare the Dying"
+        ],
+        [
+         "5",
+         "Revivify, Vampiric Touch"
+        ],
+        [
+         "7",
+         "Blight, Death Ward"
+        ],
+        [
+         "9",
+         "Dispel Evil and Good, Raise Dead"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Circle Of Mortality (XPHB)__: You can manipulate the balance between life and death, granting you the following benefits."
+     },
+     {
+      "name": "Pull of Death",
+      "type": "text",
+      "value": "Once per turn, when you deal damage to a creature that's missing any Hit Points by casting a spell or by hitting with an attack roll, that creature takes an extra **1d4** Necrotic damage. This extra damage increases to 1d6 when you reach Cleric level 11."
+     },
+     {
+      "name": "Return to Life",
+      "type": "text",
+      "value": "You can cast __Spare the Dying__ as a Bonus Action."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Additionally, when you would normally roll one or more dice to restore Hit Points to a creature at 0 Hit Points with a spell or Channel Divinity, don't roll those dice for the healing; instead, use the highest number possible for each die. For example, instead of restoring 2d4 Hit Points to a creature at 0 Hit Points with a spell, you restore 8."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Path To The Grave (XPHB)__: As a Bonus Action, you present your Holy Symbol and expend a use of Channel Divinity to curse one creature you can see within 30 feet of yourself until the start of your next turn. While cursed, the creature has Disadvantage on attack rolls and saving throws."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When you or an ally you can see hits the cursed target with an attack roll, you can end the curse early (no action required) to make the attack deal extra Necrotic or Radiant damage (your choice) equal to your Cleric level."
+     }
+    ],
+    "6": [
+     {
+      "name": "Grave (RHW) Features",
+      "type": "text",
+      "value": "When you or a *Bloodied* creature you can see within 60 feet of yourself is hit with an attack roll, you can take a Reaction to halve that attack's damage (round down). If the triggering attack roll was a Critical Hit, any effects triggered by a Critical Hit are canceled."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest."
+     }
+    ],
+    "17": [
+     {
+      "name": "Grave (RHW) Features",
+      "type": "text",
+      "value": "Your deep connection to this domain renders you a hallowed harbinger of death, granting you the following benefits."
+     },
+     {
+      "name": "Enhanced Necromancy",
+      "type": "text",
+      "value": "When you cast a spell of level 5 or lower from the Necromancy school that targets one creature, or when you cast a spell from the Grave Domain Spells table, you can expend a use of Channel Divinity to target a second creature within the spell's range. If the spell requires costly or consumed Material components, you must provide Material components for each target."
+     },
+     {
+      "name": "Keeper of Souls",
+      "type": "text",
+      "value": "When an enemy dies within 60 feet of you, you or one creature you can see within 60 feet of yourself regains Hit Points equal to twice your Cleric level. You can't use this feature if you have the Incapacitated condition. Once you use this feature, you can't use it again until you finish a Short or Long Rest, unless you expend a level 6+ spell slot (no action required) to restore your use of it."
      }
     ]
    },
@@ -16425,6 +17126,119 @@
         "While wearing heavy armor, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks."
        ]
       }
+     }
+    ]
+   },
+   "Grave (RHW)": {
+    "3": [
+     {
+      "name": "Grave (RHW) Features",
+      "type": "text",
+      "value": "*Embody Deific Forces of Death*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The Grave Domain concerns itself with the boundary between life and death. To those who tap into this domain's power, death is a natural and inevitable part of the multiverse. Such Clerics seek to destroy undead and shepherd spirits."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The magic of this domain also allows these Clerics to stave off death for a time. But this is merely a delay of death, not a denial of it, for the grave will always claim its due."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Grave Domain Spells (XPHB)__: Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Grave Domain Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Grave Domain Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Grave Domain Spells",
+       "headers": [
+        "Cleric Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Detect Evil and Good, False Life, Gentle Repose, Ray of Enfeeblement, Spare the Dying"
+        ],
+        [
+         "5",
+         "Revivify, Vampiric Touch"
+        ],
+        [
+         "7",
+         "Blight, Death Ward"
+        ],
+        [
+         "9",
+         "Dispel Evil and Good, Raise Dead"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Circle Of Mortality (XPHB)__: You can manipulate the balance between life and death, granting you the following benefits."
+     },
+     {
+      "name": "Pull of Death",
+      "type": "text",
+      "value": "Once per turn, when you deal damage to a creature that's missing any Hit Points by casting a spell or by hitting with an attack roll, that creature takes an extra **1d4** Necrotic damage. This extra damage increases to 1d6 when you reach Cleric level 11."
+     },
+     {
+      "name": "Return to Life",
+      "type": "text",
+      "value": "You can cast __Spare the Dying__ as a Bonus Action."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Additionally, when you would normally roll one or more dice to restore Hit Points to a creature at 0 Hit Points with a spell or Channel Divinity, don't roll those dice for the healing; instead, use the highest number possible for each die. For example, instead of restoring 2d4 Hit Points to a creature at 0 Hit Points with a spell, you restore 8."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Path To The Grave (XPHB)__: As a Bonus Action, you present your Holy Symbol and expend a use of Channel Divinity to curse one creature you can see within 30 feet of yourself until the start of your next turn. While cursed, the creature has Disadvantage on attack rolls and saving throws."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When you or an ally you can see hits the cursed target with an attack roll, you can end the curse early (no action required) to make the attack deal extra Necrotic or Radiant damage (your choice) equal to your Cleric level."
+     }
+    ],
+    "6": [
+     {
+      "name": "Grave (RHW) Features",
+      "type": "text",
+      "value": "When you or a *Bloodied* creature you can see within 60 feet of yourself is hit with an attack roll, you can take a Reaction to halve that attack's damage (round down). If the triggering attack roll was a Critical Hit, any effects triggered by a Critical Hit are canceled."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest."
+     }
+    ],
+    "17": [
+     {
+      "name": "Grave (RHW) Features",
+      "type": "text",
+      "value": "Your deep connection to this domain renders you a hallowed harbinger of death, granting you the following benefits."
+     },
+     {
+      "name": "Enhanced Necromancy",
+      "type": "text",
+      "value": "When you cast a spell of level 5 or lower from the Necromancy school that targets one creature, or when you cast a spell from the Grave Domain Spells table, you can expend a use of Channel Divinity to target a second creature within the spell's range. If the spell requires costly or consumed Material components, you must provide Material components for each target."
+     },
+     {
+      "name": "Keeper of Souls",
+      "type": "text",
+      "value": "When an enemy dies within 60 feet of you, you or one creature you can see within 60 feet of yourself regains Hit Points equal to twice your Cleric level. You can't use this feature if you have the Incapacitated condition. Once you use this feature, you can't use it again until you finish a Short or Long Rest, unless you expend a level 6+ spell slot (no action required) to restore your use of it."
      }
     ]
    },
@@ -37838,6 +38652,140 @@
      }
     ]
    },
+   "Hollow Warden (RHW)": {
+    "3": [
+     {
+      "name": "Hollow Warden (RHW) Features",
+      "type": "text",
+      "value": "*Draw on the Might of Ancient Wild Terrors*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Legends tell that the most ancient and bloodthirsty terrors lurk deep within the old places of the earth. Hollow Wardens venerate and draw power from such beings, transforming themselves into merciless and monstrous guardians that stalk jagged coastlines, steep mountain crags, and other dark and wild places."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Hollow Warden Spells (XPHB)__: When you reach a Ranger level specified in the Hollow Warden Spells table, you thereafter always have the listed spell prepared."
+     },
+     {
+      "name": "Hollow Warden Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Hollow Warden Spells",
+       "headers": [
+        "Ranger Level",
+        "Spell"
+       ],
+       "rows": [
+        [
+         "3",
+         "Wrathful Smite"
+        ],
+        [
+         "5",
+         "Alter Self"
+        ],
+        [
+         "9",
+         "Phantom Steed"
+        ],
+        [
+         "13",
+         "Dominate Beast"
+        ],
+        [
+         "17",
+         "Steel Wind Strike"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Wrath Of The Wild (XPHB)__: You draw power from the strange and ancient horrors of the land, causing you to sprout unnatural growths, such as bloody antlers or putrid fangs, or causing your shadow to lengthen or twist around you. As a Bonus Action, you can expend a use of Favored Enemy to transform into a ghastly form, gaining the following benefits for 1 minute or until you have the Incapacitated condition, die, or end the transformation (no action required)."
+     },
+     {
+      "name": "Ancient Armor",
+      "type": "text",
+      "value": "You gain a +1 bonus to AC, as your body is wreathed in rotten bark and beastly bristles. This bonus increases to +2 when you reach Ranger level 11."
+     },
+     {
+      "name": "Prowling Retribution",
+      "type": "text",
+      "value": "Immediately after a creature you can see within 5 feet of yourself deals damage to you or one of your allies, you can make an Opportunity Attack against that creature."
+     },
+     {
+      "name": "Unnerving Aura",
+      "type": "text",
+      "value": "When you transform and at the start of each of your subsequent turns, each creature of your choice in a 10-foot Emanation originating from you makes a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Hungering Might (XPHB)__: You gain a bonus to Constitution saving throws equal to your Wisdom modifier (minimum of +1)."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In addition, once per turn when you hit a creature with an attack roll while you are transformed using Wrath of the Wild, you regain a number of Hit Points equal to 1d10 plus your Wisdom modifier, provided you are *Bloodied* when you hit."
+     }
+    ],
+    "7": [
+     {
+      "name": "Hollow Warden (RHW) Features",
+      "type": "text",
+      "value": "Your experience surviving harrowing environments allows you to bolster your allies in addition to yourself. As a Magic action, choose a number of creatures you can see equal to your Wisdom modifier (minimum of one). Each chosen creature regains Hit Points equal to 1d10 plus your Ranger level and has Advantage on saving throws to avoid or end the Frightened condition for 1 hour."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+     }
+    ],
+    "11": [
+     {
+      "name": "Hollow Warden (RHW) Features",
+      "type": "text",
+      "value": "Your dedication to wild eldritch beings alters you further. When transformed using Wrath of the Wild, you gain the following additional benefits."
+     },
+     {
+      "name": "Menacing Aura",
+      "type": "text",
+      "value": "When a creature fails its saving throw against your Unnerving Aura, it also can't regain Hit Points or take Reactions until the start of your next turn."
+     },
+     {
+      "name": "Strangling Roots",
+      "type": "text",
+      "value": "When you hit a creature with an attack roll using a weapon, you can activate the __Sap__ or __Slow__ mastery property in addition to a different mastery property you're using with that weapon."
+     }
+    ],
+    "15": [
+     {
+      "name": "Hollow Warden (RHW) Features",
+      "type": "text",
+      "value": "You become wholly suffused with the wild's ancient and terrible power, granting you the following benefits."
+     },
+     {
+      "name": "Ominous Strikes",
+      "type": "text",
+      "value": "When you hit a creature that has the Frightened condition with an attack roll, that attack deals extra damage equal to your Wisdom modifier."
+     },
+     {
+      "name": "Persistent Wrath",
+      "type": "text",
+      "value": "If you're reduced to 0 Hit Points but not killed outright while transformed using Wrath of the Wild, you can surge with wild power. Your Hit Points instead change to a number equal to twice your Ranger level. Once you use this feature, you can't do so again until you finish a Long Rest. You can also expend a level 4+ spell slot (no action required) to restore your use of this feature."
+     },
+     {
+      "name": "Timeless",
+      "type": "text",
+      "value": "You have Immunity to the Exhaustion condition."
+     }
+    ]
+   },
    "Horizon Walker (XGE)": {
     "3": [
      {
@@ -40267,6 +41215,140 @@
      }
     ]
    },
+   "Hollow Warden (RHW)": {
+    "3": [
+     {
+      "name": "Hollow Warden (RHW) Features",
+      "type": "text",
+      "value": "*Draw on the Might of Ancient Wild Terrors*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Legends tell that the most ancient and bloodthirsty terrors lurk deep within the old places of the earth. Hollow Wardens venerate and draw power from such beings, transforming themselves into merciless and monstrous guardians that stalk jagged coastlines, steep mountain crags, and other dark and wild places."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Hollow Warden Spells (XPHB)__: When you reach a Ranger level specified in the Hollow Warden Spells table, you thereafter always have the listed spell prepared."
+     },
+     {
+      "name": "Hollow Warden Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Hollow Warden Spells",
+       "headers": [
+        "Ranger Level",
+        "Spell"
+       ],
+       "rows": [
+        [
+         "3",
+         "Wrathful Smite"
+        ],
+        [
+         "5",
+         "Alter Self"
+        ],
+        [
+         "9",
+         "Phantom Steed"
+        ],
+        [
+         "13",
+         "Dominate Beast"
+        ],
+        [
+         "17",
+         "Steel Wind Strike"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Wrath Of The Wild (XPHB)__: You draw power from the strange and ancient horrors of the land, causing you to sprout unnatural growths, such as bloody antlers or putrid fangs, or causing your shadow to lengthen or twist around you. As a Bonus Action, you can expend a use of Favored Enemy to transform into a ghastly form, gaining the following benefits for 1 minute or until you have the Incapacitated condition, die, or end the transformation (no action required)."
+     },
+     {
+      "name": "Ancient Armor",
+      "type": "text",
+      "value": "You gain a +1 bonus to AC, as your body is wreathed in rotten bark and beastly bristles. This bonus increases to +2 when you reach Ranger level 11."
+     },
+     {
+      "name": "Prowling Retribution",
+      "type": "text",
+      "value": "Immediately after a creature you can see within 5 feet of yourself deals damage to you or one of your allies, you can make an Opportunity Attack against that creature."
+     },
+     {
+      "name": "Unnerving Aura",
+      "type": "text",
+      "value": "When you transform and at the start of each of your subsequent turns, each creature of your choice in a 10-foot Emanation originating from you makes a Wisdom saving throw against your spell save DC. On a failed save, a creature has the Frightened condition until the start of your next turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Hungering Might (XPHB)__: You gain a bonus to Constitution saving throws equal to your Wisdom modifier (minimum of +1)."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In addition, once per turn when you hit a creature with an attack roll while you are transformed using Wrath of the Wild, you regain a number of Hit Points equal to 1d10 plus your Wisdom modifier, provided you are *Bloodied* when you hit."
+     }
+    ],
+    "7": [
+     {
+      "name": "Hollow Warden (RHW) Features",
+      "type": "text",
+      "value": "Your experience surviving harrowing environments allows you to bolster your allies in addition to yourself. As a Magic action, choose a number of creatures you can see equal to your Wisdom modifier (minimum of one). Each chosen creature regains Hit Points equal to 1d10 plus your Ranger level and has Advantage on saving throws to avoid or end the Frightened condition for 1 hour."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+     }
+    ],
+    "11": [
+     {
+      "name": "Hollow Warden (RHW) Features",
+      "type": "text",
+      "value": "Your dedication to wild eldritch beings alters you further. When transformed using Wrath of the Wild, you gain the following additional benefits."
+     },
+     {
+      "name": "Menacing Aura",
+      "type": "text",
+      "value": "When a creature fails its saving throw against your Unnerving Aura, it also can't regain Hit Points or take Reactions until the start of your next turn."
+     },
+     {
+      "name": "Strangling Roots",
+      "type": "text",
+      "value": "When you hit a creature with an attack roll using a weapon, you can activate the __Sap__ or __Slow__ mastery property in addition to a different mastery property you're using with that weapon."
+     }
+    ],
+    "15": [
+     {
+      "name": "Hollow Warden (RHW) Features",
+      "type": "text",
+      "value": "You become wholly suffused with the wild's ancient and terrible power, granting you the following benefits."
+     },
+     {
+      "name": "Ominous Strikes",
+      "type": "text",
+      "value": "When you hit a creature that has the Frightened condition with an attack roll, that attack deals extra damage equal to your Wisdom modifier."
+     },
+     {
+      "name": "Persistent Wrath",
+      "type": "text",
+      "value": "If you're reduced to 0 Hit Points but not killed outright while transformed using Wrath of the Wild, you can surge with wild power. Your Hit Points instead change to a number equal to twice your Ranger level. Once you use this feature, you can't do so again until you finish a Long Rest. You can also expend a level 4+ spell slot (no action required) to restore your use of this feature."
+     },
+     {
+      "name": "Timeless",
+      "type": "text",
+      "value": "You have Immunity to the Exhaustion condition."
+     }
+    ]
+   },
    "Horizon Walker (XGE)": {
     "3": [
      {
@@ -41615,6 +42697,129 @@
      }
     ]
    },
+   "Phantom (RHW)": {
+    "3": [
+     {
+      "name": "Phantom (RHW) Features",
+      "type": "text",
+      "value": "*Embrace Death and Wield Ghostly Power*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Some Rogues traverse the veil between life and death, shepherding opponents to the grave and slipping through the world as undetectable as a spirit. In these pursuits, a Rogue might discover a mystical connection to death itself. Such an individual becomes immersed in negative energy, infusing their strikes with deathly energy and stealing knowledge from souls who have passed on. Thieves' guilds value Rogues of this persuasion as highly effective information gatherers and spies."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Wails From The Grave (XPHB)__: Immediately after you deal Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack damage dice for your level (round up), and the second creature takes Necrotic damage equal to the roll's total as wails of the dead sound around it."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can use this feature a number of times equal to your Dexterity modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Whispers Of The Dead (XPHB)__: Whenever you finish a Short or Long Rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this benefit again to choose a different proficiency."
+     }
+    ],
+    "9": [
+     {
+      "name": "Phantom (RHW) Features",
+      "type": "text",
+      "value": "The spirits of the dead are drawn to you, and echoes of their past lives magically manifest as strange curios with resonant power."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You gain two soul trinkets. A soul trinket is a Tiny object (the DM determines the trinket's form or has you roll on the Trinkets table in the Player's Handbook to generate it). If you move more than 30 feet from a trinket, the trinket immediately teleports to you, appearing somewhere on your person."
+     },
+     {
+      "name": "Using Soul Trinkets",
+      "type": "text",
+      "value": "You can use soul trinkets in the following ways:"
+     },
+     {
+      "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Death's Knell**: When you deal Sneak Attack damage on your turn, you can destroy one soul trinket and immediately use Wails from the Grave without expending a use of that feature.",
+        "**Life Essence**: While you have at least one soul trinket, you have Advantage on Death Saving Throws and Constitution saving throws.",
+        "**Spirit Query**: You can take a Magic action to destroy one soul trinket and immediately cast the __Augury__ spell, requiring no spell components and using Constitution as the spellcasting modifier. If you know the creature with which the trinket is associated, you can ask the creature's spirit one question instead of casting the spell. In this case, the spirit appears to you and answers as concisely as possible in a language it knew in life."
+       ]
+      }
+     },
+     {
+      "name": "Gaining Additional Soul Trinkets",
+      "type": "text",
+      "value": "When a creature you can see within 30 feet of you dies, you can take a Reaction to gain another soul trinket, claiming a sliver of that creature's departing spirit. The new trinket appears somewhere on your person."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can have a maximum of two soul trinkets at a time. If you try to gain a soul trinket while at your maximum, one of your existing trinkets is immediately destroyed and replaced by the new trinket. The maximum number of soul trinkets you can have increases when you reach Rogue levels 13 (three trinkets) and 17 (four trinkets)."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Whenever you finish a Long Rest with fewer than two soul trinkets, you gain soul trinkets until you have two."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can cast __Speak with Dead__ once without a spell slot, requiring no spell components and using Dexterity as the spellcasting modifier. You regain the ability to cast it this way when you finish a Short or Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When you cast the spell, you can target one of your soul trinkets from Tokens of the Departed instead of a corpse, allowing the spirit of the creature associated with the trinket to answer."
+     }
+    ],
+    "13": [
+     {
+      "name": "Phantom (RHW) Features",
+      "type": "text",
+      "value": "As a Bonus Action, you assume a spectral form, gaining the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest unless you destroy one of your soul trinkets from Tokens of the Departed (no action required) to restore your use of it."
+     },
+     {
+      "name": "Flight",
+      "type": "text",
+      "value": "You gain a Fly Speed of 10 feet and can hover."
+     },
+     {
+      "name": "Hazy Form",
+      "type": "text",
+      "value": "Attack rolls have Disadvantage against you."
+     },
+     {
+      "name": "Incorporeal Movement",
+      "type": "text",
+      "value": "You can move through creatures and objects as if they were Difficult Terrain, but you take **1d10** Force damage if you end your turn inside a creature or an object."
+     }
+    ],
+    "17": [
+     {
+      "name": "Phantom (RHW) Features",
+      "type": "text",
+      "value": "Your association with death has become so close that you gain the following benefits."
+     },
+     {
+      "name": "Death's Lament",
+      "type": "text",
+      "value": "When you use Wails from the Grave, you can deal the feature's Necrotic damage to both the first and the second creature."
+     },
+     {
+      "name": "Draw of Death",
+      "type": "text",
+      "value": "When you roll Initiative, you gain one soul trinket for your Tokens of the Departed if you have none remaining."
+     }
+    ]
+   },
    "Phantom (TCE)": {
     "3": [
      {
@@ -42920,6 +44125,129 @@
       "name": "",
       "type": "text",
       "value": "Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic."
+     }
+    ]
+   },
+   "Phantom (RHW)": {
+    "3": [
+     {
+      "name": "Phantom (RHW) Features",
+      "type": "text",
+      "value": "*Embrace Death and Wield Ghostly Power*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Some Rogues traverse the veil between life and death, shepherding opponents to the grave and slipping through the world as undetectable as a spirit. In these pursuits, a Rogue might discover a mystical connection to death itself. Such an individual becomes immersed in negative energy, infusing their strikes with deathly energy and stealing knowledge from souls who have passed on. Thieves' guilds value Rogues of this persuasion as highly effective information gatherers and spies."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Wails From The Grave (XPHB)__: Immediately after you deal Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack damage dice for your level (round up), and the second creature takes Necrotic damage equal to the roll's total as wails of the dead sound around it."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can use this feature a number of times equal to your Dexterity modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Whispers Of The Dead (XPHB)__: Whenever you finish a Short or Long Rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this benefit again to choose a different proficiency."
+     }
+    ],
+    "9": [
+     {
+      "name": "Phantom (RHW) Features",
+      "type": "text",
+      "value": "The spirits of the dead are drawn to you, and echoes of their past lives magically manifest as strange curios with resonant power."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You gain two soul trinkets. A soul trinket is a Tiny object (the DM determines the trinket's form or has you roll on the Trinkets table in the Player's Handbook to generate it). If you move more than 30 feet from a trinket, the trinket immediately teleports to you, appearing somewhere on your person."
+     },
+     {
+      "name": "Using Soul Trinkets",
+      "type": "text",
+      "value": "You can use soul trinkets in the following ways:"
+     },
+     {
+      "name": "",
+      "type": "list",
+      "list": {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "**Death's Knell**: When you deal Sneak Attack damage on your turn, you can destroy one soul trinket and immediately use Wails from the Grave without expending a use of that feature.",
+        "**Life Essence**: While you have at least one soul trinket, you have Advantage on Death Saving Throws and Constitution saving throws.",
+        "**Spirit Query**: You can take a Magic action to destroy one soul trinket and immediately cast the __Augury__ spell, requiring no spell components and using Constitution as the spellcasting modifier. If you know the creature with which the trinket is associated, you can ask the creature's spirit one question instead of casting the spell. In this case, the spirit appears to you and answers as concisely as possible in a language it knew in life."
+       ]
+      }
+     },
+     {
+      "name": "Gaining Additional Soul Trinkets",
+      "type": "text",
+      "value": "When a creature you can see within 30 feet of you dies, you can take a Reaction to gain another soul trinket, claiming a sliver of that creature's departing spirit. The new trinket appears somewhere on your person."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can have a maximum of two soul trinkets at a time. If you try to gain a soul trinket while at your maximum, one of your existing trinkets is immediately destroyed and replaced by the new trinket. The maximum number of soul trinkets you can have increases when you reach Rogue levels 13 (three trinkets) and 17 (four trinkets)."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Whenever you finish a Long Rest with fewer than two soul trinkets, you gain soul trinkets until you have two."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can cast __Speak with Dead__ once without a spell slot, requiring no spell components and using Dexterity as the spellcasting modifier. You regain the ability to cast it this way when you finish a Short or Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When you cast the spell, you can target one of your soul trinkets from Tokens of the Departed instead of a corpse, allowing the spirit of the creature associated with the trinket to answer."
+     }
+    ],
+    "13": [
+     {
+      "name": "Phantom (RHW) Features",
+      "type": "text",
+      "value": "As a Bonus Action, you assume a spectral form, gaining the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest unless you destroy one of your soul trinkets from Tokens of the Departed (no action required) to restore your use of it."
+     },
+     {
+      "name": "Flight",
+      "type": "text",
+      "value": "You gain a Fly Speed of 10 feet and can hover."
+     },
+     {
+      "name": "Hazy Form",
+      "type": "text",
+      "value": "Attack rolls have Disadvantage against you."
+     },
+     {
+      "name": "Incorporeal Movement",
+      "type": "text",
+      "value": "You can move through creatures and objects as if they were Difficult Terrain, but you take **1d10** Force damage if you end your turn inside a creature or an object."
+     }
+    ],
+    "17": [
+     {
+      "name": "Phantom (RHW) Features",
+      "type": "text",
+      "value": "Your association with death has become so close that you gain the following benefits."
+     },
+     {
+      "name": "Death's Lament",
+      "type": "text",
+      "value": "When you use Wails from the Grave, you can deal the feature's Necrotic damage to both the first and the second creature."
+     },
+     {
+      "name": "Draw of Death",
+      "type": "text",
+      "value": "When you roll Initiative, you gain one soul trinket for your Tokens of the Departed if you have none remaining."
      }
     ]
    },
@@ -45878,6 +47206,106 @@
      }
     ]
    },
+   "Shadow (RHW)": {
+    "3": [
+     {
+      "name": "Shadow (RHW) Features",
+      "type": "text",
+      "value": "*Bend Doom and Darkness to Your Will*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Your innate magic comes from the most nebulous and inscrutable forces of the Shadowfell or from other regions of supernatural darkness. You might trace your lineage to an entity from such a place, or perhaps you were exposed to the sinister energy of a shadow dragon and were transformed by it. Your shadowy magic allows you to command darkness, undeath, and woe."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Shadow Spells (XPHB)__: When you reach a Sorcerer level specified in the Shadow Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Shadow Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Shadow Spells",
+       "headers": [
+        "Sorcerer Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Bane, Darkness, Inflict Wounds, Pass Without Trace"
+        ],
+        [
+         "5",
+         "Hunger of Hadar, Nondetection"
+        ],
+        [
+         "7",
+         "Greater Invisibility, Phantasmal Killer"
+        ],
+        [
+         "9",
+         "Contagion, Creation"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Power Of Shadow (XPHB)__: You gain the following benefits."
+     },
+     {
+      "name": "Eyes of the Dark",
+      "type": "text",
+      "value": "You have Darkvision with a range of 120 feet and Blindsight with a range of 10 feet. In addition, if a spell you cast creates an area of Darkness, you can see normally through that spell's Darkness."
+     },
+     {
+      "name": "Strength of the Grave",
+      "type": "text",
+      "value": "If you would drop to 0 Hit Points and not die outright, you can make a Charisma saving throw (DC 5 plus the damage taken). On a successful save, your Hit Points instead change to a number equal to your Charisma modifier plus your Sorcerer level. After you succeed on this save, you can't use this benefit again until you finish a Long Rest."
+     }
+    ],
+    "6": [
+     {
+      "name": "Shadow (RHW) Features",
+      "type": "text",
+      "value": "You can call forth a howling creature of shadow to hound your foes. You can spend 3 Sorcery Points to cast __Summon Beast__ as a Bonus Action without expending a spell slot, without preparing the spell, and without Material components. The summoned creature appears as a beast made of shadow, and enemies within 5 feet of the summoned creature have Disadvantage on saving throws against spells you cast."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Whenever you cast the spell, you can modify it so that it doesn't require *Concentration*. If you do so, the spell's duration becomes 1 minute for that casting, and the spell ends early if you cast the spell again."
+     }
+    ],
+    "14": [
+     {
+      "name": "Shadow (RHW) Features",
+      "type": "text",
+      "value": "While you are in Dim Light or Darkness, you can take a Bonus Action to teleport up to 120 feet to an unoccupied space you can see that is also in Dim Light or Darkness."
+     }
+    ],
+    "18": [
+     {
+      "name": "Shadow (RHW) Features",
+      "type": "text",
+      "value": "When you use Innate Sorcery, you can adopt a shadowy form, gaining the benefits below while your Innate Sorcery is active or until you end the form (no action required). Once you use this feature, you can't use it again until you finish a Long Rest unless you spend 6 Sorcery Points (no action required) to restore your use of it."
+     },
+     {
+      "name": "Incorporeal Movement",
+      "type": "text",
+      "value": "You can move through creatures and objects as if they were Difficult Terrain, but you take **1d10** Force damage if you end your turn inside a creature or an object."
+     },
+     {
+      "name": "Shadow Resilience",
+      "type": "text",
+      "value": "You have Resistance to all damage except Force and Radiant damage."
+     }
+    ]
+   },
    "Spellfire (FRHOF)": {
     "3": [
      {
@@ -48762,6 +50190,106 @@
      }
     ]
    },
+   "Shadow (RHW)": {
+    "3": [
+     {
+      "name": "Shadow (RHW) Features",
+      "type": "text",
+      "value": "*Bend Doom and Darkness to Your Will*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Your innate magic comes from the most nebulous and inscrutable forces of the Shadowfell or from other regions of supernatural darkness. You might trace your lineage to an entity from such a place, or perhaps you were exposed to the sinister energy of a shadow dragon and were transformed by it. Your shadowy magic allows you to command darkness, undeath, and woe."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Shadow Spells (XPHB)__: When you reach a Sorcerer level specified in the Shadow Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Shadow Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Shadow Spells",
+       "headers": [
+        "Sorcerer Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Bane, Darkness, Inflict Wounds, Pass Without Trace"
+        ],
+        [
+         "5",
+         "Hunger of Hadar, Nondetection"
+        ],
+        [
+         "7",
+         "Greater Invisibility, Phantasmal Killer"
+        ],
+        [
+         "9",
+         "Contagion, Creation"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Power Of Shadow (XPHB)__: You gain the following benefits."
+     },
+     {
+      "name": "Eyes of the Dark",
+      "type": "text",
+      "value": "You have Darkvision with a range of 120 feet and Blindsight with a range of 10 feet. In addition, if a spell you cast creates an area of Darkness, you can see normally through that spell's Darkness."
+     },
+     {
+      "name": "Strength of the Grave",
+      "type": "text",
+      "value": "If you would drop to 0 Hit Points and not die outright, you can make a Charisma saving throw (DC 5 plus the damage taken). On a successful save, your Hit Points instead change to a number equal to your Charisma modifier plus your Sorcerer level. After you succeed on this save, you can't use this benefit again until you finish a Long Rest."
+     }
+    ],
+    "6": [
+     {
+      "name": "Shadow (RHW) Features",
+      "type": "text",
+      "value": "You can call forth a howling creature of shadow to hound your foes. You can spend 3 Sorcery Points to cast __Summon Beast__ as a Bonus Action without expending a spell slot, without preparing the spell, and without Material components. The summoned creature appears as a beast made of shadow, and enemies within 5 feet of the summoned creature have Disadvantage on saving throws against spells you cast."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Whenever you cast the spell, you can modify it so that it doesn't require *Concentration*. If you do so, the spell's duration becomes 1 minute for that casting, and the spell ends early if you cast the spell again."
+     }
+    ],
+    "14": [
+     {
+      "name": "Shadow (RHW) Features",
+      "type": "text",
+      "value": "While you are in Dim Light or Darkness, you can take a Bonus Action to teleport up to 120 feet to an unoccupied space you can see that is also in Dim Light or Darkness."
+     }
+    ],
+    "18": [
+     {
+      "name": "Shadow (RHW) Features",
+      "type": "text",
+      "value": "When you use Innate Sorcery, you can adopt a shadowy form, gaining the benefits below while your Innate Sorcery is active or until you end the form (no action required). Once you use this feature, you can't use it again until you finish a Long Rest unless you spend 6 Sorcery Points (no action required) to restore your use of it."
+     },
+     {
+      "name": "Incorporeal Movement",
+      "type": "text",
+      "value": "You can move through creatures and objects as if they were Difficult Terrain, but you take **1d10** Force damage if you end your turn inside a creature or an object."
+     },
+     {
+      "name": "Shadow Resilience",
+      "type": "text",
+      "value": "You have Resistance to all damage except Force and Radiant damage."
+     }
+    ]
+   },
    "Spellfire (FRHOF)": {
     "3": [
      {
@@ -51394,6 +52922,141 @@
       "value": "Once you use this feature, you can't use it again until you finish a short or long rest."
      }
     ]
+   },
+   "Undead (RHW)": {
+    "3": [
+     {
+      "name": "Undead (RHW) Features",
+      "type": "text",
+      "value": "*Defy Death for Profane Power*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You've made a pact with a creature that defies the cycle of life and death: a powerful lich, a vampire, or another entity of undeath. Having once been mortal, these ancient patrons know firsthand the paths of ambition and the routes past the doors of death. They eagerly share this profane knowledge and other secrets with those who work their will among the living."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Form Of Dread (XPHB)__: As a Bonus Action, you transform into an avatar of your patron's dreadful power, gaining the benefits below for 1 minute, until you have the Incapacitated condition, or until you end the form (no action required). You can transform a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+     },
+     {
+      "name": "Facsimile of Life",
+      "type": "text",
+      "value": "You gain Temporary Hit Points equal to 1d10 plus your Warlock level."
+     },
+     {
+      "name": "Fearless Form",
+      "type": "text",
+      "value": "You have Immunity to the Frightened condition. If you are Frightened when you transform, the condition immediately ends for you."
+     },
+     {
+      "name": "Frightful Avatar",
+      "type": "text",
+      "value": "Once per turn, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Frightened condition until the end of your next turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Undead Spells (XPHB)__: The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Undead Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Undead Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Undead Spells",
+       "headers": [
+        "Warlock Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Bane, Blindness/Deafness, Phantasmal Force, Ray of Sickness"
+        ],
+        [
+         "5",
+         "Speak with Dead, Summon Undead"
+        ],
+        [
+         "7",
+         "Greater Invisibility, Phantasmal Killer"
+        ],
+        [
+         "9",
+         "Antilife Shell, Cloudkill"
+        ]
+       ]
+      }
+     }
+    ],
+    "6": [
+     {
+      "name": "Undead (RHW) Features",
+      "type": "text",
+      "value": "Your patron's powers have a profound effect on your body and magic, granting you the following benefits."
+     },
+     {
+      "name": "Arcane Necrosis",
+      "type": "text",
+      "value": "Necrotic damage from your attacks, Warlock spells, and Warlock features ignores Resistance to Necrotic damage. Once per turn when you cast a spell that deals damage, you can change that spell's damage type to Necrotic."
+     },
+     {
+      "name": "Dreaded Necrosis",
+      "type": "text",
+      "value": "When you hit a creature with an attack roll and deal Necrotic damage while using your Form of Dread, you can roll one additional damage die when determining the Necrotic damage the target takes. You can use this benefit only once per turn."
+     },
+     {
+      "name": "Undead Endurance",
+      "type": "text",
+      "value": "You don't gain Exhaustion levels from dehydration, malnutrition, or suffocation. In addition, you don't need to sleep, and magic can't put you to sleep."
+     }
+    ],
+    "10": [
+     {
+      "name": "Undead (RHW) Features",
+      "type": "text",
+      "value": "Your connection to undeath saturates your body. You gain the following benefits."
+     },
+     {
+      "name": "Necrotic Resilience",
+      "type": "text",
+      "value": "You have Resistance to Necrotic damage. While using your Form of Dread, you have Immunity to Necrotic damage."
+     },
+     {
+      "name": "Unholy Resuscitation",
+      "type": "text",
+      "value": "If you drop to 0 Hit Points and don't die outright, you can cause your body to erupt with deathly energy. Each creature of your choice in a 30-foot Emanation originating from you makes a Constitution saving throw against your spell save DC, taking Necrotic damage equal to 2d10 plus your Charisma modifier on a failed save or half as much damage on a successful one. Your Hit Points then change to twice your Warlock level, and you gain 1 Exhaustion level."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
+     }
+    ],
+    "14": [
+     {
+      "name": "Undead (RHW) Features",
+      "type": "text",
+      "value": "Your Form of Dread improves, granting you the following benefits while you are using it."
+     },
+     {
+      "name": "Dread Resistance",
+      "type": "text",
+      "value": "You have Resistance to Bludgeoning, Piercing, and Slashing damage."
+     },
+     {
+      "name": "Ghostly Flight",
+      "type": "text",
+      "value": "You have a Fly Speed equal to your Speed and can hover. You can move through creatures and objects as if they were Difficult Terrain, but you take **1d10** Force damage if you end your turn inside a creature or an object."
+     },
+     {
+      "name": "Profane Casting",
+      "type": "text",
+      "value": "Whenever you cast a Warlock spell from the Conjuration or Necromancy school, you cast it without any Verbal, Somatic, or Material components, except Material components that are costly or consumed."
+     }
+    ]
    }
   },
   "reprint": {
@@ -53261,6 +54924,141 @@
       "name": "",
       "type": "text",
       "value": "Once you use this feature, you can't use it again until you finish a short or long rest."
+     }
+    ]
+   },
+   "Undead (RHW)": {
+    "3": [
+     {
+      "name": "Undead (RHW) Features",
+      "type": "text",
+      "value": "*Defy Death for Profane Power*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You've made a pact with a creature that defies the cycle of life and death: a powerful lich, a vampire, or another entity of undeath. Having once been mortal, these ancient patrons know firsthand the paths of ambition and the routes past the doors of death. They eagerly share this profane knowledge and other secrets with those who work their will among the living."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Form Of Dread (XPHB)__: As a Bonus Action, you transform into an avatar of your patron's dreadful power, gaining the benefits below for 1 minute, until you have the Incapacitated condition, or until you end the form (no action required). You can transform a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest."
+     },
+     {
+      "name": "Facsimile of Life",
+      "type": "text",
+      "value": "You gain Temporary Hit Points equal to 1d10 plus your Warlock level."
+     },
+     {
+      "name": "Fearless Form",
+      "type": "text",
+      "value": "You have Immunity to the Frightened condition. If you are Frightened when you transform, the condition immediately ends for you."
+     },
+     {
+      "name": "Frightful Avatar",
+      "type": "text",
+      "value": "Once per turn, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Frightened condition until the end of your next turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Undead Spells (XPHB)__: The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Undead Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Undead Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Undead Spells",
+       "headers": [
+        "Warlock Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Bane, Blindness/Deafness, Phantasmal Force, Ray of Sickness"
+        ],
+        [
+         "5",
+         "Speak with Dead, Summon Undead"
+        ],
+        [
+         "7",
+         "Greater Invisibility, Phantasmal Killer"
+        ],
+        [
+         "9",
+         "Antilife Shell, Cloudkill"
+        ]
+       ]
+      }
+     }
+    ],
+    "6": [
+     {
+      "name": "Undead (RHW) Features",
+      "type": "text",
+      "value": "Your patron's powers have a profound effect on your body and magic, granting you the following benefits."
+     },
+     {
+      "name": "Arcane Necrosis",
+      "type": "text",
+      "value": "Necrotic damage from your attacks, Warlock spells, and Warlock features ignores Resistance to Necrotic damage. Once per turn when you cast a spell that deals damage, you can change that spell's damage type to Necrotic."
+     },
+     {
+      "name": "Dreaded Necrosis",
+      "type": "text",
+      "value": "When you hit a creature with an attack roll and deal Necrotic damage while using your Form of Dread, you can roll one additional damage die when determining the Necrotic damage the target takes. You can use this benefit only once per turn."
+     },
+     {
+      "name": "Undead Endurance",
+      "type": "text",
+      "value": "You don't gain Exhaustion levels from dehydration, malnutrition, or suffocation. In addition, you don't need to sleep, and magic can't put you to sleep."
+     }
+    ],
+    "10": [
+     {
+      "name": "Undead (RHW) Features",
+      "type": "text",
+      "value": "Your connection to undeath saturates your body. You gain the following benefits."
+     },
+     {
+      "name": "Necrotic Resilience",
+      "type": "text",
+      "value": "You have Resistance to Necrotic damage. While using your Form of Dread, you have Immunity to Necrotic damage."
+     },
+     {
+      "name": "Unholy Resuscitation",
+      "type": "text",
+      "value": "If you drop to 0 Hit Points and don't die outright, you can cause your body to erupt with deathly energy. Each creature of your choice in a 30-foot Emanation originating from you makes a Constitution saving throw against your spell save DC, taking Necrotic damage equal to 2d10 plus your Charisma modifier on a failed save or half as much damage on a successful one. Your Hit Points then change to twice your Warlock level, and you gain 1 Exhaustion level."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
+     }
+    ],
+    "14": [
+     {
+      "name": "Undead (RHW) Features",
+      "type": "text",
+      "value": "Your Form of Dread improves, granting you the following benefits while you are using it."
+     },
+     {
+      "name": "Dread Resistance",
+      "type": "text",
+      "value": "You have Resistance to Bludgeoning, Piercing, and Slashing damage."
+     },
+     {
+      "name": "Ghostly Flight",
+      "type": "text",
+      "value": "You have a Fly Speed equal to your Speed and can hover. You can move through creatures and objects as if they were Difficult Terrain, but you take **1d10** Force damage if you end your turn inside a creature or an object."
+     },
+     {
+      "name": "Profane Casting",
+      "type": "text",
+      "value": "Whenever you cast a Warlock spell from the Conjuration or Necromancy school, you cast it without any Verbal, Somatic, or Material components, except Material components that are costly or consumed."
      }
     ]
    }
