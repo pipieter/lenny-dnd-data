@@ -98,7 +98,7 @@ const FeatCategoryMap: Record<string, string> = {
     D: 'Dragonmark',
     PlanarPact: 'Planar Pact',
     PPact: 'Planar Pact',
-    DG: "Dark Gift"
+    DG: 'Dark Gift',
 };
 
 function getFeatPrerequisites(feat: Feat): string | null {
