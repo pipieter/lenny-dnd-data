@@ -1880,6 +1880,22 @@
   "reprint": null
  },
  {
+  "name": "Pack Fighting",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/feats.html#pack%20fighting_dndbeyonddrops",
+  "type": "Fighting Style",
+  "prerequisite": "Fighting Style",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you make a melee attack with a weapon or an Unarmed Strike against a creature, you gain a +1 bonus to the damage roll if at least one of your allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition. If at least one ally within 5 feet of the creature also has this feat and doesn't have the Incapacitated condition, this bonus increases to +2."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Prone Defense",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#prone%20defense_grimhollowpg24",
@@ -1901,6 +1917,22 @@
     "name": "Hop Up",
     "type": "text",
     "value": "When you have the Prone condition, you can right yourself with only 5 feet of movement."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Prone Fighting",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/feats.html#prone%20fighting_dndbeyonddrops",
+  "type": "Fighting Style",
+  "prerequisite": "Fighting Style",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you have the Prone condition, you don't have Disadvantage due to the Prone condition on attack rolls, and the Prone condition doesn't grant Advantage on attack rolls made against you."
    }
   ],
   "reprint": null
@@ -2112,6 +2144,32 @@
   "reprint": null
  },
  {
+  "name": "Shifting Combatant",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/feats.html#shifting%20combatant_dndbeyonddrops",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Weapon Mastery",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Domino Strike",
+    "type": "text",
+    "value": "When you hit a creature with a weapon and activate the Push mastery property to push that creature into a space occupied by a Large or smaller creature, you can force the creatures to collide. Each creature must succeed on a Constitution saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or have the Prone condition."
+   },
+   {
+    "name": "Fearless Leap",
+    "type": "text",
+    "value": "When you make a Long Jump, moving at least 10 feet immediately before the jump, and land in a space within 5 feet of two or more enemies, attack rolls made against you have Disadvantage until the start of your next turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Superior Shifting",
   "source": "ExploringEberron24",
   "url": "https://5e.tools/feats.html#superior%20shifting_exploringeberron24",
@@ -2221,6 +2279,32 @@
     "name": "Blending In",
     "type": "text",
     "value": "When using the Hide action to conceal yourself from creatures that aren't Hostile to you, you need only be Lightly Obscured and you may use Charisma instead of Dexterity for the check."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Tactical Combatant",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/feats.html#tactical%20combatant_dndbeyonddrops",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and 13 Strength or 13 Dexterity",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Buffering Strike",
+    "type": "text",
+    "value": "When you hit a creature with a weapon, you can gain Temporary Hit Points equal to the total number rolled on the weapon's damage dice. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest."
+   },
+   {
+    "name": "Honed Instincts",
+    "type": "text",
+    "value": "When you fail an ability check, you can roll 1d6 and add the number rolled to the ability check, potentially turning it into a success. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest."
    }
   ],
   "reprint": null
