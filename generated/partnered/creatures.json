@@ -11953,7 +11953,7 @@
  {
   "name": "Dingpot",
   "source": "CrookedMoon24",
-  "subtitle": "Tiny Construct",
+  "subtitle": "Tiny construct",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/CrookedMoon24/Dingpot.webp",
@@ -27332,7 +27332,7 @@
  {
   "name": "House of Horror",
   "source": "CrookedMoon24",
-  "subtitle": "Gargantuan Construct",
+  "subtitle": "Gargantuan construct",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/CrookedMoon24/House%20of%20Horror.webp",
@@ -28450,6 +28450,161 @@
     "value": "*Wisdom Saving Throw:* DC 19, each creature in a 30-foot Cone. A creature holding a keepsake from a loved one succeeds automatically. *Failure:* The creature has the Charmed condition until it takes damage. While charmed, it has the Incapacitated condition and must move as close to the hypnovulfen as possible by the safest route. The creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
    }
   ],
+  "reprint": null
+ },
+ {
+  "name": "Ice Elemental",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Large elemental",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#ice%20elemental_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Ice elementals are native to the Para-elemental Plane of Ice, where the Plane of Air and Plane of Water collide. The ice that makes up an ice elemental ranges in color from pale blue to frosty white to gray, although some are transparent. Sharp icicles protrude from their angular forms. The ice elementals can fire these icicles at enemies or use them to pierce foes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Ice elementals sometimes cross into mortal worlds where cold winds blow across even colder waters. These conditions most often occur in a world's polar regions or where the connections between the world and the Elemental Planes are particularly strong."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "1d6",
+      "The Ice Elemental's Body Features..."
+     ],
+     "rows": [
+      [
+       "1",
+       "Internal pockets of liquid water."
+      ],
+      [
+       "2",
+       "Misty patches puffing from it."
+      ],
+      [
+       "3",
+       "Ice tinted in shifting colors."
+      ],
+      [
+       "4",
+       "Slushy patches throughout its form."
+      ],
+      [
+       "5",
+       "Swirling patterns of snowflakes."
+      ],
+      [
+       "6",
+       "Tiny frozen fish trapped within."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "18",
+      "10",
+      "16",
+      "8",
+      "12",
+      "6"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+0",
+      "+3",
+      "-1",
+      "+1",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+0",
+      "+3",
+      "-1",
+      "+1",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 102 (12d10 + 36)",
+     "**Speed**: *walk* 30 Ft., *swim* 30 Ft.",
+     "**Resistances**: bludgeoning, piercing, slashing",
+     "**Immunities**: cold, poison; exhaustion, paralyzed, petrified, poisoned, unconscious",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Primordial (Aquan, Auran)",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Aversion to Fire",
+    "type": "text",
+    "value": "If the elemental takes Fire damage, its Piercing Form trait doesn't function on its next turn, and it has Disadvantage on attack rolls and ability checks until the end of its next turn."
+   },
+   {
+    "name": "Piercing Form",
+    "type": "text",
+    "value": "At the start of each of its turns, the elemental deals 5 (**1d10**) Piercing damage to any creature with 5 feet of it."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The elemental makes two Ice Claw attacks."
+   },
+   {
+    "name": "Ice Claw",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7, reach 10 ft. *Hit:* 11 (**2d6 + 4**) Slashing damage plus 7 (**2d6**) Cold damage."
+   },
+   {
+    "name": "Shard Spray (Recharge 4-6)",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 14, each creature in a 60-foot Cone. *Failure:* 11 (**2d10**) Piercing damage plus 10 (**3d6**) Cold damage, and the creature's Speed is reduced by 10 feet until the end of its next turn. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [],
   "reprint": null
  },
  {
@@ -34422,6 +34577,166 @@
   "reprint": null
  },
  {
+  "name": "Magma Elemental",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Large elemental",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#magma%20elemental_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Magma elementals are native to the Para-elemental Plane of Magma, where the Plane of Earth and Plane of Fire collide. The inner inferno that sustains magma elementals constantly spews forth more material. This allows the creatures to use pieces of themselves as weaponry, hurling roiling globs of magma at individual targets or throwing a large mass of lava that explodes to damage groups of foes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In mortal worlds, magma elementals are found in areas where strong volcanic activity is present. Eyewitnesses from inhabited areas destroyed by lava flows often sometimes report molten creatures at the vanguard of the lava, smashing and burning everything long before the lava arrives."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "1d6",
+      "The Magma Elemental's Body Contains..."
+     ],
+     "rows": [
+      [
+       "1",
+       "Coarse shards of basalt."
+      ],
+      [
+       "2",
+       "Flecks of sparkling quartz."
+      ],
+      [
+       "3",
+       "Floating carapaces of unknown origin."
+      ],
+      [
+       "4",
+       "Glossy chunks of obsidian."
+      ],
+      [
+       "5",
+       "Pale white lumps of pumice."
+      ],
+      [
+       "6",
+       "Tiny bits of diamond."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "18",
+      "14",
+      "16",
+      "8",
+      "10",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+2",
+      "+3",
+      "-1",
+      "+0",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+2",
+      "+3",
+      "-1",
+      "+0",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 102 (12d10 + 36)",
+     "**Speed**: *walk* 30 Ft., *burrow* 30 Ft.",
+     "**Resistances**: bludgeoning, cold, piercing, slashing",
+     "**Immunities**: fire, poison; exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Primordial (Ignan, Terran)",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Aversion to Cold",
+    "type": "text",
+    "value": "If the elemental takes Cold damage, its movement is reduced by 10 feet until the end of its next turn, and its Heat Aura trait doesn't function on its next turn."
+   },
+   {
+    "name": "Earth Passage",
+    "type": "text",
+    "value": "The elemental can burrow through nonmagical, unworked earth and stone and leaves a 5-foot-diameter tunnel in its wake."
+   },
+   {
+    "name": "Heat Aura",
+    "type": "text",
+    "value": "At the end of each of the elemental's turns, each creature in a 5-foot Emanation originating from the elemental takes 7 (**2d6**) Fire damage."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The elemental makes two Burning Slam attacks."
+   },
+   {
+    "name": "Burning Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7, reach 10 ft. *Hit:* 12 (**2d6 + 5**) Bludgeoning damage plus 7 (**2d6**) Fire damage."
+   },
+   {
+    "name": "Roiling Lava (Recharge 4-6)",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 14, each creature in a 20-foot-radius Sphere centered on a point the elemental can see within 120 feet. *Failure:* 18 (**4d8**) Fire damage. *Success* Half damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Magma Troll",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Large giant",
@@ -36484,6 +36799,167 @@
    }
   ],
   "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Mud Elemental",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Large elemental",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#mud%20elemental_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Mud elementals, also sometimes referred to as ooze elementals, are native to the Para-elemental Plane of Ooze, where the Plane of Earth and Plane of Water collide. Their natural form is a dripping blob of muck, but they can mold themselves into various forms with protrusions that can look like arms, legs, or tentacles."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Mud elementals encountered in mortal worlds might appear anywhere that earth and water come into contact: shorelines, river banks, or rainforests. They are seen most frequently in bogs, fens, and marshes, where they can exist in their simplest form. Mortals attempting to drain bogs or harvest peat might run afoul of these creatures."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "1d6",
+      "The Mud Elemental's Body Contains..."
+     ],
+     "rows": [
+      [
+       "1",
+       "Bits of rotting foliage."
+      ],
+      [
+       "2",
+       "Patches of green algae."
+      ],
+      [
+       "3",
+       "The remains of engulfed creatures."
+      ],
+      [
+       "4",
+       "Rocks worn flat and smooth."
+      ],
+      [
+       "5",
+       "Striations of different-colored soil."
+      ],
+      [
+       "6",
+       "Tiny salamanders, newts, and lizards."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "18",
+      "14",
+      "14",
+      "8",
+      "10",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+2",
+      "+2",
+      "-1",
+      "+0",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+2",
+      "+2",
+      "-1",
+      "+0",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 82 (11d10 + 22)",
+     "**Speed**: *walk* 40 Ft., *swim* 40 Ft.",
+     "**Resistances**: bludgeoning, cold, fire, piercing, slashing",
+     "**Immunities**: poison; exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Primordial (Aquan, Terran)",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Aversion to Cold and Fire",
+    "type": "text",
+    "value": "If the elemental takes Cold or Fire damage, its Speed becomes 0, and it can't use Engulf until the end of its next turn. However, a creature Grappled by the elemental has Disadvantage on ability checks made to escape the grapple during that time as well."
+   },
+   {
+    "name": "Mud Form",
+    "type": "text",
+    "value": "The elemental can move through a space as narrow as 1 foot without expending extra movement to do so."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The elemental makes two attacks, using Sticky Slam or Jet in any combination."
+   },
+   {
+    "name": "Sticky Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7, reach 10 ft. *Hit:* 14 (**3d6 + 4**) Bludgeoning damage."
+   },
+   {
+    "name": "Jet",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +7, range 60 ft. *Hit:* 17 (**3d8 + 4**) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Engulf",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 15, one Medium or smaller creature within 10 feet. *Failure:* The target is pulled into the elemental's space and has the Grappled condition (escape DC 15). Until the grapple ends, the target has the Blinded and Restrained conditions, and it takes 10 (**3d6**) Bludgeoning damage at the start of each of its turns. When the elemental moves, the Grappled target moves with it, costing it no extra movement. The elemental can have up to two creatures Grappled by this Bonus Action at a time."
+   }
+  ],
   "reprint": null
  },
  {
@@ -49607,6 +50083,162 @@
    }
   ],
   "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Smoke Elemental",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Large elemental",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#smoke%20elemental_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Smoke elementals are native to the Para-elemental Plane of Ash, where the Plane of Air and Plane of Fire collide. The ash that makes up a smoke elemental ranges from faint motes to fiery zephyrs. Its component mixture can cause breathing problems when inhaled, and it causes burning in the eyes when it attacks. Ironically, a strong wind can damage a smoke elemental, diluting its ashy substance."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Smoke elementals rarely travel to other planes, unless they are summoned by magic or travel through a portal. They might appear, however, in places where someone from a mortal world opens a portal to the Elemental Plane of Fire to immolate, to power a forge, or to drive arcane machinery. Those fighting large conflagrations all too often find themselves contending with confused and hostile smoke elementals that get pulled into their world."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "1d6",
+      "The Smoke Elemental's Body Features..."
+     ],
+     "rows": [
+      [
+       "1",
+       "Aromas of fresh meat."
+      ],
+      [
+       "2",
+       "Fiery motes of flaming ash."
+      ],
+      [
+       "3",
+       "Fireflies."
+      ],
+      [
+       "4",
+       "Flares of various colors."
+      ],
+      [
+       "5",
+       "Swirling patches of white and black smoke."
+      ],
+      [
+       "6",
+       "Wispy spirits of those it's killed."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "12",
+      "20",
+      "12",
+      "8",
+      "10",
+      "6"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+5",
+      "+1",
+      "-1",
+      "+0",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+1",
+      "+5",
+      "+1",
+      "-1",
+      "+0",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 78 (12d10 + 12)",
+     "**Speed**: *walk* 20 Ft., *fly* 90 Ft. (hover), *canHover* (hover)",
+     "**Resistances**: bludgeoning, piercing, slashing",
+     "**Immunities**: fire, poison; exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Primordial (Auran, Ignan)",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Aversion to Wind",
+    "type": "text",
+    "value": "If the elemental starts its turn within a strong wind (such as one created by the __Gust of Wind__ spell), it makes a DC 10 Constitution saving throw. On a failed save, the elemental has the Incapacitated condition until the end of its turn."
+   },
+   {
+    "name": "Smoke Form",
+    "type": "text",
+    "value": "The elemental can enter a creature's space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The elemental makes two Smoky Tendril attacks."
+   },
+   {
+    "name": "Smoky Tendril",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +8, reach 15 ft. *Hit:* 8 (**1d6 + 5**) Bludgeoning damage plus 2 (**1d4**) Fire damage, and the target has the Blinded condition until the end of its next turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Asphyxiate (Recharge 4-6)",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 12, one creature in the elemental's space. *Failure:* 14 (**4d6**) Fire damage, and the target gains 1 Exhaustion level. All Exhaustion levels gained from this Bonus Action are removed after 1 minute."
+   }
+  ],
   "reprint": null
  },
  {
@@ -63385,7 +64017,7 @@
  {
   "name": "Witchwoven",
   "source": "CrookedMoon24",
-  "subtitle": "Tiny Construct",
+  "subtitle": "Tiny construct",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/CrookedMoon24/Witchwoven.webp",
