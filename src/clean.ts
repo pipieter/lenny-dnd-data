@@ -377,6 +377,12 @@ function filter(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function font(text: string, noFormat: boolean): string {
+    // Font is mainly used to render certain symbols, like ♡ ♥ ♠ ♦ ♣ in a special style.
+    text = text.replaceAll(pattern('font', 2), `$1`);
+    return text;
+}
+
 function footnote(text: string, noFormat: boolean): string {
     // Footnote allows people to hover over and see extra information in 5e.tools, we can't do this in discord.
     text = text.replaceAll(pattern('footnote', 2), `$1 ($2)`);
@@ -707,6 +713,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         facility,
         feat,
         filter,
+        font,
         footnote,
         hazard,
         hit,
