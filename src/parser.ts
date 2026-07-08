@@ -3,6 +3,7 @@ import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, g
 import { AbilityScores, Advantages, Alignments, SpellSchools } from './5etools-conversion/data';
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
+import { SpellDamage } from './dnd/spells';
 
 export interface Range {
     type: 'range';
@@ -269,22 +270,96 @@ export function parseRange(range: any): string {
     }
 }
 
+export function parseMaterialComponents(components: any): string | null {
+    if (!components.m) return null;
+    const material = components.m;
+    if (typeof material === 'string') return material;
+    return material.text;
+}
+
 export function parseComponents(components: any): string {
     const result = [];
 
     if ('v' in components) result.push('V');
     if ('s' in components) result.push('S');
     if ('m' in components) {
-        let material = components.m;
-        if (typeof material != 'string') {
-            material = material.text;
-        }
-
+        const material = parseMaterialComponents(components);
         if (material) result.push(`M (${material})`);
         else result.push('M');
     }
 
     return result.join(', ');
+}
+
+export function parseSpellDamage(spell: any): SpellDamage[] | null {
+    if (spell.scalingLevelDice) {
+        const results: SpellDamage[] = [];
+        const scalingList = Array.isArray(spell.scalingLevelDice) ? spell.scalingLevelDice : [spell.scalingLevelDice];
+
+        for (const scaleObj of scalingList) {
+            if (scaleObj && scaleObj.scaling) {
+                const scaling: { [key: string]: string } = {};
+                for (const [key, value] of Object.entries(scaleObj.scaling)) {
+                    scaling[String(key)] = String(value);
+                }
+                results.push({ type: 'level', scaling });
+            }
+        }
+
+        return results;
+    }
+
+    const raw = [...(spell.entries || [])];
+    if (spell.entriesHigherLevel) {
+        raw.push(...spell.entriesHigherLevel);
+    }
+
+    const entriesText: string[] = [];
+    function pushEntryTexts(entries: any) {
+        for (const entry of entries) {
+            if (typeof entry === 'string') {
+                entriesText.push(entry);
+            } else if (entry && entry.entries) {
+                pushEntryTexts(entry.entries);
+            }
+        }
+    }
+    pushEntryTexts(raw);
+
+    const scaleDamageRegex = /{@scaledamage\s+([^}]+)}/;
+    for (const entry of entriesText) {
+        const match = entry.match(scaleDamageRegex);
+        if (!match) continue;
+
+        const tagContent = match[1];
+        const [baseDamage, levels, scalingDice] = tagContent.split('|');
+
+        const baseLevel = parseInt(levels.split('-')[0]);
+        const baseDiceMatch = baseDamage.match(/^(\d+)(d\d+)/);
+        const scaleDiceMatch = scalingDice.match(/^(\d+)/);
+
+        if (!baseDiceMatch || !scaleDiceMatch) continue;
+
+        const baseDiceCount = parseInt(baseDiceMatch[1]);
+        const diceFaces = baseDiceMatch[2];
+        const scaleDiceCount = parseInt(scaleDiceMatch[1]);
+
+        const scaling: { [key: string]: string } = {};
+
+        for (let lvl = baseLevel; lvl <= 9; lvl++) {
+            if (lvl === baseLevel) {
+                scaling[String(lvl)] = baseDamage;
+            } else {
+                const levelDiff = lvl - baseLevel;
+                const currentDiceCount = baseDiceCount + levelDiff * scaleDiceCount;
+                scaling[String(lvl)] = `${currentDiceCount}${diceFaces}`;
+            }
+        }
+
+        return [{ type: 'upcast', scaling }];
+    }
+
+    return null;
 }
 
 export function parseAlignments(alignments: string[]): string[] {
