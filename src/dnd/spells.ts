@@ -6,8 +6,10 @@ import {
     parseDescriptions,
     parseDurationTime,
     parseImageUrl,
+    parseMaterialComponents,
     parseRange,
     parseReprint,
+    parseSpellDamage,
     parseSpellLevel,
     parseSpellSchool,
     ReprintData,
@@ -20,20 +22,37 @@ interface Caster {
     source: string;
 }
 
+export interface SpellDamage {
+    type: 'level' | 'upcast';
+    scaling: { [key: number]: string };
+}
+
 export interface ParsedSpell {
     name: string;
     source: string;
     level: string;
     school: string;
-    casting_time: string;
+    castingTime: string;
     range: string;
     components: string;
+    material: string | null;
     duration: string;
     url: string;
     image: string | null;
     description: Description[];
     classes: Caster[];
     reprint: ReprintData | null;
+
+    damageInflict: string[];
+    damageResist: string[];
+    damageVulnerable: string[];
+    damageImmune: string[];
+    conditionInflict: string[];
+    conditionImmune: string[];
+    savingThrow: string[];
+    affectsCreatureType: string[];
+
+    scaledDamage: SpellDamage[] | null;
 }
 
 function getSpellImage(fluffs: any[], name: string, source: string): string | null {
@@ -91,22 +110,26 @@ function getSpell(spell: any, fluffs: any[], sources: any): ParsedSpell {
         source: spell.source,
         level: parseSpellLevel(spell.level),
         school: parseSpellSchool(spell.school),
-        casting_time: parseCastingTime(spell.time, spell.meta),
+        castingTime: parseCastingTime(spell.time, spell.meta),
         range: parseRange(spell.range),
         components: parseComponents(spell.components),
+        material: parseMaterialComponents(spell.components),
         duration: parseDurationTime(spell.duration),
         url: getSpellsUrl(spell.name, spell.source),
         image: getSpellImage(fluffs, spell.name, spell.source),
         description: getSpellDescription(spell),
         classes: getCasters(spell, sources),
         reprint: parseReprint(spell),
+        damageInflict: spell.damageInflict ?? [],
+        damageResist: spell.damageResist ?? [],
+        damageVulnerable: spell.damageVulnerable ?? [],
+        damageImmune: spell.damageImmune ?? [],
+        conditionInflict: spell.conditionInflict ?? [],
+        conditionImmune: spell.conditionImmune ?? [],
+        savingThrow: spell.savingThrow ?? [],
+        affectsCreatureType: spell.affectsCreatureType ?? [],
+        scaledDamage: parseSpellDamage(spell),
     };
-}
-
-interface GetSpellsArgs {
-    paths: string[];
-    fluffPaths?: string[];
-    sourcesPaths?: string[];
 }
 
 export function getSpells(databank: Databank): ParsedSpell[] {

@@ -4,9 +4,10 @@
   "source": "ValdaPlayerPack",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "1 reaction, which you take when you see an attack roll hit a creature within 60 feet of yourself",
+  "castingTime": "1 reaction, which you take when you see an attack roll hit a creature within 60 feet of yourself",
   "range": "60 feet",
   "components": "V, S, M (a drop of oil or molasses)",
+  "material": "a drop of oil or molasses",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#accelerate%2Fdecelerate_valdaplayerpack",
   "image": null,
@@ -50,16 +51,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Ancestral Communion",
   "source": "CrookedMoon14",
   "level": "Level 1",
   "school": "Divination",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#ancestral%20communion_crookedmoon14",
   "image": null,
@@ -92,16 +103,26 @@
    "name": "Ancestral Communion",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Ancestral Communion",
   "source": "CrookedMoon24",
   "level": "Level 1",
   "school": "Divination",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#ancestral%20communion_crookedmoon24",
   "image": null,
@@ -130,16 +151,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Antiballistics Field",
   "source": "ValdaGunslinger",
   "level": "Level 6",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (40 feet)",
   "components": "V, S, M (a pinch of wet gunpowder)",
+  "material": "a pinch of wet gunpowder",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#antiballistics%20field_valdagunslinger",
   "image": null,
@@ -160,16 +191,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Arboreal Curse",
   "source": "GrimHollowPG24",
   "level": "Level 7",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a cup of sap)",
+  "material": "a cup of sap",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#arboreal%20curse_grimhollowpg24",
   "image": null,
@@ -201,16 +242,31 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "petrified",
+   "restrained"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Arcane Aegis",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "S, M (a statuette of a hedgehog)",
+  "material": "a statuette of a hedgehog",
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#arcane%20aegis_grimhollowpg24",
   "image": null,
@@ -232,16 +288,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Assisted Aim",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#assisted%20aim_grimhollowpg24",
   "image": null,
@@ -279,16 +345,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Astral Flood",
   "source": "DnDBeyondDrops",
   "level": "Level 3",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Cone (30 feet)",
   "components": "V, S, M (a mixture of water and powdered silver)",
+  "material": "a mixture of water and powdered silver",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#astral%20flood_dndbeyonddrops",
   "image": null,
@@ -350,16 +426,33 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "cold",
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "blinded"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Aundair's Silent Sanctum",
   "source": "ExploringEberron24",
   "level": "Cantrip",
   "school": "Illusion",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (5 feet)",
   "components": "S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#aundair's%20silent%20sanctum_exploringeberron24",
   "image": null,
@@ -393,16 +486,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Ballistic Smite",
   "source": "ValdaGunslinger",
   "level": "Level 1",
   "school": "Evocation",
-  "casting_time": "Bonus action, which you take immediately after hitting a creature with a Ranged weapon",
+  "castingTime": "Bonus action, which you take immediately after hitting a creature with a Ranged weapon",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#ballistic%20smite_valdagunslinger",
   "image": null,
@@ -424,16 +527,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Binding Pledge",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Divination",
-  "casting_time": "1 minute or Ritual",
+  "castingTime": "1 minute or Ritual",
   "range": "Touch",
   "components": "V, S, M (a book of religious or legal importance)",
+  "material": "a book of religious or legal importance",
   "duration": "10 days",
   "url": "https://5e.tools/spells.html#binding%20pledge_grimhollowpg24",
   "image": null,
@@ -463,16 +576,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Bloat",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S, M (a bean)",
+  "material": "a bean",
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#bloat_grimhollowpg24",
   "image": null,
@@ -501,16 +624,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Blood Bolt",
   "source": "CrookedMoon14",
   "level": "Cantrip",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#blood%20bolt_crookedmoon14",
   "image": null,
@@ -549,16 +686,38 @@
    "name": "Blood Bolt",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d6",
+     "5": "2d6",
+     "11": "3d6",
+     "17": "4d6"
+    }
+   }
+  ]
  },
  {
   "name": "Blood Bolt",
   "source": "CrookedMoon24",
   "level": "Cantrip",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#blood%20bolt_crookedmoon24",
   "image": null,
@@ -588,16 +747,38 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d6",
+     "5": "2d6",
+     "11": "3d6",
+     "17": "4d6"
+    }
+   }
+  ]
  },
  {
   "name": "Blood Bond",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a rag soaked in your own blood)",
+  "material": "a rag soaked in your own blood",
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#blood%20bond_grimhollowpg24",
   "image": null,
@@ -629,16 +810,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Blood Rush",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#blood%20rush_grimhollowpg24",
   "image": null,
@@ -664,16 +855,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Blood Sacrifice",
   "source": "CrookedMoon14",
   "level": "Level 2",
   "school": "Necromancy",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S, M (a drop of your own blood)",
+  "material": "a drop of your own blood",
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#blood%20sacrifice_crookedmoon14",
   "image": null,
@@ -707,16 +908,28 @@
    "name": "Blood Sacrifice",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Blood Sacrifice",
   "source": "CrookedMoon24",
   "level": "Level 2",
   "school": "Necromancy",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S, M (a drop of your own blood)",
+  "material": "a drop of your own blood",
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#blood%20sacrifice_crookedmoon24",
   "image": null,
@@ -746,16 +959,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Blood Tide",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a shell)",
+  "material": "a shell",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#blood%20tide_grimhollowpg24",
   "image": null,
@@ -790,16 +1015,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Blood Wisp",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a ruby worth 10 GP)",
+  "material": "a ruby worth 10 GP",
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#blood%20wisp_grimhollowpg24",
   "image": null,
@@ -834,16 +1073,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Bloodbane Rune",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#bloodbane%20rune_grimhollowpg24",
   "image": null,
@@ -870,16 +1119,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Bloodletter",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Necromancy",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Touch",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#bloodletter_grimhollowpg24",
   "image": null,
@@ -914,16 +1173,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Body Warping of Gorgoroth",
   "source": "CthulhuTorchlight",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#body%20warping%20of%20gorgoroth_cthulhutorchlight",
   "image": null,
@@ -953,16 +1226,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Boil Blood",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#boil%20blood_grimhollowpg24",
   "description": [
@@ -994,16 +1277,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "poisoned"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Breath of the Deep",
   "source": "CthulhuTorchlight",
   "level": "Level 2",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#breath%20of%20the%20deep_cthulhutorchlight",
   "image": null,
@@ -1028,16 +1323,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "bludgeoning"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Buried Alive",
   "source": "CrookedMoon14",
   "level": "Level 4",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a pinch of grave dirt)",
+  "material": "a pinch of grave dirt",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#buried%20alive_crookedmoon14",
   "image": null,
@@ -1075,16 +1382,30 @@
    "name": "Buried Alive",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Buried Alive",
   "source": "CrookedMoon24",
   "level": "Level 4",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a pinch of grave dirt)",
+  "material": "a pinch of grave dirt",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#buried%20alive_crookedmoon24",
   "image": null,
@@ -1118,16 +1439,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Burst Forth",
   "source": "GrimHollowPG24",
   "level": "Level 7",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "200 feet",
   "components": "V",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#burst%20forth_grimhollowpg24",
   "image": null,
@@ -1157,16 +1492,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Buzzing Bee",
   "source": "DnDBeyondDrops",
   "level": "Level 1",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S, M (a dab of honey)",
+  "material": "a dab of honey",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#buzzing%20bee_dndbeyonddrops",
   "image": null,
@@ -1216,16 +1563,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Call Deity",
   "source": "CthulhuTorchlight",
   "level": "Level 8",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#call%20deity_cthulhutorchlight",
   "image": null,
@@ -1262,16 +1621,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Call of the Wild",
   "source": "CrookedMoon14",
   "level": "Level 4",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (100 feet)",
   "components": "V, S, M (a bit of animal fur or hide)",
+  "material": "a bit of animal fur or hide",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#call%20of%20the%20wild_crookedmoon14",
   "image": null,
@@ -1304,16 +1673,30 @@
    "name": "Call of the Wild",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "charmed"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Call of the Wild",
   "source": "CrookedMoon24",
   "level": "Level 4",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (100 feet)",
   "components": "V, S, M (a bit of animal fur or hide)",
+  "material": "a bit of animal fur or hide",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#call%20of%20the%20wild_crookedmoon24",
   "image": null,
@@ -1342,16 +1725,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "charmed"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Call the Rabid Beast",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a fang from a rabid animal)",
+  "material": "a fang from a rabid animal",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#call%20the%20rabid%20beast_grimhollowpg24",
   "image": null,
@@ -1404,16 +1801,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Calling Card",
   "source": "GrimHollowPG24",
   "level": "Cantrip",
   "school": "Illusion",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "S, M (a stamp carved like the mark left by your calling card)",
+  "material": "a stamp carved like the mark left by your calling card",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#calling%20card_grimhollowpg24",
   "image": null,
@@ -1442,16 +1851,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Captivate Undead",
   "source": "CrookedMoon14",
   "level": "Level 1",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a pinch of bone dust)",
+  "material": "a pinch of bone dust",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#captivate%20undead_crookedmoon14",
   "image": null,
@@ -1493,16 +1912,30 @@
    "name": "Captivate Undead",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "charmed"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Captivate Undead",
   "source": "CrookedMoon24",
   "level": "Level 1",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a pinch of bone dust)",
+  "material": "a pinch of bone dust",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#captivate%20undead_crookedmoon24",
   "image": null,
@@ -1540,16 +1973,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "charmed"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Cat's Spring",
   "source": "CthulhuTorchlight",
   "level": "Cantrip",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#cat's%20spring_cthulhutorchlight",
   "image": null,
@@ -1587,16 +2034,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Chain of Conviction",
   "source": "CrookedMoon14",
   "level": "Level 2",
   "school": "Conjuration",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "30 feet",
   "components": "S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#chain%20of%20conviction_crookedmoon14",
   "image": null,
@@ -1631,16 +2088,30 @@
    "name": "Chain of Conviction",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Chain of Conviction",
   "source": "CrookedMoon24",
   "level": "Level 2",
   "school": "Conjuration",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "30 feet",
   "components": "S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#chain%20of%20conviction_crookedmoon24",
   "image": null,
@@ -1671,16 +2142,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Chains of Beleth",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "100 feet",
   "components": "V, S, M (a chain link)",
+  "material": "a chain link",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#chains%20of%20beleth_grimhollowpg24",
   "image": null,
@@ -1729,16 +2214,33 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "bludgeoning",
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "restrained"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Chant of Thoth",
   "source": "CthulhuTorchlight",
   "level": "Cantrip",
   "school": "Divination",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "8 hours",
   "url": "https://5e.tools/spells.html#chant%20of%20thoth_cthulhutorchlight",
   "image": null,
@@ -1767,16 +2269,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Chorus of the Lost",
   "source": "CrookedMoon14",
   "level": "Level 2",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a silver bell worth 10+ GP)",
+  "material": "a silver bell worth 10+ GP",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#chorus%20of%20the%20lost_crookedmoon14",
   "image": null,
@@ -1818,16 +2330,32 @@
    "name": "Chorus of the Lost",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Chorus of the Lost",
   "source": "CrookedMoon24",
   "level": "Level 2",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a silver bell worth 10+ GP)",
+  "material": "a silver bell worth 10+ GP",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#chorus%20of%20the%20lost_crookedmoon24",
   "image": null,
@@ -1865,16 +2393,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Circle of Scarlet",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S, M (a piece of parchment with a circle drawn in humanoid blood)",
+  "material": "a piece of parchment with a circle drawn in humanoid blood",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#circle%20of%20scarlet_grimhollowpg24",
   "image": null,
@@ -1905,16 +2449,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Clue",
   "source": "ValdaPlayerPack",
   "level": "Level 1",
   "school": "Divination",
-  "casting_time": "Action or Ritual",
+  "castingTime": "Action or Ritual",
   "range": "Emanation (30 feet)",
   "components": "V, S, M (a magnifying glass and pipe)",
+  "material": "a magnifying glass and pipe",
   "duration": "10 minutes",
   "url": "https://5e.tools/spells.html#clue_valdaplayerpack",
   "image": null,
@@ -1951,16 +2507,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Clutch of Darkness",
   "source": "CthulhuTorchlight",
   "level": "Level 2",
   "school": "Conjuration",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#clutch%20of%20darkness_cthulhutorchlight",
   "image": null,
@@ -2000,16 +2566,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Concealed Shot",
   "source": "ValdaGunslinger",
   "level": "Cantrip",
   "school": "Illusion",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "S, M (a Ranged weapon)",
+  "material": "a Ranged weapon",
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#concealed%20shot_valdagunslinger",
   "image": null,
@@ -2042,16 +2618,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Concussive Burst",
   "source": "ExploringEberron24",
   "level": "Level 1",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S",
+  "material": null,
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#concussive%20burst_exploringeberron24",
   "image": null,
@@ -2077,16 +2663,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "deafened"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Confounding Shadows",
   "source": "CthulhuTorchlight",
   "level": "Cantrip",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#confounding%20shadows_cthulhutorchlight",
   "image": null,
@@ -2120,16 +2722,40 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d6",
+     "5": "2d6",
+     "11": "3d6",
+     "17": "4d6"
+    }
+   }
+  ]
  },
  {
   "name": "Conjure Cannonball",
   "source": "ValdaGunslinger",
   "level": "Level 3",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "600 feet",
   "components": "V, S, M (a small replica cannon)",
+  "material": "a small replica cannon",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#conjure%20cannonball_valdagunslinger",
   "image": null,
@@ -2155,16 +2781,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "bludgeoning"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Conjure Cover",
   "source": "ValdaGunslinger",
   "level": "Level 1",
   "school": "Conjuration",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "10 feet",
   "components": "V, S, M (a duck figurine)",
+  "material": "a duck figurine",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#conjure%20cover_valdagunslinger",
   "image": null,
@@ -2203,16 +2843,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Conjure Plants",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#conjure%20plants_grimhollowpg24",
   "image": null,
@@ -2252,16 +2902,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "slashing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Consume Mind",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a 1-ounce fresh or magically preserved portion of another creature's brain)",
+  "material": "a 1-ounce fresh or magically preserved portion of another creature's brain",
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#consume%20mind_grimhollowpg24",
   "image": null,
@@ -2296,16 +2960,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Consuming Pyre",
   "source": "CrookedMoon14",
   "level": "Level 4",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#consuming%20pyre_crookedmoon14",
   "image": null,
@@ -2344,16 +3018,32 @@
    "name": "Consuming Pyre",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "fire",
+   "necrotic",
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Consuming Pyre",
   "source": "CrookedMoon24",
   "level": "Level 4",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#consuming%20pyre_crookedmoon24",
   "image": null,
@@ -2388,16 +3078,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "fire",
+   "necrotic",
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Consumption",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Evocation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "60 feet",
   "components": "V, S, M (a malnourished leech)",
+  "material": "a malnourished leech",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#consumption_grimhollowpg24",
   "image": null,
@@ -2427,14 +3133,25 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Contact Deity",
   "source": "CthulhuTorchlight",
   "level": "Level 5",
   "school": "Divination",
-  "casting_time": "1 minute or Ritual",
+  "castingTime": "1 minute or Ritual",
   "range": "Self",
   "components": "V, S, M",
   "duration": "1 minute",
@@ -2478,16 +3195,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Create Mist of R'lyeh",
   "source": "CthulhuTorchlight",
   "level": "Level 1",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#create%20mist%20of%20r'lyeh_cthulhutorchlight",
   "image": null,
@@ -2512,16 +3239,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Creeping Death",
   "source": "GrimHollowPG24",
   "level": "Level 8",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#creeping%20death_grimhollowpg24",
   "image": null,
@@ -2547,16 +3286,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Creeping Rot",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#creeping%20rot_crookedmoon14",
   "image": null,
@@ -2608,16 +3359,32 @@
    "name": "Creeping Rot",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "poisoned"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Creeping Rot",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#creeping%20rot_crookedmoon24",
   "image": null,
@@ -2665,16 +3432,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "poisoned"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Creeping Touch",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#creeping%20touch_grimhollowpg24",
   "image": null,
@@ -2708,16 +3491,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Crimson Harvest",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (15 feet)",
   "components": "V, S, M (a vial of blood)",
+  "material": "a vial of blood",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#crimson%20harvest_crookedmoon14",
   "image": null,
@@ -2756,16 +3551,30 @@
    "name": "Crimson Harvest",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Crimson Harvest",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (15 feet)",
   "components": "V, S, M (a vial of blood)",
+  "material": "a vial of blood",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#crimson%20harvest_crookedmoon24",
   "image": null,
@@ -2800,16 +3609,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Crimson Lash",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Conjuration",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#crimson%20lash_grimhollowpg24",
   "image": null,
@@ -2850,16 +3673,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Crooked Ward",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a five-pointed wicker star)",
+  "material": "a five-pointed wicker star",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#crooked%20ward_crookedmoon14",
   "image": null,
@@ -2897,16 +3730,28 @@
    "name": "Crooked Ward",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Crooked Ward",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a five-pointed wicker star)",
+  "material": "a five-pointed wicker star",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#crooked%20ward_crookedmoon24",
   "image": null,
@@ -2940,16 +3785,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Crown of Radiance",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "10 minutes",
   "url": "https://5e.tools/spells.html#crown%20of%20radiance_grimhollowpg24",
   "image": null,
@@ -2979,16 +3836,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Culling Sickle",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#culling%20sickle_crookedmoon14",
   "image": null,
@@ -3026,16 +3895,28 @@
    "name": "Culling Sickle",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Culling Sickle",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#culling%20sickle_crookedmoon24",
   "image": null,
@@ -3069,16 +3950,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Conceited Obsession",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Enchantment",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (a thread from the bed or clothes of your target, a handful of teeth, and a gilded mirror worth 1,000+ GP, all of which the spell consumes)",
+  "material": "a thread from the bed or clothes of your target, a handful of teeth, and a gilded mirror worth 1,000+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20conceited%20obsession_grimhollowpg24",
   "image": null,
@@ -3120,16 +4013,30 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Crushing Sensation",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Enchantment",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (a drop of the target's blood, a shred of silk material, and a horn worth 1,000+ GP, all of which the spell consumes)",
+  "material": "a drop of the target's blood, a shred of silk material, and a horn worth 1,000+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20crushing%20sensation_grimhollowpg24",
   "image": null,
@@ -3176,16 +4083,30 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "thunder"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Damned Aging",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Necromancy",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (a childhood possession of the target, a pint of blood, and a watch worth 600+ GP, all of which the spell consumes)",
+  "material": "a childhood possession of the target, a pint of blood, and a watch worth 600+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20damned%20aging_grimhollowpg24",
   "image": null,
@@ -3232,16 +4153,31 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution",
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Fastidious Pride",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (a shred of the target's clothing, an uncrushed dead spider, and a sewing needle worth 600+ GP, all of which the spell consumes)",
+  "material": "a shred of the target's clothing, an uncrushed dead spider, and a sewing needle worth 600+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20fastidious%20pride_grimhollowpg24",
   "image": null,
@@ -3288,16 +4224,32 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "blinded"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "intelligence"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Foul Blight",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Necromancy",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (a shred of the target's hair or flesh, a chunk of rotten meat, and a jewelry box worth 600+ GP, all of which the spell consumes)",
+  "material": "a shred of the target's hair or flesh, a chunk of rotten meat, and a jewelry box worth 600+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20foul%20blight_grimhollowpg24",
   "image": null,
@@ -3339,16 +4291,30 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Ill-Fated Fortune",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Divination",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (a discarded piece of the target's equipment, a splinter of bone, and a collection of dice worth 800+ GP, all of which the spell consumes)",
+  "material": "a discarded piece of the target's equipment, a splinter of bone, and a collection of dice worth 800+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20ill-fated%20fortune_grimhollowpg24",
   "image": null,
@@ -3395,16 +4361,32 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "thunder"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Insatiable Greed",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Enchantment",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (a coin that the target has previously possessed, the tail of a rat, and a golden crown of thorns worth 800+ GP, all of which the spell consumes)",
+  "material": "a coin that the target has previously possessed, the tail of a rat, and a golden crown of thorns worth 800+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20insatiable%20greed_grimhollowpg24",
   "image": null,
@@ -3446,16 +4428,30 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "cold"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Lost Sentiment",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Enchantment",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (a lock of hair from someone the target loves, an animal's heart, and an idol worth 600+ GP, all of which the spell consumes)",
+  "material": "a lock of hair from someone the target loves, an animal's heart, and an idol worth 600+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20lost%20sentiment_grimhollowpg24",
   "image": null,
@@ -3502,16 +4498,33 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "incapacitated",
+   "stunned"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "intelligence"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Ravenous Hunger",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (a morsel of food that belonged to the target, a sun-dried slug, and a dining plate worth 400+ GP, all of which the spell consumes)",
+  "material": "a morsel of food that belonged to the target, a sun-dried slug, and a dining plate worth 400+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20ravenous%20hunger_grimhollowpg24",
   "image": null,
@@ -3558,16 +4571,32 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "poison"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "poisoned"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of the Putrid Husk",
   "source": "CthulhuTorchlight",
   "level": "Level 3",
   "school": "Illusion",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#curse%20of%20the%20putrid%20husk_cthulhutorchlight",
   "image": null,
@@ -3602,16 +4631,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Curse of Uncontrollable Wrath",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Enchantment",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Special",
   "components": "V, S, M (blood or other fluid of the target, a severed hand, and a serrated knife worth 1,000+ GP, all of which the spell consumes)",
+  "material": "blood or other fluid of the target, a severed hand, and a serrated knife worth 1,000+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
   "url": "https://5e.tools/spells.html#curse%20of%20uncontrollable%20wrath_grimhollowpg24",
   "image": null,
@@ -3658,16 +4697,30 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Cursed Cacophany",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "Action or Ritual",
+  "castingTime": "Action or Ritual",
   "range": "Special",
   "components": "S, M (a sheet of music)",
+  "material": "a sheet of music",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#cursed%20cacophany_crookedmoon14",
   "image": null,
@@ -3701,16 +4754,28 @@
    "name": "Cursed Cacophany",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Cursed Cacophany",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "Action or Ritual",
+  "castingTime": "Action or Ritual",
   "range": "Special",
   "components": "S, M (a sheet of music)",
+  "material": "a sheet of music",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#cursed%20cacophany_crookedmoon24",
   "image": null,
@@ -3740,16 +4805,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Dark Sacrament",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a dagger encrusted in jewels worth 100+ GP)",
+  "material": "a dagger encrusted in jewels worth 100+ GP",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#dark%20sacrament_grimhollowpg24",
   "image": null,
@@ -3795,16 +4872,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Dazing Blast",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#dazing%20blast_grimhollowpg24",
   "image": null,
@@ -3834,16 +4923,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "stunned"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Defenestration",
   "source": "ValdaPlayerPack",
   "level": "Level 2",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#defenestration_valdaplayerpack",
   "image": null,
@@ -3873,16 +4978,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "slashing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Delay",
   "source": "ValdaPlayerPack",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (an octagonal sign)",
+  "material": "an octagonal sign",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#delay_valdaplayerpack",
   "image": null,
@@ -3907,16 +5028,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Devil's Due",
   "source": "CrookedMoon14",
   "level": "Level 1",
   "school": "Necromancy",
-  "casting_time": "1 reaction, which you take when another creature within range takes damage",
+  "castingTime": "1 reaction, which you take when another creature within range takes damage",
   "range": "30 feet",
   "components": "S, M (a glob of pitch)",
+  "material": "a glob of pitch",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#devil's%20due_crookedmoon14",
   "image": null,
@@ -3955,16 +5088,26 @@
    "name": "Devil's Due",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Devil's Due",
   "source": "CrookedMoon24",
   "level": "Level 1",
   "school": "Necromancy",
-  "casting_time": "1 reaction, which you take when another creature within range takes damage",
+  "castingTime": "1 reaction, which you take when another creature within range takes damage",
   "range": "30 feet",
   "components": "S, M (a glob of pitch)",
+  "material": "a glob of pitch",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#devil's%20due_crookedmoon24",
   "image": null,
@@ -3999,16 +5142,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Dire Warning",
   "source": "ValdaPlayerPack",
   "level": "Level 4",
   "school": "Divination",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#dire%20warning_valdaplayerpack",
   "image": null,
@@ -4034,16 +5187,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Dismiss Deity",
   "source": "CthulhuTorchlight",
   "level": "Level 5",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#dismiss%20deity_cthulhutorchlight",
   "image": null,
@@ -4080,16 +5243,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Dissolution",
   "source": "CrookedMoon14",
   "level": "Cantrip",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#dissolution_crookedmoon14",
   "image": null,
@@ -4115,16 +5288,38 @@
    "name": "Dissolution",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d8",
+     "5": "2d8",
+     "11": "3d8",
+     "17": "4d8"
+    }
+   }
+  ]
  },
  {
   "name": "Dissolution",
   "source": "CrookedMoon24",
   "level": "Cantrip",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#dissolution_crookedmoon24",
   "image": null,
@@ -4146,16 +5341,38 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d8",
+     "5": "2d8",
+     "11": "3d8",
+     "17": "4d8"
+    }
+   }
+  ]
  },
  {
   "name": "Doom",
   "source": "CthulhuTorchlight",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "150 feet",
   "components": "V",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#doom_cthulhutorchlight",
   "image": null,
@@ -4172,16 +5389,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Dread Curse of Azathoth",
   "source": "CthulhuTorchlight",
   "level": "Level 7",
   "school": "Evocation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "120 feet",
   "components": "V",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#dread%20curse%20of%20azathoth_cthulhutorchlight",
   "image": null,
@@ -4206,16 +5435,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Dust of Suleiman",
   "source": "CthulhuTorchlight",
   "level": "Level 4",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#dust%20of%20suleiman_cthulhutorchlight",
   "image": null,
@@ -4248,16 +5487,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Earth Worm",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#earth%20worm_grimhollowpg24",
   "image": null,
@@ -4288,16 +5539,33 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "piercing",
+   "bludgeoning"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Elemental Exhalation",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#elemental%20exhalation_grimhollowpg24",
   "image": null,
@@ -4343,16 +5611,33 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "fire"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened",
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Emmeline's Essence Infusion",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Transmutation",
-  "casting_time": "8 hours",
+  "castingTime": "8 hours",
   "range": "Touch",
   "components": "V, S, M (a diamond vial containing at least one ounce of blood worth at least 100 GP, which this spell consumes)",
+  "material": "a diamond vial containing at least one ounce of blood worth at least 100 GP, which this spell consumes",
   "duration": "Special",
   "url": "https://5e.tools/spells.html#emmeline's%20essence%20infusion_grimhollowpg24",
   "image": null,
@@ -4399,16 +5684,31 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force",
+   "necrotic",
+   "psychic",
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Enspelled Armament",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Conjuration",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "M (a vial of oil and water)",
+  "material": "a vial of oil and water",
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#enspelled%20armament_grimhollowpg24",
   "image": null,
@@ -4430,16 +5730,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Evil Eye",
   "source": "CthulhuTorchlight",
   "level": "Cantrip",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "S",
+  "material": null,
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#evil%20eye_cthulhutorchlight",
   "image": null,
@@ -4473,16 +5783,38 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d4 + 2",
+     "5": "2d4 + 4",
+     "11": "3d4 + 6",
+     "17": "4d4 + 8"
+    }
+   }
+  ]
  },
  {
   "name": "Extract Iron",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Transmutation",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "Self",
   "components": "V, S, M (a rusty knife)",
+  "material": "a rusty knife",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#extract%20iron_grimhollowpg24",
   "description": [
@@ -4520,16 +5852,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Eye Burn",
   "source": "CrookedMoon14",
   "level": "Cantrip",
   "school": "Transmutation",
-  "casting_time": "1 reaction, which you take when a creature you can see within range targets you with an attack",
+  "castingTime": "1 reaction, which you take when a creature you can see within range targets you with an attack",
   "range": "30 feet",
   "components": "V, S, M (a smear of camphor)",
+  "material": "a smear of camphor",
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#eye%20burn_crookedmoon14",
   "image": null,
@@ -4558,16 +5900,30 @@
    "name": "Eye Burn",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "blinded"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Eye Burn",
   "source": "CrookedMoon24",
   "level": "Cantrip",
   "school": "Transmutation",
-  "casting_time": "1 reaction, which you take when a creature you can see within range targets you with an attack",
+  "castingTime": "1 reaction, which you take when a creature you can see within range targets you with an attack",
   "range": "30 feet",
   "components": "V, S, M (a smear of camphor)",
+  "material": "a smear of camphor",
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#eye%20burn_crookedmoon24",
   "image": null,
@@ -4592,16 +5948,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "blinded"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Feline Chaos",
   "source": "CthulhuTorchlight",
   "level": "Level 5",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#feline%20chaos_cthulhutorchlight",
   "image": null,
@@ -4639,16 +6009,31 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "slashing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution",
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Feline Grace",
   "source": "CthulhuTorchlight",
   "level": "Level 2",
   "school": "Transmutation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#feline%20grace_cthulhutorchlight",
   "image": null,
@@ -4705,16 +6090,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Field of Reaping",
   "source": "CrookedMoon14",
   "level": "Level 5",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S, M (a dried corn husk or wheat hull)",
+  "material": "a dried corn husk or wheat hull",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#field%20of%20reaping_crookedmoon14",
   "image": null,
@@ -4748,16 +6143,28 @@
    "name": "Field of Reaping",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Field of Reaping",
   "source": "CrookedMoon24",
   "level": "Level 5",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S, M (a dried corn husk or wheat hull)",
+  "material": "a dried corn husk or wheat hull",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#field%20of%20reaping_crookedmoon24",
   "image": null,
@@ -4787,16 +6194,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Fiend Flesh",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a handful of sulfur)",
+  "material": "a handful of sulfur",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#fiend%20flesh_grimhollowpg24",
   "image": null,
@@ -4829,16 +6248,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Finger Guns",
   "source": "ValdaGunslinger",
   "level": "Cantrip",
   "school": "Evocation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#finger%20guns_valdagunslinger",
   "image": null,
@@ -4868,16 +6297,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Finger Guns",
   "source": "ValdaPlayerPack",
   "level": "Cantrip",
   "school": "Evocation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#finger%20guns_valdaplayerpack",
   "image": null,
@@ -4907,16 +6348,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Fist of Yog-Sothoth",
   "source": "CthulhuTorchlight",
   "level": "Level 4",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#fist%20of%20yog-sothoth_cthulhutorchlight",
   "image": null,
@@ -4941,16 +6394,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Flash Fever",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (flint and steel)",
+  "material": "flint and steel",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#flash%20fever_grimhollowpg24",
   "image": null,
@@ -4981,16 +6450,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "fire"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Flense",
   "source": "GrimHollowPG24",
   "level": "Level 8",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a scalpel)",
+  "material": "a scalpel",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#flense_grimhollowpg24",
   "image": null,
@@ -5011,16 +6494,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Fleshcrawl",
   "source": "GrimHollowPG24",
   "level": "Level 7",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "100 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#fleshcrawl_grimhollowpg24",
   "description": [
@@ -5055,16 +6552,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Force Blast",
   "source": "ExploringEberron24",
   "level": "Cantrip",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "180 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#force%20blast_exploringeberron24",
   "image": null,
@@ -5094,16 +6605,38 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d8",
+     "5": "2d8",
+     "11": "3d8",
+     "17": "4d8"
+    }
+   }
+  ]
  },
  {
   "name": "Frightful Start",
   "source": "GrimHollowPG24",
   "level": "Cantrip",
   "school": "Illusion",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S, M (a dead spider)",
+  "material": "a dead spider",
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#frightful%20start_grimhollowpg24",
   "image": null,
@@ -5132,16 +6665,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Game of Fate",
   "source": "ValdaPlayerPack",
   "level": "Level 6",
   "school": "Enchantment",
-  "casting_time": "Action or Ritual",
+  "castingTime": "Action or Ritual",
   "range": "60 feet",
   "components": "V, S, M (a Gaming Set)",
+  "material": "a Gaming Set",
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#game%20of%20fate_valdaplayerpack",
   "image": null,
@@ -5172,16 +6717,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Ghastly Charge",
   "source": "CrookedMoon14",
   "level": "Level 6",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a scrap of a banner)",
+  "material": "a scrap of a banner",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#ghastly%20charge_crookedmoon14",
   "image": null,
@@ -5215,16 +6774,32 @@
    "name": "Ghastly Charge",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Ghastly Charge",
   "source": "CrookedMoon24",
   "level": "Level 6",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a scrap of a banner)",
+  "material": "a scrap of a banner",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#ghastly%20charge_crookedmoon24",
   "image": null,
@@ -5254,16 +6829,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Ghost Light",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a clear marble)",
+  "material": "a clear marble",
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#ghost%20light_grimhollowpg24",
   "image": null,
@@ -5292,16 +6883,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Greater Animate Dead",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Necromancy",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "10 feet",
   "components": "V, S, M (a drop of blood, a piece of flesh, a pinch of bone dust, and a black onyx stone worth 75+ GP for each level of CR you animate)",
+  "material": "a drop of blood, a piece of flesh, a pinch of bone dust, and a black onyx stone worth 75+ GP for each level of CR you animate",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#greater%20animate%20dead_grimhollowpg24",
   "description": [
@@ -5336,16 +6937,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Hangover",
   "source": "ValdaPlayerPack",
   "level": "Level 2",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S, M (a vial of strong liquor)",
+  "material": "a vial of strong liquor",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#hangover_valdaplayerpack",
   "image": null,
@@ -5375,16 +6986,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "poisoned"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Harrowing Ballad",
   "source": "CrookedMoon14",
   "level": "Level 2",
   "school": "Enchantment",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#harrowing%20ballad_crookedmoon14",
   "image": null,
@@ -5423,16 +7050,31 @@
    "name": "Harrowing Ballad",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution",
+   "intelligence"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Harrowing Ballad",
   "source": "CrookedMoon24",
   "level": "Level 2",
   "school": "Enchantment",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#harrowing%20ballad_crookedmoon24",
   "image": null,
@@ -5467,16 +7109,31 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution",
+   "intelligence"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Harvest Moonglow",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a piece of moonstone)",
+  "material": "a piece of moonstone",
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#harvest%20moonglow_crookedmoon14",
   "image": null,
@@ -5510,16 +7167,26 @@
    "name": "Harvest Moonglow",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Harvest Moonglow",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a piece of moonstone)",
+  "material": "a piece of moonstone",
   "duration": "1 hour",
   "url": "https://5e.tools/spells.html#harvest%20moonglow_crookedmoon24",
   "image": null,
@@ -5549,16 +7216,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Heartseeker",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "300 feet",
   "components": "V, S, M (a ruby worth 100+ GP)",
+  "material": "a ruby worth 100+ GP",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#heartseeker_grimhollowpg24",
   "image": null,
@@ -5589,16 +7266,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Holy Word",
   "source": "GrimHollowPG24",
   "level": "Cantrip",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#holy%20word_grimhollowpg24",
   "description": [
@@ -5619,16 +7310,38 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d8",
+     "5": "2d8",
+     "11": "3d8",
+     "17": "4d8"
+    }
+   }
+  ]
  },
  {
   "name": "Hungering Blade",
   "source": "CrookedMoon14",
   "level": "Level 1",
   "school": "Necromancy",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#hungering%20blade_crookedmoon14",
   "image": null,
@@ -5657,16 +7370,26 @@
    "name": "Hungering Blade",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Hungering Blade",
   "source": "CrookedMoon24",
   "level": "Level 1",
   "school": "Necromancy",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#hungering%20blade_crookedmoon24",
   "image": null,
@@ -5691,16 +7414,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Hunter Sense",
   "source": "GrimHollowPG24",
   "level": "Cantrip",
   "school": "Divination",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#hunter%20sense_grimhollowpg24",
   "image": null,
@@ -5717,16 +7450,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Illusory Instrument",
   "source": "GrimHollowPG24",
   "level": "Cantrip",
   "school": "Illusion",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S",
+  "material": null,
   "duration": "10 minutes",
   "url": "https://5e.tools/spells.html#illusory%20instrument_grimhollowpg24",
   "image": null,
@@ -5766,16 +7509,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Incite Riot",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S, M (a red handkerchief)",
+  "material": "a red handkerchief",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#incite%20riot_grimhollowpg24",
   "image": null,
@@ -5809,16 +7562,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "charmed"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Insidious Rhythm",
   "source": "DnDBeyondDrops",
   "level": "Level 1",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#insidious%20rhythm_dndbeyonddrops",
   "image": null,
@@ -5844,16 +7611,29 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution",
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Intaglio",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "Action or Ritual",
+  "castingTime": "Action or Ritual",
   "range": "Touch",
   "components": "V, S, M (a quill or a vial of ink)",
+  "material": "a quill or a vial of ink",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#intaglio_grimhollowpg24",
   "image": null,
@@ -5882,16 +7662,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Intrusive Despair",
   "source": "CrookedMoon14",
   "level": "Level 4",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S, M (a devil's trumpet blossom)",
+  "material": "a devil's trumpet blossom",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#intrusive%20despair_crookedmoon14",
   "image": null,
@@ -5924,16 +7714,28 @@
    "name": "Intrusive Despair",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Intrusive Despair",
   "source": "CrookedMoon24",
   "level": "Level 4",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S, M (a devil's trumpet blossom)",
+  "material": "a devil's trumpet blossom",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#intrusive%20despair_crookedmoon24",
   "image": null,
@@ -5962,16 +7764,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Investiture of Venom",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#investiture%20of%20venom_grimhollowpg24",
   "image": null,
@@ -6006,16 +7820,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "poison"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "poisoned"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Isolation",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S, M (a small metal cube)",
+  "material": "a small metal cube",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#isolation_crookedmoon14",
   "image": null,
@@ -6040,16 +7870,28 @@
    "name": "Isolation",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Isolation",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S, M (a small metal cube)",
+  "material": "a small metal cube",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#isolation_crookedmoon24",
   "image": null,
@@ -6070,16 +7912,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Jam Weapon",
   "source": "ValdaGunslinger",
   "level": "Level 2",
   "school": "Transmutation",
-  "casting_time": "1 reaction, which you take when a creature you can see within range makes an attack using a Ranged weapon",
+  "castingTime": "1 reaction, which you take when a creature you can see within range makes an attack using a Ranged weapon",
   "range": "60 feet",
   "components": "V, S, M (a pinch of wet gunpowder)",
+  "material": "a pinch of wet gunpowder",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#jam%20weapon_valdagunslinger",
   "image": null,
@@ -6100,16 +7954,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Jethro's Instant Reload",
   "source": "ValdaGunslinger",
   "level": "Level 2",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a spent bullet casing)",
+  "material": "a spent bullet casing",
   "duration": "8 hours",
   "url": "https://5e.tools/spells.html#jethro's%20instant%20reload_valdagunslinger",
   "image": null,
@@ -6134,16 +7998,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Leomund's Lamentable Belaborment",
   "source": "DnDBeyondDrops",
   "level": "Level 6",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#leomund's%20lamentable%20belaborment_dndbeyonddrops",
   "image": null,
@@ -6190,16 +8064,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "intelligence"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Life Tether",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#life%20tether_grimhollowpg24",
   "image": null,
@@ -6233,16 +8119,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Lifesink",
   "source": "GrimHollowPG24",
   "level": "Level 8",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (15 feet)",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#lifesink_grimhollowpg24",
   "image": null,
@@ -6271,16 +8169,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Little Death",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "S, M (an item of personal sentimental value worth 1+ SP)",
+  "material": "an item of personal sentimental value worth 1+ SP",
   "duration": "8 hours",
   "url": "https://5e.tools/spells.html#little%20death_grimhollowpg24",
   "image": null,
@@ -6312,16 +8222,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Lucky Charm",
   "source": "CrookedMoon14",
   "level": "Level 5",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a four-leaf clover and a shard of broken mirror)",
+  "material": "a four-leaf clover and a shard of broken mirror",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#lucky%20charm_crookedmoon14",
   "image": null,
@@ -6354,16 +8274,26 @@
    "name": "Lucky Charm",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Lucky Charm",
   "source": "CrookedMoon24",
   "level": "Level 5",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a four-leaf clover and a shard of broken mirror)",
+  "material": "a four-leaf clover and a shard of broken mirror",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#lucky%20charm_crookedmoon24",
   "image": null,
@@ -6392,16 +8322,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Maelfa's Quickened Class",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "10 minutes",
+  "castingTime": "10 minutes",
   "range": "30 feet",
   "components": "V, S",
+  "material": null,
   "duration": "24 hours",
   "url": "https://5e.tools/spells.html#maelfa's%20quickened%20class_grimhollowpg24",
   "image": null,
@@ -6433,16 +8373,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Magecraft",
   "source": "ExploringEberron24",
   "level": "Cantrip",
   "school": "Divination",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a set of Artisan's Tools or a Herbalism Kit)",
+  "material": "a set of Artisan's Tools or a Herbalism Kit",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#magecraft_exploringeberron24",
   "image": null,
@@ -6467,16 +8417,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Magic Mirror",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Abjuration",
-  "casting_time": "1 reaction, which you take when you are targeted by a spell",
+  "castingTime": "1 reaction, which you take when you are targeted by a spell",
   "range": "Self",
   "components": "V, S, M (a polished silver marble)",
+  "material": "a polished silver marble",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#magic%20mirror_grimhollowpg24",
   "image": null,
@@ -6493,16 +8453,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Mandy's Feral Follower",
   "source": "ValdaPlayerPack",
   "level": "Level 4",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S, M (a small servant's bell)",
+  "material": "a small servant's bell",
   "duration": "Special",
   "url": "https://5e.tools/spells.html#mandy's%20feral%20follower_valdaplayerpack",
   "image": null,
@@ -6539,16 +8509,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Martyr",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a Dagger worth at least 1 CP)",
+  "material": "a Dagger worth at least 1 CP",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#martyr_crookedmoon14",
   "image": null,
@@ -6577,16 +8557,26 @@
    "name": "Martyr",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Martyr",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a Dagger worth at least 1 CP)",
+  "material": "a Dagger worth at least 1 CP",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#martyr_crookedmoon24",
   "image": null,
@@ -6611,16 +8601,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Melting Curse",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "100 feet",
   "components": "V, S, M (a vial of quicksilver)",
+  "material": "a vial of quicksilver",
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#melting%20curse_grimhollowpg24",
   "image": null,
@@ -6663,16 +8663,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "fire"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Memorize",
   "source": "ValdaPlayerPack",
   "level": "Level 1",
   "school": "Enchantment",
-  "casting_time": "Action or Ritual",
+  "castingTime": "Action or Ritual",
   "range": "Touch",
   "components": "V, S, M (silver string worth 10+ GP, tied in a knot, which the spell consumes)",
+  "material": "silver string worth 10+ GP, tied in a knot, which the spell consumes",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#memorize_valdaplayerpack",
   "image": null,
@@ -6697,16 +8711,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Mirror Spell",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Abjuration",
-  "casting_time": "1 reaction, which you take when you see a creature within 60 feet of you casting a spell",
+  "castingTime": "1 reaction, which you take when you see a creature within 60 feet of you casting a spell",
   "range": "60 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#mirror%20spell_grimhollowpg24",
   "image": null,
@@ -6746,16 +8770,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Mirrored Agony",
   "source": "CrookedMoon14",
   "level": "Level 5",
   "school": "Abjuration",
-  "casting_time": "1 reaction, which you take when a creature you can see within 60 feet of you damages your ally",
+  "castingTime": "1 reaction, which you take when a creature you can see within 60 feet of you damages your ally",
   "range": "60 feet",
   "components": "V, S, M (a pin or needle)",
+  "material": "a pin or needle",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#mirrored%20agony_crookedmoon14",
   "image": null,
@@ -6784,16 +8818,28 @@
    "name": "Mirrored Agony",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Mirrored Agony",
   "source": "CrookedMoon24",
   "level": "Level 5",
   "school": "Abjuration",
-  "casting_time": "1 reaction, which you take when a creature you can see within 60 feet of you damages your ally",
+  "castingTime": "1 reaction, which you take when a creature you can see within 60 feet of you damages your ally",
   "range": "60 feet",
   "components": "V, S, M (a pin or needle)",
+  "material": "a pin or needle",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#mirrored%20agony_crookedmoon24",
   "image": null,
@@ -6818,16 +8864,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Mist of Mourning",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a vial of tears)",
+  "material": "a vial of tears",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#mist%20of%20mourning_crookedmoon14",
   "image": null,
@@ -6856,16 +8914,28 @@
    "name": "Mist of Mourning",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Mist of Mourning",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a vial of tears)",
+  "material": "a vial of tears",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#mist%20of%20mourning_crookedmoon24",
   "image": null,
@@ -6890,16 +8960,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Moment to Think",
   "source": "ValdaPlayerPack",
   "level": "Cantrip",
   "school": "Transmutation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#moment%20to%20think_valdaplayerpack",
   "image": null,
@@ -6924,16 +9006,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Mortality",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S, M (the skull of a humanoid encrusted in gems worth 200+ GP)",
+  "material": "the skull of a humanoid encrusted in gems worth 200+ GP",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#mortality_grimhollowpg24",
   "image": null,
@@ -6960,16 +9052,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Murder of Crows",
   "source": "CrookedMoon14",
   "level": "Level 4",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a crow feather)",
+  "material": "a crow feather",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#murder%20of%20crows_crookedmoon14",
   "image": null,
@@ -7011,16 +9117,32 @@
    "name": "Murder of Crows",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "blinded"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Murder of Crows",
   "source": "CrookedMoon24",
   "level": "Level 4",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a crow feather)",
+  "material": "a crow feather",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#murder%20of%20crows_crookedmoon24",
   "image": null,
@@ -7058,16 +9180,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "blinded"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Mysterious Presence",
   "source": "CrookedMoon14",
   "level": "Cantrip",
   "school": "Illusion",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#mysterious%20presence_crookedmoon14",
   "image": null,
@@ -7096,16 +9234,26 @@
    "name": "Mysterious Presence",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Mysterious Presence",
   "source": "CrookedMoon24",
   "level": "Cantrip",
   "school": "Illusion",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#mysterious%20presence_crookedmoon24",
   "image": null,
@@ -7130,16 +9278,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Neutralize Aura",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Abjuration",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "Touch",
   "components": "V, S, M (a sprig of sage)",
+  "material": "a sprig of sage",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#neutralize%20aura_grimhollowpg24",
   "image": null,
@@ -7174,16 +9332,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Overgrow",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a single seed)",
+  "material": "a single seed",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#overgrow_grimhollowpg24",
   "image": null,
@@ -7223,16 +9391,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Paradox",
   "source": "ValdaPlayerPack",
   "level": "Level 9",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#paradox_valdaplayerpack",
   "image": null,
@@ -7257,16 +9437,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Perfection",
   "source": "GrimHollowPG24",
   "level": "Level 9",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#perfection_grimhollowpg24",
   "image": null,
@@ -7317,16 +9509,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Perforating Shot",
   "source": "ValdaGunslinger",
   "level": "Level 1",
   "school": "Evocation",
-  "casting_time": "Bonus action, which you take immediately after hitting or missing with a ranged attack using a weapon",
+  "castingTime": "Bonus action, which you take immediately after hitting or missing with a ranged attack using a weapon",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#perforating%20shot_valdagunslinger",
   "image": null,
@@ -7352,16 +9556,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Phantom Panther",
   "source": "CthulhuTorchlight",
   "level": "Level 3",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#phantom%20panther_cthulhutorchlight",
   "image": null,
@@ -7408,16 +9624,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "restrained"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Phoenix Flames",
   "source": "GrimHollowPG24",
   "level": "Level 9",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (30 feet)",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#phoenix%20flames_grimhollowpg24",
   "image": null,
@@ -7447,16 +9679,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "exhaustion"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Polybrachia",
   "source": "ValdaPlayerPack",
   "level": "Level 3",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a pair of armbands)",
+  "material": "a pair of armbands",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#polybrachia_valdaplayerpack",
   "image": null,
@@ -7485,16 +9733,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Power Word Maim",
   "source": "GrimHollowPG24",
   "level": "Level 7",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#power%20word%20maim_grimhollowpg24",
   "image": null,
@@ -7523,16 +9781,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Preserve",
   "source": "GrimHollowPG24",
   "level": "Cantrip",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a sack containing a pinch of salt)",
+  "material": "a sack containing a pinch of salt",
   "duration": "12 hours",
   "url": "https://5e.tools/spells.html#preserve_grimhollowpg24",
   "image": null,
@@ -7565,16 +9839,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Primordial Power",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a handful of clay)",
+  "material": "a handful of clay",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#primordial%20power_grimhollowpg24",
   "image": null,
@@ -7606,16 +9890,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Puppet Master",
   "source": "CrookedMoon14",
   "level": "Level 4",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a marionette string)",
+  "material": "a marionette string",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#puppet%20master_crookedmoon14",
   "image": null,
@@ -7658,16 +9952,28 @@
    "name": "Puppet Master",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Puppet Master",
   "source": "CrookedMoon24",
   "level": "Level 4",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a marionette string)",
+  "material": "a marionette string",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#puppet%20master_crookedmoon24",
   "image": null,
@@ -7706,16 +10012,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Purge Contamination",
   "source": "MonstersOfDrakkenheim",
   "level": "Level 3",
   "school": "Abjuration",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "Touch",
   "components": "V, S, M (100 gp of alchemical fluids or holy water, which the spell consumes)",
+  "material": "100 gp of alchemical fluids or holy water, which the spell consumes",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#purge%20contamination_monstersofdrakkenheim",
   "image": null,
@@ -7760,16 +10078,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Reanimate",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a mélange of wilted daisies and other herbal powders worth 300+ GP, which this spell consumes)",
+  "material": "a mélange of wilted daisies and other herbal powders worth 300+ GP, which this spell consumes",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#reanimate_grimhollowpg24",
   "image": null,
@@ -7796,16 +10124,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Recall",
   "source": "ValdaPlayerPack",
   "level": "Level 2",
   "school": "Conjuration",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#recall_valdaplayerpack",
   "image": null,
@@ -7826,16 +10164,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Red Rain",
   "source": "GrimHollowPG24",
   "level": "Level 8",
   "school": "Conjuration",
-  "casting_time": "10 minutes",
+  "castingTime": "10 minutes",
   "range": "Self",
   "components": "V, S, M (a sponge soaked in blood)",
+  "material": "a sponge soaked in blood",
   "duration": "Concentration, up to 8 hours",
   "url": "https://5e.tools/spells.html#red%20rain_grimhollowpg24",
   "image": null,
@@ -7871,16 +10219,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Red Sign",
   "source": "CthulhuTorchlight",
   "level": "Level 6",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#red%20sign_cthulhutorchlight",
   "image": null,
@@ -7905,16 +10267,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Ride the Lightning",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a length of copper wire)",
+  "material": "a length of copper wire",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#ride%20the%20lightning_grimhollowpg24",
   "description": [
@@ -7943,16 +10317,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "lightning"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Rumor",
   "source": "ValdaPlayerPack",
   "level": "Level 1",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (100 feet)",
   "components": "V, S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#rumor_valdaplayerpack",
   "image": null,
@@ -7973,16 +10361,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sacrificial Siphon",
   "source": "CrookedMoon14",
   "level": "Level 4",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#sacrificial%20siphon_crookedmoon14",
   "image": null,
@@ -8015,16 +10413,28 @@
    "name": "Sacrificial Siphon",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sacrificial Siphon",
   "source": "CrookedMoon24",
   "level": "Level 4",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#sacrificial%20siphon_crookedmoon24",
   "image": null,
@@ -8053,16 +10463,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sanctum of the Flock",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Transmutation",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "5 feet",
   "components": "V, S, M (powdered silver worth 25+ GP, which the spell consumes)",
+  "material": "powdered silver worth 25+ GP, which the spell consumes",
   "duration": "24 hours",
   "url": "https://5e.tools/spells.html#sanctum%20of%20the%20flock_crookedmoon14",
   "image": null,
@@ -8091,16 +10513,26 @@
    "name": "Sanctum of the Flock",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sanctum of the Flock",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Transmutation",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "5 feet",
   "components": "V, S, M (powdered silver worth 25+ GP, which the spell consumes)",
+  "material": "powdered silver worth 25+ GP, which the spell consumes",
   "duration": "24 hours",
   "url": "https://5e.tools/spells.html#sanctum%20of%20the%20flock_crookedmoon24",
   "image": null,
@@ -8125,16 +10557,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sanctum of the Shepherd",
   "source": "CrookedMoon14",
   "level": "Level 4",
   "school": "Abjuration",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "5 feet",
   "components": "V, S, M (adamantine or diamond powder worth 200+ GP, which the spell consumes)",
+  "material": "adamantine or diamond powder worth 200+ GP, which the spell consumes",
   "duration": "24 hours",
   "url": "https://5e.tools/spells.html#sanctum%20of%20the%20shepherd_crookedmoon14",
   "image": null,
@@ -8163,16 +10605,26 @@
    "name": "Sanctum of the Shepherd",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sanctum of the Shepherd",
   "source": "CrookedMoon24",
   "level": "Level 4",
   "school": "Abjuration",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "5 feet",
   "components": "V, S, M (adamantine or diamond powder worth 200+ GP, which the spell consumes)",
+  "material": "adamantine or diamond powder worth 200+ GP, which the spell consumes",
   "duration": "24 hours",
   "url": "https://5e.tools/spells.html#sanctum%20of%20the%20shepherd_crookedmoon24",
   "image": null,
@@ -8197,16 +10649,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sanguine Fusillade",
   "source": "GrimHollowPG24",
   "level": "Level 7",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a needle dipped in your blood)",
+  "material": "a needle dipped in your blood",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#sanguine%20fusillade_grimhollowpg24",
   "image": null,
@@ -8241,16 +10703,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sanguine Poppet",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Transmutation",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "Touch",
   "components": "V, S, M (an object shaped like a creature worth 1+ CP)",
+  "material": "an object shaped like a creature worth 1+ CP",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#sanguine%20poppet_grimhollowpg24",
   "image": null,
@@ -8286,16 +10758,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sanguine Secrets",
   "source": "CrookedMoon14",
   "level": "Level 2",
   "school": "Divination",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "30 feet",
   "components": "V, S, M (a drop of blood, which the spell consumes)",
+  "material": "a drop of blood, which the spell consumes",
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#sanguine%20secrets_crookedmoon14",
   "image": null,
@@ -8333,16 +10817,26 @@
    "name": "Sanguine Secrets",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sanguine Secrets",
   "source": "CrookedMoon24",
   "level": "Level 2",
   "school": "Divination",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "30 feet",
   "components": "V, S, M (a drop of blood, which the spell consumes)",
+  "material": "a drop of blood, which the spell consumes",
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#sanguine%20secrets_crookedmoon24",
   "image": null,
@@ -8371,16 +10865,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sanguine Shield",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#sanguine%20shield_grimhollowpg24",
   "description": [
@@ -8405,16 +10909,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Scarlet Dawn",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#scarlet%20dawn_crookedmoon14",
   "image": null,
@@ -8465,16 +10979,30 @@
    "name": "Scarlet Dawn",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Scarlet Dawn",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#scarlet%20dawn_crookedmoon24",
   "image": null,
@@ -8521,16 +11049,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Seal Spellcasting",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (wax mixed with lead and a stamp)",
+  "material": "wax mixed with lead and a stamp",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#seal%20spellcasting_grimhollowpg24",
   "image": null,
@@ -8552,16 +11094,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Searing Orb",
   "source": "DnDBeyondDrops",
   "level": "Level 2",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "S, M (metallic flakes and a pinch of phosphorus)",
+  "material": "metallic flakes and a pinch of phosphorus",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#searing%20orb_dndbeyonddrops",
   "image": null,
@@ -8578,16 +11134,32 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "blinded"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sense Lifeblood",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Divination",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#sense%20lifeblood_grimhollowpg24",
   "image": null,
@@ -8622,16 +11194,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Serpent Tongue",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Transmutation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#serpent%20tongue_grimhollowpg24",
   "image": null,
@@ -8657,16 +11239,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "poisoned"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Shadow Drain",
   "source": "CrookedMoon14",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (15 feet)",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#shadow%20drain_crookedmoon14",
   "image": null,
@@ -8705,16 +11301,30 @@
    "name": "Shadow Drain",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Shadow Drain",
   "source": "CrookedMoon24",
   "level": "Level 3",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (15 feet)",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#shadow%20drain_crookedmoon24",
   "image": null,
@@ -8749,16 +11359,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Shadowy Eruption",
   "source": "CthulhuTorchlight",
   "level": "Level 3",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "150 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#shadowy%20eruption_cthulhutorchlight",
   "image": null,
@@ -8800,16 +11424,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic",
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution",
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Shared Judgement",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Evocation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#shared%20judgement_grimhollowpg24",
   "image": null,
@@ -8831,16 +11471,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Shroud Blood",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Illusion",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#shroud%20blood_grimhollowpg24",
   "image": null,
@@ -8874,16 +11526,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Somnolence",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S, M (sand mixed with the spellcaster's blood)",
+  "material": "sand mixed with the spellcaster's blood",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#somnolence_grimhollowpg24",
   "image": null,
@@ -8919,16 +11581,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Spirit Swarm",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#spirit%20swarm_grimhollowpg24",
   "image": null,
@@ -8949,16 +11621,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Splattering Smite",
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Abjuration",
-  "casting_time": "1 reaction (which you take when you hit a creature with a Melee weapon)",
+  "castingTime": "1 reaction (which you take when you hit a creature with a Melee weapon)",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#splattering%20smite_grimhollowpg24",
   "image": null,
@@ -8975,16 +11663,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Steal Immortality",
   "source": "GrimHollowPG24",
   "level": "Level 9",
   "school": "Transmutation",
-  "casting_time": "1 reaction, which you take when a Celestial, Elemental, Fey, Fiend, or Undead within range that you can see is reduced to 0 Hit Points",
+  "castingTime": "1 reaction, which you take when a Celestial, Elemental, Fey, Fiend, or Undead within range that you can see is reduced to 0 Hit Points",
   "range": "300 feet",
   "components": "V, S, M (the skull of a humanoid encrusted in gems worth 1,000+ GP, which the spell consumes)",
+  "material": "the skull of a humanoid encrusted in gems worth 1,000+ GP, which the spell consumes",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#steal%20immortality_grimhollowpg24",
   "image": null,
@@ -9036,16 +11734,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Sticks to Snakes",
   "source": "DnDBeyondDrops",
   "level": "Level 4",
   "school": "Transmutation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S, M (a small piece of bark and several snake scales)",
+  "material": "a small piece of bark and several snake scales",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#sticks%20to%20snakes_dndbeyonddrops",
   "image": null,
@@ -9097,16 +11805,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Suffocate",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S, M (a leather glove)",
+  "material": "a leather glove",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#suffocate_grimhollowpg24",
   "image": null,
@@ -9145,16 +11865,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "restrained"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Summer Winds",
   "source": "CrookedMoon14",
   "level": "Level 2",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#summer%20winds_crookedmoon14",
   "image": null,
@@ -9192,16 +11924,30 @@
    "name": "Summer Winds",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Summer Winds",
   "source": "CrookedMoon24",
   "level": "Level 2",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#summer%20winds_crookedmoon24",
   "image": null,
@@ -9235,16 +11981,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Summon Plant",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S, M (a ceramic pot filled with herbs and fertilizer worth at least 200 GP)",
+  "material": "a ceramic pot filled with herbs and fertilizer worth at least 200 GP",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#summon%20plant_grimhollowpg24",
   "description": [
@@ -9274,16 +12034,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Summon Sea Spirit",
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "90 feet",
   "components": "V, S, M (a bejeweled statuette of a sea serpent worth at least 300 GP)",
+  "material": "a bejeweled statuette of a sea serpent worth at least 300 GP",
   "duration": "Concentration, up to 1 hour",
   "url": "https://5e.tools/spells.html#summon%20sea%20spirit_grimhollowpg24",
   "image": null,
@@ -9314,14 +12084,23 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Summon Shadow",
   "source": "CthulhuTorchlight",
   "level": "Level 5",
   "school": "Conjuration",
-  "casting_time": "1 minute",
+  "castingTime": "1 minute",
   "range": "90 feet",
   "components": "V, S, M",
   "duration": "Concentration, up to 1 hour",
@@ -9358,16 +12137,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Supernal Smite",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Evocation",
-  "casting_time": "Bonus action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
+  "castingTime": "Bonus action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#supernal%20smite_grimhollowpg24",
   "image": null,
@@ -9389,16 +12178,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Theft of Vitae",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Transmutation",
-  "casting_time": "1 reaction, which you take when a creature you can see within 30 feet of you takes damage",
+  "castingTime": "1 reaction, which you take when a creature you can see within 30 feet of you takes damage",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#theft%20of%20vitae_grimhollowpg24",
   "image": null,
@@ -9424,16 +12225,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Thorn Armor",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S, M (a rose)",
+  "material": "a rose",
   "duration": "10 minutes",
   "url": "https://5e.tools/spells.html#thorn%20armor_grimhollowpg24",
   "image": null,
@@ -9459,16 +12270,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Tide of Darkness",
   "source": "CthulhuTorchlight",
   "level": "Level 1",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S",
+  "material": null,
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#tide%20of%20darkness_cthulhutorchlight",
   "image": null,
@@ -9498,16 +12319,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "blinded"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Tortoise Shell",
   "source": "DnDBeyondDrops",
   "level": "Level 2",
   "school": "Abjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Touch",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#tortoise%20shell_dndbeyonddrops",
   "image": null,
@@ -9519,16 +12356,26 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Tremor",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Emanation (15 feet)",
   "components": "V, S, M (small bell)",
+  "material": "small bell",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#tremor_grimhollowpg24",
   "image": null,
@@ -9566,16 +12413,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "bludgeoning"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Umbral Tendril",
   "source": "CthulhuTorchlight",
   "level": "Level 1",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "150 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#umbral%20tendril_cthulhutorchlight",
   "image": null,
@@ -9610,16 +12473,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Undead Enthrallment",
   "source": "GrimHollowPG24",
   "level": "Level 8",
   "school": "Necromancy",
-  "casting_time": "1 hour",
+  "castingTime": "1 hour",
   "range": "10 feet",
   "components": "V, S, M (a clay pot filled with brackish water, another clay pot filled with grave dirt, and a black onyx stone worth 500 + GP for each corpse)",
+  "material": "a clay pot filled with brackish water, another clay pot filled with grave dirt, and a black onyx stone worth 500 + GP for each corpse",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#undead%20enthrallment_grimhollowpg24",
   "image": null,
@@ -9654,16 +12529,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Unraveling Whisper",
   "source": "CrookedMoon14",
   "level": "Level 2",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S",
+  "material": null,
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#unraveling%20whisper_crookedmoon14",
   "image": null,
@@ -9706,16 +12591,32 @@
    "name": "Unraveling Whisper",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Unraveling Whisper",
   "source": "CrookedMoon24",
   "level": "Level 2",
   "school": "Enchantment",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S",
+  "material": null,
   "duration": "1 round",
   "url": "https://5e.tools/spells.html#unraveling%20whisper_crookedmoon24",
   "image": null,
@@ -9754,16 +12655,32 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Vampiric Claws",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Transmutation",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#vampiric%20claws_grimhollowpg24",
   "image": null,
@@ -9797,16 +12714,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "slashing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Veil of the Reaper",
   "source": "CrookedMoon14",
   "level": "Level 2",
   "school": "Illusion",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S, M (a dried corn husk or wheat straw)",
+  "material": "a dried corn husk or wheat straw",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#veil%20of%20the%20reaper_crookedmoon14",
   "image": null,
@@ -9839,16 +12768,26 @@
    "name": "Veil of the Reaper",
    "source": "CrookedMoon24",
    "tag": null
-  }
+  },
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Veil of the Reaper",
   "source": "CrookedMoon24",
   "level": "Level 2",
   "school": "Illusion",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "Self",
   "components": "V, S, M (a dried corn husk or wheat straw)",
+  "material": "a dried corn husk or wheat straw",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#veil%20of%20the%20reaper_crookedmoon24",
   "image": null,
@@ -9877,16 +12816,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Vibrating Humors",
   "source": "GrimHollowPG24",
   "level": "Level 1",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S, M (a tuning fork)",
+  "material": "a tuning fork",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#vibrating%20humors_grimhollowpg24",
   "image": null,
@@ -9921,16 +12870,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Viscous Sheath",
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a bloody funerary shroud)",
+  "material": "a bloody funerary shroud",
   "duration": "10 minutes",
   "url": "https://5e.tools/spells.html#viscous%20sheath_grimhollowpg24",
   "image": null,
@@ -9970,16 +12931,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "grappled"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Void Star",
   "source": "DnDBeyondDrops",
   "level": "Level 7",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S, M (a fragment from a meteor)",
+  "material": "a fragment from a meteor",
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#void%20star_dndbeyonddrops",
   "image": null,
@@ -9996,16 +12971,28 @@
    }
   ],
   "classes": [],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Voorish Sign",
   "source": "CthulhuTorchlight",
   "level": "Level 3",
   "school": "Abjuration",
-  "casting_time": "Bonus action",
+  "castingTime": "Bonus action",
   "range": "120 feet",
   "components": "S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#voorish%20sign_cthulhutorchlight",
   "image": null,
@@ -10030,16 +13017,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Wall of Gloom",
   "source": "GrimHollowPG24",
   "level": "Level 8",
   "school": "Conjuration",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "120 feet",
   "components": "V, S, M (a vial of tears)",
+  "material": "a vial of tears",
   "duration": "10 minutes",
   "url": "https://5e.tools/spells.html#wall%20of%20gloom_grimhollowpg24",
   "image": null,
@@ -10070,16 +13067,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Wave of Oblivion",
   "source": "CthulhuTorchlight",
   "level": "Level 9",
   "school": "Evocation",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "S",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#wave%20of%20oblivion_cthulhutorchlight",
   "image": null,
@@ -10104,16 +13113,28 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Weave Numen",
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Divination",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "Self",
   "components": "V, S, M (a mithral sewing needle worth 300 GP+, which the spell consumes)",
+  "material": "a mithral sewing needle worth 300 GP+, which the spell consumes",
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#weave%20numen_grimhollowpg24",
   "image": null,
@@ -10170,16 +13191,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Wilting Smite",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Transmutation",
-  "casting_time": "Bonus action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
+  "castingTime": "Bonus action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
   "range": "Self",
   "components": "V",
+  "material": null,
   "duration": "Instantaneous",
   "url": "https://5e.tools/spells.html#wilting%20smite_grimhollowpg24",
   "image": null,
@@ -10196,16 +13227,26 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Wipe Face",
   "source": "GrimHollowPG24",
   "level": "Level 9",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "60 feet",
   "components": "V, S",
+  "material": null,
   "duration": "Concentration, up to 10 minutes",
   "url": "https://5e.tools/spells.html#wipe%20face_grimhollowpg24",
   "image": null,
@@ -10231,16 +13272,30 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [
+   "slashing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Wrack",
   "source": "GrimHollowPG24",
   "level": "Level 2",
   "school": "Necromancy",
-  "casting_time": "Action",
+  "castingTime": "Action",
   "range": "30 feet",
   "components": "V, S, M (a frayed piece of cord)",
+  "material": "a frayed piece of cord",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#wrack_grimhollowpg24",
   "image": null,
@@ -10257,6 +13312,17 @@
     "source": "XPHB"
    }
   ],
-  "reprint": null
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  }
 ]
