@@ -2584,8 +2584,8 @@
   "school": "Illusion",
   "castingTime": "Action",
   "range": "Touch",
-  "components": "S, M (a Ranged weapon)",
-  "material": "a Ranged weapon",
+  "components": "S, M (a Ranged weapon worth 1+ CP)",
+  "material": "a Ranged weapon worth 1+ CP",
   "duration": "1 minute",
   "url": "https://5e.tools/spells.html#concealed%20shot_valdagunslinger",
   "image": null,
@@ -3968,8 +3968,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Enchantment",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (a thread from the bed or clothes of your target, a handful of teeth, and a gilded mirror worth 1,000+ GP, all of which the spell consumes)",
   "material": "a thread from the bed or clothes of your target, a handful of teeth, and a gilded mirror worth 1,000+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
@@ -3979,7 +3979,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "This spell curses a creature with an obsessive self-infatuation. The target must make a Charisma saving throw. Successful Saving Throw. On a successful save, the target takes **4d6** Psychic damage and is aware it was targeted by a curse. Additionally, for 1 minute, the target takes **1d6** Psychic damage at the start of each of its turns."
+    "value": "This spell curses a creature with an obsessive self-infatuation. The target must make a Charisma saving throw."
+   },
+   {
+    "name": "Successful Saving Throw",
+    "type": "text",
+    "value": "On a successful save, the target takes **4d6** Psychic damage and is aware it was targeted by a curse. Additionally, for 1 minute, the target takes **1d6** Psychic damage at the start of each of its turns."
    },
    {
     "name": "Initial Effect",
@@ -4033,8 +4038,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Enchantment",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (a drop of the target's blood, a shred of silk material, and a horn worth 1,000+ GP, all of which the spell consumes)",
   "material": "a drop of the target's blood, a shred of silk material, and a horn worth 1,000+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
@@ -4103,8 +4108,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Necromancy",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (a childhood possession of the target, a pint of blood, and a watch worth 600+ GP, all of which the spell consumes)",
   "material": "a childhood possession of the target, a pint of blood, and a watch worth 600+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
@@ -4174,8 +4179,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Enchantment",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (a shred of the target's clothing, an uncrushed dead spider, and a sewing needle worth 600+ GP, all of which the spell consumes)",
   "material": "a shred of the target's clothing, an uncrushed dead spider, and a sewing needle worth 600+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
@@ -4185,12 +4190,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "This spell curses a creature with narcissistic hubris."
+    "value": "This spell curses a creature with narcissistic hubris. The target must make an Intelligence saving throw."
    },
    {
-    "name": "",
+    "name": "Successful Saving Throw",
     "type": "text",
-    "value": "The target must make an Intelligence saving throw. Successful Saving Throw. On a successful save, the target takes **2d10** Psychic damage and is aware it was targeted by a curse."
+    "value": "On a successful save, the target takes **2d10** Psychic damage and is aware it was targeted by a curse."
    },
    {
     "name": "Initial Effect",
@@ -4246,8 +4251,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Necromancy",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (a shred of the target's hair or flesh, a chunk of rotten meat, and a jewelry box worth 600+ GP, all of which the spell consumes)",
   "material": "a shred of the target's hair or flesh, a chunk of rotten meat, and a jewelry box worth 600+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
@@ -4257,7 +4262,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "This spell curses a creature with a putrefying and stinking pox. The target must make a Charisma saving throw. Successful Saving Throw. On a successful save, the target takes **3d10** Necrotic damage and is aware it was targeted by a curse. Additionally, it can't gain Temporary Hit Points or regain Hit Points for 1 minute."
+    "value": "This spell curses a creature with a putrefying and stinking pox. The target must make a Charisma saving throw."
+   },
+   {
+    "name": "Successful Saving Throw",
+    "type": "text",
+    "value": "On a successful save, the target takes **3d10** Necrotic damage and is aware it was targeted by a curse. Additionally, it can't gain Temporary Hit Points or regain Hit Points for 1 minute."
    },
    {
     "name": "Initial Effect",
@@ -4311,8 +4321,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Divination",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (a discarded piece of the target's equipment, a splinter of bone, and a collection of dice worth 800+ GP, all of which the spell consumes)",
   "material": "a discarded piece of the target's equipment, a splinter of bone, and a collection of dice worth 800+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
@@ -4383,8 +4393,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 5",
   "school": "Enchantment",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (a coin that the target has previously possessed, the tail of a rat, and a golden crown of thorns worth 800+ GP, all of which the spell consumes)",
   "material": "a coin that the target has previously possessed, the tail of a rat, and a golden crown of thorns worth 800+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
@@ -4394,7 +4404,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "This spell curses a creature with a bitter and self-destructive greed. The target must make a Wisdom saving throw. Successful Saving Throw. On a successful save, the target takes **4d10** Cold damage and is aware it was targeted by a curse."
+    "value": "This spell curses a creature with a bitter and self-destructive greed. The target must make a Wisdom saving throw."
+   },
+   {
+    "name": "Successful Saving Throw",
+    "type": "text",
+    "value": "On a successful save, the target takes **4d10** Cold damage and is aware it was targeted by a curse."
    },
    {
     "name": "Initial Effect",
@@ -4448,8 +4463,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 4",
   "school": "Enchantment",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (a lock of hair from someone the target loves, an animal's heart, and an idol worth 600+ GP, all of which the spell consumes)",
   "material": "a lock of hair from someone the target loves, an animal's heart, and an idol worth 600+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
@@ -4521,8 +4536,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 3",
   "school": "Enchantment",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (a morsel of food that belonged to the target, a sun-dried slug, and a dining plate worth 400+ GP, all of which the spell consumes)",
   "material": "a morsel of food that belonged to the target, a sun-dried slug, and a dining plate worth 400+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
@@ -4647,8 +4662,8 @@
   "source": "GrimHollowPG24",
   "level": "Level 6",
   "school": "Enchantment",
-  "castingTime": "1 hour",
-  "range": "Special",
+  "castingTime": "1 hour, can cast only after you have been within 60 feet of the target for at least 1 minute & can only target them if they are on the same plane of existence",
+  "range": "Unlimited",
   "components": "V, S, M (blood or other fluid of the target, a severed hand, and a serrated knife worth 1,000+ GP, all of which the spell consumes)",
   "material": "blood or other fluid of the target, a severed hand, and a serrated knife worth 1,000+ GP, all of which the spell consumes",
   "duration": "Until dispelled",
