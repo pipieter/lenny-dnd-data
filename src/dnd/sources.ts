@@ -1,13 +1,28 @@
 import { Databank } from '../data';
 import { entrySort } from '../util';
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+require('../../5etools-src/js/parser.js');
+
 export interface ParsedSource {
     id: string;
     name: string;
+    displayName: string;
     source: string;
     published: string | null;
     author: string | null;
     group: string;
+}
+
+/**
+ * Resolves the display name or abbreviation for a given source.
+ * This function relies on the global `Parser` object from the **5e-tools** submodule.
+ * If the source could not be resolved, this returns the backend source instead.
+ */
+function getDisplayName(source: string): string {
+    const parser = (globalThis as any).Parser;
+    if (parser?.sourceJsonToAbv) return parser.sourceJsonToAbv(source);
+    return parser?.SOURCE_JSON_TO_ABV?.[source] || source;
 }
 
 export function getSources(data: Databank): ParsedSource[] {
@@ -21,6 +36,7 @@ export function getSources(data: Databank): ParsedSource[] {
         sources.push({
             id: book.id,
             name: book.name,
+            displayName: getDisplayName(book.source),
             source: book.source || book.id,
             published: book.published,
             author: book.author ?? null,
@@ -34,6 +50,7 @@ export function getSources(data: Databank): ParsedSource[] {
         sources.push({
             id: source,
             name: source,
+            displayName: getDisplayName(source),
             source,
             published: null,
             author: null,
