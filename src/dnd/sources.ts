@@ -21,7 +21,6 @@ export interface ParsedSource {
  */
 function getDisplayName(source: string): string {
     const parser = (globalThis as any).Parser;
-    if (parser?.sourceJsonToAbv) return parser.sourceJsonToAbv(source);
     return parser?.SOURCE_JSON_TO_ABV?.[source] || source;
 }
 
