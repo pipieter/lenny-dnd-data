@@ -1,4 +1,4 @@
-import { AbilityScores } from './5etools-conversion/data';
+import { rawData } from './5etools-conversion/rawdata';
 import { checkForDisallowedSymbols } from './parser';
 import { getTablesUrl, get5eToolsUrl, getBackgroundsUrl, getTrapsUrl } from './urls';
 
@@ -80,9 +80,9 @@ function $5etools(text: string, noFormat: boolean): string {
 
 function actSave(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${AbilityScores.get(p1)} Saving Throw: `);
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${rawData.getAbilityName(p1)} Saving Throw: `);
     } else {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${AbilityScores.get(p1)} Saving Throw:* `);
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${rawData.getAbilityName(p1)} Saving Throw:* `);
     }
     return text;
 }

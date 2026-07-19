@@ -63,6 +63,11 @@ class RawData {
         return this.parser?.SKILL_TO_ATB_ABV?.[skill] || null;
     }
 
+    getAbilityName(ability: string | undefined | null): string | null {
+        if (!ability) return null;
+        return this.parser?.ATB_ABV_TO_FULL?.[ability] || ability;
+    }
+
     getAlignmentName(alignment: string | undefined | null): string | null {
         if (!alignment) return null;
         return this.parser?._ALIGNMENT_ABV_TO_FULL?.[alignment] || alignment;

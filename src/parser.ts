@@ -1,6 +1,6 @@
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, getTablesUrl } from './urls';
-import { AbilityScores, Advantages } from './5etools-conversion/data';
+import { Advantages } from './5etools-conversion/data';
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
@@ -124,7 +124,7 @@ export function parseSpellSchool(school: string): string {
 
 export function parseAbilityScore(score: string): string {
     const key = score.toLowerCase();
-    const value = AbilityScores.get(key);
+    const value = rawData.getAbilityName(key);
     if (!value) {
         return score;
     }
