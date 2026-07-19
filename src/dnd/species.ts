@@ -13,8 +13,8 @@ import {
 import { getSpeciesUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
-import { CreatureSizes, SpecialSpeedTypes } from '../5etools-conversion/data';
 import { Databank } from '../data';
+import { rawData } from '../5etools-conversion/rawdata';
 
 export interface ParsedSpecies {
     name: string;
@@ -62,8 +62,9 @@ function getSpeciesInfo(data: any, name: string, source: string): Description[] 
 function getSpeciesSizes(sizes: string[]) {
     const results: string[] = [];
     for (const size of sizes) {
-        if (CreatureSizes.has(size)) {
-            results.push(CreatureSizes.get(size)!);
+        const name = rawData.getSizeName(size);
+        if (name) {
+            results.push(name);
         }
     }
     return results;
@@ -83,7 +84,7 @@ function getSpeciesSpeed(speed: any): string[] {
         speeds.push(`${speed.walk} feet`);
     }
 
-    for (const type of SpecialSpeedTypes) {
+    for (const type of rawData.getSpecialSpeedTypes()) {
         if (speed[type] === true) {
             speeds.push(`${capitalize(type)} equal to your walking speed`);
         } else if (speed[type]) {

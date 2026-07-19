@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { Description, parseDescriptions, parseImageUrl, parseReprint, parseSizes, ReprintData } from '../parser';
+import { Description, parseDescriptions, parseImageUrl, parseObjectSizes, parseReprint, ReprintData } from '../parser';
 import { getObjectsUrl, getObjectTokenUrl } from '../urls';
 
 export interface DNDObject {
@@ -44,7 +44,7 @@ export interface ParsedDNDObject {
 }
 
 function getObjectSubtitle(obj: DNDObject): string {
-    return `${parseSizes(obj.size)} object`;
+    return `${parseObjectSizes(obj.size)} object`;
 }
 
 function parseObjectTokenURL(obj: DNDObject): string | null {

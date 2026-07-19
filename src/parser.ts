@@ -1,9 +1,9 @@
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, getTablesUrl } from './urls';
-import { AbilityScores, Advantages, Alignments, SpellSchools } from './5etools-conversion/data';
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
+import { rawData } from './5etools-conversion/rawdata';
 
 export interface Range {
     type: 'range';
@@ -114,7 +114,7 @@ export function parseSpellLevel(level: number): string {
 }
 
 export function parseSpellSchool(school: string): string {
-    const parsed = SpellSchools.get(school);
+    const parsed = rawData.getSpellSchoolName(school);
     if (!parsed) {
         throw `Unsupported spell school: '${school}'`;
     }
@@ -123,7 +123,7 @@ export function parseSpellSchool(school: string): string {
 
 export function parseAbilityScore(score: string): string {
     const key = score.toLowerCase();
-    const value = AbilityScores.get(key);
+    const value = rawData.getAbilityName(key);
     if (!value) {
         return score;
     }
@@ -132,7 +132,7 @@ export function parseAbilityScore(score: string): string {
 
 export function parseAdvantage(adv: string): string {
     const key = adv.toLowerCase();
-    const value = Advantages.get(key);
+    const value = rawData.getAdvantageName(key);
     if (!value) throw `Unknown advantage-type: ${adv}`;
     return value;
 }
@@ -365,7 +365,7 @@ export function parseSpellDamage(spell: any): SpellDamage[] | null {
 export function parseAlignments(alignments: string[]): string[] {
     const result: string[] = [];
     for (const alignment of alignments) {
-        const parsed = Alignments.get(alignment);
+        const parsed = rawData.getAlignmentName(alignment);
         if (!parsed) throw `Unsupported Alignment: '${alignment}'`;
         result.push(parsed);
     }
@@ -794,29 +794,15 @@ export function title(text: string): string {
 
 export function parseSizes(sizes: string | string[]): string {
     if (typeof sizes === 'string') sizes = [sizes];
-    const sizeMap = new Map<string, string>([
-        ['F', 'Fine'],
-        ['D', 'Diminutive'],
-        ['T', 'Tiny'],
-        ['S', 'Small'],
-        ['M', 'Medium'],
-        ['L', 'Large'],
-        ['H', 'Huge'],
-        ['G', 'Gargantuan'],
-        ['V', 'Variable size'],
-        ['C', 'Colossal'],
-    ]);
 
-    const words: string[] = [];
-    for (const size of sizes) {
-        const word = sizeMap.get(size);
-        if (word) {
-            words.push(word);
-        } else {
-            throw `parseSizes: Could not parse size '${size}'`;
-        }
-    }
+    const words = sizes.map((size) => rawData.getSizeName(size)).filter((size) => size !== null);
+    return joinStringsWithOr(words);
+}
 
+export function parseObjectSizes(sizes: string | string[]): string {
+    if (typeof sizes === 'string') sizes = [sizes];
+
+    const words = sizes.map((size) => rawData.getObjectSizeName(size)).filter((size) => size !== null);
     return joinStringsWithOr(words);
 }
 
