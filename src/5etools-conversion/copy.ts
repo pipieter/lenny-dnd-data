@@ -1,7 +1,7 @@
-import { SkillAbilities } from './data';
 import { applySingleTemplate } from './template';
 import { crToProficiencyBonus } from './parser';
 import { ascSortLower } from './sort';
+import { rawData } from './rawdata';
 
 // TODO _templates (e.g. Zox Clammersham). This will most likely require data going global
 
@@ -95,7 +95,7 @@ function addMod_addSkills(base: any, skills: any) {
 
     for (const [skill, mode] of Object.entries(skills)) {
         // mode: 1 = proficient; 2 = expert
-        const ability = SkillAbilities.get(skill)!;
+        const ability = rawData.getSkillAbility(skill)!;
         const abilityScore = base[ability];
         const proficiency = crToProficiencyBonus(base.cr);
         const total = proficiency * (mode as number) + abilityScore;

@@ -15,27 +15,6 @@ export const Advantages = new Map([
 export const SpeedTypes = ['walk', 'burrow', 'climb', 'fly', 'swim']; // parser.js,333
 export const SpecialSpeedTypes = [/*'walk',*/ 'burrow', 'climb', 'fly', 'swim']; // parser.js,333
 
-export const SkillAbilities = new Map<string, string>([
-    ['athletics', 'str'],
-    ['acrobatics', 'dex'],
-    ['sleight of hand', 'dex'],
-    ['stealth', 'dex'],
-    ['arcana', 'int'],
-    ['history', 'int'],
-    ['investigation', 'int'],
-    ['nature', 'int'],
-    ['religion', 'int'],
-    ['animal handling', 'wis'],
-    ['insight', 'wis'],
-    ['medicine', 'wis'],
-    ['perception', 'wis'],
-    ['survival', 'wis'],
-    ['deception', 'cha'],
-    ['intimidation', 'cha'],
-    ['performance', 'cha'],
-    ['persuasion', 'cha'],
-]);
-
 export const Alignments = new Map<string, string>([
     ['L', 'lawful'],
     ['N', 'neutral'],

@@ -57,6 +57,11 @@ class RawData {
         if (!school) return null;
         return this.parser?.SP_SCHOOL_ABV_TO_FULL?.[school] || school;
     }
+
+    getSkillAbility(skill: string | undefined | null): string | null {
+        if (!skill) return null;
+        return this.parser?.SKILL_TO_ATB_ABV?.[skill] || null;
+    }
 }
 
 export const rawData = new RawData();
