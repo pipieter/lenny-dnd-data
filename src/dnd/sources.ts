@@ -1,9 +1,11 @@
 import { Databank } from '../data';
 import { entrySort } from '../util';
+import { rawData } from '../5etools-conversion/rawdata';
 
 export interface ParsedSource {
     id: string;
     name: string;
+    displayName: string;
     source: string;
     published: string | null;
     author: string | null;
@@ -21,6 +23,7 @@ export function getSources(data: Databank): ParsedSource[] {
         sources.push({
             id: book.id,
             name: book.name,
+            displayName: rawData.getSourceDisplayName(book.source),
             source: book.source || book.id,
             published: book.published,
             author: book.author ?? null,
@@ -34,6 +37,7 @@ export function getSources(data: Databank): ParsedSource[] {
         sources.push({
             id: source,
             name: source,
+            displayName: rawData.getSourceDisplayName(source),
             source,
             published: null,
             author: null,
