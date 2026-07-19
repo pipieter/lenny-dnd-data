@@ -52,6 +52,11 @@ class RawData {
         const name = this.parser?.DMGTYPE_JSON_TO_FULL?.[damage] || damage;
         return capitalize(name);
     }
+
+    getSpellSchoolName(school: string | undefined | null): string | null {
+        if (!school) return null;
+        return this.parser?.SP_SCHOOL_ABV_TO_FULL?.[school] || school;
+    }
 }
 
 export const rawData = new RawData();

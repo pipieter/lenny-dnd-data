@@ -12,18 +12,6 @@ export const Advantages = new Map([
     ['dis', 'Disadvantage'],
 ]);
 
-export const SpellSchools = new Map([
-    ['A', 'Abjuration'],
-    ['C', 'Conjuration'],
-    ['D', 'Divination'],
-    ['E', 'Enchantment'],
-    ['V', 'Evocation'],
-    ['I', 'Illusion'],
-    ['N', 'Necromancy'],
-    ['P', 'Psionic'],
-    ['T', 'Transmutation'],
-]);
-
 export const SpeedTypes = ['walk', 'burrow', 'climb', 'fly', 'swim']; // parser.js,333
 export const SpecialSpeedTypes = [/*'walk',*/ 'burrow', 'climb', 'fly', 'swim']; // parser.js,333
 
