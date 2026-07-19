@@ -1,6 +1,5 @@
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, getTablesUrl } from './urls';
-import { Advantages } from './5etools-conversion/data';
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
@@ -133,7 +132,7 @@ export function parseAbilityScore(score: string): string {
 
 export function parseAdvantage(adv: string): string {
     const key = adv.toLowerCase();
-    const value = Advantages.get(key);
+    const value = rawData.getAdvantageName(key);
     if (!value) throw `Unknown advantage-type: ${adv}`;
     return value;
 }

@@ -72,6 +72,17 @@ class RawData {
         if (!alignment) return null;
         return this.parser?._ALIGNMENT_ABV_TO_FULL?.[alignment] || alignment;
     }
+
+    getAdvantageName(advantage: string | undefined | null): string | null {
+        if (!advantage) return null;
+
+        const map = new Map([
+            ['adv', 'Advantage'],
+            ['dis', 'Disadvantage'],
+        ]);
+
+        return map.get(advantage) || null;
+    }
 }
 
 export const rawData = new RawData();
