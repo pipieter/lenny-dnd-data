@@ -13,7 +13,6 @@ import {
 import { getSpeciesUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
-import { SpecialSpeedTypes } from '../5etools-conversion/data';
 import { Databank } from '../data';
 import { rawData } from '../5etools-conversion/rawdata';
 
@@ -85,7 +84,7 @@ function getSpeciesSpeed(speed: any): string[] {
         speeds.push(`${speed.walk} feet`);
     }
 
-    for (const type of SpecialSpeedTypes) {
+    for (const type of rawData.getSpecialSpeedTypes()) {
         if (speed[type] === true) {
             speeds.push(`${capitalize(type)} equal to your walking speed`);
         } else if (speed[type]) {

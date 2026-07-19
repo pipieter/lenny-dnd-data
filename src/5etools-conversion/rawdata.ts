@@ -83,6 +83,14 @@ class RawData {
 
         return map.get(advantage) || null;
     }
+
+    getSpecialSpeedTypes(): string[] {
+        const nonSpecial = ['walk'];
+
+        const modes: string[] = this.parser.SPEED_MODES;
+        const special = modes.filter((mode) => !nonSpecial.includes(mode));
+        return special;
+    }
 }
 
 export const rawData = new RawData();
