@@ -1,6 +1,6 @@
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, getTablesUrl } from './urls';
-import { AbilityScores, Advantages, Alignments } from './5etools-conversion/data';
+import { AbilityScores, Advantages } from './5etools-conversion/data';
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
@@ -366,7 +366,7 @@ export function parseSpellDamage(spell: any): SpellDamage[] | null {
 export function parseAlignments(alignments: string[]): string[] {
     const result: string[] = [];
     for (const alignment of alignments) {
-        const parsed = Alignments.get(alignment);
+        const parsed = rawData.getAlignmentName(alignment);
         if (!parsed) throw `Unsupported Alignment: '${alignment}'`;
         result.push(parsed);
     }
