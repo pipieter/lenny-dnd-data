@@ -23,10 +23,7 @@ class RawData {
 
         sandbox.globalThis = sandbox;
         vm.runInNewContext(parserCode, sandbox, { filename: parserPath });
-
-        (globalThis as any).Parser = sandbox.Parser;
-
-        this.parser = (globalThis as any).Parser;
+        this.parser = sandbox.Parser;
     }
 
     /**
