@@ -1,6 +1,7 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import * as vm from 'vm';
+import { capitalize } from '../parser';
 
 /**
  * Interface for getting hardcoded 5e-tools data from javascript files.
@@ -38,6 +39,13 @@ class RawData {
         // Single exception, see render.js:9078
         if (size === 'V') return 'Variable size';
         return this.parser?.SIZE_ABV_TO_FULL?.[size] || size;
+    }
+
+    getDamageName(damage: string | undefined): string | undefined{
+        if (!damage) return undefined
+
+        const name = this.parser?.DMGTYPE_JSON_TO_FULL?.[damage] || damage;
+        return capitalize(name);
     }
 }
 

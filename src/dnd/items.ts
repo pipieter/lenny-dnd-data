@@ -10,11 +10,11 @@ import {
     parseReprint,
     ReprintData,
 } from '../parser';
-import { DamageTypes } from '../5etools-conversion/data';
 import { getItemsUrl } from '../urls';
 import { joinStringsWithOr, entrySort } from '../util';
 import { Databank, getKey } from '../data';
 import { cleanDNDText } from '../clean';
+import { rawData } from '../5etools-conversion/rawdata';
 
 export interface ParsedItem {
     name: string;
@@ -276,8 +276,13 @@ function parseItem(item: any, data: any): ParsedItem {
 
     // Item damage, if applicable
     if (item.dmg1) {
-        const damage = `**${item.dmg1}** ${DamageTypes.get(item.dmgType)}`;
-        result.properties.push(damage);
+        if (item.dmgType) {
+            const damage = `**${item.dmg1}** ${rawData.getDamageName(item.dmgType)}`;
+            result.properties.push(damage);
+        } else {
+            const damage = `**${item.dmg1}**`;
+            result.properties.push(damage);
+        }
     }
 
     // Armor properties, if applicable

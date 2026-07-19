@@ -25,22 +25,6 @@ export const Advantages = new Map([
     ['dis', 'Disadvantage'],
 ]);
 
-export const DamageTypes = new Map([
-    ['A', 'Acid'],
-    ['B', 'Bludgeoning'],
-    ['C', 'Cold'],
-    ['F', 'Fire'],
-    ['O', 'Force'],
-    ['L', 'Lightning'],
-    ['N', 'Necrotic'],
-    ['P', 'Piercing'],
-    ['I', 'Poison'],
-    ['Y', 'Psychic'],
-    ['R', 'Radiant'],
-    ['S', 'Slashing'],
-    ['T', 'Thunder'],
-]);
-
 export const SpellSchools = new Map([
     ['A', 'Abjuration'],
     ['C', 'Conjuration'],
