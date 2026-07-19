@@ -1,5 +1,6 @@
 import { rawData } from './5etools-conversion/rawdata';
 import { checkForDisallowedSymbols } from './parser';
+import { styles } from './style';
 import { getTablesUrl, get5eToolsUrl, getBackgroundsUrl, getTrapsUrl } from './urls';
 
 declare global {
@@ -52,7 +53,7 @@ function pattern(name: string, count: number) {
  * Format functions
  * ========================================================= */
 
-function styles(text: string, noFormat: boolean): string {
+function basic(text: string, noFormat: boolean): string {
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
     if (noFormat) {
         text = text.replaceAll(pattern('i', 1), '$1');
@@ -60,10 +61,10 @@ function styles(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('bold', 1), '$1');
         text = text.replaceAll(pattern('italic', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('i', 1), '*$1*');
-        text = text.replaceAll(pattern('b', 1), '**$1**');
-        text = text.replaceAll(pattern('bold', 1), '**$1**');
-        text = text.replaceAll(pattern('italic', 1), '*$1*');
+        text = text.replaceAll(pattern('b', 1), styles.bold('$1'));
+        text = text.replaceAll(pattern('i', 1), styles.italics('$1'));
+        text = text.replaceAll(pattern('bold', 1), styles.bold('$1'));
+        text = text.replaceAll(pattern('italic', 1), styles.italics('$1'));
     }
 
     return text;
@@ -71,9 +72,9 @@ function styles(text: string, noFormat: boolean): string {
 
 function $5etools(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('5etools', 2), `$1`);
+        text = text.replaceAll(pattern('5etools', 2), '$1');
     } else {
-        text = text.replaceAll(pattern('5etools', 2), (_, p1, p2) => `[${p1}](${get5eToolsUrl(p2)})`);
+        text = text.replaceAll(pattern('5etools', 2), (_, p1, p2) => styles.link(p1, get5eToolsUrl(p2)));
     }
     return text;
 }
@@ -82,7 +83,10 @@ function actSave(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${rawData.getAbilityName(p1)} Saving Throw: `);
     } else {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${rawData.getAbilityName(p1)} Saving Throw:* `);
+        text = text.replaceAll(
+            pattern('actSave', 1),
+            (_, p1) => styles.italics(`${rawData.getAbilityName(p1)} Saving Throw:`) + ' '
+        );
     }
     return text;
 }
@@ -94,10 +98,10 @@ function actSaveFail(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('actSaveFail 1', 0), 'First Failure: ');
         text = text.replaceAll(pattern('actSaveFail', 0), 'Failure: ');
     } else {
-        text = text.replaceAll(pattern('actSaveFail 3', 0), '*Third Failure:* ');
-        text = text.replaceAll(pattern('actSaveFail 2', 0), '*Second Failure:* ');
-        text = text.replaceAll(pattern('actSaveFail 1', 0), '*First Failure:* ');
-        text = text.replaceAll(pattern('actSaveFail', 0), '*Failure:* ');
+        text = text.replaceAll(pattern('actSaveFail 3', 0), styles.italics('Third Failure:') + ' ');
+        text = text.replaceAll(pattern('actSaveFail 2', 0), styles.italics('Second Failure:') + ' ');
+        text = text.replaceAll(pattern('actSaveFail 1', 0), styles.italics('First Failure:') + ' ');
+        text = text.replaceAll(pattern('actSaveFail', 0), styles.italics('Failure:') + ' ');
     }
     return text;
 }
@@ -106,7 +110,7 @@ function actSaveFailBy(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('actSaveFailBy', 1), 'Failure by $1 or More: ');
     } else {
-        text = text.replaceAll(pattern('actSaveFailBy', 1), '*Failure by $1 or More:* ');
+        text = text.replaceAll(pattern('actSaveFailBy', 1), styles.italics('Failure by $1 or More:') + ' ');
     }
     return text;
 }
@@ -115,7 +119,7 @@ function actSaveSuccess(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('actSaveSuccess', 0), 'Success');
     } else {
-        text = text.replaceAll(pattern('actSaveSuccess', 0), '*Success*');
+        text = text.replaceAll(pattern('actSaveSuccess', 0), styles.italics('Success'));
     }
     return text;
 }
@@ -124,7 +128,7 @@ function actSaveSuccessOrFail(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('actSaveSuccessOrFail', 0), 'Failure or Success:');
     } else {
-        text = text.replaceAll(pattern('actSaveSuccessOrFail', 0), '*Failure or Success*:');
+        text = text.replaceAll(pattern('actSaveSuccessOrFail', 0), styles.italics('Failure or Success') + ':');
     }
     return text;
 }
@@ -157,7 +161,7 @@ function atk(text: string, noFormat: boolean): string {
     if (!noFormat) {
         // if formatted, surround the replacements with italics
         for (const [pattern, replace] of replacements.entries()) {
-            replacements.set(pattern, `*${replace}*`);
+            replacements.set(pattern, styles.italics(replace));
         }
     }
 
@@ -189,13 +193,13 @@ function area(text: string, _noFormat: boolean): string {
 
 function background(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('background', 3), `$3`);
-        text = text.replaceAll(pattern('background', 2), `$1`);
-        text = text.replaceAll(pattern('background', 1), `$1`);
+        text = text.replaceAll(pattern('background', 3), '$3');
+        text = text.replaceAll(pattern('background', 2), '$1');
+        text = text.replaceAll(pattern('background', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('background', 3), (_, p1, p2, p3) => `[${p3}](${getBackgroundsUrl(p1, p2)})`);
-        text = text.replaceAll(pattern('background', 2), (_, p1, __) => `[${p1}](${getBackgroundsUrl(p1)})`);
-        text = text.replaceAll(pattern('background', 1), (_, p1) => `[${p1}](${getBackgroundsUrl(p1)})`);
+        text = text.replaceAll(pattern('background', 3), (_, p1, p2, p3) => styles.link(p3, getBackgroundsUrl(p1, p2)));
+        text = text.replaceAll(pattern('background', 2), (_, p1, __) => styles.link(p1, getBackgroundsUrl(p1)));
+        text = text.replaceAll(pattern('background', 1), (_, p1) => styles.link(p1, getBackgroundsUrl(p1)));
     }
 
     return text;
@@ -229,17 +233,17 @@ function charoption(text: string, _noFormat: boolean): string {
 
 function class$(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('class', 5), `$3`);
-        text = text.replaceAll(pattern('class', 4), `$3`);
-        text = text.replaceAll(pattern('class', 3), `$3`);
-        text = text.replaceAll(pattern('class', 2), `$1`);
-        text = text.replaceAll(pattern('class', 1), `$1`);
+        text = text.replaceAll(pattern('class', 5), '$3');
+        text = text.replaceAll(pattern('class', 4), '$3');
+        text = text.replaceAll(pattern('class', 3), '$3');
+        text = text.replaceAll(pattern('class', 2), '$1');
+        text = text.replaceAll(pattern('class', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('class', 5), `__$3__`);
-        text = text.replaceAll(pattern('class', 4), `__$3__`);
-        text = text.replaceAll(pattern('class', 3), `__$3__`);
-        text = text.replaceAll(pattern('class', 2), `__$1__`);
-        text = text.replaceAll(pattern('class', 1), `__$1__`);
+        text = text.replaceAll(pattern('class', 5), styles.underline('$3'));
+        text = text.replaceAll(pattern('class', 4), styles.underline('$3'));
+        text = text.replaceAll(pattern('class', 3), styles.underline('$3'));
+        text = text.replaceAll(pattern('class', 2), styles.underline('$1'));
+        text = text.replaceAll(pattern('class', 1), styles.underline('$1'));
     }
 
     return text;
@@ -272,9 +276,9 @@ function creature(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('creature', 2), '$1');
         text = text.replaceAll(pattern('creature', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('creature', 3), '__$3__');
-        text = text.replaceAll(pattern('creature', 2), '__$1__');
-        text = text.replaceAll(pattern('creature', 1), '__$1__');
+        text = text.replaceAll(pattern('creature', 3), styles.underline('$3'));
+        text = text.replaceAll(pattern('creature', 2), styles.underline('$1'));
+        text = text.replaceAll(pattern('creature', 1), styles.underline('$1'));
     }
     return text;
 }
@@ -293,8 +297,8 @@ function damage(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('damage', 2), '$2');
         text = text.replaceAll(pattern('damage', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('damage', 2), '**$2**');
-        text = text.replaceAll(pattern('damage', 1), '**$1**');
+        text = text.replaceAll(pattern('damage', 2), styles.bold('$2'));
+        text = text.replaceAll(pattern('damage', 1), styles.bold('$1'));
     }
     return text;
 }
@@ -317,13 +321,13 @@ function deck(text: string, _noFormat: boolean): string {
 
 function deity(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('deity', 3), `$1`);
-        text = text.replaceAll(pattern('deity', 2), `$1`);
-        text = text.replaceAll(pattern('deity', 1), `$1`);
+        text = text.replaceAll(pattern('deity', 3), '$1');
+        text = text.replaceAll(pattern('deity', 2), '$1');
+        text = text.replaceAll(pattern('deity', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('deity', 3), `__$1__`);
-        text = text.replaceAll(pattern('deity', 2), `__$1__`);
-        text = text.replaceAll(pattern('deity', 1), `__$1__`);
+        text = text.replaceAll(pattern('deity', 3), styles.underline('$1'));
+        text = text.replaceAll(pattern('deity', 2), styles.underline('$1'));
+        text = text.replaceAll(pattern('deity', 1), styles.underline('$1'));
     }
     return text;
 }
@@ -342,9 +346,9 @@ function disease(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('disease', 2), '$1');
         text = text.replaceAll(pattern('disease', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('disease', 3), '__$3__');
-        text = text.replaceAll(pattern('disease', 2), '__$1__');
-        text = text.replaceAll(pattern('disease', 1), '__$1__');
+        text = text.replaceAll(pattern('disease', 3), styles.underline('$3'));
+        text = text.replaceAll(pattern('disease', 2), styles.underline('$1'));
+        text = text.replaceAll(pattern('disease', 1), styles.underline('$1'));
     }
     return text;
 }
@@ -353,18 +357,18 @@ function facility(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('facility', 2), '$1');
     } else {
-        text = text.replaceAll(pattern('facility', 2), '__$1__');
+        text = text.replaceAll(pattern('facility', 2), styles.underline('$1'));
     }
     return text;
 }
 
 function feat(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('feat', 2), `$1`);
-        text = text.replaceAll(pattern('feat', 1), `$1`);
+        text = text.replaceAll(pattern('feat', 2), '$1');
+        text = text.replaceAll(pattern('feat', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('feat', 2), `__$1__`);
-        text = text.replaceAll(pattern('feat', 1), `__$1__`);
+        text = text.replaceAll(pattern('feat', 2), styles.underline('$1'));
+        text = text.replaceAll(pattern('feat', 1), styles.underline('$1'));
     }
     return text;
 }
@@ -379,13 +383,13 @@ function filter(text: string, _noFormat: boolean): string {
 
 function font(text: string, noFormat: boolean): string {
     // Font is mainly used to render certain symbols, like ♡ ♥ ♠ ♦ ♣ in a special style.
-    text = text.replaceAll(pattern('font', 2), `$1`);
+    text = text.replaceAll(pattern('font', 2), '$1');
     return text;
 }
 
 function footnote(text: string, noFormat: boolean): string {
     // Footnote allows people to hover over and see extra information in 5e.tools, we can't do this in discord.
-    text = text.replaceAll(pattern('footnote', 2), `$1 ($2)`);
+    text = text.replaceAll(pattern('footnote', 2), '$1 ($2)');
     return text;
 }
 
@@ -407,7 +411,7 @@ function hit(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('h', 0), 'Hit: ');
     } else {
-        text = text.replaceAll(pattern('h', 0), '*Hit:* ');
+        text = text.replaceAll(pattern('h', 0), styles.italics('Hit:') + ' ');
     }
 
     return text;
@@ -424,7 +428,7 @@ function hom(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('hom', 0), 'Hit or Miss: ');
     } else {
-        text = text.replaceAll(pattern('hom', 0), '*Hit or Miss:* ');
+        text = text.replaceAll(pattern('hom', 0), styles.italics('Hit or Miss:') + ' ');
     }
 
     return text;
@@ -446,11 +450,11 @@ function item(text: string, _noFormat: boolean): string {
 
 function itemMastery(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('itemMastery', 2), `$1`);
-        text = text.replaceAll(pattern('itemMastery', 1), `$1`);
+        text = text.replaceAll(pattern('itemMastery', 2), '$1');
+        text = text.replaceAll(pattern('itemMastery', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('itemMastery', 2), `__$1__`);
-        text = text.replaceAll(pattern('itemMastery', 1), `__$1__`);
+        text = text.replaceAll(pattern('itemMastery', 2), styles.underline('$1'));
+        text = text.replaceAll(pattern('itemMastery', 1), styles.underline('$1'));
     }
     return text;
 }
@@ -485,13 +489,13 @@ function note(text: string, _noFormat: boolean): string {
 
 function object(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('object', 3), `$3`);
+        text = text.replaceAll(pattern('object', 3), '$3');
         text = text.replaceAll(pattern('object', 2), '$1');
         text = text.replaceAll(pattern('object', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('object', 3), `__$3__`);
-        text = text.replaceAll(pattern('object', 2), '__$1__');
-        text = text.replaceAll(pattern('object', 1), '__$1__');
+        text = text.replaceAll(pattern('object', 3), styles.underline('$3'));
+        text = text.replaceAll(pattern('object', 2), styles.underline('$1'));
+        text = text.replaceAll(pattern('object', 1), styles.underline('$1'));
     }
     return text;
 }
@@ -531,8 +535,8 @@ function variantrule(text: string, _noFormat: boolean): string {
 function recharge(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('recharge', 1), (_, p1) => {
         const parts = p1.split('|');
-        const recharge = parts[0] !== '6' ? `Recharge ${parts[0]}-6` : `Recharge 6`;
-        if (parts[1] === 'm') return `${recharge}`;
+        const recharge = parts[0] !== '6' ? `Recharge ${parts[0]}-6` : 'Recharge 6';
+        if (parts[1] === 'm') return recharge;
         return `(${recharge})`;
     });
     text = text.replaceAll(pattern('recharge', 0), '(Recharge 5-6)');
@@ -549,8 +553,8 @@ function scaledamage(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('scaledamage', 5), '$5');
         text = text.replaceAll(pattern('scaledamage', 3), '$3');
     } else {
-        text = text.replaceAll(pattern('scaledamage', 5), '**$5**');
-        text = text.replaceAll(pattern('scaledamage', 3), '**$3**');
+        text = text.replaceAll(pattern('scaledamage', 5), styles.bold('$5'));
+        text = text.replaceAll(pattern('scaledamage', 3), styles.bold('$3'));
     }
     return text;
 }
@@ -559,7 +563,7 @@ function scaledice(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('scaledice', 3), '$3');
     } else {
-        text = text.replaceAll(pattern('scaledice', 3), '**$3**');
+        text = text.replaceAll(pattern('scaledice', 3), styles.bold('$3'));
     }
     return text;
 }
@@ -569,8 +573,8 @@ function skill(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('skill', 2), '$1');
         text = text.replaceAll(pattern('skill', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('skill', 2), '*$1*');
-        text = text.replaceAll(pattern('skill', 1), '*$1*');
+        text = text.replaceAll(pattern('skill', 2), styles.italics('$1'));
+        text = text.replaceAll(pattern('skill', 1), styles.italics('$1'));
     }
     return text;
 }
@@ -586,8 +590,8 @@ function spell(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('spell', 2), '$1');
         text = text.replaceAll(pattern('spell', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('spell', 2), '__$1__');
-        text = text.replaceAll(pattern('spell', 1), '__$1__');
+        text = text.replaceAll(pattern('spell', 2), styles.underline('$1'));
+        text = text.replaceAll(pattern('spell', 1), styles.underline('$1'));
     }
     return text;
 }
@@ -598,27 +602,27 @@ function status(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern('status', 2), '$1');
         text = text.replaceAll(pattern('status', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('status', 3), '*$3*');
-        text = text.replaceAll(pattern('status', 2), '*$1*');
-        text = text.replaceAll(pattern('status', 1), '*$1*');
+        text = text.replaceAll(pattern('status', 3), styles.italics('$3'));
+        text = text.replaceAll(pattern('status', 2), styles.italics('$1'));
+        text = text.replaceAll(pattern('status', 1), styles.italics('$1'));
     }
     return text;
 }
 
 function subclass(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('subclass', 4), `$1`);
+        text = text.replaceAll(pattern('subclass', 4), '$1');
     } else {
-        text = text.replaceAll(pattern('subclass', 4), `__$1__`);
+        text = text.replaceAll(pattern('subclass', 4), styles.underline('$1'));
     }
     return text;
 }
 
 function subclassFeature(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('subclassFeature', 6), `$1`);
+        text = text.replaceAll(pattern('subclassFeature', 6), '$1');
     } else {
-        text = text.replaceAll(pattern('subclassFeature', 6), `__$1__`);
+        text = text.replaceAll(pattern('subclassFeature', 6), styles.underline('$1'));
     }
     return text;
 }
@@ -632,42 +636,42 @@ function table(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('table', 3), '$3');
         text = text.replaceAll(pattern('table', 2), '$1');
-        text = text.replaceAll(pattern('table', 1), `$1`);
+        text = text.replaceAll(pattern('table', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('table', 3), (_, p1, p2, p3) => `[${p3}](${getTablesUrl(p1, p2)})`);
-        text = text.replaceAll(pattern('table', 2), (_, p1, p2) => `[${p1}](${getTablesUrl(p1, p2)})`);
-        text = text.replaceAll(pattern('table', 1), (_, p1) => `[${p1}](${getTablesUrl(p1)})`);
+        text = text.replaceAll(pattern('table', 3), (_, p1, p2, p3) => styles.link(p3, getTablesUrl(p1, p2)));
+        text = text.replaceAll(pattern('table', 2), (_, p1, p2) => styles.link(p1, getTablesUrl(p1, p2)));
+        text = text.replaceAll(pattern('table', 1), (_, p1) => styles.link(p1, getTablesUrl(p1)));
     }
     return text;
 }
 
 function trap(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('trap', 3), `$3`);
-        text = text.replaceAll(pattern('trap', 2), `$1`);
+        text = text.replaceAll(pattern('trap', 3), '$3');
+        text = text.replaceAll(pattern('trap', 2), '$1');
     } else {
-        text = text.replaceAll(pattern('trap', 3), (_, p1, p2, p3) => `[${p3}](${getTrapsUrl(p1, p2)})`);
-        text = text.replaceAll(pattern('trap', 2), (_, p1, p2) => `[${p1}](${getTrapsUrl(p1, p2)})`);
+        text = text.replaceAll(pattern('trap', 3), (_, p1, p2, p3) => styles.link(p3, getTrapsUrl(p1, p2)));
+        text = text.replaceAll(pattern('trap', 2), (_, p1, p2) => styles.link(p1, getTrapsUrl(p1, p2)));
     }
     return text;
 }
 
 function vehicle(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('vehicle', 2), `$1`);
-        text = text.replaceAll(pattern('vehicle', 1), `$1`);
+        text = text.replaceAll(pattern('vehicle', 2), '$1');
+        text = text.replaceAll(pattern('vehicle', 1), '$1');
     } else {
-        text = text.replaceAll(pattern('vehicle', 2), `__$1__`);
-        text = text.replaceAll(pattern('vehicle', 1), `__$1__`);
+        text = text.replaceAll(pattern('vehicle', 2), styles.underline('$1'));
+        text = text.replaceAll(pattern('vehicle', 1), styles.underline('$1'));
     }
     return text;
 }
 
 function vehupgrade(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('vehupgrade', 2), `$1`);
+        text = text.replaceAll(pattern('vehupgrade', 2), '$1');
     } else {
-        text = text.replaceAll(pattern('vehupgrade', 2), `__$1__`);
+        text = text.replaceAll(pattern('vehupgrade', 2), styles.underline('$1'));
     }
     return text;
 }
@@ -680,7 +684,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
     const originalText = text;
 
     const functions = [
-        styles,
+        basic,
         $5etools,
         actSave,
         actSaveFail,
@@ -802,9 +806,6 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     // 5e.tools data often contains double spaces.
     text = text.replaceAll('  ', ' ');
-
-    // Fix Bree-Yarking (normalizes discord italic/bold formatting)
-    text = text.replace(/\*{4}([^\*]*?)\*{3}/g, '***$1**');
 
     // Check if any remaining patterns of {@...} exist
     if (/^.*\{@.*\}.*$/g.test(text)) {
