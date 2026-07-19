@@ -33,6 +33,12 @@ class RawData {
     getSourceDisplayName(sourceId: string): string {
         return this.parser?.SOURCE_JSON_TO_ABV?.[sourceId] || sourceId;
     }
+
+    getSizeName(size: string): string {
+        // Single exception, see render.js:9078
+        if (size === 'V') return 'Variable size';
+        return this.parser?.SIZE_ABV_TO_FULL?.[size] || size;
+    }
 }
 
 export const rawData = new RawData();

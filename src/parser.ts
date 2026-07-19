@@ -4,6 +4,7 @@ import { AbilityScores, Advantages, Alignments, SpellSchools } from './5etools-c
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
+import { rawData } from './5etools-conversion/rawdata';
 
 export interface Range {
     type: 'range';
@@ -794,29 +795,8 @@ export function title(text: string): string {
 
 export function parseSizes(sizes: string | string[]): string {
     if (typeof sizes === 'string') sizes = [sizes];
-    const sizeMap = new Map<string, string>([
-        ['F', 'Fine'],
-        ['D', 'Diminutive'],
-        ['T', 'Tiny'],
-        ['S', 'Small'],
-        ['M', 'Medium'],
-        ['L', 'Large'],
-        ['H', 'Huge'],
-        ['G', 'Gargantuan'],
-        ['V', 'Variable size'],
-        ['C', 'Colossal'],
-    ]);
 
-    const words: string[] = [];
-    for (const size of sizes) {
-        const word = sizeMap.get(size);
-        if (word) {
-            words.push(word);
-        } else {
-            throw `parseSizes: Could not parse size '${size}'`;
-        }
-    }
-
+    const words = sizes.map((size) => rawData.getSizeName(size))
     return joinStringsWithOr(words);
 }
 
