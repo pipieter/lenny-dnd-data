@@ -806,7 +806,6 @@ export function parseObjectSizes(sizes: string | string[]): string {
     return joinStringsWithOr(words);
 }
 
-
 export function parseCreatureTypes(creature_type: string | any): string {
     while (typeof creature_type === 'object' && creature_type?.type) {
         creature_type = creature_type.type;

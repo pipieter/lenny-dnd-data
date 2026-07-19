@@ -62,7 +62,7 @@ function getSpeciesInfo(data: any, name: string, source: string): Description[] 
 function getSpeciesSizes(sizes: string[]) {
     const results: string[] = [];
     for (const size of sizes) {
-        const name = rawData.getSizeName(size)
+        const name = rawData.getSizeName(size);
         if (name) {
             results.push(name);
         }
