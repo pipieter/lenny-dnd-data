@@ -796,9 +796,17 @@ export function title(text: string): string {
 export function parseSizes(sizes: string | string[]): string {
     if (typeof sizes === 'string') sizes = [sizes];
 
-    const words = sizes.map((size) => rawData.getSizeName(size))
+    const words = sizes.map((size) => rawData.getSizeName(size)).filter((size) => size !== null);
     return joinStringsWithOr(words);
 }
+
+export function parseObjectSizes(sizes: string | string[]): string {
+    if (typeof sizes === 'string') sizes = [sizes];
+
+    const words = sizes.map((size) => rawData.getObjectSizeName(size)).filter((size) => size !== null);
+    return joinStringsWithOr(words);
+}
+
 
 export function parseCreatureTypes(creature_type: string | any): string {
     while (typeof creature_type === 'object' && creature_type?.type) {

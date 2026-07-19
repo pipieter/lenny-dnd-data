@@ -35,14 +35,19 @@ class RawData {
         return this.parser?.SOURCE_JSON_TO_ABV?.[sourceId] || sourceId;
     }
 
-    getSizeName(size: string): string {
+    getObjectSizeName(size: string | undefined | null): string | null {
         // Single exception, see render.js:9078
         if (size === 'V') return 'Variable size';
+        return this.getSizeName(size);
+    }
+
+    getSizeName(size: string | undefined | null): string | null {
+        if (!size) return null;
         return this.parser?.SIZE_ABV_TO_FULL?.[size] || size;
     }
 
-    getDamageName(damage: string | undefined): string | undefined{
-        if (!damage) return undefined
+    getDamageName(damage: string | undefined | null): string | null {
+        if (!damage) return null;
 
         const name = this.parser?.DMGTYPE_JSON_TO_FULL?.[damage] || damage;
         return capitalize(name);
