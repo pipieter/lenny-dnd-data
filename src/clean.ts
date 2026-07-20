@@ -406,8 +406,10 @@ function hit(text: string, noFormat: boolean): string {
 
     if (noFormat) {
         text = text.replaceAll(pattern('h', 0), 'Hit: ');
+        text = text.replaceAll(pattern('h', 1), 'Hit: ');
     } else {
         text = text.replaceAll(pattern('h', 0), '*Hit:* ');
+        text = text.replaceAll(pattern('h', 1), '*Hit:* ');
     }
 
     return text;
@@ -499,6 +501,11 @@ function object(text: string, noFormat: boolean): string {
 function optfeature(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('optfeature', 2), '$1');
     text = text.replaceAll(pattern('optfeature', 1), '$1');
+    return text;
+}
+
+function psionic(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('psionic', 2), '$1');
     return text;
 }
 
@@ -728,6 +735,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         loader,
         object,
         optfeature,
+        psionic,
         quickref,
         race,
         sense,

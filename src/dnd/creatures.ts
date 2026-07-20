@@ -88,6 +88,7 @@ function parseAC(creature: any): string {
         else if (ac.special) results.push(ac.special);
         else if (ac.condition) results.push(`${ac.ac} ${ac.condition}`);
         else if (ac.from) results.push(`${ac.ac} (${joinStringsWithAnd(ac.from)})`);
+        else if (ac.ac) results.push(`${ac.ac}`);
         else throw `Unsupported creature-AC in ${creature.name}: ${JSON.stringify(ac)}`;
     }
 

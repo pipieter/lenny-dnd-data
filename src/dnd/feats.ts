@@ -99,6 +99,8 @@ const FeatCategoryMap: Record<string, string> = {
     PlanarPact: 'Planar Pact',
     PPact: 'Planar Pact',
     DG: 'Dark Gift',
+    Craft: 'Craft',
+    Harvest: 'Harvest',
 };
 
 function getFeatPrerequisites(feat: Feat): string | null {

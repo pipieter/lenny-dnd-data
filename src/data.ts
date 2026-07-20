@@ -31,6 +31,7 @@ export class Databank {
     public readonly spell: any[] = [];
     public readonly spellFluff: any[] = [];
     public readonly spellSource: any[] = [];
+    public readonly roll20Spell: any[] = [];
     // Items
     public readonly item: any[] = [];
     public readonly baseitem: any[] = [];
@@ -52,6 +53,7 @@ export class Databank {
     // Creatures
     public readonly monster: any[] = [];
     public readonly monsterFluff: any[] = [];
+    public readonly makebrewCreatureTrait: any[] = [];
     // Languages
     public readonly language: any[] = [];
     public readonly languageFluff: any[] = [];
@@ -84,6 +86,8 @@ export class Databank {
     public readonly backgroundFluff: any[] = [];
     // Feats
     public readonly feat: Feat[] = [];
+    public readonly featFluff: any[] = [];
+    public readonly psionic: any[] = [];
     // Skills
     public readonly skill: Skill[] = [];
     // Names
@@ -108,6 +112,8 @@ export class Databank {
     public readonly lifeClass: LifeClass[] = [];
     public readonly lifeBackground: LifeBackground[] = [];
     public readonly lifeTrinket: any[] = [];
+    // Other
+    public readonly citation: any[] = [];
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
@@ -265,6 +271,7 @@ export class PartneredDatabank extends Databank {
 
         if (this.filters.partnered && !partnered) return;
         if (!this.filters.allowPHB2014 && data._meta.edition === 'classic') return;
+        if (data._meta.status !== 'ready') return;
 
         const prefixesToIgnore = ['foundry'];
         const keysToIgnore = [

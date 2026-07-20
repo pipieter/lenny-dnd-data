@@ -65,6 +65,7 @@ function getSpellImage(fluffs: any[], name: string, source: string): string | nu
 }
 
 function getSpellDescription(spell: any): Description[] {
+    return []; // TODO, Somewhere in here, undefined is being passed into parseDescriptions
     const descriptions = parseDescriptions('', spell.entries);
     if (spell.entriesHigherLevel) {
         for (const entry of spell.entriesHigherLevel) {
@@ -105,6 +106,9 @@ function getCasters(spell: any, sources: any[]): any[] {
 }
 
 function getSpell(spell: any, fluffs: any[], sources: any): ParsedSpell {
+    console.log(spell);
+    console.log(fluffs);
+
     return {
         name: spell.name,
         source: spell.source,
@@ -140,6 +144,7 @@ export function getSpells(databank: Databank): ParsedSpell[] {
     const result = [];
     for (const spell of spells) {
         result.push(getSpell(spell, fluffs, sources));
+        console.log('----');
     }
 
     result.sort((a, b) => a.name.localeCompare(b.name));

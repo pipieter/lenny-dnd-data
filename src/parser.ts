@@ -605,6 +605,10 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             return [cleanDNDText(itemSub)];
         }
 
+        case 'abilityGeneric': {
+            return [`**${description.name}** = ${description.text}`];
+        }
+
         default: {
             throw `Unsupported description type: '${type}'`;
         }
@@ -673,6 +677,9 @@ function parseTableRow(values: any[] | any): string[] {
                 cells.push(text);
             } else if (value.type == 'image') {
                 cells.push(`[image](${getImageUrl(value.href.path)})`);
+            } else if (value.type == 'list') {
+                cells.push('todo'); // TODO Heliana's Cooking variantrule -> 49801 https://5e.tools/variantrules.html#cooking_helianasguidetomonsterhunting
+                // Data seemingly has the full column as a list? Not sure how to implement.
             } else {
                 throw `Unsupported table value-type: '${value.type}' in ${JSON.stringify(value)}`;
             }

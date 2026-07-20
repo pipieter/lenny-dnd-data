@@ -132,7 +132,7 @@ function main(): void {
     const stopwatch = new StopwatchLogger();
 
     const official = new OfficialDatabank();
-    const partnered = new PartneredDatabank(official, { partnered: true, allowPHB2014: false });
+    const partnered = new PartneredDatabank(official, { partnered: true, allowPHB2014: true });
 
     stopwatch.log('Loaded databanks');
 

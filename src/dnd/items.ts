@@ -328,7 +328,10 @@ function parseItem(item: any, data: any): ParsedItem {
         } else {
             const entries = property.entries || property.entriesTemplate || [];
             if (entries.length === 0) continue;
-            if (entries.length > 1) throw `Found property with more than one entry '${property.abbreviation}`;
+            if (entries.length > 1) {
+                continue; // TODO Handle this, required by "Socketing"
+                throw `Found property with more than one entry '${property.abbreviation}`;
+            }
 
             const entry = entries[0];
             const template = applyItemPropertyTemplate(item, entry, property.template).toLowerCase();
