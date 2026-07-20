@@ -329,8 +329,9 @@ function parseItem(item: any, data: any): ParsedItem {
             const entries = property.entries || property.entriesTemplate || [];
             if (entries.length === 0) continue;
             if (entries.length > 1) {
-                continue; // TODO Handle this, required by "Socketing"
-                throw `Found property with more than one entry '${property.abbreviation}`;
+                // Mainly used by partnered source HelianasGuidetoMonsterHunting's "Socketable" property.
+                result.description.push(...parseDescriptions('', entries));
+                continue;
             }
 
             const entry = entries[0];
