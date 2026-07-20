@@ -270,7 +270,7 @@ export class PartneredDatabank extends Databank {
         const partnered = sources.some((source) => source.partnered ?? false);
 
         if (this.filters.partnered && !partnered) return;
-        if (!this.filters.allowPHB2014 && data._meta.edition === 'classic') return;        
+        if (!this.filters.allowPHB2014 && data._meta.edition === 'classic') return;
         if (data._meta.status !== 'ready' || undefined) return; // TODO add support for non-ready sources
 
         const prefixesToIgnore = ['foundry'];
