@@ -57,6 +57,10 @@ class RawData {
         return 'supplemental';
     }
 
+    getSourceLegacyStatus(sourceId: string): boolean {
+        return this.hasSourceId(sourceId, this.parser?.SOURCES_LEGACY_WOTC);
+    }
+
     getObjectSizeName(size: string | undefined | null): string | null {
         // Single exception, see render.js:9078
         if (size === 'V') return 'Variable size';

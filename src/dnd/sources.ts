@@ -7,6 +7,7 @@ export interface ParsedSource {
     abbreviation: string;
     published: string | null;
     category: string;
+    legacy: boolean;
 }
 
 export function getSources(data: Databank): ParsedSource[] {
@@ -22,6 +23,7 @@ export function getSources(data: Databank): ParsedSource[] {
             abbreviation: info.abbreviation,
             published: info.published,
             category: info.category,
+            legacy: info.legacy,
         });
     }
 

@@ -241,6 +241,7 @@ export class OfficialDatabank extends Databank {
             abbreviation: rawData.getSourceAbbreviation(sourceId),
             published: rawData.getSourcePublishDate(sourceId),
             category: rawData.getSourceCategory(sourceId),
+            legacy: rawData.getSourceLegacyStatus(sourceId),
         };
     }
 }
@@ -312,7 +313,8 @@ export class PartneredDatabank extends Databank {
                     const name = datum['full'] ?? source;
                     const abbreviation = datum['abbreviation'] ?? source;
                     const published = datum['dateReleased'] ?? null;
-                    this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered' };
+                    const legacy = sourceData['edition'] === 'classic';
+                    this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered', legacy };
                 }
             }
 
@@ -391,6 +393,7 @@ export class PartneredDatabank extends Databank {
             abbreviation: sourceId,
             published: null,
             category: 'partnered',
+            legacy: false,
         };
     }
 }
