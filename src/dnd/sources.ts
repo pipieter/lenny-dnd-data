@@ -2,11 +2,9 @@ import { Databank } from '../data';
 import { entrySort } from '../util';
 
 export interface ParsedSource {
-    id: string;
+    source: string;
     name: string;
     displayName: string;
-    source: string;
-    // TODO - Do we wish to retain this information or not?
     published: string | null;
     category: string;
 }
@@ -19,10 +17,9 @@ export function getSources(data: Databank): ParsedSource[] {
         const info = data.getSourceData(source);
 
         sources.push({
-            id: source,
+            source,
             name: info.name,
             displayName: info.displayName,
-            source,
             published: info.published,
             category: info.category,
         });

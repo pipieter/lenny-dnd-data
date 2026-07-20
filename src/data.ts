@@ -236,7 +236,6 @@ export class OfficialDatabank extends Databank {
 
     public getSourceData(sourceId: string): ParsedSource {
         return {
-            id: sourceId,
             name: rawData.getSourceFullName(sourceId),
             displayName: rawData.getSourceDisplayName(sourceId),
             source: sourceId,
@@ -309,11 +308,11 @@ export class PartneredDatabank extends Databank {
                 const sourceData = data['_meta']['sources'];
 
                 for (const datum of sourceData) {
-                    const id = datum['json'];
-                    const name = datum['full'] ?? id;
-                    const displayName = datum['abbreviation'] ?? id;
+                    const source = datum['json'];
+                    const name = datum['full'] ?? source;
+                    const displayName = datum['abbreviation'] ?? source;
                     const published = datum['dateReleased'] ?? null;
-                    this.sourceData[id] = { id, name, displayName, published, source: id, category: 'partnered' };
+                    this.sourceData[source] = { name, displayName, published, source, category: 'partnered' };
                 }
             }
 
@@ -387,7 +386,6 @@ export class PartneredDatabank extends Databank {
     public getSourceData(sourceId: string): ParsedSource {
         if (this.sourceData[sourceId]) return this.sourceData[sourceId];
         return {
-            id: sourceId,
             name: sourceId,
             displayName: sourceId,
             source: sourceId,
