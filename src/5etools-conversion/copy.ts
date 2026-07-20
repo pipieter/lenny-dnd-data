@@ -310,26 +310,16 @@ export function handleCopy(base: any, entries: any[]): any {
     let copy = structuredClone(base); // Fields will be changed, so making a deep clone is important for future usages
 
     if (!copy._copy) return copy;
+    const copyName = copy._copy.name.trim().toLowerCase();
+    const copySource = copy._copy.source.trim().toLowerCase();
 
     let parent = entries.find((entry) => {
         const entryName = entry.name.trim().toLowerCase();
         const entrySource = entry.source.trim().toLowerCase();
-
-        const copyName = copy._copy.name.trim().toLowerCase();
-        const copySource = copy._copy.source.trim().toLowerCase();
-
         return entryName === copyName && entrySource === copySource;
     });
-    if (!parent) {
-        copy.name += "#TODO"
-        return copy; // TODO FIX
-        throw `Could not find parent for ${copy.name}|${copy.source}`;
-    }
-
-    // Handle parent being a copy itself
-    if (parent._copy) {
-        parent = handleCopy(parent, entries);
-    }
+    if (!parent) throw `Could not find parent for ${copy.name}|${copy.source} -> ${copyName}|${copySource}`;
+    if (parent._copy) parent = handleCopy(parent, entries); // Handle parent being a copy itself
 
     const mod = copy._copy._mod || {};
     const preserve = copy._copy._preserve || {};

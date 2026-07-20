@@ -25,14 +25,19 @@ import { getBoons } from './dnd/boons';
 import { ParsedDatabank } from './parsed';
 import { getLife } from './dnd/life';
 
-function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): ParsedDatabank {
+function parse(
+    name: string,
+    databank: Databank,
+    stopwatch: StopwatchLogger,
+    additionalDatabank?: Databank // only used for databanks that refer to other ones (partnered data requires official data)
+): ParsedDatabank {
     const parsed = new ParsedDatabank();
     stopwatch.log(`Generating ${name}`, kleur.cyan);
 
-    const items = getItems(databank);
+    const items = getItems(databank, additionalDatabank);
     stopwatch.log('Items retrieved');
 
-    const itemVariants = getItemVariants(databank);
+    const itemVariants = getItemVariants(databank, additionalDatabank);
     stopwatch.log('Items variant retrieved');
 
     const spells = getSpells(databank);
@@ -137,7 +142,7 @@ function main(): void {
     stopwatch.log('Loaded databanks');
 
     const parsedOfficial = parse('official', official, stopwatch);
-    const parsedPartnered = parse('partnered', partnered, stopwatch);
+    const parsedPartnered = parse('partnered', partnered, stopwatch, official);
 
     const officialSources = new Set(parsedOfficial.sources.map((source) => source.source));
     parsedPartnered.removeSources(officialSources);
