@@ -48,15 +48,13 @@ class RawData {
         return sourceSet.has(sourceId);
     }
 
-    getSourceCategory(sourceId: string): string {
+    getSourceCategory(sourceId: string): 'core' | 'core-supplemental' | 'adventure' | 'supplemental' {
         // Refer to 5etools-src/js/parser.js 3941
         if (this.hasSourceId(sourceId, this.parser?.SOURCES_VANILLA)) return 'core';
-        if (this.hasSourceId(sourceId, this.parser?.SOURCES_LEGACY_WOTC)) return 'legacy';
+        if (this.hasSourceId(sourceId, this.parser?.SOURCES_LEGACY_WOTC)) return 'core';
         if (this.hasSourceId(sourceId, this.parser?.SOURCES_CORE_SUPPLEMENTS)) return 'core-supplemental';
-        if (this.hasSourceId(sourceId, this.parser?.SOURCES_COMEDY)) return 'comedy';
-        if (this.hasSourceId(sourceId, this.parser?.SOURCES_NON_FR)) return 'supplemental';
         if (this.hasSourceId(sourceId, this.parser?.SOURCES_ADVENTURES)) return 'adventure';
-        return 'other';
+        return 'supplemental';
     }
 
     getObjectSizeName(size: string | undefined | null): string | null {

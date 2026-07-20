@@ -25,7 +25,6 @@ export function getSources(data: Databank): ParsedSource[] {
             source,
             published: info.published,
             category: info.category,
-            // group: 'no-detail',
         });
     }
 
