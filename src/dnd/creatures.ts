@@ -157,7 +157,7 @@ function parseInitiative(creature: any): string {
         const advantage = parseAdvantage(initiative.advantageMode);
         return `${formatModifier(mod)} (with ${advantage})`;
     }
-    if (typeof initiative === "number") return initiative.toString();
+    if (typeof initiative === 'number') return initiative.toString();
 
     throw `Unsupported creature - initiative in ${creature.name}: ${JSON.stringify(initiative)}`;
 }

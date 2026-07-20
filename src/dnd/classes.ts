@@ -453,7 +453,7 @@ function parseBaseInfo(data: any): Description[] {
 
         if (equipment) {
             const entries = equipment.map((entry: any) => {
-                if (typeof entry == "string") return capitalize(cleanDNDText(entry));
+                if (typeof entry == 'string') return capitalize(cleanDNDText(entry));
                 return entry;
             });
             // If entries only has one item, return a text

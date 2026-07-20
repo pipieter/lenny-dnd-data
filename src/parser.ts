@@ -704,7 +704,11 @@ export function parseDescriptionFromTable(description: any): DescriptionTable {
 
     if (description.type === 'tableGroup') {
         const tables = description.tables.map((table: any) => parseDescriptionFromTable(table).table);
-        return { name: title, type: DescriptionType.table, table: { type: 'table', title, headers: null, rows: tables as any } };
+        return {
+            name: title,
+            type: DescriptionType.table,
+            table: { type: 'table', title, headers: null, rows: tables as any },
+        };
     }
 
     let headers: string[] | null = null;
@@ -732,7 +736,7 @@ export function parseDescriptionFromTable(description: any): DescriptionTable {
             )
         );
     }
-    
+
     const rows: string[][] = description.rows.map(parseTableRow);
     const table: Table = { type: 'table', title, headers, rows };
 
@@ -928,7 +932,9 @@ export function parsePrerequisite(prerequisite: any): string | null {
                 break;
             }
             case 'race': {
-                const races = prerequisite.race.map((r: any) => {return r.name});
+                const races = prerequisite.race.map((r: any) => {
+                    return r.name;
+                });
                 prerequisites.push(joinStringsWithOr(races));
                 break;
             }

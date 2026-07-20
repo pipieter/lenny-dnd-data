@@ -101,15 +101,15 @@ const FeatCategoryMap: Record<string, string> = {
     DG: 'Dark Gift',
     Harvest: 'Harvest',
     // TLOTRR
-    VtCom: "Common Virtues",
-    VtBar: "Virtues of the Bardings",
-    VtDwa: "Virtues of the Dwarves",
-    VtElf: "Virtues of the Elves",
-    VtHob: "Virtues of the Hobbits",
-    VtMBr: "Virtues of the Men of Bree",
-    VtNRg: "Virtues of the Rangers of the North",
-    Craft: "Craft",
-    B10L: "Beyond 10th Level"
+    VtCom: 'Common Virtues',
+    VtBar: 'Virtues of the Bardings',
+    VtDwa: 'Virtues of the Dwarves',
+    VtElf: 'Virtues of the Elves',
+    VtHob: 'Virtues of the Hobbits',
+    VtMBr: 'Virtues of the Men of Bree',
+    VtNRg: 'Virtues of the Rangers of the North',
+    Craft: 'Craft',
+    B10L: 'Beyond 10th Level',
 };
 
 function getFeatPrerequisites(feat: Feat): string | null {
