@@ -99,6 +99,17 @@ const FeatCategoryMap: Record<string, string> = {
     PlanarPact: 'Planar Pact',
     PPact: 'Planar Pact',
     DG: 'Dark Gift',
+    Harvest: 'Harvest',
+    // TLOTRR
+    VtCom: 'Common Virtues',
+    VtBar: 'Virtues of the Bardings',
+    VtDwa: 'Virtues of the Dwarves',
+    VtElf: 'Virtues of the Elves',
+    VtHob: 'Virtues of the Hobbits',
+    VtMBr: 'Virtues of the Men of Bree',
+    VtNRg: 'Virtues of the Rangers of the North',
+    Craft: 'Craft',
+    B10L: 'Beyond 10th Level',
 };
 
 function getFeatPrerequisites(feat: Feat): string | null {
@@ -243,8 +254,11 @@ function getFeatPrerequisites(feat: Feat): string | null {
                 case 'note':
                     // Additional information, but not actually a prerequisite
                     break;
+                case 'culture':
+                    group.push(`${joinStringsWithOr(prerequisite.culture)} culture`);
+                    break;
                 default: {
-                    throw `Unsupported feat prerequisite key ${key}`;
+                    throw `Unsupported feat prerequisite-key '${key}' in: ${JSON.stringify(prerequisite)}`;
                 }
             }
         }

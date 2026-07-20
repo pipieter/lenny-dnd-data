@@ -14,6 +14,30 @@
   "reprint": null
  },
  {
+  "name": "Anguished",
+  "source": "TLotRR",
+  "url": "https://5e.tools/conditionsdiseases.html#anguished_tlotrr",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "Player-heroes whose Shadow score reaches the full value of their Wisdom score become anguished."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "An anguished character is miserable, and has disadvantage on all ability checks, attack rolls, and saving throws. There is only one way to recover from such depths of desperation—the Player-hero must experience a bout of madness."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A bout of madness is a violent outburst, a dangerous crisis that frees a Player-hero from the burden of the Shadow, but that may have serious, long-term consequences (see Madness)."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
   "name": "Bewildered",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/conditionsdiseases.html#bewildered_monstersofdrakkenheim",
@@ -274,6 +298,30 @@
  },
  {
   "name": "Dazed",
+  "source": "FleeMortals",
+  "url": "https://5e.tools/conditionsdiseases.html#dazed_fleemortals",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "A **dazed** creature can only do one of the following things on their turn: move, use an action, or use a bonus action. If a creature becomes dazed during their turn, their turn ends. The cure ailment power, __lesser restoration__ spell, and __greater restoration__ spell remove the dazed condition. At the GM's discretion, other powers, spells, or effects might also remove the dazed condition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a dazed creature is affected by a spell or effect that gives them an extra action on their turn (like the __haste__ spell or the fighter's Action Surge feature), they can still take this extra action, in addition to the movement, action, or bonus action allowed by the dazed condition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Some creatures in this book have immunity to the dazed condition. At the GM's discretion, a creature published in the core rules or another supplement who has immunity to the paralyzed or stunned condition also has immunity to the dazed condition."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
+  "name": "Dazed",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/conditionsdiseases.html#dazed_grimhollowcg24",
   "description": [
@@ -363,6 +411,155 @@
   "reprint": null
  },
  {
+  "name": "Drunk",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/conditionsdiseases.html#drunk_helianasguidetomonsterhunting",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "Between long rests, a creature can drink a number of units of alcohol equal to its Constitution modifier without any effect. For each unit of alcohol the creature drinks beyond this, the creature must make a Constitution saving throw, calculating the DC using the formula below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Drunkenness saving throw DC** = 10 + number of units of alcohol consumed since last long rest"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "On a failed saving throw, a creature gains one level of drunkenness. Drunkenness is measured in six levels. If an already drunk creature suffers another effect that causes drunkenness, its current level of drunkenness increases by the number of units of alcohol the creature consumed to trigger the saving throw. A creature's drunkenness level is reduced by 1 for each 2 hours since it last drank. Furthermore, finishing a long rest reduces a creature's drunkenness level to 0."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature suffers the effect of its current level of drunkenness as well as all lower levels. For example, a creature suffering level 3 drunkenness has disadvantage on Dexterity, Charisma, and Wisdom checks and saving throws."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Level",
+      "Effect"
+     ],
+     "rows": [
+      [
+       "1",
+       "The creature has advantage on Charisma checks."
+      ],
+      [
+       "2",
+       "The creature has disadvantage on Dexterity checks and saving throws."
+      ],
+      [
+       "3",
+       "The creature loses the effects of level 1 drunkenness, and has disadvantage on Charisma and Wisdom checks and saving throws."
+      ],
+      [
+       "4",
+       "The creature's speed is halved."
+      ],
+      [
+       "5",
+       "The creature is poisoned and retains no memory of events that occur between this point and when they are no longer drunk."
+      ],
+      [
+       "6",
+       "The creature falls unconscious for 1d4 + 8 hours. When it wakes, it is no longer drunk, but doesn't gain the benefits of a long rest, and gains 1 level of exhaustion."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Optional Rule: Hangover",
+    "type": "text",
+    "value": "When a creature loses at least 1 level of drunkenness during or as a result of finishing a long rest, the creature must make a **Constitution saving throw** at the end of the long rest. The DC for this saving throw equals four times the drunkenness level before they started the long rest. A creature that fails this saving throw has a hangover and is poisoned for a number of hours equal to the difference between the result of their saving throw and the DC."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
+  "name": "Drunkenness",
+  "source": "GriffonsSaddlebag2",
+  "url": "https://5e.tools/conditionsdiseases.html#drunkenness_griffonssaddlebag2",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "Drinking alcohol is a common pastime and element of many social encounters. However, consuming too much alcohol causes a creature to become drunk. At the GM's discretion, this drunkenness can be measured in six levels using the following rules. A creature gains one level of drunkenness whenever it has a number of alcoholic drinks within 1 hour equal to 2 + half its Constitution modifier, rounded up (a minimum of 2 drinks per hour)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While a creature has at least one level of drunkenness, it gains a bonus to saving throws it makes against being frightened equal to its level of drunkenness, and the DC required to intimidate it increases by the same amount. However, the creature also suffers a penalty to certain rolls equal to its drunkenness level. The kinds of rolls that suffer these penalties, as well as other effects of drunkenness, are shown in the table below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature suffers the effect of its current level of drunkenness as well as all lower levels. For example, a creature suffering level 2 drunkenness has a −2 penalty to Wisdom (*Insight* and *Perception*) checks, Strength and Dexterity saving throws, and Constitution saving throws to maintain concentration. However, it also gains a +2 bonus to saving throws against being frightened, and its DC to resist being intimidated increases by 2."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Certain creatures have a tolerance to alcohol that's either natural or practiced. A creature that has resistance to poison damage or has advantage on saving throws against poison must drink twice the amount of alcohol as normal to gain one level of drunkenness. A creature immune to poison damage or the poisoned condition can't become drunk against their will. Alternatively, at the GM's discretion, a creature may need to drink additional alcohol to gain levels of drunkenness as a result of building up a natural tolerance from drinking it frequently over time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a conscious creature starts its turn with level 6 drunkenness, it must make a DC 10 Constitution saving throw. On a failed save, the creature falls unconscious. On a success, the creature spends its action that turn retching and reeling. When it does, the creature loses 1 level of drunkenness. The DC for this saving throw increases by 5 each time the creature repeats the save before it loses all of its levels of drunkenness."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "For every hour the creature doesn't drink any alcohol, it loses one level of drunkenness, provided it's either unconscious or has also ingested some food or water. Finishing a long rest removes any levels of drunkenness unless the creature fell unconscious for the duration of the rest as a result of suffering level 6 drunkenness. In that case, the creature loses 1d4 + 2 levels of drunkenness instead and doesn't regain Hit Dice as a result of finishing a long rest."
+   },
+   {
+    "name": "Drunkenness Level Table",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Drunkenness Level Table",
+     "headers": [
+      "Level",
+      "Effect"
+     ],
+     "rows": [
+      [
+       "1",
+       "Penalty to Wisdom (Insight and Perception) checks"
+      ],
+      [
+       "2",
+       "Penalty to Strength and Dexterity saving throws, as well as Constitution saving throws to maintain concentration"
+      ],
+      [
+       "3",
+       "Penalty to ability checks that don't use Charisma"
+      ],
+      [
+       "4",
+       "Penalty to attack rolls and Charisma checks"
+      ],
+      [
+       "5",
+       "Speed halved, can't concentrate on spells"
+      ],
+      [
+       "6",
+       "Unconscious, and can't remember the events of the last hour."
+      ]
+     ]
+    }
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
   "name": "Enfeebled",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/conditionsdiseases.html#enfeebled_monstersofdrakkenheim",
@@ -395,6 +592,20 @@
     "name": "",
     "type": "text",
     "value": "When a creature reaches 6 levels of Ennui, its will is completely broken and it can take no purposeful action; if this happens to a living creature, its physical body dies and it becomes a husk bound to Dolurrh."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
+  "name": "Flanked",
+  "source": "FleeMortals",
+  "url": "https://5e.tools/conditionsdiseases.html#flanked_fleemortals",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "If your game uses the optional flanking rules in the core rules, a creature who is immune to the **flanked** condition can't be flanked regardless of the position of their enemies."
    }
   ],
   "image": null,
@@ -472,6 +683,39 @@
     "name": "Description",
     "type": "text",
     "value": "Roll the die indicated by the condition, such as \"Jinxed 1d4\" each time you make an attack roll or saving throw. Subtract the value on the die from the result."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
+  "name": "Miserable",
+  "source": "TLotRR",
+  "url": "https://5e.tools/conditionsdiseases.html#miserable_tlotrr",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "If a Player-hero's Shadow score matches or exceeds half their Wisdom score (rounded up), they become miserable."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A miserable character decreases the Fellowship rating of the Company by 1. In addition, if a miserable character's d20 roll is a 1 or 2, the roll is a failure regardless of the DC for any ability check, attack roll, or saving throw."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
+  "name": "Pacified",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/conditionsdiseases.html#pacified_obojimatallgrass",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "A pacified creature can't attack, cast a spell that affects an enemy, or deal damage to another creature."
    }
   ],
   "image": null,

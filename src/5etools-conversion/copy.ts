@@ -20,7 +20,7 @@ function addMod_replaceArr(base: any, key: string, entry: any): void {
     for (let i = 0; i < base[key].length; i++) {
         // If replace is given by name
         if (typeof entry.replace === 'string') {
-            if (base[key][i].name === entry.replace) {
+            if (base[key][i] === entry.replace || base[key][i].name === entry.replace) {
                 base[key].splice(i, 1, ...items);
                 return;
             }
@@ -310,24 +310,16 @@ export function handleCopy(base: any, entries: any[]): any {
     let copy = structuredClone(base); // Fields will be changed, so making a deep clone is important for future usages
 
     if (!copy._copy) return copy;
+    const copyName = copy._copy.name.trim().toLowerCase();
+    const copySource = copy._copy.source.trim().toLowerCase();
 
     let parent = entries.find((entry) => {
         const entryName = entry.name.trim().toLowerCase();
         const entrySource = entry.source.trim().toLowerCase();
-
-        const copyName = copy._copy.name.trim().toLowerCase();
-        const copySource = copy._copy.source.trim().toLowerCase();
-
         return entryName === copyName && entrySource === copySource;
     });
-    if (!parent) {
-        throw `Could not find parent for ${copy.name}|${copy.source}`;
-    }
-
-    // Handle parent being a copy itself
-    if (parent._copy) {
-        parent = handleCopy(parent, entries);
-    }
+    if (!parent) throw `Could not find parent for ${copy.name}|${copy.source} -> ${copyName}|${copySource}`;
+    if (parent._copy) parent = handleCopy(parent, entries); // Handle parent being a copy itself
 
     const mod = copy._copy._mod || {};
     const preserve = copy._copy._preserve || {};

@@ -452,7 +452,10 @@ function parseBaseInfo(data: any): Description[] {
         const equipment = data.startingEquipment.default ?? data.startingEquipment.entries;
 
         if (equipment) {
-            const entries = equipment.map(cleanDNDText).map(capitalize);
+            const entries = equipment.map((entry: any) => {
+                if (typeof entry == 'string') return capitalize(cleanDNDText(entry));
+                return entry;
+            });
             // If entries only has one item, return a text
             if (entries.length === 1) {
                 info.push({

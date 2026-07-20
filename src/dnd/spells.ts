@@ -1,5 +1,6 @@
 import {
     Description,
+    DescriptionType,
     parseCastingTime,
     parseComponents,
     parseDescriptionFromTable,
@@ -73,6 +74,8 @@ function getSpellDescription(spell: any): Description[] {
             // Without relying on entry.name and entry.entries
             if (entry.type === 'table') {
                 descriptions.push(parseDescriptionFromTable(entry));
+            } else if (typeof entry === 'string') {
+                descriptions.push({ name: '', type: DescriptionType.text, value: entry });
             } else {
                 descriptions.push(...parseDescriptions(entry.name, entry.entries));
             }

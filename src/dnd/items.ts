@@ -177,8 +177,10 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
     return results;
 }
 
-function parseItem(item: any, data: any): ParsedItem {
-    const fluff = getItemFluff(data.itemFluff, item.name, item.source);
+function parseItem(item: any, data: any, additionalData?: Databank): ParsedItem {
+    const itemFluff = [...data.itemFluff];
+    if (additionalData) itemFluff.push(...additionalData.itemFluff);
+    const fluff = getItemFluff(itemFluff, item.name, item.source);
 
     // TODO optimize these mappings beforehand
     const types = mapItemTypes(data);
@@ -286,7 +288,7 @@ function parseItem(item: any, data: any): ParsedItem {
     }
 
     // Armor properties, if applicable
-    if (item.ac) {
+    if (item.ac && item.type) {
         if (item.type.includes('LA')) result.properties.push(`AC ${item.ac} + Dex`);
         else if (item.type.includes('MA')) result.properties.push(`AC ${item.ac} + Dex (max 2)`);
         else if (item.type.includes('S')) result.properties.push(`+${item.ac} AC`);
@@ -328,7 +330,11 @@ function parseItem(item: any, data: any): ParsedItem {
         } else {
             const entries = property.entries || property.entriesTemplate || [];
             if (entries.length === 0) continue;
-            if (entries.length > 1) throw `Found property with more than one entry '${property.abbreviation}`;
+            if (entries.length > 1) {
+                // Mainly used by partnered source HelianasGuidetoMonsterHunting's "Socketable" property.
+                result.description.push(...parseDescriptions('', entries));
+                continue;
+            }
 
             const entry = entries[0];
             const template = applyItemPropertyTemplate(item, entry, property.template).toLowerCase();
@@ -366,27 +372,31 @@ function parseItem(item: any, data: any): ParsedItem {
     return result;
 }
 
-export function getItems(databank: Databank): ParsedItem[] {
+export function getItems(databank: Databank, additionalDatabank?: Databank): ParsedItem[] {
     // Resolve raw item data
     const items = [...databank.item, ...databank.baseitem];
+    const extraItems = additionalDatabank ? [...additionalDatabank.item, ...additionalDatabank.baseitem] : [];
+
     const raw: any[] = [];
     for (const item of items) {
-        raw.push(resolveItemEntry(handleCopy(item, items), databank.itemEntry));
+        raw.push(resolveItemEntry(handleCopy(item, [...items, ...extraItems]), databank.itemEntry));
     }
 
-    const data = raw.map((item) => parseItem(item, databank));
+    const data = raw.map((item) => parseItem(item, databank, additionalDatabank));
     return data.sort(entrySort);
 }
 
-export function getItemVariants(databank: Databank): ParsedItem[] {
+export function getItemVariants(databank: Databank, additionalDatabank?: Databank): ParsedItem[] {
     const items = [...databank.item, ...databank.baseitem];
+    const extraItems = additionalDatabank ? [...additionalDatabank.item, ...additionalDatabank.baseitem] : [];
+
     const variants = databank.magicvariant.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem));
     const seenVariants = new Set();
     const raw: any[] = [];
     for (const variant of variants) {
         const key = getKey(variant.name, variant.source);
         if (seenVariants.has(key)) continue;
-        raw.push(resolveItemEntry(handleCopy(variant, items), databank.itemEntry));
+        raw.push(resolveItemEntry(handleCopy(variant, [...items, ...extraItems]), databank.itemEntry));
         seenVariants.add(key);
     }
     const data = raw.map((variant) => parseItem(variant, databank));

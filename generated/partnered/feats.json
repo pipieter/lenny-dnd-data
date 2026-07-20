@@ -1,5 +1,33 @@
 [
  {
+  "name": "Adroit Crafter",
+  "source": "GrimHollowLairsEtharis",
+  "url": "https://5e.tools/feats.html#adroit%20crafter_grimhollowlairsetharis",
+  "type": "Uncategorized Feat",
+  "prerequisite": "Proficiency in a skill or tool",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've trained in crafting items using a skill or tool that you're proficient with, and the steps in crafting have become second nature to you. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The time it takes to create an item using your proficient skills or tools is halved.",
+      "If you fail to successfully craft the item and would lose the components, you retain the components instead."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Advanced Weapon Proficiency (FS)",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#advanced%20weapon%20proficiency%20(fs)_grimhollowpg24",
@@ -99,6 +127,62 @@
   "reprint": null
  },
  {
+  "name": "Aerial Expert",
+  "source": "HumblewoodCampaignSetting",
+  "url": "https://5e.tools/feats.html#aerial%20expert_humblewoodcampaignsetting",
+  "type": "Uncategorized Feat",
+  "prerequisite": "Glide trait",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Years of practice or an innate talent have made you adept at gliding. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You no longer need to move at least 10 feet to perform long and high jumps. You may choose whether the jump uses your Strength or Dexterity score for determining height or distance, and you double the distance you would normally leap in either case.",
+      "You may take the Dash action while gliding to fly an additional distance up to your movement speed.",
+      "You may change direction freely while gliding, and may gain up to 10 feet of altitude once before you finish your descent."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Against the Unseen",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#against%20the%20unseen_tlotrr",
+  "type": "Virtues of the Elves",
+  "prerequisite": "Elven culture",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Elves can perceive creatures that dwell in the wraith-world, be they spirits or ghosts, even when they are normally invisible to the eyes of the living and appear only as a chilling whisper of voices. You have learnt to strengthen your heart against such terrors."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have advantage on Charisma saving throws, and you cannot be frightened by Undead creatures."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Altered",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#altered_crookedmoon24",
@@ -166,6 +250,121 @@
   "reprint": null
  },
  {
+  "name": "Art of Disappearing",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#art%20of%20disappearing_tlotrr",
+  "type": "Virtues of the Hobbits",
+  "prerequisite": "Hobbit culture",
+  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Hobbits are said to have little or no magic about them, but the way they can choose to disappear quickly and quietly can be described by others only as supernatural. You have learnt to choose exactly the right moment to turn away from the attention of others, sometimes unconsciously anticipating the need to disappear."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your proficiency bonus is doubled for any Dexterity (*Stealth*) check you make.",
+      "You can try to hide even when you are only lightly obscured from the creature from which you are hiding."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Bandit Cunning",
+  "source": "HumblewoodCampaignSetting",
+  "url": "https://5e.tools/feats.html#bandit%20cunning_humblewoodcampaignsetting",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your time as a bandit has granted you a sense for danger, and made you skilled at sizing up opponents. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you are asked to make a saving throw, you may spend your reaction to add your Intelligence modifier as an additional bonus to the saving throw. You cannot use this ability again until you have completed a long rest.",
+      "During combat, you can use your action to make an Intelligence (*Investigation*) check against any creature you have seen fight. As long as you succeed against a DC of 10 + their challenge rating, you can learn one useful fact of your choice about the target's combat abilities. Choose from:",
+      {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "one damage resistance or immunity",
+        "one condition immunity",
+        "one special ability possessed by the creature that either does damage, or prevents damage",
+        "one option under their attack, legendary, or reaction actions",
+        "one special sense they possess"
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Baruk Khazâd!",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#baruk%20khaz%C3%A2d!_tlotrr",
+  "type": "Virtues of the Dwarves",
+  "prerequisite": "Dwarven culture",
+  "abilityIncrease": "Increase your Strength or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The secret tongue of the Dwarves is guarded as a treasure of the past, yet their battle-cry is well-known and feared by their foes."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can use a bonus action on your turn to force each hostile creature that can hear and see you within 30 feet of you to make a Charisma (*Intimidation*) check (DC 8 + your proficiency bonus + your choice of your Strength or Charisma modifier). On a failed check, the creature becomes frightened of you until the end of your next turn. Attack rolls against creatures frightened in this way have advantage. Once you use this virtue, you cannot use it again until you finish a short or long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Beast-Craft",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#beast-craft_tlotrr",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the ability to comprehend and verbally communicate with beasts. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and creatures, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favour for you, at the Loremaster's discretion, such as delivering a letter, or a verbal message to someone who can also speak with beasts."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, as an action you can spend a craft slot and choose a beast that you can see within 30 feet of you. It must be able to see and hear you. Make a Wisdom (*Animal Handling*) check, contested by the target's Wisdom (*Insight*) check. If you win the contest, the beast is charmed by you for 24 hours or until you or your companions do anything harmful to it. If you obtain a magical success and the target is a beast with a challenge rating of 1/8 or lower, you can make the beast permanently charmed by you, until you dismiss it, harm it, or make another beast permanently charmed by you. A beast automatically wins the contest if its Intelligence score is 4 or higher. When you reach 5th level, you can affect one additional beast, or two additional beasts at 9th level."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Blackpowder Pistol Expert",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#blackpowder%20pistol%20expert_grimhollowpg24",
@@ -197,6 +396,34 @@
   "reprint": null
  },
  {
+  "name": "Blade Barrier",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#blade%20barrier_helianasguidetomonsterhunting",
+  "type": "General Feat",
+  "prerequisite": "Proficiency with {@item twinblades|HelianasGuidetoMonsterHunting}",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your expertise with twinblades allows you to turn your defensive flourish into an offensive strike. When you use the Whirl special bonus action with a twinblade, you gain the following features:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can make one additional melee attack with the weapon. This attack uses the same ability modifier as the primary attack, and the weapon's damage die for this attack is a d4.",
+      "Until the start of your next turn, other creatures provoke an opportunity attack from you when they enter your reach or make a melee attack against you while within your reach."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Blood Hound",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#blood%20hound_grimhollowpg24",
@@ -218,6 +445,35 @@
     "name": "No Hiding",
     "type": "text",
     "value": "You have Advantage on Wisdom (*Perception*) checks that rely on sound or smell."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Boomerang Expert",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#boomerang%20expert_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have mastered the versatile boomerang and are capable of performing extraordinary feats with the weapon. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The damage die for the boomerang is now a d8 for you.",
+      "Attacking at long range doesn't impose disadvantage on ranged attack rolls made with a boomerang.",
+      "You automatically catch the boomerang after throwing it without needing to use your reaction."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -500,6 +756,89 @@
   "reprint": null
  },
  {
+  "name": "Brave at a Pinch",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#brave%20at%20a%20pinch_tlotrr",
+  "type": "Virtues of the Hobbits",
+  "prerequisite": "Hobbit culture",
+  "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One of the Wise once said that you have to put a Hobbit in a tight place before you find out what is in them. You prefer to avoid finding yourself in one, but you are also sure you would be able to take good care of yourself in the circumstances."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Whenever a hostile creature or harmful effect imposes a condition on you, you suffer one or more levels of exhaustion, or you drop to half or less of your maximum hit points, you gain inspiration."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Bree-Pony",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#bree-pony_tlotrr",
+  "type": "Virtues of the Men of Bree",
+  "prerequisite": "Men Of Bree or Bree-Hobbit culture",
+  "abilityIncrease": "Increase your Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Bree-ponies are very similar to their owners, the Bree-folk—they don't seem to have anything special compared to their peers in other parts of Middle-earth, and yet some of them display uncommon courage and exceptional memory. You have acquired an unusually brave and intelligent beast that follows you everywhere."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your pony uses your proficiency bonus rather than its own, and adds your proficiency bonus to each of its ability scores, AC, and to any ability check or saving throw that it makes.",
+      "Your pony has a number of Hit Dice equal to your character level instead of its normal Hit Dice (minimum 2).",
+      "Your pony obeys your commands. In combat, it takes its turn on your initiative and acts and moves as you direct it (no action required by you), or on its own if you are absent or incapacitated. It cannot make opportunity attacks, and its only action options are Dash, Disengage, and Dodge, unless you spend an action on your turn to command it to take another action. If your pony dies, you can acquire a new one during the next Yule Fellowship Phase."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Broken Spells",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#broken%20spells_tlotrr",
+  "type": "Virtues of the Dwarves",
+  "prerequisite": "Dwarven culture",
+  "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "In ancient times, the Dwarves made mighty spells. You have been taught fragments of old enchantments that retain some power to this day."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Choose any combination of three skills or tools you are proficient with. Whenever you make an ability check that uses one of the chosen proficiencies, you can obtain a magical success. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Brutal Grip",
   "source": "ValdaPlayerPack",
   "url": "https://5e.tools/feats.html#brutal%20grip_valdaplayerpack",
@@ -521,6 +860,109 @@
     "name": "Versatile Dual Wielder",
     "type": "text",
     "value": "While wielding a Melee weapon with Versatile in one hand, the weapon has the Light property for you."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Bumbling Fool",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#bumbling%20fool_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have a peculiar way of fumbling through life that somehow always works out in your favor, succeeding in situations through what others might view as accidental luck. When you fail an ability check and roll a number on the die equal to half your level (rounded up) or lower, you can choose to replace the die roll with a 15 instead. You can use this ability three times, and you regain all expended uses when you finish a long rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Canden and Moon's Master Cut",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#canden%20and%20moon's%20master%20cut_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": "You must have beaten a master at Master Canden and Moon's Sword School",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Having trained with the masters of the first sword school of Obojima, you've picked up a handful of useful skills. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your walking speed increases by 5 feet.",
+      "Immediately after rolling initiative, you can use your reaction before the first turn of combat to draw a weapon and move up to half your speed (rounded up). If you end this movement within reach of another creature, you can use the weapon to make one melee attack against that creature.",
+      "When you are hit by an attack, you can use a reaction to assume a defensive stance, allowing you to fend off incoming strikes. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack. Once you assume this stance, you can't do so again until you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Careful Crafter",
+  "source": "GrimHollowLairsEtharis",
+  "url": "https://5e.tools/feats.html#careful%20crafter_grimhollowlairsetharis",
+  "type": "Uncategorized Feat",
+  "prerequisite": "Proficiency in a skill or tool",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've trained in crafting items using a skill or tool that you're proficient with, and your creations are known for being well made and reliable. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You make all ability checks for crafting with advantage.",
+      "Anyone assisting you in crafting an item gains advantage on their ability checks for crafting.",
+      "If you fail to successfully craft the item, the amount of time it took to complete the process is halved."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Cat's Caress",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#cat's%20caress_helianasguidetomonsterhunting",
+  "type": "General Feat",
+  "prerequisite": "Proficiency with {@item claw|HelianasGuidetoMonsterHunting}",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Manipulating your bladed digits with preternatural delicacy, you can switch from exsanguinating slash to soft caress with a deft flick."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "After you take the Attack action using a claw in one hand, you can use a bonus action to make up to two melee attacks with a different claw that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack(s), unless that modifier is negative, or you have the two-weapon Fighting Style.",
+      "You have advantage to hit a target you are grappling with an attack using a claw.",
+      "You can equip or unequip either a single or a pair of claws using either a bonus action or action."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -619,6 +1061,61 @@
   "reprint": null
  },
  {
+  "name": "Cloud Hopper",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#cloud%20hopper_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your exposure to the great wind spirit has changed you. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you move on your turn, you can choose to conjure tiny clouds below your feet, allowing you to move into unoccupied spaces in the air. You can move a number of feet in this way equal to 5 × your proficiency bonus before the clouds stop appearing. Ending this movement while in the air causes you to fall as normal.",
+      "You learn the __Fog Cloud__ and __Gust of Wind__ spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast the spells using spell slots you have of the appropriate level. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (your choice)."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Confidence",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#confidence_tlotrr",
+  "type": "Common Virtues",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Overcoming difficulties has reinforced your spirit and renewed your faith in a brighter future."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency in saving throws using Intelligence, Wisdom, or Charisma (your choice)."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Convincing Inquisitor",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#convincing%20inquisitor_grimhollowpg24",
@@ -650,6 +1147,55 @@
   "reprint": null
  },
  {
+  "name": "Coven Witch",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#coven%20witch_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": "You must be a member of a witches coven",
+  "abilityIncrease": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have become an official member of a witches coven."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You learn two random common and uncommon potion recipes from your coven.",
+      "You learn two 1st-level spells of your choice. The 1st-level spells must be from the divination, conjuration, or transmutation school of magic. You can cast each of these spells once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Craft",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#craft_tlotrr",
+  "type": "Beyond 10th Level",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a craft slot and a craft of your choice from the Scholar's Crafts list (see Crafts)."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Crimson Ritualist",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#crimson%20ritualist_crookedmoon24",
@@ -671,6 +1217,45 @@
     "name": "Bottled Life",
     "type": "text",
     "value": "When you finish a Long Rest, you can perform a 1-minute ritual to transfer some of your life essence into a vessel for later use. Expend a number of Hit Point Dice up to your Proficiency Bonus, and bleed into a vial of water or other liquid. As a Bonus Action, a creature can drink the vial to roll the Hit Dice you expended. The creature regains a number of Hit Points equal to the total rolled plus its Constitution modifier. The vial remains potent until you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Cruel",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/feats.html#cruel_taldoreicampaignsettingreborn",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The challenges and struggles you've faced throughout your life have led you to delight in inflicting pain and anguish upon others. You gain a number of cruelty dice equal to your proficiency bonus. Your cruelty dice are d6 (d6s). You can roll only one cruelty die per turn, and a cruelty die is spent when you roll it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can roll a cruelty die under any of the following circumstances, with the indicated result:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you deal damage to a creature, spend one cruelty die to deal extra damage to the creature equal to the roll.",
+      "When you score a critical hit, spend one cruelty die to gain temporary hit points equal to the roll.",
+      "When you make a Charisma (*Intimidation*) check, spend one cruelty die and add the roll to your check."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You regain all spent cruelty dice when you finish a resting."
    }
   ],
   "reprint": null
@@ -702,6 +1287,61 @@
     "name": "Spell Change",
     "type": "text",
     "value": "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the Warlock spell list."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Dark for Dark Business",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#dark%20for%20dark%20business_tlotrr",
+  "type": "Virtues of the Dwarves",
+  "prerequisite": "Dwarven culture",
+  "abilityIncrease": "Increase your Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your kind is not troubled by mere darkness in itself, as most members of other cultures are. On the contrary, you have grown to like the dark better than the light, finding yourself at ease in its cold embrace."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Dim light doesn't impose disadvantage on your Wisdom (*Perception*) checks relying on sight.",
+      "When you are in dim light, in darkness, or underground, and you make an ability check, attack roll, or saving throw, you can do so with advantage. You can use this virtue a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Deadly Archery",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#deadly%20archery_tlotrr",
+  "type": "Virtues of the Elves",
+  "prerequisite": "Elven culture",
+  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Elves possess a natural talent for hitting the mark when using their bows. You have honed this talent almost to perfection, and your arrows find their target with uncanny precision."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "As a bonus action, you can give yourself advantage on your next ranged weapon attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -759,6 +1399,114 @@
   "reprint": null
  },
  {
+  "name": "Defiance",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#defiance_tlotrr",
+  "type": "Virtues of the Men of Bree",
+  "prerequisite": "Men Of Bree culture",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Many realms have risen and fallen in the Lone-lands of Eriador since the Elder Days. Only ruins remain to mark their boundaries. Yet, the Bree-men have endured, revealing an unexpected reserve of strength and vigour in the face of adversity."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "As a bonus action, you can spend one Hit Die to heal yourself."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Desperate Courage",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#desperate%20courage_tlotrr",
+  "type": "Virtues of the Men of Bree",
+  "prerequisite": "Men Of Bree or Bree-Hobbit culture",
+  "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have lived all your life on the edge of the Wild, but the worst news that has come to Bree in your time concerned only brigands or packs of hungry wolves. You don't know yet what the likes of you can do against the Shadow in the East, but you are sure you will stand against it, no matter the cost."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Whenever you gain Shadow points, you also gain inspiration."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Dour-Handed",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#dour-handed_tlotrr",
+  "type": "Common Virtues",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Strength score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your blows have become more forceful and your aim steadier, allowing you to do greater harm."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain a +1 bonus to weapon damage rolls using Strength."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Dragon-Slayer",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#dragon-slayer_tlotrr",
+  "type": "Virtues of the Bardings",
+  "prerequisite": "Barding culture",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The legend of Bard the Bowman has inspired many young men and women from Dale, so much that they long to prove their worth with the killing of a great monster. As many more before you, you have long pondered on the ways to deal with creatures of size, hoping one day to gain renown defeating them."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have advantage on attack rolls against Large or larger creatures."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Dread Speech",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#dread%20speech_crookedmoon24",
@@ -801,6 +1549,144 @@
     "name": "Dual Shot",
     "type": "text",
     "value": "When you take the Attack action on your turn and attack with a bow or crossbow, you can make one extra attack as part of the same action against a creature that is within 10 feet of the original target that is within the weapon's range. If you do so, both attacks are made with Disadvantage."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Durin's Way",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#durin's%20way_tlotrr",
+  "type": "Virtues of the Dwarves",
+  "prerequisite": "Dwarven culture",
+  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Dwarves have fought many wars in deep places beneath the earth. You have been taught how to best defend yourself while fighting underground. As a result, you know how to exploit corners, darkness and other natural obstacles to your advantage."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you have half or three-quarters cover, you gain an additional +1 bonus to AC and Dexterity saving throws.",
+      "Other creatures do not gain advantage on attack rolls against you as a result of being unseen by you."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Dwarf-Friend",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#dwarf-friend_tlotrr",
+  "type": "Virtues of the Bardings",
+  "prerequisite": "Barding culture",
+  "abilityIncrease": "Increase your Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The days of the Dragon have forged a strong alliance between the Bardings and the Dwarves of Erebor."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your proficiency bonus is doubled for any Charisma (*Persuasion*) check you make. In addition, you have advantage on Charisma (*Persuasion*) checks made when interacting with Dwarves.",
+      "Increase the Fellowship rating of your Company by 1.",
+      "When you are within 5 feet of a friendly Dwarf and at least one of you isn't incapacitated, and a creature you or the Dwarf can see attacks you or the Dwarf, you can spend a Fellowship point to impose disadvantage on the attack roll."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Elbereth Gilthoniel!",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#elbereth%20gilthoniel!_tlotrr",
+  "type": "Virtues of the Elves",
+  "prerequisite": "Elven culture",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The name of Elbereth, the Queen of the Stars, is revered by all the Eldar still dwelling in Middle-earth. You have resorted to calling on her name in moments of great need, asking the Kindler to bestow her grace upon you."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you are not miserable and make an ability check, attack roll, or saving throw, you can do so with advantage. You can use this virtue a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Elvish Spirit",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#elvish%20spirit_tlotrr",
+  "type": "Virtues of the Elves",
+  "prerequisite": "Elven culture",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spirit of Elves is so strong that their bodies recover swiftly from many ills and injuries. You can recover from your exertions while awake, finding repose in the secret way of your folk."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "If you meditate for at least 4 hours, you can reduce your exhaustion level by 1 and regain all lost hit points. You cannot use this virtue if you've had a long rest within the last 24 hours, or if you have 0 hit points. Once you use this virtue, you cannot use it again until you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Endurance of the Ranger",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#endurance%20of%20the%20ranger_tlotrr",
+  "type": "Virtues of the Rangers of the North",
+  "prerequisite": "Ranger Of The North culture",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "They say that a Ranger with a clear trail to follow can never be weary. You hope the saying will prove true, as it will be your fate to often travel in haste, to seek distant lands on urgent errands or to relentlessly hunt your enemies."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have advantage on Constitution saving throws."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -863,6 +1749,94 @@
   "reprint": null
  },
  {
+  "name": "Expert Enchanter",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#expert%20enchanter_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You manipulate magical essence with a quick and subtle touch."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make an Enchanting check with a skill with which you are proficient, your proficiency bonus is doubled.",
+      "When you roll for enchanting quirks, you can apply a bonus or penalty to the result of the roll equal to half your proficiency bonus.",
+      "Each hour you spend enchanting an item counts as 2 hours towards the item's completion."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Expert Forger",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#expert%20forger_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Strength, Dexterity or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "An expert with your chosen tools, you can subtly alter an item's final form."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make a Manufacturing check with a tool with which you are proficient, your proficiency bonus is doubled.",
+      "When you forge an item and roll for enchanting and/or manufacturing quirks, you can apply a bonus or penalty to the result of the roll equal to half your proficiency bonus.",
+      "Each hour you spend forging an item counts as 2 hours towards the item's completion."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Expert Harvester",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#expert%20harvester_helianasguidetomonsterhunting",
+  "type": "Harvest",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Dexterity or Intelligence score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have a knack for retrieving exceptional components from the gnarliest of corpses."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make a Harvesting check using a skill with which you are proficient, your proficiency bonus is doubled.",
+      "When you attempt to harvest a creature for which you don't have the required skill proficiency, you can add your proficiency bonus to the result of the roll.",
+      "If you are helping with a Harvesting check, you add your full proficiency bonus to the check's result, regardless of whether you're proficient in the requisite skill.",
+      "You do not suffer disadvantage on your Harvesting checks as a result of choosing to perform both the Assessment and Carving checks alone."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Fate Gambler",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#fate%20gambler_crookedmoon24",
@@ -884,6 +1858,34 @@
     "name": "Win Big",
     "type": "text",
     "value": "As a Bonus Action, you can expend your Heroic Inspiration to gain a number of Temporary Hit Points equal to your level."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Fearsome Flourisher",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#fearsome%20flourisher_helianasguidetomonsterhunting",
+  "type": "General Feat",
+  "prerequisite": "Proficiency with {@item nunchaku|HelianasGuidetoMonsterHunting}",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your deadly speed with nunchaku can strike fear into your foes."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you take the Attack action and attack with a nunchaku, you can use a bonus action to make one additional melee attack with the weapon. This attack uses the same ability modifier as the primary attack and the weapon's damage die for this attack is a d4.",
+      "When you take the Flourish special action with a nunchaku, you can use a bonus action to make it especially intimidating towards one creature within your reach. If you don't fail on your Dexterity check to flourish the weapon, your target must succeed on a Wisdom saving throw or become frightened of you until the start of your next turn. The DC for the saving throw equals 8 + your Dexterity modifier. If you are proficient in the Intimidation skill, you can add your proficiency bonus to the DC."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -982,6 +1984,186 @@
   "reprint": null
  },
  {
+  "name": "Field Cook",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#field%20cook_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Able to whip up a tasty meal from the barest ingredients, your meals fuel the resolve of the most stalwart adventurers."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency with cook's utensils.",
+      "You can replace one type of ingredient in a recipe with any other ingredient type.",
+      "Before rolling for quirks, you can choose to replace one roll on the boon table with inspiration, granting inspiration to each creature that consumes at least one portion of your meal.",
+      "After rolling for quirks, you can remove one flaw of your choice, or add a boon to the dish by rolling on the boons table (your choice)."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Field Medic",
+  "source": "HumblewoodTales",
+  "url": "https://5e.tools/feats.html#field%20medic_humblewoodtales",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have been specially trained in magical triage and are able to identify the signs of shock and fatigue in those suffering from injuries. You are always ready to provide aid to those in need. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can tell by looking at a creature if it is missing any of its hit points and whether or not it has more than half of its hit points. You also have advantage on Wisdom (*Medicine*) or Intelligence (*Arcana* or *Religion*) checks made to determine if the creature is cursed, diseased, possessed, or afflicted by any of the following conditions: blinded, deafened, exhaustion, incapacitated, paralyzed, or poisoned.",
+      "You learn the __spare the dying__ cantrip and can cast it as a bonus action.",
+      "You gain the ability to cast the spell __cure wounds__ without using a spell slot, up to a number of times equal to half your proficiency bonus. You regain all expended uses when you finish a long rest. Wisdom is your spellcasting ability for this spell."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Fierce Shot",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#fierce%20shot_tlotrr",
+  "type": "Virtues of the Bardings",
+  "prerequisite": "Barding culture",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Black Arrow that brought down Smaug the Dragon may have been fated to do so, but the hand that sent it flying so fiercely was exceedingly strong. When you throw a spear or bend your bow, you make sure that your grip is steady and your aim true."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When making an attack with a ranged weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.",
+      "If you move no more than half your speed on the same turn and you hit a creature with a ranged weapon attack, you can use a bonus action to cause the attack to deal **1d4** extra damage of the weapon's type."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Fighting Style",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#fighting%20style_tlotrr",
+  "type": "Beyond 10th Level",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can choose a fighting style option from the Champion's Fighting Style feature. As normal, you cannot take a Fighting Style option more than once."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "{#refOptionalfeature Archery|PHB}",
+      "{#refOptionalfeature Defense|PHB}",
+      "{#refOptionalfeature Dueling|PHB}",
+      "{#refOptionalfeature Great Weapon Fighting|TLotRR}",
+      "{#refOptionalfeature Protection|TLotRR}",
+      "{#refOptionalfeature Two-Weapon Fighting|PHB}"
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Flamewoken",
+  "source": "HumblewoodTales",
+  "url": "https://5e.tools/feats.html#flamewoken_humblewoodtales",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Living in the Scorched Grove or other areas touched by elemental fire can sometimes cause strange abilities to manifest among their inhabitants. Known as \"flamewoken\" by the Tenders, these gifted few have the ability to communicate with fire-aspected creatures and have power over flames. Tenders guide the flamewoken in honing their talents in service of nature and many flamewoken choose to join the order. However, those outside the order usually keep their abilities hidden, as such powers are often seen as a curse. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can speak, read, and write Ignan.",
+      "You learn the __produce flame__ cantrip. Charisma is your spellcasting ability for this spell.",
+      "As a bonus action, you can strengthen the power of your flames. The next time you deal fire damage to one or more creatures before the end of your next turn, you can deal an additional **2d10** fire damage to one of those creatures. Once you use this feature, you can't use it again until you complete a short or long rest.",
+      "You can whisper magical words in Ignan toward any nonmagical flames you can see within 30 feet of you that could fit within a 5-foot cube. As a bonus action, you can cause these flames to either grow by 5 feet in a single direction, provided there is fuel of some sort present in the new location, or you can extinguish the flames present in this space."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Flash Recall",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/feats.html#flash%20recall_taldoreicampaignsettingreborn",
+  "type": "Uncategorized Feat",
+  "prerequisite": "Spellcasting feature from a class that prepares spells",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've developed the ability to instantly recall an unprepared spell in moments of sudden necessity."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a bonus action, you prepare a spell of 1st level or higher from your spellbook (if you're a __wizard__) or from your class spell list (if you're not a __wizard__). This spell must be of a level for which you have spell slots, and it replaces another spell of an equal or higher level that you had previously prepared."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once you use this feat to recall a spell, you can't do so again until you complete a resting."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*The Flash Recall feat requires you to be a spellcaster who prepares spells. This includes classes such as __clerics__, __druids__, and __paladins__, who prepare spells each day from their class list, and __wizards__, who prepare spells from a spellbook. Classes such as __bards__ and __sorcerers__, who inherently know their spells rather than preparing them, can't benefit from this feat.*"
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Flurry",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#flurry_grimhollowpg24",
@@ -1055,6 +2237,118 @@
   "reprint": null
  },
  {
+  "name": "Forager",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#forager_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've spent countless hours exploring the island searching for ingredients. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency in the *Survival* skill. If you already have this proficiency, you instead gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make using it.",
+      "You produce twice the number of common or uncommon ingredients when foraging."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Foresight of their Kindred",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#foresight%20of%20their%20kindred_tlotrr",
+  "type": "Virtues of the Rangers of the North",
+  "prerequisite": "Ranger Of The North culture",
+  "abilityIncrease": "Increase your Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Rangers of the North still possess a measure of the foresight that their ancestors possessed in full. In the Twilight of the Third Age, this gift manifests as a sense of watchfulness, and of fear, arising to warn a Ranger of a danger that has not yet come to pass."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have a number of foresight points equal to your Wisdom modifier (minimum 1). Whenever you or a creature that you can see make an ability check, attack roll, or saving throw, you can spend one foresight point to reroll the d20 and must use the new roll. You can choose to spend one of your foresight points after the roll, but before the outcome is determined. You can also spend one foresight point after a roll on the Journey Events table. Roll a d20, and then choose whether the Loremaster uses their roll or yours. You regain your expended foresight points when you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Forest Sage",
+  "source": "HumblewoodTales",
+  "url": "https://5e.tools/feats.html#forest%20sage_humblewoodtales",
+  "type": "Uncategorized Feat",
+  "prerequisite": "Level 1 Druid or Level 1 Wizard",
+  "abilityIncrease": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Tenders value diversity among ideas, and although they began as a purely druidic order, they have since learned to accept many different ways of thinking about the natural world, especially regarding the application of magic. You are either a __wizard__ who has learned to temper your arcane research with an eye to maintaining the delicate balance of natural forces, or you are a __druid__ who has learned a new understanding of natural magic through study and experimentation. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can use your choice of Intelligence or Wisdom to make *Animal Handling*, *Arcana*, *Nature*, or *Survival* checks.",
+      "You can choose to learn two spells from either the druid or wizard spell list. Spells you choose must be of a level you can cast. The chosen spells count as spells of your class and are added to your spellbook if you are a __wizard__ or your spells known if you are a __druid__."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Forgemaster",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#forgemaster_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": "Expert Forger",
+  "abilityIncrease": "Increase your Strength, Dexterity or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your deftness with your tools of choice is unparalleled."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make a Manufacturing check with a tool with which you are proficient, you have advantage on the roll.",
+      "You gain proficiency with 2 tools of your choice.",
+      "Each hour you spend forging an item counts as 3 hours towards the item's completion."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Fortune of the Thaumaturge",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#fortune%20of%20the%20thaumaturge_grimhollowpg24",
@@ -1112,6 +2406,63 @@
   "reprint": null
  },
  {
+  "name": "Freediver",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#freediver_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have undergone extensive underwater training. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain a swimming speed equal to twice your Constitution score (rounded up to the nearest 5 feet). If you already have a swimming speed, it instead increases by 10 feet.",
+      "You triple your Constitution modifier when calculating how long you can hold your breath.",
+      "You gain resistance to cold damage."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Friendly and Familiar",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#friendly%20and%20familiar_tlotrr",
+  "type": "Virtues of the Men of Bree",
+  "prerequisite": "Men Of Bree culture",
+  "abilityIncrease": "Increase your Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Since you started your adventures, you have realised that your folk's custom of trading with foreigners may help you in your endeavours. Your nice manners and friendly demeanour easily gain the sympathies of those you meet, and your ability to inquire about the doings of strangers without letting curiosity get the better of you provides you with many opportunities to learn from those you meet along the way."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Increase the Fellowship rating of your Company by 1.",
+      "Your proficiency bonus is doubled for any Wisdom (*Insight*) check you make. In addition, you have advantage on the first Charisma (*Persuasion*) check you make when interacting with Dwarves, Elves, Hobbits, and Men (other than the Dúnedain)."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Ghostlight Medium",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#ghostlight%20medium_crookedmoon24",
@@ -1138,6 +2489,34 @@
   "reprint": null
  },
  {
+  "name": "Gleam of Wrath",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#gleam%20of%20wrath_tlotrr",
+  "type": "Virtues of the Elves",
+  "prerequisite": "Elven culture",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your folk have seen many defeats, and many fruitless victories in their wars against the Shadow. The deadly rage that your kindred harbour for the Enemy infuses your weapons with a gleam of chill flame."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "As a bonus action, you can make a melee weapon that you are wielding emit dim light in a radius equal to its reach until the start of your next turn. The light is sunlight. While the weapon gleams, it also deals radiant damage instead of its normal type.",
+      "When you score a critical hit with a weapon attack, you can roll one of the weapon's damage dice one additional time and add it as extra radiant damage."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Grave Keeper",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#grave%20keeper_crookedmoon24",
@@ -1159,6 +2538,35 @@
     "name": "Last Rites",
     "type": "text",
     "value": "You can enact a 10-minute ritual to prepare the corpse of a Medium or smaller creature, expending at least 10 GP worth of incense, oils, linen wraps, or similar trappings. The prepared corpse can't become Undead."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Group Combatant",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#group%20combatant_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've honed your fighting skills and are just as comfortable fighting a group of enemies as you are facing a combatant one on one. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Bludgeoning, piercing, and slashing damage that you take from nonmagical attacks is reduced by 2, to a minimum of 1.",
+      "Creatures don't gain advantage on attacks made against you using the optional flanking rules.",
+      "After you provoke an opportunity attack on your turn, your movement doesn't provoke opportunity attacks for the rest of the turn."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -1195,6 +2603,171 @@
     "name": "Spells Prepared",
     "type": "text",
     "value": "Choose a number of spells equal to your Proficiency Bonus from among those in the Expanded Spell List benefit. You always have these spells prepared. Whenever you gain a new level, you can replace one of these spells with a different spell from the Expanded Spell List."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Hand-Craft",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#hand-craft_tlotrr",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This craft is not meant to cover the whole range of abilities of smiths, wrights, and other artisans, but reflects a talent for making things with superior skill and cunning. During a Fellowship Phase, you can spend a craft slot and choose a non-magical item in your possession. You must be proficient with the tools related to the item you choose, and you might also need access to special materials or locations, such as a forge. If a feature lets you add double your proficiency bonus with a tool, you can select two item related to that tool instead of one. Then, choose one of the following options for each item:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "If it's a suit of armour or a shield, it is upgraded with a reward (see Chapter 4). When you reach 5th level, a creature also gains a +1 bonus to Armour Class while wearing or holding it.",
+      "If it's a weapon, it is upgraded with a reward. If you can obtain a magical success with the tools used, the weapon can also become magical. When you reach 5th level, a creature also gains a +1 bonus to attack and damage rolls made with it.",
+      "If it's any other item, choose a skill somehow related to the item, for example *Stealth* if the item is a cloak, or *Athletics* if the item is a pair of boots. A creature holding or wearing the item gains a Blessing die (see Chapter 7) on ability checks using that skill. If you can obtain a magical success with the tools used, the item can instead become a Marvellous Artefact with a blessing affecting the chosen skill (see Chapter 7)."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each of the above options can only be chosen once for each item, and you cannot regain a craft slot expended in this way until the next Fellowship Phase, when you can withdraw the bonuses granted by that slot and regain the slot, if you wish."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Hardiness",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#hardiness_tlotrr",
+  "type": "Common Virtues",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your determination and stamina have improved through hardship and toil."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your hit point maximum increases by an amount equal to your level when you gain this virtue. Whenever you gain a level thereafter, your hit point maximum increases by an additional hit point."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Heavy Glider",
+  "source": "HumblewoodCampaignSetting",
+  "url": "https://5e.tools/feats.html#heavy%20glider_humblewoodcampaignsetting",
+  "type": "Uncategorized Feat",
+  "prerequisite": "Glide trait",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You were either born with great strength, or trained hard to allow yourself to glide under circumstances most would find impossible. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You may glide while holding a heavy weapon and wearing heavy armor as long as you aren't encumbered.",
+      "You may choose to land your glide in a space occupied by a hostile creature that is Large or smaller. If you do so, you may roll an opposed Strength check against the creature. On a success, you push them 10 feet away and knock them prone with the force of your impact. On a failure you land in the nearest un-occupied space."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Heir of Arnor",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#heir%20of%20arnor_tlotrr",
+  "type": "Virtues of the Rangers of the North",
+  "prerequisite": "Ranger Of The North culture",
+  "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The days of your folk have darkened, and not many of you remain; but ever the memory of the Kings is passed from generation to generation. An artefact going back to the days of Lost Arnor has been in your family's possession for unbroken generations. Now you have been deemed worthy to become its keeper."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "With the help of the Loremaster, use the rules in Chapter 7 from *The Lord of the Rings Roleplaying* to create either a Wondrous Item, or a Famous Weapon possessing a single enchanted reward. The item is generally of Númenórean craftsmanship, but might even be of Elven or Dwarven make. If it is a Famous Weapon, it can be upgraded with up to two non-enchanted rewards, as if it was a normal item."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "High Destiny",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#high%20destiny_tlotrr",
+  "type": "Virtues of the Bardings",
+  "prerequisite": "Barding culture",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Stories tell that those who belong to the race of Dale are destined for greatness, a fact proven true by your King and his story. Do you share the same destiny of those of the line of Girion?"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have advantage on death saving throws.",
+      "Whenever you become stable, you also regain 1 hit point."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Hit Die",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#hit%20die_tlotrr",
+  "type": "Beyond 10th Level",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a Hit Die, a d6, and your hit points maximum increases by 1d6 (or 4) + your Constitution modifier."
+   },
+   {
+    "name": "Special",
+    "type": "text",
+    "value": "You may take this feature multiple times."
    }
   ],
   "reprint": null
@@ -1644,6 +3217,35 @@
   "reprint": null
  },
  {
+  "name": "Jack of All Tools",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#jack%20of%20all%20tools_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Strength, Dexterity or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You learn to wield tools with precision and efficiency, improvising where necessary."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency with 3 tools of your choice.",
+      "When you make a Manufacturing check using a tool with which you are not proficient, you can add half your proficiency bonus instead, and do not suffer any disadvantage due to not having proficiency with the tool.",
+      "Each hour you spend manufacturing an item counts as 2 hours towards the item's completion."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Juggernaut Plating",
   "source": "ExploringEberron24",
   "url": "https://5e.tools/feats.html#juggernaut%20plating_exploringeberron24",
@@ -1701,6 +3303,57 @@
   "reprint": null
  },
  {
+  "name": "Leech-Craft",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#leech-craft_tlotrr",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You are skilled, according to ancient traditions, in the healing of wounds and sickness. As an action, you can spend a craft slot to tend to a creature within 5 feet of you and make a DC 10 Intelligence (*Medicine*) check. You can spend one use of a healer's kit to replace the d20 roll with a 10. If you succeed, the creature regains a number of hit points equal to your check result minus 10 (minimum 1 hit point)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you reach 5th level, on a successful check you can alternatively cure the target of one disease or neutralise one poison affecting it."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Light Foot",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#light%20foot_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You are exceptionally speedy and agile. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "While you aren't wearing heavy armor, you gain a +1 bonus to your AC.",
+      "Whenever you take the Attack action, you can forgo one of your attacks to move up to half your speed.",
+      "Nonmagical difficult terrain costs you no extra movement.",
+      "You can move through a hostile creature's space, regardless of its size."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Lightning Caster",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#lightning%20caster_grimhollowpg24",
@@ -1727,6 +3380,34 @@
   "reprint": null
  },
  {
+  "name": "Magically Mischievous",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#magically%20mischievous_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've picked up a few magical tricks that assist your nefarious skills. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency in the *Sleight of Hand* skill. If you already have proficiency, you gain expertise instead, which means your proficiency bonus is doubled for any ability check you make with it.",
+      "When you succeed on a Dexterity (*Sleight of Hand*) check to steal something, you can magically turn the object you stole invisible as part of the same action, as if you had cast the __Obscure Object__ spell. The object must be small enough to fit in the palm of your hand, and this effect lasts for 1 minute. You can use this ability a number of times per day equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Marksman's Luck",
   "source": "ValdaGunslinger",
   "url": "https://5e.tools/feats.html#marksman's%20luck_valdagunslinger",
@@ -1748,6 +3429,34 @@
     "name": "Enhanced Critical",
     "type": "text",
     "value": "When you score a Critical Hit with a Ranged weapon, the target's Speed is 0 until the end of its next turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Mastery",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#mastery_tlotrr",
+  "type": "Common Virtues",
+  "prerequisite": null,
+  "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have practised certain skills until they have become as natural as breathing."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain one skill, tool, or weapon proficiency of your choice.",
+      "Choose one of your skill or tool proficiencies. You gain Expertise with that skill or tool, which means your proficiency bonus is doubled for any ability check you make with it."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -1784,6 +3493,61 @@
   "reprint": null
  },
  {
+  "name": "Member of AHA",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#member%20of%20aha_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": "You must be a member of AHA",
+  "abilityIncrease": "Increase your Intelligence score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have become an official member of AHA. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You learn the __Jolt__ cantrip. You also learn one of the following spells of your choice: __Comprehend Languages__, __Detect Magic__, __Identify__, or __Illusory Script__. You can cast the chosen spell once without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have. Intelligence is your spellcasting ability for these spells."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Memory of Ancient Days",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#memory%20of%20ancient%20days_tlotrr",
+  "type": "Virtues of the Elves",
+  "prerequisite": "Elven culture",
+  "abilityIncrease": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Long centuries and uncounted generations of Men seem but a little while to the Elves. Your memories go back to a time before Eriador became desolate, and your knowledge of the land is returning to you now that you are travelling again outside the boundaries of your realm."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can give yourself a bonus to pathfinding checks equal to your Intelligence modifier (minimum of +1).",
+      "When you are targeted by a journey event, the roll on the Journey Events table is done as if you were in a Border Land if you are in a Wild Land, and as if you were in a Wild Land if you are in a Dark Land."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Memory Starved",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#memory%20starved_crookedmoon24",
@@ -1810,6 +3574,35 @@
   "reprint": null
  },
  {
+  "name": "Minor Corruption",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#minor%20corruption_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You were exposed to the Corruption, a dark magic that's poisoning the island. It's now begun to alter you as well. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain a +1 bonus to AC while you have less than half of your hit points remaining.",
+      "You can draw upon the Corruption within you to channel your magical power. You don't need to use a spellcasting focus for your spells, allowing you to ignore the material components specified for the spell, unless the component indicates a cost or is consumed by the spell.",
+      "As a reaction, when you take damage, you can temporarily negate an amount of the damage equal to three times your level; you take any excess damage as normal. At the end of your next turn, you must make a Constitution saving throw, the DC of which is equal to 10 or one-third the damage you would have taken, whichever number is higher. On a failed save, you immediately take the negated damage. You must continue to make a Constitution saving throw at the end of each of your turns for 1 minute or until you fail the save, at which point you take the negated damage. Once you take this reaction, you can't do so again until you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Mobile Combatant",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#mobile%20combatant_grimhollowpg24",
@@ -1826,6 +3619,92 @@
     "name": "Slippery",
     "type": "text",
     "value": "When you take the Attack action, your Speed increases by 10 feet and Opportunity Attacks have Disadvantage against you until the end of your turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Mystic Conflux",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/feats.html#mystic%20conflux_taldoreicampaignsettingreborn",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You possess an intuitive understanding of the way magic ebbs and flows within enchanted items. Such items attune easily to you, and you are able to sound out their secrets. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can attune to up to four magic items at once.",
+      "You can cast the __identify__ spell without expending a spell slot or material components. You must finish a resting before you can do so again."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Nakudama's Electric Bloodline",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#nakudama's%20electric%20bloodline_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": "You must be a Nakudama",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although it's uncommon in today's day and age, some Nakudama are able to awaken the now dormant skills held by their warring ancestors. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have resistance to lightning damage.",
+      "You have an electrified tongue that you can use to make unarmed strikes. It has the finesse and reach properties, and when you hit with it, the strike deals lightning damage equal to 1d6 + your Strength or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike. The damage from your tongue increases when you reach 5th level (1d8), 11th level (1d10), and 17th level (1d12).",
+      "When you become grappled by a creature, you can use your reaction to force the creature to make a Constitution saving throw (DC 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes **1d10** lightning damage and the grapple ends."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Nakudama's Toxin Bloodline",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#nakudama's%20toxin%20bloodline_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": "You must be a Nakudama",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although it's uncommon in today's day and age, some Nakudama are able to awaken the now dormant skills held by their warring ancestors. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have resistance to poison damage.",
+      "You have advantage on saving throws against being poisoned.",
+      "You can cause your cheeks to swell and bubble out as your mouth fills with liquid poison. As an action, you can spit several globs of poison in quick succession, targeting a number of creatures equal to your proficiency bonus. Each target must be within 30 feet of you and must make a Constitution saving throw (DC 8 + your Constitution modifier + your proficiency bonus). A target takes poison damage equal to 1d8 + your proficiency bonus on a failed save, or half as much damage on a successful one."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -1859,6 +3738,33 @@
   "reprint": null
  },
  {
+  "name": "Nimbleness",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#nimbleness_tlotrr",
+  "type": "Common Virtues",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your skill (or fortune?) in battle has increased with your growth in experience."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain a +1 bonus to AC. You lose this bonus if you are incapacitated or wielding a shield."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Opportunist",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#opportunist_grimhollowpg24",
@@ -1880,6 +3786,34 @@
   "reprint": null
  },
  {
+  "name": "Opportunistic Thief",
+  "source": "HumblewoodCampaignSetting",
+  "url": "https://5e.tools/feats.html#opportunistic%20thief_humblewoodcampaignsetting",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have learned the tricks of the trade of thievery, allowing you to exploit opportunities for pick-pocketing both in and out of combat. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When a creature fails a melee attack roll against you in combat, you can make a Dexterity (*Sleight of Hand*) check against a DC equal to 10 + the target's Dexterity modifier. On a success, you may steal any one item that is not being held or worn by the target.",
+      "Whenever you successfully use your *Sleight of Hand* skill outside of combat to steal an object, you may immediately conceal it flawlessly on your person, or put another object you possess in its place."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Pack Fighting",
   "source": "DnDBeyondDrops",
   "url": "https://5e.tools/feats.html#pack%20fighting_dndbeyonddrops",
@@ -1891,6 +3825,120 @@
     "name": "",
     "type": "text",
     "value": "When you make a melee attack with a weapon or an Unarmed Strike against a creature, you gain a +1 bonus to the damage roll if at least one of your allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition. If at least one ally within 5 feet of the creature also has this feat and doesn't have the Incapacitated condition, this bonus increases to +2."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Perfect Landing",
+  "source": "HumblewoodCampaignSetting",
+  "url": "https://5e.tools/feats.html#perfect%20landing_humblewoodcampaignsetting",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Years of living at great heights have taught you how to fall more gracefully. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Reduce the damage die for fall damage from a d6 to a d4.",
+      "You do not fall prone after taking falling damage.",
+      "You do not take damage for the first 30 feet of your fall."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Plantmender",
+  "source": "HumblewoodTales",
+  "url": "https://5e.tools/feats.html#plantmender_humblewoodtales",
+  "type": "Uncategorized Feat",
+  "prerequisite": "13 Wisdom",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One of the basic forms of Tender magic, plantmending is often taught to seedlings of the order. Plantmending can be used either to help the forest recover from disasters or to defend against hazards that might be encountered while traveling. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can touch a plant or tree as an action to determine what has occurred to it and the area within its immediate vicinity within the last 24 hours. These events are revealed to you in visions that appear as though you were present as they occurred. After using this ability on a plant, you instantly become aware of its status and health, including any blights or conditions currently affecting it. You can use this ability a number of times equal to twice your Wisdom modifier (minimum of 1), regaining expended uses of it when you complete a long rest.",
+      "You learn the __mend plants____New Humblewood Content__ and __shillelagh__ cantrips. Wisdom is your spellcasting ability for these spells.",
+      "You can cast either the __barkskin__ or __spike growth__ spell once, and you must complete a long rest before you can cast either spell again. Wisdom is your spellcasting ability for these spells."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Postal Knight",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#postal%20knight_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": "You must be a member of the Courier Brigade",
+  "abilityIncrease": "Increase your Constitution or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have trained as a member of the Courier Brigade. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency in the *Athletics* and *Survival* skills.",
+      "Exhaustion doesn't cause you to have disadvantage on ability checks."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Potion Brewer",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#potion%20brewer_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your expertise and understanding of magical potions and elixirs allow you to finesse ingredients and recipes to your specifications. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When brewing potions, you can choose to take the second-highest ingredient attribute number from your potion recipe, instead of the first.",
+      "When brewing a potion, you can roll percentile dice. If you roll a number equal to or lower than your level, you create two potions instead of one."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -1933,6 +3981,33 @@
     "name": "",
     "type": "text",
     "value": "While you have the Prone condition, you don't have Disadvantage due to the Prone condition on attack rolls, and the Prone condition doesn't grant Advantage on attack rolls made against you."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Prowess",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#prowess_tlotrr",
+  "type": "Common Virtues",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Adventuring has honed your inborn talents."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Increase one ability score of your choice by 2, or two ability scores of your choice by 1, to a maximum of 20."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -2009,6 +4084,62 @@
   "reprint": null
  },
  {
+  "name": "Reapmaster",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#reapmaster_helianasguidetomonsterhunting",
+  "type": "Harvest",
+  "prerequisite": "Expert Harvester",
+  "abilityIncrease": "Increase your Dexterity or Intelligence score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Few hunters can match your knowledge and skill in obtaining pristine components."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency in one skill from the following options: Arcana, Investigation, Medicine, Nature, Religion, or Survival.",
+      "When you make a Harvesting check using a skill with which you are proficient, you have advantage on the roll."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Remarkable Recovery",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/feats.html#remarkable%20recovery_taldoreicampaignsettingreborn",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your body has the ability to recover quickly from terrible injuries, and is unusually receptive to healing magic. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you are successfully stabilized while dying, you regain hit points equal to your Constitution modifier (minimum of 1).",
+      "Whenever you regain hit points as a result of a spell, potion, or class feature (but not this feat), you regain additional hit points equal to your Constitution modifier (minimum of 1)."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Resolution of the Syndicate",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#resolution%20of%20the%20syndicate_grimhollowpg24",
@@ -2061,6 +4192,80 @@
   "reprint": null
  },
  {
+  "name": "Reward",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#reward_tlotrr",
+  "type": "Beyond 10th Level",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You choose a reward (see Chapter 4)."
+   },
+   {
+    "name": "Special",
+    "type": "text",
+    "value": "You may take this feature multiple times."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Royalty Revealed",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#royalty%20revealed_tlotrr",
+  "type": "Virtues of the Rangers of the North",
+  "prerequisite": "Ranger Of The North culture",
+  "abilityIncrease": "Increase your Strength or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your kin belong to a bloodline of kings, but they have learnt to hide from their enemies in the twilight years of their kingdom. Should you choose to reveal your heritage, your noble bearing will cause your allies to cast away their doubts. You reveal yourself by shouting an ancestral battle-cry, or unsheathing a weapon of high lineage, or by showing a device or coat of arms."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "As a bonus action, you can choose to reveal your lineage. When you do so, choose a number of friendly creatures (which can include yourself) within 30 feet of you who can see or hear you, up to twice your proficiency bonus. Until the end of your next turn, each creature gains advantage on attack rolls and Charisma (*Intimidation*) checks, and is immune to being frightened. It also gains temporary hit points equal to your choice of your Strength or Charisma modifier (minimum 1). These temporary hit points last until they are depleted or the creature finishes a short or long rest. Once you use this virtue, you cannot use it again until you finish a short or long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Rune-Craft",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#rune-craft_tlotrr",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can now read and write runic inscriptions. You can use the runes to convey secret messages to other creatures who know them, or whom you previously instructed in their meaning."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the end of a short or long rest, you can spend a craft slot and choose a magical item in the Company's possession. Make an Intelligence (*Old Lore*) check. The DC is 10 for a Marvellous Artefact, 15 for a Wondrous Item, or 20 for a Famous Weapon or Armour. If you succeed, you learn all there is to be discovered about the item's qualities, and whether it is cursed or not."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, during a Fellowship Phase, you can spend a craft slot to inscribe runes of power on a non-magical item of your choice, or on two items when you reach 5th level. You must be proficient with the tools related to the substance of which the item you choose is made (smith's tools for metal, woodcarver's tools for wood, etc.). While a creature holds or wears the item, it gains a +1 bonus to saving throws. If the item is a shield or a weapon, you may attribute it a bane instead (see Chapter 7). Choose a creature type among Evil Men, Orcs, Spiders, Trolls, Undead, or Wolves. If the item has one or more rewards, their effects are doubled against bane creatures (for example, a Keen weapon scores a critical hit on a roll of 18–20 against bane creatures). The runes can only be inscribed once on each item, and you cannot regain a craft slot expended in this way until the next Fellowship Phase, when you can cancel the runes inscribed with that slot and regain the slot, if you wish."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Sangromantic Initiate",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#sangromantic%20initiate_grimhollowpg24",
@@ -2082,6 +4287,34 @@
     "name": "Sanguine Potency",
     "type": "text",
     "value": "You have a pool of two d12s that you can expend instead of Hit Point Dice when you cast Sangromancy spells. Your pool regains all expended dice when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Scourge Master",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#scourge%20master_helianasguidetomonsterhunting",
+  "type": "General Feat",
+  "prerequisite": "Proficiency with {@item whip|PHB} or {@item tetherhooks|HelianasGuidetoMonsterHunting}",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your skill with whips and tetherhooks allows you to manipulate items at a distance."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you hit a creature with an attack using a tetherhooks or whip, you can use a bonus action to attempt to disarm the creature of a shield, or of one item it is holding. Make a Strength or Dexterity check (your choice) contested by the target's Strength check. If you succeed, the item is dropped on the ground midway between you and the creature.",
+      "You can use your whip or tetherhooks to grab items weighing less than 1 lb within the reach of your weapon, pulling them back to your person."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -2170,6 +4403,322 @@
   "reprint": null
  },
  {
+  "name": "Small Folk",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#small%20folk_tlotrr",
+  "type": "Virtues of the Hobbits",
+  "prerequisite": "Hobbit or Bree-Hobbit culture",
+  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Hobbits are a little people, but their resourcefulness far exceeds their stature. You have learnt how to exploit your small size to your advantage in a fight."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Medium or larger creatures cannot gain advantage on attack rolls against you while you are not incapacitated.",
+      "You don't provoke opportunity attacks from Medium or larger creatures."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Sneak Attack",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#sneak%20attack_tlotrr",
+  "type": "Beyond 10th Level",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the Sneak Attack feature. The extra damage is 1d6."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Song-Craft",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#song-craft_tlotrr",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have been trained in the art of singing, according to the tradition of the wandering minstrels. Your musical lore runs deeper than most, as you partake of the knowledge of the mighty singers of old. As an action, you can spend a craft slot and make a Charisma (*Performance*) check, contested by the Intelligence (*Riddle*) check of each creature of your choice within 30 feet of you that can hear you. A creature can choose to fail its ability check if it wishes. For each target against which you win the contest, choose one of the following options:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can suppress any effect causing the target to be charmed or frightened until the end of your next turn. This effect ends if the target can no longer hear you.",
+      "You can make the target indifferent about creatures of your choice that it is hostile towards until the end of your next turn. The target also has disadvantage on Wisdom (*Perception*) checks made to perceive any creature other than you for the same duration. This effect ends if the target can no longer hear you, it is harmed, or if it witnesses any of its friends being harmed.",
+      "Until the end of your next turn, whenever the target makes an attack roll or a saving throw, the target must roll a d4 and either add the number rolled to the attack roll or saving throw (if the target is friendly to you), or subtract it (if the target is hostile). This effect ends if the target can no longer hear you."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you reach 5th level, you can use a bonus action on each of your turns to extend the duration of each of these effects on all targets until the end of your next turn, up to 1 minute."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Speech of the Ancient Beasts",
+  "source": "HumblewoodCampaignSetting",
+  "url": "https://5e.tools/feats.html#speech%20of%20the%20ancient%20beasts_humblewoodcampaignsetting",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have a special connection with the natural world. Great beasts regard you as their kin, and you possess the ability to speak the languages of the most powerful and mystic of their kind. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Beasts of Large size or larger have a friendly disposition toward you unless you have attacked them.",
+      "You have advantage on Charisma checks made against beasts that are of Large size or larger.",
+      "You can speak and understand Giant Eagle (MM), Giant Elk (MM), and Giant Owl (MM). You can otherwise be understood by any beast of Large size or larger, whether or not they speak a language. Beasts with Intelligence scores of 4 or lower may only be able to understand simple concepts."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Speech-Craft",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#speech-craft_tlotrr",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You are a student of Sindarin (TLotRR) and Quenya (TLotRR), the Ancient Tongue, and have advantage on Charisma checks when interacting with Elves."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, as an action you can spend a craft slot and choose a creature other than an Elf, or a Wizard, or a similarly powerful creature, within 30 feet of you who can hear you. Then, choose one of the following options:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Make a Charisma (*Intimidation*) check contested by the target's Charisma (*Intimidation*) check. A target has advantage on this check if it is Large or larger or if it cannot understand you. If you win the contest, the target is frightened of you for 1 minute. The frightened target can make a Charisma (*Intimidation*) check against your passive Charisma (*Intimidation*) score at the end of each of its turns, ending the effect on itself on a success. When you reach 5th level, you can target one additional creature, or two additional creatures at 9th level.",
+      "Make a Charisma (*Intimidation*) or Charisma (*Persuasion*) check contested by the target's Wisdom (*Insight*) check. A target has advantage on this check if it is immune to being charmed or if it cannot understand you. If you win the contest, you can speak a one-word command that the target must follow on its next turn, if it can and if the command is not directly harmful to it. Once the target has executed the command, it ends its turn. Some typical commands include *\"Fall!\"* (the target falls prone), *\"Flee!\"* (the target moves away from you), and *\"Halt!\"* (the target doesn't move and takes no actions), and the effect may be considered a Misdeed depending on the circumstances. When you reach 5th level, you can target one additional creature, or two additional creatures at 9th level."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Spelldriver",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/feats.html#spelldriver_taldoreicampaignsettingreborn",
+  "type": "Uncategorized Feat",
+  "prerequisite": "Level 11+ and Spellcasting or Pact Magic Feature",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Through intense focus, training, and dedication, you've harnessed the techniques of rapid spellcasting."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you use your bonus action to cast a spell of 1st level or higher, you can also use your action to cast another spell of 1st level or higher. However, if you cast two or more spells in a single turn, only one of them can be 3rd level or higher."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Normally, when you cast a spell as a bonus action, you can't use your action to also cast a spell that turn unless that spell is a cantrip—(see PHB p202.) The Spelldriver feat removes that restriction, but the focus necessary to channel multiple spells in the same round still limits the overall power of those spells.*"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Spray 'n' Pray",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#spray%20'n'%20pray_helianasguidetomonsterhunting",
+  "type": "General Feat",
+  "prerequisite": "Proficiency with a magitech firearm or {@item tommybow|HelianasGuidetoMonsterHunting}",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've learned to unleash the full potential of mechanised ranged weapons, leaving aiming down to lady luck. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can reload firearms and tommybows as a bonus action or an action.",
+      "Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.",
+      "When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a one-handed firearm or tommybow you are holding.",
+      "After you take the Attack action with a tommybow or magitech firearm, you can use a bonus action to quickly make one or two additional ranged weapon attacks using the same weapon. If you choose to make two attacks, you take a -5 penalty to both attack rolls. You don't add your ability modifier to the damage of the bonus attack(s), unless that modifier is negative."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Stone-Hard",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#stone-hard_tlotrr",
+  "type": "Virtues of the Dwarves",
+  "prerequisite": "Dwarven culture",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Dwarves were made to be strong to endure, for they came unto the world when a great evil ruled Middle-earth. As long as your spirit supports your strength you can resist any hurt of body more hardily than most."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You cannot use this feature again until you finish a short or long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Stout-Hearted",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#stout-hearted_tlotrr",
+  "type": "Virtues of the Bardings",
+  "prerequisite": "Barding culture",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Living for many a year under the ever-present menace of Smaug the Dreadful has made the Bardings a courageous race. After all, there are not many creatures more fearsome than a great Dragon..."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have advantage on Charisma saving throws, and you cannot be frightened by non-undead creatures."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Strange as News from Bree",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#strange%20as%20news%20from%20bree_tlotrr",
+  "type": "Virtues of the Men of Bree",
+  "prerequisite": "Men Of Bree or Bree-Hobbit culture",
+  "abilityIncrease": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "It is indeed true that the affairs of the four villages are the chief concern of the Bree-folk, but the most inquisitive among the inhabitants are always ready to gather what tidings come from distant lands. You have learnt that listening to the strange tales that travellers often talk about can prove to be very precious."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency in the *Investigation* skill. If you are already proficient, you add double your proficiency bonus to checks you make with it.",
+      "During each Fellowship Phase, you can receive a rumour from the Loremaster."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Strength of Will",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#strength%20of%20will_tlotrr",
+  "type": "Virtues of the Rangers of the North",
+  "prerequisite": "Ranger Of The North culture",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have been raised in a land dotted with desolate ruins and burial mounds. You have heard the dead whisper with cold voices out of lonely barrows, while ghostly lights dance on haunted hills. When your will strengthens your heart, there is hardly anything in this world that can dismay you."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You have advantage on Charisma saving throws.",
+      "Whenever you must make a Charisma saving throw, you gain a bonus to the saving throw equal to your Wisdom modifier (minimum +1)."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Superior Shifting",
   "source": "ExploringEberron24",
   "url": "https://5e.tools/feats.html#superior%20shifting_exploringeberron24",
@@ -2191,6 +4740,35 @@
     "name": "Shifter Recovery",
     "type": "text",
     "value": "You can use your Shifting trait one additional time. You regain 1 expended use when you finish a Short Rest, and all expended uses when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Sure at the Mark",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#sure%20at%20the%20mark_tlotrr",
+  "type": "Virtues of the Hobbits",
+  "prerequisite": "Hobbit culture",
+  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Hobbits are nimble and keen-eyed, qualities that make them good archers. You have honed this natural talent to perfection, so much so that you just need to stoop for a stone to find yourself armed with a deadly weapon."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You are proficient with improvised weapons.",
+      "When making a ranged attack with an improvised weapon, you can use your choice of your Strength or your Dexterity modifier for the attack and damage rolls.",
+      "As a bonus action, you can give yourself advantage on your next ranged attack roll on the current turn. You can use this bonus action only if you haven't taken reactions during this turn, and after you use the bonus action, you cannot take reactions until the start of your next turn."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -2310,6 +4888,90 @@
   "reprint": null
  },
  {
+  "name": "Tellu and Scale's Master Cut",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#tellu%20and%20scale's%20master%20cut_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": "You must have beaten a master at Master Tellu and Scale's Sword School",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Having trained with the masters of the valley sword school, you have learned the usefulness of quickly changing between different fighting techniques in the midst of battle. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**One Handed**: While wielding a versatile weapon in one hand, your quick movements and agile defense allow you to regain ground even when your enemy advances. Once before the start of your next turn when you're missed by a melee attack from a creature within your reach, the attacker takes damage from your weapon equal to twice your proficiency bonus.",
+      "**Two Handed**: When wielding a versatile weapon in two hands, your powerful stance allows you to catch your target off guard. Whenever an enemy within your reach makes a melee weapon attack against you and misses, you can use your reaction to attempt to knock the attacker off balance. The target must succeed on a Dexterity saving throw (DC 8 + your Strength modifier + your proficiency bonus) or be knocked prone."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "The Art of Smoking",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#the%20art%20of%20smoking_tlotrr",
+  "type": "Virtues of the Men of Bree",
+  "prerequisite": "Men Of Bree or Bree-Hobbit culture",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have mastered the art of smoking pipe-weed, and you always carry your pipe with you, as well as a bag of tobacco, for using it grants you patience and clarity of mind."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Your proficiency bonus is doubled for any ability check you make with pipes.",
+      "You can use your pipe to gain inspiration a number of times equal to your proficiency bonus, instead of once, before you need to finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "The Language of Birds",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#the%20language%20of%20birds_tlotrr",
+  "type": "Virtues of the Bardings",
+  "prerequisite": "Barding culture",
+  "abilityIncrease": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Stories told in the North say how Dalemen can become so wise as to comprehend the speech of birds, and so by understanding their song be forewarned of impending threats, or be able to spot a weakness in their enemies' defences."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can comprehend and verbally communicate with birds, and you can obtain a magical success on any Intelligence (*Nature*) and Wisdom (*Animal Handling*) check related to birds.",
+      "When you are outside and you make an ability check, attack roll, or saving throw, you can do so with advantage. You can use this virtue a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Thoughtsinger",
   "source": "ExploringEberron24",
   "url": "https://5e.tools/feats.html#thoughtsinger_exploringeberron24",
@@ -2341,6 +5003,63 @@
   "reprint": null
  },
  {
+  "name": "Three is Company",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#three%20is%20company_tlotrr",
+  "type": "Virtues of the Hobbits",
+  "prerequisite": "Hobbit culture",
+  "abilityIncrease": "Increase your Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Wise say that it is sometimes best to trust to friendship than to great wisdom. This is particularly true for Hobbits, as everyone knows that it is hardly possible to separate them from their friends. You have given your trust to your fellow Company members, and a true friendship has grown from the bond unifying you."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Increase the Fellowship rating of your Company by 1.",
+      "Whenever you or a companion you can see spend a Fellowship point, choose a number of companions (which can include yourself) who can see or hear you, up to your proficiency bonus. Each of those companions gains inspiration."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Thrown Arms Master",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/feats.html#thrown%20arms%20master_taldoreicampaignsettingreborn",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've honed your ability to lob weaponry into the fray, including weapons not meant for ranged combat. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Simple and martial melee weapons without the thrown property have the thrown property for you. One-handed weapons have a normal range of 20 feet and a long range of 60 feet, while two-handed weapons have a normal range of 15 feet and a long range of 30 feet.",
+      "Weapons that already have the thrown property increase their short range by 20 feet and their long range by 40 feet for you.",
+      "When you miss with a thrown weapon attack using a light weapon, the weapon returns to your grasp like a boomerang at the end of your turn, unless something prevents it from returning. You can catch and stow as many weapons as you threw in this way."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Thrown Weapon Master",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#thrown%20weapon%20master_grimhollowpg24",
@@ -2367,6 +5086,67 @@
     "name": "Returning",
     "type": "text",
     "value": "Simple weapons with Thrown that you are proficient with also have the __Returning__ mastery property."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Toraf and Bolder's Master Cut",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#toraf%20and%20bolder's%20master%20cut_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": "You must have beaten a master at Master Toraf and Bolder's Sword School",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Having trained with the masters of the mountain sword school, you've learned how to pull off difficult weapon maneuvers which allow you to target specific parts of a creature's anatomy. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Head Strike**: Before you make a melee attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, the target has disadvantage on the next attack roll it makes before the end of its next turn.",
+      "**Torso Strike**: Before you make a melee attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, the target can't speak until the start of your next turn, after which it is immune to the effects of Torso Strike for the next minute.",
+      "**Leg Strike**: Before you make a melee attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, the target's speed is reduced by 10 feet (to a minimum speed of 10 feet). This effect lasts until the start of your next turn."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can only use one of these strikes per attack."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Tough as Old Tree-Roots",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#tough%20as%20old%20tree-roots_tlotrr",
+  "type": "Virtues of the Hobbits",
+  "prerequisite": "Hobbit or Bree-Hobbit culture",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "They say that Hobbits are difficult to dismay or kill, and that they recover their health at a prodigious pace if allowed to enjoy some peace and quiet. You have discovered that you recover wonderfully from falls and bruises (at the cost of some considerable pain)."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you would roll one or more Hit Dice to regain hit points, you instead use the highest number possible for each die."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -2424,6 +5204,34 @@
   "reprint": null
  },
  {
+  "name": "Untameable Spirit",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#untameable%20spirit_tlotrr",
+  "type": "Virtues of the Dwarves",
+  "prerequisite": "Dwarven culture",
+  "abilityIncrease": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Dwarves were made from their beginning to resist any form of domination. You have strengthened your resolve against all but the most subtle of the weapons of the Enemy."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You are immune to being charmed.",
+      "You have advantage on Intelligence saving throws."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Uul Dhakaan",
   "source": "ExploringEberron24",
   "url": "https://5e.tools/feats.html#uul%20dhakaan_exploringeberron24",
@@ -2455,6 +5263,195 @@
   "reprint": null
  },
  {
+  "name": "Virtue",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#virtue_tlotrr",
+  "type": "Beyond 10th Level",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a common or cultural virtue of your choice (see Chapter 4)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Vital Sacrifice",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/feats.html#vital%20sacrifice_taldoreicampaignsettingreborn",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've learned secrets of hemocraft that grant you esoteric power at the price of your own life force. As a bonus action, you can choose to take **1d6** necrotic damage to gain a blood boon. Your blood boon lasts for 1 hour or until expended."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can expend this blood boon to gain one of the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make an attack roll, you roll 1d6 and add it to the total.",
+      "When you hit with an attack or spell, you deal an additional **2d6** necrotic damage.",
+      "When you cause a creature to make a Strength, Dexterity, or Constitution saving throws, roll a d4 and reduce their save by the amount rolled."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The damage you take to gain a blood boon can't be reduced in any way."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Vocalist Arcanist",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#vocalist%20arcanist_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your unique method of weaving song into magic allows you to enhance your spells through your magical vocals. When you cast a spell that forces a target to make a saving throw or requires you to make a spell attack roll, you can choose to enhance the spell through song. You can wait until after you roll the d20 before deciding to use this, but must decide before the GM says whether the roll succeeds or fails."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you do so, make a Charisma (*Performance*) check. The DC for this check is equal to 10 + the spell's level. On a success, your proficiency bonus is doubled for the spell attack roll or your save DC for that casting of the spell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once you have succeeded on this check three times, you can't use this benefit again until the next dawn."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Ways of the Wild",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#ways%20of%20the%20wild_tlotrr",
+  "type": "Virtues of the Rangers of the North",
+  "prerequisite": "Ranger Of The North culture",
+  "abilityIncrease": "Increase your Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Rangers of the North roam ceaselessly, hunting for wicked things and guarding all frontiers. For you the Wild has become as familiar as the road that leads home is familiar to Hobbits, and the land itself may reveal useful tidings."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "During a journey, you can take on multiple roles without penalties.",
+      "You gain proficiency in one of the following skills of your choice: *Explore*, *Hunting*, or *Travel*. If you are already proficient in each of them, you add double your proficiency bonus to checks you make with one of them of your choice.",
+      "When you make a Wisdom check using a skill in which you are proficient, you can obtain a magical success. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Weapon-Craft",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#weapon-craft_tlotrr",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose a type of weapon. You gain proficiency with this weapon if you don't already have it. When you attack with that type of weapon and the weapon is finesse or ranged, you can use your choice of your Intelligence, Wisdom, or Charisma modifier instead of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, when you hit a creature with the chosen weapon, you can spend a craft slot to roll a number of additional weapon damage dice on the damage roll. The number of additional weapon damage dice is equal to your proficiency bonus."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Weavebonder",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#weavebonder_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": "Expert Enchanter",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "With a nuanced touch, you can manipulate even the smallest ebbs and flows of an item's magic."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make an Enchanting check with a skill with which you are proficient, you have advantage on the roll.",
+      "When you roll for a quirk's random element (such as damage type, skill, or creature type), you can roll the die twice and choose either result.",
+      "Each hour you spend enchanting an item counts as 3 hours towards the item's completion."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Wetland Explorer",
+  "source": "ObojimaTallGrass",
+  "url": "https://5e.tools/feats.html#wetland%20explorer_obojimatallgrass",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your deep knowledge of the dangerous creatures that inhabit the world aid you in both fighting and tracking them. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Select two creature types of your choice. Whenever you roll initiative at the start of a combat that has one or more hostile creatures of the chosen type, you can add your proficiency bonus to the roll. If a creature has magically altered its form to appear as another creature type, you don't gain this benefit.",
+      "You gain a +5 bonus to Dexterity (*Stealth*) and Wisdom (*Survival*) checks involving one or more of the chosen creature types.",
+      "You gain a +2 bonus to attack rolls made against a target of the chosen creature type."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Witch Hunter",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#witch%20hunter_grimhollowpg24",
@@ -2481,6 +5478,69 @@
     "name": "Resist Curses",
     "type": "text",
     "value": "You have Advantage on saving throws against all Shadowsteel curses, and also against spells with a duration of more than 10 minutes."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Wood-Craft",
+  "source": "TLotRR",
+  "url": "https://5e.tools/feats.html#wood-craft_tlotrr",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You are familiar with the difficulties encountered when crossing wild lands, and with the ways of overcoming them. You can make an Intelligence (*Nature*) check in place of any Wisdom (*Explore*) or Wisdom (*Hunting*) check."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, you can spend 1 hour and a craft slot to make an Intelligence (*Nature*), Wisdom (*Explore*), or Wisdom (*Hunting*) check (your choice). The DC is determined by the terrain type the Company is currently traversing (as if a journey event was taking place there; see Chapter 5). The check has disadvantage if it is autumn or winter. If you succeed, choose one of the following options:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Choose a number of creatures equal to your check result minus the terrain DC (minimum 1), which can include yourself. For 1 hour, each of those creatures has a +5 bonus to its Dexterity (*Stealth*) checks. When you reach 5th level, the bonus increases to +10. If you obtain a magical success, the creatures also leave behind no tracks or other traces of their passage for the duration.",
+      "Choose a number of creatures equal to your check result minus the terrain DC (minimum 1), which can include yourself. For 8 hours, each of those creatures has a +5 bonus to its passive Wisdom (*Perception*) score. When you reach 5th level, the bonus increases to +10. If you obtain a magical success, the creatures also gain tremorsense out to a range of 60 feet for the duration.",
+      "You forage a number of pounds of food and gallons of water equal to your check result minus the terrain DC (minimum 1). The food lasts for 24 hours, or 48 hours when you reach 5th level. If you obtain a magical success, each pound of food foraged in this way also restores 1 hit point to the creature eating it during a short or long rest."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Woodwise",
+  "source": "HumblewoodCampaignSetting",
+  "url": "https://5e.tools/feats.html#woodwise_humblewoodcampaignsetting",
+  "type": "Uncategorized Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have lived your entire life in the gnarled, wooded areas of the world. You are adept at finding your way through even the most treacherous terrain. You gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency in either the *Survival* or *Nature* skill.",
+      "You ignore difficult terrain.",
+      "You cannot become lost in natural surroundings except by magical means."
+     ]
+    }
    }
   ],
   "reprint": null

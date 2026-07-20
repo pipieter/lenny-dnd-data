@@ -56,7 +56,7 @@ export interface DescriptionList {
 
 export type Description = DescriptionHr | DescriptionText | DescriptionTable | DescriptionList;
 
-const disallowedSymbols = ['{', '}', '|', '[object Object]'];
+const disallowedSymbols = ['{', '}', '[object Object]'];
 
 export function containsDisallowedSymbols(value: string | List) {
     // String
@@ -605,6 +605,10 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             return [cleanDNDText(itemSub)];
         }
 
+        case 'abilityGeneric': {
+            return [`**${description.name}** = ${description.text}`];
+        }
+
         default: {
             throw `Unsupported description type: '${type}'`;
         }
@@ -673,6 +677,16 @@ function parseTableRow(values: any[] | any): string[] {
                 cells.push(text);
             } else if (value.type == 'image') {
                 cells.push(`[image](${getImageUrl(value.href.path)})`);
+            } else if (value.type == 'list') {
+                // list is generally a few stacked values, kind of the same as having multiple rows.
+                if (value.items && Array.isArray(value.items)) {
+                    const listItems = value.items.map((item: any) =>
+                        typeof item === 'string' ? cleanDNDText(item, true) : String(item)
+                    );
+                    cells.push(listItems.join('\n'));
+                } else {
+                    cells.push('');
+                }
             } else {
                 throw `Unsupported table value-type: '${value.type}' in ${JSON.stringify(value)}`;
             }
@@ -687,6 +701,15 @@ function parseTableRow(values: any[] | any): string[] {
 
 export function parseDescriptionFromTable(description: any): DescriptionTable {
     const title: string = description.caption || '';
+
+    if (description.type === 'tableGroup') {
+        const tables = description.tables.map((table: any) => parseDescriptionFromTable(table).table);
+        return {
+            name: title,
+            type: DescriptionType.table,
+            table: { type: 'table', title, headers: null, rows: tables as any },
+        };
+    }
 
     let headers: string[] | null = null;
     if (description.colLabels) {
@@ -906,6 +929,13 @@ export function parsePrerequisite(prerequisite: any): string | null {
                 const lvl = prerequisite.level.level;
                 const classname = prerequisite.level.class.name;
                 prerequisites.push(`Lv. ${lvl} ${classname}`);
+                break;
+            }
+            case 'race': {
+                const races = prerequisite.race.map((r: any) => {
+                    return r.name;
+                });
+                prerequisites.push(joinStringsWithOr(races));
                 break;
             }
             default: {
