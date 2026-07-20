@@ -1,5 +1,34 @@
 [
  {
+  "name": "Accelerated Rests",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/variantrules.html#accelerated%20rests_taldoreicampaignsettingreborn",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Certain adventures thrive on the adrenaline of the chase or the ever-present fear of ambush. As it stands, the need to take a resting can prove difficult during long dungeon crawls, and this lends itself to a nice tone of personal stress and risk versus reward. However, sometimes a rest is necessary for the party to continue, even if the current rush of the story's clock won't allow for the hour that a resting requires."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "One way to make resting less intrusive is to let characters take one in a reduced amount of time. If the characters have only 10 minutes to spare, let them take a 10-minute resting. If they have half an hour to spare, let them take a resting in 30 minutes. This fits the game mechanics to the story's narrative, rather than the other way around."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In a campaign that implements this option, a character must finish a resting before they can take an accelerated resting again."
+   },
+   {
+    "name": "Arduous Rally",
+    "type": "text",
+    "value": "If fudging game mechanics to support the campaign's narrative doesn't feel right for your group, the characters can potentially make use of the option to take an arduous rally instead of a resting. This involves one or more characters spending 5 minutes to rally their resolve in the face of coming peril, letting their adrenaline fuel the need to push on. A character who undertakes an arduous rally gains the benefit of a resting, but any hit points restored by spending Hit Dice are halved. Moreover, the character gains one level of exhaustion."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Alternative Rest System",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/variantrules.html#alternative%20rest%20system_grimhollowcg24",
@@ -179,6 +208,146 @@
     "name": "",
     "type": "text",
     "value": "If you rested at least 8 hours, including at least 6 hours of sleep, before the interruption, you gain the benefits of a Short Rest. You can only take 1 Short Rest during an attempt of a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Alternative Resurrection Rules: Fading Spirits",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/variantrules.html#alternative%20resurrection%20rules%3A%20fading%20spirits_taldoreicampaignsettingreborn",
+  "ruleType": "Variant Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Character death often becomes no more than a minor inconvenience in some campaigns. Once an adventuring party reaches a certain level, the spells available to return fallen comrades from the afterlife—including __revivify__, __raise dead__, and __resurrection__—make death no more than a temporary setback, potentially undermining one of the most significant elements of danger and threat in the campaign story. For players and GMs who wish to elevate the gravity of character death, the optional rules in this section offer three different approaches."
+   },
+   {
+    "name": "Fading Spirits",
+    "type": "text",
+    "value": "**Like all of the great rites of passage in life, death changes us. Simply returning to the world of the living does not undo that change, nor is it at all simple. Those who have passed beyond the veil are marked by it, even if they manage to find their way back.* - Claret Director Ged Narrel*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This house rule is used in the *Critical Role* livestream to increase the emotional stakes of bringing a beloved friend back from the dead. It also adds the ever-increasing threat of losing a friend permanently to the game, even with the aid of miraculous magic."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If magic is used to bring a character back from the dead (except for the __revivify__ spell; see below), everyone present becomes part of a resurrection ritual. Up to three characters present for the ritual—typically members of the deceased's adventuring party—can contribute to the ritual by attempting to call their ally's spirit back. This could involve delivering a stirring speech, playing a song from their shared childhood, goading a rival back with a display of sword skills, confessing undying love for them, or anything else that the players or the GM consider emotionally stirring."
+   },
+   {
+    "name": "Participating in the Ritual",
+    "type": "text",
+    "value": "Each of the participating characters makes an ability check. A player can tell the GM what kind of check they want to make, but ultimately the GM decides what check is appropriate based on the character's contribution to the ritual. The baseline DC of this check is 15, but the GM can raise or lower the DC (typically anywhere between 10 and 20) if the contribution seems particularly appropriate or particularly insincere."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "For example, praying to a fallen paladin's god for mercy might require a participant to make a DC 10 Intelligence (*Religion*) check, whereas shouting at a dead friend's corpse to get back up and stop lazing around might require a DC 20 Charisma (*Intimidation*) check. If the contribution is roleplayed in a particularly touching way, the GM can grant Advantage and Disadvantage on the check—even if the check's DC remains high."
+   },
+   {
+    "name": "Resurrection Check",
+    "type": "text",
+    "value": "After all the characters' contributions are completed, the GM rolls a single, final resurrection check with no modifier. The base DC of this check is 10, but it is modified in three ways:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The DC is increased by 1 for every time the character has returned to life before, as the soul's connection to this world is slowly eroded by repeatedly dying and returning.",
+      "The DC is reduced by 3 for each successful contribution from the other participants in this ritual.",
+      "The DC is increased by 1 for each failed contribution to the ritual."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the resurrection check is successful, the character's soul is returned to their body (if the soul is willing, as usual). If the check fails, the soul does not return—and the character is permanently unable to be raised from the dead."
+   },
+   {
+    "name": "True Miracles",
+    "type": "text",
+    "value": "If a character is brought back from the dead by the __true resurrection__ or the __wish__ spell, or by a god, they instantly return to life without the need for a resurrection ritual. Additionally, if a character has been permanently lost due to a failed resurrection ritual, the GM can allow a casting of __true resurrection__ or __wish__ to begin a last-chance resurrection ritual—one that can't be repeated if failed."
+   },
+   {
+    "name": "Revivify",
+    "type": "text",
+    "value": "If a spell with a casting time of 1 action is used to restore life to a creature (including the __revivify__ spell), no one but the caster can participate in the resurrection ritual. The caster makes a quick resurrection check by rolling a d20 and adding their spellcasting ability modifier, against a DC equal to 10 + 1 for every time the character has returned to life before. On a failure, the character's soul is not lost, but the resurrection fails and increases the DC of any future resurrection checks by 1. Further attempts to bring the character back to life must involve a spell with a casting time longer than 1 action (including __raise dead__ or __resurrection__)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Alternative Resurrection Rules: Harrowing Return",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/variantrules.html#alternative%20resurrection%20rules%3A%20harrowing%20return_taldoreicampaignsettingreborn",
+  "ruleType": "Variant Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Character death often becomes no more than a minor inconvenience in some campaigns. Once an adventuring party reaches a certain level, the spells available to return fallen comrades from the afterlife—including __revivify__, __raise dead__, and __resurrection__—make death no more than a temporary setback, potentially undermining one of the most significant elements of danger and threat in the campaign story. For players and GMs who wish to elevate the gravity of character death, the optional rules in this section offer three different approaches."
+   },
+   {
+    "name": "Harrowing Return",
+    "type": "text",
+    "value": "In games that use this house rule, the process of a character dying and being pulled back into their body becomes a traumatic experience. The magic that pulls the spirit from beyond the dark veil of death takes a toll on that spirit each time, changing a person in unexpected and profound ways."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This rule is best for campaigns with dark and horrific themes. It adds a dose of grim bleakness that might not feel at home in epic and heroic stories. Players and GMs who want to make use of this rule should talk about it beforehand, and if any player says no or doesn't offer enthusiastic support, it's best to not use it. It's also important for GMs to check in with the players whenever this rule comes into play, just to make sure everyone is still having fun with the darker themes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a character is brought back to life by any spell other than __true resurrection__, that character must make a Wisdom saving throws with a DC equal to 22 − the level of the spell used to return the character to life. On a failure, the character's experience of death and the afterlife exacts a heavy toll, determined by rolling on the [Harrowing Return](https://5e.tools/tables.html#harrowing%20return_taldoreicampaignsettingreborn) table. The consequence lasts until the GM rules that the character has resolved it. Consequences with no clear resolution last for 1d10 × 10 days, after which the player decides how their character overcame it. Or, to make a campaign even darker, the players and the GM can agree that these consequences last indefinitely."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Alternatively, rather than rolling on the table, a player and a GM can work together to choose a consequence that creates an interesting story for the character. Such a consequence might tie to the character's backstory, the themes of the campaign, or the circumstances under which the character died."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A __remove curse__ spell temporarily suppresses a consequence of being brought back from the dead, but the consequence returns each time the character drops to 0 hit points or finishes a resting, until the consequence is resolved."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**O lady of cold winters and the long night of all souls. O harbinger of all ends and eternal sentinel of the final threshold. I entreat you—nay, I beseech you! You bear within your grasp the soul of one whose fate has not yet reached its end. Bear witness, O queen of night-black feathers; turn your divine gaze to the golden bonds that tie the living to the departed.\n\nThe tears of a brother, who weeps without shame. The blade of a lover, who grieves she did not die while holding it in battle alongside you. A portrait painted by a mother, of an infant, untouched by the sorrows of the world. O Matron of Death, I plead to you—hear their cries! Let not this warrior's fate end here.* - Valiq*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Harrowing Return's stats here](https://5e.tools/tables.html#harrowing%20return_taldoreicampaignsettingreborn)"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Alternative Resurrection Rules: Taxing Return",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/variantrules.html#alternative%20resurrection%20rules%3A%20taxing%20return_taldoreicampaignsettingreborn",
+  "ruleType": "Variant Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Character death often becomes no more than a minor inconvenience in some campaigns. Once an adventuring party reaches a certain level, the spells available to return fallen comrades from the afterlife—including __revivify__, __raise dead__, and __resurrection__—make death no more than a temporary setback, potentially undermining one of the most significant elements of danger and threat in the campaign story. For players and GMs who wish to elevate the gravity of character death, the optional rules in this section offer three different approaches."
+   },
+   {
+    "name": "Taxing Return",
+    "type": "text",
+    "value": "In a campaign that uses this house rule, whenever a character is restored to life, the process corrodes a fraction of their vitality, slowly consuming the body until it can no longer sustain life. Each time a character is brought back to life by a spell other than __true resurrection__, that character's Constitution score is permanently reduced by 1. This loss can't be restored except by use of a __wish__ spell. A character whose Constitution score is reduced to 0 in this way dies permanently and can't be returned to life by any means."
    }
   ],
   "reprint": null
@@ -6510,6 +6679,114 @@
   "reprint": null
  },
  {
+  "name": "Drunkenness Level",
+  "source": "GriffonsSaddlebag2",
+  "url": "https://5e.tools/variantrules.html#drunkenness%20level_griffonssaddlebag2",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Drinking alcohol is a common pastime and element of many social encounters. However, consuming too much alcohol causes a creature to become drunk. At the GM's discretion, this drunkenness can be measured in six levels using the following rules. A creature gains one level of drunkenness whenever it has a number of alcoholic drinks within 1 hour equal to 2 + half its Constitution modifier, rounded up (a minimum of 2 drinks per hour)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While a creature has at least one level of drunkenness, it gains a bonus to saving throws it makes against being frightened equal to its level of drunkenness, and the DC required to intimidate it increases by the same amount. However, the creature also suffers a penalty to certain rolls equal to its drunkenness level. The kinds of rolls that suffer these penalties, as well as other effects of drunkenness, are shown in the table below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature suffers the effect of its current level of drunkenness as well as all lower levels. For example, a creature suffering level 2 drunkenness has a −2 penalty to Wisdom (*Insight* and *Perception*) checks, Strength and Dexterity saving throws, and Constitution saving throws to maintain concentration. However, it also gains a +2 bonus to saving throws against being frightened, and its DC to resist being intimidated increases by 2."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Certain creatures have a tolerance to alcohol that's either natural or practiced. A creature that has resistance to poison damage or has advantage on saving throws against poison must drink twice the amount of alcohol as normal to gain one level of drunkenness. A creature immune to poison damage or the poisoned condition can't become drunk against their will. Alternatively, at the GM's discretion, a creature may need to drink additional alcohol to gain levels of drunkenness as a result of building up a natural tolerance from drinking it frequently over time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a conscious creature starts its turn with level 6 drunkenness, it must make a DC 10 Constitution saving throw. On a failed save, the creature falls unconscious. On a success, the creature spends its action that turn retching and reeling. When it does, the creature loses 1 level of drunkenness. The DC for this saving throw increases by 5 each time the creature repeats the save before it loses all of its levels of drunkenness."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "For every hour the creature doesn't drink any alcohol, it loses one level of drunkenness, provided it's either unconscious or has also ingested some food or water. Finishing a long rest removes any levels of drunkenness unless the creature fell unconscious for the duration of the rest as a result of suffering level 6 drunkenness. In that case, the creature loses 1d4 + 2 levels of drunkenness instead and doesn't regain Hit Dice as a result of finishing a long rest."
+   },
+   {
+    "name": "Drunkenness Level Table",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Drunkenness Level Table",
+     "headers": [
+      "Level",
+      "Effect"
+     ],
+     "rows": [
+      [
+       "1",
+       "Penalty to Wisdom (Insight and Perception) checks"
+      ],
+      [
+       "2",
+       "Penalty to Strength and Dexterity saving throws, as well as Constitution saving throws to maintain concentration"
+      ],
+      [
+       "3",
+       "Penalty to ability checks that don't use Charisma"
+      ],
+      [
+       "4",
+       "Penalty to attack rolls and Charisma checks"
+      ],
+      [
+       "5",
+       "Speed halved, can't concentrate on spells"
+      ],
+      [
+       "6",
+       "Unconscious, and can't remember the events of the last hour."
+      ]
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Encumbrance",
+  "source": "TLotRR",
+  "url": "https://5e.tools/variantrules.html#encumbrance_tlotrr",
+  "ruleType": "Variant",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The following alternative rules for lifting and carrying determine how the Player-heroes are hindered by the weight of their carried gear."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "If you carry weight in excess of 5 times your Strength score, you are *encumbered*, which means your speed drops by 10 feet and you have disadvantage on Strength (*Athletics*) checks, Dexterity (*Acrobatics*) checks, and fatigue saving throws.",
+      "If you carry weight in excess of 10 times your Strength score, up to your maximum carrying capacity, you are instead *heavily encumbered*, which means your speed drops by 20 feet and you have disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The maximum carrying capacity and the weight you can push, drag, or lift is calculated as usual."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Epic Action",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/variantrules.html#epic%20action_monstersofdrakkenheim",
@@ -7858,6 +8135,45 @@
   "reprint": null
  },
  {
+  "name": "Hemocraft",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/variantrules.html#hemocraft_taldoreicampaignsettingreborn",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Two of the subclasses in this book, the cleric's Blood Domain and the wizard's Blood Magic arcane tradition, use the magical art of hemocraft. This involves using your own blood and the blood of other creatures to heal, hex, and even bend bodies to your will."
+   },
+   {
+    "name": "Blood and Session Zero",
+    "type": "text",
+    "value": "Self-harm and the removal of agency can be an incredibly sensitive topic, regardless of whether it's happening to someone's own character, to another player character, or to an NPC. Additionally, many people have blood phobias that they may not want to disclose. Because of this, if any player or the GM wants to use one of these options, it's important that you bring it up in a pregame session zero and get everyone's affirmative and enthusiastic buy-in. These options are exciting and flavorful, but the comfort of your group is essential to making the game fun for everyone."
+   },
+   {
+    "name": "Blood and Spellcasting",
+    "type": "text",
+    "value": "If everyone in your group is okay with using blood magic in your game, consider how you can describe your spellcasting in fun and eerie ways. When casting divine spells as a Blood Domain cleric, you can flavor your descriptions to tailor the magic's effect on an opponent's blood and vitality. The __hold person__ spell might involve locking a target's body into place from the circulatory system out. __Cure wounds__ might feature lines of blood knitting lacerations together like a needle and thread. As a Blood Magic wizard, your __find familiar__ spell could conjure a horrific crimson spirit of congealed ichor and pulsing veins. Have fun with the theme!"
+   },
+   {
+    "name": "I Don't Have Blood!",
+    "type": "text",
+    "value": "Some characters don't have blood. It might be because they're a living construct, or have become undead through some macabre magic. If you want to play a blood mage but don't have blood yourself, consider your hemocraft to be a unique variant that channels the power of your life force, the necromantic energy that animates you, or even the oil that pumps through your artificial form. This is a purely flavorful change, and doesn't affect any of your subclass features."
+   },
+   {
+    "name": "They Don't Have Blood!",
+    "type": "text",
+    "value": "On the other hand, some hemocraft features require the targets of your magic to have blood themselves. It's generally up to the Game Master to decide what does and doesn't have blood, but for the most part, all beasts, dragons, giants, and humanoids need blood to live. Most celestials, fey, and fiends have blood or magical ichor, as well as some elementals. However, constructs and undead don't have blood, and are unaffected by hemocraft."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Most aberrations, monstrosities, and plants also need blood or some type of vital sap or ichor to survive. It's recommended that the Game Master rule in the players' favor in cases like these. That said, one way to show that hemocraft is more difficult to use against such creatures is to give them Advantage and Disadvantage on any saving throws against the feature the character is trying to use."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Heroism and Corruption",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/variantrules.html#heroism%20and%20corruption_grimhollowcg24",
@@ -8022,6 +8338,84 @@
   "reprint": null
  },
  {
+  "name": "Illegal Drugs",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/variantrules.html#illegal%20drugs_taldoreicampaignsettingreborn",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you want to include drugs in your RPG campaign, consider discussing with your group in a session zero to make sure everyone is okay to encounter them in-game. If any player says no or doesn't enthusiastically buy-in, err on the side of caution and leave the drugs out. It's also important to check in with your group whenever drug use comes into play, just to make sure everyone is still having fun. Additionally, while use of drugs might be fine with everyone, also make sure you know how comfortable your players are with explicit descriptions of needles, issues of addiction, and any other topics related to drug use."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Clasp and the Myriad deal in a variety of illegal, mind-altering drugs, and Kymal is the epicenter of both organizations' clientele. Though the creation and possession of these drugs is strictly prohibited in most of Tal'Dorei, they have found popularity within all levels of society, particularly in Kymal, where the Public Defense frequently looks the other way for a small bribe."
+   },
+   {
+    "name": "Oloore Root",
+    "type": "text",
+    "value": "This root is typically sold in teabags for 100 gp per dose. It was originally a ritualistic tool used by the followers of many gods, but now sees more recreational use. Oracles used it to enhance their divinations, for it helped them leave their physical bodies behind and become closer to gods and spirits. Drinking tea brewed from the root causes intense hallucinations, which feel like they have granted perfect clarity of mind to the imbiber."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After drinking oloore tea as an action, you must succeed on a DC 19 Constitution saving throws or experience vivid hallucinations for 1d4 hours. During this time, you have Advantage and Disadvantage on attack rolls and ability checks. If you fail the saving throws by 10 or more, your hallucinations become horrific visions and you gain a level of exhaustion. On a success, you gain preternatural clarity, allowing you to cast the __scrying__ spell once within the next 1d4 hours."
+   },
+   {
+    "name": "Zeal",
+    "type": "text",
+    "value": "Distilled from the ichor of demons, zeal was originally used by Tal'Dorei's ancient berserkers to grant them incredible strength and courage before battles. These days, it's most commonly used by criminal bruisers before a brawl. Most modern warriors stay well away from zeal, due both to its addictive nature and to the mental and physical degeneration it can cause over long periods of time. When prepared properly, zeal is a purple, ashy-tasting gel that typically costs 150 gp per dose."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After slathering zeal across your exposed skin as an action, you must make a DC 12 Constitution saving throws. On a failure, you become paralyzed for 1d4 rounds as your muscles lock up. On a success, your weapon attacks deal an additional **1d6** damage for the next minute. After this effect ends, you gain one level of exhaustion."
+   },
+   {
+    "name": "Suude",
+    "type": "text",
+    "value": "Exandria's most infamous drug, suude is a glittering powder made from residuum. It was first developed by power-hungry archmages in the Age of Arcanum as an incense burned to enhance focus during ritual spellcasting. The secret to its refinement has been lost and rediscovered a variety of times since the Calamity, and many different types of suude have been developed by arcanists in search of ever-greater power. It has terrible addictive and mentally degenerative properties, even when used sparingly."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After burning suude within a vessel and inhaling its fumes as an action, you take 22 (**4d10**) psychic damage and must make a DC 10 Constitution saving throws. On a failure, you become poisoned for 1 hour and fall unconscious for 1 minute, or until you are shaken awake as an action. During this time, the world seems to move in slow motion, and your vision is twisted in kaleidoscopic colors—yet your focus is never distorted. If one dose of suude, or more, is used within 1 hour of another, the DC of the Constitution saving throws is increased by 5 per additional dose. If you fail this save by 10 or more, you instantly drop to 0 hit points."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "On a success, you gain the ability to use one of the following Metamagic options as a sorcerer for the next minute, requiring no sorcery points. The type of Metamagic you gain access to depends on the type of suude, and once you use it, you can't use it again until you inhale suude again."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Brown suude allows you to use the Extended Spell Metamagic option, blue suude allows you to use Twinned Spell, and red suude grants Distant Spell."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Mixed Ancestry Statistics",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/variantrules.html#mixed%20ancestry%20statistics_taldoreicampaignsettingreborn",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Only certain combinations of ancestries, such as half-elves and half-orcs, already have racial traits described in the fifth edition core rules. You can use these racial traits as is, or create your own mixed ancestry from any two races by choosing one or two racial traits from one parent's race and exchanging them for the same number of traits from another parent's race."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you build a character of mixed ancestry, keep in mind that some racial traits are more mechanically powerful than others, while some are largely flavorful or narrative focused. As such, focus on swapping a narrative trait for another narrative trait, or a combat-focused trait for another combat-focused trait. Additionally, you must have your Game Master's permission to use your replacement traits. As with any house rule, you and your Game Master might want to revisit your unique combination of traits later in the campaign if they feel overpowered or underpowered."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Permanent Wounds",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/variantrules.html#permanent%20wounds_grimhollowcg24",
@@ -8090,6 +8484,173 @@
       ]
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Rapid Quaffing",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/variantrules.html#rapid%20quaffing_taldoreicampaignsettingreborn",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This house rule lets characters grab and drink a potion as a bonus action, enabling them to heal or buff up in combat without sacrificing their primary attacks or spellcasting to do so. (This applies to enemies and NPCs as well as player characters!)"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Using this house rule, you can use a bonus action to drink a potion yourself. It still requires an action to administer a potion to another creature. You can also choose to only apply this house rule to potions of healing and their variants (potion of greater healing, etc.). In this less powerful version of the house rule, you can consume a potion that restores hit points as a bonus action, but all other potions still require you to use your action."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Replacing the d20",
+  "source": "TLotRR",
+  "url": "https://5e.tools/variantrules.html#replacing%20the%20d20_tlotrr",
+  "ruleType": "Variant Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever a d20 must be rolled, roll three Success Dice instead and add them together. If the roll has disadvantage, all the Success Dice that come up showing a result in an outlined number (1, 2, or 3) are considered to have given a result of zero instead. If the roll has advantage, roll four Success Dice instead of three and add them together."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Resting",
+  "source": "TLotRR",
+  "url": "https://5e.tools/variantrules.html#resting_tlotrr",
+  "ruleType": "Variant",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*The Lord of the Rings Roleplaying* employs a variant of the standard 5e rules for short and long rests."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Player-heroes can benefit from long rests exclusively in sheltered and safe refuges (i.e. not 'on the road'). The safe havens of the Company certainly count as sheltered refuges, as well as any city or settlement where the Company is welcomed on friendly terms. At the Loremaster's discretion, a deserted but well-sheltered place in the wilds could also be suitable for a long rest.",
+      "Additionally, a short rest during a journey must be at least 8 hours long, during which a character sleeps or performs only light activities. Once the Player-heroes stop travelling for at least 24 hours (because they have reached their destination, or have decided to stop along the way), they can resume taking short rests of 1 hour."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Rewards and Virtues",
+  "source": "TLotRR",
+  "url": "https://5e.tools/variantrules.html#rewards%20and%20virtues_tlotrr",
+  "ruleType": "Variant",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Virtues are unique abilities and special talents, characteristic of a given culture. Players select a new virtue when their Player-hero reaches certain levels in a calling."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Rewards are pieces of war gear of superior craftsmanship, granted to a Player-hero as an award for their deeds when they reach certain levels. Rewards are not tied to a specific culture."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Virtues and rewards are described Chapter 4."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Rolling 1 or 20",
+  "source": "TLotRR",
+  "url": "https://5e.tools/variantrules.html#rolling%201%20or%2020_tlotrr",
+  "ruleType": "Variant Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "During combat, if the attack roll shows two or more icons, the attack hits regardless of any modifier or the target's AC, and is a critical hit. If the roll has disadvantage, it must show three icons."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the Success Dice for an attack only show outlined numbers, the attack misses regardless of any modifiers or the target's AC."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Shadow and Corruption",
+  "source": "TLotRR",
+  "url": "https://5e.tools/variantrules.html#shadow%20and%20corruption_tlotrr",
+  "ruleType": "Variant",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Challenging an almost all-powerful Enemy and facing its terrible minions is bound to instil a sense of fear and doubt in the Player-heroes, a sentiment that in time comes to weigh heavily on their hearts and minds. In *The Lord of the Rings Roleplaying*, this burden is represented by the accumulation of Shadow points, and by the sources that force their gain."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Player-heroes can resist some sources of Shadow gain by making a saving throw—either an Intelligence, Wisdom, or Charisma saving throw.",
+      "Attempting or performing misdeeds provokes an automatic Shadow gain instead, as such actions prove that a hero is falling for the evil ways of the Enemy."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Player-heroes mark their descent into the Shadow following a specific Shadow path, based on their chosen calling, and risk leaving the game if they cannot stop their descent into madness. Player-heroes avoid this by getting rid of Shadow points during the Fellowship Phase, resting from actively opposing the Enemy."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Shadow can also result in the Player-heroes being subjected to two new conditions, anguished and miserable.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "These conditions, along with the rules for the Shadow, are presented in Chapter 8."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Skyships",
+  "source": "TalDoreiCampaignSettingReborn",
+  "url": "https://5e.tools/variantrules.html#skyships_taldoreicampaignsettingreborn",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Within the Cloudtop District lies the Skyport, a series of landing pads and observation towers that form a raised harbor for docking skyships. These beautiful vessels come in a wide variety of sizes, but generally are built to a similar scale as a coaster merchant ship. Skyships are held aloft and guided via the levitating power of three or more enchanted crystals, called brumestones, installed along the hull or topside of the ship. The enchantments required to produce and maintain these brumestones is a closely guarded secret by the Alsfarin Union within the Marquesian city of Ank'Harel, and while the Alsfarin Union does occasionally sell skyships to foreign businesses, they retain absolute control over their maintenance—and of the total number of skyships in operation."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Skyships are generally reserved for goods and individuals who require expedient travel without the hassles of sea-faring dangers, but the cost to utilize a skyship is prohibitively expensive for anyone but wildly wealthy merchants and landed nobility, fomenting a sense of elitism in those who often make use of their services. Due to the exclusivity of skyports within major metropolises, few skyships in service will deviate from dedicated shipping routes between major cities."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Purchasing a skyship costs 100,000 gp, and requires a personal connection with the Alsfarin Union in Ank'Harel. A skyship travels at a top speed of 10 miles per hour, can carry total cargo of 10 tons, and requires a crew of six to ten humanoids to operate at peak performance. Most skyships have maximum accommodations for up to 30 passengers. Most skyships only travel between existing skyports (see \"Emon Skyport,\" below), and charge a fee of 2 gp per mile for a passenger ticket. Chartering a skyship to a destination off the standard sky routes costs 15 gp per mile, if the captain is available and willing to undertake the journey. Shipping cargo costs 1 gp per mile per 100 pounds of cargo along normal sky routes, and twice that to other destinations."
    }
   ],
   "reprint": null
