@@ -274,6 +274,30 @@
  },
  {
   "name": "Dazed",
+  "source": "FleeMortals",
+  "url": "https://5e.tools/conditionsdiseases.html#dazed_fleemortals",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "A **dazed** creature can only do one of the following things on their turn: move, use an action, or use a bonus action. If a creature becomes dazed during their turn, their turn ends. The cure ailment power, __lesser restoration__ spell, and __greater restoration__ spell remove the dazed condition. At the GM's discretion, other powers, spells, or effects might also remove the dazed condition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a dazed creature is affected by a spell or effect that gives them an extra action on their turn (like the __haste__ spell or the fighter's Action Surge feature), they can still take this extra action, in addition to the movement, action, or bonus action allowed by the dazed condition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Some creatures in this book have immunity to the dazed condition. At the GM's discretion, a creature published in the core rules or another supplement who has immunity to the paralyzed or stunned condition also has immunity to the dazed condition."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
+  "name": "Dazed",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/conditionsdiseases.html#dazed_grimhollowcg24",
   "description": [
@@ -363,6 +387,78 @@
   "reprint": null
  },
  {
+  "name": "Drunk",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/conditionsdiseases.html#drunk_helianasguidetomonsterhunting",
+  "description": [
+   {
+    "name": "Description",
+    "type": "text",
+    "value": "Between long rests, a creature can drink a number of units of alcohol equal to its Constitution modifier without any effect. For each unit of alcohol the creature drinks beyond this, the creature must make a Constitution saving throw, calculating the DC using the formula below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Drunkenness saving throw DC** = 10 + number of units of alcohol consumed since last long rest"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "On a failed saving throw, a creature gains one level of drunkenness. Drunkenness is measured in six levels. If an already drunk creature suffers another effect that causes drunkenness, its current level of drunkenness increases by the number of units of alcohol the creature consumed to trigger the saving throw. A creature's drunkenness level is reduced by 1 for each 2 hours since it last drank. Furthermore, finishing a long rest reduces a creature's drunkenness level to 0."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature suffers the effect of its current level of drunkenness as well as all lower levels. For example, a creature suffering level 3 drunkenness has disadvantage on Dexterity, Charisma, and Wisdom checks and saving throws."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Level",
+      "Effect"
+     ],
+     "rows": [
+      [
+       "1",
+       "The creature has advantage on Charisma checks."
+      ],
+      [
+       "2",
+       "The creature has disadvantage on Dexterity checks and saving throws."
+      ],
+      [
+       "3",
+       "The creature loses the effects of level 1 drunkenness, and has disadvantage on Charisma and Wisdom checks and saving throws."
+      ],
+      [
+       "4",
+       "The creature's speed is halved."
+      ],
+      [
+       "5",
+       "The creature is poisoned and retains no memory of events that occur between this point and when they are no longer drunk."
+      ],
+      [
+       "6",
+       "The creature falls unconscious for 1d4 + 8 hours. When it wakes, it is no longer drunk, but doesn't gain the benefits of a long rest, and gains 1 level of exhaustion."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Optional Rule: Hangover",
+    "type": "text",
+    "value": "When a creature loses at least 1 level of drunkenness during or as a result of finishing a long rest, the creature must make a **Constitution saving throw** at the end of the long rest. The DC for this saving throw equals four times the drunkenness level before they started the long rest. A creature that fails this saving throw has a hangover and is poisoned for a number of hours equal to the difference between the result of their saving throw and the DC."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
   "name": "Enfeebled",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/conditionsdiseases.html#enfeebled_monstersofdrakkenheim",
@@ -377,24 +473,14 @@
   "reprint": null
  },
  {
-  "name": "Ennui",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/conditionsdiseases.html#ennui_exploringeberron24",
+  "name": "Flanked",
+  "source": "FleeMortals",
+  "url": "https://5e.tools/conditionsdiseases.html#flanked_fleemortals",
   "description": [
    {
     "name": "Description",
     "type": "text",
-    "value": "Ennui drains motion and memory, reflecting the soul-sapping power of Dolurrh. This special condition is measured in levels, and has the same effects and rules as Exhaustion (as presented in the Rules Glossary of the Player's Handbook), with one exception—Ennui affects all creatures that aren't native to Dolurrh, including Undead and other creatures that have Immunity to Exhaustion. Ennui is separate from Exhaustion, and Exhaustion levels don't stack with Ennui. If a creature has both Ennui and Exhaustion, use whichever condition it has more levels of to determine the effects."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "Undead can't recover from Ennui while in Dolurrh. Whenever a living creature with 2 or more levels of Ennui finishes a Long Rest, if it succeeds against its saving throw against Dolurrh's Inevitable Entrapment property by 5 or more, it reduces its Ennui level by 1. When a creature leaves Dolurrh, all levels of Ennui are removed."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "When a creature reaches 6 levels of Ennui, its will is completely broken and it can take no purposeful action; if this happens to a living creature, its physical body dies and it becomes a husk bound to Dolurrh."
+    "value": "If your game uses the optional flanking rules in the core rules, a creature who is immune to the **flanked** condition can't be flanked regardless of the position of their enemies."
    }
   ],
   "image": null,
