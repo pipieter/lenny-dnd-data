@@ -280,10 +280,21 @@ export class PartneredDatabank extends Databank {
 
         const sources: any[] = data._meta.sources ?? [];
         const partnered = sources.some((source) => source.partnered ?? false);
+        const isClassic = data._meta.edition === 'classic';
 
         if (this.filters.partnered && !partnered) return;
-        if (!this.filters.allowPHB2014 && data._meta.edition === 'classic') return;
-        if (data._meta.status != 'ready' || undefined) return; // TODO add support for non-ready sources
+        if (!this.filters.allowPHB2014 && isClassic) return;
+        // if (data._meta.status != 'ready' || undefined) return; // TODO add support for non-ready sources
+
+        for (const datum of sources) {
+            const source = datum['json'];
+
+            const name = datum['full'] ?? source;
+            const abbreviation = datum['abbreviation'] ?? source;
+            const published = datum['dateReleased'] ?? null;
+            const legacy = isClassic;
+            this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered', legacy };
+        }
 
         const prefixesToIgnore = ['foundry'];
         const keysToIgnore = [
@@ -311,19 +322,6 @@ export class PartneredDatabank extends Databank {
         ];
 
         for (const key of Object.keys(data)) {
-            if (data['_meta']['sources']) {
-                const sourceData = data['_meta']['sources'];
-
-                for (const datum of sourceData) {
-                    const source = datum['json'];
-                    const name = datum['full'] ?? source;
-                    const abbreviation = datum['abbreviation'] ?? source;
-                    const published = datum['dateReleased'] ?? null;
-                    const legacy = sourceData['edition'] === 'classic';
-                    this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered', legacy };
-                }
-            }
-
             if (prefixesToIgnore.some((prefix) => key.startsWith(prefix))) continue;
             if (keysToIgnore.includes(key)) continue;
 
