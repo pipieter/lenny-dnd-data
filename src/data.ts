@@ -15,6 +15,7 @@ import { Deity } from './dnd/deities';
 import { Cult } from './dnd/cults';
 import { Boon } from './dnd/boons';
 import { LifeBackground, LifeClass } from './dnd/life';
+import { rawData } from './5etools-conversion/rawdata';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -171,6 +172,10 @@ export class Databank {
         }
         return sources;
     }
+
+    public getSourceData(sourceId: string): { name: string; displayName: string } {
+        throw 'getSourceData not implemented on this Databank type!';
+    }
 }
 
 export class OfficialDatabank extends Databank {
@@ -227,6 +232,13 @@ export class OfficialDatabank extends Databank {
         this.add('vehicles.json');
         this.addSpellSource('spells/sources.json');
     }
+
+    public getSourceData(sourceId: string): { name: string; displayName: string } {
+        return {
+            name: rawData.getSourceFullName(sourceId),
+            displayName: rawData.getSourceDisplayName(sourceId),
+        };
+    }
 }
 
 export interface PartneredFilters {
@@ -236,6 +248,7 @@ export interface PartneredFilters {
 
 export class PartneredDatabank extends Databank {
     public readonly filters: PartneredFilters;
+    private readonly sourceData: { [key: string]: { name: string; displayName: string } } = {};
 
     private getFullPath(path: string): string {
         return `5etools-homebrew/data/${path}`;
@@ -287,6 +300,16 @@ export class PartneredDatabank extends Databank {
         ];
 
         for (const key of Object.keys(data)) {
+            if (data['_meta']['sources']) {
+                const sourceData = data['_meta']['sources'];
+                for (const datum of sourceData) {
+                    const id = datum['json'];
+                    const name = datum['full'] ?? id;
+                    const displayName = datum['abbreviation'] ?? id;
+                    this.sourceData[id] = { name, displayName };
+                }
+            }
+
             if (prefixesToIgnore.some((prefix) => key.startsWith(prefix))) continue;
             if (keysToIgnore.includes(key)) continue;
 
@@ -352,5 +375,10 @@ export class PartneredDatabank extends Databank {
         this.add('trap/');
         this.add('variantrule/');
         this.add('vehicle/');
+    }
+
+    public getSourceData(sourceId: string): { name: string; displayName: string } {
+        if (this.sourceData[sourceId]) return this.sourceData[sourceId];
+        return { name: sourceId, displayName: sourceId };
     }
 }
