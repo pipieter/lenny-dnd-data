@@ -286,7 +286,7 @@ function parseItem(item: any, data: any): ParsedItem {
     }
 
     // Armor properties, if applicable
-    if (item.ac) {
+    if (item.ac && item.type) {
         if (item.type.includes('LA')) result.properties.push(`AC ${item.ac} + Dex`);
         else if (item.type.includes('MA')) result.properties.push(`AC ${item.ac} + Dex (max 2)`);
         else if (item.type.includes('S')) result.properties.push(`+${item.ac} AC`);

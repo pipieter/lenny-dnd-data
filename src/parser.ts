@@ -702,6 +702,11 @@ function parseTableRow(values: any[] | any): string[] {
 export function parseDescriptionFromTable(description: any): DescriptionTable {
     const title: string = description.caption || '';
 
+    if (description.type === 'tableGroup') {
+        const tables = description.tables.map((table: any) => parseDescriptionFromTable(table).table);
+        return { name: title, type: DescriptionType.table, table: { type: 'table', title, headers: null, rows: tables as any } };
+    }
+
     let headers: string[] | null = null;
     if (description.colLabels) {
         headers = description.colLabels.map(cleanDNDText);
@@ -727,7 +732,7 @@ export function parseDescriptionFromTable(description: any): DescriptionTable {
             )
         );
     }
-
+    
     const rows: string[][] = description.rows.map(parseTableRow);
     const table: Table = { type: 'table', title, headers, rows };
 
@@ -920,6 +925,11 @@ export function parsePrerequisite(prerequisite: any): string | null {
                 const lvl = prerequisite.level.level;
                 const classname = prerequisite.level.class.name;
                 prerequisites.push(`Lv. ${lvl} ${classname}`);
+                break;
+            }
+            case 'race': {
+                const races = prerequisite.race.map((r: any) => {return r.name});
+                prerequisites.push(joinStringsWithOr(races));
                 break;
             }
             default: {

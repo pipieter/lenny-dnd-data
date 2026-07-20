@@ -20,7 +20,7 @@ function addMod_replaceArr(base: any, key: string, entry: any): void {
     for (let i = 0; i < base[key].length; i++) {
         // If replace is given by name
         if (typeof entry.replace === 'string') {
-            if (base[key][i].name === entry.replace) {
+            if (base[key][i] === entry.replace || base[key][i].name === entry.replace) {
                 base[key].splice(i, 1, ...items);
                 return;
             }
@@ -321,6 +321,8 @@ export function handleCopy(base: any, entries: any[]): any {
         return entryName === copyName && entrySource === copySource;
     });
     if (!parent) {
+        copy.name += "#TODO"
+        return copy; // TODO FIX
         throw `Could not find parent for ${copy.name}|${copy.source}`;
     }
 

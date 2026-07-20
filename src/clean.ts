@@ -78,6 +78,12 @@ function $5etools(text: string, noFormat: boolean): string {
     return text;
 }
 
+function ability(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('ability', 2), '$1'); // Uses a modifier, but is generally just the basic calculated one from the score.
+    text = text.replaceAll(pattern('ability', 1), (_, p1) => p1.split(' ').at(-1));
+    return text;
+}
+
 function actSave(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${rawData.getAbilityName(p1)} Saving Throw: `);
@@ -140,6 +146,7 @@ function atk(text: string, noFormat: boolean): string {
         ['{@atk aw}', 'Area Weapon Attack:'],
         ['{@atk ms}', 'Melee Spell Attack:'],
         ['{@atk mw,rw}', 'Melee or Ranged Weapon Attack:'],
+        ['{@atk mw, rw}', 'Melee or Ranged Weapon Attack:'], // TODO more intelligent parsing
         ['{@atk rs}', 'Ranged Spell Attack:'],
         ['{@atk ms,rs}', 'Melee or Ranged Spell Attack:'],
         ['{@atk m,r}', 'Melee or Ranged Attack:'],
@@ -224,6 +231,19 @@ function charoption(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('charoption', 3), '$3');
     text = text.replaceAll(pattern('charoption', 2), '$1');
     text = text.replaceAll(pattern('charoption', 1), '$1');
+    return text;
+}
+
+function cite(text: string, _noFormat: boolean): string {
+    if (_noFormat) {
+        text = text.replaceAll(pattern('cite', 3), '$1');
+        text = text.replaceAll(pattern('cite', 2), '$1');
+        text = text.replaceAll(pattern('cite', 1), '$1');
+    } else {
+        text = text.replaceAll(pattern('cite', 3), '__$1__');
+        text = text.replaceAll(pattern('cite', 2), '__$1__');
+        text = text.replaceAll(pattern('cite', 1), '__$1__');
+    }
     return text;
 }
 
@@ -472,6 +492,7 @@ function language(text: string, _noFormat: boolean): string {
 
 function link(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('link', 2), '[$1]($2)');
+    text = text.replaceAll(pattern('link', 1), '[$1]($1)');
     return text;
 }
 
@@ -689,6 +710,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
     const functions = [
         styles,
         $5etools,
+        ability,
         actSave,
         actSaveFail,
         actSaveFailBy,
@@ -703,6 +725,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         card,
         chance,
         charoption,
+        cite,
         class$,
         classFeature,
         color,
@@ -808,7 +831,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
         );
     }
 
-    // 5e.tools data often contains double spaces.
+    // 5e.tools data often contains double spaces.    
     text = text.replaceAll('  ', ' ');
 
     // Fix Bree-Yarking (normalizes discord italic/bold formatting)
