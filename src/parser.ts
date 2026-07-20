@@ -56,7 +56,7 @@ export interface DescriptionList {
 
 export type Description = DescriptionHr | DescriptionText | DescriptionTable | DescriptionList;
 
-const disallowedSymbols = ['{', '}', '|', '[object Object]'];
+const disallowedSymbols = ['{', '}', '[object Object]'];
 
 export function containsDisallowedSymbols(value: string | List) {
     // String

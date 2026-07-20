@@ -1,5 +1,6 @@
 import {
     Description,
+    DescriptionType,
     parseCastingTime,
     parseComponents,
     parseDescriptionFromTable,
@@ -65,7 +66,8 @@ function getSpellImage(fluffs: any[], name: string, source: string): string | nu
 }
 
 function getSpellDescription(spell: any): Description[] {
-    return []; // TODO, Somewhere in here, undefined is being passed into parseDescriptions
+    // console.log(spell.entries);
+
     const descriptions = parseDescriptions('', spell.entries);
     if (spell.entriesHigherLevel) {
         for (const entry of spell.entriesHigherLevel) {
@@ -74,6 +76,8 @@ function getSpellDescription(spell: any): Description[] {
             // Without relying on entry.name and entry.entries
             if (entry.type === 'table') {
                 descriptions.push(parseDescriptionFromTable(entry));
+            } else if (typeof entry === 'string') {
+                descriptions.push({ name: '', type: DescriptionType.text, value: entry });
             } else {
                 descriptions.push(...parseDescriptions(entry.name, entry.entries));
             }
@@ -106,9 +110,6 @@ function getCasters(spell: any, sources: any[]): any[] {
 }
 
 function getSpell(spell: any, fluffs: any[], sources: any): ParsedSpell {
-    console.log(spell);
-    console.log(fluffs);
-
     return {
         name: spell.name,
         source: spell.source,
@@ -144,7 +145,6 @@ export function getSpells(databank: Databank): ParsedSpell[] {
     const result = [];
     for (const spell of spells) {
         result.push(getSpell(spell, fluffs, sources));
-        console.log('----');
     }
 
     result.sort((a, b) => a.name.localeCompare(b.name));
