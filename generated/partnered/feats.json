@@ -42,130 +42,6 @@
   "reprint": null
  },
  {
-  "name": "Aereni Expertise",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#aereni%20expertise_exploringeberron24",
-  "type": "Origin Feat",
-  "prerequisite": "Elf",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Growing up in Aerenal, you spent decades developing your talent with one particular skill. You gain the following benefits."
-   },
-   {
-    "name": "Skill Proficiency",
-    "type": "text",
-    "value": "You gain proficiency in one skill of your choice."
-   },
-   {
-    "name": "Expertise",
-    "type": "text",
-    "value": "You gain Expertise with the skill you selected for this feat."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Aereni Half-Life",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#aereni%20half-life_exploringeberron24",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and Elf",
-  "abilityIncrease": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You've undergone rituals that bind you to Irian and the Undying Court. Many who undergo this process have a desiccated appearance, similar to a mummy; it's up to you to decide whether you are affected in this way. Regardless of your appearance, you gain the following benefits."
-   },
-   {
-    "name": "Deathless",
-    "type": "text",
-    "value": "You have Advantage on Death Saving Throws."
-   },
-   {
-    "name": "Resistance",
-    "type": "text",
-    "value": "You have Resistance to Necrotic damage and Radiant damage."
-   },
-   {
-    "name": "Radiant Focus",
-    "type": "text",
-    "value": "If you cast a spell that deals Necrotic damage, you can choose to have it inflict Radiant damage instead."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Altered",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#altered_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have been changed through magic, science, or a volatile blend of the two. You have a blatant physical augmentation of your choice from the options below. The augmentation is obvious—such as with stitches, grafts of other creature's body parts, or implants—unless disguised."
-   },
-   {
-    "name": "Aquatic Adaptation",
-    "type": "text",
-    "value": "You have gills or mucus membranes that allow you to breathe water, and you have webbed extremities that grant you a Swim Speed equal to your Speed."
-   },
-   {
-    "name": "Natural Armor",
-    "type": "text",
-    "value": "You have scales, plates, or thick hide that grants you an AC of 13 + your Dexterity or Constitution modifier (choose the ability when you select this feat)."
-   },
-   {
-    "name": "Natural Weapons",
-    "type": "text",
-    "value": "You have claws, fangs, horns, or some other natural weapon that you can use to make Unarmed Strikes that deal **1d8** damage on a hit. The damage is Bludgeoning, Piercing, or Slashing as appropriate to the form."
-   },
-   {
-    "name": "Night Vision",
-    "type": "text",
-    "value": "You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 30 feet."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Aquatic Adaptation",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#aquatic%20adaptation_exploringeberron24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You are able to live underwater. This may be a natural feature of your character if you're playing a Malenti or an Elf from Valraea, or it could be the result of arcane transmutation or a divine blessing. Whatever the origin of this gift, you gain the following benefits."
-   },
-   {
-    "name": "Amphibious",
-    "type": "text",
-    "value": "You can breathe underwater. If you possess the Limited Amphibiousness trait in addition to this feat, this eliminates your dependence on water."
-   },
-   {
-    "name": "Athletic Build",
-    "type": "text",
-    "value": "You gain proficiency in the *Athletics* skill."
-   },
-   {
-    "name": "Natural Swimmer",
-    "type": "text",
-    "value": "You have a Swim Speed equal to your Speed."
-   }
-  ],
-  "reprint": null
- },
- {
   "name": "Blackpowder Pistol Expert",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#blackpowder%20pistol%20expert_grimhollowpg24",
@@ -192,6 +68,34 @@
     "name": "Trick Shot",
     "type": "text",
     "value": "Immediately after a creature within 5 feet of you moves, you can take a Reaction to make a ranged attack with a Blackpowder Pistol against that creature."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blade Barrier",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#blade%20barrier_helianasguidetomonsterhunting",
+  "type": "General Feat",
+  "prerequisite": "Proficiency with {@item twinblades|HelianasGuidetoMonsterHunting}",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your expertise with twinblades allows you to turn your defensive flourish into an offensive strike. When you use the Whirl special bonus action with a twinblade, you gain the following features:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can make one additional melee attack with the weapon. This attack uses the same ability modifier as the primary attack, and the weapon's damage die for this attack is a d4.",
+      "Until the start of your next turn, other creatures provoke an opportunity attack from you when they enter your reach or make a melee attack against you while within your reach."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -526,68 +430,30 @@
   "reprint": null
  },
  {
-  "name": "Changeling Metamorphosis",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#changeling%20metamorphosis_exploringeberron24",
+  "name": "Cat's Caress",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#cat's%20caress_helianasguidetomonsterhunting",
   "type": "General Feat",
-  "prerequisite": "Level 4+ and Changeling",
-  "abilityIncrease": "Increase your Constitution or Dexterity score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Hardened Skin",
-    "type": "text",
-    "value": "You gain a +1 bonus to Armor Class."
-   },
-   {
-    "name": "Metamorphosis",
-    "type": "text",
-    "value": "When you use your Shape-Shifter trait, you may choose one of the following options. You gain the benefits of the chosen option until you use your Shape-Shifter trait again."
-   },
-   {
-    "name": "Aquatic Adaptation",
-    "type": "text",
-    "value": "You sprout gills and grow webs between your fingers. You can breathe underwater and gain a Swim Speed equal to your Speed."
-   },
-   {
-    "name": "Darkvision",
-    "type": "text",
-    "value": "You have __Darkvision__ with a range of 60 feet."
-   },
-   {
-    "name": "Natural Weapons",
-    "type": "text",
-    "value": "You grow claws (Slashing), fangs (Piercing), horns (Piercing), or hooves (Bludgeoning). When you use your Unarmed Strike to deal damage with that new growth, it deals **1d6** damage of the type in parentheses instead of dealing the normal damage for your Unarmed Strike, and you can choose to use your Dexterity modifier for the attack and damage rolls rather than using Strength."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Charm Twister",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#charm%20twister_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
+  "prerequisite": "Proficiency with {@item claw|HelianasGuidetoMonsterHunting}",
   "abilityIncrease": null,
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "You know hedge remedies and hexes passed down through Old Ways teachings, and you can impart them into small wicker charms you weave. You gain the following benefits."
+    "value": "Manipulating your bladed digits with preternatural delicacy, you can switch from exsanguinating slash to soft caress with a deft flick."
    },
    {
-    "name": "Old Blessing",
-    "type": "text",
-    "value": "You can cast the __Bless__ spell once using this benefit, targeting only creatures carrying a wicker charm you've woven, and you can't do so again until you finish a Long Rest. You can also cast the spell using any spell slots you have. Your spellcasting ability for casting the spell in this way is Intelligence, Wisdom, or Charisma (choose the ability when you select this feat)."
-   },
-   {
-    "name": "Twisted Hex",
-    "type": "text",
-    "value": "As a Magic action, you can weave spite into a wicker charm you touch. Choose an ability. When another creature is carrying the charm, or while this charm is within an area that the creature considers home, it has Disadvantage on ability checks and attack rolls using the chosen ability. When the creature fails one of these rolls, it can make a Charisma saving throw, destroying the charm on a success (DC = 8 plus your Proficiency Bonus and the ability modifier you chose for Old Blessing). You can only have one Twisted Hex charm at a time. If you make a new one, the previous one loses its magic."
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "After you take the Attack action using a claw in one hand, you can use a bonus action to make up to two melee attacks with a different claw that you're holding in the other hand. You don't add your ability modifier to the damage of the bonus attack(s), unless that modifier is negative, or you have the two-weapon Fighting Style.",
+      "You have advantage to hit a target you are grappling with an attack using a claw.",
+      "You can equip or unequip either a single or a pair of claws using either a bonus action or action."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -650,89 +516,6 @@
   "reprint": null
  },
  {
-  "name": "Crimson Ritualist",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#crimson%20ritualist_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Your study of blood magic and life force has borne fruit, granting you the following benefits."
-   },
-   {
-    "name": "Blood Lash",
-    "type": "text",
-    "value": "You learn the __Blood Bolt__ cantrip. Your spellcasting ability for it is Intelligence, Wisdom, or Charisma (choose the ability when you select this feat)."
-   },
-   {
-    "name": "Bottled Life",
-    "type": "text",
-    "value": "When you finish a Long Rest, you can perform a 1-minute ritual to transfer some of your life essence into a vessel for later use. Expend a number of Hit Point Dice up to your Proficiency Bonus, and bleed into a vial of water or other liquid. As a Bonus Action, a creature can drink the vial to roll the Hit Dice you expended. The creature regains a number of Hit Points equal to the total rolled plus its Constitution modifier. The vial remains potent until you finish a Long Rest."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Cult Initiate",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#cult%20initiate_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Your cult instructs you in eldritch rites, granting you the following benefits."
-   },
-   {
-    "name": "Two Cantrips",
-    "type": "text",
-    "value": "You learn two cantrips of your choice from the Warlock spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose the ability when you select this feat)."
-   },
-   {
-    "name": "Level 1 Spell",
-    "type": "text",
-    "value": "Choose a level 1 spell from the Warlock spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Short or Long Rest. You can also cast the spell using any spell slots you have."
-   },
-   {
-    "name": "Spell Change",
-    "type": "text",
-    "value": "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the Warlock spell list."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Death Defier",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#death%20defier_crookedmoon24",
-  "type": "General Feat",
-  "prerequisite": "Level 4+",
-  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "When the hand of death reaches for your soul, you have found a way to reject its call. You gain the following benefits."
-   },
-   {
-    "name": "Cling to Life",
-    "type": "text",
-    "value": "You add your Constitution modifier (minimum of 1) to Death Saving Throws."
-   },
-   {
-    "name": "Enduring Vitality",
-    "type": "text",
-    "value": "If an effect would kill you outright without Death Saving Throws or would reduce you directly to 0 Hit Points without dealing damage, you are instead reduced to a number of Hit Points equal to your level. You can't use this benefit again until you finish a Long Rest."
-   }
-  ],
-  "reprint": null
- },
- {
   "name": "Deathbound",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#deathbound_grimhollowpg24",
@@ -759,32 +542,6 @@
   "reprint": null
  },
  {
-  "name": "Dread Speech",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#dread%20speech_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have articulated a few words of forbidden truth that resonate with—and fray—the fabric of creation, granting you the following benefits."
-   },
-   {
-    "name": "Eldritch Word",
-    "type": "text",
-    "value": "As a Bonus Action, you can speak a magical word aloud to force a creature within 60 feet of yourself to make a Wisdom saving throw (DC = 8 plus your Proficiency Bonus and Intelligence, Wisdom, or Charisma modifier; choose the ability when you select this feat). On a failed save, the target has the Frightened condition until the start of your next turn. You can use this benefit safely once, and you regain the ability to do so when you finish a Short or Long Rest. You can use it again before resting, but you take **1d6** Necrotic damage, which can't be reduced or prevented in any way."
-   },
-   {
-    "name": "Shred Fate",
-    "type": "text",
-    "value": "Your dread secrets can unravel the destiny of your foes. You always have the __Bane__ spell prepared, and your spellcasting ability for it is the ability you chose for Eldritch Word. You can cast it once without Material components or a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have."
-   }
-  ],
-  "reprint": null
- },
- {
   "name": "Dual Shot",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#dual%20shot_grimhollowpg24",
@@ -801,37 +558,6 @@
     "name": "Dual Shot",
     "type": "text",
     "value": "When you take the Attack action on your turn and attack with a bow or crossbow, you can make one extra attack as part of the same action against a creature that is within 10 feet of the original target that is within the weapon's range. If you do so, both attacks are made with Disadvantage."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Envoy Specialist",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#envoy%20specialist_exploringeberron24",
-  "type": "Origin Feat",
-  "prerequisite": "Warforged",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Envoy Competence",
-    "type": "text",
-    "value": "You gain proficiency with one tool of your choice."
-   },
-   {
-    "name": "Integrated Tool",
-    "type": "text",
-    "value": "Choose one tool you are proficient with. You have a working model of this tool integrated into your body, which can't be removed. As long as you have a hand free, you can make use of the integrated tool."
-   },
-   {
-    "name": "Innate Talent",
-    "type": "text",
-    "value": "When you make an ability check with the integrated tool, you can roll 1d4 and add the number rolled to the ability check."
    }
   ],
   "reprint": null
@@ -863,94 +589,117 @@
   "reprint": null
  },
  {
-  "name": "Fate Gambler",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#fate%20gambler_crookedmoon24",
-  "type": "Origin Feat",
+  "name": "Expert Enchanter",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#expert%20enchanter_helianasguidetomonsterhunting",
+  "type": "Craft",
   "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Coming out ahead, whether in games of chance or in life-or-death contention, fills you with resolve and vigor. You gain the following benefits."
-   },
-   {
-    "name": "Bet Big",
-    "type": "text",
-    "value": "If you don't already have it, you gain Heroic Inspiration whenever you succeed on an ability check made against another creature, when you reduce a creature to 0 Hit Points, or when a creature fails a saving throw you forced it to make. If, in any of these cases, the creature has a CR of 0 or lacks a CR (such as another player character), you don't gain Heroic Inspiration."
-   },
-   {
-    "name": "Win Big",
-    "type": "text",
-    "value": "As a Bonus Action, you can expend your Heroic Inspiration to gain a number of Temporary Hit Points equal to your level."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Fey Pact",
-  "source": "DnDBeyondDrops",
-  "url": "https://5e.tools/feats.html#fey%20pact_dndbeyonddrops",
-  "type": "Planar Pact",
-  "prerequisite": "Can't Have Another Planar Pact Feat",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Fey Bond",
-    "type": "text",
-    "value": "You know Sylvan. If you already know Sylvan when you select this feat, you instead learn one language of your choice from the language tables in the Player's Handbook. You also gain Proficiency in the *Nature* skill."
-   },
-   {
-    "name": "Fey Cantrips",
-    "type": "text",
-    "value": "You know the __Druidcraft__ cantrip and learn one other cantrip of your choice from the Divination or Enchantment school of magic. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this feat)."
-   },
-   {
-    "name": "Honeyed Words",
-    "type": "text",
-    "value": "When you roll a 5 or lower on the d20 for a Charisma (*Deception*) or Charisma (*Persuasion*) check, you can take a Reaction to reroll the check, and you must use the new roll. Once you take this Reaction, you can't use this benefit again until you finish a Long Rest."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Fey Sentinel",
-  "source": "DnDBeyondDrops",
-  "url": "https://5e.tools/feats.html#fey%20sentinel_dndbeyonddrops",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and Fey Pact",
   "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Fading Target",
-    "type": "text",
-    "value": "When an enemy misses you with an attack roll, you can take a Reaction to gain the Invisible condition until the start of your next turn or until immediately after you make an attack roll, deal damage, or cast a spell. Once you use this benefit, you can't do so again until you finish a Long Rest."
-   },
-   {
-    "name": "Fey Shift",
-    "type": "text",
-    "value": "When you take the Dash action, you can forgo the extra movement to teleport to an unoccupied space you can see within a distance equal to half your Speed instead."
-   },
-   {
-    "name": "Nature's Roots",
-    "type": "text",
-    "value": "You always have the __Entangle__ spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast it using any spell slots you have. The spell's spellcasting ability is the ability increased by this feat."
+    "value": "You manipulate magical essence with a quick and subtle touch."
    },
    {
     "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make an Enchanting check with a skill with which you are proficient, your proficiency bonus is doubled.",
+      "When you roll for enchanting quirks, you can apply a bonus or penalty to the result of the roll equal to half your proficiency bonus.",
+      "Each hour you spend enchanting an item counts as 2 hours towards the item's completion."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Expert Forger",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#expert%20forger_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Strength, Dexterity or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
     "type": "text",
-    "value": "When you reach character level 5, you also always have the __Plant Growth__ spell prepared and can cast it the same way."
+    "value": "An expert with your chosen tools, you can subtly alter an item's final form."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make a Manufacturing check with a tool with which you are proficient, your proficiency bonus is doubled.",
+      "When you forge an item and roll for enchanting and/or manufacturing quirks, you can apply a bonus or penalty to the result of the roll equal to half your proficiency bonus.",
+      "Each hour you spend forging an item counts as 2 hours towards the item's completion."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Expert Harvester",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#expert%20harvester_helianasguidetomonsterhunting",
+  "type": "Harvest",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Dexterity or Intelligence score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have a knack for retrieving exceptional components from the gnarliest of corpses."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make a Harvesting check using a skill with which you are proficient, your proficiency bonus is doubled.",
+      "When you attempt to harvest a creature for which you don't have the required skill proficiency, you can add your proficiency bonus to the result of the roll.",
+      "If you are helping with a Harvesting check, you add your full proficiency bonus to the check's result, regardless of whether you're proficient in the requisite skill.",
+      "You do not suffer disadvantage on your Harvesting checks as a result of choosing to perform both the Assessment and Carving checks alone."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Fearsome Flourisher",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#fearsome%20flourisher_helianasguidetomonsterhunting",
+  "type": "General Feat",
+  "prerequisite": "Proficiency with {@item nunchaku|HelianasGuidetoMonsterHunting}",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your deadly speed with nunchaku can strike fear into your foes."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you take the Attack action and attack with a nunchaku, you can use a bonus action to make one additional melee attack with the weapon. This attack uses the same ability modifier as the primary attack and the weapon's damage die for this attack is a d4.",
+      "When you take the Flourish special action with a nunchaku, you can use a bonus action to make it especially intimidating towards one creature within your reach. If you don't fail on your Dexterity check to flourish the weapon, your target must succeed on a Wisdom saving throw or become frightened of you until the start of your next turn. The DC for the saving throw equals 8 + your Dexterity modifier. If you are proficient in the Intimidation skill, you can add your proficiency bonus to the DC."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -977,6 +726,36 @@
     "name": "Tight Formation",
     "type": "text",
     "value": "While you are within 5 feet of two or more allies that don't have the Incapacitated condition, enemies can't have Advantage on attack rolls against you."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Field Cook",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#field%20cook_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Able to whip up a tasty meal from the barest ingredients, your meals fuel the resolve of the most stalwart adventurers."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency with cook's utensils.",
+      "You can replace one type of ingredient in a recipe with any other ingredient type.",
+      "Before rolling for quirks, you can choose to replace one roll on the boon table with inspiration, granting inspiration to each creature that consumes at least one portion of your meal.",
+      "After rolling for quirks, you can remove one flaw of your choice, or add a boon to the dish by rolling on the boons table (your choice)."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -1024,32 +803,30 @@
   "reprint": null
  },
  {
-  "name": "Focused Personas",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#focused%20personas_exploringeberron24",
-  "type": "Origin Feat",
-  "prerequisite": "Changeling",
-  "abilityIncrease": null,
+  "name": "Forgemaster",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#forgemaster_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": "Expert Forger",
+  "abilityIncrease": "Increase your Strength, Dexterity or Constitution score by 1, to a maximum of 20.",
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "You've developed personas that help you focus your talents. Work with your DM to define two unique personas—identities with distinct appearances and personalities. You gain the following benefits."
+    "value": "Your deftness with your tools of choice is unparalleled."
    },
    {
-    "name": "Adept Persona",
-    "type": "text",
-    "value": "Choose a tool and define a persona associated with it. Whenever you use your Shape-Shifter trait to assume the persona, you gain proficiency with the chosen tool and when you make an ability check with the chosen tool, you can roll 1d4 and add the number rolled to the ability check."
-   },
-   {
-    "name": "Expert Persona",
-    "type": "text",
-    "value": "Choose a skill you are proficient in and define a different persona associated with it. Whenever you use your Shape-Shifter trait to assume the persona, you gain Expertise in the chosen skill."
-   },
-   {
-    "name": "Skin Cant",
-    "type": "text",
-    "value": "You are fluent in Skin Cant (ExploringEberron24), a language used by the Changeling Travelers."
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make a Manufacturing check with a tool with which you are proficient, you have advantage on the roll.",
+      "You gain proficiency with 2 tools of your choice.",
+      "Each hour you spend forging an item counts as 3 hours towards the item's completion."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -1112,94 +889,6 @@
   "reprint": null
  },
  {
-  "name": "Ghostlight Medium",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#ghostlight%20medium_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You formed a mystical connection to the Ghostlight Express that affords you insight into the nature of spirits, granting the following benefits."
-   },
-   {
-    "name": "Ghostly Touch",
-    "type": "text",
-    "value": "When you damage a creature with the Incorporeal Movement trait, you can ignore the creature's damage Resistances, if any."
-   },
-   {
-    "name": "Spirit Sense",
-    "type": "text",
-    "value": "As a Bonus Action, you can sense any Undead within 60 feet of you, or any creatures in the Ethereal Plane that overlaps that area. You learn the distance and direction to any creatures you detect (or an Ethereal creature's equivalent position on your plane). Once you detect a creature with this benefit, you can't use it again until you finish a Short or Long Rest."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Grave Keeper",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#grave%20keeper_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Studying funeral rites and tending the dead's rest has made you a conduit between the worlds of the living and the dead. You gain the following benefits."
-   },
-   {
-    "name": "Divine Channel",
-    "type": "text",
-    "value": "You gain one use of the Channel Divinity feature from the Cleric class, and you can create the Turn Undead effect with it. If you already have Channel Divinity, you add this use to the feature from one class of your choice. Your save DC for this benefit is 8 plus your Wisdom modifier and Proficiency Bonus."
-   },
-   {
-    "name": "Last Rites",
-    "type": "text",
-    "value": "You can enact a 10-minute ritual to prepare the corpse of a Medium or smaller creature, expending at least 10 GP worth of incense, oils, linen wraps, or similar trappings. The prepared corpse can't become Undead."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Gun-Mage Adept",
-  "source": "ValdaGunslinger",
-  "url": "https://5e.tools/feats.html#gun-mage%20adept_valdagunslinger",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and Spellcasting or Pact Magic Feature",
-  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Ranged Weapon Proficiency",
-    "type": "text",
-    "value": "You gain proficiency with Ranged Martial weapons."
-   },
-   {
-    "name": "Cantrip",
-    "type": "text",
-    "value": "You learn the __Finger Guns__ cantrip."
-   },
-   {
-    "name": "Expanded Spell List",
-    "type": "text",
-    "value": "The following spells are added to your spell list: __Antiballistics Field__, __Ballistic Smite__, __Conjure Cannonball__, __Conjure Cover__, __Jam Weapon__, __Jethro's Instant Reload__, and __Perforating Shot__."
-   },
-   {
-    "name": "Spells Prepared",
-    "type": "text",
-    "value": "Choose a number of spells equal to your Proficiency Bonus from among those in the Expanded Spell List benefit. You always have these spells prepared. Whenever you gain a new level, you can replace one of these spells with a different spell from the Expanded Spell List."
-   }
-  ],
-  "reprint": null
- },
- {
   "name": "Hulking Figure",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#hulking%20figure_grimhollowpg24",
@@ -1226,300 +915,6 @@
     "name": "Powerful",
     "type": "text",
     "value": "You count as one size larger (to a maximum size of Large) when determining your carrying capacity."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Hunter of Hunters",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#hunter%20of%20hunters_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You are adept at hunting monstrous prey, granting you the following benefits."
-   },
-   {
-    "name": "Dead Aim",
-    "type": "text",
-    "value": "As a Bonus Action, you can scrutinize a creature to spot its vulnerable points. The next time you deal damage to the creature before the start of your next turn, you ignore the creature's damage Resistances, if any."
-   },
-   {
-    "name": "Studied Quarry",
-    "type": "text",
-    "value": "You have Advantage on ability checks made to recall information about a creature."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "I Fought, I Lived",
-  "source": "CthulhuTorchlight",
-  "url": "https://5e.tools/feats.html#i%20fought%2C%20i%20lived_cthulhutorchlight",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You confronted a horror from beyond this world or spawned by terrible magic. It disregarded you as a puny mortal, but it learned its mistake the hard way when you sent it back to wherever it came from with good, old-fashioned muscle, courage, and a really, really large axe."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Defiant Strike",
-    "type": "text",
-    "value": "While you are *Bloodied* and hit with a spell or weapon attack, you can choose to treat the attack's damage roll as having rolled the maximum damage possible. Once you use this benefit, you can't use it again until you finish a Long Rest."
-   },
-   {
-    "name": "Indomitable Heart",
-    "type": "text",
-    "value": "If you have the Frightened condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "I Hid from the Terror",
-  "source": "CthulhuTorchlight",
-  "url": "https://5e.tools/feats.html#i%20hid%20from%20the%20terror_cthulhutorchlight",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "That night is a blur. A strange presence, an overwhelming terror, and a confused jumble of screams mixed with faint memories of something terrible and hungry. You hid from it, finding a place too small for it to reach. The sounds of that night, and the awful aftermath you found that morning, will remain with you to the end of your days and beyond."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Shadowed Strike",
-    "type": "text",
-    "value": "If attacking would end the Invisible condition on you, you can make an attack and keep that condition. You can use this benefit a number of times equal to your Proficiency Bonus. You regain expended uses when you finish a Long Rest."
-   },
-   {
-    "name": "Beneath Notice",
-    "type": "text",
-    "value": "When you attempt to hide from a creature that is larger than you, you can hide if you are lightly obscured or more than 30 feet away from it. You gain the benefits of being hidden against such creatures, but you do not hide from other creatures."
-   },
-   {
-    "name": "Merge into Shadows",
-    "type": "text",
-    "value": "Wisdom (*Perception*) checks made to detect you while you have the Invisible condition have Disadvantage."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "I Opened the Gate",
-  "source": "CthulhuTorchlight",
-  "url": "https://5e.tools/feats.html#i%20opened%20the%20gate_cthulhutorchlight",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You didn't mean for things to turn out this way. You were curious and perhaps ignored a few signs, but it's hard to take ancient curses seriously. Musty old books say a lot of things, and most of them turn out to be mere fables. Most of them. The one book you read turned out to be the key to unleashing some ancient evil. Now it's in the world, and it's up to you to find it and send it back."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Delver into Forgotten Lore",
-    "type": "text",
-    "value": "You learn three languages of your choice."
-   },
-   {
-    "name": "Foul Arcana",
-    "type": "text",
-    "value": "You can tap into a brief glimpse of the mythos to empower a spell, at the cost of overwhelming your mind with a horrifying, cosmic insight. When you cast a spell, you can give that spell's save DC a +2 bonus but you have the Paralyzed condition until the start of your next turn. You can use this benefit a number of times equal to your Proficiency Bonus. You regain expended uses when you finish a Long Rest."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "I Pierced the Illusion",
-  "source": "CthulhuTorchlight",
-  "url": "https://5e.tools/feats.html#i%20pierced%20the%20illusion_cthulhutorchlight",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You came across something strange and awful, made all the more terrible by its hidden nature. A town might have seemed innocent until it dragged unwitting visitors to their carefully tended sacrificial garden, or the family that took you in on a dark, stormy night were actually hungry cannibals. You survived because you saw their disguise and escaped or struck first."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Clear Senses",
-    "type": "text",
-    "value": "If you have the Charmed condition at the start of your turn, roll a d20. On a 10 or higher, you no longer have that condition."
-   },
-   {
-    "name": "Ear for Falsehood",
-    "type": "text",
-    "value": "When an NPC speaks to you, you can use this ability to determine if they are lying. You learn nothing about the truth they conceal or why they are lying, simply that there is a knowing falsehood in their statement. You can use this benefit a number of times equal to your Proficiency Bonus. You regain expended uses when you finish a Long Rest."
-   },
-   {
-    "name": "Subtle Interrogation",
-    "type": "text",
-    "value": "You have Advantage on Insight checks made against creatures that you are speaking with."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "I Survived to Tell the Tale",
-  "source": "CthulhuTorchlight",
-  "url": "https://5e.tools/feats.html#i%20survived%20to%20tell%20the%20tale_cthulhutorchlight",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You encountered something dreadful, a horrible creature or bizarre ritual that set you down the path to becoming an investigator of the strange. Your quick feet and instinct for survival carried you through that day and are your best assets."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Instinct to Survive",
-    "type": "text",
-    "value": "When you take damage that would reduce you to 0 Hit Points, you can immediately regain Hit Points equal to your level. When you use this benefit, you cannot use it again until you finish a Long Rest."
-   },
-   {
-    "name": "Superior Speed",
-    "type": "text",
-    "value": "You gain a +10 bonus to Speed."
-   },
-   {
-    "name": "Wriggle Free",
-    "type": "text",
-    "value": "If you would gain the Grappled condition, roll a d20. On a 10 or higher, you instead do not gain it."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Infernal Bulwark",
-  "source": "DnDBeyondDrops",
-  "url": "https://5e.tools/feats.html#infernal%20bulwark_dndbeyonddrops",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and Infernal Pact",
-  "abilityIncrease": "Increase your Constitution or Charisma score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Devil's Flesh",
-    "type": "text",
-    "value": "Your skin thickens and assumes a scaled, leathery texture. While you aren't wearing armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity modifier plus the modifier of the ability increased by this feat."
-   },
-   {
-    "name": "Infernal Protection",
-    "type": "text",
-    "value": "You always have the __Armor of Agathys__ spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. When you cast it without a spell slot using this feature, you cast this spell as its level 2 version, and it deals Fire damage instead of Cold damage. You can also cast the spell using any spell slots you have of the appropriate level. Charisma is your spellcasting ability for this spell."
-   },
-   {
-    "name": "Vengeful Surge",
-    "type": "text",
-    "value": "Whenever a creature you can see within 60 feet of yourself forces you to make a saving throw and you succeed, you can take a Reaction to deal **1d10** Fire damage to that creature."
-   },
-   {
-    "name": "",
-    "type": "text",
-    "value": "You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Infernal Dragoon",
-  "source": "DnDBeyondDrops",
-  "url": "https://5e.tools/feats.html#infernal%20dragoon_dndbeyonddrops",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and Infernal Pact",
-  "abilityIncrease": "Increase your Constitution or Charisma score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Devilish Aura",
-    "type": "text",
-    "value": "Your close association with diabolic powers unsettles others. You can take a Magic action to manifest an aura of fear in a 30-foot Emanation originating from yourself. Each creature of your choice in that area makes a Charisma saving throw (DC 8 plus the modifier of the ability increased by this feat plus your Proficiency Bonus). On a failed save, it has the Frightened condition until the end of its next turn. On a successful save, a creature is unaffected, and it is immune to this ability for 24 hours."
-   },
-   {
-    "name": "Devil's Favor",
-    "type": "text",
-    "value": "You can call on your infernal patron to aid you. When you make a D20 Test, you can add a +2 bonus to the roll. Once you use this benefit, you can't do so again until you finish a Long Rest."
-   },
-   {
-    "name": "Diabolic Empowerment",
-    "type": "text",
-    "value": "You always have the __Magic Weapon__ spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. When you cast it without a spell slot using this feature, the spell's duration becomes 8 hours for that casting. You can also cast the spell using any spell slots you have of the appropriate level. Charisma is your spellcasting ability for this spell."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Infernal Pact",
-  "source": "DnDBeyondDrops",
-  "url": "https://5e.tools/feats.html#infernal%20pact_dndbeyonddrops",
-  "type": "Planar Pact",
-  "prerequisite": "Can't Have Another Planar Pact Feat",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Infernal Resistance",
-    "type": "text",
-    "value": "You have Resistance to Fire damage and Poison damage."
-   },
-   {
-    "name": "Infernal Sight",
-    "type": "text",
-    "value": "You can see normally in Dim Light and Darkness—both magical and nonmagical—within 60 feet of yourself."
-   },
-   {
-    "name": "Silver-Tongued",
-    "type": "text",
-    "value": "You gain proficiency in the *Deception* skill."
    }
   ],
   "reprint": null
@@ -1583,37 +978,6 @@
  },
  {
   "name": "Iron Hero",
-  "source": "ValdaGunslinger",
-  "url": "https://5e.tools/feats.html#iron%20hero_valdagunslinger",
-  "type": "General Feat",
-  "prerequisite": "Level 4+",
-  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Underdog's Resolve",
-    "type": "text",
-    "value": "When you are attacked by a creature that has a CR higher than your character level, you gain a +2 bonus to your Armor Class for that attack."
-   },
-   {
-    "name": "Vengeful Strike",
-    "type": "text",
-    "value": "You have Advantage on attack rolls against any creature that has reduced one of your allies to 0 Hit Points since the end of your last turn."
-   },
-   {
-    "name": "Heroic Intervention",
-    "type": "text",
-    "value": "When an enemy you can see takes a Legendary Action, you can take a Reaction to intercede, preventing the Legendary Action from happening. You can take this Reaction a number of times equal to your Proficiency Bonus and regain all expended uses when you finish a Short or Long Rest."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Iron Hero",
   "source": "ValdaPlayerPack",
   "url": "https://5e.tools/feats.html#iron%20hero_valdaplayerpack",
   "type": "General Feat",
@@ -1644,58 +1008,30 @@
   "reprint": null
  },
  {
-  "name": "Juggernaut Plating",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#juggernaut%20plating_exploringeberron24",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and Warforged",
-  "abilityIncrease": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
+  "name": "Jack of All Tools",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#jack%20of%20all%20tools_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": null,
+  "abilityIncrease": "Increase your Strength, Dexterity or Constitution score by 1, to a maximum of 20.",
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "You gain the following benefits."
+    "value": "You learn to wield tools with precision and efficiency, improvising where necessary."
    },
-   {
-    "name": "Resilient Armor",
-    "type": "text",
-    "value": "While you remain alive, armor you have donned can't be targeted by any effect (such as the __Heat Metal__ spell or the antennae of a rust monster) against your will."
-   },
-   {
-    "name": "Adamantine Body",
-    "type": "text",
-    "value": "Any Critical Hit against you becomes a normal hit."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Khesh'dar Training",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#khesh'dar%20training_exploringeberron24",
-  "type": "Origin Feat",
-  "prerequisite": "Dhakaani Ghaal'dar (Hobgoblin), Dhakaani Golin'dar (Goblin) or Dhakaani Guul'dar (Bugbear)",
-  "abilityIncrease": null,
-  "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Swift and Silent",
-    "type": "text",
-    "value": "You gain proficiency in the *Stealth* skill."
-   },
-   {
-    "name": "Master of Shadows",
-    "type": "text",
-    "value": "You gain Expertise with the *Stealth* skill."
-   },
-   {
-    "name": "Fade Away",
-    "type": "text",
-    "value": "When you take the Hide action, the DC for a successful check is reduced to 10. All other restrictions still apply."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency with 3 tools of your choice.",
+      "When you make a Manufacturing check using a tool with which you are not proficient, you can add half your proficiency bonus instead, and do not suffer any disadvantage due to not having proficiency with the tool.",
+      "Each hour you spend manufacturing an item counts as 2 hours towards the item's completion."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -1727,32 +1063,6 @@
   "reprint": null
  },
  {
-  "name": "Marksman's Luck",
-  "source": "ValdaGunslinger",
-  "url": "https://5e.tools/feats.html#marksman's%20luck_valdagunslinger",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and 13 Dexterity",
-  "abilityIncrease": "Increase your Dexterity score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Flip Die",
-    "type": "text",
-    "value": "Once per turn, when you roll for damage with a Ranged weapon, you can flip one of the damage dice over and use the number on the bottom. You can't use this ability on d4s. Note that for a balanced die, the top and bottom numbers add up to one more than the die's largest number."
-   },
-   {
-    "name": "Enhanced Critical",
-    "type": "text",
-    "value": "When you score a Critical Hit with a Ranged weapon, the target's Speed is 0 until the end of its next turn."
-   }
-  ],
-  "reprint": null
- },
- {
   "name": "Medician of the Morbus Doctore",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#medician%20of%20the%20morbus%20doctore_grimhollowpg24",
@@ -1779,32 +1089,6 @@
     "name": "",
     "type": "text",
     "value": "Alternatively, you can cure one Grievous Wound affecting the creature."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Memory Starved",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#memory%20starved_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "Your mind ravenously gathers details and desperately clings to its memories and faculties, granting you the following benefits."
-   },
-   {
-    "name": "Desperate Detail",
-    "type": "text",
-    "value": "You have Advantage on Intelligence (*Investigation*) checks."
-   },
-   {
-    "name": "Iron Mind",
-    "type": "text",
-    "value": "You have Advantage on saving throws made to avoid or end the Charmed condition and to avoid having your memories read or altered."
    }
   ],
   "reprint": null
@@ -1880,22 +1164,6 @@
   "reprint": null
  },
  {
-  "name": "Pack Fighting",
-  "source": "DnDBeyondDrops",
-  "url": "https://5e.tools/feats.html#pack%20fighting_dndbeyonddrops",
-  "type": "Fighting Style",
-  "prerequisite": "Fighting Style",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "When you make a melee attack with a weapon or an Unarmed Strike against a creature, you gain a +1 bonus to the damage roll if at least one of your allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition. If at least one ally within 5 feet of the creature also has this feat and doesn't have the Incapacitated condition, this bonus increases to +2."
-   }
-  ],
-  "reprint": null
- },
- {
   "name": "Prone Defense",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#prone%20defense_grimhollowpg24",
@@ -1922,88 +1190,29 @@
   "reprint": null
  },
  {
-  "name": "Prone Fighting",
-  "source": "DnDBeyondDrops",
-  "url": "https://5e.tools/feats.html#prone%20fighting_dndbeyonddrops",
-  "type": "Fighting Style",
-  "prerequisite": "Fighting Style",
-  "abilityIncrease": null,
+  "name": "Reapmaster",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#reapmaster_helianasguidetomonsterhunting",
+  "type": "Harvest",
+  "prerequisite": "Expert Harvester",
+  "abilityIncrease": "Increase your Dexterity or Intelligence score by 1, to a maximum of 20.",
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "While you have the Prone condition, you don't have Disadvantage due to the Prone condition on attack rolls, and the Prone condition doesn't grant Advantage on attack rolls made against you."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Quori Bond",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#quori%20bond_exploringeberron24",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and Kalashtar",
-  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You possess a particularly strong bond with your quori spirit. You gain the following benefits."
-   },
-   {
-    "name": "Quori Lineage",
-    "type": "text",
-    "value": "Choose a lineage from the Quori Lineages table. Your choice affects the Skill and Spell sections detailed below."
+    "value": "Few hunters can match your knowledge and skill in obtaining pristine components."
    },
    {
     "name": "",
-    "type": "text",
-    "value": "** when cast using this feat, __Shatter__ deals Psychic damage*"
-   },
-   {
-    "name": "",
-    "type": "table",
-    "table": {
-     "type": "table",
-     "title": "",
-     "headers": [
-      "Quori",
-      "Skill",
-      "Spell"
-     ],
-     "rows": [
-      [
-       "Du'ulora",
-       "Intimidation",
-       "Crown of Madness"
-      ],
-      [
-       "Hashataq",
-       "Persuasion",
-       "Suggestion"
-      ],
-      [
-       "Kalaraq",
-       "Perception",
-       "Mind Spike"
-      ],
-      [
-       "Tsucora",
-       "Intimidation",
-       "Shatter*"
-      ]
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You gain proficiency in one skill from the following options: Arcana, Investigation, Medicine, Nature, Religion, or Survival.",
+      "When you make a Harvesting check using a skill with which you are proficient, you have advantage on the roll."
      ]
     }
-   },
-   {
-    "name": "Skill",
-    "type": "text",
-    "value": "When you make an ability check with the skill associated with your quori lineage, you can roll 1d4 and add the number rolled to the ability check."
-   },
-   {
-    "name": "Spell",
-    "type": "text",
-    "value": "You always have the spell associated with your quori lineage prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat."
    }
   ],
   "reprint": null
@@ -2035,32 +1244,6 @@
   "reprint": null
  },
  {
-  "name": "Reveling Fool",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#reveling%20fool_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You joined a troupe of madcap revelers and learned to take on the guise of a fool, channeling otherworldly laughter and joviality. You gain the following benefits."
-   },
-   {
-    "name": "Fool's Mask",
-    "type": "text",
-    "value": "By donning a jovial mask and a fool's, jester's, or clown's costume, you take on a new identity that hides your own. In the guise of the fool, you can get away with minor transgressions against people in positions of authority or station."
-   },
-   {
-    "name": "Jester's Repartee",
-    "type": "text",
-    "value": "You always have the __Tasha's Hideous Laughter__ spell prepared, and your spellcasting ability for it is Intelligence, Wisdom, or Charisma (choose the ability when you select this feat). You can cast it once without Material components or a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have."
-   }
-  ],
-  "reprint": null
- },
- {
   "name": "Sangromantic Initiate",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#sangromantic%20initiate_grimhollowpg24",
@@ -2082,6 +1265,34 @@
     "name": "Sanguine Potency",
     "type": "text",
     "value": "You have a pool of two d12s that you can expend instead of Hit Point Dice when you cast Sangromancy spells. Your pool regains all expended dice when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Scourge Master",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#scourge%20master_helianasguidetomonsterhunting",
+  "type": "General Feat",
+  "prerequisite": "Proficiency with {@item whip|PHB} or {@item tetherhooks|HelianasGuidetoMonsterHunting}",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your skill with whips and tetherhooks allows you to manipulate items at a distance."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you hit a creature with an attack using a tetherhooks or whip, you can use a bonus action to attempt to disarm the creature of a shield, or of one item it is holding. Make a Strength or Dexterity check (your choice) contested by the target's Strength check. If you succeed, the item is dropped on the ground midway between you and the creature.",
+      "You can use your whip or tetherhooks to grab items weighing less than 1 lb within the reach of your weapon, pulling them back to your person."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -2144,53 +1355,31 @@
   "reprint": null
  },
  {
-  "name": "Shifting Combatant",
-  "source": "DnDBeyondDrops",
-  "url": "https://5e.tools/feats.html#shifting%20combatant_dndbeyonddrops",
+  "name": "Spray 'n' Pray",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#spray%20'n'%20pray_helianasguidetomonsterhunting",
   "type": "General Feat",
-  "prerequisite": "Level 4+ and Weapon Mastery",
-  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "prerequisite": "Proficiency with a magitech firearm or {@item tommybow|HelianasGuidetoMonsterHunting}",
+  "abilityIncrease": null,
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "You gain the following benefits."
+    "value": "You've learned to unleash the full potential of mechanised ranged weapons, leaving aiming down to lady luck. You gain the following benefits:"
    },
-   {
-    "name": "Domino Strike",
-    "type": "text",
-    "value": "When you hit a creature with a weapon and activate the Push mastery property to push that creature into a space occupied by a Large or smaller creature, you can force the creatures to collide. Each creature must succeed on a Constitution saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or have the Prone condition."
-   },
-   {
-    "name": "Fearless Leap",
-    "type": "text",
-    "value": "When you make a Long Jump, moving at least 10 feet immediately before the jump, and land in a space within 5 feet of two or more enemies, attack rolls made against you have Disadvantage until the start of your next turn."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Superior Shifting",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#superior%20shifting_exploringeberron24",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and Shifter",
-  "abilityIncrease": "Increase your Strength, Dexterity or Wisdom score by 1, to a maximum of 20.",
-  "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "You have a potent connection to the beast within, strengthening your body and your ability to shift. You gain the following benefits."
-   },
-   {
-    "name": "Shifting Endurance",
-    "type": "text",
-    "value": "At the start of your turn, you can use your Shifting trait (no action required). The transformation now lasts 10 minutes."
-   },
-   {
-    "name": "Shifter Recovery",
-    "type": "text",
-    "value": "You can use your Shifting trait one additional time. You regain 1 expended use when you finish a Short Rest, and all expended uses when you finish a Long Rest."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can reload firearms and tommybows as a bonus action or an action.",
+      "Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.",
+      "When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a one-handed firearm or tommybow you are holding.",
+      "After you take the Attack action with a tommybow or magitech firearm, you can use a bonus action to quickly make one or two additional ranged weapon attacks using the same weapon. If you choose to make two attacks, you take a -5 penalty to both attack rolls. You don't add your ability modifier to the damage of the bonus attack(s), unless that modifier is negative."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -2227,27 +1416,6 @@
   "reprint": null
  },
  {
-  "name": "Swift Witchcraft",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#swift%20witchcraft_crookedmoon24",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and Spellcasting or Pact Magic Feature",
-  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have honed your skills in the rituals of witchcraft and can quickly weave your magic in times of need. You gain the following benefits."
-   },
-   {
-    "name": "Swift Invocation",
-    "type": "text",
-    "value": "You can use an action to cast a spell that has a casting time of 1 minute. Once you use this benefit, you can't do so again until you finish a Long Rest."
-   }
-  ],
-  "reprint": null
- },
- {
   "name": "Syndicate Spy",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#syndicate%20spy_grimhollowpg24",
@@ -2279,63 +1447,6 @@
     "name": "Blending In",
     "type": "text",
     "value": "When using the Hide action to conceal yourself from creatures that aren't Hostile to you, you need only be Lightly Obscured and you may use Charisma instead of Dexterity for the check."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Tactical Combatant",
-  "source": "DnDBeyondDrops",
-  "url": "https://5e.tools/feats.html#tactical%20combatant_dndbeyonddrops",
-  "type": "General Feat",
-  "prerequisite": "Level 4+ and 13 Strength or 13 Dexterity",
-  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Buffering Strike",
-    "type": "text",
-    "value": "When you hit a creature with a weapon, you can gain Temporary Hit Points equal to the total number rolled on the weapon's damage dice. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest."
-   },
-   {
-    "name": "Honed Instincts",
-    "type": "text",
-    "value": "When you fail an ability check, you can roll 1d6 and add the number rolled to the ability check, potentially turning it into a success. Once you use this benefit, you can't use it again until you roll Initiative or finish a Short or Long Rest."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Thoughtsinger",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#thoughtsinger_exploringeberron24",
-  "type": "Origin Feat",
-  "prerequisite": "Kalashtar",
-  "abilityIncrease": null,
-  "description": [
-   {
-    "name": "",
-    "type": "text",
-    "value": "You have honed your telepathic abilities, allowing you to link to and guide your companions as a united group. You gain the following benefits."
-   },
-   {
-    "name": "Superior Telepathy",
-    "type": "text",
-    "value": "The telepathy granted by your Mind Link trait has a range of 120 feet or 10 times your level, whichever is higher."
-   },
-   {
-    "name": "Thoughtsong",
-    "type": "text",
-    "value": "When you use your Mind Link trait to grant a creature the ability to speak to you telepathically, you form a mental connection with that individual. When you communicate telepathically, you may choose to send the message to all creatures you currently have a mental connection to. You may also allow those creatures to speak telepathically with one another. These effects last for as long as the Mind Link remains in effect."
-   },
-   {
-    "name": "Telepathic Aid",
-    "type": "text",
-    "value": "If you can speak telepathically to an ally using your Mind Link trait, you can take the Help action to aid them in attacking a creature, even if you are more than 5 feet away from them."
    }
   ],
   "reprint": null
@@ -2398,58 +1509,30 @@
   "reprint": null
  },
  {
-  "name": "Unreflected",
-  "source": "CrookedMoon24",
-  "url": "https://5e.tools/feats.html#unreflected_crookedmoon24",
-  "type": "Origin Feat",
-  "prerequisite": null,
-  "abilityIncrease": null,
+  "name": "Weavebonder",
+  "source": "HelianasGuidetoMonsterHunting",
+  "url": "https://5e.tools/feats.html#weavebonder_helianasguidetomonsterhunting",
+  "type": "Craft",
+  "prerequisite": "Expert Enchanter",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
   "description": [
    {
     "name": "",
     "type": "text",
-    "value": "Your image is separated from you, making you unable to cast a reflection or a shadow, but you're able to easily slip notice. You gain the following benefits."
+    "value": "With a nuanced touch, you can manipulate even the smallest ebbs and flows of an item's magic."
    },
-   {
-    "name": "Inscrutable",
-    "type": "text",
-    "value": "Creatures have Disadvantage on Wisdom (*Insight*) checks made against you."
-   },
-   {
-    "name": "Unremarkable",
-    "type": "text",
-    "value": "The loss of some part of yourself leaves you able to fade into the background. While you are within a group of at least two other creatures of your type and that there are no more than one size larger or smaller than you, you can take the Hide action from creatures outside that group by making a Charisma (*Deception*) check instead of Dexterity (*Stealth*), with no need for being behind cover or Heavily Obscured. If you are ever more than 5 feet from at least two other such creatures while hiding this way, you are revealed."
-   }
-  ],
-  "reprint": null
- },
- {
-  "name": "Uul Dhakaan",
-  "source": "ExploringEberron24",
-  "url": "https://5e.tools/feats.html#uul%20dhakaan_exploringeberron24",
-  "type": "Origin Feat",
-  "prerequisite": "Dhakaani Ghaal'dar (Hobgoblin), Dhakaani Golin'dar (Goblin) or Dhakaani Guul'dar (Bugbear)",
-  "abilityIncrease": null,
-  "description": [
    {
     "name": "",
-    "type": "text",
-    "value": "You gain the following benefits."
-   },
-   {
-    "name": "Dreamwalker",
-    "type": "text",
-    "value": "You remain fully lucid when you dream and when you wake, you clearly remember everything that transpired."
-   },
-   {
-    "name": "Mentor in the Uul",
-    "type": "text",
-    "value": "There is a spirit in the Uul Dhakaan that serves as your mentor. Work with your DM to develop the identity of this spirit; they could be the memory of an ancestor or fallen hero, or a living uul'kala bard. Whenever you finish a Long Rest, there's a chance you'll receive a vision, a mission, or a clue about your current situation."
-   },
-   {
-    "name": "Shielded by Dreams",
-    "type": "text",
-    "value": "You have Resistance to Psychic damage."
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you make an Enchanting check with a skill with which you are proficient, you have advantage on the roll.",
+      "When you roll for a quirk's random element (such as damage type, skill, or creature type), you can roll the die twice and choose either result.",
+      "Each hour you spend enchanting an item counts as 3 hours towards the item's completion."
+     ]
+    }
    }
   ],
   "reprint": null
