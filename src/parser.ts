@@ -678,8 +678,15 @@ function parseTableRow(values: any[] | any): string[] {
             } else if (value.type == 'image') {
                 cells.push(`[image](${getImageUrl(value.href.path)})`);
             } else if (value.type == 'list') {
-                cells.push('todo'); // TODO Heliana's Cooking variantrule -> 49801 https://5e.tools/variantrules.html#cooking_helianasguidetomonsterhunting
-                // Data seemingly has the full column as a list? Not sure how to implement.
+                // list is generally a few stacked values, kind of the same as having multiple rows.
+                if (value.items && Array.isArray(value.items)) {
+                    const listItems = value.items.map((item: any) =>
+                        typeof item === 'string' ? cleanDNDText(item, true) : String(item)
+                    );
+                    cells.push(listItems.join('\n'));
+                } else {
+                    cells.push('');
+                }
             } else {
                 throw `Unsupported table value-type: '${value.type}' in ${JSON.stringify(value)}`;
             }
