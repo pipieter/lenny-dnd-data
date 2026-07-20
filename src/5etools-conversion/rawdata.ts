@@ -35,6 +35,10 @@ class RawData {
         return this.parser?.SOURCE_JSON_TO_ABV?.[sourceId] || sourceId;
     }
 
+    getSourceFullName(sourceId: string): string {
+        return this.parser?.SOURCE_JSON_TO_FULL?.[sourceId] || sourceId;
+    }
+
     getObjectSizeName(size: string | undefined | null): string | null {
         // Single exception, see render.js:9078
         if (size === 'V') return 'Variable size';
