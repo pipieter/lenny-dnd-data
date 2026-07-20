@@ -173,7 +173,7 @@ export class Databank {
         return sources;
     }
 
-    public getSourceData(sourceId: string): { name: string; displayName: string } {
+    public getSourceData(sourceId: string): { name: string; displayName: string; published: string | null } {
         throw 'getSourceData not implemented on this Databank type!';
     }
 }
@@ -233,10 +233,11 @@ export class OfficialDatabank extends Databank {
         this.addSpellSource('spells/sources.json');
     }
 
-    public getSourceData(sourceId: string): { name: string; displayName: string } {
+    public getSourceData(sourceId: string): { name: string; displayName: string; published: string | null } {
         return {
             name: rawData.getSourceFullName(sourceId),
             displayName: rawData.getSourceDisplayName(sourceId),
+            published: rawData.getSourcePublishDate(sourceId),
         };
     }
 }
@@ -248,7 +249,8 @@ export interface PartneredFilters {
 
 export class PartneredDatabank extends Databank {
     public readonly filters: PartneredFilters;
-    private readonly sourceData: { [key: string]: { name: string; displayName: string } } = {};
+    private readonly sourceData: { [key: string]: { name: string; displayName: string; published: string | null } } =
+        {};
 
     private getFullPath(path: string): string {
         return `5etools-homebrew/data/${path}`;
@@ -302,11 +304,13 @@ export class PartneredDatabank extends Databank {
         for (const key of Object.keys(data)) {
             if (data['_meta']['sources']) {
                 const sourceData = data['_meta']['sources'];
+
                 for (const datum of sourceData) {
                     const id = datum['json'];
                     const name = datum['full'] ?? id;
                     const displayName = datum['abbreviation'] ?? id;
-                    this.sourceData[id] = { name, displayName };
+                    const published = datum['dateReleased'] ?? null;
+                    this.sourceData[id] = { name, displayName, published };
                 }
             }
 
@@ -377,8 +381,8 @@ export class PartneredDatabank extends Databank {
         this.add('vehicle/');
     }
 
-    public getSourceData(sourceId: string): { name: string; displayName: string } {
+    public getSourceData(sourceId: string): { name: string; displayName: string; published: string | null } {
         if (this.sourceData[sourceId]) return this.sourceData[sourceId];
-        return { name: sourceId, displayName: sourceId };
+        return { name: sourceId, displayName: sourceId, published: null };
     }
 }

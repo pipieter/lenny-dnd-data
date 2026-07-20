@@ -7,7 +7,7 @@ export interface ParsedSource {
     displayName: string;
     source: string;
     // TODO - Do we wish to retain this information or not?
-    // published: string | null;
+    published: string | null;
     // author: string | null;
     // group: string;
 }
@@ -24,7 +24,7 @@ export function getSources(data: Databank): ParsedSource[] {
             name: info.name,
             displayName: info.displayName,
             source,
-            // published: null,
+            published: info.published,
             // author: null,
             // group: 'no-detail',
         });
