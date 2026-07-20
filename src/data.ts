@@ -15,6 +15,8 @@ import { Deity } from './dnd/deities';
 import { Cult } from './dnd/cults';
 import { Boon } from './dnd/boons';
 import { LifeBackground, LifeClass } from './dnd/life';
+import { rawData } from './5etools-conversion/rawdata';
+import { ParsedSource } from './dnd/sources';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -171,6 +173,10 @@ export class Databank {
         }
         return sources;
     }
+
+    public getSourceData(sourceId: string): ParsedSource {
+        throw 'getSourceData not implemented on this Databank type!';
+    }
 }
 
 export class OfficialDatabank extends Databank {
@@ -227,6 +233,17 @@ export class OfficialDatabank extends Databank {
         this.add('vehicles.json');
         this.addSpellSource('spells/sources.json');
     }
+
+    public getSourceData(sourceId: string): ParsedSource {
+        return {
+            name: rawData.getSourceFullName(sourceId),
+            source: sourceId,
+            abbreviation: rawData.getSourceAbbreviation(sourceId),
+            published: rawData.getSourcePublishDate(sourceId),
+            category: rawData.getSourceCategory(sourceId),
+            legacy: rawData.getSourceLegacyStatus(sourceId),
+        };
+    }
 }
 
 export interface PartneredFilters {
@@ -236,6 +253,7 @@ export interface PartneredFilters {
 
 export class PartneredDatabank extends Databank {
     public readonly filters: PartneredFilters;
+    private readonly sourceData: { [key: string]: ParsedSource } = {};
 
     private getFullPath(path: string): string {
         return `5etools-homebrew/data/${path}`;
@@ -287,6 +305,19 @@ export class PartneredDatabank extends Databank {
         ];
 
         for (const key of Object.keys(data)) {
+            if (data['_meta']['sources']) {
+                const sourceData = data['_meta']['sources'];
+
+                for (const datum of sourceData) {
+                    const source = datum['json'];
+                    const name = datum['full'] ?? source;
+                    const abbreviation = datum['abbreviation'] ?? source;
+                    const published = datum['dateReleased'] ?? null;
+                    const legacy = sourceData['edition'] === 'classic';
+                    this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered', legacy };
+                }
+            }
+
             if (prefixesToIgnore.some((prefix) => key.startsWith(prefix))) continue;
             if (keysToIgnore.includes(key)) continue;
 
@@ -352,5 +383,17 @@ export class PartneredDatabank extends Databank {
         this.add('trap/');
         this.add('variantrule/');
         this.add('vehicle/');
+    }
+
+    public getSourceData(sourceId: string): ParsedSource {
+        if (this.sourceData[sourceId]) return this.sourceData[sourceId];
+        return {
+            name: sourceId,
+            source: sourceId,
+            abbreviation: sourceId,
+            published: null,
+            category: 'partnered',
+            legacy: false,
+        };
     }
 }

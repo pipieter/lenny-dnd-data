@@ -31,8 +31,34 @@ class RawData {
      * Resolves the display name or abbreviation for a given source.
      * If the source could not be resolved, this returns the backend source instead.
      */
-    getSourceDisplayName(sourceId: string): string {
+    getSourceAbbreviation(sourceId: string): string {
         return this.parser?.SOURCE_JSON_TO_ABV?.[sourceId] || sourceId;
+    }
+
+    getSourceFullName(sourceId: string): string {
+        return this.parser?.SOURCE_JSON_TO_FULL?.[sourceId] || sourceId;
+    }
+
+    getSourcePublishDate(sourceId: string): string | null {
+        return this.parser?.SOURCE_JSON_TO_DATE?.[sourceId] || null;
+    }
+
+    private hasSourceId(sourceId: string, sourceSet: Set<string> | undefined): boolean {
+        if (!sourceSet) return false;
+        return sourceSet.has(sourceId);
+    }
+
+    getSourceCategory(sourceId: string): 'core' | 'core-supplemental' | 'adventure' | 'supplemental' {
+        // Refer to 5etools-src/js/parser.js 3941
+        if (this.hasSourceId(sourceId, this.parser?.SOURCES_VANILLA)) return 'core';
+        if (this.hasSourceId(sourceId, this.parser?.SOURCES_LEGACY_WOTC)) return 'core';
+        if (this.hasSourceId(sourceId, this.parser?.SOURCES_CORE_SUPPLEMENTS)) return 'core-supplemental';
+        if (this.hasSourceId(sourceId, this.parser?.SOURCES_ADVENTURES)) return 'adventure';
+        return 'supplemental';
+    }
+
+    getSourceLegacyStatus(sourceId: string): boolean {
+        return this.hasSourceId(sourceId, this.parser?.SOURCES_LEGACY_WOTC);
     }
 
     getObjectSizeName(size: string | undefined | null): string | null {
