@@ -16,6 +16,7 @@ import { Cult } from './dnd/cults';
 import { Boon } from './dnd/boons';
 import { LifeBackground, LifeClass } from './dnd/life';
 import { rawData } from './5etools-conversion/rawdata';
+import { ParsedSource } from './dnd/sources';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -173,7 +174,7 @@ export class Databank {
         return sources;
     }
 
-    public getSourceData(sourceId: string): { name: string; displayName: string; published: string | null } {
+    public getSourceData(sourceId: string): ParsedSource {
         throw 'getSourceData not implemented on this Databank type!';
     }
 }
@@ -233,11 +234,14 @@ export class OfficialDatabank extends Databank {
         this.addSpellSource('spells/sources.json');
     }
 
-    public getSourceData(sourceId: string): { name: string; displayName: string; published: string | null } {
+    public getSourceData(sourceId: string): ParsedSource {
         return {
+            id: sourceId,
             name: rawData.getSourceFullName(sourceId),
             displayName: rawData.getSourceDisplayName(sourceId),
+            source: sourceId,
             published: rawData.getSourcePublishDate(sourceId),
+            category: rawData.getSourceCategory(sourceId),
         };
     }
 }
@@ -249,8 +253,7 @@ export interface PartneredFilters {
 
 export class PartneredDatabank extends Databank {
     public readonly filters: PartneredFilters;
-    private readonly sourceData: { [key: string]: { name: string; displayName: string; published: string | null } } =
-        {};
+    private readonly sourceData: { [key: string]: ParsedSource } = {};
 
     private getFullPath(path: string): string {
         return `5etools-homebrew/data/${path}`;
@@ -310,7 +313,7 @@ export class PartneredDatabank extends Databank {
                     const name = datum['full'] ?? id;
                     const displayName = datum['abbreviation'] ?? id;
                     const published = datum['dateReleased'] ?? null;
-                    this.sourceData[id] = { name, displayName, published };
+                    this.sourceData[id] = { id, name, displayName, published, source: id, category: 'partnered' };
                 }
             }
 
@@ -381,8 +384,15 @@ export class PartneredDatabank extends Databank {
         this.add('vehicle/');
     }
 
-    public getSourceData(sourceId: string): { name: string; displayName: string; published: string | null } {
+    public getSourceData(sourceId: string): ParsedSource {
         if (this.sourceData[sourceId]) return this.sourceData[sourceId];
-        return { name: sourceId, displayName: sourceId, published: null };
+        return {
+            id: sourceId,
+            name: sourceId,
+            displayName: sourceId,
+            source: sourceId,
+            published: null,
+            category: 'partnered',
+        };
     }
 }
