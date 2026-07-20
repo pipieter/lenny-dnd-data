@@ -31,7 +31,7 @@ class RawData {
      * Resolves the display name or abbreviation for a given source.
      * If the source could not be resolved, this returns the backend source instead.
      */
-    getSourceDisplayName(sourceId: string): string {
+    getSourceAbbreviation(sourceId: string): string {
         return this.parser?.SOURCE_JSON_TO_ABV?.[sourceId] || sourceId;
     }
 

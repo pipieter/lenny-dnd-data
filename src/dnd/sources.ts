@@ -2,9 +2,9 @@ import { Databank } from '../data';
 import { entrySort } from '../util';
 
 export interface ParsedSource {
-    source: string;
     name: string;
-    displayName: string;
+    source: string;
+    abbreviation: string;
     published: string | null;
     category: string;
 }
@@ -17,9 +17,9 @@ export function getSources(data: Databank): ParsedSource[] {
         const info = data.getSourceData(source);
 
         sources.push({
-            source,
             name: info.name,
-            displayName: info.displayName,
+            source,
+            abbreviation: info.abbreviation,
             published: info.published,
             category: info.category,
         });
