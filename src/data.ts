@@ -284,7 +284,6 @@ export class PartneredDatabank extends Databank {
 
         if (this.filters.partnered && !partnered) return;
         if (!this.filters.allowPHB2014 && isClassic) return;
-        // if (data._meta.status != 'ready' || undefined) return; // TODO add support for non-ready sources
 
         for (const datum of sources) {
             const source = datum['json'];

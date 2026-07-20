@@ -66,8 +66,6 @@ function getSpellImage(fluffs: any[], name: string, source: string): string | nu
 }
 
 function getSpellDescription(spell: any): Description[] {
-    // console.log(spell.entries);
-
     const descriptions = parseDescriptions('', spell.entries);
     if (spell.entriesHigherLevel) {
         for (const entry of spell.entriesHigherLevel) {
