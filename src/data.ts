@@ -287,6 +287,7 @@ export class PartneredDatabank extends Databank {
 
         for (const datum of sources) {
             const source = datum['json'];
+            if (source === 'TLotRR') return; // TODO Re-enable, currently disabled due to instability.
 
             const name = datum['full'] ?? source;
             const abbreviation = datum['abbreviation'] ?? source;
