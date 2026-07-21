@@ -4,6 +4,7 @@ import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { rawData } from './5etools-conversion/rawdata';
+import { ReprintedAs, Unit } from '../5etools-collector/types/common';
 
 export interface Range {
     type: 'range';
@@ -137,7 +138,11 @@ export function parseAdvantage(adv: string): string {
     return value;
 }
 
-export function parseSingleTime(time: any): string {
+export function parseSingleTime(time: Unit): string {
+    if (typeof time === 'string') {
+        return time;
+    }
+
     const amount = time.number;
     const unit = time.unit;
 
