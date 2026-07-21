@@ -1,35 +1,12 @@
+import { Deity } from '../../5etools-collector/types/types';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { Description, DescriptionType, parseAlignments, parseDescriptions, title } from '../parser';
 import { getDeitiesUrl, getImageUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
-export interface Deity {
-    name: string;
-    source: string;
-    pantheon: string;
-    alignment?: string[];
-    category?: string;
-    title?: string;
-    worshipers?: string;
-    plane?: string;
-    domains?: string[];
-    province?: string;
-    symbol?: string;
-    symbolImg?: DeitySymbolImg;
-    entries?: string[];
-}
 
-interface DeitySymbolImg {
-    type: string;
-    href: {
-        type: string;
-        path: string;
-    };
-    credit: string;
-    width: number;
-    height: number;
-}
+
 
 export interface ParsedDeity {
     name: string;
@@ -72,15 +49,15 @@ function parseDeityInlineDescriptions(deity: Deity): Description[] {
 }
 
 export function getDeities(data: Databank): ParsedDeity[] {
-    return data.deity.map((d) => {
+    return data.deity.map((deity) => {
         return {
-            name: d.name,
-            source: d.source,
-            subtitle: d.title ? title(d.title) : `${d.pantheon} Deity`,
-            url: getDeitiesUrl(d.name, d.source, d.pantheon),
-            imgUrl: d.symbolImg ? getImageUrl(d.symbolImg.href.path) : null,
-            inlineDescription: parseDeityInlineDescriptions(d),
-            description: d.entries ? parseDescriptions('', d.entries) : [],
+            name: deity.name,
+            source: deity.source,
+            subtitle: deity.title ? title(deity.title) : `${deity.pantheon} Deity`,
+            url: getDeitiesUrl(deity.name, deity.source, deity.pantheon),
+            imgUrl: deity.symbolImg ? getImageUrl(deity.symbolImg.href.path) : null,
+            inlineDescription: parseDeityInlineDescriptions(deity),
+            description: deity.entries ? parseDescriptions('', deity.entries) : [],
         };
     });
 }

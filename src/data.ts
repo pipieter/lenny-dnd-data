@@ -2,7 +2,6 @@ import { title } from './parser';
 import { read, readJsonFile } from './read';
 import { Rule } from './dnd/rules';
 import { Hazard } from './dnd/hazards';
-import { TableData } from './dnd/tables';
 import { Feat } from './dnd/feats';
 import { Skill } from './dnd/skills';
 import { SpeciesName } from './dnd/names';
@@ -10,13 +9,12 @@ import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
 import { DNDObject } from './dnd/objects';
 import { existsSync, lstatSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
-import { Deity } from './dnd/deities';
 import { Cult } from './dnd/cults';
 import { LifeBackground, LifeClass } from './dnd/life';
 import { rawData } from './5etools-conversion/rawdata';
 import { ParsedSource } from './dnd/sources';
 
-import { Action, Boon } from '../5etools-collector/types/types';
+import { Action, Boon, Deity, Table } from '../5etools-collector/types/types';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -79,7 +77,7 @@ export class Databank {
     // Actions
     public readonly action: Action[] = [];
     // Tables
-    public readonly table: TableData[] = [];
+    public readonly table: Table[] = [];
     public readonly tableGroup: any[] = [];
     // Backgrounds
     public readonly background: any[] = [];
