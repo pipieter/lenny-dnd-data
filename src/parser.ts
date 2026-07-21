@@ -4,7 +4,7 @@ import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { rawData } from './5etools-conversion/rawdata';
-import { ReprintedAs, Unit } from '../5etools-collector/types/common';
+import { Unit } from '../5etools-collector/types/common';
 
 export interface Range {
     type: 'range';
