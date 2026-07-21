@@ -12,12 +12,11 @@ import { existsSync, lstatSync, mkdirSync, readdirSync, writeFileSync } from 'fs
 import { dirname, join } from 'path';
 import { Deity } from './dnd/deities';
 import { Cult } from './dnd/cults';
-import { Boon } from './dnd/boons';
 import { LifeBackground, LifeClass } from './dnd/life';
 import { rawData } from './5etools-conversion/rawdata';
 import { ParsedSource } from './dnd/sources';
 
-import { Action } from '../5etools-collector/types/types';
+import { Action, Boon } from '../5etools-collector/types/types';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;

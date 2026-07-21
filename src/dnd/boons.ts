@@ -3,15 +3,6 @@ import { Databank } from '../data';
 import { Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
 import { getCultsBoonsUrl } from '../urls';
 
-export interface Boon {
-    name: string;
-    source: string;
-    type: string;
-    ability?: any;
-    signatureSpells?: any;
-    entries: any[];
-}
-
 export interface ParsedBoon {
     name: string;
     source: string;
