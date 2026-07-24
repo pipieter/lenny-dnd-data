@@ -3543,7 +3543,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Automatic",
@@ -3556,7 +3556,7 @@
    "ammunition (range 80/320 ft.; bullet)",
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
    "two-handed",
-   "reload (20 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "mastery: automatic"
   ],
   "reprint": null
@@ -4785,6 +4785,86 @@
     "name": "",
     "type": "text",
     "value": "This cloth bag shines like brass and can hold up to 20 small stones. When found, the bag has 1d12 + 8 stones inside. When you remove a stone that's been in the bag for at least 1 minute, it becomes magical until the end of the turn, if it isn't already. While a stone is magical in this way, it emits a clear, bell-like ringing that's audible out to a range of 60 feet whenever it hits a target or touches an object or surface."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Bag of Cheer",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#bag%20of%20cheer_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": "30 lb.",
+  "type": [
+   "wondrous item",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This large sack, which weighs 30 pounds and is made from red velvet, appears to be full of presents in colorful wrapping. As a Magic action, you can pull a present from the bag and give it to another creature. The gift is tailored specifically to the recipient; the GM determines its nature or rolls on the Gifts table. The value of the gift can't exceed 100 GP."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once three presents have been pulled from the bag, the bag can't be used again until the next dawn. Any additional presents removed from the bag are empty but well-decorated boxes."
+   },
+   {
+    "name": "Gifts",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Gifts",
+     "headers": [
+      "d10",
+      "Gift"
+     ],
+     "rows": [
+      [
+       "1",
+       "A weapon or Shield"
+      ],
+      [
+       "2",
+       "Gold Pieces"
+      ],
+      [
+       "3",
+       "An art object"
+      ],
+      [
+       "4",
+       "Fine Clothes"
+      ],
+      [
+       "5",
+       "A tool or Musical Instrument"
+      ],
+      [
+       "6",
+       "Potion of Healing"
+      ],
+      [
+       "7",
+       "Gems"
+      ],
+      [
+       "8",
+       "An exotic food"
+      ],
+      [
+       "9",
+       "A Book"
+      ],
+      [
+       "10",
+       "A toy or Gaming Set"
+      ]
+     ]
+    }
    }
   ],
   "properties": [],
@@ -21929,7 +22009,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Two-Handed",
@@ -21947,7 +22027,7 @@
    "ammunition (range 20/60 ft.; shell)",
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
    "after you make an attack with this weapon, you can't make ranged attacks beyond the weapon's normal range until the end of the current turn.",
-   "reload (2 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "two-handed",
    "mastery: scatter"
   ],
@@ -30087,6 +30167,27 @@
   "reprint": null
  },
  {
+  "name": "Gambler's Coin",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#gambler's%20coin_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This Gold Piece has deep scratches on one side. It has 3 charges and regains all expended charges daily at dawn. When you make a D20 Test, you can expend 1 charge to replace the d20 roll with a coin flip. On heads, the roll is treated as a 20 (though you don't score a Critical Hit with an attack roll or activate any other effects which trigger on the roll of a 20). On tails, the roll is treated as a 1."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Gametoy",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#gametoy_obojimatallgrass",
@@ -30317,7 +30418,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Two-Handed",
@@ -30335,7 +30436,7 @@
    "ammunition (range 60/240 ft.; bullet)",
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
    "heavy",
-   "reload (40 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "two-handed",
    "mastery: automatic"
   ],
@@ -34159,7 +34260,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Vex",
@@ -34172,7 +34273,7 @@
    "ammunition (range 30/120 ft.; bullet)",
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
    "light",
-   "reload (10 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "mastery: vex"
   ],
   "reprint": null
@@ -38187,7 +38288,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Two-Handed",
@@ -38204,7 +38305,7 @@
    "**2d6** Piercing",
    "ammunition (range 80/320 ft.; bullet)",
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
-   "reload (4 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "two-handed",
    "mastery: sighted"
   ],
@@ -42919,6 +43020,27 @@
   "reprint": null
  },
  {
+  "name": "Leaden Manacles",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#leaden%20manacles_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These magical Manacles are used to restrain spellcasters. When a creature attempts to cast a spell or take the Magic action while it is bound with these Manacles, it makes a DC 20 ability check using its spellcasting ability. On a failure, the spell or Magic action fails and the creature takes **4d6** Fire damage. The spell slot or use of that Magic action is wasted, as well as the action, Bonus Action, or Reaction taken."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Leatherbeard",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#leatherbeard_griffonssaddlebag2",
@@ -45541,7 +45663,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Slow",
@@ -45555,7 +45677,7 @@
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
    "after you make an attack with this weapon, you can't make ranged attacks beyond the weapon's normal range until the end of the current turn.",
    "heavy",
-   "reload (6 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "mastery: slow"
   ],
   "reprint": null
@@ -50981,6 +51103,32 @@
   "reprint": null
  },
  {
+  "name": "Nolzur's Painted World",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#nolzur's%20painted%20world_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "legendary"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This masterful painting, which is either Medium or Large, was crafted by a master painter using at least ten pots of Nolzur's Marvelous Pigments. The painting depicts a serene painted world and acts as a portal to a demiplane in which that world exists. Creatures of the painting's size or smaller can pass through the portal into the demiplane."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Inside the painted world, a portal to the real world appears as a misty archway. If the face of the painting is blocked, the misty archway in the demiplane disappears. The location, objects, and creatures depicted within the painted world are determined by the painting's creator. Such objects and creatures dissipate into smoke if removed from the painting. Time passes at half speed within the painted world."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Noodle Eel",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#noodle%20eel_obojimatallgrass",
@@ -52842,7 +52990,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Vex",
@@ -52855,7 +53003,7 @@
    "ammunition (range 30/120 ft.; bullet)",
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
    "light",
-   "reload (2 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "mastery: vex"
   ],
   "reprint": null
@@ -56930,7 +57078,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Heavy",
@@ -56949,7 +57097,7 @@
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
    "after you make an attack with this weapon, you can't make ranged attacks beyond the weapon's normal range until the end of the current turn.",
    "two-handed",
-   "reload (8 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "heavy",
    "mastery: scatter"
   ],
@@ -58782,6 +58930,27 @@
   "reprint": null
  },
  {
+  "name": "Reaper's Ammunition",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#reaper's%20ammunition_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ammunition",
+   "legendary"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a creature takes damage from this magic ammunition, it dies. The ammunition then becomes nonmagical."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Reaper's Revenge",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/items.html#reaper's%20revenge_crookedmoon24",
@@ -60257,7 +60426,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Slow",
@@ -60270,7 +60439,7 @@
    "ammunition (range 30/120 ft.; bullet)",
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
    "after you make an attack with this weapon, you can't make ranged attacks beyond the weapon's normal range until the end of the current turn.",
-   "reload (6 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "mastery: slow"
   ],
   "reprint": null
@@ -70027,6 +70196,27 @@
   "reprint": null
  },
  {
+  "name": "Soul Figurine",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#soul%20figurine_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This smiling, human-shaped figurine contains a reserve of life force. If you drop to 0 Hit Points while attuned to the figurine, roll 2d10 + 10. Your Hit Points instead change to the number rolled. The figurine's expression becomes sorrowful and the figurine becomes nonmagical."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Soul Lamp",
   "source": "WhereEvilLives",
   "url": "https://5e.tools/items.html#soul%20lamp_whereevillives",
@@ -74506,7 +74696,7 @@
    {
     "name": "Reload",
     "type": "text",
-    "value": "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action."
+    "value": "This weapon can be used to make a number of attacks before it must be reloaded. If you are proficient with the weapon, reloading it takes an Action or a Bonus Action; otherwise, reloading it takes an Action."
    },
    {
     "name": "Automatic",
@@ -74519,7 +74709,7 @@
    "ammunition (range 20/60 ft.; bullet)",
    "you don't add your ability modifier to the weapon's damage, unless otherwise stated. firearm ammunition is destroyed upon use.",
    "light",
-   "reload (16 shots)",
+   "this weapon can be used to make a number of attacks before it must be reloaded. if you are proficient with the weapon, reloading it takes an action or a bonus action; otherwise, reloading it takes an action.",
    "mastery: automatic"
   ],
   "reprint": null
@@ -83106,6 +83296,266 @@
     "name": "",
     "type": "text",
     "value": "You can speak a third command word as an action, followed by a location name, while within 30 feet of the floating orb to cause it to move on its own. If the named location has been recorded by the orb and is within 1 mile of you, the sphere moves on its own and floats up to 10 feet ahead of you, guiding you to the named location using any of its recorded maps of the area to guide you. Once you reach your destination or speak the command word again, the orb begins to follow you again."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, +1 Blade",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20%2B1%20blade_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This adamantine charm resembles a miniature Longsword. While attached to a weapon, you have a +1 bonus to attack and damage rolls made with this magic weapon. If the weapon already gains such a bonus, like a +2 Longsword, you choose which bonus to use; you can't use more than one."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, +2 Blade",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20%2B2%20blade_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This adamantine charm resembles a miniature Longsword. While attached to a weapon, you have a +2 bonus to attack and damage rolls made with this magic weapon. If the weapon already gains such a bonus, like a +2 Longsword, you choose which bonus to use; you can't use more than one."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, +3 Blade",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20%2B3%20blade_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This adamantine charm resembles a miniature Longsword. While attached to a weapon, you have a +3 bonus to attack and damage rolls made with this magic weapon. If the weapon already gains such a bonus, like a +2 Longsword, you choose which bonus to use; you can't use more than one."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, Arrowhead",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20arrowhead_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This golden charm depicts a stone arrowhead. While attached to a weapon, your ranged attacks using it ignore Half Cover and Three-Quarters Cover."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, Die",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20die_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This silver charm depicts a six-sided die. While attached to a weapon, it deals more potent critical hits. When you score a Critical Hit with this weapon, if you roll the highest number on any damage die, you can roll another of that die and add it to the damage. You can add a maximum of 5 dice to the attack's damage roll in this way."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, Flame",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20flame_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This brass charm resembles a burning fire. While attached to a weapon, it deals Fire damage instead of its normal damage type. When you hit a creature or object with this weapon, it begins Burning for 1 minute. If you hit a burning target again with this weapon, the damage the burning target takes at the start of each of its turns increases by one step (d4 → d6 → d8 → d10 → d12, to a maximum of 1d12)."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, Hook",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20hook_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This bronze charm is shaped like a fishing hook. While attached to a weapon, if the weapon is on the same plane of existence as yourself, you can take a Bonus Action to teleport it to your hand."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, Lance",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20lance_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This copper charm depicts a short lance. While attached to a weapon, once on each of your turns when you make a melee attack roll with this weapon against a creature you can see, you can lunge up to 15 feet toward your target before making the attack. This movement doesn't provoke Opportunity Attacks. You can perform this movement even if it causes you to travel through the air, though you fall after making the attack if you have nothing holding you aloft."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, Lightning Bolt",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20lightning%20bolt_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This mithral charm depicts a wild lightning bolt. While attached to a weapon, it deals Lightning damage instead of its normal damage type and deals an extra **1d6** Lightning damage on a hit."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weapon Charms, Quiver",
+  "source": "ValdaPlayerPack2",
+  "url": "https://5e.tools/items.html#weapon%20charms%2C%20quiver_valdaplayerpack2",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Weapon Charm is a small ornament fixed on a loop of string or chain. You can take a Magic action to attach the charm to a weapon, usually on the weapon's pommel, or remove it from one. Attaching a charm causes the weapon to become a magic weapon that requires attunement. If the weapon is already magical, you must attune to it again to gain the charm's magical benefits, which are listed in the charm's description. A weapon can only have one attached charm at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This quartz charm resembles a quiver bristling with arrows. While attached to a weapon, it ignores the Loading property. Ammunition you are carrying teleports into the weapon when needed."
    }
   ],
   "properties": [],
