@@ -441,6 +441,57 @@
   "scaledDamage": null
  },
  {
+  "name": "Arc Blade",
+  "source": "ValdaPlayerPack2",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "castingTime": "Action",
+  "range": "15 feet",
+  "components": "S, M (a Melee weapon with which you have proficiency and that is worth 1+ CP)",
+  "material": "a Melee weapon with which you have proficiency and that is worth 1+ CP",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#arc%20blade_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As lightning surges through the weapon used in the spell's casting, you make one attack. This attack can be a melee attack or ranged spell attack using the weapon with a range of 15 feet, as a wave of energy extends from the weapon. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If it is a ranged attack, it deals Lightning damage. Otherwise, it can deal Lightning damage or the weapon's normal damage type (your choice)."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "Whether you deal Lightning damage or the weapon's normal damage type, the attack deals extra Lightning damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "lightning"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Arcane Aegis",
   "source": "GrimHollowPG24",
   "level": "Level 1",
@@ -2136,6 +2187,60 @@
   "scaledDamage": null
  },
  {
+  "name": "Blunder",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 2",
+  "school": "Enchantment",
+  "castingTime": "1 reaction, which you take when a creature you can see within range hits a target with an attack roll",
+  "range": "30 feet",
+  "components": "S, M (a banana peel)",
+  "material": "a banana peel",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#blunder_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The attacker must succeed on a Wisdom saving throw or suffer one of the following effects of your choice:"
+   },
+   {
+    "name": "Fumble",
+    "type": "text",
+    "value": "The target drops one object of your choice that it's holding, with the object landing in a space you choose up to 10 feet away from the target. If the target drops the weapon it is using for the attack roll, it can make an Unarmed Strike for the triggering attack."
+   },
+   {
+    "name": "Prat Fall",
+    "type": "text",
+    "value": "The target has the Prone condition. The Disadvantage from the Prone condition applies against the triggering attack, potentially causing it to miss."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Body Warping of Gorgoroth",
   "source": "CthulhuTorchlight",
   "level": "Level 1",
@@ -2581,6 +2686,57 @@
   "savingThrow": [
    "strength"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Burning Blade",
+  "source": "ValdaPlayerPack2",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "S, M (a Melee weapon with which you have proficiency and that is worth 1+ CP)",
+  "material": "a Melee weapon with which you have proficiency and that is worth 1+ CP",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#burning%20blade_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Encasing the weapon used in the spell's casting in flames, you make one melee attack. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Fire damage or the weapon's normal damage type (your choice). If the weapon's damage die or any of the spell's damage dice roll the highest number, you can roll that die again and add it to the damage, rolling again if it is the highest number, and so on. You can add a maximum number of dice to the damage roll equal to your spellcasting ability modifier."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "Whether you deal Fire damage or the weapon's normal damage type, the attack deals extra Fire damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "fire"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -3258,6 +3414,63 @@
   "scaledDamage": null
  },
  {
+  "name": "Candy Blast",
+  "source": "ValdaPlayerPack2",
+  "level": "Cantrip",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#candy%20blast_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You summon a handful of hard candy—boiled sweets, mints, jelly beans, etc.—and hurl them at a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes **1d8** Force damage and the candy forms a pile on the ground in its space, causing a 5-foot-square area of your choice in the target's space to become Difficult Terrain. The candy produced by this spell is edible but has no nutritional value, and vanishes after 1 minute, ending any Difficult Terrain."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d8",
+     "5": "2d8",
+     "11": "3d8",
+     "17": "4d8"
+    }
+   }
+  ]
+ },
+ {
   "name": "Cannotrip",
   "source": "HelianasGuidetoMonsterHunting",
   "level": "Level 1",
@@ -3833,6 +4046,54 @@
   "savingThrow": [
    "constitution"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Cheat",
+  "source": "ValdaPlayerPack2",
+  "level": "Cantrip",
+  "school": "Divination",
+  "castingTime": "Bonus action",
+  "range": "Self",
+  "components": "S, M (a weighted die)",
+  "material": "a weighted die",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#cheat_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You twist your fingers and fate seems to follow suit. Until the end of your next turn, you can reroll any ability check you make to play nonmagical games of skill and must use the new roll. Therefore, this spell could influence a game of poker, but not the result of a Deck of Many Things."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -5478,6 +5739,66 @@
   "conditionInflict": [],
   "conditionImmune": [],
   "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Cosmic Horror",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 3",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a dream journal)",
+  "material": "a dream journal",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#cosmic%20horror_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "For the briefest moment, you open a portal to an eldritch dimension in a 10-foot-radius Sphere centered on a point you can see within range. Each creature within the Sphere makes a Wisdom saving throw as it beholds the nightmarish dimension. On a failed save, a creature takes **6d6** Psychic damage and has the Frightened condition for the duration. On a successful save, a creature takes half as much damage only."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature Frightened by this spell makes another Wisdom saving throw at the end of each of its turns, ending the effect on itself on a success."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d6 for each spell slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -11286,6 +11607,104 @@
   "scaledDamage": null
  },
  {
+  "name": "Flashback",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 3",
+  "school": "Divination",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#flashback_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Casting your mind through time, you make a subtle alteration to history, allowing you to make preparations for the current situation within the last 24 hours. Describe to your GM how the precautions you took ahead of time to affect the current situation. For example, you might have packed a particular piece of gear or arranged for a distraction to occur at this exact moment. The GM might call for an ability check if the preparations are sufficiently challenging; on a failure, the spell fails and has no effect."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Flashback's effects are limited, as reality reasserts itself with the fewest possible changes to accommodate the alteration in history. The spell can't remove creatures or objects from an encounter, harm a creature, or cause creatures and objects that aren't being worn or carried by you to move. It can generally add an element to an encounter, but can't generally subtract them. The GM decides on the extent of the Flashback's effect."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Flawed Reconstruction",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "castingTime": "Action",
+  "range": "Touch",
+  "components": "V, S, M (a needle and thread)",
+  "material": "a needle and thread",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#flawed%20reconstruction_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You stitch together the wounds of a creature you touch, which regains 3d6 Hit Points. However, the mending is imperfect, and the target's Hit Point maximum is reduced by 1d6, to a minimum of 1."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The healing increases by 2d6 and the reduction increases by 1d6 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Flense",
   "source": "GrimHollowPG24",
   "level": "Level 8",
@@ -11873,6 +12292,58 @@
   "scaledDamage": null
  },
  {
+  "name": "Frenzy",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 6",
+  "school": "Enchantment",
+  "castingTime": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a drop of fresh blood)",
+  "material": "a drop of fresh blood",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#frenzy_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "With a gesture, you reduce a crowd to base instinct and violence. Each creature in a 20-foot-radius Sphere centered on a point you choose within range makes a Wisdom saving throw. On a failed save, a creature has the Frenzied condition for the duration."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature with the Frenzied condition loses the ability to distinguish between friend and foe, regarding all creatures it can see as enemies. While Frenzied, the creature chooses the targets for its attacks, spells, and abilities randomly from among the creatures it can see within range, and it must make an Opportunity Attack if any creature provokes one."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the end of its turn, an affected creature can repeat its saving throw, ending the condition on itself early on a success."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Frightful Start",
   "source": "GrimHollowPG24",
   "level": "Cantrip",
@@ -11921,6 +12392,66 @@
   ],
   "affectsCreatureType": [],
   "scaledDamage": null
+ },
+ {
+  "name": "Frigid Blade",
+  "source": "ValdaPlayerPack2",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "S, M (a Melee weapon with which you have proficiency and that is worth 1+ CP)",
+  "material": "a Melee weapon with which you have proficiency and that is worth 1+ CP",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#frigid%20blade_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Encasing the weapon used in the spell's casting in ice, you make one melee attack. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. The weapon's damage die increases by 1 step (d4 → d6 → d8 → d10 → d12 or 2d6, your choice). The weapon's damage dice don't increase if it has more than one weapon damage die. If the attack deals damage, it can be Cold damage or the weapon's normal damage type (your choice)."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "Whether you deal Cold damage or the weapon's normal damage type, the attack deals extra Cold damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "cold"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "5": "16",
+     "11": "2d6",
+     "17": "3d6"
+    }
+   }
+  ]
  },
  {
   "name": "Frogskin",
@@ -16356,6 +16887,59 @@
   "scaledDamage": null
  },
  {
+  "name": "Mandy's Marvelous Dress",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 4",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "Touch",
+  "components": "V, S, M (a glass slipper worth 100+ GP)",
+  "material": "a glass slipper worth 100+ GP",
+  "duration": "Special",
+  "url": "https://5e.tools/spells.html#mandy's%20marvelous%20dress_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A willing creature you touch is instantly clothed in a fabulous ball gown, perfectly tailored and complete with a set of glittering jewelry. You can choose for the dress to sit atop the creature's clothing or armor, or for it to magically replace its outfit. The creature can't remove the dress until the spell ends; similarly, the jewelry vanishes if it is removed."
+   },
+   {
+    "name": "Elegant Flair",
+    "type": "text",
+    "value": "Until the spell ends, when the wearer makes a D20 Test using Charisma, it can replace the number it rolls with a 10."
+   },
+   {
+    "name": "Glamorous Ward",
+    "type": "text",
+    "value": "If the wearer of the dress is attacked by a creature that can see it, the attacker must succeed on a Wisdom saving throw or miss with the attack. On a success, the attacker is immune to this effect until the spell ends."
+   },
+   {
+    "name": "Duration",
+    "type": "text",
+    "value": "This spell's duration varies depending upon when and where it was cast. If cast in a location where time passes normally, the spell lasts until the twelfth stroke of the next midnight, however long that may be. Elsewhere, the spell lasts for 24 hours. When the spell ends, the dress vanishes in a puff of sparkles, and the creature becomes clothed in its original outfit."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Martyr",
   "source": "CrookedMoon14",
   "level": "Level 3",
@@ -19507,6 +20091,55 @@
   "scaledDamage": null
  },
  {
+  "name": "Protect Threshold",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 2",
+  "school": "Abjuration",
+  "castingTime": "Action or Ritual",
+  "range": "Touch",
+  "components": "V, S, M (an ounce of salt for each foot of the warded portal's perimeter)",
+  "material": "an ounce of salt for each foot of the warded portal's perimeter",
+  "duration": "10 minutes",
+  "url": "https://5e.tools/spells.html#protect%20threshold_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Tracing arcane sigils along its boundary, you can ward a doorway, window, or other portal from entry. For the duration, an Invisible eldritch creature stalks the warded portal. Any creature that attempts to pass through the portal makes a Wisdom saving throw, taking **4d6** Psychic damage on a failed save or half as much damage on a successful save."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d6 for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Protection",
   "source": "HelianasGuidetoMonsterHunting",
   "level": "Level 2",
@@ -20429,6 +21062,63 @@
   "scaledDamage": null
  },
  {
+  "name": "Rocks Fall",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 8",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (ten dice)",
+  "material": "ten dice",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#rocks%20fall_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Boulders appear in the air and fall in a 60-foot-radius, 120-foot-high Cylinder centered on a point within range. Each creature in the Cylinder makes a Dexterity saving throw. On a failed save, a target takes **10d8** Bludgeoning damage and is buried under the rubble. On a successful save, a target takes half as much damage only."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A buried creature has the Prone and Restrained conditions, and can take an action to make a Strength (*Athletics*) check against your spell save DC, freeing itself from the boulders and ending the Prone and Restrained conditions on itself on a success."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "bludgeoning"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Root Grab",
   "source": "ObojimaTallGrass",
   "level": "Cantrip",
@@ -20507,6 +21197,62 @@
   ],
   "reprint": null,
   "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Rusting Grasp",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 3",
+  "school": "Transmutation",
+  "castingTime": "Action",
+  "range": "Touch",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#rusting%20grasp_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You conjure a potent acid at your fingertips, which can corrode metal and burn flesh. Make a melee spell attack against a creature or object within your reach. On a hit, a creature takes **6d4** Acid damage and it has a -3 penalty to its AC, to a minimum of 10, for 1 hour."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you target a nonmagical metal object with this spell that isn't being worn or carried, you corrode and destroy parts of the object you choose that can fit within a 1-foot Cube."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 2d4 for each spell slot level above 3. If you target a nonmagical object, you can destroy an additional cubic foot for each slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "acid"
+  ],
   "damageResist": [],
   "damageVulnerable": [],
   "damageImmune": [],
@@ -21352,6 +22098,51 @@
   "savingThrow": [
    "charisma"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Séance",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 3",
+  "school": "Necromancy",
+  "castingTime": "10 minutes",
+  "range": "Self",
+  "components": "V, S, M (a crystal ball, deck of tarot cards, or ouija board, and incense worth 50+ GP)",
+  "material": "a crystal ball, deck of tarot cards, or ouija board, and incense worth 50+ GP",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#s%C3%A9ance_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You and three or more willing creatures lock hands to conjure a spirit from the afterlife to answer your questions. Describe or name a creature that is familiar to you. If the creature's soul is free and willing, it manifests as a ghostly specter. This spell fails if the spirit was the target of this spell within the last 10 days."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Until the spell ends, you can ask up to three questions of the specter. The specter knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the specter is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. There is a 5 percent chance that this spell contacts the wrong spirit, one which will answer questions untruthfully or ambiguously."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -22645,6 +23436,61 @@
   "scaledDamage": null
  },
  {
+  "name": "Soul Effigy",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 4",
+  "school": "Necromancy",
+  "castingTime": "1 minute or Ritual",
+  "range": "Touch",
+  "components": "V, S, M (a straw doll worth 1+ CP)",
+  "material": "a straw doll worth 1+ CP",
+  "duration": "8 hours",
+  "url": "https://5e.tools/spells.html#soul%20effigy_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Humanoid you touch makes a Constitution saving throw. On a failed save, a fragment of its soul is bound to the doll used in this spell's casting, which becomes an effigy of that creature. The spell ends if the effigy is destroyed or if the target is on another plane of existence. For the duration, you can use a Magic action to do one of the following."
+   },
+   {
+    "name": "Control",
+    "type": "text",
+    "value": "You directly control the target's actions and movement on its next turn by manipulating the effigy's limbs. That target can only take the Dash, Disengage, Hide, or Utilize action. While controlled, the target's movements are jerky and unnatural."
+   },
+   {
+    "name": "Harm",
+    "type": "text",
+    "value": "You prod the effigy and deal **2d8** damage to the target. This damage is Bludgeoning, Piercing, Slashing, or another damage type, appropriate to the means by which you harm the effigy. This damage ignores Resistance and Immunity."
+   },
+   {
+    "name": "Restrain",
+    "type": "text",
+    "value": "You submerge the effigy in water, causing the target to believe it is suffocating. The target has the Restrained condition until the end of your next turn."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "restrained"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Spark",
   "source": "HelianasGuidetoMonsterHunting",
   "level": "Cantrip",
@@ -23454,6 +24300,58 @@
   "savingThrow": [
    "charisma"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Stone Bones",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "castingTime": "Bonus action",
+  "range": "30 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#stone%20bones_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose a creature you can see within range. The target has Resistance to Bludgeoning, Piercing, and Slashing damage until the spell ends at the end of your next turn."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -24413,6 +25311,46 @@
   "scaledDamage": null
  },
  {
+  "name": "Swift Flight",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "castingTime": "Bonus action",
+  "range": "Touch",
+  "components": "V, S, M (a bird's wing feather)",
+  "material": "a bird's wing feather",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#swift%20flight_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Streaks of energy flow from the back of a creature you touch, tracing the shapes of wings. The target has a Fly Speed of 60 feet and can hover until the end of its next turn. When the spell ends, the target falls if it is in the air and nothing is holding it aloft."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Switched Form",
   "source": "ObojimaTallGrass",
   "level": "Level 2",
@@ -24534,6 +25472,60 @@
   "conditionImmune": [],
   "savingThrow": [
    "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Sword of Judgment",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 5",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a strand of horse hair)",
+  "material": "a strand of horse hair",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#sword%20of%20judgment_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This spell designates an area of protection in a 20-foot-radius Sphere centered on a point you choose within range. Within that Sphere, a spectral sword appears over each creature, following the creature as long as it remains within the Sphere."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever a creature within the Sphere makes an attack or casts a spell, you can force that creature to make a Dexterity saving throw, as the sword above it falls. Resolve the Dexterity saving throw before the triggering attack or spell. On a failed save, the target takes **4d8** Force damage, or half as much damage on a successful save. A creature makes this save only once per turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 for each spell slot level above 5."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
   ],
   "affectsCreatureType": [],
   "scaledDamage": null
@@ -25030,6 +26022,46 @@
    {
     "name": "Ranger",
     "source": "PHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Transient Bulwark",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 1",
+  "school": "Abjuration",
+  "castingTime": "Action or Ritual",
+  "range": "Self",
+  "components": "V, S, M (a pearl worth 10+ GP, which the spell consumes)",
+  "material": "a pearl worth 10+ GP, which the spell consumes",
+  "duration": "8 hours",
+  "url": "https://5e.tools/spells.html#transient%20bulwark_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A fragile, invisible shield protects you for the duration. The next attack roll against you has a -10 penalty to hit, and the spell ends."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
    }
   ],
   "reprint": null,
@@ -26808,6 +27840,65 @@
   "savingThrow": [
    "constitution"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Zephyr's Feather",
+  "source": "ValdaPlayerPack2",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "V, S, M (a dove's feather)",
+  "material": "a dove's feather",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#zephyr's%20feather_valdaplayerpack2",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You wave your hand and four alabaster feathers, magically sharpened to a razor's edge, appear and orbit around you until the spell ends. When you cast this spell and as Bonus Action on your later turns, you can expend one of the feathers and make a ranged spell attack using it against a creature you can see within 120 feet of yourself. On a hit, the target takes **1d8** Force damage."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },

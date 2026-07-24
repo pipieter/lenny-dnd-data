@@ -12563,7 +12563,7 @@
  {
   "name": "Arcane Amalgam",
   "source": "FleeMortals",
-  "subtitle": "Tiny or Large oozes",
+  "subtitle": "Tiny or Large ooze",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": null,
@@ -77707,7 +77707,7 @@
  {
   "name": "Flintmoth Swarm",
   "source": "FleeMortals",
-  "subtitle": "Tiny or Huge elementals",
+  "subtitle": "Tiny or Huge elemental",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": null,
@@ -78149,6 +78149,90 @@
     "name": "Scratch",
     "type": "text",
     "value": "*Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) slashing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Flying Book",
+  "source": "ValdaPlayerPack2",
+  "subtitle": "Tiny construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ValdaPlayerPack2/Flying%20Book.webp",
+  "url": "https://5e.tools/bestiary.html#flying%20book_valdaplayerpack2",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "3",
+      "15",
+      "11",
+      "1",
+      "4",
+      "1"
+     ],
+     [
+      "Mod.",
+      "-4",
+      "+2",
+      "+0",
+      "-5",
+      "-3",
+      "-5"
+     ],
+     [
+      "Save.",
+      "-4",
+      "+2",
+      "+0",
+      "-5",
+      "-3",
+      "-5"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 5 (2d4)",
+     "**Speed**: *walk* 0 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
+     "**Initiative**: 1",
+     "**Immunities**: poison, psychic; blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned",
+     "**Senses**: Blindsight 30 ft.",
+     "**CR**: 1/8"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Bludgeoning damage."
    }
   ],
   "bonusActions": [],
@@ -81562,6 +81646,97 @@
     "name": "Radiant Flame",
     "type": "text",
     "value": "*Ranged Attack Roll:* +5, range 60 ft. *Hit:* 11 (**2d10**) Radiant damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Fright",
+  "source": "ValdaPlayerPack2",
+  "subtitle": "Small undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ValdaPlayerPack2/Fright.webp",
+  "url": "https://5e.tools/bestiary.html#fright_valdaplayerpack2",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "1",
+      "14",
+      "10",
+      "10",
+      "9",
+      "15"
+     ],
+     [
+      "Mod.",
+      "-5",
+      "+2",
+      "+0",
+      "+0",
+      "-1",
+      "+2"
+     ],
+     [
+      "Save.",
+      "-5",
+      "+2",
+      "+0",
+      "+0",
+      "-1",
+      "+2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 21 (6d6)",
+     "**Speed**: *walk* 0 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
+     "**Resistances**: acid, cold, fire, lightning, necrotic, thunder",
+     "**Immunities**: poison; charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Common plus one other language",
+     "**CR**: 1/2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Incorporeal Movement",
+    "type": "text",
+    "value": "The fright can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Life Drain",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 9 (**2d8**) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken."
    }
   ],
   "bonusActions": [],
@@ -96871,6 +97046,96 @@
     "name": "Rapier",
     "type": "text",
     "value": "*Melee Weapon Attack:* +3 to hit, reach 5 ft., one target. *Hit:* 5 (**1d8 + 1**) piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Grep",
+  "source": "ValdaPlayerPack2",
+  "subtitle": "Tiny monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ValdaPlayerPack2/Grep.webp",
+  "url": "https://5e.tools/bestiary.html#grep_valdaplayerpack2",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "3",
+      "18",
+      "13",
+      "13",
+      "15",
+      "10"
+     ],
+     [
+      "Mod.",
+      "-4",
+      "+4",
+      "+1",
+      "+1",
+      "+2",
+      "+0"
+     ],
+     [
+      "Save.",
+      "-4",
+      "+4",
+      "+1",
+      "+1",
+      "+2",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 21 (6d4 + 6)",
+     "**Speed**: *walk* 15 Ft., *fly* 50 Ft.",
+     "**Skills**: perception +4, sleight of hand +6, stealth +6",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: understands Common but can't speak",
+     "**CR**: 1/2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Mimicry",
+    "type": "text",
+    "value": "The grep can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful DC 10 Wisdom (*Insight*) check."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Claw",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +6, reach 5 ft. *Hit:* 7 (**1d6 + 4**) Slashing damage."
    }
   ],
   "bonusActions": [],
@@ -152106,6 +152371,103 @@
   "reprint": null
  },
  {
+  "name": "Mock",
+  "source": "ValdaPlayerPack2",
+  "subtitle": "Tiny monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ValdaPlayerPack2/Mock.webp",
+  "url": "https://5e.tools/bestiary.html#mock_valdaplayerpack2",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "9",
+      "12",
+      "14",
+      "4",
+      "13",
+      "6"
+     ],
+     [
+      "Mod.",
+      "-1",
+      "+1",
+      "+2",
+      "-3",
+      "+1",
+      "-2"
+     ],
+     [
+      "Save.",
+      "-1",
+      "+1",
+      "+2",
+      "-3",
+      "+1",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 11",
+     "**HP**: 9 (2d4 + 4)",
+     "**Speed**: *walk* 20 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: stealth +5",
+     "**Immunities**: acid; prone",
+     "**Senses**: Darkvision 60 ft.",
+     "**CR**: 1/8"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Adhesive (Object Form Only)",
+    "type": "text",
+    "value": "The mock adheres to anything that touches it. The mock has Advantage on attack rolls against any creature adhered to it. The target or a creature within 5 feet of it can detach the mock as an action."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Piercing damage plus 2 (**1d4**) Acid damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Shape-Shift",
+    "type": "text",
+    "value": "The mock shape-shifts to resemble a Tiny object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Mohler",
   "source": "FleeMortals",
   "subtitle": "Small beast",
@@ -161186,7 +161548,7 @@
  {
   "name": "Old Ways Chosen",
   "source": "CrookedMoon24",
-  "subtitle": "Small or Medium Humanoid",
+  "subtitle": "Small or Medium humanoid",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/CrookedMoon24/Old%20Ways%20Chosen.webp",
@@ -167995,6 +168357,90 @@
   "reprint": null
  },
  {
+  "name": "Pet Rock",
+  "source": "ValdaPlayerPack2",
+  "subtitle": "Tiny elemental",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ValdaPlayerPack2/Pet%20Rock.webp",
+  "url": "https://5e.tools/bestiary.html#pet%20rock_valdaplayerpack2",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "1",
+      "1",
+      "16",
+      "1",
+      "5",
+      "1"
+     ],
+     [
+      "Mod.",
+      "-5",
+      "-5",
+      "+3",
+      "-5",
+      "-3",
+      "-5"
+     ],
+     [
+      "Save.",
+      "-5",
+      "-5",
+      "+3",
+      "-5",
+      "-3",
+      "-5"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 5 (1d4 + 3)",
+     "**Speed**: *walk* 0 Ft.",
+     "**Resistances**: bludgeoning, fire, lightning, piercing, radiant, slashing",
+     "**Immunities**: poison, psychic; charmed, exhaustion, frightened, paralyzed, poisoned, prone, unconscious",
+     "**Languages**: understands all but can't speak",
+     "**CR**: 0"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Just a Rock",
+    "type": "text",
+    "value": "The rock counts as an object. Additionally, it can't take actions and its Speed can't be increased."
+   }
+  ],
+  "actions": [],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Petra Cloudburst",
   "source": "HumblewoodTales",
   "subtitle": "Small humanoid",
@@ -169994,7 +170440,7 @@
  {
   "name": "Plant Spirit",
   "source": "GrimHollowPG24",
-  "subtitle": "Medium or Large Plant",
+  "subtitle": "Medium or Large plant",
   "summonedBySpell": "Summon Plant",
   "summonedByClass": null,
   "tokenUrl": "https://5e.tools/img/bestiary/tokens/GrimHollowPG24/Plant%20Spirit.webp",
@@ -216587,7 +217033,7 @@
  {
   "name": "Swarm of Insects",
   "source": "FleeMortals",
-  "subtitle": "Medium beasts",
+  "subtitle": "Medium beast",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": null,
@@ -217522,7 +217968,7 @@
  {
   "name": "Swarm of Skitterlings",
   "source": "FleeMortals",
-  "subtitle": "Medium beasts",
+  "subtitle": "Medium beast",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": null,
@@ -217616,7 +218062,7 @@
  {
   "name": "Swarm of Skitterlings",
   "source": "WhereEvilLives",
-  "subtitle": "Medium beasts",
+  "subtitle": "Medium beast",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": null,
@@ -217834,7 +218280,7 @@
  {
   "name": "Swarm of Spiders",
   "source": "FleeMortals",
-  "subtitle": "Medium beasts",
+  "subtitle": "Medium beast",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": null,
@@ -217943,7 +218389,7 @@
  {
   "name": "Swarm of Spiders",
   "source": "WhereEvilLives",
-  "subtitle": "Medium beasts",
+  "subtitle": "Medium beast",
   "summonedBySpell": null,
   "summonedByClass": null,
   "tokenUrl": null,
@@ -248799,6 +249245,96 @@
   "reprint": null
  },
  {
+  "name": "Winter Wolf Pup",
+  "source": "ValdaPlayerPack2",
+  "subtitle": "Small monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ValdaPlayerPack2/Winter%20Wolf%20Pup.webp",
+  "url": "https://5e.tools/bestiary.html#winter%20wolf%20pup_valdaplayerpack2",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "9",
+      "12",
+      "11",
+      "6",
+      "12",
+      "7"
+     ],
+     [
+      "Mod.",
+      "-1",
+      "+1",
+      "+0",
+      "-2",
+      "+1",
+      "-2"
+     ],
+     [
+      "Save.",
+      "-1",
+      "+1",
+      "+0",
+      "-2",
+      "+1",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 10 (3d6)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: perception +3, stealth +3",
+     "**Resistances**: cold",
+     "**Languages**: Common, Giant",
+     "**CR**: 1/8"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Pack Tactics",
+    "type": "text",
+    "value": "The pup has Advantage on attack rolls against a creature if at least one of the pup's Allies is within 5 feet of the creature and the Ally doesn't have the Incapacitated condition."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Piercing damage plus 2 (**1d4**) Cold damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Wirbeln Fungi",
   "source": "TalesFromTheShadows",
   "subtitle": "Small plant",
@@ -252484,6 +253020,96 @@
     "value": "Xorannox's central eye turns solid black and projects a 150-foot cone of energy. If Xorannox or any creature in that area is affected by a spell, the spell's effects immediately end for that creature."
    }
   ],
+  "reprint": null
+ },
+ {
+  "name": "Yarn Golem",
+  "source": "ValdaPlayerPack2",
+  "subtitle": "Tiny construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ValdaPlayerPack2/Yarn%20Golem.webp",
+  "url": "https://5e.tools/bestiary.html#yarn%20golem_valdaplayerpack2",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "8",
+      "16",
+      "13",
+      "1",
+      "10",
+      "8"
+     ],
+     [
+      "Mod.",
+      "-1",
+      "+3",
+      "+1",
+      "-5",
+      "+0",
+      "-1"
+     ],
+     [
+      "Save.",
+      "-1",
+      "+3",
+      "+1",
+      "-5",
+      "+0",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 21 (6d4 + 6)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Resistances**: piercing",
+     "**Immunities**: poison, psychic; poisoned",
+     "**Languages**: understands Common plus one other language but can't speak",
+     "**CR**: 1/2"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Poke",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 8 (**2d4 + 3**) Piercing damage."
+   },
+   {
+    "name": "Tangle (Recharge 5-6)",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 12, one creature that the golem can see within 5 feet. *Failure:* If the target is Medium or smaller, it has the Grappled condition (escape DC 12). While Grappled, the target has the Restrained condition."
+   }
+  ],
+  "bonusActions": [],
   "reprint": null
  },
  {
