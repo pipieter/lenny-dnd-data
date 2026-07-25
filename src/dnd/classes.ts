@@ -5,6 +5,7 @@ import {
     checkForDisallowedSymbols,
     containsDisallowedSymbols,
     Description,
+    DescriptionList,
     DescriptionTable,
     DescriptionType,
     List,
@@ -452,12 +453,29 @@ function parseBaseInfo(data: any): Description[] {
         const equipment = data.startingEquipment.default ?? data.startingEquipment.entries;
 
         if (equipment) {
-            const entries = equipment.map((entry: any) => {
-                if (typeof entry == 'string') return capitalize(cleanDNDText(entry));
-                return parseDescriptions('', [entry]); // TLOTRR (partnered) stores equipment as entries rather than strings.
-            });
-            // If entries only has one item, return a text
-            if (entries.length === 1) {
+            const entries: string[] = [];
+            const sublist: Description[] = [];
+            for (const entry of equipment) {
+                if (typeof entry == 'string') {
+                    entries.push(capitalize(cleanDNDText(entry)));
+                    continue;
+                }
+                sublist.push(...parseDescriptions('', [entry]));
+            }
+
+            if (sublist.length === 1 && sublist[0].type === DescriptionType.list) {
+                // TLOTRR (partnered) stores equipment in a sublist, as it needs a caption to explain specific setting mechanics.
+                const listDesc = sublist[0] as DescriptionList;
+                info.push({
+                    name: 'Starting Equipment',
+                    type: DescriptionType.list,
+                    list: {
+                        type: 'list',
+                        caption: entries[0] ?? listDesc.list.caption,
+                        entries: listDesc.list.entries,
+                    },
+                });
+            } else if (entries.length === 1) {
                 info.push({
                     name: 'Starting Equipment',
                     type: DescriptionType.text,
