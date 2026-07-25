@@ -454,7 +454,7 @@ function parseBaseInfo(data: any): Description[] {
         if (equipment) {
             const entries = equipment.map((entry: any) => {
                 if (typeof entry == 'string') return capitalize(cleanDNDText(entry));
-                return entry;
+                return parseDescriptions('', [entry]); // TLOTRR (partnered) stores equipment as entries rather than strings.
             });
             // If entries only has one item, return a text
             if (entries.length === 1) {
