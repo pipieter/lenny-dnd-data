@@ -293,7 +293,7 @@ function parseClassSkillProficiencies(proficiency: any): string[] {
     const skills = [];
     for (const skillProficiencies of proficiency as any) {
         const choose = skillProficiencies.choose;
-        if (skillProficiencies.any) return [`Any ${skillProficiencies.any}`]
+        if (skillProficiencies.any) return [`Any ${skillProficiencies.any}`];
         if (!choose) continue;
         const chooseFrom = choose.from;
         const count = parseInt(choose.count ?? '0');
