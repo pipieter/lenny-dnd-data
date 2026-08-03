@@ -338,8 +338,10 @@ function parseClassProficiencies(proficiencies: any): Description[] {
             }
             case 'toolProficiencies':
             case 'weaponProficiencies':
+            case 'armorProficiencies':
                 // Data is not of use
                 continue;
+
             default:
                 throw new Error('Unknown proficiency type: ' + type);
         }
