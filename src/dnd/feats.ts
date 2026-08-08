@@ -203,6 +203,8 @@ function getFeatPrerequisites(feat: Feat): string | null {
                             proficiencies.push(`Proficiency with a ${profValue} weapon`);
                         } else if (profKey === 'weaponGroup') {
                             proficiencies.push(`${profValue} Proficiency`);
+                        } else if (profKey === 'skill') {
+                            proficiencies.push(joinStringsWithOr(profValue));
                         } else {
                             throw `Unsupported feat-proficiency-prerequisite ${profKey}`;
                         }

@@ -1,5 +1,15 @@
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
-import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, getTablesUrl } from './urls';
+import {
+    get5eToolsUrl,
+    getActionsUrl,
+    getBestiaryUrl,
+    getCharCreationOptionUrl,
+    getFeatsUrl,
+    getImageUrl,
+    getItemsUrl,
+    getTablesUrl,
+    getTrapsUrl,
+} from './urls';
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
@@ -533,20 +543,30 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             const source = description.source;
             let link = null;
             switch (tag) {
-                case 'item':
-                    link = getItemsUrl(name, source);
+                case 'action':
+                    link = getActionsUrl(name, source);
+                    break;
+                case 'charoption':
+                    link = getCharCreationOptionUrl(name, source);
                     break;
                 case 'creature':
                     link = getBestiaryUrl(name, source);
                     break;
-                case 'table':
-                    link = getTablesUrl(name, source);
+                case 'hazard':
+                    link = getTrapsUrl(name, source);
+                    break;
+                case 'item':
+                    link = getItemsUrl(name, source);
                     break;
                 case 'optfeature':
                     link = getFeatsUrl(name, source);
+                    break;
+                case 'table':
+                    link = getTablesUrl(name, source);
+                    break;
             }
 
-            if (!link) throw `Unsupported statblock ${tag}`;
+            if (!link) throw `Unsupported statblock ${tag} - ${description.name} (${description.source})`;
             return [`[See ${name}'s stats here](${link})`];
         }
         case 'refFeat': {
@@ -619,6 +639,10 @@ function parseTableRow(values: any[] | any): string[] {
     if (typeof values === 'object' && !Array.isArray(values)) {
         if (values.type === 'row') {
             values = values.row;
+        } else if (values.type === 'list') {
+            return values.items.map((item: string) => {
+                return `- ${cleanDNDText(item)}`;
+            });
         } else {
             throw `Unsupported row type ${values.type}`;
         }
@@ -660,8 +684,11 @@ function parseTableRow(values: any[] | any): string[] {
                 }
             } else if (value.type === 'item') {
                 // Item is similar to entries, except it has both the name and entries, and entries is more parseable
-                const name = cleanDNDText(value.name, true);
-                const entries = value.entries.map((entry: string) => cleanDNDText(entry, true));
+                const name = value.name ? cleanDNDText(value.name, true) : '';
+                const entries = value.entries.map((entry: string) => {
+                    if (typeof entry === 'string') return cleanDNDText(entry, true);
+                    return parseTableRow(entry);
+                });
                 const entry = entries.join('\n');
                 const combined = `${name}. ${entry}`;
                 cells.push(combined);
@@ -699,11 +726,11 @@ function parseTableRow(values: any[] | any): string[] {
     return cells;
 }
 
-export function parseDescriptionFromTable(description: any): DescriptionTable {
-    const title: string = description.caption || '';
+export function parseDescriptionFromTable(table: any): DescriptionTable {
+    const title: string = table.caption || '';
 
-    if (description.type === 'tableGroup') {
-        const tables = description.tables.map((table: any) => parseDescriptionFromTable(table).table);
+    if (table.type === 'tableGroup') {
+        const tables = table.tables.map((table: any) => parseDescriptionFromTable(table).table);
         return {
             name: title,
             type: DescriptionType.table,
@@ -712,10 +739,10 @@ export function parseDescriptionFromTable(description: any): DescriptionTable {
     }
 
     let headers: string[] | null = null;
-    if (description.colLabels) {
-        headers = description.colLabels.map(cleanDNDText);
-    } else if (description.colLabelRows) {
-        const colLabelRows: ColLabelRows = description.colLabelRows;
+    if (table.colLabels) {
+        headers = table.colLabels.map(cleanDNDText);
+    } else if (table.colLabelRows) {
+        const colLabelRows: ColLabelRows = table.colLabelRows;
         const expandedRows: string[][] = colLabelRows.map((row) =>
             row.flatMap((cell) => {
                 if (typeof cell === 'string') return [cell];
@@ -737,10 +764,8 @@ export function parseDescriptionFromTable(description: any): DescriptionTable {
         );
     }
 
-    const rows: string[][] = description.rows.map(parseTableRow);
-    const table: Table = { type: 'table', title, headers, rows };
-
-    return { name: title, type: DescriptionType.table, table: table };
+    const rows: string[][] = table.rows.map(parseTableRow);
+    return { name: title, type: DescriptionType.table, table: { type: 'table', title, headers, rows } };
 }
 
 export function parseDescriptions(name: string, descriptions: any[]): Description[] {

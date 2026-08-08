@@ -2,6 +2,7 @@ import { applySingleTemplate } from './template';
 import { crToProficiencyBonus } from './parser';
 import { ascSortLower } from './sort';
 import { rawData } from './rawdata';
+import { title } from '../parser';
 
 // TODO _templates (e.g. Zox Clammersham). This will most likely require data going global
 
@@ -248,6 +249,13 @@ function addMod_setProp(base: any, mod: any): void {
     base[mod.prop] = mod.value;
 }
 
+function addMod_addSenses(base: any, mod: any): void {
+    const senses = mod.senses.map((sense: { type: string; range: any }) => {
+        return `${title(sense.type)} ${sense.range} ft.`;
+    });
+    base['senses'].push(...senses);
+}
+
 function addMod_Single(base: any, key: any, mod: any): void {
     switch (mod.mode) {
         case 'replaceArr':
@@ -265,6 +273,8 @@ function addMod_Single(base: any, key: any, mod: any): void {
             return addMod_replaceTxt(base, key, mod);
         case 'addSkills':
             return addMod_addSkills(base, mod.skills);
+        case 'addSenses':
+            return addMod_addSenses(base, mod);
         case 'replaceSpells':
             return addMod_replaceSpells(base, mod);
         case 'addSpells':

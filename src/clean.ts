@@ -158,6 +158,8 @@ function atk(text: string, noFormat: boolean): string {
         ['{@atkr ms}', 'Melee Spell Attack Roll:'],
         ['{@atkr r}', 'Ranged Attack Roll:'],
         ['{@atkr m,r}', 'Melee or Ranged Attack Roll:'],
+        ['{@atkr m,s}', 'Melee or Spell Attack Roll:'],
+        ['{@atkr rs}', 'Ranged Spell Attack Roll:'],
         ['{@atk g}', 'Magical Attack:'],
     ]);
 
@@ -806,6 +808,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     const stack: number[] = [];
     let i = 0;
+
     while (i < text.length) {
         if (text[i] === '{') {
             stack.push(i);

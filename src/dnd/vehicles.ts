@@ -259,6 +259,7 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
         'IWM:W': 'Infernal War Machine Variant, Weapon',
         'IWM:A': 'Infernal War Machine Upgrade, Armor',
         'IWM:G': 'Infernal War Machine Upgrade, Gadget',
+        'SHP:SW': 'Ship Upgrade, Siege Weapon', // TODO - This is stored inside of the partnered databank now in a recent change, we should extract it from there too.
     };
     for (const upgradeType of upgrade.upgradeType) {
         const type = typeMap[upgradeType];
