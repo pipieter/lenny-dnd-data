@@ -253,7 +253,7 @@ function addMod_addSenses(base: any, mod: any): void {
     const senses = mod.senses.map((sense: { type: string; range: any }) => {
         return `${title(sense.type)} ${sense.range} ft.`;
     });
-    base['senses'].push(...senses);
+    base.senses.push(...senses);
 }
 
 function addMod_Single(base: any, key: any, mod: any): void {
