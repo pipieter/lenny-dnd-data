@@ -97,6 +97,7 @@ export class Databank {
     // Vehicles
     public readonly vehicle: Vehicle[] = [];
     public readonly vehicleUpgrade: VehicleUpgrade[] = [];
+    public readonly vehicleFluff: any = [];
     // Objects
     public readonly object: DNDObject[] = [];
     public readonly objectFluff: any[] = [];

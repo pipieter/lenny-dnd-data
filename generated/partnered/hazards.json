@@ -1,1 +1,195 @@
-[]
+[
+ {
+  "name": "Extreme Cold",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Environmental hazard",
+  "url": "https://5e.tools/trapshazards.html#extreme%20cold_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the temperature is 0 degrees Fahrenheit or lower, a creature exposed to the extreme cold must succeed on a DC 10 Constitution saving throw at the end of each hour or gain 1 Exhaustion level and may suffer from Hypothermia and Frostbite. Creatures that have Resistance or Immunity to Cold damage automatically succeed on the save."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Foraging for Food",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Wilderness hazard",
+  "url": "https://5e.tools/trapshazards.html#foraging%20for%20food_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "In the summer/spring, creatures need to spend 1d4 hours and succeed on a DC 15 Wisdom (*Survival*) check to find food. The amount of food and water gained is a number of pounds equal to the creature's Wisdom modifier. In the fall/winter, the DC increases to 18 in most areas, and DC 20 in the mountains, tundra, and glaciers. These DCs are suggested averages to ease gameplay. Creatures in a cold environment use up more energy than normal and consume more food and water. As a general rule, creatures must consume twice as much as normal in winter months in the Northlands. If they venture into arctic conditions (such as high mountains or glaciers), they must consume three times as much."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Frigid Water",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Environmental hazard",
+  "url": "https://5e.tools/trapshazards.html#frigid%20water_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature can be immersed in frigid water for a number of minutes equal to its Constitution score before suffering any ill effects. Each additional minute spent in frigid water requires the creature to succeed on a DC 10 Constitution saving throw or gain 1 Exhaustion level. Creatures with Resistance or Immunity to Cold damage automatically succeed on the save, as do creatures that are naturally adapted to living in ice-cold water."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Heavy Precipitation",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Weather hazard",
+  "url": "https://5e.tools/trapshazards.html#heavy%20precipitation_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Everything within an area of heavy rain or heavy snowfall is Lightly Obscured, and creatures in the area have Disadvantage on all Wisdom (*Perception*) checks. Heavy rain also extinguishes open flames."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "High Altitude (10,000 ft–25,000 ft)",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Environmental hazard",
+  "url": "https://5e.tools/trapshazards.html#high%20altitude%20(10%2C000%20ft%E2%80%9325%2C000%20ft)_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Traveling at altitudes of 10,000 feet to 25,000 feet above sea level is taxing for most creatures because of the reduced amount of oxygen in the air. Each hour such a creature spends traveling at high altitude counts as 2 hours for the purpose of determining how long that creature can travel. Creatures can acclimate to a high altitude by spending 30 days or more at this elevation. Creatures can't become acclimated to elevations above 20,000 feet unless they are native to such environments."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "High Altitude (25,000 ft+)",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Environmental hazard",
+  "url": "https://5e.tools/trapshazards.html#high%20altitude%20(25%2C000%20ft%2B)_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Many of Jotunheim's peaks reach so far into the sky that there's simply not enough air to sustain normal life. Northlanders call these places daudavangr, the \"Death-Fields.\" Above 25,000 ft., any creature not naturally acclimated to the environment or that doesn't have Immunity to Cold damage must succeed on a Constitution saving throw each hour (DC 15 +1 per previous check) or take **2d6** Cold damage and gain one level of Exhaustion."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Creatures with levels of Exhaustion in a daudavangr suffer blinding headaches, disorientation, and confusion. They have Disadvantage on all d20 rolls based on Intelligence, Wisdom, or Charisma."
+   },
+   {
+    "name": "Magic in the Death Fields",
+    "type": "text",
+    "value": "Fire burns very poorly in a daudavangr. Spells and effects that deal Fire damage only deal half as much as normal."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Hypothermia and Frostbite",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Environmental hazard",
+  "url": "https://5e.tools/trapshazards.html#hypothermia%20and%20frostbite_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Creatures that have a level of Exhaustion from the cold must make a Constitution saving throw (DC is 8 plus the level of Exhaustion) every hour they are exposed to cold conditions. With each failed saving throw, the creature gains one of the following levels of hypothermia. Finishing a Long Rest in a warm place removes one level of hypothermia. The conditions listed below are in addition to the normal Exhaustion penalties."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Frostnip**: Skin aches; numb yellow and white patches form. Disadvantage on Strength and Dexterity checks.",
+      "**Shiverstruck**: Creature trembles uncontrollably. Spellcasters casting spells with verbal or somatic components must succeed on Constitution saving throws (DC 10 + the spell's level) to cast spells. On a failure, the spell isn't cast, and the slot and action are wasted. Tasks involving Strength and Dexterity take twice as long.",
+      "**Frostbite**: Skin is numb and develops black blisters. Creatures take **1d10** Cold damage each hour they aren't in a warm location and must succeed on a DC 10 Dexterity check to accomplish physical tasks, like drawing a weapon, loading a bow, retrieving items, picking locks, or disarming traps.",
+      "**Ice-Addled**: Creatures are confused and their speech is slurred. Creatures take **2d10** Cold damage each hour they aren't in a warm location, they have Disadvantage on all d20 rolls, their Speed is halved, they can't take Reactions, and they can't cast spells.",
+      "**Kissed by the Ice Maiden**: A creature with severe hypothermia believes it is overheating the moment it suffers this level of hypothermia. It must succeed on a DC 12 Wisdom saving throw or begin to remove its warm clothing. It refuses to wear warm clothing or enter warm locations."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Slippery Ice",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Environmental hazard",
+  "url": "https://5e.tools/trapshazards.html#slippery%20ice_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Slippery ice is Difficult Terrain. A creature that moves onto slippery ice for the first time on a turn or starts its turn there must succeed on a DC 10 Dexterity saving throw or have the Prone condition."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Snow Blindness",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Environmental hazard",
+  "url": "https://5e.tools/trapshazards.html#snow%20blindness_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Snow blindness is a burn on the cornea of the eye by light reflected off snow and ice. The condition typically occurs at high altitudes on white, reflective snow fields. After 1 hour of exposure to a bright, snowy area, a creature must succeed on a Constitution saving throw (DC is 8 + number of hours spent in the area). On a failure, the creature has Disadvantage on attack rolls and ability checks that rely on sight for 24 hours. If the save fails by 5 for more, the creature has the Blinded condition for the same duration instead. Creatures with Immunity to Cold damage or who are naturally adapted to arctic environments automatically succeed on the saving throw."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Strong Wind",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Weather hazard",
+  "url": "https://5e.tools/trapshazards.html#strong%20wind_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Strong wind imposes Disadvantage on ranged attack rolls with weapons. It also extinguishes open flames and disperses fog. A flying creature in a strong wind must land at the end of its turn or fall. A strong wind in a snowy area can create a localized snowstorm that imposes Disadvantage on Wisdom (*Perception*) checks."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Thin Ice",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Environmental hazard",
+  "url": "https://5e.tools/trapshazards.html#thin%20ice_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Thin ice has a weight tolerance of 3d10 * 10 (3d10 × 10) pounds per 10-foot-square area. Whenever the total weight on an area of thin ice exceeds its tolerance, the ice in that area breaks. All creatures on broken ice fall through. Below the ice might be frigid water (see Frigid Water)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Travel Pace in the North",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Wilderness hazard",
+  "url": "https://5e.tools/trapshazards.html#travel%20pace%20in%20the%20north_northlandsworldbook",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Travel in the Northlands is made more difficult by snow, ice, and mountainous terrain. While traveling in snow or arctic conditions, creatures can only maintain a [Fast Pace](https://5e.tools/tables.html#travel%20pace_xphb) if they have appropriate equipment (such as Snowshoes or Skis)."
+   }
+  ],
+  "reprint": null
+ }
+]

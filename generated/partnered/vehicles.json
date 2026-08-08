@@ -1,1 +1,315 @@
-[]
+[
+ {
+  "name": "Ballista",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Ship Upgrade, Siege Weapon",
+  "url": "https://5e.tools/vehicles.html#ballista_northlandsworldbook",
+  "tokenUrl": null,
+  "creatureCapacity": null,
+  "cargoCapacity": null,
+  "travelPace": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A massive crossbow that fires weighted bolts. A ship-mounted ballista can be loaded and aimed by the crew using the Operate Ship Weapon action."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Range: 120/480 ft. **3d10 + ship's Strength/Dexterity modifier** Piercing damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Cost: 1,500 GP"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Dog Sled",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Large Ship",
+  "url": "https://5e.tools/vehicles.html#dog%20sled_northlandsworldbook",
+  "tokenUrl": null,
+  "creatureCapacity": "1 crew\n3 passengers",
+  "cargoCapacity": "0.8 tons",
+  "travelPace": "5 mph.",
+  "description": [],
+  "reprint": null
+ },
+ {
+  "name": "Drakkar",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Gargantuan Ship (140 ft. by 20 ft.)",
+  "url": "https://5e.tools/vehicles.html#drakkar_northlandsworldbook",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/NorthlandsWorldbook/Drakkar.webp",
+  "creatureCapacity": "80 crew\n20 passengers",
+  "cargoCapacity": "60 tons",
+  "travelPace": "4 mph.",
+  "description": [
+   {
+    "name": "Actions",
+    "type": "text",
+    "value": "On its turn, the drakkar can take two actions, choosing from the options below (it can take the same action multiple times). It can take only one action if it has fewer than 40 crew. It can't move or take actions if it has fewer than 3 crew."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fire Ballista**: *Ranged Weapon Attack:* +8 to hit, range 120/480 ft., one target. *Hit:* 24 (**3d10 + 8**) Piercing damage.",
+      "**Row**: The drakkar takes the Dash action.",
+      "**Volley**: Archers release a volley of arrows at a point within 600 feet. Creatures within 30 feet of that point must make a DC 13 Dexterity saving throw, taking 13 (**3d8**) Piercing damage on a failed save, or half as much damage on a success. Creatures that fail the saving throw by 5 or more have their Speed reduced by 10 feet until the start of the drakkar's next turn.",
+      "**Shield Wall**: The rowers raise their shields in defense. This grants creatures in the ship a +5 bonus to their Armor Class and Dexterity Saving throws, but the ship's current Speed is halved until the end of the next round."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Karvi",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Gargantuan Ship (55 ft. by 12 ft.)",
+  "url": "https://5e.tools/vehicles.html#karvi_northlandsworldbook",
+  "tokenUrl": null,
+  "creatureCapacity": "16 crew\n4 passengers",
+  "cargoCapacity": "25 tons",
+  "travelPace": "3 mph.",
+  "description": [
+   {
+    "name": "Actions",
+    "type": "text",
+    "value": "On its turn, the karvi can take one action, choosing from the options below. It can't move or take actions if it has fewer than 2 crew."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Row**: The karvi takes the Dash action.",
+      "**Volley**: Archers release a volley of arrows at a point within 600 feet. Creatures within 30 feet of that point must make a DC 12 Dexterity saving throw, taking 13 (**3d8**) Piercing damage on a failed save, or half as much damage on a success. Creatures that fail the saving throw by 5 or more have their Speed reduced by 10 feet until the start of the karvi's next turn."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Knarr",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Gargantuan Ship (50 ft. by 15 ft.)",
+  "url": "https://5e.tools/vehicles.html#knarr_northlandsworldbook",
+  "tokenUrl": null,
+  "creatureCapacity": "10 crew\n15 passengers",
+  "cargoCapacity": "50 tons",
+  "travelPace": "2 mph.",
+  "description": [
+   {
+    "name": "Actions",
+    "type": "text",
+    "value": "On its turn, the knarr can take one action, choosing from the options below. It can't move or take actions if it has fewer than 2 crew."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Row**: The knarr takes the Dash action.",
+      "**Volley**: Archers release a volley of arrows at a point within 600 feet. Creatures within 30 feet of that point must make a DC 12 Dexterity saving throw, taking 9 (**2d8**) Piercing damage on a failed save, or half as much damage on a success. Creatures that fail the saving throw by 5 or more have their Speed reduced by 10 feet until the start of the karvi's next turn."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Naval Ram",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Ship Upgrade, Siege Weapon",
+  "url": "https://5e.tools/vehicles.html#naval%20ram_northlandsworldbook",
+  "tokenUrl": null,
+  "creatureCapacity": null,
+  "cargoCapacity": null,
+  "travelPace": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This metal and wood ram is mounted to the front of the ship at or below the water level. It can be used to smash a hole in the side of another vessel. If the ship moves more than 30 feet first, a ram deals an additional **1d10** Piercing damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**3d10 + ship's Strength/Dexterity modifier** Piercing damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Cost: 500 GP"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Ogre War Sled (pulled by two Worgs)",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Huge Ship",
+  "url": "https://5e.tools/vehicles.html#ogre%20war%20sled%20(pulled%20by%20two%20worgs)_northlandsworldbook",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/NorthlandsWorldbook/Ogre%20War%20Sled%20(pulled%20by%20two%20Worgs).webp",
+  "creatureCapacity": "2 crew",
+  "cargoCapacity": "1 tons",
+  "travelPace": "4 mph.",
+  "description": [
+   {
+    "name": "Actions",
+    "type": "text",
+    "value": "On its turn, the driver of the war sled may use one of the following actions in place of its normal actions"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Sled Trample**: The sled moves at least 30 feet in a straight line. Each creature trampled by the sled must make a DC 15 Dexterity saving throw. On a failed save, a creature takes **2d10** Bludgeoning and **2d10** Slashing damage, and has the Prone condition. On a successful save, the target takes half as much damage and does not have the Prone condition.",
+      "**Worg Attack**: The sled moves at least 10 feet in a straight line, ending adjacent to a creature or object. The two __Worgs__ pulling the sled may each make one attack against the target. If both __Worgs__ hit with their attacks, the driver may also make one melee weapon attack against the target."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Ship Catapult",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Ship Upgrade, Siege Weapon",
+  "url": "https://5e.tools/vehicles.html#ship%20catapult_northlandsworldbook",
+  "tokenUrl": null,
+  "creatureCapacity": null,
+  "cargoCapacity": null,
+  "travelPace": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A small ship-mounted catapult used to throw stones at enemy vessels. Loading and aiming a ship catapult requires a Utilize action, and firing it uses another. Multiple crew can operate the same siege weapon to perform these actions in the same round."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Range: 200/800 ft. **3d10 + ship's Strength/Dexterity modifier** Bludgeoning damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Cost: 750 GP"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Skeid",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Gargantuan Ship (100 ft. by 15 ft.)",
+  "url": "https://5e.tools/vehicles.html#skeid_northlandsworldbook",
+  "tokenUrl": null,
+  "creatureCapacity": "50 crew\n30 passengers",
+  "cargoCapacity": "20 tons",
+  "travelPace": "5 mph.",
+  "description": [
+   {
+    "name": "Actions",
+    "type": "text",
+    "value": "On its turn, the skeid can take two actions, choosing from the options below (it can take the same action multiple times). It can take only one action if it has fewer than 25 crew. It can't move or take actions if it has fewer than 3 crew."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fire Ballista**: *Ranged Weapon Attack:* +6 to hit, range 120/480 ft., one target. *Hit:* 22 (**3d10 + 6**) Piercing damage.",
+      "**Row**: The skeid takes the Dash action.",
+      "**Volley**: Archers release a volley of arrows at a point within 600 feet. Creatures within 30 feet of that point must make a DC 13 Dexterity saving throw, taking 13 (**3d8**) Piercing damage on a failed save, or half as much damage on a success. Creatures that fail the saving throw by 5 or more have their Speed reduced by 10 feet until the start of the skeid's next turn.",
+      "**Shield Wall**: The rowers raise their shields in defense. This grants creatures in the ship a +5 bonus to their Armor Class and Dexterity Saving throws, but the ship's current Speed is reduced by half until the end of the next round."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Snekkja",
+  "source": "NorthlandsWorldbook",
+  "subtitle": "Gargantuan Ship (60 ft. by 8 ft.)",
+  "url": "https://5e.tools/vehicles.html#snekkja_northlandsworldbook",
+  "tokenUrl": null,
+  "creatureCapacity": "30 crew\n10 passengers",
+  "cargoCapacity": "10 tons",
+  "travelPace": "5 mph.",
+  "description": [
+   {
+    "name": "Actions",
+    "type": "text",
+    "value": "On its turn, the snekkja can take two actions, choosing from the options below (it can take the same action multiple times). It can take only one action if it has fewer than 15 crew. It can't move or take actions if it has fewer than 3 crew."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Row**: The snekkja takes the Dash action.",
+      "**Volley**: Archers release a volley of arrows at a point within 600 feet. Creatures within 30 feet of that point must make a DC 12 Dexterity saving throw, taking 13 (**3d8**) Piercing damage on a failed save, or half as much damage on a success. Creatures that fail the saving throw by 5 or more have their Speed reduced by 10 feet until the start of the snekkja's next turn.",
+      "**Shield Wall**: The rowers raise their shields in defense. This grants creatures in the ship a +5 bonus to their Armor Class and Dexterity Saving throws, but the ship's current Speed is halved until the end of the next round."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Stokkvari",
+  "source": "NorthlandsSagas",
+  "subtitle": "Gargantuan Ship (110 ft. by 25 ft.)",
+  "url": "https://5e.tools/vehicles.html#stokkvari_northlandssagas",
+  "tokenUrl": null,
+  "creatureCapacity": "24 crew\n6 passengers",
+  "cargoCapacity": "30 tons",
+  "travelPace": "6 mph.",
+  "description": [
+   {
+    "name": "Actions",
+    "type": "text",
+    "value": "On its turn, Stokkvari can take two actions, choosing from the options below (it can take the same action multiple times). It can take only one action if it has fewer than 40 crew. It can't move or take actions if it has fewer than 3 crew."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Fire Ballista**: *Ranged Weapon Attack:* +8 to hit, range 120/480 ft., one target. *Hit:* 24 (**3d10 + 8**) Piercing damage.",
+      "**Row**: Stokkvari takes the Dash action.",
+      "**Shield Wall**: Order the rowers to raise their shields in defense. This grants creatures in the ship a +5 bonus to their Armor Class and Dexterity saving throws, but the ship's current Speed is reduced by half until the end of the next round.",
+      "**Volley**: Archers release a volley of arrows at a point within 600 feet. Creatures within 30 feet of that point must make a DC 13 Dexterity saving throw, taking 13 (**3d8**) Piercing damage on a failure, or half as much on a success. Creatures that fail the saving throw by 5 or more have their Speed reduced by 10 feet until the start of Stokkvari's next turn."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ }
+]

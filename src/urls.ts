@@ -81,6 +81,10 @@ export function getBestiaryUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/bestiary.html`, name, source);
 }
 
+export function getCharCreationOptionUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/charcreationoptions.html`, name, source);
+}
+
 export function getClassesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/classes.html`, name, source);
 }

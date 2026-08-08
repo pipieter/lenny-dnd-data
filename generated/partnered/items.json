@@ -1492,6 +1492,26 @@
   "reprint": null
  },
  {
+  "name": "Andahestur",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#andahestur_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "mount"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Andahestur's stats here](https://5e.tools/bestiary.html#andahestur_northlandsworldbook)"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Angelskin Armor",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#angelskin%20armor_grimhollowcg24",
@@ -1756,6 +1776,52 @@
     "name": "",
     "type": "text",
     "value": "If you end or lose Attunement to this magic item, the tattoo disappears and all other effects of this potion end."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Antlered Headband of Chernobog",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#antlered%20headband%20of%20chernobog_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "legendary (requires attunement by a Bard, Paladin, Sorcerer, or Warlock)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Bone-white antlers, the tips stained with dried blood, are mounted on a tanned leather headband stained with the black ichor that oozes from the bases of the antlers."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this headband, you gain the following benefits."
+   },
+   {
+    "name": "Devil's Sight",
+    "type": "text",
+    "value": "You can see normally in Dim Light and Darkness—both magical and nonmagical—within **120 feet** of yourself."
+   },
+   {
+    "name": "Antler Charge",
+    "type": "text",
+    "value": "You can make a melee weapon attack with the antlers. Add your Proficiency Bonus and your Strength modifier to the attack roll. The antlers deal **1d10** Piercing damage plus your Strength modifier. The antlers have the __Push__ Weapon Mastery property, and you get it for free (with the antlers only) if you do not have access to Weapon Mastery as a class feature. If you have Weapon Mastery as a class feature, you can use Push with the antlers. If you do, you push creatures hit by your attacks with the antlers 15 feet instead of 10 feet."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you move at least 15 feet in a straight line before dealing damage to a creature with the antlers, that creature must succeed on a DC 15 Charisma saving throw or have the Frightened condition for **1 minute**. At the end of each of its turns, the Frightened target repeats the save, ending the effect on a success."
+   },
+   {
+    "name": "Spells",
+    "type": "text",
+    "value": "The headband has **3 charges** and regains 1d3 expended charges daily at dawn. You can take a Magic action to expend 1 or more of its charges to cast one of the following spells from it using your spell save DC: __Darkness__ (1 charge), __Dominate Monster__ (3 charges). You can target Undead creatures with this use of __Dominate Monster__, even if they ordinarily have Immunity to it."
    }
   ],
   "properties": [],
@@ -2976,6 +3042,37 @@
   "reprint": null
  },
  {
+  "name": "Arm Ring of Self-Sacrifice",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#arm%20ring%20of%20self-sacrifice_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This arm ring is mildly painful to wear. This arm ring has **5 charges** and regains 1d4 + 1 expended charges daily at dawn. While you are wearing it, you can use its charges as follows:"
+   },
+   {
+    "name": "Aggressive Strike",
+    "type": "text",
+    "value": "When you hit a creature with an attack, you can expend **2 charges** to deal maximum damage with the attack. However, you also take Force damage equal to the minimum possible damage of the attack, and you cannot reduce or mitigate this damage in any way."
+   },
+   {
+    "name": "Redirection",
+    "type": "text",
+    "value": "When a creature you can see makes an attack roll against an ally within **5 feet** of you, you can use your Reaction and expend **1 charge** to become the target of the attack instead."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Armor of Icarus",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#armor%20of%20icarus_griffonssaddlebag2",
@@ -3194,6 +3291,27 @@
   "properties": [
    "AC 14 + Dex"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Arrow of Ice-Trapping",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#arrow%20of%20ice-trapping_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "0.8 oz.",
+  "type": [
+   "ammunition",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This arrow deals an additional **1d6** Cold damage on a successful hit. If a creature takes damage from the ammunition, it must make a DC 15 Strength saving throw. On a failed save, the target has the Restrained condition due to being trapped in bands of ice. It can make a save at the end of each of its turns to end the Restrained condition. While it has the Restrained condition, the target takes **1d6** Cold damage at the start of each of its turns. The target or a creature within reach of it can take an action to make a DC 15 Strength (*Athletics*) check to free it."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -4065,6 +4183,53 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Atgeir",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#atgeir_northlandsworldbook",
+  "image": null,
+  "value": "25 gp",
+  "weight": "7 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A polearm with a large, single-edged blade attached along the side of the haft. Atgeirs are thrusting weapons often used to lever enemies out of position after they have been struck."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Pull",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can pull the creature 5 feet toward yourself if it is Large or smaller. When you do so, you can also move back 5 feet without provoking Opportunity Attacks, and this does not use any of your normal movement speed."
+   }
+  ],
+  "properties": [
+   "**1d10** Piercing",
+   "heavy",
+   "reach",
+   "two-handed",
+   "mastery: pull"
+  ],
   "reprint": null
  },
  {
@@ -6183,6 +6348,47 @@
   "reprint": null
  },
  {
+  "name": "Bearded Axe",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#bearded%20axe_northlandsworldbook",
+  "image": null,
+  "value": "30 gp",
+  "weight": "6 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The hook-shaped \"beard\" at the lower edge of the head of a bearded axe gives it its characteristic silhouette and provides a larger cutting edge than standard battle axes without excessively increasing its weight."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Cleave",
+    "type": "text",
+    "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d10** Slashing",
+   "heavy",
+   "versatile (1d12)",
+   "mastery: cleave"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Bearskin Cloak",
   "source": "BookOfEbonTides",
   "url": "https://5e.tools/items.html#bearskin%20cloak_bookofebontides",
@@ -6247,6 +6453,33 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Beinagrind",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#beinagrind_northlandsworldbook",
+  "image": null,
+  "value": "50 gp",
+  "weight": "40 lb.",
+  "type": [
+   "heavy armor"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This armor is formed by carving disks or short shingles out of whale or giant bones and lacing them to a backing of flexible leather."
+   },
+   {
+    "name": "Stealth Disadvantage",
+    "type": "text",
+    "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+   }
+  ],
+  "properties": [
+   "AC 15"
+  ],
   "reprint": null
  },
  {
@@ -6426,6 +6659,43 @@
   "reprint": null
  },
  {
+  "name": "Bell-Ringing Greatclub",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#bell-ringing%20greatclub_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "10 lb.",
+  "type": [
+   "weapon (greatclub)",
+   "simple weapon",
+   "melee weapon",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This Greatclub is fashioned from the clapper of a giant's bell. When you score a Critical Hit with this Greatclub, you can choose for the target to have the Stunned condition until the start of your next turn instead of dealing the extra damage from the Critical Hit."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Push",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+   }
+  ],
+  "properties": [
+   "**1d8** Bludgeoning",
+   "two-handed",
+   "mastery: push"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Bellhop Topper",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#bellhop%20topper_griffonssaddlebag2",
@@ -6486,6 +6756,32 @@
    "ammunition"
   ],
   "description": [],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Belt of the Berserker",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#belt%20of%20the%20berserker_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement by a Barbarian with the Reckless Attack Class Feature)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this wolf-hide belt, you can choose to use the following feature each time you activate your Rage class feature:"
+   },
+   {
+    "name": "Foolhardy Rage",
+    "type": "text",
+    "value": "While you are Raging, you gain an extra Bonus Action each turn that you can only use to extend your Rage or to take the Dash action. If you use it to take the Dash action, you cannot take the Dash action again on that turn. In addition, you gain a +1 Bonus to your Rage Damage. Finally, you must use your Reckless Attack Class feature on each of your turns during your Rage, or your Rage ends."
+   }
+  ],
   "properties": [],
   "reprint": null
  },
@@ -6580,6 +6876,26 @@
   "reprint": null
  },
  {
+  "name": "Berserker's Mead",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#berserker's%20mead_northlandsworldbook",
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "For **1 minute** after you consume this potion, you are Immune to the first 40 points of damage you take."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Bicycle",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#bicycle_obojimatallgrass",
@@ -6646,6 +6962,32 @@
     "name": "",
     "type": "text",
     "value": "When the effect ends, the toy becomes nonmagical. If the toy is of Uncommon rarity, it instead can't be used again for 1d4 hours after the effect ends. It gives a happy little chirp once its magic can be used again."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Birdcage of Innocuousness",
+  "source": "NorthlandsSagas",
+  "url": "https://5e.tools/items.html#birdcage%20of%20innocuousness_northlandssagas",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This silver birdcage, sized for giants, features figures of songbirds giving the impression they fly around its exterior."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a creature with a Fly Speed enters the birdcage, it must make a DC 14 Wisdom saving throw, becoming docile on a failure until it leaves the cage (on a success it can open the cage from the inside and escape). A creature outside the cage can use a Bonus Action to open or close it. A creature outside the cage also can use an action to speak a command word to either create an illusion of a harmless songbird in place of the creature inside or revert the illusion to the caged creature's true appearance. When a creature exits the birdcage, it returns to its true appearance."
    }
   ],
   "properties": [],
@@ -11246,6 +11588,53 @@
   "reprint": null
  },
  {
+  "name": "Breidox",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#breidox_northlandsworldbook",
+  "image": null,
+  "value": "45 gp",
+  "weight": "11 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Essentially a greataxe with a longer haft, the breidox was developed to deliver a powerful slash to opponents behind a protective shield wall."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d10** Slashing",
+   "heavy",
+   "reach",
+   "two-handed",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Bridge Seed",
   "source": "BookOfEbonTides",
   "url": "https://5e.tools/items.html#bridge%20seed_bookofebontides",
@@ -11731,6 +12120,53 @@
   "reprint": null
  },
  {
+  "name": "Bryntroll",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#bryntroll_northlandsworldbook",
+  "image": null,
+  "value": "35 gp",
+  "weight": "7 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A massive chopping blade mounted at the end of a long pole, the bryntroll is designed to pierce the tough hides of giants."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Slow",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+   }
+  ],
+  "properties": [
+   "**1d10** Slashing",
+   "heavy",
+   "reach",
+   "two-handed",
+   "mastery: slow"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Bubble Gum",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#bubble%20gum_obojimatallgrass",
@@ -12075,6 +12511,27 @@
    "versatile (1d6)",
    "special"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Bygul's Paw Boots",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#bygul's%20paw%20boots_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These fluffy boots have wide soles and sharp spikes along the front that act as crampons. While wearing the boots, you can move through Difficult Terrain caused by snow or ice without expending additional movement, automatically pass Dexterity (*Acrobatics*) checks to avoid having the Prone condition, and you have Advantage on Strength (*Athletics*) checks to climb. While wearing the boots your footprints resemble those of a large cat."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -15917,6 +16374,27 @@
     "name": "",
     "type": "text",
     "value": "Additionally, you can take an action to transform into a wolf, eagle, or seal for up to 1 hour. The transformation otherwise functions as the __Polymorph__ spell, but you can take a Bonus Action to revert to your normal form. Once used, this property can't be used again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Cloak of Wide-Ranging",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#cloak%20of%20wide-ranging_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this wolf-skin cloak, you have Advantage on Constitution saving throws to avoid levels of Exhaustion after traveling for more than 8 hours in a day."
    }
   ],
   "properties": [],
@@ -21004,6 +21482,27 @@
   "reprint": null
  },
  {
+  "name": "Defender Honey",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#defender%20honey_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The honey is light brown and has a smooth sweetness. For **10 minutes** after you consume this honey, you can use your Reaction to put yourself between an attack that would hit an ally within **5 feet** of you. The attack targets you instead with the same attack roll."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Delerium Crystal Focus",
   "source": "DungeonsDrakkenheim",
   "url": "https://5e.tools/items.html#delerium%20crystal%20focus_dungeonsdrakkenheim",
@@ -22085,6 +22584,33 @@
    "momentum ({{item.customproperties.momentum}})",
    "two-handed",
    "mastery: set"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Double Mail",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#double%20mail_northlandsworldbook",
+  "image": null,
+  "value": "350 gp",
+  "weight": "65 lb.",
+  "type": [
+   "heavy armor"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Also called tvifold brynja, the rings of this chain mail are doubled, so each pair is passed through by four pairs of other rings. It is very heavy and bulky."
+   },
+   {
+    "name": "Stealth Disadvantage",
+    "type": "text",
+    "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+   }
+  ],
+  "properties": [
+   "AC 17"
   ],
   "reprint": null
  },
@@ -24342,6 +24868,27 @@
   "reprint": null
  },
  {
+  "name": "Einherjar's Drinking Horn",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#einherjar's%20drinking%20horn_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This ornately carved drinking horn has **6 charges** and regains 1d6 charges each day at dawn. It appears empty, but the holder can expend a charge to take a Magic action and put it to their lips to drink a draught of delicious mead. Any creature drinking this mead is invigorated, gaining enough nourishment to sustain it for a day. Alternatively, a creature can drink from the horn as a Magic action and expend **6 charges** to gain the same benefits, and the horn removes 1 level of Exhaustion from that creature. A creature cannot benefit from this reduction in Exhaustion more than two days in a row."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Elder Elixir",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#elder%20elixir_obojimatallgrass",
@@ -26363,6 +26910,48 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Feather Token (Raven)",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#feather%20token%20(raven)_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use a Magic action to throw this black token into the air. You can see and hear through the token for one hour. The token disappears afterwards or if the distance between you and it exceeds 1 mile. The bird has the statistics of a __Raven__."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Feather Token (Snowy Owl)",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#feather%20token%20(snowy%20owl)_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use a Magic action to wave this white and grey feather across a creature's face. For **1 hour**, that creature can take the Hide action without the usual requirements of being Obscured or behind Cover, as long as it is against snowy terrain."
    }
   ],
   "properties": [],
@@ -31469,6 +32058,27 @@
   "reprint": null
  },
  {
+  "name": "Glacierpress Boots",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#glacierpress%20boots_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The furry uppers of these boots have ice and gravel matted into them that never melts. These boots have **3 charges** and regain 1d3 expended charges daily at dawn. While wearing the boots, you can take a Magic action to expend **1 charge** to activate them for **1 hour**. While the boots are active, you can move in a straight line through the space of any creature smaller than Huge. You do not provoke Opportunity Attacks due to this movement. The first time you enter a creature's space during this move, it must succeed on a DC 15 Strength saving throw or be pushed ahead of you for the rest of your move."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Gladiator Net",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/items.html#gladiator%20net_grimhollowpg24",
@@ -31646,6 +32256,29 @@
    "heavy",
    "reach",
    "two-handed"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Glamsyni Shield",
+  "source": "NorthlandsSagas",
+  "url": "https://5e.tools/items.html#glamsyni%20shield_northlandssagas",
+  "image": null,
+  "value": null,
+  "weight": "6 lb.",
+  "type": [
+   "shield",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This round metal shield is emblazoned with the glamsyni rune. While wielding it, you can use a reaction to teleport up to 10 feet to an unoccupied space you can see. This property can't be used again until the next dawn."
+   }
+  ],
+  "properties": [
+   "+2 AC"
   ],
   "reprint": null
  },
@@ -32351,6 +32984,48 @@
     "name": "",
     "type": "text",
     "value": "While you're wearing these goggles, your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Goggles of Snowsight",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#goggles%20of%20snowsight_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing these multifaceted blue crystal goggles, you do not have Disadvantage on Wisdom (*Perception*) checks to see through areas that are Lightly Obscured by blowing snow, sand, or other debris."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Goggles of Tracking",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#goggles%20of%20tracking_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These goggles have multiple lenses that can be swiveled. The goggles have **3 charges**. While wearing the goggles, you can take a Magic action to expend a charge. For **1 hour**, you can see any tracks that were obscured by natural phenomena such as rain, snow, or blowing sand in the last week. In addition, you have Advantage on ability checks to track creatures. The goggles regain 1d3 expended charges daily at dawn."
    }
   ],
   "properties": [],
@@ -34661,6 +35336,33 @@
   "reprint": null
  },
  {
+  "name": "Hardened Mail Shirt",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#hardened%20mail%20shirt_northlandsworldbook",
+  "image": null,
+  "value": "500 gp",
+  "weight": "40 lb.",
+  "type": [
+   "medium armor"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This chain shirt has rings of adamantine or mithral woven into key areas to provide more protection than normal mail."
+   },
+   {
+    "name": "Stealth Disadvantage",
+    "type": "text",
+    "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+   }
+  ],
+  "properties": [
+   "AC 15 + Dex (max 2)"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Harp",
   "source": "TLotRR",
   "url": "https://5e.tools/items.html#harp_tlotrr",
@@ -36486,6 +37188,32 @@
   "reprint": null
  },
  {
+  "name": "Hel's Coin",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#hel's%20coin_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While carrying this blackened silver coin, if you fail a Death Saving Throw, you treat the save as a success instead. Then the coin crumbles into dust."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you carry more than one Hel's Coin, you gain the following curse instead. If you succeed on a Death Saving Throw, you treat the success as a failure. Then one Hel's Coin crumbles to dust. This curse remains until there is only one coin left in your possession, whereupon that coin's normal effect resumes. You can freely divest yourself of extra coins."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Heliana's Guide to Monster Hunting (uncommon)",
   "source": "HelianasGuidetoMonsterHunting",
   "url": "https://5e.tools/items.html#heliana's%20guide%20to%20monster%20hunting%20(uncommon)_helianasguidetomonsterhunting",
@@ -37383,6 +38111,27 @@
   "reprint": null
  },
  {
+  "name": "Hjartarydi's Belt",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#hjartarydi's%20belt_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Touching this blood-red leather belt fills you with a sense of comfort. While you have the belt equipped, you have Advantage on saving throws against the Charmed and Frightened conditions."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Hoarder's Haul",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#hoarder's%20haul_griffonssaddlebag2",
@@ -37555,6 +38304,27 @@
   "reprint": null
  },
  {
+  "name": "Hollow Eye",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#hollow%20eye_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This small wooden talisman is shaped like a large eyeball with an empty void in place of the pupil. While holding the eye, as a Magic action, you can expend 1 of your Hit Dice to drip a small quantity of your own blood into the eye and cast either the __Arcane Eye__ spell or the __Divination__ spell. Once you use the eye once, it can't be used again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Homegrown",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#homegrown_obojimatallgrass",
@@ -37678,6 +38448,132 @@
     "name": "",
     "type": "text",
     "value": "20"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Honey of Robust Health",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#honey%20of%20robust%20health_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you consume this honey as part of a Short Rest, you can reroll any result of 1 or 2 on Hit Dice spent to regain Hit Points during that rest. You must use the new roll. The honey has a deep red tinge and a rich flavor, and it warms the stomach."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Honey of the Hearth Fire",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#honey%20of%20the%20hearth%20fire_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you consume this honey, you end the Blinded, Deafened, Frightened, and Poisoned conditions on yourself."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Honey of the Hive Warden",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#honey%20of%20the%20hive%20warden_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you consume this honey, you have Resistance to Poison for **1 hour**. Once during the duration, you may cast __Insect Plague__ (DC 15). Instead of locusts dealing Piercing damage, the spell creates bees that deal Poison damage."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Honey of the Norn-Blessed",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#honey%20of%20the%20norn-blessed_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you consume this honey, you have Advantage on Dexterity saving throws for **1 hour**. Once during the duration, you may cast __Augury__."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Honey of the Sacred Bear",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#honey%20of%20the%20sacred%20bear_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you consume this honey, you have Advantage on Strength checks for **1 hour**. Once during the duration, you may cast __Heroism__ on yourself, requiring no *Concentration*."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Honey of the Skald's Tongue",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#honey%20of%20the%20skald's%20tongue_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you consume this honey, you have Advantage on *Performance* and *Persuasion* checks for **1 hour**. Once during the duration, you may cast __Suggestion__ (DC 15)."
    }
   ],
   "properties": [],
@@ -38100,6 +38996,48 @@
   "reprint": null
  },
  {
+  "name": "Horn of Battle's Call",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#horn%20of%20battle's%20call_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This leather-wrapped horn is bound with stout iron bands. When you blow this horn as an action, choose up to five allies within **120 feet** of you who can hear you. Each target has Advantage on melee weapon attacks until the start of your next turn and gains 10 Temporary Hit Points. The Frightened condition ends on all targets. Once you blow the horn, it can't be used again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Horn of the Hrimthursar",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#horn%20of%20the%20hrimthursar_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This ivory horn, also known as the Horn of Frozen Breath, is typically carved from the bone of a white dragon, remorhaz, or another arctic monster. When you sound the horn, it creates a blast of freezing wind in a **60-foot** Cone. Each creature in the Cone takes **4d6** Cold damage and has the Incapacitated condition until the start of your next turn. A successful DC 15 Constitution saving throw halves the damage and negates the Incapacitated condition. Once you blow the horn, it can't be used again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Horn of the Wild Hunt",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#horn%20of%20the%20wild%20hunt_griffonssaddlebag2",
@@ -38125,6 +39063,32 @@
     "name": "",
     "type": "text",
     "value": "When you blow the horn, it emits a deep, rumbling tone that is audible 300 feet away."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Horn of the Wild Hunt",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#horn%20of%20the%20wild%20hunt_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "legendary"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This black horn appears normal during daylight, but in darkness it glitters like a starlit sky. The horn has **4 charges** and regains 1d4 charges daily at sunset."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you blow this horn, you can expend **1 charge** to cast __Conjure Animals__, or **3 charges** to cast __Conjure Fey__ (conjuring a spectral hunter)."
    }
   ],
   "properties": [],
@@ -38862,6 +39826,26 @@
   "reprint": null
  },
  {
+  "name": "Ice Wall Orb",
+  "source": "NorthlandsSagas",
+  "url": "https://5e.tools/items.html#ice%20wall%20orb_northlandssagas",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can cast __Wall of Ice__ using Charisma as her spellcasting ability (spell save DC 16). The wall created by this item requires no *Concentration* and lasts 1 minute."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Idol of the Beast of Blight (Legendary)",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/items.html#idol%20of%20the%20beast%20of%20blight%20(legendary)_crookedmoon24",
@@ -39181,6 +40165,37 @@
     "name": "Trade Good",
     "type": "text",
     "value": "Merchants commonly exchange trade goods without using currency."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Incendiary Coal",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#incendiary%20coal_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This lump of coal is pleasingly warm to the touch. As a Magic action, you breathe gently into the coal to ignite it and can then throw it up to **30 feet**, where it blossoms into a **5-foot** Sphere of fire."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature that ends its turn within or adjacent to the Sphere must make a DC 15 Dexterity saving throw, taking **1d6** Fire damage on a failure and half as much on a success. Flammable objects in or adjacent to the Sphere that aren't being worn or carried start burning."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the end of each of your subsequent turns, the size of the Emanation increases by 5 feet, and the Fire damage dealt increases by **1d6** until it reaches its maximum size of 30 feet and maximum damage of **6d6**. At the end of each of your turns after that, the size of the Emanation decreases by 5 feet, and the Fire damage dealt decreases by **1d6** until both reach 0, at which point the coal cannot be used again until the next dawn."
    }
   ],
   "properties": [],
@@ -40525,6 +41540,42 @@
   "reprint": null
  },
  {
+  "name": "Iron Traitor's Arm Ring",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#iron%20traitor's%20arm%20ring_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This arm ring has the rough appearance of hammered iron. You can take a Utilize action to swing the arm ring at a Huge or smaller creature within **5 feet** of yourself."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Make a melee attack roll with an attack bonus equal to your Strength or Dexterity modifier plus your Proficiency Bonus. On a hit, the arm ring coils around the target's arm, and the magical properties of magic items held or worn by the target cease to function until you take a Bonus Action to issue a command that releases the arm ring."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature that can touch the arm ring, including the one wearing it, can take an action to make a DC 20 Strength (*Athletics*) check to remove the arm ring. On a successful check, the item is removed, and the creature is freed from its effect. On a failed check, any further attempts made by that creature automatically fail until 24 hours have elapsed. The arm ring can also be removed if the limb is severed or if the ring is destroyed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once the arm ring is used, it can't be used again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Ironleaf Maul of Entanglement",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#ironleaf%20maul%20of%20entanglement_24griffonssaddlebag1",
@@ -40968,6 +42019,26 @@
     "name": "",
     "type": "text",
     "value": "While wearing these pants, you count as one size smaller while riding a non-Humanoid creature as a mount, provided you aren't wearing Heavy armor."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Jotunskull Helm",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#jotunskull%20helm_northlandsworldbook",
+  "image": null,
+  "value": "290 gp",
+  "weight": "4 lb.",
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Favored by those who wish to project a fearsome aspect, these helms are fashioned from the cleaned bones of a sufficiently large giant. When you wear one, you have Advantage on Charisma (*Intimidation*) checks against Giants (at the GM's discretion)."
    }
   ],
   "properties": [],
@@ -42749,6 +43820,29 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Laekning Shield",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#laekning%20shield_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "6 lb.",
+  "type": [
+   "shield",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this Shield, you have a +1 bonus to Armor Class, in addition to the Shield's normal bonus to Armor Class. This round Shield magically repairs itself and is not destroyed at the end of an encounter where you are struck."
+   }
+  ],
+  "properties": [
+   "+2 AC"
+  ],
   "reprint": null
  },
  {
@@ -46198,6 +47292,26 @@
   "reprint": null
  },
  {
+  "name": "Mammoth",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#mammoth_northlandsworldbook",
+  "image": null,
+  "value": "1.000 gp",
+  "weight": null,
+  "type": [
+   "mount"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Mammoth's stats here](https://5e.tools/bestiary.html#mammoth_xmm)"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Mammoth Boots",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#mammoth%20boots_24griffonssaddlebag1",
@@ -47699,6 +48813,31 @@
    "thrown (20/60 ft.)",
    "mastery: nick"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Master's Tonrosp Flute",
+  "source": "NorthlandsSagas",
+  "url": "https://5e.tools/items.html#master's%20tonrosp%20flute_northlandssagas",
+  "image": null,
+  "value": "5.000 gp",
+  "weight": "1 lb.",
+  "type": [
+   "instrument"
+  ],
+  "description": [
+   {
+    "name": "Extraordinary Quality",
+    "type": "text",
+    "value": "A flute of extraordinary quality that grants +2 to *Performance* checks."
+   },
+   {
+    "name": "Tool (Musical Instrument)",
+    "type": "text",
+    "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -49408,6 +50547,26 @@
   "reprint": null
  },
  {
+  "name": "Moose",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#moose_northlandsworldbook",
+  "image": null,
+  "value": "75 gp",
+  "weight": null,
+  "type": [
+   "mount"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Moose's stats here](https://5e.tools/bestiary.html#moose_northlandsworldbook)"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Morath, Scepter of the Soul Vortex",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#morath%2C%20scepter%20of%20the%20soul%20vortex_griffonssaddlebag2",
@@ -49590,6 +50749,37 @@
     "name": "",
     "type": "text",
     "value": "31"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Mother's Comb",
+  "source": "NorthlandsSagas",
+  "url": "https://5e.tools/items.html#mother's%20comb_northlandssagas",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "artifact"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This bone comb is sized to assist with the weaving of cloth on a loom. It appears quite plain and unadorned. Using the __Identify__ spell on the comb reveals its name but no other features."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When someone views the comb using __Detect Magic__, it radiates extraordinarily powerful Divination magic."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The comb first appears in Among the Norns (SagasAdventure) and returns in The Redspear Trail (NorthlandsSagas)."
    }
   ],
   "properties": [],
@@ -49926,6 +51116,32 @@
     "name": "",
     "type": "text",
     "value": "36"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Mug of Friendship",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#mug%20of%20friendship_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use a Magic action to enchant any potable liquid within this flagon. A creature that drinks the enchanted liquid is Friendly to you, and you have Advantage on Charisma (*Persuasion*) checks against it for **1 hour**. After the hour is over, the creature is still Friendly, though its attitude can change based on your behavior."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After it has been used to enchant liquid once, it cannot be used again until the next dawn."
    }
   ],
   "properties": [],
@@ -51387,6 +52603,32 @@
   "reprint": null
  },
  {
+  "name": "Nine-Escape Knot",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#nine-escape%20knot_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This one-foot-long rope of woven fox tails channels the power of the trickster Loki to escape difficult situations. While you hold it or have it on you, you have Advantage on checks or saving throws made to avoid or end the Grappled or Restrained conditions."
+   },
+   {
+    "name": "Unraveling",
+    "type": "text",
+    "value": "As a Magic action, you can unravel one of the nine knots in the rope to cast one of the following spells, using Charisma as your spellcasting ability: __Calm Emotions__, __Charm Person__, __Confusion__, __Disguise Self__, __Enthrall__, __Feign Death__, __Greater Invisibility__, __Mirror Image__, and __Misty Step__. Each of these spells may be cast only once by the item. When the last knot is unraveled, the rope loses its magic."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "No-Stones",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#no-stones_griffonssaddlebag2",
@@ -51611,6 +52853,27 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Northlander's Boots",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#northlander's%20boots_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The wearer of these furred boots can use a Bonus Action to transform them into Snowshoes, Ice Skates, or Skis, and back again."
    }
   ],
   "properties": [],
@@ -52772,6 +54035,27 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ottaveggr Talharpa",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ottaveggr%20talharpa_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This Northlands Lyre is strung with cords made of braided jotun hair. As a Magic action, you can play the talharpa to grant all your allies within **60 feet** who can hear it Advantage on saves against the Frightened condition and on Strength (*Athletics*) checks for **1 hour**. Once this ability has been used, it cannot be used again until the next dawn."
    }
   ],
   "properties": [],
@@ -56828,6 +58112,27 @@
   "reprint": null
  },
  {
+  "name": "Potion of Near-Death Portent",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#potion%20of%20near-death%20portent_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This potion's cloudy grey fluid has a golden thread suspended in it. Drinking this potion gives you a vague vision of your potential death. The next time within **1 hour** that you would be reduced to 0 Hit Points, you can use a Reaction and roll 1d20. If the roll is 10 or higher, you take no damage. If the roll is less than 10, you are reduced to 1 Hit Point instead."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Potion of Relentlessness",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#potion%20of%20relentlessness_grimhollowcg24",
@@ -59347,6 +60652,53 @@
   "reprint": null
  },
  {
+  "name": "Ravenflight Axe",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ravenflight%20axe_northlandsworldbook",
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "weapon (handaxe)",
+   "simple weapon",
+   "shield",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you attack a creature with this Handaxe and one of your allies is within **5 feet** of the target, the weapon deals an extra **1d6** Slashing damage."
+   },
+   {
+    "name": "Swarm Attack",
+    "type": "text",
+    "value": "Once per day, you can release the weapon from your hand as an action, at which point it transforms into a **60-foot** Cone of swarming ravens. Make a ranged weapon attack with the axe against each creature of your choice in the Cone. Immediately after completing the last attack, the weapon reappears in your hand. This property can't be used again until the next dawn."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d6** Slashing",
+   "light",
+   "thrown (20/60 ft.)",
+   "mastery: vex"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Ready Gunk",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#ready%20gunk_grimhollowcg24",
@@ -59574,6 +60926,42 @@
     "name": "Heightened Potency",
     "type": "text",
     "value": "For 1 minute after drinking this potion, when you hit a *Bloodied* creature with an attack roll and deal damage to it, the creature takes an extra **1d8** Necrotic damage."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Reaver's Lodestone",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#reaver's%20lodestone_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This stone has a hole drilled through its center, through which runs a leather thong. One end of the stone has the rune for \"person\" etched into it, and the other bears the rune for \"gold.\" The stone has **3 charges** and regains 1d3 expended charges daily at dawn. As a Magic action, you can spend **1 charge** and whisper \"person\" or \"gold\" and dangle the stone from the thong."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When using the command \"person,\" the stone orients and gently pulls toward some number of people. The strength of the pull is stronger when the targets are closer or higher in quantity. The range is 1 mile per gathering of 100 humanoid people, 10 miles for 1000 people, or 100 miles for 10,000 people. A gathering is a temporary or permanent living community, such as a hamlet, village, or town."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When using the command \"gold,\" the stone orients and pulls you toward valuables. The strength of the pull is stronger when the targets are closer or more valuable. The range is 10 feet for coins or art objects worth a total of 100 GP, 100 feet for coins or art objects worth a total of 1000 GP, or 1000 feet for coins or art objects worth a total of 10,000 GP."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whether you use it to find people or gold, it pulls you for **1 minute**."
    }
   ],
   "properties": [],
@@ -59922,6 +61310,26 @@
   "properties": [
    "+2 AC"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Reindeer",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#reindeer_northlandsworldbook",
+  "image": null,
+  "value": "35 gp",
+  "weight": null,
+  "type": [
+   "mount"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Reindeer's stats here](https://5e.tools/bestiary.html#reindeer_northlandsworldbook)"
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -61627,6 +63035,27 @@
   "reprint": null
  },
  {
+  "name": "Ring of Hospitality",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ring%20of%20hospitality_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This ring is fashioned to show two hands shaking in greeting. While wearing this ring, you have Advantage on Charisma (*Persuasion*) checks when you take the Influence action to request shelter from another creature that can understand you."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Ring of Ice",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#ring%20of%20ice_24griffonssaddlebag1",
@@ -61647,6 +63076,27 @@
     "name": "",
     "type": "text",
     "value": "When cast from the ring, the wall appears in a 10-foot Emanation originating from you, which is stationary. The wall is 10 feet high and 1 foot thick."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ring of Ice-Shielding",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ring%20of%20ice-shielding_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This ring has **3 charges**, and it regains 1d3 expended charges daily at dawn. You can use a Reaction to form a **5-foot** square, **1-foot-thick** wall of ice when you are the target of an attack or are required to make a Dexterity saving throw. The wall provides Three Quarters Cover. If the attack misses or you succeed on your save, the ice wall explodes. Any enemies adjacent to it take **1d6** Piercing damage and **1d6** Cold damage."
    }
   ],
   "properties": [],
@@ -61969,6 +63419,27 @@
   "reprint": null
  },
  {
+  "name": "Ring of Surtr",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ring%20of%20surtr_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This ring is roughly forged from a single wrapped shard of coal-black iron. It is warm to the touch. When you deal Fire damage to an object while wearing this ring, you deal an extra **1d8** Fire damage."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Ring of the Arcane Berserker",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#ring%20of%20the%20arcane%20berserker_griffonssaddlebag2",
@@ -62021,6 +63492,119 @@
   "reprint": null
  },
  {
+  "name": "Ring of the Cragtop Jarl",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ring%20of%20the%20cragtop%20jarl_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This polished granite ring bears runes of strength. While wearing the ring, when you attack with a weapon that deals Bludgeoning damage, you score a Critical Hit on a natural 19 or 20."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, the ring has **3 charges** and regains 1d3 expended charges daily at dawn. You can expend its charges to use the properties below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Finally, it has the following property."
+   },
+   {
+    "name": "Bones of the Mountain",
+    "type": "text",
+    "value": "You can expend **1 charge** to cast __False Life__."
+   },
+   {
+    "name": "Mountain Strike",
+    "type": "text",
+    "value": "You can expend **1 charge** when you deal Bludgeoning damage with a melee or ranged attack to push the target 10 feet."
+   },
+   {
+    "name": "Jarlpact Benefit",
+    "type": "text",
+    "value": "If an ally within **120 feet** is attuned to and wearing any other Ring of the Jarlpact, you have Advantage on Strength checks and Strength saving throws."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ring of the Diving Bird",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ring%20of%20the%20diving%20bird_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this ring, you have a Swim Speed equal to any Fly Speed you have."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ring of the Forgefire Jarl",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ring%20of%20the%20forgefire%20jarl_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This black iron ring bears glowing orange runes of fire and metal. While wearing the ring, your melee weapon attacks deal **1d6** extra Fire damage on a hit."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, the ring has **3 charges** and regains 1d3 expended charges daily at dawn. You can expend its charges to use the properties below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Finally, it has the following property."
+   },
+   {
+    "name": "Furnace Blast",
+    "type": "text",
+    "value": "You can expend **1 charge** to cast __Burning Hands__ (level 4 version)."
+   },
+   {
+    "name": "Echo of the Forge",
+    "type": "text",
+    "value": "You can expend **1 charge** to cast __Heat Metal__ (level 4 version)."
+   },
+   {
+    "name": "Jarlpact Benefit",
+    "type": "text",
+    "value": "If an ally within **120 feet** is attuned to and wearing any other Ring of the Jarlpact, you have Advantage on Strength checks and Strength saving throws."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Ring of the Fowl Sentinel",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#ring%20of%20the%20fowl%20sentinel_24griffonssaddlebag1",
@@ -62057,6 +63641,52 @@
     "name": "",
     "type": "text",
     "value": "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, when you make a successful melee attack and use your reaction to expend 1 of the ring's charges, the target must succeed on a DC 13 Constitution saving throw or be paralyzed until the end of its next turn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ring of the Glacial Jarl",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ring%20of%20the%20glacial%20jarl_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This glittering ring of blue-white crystal bears runes of ice and battle. While wearing the ring, your melee weapon attacks deal **1d6** extra Cold Damage on a hit."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, the ring has **3 charges** and regains 1d3 expended charges daily at dawn. You can expend its charges to use the properties below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Finally, it has the following property."
+   },
+   {
+    "name": "Frozen Wrath",
+    "type": "text",
+    "value": "You can expend **1 charge** to cast __Ice Storm__. You are immune to any damage dealt by this casting of the spell, and you ignore the Difficult Terrain created by it."
+   },
+   {
+    "name": "War Cry",
+    "type": "text",
+    "value": "You can expend **1 charge** after you hit with a melee weapon attack to grant Advantage on all attacks made by allies who can see or hear you against the creature you hit. This effect lasts until the start of your next turn."
+   },
+   {
+    "name": "Jarlpact Benefit",
+    "type": "text",
+    "value": "If an ally within **120 feet** is attuned to and wearing any other Ring of the Jarlpact, you have Advantage on Strength checks and Strength saving throws."
    }
   ],
   "properties": [],
@@ -62155,6 +63785,52 @@
     "name": "",
     "type": "text",
     "value": "If you're concentrating on a spell of 3rd level or lower and wearing the ring, you can choose to cast another spell of 3rd level or lower that also requires concentration without losing concentration on the first one. While concentrating on two spells in this way, make a Constitution saving throw for each spell as normal whenever you take damage to maintain your concentration. When you do, roll the d20 for each spell's saving throw in the order in which you cast them. You are vulnerable to psychic damage while concentrating on two spells in this way. Once this property of the ring has been used, it can't be used again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ring of the Tempest Jarl",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ring%20of%20the%20tempest%20jarl_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This ring is made from a twisted piece of wood charred by lightning, and it bears runes of the storm and the sea. While wearing it, you have Resistance to Cold, Lightning, and Thunder damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, the ring has **3 charges** and regains 1d3 expended charges daily at dawn. You can expend its charges to use the properties below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Finally, it has the following property."
+   },
+   {
+    "name": "Storm Strike",
+    "type": "text",
+    "value": "You can expend **2 charges** when you deal damage with a melee attack. In addition to the weapon's normal damage, the target takes **8d6** Lightning damage, and it has the Blinded condition until the start of your next turn."
+   },
+   {
+    "name": "Windborne Leap",
+    "type": "text",
+    "value": "You can expend **1 charge** to cast the __Jump__ spell on yourself."
+   },
+   {
+    "name": "Jarlpact Benefit",
+    "type": "text",
+    "value": "If an ally within **120 feet** is attuned to and wearing any other Ring of the Jarlpact, you gain Advantage on Strength checks and Strength saving throws."
    }
   ],
   "properties": [],
@@ -62852,6 +64528,37 @@
     "name": "",
     "type": "text",
     "value": "While holding this rod, you can use an action to speak its command word. When you do, the rod sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light remains for 1 hour or until you use an action speak the rod's command word again while holding it. For the duration, you can use a bonus action to mentally change the color of the light while holding the rod."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Rod of Frostbite",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#rod%20of%20frostbite_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wand",
+   "rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This rod is made of blackened, desiccated skin shrunk tightly around a humanoid forearm and hand. This wand has **5 charges** and regains 1d4 + 1 expended charges daily at dawn."
+   },
+   {
+    "name": "Withering Cold",
+    "type": "text",
+    "value": "While holding it, you can take a Magic action to expend **1 charge** to cause a shadowy ray to streak from one of the rod's fingertips toward a creature you can see within **60 feet** of yourself. The target must succeed on a DC 15 Constitution saving throw or for **1 minute**, it takes an additional **2d6** Necrotic damage whenever it takes Cold damage. At the end of each of the target's turns, it repeats the save, ending the effect on itself on a success."
+   },
+   {
+    "name": "Cast Spell",
+    "type": "text",
+    "value": "You can cast __Ray of Frost__ from it using your spell attack modifier. The damage scales with your level."
    }
   ],
   "properties": [],
@@ -63820,6 +65527,27 @@
   "reprint": null
  },
  {
+  "name": "Sail of Favorable Winds",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#sail%20of%20favorable%20winds_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These gorgeous sails are embroidered with swirls and contours to make them appear like fluffy white clouds. While sailing, a ship flying these sails treats any wind as though it were a tailwind, coming from straight behind the ship, and thus can maintain maximum speed without the need to tack or adjust the sails. This has no effect if the ship is becalmed and there is no wind available at all."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Saint Vitruvio's Phylactery",
   "source": "DungeonsDrakkenheim",
   "url": "https://5e.tools/items.html#saint%20vitruvio's%20phylactery_dungeonsdrakkenheim",
@@ -63907,6 +65635,27 @@
     "name": "",
     "type": "text",
     "value": "This potion is bright red and smells of hot peppers and spices. It is typically drizzled on food prior to eating but it is possible to consume it straight from the bottle."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Salt of Thawing",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#salt%20of%20thawing_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use a Magic action to spread this salt on a **5-foot** square area within **10 feet** of you. Ice up to 1-foot thick in that area instantly melts."
    }
   ],
   "properties": [],
@@ -65159,6 +66908,26 @@
   "reprint": null
  },
  {
+  "name": "Sea Serpent",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#sea%20serpent_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "mount"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Reindeer's stats here](https://5e.tools/bestiary.html#reindeer_northlandsworldbook)"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Sea Serpent Hairpin",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#sea%20serpent%20hairpin_24griffonssaddlebag1",
@@ -65347,6 +67116,47 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Seax",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#seax_northlandsworldbook",
+  "image": null,
+  "value": "1 gp",
+  "weight": "2 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These fighting knives are too heavy to be thrown, but they boast long blades that can punch through leather and mail."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Graze",
+    "type": "text",
+    "value": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "mastery: graze"
+  ],
   "reprint": null
  },
  {
@@ -65723,6 +67533,37 @@
   "reprint": null
  },
  {
+  "name": "Seidr Rune Necklace",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#seidr%20rune%20necklace_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This necklace is made of carved runes strung with giant's hair. The runes glow faintly blue. While wearing this necklace, you can take a Magic action to learn and influence the future of one individual that you are familiar with."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You choose a type of situation from battle, diplomacy, trade, trickery, or other situation. The GM tells you if that individual is likely to encounter such a situation today. For the remainder of the day, you know when that individual is in that type of situation, and as a Reaction, you may add or subtract 1d10 from a die roll they just made during that event, though you have no additional knowledge of what transpired where the individual is."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You may not take this Magic action again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Sensorius Maximus",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#sensorius%20maximus_obojimatallgrass",
@@ -65960,6 +67801,37 @@
    "thrown (20/60 ft.)",
    "mastery: vex"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Serpent Fin Oars",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#serpent%20fin%20oars_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These silvery enchanted oars are lighter and stronger than typical wooden oars and come in sets sufficient to outfit a single ship. While sailors are rowing these oars, the ship's pilot has Advantage on checks to control the ship."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a ship outfitted with these oars is adjacent to another rowed ship, the ship can take an action to slash that ship's oars, destroying them."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As long as at least one of the oars is unbroken, and that oar remains on the ship, 1 additional oar is magically produced each dawn until there are enough to outfit the ship."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -67964,6 +69836,29 @@
   "reprint": null
  },
  {
+  "name": "Shield of the World Serpent",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#shield%20of%20the%20world%20serpent_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "6 lb.",
+  "type": [
+   "shield",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This shield is shaped from a scale of Jormungandr. While wielding the shield, you cannot be pushed or pulled against your will. At the start of each of your turns, you may end any Grappled and Restrained conditions on you."
+   }
+  ],
+  "properties": [
+   "+2 AC"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Shield of Yggdrasil",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#shield%20of%20yggdrasil_24griffonssaddlebag1",
@@ -69253,6 +71148,122 @@
   "reprint": null
  },
  {
+  "name": "Skates",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#skates_northlandsworldbook",
+  "image": null,
+  "value": "25 gp",
+  "weight": "2 lb.",
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing skates, you ignore Difficult Terrain from slippery ice and automatically pass Dexterity (*Acrobatics*) checks to avoid have the Prone condition on ice. You move at double your normal Speed while on ice, but you have a Speed of 5 feet off the ice."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Skinchanger Arm Ring",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#skinchanger%20arm%20ring_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "varies (requires attunement by a 5th-level or higher character)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this arm ring, you can comprehend and verbally communicate with ravens, wolves, and bears of all varieties so long as they are Beasts, and you can use any of the Influence action's skill options with them."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As your level increases, you gain the following benefits while wearing this arm ring if you are attuned to it:"
+   },
+   {
+    "name": "Fabled Magic Items",
+    "type": "text",
+    "value": "Fabled magic items are distinct as a rarity. A fabled item grows in power alongside the character who wields it. Rules for fabled items are summarized here, and a few fabled magic items can be found in this chapter."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A fabled magic item begins as a Common magic item. The item grants a minor, useful trait to its owner that doesn't require Attunement to use."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "To access any higher-level trait, a PC must attune to it using standard Attunement rules. Once attuned, a PC can use the fabled item's more powerful properties as they increase in level. If a PC higher than 1st level attunes to a fabled item, its level-dependent properties, up to the character's current level, are immediately available."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the GM's discretion, an item's more powerful properties might become available only after the character completes a particular quest or event related to the item's story rather than immediately upon reaching each property's required level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a PC chooses not to attune to a fabled item, it remains a common magic item, granting only its minor property, regardless of the character's level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Unless otherwise noted, properties granted by a fabled item are in effect as long at the character is wearing, carrying, or touching the item."
+   },
+   {
+    "name": "5th Level",
+    "type": "text",
+    "value": "You can take the Magic action to grow black-feathered wings and gain a Fly Speed of 50 feet for **1 hour**. While you have these wings, your size decreases by one category—from Medium to Small, for example. You also have Disadvantage on Strength checks and Strength saving throws. Your attacks with weapons or Unarmed Strike deal 1d4 less damage on a hit (this can't reduce damage below 1). You can end the effect early as a Bonus Action. Once used, the arm ring can't be used in this way again until the next dawn."
+   },
+   {
+    "name": "9th Level",
+    "type": "text",
+    "value": "You have Advantage on attack rolls with melee weapons and Unarmed Strike against a creature if at least one of your allies is within **5 feet** of the creature and the ally doesn't have the Incapacitated condition."
+   },
+   {
+    "name": "13th Level",
+    "type": "text",
+    "value": "You can use a Magic action to give yourself Temporary Hit Points equal to twice your level. You also gain Resistance to Cold damage until the Temporary Hit Points are depleted or you finish a Long Rest. Once used, the arm ring can't be used in this way again until the next dawn."
+   },
+   {
+    "name": "17th Level",
+    "type": "text",
+    "value": "The arm ring has **3 charges**. You can take a Magic action and spend 1 charge to cast the __Polymorph__ spell on yourself. The forms you can take are limited to a __Raven__; __Wolf__ or __Dire Wolf__; or __Black__, __Brown__, or __Polar__ bear. When you cast __Polymorph__ in this way, you retain your Intelligence, Wisdom, and Charisma scores. The arm ring regains 1d3 expended charges daily at dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Skis",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#skis_northlandsworldbook",
+  "image": null,
+  "value": "75 gp",
+  "weight": "6 lb.",
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing skis, you ignore Difficult Terrain from deep snow and move at double your normal Speed while going downhill in snow. You have Disadvantage on Dexterity saves and checks while wearing skis, except those related to moving through snow."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Sky Anchor",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#sky%20anchor_griffonssaddlebag2",
@@ -69652,6 +71663,26 @@
     "name": "",
     "type": "text",
     "value": "This small, soft stuffed sheep toy is 6 inches from head to tail and smells like lavender. A willing creature holding the stuffy can use an action to speak its command word to immediately fall asleep. This property can't be used again for 8 hours."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Sleipnirspringr",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#sleipnirspringr_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "mount"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Sleipnirspringr's stats here](https://5e.tools/bestiary.html#sleipnirspringr_northlandsworldbook)"
    }
   ],
   "properties": [],
@@ -70135,6 +72166,27 @@
   "reprint": null
  },
  {
+  "name": "Slip-Bane Bracelet",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#slip-bane%20bracelet_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This corded bracelet has 1d4 + 2 tiny claws hanging from it. While wearing it, you can use your Reaction to halve damage from falling. Doing so causes one of the claws to crumble. Once all of the claws are gone, the bracelet crumbles to dust."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Slugskin",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#slugskin_obojimatallgrass",
@@ -70199,6 +72251,47 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Snaerispear",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#snaerispear_northlandsworldbook",
+  "image": null,
+  "value": "5 gp",
+  "weight": "2 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These short, javelin-like spears can be hurled great distances by means of a \"throwing string,\" a leather strap affixed to the mid-point of the spear shaft. This allows the snaerispear to deal more damage when thrown than in melee."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Throwing String",
+    "type": "text",
+    "value": "This allows the snaerispear to deal more damage when thrown than in melee."
+   },
+   {
+    "name": "Slow",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "finesse",
+   "thrown (1d8, 30/90 ft.)",
+   "mastery: slow"
+  ],
   "reprint": null
  },
  {
@@ -70340,6 +72433,26 @@
   "reprint": null
  },
  {
+  "name": "Snow Goggles",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#snow%20goggles_northlandsworldbook",
+  "image": null,
+  "value": "500 gp",
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These thick glasses are set with lenses of smoky glass, preventing snow blindness."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Snow Rider's Sleigh",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#snow%20rider's%20sleigh_griffonssaddlebag2",
@@ -70355,6 +72468,26 @@
     "name": "",
     "type": "text",
     "value": "This magic sled moves effortlessly over land as if it were covered in fresh snow and sends small flurries of illusory snowflakes behind it as it travels."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Snow Visor",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#snow%20visor_northlandsworldbook",
+  "image": null,
+  "value": "5 gp",
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These thick bone or wood visors are bound to the head and are constructed with a narrow slit for the wearer's eyes. Creatures wearing snow visors have Immunity to snow blindness but have Disadvantage on Wisdom (*Perception*) checks relating to sight."
    }
   ],
   "properties": [],
@@ -70471,6 +72604,47 @@
       "The attack modifier for your attacks in wolf form is **+9**, the DC of your Cold Breath and Bite actions to **16**, and your hit points in wolf form to 100."
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Snowbirds",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#snowbirds_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These three crystal figures of terns can interlock into a circle as if nestling together. Each one can be removed and buried in snow or a similarly loose material like sand or soil. As a Magic action, you can call to a buried crystal bird within **100 feet** of you. It bursts up into the air, filling a **10-foot-tall, 5-foot-radius** Cylinder with snow, before falling back to the ground. The area within the snow burst is Heavily Obscured until the start of your next turn. The three snowbirds can be placed separately and activated simultaneously to obscure multiple areas."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Snowshoes",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#snowshoes_northlandsworldbook",
+  "image": null,
+  "value": "35 gp",
+  "weight": "4 lb.",
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing snowshoes, you can ignore Difficult Terrain from deep snow. You have Disadvantage on Dexterity saves and checks while wearing snowshoes."
    }
   ],
   "properties": [],
@@ -70845,6 +73019,29 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Songsteel Shield",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#songsteel%20shield_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "6 lb.",
+  "type": [
+   "shield",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Metal shields made of songsteel rings like a bell or chime when they clang against an object. When holding the shield, you can call out to Volund as a Bonus Action. Until the end of your next turn, you have a +5 bonus to your AC. Once you use this feature, you must finish a Long Rest before you can use it again."
+   }
+  ],
+  "properties": [
+   "+2 AC"
+  ],
   "reprint": null
  },
  {
@@ -75037,6 +77234,27 @@
   "reprint": null
  },
  {
+  "name": "Stormbinder's Cloak",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#stormbinder's%20cloak_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have Resistance to Cold, Lightning, and Thunder damage while wearing this cloak. You also ignore any Obscurement created by magical or non-magical clouds, fog, or mist. Lastly, whenever you cast a level 1+ spell that deals Cold, Lightning, or Thunder damage, you may treat the spell as if you had cast it with a spell slot 1 higher than the slot used."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Stormbrewer Bracers",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#stormbrewer%20bracers_griffonssaddlebag2",
@@ -75057,6 +77275,27 @@
     "name": "",
     "type": "text",
     "value": "In addition, while wearing the bracers, you can use your reaction when you take lightning damage to reduce that damage by 1d8 + 4 and cause the bracers to gain 1 charge."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Stormhorn",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#stormhorn_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This wooden horn is carved from lightning-struck yew. It has **6 charges** and regains 1d6 charges each day at dawn. It can be blown as a Magic action to cast a spell—__Fog Cloud__ (1 charge), __Gust of Wind__ (2 charges), __Sleet Storm__ (3 charges)— using your spell save DC."
    }
   ],
   "properties": [],
@@ -75172,6 +77411,109 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Storrbani",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#storrbani_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "weapon (longsword)",
+   "martial weapon",
+   "melee weapon",
+   "varies (requires attunement by a 5th-level or higher character)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This longsword is supernaturally light and easy to use. Its weight is reduced to 1 pound, and it gains the Finesse weapon property. Sparks trail from Storrbani's blade as though it were a burning branch. When you hit a target with Storrbani, the target takes an extra **1d4** Fire damage as the blade burns upon impact."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As your level increases, you gain the following benefits while wielding or holding this weapon if you are attuned to it:"
+   },
+   {
+    "name": "Fabled Magic Items",
+    "type": "text",
+    "value": "Fabled magic items are distinct as a rarity. A fabled item grows in power alongside the character who wields it. Rules for fabled items are summarized here, and a few fabled magic items can be found in this chapter."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A fabled magic item begins as a Common magic item. The item grants a minor, useful trait to its owner that doesn't require Attunement to use."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "To access any higher-level trait, a PC must attune to it using standard Attunement rules. Once attuned, a PC can use the fabled item's more powerful properties as they increase in level. If a PC higher than 1st level attunes to a fabled item, its level-dependent properties, up to the character's current level, are immediately available."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the GM's discretion, an item's more powerful properties might become available only after the character completes a particular quest or event related to the item's story rather than immediately upon reaching each property's required level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a PC chooses not to attune to a fabled item, it remains a common magic item, granting only its minor property, regardless of the character's level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Unless otherwise noted, properties granted by a fabled item are in effect as long at the character is wearing, carrying, or touching the item."
+   },
+   {
+    "name": "5th Level",
+    "type": "text",
+    "value": "The rune Gebo appears on the blade. As a Bonus Action, you can touch the rune and cast __Shield of Faith__ on a creature (besides yourself) you can see within **60 feet**. You don't need to *Concentrate* on the spell to maintain it. Once used in this way, you must finish a Short Rest before you can use it again."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, the spirit of Thogar Giant-Hewer awakens within the longsword. It becomes a sentient, Lawful Neutral weapon with Intelligence 8, Wisdom 13, and Charisma 10. It has hearing and vision out to a range of 60 feet. It communicates telepathically with its wielder, and it can speak in a gravelly voice much like an angry growl. It can read and understand Common and Giant. Thogar's spirit is passionate but not particularly bright. It wants the wielder to confront giants and trolls, and (secretly) to fall in glorious battle against the forces of Jotunheim so that wielder and blade may feast and fight together in eternal Valhalla. It urges its wielder to seek out and destroy evil trolls and giants, and to never back down from a fight. If its wielder displays cowardice or refuses an opportunity to battle an evil troll or other giant, the spirit sulks, suppressing the magical properties of the weapon until the following dawn."
+   },
+   {
+    "name": "9th Level",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack and damage rolls with this weapon, and the amount of Fire damage it deals increases to **2d6**. In addition, the rune Tiwaz appears on the blade. As a Bonus Action, you can touch this rune and give the extra Fire damage from this blade to the weapon of a creature you can see within **60 feet**. At the end of your next turn, the Fire damage property returns to Storrbani."
+   },
+   {
+    "name": "13th Level",
+    "type": "text",
+    "value": "You gain a +2 bonus to attack and damage rolls with this weapon instead of a +1 bonus. In addition, the rune Thurisaz appears on the blade. As a Bonus Action, you can touch this rune. When you do so, your attack rolls with this magic weapon score a Critical Hit on a roll of 19 or 20 until the end of your next turn. If the target is a creature of the giant type, Storrbani deals an extra **1d8** damage on a critical hit."
+   },
+   {
+    "name": "17th Level",
+    "type": "text",
+    "value": "You gain a +3 bonus to attack and damage rolls with this weapon, instead of a +2 bonus. In addition, the rune Ansuz appears on the blade. As a Bonus Action, you can touch the rune and gain Immunity to all damage until the end of your next turn. Once used, the sword can't be used again in this way until the next dawn."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Slashing",
+   "versatile (1d10)",
+   "finesse",
+   "mastery: sap"
+  ],
   "reprint": null
  },
  {
@@ -75995,6 +78337,27 @@
   "reprint": null
  },
  {
+  "name": "Sustaining Belt",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#sustaining%20belt_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This wide belt has short, soft grey fur on both its inner and outer faces, with a long strap bearing many more punch holes than an ordinary belt. While wearing this belt, you don't have to consume as much food or water. You can go an additional number of days equal to your Constitution modifier before you suffer the effects of starvation or dehydration."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Suude (Blue)",
   "source": "TalDoreiCampaignSettingReborn",
   "url": "https://5e.tools/items.html#suude%20(blue)_taldoreicampaignsettingreborn",
@@ -76537,6 +78900,31 @@
    "versatile (1d10)",
    "mastery: sap"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Talharpa",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#talharpa_northlandsworldbook",
+  "image": null,
+  "value": "30 gp",
+  "weight": "1 lb.",
+  "type": [
+   "instrument"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A musical instrument with two to four strings similar to a lyre and played with a bow."
+   },
+   {
+    "name": "Tool (Musical Instrument)",
+    "type": "text",
+    "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -77565,6 +79953,98 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "The Grave Blade",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#the%20grave%20blade_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "3 lb.",
+  "type": [
+   "weapon (longsword)",
+   "martial weapon",
+   "melee weapon",
+   "varies (requires attunement by a 5th-level or higher character)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The pommel of this sword hums a wordless song that can be heard within a **5-foot** radius when Undead are within **60 feet** of it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As your level increases, you gain the following additional properties while wielding or holding this weapon if you are attuned to it:"
+   },
+   {
+    "name": "Fabled Magic Items",
+    "type": "text",
+    "value": "Fabled magic items are distinct as a rarity. A fabled item grows in power alongside the character who wields it. Rules for fabled items are summarized here, and a few fabled magic items can be found in this chapter."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A fabled magic item begins as a Common magic item. The item grants a minor, useful trait to its owner that doesn't require Attunement to use."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "To access any higher-level trait, a PC must attune to it using standard Attunement rules. Once attuned, a PC can use the fabled item's more powerful properties as they increase in level. If a PC higher than 1st level attunes to a fabled item, its level-dependent properties, up to the character's current level, are immediately available."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the GM's discretion, an item's more powerful properties might become available only after the character completes a particular quest or event related to the item's story rather than immediately upon reaching each property's required level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a PC chooses not to attune to a fabled item, it remains a common magic item, granting only its minor property, regardless of the character's level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Unless otherwise noted, properties granted by a fabled item are in effect as long at the character is wearing, carrying, or touching the item."
+   },
+   {
+    "name": "5th Level",
+    "type": "text",
+    "value": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. If the damage came from a creature, you have Advantage on attack rolls against it for **1 minute**. Once used, the sword can't be used in this way again until the next dawn."
+   },
+   {
+    "name": "9th Level",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack and damage rolls with this sword. In addition, the sword deals an additional **1d6** Necrotic damage on a hit."
+   },
+   {
+    "name": "13th Level",
+    "type": "text",
+    "value": "You gain a +2 bonus to attack and damage rolls (instead of +1) with this sword. In addition, when the sword deals damage to a living creature, the target must succeed on a DC 15 Charisma saving throw or have the Frightened condition until the end of its next turn."
+   },
+   {
+    "name": "17th Level",
+    "type": "text",
+    "value": "You gain a +3 bonus to attack and damage rolls (instead of +2) with this sword. If you make a successful attack roll against a creature that has 50 Hit Points or fewer, you can compel it to die. Once used, the sword can't be used in this way again until the next dawn."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Slashing",
+   "versatile (1d10)",
+   "mastery: sap"
+  ],
   "reprint": null
  },
  {
@@ -78642,6 +81122,27 @@
   "reprint": null
  },
  {
+  "name": "Tireless Rower",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#tireless%20rower_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Appearing to be merely a copper statue of a seated dwarf, this duergar marvel is actually a magic and clockwork automaton. When the command word is spoken, the device duplicates itself until there are enough dwarves to row the entire ship. A single tireless rower can replace the rowing crew of a longship for **8 hours**. It needs to recharge for 8 hours before it can be used again."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Titan Cricket Greaves",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#titan%20cricket%20greaves_griffonssaddlebag2",
@@ -78701,6 +81202,65 @@
    "**2d6** Slashing",
    "heavy",
    "two-handed"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Titancall Dagger",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#titancall%20dagger_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "weapon (dagger)",
+   "simple weapon",
+   "shield",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a creature with this Dagger, you can summon a __Frost Giant__ as a Bonus Action. When you do, specify a target for the giant's ire."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The giant appears in an unoccupied space you choose within **120 feet** of yourself and is convinced that the target has wronged them. While summoned, the giant is Friendly to you and your allies."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The giant remains for **1 hour** or until it drops to 0 Hit Points, at which time it vanishes. After a giant is summoned, the dagger can't be used again in this way until the next dawn."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/60 ft.)",
+   "mastery: nick"
   ],
   "reprint": null
  },
@@ -79569,6 +82129,98 @@
   "reprint": null
  },
  {
+  "name": "Tordalfr's Rebuttal",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#tordalfr's%20rebuttal_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "weapon (javelin)",
+   "simple weapon",
+   "shield",
+   "varies (requires attunement by a 5th-level or higher character)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you hit with a ranged weapon attack using this Snaerispear, you may push the target up to **10 feet** directly away from you."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As your level increases, you gain the following benefits while wielding or holding this weapon if you are attuned to it:"
+   },
+   {
+    "name": "Fabled Magic Items",
+    "type": "text",
+    "value": "Fabled magic items are distinct as a rarity. A fabled item grows in power alongside the character who wields it. Rules for fabled items are summarized here, and a few fabled magic items can be found in this chapter."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A fabled magic item begins as a Common magic item. The item grants a minor, useful trait to its owner that doesn't require Attunement to use."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "To access any higher-level trait, a PC must attune to it using standard Attunement rules. Once attuned, a PC can use the fabled item's more powerful properties as they increase in level. If a PC higher than 1st level attunes to a fabled item, its level-dependent properties, up to the character's current level, are immediately available."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the GM's discretion, an item's more powerful properties might become available only after the character completes a particular quest or event related to the item's story rather than immediately upon reaching each property's required level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a PC chooses not to attune to a fabled item, it remains a common magic item, granting only its minor property, regardless of the character's level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Unless otherwise noted, properties granted by a fabled item are in effect as long at the character is wearing, carrying, or touching the item."
+   },
+   {
+    "name": "5th Level",
+    "type": "text",
+    "value": "Immediately after hitting or missing an enemy, this javelin reappears to your hand."
+   },
+   {
+    "name": "9th Level",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack and damage rolls with this weapon. In addition, when thrown, the javelin is wreathed in electricity, dealing an extra **1d6** points of Lightning damage to any target it hits."
+   },
+   {
+    "name": "13th Level",
+    "type": "text",
+    "value": "You gain a +2 bonus to attack and damage rolls with this weapon instead of +1. In addition, you can use a Bonus Action to charge your next attack with the weapon with electricity. The next time you hit with this javelin before the end of your turn, the target must succeed on a Constitution saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the Stunned condition until the start of your next turn. Once you use this ability, you cannot use it again until you complete a Short Rest."
+   },
+   {
+    "name": "17th Level",
+    "type": "text",
+    "value": "You gain a +3 bonus to attack and damage rolls with this weapon, instead of +2. In addition, when you hit with this weapon, you can call down a bolt of lightning from the heavens to strike the target. This bolt deals **8d8** Lightning damage to the target and all creatures within **15 feet** of it. Creatures within the blast radius are pushed **15 feet** away from the target. Once used, this ability can't be used again until the next dawn."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Slow",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "thrown (30/120 ft.)",
+   "mastery: slow"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Torrdok's Magnificent Forgery",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#torrdok's%20magnificent%20forgery_griffonssaddlebag2",
@@ -80285,6 +82937,37 @@
   "reprint": null
  },
  {
+  "name": "Trollkin Unguent",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#trollkin%20unguent_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One vial of this oil can cover one Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes **10 minutes**. The affected creature then has Resistance to Fire damage for **1 hour**."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the creature takes Fire damage, it becomes wreathed in ghostly green flames that shed Dim Light in a **15-foot** radius. While ablaze, the creature's melee weapon attacks deal an extra **1d6** Necrotic damage. After **10 minutes**, the flames die out and the oil's effects expire."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This oil is transparent with a rainbow sheen."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Trumpet",
   "source": "TLotRR",
   "url": "https://5e.tools/items.html#trumpet_tlotrr",
@@ -80618,6 +83301,64 @@
   "reprint": null
  },
  {
+  "name": "Tyr's Blade",
+  "source": "NorthlandsSagas",
+  "url": "https://5e.tools/items.html#tyr's%20blade_northlandssagas",
+  "image": null,
+  "value": null,
+  "weight": "3 lb.",
+  "type": [
+   "weapon (longsword)",
+   "martial weapon",
+   "melee weapon",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This magic weapon deals an extra **2d6** damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Slashing",
+   "versatile (1d10)",
+   "mastery: sap"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Tyr's Crushing Might",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#tyr's%20crushing%20might_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This iron bowsprit is forged in the shape of the one-handed god Tyr in the moments after he lost his hand to the Fenris wolf. His wounded arm is hugged tight to his body, his sword thrust forward in the other, and a mighty cry upon his lips. While equipped with this item, a ship can take the Ram action for double the normal damage, and it takes no damage to itself from Ramming."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Tyrannosaurus Rax",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#tyrannosaurus%20rax_griffonssaddlebag2",
@@ -80698,6 +83439,42 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ulfberht Blade",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#ulfberht%20blade_northlandsworldbook",
+  "image": null,
+  "value": "350 gp",
+  "weight": "3 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Graze",
+    "type": "text",
+    "value": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Slashing",
+   "versatile (1d10)",
+   "mastery: graze",
+   "mastery: sap"
+  ],
   "reprint": null
  },
  {
@@ -81401,6 +84178,47 @@
    "finesse",
    "light"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Uror's Shears",
+  "source": "NorthlandsSagas",
+  "url": "https://5e.tools/items.html#uror's%20shears_northlandssagas",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "artifact"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Legends tell of the three Norns, entities of power who weave the threads of fate and destiny. Of the trio, Uror appears as a crone. She crafted these shears to cut the threads of mortals when they die."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This pair of scissors seems forged from crude iron, rough and pitted—but they are impossibly sharp. They first appear in Down the Wolf Barrow (NorthlandsSagas) and return in Among the Norns (SagasAdventure) and Storming the Den of Fenris (NorthlandsSagas)."
+   },
+   {
+    "name": "Fated Edge",
+    "type": "text",
+    "value": "While wielding the shears, you can use an Action to cut through any single object, regardless of the material or nature of the object. A single action allows you to cut through **5 feet** of material, and you can use your Action on subsequent rounds to continue cutting. On your turn, you can change the direction of your cuts, as long as the shears continue to touch the object and don't stop cutting. The GM has the final determination as to what counts as a single object."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If used on a living creature, the shears are a magic weapon that grants a +1 bonus to attack. On a hit, the shears deal 1 Force damage. A creature that takes damage from the shears must make a DC 18 Constitution saving throw. On a failed save, the thread of the creature's fate is cut, and it vanishes forever; on a success, it takes **10d10** Force damage."
+   },
+   {
+    "name": "One Use Only",
+    "type": "text",
+    "value": "When you successfully hit a living creature or have cut through one object (or cut though a number of **5-foot** squares equal to your Proficiency Bonus), the shears immediately vanish. Stories suggest the shears return to the hands of the Norns, but this remains unconfirmed."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -82748,6 +85566,28 @@
   "reprint": null
  },
  {
+  "name": "Walrus Hide",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#walrus%20hide_northlandsworldbook",
+  "image": null,
+  "value": "75 gp",
+  "weight": "20 lb.",
+  "type": [
+   "medium armor"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These thick, treated walrus hide suits are flexible but quite heavy. In addition to its defensive benefits, walrus hide counts as winter clothing when determining the effects of Extreme Cold."
+   }
+  ],
+  "properties": [
+   "AC 13 + Dex (max 2)"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Wand of Dancing",
   "source": "OneShotWondersHolidayPack",
   "url": "https://5e.tools/items.html#wand%20of%20dancing_oneshotwondersholidaypack",
@@ -83808,6 +86648,53 @@
   "reprint": null
  },
  {
+  "name": "Warhammer of Giant Felling",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#warhammer%20of%20giant%20felling_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "weapon (warhammer)",
+   "martial weapon",
+   "melee weapon",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This Warhammer is inscribed with runes and pictograms dedicated to battles between dwarves and giants. You have a +1 bonus to attack rolls and damage rolls made with this magic weapon."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you hit a creature that is a larger size than you with this weapon, that creature must succeed on a DC 15 Strength saving throw or take **3d6** Thunder damage and have the Prone condition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you hit a creature that is your size or smaller, that creature must succeed on a DC 15 Strength saving throw or take **2d6** Thunder damage and have both the Prone and Restrained conditions as it is driven into the ground. The target or a creature within reach of it can take an action to make a DC 15 Strength (*Athletics*) check to free it."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Push",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+   }
+  ],
+  "properties": [
+   "**1d8** Bludgeoning",
+   "versatile ({{item.dmg2}})",
+   "mastery: push"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Warmind Wand",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#warmind%20wand_24griffonssaddlebag1",
@@ -83874,6 +86761,27 @@
     "name": "",
     "type": "text",
     "value": "While holding one of the split batons, you can use an action to speak the rod's second command word to cast the __teleport__ spell from it, teleporting only yourself to an unoccupied space within 5 feet of the other baton, even if it's on another plane of existence. Once this property has been used, it can't be used again until the batons have spent at least 12 hours recombined as the rod, at which point the swirling mist reappears within the orbs."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Warrior Honey",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#warrior%20honey_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you consume this honey, you have Advantage on the first Initiative check you make during the next **1 hour**. You also have Advantage on the first melee attack roll you make. The honey has small bubbles throughout and tingles in your stomach."
    }
   ],
   "properties": [],
@@ -85720,6 +88628,27 @@
   "properties": [
    "+2 AC"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Winged Helm of Wisdom",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/items.html#winged%20helm%20of%20wisdom_northlandsworldbook",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Two black bird wings sweep back from the sides of this unusual silver helm, which has an unbroken smooth plate where the right eye hole would be, though the magical properties of the helm allow you to see through it. While wearing the helm, you can take a Magic action to gain a Fly Speed of 60 ft. for **1 hour**. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land. While this effect is active, you may maintain *Concentration* on two spells at once, and the plate where the right eye hole would be glows a ghostly blue. This ability cannot be used again until the next dawn."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
