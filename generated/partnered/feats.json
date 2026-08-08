@@ -278,6 +278,58 @@
   "reprint": null
  },
  {
+  "name": "Axe Fighter",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#axe%20fighter_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+, 13 Strength and Martial Proficiency",
+  "abilityIncrease": "Increase your Strength score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Axe Flurry",
+    "type": "text",
+    "value": "Once on each of your turns, if you hit a creature with a Handaxe, you can make an extra attack with a Handaxe as a Bonus Action."
+   },
+   {
+    "name": "Precise Topple",
+    "type": "text",
+    "value": "When you hit a creature with a Battleaxe, that creature has Disadvantage on the Constitution saving throw to avoid having the Prone condition caused by the Topple property of the Battleaxe."
+   },
+   {
+    "name": "Unending Cleave",
+    "type": "text",
+    "value": "The number of additional creatures you can attack using the Cleave property of a Greataxe increases by a number equal to half your Proficiency Bonus (rounded down)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Axe Thrower",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#axe%20thrower_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Proficiency with {@item Handaxe|XPHB|Handaxes}",
+  "abilityIncrease": "Increase your Strength score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Returning Throw",
+    "type": "text",
+    "value": "When you make a ranged weapon attack with a Handaxe and miss on your attack roll, you can use a Bonus Action on the same turn to catch the weapon as it whirls back to you."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Bandit Cunning",
   "source": "HumblewoodCampaignSetting",
   "url": "https://5e.tools/feats.html#bandit%20cunning_humblewoodcampaignsetting",
@@ -339,6 +391,32 @@
       "You can use a bonus action on your turn to force each hostile creature that can hear and see you within 30 feet of you to make a Charisma (*Intimidation*) check (DC 8 + your proficiency bonus + your choice of your Strength or Charisma modifier). On a failed check, the creature becomes frightened of you until the end of your next turn. Attack rolls against creatures frightened in this way have advantage. Once you use this virtue, you cannot use it again until you finish a short or long rest."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Battle Cry",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#battle%20cry_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Strength or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Thunderous Cry",
+    "type": "text",
+    "value": "You can use a Bonus Action to release a frightening battle cry. Roll a Charisma (*Intimidation*) check. One creature of your choice that can hear you within 30 feet of you must make a Wisdom saving throw with a DC equal to your Charisma (*Intimidation*) check result or have the Frightened condition for 1d4 rounds. The target can make a new saving throw at the end of each of its turns to end the effect. Once you've used this ability, you can't use it again until you've completed a Short Rest."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At higher levels, you can target an additional number of creatures with this ability. At 9th level, you can target two creatures. At 15th level, you can target three creatures, and the range of this ability increases to 60 feet."
    }
   ],
   "reprint": null
@@ -424,6 +502,499 @@
   "reprint": null
  },
  {
+  "name": "Blessing of Angrboda and Bergelmir",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20angrboda%20and%20bergelmir_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Giantkin, Trollkin or GM permission",
+  "abilityIncrease": "Increase your Strength or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Thunderous Strike",
+    "type": "text",
+    "value": "When you hit with a melee weapon attack, you can choose to deal an extra **1d6** Thunder damage. You can use your Thunderous Strike a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Prophetic Vision",
+    "type": "text",
+    "value": "As a Magic action, you can choose one Divination spell with a casting time of 1 action (from any spell list) of a level you can cast that is no more than half your character level and cast it without expending a spell slot. Wisdom is your spellcasting ability stat. Once you use this feat to cast the spell, you can't use it again until you complete a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Baldur",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20baldur_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefit."
+   },
+   {
+    "name": "Protective Aegis",
+    "type": "text",
+    "value": "Once per Long Rest, when you or an ally within 10 feet of you takes damage, you can use your Reaction to reduce that damage by an amount equal to your Proficiency Bonus + your Charisma modifier (minimum 1)."
+   },
+   {
+    "name": "Radiant Aura",
+    "type": "text",
+    "value": "As a Bonus Action, you emit a bright golden light in a 10-foot-radius and Dim Light for another 10 feet. You may extinguish this light with another Bonus Action."
+   },
+   {
+    "name": "Sunlance",
+    "type": "text",
+    "value": "You know the __Sacred Flame__ cantrip. Charisma is your spellcasting ability for this spell."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Boreas",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20boreas_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Cold Aegis",
+    "type": "text",
+    "value": "If you take Cold damage, you can use your Reaction to give yourself Resistance to Cold damage until the end of your next turn. You can use this Reaction a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Winter Magic",
+    "type": "text",
+    "value": "You know the __Ray of Frost__ cantrip. Choose either the __Armor of Agathys__ or __Ice Knife__ spell. You always have that spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast this spell using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Bragi",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20bragi_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Love of the Vanir",
+    "type": "text",
+    "value": "You gain Proficiency with the *Persuasion* skill if you don't already have it, and you have Advantage on Charisma (*Persuasion*) checks."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Eir",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20eir_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Vitality Points",
+    "type": "text",
+    "value": "You have a number of Vitality Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Vitality Points when you finish a Long Rest."
+   },
+   {
+    "name": "Vitality Surge",
+    "type": "text",
+    "value": "You can take a Bonus Action and spend 1 Vitality Point to recover 1d4 Hit Points. If you are dying, you can spend 1 Vitality Point to stabilize (no action required)."
+   },
+   {
+    "name": "Channel Vitality",
+    "type": "text",
+    "value": "You can take a Bonus Action and spend 1 Vitality Point to cause a creature you touch to regain 1d4 Hit Points."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Freyr and Freyja",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20freyr%20and%20freyja_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Wild Knowledge",
+    "type": "text",
+    "value": "You have proficiency in either the *Animal Handling* or *Nature* skill."
+   },
+   {
+    "name": "Green Magic",
+    "type": "text",
+    "value": "You learn the __Druidcraft__ and __Thorn Whip__ cantrips. Choose either the __Entangle__ or __Hail of Thorns__ spell. You always have that spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast this spell using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Heimdall",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20heimdall_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Awareness of the Guardian",
+    "type": "text",
+    "value": "You have Proficiency in the Wisdom (*Perception*) skill. If you already have Proficiency, you gain Expertise in that skill. In addition, when you make a Wisdom (*Perception*) check, you can decide to give yourself Advantage. You can do this a number of times per day equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest."
+   },
+   {
+    "name": "Herald's Horn",
+    "type": "text",
+    "value": "You gain proficiency in the Horn."
+   },
+   {
+    "name": "Vigilance",
+    "type": "text",
+    "value": "When you roll Initiative, you can reroll the check but must use the new result. Once you use this feature, you must finish a Long Rest before you can use it again."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Hel",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20hel_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Forestall the End",
+    "type": "text",
+    "value": "You have Advantage on Death Saving Throws."
+   },
+   {
+    "name": "Resurgence",
+    "type": "text",
+    "value": "If you become Stable following a third successful Death Saving Throw, or if you are stabilized by another creature, you immediately recover Hit Points equal to 1d6 plus your Proficiency Bonus."
+   },
+   {
+    "name": "The Bell Tolls",
+    "type": "text",
+    "value": "You know the __Spare the Dying__ and __Toll the Dead__ cantrips. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Jormungandr",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20jormungandr_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Poison Resilience",
+    "type": "text",
+    "value": "If you take Poison damage, you can use your Reaction to give yourself Resistance to Poison damage until the end of your next turn. You can use this Reaction a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Serpent Kinship",
+    "type": "text",
+    "value": "You always have the __Animal Friendship__ and __Speak with Animals__ spells prepared. You can cast each spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. When you cast these spells without a spell slot, you may only target snakes and serpents. You can also cast these spells using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this feat)."
+   },
+   {
+    "name": "Serpent's Tongue",
+    "type": "text",
+    "value": "You know the Draconic language."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Loki",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20loki_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Expert Liar",
+    "type": "text",
+    "value": "You have proficiency in the *Deception* skill. If you already have proficiency in it, you gain Expertise in it instead."
+   },
+   {
+    "name": "Trickster Magic",
+    "type": "text",
+    "value": "You learn the __Minor Illusion__ and __Vicious Mockery__ cantrips. Choose either the __Disguise Self__ or __Charm Person__ spell. You always have that spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast this spell using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Njord",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20njord_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Strength, Dexterity or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Call Sea Serpent",
+    "type": "text",
+    "value": "You can cast __Find Steed__ without expending a spell slot. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast this spell using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat)."
+   },
+   {
+    "name": "Njord's Protection",
+    "type": "text",
+    "value": "You can breathe water as well as air, and automatically succeed on saves against Extreme Cold while submerged in water. You also have a Swim Speed equal to your Speed."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Sif",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20sif_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Gift of Dexterity",
+    "type": "text",
+    "value": "When you make a Dexterity check, you can add your Proficiency Bonus to the roll. If you already add your Proficiency Bonus to a Dexterity check, you may add it an additional time. You can use this feature a number of times equal to your Proficiency Bonus and regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Sif's Prowess",
+    "type": "text",
+    "value": "You know the __True Strike__ cantrip. Choose either the __Hunter's Mark__ or __Longstrider__ spell. You always have that spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast this spell using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Skadi",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20skadi_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Hunter's Eye",
+    "type": "text",
+    "value": "When you use the Attack action to make a ranged weapon attack, you can choose to give yourself Advantage on the attack roll. Once you use this feature you must finish a Short or Long Rest before you can use it again."
+   },
+   {
+    "name": "Snowpace",
+    "type": "text",
+    "value": "Your Speed increases by 10 feet when you move on ice or snow, and you never treat those types of terrain as Difficult Terrain."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of the Snow Queen",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20the%20snow%20queen_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Frozen Edge",
+    "type": "text",
+    "value": "You know the __Ice Knife__ Spell. You can cast it without using a spell slot a number of times per day equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest. You can also cast this spell using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat)."
+   },
+   {
+    "name": "Shield of the North Wind",
+    "type": "text",
+    "value": "If you fail a saving throw against a spell or effect that deals Cold damage, you can choose to succeed instead. Once you use this feature you must finish a Long Rest before you can use it again."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Thor",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20thor_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Gift of Strength",
+    "type": "text",
+    "value": "When you make a Strength check, you can add your Proficiency Bonus to the roll. If you already add your Proficiency Bonus to a Strength check, you may add it an additional time. You can use this feature a number of times equal to your Proficiency Bonus and regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Storm Magic",
+    "type": "text",
+    "value": "You know the __Shocking Grasp__ or __Thunderclap__ cantrip (choose when you select this feat). You also always have the __Thunderous Smite__ spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast this spell using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell (choose when you select this feat)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Tyr",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20tyr_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Strength or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Bravery",
+    "type": "text",
+    "value": "You have Advantage on saving throws made to avoid or end the Frightened condition."
+   },
+   {
+    "name": "Justicar",
+    "type": "text",
+    "value": "As a Magic action, you can touch a creature and compel it to tell the truth. The creature must make a Charisma saving throw. On a failed save, the creature can't speak a deliberate lie for 1 minute. You know whether a creature succeeds or fails on this save. An affected creature is aware of the spell and can avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive yet must be truthful."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use this feature at will, but when you use it on a creature, you must finish a Long Rest before you can use it on that creature again."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Volund",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20volund_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Crafter's Knack",
+    "type": "text",
+    "value": "You gain proficiency with an Artisan's Tool of your choice. If you already have proficiency with that tool, you instead have Advantage on checks with it."
+   },
+   {
+    "name": "Forge Magic",
+    "type": "text",
+    "value": "You learn the __Elementalism__ and __Mending__ cantrips. Choose either the __Burning Hands__ or __Shield__ spell. You always have that spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast this spell using any spell slots you have. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blessing of Wotan",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blessing%20of%20wotan_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Lore Bound",
+    "type": "text",
+    "value": "You gain proficiency with one of the following skills: *Arcana*, *History*, *Nature*, or *Religion*. If you already have proficiency with the chosen skill, you gain Expertise in it."
+   },
+   {
+    "name": "Secret Wisdom",
+    "type": "text",
+    "value": "You know the __Guidance__ cantrip. Choose a level 1 spell from any school of magic. You always have that spell prepared. You can cast the spell without expending a spell slot. Once you cast the spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast the spell using spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Blood Hound",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#blood%20hound_grimhollowpg24",
@@ -445,6 +1016,100 @@
     "name": "No Hiding",
     "type": "text",
     "value": "You have Advantage on Wisdom (*Perception*) checks that rely on sound or smell."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blood of the Berserker",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#blood%20of%20the%20berserker_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You inherited a touch of the ferocity of a berserker ancestor. You gain the following benefits."
+   },
+   {
+    "name": "Berserker Fury",
+    "type": "text",
+    "value": "When you are *Bloodied*, you can use a Bonus Action to enter a frenzied state. While in this fury, your melee weapon attacks deal extra damage equal to your Proficiency Bonus, and you don't have the Unconscious condition when you are reduced to 0 HP (though you still make Death Saves as normal)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your Berserker Fury lasts for 1 minute or until you end it (no action required), or if you have the Incapacitated condition. Once you use this feature, you can't use it again until you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Bloodied Resilience",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#bloodied%20resilience_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Bloodied Reaction",
+    "type": "text",
+    "value": "While you're *Bloodied* and take any damage, you can spend one of your Hit Dice as a Reaction and reduce the damage you take by the amount rolled. You can only spend one Hit Die at a time in this way, each time you are damaged."
+   },
+   {
+    "name": "Bloodied Saves",
+    "type": "text",
+    "value": "If you succeed on a Strength or Constitution saving throw that would normally cause you to take half damage, you take no damage instead."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Bloody Resolve",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#bloody%20resolve_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "13 Constitution",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Inner Fire",
+    "type": "text",
+    "value": "Pain bolsters your resolve. When you take damage, you gain a +1 bonus to saving throws until the end of your next turn. While you are *Bloodied*, the bonus to saves increases to +2, and you also gain a +1 bonus to attack and damage rolls until the end of your next turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Boisterous Roar",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#boisterous%20roar_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "13 Charisma",
+  "abilityIncrease": "Increase your Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Mighty Yell",
+    "type": "text",
+    "value": "When you score a Critical Hit against a target, you let out a boisterous roar. You and allies within 5 feet of you have Resistance to all damage until the end of your next turn, and enemies within 5 feet of you have Vulnerability to all damage until the end of your next turn."
    }
   ],
   "reprint": null
@@ -783,6 +1448,27 @@
   "reprint": null
  },
  {
+  "name": "Brazen Courage",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#brazen%20courage_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Staunch Will",
+    "type": "text",
+    "value": "You have Advantage on saving throws against the Frightened condition. Also, you can use a Bonus Action to end the Frightened condition on yourself a number of times per day equal to your Proficiency Bonus. You regain all expended uses when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Bree-Pony",
   "source": "TLotRR",
   "url": "https://5e.tools/feats.html#bree-pony_tlotrr",
@@ -807,6 +1493,37 @@
       "Your pony obeys your commands. In combat, it takes its turn on your initiative and acts and moves as you direct it (no action required by you), or on its own if you are absent or incapacitated. It cannot make opportunity attacks, and its only action options are Dash, Disengage, and Dodge, unless you spend an action on your turn to command it to take another action. If your pony dies, you can acquire a new one during the next Yule Fellowship Phase."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Brewer",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#brewer_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Tool Proficiency",
+    "type": "text",
+    "value": "You gain proficiency in brewer's supplies."
+   },
+   {
+    "name": "Discount",
+    "type": "text",
+    "value": "You get a 50% discount when purchasing food and beverages."
+   },
+   {
+    "name": "Quick Brewing",
+    "type": "text",
+    "value": "When you finish a Long Rest, you can brew an invigorating mead, provided you have Brewer's Supplies available. A creature can use a Utilize action to drink the mead, granting it Temporary Hit Points equal to your Proficiency Bonus. The mead's potency lasts until you start a Long Rest."
    }
   ],
   "reprint": null
@@ -1035,6 +1752,32 @@
   "reprint": null
  },
  {
+  "name": "Chosen by Fate",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#chosen%20by%20fate_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Norns have chosen you for greater things. As a result, you gain the following benefits."
+   },
+   {
+    "name": "Heroic Resurgence",
+    "type": "text",
+    "value": "If you use Heroic Inspiration and the die roll fails, your use of Heroic Inspiration isn't expended (though you can't use it again for the same d20 Test)."
+   },
+   {
+    "name": "Heroic Windfall",
+    "type": "text",
+    "value": "Whenever you use Heroic Inspiration, you regain a number of Hit Points equal to the die roll. If you are already at your Hit Point maximum when you use Heroic Inspiration, you instead gain Temporary Hit Points equal to the die roll. If you use Heroic Inspiration, and you roll higher on the die than is necessary to restore you to your Hit Point maximum, you gain any excess as Temporary Hit Points."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Close Combat Artillerist",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#close%20combat%20artillerist_grimhollowpg24",
@@ -1084,6 +1827,120 @@
       "You learn the __Fog Cloud__ and __Gust of Wind__ spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast the spells using spell slots you have of the appropriate level. Your spellcasting ability for this spell is Intelligence, Wisdom, or Charisma (your choice)."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Clout",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#clout_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+, 13 Strength and Inspiring Leader",
+  "abilityIncrease": "Increase your Strength score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Strong Influence",
+    "type": "text",
+    "value": "You have Advantage on Charisma (*Deception*, *Intimidation*, and *Persuasion*) checks when interacting with Vikings, professional warriors, and other martial folk. When using the __Inspiring Leader__ feat, you also add your Strength modifier to the Temporary Hit Points you grant."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Cold Plunge Training",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#cold%20plunge%20training_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Cold Water Training",
+    "type": "text",
+    "value": "While in water, you have Advantage on saving throws against Extreme Cold and on Strength (*Athletics*) checks to swim."
+   },
+   {
+    "name": "Arctic Dive",
+    "type": "text",
+    "value": "On a turn when you dive from land into water, your movement in the water is at your normal Speed rather than half Speed."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Cold Water Warrior",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#cold%20water%20warrior_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and 13 Strength",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have become accustomed to spending time in cold, treacherous waters. You gain the following benefits."
+   },
+   {
+    "name": "Against the Current",
+    "type": "text",
+    "value": "You automatically succeed on Strength checks to move through rough water."
+   },
+   {
+    "name": "Cold Water Resistance",
+    "type": "text",
+    "value": "You have Immunity to the effects of immersion in frigid water for a number of hours equal to your Proficiency Bonus."
+   },
+   {
+    "name": "Swimming Leap",
+    "type": "text",
+    "value": "You can make Long Jump and High Jump while swimming. If you swim at least 10 feet before a jump, you are considered to have a running start."
+   },
+   {
+    "name": "Water Combatant",
+    "type": "text",
+    "value": "You have Advantage on Initiative if you begin combat at least partially submerged in a body of water."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Combat Flyting",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#combat%20flyting_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "13 Charisma and Deception",
+  "abilityIncrease": "Increase your Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Taunt",
+    "type": "text",
+    "value": "As a Bonus Action on your turn, you can demean and bait an opponent within 30 feet of you that can hear and understand you. The target must succeed on a Charisma Saving Throw (DC 8 plus your Charisma modifier plus your Proficiency Bonus). On a failed save, the target takes a -1 penalty to attack rolls against you. You can use another Bonus Action on each of your subsequent turns to impart another -1 penalty; these effects stack to a maximum equal to your Charisma modifier. The target is allowed a save against each of these uses."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This effect ends if you drop to 0 Hit Points, have the Incapacitated condition, you fail to use a Bonus Action each round to maintain it, or if the target moves more than 30 feet away from you. Otherwise, it continues for a maximum number of rounds equal to your Proficiency Bonus."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature that succeeds on the saving throw has Immunity to your Taunts for 24 hours."
    }
   ],
   "reprint": null
@@ -1287,6 +2144,32 @@
     "name": "Spell Change",
     "type": "text",
     "value": "Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the Warlock spell list."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Cut Down the Nithingr",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#cut%20down%20the%20nithingr_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Strength or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Coward's Bane",
+    "type": "text",
+    "value": "You have a +2 bonus to damage rolls you make against creatures with the Frightened condition."
+   },
+   {
+    "name": "Frightful Visage",
+    "type": "text",
+    "value": "When you use a spell or effect that causes the Frightened condition, the duration is doubled."
    }
   ],
   "reprint": null
@@ -1665,6 +2548,27 @@
   "reprint": null
  },
  {
+  "name": "Endurance Conditioning",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#endurance%20conditioning_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "13 Constitution and Athletics",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Quick Recovery",
+    "type": "text",
+    "value": "Once per day, you can recover from 1 level of Exhaustion after completing a Short Rest. In addition, a Long Rest removes 2 levels of Exhaustion (instead of 1)."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Endurance of the Ranger",
   "source": "TLotRR",
   "url": "https://5e.tools/feats.html#endurance%20of%20the%20ranger_tlotrr",
@@ -1863,6 +2767,37 @@
     "name": "Familiar Distraction",
     "type": "text",
     "value": "When a creature within 5 feet of your familiar makes an attack roll, you can take a Reaction to command your familiar to give the attack Disadvantage. You impose Disadvantage in this way a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Faster Crafting",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#faster%20crafting_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Crafter",
+  "abilityIncrease": "Increase one ability score of your choice by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Increased Artisan Proficiency",
+    "type": "text",
+    "value": "You may either gain proficiency with an Artisan's Tool of your choice or Advantage on ability checks with a single Artisan's Tool with which you are already proficient."
+   },
+   {
+    "name": "Combat Quickcraft",
+    "type": "text",
+    "value": "While in combat, you can use a Bonus Action to craft one piece of gear from the Fast Crafting table, provided you have the Artisan's Tools associated with that item, have proficiency with those tools, and do not have the Incapacitated condition. The item lasts until the end of your next turn, or until you craft an additional item, at which point it falls apart."
+   },
+   {
+    "name": "Short Rest Crafting",
+    "type": "text",
+    "value": "You can craft an item from the Fast Crafting table during a Short Rest. It lasts until the end of the day, you use this aspect of the feat again, or your next Long Rest, whichever comes first, at which point it falls apart."
    }
   ],
   "reprint": null
@@ -2129,6 +3064,63 @@
       "{#refOptionalfeature Two-Weapon Fighting|PHB}"
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Fisher",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#fisher_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Survivalist",
+    "type": "text",
+    "value": "You gain proficiency in the *Survival* skill."
+   },
+   {
+    "name": "Boat Familiarity",
+    "type": "text",
+    "value": "You have Advantage on d20 Tests made to operate water vehicles."
+   },
+   {
+    "name": "Fishing Prowess",
+    "type": "text",
+    "value": "When you are exploring and have access to a body of water, you can spend 1 hour to fish and obtain enough food for up to 6 people for 1 day."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Fjord Jumper",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#fjord%20jumper_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and 13 Strength",
+  "abilityIncrease": "Increase your Strength score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Cliff Leaping",
+    "type": "text",
+    "value": "Your jumping distance (whether High or Long) increases by 10 feet. You also have Advantage on any attack roll, Dexterity (*Acrobatics*) check, or Strength (*Athletics*) check you make after jumping at least 10 feet high or 20 feet long."
+   },
+   {
+    "name": "Safe Diving",
+    "type": "text",
+    "value": "If you fall into a liquid, such as water, and you spend your Reaction and succeed on a DC 15 Strength (*Athletics*) or Dexterity (*Acrobatics*) check, you take no damage from the fall. You also have Advantage on that check."
    }
   ],
   "reprint": null
@@ -2520,6 +3512,53 @@
   "reprint": null
  },
  {
+  "name": "Frost Eyed",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#frost%20eyed_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Bright Eyed",
+    "type": "text",
+    "value": "You have Advantage on Wisdom (*Perception*) checks in Bright Light, and you do not have Disadvantage on Wisdom (*Perception*) checks in Dim Light."
+   },
+   {
+    "name": "Ice Tracker",
+    "type": "text",
+    "value": "You are proficient in the *Survival* skill. You treat both snow and icy terrain as normal terrain. You have Advantage on *Survival* checks made in snow or ice."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Frost-Touched",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#frost-touched_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your connection to the ancient frozen power of the Northlands grants you the following benefits."
+   },
+   {
+    "name": "Frost Magic",
+    "type": "text",
+    "value": "You know your choice of the __Frostbite__ or __Ray of Frost__ cantrip. Choose one level 1 spell that deals Cold damage from the Druid, Sorcerer, or Wizard spell lists. You always have that spell and the __Gust of Wind__ spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this manner, you can't cast that spell again until you complete a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Ghostlight Medium",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#ghostlight%20medium_crookedmoon24",
@@ -2541,6 +3580,32 @@
     "name": "Spirit Sense",
     "type": "text",
     "value": "As a Bonus Action, you can sense any Undead within 60 feet of you, or any creatures in the Ethereal Plane that overlaps that area. You learn the distance and direction to any creatures you detect (or an Ethereal creature's equivalent position on your plane). Once you detect a creature with this benefit, you can't use it again until you finish a Short or Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Giant Slayer",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#giant%20slayer_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Weapon Mastery",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Duck and Weave",
+    "type": "text",
+    "value": "If you are within 5 feet of a Large or larger creature, you can take the Dodge action as a Bonus Action."
+   },
+   {
+    "name": "The Bigger They Are",
+    "type": "text",
+    "value": "You're adept at knocking Large or larger creatures off their feet. When you use the Topple Weapon Mastery feature against a creature of Large or larger size, it has Disadvantage on its save."
    }
   ],
   "reprint": null
@@ -2574,6 +3639,22 @@
   "reprint": null
  },
  {
+  "name": "Glima",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#glima_northlandsworldbook",
+  "type": "Fighting Style",
+  "prerequisite": "Fighting Style",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Glima is the name for a style of unarmed fighting in the North similar to wrestling. When you hit with an unarmed attack against a creature within 5 feet of you, if that creature is one size larger than you or smaller, you can choose to force that creature to make a Strength saving throw (DC equals 8 + your Proficiency Bonus + your Strength modifier). On a failed save, the target creature has the Prone condition."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Grave Keeper",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#grave%20keeper_crookedmoon24",
@@ -2595,6 +3676,184 @@
     "name": "Last Rites",
     "type": "text",
     "value": "You can enact a 10-minute ritual to prepare the corpse of a Medium or smaller creature, expending at least 10 GP worth of incense, oils, linen wraps, or similar trappings. The prepared corpse can't become Undead."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Greater Blessing of Baldur",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#greater%20blessing%20of%20baldur_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Blessing Of Baldur",
+  "abilityIncrease": "Increase your Dexterity or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Divine Resilience",
+    "type": "text",
+    "value": "When you finish a Long Rest, you have Resistance to one damage type of your choice. This Resistance lasts until you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Greater Blessing of Boreas",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#greater%20blessing%20of%20boreas_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Blessing Of Boreas",
+  "abilityIncrease": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Cold-Forged",
+    "type": "text",
+    "value": "You have Resistance to Cold damage. Additionally, you can summon a shield of cold to block fire-based effects. As a Reaction, when you would take Fire damage, you can gain Resistance to Fire damage until the beginning of your next turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Greater Blessing of Freyr and Freyja",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#greater%20blessing%20of%20freyr%20and%20freyja_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Blessing Of Freyr And Freyja",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Healing Magic",
+    "type": "text",
+    "value": "You always have the __Cure Wounds__ spell prepared. You can cast it without using a spell slot a number of times per day equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest. You can also cast it using spell slots you have of the appropriate level. The spell's spellcasting ability is the ability you chose when you took the Blessing of Freyr and Freyja feat. When you cast the spell on a Beast or Plant creature, the amount healed is doubled."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Greater Blessing of Jormungandr",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#greater%20blessing%20of%20jormungandr_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Blessing Of Jormungandr",
+  "abilityIncrease": "Increase your Strength or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Serpent's Aspect",
+    "type": "text",
+    "value": "You can channel the fear inspired by serpents and dragons. You can use an Action to force a number of creatures of your choice equal to your Proficiency Bonus within 30 feet of you that can see you to make a Wisdom saving throw (DC 8 plus your Charisma modifier and your Proficiency Bonus). On a failed save, a target has the Frightened condition for 1 minute. Such a creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Greater Blessing of Loki",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#greater%20blessing%20of%20loki_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Blessing Of Loki",
+  "abilityIncrease": "Increase your Intelligence or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Lord of Lies",
+    "type": "text",
+    "value": "You have Advantage on Charisma (*Deception*) checks."
+   },
+   {
+    "name": "Mask Magic",
+    "type": "text",
+    "value": "You always have the __Alter Self__ spell prepared. You can cast it without expending a spell slot. Once you cast the spell in this way, you can't cast it in this way again until you finish a Long Rest. You can also cast it using spell slots you have of the appropriate level. The spell's spellcasting ability is the one you chose when you took the Blessing of Loki feat."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Greater Blessing of Sif",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#greater%20blessing%20of%20sif_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Blessing Of Sif",
+  "abilityIncrease": "Increase your Dexterity or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Sif's Arrow",
+    "type": "text",
+    "value": "As a Bonus Action, you can channel the power of the god Sif for 1 minute. During that time, when you hit with a ranged weapon attack, you deal extra damage of the weapon's type equal to your Proficiency Bonus. You can deal this extra damage no more than once on each of your turns. You can channel Sif's power in this way a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Greater Blessing of Thor",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#greater%20blessing%20of%20thor_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Blessing Of Thor",
+  "abilityIncrease": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Storm Strike",
+    "type": "text",
+    "value": "As a Bonus Action, you can channel the power of the god Thor for 1 minute. During that time, when you hit with a melee weapon attack, you deal extra damage of the weapon's type equal to your Proficiency Bonus. You can deal this extra damage no more than once on each of your turns. You can channel Thor's power in this way a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Greater Blessing of Wotan",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#greater%20blessing%20of%20wotan_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Blessing Of Wotan",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Lore Master",
+    "type": "text",
+    "value": "You have Advantage when rolling checks for the skill you selected for your Lore Bound trait from the Blessing of Wotan feat."
+   },
+   {
+    "name": "Magical Foresight",
+    "type": "text",
+    "value": "You always have the __Augury__ spell prepared. You can cast it without expending a spell slot. Once you cast the spell in this way, you can't cast it in this way again until you finish a Long Rest. You can also cast this spell using spell slots you have of the appropriate level. The spell's spellcasting ability is the ability you chose when you took the Blessing of Wotan feat."
    }
   ],
   "reprint": null
@@ -2781,6 +4040,32 @@
   "reprint": null
  },
  {
+  "name": "Heroic Rush",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#heroic%20rush_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Constitution or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Triumphant Boost",
+    "type": "text",
+    "value": "When you score a Critical Hit, your Speed increases by 10 feet and you have Advantage on attack rolls. These benefits last until the end of your next turn."
+   },
+   {
+    "name": "Victorious Inspiration",
+    "type": "text",
+    "value": "When you reduce a creature to 0 Hit Points with an attack, you can choose one ally within 30 feet of you to receive Heroic Inspiration. The ally must use this Heroic Inspiration before the end of their next turn or it is wasted. You can use this feature twice, regaining all expended uses when you finish a Short or Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "High Destiny",
   "source": "TLotRR",
   "url": "https://5e.tools/feats.html#high%20destiny_tlotrr",
@@ -2830,6 +4115,32 @@
   "reprint": null
  },
  {
+  "name": "Holmganga Master",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#holmganga%20master_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and Dueling Feat",
+  "abilityIncrease": "Increase your Strength, Constitution or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your experience in dueling gives you the following benefits."
+   },
+   {
+    "name": "Battle Primed",
+    "type": "text",
+    "value": "You have Advantage on Initiative at the start of a Holmganga or other duel."
+   },
+   {
+    "name": "Duel Intimidation",
+    "type": "text",
+    "value": "As a Bonus Action, you can make a Charisma (*Intimidation*) check against your holmganga opponent. If the check succeeds (GM's discretion), you have Advantage on your next attack against the target, and the target has Disadvantage on its next attack against you."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Hulking Figure",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#hulking%20figure_grimhollowpg24",
@@ -2856,6 +4167,32 @@
     "name": "Powerful",
     "type": "text",
     "value": "You count as one size larger (to a maximum size of Large) when determining your carrying capacity."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Hunter",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#hunter_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Improved Tracking",
+    "type": "text",
+    "value": "You have Advantage on Wisdom (*Perception*) and Wisdom (*Survival*) checks to follow or identify tracks."
+   },
+   {
+    "name": "Greater Stealth",
+    "type": "text",
+    "value": "You have Advantage when on Dexterity (*Stealth*) checks while outdoors."
    }
   ],
   "reprint": null
@@ -3052,6 +4389,45 @@
     "name": "Wriggle Free",
     "type": "text",
     "value": "If you would gain the Grappled condition, roll a d20. On a 10 or higher, you instead do not gain it."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Ice Mastery",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#ice%20mastery_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and {@feat Elemental Adept|XPHB} with Cold Spells",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Fimbulwinter's Grasp",
+    "type": "text",
+    "value": "Your cold spells carry the strength of Fimbulwinter. Whenever you deal Cold damage to a creature with a spell of at least 1st level, you can choose one of the following additional effects."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The creature has Disadvantage on Dexterity checks for 1 minute as a terrible cold numbs its body.",
+      "The creature is coated in ice. It has the Restrained condition until it succeeds on a Dexterity saving throw to free itself (equal to your spell saving throw DC) or takes at least 10 points of Bludgeoning or Fire damage. It can make the save to end this effect at the end of each of its turns.",
+      "The creature has Vulnerability to Cold damage for 1 minute. It can make a Constitution saving throw (equal to your spell saving throw DC) to end this effect at the end of each of its turns."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use Fimbulwinter's Grasp a number of times equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest."
    }
   ],
   "reprint": null
@@ -3437,6 +4813,97 @@
   "reprint": null
  },
  {
+  "name": "Lightning Mastery",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#lightning%20mastery_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and {@feat Elemental Adept|XPHB} with Lightning Spells",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Thor's Fury",
+    "type": "text",
+    "value": "Your lightning spells are laced with extra power. Whenever you deal Lightning damage to a creature with a spell of at least 1st level, you can choose one of the following additional effects."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The creature has the Stunned condition until the end of your next turn, if it failed its save against the spell.",
+      "The creature takes half of the Lightning damage it initially took again at the beginning of its next turn. It can make a saving throw against your spell saving throw DC to negate this additional damage.",
+      "The creature gains Vulnerability to Lightning damage for 1 minute. It can make a Constitution saving throw (equal to your spell saving throw DC) to end this effect at the end of each of its turns."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can use Thor's Fury a number of times equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Living off the Land",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#living%20off%20the%20land_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Constitution or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Herbalist",
+    "type": "text",
+    "value": "When you take a Long Rest in a natural area (natural caves, forest, tundra, etc.), you can locate materials to create a Healer's Kit, and enough mushrooms, berries, or root vegetables to feed one Medium creature for one day."
+   },
+   {
+    "name": "Survival Shelter",
+    "type": "text",
+    "value": "You can spend 30 minutes to create a lean-to, bivouac, tree well, igloo, or other temporary shelter out of snow, tree boughs, rocks, and sticks, suitable for 4-5 Medium humanoids. While inside your survival shelter, creatures automatically succeed on Constitution saving throws against Extreme Cold and Extreme Heat."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Long Haft Strike",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#long%20haft%20strike_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Strength score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Bypass Shield",
+    "type": "text",
+    "value": "When you make an attack with a weapon with the Reach property against a creature wielding a Shield, that creature doesn't benefit from the Shield's Armor Class bonus."
+   },
+   {
+    "name": "Reaching Defense",
+    "type": "text",
+    "value": "While wielding a weapon with reach, you have a +1 bonus to your Armor Class."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Magically Mischievous",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/feats.html#magically%20mischievous_obojimatallgrass",
@@ -3733,6 +5200,53 @@
   "reprint": null
  },
  {
+  "name": "Moon-Touched",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#moon-touched_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your connection to the moon and its otherworldly radiance grants you the following benefits."
+   },
+   {
+    "name": "Moon Magic",
+    "type": "text",
+    "value": "You know your choice of the __Dancing Lights__ or __Light__ cantrip. Choose one level 1 spell that creates or emits light, such as __Color Spray__ or __Faerie Fire__, from the Druid, Sorcerer, or Wizard spell lists. You always have that spell and the __Moonbeam__ spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Mounted Leap",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#mounted%20leap_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+, 13 Strength and Animal Handling",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Equestrian Prowess",
+    "type": "text",
+    "value": "While you're riding a mount, that mount's jump distance is doubled."
+   },
+   {
+    "name": "Leaping Charge Attack",
+    "type": "text",
+    "value": "While jumping from a moving mount, your jump distance is calculated using the mount's Speed in place of yours (if its Speed is better than yours). If you make a successful melee attack roll against a creature after jumping, choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or make the target have the Prone condition if the target is one size category larger than you or smaller. You can use this benefit only once on each of your turns."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Mystic Conflux",
   "source": "TalDoreiCampaignSettingReborn",
   "url": "https://5e.tools/feats.html#mystic%20conflux_taldoreicampaignsettingreborn",
@@ -3869,6 +5383,84 @@
       "You gain a +1 bonus to AC. You lose this bonus if you are incapacitated or wielding a shield."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Norn-Touched",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#norn-touched_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Fates' Favor",
+    "type": "text",
+    "value": "Once per day, when you make a d20 Test, you can add your Proficiency Bonus to the result. You can see the result of the roll before you use this feature."
+   },
+   {
+    "name": "Fates' Scorn",
+    "type": "text",
+    "value": "Once per day, when another creature rolls a d20 for an attack roll or ability check, you can subtract your Proficiency Bonus from the result. You can see the result of the roll before you use this feature."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Northern Raider",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#northern%20raider_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Born on the Water",
+    "type": "text",
+    "value": "You gain proficiency in navigator's tools."
+   },
+   {
+    "name": "Blood in the Water",
+    "type": "text",
+    "value": "You have Advantage on attack rolls and ability checks that you make the turn that you exit the water or exit a ship."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Northlands Hardiness",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#northlands%20hardiness_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Cold Weather Resilience",
+    "type": "text",
+    "value": "You have Advantage on saving throws against Extreme Cold. If you already have Resistance to Cold damage, you also gain Advantage on saving throws against Cold damage."
+   },
+   {
+    "name": "Inexhaustible",
+    "type": "text",
+    "value": "The first time in a day that you receive a level of Exhaustion, your Speed is not reduced. In addition, you may ignore the effects of Exhaustion on a D20 Test."
    }
   ],
   "reprint": null
@@ -4053,6 +5645,27 @@
   "reprint": null
  },
  {
+  "name": "Primal",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#primal_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Primal Magic",
+    "type": "text",
+    "value": "Choose two of the following spells: __Animal Friendship__, __Entangle__, __Goodberry__, or __Speak with Animals__. You always have those two spells and the __Barkskin__ spell prepared. You can cast each of these spells without expending a spell slot. Once you cast a spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Prone Defense",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#prone%20defense_grimhollowpg24",
@@ -4214,6 +5827,48 @@
     "name": "Spell",
     "type": "text",
     "value": "You always have the spell associated with your quori lineage prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Raider's Rush",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#raider's%20rush_northlandsworldbook",
+  "type": "Fighting Style",
+  "prerequisite": "Fighting Style",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have Advantage on attack rolls against any creature within 5 feet of one of your allies if you move at least 15 feet and stop within 5 feet of that ally."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Ravens' Friend",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#ravens'%20friend_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Quick Study",
+    "type": "text",
+    "value": "You gain proficiency in your choice of one of the following skills: *Arcana*, *History*, *Investigation*, *Nature*, or *Religion*."
+   },
+   {
+    "name": "Raven's Whispers",
+    "type": "text",
+    "value": "Ravens sometimes tell you secrets. When you take the Study action, you can give yourself Advantage on the roll. You can do this a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
    }
   ],
   "reprint": null
@@ -4427,6 +6082,22 @@
   "reprint": null
  },
  {
+  "name": "Savagery",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#savagery_northlandsworldbook",
+  "type": "Fighting Style",
+  "prerequisite": "Fighting Style",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you make your first melee weapon attack roll on your turn, you can decide to attack savagely. Doing so allows you to add your Proficiency Bonus to your melee weapon damage rolls but lowers your AC by 2 until the start of your next turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Scourge Master",
   "source": "HelianasGuidetoMonsterHunting",
   "url": "https://5e.tools/feats.html#scourge%20master_helianasguidetomonsterhunting",
@@ -4450,6 +6121,32 @@
       "You can use your whip or tetherhooks to grab items weighing less than 1 lb within the reach of your weapon, pulling them back to your person."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Sea Wolf",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#sea%20wolf_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Tactical Boarder",
+    "type": "text",
+    "value": "You have Advantage on Strength (*Athletics*) and Dexterity (*Acrobatics*) checks made to board vehicles."
+   },
+   {
+    "name": "Reaver's Ferocity",
+    "type": "text",
+    "value": "When you score a Critical Hit against a creature with a melee attack, you can make another melee attack against the same creature or an adjacent creature as a Bonus Action."
    }
   ],
   "reprint": null
@@ -4507,6 +6204,32 @@
     "name": "Necrotic Weapon",
     "type": "text",
     "value": "If your Shadowsteel Focus is also a weapon, that weapon has a +2 bonus to weapon attack rolls and damage rolls. Additionally, once on each of your turns, when you hit a creature with a weapon attack roll using your Shadowsteel Focus, you can cause the target to take an extra **2d8** Necrotic damage."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Shield Wall",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#shield%20wall_northlandsworldbook",
+  "type": "Fighting Style",
+  "prerequisite": "Fighting Style and Shield",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Shield Ally",
+    "type": "text",
+    "value": "When a creature you can see hits an ally adjacent to you with an attack, you can take a Reaction to grant your ally your Shield's Armor Class bonus against the triggering attack."
+   },
+   {
+    "name": "Shoulder to Shoulder",
+    "type": "text",
+    "value": "When you and an ally are both wielding a Shield and are adjacent to each other, you both gain a +1 bonus to Armor Class."
    }
   ],
   "reprint": null
@@ -4590,6 +6313,32 @@
   "reprint": null
  },
  {
+  "name": "Skirmisher",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#skirmisher_northlandsworldbook",
+  "type": "Fighting Style",
+  "prerequisite": "Fighting Style",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Mobility",
+    "type": "text",
+    "value": "Your Speed increases by 10 feet."
+   },
+   {
+    "name": "Strike and Fade",
+    "type": "text",
+    "value": "Once on each of your turns, you can deal extra damage equal to your Proficiency Bonus to a creature you hit with an attack that deals Bludgeoning, Piercing, or Slashing damage, as long as you have moved 15 feet prior to making the attack."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Small Folk",
   "source": "TLotRR",
   "url": "https://5e.tools/feats.html#small%20folk_tlotrr",
@@ -4644,6 +6393,32 @@
   "reprint": null
  },
  {
+  "name": "Snowrunner",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#snowrunner_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Ice Walking",
+    "type": "text",
+    "value": "You have Advantage on saving throws and ability checks to maintain your balance on slippery surfaces and on snow."
+   },
+   {
+    "name": "Winter's Edge",
+    "type": "text",
+    "value": "You have Advantage on Wisdom (*Survival*) checks in snowy or icy terrain."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Song-Craft",
   "source": "TLotRR",
   "url": "https://5e.tools/feats.html#song-craft_tlotrr",
@@ -4673,6 +6448,37 @@
     "name": "",
     "type": "text",
     "value": "When you reach 5th level, you can use a bonus action on each of your turns to extend the duration of each of these effects on all targets until the end of your next turn, up to 1 minute."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Spear Expert",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#spear%20expert_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+, 13 Strength and Weapon Mastery",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Deflecting Haft",
+    "type": "text",
+    "value": "You can use a Spear to deflect incoming attacks. While holding a Spear, you gain a +1 bonus to your AC."
+   },
+   {
+    "name": "Expert Thrower",
+    "type": "text",
+    "value": "The range of any Spear you throw is 30/90."
+   },
+   {
+    "name": "Spear Ready",
+    "type": "text",
+    "value": "If you take the Ready action to attack with the Spear, you have Advantage on the triggered attack."
    }
   ],
   "reprint": null
@@ -4987,6 +6793,27 @@
       "As a bonus action, you can give yourself advantage on your next ranged attack roll on the current turn. You can use this bonus action only if you haven't taken reactions during this turn, and after you use the bonus action, you cannot take reactions until the start of your next turn."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Surtr's Touch",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#surtr's%20touch_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Touch of Flame",
+    "type": "text",
+    "value": "As a Bonus Action, you can imbue your touch with the power of fire for 1 minute. During that time, when you hit with a melee weapon attack, you deal extra Fire damage equal to your Proficiency Bonus. You can use this feat a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
    }
   ],
   "reprint": null
@@ -5396,6 +7223,43 @@
   "reprint": null
  },
  {
+  "name": "Trickster's Toolbox",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#trickster's%20toolbox_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Tricksy Magic",
+    "type": "text",
+    "value": "Choose two level 1 spells from the Enchantment or Illusion school of magic. You always have those spells and the __Tasha's hideous laughter__ spell prepared. You can cast each of these spells without expending a spell slot. Once you cast one of these spells in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Underfoot",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#underfoot_northlandsworldbook",
+  "type": "Fighting Style",
+  "prerequisite": "Fighting Style",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can end your movement in a space occupied by a creature two sizes larger than you. If you attack that creature while you share its space, you have Advantage on your attack roll. If that creature attacks you while it shares your space, it has Disadvantage on its attack roll."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Unreflected",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#unreflected_crookedmoon24",
@@ -5641,6 +7505,32 @@
   "reprint": null
  },
  {
+  "name": "Well-Versed",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#well-versed_northlandsworldbook",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You know the sagas of your people and others and can use that knowledge to help you. You gain the following benefits."
+   },
+   {
+    "name": "Lore Proficiency",
+    "type": "text",
+    "value": "You gain proficiency in one musical instrument and one of the following skills: *Arcana*, *History*, *Nature*, or *Religion*."
+   },
+   {
+    "name": "Useful Knowledge",
+    "type": "text",
+    "value": "When you make an Intelligence (*Arcana*, *History*, *Nature*, or *Religion*) check, you can give yourself Advantage on the roll. You can do this a number of times equal to your Proficiency Bonus and regain all expended uses when you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Wetland Explorer",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/feats.html#wetland%20explorer_obojimatallgrass",
@@ -5665,6 +7555,32 @@
       "You gain a +2 bonus to attack rolls made against a target of the chosen creature type."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Wild Lore",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/feats.html#wild%20lore_northlandsworldbook",
+  "type": "General Feat",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Knowledge of the Land",
+    "type": "text",
+    "value": "You have Advantage on all Intelligence (*Nature*) checks."
+   },
+   {
+    "name": "Provider",
+    "type": "text",
+    "value": "You can use your knowledge of the land to find food and fresh water for yourself and up to 3 other people each day."
    }
   ],
   "reprint": null

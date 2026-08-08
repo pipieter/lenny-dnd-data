@@ -679,6 +679,60 @@
   "reprint": null
  },
  {
+  "name": "Baugsmidr Dwarf",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/races.html#baugsmidr%20dwarf_northlandsworldbook",
+  "image": null,
+  "sizes": [
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Darkvision",
+    "type": "text",
+    "value": "You have Darkvision to a range of 120 feet."
+   },
+   {
+    "name": "Arcane Lore",
+    "type": "text",
+    "value": "You have Advantage on Intelligence (*Arcana*) checks."
+   },
+   {
+    "name": "Dwarven Resilience",
+    "type": "text",
+    "value": "You have Resistance to Poison damage. You also have Advantage on saving throws you make to avoid or end the Poisoned condition."
+   },
+   {
+    "name": "Magical Crafter",
+    "type": "text",
+    "value": "You have Advantage on any checks made to create magical items."
+   },
+   {
+    "name": "Sense Magic",
+    "type": "text",
+    "value": "As a Bonus Action, you can sense the presence of magic within 120 feet until the end of your next turn. You see a faint aura around any visible magic object or active spell, and you know its school of magic. You also detect the presence and location of otherworldly creatures, such as Aberrations, Celestials, Fey, Fiends, and Undead. This ability can be blocked by 1 foot of solid material, such as stone or metal. You can use this trait a number of times equal to your Proficiency Bonus, and regain all expended uses when you finish a Long Rest."
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Dwarves are one of the most prolific humanoid species of the Northlands, perhaps second only to humans themselves. Dwarves in the Northlands take on many roles, from hard-working wheat farmers to outstanding metal and leather crafters. Environment and circumstance have subtly transformed dwarves over the centuries and grant them different traits."
+   },
+   {
+    "name": "Baugsmidr Dwarf",
+    "type": "text",
+    "value": "A lesser known dwarven lineage is the baudsmidr dwarf. These dwarves are sometimes called \"ring dwarves\" by outsiders for their knack with crafting magical rings. Long ago, Gullveig, an obscure deity of magic and gold, lived for a time among an isolated community of dwarves, teaching them the divine art of binding magical runes into precious metals. Though this brought the dwarves great renown and power, it also led to jealousy and greed from others. After a series of raids nearly decimating their community, the baudsmidr dwarves retreated deep within the ground, creating hidden enclaves and redoubts. Today, the descendants of these dwarves remain guarded. Culturally, they consider the location of their communities a closely guarded secret, shared with only those they trust implicitly. Their isolationism has made them leaner than other dwarves, with hair the color of gold or silver. Their eyes are usually large and pale. The gift from Gullveig remains strong in the baudsmidr and many become spellcasters. The ring dwarves who leave the community often travel to find and recover new magical lore or lost artifacts."
+   }
+  ],
+  "skillProficiencies": null,
+  "reprint": null
+ },
+ {
   "name": "Bearfolk",
   "source": "BookOfEbonTides",
   "url": "https://5e.tools/races.html#bearfolk_bookofebontides",
@@ -768,6 +822,183 @@
     "perception"
    ],
    "amount": "all"
+  },
+  "reprint": null
+ },
+ {
+  "name": "Bearfolk",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/races.html#bearfolk_northlandsworldbook",
+  "image": null,
+  "sizes": [
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Apex Predator",
+    "type": "text",
+    "value": "When you make a Charisma check, you can add your Strength or Constitution modifier to it (choose which during character creation). You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+   },
+   {
+    "name": "Wild Heart",
+    "type": "text",
+    "value": "You and allied creatures within 5 feet of you have Advantage on saving throws against the Frightened condition while you are conscious and do not have the Incapacitated condition."
+   },
+   {
+    "name": "Thick Coat",
+    "type": "text",
+    "value": "You have Resistance to Cold damage and Immunity to the effects of extreme cold."
+   },
+   {
+    "name": "Bearfolk Lineage",
+    "type": "text",
+    "value": "You are part of a lineage that grants you supernatural abilities. Choose a legacy from the Bearfolk Lineages table. You gain a different benefit depending on your choice: Andari or Garhamr."
+   },
+   {
+    "name": "Bearfolk Lineages",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Bearfolk Lineages",
+     "headers": [
+      "Lineage",
+      "Benefit"
+     ],
+     "rows": [
+      [
+       "Andari",
+       "Nature's Gift. You know one cantrip of your choice from the druid spell list. Wisdom is your spellcasting ability score for it."
+      ],
+      [
+       "Garhamr",
+       "Bear Hug. When you hit a target with an attack roll and deal damage to it, you can make an Unarmed Strike as a Bonus Action. You can use this ability a number of times equal to your Constitution modifier (minimum of 1), and you regain all expended uses when you finish a Long Rest."
+      ]
+     ]
+    }
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Hailing from the cold forests and mountains of the Northlands, bearfolk are massive people of iron resolve and deep nobility, who resemble bears that walk upright rather than all fours. They put their trust in family and tribe to stand against the world and the challenges of their homeland. Many outsiders assume that they are some form of beastkin, but bearfolk claim the fey lord Mesikammen elevated them from their bear cousins."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In contrast with their brutish appearance, bearfolk are deeply spiritual and artistic. They lack a bear's sharp claws, and their hands are as dexterous as any human artisan. They are covered in fur that often has light frosting on the chest, shoulders, and upper back. The color of their fur sometimes gives clues as to a particular bearfolk's ancestry and what tribe they hail from. As they get older, the fur around their muzzle begins to silver, giving them a distinguished look."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Much as their natural cousins, the natural environment causes minor differences between bearfolk if they inhabit it for generations. Two of these lineages are described below. Bearfolk have similar lifespans to humans."
+   },
+   {
+    "name": "Andari",
+    "type": "text",
+    "value": "You are slighter of build than your cousins, with reddish or pale fur. Your people, who are also known as \"purifiers,\" tend to have a strong affinity for nature. Andari often serve as spiritual anchors in their communities. They are a recent branch of the bearfolk species. The majority of Andari originate in the settled communities, such as Bjeornheim or in other settlements across the North."
+   },
+   {
+    "name": "Garhamr",
+    "type": "text",
+    "value": "You are thicker and hardier than your cousins. Your people, who are also known as grizzlehides, have fur ranging from black to golden. Tough and ferocious grizzlehides are the original bearfolk stock of the Northlands forests."
+   },
+   {
+    "name": "Bearfolk Names",
+    "type": "text",
+    "value": "Bearfolk are given cub names by their parents, similar to names found throughout the Northlands. When a bearfolk comes of age, they earn a new name, either bestowed upon them by an elder or one they choose themselves. This name befits a deed undertaken during their rite of passage into adulthood, describes some honorable or prominent trait of the bearfolk in question, or honors an ancestor."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Cub Names:** Anga, Beorst, Burli, Cauldvyr, Cirdhan, Daegna, Dorngal, Durtta, Erlundt, Farla, Gurralt, Hrosvir, Ingyrd, Johanna, Lhod, Nodhr, Padhra, Sivaer, Tuli, Yrn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Deed Names:** Fireheart, Ironhide, Lightblade, Moondancer, Razorclaws, Shadowbane, Stonebones, Valgerdsdottir, Yellowfang, Yrnsson."
+   }
+  ],
+  "skillProficiencies": null,
+  "reprint": null
+ },
+ {
+  "name": "Beastkin",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/races.html#beastkin_northlandsworldbook",
+  "image": null,
+  "sizes": [
+   "Medium",
+   "Small"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Animal Instinct",
+    "type": "text",
+    "value": "You have proficiency in either the *Perception* or *Survival* skill (your choice)."
+   },
+   {
+    "name": "Natural Weapons",
+    "type": "text",
+    "value": "You have claws, horns, hooves, fangs, spines, or a similar adaptation that serves as a natural weapon. Work with your GM to determine what type of natural weapon you possess and decide whether it deals Bludgeoning, Piercing, or Slashing damage. You can use your natural weapon to make Unarmed Strikes. When you hit with it, the strike deals **1d6** + your Strength or Dexterity modifier damage (choose which during character creation) of your chosen type, instead of the damage normal for an unarmed strike."
+   },
+   {
+    "name": "Natural Adaptation",
+    "type": "text",
+    "value": "You inherit one of the following traits determined by what kind of animal characteristics you want your character to have."
+   },
+   {
+    "name": "Avian",
+    "type": "text",
+    "value": "Leathery, feathery, or gossamer wings sprout from your back or connect to your outstretched arms. You have a Fly Speed equal to your Speed. You can't fly while wearing Medium or Heavy armor."
+   },
+   {
+    "name": "Agile",
+    "type": "text",
+    "value": "Sharp claws, cloven hooves, robust limbs, reversed joints, or suction pads on your hands and feet allow you to scrabble up trees, rock faces, and uneven surfaces with ease. You have a Climb Speed equal to your Speed. In addition, you have Advantage on saving throws made to avoid having the Prone condition."
+   },
+   {
+    "name": "Aquatic",
+    "type": "text",
+    "value": "Oily fur, scales, fins, webbed hands and feet, or long, gangly limbs are common for your people. You have a Swim Speed equal to your Speed. You can hold your breath for up to 20 minutes."
+   },
+   {
+    "name": "Sturdy",
+    "type": "text",
+    "value": "Powerful limbs, fat reserves, or a thick hide allow you to endure harm and accomplish feats of remarkable athleticism. When you aren't wearing armor, you have an AC of 13 + your Dexterity modifier. In addition, you count as one size larger when determining your carrying capacity and the weight you can drag, lift, or push."
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Born between civilization and the wilds, beastkin are as varied as the animal kingdom itself. Sometimes called wildkin, beastkin universally share the bipedal form of humans, elves, or dwarves, but they have pronounced traits of a specific beast, such as hawk wings, a scorpion's tail, rabbit ears, owl eyes, a crab-like carapace, razor-sharp shark teeth, or bony ox horns. Some beastkin show only slight bestial features, while others resemble bipedal versions of their animal kin."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Some beastkin believe they are relatives of the intelligent beasts that hold court in the Fey Realms. Others claim they are descendants of lycanthropes or other magically transformed beings. Whatever the case, all beastkin share a tie to the natural world, and many choose to live alongside the animals they resemble."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Beastkin are often driven by curiosity to explore. Though such wanderlust may last for years, most beastkin return home in later life, where they often act as wardens of their home territory. While all beastkin contend with primal urges, most are quick to form unshakable bonds with those who show them compassion and loyalty."
+   }
+  ],
+  "skillProficiencies": {
+   "options": [
+    "perception",
+    "survival"
+   ],
+   "amount": 1
   },
   "reprint": null
  },
@@ -3043,6 +3274,110 @@
  },
  {
   "name": "Elf",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/races.html#elf_northlandsworldbook",
+  "image": null,
+  "sizes": [
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Darkvision",
+    "type": "text",
+    "value": "You have Darkvision with a range of 60 feet."
+   },
+   {
+    "name": "Elven Lineage",
+    "type": "text",
+    "value": "You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven lineages Table. You gain the level 1 benefit of that lineage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you reach character levels 3 and 5, you learn a higher-level spell, as shown in the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability score when you select the lineage)."
+   },
+   {
+    "name": "Elven Lineages",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Elven Lineages",
+     "headers": [
+      "Lineage",
+      "Level 1",
+      "Level 3",
+      "Level 5"
+     ],
+     "rows": [
+      [
+       "Alfar (Hidden Elf)",
+       "You know the Minor Illusion cantrip. In addition, you have Advantage on Dexterity (Stealth) checks in forests.",
+       "Silent Image",
+       "Blur"
+      ],
+      [
+       "Ice Elf",
+       "You know the Ray of Frost cantrip. In addition, you have Advantage on Dexterity (Stealth) checks in icy or snowy conditions.",
+       "Ice Knife",
+       "Gust of Wind"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Fey Ancestry",
+    "type": "text",
+    "value": "You have Advantage on saving throws you make to avoid or end the Charmed condition."
+   },
+   {
+    "name": "Keen Senses",
+    "type": "text",
+    "value": "You have proficiency in your choice of two of the following skills: *Insight*, *Perception*, and *Survival*."
+   },
+   {
+    "name": "Trance",
+    "type": "text",
+    "value": "You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trance-like meditation, during which you retain consciousness."
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Millennia ago, elves were created in the Vanir War between the gods. Most were driven out of their original Northlands territories by the dwarves, forced to move south and join their kin before the Great Retreat. The elven communities remaining in the Northlands are generally isolationist, choosing to inhabit the farthest reaches of the Bleak Expanse or to hide themselves away from view with powerful magic. Ages of seclusion have subtly influenced the native elven populations of the North, granting them certain kinds of magic."
+   },
+   {
+    "name": "Alfar (Hidden Elves)",
+    "type": "text",
+    "value": "The alfar are an extremely rare lineage of elves who chose to remain in the North when their kin fled to southern lands. Faced with little to no support, as well as pressure from the dwarven empire, they withdrew to the region's most remote forests. Often known as the hidden elves due to their use of camouflage and illusions to conceal their isolated communities from view, the alfar are suspicious of outsiders and possess customs that are far more insular than those of other elves."
+   },
+   {
+    "name": "Ice Elves",
+    "type": "text",
+    "value": "The other major lineage of elves in the Northlands roams the tundra and icy hills of the Bleak Expanse in small bands, hunting caribou and mammoths from the backs of reindeer and white-furred saber-toothed tigers. Ice elves are largely insular and fiercely self-sufficient. This has given them the reputation of being secretive, while the truth is more that they have little interest in the larger world. They expect no aid from outsiders, nor do they freely give it. Yet, the ice elves are sometimes willing to trade with humans, dwarves, and trollkin. Despite what ignorant outsiders believe, only a few ice elf communities worship Boreas and do his bidding, and most wish nothing to do with the malevolent deity."
+   }
+  ],
+  "skillProficiencies": {
+   "options": [
+    "insight",
+    "perception",
+    "survival"
+   ],
+   "amount": 2
+  },
+  "reprint": null
+ },
+ {
+  "name": "Elf",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/races.html#elf_obojimatallgrass",
   "image": null,
@@ -3546,6 +3881,56 @@
   "reprint": null
  },
  {
+  "name": "Fjord Dwarf",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/races.html#fjord%20dwarf_northlandsworldbook",
+  "image": null,
+  "sizes": [
+   "Medium"
+  ],
+  "speed": [
+   "30 feet",
+   "Swim equal to your walking speed"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Darkvision",
+    "type": "text",
+    "value": "You have Darkvision to a range of 90 feet."
+   },
+   {
+    "name": "Dwarven Toughness",
+    "type": "text",
+    "value": "Your Hit Point maximum increases by 1, and it increases by 1 again whenever you gain a level."
+   },
+   {
+    "name": "Fjord Warrior",
+    "type": "text",
+    "value": "You don't take any penalties to your attack rolls while balancing or climbing."
+   },
+   {
+    "name": "Wavecunning",
+    "type": "text",
+    "value": "You have a Swim Speed equal to your Speed and can hold your breath for twice as long as normal."
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Dwarves are one of the most prolific humanoid species of the Northlands, perhaps second only to humans themselves. Dwarves in the Northlands take on many roles, from hard-working wheat farmers to outstanding metal and leather crafters. Environment and circumstance have subtly transformed dwarves over the centuries and grant them different traits."
+   },
+   {
+    "name": "Fjord Dwarf",
+    "type": "text",
+    "value": "Fjord dwarves are a distinct lineage of dwarves who long ago abandoned the halls and mines traditionally inhabited by their species, instead choosing to sail the fjords and dwell in rough coastal settlements throughout the Northlands. Indeed, many fjord dwarves find the ancient halls of their forebears to be a bit claustrophobic. They much prefer open sea air and the deck planks of a ship beneath their feet. Fjord dwarves, like other Northlands dwarves, are often menacing raiders and fierce warriors, yet they can also be deeply honorable and generous to their friends and allies."
+   }
+  ],
+  "skillProficiencies": null,
+  "reprint": null
+ },
+ {
   "name": "Gallus",
   "source": "HumblewoodCampaignSetting",
   "url": "https://5e.tools/races.html#gallus_humblewoodcampaignsetting",
@@ -3822,6 +4207,125 @@
    ],
    "amount": 1
   },
+  "reprint": null
+ },
+ {
+  "name": "Giantkin",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/races.html#giantkin_northlandsworldbook",
+  "image": null,
+  "sizes": [
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Catch and Throw",
+    "type": "text",
+    "value": "If you are hit by a ranged weapon attack, you can use your Reaction to add 3 to your AC. If that causes the attack to miss, you can catch the missile, provided the attack included a projectile or was a small thrown weapon (GM's discretion), and throw it back at the attacker, using your normal ranged weapon attack bonus and the weapon's normal damage."
+   },
+   {
+    "name": "Powerful Build",
+    "type": "text",
+    "value": "You have Advantage on saving throws that you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity."
+   },
+   {
+    "name": "Giantkin Ancestry",
+    "type": "text",
+    "value": "Your ancestry grants you supernatural abilities. Choose an ancestry from the Giantkin Ancestry table. You gain a natural resistance to the effects of certain natural environments or a condition, and a trait indicated by your chosen ancestry."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a benefit grants you the ability to cast a spell, you always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a benefit of your ancestry requires a saving throw, the DC is 8 + your Intelligence, Wisdom, or Charisma modifier (choose at character creation) + your Proficiency Bonus."
+   },
+   {
+    "name": "Giantkin Ancestry",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Giantkin Ancestry",
+     "headers": [
+      "Ancestry",
+      "Natural Resistance",
+      "Benefit"
+     ],
+     "rows": [
+      [
+       "Cloud",
+       "You have Immunity to the effects of Extreme Cold and high altitude.",
+       "__Airstep__ & __Windcall__"
+      ],
+      [
+       "Fire",
+       "You have Immunity to the effects of Extreme Heat.",
+       "__Burning Blood__"
+      ],
+      [
+       "Frost",
+       "You have Immunity to the effects of extreme cold and Advantage on saves against the Stunned condition.",
+       "__Iceshaper__ & __Snowsight__"
+      ],
+      [
+       "Hill",
+       "You have Advantage on saves against the Poisoned and Stunned conditions.",
+       "__Bulky__ & __Iron Stomach__"
+      ],
+      [
+       "Stone",
+       "You have Advantage on saves against the Prone and Petrified conditions.",
+       "__Stonepulse__ & __Darkvision__"
+      ],
+      [
+       "Storm",
+       "You have Advantage on saves against Lightning damage. You have Immunity to the effects of high altitude.",
+       "__Crackling Personality__ & __Stormsight__"
+      ]
+     ]
+    }
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The skalds don't admit to knowing stories of the first giantkin, but few giantkin care about or dwell on their origin. Descended from giants and smaller species in equal measure, they know they must walk their own path in lands where some look upon their ancestry with disfavor. Actions alone will forge their legacy."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Giantkin primarily inhabit communities on the fringes of giant-held territories like The Bleak Expanse, Thursrike, and Jotunheim, or else in and around human or dwarf settlements such as Bjornrike or Jomsborg. True giants place giantkin at the bottom of their social structure, viewing them as only a slight step above the smaller species. Human and dwarven communities make use of giantkin's great strength and other advantages, but many distrust them and their obvious connection to giants. These conflicting attitudes ironically mean giantkin spread throughout the Northlands, even in frigid regions they would otherwise find distasteful, to find their place in the world."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Today, giantkin are a true species, producing children of their own who take on traits from either parent. Culturally, giantkin generally draw more from the society they are raised in than from their ancestry, forging relationships and identities among from the other species of the Northlands."
+   },
+   {
+    "name": "Hill Giantkin",
+    "type": "text",
+    "value": "Hill giantkin have the hulking and often unsophisticated hill giants in their ancestry. Often believed to have quick tempers and voracious appetites, hill giantkin are individually quite varied. At about 6 ½ feet tall, they are the smallest of the giantkin, a fact some are sensitive about. They tend to be a sturdy species, with tanned skin and brown or black hair."
+   },
+   {
+    "name": "Stone Giantkin",
+    "type": "text",
+    "value": "Descended from their ascetic giant forebears, stone giantkin tend toward thin, angular builds and skin that resembles rough, gray stone. Stone giantkin are often bald, either naturally or by choice, and rarely grow beards, but some have short, dark hair. They occasionally adorn their faces and scalps with intricate woad designs. Stone giantkin are generally reserved and slow to anger. They typically stand 6 ½ to 7 feet tall."
+   },
+   {
+    "name": "Storm Giantkin",
+    "type": "text",
+    "value": "Storm giantkin descend from the temperamental and reflective storm giants. They are the tallest of the giantkin, standing nearly 8 feet high, with skin tones ranging from the deepest blues to regal purples, stark white hair, and eyes of white or violet. Many storm giantkin struggle with their moods, with small sparks of the innate lightning of their ancestry emerging in moments of stress or high emotion."
+   }
+  ],
+  "skillProficiencies": null,
   "reprint": null
  },
  {
@@ -8437,6 +8941,86 @@
   "reprint": null
  },
  {
+  "name": "Trollkin",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/races.html#trollkin_northlandsworldbook",
+  "image": null,
+  "sizes": [
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Darkvision",
+    "type": "text",
+    "value": "You have Darkvision with a range of 120 feet."
+   },
+   {
+    "name": "Natural Weapon",
+    "type": "text",
+    "value": "You have fangs, hooves, or claws, which serve as a natural weapon. Work with your GM to determine what type of natural weapon you possess and decide whether it deals Bludgeoning, Piercing or Slashing damage. You can use your natural weapon to make Unarmed Strikes. When you hit with it, you deal **1d6** + your Strength or Dexterity modifier damage (choose which during character creation) of your chosen type, instead of the Bludgeoning damage normal for an unarmed attack."
+   },
+   {
+    "name": "Trollish Regeneration",
+    "type": "text",
+    "value": "The regenerative power in your blood allows you to quickly recover from wounds. As a Bonus Action, you can expend any number of Hit Dice up to your Proficiency Bonus to regain Hit Points. If you take Acid or Fire damage, you lose access to this ability until you finish a Short Rest."
+   },
+   {
+    "name": "Natural Adaptation",
+    "type": "text",
+    "value": "You manifest different traits depending on your non-humanoid ancestor. Choose one of the ancestor types from the Trollkin Ancestry table. You gain a different benefit depending on your choice."
+   },
+   {
+    "name": "Trollkin Ancestry",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Trollkin Ancestry",
+     "headers": [
+      "Ancestry",
+      "Benefit"
+     ],
+     "rows": [
+      [
+       "Fey",
+       "When you make an ability check that uses Charisma, you may roll a 1d6 and add it to the total. You can use this trait a number of times per day equal to your Charisma modifier, and you regain all uses when you finish a Long Rest."
+      ],
+      [
+       "Ogre",
+       "You have Advantage on ability checks and saves to avoid or escape grapples. You also count as one size larger when determining your carrying capacity."
+      ],
+      [
+       "Troll",
+       "You have Advantage on saves against the Stunned condition. You also count as one size larger when determining your carrying capacity."
+      ]
+     ]
+    }
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "In ancient times, ogres, trolls, and fey would sometimes take humans as mates. The humanoid children of these unlikely unions are known as trollkin. Such folk are typically lanky and smaller in size than their larger ancestors, and they have inherited some of the otherworldly traits of their forebears. They have carved out numerous settlements in the cold North, and while they are sometimes found in communities of their own kind, they also live alongside other species in various Northland locations."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Trollkin tend to be tall, often between 6 and 7 feet in height, and their skin tone favors green, though this can range from a green-tinged gold to aquas and blues. Some trollkin are rangy, reflecting strong troll ancestry, thin and wiry with long arms and legs. Others are broad and muscular, more ogre-like, with thick skin and large jaws. Some trollkin have tusks or horns, or long, coarse hair all over their body. Others are mostly hairless and might even have spots or other patterns on their skin."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Trollkin customs and traditions vary widely between settlements and are usually passed down from their ancestors. Since trollkin tend to heal more quickly and fully than other species, preventing tattoos from being effective, some will brand or scar their bodies in careful patterns using acid or fire, which leaves long-lasting marks. Some trollkin are quite musical, generally favoring songs heavy with percussion and with sinuous, mournful melodies."
+   }
+  ],
+  "skillProficiencies": null,
+  "reprint": null
+ },
+ {
   "name": "Umbral Human",
   "source": "BookOfEbonTides",
   "url": "https://5e.tools/races.html#umbral%20human_bookofebontides",
@@ -8768,6 +9352,86 @@
    "source": "GrimHollowPG24",
    "tag": null
   }
+ },
+ {
+  "name": "Werekin",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/races.html#werekin_northlandsworldbook",
+  "image": null,
+  "sizes": [
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Humanoid",
+  "description": [
+   {
+    "name": "Darkvision",
+    "type": "text",
+    "value": "You have Darkvision with a range of 60 feet."
+   },
+   {
+    "name": "Claws",
+    "type": "text",
+    "value": "You have wickedly sharp claws that you can use to make Unarmed Strikes. When you hit with your claws, you deal **1d6** + your Strength modifier Slashing damage, instead of the Bludgeoning damage normal for an unarmed strike."
+   },
+   {
+    "name": "Predatory Prowess",
+    "type": "text",
+    "value": "You have proficiency in the *Athletics*, *Intimidation*, *Perception*, or *Survival* skill (your choice)."
+   },
+   {
+    "name": "Scent",
+    "type": "text",
+    "value": "You have Advantage on Wisdom (*Perception*) checks relating to detecting scents and tracking."
+   },
+   {
+    "name": "Shift Aspect",
+    "type": "text",
+    "value": "You can transform as a Bonus Action, gaining the primal power of your lycanthropic forebears. The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can't do so again until you finish a Long Rest."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you transform, you gain one of the following options (choose the option each time you transform)."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Bestial Strength**: You gain Temporary Hit Points equal to twice your Proficiency Bonus. You also have Advantage on Strength checks as well as any checks or saves to resist or end the Grappled condition.",
+      "**Primal Savagery**: You channel the raw savagery of your bestial side. When you use this option, and as a Bonus Action on each of your turns while it is active, you can roar. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 + your Charisma modifier + your Proficiency Bonus) or have the Frightened condition until the end of your next turn. A creature that succeeds on the save has Immunity to your roar for 24 hours.",
+      "**Swift Hunter**: Your body becomes primed for the hunt. Until the transformation ends, your Speed is increased by 10 feet, and you have Advantage on Strength (*Athletics*) and Wisdom (*Survival*) checks."
+     ]
+    }
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Werekin are the descendants of shapechangers, and they can assume the forms of both animals and humanoids. A werekin might have a bloodline bearing the blessing of an animal lord or possess a remnant of lycanthropy passed down through their blood. In the cold of the Northlands, perhaps due to the influence of Fenris, most werekin tend to be lupine, but a werekin's animal ancestry can derive from other existing lycanthrope lineages, such as bears, boars, rats, and even arctic foxes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While human-appearing in most respects, a werekin's features have aspects reflecting their bestial ancestry. This can include sharp teeth, pointed ears, larger eyes, hair or bristles on their limbs or face, and so forth. Though a werekin's ancestors possessed the ability to fully change their form, a werekin can instead assume a bestial aspect, channeling the predatory nature of a beast without significantly altering their physical form. In many cases, this aspect shows itself by a change in posture and poise, though some werekin do show subtle signs of a physical change—a yellowing of the eyes, lengthening nails or canines, or sudden hair growth."
+   }
+  ],
+  "skillProficiencies": {
+   "options": [
+    "athletics",
+    "intimidation",
+    "perception",
+    "survival"
+   ],
+   "amount": 1
+  },
+  "reprint": null
  },
  {
   "name": "Wulven",

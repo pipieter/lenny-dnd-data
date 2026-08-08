@@ -1,5 +1,103 @@
 [
  {
+  "name": "All Stop",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#all%20stop_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crew attempts a DC 12 Strength (*Athletics*) or Wisdom (*Survival*) check to strike the sails and drop the anchor, bringing the ship's Speed to 0 feet after it completes its movement this round. If the check fails, the ship continues moving for another round before the anchor catches. This check can't be attempted in deep water."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Come About",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#come%20about_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crew attempts a severe change of direction with a DC 15 Strength (*Athletics*) or Wisdom (*Survival*) check. If successful, the ship turns 90° instead of the normal 45°. If the check fails, the ship doesn't turn at all. This check has Disadvantage if the ship is crossing against the direction of the wind unless the ship is being rowed."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Disable Station",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#disable%20station_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crew fires to disable stations on the enemy vessel. This attack has Disadvantage. If the attack hits, instead of dealing damage to the hull, one station is damaged according to the [Disable Station](https://5e.tools/tables.html#disable%20station_northlandsworldbook) table. Roll a 1d6 to determine how many crew members in that area are Unconscious and dying."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Escape a Grapple",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#escape%20a%20grapple_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A member of the crew leads a number of crew members in cutting lines that tie their vessel to another. A successful DC 13 Strength (*Athletics*) or Wisdom (*Survival*) check cuts the lines."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Evasive Maneuver",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#evasive%20maneuver_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crew makes a Strength (*Athletics*) or Wisdom (*Survival*) check contested by the enemy crew. On a success, attackers have Disadvantage on ranged attacks to hit the ship."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Force Position",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#force%20position_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crew makes a contested Strength (*Athletics*) or Wisdom (*Survival*) check opposed by the enemy crew to force the enemy into a disadvantageous position. On a success, the enemy ship has Disadvantage on its Strength (*Athletics*) or Wisdom (*Survival*) check to determine Initiative next round. On a failure, the enemy gains Advantage to its Initiative check next round."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Full Speed Ahead",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#full%20speed%20ahead_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crew uses its action to adjust the sails and gain a burst of speed. The ship can Dash this turn. If the ship is powered by oars, it must succeed on a DC 12 Constitution save or the crew gains one level of Exhaustion."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Gather Rumours",
   "source": "TLotRR",
   "url": "https://5e.tools/actions.html#gather%20rumours_tlotrr",
@@ -29,6 +127,20 @@
     "name": "",
     "type": "text",
     "value": "*When they appeared they brought news from afar, and told strange forgotten tales which were eagerly listened to...*"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Grapple",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#grapple_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A member of the crew leads a number of crew in throwing grappling hooks onto an enemy vessel within 5 feet and tying the ships together. While tied together, neither ship can move, and the crews can't use the Come About, Evasive Maneuver, Force Position, Full Speed Ahead, Hold Her Steady, Ram, or Sheer shipboard actions. This action requires a successful DC 13 Strength (*Athletics*) or Wisdom (*Survival*) check."
    }
   ],
   "reprint": null
@@ -68,6 +180,20 @@
   "reprint": null
  },
  {
+  "name": "Hold Her Steady",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#hold%20her%20steady_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The crew holds the ship steady, giving the crew members operating ship-mounted weapons Disadvantage to hit one enemy ship. All enemy ships have Disadvantage to hit the ship holding steady."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Meet Patron",
   "source": "TLotRR",
   "url": "https://5e.tools/actions.html#meet%20patron_tlotrr",
@@ -102,6 +228,53 @@
     "name": "",
     "type": "text",
     "value": "*Elrond, as was his custom, sat in a great chair at the end of the long table upon the dais...*"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Motivate",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#motivate_northlandsworldbook",
+  "time": "1 Reaction",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**PCs Only.**"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Reaction, the PC shouts encouragement to the crew during a shipboard action. On a successful DC 13 Charisma (*Intimidation* or *Persuasion*) check, all crew rolls related to the triggering Shipboard Action have Disadvantage."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Operate Ship Weapon",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#operate%20ship%20weapon_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As an action, the crew loads and aims a ship-mounted weapon. It still requires a separate action to fire the weapon."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Patch",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#patch_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A member of the crew leads a damage repair team to put in a temporary patch on the hull or repair a damaged station. The crew has a +4 bonus to this check. This action can only be used once per hole or damaged station (see the [Disable Station](https://5e.tools/tables.html#disable%20station_northlandsworldbook) table). The DC to restore Hit Points to the ships is 10 + 2 per hole the ship has suffered, and DC 15 to repair a station. A successful check restores 2d6 Hit Points to the ship or restores a station to working order."
    }
   ],
   "reprint": null
@@ -175,6 +348,20 @@
   "reprint": null
  },
  {
+  "name": "Ram",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#ram_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the ship is moving, the crew can attempt to ram another vessel within a number of feet equal to half the ship's Speed by making a successful Strength (*Athletics*) or Wisdom (*Survival*) check against the other ship's AC and moving that number of feet. If successful, both ships take **2d10** damage for every size category of the ramming ship. If the ship is equipped with a ram, it takes only half damage. Both ships become hopelessly grappled and can't be separated without several minutes of work. If the attempt misses, the ships graze each other and both take one-quarter damage. You can't take the Ram shipboard action against the direction of the wind unless the ship is being rowed."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Recount a Story",
   "source": "TLotRR",
   "url": "https://5e.tools/actions.html#recount%20a%20story_tlotrr",
@@ -214,6 +401,20 @@
     "name": "",
     "type": "text",
     "value": "*To some there Bilbo's tale was wholly new, and they listened with amazement while the old Hobbit, actually not at all displeased, recounted his adventure with Gollum, at full length.*"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Sheer",
+  "source": "NorthlandsWorldbook",
+  "url": "https://5e.tools/actions.html#sheer_northlandsworldbook",
+  "time": "Action",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Only effective against ships with oars, the crew brings their vessel within 5 feet of the enemy vessel, sheering off all the oars on one side of the enemy vessel. This reduces its Speed to 0 feet for 3 rounds until new oars can be deployed. To succeed, the crew member at the helm must make a successful Strength (*Athletics*) or Wisdom (*Survival*) check with a DC equal to the other ship's AC."
    }
   ],
   "reprint": null
