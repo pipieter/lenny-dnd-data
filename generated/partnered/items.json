@@ -3545,6 +3545,26 @@
   "reprint": null
  },
  {
+  "name": "Arrow, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#arrow%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "7.5 cp",
+  "weight": "0.8 oz.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Arrow, Slashing",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/items.html#arrow%2C%20slashing_grimhollowpg24",
@@ -3624,6 +3644,66 @@
     "name": "",
     "type": "text",
     "value": "Ammunition with the Whistling property creates a high-pitched sound after firing. This sound is audible out to 300 feet from the ammo as it flies. Whistling ammo isn't heavier, but it catches the air with intricate baffles to create its sound, so its maximum range is half normal. Whistling ammo deals Bludgeoning damage."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Arrow, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#arrow%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "5 cp",
+  "weight": "0.4 oz.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Arrows, Silver (20)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#arrows%2C%20silver%20(20)_boundbyblood",
+  "image": null,
+  "value": "1 gp 5 sp",
+  "weight": "1 lb.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Arrows, Wooden (20)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#arrows%2C%20wooden%20(20)_boundbyblood",
+  "image": null,
+  "value": "1 gp",
+  "weight": "8 oz.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
    }
   ],
   "properties": [],
@@ -6100,6 +6180,41 @@
     "name": "",
     "type": "text",
     "value": "When you roll a 20 on the d20 for an attack roll with this weapon against a Small or larger enemy, you magically earn a number of Gold Pieces equal to the attack's damage. When you do, the axe glimmers like a sparkling coin, and you can sense the weight and clink of coins magically falling into your purse, pocket, or bag (your choice). If you have no room for the coins or don't want them to be immediately added to your storage, the coins erupt from where you hit the target instead. Once the axe generates coins in this way, it can't create any more for 12 hours."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d8** Slashing",
+   "versatile (1d10)",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Battleaxe, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#battleaxe%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "12 gp",
+  "weight": "4 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
    },
    {
     "name": "Versatile",
@@ -9296,6 +9411,26 @@
   "reprint": null
  },
  {
+  "name": "Bolt, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#bolt%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "1 sp",
+  "weight": "1.2 oz.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Bolt, Slashing",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/items.html#bolt%2C%20slashing_grimhollowpg24",
@@ -9375,6 +9510,66 @@
     "name": "",
     "type": "text",
     "value": "Ammunition with the Whistling property creates a high-pitched sound after firing. This sound is audible out to 300 feet from the ammo as it flies. Whistling ammo isn't heavier, but it catches the air with intricate baffles to create its sound, so its maximum range is half normal. Whistling ammo deals Bludgeoning damage."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Bolt, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#bolt%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "7.5 cp",
+  "weight": "0.8 oz.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Bolts, Silver (20)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#bolts%2C%20silver%20(20)_boundbyblood",
+  "image": null,
+  "value": "2 gp",
+  "weight": "1.5 lb.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Bolts, Wooden (20)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#bolts%2C%20wooden%20(20)_boundbyblood",
+  "image": null,
+  "value": "1 gp 5 sp",
+  "weight": "1 lb.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
    }
   ],
   "properties": [],
@@ -12358,6 +12553,86 @@
     "name": "",
     "type": "text",
     "value": "Firearm ammunition is destroyed upon use."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Bullet, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#bullet%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "4 sp",
+  "weight": "3.2 oz.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Bullet, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#bullet%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "1 gp",
+  "weight": "1.6 oz.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Bullets, Silver (10)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#bullets%2C%20silver%20(10)_boundbyblood",
+  "image": null,
+  "value": "4 gp",
+  "weight": "2 lb.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Bullets, Wooden (10)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#bullets%2C%20wooden%20(10)_boundbyblood",
+  "image": null,
+  "value": "10 gp",
+  "weight": "1 lb.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
    }
   ],
   "properties": [],
@@ -20604,6 +20879,100 @@
   "reprint": null
  },
  {
+  "name": "Dagger, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#dagger%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "2 gp 5 sp",
+  "weight": "1 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/60 ft.)",
+   "mastery: nick"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Dagger, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#dagger%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "1 gp 5 sp",
+  "weight": "8 oz.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/30 ft.)",
+   "mastery: nick"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Dämglesvir (Adept)",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#d%C3%A4mglesvir%20(adept)_grimhollowcg24",
@@ -21005,6 +21374,98 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Dart, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#dart%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "2 sp",
+  "weight": "4 oz.",
+  "type": [
+   "simple weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "thrown (20/60 ft.)",
+   "mastery: vex"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Dart, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#dart%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "5 cp",
+  "weight": "4 oz.",
+  "type": [
+   "simple weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "thrown (20/30 ft.)",
+   "mastery: vex"
+  ],
   "reprint": null
  },
  {
@@ -32260,6 +32721,53 @@
   "reprint": null
  },
  {
+  "name": "Glaive, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#glaive%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "23 gp",
+  "weight": "6 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Graze",
+    "type": "text",
+    "value": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+   }
+  ],
+  "properties": [
+   "**1d10** Slashing",
+   "heavy",
+   "reach",
+   "two-handed",
+   "mastery: graze"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Glamsyni Shield",
   "source": "NorthlandsSagas",
   "url": "https://5e.tools/items.html#glamsyni%20shield_northlandssagas",
@@ -33741,6 +34249,47 @@
   "reprint": null
  },
  {
+  "name": "Greataxe, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#greataxe%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "34 gp",
+  "weight": "7 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Cleave",
+    "type": "text",
+    "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d12** Slashing",
+   "heavy",
+   "two-handed",
+   "mastery: cleave"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Greater Rejuvenation Potion",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/items.html#greater%20rejuvenation%20potion_monstersofdrakkenheim",
@@ -33786,6 +34335,47 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Greatsword, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#greatsword%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "53 gp",
+  "weight": "6 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Graze",
+    "type": "text",
+    "value": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+   }
+  ],
+  "properties": [
+   "**2d6** Slashing",
+   "heavy",
+   "two-handed",
+   "mastery: graze"
+  ],
   "reprint": null
  },
  {
@@ -34704,6 +35294,53 @@
   "reprint": null
  },
  {
+  "name": "Halberd, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#halberd%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "23 gp",
+  "weight": "6 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Cleave",
+    "type": "text",
+    "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d10** Slashing",
+   "heavy",
+   "reach",
+   "two-handed",
+   "mastery: cleave"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Half Plate of the Blind Martyr",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#half%20plate%20of%20the%20blind%20martyr_griffonssaddlebag2",
@@ -34806,6 +35443,58 @@
    "**1d4** Slashing",
    "finesse",
    "light",
+   "mastery: vex"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Hand Crossbow (Wooden Bolts)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#hand%20crossbow%20(wooden%20bolts)_boundbyblood",
+  "image": null,
+  "value": "75 gp",
+  "weight": "3 lb.",
+  "type": [
+   "martial weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   },
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Ammunition",
+    "type": "text",
+    "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Loading",
+    "type": "text",
+    "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "ammunition (range 30/60 ft.; bolt, wooden)",
+   "light",
+   "loading",
    "mastery: vex"
   ],
   "reprint": null
@@ -35104,6 +35793,47 @@
    "ammunition (range 30/60 ft.; crossbow bolt)",
    "light",
    "reload (6)"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Handaxe, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#handaxe%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "6 gp",
+  "weight": "2 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d6** Slashing",
+   "light",
+   "thrown (20/60 ft.)",
+   "mastery: vex"
   ],
   "reprint": null
  },
@@ -36677,6 +37407,64 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Heavy Crossbow (Wooden Bolts)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#heavy%20crossbow%20(wooden%20bolts)_boundbyblood",
+  "image": null,
+  "value": "50 gp",
+  "weight": "18 lb.",
+  "type": [
+   "martial weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   },
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Ammunition",
+    "type": "text",
+    "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Loading",
+    "type": "text",
+    "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Push",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "ammunition (range 100/200 ft.; bolt, wooden)",
+   "heavy",
+   "loading",
+   "two-handed",
+   "mastery: push"
+  ],
   "reprint": null
  },
  {
@@ -39468,6 +40256,26 @@
   "reprint": null
  },
  {
+  "name": "Hunter's Kit",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#hunter's%20kit_boundbyblood",
+  "image": null,
+  "value": "50 gp",
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Sometimes called a \"vampire hunting kit,\" the Hunter's Kit contains the following items: 6 Candles, Crowbar, Holy Symbol, 2 vials of Holy Water, Backpack, Mirror, 4 Torches, and Wooden Stakes"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Hunter's Speed",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#hunter's%20speed_obojimatallgrass",
@@ -41866,6 +42674,76 @@
   "reprint": null
  },
  {
+  "name": "Javelin, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#javelin%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "1 gp 5 sp",
+  "weight": "2 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Slow",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "thrown (30/120 ft.)",
+   "mastery: slow"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Javelin, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#javelin%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "3 sp",
+  "weight": "1 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Slow",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "thrown (30/60 ft.)",
+   "mastery: slow"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Jinxed Poker Chip",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/items.html#jinxed%20poker%20chip_crookedmoon24",
@@ -42399,6 +43277,47 @@
     "name": "Upset Stomach",
     "type": "text",
     "value": "You can only be under the effects of one sugarbomb that has this property at a time. Eating a sugarbomb that has this property while under the effects of another one causes the effects of the first sugarbomb to immediately end and be replaced by the new one's. This rapid change is difficult to stomach, forcing you to make a DC 13 Constitution saving throw. On a failed save, you have the Poisoned condition for 1 minute."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Kindred Vitae",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#kindred%20vitae_boundbyblood",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Vitae, blood from within a Kindred, has powerful properties that are passed on when imbibed by a non-Kindred. A single Blood Point can be stored in a drinkable vessel for up to 48 hours without alchemical treatment. When you drink this potion, you gain the following effects."
+   },
+   {
+    "name": "Increased Strength and Speed:",
+    "type": "text",
+    "value": "Your Strength score increases by 2, and your Speed increases by 5 feet for 1 week."
+   },
+   {
+    "name": "Increased Vitality:",
+    "type": "text",
+    "value": "You gain 2d6 Temporary Hit Points."
+   },
+   {
+    "name": "Reduced Aging:",
+    "type": "text",
+    "value": "You physically ignore the next year of natural aging."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "However, mortals who drink this potion are more susceptible to the powers of the Undead. For the period of 1 year, you have Disadvantage on saving throws against being Charmed or Frightened by Undead."
    }
   ],
   "properties": [],
@@ -43990,6 +44909,100 @@
   "reprint": null
  },
  {
+  "name": "Lance, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#lance%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "23 gp",
+  "weight": "6 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can wield this weapon in one hand while mounted."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d10** Piercing",
+   "heavy",
+   "reach",
+   "two-handed",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Lance, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#lance%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "5 gp",
+  "weight": "5 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d10** Piercing",
+   "heavy",
+   "reach",
+   "two-handed",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Language Lore",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#language%20lore_obojimatallgrass",
@@ -44477,6 +45490,41 @@
   "reprint": null
  },
  {
+  "name": "Leather Undervest",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#leather%20undervest_boundbyblood",
+  "image": null,
+  "value": "10 gp",
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These layered leather patches are worn under clothing or armor. The vest fits over the upper chest and back, protecting several internal organs from puncture, particularly the heart. While wearing a leather undervest, you gain the following benefits."
+   },
+   {
+    "name": "Underarmor",
+    "type": "text",
+    "value": "The leather undervest can be worn with any type of armor."
+   },
+   {
+    "name": "Limited Flexibility",
+    "type": "text",
+    "value": "The undervest allows a max Dexterity modifier of 3."
+   },
+   {
+    "name": "Pierce Protection",
+    "type": "text",
+    "value": "When you're hit by an attack while you're wearing a leather undervest, any Piercing damage dealt to you by that attack is reduced by 2. In addition, Intelligence (*Medicine*) checks to stake you in the heart have Disadvantage."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Leatherbeard",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#leatherbeard_griffonssaddlebag2",
@@ -44737,6 +45785,58 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Light Crossbow (Wooden Bolts)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#light%20crossbow%20(wooden%20bolts)_boundbyblood",
+  "image": null,
+  "value": "25 gp",
+  "weight": "5 lb.",
+  "type": [
+   "simple weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   },
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Ammunition",
+    "type": "text",
+    "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Loading",
+    "type": "text",
+    "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Slow",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "ammunition (range 80/160 ft.; bolt, wooden)",
+   "loading",
+   "two-handed",
+   "mastery: slow"
+  ],
   "reprint": null
  },
  {
@@ -45894,6 +46994,58 @@
   "reprint": null
  },
  {
+  "name": "Longbow (Wooden Arrows)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#longbow%20(wooden%20arrows)_boundbyblood",
+  "image": null,
+  "value": "50 gp",
+  "weight": "2 lb.",
+  "type": [
+   "martial weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   },
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Ammunition",
+    "type": "text",
+    "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Slow",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "ammunition (range 150/300 ft.; arrow, wooden)",
+   "heavy",
+   "two-handed",
+   "mastery: slow"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Longspike (uncommon)",
   "source": "HelianasGuidetoMonsterHunting",
   "url": "https://5e.tools/items.html#longspike%20(uncommon)_helianasguidetomonsterhunting",
@@ -45975,6 +47127,41 @@
   "properties": [
    "**1d8** Piercing",
    "finesse"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Longsword, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#longsword%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "17 gp",
+  "weight": "3 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Slashing",
+   "versatile (1d10)",
+   "mastery: sap"
   ],
   "reprint": null
  },
@@ -50651,6 +51838,64 @@
   "reprint": null
  },
  {
+  "name": "Morningstar, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#morningstar%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "17 gp",
+  "weight": "4 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "mastery: sap"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Morningstar, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#morningstar%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "10 gp",
+  "weight": "3 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "mastery: sap"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Morose Monocle",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#morose%20monocle_grimhollowcg24",
@@ -51431,6 +52676,58 @@
   "reprint": null
  },
  {
+  "name": "Musket (Wooden Bullets)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#musket%20(wooden%20bullets)_boundbyblood",
+  "image": null,
+  "value": "500 gp",
+  "weight": "10 lb.",
+  "type": [
+   "martial weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   },
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Ammunition",
+    "type": "text",
+    "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Loading",
+    "type": "text",
+    "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Slow",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+   }
+  ],
+  "properties": [
+   "**1d10** Piercing",
+   "ammunition (range 40/60 ft.; bullet, wooden)",
+   "loading",
+   "two-handed",
+   "mastery: slow"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Mustard Painted Stone",
   "source": "TalesFromTheShadows",
   "url": "https://5e.tools/items.html#mustard%20painted%20stone_talesfromtheshadows",
@@ -52018,6 +53315,46 @@
     "name": "Heightened Potency",
     "type": "text",
     "value": "You can learn all five facts from Commune with *Nature*."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Needle, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#needle%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "0.2 cp",
+  "weight": "0.32 oz.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Needles, Silver (50)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#needles%2C%20silver%20(50)_boundbyblood",
+  "image": null,
+  "value": "1 sp",
+  "weight": "1 lb.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
    }
   ],
   "properties": [],
@@ -56397,6 +57734,100 @@
   "reprint": null
  },
  {
+  "name": "Pike, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#pike%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "14 gp",
+  "weight": "18 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Push",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+   }
+  ],
+  "properties": [
+   "**1d10** Piercing",
+   "heavy",
+   "reach",
+   "two-handed",
+   "mastery: push"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Pike, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#pike%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "4 gp",
+  "weight": "16 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Push",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+   }
+  ],
+  "properties": [
+   "**1d10** Piercing",
+   "heavy",
+   "reach",
+   "two-handed",
+   "mastery: push"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Pink Candle Wax",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#pink%20candle%20wax_obojimatallgrass",
@@ -56635,6 +58066,52 @@
   "properties": [
    "**1d10** Piercing",
    "ammunition (range 30/90 ft.; bullet)",
+   "loading",
+   "mastery: vex"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Pistol (Wooden Bullets)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#pistol%20(wooden%20bullets)_boundbyblood",
+  "image": null,
+  "value": "250 gp",
+  "weight": "3 lb.",
+  "type": [
+   "martial weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   },
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Ammunition",
+    "type": "text",
+    "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Loading",
+    "type": "text",
+    "value": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "ammunition (range 30/45 ft.; bullet, wooden)",
    "loading",
    "mastery: vex"
   ],
@@ -60345,6 +61822,76 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Rapier, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#rapier%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "26 gp",
+  "weight": "2 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "finesse",
+   "mastery: vex"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Rapier, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#rapier%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "23 gp",
+  "weight": "2 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "finesse",
+   "mastery: vex"
+  ],
   "reprint": null
  },
  {
@@ -66067,6 +67614,47 @@
   "reprint": null
  },
  {
+  "name": "Scimitar, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#scimitar%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "27 gp",
+  "weight": "3 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d6** Slashing",
+   "finesse",
+   "light",
+   "mastery: nick"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Scorching Cleaver",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#scorching%20cleaver_24griffonssaddlebag1",
@@ -70113,6 +71701,134 @@
   "reprint": null
  },
  {
+  "name": "Shortbow (Wooden Arrows)",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#shortbow%20(wooden%20arrows)_boundbyblood",
+  "image": null,
+  "value": "25 gp",
+  "weight": "2 lb.",
+  "type": [
+   "simple weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Ammunition",
+    "type": "text",
+    "value": "Wooden ammunition is destroyed after hitting or missing a target."
+   },
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Ammunition",
+    "type": "text",
+    "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "ammunition (range 80/160 ft.; arrow, wooden)",
+   "two-handed",
+   "mastery: vex"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Shortsword, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#shortsword%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "11 gp",
+  "weight": "2 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "finesse",
+   "light",
+   "mastery: vex"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Shortsword, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#shortsword%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "5 gp",
+  "weight": "2 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Vex",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "finesse",
+   "light",
+   "mastery: vex"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Shot",
   "source": "ValdaGunslinger",
   "url": "https://5e.tools/items.html#shot_valdagunslinger",
@@ -70510,6 +72226,41 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Sickle, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#sickle%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "2 gp",
+  "weight": "2 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Slashing",
+   "light",
+   "mastery: nick"
+  ],
   "reprint": null
  },
  {
@@ -73411,6 +75162,88 @@
    "**1d6** Piercing",
    "thrown (20/60 ft.)",
    "versatile (1d8)"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Spear, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#spear%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "2 gp 5 sp",
+  "weight": "3 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "thrown (20/60 ft.)",
+   "versatile (1d8)",
+   "mastery: sap"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Spear, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#spear%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "5 sp",
+  "weight": "2 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d6** Piercing",
+   "thrown (20/30 ft.)",
+   "versatile (1d8)",
+   "mastery: sap"
   ],
   "reprint": null
  },
@@ -82894,6 +84727,88 @@
   "reprint": null
  },
  {
+  "name": "Trident, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#trident%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "7 gp",
+  "weight": "4 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "thrown (20/60 ft.)",
+   "versatile (1d10)",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Trident, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#trident%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "3 gp",
+  "weight": "3 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "thrown (20/60 ft.)",
+   "versatile (1d10)",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Trollblood Potion",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/items.html#trollblood%20potion_monstersofdrakkenheim",
@@ -86300,6 +88215,76 @@
   "reprint": null
  },
  {
+  "name": "War Pick, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#war%20pick%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "6 gp",
+  "weight": "2 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "versatile (1d10)",
+   "mastery: sap"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "War Pick, Wooden",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#war%20pick%2C%20wooden_boundbyblood",
+  "image": null,
+  "value": "3 gp",
+  "weight": "2 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Wooden Melee Weapons",
+    "type": "text",
+    "value": "When you make an attack roll with this Melee weapon and roll a 1 on the d20, the weapon splinters and is destroyed."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "versatile (1d10)",
+   "mastery: sap"
+  ],
+  "reprint": null
+ },
+ {
   "name": "War Staff",
   "source": "ExploringEberron24",
   "url": "https://5e.tools/items.html#war%20staff_exploringeberron24",
@@ -87327,6 +89312,47 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Whip, Silver",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#whip%2C%20silver_boundbyblood",
+  "image": null,
+  "value": "3 gp 5 sp",
+  "weight": "3 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Upkeep",
+    "type": "text",
+    "value": "When you make an attack roll with a silver weapon or piece of ammunition, it takes a cumulative -1 penalty to attack rolls. The weapon or piece of ammunition is destroyed if the penalty reaches -5. The penalty can be removed by casting the __Mending__ spell on the object or by succeeding on a DC 10 Dexterity check using Smith's Tools as part of a Short Rest or Long Rest."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Slow",
+    "type": "text",
+    "value": "If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet."
+   }
+  ],
+  "properties": [
+   "**1d4** Slashing",
+   "finesse",
+   "reach",
+   "mastery: slow"
+  ],
   "reprint": null
  },
  {
@@ -89201,6 +91227,46 @@
   ],
   "properties": [
    "AC 13 + Dex (max 2)"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Wooden Stake",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/items.html#wooden%20stake_boundbyblood",
+  "image": null,
+  "value": "1 sp",
+  "weight": "1 lb.",
+  "type": [
+   "simple weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While any modest length of sharpened wood can be used as an improvised weapon, wooden stakes that have been carved, treated, and fire-hardened are specifically useful against __Kindred__. Dedicated wooden stakes use the weapon profile below."
+   },
+   {
+    "name": "Driving the Stake",
+    "type": "text",
+    "value": "If you are within 5 feet of a __Kindred__ with the Restrained or Unconscious condition, you can take an action to make a DC 15 Intelligence (*Medicine*) check. On a successful check, the wooden stake is driven into the heart of the __Kindred__."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "light",
+   "mastery: nick"
   ],
   "reprint": null
  },

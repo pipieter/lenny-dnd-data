@@ -100,6 +100,8 @@ const FeatCategoryMap: Record<string, string> = {
     PPact: 'Planar Pact',
     DG: 'Dark Gift',
     Harvest: 'Harvest',
+    B10L: 'Beyond 10th Level',
+    KF: 'Kindred',
     // TLOTRR
     VtCom: 'Common Virtues',
     VtBar: 'Virtues of the Bardings',
@@ -109,7 +111,6 @@ const FeatCategoryMap: Record<string, string> = {
     VtMBr: 'Virtues of the Men of Bree',
     VtNRg: 'Virtues of the Rangers of the North',
     Craft: 'Craft',
-    B10L: 'Beyond 10th Level',
 };
 
 function getFeatPrerequisites(feat: Feat): string | null {
