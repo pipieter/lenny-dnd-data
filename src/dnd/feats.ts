@@ -101,7 +101,7 @@ const FeatCategoryMap: Record<string, string> = {
     DG: 'Dark Gift',
     Harvest: 'Harvest',
     B10L: 'Beyond 10th Level',
-    KF: "Kindred",
+    KF: 'Kindred',
     // TLOTRR
     VtCom: 'Common Virtues',
     VtBar: 'Virtues of the Bardings',
