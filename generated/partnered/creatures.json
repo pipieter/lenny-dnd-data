@@ -114496,6 +114496,95 @@
   "reprint": null
  },
  {
+  "name": "Highland Wolf",
+  "source": "BoundByBlood",
+  "subtitle": "Medium beast",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#highland%20wolf_boundbyblood",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "14",
+      "14",
+      "3",
+      "13",
+      "6"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+2",
+      "-4",
+      "+1",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+2",
+      "-4",
+      "+1",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 19 (3d8 + 6)",
+     "**Speed**: *walk* 40 Ft.",
+     "**Skills**: perception +5, stealth +4, survival +3",
+     "**Senses**: Darkvision 60 ft.",
+     "**CR**: 1/2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Pack Tactics",
+    "type": "text",
+    "value": "The highland wolf has Advantage on attack rolls against a creature if at least one of the highland wolf's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 7 (**1d8 + 3**) Piercing damage. If the target is a Medium or smaller creature, it has the Prone condition."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Highway Robber",
   "source": "TLotRR",
   "subtitle": "Medium humanoid",
@@ -152561,6 +152650,133 @@
   "reprint": null
  },
  {
+  "name": "Lupine",
+  "source": "BoundByBlood",
+  "subtitle": "Large monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#lupine_boundbyblood",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "20",
+      "16",
+      "18",
+      "14",
+      "16",
+      "14"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+3",
+      "+4",
+      "+2",
+      "+3",
+      "+2"
+     ],
+     [
+      "Save.",
+      "+5",
+      "+6",
+      "+7",
+      "+2",
+      "+3",
+      "+2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 104 (11d10 + 44)",
+     "**Speed**: *walk* 50 Ft.",
+     "**Skills**: athletics +8, perception +6, survival +6",
+     "**Resistances**: bludgeoning, piercing, slashing",
+     "**Senses**: Darkvision 90 ft.",
+     "**Languages**: Common (can't speak in wolf form), Primordial",
+     "**CR**: 5"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Rage",
+    "type": "text",
+    "value": "The lupine can give itself Advantage on its first D20 Test each turn. If it does so and fails that D20 Test, it's overcome with rage. On each of its turns while raging, the lupine attacks the nearest creature it can see. If no creature is near enough to move to and attack, its rage ends. A lupine's ally, if within 60 feet of the raging lupine, can try to calm it by taking an action to make a DC 15 Charisma (*Persuasion*) check; the lupine must be able to hear its ally. If this check succeeds, the lupine ceases its rage."
+   },
+   {
+    "name": "Regeneration",
+    "type": "text",
+    "value": "The lupine regains 10 Hit Points at the start of each of its turns. If the lupine takes Fire damage or damage from silver objects, this trait doesn't function at the start of its next turn. The lupine dies only if it starts its turn with 0 Hit Points and doesn't regenerate."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The lupine makes two attacks, using Battleaxe, Rend, or Longbow in any combination. If it hits with a Rend attack, the lupine can make one Bite attack against the same target as a Bonus Action."
+   },
+   {
+    "name": "Battleaxe (Humanoid or Hybrid Form Only)",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +8, reach 5 ft. *Hit:* 10 (**1d10 + 5**) Slashing damage."
+   },
+   {
+    "name": "Bite (Wolf or Hybrid Form Only)",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +8, reach 5 ft. *Hit:* 16 (**2d10 + 5**) Piercing damage."
+   },
+   {
+    "name": "Rend (Wolf or Hybrid Form Only)",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +8, reach 5 ft. *Hit:* 12 (**2d6 + 5**) Slashing damage."
+   },
+   {
+    "name": "Longbow (Humanoid or Hybrid Form Only)",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +6, range 150/600 ft. *Hit:* 7 (**1d8 + 3**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Horrifying Howl (Recharge 5-6)",
+    "type": "text",
+    "value": "*Wisdom Saving Throw:* DC 14, each creature within 60 feet that can hear the howl and isn't a lupine. *Failure:* The target has the Frightened condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+   },
+   {
+    "name": "Shape-Shift",
+    "type": "text",
+    "value": "The lupine shape-shifts into a Large wolf-humanoid hybrid form or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Lurker in the Dark",
   "source": "CrookedMoon24",
   "subtitle": "Medium fey",
@@ -165333,6 +165549,117 @@
    }
   ],
   "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Monster Hunter",
+  "source": "BoundByBlood",
+  "subtitle": "Small or Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#monster%20hunter_boundbyblood",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "15",
+      "15",
+      "15",
+      "15",
+      "14",
+      "12"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+2",
+      "+2",
+      "+2",
+      "+2",
+      "+1"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+5",
+      "+2",
+      "+2",
+      "+4",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 65 (10d8 + 20)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 3",
+     "**Skills**: investigation +4, nature +4, survival +6",
+     "**Languages**: Common",
+     "**CR**: 3"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Faith",
+    "type": "text",
+    "value": "When the monster hunter rolls a 1 on the d20 of an ability check or saving throw, it can reroll the die, and it must use the new roll."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The monster hunter makes two attacks, using Handaxe or Silver Knife in any combination."
+   },
+   {
+    "name": "Handaxe",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +5, reach 5 ft. or range 20/60 ft. *Hit:* 6 (**1d6 + 3**) Slashing damage, plus 10 (**3d6**) Slashing damage if the attack roll was made with Advantage."
+   },
+   {
+    "name": "Silver Knife",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (**1d6 + 3**) Slashing damage, plus 10 (**3d6**) Slashing damage if the attack roll was made with Advantage."
+   },
+   {
+    "name": "Wooden Stake",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Aim",
+    "type": "text",
+    "value": "The monster hunter gives itself Advantage on the next attack roll it makes during the current turn."
+   }
+  ],
   "reprint": null
  },
  {
@@ -249431,6 +249758,112 @@
   "reprint": null
  },
  {
+  "name": "Trapper",
+  "source": "BoundByBlood",
+  "subtitle": "Small or Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#trapper_boundbyblood",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "17",
+      "14",
+      "15",
+      "12",
+      "16",
+      "11"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+2",
+      "+1",
+      "+3",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+2",
+      "+1",
+      "+3",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 39 (6d8 + 12)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 2",
+     "**Skills**: nature +5, perception +5, stealth +4, survival +7",
+     "**Languages**: Common",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Traps (3/Day)",
+    "type": "text",
+    "value": "*Trigger*: The first time an enemy with a Passive Perception of 12 or lower comes within 30 feet of the trapper or the trapper shoves the creature 5 feet. *Dexterity Saving Throw:* DC 12. *Failure:* The target takes 7 (**2d6**) Piercing damage and has the Restrained condition. A creature can use its action to make a DC 12 Strength (*Athletics*) check, freeing itself or another creature within its reach on a success. Each failed check deals **1d4** Piercing damage to the trapped creature."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The trapper makes two attacks, using Greataxe or Short Bow in any combination."
+   },
+   {
+    "name": "Greataxe",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 9 (**1d12 + 3**) Slashing damage."
+   },
+   {
+    "name": "Shortbow",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +4, range 80/320 ft. *Hit:* 5 (**1d6 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Shove",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 13, one Large or smaller creature within 5 feet of the trapper. *Failure:* The creature is pushed 5 feet directly away from the trapper."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Treacle",
   "source": "ToB1-2023",
   "subtitle": "Tiny ooze",
@@ -256831,7 +257264,7 @@
    {
     "name": "Waking Terrors (Recharge 5-6)",
     "type": "text",
-    "value": "*Wisdom Saving Throw:* DC 13, one creature the hag can see within 30 feet. If the hag has one of the target's teeth, the target has Disadavantage on the save. *Failure:* 21 (**6d6**) Psychic damage, and the target has the Frightened condition."
+    "value": "*Wisdom Saving Throw:* DC 13, one creature the hag can see within 30 feet. If the hag has one of the target's teeth, the target has Disadvantage on the save. *Failure:* 21 (**6d6**) Psychic damage, and the target has the Frightened condition."
    },
    {
     "name": "",
@@ -257932,6 +258365,197 @@
     "name": "Avian Mimicry",
     "type": "text",
     "value": "Waterlogged copies of songbirds burst from the Vile Corruption and soar toward up to 3 creatures that are within 30 feet of it. Each target must make a DC 14 Dexterity saving throw, taking 11 (**2d10**) necrotic damage on a failed save, or half as much damage on a successful one."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Villager",
+  "source": "BoundByBlood",
+  "subtitle": "Small or Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#villager_boundbyblood",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "12",
+      "12",
+      "13",
+      "10",
+      "11",
+      "9"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+1",
+      "+1",
+      "+0",
+      "+0",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+1",
+      "+1",
+      "+1",
+      "+0",
+      "+0",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 11",
+     "**HP**: 11 (2d8 + 2)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: survival +2",
+     "**Languages**: Common",
+     "**CR**: 1/8"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Dagger",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +3, reach 5 ft. or range 20/60 ft. *Hit:* 3 (**1d4 + 1**) Piercing damage."
+   },
+   {
+    "name": "Torch",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 3 (**1d4 + 1**) Fire damage."
+   },
+   {
+    "name": "Wooden Pitchfork",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3, reach 5 ft. *Hit:* 4 (**1d6 + 1**) Piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Villager Militia",
+  "source": "BoundByBlood",
+  "subtitle": "Small or Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#villager%20militia_boundbyblood",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "15",
+      "12",
+      "15",
+      "10",
+      "12",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+1",
+      "+2",
+      "+0",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+1",
+      "+2",
+      "+0",
+      "+1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 32 (5d8 + 10)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Skills**: athletics +4, intimidation +2",
+     "**Languages**: Common",
+     "**CR**: 1"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The villager militia makes two attacks, using Dagger, Spear, or Torch in any combination."
+   },
+   {
+    "name": "Dagger",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +3, reach 5 ft. or range 20/60 ft. *Hit:* 5 (**1d4 + 3**) Piercing damage."
+   },
+   {
+    "name": "Spear",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +5, reach 5 ft. or range 20/60 ft. *Hit:* 6 (**1d6 + 3**) Piercing damage."
+   },
+   {
+    "name": "Torch",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 5 (**1d4 + 3**) Fire damage."
    }
   ],
   "bonusActions": [],
@@ -265724,7 +266348,7 @@
    {
     "name": "Waking Terrors (Recharge 5-6)",
     "type": "text",
-    "value": "*Wisdom Saving Throw:* DC 13, one creature the hag can see within 30 feet. If the hag has one of the target's teeth, the target has Disadavantage on the save. *Failure:* 21 (**6d6**) Psychic damage, and the target has the Frightened condition."
+    "value": "*Wisdom Saving Throw:* DC 13, one creature the hag can see within 30 feet. If the hag has one of the target's teeth, the target has Disadvantage on the save. *Failure:* 21 (**6d6**) Psychic damage, and the target has the Frightened condition."
    },
    {
     "name": "",

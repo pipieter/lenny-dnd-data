@@ -8723,6 +8723,46 @@
   "reprint": null
  },
  {
+  "name": "Masquerade Level",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/variantrules.html#masquerade%20level_boundbyblood",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "It is easier for __Kindred__ to survive amongst humanity when mortals don't suspect there are monsters in their midst. As a *Vampire: The Masquerade* adventure progresses, there are encounters and scenes that can be made more or less difficult based on the Masquerade Level, a measure of how wary the local populace is toward the possibility of monsters lurking in the night."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "There are six Masquerade Levels (listed in ascending order): Superstition, Disbelief, Skepticism, Concern, Wariness, and Alarm."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Superstition**. Most people don't believe in vampires or other monstrous creatures and dimiss such stories.",
+      "**Disbelief**. A few people believe vampires exist, but they are ignored or thought ill.",
+      "**Skepticism**. There are rampant rumors about strange happenings, but most events are dismissed with the right application of logic.",
+      "**Concern**. Too many unexplained events and circumstances have everyone asking questions. People are beginning to investigate.",
+      "**Wariness**. People know the night is dangerous, and they often lock themselves inside at dusk or form patrols.",
+      "**Alarm**. Monsters are real, and humanity must hunt them!"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Most adventures begin at the Superstition level. There are choices the characters can make that prompt the Storyteller to raise or lower the Masquerade Level. Apart from localized effects detailed in each section, some encounters are altered when the Masquerade Level reaches certain points. The use of Masquerade Level helps the Storyteller create a more realistic environmental response to Kindred characters who are making careless or foolish choices as the story progresses."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Mixed Ancestry Statistics",
   "source": "TalDoreiCampaignSettingReborn",
   "url": "https://5e.tools/variantrules.html#mixed%20ancestry%20statistics_taldoreicampaignsettingreborn",
@@ -8737,6 +8777,120 @@
     "name": "",
     "type": "text",
     "value": "When you build a character of mixed ancestry, keep in mind that some racial traits are more mechanically powerful than others, while some are largely flavorful or narrative focused. As such, focus on swapping a narrative trait for another narrative trait, or a combat-focused trait for another combat-focused trait. Additionally, you must have your Game Master's permission to use your replacement traits. As with any house rule, you and your Game Master might want to revisit your unique combination of traits later in the campaign if they feel overpowered or underpowered."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Narrated Feeding",
+  "source": "BoundByBlood",
+  "url": "https://5e.tools/variantrules.html#narrated%20feeding_boundbyblood",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Kindred must drink blood to survive; it's that hunger that drives them and creates dramatic tension in the narrative. For __Kindred__ characters, feeding can be made part of—or the reason for—additional combat encounters. An adventure where one or more characters are Kindred will likely call for feeding outside of planned encounters. When playing *Vampire: The Masquerade* using fifth edition rules, unnecessary combat can slow the game. To help alleviate this, the Storyteller can occasionally use these rules for Narrated Feeding."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Instead of requiring an entire combat encounter, Narrated Feeding allows the Storyteller to give characters the chance to perform their necessary feeding \"off camera\" with a single skill check. The skill a Kindred decides to use varies based on the style of feeding the character is attempting, and the DC of the check is based upon the environment in which the feeding attempt is being made, as shown on the table below."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Hunting Grounds**: An area frequently hunted and maintained by numerous Kindred as part of a monitored domain.",
+      "**Urban**: A populated area within the confines of a town or city. A small village or town is considered Light, while a city or metropolis is Heavy.",
+      "**Rural**: A small community outside the confines of a population center, such as a farm or campground.",
+      "**Wilderness**: An area with few human inhabitants. This represents Kindred choosing to primarily feed on animals or wayward travelers."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Storyteller can allow the Narrated Feeding check to be made with Advantage if the Kindred has a feat or class feature that can modify the skill in question, or the check is made with Disadvantage if the Masquerade Level is too high (as determined by the GM) or other circumstances warrant it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a Narrated Feeding attempt succeeds, the Kindred can roll its Feed Dice to determine how many Blood Points it regains. No matter the result of the roll, the Kindred regains a minimum of 1 Blood Point."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a Narrated Feeding attempt fails, the Kindred doesn't gain a Blood Point and the Storyteller can decide if the situation warrants greater penalties, such as gaining 1 level of Exhaustion or increasing the Masquerade Level."
+   },
+   {
+    "name": "Narrated Feeding",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Narrated Feeding",
+     "headers": [
+      "Feeding Style (Skill)",
+      "DC By Environment\nHunting Grounds",
+      "DC By Environment\nUrban (Light)",
+      "DC By Environment\nUrban (Heavy)",
+      "DC By Environment\nRural",
+      "DC By Environment\nWilderness"
+     ],
+     "rows": [
+      [
+       "Brute (Athletics)",
+       "8",
+       "10",
+       "12",
+       "12",
+       "14"
+      ],
+      [
+       "Cassanova (Persuasion)",
+       "8",
+       "10",
+       "10",
+       "14",
+       "16"
+      ],
+      [
+       "Monster (Intimidation)",
+       "8",
+       "12",
+       "12",
+       "14",
+       "16"
+      ],
+      [
+       "Shepherd (Animal Handling)",
+       "8",
+       "16",
+       "16",
+       "12",
+       "10"
+      ],
+      [
+       "Stalker (Stealth)",
+       "8",
+       "12",
+       "10",
+       "12",
+       "14"
+      ],
+      [
+       "Trickster (Deception)",
+       "8",
+       "12",
+       "10",
+       "16",
+       "16"
+      ]
+     ]
+    }
    }
   ],
   "reprint": null
