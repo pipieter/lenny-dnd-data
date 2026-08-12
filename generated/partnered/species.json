@@ -6299,6 +6299,109 @@
   "reprint": null
  },
  {
+  "name": "Manikin",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/races.html#manikin_sgehpp",
+  "image": null,
+  "sizes": [
+   "Small",
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Construct",
+  "description": [
+   {
+    "name": "Born to Serve",
+    "type": "text",
+    "value": "Manikins are made to be unable to hate or resent their creators. This lapse in judgment affects you in all circumstances. You have Disadvantage on Wisdom (*Insight*) checks."
+   },
+   {
+    "name": "Electric Heart",
+    "type": "text",
+    "value": "You have Resistance to Lightning damage."
+   },
+   {
+    "name": "Integrated Gold Plating",
+    "type": "text",
+    "value": "Your body has built-in defensive layers. You gain no AC benefit from wearing armor, but if you are wielding a Shield, you apply its bonus as normal. When you select this species, choose one of the following armor presets:"
+   },
+   {
+    "name": "Infiltrator",
+    "type": "text",
+    "value": "Your base Armor Class equals 11 + your Dexterity modifier. You are considered unarmored for the purpose of features that require you to not be wearing any armor. You have Advantage on Dexterity (*Stealth*) checks."
+   },
+   {
+    "name": "Sentinel",
+    "type": "text",
+    "value": "Your base Armor Class equals 13 + either your Dexterity modifier (maximum of 2) or your Strength modifier (maximum of 3). You are considered to be wearing Medium armor. If you don't have training in Medium armor, you suffer the associated drawbacks."
+   },
+   {
+    "name": "Tormentor",
+    "type": "text",
+    "value": "Your base Armor Class equals 16 + your Strength modifier (maximum of 2). You are considered to be wearing Heavy armor. If you don't have training in Heavy armor, you suffer the associated drawbacks. You have Disadvantage on Dexterity (*Stealth*) checks."
+   },
+   {
+    "name": "Living Material",
+    "type": "text",
+    "value": "You don't need to eat, drink, or breathe and have Immunity to the Poisoned condition."
+   },
+   {
+    "name": "Service Model",
+    "type": "text",
+    "value": "You've been created for a specific purpose. Choose one of the following benefits when you select this species:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Custodian**: You have Advantage on any ability check you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity. Additionally, when a creature within 5 feet of you is targeted by an attack, you can take a Reaction to jump in front of it. If the creature is willing, you switch places with it, becoming the target of the attack instead. You can use this Reaction a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+      "**Handler**: You gain proficiency in the *Stealth* skill and with the Disguise Kit. Additionally, you can have up to two Melee weapons embedded within your body. Each weapon must have either the Finesse or Light property. Over the course of 1 hour, which can be done during a Short Rest, you can remove one or both weapons and exchange them for other appropriate weapons you are holding. You can draw or stow these embedded weapons as you would normal weapons. You can't be disarmed of your embedded weapons, short of having your arms cut off.",
+      "**Thespian**: You gain proficiency in the *Performance* skill. As a Bonus Action, you can form a connection between yourself and a willing creature you can see within 30 feet via a set of immaterial strings for 1 hour. If the creature you're connected to doesn't use all of its movement on its turn (if it has multiple Speeds, pick the highest one), you can take a Reaction at the end of its turn to move a number of feet equal to its remaining movement. Once you form a connection in this way, you can't do so again until you finish a Short or Long Rest."
+     ]
+    }
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "With a touch of gold, a breath of lightning, and hours of meticulous welding and articulation, a manikin is 'born'. Often called 'marionettes' or 'living dolls', these creatures were originally the creations of the Scions, a Luyarnhian sect that seeks to craft a force capable of protecting the city. Though each manikin looks different—indeed, they can resemble any species—the thin golden stitching that joins the plates of their artificial skin is a giveaway that the creature is man-made."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Though designed for a wide range of functions, manikins are broadly divided into three categories:"
+   },
+   {
+    "name": "Free Will",
+    "type": "text",
+    "value": "Inscribed on human eyes inside their skulls are the instructions that all manikin obey. More often than not, this includes a safety system that ensures adherence to the law and prevents a manikin from turning on their master. In some cases, a crafter might even cause the manikin to feel love for their creator. Conceived as animate objects capable of carrying out the instructions, manikin who express thoughts of self-liberation are often disposed of before these thoughts turn into acts. Though the Scions' intentions were initially noble, playing god has given them a taste for power, and they have no intention of granting free will to their animated servants."
+   },
+   {
+    "name": "Custodians",
+    "type": "text",
+    "value": "Typically built as an alternative to golems, custodians find use as butlers, laborers, and cannon fodder. As sentient beings, they are sworn to defend the person—or customer—for whom they were created. The death of their owner often leaves them aimless, wandering the world like masterless hedge knights in search of meaning."
+   },
+   {
+    "name": "Handlers",
+    "type": "text",
+    "value": "Handlers are designed for espionage. Matte pigments and a slim build help handlers disappear into shadows, while their hidden weapons can be quickly equipped and stowed for swift assassinations."
+   },
+   {
+    "name": "Thespians",
+    "type": "text",
+    "value": "Made to entertain, thespians bring joy to nobles, the clergy, and commoners alike. The only type of manikin designed without lethal intent, these manikins' bodies are supported by invisible, intangible strings, allowing them to move seemingly in defiance of physics. As the plague worsened, the Scions bent their will toward the production of manikins capable of combating the Scourge, and so the number of thespians has steadily dwindled."
+   }
+  ],
+  "skillProficiencies": null,
+  "reprint": null
+ },
+ {
   "name": "Mapach",
   "source": "HumblewoodCampaignSetting",
   "url": "https://5e.tools/races.html#mapach_humblewoodcampaignsetting",
@@ -8034,6 +8137,130 @@
    ],
    "amount": 1
   },
+  "reprint": null
+ },
+ {
+  "name": "Scourgeborne",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/races.html#scourgeborne_sgehpp",
+  "image": null,
+  "sizes": [
+   "Medium"
+  ],
+  "speed": [
+   "30 feet"
+  ],
+  "creatureType": "Monstrosity",
+  "description": [
+   {
+    "name": "Size",
+    "type": "text",
+    "value": "Medium (about 4–7 feet tall)"
+   },
+   {
+    "name": "Born of Madness",
+    "type": "text",
+    "value": "Your body is not the one you were born with, but rather the consequence to your exposure to eldritch madness. You have one of the following options based on your alignment:"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Good Alignment**: Your conviction grants you control over your darkest impulses. You have Advantage on saving throws you make to avoid or end the Charmed condition but have Disadvantage on Charisma (*Intimidation*) checks."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Evil Alignment**: You let the depraved monster within you influence you. You gain a bonus to Dexterity saving throws equal to your Proficiency Bonus but have Disadvantage on saving throws you make to avoid or end the Charmed condition."
+   },
+   {
+    "name": "Eldritch Curse",
+    "type": "text",
+    "value": "Your curse is not something mere mortals can undo. You are immune to any spell that would alter your form, such as the __Alter Self__ or __Polymorph__ spells."
+   },
+   {
+    "name": "Feral Limbs",
+    "type": "text",
+    "value": "You can use your horns, claws, or fangs originating from your mutation to make Unarmed Strikes. When you do so, you deal Piercing damage equal to **1d6** + your Strength modifier instead of the normal damage for your Unarmed Strike. If your alignment is Evil, your feral side is more dominant, and the die size for your Unarmed Strikes increases to a **1d8**."
+   },
+   {
+    "name": "Monstrous Lineage",
+    "type": "text",
+    "value": "You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Monstrous Lineages table. You gain the level 1 benefit of that lineage. When you reach character levels 3 and 5, you gain further benefits, as shown on the table."
+   },
+   {
+    "name": "Lineage",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Lineage",
+     "headers": [
+      "Lineage",
+      "Level 1",
+      "Level 3",
+      "Level 5"
+     ],
+     "rows": [
+      [
+       "Aranea",
+       "You have a Climb Speed of 30 feet. While in water, you have Disadvantage on all ability checks and attack rolls.",
+       "You can climb difficult surfaces, including along ceilings, without needing to make an ability check. Once you use this trait for 1 minute, you can't do so again until you finish a Long Rest.",
+       "You can use your Level 3 trait for a number of minutes equal to your Proficiency Bonus, and you regain all expended minutes when you finish a Long Rest."
+      ],
+      [
+       "Belua",
+       "You have Advantage on Wisdom (Perception) checks that rely on hearing or smell. Whenever you cause a creature to become Bloodied, you take 1d4 Psychic damage as you attempt to retain your sanity.",
+       "As a Bonus Action, you can make an Unarmed Strike to feed off of a creature within reach. On a hit, you regain Hit Points equal to the damage dealt. Once you use this trait, you can't do so again until you finish a Long Rest.",
+       "You can use your Level 3 trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+      ],
+      [
+       "Cervus",
+       "Your Speed increases to 40 feet. Standing up from the Prone condition costs you an additional 5 feet.",
+       "If you move at least 20 feet straight toward a creature and then hit it with a melee attack on the same turn, that target must make a Strength saving throw (DC 8 plus your Strength modifier and your Proficiency Bonus). On a failed save, the target has the Prone condition, and you can immediately take a Bonus Action to make one melee attack against it. Once you've forced a creature to make this save, you can't do so again until you finish a Long Rest.",
+       "You can use your Level 3 trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest."
+      ],
+      [
+       "Vespertilio",
+       "You have Blindsight with a range of 30 feet. You have Disadvantage on any ability check or attack roll that requires sight beyond this range.",
+       "You can take a Bonus Action to gain a Fly Speed of 30 feet until the end of your turn. If nothing is holding you aloft at the end of your turn, you fall. Once you use this trait, you can't do so again until you finish a Short or Long Rest.",
+       "You can use your Level 3 trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest."
+      ]
+     ]
+    }
+   }
+  ],
+  "info": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Scourgebornes should not exist. They are an abomination of the world, a vile curse placed on those who peered beyond the veil and succumbed to madness. Their twisted appearance is but a mirror of the darkest recesses of their personality. All sentient creatures harbor a monster within their soul—the dark of you that resents your neighbor for having a better life than you, that hates your friends when they ignore you, that wishes to harm those that wrong you. Most are fortunate enough to be able to hide this monster behind a mask of false virtues. Not the scourgeborne. Their curse has taken the most twisted aspects of their personality and laid them bare for the whole world to see. They wear this disfigured appearance every day; the more resentment, hatred and anger one possesses, the more monstrous the appearance."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Many view this Eldritch revelation as a curse that drives one to slip deeper and deeper into the depths of depravity until nothing but the monster remains. Yet, many refuse to let it break them; with their innermost darkness now visible, they have no choice but to accept it. It is said that accepting a fault is the first step in correcting it. Those scourgeborne who embrace their inner monster but refuse to let it rule them often become messianic heroes within the walls of Luyarnha, attempting to redeem the entire world with their actions—and perhaps one day, themselves."
+   },
+   {
+    "name": "Arenea",
+    "type": "text",
+    "value": "The person who schemes and creates a web of lies around themselves is, unsurprisingly, bound to turn into an aranea. Also known as half-spiders, these scourgeborne differ from others: though many turn, few retain their sanity. Amongst the scourgeborne, araneas are the least trusted, their appearance revealing their former—or current—manipulative personality. Although most citizens understand the need for violence, especially in Luyarnha, none tolerate deception and betrayal."
+   },
+   {
+    "name": "Belua",
+    "type": "text",
+    "value": "Those who harbor seething anger within oft turn into the most feral of beasts. Belua—also known as half-wolves—are the most feral of all the scourgeborne roaming the streets of Luyarnha. Many of them choose to hide their eyes, as their intense bloodlust turns their gaze crimson red, a terrifying sight for the uninitiated."
+   },
+   {
+    "name": "Cervus",
+    "type": "text",
+    "value": "Amongst the scourgeborne, the cervus are the rarest. To become a cervus, also called half-deer or waldschrat, one must have committed the foulest of sins: devouring the flesh of their kin. Or so the rumor went. This urban legend has long since been disproved, as many of the town's most trusted figures have turned into such creatures. Interestingly, it seems that those who become cervus are the most apt at fighting creatures of the night, an achievement that earns them the respect of hunters across the city-state."
+   },
+   {
+    "name": "Vespertilio",
+    "type": "text",
+    "value": "Those who hid in fear in the face of adversity are cursed to become these beasts of the night. Vespertilio, sometimes known as half-bats, present some of the most accursed beings amongst the scourgeborne. Their unwillingness to see their problems has taken a literal form, as most of their sight was stolen from them. Instead, they received half-broken wings in a cruel farce of fate, as if to run away from their problems. Yet those who harness these new powers can become some of the fiercest hunters—an act of defiance against fate itself."
+   }
+  ],
+  "skillProficiencies": null,
   "reprint": null
  },
  {

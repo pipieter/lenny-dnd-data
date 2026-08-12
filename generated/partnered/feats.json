@@ -1634,6 +1634,27 @@
   "reprint": null
  },
  {
+  "name": "Brutalizer",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/feats.html#brutalizer_sgehpp",
+  "type": "General Feat",
+  "prerequisite": "Level 4+ and 16 Strength",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "Brutal Weaponry",
+    "type": "text",
+    "value": "You can wield a weapon that has the Two-Handed property in one hand, provided your other hand isn't also wielding a weapon that has the Two-Handed property or holding a Shield."
+   },
+   {
+    "name": "Killing Streak",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a weapon that has the Two-Handed property, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative or you have the __Two-Weapon Fighting__ feat."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Bumbling Fool",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/feats.html#bumbling%20fool_obojimatallgrass",
@@ -1674,6 +1695,37 @@
       "When you are hit by an attack, you can use a reaction to assume a defensive stance, allowing you to fend off incoming strikes. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack. Once you assume this stance, you can't do so again until you finish a long rest."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Cannoneer",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/feats.html#cannoneer_sgehpp",
+  "type": "General Feat",
+  "prerequisite": "Level 8+ and 18 Strength",
+  "abilityIncrease": "Increase your Strength score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Cannon Proficiency",
+    "type": "text",
+    "value": "You gain proficiency with Cannons, and you can reload a Cannon as a Bonus Action instead of an action. You can take this Bonus Action only if you haven't moved during your turn, and after you take the Bonus Action, your Speed is 0 until the end of your turn. Starting at character level 11, this doesn't reduce your Speed, and when you take the Attack action, you can replace one of your attacks with reloading the Cannon. When you reach character level 20, you can ignore the Artillery property of Cannons."
+   },
+   {
+    "name": "Siege",
+    "type": "text",
+    "value": "Your attacks with Cannons deal double damage to objects and structures."
+   },
+   {
+    "name": "Strong Back",
+    "type": "text",
+    "value": "The weight of Cannons and Cannonballs count as half for you."
    }
   ],
   "reprint": null
@@ -3091,6 +3143,32 @@
   "reprint": null
  },
  {
+  "name": "Faithful",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/feats.html#faithful_sgehpp",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Divine Clarity",
+    "type": "text",
+    "value": "If you fail a saving throw against the Charmed or Frightened condition, you can choose to succeed instead. Once you use this benefit, you can't use it again until you finish a Long Rest."
+   },
+   {
+    "name": "Trial of Faith",
+    "type": "text",
+    "value": "Whenever you roll a 1 on a d20 Test, you gain Heroic Inspiration."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Familiar Keeper",
   "source": "ValdaPlayerPack2",
   "url": "https://5e.tools/feats.html#familiar%20keeper_valdaplayerpack2",
@@ -4476,6 +4554,37 @@
     "name": "",
     "type": "text",
     "value": "As a Bonus Action, you can expend 2 Blood Points to deal an extra **2d6** Slashing damage to a target you hit with an Unarmed Strike for 1 minute."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Grizzled",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/feats.html#grizzled_sgehpp",
+  "type": "Origin Feat",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Overcome",
+    "type": "text",
+    "value": "Whenever you make a saving throw against the Frightened condition, you gain a bonus to the saving throw equal to your Proficiency Bonus."
+   },
+   {
+    "name": "Survive",
+    "type": "text",
+    "value": "You require half as much food and water to survive, and you have Advantage on Wisdom (*Survival*) checks made to forage for food and water."
+   },
+   {
+    "name": "Withstand",
+    "type": "text",
+    "value": "Immediately after you take damage that causes you to be *Bloodied*, you gain Heroic Inspiration. You can't gain this benefit again until you finish a Short or Long Rest."
    }
   ],
   "reprint": null
