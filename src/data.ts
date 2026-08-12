@@ -256,6 +256,10 @@ export class PartneredDatabank extends Databank {
     public readonly filters: PartneredFilters;
     private readonly sourceData: { [key: string]: ParsedSource } = {};
 
+    // Data used for parsing
+    public readonly vehicleUpgradeTypes: {[key: string]: string} = {};
+    public readonly optionalFeatureTypes: { [key: string]: string } = {};
+
     private getFullPath(path: string): string {
         return `5etools-homebrew/data/${path}`;
     }
@@ -271,6 +275,16 @@ export class PartneredDatabank extends Databank {
             const fullPath = join(path, file);
             const data = readJsonFile(fullPath);
             this.addContents(data, fullPath);
+        }
+    }
+
+    private addMetaData(key: string, data: any) {
+        // Key in data and in databank must be the same!
+        const metaData = data?._meta?.[key];
+        if (!metaData) return;
+        const target = (this as Record<string, any>)[key];
+        if (target && typeof target === 'object') {
+            Object.assign(target, metaData);
         }
     }
 
@@ -293,6 +307,10 @@ export class PartneredDatabank extends Databank {
             const published = datum['dateReleased'] ?? null;
             const legacy = isClassic;
             this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered', legacy };
+        }
+
+        for (const metaKey of ['vehicleUpgradeTypes', 'optionalFeatureTypes']) {
+            this.addMetaData(metaKey, data);
         }
 
         const prefixesToIgnore = ['foundry'];

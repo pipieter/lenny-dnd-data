@@ -248,7 +248,7 @@ function getVehicleSubtitle(vehicle: Vehicle): string {
     return parts.join(' ');
 }
 
-function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
+function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade, data: Databank | null = null): string {
     const types: string[] = [];
     const typeMap: Record<string, string> = {
         'SHP:H': 'Ship Upgrade, Hull',
@@ -259,8 +259,14 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
         'IWM:W': 'Infernal War Machine Variant, Weapon',
         'IWM:A': 'Infernal War Machine Upgrade, Armor',
         'IWM:G': 'Infernal War Machine Upgrade, Gadget',
-        'SHP:SW': 'Ship Upgrade, Siege Weapon', // TODO - This is stored inside of the partnered databank now in a recent change, we should extract it from there too.
     };
+
+    if (data && 'vehicleUpgradeTypes' in data) {
+        console.log(data.vehicleUpgradeTypes);
+        
+        Object.assign(typeMap, data.vehicleUpgradeTypes);
+    }
+
     for (const upgradeType of upgrade.upgradeType) {
         const type = typeMap[upgradeType];
         if (!type) throw `Unsupported vehicle upgrade type in ${upgrade.name}: ${upgrade.upgradeType}`;
@@ -291,7 +297,7 @@ export function getVehicles(data: Databank): ParsedVehicle[] {
         return {
             name: v.name,
             source: v.source,
-            subtitle: getVehicleUpgradeSubtitle(v),
+            subtitle: getVehicleUpgradeSubtitle(v, data),
             url: getVehiclesUrl(v.name, v.source),
             tokenUrl: null,
             creatureCapacity: null,
