@@ -772,6 +772,61 @@
   "scaledDamage": null
  },
  {
+  "name": "Arm Cannon",
+  "source": "SGEHPP",
+  "level": "Level 2",
+  "school": "Evocation",
+  "castingTime": "Action",
+  "range": "30 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#arm%20cannon_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You fire out the bones of your forearm through your hand, leaving a severe wound that immediately regrows and heals. Make a ranged spell attack against a creature within range. On a hit, the target takes **4d8** Piercing damage and must succeed on a Strength saving throw or be pushed 15 feet away from you. If pushed into an obstacle, the target is impaled by the bone and has the Restrained condition until the end of its next turn. Creatures that are Large or larger have Advantage on this saving throw."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 and the pushing distance by 5 feet for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "restrained"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Armament",
   "source": "ObojimaTallGrass",
   "level": "Level 1",
@@ -1958,6 +2013,63 @@
   "damageVulnerable": [],
   "damageImmune": [],
   "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Blind Ambush",
+  "source": "SGEHPP",
+  "level": "Level 2",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "S, M (a whistle made of bones)",
+  "material": "a whistle made of bones",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#blind%20ambush_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You blow on a whistle, releasing an inaudible sound. Choose a point on the ground within range. The first time a creature moves 5 feet of more while within a 10-foot Square centered on that point before the spell ends, an eldritch maw immediately erupts from beneath the ground, dealing **2d10** Piercing damage to each creature within the Square and knocking one of them Prone (decide when the spell triggers). The spell then ends."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d10 for each spell slot level above 2. If you use a level 5+ spell slot, the spell can trigger a second time before it ends."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
   "conditionImmune": [],
   "savingThrow": [],
   "affectsCreatureType": [],
@@ -3208,6 +3320,57 @@
   "scaledDamage": null
  },
  {
+  "name": "Brittle Bone Throw",
+  "source": "SGEHPP",
+  "level": "Cantrip",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (bone powder)",
+  "material": "bone powder",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#brittle%20bone%20throw_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You hurl a splintered bone fragment at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes **1d8** Piercing damage. On a miss, you can shatter the bone mid-air and redirect the remnant towards another creature within 15 feet of the original target. Make another ranged spell attack. On a hit, the new target takes **1d4** Piercing damage."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d8 and 1d4, respectively, when you reach levels 5 (**2d8**, **2d4**), 11 (**3d8**, **3d4**), and 17 (**4d8**, **4d4**)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Bubble Lift",
   "source": "ObojimaTallGrass",
   "level": "Level 1",
@@ -3649,6 +3812,46 @@
   "savingThrow": [
    "constitution"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Calcified Memories",
+  "source": "SGEHPP",
+  "level": "Level 2",
+  "school": "Divination",
+  "castingTime": "Action or Ritual",
+  "range": "Touch",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#calcified%20memories_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You touch the bones of a deceased creature. When you do so, a ghostly grey illusion of the fallen creature appears above its corpse to reenact the last 6 seconds of its life. The illusion only shows the creature's actions, such as reacting to an unseen monster or choking from poisonous gas, but does not show the monster or effect causing the behavior, only their outline. This spell has no effect on Undead creatures. Once a corpse's death has been revealed in this way, it can't be shown again for 24 hours."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -9480,6 +9683,55 @@
   "scaledDamage": null
  },
  {
+  "name": "Displacing Maw",
+  "source": "SGEHPP",
+  "level": "Level 3",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "10 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#displacing%20maw_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your rib cage opens up violently, forming a maw that attempts to devour a creature within range. The creature must make a Strength saving throw. On a failed save, it takes **4d8** Piercing damage and is transported through magic to a point of your choice on the ground within 60 feet of you, where the maw reappears and regurgitates them. On a successful save, it takes half as much damage only."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8, and the teleportation distance increases by 10 feet, for each spell slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Disrupt the Wyrd",
   "source": "NorthlandsWorldbook",
   "level": "Level 2",
@@ -10084,6 +10336,55 @@
   "conditionInflict": [],
   "conditionImmune": [],
   "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Dread Scarecrow",
+  "source": "SGEHPP",
+  "level": "Level 4",
+  "school": "Illusion",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "V, S, M (a flute made of a femur worth 50+ GP)",
+  "material": "a flute made of a femur worth 50+ GP",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#dread%20scarecrow_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You magically create the horrifying illusion of all your bones breaking and your body bending in impossible ways, accompanied by the sound of a shattered skull. Each creature of your choice in a 30-foot-radius Sphere centered on you must succeed on a Wisdom saving throw or have the Frightened condition for the duration. While Frightened by this spell, a creature's Speed becomes 0 and it has the Prone condition, its legs giving out under fear. If an affected creature takes damage, it can repeat the saving throw at the end of its next turn, ending the effect on itself on a success."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened",
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -13622,6 +13923,106 @@
   "scaledDamage": null
  },
  {
+  "name": "Forest of Dread",
+  "source": "SGEHPP",
+  "level": "Level 5",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "V, S",
+  "material": null,
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#forest%20of%20dread_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You touch the ground beneath you and tree-like bones sprout from the ground in a 30-foot-radius, 20-foot-high Cylinder centered on you. Each creature of your choice in that area must make a Dexterity saving throw, taking **4d8** Piercing damage on a failed save, or half as much damage on a successful one."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "For the duration, the area becomes Difficult Terrain, and when a creature moves into or within the area, it takes **2d8** Piercing damage for every 5 feet it travels; you are Immune to this effect. The forest of dread provides Half Cover to any creatures inside the area. The bones disintegrate when the spell ends."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Fractured Shell",
+  "source": "SGEHPP",
+  "level": "Level 1",
+  "school": "Transmutation",
+  "castingTime": "Action",
+  "range": "Touch",
+  "components": "V, S, M (a porcupine's carapace)",
+  "material": "a porcupine's carapace",
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#fractured%20shell_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You touch a willing creature, forcing spiked bone plates to grow and pierce through its skin. It takes 1 point of Piercing damage. For the duration of the spell, the first time each turn that the target is hit with a melee attack roll, the attacking creature takes **2d4** Piercing damage."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d4 for each spell slot level above 1. The spell doesn't require *Concentration* with a level 5+ spell slot."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Freedom of the Waves",
   "source": "TalDoreiCampaignSettingReborn",
   "level": "Level 3",
@@ -14922,6 +15323,65 @@
     }
    }
   ]
+ },
+ {
+  "name": "Gravity Spike",
+  "source": "SGEHPP",
+  "level": "Cantrip",
+  "school": "Transmutation",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#gravity%20spike_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create a localized gravitational field that temporarily shifts the landscape to impale a creature. Choose a creature on the ground you can see within range. The creature must make a Dexterity saving throw. On a failed save, the target takes **1d4** Piercing damage and has the Prone condition. On a successful save, the target takes half as much damage only."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d4 when you reach levels 5 (**2d4**), 11 (**3d4**), and 17 (**4d4**)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
  },
  {
   "name": "Greater Animate Dead",
@@ -19019,6 +19479,68 @@
   "scaledDamage": null
  },
  {
+  "name": "Maiden of Bones",
+  "source": "SGEHPP",
+  "level": "Level 4",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a virgin's carpal bone)",
+  "material": "a virgin's carpal bone",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#maiden%20of%20bones_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature within range must succeed on a Strength saving throw or be trapped inside an iron maiden formed of bone that appears in its space. The creature has the Restrained and Incapacitated conditions, is behind Total Cover, can't be damaged by attacks or effects originating from outside, and takes **3d6** Piercing damage at the start of each of its turns as spikes of bone pierce its body."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the end of each of its turns, a trapped creature can repeat the saving throw, escaping and ending the spell on a success."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The bone maiden has AC equal to 10 plus your spellcasting modifier, 80 Hit Points, Immunity to Psychic and Poison damage, and Vulnerability to Bludgeoning damage. If the maiden is destroyed, the creature trapped inside is freed and the spell ends."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d6 and the maiden's Hit Points increase by 20 for each spell slot level above 4."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "restrained",
+   "incapacitated"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Maligned Weapon",
   "source": "IllriggerRevised",
   "level": "Level 4",
@@ -19166,6 +19688,53 @@
   "savingThrow": [
    "wisdom"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Marrow Transplant",
+  "source": "SGEHPP",
+  "level": "Level 4",
+  "school": "Necromancy",
+  "castingTime": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (a piece of spinal bone and a diamond worth 300+ GP, which the spell consumes)",
+  "material": "a piece of spinal bone and a diamond worth 300+ GP, which the spell consumes",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#marrow%20transplant_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You drain the bone marrow of a creature, attempting to steal its life force and transfer it to another creature of your choice. Make a ranged spell attack against a creature within range. On a hit, the target takes **4d6** Necrotic damage. Choose another creature within range; it regains a number of Hit Points equal to the damage dealt, or if it was dead for less than 1 minute, the creature returns to life with Hit Points equal to the number regained. If any of the targets do not have bones, the spell fails. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d6 for each spell slot level above 4."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -21154,6 +21723,66 @@
   "scaledDamage": null
  },
  {
+  "name": "Osseous Impalement",
+  "source": "SGEHPP",
+  "level": "Level 3",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a calcified bamboo stick)",
+  "material": "a calcified bamboo stick",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#osseous%20impalement_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Massive bone spikes sprout under up to four creatures on the ground of your choice that you can see within range. They must succeed on a Dexterity saving throw or take **3d10** Piercing damage and be impaled by the spike, have the Restrained condition and be held aloft 5 feet in the air for the duration. A creature Restrained in this way takes **1d10** Piercing damage at the start of each of its turns."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature can use its action to make a Strength (*Athletics*) check against your spell save DC, breaking the bone spike and freeing itself on a success."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage (both initial and ongoing) increases by 1d10 for each spell slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "restrained"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Overgrow",
   "source": "GrimHollowPG24",
   "level": "Level 2",
@@ -21636,6 +22265,59 @@
   ],
   "reprint": null,
   "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Phalangeal Shot",
+  "source": "SGEHPP",
+  "level": "Level 1",
+  "school": "Evocation",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#phalangeal%20shot_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You point your fingers forward and your phalangeal bones fire outwards, akin to the bullets of a gun. They regrow immediately, leaving your hand unscathed. All creatures in a 30-foot-long, 1-foot-wide Line in front of you must succeed on a Dexterity saving throw or take **2d8** Piercing damage."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
   "damageResist": [],
   "damageVulnerable": [],
   "damageImmune": [],
@@ -26211,6 +26893,53 @@
   "scaledDamage": null
  },
  {
+  "name": "Skeletal Tail",
+  "source": "SGEHPP",
+  "level": "Level 2",
+  "school": "Conjuration",
+  "castingTime": "Bonus action",
+  "range": "Self",
+  "components": "V, S, M (a scorpion's tail)",
+  "material": "a scorpion's tail",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#skeletal%20tail_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You grow a long, scorpion-like tail made of sharpened bones. Whenever a creature moves while in a 15-foot Emanation originating from you, you can take a Reaction to try and pierce them with your tail. Make a melee spell attack roll. On a hit the target takes Piercing damage equal to **2d4** plus your spellcasting modifier and is pulled to an empty space adjacent to you as your tail drags them in."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 2d4 for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Slither",
   "source": "BookOfEbonTides",
   "level": "Level 2",
@@ -26512,6 +27241,106 @@
   "damageInflict": [
    "lightning"
   ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Spectral Fury",
+  "source": "SGEHPP",
+  "level": "Level 3",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (a melee weapon worth 1+ SP)",
+  "material": "a melee weapon worth 1+ SP",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#spectral%20fury_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You send forth three spectral duplicates of yourself to strike down enemies within 30 feet of you. You can order them to strike one target or several. Make a melee spell attack for each spectral duplicate. On a hit, a target takes **4d8** damage of your weapon's damage type."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can then take a Bonus Action to move up to 30 feet in a straight line towards one of the targets without provoking Opportunity Attacks, streaking through a spectral trail, and make a single melee weapon attack."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage of your spectral duplicate increases by 2d8 for each spell slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Spectral Slash",
+  "source": "SGEHPP",
+  "level": "Level 1",
+  "school": "Conjuration",
+  "castingTime": "Bonus action",
+  "range": "20 feet",
+  "components": "V, S, M (a melee weapon worth 1 SP+)",
+  "material": "a melee weapon worth 1 SP+",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#spectral%20slash_sgehpp",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You send forth a spectral copy of yourself to strike down your foe. Make a melee spell attack against a creature within 20 feet of you. On a hit, the target takes **1d8** damage of your weapon's damage type."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can then spend your action to move up to 20 feet in a straight line towards the target, streaking through a spectral trail, and take the Attack action against it. To use this action, you must attack with the melee weapon used for the casting of this spell."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d8 and the distance traveled by 10 feet for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
   "damageResist": [],
   "damageVulnerable": [],
   "damageImmune": [],
