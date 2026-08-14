@@ -262,8 +262,7 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade, data: Databank | nul
     };
 
     if (data && 'vehicleUpgradeTypes' in data) {
-        console.log(data.vehicleUpgradeTypes);
-        
+        // Add meta-data types to the map.
         Object.assign(typeMap, data.vehicleUpgradeTypes);
     }
 

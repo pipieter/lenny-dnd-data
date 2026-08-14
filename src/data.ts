@@ -257,7 +257,7 @@ export class PartneredDatabank extends Databank {
     private readonly sourceData: { [key: string]: ParsedSource } = {};
 
     // Data used for parsing
-    public readonly vehicleUpgradeTypes: {[key: string]: string} = {};
+    public readonly vehicleUpgradeTypes: { [key: string]: string } = {};
     public readonly optionalFeatureTypes: { [key: string]: string } = {};
 
     private getFullPath(path: string): string {
