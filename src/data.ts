@@ -258,7 +258,8 @@ export class PartneredDatabank extends Databank {
 
     // Data used for parsing
     public readonly vehicleUpgradeTypes: { [key: string]: string } = {};
-    public readonly optionalFeatureTypes: { [key: string]: string } = {};
+    public readonly featCategories: { [key: string]: string } = {};
+    public readonly optionalFeatureTypes: { [key: string]: string } = {}; // TODO - Currently unused in code?
 
     private getFullPath(path: string): string {
         return `5etools-homebrew/data/${path}`;
@@ -309,7 +310,7 @@ export class PartneredDatabank extends Databank {
             this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered', legacy };
         }
 
-        for (const metaKey of ['vehicleUpgradeTypes', 'optionalFeatureTypes']) {
+        for (const metaKey of ['vehicleUpgradeTypes', 'featCategories', 'optionalFeatureTypes']) {
             this.addMetaData(metaKey, data);
         }
 
