@@ -8759,6 +8759,72 @@
  },
  {
   "name": "Blunderbuss",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#blunderbuss_sgehpp",
+  "image": null,
+  "value": "20 gp",
+  "weight": "10 lb.",
+  "type": [
+   "simple weapon",
+   "ranged weapon",
+   "firearm"
+  ],
+  "description": [
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Ammunition",
+    "type": "text",
+    "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Barrel",
+    "type": "text",
+    "value": "A Barrel weapon can be fired a number of times equal to the number of bullets its barrel can hold (written as Barrel X) before it must be reloaded. It can be reloaded as either an action or instead of an attack as part of the Attack action. If the weapon also has the Light property, it can also be reloaded as a Bonus Action. You must have one free hand to reload the weapon."
+   },
+   {
+    "name": "Blaring",
+    "type": "text",
+    "value": "Firing a Blaring weapon makes a thunderous crack. The sound can be heard from up to 100 feet away. Making a ranged attack using a weapon with this property makes it hard to go undetected; you have Disadvantage on Dexterity (*Stealth*) checks made as part of the Hide action until the start of your next turn. In addition, if a creature is within the area of the sound blast, it has Advantage on Wisdom (*Perception*) checks made against you as part of the Search action."
+   },
+   {
+    "name": "Spread Fire",
+    "type": "text",
+    "value": "A weapon that has the Spread Fire property can't make a normal attack. It instead sprays a Cone with a length equal to its range (for example, a Blunderbuss with a range of 20 feet will fire in a 20-foot Cone). Each creature in the area must succeed on a Dexterity saving throw (DC equals 8 plus your Dexterity modifier and your Proficiency Bonus) or take the weapon's normal damage."
+   },
+   {
+    "name": "Twinned Barrel",
+    "type": "text",
+    "value": "A Twinned Barrel weapon has two barrels that can each hold a firearm bullet and can both be loaded as part of reloading the weapon. You can fire both barrels of a Twinned Barrel weapon as part of an attack, instead of each barrel individually. Doing so empties both barrels of the weapon (as per the Barrel property) and increases the damage die of the weapon on a hit (from d4 to d6 to d8 to d10 to d12)."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**2d4** Piercing",
+   "ammunition (range 20 ft.; firearm bullet)",
+   "barrel {{item.customproperties.barrel}}",
+   "firing a blaring weapon makes a thunderous crack. the sound can be heard from up to 100 feet away. making a ranged attack using a weapon with this property makes it hard to go undetected; you have disadvantage on dexterity (*stealth*) checks made as part of the hide action until the start of your next turn. in addition, if a creature is within the area of the sound blast, it has advantage on wisdom (*perception*) checks made against you as part of the search action.",
+   "a weapon that has the spread fire property can't make a normal attack. it instead sprays a cone with a length equal to its range (for example, a blunderbuss with a range of 20 feet will fire in a 20-foot cone). each creature in the area must succeed on a dexterity saving throw (dc equals 8 plus your dexterity modifier and your proficiency bonus) or take the weapon's normal damage.",
+   "a twinned barrel weapon has two barrels that can each hold a firearm bullet and can both be loaded as part of reloading the weapon. you can fire both barrels of a twinned barrel weapon as part of an attack, instead of each barrel individually. doing so empties both barrels of the weapon (as per the barrel property) and increases the damage die of the weapon on a hit (from d4 to d6 to d8 to d10 to d12).",
+   "two-handed",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Blunderbuss",
   "source": "ValdaGunslinger",
   "url": "https://5e.tools/items.html#blunderbuss_valdagunslinger",
   "image": null,
@@ -13584,6 +13650,52 @@
  },
  {
   "name": "Cannon",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#cannon_sgehpp",
+  "value": "500 gp",
+  "weight": "90 lb.",
+  "type": [
+   "martial weapon",
+   "ranged weapon"
+  ],
+  "description": [
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Artillery",
+    "type": "text",
+    "value": "You must use Strength instead of Dexterity for the attack rolls and damage rolls of a weapon with the Artillery property, and you can use the weapon to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Weapons with the Artillery property must be reloaded with an action. After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Booming",
+    "type": "text",
+    "value": "The deflagration from firing a Booming weapon makes a stupendous booming sound. The sound can be heard from up to 500 feet away. Making a ranged attack using a weapon with this property makes it impossible to go undetected; you automatically fail Dexterity (*Stealth*) checks made as part of the Hide action until the start of your next turn. In addition, if a creature is within the area of the sound blast, it automatically succeeds on Wisdom (*Perception*) checks made against you as part of the Search action."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Push",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+   }
+  ],
+  "properties": [
+   "**3d10** Bludgeoning",
+   "artillery (range 120/240 ft.; cannonball)",
+   "the deflagration from firing a booming weapon makes a stupendous booming sound. the sound can be heard from up to 500 feet away. making a ranged attack using a weapon with this property makes it impossible to go undetected; you automatically fail dexterity (*stealth*) checks made as part of the hide action until the start of your next turn. in addition, if a creature is within the area of the sound blast, it automatically succeeds on wisdom (*perception*) checks made against you as part of the search action.",
+   "two-handed",
+   "mastery: push"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Cannon",
   "source": "ValdaGunslinger",
   "url": "https://5e.tools/items.html#cannon_valdagunslinger",
   "image": null,
@@ -13645,6 +13757,36 @@
    "two-handed",
    "mastery: explode"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Cannonball",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#cannonball_sgehpp",
+  "image": null,
+  "value": "3 gp",
+  "weight": "10 lb.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A type of Ammunition for weapons with the Artillery property."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Ammunition is required by a weapon that has the Ammunition property. A weapon's description specifies the type of ammunition used by the weapon."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Firearm ammunition is destroyed upon use."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -16353,6 +16495,42 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Cleaver",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#cleaver_sgehpp",
+  "image": null,
+  "value": "3 gp",
+  "weight": "4 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Graze",
+    "type": "text",
+    "value": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+   }
+  ],
+  "properties": [
+   "**1d8** Slashing",
+   "heavy",
+   "versatile (1d12)",
+   "mastery: graze"
+  ],
   "reprint": null
  },
  {
@@ -24091,6 +24269,51 @@
   "reprint": null
  },
  {
+  "name": "Dream Executioner",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#dream%20executioner_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "trick weapon",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon."
+   },
+   {
+    "name": "Trick Weapon",
+    "type": "text",
+    "value": "As a Bonus Action, you can switch between the Transformed and Untransformed states of this weapon. In its Untransformed state, the Dream Executioner is a Scythe and a lantern. In its Transformed state, the weapon is a single massive Maul."
+   },
+   {
+    "name": "Untransformed",
+    "type": "text",
+    "value": "The Scythe gains the Harvest property."
+   },
+   {
+    "name": "Harvest",
+    "type": "text",
+    "value": "Whenever a creature of CR 1 or higher (or level 1 or higher) dies within 15 feet of you, the lantern harvests the creature's soul. The soul becomes trapped in the lantern, and the creature can't be resurrected until the soul is freed. As a Magic action, you can free a soul trapped in the lantern. The lantern can hold a maximum of one soul."
+   },
+   {
+    "name": "Transformed",
+    "type": "text",
+    "value": "The Maul gains the Soul Explosion property."
+   },
+   {
+    "name": "Soul Explosion",
+    "type": "text",
+    "value": "When you hit a creature with this weapon while a soul is held in the lantern, you can sacrifice the soul, permanently destroying it, to create a massive explosion of ghostflame. Each creature of your choice in a 15-foot Emanation originating from you must make a DC 14 Dexterity saving throw, taking **2d8** Radiant damage and **2d8** Necrotic damage on a failed save or half as much damage on a successful one. Undead automatically fail the saving throw."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Dream Mantle",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#dream%20mantle_24griffonssaddlebag1",
@@ -26443,6 +26666,30 @@
     "name": "",
     "type": "text",
     "value": "If a spell that deals fire damage would normally ignite flammable objects that aren't being worn or carried, it does not if it's converted to lightning damage in this way. However, a spell that deals lightning damage does ignite such objects if it's converted to deal fire damage instead."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Explosive Cannonball",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#explosive%20cannonball_sgehpp",
+  "value": "30 gp",
+  "weight": "12 lb.",
+  "type": [
+   "ammunition"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature hit by this ammunition takes the weapon's normal damage, and each creature within 10 feet of it must succeed on a Dexterity saving throw (DC 8 plus your Strength modifier and your Proficiency Bonus) or take **2d8** Fire damage. On a miss, the ammunition fails to detonate."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once it hits a target, the ammunition is destroyed."
    }
   ],
   "properties": [],
@@ -29852,6 +30099,60 @@
   "reprint": null
  },
  {
+  "name": "Flintlock",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#flintlock_sgehpp",
+  "image": null,
+  "value": "8 gp",
+  "weight": "3 lb.",
+  "type": [
+   "simple weapon",
+   "ranged weapon",
+   "firearm"
+  ],
+  "description": [
+   {
+    "name": "Range",
+    "type": "text",
+    "value": "A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range."
+   },
+   {
+    "name": "Ammunition",
+    "type": "text",
+    "value": "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+   },
+   {
+    "name": "Barrel",
+    "type": "text",
+    "value": "A Barrel weapon can be fired a number of times equal to the number of bullets its barrel can hold (written as Barrel X) before it must be reloaded. It can be reloaded as either an action or instead of an attack as part of the Attack action. If the weapon also has the Light property, it can also be reloaded as a Bonus Action. You must have one free hand to reload the weapon."
+   },
+   {
+    "name": "Blaring",
+    "type": "text",
+    "value": "Firing a Blaring weapon makes a thunderous crack. The sound can be heard from up to 100 feet away. Making a ranged attack using a weapon with this property makes it hard to go undetected; you have Disadvantage on Dexterity (*Stealth*) checks made as part of the Hide action until the start of your next turn. In addition, if a creature is within the area of the sound blast, it has Advantage on Wisdom (*Perception*) checks made against you as part of the Search action."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "ammunition (range 100/320 ft.; firearm bullet)",
+   "barrel {{item.customproperties.barrel}}",
+   "firing a blaring weapon makes a thunderous crack. the sound can be heard from up to 100 feet away. making a ranged attack using a weapon with this property makes it hard to go undetected; you have disadvantage on dexterity (*stealth*) checks made as part of the hide action until the start of your next turn. in addition, if a creature is within the area of the sound blast, it has advantage on wisdom (*perception*) checks made against you as part of the search action.",
+   "light",
+   "mastery: sap"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Flip and Skip",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#flip%20and%20skip_obojimatallgrass",
@@ -31407,6 +31708,56 @@
     "name": "",
     "type": "text",
     "value": "To escape, the target or a creature within 5 feet of it must take an action to make a DC 15 Strength (*Athletics*) check, freeing the Restrained creature on a success. A Small or smaller creature has Disadvantage on this check. Destroying the Net (AC 12; 15 HP; Resistance to Slashing damage; Immunity to all other damage) also frees the target, ending the effect. Once destroyed, the Net magically repairs itself over the course of 1d6 + 1 days."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Galvanized Claw",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#galvanized%20claw_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "trick weapon",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While attuned to this weapon, you have Resistance to Lightning and Thunder damage."
+   },
+   {
+    "name": "Trick Weapon",
+    "type": "text",
+    "value": "As a Bonus Action, you can switch between the Transformed and Untransformed states of this weapon. In its Untransformed state, the claw is a sinewy leather gauntlet, made from the muscle and hide of a galvanized prowler. In its Transformed state, the claw surges with electrical energy, merging with its wearer's forearm and turning into a monstrous claw."
+   },
+   {
+    "name": "Untransformed",
+    "type": "text",
+    "value": "The bestial hide invigorates you, giving you the lightning fast reflexes of the galvanized prowler slaughtered to make this gauntlet; you have Advantage on Initiative rolls. In addition, this gauntlet feeds off of your power. If you have Temporary Hit Points when you hit with a melee attack, you deal an extra **1d6** Lightning damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The gauntlet has 3 charges and regains all expended charges daily at dawn. When you take Lighting or Thunder damage, you can take a Reaction and expend 1 charge to instead take no damage and gain a number of Temporary Hit Points equal to the damage you would have taken."
+   },
+   {
+    "name": "Transformed",
+    "type": "text",
+    "value": "The gauntlet merges with your form, turning your hand into an aberrant claw that you can't be disarmed of. This claw changes the damage of your Unarmed Strikes to **1d8**, the damage type to Slashing, and you can use your Dexterity or Strength modifier for the attack rolls and damage rolls made with it. Further, you gain a +1 bonus to attack rolls and damage rolls made with it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you take the Attack action with this claw, you can make one attack with it as a Bonus Action. In addition, if you have Temporary Hit Points, when you hit with a melee attack using this claw, you deal an extra **1d8** Lightning damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The claw is too unwieldy to use for delicate handling, such as activating intricate mechanisms (like the trigger of a firearm) or picking locks with Thieves' Tools."
    }
   ],
   "properties": [],
@@ -50129,6 +50480,46 @@
   "reprint": null
  },
  {
+  "name": "Meat Hookshot",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#meat%20hookshot_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "trick weapon",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Manikin of the Sloered Abattoir gained sentience, the Scions sent enforcers to quell this threat to Luyarnha's delicate existence. From the abattoir's meat hooks and the blunderbusses of the slain enforcers, The Slaughtered—as the manikins named themselves—crafted these versatile weapons. Nicknamed \"the meat hook\", the hookshot is a trick weapon used by hunters to help close the gap to their prey in a devastating whirl of blades and gunpowder."
+   },
+   {
+    "name": "Trick Weapon",
+    "type": "text",
+    "value": "As a Bonus Action, you can switch between the Transformed and Untransformed states of this weapon. In its Untransformed state, the hookshot is two one-handed weapons connected by a short length of chain: a Sickle and a Blunderbuss. In its Transformed state, the weapon is a single two-handed weapon: a Blunderbuss with a bladed attachment that can act as a Battleaxe."
+   },
+   {
+    "name": "Untransformed",
+    "type": "text",
+    "value": "While Untransformed, the Sickle has the Finesse property, and the Blunderbuss doesn't have the Two-Handed property. Using this pair of weapons together requires the Sickle to be held in one hand and the Blunderbuss in the other. When you take the Attack action with the Sickle, you can make an attack with the Blunderbuss as a Bonus Action, ignoring the Barrel property."
+   },
+   {
+    "name": "Transformed",
+    "type": "text",
+    "value": "When you take the Attack action, you can attack with either the Blunderbuss or the bladed attachment (which uses the stats of a Battleaxe wielded with two hands). In addition, this item gains the Hookshot property."
+   },
+   {
+    "name": "Hookshot",
+    "type": "text",
+    "value": "As a Utilize action, you can launch the sickle from the Blunderbuss, to which it remains attached by a length of sturdy chain. Make a ranged attack roll against a creature you can see within 30 feet of you. On a hit, the target takes Slashing damage equal to **1d4** plus your Dexterity modifier. If the creature is your size or smaller, it must succeed on a DC 13 Strength saving throw or be pulled in a straight line to the nearest unoccupied space to you. If the creature is larger than you, you are pulled in a straight line to the nearest unoccupied space to it. At the end of your turn, the hook detaches from the creature and reattaches itself to the Blunderbuss."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Meat, chunk",
   "source": "TLotRR",
   "url": "https://5e.tools/items.html#meat%2C%20chunk_tlotrr",
@@ -55234,6 +55625,61 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Orphan's Cradle",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#orphan's%20cradle_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "trick weapon",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon."
+   },
+   {
+    "name": "Trick Weapon",
+    "type": "text",
+    "value": "As a Bonus Action, you can switch between the Transformed and Untransformed states of this weapon. In both states, the weapon is a Morningstar with the Reach property."
+   },
+   {
+    "name": "Untransformed",
+    "type": "text",
+    "value": "The flowers growing in the cradle exude a sickly sweet scent that calms the mind of men and chases away nightmares. Humanoids within 10 feet of the cradle have Advantage on saving throws against the Charmed and Frightened conditions. In addition, the cradle has the Cleansing Miasma and Vile Miasma properties."
+   },
+   {
+    "name": "Cleansing Miasma",
+    "type": "text",
+    "value": "As a Magic action, you can cleanse one Humanoid you can see within 10 feet of you. It gains 1d12 Temporary Hit Points and can end one of the following conditions: Charmed, Frightened, or Poisoned. Once a creature has benefited from this property, it can't benefit from it again for 1 hour."
+   },
+   {
+    "name": "Vile Miasma",
+    "type": "text",
+    "value": "When you hit a Beast or an Undead with this weapon, the target must succeed on a DC 16 Constitution saving throw or have the Poisoned condition for 1 minute, even if the target is immune to the Poisoned condition. A Poisoned creature repeats the save at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Vile Miasma for the next 24 hours."
+   },
+   {
+    "name": "Transformed",
+    "type": "text",
+    "value": "When Transformed, the cradle's plants ignite, and it deals an extra **2d6** Fire damage on a hit. In addition, the weapon gains the Fanned Flames and Withering Flames properties."
+   },
+   {
+    "name": "Fanned Flames",
+    "type": "text",
+    "value": "As an action, you can rotate the cradle wildly around you, fanning the flames. Each creature in a 20-foot Cone must make a DC 16 Dexterity saving throw, taking **3d6** Fire damage and **3d6** Poison damage on a failed save or half as much damage on a successful one. Beasts and Undead have Disadvantage on this saving throw. After this property is used, Orphan's Cradle reverts to its Untransformed state and can't be Transformed again for 1d4 rounds."
+   },
+   {
+    "name": "Withering Flames",
+    "type": "text",
+    "value": "When you hit a Beast or an Undead with this weapon, you can force the target to make a DC 16 Constitution saving throw. On a failure, the target has Vulnerability to your choice of one of the following damage types until the start of its next turn: Acid, Cold, Fire, Lightning, Poison, or Radiant. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Withering Flames for the next 24 hours."
    }
   ],
   "properties": [],
@@ -62246,6 +62692,41 @@
   "reprint": null
  },
  {
+  "name": "Ravenous Gazer",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#ravenous%20gazer_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "trick weapon",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Acquiring forbidden knowledge always comes at a cost. Any creature that attunes to this glaive is considered proficient with it. You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "To transform this weapon, you must feed it your blood: each time you shift this weapon into its Transformed state, or start your turn with the weapon in its Transformed state, you take **1d4** Necrotic damage, which can't be reduced or prevented in any way. This damage can't break your *Concentration*."
+   },
+   {
+    "name": "Trick Weapon",
+    "type": "text",
+    "value": "As a Bonus Action, you can switch between the Transformed and Untransformed states of this weapon. In its Untransformed state, the gazer is a Glaive. In its Transformed state, the gazer is a Glaive that can be used as a Spellcasting Focus."
+   },
+   {
+    "name": "Transformed",
+    "type": "text",
+    "value": "While the weapon is in its Transformed state, it grants you a +2 bonus to spell attack rolls, increases your spell save DC by 1, and gives you Truesight with a range of 30 feet."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Ready Gunk",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#ready%20gunk_grimhollowcg24",
@@ -63846,6 +64327,64 @@
    "thrown (20/60 ft.)",
    "mastery: returning"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Revelations",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#revelations_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "trick weapon",
+   "very rare (requires attunement by a creature with a Strength of 15 or higher)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. While attuned to it, your sight improves as your vision starts echoing with that of the blade. While holding Revelations, you gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You can't be *Surprised*.",
+      "Other creatures don't gain Advantage on attack rolls against you as a result of being unseen by you.",
+      "You are immune to the Blinded condition, as the sword absorbs the effect and closes two of its eyes instead, before regrowing them."
+     ]
+    }
+   },
+   {
+    "name": "Trick Weapon",
+    "type": "text",
+    "value": "As a Bonus Action, you can switch between the Transformed and Untransformed states of this weapon. In its Untransformed state, the weapon is a Cleaver studded with eyeballs. In its Transformed state, the weapon is a Whip composed of metal shards held together by a sinew of blood and flesh."
+   },
+   {
+    "name": "Untransformed",
+    "type": "text",
+    "value": "When you hit a creature with this Cleaver, you curse them for the next hour. For the duration, you gain a +1 bonus to damage rolls made with the weapon against the target, attack rolls you make with the weapon against the cursed target score a Critical Hit on a roll of 19 or 20 on the d20, and you have Advantage on any Wisdom (*Perception* or *Survival*) check you make to find the target. The curse ends early if you transform the weapon or if you have the Unconscious condition."
+   },
+   {
+    "name": "Transformed",
+    "type": "text",
+    "value": "This Whip deals **1d6** Slashing damage on a hit, has the Versatile (**1d8**) property, but does not have the Finesse property. Once on each of your turns when you hit a creature with this weapon, you can attempt to crush them under the weight of the Whip. The target must succeed on a Strength saving throw (DC equals 8 plus your Strength modifier and your Proficiency Bonus) or take **1d6** Slashing damage and have the Prone condition."
+   },
+   {
+    "name": "Curse: Devour Sight",
+    "type": "text",
+    "value": "While attuned to this weapon, your sight deteriorates rapidly. For each five days that pass, you gain a permanent -1 penalty to all Wisdom (*Perception*) checks made using your sight. When this penalty reaches -5, your eyes rot and melt out. You have the Blinded condition, as two new eyes appear on the blade."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The sword's curse is insidious: while you remain attuned to the weapon, you do not suffer the penalty to your *Perception* checks, and you do not realize that your sight is worsening. The blade's influence makes you perceive the world in a clearer light."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -66964,6 +67503,116 @@
   "reprint": null
  },
  {
+  "name": "Sacrificial Brand (Drawn)",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#sacrificial%20brand%20(drawn)_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "eldritch carving",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The carving, notorious among hunters and commonly dubbed the \"Brand of Death\" is a harbinger of an early demise for those burdened with its curse. Nevertheless, Steinhardt and Martyr Tulio—valiant souls undaunted by fear—carved the eldritch sigil into their own skin willingly. By bearing the ominous symbol, they sought to lure the beasts closer to them during the Hunt, granting their brothers-in-arms moments of respite amidst the chaos."
+   },
+   {
+    "name": "Drawn (Common)",
+    "type": "text",
+    "value": "During the three days of the Blood Moon, all Evil-aligned creatures within Luyarnha gain Advantage on Wisdom (*Perception*) or Wisdom (*Survival*) checks to locate creatures with this Eldritch Carving."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "To apply an Eldritch Carving, one must follow a gruesome process. Unlike most art, where the artist determines the quality of the art, with Eldritch Carvings, the canvas—the person getting carved— determines the quality of the work. The canvas must envision the rune in their mind as best they can, causing their body to distort under the eldritch pressure. The carver can then simply apply the necessary tool against the skin and let the eldritch powers move the brush, needle, or knife, depending on whether the Eldritch Carving is Drawn, Tattooed, or Scarified, respectively. This procedure takes 1 hour and can be done as part of a Short Rest."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After the Eldritch Carving is complete, a creature is attuned to it (if required) and gains its effects. To remove an Eldritch Carving, the flesh where the Eldritch Carving is located needs to be thoroughly burnt. Burning a carving also removes Attunement to it. Scarified Eldritch Carvings can't be removed."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Sacrificial Brand (Scarified)",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#sacrificial%20brand%20(scarified)_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "eldritch carving",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The carving, notorious among hunters and commonly dubbed the \"Brand of Death\" is a harbinger of an early demise for those burdened with its curse. Nevertheless, Steinhardt and Martyr Tulio—valiant souls undaunted by fear—carved the eldritch sigil into their own skin willingly. By bearing the ominous symbol, they sought to lure the beasts closer to them during the Hunt, granting their brothers-in-arms moments of respite amidst the chaos."
+   },
+   {
+    "name": "Scarified (Rare)",
+    "type": "text",
+    "value": "During the three days of the Blood Moon, all Evil-aligned creatures within Luyarnha gain Advantage on Wisdom (*Perception*) or Wisdom (*Survival*) checks to locate creatures with this Eldritch Carving. If they are within 120 feet of a creature bearing the Eldritch Carving, they know their exact location and receive a +3 bonus to attack rolls and damage rolls against them, and they have a -3 penalty to attack rolls and damage rolls against other creatures not bearing the brand."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, creatures bearing this carving begin to painfully bleed from it when Hostile monsters within 300 feet of them are aware of their position. They can't be *Surprised* for the duration of the Blood Moon."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "To apply an Eldritch Carving, one must follow a gruesome process. Unlike most art, where the artist determines the quality of the art, with Eldritch Carvings, the canvas—the person getting carved— determines the quality of the work. The canvas must envision the rune in their mind as best they can, causing their body to distort under the eldritch pressure. The carver can then simply apply the necessary tool against the skin and let the eldritch powers move the brush, needle, or knife, depending on whether the Eldritch Carving is Drawn, Tattooed, or Scarified, respectively. This procedure takes 1 hour and can be done as part of a Short Rest."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After the Eldritch Carving is complete, a creature is attuned to it (if required) and gains its effects. To remove an Eldritch Carving, the flesh where the Eldritch Carving is located needs to be thoroughly burnt. Burning a carving also removes Attunement to it. Scarified Eldritch Carvings can't be removed."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Sacrificial Brand (Tattooed)",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#sacrificial%20brand%20(tattooed)_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "eldritch carving",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The carving, notorious among hunters and commonly dubbed the \"Brand of Death\" is a harbinger of an early demise for those burdened with its curse. Nevertheless, Steinhardt and Martyr Tulio—valiant souls undaunted by fear—carved the eldritch sigil into their own skin willingly. By bearing the ominous symbol, they sought to lure the beasts closer to them during the Hunt, granting their brothers-in-arms moments of respite amidst the chaos."
+   },
+   {
+    "name": "Tattooed (Uncommon)",
+    "type": "text",
+    "value": "During the three days of the Blood Moon, all Evil-aligned creatures within Luyarnha gain Advantage on Wisdom (*Perception*) or Wisdom (*Survival*) checks to locate creatures with this Eldritch Carving. If they are within 120 feet of a creature bearing the Eldritch Carving, they know their exact location and receive a +1 bonus to attack rolls and damage rolls against them."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "To apply an Eldritch Carving, one must follow a gruesome process. Unlike most art, where the artist determines the quality of the art, with Eldritch Carvings, the canvas—the person getting carved— determines the quality of the work. The canvas must envision the rune in their mind as best they can, causing their body to distort under the eldritch pressure. The carver can then simply apply the necessary tool against the skin and let the eldritch powers move the brush, needle, or knife, depending on whether the Eldritch Carving is Drawn, Tattooed, or Scarified, respectively. This procedure takes 1 hour and can be done as part of a Short Rest."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After the Eldritch Carving is complete, a creature is attuned to it (if required) and gains its effects. To remove an Eldritch Carving, the flesh where the Eldritch Carving is located needs to be thoroughly burnt. Burning a carving also removes Attunement to it. Scarified Eldritch Carvings can't be removed."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Sage Arol's Beetle",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#sage%20arol's%20beetle_obojimatallgrass",
@@ -68186,6 +68835,48 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Scythe",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#scythe_sgehpp",
+  "image": null,
+  "value": "5 gp",
+  "weight": "6 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Reach",
+    "type": "text",
+    "value": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Cleave",
+    "type": "text",
+    "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d10** Slashing",
+   "finesse",
+   "reach",
+   "two-handed",
+   "mastery: cleave"
+  ],
   "reprint": null
  },
  {
@@ -70767,6 +71458,85 @@
     "name": "",
     "type": "text",
     "value": "**Magnetovision**: As a bonus action, you can expend **1 charge** allowing you to sense the locations of all ferrous metals within **60 feet** of you for the next **10 minutes**. This vision is blocked by a thin sheet of lead."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Shard of Moonlight",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#shard%20of%20moonlight_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "trick weapon",
+   "artifact (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While attuned to this weapon, you gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You are proficient with Greatswords and Longswords.",
+      "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon, and the blade deals an extra **1d6** Radiant damage on a hit.",
+      "You have Advantage on Wisdom saving throws, except those made to resist Madness.",
+      "You can use this weapon as a Spellcasting Focus."
+     ]
+    }
+   },
+   {
+    "name": "Sentience",
+    "type": "text",
+    "value": "The Shard of Moonlight is a sentient weapon, with the same personality as the Great One whose flesh it was carved from. The weapon sporadically communicates telepathically with its wielder through images and sounds, though it doesn't speak."
+   },
+   {
+    "name": "Trick Weapon",
+    "type": "text",
+    "value": "As a Bonus Action, you can switch between the Transformed and Untransformed states of this weapon. In its Untransformed state, the shard is a metallic Longsword that absorbs light. In its Transformed state, the weapon is a Greatsword that pulses with lunar energy. In both states, this weapon has the Light property."
+   },
+   {
+    "name": "Untransformed",
+    "type": "text",
+    "value": "The blade seems to guide your strikes. Once on each of your turns when you make an attack with this weapon, you can immediately make a second attack (no action required). It has the Void Absorption property."
+   },
+   {
+    "name": "Void Absorption",
+    "type": "text",
+    "value": "The void that fills the blade is capable of absorbing magic. While holding the shard, you can take a Reaction to absorb a spell that is targeting you, including spells with an area of effect. The absorbed spell's effect is canceled, and the spell's energy—not the spell itself—is stored in the shard in the form of charges. The number of charges gained is equivalent to the level of the spell when it was cast (1 charge for cantrips). The shard can absorb and store up to 10 charges. If the shard doesn't have enough empty charges for a spell, it fails to absorb it. The shard regains all charges each time the moon changes."
+   },
+   {
+    "name": "Transformed",
+    "type": "text",
+    "value": "To transform the blade, you must take a Bonus Action while under direct moonlight. The transformation lasts for 1 minute, or until you end it early as a Bonus Action. While the blade is Transformed, the extra Radiant damage it deals on a hit increases from **1d6** to **2d6**, and you can expend the charges stored within the shard. When the shard loses all charges, the transformation ends."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each time you make an attack in the Transformed state, you can expend charges to create special effects:"
+   },
+   {
+    "name": "Revealing Glow",
+    "type": "text",
+    "value": "As part of making an attack, you can expend 1 charge to empower the blade. On a hit, it deals an extra **1d12** Radiant damage, and until the start of your next turn, the target sheds Dim Light in a 10-foot radius. While affected by the light, the target can't have the Invisible condition, and attack rolls against it have Advantage."
+   },
+   {
+    "name": "Transient Moonlight",
+    "type": "text",
+    "value": "As part of making an attack, you can expend 2 charges to release a wave of moonlight where the blade slashes, creating a 5-foot-wide, 60-foot-long Line of moonlight originating from you. Each creature in the area must make a DC 18 Constitution saving throw, taking **2d12** Radiant damage on a failed save or half as much damage on a successful one."
+   },
+   {
+    "name": "Lunar Explosion",
+    "type": "text",
+    "value": "Instead of making an attack, you can expend 3 charges to raise the blade upward and release a burst of moonlight energy. Each creature in a 30-foot Emanation originating from you must make a DC 18 Dexterity saving throw. On a failed save, a target takes **3d12** Radiant damage and has the Prone condition. If a creature falls Prone within 5 feet of you, you can immediately take a Reaction to make a melee weapon attack against them with the shard. On a successful save, a target takes half as much damage only."
    }
   ],
   "properties": [],
@@ -84127,6 +84897,45 @@
   "reprint": null
  },
  {
+  "name": "Torture Tools",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#torture%20tools_sgehpp",
+  "value": "20 gp",
+  "weight": "10 lb.",
+  "type": [
+   "tool"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This satchel contains various small implements that can bludgeon, cut, and pierce in ways designed to maximize pain. Meant to extract the truth, many use these tools with far more nefarious intentions."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Proficiency with these tools grants the following benefits:"
+   },
+   {
+    "name": "Exhaustion",
+    "type": "text",
+    "value": "Using these tools for 1 hour on a Restrained creature causes it to gain 1 Exhaustion level, after which you must make a Dexterity (Torture Tools) check. The DC is equal to 20 minus the creature's Constitution modifier. On a failure, the creature takes 10 points of your choice of Bludgeoning, Piercing, or Slashing damage."
+   },
+   {
+    "name": "Intimidation",
+    "type": "text",
+    "value": "When you make a Charisma (*Intimidation*) check against a creature you have previously used these tools on, you gain a bonus to the roll equal to twice your Proficiency Bonus."
+   },
+   {
+    "name": "Tool",
+    "type": "text",
+    "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Tote of Tricky Treat Sugarbombs",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#tote%20of%20tricky%20treat%20sugarbombs_24griffonssaddlebag1",
@@ -85981,6 +86790,53 @@
     "name": "",
     "type": "text",
     "value": "Additionally, you can reassign your six ability scores. You are bound by the contract until the archdevil dies or the contract is broken by a __wish__ spell. The contract can only be signed by one creature."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Unstable Crumbler",
+  "source": "SGEHPP",
+  "url": "https://5e.tools/items.html#unstable%20crumbler_sgehpp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "trick weapon",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this weapon, your attacks and spells deal double damage to structures, and Fire damage you take is reduced by an amount equal to your Constitution modifier (minimum of 1)."
+   },
+   {
+    "name": "Trick Weapon",
+    "type": "text",
+    "value": "As a Bonus Action, you can switch between the Transformed and Untransformed states of this weapon. In its Untransformed state, this weapon is a roaring Cannon with smoke coming out of its mouth. In its Transformed state, the handle extends, turning the weapon into a highly unstable and destructive Maul. As part of this Bonus Action, you can do the following:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you transform the Cannon into a Maul, you can shoot at your feet, even if the Cannon isn't loaded, using the deflagration to propel yourself and jump up to 30 feet in any direction. This jump doesn't cost you any movement.",
+      "When you transform the Maul into a Cannon, you can reload the Cannon and retain its unstable force. If you reload it in this way, the next time you hit with a ranged attack with the Cannon on your turn, you are pushed back 30 feet in a straight line."
+     ]
+    }
+   },
+   {
+    "name": "Untransformed",
+    "type": "text",
+    "value": "The Unstable Crumbler heats up Cannonballs, transforming them into infernal ammunition. Whenever you roll a 15 or higher on the d20 when making a ranged attack roll with this weapon, the Cannonball becomes overheated and explodes on impact. When the Cannonball explodes in this way, it is considered an Explosive Cannonball."
+   },
+   {
+    "name": "Transformed",
+    "type": "text",
+    "value": "Whenever you roll an 18 or higher on the d20 when making an attack roll with this weapon, the Maul's head detonates, causing an effect that acts as the __Fireball__ spell (save DC 15) centered on the target. If you succeed on this saving throw, you take no damage."
    }
   ],
   "properties": [],
