@@ -259,7 +259,10 @@ export class PartneredDatabank extends Databank {
     // Data used for parsing
     public readonly vehicleUpgradeTypes: { [key: string]: string } = {};
     public readonly featCategories: { [key: string]: string } = {};
-    public readonly optionalFeatureTypes: { [key: string]: string } = {}; // TODO - Currently unused in code?
+    // TODO - Metadata available in partnered content, but seemingly unused in the code.
+    public readonly optionalFeatureTypes: { [key: string]: string } = {};
+    public readonly psionicTypes: { [key: string]: string } = {};
+    public readonly spellSchools: { [key: string]: string } = {};
 
     private getFullPath(path: string): string {
         return `5etools-homebrew/data/${path}`;
@@ -279,13 +282,22 @@ export class PartneredDatabank extends Databank {
         }
     }
 
-    private addMetaData(key: string, data: any) {
-        // Key in data and in databank must be the same!
-        const metaData = data?._meta?.[key];
-        if (!metaData) return;
-        const target = (this as Record<string, any>)[key];
-        if (target && typeof target === 'object') {
-            Object.assign(target, metaData);
+    private addMetaData(data: any) {
+        const meta = data?._meta;
+        if (!meta) return;
+        const metaKeys = [
+            'vehicleUpgradeTypes',
+            'featCategories',
+            'optionalFeatureTypes',
+            'psionicTypes',
+            'spellSchools',
+        ];
+
+        for (const key of metaKeys) {
+            const target = (this as Record<string, any>)[key];
+            if (!target || typeof target !== 'object') continue;
+            if (!meta[key]) continue;
+            Object.assign(target, meta[key]);
         }
     }
 
@@ -310,9 +322,7 @@ export class PartneredDatabank extends Databank {
             this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered', legacy };
         }
 
-        for (const metaKey of ['vehicleUpgradeTypes', 'featCategories', 'optionalFeatureTypes']) {
-            this.addMetaData(metaKey, data);
-        }
+        this.addMetaData(data);
 
         const prefixesToIgnore = ['foundry'];
         const keysToIgnore = [
