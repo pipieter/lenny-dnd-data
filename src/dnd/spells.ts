@@ -107,12 +107,12 @@ function getCasters(spell: any, sources: any[]): any[] {
     return casters;
 }
 
-function getSpell(spell: any, fluffs: any[], sources: any): ParsedSpell {
+function getSpell(spell: any, fluffs: any[], sources: any, data: Databank | null = null): ParsedSpell {
     return {
         name: spell.name,
         source: spell.source,
         level: parseSpellLevel(spell.level),
-        school: parseSpellSchool(spell.school),
+        school: parseSpellSchool(spell.school, data),
         castingTime: parseCastingTime(spell.time, spell.meta),
         range: parseRange(spell.range),
         components: parseComponents(spell.components),
@@ -142,7 +142,7 @@ export function getSpells(databank: Databank): ParsedSpell[] {
 
     const result = [];
     for (const spell of spells) {
-        result.push(getSpell(spell, fluffs, sources));
+        result.push(getSpell(spell, fluffs, sources, databank));
     }
 
     result.sort((a, b) => a.name.localeCompare(b.name));

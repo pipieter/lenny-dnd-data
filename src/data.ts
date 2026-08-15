@@ -256,13 +256,13 @@ export class PartneredDatabank extends Databank {
     public readonly filters: PartneredFilters;
     private readonly sourceData: { [key: string]: ParsedSource } = {};
 
-    // Data used for parsing
+    // Metadata
     public readonly vehicleUpgradeTypes: { [key: string]: string } = {};
     public readonly featCategories: { [key: string]: string } = {};
-    // TODO - Metadata available in partnered content, but seemingly unused in the code.
+    public readonly spellSchools: { [key: string]: string } = {};
+    // TODO - Metadata available in partnered content, but unused in the code.
     public readonly optionalFeatureTypes: { [key: string]: string } = {};
     public readonly psionicTypes: { [key: string]: string } = {};
-    public readonly spellSchools: { [key: string]: string } = {};
 
     private getFullPath(path: string): string {
         return `5etools-homebrew/data/${path}`;

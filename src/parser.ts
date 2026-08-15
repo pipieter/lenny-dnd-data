@@ -14,6 +14,7 @@ import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { rawData } from './5etools-conversion/rawdata';
+import { Databank } from './data';
 
 export interface Range {
     type: 'range';
@@ -123,9 +124,13 @@ export function parseSpellLevel(level: number): string {
     return `Level ${level}`;
 }
 
-export function parseSpellSchool(school: string): string {
-    const parsed = rawData.getSpellSchoolName(school);
-    if (!parsed) {
+export function parseSpellSchool(school: string, data: Databank | null = null): string {
+    let parsed = rawData.getSpellSchoolName(school);
+    if (data && 'spellSchools' in data) {
+        const metaSchool = (data.spellSchools as { [key: string]: any })[school];
+        if (metaSchool && metaSchool.full) parsed = metaSchool.full;
+    }
+    if (!parsed || parsed === school) {
         throw `Unsupported spell school: '${school}'`;
     }
     return parsed;
