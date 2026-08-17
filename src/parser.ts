@@ -952,8 +952,12 @@ export function parsePrerequisite(prerequisite: any): string | null {
             }
             case 'level': {
                 const lvl = prerequisite.level.level;
-                const classname = prerequisite.level.class.name;
-                prerequisites.push(`Lv. ${lvl} ${classname}`);
+                let levelPre = `Lv. ${lvl}`;
+                if (prerequisite.level.class?.name) {
+                    const classname = prerequisite.level.class.name;
+                    levelPre += ` ${classname}`;
+                }
+                prerequisites.push(levelPre);
                 break;
             }
             case 'race': {
@@ -961,6 +965,41 @@ export function parsePrerequisite(prerequisite: any): string | null {
                     return r.name;
                 });
                 prerequisites.push(joinStringsWithOr(races));
+                break;
+            }
+            case 'spell': {
+                console.log(prerequisite);
+                prerequisites.push('TODO');
+                break;
+            }
+            case 'item': {
+                console.log(prerequisite);
+                prerequisites.push('TODO');
+                break;
+            }
+            case 'pact': {
+                console.log(prerequisite);
+                prerequisites.push('TODO');
+                break;
+            }
+            case 'otherSummary': {
+                console.log(prerequisite);
+                prerequisites.push('TODO');
+                break;
+            }
+            case 'optionalfeature': {
+                console.log(prerequisite);
+                prerequisites.push('TODO');
+                break;
+            }
+            case 'other': {
+                console.log(prerequisite);
+                prerequisites.push('TODO');
+                break;
+            }
+            case 'patron': {
+                console.log(prerequisite);
+                prerequisites.push('TODO');
                 break;
             }
             default: {

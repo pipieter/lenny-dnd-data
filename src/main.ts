@@ -24,6 +24,7 @@ import { getCults } from './dnd/cults';
 import { getBoons } from './dnd/boons';
 import { ParsedDatabank } from './parsed';
 import { getLife } from './dnd/life';
+import { getOptionalFeatures } from './dnd/optionalfeatures';
 
 function parse(
     name: string,
@@ -88,6 +89,9 @@ function parse(
     const objects = getObjects(databank);
     stopwatch.log('Objects retrieved');
 
+    const optionalfeatures = getOptionalFeatures(databank);
+    stopwatch.log('Optional features retrieved.');
+
     const vehicles = getVehicles(databank);
     stopwatch.log('Vehicles retrieved.');
 
@@ -124,6 +128,7 @@ function parse(
     parsed.traps.push(...traps);
     parsed.hazards.push(...hazards);
     parsed.objects.push(...objects);
+    parsed.optionalfeatures.push(...optionalfeatures);
     parsed.vehicles.push(...vehicles);
     parsed.skills.push(...skills);
     parsed.cults.push(...cults);

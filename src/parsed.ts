@@ -14,6 +14,7 @@ import { ParsedLanguage } from './dnd/languages';
 import { ParsedLife } from './dnd/life';
 import { ParsedSpeciesNames } from './dnd/names';
 import { ParsedDNDObject } from './dnd/objects';
+import { ParsedOptionalFeature } from './dnd/optionalfeatures';
 import { ParsedRule } from './dnd/rules';
 import { ParsedSkill } from './dnd/skills';
 import { ParsedSource } from './dnd/sources';
@@ -42,6 +43,7 @@ export class ParsedDatabank {
     public readonly life: ParsedLife[] = [];
     public readonly names: ParsedSpeciesNames[] = [];
     public readonly objects: ParsedDNDObject[] = [];
+    public readonly optionalfeatures: ParsedOptionalFeature[] = [];
     public readonly rules: ParsedRule[] = [];
     public readonly skills: ParsedSkill[] = [];
     public readonly sources: ParsedSource[] = [];

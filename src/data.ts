@@ -86,6 +86,7 @@ export class Databank {
     public readonly backgroundFluff: any[] = [];
     // Feats
     public readonly feat: Feat[] = [];
+    public readonly optionalfeature: any[] = [];
     // Skills
     public readonly skill: Skill[] = [];
     // Names
@@ -223,6 +224,7 @@ export class OfficialDatabank extends Databank {
         this.add('magicvariants.json');
         this.add('names.json');
         this.add('objects.json');
+        this.add('optionalfeatures.json');
         this.add('races.json');
         this.add('senses.json');
         this.add('skills.json');
@@ -308,7 +310,6 @@ export class PartneredDatabank extends Databank {
             'makebrewCreatureTrait',
             'citation',
             // The items below are not implemented *yet*, and should be TODO
-            'optionalfeature',
             'reward',
             'rewardFluff',
             'deck',
