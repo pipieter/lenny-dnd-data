@@ -968,38 +968,56 @@ export function parsePrerequisite(prerequisite: any): string | null {
                 break;
             }
             case 'spell': {
-                console.log(prerequisite);
-                prerequisites.push('TODO');
+                const spells = prerequisite.spell.map((s: any) => {
+                    // string, ends with #c or #x (cantrip or spell)
+                    if (typeof s === 'string') {
+                        const parts = s.split('#');
+                        const addon = parts[1].endsWith('c') ? 'cantrip' : 'spell';
+                        return `${parts[0]} ${addon}`;
+                    }
+
+                    // in an object, we only care about the entrySummary
+                    if (s.entrySummary) {
+                        return s.entrySummary;
+                    }
+                    throw `Unsupported spell prerequisite: ${s}`;
+                });
+
+                prerequisites.push(joinStringsWithOr(spells, false));
                 break;
             }
             case 'item': {
-                console.log(prerequisite);
-                prerequisites.push('TODO');
+                const items = prerequisite.item.map((i: any) => {
+                    if (typeof i === 'string') return i;
+                    throw `Unsupported item prerequisite: ${i}`;
+                });
+                prerequisites.push(joinStringsWithOr(items, false));
                 break;
             }
             case 'pact': {
-                console.log(prerequisite);
-                prerequisites.push('TODO');
+                prerequisites.push(`Pact of the ${prerequisite.pact}`);
                 break;
             }
             case 'otherSummary': {
-                console.log(prerequisite);
-                prerequisites.push('TODO');
+                const otherSummary = cleanDNDText(prerequisite.otherSummary.entry, true);
+                prerequisites.push(otherSummary);
                 break;
             }
             case 'optionalfeature': {
-                console.log(prerequisite);
-                prerequisites.push('TODO');
+                const optFeats = prerequisite.optionalfeature.map((o: string) => {
+                    const parts = o.split('|');
+                    return title(parts[0]);
+                });
+                prerequisites.push(joinStringsWithOr(optFeats, false));
                 break;
             }
             case 'other': {
-                console.log(prerequisite);
-                prerequisites.push('TODO');
+                prerequisites.push(cleanDNDText(prerequisite.other));
                 break;
             }
             case 'patron': {
-                console.log(prerequisite);
-                prerequisites.push('TODO');
+                const patron = cleanDNDText(prerequisite.patron);
+                prerequisites.push(`${patron} patron`);
                 break;
             }
             default: {

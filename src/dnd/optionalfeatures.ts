@@ -16,7 +16,6 @@ export interface ParsedOptionalFeature {
 export function getOptionalFeatures(data: Databank): ParsedOptionalFeature[] {
     const optFeatures: ParsedOptionalFeature[] = [];
     for (const optFeat of data.optionalfeature) {
-        console.log(optFeat);
         optFeatures.push({
             name: optFeat.name,
             source: optFeat.source,
