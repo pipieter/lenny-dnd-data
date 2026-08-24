@@ -29,11 +29,13 @@ export function write(path: string, contents: object[]) {
 }
 
 export class MetaData {
+    // TODO - Currently metadata is retained globally, however overlapping keys are possible when homebrew content is enabled.
+    // E.g. in optionalFeatureTypes, "CO" can have 3 different meanings (Concoction, Channeling Option, or Companion Origin) depending on which source it's from.
     public readonly vehicleUpgradeTypes: { [key: string]: string } = {};
     public readonly featCategories: { [key: string]: string } = {};
     public readonly spellSchools: { [key: string]: string } = {};
-    // The items below are not used in the code *yet*, and should be TODO
     public readonly optionalFeatureTypes: { [key: string]: string } = {};
+    // The items below are not used in the code *yet*, and should be TODO
     public readonly psionicTypes: { [key: string]: string } = {};
 
     add(data: any) {
@@ -127,6 +129,7 @@ export class Databank {
     public readonly backgroundFluff: any[] = [];
     // Feats
     public readonly feat: Feat[] = [];
+    public readonly optionalfeature: any[] = [];
     // Skills
     public readonly skill: Skill[] = [];
     // Names
@@ -266,6 +269,7 @@ export class OfficialDatabank extends Databank {
         this.add('magicvariants.json');
         this.add('names.json');
         this.add('objects.json');
+        this.add('optionalfeatures.json');
         this.add('races.json');
         this.add('senses.json');
         this.add('skills.json');
@@ -353,7 +357,6 @@ export class PartneredDatabank extends Databank {
             'makebrewCreatureTrait',
             'citation',
             // The items below are not implemented *yet*, and should be TODO
-            'optionalfeature',
             'reward',
             'rewardFluff',
             'deck',

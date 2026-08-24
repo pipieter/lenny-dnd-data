@@ -39,6 +39,10 @@ class RawData {
         return this.parser?.SOURCE_JSON_TO_FULL?.[sourceId] || sourceId;
     }
 
+    getOptionalFeatureTypeFullName(optFeatType: string): string {
+        return this.parser?.OPT_FEATURE_TYPE_TO_FULL?.[optFeatType] || optFeatType;
+    }
+
     getSourcePublishDate(sourceId: string): string | null {
         return this.parser?.SOURCE_JSON_TO_DATE?.[sourceId] || null;
     }

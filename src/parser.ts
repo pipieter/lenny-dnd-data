@@ -144,6 +144,16 @@ export function parseVehicleUpgradeType(upgrade: string, data: Databank) {
     throw `Unknown vehicle upgrade type key '${upgrade}'`;
 }
 
+export function parseOptionalFeatureType(type: string, data: Databank): string {
+    const raw = rawData.getOptionalFeatureTypeFullName(type);
+    if (raw !== type) return raw;
+
+    const meta = data.metadata.optionalFeatureTypes[type];
+    if (meta && meta !== type) return meta;
+
+    throw `Unknown optional feature type: ${type}`;
+}
+
 export function parseFeatCategory(category: string, data: Databank) {
     const raw = rawData.getFeatCategoryName(category);
     if (raw && raw !== category) return raw;
@@ -975,8 +985,12 @@ export function parsePrerequisite(prerequisite: any): string | null {
             }
             case 'level': {
                 const lvl = prerequisite.level.level;
-                const classname = prerequisite.level.class.name;
-                prerequisites.push(`Lv. ${lvl} ${classname}`);
+                let levelPre = `Lv. ${lvl}`;
+                if (prerequisite.level.class?.name) {
+                    const classname = prerequisite.level.class.name;
+                    levelPre += ` ${classname}`;
+                }
+                prerequisites.push(levelPre);
                 break;
             }
             case 'race': {
@@ -984,6 +998,59 @@ export function parsePrerequisite(prerequisite: any): string | null {
                     return r.name;
                 });
                 prerequisites.push(joinStringsWithOr(races));
+                break;
+            }
+            case 'spell': {
+                const spells = prerequisite.spell.map((s: any) => {
+                    // string, ends with #c or #x (cantrip or spell)
+                    if (typeof s === 'string') {
+                        const parts = s.split('#');
+                        const addon = parts[1].endsWith('c') ? 'cantrip' : 'spell';
+                        return `${parts[0]} ${addon}`;
+                    }
+
+                    // in an object, we only care about the entrySummary
+                    if (s.entrySummary) {
+                        return s.entrySummary;
+                    }
+                    throw `Unsupported spell prerequisite: ${s}`;
+                });
+
+                prerequisites.push(joinStringsWithOr(spells, false));
+                break;
+            }
+            case 'item': {
+                const items = prerequisite.item.map((i: any) => {
+                    if (typeof i === 'string') return i;
+                    throw `Unsupported item prerequisite: ${i}`;
+                });
+                prerequisites.push(joinStringsWithOr(items, false));
+                break;
+            }
+            case 'pact': {
+                prerequisites.push(`Pact of the ${prerequisite.pact}`);
+                break;
+            }
+            case 'otherSummary': {
+                const otherSummary = cleanDNDText(prerequisite.otherSummary.entry, true);
+                prerequisites.push(otherSummary);
+                break;
+            }
+            case 'optionalfeature': {
+                const optFeats = prerequisite.optionalfeature.map((o: string) => {
+                    const parts = o.split('|');
+                    return title(parts[0]);
+                });
+                prerequisites.push(joinStringsWithOr(optFeats, false));
+                break;
+            }
+            case 'other': {
+                prerequisites.push(cleanDNDText(prerequisite.other));
+                break;
+            }
+            case 'patron': {
+                const patron = cleanDNDText(prerequisite.patron);
+                prerequisites.push(`${patron} patron`);
                 break;
             }
             default: {

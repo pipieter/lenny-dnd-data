@@ -113,6 +113,10 @@ export function getObjectsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/objects.html`, name, source);
 }
 
+export function getOptionalFeaturesUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/optionalfeatures.html`, name, source);
+}
+
 export function getRulesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/variantrules.html`, name, source);
 }
