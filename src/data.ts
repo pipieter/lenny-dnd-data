@@ -28,6 +28,47 @@ export function write(path: string, contents: object[]) {
     writeFileSync(path, JSON.stringify(contents, null, 1), 'utf-8');
 }
 
+export class MetaData {
+    public readonly vehicleUpgradeTypes: { [key: string]: string } = {};
+    public readonly featCategories: { [key: string]: string } = {};
+    public readonly spellSchools: { [key: string]: string } = {};
+    // The items below are not used in the code *yet*, and should be TODO
+    public readonly optionalFeatureTypes: { [key: string]: string } = {};
+    public readonly psionicTypes: { [key: string]: string } = {};
+
+    add(data: any) {
+        const meta = data?._meta;
+        if (!meta) return;
+
+        // Exceptions where the metadata is {[key: string]: object}
+        const objectMapping: { [key: string]: string } = {
+            spellSchools: 'full', // From each spellSchool object, take data from the 'full' key.
+            psionicTypes: 'full',
+        };
+
+        for (const [key, value] of Object.entries(meta)) {
+            if (!(key in this) || !value) continue;
+
+            const targetKey = key as keyof MetaData;
+            const target = this[targetKey];
+            if (typeof target !== 'object' || target === null) continue;
+            const subProp = objectMapping[key];
+
+            if (!subProp) {
+                Object.assign(this[targetKey], value);
+                continue;
+            }
+
+            // Edge case: extract sub-property using objectMapping
+            for (const [k, v] of Object.entries(value)) {
+                if (typeof v === 'object' && v !== null && subProp in v) {
+                    target[k] = v[subProp];
+                }
+            }
+        }
+    }
+}
+
 export class Databank {
     // Spells
     public readonly spell: any[] = [];
@@ -111,6 +152,8 @@ export class Databank {
     public readonly lifeClass: LifeClass[] = [];
     public readonly lifeBackground: LifeBackground[] = [];
     public readonly lifeTrinket: any[] = [];
+
+    public readonly metadata = new MetaData();
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
@@ -256,14 +299,6 @@ export class PartneredDatabank extends Databank {
     public readonly filters: PartneredFilters;
     private readonly sourceData: { [key: string]: ParsedSource } = {};
 
-    // Metadata
-    public readonly vehicleUpgradeTypes: { [key: string]: string } = {};
-    public readonly featCategories: { [key: string]: string } = {};
-    public readonly spellSchools: { [key: string]: string } = {};
-    // TODO - Metadata available in partnered content, but unused in the code.
-    public readonly optionalFeatureTypes: { [key: string]: string } = {};
-    public readonly psionicTypes: { [key: string]: string } = {};
-
     private getFullPath(path: string): string {
         return `5etools-homebrew/data/${path}`;
     }
@@ -279,25 +314,6 @@ export class PartneredDatabank extends Databank {
             const fullPath = join(path, file);
             const data = readJsonFile(fullPath);
             this.addContents(data, fullPath);
-        }
-    }
-
-    private addMetaData(data: any) {
-        const meta = data?._meta;
-        if (!meta) return;
-        const metaKeys = [
-            'vehicleUpgradeTypes',
-            'featCategories',
-            'optionalFeatureTypes',
-            'psionicTypes',
-            'spellSchools',
-        ];
-
-        for (const key of metaKeys) {
-            const target = (this as Record<string, any>)[key];
-            if (!target || typeof target !== 'object') continue;
-            if (!meta[key]) continue;
-            Object.assign(target, meta[key]);
         }
     }
 
@@ -322,7 +338,7 @@ export class PartneredDatabank extends Databank {
             this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered', legacy };
         }
 
-        this.addMetaData(data);
+        this.metadata.add(data);
 
         const prefixesToIgnore = ['foundry'];
         const keysToIgnore = [

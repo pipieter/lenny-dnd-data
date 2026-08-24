@@ -107,7 +107,7 @@ function getCasters(spell: any, sources: any[]): any[] {
     return casters;
 }
 
-function getSpell(spell: any, fluffs: any[], sources: any, data: Databank | null = null): ParsedSpell {
+function getSpell(spell: any, fluffs: any[], sources: any, data: Databank): ParsedSpell {
     return {
         name: spell.name,
         source: spell.source,

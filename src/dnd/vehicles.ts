@@ -248,7 +248,7 @@ function getVehicleSubtitle(vehicle: Vehicle): string {
     return parts.join(' ');
 }
 
-function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade, data: Databank | null = null): string {
+function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade, data: Databank): string {
     const types: string[] = [];
     const typeMap: Record<string, string> = {
         'SHP:H': 'Ship Upgrade, Hull',
@@ -260,11 +260,7 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade, data: Databank | nul
         'IWM:A': 'Infernal War Machine Upgrade, Armor',
         'IWM:G': 'Infernal War Machine Upgrade, Gadget',
     };
-
-    if (data && 'vehicleUpgradeTypes' in data) {
-        // Add meta-data types to the map.
-        Object.assign(typeMap, data.vehicleUpgradeTypes);
-    }
+    Object.assign(typeMap, data.metadata.vehicleUpgradeTypes);
 
     for (const upgradeType of upgrade.upgradeType) {
         const type = typeMap[upgradeType];

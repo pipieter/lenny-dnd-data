@@ -88,7 +88,7 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
     return result.length ? result.join('\n') : null;
 }
 
-function getFeatCategory(abbreviation: string, data: Databank | null = null) {
+function getFeatCategory(abbreviation: string, data: Databank) {
     const typeMap: Record<string, string> = {
         G: 'General Feat',
         O: 'Origin Feat',
@@ -99,11 +99,7 @@ function getFeatCategory(abbreviation: string, data: Databank | null = null) {
         D: 'Dragonmark',
         DG: 'Dark Gift',
     };
-
-    if (data && 'featCategories' in data) {
-        // Add meta-data types to the map.
-        Object.assign(typeMap, data.featCategories);
-    }
+    Object.assign(typeMap, data.metadata.featCategories);
 
     if (!(abbreviation in typeMap)) throw `Unknown feat category key '${abbreviation}'`;
     return typeMap[abbreviation];

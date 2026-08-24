@@ -124,16 +124,14 @@ export function parseSpellLevel(level: number): string {
     return `Level ${level}`;
 }
 
-export function parseSpellSchool(school: string, data: Databank | null = null): string {
-    let parsed = rawData.getSpellSchoolName(school);
-    if (data && 'spellSchools' in data) {
-        const metaSchool = (data.spellSchools as { [key: string]: any })[school];
-        if (metaSchool && metaSchool.full) parsed = metaSchool.full;
-    }
-    if (!parsed || parsed === school) {
-        throw `Unsupported spell school: '${school}'`;
-    }
-    return parsed;
+export function parseSpellSchool(school: string, data: Databank): string {
+    const raw = rawData.getSpellSchoolName(school);
+    if (raw && raw !== school) return raw;
+
+    const meta = data.metadata.spellSchools[school];
+    if (meta && meta !== school) return meta;
+
+    throw `Unsupported spell school: '${school}'`;
 }
 
 export function parseAbilityScore(score: string): string {
