@@ -3,7 +3,7 @@ import { joinStringsWithOr } from '../util';
 
 import { getActionsUrl } from '../urls';
 import { Databank } from '../data';
-import { Unit } from '../../5etools-collector/types/common';
+import { Unit } from '../../5etools-collector/types/base';
 
 export interface ParsedAction {
     name: string;
@@ -17,7 +17,7 @@ export interface ParsedAction {
 function parseActionTime(times: Unit[] | undefined): string {
     if (!times) return 'Uncategorized';
 
-    const results = times.map(parseSingleTime)
+    const results = times.map(parseSingleTime);
     return joinStringsWithOr(results);
 }
 

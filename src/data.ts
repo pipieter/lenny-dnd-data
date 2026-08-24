@@ -14,7 +14,11 @@ import { LifeBackground, LifeClass } from './dnd/life';
 import { rawData } from './5etools-conversion/rawdata';
 import { ParsedSource } from './dnd/sources';
 
-import { Action, Boon, Deity, Table } from '../5etools-collector/types/types';
+import { Action } from '../5etools-collector/types/action';
+import { Boon } from '../5etools-collector/types/boon';
+import { Deity } from '../5etools-collector/types/deity';
+import { Table } from '../5etools-collector/types/table';
+import { Spell } from '../5etools-collector/types/spell';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -71,7 +75,7 @@ export class MetaData {
 
 export class Databank {
     // Spells
-    public readonly spell: any[] = [];
+    public readonly spell: Spell[] = [];
     public readonly spellFluff: any[] = [];
     public readonly spellSource: any[] = [];
     // Items

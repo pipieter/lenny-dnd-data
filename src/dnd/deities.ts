@@ -1,12 +1,9 @@
-import { Deity } from '../../5etools-collector/types/types';
+import { Deity } from '../../5etools-collector/types/deity';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { Description, DescriptionType, parseAlignments, parseDescriptions, title } from '../parser';
 import { getDeitiesUrl, getImageUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
-
-
-
 
 export interface ParsedDeity {
     name: string;
