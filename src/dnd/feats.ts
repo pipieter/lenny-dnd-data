@@ -1,5 +1,13 @@
 import { Databank } from '../data';
-import { Description, parseAbilityScore, parseDescriptions, parseReprint, ReprintData, title } from '../parser';
+import {
+    Description,
+    parseAbilityScore,
+    parseDescriptions,
+    parseFeatCategory,
+    parseReprint,
+    ReprintData,
+    title,
+} from '../parser';
 import { getFeatsUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
@@ -86,23 +94,6 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
     }
 
     return result.length ? result.join('\n') : null;
-}
-
-function getFeatCategory(abbreviation: string, data: Databank) {
-    const typeMap: Record<string, string> = {
-        G: 'General Feat',
-        O: 'Origin Feat',
-        FS: 'Fighting Style',
-        'FS:P': 'Fighting Style Replacement Feat (Paladin)',
-        'FS:R': 'Fighting Style Replacement Feat (Ranger)',
-        EB: 'Epic Boon',
-        D: 'Dragonmark',
-        DG: 'Dark Gift',
-    };
-    Object.assign(typeMap, data.metadata.featCategories);
-
-    if (!(abbreviation in typeMap)) throw `Unknown feat category key '${abbreviation}'`;
-    return typeMap[abbreviation];
 }
 
 function getFeatPrerequisites(feat: Feat, data: Databank): string | null {
@@ -237,12 +228,12 @@ function getFeatPrerequisites(feat: Feat, data: Databank): string | null {
                     break;
                 }
                 case 'featCategory': {
-                    const featCategories = entry.map((e: string) => getFeatCategory(e, data));
+                    const featCategories = entry.map((e: string) => parseFeatCategory(e, data));
                     group.push(`Any ${joinStringsWithOr(featCategories, true)} Feat`);
                     break;
                 }
                 case 'exclusiveFeatCategory': {
-                    const featCategories = entry.map((e: string) => getFeatCategory(e, data));
+                    const featCategories = entry.map((e: string) => parseFeatCategory(e, data));
                     group.push(`Can't Have Another ${joinStringsWithOr(featCategories, true)} Feat`);
                     break;
                 }
@@ -286,7 +277,7 @@ function getFeatPrerequisites(feat: Feat, data: Databank): string | null {
 
 function getFeatType(feat: Feat, data: Databank): string {
     if (!feat.category) return 'Uncategorized Feat';
-    return getFeatCategory(feat.category, data);
+    return parseFeatCategory(feat.category, data);
 }
 
 export function getFeats(data: Databank): ParsedFeat[] {

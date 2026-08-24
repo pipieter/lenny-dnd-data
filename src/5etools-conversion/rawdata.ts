@@ -79,6 +79,14 @@ class RawData {
         return capitalize(name);
     }
 
+    getFeatCategoryName(category: string): string {
+        return this.parser?.FEAT_CATEGORY_TO_FULL?.[category] || category;
+    }
+
+    getVehicleUpgradeType(upgrade: string): string {
+        return this.parser?.VEHICLE_UPGRADE_TYPE_TO_FULL?.[upgrade] || upgrade;
+    }
+
     getSpellSchoolName(school: string | undefined | null): string | null {
         if (!school) return null;
         return this.parser?.SP_SCHOOL_ABV_TO_FULL?.[school] || school;

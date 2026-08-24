@@ -134,6 +134,26 @@ export function parseSpellSchool(school: string, data: Databank): string {
     throw `Unsupported spell school: '${school}'`;
 }
 
+export function parseVehicleUpgradeType(upgrade: string, data: Databank) {
+    const raw = rawData.getVehicleUpgradeType(upgrade);
+    if (raw && raw !== upgrade) return raw;
+
+    const meta = data.metadata.vehicleUpgradeTypes[upgrade];
+    if (meta && meta !== upgrade) return meta;
+
+    throw `Unknown vehicle upgrade type key '${upgrade}'`;
+}
+
+export function parseFeatCategory(category: string, data: Databank) {
+    const raw = rawData.getFeatCategoryName(category);
+    if (raw && raw !== category) return raw;
+
+    const meta = data.metadata.featCategories[category];
+    if (meta && meta !== category) return meta;
+
+    throw `Unknown feat category key '${category}'`;
+}
+
 export function parseAbilityScore(score: string): string {
     const key = score.toLowerCase();
     const value = rawData.getAbilityName(key);

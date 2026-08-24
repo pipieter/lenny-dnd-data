@@ -7,6 +7,7 @@ import {
     parseDescriptions,
     parseReprint,
     parseSizes,
+    parseVehicleUpgradeType,
     ReprintData,
 } from '../parser';
 import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
@@ -249,24 +250,9 @@ function getVehicleSubtitle(vehicle: Vehicle): string {
 }
 
 function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade, data: Databank): string {
-    const types: string[] = [];
-    const typeMap: Record<string, string> = {
-        'SHP:H': 'Ship Upgrade, Hull',
-        'SHP:M': 'Ship Upgrade, Movement',
-        'SHP:W': 'Ship Upgrade, Weapon',
-        'SHP:F': 'Ship Upgrade, Figurehead',
-        'SHP:O': 'Ship Upgrade, Miscellaneous',
-        'IWM:W': 'Infernal War Machine Variant, Weapon',
-        'IWM:A': 'Infernal War Machine Upgrade, Armor',
-        'IWM:G': 'Infernal War Machine Upgrade, Gadget',
-    };
-    Object.assign(typeMap, data.metadata.vehicleUpgradeTypes);
-
-    for (const upgradeType of upgrade.upgradeType) {
-        const type = typeMap[upgradeType];
-        if (!type) throw `Unsupported vehicle upgrade type in ${upgrade.name}: ${upgrade.upgradeType}`;
-        types.push(type);
-    }
+    const types: string[] = upgrade.upgradeType.map((upgradeType: string) => {
+        return parseVehicleUpgradeType(upgradeType, data);
+    });
 
     return joinStringsWithAnd(types, false);
 }
