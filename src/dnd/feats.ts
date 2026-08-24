@@ -1,5 +1,13 @@
 import { Databank } from '../data';
-import { Description, parseAbilityScore, parseDescriptions, parseReprint, ReprintData, title } from '../parser';
+import {
+    Description,
+    parseAbilityScore,
+    parseDescriptions,
+    parseFeatCategory,
+    parseReprint,
+    ReprintData,
+    title,
+} from '../parser';
 import { getFeatsUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
@@ -88,31 +96,7 @@ function getFeatAbilityIncrease(feat: Feat): string | null {
     return result.length ? result.join('\n') : null;
 }
 
-const FeatCategoryMap: Record<string, string> = {
-    G: 'General Feat',
-    O: 'Origin Feat',
-    FS: 'Fighting Style',
-    'FS:P': 'Fighting Style Replacement Feat (Paladin)',
-    'FS:R': 'Fighting Style Replacement Feat (Ranger)',
-    EB: 'Epic Boon',
-    D: 'Dragonmark',
-    PlanarPact: 'Planar Pact',
-    PPact: 'Planar Pact',
-    DG: 'Dark Gift',
-    Harvest: 'Harvest',
-    // TLOTRR
-    VtCom: 'Common Virtues',
-    VtBar: 'Virtues of the Bardings',
-    VtDwa: 'Virtues of the Dwarves',
-    VtElf: 'Virtues of the Elves',
-    VtHob: 'Virtues of the Hobbits',
-    VtMBr: 'Virtues of the Men of Bree',
-    VtNRg: 'Virtues of the Rangers of the North',
-    Craft: 'Craft',
-    B10L: 'Beyond 10th Level',
-};
-
-function getFeatPrerequisites(feat: Feat): string | null {
+function getFeatPrerequisites(feat: Feat, data: Databank): string | null {
     if (!feat.prerequisite) return null;
 
     const prerequisites: string[][] = [];
@@ -203,6 +187,8 @@ function getFeatPrerequisites(feat: Feat): string | null {
                             proficiencies.push(`Proficiency with a ${profValue} weapon`);
                         } else if (profKey === 'weaponGroup') {
                             proficiencies.push(`${profValue} Proficiency`);
+                        } else if (profKey === 'skill') {
+                            proficiencies.push(joinStringsWithOr(profValue));
                         } else {
                             throw `Unsupported feat-proficiency-prerequisite ${profKey}`;
                         }
@@ -242,12 +228,12 @@ function getFeatPrerequisites(feat: Feat): string | null {
                     break;
                 }
                 case 'featCategory': {
-                    const featCategories = entry.map((e: string) => FeatCategoryMap[e]);
+                    const featCategories = entry.map((e: string) => parseFeatCategory(e, data));
                     group.push(`Any ${joinStringsWithOr(featCategories, true)} Feat`);
                     break;
                 }
                 case 'exclusiveFeatCategory': {
-                    const featCategories = entry.map((e: string) => FeatCategoryMap[e]);
+                    const featCategories = entry.map((e: string) => parseFeatCategory(e, data));
                     group.push(`Can't Have Another ${joinStringsWithOr(featCategories, true)} Feat`);
                     break;
                 }
@@ -289,14 +275,9 @@ function getFeatPrerequisites(feat: Feat): string | null {
     );
 }
 
-function getFeatType(feat: Feat): string {
+function getFeatType(feat: Feat, data: Databank): string {
     if (!feat.category) return 'Uncategorized Feat';
-
-    if (feat.category in FeatCategoryMap) {
-        return FeatCategoryMap[feat.category];
-    }
-
-    throw `Unsupported feat-type ${feat.category}`;
+    return parseFeatCategory(feat.category, data);
 }
 
 export function getFeats(data: Databank): ParsedFeat[] {
@@ -305,8 +286,8 @@ export function getFeats(data: Databank): ParsedFeat[] {
             name: feat.name,
             source: feat.source,
             url: getFeatsUrl(feat.name, feat.source),
-            type: getFeatType(feat),
-            prerequisite: getFeatPrerequisites(feat),
+            type: getFeatType(feat, data),
+            prerequisite: getFeatPrerequisites(feat, data),
             abilityIncrease: getFeatAbilityIncrease(feat),
             description: parseDescriptions('', feat.entries),
             reprint: parseReprint(feat),

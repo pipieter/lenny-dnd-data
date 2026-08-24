@@ -1,10 +1,21 @@
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
-import { get5eToolsUrl, getBestiaryUrl, getFeatsUrl, getImageUrl, getItemsUrl, getTablesUrl } from './urls';
+import {
+    get5eToolsUrl,
+    getActionsUrl,
+    getBestiaryUrl,
+    getCharCreationOptionUrl,
+    getFeatsUrl,
+    getImageUrl,
+    getItemsUrl,
+    getTablesUrl,
+    getTrapsUrl,
+} from './urls';
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { rawData } from './5etools-conversion/rawdata';
 import { Unit } from '../5etools-collector/types/common';
+import { Databank } from './data';
 
 export interface Range {
     type: 'range';
@@ -114,12 +125,44 @@ export function parseSpellLevel(level: number): string {
     return `Level ${level}`;
 }
 
-export function parseSpellSchool(school: string): string {
-    const parsed = rawData.getSpellSchoolName(school);
-    if (!parsed) {
-        throw `Unsupported spell school: '${school}'`;
-    }
-    return parsed;
+export function parseSpellSchool(school: string, data: Databank): string {
+    const raw = rawData.getSpellSchoolName(school);
+    if (raw && raw !== school) return raw;
+
+    const meta = data.metadata.spellSchools[school];
+    if (meta && meta !== school) return meta;
+
+    throw `Unsupported spell school: '${school}'`;
+}
+
+export function parseVehicleUpgradeType(upgrade: string, data: Databank) {
+    const raw = rawData.getVehicleUpgradeType(upgrade);
+    if (raw && raw !== upgrade) return raw;
+
+    const meta = data.metadata.vehicleUpgradeTypes[upgrade];
+    if (meta && meta !== upgrade) return meta;
+
+    throw `Unknown vehicle upgrade type key '${upgrade}'`;
+}
+
+export function parseOptionalFeatureType(type: string, data: Databank): string {
+    const raw = rawData.getOptionalFeatureTypeFullName(type);
+    if (raw !== type) return raw;
+
+    const meta = data.metadata.optionalFeatureTypes[type];
+    if (meta && meta !== type) return meta;
+
+    throw `Unknown optional feature type: ${type}`;
+}
+
+export function parseFeatCategory(category: string, data: Databank) {
+    const raw = rawData.getFeatCategoryName(category);
+    if (raw && raw !== category) return raw;
+
+    const meta = data.metadata.featCategories[category];
+    if (meta && meta !== category) return meta;
+
+    throw `Unknown feat category key '${category}'`;
 }
 
 export function parseAbilityScore(score: string): string {
@@ -538,20 +581,30 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             const source = description.source;
             let link = null;
             switch (tag) {
-                case 'item':
-                    link = getItemsUrl(name, source);
+                case 'action':
+                    link = getActionsUrl(name, source);
+                    break;
+                case 'charoption':
+                    link = getCharCreationOptionUrl(name, source);
                     break;
                 case 'creature':
                     link = getBestiaryUrl(name, source);
                     break;
-                case 'table':
-                    link = getTablesUrl(name, source);
+                case 'hazard':
+                    link = getTrapsUrl(name, source);
+                    break;
+                case 'item':
+                    link = getItemsUrl(name, source);
                     break;
                 case 'optfeature':
                     link = getFeatsUrl(name, source);
+                    break;
+                case 'table':
+                    link = getTablesUrl(name, source);
+                    break;
             }
 
-            if (!link) throw `Unsupported statblock ${tag}`;
+            if (!link) throw `Unsupported statblock ${tag} - ${description.name} (${description.source})`;
             return [`[See ${name}'s stats here](${link})`];
         }
         case 'refFeat': {
@@ -624,6 +677,10 @@ function parseTableRow(values: any[] | any): string[] {
     if (typeof values === 'object' && !Array.isArray(values)) {
         if (values.type === 'row') {
             values = values.row;
+        } else if (values.type === 'list') {
+            return values.items.map((item: string) => {
+                return `- ${cleanDNDText(item)}`;
+            });
         } else {
             throw `Unsupported row type ${values.type}`;
         }
@@ -665,8 +722,11 @@ function parseTableRow(values: any[] | any): string[] {
                 }
             } else if (value.type === 'item') {
                 // Item is similar to entries, except it has both the name and entries, and entries is more parseable
-                const name = cleanDNDText(value.name, true);
-                const entries = value.entries.map((entry: string) => cleanDNDText(entry, true));
+                const name = value.name ? cleanDNDText(value.name, true) : '';
+                const entries = value.entries.map((entry: string) => {
+                    if (typeof entry === 'string') return cleanDNDText(entry, true);
+                    return parseTableRow(entry);
+                });
                 const entry = entries.join('\n');
                 const combined = `${name}. ${entry}`;
                 cells.push(combined);
@@ -704,11 +764,11 @@ function parseTableRow(values: any[] | any): string[] {
     return cells;
 }
 
-export function parseDescriptionFromTable(description: any): DescriptionTable {
-    const title: string = description.caption || '';
+export function parseDescriptionFromTable(table: any): DescriptionTable {
+    const title: string = table.caption || '';
 
-    if (description.type === 'tableGroup') {
-        const tables = description.tables.map((table: any) => parseDescriptionFromTable(table).table);
+    if (table.type === 'tableGroup') {
+        const tables = table.tables.map((table: any) => parseDescriptionFromTable(table).table);
         return {
             name: title,
             type: DescriptionType.table,
@@ -717,10 +777,10 @@ export function parseDescriptionFromTable(description: any): DescriptionTable {
     }
 
     let headers: string[] | null = null;
-    if (description.colLabels) {
-        headers = description.colLabels.map(cleanDNDText);
-    } else if (description.colLabelRows) {
-        const colLabelRows: ColLabelRows = description.colLabelRows;
+    if (table.colLabels) {
+        headers = table.colLabels.map(cleanDNDText);
+    } else if (table.colLabelRows) {
+        const colLabelRows: ColLabelRows = table.colLabelRows;
         const expandedRows: string[][] = colLabelRows.map((row) =>
             row.flatMap((cell) => {
                 if (typeof cell === 'string') return [cell];
@@ -742,10 +802,8 @@ export function parseDescriptionFromTable(description: any): DescriptionTable {
         );
     }
 
-    const rows: string[][] = description.rows.map(parseTableRow);
-    const table: Table = { type: 'table', title, headers, rows };
-
-    return { name: title, type: DescriptionType.table, table: table };
+    const rows: string[][] = table.rows.map(parseTableRow);
+    return { name: title, type: DescriptionType.table, table: { type: 'table', title, headers, rows } };
 }
 
 export function parseDescriptions(name: string, descriptions: any[]): Description[] {
@@ -932,8 +990,12 @@ export function parsePrerequisite(prerequisite: any): string | null {
             }
             case 'level': {
                 const lvl = prerequisite.level.level;
-                const classname = prerequisite.level.class.name;
-                prerequisites.push(`Lv. ${lvl} ${classname}`);
+                let levelPre = `Lv. ${lvl}`;
+                if (prerequisite.level.class?.name) {
+                    const classname = prerequisite.level.class.name;
+                    levelPre += ` ${classname}`;
+                }
+                prerequisites.push(levelPre);
                 break;
             }
             case 'race': {
@@ -941,6 +1003,59 @@ export function parsePrerequisite(prerequisite: any): string | null {
                     return r.name;
                 });
                 prerequisites.push(joinStringsWithOr(races));
+                break;
+            }
+            case 'spell': {
+                const spells = prerequisite.spell.map((s: any) => {
+                    // string, ends with #c or #x (cantrip or spell)
+                    if (typeof s === 'string') {
+                        const parts = s.split('#');
+                        const addon = parts[1].endsWith('c') ? 'cantrip' : 'spell';
+                        return `${parts[0]} ${addon}`;
+                    }
+
+                    // in an object, we only care about the entrySummary
+                    if (s.entrySummary) {
+                        return s.entrySummary;
+                    }
+                    throw `Unsupported spell prerequisite: ${s}`;
+                });
+
+                prerequisites.push(joinStringsWithOr(spells, false));
+                break;
+            }
+            case 'item': {
+                const items = prerequisite.item.map((i: any) => {
+                    if (typeof i === 'string') return i;
+                    throw `Unsupported item prerequisite: ${i}`;
+                });
+                prerequisites.push(joinStringsWithOr(items, false));
+                break;
+            }
+            case 'pact': {
+                prerequisites.push(`Pact of the ${prerequisite.pact}`);
+                break;
+            }
+            case 'otherSummary': {
+                const otherSummary = cleanDNDText(prerequisite.otherSummary.entry, true);
+                prerequisites.push(otherSummary);
+                break;
+            }
+            case 'optionalfeature': {
+                const optFeats = prerequisite.optionalfeature.map((o: string) => {
+                    const parts = o.split('|');
+                    return title(parts[0]);
+                });
+                prerequisites.push(joinStringsWithOr(optFeats, false));
+                break;
+            }
+            case 'other': {
+                prerequisites.push(cleanDNDText(prerequisite.other));
+                break;
+            }
+            case 'patron': {
+                const patron = cleanDNDText(prerequisite.patron);
+                prerequisites.push(`${patron} patron`);
                 break;
             }
             default: {

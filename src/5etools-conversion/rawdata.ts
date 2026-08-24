@@ -39,6 +39,10 @@ class RawData {
         return this.parser?.SOURCE_JSON_TO_FULL?.[sourceId] || sourceId;
     }
 
+    getOptionalFeatureTypeFullName(optFeatType: string): string {
+        return this.parser?.OPT_FEATURE_TYPE_TO_FULL?.[optFeatType] || optFeatType;
+    }
+
     getSourcePublishDate(sourceId: string): string | null {
         return this.parser?.SOURCE_JSON_TO_DATE?.[sourceId] || null;
     }
@@ -77,6 +81,14 @@ class RawData {
 
         const name = this.parser?.DMGTYPE_JSON_TO_FULL?.[damage] || damage;
         return capitalize(name);
+    }
+
+    getFeatCategoryName(category: string): string {
+        return this.parser?.FEAT_CATEGORY_TO_FULL?.[category] || category;
+    }
+
+    getVehicleUpgradeType(upgrade: string): string {
+        return this.parser?.VEHICLE_UPGRADE_TYPE_TO_FULL?.[upgrade] || upgrade;
     }
 
     getSpellSchoolName(school: string | undefined | null): string | null {

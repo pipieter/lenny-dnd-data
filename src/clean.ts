@@ -135,6 +135,15 @@ function actSaveSuccessOrFail(text: string, noFormat: boolean): string {
     return text;
 }
 
+function actTrigger(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('actTrigger', 0), 'Trigger:');
+    } else {
+        text = text.replaceAll(pattern('actTrigger', 0), '*Trigger*:');
+    }
+    return text;
+}
+
 function atk(text: string, noFormat: boolean): string {
     // converterutils-creature.js:584
     const replacements = new Map<string, string>([
@@ -158,6 +167,8 @@ function atk(text: string, noFormat: boolean): string {
         ['{@atkr ms}', 'Melee Spell Attack Roll:'],
         ['{@atkr r}', 'Ranged Attack Roll:'],
         ['{@atkr m,r}', 'Melee or Ranged Attack Roll:'],
+        ['{@atkr m,s}', 'Melee or Spell Attack Roll:'],
+        ['{@atkr rs}', 'Ranged Spell Attack Roll:'],
         ['{@atk g}', 'Magical Attack:'],
     ]);
 
@@ -716,6 +727,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         actSaveFailBy,
         actSaveSuccess,
         actSaveSuccessOrFail,
+        actTrigger,
         atk,
         action,
         adventure,
@@ -806,6 +818,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     const stack: number[] = [];
     let i = 0;
+
     while (i < text.length) {
         if (text[i] === '{') {
             stack.push(i);

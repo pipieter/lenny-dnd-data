@@ -26,6 +26,49 @@ export function write(path: string, contents: object[]) {
     writeFileSync(path, JSON.stringify(contents, null, 1), 'utf-8');
 }
 
+export class MetaData {
+    // TODO - Currently metadata is retained globally, however overlapping keys are possible when homebrew content is enabled.
+    // E.g. in optionalFeatureTypes, "CO" can have 3 different meanings (Concoction, Channeling Option, or Companion Origin) depending on which source it's from.
+    public readonly vehicleUpgradeTypes: { [key: string]: string } = {};
+    public readonly featCategories: { [key: string]: string } = {};
+    public readonly spellSchools: { [key: string]: string } = {};
+    public readonly optionalFeatureTypes: { [key: string]: string } = {};
+    // The items below are not used in the code *yet*, and should be TODO
+    public readonly psionicTypes: { [key: string]: string } = {};
+
+    add(data: any) {
+        const meta = data?._meta;
+        if (!meta) return;
+
+        // Exceptions where the metadata is {[key: string]: object}
+        const objectMapping: { [key: string]: string } = {
+            spellSchools: 'full', // From each spellSchool object, take data from the 'full' key.
+            psionicTypes: 'full',
+        };
+
+        for (const [key, value] of Object.entries(meta)) {
+            if (!(key in this) || !value) continue;
+
+            const targetKey = key as keyof MetaData;
+            const target = this[targetKey];
+            if (typeof target !== 'object' || target === null) continue;
+            const subProp = objectMapping[key];
+
+            if (!subProp) {
+                Object.assign(this[targetKey], value);
+                continue;
+            }
+
+            // Edge case: extract sub-property using objectMapping
+            for (const [k, v] of Object.entries(value)) {
+                if (typeof v === 'object' && v !== null && subProp in v) {
+                    target[k] = v[subProp];
+                }
+            }
+        }
+    }
+}
+
 export class Databank {
     // Spells
     public readonly spell: any[] = [];
@@ -84,6 +127,7 @@ export class Databank {
     public readonly backgroundFluff: any[] = [];
     // Feats
     public readonly feat: Feat[] = [];
+    public readonly optionalfeature: any[] = [];
     // Skills
     public readonly skill: Skill[] = [];
     // Names
@@ -95,6 +139,7 @@ export class Databank {
     // Vehicles
     public readonly vehicle: Vehicle[] = [];
     public readonly vehicleUpgrade: VehicleUpgrade[] = [];
+    public readonly vehicleFluff: any = [];
     // Objects
     public readonly object: DNDObject[] = [];
     public readonly objectFluff: any[] = [];
@@ -108,6 +153,8 @@ export class Databank {
     public readonly lifeClass: LifeClass[] = [];
     public readonly lifeBackground: LifeBackground[] = [];
     public readonly lifeTrinket: any[] = [];
+
+    public readonly metadata = new MetaData();
 
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
@@ -220,6 +267,7 @@ export class OfficialDatabank extends Databank {
         this.add('magicvariants.json');
         this.add('names.json');
         this.add('objects.json');
+        this.add('optionalfeatures.json');
         this.add('races.json');
         this.add('senses.json');
         this.add('skills.json');
@@ -285,14 +333,14 @@ export class PartneredDatabank extends Databank {
 
         for (const datum of sources) {
             const source = datum['json'];
-            if (source === 'TLotRR') return; // TODO Re-enable, currently disabled due to instability.
-
             const name = datum['full'] ?? source;
             const abbreviation = datum['abbreviation'] ?? source;
             const published = datum['dateReleased'] ?? null;
             const legacy = isClassic;
             this.sourceData[source] = { name, abbreviation, published, source, category: 'partnered', legacy };
         }
+
+        this.metadata.add(data);
 
         const prefixesToIgnore = ['foundry'];
         const keysToIgnore = [
@@ -307,7 +355,6 @@ export class PartneredDatabank extends Databank {
             'makebrewCreatureTrait',
             'citation',
             // The items below are not implemented *yet*, and should be TODO
-            'optionalfeature',
             'reward',
             'rewardFluff',
             'deck',
