@@ -29,11 +29,13 @@ export function write(path: string, contents: object[]) {
 }
 
 export class MetaData {
+    // TODO - Currently metadata is retained globally, however overlapping keys are possible when homebrew content is enabled.
+    // E.g. in optionalFeatureTypes, "CO" can have 3 different meanings (Concoction, Channeling Option, or Companion Origin) depending on which source it's from.
     public readonly vehicleUpgradeTypes: { [key: string]: string } = {};
     public readonly featCategories: { [key: string]: string } = {};
     public readonly spellSchools: { [key: string]: string } = {};
-    // The items below are not used in the code *yet*, and should be TODO
     public readonly optionalFeatureTypes: { [key: string]: string } = {};
+    // The items below are not used in the code *yet*, and should be TODO
     public readonly psionicTypes: { [key: string]: string } = {};
 
     add(data: any) {
