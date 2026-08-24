@@ -1,3 +1,4 @@
+import { rawData } from '../5etools-conversion/rawdata';
 import { Databank } from '../data';
 import { Description, parseDescriptions, parsePrerequisite, parseReprint, ReprintData } from '../parser';
 import { getOptionalFeaturesUrl } from '../urls';
@@ -14,27 +15,6 @@ export interface ParsedOptionalFeature {
 }
 
 const OptionalFeatureTypeMap: { [key: string]: string } = {
-    AI: 'Artificer Infusion',
-    ED: 'Elemental Discipline',
-    EI: 'Eldritch Invocation',
-    MM: 'Metamagic',
-    MV: 'Maneuver',
-    'MV:B': 'Maneuver, Battle Master',
-    'MV:C2-UA': 'Maneuver, Cavalier V2 (UA)',
-    'AS:V1-UA': 'Arcane Shot, V1 (UA)',
-    'AS:V2-UA': 'Arcane Shot, V2 (UA)',
-    AS: 'Arcane Shot',
-    OTH: 'Other',
-    'FS:F': 'Fighting Style; Fighter',
-    'FS:B': 'Fighting Style; Bard',
-    'FS:P': 'Fighting Style; Paladin',
-    'FS:R': 'Fighting Style; Ranger',
-    PB: 'Pact Boon',
-    OR: 'Onomancy Resonant',
-    RN: 'Rune Knight Rune',
-    AF: 'Alchemical Formula',
-    TT: "Traveler's Trick",
-    RP: 'Renown Perk',
     // Partnered
     'MV:G': 'Maneuver, Gunslinger',
     ItdBoon: 'Interdict Boon',
@@ -125,6 +105,8 @@ function parseOptionalFeatureType(types: string[] | string): string {
     types = variadic(types);
 
     const parsed = types.map((t: string) => {
+        const raw = rawData.getOptionalFeatureTypeFullName(t);
+        if (raw !== t) return raw;
         if (t in OptionalFeatureTypeMap) return OptionalFeatureTypeMap[t];
         throw `Unknown optional feature type: ${t}`;
     });
