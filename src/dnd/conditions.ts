@@ -1,3 +1,4 @@
+import { Fluff } from '../../5etools-collector/types/fluff';
 import { Databank } from '../data';
 import { Description, parseDescriptions, parseImageUrl, parseReprint, ReprintData } from '../parser';
 import { getConditionsDiseasesUrl } from '../urls';
@@ -24,8 +25,8 @@ function getConditions(type: string, data: Databank): ParsedCondition[] {
             reprint: parseReprint(entry),
         };
 
-        const fluff = data.search(`${type}Fluff`, entry.name, entry.source);
-        if (fluff && fluff.images) {
+        const fluff = data.search<Fluff>(`${type}Fluff`, entry.name, entry.source);
+        if (fluff?.images) {
             result.image = parseImageUrl(fluff.images);
         }
 

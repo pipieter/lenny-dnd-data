@@ -3,6 +3,7 @@ import { crToProficiencyBonus } from './parser';
 import { ascSortLower } from './sort';
 import { rawData } from './rawdata';
 import { title } from '../parser';
+import { Base } from '../../5etools-collector/types/base';
 
 // TODO _templates (e.g. Zox Clammersham). This will most likely require data going global
 
@@ -316,7 +317,7 @@ function addPreserve(copy: any, parent: any, preserve: any): void {
     }
 }
 
-export function handleCopy(base: any, entries: any[]): any {
+export function handleCopy<T extends Base>(base: T, entries: any[]): T {
     let copy = structuredClone(base); // Fields will be changed, so making a deep clone is important for future usages
 
     if (!copy._copy) return copy;
@@ -345,7 +346,7 @@ export function handleCopy(base: any, entries: any[]): any {
     return copy;
 }
 
-export function handleVersions(base: any): any[] {
+export function handleVersions<T extends Base>(base: T): T[] {
     base = structuredClone(base);
     if (!base._versions) return [];
 

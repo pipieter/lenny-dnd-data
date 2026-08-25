@@ -12,13 +12,16 @@ import { rawData } from './5etools-conversion/rawdata';
 import { ParsedSource } from './dnd/sources';
 
 import { Action } from '../5etools-collector/types/action';
+import { Background } from '../5etools-collector/types/background';
 import { Boon } from '../5etools-collector/types/boon';
 import { Cult } from '../5etools-collector/types/cult';
 import { Deity } from '../5etools-collector/types/deity';
+import { Fluff } from '../5etools-collector/types/fluff';
 import { Hazard } from '../5etools-collector/types/hazard';
 import { Table } from '../5etools-collector/types/table';
 import { Skill } from '../5etools-collector/types/skill';
 import { Spell } from '../5etools-collector/types/spell';
+import { Language } from '../5etools-collector/types/language';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -100,8 +103,8 @@ export class Databank {
     public readonly monster: any[] = [];
     public readonly monsterFluff: any[] = [];
     // Languages
-    public readonly language: any[] = [];
-    public readonly languageFluff: any[] = [];
+    public readonly language: Language[] = [];
+    public readonly languageFluff: Fluff[] = [];
     public readonly languageScript: any[] = [];
     // Classes
     public readonly class: any[] = [];
@@ -127,8 +130,8 @@ export class Databank {
     public readonly table: Table[] = [];
     public readonly tableGroup: any[] = [];
     // Backgrounds
-    public readonly background: any[] = [];
-    public readonly backgroundFluff: any[] = [];
+    public readonly background: Background[] = [];
+    public readonly backgroundFluff: Fluff[] = [];
     // Feats
     public readonly feat: Feat[] = [];
     public readonly optionalfeature: any[] = [];
@@ -200,7 +203,7 @@ export class Databank {
         }
     }
 
-    public search(key: string, name: string, source: string): any | undefined {
+    public search<T extends any>(key: string, name: string, source: string): T | undefined {
         const entries = this.get(key);
         return entries.find((entry) => entry.name === name && entry.source === source);
     }

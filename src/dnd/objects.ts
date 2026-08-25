@@ -1,3 +1,4 @@
+import { Fluff } from '../../5etools-collector/types/fluff';
 import { Databank } from '../data';
 import { Description, parseDescriptions, parseImageUrl, parseObjectSizes, parseReprint, ReprintData } from '../parser';
 import { getObjectsUrl, getObjectTokenUrl } from '../urls';
@@ -59,8 +60,8 @@ function parseObjectTokenURL(obj: DNDObject): string | null {
 }
 
 function getObjectImage(obj: DNDObject, data: Databank): string | null {
-    const fluff = data.search('objectFluff', obj.name, obj.source);
-    if (fluff && fluff.images) {
+    const fluff = data.search<Fluff>('objectFluff', obj.name, obj.source);
+    if (fluff?.images) {
         return parseImageUrl(fluff.images);
     }
     return null;

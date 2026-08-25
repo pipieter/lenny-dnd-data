@@ -1,23 +1,10 @@
+import { Fluff } from '../../5etools-collector/types/fluff';
+import { Language } from '../../5etools-collector/types/language';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
 import { getImageUrl, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
-
-interface Language {
-    name: string;
-    source: string;
-    type?: string;
-    typicalSpeakers?: string[];
-    script?: string;
-    entries: any[];
-}
-
-interface LanguageFluff {
-    name: string;
-    source: string;
-    images: any[];
-}
 
 export interface ParsedLanguage {
     name: string;
@@ -50,8 +37,8 @@ function getLanguageType(language: Language): string {
 }
 
 function getLanguageImage(language: Language, data: Databank): string | null {
-    const fluff = data.search('languageFluff', language.name, language.source);
-    if (fluff && fluff.images.length) {
+    const fluff = data.search<Fluff>('languageFluff', language.name, language.source);
+    if (fluff?.images) {
         return getImageUrl(fluff.images[0].href.path);
     }
     return null;
