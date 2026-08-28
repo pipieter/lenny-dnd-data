@@ -1,37 +1,9 @@
 import { Fluff } from '../../5etools-collector/types/fluff';
 import { Databank } from '../data';
 import { Description, parseDescriptions, parseImageUrl, parseObjectSizes, parseReprint, ReprintData } from '../parser';
-import { getObjectsUrl, getObjectTokenUrl } from '../urls';
+import { getImageUrlFromFluff, getObjectsUrl, getObjectTokenUrl } from '../urls';
 
-export interface DNDObject {
-    name: string;
-    source: string;
-    page: number;
-    reprintedAs?: string[];
-    size: string[];
-    objectType: string; // Seemingly not used by 5e.tools, always shows 'object'.
-    ac: number;
-    hp: number;
-    speed?: number;
-    str?: number;
-    dex?: number;
-    con?: number;
-    int?: number;
-    wis?: number;
-    cha?: number;
-    immune?: string[];
-    conditionImmune?: string[];
-    entries: (string | object)[];
-    actionEntries?: (string | object)[];
-    tokenCredit?: string;
-    altArt?: object[];
-    token?: {
-        name: string;
-        source: string;
-    };
-    hasToken?: boolean;
-    hasFluffImages?: boolean;
-}
+import { DNDObject } from '../../5etools-collector/types/object';
 
 export interface ParsedDNDObject {
     name: string;
@@ -45,7 +17,7 @@ export interface ParsedDNDObject {
 }
 
 function getObjectSubtitle(obj: DNDObject): string {
-    return `${parseObjectSizes(obj.size)} object`;
+    return `${parseObjectSizes(obj.size ?? [])} object`;
 }
 
 function parseObjectTokenURL(obj: DNDObject): string | null {
@@ -61,8 +33,8 @@ function parseObjectTokenURL(obj: DNDObject): string | null {
 
 function getObjectImage(obj: DNDObject, data: Databank): string | null {
     const fluff = data.search<Fluff>('objectFluff', obj.name, obj.source);
-    if (fluff?.images) {
-        return parseImageUrl(fluff.images);
+    if (fluff) {
+        return getImageUrlFromFluff(fluff);
     }
     return null;
 }

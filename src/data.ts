@@ -4,7 +4,6 @@ import { Rule } from './dnd/rules';
 import { Feat } from './dnd/feats';
 import { SpeciesName } from './dnd/names';
 import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
-import { DNDObject } from './dnd/objects';
 import { existsSync, lstatSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { LifeBackground, LifeClass } from './dnd/life';
@@ -31,6 +30,7 @@ import {
     ItemType,
     ItemTypeAdditionalEntries,
 } from '../5etools-collector/types/item';
+import { DNDObject } from '../5etools-collector/types/object';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -158,7 +158,7 @@ export class Databank {
     public readonly vehicleFluff: any = [];
     // Objects
     public readonly object: DNDObject[] = [];
-    public readonly objectFluff: any[] = [];
+    public readonly objectFluff: Fluff[] = [];
     // Deities
     public readonly deity: Deity[] = [];
     // Cults
