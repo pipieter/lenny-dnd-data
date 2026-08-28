@@ -111,7 +111,7 @@ export class Databank {
     public readonly class: Class[] = [];
     public readonly classFeature: ClassFeature[] = [];
     public readonly subclass: Subclass[] = [];
-    public readonly subclassFeature: ClassFeature[] = [];
+    public readonly subclassFeature: SubclassFeature[] = [];
     public readonly classFluff: Fluff[] = [];
     public readonly subclassFluff: Fluff[] = [];
     // Rules
@@ -204,9 +204,9 @@ export class Databank {
         }
     }
 
-    public search<T extends any>(key: string, name: string, source: string): T | undefined {
+    public search<T>(key: string, name: string, source: string): T | undefined {
         const entries = this.get(key);
-        return entries.find((entry) => entry.name === name && entry.source === source);
+        return entries.find((entry) => entry.name === name && entry.source === source) as T;
     }
 
     public getAllSources(): Set<string> {

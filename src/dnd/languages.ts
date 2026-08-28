@@ -3,7 +3,7 @@ import { Language } from '../../5etools-collector/types/language';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
-import { getImageUrl, getImageUrlFromFluff, getLanguagesUrl } from '../urls';
+import { getImageUrlFromFluff, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
 export interface ParsedLanguage {

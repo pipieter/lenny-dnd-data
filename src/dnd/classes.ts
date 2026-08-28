@@ -30,7 +30,6 @@ import {
     SubclassFeature,
 } from '../../5etools-collector/types/class';
 import {
-    ArmorProficiency,
     ClassProficiencies,
     ClassProficiency,
     SkillProficiency,
@@ -280,7 +279,7 @@ function parseClassArmorProficiencies(proficiency: (string | ClassProficiency)[]
     const armors: string[] = [];
     let hasShields = false;
 
-    for (let armorType of proficiency) {
+    for (const armorType of proficiency) {
         const armor = getClassProficiencyValue(armorType);
         if (armor === 'shield') {
             hasShields = true;
@@ -622,7 +621,7 @@ function parseClassResources(data: Class): string[] {
                 if (label.toLowerCase().includes('spell')) continue;
                 if (label.toLowerCase().includes('cantrip')) continue;
 
-                let value = parseClassResourceValue(row[i]);
+                const value = parseClassResourceValue(row[i]);
                 text.push(`${value} ${label}`);
             }
 
