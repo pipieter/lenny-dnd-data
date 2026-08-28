@@ -2,7 +2,7 @@ import { Deity } from '../../5etools-collector/types/deity';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { Description, DescriptionType, parseAlignments, parseDescriptions, title } from '../parser';
-import { getDeitiesUrl, getImageUrl } from '../urls';
+import { getDeitiesUrl, getImageUrl, getImageUrlFromEntryImage } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
 export interface ParsedDeity {
@@ -52,7 +52,7 @@ export function getDeities(data: Databank): ParsedDeity[] {
             source: deity.source,
             subtitle: deity.title ? title(deity.title) : `${deity.pantheon} Deity`,
             url: getDeitiesUrl(deity.name, deity.source, deity.pantheon),
-            imgUrl: deity.symbolImg ? getImageUrl(deity.symbolImg.href.path) : null,
+            imgUrl: deity.symbolImg ? getImageUrlFromEntryImage(deity.symbolImg) : null,
             inlineDescription: parseDeityInlineDescriptions(deity),
             description: deity.entries ? parseDescriptions('', deity.entries) : [],
         };

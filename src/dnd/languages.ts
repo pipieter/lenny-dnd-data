@@ -3,7 +3,7 @@ import { Language } from '../../5etools-collector/types/language';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
-import { getImageUrl, getLanguagesUrl } from '../urls';
+import { getImageUrl, getImageUrlFromFluff, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
 export interface ParsedLanguage {
@@ -38,8 +38,8 @@ function getLanguageType(language: Language): string {
 
 function getLanguageImage(language: Language, data: Databank): string | null {
     const fluff = data.search<Fluff>('languageFluff', language.name, language.source);
-    if (fluff?.images) {
-        return getImageUrl(fluff.images[0].href.path);
+    if (fluff) {
+        return getImageUrlFromFluff(fluff);
     }
     return null;
 }

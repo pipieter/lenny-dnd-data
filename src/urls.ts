@@ -1,3 +1,6 @@
+import { EntryImage } from '../5etools-collector/types/entry';
+import { Fluff } from '../5etools-collector/types/fluff';
+
 function removeAccents(str: string): string {
     str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     str = str.replaceAll('"', '');
@@ -27,6 +30,19 @@ export function get5eToolsUrl(page: string): string {
 
 export function getImageUrl(path: string): string {
     return encodeURI(`https://5e.tools/img/${path}`);
+}
+
+export function getImageUrlFromFluff(fluff: Fluff): string | null {
+    if (!fluff.images) return null;
+    return getImageUrlFromEntryImage(fluff.images[0]);
+}
+
+export function getImageUrlFromEntryImage(image: EntryImage) {
+    if (image.href.type === 'internal') {
+        return getImageUrl(image.href.path);
+    } else {
+        return encodeURI(image.href.url);
+    }
 }
 
 export function getAudioUrl(path: string): string {
