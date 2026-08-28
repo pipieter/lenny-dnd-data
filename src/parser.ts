@@ -14,7 +14,7 @@ import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { rawData } from './5etools-conversion/rawdata';
-import { ClassProficiency, Unit } from '../5etools-collector/types/base';
+import { ClassProficiency, Resist, Unit } from '../5etools-collector/types/base';
 import { Databank } from './data';
 import { ClassResourceValue } from '../5etools-collector/types/class';
 
@@ -1180,4 +1180,14 @@ export function parseReprint(data: any): ReprintData | null {
         source,
         tag: reprint.tag ?? null,
     };
+}
+
+export function parseResist(resist: Resist): string {
+    if (typeof resist === 'string') return resist;
+
+    if ('special' in resist) {
+        return resist.special;
+    }
+
+    return joinStringsWithAnd(resist.choose?.from ?? []);
 }

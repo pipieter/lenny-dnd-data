@@ -29,11 +29,7 @@ import {
     Subclass,
     SubclassFeature,
 } from '../../5etools-collector/types/class';
-import {
-    ClassProficiencies,
-    ClassProficiency,
-    SkillProficiency,
-} from '../../5etools-collector/types/base';
+import { ClassProficiencies, ClassProficiency, SkillProficiency } from '../../5etools-collector/types/base';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ParsedClassFeature[];

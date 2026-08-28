@@ -20,7 +20,7 @@ import { Fluff } from '../5etools-collector/types/fluff';
 import { Hazard } from '../5etools-collector/types/hazard';
 import { Table } from '../5etools-collector/types/table';
 import { Skill } from '../5etools-collector/types/skill';
-import { Spell } from '../5etools-collector/types/spell';
+import { Spell, SpellSource } from '../5etools-collector/types/spell';
 import { Language } from '../5etools-collector/types/language';
 import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-collector/types/class';
 
@@ -80,8 +80,8 @@ export class MetaData {
 export class Databank {
     // Spells
     public readonly spell: Spell[] = [];
-    public readonly spellFluff: any[] = [];
-    public readonly spellSource: any[] = [];
+    public readonly spellFluff: Fluff[] = [];
+    public readonly spellSource: SpellSource[] = [];
     // Items
     public readonly item: any[] = [];
     public readonly baseitem: any[] = [];

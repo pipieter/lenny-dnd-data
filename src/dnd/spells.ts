@@ -10,6 +10,7 @@ import {
     parseMaterialComponents,
     parseRange,
     parseReprint,
+    parseResist,
     parseSpellDamage,
     parseSpellLevel,
     parseSpellSchool,
@@ -17,6 +18,8 @@ import {
 } from '../parser';
 import { getSpellsUrl } from '../urls';
 import { Databank } from '../data';
+import { Spell, SpellSource } from '../../5etools-collector/types/spell';
+import { Fluff } from '../../5etools-collector/types/fluff';
 
 interface Caster {
     name: string;
@@ -56,7 +59,7 @@ export interface ParsedSpell {
     scaledDamage: SpellDamage[] | null;
 }
 
-function getSpellImage(fluffs: any[], name: string, source: string): string | null {
+function getSpellImage(fluffs: Fluff[], name: string, source: string): string | null {
     for (const fluff of fluffs) {
         if (fluff.name === name && fluff.source === source && fluff.images) {
             return parseImageUrl(fluff.images);
@@ -65,26 +68,26 @@ function getSpellImage(fluffs: any[], name: string, source: string): string | nu
     return null;
 }
 
-function getSpellDescription(spell: any): Description[] {
-    const descriptions = parseDescriptions('', spell.entries);
+function getSpellDescription(spell: Spell): Description[] {
+    const descriptions = parseDescriptions('', spell.entries ?? []);
     if (spell.entriesHigherLevel) {
         for (const entry of spell.entriesHigherLevel) {
             // Specific case for LasterLlama's Conjure Aberration
             // TODO create a parseDescription function that handles a description immediately
             // Without relying on entry.name and entry.entries
-            if (entry.type === 'table') {
-                descriptions.push(parseDescriptionFromTable(entry));
-            } else if (typeof entry === 'string') {
+            if (typeof entry === 'string') {
                 descriptions.push({ name: '', type: DescriptionType.text, value: entry });
-            } else {
-                descriptions.push(...parseDescriptions(entry.name, entry.entries));
+            } else if (entry.type === 'table') {
+                descriptions.push(parseDescriptionFromTable(entry));
+            } else if ('entries' in entry) {
+                descriptions.push(...parseDescriptions(entry.name ?? '', entry.entries ?? []));
             }
         }
     }
     return descriptions;
 }
 
-function getCasters(spell: any, sources: any[]): any[] {
+function getCasters(spell: Spell, sources: SpellSource[]): Caster[] {
     const fromSpell = spell.classes?.fromClassList || [];
     const fromSource = sources
         .filter((source) => source.spellName === spell.name && source.spellSource === spell.source)
@@ -107,12 +110,12 @@ function getCasters(spell: any, sources: any[]): any[] {
     return casters;
 }
 
-function getSpell(spell: any, fluffs: any[], sources: any, data: Databank): ParsedSpell {
+function getSpell(spell: Spell, fluffs: Fluff[], sources: SpellSource[], data: Databank): ParsedSpell {
     return {
         name: spell.name,
         source: spell.source,
         level: parseSpellLevel(spell.level),
-        school: parseSpellSchool(spell.school, data),
+        school: parseSpellSchool(spell.school ?? 'UNKNOWN', data),
         castingTime: parseCastingTime(spell.time, spell.meta),
         range: parseRange(spell.range),
         components: parseComponents(spell.components),
@@ -124,9 +127,9 @@ function getSpell(spell: any, fluffs: any[], sources: any, data: Databank): Pars
         classes: getCasters(spell, sources),
         reprint: parseReprint(spell),
         damageInflict: spell.damageInflict ?? [],
-        damageResist: spell.damageResist ?? [],
-        damageVulnerable: spell.damageVulnerable ?? [],
-        damageImmune: spell.damageImmune ?? [],
+        damageResist: (spell.damageResist ?? []).map(parseResist),
+        damageVulnerable: (spell.damageVulnerable ?? []).map(parseResist),
+        damageImmune: (spell.damageImmune ?? []).map(parseResist),
         conditionInflict: spell.conditionInflict ?? [],
         conditionImmune: spell.conditionImmune ?? [],
         savingThrow: spell.savingThrow ?? [],
