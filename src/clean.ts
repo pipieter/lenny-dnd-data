@@ -183,6 +183,9 @@ function atk(text: string, noFormat: boolean): string {
         text = text.replaceAll(pattern, replace);
     }
 
+    // Normal cases, e.g. {@atk +4}
+    text = text.replaceAll(pattern('atk', 1), '$1');
+
     return text;
 }
 

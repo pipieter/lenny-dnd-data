@@ -17,6 +17,7 @@ import { rawData } from './5etools-conversion/rawdata';
 import { ClassProficiency, Resist, Unit } from '../5etools-collector/types/base';
 import { Databank } from './data';
 import { ClassResourceValue } from '../5etools-collector/types/class';
+import { EntryImage } from '../5etools-collector/types/entry';
 
 export interface Range {
     type: 'range';
@@ -108,14 +109,17 @@ const AttackAbbrMap = new Map([
     ['m,r', 'Melee or Ranged Attack Roll'],
     ['g', 'Magical Attack'],
 ]);
-export function parseImageUrl(data: any[]): string | null {
+
+export function parseImageUrl(data: EntryImage[]): string | null {
     for (const datum of data) {
         if (datum.type != 'image') continue;
 
         const href = datum.href;
-        if (href.type == 'internal') return getImageUrl(href.path);
-        else if (href.type == 'external') return href.path as string;
-        else throw `Unknown image href type '${href.type}'`;
+        if (href.type == 'internal') {
+            return getImageUrl(href.path);
+        } else if (href.type == 'external') {
+            return encodeURI(href.url);
+        }
     }
 
     return null;
@@ -941,7 +945,7 @@ export function parseClassResourceValue(value: ClassResourceValue): string {
     }
 }
 
-export function parseItemValue(value: number | undefined): string | null {
+export function parseItemValue(value: number | null | undefined): string | null {
     if (!value) return null;
 
     const gp = Math.floor(value / 100);

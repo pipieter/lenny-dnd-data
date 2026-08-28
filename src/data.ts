@@ -23,6 +23,14 @@ import { Skill } from '../5etools-collector/types/skill';
 import { Spell, SpellSource } from '../5etools-collector/types/spell';
 import { Language } from '../5etools-collector/types/language';
 import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-collector/types/class';
+import {
+    Item,
+    ItemEntry,
+    ItemMastery,
+    ItemProperty,
+    ItemType,
+    ItemTypeAdditionalEntries,
+} from '../5etools-collector/types/item';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -83,16 +91,16 @@ export class Databank {
     public readonly spellFluff: Fluff[] = [];
     public readonly spellSource: SpellSource[] = [];
     // Items
-    public readonly item: any[] = [];
-    public readonly baseitem: any[] = [];
+    public readonly item: Item[] = [];
+    public readonly baseitem: Item[] = [];
     public readonly itemGroup: any[] = [];
-    public readonly itemProperty: any[] = [];
-    public readonly itemType: any[] = [];
-    public readonly itemTypeAdditionalEntries: any[] = [];
-    public readonly itemEntry: any[] = [];
-    public readonly itemMastery: any[] = [];
+    public readonly itemProperty: ItemProperty[] = [];
+    public readonly itemType: ItemType[] = [];
+    public readonly itemTypeAdditionalEntries: ItemTypeAdditionalEntries[] = [];
+    public readonly itemEntry: ItemEntry[] = [];
+    public readonly itemMastery: ItemMastery[] = [];
     public readonly magicvariant: any[] = [];
-    public readonly itemFluff: any[] = [];
+    public readonly itemFluff: Fluff[] = [];
     // Conditions
     public readonly condition: any[] = [];
     public readonly status: any[] = [];
@@ -206,7 +214,11 @@ export class Databank {
 
     public search<T>(key: string, name: string, source: string): T | undefined {
         const entries = this.get(key);
-        return entries.find((entry) => entry.name === name && entry.source === source) as T;
+        return entries.find(
+            (entry) =>
+                entry.name.toLocaleLowerCase() === name.toLocaleLowerCase() &&
+                entry.source.toLocaleLowerCase() === source.toLocaleLowerCase()
+        ) as T;
     }
 
     public getAllSources(): Set<string> {
@@ -389,6 +401,7 @@ export class PartneredDatabank extends Databank {
         // Load in some data from the official content
         // The data from the official sources is later removed by ParsedDatabank.removeSources
         const entriesToCopy = [
+            'baseitem',
             'itemType',
             'itemGroup',
             'itemProperty',
