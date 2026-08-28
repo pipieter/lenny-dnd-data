@@ -14,8 +14,9 @@ import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { rawData } from './5etools-conversion/rawdata';
-import { Unit } from '../5etools-collector/types/base';
+import { ClassProficiency, Unit } from '../5etools-collector/types/base';
 import { Databank } from './data';
+import { ClassResourceValue } from '../5etools-collector/types/class';
 
 export interface Range {
     type: 'range';
@@ -916,9 +917,9 @@ export function parseCreatureSummonSpell(spell: string | null): string | null {
     return spell.split('|', 1)[0];
 }
 
-export function parseClassResourceValue(value: any): string {
+export function parseClassResourceValue(value: ClassResourceValue): string {
     if (typeof value === 'number') return `${value}`;
-    if (typeof value === 'string') return value;
+    if (typeof value === 'string') return cleanDNDText(value);
 
     switch (value.type) {
         case 'bonus': {
@@ -935,7 +936,7 @@ export function parseClassResourceValue(value: any): string {
             return `${sign}${value.value} ft.`;
         }
         default: {
-            throw `Unsupported classTableGroups row-type ${value.type}`;
+            throw `Unsupported classTableGroups row-type ${value}`;
         }
     }
 }
@@ -1114,7 +1115,7 @@ export function parseSkillProficiency(skillProficiencies: any[] | undefined): Pr
     };
 }
 
-export function parseProficiencyList(profData: any[]): string[] {
+export function parseClassProficiencyList(profData: (string | ClassProficiency)[]): string[] {
     const result: string[] = [];
     for (const index in profData) {
         // Index is used since iterating with 'of' breaks in some cases.

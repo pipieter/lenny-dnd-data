@@ -22,6 +22,7 @@ import { Table } from '../5etools-collector/types/table';
 import { Skill } from '../5etools-collector/types/skill';
 import { Spell } from '../5etools-collector/types/spell';
 import { Language } from '../5etools-collector/types/language';
+import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-collector/types/class';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -107,12 +108,12 @@ export class Databank {
     public readonly languageFluff: Fluff[] = [];
     public readonly languageScript: any[] = [];
     // Classes
-    public readonly class: any[] = [];
-    public readonly classFeature: any[] = [];
-    public readonly subclass: any[] = [];
-    public readonly subclassFeature: any[] = [];
-    public readonly classFluff: any[] = [];
-    public readonly subclassFluff: any[] = [];
+    public readonly class: Class[] = [];
+    public readonly classFeature: ClassFeature[] = [];
+    public readonly subclass: Subclass[] = [];
+    public readonly subclassFeature: ClassFeature[] = [];
+    public readonly classFluff: Fluff[] = [];
+    public readonly subclassFluff: Fluff[] = [];
     // Rules
     public readonly variantrule: Rule[] = [];
     public readonly sense: any[] = [];
