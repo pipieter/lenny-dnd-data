@@ -29,6 +29,7 @@ import {
     ItemProperty,
     ItemType,
     ItemTypeAdditionalEntries,
+    MagicVariant,
 } from '../5etools-collector/types/item';
 import { DNDObject } from '../5etools-collector/types/object';
 
@@ -99,15 +100,15 @@ export class Databank {
     public readonly itemTypeAdditionalEntries: ItemTypeAdditionalEntries[] = [];
     public readonly itemEntry: ItemEntry[] = [];
     public readonly itemMastery: ItemMastery[] = [];
-    public readonly magicvariant: any[] = [];
+    public readonly magicvariant: MagicVariant[] = [];
     public readonly itemFluff: Fluff[] = [];
     // Conditions
     public readonly condition: any[] = [];
     public readonly status: any[] = [];
     public readonly disease: any[] = [];
-    public readonly conditionFluff: any[] = [];
-    public readonly statusFluff: any[] = [];
-    public readonly diseaseFluff: any[] = [];
+    public readonly conditionFluff: Fluff[] = [];
+    public readonly statusFluff: Fluff[] = [];
+    public readonly diseaseFluff: Fluff[] = [];
     // Creatures
     public readonly monster: any[] = [];
     public readonly monsterFluff: any[] = [];

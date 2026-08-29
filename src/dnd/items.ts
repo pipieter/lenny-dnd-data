@@ -15,6 +15,7 @@ import { joinStringsWithOr, entrySort } from '../util';
 import { Databank, getKey } from '../data';
 import { cleanDNDText } from '../clean';
 import { rawData } from '../5etools-conversion/rawdata';
+import { Item, ItemMastery, ItemProperty, ItemType, MagicVariant } from '../../5etools-collector/types/item';
 
 export interface ParsedItem {
     name: string;
@@ -29,11 +30,10 @@ export interface ParsedItem {
     reprint: ReprintData | null;
 }
 
-function mapItemMasteries(data: any): Map<string, any> {
-    const masteries = new Map<string, any>();
+function mapItemMasteries(data: Databank): Map<string, ItemMastery> {
+    const masteries = new Map<string, ItemMastery>();
 
-    const itemMasteries = data.itemMastery ?? data.mastery ?? [];
-    for (const mastery of itemMasteries) {
+    for (const mastery of data.itemMastery) {
         const key = `${mastery.name}|${mastery.source}`;
         masteries.set(key, mastery);
     }
@@ -41,21 +41,20 @@ function mapItemMasteries(data: any): Map<string, any> {
     return masteries;
 }
 
-function mapItemTypes(data: any): Map<string, any> {
-    const types = new Map<string, any>();
+function mapItemTypes(data: Databank): Map<string, ItemType> {
+    const types = new Map<string, ItemType>();
 
-    for (const type of data.itemType || []) {
+    for (const type of data.itemType) {
         types.set(type.abbreviation, type);
     }
 
     return types;
 }
 
-function mapItemProperties(data: any): Map<string, any> {
+function mapItemProperties(data: Databank): Map<string, ItemProperty> {
     const properties = new Map<string, any>();
 
-    const itemProperties = data.itemProperty ?? data.property ?? [];
-    for (const property of itemProperties) {
+    for (const property of data.itemProperty) {
         properties.set(property.abbreviation, property);
     }
 
@@ -144,7 +143,7 @@ function matchesRequirements(obj: any, requirements: any | any[]): boolean {
     return true;
 }
 
-function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
+function resolveMagicVariant(variant: MagicVariant, baseItems: readonly Item[]): Item[] {
     variant = structuredClone(variant);
     // Find matches
     const items = [];
@@ -154,7 +153,7 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
         items.push(item);
     }
 
-    const results = [];
+    const results: Item[] = [];
     for (const item of items) {
         const result = Object.assign({}, item, variant.inherits);
         result.name = (variant.inherits.namePrefix || '') + item.name + (variant.inherits.nameSuffix || '');
@@ -229,12 +228,12 @@ function parseItem(item: any, data: any, additionalData?: Databank): ParsedItem 
     }
 
     if (item.type) {
-        const type = types.get(item.type.split('|')[0]);
+        const type = types.get(item.type.split('|')[0])!;
         result.type.push(type.name.toLowerCase());
     }
 
     if (item.typeAlt) {
-        const type = types.get(item.typeAlt.split('|')[0]);
+        const type = types.get(item.typeAlt.split('|')[0])!;
         result.type.push(type.name.toLowerCase());
     }
 
@@ -272,7 +271,7 @@ function parseItem(item: any, data: any, additionalData?: Databank): ParsedItem 
     result.properties = [];
 
     if (item.type) {
-        const type = types.get(item.type.split('|')[0]) || [];
+        const type = types.get(item.type.split('|')[0])! || [];
         result.description.push(...parseDescriptions('', type.entries || []));
     }
 
@@ -322,7 +321,7 @@ function parseItem(item: any, data: any, additionalData?: Databank): ParsedItem 
         let property = properties.get(p);
         if (!property) {
             p = p.split('|')[0];
-            property = properties.get(p);
+            property = properties.get(p)!;
         }
 
         if (property.name === 'special') {
@@ -336,13 +335,13 @@ function parseItem(item: any, data: any, additionalData?: Databank): ParsedItem 
                 continue;
             }
 
-            const entry = entries[0];
+            const entry = entries[0] as any;
             const template = applyItemPropertyTemplate(item, entry, property.template).toLowerCase();
             result.properties.push(template);
 
             // Apply template to entries of entry (required for Extended Reach)
             for (let i = 0; i < entry.entries.length; i++) {
-                entry.entries[i] = applyItemPropertyTemplate(item, entry, entry.entries[i]);
+                entry.entries[i] = applyItemPropertyTemplate(item, entry, entry.entries[i] as string);
             }
             result.description.push(...parseDescriptions(entry.name, entry.entries));
         }
@@ -362,7 +361,7 @@ function parseItem(item: any, data: any, additionalData?: Databank): ParsedItem 
                 masteryKey = `${parts[0]}|${parts[1]}`;
             }
         }
-        const mastery = masteries.get(masteryKey);
+        const mastery = masteries.get(masteryKey)!;
         const propertyName = `mastery: ${mastery.name}${note}`.toLowerCase();
         const propertyDesc = parseDescriptions(mastery.name, mastery.entries);
         result.properties.push(propertyName);
@@ -377,11 +376,7 @@ export function getItems(databank: Databank, additionalDatabank?: Databank): Par
     const items = [...databank.item, ...databank.baseitem];
     const extraItems = additionalDatabank ? [...additionalDatabank.item, ...additionalDatabank.baseitem] : [];
 
-    const raw: any[] = [];
-    for (const item of items) {
-        raw.push(resolveItemEntry(handleCopy(item, [...items, ...extraItems]), databank.itemEntry));
-    }
-
+    const raw = items.map((item) => resolveItemEntry(handleCopy(item, [...items, ...extraItems]), databank.itemEntry));
     const data = raw.map((item) => parseItem(item, databank, additionalDatabank));
     return data.sort(entrySort);
 }
