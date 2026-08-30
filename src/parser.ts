@@ -971,14 +971,22 @@ export function parseItemValue(value: number | null | undefined): string | null 
     return values.join(' ');
 }
 
-export function parseItemWeight(weight: number | undefined): string | null {
+export function parseItemWeight(weight: number | undefined, note: string | undefined): string | null {
     if (weight === undefined || weight === 0) {
         return null;
     }
+
+    let weightStr: string;
     if (weight < 1) {
-        return `${weight * 16} oz.`;
+        weightStr = `${weight * 16} oz.`;
+    } else {
+        weightStr = `${weight} lb.`;
     }
-    return `${weight} lb.`;
+
+    if (note) {
+        return `${weightStr} ${note}`;
+    }
+    return weightStr;
 }
 
 export function parsePrerequisite(prerequisite: any): string | null {
