@@ -718,10 +718,17 @@ function parseTableRow(values: any[] | any): string[] {
             } else if (value.type === 'item') {
                 // Item is similar to entries, except it has both the name and entries, and entries is more parseable
                 const name = value.name ? cleanDNDText(value.name, true) : '';
+                if (value.entry) {
+                    // Frontier Style (FoEQuickstone)
+                    cells.push(`**${name}**. ${cleanDNDText(value.entry)}`);
+                    continue;
+                }
+
                 const entries = value.entries.map((entry: string) => {
                     if (typeof entry === 'string') return cleanDNDText(entry, true);
                     return parseTableRow(entry);
                 });
+
                 const entry = entries.join('\n');
                 const combined = `${name}. ${entry}`;
                 cells.push(combined);

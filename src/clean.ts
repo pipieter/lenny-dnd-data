@@ -84,6 +84,15 @@ function ability(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function actResponse(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('actResponse', 0), `Response: `);
+    } else {
+        text = text.replaceAll(pattern('actResponse', 0), `*Response:* `);
+    }
+    return text;
+}
+
 function actSave(text: string, noFormat: boolean): string {
     if (noFormat) {
         text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${rawData.getAbilityName(p1)} Saving Throw: `);
@@ -722,6 +731,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         styles,
         $5etools,
         ability,
+        actResponse,
         actSave,
         actSaveFail,
         actSaveFailBy,
