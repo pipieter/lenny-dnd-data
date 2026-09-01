@@ -41,7 +41,7 @@ function parse(
     const itemVariants = getItemVariants(databank, additionalDatabank);
     stopwatch.log('Items variant retrieved');
 
-    const spells = getSpells(databank);
+    const spells = getSpells(databank, additionalDatabank);
     stopwatch.log('Spells retrieved');
 
     const { conditions, diseases } = getConditionsStatusesAndDiseases(databank);
