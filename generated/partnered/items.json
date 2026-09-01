@@ -929,6 +929,50 @@
   "reprint": null
  },
  {
+  "name": "Alarm Pylon",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/items.html#alarm%20pylon_dndbeyonddrops",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This 5-foot-tall post is made of stone and etched with runes. As a Magic action, you can activate the pylon by touching the runes and specifying one of the following triggers:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A creature or item casts a spell from a specific school of magic.",
+      "A creature takes 5 or more damage.",
+      "An object takes 10 or more damage."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the chosen trigger occurs within 300 feet of the pylon while the pylon is activated, the pylon emits a ringing alarm for 10 seconds, which is audible up to 300 feet away."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can take a Magic action to deactivate the pylon."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Alchemist's Potion Belt",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#alchemist's%20potion%20belt_griffonssaddlebag2",
@@ -2424,7 +2468,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Arc Rifle",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Arcane Detection Kit",
@@ -2524,7 +2572,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Arcane Oil",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Arcane Solvent",
@@ -2885,7 +2937,11 @@
    "**1d8** Slashing",
    "versatile (1d10)"
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Ardor",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Arista, Wand of the Spire",
@@ -5801,6 +5857,32 @@
   "reprint": null
  },
  {
+  "name": "Barghest Collar",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#barghest%20collar_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement by a worg)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action when you bark the command word, you can transform from your worg form into a goblin form with your choice of physical characteristics, including age, sex, skin color, hair color, and voice. While transformed, your size is Small and you lose your Quadruped and Bite traits. Otherwise, your statistics don't change."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can maintain the transformation for up to 4 hours, all at once or in several shorter periods, each one using a minimum of 1 minute of the duration. The collar regains 2 hours of transformation time for every 12 hours it isn't in use."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Bark Armor",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#bark%20armor_obojimatallgrass",
@@ -6565,6 +6647,27 @@
     "name": "",
     "type": "text",
     "value": "This bone whistle is carved in the shape of a __gargath__. When blown, it produces a high-pitched sound that can only be heard clearly by certain creatures. When you blow this whistle, any beast within 100 feet of you that hears it can discern its distance from and direction to you. Friendly beasts can be trained to understand signals given with this whistle, and if you spend at least 24 hours training a friendly beast in this way, you can use it to deliver coded instructions to a trained beast within the whistle's range."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Beggar's Wisdom",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#beggar's%20wisdom_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The wit and wisdom of Beggar Dane is considered to be one of the national treasures of Breland. This small leatherbound book is a comprehensive, enchanted edition of his proverbs and advice. As a Magic action while holding this book, you can declare your desire for assistance with a particular task, causing the book to open to a page containing a quip or mote of wisdom that is strangely relevant to the situation at hand. You add 1d4 to the next ability check you make within the next minute. Once this property is used, you cannot benefit from any copy of *Beggar's Wisdom* until the next dawn."
    }
   ],
   "properties": [],
@@ -11192,7 +11295,11 @@
    "heavy",
    "two-handed"
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Bow of Four",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Bow of Mind Thievery",
@@ -11555,6 +11662,37 @@
   "reprint": null
  },
  {
+  "name": "Brand of Tyranny",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#brand%20of%20tyranny_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "rod",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "One end of this heavy, black iron Rod glows as if hot. Rather than burning red and orange, it shines a sickly shade of purple."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this Rod, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever you touch a creature with this Rod, that creature must succeed on a DC 15 Charisma saving throw or be branded with the mark of Tol Kharash, the overlord known as the Horned King. Whenever a branded creature makes an attack roll or a saving throw against being Frightened, the creature must roll a d4 and subtract the number rolled from the attack roll or saving throw. The brand lasts until the next dawn or it is removed with Remove Curse or Greater Restoration."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Brass Knuckles",
   "source": "Pugilist2024",
   "url": "https://5e.tools/items.html#brass%20knuckles_pugilist2024",
@@ -11663,7 +11801,11 @@
   "properties": [
    "AC 18"
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Brazen Armor",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Bread, loaf",
@@ -14003,7 +14145,11 @@
   "properties": [
    "AC 14 + Dex (max 2)"
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Carvaloth Scale Armor",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Cat's Eye",
@@ -14499,6 +14645,32 @@
     "name": "",
     "type": "text",
     "value": "6"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Cazhaak Eyeblinders",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#cazhaak%20eyeblinders_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this magical blindfold, you can see as if you were not wearing it, and you cannot be Blinded by magical effects. However, if you possess the Petrifying Gaze trait, you cannot use it while you are wearing the blindfold."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you don the blindfold, you can choose to magically seal it in place by nominating yourself or a creature you can see to hold the seal's power. You cannot remove the blindfold until the creature speaks a chosen command word, you and the creature are at least 1 mile apart, or the creature dies."
    }
   ],
   "properties": [],
@@ -15800,7 +15972,11 @@
   "properties": [
    "AC 11 + Dex"
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Cinder Coat",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Cinderskin",
@@ -16804,7 +16980,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Cloak of the Stygian Bat",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Cloak of Therianthropy",
@@ -17367,7 +17547,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Coat of Lies",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Coat of Many Eyes (Rare)",
@@ -20904,6 +21088,57 @@
   "reprint": null
  },
  {
+  "name": "Daff's Wonderful Draught",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#daff's%20wonderful%20draught_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Daff d'Jorasco's eclectic style of medicine produces similarly eclectic brews. This potion is a magic item. As a Bonus Action, you can drink it or administer it to another creature within 5 of yourself. The creature that drinks this potion must roll on the following table to determine the effect:"
+   },
+   {
+    "name": "Potion Effects",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Potion Effects",
+     "headers": [
+      "d6",
+      "Effect"
+     ],
+     "rows": [
+      [
+       "1–3",
+       "You regain 4d4 + 4 Hit Points."
+      ],
+      [
+       "4",
+       "You gain the effects of the Detect Thoughts spell for 1 minute or until you lose your Concentration. The save DC is 13."
+      ],
+      [
+       "5",
+       "You gain the effects of the Haste spell for 1 minute or until you lose your Concentration."
+      ],
+      [
+       "6",
+       "You must succeed on a DC 13 Wisdom saving throw or suffer the effects of the Tasha's Hideous Laughter spell for 1 minute."
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Dagger of Denial",
   "source": "TalDoreiCampaignSettingReborn",
   "url": "https://5e.tools/items.html#dagger%20of%20denial_taldoreicampaignsettingreborn",
@@ -22182,6 +22417,31 @@
     "name": "",
     "type": "text",
     "value": "This ring shows that you have encountered a Category 6 demon and lived to tell the tale. While you wear it, you have advantage on Charisma (*Intimidation*) checks made to influence demons and gnolls."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Demonglass Orb",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#demonglass%20orb_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Red and black flames flicker behind the rough cut facets of this heavy demonglass shard. Memories of the Ages of Demons are bound within, and spellcasters who dare channel their magic through it find themselves and their targets visited by visions of that terrible past."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever you cast a Divination spell using this Orb as a Spellcasting Focus, you can give up some of your life force to reduce the saving throw of one creature affected by your spell. Roll 1 to 4 d6s; the resulting total is how much Necrotic damage you take. This damage can't be reduced in any way. The target has its saving throw reduced by 1 for each **d6** of damage you take. You must decide how many dice to roll before the DM says whether the target succeeds or fails."
    }
   ],
   "properties": [],
@@ -24621,6 +24881,32 @@
   "reprint": null
  },
  {
+  "name": "Dry Spell",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#dry%20spell_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "scroll",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This desiccated Spell Scroll seems to draw the moisture from your fingertips. Its cipher is ineffable, and while its meaning becomes clear as you read the runes, clarity slips away should you try to transcribe it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Magic action, you can use the scroll to cast __Control Water__ without providing any Material components. The spell save DC is 15. In addition to the usual effects of the __Control Water__ spell, any water manipulated by the spell is destroyed when the spell ends. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is interrupted, the scroll is not lost."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Dryadleaf",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#dryadleaf_24griffonssaddlebag1",
@@ -24698,6 +24984,27 @@
     "name": "",
     "type": "text",
     "value": "15"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Duelist's Scorecard",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#duelist's%20scorecard_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This scrap of paper bears a table with space for five names. If you write a creature's name in one of the blank spaces on the table, it will shuffle the text to show their ranking as a duelist relative to all the other individuals named on the table. This appears to be calculated based on the number of duels the named individuals have won over the past year. The source of these scorecards and the rankings remains a mystery, but it appears to be linked to the Infinite Archive of Daanvi. Once all the spaces on the scorecard are filled, you cannot reveal the ranking of another name for 1 week, when all the names are magically erased."
    }
   ],
   "properties": [],
@@ -28945,6 +29252,42 @@
   "reprint": null
  },
  {
+  "name": "Figurine of Wondrous Power, Byeshk Worg Pack",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2C%20byeshk%20worg%20pack_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This set of four miniature worg statuettes is made from byeshk, a metal that is anathema to Aberrations. Each statuette is small enough to fit in a pocket. If you use a Magic action to speak the command word and throw one of the figurines to a point on the ground within 60 feet of you, the figurine becomes a living Worg for up to 1 hour. You can use one figurine or multiple simultaneously. If the space where a worg would appear is occupied by other creatures or objects, or if there isn't enough space for the worg, the figurine doesn't become a worg."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The worgs are Immune to Psychic damage, cannot be Charmed or Frightened, and their Bite attack deals an additional **2d6** damage against Aberrations."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The worgs are friendly to you and your companions. They understand your languages and obey your spoken commands. If you issue no commands, the worgs defend themselves but take no other actions."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the end of the duration, the worgs revert to their figurine forms. A worg reverts to a figurine early if it drops to 0 Hit Points or if you use a Magic action to speak the command word again while touching it. When a worg becomes a figurine again, its property can't be used again until 7 days have passed."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Fin Symbiote",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#fin%20symbiote_grimhollowcg24",
@@ -29946,7 +30289,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Flammable Tincture",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Flare",
@@ -30062,6 +30409,27 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Flashdraw Wand",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#flashdraw%20wand_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wand",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This delicate Wand hums with bound potential, and seems drawn to your fingers. While attuned to it, you cannot be *Surprised*. Additionally, whenever you roll Initiative you can choose to immediately draw this wand (no action required). If you do so, you can roll 1d4 and add the total to your Initiative score, and all creatures within 5 feet of you take 1 Lightning damage."
    }
   ],
   "properties": [],
@@ -33238,7 +33606,11 @@
   "properties": [
    "AC 12 + Dex"
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Glass-Studded Armor",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Glider",
@@ -34253,6 +34625,34 @@
   "reprint": null
  },
  {
+  "name": "Gorgon Hide Mail",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#gorgon%20hide%20mail_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": "45 lb.",
+  "type": [
+   "medium armor",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This suit of Scale Mail is made from the metallic hide of a gorgon. It is particularly valuable to anyone that wishes to visit Cazhaak Draal; while wearing this armor, you have Advantage on saving throws against any magical effect that would cause you to be Restrained or Petrified."
+   },
+   {
+    "name": "Stealth Disadvantage",
+    "type": "text",
+    "value": "The wearer has **Disadvantage** on Dexterity (Stealth) checks."
+   }
+  ],
+  "properties": [
+   "AC 14 + Dex (max 2)"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Grace of the Wind-Touched Jerbeen Figurine",
   "source": "HumblewoodTales",
   "url": "https://5e.tools/items.html#grace%20of%20the%20wind-touched%20jerbeen%20figurine_humblewoodtales",
@@ -35173,6 +35573,32 @@
     "name": "",
     "type": "text",
     "value": "While wearing the gloves, the flesh on your hands slowly rots. The stench can't be contained or masked through magical or nonmagical means. While your hands are rotting in this way, you have Disadvantage on Charisma checks, and immediately after you regain all lost Hit Points when you finish a Long Rest, you take **1d6** Necrotic damage. When you remove the gloves after being cursed by them, it takes 1d4 days for your rotting flesh to return to normal and its scent to fade."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Grist Cakes",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#grist%20cakes_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These rations made of troll meat slowly regenerate, promising a long-lasting food supply. A creature can use a Magic action to eat one cake. Eating a cake restores 1 Hit Point, and the cake provides enough nourishment to sustain a creature for one day."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A pack contains a maximum of 10 cakes. So long as at least 1 cake remains uneaten and unspoiled, the pack regenerates 1d6 cakes per day. If you take Fire or Acid damage while carrying a pack of Grist Cakes, 1d4 cakes permanently spoil and will no longer regenerate."
    }
   ],
   "properties": [],
@@ -41981,6 +42407,55 @@
   "reprint": null
  },
  {
+  "name": "Ink's Aide",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#ink's%20aide_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "symbiont",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This colorful, jellyfish-like blob has been carefully cultivated by Quickstone's schoolmaster, Tragomir \"Ink\" Narathun, to impart a full curriculum to its host—though he has yet to convince anyone to partake. To attune to this item, you must hold it to one ear for the full Attunement period, during which time its stringy tentacles reach inside your ear canal and secure the aide in place. The symbiont does not impair your hearing while it is attached."
+   },
+   {
+    "name": "Spells",
+    "type": "text",
+    "value": "The symbiont has 4 charges. You can use a Magic action to expend 1 or more of its charges to cast one of the following spells (save DC 15) from it: __Enhance Ability__ (2 charges) or __Comprehend Languages__ (1 charge)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The symbiont regains 1d4 expended charges daily at dawn."
+   },
+   {
+    "name": "Symbiotic Nature",
+    "type": "text",
+    "value": "The aide can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the aide ends, and it detaches from your ear."
+   },
+   {
+    "name": "Rarity and Unique Items",
+    "type": "text",
+    "value": "The rarity of a magic item—from Common to Legendary—serves multiple purposes. It suggests the relative power of an item; an Uncommon magic item is assumed to be weaker than a Rare one. It's also a factor in calculating the cost of creating or purchasing a magic item. However, sometimes using one word for all of these purposes runs into problems. If an item is both exceptionally rare and also extremely weak, should it be rated Common based on its power or Legendary based on its actual rarity?"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "With this in mind, there are a few items presented in this chapter that are called out as being Unique. The Misthaven Miscellany isn't very powerful, and thus it is rated as Common, but it's a unique treasure from Thelanis. Jury d'Cannith created the only existing Jury's Squeaky Wheel; someone could replicate it, but you won't find it in a shop. Other items in this section aren't unique, but simply can't be purchased; House Orien doesn't sell its Thunder Coaches or Lightning Runners. So, the rarity of the items in this section indicates their relative power, but it's up to the DM to determine if these items can be found in a campaign."
+   }
+  ],
+  "properties": [
+   "the rarity of a magic item—from common to legendary—serves multiple purposes. it suggests the relative power of an item; an uncommon magic item is assumed to be weaker than a rare one. it's also a factor in calculating the cost of creating or purchasing a magic item. however, sometimes using one word for all of these purposes runs into problems. if an item is both exceptionally rare and also extremely weak, should it be rated common based on its power or legendary based on its actual rarity?"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Inker's Armband",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#inker's%20armband_griffonssaddlebag2",
@@ -43346,6 +43821,45 @@
   "reprint": null
  },
  {
+  "name": "Jury's Squeaky Wheel",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#jury's%20squeaky%20wheel_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": "6 lb.",
+  "type": [
+   "shield",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This magic Shield resembles a wooden wagon wheel. Writing inscribed on its inner rim indicates the shield was crafted by Jury d'Cannith, Quickstone's premier artificer, to prove a point to her wife."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action while holding this shield, you can grant Temporary Hit Points equal to your level to the humanoid creature you can see within 60 feet of yourself that has the fewest Hit Points. If creatures you can see within range are tied for the fewest Hit Points, you can choose which of those creatures gains the Temporary Hit Points."
+   },
+   {
+    "name": "Rarity and Unique Items",
+    "type": "text",
+    "value": "The rarity of a magic item—from Common to Legendary—serves multiple purposes. It suggests the relative power of an item; an Uncommon magic item is assumed to be weaker than a Rare one. It's also a factor in calculating the cost of creating or purchasing a magic item. However, sometimes using one word for all of these purposes runs into problems. If an item is both exceptionally rare and also extremely weak, should it be rated Common based on its power or Legendary based on its actual rarity?"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "With this in mind, there are a few items presented in this chapter that are called out as being Unique. The Misthaven Miscellany isn't very powerful, and thus it is rated as Common, but it's a unique treasure from Thelanis. Jury d'Cannith created the only existing Jury's Squeaky Wheel; someone could replicate it, but you won't find it in a shop. Other items in this section aren't unique, but simply can't be purchased; House Orien doesn't sell its Thunder Coaches or Lightning Runners. So, the rarity of the items in this section indicates their relative power, but it's up to the DM to determine if these items can be found in a campaign."
+   }
+  ],
+  "properties": [
+   "+2 AC",
+   "the rarity of a magic item—from common to legendary—serves multiple purposes. it suggests the relative power of an item; an uncommon magic item is assumed to be weaker than a rare one. it's also a factor in calculating the cost of creating or purchasing a magic item. however, sometimes using one word for all of these purposes runs into problems. if an item is both exceptionally rare and also extremely weak, should it be rated common based on its power or legendary based on its actual rarity?"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Keening Voice",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#keening%20voice_obojimatallgrass",
@@ -43501,6 +44015,70 @@
     "name": "",
     "type": "text",
     "value": "As part of a minute-long performance on this First Age instrument, you can choose a lock you can see within 15 feet of you and attempt to pick it using the magic of music. Trying to pick a lock in this way requires no other tools besides the keytar. When you do so, you make a Charisma (*Performance*) check against the lock's DC, instead of the Dexterity check normally required. If you fail to unlock the lock using the keytar, you can't attempt to do so again until 24 hours have passed."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Kharash's Promise",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#kharash's%20promise_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "artifact (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Tol Kharash, the Horned King, overlord of tyranny, demands that his minions revel in domination, fear, and the suffering of the downtrodden. During his campaigns in the Age of Demons, Tol Kharash shaped an artifact that would announce his coming across the Barrens; a harbinger of cruelty."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Kharash's Promise is a 3-foot long warhorn forged of demonglass and black iron. A trickle of boiling blood constantly drips from its widest end. While holding this Horn, you gain a +3 bonus to spell attack rolls and to the saving throw DCs of your Bard spells."
+   },
+   {
+    "name": "Random Properties.",
+    "type": "text",
+    "value": "This Artifact has the following random properties, which you can determine by rolling on the tables in the \"Artifacts\" section of the Dungeon Master's Guide:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "2 [minor beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20beneficial%20properties_xdmg) properties",
+      "1 [major beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20major%20beneficial%20properties_xdmg) property",
+      "2 [minor detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20detrimental%20properties_xdmg) properties"
+     ]
+    }
+   },
+   {
+    "name": "Surety of Dominance",
+    "type": "text",
+    "value": "While attuned to the warhorn, no creature can assert its influence over you. You cannot be Charmed or Frightened. If a creature targets you with a magical effect that would cause you to be Charmed or Frightened, that creature takes **4d10** Psychic damage."
+   },
+   {
+    "name": "Thaumaturgic Clarion",
+    "type": "text",
+    "value": "If you blow Kharash's Promise, the sound it produces can be heard by all creatures within 1 mile."
+   },
+   {
+    "name": "Promised End",
+    "type": "text",
+    "value": "As a Magic action when you blow the horn, you can choose one creature that you can see and that can hear the horn to suffer a painful and inevitable end. The target must make a DC 20 Charisma saving throw. On a failed save, the target's Hit Point maximum is reduced by 1 at the start of each of its turns until it dies, you die, you are no longer on the same plane of existence as the target, or the effect is ended with a __Wish__ spell. Once this property is used, you cannot do so again until 13 days have passed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action while affected, the target can choose to confront the source of its inevitable end, teleporting to an unoccupied space within 5 feet of you."
    }
   ],
   "properties": [],
@@ -44040,7 +44618,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Knifewing Cape",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Knight's Standard of Valor",
@@ -45970,6 +46552,27 @@
   "reprint": null
  },
  {
+  "name": "Lharvion Lens",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#lharvion%20lens_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Hags, oni, doppelgangers, and more all spin webs of intrigue in Droaam, and the richest warlords have found ways to ensure their safety against infiltrators. This 4-inch-diameter, dull-gray glass lens is said to have been ground with a stone fallen from the moon Lharvion. When you speak its command word, the lens' power activates for 1 minute. If you look at a creature through the lens while it is active, you see ghostly images of every shape that creature has taken within the last 24 hours. The lens reveals shapes taken using innate magical abilities, as well as Illusion and Transmutation spells such as Disguise Self and Polymorph. It does not reveal mundane disguises. Once this property is used, it cannot be used again until 7 days have passed."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Liar's Lyre",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#liar's%20lyre_24griffonssaddlebag1",
@@ -46271,7 +46874,11 @@
    "**1d8** Slashing",
    "versatile (1d10)"
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Light Drinker",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Light Sling",
@@ -46639,6 +47246,42 @@
   "reprint": null
  },
  {
+  "name": "Lightning Runner",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#lightning%20runner_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This 10-foot-wide, 10-foot-long, 6-inch-thick platform of wood and steel levitates 5 feet off the ground and remains horizontal so long as it is within 20 feet of an operational track of lightning rail conductor stones. The platform can carry up to 2000 pounds. If it becomes overloaded, it drops to the ground, unable to levitate."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The platform is equipped with a 'pump' in its center that can be used to move it along the track of conductor stones. As a Magic action, a creature touching the pump can expend a spell slot of 1st-level or higher to cause the platform to continuously move either forwards or backwards along the conductor stone track at a speed of 30 feet. A creature with the Mark of Passage does not need to expend a spell slot to cause the platform to move."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once moving, the platform will move in the chosen direction for one hour, or until a creature touching the pump uses a Magic action to cause the platform to stop. If stopped in this way, a creature must expend another spell slot as a Magic action to start the platform moving again."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the platform encounters an obstacle while moving, it will continue to push against the obstacle unless stopped with a Magic action. Obstacles that weigh less than the total weight of the platform and its cargo will be pushed in front of the platform."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Lightscreen Hover Boots",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#lightscreen%20hover%20boots_griffonssaddlebag2",
@@ -46832,7 +47475,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Lindwyrm Venom",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Lionfish Poison",
@@ -47149,6 +47796,43 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Living Stoneskin",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#living%20stoneskin_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "heavy armor",
+   "symbiont",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This Plate Armor appears to be made of stone slabs carved with alien symbols. It is strangely warm to the touch. To attune to this item, you must wear it for the entire Attunement period, during which the stone plates fuse with your skin."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this armor, you have a +1 bonus to Armor Class, and you have Resistance to nonmagical Bludgeoning, Piercing, and Slashing damage. Additionally, the armor hardens under extreme impact; if you take 20 or more nonmagical Bludgeoning, Piercing, or Slashing damage from one damage roll (after accounting for your Resistance), you are Petrified until the end of your next turn."
+   },
+   {
+    "name": "Symbiotic Nature",
+    "type": "text",
+    "value": "The armor can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the armor ends, and it detaches from you."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The armor requires fresh blood be fed to it. Immediately after you finish any Long Rest, you must either feed half of your remaining Hit Dice to the armor (round up) or take 1 level of Exhaustion."
    }
   ],
   "properties": [],
@@ -47784,6 +48468,27 @@
   "reprint": null
  },
  {
+  "name": "Lustrous Harpy Feather",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#lustrous%20harpy%20feather_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "With the right expertise and rituals, a songbird harpy's magic can be suffused throughout her plumage. While wearing this magical feather, you find that people can be much more agreeable—all they need is a little push. When you make a Charisma (*Persuasion*) check, you can choose to have Advantage on the check (no action required). Once this property is used, the feather loses its luster and becomes nonmagical."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Lycanthropy Antidote",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#lycanthropy%20antidote_grimhollowcg24",
@@ -47822,7 +48527,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Lycanthropy Antidote",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Mace of the Priest",
@@ -49980,6 +50689,32 @@
   "reprint": null
  },
  {
+  "name": "Mask of the Wielder",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#mask%20of%20the%20wielder_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Though most worgs prefer to fight with their teeth or steel jaws, there are those that desire to wield a Dhakaani blade against their enemies. This ornate mask is set with magical gems that focus your subconscious thoughts into a subtle form of telekinesis, allowing you greater control over objects you hold in your teeth."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing the mask, you can use your mouth to wield any Melee weapon that does not have the Heavy, Two-Handed, or Reach properties. If you use the mask to wield a weapon that has Versatile, you can only wield it as if you were using a single hand."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Masks of the Sacred Beasts (Crocodile)",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#masks%20of%20the%20sacred%20beasts%20(crocodile)_griffonssaddlebag2",
@@ -51368,6 +52103,27 @@
   "reprint": null
  },
  {
+  "name": "Minotaur's Map",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#minotaur's%20map_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The minotaurs of Droaam have no issues navigating the winding streets of the region's great cities, and their understanding has been captured in these fragile maps. When you speak the map's command word while in the city for which it was made, you can add twice your Proficiency Bonus to any Wisdom (*Survival*) checks made to navigate or track a creature through the city for 1 hour. At the end of the hour, the map crumbles to dust."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Mirror of Infinite Transpondence",
   "source": "TalDoreiCampaignSettingReborn",
   "url": "https://5e.tools/items.html#mirror%20of%20infinite%20transpondence_taldoreicampaignsettingreborn",
@@ -51561,6 +52317,39 @@
    "versatile (1d8)",
    "light",
    "mastery: sap"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Misthaven Miscellany",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#misthaven%20miscellany_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This small embroidered pouch is said to contain the cast-off goods discarded by the Merchant of Misthaven, an archfey of Thelanis. When you reach into the pouch, you can pull out a random trinket (see page 46 of the 2024 version of the fifth edition Player's Handbook or any other random trinket table of your choice). A trinket pulled from this pouch disappears when you pull another trinket from the pouch."
+   },
+   {
+    "name": "Rarity and Unique Items",
+    "type": "text",
+    "value": "The rarity of a magic item—from Common to Legendary—serves multiple purposes. It suggests the relative power of an item; an Uncommon magic item is assumed to be weaker than a Rare one. It's also a factor in calculating the cost of creating or purchasing a magic item. However, sometimes using one word for all of these purposes runs into problems. If an item is both exceptionally rare and also extremely weak, should it be rated Common based on its power or Legendary based on its actual rarity?"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "With this in mind, there are a few items presented in this chapter that are called out as being Unique. The Misthaven Miscellany isn't very powerful, and thus it is rated as Common, but it's a unique treasure from Thelanis. Jury d'Cannith created the only existing Jury's Squeaky Wheel; someone could replicate it, but you won't find it in a shop. Other items in this section aren't unique, but simply can't be purchased; House Orien doesn't sell its Thunder Coaches or Lightning Runners. So, the rarity of the items in this section indicates their relative power, but it's up to the DM to determine if these items can be found in a campaign."
+   }
+  ],
+  "properties": [
+   "the rarity of a magic item—from common to legendary—serves multiple purposes. it suggests the relative power of an item; an uncommon magic item is assumed to be weaker than a rare one. it's also a factor in calculating the cost of creating or purchasing a magic item. however, sometimes using one word for all of these purposes runs into problems. if an item is both exceptionally rare and also extremely weak, should it be rated common based on its power or legendary based on its actual rarity?"
   ],
   "reprint": null
  },
@@ -54832,6 +55621,27 @@
   "reprint": null
  },
  {
+  "name": "Ogre Tines",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#ogre%20tines_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Enterprising artificers are keen to bridge the gap between the tallest and the smallest Droaamites. Ogre Tines are just one example of the myriad devices designed to help giantkin interact with kobolds and goblins. Each set consists of five foot-long iron nails bound by a ring at their tops. When held in one hand, the nails can bend and twist as if they were tiny fingers. While using the tines, creatures of Medium size or larger that would normally have Disadvantage on Dexterity (*Sleight of Hand*) checks instead do not have Disadvantage."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Oiki's Pinwheel",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#oiki's%20pinwheel_obojimatallgrass",
@@ -54966,6 +55776,32 @@
     "name": "",
     "type": "text",
     "value": "In addition, while wearing the mantle, you can cast the __Find Familiar__ spell from it as a Magic action instead of its normal casting time. When you do, the familiar takes the form of a Raven. If the familiar drops to 0 Hit Points, it can't be summoned again until the next dusk. Otherwise, the familiar remains as long as you are attuned to the mantle."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Oni Braid",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#oni%20braid_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This thin rope belt is woven with strands of white and black oni hair. While wearing the belt, you can speak its command word to cause your height to become exactly 5 ft. 10 inches, and your size to become Medium. You can speak the command word again to return to your natural size."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The original Oni Braid was designed by a hobgoblin artificer who wished to see eye to eye with all the people of Droaam, though it's rumored that she designed it to set everyone's height to be one inch less than her own."
    }
   ],
   "properties": [],
@@ -55395,6 +56231,72 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Orlassk's Reach",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#orlassk's%20reach_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "symbiont",
+   "artifact (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Despite being separated from its original owner, the lost arm of the daelkyr Orlassk can grant its wielder a sliver of the Lord of Stone's magic; enough power to reshape the world. To attune to this symbiont, you must hold it against one of your arms for the full Attunement period, during which time its stone skin softens and envelops your limb."
+   },
+   {
+    "name": "Random Properties",
+    "type": "text",
+    "value": "This Artifact has the following random properties, which you can determine by rolling on the tables in the \"Artifacts\" section of the Dungeon Master's Guide:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "2 [minor beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20beneficial%20properties_xdmg) properties",
+      "2 [minor detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20detrimental%20properties_xdmg) properties",
+      "1 [major beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20major%20beneficial%20properties_xdmg) property",
+      "1 [major detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20major%20detrimental%20properties_xdmg) property"
+     ]
+    }
+   },
+   {
+    "name": "Voice of the Daelkyr",
+    "type": "text",
+    "value": "You can speak with any Aberration as if you shared a language."
+   },
+   {
+    "name": "Command Aberration",
+    "type": "text",
+    "value": "As a Magic action, you can cast __Dominate Monster__ on an Aberration (save DC 18). Once this property is used, you cannot do so again until the next dawn."
+   },
+   {
+    "name": "Petrifying Touch",
+    "type": "text",
+    "value": "The power of the stone shaper flows from you—despite what you may will. Any creature that you touch with your stone fingertips is affected as if you had cast __Flesh to Stone__ (spell save DC 18). You do not need to concentrate on the effect, and you cannot choose to end it."
+   },
+   {
+    "name": "Stone Speaking",
+    "type": "text",
+    "value": "As a Magic action, you imbue stones in an immobile 30-foot Emanation with limited sentience, giving them the ability to communicate with you. You can question stones about events in the effects area within the past day, gaining information about creatures that have passed, items that might have been removed from the area, and other circumstances. If an __Earth Elemental__ or Petrified creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it."
+   },
+   {
+    "name": "Greater Symbiotic Nature",
+    "type": "text",
+    "value": "The arm can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. Your Attunement to the arm can only be ended by a __Wish__ spell."
    }
   ],
   "properties": [],
@@ -61906,6 +62808,64 @@
   "reprint": null
  },
  {
+  "name": "Quickstone Boomstick",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#quickstone%20boomstick_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "rod",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever you cast a spell of 1st-level or higher using this Rod as a Spellcasting Focus, you can choose to release its power in a thunderous burst. All creatures within 5 feet of you (including you) must make a Constitution saving throw against your spell save DC. On a failed save, affected creatures take **1d4** Thunder damage for each level of the spell you cast, and are Deafened until the end of their next turn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Quickstone Whisperer",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#quickstone%20whisperer_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "symbiont",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This ancient, heavy marble torc is strangely warm to the touch. Though it resembles stone jewelry, the torc is in fact a simple symbiont which grants a limited form of control over earth and the ability to manipulate quickstone without the usual rituals. To attune to it, you must wear it around your neck for the full Attunement period, during which time it coils around your throat like a snake."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing the torc, you can use a Magic action to transform a 5-foot cube of quickstone between its soft and wet forms, or irreversibly change it into its fixed form."
+   },
+   {
+    "name": "Spells",
+    "type": "text",
+    "value": "As an Action, you can use the symbiote to cast __Mold Earth__ or __Meld into Stone__. Once you use the torc to cast __Meld into Stone__, the spell can't be cast in this way until the next dusk."
+   },
+   {
+    "name": "Symbiotic Nature",
+    "type": "text",
+    "value": "The torc can't be removed from you while you're attuned to it, and you can't voluntarily end your Attunement to it. If you're targeted by a spell that ends a curse, your Attunement to the torc ends, and it uncoils from around your neck."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Quiver of Elemental Chaos",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#quiver%20of%20elemental%20chaos_griffonssaddlebag2",
@@ -62653,7 +63613,7 @@
   "type": [
    "weapon (handaxe)",
    "simple weapon",
-   "shield",
+   "melee weapon",
    "uncommon (requires attunement)"
   ],
   "description": [
@@ -62766,7 +63726,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Ready Gunk",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Realmswarden Greataxe",
@@ -65118,7 +66082,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Ring of Hidden Desire",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Ring of Hospitality",
@@ -67920,6 +68888,58 @@
   "reprint": null
  },
  {
+  "name": "Sandstorm Staff",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#sandstorm%20staff_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "simple weapon",
+   "melee weapon",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Many of the discarded weapons of the Last War have found their way into the hands of the people of the Barrens. This sliver of a broken __Siege Staff__ can deliver a powerful punch when it needs to, but ejects an exhaust of swirling dust when exerted."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This staff can be wielded as a magic Quarterstaff. The staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you cast a spell using this Staff as a Spellcasting Focus, you can expend 1 charge to gain a +1 bonus to all spell attack rolls you make for that spell. If you do so, the staff conjures a 5-foot diameter vortex of dust in your space. At the start of each of your turns, roll a d20 for each dust vortex the staff has created. On a roll of 11 or higher, the dust vortex moves 5 feet in a random direction. On a roll of 10 or less, the dust vortex disappears."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Any creature that starts its turn within 5 feet of any of the dust vortexes must make a Constitution saving throw against your spell save DC. On a failed save, an affected creature takes **1d4** Bludgeoning damage and is Blinded until the end of its turn."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Sangromancer's Vial",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#sangromancer's%20vial_grimhollowcg24",
@@ -67948,6 +68968,44 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Sarkaas' Gladrags",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#sarkaas'%20gladrags_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Deven Sarkaas of Littlehand Haberdashers in Quickstone knows all too well how important it is to look one's best... and how 'best' can be very different depending on who (or what) you're meeting with. Deven stitched this fine cloak and sent it to Graywall to be enchanted, only to lose track of the garment on the return journey."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action while wearing the cloak, you can speak its command word to transform your outfit into finely crafted garments appropriate to the culture of one creature of your choice that you can see. Regardless of its appearance, the outfit can't be anything but clothing. Although it can duplicate the look of other magical clothing, the outfit doesn't gain its magical properties."
+   },
+   {
+    "name": "Rarity and Unique Items",
+    "type": "text",
+    "value": "The rarity of a magic item—from Common to Legendary—serves multiple purposes. It suggests the relative power of an item; an Uncommon magic item is assumed to be weaker than a Rare one. It's also a factor in calculating the cost of creating or purchasing a magic item. However, sometimes using one word for all of these purposes runs into problems. If an item is both exceptionally rare and also extremely weak, should it be rated Common based on its power or Legendary based on its actual rarity?"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "With this in mind, there are a few items presented in this chapter that are called out as being Unique. The Misthaven Miscellany isn't very powerful, and thus it is rated as Common, but it's a unique treasure from Thelanis. Jury d'Cannith created the only existing Jury's Squeaky Wheel; someone could replicate it, but you won't find it in a shop. Other items in this section aren't unique, but simply can't be purchased; House Orien doesn't sell its Thunder Coaches or Lightning Runners. So, the rarity of the items in this section indicates their relative power, but it's up to the DM to determine if these items can be found in a campaign."
+   }
+  ],
+  "properties": [
+   "the rarity of a magic item—from common to legendary—serves multiple purposes. it suggests the relative power of an item; an uncommon magic item is assumed to be weaker than a rare one. it's also a factor in calculating the cost of creating or purchasing a magic item. however, sometimes using one word for all of these purposes runs into problems. if an item is both exceptionally rare and also extremely weak, should it be rated common based on its power or legendary based on its actual rarity?"
+  ],
   "reprint": null
  },
  {
@@ -68021,6 +69079,65 @@
   ],
   "properties": [
    "AC 14 + Dex (max 2)"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Scale of Kethelrax",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#scale%20of%20kethelrax_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "weapon (dagger)",
+   "simple weapon",
+   "melee weapon",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This Dagger is said to have been created by Kethelrax the Cunning, the kobold warlord of Shaarat Kol. Its short, crimson blade resembles a red dragon's scale, and tiny flames dance along its edge."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you are holding this Dagger, you can use it as a Spellcasting Focus for your spells. Additionally, you can cast __Fire Bolt__ as a Magic action, using Intelligence, Wisdom, or Charisma (you choose when you Attune to the dagger) as the spellcasting ability."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever you hit with a weapon attack using this Dagger, you can choose to deal Fire damage instead of Piercing damage."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/60 ft.)",
+   "mastery: nick"
   ],
   "reprint": null
  },
@@ -69712,7 +70829,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Seeing Glass",
+   "source": "GrimHollowPG24",
+   "tag": null
+  }
  },
  {
   "name": "Seeker's Compass",
@@ -72408,6 +73529,74 @@
   "reprint": null
  },
  {
+  "name": "Shock and Ore",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#shock%20and%20ore_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "weapon (war pick)",
+   "martial weapon",
+   "melee weapon",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This pair of rough and ready War Picks are said to have been created by the first miners to quarry quickstone in the Barrens. They have long been passed around as heirlooms and rewards. These magical picks are a single magic item for the purposes of Attunement."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits while wielding both picks:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The picks have theLight weapon property.",
+      "You gain a +1 bonus to attack and damage rolls made with the picks.",
+      "The picks have 3 charges, which they share. They regain 1d3 expended charges daily at dawn.",
+      "When you hit a target with a Melee attack using Shock, you can expend 1 charge as a Bonus Action to deal an additional **2d8** Lightning damage. A creature affected by this damage can't take Reactions until the start of its next turn.",
+      "When you hit a target with a Melee attack using Ore, you can expend 1 charge to cast __Earth Tremor__ as a Reaction, centered on the target."
+     ]
+    }
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Rarity and Unique Items",
+    "type": "text",
+    "value": "The rarity of a magic item—from Common to Legendary—serves multiple purposes. It suggests the relative power of an item; an Uncommon magic item is assumed to be weaker than a Rare one. It's also a factor in calculating the cost of creating or purchasing a magic item. However, sometimes using one word for all of these purposes runs into problems. If an item is both exceptionally rare and also extremely weak, should it be rated Common based on its power or Legendary based on its actual rarity?"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "With this in mind, there are a few items presented in this chapter that are called out as being Unique. The Misthaven Miscellany isn't very powerful, and thus it is rated as Common, but it's a unique treasure from Thelanis. Jury d'Cannith created the only existing Jury's Squeaky Wheel; someone could replicate it, but you won't find it in a shop. Other items in this section aren't unique, but simply can't be purchased; House Orien doesn't sell its Thunder Coaches or Lightning Runners. So, the rarity of the items in this section indicates their relative power, but it's up to the DM to determine if these items can be found in a campaign."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "versatile (1d10)",
+   "the rarity of a magic item—from common to legendary—serves multiple purposes. it suggests the relative power of an item; an uncommon magic item is assumed to be weaker than a rare one. it's also a factor in calculating the cost of creating or purchasing a magic item. however, sometimes using one word for all of these purposes runs into problems. if an item is both exceptionally rare and also extremely weak, should it be rated common based on its power or legendary based on its actual rarity?",
+   "mastery: sap"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Shooting Star",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#shooting%20star_griffonssaddlebag2",
@@ -73229,6 +74418,27 @@
     "name": "Heightened Potency",
     "type": "text",
     "value": "For the duration, you can spit ink from your mouth as a Bonus Action. One creature within 30 feet of you makes a DC 13 Dexterity saving throw. On a failed save, the target gains the Blinded condition until the start of your next turn. On a successful save, the target is immune to this property for the next 24 hours."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Silencing Satchel",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/items.html#silencing%20satchel_dndbeyonddrops",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This magic satchel has 3 charges and regains 1d3 expended charges daily at dawn. As a Magic action, you can expend 1 charge and tighten the satchel's drawstring to inflict a silencing hex on a creature you can see within 60 feet of yourself. The target must succeed on a DC 15 Charisma saving throw or be cursed for 1 minute. While the target is cursed, its mouth is sealed shut. The target can't cast any spell with a Verbal component, consume potions, or take in food or drink. The target makes a DC 15 Charisma save at the end of each of its turns, ending the curse early on a success."
    }
   ],
   "properties": [],
@@ -79335,6 +80545,41 @@
   "reprint": null
  },
  {
+  "name": "Steel Jaws",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#steel%20jaws_foequickstone",
+  "image": null,
+  "value": "10 gp",
+  "weight": "2 lb.",
+  "type": [
+   "martial weapon",
+   "melee weapon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Because they have no hands, worgs cannot wield weapons in the same way that most player characters can. However, worgs can wield a specially designed Martial Melee weapon called \"Steel Jaws.\" Only Worgs can wield Steel Jaws, fitting as they do over a Worg's teeth. A Worg cannot use its Bite trait while it is wielding Steel Jaws."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**2d6** Piercing",
+   "finesse",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Steppe Rations",
   "source": "HumblewoodTales",
   "url": "https://5e.tools/items.html#steppe%20rations_humblewoodtales",
@@ -81506,6 +82751,32 @@
   "reprint": null
  },
  {
+  "name": "Sync Ring",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/items.html#sync%20ring_dndbeyonddrops",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you attune to this ring, choose a blank book you are touching. Thereafter, whenever you write something using the hand that wears the ring, a copy of your writing magically appears in the chosen book. Magical writing, such as a spell copied from a Spell Scroll or a glyph inscribed for the __Glyph of Warding__ spell, is transcribed literally but is nonmagical."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If no blank pages are left in the book or the book is on a different plane of existence than you for more than 24 hours, your Attunement to the ring ends."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Talharpa",
   "source": "NorthlandsWorldbook",
   "url": "https://5e.tools/items.html#talharpa_northlandsworldbook",
@@ -82245,7 +83516,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Telltale Heart",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Tempest Griffon Bracers",
@@ -83110,6 +84385,32 @@
   "reprint": null
  },
  {
+  "name": "Three-Faced Coin",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#three-faced%20coin_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This gold piece appears to be a normal coin, with the crown of Galifar on one side and the Octogram of the Sovereign Host on the other. However, when flipped, it will land with one of three different symbols showing, each corresponding to one of the patrons of the Three Faces of Coin: Kol Korran, Onatar, and Kol Turrant (the Keeper). When you flip the coin, you can will the coin to land displaying a face of your choice. Once this property is used, you cannot do so again until the next dawn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While this item doesn't require a command word or Attunement, the ability must be consciously triggered; if you've never used a Three-faced coin before, you must spend a Short Rest studying it to learn how to activate it. After being flipped, the coin returns to its usual two faces when a creature next touches it."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Thricecall Mirror",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#thricecall%20mirror_grimhollowcg24",
@@ -83160,6 +84461,42 @@
     "name": "Symbiotic Nature",
     "type": "text",
     "value": "Once you attune to this symbiote, you can't remove it unless you are targeted by a __Remove Curse__ spell or similar magic."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Thunder Coach",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#thunder%20coach_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement by a creature with the mark of passage)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Thunder Coach is the workhorse of Orien's overland shipping, sometimes referred to as \"galleons of the road.\" A product of the Twelve, it incorporated members of Kundarak, Cannith, and Orien in the design. A typical coach is a 10-foot-wide, 40-foot-long, 15-foot-high (including the wheels) vessel of wood and steel. When pulled by a large team (typically eight tribex), a coach can maintain a speed of up to five miles per hour. However, if someone with the Mark of Passage attunes to the coach and sits in the driver's seat, the full magic of the Thunder Coach comes into play. Under such conditions, four strong beasts can pull the coach at a steady pace of ten miles an hour. If it is moving along an Orien trade road, the effect is further amplified, allowing a top speed of 15 miles per hour. This requires the driver to remain seated and to maintain *Concentration*, as if casting a spell. However, beyond these limitations, they are capable of conversation and other actions."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The forward fifteen feet of the coach holds a small cabin for up to three crew members. The crew of a coach typically includes one marked driver and two crew members who serve as both guards and cargo haulers. One of these haulers is usually a Vadalis- trained (though unmarked) handler who cares for the beasts. The top of the coach has positions at the front and back where archers or wandslingers can be stationed with Half Cover."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A typical Thunder Coach has two cargo chambers; one magical and one mundane. The back gate of a Thunder Coach opens to grant access to an extradimensional space that functions in the same way as a Bag of Holding. When closed, the gate is typically sealed with an Arcane Lock linked to a password known to the driver. The mouth of the extradimensional space is 10-feet-wide by 10-feet-high. The size of the extradimensional space varies based on the model of the coach; the standard is 20-feet-wide, 15-feet-high, and 50-feet-deep. The system maintaining the extradimensional space takes up the final five feet of the coach."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Objects that produce extradimensional spaces (such as Bags of Holding, Portable Holes, or House Cannith's Crates of Containing) cannot cross the threshold of the rear compartment. For this reason, and to allow the transport of living creatures, the Thunder Coach also has a standard cargo compartment accessed from the side of the vehicle; this space is 10-feet-wide, 10-feet- high, and 20-feet-long."
    }
   ],
   "properties": [],
@@ -85209,6 +86546,54 @@
   "reprint": null
  },
  {
+  "name": "Trapper's Teeth",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#trapper's%20teeth_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "weapon (steel jaws)",
+   "martial weapon",
+   "melee weapon",
+   "rare (requires attunement by a worg)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack and damage rolls made with these Steel Jaws."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The teeth have 4 charges. When you hit with an attack using them, you can expend 1 charge to leave a set of spectral teeth clamped around the target. The target's Speed is reduced to 0. At the end of each of its turns, the target can make a DC 13 Strength saving throw, ending the effect on a success. The teeth regain all expended charges at dawn."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**2d6** Piercing",
+   "finesse",
+   "light",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Travel Wok",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#travel%20wok_obojimatallgrass",
@@ -85655,6 +87040,32 @@
       "**[Organ]**: Eyes from a Troll"
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Trollgut Rope",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/items.html#trollgut%20rope_foequickstone",
+  "image": null,
+  "value": null,
+  "weight": "6 lb.",
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This 'rope' is made from treated troll entrails. Typically, it is found in a 50-ft length that weighs 6 pounds and can hold up to 3,000 pounds."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If Trollgut Rope is cut, you can use a Magic action to press two ends together, causing them to merge together into a single length of rope. This only works with pieces of Trollgut Rope from the same original coil. If the Trollgut Rope takes Fire or Acid damage, it no longer regenerates and becomes nonmagical."
    }
   ],
   "properties": [],
@@ -86760,6 +88171,32 @@
     "name": "",
     "type": "text",
     "value": "49"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Unraveling Cloak",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/items.html#unraveling%20cloak_dndbeyonddrops",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you take a Magic action to remove the button from the hood of this cloak, the cloak's fabric unravels behind you wherever you go, leaving a continuous thread. Other creatures can see the thread only if they take the Search action to look for it and succeed on a DC 15 Wisdom (*Perception*) check."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The cloak ceases to unravel after 100 miles or if you take a Magic action to rebutton the cloak. If you teleport while the cloak is unraveling, any unraveled thread is immediately destroyed."
    }
   ],
   "properties": [],
@@ -88541,6 +89978,27 @@
   "reprint": null
  },
  {
+  "name": "Wand of Misdirection",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/items.html#wand%20of%20misdirection_dndbeyonddrops",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wand",
+   "rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This wand has 4 charges and regains 1d4 expended charges daily at dawn. While holding the wand, you can expend 1 charge to cast __Mislead__ from it."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Wand of Necrosis",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#wand%20of%20necrosis_griffonssaddlebag2",
@@ -88714,7 +90172,11 @@
    }
   ],
   "properties": [],
-  "reprint": null
+  "reprint": {
+   "name": "Wand of Silence",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Wand of Stars",
@@ -93481,7 +94943,11 @@
    "**1d8** Bludgeoning",
    "versatile (1d10)"
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Zeal",
+   "source": "GrimHollowCG24",
+   "tag": null
+  }
  },
  {
   "name": "Zeal",

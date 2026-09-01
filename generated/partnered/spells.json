@@ -1,5 +1,62 @@
 [
  {
+  "name": "Absorb Elements",
+  "source": "FoEQuickstone",
+  "level": "Level 1",
+  "school": "Abjuration",
+  "castingTime": "1 reaction, which you take when you take Acid, Cold, Fire, Lightning, or Thunder damage",
+  "range": "Self",
+  "components": "V, S",
+  "material": null,
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#absorb%20elements_foequickstone",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have Resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra **1d6** damage of the triggering type, and the spell ends."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The extra damage increases by 1d6 for each slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "EFA"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Accelerate/Decelerate",
   "source": "ValdaPlayerPack",
   "level": "Level 1",
@@ -1004,7 +1061,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You channel energy from the Astral Sea to unleash a torrent of magic from you in a 30-foot Cone. Each creature in the Cone must succeed on a Dexterity saving throw or take **4d10** Cold or Radiant damage (chosen when you cast this spell). Your choice of damage type determines an additional effect:"
+    "value": "You channel energy from the Astral Sea to unleash a torrent of magic from you in a 30-foot Cone. Each creature in the Cone makes a Dexterity saving throw, taking **4d10** Cold or Radiant damage (chosen when you cast this spell) on a failed save or half as much damage on a successful one. On a failed save, a target also suffers an additional effect determined by your choice of damage type:"
    },
    {
     "name": "",
@@ -1014,7 +1071,7 @@
      "caption": "",
      "entries": [
       "**Cold Damage**: The target has Disadvantage on the next D20 Test it makes before the end of your next turn.",
-      "**Radiant Damage**: The target can see only within 15 feet of itself, and it has the Blinded condition for everything beyond that distance until the end of your next turn."
+      "**Radiant Damage**: The target has the Blinded condition until the end of your next turn."
      ]
     }
    },
@@ -1047,6 +1104,14 @@
    },
    {
     "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "PHB"
+   },
+   {
+    "name": "Warlock",
     "source": "XPHB"
    },
    {
@@ -10667,6 +10732,65 @@
   "scaledDamage": null
  },
  {
+  "name": "Earth Tremor",
+  "source": "FoEQuickstone",
+  "level": "Level 1",
+  "school": "Evocation",
+  "castingTime": "Action",
+  "range": "10 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#earth%20tremor_foequickstone",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Stomping your foot, you cause a tremor in the ground. Each creature other than you in a 10-foot Emanation originating from you makes a Dexterity saving throw. On a failed save, a target takes **1d6** Bludgeoning damage and has the Prone condition. If the ground in that area is loose earth or stone, it becomes Difficult Terrain until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d6 for each slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "bludgeoning"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Earth Worm",
   "source": "GrimHollowPG24",
   "level": "Level 6",
@@ -10719,6 +10843,56 @@
   "conditionImmune": [],
   "savingThrow": [
    "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Earthbind",
+  "source": "FoEQuickstone",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "castingTime": "Action",
+  "range": "300 feet",
+  "components": "V",
+  "material": null,
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#earthbind_foequickstone",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose one creature that you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or have its Flying speed (if any) reduced to 0 feet for the duration. An airborne creature affected by this spell safely descends at 60 feet per round until it reaches the ground or the spell ends."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
   ],
   "affectsCreatureType": [],
   "scaledDamage": null
@@ -15384,6 +15558,66 @@
   "scaledDamage": null
  },
  {
+  "name": "Gray Gaze",
+  "source": "FoEQuickstone",
+  "level": "Cantrip",
+  "school": "Transmutation",
+  "castingTime": "Bonus action",
+  "range": "20 feet",
+  "components": "V, S, M (a pebble with a hole in it)",
+  "material": "a pebble with a hole in it",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#gray%20gaze_foequickstone",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You turn your gaze on one creature you can see within range. If the target can see your eyes, their body stiffens and cracks as if it were turning to stone. The target must succeed on a Constitution saving throw or take Necrotic damage equal to your Proficiency Bonus and have Disadvantage on the next Dexterity saving throw it makes before the end of its next turn."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "PHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "PHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "PHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Greater Animate Dead",
   "source": "GrimHollowPG24",
   "level": "Level 5",
@@ -19233,10 +19467,54 @@
   "school": "Divination",
   "castingTime": "Action",
   "range": "Self",
-  "components": "V, S, M (a set of Artisan's Tools or a Herbalism Kit)",
-  "material": "a set of Artisan's Tools or a Herbalism Kit",
+  "components": "V, S, M (a set of {@item Artisan's Tools|XPHB} or a {@item Herbalism Kit|XPHB})",
+  "material": "a set of {@item Artisan's Tools|XPHB} or a {@item Herbalism Kit|XPHB}",
   "duration": "Concentration, up to 1 minute",
   "url": "https://5e.tools/spells.html#magecraft_exploringeberron24",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You channel your arcane talent through a set of tools. Choose an Artisan Tool or Herbalism Kit. Until the spell ends, you add 1d6 to ability checks you make when you take the Utilize action with the chosen tool."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Artificer",
+    "source": "EFA"
+   },
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Magecraft",
+  "source": "FoEQuickstone",
+  "level": "Cantrip",
+  "school": "Divination",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "V, S, M (a set of {@item Artisan's Tools|XPHB} or a {@item Herbalism Kit|XPHB})",
+  "material": "a set of {@item Artisan's Tools|XPHB} or a {@item Herbalism Kit|XPHB}",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#magecraft_foequickstone",
   "image": null,
   "description": [
    {
@@ -20560,6 +20838,70 @@
   "scaledDamage": null
  },
  {
+  "name": "Mold Earth",
+  "source": "FoEQuickstone",
+  "level": "Cantrip",
+  "school": "Transmutation",
+  "castingTime": "Action",
+  "range": "30 feet",
+  "components": "S",
+  "material": null,
+  "duration": "Instantaneous or 1 hour (see below)",
+  "url": "https://5e.tools/spells.html#mold%20earth_foequickstone",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You manipulate a portion of dirt or stone that fits within a 5-foot Cube that you can see within range. You create one of the following effects."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the dirt or stone you target is on the ground, you cause it to become Difficult Terrain. Alternatively, you can cause the ground to become normal terrain if it is already Difficult Terrain. The change lasts for 1 hour."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as a Magic action."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Moment to Think",
   "source": "ValdaPlayerPack",
   "level": "Cantrip",
@@ -21618,6 +21960,37 @@
   "savingThrow": [
    "charisma"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Orien Step",
+  "source": "FoEQuickstone",
+  "level": "Cantrip",
+  "school": "Transmutation",
+  "castingTime": "Bonus action",
+  "range": "Self",
+  "components": "S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#orien%20step_foequickstone",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You teleport up to five feet to an unoccupied space you can see. You cannot teleport through solid objects or out of manacles and similar restraints."
+   }
+  ],
+  "classes": [],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -30077,7 +30450,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You touch a willing creature. Until the spell ends, the target's skin hardens into a tortoise shell, and the target gains a +3 bonus to AC. If the target moves, the bonus becomes +1 instead until the start of its next turn."
+    "value": "You touch a willing creature. Until the spell ends, the target's skin hardens into a tortoise shell while it remains in place, and the target gains a +3 bonus to AC. If the target moves using its action, Bonus Action, Reaction, or movement, the bonus becomes +1 instead until the start of its next turn."
    }
   ],
   "classes": [],
@@ -31346,7 +31719,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "You conjure forth a fragment of a dark star and launch it at one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes **6d12** Necrotic damage. At the end of the target's next turn, it takes **3d12** Necrotic damage, and you regain Hit Points equal to the amount of Necrotic damage dealt."
+    "value": "You conjure forth a fragment of a dark star and launch it at one creature that you can see within range. Make a ranged spell attack against the target. On a hit, the target takes **6d12** Necrotic damage. Hit or miss, the target takes **3d12** Necrotic damage at the end of its next turn, and you regain Hit Points equal to that damage."
    },
    {
     "name": "Using a Higher-Level Spell Slot",
