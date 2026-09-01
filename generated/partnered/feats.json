@@ -25,7 +25,11 @@
     }
    }
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Adroit Crafter",
+   "source": "GrimHollowMG24",
+   "tag": null
+  }
  },
  {
   "name": "Advanced Weapon Proficiency (FS)",
@@ -297,6 +301,71 @@
      "entries": [
       "Your proficiency bonus is doubled for any Dexterity (*Stealth*) check you make.",
       "You can try to hide even when you are only lightly obscured from the creature from which you are hiding."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Ashbound Initiate",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#ashbound%20initiate_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have learned a certain number of the secrets and techniques of the Ashbound druidic order. You gain the following benefits."
+   },
+   {
+    "name": "Ashbound Proficiencies",
+    "type": "text",
+    "value": "You gain proficiency in the *Intimidation* skill."
+   },
+   {
+    "name": "Arcane Enmity",
+    "type": "text",
+    "value": "When a creature you can see casts a spell, you have Advantage on attack rolls against that creature until the end of your next turn."
+   },
+   {
+    "name": "Ashbound Spells",
+    "type": "text",
+    "value": "The secrets you've learned allow you to always have certain spells at the ready. When you have spell slots of a level specified in the Ashbound Spells table, you thereafter have the spells listed for that level and lower prepared."
+   },
+   {
+    "name": "Ashbound Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Ashbound Spells",
+     "headers": [
+      "Spell Level",
+      "Spells"
+     ],
+     "rows": [
+      [
+       "1st",
+       "Guiding Bolt"
+      ],
+      [
+       "2nd",
+       "Shining Smite"
+      ],
+      [
+       "3rd",
+       "Nondetection"
+      ],
+      [
+       "4th",
+       "Aura of Purity"
+      ],
+      [
+       "5th",
+       "Circle of Power"
+      ]
      ]
     }
    }
@@ -1757,7 +1826,11 @@
     }
    }
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Adroit Crafter",
+   "source": "GrimHollowMG24",
+   "tag": null
+  }
  },
  {
   "name": "Cat's Caress",
@@ -3336,7 +3409,7 @@
    {
     "name": "Honeyed Words",
     "type": "text",
-    "value": "When you roll a 5 or lower on the d20 for a Charisma (*Deception*) or Charisma (*Persuasion*) check, you can take a Reaction to reroll the check, and you must use the new roll. Once you take this Reaction, you can't use this benefit again until you finish a Long Rest."
+    "value": "When you fail a Charisma (*Deception* or *Persuasion*) check, you can reroll the check, and you must use the new roll. Once this benefit turns a failure into a success, you can't use it again until you finish a Long Rest."
    }
   ],
   "reprint": null
@@ -3373,6 +3446,42 @@
     "name": "",
     "type": "text",
     "value": "When you reach character level 5, you also always have the __Plant Growth__ spell prepared and can cast it the same way."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Fey Tormentor",
+  "source": "DnDBeyondDrops",
+  "url": "https://5e.tools/feats.html#fey%20tormentor_dndbeyonddrops",
+  "type": "General",
+  "prerequisite": "Level 4+ and Fey Pact",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Faerie Time Warp",
+    "type": "text",
+    "value": "As a Bonus Action, choose up to three creatures you can see within 60 feet of yourself. Each target makes a Wisdom saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus). On a failed save, the target's Speed is reduced by 10 feet, and it takes a -2 penalty to AC until the end of your next turn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once you use this benefit, you can't use it again until you finish a Long Rest."
+   },
+   {
+    "name": "Hag's Hex",
+    "type": "text",
+    "value": "You always have the __Hex__ spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast it using any spell slots you have. The spell's spellcasting ability is the ability increased by this feat."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you reach character level 5, you also have the __Bestow Curse__ spell prepared and can cast it in the same way."
    }
   ],
   "reprint": null
@@ -4049,6 +4158,71 @@
   "reprint": null
  },
  {
+  "name": "Gatekeeper Initiate",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#gatekeeper%20initiate_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have learned a certain number of secrets and techniques of the Gatekeeper druidic order. You gain the following benefits."
+   },
+   {
+    "name": "Gatekeeper Proficiency",
+    "type": "text",
+    "value": "You gain proficiency in the *Arcana* skill."
+   },
+   {
+    "name": "Protection Against Aberrations",
+    "type": "text",
+    "value": "When you make a saving throw against the magic abilities of an Aberration or a spell cast by an Aberration, you can roll 1d4 and add it to your saving throw."
+   },
+   {
+    "name": "Gatekeeper Spells",
+    "type": "text",
+    "value": "The secrets you've learned allow you to always have certain spells at the ready. When you have spell slots of a level specified in the Gatekeeper Spells table, you thereafter have the spells listed for that level and lower prepared."
+   },
+   {
+    "name": "Gatekeeper Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Gatekeeper Spells",
+     "headers": [
+      "Spell Level",
+      "Spells"
+     ],
+     "rows": [
+      [
+       "1st",
+       "Detect Evil and Good"
+      ],
+      [
+       "2nd",
+       "Warding Bond"
+      ],
+      [
+       "3rd",
+       "Magic Circle"
+      ],
+      [
+       "4th",
+       "Banishment"
+      ],
+      [
+       "5th",
+       "Dispel Evil and Good"
+      ]
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Ghostlight Medium",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/feats.html#ghostlight%20medium_crookedmoon24",
@@ -4559,6 +4733,76 @@
   "reprint": null
  },
  {
+  "name": "Greensinger Initiate",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#greensinger%20initiate_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have learned a certain number of secrets and techniques of the Greensinger druidic order. You gain the following benefits:"
+   },
+   {
+    "name": "Greensinger's Proficiency",
+    "type": "text",
+    "value": "You gain proficiency in the *Performance* skill."
+   },
+   {
+    "name": "Fey Dancer",
+    "type": "text",
+    "value": "Whenever you cause a creature to gain the Charmed condition, you can join them in dance and revelry. If you do so, you can use your Reaction to move up to half your Speed without provoking Opportunity Attacks."
+   },
+   {
+    "name": "Fey Affinity",
+    "type": "text",
+    "value": "Your spells and magical abilities that affect Humanoids also affect Fey."
+   },
+   {
+    "name": "Greensinger Spells",
+    "type": "text",
+    "value": "The secrets you've learned allow you to always have certain spells at the ready. When you have spell slots of a level specified in the Greensinger Spells table, you thereafter have the spells listed for that level and lower prepared."
+   },
+   {
+    "name": "Greensinger Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Greensinger Spells",
+     "headers": [
+      "Spell Level",
+      "Spells"
+     ],
+     "rows": [
+      [
+       "1st",
+       "Tasha's Hideous Laughter"
+      ],
+      [
+       "2nd",
+       "Enthrall"
+      ],
+      [
+       "3rd",
+       "Major Image"
+      ],
+      [
+       "4th",
+       "Compulsion"
+      ],
+      [
+       "5th",
+       "Mislead"
+      ]
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Grizzled",
   "source": "SGEHPP",
   "url": "https://5e.tools/feats.html#grizzled_sgehpp",
@@ -4865,6 +5109,37 @@
     "name": "Victorious Inspiration",
     "type": "text",
     "value": "When you reduce a creature to 0 Hit Points with an attack, you can choose one ally within 30 feet of you to receive Heroic Inspiration. The ally must use this Heroic Inspiration before the end of their next turn or it is wasted. You can use this feature twice, regaining all expended uses when you finish a Short or Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Hewn for Battle",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#hewn%20for%20battle_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+ and Gargoyle",
+  "abilityIncrease": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have reshaped your stone body to be a more effective and devastating weapon of war. You gain the following benefits."
+   },
+   {
+    "name": "Thickened Hide",
+    "type": "text",
+    "value": "When you finish a Short or Long Rest, you can choose the thickness of your natural armor. While you aren't wearing armor, your base Armor Class becomes your choice of either 14 plus your Dexterity modifier, or 18. You can use a Shield and still gain this benefit."
+   },
+   {
+    "name": "Spellcarving",
+    "type": "text",
+    "value": "Your hide can be enchanted or infused as if it were nonmagical armor."
+   },
+   {
+    "name": "Claws",
+    "type": "text",
+    "value": "You have shaped your hands into fearsome claws. Your claws are natural weapons, which you can use to make Unarmed Strikes. If you hit with them, you deal Slashing damage equal to 1d6 plus your Strength modifier in place of the normal Bludgeoning damage of your Unarmed Strike."
    }
   ],
   "reprint": null
@@ -5319,12 +5594,12 @@
    {
     "name": "Infernal Resistance",
     "type": "text",
-    "value": "You have Resistance to Fire damage and Poison damage."
+    "value": "You gain Resistance to Fire damage or Poison damage (choose when you select this feat)."
    },
    {
     "name": "Infernal Sight",
     "type": "text",
-    "value": "You can see normally in Dim Light and Darkness—both magical and nonmagical—within 60 feet of yourself."
+    "value": "You gain Darkvision with a range of 30 feet. This Darkvision is unimpeded by magical Darkness."
    },
    {
     "name": "Silver-Tongued",
@@ -5513,7 +5788,7 @@
   "source": "ExploringEberron24",
   "url": "https://5e.tools/feats.html#khesh'dar%20training_exploringeberron24",
   "type": "Origin",
-  "prerequisite": "Dhakaani Ghaal'dar (Hobgoblin), Dhakaani Golin'dar (Goblin) or Dhakaani Guul'dar (Bugbear)",
+  "prerequisite": null,
   "abilityIncrease": null,
   "description": [
    {
@@ -6433,6 +6708,42 @@
   "reprint": null
  },
  {
+  "name": "Orb Expert",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#orb%20expert_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your skill with magical Orbs helps you evade enemies while overcoming their defenses. You gain the following benefits."
+   },
+   {
+    "name": "Fortune Teller",
+    "type": "text",
+    "value": "When you finish a Short or Long Rest, roll 1d6 and record the result. When you cast a spell using an Orb as a Spellcasting Focus, you can add the result of this prescience roll to your spell attack roll, or reduce one target's saving throw by that amount. You must choose to do so before the attack roll or saving throw."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once you use this benefit, you can't use it again until you finish a Short or Long Rest. Unused prescience rolls are lost when you finish a Short or Long Rest."
+   },
+   {
+    "name": "See the Path",
+    "type": "text",
+    "value": "While you are holding an Orb, Opportunity Attacks against you have Disadvantage."
+   },
+   {
+    "name": "Prescient Escape",
+    "type": "text",
+    "value": "While you are holding an Orb, whenever a creature you can see enters a space within 5 feet of you, you can use your Reaction to move up to your Speed without provoking an Opportunity Attack."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Pack Fighting",
   "source": "DnDBeyondDrops",
   "url": "https://5e.tools/feats.html#pack%20fighting_dndbeyonddrops",
@@ -6952,6 +7263,37 @@
   "reprint": null
  },
  {
+  "name": "Rod Expert",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#rod%20expert_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've mastered the use of a Rod as an Arcane Focus. You gain the following benefits."
+   },
+   {
+    "name": "Close-Ranged Focus",
+    "type": "text",
+    "value": "If the target of a cantrip you cast using a Rod as a Spellcasting Focus is within 20 feet of you when you roll a 1 or 2 on a damage die, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2."
+   },
+   {
+    "name": "Unshakeable Casting",
+    "type": "text",
+    "value": "When you make a ranged spell attack roll while using a Rod as a Spellcasting Focus, you do not have Disadvantage on the roll if you are within 5 feet of an enemy."
+   },
+   {
+    "name": "Rough & Tumble",
+    "type": "text",
+    "value": "When you make a ranged spell attack while using a Rod as a Spellcasting Focus, you can use a Bonus Action to make a melee attack with your Rod. It counts as a Club for the purposes of the attack."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Royalty Revealed",
   "source": "TLotRR",
   "url": "https://5e.tools/feats.html#royalty%20revealed_tlotrr",
@@ -7127,6 +7469,66 @@
   "reprint": null
  },
  {
+  "name": "Shadow's Gift of Stone",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#shadow's%20gift%20of%20stone_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+ and Medusa",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have learned to channel arcane power through your gaze. You gain the following benefits."
+   },
+   {
+    "name": "Innate Magic",
+    "type": "text",
+    "value": "When you reach a character level specified in the Shadow's Gift of Stone Spells table, you thereafter always have the listed spells prepared. You can cast each of these spells once without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your spellcasting ability for these spells is the same as the spellcasting ability you chose for your Petrifying Gaze trait."
+   },
+   {
+    "name": "Shadow's Gift of Stone Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Shadow's Gift of Stone Spells",
+     "headers": [
+      "Character Level",
+      "Spell"
+     ],
+     "rows": [
+      [
+       "4",
+       "Ensnaring Strike"
+      ],
+      [
+       "5",
+       "Hold Person"
+      ],
+      [
+       "9",
+       "Hypnotic Pattern"
+      ],
+      [
+       "13",
+       "Stoneskin"
+      ],
+      [
+       "17",
+       "Hold Monster"
+      ]
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Shadowsteel Adept",
   "source": "GrimHollowPG24",
   "url": "https://5e.tools/feats.html#shadowsteel%20adept_grimhollowpg24",
@@ -7225,7 +7627,7 @@
    {
     "name": "Domino Strike",
     "type": "text",
-    "value": "When you hit a creature with a weapon and activate the Push mastery property to push that creature into a space occupied by a Large or smaller creature, you can force the creatures to collide. Each creature must succeed on a Constitution saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or have the Prone condition."
+    "value": "When you hit a creature with a weapon and activate the Push mastery property to push that creature into a space occupied by a Large or smaller creature, you can force the creatures to collide. Each creature makes a Dexterity saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus), taking **1d10** Bludgeoning damage on a failed save."
    },
    {
     "name": "Fearless Leap",
@@ -7603,6 +8005,58 @@
       "After you take the Attack action with a tommybow or magitech firearm, you can use a bonus action to quickly make one or two additional ranged weapon attacks using the same weapon. If you choose to make two attacks, you take a -5 penalty to both attack rolls. You don't add your ability modifier to the damage of the bonus attack(s), unless that modifier is negative."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Staff Expert",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#staff%20expert_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You've unlocked the deadly ranged potential of the Staff. You gain the following benefits."
+   },
+   {
+    "name": "Arcane Artillery",
+    "type": "text",
+    "value": "When you cast a spell that has a range of 5 feet or greater using a Staff as your Spellcasting Focus, you can use a Bonus Action to double the range of the spell."
+   },
+   {
+    "name": "Powerful Focus",
+    "type": "text",
+    "value": "When you roll a 1 or 2 on a damage die for a cantrip you cast using a Staff as a Spellcasting Focus, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2."
+   },
+   {
+    "name": "Explosive Casting",
+    "type": "text",
+    "value": "If all targets of a spell you cast using a Staff as your Spellcasting Focus are more than half the spell's range from you, one creature of your choice that you hit with a spell attack or that fails a saving throw against the spell has the Prone condition."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Stone Eyes",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#stone%20eyes_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 8+ and Medusa",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your Petrifying Gaze has come into its own. You gain the following benefits."
+   },
+   {
+    "name": "Powerful Petrification",
+    "type": "text",
+    "value": "If a creature that has the Restrained or Paralyzed condition as a result of one of your spells or your Medusa's Gift trait fails a saving throw to end the effect by 5 or more, you can choose to turn that creature to stone. Any magical effects causing the creature to have the Restrained or Paralyzed condition end, and the creature has the Petrified condition for 1 minute. You must concentrate to maintain the effect. If you lose your *Concentration*, the Petrified condition ends. If you maintain your *Concentration* on the effect for the entire possible duration, the target is Petrified until the condition is ended by __Greater Restoration__ or similar magic."
    }
   ],
   "reprint": null
@@ -8437,7 +8891,7 @@
   "source": "BoundByBlood",
   "url": "https://5e.tools/feats.html#thin-blooded_boundbyblood",
   "type": "Origin",
-  "prerequisite": null,
+  "prerequisite": "Can Be Chosen in Place of Any Origin Feat",
   "abilityIncrease": null,
   "description": [
    {
@@ -8950,6 +9404,193 @@
   "reprint": null
  },
  {
+  "name": "Voice of the Fury",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#voice%20of%20the%20fury_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+ and Harpy",
+  "abilityIncrease": "Increase your Dexterity, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The mystical power of your voice grows stronger. You gain the following benefits."
+   },
+   {
+    "name": "Innate Magic",
+    "type": "text",
+    "value": "When you reach a character level specified in the Voice of the Fury Spells table, you thereafter always have the listed spells prepared. You can cast each of these spells once without expending a spell slot, and you must finish a Long Rest before you can cast them in this way again. You can also cast these spells using any spell slots you have of the appropriate level."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your spellcasting ability for these spells is the same as the spellcasting ability you chose for your Harpy's Charms trait."
+   },
+   {
+    "name": "Voice of the Fury Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Voice of the Fury Spells",
+     "headers": [
+      "Character Level",
+      "Spell"
+     ],
+     "rows": [
+      [
+       "4",
+       "Charm Person"
+      ],
+      [
+       "5",
+       "Suggestion"
+      ],
+      [
+       "9",
+       "Enemies Abound"
+      ],
+      [
+       "13",
+       "Charm Monster"
+      ],
+      [
+       "17",
+       "Dominate Person"
+      ]
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Wand Expert",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#wand%20expert_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You are adept with the use of Wands as a swift Spellcasting Focus. You gain the following benefits."
+   },
+   {
+    "name": "Wand Mastery",
+    "type": "text",
+    "value": "If you make a spell attack using a Wand as a Spellcasting Focus, you gain Advantage on the attack roll if the target hasn't taken a turn."
+   },
+   {
+    "name": "Unshakeable Casting",
+    "type": "text",
+    "value": "When you make a ranged spell attack roll while using a Wand as a Spellcasting Focus, you do not have Disadvantage on the roll if you are within 5 feet of an enemy."
+   },
+   {
+    "name": "Arcane Quickdraw",
+    "type": "text",
+    "value": "Drawing or stowing a Wand does not count against the number of object interactions you can take for free on your turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Wandslinger",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#wandslinger_foequickstone",
+  "type": "Fighting Style",
+  "prerequisite": "Fighting Style",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Arcane Aim",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack rolls you make with spells."
+   },
+   {
+    "name": "Mystic Force",
+    "type": "text",
+    "value": "When you cast a cantrip that requires the target to make a saving throw, increase the DC of the saving throw by 1."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Warden Initiate",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#warden%20initiate_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have learned some of the secrets and techniques of the Wardens of the Wood druidic order. You gain the following benefits."
+   },
+   {
+    "name": "Warden's Proficiency.",
+    "type": "text",
+    "value": "You gain proficiency in the *Animal Handling* skill."
+   },
+   {
+    "name": "Protect Ally",
+    "type": "text",
+    "value": "When a creature you can see hits another creature within 5 feet of you with an attack roll, you can take a Reaction to reduce the damage dealt to the target by 1d6 + your Proficiency Bonus."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once you use this benefit, you can't use it again until you finish a Short or Long Rest."
+   },
+   {
+    "name": "Warden Spells",
+    "type": "text",
+    "value": "The secrets you've learned allow you to always have certain spells at the ready. When you have spell slots of a level specified in the Warden of the Wood Spells table, you thereafter have the spells listed for that level and lower prepared."
+   },
+   {
+    "name": "Warden of the Wood Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Warden of the Wood Spells",
+     "headers": [
+      "Spell Level",
+      "Spells"
+     ],
+     "rows": [
+      [
+       "1st",
+       "Sanctuary"
+      ],
+      [
+       "2nd",
+       "Detect Thoughts"
+      ],
+      [
+       "3rd",
+       "Blink"
+      ],
+      [
+       "4th",
+       "Mordenkainen's Faithful Hound"
+      ],
+      [
+       "5th",
+       "Hold Monster"
+      ]
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Ways of the Wild",
   "source": "TLotRR",
   "url": "https://5e.tools/feats.html#ways%20of%20the%20wild_tlotrr",
@@ -9136,6 +9777,92 @@
     "name": "Provider",
     "type": "text",
     "value": "You can use your knowledge of the land to find food and fresh water for yourself and up to 3 other people each day."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Wings of Stone",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#wings%20of%20stone_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+ and Gargoyle",
+  "abilityIncrease": "Increase your Dexterity, Constitution or Strength score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "Fly Speed",
+    "type": "text",
+    "value": "You have a Fly Speed equal to your Speed."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Winter Initiate",
+  "source": "FoEQuickstone",
+  "url": "https://5e.tools/feats.html#winter%20initiate_foequickstone",
+  "type": "General",
+  "prerequisite": "Level 4+",
+  "abilityIncrease": "Increase your Wisdom or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have learned some of the secrets and techniques of the Children of Winter druidic order. You gain the following benefits."
+   },
+   {
+    "name": "Life from Death",
+    "type": "text",
+    "value": "Whenever you take Necrotic damage, you gain Temporary Hit Points equal to your Proficiency Bonus after you take the damage."
+   },
+   {
+    "name": "Summon Decay",
+    "type": "text",
+    "value": "When you conjure a creature with a spell or magical ability, you can choose for that creature to be Undead instead of its usual creature type."
+   },
+   {
+    "name": "Understand Disease",
+    "type": "text",
+    "value": "You have Advantage on ability checks to research, diagnose, and treat disease."
+   },
+   {
+    "name": "Children of Winter Spells",
+    "type": "text",
+    "value": "The secrets you've learned allow you to always have certain spells at the ready. When you have spell slots of a level specified in the Children of Winter Spells table, you thereafter have the spells listed for that level and lower prepared."
+   },
+   {
+    "name": "Children of Winter Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Children of Winter Spells",
+     "headers": [
+      "Spell Level",
+      "Spells"
+     ],
+     "rows": [
+      [
+       "1st",
+       "False Life"
+      ],
+      [
+       "2nd",
+       "Ray of Enfeeblement"
+      ],
+      [
+       "3rd",
+       "Bestow Curse"
+      ],
+      [
+       "4th",
+       "Death Ward"
+      ],
+      [
+       "5th",
+       "Enervation"
+      ]
+     ]
+    }
    }
   ],
   "reprint": null

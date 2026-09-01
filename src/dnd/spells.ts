@@ -17,6 +17,7 @@ import {
 } from '../parser';
 import { getSpellsUrl } from '../urls';
 import { Databank } from '../data';
+import { handleCopy } from '../5etools-conversion/copy';
 
 interface Caster {
     name: string;
@@ -135,17 +136,22 @@ function getSpell(spell: any, fluffs: any[], sources: any, data: Databank): Pars
     };
 }
 
-export function getSpells(databank: Databank): ParsedSpell[] {
+export function getSpells(databank: Databank, additionalDatabank?: Databank): ParsedSpell[] {
     const spells = databank.spell;
-    const fluffs = databank.spellFluff;
-    const sources = databank.spellSource;
+    const extraSpells = additionalDatabank ? [...additionalDatabank.spell] : [];
 
-    const result = [];
-    for (const spell of spells) {
-        result.push(getSpell(spell, fluffs, sources, databank));
-    }
+    const extraFluffs = additionalDatabank ? additionalDatabank.spellFluff : [];
+    const fluffs = [...databank.spellFluff, ...extraFluffs];
 
-    result.sort((a, b) => a.name.localeCompare(b.name));
+    const extraSources = additionalDatabank ? additionalDatabank.spellSource : [];
+    const sources = [...databank.spellSource, ...extraSources];
 
-    return result;
+    const parsed = spells
+        .map((base: any) => {
+            const spell = handleCopy(base, [...spells, ...extraSpells]);
+            return getSpell(spell, fluffs, sources, databank);
+        })
+        .sort((a, b) => a.name.localeCompare(b.name));
+
+    return parsed;
 }
