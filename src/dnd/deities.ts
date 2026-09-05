@@ -1,4 +1,5 @@
-import { Deity } from '../../5etools-collector/types/deity';
+import { Deity, DeityBase } from '../../5etools-collector/types/deity';
+import { handleCopy } from '../5etools-conversion/copy';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { Description, DescriptionType, parseAlignments, parseDescriptions, title } from '../parser';
@@ -16,7 +17,7 @@ export interface ParsedDeity {
     // Deities do not handle reprinting in data.
 }
 
-function parseDeityInlineDescriptions(deity: Deity): Description[] {
+function parseDeityInlineDescriptions(deity: DeityBase): Description[] {
     const descriptions: Description[] = [];
 
     descriptions.push({ name: 'Pantheon', type: DescriptionType.text, value: deity.pantheon });
@@ -47,6 +48,7 @@ function parseDeityInlineDescriptions(deity: Deity): Description[] {
 
 export function getDeities(data: Databank): ParsedDeity[] {
     return data.deity.map((deity) => {
+        deity = handleCopy(deity, data.deity)
         return {
             name: deity.name,
             source: deity.source,

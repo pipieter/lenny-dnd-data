@@ -15,7 +15,7 @@ import { joinStringsWithOr, entrySort } from '../util';
 import { Databank, getKey } from '../data';
 import { cleanDNDText } from '../clean';
 import { rawData } from '../5etools-conversion/rawdata';
-import { Item, ItemMastery, ItemProperty, ItemType, MagicVariant } from '../../5etools-collector/types/item';
+import { Item, ItemBase, ItemMastery, ItemProperty, ItemType, ItemTypeBase, MagicVariant } from '../../5etools-collector/types/item';
 import { Fluff } from '../../5etools-collector/types/fluff';
 
 export interface ParsedItem {
@@ -34,7 +34,7 @@ export interface ParsedItem {
 interface ItemMappings {
     masteries: Map<string, ItemMastery>;
     properties: Map<string, ItemProperty>;
-    types: Map<string, ItemType>;
+    types: Map<string, ItemTypeBase>;
 }
 
 function getItemMappings(databanks: Databank[]): ItemMappings {
@@ -54,7 +54,8 @@ function getItemMappings(databanks: Databank[]): ItemMappings {
             mappings.properties.set(property.abbreviation, property);
         }
 
-        for (const type of data.itemType) {
+        for (let type of data.itemType) {
+            type = handleCopy(type, data.itemType)
             mappings.types.set(type.abbreviation, type);
         }
     }
@@ -177,7 +178,7 @@ function resolveMagicVariant(variant: MagicVariant, baseItems: readonly Item[]):
     return results;
 }
 
-function parseItemTypes(item: Item, mappings: ItemMappings): [string[], string[], Description[]] {
+function parseItemTypes(item: ItemBase, mappings: ItemMappings): [string[], string[], Description[]] {
     // Item type information, see render.js:11480 (getHtmlAndTextTypes)
 
     const types: string[] = [];
@@ -352,7 +353,7 @@ function parseItemMastery(item: Item, mappings: ItemMappings): [string[], Descri
     return [names, descriptions];
 }
 
-function parseItem(item: Item, fluffs: Fluff[], mappings: ItemMappings): ParsedItem {
+function parseItem(item: ItemBase, fluffs: Fluff[], mappings: ItemMappings): ParsedItem {
     const fluff = getItemFluff(fluffs, item.name, item.source);
 
     const url = getItemsUrl(item.name, item.source);
@@ -417,7 +418,8 @@ export function getItemVariants(databank: Databank, additionalDatabank?: Databan
     const variants = databank.magicvariant.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem));
     const seenVariants = new Set();
     const raw: any[] = [];
-    for (const variant of variants) {
+    for (let variant of variants) {
+        variant = handleCopy(variant, variants)
         const key = getKey(variant.name, variant.source);
         if (seenVariants.has(key)) continue;
         raw.push(resolveItemEntry(handleCopy(variant, [...items, ...extraItems]), databank.itemEntry));

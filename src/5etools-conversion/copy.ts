@@ -3,7 +3,8 @@ import { crToProficiencyBonus } from './parser';
 import { ascSortLower } from './sort';
 import { rawData } from './rawdata';
 import { title } from '../parser';
-import { Base } from '../../5etools-collector/types/base';
+import { Base } from '../../5etools-collector/types/internal/base';
+import { Copyable } from '../../5etools-collector/types/internal/copy';
 
 // TODO _templates (e.g. Zox Clammersham). This will most likely require data going global
 
@@ -317,18 +318,41 @@ function addPreserve(copy: any, parent: any, preserve: any): void {
     }
 }
 
-export function handleCopy<T extends Base>(base: T, entries: any[]): T {
+export function findParent(base: any, entries: any[]): any | undefined {
+    // find by name
+    if (base.name) {
+        const name = base.name.trim().toLowerCase();
+        const source = base.source.trim().toLowerCase();
+        return entries.find((entry) => {
+            const entryName = entry.name.trim().toLowerCase();
+            const entrySource = entry.source.trim().toLowerCase();
+            return entryName === name && entrySource === source;
+        });
+    }
+
+    // Find by abbreviation
+    if (base.abbreviation) {
+        const abbr = base.abbreviation.trim().toLowerCase();
+        const source = base.source.trim().toLowerCase();
+        return entries.find((entry) => {
+            const entryAbbr = entry.abbreviation.trim().toLowerCase();
+            const entrySource = entry.source.trim().toLowerCase();
+            return entryAbbr === abbr && entrySource === source;
+        });
+    }
+
+    return undefined;
+}
+
+export function handleCopy<T extends Base>(base: T | Copyable<T>, entries: any[]): T {
     let copy = structuredClone(base); // Fields will be changed, so making a deep clone is important for future usages
 
-    if (!copy._copy) return copy;
-    const copyName = copy._copy.name.trim().toLowerCase();
-    const copySource = copy._copy.source.trim().toLowerCase();
+    if (!('_copy' in copy)) return copy;
 
-    let parent = entries.find((entry) => {
-        const entryName = entry.name.trim().toLowerCase();
-        const entrySource = entry.source.trim().toLowerCase();
-        return entryName === copyName && entrySource === copySource;
-    });
+    const copyName = copy._copy.name?.trim().toLowerCase();
+    const copySource = copy._copy.source?.trim().toLowerCase();
+
+    let parent = findParent(copy._copy, entries)
     if (!parent) throw `Could not find parent for ${copy.name}|${copy.source} -> ${copyName}|${copySource}`;
     if (parent._copy) parent = handleCopy(parent, entries); // Handle parent being a copy itself
 
@@ -341,9 +365,7 @@ export function handleCopy<T extends Base>(base: T, entries: any[]): T {
     addMod(copy, mod);
     addPreserve(copy, parent, preserve);
 
-    delete copy._copy;
-
-    return copy;
+    return copy as T;
 }
 
 export function handleVersions<T extends Base>(base: T): T[] {

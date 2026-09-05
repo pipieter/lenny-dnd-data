@@ -3,7 +3,7 @@ import { joinStringsWithOr } from '../util';
 
 import { getActionsUrl } from '../urls';
 import { Databank } from '../data';
-import { Unit } from '../../5etools-collector/types/base';
+import { Unit } from '../../5etools-collector/types/internal/base';
 
 export interface ParsedAction {
     name: string;

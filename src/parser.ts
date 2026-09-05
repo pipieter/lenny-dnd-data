@@ -14,10 +14,10 @@ import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { rawData } from './5etools-conversion/rawdata';
-import { ClassProficiency, Resist, Unit } from '../5etools-collector/types/base';
+import { ClassProficiency, Resist, Unit } from '../5etools-collector/types/internal/base';
 import { Databank } from './data';
 import { ClassResourceValue } from '../5etools-collector/types/class';
-import { EntryImage } from '../5etools-collector/types/entry';
+import { EntryImage } from '../5etools-collector/types/internal/entry';
 
 export interface Range {
     type: 'range';
@@ -1201,5 +1201,22 @@ export function parseResist(resist: Resist): string {
         return resist.special;
     }
 
-    return joinStringsWithAnd(resist.choose?.from ?? []);
+    if ('choose' in resist) {
+        return joinStringsWithAnd(resist.choose?.from ?? []);
+    }
+
+    const resists =
+        ('resist' in resist && resist.resist) ||
+        ('immune' in resist && resist.immune) ||
+        ('vulnerable' in resist && resist.vulnerable) ||
+        [];
+
+    let result = resists.join(', ');
+    if (resist.preNote) {
+        result = `${resist.preNote} ${result}`;
+    }
+    if (resist.note) {
+        result = `${result} ${resist.note}`;
+    }
+    return result;
 }

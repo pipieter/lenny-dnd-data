@@ -1,4 +1,4 @@
-import { EntryImage } from '../5etools-collector/types/entry';
+import { EntryImage } from '../5etools-collector/types/internal/entry';
 import { Fluff } from '../5etools-collector/types/fluff';
 
 function removeAccents(str: string): string {

@@ -23,13 +23,15 @@ import { joinStringsWithAnd, joinStringsWithOr, entrySort, variadic } from '../u
 import { cleanDNDText } from '../clean';
 import {
     Class,
+    ClassBase,
     ClassFeature,
     Multiclassing,
     MulticlassRequirement,
-    Subclass,
+    SubclassBase,
     SubclassFeature,
 } from '../../5etools-collector/types/class';
-import { ClassProficiencies, ClassProficiency, SkillProficiency } from '../../5etools-collector/types/base';
+import { ClassProficiencies, ClassProficiency, SkillProficiency } from '../../5etools-collector/types/internal/base';
+import { handleCopy } from '../5etools-conversion/copy';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ParsedClassFeature[];
@@ -130,16 +132,16 @@ function parseClassFeature(feature: ClassFeature | SubclassFeature): ParsedClass
     };
 }
 
-function parseSubclass(data: Subclass, subclassFeatures: ClassFeatureDictionary): ParsedSubclass {
-    const name = data.name;
-    const source = data.source;
-    const key = getKey(data.shortName, data.source);
-    const classKey = getKey(data.className, data.classSource);
+function parseSubclass(subclass: SubclassBase, subclassFeatures: ClassFeatureDictionary): ParsedSubclass {
+    const name = subclass.name;
+    const source = subclass.source;
+    const key = getKey(subclass.shortName, subclass.source);
+    const classKey = getKey(subclass.className, subclass.classSource);
 
     let levelFeatures: ParsedClassFeature[] | null = null;
-    if (data.subclassFeatures) {
+    if (subclass.subclassFeatures) {
         const features = subclassFeatures[classKey];
-        for (const subclassFeature of data.subclassFeatures) {
+        for (const subclassFeature of subclass.subclassFeatures) {
             const parts = subclassFeature.split('|');
             const featName = parts[0];
             const featClassName = parts[1];
@@ -164,7 +166,7 @@ function parseSubclass(data: Subclass, subclassFeatures: ClassFeatureDictionary)
         }
     }
 
-    const reprint = parseReprint(data);
+    const reprint = parseReprint(subclass);
 
     return {
         name,
@@ -196,7 +198,7 @@ function parseStartingProficiencies(data: Class): ParsedStartingProficiencies | 
 }
 
 function parseClass(
-    data: Class,
+    data: ClassBase,
     features: ClassFeatureDictionary,
     subclassFeatures: ClassFeatureDictionary,
     subclasses: SubclassDictionary
@@ -413,7 +415,7 @@ function parseMulticlassing(data: Multiclassing): Description[] {
     return multiclassData;
 }
 
-function parseBaseInfo(data: Class): Description[] {
+function parseBaseInfo(data: ClassBase): Description[] {
     const info: Description[] = [];
 
     const name = data.name;
@@ -1025,7 +1027,8 @@ function getSubclasses(
     });
 
     const dictionary: SubclassDictionary = {};
-    for (const subclassData of subclasses.sort(entrySort)) {
+    for (let subclassData of subclasses.sort(entrySort)) {
+        subclassData = handleCopy(subclassData, databank.subclass)
         const subclass = parseSubclass(subclassData, subclassFeatures);
         const key = subclass.key;
         if (!dictionary[key]) dictionary[key] = subclass;
@@ -1064,7 +1067,8 @@ export function getClassesAndClassFeats(databank: Databank): {
     const classFeats: ParsedFeat[] = [];
     const visitedFeats = new Set<string>();
 
-    for (const cls of databank.class.sort(entrySort)) {
+    for (let cls of databank.class.sort(entrySort)) {
+        cls = handleCopy(cls, databank.class);
         const features = getClassFeatures(databank, cls.name, cls.source);
         const subclassFeatures = getClassSubclassFeatures(databank, cls.name, cls.source);
         const subclasses = getSubclasses(databank, cls.name, cls.source, subclassFeatures);
