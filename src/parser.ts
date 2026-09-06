@@ -13,7 +13,7 @@ import {
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
-import { rawData } from './5etools-conversion/rawdata';
+import { Variables } from './variables';
 import { Databank } from './data';
 
 export interface Range {
@@ -125,7 +125,7 @@ export function parseSpellLevel(level: number): string {
 }
 
 export function parseSpellSchool(school: string, source: string, data: Databank): string {
-    const raw = rawData.getSpellSchoolName(school);
+    const raw = Variables.getSpellSchoolName(school);
     if (raw && raw !== school) return raw;
 
     const meta = data.metadata.spellSchools[source][school];
@@ -135,7 +135,7 @@ export function parseSpellSchool(school: string, source: string, data: Databank)
 }
 
 export function parseVehicleUpgradeType(upgrade: string, source: string, data: Databank) {
-    const raw = rawData.getVehicleUpgradeType(upgrade);
+    const raw = Variables.getVehicleUpgradeType(upgrade);
     if (raw && raw !== upgrade) return raw;
 
     const meta = data.metadata.vehicleUpgradeTypes[source][upgrade];
@@ -145,7 +145,7 @@ export function parseVehicleUpgradeType(upgrade: string, source: string, data: D
 }
 
 export function parseOptionalFeatureType(type: string, source: string, data: Databank): string {
-    const raw = rawData.getOptionalFeatureTypeFullName(type);
+    const raw = Variables.getOptionalFeatureTypeFullName(type);
     if (raw !== type) return raw;
 
     const meta = data.metadata.optionalFeatureTypes[source][type];
@@ -155,7 +155,7 @@ export function parseOptionalFeatureType(type: string, source: string, data: Dat
 }
 
 export function parseFeatCategory(category: string, source: string, data: Databank) {
-    const raw = rawData.getFeatCategoryName(category);
+    const raw = Variables.getFeatCategoryName(category);
     if (raw && raw !== category) return raw;
 
     const meta = data.metadata.featCategories[source][category];
@@ -166,7 +166,7 @@ export function parseFeatCategory(category: string, source: string, data: Databa
 
 export function parseAbilityScore(score: string): string {
     const key = score.toLowerCase();
-    const value = rawData.getAbilityName(key);
+    const value = Variables.getAbilityName(key);
     if (!value) {
         return score;
     }
@@ -175,7 +175,7 @@ export function parseAbilityScore(score: string): string {
 
 export function parseAdvantage(adv: string): string {
     const key = adv.toLowerCase();
-    const value = rawData.getAdvantageName(key);
+    const value = Variables.getAdvantageName(key);
     if (!value) throw `Unknown advantage-type: ${adv}`;
     return value;
 }
@@ -408,7 +408,7 @@ export function parseSpellDamage(spell: any): SpellDamage[] | null {
 export function parseAlignments(alignments: string[]): string[] {
     const result: string[] = [];
     for (const alignment of alignments) {
-        const parsed = rawData.getAlignmentName(alignment);
+        const parsed = Variables.getAlignmentName(alignment);
         if (!parsed) throw `Unsupported Alignment: '${alignment}'`;
         result.push(parsed);
     }
@@ -883,14 +883,14 @@ export function title(text: string): string {
 export function parseSizes(sizes: string | string[]): string {
     if (typeof sizes === 'string') sizes = [sizes];
 
-    const words = sizes.map((size) => rawData.getSizeName(size)).filter((size) => size !== null);
+    const words = sizes.map((size) => Variables.getSizeName(size)).filter((size) => size !== null);
     return joinStringsWithOr(words);
 }
 
 export function parseObjectSizes(sizes: string | string[]): string {
     if (typeof sizes === 'string') sizes = [sizes];
 
-    const words = sizes.map((size) => rawData.getObjectSizeName(size)).filter((size) => size !== null);
+    const words = sizes.map((size) => Variables.getObjectSizeName(size)).filter((size) => size !== null);
     return joinStringsWithOr(words);
 }
 
