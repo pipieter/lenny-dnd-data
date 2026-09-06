@@ -14,7 +14,7 @@ import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { rawData } from './5etools-conversion/rawdata';
-import { Databank, MetaData } from './data';
+import { Databank } from './data';
 
 export interface Range {
     type: 'range';

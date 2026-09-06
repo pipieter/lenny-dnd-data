@@ -49,7 +49,8 @@ export class MetaData {
         const metadata = read(file);
         for (const meta of metadata) {
             const source = meta.sourceKey ?? meta.sourceAbbreviation;
-            for (let [key, value] of Object.entries(meta.value)) {
+            for (const key of Object.keys(meta.value)) {
+                let value = meta.value[key];
                 if (typeof value === 'object') {
                     value = (value as any)[objectMapping[meta.type]];
                 }
