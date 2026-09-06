@@ -11,21 +11,14 @@ export interface ParsedSource {
 }
 
 export function getSources(data: Databank): ParsedSource[] {
-    const unseenSources = data.getAllSources();
-    const sources: ParsedSource[] = [];
-
-    for (const source of unseenSources) {
-        const info = data.getSourceData(source);
-
-        sources.push({
-            name: info.name,
-            source,
-            abbreviation: info.abbreviation,
-            published: info.published,
-            category: info.category,
-            legacy: info.legacy,
-        });
-    }
-
-    return sources.sort(entrySort);
+    return data.source
+        .map((source) => ({
+            name: source.name,
+            source: source.source,
+            abbreviation: source.abbreviation,
+            published: source.published,
+            category: source.category,
+            legacy: source.legacy,
+        }))
+        .sort(entrySort);
 }

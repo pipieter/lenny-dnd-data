@@ -18,6 +18,7 @@ import {
 import { getSpellsUrl } from '../urls';
 import { Databank } from '../data';
 import { handleCopy } from '../5etools-conversion/copy';
+import { entrySort } from '../util';
 
 interface Caster {
     name: string;
@@ -97,13 +98,7 @@ function getCasters(spell: any, sources: any[]): any[] {
     }));
 
     // Sort casters alphabetically
-    casters.sort((a, b) => {
-        if (a.name === b.name) {
-            return a.source.localeCompare(b.source);
-        } else {
-            return a.name.localeCompare(b.name);
-        }
-    });
+    casters.sort(entrySort);
 
     return casters;
 }
@@ -113,7 +108,7 @@ function getSpell(spell: any, fluffs: any[], sources: any, data: Databank): Pars
         name: spell.name,
         source: spell.source,
         level: parseSpellLevel(spell.level),
-        school: parseSpellSchool(spell.school, data),
+        school: parseSpellSchool(spell.school, spell.source, data),
         castingTime: parseCastingTime(spell.time, spell.meta),
         range: parseRange(spell.range),
         components: parseComponents(spell.components),

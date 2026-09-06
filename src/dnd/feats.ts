@@ -228,12 +228,12 @@ function getFeatPrerequisites(feat: Feat, data: Databank): string | null {
                     break;
                 }
                 case 'featCategory': {
-                    const featCategories = entry.map((e: string) => parseFeatCategory(e, data));
+                    const featCategories = entry.map((e: string) => parseFeatCategory(e, feat.source, data));
                     group.push(`Any ${joinStringsWithOr(featCategories, true)} Feat`);
                     break;
                 }
                 case 'exclusiveFeatCategory': {
-                    const featCategories = entry.map((e: string) => parseFeatCategory(e, data));
+                    const featCategories = entry.map((e: string) => parseFeatCategory(e, feat.source, data));
                     group.push(`Can't Have Another ${joinStringsWithOr(featCategories, true)} Feat`);
                     break;
                 }
@@ -277,7 +277,7 @@ function getFeatPrerequisites(feat: Feat, data: Databank): string | null {
 
 function getFeatType(feat: Feat, data: Databank): string {
     if (!feat.category) return 'Uncategorized Feat';
-    return parseFeatCategory(feat.category, data);
+    return parseFeatCategory(feat.category, feat.source, data);
 }
 
 export function getFeats(data: Databank): ParsedFeat[] {

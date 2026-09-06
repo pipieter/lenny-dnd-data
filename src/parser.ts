@@ -13,7 +13,7 @@ import {
 import { ColLabelRows } from './dnd/tables';
 import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
-import { rawData } from './5etools-conversion/rawdata';
+import { Variables } from './variables';
 import { Databank } from './data';
 
 export interface Range {
@@ -124,49 +124,49 @@ export function parseSpellLevel(level: number): string {
     return `Level ${level}`;
 }
 
-export function parseSpellSchool(school: string, data: Databank): string {
-    const raw = rawData.getSpellSchoolName(school);
+export function parseSpellSchool(school: string, source: string, data: Databank): string {
+    const raw = Variables.getSpellSchoolName(school);
     if (raw && raw !== school) return raw;
 
-    const meta = data.metadata.spellSchools[school];
-    if (meta && meta !== school) return meta;
+    const meta = data.metadata.spellSchools[source][school];
+    if (meta) return meta;
 
     throw `Unsupported spell school: '${school}'`;
 }
 
-export function parseVehicleUpgradeType(upgrade: string, data: Databank) {
-    const raw = rawData.getVehicleUpgradeType(upgrade);
+export function parseVehicleUpgradeType(upgrade: string, source: string, data: Databank) {
+    const raw = Variables.getVehicleUpgradeType(upgrade);
     if (raw && raw !== upgrade) return raw;
 
-    const meta = data.metadata.vehicleUpgradeTypes[upgrade];
-    if (meta && meta !== upgrade) return meta;
+    const meta = data.metadata.vehicleUpgradeTypes[source][upgrade];
+    if (meta) return meta;
 
     throw `Unknown vehicle upgrade type key '${upgrade}'`;
 }
 
-export function parseOptionalFeatureType(type: string, data: Databank): string {
-    const raw = rawData.getOptionalFeatureTypeFullName(type);
+export function parseOptionalFeatureType(type: string, source: string, data: Databank): string {
+    const raw = Variables.getOptionalFeatureTypeFullName(type);
     if (raw !== type) return raw;
 
-    const meta = data.metadata.optionalFeatureTypes[type];
-    if (meta && meta !== type) return meta;
+    const meta = data.metadata.optionalFeatureTypes[source][type];
+    if (meta) return meta;
 
     throw `Unknown optional feature type: ${type}`;
 }
 
-export function parseFeatCategory(category: string, data: Databank) {
-    const raw = rawData.getFeatCategoryName(category);
+export function parseFeatCategory(category: string, source: string, data: Databank) {
+    const raw = Variables.getFeatCategoryName(category);
     if (raw && raw !== category) return raw;
 
-    const meta = data.metadata.featCategories[category];
-    if (meta && meta !== category) return meta;
+    const meta = data.metadata.featCategories[source][category];
+    if (meta) return meta;
 
     throw `Unknown feat category key '${category}'`;
 }
 
 export function parseAbilityScore(score: string): string {
     const key = score.toLowerCase();
-    const value = rawData.getAbilityName(key);
+    const value = Variables.getAbilityName(key);
     if (!value) {
         return score;
     }
@@ -175,7 +175,7 @@ export function parseAbilityScore(score: string): string {
 
 export function parseAdvantage(adv: string): string {
     const key = adv.toLowerCase();
-    const value = rawData.getAdvantageName(key);
+    const value = Variables.getAdvantageName(key);
     if (!value) throw `Unknown advantage-type: ${adv}`;
     return value;
 }
@@ -408,7 +408,7 @@ export function parseSpellDamage(spell: any): SpellDamage[] | null {
 export function parseAlignments(alignments: string[]): string[] {
     const result: string[] = [];
     for (const alignment of alignments) {
-        const parsed = rawData.getAlignmentName(alignment);
+        const parsed = Variables.getAlignmentName(alignment);
         if (!parsed) throw `Unsupported Alignment: '${alignment}'`;
         result.push(parsed);
     }
@@ -883,14 +883,14 @@ export function title(text: string): string {
 export function parseSizes(sizes: string | string[]): string {
     if (typeof sizes === 'string') sizes = [sizes];
 
-    const words = sizes.map((size) => rawData.getSizeName(size)).filter((size) => size !== null);
+    const words = sizes.map((size) => Variables.getSizeName(size)).filter((size) => size !== null);
     return joinStringsWithOr(words);
 }
 
 export function parseObjectSizes(sizes: string | string[]): string {
     if (typeof sizes === 'string') sizes = [sizes];
 
-    const words = sizes.map((size) => rawData.getObjectSizeName(size)).filter((size) => size !== null);
+    const words = sizes.map((size) => Variables.getObjectSizeName(size)).filter((size) => size !== null);
     return joinStringsWithOr(words);
 }
 

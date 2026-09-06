@@ -14,7 +14,7 @@ import { getSpeciesUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
 import { handleCopy, handleVersions } from '../5etools-conversion/copy';
 import { Databank } from '../data';
-import { rawData } from '../5etools-conversion/rawdata';
+import { Variables } from '../variables';
 
 export interface ParsedSpecies {
     name: string;
@@ -62,7 +62,7 @@ function getSpeciesInfo(data: any, name: string, source: string): Description[] 
 function getSpeciesSizes(sizes: string[]) {
     const results: string[] = [];
     for (const size of sizes) {
-        const name = rawData.getSizeName(size);
+        const name = Variables.getSizeName(size);
         if (name) {
             results.push(name);
         }
@@ -84,7 +84,7 @@ function getSpeciesSpeed(speed: any): string[] {
         speeds.push(`${speed.walk} feet`);
     }
 
-    for (const type of rawData.getSpecialSpeedTypes()) {
+    for (const type of Variables.getSpecialSpeedTypes()) {
         if (speed[type] === true) {
             speeds.push(`${capitalize(type)} equal to your walking speed`);
         } else if (speed[type]) {

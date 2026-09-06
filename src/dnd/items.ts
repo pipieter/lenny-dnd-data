@@ -14,7 +14,7 @@ import { getItemsUrl } from '../urls';
 import { joinStringsWithOr, entrySort } from '../util';
 import { Databank, getKey } from '../data';
 import { cleanDNDText } from '../clean';
-import { rawData } from '../5etools-conversion/rawdata';
+import { Variables } from '../variables';
 
 export interface ParsedItem {
     name: string;
@@ -279,7 +279,7 @@ function parseItem(item: any, data: any, additionalData?: Databank): ParsedItem 
     // Item damage, if applicable
     if (item.dmg1) {
         if (item.dmgType) {
-            const damage = `**${item.dmg1}** ${rawData.getDamageName(item.dmgType)}`;
+            const damage = `**${item.dmg1}** ${Variables.getDamageName(item.dmgType)}`;
             result.properties.push(damage);
         } else {
             const damage = `**${item.dmg1}**`;
