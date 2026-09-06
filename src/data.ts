@@ -2,7 +2,6 @@ import { title } from './parser';
 import { Rule } from './dnd/rules';
 import { Hazard } from './dnd/hazards';
 import { TableData } from './dnd/tables';
-import { Action } from './dnd/actions';
 import { Feat } from './dnd/feats';
 import { Skill } from './dnd/skills';
 import { SpeciesName } from './dnd/names';
@@ -14,6 +13,8 @@ import { Deity } from './dnd/deities';
 import { Cult } from './dnd/cults';
 import { Boon } from './dnd/boons';
 import { LifeBackground, LifeClass } from './dnd/life';
+
+import { Action } from '../5etools-collector/types/action';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;

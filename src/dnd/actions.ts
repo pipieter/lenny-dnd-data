@@ -3,14 +3,7 @@ import { joinStringsWithOr } from '../util';
 
 import { getActionsUrl } from '../urls';
 import { Databank } from '../data';
-
-export interface Action {
-    name: string;
-    source: string;
-    time?: any[];
-    entries: any[];
-    reprintedAs: any;
-}
+import { Unit } from '../../5etools-collector/types/internal/base';
 
 export interface ParsedAction {
     name: string;
@@ -21,21 +14,15 @@ export interface ParsedAction {
     reprint: ReprintData | null;
 }
 
-function parseActionTime(times: any[] | undefined): string {
+function parseActionTime(times: Unit[] | undefined): string {
     if (!times) return 'Uncategorized';
 
-    const results: string[] = [];
-    for (const time of times) {
-        const text = typeof time === 'string' ? time : parseSingleTime(time);
-        if (!text) throw new Error(`Unsupported action-time ${JSON.stringify(time)}`);
-        results.push(text);
-    }
-
+    const results = times.map(parseSingleTime);
     return joinStringsWithOr(results);
 }
 
 export function getActions(data: Databank): ParsedAction[] {
-    const actions: Action[] = data.action;
+    const actions = data.action;
     const parsed: ParsedAction[] = actions.map((action) => ({
         name: action.name,
         source: action.source,

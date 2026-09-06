@@ -15,6 +15,7 @@ import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { Variables } from './variables';
 import { Databank } from './data';
+import { Unit } from '../5etools-collector/types/internal/base';
 
 export interface Range {
     type: 'range';
@@ -180,7 +181,9 @@ export function parseAdvantage(adv: string): string {
     return value;
 }
 
-export function parseSingleTime(time: any): string {
+export function parseSingleTime(time: Unit): string {
+    if (typeof time === 'string') return time;
+
     const amount = time.number;
     const unit = time.unit;
 
