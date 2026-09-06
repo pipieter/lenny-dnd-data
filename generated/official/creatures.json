@@ -2036,6 +2036,124 @@
   }
  },
  {
+  "name": "Abjurer Archmage",
+  "source": "AU",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#abjurer%20archmage_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Abjurer archmages create powerful magical wards. Their magic allows them to quarantine dangerous foes, and they're adept at nullifying the spells of even fellow archmages. Despite their focus on protective magic, abjurer archmages are formidable offensive combatants."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although all archmages have mastered incredible magical power, some specialize in a particular school of magic, pushing their abilities to greater heights in that area. These archmages stock their spellbooks with spells from their preferred school and have developed unique magical techniques."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "12",
+      "20",
+      "15",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 198 (36d8 + 36)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +15, history +10, perception +7",
+     "**Immunities**: psychic; charmed",
+     "**Languages**: Common plus five other languages",
+     "**CR**: 15"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The archmage has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The archmage makes three Arcane Burst attacks."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +10, reach 5 ft. or range 150 ft. *Hit:* 27 (**4d10 + 5**) Force damage."
+   },
+   {
+    "name": "Banishing Blast (Recharge 5-6)",
+    "type": "text",
+    "value": "*Charisma Saving Throw:* DC 18, each creature in a 60-foot Cone. *Failure:* 45 (**10d8**) Force damage, and the target has the Incapacitated condition and is transported to a harmless demiplane until the start of the archmage's next turn, at which point it reappears in the space it left or in the nearest unoccupied space if that space is occupied. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Fortify (Recharge 4-6)",
+    "type": "text",
+    "value": "The archmage magically bolsters itself. The archmage gains 40 Temporary Hit Points."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Abjurer Wizard",
   "source": "MPMM",
   "subtitle": "Medium humanoid",
@@ -2132,7 +2250,11 @@
    }
   ],
   "bonusActions": [],
-  "reprint": null
+  "reprint": {
+   "name": "Abjurer Archmage",
+   "source": "AU",
+   "tag": null
+  }
  },
  {
   "name": "Aboleth",
@@ -2812,6 +2934,147 @@
    }
   ],
   "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Abveku",
+  "source": "AUD",
+  "subtitle": "Medium fiend",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#abveku_aud",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Demon of Assassination*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Habitat**: Planar (Abyss)",
+      "**Treasure**: None"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Abvekus are demons that embody assassins' sadistic professionalism. Patient killers, they prefer to stalk targets from afar before striking. These targets might be the abvekus' enemies or the enemies of demon lords or powerful villains the abvekus serve."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Abvekus are bipedal, insectile demons whose arms end in scythe-like claws. They take pride in their kills and sometimes wear or otherwise display grisly trophies taken from the bodies of their victims."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "22",
+      "20",
+      "17",
+      "18",
+      "15"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+6",
+      "+5",
+      "+3",
+      "+4",
+      "+2"
+     ],
+     [
+      "Save.",
+      "+8",
+      "+11",
+      "+5",
+      "+8",
+      "+9",
+      "+2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 209 (22d8 + 110)",
+     "**Speed**: *walk* 40 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: acrobatics +11, perception +9, stealth +16",
+     "**Resistances**: cold, fire, lightning",
+     "**Immunities**: poison; poisoned",
+     "**Languages**: Abyssal; telepathy 120 ft.",
+     "**CR**: 14"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Demonic Restoration",
+    "type": "text",
+    "value": "If the abveku dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The abveku has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The abveku makes four Scything Claw attacks and uses Mesmerizing Dance if available."
+   },
+   {
+    "name": "Scything Claw",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +11, reach 10 ft. *Hit:* 19 (**3d8 + 6**) Slashing damage."
+   },
+   {
+    "name": "Mesmerizing Dance (Recharge 5-6)",
+    "type": "text",
+    "value": "*Wisdom Saving Throw:* DC 18, each creature within a 20-foot Emanation originating from the abveku. *Failure:* The target has the Paralyzed condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Shadow Stealth",
+    "type": "text",
+    "value": "While in Dim Light or Darkness, the abveku takes the Hide action."
+   }
+  ],
   "reprint": null
  },
  {
@@ -10688,7 +10951,7 @@
     "type": "list",
     "caption": "",
     "entries": [
-     "**AC**: 18 (Plate Armor)",
+     "**AC**: 18 (plate)",
      "**HP**: 143 (22d8 + 44)",
      "**Speed**: *walk* 25 Ft.",
      "**Skills**: athletics +9, intimidation +5, perception +6",
@@ -10714,11 +10977,6 @@
     "name": "Second Wind (Recharges after a Short or Long Rest)",
     "type": "text",
     "value": "As a bonus action, Ahmaergo can regain 20 hit points."
-   },
-   {
-    "name": "Extra Damage",
-    "type": "text",
-    "value": "If Ahmaergo has more than half his hit points remaining he deals an extra 7 (**2d6**) slashing damage on every hit."
    }
   ],
   "actions": [
@@ -10730,7 +10988,7 @@
    {
     "name": "Greataxe",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 11 (**1d12 + 5**) slashing damage."
+    "value": "*Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 11 (**1d12 + 5**) slashing damage, plus 7 (**2d6**) slashing damage if Ahmaergo has more than half his hit points remaining."
    },
    {
     "name": "Heavy Crossbow",
@@ -32673,6 +32931,146 @@
   "reprint": null
  },
  {
+  "name": "Arisen Sarrukh",
+  "source": "AUD",
+  "subtitle": "Medium undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#arisen%20sarrukh_aud",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Wicked Serpentine Oppressors*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Habitat**: Underdark",
+      "**Treasure**: Relics"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Powerful and magical, sarrukhs once commanded a wicked empire that spanned Faerûn, but it fell tens of thousands of years ago. In the millennia that followed, the many species sarrukhs created drove them nearly to extinction. Only a small number of sarrukhs remain in isolated enclaves, including a small community beneath the Citadel at the heart of Thaymount."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Sarrukhs have snakelike lower bodies and heads but torsos that resemble those of humanoids. Their gleaming eyes are alight with inner fire. Sarrukhs can live for up to a millennium, and most expect to see their empire rise again."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "23",
+      "17",
+      "22",
+      "18",
+      "17",
+      "18"
+     ],
+     [
+      "Mod.",
+      "+6",
+      "+3",
+      "+6",
+      "+4",
+      "+3",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+6",
+      "+3",
+      "+6",
+      "+4",
+      "+3",
+      "+4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 273 (26d8 + 156)",
+     "**Speed**: *walk* 40 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +9, stealth +12",
+     "**Immunities**: fire, necrotic, poison; charmed, frightened, poisoned",
+     "**Languages**: Common, Draconic; telepathy 120 ft.",
+     "**CR**: 18"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Legendary Resistance (3/Day)",
+    "type": "text",
+    "value": "If the sarrukh fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The sarrukh has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The sarrukh makes three attacks, using Trident or Necrotic Spit in any combination."
+   },
+   {
+    "name": "Trident",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +12, reach 10 ft. *Hit:* 33 (**6d8 + 6**) Piercing damage."
+   },
+   {
+    "name": "Necrotic Spit",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +12, range 90 ft. *Hit:* 11 (**2d10**) Poison damage plus 22 (**4d10**) Necrotic damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Venomous Teleport (Recharge 5-6)",
+    "type": "text",
+    "value": "The sarrukh teleports up to 120 feet to an occupied space it can see, and each creature within 10 feet of the space the sarrukh leaves or arrives in (sarrukh's choice) is subjected to the following effect. *Constitution Saving Throw:* DC 20. *Failure:* 22 (**4d10**) Poison damage. *Success* Half damage."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Arkhan the Cruel",
   "source": "BGDIA",
   "subtitle": "Medium humanoid",
@@ -46855,6 +47253,139 @@
   }
  },
  {
+  "name": "Baelnorn",
+  "source": "AU",
+  "subtitle": "Medium undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#baelnorn_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Baelnorns__ are deathless guardians of treasures and lore. Each baelnorn was once a living person who undertook a non-evil process to preserve their existence that involved either a divine blessing or an ancient ritual. Many baelnorns were once elves. In fact, ancient elves were the first to discover the secret to becoming a baelnorn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Baelnorns__ typically dedicate themselves to protecting vaults, castles, or ruins. In the Forgotten Realms, elf baelnorns protect the site of Myth Drannor, a ruined ancient city that was once a magical metropolis. Many enjoy studying ancient lore lost to living scholars. As only the most dedicated can endure the transition into a baelnorn, baelnorns are often proud of the eternal life they've achieved."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Unlike liches, baelnorns almost never have soul jars, although some baelnorns associated with a holy site might house their souls within a sacred relic. Many baelnorns create magical clones their spirits can inhabit if their bodies are destroyed."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Newly risen baelnorns look much as they did in life, albeit with glowing white eyes. They often continue their prior roles as guardians, sages, or teachers. A baelnorn's hair and flesh gradually fade away over many years; the oldest resemble stately skeletons in diaphanous raiment."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Baelnorns__ spend years poring over arcane tomes to aid their transition into undeath, and even those who weren't mages at the time of their transformation typically spend much of their long existences studying magical lore. As a result, baelnorns can cast powerful spells."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "11",
+      "16",
+      "16",
+      "21",
+      "14",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+3",
+      "+5",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+3",
+      "+5",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 255 (34d8 + 102)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 2",
+     "**Skills**: arcana +17, history +11, insight +8, perception +8",
+     "**Resistances**: lightning, radiant",
+     "**Immunities**: necrotic, poison; charmed, frightened, paralyzed, poisoned",
+     "**Languages**: all",
+     "**CR**: 18"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+    "type": "text",
+    "value": "If the baelnorn fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The baelnorn has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The baelnorn makes three attacks, using Arcane Burst or Paralyzing Touch in any combination. It can replace two attacks with a use of Spellcasting to cast __Lightning Bolt__ (level 4 version)."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +11, reach 5 ft. or range 120 ft. *Hit:* 31 (**4d12 + 5**) Force damage."
+   },
+   {
+    "name": "Paralyzing Touch",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +11, reach 5 ft. *Hit:* 10 (**2d4 + 5**) Cold damage, and the target has the Paralyzed condition until the start of the baelnorn's next turn."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Baernaloth",
   "source": "MPP",
   "subtitle": "Large fiend",
@@ -52754,6 +53285,108 @@
     "name": "Bite",
     "type": "text",
     "value": "*Melee Attack Roll:* +4 to hit, reach 5 ft. *Hit:* 1 Piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Battle Familiar",
+  "source": "AU",
+  "subtitle": "Medium Celestial, Fey or Fiend",
+  "summonedBySpell": "Battle Familiar",
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#battle%20familiar_au",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "16",
+      "12",
+      "8",
+      "13",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+3",
+      "+1",
+      "-1",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+3",
+      "+1",
+      "-1",
+      "+1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 11 + The Spell's Level + 2 (Brute Only)",
+     "**HP**: 30 (Brute only) or 20 (Flyer or Stalker only) + 5 for each spell level above 2",
+     "**Speed**: *walk* 40 Ft., *fly* 30 Ft. (hover; Flyer Only), *swim* 30 Ft., *canHover* (hover)",
+     "**Languages**: understands the languages you know"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Flyby (Flyer Only)",
+    "type": "text",
+    "value": "The familiar doesn't provoke Opportunity Attacks when it flies out of an enemy's reach."
+   },
+   {
+    "name": "Talented",
+    "type": "text",
+    "value": "Add half the spell's level (round down) to any ability check or saving throw the familiar makes."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The familiar makes a number of Rend attacks equal to half this spell's level (round down). The familiar can replace one of these attacks with Prowl if available."
+   },
+   {
+    "name": "Rend",
+    "type": "text",
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d8 + 3 + summonSpellLevel** Force damage."
+   },
+   {
+    "name": "Prowl (Stalker Only)",
+    "type": "text",
+    "value": "The familiar moves up to half its Speed without provoking Opportunity Attacks. At the end of this movement, the familiar can take the Hide action."
    }
   ],
   "bonusActions": [],
@@ -73769,6 +74402,94 @@
   "reprint": null
  },
  {
+  "name": "Bubba Wugga",
+  "source": "DrDe-BD",
+  "subtitle": "Large construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/DrDe-BD/Bubba%20Wugga.webp",
+  "url": "https://5e.tools/bestiary.html#bubba%20wugga_drde-bd",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "19",
+      "8",
+      "16",
+      "5",
+      "7",
+      "7"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "-1",
+      "+3",
+      "-3",
+      "-2",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+4",
+      "-1",
+      "+3",
+      "-3",
+      "-2",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 11",
+     "**HP**: 68 (8d10 + 24)",
+     "**Speed**: *walk* 40 Ft.",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Common, Elvish",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Greatclub",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +6, reach 5 ft. *Hit:* 13 (**2d8 + 4**) Bludgeoning damage."
+   },
+   {
+    "name": "Javelin",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +6, reach 5 ft. or range 30/120 ft. *Hit:* 11 (**2d6 + 4**) Piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Buer",
   "source": "CoA",
   "subtitle": "Large fiend",
@@ -93559,6 +94280,118 @@
   }
  },
  {
+  "name": "Conjurer Archmage",
+  "source": "AU",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#conjurer%20archmage_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Physical distance is no concern to conjurer archmages. These archmages can teleport themselves and others across nations and planar boundaries in the blink of an eye. They create magical effects from thin air or pull them from other planes of existence."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although all archmages have mastered incredible magical power, some specialize in a particular school of magic, pushing their abilities to greater heights in that area. These archmages stock their spellbooks with spells from their preferred school and have developed unique magical techniques."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "12",
+      "20",
+      "15",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 225 (41d8 + 41)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +15, history +10, perception +7",
+     "**Languages**: Common plus five other languages",
+     "**CR**: 15"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The archmage has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The archmage makes four Arcane Burst attacks."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +10, reach 5 ft. or range 150 ft. *Hit:* 27 (**4d10 + 5**) Force damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Benign Transposition (3/Day)",
+    "type": "text",
+    "value": "The archmage teleports up to 30 feet to an unoccupied space that it can see. If it instead chooses a space within range that is occupied by a willing creature, they both teleport, swapping places."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Conjurer Wizard",
   "source": "MPMM",
   "subtitle": "Medium humanoid",
@@ -93661,7 +94494,11 @@
     "value": "The conjurer magically summons an __air elemental__, an __earth elemental__, a __fire elemental__, or a __water elemental__. The elemental appears in an unoccupied space within 60 feet of the conjurer, whom it obeys. It takes its turn immediately after the conjurer. It lasts for 1 hour, until it or the conjurer dies, or until the conjurer dismisses it as a bonus action."
    }
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Conjurer Archmage",
+   "source": "AU",
+   "tag": null
+  }
  },
  {
   "name": "Conservatory Student",
@@ -106435,6 +107272,160 @@
   "reprint": null
  },
  {
+  "name": "Darkenbeast",
+  "source": "AU",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#darkenbeast_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Darkenbeasts__ are ferocious, bestial hunters created from ordinary animals by sinister spellcasters. Regardless of darkenbeasts' original forms, the magic used to create them twists them into fanged horrors with leathery wings. Most darkenbeasts have luminous bones that glow through their skin; they resemble eerie flying skeletons as they soar through the night sky. A darkenbeast is loyal to its creators, who can extract the magic used to transform it in a dramatic display that's fatal to the darkenbeast."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Darkenbeasts__ might have vestigial characteristics of the animals they were before transformation. Roll on or choose a result from the Darkenbeast Origin table as inspiration for these cosmetic features."
+   },
+   {
+    "name": "Darkenbeast Origin",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Darkenbeast Origin",
+     "headers": [
+      "1d6",
+      "The Darkenbeast Was Once A..."
+     ],
+     "rows": [
+      [
+       "1",
+       "Cobra, so it has a flared neck and scaly skin."
+      ],
+      [
+       "2",
+       "Fox, giving it reddish fur and vulpine features."
+      ],
+      [
+       "3",
+       "Panther, so it has sharp claws and a high-pitched scream."
+      ],
+      [
+       "4",
+       "Rabbit, giving it long ears and a skittish demeanor."
+      ],
+      [
+       "5",
+       "Turtle, giving it a blunt snout and shell-like carapace."
+      ],
+      [
+       "6",
+       "Wolf, so it emits eerie howls."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "17",
+      "14",
+      "16",
+      "5",
+      "10",
+      "13"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+3",
+      "-3",
+      "+0",
+      "+1"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+3",
+      "-3",
+      "+0",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 60 (8d8 + 24)",
+     "**Speed**: *walk* 20 Ft., *fly* 40 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +2, stealth +4",
+     "**CR**: 4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Spell Imprint",
+    "type": "text",
+    "value": "As part of the darkenbeast's creation, its creator can cast one spell of level 5 or lower with a casting time of an action. The spell has no effect but is stored within the darkenbeast. While within 30 feet of the darkenbeast, the darkenbeast's creator can cast the stored spell, requiring no spell components and using the caster's spellcasting ability. When the spell is cast this way, its effects originate from the darkenbeast (as if the darkenbeast were the spellcaster), and immediately after the spell is cast, the darkenbeast dies in a flash of purple flame."
+   },
+   {
+    "name": "Sunlight Sensitivity",
+    "type": "text",
+    "value": "While in sunlight, the darkenbeast has Disadvantage on ability checks and attack rolls."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The darkenbeast makes three Rend attacks."
+   },
+   {
+    "name": "Rend",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 12 (**2d8 + 3**) Slashing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Shadow Stalker",
+    "type": "text",
+    "value": "While in Dim Light or Darkness, the darkenbeast takes the Disengage or Hide action."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Darkling",
   "source": "MPMM",
   "subtitle": "Small fey",
@@ -110822,7 +111813,7 @@
    {
     "name": "Deathly Claw",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (**3d6 + 3**) necrotic damage)."
+    "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 13 (**3d6 + 3**) necrotic damage."
    },
    {
     "name": "Grave Bolts",
@@ -118735,6 +119726,113 @@
   }
  },
  {
+  "name": "Dinosaur Spirit",
+  "source": "AU",
+  "subtitle": "Huge beast",
+  "summonedBySpell": "Summon Dinosaur",
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#dinosaur%20spirit_au",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "21",
+      "11",
+      "15",
+      "4",
+      "12",
+      "9"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+0",
+      "+2",
+      "-3",
+      "+1",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+5",
+      "+0",
+      "+2",
+      "-3",
+      "+1",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 11 + The Spell's Level + 2 (Ankylosaur Only)",
+     "**HP**: 60 + 10 for each spell level above 6",
+     "**Speed**: *walk* 40 Ft.",
+     "**Languages**: understands the languages you know"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Siege Monster (Ankylosaur Only)",
+    "type": "text",
+    "value": "The spirit deals double damage to objects and structures."
+   },
+   {
+    "name": "Tough",
+    "type": "text",
+    "value": "Add half the spell's level (round down) to any Strength or Constitution saving throw the spirit makes."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The spirit makes a number of attacks equal to half this spell's level (round down)."
+   },
+   {
+    "name": "Bite (Tyrannosaur Only)",
+    "type": "text",
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 10 ft. *Hit:* **2d10 + 5 + summonSpellLevel** Piercing damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC equals your spell save DC), and it has the Restrained condition until the grapple ends."
+   },
+   {
+    "name": "Gore (Triceratops Only)",
+    "type": "text",
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d10 + 5 + summonSpellLevel** Piercing damage. If the target is a Huge or smaller creature and the spirit moved 20+ feet straight toward it immediately before the hit, the target takes an extra **1d10** Piercing damage and has the Prone condition."
+   },
+   {
+    "name": "Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 10 ft. *Hit:* **1d10 + 5 + summonSpellLevel** Bludgeoning damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Dire Corby",
   "source": "MFF",
   "subtitle": "Medium humanoid",
@@ -120556,6 +121654,112 @@
   }
  },
  {
+  "name": "Diviner Archmage",
+  "source": "AU",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#diviner%20archmage_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Diviner archmages spy on distant lands and peer into the future. These archmages often anticipate others' actions and react seconds before events occur."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although all archmages have mastered incredible magical power, some specialize in a particular school of magic, pushing their abilities to greater heights in that area. These archmages stock their spellbooks with spells from their preferred school and have developed unique magical techniques."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "12",
+      "20",
+      "15",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 176 (32d8 + 32)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +15, history +10, insight +7, investigation +10, perception +7",
+     "**Languages**: all",
+     "**CR**: 15"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The archmage has Advantage on saving throws against spells and similar effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The archmage makes four Arcane Burst attacks. It can replace one attack with a use of Spellcasting to cast __Mind Spike__ (level 4 version)."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +10, reach 5 ft. or range 150 ft. *Hit:* 24 (**3d12 + 5**) Force damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Diviner Wizard",
   "source": "MPMM",
   "subtitle": "Medium humanoid",
@@ -120652,7 +121856,11 @@
    }
   ],
   "bonusActions": [],
-  "reprint": null
+  "reprint": {
+   "name": "Diviner Archmage",
+   "source": "AU",
+   "tag": null
+  }
  },
  {
   "name": "Djeneba",
@@ -146583,7 +147791,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "The aliens known as elder things have colonized countless worlds over unfathomable eons. Within hidden cyclopean cities, they collect mind-shattering secrets of the multiverse. Their empires have declined over the ages, suffering challenges by yithians and their creations, the shoggoths). Those elder things that remain guard the remnants of their power and seek to subjugate those they consider lesser beings."
+    "value": "The aliens known as elder things have colonized countless worlds over unfathomable eons. Within hidden cyclopean cities, they collect mind-shattering secrets of the multiverse. Their empires have declined over the ages, suffering challenges by yithians and their creations, the shoggoths. Those elder things that remain guard the remnants of their power and seek to subjugate those they consider lesser beings."
    }
   ],
   "stats": {
@@ -150937,6 +152145,112 @@
   }
  },
  {
+  "name": "Enchanter Archmage",
+  "source": "AU",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#enchanter%20archmage_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Enchanter archmages enjoy shaping minds. These archmages tinker with memories and compel others to follow their commands, either subtly or blatantly."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although all archmages have mastered incredible magical power, some specialize in a particular school of magic, pushing their abilities to greater heights in that area. These archmages stock their spellbooks with spells from their preferred school and have developed unique magical techniques."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "12",
+      "20",
+      "15",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 214 (39d8 + 39)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +15, history +10, perception +7, persuasion +13",
+     "**Languages**: Common plus five other languages",
+     "**CR**: 15"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The archmage has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The archmage makes four Arcane Burst Attacks."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +10, reach 5 ft. or range 150 ft. *Hit:* 21 (**3d10 + 5**) Force damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Enchanter Wizard",
   "source": "MPMM",
   "subtitle": "Medium humanoid",
@@ -151028,7 +152342,11 @@
    }
   ],
   "bonusActions": [],
-  "reprint": null
+  "reprint": {
+   "name": "Enchanter Archmage",
+   "source": "AU",
+   "tag": null
+  }
  },
  {
   "name": "Enchanting Infiltrator",
@@ -154732,6 +156050,117 @@
   }
  },
  {
+  "name": "Evoker Archmage",
+  "source": "AU",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#evoker%20archmage_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Evoker archmages wield unbridled destructive magic with surgical precision. They can carve out safe areas in an explosive blast, shielding themselves and allies while obliterating foes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although all archmages have mastered incredible magical power, some specialize in a particular school of magic, pushing their abilities to greater heights in that area. These archmages stock their spellbooks with spells from their preferred school and have developed unique magical techniques."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "12",
+      "20",
+      "15",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 214 (39d8 + 39)",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +15, history +10, intimidation +8, perception +7",
+     "**Languages**: Common plus five other languages",
+     "**CR**: 15"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Evocation Sculptor",
+    "type": "text",
+    "value": "When the archmage casts a spell that creates an area of effect, it can choose itself and up to five other creatures it can see, sculpting the spell's energy around them. A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The archmage has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The archmage makes four Arcane Burst attacks. It can replace one attack with a use of Spellcasting to cast __Shatter__."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +10, reach 5 ft. or range 150 ft. *Hit:* 27 (**4d10 + 5**) Force damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Evoker Wizard",
   "source": "MPMM",
   "subtitle": "Medium humanoid",
@@ -154828,7 +156257,11 @@
    }
   ],
   "bonusActions": [],
-  "reprint": null
+  "reprint": {
+   "name": "Evoker Archmage",
+   "source": "AU",
+   "tag": null
+  }
  },
  {
   "name": "Exethanter",
@@ -215484,6 +216917,328 @@
   }
  },
  {
+  "name": "Groundling Grunt",
+  "source": "AU",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#groundling%20grunt_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Created to be brute troops, groundling grunts love tearing flesh with their claws. If not controlled by a commanding leader, they're likely to slip away and pursue mayhem or to stop during a battle to feast on their kills."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Groundlings are hairy, stinky bullies and insatiable carnivores. They use their claws not only to disembowel their victims but also to dig traps, tunnel beneath buildings, and excavate hiding spots from which to ambush prey."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Groundlings are created, not born. Most are magical mutations of fierce burrowing animals. Groundlings often serve as shock troops or assassins for their creators, though leaderless groundlings sometimes pursue lives as killers or mercenaries."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "15",
+      "14",
+      "7",
+      "10",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+2",
+      "-2",
+      "+0",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+2",
+      "-2",
+      "+0",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 45 (7d8 + 14)",
+     "**Speed**: *walk* 30 Ft., *burrow* 10 Ft.",
+     "**Skills**: perception +2, stealth +4, survival +2",
+     "**Resistances**: poison",
+     "**Languages**: Common",
+     "**CR**: 1"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Claw",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 7 (**1d8 + 3**) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two paws."
+   },
+   {
+    "name": "Sling",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +4, range 30/120 ft. *Hit:* 7 (**2d4 + 2**) Bludgeoning damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Groundling Slayer",
+  "source": "AU",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#groundling%20slayer_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A groundling that learns subtlety and self-control becomes an efficient killer. These groundling slayers are often entrusted with solo missions of stealth or assassination or are assigned to keep fractious groundlings in line. Slayers usually wait until after a fight is over before consuming foes they've slain."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Groundlings are hairy, stinky bullies and insatiable carnivores. They use their claws not only to disembowel their victims but also to dig traps, tunnel beneath buildings, and excavate hiding spots from which to ambush prey."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Groundlings are created, not born. Most are magical mutations of fierce burrowing animals. Groundlings often serve as shock troops or assassins for their creators, though leaderless groundlings sometimes pursue lives as killers or mercenaries."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "17",
+      "16",
+      "15",
+      "10",
+      "13",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+3",
+      "+2",
+      "+0",
+      "+1",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+3",
+      "+2",
+      "+0",
+      "+1",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 58 (9d8 + 18)",
+     "**Speed**: *walk* 30 Ft., *burrow* 20 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +3, stealth +7, survival +3",
+     "**Resistances**: poison",
+     "**Languages**: Common",
+     "**CR**: 3"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The groundling makes two attacks, using Claw or Dagger in any combination."
+   },
+   {
+    "name": "Claw",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 12 (**2d8 + 3**) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two paws."
+   },
+   {
+    "name": "Dagger",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +5, reach 5 ft. or range 20/60 ft. *Hit:* 5 (**1d4 + 3**) Piercing damage plus 7 (**2d6**) Poison damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Groundling Stalker",
+  "source": "AU",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#groundling%20stalker_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Groundling stalkers enjoy ambushing and murdering foes from afar with their crossbows. Stalkers rarely maintain the element of surprise for long, as they roar in bloodthirsty delight when they strike."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Groundlings are hairy, stinky bullies and insatiable carnivores. They use their claws not only to disembowel their victims but also to dig traps, tunnel beneath buildings, and excavate hiding spots from which to ambush prey."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Groundlings are created, not born. Most are magical mutations of fierce burrowing animals. Groundlings often serve as shock troops or assassins for their creators, though leaderless groundlings sometimes pursue lives as killers or mercenaries."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "16",
+      "14",
+      "8",
+      "12",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+3",
+      "+2",
+      "-1",
+      "+1",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+3",
+      "+2",
+      "-1",
+      "+1",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 52 (8d8 + 16)",
+     "**Speed**: *walk* 30 Ft., *burrow* 10 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +3, stealth +5, survival +3",
+     "**Resistances**: poison",
+     "**Languages**: Common",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [],
+  "actions": [
+   {
+    "name": "Claw",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 12 (**2d8 + 3**) Slashing damage. If the target is a Medium or smaller creature, it has the Grappled condition (escape DC 13) from one of two paws."
+   },
+   {
+    "name": "Heavy Crossbow",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +5, range 100/400 ft. *Hit:* 14 (**2d10 + 3**) Piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Grum'shar",
   "source": "WDH",
   "subtitle": "Medium humanoid",
@@ -234630,11 +236385,6 @@
     "name": "Relentless Endurance (Recharges after a Long Rest)",
     "type": "text",
     "value": "When Hrabbaz is reduced to 0 hit points but not killed outright, he drops to 1 hit point instead."
-   },
-   {
-    "name": "Extra Damage",
-    "type": "text",
-    "value": "As long as Hrabbaz has more than half his hit points left he deals an extra 3 (**1d6**) damage on all hits."
    }
   ],
   "actions": [
@@ -234646,7 +236396,7 @@
    {
     "name": "Morningstar",
     "type": "text",
-    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 9 (**1d8 + 5**) piercing damage."
+    "value": "*Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:* 9 (**1d8 + 5**) piercing damage, plus 3 (**1d6**) piercing damage if Hrabbaz has more than half his hit points remaining."
    }
   ],
   "bonusActions": [],
@@ -241233,6 +242983,112 @@
   }
  },
  {
+  "name": "Illusionist Archmage",
+  "source": "AU",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#illusionist%20archmage_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Illusionist archmages have mastered the tactile elements of illusory magic. They can create complex effects that seem vibrantly real and modify the subtlest details of illusory disguises, objects, and terrain."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although all archmages have mastered incredible magical power, some specialize in a particular school of magic, pushing their abilities to greater heights in that area. These archmages stock their spellbooks with spells from their preferred school and have developed unique magical techniques."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "12",
+      "20",
+      "15",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 220 (40d8 + 40)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +15, deception +8, perception +7, stealth +8",
+     "**Languages**: Common plus five other languages",
+     "**CR**: 15"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The archmage has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The archmage makes four Arcane Burst attacks."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +10, reach 5 ft. or range 150 ft. *Hit:* 21 (**3d10 + 5**) Force damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Illusionist Wizard",
   "source": "MPMM",
   "subtitle": "Medium humanoid",
@@ -241330,7 +243186,11 @@
     "value": "The illusionist projects an illusion that makes the illusionist appear to be standing in a place a few inches from its actual location, causing any creature to have disadvantage on attack rolls against the illusionist. The effect lasts for 1 minute, and it ends early if the illusionist takes damage, if it is incapacitated, or if its speed becomes 0."
    }
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Illusionist Archmage",
+   "source": "AU",
+   "tag": null
+  }
  },
  {
   "name": "Ilvara Mizzrym",
@@ -252787,7 +254647,11 @@
     "value": "The necromancer magically summons five __skeletons__ or __zombies__. The summoned creatures appear in unoccupied spaces within 60 feet of the necromancer, whom they obey. They take their turns immediately after the necromancer. Each lasts for 1 hour, until it or the necromancer dies, or until the necromancer dismisses it as a bonus action."
    }
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Necromancer Archmage",
+   "source": "AU",
+   "tag": null
+  }
  },
  {
   "name": "Jessamine",
@@ -278966,6 +280830,120 @@
   "reprint": null
  },
  {
+  "name": "Living Cone of Cold",
+  "source": "AU",
+  "subtitle": "Large construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#living%20cone%20of%20cold_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Accompanied by blasts of frigid wind, a living cone of cold seeks sources of heat—such as living creatures—to freeze solid."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Magical energies unleashed during cataclysmic battles or catastrophic experiments can cause spell effects to come to life as living spells. These beings' magical energy is persistent, and they bear features resembling those of their origin spells—usually Conjuration or Evocation spells. Living spells typically linger in the region of their creation, subsisting on ambient magical energy and lashing out at creatures they encounter."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "15",
+      "20",
+      "3",
+      "11",
+      "6"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+2",
+      "+5",
+      "-4",
+      "+0",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+2",
+      "+5",
+      "-4",
+      "+0",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 105 (10d10 + 50)",
+     "**Speed**: *walk* 25 Ft., *fly* 25 Ft.",
+     "**Immunities**: cold; blinded, charmed, deafened, frightened, grappled, poisoned, prone, restrained",
+     "**CR**: 7"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Amorphous",
+    "type": "text",
+    "value": "The living spell can move through a space as narrow as 1 inch without expending extra movement to do so."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The living spell has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The living spell makes two Magical Strike attacks."
+   },
+   {
+    "name": "Magical Strike",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +8, reach 10 ft. *Hit:* 27 (**5d8 + 5**) Cold damage."
+   },
+   {
+    "name": "Spell Mimicry (Recharge 5-6)",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 16, each creature in a 60-foot Cone. *Failure:* 36 (**8d8**) Cold damage. *Success* Half damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Living Demiplane",
   "source": "IDRotF",
   "subtitle": "Medium construct",
@@ -279603,6 +281581,115 @@
   "reprint": null
  },
  {
+  "name": "Living Thunderwave",
+  "source": "AU",
+  "subtitle": "Medium construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#living%20thunderwave_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A living thunderwave roars and rumbles, booming with thunder like an unnatural storm cloud."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Magical energies unleashed during cataclysmic battles or catastrophic experiments can cause spell effects to come to life as living spells. These beings' magical energy is persistent, and they bear features resembling those of their origin spells—usually Conjuration or Evocation spells. Living spells typically linger in the region of their creation, subsisting on ambient magical energy and lashing out at creatures they encounter."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "13",
+      "16",
+      "3",
+      "6",
+      "6"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+1",
+      "+3",
+      "-4",
+      "-2",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+1",
+      "+3",
+      "-4",
+      "-2",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 30 (4d8 + 12)",
+     "**Speed**: *walk* 25 Ft., *fly* 25 Ft.",
+     "**Immunities**: thunder; blinded, charmed, deafened, frightened, grappled, poisoned, prone, restrained",
+     "**CR**: 1"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Amorphous",
+    "type": "text",
+    "value": "The living spell can move through a space as narrow as 1 inch without expending extra movement to do so."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The living spell has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Magical Strike",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 6 (**1d6 + 3**) Thunder damage."
+   },
+   {
+    "name": "Spell Mimicry (Recharge 5-6)",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 13, each creature in a 15-foot Cube originating from the living spell. *Failure:* 9 (**2d8**) Thunder damage, and the target is pushed 10 feet away from the living spell. *Success* Half damage only. *Failure or Success*: A thunderous boom is audible within 300 feet."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Living Unseen Servant",
   "source": "WDMM",
   "subtitle": "Medium construct",
@@ -279688,6 +281775,120 @@
     "name": "Slam",
     "type": "text",
     "value": "*Melee Weapon Attack:* +2 to hit, reach 5 ft., one target. *Hit:* 1 bludgeoning damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Living Vitriolic Sphere",
+  "source": "AU",
+  "subtitle": "Large construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#living%20vitriolic%20sphere_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A living vitriolic sphere is a perpetually roiling, fuming miasma. It scars the ground beneath itself with dribbles of acid."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Magical energies unleashed during cataclysmic battles or catastrophic experiments can cause spell effects to come to life as living spells. These beings' magical energy is persistent, and they bear features resembling those of their origin spells—usually Conjuration or Evocation spells. Living spells typically linger in the region of their creation, subsisting on ambient magical energy and lashing out at creatures they encounter."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "15",
+      "18",
+      "3",
+      "10",
+      "6"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+2",
+      "+4",
+      "-4",
+      "+0",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+2",
+      "+4",
+      "-4",
+      "+0",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 76 (8d10 + 32)",
+     "**Speed**: *walk* 25 Ft., *fly* 25 Ft.",
+     "**Immunities**: acid; blinded, charmed, deafened, frightened, grappled, poisoned, prone, restrained",
+     "**CR**: 5"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Amorphous",
+    "type": "text",
+    "value": "The living spell can move through a space as narrow as 1 inch without expending extra movement to do so."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The living spell has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The living spell makes two Magical Strike attacks."
+   },
+   {
+    "name": "Magical Strike",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7, reach 10 ft. *Hit:* 21 (**5d6 + 4**) Acid damage."
+   },
+   {
+    "name": "Spell Mimicry (Recharge 5-6)",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 15, each creature in a 20-foot-radius Sphere centered on a point within 150 feet. *Failure:* 25 (**10d4**) Acid damage, and 12 (**5d4**) Acid damage at the end of the target's next turn. *Success* Half initial damage only."
    }
   ],
   "bonusActions": [],
@@ -317451,6 +319652,118 @@
   }
  },
  {
+  "name": "Necromancer Archmage",
+  "source": "AU",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#necromancer%20archmage_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Necromancer archmages use necrotic magic to siphon life from their enemies and empower the undead. Many necromancers think nothing of raising the dead and sending them into battle."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although all archmages have mastered incredible magical power, some specialize in a particular school of magic, pushing their abilities to greater heights in that area. These archmages stock their spellbooks with spells from their preferred school and have developed unique magical techniques."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "12",
+      "20",
+      "15",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 225 (41d8 + 41)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +15, history +10, intimidation +8, perception +7",
+     "**Resistances**: necrotic",
+     "**Languages**: Common plus five other languages",
+     "**CR**: 15"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The archmage has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Marshal Undead",
+    "type": "text",
+    "value": "Undead creatures of the archmage's choice in a 60-foot Emanation originating from the archmage have Advantage on attack rolls and saving throws unless the archmage has the Incapacitated condition."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The archmage makes four Arcane Burst attacks. It can replace one attack with a use of Spellcasting to cast __Blight__."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +10, reach 5 ft. or range 150 ft. *Hit:* 21 (**3d10 + 5**) Force damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Necromancer Wizard",
   "source": "MPMM",
   "subtitle": "Medium humanoid",
@@ -317549,7 +319862,11 @@
     "value": "The necromancer magically summons five __skeletons__ or __zombies__. The summoned creatures appear in unoccupied spaces within 60 feet of the necromancer, whom they obey. They take their turns immediately after the necromancer. Each lasts for 1 hour, until it or the necromancer dies, or until the necromancer dismisses it as a bonus action."
    }
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Necromancer Archmage",
+   "source": "AU",
+   "tag": null
+  }
  },
  {
   "name": "Necromite of Myrkul",
@@ -348262,6 +350579,109 @@
   "reprint": null
  },
  {
+  "name": "Plant Spirit",
+  "source": "AU",
+  "subtitle": "Large plant",
+  "summonedBySpell": "Summon Plant",
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#plant%20spirit_au",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "17",
+      "13",
+      "14",
+      "10",
+      "13",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+1",
+      "+2",
+      "+0",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+1",
+      "+2",
+      "+0",
+      "+1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 11 + The Spell's Level + 2 (Tree Only)",
+     "**HP**: 50 + 10 for each spell level above 5",
+     "**Speed**: *walk* 40 Ft., *climb* 40 Ft. (Vine Only)",
+     "**Languages**: understands the languages you know"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Siege Monster (Tree Only)",
+    "type": "text",
+    "value": "The spirit deals double damage to objects and structures."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The spirit makes a number of attacks equal to half this spell's level (round down)."
+   },
+   {
+    "name": "Slam (Tree or Vine Only)",
+    "type": "text",
+    "value": "*Melee Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. *Hit:* **1d10 + 3 + summonSpellLevel** Bludgeoning damage."
+   },
+   {
+    "name": "Spore Spray (Fungus Only)",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. or range 30 ft. *Hit:* **1d4 + summonSpellLevel** Poison damage, and the target has the Poisoned condition until the end of its next turn. If the target already has the Poisoned condition, it instead takes an extra **3d4** Poison damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Twist Away (Vine Only)",
+    "type": "text",
+    "value": "The spirit takes the Dash or Disengage action."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Plasmoid Boss",
   "source": "BAM",
   "subtitle": "Large ooze",
@@ -369053,6 +371473,151 @@
   }
  },
  {
+  "name": "Rendelith",
+  "source": "AUD",
+  "subtitle": "Large fiend",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#rendelith_aud",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Demon of Destruction and Sieges*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Habitat**: Planar (Abyss)",
+      "**Treasure**: Armaments"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Rendeliths are hulking demons that lead armies in destroying enemy castles, strongholds, and other fortifications. They delight in toppling defenses so demonic hordes can rush into the fray."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Rendeliths have the upper bodies of humanoids but the lower bodies of oxen, with stony spikes along their backs. These cruel demons are masters of strategy that delight in magically producing walls and ditches to drive enemy armies into ambushes. Such ambushes often involve hordes of armanites—similar-looking but weaker demons driven by unrestrained bloodlust."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Most rendeliths have fought for so long in the Blood War, a raging conflict between demons and devils, that they think only in terms of combat. Each wall they collapse brings them grim satisfaction, but their unquenchable drive for the next battle pushes them ever onward."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "25",
+      "12",
+      "19",
+      "20",
+      "17",
+      "18"
+     ],
+     [
+      "Mod.",
+      "+7",
+      "+1",
+      "+4",
+      "+5",
+      "+3",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+7",
+      "+1",
+      "+4",
+      "+5",
+      "+3",
+      "+4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 20",
+     "**HP**: 294 (31d10 + 124)",
+     "**Speed**: *walk* 50 Ft.",
+     "**Initiative**: 1",
+     "**Resistances**: cold, fire, lightning",
+     "**Immunities**: poison; poisoned",
+     "**Languages**: Abyssal; telepathy 120 ft.",
+     "**CR**: 18"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Demonic Restoration",
+    "type": "text",
+    "value": "If the rendelith dies outside the Abyss, its body dissolves into gravel, and it gains a new body instantly, reviving with all its Hit Points somewhere in the Abyss."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The rendelith has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Siege Monster",
+    "type": "text",
+    "value": "The rendelith deals double damage to objects and structures."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The rendelith makes two Stone Hammer attacks and uses Spellcasting to cast __Shatter__ (level 6 version)."
+   },
+   {
+    "name": "Stone Hammer",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +13, reach 10 ft. or range 120 ft. *Hit:* 21 (**4d6 + 7**) Bludgeoning damage. If the target is a Large or smaller creature, it has the Prone condition. If the target already has the Prone condition, it instead takes an extra 7 (**2d6**) Bludgeoning damage. *Hit or Miss:* The hammer magically returns to the rendelith's hand immediately after a ranged attack."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Quick Fortifications (Recharge 5-6)",
+    "type": "text",
+    "value": "The rendelith uses Spellcasting to cast __Move Earth__ or __Wall of Stone__."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Renwick",
   "source": "PotA",
   "subtitle": "Medium undead",
@@ -383058,6 +385623,140 @@
     "name": "Throwing Axe",
     "type": "text",
     "value": "*Melee or Ranged Weapon Attack:* +8 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 14 (**2d8 + 5**) slashing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Sarrukh Tyrant",
+  "source": "AUD",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#sarrukh%20tyrant_aud",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Wicked Serpentine Oppressors*"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Habitat**: Underdark",
+      "**Treasure**: Relics"
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Powerful and magical, sarrukhs once commanded a wicked empire that spanned Faerûn, but it fell tens of thousands of years ago. In the millennia that followed, the many species sarrukhs created drove them nearly to extinction. Only a small number of sarrukhs remain in isolated enclaves, including a small community beneath the Citadel at the heart of Thaymount."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Sarrukhs have snakelike lower bodies and heads but torsos that resemble those of humanoids. Their gleaming eyes are alight with inner fire. Sarrukhs can live for up to a millennium, and most expect to see their empire rise again."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "22",
+      "15",
+      "20",
+      "23",
+      "19",
+      "18"
+     ],
+     [
+      "Mod.",
+      "+6",
+      "+2",
+      "+5",
+      "+6",
+      "+4",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+6",
+      "+2",
+      "+5",
+      "+6",
+      "+4",
+      "+4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 19",
+     "**HP**: 256 (27d8 + 135)",
+     "**Speed**: *walk* 40 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +12, perception +10",
+     "**Immunities**: fire; charmed, frightened",
+     "**Languages**: Common, Draconic; telepathy 120 ft.",
+     "**CR**: 17"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Legendary Resistance (3/Day)",
+    "type": "text",
+    "value": "If the sarrukh fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The sarrukh has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The sarrukh makes two attacks, using Bite or Fearsome Fauchard in any combination."
+   },
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +12, reach 5 ft. *Hit:* 13 (**2d6 + 6**) Piercing damage plus 13 (**3d8**) Poison damage."
+   },
+   {
+    "name": "Fearsome Fauchard",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +12, reach 5 ft. or range 20/60 ft. *Hit:* 17 (**2d10 + 6**) Piercing damage. If the target is a creature, it has the Frightened condition. If the target already has the Frightened condition, it takes an additional 10 (**3d6**) Psychic damage. *Hit or Miss:* The fauchard magically returns to the sarrukh's hand immediately after a ranged attack."
    }
   ],
   "bonusActions": [],
@@ -411979,6 +414678,112 @@
   "reprint": null
  },
  {
+  "name": "Spellguard",
+  "source": "AU",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#spellguard_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Spellguards__ are professional bodyguards who specialize in repelling magical aggression. __Spellguards__ supplement their imposing armor with magical defenses to protect themselves and their charges. They most often work for spellcasters distrustful of rivals, but a spellguard might guard anyone who fears magical foes. The Spellguard Shield is named after this tradition, as that item's power replicates a spellguard's protections."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "18",
+      "11",
+      "16",
+      "12",
+      "13",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+0",
+      "+3",
+      "+1",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+0",
+      "+3",
+      "+1",
+      "+1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 20",
+     "**HP**: 105 (14d8 + 42)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +4, athletics +7, perception +4",
+     "**Languages**: Common",
+     "**CR**: 5"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Superior Magic Resistance",
+    "type": "text",
+    "value": "The spellguard has Advantage on saving throws against spells and other magical effects. Spell attack rolls have Disadvantage against the spellguard."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The spellguard makes two attacks, using Force Flail or Javelin in any combination."
+   },
+   {
+    "name": "Force Flail",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7, reach 5 ft. *Hit:* 8 (**1d8 + 4**) Bludgeoning damage plus 7 (**2d6**) Force damage."
+   },
+   {
+    "name": "Javelin",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +7, reach 5 ft. or range 30/120 ft. *Hit:* 14 (**3d6 + 4**) Piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Spellix Romwod",
   "source": "IDRotF",
   "subtitle": "Small humanoid",
@@ -433671,6 +436476,119 @@
   "reprint": null
  },
  {
+  "name": "Szass Tam",
+  "source": "AUD",
+  "subtitle": "Medium undead",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#szass%20tam_aud",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once the undisputed regent of Thay, Szass Tam is an old and powerful lich who plots to regain control over the nation. Although he still wields great power as the zulkir of necromancy and the tharchion of Thaymount (see chapter 1), Szass Tam believes it's his destiny to rule Thay and use its living people as fodder for his undead armies."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "12",
+      "14",
+      "16",
+      "23",
+      "18",
+      "19"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+2",
+      "+3",
+      "+6",
+      "+4",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+1",
+      "+2",
+      "+3",
+      "+6",
+      "+4",
+      "+4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 20",
+     "**HP**: 397 (53d8 + 159)",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.",
+     "**Initiative**: 2",
+     "**Skills**: arcana +20, insight +11, investigation +13, perception +11",
+     "**Resistances**: cold, lightning",
+     "**Immunities**: necrotic, poison; charmed, frightened, paralyzed, poisoned",
+     "**Languages**: all",
+     "**CR**: 23"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Legendary Resistance (4/Day, or 5/Day in Lair)",
+    "type": "text",
+    "value": "If Szass Tam fails a saving throw, he can choose to succeed instead."
+   },
+   {
+    "name": "Spirit Jar",
+    "type": "text",
+    "value": "If destroyed, Szass Tam re-forms in 1d10 days if he has a spirit jar, reviving with all his Hit Points. The new body appears in an unoccupied space within Szass Tam's lair."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "Szass Tam makes three attacks, using Paralyzing Touch or Soul-Draining Ray in any combination. He can replace two attacks with a use of Spellcasting to cast __Finger of Death__."
+   },
+   {
+    "name": "Paralyzing Touch",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +13, reach 5 ft. *Hit:* 16 (**3d6 + 6**) Cold damage, and the target has the Paralyzed condition until the start of Szass Tam's next turn."
+   },
+   {
+    "name": "Soul-Draining Ray",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +13, range 120 ft. *Hit:* 25 (**3d12 + 6**) Necrotic damage, and the target has Disadvantage on attack rolls and saving throws until the end of its next turn."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Szikzith",
   "source": "NRH-AWoL",
   "subtitle": "Medium beast",
@@ -434081,6 +436999,123 @@
     "name": "Dart",
     "type": "text",
     "value": "*Ranged Weapon Attack:* +4 to hit, range 20/60 ft., one target. *Hit:* 4 (**1d4 + 2**) piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Taisus",
+  "source": "AU",
+  "subtitle": "Huge aberration",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#taisus_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The most gifted mortal mages can sometimes peer beyond reality to glimpse pure, untrammeled magic. Directly accessing this energy requires years of careful study and dangerous rituals. Any mage who succeeds taps into esoteric powers that strip away the mage's physical body, blending their mortal mind with raw magic to form a quasi-corporeal entity called a taisus, or an ascended mage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A taisus initially retains the personality and values of the mortal mage it was before, but its mindset eventually becomes alien, taking on a long-term outlook that seems callous to mortals. Most taisuses seek to draw energies from places of significant magical power, such as planar portals or quintessence pools, in order to create bizarre magic items, reshape the nature of magic, or lead others to duplicate their eldritch ascension. A taisus's end goal is unfathomable to mortal minds."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "17",
+      "18",
+      "20",
+      "25",
+      "22",
+      "19"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+4",
+      "+5",
+      "+7",
+      "+6",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+4",
+      "+5",
+      "+7",
+      "+6",
+      "+4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 310 (27d12 + 135)",
+     "**Speed**: *walk* 40 Ft., *fly* 60 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +19, insight +12, perception +12",
+     "**Immunities**: poison; charmed, frightened, grappled, paralyzed, petrified, poisoned, restrained",
+     "**Languages**: all; telepathy 120 ft.",
+     "**CR**: 19"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Arcane Immortality",
+    "type": "text",
+    "value": "If the taisus dies, its body crumbles into glittering dust. It gains a new body after 1d10 days, reviving with all its Hit Points, unless a __Wish__ spell is cast on its remains to prevent the effects of this trait. The new body appears in an unoccupied space within 5 feet of a location designated by the taisus on its creation."
+   },
+   {
+    "name": "Legendary Resistance (4/Day)",
+    "type": "text",
+    "value": "If the taisus fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The taisus has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The taisus makes two Brain Drain attacks."
+   },
+   {
+    "name": "Brain Drain",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +13, reach 20 ft. *Hit:* 20 (**3d8 + 7**) Force damage plus 16 (**3d10**) Psychic damage, and if the target is a creature with spell slots, it's subjected to the following effect. *Constitution Saving Throw:* DC 21. *Failure:* The target's highest-level unexpended spell slot is expended."
    }
   ],
   "bonusActions": [],
@@ -450423,6 +453458,112 @@
   }
  },
  {
+  "name": "Transmuter Archmage",
+  "source": "AU",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#transmuter%20archmage_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Transmuter archmages transform themselves or their surroundings. These archmages manipulate combatants to suit their own whims."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Although all archmages have mastered incredible magical power, some specialize in a particular school of magic, pushing their abilities to greater heights in that area. These archmages stock their spellbooks with spells from their preferred school and have developed unique magical techniques."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "12",
+      "20",
+      "15",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+1",
+      "+5",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 220 (40d8 + 40)",
+     "**Speed**: *walk* 40 Ft., *fly* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +15, history +10, perception +7",
+     "**Languages**: Common plus five other languages",
+     "**CR**: 15"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The archmage has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The archmage makes four Arcane Burst attacks."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +10, reach 5 ft. or range 150 ft. *Hit:* 27 (**4d10 + 5**) Force damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Transmuter Wizard",
   "source": "MPMM",
   "subtitle": "Medium humanoid",
@@ -450540,7 +453681,11 @@
     "value": "The transmuter casts __alter self__ or changes the benefit of Transmuter's Stone if bearing the stone."
    }
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Transmuter Archmage",
+   "source": "AU",
+   "tag": null
+  }
  },
  {
   "name": "Trapper",
@@ -469383,6 +472528,191 @@
   "reprint": null
  },
  {
+  "name": "Venger",
+  "source": "AU",
+  "subtitle": "Medium fiend",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#venger_au",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Corrupted Force of Evil*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "An immortal mage and Fiend with an implacable hatred for Tiamat, __Venger__ seeks to rule nations by amassing sycophants and long-lost magical artifacts. Though his bat-like wings allow him to fly, __Venger__ prefers to ride on his trusted flying steed, a __Nightmare__ that lurks on the Ethereal Plane until it's needed. __Venger__ sends his adviser, __Shadow Demon__, to survey distant lands, then weaves interlocking plans based on Shadow Demon's reports."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "__Venger__ was once a good-hearted human studying wizardry under the cryptic tutelage of his father. In time, __Venger__ grew impatient and sought to increase his magical prowess by dabbling in minor pacts with demons. He eventually met demons who worshipped Tharizdun the Chained God, an entity the demons believed powerful enough to create whole planes of existence. __Venger__ yearned to forge a pact with this entity, believing that doing so would give him immense power."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "With the help of these Tharizdun-worshipping demons, __Venger__ opened a brief window into the demiplane of Tharizdun's imprisonment. The demons had neglected to mention that the souls of all who look on the Chained God face certain doom. As __Venger__ gazed on this entity—an unknowable, indescribable blend of demonic and aberrant influence—Venger's form warped, and the last traces of goodness sloughed off him. The demons collected this good essence and locked it in a vault that they spirited away to a distant corner of the Material Plane. __Venger__ emerged from this encounter as a cruel, twisted version of himself, exalted now with immortality and magical might, and he vowed to free the Chained God."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At first, __Venger__ earnestly pursued this promise. In time, though, he grew to despise his vow and neglected it in favor of his own pursuit of power. Now he no longer wants Tharizdun freed, knowing his disloyalty could make him a target of Tharizdun's wrath."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After abandoning his quest to free Tharizdun, __Venger__ sought to use several Orbs of Dragonkind to control Tiamat. This futile endeavor earned Venger Tiamat's lifelong enmity. __Venger__ now plots endlessly to destroy or subjugate Tiamat, among other nefarious designs. Roll on or choose a result from the Venger's Schemes table to inspire Venger's next power play."
+   },
+   {
+    "name": "Venger's Schemes",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Venger's Schemes",
+     "headers": [
+      "1d6",
+      "Venger Plots To..."
+     ],
+     "rows": [
+      [
+       "1",
+       "Imprison those who would oppose him in a vast labyrinth of his own creation called the Maze of Darkness."
+      ],
+      [
+       "2",
+       "Summon a two-headed, Abyssal dragon called the Demodragon (use the Adult Black Dragon stat block) and unleash it on a nation."
+      ],
+      [
+       "3",
+       "Recruit heroes to help him thwart the League of Malevolence, a villainous group led by his former lackey, the mage Kelek."
+      ],
+      [
+       "4",
+       "Disguise himself as a wise wizard or noble paladin to trick innocents into giving him a powerful artifact."
+      ],
+      [
+       "5",
+       "Assemble six powerful magic items and use their magic at a site called the Hall of Bones to gain enough power to destroy Tiamat for good."
+      ],
+      [
+       "6",
+       "Find an artifact called the Box of Balefire and keep it away from other villains; Venger fears it could unleash Tharizdun."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "18",
+      "20",
+      "16",
+      "17",
+      "14",
+      "21"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+5",
+      "+3",
+      "+3",
+      "+2",
+      "+5"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+5",
+      "+3",
+      "+3",
+      "+2",
+      "+5"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 19",
+     "**HP**: 202 (27d8 + 81)",
+     "**Speed**: *walk* 30 Ft., *fly* 30 Ft.",
+     "**Initiative**: 2",
+     "**Skills**: arcana +9, deception +11, intimidation +11, perception +8",
+     "**Resistances**: cold, fire, lightning, poison",
+     "**Languages**: Abyssal, Common, Infernal",
+     "**CR**: 17"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Fiendish Restoration",
+    "type": "text",
+    "value": "If Venger dies, his body dissipates into crimson dust, and he gains a new body in 1d10 days, reviving with all his Hit Points somewhere in one of his lairs."
+   },
+   {
+    "name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+    "type": "text",
+    "value": "If Venger fails a saving throw, he can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "Venger has Advantage on saving throws against spells and magical effects."
+   },
+   {
+    "name": "Mounted Adept",
+    "type": "text",
+    "value": "While Venger is mounted, he and his mount have Advantage on Dexterity saving throws, and Venger can force an attack targeting his mount to target him instead. Venger can't use this trait if he has the Incapacitated condition."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "Venger makes three attacks, using Crimson Claw or Crimson Blast in any combination."
+   },
+   {
+    "name": "Crimson Claw",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +11, reach 5 ft. *Hit:* 14 (**2d8 + 5**) Slashing damage plus 10 (**3d6**) Fire damage."
+   },
+   {
+    "name": "Crimson Blast",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +11, range 120 ft. *Hit:* 24 (**3d12 + 5**) Force damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Venom Troll",
   "source": "MPMM",
   "subtitle": "Large giant",
@@ -470369,6 +473699,115 @@
    "source": "XMM",
    "tag": null
   }
+ },
+ {
+  "name": "Vestige Companion",
+  "source": "AU",
+  "subtitle": "Small Celestial, Fiend or Undead",
+  "summonedBySpell": null,
+  "summonedByClass": "Warlock (XPHB)",
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#vestige%20companion_au",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "1",
+      "14",
+      "10",
+      "15",
+      "15",
+      "16"
+     ],
+     [
+      "Mod.",
+      "-5",
+      "+2",
+      "+0",
+      "+2",
+      "+2",
+      "+3"
+     ],
+     [
+      "Save.",
+      "-5",
+      "+2",
+      "+0",
+      "+2",
+      "+2",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13 + Your Charisma Modifier",
+     "**HP**: 4 + four times your Warlock level (the vestige has a number of Hit Dice [d6s] equal to your Warlock level)",
+     "**Speed**: *walk* 5 Ft., *fly* 30 Ft. (hover), *canHover* (hover)",
+     "**Resistances**: fire (Fiend only), necrotic (Undead only), radiant (Celestial only)",
+     "**Languages**: speaks the languages you know"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Pact Bond",
+    "type": "text",
+    "value": "Add your Proficiency Bonus to any ability check or saving throw the vestige makes."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Vestige's Strike",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* Bonus equals your spell attack modifier, reach 5 ft. or range 60 ft. *Hit:* **1d6 + 3** plus your Charisma modifier Fire (Fiend), Necrotic (Undead), or Radiant (Celestial) damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Divine Power (1/Day)",
+    "type": "text",
+    "value": "Your vestige manifests a remnant of its divine power in one of the following ways, based on its form:"
+   },
+   {
+    "name": "Cursed Invocation (Undead Only)",
+    "type": "text",
+    "value": "The vestige places a curse on a creature you can see within 30 feet of the vestige for 1 minute. While cursed, the target has Disadvantage on attack rolls against you and the vestige."
+   },
+   {
+    "name": "Fiendish Swap (Fiend Only)",
+    "type": "text",
+    "value": "If you and the vestige are within 60 feet of each other, you both teleport, swapping places."
+   },
+   {
+    "name": "Healing Touch (Celestial Only)",
+    "type": "text",
+    "value": "The vestige touches another creature. The target regains Hit Points equal to 2d8 plus your Charisma modifier and ends one condition on it: Blinded, Deafened, or Poisoned."
+   }
+  ],
+  "reprint": null
  },
  {
   "name": "Veteran",
@@ -482072,7 +485511,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "The Keepers of the Feather) is one example of a secret society of evil-opposing wereravens."
+    "value": "The Keepers of the Feather is one example of a secret society of evil-opposing wereravens."
    }
   ],
   "stats": {
@@ -491896,6 +495335,7 @@
      "**HP**: 180 (19d10 + 76)",
      "**Speed**: *walk* 0 Ft., *fly* 20 Ft. (hover), *canHover* (hover)",
      "**Skills**: perception +12",
+     "**Resistances**: While attuned to the ring of force resistance: force",
      "**Senses**: darkvision 120 ft.",
      "**Languages**: Deep Speech, Undercommon",
      "**CR**: 13"
@@ -492437,6 +495877,112 @@
    "source": "XMM",
    "tag": null
   }
+ },
+ {
+  "name": "Xelnene Thrul",
+  "source": "AUD",
+  "subtitle": "Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#xelnene%20thrul_aud",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Xelnene Thrul is the zulkir of evocation. With the exception of Szass Tam, she is the most powerful mage on the Council of Zulkirs. She hates tyranny and wants Szass Tam destroyed. To her, the only good tyrant is a dead one."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "18",
+      "15",
+      "21",
+      "16",
+      "19"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+4",
+      "+2",
+      "+5",
+      "+3",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+4",
+      "+2",
+      "+5",
+      "+3",
+      "+4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 208 (32d8 + 64)",
+     "**Speed**: *walk* 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: arcana +17, history +11, perception +9, persuasion +10",
+     "**Languages**: Celestial, Common, Draconic, Infernal",
+     "**CR**: 17"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Evocation Sculptor",
+    "type": "text",
+    "value": "When Thrul casts a spell that creates an area of effect, she can choose herself and up to five other creatures she can see, sculpting the spell's energy around them. A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "Thrul has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "Thrul makes four Arcane Burst attacks. She can replace two attacks with a use of Spellcasting to cast __Fireball__ (level 5 version) or __Lightning Bolt__ (level 5 version)."
+   },
+   {
+    "name": "Arcane Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +11, reach 5 ft. or range 120 ft. *Hit:* 32 (**5d10 + 5**) Force damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
  },
  {
   "name": "Xenk Yendar",

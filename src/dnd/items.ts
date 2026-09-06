@@ -390,7 +390,10 @@ export function getItemVariants(databank: Databank, additionalDatabank?: Databan
     const items = [...databank.item, ...databank.baseitem];
     const extraItems = additionalDatabank ? [...additionalDatabank.item, ...additionalDatabank.baseitem] : [];
 
-    const variants = databank.magicvariant.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem));
+    let variants = databank.magicvariant;
+    const variantCopies = [...variants, ...items, ...extraItems];
+    variants = variants.flatMap((v) => handleCopy(v, variantCopies));
+    variants = variants.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem));
     const seenVariants = new Set();
     const raw: any[] = [];
     for (const variant of variants) {
