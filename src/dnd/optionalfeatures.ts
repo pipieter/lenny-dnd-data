@@ -20,10 +20,10 @@ export interface ParsedOptionalFeature {
     reprint: ReprintData | null;
 }
 
-function getOptionalFeatureTypes(types: string[] | string, data: Databank): string {
+function getOptionalFeatureTypes(types: string[] | string, source: string, data: Databank): string {
     types = variadic(types);
     const parsed = types.map((t: string) => {
-        return parseOptionalFeatureType(t, data);
+        return parseOptionalFeatureType(t, source, data);
     });
 
     // Special: Fighting Styles are bundled together.
@@ -43,7 +43,7 @@ export function getOptionalFeatures(data: Databank): ParsedOptionalFeature[] {
             source: optFeat.source,
             url: getOptionalFeaturesUrl(optFeat.name, optFeat.source),
             prerequisite: optFeat.prerequisite ? parsePrerequisite(optFeat.prerequisite[0]) : null,
-            type: getOptionalFeatureTypes(optFeat.featureType, data),
+            type: getOptionalFeatureTypes(optFeat.featureType, optFeat.source, data),
             description: parseDescriptions('', optFeat.entries),
             reprint: parseReprint(optFeat),
         };

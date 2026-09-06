@@ -251,7 +251,7 @@ function getVehicleSubtitle(vehicle: Vehicle): string {
 
 function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade, data: Databank): string {
     const types: string[] = upgrade.upgradeType.map((upgradeType: string) => {
-        return parseVehicleUpgradeType(upgradeType, data);
+        return parseVehicleUpgradeType(upgradeType, upgrade.source, data);
     });
 
     return joinStringsWithAnd(types, false);
