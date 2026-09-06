@@ -3539,6 +3539,27 @@
   "reprint": null
  },
  {
+  "name": "Arcane Chatelaine",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#arcane%20chatelaine_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This ornate clasp has six spectral keys attached to it. As a Magic action, you can touch one of the keys to a closed door, window, gate, container, or hatch to cast the __Arcane Lock__ spell on it. Once a key is used, it disappears. When all six keys have disappeared, the chatelaine disappears."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Arcane Propulsion Arm",
   "source": "ERLW",
   "url": "https://5e.tools/items.html#arcane%20propulsion%20arm_erlw",
@@ -3583,6 +3604,42 @@
    "**1d8** Force",
    "thrown (20/60 ft.)"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Arcanist's Bestiary",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#arcanist's%20bestiary_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Hundreds of pages of illustrations, tables, and diagrams about a wide variety of monsters fill this magical tome."
+   },
+   {
+    "name": "Charm Monster",
+    "type": "text",
+    "value": "While holding the book, you can cast the __Charm Monster__ spell (spell save DC 15) from it. The target has Disadvantage on the saving throw against this spell if it isn't a Humanoid. You can't cast this spell again in this way until the next dawn."
+   },
+   {
+    "name": "Extensive Knowledge",
+    "type": "text",
+    "value": "When you become attuned to the book, you gain proficiency in one of the following skills of your choice: *Arcana*, *History*, *Nature*, or *Religion*. Whenever you finish a Long Rest, you can change your choice. If your Attunement to the book ends, you lose this proficiency."
+   },
+   {
+    "name": "Monster Primer",
+    "type": "text",
+    "value": "While carrying the book, whenever you take a Study action to make an Intelligence (*Arcana*) check to recall information about an Aberration, Construct, Elemental, Fey, or Monstrosity you can see, on a successful check, you learn whether that creature has any Immunities, Resistances, or Vulnerabilities. If the creature has any, you know what they are."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -7202,6 +7259,59 @@
   "reprint": null
  },
  {
+  "name": "Bejeweled Conclave Trinket",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#bejeweled%20conclave%20trinket_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Bejeweled Conclave Trinkets",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Bejeweled Conclave Trinkets",
+     "headers": [
+      "1d6",
+      "Trinket"
+     ],
+     "rows": [
+      [
+       "1",
+       "An empty perfume bottle that smells faintly of longing"
+      ],
+      [
+       "2",
+       "Three love letters in the same handwriting, signed with different names"
+      ],
+      [
+       "3",
+       "A silk scarf with several hidden pockets"
+      ],
+      [
+       "4",
+       "The signature page from a contract"
+      ],
+      [
+       "5",
+       "A drinking glass carved with a comet"
+      ],
+      [
+       "6",
+       "A gaudy engagement ring with a fake gem"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Bejeweled gold bracelet",
   "source": "XDMG",
   "url": "https://5e.tools/items.html#bejeweled%20gold%20bracelet_xdmg",
@@ -7403,6 +7513,45 @@
       "As an action, you can expend 1 charge to cast __protection from evil and good__."
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Bellows of Strangulation",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#bellows%20of%20strangulation_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This bellows has 6 charges. While you are holding it, you can take a Magic action and use one of three command words to cause one of the following effects:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**First Command Word**: You expend 1 charge to cause the bellows to suck the energy from one creature you can see within 60 feet. The creature must succeed on a DC 15 Constitution saving throw or have the Incapacitated condition for 1 minute. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+      "**Second Command Word**: You expend 3 charges to cause the bellows to suck the energy from creatures in a 30-foot Cone. Each creature in that area must succeed on a DC 15 Constitution saving throw or have the Incapacitated condition for 1 minute. An affected creature repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+      "**Third Command Word**: You expend 5 charges to cast the __Cloudkill__ spell (spell DC 17) from the bellows."
+     ]
+    }
+   },
+   {
+    "name": "Regaining Charges",
+    "type": "text",
+    "value": "The bellows regains 1d6 + 1 charges daily at dawn. If you expend the last charge, roll 1d20. On a 1, the bellows explodes in a harmless burst of wind and is lost forever."
    }
   ],
   "properties": [],
@@ -9181,6 +9330,39 @@
   "reprint": null
  },
  {
+  "name": "Blemished Idol of Good Fortunes",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#blemished%20idol%20of%20good%20fortunes_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "Blemished",
+    "type": "text",
+    "value": "The idol is made of tarnished bronze, with minor dings and dents scattered over its surface."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can cast the __Augury__ spell from the idol. The idol speaks the omen aloud in response. Once the idol has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Blight Ichor",
   "source": "EGW",
   "url": "https://5e.tools/items.html#blight%20ichor_egw",
@@ -9265,6 +9447,32 @@
     "name": "",
     "type": "text",
     "value": "This item is made from a large diamond worth at least 5,000 gp. When the blood of a creature is poured onto it during the creation process, the blood seeps into the heart of the gem. If the gem is destroyed, the blood evaporates and is gone forever. A vengeful being might use a blod stone to hunt down an entire bloodline. Such stones are sometimes given as gifts to siblings or handed down from parent to child."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Blood Amulet",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#blood%20amulet_au",
+  "image": "https://5e.tools/img/items/AU/Blood%20Amulet.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This delicate amulet looks like a diminutive beating heart impaled with spikes. It has 3 charges and regains 1d3 charges daily at dawn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever you deal damage to a creature, you can expend 1 charge to deal an extra **2d10** Necrotic damage to the target and force it to make a DC 15 Constitution saving throw. On a failed save, the target gains 1 Exhaustion level."
    }
   ],
   "properties": [],
@@ -10867,6 +11075,32 @@
   "reprint": null
  },
  {
+  "name": "Boon Companions' Bands",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#boon%20companions'%20bands_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Boon Companions' Bands come in pairs and bear matching engravings. While wearing one of the bands, when you cast a spell or use a feature that forces other creatures in its area of effect to make a saving throw, you can protect the creature wearing the matching band if the creature is in the effect's area. That creature automatically succeeds on its saving throw against the effect, and it takes no damage if it would normally take half damage on a successful save."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once this property is used by either band, the bands can't be used again until the next dawn. If one of the bands in a pair is destroyed, the other one crumbles to dust."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Boots of Elvenkind",
   "source": "DMG",
   "url": "https://5e.tools/items.html#boots%20of%20elvenkind_dmg",
@@ -10921,7 +11155,7 @@
   "weight": null,
   "type": [
    "wondrous item",
-   "common"
+   "common (requires attunement)"
   ],
   "description": [
    {
@@ -12096,6 +12330,59 @@
   "reprint": null
  },
  {
+  "name": "Bringers of Cosmic Dawn Trinket",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#bringers%20of%20cosmic%20dawn%20trinket_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Bringers of Cosmic Dawn Trinkets",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Bringers of Cosmic Dawn Trinkets",
+     "headers": [
+      "1d6",
+      "Trinket"
+     ],
+     "rows": [
+      [
+       "1",
+       "A razor-sharp, violet-tinted talon"
+      ],
+      [
+       "2",
+       "An uneven spyglass lens that casts flickering pale-green light"
+      ],
+      [
+       "3",
+       "A stone carved with stars in an unfamiliar constellation"
+      ],
+      [
+       "4",
+       "Fragments of a prophecy about flumphs"
+      ],
+      [
+       "5",
+       "A fern frond that twitches like a tentacle"
+      ],
+      [
+       "6",
+       "A small box containing a worm that won't die"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Bronze crown",
   "source": "DMG",
   "url": "https://5e.tools/items.html#bronze%20crown_dmg",
@@ -12425,6 +12712,44 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Budding Blossom Rod",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#budding%20blossom%20rod_au",
+  "image": "https://5e.tools/img/items/AU/Flowering%20Blossom%20Rod.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "rod",
+   "uncommon (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "Budding",
+    "type": "text",
+    "value": "Multicolored leaves decorate the rod's stems, and a few buds cluster near each end."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the rod, you can cast __Druidcraft__ or __Plant Growth__ (Overgrowth only) from it. Once the rod has been used to cast __Plant Growth__, it can't be used to cast this spell again until the next dawn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the rod, as a Magic action, you can rejuvenate nonmagical plants in a 5-foot Cube you can see within 15 feet of yourself. The rejuvenated plants remain verdant for 1d4 days, after which they grow or wither as normal plants would."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item"
+  ],
   "reprint": null
  },
  {
@@ -14895,6 +15220,71 @@
   }
  },
  {
+  "name": "Chattering Staff of Skulls",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#chattering%20staff%20of%20skulls_au",
+  "image": "https://5e.tools/img/items/AU/Chattering%20Staff%20of%20Skulls.webp",
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "weapon (quarterstaff)",
+   "simple weapon",
+   "melee weapon",
+   "rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "Ominous",
+    "type": "text",
+    "value": "A skull adorns the top of the staff."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the staff, you can cast __Chill Touch__ from it, using your spell attack bonus. Additionally, you have Advantage on Charisma (*Intimidation*) checks made while holding the staff, and the staff's eye sockets glow a disquieting green, shedding Dim Light in a 5-foot radius."
+   },
+   {
+    "name": "Chattering",
+    "type": "text",
+    "value": "Several skulls fused together adorn the top of the staff."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a creature you can see within 30 feet of you makes an attack roll, you can take a Reaction to impose Disadvantage on that roll, as the skulls' eyes glow green and their teeth chatter unnervingly."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "evolving item",
+   "evolving item",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Cheese (wedge)",
   "source": "XPHB",
   "url": "https://5e.tools/items.html#cheese%20(wedge)_xphb",
@@ -16935,6 +17325,37 @@
   "reprint": null
  },
  {
+  "name": "Conjurer's Canopy",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#conjurer's%20canopy_au",
+  "image": "https://5e.tools/img/items/AU/Conjurer's%20Canopy.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can take a Magic action and use a command word to plunge this magical walking stick into the ground, where it stands straight up and projects a canopy of transparent force in a 20-foot Cube originating from the stick. The canopy lasts for 1 hour or until you end the effect early as a Magic action."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The canopy protects creatures and objects within that area from ordinary weather phenomena such as rain or snow. The atmosphere within the canopy's area is comfortable and dry, regardless of the weather. Creatures, objects, and magical effects can still pass through the canopy as usual."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the canopy disappears, the stick can't be used again for 1d12 hours."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Constantori's Portrait",
   "source": "KftGV",
   "url": "https://5e.tools/items.html#constantori's%20portrait_kftgv",
@@ -17481,6 +17902,59 @@
     "name": "Trade Good",
     "type": "text",
     "value": "Merchants commonly exchange trade goods without using currency."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Covenant of the Grave Trinket",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#covenant%20of%20the%20grave%20trinket_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Covenant of the Grave Trinkets",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Covenant of the Grave Trinkets",
+     "headers": [
+      "1d6",
+      "Trinket"
+     ],
+     "rows": [
+      [
+       "1",
+       "A tin of grave dirt"
+      ],
+      [
+       "2",
+       "A self-sterilizing trephine"
+      ],
+      [
+       "3",
+       "A chapbook with illustrations of graveyards"
+      ],
+      [
+       "4",
+       "A zombie's twitching toe"
+      ],
+      [
+       "5",
+       "A small wreath of dried flowers in an old box"
+      ],
+      [
+       "6",
+       "A mysterious organ in a jar of amber fluid"
+      ]
+     ]
+    }
    }
   ],
   "properties": [],
@@ -18118,6 +18592,59 @@
   "reprint": null
  },
  {
+  "name": "Crucible Keepers Trinket",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#crucible%20keepers%20trinket_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Crucible Keepers Trinkets",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Crucible Keepers Trinkets",
+     "headers": [
+      "1d6",
+      "Trinket"
+     ],
+     "rows": [
+      [
+       "1",
+       "A piece of metal pierced by a tornado-driven twig"
+      ],
+      [
+       "2",
+       "A tattered, salt-stained doll"
+      ],
+      [
+       "3",
+       "A chunk of volcanic glass"
+      ],
+      [
+       "4",
+       "Broken wind chimes"
+      ],
+      [
+       "5",
+       "A seashell blackened by a great fire"
+      ],
+      [
+       "6",
+       "Bark seared with lightning-shaped lines"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Crusader's Shortsword",
   "source": "CoS",
   "url": "https://5e.tools/items.html#crusader's%20shortsword_cos",
@@ -18168,6 +18695,39 @@
    "**1d6** Piercing",
    "finesse",
    "light"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Crusading Wand of Celestial Prowess",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#crusading%20wand%20of%20celestial%20prowess_au",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "wand",
+   "rare (requires attunement by a spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore Half Cover when making a spell attack roll."
+   },
+   {
+    "name": "Crusading",
+    "type": "text",
+    "value": "The Cleric's spellcasting skills help the characters defeat a group of fiendish cultists. The DM decides the wand evolves to become Rare, gaining the Crusading property."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item"
   ],
   "reprint": null
  },
@@ -18295,6 +18855,32 @@
     "name": "",
     "type": "text",
     "value": "While touching this crystal orb, you can cast __Scrying__ (save DC 17) with it. In addition, you can cast __Detect Thoughts__ (save DC 17) targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this __Detect Thoughts__ spell to maintain it during its duration, but it ends if the __Scrying__ spell ends."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Crystal Ball of Ominous Portent",
+  "source": "AUD",
+  "url": "https://5e.tools/items.html#crystal%20ball%20of%20ominous%20portent_aud",
+  "image": "https://5e.tools/img/items/AUD/Crystal%20Ball%20of%20Ominous%20Portent.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Black-and-scarlet clouds of ominous magic swirl inside this crystal orb. While touching the orb, you can cast __Hex__ or __Scrying__ (save DC 17) with it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, when a creature you can see within 60 feet succeeds on a D20 Test, you can take a Reaction to turn the roll into a 1. Once used, this property can't be used again until the next dawn."
    }
   ],
   "properties": [],
@@ -22924,6 +23510,114 @@
   "reprint": null
  },
  {
+  "name": "Diamond Staff",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#diamond%20staff_au",
+  "image": null,
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "simple weapon",
+   "melee weapon",
+   "legendary (requires attunement by a Sorcerer, Warlock, or Wizard)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This 6-foot-long scepter is carved from a single enormous crystal, with a perfect transparent globe at its head. This staff has 20 charges and can be wielded as a magic Quarterstaff that grants a +3 bonus to attack rolls and damage rolls made with it."
+   },
+   {
+    "name": "Adept",
+    "type": "text",
+    "value": "While holding the staff, you have Advantage on Intelligence (*Arcana*) checks."
+   },
+   {
+    "name": "Dazzling Light",
+    "type": "text",
+    "value": "While holding the staff, you can expend 1 charge and use a command word to cause light to shine from the staff. The staff emits Bright Light in a 40-foot radius and Dim Light for an additional 40 feet. The staff stops glowing after 1 minute or when you use a command word to deactivate it."
+   },
+   {
+    "name": "Spells",
+    "type": "text",
+    "value": "While holding the staff, you can cast one of the spells on the following table from it, using your spell save DC. The table indicates how many charges you must expend to cast the spell."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Spell",
+      "Charge Cost"
+     ],
+     "rows": [
+      [
+       "Detect Magic",
+       "0"
+      ],
+      [
+       "Light",
+       "0"
+      ],
+      [
+       "Identify",
+       "1"
+      ],
+      [
+       "Maze",
+       "8"
+      ],
+      [
+       "Knock",
+       "2"
+      ],
+      [
+       "Tongues (self only)",
+       "0"
+      ],
+      [
+       "Legend Lore",
+       "5"
+      ],
+      [
+       "True Seeing",
+       "3"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Stunning Hit",
+    "type": "text",
+    "value": "When you hit with a melee attack using the staff, you can expend 2 charges, and the target must succeed on a DC 17 Constitution saving throw or have the Stunned condition until the end of your next turn."
+   },
+   {
+    "name": "Regaining Charges",
+    "type": "text",
+    "value": "The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll 1d20. On a 1, the staff is destroyed."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Dice Set",
   "source": "PHB",
   "url": "https://5e.tools/items.html#dice%20set_phb",
@@ -22974,6 +23668,27 @@
     "name": "Tool (Gaming Set)",
     "type": "text",
     "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Dictation Quill",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#dictation%20quill_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you take a Magic action to set this magic quill next to Paper or Parchment and a bottle of Ink and use a command word, the quill writes your next spoken or signed words, in the language you're using, at a rate of 25 words per minute. The quill writes for 1 hour; until it has no Paper, Parchment, or Ink; or until you use another command word to stop it (no action required)."
    }
   ],
   "properties": [],
@@ -23279,6 +23994,58 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Dissuader",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#dissuader_au",
+  "image": null,
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "simple weapon",
+   "melee weapon",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This staff can be wielded as a magic Quarterstaff that grants a +1 bonus to attack rolls and damage rolls made with it. It also has the following additional properties. Once one of these properties is used, that property can't be used again until the next dawn."
+   },
+   {
+    "name": "Calm Emotions",
+    "type": "text",
+    "value": "You can cast the __Calm Emotions__ spell (save DC 15) from the staff."
+   },
+   {
+    "name": "Dissuading Aura",
+    "type": "text",
+    "value": "As a Magic action while holding the staff, you can create a 30-foot Emanation of mental unrest originating from you that lasts for 1 minute. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a DC 15 Wisdom saving throw. On a failed save, the creature has the Frightened condition until the start of its next turn."
+   },
+   {
+    "name": "Repel",
+    "type": "text",
+    "value": "When a creature enters a space within 5 feet of you, you can take a Reaction to create a shock wave of force. Each creature of your choice in a 30-foot Emanation originating from you must succeed on a DC 15 Strength saving throw or be pushed up to 30 feet straight away from you."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "mastery: topple"
+  ],
   "reprint": null
  },
  {
@@ -24132,6 +24899,47 @@
    "source": "XDMG",
    "tag": null
   }
+ },
+ {
+  "name": "Dream Weaver",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#dream%20weaver_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This magic tapestry can be hung on a wall or another suitable vertical surface. The tapestry magically unravels and reweaves itself to illustrate the content and emotions of your most recent dreams."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits while the tapestry is hung and you are within 30 feet of it."
+   },
+   {
+    "name": "Dream Wisdom",
+    "type": "text",
+    "value": "During a Long Rest, you can spend an hour studying the tapestry. At the end of the Long Rest, roll 1d20 and record the number rolled. Once before you finish a Long Rest, you can replace any D20 Test you make with this result. You must choose to do so before you roll the D20 Test."
+   },
+   {
+    "name": "Message Recorder",
+    "type": "text",
+    "value": "If you are targeted by the __Dream__ spell, the tapestry records the appearance and name of the spell's caster in its design."
+   },
+   {
+    "name": "Mind Wall",
+    "type": "text",
+    "value": "While you have the Unconscious condition, you have Advantage on Intelligence, Wisdom, and Charisma saving throws."
+   }
+  ],
+  "properties": [],
+  "reprint": null
  },
  {
   "name": "Dreamlily",
@@ -26019,6 +26827,27 @@
   "reprint": null
  },
  {
+  "name": "Elocutionist's Lexicon",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#elocutionist's%20lexicon_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this magic dictionary, you can take a Magic action and try to recall a specific word. The book automatically opens to the page containing the exact word you're searching for."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Elven Chain",
   "source": "DMG",
   "url": "https://5e.tools/items.html#elven%20chain_dmg",
@@ -26547,6 +27376,27 @@
    "ammunition"
   ],
   "description": [],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ensorcelled Missive",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#ensorcelled%20missive_au",
+  "image": "https://5e.tools/img/items/AU/Ensorcelled%20Missive.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This item functions as a sheet of Parchment. After writing on it, you can take a Magic action to fold or roll the sheet and seal it while speaking or signing a word or short phrase. If a creature unseals the sheet without using the same word or phrase, the writing on the sheet appears as if it were written in an unknown and unintelligible script."
+   }
+  ],
   "properties": [],
   "reprint": null
  },
@@ -27263,6 +28113,27 @@
   "reprint": null
  },
  {
+  "name": "Evergreen Fertilizer",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#evergreen%20fertilizer_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once sprinkled on the soil around a nonmagical plant, this pungent powder keeps the plant healthy for the next 365 days."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Eversmoking Bottle",
   "source": "DMG",
   "url": "https://5e.tools/items.html#eversmoking%20bottle_dmg",
@@ -27836,6 +28707,27 @@
     "name": "",
     "type": "text",
     "value": "These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 or more charges to cast __Charm Person__ (save DC 13). For 1 charge, you cast the level 1 version of the spell. You increase the spell's level by one for each additional charge you expend. The lenses regain all expended charges daily at dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Eyes of Deceit",
+  "source": "AUD",
+  "url": "https://5e.tools/items.html#eyes%20of%20deceit_aud",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These tinted crystal lenses shroud your eyes. While wearing them, you gain a +5 bonus to Charisma (*Deception*) checks."
    }
   ],
   "properties": [],
@@ -30392,6 +31284,60 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Flowering Blossom Rod",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#flowering%20blossom%20rod_au",
+  "image": "https://5e.tools/img/items/AU/Flowering%20Blossom%20Rod.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "rod",
+   "rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "Budding",
+    "type": "text",
+    "value": "Multicolored leaves decorate the rod's stems, and a few buds cluster near each end."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the rod, you can cast __Druidcraft__ or __Plant Growth__ (Overgrowth only) from it. Once the rod has been used to cast __Plant Growth__, it can't be used to cast this spell again until the next dawn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the rod, as a Magic action, you can rejuvenate nonmagical plants in a 5-foot Cube you can see within 15 feet of yourself. The rejuvenated plants remain verdant for 1d4 days, after which they grow or wither as normal plants would."
+   },
+   {
+    "name": "Flowering",
+    "type": "text",
+    "value": "Both ends of the rod bear colorful, fragrant flowers."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the rod, you can cast __Insect Plague__ from it, using your spell save DC. When you do so, the insects appear as bumblebees. Once the rod has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item",
+   "evolving item"
+  ],
   "reprint": null
  },
  {
@@ -33309,6 +34255,71 @@
   "reprint": null
  },
  {
+  "name": "Golden Idol of Good Fortunes",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#golden%20idol%20of%20good%20fortunes_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "Blemished",
+    "type": "text",
+    "value": "The idol is made of tarnished bronze, with minor dings and dents scattered over its surface."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can cast the __Augury__ spell from the idol. The idol speaks the omen aloud in response. Once the idol has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+   },
+   {
+    "name": "Tarnished",
+    "type": "text",
+    "value": "The idol is made of gold, with a patina of dust settled into its crevices."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While attuned to the idol, you gain a +1 bonus to your Armor Class. Additionally, while holding the idol, you can take a Magic action to touch a nonmagical trade bar or gemstone. The item is then transformed into coinage equivalent to its value. For example, if you take a Magic action to touch a 5-pound silver bar while holding the idol, the bar is transformed into 25 GP worth of coins."
+   },
+   {
+    "name": "Golden",
+    "type": "text",
+    "value": "The idol is made of gleaming gold, and the elephant's eyes are set with shining rubies."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding the idol, you can cast __Globe of Invulnerability__ from it. Once the idol has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item",
+   "evolving item",
+   "evolving item"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Golgari Guild Signet",
   "source": "GGR",
   "url": "https://5e.tools/items.html#golgari%20guild%20signet_ggr",
@@ -33513,6 +34524,53 @@
    "**1d4** Slashing",
    "finesse",
    "reach"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Grave Reaper",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#grave%20reaper_au",
+  "image": null,
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "weapon (sickle)",
+   "simple weapon",
+   "melee weapon",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a creature with it, the target takes an extra **2d8** Necrotic damage."
+   },
+   {
+    "name": "Soul Lantern",
+    "type": "text",
+    "value": "While holding this weapon, you can cast the __Spirit Lantern__ spell. When you cast the spell using the weapon, the conjured lantern can hold up to five soul fragments, and the spell's save DC is 17."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once the weapon has been used to cast the spell, it can't be used to cast it again until the next dawn."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Slashing",
+   "light",
+   "mastery: nick"
   ],
   "reprint": null
  },
@@ -36332,6 +37390,61 @@
   "reprint": null
  },
  {
+  "name": "Heliacal Wand of Celestial Prowess",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#heliacal%20wand%20of%20celestial%20prowess_au",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "wand",
+   "legendary (requires attunement by a spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore Half Cover when making a spell attack roll."
+   },
+   {
+    "name": "Crusading",
+    "type": "text",
+    "value": "The Cleric's spellcasting skills help the characters defeat a group of fiendish cultists. The DM decides the wand evolves to become Rare, gaining the Crusading property."
+   },
+   {
+    "name": "Lunar",
+    "type": "text",
+    "value": "The characters track down a devil that serves the Fiend the cultists worshiped. Thanks to the Cleric, the characters defeat the devil, and the DM decides the wand evolves, becoming Very Rare and gaining the Lunar property."
+   },
+   {
+    "name": "Heliacal",
+    "type": "text",
+    "value": "The Cleric becomes a paragon of his deity, so the DM decides the wand evolves to channel the might of a supernova, becoming Legendary and gaining the Heliacal property."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item",
+   "evolving item",
+   "evolving item"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Hell Hound Cloak",
   "source": "TftYP",
   "url": "https://5e.tools/items.html#hell%20hound%20cloak_tftyp",
@@ -37796,6 +38909,27 @@
   "reprint": null
  },
  {
+  "name": "Homeward Compass",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#homeward%20compass_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this small brass compass, you can take a Magic action to orient the compass to your current location. Thereafter, the compass's needle always points toward that location. The compass can be oriented to only one location at a time. As a Magic action, you can end the compass's current orientation. When it isn't oriented to a particular location, or if the compass is on a different plane of existence than the location to which it is oriented, the compass's needle spins aimlessly."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Hooded Lantern",
   "source": "PHB",
   "url": "https://5e.tools/items.html#hooded%20lantern_phb",
@@ -37986,6 +39120,59 @@
     "name": "",
     "type": "text",
     "value": "A Horizon puzzle cube is an 8-inch magical cube made of gold, iron, crystal, and copper, and it is worth 5,000 gp to a sage or collector. A functioning puzzle cube can be solved with 30 minutes of work and a successful DC 25 Intelligence (*Investigation*) check. When the cube is solved, a 30-foot-diameter portal appears before the creature who solved the cube, leading to the northeastern platform of Horizon's Edge. The portal is two-way and remains open for 10 minutes or until a creature uses an action to change the puzzle's configuration. Puzzle cubes don't function while on Horizon's Edge, but a device somewhere in the demiplane allows a cube to function in reverse while the cube is fitted into it."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Horizon Weavers Trinket",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#horizon%20weavers%20trinket_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Horizon Weavers Trinkets",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Horizon Weavers Trinkets",
+     "headers": [
+      "1d6",
+      "Trinket"
+     ],
+     "rows": [
+      [
+       "1",
+       "A compass that spins lazily"
+      ],
+      [
+       "2",
+       "A map of a lost valley"
+      ],
+      [
+       "3",
+       "A chip of ice that never melts"
+      ],
+      [
+       "4",
+       "A ring inscribed \"bring me home again\""
+      ],
+      [
+       "5",
+       "Wicker from the basket of a hot air balloon"
+      ],
+      [
+       "6",
+       "Four orange leaves with unfamiliar shapes"
+      ]
+     ]
+    }
    }
   ],
   "properties": [],
@@ -38313,7 +39500,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A brass horn summons 3 __Berserkers__. To use the brass horn, you must have Proficiency with all Simple weapons."
+    "value": "A brass horn summons 3 __Berserkers__. To meet the requirements of the brass horn, you must have Proficiency with all Simple weapons."
    },
    {
     "name": "",
@@ -38391,7 +39578,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A bronze horn summons 4 __Berserkers__. To use the bronze horn, you must have training with all Medium armor."
+    "value": "A bronze horn summons 4 __Berserkers__. To meet the requirements of the bronze horn, you must have training with all Medium armor."
    },
    {
     "name": "",
@@ -38469,7 +39656,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A iron horn summons 5 __Berserkers__. To use the iron horn, you must have Proficiency with all Martial weapons."
+    "value": "An iron horn summons 5 __Berserkers__. To meet the requirements of the iron horn, you must have Proficiency with all Martial weapons."
    },
    {
     "name": "",
@@ -48075,6 +49262,27 @@
   "reprint": null
  },
  {
+  "name": "Lucky Foot",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#lucky%20foot_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you roll a 1 on a saving throw or ability check, you can use this preserved rabbit foot's magic to reroll the die. You must use the new roll, and the foot disintegrates."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Luminous War Pick",
   "source": "PaBTSO",
   "url": "https://5e.tools/items.html#luminous%20war%20pick_pabtso",
@@ -48101,6 +49309,50 @@
   ],
   "properties": [
    "**1d8** Piercing"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Lunar Wand of Celestial Prowess",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#lunar%20wand%20of%20celestial%20prowess_au",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "wand",
+   "very rare (requires attunement by a spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore Half Cover when making a spell attack roll."
+   },
+   {
+    "name": "Crusading",
+    "type": "text",
+    "value": "The Cleric's spellcasting skills help the characters defeat a group of fiendish cultists. The DM decides the wand evolves to become Rare, gaining the Crusading property."
+   },
+   {
+    "name": "Lunar",
+    "type": "text",
+    "value": "The characters track down a devil that serves the Fiend the cultists worshiped. Thanks to the Cleric, the characters defeat the devil, and the DM decides the wand evolves, becoming Very Rare and gaining the Lunar property."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item",
+   "evolving item"
   ],
   "reprint": null
  },
@@ -48922,6 +50174,91 @@
   "reprint": null
  },
  {
+  "name": "Mage Breaker",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#mage%20breaker_au",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "weapon (dagger)",
+   "simple weapon",
+   "melee weapon",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you hit a *Concentrating* creature with an attack roll using this weapon and deal damage, the creature has Disadvantage on the saving throw it makes to maintain *Concentration*."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/60 ft.)",
+   "mastery: nick"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Mage's Manacle",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#mage's%20manacle_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Magic action while wearing this bracelet, you can target a Large or smaller creature within 5 feet of yourself that has the Grappled or Incapacitated condition. The target must succeed on a DC 15 Dexterity saving throw or become magically bound to you by a spectral chain and manacle that spring from the bracelet."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While bound in this way, the creature has the Restrained condition. When you move, the creature moves with you."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature remains bound for 8 hours or until you release it (no action required). If the manacle takes damage from a __Disintegrate__ spell, it is destroyed; nothing else can break or harm it. Once the manacle has bound a creature, it can't be used again this way until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Magen Handbell",
   "source": "NF",
   "url": "https://5e.tools/items.html#magen%20handbell_nf",
@@ -48947,6 +50284,27 @@
     "name": "",
     "type": "text",
     "value": "While berserk, the magen no longer obeys your commands, and you can't dismiss it as a Bonus Action. On each of its turns, the berserk magen attacks the nearest creature it can see. If no creature is near enough for the magen to move to and attack, the magen attacks an object. The magen remains berserk until it disappears, or until a creature holding the handbell takes an Influence action and succeeds on a DC 15 Charisma (*Persuasion*) check to regain control of the magen."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Magewright's Gloves",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#magewright's%20gloves_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you wear these gloves, you work as efficiently as two characters when determining how much time it takes to craft nonmagical items using any of the following tools: Alchemist's Supplies, Brewer's Supplies, Calligrapher's Supplies, Cartographer's Tools, Glassblower's Tools, or Jeweler's Tools."
    }
   ],
   "properties": [],
@@ -49595,6 +50953,93 @@
   "reprint": null
  },
  {
+  "name": "Many Keyholes Dagger",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#many%20keyholes%20dagger_au",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "weapon (dagger)",
+   "simple weapon",
+   "melee weapon",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "Three",
+    "type": "text",
+    "value": "Three ornamental keyholes adorn the weapon's hilt."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have a +1 bonus to attack rolls and damage rolls made with this magic weapon. When you take the Attack action, you can transform this weapon into a Handaxe or Mace. It remains transformed in this way until the start of your next turn, at which point it reverts back to its Dagger form. Regardless of the weapon's form, you can use your choice of your Strength or Dexterity modifier for the attack and damage rolls; you must use the same modifier for both rolls."
+   },
+   {
+    "name": "Ten",
+    "type": "text",
+    "value": "Ten ornamental keyholes adorn the weapon's hilt. Your bonus to attack rolls and damage rolls made with this magic weapon increases to +2. Additionally, when you transform the weapon, you can now transform it into any Simple Melee weapon."
+   },
+   {
+    "name": "Many",
+    "type": "text",
+    "value": "Overlapping ornamental keyholes adorn the weapon's hilt in a dizzying pattern. Your bonus to attack rolls and damage rolls made with this magic weapon increases to +3. When you transform the weapon, you can now also transform it into a Battleaxe, Longsword, Rapier, Scimitar, or Warhammer."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Additionally, when you miss with an attack roll using this weapon, you can reroll the attack, potentially turning the miss into a hit. You must use the second roll. Once used, this property can't be used again until the next dawn."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/60 ft.)",
+   "evolving item",
+   "evolving item",
+   "evolving item",
+   "mastery: nick"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Map",
   "source": "XPHB",
   "url": "https://5e.tools/items.html#map_xphb",
@@ -49676,6 +51121,59 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Martialist's Quarterstaff",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#martialist's%20quarterstaff_au",
+  "image": null,
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "weapon (quarterstaff)",
+   "simple weapon",
+   "melee weapon",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This magic Quarterstaff has 4 charges and regains 1d4 expended charges daily at dawn. It has the following additional properties."
+   },
+   {
+    "name": "Searing Smite",
+    "type": "text",
+    "value": "You can expend 2 charges to cast the __Searing Smite__ spell (DC 13)."
+   },
+   {
+    "name": "Throw",
+    "type": "text",
+    "value": "When you take the Attack action, you can expend 1 charge to imbue the staff with magical velocity. Until the end of your next turn, the staff gains the Thrown property, with a normal range of 20 feet and a long range of 60 feet, and immediately after you make a ranged attack with the weapon, it flies back to your hand."
+   },
+   {
+    "name": "Trip",
+    "type": "text",
+    "value": "When you make a melee attack with this weapon, you can expend 1 charge to give yourself Advantage on the attack roll. If the attack hits, the target makes a DC 13 Strength saving throw. On a failed save, the target has the Prone condition."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "mastery: topple"
+  ],
   "reprint": null
  },
  {
@@ -49875,6 +51373,47 @@
     "name": "Disguise Self",
     "type": "text",
     "value": "As an action, you can use the tattoo to cast the __disguise self__ spell (DC 13 to discern the disguise). Once the spell is cast from the tattoo, it can't be cast from the tattoo again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Masquerader's Brooch",
+  "source": "AUD",
+  "url": "https://5e.tools/items.html#masquerader's%20brooch_aud",
+  "image": "https://5e.tools/img/items/AUD/Masqueraders%20Brooch.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A Masquerader's Brooch comes in various shapes and sizes but always looks slightly tarnished."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits while wearing the brooch."
+   },
+   {
+    "name": "Illusory Fashion",
+    "type": "text",
+    "value": "As a Bonus Action while wearing or holding the brooch, you can project a magical illusion over your clothing, armor, weapons, equipment, and other belongings on your person. The illusion lasts for 1 hour and ends early if the brooch is removed. Each time you use this benefit, you determine the extent and nature of the illusion. It could be as minor as changing the color of your garments or as extensive as making a suit of armor appear as an evening gown and a sheathed weapon appear as a satin sash."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The changes wrought by this illusion fail to hold up to physical inspection. A creature that takes the Study action to examine your appearance discerns the illusion with a successful DC 13 Intelligence (*Investigation*) check."
+   },
+   {
+    "name": "Shifting Guise",
+    "type": "text",
+    "value": "As a Magic action while wearing or holding the brooch, you can cast __Alter Self__ from it (Change Appearance option only; no *Concentration* required)."
    }
   ],
   "properties": [],
@@ -52589,6 +54128,65 @@
   "reprint": null
  },
  {
+  "name": "Namer's Needle",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#namer's%20needle_au",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "weapon (dagger)",
+   "simple weapon",
+   "melee weapon",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon."
+   },
+   {
+    "name": "Identify Target",
+    "type": "text",
+    "value": "When you hit a creature with an attack roll using this weapon, you can compel the target to reveal its identity. The target makes a DC 15 Wisdom saving throw. On a failed save, the target says or signs its name clearly and emphatically. On a successful save, the target is immune to this effect for the next 24 hours. If the creature can't speak or sign a language, it automatically succeeds on the save."
+   },
+   {
+    "name": "Named Target",
+    "type": "text",
+    "value": "When you hit a creature with an attack roll using this weapon, you can say or sign the target's name clearly and emphatically to turn the hit into a Critical Hit. Once this property is used, it can't be used again until the next dawn."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/60 ft.)",
+   "mastery: nick"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Narycrash",
   "source": "DSotDQ",
   "url": "https://5e.tools/items.html#narycrash_dsotdq",
@@ -53080,6 +54678,211 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Necklace of the Beastly Familiar (Giant Octopus)",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#necklace%20of%20the%20beastly%20familiar%20(giant%20octopus)_au",
+  "image": "https://5e.tools/img/items/AU/Necklace%20of%20the%20Beastly%20Familiar.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This bejeweled necklace is set with azurite and comes with a matching charm that can be worn by your familiar."
+   },
+   {
+    "name": "Familiar",
+    "type": "text",
+    "value": "While wearing this necklace, you can cast the __Find Familiar__ spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+   },
+   {
+    "name": "Beast Transformation",
+    "type": "text",
+    "value": "While your familiar is within 60 feet of you, you can take a Magic action to activate the necklace. Your familiar shape-shifts into a __Giant Octopus__ for 10 minutes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, Hit Points, and Hit Point Dice. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your familiar gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. These Temporary Hit Points vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no Temporary Hit Points left."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Necklace of the Beastly Familiar (Giant Scorpion)",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#necklace%20of%20the%20beastly%20familiar%20(giant%20scorpion)_au",
+  "image": "https://5e.tools/img/items/AU/Necklace%20of%20the%20Beastly%20Familiar.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This bejeweled necklace is set with chrysoprase and comes with a matching charm that can be worn by your familiar."
+   },
+   {
+    "name": "Familiar",
+    "type": "text",
+    "value": "While wearing this necklace, you can cast the __Find Familiar__ spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+   },
+   {
+    "name": "Beast Transformation",
+    "type": "text",
+    "value": "While your familiar is within 60 feet of you, you can take a Magic action to activate the necklace. Your familiar shape-shifts into a __Giant Scorpion__ for 10 minutes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, Hit Points, and Hit Point Dice. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your familiar gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. These Temporary Hit Points vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no Temporary Hit Points left."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Necklace of the Beastly Familiar (Hippopotamus)",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#necklace%20of%20the%20beastly%20familiar%20(hippopotamus)_au",
+  "image": "https://5e.tools/img/items/AU/Necklace%20of%20the%20Beastly%20Familiar.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This bejeweled necklace is set with zircon and comes with a matching charm that can be worn by your familiar."
+   },
+   {
+    "name": "Familiar",
+    "type": "text",
+    "value": "While wearing this necklace, you can cast the __Find Familiar__ spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+   },
+   {
+    "name": "Beast Transformation",
+    "type": "text",
+    "value": "While your familiar is within 60 feet of you, you can take a Magic action to activate the necklace. Your familiar shape-shifts into a __Hippopotamus__ for 10 minutes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, Hit Points, and Hit Point Dice. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your familiar gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. These Temporary Hit Points vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no Temporary Hit Points left."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Necklace of the Beastly Familiar (Mammoth)",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#necklace%20of%20the%20beastly%20familiar%20(mammoth)_au",
+  "image": "https://5e.tools/img/items/AU/Necklace%20of%20the%20Beastly%20Familiar.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This bejeweled necklace is set with topaz and comes with a matching charm that can be worn by your familiar."
+   },
+   {
+    "name": "Familiar",
+    "type": "text",
+    "value": "While wearing this necklace, you can cast the __Find Familiar__ spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+   },
+   {
+    "name": "Beast Transformation",
+    "type": "text",
+    "value": "While your familiar is within 60 feet of you, you can take a Magic action to activate the necklace. Your familiar shape-shifts into a __Mammoth__ for 10 minutes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, Hit Points, and Hit Point Dice. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your familiar gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. These Temporary Hit Points vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no Temporary Hit Points left."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Necklace of the Beastly Familiar (Tyrannosaurus Rex)",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#necklace%20of%20the%20beastly%20familiar%20(tyrannosaurus%20rex)_au",
+  "image": "https://5e.tools/img/items/AU/Necklace%20of%20the%20Beastly%20Familiar.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "legendary (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This bejeweled necklace is set with fire opal and comes with a matching charm that can be worn by your familiar."
+   },
+   {
+    "name": "Familiar",
+    "type": "text",
+    "value": "While wearing this necklace, you can cast the __Find Familiar__ spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+   },
+   {
+    "name": "Beast Transformation",
+    "type": "text",
+    "value": "While your familiar is within 60 feet of you, you can take a Magic action to activate the necklace. Your familiar shape-shifts into a __Tyrannosaurus Rex__ for 10 minutes."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, Hit Points, and Hit Point Dice. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your familiar gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. These Temporary Hit Points vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no Temporary Hit Points left."
    }
   ],
   "properties": [],
@@ -53726,6 +55529,59 @@
     "name": "",
     "type": "text",
     "value": "Once the rune has been invoked, it can't be invoked again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ninth Quill Trinket",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#ninth%20quill%20trinket_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Ninth Quill Trinkets",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Ninth Quill Trinkets",
+     "headers": [
+      "1d6",
+      "Trinket"
+     ],
+     "rows": [
+      [
+       "1",
+       "A long fake beard"
+      ],
+      [
+       "2",
+       "A fancy pen that never runs out of ink"
+      ],
+      [
+       "3",
+       "A bag of broken teeth"
+      ],
+      [
+       "4",
+       "A scrap of paper with several crossed-out passwords and the word \"caiman\" circled"
+      ],
+      [
+       "5",
+       "Two identical playing cards with unfamiliar suits"
+      ],
+      [
+       "6",
+       "A featureless mask with small eyeholes"
+      ]
+     ]
+    }
    }
   ],
   "properties": [],
@@ -54498,6 +56354,55 @@
   "reprint": null
  },
  {
+  "name": "Ominous Staff of Skulls",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#ominous%20staff%20of%20skulls_au",
+  "image": "https://5e.tools/img/items/AU/Chattering%20Staff%20of%20Skulls.webp",
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "weapon (quarterstaff)",
+   "simple weapon",
+   "melee weapon",
+   "uncommon (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "Ominous",
+    "type": "text",
+    "value": "A skull adorns the top of the staff."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the staff, you can cast __Chill Touch__ from it, using your spell attack bonus. Additionally, you have Advantage on Charisma (*Intimidation*) checks made while holding the staff, and the staff's eye sockets glow a disquieting green, shedding Dim Light in a 5-foot radius."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "evolving item",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Onyx",
   "source": "DMG",
   "url": "https://5e.tools/items.html#onyx_dmg",
@@ -54852,6 +56757,37 @@
   }
  },
  {
+  "name": "Orb of Divination Detection",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#orb%20of%20divination%20detection_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This glass orb is a useful defense against meddlesome mages and magic-wielding spies."
+   },
+   {
+    "name": "Detect Divination",
+    "type": "text",
+    "value": "When you are targeted by a spell from the Divination school, the orb glows bright green for the spell's duration."
+   },
+   {
+    "name": "Spellcasting Focus",
+    "type": "text",
+    "value": "This orb can be used as an Arcane Focus."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Orb of Dragonkind",
   "source": "DMG",
   "url": "https://5e.tools/items.html#orb%20of%20dragonkind_dmg",
@@ -55104,6 +57040,37 @@
     "name": "Divine Sight",
     "type": "text",
     "value": "You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Orb of Sorcery",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#orb%20of%20sorcery_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement by a Sorcerer)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Ribbons of varicolored light swirl inside this magical glass orb."
+   },
+   {
+    "name": "Sorcerous Reservoir",
+    "type": "text",
+    "value": "While holding this orb, you can take a Magic action to regain up to 2 expended Sorcery Points. Once this property is used, it can't be used again until the next dawn."
+   },
+   {
+    "name": "Spellcasting Focus",
+    "type": "text",
+    "value": "You can use the orb as a Spellcasting Focus for your Sorcerer spells."
    }
   ],
   "properties": [],
@@ -57068,6 +59035,59 @@
     "name": "Treasure (Art Object)",
     "type": "text",
     "value": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Phantasmic Circus Trinket",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#phantasmic%20circus%20trinket_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Phantasmic Circus Trinkets",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Phantasmic Circus Trinkets",
+     "headers": [
+      "1d6",
+      "Trinket"
+     ],
+     "rows": [
+      [
+       "1",
+       "An advertisement for a past circus performance, featuring your likeness"
+      ],
+      [
+       "2",
+       "A small tin of white greasepaint"
+      ],
+      [
+       "3",
+       "A green wire stem that produces an illusory flower for 1 minute when brandished dramatically"
+      ],
+      [
+       "4",
+       "A fine silk ribbon, two inches wide and nine feet long"
+      ],
+      [
+       "5",
+       "Bronze finger cymbals"
+      ],
+      [
+       "6",
+       "A battered top hat"
+      ]
+     ]
+    }
    }
   ],
   "properties": [],
@@ -59378,6 +61398,66 @@
   "reprint": null
  },
  {
+  "name": "Potion of Dragon's Breath",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#potion%20of%20dragon's%20breath_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you drink this potion, you gain the effect of the __Dragon's Breath__ spell for 1 minute (save DC 13, no *Concentration* required). The damage type associated with that spell is determined by the color of the potion when the potion was created, as shown in the table below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Light catches off the glittery liquid inside this potion, which is made from the pulverized scale of a chromatic dragon."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Color",
+      "Damage Type"
+     ],
+     "rows": [
+      [
+       "Black",
+       "Acid"
+      ],
+      [
+       "Blue",
+       "Lightning"
+      ],
+      [
+       "Green",
+       "Poison"
+      ],
+      [
+       "Red",
+       "Fire"
+      ],
+      [
+       "White",
+       "Cold"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Potion of Dragon's Majesty",
   "source": "FTD",
   "url": "https://5e.tools/items.html#potion%20of%20dragon's%20majesty_ftd",
@@ -61062,6 +63142,32 @@
   "reprint": null
  },
  {
+  "name": "Potion of Tirelessness",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#potion%20of%20tirelessness_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "After you drink this potion, you don't need to sleep, and magic can't put you to sleep. This effect lasts 24 hours. For the duration, you can finish a Long Rest in 4 hours if you spend those hours in a state of quiet focus, during which you retain consciousness."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This pale red potion is as thick as molasses, yet it slides out of the bottle as readily as oil."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Potion of Vitality",
   "source": "DMG",
   "url": "https://5e.tools/items.html#potion%20of%20vitality_dmg",
@@ -61852,6 +63958,32 @@
   "reprint": null
  },
  {
+  "name": "Prismatic Rune",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#prismatic%20rune_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A magical rune is etched on this small stone made of multicolored quartz. When you finish a Long Rest, choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. The rune is imbued with the chosen damage type until you finish another Long Rest."
+   },
+   {
+    "name": "Charges",
+    "type": "text",
+    "value": "The rune has 6 charges and regains 1d6 expended charges daily at dawn. When you cast a spell that deals damage, you can expend 1 charge to change the spell's damage type to the damage type chosen for the rune."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Prismatic Well",
   "source": "NRH-AT",
   "url": "https://5e.tools/items.html#prismatic%20well_nrh-at",
@@ -62180,6 +64312,55 @@
   "reprint": null
  },
  {
+  "name": "Psionic Rod of the Honed Mind",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#psionic%20rod%20of%20the%20honed%20mind_au",
+  "image": null,
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "rod",
+   "very rare (requires attunement by a warlock)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this rod, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your Warlock spells."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, you can regain one spell slot as a Magic action while holding the rod. You can't use this property again until you finish a Long Rest."
+   },
+   {
+    "name": "Vigilant",
+    "type": "text",
+    "value": "After discovering a strange tome full of symbols that match those on the rod, the Warlock feels the approval of the entity that fuels their magic. The DM decides the rod evolves and becomes Rare, gaining the Vigilant property."
+   },
+   {
+    "name": "Psionic",
+    "type": "text",
+    "value": "While exploring clues the Warlock deciphered from the strange tome, the characters acquire psionically charged crystals from the Underdark. The crystals bear the same symbols the rod has. The DM decides the rod evolves to become Very Rare, gaining the Psionic property."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item",
+   "evolving item"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Psychic Absorbing Tattoo",
   "source": "TCE",
   "url": "https://5e.tools/items.html#psychic%20absorbing%20tattoo_tce",
@@ -62253,6 +64434,87 @@
    "finesse",
    "thrown (60/120 ft.)",
    "mastery: vex (you can use this property, and it doesn't count against the number of properties you can use with weapon mastery)"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Pulverizing Staff of Skulls",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#pulverizing%20staff%20of%20skulls_au",
+  "image": "https://5e.tools/img/items/AU/Chattering%20Staff%20of%20Skulls.webp",
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "weapon (quarterstaff)",
+   "simple weapon",
+   "melee weapon",
+   "very rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "Ominous",
+    "type": "text",
+    "value": "A skull adorns the top of the staff."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the staff, you can cast __Chill Touch__ from it, using your spell attack bonus. Additionally, you have Advantage on Charisma (*Intimidation*) checks made while holding the staff, and the staff's eye sockets glow a disquieting green, shedding Dim Light in a 5-foot radius."
+   },
+   {
+    "name": "Chattering",
+    "type": "text",
+    "value": "Several skulls fused together adorn the top of the staff."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a creature you can see within 30 feet of you makes an attack roll, you can take a Reaction to impose Disadvantage on that roll, as the skulls' eyes glow green and their teeth chatter unnervingly."
+   },
+   {
+    "name": "Pulverizing",
+    "type": "text",
+    "value": "The entire staff is made of fused skulls."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the staff, you can take a Magic action to point the staff at a Humanoid you can see. That creature makes a DC 17 Constitution saving throw. On a failed save, the creature takes **10d8** Necrotic damage and has the Prone condition as it's crushed from the inside. On a successful save, the creature takes half as much damage only. Once used, this property can't be used again until the next dawn."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "evolving item",
+   "evolving item",
+   "evolving item",
+   "mastery: topple"
   ],
   "reprint": null
  },
@@ -63095,6 +65357,116 @@
     "name": "Treasure (Gemstone)",
     "type": "text",
     "value": "Gemstones are small, lightweight, and easily secured compared to their same value in coins."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Queen Ehlissa's Marvelous Nightingale",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#queen%20ehlissa's%20marvelous%20nightingale_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "artifact (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Queen Ehlissa's Marvelous Nightingale is named for its first owner, a queen from the eastern Flanaess in the world of Greyhawk. Its origin is unknown, but one legend holds that it was made to console the queen when a beloved pet songbird met its unfortunate end."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This mechanical songbird has crystal eyes, golden feathers, and a small windup key on its back. As a Magic action, you can cause the bird to spring to life for 10 minutes, during which time it sings a beautiful melody audible within 300 feet, or you can revert the bird to its mechanical form. When the nightingale becomes mechanical again, it can't come to life again for 1 hour."
+   },
+   {
+    "name": "Aura of Truth",
+    "type": "text",
+    "value": "While the nightingale sings, the effect of a __Zone of Truth__ spell (save DC 18) fills a 15-foot Emanation originating from the nightingale. While attuned to the nightingale, you know which creatures succeed on or fail the saving throw against this effect."
+   },
+   {
+    "name": "Counterspell",
+    "type": "text",
+    "value": "While the nightingale sings, you can take a Reaction to cast __Counterspell__ (save DC 18) in response to that spell's trigger. Once this property is used, it can't be used again until the next dawn."
+   },
+   {
+    "name": "Random Properties",
+    "type": "text",
+    "value": "The Artifact has the following random properties (see the \"Artifacts\" section in the Dungeon Master's Guide):"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "2 [minor beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20beneficial%20properties_xdmg) properties",
+      "1 [major beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20major%20beneficial%20properties_xdmg) property",
+      "1 [minor detrimental](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20detrimental%20properties_xdmg) property"
+     ]
+    }
+   },
+   {
+    "name": "Destroying the Nightingale",
+    "type": "text",
+    "value": "The nightingale is destroyed if it is released into a whirlwind in Limbo."
+   },
+   {
+    "name": "Ensemble Casting",
+    "type": "text",
+    "value": "The nightingale has 6 charges and regains 1d6 + 1 expended charges daily at dawn. As a Bonus Action while the nightingale is singing and within 60 feet of you, you can expend charges to cast one of the spells on the table below from the nightingale (save DC 18). The table shows the number of charges you must expend to cast the spell."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Spell",
+      "Charge Cost"
+     ],
+     "rows": [
+      [
+       "Calm Emotions",
+       "1"
+      ],
+      [
+       "Compulsion",
+       "3"
+      ],
+      [
+       "Delayed Blast Fireball",
+       "6"
+      ],
+      [
+       "Detect Evil and Good",
+       "0"
+      ],
+      [
+       "Greater Restoration",
+       "4"
+      ],
+      [
+       "Prismatic Spray",
+       "6"
+      ],
+      [
+       "Slow",
+       "2"
+      ],
+      [
+       "Speak with Animals",
+       "0"
+      ]
+     ]
+    }
    }
   ],
   "properties": [],
@@ -64643,6 +67015,27 @@
   "reprint": null
  },
  {
+  "name": "Ring of Candor",
+  "source": "AUD",
+  "url": "https://5e.tools/items.html#ring%20of%20candor_aud",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this simple metal band, you gain a +5 bonus to Wisdom (*Insight*) checks. In addition, you can cast __Zone of Truth__ (save DC 13) from the ring. You can't cast __Zone of Truth__ in this way again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Ring of Cold Resistance",
   "source": "DMG",
   "url": "https://5e.tools/items.html#ring%20of%20cold%20resistance_dmg",
@@ -64704,6 +67097,27 @@
     "name": "",
     "type": "text",
     "value": "While wearing this ring you can use it to cast the __Leomund's Tiny Hut__ spell as an action. Once this property is used, it can't be used again until the next dawn. Additionally, as a bonus action, you can use the ring to disintegrate any nonmagical piece of art (drawing, painting, or sculpture) within 60 feet that is no larger than Medium-sized. That art now appears inside the tiny hut, for you to appreciate whenever you desire. If you try to remove this art from the tiny hut, it vanishes forever. You can steadily improve this space, but only be denying such beauty to the rest of the world. For every 1,000 gp of art acquired, the tiny hut increases in size by adding another foot to its radius and lasts one additional hour."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ring of Dedicated Focus",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#ring%20of%20dedicated%20focus_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The magical spike on the side of this ring allows you to sharpen your focus at a moment's notice. When you fail a Constitution saving throw to maintain *Concentration*, you can roll up to two of your unexpended Hit Dice and add the total rolled to your save, potentially turning the failure into a success. The rolled Hit Dice are then expended."
    }
   ],
   "properties": [],
@@ -67100,6 +69514,42 @@
   "reprint": null
  },
  {
+  "name": "Robe of Thayan Arcana",
+  "source": "AUD",
+  "url": "https://5e.tools/items.html#robe%20of%20thayan%20arcana_aud",
+  "image": "https://5e.tools/img/items/AUD/Robe%20of%20Thayan%20Arcana.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare (requires attunement by a Sorcerer, Warlock, or Wizard)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Mysterious symbols decorate this deep-red robe. You gain the following benefits while wearing the robe."
+   },
+   {
+    "name": "Combat Mage",
+    "type": "text",
+    "value": "Your spell save DC and spell attack bonus each increase by 1."
+   },
+   {
+    "name": "Empowered Magic",
+    "type": "text",
+    "value": "When you roll damage for a spell, you can treat any 1 on a damage die as a 2."
+   },
+   {
+    "name": "Spellcasting Focus",
+    "type": "text",
+    "value": "You can use the robe as a Spellcasting Focus for your spells."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Robe of the Archmagi",
   "source": "DMG",
   "url": "https://5e.tools/items.html#robe%20of%20the%20archmagi_dmg",
@@ -67896,7 +70346,7 @@
   "weight": "2 lb.",
   "type": [
    "rod",
-   "legendary"
+   "legendary (requires attunement)"
   ],
   "description": [
    {
@@ -70233,6 +72683,68 @@
   "reprint": null
  },
  {
+  "name": "Scarlet Spellbook",
+  "source": "AUD",
+  "url": "https://5e.tools/items.html#scarlet%20spellbook_aud",
+  "image": "https://5e.tools/img/items/AUD/Scarlet%20Spellbook.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement by a Wizard)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Irregular scraps of red cloth cover this weathered tome. While attuned to this item, you can use it as a Spellbook and an Arcane Focus."
+   },
+   {
+    "name": "Arcane Stamina",
+    "type": "text",
+    "value": "When you use your Arcane Recovery feature, you also regain Hit Points equal to 2d6 plus half your Wizard level (round down)."
+   },
+   {
+    "name": "Improved Spell Recall",
+    "type": "text",
+    "value": "When you use your Memorize Spell feature, you can replace an additional level 1+ Wizard spell you have prepared for your Spellcasting feature with another level 1+ spell inscribed in this book."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Scholar's Anchoring Bangle",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#scholar's%20anchoring%20bangle_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This heavy magical bracelet inures your mind against potential distractions. While wearing this bracelet, you gain the following benefits."
+   },
+   {
+    "name": "Deep Knowledge",
+    "type": "text",
+    "value": "When you take the Study action and make an Intelligence check using a skill in which you have proficiency, you can treat a d20 roll of 9 or lower as a 10."
+   },
+   {
+    "name": "Single-Minded Focus",
+    "type": "text",
+    "value": "When you fail a Constitution saving throw to maintain *Concentration*, you can take a Reaction to succeed instead. Once you use this property, it can't be used again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Scholar's Pack",
   "source": "PHB",
   "url": "https://5e.tools/items.html#scholar's%20pack_phb",
@@ -71541,6 +74053,32 @@
   "reprint": null
  },
  {
+  "name": "Secret Keeper's Circlet",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#secret%20keeper's%20circlet_au",
+  "image": "https://5e.tools/img/items/AU/Secret%20Keeper's%20Circlet.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This circlet allows the wearer to wipe from their memory any knowledge of a specific deed or time in their life, making it useful for those who fear mages plumbing their minds with magic."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this circlet, you can take a Magic action to specify a trigger such as \"after I leave this temple\" or \"when I cast the __Animate Dead__ spell.\" For the next 24 hours, if that trigger occurs, the circlet erases your memories of everything from the time you chose the trigger until the trigger occurred. No magic short of a __Wish__ spell can restore your memory of this time. Once you use this property, you can't use it again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Seeker Dart",
   "source": "PotA",
   "url": "https://5e.tools/items.html#seeker%20dart_pota",
@@ -71590,6 +74128,59 @@
    "finesse",
    "thrown (20/60 ft.)"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Seers of Sea and Sky Trinket",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#seers%20of%20sea%20and%20sky%20trinket_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Seers of Sea and Sky Trinkets",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Seers of Sea and Sky Trinkets",
+     "headers": [
+      "1d6",
+      "Trinket"
+     ],
+     "rows": [
+      [
+       "1",
+       "A piece of driftwood with natural whorls and gnarls that spell out your name"
+      ],
+      [
+       "2",
+       "A windsock"
+      ],
+      [
+       "3",
+       "A tide chart for an unfamiliar seashore"
+      ],
+      [
+       "4",
+       "A roll of seaweed with cryptic symbols written on it in octopus ink"
+      ],
+      [
+       "5",
+       "A small cog from a lighthouse's turning mechanism"
+      ],
+      [
+       "6",
+       "Four oddly shaped white feathers that fit together to form a perfect triangle"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -72652,6 +75243,59 @@
     "name": "Trade Good",
     "type": "text",
     "value": "Merchants commonly exchange trade goods without using currency."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Sheltering Hands Trinket",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#sheltering%20hands%20trinket_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Sheltering Hands Trinkets",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Sheltering Hands Trinkets",
+     "headers": [
+      "1d6",
+      "Trinket"
+     ],
+     "rows": [
+      [
+       "1",
+       "A tin of lotion to ease rashes"
+      ],
+      [
+       "2",
+       "A religious tract for an unfamiliar deity of healing"
+      ],
+      [
+       "3",
+       "A child's drawing of two parents smiling"
+      ],
+      [
+       "4",
+       "A utensil with a fork on one end and spoon on the other"
+      ],
+      [
+       "5",
+       "A pouch of sweet spices"
+      ],
+      [
+       "6",
+       "A windup toy soldier holding a large shield"
+      ]
+     ]
+    }
    }
   ],
   "properties": [],
@@ -74804,7 +77448,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "As an action, you can brandish this card and use it to cast __Spirit of Death__ (see chapter 7) as a 6th-level spell (spell attack bonus +9, save DC 17). Once this property is used, it can't be used again until the next dawn."
+    "value": "As an action, you can brandish this card and use it to cast __Spirit of Death__ as a 6th-level spell (spell attack bonus +9, save DC 17). Once this property is used, it can't be used again until the next dawn."
    }
   ],
   "properties": [],
@@ -75733,6 +78377,76 @@
   "reprint": null
  },
  {
+  "name": "Somniferous Blossom Rod",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#somniferous%20blossom%20rod_au",
+  "image": "https://5e.tools/img/items/AU/Flowering%20Blossom%20Rod.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "rod",
+   "very rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "Budding",
+    "type": "text",
+    "value": "Multicolored leaves decorate the rod's stems, and a few buds cluster near each end."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the rod, you can cast __Druidcraft__ or __Plant Growth__ (Overgrowth only) from it. Once the rod has been used to cast __Plant Growth__, it can't be used to cast this spell again until the next dawn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the rod, as a Magic action, you can rejuvenate nonmagical plants in a 5-foot Cube you can see within 15 feet of yourself. The rejuvenated plants remain verdant for 1d4 days, after which they grow or wither as normal plants would."
+   },
+   {
+    "name": "Flowering",
+    "type": "text",
+    "value": "Both ends of the rod bear colorful, fragrant flowers."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the rod, you can cast __Insect Plague__ from it, using your spell save DC. When you do so, the insects appear as bumblebees. Once the rod has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+   },
+   {
+    "name": "Somniferous",
+    "type": "text",
+    "value": "Robust bursts of flowers grow along the rod's length."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While you hold the rod, you can take a Magic action to expel a puff of sleep-inducing pollen in a 30-foot Emanation originating from you. Creatures of your choice in the Emanation must succeed on a DC 17 Constitution saving throw or have the Unconscious condition for 1 hour. Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on the save. The effect ends on a target if it takes damage or a creature within 5 feet of it takes an action to shake it awake. Once the rod has produced this effect, it can't do so again until the next dawn."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item",
+   "evolving item",
+   "evolving item"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Songhorn",
   "source": "SCAG",
   "url": "https://5e.tools/items.html#songhorn_scag",
@@ -76415,6 +79129,68 @@
     "name": "",
     "type": "text",
     "value": "If you're holding the empty bottle when you see a creature casting a spell within 60 feet of you, you can open the bottle as a reaction in an attempt to interrupt the spell. If the creature is casting a spell of 3rd level or lower, the spell has no effect, and it is stored in the bottle. If it is casting a spell of 4th level or higher, make an Intelligence check. The DC equals 10 + the spell's level. On a success, the spell has no effect, and it is stored in the bottle."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Spell Component Ring",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#spell%20component%20ring_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This steel ring has a discreet chamber lined with a mystical inscription. As a Magic action, choose one spell you have prepared that requires a Material component; the required Material component must neither have a cost specified nor be consumed by the spell. You store that spell's Material component in the ring's chamber."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whenever you cast the chosen spell, you don't need to have a hand free to access its Material component, provided you are wearing the ring. The ring can hold the Material component for one spell at a time."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Spell Duelist's Trophy",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#spell%20duelist's%20trophy_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This withered hand or talon is attached to a leather cord that can be worn like a necklace or bracelet. You gain the following benefits while wearing the trophy."
+   },
+   {
+    "name": "Dispelling Touch",
+    "type": "text",
+    "value": "When you hit a creature with a melee spell attack, you can activate the trophy to cast the __Dispel Magic__ spell as part of that attack, targeting the hit creature. Once this property has been used, it can't be used again until the next dawn."
+   },
+   {
+    "name": "Helping Hand",
+    "type": "text",
+    "value": "When you cast a spell using a spell slot, you can cast it without any Somatic components."
+   },
+   {
+    "name": "Mage Hand",
+    "type": "text",
+    "value": "You can cast the __Mage Hand__ cantrip from the trophy."
    }
   ],
   "properties": [],
@@ -77702,6 +80478,32 @@
   "reprint": null
  },
  {
+  "name": "Spell-Slinger's Puppet",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#spell-slinger's%20puppet_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action while holding this ventriloquist's doll, you can pull the cord on the doll's back to cause the doll to levitate to an unoccupied space you can see within 30 feet of yourself and hover there. While the doll hovers, you can take a Bonus Action to cause the doll to move up to 30 feet to another unoccupied space you can see within 30 feet of yourself. The doll hovers for 1 minute or until you end the effect as a Bonus Action."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While the doll is within 30 feet of you, you can speak using the doll's mouth rather than your own. This allows you to, for instance, cast a spell with a Verbal component even if you can't speak."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Spellbook",
   "source": "PHB",
   "url": "https://5e.tools/items.html#spellbook_phb",
@@ -78452,6 +81254,103 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Spirit-Binding Censer",
+  "source": "AUD",
+  "url": "https://5e.tools/items.html#spirit-binding%20censer_aud",
+  "image": "https://5e.tools/img/items/AUD/Spirit-Binding%20Censer.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "artifact (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This brass censer is comfortingly warm to the touch."
+   },
+   {
+    "name": "Spellcasting",
+    "type": "text",
+    "value": "The censer has 10 charges and regains 1d6 charges daily at dawn. While holding the censer, you can cast a spell on the Censer Spells table from it (save DC 18). The table indicates how many charges you must expend to cast the spell."
+   },
+   {
+    "name": "Censer Spells",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Censer Spells",
+     "headers": [
+      "Spell",
+      "Charge Cost"
+     ],
+     "rows": [
+      [
+       "Banishment",
+       "4"
+      ],
+      [
+       "Bless",
+       "1"
+      ],
+      [
+       "Circle of Power",
+       "5"
+      ],
+      [
+       "Dispel Magic",
+       "3"
+      ],
+      [
+       "Remove Curse",
+       "3"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Protective Incense",
+    "type": "text",
+    "value": "As a Magic action while holding the censer, you can cause magical smoke to billow from the censer, filling a 30-foot Emanation originating from the censer for 1 hour or until you end it (no action required). The area of the Emanation is Lightly Obscured, and creatures of your choice (including yourself) gain the benefits of the __Protection from Evil and Good__ spell while within the Emanation. Once used, this property can't be used again until the next dawn."
+   },
+   {
+    "name": "Spirit Imprisonment",
+    "type": "text",
+    "value": "When a creature dies within 30 feet of you while you're holding the censer, you can siphon the creature's soul into the censer, trapping it within."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While a creature's soul is trapped within the censer, that creature can't be restored to life. If the creature had a trait that would allow it to revive, such as a __Barbed Devil__'s Diabolical Restoration trait or a __Lich__'s Spirit Jar trait, that trait doesn't function while the creature's soul is trapped. The censer can contain only one soul at a time. A creature's soul remains trapped within the censer for 100 years, until you take a Magic action to release the soul, or until the censer is destroyed (see \"Destroying the Censer\" below)."
+   },
+   {
+    "name": "Random Properties",
+    "type": "text",
+    "value": "The censer has the following random properties (see the Dungeon Master's Guide):"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "1 [minor beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20minor%20beneficial%20properties_xdmg) property",
+      "1 [major beneficial](https://5e.tools/tables.html#artifact%20properties%3B%20major%20beneficial%20properties_xdmg) property"
+     ]
+    }
+   },
+   {
+    "name": "Destroying the Censer",
+    "type": "text",
+    "value": "If it doesn't contain a soul, the censer is destroyed after being submerged in the River Styx for 1 year."
    }
   ],
   "properties": [],
@@ -80216,6 +83115,58 @@
   "reprint": null
  },
  {
+  "name": "Staff of the Lost",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#staff%20of%20the%20lost_au",
+  "image": null,
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "simple weapon",
+   "melee weapon",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This staff can be wielded as a magic Quarterstaff that grants a +1 bonus to attack rolls and damage rolls made with it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The staff has 3 charges. While holding the staff, you can expend 1 charge to cast either __Maze__ (save DC 18) or __Teleport__ from it. When the staff has no more charges remaining, it loses its magic and becomes a nonmagical Quarterstaff."
+   },
+   {
+    "name": "Curse",
+    "type": "text",
+    "value": "This staff is cursed. Becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the staff, keeping it on your person at all times."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While attuned to this staff, you never know which way is north, and you have Disadvantage on Wisdom (*Survival*) checks made to navigate. Additionally, whenever you expend a charge from the staff, roll 1d20. On a 1, 1d4 __minotaurs of Baphomet__ materialize, each appearing in an unoccupied space within 30 feet of you. The minotaurs begin combat with you immediately."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Staff of the Magi",
   "source": "DMG",
   "url": "https://5e.tools/items.html#staff%20of%20the%20magi_dmg",
@@ -80586,6 +83537,70 @@
   "properties": [
    "**1d6** Bludgeoning",
    "versatile (1d8)"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Staff of the Spirit Aegis",
+  "source": "AUD",
+  "url": "https://5e.tools/items.html#staff%20of%20the%20spirit%20aegis_aud",
+  "image": "https://5e.tools/img/items/AUD/Staff%20of%20the%20Spirit%20Aegis.webp",
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "simple weapon",
+   "melee weapon",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This weathered bone staff is topped with a skull and decorated with vertebrae. It can be wielded as a magic Quarterstaff that grants a +3 bonus to attack rolls and damage rolls made with it. While holding the staff, you have Resistance to Necrotic damage."
+   },
+   {
+    "name": "Aura of Haunted Power",
+    "type": "text",
+    "value": "As a Magic action while holding the staff, you can cause it to radiate supernatural power that fills a 30-foot Emanation originating from you. Creatures of your choice in this Emanation (including yourself) gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Undead Deterrent**: Undead have Disadvantage on attack rolls against the creatures.",
+      "**Unholy Protection**: The creatures have Resistance to Cold, Necrotic, and Psychic damage, and they have Advantage on saving throws to avoid or end the Frightened condition."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Emanation lasts for 1 hour or until you end it (no action required). Once used, this property can't be used again until the next dawn."
+   },
+   {
+    "name": "Illuminating Sight",
+    "type": "text",
+    "value": "As a Bonus Action while holding the staff, you can cause the eye sockets of the skull atop the staff to emit an unearthly glow; this glow lasts until you stop it (no action required). While the staff glows, it sheds Bright Light in a 15-foot radius and Dim Light for an additional 15 feet. Invisible creatures and objects are visible as long as they are in the staff's Bright Light or Dim Light."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "mastery: topple"
   ],
   "reprint": null
  },
@@ -82456,6 +85471,27 @@
   "reprint": null
  },
  {
+  "name": "Sweeping Broom",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#sweeping%20broom_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Magic action, you can use this unassuming broom's command word, choosing a point you can see on the ground within 60 feet of yourself. The broom animates and sweeps dust and detritus from the ground in a 20-foot square centered on the chosen point. It sweeps that area until you take another Magic action to deactivate it."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Sword of Answering (Answerer)",
   "source": "DMG",
   "url": "https://5e.tools/items.html#sword%20of%20answering%20(answerer)_dmg",
@@ -83894,6 +86930,55 @@
   "reprint": null
  },
  {
+  "name": "Tarnished Idol of Good Fortunes",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#tarnished%20idol%20of%20good%20fortunes_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "Blemished",
+    "type": "text",
+    "value": "The idol is made of tarnished bronze, with minor dings and dents scattered over its surface."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can cast the __Augury__ spell from the idol. The idol speaks the omen aloud in response. Once the idol has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+   },
+   {
+    "name": "Tarnished",
+    "type": "text",
+    "value": "The idol is made of gold, with a patina of dust settled into its crevices."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While attuned to the idol, you gain a +1 bonus to your Armor Class. Additionally, while holding the idol, you can take a Magic action to touch a nonmagical trade bar or gemstone. The item is then transformed into coinage equivalent to its value. For example, if you take a Magic action to touch a 5-pound silver bar while holding the idol, the bar is transformed into 25 GP worth of coins."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item",
+   "evolving item"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Tasha's Creeping Keelboat",
   "source": "DitLCoT",
   "url": "https://5e.tools/items.html#tasha's%20creeping%20keelboat_ditlcot",
@@ -84315,6 +87400,77 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ten Keyholes Dagger",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#ten%20keyholes%20dagger_au",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "weapon (dagger)",
+   "simple weapon",
+   "melee weapon",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "Three",
+    "type": "text",
+    "value": "Three ornamental keyholes adorn the weapon's hilt."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have a +1 bonus to attack rolls and damage rolls made with this magic weapon. When you take the Attack action, you can transform this weapon into a Handaxe or Mace. It remains transformed in this way until the start of your next turn, at which point it reverts back to its Dagger form. Regardless of the weapon's form, you can use your choice of your Strength or Dexterity modifier for the attack and damage rolls; you must use the same modifier for both rolls."
+   },
+   {
+    "name": "Ten",
+    "type": "text",
+    "value": "Ten ornamental keyholes adorn the weapon's hilt. Your bonus to attack rolls and damage rolls made with this magic weapon increases to +2. Additionally, when you transform the weapon, you can now transform it into any Simple Melee weapon."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/60 ft.)",
+   "evolving item",
+   "evolving item",
+   "mastery: nick"
+  ],
   "reprint": null
  },
  {
@@ -85426,6 +88582,27 @@
   "reprint": null
  },
  {
+  "name": "Thespian's Playbill",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#thespian's%20playbill_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this magical theater program, whenever you take the Study action and make an Intelligence check, you gain a bonus to the check equal to your Charisma modifier (minimum of +1)."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Thessaltoxin",
   "source": "IMR",
   "url": "https://5e.tools/items.html#thessaltoxin_imr",
@@ -85461,6 +88638,32 @@
     "name": "",
     "type": "text",
     "value": "This potion appears to change color and texture each time you look at it. When you drink the potion, it ends the __polymorph__ effect imposed by thessaltoxin."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Thief's Thimble",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#thief's%20thimble_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This magic thimble aids thieves in foiling traps. While wearing this thimble, if you trigger a trap and take damage, the thimble takes the damage instead."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The thimble has 30 Hit Points. If the thimble is reduced to 0 Hit Points, it breaks, and you take any remaining damage."
    }
   ],
   "properties": [],
@@ -85525,6 +88728,66 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Three Keyholes Dagger",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#three%20keyholes%20dagger_au",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "weapon (dagger)",
+   "simple weapon",
+   "melee weapon",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "Three",
+    "type": "text",
+    "value": "Three ornamental keyholes adorn the weapon's hilt."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "You have a +1 bonus to attack rolls and damage rolls made with this magic weapon. When you take the Attack action, you can transform this weapon into a Handaxe or Mace. It remains transformed in this way until the start of your next turn, at which point it reverts back to its Dagger form. Regardless of the weapon's form, you can use your choice of your Strength or Dexterity modifier for the attack and damage rolls; you must use the same modifier for both rolls."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/60 ft.)",
+   "evolving item",
+   "mastery: nick"
+  ],
   "reprint": null
  },
  {
@@ -86698,6 +89961,66 @@
   "reprint": null
  },
  {
+  "name": "Tranquil Rod of the Honed Mind",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#tranquil%20rod%20of%20the%20honed%20mind_au",
+  "image": null,
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "rod",
+   "legendary (requires attunement by a warlock)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this rod, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your Warlock spells."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, you can regain one spell slot as a Magic action while holding the rod. You can't use this property again until you finish a Long Rest."
+   },
+   {
+    "name": "Vigilant",
+    "type": "text",
+    "value": "After discovering a strange tome full of symbols that match those on the rod, the Warlock feels the approval of the entity that fuels their magic. The DM decides the rod evolves and becomes Rare, gaining the Vigilant property."
+   },
+   {
+    "name": "Psionic",
+    "type": "text",
+    "value": "While exploring clues the Warlock deciphered from the strange tome, the characters acquire psionically charged crystals from the Underdark. The crystals bear the same symbols the rod has. The DM decides the rod evolves to become Very Rare, gaining the Psionic property."
+   },
+   {
+    "name": "Tranquil",
+    "type": "text",
+    "value": "Thanks to the Warlock's quick thinking, the characters defeat a band of cultists seeking to destroy anything connected to psionic magic. To reward the Warlock, the DM evolves the rod into its final form, making it Legendary and granting it the Tranquil property."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item",
+   "evolving item",
+   "evolving item"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Travel Alchemical Kit",
   "source": "AI",
   "url": "https://5e.tools/items.html#travel%20alchemical%20kit_ai",
@@ -86756,6 +90079,27 @@
     "name": "",
     "type": "text",
     "value": "Traveler's Clothes are resilient garments designed for travel in various environments."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Traveler's Pearl",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#traveler's%20pearl_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "By using a command word while holding this pearl, you can cast the __Teleport__ spell from it. Once this property is used, it can't be used again until the next dawn."
    }
   ],
   "properties": [],
@@ -89412,6 +92756,47 @@
   "reprint": null
  },
  {
+  "name": "Universal Pantograph",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#universal%20pantograph_au",
+  "image": "https://5e.tools/img/items/AU/Universal%20Pantograph.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "artifact"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This cubical box measures 2 feet on each side. It appears to be made of oak and bound in silver, and its surface is engraved with motifs of marionettes and laughing children."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a nonmagical item is placed in the box and the lid is closed, a perfect duplicate of the item appears next to the box."
+   },
+   {
+    "name": "Clone",
+    "type": "text",
+    "value": "As a Magic action, you can cause the pantograph to grow large enough for a Medium creature to crouch within. You can revert the pantograph to its normal size as a Magic action, harmlessly shunting anything that can't fit inside to the nearest unoccupied space."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a creature is inside the pantograph, you can close the pantograph's lid and sprinkle the pantograph with diamond dust worth at least 100 GP. If you do, the diamond dust is consumed, and you cast the __Clone__ spell, targeting the creature inside the pantograph. After the spell's casting time is finished, the creature is harmlessly shunted from the pantograph, and the pantograph's lid then can't be opened for 120 days, during which time the duplicate from the spell grows within. Once the clone is finished forming, it is harmlessly shunted from the pantograph, and the pantograph returns to its original size. A clone created by the pantograph doesn't need to be contained within a vessel and endures indefinitely while inert."
+   },
+   {
+    "name": "Destroying the Pantograph",
+    "type": "text",
+    "value": "If the pantograph doesn't contain a clone, it is destroyed after being submerged in a bog in the Feywild for 999 years."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Universal Solvent",
   "source": "DMG",
   "url": "https://5e.tools/items.html#universal%20solvent_dmg",
@@ -89929,6 +93314,44 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Vigilant Rod of the Honed Mind",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#vigilant%20rod%20of%20the%20honed%20mind_au",
+  "image": null,
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "rod",
+   "rare (requires attunement by a warlock)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this rod, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your Warlock spells."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, you can regain one spell slot as a Magic action while holding the rod. You can't use this property again until you finish a Long Rest."
+   },
+   {
+    "name": "Vigilant",
+    "type": "text",
+    "value": "After discovering a strange tome full of symbols that match those on the rod, the Warlock feels the approval of the entity that fuels their magic. The DM decides the rod evolves and becomes Rare, gaining the Vigilant property."
+   },
+   {
+    "name": "Evolving Item",
+    "type": "text",
+    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+   }
+  ],
+  "properties": [
+   "evolving item"
+  ],
   "reprint": null
  },
  {
@@ -90534,6 +93957,27 @@
   "reprint": null
  },
  {
+  "name": "Wand of Enthralling",
+  "source": "AUD",
+  "url": "https://5e.tools/items.html#wand%20of%20enthralling_aud",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wand",
+   "uncommon (requires attunement by a Spellcaster)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This wand has 4 charges and regains 1d4 expended charges daily at dawn. While holding it, you can expend 1 charge to cast __Enthrall__ (save DC 15) from it."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Wand of Fear",
   "source": "DMG",
   "url": "https://5e.tools/items.html#wand%20of%20fear_dmg",
@@ -90672,6 +94116,27 @@
     "name": "Regaining Charges",
     "type": "text",
     "value": "The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll 1d20. On a 1, the wand crumbles into ashes and is destroyed."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Wand of Freshness",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#wand%20of%20freshness_au",
+  "image": "https://5e.tools/img/items/AU/Wand%20of%20Freshness.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wand",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This wand has 4 charges and regains 1d4 + 1 expended charges daily at dawn. While holding it, you can expend 1 charge to cast the __Purify Food and Drink__ spell from it."
    }
   ],
   "properties": [],
@@ -91353,6 +94818,54 @@
   "reprint": null
  },
  {
+  "name": "Wand of Slumber",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#wand%20of%20slumber_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wand",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This wand has 7 charges. While holding it, you can cast one of the spells on the following table from it. The table indicates how many charges you must expend to cast the spell."
+   },
+   {
+    "name": "Regaining Charges",
+    "type": "text",
+    "value": "The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll 1d20. On a 1, the wand crumbles into sand and is destroyed."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Spell",
+      "Charge Cost"
+     ],
+     "rows": [
+      [
+       "Catnap",
+       "3"
+      ],
+      [
+       "Sleep (save DC 15)",
+       "1"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Wand of Smiles",
   "source": "XGE",
   "url": "https://5e.tools/items.html#wand%20of%20smiles_xge",
@@ -91373,6 +94886,32 @@
     "name": "",
     "type": "text",
     "value": "The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand transforms into a wand of scowls."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Wand of Teeth",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#wand%20of%20teeth_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wand",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This wand has 10 charges. While holding it, you can take a Magic action to expend up to 3 charges to spray a wave of sharp, spectral teeth in the direction you point it. Each creature in a 30-foot Cone makes a DC 15 Dexterity saving throw. Roll a number of d8s equal to the number of charges expended. On a failed save, a creature takes Piercing damage equal to the total rolled and has the Poisoned condition until the start of your next turn; on a successful save, a creature takes half as much damage only."
+   },
+   {
+    "name": "Regaining Charges",
+    "type": "text",
+    "value": "The wand regains 1d10 expended charges daily at dawn. If you expend the wand's last charge, roll 1d20. On a 1, the wand explodes into harmless splinters and is destroyed."
    }
   ],
   "properties": [],
@@ -94515,6 +98054,72 @@
    "versatile (1d8)",
    "mastery: topple"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Workshop Wrecker",
+  "source": "AU",
+  "url": "https://5e.tools/items.html#workshop%20wrecker_au",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When this 3-inch-diameter metal ball is activated as a Magic action, it moves at a rapid speed, bouncing off walls and defying any attempts to capture it. The ball remains active for 1 minute or until you deactivate it by using a command word while within 30 feet of it (no action required). Once the ball is used, it can't be used again until the next dawn."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you activate the ball and at the beginning of each of your turns while the ball is active, each creature in the area makes a Dexterity saving throw, taking Bludgeoning damage on a failed save. The save DC and amount of damage dealt depend on the approximate size of the area in which the ball is active, as shown on the following table."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A nonmagical object that isn't being worn or carried also takes the damage if it is in the area. In confined areas larger than a 100-foot Cube, the amount of damage caused by the ball is negligible. If the ball is activated in an unconfined area, it flies off in a random direction at a rate of 300 feet per round."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Area",
+      "Save DC",
+      "Bludgeoning Damage"
+     ],
+     "rows": [
+      [
+       "15-foot Cube",
+       "18",
+       "6d6 + 5"
+      ],
+      [
+       "30-foot Cube",
+       "17",
+       "4d6 + 4"
+      ],
+      [
+       "50-foot Cube",
+       "15",
+       "2d6 + 2"
+      ],
+      [
+       "100-foot Cube",
+       "14",
+       "1d6 + 1"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {

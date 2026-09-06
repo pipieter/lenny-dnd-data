@@ -325,7 +325,7 @@ export function handleCopy(base: any, entries: any[]): any {
 
     let parent = entries.find((entry) => {
         const entryName = entry.name.trim().toLowerCase();
-        const entrySource = entry.source.trim().toLowerCase();
+        const entrySource = entry.source?.trim().toLowerCase() ?? 'xdmg'; // TODO error in Studious Blade of the Guardian|AU, has to be handled manually here for now
         return entryName === copyName && entrySource === copySource;
     });
     if (!parent) throw `Could not find parent for ${copy.name}|${copy.source} -> ${copyName}|${copySource}`;
