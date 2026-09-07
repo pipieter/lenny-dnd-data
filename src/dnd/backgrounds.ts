@@ -1,4 +1,4 @@
-import { Background } from '../../5etools-collector/types/background';
+import { BackgroundBase } from '../../5etools-collector/types/background';
 import { Fluff } from '../../5etools-collector/types/fluff';
 import { handleCopy } from '../5etools-conversion/copy';
 import { cleanDNDText } from '../clean';
@@ -33,7 +33,7 @@ export interface ParsedBackground {
     reprint: ReprintData | null;
 }
 
-function parseBackgroundDescription(background: any): Description[] {
+function parseBackgroundDescription(background: BackgroundBase): Description[] {
     // The first entry of the background is a formatted re-cap of the
     // abilities, feats, and items of the background, and should thus
     // be removed
@@ -41,61 +41,70 @@ function parseBackgroundDescription(background: any): Description[] {
     return parseDescriptions('', entries);
 }
 
-function getPreformattedBackgroundValue(background: Background, name: string): string | null {
-    if (!background.entries) return null;
-
+function getPreformattedBackgroundValue(background: BackgroundBase, name: string): string | null {
     // The first entry of the background is a formatted re-cap of the
     // abilities, feats, and items of the background. Because 5e.tools
     // already formatted everything into a nice format, these can be
     // taken for a nice result without having to do any manual parsing.
-    // Sometimes it is possible that the first entry is a string instead, usually comments about the class and how to use it.
+    // Sometimes it is possible that the first entry is a string instead,
+    // usually comments about the class and how to use it.
+
     const entries = typeof background.entries[0] !== 'string' ? background.entries[0] : background.entries[1];
+
+    if (typeof entries === 'string') {
+        throw `getPreformattedBackgroundValue: The first entry is required to be a list, instead received a string ${entries}: ${JSON.stringify(background)}`;
+    }
     if (entries.type !== 'list') {
-        throw `getPreformattedBackgroundValue: The first entry is required to be a list, instead received a ${entries.type}: ${JSON.stringify(background)}`;
+        throw `getPreformattedBackgroundValue: The first entry is required to be a list, instead received a different type ${entries.type}: ${JSON.stringify(background)}`;
     }
 
     for (const item of entries.items) {
-        if (item.name.trim() !== name.trim()) continue;
-        if (item.entry) return cleanDNDText(item.entry, true) || null;
-        if (item.entries) return cleanDNDText(item.entries[0], true) || null;
-        throw `Unsupported getPreformattedBackgroundValue entry '${JSON.stringify(item)}'`;
+        if (typeof item === 'string' || item.type !== 'item') {
+            continue;
+        }
+        if (item.name?.trim() === name.trim()) {
+            if (item.entry) {
+                return cleanDNDText(item.entry.toString(), true) || null;
+            }
+            if (item.entries) {
+                return cleanDNDText(item.entries[0].toString(), true) || null;
+            }
+            throw `Unsupported getPreformattedBackgroundValue entry '${JSON.stringify(item)}'`;
+        }
     }
     return null;
 }
 
-function parseBackgroundAbilities(background: Background): string[] {
-    if (!background.ability || !background.ability[0].choose) return [];
-    const choose = variadic(background.ability[0].choose)[0];
-
-    if (!choose.weighted) return [];
-    const abilities = choose.weighted.from;
+function parseBackgroundAbilities(background: BackgroundBase): string[] {
+    if (!background.ability) return [];
+    const abilities = variadic(background.ability[0].choose)[0]?.weighted?.from ?? [];
     return abilities.map(parseAbilityScore);
 }
 
-function parseBackgroundFeats(background: Background): string | null {
+function parseBackgroundFeats(background: BackgroundBase): string | null {
     return getPreformattedBackgroundValue(background, 'Feat:');
 }
 
-function parseSkillProficiencies(background: Background): string | null {
+function parseSkillProficiencies(background: BackgroundBase): string | null {
     return getPreformattedBackgroundValue(background, 'Skill Proficiencies:');
 }
 
-function parseToolProficiencies(background: Background): string | null {
+function parseToolProficiencies(background: BackgroundBase): string | null {
     return (
         getPreformattedBackgroundValue(background, 'Tool Proficiencies:') ||
         getPreformattedBackgroundValue(background, 'Tool Proficiency:')
     );
 }
 
-function parseLanguages(background: Background): string | null {
+function parseLanguages(background: BackgroundBase): string | null {
     return getPreformattedBackgroundValue(background, 'Languages:');
 }
 
-function parseEquipment(background: Background): string | null {
+function parseEquipment(background: BackgroundBase): string | null {
     return getPreformattedBackgroundValue(background, 'Equipment:');
 }
 
-function parseBackgroundFluff(fluff?: Fluff): Description[] {
+function parseBackgroundFluff(fluff: Fluff | undefined): Description[] {
     if (!fluff || !fluff.entries) return [];
     return parseDescriptions('', fluff.entries);
 }

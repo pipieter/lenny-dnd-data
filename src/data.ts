@@ -16,8 +16,8 @@ import { LifeBackground, LifeClass } from './dnd/life';
 
 import { Action } from '../5etools-collector/types/action';
 import { Background } from '../5etools-collector/types/background';
-import { Language } from '../5etools-collector/types/language';
 import { Fluff } from '../5etools-collector/types/fluff';
+import { Language } from '../5etools-collector/types/language';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;

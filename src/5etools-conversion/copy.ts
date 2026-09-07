@@ -3,6 +3,8 @@ import { crToProficiencyBonus } from './parser';
 import { ascSortLower } from './sort';
 import { Variables } from '../variables';
 import { title } from '../parser';
+import { Copyable } from '../../5etools-collector/types/internal/copy';
+import { Base } from '../../5etools-collector/types/internal/base';
 
 // TODO _templates (e.g. Zox Clammersham). This will most likely require data going global
 
@@ -316,20 +318,21 @@ function addPreserve(copy: any, parent: any, preserve: any): void {
     }
 }
 
-export function handleCopy(base: any, entries: any[]): any {
+export function handleCopy<T extends Base>(base: T | Copyable<T>, entries: (T | Copyable<T>)[]): T {
     let copy = structuredClone(base); // Fields will be changed, so making a deep clone is important for future usages
 
-    if (!copy._copy) return copy;
-    const copyName = copy._copy.name.trim().toLowerCase();
+    if (!('_copy' in copy)) return copy;
+
+    const copyName = copy._copy.name?.trim().toLowerCase();
     const copySource = copy._copy.source.trim().toLowerCase();
 
     let parent = entries.find((entry) => {
-        const entryName = entry.name.trim().toLowerCase();
+        const entryName = entry.name?.trim().toLowerCase();
         const entrySource = entry.source?.trim().toLowerCase() ?? 'xdmg'; // TODO error in Studious Blade of the Guardian|AU, has to be handled manually here for now
         return entryName === copyName && entrySource === copySource;
     });
     if (!parent) throw `Could not find parent for ${copy.name}|${copy.source} -> ${copyName}|${copySource}`;
-    if (parent._copy) parent = handleCopy(parent, entries); // Handle parent being a copy itself
+    if ('_copy' in parent) parent = handleCopy(parent, entries); // Handle parent being a copy itself
 
     const mod = copy._copy._mod || {};
     const preserve = copy._copy._preserve || {};
@@ -340,9 +343,8 @@ export function handleCopy(base: any, entries: any[]): any {
     addMod(copy, mod);
     addPreserve(copy, parent, preserve);
 
-    delete copy._copy;
-
-    return copy;
+    delete (copy as any)._copy;
+    return copy as T;
 }
 
 export function handleVersions(base: any): any[] {
