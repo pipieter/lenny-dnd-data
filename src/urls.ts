@@ -166,7 +166,7 @@ export function getCultsBoonsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/cultsboons.html`, name, source);
 }
 
-export function getHrefURL(href: HRef) {
+export function getHrefUrl(href: HRef) {
     if (href.type === 'external') return href.url;
     if (href.type === 'internal') return getImageUrl(href.path);
     throw `Unknown HREF type in ${href}`;
