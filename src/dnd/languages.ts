@@ -2,7 +2,7 @@ import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
 import { getHrefUrl, getLanguagesUrl } from '../urls';
-import { joinStringsWithAnd } from '../util';
+import { findEntryFluff, joinStringsWithAnd } from '../util';
 
 import { Language } from '../../5etools-collector/types/language';
 import { Fluff } from '../../5etools-collector/types/fluff';
@@ -44,7 +44,8 @@ function getLanguageImage(fluff?: Fluff): string | null {
 
 export function getLanguages(data: Databank): ParsedLanguage[] {
     return data.language.map((language) => {
-        const fluff = data.languageFluff.find((item) => item.name === language.name && item.source === language.source);
+        const fluff = findEntryFluff(language, data.languageFluff);
+
         return {
             name: language.name,
             source: language.source,

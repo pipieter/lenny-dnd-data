@@ -1,3 +1,5 @@
+import { Fluff } from '../5etools-collector/types/fluff';
+import { Base } from '../5etools-collector/types/internal/base';
 import { getKey } from './data';
 import { title } from './parser';
 // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -11,6 +13,10 @@ export function entrySort(a: any, b: any): number {
         sensitivity: 'base',
         numeric: true,
     });
+}
+
+export function findEntryFluff(entry: Base, fluff: Fluff[]) {
+    return fluff.find((item) => item.name === entry.name && item.source === entry.source);
 }
 
 export function getNumberSign(value: number, zeroReturnsPlus: boolean = false): string {
