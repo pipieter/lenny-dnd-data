@@ -1,23 +1,11 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
-import { getImageUrl, getLanguagesUrl } from '../urls';
+import { getHrefUrl, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
-interface Language {
-    name: string;
-    source: string;
-    type?: string;
-    typicalSpeakers?: string[];
-    script?: string;
-    entries: any[];
-}
-
-interface LanguageFluff {
-    name: string;
-    source: string;
-    images: any[];
-}
+import { Language } from '../../5etools-collector/types/language';
+import { Fluff } from '../../5etools-collector/types/fluff';
 
 export interface ParsedLanguage {
     name: string;
@@ -49,17 +37,14 @@ function getLanguageType(language: Language): string {
     return `${type} language`;
 }
 
-function getLanguageImage(language: Language, data: Databank): string | null {
-    const fluff = data.search('languageFluff', language.name, language.source);
-    if (fluff && fluff.images.length) {
-        return getImageUrl(fluff.images[0].href.path);
-    }
-    return null;
+function getLanguageImage(fluff?: Fluff): string | null {
+    if (!fluff || !fluff.images) return null;
+    return getHrefUrl(fluff.images[0].href);
 }
 
 export function getLanguages(data: Databank): ParsedLanguage[] {
-    const languages: Language[] = data.language;
-    return languages.map((language) => {
+    return data.language.map((language) => {
+        const fluff = data.languageFluff.find((item) => item.name === language.name && item.source === language.source);
         return {
             name: language.name,
             source: language.source,
@@ -68,7 +53,7 @@ export function getLanguages(data: Databank): ParsedLanguage[] {
             typicalSpeakers: getTypicalSpeakers(language),
             script: language.script ?? null,
             description: language.entries ? parseDescriptions('', language.entries) : null,
-            image: getLanguageImage(language, data),
+            image: getLanguageImage(fluff),
             reprint: parseReprint(language),
         };
     });
