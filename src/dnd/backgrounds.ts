@@ -14,7 +14,7 @@ import {
     ReprintData,
 } from '../parser';
 import { getBackgroundsUrl } from '../urls';
-import { findEntryFluff, variadic } from '../util';
+import { findFluff, variadic } from '../util';
 
 export interface ParsedBackground {
     name: string;
@@ -112,7 +112,7 @@ function parseBackgroundFluff(fluff: Fluff | undefined): Description[] {
 export function getBackgrounds(data: Databank): ParsedBackground[] {
     return data.background.map((background: any) => {
         background = handleCopy(background, data.background);
-        const fluff = findEntryFluff(background, data.backgroundFluff);
+        const fluff = findFluff(background, data.backgroundFluff);
 
         return {
             name: background.name,

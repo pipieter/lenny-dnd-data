@@ -15,7 +15,7 @@ export function entrySort(a: any, b: any): number {
     });
 }
 
-export function findEntryFluff(entry: Base, fluff: Fluff[]) {
+export function findFluff(entry: Base, fluff: Fluff[]) {
     return fluff.find((item) => item.name === entry.name && item.source === entry.source);
 }
 
