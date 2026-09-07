@@ -1,7 +1,7 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
-import { getHrefURL, getLanguagesUrl } from '../urls';
+import { getHrefUrl, getLanguagesUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
 
 import { Language } from '../../5etools-collector/types/language';
@@ -39,7 +39,7 @@ function getLanguageType(language: Language): string {
 
 function getLanguageImage(fluff?: Fluff): string | null {
     if (!fluff || !fluff.images) return null;
-    return getHrefURL(fluff.images[0].href);
+    return getHrefUrl(fluff.images[0].href);
 }
 
 export function getLanguages(data: Databank): ParsedLanguage[] {
