@@ -30,7 +30,7 @@ import {
     SubclassBase,
     SubclassFeature,
 } from '../../5etools-collector/types/class';
-import { ClassProficiencies } from '../../5etools-collector/types/internal/base';
+import { ClassProficiencies, ClassProficiency, SkillProficiency } from '../../5etools-collector/types/internal/base';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ParsedClassFeature[];
@@ -237,25 +237,12 @@ function parseClass(
 }
 
 function parsePrimaryAbility(data: ClassBase): string | null {
-    if (!data.primaryAbility) {
-        return null;
-    }
+    if (!data.primaryAbility) return null;
 
-    const groups: string[] = [];
-
-    for (const abilityGroup of data.primaryAbility) {
-        const andGroup: string[] = [];
-
-        // Each abilityGroup is an object like { "str": true }
-        Object.keys(abilityGroup).forEach((ability) => {
-            if (abilityGroup[ability as keyof typeof abilityGroup]) {
-                // TODO Find a better way to do this?
-                andGroup.push(parseAbilityScore(ability));
-            }
-        });
-
-        groups.push(joinStringsWithAnd(andGroup));
-    }
+    const groups: string[] = data.primaryAbility.map((abilityGroup) => {
+        const andGroup = Object.keys(abilityGroup).map(parseAbilityScore);
+        return joinStringsWithAnd(andGroup);
+    });
 
     return joinStringsWithOr(groups);
 }
@@ -265,32 +252,25 @@ function parseSpellcastAbility(data: ClassBase): string | null {
     return parseAbilityScore(data.spellcastingAbility);
 }
 
-function parseClassArmorProficiencies(proficiency: any): string[] {
+function parseClassArmorProficiencies(proficiency: (string | ClassProficiency)[]): string[] {
     const armors: string[] = [];
     let hasShields = false;
 
     for (const armorType of proficiency) {
-        const armor = armorType.proficiency ? armorType.proficiency : armorType;
-        if (armor === 'shield') {
-            hasShields = true;
-        } else if (armor) {
-            armors.push(`${armor} armor`);
-        }
-    }
-    if (hasShields) {
-        armors.push('shields');
+        const armor = typeof armorType === 'string' ? armorType : armorType.proficiency;
+        if (armor === 'shield') hasShields = true;
+        else if (armor) armors.push(`${armor} armor`);
     }
 
+    if (hasShields) armors.push('shields');
     return armors;
 }
 
-function parseClassWeaponProficiencies(proficiency: any): string[] {
+function parseClassWeaponProficiencies(proficiency: (string | ClassProficiency)[]): string[] {
     const weapons: string[] = [];
-    for (const weaponType of proficiency as any) {
+    for (const weaponType of proficiency) {
         if (typeof weaponType === 'object' && weaponType !== null) {
-            if (weaponType.proficiency) {
-                weapons.push(capitalize(weaponType.proficiency));
-            }
+            weapons.push(capitalize(weaponType.proficiency));
         } else {
             weapons.push(capitalize(cleanDNDText(weaponType)));
         }
@@ -299,14 +279,14 @@ function parseClassWeaponProficiencies(proficiency: any): string[] {
     return weapons;
 }
 
-function parseClassSkillProficiencies(proficiency: any): string[] {
+function parseClassSkillProficiencies(proficiency: SkillProficiency[]): string[] {
     const skills = [];
-    for (const skillProficiencies of proficiency as any) {
-        const choose = skillProficiencies.choose;
+    for (const skillProficiencies of proficiency) {
         if (skillProficiencies.any) return [`Any ${skillProficiencies.any}`];
-        if (!choose) continue;
-        const chooseFrom = choose.from;
-        const count = parseInt(choose.count ?? '0');
+        if (!skillProficiencies.choose) continue;
+
+        const chooseFrom = skillProficiencies.choose.from;
+        const count = skillProficiencies.choose.count ?? 0;
         if (!chooseFrom || count === 0) continue;
         skills.push(`Choose ${count}: ${joinStringsWithOr(chooseFrom)}`);
     }
@@ -314,48 +294,47 @@ function parseClassSkillProficiencies(proficiency: any): string[] {
     return skills;
 }
 
-function parseClassToolProficiencies(proficiency: any): string[] {
-    return proficiency.map(cleanDNDText);
+function parseClassToolProficiencies(proficiency: (string | ClassProficiency)[]): string[] {
+    return proficiency.map((toolProf) => {
+        if (typeof toolProf === 'string') return cleanDNDText(toolProf);
+        return toolProf.proficiency; // TODO
+    });
 }
 
 function parseClassProficiencies(proficiencies: ClassProficiencies | undefined): Description[] {
     if (!proficiencies) return [];
+    const prof = structuredClone(proficiencies);
+    // We delete these because they offer no special information.
+    delete prof.toolProficiencies;
+    delete prof.weaponProficiencies;
+    delete prof.armorProficiencies;
+
     const entries: string[] = [];
-
-    // TODO Rework with strict typing.
-    for (const [type, proficiency] of Object.entries(proficiencies)) {
-        switch (type) {
-            case 'armor': {
-                const armor = parseClassArmorProficiencies(proficiency);
-                entries.push(`Armor Proficiencies: ${joinStringsWithAnd(armor)}`);
-                break;
-            }
-            case 'weapons': {
-                const weapons = parseClassWeaponProficiencies(proficiency);
-                entries.push(`Weapon Proficiencies: ${joinStringsWithAnd(weapons)}`);
-                break;
-            }
-            case 'skills': {
-                const skills = parseClassSkillProficiencies(proficiency);
-                entries.push(`Skill Proficiencies: ${joinStringsWithAnd(skills)}`);
-                break;
-            }
-            case 'tools': {
-                const tools = parseClassToolProficiencies(proficiency);
-                entries.push(`Tool Proficiencies: ${joinStringsWithAnd(tools)}`);
-                break;
-            }
-            case 'toolProficiencies':
-            case 'weaponProficiencies':
-            case 'armorProficiencies':
-                // Data is not of use
-                continue;
-
-            default:
-                throw new Error('Unknown proficiency type: ' + type);
-        }
+    if (prof.armor) {
+        const armor = parseClassArmorProficiencies(prof.armor);
+        entries.push(`Armor Proficiencies: ${joinStringsWithAnd(armor)}`);
+        delete prof.armor;
     }
 
+    if (prof.weapons) {
+        const weapons = parseClassWeaponProficiencies(prof.weapons);
+        entries.push(`Weapon Proficiencies: ${joinStringsWithAnd(weapons)}`);
+        delete prof.weapons;
+    }
+
+    if (prof.skills) {
+        const skills = parseClassSkillProficiencies(prof.skills);
+        entries.push(`Skill Proficiencies: ${joinStringsWithAnd(skills)}`);
+        delete prof.skills;
+    }
+
+    if (prof.tools) {
+        const tools = parseClassToolProficiencies(prof.tools);
+        entries.push(`Tool Proficiencies: ${joinStringsWithAnd(tools)}`);
+        delete prof.tools;
+    }
+
+    if (Object.keys(prof).length > 0) throw `Unhandled class proficiencies in: ${JSON.stringify(prof)}`;
     if (entries.length === 0) return [];
     return [
         {
@@ -851,18 +830,9 @@ function resolveListReferences(
 }
 
 function containsUnresolvedReferences(description: Description): boolean {
-    if (description.type === DescriptionType.text) {
-        return containsDisallowedSymbols(description.value);
-    }
-
-    if (description.type === DescriptionType.table) {
-        return false; // For now, tables don't have any references.
-    }
-
-    if (description.type === DescriptionType.list) {
-        return containsDisallowedSymbols(description.list);
-    }
-
+    if (description.type === DescriptionType.text) return containsDisallowedSymbols(description.value);
+    if (description.type === DescriptionType.table) return false; // For now, tables don't have any references.
+    if (description.type === DescriptionType.list) return containsDisallowedSymbols(description.list);
     throw `Unsupported unresolved description references type '${description.type}'`;
 }
 
