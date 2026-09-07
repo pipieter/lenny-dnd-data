@@ -14,7 +14,7 @@ import {
     ReprintData,
 } from '../parser';
 import { getBackgroundsUrl } from '../urls';
-import { variadic } from '../util';
+import { findFluff, variadic } from '../util';
 
 export interface ParsedBackground {
     name: string;
@@ -109,14 +109,11 @@ function parseBackgroundFluff(fluff: Fluff | undefined): Description[] {
     return parseDescriptions('', fluff.entries);
 }
 
-export function getBackgrounds(databank: Databank): ParsedBackground[] {
-    const raw = databank.background.map((e) => handleCopy(e, databank.background));
+export function getBackgrounds(data: Databank): ParsedBackground[] {
+    return data.background.map((background: any) => {
+        background = handleCopy(background, data.background);
+        const fluff = findFluff(background, data.backgroundFluff);
 
-    const excluded = ['Custom Background']; // These backgrounds will not be added to the databank, as they don't represent actual backgrounds
-    const filtered = raw.filter((background) => !excluded.includes(background.name));
-
-    return filtered.map((background) => {
-        const fluff = databank.search('backgroundFluff', background.name, background.source);
         return {
             name: background.name,
             source: background.source,
