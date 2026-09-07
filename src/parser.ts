@@ -15,7 +15,7 @@ import { cleanDNDText } from './clean';
 import { SpellDamage } from './dnd/spells';
 import { Variables } from './variables';
 import { Databank } from './data';
-import { Unit } from '../5etools-collector/types/internal/base';
+import { ClassProficiency, Unit } from '../5etools-collector/types/internal/base';
 import { ClassResourceValue } from '../5etools-collector/types/class';
 
 export interface Range {
@@ -417,6 +417,13 @@ export function parseAlignments(alignments: string[]): string[] {
         result.push(parsed);
     }
     return result;
+}
+
+export function parseClassProficiency(classProficiency: string | ClassProficiency): string {
+    if (typeof classProficiency === 'string') return cleanDNDText(classProficiency);
+    if (classProficiency.full) return classProficiency.full;
+    if (classProficiency.optional) return `${classProficiency.proficiency} (Optional)`;
+    return classProficiency.proficiency;
 }
 
 function parseDescriptionBlockFromBlocks(descriptions: any[]): string {
@@ -1118,32 +1125,6 @@ export function parseSkillProficiency(skillProficiencies: any[] | undefined): Pr
         options: proficiencies,
         amount: 'all',
     };
-}
-
-export function parseProficiencyList(profData: any[]): string[] {
-    const result: string[] = [];
-    for (const index in profData) {
-        // Index is used since iterating with 'of' breaks in some cases.
-        const prof = profData[index];
-        if (typeof prof === 'string') {
-            result.push(cleanDNDText(prof, true));
-            continue;
-        }
-
-        if (prof.full) {
-            result.push(cleanDNDText(prof.full, true));
-            continue;
-        }
-
-        if (prof.optional) {
-            result.push(`${cleanDNDText(prof.proficiency, true)} (optional)`);
-            continue;
-        }
-
-        throw `Unsupported class startingProficiency data: ${profData}`;
-    }
-
-    return result;
 }
 
 export interface ReprintData {

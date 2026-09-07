@@ -10,9 +10,9 @@ import {
     DescriptionType,
     List,
     parseAbilityScore,
+    parseClassProficiency,
     parseClassResourceValue,
     parseDescriptions,
-    parseProficiencyList,
     parseReprint,
     parseSkillProficiency,
     ProficiencyOptions,
@@ -177,23 +177,12 @@ function parseStartingProficiencies(data: ClassBase): ParsedStartingProficiencie
     if (!data.startingProficiencies) return null;
     const prof = data.startingProficiencies;
 
-    const armor: string[] = prof.armor ? parseProficiencyList(prof.armor) : [];
-    const tools = prof.tools
-        ? prof.tools.map((t) => {
-              if (typeof t === 'string') return cleanDNDText(t, true);
-              return t.proficiency; // TODO - This case doesn't exist, what should this format as?
-          })
-        : []; // TODO
-    const weapons = prof.weapons ? parseProficiencyList(prof.weapons) : [];
-    const skills = parseSkillProficiency(prof.skills);
-    const saving = data.proficiency?.map((p: string) => cleanDNDText(p, true)) ?? [];
-
     return {
-        armor,
-        tools,
-        weapons,
-        skills,
-        saving,
+        armor: prof.armor ? prof.armor.map(parseClassProficiency) : [],
+        tools: prof.tools ? prof.tools.map(parseClassProficiency) : [],
+        weapons: prof.weapons ? prof.weapons.map(parseClassProficiency) : [],
+        skills: parseSkillProficiency(prof.skills),
+        saving: data.proficiency?.map((p: string) => cleanDNDText(p, true)) ?? [],
     };
 }
 
@@ -208,7 +197,7 @@ function parseClass(
     const url = getClassesUrl(name, source);
 
     const primaryAbility = parsePrimaryAbility(data);
-    const spellcastAbility = parseSpellcastAbility(data);
+    const spellcastAbility = data.spellcastingAbility ? parseAbilityScore(data.spellcastingAbility) : null;
     const startingProficiencies = parseStartingProficiencies(data);
     const hp = data.hd?.faces ?? null; // The faces-value is also the starting hp value. The HP-die's 'number' value is always 1 (1dN)
     const baseInfo = parseBaseInfo(data);
@@ -247,36 +236,19 @@ function parsePrimaryAbility(data: ClassBase): string | null {
     return joinStringsWithOr(groups);
 }
 
-function parseSpellcastAbility(data: ClassBase): string | null {
-    if (!data.spellcastingAbility) return null;
-    return parseAbilityScore(data.spellcastingAbility);
-}
-
 function parseClassArmorProficiencies(proficiency: (string | ClassProficiency)[]): string[] {
     const armors: string[] = [];
     let hasShields = false;
 
     for (const armorType of proficiency) {
-        const armor = typeof armorType === 'string' ? armorType : armorType.proficiency;
+        const armor = parseClassProficiency(armorType);
         if (armor === 'shield') hasShields = true;
+        else if (typeof armorType === 'object' && armorType.full) armors.push(armor);
         else if (armor) armors.push(`${armor} armor`);
     }
 
     if (hasShields) armors.push('shields');
     return armors;
-}
-
-function parseClassWeaponProficiencies(proficiency: (string | ClassProficiency)[]): string[] {
-    const weapons: string[] = [];
-    for (const weaponType of proficiency) {
-        if (typeof weaponType === 'object' && weaponType !== null) {
-            weapons.push(capitalize(weaponType.proficiency));
-        } else {
-            weapons.push(capitalize(cleanDNDText(weaponType)));
-        }
-    }
-
-    return weapons;
 }
 
 function parseClassSkillProficiencies(proficiency: SkillProficiency[]): string[] {
@@ -292,13 +264,6 @@ function parseClassSkillProficiencies(proficiency: SkillProficiency[]): string[]
     }
 
     return skills;
-}
-
-function parseClassToolProficiencies(proficiency: (string | ClassProficiency)[]): string[] {
-    return proficiency.map((toolProf) => {
-        if (typeof toolProf === 'string') return cleanDNDText(toolProf);
-        return toolProf.proficiency; // TODO
-    });
 }
 
 function parseClassProficiencies(proficiencies: ClassProficiencies | undefined): Description[] {
@@ -317,7 +282,7 @@ function parseClassProficiencies(proficiencies: ClassProficiencies | undefined):
     }
 
     if (prof.weapons) {
-        const weapons = parseClassWeaponProficiencies(prof.weapons);
+        const weapons = prof.weapons.map(parseClassProficiency);
         entries.push(`Weapon Proficiencies: ${joinStringsWithAnd(weapons)}`);
         delete prof.weapons;
     }
@@ -329,7 +294,7 @@ function parseClassProficiencies(proficiencies: ClassProficiencies | undefined):
     }
 
     if (prof.tools) {
-        const tools = parseClassToolProficiencies(prof.tools);
+        const tools = prof.tools.map(parseClassProficiency);
         entries.push(`Tool Proficiencies: ${joinStringsWithAnd(tools)}`);
         delete prof.tools;
     }
