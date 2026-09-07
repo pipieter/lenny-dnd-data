@@ -1,3 +1,5 @@
+import { HRef } from '../5etools-collector/types/internal/entry';
+
 function removeAccents(str: string): string {
     str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     str = str.replaceAll('"', '');
@@ -162,4 +164,10 @@ export function getVehiclesUrl(name: string, source: string) {
 
 export function getCultsBoonsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/cultsboons.html`, name, source);
+}
+
+export function getHrefURL(href: HRef) {
+    if (href.type === 'external') return href.url;
+    if (href.type === 'internal') return getImageUrl(href.path);
+    throw `Unknown HREF type in ${href}`;
 }

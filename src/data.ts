@@ -15,6 +15,8 @@ import { Boon } from './dnd/boons';
 import { LifeBackground, LifeClass } from './dnd/life';
 
 import { Action } from '../5etools-collector/types/action';
+import { Language } from '../5etools-collector/types/language';
+import { Fluff } from '../5etools-collector/types/fluff';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -91,9 +93,8 @@ export abstract class Databank {
     public readonly monster: any[] = [];
     public readonly monsterFluff: any[] = [];
     // Languages
-    public readonly language: any[] = [];
-    public readonly languageFluff: any[] = [];
-    public readonly languageScript: any[] = [];
+    public readonly language: Language[] = [];
+    public readonly languageFluff: Fluff[] = [];
     // Classes
     public readonly class: any[] = [];
     public readonly classFeature: any[] = [];
