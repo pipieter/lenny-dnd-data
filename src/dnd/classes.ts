@@ -1062,7 +1062,7 @@ export function getClassesAndClassFeats(data: Databank): {
     const classFeats: ParsedFeat[] = [];
     const visitedFeats = new Set<string>();
 
-    const allClasses = [...data.class.sort(entrySort), ...data.sidekick.sort(entrySort)];
+    const allClasses = [...data.class, ...data.sidekick];
     const classes: ParsedClass[] = allClasses.map((cls) => {
         cls = handleCopy(cls, data.class) as ClassBase; // TODO Fix when _copy fixes are pushed.
         const features = getClassFeatures(data, cls.name, cls.source);
