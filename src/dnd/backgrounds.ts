@@ -77,7 +77,7 @@ function getPreformattedBackgroundValue(background: BackgroundBase, name: string
 
 function parseBackgroundAbilities(background: BackgroundBase): string[] {
     if (!background.ability) return [];
-    const abilities = variadic(background.ability[0].choose)[0]?.weighted?.from ?? []
+    const abilities = variadic(background.ability[0].choose)[0]?.weighted?.from ?? [];
     return abilities.map(parseAbilityScore);
 }
 
