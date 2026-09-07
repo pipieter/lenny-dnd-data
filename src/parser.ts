@@ -16,6 +16,7 @@ import { SpellDamage } from './dnd/spells';
 import { Variables } from './variables';
 import { Databank } from './data';
 import { Unit } from '../5etools-collector/types/internal/base';
+import { ClassResourceValue } from '../5etools-collector/types/class';
 
 export interface Range {
     type: 'range';
@@ -921,9 +922,9 @@ export function parseCreatureSummonSpell(spell: string | null): string | null {
     return spell.split('|', 1)[0];
 }
 
-export function parseClassResourceValue(value: any): string {
+export function parseClassResourceValue(value: ClassResourceValue): string {
     if (typeof value === 'number') return `${value}`;
-    if (typeof value === 'string') return value;
+    if (typeof value === 'string') return cleanDNDText(value);
 
     switch (value.type) {
         case 'bonus': {
@@ -940,7 +941,7 @@ export function parseClassResourceValue(value: any): string {
             return `${sign}${value.value} ft.`;
         }
         default: {
-            throw `Unsupported classTableGroups row-type ${value.type}`;
+            throw `Unsupported classTableGroups row-type ${value}`;
         }
     }
 }
