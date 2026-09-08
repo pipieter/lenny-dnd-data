@@ -1,4 +1,4 @@
-import { cleanDNDText } from '../clean';
+import { cleanOptionalDNDText } from '../clean';
 import { Databank } from '../data';
 import { Description, ReprintData, parseDescriptions, parseReprint } from '../parser';
 import { getCultsBoonsUrl } from '../urls';
@@ -21,9 +21,9 @@ export function getCults(data: Databank): ParsedCult[] {
         source: cult.source,
         url: getCultsBoonsUrl(cult.name, cult.source),
         type: cult.type,
-        goal: cult.goal ? cleanDNDText(cult.goal.entry) : null,
-        cultists: cult.cultists ? cleanDNDText(cult.cultists.entry) : null,
-        signatureSpells: cult.signatureSpells ? cleanDNDText(cult.signatureSpells.entry) : null,
+        goal: cleanOptionalDNDText(cult.goal?.entry),
+        cultists: cleanOptionalDNDText(cult.cultists?.entry),
+        signatureSpells: cleanOptionalDNDText(cult.signatureSpells?.entry),
         description: parseDescriptions('', cult.entries),
         reprint: parseReprint(cult),
     }));
