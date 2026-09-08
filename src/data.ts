@@ -15,6 +15,7 @@ import { LifeBackground, LifeClass } from './dnd/life';
 import { Action } from '../5etools-collector/types/action';
 import { Background } from '../5etools-collector/types/background';
 import { Boon } from '../5etools-collector/types/boon';
+import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-collector/types/class';
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Language } from '../5etools-collector/types/language';
 import { Skill } from '../5etools-collector/types/skill';
@@ -97,13 +98,13 @@ export abstract class Databank {
     public readonly language: Language[] = [];
     public readonly languageFluff: Fluff[] = [];
     // Classes
-    public readonly class: any[] = [];
-    public readonly classFeature: any[] = [];
-    public readonly subclass: any[] = [];
-    public readonly subclassFeature: any[] = [];
-    public readonly classFluff: any[] = [];
-    public readonly subclassFluff: any[] = [];
-    public readonly sidekick: any[] = [];
+    public readonly class: Class[] = [];
+    public readonly classFeature: ClassFeature[] = [];
+    public readonly subclass: Subclass[] = [];
+    public readonly subclassFeature: SubclassFeature[] = [];
+    public readonly classFluff: Fluff[] = [];
+    public readonly subclassFluff: Fluff[] = [];
+    public readonly sidekick: Class[] = [];
     // Rules
     public readonly variantrule: Rule[] = [];
     public readonly sense: any[] = [];
