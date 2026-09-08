@@ -10,10 +10,10 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { dirname, join } from 'path';
 import { Deity } from './dnd/deities';
 import { Cult } from './dnd/cults';
-import { Boon } from './dnd/boons';
 import { LifeBackground, LifeClass } from './dnd/life';
 
 import { Action } from '../5etools-collector/types/action';
+import { Boon } from '../5etools-collector/types/boon';
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Language } from '../5etools-collector/types/language';
 import { Skill } from '../5etools-collector/types/skill';
