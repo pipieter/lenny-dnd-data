@@ -16,6 +16,9 @@ import {
 } from './urls';
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import { Variables } from './variables';
+import { Databank } from './data';
+import { ClassProficiency, Unit } from '../5etools-collector/types/internal/base';
+import { ClassResourceValue } from '../5etools-collector/types/class';
 
 export interface Range {
     type: 'range';
@@ -416,6 +419,13 @@ export function parseAlignments(alignments: string[]): string[] {
         result.push(parsed);
     }
     return result;
+}
+
+export function parseClassProficiency(classProficiency: string | ClassProficiency): string {
+    if (typeof classProficiency === 'string') return cleanDNDText(classProficiency);
+    if (classProficiency.full) return classProficiency.full;
+    if (classProficiency.optional) return `${classProficiency.proficiency} (Optional)`;
+    return classProficiency.proficiency;
 }
 
 function parseDescriptionBlockFromBlocks(descriptions: any[]): string {
@@ -921,9 +931,9 @@ export function parseCreatureSummonSpell(spell: string | null): string | null {
     return spell.split('|', 1)[0];
 }
 
-export function parseClassResourceValue(value: any): string {
+export function parseClassResourceValue(value: ClassResourceValue): string {
     if (typeof value === 'number') return `${value}`;
-    if (typeof value === 'string') return value;
+    if (typeof value === 'string') return cleanDNDText(value);
 
     switch (value.type) {
         case 'bonus': {
@@ -940,7 +950,7 @@ export function parseClassResourceValue(value: any): string {
             return `${sign}${value.value} ft.`;
         }
         default: {
-            throw `Unsupported classTableGroups row-type ${value.type}`;
+            throw `Unsupported classTableGroups row-type ${value}`;
         }
     }
 }
@@ -1117,32 +1127,6 @@ export function parseSkillProficiency(skillProficiencies: any[] | undefined): Pr
         options: proficiencies,
         amount: 'all',
     };
-}
-
-export function parseProficiencyList(profData: any[]): string[] {
-    const result: string[] = [];
-    for (const index in profData) {
-        // Index is used since iterating with 'of' breaks in some cases.
-        const prof = profData[index];
-        if (typeof prof === 'string') {
-            result.push(cleanDNDText(prof, true));
-            continue;
-        }
-
-        if (prof.full) {
-            result.push(cleanDNDText(prof.full, true));
-            continue;
-        }
-
-        if (prof.optional) {
-            result.push(`${cleanDNDText(prof.proficiency, true)} (optional)`);
-            continue;
-        }
-
-        throw `Unsupported class startingProficiency data: ${profData}`;
-    }
-
-    return result;
 }
 
 export interface ReprintData {
