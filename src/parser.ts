@@ -1,4 +1,5 @@
-import { Unit } from '../5etools-collector/types/internal/base';
+import { ClassResourceValue } from '../5etools-collector/types/class';
+import { ClassProficiency, Unit } from '../5etools-collector/types/internal/base';
 import { cleanDNDText } from './clean';
 import { Databank } from './data';
 import { SpellDamage } from './dnd/spells';
@@ -16,9 +17,6 @@ import {
 } from './urls';
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import { Variables } from './variables';
-import { Databank } from './data';
-import { ClassProficiency, Unit } from '../5etools-collector/types/internal/base';
-import { ClassResourceValue } from '../5etools-collector/types/class';
 
 export interface Range {
     type: 'range';

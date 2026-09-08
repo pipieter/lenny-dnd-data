@@ -1,3 +1,12 @@
+import { handleCopy } from '../5etools-conversion/copy';
+import {
+    ClassBase,
+    ClassFeature,
+    Multiclassing,
+    SubclassBase,
+    SubclassFeature,
+} from '../../5etools-collector/types/class';
+import { ClassProficiencies, ClassProficiency, SkillProficiency } from '../../5etools-collector/types/internal/base';
 import { cleanDNDText } from '../clean';
 import { Databank, getKey } from '../data';
 import {
@@ -19,18 +28,8 @@ import {
     parseSkillProficiency,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
-import { joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
-import { cleanDNDText } from '../clean';
-import { handleCopy } from '../5etools-conversion/copy';
-
-import {
-    ClassBase,
-    ClassFeature,
-    Multiclassing,
-    SubclassBase,
-    SubclassFeature,
-} from '../../5etools-collector/types/class';
-import { ClassProficiencies, ClassProficiency, SkillProficiency } from '../../5etools-collector/types/internal/base';
+import { entrySort, joinStringsWithAnd, joinStringsWithOr } from '../util';
+import { ParsedFeat } from './feats';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ParsedClassFeature[];
