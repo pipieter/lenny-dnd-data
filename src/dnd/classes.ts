@@ -275,10 +275,10 @@ function parseClassProficiencies(proficiencies: ClassProficiencies | undefined):
     delete prof.armorProficiencies;
 
     const entries: string[] = [];
-    if (prof.armor) {
-        const armor = parseClassArmorProficiencies(prof.armor);
-        entries.push(`Armor Proficiencies: ${joinStringsWithAnd(armor)}`);
-        delete prof.armor;
+    if (prof.skills) {
+        const skills = parseClassSkillProficiencies(prof.skills);
+        entries.push(`Skill Proficiencies: ${joinStringsWithAnd(skills)}`);
+        delete prof.skills;
     }
 
     if (prof.weapons) {
@@ -287,16 +287,16 @@ function parseClassProficiencies(proficiencies: ClassProficiencies | undefined):
         delete prof.weapons;
     }
 
-    if (prof.skills) {
-        const skills = parseClassSkillProficiencies(prof.skills);
-        entries.push(`Skill Proficiencies: ${joinStringsWithAnd(skills)}`);
-        delete prof.skills;
-    }
-
     if (prof.tools) {
         const tools = prof.tools.map(parseClassProficiency);
         entries.push(`Tool Proficiencies: ${joinStringsWithAnd(tools)}`);
         delete prof.tools;
+    }
+
+    if (prof.armor) {
+        const armor = parseClassArmorProficiencies(prof.armor);
+        entries.push(`Armor Proficiencies: ${joinStringsWithAnd(armor)}`);
+        delete prof.armor;
     }
 
     if (Object.keys(prof).length > 0) throw `Unhandled class proficiencies in: ${JSON.stringify(prof)}`;
