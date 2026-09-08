@@ -1,19 +1,19 @@
 import { handleCopy } from '../5etools-conversion/copy';
 import { applySingleTemplate, applyTemplating } from '../5etools-conversion/template';
+import { cleanDNDText } from '../clean';
+import { Databank, getKey } from '../data';
 import {
     Description,
     DescriptionType,
+    ReprintData,
     parseDescriptions,
     parseImageUrl,
     parseItemValue,
     parseItemWeight,
     parseReprint,
-    ReprintData,
 } from '../parser';
 import { getItemsUrl } from '../urls';
-import { joinStringsWithOr, entrySort } from '../util';
-import { Databank, getKey } from '../data';
-import { cleanDNDText } from '../clean';
+import { entrySort, joinStringsWithOr } from '../util';
 import { Variables } from '../variables';
 
 export interface ParsedItem {

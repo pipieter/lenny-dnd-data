@@ -1,28 +1,4 @@
-import { Databank, getKey } from '../data';
-import { ParsedFeat } from './feats';
-import {
-    capitalize,
-    checkForDisallowedSymbols,
-    containsDisallowedSymbols,
-    Description,
-    DescriptionList,
-    DescriptionTable,
-    DescriptionType,
-    List,
-    parseAbilityScore,
-    parseClassProficiency,
-    parseClassResourceValue,
-    parseDescriptions,
-    parseReprint,
-    parseSkillProficiency,
-    ProficiencyOptions,
-    ReprintData,
-} from '../parser';
-import { getClassesUrl, getSubclassUrl } from '../urls';
-import { joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
-import { cleanDNDText } from '../clean';
 import { handleCopy } from '../5etools-conversion/copy';
-
 import {
     ClassBase,
     ClassFeature,
@@ -31,6 +7,29 @@ import {
     SubclassFeature,
 } from '../../5etools-collector/types/class';
 import { ClassProficiencies, ClassProficiency, SkillProficiency } from '../../5etools-collector/types/internal/base';
+import { cleanDNDText } from '../clean';
+import { Databank, getKey } from '../data';
+import {
+    Description,
+    DescriptionList,
+    DescriptionTable,
+    DescriptionType,
+    List,
+    ProficiencyOptions,
+    ReprintData,
+    capitalize,
+    checkForDisallowedSymbols,
+    containsDisallowedSymbols,
+    parseAbilityScore,
+    parseClassProficiency,
+    parseClassResourceValue,
+    parseDescriptions,
+    parseReprint,
+    parseSkillProficiency,
+} from '../parser';
+import { getClassesUrl, getSubclassUrl } from '../urls';
+import { entrySort, joinStringsWithAnd, joinStringsWithOr } from '../util';
+import { ParsedFeat } from './feats';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ParsedClassFeature[];

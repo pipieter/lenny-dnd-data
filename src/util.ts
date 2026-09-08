@@ -2,6 +2,7 @@ import { Fluff } from '../5etools-collector/types/fluff';
 import { Base } from '../5etools-collector/types/internal/base';
 import { getKey } from './data';
 import { title } from './parser';
+
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import kleur = require('kleur');
 

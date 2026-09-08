@@ -1,11 +1,11 @@
 import { Databank } from '../data';
 import {
     Description,
+    ReprintData,
     parseAbilityScore,
     parseDescriptions,
     parseFeatCategory,
     parseReprint,
-    ReprintData,
     title,
 } from '../parser';
 import { getFeatsUrl } from '../urls';

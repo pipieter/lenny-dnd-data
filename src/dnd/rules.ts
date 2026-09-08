@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
+import { Description, ReprintData, parseDescriptions, parseReprint } from '../parser';
 import { getRulesUrl } from '../urls';
 
 export interface Rule {

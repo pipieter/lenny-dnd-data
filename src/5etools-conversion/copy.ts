@@ -1,10 +1,10 @@
-import { applySingleTemplate } from './template';
+import { Base } from '../../5etools-collector/types/internal/base';
+import { Copyable } from '../../5etools-collector/types/internal/copy';
+import { title } from '../parser';
+import { Variables } from '../variables';
 import { crToProficiencyBonus } from './parser';
 import { ascSortLower } from './sort';
-import { Variables } from '../variables';
-import { title } from '../parser';
-import { Copyable } from '../../5etools-collector/types/internal/copy';
-import { Base } from '../../5etools-collector/types/internal/base';
+import { applySingleTemplate } from './template';
 
 // TODO _templates (e.g. Zox Clammersham). This will most likely require data going global
 

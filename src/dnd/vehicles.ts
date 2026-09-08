@@ -1,16 +1,16 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import {
-    capitalize,
     Description,
     DescriptionType,
+    ReprintData,
+    capitalize,
     parseDescriptions,
     parseReprint,
     parseSizes,
     parseVehicleUpgradeType,
-    ReprintData,
 } from '../parser';
-import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
+import { getVehicleTokenUrl, getVehiclesUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
 
 export interface Vehicle {

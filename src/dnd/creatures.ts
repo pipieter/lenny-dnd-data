@@ -7,14 +7,14 @@ import {
     DescriptionTable,
     DescriptionType,
     List,
+    ReprintData,
+    Table,
     parseAdvantage,
     parseCreatureSummonSpell,
     parseCreatureTypes,
     parseDescriptions,
     parseReprint,
     parseSizes,
-    ReprintData,
-    Table,
 } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
 import { calculateAbilityMod, formatModifier, joinStringsWithAnd, joinStringsWithOr, variadic } from '../util';
