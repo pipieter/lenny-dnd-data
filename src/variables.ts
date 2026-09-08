@@ -73,7 +73,7 @@ class CollectorVariables {
         return this.data.specialSpeedTypes;
     }
 
-    getRuleTypes(type: string | undefined | null): string | null {
+    getRuleType(type: string | undefined | null): string | null {
         if (!type) return null;
         return this.data.ruleTypes[type] ?? null;
     }

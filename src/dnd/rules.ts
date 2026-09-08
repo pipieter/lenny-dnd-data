@@ -14,7 +14,7 @@ export interface ParsedRule {
 }
 
 function parseRuleType(rule: Rule): string {
-    return Variables.getRuleTypes(rule.ruleType) ?? 'Uncategorized';
+    return Variables.getRuleType(rule.ruleType) ?? 'Uncategorized';
 }
 
 export function getRules(databank: Databank): ParsedRule[] {
