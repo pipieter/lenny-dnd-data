@@ -2,10 +2,13 @@ import { Action } from '../5etools-collector/types/action';
 import { Background } from '../5etools-collector/types/background';
 import { Boon } from '../5etools-collector/types/boon';
 import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-collector/types/class';
+import { Condition } from '../5etools-collector/types/condition';
 import { Cult } from '../5etools-collector/types/cult';
+import { Disease } from '../5etools-collector/types/disease';
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Language } from '../5etools-collector/types/language';
 import { Skill } from '../5etools-collector/types/skill';
+import { Status } from '../5etools-collector/types/status';
 import { Deity } from './dnd/deities';
 import { Feat } from './dnd/feats';
 import { Hazard } from './dnd/hazards';
@@ -84,12 +87,12 @@ export abstract class Databank {
     public readonly magicvariant: any[] = [];
     public readonly itemFluff: any[] = [];
     // Conditions
-    public readonly condition: any[] = [];
-    public readonly status: any[] = [];
-    public readonly disease: any[] = [];
-    public readonly conditionFluff: any[] = [];
-    public readonly statusFluff: any[] = [];
-    public readonly diseaseFluff: any[] = [];
+    public readonly condition: Condition[] = [];
+    public readonly status: Status[] = [];
+    public readonly disease: Disease[] = [];
+    public readonly conditionFluff: Fluff[] = [];
+    public readonly statusFluff: Fluff[] = [];
+    public readonly diseaseFluff: Fluff[] = [];
     // Creatures
     public readonly monster: any[] = [];
     public readonly monsterFluff: any[] = [];
