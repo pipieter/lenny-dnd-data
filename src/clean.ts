@@ -870,3 +870,8 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
     checkForDisallowedSymbols(text);
     return text;
 }
+
+export function cleanOptionalDNDText(text: string | undefined | null, noFormat: boolean = false): string | null {
+    if (!text) return null;
+    return cleanDNDText(text, noFormat);
+}

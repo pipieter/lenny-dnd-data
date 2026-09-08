@@ -1,18 +1,7 @@
-import { cleanDNDText } from '../clean';
+import { cleanOptionalDNDText } from '../clean';
 import { Databank } from '../data';
 import { Description, ReprintData, parseDescriptions, parseReprint } from '../parser';
 import { getCultsBoonsUrl } from '../urls';
-
-export interface Cult {
-    name: string;
-    source: string;
-    type: string;
-    goal?: any;
-    cultists?: any;
-    signatureSpells?: any;
-    entries: any[];
-    reprintedAs: any[];
-}
 
 export interface ParsedCult {
     name: string;
@@ -26,32 +15,16 @@ export interface ParsedCult {
     reprint: ReprintData | null;
 }
 
-export function getCults(databank: Databank): ParsedCult[] {
-    const cults: ParsedCult[] = [];
-
-    for (const cult of databank.cult) {
-        const name = cult.name;
-        const source = cult.source;
-        const url = getCultsBoonsUrl(cult.name, cult.source);
-        const type = cult.type;
-        const goal = cult.goal ? cleanDNDText(cult.goal.entry) : null;
-        const cultists = cult.cultists ? cleanDNDText(cult.cultists.entry) : null;
-        const signatureSpells = cult.signatureSpells ? cleanDNDText(cult.signatureSpells.entry) : null;
-        const description = parseDescriptions('', cult.entries);
-        const reprint = parseReprint(cult);
-
-        cults.push({
-            name,
-            source,
-            url,
-            type,
-            goal,
-            cultists,
-            signatureSpells,
-            description,
-            reprint,
-        });
-    }
-
-    return cults;
+export function getCults(data: Databank): ParsedCult[] {
+    return data.cult.map((cult) => ({
+        name: cult.name,
+        source: cult.source,
+        url: getCultsBoonsUrl(cult.name, cult.source),
+        type: cult.type,
+        goal: cleanOptionalDNDText(cult.goal?.entry),
+        cultists: cleanOptionalDNDText(cult.cultists?.entry),
+        signatureSpells: cleanOptionalDNDText(cult.signatureSpells?.entry),
+        description: parseDescriptions('', cult.entries),
+        reprint: parseReprint(cult),
+    }));
 }
