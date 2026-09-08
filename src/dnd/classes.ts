@@ -958,7 +958,7 @@ function getSubclasses(
 
     const dictionary: SubclassDictionary = {};
     for (let subclassData of subclasses) {
-        subclassData = handleCopy(subclassData, subclasses) as SubclassBase; // TODO Fix when _copy fixes are pushed.
+        subclassData = handleCopy(subclassData, subclasses);
         const subclass = parseSubclass(subclassData, subclassFeatures);
         const key = subclass.key;
         if (!dictionary[key]) dictionary[key] = subclass;
@@ -999,7 +999,7 @@ export function getClassesAndClassFeats(data: Databank): {
 
     const allClasses = [...data.class, ...data.sidekick];
     const classes: ParsedClass[] = allClasses.map((cls) => {
-        cls = handleCopy(cls, data.class) as ClassBase; // TODO Fix when _copy fixes are pushed.
+        cls = handleCopy(cls, data.class);
         const features = getClassFeatures(data, cls.name, cls.source);
         const subclassFeatures = getClassSubclassFeatures(data, cls.name, cls.source);
         const subclasses = getSubclasses(data, cls.name, cls.source, subclassFeatures);
