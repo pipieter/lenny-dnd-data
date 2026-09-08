@@ -5,9 +5,9 @@ import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-colle
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Language } from '../5etools-collector/types/language';
 import { Skill } from '../5etools-collector/types/skill';
-import { Cult } from './dnd/cults';
 import { Deity } from './dnd/deities';
 import { Feat } from './dnd/feats';
+import { Cult } from '../5etools-collector/types/cult';
 import { Hazard } from './dnd/hazards';
 import { LifeBackground, LifeClass } from './dnd/life';
 import { SpeciesName } from './dnd/names';
