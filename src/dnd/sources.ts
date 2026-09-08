@@ -1,5 +1,4 @@
 import { Databank } from '../data';
-import { entrySort } from '../util';
 
 export interface ParsedSource {
     name: string;
