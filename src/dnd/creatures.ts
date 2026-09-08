@@ -379,7 +379,7 @@ export function getCreatures(data: Databank): ParsedCreature[] {
     });
 
     return creatures.map((creature) => {
-        const fluff = findFluff(creature, fluffs) as FluffBase;
+        const fluff = findFluff(creature, fluffs) as FluffBase | undefined;
         return buildCreature(creature, fluff);
     });
 }
