@@ -10,10 +10,11 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { dirname, join } from 'path';
 import { Deity } from './dnd/deities';
 import { Cult } from './dnd/cults';
-import { Boon } from './dnd/boons';
 import { LifeBackground, LifeClass } from './dnd/life';
 
 import { Action } from '../5etools-collector/types/action';
+import { Background } from '../5etools-collector/types/background';
+import { Boon } from '../5etools-collector/types/boon';
 import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-collector/types/class';
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Language } from '../5etools-collector/types/language';
@@ -121,8 +122,8 @@ export abstract class Databank {
     public readonly table: TableData[] = [];
     public readonly tableGroup: any[] = [];
     // Backgrounds
-    public readonly background: any[] = [];
-    public readonly backgroundFluff: any[] = [];
+    public readonly background: Background[] = [];
+    public readonly backgroundFluff: Fluff[] = [];
     // Feats
     public readonly feat: Feat[] = [];
     public readonly optionalfeature: any[] = [];
