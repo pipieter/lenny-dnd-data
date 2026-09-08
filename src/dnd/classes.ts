@@ -178,9 +178,9 @@ function parseStartingProficiencies(data: ClassBase): ParsedStartingProficiencie
     const prof = data.startingProficiencies;
 
     return {
-        armor: prof.armor ? prof.armor.map(parseClassProficiency) : [],
-        tools: prof.tools ? prof.tools.map(parseClassProficiency) : [],
-        weapons: prof.weapons ? prof.weapons.map(parseClassProficiency) : [],
+        armor: prof.armor?.map(parseClassProficiency) ?? [],
+        tools: prof.tools?.map(parseClassProficiency) ?? [],
+        weapons: prof.weapons?.map(parseClassProficiency) ?? [],
         skills: parseSkillProficiency(prof.skills),
         saving: data.proficiency?.map((p: string) => cleanDNDText(p, true)) ?? [],
     };
