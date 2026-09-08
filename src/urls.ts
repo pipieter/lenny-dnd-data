@@ -1,4 +1,4 @@
-import { HRef } from '../5etools-collector/types/internal/entry';
+import { EntryImage, HRef } from '../5etools-collector/types/internal/entry';
 
 function removeAccents(str: string): string {
     str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -167,7 +167,12 @@ export function getCultsBoonsUrl(name: string, source: string) {
 }
 
 export function getHrefUrl(href: HRef) {
-    if (href.type === 'external') return href.url;
+    if (href.type === 'external') return encodeURI(href.url);
     if (href.type === 'internal') return getImageUrl(href.path);
     throw `Unknown HREF type in ${href}`;
+}
+
+export function getEntryImageUrl(image: EntryImage | null | undefined): string | null {
+    if (!image) return null;
+    return getHrefUrl(image.href);
 }
