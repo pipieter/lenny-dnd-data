@@ -1,23 +1,22 @@
-import { title } from './parser';
-import { Rule } from './dnd/rules';
-import { Hazard } from './dnd/hazards';
-import { TableData } from './dnd/tables';
-import { Feat } from './dnd/feats';
-import { SpeciesName } from './dnd/names';
-import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
-import { DNDObject } from './dnd/objects';
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs';
-import { dirname, join } from 'path';
-import { Deity } from './dnd/deities';
-import { Cult } from './dnd/cults';
-import { LifeBackground, LifeClass } from './dnd/life';
-
 import { Action } from '../5etools-collector/types/action';
 import { Background } from '../5etools-collector/types/background';
 import { Boon } from '../5etools-collector/types/boon';
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Language } from '../5etools-collector/types/language';
 import { Skill } from '../5etools-collector/types/skill';
+import { Cult } from './dnd/cults';
+import { Deity } from './dnd/deities';
+import { Feat } from './dnd/feats';
+import { Hazard } from './dnd/hazards';
+import { LifeBackground, LifeClass } from './dnd/life';
+import { SpeciesName } from './dnd/names';
+import { DNDObject } from './dnd/objects';
+import { Rule } from './dnd/rules';
+import { TableData } from './dnd/tables';
+import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
+import { title } from './parser';
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
+import { dirname, join } from 'path';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;

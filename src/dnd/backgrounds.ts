@@ -1,17 +1,17 @@
+import { handleCopy } from '../5etools-conversion/copy';
 import { BackgroundBase } from '../../5etools-collector/types/background';
 import { Fluff } from '../../5etools-collector/types/fluff';
-import { handleCopy } from '../5etools-conversion/copy';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import {
     Description,
+    ProficiencyOptions,
+    ReprintData,
     parseAbilityScore,
     parseDescriptions,
     parsePrerequisite,
     parseReprint,
     parseSkillProficiency,
-    ProficiencyOptions,
-    ReprintData,
 } from '../parser';
 import { getBackgroundsUrl } from '../urls';
 import { findFluff, variadic } from '../util';

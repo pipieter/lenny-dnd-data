@@ -1,6 +1,9 @@
+import { handleCopy } from '../5etools-conversion/copy';
+import { Databank } from '../data';
 import {
     Description,
     DescriptionType,
+    ReprintData,
     parseCastingTime,
     parseComponents,
     parseDescriptionFromTable,
@@ -13,11 +16,8 @@ import {
     parseSpellDamage,
     parseSpellLevel,
     parseSpellSchool,
-    ReprintData,
 } from '../parser';
 import { getSpellsUrl } from '../urls';
-import { Databank } from '../data';
-import { handleCopy } from '../5etools-conversion/copy';
 import { entrySort } from '../util';
 
 interface Caster {

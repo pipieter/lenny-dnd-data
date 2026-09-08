@@ -1,26 +1,26 @@
+import { cleanDNDText } from '../clean';
 import { Databank, getKey } from '../data';
-import { ParsedFeat } from './feats';
 import {
-    capitalize,
-    checkForDisallowedSymbols,
-    containsDisallowedSymbols,
     Description,
     DescriptionList,
     DescriptionTable,
     DescriptionType,
     List,
+    ProficiencyOptions,
+    ReprintData,
+    capitalize,
+    checkForDisallowedSymbols,
+    containsDisallowedSymbols,
     parseAbilityScore,
     parseClassResourceValue,
     parseDescriptions,
     parseProficiencyList,
     parseReprint,
     parseSkillProficiency,
-    ProficiencyOptions,
-    ReprintData,
 } from '../parser';
 import { getClassesUrl, getSubclassUrl } from '../urls';
-import { joinStringsWithAnd, joinStringsWithOr, entrySort } from '../util';
-import { cleanDNDText } from '../clean';
+import { entrySort, joinStringsWithAnd, joinStringsWithOr } from '../util';
+import { ParsedFeat } from './feats';
 
 export interface ClassFeatureDictionary {
     [classKey: string]: ClassFeature[];

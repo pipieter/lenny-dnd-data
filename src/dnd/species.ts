@@ -1,19 +1,18 @@
 // Note: in the 5e.tools files this is still referred to as 'race'
-
+import { handleCopy, handleVersions } from '../5etools-conversion/copy';
+import { Databank } from '../data';
 import {
-    capitalize,
     Description,
-    parseSkillProficiency,
-    parseDescriptions,
-    parseImageUrl,
     ProficiencyOptions,
     ReprintData,
+    capitalize,
+    parseDescriptions,
+    parseImageUrl,
     parseReprint,
+    parseSkillProficiency,
 } from '../parser';
 import { getSpeciesUrl } from '../urls';
 import { joinStringsWithOr } from '../util';
-import { handleCopy, handleVersions } from '../5etools-conversion/copy';
-import { Databank } from '../data';
 import { Variables } from '../variables';
 
 export interface ParsedSpecies {

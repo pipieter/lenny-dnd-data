@@ -1,5 +1,5 @@
 import { Databank } from '../data';
-import { Description, parseDescriptions, parseImageUrl, parseReprint, ReprintData } from '../parser';
+import { Description, ReprintData, parseDescriptions, parseImageUrl, parseReprint } from '../parser';
 import { getConditionsDiseasesUrl } from '../urls';
 
 // Note, statuses and diseases also follow the same structure as Condition

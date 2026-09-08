@@ -1,6 +1,6 @@
-import { Variables } from './variables';
 import { checkForDisallowedSymbols } from './parser';
-import { getTablesUrl, get5eToolsUrl, getBackgroundsUrl, getTrapsUrl } from './urls';
+import { get5eToolsUrl, getBackgroundsUrl, getTablesUrl, getTrapsUrl } from './urls';
+import { Variables } from './variables';
 
 declare global {
     interface String {

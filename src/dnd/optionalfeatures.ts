@@ -1,11 +1,11 @@
 import { Databank } from '../data';
 import {
     Description,
+    ReprintData,
     parseDescriptions,
     parseOptionalFeatureType,
     parsePrerequisite,
     parseReprint,
-    ReprintData,
 } from '../parser';
 import { getOptionalFeaturesUrl } from '../urls';
 import { joinStringsWithOr, variadic } from '../util';

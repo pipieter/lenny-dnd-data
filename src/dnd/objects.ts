@@ -1,6 +1,6 @@
 import { Databank } from '../data';
-import { Description, parseDescriptions, parseImageUrl, parseObjectSizes, parseReprint, ReprintData } from '../parser';
-import { getObjectsUrl, getObjectTokenUrl } from '../urls';
+import { Description, ReprintData, parseDescriptions, parseImageUrl, parseObjectSizes, parseReprint } from '../parser';
+import { getObjectTokenUrl, getObjectsUrl } from '../urls';
 
 export interface DNDObject {
     name: string;

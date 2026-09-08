@@ -1,4 +1,8 @@
-import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
+import { Unit } from '../5etools-collector/types/internal/base';
+import { cleanDNDText } from './clean';
+import { Databank } from './data';
+import { SpellDamage } from './dnd/spells';
+import { ColLabelRows } from './dnd/tables';
 import {
     get5eToolsUrl,
     getActionsUrl,
@@ -10,12 +14,8 @@ import {
     getTablesUrl,
     getTrapsUrl,
 } from './urls';
-import { ColLabelRows } from './dnd/tables';
-import { cleanDNDText } from './clean';
-import { SpellDamage } from './dnd/spells';
+import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
 import { Variables } from './variables';
-import { Databank } from './data';
-import { Unit } from '../5etools-collector/types/internal/base';
 
 export interface Range {
     type: 'range';

@@ -1,6 +1,6 @@
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
+import { Description, ReprintData, parseDescriptions, parseReprint } from '../parser';
 import { getCultsBoonsUrl } from '../urls';
 
 export interface ParsedBoon {

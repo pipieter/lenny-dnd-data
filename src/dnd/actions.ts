@@ -1,9 +1,8 @@
-import { Description, parseDescriptions, parseReprint, parseSingleTime, ReprintData } from '../parser';
-import { joinStringsWithOr } from '../util';
-
-import { getActionsUrl } from '../urls';
-import { Databank } from '../data';
 import { Unit } from '../../5etools-collector/types/internal/base';
+import { Databank } from '../data';
+import { Description, ReprintData, parseDescriptions, parseReprint, parseSingleTime } from '../parser';
+import { getActionsUrl } from '../urls';
+import { joinStringsWithOr } from '../util';
 
 export interface ParsedAction {
     name: string;

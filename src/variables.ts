@@ -1,5 +1,5 @@
-import { readFileSync } from 'fs';
 import { capitalize } from './parser';
+import { readFileSync } from 'fs';
 
 class CollectorVariables {
     private data: any;
