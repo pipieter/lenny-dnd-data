@@ -11,14 +11,12 @@ export interface ParsedSource {
 }
 
 export function getSources(data: Databank): ParsedSource[] {
-    return data.source
-        .map((source) => ({
-            name: source.name,
-            source: source.source,
-            abbreviation: source.abbreviation,
-            published: source.published,
-            category: source.category,
-            legacy: source.legacy,
-        }))
-        .sort(entrySort);
+    return data.source.map((source) => ({
+        name: source.name,
+        source: source.source,
+        abbreviation: source.abbreviation,
+        published: source.published,
+        category: source.category,
+        legacy: source.legacy,
+    }));
 }

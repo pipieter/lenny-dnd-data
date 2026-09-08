@@ -9,6 +9,7 @@ import { Fluff } from '../5etools-collector/types/fluff';
 import { Language } from '../5etools-collector/types/language';
 import { Rule } from '../5etools-collector/types/rule';
 import { Skill } from '../5etools-collector/types/skill';
+import { Source } from '../5etools-collector/types/source';
 import { Status } from '../5etools-collector/types/status';
 import { Deity } from './dnd/deities';
 import { Feat } from './dnd/feats';
@@ -156,7 +157,7 @@ export abstract class Databank {
     public readonly lifeTrinket: any[] = [];
 
     // Source
-    public readonly source: any[] = [];
+    public readonly source: Source[] = [];
 
     public readonly metadata = new MetaData();
 
