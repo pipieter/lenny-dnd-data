@@ -1,14 +1,8 @@
+import { Rule } from '../../5etools-collector/types/rule';
 import { Databank } from '../data';
 import { Description, ReprintData, parseDescriptions, parseReprint } from '../parser';
 import { getRulesUrl } from '../urls';
-
-export interface Rule {
-    name: string;
-    source: string;
-    type?: string;
-    ruleType?: 'C' | 'O' | 'V' | 'VO';
-    entries: any[];
-}
+import { Variables } from '../variables';
 
 export interface ParsedRule {
     name: string;
@@ -19,17 +13,8 @@ export interface ParsedRule {
     reprint: ReprintData | null;
 }
 
-function parseRuleType(rule: any): string {
-    const type = rule.ruleType;
-    const RuleTypes = new Map([
-        ['C', 'Core'],
-        ['V', 'Variant'],
-        ['O', 'Optional'],
-        ['VO', 'Variant Optional'],
-    ]);
-
-    if (!type) return 'Uncategorized';
-    return RuleTypes.get(type) ?? 'Uncategorized';
+function parseRuleType(rule: Rule): string {
+    return Variables.getRuleTypes(rule.ruleType) ?? 'Uncategorized';
 }
 
 export function getRules(databank: Databank): ParsedRule[] {
