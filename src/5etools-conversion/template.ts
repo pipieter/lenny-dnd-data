@@ -1,3 +1,6 @@
+import { Base } from '../../5etools-collector/types/internal/base';
+import { Copyable } from '../../5etools-collector/types/internal/copy';
+
 function isPrimitive(obj: any) {
     return ['string', 'number', 'bigint', 'boolean'].includes(typeof obj);
 }
@@ -32,7 +35,11 @@ function recursiveObjectApply(obj: any, applyFn: (value: string | number | boole
  * @param replacement The replacement string.
  * @returns A copy of obj with the replaced templates.
  */
-export function applySingleTemplate(obj: any, template: string, replacement: string): any {
+export function applySingleTemplate<T extends Base>(
+    obj: T | Copyable<T> | string | undefined,
+    template: string,
+    replacement: string
+): any {
     obj = structuredClone(obj);
 
     // Sometimes the value can be an array, in which case we iterate over the first value

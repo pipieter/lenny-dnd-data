@@ -924,7 +924,7 @@ export function parseCreatureTypes(creature_type: string | any): string {
     throw `parseCreatureTypes: Unrecognized format: ${JSON.stringify(creature_type)}`;
 }
 
-export function parseCreatureSummonSpell(spell: string | null): string | null {
+export function parseCreatureSummonSpell(spell: string | undefined): string | null {
     if (!spell) return null;
     return spell.split('|', 1)[0];
 }

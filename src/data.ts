@@ -4,6 +4,7 @@ import { Boon } from '../5etools-collector/types/boon';
 import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-collector/types/class';
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Language } from '../5etools-collector/types/language';
+import { Monster } from '../5etools-collector/types/monster';
 import { Skill } from '../5etools-collector/types/skill';
 import { Cult } from './dnd/cults';
 import { Deity } from './dnd/deities';
@@ -91,8 +92,8 @@ export abstract class Databank {
     public readonly statusFluff: any[] = [];
     public readonly diseaseFluff: any[] = [];
     // Creatures
-    public readonly monster: any[] = [];
-    public readonly monsterFluff: any[] = [];
+    public readonly monster: Monster[] = [];
+    public readonly monsterFluff: Fluff[] = [];
     // Languages
     public readonly language: Language[] = [];
     public readonly languageFluff: Fluff[] = [];

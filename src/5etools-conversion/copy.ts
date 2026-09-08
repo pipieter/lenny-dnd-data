@@ -347,11 +347,11 @@ export function handleCopy<T extends Base>(base: T | Copyable<T>, entries: (T | 
     return copy as T;
 }
 
-export function handleVersions(base: any): any[] {
+export function handleVersions<T extends Base>(base: T): T[] {
     base = structuredClone(base);
-    if (!base._versions) return [];
+    if (!base._versions) return []; // TODO _versions is not yet handled in 5ecollector.
 
-    const versions = [];
+    const versions: T[] = [];
     for (const baseVersion of base._versions) {
         for (const implementation of baseVersion._implementations || []) {
             let version = structuredClone(base);

@@ -74,7 +74,7 @@ function applyItemPropertyTemplate(item: any, property: any, template: string | 
         if (typeof replacement === 'string') {
             replacement = replacement.split('|')[0]; // Sometimes specifics like sources will be shown, such as 'crossbow bolt|phb'
         }
-        template = applySingleTemplate(template, `item.${key}`, replacement);
+        template = applySingleTemplate(template, `item.${key}`, replacement); // TODO applySingleTemplate accepts string | undefined for the template, if typing is added for items.ts this can be adjusted.
     }
     return template!;
 }
