@@ -382,7 +382,7 @@ export function resolveToBase<T extends Base>(base: Unresolved<T>, entries: Unre
     const additional: T[] = [];
     let result = structuredClone(base);
     result = handleCopy(base as T | Copyable<T>, entries);
-    if ('_versions' in result) {
+    if ('_versions' in base) {
         additional.push(...handleVersions(base as Versioned<T>));
         delete (result as any)._versions;
         result = base as unknown as T;
