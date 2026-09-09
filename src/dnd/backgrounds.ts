@@ -1,4 +1,4 @@
-import { resolveToBase } from '../5etools-conversion/copy';
+import { handleCopy } from '../5etools-conversion/copy';
 import { BackgroundBase } from '../../5etools-collector/types/background';
 import { Fluff } from '../../5etools-collector/types/fluff';
 import { cleanDNDText } from '../clean';
@@ -111,7 +111,7 @@ function parseBackgroundFluff(fluff: Fluff | undefined): Description[] {
 
 export function getBackgrounds(data: Databank): ParsedBackground[] {
     return data.background.map((background) => {
-        background = resolveToBase(background, data.background)[0];
+        background = handleCopy(background, data.background) as BackgroundBase;
         const fluff = findFluff(background, data.backgroundFluff);
 
         return {

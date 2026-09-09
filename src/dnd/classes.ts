@@ -1,4 +1,4 @@
-import { resolveToBase } from '../5etools-conversion/copy';
+import { handleCopy, resolveToBase } from '../5etools-conversion/copy';
 import {
     ClassBase,
     ClassFeature,
@@ -998,7 +998,7 @@ export function getClassesAndClassFeats(data: Databank): {
 
     const allClasses = [...data.class, ...data.sidekick];
     const classes: ParsedClass[] = allClasses.map((cls) => {
-        cls = resolveToBase(cls, data.class)[0];
+        cls = handleCopy(cls, data.class) as ClassBase;
         const features = getClassFeatures(data, cls.name, cls.source);
         const subclassFeatures = getClassSubclassFeatures(data, cls.name, cls.source);
         const subclasses = getSubclasses(data, cls.name, cls.source, subclassFeatures);
