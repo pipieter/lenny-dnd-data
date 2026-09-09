@@ -13,6 +13,7 @@ import { Monster } from '../5etools-collector/types/monster';
 import { Rule } from '../5etools-collector/types/rule';
 import { Skill } from '../5etools-collector/types/skill';
 import { Source } from '../5etools-collector/types/source';
+import { Spell, SpellSource } from '../5etools-collector/types/spell';
 import { Status } from '../5etools-collector/types/status';
 import { TableGroup, TableTable } from '../5etools-collector/types/table';
 import { Vehicle, VehicleUpgrade } from '../5etools-collector/types/vehicle';
@@ -74,9 +75,9 @@ export class MetaData {
 
 export abstract class Databank {
     // Spells
-    public readonly spell: any[] = [];
-    public readonly spellFluff: any[] = [];
-    public readonly spellSource: any[] = [];
+    public readonly spell: Spell[] = [];
+    public readonly spellFluff: Fluff[] = [];
+    public readonly spellSource: SpellSource[] = [];
     // Items
     public readonly item: any[] = [];
     public readonly baseitem: any[] = [];
