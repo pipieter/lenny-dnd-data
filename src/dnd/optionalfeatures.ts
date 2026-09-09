@@ -8,7 +8,7 @@ import {
     parseReprint,
 } from '../parser';
 import { getOptionalFeaturesUrl } from '../urls';
-import { joinStringsWithOr, variadic } from '../util';
+import { joinStringsWithOr } from '../util';
 
 export interface ParsedOptionalFeature {
     name: string;
