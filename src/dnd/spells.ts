@@ -10,7 +10,6 @@ import {
     parseDescriptionFromTable,
     parseDescriptions,
     parseDurationTime,
-    parseImageUrl,
     parseMaterialComponents,
     parseRange,
     parseReprint,
