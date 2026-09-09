@@ -1,32 +1,8 @@
+import { TableData, TableGroup } from '../../5etools-collector/types/table';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { DescriptionTable, DescriptionType, ReprintData, parseDescriptionFromTable, parseReprint } from '../parser';
 import { getTablesUrl } from '../urls';
-
-interface TableGroup {
-    name: string;
-    type: string;
-    tables: TableData[];
-    source: string;
-}
-
-interface ColLabelRowCell {
-    entry: string;
-    width: number;
-}
-
-export type ColLabelRows = (string | ColLabelRowCell)[][];
-
-export interface TableData {
-    name: string;
-    source: string;
-    caption: string;
-    colLabels?: string[];
-    colLabelRows?: ColLabelRows;
-    rows: any[];
-    footnotes?: string[];
-    chapter?: any;
-}
 
 export interface ParsedTable {
     name: string;
@@ -41,6 +17,7 @@ export interface ParsedTable {
 function getFootnotes(table: TableData): string[] | null {
     if (!table.footnotes) return null;
     return table.footnotes.map((note) => {
+        if (typeof note !== 'string') throw 'Unsupported table footnote - footnote is not a string.';
         return cleanDNDText(note, false);
     });
 }
@@ -58,6 +35,7 @@ function getTableRollExpression(table: TableData): string | null {
 function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): string {
     if (table.caption) return table.caption;
     if (!table.colLabels) return '';
+    if (!tableGroup.tables) return '';
 
     // Some tablegroup tables do not have captions, in this case we grab the unique labels as a caption.
     const groupLabels = [];
@@ -79,9 +57,45 @@ function getTableGroupTableCaption(table: TableData, tableGroup: TableGroup): st
     return uniqueLabels.join(' & ');
 }
 
-export function getTables(databank: Databank): ParsedTable[] {
-    const tables: ParsedTable[] = (databank.table as TableData[]).map((table) => {
-        return {
+function tableRollValuesToRanges(table: ParsedTable): ParsedTable {
+    if (!table.roll) return table;
+    if (table.table.type != DescriptionType.table) return table;
+
+    for (const row of table.table.table.rows) {
+        if (typeof row[0] !== 'string') continue;
+        const ranges = row[0].split(/-|–/);
+
+        if (ranges[0] == '00') ranges[0] = '100';
+        const min = parseInt(ranges[0]);
+        let max = min;
+
+        if (!min) {
+            // In certain tables, like 'Choose Languages; Standard Languages' there are default values in the rollable table.
+            // We want to mark these with 'null', so a rollable table understands that this is a value related to the table,
+            // but not a result we can actually roll.
+            // Choose Languages; Standard Languages - https://5e.tools/tables.html#choose%20languages%3b%20standard%20languages_xphb
+            row[0] = null;
+            continue;
+        }
+
+        if (ranges.length > 1) {
+            if (ranges[1] == '00') ranges[1] = '100';
+            max = parseInt(ranges[1]);
+        }
+
+        row[0] = {
+            type: 'range',
+            min,
+            max,
+        };
+    }
+
+    return table;
+}
+
+export function getTables(data: Databank): ParsedTable[] {
+    const tables: ParsedTable[] = data.table.map((table) => {
+        const parsed = {
             name: table.name,
             source: table.source,
             url: getTablesUrl(table.name, table.source),
@@ -90,55 +104,28 @@ export function getTables(databank: Databank): ParsedTable[] {
             footnotes: getFootnotes(table),
             reprint: parseReprint(table),
         };
+
+        return tableRollValuesToRanges(parsed);
     });
 
-    for (const tableGroup of databank.tableGroup) {
-        const items = tableGroup.tables.map((table: any) => {
-            return {
-                name: `${tableGroup.name} [${getTableGroupTableCaption(table, tableGroup)}]`,
-                source: tableGroup.source,
-                url: getTablesUrl(tableGroup.name, tableGroup.source),
-                roll: getTableRollExpression(table),
-                table: parseDescriptionFromTable(table),
-                footnotes: getFootnotes(table),
-            };
-        });
-        tables.push(...items);
-    }
+    tables.push(
+        ...data.tableGroup.flatMap((tableGroup) => {
+            if (!tableGroup.tables) return [];
+            return tableGroup.tables.map((table) => {
+                const parsed = {
+                    name: `${tableGroup.name} [${getTableGroupTableCaption(table, tableGroup)}]`,
+                    source: tableGroup.source,
+                    url: getTablesUrl(tableGroup.name, tableGroup.source),
+                    roll: getTableRollExpression(table),
+                    table: parseDescriptionFromTable(table),
+                    footnotes: getFootnotes(table),
+                    reprint: parseReprint(tableGroup),
+                };
 
-    // Change d100 roll values into ranges
-    for (const table of tables) {
-        if (!table.roll) continue;
-        if (table.table.type != DescriptionType.table) continue;
-        for (const row of table.table.table.rows) {
-            if (typeof row[0] !== 'string') continue;
-            const ranges = row[0].split(/-|–/);
-
-            if (ranges[0] == '00') ranges[0] = '100';
-            const min = parseInt(ranges[0]);
-            let max = min;
-
-            if (!min) {
-                // In certain tables, like 'Choose Languages; Standard Languages' there are default values in the rollable table.
-                // We want to mark these with 'null', so a rollable table understands that this is a value related to the table,
-                // but not a result we can actually roll.
-                // Choose Languages; Standard Languages - https://5e.tools/tables.html#choose%20languages%3b%20standard%20languages_xphb
-                row[0] = null;
-                continue;
-            }
-
-            if (ranges.length > 1) {
-                if (ranges[1] == '00') ranges[1] = '100';
-                max = parseInt(ranges[1]);
-            }
-
-            row[0] = {
-                type: 'range',
-                min,
-                max,
-            };
-        }
-    }
+                return tableRollValuesToRanges(parsed);
+            });
+        })
+    );
 
     return tables;
 }
