@@ -998,7 +998,7 @@ export function getClassesAndClassFeats(data: Databank): {
 
     const allClasses = [...data.class, ...data.sidekick];
     const classes: ParsedClass[] = allClasses.map((cls) => {
-        cls = handleCopy(cls, data.class);
+        cls = handleCopy(cls, data.class) as ClassBase;
         const features = getClassFeatures(data, cls.name, cls.source);
         const subclassFeatures = getClassSubclassFeatures(data, cls.name, cls.source);
         const subclasses = getSubclasses(data, cls.name, cls.source, subclassFeatures);

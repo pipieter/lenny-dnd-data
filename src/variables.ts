@@ -34,6 +34,10 @@ class CollectorVariables {
         return this.data.featCategoryNames[category] || category;
     }
 
+    getVehicleType(type: string): string {
+        return this.data.vehicleTypes[type] || type;
+    }
+
     getVehicleUpgradeType(upgrade: string): string {
         return this.data.vehicleUpgradeTypes[upgrade] || upgrade;
     }
