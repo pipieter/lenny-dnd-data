@@ -1,4 +1,4 @@
-import { resolveToBase } from '../5etools-conversion/copy';
+import { handleCopy } from '../5etools-conversion/copy';
 import { DeityBase } from '../../5etools-collector/types/deity';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
@@ -48,16 +48,15 @@ function parseDeityInlineDescriptions(deity: DeityBase): Description[] {
 
 export function getDeities(data: Databank): ParsedDeity[] {
     return data.deity.flatMap((deity) => {
-        return resolveToBase(deity, data.deity).map((deity) => {
-            return {
-                name: deity.name,
-                source: deity.source,
-                subtitle: deity.title ? title(deity.title) : `${deity.pantheon} Deity`,
-                url: getDeitiesUrl(deity.name, deity.source, deity.pantheon),
-                imgUrl: getEntryImageUrl(deity.symbolImg),
-                inlineDescription: parseDeityInlineDescriptions(deity),
-                description: parseDescriptions('', deity.entries ?? []),
-            };
-        });
+        deity = handleCopy(deity, data.deity) as DeityBase;
+        return {
+            name: deity.name,
+            source: deity.source,
+            subtitle: deity.title ? title(deity.title) : `${deity.pantheon} Deity`,
+            url: getDeitiesUrl(deity.name, deity.source, deity.pantheon),
+            imgUrl: getEntryImageUrl(deity.symbolImg),
+            inlineDescription: parseDeityInlineDescriptions(deity),
+            description: parseDescriptions('', deity.entries ?? []),
+        };
     });
 }
