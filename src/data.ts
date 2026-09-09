@@ -10,6 +10,7 @@ import { Fluff } from '../5etools-collector/types/fluff';
 import { Hazard } from '../5etools-collector/types/hazard';
 import { Language } from '../5etools-collector/types/language';
 import { Monster } from '../5etools-collector/types/monster';
+import { DNDObject } from '../5etools-collector/types/object';
 import { Rule } from '../5etools-collector/types/rule';
 import { Skill } from '../5etools-collector/types/skill';
 import { Source } from '../5etools-collector/types/source';
@@ -20,7 +21,6 @@ import { Vehicle, VehicleUpgrade } from '../5etools-collector/types/vehicle';
 import { Feat } from './dnd/feats';
 import { LifeBackground, LifeClass } from './dnd/life';
 import { SpeciesName } from './dnd/names';
-import { DNDObject } from './dnd/objects';
 import { title } from './parser';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
@@ -146,7 +146,7 @@ export abstract class Databank {
     public readonly vehicleFluff: Fluff[] = [];
     // Objects
     public readonly object: DNDObject[] = [];
-    public readonly objectFluff: any[] = [];
+    public readonly objectFluff: Fluff[] = [];
     // Deities
     public readonly deity: Deity[] = [];
     // Cults
