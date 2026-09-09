@@ -354,7 +354,7 @@ export function handleVersions<T extends Base>(base: T | Versioned<T>): T[] {
     for (const baseVersion of base._versions) {
         if (!('_implementations' in baseVersion)) continue;
         for (const implementation of baseVersion._implementations || []) {
-            let version = structuredClone(base);
+            let version: T | Versioned<T> = structuredClone(base);
             let abstract: ModBody | undefined = structuredClone(baseVersion._abstract);
 
             for (const variable of Object.keys(implementation._variables)) {
@@ -364,13 +364,13 @@ export function handleVersions<T extends Base>(base: T | Versioned<T>): T[] {
             }
 
             delete (version as any)._versions;
-            const finalVersion = version as unknown as T;
+            version = version as unknown as T;
 
-            finalVersion.name = abstract?.name ?? finalVersion.name;
-            finalVersion.source = abstract?.source ?? finalVersion.source;
+            version.name = abstract?.name ?? version.name;
+            version.source = abstract?.source ?? version.source;
 
-            addMod(finalVersion, abstract?._mod || {});
-            versions.push(finalVersion);
+            addMod(version, abstract?._mod || {});
+            versions.push(version);
         }
     }
 
