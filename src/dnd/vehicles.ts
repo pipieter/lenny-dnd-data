@@ -1,5 +1,5 @@
 import { handleCopy } from '../5etools-conversion/copy';
-import { Vehicle, VehicleUpgrade } from '../../5etools-collector/types/vehicle';
+import { VehicleBase, VehicleUpgrade } from '../../5etools-collector/types/vehicle';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import {
@@ -14,6 +14,7 @@ import {
 } from '../parser';
 import { getVehicleTokenUrl, getVehiclesUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
+import { Variables } from '../variables';
 
 export interface ParsedVehicle {
     name: string;
@@ -28,7 +29,7 @@ export interface ParsedVehicle {
     reprint: ReprintData | null;
 }
 
-function getVehiclePace(vehicle: Vehicle): string | null {
+function getVehiclePace(vehicle: VehicleBase): string | null {
     const parts: string[] = [];
 
     if (vehicle.speed) {
@@ -91,7 +92,7 @@ function getVehiclePace(vehicle: Vehicle): string | null {
     return cleanDNDText(result);
 }
 
-function getVehicleDescription(vehicle: Vehicle): Description[] {
+function getVehicleDescription(vehicle: VehicleBase): Description[] {
     const description: Description[] = [];
     if (vehicle.entries) description.push(...parseDescriptions('', vehicle.entries));
 
@@ -120,7 +121,7 @@ function getVehicleDescription(vehicle: Vehicle): Description[] {
     return description;
 }
 
-function getVehicleCreatureCapacity(vehicle: Vehicle): string | null {
+function getVehicleCreatureCapacity(vehicle: VehicleBase): string | null {
     const parts: string[] = [];
 
     if (vehicle.capCrew) parts.push(`${vehicle.capCrew} crew`);
@@ -133,29 +134,18 @@ function getVehicleCreatureCapacity(vehicle: Vehicle): string | null {
     return parts.join('\n');
 }
 
-function getVehicleDimensions(vehicle: Vehicle): string {
+function getVehicleDimensions(vehicle: VehicleBase): string {
     if (!vehicle.dimensions || vehicle.dimensions.length === 0) return '';
     return `(${vehicle.dimensions.join(' by ')})`;
 }
 
-function getVehicleType(vehicle: Vehicle): string {
-    if (!vehicle.vehicleType) throw `Undefined vehicle-type in ${vehicle.name} (${vehicle.source})`;
-    // TODO adjust 5e-collector to have this typeMap.
-    const typeMap: Record<string, string> = {
-        OBJECT: 'Object',
-        SHIP: 'Ship',
-        SPELLJAMMER: 'Spelljammer',
-        INFWAR: 'Infernal War Machine',
-        CREATURE: 'Creature',
-        ELEMENTAL_AIRSHIP: 'Elemental Airship',
-    };
-    const type = typeMap[vehicle.vehicleType];
-    if (type) return type;
-
+function getVehicleType(vehicle: VehicleBase): string {
+    const type = Variables.getVehicleType(vehicle.vehicleType);
+    if (type !== vehicle.vehicleType) return type;
     throw `Unsupported vehicle type in ${vehicle.name}: ${vehicle.vehicleType}`;
 }
 
-function getVehicleSubtitle(vehicle: Vehicle): string {
+function getVehicleSubtitle(vehicle: VehicleBase): string {
     const parts: string[] = [];
     if (vehicle.size) parts.push(parseSizes(vehicle.size));
     parts.push(getVehicleType(vehicle));
