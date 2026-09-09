@@ -24,7 +24,6 @@ import {
 } from './urls';
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr, variadic } from './util';
 import { Variables } from './variables';
-import { parse } from 'node:path';
 
 export interface Range {
     type: 'range';
@@ -1003,7 +1002,6 @@ export function parsePrerequisite(
     data: Databank
 ): string | null {
     if (!prerequisites) return null;
-
     const parsed: string[] = [];
 
     for (let prerequisite of prerequisites) {
@@ -1190,6 +1188,7 @@ export function parsePrerequisite(
     }
 
     if (prerequisites.length === 0) return null;
+    return joinStringsWithAnd(parsed, false);
     return joinStringsWithAnd(parsed, false);
 }
 

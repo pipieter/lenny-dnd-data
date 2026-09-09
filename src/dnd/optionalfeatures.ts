@@ -8,7 +8,7 @@ import {
     parseReprint,
 } from '../parser';
 import { getOptionalFeaturesUrl } from '../urls';
-import { joinStringsWithOr, variadic } from '../util';
+import { joinStringsWithOr } from '../util';
 
 export interface ParsedOptionalFeature {
     name: string;
@@ -20,11 +20,8 @@ export interface ParsedOptionalFeature {
     reprint: ReprintData | null;
 }
 
-function getOptionalFeatureTypes(types: string[] | string, source: string, data: Databank): string {
-    types = variadic(types);
-    const parsed = types.map((t: string) => {
-        return parseOptionalFeatureType(t, source, data);
-    });
+function getOptionalFeatureTypes(types: string[], source: string, data: Databank): string {
+    const parsed = types.map((t) => parseOptionalFeatureType(t, source, data));
 
     // Special: Fighting Styles are bundled together.
     const isAllFightingStyles = parsed.every((t) => t.startsWith('Fighting Style;'));
@@ -37,12 +34,12 @@ function getOptionalFeatureTypes(types: string[] | string, source: string, data:
 }
 
 export function getOptionalFeatures(data: Databank): ParsedOptionalFeature[] {
-    const optFeatures: ParsedOptionalFeature[] = data.optionalfeature.map((optFeat: any) => {
+    const optFeatures = data.optionalfeature.map((optFeat) => {
         return {
             name: optFeat.name,
             source: optFeat.source,
             url: getOptionalFeaturesUrl(optFeat.name, optFeat.source),
-            prerequisite: optFeat.prerequisite ? parsePrerequisite(optFeat.prerequisite[0]) : null,
+            prerequisite: parsePrerequisite(optFeat.prerequisite, optFeat, data),
             type: getOptionalFeatureTypes(optFeat.featureType, optFeat.source, data),
             description: parseDescriptions('', optFeat.entries),
             reprint: parseReprint(optFeat),

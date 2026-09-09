@@ -1,36 +1,8 @@
+import { DNDObject } from '../../5etools-collector/types/object';
 import { Databank } from '../data';
-import { Description, ReprintData, parseDescriptions, parseImageUrl, parseObjectSizes, parseReprint } from '../parser';
-import { getObjectTokenUrl, getObjectsUrl } from '../urls';
-
-export interface DNDObject {
-    name: string;
-    source: string;
-    page: number;
-    reprintedAs?: string[];
-    size: string[];
-    objectType: string; // Seemingly not used by 5e.tools, always shows 'object'.
-    ac: number;
-    hp: number;
-    speed?: number;
-    str?: number;
-    dex?: number;
-    con?: number;
-    int?: number;
-    wis?: number;
-    cha?: number;
-    immune?: string[];
-    conditionImmune?: string[];
-    entries: (string | object)[];
-    actionEntries?: (string | object)[];
-    tokenCredit?: string;
-    altArt?: object[];
-    token?: {
-        name: string;
-        source: string;
-    };
-    hasToken?: boolean;
-    hasFluffImages?: boolean;
-}
+import { Description, ReprintData, parseDescriptions, parseObjectSizes, parseReprint } from '../parser';
+import { getFluffImageUrl, getObjectTokenUrl, getObjectsUrl } from '../urls';
+import { findFluff } from '../util';
 
 export interface ParsedDNDObject {
     name: string;
@@ -44,7 +16,7 @@ export interface ParsedDNDObject {
 }
 
 function getObjectSubtitle(obj: DNDObject): string {
-    return `${parseObjectSizes(obj.size)} object`;
+    return `${parseObjectSizes(obj.size ?? [])} object`;
 }
 
 function parseObjectTokenURL(obj: DNDObject): string | null {
@@ -58,16 +30,9 @@ function parseObjectTokenURL(obj: DNDObject): string | null {
     return null;
 }
 
-function getObjectImage(obj: DNDObject, data: Databank): string | null {
-    const fluff = data.search('objectFluff', obj.name, obj.source);
-    if (fluff && fluff.images) {
-        return parseImageUrl(fluff.images);
-    }
-    return null;
-}
-
 export function getObjects(data: Databank): ParsedDNDObject[] {
     return data.object.map((obj) => {
+        const fluff = findFluff(obj, data.objectFluff);
         const descriptions = [];
         if (obj.entries) descriptions.push(...parseDescriptions('', obj.entries));
         if (obj.actionEntries) descriptions.push(...parseDescriptions('', obj.actionEntries));
@@ -79,7 +44,7 @@ export function getObjects(data: Databank): ParsedDNDObject[] {
             url: getObjectsUrl(obj.name, obj.source),
             tokenUrl: parseObjectTokenURL(obj),
             description: descriptions,
-            image: getObjectImage(obj, data),
+            image: getFluffImageUrl(fluff),
             reprint: parseReprint(obj),
         };
     });

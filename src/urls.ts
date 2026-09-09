@@ -1,3 +1,4 @@
+import { Fluff } from '../5etools-collector/types/fluff';
 import { EntryImage, HRef } from '../5etools-collector/types/internal/entry';
 
 function removeAccents(str: string): string {
@@ -175,4 +176,10 @@ export function getHrefUrl(href: HRef) {
 export function getEntryImageUrl(image: EntryImage | null | undefined): string | null {
     if (!image) return null;
     return getHrefUrl(image.href);
+}
+
+export function getFluffImageUrl(fluff: Fluff | undefined | null): string | null {
+    const image = fluff?.images?.[0];
+    if (!image) return null;
+    return getEntryImageUrl(image);
 }
