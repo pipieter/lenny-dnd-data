@@ -29,7 +29,6 @@ import {
     joinStringsWithOr,
     variadic,
 } from '../util';
-import { resolve } from 'path';
 
 export interface ParsedCreature {
     name: string;
