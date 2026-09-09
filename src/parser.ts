@@ -1,5 +1,12 @@
 import { ClassResourceValue } from '../5etools-collector/types/class';
-import { ClassProficiency, Resist, Unit } from '../5etools-collector/types/internal/base';
+import {
+    AbilityNumber,
+    Base,
+    ClassProficiency,
+    Prerequisite,
+    Resist,
+    Unit,
+} from '../5etools-collector/types/internal/base';
 import { Variadic } from '../5etools-collector/types/internal/util';
 import { cleanDNDText } from './clean';
 import { Databank } from './data';
@@ -989,94 +996,182 @@ export function parseItemWeight(weight: number | undefined): string | null {
     return `${weight} lb.`;
 }
 
-export function parsePrerequisite(prerequisite: any): string | null {
+export function parsePrerequisite(prerequisite: Prerequisite | undefined, base: Base, data: Databank): string[] | null {
     if (!prerequisite) return null;
-
+    const parsed = structuredClone(prerequisite);
     const prerequisites: string[] = [];
 
-    for (const key of Object.keys(prerequisite)) {
-        switch (key) {
-            case 'campaign': {
-                const campaigns = prerequisite.campaign;
-                prerequisites.push(`${joinStringsWithOr(campaigns)} campaign`);
-                break;
-            }
-            case 'level': {
-                const lvl = prerequisite.level.level;
-                let levelPre = `Lv. ${lvl}`;
-                if (prerequisite.level.class?.name) {
-                    const classname = prerequisite.level.class.name;
-                    levelPre += ` ${classname}`;
-                }
-                prerequisites.push(levelPre);
-                break;
-            }
-            case 'race': {
-                const races = prerequisite.race.map((r: any) => {
-                    return r.name;
-                });
-                prerequisites.push(joinStringsWithOr(races));
-                break;
-            }
-            case 'spell': {
-                const spells = prerequisite.spell.map((s: any) => {
-                    // string, ends with #c or #x (cantrip or spell)
-                    if (typeof s === 'string') {
-                        const parts = s.split('#');
-                        const addon = parts[1].endsWith('c') ? 'cantrip' : 'spell';
-                        return `${parts[0]} ${addon}`;
-                    }
-
-                    // in an object, we only care about the entrySummary
-                    if (s.entrySummary) {
-                        return s.entrySummary;
-                    }
-                    throw `Unsupported spell prerequisite: ${s}`;
-                });
-
-                prerequisites.push(joinStringsWithOr(spells, false));
-                break;
-            }
-            case 'item': {
-                const items = prerequisite.item.map((i: any) => {
-                    if (typeof i === 'string') return i;
-                    throw `Unsupported item prerequisite: ${i}`;
-                });
-                prerequisites.push(joinStringsWithOr(items, false));
-                break;
-            }
-            case 'pact': {
-                prerequisites.push(`Pact of the ${prerequisite.pact}`);
-                break;
-            }
-            case 'otherSummary': {
-                const otherSummary = cleanDNDText(prerequisite.otherSummary.entry, true);
-                prerequisites.push(otherSummary);
-                break;
-            }
-            case 'optionalfeature': {
-                const optFeats = prerequisite.optionalfeature.map((o: string) => {
-                    const parts = o.split('|');
-                    return title(parts[0]);
-                });
-                prerequisites.push(joinStringsWithOr(optFeats, false));
-                break;
-            }
-            case 'other': {
-                prerequisites.push(cleanDNDText(prerequisite.other));
-                break;
-            }
-            case 'patron': {
-                const patron = cleanDNDText(prerequisite.patron);
-                prerequisites.push(`${patron} patron`);
-                break;
-            }
-            default: {
-                throw `parsePrerequisite: Unknown key '${key}'!`;
-            }
+    if (parsed.ability) {
+        const abilityKeys = Object.keys(parsed.ability[0]);
+        const abilityGroup = [];
+        for (const abilityKey of abilityKeys) {
+            const score = parseAbilityScore(abilityKey);
+            const amount = parsed.ability[0][abilityKey as keyof AbilityNumber];
+            abilityGroup.push(`${amount} ${score}`);
         }
+        prerequisites.push(joinStringsWithOr(abilityGroup, false));
+        delete parsed.ability;
     }
 
+    if (parsed.background) {
+        const backgrounds = parsed.background.map((bg) => {
+            return bg.displayEntry ?? bg.name; // TODO What is displayEntry?
+        });
+        prerequisites.push(joinStringsWithOr(backgrounds));
+        delete parsed.background;
+    }
+
+    if (parsed.campaign) {
+        prerequisites.push(`${joinStringsWithOr(parsed.campaign)} Campaign`);
+        delete parsed.campaign;
+    }
+
+    if (parsed.culture) {
+        prerequisites.push(`${joinStringsWithOr(parsed.culture)} Culture`);
+        delete parsed.culture;
+    }
+
+    if (parsed.exclusiveFeatCategory) {
+        const featCategories = parsed.exclusiveFeatCategory.map((e) => parseFeatCategory(e, base.source, data));
+        prerequisites.push(`Can't Have Another ${joinStringsWithOr(featCategories, true)} Feat`);
+        delete parsed.exclusiveFeatCategory;
+    }
+
+    if (parsed.feat) {
+        const feats = parsed.feat.map((feat) => {
+            const parts = feat.split('|').map(title);
+            if (parts.length <= 2) return parts[0];
+            return parts[parts.length - 1];
+        });
+        prerequisites.push(...feats);
+        delete parsed.feat;
+    }
+
+    if (parsed.featCategory) {
+        const featCategories = parsed.featCategory.map((e) => parseFeatCategory(e, base.source, data));
+        prerequisites.push(`Any ${joinStringsWithOr(featCategories, true)} Feat`);
+        delete parsed.featCategory;
+    }
+
+    if (parsed.feature) {
+        prerequisites.push(joinStringsWithOr(parsed.feature));
+        delete parsed.feature;
+    }
+
+    if (parsed.item) {
+        prerequisites.push(joinStringsWithOr(parsed.item, false));
+        delete parsed.item;
+    }
+
+    if (parsed.level) {
+        if (typeof parsed.level === 'number') {
+            prerequisites.push(`Lv. ${parsed.level}+`);
+        } else {
+            let levelPre = `Lv. ${parsed.level.level}`;
+            if (parsed.level.subclass) levelPre += ` ${parsed.level.subclass.name}`;
+            if (parsed.level.class.name) levelPre += ` ${parsed.level.class.name}`;
+            prerequisites.push(levelPre);
+        }
+        delete parsed.level;
+    }
+
+    if (parsed.optionalfeature) {
+        const optFeats = parsed.optionalfeature.map((o: string) => {
+            const parts = o.split('|');
+            return title(parts[0]);
+        });
+        prerequisites.push(joinStringsWithOr(optFeats, false));
+        delete parsed.optionalfeature;
+    }
+
+    if (parsed.other) {
+        prerequisites.push(parsed.other);
+        delete parsed.other;
+    }
+
+    if (parsed.otherSummary) {
+        prerequisites.push(parsed.otherSummary.entry);
+        delete parsed.otherSummary;
+    }
+
+    if (parsed.pact) {
+        prerequisites.push(`Pact of the ${prerequisite.pact}`);
+        delete parsed.pact;
+    }
+
+    if (parsed.patron) {
+        const patron = cleanDNDText(parsed.patron);
+        prerequisites.push(`${patron} patron`);
+        delete parsed.patron;
+    }
+
+    if (parsed.proficiency) {
+        // TODO, Can use ClassProficiencies?
+        const proficiencies = [];
+        if ('armor' in parsed.proficiency) {
+            let armor = parsed.proficiency.armor as string; // TODO why is it unknown in 5ecollector?
+            if (armor !== 'shield') armor += ' Proficiency';
+            proficiencies.push(armor);
+        }
+        if ('weapon' in parsed.proficiency)
+            proficiencies.push(`Proficiency with a ${parsed.proficiency.weapon} weapon`);
+        if ('weaponGroup' in parsed.proficiency) proficiencies.push(`${parsed.proficiency.weaponGroup} Proficiency`);
+        if ('skill' in parsed.proficiency) proficiencies.push(joinStringsWithOr(parsed.proficiency.skill as string[])); // TODO why is it unknown in 5ecollector?
+        prerequisites.push(joinStringsWithAnd(proficiencies, true));
+        delete parsed.proficiency;
+    }
+
+    if (parsed.race) {
+        const races = parsed.race.map((r) => {
+            if (r.subrace) return `${r.subrace} ${r.name}`;
+            return r.displayEntry ?? r.name;
+        });
+        prerequisites.push(joinStringsWithOr(races));
+        delete parsed.race;
+    }
+
+    if (parsed.spell) {
+        const spells = parsed.spell.map((s) => {
+            // string, ends with #c or #x (cantrip or spell)
+            if (typeof s === 'string') {
+                const parts = s.split('#');
+                const addon = parts[1].endsWith('c') ? 'cantrip' : 'spell';
+                return `${parts[0]} ${addon}`;
+            }
+
+            // in an object, we only care about the entrySummary
+            if (s.entrySummary) {
+                return s.entrySummary;
+            }
+            throw `Unsupported spell prerequisite: ${s}`;
+        });
+
+        prerequisites.push(joinStringsWithOr(spells, false));
+        delete parsed.spell;
+    }
+
+    if (parsed.spellcasting2020) {
+        prerequisites.push('Spellcasting or Pact Magic Feature');
+        delete parsed.spellcasting2020;
+    }
+
+    if (parsed.spellcasting) {
+        prerequisites.push('The ability to cast at least one spell');
+        delete parsed.spellcasting;
+    }
+
+    if (parsed.spellcastingFeature) {
+        prerequisites.push('Spellcasting Feature');
+        delete parsed.spellcastingFeature;
+    }
+
+    if (parsed.spellcastingPrepared) {
+        prerequisites.push('Spellcasting feature from a class that prepares spells');
+        delete parsed.spellcastingPrepared;
+    }
+
+    if (Object.keys(prerequisite).length !== 0)
+        throw `parsePrerequisite: Unhandled keys in: ${JSON.stringify(prerequisite)}!`;
     if (prerequisites.length === 0) return null;
     return joinStringsWithAnd(prerequisites, false);
 }
