@@ -107,7 +107,7 @@ function getSpell(spell: SpellBase, fluffs: any[], sources: any, data: Databank)
         name: spell.name,
         source: spell.source,
         level: parseSpellLevel(spell.level),
-        school: parseSpellSchool(spell.school ?? 'unknown', spell.source, data),
+        school: parseSpellSchool(spell.school, spell.source, data),
         castingTime: parseCastingTime(spell.time, spell.meta),
         range: parseRange(spell.range),
         components: parseComponents(spell.components),
