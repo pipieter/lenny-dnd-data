@@ -124,9 +124,7 @@ function parseSpeed(creature: MonsterBase): string {
         const results: string[] = [];
         if (!speedBlock) throw 'Unsupported: Creature-speed is undefined.';
 
-        // TODO - Rewrite with strict typing.
-        // eslint-disable-next-line prefer-const
-        for (let [type, speed] of Object.entries(speedBlock)) {
+        for (const [type, speed] of Object.entries(speedBlock)) {
             if (type === 'alternate') {
                 results.push(...iterateSpeed(speed));
                 continue;
@@ -138,10 +136,8 @@ function parseSpeed(creature: MonsterBase): string {
                 continue;
             }
 
-            speed = variadic(speed);
             const speeds = [];
-
-            for (const s of speed) {
+            for (const s of variadic(speed)) {
                 if (typeof s === 'number') speeds.push(`${s} ft.`);
                 else if (typeof s === 'boolean') {
                     switch (type) {
