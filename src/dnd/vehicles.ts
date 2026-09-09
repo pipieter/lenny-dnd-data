@@ -1,3 +1,5 @@
+import { handleCopy } from '../5etools-conversion/copy';
+import { Vehicle, VehicleUpgrade } from '../../5etools-collector/types/vehicle';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import {
@@ -12,95 +14,6 @@ import {
 } from '../parser';
 import { getVehicleTokenUrl, getVehiclesUrl } from '../urls';
 import { joinStringsWithAnd, joinStringsWithOr } from '../util';
-
-export interface Vehicle {
-    name: string;
-    source: string;
-    page: number;
-    srd: boolean;
-    vehicleType: string;
-    size?: string | string[];
-    dimensions?: string[];
-    terrain: string[];
-    capCrew: number;
-    capPassenger: number;
-    capCargo?: number;
-    cost?: number;
-    pace?: number | object;
-    speed?: number | object;
-    ac?: number;
-    str?: number;
-    dex?: number;
-    con?: number;
-    int?: number;
-    wis?: number;
-    cha?: number;
-    hp?: number | object;
-    immune?: string[];
-    conditionImmune?: string[];
-    hull?: {
-        ac: number;
-        acFrom?: string[];
-        hp: number;
-        dt: number;
-    };
-    control?: {
-        name: string;
-        ac: number;
-        hp: number;
-        entries: string[];
-    }[];
-    movement: {
-        name: string;
-        ac: number;
-        hp: number;
-        hpNote: string;
-        speed: {
-            mode: string;
-            entries: string[];
-        }[];
-    }[];
-    weapon?: {
-        name: string;
-        crew?: number;
-        ac?: number;
-        hp?: number;
-        count?: number;
-        costs: object;
-        entries: string[];
-        action: {
-            name: string;
-            entries: string[];
-        }[];
-    }[];
-    actionThresholds: object;
-    action?: (string | any)[];
-    trait: {
-        name: string;
-        entries: string[];
-    }[];
-    actionStation: {
-        name: string;
-        entries: string[];
-    }[];
-    reaction: {
-        name: string;
-        entries: string[];
-    }[];
-    entries: (string | any)[];
-    tokenCredit?: string;
-    hasToken: boolean;
-    hasFluff?: boolean;
-    hasFluffImages: boolean;
-}
-
-export interface VehicleUpgrade {
-    name: string;
-    source: string;
-    page: number;
-    upgradeType: string[];
-    entries: (string | any)[];
-}
 
 export interface ParsedVehicle {
     name: string;
@@ -226,6 +139,8 @@ function getVehicleDimensions(vehicle: Vehicle): string {
 }
 
 function getVehicleType(vehicle: Vehicle): string {
+    if (!vehicle.vehicleType) throw `Undefined vehicle-type in ${vehicle.name} (${vehicle.source})`;
+    // TODO adjust 5e-collector to have this typeMap.
     const typeMap: Record<string, string> = {
         OBJECT: 'Object',
         SHIP: 'Ship',
@@ -260,6 +175,7 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade, data: Databank): str
 // MAIN COMMAND
 export function getVehicles(data: Databank): ParsedVehicle[] {
     const vehicles = data.vehicle.map((v) => {
+        v = handleCopy(v, data.vehicle);
         return {
             name: v.name,
             source: v.source,
