@@ -318,10 +318,9 @@ function addPreserve(copy: any, parent: any, preserve: any): void {
     }
 }
 
-export function handleCopy<T extends Base>(
-    base: T | Copyable<T> | Versioned<T> | CopyableVersioned<T>,
-    entries: (T | Copyable<T> | Versioned<T> | CopyableVersioned<T>)[]
-): T | Versioned<T> {
+export type Unresolved<T extends Base> = T | Copyable<T> | Versioned<T> | CopyableVersioned<T>;
+
+export function handleCopy<T extends Base>(base: Unresolved<T>, entries: Unresolved<T>[]): T | Versioned<T> {
     let copy = structuredClone(base); // Fields will be changed, so making a deep clone is important for future usages
     if (!('_copy' in copy)) return copy;
 
@@ -349,9 +348,7 @@ export function handleCopy<T extends Base>(
     return copy as T;
 }
 
-export function handleVersions<T extends Base>(
-    base: T | Copyable<T> | Versioned<T> | CopyableVersioned<T>
-): (T | Copyable<T>)[] {
+export function handleVersions<T extends Base>(base: Unresolved<T>): (T | Copyable<T>)[] {
     base = structuredClone(base);
     if (!('_versions' in base)) return [];
 
@@ -382,10 +379,7 @@ export function handleVersions<T extends Base>(
     return versions;
 }
 
-export function resolveToBase<T extends Base>(
-    base: T | Copyable<T> | Versioned<T> | CopyableVersioned<T>,
-    entries: (T | Copyable<T> | Versioned<T> | CopyableVersioned<T>)[]
-): T[] {
+export function resolveToBase<T extends Base>(base: Unresolved<T>, entries: Unresolved<T>[]): T[] {
     const additional: T[] = [];
     base = handleCopy(base, entries);
     if ('_versions' in base) {
