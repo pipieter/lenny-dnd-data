@@ -350,7 +350,7 @@ export function handleVersions<T extends Base>(base: T | Versioned<T>): T[] {
     base = structuredClone(base);
     if (!('_versions' in base)) return [];
 
-    const versions = [];
+    const versions: T[] = [];
     for (const baseVersion of base._versions) {
         if (!('_implementations' in baseVersion)) continue;
         for (const implementation of baseVersion._implementations || []) {
@@ -382,10 +382,8 @@ export function resolveToBase<T extends Base>(base: Unresolved<T>, entries: Unre
     const additional: T[] = [];
     let result = structuredClone(base);
     result = handleCopy(base as T | Copyable<T>, entries);
-    if ('_versions' in result) {
-        additional.push(...handleVersions(result as Versioned<T>));
-        delete (result as any)._versions;
-        result = base as unknown as T;
+    if ('_versions' in base) {
+        additional.push(...handleVersions(base as Versioned<T>));
     }
     return [result, ...additional];
 }

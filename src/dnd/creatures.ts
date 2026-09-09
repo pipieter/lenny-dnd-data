@@ -1,4 +1,8 @@
-import { handleCopy, handleVersions } from '../5etools-conversion/copy';
+import { resolveToBase } from '../5etools-conversion/copy';
+import { FluffBase } from '../../5etools-collector/types/fluff';
+import { AbilityString, Speed } from '../../5etools-collector/types/internal/base';
+import { Entry } from '../../5etools-collector/types/internal/entry';
+import { MonsterBase } from '../../5etools-collector/types/monster';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import {
@@ -17,7 +21,14 @@ import {
     parseSizes,
 } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
-import { calculateAbilityMod, formatModifier, joinStringsWithAnd, joinStringsWithOr, variadic } from '../util';
+import {
+    calculateAbilityMod,
+    findFluff,
+    formatModifier,
+    joinStringsWithAnd,
+    joinStringsWithOr,
+    variadic,
+} from '../util';
 
 export interface ParsedCreature {
     name: string;
@@ -39,13 +50,13 @@ export interface ParsedCreature {
     reprint: ReprintData | null;
 }
 
-function parseCreatureSummonClass(creature: any): string | null {
-    if (!creature.summonedByClass) return null;
-    const parts = creature.summonedByClass.split('|');
+function parseCreatureSummonClass(summonedByClass: string | undefined): string | null {
+    if (!summonedByClass) return null;
+    const parts = summonedByClass.split('|');
     return `${parts[0]} (${parts[1]})`;
 }
 
-function getCreatureStats(creature: any): DescriptionTable {
+function getCreatureStats(creature: MonsterBase): DescriptionTable {
     const stats = {
         str: creature.str ?? null,
         dex: creature.dex ?? null,
@@ -65,12 +76,13 @@ function getCreatureStats(creature: any): DescriptionTable {
     for (const [stat, score] of Object.entries(stats)) {
         if (score === null) continue;
 
-        const mod = calculateAbilityMod(score);
-        const save = creature.save?.[stat] ?? mod;
-
         statTable.headers?.push(stat.toUpperCase());
         statTable.rows[0].push(score.toString());
+
+        const mod = typeof score !== 'number' ? score.special : calculateAbilityMod(score);
         statTable.rows[1].push(formatModifier(mod));
+
+        const save = creature.save?.[stat as keyof AbilityString] ?? mod;
         statTable.rows[2].push(formatModifier(save));
     }
 
@@ -81,11 +93,13 @@ function getCreatureStats(creature: any): DescriptionTable {
     };
 }
 
-function parseAC(creature: any): string {
+function parseAC(creature: MonsterBase): string {
     const results: string[] = [];
+    if (!creature.ac) throw 'Unsupported - Creature AC is undefined';
+
     for (const ac of creature.ac) {
         if (typeof ac === 'number') results.push(ac.toString());
-        else if (ac.special) results.push(ac.special);
+        else if ('special' in ac) results.push(ac.special);
         else if (ac.condition) results.push(`${ac.ac} ${ac.condition}`);
         else if (ac.from) results.push(`${ac.ac} (${joinStringsWithAnd(ac.from)})`);
         else if (ac.ac) results.push(`${ac.ac}`);
@@ -95,21 +109,22 @@ function parseAC(creature: any): string {
     return joinStringsWithOr(results);
 }
 
-function parseHP(creature: any): string {
+function parseHP(creature: MonsterBase): string {
+    if (!creature.hp) throw 'Unsupported - Creature HP is undefined';
     const hp = creature.hp;
 
     if (typeof hp === 'number') return hp.toString();
-    if (hp.special) return hp.special;
-    if (hp.average) return hp.formula ? `${hp.average} (${hp.formula})` : hp.average.toString();
+    if ('special' in hp) return hp.special;
+    if ('average' in hp) return hp.formula ? `${hp.average} (${hp.formula})` : hp.average.toString();
     throw `Unsupported creature-HP in ${creature.name}: ${JSON.stringify(hp)}`;
 }
 
-function parseSpeed(creature: any): string {
-    const iterateSpeed = (speedBlock: any) => {
+function parseSpeed(creature: MonsterBase): string {
+    const iterateSpeed = (speedBlock: Speed | undefined) => {
         const results: string[] = [];
+        if (!speedBlock) throw 'Unsupported: Creature-speed is undefined.';
 
-        // eslint-disable-next-line prefer-const
-        for (let [type, speed] of Object.entries(speedBlock) as [string, any][]) {
+        for (const [type, speed] of Object.entries(speedBlock)) {
             if (type === 'alternate') {
                 results.push(...iterateSpeed(speed));
                 continue;
@@ -121,10 +136,8 @@ function parseSpeed(creature: any): string {
                 continue;
             }
 
-            speed = variadic(speed);
             const speeds = [];
-
-            for (const s of speed) {
+            for (const s of variadic(speed)) {
                 if (typeof s === 'number') speeds.push(`${s} ft.`);
                 else if (typeof s === 'boolean') {
                     switch (type) {
@@ -147,12 +160,12 @@ function parseSpeed(creature: any): string {
     return iterateSpeed(creature.speed).join(', ').trim();
 }
 
-function parseInitiative(creature: any): string {
+function parseInitiative(creature: MonsterBase): string {
     const initiative = creature.initiative;
 
     if (initiative.proficiency) return initiative.proficiency.toString();
     if (initiative.initiative != null) return initiative.initiative.toString();
-    if (initiative.advantageMode) {
+    if (initiative.advantageMode && creature.dex && typeof creature.dex === 'number') {
         const mod = calculateAbilityMod(creature.dex);
         const advantage = parseAdvantage(initiative.advantageMode);
         return `${formatModifier(mod)} (with ${advantage})`;
@@ -162,7 +175,7 @@ function parseInitiative(creature: any): string {
     throw `Unsupported creature - initiative in ${creature.name}: ${JSON.stringify(initiative)}`;
 }
 
-function parseSkills(creature: any): string {
+function parseSkills(creature: MonsterBase): string {
     const iterateSkills = (s: any, isOneOf = false): string => {
         const entries = Object.entries(s) as [string, any][];
         const parts = entries.map(([skill, value]) => {
@@ -182,7 +195,7 @@ function parseSkills(creature: any): string {
     return iterateSkills(creature.skill || {});
 }
 
-function parseResistances(creature: any): string {
+function parseResistances(creature: MonsterBase): string {
     // TODO Use of sublists could make rendering clearer.
     const iterateResistances = (resists: any): { results: string[]; extra: string[] } => {
         const results: string[] = [];
@@ -213,7 +226,7 @@ function parseResistances(creature: any): string {
     return main;
 }
 
-function parseImmunities(creature: any): string {
+function parseImmunities(creature: MonsterBase): string {
     // TODO Use of sublists could make rendering clearer.
     const iterateImmunities = (immunities: any): { results: string[]; extra: string[] } => {
         const results: string[] = [];
@@ -256,13 +269,14 @@ function parseImmunities(creature: any): string {
     return finalParts.join('; ');
 }
 
-function parseCR(creature: any): string {
+function parseCR(creature: MonsterBase): string | null {
+    if (!creature.cr) return null;
     if (typeof creature.cr === 'string') return creature.cr;
     else if (creature.cr.cr) return creature.cr.cr;
     throw `Unsupported creature CR in ${creature.name}: ${JSON.stringify(creature.cr)} `;
 }
 
-function getCreatureDetails(creature: any): DescriptionList {
+function getCreatureDetails(creature: MonsterBase): DescriptionList {
     const list: List = { type: 'list', caption: '', entries: [] };
 
     if (creature.ac) list.entries.push(`**AC**: ${parseAC(creature)}`);
@@ -280,7 +294,9 @@ function getCreatureDetails(creature: any): DescriptionList {
         const languages = creature.languages.join(', ');
         list.entries.push(`**Languages**: ${languages}`);
     }
-    if (creature.cr) list.entries.push(`**CR**: ${parseCR(creature)}`);
+
+    const cr = parseCR(creature);
+    if (cr) list.entries.push(`**CR**: ${cr}`);
 
     list.entries = list.entries.map((entry: string | List) =>
         typeof entry === 'string' ? cleanDNDText(entry as string).trim() : entry
@@ -288,60 +304,45 @@ function getCreatureDetails(creature: any): DescriptionList {
     return { name: '', type: DescriptionType.list, list: list };
 }
 
-function buildCreature(creature: any, fluff: any | null): ParsedCreature {
+function buildCreature(creature: MonsterBase, fluff: FluffBase | undefined): ParsedCreature {
     const name = creature.name;
     const source = creature.source;
-    const url = getBestiaryUrl(name, source);
-    const description = getDescriptions(creature);
-    const fluffInfo = getDescriptions(fluff);
-    const subtitle = getSubtitle(creature);
-    const summonedBySpell = parseCreatureSummonSpell(creature.summonedBySpell);
-    const tokenUrl = creature.hasToken ? getCreatureTokenUrl(name, source) : null;
-    const traits = creature.trait?.flatMap((trait: any) => parseDescriptions(trait.name, trait.entries)) ?? [];
-    const actions = creature.action?.flatMap((action: any) => parseDescriptions(action.name, action.entries)) ?? [];
-    const bonusActions = creature.bonus?.flatMap((bonus: any) => parseDescriptions(bonus.name, bonus.entries)) ?? [];
-    const reprint = parseReprint(creature);
 
     return {
         name,
         source,
-        subtitle,
-        summonedBySpell,
-        summonedByClass: parseCreatureSummonClass(creature),
-        tokenUrl,
-        url,
-        description,
-        fluffInfo,
+        subtitle: getSubtitle(creature),
+        summonedBySpell: parseCreatureSummonSpell(creature.summonedBySpell),
+        summonedByClass: parseCreatureSummonClass(creature.summonedByClass),
+        tokenUrl: creature.hasToken ? getCreatureTokenUrl(name, source) : null,
+        url: getBestiaryUrl(name, source),
+        description: getDescriptions(creature),
+        fluffInfo: getDescriptions(fluff),
         stats: getCreatureStats(creature),
         details: getCreatureDetails(creature), // TODO Possibly not store all values in details, would be easier to customize things in front-end.
-        traits,
-        actions,
-        bonusActions,
-        reprint,
+        traits: creature.trait?.flatMap((trait: any) => parseDescriptions(trait.name, trait.entries)) ?? [],
+        actions: creature.action?.flatMap((action: any) => parseDescriptions(action.name, action.entries)) ?? [],
+        bonusActions: creature.bonus?.flatMap((bonus: any) => parseDescriptions(bonus.name, bonus.entries)) ?? [],
+        reprint: parseReprint(creature),
     };
 }
 
-function getSubtitle(data: any): string | null {
-    const sizeData = data.size;
-    const typeData = data.type;
+function getSubtitle(data: MonsterBase): string | null {
+    const size = data.size ? parseSizes(data.size) : '';
+    const type = data.type ? parseCreatureTypes(data.type) : '';
 
-    const size = sizeData ? parseSizes(sizeData) : null;
-    const type = typeData ? parseCreatureTypes(typeData) : null;
-
-    if (!size && !type) return null;
-
-    const text = size + ' ' + type;
-    return text.trim();
+    const text = (size + ' ' + type).trim();
+    if (text.length == 0) return null;
+    return text;
 }
 
-function getDescriptions(data: any | null): Description[] {
-    const entries = data?.entries || [];
-    if (!entries) return [];
-    const filteredEntries = filterEntries(entries);
+function getDescriptions(data: MonsterBase | FluffBase | undefined): Description[] {
+    if (!data || !('entries' in data) || !data.entries) return [];
+    const filteredEntries = filterEntries(data.entries);
     return parseDescriptions('', filteredEntries);
 }
 
-function filterEntries(entries: any[]): any[] {
+function filterEntries(entries: Entry[]): any[] {
     // Creatures generally have way too many entries, impacting performance heavily. We pre-cut entries we may not need.
     const filteredEntries: any[] = [];
 
@@ -356,30 +357,15 @@ function filterEntries(entries: any[]): any[] {
     return filteredEntries;
 }
 
-export function getCreatures(databank: Databank): ParsedCreature[] {
-    const creatures: ParsedCreature[] = [];
-    const fluffs: any[] = [];
+export function getCreatures(data: Databank): ParsedCreature[] {
+    const fluffs = data.monsterFluff.flatMap((fluff) => {
+        return resolveToBase(fluff, data.monsterFluff);
+    });
 
-    // Get creatures
-    for (const creature of databank.monster) {
-        const fullCreature = handleCopy(creature, databank.monster);
-        const versions = handleVersions(fullCreature);
-        creatures.push(fullCreature, ...versions);
-    }
-
-    // Get fluffs
-    for (const fluff of databank.monsterFluff) {
-        const fullFluff = handleCopy(fluff, databank.monsterFluff);
-        const versions = handleVersions(fullFluff);
-        fluffs.push(fullFluff, ...versions);
-    }
-
-    // Parse creatures
-    const parsed: ParsedCreature[] = [];
-    for (const creature of creatures) {
-        const fluff = fluffs.find((fluff) => fluff.name === creature.name && fluff.source === creature.source);
-        parsed.push(buildCreature(creature, fluff));
-    }
-
-    return parsed;
+    return data.monster.flatMap((creatures) => {
+        return resolveToBase(creatures, data.monster).map((creature) => {
+            const fluff = findFluff(creature, fluffs) as FluffBase | undefined;
+            return buildCreature(creature, fluff);
+        });
+    });
 }

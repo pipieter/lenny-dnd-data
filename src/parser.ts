@@ -1,5 +1,6 @@
 import { ClassResourceValue } from '../5etools-collector/types/class';
 import { ClassProficiency, Unit } from '../5etools-collector/types/internal/base';
+import { Variadic } from '../5etools-collector/types/internal/util';
 import { cleanDNDText } from './clean';
 import { Databank } from './data';
 import { SpellDamage } from './dnd/spells';
@@ -15,7 +16,7 @@ import {
     getTablesUrl,
     getTrapsUrl,
 } from './urls';
-import { getNumberSign, joinStringsWithAnd, joinStringsWithOr } from './util';
+import { getNumberSign, joinStringsWithAnd, joinStringsWithOr, variadic } from './util';
 import { Variables } from './variables';
 
 export interface Range {
@@ -891,9 +892,8 @@ export function title(text: string): string {
     return text.split(' ').map(capitalize).join(' ');
 }
 
-export function parseSizes(sizes: string | string[]): string {
-    if (typeof sizes === 'string') sizes = [sizes];
-
+export function parseSizes(sizes: Variadic<string>): string {
+    sizes = variadic(sizes);
     const words = sizes.map((size) => Variables.getSizeName(size)).filter((size) => size !== null);
     return joinStringsWithOr(words);
 }
@@ -924,7 +924,7 @@ export function parseCreatureTypes(creature_type: string | any): string {
     throw `parseCreatureTypes: Unrecognized format: ${JSON.stringify(creature_type)}`;
 }
 
-export function parseCreatureSummonSpell(spell: string | null): string | null {
+export function parseCreatureSummonSpell(spell: string | undefined): string | null {
     if (!spell) return null;
     return spell.split('|', 1)[0];
 }

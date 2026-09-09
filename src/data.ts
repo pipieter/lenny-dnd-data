@@ -9,6 +9,7 @@ import { Disease } from '../5etools-collector/types/disease';
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Hazard } from '../5etools-collector/types/hazard';
 import { Language } from '../5etools-collector/types/language';
+import { Monster } from '../5etools-collector/types/monster';
 import { Rule } from '../5etools-collector/types/rule';
 import { Skill } from '../5etools-collector/types/skill';
 import { Source } from '../5etools-collector/types/source';
@@ -95,8 +96,8 @@ export abstract class Databank {
     public readonly statusFluff: Fluff[] = [];
     public readonly diseaseFluff: Fluff[] = [];
     // Creatures
-    public readonly monster: any[] = [];
-    public readonly monsterFluff: any[] = [];
+    public readonly monster: Monster[] = [];
+    public readonly monsterFluff: Fluff[] = [];
     // Languages
     public readonly language: Language[] = [];
     public readonly languageFluff: Fluff[] = [];
