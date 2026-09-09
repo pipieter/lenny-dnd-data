@@ -1,35 +1,10 @@
+import { handleCopy } from '../5etools-conversion/copy';
+import { DeityBase } from '../../5etools-collector/types/deity';
 import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
 import { Description, DescriptionType, parseAlignments, parseDescriptions, title } from '../parser';
-import { getDeitiesUrl, getImageUrl } from '../urls';
+import { getDeitiesUrl, getEntryImageUrl } from '../urls';
 import { joinStringsWithAnd } from '../util';
-
-export interface Deity {
-    name: string;
-    source: string;
-    pantheon: string;
-    alignment?: string[];
-    category?: string;
-    title?: string;
-    worshipers?: string;
-    plane?: string;
-    domains?: string[];
-    province?: string;
-    symbol?: string;
-    symbolImg?: DeitySymbolImg;
-    entries?: string[];
-}
-
-interface DeitySymbolImg {
-    type: string;
-    href: {
-        type: string;
-        path: string;
-    };
-    credit: string;
-    width: number;
-    height: number;
-}
 
 export interface ParsedDeity {
     name: string;
@@ -42,7 +17,7 @@ export interface ParsedDeity {
     // Deities do not handle reprinting in data.
 }
 
-function parseDeityInlineDescriptions(deity: Deity): Description[] {
+function parseDeityInlineDescriptions(deity: DeityBase): Description[] {
     const descriptions: Description[] = [];
 
     descriptions.push({ name: 'Pantheon', type: DescriptionType.text, value: deity.pantheon });
@@ -72,15 +47,16 @@ function parseDeityInlineDescriptions(deity: Deity): Description[] {
 }
 
 export function getDeities(data: Databank): ParsedDeity[] {
-    return data.deity.map((d) => {
+    return data.deity.flatMap((deity) => {
+        deity = handleCopy(deity, data.deity);
         return {
-            name: d.name,
-            source: d.source,
-            subtitle: d.title ? title(d.title) : `${d.pantheon} Deity`,
-            url: getDeitiesUrl(d.name, d.source, d.pantheon),
-            imgUrl: d.symbolImg ? getImageUrl(d.symbolImg.href.path) : null,
-            inlineDescription: parseDeityInlineDescriptions(d),
-            description: d.entries ? parseDescriptions('', d.entries) : [],
+            name: deity.name,
+            source: deity.source,
+            subtitle: deity.title ? title(deity.title) : `${deity.pantheon} Deity`,
+            url: getDeitiesUrl(deity.name, deity.source, deity.pantheon),
+            imgUrl: getEntryImageUrl(deity.symbolImg),
+            inlineDescription: parseDeityInlineDescriptions(deity),
+            description: parseDescriptions('', deity.entries ?? []),
         };
     });
 }

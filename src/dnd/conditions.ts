@@ -1,6 +1,11 @@
+import { Condition } from '../../5etools-collector/types/condition';
+import { Disease } from '../../5etools-collector/types/disease';
+import { Fluff } from '../../5etools-collector/types/fluff';
+import { Status } from '../../5etools-collector/types/status';
 import { Databank } from '../data';
 import { Description, ReprintData, parseDescriptions, parseImageUrl, parseReprint } from '../parser';
 import { getConditionsDiseasesUrl } from '../urls';
+import { findFluff } from '../util';
 
 // Note, statuses and diseases also follow the same structure as Condition
 export interface ParsedCondition {
@@ -12,37 +17,29 @@ export interface ParsedCondition {
     reprint: ReprintData | null;
 }
 
-function getConditions(type: string, data: Databank): ParsedCondition[] {
-    const entries = data.get(type);
-    const results: ParsedCondition[] = entries.map((entry) => {
-        const result: ParsedCondition = {
-            name: entry.name,
-            source: entry.source,
-            url: getConditionsDiseasesUrl(entry.name, entry.source),
-            description: parseDescriptions('Description', entry.entries),
-            image: null,
-            reprint: parseReprint(entry),
+function getConditions(conditions: (Condition | Disease | Status)[], fluffs: Fluff[]): ParsedCondition[] {
+    return conditions.map((condition) => {
+        const fluff = findFluff(condition, fluffs);
+        return {
+            name: condition.name,
+            source: condition.source,
+            url: getConditionsDiseasesUrl(condition.name, condition.source),
+            description: parseDescriptions('', condition.entries),
+            image: parseImageUrl(fluff?.images ?? []),
+            reprint: parseReprint(condition),
         };
-
-        const fluff = data.search(`${type}Fluff`, entry.name, entry.source);
-        if (fluff && fluff.images) {
-            result.image = parseImageUrl(fluff.images);
-        }
-
-        return result;
     });
-
-    return results;
 }
 
 export function getConditionsStatusesAndDiseases(data: Databank): {
     conditions: ParsedCondition[];
     diseases: ParsedCondition[];
 } {
-    const conditions: ParsedCondition[] = [];
-    conditions.push(...getConditions('condition', data));
-    conditions.push(...getConditions('status', data));
-    const diseases = getConditions('disease', data);
+    const conditions: ParsedCondition[] = [
+        ...getConditions(data.condition, data.conditionFluff),
+        ...getConditions(data.status, data.statusFluff),
+    ];
+    const diseases = getConditions(data.disease, data.diseaseFluff);
 
     return { conditions, diseases };
 }

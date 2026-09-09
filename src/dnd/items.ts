@@ -177,9 +177,8 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
     return results;
 }
 
-function parseItem(item: any, data: any, additionalData?: Databank): ParsedItem {
+function parseItem(item: any, data: any): ParsedItem {
     const itemFluff = [...data.itemFluff];
-    if (additionalData) itemFluff.push(...additionalData.itemFluff);
     const fluff = getItemFluff(itemFluff, item.name, item.source);
 
     // TODO optimize these mappings beforehand
@@ -372,26 +371,24 @@ function parseItem(item: any, data: any, additionalData?: Databank): ParsedItem 
     return result;
 }
 
-export function getItems(databank: Databank, additionalDatabank?: Databank): ParsedItem[] {
+export function getItems(databank: Databank): ParsedItem[] {
     // Resolve raw item data
     const items = [...databank.item, ...databank.baseitem];
-    const extraItems = additionalDatabank ? [...additionalDatabank.item, ...additionalDatabank.baseitem] : [];
 
     const raw: any[] = [];
     for (const item of items) {
-        raw.push(resolveItemEntry(handleCopy(item, [...items, ...extraItems]), databank.itemEntry));
+        raw.push(resolveItemEntry(handleCopy(item, items), databank.itemEntry));
     }
 
-    const data = raw.map((item) => parseItem(item, databank, additionalDatabank));
+    const data = raw.map((item) => parseItem(item, databank));
     return data.sort(entrySort);
 }
 
-export function getItemVariants(databank: Databank, additionalDatabank?: Databank): ParsedItem[] {
+export function getItemVariants(databank: Databank): ParsedItem[] {
     const items = [...databank.item, ...databank.baseitem];
-    const extraItems = additionalDatabank ? [...additionalDatabank.item, ...additionalDatabank.baseitem] : [];
 
     let variants = databank.magicvariant;
-    const variantCopies = [...variants, ...items, ...extraItems];
+    const variantCopies = [...variants, ...items];
     variants = variants.flatMap((v) => handleCopy(v, variantCopies));
     variants = variants.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem));
     const seenVariants = new Set();
@@ -399,7 +396,7 @@ export function getItemVariants(databank: Databank, additionalDatabank?: Databan
     for (const variant of variants) {
         const key = getKey(variant.name, variant.source);
         if (seenVariants.has(key)) continue;
-        raw.push(resolveItemEntry(handleCopy(variant, [...items, ...extraItems]), databank.itemEntry));
+        raw.push(resolveItemEntry(handleCopy(variant, items), databank.itemEntry));
         seenVariants.add(key);
     }
     const data = raw.map((variant) => parseItem(variant, databank));

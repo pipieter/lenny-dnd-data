@@ -110,7 +110,7 @@ function parseBackgroundFluff(fluff: Fluff | undefined): Description[] {
 }
 
 export function getBackgrounds(data: Databank): ParsedBackground[] {
-    return data.background.map((background: any) => {
+    return data.background.map((background) => {
         background = handleCopy(background, data.background);
         const fluff = findFluff(background, data.backgroundFluff);
 

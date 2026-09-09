@@ -2,18 +2,22 @@ import { Action } from '../5etools-collector/types/action';
 import { Background } from '../5etools-collector/types/background';
 import { Boon } from '../5etools-collector/types/boon';
 import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-collector/types/class';
+import { Condition } from '../5etools-collector/types/condition';
+import { Cult } from '../5etools-collector/types/cult';
+import { Deity } from '../5etools-collector/types/deity';
+import { Disease } from '../5etools-collector/types/disease';
 import { Fluff } from '../5etools-collector/types/fluff';
+import { Hazard } from '../5etools-collector/types/hazard';
 import { Language } from '../5etools-collector/types/language';
 import { Monster } from '../5etools-collector/types/monster';
+import { Rule } from '../5etools-collector/types/rule';
 import { Skill } from '../5etools-collector/types/skill';
-import { Cult } from './dnd/cults';
-import { Deity } from './dnd/deities';
+import { Source } from '../5etools-collector/types/source';
+import { Status } from '../5etools-collector/types/status';
 import { Feat } from './dnd/feats';
-import { Hazard } from './dnd/hazards';
 import { LifeBackground, LifeClass } from './dnd/life';
 import { SpeciesName } from './dnd/names';
 import { DNDObject } from './dnd/objects';
-import { Rule } from './dnd/rules';
 import { TableData } from './dnd/tables';
 import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
 import { title } from './parser';
@@ -85,12 +89,12 @@ export abstract class Databank {
     public readonly magicvariant: any[] = [];
     public readonly itemFluff: any[] = [];
     // Conditions
-    public readonly condition: any[] = [];
-    public readonly status: any[] = [];
-    public readonly disease: any[] = [];
-    public readonly conditionFluff: any[] = [];
-    public readonly statusFluff: any[] = [];
-    public readonly diseaseFluff: any[] = [];
+    public readonly condition: Condition[] = [];
+    public readonly status: Status[] = [];
+    public readonly disease: Disease[] = [];
+    public readonly conditionFluff: Fluff[] = [];
+    public readonly statusFluff: Fluff[] = [];
+    public readonly diseaseFluff: Fluff[] = [];
     // Creatures
     public readonly monster: Monster[] = [];
     public readonly monsterFluff: Fluff[] = [];
@@ -154,7 +158,7 @@ export abstract class Databank {
     public readonly lifeTrinket: any[] = [];
 
     // Source
-    public readonly source: any[] = [];
+    public readonly source: Source[] = [];
 
     public readonly metadata = new MetaData();
 
@@ -216,6 +220,7 @@ export class PartneredDatabank extends Databank {
             'itemTypeAdditionalEntries',
             'itemEntry',
             'itemMastery',
+            'itemFluff',
             'monster',
             'item',
             'monsterFluff',

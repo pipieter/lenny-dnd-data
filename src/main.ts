@@ -26,22 +26,17 @@ import { ParsedDatabank } from './parsed';
 import { StopwatchLogger } from './util';
 import * as kleur from 'kleur';
 
-function parse(
-    name: string,
-    databank: Databank,
-    stopwatch: StopwatchLogger,
-    additionalDatabank?: Databank // only used for databanks that refer to other ones (partnered data requires official data)
-): ParsedDatabank {
+function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): ParsedDatabank {
     const parsed = new ParsedDatabank();
     stopwatch.log(`Generating ${name}`, kleur.cyan);
 
-    const items = getItems(databank, additionalDatabank);
+    const items = getItems(databank);
     stopwatch.log('Items retrieved');
 
-    const itemVariants = getItemVariants(databank, additionalDatabank);
+    const itemVariants = getItemVariants(databank);
     stopwatch.log('Items variant retrieved');
 
-    const spells = getSpells(databank, additionalDatabank);
+    const spells = getSpells(databank);
     stopwatch.log('Spells retrieved');
 
     const { conditions, diseases } = getConditionsStatusesAndDiseases(databank);
@@ -147,19 +142,13 @@ function main(): void {
     stopwatch.log('Loaded databanks');
 
     const parsedOfficial = parse('official', official, stopwatch);
-    const parsedPartnered = parse('partnered', partnered, stopwatch, official);
+    const parsedPartnered = parse('partnered', partnered, stopwatch);
 
     const officialSources = new Set(parsedOfficial.sources.map((source) => source.source));
     parsedPartnered.removeSources(officialSources);
 
     parsedOfficial.write('./generated/official/');
     parsedPartnered.write('./generated/partnered/');
-
-    // In case homebrew content needs to be enabled, uncomment the following lines
-    // const homebrew = new PartneredDatabank(official, { partnered: false, allowPHB2014: false });
-    // const parsedHomebrew = parse('homebrew', homebrew, stopwatch);
-    // parsedHomebrew.removeSources(officialSources)
-    // parsedHomebrew.write("./generated/homebrew/")
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
