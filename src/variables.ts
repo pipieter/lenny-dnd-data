@@ -77,6 +77,11 @@ class CollectorVariables {
         if (!type) return null;
         return this.data.ruleTypes[type] ?? null;
     }
+
+    getTrapType(type: string | undefined | null): string | null {
+        if (!type) return null;
+        return this.data.trapTypes[type] ?? null;
+    }
 }
 
 export const Variables = new CollectorVariables('./5etools-collector/data/variables.json');
