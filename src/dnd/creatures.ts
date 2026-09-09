@@ -1,4 +1,4 @@
-import { handleCopy, handleVersions } from '../5etools-conversion/copy';
+import { resolveToBase } from '../5etools-conversion/copy';
 import { FluffBase } from '../../5etools-collector/types/fluff';
 import { AbilityString, Speed } from '../../5etools-collector/types/internal/base';
 import { Entry } from '../../5etools-collector/types/internal/entry';
@@ -367,15 +367,11 @@ function filterEntries(entries: Entry[]): any[] {
 
 export function getCreatures(data: Databank): ParsedCreature[] {
     const creatures = data.monster.flatMap((creature) => {
-        creature = handleCopy(creature, data.monster);
-        const versions = handleVersions(creature);
-        return [creature, ...versions];
+        return resolveToBase(creature, data.monster);
     });
 
     const fluffs = data.monsterFluff.flatMap((fluff) => {
-        fluff = handleCopy(fluff, data.monsterFluff);
-        const versions = handleVersions(fluff);
-        return [fluff, ...versions];
+        return resolveToBase(fluff, data.monsterFluff);
     });
 
     return creatures.map((creature) => {

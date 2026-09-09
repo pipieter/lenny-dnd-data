@@ -1,5 +1,6 @@
 import { Base } from '../../5etools-collector/types/internal/base';
-import { Copyable } from '../../5etools-collector/types/internal/copy';
+import { ModBody } from '../../5etools-collector/types/internal/copy';
+import { Unresolved } from './copy';
 
 function isPrimitive(obj: any) {
     return ['string', 'number', 'bigint', 'boolean'].includes(typeof obj);
@@ -36,7 +37,7 @@ function recursiveObjectApply(obj: any, applyFn: (value: string | number | boole
  * @returns A copy of obj with the replaced templates.
  */
 export function applySingleTemplate<T extends Base>(
-    obj: T | Copyable<T> | string | undefined,
+    obj: Unresolved<T> | ModBody | string | undefined,
     template: string,
     replacement: string
 ): any {
