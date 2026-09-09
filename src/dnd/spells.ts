@@ -131,22 +131,9 @@ function getSpell(spell: any, fluffs: any[], sources: any, data: Databank): Pars
     };
 }
 
-export function getSpells(databank: Databank, additionalDatabank?: Databank): ParsedSpell[] {
-    const spells = databank.spell;
-    const extraSpells = additionalDatabank ? [...additionalDatabank.spell] : [];
-
-    const extraFluffs = additionalDatabank ? additionalDatabank.spellFluff : [];
-    const fluffs = [...databank.spellFluff, ...extraFluffs];
-
-    const extraSources = additionalDatabank ? additionalDatabank.spellSource : [];
-    const sources = [...databank.spellSource, ...extraSources];
-
-    const parsed = spells
-        .map((base: any) => {
-            const spell = handleCopy(base, [...spells, ...extraSpells]);
-            return getSpell(spell, fluffs, sources, databank);
-        })
-        .sort((a, b) => a.name.localeCompare(b.name));
-
-    return parsed;
+export function getSpells(data: Databank): ParsedSpell[] {
+    return data.spell.map((base: any) => {
+        const spell = handleCopy(base, data.spell);
+        return getSpell(spell, data.spellFluff, data.spellSource, data);
+    });
 }
