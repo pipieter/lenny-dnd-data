@@ -1,4 +1,4 @@
-import { handleCopy } from '../5etools-conversion/copy';
+import { resolveToBase } from '../5etools-conversion/copy';
 import {
     ClassBase,
     ClassFeature,
@@ -957,7 +957,7 @@ function getSubclasses(
 
     const dictionary: SubclassDictionary = {};
     for (let subclassData of subclasses) {
-        subclassData = handleCopy(subclassData, subclasses);
+        subclassData = resolveToBase(subclassData, subclasses)[0];
         const subclass = parseSubclass(subclassData, subclassFeatures);
         const key = subclass.key;
         if (!dictionary[key]) dictionary[key] = subclass;
@@ -998,7 +998,7 @@ export function getClassesAndClassFeats(data: Databank): {
 
     const allClasses = [...data.class, ...data.sidekick];
     const classes: ParsedClass[] = allClasses.map((cls) => {
-        cls = handleCopy(cls, data.class);
+        cls = resolveToBase(cls, data.class)[0];
         const features = getClassFeatures(data, cls.name, cls.source);
         const subclassFeatures = getClassSubclassFeatures(data, cls.name, cls.source);
         const subclasses = getSubclasses(data, cls.name, cls.source, subclassFeatures);

@@ -1,5 +1,5 @@
 import { Base } from '../../5etools-collector/types/internal/base';
-import { Copyable } from '../../5etools-collector/types/internal/copy';
+import { Copyable, CopyableVersioned, ModBody, Versioned } from '../../5etools-collector/types/internal/copy';
 import { title } from '../parser';
 import { Variables } from '../variables';
 import { crToProficiencyBonus } from './parser';
@@ -318,9 +318,11 @@ function addPreserve(copy: any, parent: any, preserve: any): void {
     }
 }
 
-export function handleCopy<T extends Base>(base: T | Copyable<T>, entries: (T | Copyable<T>)[]): T {
+export function handleCopy<T extends Base>(
+    base: T | Copyable<T> | Versioned<T> | CopyableVersioned<T>,
+    entries: (T | Copyable<T> | Versioned<T> | CopyableVersioned<T>)[]
+): T | Versioned<T> {
     let copy = structuredClone(base); // Fields will be changed, so making a deep clone is important for future usages
-
     if (!('_copy' in copy)) return copy;
 
     const copyName = copy._copy.name?.trim().toLowerCase();
@@ -347,29 +349,49 @@ export function handleCopy<T extends Base>(base: T | Copyable<T>, entries: (T | 
     return copy as T;
 }
 
-export function handleVersions(base: any): any[] {
+export function handleVersions<T extends Base>(
+    base: T | Copyable<T> | Versioned<T> | CopyableVersioned<T>
+): (T | Copyable<T>)[] {
     base = structuredClone(base);
-    if (!base._versions) return [];
+    if (!('_versions' in base)) return [];
 
     const versions = [];
     for (const baseVersion of base._versions) {
+        if (!('_implementations' in baseVersion)) continue;
         for (const implementation of baseVersion._implementations || []) {
             let version = structuredClone(base);
-            let abstract = structuredClone(baseVersion._abstract) || {};
+            let abstract: ModBody | undefined = structuredClone(baseVersion._abstract);
 
             for (const variable of Object.keys(implementation._variables)) {
-                version = applySingleTemplate(version, variable, implementation._variables[variable]);
-                abstract = applySingleTemplate(abstract, variable, implementation._variables[variable]);
+                const entry: string = variadic(implementation._variables[variable])[0];
+                version = applySingleTemplate(version, variable, entry);
+                abstract = applySingleTemplate(abstract, variable, entry);
             }
 
-            delete version._versions;
-            version.name = abstract.name || version.name;
-            version.source = abstract.source || version.source;
+            delete (version as any)._versions;
 
-            addMod(version, abstract._mod || {});
-            versions.push(version);
+            const finalVersion = version as T | Copyable<T>;
+            finalVersion.name = abstract?.name ?? finalVersion.name;
+            finalVersion.source = abstract?.source ?? finalVersion.source;
+
+            addMod(finalVersion, abstract?._mod || {});
+            versions.push(finalVersion);
         }
     }
 
     return versions;
+}
+
+export function resolveToBase<T extends Base>(
+    base: T | Copyable<T> | Versioned<T> | CopyableVersioned<T>,
+    entries: (T | Copyable<T> | Versioned<T> | CopyableVersioned<T>)[]
+): T[] {
+    const additional: T[] = [];
+    base = handleCopy(base, entries);
+    if ('_versions' in base) {
+        additional.push(...(handleVersions(base) as T[]));
+        delete (base as any)._versions;
+        base = base as unknown as T;
+    }
+    return [base, ...additional];
 }
