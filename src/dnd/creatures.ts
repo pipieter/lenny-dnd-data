@@ -29,6 +29,7 @@ import {
     joinStringsWithOr,
     variadic,
 } from '../util';
+import { resolve } from 'path';
 
 export interface ParsedCreature {
     name: string;
@@ -332,16 +333,12 @@ function buildCreature(creature: MonsterBase, fluff: FluffBase | undefined): Par
 }
 
 function getSubtitle(data: MonsterBase): string | null {
-    const sizeData = data.size;
-    const typeData = data.type;
+    const size = data.size ? parseSizes(data.size) : '';
+    const type = data.type ? parseCreatureTypes(data.type) : '';
 
-    const size = sizeData ? parseSizes(sizeData) : null;
-    const type = typeData ? parseCreatureTypes(typeData) : null;
-
-    if (!size && !type) return null;
-
-    const text = size + ' ' + type;
-    return text.trim();
+    const text = (size + ' ' + type).trim();
+    if (text.length == 0) return null;
+    return text;
 }
 
 function getDescriptions(data: MonsterBase | FluffBase | undefined): Description[] {
@@ -366,16 +363,14 @@ function filterEntries(entries: Entry[]): any[] {
 }
 
 export function getCreatures(data: Databank): ParsedCreature[] {
-    const creatures = data.monster.flatMap((creature) => {
-        return resolveToBase(creature, data.monster);
-    });
-
     const fluffs = data.monsterFluff.flatMap((fluff) => {
         return resolveToBase(fluff, data.monsterFluff);
     });
 
-    return creatures.map((creature) => {
-        const fluff = findFluff(creature, fluffs) as FluffBase | undefined;
-        return buildCreature(creature, fluff);
+    return data.monster.flatMap((creatures) => {
+        return resolveToBase(creatures, data.monster).map((creature) => {
+            const fluff = findFluff(creature, fluffs) as FluffBase | undefined;
+            return buildCreature(creature, fluff);
+        });
     });
 }
