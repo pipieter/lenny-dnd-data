@@ -219,6 +219,7 @@ export class PartneredDatabank extends Databank {
             'itemTypeAdditionalEntries',
             'itemEntry',
             'itemMastery',
+            'itemFluff',
             'monster',
             'item',
             'monsterFluff',
