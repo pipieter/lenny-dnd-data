@@ -1,5 +1,5 @@
 import { ClassResourceValue } from '../5etools-collector/types/class';
-import { ClassProficiency, Unit } from '../5etools-collector/types/internal/base';
+import { ClassProficiency, Resist, Unit } from '../5etools-collector/types/internal/base';
 import { Variadic } from '../5etools-collector/types/internal/util';
 import { cleanDNDText } from './clean';
 import { Databank } from './data';
@@ -1166,4 +1166,34 @@ export function parseReprint(data: any): ReprintData | null {
         source,
         tag: reprint.tag ?? null,
     };
+}
+
+export function parseResists(resists: Resist[] | undefined): string[] {
+    if (!resists) return [];
+
+    return resists.map((resist) => {
+        if (typeof resist === 'string') {
+            return resist;
+        }
+
+        if ('special' in resist) {
+            return resist.special;
+        }
+
+        if ('choose' in resist) {
+            return joinStringsWithOr(resist.choose.from ?? []);
+        }
+
+        const values = 'resist' in resist ? resist.resist : 'immune' in resist ? resist.immune : resist.vulnerable;
+        let result = joinStringsWithAnd(parseResists(values));
+
+        if (resist.note) {
+            result = `${result} ${resist.note}`;
+        }
+        if (resist.preNote) {
+            result = `${resist.preNote} ${result}`;
+        }
+
+        return result;
+    });
 }
