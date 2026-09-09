@@ -11,6 +11,7 @@ import { Hazard } from '../5etools-collector/types/hazard';
 import { Language } from '../5etools-collector/types/language';
 import { Monster } from '../5etools-collector/types/monster';
 import { DNDObject } from '../5etools-collector/types/object';
+import { OptionalFeatures } from '../5etools-collector/types/optionalfeatures';
 import { Rule } from '../5etools-collector/types/rule';
 import { Skill } from '../5etools-collector/types/skill';
 import { Source } from '../5etools-collector/types/source';
@@ -131,7 +132,7 @@ export abstract class Databank {
     public readonly backgroundFluff: Fluff[] = [];
     // Feats
     public readonly feat: Feat[] = [];
-    public readonly optionalfeature: any[] = [];
+    public readonly optionalfeature: OptionalFeatures[] = [];
     // Skills
     public readonly skill: Skill[] = [];
     // Names
