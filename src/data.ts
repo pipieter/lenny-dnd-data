@@ -14,12 +14,12 @@ import { Rule } from '../5etools-collector/types/rule';
 import { Skill } from '../5etools-collector/types/skill';
 import { Source } from '../5etools-collector/types/source';
 import { Status } from '../5etools-collector/types/status';
+import { TableGroup, TableTable } from '../5etools-collector/types/table';
 import { Vehicle, VehicleUpgrade } from '../5etools-collector/types/vehicle';
 import { Feat } from './dnd/feats';
 import { LifeBackground, LifeClass } from './dnd/life';
 import { SpeciesName } from './dnd/names';
 import { DNDObject } from './dnd/objects';
-import { TableData } from './dnd/tables';
 import { title } from './parser';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
@@ -123,8 +123,8 @@ export abstract class Databank {
     // Actions
     public readonly action: Action[] = [];
     // Tables
-    public readonly table: TableData[] = [];
-    public readonly tableGroup: any[] = [];
+    public readonly table: TableTable[] = [];
+    public readonly tableGroup: TableGroup[] = [];
     // Backgrounds
     public readonly background: Background[] = [];
     public readonly backgroundFluff: Fluff[] = [];

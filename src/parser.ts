@@ -4,7 +4,6 @@ import { Variadic } from '../5etools-collector/types/internal/util';
 import { cleanDNDText } from './clean';
 import { Databank } from './data';
 import { SpellDamage } from './dnd/spells';
-import { ColLabelRows } from './dnd/tables';
 import {
     get5eToolsUrl,
     getActionsUrl,
@@ -794,9 +793,10 @@ export function parseDescriptionFromTable(table: any): DescriptionTable {
     if (table.colLabels) {
         headers = table.colLabels.map(cleanDNDText);
     } else if (table.colLabelRows) {
-        const colLabelRows: ColLabelRows = table.colLabelRows;
-        const expandedRows: string[][] = colLabelRows.map((row) =>
-            row.flatMap((cell) => {
+        // TODO Table typing
+        const colLabelRows = table.colLabelRows;
+        const expandedRows: string[][] = colLabelRows.map((row: any) =>
+            row.flatMap((cell: any) => {
                 if (typeof cell === 'string') return [cell];
                 if (cell && typeof cell === 'object' && 'entry' in cell) {
                     const value = cell.entry.replace('...', '');
