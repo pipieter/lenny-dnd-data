@@ -1,4 +1,4 @@
-import { handleCopy, resolveToBase } from '../5etools-conversion/copy';
+import { handleCopy } from '../5etools-conversion/copy';
 import {
     ClassBase,
     ClassFeature,
@@ -957,7 +957,7 @@ function getSubclasses(
 
     const dictionary: SubclassDictionary = {};
     for (let subclassData of subclasses) {
-        subclassData = resolveToBase(subclassData, subclasses)[0];
+        subclassData = handleCopy(subclassData, subclasses);
         const subclass = parseSubclass(subclassData, subclassFeatures);
         const key = subclass.key;
         if (!dictionary[key]) dictionary[key] = subclass;

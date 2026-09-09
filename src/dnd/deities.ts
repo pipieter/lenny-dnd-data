@@ -48,7 +48,7 @@ function parseDeityInlineDescriptions(deity: DeityBase): Description[] {
 
 export function getDeities(data: Databank): ParsedDeity[] {
     return data.deity.flatMap((deity) => {
-        deity = handleCopy(deity, data.deity) as DeityBase;
+        deity = handleCopy(deity, data.deity);
         return {
             name: deity.name,
             source: deity.source,

@@ -318,9 +318,7 @@ function addPreserve(copy: any, parent: any, preserve: any): void {
     }
 }
 
-export type Unresolved<T extends Base> = T | Copyable<T> | Versioned<T> | CopyableVersioned<T>;
-
-export function handleCopy<T extends Base>(base: Unresolved<T>, entries: Unresolved<T>[]): T | Versioned<T> {
+export function handleCopy<T extends Base>(base: T | Copyable<T>, entries: Unresolved<T>[]): T {
     let copy = structuredClone(base); // Fields will be changed, so making a deep clone is important for future usages
     if (!('_copy' in copy)) return copy;
 
@@ -348,7 +346,7 @@ export function handleCopy<T extends Base>(base: Unresolved<T>, entries: Unresol
     return copy as T;
 }
 
-export function handleVersions<T extends Base>(base: Unresolved<T>): (T | Copyable<T>)[] {
+export function handleVersions<T extends Base>(base: T | Versioned<T>): T[] {
     base = structuredClone(base);
     if (!('_versions' in base)) return [];
 
@@ -366,8 +364,8 @@ export function handleVersions<T extends Base>(base: Unresolved<T>): (T | Copyab
             }
 
             delete (version as any)._versions;
+            const finalVersion = version as unknown as T;
 
-            const finalVersion = version as T | Copyable<T>;
             finalVersion.name = abstract?.name ?? finalVersion.name;
             finalVersion.source = abstract?.source ?? finalVersion.source;
 
@@ -379,13 +377,15 @@ export function handleVersions<T extends Base>(base: Unresolved<T>): (T | Copyab
     return versions;
 }
 
+export type Unresolved<T extends Base> = T | Copyable<T> | Versioned<T> | CopyableVersioned<T>;
 export function resolveToBase<T extends Base>(base: Unresolved<T>, entries: Unresolved<T>[]): T[] {
     const additional: T[] = [];
-    base = handleCopy(base, entries);
-    if ('_versions' in base) {
-        additional.push(...(handleVersions(base) as T[]));
-        delete (base as any)._versions;
-        base = base as unknown as T;
+    let result = structuredClone(base);
+    result = handleCopy(base as T | Copyable<T>, entries);
+    if ('_versions' in result) {
+        additional.push(...(handleVersions(result as Versioned<T>) as T[]));
+        delete (result as any)._versions;
+        result = base as unknown as T;
     }
-    return [base, ...additional];
+    return [result, ...additional];
 }
