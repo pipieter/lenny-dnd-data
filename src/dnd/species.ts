@@ -1,7 +1,7 @@
 // Note: in the 5e.tools files this is still referred to as 'race'
 import { handleCopy, resolveToBase } from '../5etools-conversion/copy';
 import { Copyable } from '../../5etools-collector/types/internal/copy';
-import { SpeciesFluff, SpeciesFluffBase } from '../../5etools-collector/types/species';
+import { SpeciesFluffBase } from '../../5etools-collector/types/species';
 import { Databank } from '../data';
 import {
     Description,
