@@ -25,6 +25,7 @@ import { SpeciesName } from './dnd/names';
 import { title } from './parser';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
+import {Species, SpeciesFluff} from '../5etools-collector/types/species';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -138,9 +139,9 @@ export abstract class Databank {
     // Names
     public readonly name: SpeciesName[] = [];
     // Species
-    public readonly race: any[] = [];
-    public readonly subrace: any[] = [];
-    public readonly raceFluff: any[] = [];
+    public readonly race: Species[] = [];
+    public readonly subrace: Species[] = [];
+    public readonly raceFluff: SpeciesFluff[] = [];
     // Vehicles
     public readonly vehicle: Vehicle[] = [];
     public readonly vehicleUpgrade: VehicleUpgrade[] = [];

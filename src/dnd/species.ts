@@ -1,5 +1,5 @@
 // Note: in the 5e.tools files this is still referred to as 'race'
-import { handleCopy, handleVersions } from '../5etools-conversion/copy';
+import { handleCopy, resolveToBase } from '../5etools-conversion/copy';
 import { Databank } from '../data';
 import {
     Description,
@@ -99,53 +99,24 @@ function getSpeciesCreatureType(creatureTypes: string[]): string | null {
 }
 
 export function getSpecies(data: Databank): ParsedSpecies[] {
-    // Get raw entries
-    const raw: any[] = [];
-    for (const entry of data.race) {
-        const copy = handleCopy(entry, data.race);
-        const versions = [];
+    return data.race.flatMap((race) => {
+        return resolveToBase(race, data.race).map((entry) => {
+            const name = entry.name;
+            const source = entry.source;
 
-        if (copy._versions) {
-            versions.push(...handleVersions(copy));
-            delete copy._versions;
-        }
-
-        raw.push(copy, ...versions);
-    }
-
-    // Parse raw entries, at this point every raw entry *should* have all the required data
-    const species: ParsedSpecies[] = [];
-
-    for (const entry of raw) {
-        let name = entry.name;
-        if (entry.raceName) {
-            name = `${entry.raceName} (${entry.name})`;
-        }
-        const source = entry.source;
-        const url = getSpeciesUrl(name, source);
-        const image = getSpeciesImage(data, name, source);
-        const sizes = getSpeciesSizes(entry.size || []);
-        const speed = getSpeciesSpeed(entry.speed);
-        const creatureType = getSpeciesCreatureType(entry.creatureTypes || []);
-        const description = parseDescriptions('', entry.entries || []);
-        const info = getSpeciesInfo(data, name, source);
-        const skillProficiencies = parseSkillProficiency(entry.skillProficiencies);
-        const reprint = parseReprint(entry);
-
-        species.push({
-            name,
-            source,
-            url,
-            image: image ?? null,
-            sizes,
-            speed,
-            creatureType,
-            description,
-            info,
-            skillProficiencies,
-            reprint,
-        });
-    }
-
-    return species;
+            return{
+                name,
+                source,
+                url: getSpeciesUrl(name, source),
+                image: getSpeciesImage(data, name, source) ?? null,
+                sizes: getSpeciesSizes(entry.size || []),
+                speed: getSpeciesSpeed(entry.speed),
+                creatureType: getSpeciesCreatureType(entry.creatureTypes || []),
+                description: parseDescriptions('', entry.entries || []),
+                info: getSpeciesInfo(data, name, source),
+                skillProficiencies: parseSkillProficiency(entry.skillProficiencies),
+                reprint: parseReprint(entry),
+            };
+        })
+    })
 }
