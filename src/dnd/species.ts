@@ -1,5 +1,7 @@
 // Note: in the 5e.tools files this is still referred to as 'race'
 import { handleCopy, resolveToBase } from '../5etools-conversion/copy';
+import { Copyable } from '../../5etools-collector/types/internal/copy';
+import { SpeciesFluff, SpeciesFluffBase } from '../../5etools-collector/types/species';
 import { Databank } from '../data';
 import {
     Description,
@@ -9,10 +11,11 @@ import {
     parseDescriptions,
     parseImageUrl,
     parseReprint,
+    parseSizes,
     parseSkillProficiency,
 } from '../parser';
 import { getSpeciesUrl } from '../urls';
-import { joinStringsWithOr } from '../util';
+import { findFluff, joinStringsWithOr } from '../util';
 import { Variables } from '../variables';
 
 export interface ParsedSpecies {
@@ -20,53 +23,13 @@ export interface ParsedSpecies {
     source: string;
     url: string;
     image: string | null;
-    sizes: string[];
+    sizes: string;
     speed: string[];
     creatureType: string | null;
     description: Description[];
     info: Description[];
     skillProficiencies: null | ProficiencyOptions;
     reprint: ReprintData | null;
-}
-
-function getSpeciesFluff(data: any, name: string, source: string): any | null {
-    let found: any | null = null;
-    for (const fluff of data.raceFluff) {
-        if (fluff.name === name && fluff.source === source) {
-            found = fluff;
-            break;
-        }
-    }
-
-    if (!found) return null;
-    return handleCopy(found, data.raceFluff);
-}
-
-function getSpeciesImage(data: any, name: string, source: string): string | null {
-    const fluff = getSpeciesFluff(data, name, source);
-    if (fluff?.images) {
-        return parseImageUrl(fluff.images);
-    }
-    return null;
-}
-
-function getSpeciesInfo(data: any, name: string, source: string): Description[] {
-    const fluff = getSpeciesFluff(data, name, source);
-    if (fluff?.entries) {
-        return parseDescriptions('', fluff.entries);
-    }
-    return [];
-}
-
-function getSpeciesSizes(sizes: string[]) {
-    const results: string[] = [];
-    for (const size of sizes) {
-        const name = Variables.getSizeName(size);
-        if (name) {
-            results.push(name);
-        }
-    }
-    return results;
 }
 
 function getSpeciesSpeed(speed: any): string[] {
@@ -94,29 +57,27 @@ function getSpeciesSpeed(speed: any): string[] {
     return speeds;
 }
 
-function getSpeciesCreatureType(creatureTypes: string[]): string | null {
-    return joinStringsWithOr(creatureTypes, true) || null;
-}
-
 export function getSpecies(data: Databank): ParsedSpecies[] {
     return data.race.flatMap((race) => {
         return resolveToBase(race, data.race).map((entry) => {
             const name = entry.name;
             const source = entry.source;
+            let fluff = findFluff(entry, data.raceFluff) as SpeciesFluffBase | Copyable<SpeciesFluffBase> | undefined;
+            if (fluff) fluff = handleCopy(fluff, data.raceFluff);
 
-            return{
+            return {
                 name,
                 source,
                 url: getSpeciesUrl(name, source),
-                image: getSpeciesImage(data, name, source) ?? null,
-                sizes: getSpeciesSizes(entry.size || []),
+                image: parseImageUrl(fluff?.images ?? []) ?? null,
+                sizes: parseSizes(entry.size ?? []),
                 speed: getSpeciesSpeed(entry.speed),
-                creatureType: getSpeciesCreatureType(entry.creatureTypes || []),
+                creatureType: entry.creatureTypes ? joinStringsWithOr(entry.creatureTypes, true) : null,
                 description: parseDescriptions('', entry.entries || []),
-                info: getSpeciesInfo(data, name, source),
+                info: parseDescriptions('', fluff?.entries ?? []),
                 skillProficiencies: parseSkillProficiency(entry.skillProficiencies),
                 reprint: parseReprint(entry),
             };
-        })
-    })
+        });
+    });
 }

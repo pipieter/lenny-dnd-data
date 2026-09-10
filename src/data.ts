@@ -16,6 +16,7 @@ import { OptionalFeatures } from '../5etools-collector/types/optionalfeatures';
 import { Rule } from '../5etools-collector/types/rule';
 import { Skill } from '../5etools-collector/types/skill';
 import { Source } from '../5etools-collector/types/source';
+import { Species, SpeciesFluff } from '../5etools-collector/types/species';
 import { Spell, SpellSource } from '../5etools-collector/types/spell';
 import { Status } from '../5etools-collector/types/status';
 import { TableGroup, TableTable } from '../5etools-collector/types/table';
@@ -25,7 +26,6 @@ import { SpeciesName } from './dnd/names';
 import { title } from './parser';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
-import {Species, SpeciesFluff} from '../5etools-collector/types/species';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
