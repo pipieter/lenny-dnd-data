@@ -11,6 +11,7 @@ import { Fluff } from '../5etools-collector/types/fluff';
 import { Hazard } from '../5etools-collector/types/hazard';
 import { Language } from '../5etools-collector/types/language';
 import { Monster } from '../5etools-collector/types/monster';
+import { Item, ItemEntry, ItemGroup, ItemMastery, ItemProperty, ItemType, ItemTypeAdditionalEntries, MagicVariant } from '../5etools-collector/types/item';
 import { DNDObject } from '../5etools-collector/types/object';
 import { OptionalFeatures } from '../5etools-collector/types/optionalfeatures';
 import { Rule } from '../5etools-collector/types/rule';
@@ -80,16 +81,16 @@ export abstract class Databank {
     public readonly spellFluff: Fluff[] = [];
     public readonly spellSource: SpellSource[] = [];
     // Items
-    public readonly item: any[] = [];
-    public readonly baseitem: any[] = [];
-    public readonly itemGroup: any[] = [];
-    public readonly itemProperty: any[] = [];
-    public readonly itemType: any[] = [];
-    public readonly itemTypeAdditionalEntries: any[] = [];
-    public readonly itemEntry: any[] = [];
-    public readonly itemMastery: any[] = [];
-    public readonly magicvariant: any[] = [];
-    public readonly itemFluff: any[] = [];
+    public readonly item: Item[] = [];
+    public readonly baseitem: Item[] = [];
+    public readonly itemGroup: ItemGroup[] = [];
+    public readonly itemProperty: ItemProperty[] = [];
+    public readonly itemType: ItemType[] = [];
+    public readonly itemTypeAdditionalEntries: ItemTypeAdditionalEntries[] = [];
+    public readonly itemEntry: ItemEntry[] = [];
+    public readonly itemMastery: ItemMastery[] = [];
+    public readonly magicvariant: MagicVariant[] = [];
+    public readonly itemFluff: Fluff[] = [];
     // Conditions
     public readonly condition: Condition[] = [];
     public readonly status: Status[] = [];

@@ -1,5 +1,8 @@
 import { handleCopy } from '../5etools-conversion/copy';
 import { applySingleTemplate, applyTemplating } from '../5etools-conversion/template';
+import { Fluff } from '../../5etools-collector/types/fluff';
+import { Base } from '../../5etools-collector/types/internal/base';
+import { ItemBase, ItemMastery, ItemProperty, ItemType, MagicVariant } from '../../5etools-collector/types/item';
 import { cleanDNDText } from '../clean';
 import { Databank, getKey } from '../data';
 import {
@@ -12,8 +15,8 @@ import {
     parseItemWeight,
     parseReprint,
 } from '../parser';
-import { getItemsUrl } from '../urls';
-import { entrySort, joinStringsWithOr } from '../util';
+import { getFluffImageUrl, getItemsUrl } from '../urls';
+import { joinStringsWithOr } from '../util';
 import { Variables } from '../variables';
 
 export interface ParsedItem {
@@ -29,47 +32,38 @@ export interface ParsedItem {
     reprint: ReprintData | null;
 }
 
-function mapItemMasteries(data: any): Map<string, any> {
-    const masteries = new Map<string, any>();
+// Utility class to quickly look up item data
+class ItemData {
+    public readonly masteries = new Map<string, ItemMastery>();
+    public readonly types = new Map<string, ItemType>();
+    public readonly properties = new Map<string, ItemProperty>();
 
-    const itemMasteries = data.itemMastery ?? data.mastery ?? [];
-    for (const mastery of itemMasteries) {
-        const key = `${mastery.name}|${mastery.source}`;
-        masteries.set(key, mastery);
+    constructor(data: Databank) {
+        for (const mastery of data.itemMastery) {
+            const key = `${mastery.name}|${mastery.source}`;
+            this.masteries.set(key, mastery);
+        }
+
+        for (const type of data.itemType) {
+            const key = type.abbreviation ?? `${type.name}|${type.source}`;
+            this.types.set(key, type);
+        }
+
+        for (const property of data.itemProperty) {
+            const key = property.abbreviation ?? `${property.name}|${property.source}`;
+            this.properties.set(key, property);
+        }
     }
-
-    return masteries;
 }
 
-function mapItemTypes(data: any): Map<string, any> {
-    const types = new Map<string, any>();
-
-    for (const type of data.itemType || []) {
-        types.set(type.abbreviation, type);
-    }
-
-    return types;
-}
-
-function mapItemProperties(data: any): Map<string, any> {
-    const properties = new Map<string, any>();
-
-    const itemProperties = data.itemProperty ?? data.property ?? [];
-    for (const property of itemProperties) {
-        properties.set(property.abbreviation, property);
-    }
-
-    return properties;
-}
-
-function applyItemPropertyTemplate(item: any, property: any, template: string | undefined): string {
+function applyItemPropertyTemplate(item: ItemBase, property: any, template: string | undefined): string {
     if (!template) return cleanDNDText(property.entries[0]);
 
     template = template.replaceAll('{{prop_name}}', property.name);
     template = template.replaceAll('{{prop_name_lower}}', property.name.toLowerCase());
 
     for (const key of Object.keys(item)) {
-        let replacement = item[key];
+        let replacement = item[key as keyof ItemBase];
         if (typeof replacement === 'object') continue;
         if (typeof replacement === 'string') {
             replacement = replacement.split('|')[0]; // Sometimes specifics like sources will be shown, such as 'crossbow bolt|phb'
@@ -144,7 +138,7 @@ function matchesRequirements(obj: any, requirements: any | any[]): boolean {
     return true;
 }
 
-function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
+function resolveMagicVariant(variant: MagicVariant, baseItems: readonly ItemBase[]): any[] {
     variant = structuredClone(variant);
     // Find matches
     const items = [];
@@ -157,17 +151,17 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
     const results = [];
     for (const item of items) {
         const result = Object.assign({}, item, variant.inherits);
-        result.name = (variant.inherits.namePrefix || '') + item.name + (variant.inherits.nameSuffix || '');
+        result.name = (variant.inherits?.namePrefix || '') + item.name + (variant.inherits?.nameSuffix || '');
 
         // Overwrite or combine entries
         if (variant.entries) {
             result.entries = variant.entries;
         } else {
-            result.entries = [...(variant.inherits.entries || []), ...(item.entries || [])];
+            result.entries = [...(variant.inherits?.entries ?? []), ...(item.entries || [])];
         }
 
         // Remove value
-        if (!variant.inherits.value) {
+        if (!variant.inherits?.value) {
             result.value = undefined;
         }
 
@@ -177,77 +171,49 @@ function resolveMagicVariant(variant: any, baseItems: readonly any[]): any[] {
     return results;
 }
 
-function parseItem(item: any, data: any): ParsedItem {
-    const itemFluff = [...data.itemFluff];
-    const fluff = getItemFluff(itemFluff, item.name, item.source);
-
-    // TODO optimize these mappings beforehand
-    const types = mapItemTypes(data);
-    const masteries = mapItemMasteries(data);
-    const properties = mapItemProperties(data);
-
-    const url = getItemsUrl(item.name, item.source);
-    const result: ParsedItem = {
-        name: '',
-        source: '',
-        url: '',
-        image: null,
-        value: null,
-        weight: null,
-        type: [],
-        description: [],
-        properties: [],
-        reprint: parseReprint(item),
-    };
-
-    result.name = cleanDNDText(item.name);
-    result.source = item.source;
-    result.url = url;
-    result.image = parseImageUrl(fluff.images || []);
-    result.value = parseItemValue(item.value);
-    if (item.weightNote) {
-        result.weight = `${parseItemWeight(item.weight)} (${item.weightNote})`;
-    } else {
-        result.weight = parseItemWeight(item.weight);
-    }
-
+function parseItemTypes(item: ItemBase, data: ItemData): [string[], Description[]] {
     // Item type information, see render.js:11480 (getHtmlAndTextTypes)
-    result.type = [];
+    const types: string[] = [];
+    const descriptions: Description[] = [];
 
-    if (item.wondrous) result.type.push(item.tattoo ? 'wondrous item (tattoo)' : 'wondrous item');
-    if (item.staff) result.type.push('staff');
-    if (item.ammo) result.type.push('ammunition');
-    if (item.age) result.type.push(item.age);
+    if (item.wondrous) types.push(item.tattoo ? 'wondrous item (tattoo)' : 'wondrous item');
+    if (item.staff) types.push('staff');
+    if (item.ammo) types.push('ammunition');
+    if (item.age) types.push(item.age);
 
     if (item.weaponCategory) {
         if (item.baseItem) {
             const baseItem = item.baseItem.split('|')[0];
-            result.type.push(`weapon (${baseItem})`);
+            types.push(`weapon (${baseItem})`);
         }
-        result.type.push(`${item.weaponCategory} weapon`);
+        types.push(`${item.weaponCategory} weapon`);
     }
 
     if (item.type) {
-        const type = types.get(item.type.split('|')[0]);
-        result.type.push(type.name.toLowerCase());
+        const type = data.types.get(item.type.split('|')[0]);
+        if (type?.name) {
+            types.push(type.name.toLowerCase());
+        }
     }
 
     if (item.typeAlt) {
-        const type = types.get(item.typeAlt.split('|')[0]);
-        result.type.push(type.name.toLowerCase());
+        const type = data.types.get(item.typeAlt.split('|')[0]);
+        if (type?.name) {
+            types.push(type.name.toLowerCase());
+        }
     }
 
     if (item.firearm) {
-        result.type.push('firearm');
+        types.push('firearm');
     }
 
     if (item.poison) {
         const poisonTypes = item.poisonTypes || [];
         const poisonTypesText = joinStringsWithOr(poisonTypes, false);
         if (poisonTypesText) {
-            result.type.push(`poison (${poisonTypesText})`);
+            types.push(`poison (${poisonTypesText})`);
         } else {
-            result.type.push('poison');
+            types.push('poison');
         }
     }
 
@@ -262,40 +228,22 @@ function parseItem(item: any, data: any): ParsedItem {
         if (item.rarity === 'none' || item.rarity.startsWith('unknown')) {
             // ...
         } else {
-            result.type.push(`${item.rarity}${attune}`);
+            types.push(`${item.rarity}${attune}`);
         }
     }
 
     // Item, item type, and property descriptions
-    result.description = parseDescriptions('', item.entries || []);
-    result.properties = [];
+    descriptions.push(...parseDescriptions('', item.entries || []));
 
     if (item.type) {
-        const type = types.get(item.type.split('|')[0]) || [];
-        result.description.push(...parseDescriptions('', type.entries || []));
-    }
-
-    // Item damage, if applicable
-    if (item.dmg1) {
-        if (item.dmgType) {
-            const damage = `**${item.dmg1}** ${Variables.getDamageName(item.dmgType)}`;
-            result.properties.push(damage);
-        } else {
-            const damage = `**${item.dmg1}**`;
-            result.properties.push(damage);
+        const type = data.types.get(item.type.split('|')[0]);
+        if (type?.entries) {
+            descriptions.push(...parseDescriptions('', type.entries));
         }
     }
 
-    // Armor properties, if applicable
-    if (item.ac && item.type) {
-        if (item.type.includes('LA')) result.properties.push(`AC ${item.ac} + Dex`);
-        else if (item.type.includes('MA')) result.properties.push(`AC ${item.ac} + Dex (max 2)`);
-        else if (item.type.includes('S')) result.properties.push(`+${item.ac} AC`);
-        else result.properties.push(`AC ${item.ac}`);
-    }
-
     if (item.stealth) {
-        result.description.push({
+        descriptions.push({
             name: 'Stealth Disadvantage',
             type: DescriptionType.text,
             value: 'The wearer has **Disadvantage** on Dexterity (Stealth) checks.',
@@ -303,49 +251,80 @@ function parseItem(item: any, data: any): ParsedItem {
     }
 
     if (item.strength && item.armor) {
-        result.description.push({
+        descriptions.push({
             name: 'Strength Requirement',
             type: DescriptionType.text,
             value: `If the wearer has a Strength score lower than ${item.strength}, their speed is reduced by 10 feet.`,
         });
     }
 
+    return [types, descriptions];
+}
+
+function parseItemProperties(item: ItemBase, data: ItemData): [string[], Description[]] {
+    const properties: string[] = [];
+    const descriptions: Description[] = [];
+
+    // Item damage, if applicable
+    if (item.dmg1) {
+        if (item.dmgType) {
+            const damage = `**${item.dmg1}** ${Variables.getDamageName(item.dmgType)}`;
+            properties.push(damage);
+        } else {
+            const damage = `**${item.dmg1}**`;
+            properties.push(damage);
+        }
+    }
+
+    // Armor properties, if applicable
+    if (item.ac && item.type) {
+        if (item.type.includes('LA')) properties.push(`AC ${item.ac} + Dex`);
+        else if (item.type.includes('MA')) properties.push(`AC ${item.ac} + Dex (max 2)`);
+        else if (item.type.includes('S')) properties.push(`+${item.ac} AC`);
+        else properties.push(`AC ${item.ac}`);
+    }
+
     // Item properties
     for (let p of item.property || []) {
-        let note = null;
         if (typeof p === 'object') {
-            note = p.note;
             p = p.uid;
         }
 
-        let property = properties.get(p);
+        let property = data.properties.get(p);
         if (!property) {
             p = p.split('|')[0];
-            property = properties.get(p);
+            property = data.properties.get(p)!;
         }
 
         if (property.name === 'special') {
-            result.properties.push('special');
+            properties.push('special');
         } else {
             const entries = property.entries || property.entriesTemplate || [];
             if (entries.length === 0) continue;
             if (entries.length > 1) {
                 // Mainly used by partnered source HelianasGuidetoMonsterHunting's "Socketable" property.
-                result.description.push(...parseDescriptions('', entries));
+                descriptions.push(...parseDescriptions('', entries));
                 continue;
             }
 
-            const entry = entries[0];
+            const entry = entries[0] as any; // TODO
             const template = applyItemPropertyTemplate(item, entry, property.template).toLowerCase();
-            result.properties.push(template);
+            properties.push(template);
 
             // Apply template to entries of entry (required for Extended Reach)
             for (let i = 0; i < entry.entries.length; i++) {
                 entry.entries[i] = applyItemPropertyTemplate(item, entry, entry.entries[i]);
             }
-            result.description.push(...parseDescriptions(entry.name, entry.entries));
+            descriptions.push(...parseDescriptions(entry.name, entry.entries));
         }
     }
+
+    return [properties, descriptions];
+}
+
+function parseItemMasteries(item: ItemBase, data: ItemData): [string[], Description[]] {
+    const masteries: string[] = [];
+    const descriptions: Description[] = [];
 
     // Item masteries
     for (let masteryKey of item.mastery || []) {
@@ -361,36 +340,73 @@ function parseItem(item: any, data: any): ParsedItem {
                 masteryKey = `${parts[0]}|${parts[1]}`;
             }
         }
-        const mastery = masteries.get(masteryKey);
+        const mastery = data.masteries.get(masteryKey)!;
         const propertyName = `mastery: ${mastery.name}${note}`.toLowerCase();
         const propertyDesc = parseDescriptions(mastery.name, mastery.entries);
-        result.properties.push(propertyName);
-        result.description.push(...propertyDesc);
+        masteries.push(propertyName);
+        descriptions.push(...propertyDesc);
     }
 
-    return result;
+    return [masteries, descriptions];
+}
+
+function parseItem(item: ItemBase, fluffs: Fluff[], data: ItemData): ParsedItem {
+    const fluff = getItemFluff(fluffs, item.name, item.source);
+
+    const name = cleanDNDText(item.name);
+    const source = item.source;
+    const url = getItemsUrl(item.name, item.source);
+    const image = getFluffImageUrl(fluff);
+    const value = parseItemValue(item.value);
+    let weight = parseItemWeight(item.weight);
+    if (item.weightNote) {
+        weight = `${weight} ${item.weightNote}`;
+    }
+    const reprint = parseReprint(item);
+    const description: Description[] = [];
+
+    const [type, typeDescriptions] = parseItemTypes(item, data);
+    const [properties, propertyDescriptions] = parseItemProperties(item, data);
+    const [masteries, masteryDescriptions] = parseItemMasteries(item, data);
+
+    properties.push(...masteries);
+    description.push(...typeDescriptions, ...propertyDescriptions, ...masteryDescriptions);
+
+    return {
+        name,
+        source,
+        url,
+        image,
+        value,
+        weight,
+        type,
+        description,
+        properties,
+        reprint,
+    };
 }
 
 export function getItems(databank: Databank): ParsedItem[] {
     // Resolve raw item data
     const items = [...databank.item, ...databank.baseitem];
+    const data = new ItemData(databank);
 
     const raw: any[] = [];
     for (const item of items) {
         raw.push(resolveItemEntry(handleCopy(item, items), databank.itemEntry));
     }
 
-    const data = raw.map((item) => parseItem(item, databank));
-    return data.sort(entrySort);
+    return raw.map((item) => parseItem(item, databank.itemFluff, data));
 }
 
 export function getItemVariants(databank: Databank): ParsedItem[] {
+    const data = new ItemData(databank);
     const items = [...databank.item, ...databank.baseitem];
 
-    let variants = databank.magicvariant;
+    let variants: any[] = databank.magicvariant;
     const variantCopies = [...variants, ...items];
-    variants = variants.flatMap((v) => handleCopy(v, variantCopies));
-    variants = variants.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem));
+    variants = variants.flatMap((v) => handleCopy(v as Base, variantCopies));
+    variants = variants.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem as any[]));
     const seenVariants = new Set();
     const raw: any[] = [];
     for (const variant of variants) {
@@ -399,6 +415,5 @@ export function getItemVariants(databank: Databank): ParsedItem[] {
         raw.push(resolveItemEntry(handleCopy(variant, items), databank.itemEntry));
         seenVariants.add(key);
     }
-    const data = raw.map((variant) => parseItem(variant, databank));
-    return data.sort(entrySort);
+    return raw.map((variant) => parseItem(variant, databank.itemFluff, data));
 }
