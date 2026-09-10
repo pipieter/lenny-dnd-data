@@ -39,7 +39,7 @@ export function getOptionalFeatures(data: Databank): ParsedOptionalFeature[] {
             name: optFeat.name,
             source: optFeat.source,
             url: getOptionalFeaturesUrl(optFeat.name, optFeat.source),
-            prerequisite: parsePrerequisite(optFeat.prerequisite),
+            prerequisite: parsePrerequisite(optFeat.prerequisite, optFeat, data),
             type: getOptionalFeatureTypes(optFeat.featureType, optFeat.source, data),
             description: parseDescriptions('', optFeat.entries),
             reprint: parseReprint(optFeat),

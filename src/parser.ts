@@ -1,5 +1,12 @@
 import { ClassResourceValue } from '../5etools-collector/types/class';
-import { ClassProficiency, Prerequisite, Resist, Unit } from '../5etools-collector/types/internal/base';
+import {
+    AbilityNumber,
+    Base,
+    ClassProficiency,
+    Prerequisite,
+    Resist,
+    Unit,
+} from '../5etools-collector/types/internal/base';
 import { Variadic } from '../5etools-collector/types/internal/util';
 import { cleanDNDText } from './clean';
 import { Databank } from './data';
@@ -989,23 +996,22 @@ export function parseItemWeight(weight: number | undefined): string | null {
     return `${weight} lb.`;
 }
 
-export function parsePrerequisite(prerequisites: Prerequisite[] | undefined): string | null {
-    if (!prerequisites) return null;
-
-    const parsed: string[] = [];
+export function parsePrerequisite(
+    prerequisites: Prerequisite[] | undefined,
+    base: Base,
+    data: Databank
+): string | null {
+    if (!prerequisites || prerequisites.length === 0) return null;
+    const parsedGroups: string[][] = [];
 
     for (let prerequisite of prerequisites) {
         prerequisite = structuredClone(prerequisite);
-
-        if (prerequisite.campaign) {
-            parsed.push(`${joinStringsWithOr(prerequisite.campaign)} campaign`);
-            delete prerequisite.campaign;
-        }
+        const parsed: string[] = [];
 
         if (prerequisite.level) {
             let level: string;
             if (typeof prerequisite.level === 'number') {
-                level = `Lv. ${prerequisite.level}`;
+                level = `Lv. ${prerequisite.level}+`;
             } else if (prerequisite.level.subclass) {
                 level = `Lv. ${prerequisite.level.level} ${prerequisite.level.subclass.name} (${prerequisite.level.class.name})`;
             } else {
@@ -1015,40 +1021,112 @@ export function parsePrerequisite(prerequisites: Prerequisite[] | undefined): st
             delete prerequisite.level;
         }
 
-        if (prerequisite.race) {
-            const races = prerequisite.race.map((race) => {
-                if (race.subrace) {
-                    return `${race.subrace} (${race.name})`;
-                } else {
-                    return race.name;
-                }
+        if (prerequisite.ability) {
+            const abilityKeys = Object.keys(prerequisite.ability[0]);
+            const abilityGroup: string[] = [];
+            for (const abilityKey of abilityKeys) {
+                const score = parseAbilityScore(abilityKey);
+                const amount = prerequisite.ability[0][abilityKey as keyof AbilityNumber];
+                abilityGroup.push(`${amount} ${score}`);
+            }
+            parsed.push(...abilityGroup);
+            delete prerequisite.ability;
+        }
+
+        if (prerequisite.background) {
+            const backgrounds = prerequisite.background.map((bg) => cleanDNDText(bg.displayEntry ?? bg.name, true));
+            parsed.push(joinStringsWithOr(backgrounds));
+            delete prerequisite.background;
+        }
+
+        if (prerequisite.campaign) {
+            parsed.push(`${joinStringsWithOr(prerequisite.campaign)} Campaign`);
+            delete prerequisite.campaign;
+        }
+
+        if (prerequisite.culture) {
+            parsed.push(`${joinStringsWithOr(prerequisite.culture)} Culture`);
+            delete prerequisite.culture;
+        }
+
+        if (prerequisite.exclusiveFeatCategory) {
+            const featCategories = prerequisite.exclusiveFeatCategory.map((e) =>
+                parseFeatCategory(e, base.source, data)
+            );
+            parsed.push(`Can't Have Another ${joinStringsWithOr(featCategories, true)} Feat`);
+            delete prerequisite.exclusiveFeatCategory;
+        }
+
+        if (prerequisite.feat) {
+            const feats = prerequisite.feat.map((feat) => {
+                const parts = feat.split('|').map(title);
+                if (parts.length <= 2) return parts[0];
+                return parts[parts.length - 1];
             });
-            parsed.push(joinStringsWithOr(races));
+            parsed.push(...feats);
+            delete prerequisite.feat;
+        }
+
+        if (prerequisite.featCategory) {
+            const featCategories = prerequisite.featCategory.map((e) => parseFeatCategory(e, base.source, data));
+            parsed.push(`Any ${joinStringsWithOr(featCategories, true)} Feat`);
+            delete prerequisite.featCategory;
+        }
+
+        if (prerequisite.feature) {
+            parsed.push(...prerequisite.feature);
+            delete prerequisite.feature;
+        }
+
+        if (prerequisite.race) {
+            const races = prerequisite.race.map((r) => {
+                if (r.subrace) return `${r.subrace} ${r.name}`;
+                return r.displayEntry ?? r.name;
+            });
+            parsed.push(joinStringsWithOr(races, true));
             delete prerequisite.race;
         }
 
         if (prerequisite.spell) {
             const spells = prerequisite.spell.map((spell) => {
-                // string, ends with #c or #x (cantrip or spell)
                 if (typeof spell === 'string') {
                     const parts = spell.split('#');
                     const addon = parts[1].endsWith('c') ? 'cantrip' : 'spell';
                     return `${parts[0]} ${addon}`;
                 }
 
-                // in an object, we only care about the entrySummary
                 if (spell.entrySummary) {
                     return spell.entrySummary;
                 }
                 throw `Unsupported spell prerequisite: ${spell}`;
             });
 
-            parsed.push(joinStringsWithOr(spells, false));
+            parsed.push(...spells);
             delete prerequisite.spell;
         }
 
+        if (prerequisite.spellcasting2020) {
+            parsed.push('Spellcasting or Pact Magic Feature');
+            delete prerequisite.spellcasting2020;
+        }
+
+        if (prerequisite.spellcasting) {
+            parsed.push('The ability to cast at least one spell');
+            delete prerequisite.spellcasting;
+        }
+
+        if (prerequisite.spellcastingFeature) {
+            parsed.push('Spellcasting Feature');
+            delete prerequisite.spellcastingFeature;
+        }
+
+        if (prerequisite.spellcastingPrepared) {
+            parsed.push('Spellcasting feature from a class that prepares spells');
+            delete prerequisite.spellcastingPrepared;
+        }
+
         if (prerequisite.item) {
-            parsed.push(joinStringsWithOr(prerequisite.item, false));
+            parsed.push(...prerequisite.item);
             delete prerequisite.item;
         }
 
@@ -1078,18 +1156,65 @@ export function parsePrerequisite(prerequisites: Prerequisite[] | undefined): st
                 const parts = feature.split('|');
                 return title(parts[0]);
             });
-            parsed.push(joinStringsWithOr(optFeats, false));
+            parsed.push(...optFeats);
             delete prerequisite.optionalfeature;
+        }
+
+        if (prerequisite.proficiency) {
+            const proficiencies = [];
+            if ('armor' in prerequisite.proficiency) {
+                let armor = prerequisite.proficiency.armor as string;
+                if (armor !== 'shield') armor += ' Proficiency';
+                proficiencies.push(armor);
+            }
+            if ('weapon' in prerequisite.proficiency)
+                proficiencies.push(`Proficiency with a ${prerequisite.proficiency.weapon} weapon`);
+            if ('weaponGroup' in prerequisite.proficiency)
+                proficiencies.push(`${prerequisite.proficiency.weaponGroup} Proficiency`);
+            if ('skill' in prerequisite.proficiency)
+                proficiencies.push(joinStringsWithOr(prerequisite.proficiency.skill as string[]));
+            parsed.push(...proficiencies);
+            delete prerequisite.proficiency;
         }
 
         const remaining = Object.keys(prerequisite);
         if (remaining.length) {
             throw `parsePrerequisite: Unknown keys '${remaining}'!`;
         }
+
+        parsedGroups.push(Array.from(new Set(parsed)));
     }
 
-    if (prerequisites.length === 0) return null;
-    return joinStringsWithAnd(parsed, false);
+    const groupCount = parsedGroups.length;
+    if (groupCount === 1) {
+        return joinStringsWithAnd(parsedGroups[0], false);
+    }
+
+    // Count occurrences of parsed prerequisite strings across groups
+    const entryCounts: Record<string, number> = {};
+    for (const group of parsedGroups) {
+        for (const entry of group) {
+            entryCounts[entry] = (entryCounts[entry] || 0) + 1;
+        }
+    }
+
+    const commonEntries = Object.keys(entryCounts).filter((entry) => entryCounts[entry] === groupCount);
+    const filteredGroups = parsedGroups
+        .map((group) => group.filter((entry) => !commonEntries.includes(entry)))
+        .filter((group) => group.length > 0);
+    const joinedGroups = filteredGroups.map((group) => joinStringsWithAnd(group, false));
+
+    if (commonEntries.length === 0) {
+        return joinStringsWithOr(joinedGroups, false);
+    }
+    if (joinedGroups.length === 0) {
+        return joinStringsWithAnd(commonEntries, false);
+    }
+
+    return joinStringsWithAnd(
+        [joinStringsWithAnd(commonEntries, false), joinStringsWithOr(joinedGroups, false)],
+        false
+    );
 }
 
 export interface ProficiencyOptions {

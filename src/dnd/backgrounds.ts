@@ -125,7 +125,7 @@ export function getBackgrounds(data: Databank): ParsedBackground[] {
             languages: parseLanguages(background),
             equipment: parseEquipment(background),
             description: parseBackgroundDescription(background),
-            prerequisite: parsePrerequisite(background.prerequisite),
+            prerequisite: parsePrerequisite(background.prerequisite, background, data),
             fluff: parseBackgroundFluff(fluff),
             skillProficiencies: parseSkillProficiency(background.skillProficiencies),
             reprint: parseReprint(background),
