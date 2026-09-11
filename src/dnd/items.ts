@@ -1,7 +1,7 @@
 import { handleCopy } from '../5etools-conversion/copy';
 import { applySingleTemplate, applyTemplating } from '../5etools-conversion/template';
 import { Fluff } from '../../5etools-collector/types/fluff';
-import { Base } from '../../5etools-collector/types/internal/base';
+import { Base, UIDString } from '../../5etools-collector/types/internal/base';
 import {
     ItemBase,
     ItemEntry,
@@ -61,13 +61,26 @@ class ItemData {
             this.properties.set(key, property);
         }
     }
+
+    public getProperty(id: string | UIDString): ItemProperty | undefined {
+        if (typeof id === 'object') {
+            id = id.uid;
+        }
+
+        if (!this.properties.has(id)) {
+            id = id.split('|')[0];
+        }
+
+        return this.properties.get(id);
+    }
 }
 
-function applyItemPropertyTemplate(item: ItemBase, property: any, template: string | undefined): string {
-    if (!template) return cleanDNDText(property.entries[0]);
+function applyItemPropertyTemplate(item: ItemBase, property: ItemProperty, template: string | undefined): string {
+    if (!template) return cleanDNDText(property.entries?.[0] as string);
 
-    template = template.replaceAll('{{prop_name}}', property.name);
-    template = template.replaceAll('{{prop_name_lower}}', property.name.toLowerCase());
+    const name = property.name ?? '';
+    template = template.replaceAll('{{prop_name}}', name);
+    template = template.replaceAll('{{prop_name_lower}}', name.toLowerCase());
 
     for (const key of Object.keys(item)) {
         let replacement = item[key as keyof ItemBase];
@@ -288,37 +301,30 @@ function parseItemProperties(item: ItemBase, data: ItemData): [string[], Descrip
     }
 
     // Item properties
-    for (let p of item.property || []) {
-        if (typeof p === 'object') {
-            p = p.uid;
-        }
-
-        let property = data.properties.get(p);
-        if (!property) {
-            p = p.split('|')[0];
-            property = data.properties.get(p)!;
-        }
+    for (let propertyId of item.property ?? []) {
+        const property = data.getProperty(propertyId)!;
 
         if (property.name === 'special') {
             properties.push('special');
         } else {
             const entries = property.entries || property.entriesTemplate || [];
-            if (entries.length === 0) continue;
-            if (entries.length > 1) {
+            if (entries.length === 0) {
+                continue;
+            } else if (entries.length > 1) {
                 // Mainly used by partnered source HelianasGuidetoMonsterHunting's "Socketable" property.
                 descriptions.push(...parseDescriptions('', entries));
                 continue;
-            }
+            } else {
+                const entry = entries[0] as any; // Adding typing here is hell
+                const template = applyItemPropertyTemplate(item, entry, property.template).toLowerCase();
+                properties.push(template);
 
-            const entry = entries[0] as any; // TODO
-            const template = applyItemPropertyTemplate(item, entry, property.template).toLowerCase();
-            properties.push(template);
-
-            // Apply template to entries of entry (required for Extended Reach)
-            for (let i = 0; i < entry.entries.length; i++) {
-                entry.entries[i] = applyItemPropertyTemplate(item, entry, entry.entries[i]);
+                // Apply template to entries of entry (required for Extended Reach)
+                for (let i = 0; i < entry.entries.length; i++) {
+                    entry.entries[i] = applyItemPropertyTemplate(item, entry, entry.entries[i]);
+                }
+                descriptions.push(...parseDescriptions(entry.name, entry.entries));
             }
-            descriptions.push(...parseDescriptions(entry.name, entry.entries));
         }
     }
 
