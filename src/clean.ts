@@ -417,13 +417,13 @@ function filter(text: string, _noFormat: boolean): string {
     return text;
 }
 
-function font(text: string, noFormat: boolean): string {
+function font(text: string, _noFormat: boolean): string {
     // Font is mainly used to render certain symbols, like ♡ ♥ ♠ ♦ ♣ in a special style.
     text = text.replaceAll(pattern('font', 2), `$1`);
     return text;
 }
 
-function footnote(text: string, noFormat: boolean): string {
+function footnote(text: string, _noFormat: boolean): string {
     // Footnote allows people to hover over and see extra information in 5e.tools, we can't do this in discord.
     text = text.replaceAll(pattern('footnote', 2), `$1 ($2)`);
     return text;
@@ -455,7 +455,7 @@ function hit(text: string, noFormat: boolean): string {
     return text;
 }
 
-function hitYourSpellAttack(text: string, noFormat: boolean): string {
+function hitYourSpellAttack(text: string, _noFormat: boolean): string {
     // hitYourSpellAttack is used for 5e-tools rolling functionality, we don't need to format it.
     text = text.replaceAll(pattern('hitYourSpellAttack', 1), '$1');
     text = text.replaceAll(pattern('hitYourSpellAttack', 0), 'your spell attack modifier');
