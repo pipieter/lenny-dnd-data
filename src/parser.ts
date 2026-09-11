@@ -3,11 +3,15 @@ import {
     AbilityNumber,
     Base,
     ClassProficiency,
+    Distance,
     Prerequisite,
+    Range,
     Resist,
+    SpellComponents,
     Unit,
 } from '../5etools-collector/types/internal/base';
 import { Variadic } from '../5etools-collector/types/internal/util';
+import { SpellBase } from '../5etools-collector/types/spell';
 import { cleanDNDText } from './clean';
 import { Databank } from './data';
 import { SpellDamage } from './dnd/spells';
@@ -25,7 +29,7 @@ import {
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr, variadic } from './util';
 import { Variables } from './variables';
 
-export interface Range {
+export interface TableRangeCell {
     type: 'range';
     min: number;
     max: number;
@@ -35,7 +39,7 @@ export interface Table {
     type: 'table';
     title: string;
     headers: string[] | null;
-    rows: (string | Range | null | number)[][];
+    rows: (string | TableRangeCell | null | number)[][];
 }
 
 export interface List {
@@ -273,7 +277,7 @@ export function parseDurationTime(durations: any[] | any): string {
     return joinStringsWithOr(results, false);
 }
 
-export function parseDistance(distance: any): string {
+export function parseDistance(distance: Distance): string {
     switch (distance.type) {
         case 'touch':
             return 'Touch';
@@ -285,18 +289,17 @@ export function parseDistance(distance: any): string {
             return 'Unlimited';
         case 'feet':
             return `${distance.amount} feet`;
-        case 'mile':
         case 'miles': {
             if (distance.amount == 1) return '1 mile';
             return `${distance.amount} miles`;
         }
         default: {
-            throw `Unsupported distance type: '${distance.type}'`;
+            throw `Unsupported distance type: '${JSON.stringify(distance)}'`;
         }
     }
 }
 
-export function parseRange(range: any): string {
+export function parseRange(range: Range): string {
     switch (range.type) {
         case 'point':
             return parseDistance(range.distance);
@@ -319,19 +322,20 @@ export function parseRange(range: any): string {
         case 'cylinder':
             return `Cylinder (${parseDistance(range.distance)})`;
         default: {
-            throw `Unsupported range type: '${range.type}`;
+            throw `Unsupported range type: '${JSON.stringify(range)}`;
         }
     }
 }
 
-export function parseMaterialComponents(components: any): string | null {
+export function parseMaterialComponents(components: SpellComponents): string | null {
     if (!components.m) return null;
     const material = components.m;
+    if (typeof material === 'boolean') return null;
     if (typeof material === 'string') return material;
     return material.text;
 }
 
-export function parseComponents(components: any): string {
+export function parseComponents(components: SpellComponents): string {
     const result = [];
 
     if ('v' in components) result.push('V');
@@ -345,7 +349,7 @@ export function parseComponents(components: any): string {
     return result.join(', ');
 }
 
-export function parseSpellDamage(spell: any): SpellDamage[] | null {
+export function parseSpellDamage(spell: SpellBase): SpellDamage[] | null {
     if (spell.scalingLevelDice) {
         const results: SpellDamage[] = [];
         const scalingList = Array.isArray(spell.scalingLevelDice) ? spell.scalingLevelDice : [spell.scalingLevelDice];
