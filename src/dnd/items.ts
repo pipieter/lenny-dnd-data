@@ -292,7 +292,7 @@ function parseItemProperties(item: ItemBase, data: ItemData): [string[], Descrip
     }
 
     // Item properties
-    for (let propertyId of item.property ?? []) {
+    for (const propertyId of item.property ?? []) {
         const property = data.getProperty(propertyId)!;
 
         if (property.name === 'special') {
@@ -404,7 +404,7 @@ export function getItemVariants(databank: Databank): ParsedItem[] {
     const items = [...databank.item, ...databank.baseitem];
     const fluffs = databank.itemFluff.map((fluff) => handleCopy(fluff, databank.itemFluff));
 
-    let variants = databank.magicvariant;
+    const variants = databank.magicvariant;
     const variantCopies = [...variants, ...items];
     const variantBases = variants
         .flatMap((v) => handleCopy(v as Base, variantCopies as ItemBase[]))
