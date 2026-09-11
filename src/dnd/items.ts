@@ -9,7 +9,7 @@ import {
     ItemProperty,
     ItemType,
     MagicItemRequirement,
-    MagicVariant,
+    MagicVariantBase,
 } from '../../5etools-collector/types/item';
 import { cleanDNDText } from '../clean';
 import { Databank, getKey } from '../data';
@@ -23,7 +23,7 @@ import {
     parseReprint,
 } from '../parser';
 import { getFluffImageUrl, getItemsUrl } from '../urls';
-import { findFluff, joinStringsWithOr } from '../util';
+import { findEntry, findFluff, joinStringsWithOr } from '../util';
 import { Variables } from '../variables';
 
 export interface ParsedItem {
@@ -93,16 +93,7 @@ function applyItemPropertyTemplate(item: ItemBase, property: ItemProperty, templ
     return template!;
 }
 
-function findItemEntry(entries: any[], name: string, source: string): any {
-    for (const entry of entries) {
-        if (entry.name === name && entry.source === source) {
-            return entry;
-        }
-    }
-    throw `Item entry not found ${name} (${source})`;
-}
-
-function resolveItemEntry(item: ItemBase, itemEntries: ItemEntry[]): any {
+function resolveItemEntry(item: ItemBase, itemEntries: ItemEntry[]): ItemBase {
     item = structuredClone(item);
 
     if (!item.entries) return item;
@@ -117,16 +108,16 @@ function resolveItemEntry(item: ItemBase, itemEntries: ItemEntry[]): any {
             const matches = pattern1.exec(item.entries[i] as string)!;
             const name = matches[1];
             const source = matches[2];
-            const entry = findItemEntry(itemEntries, name, source);
+            const entry = findEntry({ name, source }, itemEntries)!;
             item.entries.splice(i, 1, ...entry.entriesTemplate);
-            i += entry.entriesTemplate - 1;
+            i += entry.entriesTemplate.length - 1;
         } else if (pattern2.test(item.entries[i] as string)) {
             const matches = pattern2.exec(item.entries[i] as string)!;
             const name = matches[1];
             const source = item.source;
-            const entry = findItemEntry(itemEntries, name, source);
+            const entry = findEntry({ name, source }, itemEntries)!;
             item.entries.splice(i, 1, ...entry.entriesTemplate);
-            i += entry.entriesTemplate - 1;
+            i += entry.entriesTemplate.length - 1;
         }
     }
 
@@ -154,7 +145,7 @@ function matchesRequirements(obj: ItemBase, requirements: MagicItemRequirement |
     return true;
 }
 
-function resolveMagicVariant(variant: MagicVariant, baseItems: readonly ItemBase[]): MagicVariant[] {
+function resolveMagicVariant(variant: MagicVariantBase, baseItems: readonly ItemBase[]): ItemBase[] {
     variant = structuredClone(variant);
     // Find matches
     const items = [];
@@ -181,7 +172,7 @@ function resolveMagicVariant(variant: MagicVariant, baseItems: readonly ItemBase
             result.value = undefined;
         }
 
-        results.push(result as MagicVariant);
+        results.push(result as ItemBase);
     }
 
     return results;
@@ -413,14 +404,15 @@ export function getItemVariants(databank: Databank): ParsedItem[] {
     const items = [...databank.item, ...databank.baseitem];
     const fluffs = databank.itemFluff.map((fluff) => handleCopy(fluff, databank.itemFluff));
 
-    let variants: any[] = databank.magicvariant;
+    let variants = databank.magicvariant;
     const variantCopies = [...variants, ...items];
-    variants = variants.flatMap((v) => handleCopy(v as Base, variantCopies));
-    variants = variants.flatMap((m: any) => resolveMagicVariant(m, databank.baseitem as any[]));
+    const variantBases = variants
+        .flatMap((v) => handleCopy(v as Base, variantCopies as ItemBase[]))
+        .flatMap((m) => resolveMagicVariant(m as MagicVariantBase, databank.baseitem as ItemBase[]));
     const seenVariants = new Set();
-    const raw: any[] = [];
-    for (const variant of variants) {
-        const key = getKey(variant.name, variant.source);
+    const raw: ItemBase[] = [];
+    for (const variant of variantBases) {
+        const key = getKey(variant.name ?? 'UNKNOWN', variant.source ?? 'UNKNOWN');
         if (seenVariants.has(key)) continue;
         raw.push(resolveItemEntry(handleCopy(variant, items), databank.itemEntry));
         seenVariants.add(key);
