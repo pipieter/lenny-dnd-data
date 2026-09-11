@@ -20,6 +20,7 @@ import {
     MagicVariant,
 } from '../5etools-collector/types/item';
 import { Language } from '../5etools-collector/types/language';
+import { LifeBackground, LifeClass } from '../5etools-collector/types/life';
 import { Monster } from '../5etools-collector/types/monster';
 import { DNDObject } from '../5etools-collector/types/object';
 import { OptionalFeatures } from '../5etools-collector/types/optionalfeatures';
@@ -30,7 +31,6 @@ import { Spell, SpellSource } from '../5etools-collector/types/spell';
 import { Status } from '../5etools-collector/types/status';
 import { TableGroup, TableTable } from '../5etools-collector/types/table';
 import { Vehicle, VehicleUpgrade } from '../5etools-collector/types/vehicle';
-import { LifeBackground, LifeClass } from './dnd/life';
 import { SpeciesName } from './dnd/names';
 import { title } from './parser';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
