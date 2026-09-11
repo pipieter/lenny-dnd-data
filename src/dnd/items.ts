@@ -2,7 +2,15 @@ import { handleCopy } from '../5etools-conversion/copy';
 import { applySingleTemplate, applyTemplating } from '../5etools-conversion/template';
 import { Fluff } from '../../5etools-collector/types/fluff';
 import { Base } from '../../5etools-collector/types/internal/base';
-import { ItemBase, ItemMastery, ItemProperty, ItemType, MagicVariant } from '../../5etools-collector/types/item';
+import {
+    ItemBase,
+    ItemEntry,
+    ItemMastery,
+    ItemProperty,
+    ItemType,
+    MagicItemRequirement,
+    MagicVariant,
+} from '../../5etools-collector/types/item';
 import { cleanDNDText } from '../clean';
 import { Databank, getKey } from '../data';
 import {
@@ -81,7 +89,7 @@ function findItemEntry(entries: any[], name: string, source: string): any {
     throw `Item entry not found ${name} (${source})`;
 }
 
-function resolveItemEntry(item: any, itemEntries: any[]): any {
+function resolveItemEntry(item: ItemBase, itemEntries: ItemEntry[]): any {
     item = structuredClone(item);
 
     if (!item.entries) return item;
@@ -90,15 +98,17 @@ function resolveItemEntry(item: any, itemEntries: any[]): any {
     const pattern2 = /\{#itemEntry ([^\}]*?)\}/;
 
     for (let i = 0; i < item.entries.length; i++) {
-        if (pattern1.test(item.entries[i])) {
-            const matches = pattern1.exec(item.entries[i])!;
+        if (typeof item.entries[i] !== 'string') continue;
+
+        if (pattern1.test(item.entries[i] as string)) {
+            const matches = pattern1.exec(item.entries[i] as string)!;
             const name = matches[1];
             const source = matches[2];
             const entry = findItemEntry(itemEntries, name, source);
             item.entries.splice(i, 1, ...entry.entriesTemplate);
             i += entry.entriesTemplate - 1;
-        } else if (pattern2.test(item.entries[i])) {
-            const matches = pattern2.exec(item.entries[i])!;
+        } else if (pattern2.test(item.entries[i] as string)) {
+            const matches = pattern2.exec(item.entries[i] as string)!;
             const name = matches[1];
             const source = item.source;
             const entry = findItemEntry(itemEntries, name, source);
@@ -110,18 +120,21 @@ function resolveItemEntry(item: any, itemEntries: any[]): any {
     item = applyTemplating(item, 'item.');
 
     // Specific template, required for Dragon Scail Mail armors
-    item = applySingleTemplate(item, 'getFullImmRes item.resist', item.resist);
+    for (const resist of item.resist ?? []) {
+        if (typeof resist !== 'string') continue;
+        item = applySingleTemplate(item, 'getFullImmRes item.resist', resist);
+    }
 
     return item;
 }
 
-function matchesRequirements(obj: any, requirements: any | any[]): boolean {
+function matchesRequirements(obj: ItemBase, requirements: MagicItemRequirement | MagicItemRequirement[]): boolean {
     if (Array.isArray(requirements)) {
         return requirements.map((r) => matchesRequirements(obj, r)).some((x) => x);
     }
 
     for (const requirement of Object.keys(requirements)) {
-        if (obj[requirement] !== requirements[requirement]) {
+        if (obj[requirement as keyof ItemBase] !== requirements[requirement as keyof MagicItemRequirement]) {
             return false;
         }
     }
