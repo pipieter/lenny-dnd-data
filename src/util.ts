@@ -16,8 +16,17 @@ export function entrySort(a: any, b: any): number {
     });
 }
 
-export function findFluff(entry: Base, fluff: Fluff[]) {
-    return fluff.find((item) => item.name === entry.name && item.source === entry.source);
+interface FindEntry {
+    name?: string | undefined | null;
+    source?: string | undefined | null;
+}
+
+export function findEntry<S extends FindEntry, T extends FindEntry>(entry: S, entries: T[]): T | undefined {
+    return entries.find((e) => e.name === entry.name && e.source === entry.source);
+}
+
+export function findFluff(entry: Base, fluffs: Fluff[]) {
+    return findEntry(entry, fluffs);
 }
 
 export function getNumberSign(value: number, zeroReturnsPlus: boolean = false): string {
