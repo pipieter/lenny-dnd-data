@@ -10,13 +10,12 @@ import {
     DescriptionType,
     ReprintData,
     parseDescriptions,
-    parseImageUrl,
     parseItemValue,
     parseItemWeight,
     parseReprint,
 } from '../parser';
 import { getFluffImageUrl, getItemsUrl } from '../urls';
-import { joinStringsWithOr } from '../util';
+import { findFluff, joinStringsWithOr } from '../util';
 import { Variables } from '../variables';
 
 export interface ParsedItem {
@@ -71,15 +70,6 @@ function applyItemPropertyTemplate(item: ItemBase, property: any, template: stri
         template = applySingleTemplate(template, `item.${key}`, replacement); // TODO applySingleTemplate accepts string | undefined for the template, if typing is added for items.ts this can be adjusted.
     }
     return template!;
-}
-
-function getItemFluff(fluffs: any[], name: string, source: string): any {
-    for (const fluff of fluffs || []) {
-        if (fluff.name === name && fluff.source === source) {
-            return handleCopy(fluff, fluffs);
-        }
-    }
-    return {};
 }
 
 function findItemEntry(entries: any[], name: string, source: string): any {
@@ -138,7 +128,7 @@ function matchesRequirements(obj: any, requirements: any | any[]): boolean {
     return true;
 }
 
-function resolveMagicVariant(variant: MagicVariant, baseItems: readonly ItemBase[]): any[] {
+function resolveMagicVariant(variant: MagicVariant, baseItems: readonly ItemBase[]): MagicVariant[] {
     variant = structuredClone(variant);
     // Find matches
     const items = [];
@@ -165,7 +155,7 @@ function resolveMagicVariant(variant: MagicVariant, baseItems: readonly ItemBase
             result.value = undefined;
         }
 
-        results.push(result);
+        results.push(result as MagicVariant);
     }
 
     return results;
@@ -351,7 +341,7 @@ function parseItemMasteries(item: ItemBase, data: ItemData): [string[], Descript
 }
 
 function parseItem(item: ItemBase, fluffs: Fluff[], data: ItemData): ParsedItem {
-    const fluff = getItemFluff(fluffs, item.name, item.source);
+    const fluff = findFluff(item, fluffs);
 
     const name = cleanDNDText(item.name);
     const source = item.source;
@@ -390,18 +380,19 @@ export function getItems(databank: Databank): ParsedItem[] {
     // Resolve raw item data
     const items = [...databank.item, ...databank.baseitem];
     const data = new ItemData(databank);
+    const fluffs = databank.itemFluff.map((fluff) => handleCopy(fluff, databank.itemFluff));
 
-    const raw: any[] = [];
-    for (const item of items) {
-        raw.push(resolveItemEntry(handleCopy(item, items), databank.itemEntry));
-    }
-
-    return raw.map((item) => parseItem(item, databank.itemFluff, data));
+    return items.map((item) => {
+        const resolved = (item = resolveItemEntry(handleCopy(item, items), databank.itemEntry));
+        const parsed = parseItem(resolved, fluffs, data);
+        return parsed;
+    });
 }
 
 export function getItemVariants(databank: Databank): ParsedItem[] {
     const data = new ItemData(databank);
     const items = [...databank.item, ...databank.baseitem];
+    const fluffs = databank.itemFluff.map((fluff) => handleCopy(fluff, databank.itemFluff));
 
     let variants: any[] = databank.magicvariant;
     const variantCopies = [...variants, ...items];
@@ -415,5 +406,5 @@ export function getItemVariants(databank: Databank): ParsedItem[] {
         raw.push(resolveItemEntry(handleCopy(variant, items), databank.itemEntry));
         seenVariants.add(key);
     }
-    return raw.map((variant) => parseItem(variant, databank.itemFluff, data));
+    return raw.map((variant) => parseItem(variant, fluffs, data));
 }

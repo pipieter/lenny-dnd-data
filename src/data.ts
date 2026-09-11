@@ -9,9 +9,18 @@ import { Disease } from '../5etools-collector/types/disease';
 import { Feat } from '../5etools-collector/types/feat';
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Hazard } from '../5etools-collector/types/hazard';
+import {
+    Item,
+    ItemEntry,
+    ItemGroup,
+    ItemMastery,
+    ItemProperty,
+    ItemType,
+    ItemTypeAdditionalEntries,
+    MagicVariant,
+} from '../5etools-collector/types/item';
 import { Language } from '../5etools-collector/types/language';
 import { Monster } from '../5etools-collector/types/monster';
-import { Item, ItemEntry, ItemGroup, ItemMastery, ItemProperty, ItemType, ItemTypeAdditionalEntries, MagicVariant } from '../5etools-collector/types/item';
 import { DNDObject } from '../5etools-collector/types/object';
 import { OptionalFeatures } from '../5etools-collector/types/optionalfeatures';
 import { Rule } from '../5etools-collector/types/rule';
