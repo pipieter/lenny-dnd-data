@@ -312,9 +312,7 @@ function parseItem(item: any, data: any): ParsedItem {
 
     // Item properties
     for (let p of item.property || []) {
-        let note = null;
         if (typeof p === 'object') {
-            note = p.note;
             p = p.uid;
         }
 
