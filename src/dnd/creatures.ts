@@ -19,6 +19,7 @@ import {
     parseDescriptions,
     parseReprint,
     parseSizes,
+    parseSpeed,
 } from '../parser';
 import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
 import {
@@ -119,7 +120,7 @@ function parseHP(creature: MonsterBase): string {
     throw `Unsupported creature-HP in ${creature.name}: ${JSON.stringify(hp)}`;
 }
 
-function parseSpeed(creature: MonsterBase): string {
+function parseCreatureSpeed(creature: MonsterBase): string {
     const iterateSpeed = (speedBlock: Speed | undefined) => {
         const results: string[] = [];
         if (!speedBlock) throw 'Unsupported: Creature-speed is undefined.';
@@ -281,7 +282,7 @@ function getCreatureDetails(creature: MonsterBase): DescriptionList {
 
     if (creature.ac) list.entries.push(`**AC**: ${parseAC(creature)}`);
     if (creature.hp) list.entries.push(`**HP**: ${parseHP(creature)}`);
-    if (creature.speed) list.entries.push(`**Speed**: ${parseSpeed(creature)}`);
+    if (creature.speed) list.entries.push(`**Speed**: ${parseSpeed(creature.speed)}`);
     if (creature.initiative) list.entries.push(`**Initiative**: ${parseInitiative(creature)}`);
     if (creature.skill) list.entries.push(`**Skills**: ${parseSkills(creature)}`);
     if (creature.resist) list.entries.push(`**Resistances**: ${parseResistances(creature)}`);
