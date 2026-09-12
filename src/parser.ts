@@ -3,8 +3,10 @@ import {
     AbilityNumber,
     Base,
     ClassProficiency,
+    ConditionalSpeed,
     Prerequisite,
     Resist,
+    Speed,
     Unit,
 } from '../5etools-collector/types/internal/base';
 import { Variadic } from '../5etools-collector/types/internal/util';
@@ -1261,6 +1263,81 @@ export function parseSkillProficiency(skillProficiencies: any[] | undefined): Pr
         options: proficiencies,
         amount: 'all',
     };
+}
+
+export function parseSpeed(speed: Speed | undefined): string | null {
+    function resolveSpeedType(speedType: number | string | boolean | ConditionalSpeed, label: string = ''): string {
+        label = title(label);
+        switch (typeof speedType) {
+            case 'number':
+                return `${label} ${speedType} Ft.`.trim();
+            case 'string':
+                return `${label} ${speedType}`.trim();
+            case 'boolean':
+                return `${label} equal to walking speed`;
+            default: {
+                return `${label} ${speedType.number} Ft. ${speedType.condition}`.trim();
+            }
+        }
+    }
+
+    if (!speed) return null;
+    if (typeof speed === 'number') return resolveSpeedType(speed);
+    const clone = structuredClone(speed);
+    const result: string[] = [];
+
+    if (clone.walk !== undefined) {
+        result.push(resolveSpeedType(clone.walk));
+        delete clone.walk;
+    }
+
+    if (clone.burrow !== undefined) {
+        result.push(resolveSpeedType(clone.burrow, 'burrow'));
+        delete clone.burrow;
+    }
+
+    if (clone.climb !== undefined) {
+        result.push(resolveSpeedType(clone.climb, 'climb'));
+        delete clone.climb;
+    }
+
+    if (clone.fly !== undefined) {
+        result.push(resolveSpeedType(clone.fly, 'fly'));
+        delete clone.fly;
+    }
+
+    if (clone.swim !== undefined) {
+        result.push(resolveSpeedType(clone.swim, 'swim'));
+        delete clone.swim;
+    }
+
+    if (clone.choose !== undefined) {
+        const choose = clone.choose;
+        const options = choose.from ? joinStringsWithOr(choose.from) : choose.fromFilter || 'selected types';
+        const amount = choose.amount !== undefined ? `${choose.amount} Ft.` : '';
+        const notePart = choose.note ? ` ${choose.note}` : '';
+
+        result.push(`${options} ${amount}${notePart}`.trim());
+        delete clone.choose;
+    }
+
+    if (clone.alternate !== undefined) {
+        const alternate = Object.entries(clone.alternate).flatMap(([key, value]) => {
+            return value.map((condSpeed) => {
+                return resolveSpeedType(condSpeed, key);
+            });
+        });
+        result.push(...alternate);
+        delete clone.alternate;
+    }
+
+    if (clone.canHover !== undefined) {
+        // Fly speed comes with the (hover) marker, so we can just delete canHover.
+        delete clone.canHover;
+    }
+
+    if (Object.keys(clone).length > 0) throw `Unparsed speed keys: ${JSON.stringify(clone)}`;
+    return result.join(', ');
 }
 
 export interface ReprintData {

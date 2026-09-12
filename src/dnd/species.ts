@@ -7,16 +7,15 @@ import {
     Description,
     ProficiencyOptions,
     ReprintData,
-    capitalize,
     parseDescriptions,
     parseImageUrl,
     parseReprint,
     parseSizes,
     parseSkillProficiency,
+    parseSpeed,
 } from '../parser';
 import { getSpeciesUrl } from '../urls';
 import { findFluff, joinStringsWithOr } from '../util';
-import { Variables } from '../variables';
 
 export interface ParsedSpecies {
     name: string;
@@ -24,37 +23,12 @@ export interface ParsedSpecies {
     url: string;
     image: string | null;
     sizes: string;
-    speed: string[];
+    speed: string | null;
     creatureType: string | null;
     description: Description[];
     info: Description[];
     skillProficiencies: null | ProficiencyOptions;
     reprint: ReprintData | null;
-}
-
-function getSpeciesSpeed(speed: any): string[] {
-    if (!speed) {
-        return [];
-    }
-
-    if (typeof speed === 'number') {
-        return [`${speed} feet`];
-    }
-
-    const speeds = [];
-    if (speed.walk) {
-        speeds.push(`${speed.walk} feet`);
-    }
-
-    for (const type of Variables.getSpecialSpeedTypes()) {
-        if (speed[type] === true) {
-            speeds.push(`${capitalize(type)} equal to your walking speed`);
-        } else if (speed[type]) {
-            speeds.push(`${capitalize(type)} ${speed[type]} feet`);
-        }
-    }
-
-    return speeds;
 }
 
 export function getSpecies(data: Databank): ParsedSpecies[] {
@@ -71,7 +45,7 @@ export function getSpecies(data: Databank): ParsedSpecies[] {
                 url: getSpeciesUrl(name, source),
                 image: parseImageUrl(fluff?.images ?? []) ?? null,
                 sizes: parseSizes(entry.size ?? []),
-                speed: getSpeciesSpeed(entry.speed),
+                speed: parseSpeed(entry.speed),
                 creatureType: entry.creatureTypes ? joinStringsWithOr(entry.creatureTypes, true) : null,
                 description: parseDescriptions('', entry.entries || []),
                 info: parseDescriptions('', fluff?.entries ?? []),
