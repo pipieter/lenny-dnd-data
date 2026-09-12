@@ -27,6 +27,7 @@ import { OptionalFeatures } from '../5etools-collector/types/optionalfeatures';
 import { Rule } from '../5etools-collector/types/rule';
 import { Skill } from '../5etools-collector/types/skill';
 import { Source } from '../5etools-collector/types/source';
+import { Species, SpeciesFluff } from '../5etools-collector/types/species';
 import { Spell, SpellSource } from '../5etools-collector/types/spell';
 import { Status } from '../5etools-collector/types/status';
 import { TableGroup, TableTable } from '../5etools-collector/types/table';
@@ -148,9 +149,9 @@ export abstract class Databank {
     // Names
     public readonly name: SpeciesName[] = [];
     // Species
-    public readonly race: any[] = [];
-    public readonly subrace: any[] = [];
-    public readonly raceFluff: any[] = [];
+    public readonly race: Species[] = [];
+    public readonly subrace: Species[] = [];
+    public readonly raceFluff: SpeciesFluff[] = [];
     // Vehicles
     public readonly vehicle: Vehicle[] = [];
     public readonly vehicleUpgrade: VehicleUpgrade[] = [];
