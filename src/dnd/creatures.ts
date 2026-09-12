@@ -1,6 +1,6 @@
 import { resolveToBase } from '../5etools-conversion/copy';
 import { FluffBase } from '../../5etools-collector/types/fluff';
-import { AbilityString, Speed } from '../../5etools-collector/types/internal/base';
+import { AbilityString } from '../../5etools-collector/types/internal/base';
 import { Entry } from '../../5etools-collector/types/internal/entry';
 import { MonsterBase } from '../../5etools-collector/types/monster';
 import { cleanDNDText } from '../clean';
@@ -118,47 +118,6 @@ function parseHP(creature: MonsterBase): string {
     if ('special' in hp) return hp.special;
     if ('average' in hp) return hp.formula ? `${hp.average} (${hp.formula})` : hp.average.toString();
     throw `Unsupported creature-HP in ${creature.name}: ${JSON.stringify(hp)}`;
-}
-
-function parseCreatureSpeed(creature: MonsterBase): string {
-    const iterateSpeed = (speedBlock: Speed | undefined) => {
-        const results: string[] = [];
-        if (!speedBlock) throw 'Unsupported: Creature-speed is undefined.';
-
-        for (const [type, speed] of Object.entries(speedBlock)) {
-            if (type === 'alternate') {
-                results.push(...iterateSpeed(speed));
-                continue;
-            }
-
-            if (type == 'choose') {
-                const options = joinStringsWithOr(speed.from, false);
-                results.push(`*${options}* ${speed.amount} ft. ${speed.note}`.trim());
-                continue;
-            }
-
-            const speeds = [];
-            for (const s of variadic(speed)) {
-                if (typeof s === 'number') speeds.push(`${s} ft.`);
-                else if (typeof s === 'boolean') {
-                    switch (type) {
-                        case 'canHover':
-                            speeds.push(`(hover)`);
-                            break;
-
-                        default:
-                            throw `Unsupported creature speed movement-type in ${creature.name}: ${type}`;
-                    }
-                } else if (s.condition) speeds.push(`${s.number} ft. ${s.condition}`);
-                else throw `Unsupported creature - speed in ${creature.name}: ${JSON.stringify(creature.speed)}`;
-            }
-            results.push(`*${type}* ${joinStringsWithOr(speeds)}`);
-        }
-
-        return results;
-    };
-
-    return iterateSpeed(creature.speed).join(', ').trim();
 }
 
 function parseInitiative(creature: MonsterBase): string {
