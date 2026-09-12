@@ -690,14 +690,13 @@ function resolveClassFeatReference(
     if (isPureReference || isOnlyReferences) {
         const parts = matches[0][1].split('|').map((p) => p.trim());
 
-        let name: string, className: string, source: string, levelStr: string;
-        let subclassName: string | undefined, subclassSource: string | undefined;
+        let name: string, className: string, source: string, _levelStr: string;
+        let _subclassName: string | undefined, _subclassSource: string | undefined;
 
         if (type === 'refClassFeature') {
-            [name, className, source, levelStr] = parts;
+            [name, className, source, _levelStr] = parts;
         } else {
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            [name, className, source, subclassName, subclassSource, levelStr] = parts;
+            [name, className, source, _subclassName, _subclassSource, _levelStr] = parts;
         }
 
         const featSource = source || 'PHB';
@@ -966,8 +965,7 @@ function getSubclasses(
     return dictionary;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function getClassSubclassFeatures(data: Databank, name: string, source: string): ClassFeatureDictionary {
+function getClassSubclassFeatures(data: Databank, name: string, _source: string): ClassFeatureDictionary {
     const subclassFeatures = data.subclassFeature
         .filter((sf) => {
             // The source is not checked, as this may prevent older content not being applied to newer content.
