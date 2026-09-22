@@ -938,6 +938,27 @@
   "reprint": null
  },
  {
+  "name": "Airbag Shield",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#airbag%20shield_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Airbag_Shield.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "shield",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this Shield, you can cast the __Airbag__ spell from it, targeting only yourself. Once the spell is cast in this way, it can't be cast from the Shield again until the next dawn. A creature can also restore the item's use of this spell by touching the Shield as a Magic action and expending a level 1+ spell slot."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Alarm Pylon",
   "source": "DnDBeyondDrops",
   "url": "https://5e.tools/items.html#alarm%20pylon_dndbeyonddrops",
@@ -12626,6 +12647,32 @@
   "reprint": null
  },
  {
+  "name": "Bubble Blowtorch",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#bubble%20blowtorch_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Bubble_Torch.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These First Age torches have been magically altered to use potions as their fuel. As a Magic action, you can pour a potion of any rarity into the glass vessel of a Brewer's Torch. As long as a potion is in the vessel, you can use a Magic action to activate the torch's corresponding effect, as detailed below, consuming the potion from the vessel."
+   },
+   {
+    "name": "Bubble Blowtorch",
+    "type": "text",
+    "value": "A stream of glistening bubbles floats from the tip of the torch, coating a loose object within 5 feet of you. If the object weighs 100 pounds or fewer, the bubbles lift it up to 10 feet into the air. The object hovers in place for 1 minute or until you choose to end the effect (no action required), after which the bubbles disappear and the object falls. While the object is hovering, it can be moved as if it weighed no more than 5 pounds, and if weight is added to the object that would bring it over 100 pounds, it falls."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Bubble Gum",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#bubble%20gum_obojimatallgrass",
@@ -13006,6 +13053,32 @@
     "name": "",
     "type": "text",
     "value": "Retrieving an item from the case requires an action. If you place something other than an instrument or musical object within one of the case's extradimensional compartments, it magically appears next to the case again when you close the lid."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Butterfly Blowtorch",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#butterfly%20blowtorch_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Butterfly_Torch.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These First Age torches have been magically altered to use potions as their fuel. As a Magic action, you can pour a potion of any rarity into the glass vessel of a Brewer's Torch. As long as a potion is in the vessel, you can use a Magic action to activate the torch's corresponding effect, as detailed below, consuming the potion from the vessel."
+   },
+   {
+    "name": "Butterfly Blowtorch",
+    "type": "text",
+    "value": "A flutter of colorful butterflies pours from the tip of the torch, swarming a creature or object within 5 feet of you. If the target is a creature, one effect causing it to have the Charmed, Frightened, or Pacified condition (your choice) ends. If the target is an object, the butterflies repair a single break or tear in it, as if by the __Mending__ cantrip."
    }
   ],
   "properties": [],
@@ -13815,6 +13888,47 @@
     "name": "",
     "type": "text",
     "value": "You can drink the tea using an action, although it's most commonly finished over the course of at least 1 minute. If the tea has been left to cool before you drink it, you regain only half the amount of hit points and temporary hit points, and no other effects are suppressed."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Canned Cat",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#canned%20cat_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Creatures/Canned_Cat.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "ingredient",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Much like soda slimes, this peculiar cat-shaped creature—aptly named the canned cat—is known to form inside colorful metal cans, which are kept pristine by the magics of the First Age and Obojima. You can find canned cats all over the island in old storehouses, convenience stores, and pantries."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Combat",
+      "Utility",
+      "Whimsy"
+     ],
+     "rows": [
+      [
+       "1",
+       "8",
+       "9"
+      ]
+     ]
+    }
    }
   ],
   "properties": [],
@@ -22499,6 +22613,32 @@
   "reprint": null
  },
  {
+  "name": "Demon Rattle",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#demon%20rattle_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Demon_Rattle.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While this rattle is on your person, you have a +1 bonus to saving throws against effects created by Demons (Fiends)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Magic action, you can shake this rattle. At the end of your turn while shaking it, each Demon in a 15-foot Emanation originating from you must make a DC 15 Wisdom saving throw, provided it can hear the rattle and isn't already affected by it. On a failed save, the Demon has the Pacified condition. This effect ends on an affected Demon if you don't take a Magic action on your turn to continue shaking the rattle, if the Demon takes any damage, or if the Demon can no longer hear the rattle. Once you stop shaking the rattle, ending this effect, this property can't be used again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Demon Signet Ring",
   "source": "WhereEvilLives",
   "url": "https://5e.tools/items.html#demon%20signet%20ring_whereevillives",
@@ -24879,6 +25019,47 @@
        "2",
        "1",
        "4"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Dried Pilot Leech",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#dried%20pilot%20leech_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Dried_Pilot_Leech.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "ingredient",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Dried Pilot Leech is hard to come by, as collecting the nasty thing can be quite a harrowing task. Because of this, most witches leave the hunting of pilot leeches to adventurers and thrill seekers."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Combat",
+      "Utility",
+      "Whimsy"
+     ],
+     "rows": [
+      [
+       "15",
+       "12",
+       "17"
       ]
      ]
     }
@@ -36070,6 +36251,47 @@
   "reprint": null
  },
  {
+  "name": "Hair From a Yanari",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#hair%20from%20a%20yanari_obojimatalesyatamon",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ingredient",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A pluck of yanari hair is a versatile ingredient that can be used in dozens of potions recipes. However, you won't find many witches using it, as the magical properties of the hair are a trade secret held closely by the vendors of the Yanari Market."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Combat",
+      "Utility",
+      "Whimsy"
+     ],
+     "rows": [
+      [
+       "5",
+       "2",
+       "8"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Hakuma Sapwood",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#hakuma%20sapwood_obojimatallgrass",
@@ -37698,6 +37920,69 @@
     "name": "",
     "type": "text",
     "value": "28"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Healing Patch (1st Class)",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#healing%20patch%20(1st%20class)_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Healing_Patch.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can attach up to three Healing Patches to your clothing or equipment over the course of 1 hour. You can take a Bonus Action to rip a patch off your person and regain **4d8 + 12** Hit Points; doing so destroys the patch and leaves a charred mark in its place. If you have the Unconscious condition, an ally within reach of you can take a Magic action to rip the patch off your person instead."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Healing Patch (2nd Class)",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#healing%20patch%20(2nd%20class)_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Healing_Patch.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can attach up to three Healing Patches to your clothing or equipment over the course of 1 hour. You can take a Bonus Action to rip a patch off your person and regain **2d8 + 6** Hit Points; doing so destroys the patch and leaves a charred mark in its place. If you have the Unconscious condition, an ally within reach of you can take a Magic action to rip the patch off your person instead."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Healing Patch",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#healing%20patch_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Healing_Patch.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can attach up to three Healing Patches to your clothing or equipment over the course of 1 hour. You can take a Bonus Action to rip a patch off your person and regain **1d8 + 3** Hit Points; doing so destroys the patch and leaves a charred mark in its place. If you have the Unconscious condition, an ally within reach of you can take a Magic action to rip the patch off your person instead."
    }
   ],
   "properties": [],
@@ -61504,6 +61789,32 @@
   "reprint": null
  },
  {
+  "name": "Press Pass",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#press%20pass_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Press_Pass.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While holding this Press Pass, you can take a Magic action to press it against a wooden, plaster, or stone surface (such as a wall, ceiling, or floor) that is no more than 5 feet thick. When you do so, you open a doorway on the surface, creating a passage to the other side that is 3 feet wide and 7 feet tall. The passage remains for 10 minutes or until you take a Magic action to touch the Press Pass, at which point it closes and the doorway disappears, leaving behind no trace."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Once used, the Press Pass can't be used in this way again until the next dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Prickleskin",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#prickleskin_obojimatallgrass",
@@ -75666,6 +75977,47 @@
   "reprint": null
  },
  {
+  "name": "Slice of Melon Bird",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#slice%20of%20melon%20bird_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Slice_of_Melon_Bird.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "ingredient",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you plan to use melon bird in a potion recipe, you'll have to be quick, as the moment you slice into the creature, its magic begins to fade. Most witches believe you have less than an hour to use melon bird in a potion, but that has never been confirmed."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Combat",
+      "Utility",
+      "Whimsy"
+     ],
+     "rows": [
+      [
+       "2",
+       "9",
+       "3"
+      ]
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Slime-in-a-Skull (Saddle Slime)",
   "source": "HelianasGuidetoMonsterHunting",
   "url": "https://5e.tools/items.html#slime-in-a-skull%20(saddle%20slime)_helianasguidetomonsterhunting",
@@ -76877,6 +77229,32 @@
     "name": "",
     "type": "text",
     "value": "Whenever you finish a Long Rest while wearing these comfortable enchanted socks, you gain a number of Temporary Hit Points equal to 1d8 + your Constitution modifier. You must be wearing both socks on your feet in order to gain this benefit."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Soda (Cursed)",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#soda%20(cursed)_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Soda_Cursed.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This soda is cursed. Consuming it curses you until you are targeted by a level 5+ __Remove Curse__ spell or similar magic, or until you consume a pound of Black Cinnamon and bathe in a still pool of water."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each day while cursed, at a random time, one random spell slot you have or one random spell that can be cast from a magic item you are attuned to is expended (GM's discretion). If you have no spell slots or applicable magic items available, you instead take **2d10** Necrotic damage."
    }
   ],
   "properties": [],
@@ -83263,6 +83641,47 @@
     "name": "",
     "type": "text",
     "value": "This wand has 3 charges and regains 1d3 expended charges daily at dusk. While you're drunk and are holding the wand, you can expend 1 or more charges to cast one of the following spells (+3 spellcasting ability modifier) from it: __Heroism__ (1 charge), __Lesser Restoration__ (2 charges), or __Thaumaturgy__ (0 charges)."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Tamh Gon's Confetti",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#tamh%20gon's%20confetti_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Tamh_Gons_Confetti.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "ingredient",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "In Yatamon, Tamh Gon's Confetti can be found littered across the streets for months after his arrival, and the enigmatic festival spirit never stays away too long, making his confetti as common as fallen leaves."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Combat",
+      "Utility",
+      "Whimsy"
+     ],
+     "rows": [
+      [
+       "0",
+       "0",
+       "17"
+      ]
+     ]
+    }
    }
   ],
   "properties": [],
@@ -91468,6 +91887,32 @@
   "reprint": null
  },
  {
+  "name": "Water Jet Blowtorch",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#water%20jet%20blowtorch_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Water_Jet_Torch.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These First Age torches have been magically altered to use potions as their fuel. As a Magic action, you can pour a potion of any rarity into the glass vessel of a Brewer's Torch. As long as a potion is in the vessel, you can use a Magic action to activate the torch's corresponding effect, as detailed below, consuming the potion from the vessel."
+   },
+   {
+    "name": "Water Jet Blowtorch",
+    "type": "text",
+    "value": "A jet of water blasts from the tip of the torch at a target within 15 feet of you. If the target is a creature, it must make a DC 12 Dexterity saving throw, taking **2d4** Slashing damage on a failed save or half as much damage on a successful one. If the target is an object or surface made of metal, stone, or wood that is no more than 1 foot thick, the water cuts a Line through it up to 5 feet long and 1 inch wide, provided it isn't being worn or carried."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Waterskin of Voices",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#waterskin%20of%20voices_griffonssaddlebag2",
@@ -91938,6 +92383,27 @@
   "reprint": null
  },
  {
+  "name": "Welders Shawl",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#welders%20shawl_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Welders_Shawl.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While wearing this shawl, you gain a +3 bonus to Intelligence (*Mechanics*) checks. In addition, whenever you repair a vehicle, it regains a number of Hit Points equal to the result of the check –5 (minimum of 3 Hit Points), instead of –10."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Whip, Silver",
   "source": "BoundByBlood",
   "url": "https://5e.tools/items.html#whip%2C%20silver_boundbyblood",
@@ -92102,6 +92568,27 @@
    "finesse",
    "thrown (20/60 ft.)"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Whiskered Nakurina",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/items.html#whiskered%20nakurina_obojimatalesyatamon",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ObojimaTalesYatamon/Items/Whiskered_Nakurina.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "While playing this nakurina, you can attempt to manipulate a Demon's actions at the risk of your own well-being. As a Magic action, choose a Demon (Fiend) that can hear the nakurina and make a Charisma (*Performance*) check. The Demon must then succeed on a Wisdom saving throw against a DC equal to the result of your check (maximum DC 20). On a failed save, you choose whether the Demon drops an item of your choice, moves up to its Speed in a direction of your choice, or makes an attack against a creature of your choice within **5 feet** of it. On a successful save, the Demon resists your control, and you take **2d4** Psychic damage."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {

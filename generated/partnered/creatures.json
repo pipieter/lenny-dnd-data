@@ -17548,6 +17548,111 @@
   "reprint": null
  },
  {
+  "name": "Awakened Cat Neko Duelist",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Small beast",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Awakened%20Cat%20Neko%20Duelist.webp",
+  "url": "https://5e.tools/bestiary.html#awakened%20cat%20neko%20duelist_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "12",
+      "12",
+      "10",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "+1",
+      "+0",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+5",
+      "+1",
+      "+1",
+      "+0",
+      "+5"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 27 (6d6 + 6)",
+     "**Speed**: 30 Ft., Climb 30 Ft.",
+     "**Skills**: acrobatics +5, performance +5, persuasion +5, stealth +5",
+     "**Senses**: darkvision 60 ft.",
+     "**Languages**: Common",
+     "**CR**: 1"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Deft Cover",
+    "type": "text",
+    "value": "While at least two Small or larger creatures (excluding the awakened cat) are within 5 feet of the awakened cat, it has Half Cover."
+   },
+   {
+    "name": "Feline Agility",
+    "type": "text",
+    "value": "When the awakened cat falls and doesn't have the Incapacitated condition, it always lands on its feet, and it can subtract up to 20 feet from the fall when calculating the damage it would take."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The awakened cat makes two attacks, using its Dagger or Shortsword in any combination."
+   },
+   {
+    "name": "Dagger",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 5 (**1d4 + 3**) Piercing damage."
+   },
+   {
+    "name": "Shortsword",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 3**) Piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Awakened Chapped Brute",
   "source": "GrimHollowLairsEtharis",
   "subtitle": "Large monstrosity",
@@ -28517,6 +28622,166 @@
   "reprint": null
  },
  {
+  "name": "Bondbeast",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Small monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#bondbeast_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Magical Minions Protecting Spell Slingers*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A bondbeast begins as a normal animal that a spellcaster transforms with a rigorous magical ritual. No matter the animal's original size, it gains increased intelligence, becomes the size of a large dog, and employs a magical toxin via a fearsome bite. Although recognizably similar to the animal it once was, each bondbeast bears unique arcane runes on its skin or fur."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "During the transformation into a bondbeast, the creature retains its personality, so most prospective bonded spellcasters use an animal that has already demonstrated loyalty and protectiveness. Transferring the bondbeast's loyalty requires an equally complicated magical ritual, which isn't always successful."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Roll or choose a result on the Bondbeast Origins table to determine its original form."
+   },
+   {
+    "name": "Bondbeast Origins",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "Bondbeast Origins",
+     "headers": [
+      "1d6",
+      "The Bondbeast Was Formed From..."
+     ],
+     "rows": [
+      [
+       "1",
+       "A black-and-white furred ferret."
+      ],
+      [
+       "2",
+       "A scraggly alley cat."
+      ],
+      [
+       "3",
+       "A hyena with a spot shaped like an eye."
+      ],
+      [
+       "4",
+       "A raccoon missing an eye."
+      ],
+      [
+       "5",
+       "A skunk with a stump for its tail."
+      ],
+      [
+       "6",
+       "A vixen fox with snow-white fur."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "12",
+      "17",
+      "16",
+      "8",
+      "14",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+3",
+      "+3",
+      "-1",
+      "+2",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+1",
+      "+5",
+      "+3",
+      "-1",
+      "+2",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 84 (13d6 + 39)",
+     "**Speed**: 30 Ft., Climb 30 Ft.",
+     "**Skills**: perception +4, stealth +5",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Common",
+     "**CR**: 4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Desperate Attacks",
+    "type": "text",
+    "value": "The bondbeast has Advantage on attack rolls if its bonded spellcaster is within 10 feet and is *Bloodied*."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The bondbeast makes two Bite attacks."
+   },
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5, reach 5 ft. *Hit:* 10 (**2d6 + 3**) Piercing damage, and the target has the Poisoned condition until the start of the bondbeast's next turn. While Poisoned in this way, the target has Disadvantage on saving throws against spells and other magical effects originating from the bondbeast's bonded spellcaster, and spell attack rolls made against the Poisoned target by the bonded spellcaster have Advantage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Cunning Action",
+    "type": "text",
+    "value": "The bondbeast takes the Dash, Disengage, or Hide action."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Bone Collective",
   "source": "ToB1-2023",
   "subtitle": "Small undead",
@@ -33832,6 +34097,100 @@
   "reprint": null
  },
  {
+  "name": "Button Crow",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Tiny fiend",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Button%20Crow.webp",
+  "url": "https://5e.tools/bestiary.html#button%20crow_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "3",
+      "14",
+      "10",
+      "8",
+      "16",
+      "7"
+     ],
+     [
+      "Mod.",
+      "-4",
+      "+2",
+      "+0",
+      "-1",
+      "+3",
+      "-2"
+     ],
+     [
+      "Save.",
+      "-4",
+      "+2",
+      "+0",
+      "-1",
+      "+3",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12",
+     "**HP**: 10 (4d4)",
+     "**Speed**: 10 Ft., Fly 50 Ft.",
+     "**Skills**: perception +5, sleight of hand +4",
+     "**Languages**: Common, Torum|ObojimaTallGrass",
+     "**CR**: 1/8"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Distant Mimicry",
+    "type": "text",
+    "value": "The crow can mimic simple sounds it has heard, such as a whisper or chitter, creating the sound at a point of its choice within 30 feet of itself. A hearer can discern that the sounds are imitations with a successful DC 10 Wisdom (*Insight*) check."
+   },
+   {
+    "name": "Trinket Obsession",
+    "type": "text",
+    "value": "The crow is mesmerized by a specific Tiny object (GM's choice), such as a coin, button, or bauble. The crow has Disadvantage on Wisdom (*Insight*) checks that involve that object."
+   }
+  ],
+  "actions": [],
+  "bonusActions": [
+   {
+    "name": "Consume Trinket",
+    "type": "text",
+    "value": "The crow consumes the object from its Trinket Obsession. If the object is nonmagical, it is destroyed, and the crow gains 3 Temporary Hit Points."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "c'Naazo",
   "source": "TalesFromTheShadows",
   "subtitle": "Large aberration",
@@ -35134,6 +35493,110 @@
   "reprint": null
  },
  {
+  "name": "Canden & Moon's Advanced Student",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Small or Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Canden%20&%20Moon's%20Advanced%20Student.webp",
+  "url": "https://5e.tools/bestiary.html#canden%20%26%20moon's%20advanced%20student_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "12",
+      "15",
+      "11",
+      "10",
+      "12",
+      "11"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+2",
+      "+0",
+      "+0",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+1",
+      "+4",
+      "+0",
+      "+0",
+      "+3",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 22 (5d8)",
+     "**Speed**: 30 Ft.",
+     "**Skills**: acrobatics +4, insight +3, perception +3",
+     "**Languages**: Common plus one other language",
+     "**CR**: 1/2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Master Canden's Discipline",
+    "type": "text",
+    "value": "The student has Advantage on saving throws it makes to avoid or end the Frightened condition."
+   },
+   {
+    "name": "Master Moon's Footwork",
+    "type": "text",
+    "value": "When an enemy the student can see within 10 feet of it misses with a melee attack roll, the student can move up to 5 feet without provoking Opportunity Attacks."
+   },
+   {
+    "name": "Vigilant",
+    "type": "text",
+    "value": "When the student rolls Initiative, it can immediately draw a weapon and move up to its Speed (no action required)."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The student makes two Training Blade attacks."
+   },
+   {
+    "name": "Training Blade",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 3**) Piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Candlelight Daemon",
   "source": "GrimHollowLairsEtharis",
   "subtitle": "Medium fiend",
@@ -35268,6 +35731,92 @@
    "source": "GrimHollowMG24",
    "tag": null
   }
+ },
+ {
+  "name": "Canned Cat",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Tiny ooze",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Canned%20Cat.webp",
+  "url": "https://5e.tools/bestiary.html#canned%20cat_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "3",
+      "6",
+      "11",
+      "5",
+      "8",
+      "13"
+     ],
+     [
+      "Mod.",
+      "-4",
+      "-2",
+      "+0",
+      "-3",
+      "-1",
+      "+1"
+     ],
+     [
+      "Save.",
+      "-4",
+      "-2",
+      "+0",
+      "-3",
+      "-1",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 8",
+     "**HP**: 5 (2d4)",
+     "**Speed**: 0 Ft.",
+     "**CR**: 0"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Mesmerize",
+    "type": "text",
+    "value": "*Wisdom Saving Throw:* DC 11 Any creature that starts its turn within 5 feet of the canned cat and is aware of it. *Failure:* The target has the Charmed condition until the start of its next turn. *Success* The target is immune to the canned cat's Mesmerize for 24 hours."
+   },
+   {
+    "name": "Too Sweet To Eat",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 10 A creature that consumes the canned cat. *Failure:* The target gains 1 Exhaustion level."
+   }
+  ],
+  "actions": [],
+  "bonusActions": [],
+  "reprint": null
  },
  {
   "name": "Canon Athenodorus",
@@ -36465,6 +37014,140 @@
     "name": "Dagger",
     "type": "text",
     "value": "*Melee or Ranged Weapon Attack:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 5 (**1d4 + 3**) piercing damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Cauldron Hydra",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Small ooze",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Cauldron%20Hydra.webp",
+  "url": "https://5e.tools/bestiary.html#cauldron%20hydra_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "14",
+      "11",
+      "17",
+      "2",
+      "10",
+      "3"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+0",
+      "+3",
+      "-4",
+      "+0",
+      "-4"
+     ],
+     [
+      "Save.",
+      "+2",
+      "+0",
+      "+3",
+      "-4",
+      "+0",
+      "-4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 10",
+     "**HP**: 78 (12d6 + 36)",
+     "**Speed**: 0 Ft. (30 ft. in Utility form)",
+     "**Initiative**: 1",
+     "**Skills**: perception +4",
+     "**Immunities**: acid; blinded, charmed, deafened, exhaustion, frightened, prone, stunned, unconscious",
+     "**Senses**: blindsight 60 ft.",
+     "**CR**: 3"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Reactive Heads",
+    "type": "text",
+    "value": "The hydra has four extra Reactions that can be used only for Opportunity Attacks."
+   },
+   {
+    "name": "Ooze Concoction",
+    "type": "text",
+    "value": "At the start of each of the hydra's turns, one of the following potion types of its choice bubbles to the top, determining its form:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Combat**: The hydra has Advantage on D20 Tests until the start of its next turn.",
+      "**Utility**: The hydra sprouts legs from its cauldron, gaining a Speed of 30 feet. It then creates four illusory copies of itself (as if from the __Minor Illusion__ spell; save DC 13) in unoccupied spaces within 30 feet of it, which appear to have walked there. The effects end at the start of the hydra's next turn.",
+      "**Whimsy**: When the hydra hits a creature with a Pseudopod attack, roll a d4 to determine the effect it's subjected to; the target can't be subjected to another effect in this way for 24 hours:",
+      {
+       "type": "list",
+       "caption": "",
+       "entries": [
+        "For the next hour, the target is under the effects of the __Feather Fall__ spell and weighs no more than 1 pound.",
+        "The target transforms into the child version of itself for 4 hours: it is one size smaller (to a minimum of Small), and its Strength and Dexterity scores are 10 unless those scores were already lower.",
+        "One random object the target is wearing or carrying is assigned a signature sound that accompanies the object when it's used. This effect lasts until removed as if a curse by the __Remove Curse__ spell",
+        "For the next hour, the target's speech sounds like that of a random person it's not familiar with."
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The hydra makes five Pseudopod attacks. If it's in Utility form, it can use its Transposition after each attack."
+   },
+   {
+    "name": "Pseudopod",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4 (with Advantage in Combat form) to hit, reach 10 ft., one target. *Hit:* 5 (**1d6 + 2**) Acid damage."
+   },
+   {
+    "name": "Dragon's Breath (Combat Form Only)",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 13 Each creature in a 15-foot Cone. *Failure:* The target takes 5 (**1d10**) Acid damage, 5 (**1d10**) Cold damage, 5 (**1d10**) Fire damage, 5 (**1d10**) Lightning damage, and 5 (**1d10**) Poison damage. *Success* Half damage."
+   },
+   {
+    "name": "Transposition (Utility Form Only)",
+    "type": "text",
+    "value": "The hydra teleports, imperceptibly swapping places with one of its illusory copies, which appears in its previous space."
    }
   ],
   "bonusActions": [],
@@ -102381,6 +103064,138 @@
   "reprint": null
  },
  {
+  "name": "Graffiti Golem",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Medium construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Graffiti%20Golem.webp",
+  "url": "https://5e.tools/bestiary.html#graffiti%20golem_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "11",
+      "18",
+      "16",
+      "3",
+      "14",
+      "1"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+4",
+      "+3",
+      "-4",
+      "+2",
+      "-5"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+6",
+      "+3",
+      "-4",
+      "+2",
+      "-5"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 67 (9d8 + 27)",
+     "**Speed**: 30 Ft., Climb 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +6, stealth +6",
+     "**Immunities**: poison, psychic; charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+     "**Senses**: darkvision 120 ft.",
+     "**Languages**: Understands Common plus one other language but can't speak",
+     "**CR**: 3"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Death Burst",
+    "type": "text",
+    "value": "The golem bursts when it dies, covering surfaces in a 20-foot Emanation with magical paint for 1 minute. *Dexterity Saving Throw:* DC 13 Each creature that moves across a surface in the area for the first time on a turn or starts its turn there. *Failure:* The target leaves a visible paint trail where it moves for 1d12 hours. A creature can remove the paint by dousing the target in water or by manually clearing it off over the course of 1 minute."
+   },
+   {
+    "name": "False Appearance",
+    "type": "text",
+    "value": "If the golem is motionless at the start of combat, it has Advantage on its Initiative roll. Moreover, if a creature hasn't observed the golem move or act, that creature must succeed on a DC 18 Intelligence (*Investigation*) check to discern that the golem isn't ordinary graffiti."
+   },
+   {
+    "name": "Golem Sense",
+    "type": "text",
+    "value": "The creature that created the golem can perceive through its senses, as long as they are on the same plane of existence."
+   },
+   {
+    "name": "Immutable Form",
+    "type": "text",
+    "value": "The golem can't shapeshift."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The golem has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Two-Dimensional Movement",
+    "type": "text",
+    "value": "The golem can only move across solid contiguous surfaces. It doesn't fill the space it is occupying (except with regard to other graffiti golems)."
+   },
+   {
+    "name": "Water Susceptibility",
+    "type": "text",
+    "value": "The golem takes 3 (**1d6**) Cold damage for every 5 feet it moves in water or for every gallon of water splashed on it."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The golem makes two Rend attacks."
+   },
+   {
+    "name": "Rend",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +6 to hit, reach 0 ft. (one target touching the surface the golem is on), one target. *Hit:* 7 (**1d6 + 4**) Slashing damage plus 4 (**1d8**) Force damage."
+   },
+   {
+    "name": "Graffiti Spray (Recharge 5-6)",
+    "type": "text",
+    "value": "A flurry of colors trails along all surfaces emanating from the golem, leaving a rainbow pattern behind. *Dexterity Saving Throw:* DC 13 Each creature touching a solid surface in a 30-foot Cone. *Failure:* 10 (**3d6**) Acid, Cold, Fire, or Lightning damage (roll a d4 to determine the type for each target). *Success* Half damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Granite Stone Giant",
   "source": "FleeMortals",
   "subtitle": "Huge giant",
@@ -120168,6 +120983,133 @@
   "reprint": null
  },
  {
+  "name": "Howler Skulker",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Howler%20Skulker.webp",
+  "url": "https://5e.tools/bestiary.html#howler%20skulker_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "14",
+      "16",
+      "12",
+      "8",
+      "12",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+3",
+      "+1",
+      "-1",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+2",
+      "+3",
+      "+1",
+      "-1",
+      "+1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 27 (5d8 + 5)",
+     "**Speed**: 40 Ft., Climb 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: acrobatics +5, deception +4, sleight of hand +7, stealth +5",
+     "**Senses**: darkvision 60 ft.",
+     "**Languages**: Howler",
+     "**CR**: 1"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Ambusher",
+    "type": "text",
+    "value": "In the first round of a combat, the howler has Advantage on attack rolls against any creature that is *Surprised*."
+   },
+   {
+    "name": "Common Mimicry",
+    "type": "text",
+    "value": "The howler can mimic speech that sounds like Common (but isn't). A hearer can discern that the speech is an imitation with a successful DC 12 Wisdom (*Insight*) check."
+   },
+   {
+    "name": "Deceptive Appearance",
+    "type": "text",
+    "value": "If a creature hasn't discerned the howler for what it is, that creature must take a Study action and succeed on a DC 12 Intelligence (*Investigation*) check to discern that the howler isn't a Humanoid (__Commoner__); the creature has Advantage on this check if it's within 30 feet of the howler."
+   },
+   {
+    "name": "Sleep-Deprived",
+    "type": "text",
+    "value": "The howler has Advantage on saving throws it makes to avoid or end the Charmed and Unconscious conditions."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The howler makes two attacks, using Chomp, Dagger, or Hand Crossbow in any combination. It can forgo one attack to take the Hide action."
+   },
+   {
+    "name": "Chomp",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (**1d6 + 3**) Piercing damage."
+   },
+   {
+    "name": "Dagger",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +5 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 5 (**1d4 + 3**) Piercing damage plus 7 (**2d6**) Poison damage."
+   },
+   {
+    "name": "Hand Crossbow",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +5 to hit, range 30/120 ft., one target. *Hit:* 6 (**1d6 + 3**) Piercing damage plus 7 (**2d6**) Poison damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Deft Escape",
+    "type": "text",
+    "value": "The howler takes the Dash or Disengage action."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Howler Snarler",
   "source": "ObojimaTallGrass",
   "subtitle": "Medium humanoid",
@@ -126601,6 +127543,110 @@
     "name": "Poison Breath (Recharge 5-6)",
     "type": "text",
     "value": "The young amphithere exhales a blast of stinging venom in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 10 (**3d6**) poison damage on a failed save, or half as much damage on a successful one. A creature reduced to 0 hit points by this attack remains stable but is poisoned for 1 hour, even after regaining hit points. If a creature has total cover from the young amphithere, it is not affected by the breath attack."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Infected Beast",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Gargantuan monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Infected%20Beast.webp",
+  "url": "https://5e.tools/bestiary.html#infected%20beast_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "19",
+      "16",
+      "17",
+      "10",
+      "14",
+      "11"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+3",
+      "+3",
+      "+0",
+      "+2",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+3",
+      "+3",
+      "+0",
+      "+2",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 108 (8d20 + 24)",
+     "**Speed**: 30 Ft.",
+     "**Senses**: blindsight 30 ft.",
+     "**Languages**: Common, Torum",
+     "**CR**: 6"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Demonic Control",
+    "type": "text",
+    "value": "If the infected beast dies, its pilot leech detaches and takes a Reaction to move up to its Speed. If the leech dies, the Beast is no longer infected, and it drops to 0 Hit Points but is Stable. A Beast that is no longer infected returns to its normal form over the course of 30 days."
+   },
+   {
+    "name": "Kojo Aversion",
+    "type": "text",
+    "value": "If the infected beast consumes an entire Kojo Root, its pilot leech is repulsed. *Constitution Saving Throw:* DC 10 The infected beast. *Failure:* The pilot leech immediately detaches."
+   },
+   {
+    "name": "Leech Weakness",
+    "type": "text",
+    "value": "The pilot leech attached to the infected beast has its own pool of 10 Hit Points. It can't be targeted directly, but if the infected beast is subjected to Psychic damage, the leech takes that damage instead."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The infected beast makes two Natural Weapon attacks."
+   },
+   {
+    "name": "Natural Weapon",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7 to hit, reach 5 ft., one target. *Hit:* 22 (**4d8 + 4**) Bludgeoning, Piercing, or Slashing damage (as appropriate for the infected beast)."
    }
   ],
   "bonusActions": [],
@@ -142932,6 +143978,133 @@
   "reprint": null
  },
  {
+  "name": "Lanternback Turtle",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Large monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Lanternback%20Turtle.webp",
+  "url": "https://5e.tools/bestiary.html#lanternback%20turtle_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "17",
+      "6",
+      "14",
+      "5",
+      "15",
+      "4"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "-2",
+      "+2",
+      "-3",
+      "+2",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+3",
+      "-2",
+      "+2",
+      "-3",
+      "+2",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 45 (6d10 + 12)",
+     "**Speed**: 20 Ft., Swim 40 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +4",
+     "**Immunities**: radiant",
+     "**Languages**: Understands Torum but can't speak",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Hold Breath",
+    "type": "text",
+    "value": "The turtle can hold its breath for 2 hours."
+   },
+   {
+    "name": "Prone Susceptibility",
+    "type": "text",
+    "value": "If the turtle has the Prone condition on land, it can't move. To end the condition, it must spend all of its movement to right itself, rather than an amount equal to half its Speed."
+   },
+   {
+    "name": "Radiant Illumination",
+    "type": "text",
+    "value": "The turtle sheds Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. A creature that starts its turn in the Bright Light or enters the area for the first time on a turn takes 3 (**1d6**) Radiant damage. The turtle can choose to produce only its Dim Light in a 30-foot radius or resume shedding its Bright Light and Dim Light (no action required)."
+   },
+   {
+    "name": "Realm Projection",
+    "type": "text",
+    "value": "While the turtle is only shedding Dim Light, it can choose to project an illusory copy of the Spirit Realm where it overlaps the turtle's Dim Light, including creatures and objects on that plane. It is clear that the projection is an illusion, retaining a faint warm glow from the turtle's light."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The turtle makes two attacks, using Chomp or Lantern Bolt in any combination."
+   },
+   {
+    "name": "Chomp",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5 to hit, reach 5 ft., one target. *Hit:* 9 (**2d8**) Piercing damage."
+   },
+   {
+    "name": "Lantern Bolt",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +4 to hit, range 60 ft., one target. *Hit:* 7 (**2d6**) Radiant damage."
+   },
+   {
+    "name": "Repelling Flare",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 12 Each creature within the turtle's Bright Light. *Failure:* The target has the Pacified condition until the end of the turtle's next turn. *Failure or Success*: The turtle's Radiant Illumination trait ceases to function until the end of its next turn, and it can't use its Lantern Bolt for the duration."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Aggressive Rotation",
+    "type": "text",
+    "value": "While in the water, the turtle automatically escapes from up to two grapples. *Dexterity Saving Throw:* DC 13 The grapplers. *Failure:* 3 (**1d6**) Bludgeoning damage, and the target has the Prone condition."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Last Memory",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Medium undead",
@@ -149244,6 +150417,123 @@
   "reprint": null
  },
  {
+  "name": "Living Memory",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Medium construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Living%20Memory.webp",
+  "url": "https://5e.tools/bestiary.html#living%20memory_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "16",
+      "16",
+      "7",
+      "8",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+3",
+      "+3",
+      "-2",
+      "-1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+3",
+      "+3",
+      "-2",
+      "-1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 15",
+     "**HP**: 96 (16d8 + 24)",
+     "**Speed**: 30 Ft.",
+     "**Skills**: intimidation +5 (Fury), performance +4 (Joy), stealth +5 (Sorrow)",
+     "**Immunities**: poison; blinded, exhaustion, frightened, poisoned",
+     "**Senses**: blindsight 30 ft.",
+     "**Languages**: Understands Common but can't speak",
+     "**CR**: 4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Emotional",
+    "type": "text",
+    "value": "The living memory can use its Impulsive Reactions (triggered by its Disposition) without taking a Reaction."
+   },
+   {
+    "name": "Not Yourself (Fury Only)",
+    "type": "text",
+    "value": "*Wisdom Saving Throw:* DC 13 The first creature the living memory deals damage to each turn. *Failure:* The target must take the Attack action on its next turn."
+   },
+   {
+    "name": "Overwhelming Aura (Joy Only)",
+    "type": "text",
+    "value": "*Intelligence Saving Throw:* DC 15 The first time a creature sees the living memory on each of its turns. *Failure:* The target has the Pacified condition until the end of its turn."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The living memory makes two Slam attacks."
+   },
+   {
+    "name": "Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5 to hit, reach 5 ft., one target. *Hit:* 8 (**1d10 + 3**) Bludgeoning damage."
+   },
+   {
+    "name": "Mental Haze (Recharge 6)",
+    "type": "text",
+    "value": "The living memory emits a near-undetectable mental static that passes over nearby creatures. *Wisdom Saving Throw:* DC 13 Each creature of the living memory's choice in a 20-foot Emanation originating from the living memory. *Failure:* The target has the Charmed condition for 1 minute. While Charmed, the target has the Incapacitated condition and a Speed of 0. The effect ends for the target if it takes any damage or if another creature uses an action to shake the creature out of its stupor."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Misery Loves Company (Sorrow Only)",
+    "type": "text",
+    "value": "The living memory creates a statuelike copy of itself in an unoccupied space within 5 feet of it. This copy is immobile and is easily understood to be a lifeless duplicate. The copy can be dispelled as if it were created by a level 3 spell, and it's destroyed after 1 hour or when it takes 10 or more damage from a single source. The living memory gains a +1 bonus to all its save DCs for each of its copies within 300 feet of it, to a maximum of DC 16."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Living Wick",
   "source": "ToB1-2023",
   "subtitle": "Small construct",
@@ -155059,6 +156349,307 @@
   "reprint": null
  },
  {
+  "name": "Mageguard Sphere",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Tiny construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#mageguard%20sphere_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A mageguard sphere is a small floating device designed to absorb harmful spells that target its ward. The sphere is most often made from wood, steel, brass, or other mundane materials."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Mageguard spheres are most often found in the vicinity of non-adventuring wizards who fear the surreptitious magic of rival wizards over the fangs and claws of marauding monsters."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A mageguard sphere bears a rudimentary intelligence that allows them to emit sounds, speak, and understand written or verbal commands. They normally respond to simple questions with monosyllabic answers and give only nonsensical replies to complex questions that require deeper thought or nuanced responses."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Vain or cunning creators sometimes disguise a mageguard sphere as something else, either to fool potential enemies or to impart an air of mystery or style. Roll or choose from the Mageguard Sphere Appearance table to determine how a creator might disguise their mageguard sphere."
+   },
+   {
+    "name": "The Mageguard Sphere Is Disguised As",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "The Mageguard Sphere Is Disguised As",
+     "headers": [
+      "1d10",
+      "The Mageguard Sphere Is Disguised As..."
+     ],
+     "rows": [
+      [
+       "1",
+       "A ball from some sport."
+      ],
+      [
+       "2",
+       "A bat, stirge, or other flying creature."
+      ],
+      [
+       "3",
+       "A child's toy."
+      ],
+      [
+       "4",
+       "A glowing ball of light."
+      ],
+      [
+       "5",
+       "An Ioun Stone."
+      ],
+      [
+       "6",
+       "A piece of fruit."
+      ],
+      [
+       "7",
+       "A rapidly blinking eye."
+      ],
+      [
+       "8",
+       "A semi-precious gemstone."
+      ],
+      [
+       "9",
+       "A tiny beholder with wavy eyestalks."
+      ],
+      [
+       "10",
+       "A will-o'-wisp crackling with static discharges."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "4",
+      "16",
+      "13",
+      "6",
+      "10",
+      "6"
+     ],
+     [
+      "Mod.",
+      "-3",
+      "+3",
+      "+1",
+      "-2",
+      "+0",
+      "-2"
+     ],
+     [
+      "Save.",
+      "-3",
+      "+3",
+      "+1",
+      "-2",
+      "+0",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 42 (12d4 + 12)",
+     "**Speed**: 10 Ft., Fly 40 Ft. (hover)",
+     "**Immunities**: poison; charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Common",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The mageguard sphere has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Spell Storing",
+    "type": "text",
+    "value": "A spellcaster bonded to the mageguard sphere can cause it to store one spell of level 2 or lower. To do so, the bonded spellcaster must cast the spell on the sphere while within 5 feet of it. The spell has no effect but is stored within the sphere. Any previously stored spell is lost when a new spell is stored. The sphere can cast the spell stored with any parameters set by the original caster, requiring no spell components and using the caster's spellcasting ability. The stored spell is then lost."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The mageguard sphere makes two Force Burst attacks."
+   },
+   {
+    "name": "Force Burst",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +5, reach 5 ft. or range 60 ft. *Hit:* 12 (**2d8 + 3**) Force damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Magiplasm",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Medium ooze",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#magiplasm_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Magical Minions Protecting Spell Slingers*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "One of the most bizarre and powerful magical bodyguards is an unusual ooze called a magiplasm. Though these translucent creatures appear similar to simple, mindless oozes, they are much more intelligent and obedient."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The formula for creating and bonding to a magiplasm is a well-guarded secret. Most spellcasters are hesitant to create and bond with a magiplasm, for it is rumored that the process replaces some of the spellcaster's personality with an eerie, heartless outlook."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Some spellcasters bonded to a magiplasm wear the creature like overlarge clothing. The strange and intimidating sight can often be enough to dissuade potential enemies."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "20",
+      "10",
+      "17",
+      "6",
+      "12",
+      "6"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+0",
+      "+3",
+      "-2",
+      "+1",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+5",
+      "+0",
+      "+7",
+      "-2",
+      "+5",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 10",
+     "**HP**: 150 (20d8 + 60)",
+     "**Speed**: 30 Ft., Climb 30 Ft.",
+     "**Immunities**: acid; charmed, deafened, exhaustion, grappled, prone, restrained",
+     "**Senses**: Blindsight 60 ft.",
+     "**Languages**: understands commands given in any language but can't speak",
+     "**CR**: 9"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Amorphous",
+    "type": "text",
+    "value": "The magiplasm can move through a space as narrow as 1 inch without expending extra movement to do so."
+   },
+   {
+    "name": "Spider Climb",
+    "type": "text",
+    "value": "The magiplasm can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The magiplasm makes two Slam attacks and uses Smother."
+   },
+   {
+    "name": "Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +9, reach 5 ft. *Hit:* 14 (**2d8 + 5**) Bludgeoning damage plus 4 (**1d8**) Acid damage."
+   },
+   {
+    "name": "Smother",
+    "type": "text",
+    "value": "*Strength Saving Throw:* DC 17, one Medium or smaller creature within 5 feet. *Failure:* The target takes 22 (**5d8**) Acid damage and has the Grappled condition (escape DC 17). Until the grapple ends, the target has the Blinded and Restrained conditions, is suffocating, and takes 9 (**1d8 + 5**) Acid damage at the start of each of its turns. The magiplasm can only smother one creature at a time."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Magma Elemental",
   "source": "DnDBeyondDrops",
   "subtitle": "Large elemental",
@@ -160306,6 +161897,105 @@
    }
   ],
   "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Melon Bird",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Tiny plant",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Melon%20Bird.webp",
+  "url": "https://5e.tools/bestiary.html#melon%20bird_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "13",
+      "14",
+      "12",
+      "3",
+      "10",
+      "5"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+2",
+      "+1",
+      "-4",
+      "+0",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+1",
+      "+2",
+      "+1",
+      "-4",
+      "+0",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 10 (3d4 + 3)",
+     "**Speed**: 10 Ft., Fly 30 Ft.",
+     "**Senses**: blindsight 30 ft.",
+     "**CR**: 1/8"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Death Burst",
+    "type": "text",
+    "value": "The melon bird explodes when it dies, creating Difficult Terrain in a 5-foot Emanation on the ground below it, which lasts for 1 minute. When a creature moves into or within this Difficult Terrain for the first time on a turn, it must succeed on a DC 11 Dexterity saving throw or have the Prone condition."
+   },
+   {
+    "name": "False Appearance",
+    "type": "text",
+    "value": "If the melon bird is motionless at the start of combat, it has Advantage on its Initiative roll. Moreover, if a creature hasn't observed the melon bird move or act, that creature must succeed on a DC 18 Intelligence (*Investigation*) check to discern that the melon bird isn't an ordinary melon."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3 to hit, reach 5 ft., one target. *Hit:* 3 (**1d4 + 1**) Bludgeoning damage. If the target is a Medium or smaller creature and the melon bird moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Seed Flourish (Recharge 4-6)",
+    "type": "text",
+    "value": "The melon bird spins rapidly, spitting seeds around itself. *Dexterity Saving Throw:* DC 11 Each creature in a 5-foot Emanation originating from the melon bird. *Failure:* The target takes 1 Bludgeoning damage. *Failure or Success*: The target can't make an Opportunity Attack against the melon bird for the rest of the turn."
+   }
+  ],
   "reprint": null
  },
  {
@@ -185282,6 +186972,97 @@
   "reprint": null
  },
  {
+  "name": "Pilot Leech",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Tiny fiend",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Pilot%20Leech.webp",
+  "url": "https://5e.tools/bestiary.html#pilot%20leech_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "3",
+      "14",
+      "12",
+      "10",
+      "14",
+      "11"
+     ],
+     [
+      "Mod.",
+      "-4",
+      "+2",
+      "+1",
+      "+0",
+      "+2",
+      "+0"
+     ],
+     [
+      "Save.",
+      "-4",
+      "+2",
+      "+1",
+      "+0",
+      "+2",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12",
+     "**HP**: 10 (3d4 + 3)",
+     "**Speed**: 10 Ft., Swim 10 Ft.",
+     "**Skills**: stealth +6",
+     "**Immunities**: acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, radiant, slashing, thunder; blinded, deafened, exhaustion, unconscious",
+     "**Senses**: blindsight 30 ft.",
+     "**Languages**: Understands Common and Torum but can't speak",
+     "**CR**: 0"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Bestial Shroud",
+    "type": "text",
+    "value": "Beasts have Disadvantage on Wisdom (*Perception*) checks to detect the leech."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Infect",
+    "type": "text",
+    "value": "*Intelligence Saving Throw:* DC 11 One Beast within 5 feet of the leech. *Failure:* The leech attaches itself to the target, infecting it. The leech controls the target, and can't be targeted by any attack or effect. They share the statistics of an infected beast but temporarily retain the Beast's original size; its size increases by one category every 24 hours until it is Gargantuan."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Piper Tenderfoot",
   "source": "HumblewoodTales",
   "subtitle": "Small humanoid",
@@ -187256,6 +189037,116 @@
     "name": "Defensive Cooking",
     "type": "text",
     "value": "When wielding a frying pan, the Postal Knight can gain a +1 bonus to AC until the end of its next turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Postal Knight Cavalry",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Small or Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Postal%20Knight%20Cavalry.webp",
+  "url": "https://5e.tools/bestiary.html#postal%20knight%20cavalry_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "16",
+      "14",
+      "12",
+      "11",
+      "13",
+      "13"
+     ],
+     [
+      "Mod.",
+      "+3",
+      "+2",
+      "+1",
+      "+0",
+      "+1",
+      "+1"
+     ],
+     [
+      "Save.",
+      "+3",
+      "+2",
+      "+1",
+      "+0",
+      "+1",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 33 (6d8 + 6)",
+     "**Speed**: 30 Ft.",
+     "**Skills**: athletics +5, intimidation +3, perception +5, survival +5",
+     "**Languages**: Common plus one other language",
+     "**CR**: 1"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Secretary's Swiftness",
+    "type": "text",
+    "value": "While mounted, the postal knight has Advantage on Dexterity saving throws and on any ability check it makes to remain mounted."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The postal knight makes two attacks, using Field Spear, Longsword, or Light Crossbow in any combination. Alternatively, the postal knight can make its mount attack twice."
+   },
+   {
+    "name": "Field Spear",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +5 to hit, reach 5 ft. or range 30/90 ft., one target. *Hit:* 6 (**1d6 + 3**) Slashing damage."
+   },
+   {
+    "name": "Longsword",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (**1d8 + 3**) Slashing damage."
+   },
+   {
+    "name": "Light Crossbow",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +4 to hit, range 80/320 ft., one target. *Hit:* 6 (**1d8 + 2**) Piercing damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Package Snatch",
+    "type": "text",
+    "value": "While mounted, the postal knight picks up and carries an ally or object within its reach that weighs no more than 250 pounds, provided it has a hand free to grab the target; the target's weight counts toward the mount's carrying capacity rather than the postal knight's. If the target is an object that is being worn or carried by an unwilling creature, that creature can make a DC 13 Strength or Dexterity saving throw (it chooses which), preventing the object from being taken on a success. The postal knight can choose to release the target at any time (no action required.)"
    }
   ],
   "reprint": null
@@ -209230,6 +211121,115 @@
   "reprint": null
  },
  {
+  "name": "Scrap Demon Swarm",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Medium swarm",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Scrap%20Demon%20Swarm.webp",
+  "url": "https://5e.tools/bestiary.html#scrap%20demon%20swarm_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "12",
+      "15",
+      "14",
+      "9",
+      "11",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+1",
+      "+2",
+      "+2",
+      "-1",
+      "+0",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+1",
+      "+2",
+      "+2",
+      "-1",
+      "+0",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 32 (5d8 + 10)",
+     "**Speed**: 30 Ft., Climb 30 Ft.",
+     "**Resistances**: bludgeoning, piercing, slashing",
+     "**Senses**: darkvision 60 ft.",
+     "**CR**: 2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Insatiable Appetite",
+    "type": "text",
+    "value": "If the swarm ends its turn in the same space it started, it can choose to consume any Medium or smaller nonmagical objects of its choice in a 5-foot Cube within 5 feet of it, provided they aren't being worn or carried. If an object is larger than that (such as a wall or a door), it eats through a 5-Cube portion of the object, but it stops if it eats through 1 foot of stone, dirt, or wood; or 1 inch of metal. If an object is destroyed in this way, the swarm regains 3 Hit Points."
+   },
+   {
+    "name": "Spry Body",
+    "type": "text",
+    "value": "Nonmagical Difficult Terrain doesn't cost the swarm extra movement."
+   },
+   {
+    "name": "Swarm",
+    "type": "text",
+    "value": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny mouse. The swarm can't regain Hit Points or gain Temporary Hit Points, except via its Insatiable Appetite and Deteriorate abilities."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Chomps",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4 to hit, reach 5 ft., one target. *Hit:* 11 (**2d8 + 2**) Piercing damage—or 6 (**1d8 + 2**) Piercing damage if the swarm is *Bloodied*—plus 7 (**2d6**) Necrotic damage."
+   },
+   {
+    "name": "Static",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +4 to hit, range 15 ft., one target. *Hit:* 14 (**4d6**) Lightning damage, or 7 (**2d6**) Lightning damage if the swarm is *Bloodied*."
+   },
+   {
+    "name": "Deteriorate (Recharge 6)",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 12 Each creature and structure in a 15-foot Emanation originating from the swarm. *Failure:* 14 (**4d6**) Necrotic damage. *Success* Half damage. *Failure or Success*: If a structure collapses due to this damage, the swarm gains 10 Temporary Hit Points."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Scrap Reautomata",
   "source": "MonstersOfDrakkenheim",
   "subtitle": "Medium undead",
@@ -210681,6 +212681,100 @@
     "name": "Slam",
     "type": "text",
     "value": "*Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (**2d6 + 3**) bludgeoning damage plus 3 (**1d6**) poison damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Secretary Bird",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Large beast",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Secretary%20Bird.webp",
+  "url": "https://5e.tools/bestiary.html#secretary%20bird_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "14",
+      "16",
+      "13",
+      "2",
+      "11",
+      "5"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+3",
+      "+1",
+      "-4",
+      "+0",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+2",
+      "+3",
+      "+1",
+      "-4",
+      "+0",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 26 (4d10 + 4)",
+     "**Speed**: 60 Ft.",
+     "**Skills**: perception +4",
+     "**Resistances**: poison",
+     "**CR**: 1/2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Leaping Glide",
+    "type": "text",
+    "value": "While the bird is falling and doesn't have the Incapacitated condition, it descends at a rate of 10 feet per round and can travel up to its Speed horizontally, and it takes no damage from the fall."
+   },
+   {
+    "name": "Sturdy",
+    "type": "text",
+    "value": "The bird has Advantage on saving throws to avoid the Prone condition and to avoid being pushed, pulled, or otherwise moved against its will."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Stomp",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4 to hit, reach 5 ft., one target. *Hit:* 8 (**1d10 + 3**) Bludgeoning damage. If the target is a Large or smaller creature and the bird moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition. *Hit or Miss:* The bird doesn't provoke Opportunity Attacks for the rest of the turn."
    }
   ],
   "bonusActions": [],
@@ -219025,6 +221119,109 @@
     "name": "Helping Hand",
     "type": "text",
     "value": "The squire grants a creature within 5 feet of them Valor (1d4) until the end of that creature's next turn."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Siphon Fish",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Small monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Siphon%20Fish.webp",
+  "url": "https://5e.tools/bestiary.html#siphon%20fish_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "14",
+      "15",
+      "14",
+      "4",
+      "11",
+      "3"
+     ],
+     [
+      "Mod.",
+      "+2",
+      "+2",
+      "+2",
+      "-3",
+      "+0",
+      "-4"
+     ],
+     [
+      "Save.",
+      "+2",
+      "+2",
+      "+4",
+      "-3",
+      "+0",
+      "-4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12",
+     "**HP**: 16 (3d6 + 6)",
+     "**Speed**: 0 Ft., Fly 30 Ft., Swim 30 Ft.",
+     "**Skills**: arcana +1, perception +2",
+     "**CR**: 1/4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Amphibious",
+    "type": "text",
+    "value": "The siphon fish can breathe air and water."
+   },
+   {
+    "name": "Arcane Siphon",
+    "type": "text",
+    "value": "At the start of each of the siphon fish's turns while it's attached to a creature, it attempts to drain some magical essence. *Constitution Saving Throw:* DC 12 The target that the siphon fish is attached to. *Failure:* The target loses one random spell slot or one use of a random spell it can cast a limited number of times per day, and the siphon fish gains a number of Temporary Hit Points equal to the level of the spell slot or spell lost. If the target has no spell slots or spells available to lose, it instead gains 1 Exhaustion level, and the siphon fish immediately detaches."
+   },
+   {
+    "name": "Magic Sense",
+    "type": "text",
+    "value": "The siphon fish can sense the presence of magical effects, as if by a __Detect Magic__ spell, as far as it can see."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Attach",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4 to hit, reach 5 ft., one target. *Hit:* 5 (**1d6 + 2**) Piercing damage, and the siphon fish attaches to the target. While the siphon fish is attached, it can't make Attach attacks, the target's Speed is reduced by 10 feet, and the magical properties of the target's Uncommon and Common magic items don't work. The siphon fish can detach itself by spending 5 feet of movement. The target or a creature within 5 feet of it can take an action to try to detach the siphon fish, doing so by succeeding on a DC 14 Strength (*Athletics*) check."
+   },
+   {
+    "name": "Consume Spell",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 12 One creature within 5 feet of the siphon fish that is currently under the effects of a spell; if the siphon fish is attached to a creature, it must target that creature with this effect. *Failure:* The spell immediately ends on the target, and the siphon fish gains a number of Temporary Hit Points equal to the spell's level."
    }
   ],
   "bonusActions": [],
@@ -228605,6 +230802,121 @@
     "value": "The spider thief throws a hooked wire at a point on a surface, such as the ground or wall, it can see within 30 feet of it, attaching one end of the wire to that point. It then reels in the wire, pulling itself to an unoccupied space within 5 feet of that point. It can bring along objects and willing creatures as long as their total weight doesn't exceed 100 pounds. When the spider moves in this way, opportunity attacks against it have disadvantage."
    }
   ],
+  "reprint": null
+ },
+ {
+  "name": "Spindle Stalker",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Small monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Spindle%20Stalker.webp",
+  "url": "https://5e.tools/bestiary.html#spindle%20stalker_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "16",
+      "13",
+      "3",
+      "12",
+      "5"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+1",
+      "-4",
+      "+1",
+      "-3"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+3",
+      "+1",
+      "-4",
+      "+1",
+      "-3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 17 (4d6 + 4)",
+     "**Speed**: 40 Ft., Climb 40 Ft.",
+     "**Skills**: perception +5, stealth +7",
+     "**Immunities**: poison; poisoned",
+     "**Senses**: blindsight special (see Doku Moss trait)",
+     "**CR**: 1/2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Blind",
+    "type": "text",
+    "value": "The stalker always has the Blinded condition. It doesn't suffer the effects of this condition against creatures within the area of its Blindsight."
+   },
+   {
+    "name": "Doku Moss",
+    "type": "text",
+    "value": "While the stalker is on a ceiling, a tendril of this moss hangs down in a 20-foot-long, 5-foot-wide Line below the stalker. While the stalker is on the ground, the moss instead curls around it in a 10-foot Emanation. The stalker has Blindsight in the moss's area. If a creature hasn't observed the stalker move or act, that creature must succeed on a DC 15 Intelligence (*Investigation*) check to discern the stalker's presence within the moss."
+   },
+   {
+    "name": "Poison Fetters",
+    "type": "text",
+    "value": "While the stalker is on the ground, the area of the stalker's Doku Moss is Difficult Terrain for creatures unless they have Immunity to the Poisoned condition."
+   },
+   {
+    "name": "Poison Pillar",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 13 A creature that enters the area of the stalker's Doku Moss while the stalker is hanging from the ceiling (a creature with Immunity to the Poisoned condition automatically succeeds on this save). *Failure:* The target has the Stunned condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+   },
+   {
+    "name": "Spider Climb",
+    "type": "text",
+    "value": "The stalker can climb difficult surfaces, including along ceilings, without needing to make an Ability Check."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Chomp",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +5 to hit, reach 5 ft., one target. *Hit:* 5 (**1d4 + 3**) Piercing damage plus 5 (**2d4**) Poison damage. If the target has the Stunned condition, it also gains 1 Exhaustion level. A creature that gains Exhaustion from a spindle stalker's Chomp can't gain it again in this way for 24 hours."
+   },
+   {
+    "name": "Tendril Tracking",
+    "type": "text",
+    "value": "While on the ground, the stalker whips its moss around itself to detect and hinder nearby creatures. *Dexterity Saving Throw:* DC 13 Each creature in a 20-foot Emanation (a creature with Immunity to the Poisoned condition automatically succeeds on this save). *Failure:* The target's Speed is halved until the end of its next turn. *Failure by 5 or More:* The target also has the Stunned condition for the duration. *Failure or Success*: Until the end of the stalker's turn, it has Blindsight in the area; its Blindsight returns to normal if it leaves the area."
+   }
+  ],
+  "bonusActions": [],
   "reprint": null
  },
  {
@@ -239602,6 +241914,151 @@
     "name": "Club",
     "type": "text",
     "value": "*Melee Attack Roll:* +2, reach 5 ft. *Hit:* 2 (**1d4**) Bludgeoning damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Tamh Gon",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Huge spirit",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Tamh%20Gon.webp",
+  "url": "https://5e.tools/bestiary.html#tamh%20gon_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "20",
+      "10",
+      "23",
+      "16",
+      "19",
+      "22"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+0",
+      "+6",
+      "+3",
+      "+4",
+      "+6"
+     ],
+     [
+      "Save.",
+      "+5",
+      "+0",
+      "+12",
+      "+3",
+      "+10",
+      "+12"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 225 (18d12 + 108)",
+     "**Speed**: 0 Ft., Fly 60 Ft. (hover)",
+     "**Initiative**: 1",
+     "**Skills**: arcana +9, history +15, insight +16, perception +10",
+     "**Senses**: truesight 120 ft.",
+     "**Languages**: Understands all but can't speak",
+     "**CR**: 18"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Festival Aura",
+    "type": "text",
+    "value": "Tamh Gon produces an aura of festivities in a 500-foot Emanation originating from itself. The aura produces a slow but persistent downfall of Tamh Gon's Confetti, which materializes 30 feet above the ground, and the air is filled with a soft, subtle drum beat. Creatures that enter the aura feel a euphoric splendor. *Constitution Saving Throw:* DC 20 A creature other than Tamh Gon that starts its turn in the aura. *Failure:* The target has the Pacified condition until the start of its next turn. *Success* The target is immune to Tamh Gon's Festival Aura for 24 hours."
+   },
+   {
+    "name": "Inscrutable",
+    "type": "text",
+    "value": "No magic can observe Tamh Gon remotely or detect its thoughts without its permission. Wisdom (*Insight*) checks made to ascertain Tamh Gon's intentions or sincerity are made with Disadvantage."
+   },
+   {
+    "name": "Legendary Resistance (3/Day)",
+    "type": "text",
+    "value": "If Tamh Gon fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "Tamh Gon has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Physical Binding",
+    "type": "text",
+    "value": "Tamh Gon can't fly higher than 120 feet above the ground while in the Physical Realm. Additionally, while Tamh Gon is within 120 feet of a Tear of the Moon, Tamh Gon can't teleport or travel to another plane of existence by any means short of a __Wish__ spell."
+   },
+   {
+    "name": "Speech Bubble",
+    "type": "text",
+    "value": "Tamh Gon can't verbally communicate, but instead produces illusory speech bubbles above its head. The text that appears in these bubbles is in the Torum (ObojimaTallGrass) language. All creatures with an Intelligence of 5 or higher can comprehend what Tamh Gon is saying—provided Tamh Gon is aware of the creature's presence—even if the creature can't read Torum (ObojimaTallGrass), can't normally speak a language, or can't see the speech bubble."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "Tamh Gon makes two Bell Slam attacks and uses one of its Chimes. It can replace one attack with a casting of one of its At Will spells."
+   },
+   {
+    "name": "Bell Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +11 to hit, reach 20 ft., one target. *Hit:* 15 (**3d6 + 5**) Bludgeoning damage plus 13 (**3d8**) Thunder damage."
+   },
+   {
+    "name": "Chimes",
+    "type": "text",
+    "value": "Tamh Gon uses one of the following chimes, affecting each creature of its choice (other than itself) in a 30-foot Emanation originating from itself:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Blast Chime**: *Strength Saving Throw:* DC 20 Each affected creature. *Failure:* The target has the Prone condition.",
+      "**Blessed Chime**: Each affected creature regains 9 (**2d8**) Hit Points.",
+      "**Resonant Chime**: *Strength Saving Throw:* DC 20 Each affected creature that is wearing or carrying a metal object. *Failure:* The target drops all metal objects it's holding. *Failure or Success*: The target takes 13 (**3d8**) Thunder damage.",
+      "**Restorative Chime**: Tamh Gon magically removes one of the following effects from each affected creature: 1 Exhaustion level, the Charmed or Petrified condition, or a curse (including the target's attunement to a cursed magic item)."
+     ]
+    }
+   },
+   {
+    "name": "Spirit Shift",
+    "type": "text",
+    "value": "Tamh Gon enters the Spirit Realm (Ethereal Plane) from the Physical Realm, or vice versa."
    }
   ],
   "bonusActions": [],
@@ -277476,6 +279933,111 @@
   "reprint": null
  },
  {
+  "name": "Yanari",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Tiny spirit",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Yanari.webp",
+  "url": "https://5e.tools/bestiary.html#yanari_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "3",
+      "11",
+      "10",
+      "10",
+      "9",
+      "12"
+     ],
+     [
+      "Mod.",
+      "-4",
+      "+0",
+      "+0",
+      "+0",
+      "-1",
+      "+1"
+     ],
+     [
+      "Save.",
+      "-4",
+      "+0",
+      "+0",
+      "+0",
+      "-1",
+      "+1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 10",
+     "**HP**: 5 (2d4)",
+     "**Speed**: 30 Ft., Fly 30 Ft. (hover)",
+     "**Skills**: perception +1",
+     "**Senses**: darkvision 60 ft.",
+     "**Languages**: Torum",
+     "**CR**: 0"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Ethereal Sight",
+    "type": "text",
+    "value": "The spirit can see 60 feet into the Spirit Realm (Ethereal Plane) while in the Physical Realm and vice versa."
+   },
+   {
+    "name": "Noise Sensitivity",
+    "type": "text",
+    "value": "While the spirit is in the Physical Realm, a creature within 30 feet of it can take an action to shout or scream at it. When this happens, the spirit must succeed on a DC 10 Constitution saving throw or have the Stunned condition until the start of its next turn."
+   },
+   {
+    "name": "Sonic Emergence",
+    "type": "text",
+    "value": "If a creature in the Physical Realm creates a sufficient amount of noise (at the GM's discretion) while within 60 feet of the spirit's corresponding location in the Spirit Realm, the spirit immediately returns to the Physical Realm."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Illusory Clatter",
+    "type": "text",
+    "value": "The spirit creates a sound within 30 feet of itself, as if by the __Minor Illusion__ spell (save DC 11). If it is in the Spirit Realm, the sound can be heard in the Physical Realm."
+   },
+   {
+    "name": "Shift",
+    "type": "text",
+    "value": "The spirit enters the Spirit Realm (Ethereal Plane) from the Physical Realm or vice versa."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Yarn Golem",
   "source": "ValdaPlayerPack2",
   "subtitle": "Tiny construct",
@@ -277924,6 +280486,106 @@
     "name": "Overpower",
     "type": "text",
     "value": "As a Bonus Action, Ylsa can shove an adjacent creature standing on Difficult Terrain. The creature must make a DC 16 Strength saving throw, gaining the Prone condition on a failure."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Yoka Scout",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Small or Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": "https://5e.tools/img/bestiary/tokens/ObojimaTalesYatamon/Yoka%20Scout.webp",
+  "url": "https://5e.tools/bestiary.html#yoka%20scout_obojimatalesyatamon",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "13",
+      "12",
+      "13",
+      "12",
+      "10"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+1",
+      "+1",
+      "+1",
+      "+1",
+      "+0"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+1",
+      "+1",
+      "+1",
+      "+1",
+      "+0"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 13",
+     "**HP**: 16 (3d8 + 3)",
+     "**Speed**: 30 Ft.",
+     "**Skills**: acrobatics +3, investigation +3, perception +5, stealth +5",
+     "**Languages**: Common",
+     "**CR**: 1/4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Confidence in Numbers",
+    "type": "text",
+    "value": "The scout has a +2 bonus to its attack rolls while it can see at least 2 of its allies."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Baseball Bat",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +3 (with Advantage if the target is a Demon [Fiend]) to hit, reach 5 ft., one target. *Hit:* 4 (**1d6 + 1**) Bludgeoning damage, or 8 (**2d6 + 1**) Bludgeoning damage if the target is a Demon (Fiend)."
+   },
+   {
+    "name": "Sling",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +3 (with Advantage if the target is a Demon [Fiend]) to hit, range 80/320 ft., one target. *Hit:* 3 (**1d4 + 1**) Bludgeoning damage, or 6 (**2d4 + 1**) Bludgeoning damage if the target is a Demon (Fiend)."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Quick Thinking",
+    "type": "text",
+    "value": "The scout takes the Influence, Search, or Study action."
    }
   ],
   "reprint": null
