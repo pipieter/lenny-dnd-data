@@ -18,6 +18,7 @@ import {
     getActionsUrl,
     getBestiaryUrl,
     getCharCreationOptionUrl,
+    getConditionsDiseasesUrl,
     getFeatsUrl,
     getImageUrl,
     getItemsUrl,
@@ -602,6 +603,9 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
                 case 'charoption':
                     link = getCharCreationOptionUrl(name, source);
                     break;
+                case 'condition':
+                    link = getConditionsDiseasesUrl(name, source);
+                    break;
                 case 'creature':
                     link = getBestiaryUrl(name, source);
                     break;
@@ -1177,6 +1181,12 @@ export function parsePrerequisite(
                 proficiencies.push(joinStringsWithOr(prerequisite.proficiency.skill as string[]));
             parsed.push(...proficiencies);
             delete prerequisite.proficiency;
+        }
+
+        if (prerequisite.membership) {
+            const memberOf = joinStringsWithOr(prerequisite.membership, false);
+            parsed.push(`Member of ${memberOf}`);
+            delete prerequisite.membership;
         }
 
         const remaining = Object.keys(prerequisite);
