@@ -422,7 +422,7 @@ export function getItemVariants(databank: Databank): ParsedItem[] {
 
 export function getMagicVariants(databank: Databank): ParsedItem[] {
     const data = new ItemData(databank);
-    return databank.magicvariant.map((variant) => {
+    return databank.magicvariant.flatMap((variant) => {
         const result = Object.assign({}, variant, variant.inherits);
 
         if (variant.entries) {
@@ -431,21 +431,12 @@ export function getMagicVariants(databank: Databank): ParsedItem[] {
             result.entries = [...(variant.inherits?.entries ?? []), ...(variant.entries || [])];
         }
 
-        // Remove value
-        if (!variant.inherits?.value) {
-            result.value = undefined;
-        }
         delete result.inherits;
         delete result.excludes;
         delete result.requires;
 
-        let base: ItemBase = {
-            ...result,
-            name: result.name ?? 'TODO',
-            source: result.source ?? 'TODO',
-        } as ItemBase;
-
-        base = resolveItemEntry(base, databank.itemEntry);
-        return parseItem(base, [], data);
+        if (!result.name || !result.source) return [];
+        const base = resolveItemEntry(result as ItemBase, databank.itemEntry);
+        return [parseItem(base, [], data)];
     });
 }
