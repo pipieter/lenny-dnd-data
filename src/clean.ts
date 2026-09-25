@@ -179,6 +179,8 @@ function atk(text: string, noFormat: boolean): string {
         ['{@atkr m,s}', 'Melee or Spell Attack Roll:'],
         ['{@atkr rs}', 'Ranged Spell Attack Roll:'],
         ['{@atk g}', 'Magical Attack:'],
+        ['{@atk +4}', '+4 Attack:'], // Used in Pneuma Blade -> Pneumatic Strike, but is seemingly bugged on 5e-tools' end https://5e.tools/items.html#pneuma%20blade%20(rare)_helianasguidetomonsterhunting
+        ['{@atk +5}', '+5 Attack:'], // Used in Pneuma Blade -> Pneumatic Strike, but is seemingly bugged on 5e-tools' end https://5e.tools/items.html#pneuma%20blade%20(rare)_helianasguidetomonsterhunting
     ]);
 
     if (!noFormat) {

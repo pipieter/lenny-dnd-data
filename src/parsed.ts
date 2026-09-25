@@ -39,6 +39,7 @@ export class ParsedDatabank {
     public readonly hazards: ParsedHazard[] = [];
     public readonly items: ParsedItem[] = [];
     public readonly itemsvariants: ParsedItem[] = [];
+    public readonly magicvariants: ParsedItem[] = [];
     public readonly languages: ParsedLanguage[] = [];
     public readonly life: ParsedLife[] = [];
     public readonly names: ParsedSpeciesNames[] = [];
