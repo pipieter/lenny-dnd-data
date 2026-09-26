@@ -154,6 +154,12 @@ function actTrigger(text: string, noFormat: boolean): string {
 }
 
 function atk(text: string, noFormat: boolean): string {
+    // Unique case: use of attack modifier
+    text = text.replace(/\{@atk\s+([+-]\d+)\}/gi, (match, modifier) => {
+        const replace = `${modifier} Attack:`;
+        return noFormat ? replace : `*${replace}*`;
+    });
+
     // converterutils-creature.js:584
     const replacements = new Map<string, string>([
         ['{@atk mw}', 'Melee Weapon Attack:'],

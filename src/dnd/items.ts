@@ -419,3 +419,24 @@ export function getItemVariants(databank: Databank): ParsedItem[] {
     }
     return raw.map((variant) => parseItem(variant, fluffs, data));
 }
+
+export function getMagicVariants(databank: Databank): ParsedItem[] {
+    const data = new ItemData(databank);
+    return databank.magicvariant.flatMap((variant) => {
+        const result = Object.assign({}, variant, variant.inherits);
+
+        if (variant.entries) {
+            result.entries = variant.entries;
+        } else {
+            result.entries = [...(variant.inherits?.entries ?? []), ...(variant.entries || [])];
+        }
+
+        delete result.inherits;
+        delete result.excludes;
+        delete result.requires;
+
+        if (!result.name || !result.source) return [];
+        const base = resolveItemEntry(result as ItemBase, databank.itemEntry);
+        return [parseItem(base, [], data)];
+    });
+}
