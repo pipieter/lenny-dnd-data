@@ -1,6 +1,6 @@
 import { joinStringsWithOr } from '../util';
 import { parseAbilityScore } from './base';
-import { containsDisallowedSymbols, cleanDNDText } from './clean';
+import { cleanDNDText, containsDisallowedSymbols } from './clean';
 import {
     get5eToolsUrl,
     getActionsUrl,
