@@ -5,6 +5,7 @@ import {
     ClassProficiency,
     ConditionalSpeed,
     Distance,
+    Duration,
     Prerequisite,
     Range,
     Resist,
@@ -220,10 +221,6 @@ export function parseSingleTime(time: Unit): string {
             else result = `${amount} bonus actions`;
             break;
         }
-        case 'special': {
-            result = `Special`;
-            break;
-        }
         default: {
             if (amount == 1) result = `${amount} ${unit}`;
             else result = `${amount} ${unit}s`;
@@ -241,46 +238,44 @@ export function parseSingleTime(time: Unit): string {
     return result;
 }
 
-export function parseCastingTime(time: any, meta: any): string {
-    const is_ritual = meta != undefined && meta.ritual;
+export function parseCastingTime(time: Unit[], meta?: { ritual: boolean }): string {
+    const ritual = meta?.ritual ?? false;
     if (Array.isArray(time)) {
         const castingTimes = time.map(parseSingleTime);
-        if (is_ritual) castingTimes.push('Ritual');
+        if (ritual) castingTimes.push('Ritual');
         return joinStringsWithOr(castingTimes, false);
     }
 
-    if (is_ritual) return `${parseSingleTime(time)} or Ritual`;
+    if (ritual) return `${parseSingleTime(time)} or Ritual`;
     return parseSingleTime(time);
 }
 
-export function parseDurationTime(durations: any[] | any): string {
+export function parseDurationTime(durations: Duration[]): string {
     if (!Array.isArray(durations)) durations = [durations];
 
-    const results: string[] = durations.map(
-        (d: { type: any; duration: { amount: any; type: any }; concentration: any }) => {
-            switch (d.type) {
-                case 'instant':
-                    return 'Instantaneous';
+    const results: string[] = durations.map((duration) => {
+        switch (duration.type) {
+            case 'instant':
+                return 'Instantaneous';
 
-                case 'special':
-                    return 'Special';
+            case 'special':
+                return 'Special';
 
-                case 'permanent':
-                    return 'Until dispelled';
+            case 'permanent':
+                return 'Until dispelled';
 
-                case 'timed': {
-                    const amount = d.duration.amount;
-                    const unit = d.duration.type;
-                    const time = amount > 1 ? `${amount} ${unit}s` : `${amount} ${unit}`;
+            case 'timed': {
+                const amount = duration.duration.amount;
+                const unit = duration.duration.type;
+                const time = amount > 1 ? `${amount} ${unit}s` : `${amount} ${unit}`;
 
-                    return d.concentration ? `Concentration, up to ${time}` : time;
-                }
-
-                default:
-                    throw new Error(`Unsupported duration type: ${d.type}`);
+                return duration.concentration ? `Concentration, up to ${time}` : time;
             }
+
+            default:
+                throw new Error(`Unsupported duration type: ${duration}`);
         }
-    );
+    });
 
     if (durations.length > 1) return `${joinStringsWithOr(results, false)} (see below)`; // If there's more than one duration, there's always an explanation as to why.
     return joinStringsWithOr(results, false);
