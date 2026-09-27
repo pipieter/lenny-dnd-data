@@ -12,6 +12,7 @@ import {
     SpellComponents,
     Unit,
 } from '../5etools-collector/types/internal/base';
+import { EntryImage } from '../5etools-collector/types/internal/entry';
 import { Variadic } from '../5etools-collector/types/internal/util';
 import { SpellBase } from '../5etools-collector/types/spell';
 import { cleanDNDText } from './clean';
@@ -122,14 +123,19 @@ const AttackAbbrMap = new Map([
     ['m,r', 'Melee or Ranged Attack Roll'],
     ['g', 'Magical Attack'],
 ]);
-export function parseImageUrl(data: any[]): string | null {
+
+export function parseImageUrl(data: EntryImage[]): string | null {
     for (const datum of data) {
         if (datum.type != 'image') continue;
 
         const href = datum.href;
-        if (href.type == 'internal') return getImageUrl(href.path);
-        else if (href.type == 'external') return href.path as string;
-        else throw `Unknown image href type '${href.type}'`;
+        if (href.type == 'internal') {
+            return getImageUrl(href.path);
+        } else if (href.type == 'external') {
+            return encodeURI(href.url) as string;
+        }
+
+        throw `Unknown image href type '${href}'`;
     }
 
     return null;
