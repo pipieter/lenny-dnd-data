@@ -125,7 +125,7 @@ export abstract class Databank {
     public readonly sidekick: Class[] = [];
     // Rules
     public readonly variantrule: Rule[] = [];
-    public readonly sense: Sense[] = [];
+    public readonly sense: any[] = [];
     // Hazards
     public readonly trap: Hazard[] = [];
     public readonly hazard: Hazard[] = [];
