@@ -9,7 +9,7 @@ import { getCults } from './dnd/cults';
 import { getDeities } from './dnd/deities';
 import { getFeats } from './dnd/feats';
 import { getTrapsAndHazards } from './dnd/hazards';
-import { getItemVariants, getItems } from './dnd/items';
+import { getItemVariants, getItems, getMagicVariants } from './dnd/items';
 import { getLanguages } from './dnd/languages';
 import { getLife } from './dnd/life';
 import { getNames } from './dnd/names';
@@ -35,6 +35,9 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
 
     const itemVariants = getItemVariants(databank);
     stopwatch.log('Items variant retrieved');
+
+    const magicVariants = getMagicVariants(databank);
+    stopwatch.log('Magic Variants retrieved');
 
     const spells = getSpells(databank);
     stopwatch.log('Spells retrieved');
@@ -104,6 +107,7 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
 
     parsed.items.push(...items);
     parsed.itemsvariants.push(...itemVariants);
+    parsed.magicvariants.push(...magicVariants);
     parsed.spells.push(...spells);
     parsed.conditions.push(...conditions);
     parsed.diseases.push(...diseases);

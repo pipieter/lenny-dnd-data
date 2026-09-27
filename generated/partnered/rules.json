@@ -6862,6 +6862,99 @@
   "reprint": null
  },
  {
+  "name": "Disposition System",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/variantrules.html#disposition%20system_obojimatalesyatamon",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Disposition System serves as a mechanical representation of a creature's emotional mindset and manifest as a series of Reactions given to the creature's stat block. Dispositions can bring a level of depth and nuance to a combat encounter, especially to a creature that an adventuring party has already faced."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See List of Dispositions's stats here](https://5e.tools/tables.html#list%20of%20dispositions_obojimatalesyatamon)"
+   },
+   {
+    "name": "Assigning a Disposition",
+    "type": "text",
+    "value": "In addition to a creature's regular stat block, you might also find one or more Disposition tables."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each table offers a special list of Reactions (called \"Impulsive Reactions\") the creature can take during combat, which are indicative of the emotions or motivations the Disposition represents."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "For example, if a bear is awakened while sleeping, you might choose to give it the Skittish Disposition."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "It's important to note that, even though a Disposition is meant to offer a mixture of roleplay and mechanics, it can affect the Challenge Rating of a creature."
+   },
+   {
+    "name": "Hit Point Thresholds",
+    "type": "text",
+    "value": "Hit Point Thresholds represent a moment in combat when the creature makes a snap decision based on how it's feeling."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a creature's Hit Points are reduced to or below a specific Threshold, it gains access to one of the Impulsive Reactions from its Disposition table."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "For example, the moment the bear drops to 25 Hit Points, it triggers its Impulsive Reaction, which allows it to move up to 40 feet away from the creature that attacked it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a Threshold is reached, an Impulsive Reaction is triggered, and the creature must use the Impulsive Reaction by taking its Reaction, if available. If the creature's Reaction is not available, it loses its opportunity to use that Impulsive Reaction. Once a Hit Point Threshold has been reached, that Impulsive Reaction can't be triggered again (whether it was used or not) until the creature finishes a Short Rest or Long Rest."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If damage from a single attack or effect causes multiple Thresholds to be reached at the same time, you can choose which of the triggered Impulsive Reactions the creature uses."
+   },
+   {
+    "name": "Learning a Creature's Disposition",
+    "type": "text",
+    "value": "To determine the Disposition of a creature, a character can take the Search action to make a Wisdom (*Insight*) check, provided it can see the creature. The DC to determine the Disposition of a creature is equal to 10 plus half the creature's CR."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Learning the Disposition of a creature does not inform a character of the creature's Impulsive Reactions, but it may provide insight into how the creature might act during combat."
+   },
+   {
+    "name": "Creating Your Own Dispositions",
+    "type": "text",
+    "value": "Below you'll find a list of guidelines to follow when designing your own Dispositions:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "A creature must have a Hit Point minimum of 20 or higher for it to gain a Disposition.",
+      "There must be a minimum of 20 Hit Points between Hit Point Thresholds.",
+      "A Hit Point Threshold must be no less than 5 Hit Points below a creature's Hit Point maximum.",
+      "Impulsive Reactions are meant to be an extension of the creature's feelings or personality."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Drunkenness Level",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/variantrules.html#drunkenness%20level_griffonssaddlebag2",
@@ -8965,6 +9058,257 @@
     "name": "",
     "type": "text",
     "value": "[See Travel Pace in the North's stats here](https://5e.tools/trapshazards.html#travel%20pace%20in%20the%20north_northlandsworldbook)"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Operating Vehicles",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/variantrules.html#operating%20vehicles_obojimatalesyatamon",
+  "ruleType": "Variant Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Though there are many unique aspects to the different types of vehicles, there is a general set of rules that apply when driving any of them. Vehicle properties, which are listed later in this section, allow certain vehicles to ignore or alter some of the rules detailed in this section."
+   },
+   {
+    "name": "Driving & Riding in a Vehicle",
+    "type": "text",
+    "value": "All vehicles have a Crew, which is the number of creatures required to operate the vehicle. Each type of vehicle also has a maximum number of Passengers, which is the number of other Small and Medium creatures that can be transported by the vehicle at a time, in addition to its Crew."
+   },
+   {
+    "name": "Mounting or Entering a Vehicle",
+    "type": "text",
+    "value": "During your move, you can enter, exit, mount, or dismount a vehicle by spending an amount of movement equal to half your Speed (round down). You can't enter or mount a vehicle if it already has its maximum number of Crew and Passengers within or on it. You also can't enter a vehicle if it has the Flipped or Locked condition (see Vehicle Conditions)."
+   },
+   {
+    "name": "Controlling a Vehicle",
+    "type": "text",
+    "value": "If you wish to serve as a member of a vehicle's Crew, you must have at least one free hand, and you must take a Bonus Action to operate the vehicle on each of your turns. If the vehicle must first be powered on, you can do so as part of the Bonus Action you take to begin operating it. You can also power off such a vehicle at any point on your turn (no action required)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In order for two creatures to exchange control of a vehicle, one must take a Utilize action and the other must simultaneously take a Reaction to change places."
+   },
+   {
+    "name": "Vehicle Movement",
+    "type": "text",
+    "value": "Vehicles have two kinds of speeds: a Combat Speed for shorter-distance movement (measured in feet per round) and a Travel Speed for long-distance, out-of-combat movement (measured in miles per hour). While you're serving as a member of a vehicle's Crew or are a vehicle's Passenger, you ignore your Speed, instead moving with the vehicle as it moves."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A vehicle can never move more than its maximum Combat Speed in a round, regardless of whether another creature takes control of it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If you're the sole member of a vehicle's Crew in combat, you spend its movement as you would typically spend your own movement, controlling where the vehicle moves on each of your turns; you can't take the Dash action while controlling a vehicle to gain extra movement for the current turn. If a vehicle requires a Crew of more than one creature, one of those creatures must be designated to control the vehicle's movement."
+   },
+   {
+    "name": "Running into Other Targets",
+    "type": "text",
+    "value": "A vehicle's Speed is halved when it hits a creature or object that is smaller than it. It instead completely stops if the creature or object it hits is the same size as the vehicle or larger, or if the target is otherwise unable to be moved."
+   },
+   {
+    "name": "Changing Direction",
+    "type": "text",
+    "value": "Sharply turning a vehicle or reversing its direction during combat requires additional caution and effort. To do so, the creature controlling the vehicle must spend an amount of the vehicle's movement equal to half its Combat Speed (round down)."
+   },
+   {
+    "name": "Performing Complex Maneuvers",
+    "type": "text",
+    "value": "If the creature controlling the vehicle wishes to perform a complex maneuver, it can make a Maneuvering check. To make this ability check, the creature rolls 1d20 plus its Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "Cargo & Towing",
+    "type": "text",
+    "value": "All vehicles have a Cargo Capacity, which is the amount of weight the vehicle can carry. Cargo ignores the weight of the vehicle's Crew and Passengers, only factoring in the weight of any objects inside or on top of the vehicle that aren't otherwise being worn by a creature."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A vehicle can also tow or drag an additional amount of weight up to its Cargo Capacity. If a vehicle is carrying no cargo, it can therefore tow a total amount of weight up to twice its Cargo Capacity."
+   },
+   {
+    "name": "Vehicles in Combat",
+    "type": "text",
+    "value": "Vehicles use the following special rules in combat."
+   },
+   {
+    "name": "Vehicle Armor Class & Hit Points",
+    "type": "text",
+    "value": "Refer to the [Vehicles Table](https://5e.tools/tables.html#vehicles%20table_obojimatalesyatamon) for each vehicle's AC and Hit Point maximum. A vehicle is destroyed when it has 0 Hit Points."
+   },
+   {
+    "name": "Targeting a Vehicle",
+    "type": "text",
+    "value": "Vehicles can be attacked like any other object. Spells and other effects that target creatures (such as the __Fireball__ spell) can also target vehicles."
+   },
+   {
+    "name": "Damaging a Vehicle",
+    "type": "text",
+    "value": "Vehicles have Immunity to Poison and Psychic damage. They also have a damage threshold, as shown in the [Vehicles Table](https://5e.tools/tables.html#vehicles%20table_obojimatalesyatamon)."
+   },
+   {
+    "name": "Massive Damage",
+    "type": "text",
+    "value": "If a vehicle takes damage that equals or exceeds half its Hit Point maximum (round down) from a single attack or effect, it gains the Flipped condition (see Vehicle Conditions)."
+   },
+   {
+    "name": "Damage Threshold",
+    "type": "text",
+    "value": "A creature or an object that has a damage threshold has Immunity to all damage unless it takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, in which case it takes that entire instance of damage. Any damage that fails to meet or exceed the damage threshold is superficial and doesn't reduce Hit Points."
+   },
+   {
+    "name": "Saving Throws",
+    "type": "text",
+    "value": "Vehicles always fail Strength and Dexterity saving throws, and they are immune to effects that require other saves as well as conditions that aren't detailed in the Vehicle Conditions section."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The Crew and Passengers of a Piloted vehicle automatically fail Strength and Dexterity saving throws against effects that target them, but they take only half damage from such effects."
+   },
+   {
+    "name": "Going Prone on a Mounted Vehicle",
+    "type": "text",
+    "value": "If a creature on a Mounted vehicle gains the Prone condition, it can stay mounted on the vehicle, but the vehicle immediately stops and can't move until it is righted. While Prone on a vehicle, the creature can't crawl, and it spends an amount of the vehicle's movement equal to half its Combat Speed to end that condition, rather than spending its own movement."
+   },
+   {
+    "name": "Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle moved at least 10 feet in a straight line immediately before successfully ramming a target, the target takes an amount of Bludgeoning damage based on the vehicle's Size Modifier: **1d6** (Size 1), **2d6** (Size 2), **3d6** (Size 3), **4d6** (Size 4), **5d6** (Size 5), or **6d6** (Size 6). The target takes twice as much damage if the vehicle moved at least 20 feet before ramming it, or three times as much damage if the vehicle moved 30 feet or more before ramming it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's damage threshold."
+   },
+   {
+    "name": "Vehicle Conditions",
+    "type": "text",
+    "value": "Vehicles can be subjected to the following conditions."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Flipped's stats here](https://5e.tools/conditionsdiseases.html#flipped_obojimatalesyatamon)"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Immobile's stats here](https://5e.tools/conditionsdiseases.html#immobile_obojimatalesyatamon)"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Locked's stats here](https://5e.tools/conditionsdiseases.html#locked_obojimatalesyatamon)"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Uncontrolled's stats here](https://5e.tools/conditionsdiseases.html#uncontrolled_obojimatalesyatamon)"
+   },
+   {
+    "name": "Repairing a Vehicle",
+    "type": "text",
+    "value": "Repairs to a damaged vehicle can be made while the vehicle is in a repair shop. Repairing 1 Hit Point of damage requires 8 hours of work and costs 10 GF for materials and labor. Alternatively, a creature can repair a vehicle by making an Intelligence (*Mechanics*) check using Tinker's Tools over the course of 8 hours, which costs 5 GF for materials. Doing so repairs a number of Hit Points equal to the result of the check –10 (minimum of 1 Hit Point)."
+   },
+   {
+    "name": "Spirit-Whelmed Vehicles",
+    "type": "text",
+    "value": "If a vehicle is operational, a spirit can whelm it, disappearing into the vehicle and powering it. To do so, the spirit must take a Magic action while touching the vehicle. Additionally, the spirit's Challenge Rating must be equal to or greater than the vehicle's Size Modifier or the vehicle fails to power on. If multiple spirits attempt to whelm a vehicle, their combined CR must be equal to or greater than the vehicle's Size Modifier in order to power it; spirits with a CR of less than 1 count as CR 1/2 for the purpose of calculating their combined CR."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "While whelming a vehicle, a spirit must take a Utilize action to power the vehicle on each of its turns, and it ignores its Speed, instead moving with the vehicle as it moves. The spirit can see and use its other senses as if it were at the front of the vehicle. On the spirit's turn, it can choose to stop whelming the vehicle (no action required), exiting it and reappearing in an unoccupied space within 5 feet of it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle takes damage equal to or greater than the spirit's Hit Point maximum, or if the vehicle is destroyed, the spirit is shunted out of the vehicle, ending its whelm early."
+   },
+   {
+    "name": "Spirits Controlling Vehicles",
+    "type": "text",
+    "value": "If a spirit that is whelming a vehicle has an Intelligence of 7 or higher, it can control the vehicle as if it were a member of the vehicle's Crew (see Controlling a Vehicle). If a spirit is controlling a vehicle when the vehicle takes damage, it must make a Constitution saving throw to maintain *Concentration*. The DC equals 10 or half the damage taken by the vehicle (round down), whichever number is higher, up to a maximum DC of 30. On a failed save, the spirit's whelm ends early."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A spirit that is whelming a vehicle that is already being operated can take a Bonus Action to wrestle for its control (provided the spirit can normally power it). The creature currently operating the vehicle must make a Dexterity saving throw, or an Intelligence saving throw if it's whelming the vehicle. The DC for the save equals 10 + the CR of the intruding spirit. On a failed save, the intruding spirit takes control."
+   },
+   {
+    "name": "Vehicle Classifications",
+    "type": "text",
+    "value": "A vehicle's classification expresses how a character is situated in or on the vehicle while operating or riding in it. This classification determines how certain mechanics affect the vehicle as well as its Crew and Passengers."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Mounted**: The vehicle has no entry point and is straddled rather than entered.",
+      "**Piloted**: The vehicle requires a creature to enter it in order to operate it. Creatures inside this vehicle have Half Cover."
+     ]
+    }
+   },
+   {
+    "name": "Aquatic",
+    "type": "text",
+    "value": "This vehicle can only move in the water."
+   },
+   {
+    "name": "Encased",
+    "type": "text",
+    "value": "This vehicle is completely closed off from the surrounding environment. Creatures inside it are Heavily Obscured and have Total Cover from creatures outside it."
+   },
+   {
+    "name": "Feather",
+    "type": "text",
+    "value": "This vehicle can't deal damage when it rams a target."
+   },
+   {
+    "name": "Flying",
+    "type": "text",
+    "value": "This vehicle can only move through the air."
+   },
+   {
+    "name": "Nimble",
+    "type": "text",
+    "value": "The creature controlling this vehicle doesn't need to spend any of the vehicle's movement to change its direction."
+   },
+   {
+    "name": "Pedalled",
+    "type": "text",
+    "value": "The creature controlling this vehicle can take the Dash action to gain extra movement for the current turn."
+   },
+   {
+    "name": "Simple",
+    "type": "text",
+    "value": "This vehicle doesn't require the creature controlling it to take a Bonus Action on each of its turns; it still has the Uncontrolled condition if the creature controlling it has the Incapacitated condition. If the vehicle must be powered on in order to begin operating it, it still requires a Bonus Action to do so."
+   },
+   {
+    "name": "Wide",
+    "type": "text",
+    "value": "When ramming a creature using this vehicle, each creature within 5 feet of the target must also make the Dexterity saving throw."
+   },
+   {
+    "name": "Vehicles Table",
+    "type": "text",
+    "value": "[See Vehicles Table's stats here](https://5e.tools/tables.html#vehicles%20table_obojimatalesyatamon)"
    }
   ],
   "reprint": null

@@ -28,6 +28,34 @@
   "reprint": null
  },
  {
+  "name": "Bicycle",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Medium Ship",
+  "url": "https://5e.tools/vehicles.html#bicycle_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/Bicycle.webp",
+  "creatureCapacity": "1 crew",
+  "cargoCapacity": "0.01 tons",
+  "travelPace": "15 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Land speed:* 60 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Dog Sled",
   "source": "NorthlandsWorldbook",
   "subtitle": "Large Ship",
@@ -67,6 +95,100 @@
       "**Shield Wall**: The rowers raise their shields in defense. This grants creatures in the ship a +5 bonus to their Armor Class and Dexterity Saving throws, but the ship's current Speed is halved until the end of the next round."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Flying Broom",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Medium Ship",
+  "url": "https://5e.tools/vehicles.html#flying%20broom_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/Flying%20Broom.webp",
+  "creatureCapacity": "1 crew",
+  "cargoCapacity": "0.01 tons",
+  "travelPace": "10 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Air speed:* 40 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Flying Lantern",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Huge Ship",
+  "url": "https://5e.tools/vehicles.html#flying%20lantern_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/Flying%20Lantern.webp",
+  "creatureCapacity": "1 crew\n5 passengers",
+  "cargoCapacity": "1 tons",
+  "travelPace": "10 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Air speed:* 40 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle moved at least 10 feet in a straight line immediately before successfully ramming a target, the target takes **3d6** Bludgeoning damage. The target takes twice as much damage if the vehicle moved at least 20 feet before ramming it, or three times as much damage if the vehicle moved 30 feet or more before ramming it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "K-Truck",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Large Ship",
+  "url": "https://5e.tools/vehicles.html#k-truck_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/K-Truck.webp",
+  "creatureCapacity": "1 crew\n1 passenger",
+  "cargoCapacity": "0.5 tons",
+  "travelPace": "40 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Land speed:* 160 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle moved at least 10 feet in a straight line immediately before successfully ramming a target, the target takes **2d6** Bludgeoning damage. The target takes twice as much damage if the vehicle moved at least 20 feet before ramming it, or three times as much damage if the vehicle moved 30 feet or more before ramming it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
    }
   ],
   "reprint": null
@@ -132,6 +254,39 @@
   "reprint": null
  },
  {
+  "name": "Motorcycle",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Medium Ship",
+  "url": "https://5e.tools/vehicles.html#motorcycle_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/Motorcycle.webp",
+  "creatureCapacity": "1 crew\n1 passenger",
+  "cargoCapacity": "0.05 tons",
+  "travelPace": "75 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Land speed:* 300 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle moved at least 10 feet in a straight line immediately before successfully ramming a target, the target takes **1d6** Bludgeoning damage. The target takes twice as much damage if the vehicle moved at least 20 feet before ramming it, or three times as much damage if the vehicle moved 30 feet or more before ramming it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Naval Ram",
   "source": "NorthlandsWorldbook",
   "subtitle": "Ship Upgrade, Siege Weapon",
@@ -185,6 +340,39 @@
       "**Worg Attack**: The sled moves at least 10 feet in a straight line, ending adjacent to a creature or object. The two __Worgs__ pulling the sled may each make one attack against the target. If both __Worgs__ hit with their attacks, the driver may also make one melee weapon attack against the target."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Scooter / Vespa",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Medium Ship",
+  "url": "https://5e.tools/vehicles.html#scooter%20%2F%20vespa_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/Scooter%20/%20Vespa.webp",
+  "creatureCapacity": "1 crew\n1 passenger",
+  "cargoCapacity": "0.025 tons",
+  "travelPace": "20 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Land speed:* 80 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle moved at least 10 feet in a straight line immediately before successfully ramming a target, the target takes **1d6** Bludgeoning damage. The target takes twice as much damage if the vehicle moved at least 20 feet before ramming it, or three times as much damage if the vehicle moved 30 feet or more before ramming it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
    }
   ],
   "reprint": null
@@ -250,6 +438,39 @@
   "reprint": null
  },
  {
+  "name": "Small Car",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Large Ship",
+  "url": "https://5e.tools/vehicles.html#small%20car_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/Small%20Car.webp",
+  "creatureCapacity": "1 crew\n3 passengers",
+  "cargoCapacity": "0.25 tons",
+  "travelPace": "50 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Land speed:* 200 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle moved at least 10 feet in a straight line immediately before successfully ramming a target, the target takes **2d6** Bludgeoning damage. The target takes twice as much damage if the vehicle moved at least 20 feet before ramming it, or three times as much damage if the vehicle moved 30 feet or more before ramming it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Snekkja",
   "source": "NorthlandsWorldbook",
   "subtitle": "Gargantuan Ship (60 ft. by 8 ft.)",
@@ -308,6 +529,105 @@
       "**Volley**: Archers release a volley of arrows at a point within 600 feet. Creatures within 30 feet of that point must make a DC 13 Dexterity saving throw, taking 13 (**3d8**) Piercing damage on a failure, or half as much on a success. Creatures that fail the saving throw by 5 or more have their Speed reduced by 10 feet until the start of Stokkvari's next turn."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "The Doomspine",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Gargantuan Ship",
+  "url": "https://5e.tools/vehicles.html#the%20doomspine_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/The%20Doomspine.webp",
+  "creatureCapacity": "6 crew\n25 passengers",
+  "cargoCapacity": "25 tons",
+  "travelPace": "8 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Water speed:* 30 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle moved at least 10 feet in a straight line immediately before successfully ramming a target, the target takes **4d6** Bludgeoning damage. The target takes twice as much damage if the vehicle moved at least 20 feet before ramming it, or three times as much damage if the vehicle moved 30 feet or more before ramming it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "The Pointue",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Gargantuan Ship",
+  "url": "https://5e.tools/vehicles.html#the%20pointue_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/The%20Pointue.webp",
+  "creatureCapacity": "1 crew\n10 passengers",
+  "cargoCapacity": "2 tons",
+  "travelPace": "15 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Water speed:* 60 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle moved at least 10 feet in a straight line immediately before successfully ramming a target, the target takes **4d6** Bludgeoning damage. The target takes twice as much damage if the vehicle moved at least 20 feet before ramming it, or three times as much damage if the vehicle moved 30 feet or more before ramming it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Trolley",
+  "source": "ObojimaTalesYatamon",
+  "subtitle": "Colossal Ship",
+  "url": "https://5e.tools/vehicles.html#trolley_obojimatalesyatamon",
+  "tokenUrl": "https://5e.tools/img/vehicles/tokens/ObojimaTalesYatamon/Trolley.webp",
+  "creatureCapacity": "2 crew\n40 passengers",
+  "cargoCapacity": "7.5 tons",
+  "travelPace": "12 mph.",
+  "description": [
+   {
+    "name": "Movement: Combat Speed",
+    "type": "text",
+    "value": "*Land speed:* 50 feet"
+   },
+   {
+    "name": "Weapon: Ramming",
+    "type": "text",
+    "value": "A creature controlling a vehicle can take the Utilize action to attempt to ram a target with the vehicle; this can't be attempted more than once per turn. If the target is a creature, it can make a Dexterity saving throw to avoid the vehicle; the DC for the save equals 8 plus the controlling creature's Dexterity or Intelligence modifier (its choice) and the vehicle's Size Modifier."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the vehicle moved at least 10 feet in a straight line immediately before successfully ramming a target, the target takes **6d6** Bludgeoning damage. The target takes twice as much damage if the vehicle moved at least 20 feet before ramming it, or three times as much damage if the vehicle moved 30 feet or more before ramming it."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Immediately after the vehicle rams a Small or larger target, the vehicle's Speed is reduced (as detailed in the Controlling a Vehicle section), and the vehicle takes **1d6** Bludgeoning damage for every 10 feet it moved before ramming its target, to a maximum of **3d6**. This damage ignores the vehicle's Damage Threshold."
    }
   ],
   "reprint": null

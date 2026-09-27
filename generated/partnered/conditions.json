@@ -612,6 +612,25 @@
   "reprint": null
  },
  {
+  "name": "Flipped",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/conditionsdiseases.html#flipped_obojimatalesyatamon",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A vehicle with the Flipped condition is one that is upside down, turned on its side, or otherwise unable to move in its current orientation. A Flipped vehicle has a Combat and Travel Speed of 0. A creature within 5 feet of a Flipped vehicle can take a Utilize action to attempt to reorient the vehicle with a Strength (*Athletics*) check. The DC for the check is based on the vehicle's Size Modifier: 1 (DC 10), 2 (DC 20), 3 (DC 30), or 4+ (DC 40)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If more than one creature attempts to reorient the vehicle simultaneously, each creature makes the required Strength (*Athletics*) check, reducing the DC by 1 for each creature participating. As long as one creature succeeds on the check, the vehicle is reoriented. When a vehicle is reoriented, it returns to its proper orientation and loses the Flipped condition."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
   "name": "Frozen",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/conditionsdiseases.html#frozen_monstersofdrakkenheim",
@@ -654,6 +673,20 @@
   "reprint": null
  },
  {
+  "name": "Immobile",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/conditionsdiseases.html#immobile_obojimatalesyatamon",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a vehicle is subjected to an effect that would cause the target to have the Grappled or Restrained condition, it instead gains this condition and has a Combat and Travel Speed of 0. If the effect would normally allow the target to make an ability check or saving throw to end the imposed condition, the creature controlling the vehicle can instead take the Utilize action to make a Maneuvering check against the effect's save DC. On a success, this condition ends on the vehicle."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
   "name": "Immobilized",
   "source": "MonstersOfDrakkenheim",
   "url": "https://5e.tools/conditionsdiseases.html#immobilized_monstersofdrakkenheim",
@@ -683,6 +716,20 @@
     "name": "",
     "type": "text",
     "value": "Roll the die indicated by the condition, such as \"Jinxed 1d4\" each time you make an attack roll or saving throw. Subtract the value on the die from the result."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
+  "name": "Locked",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/conditionsdiseases.html#locked_obojimatalesyatamon",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Unlocking a vehicle with the Locked condition requires a creature within 5 feet of the vehicle's locked entry point to take a Utilize action. If the creature uses the appropriate key, the vehicle automatically loses that condition. Without the key, a creature can use Thieves' Tools to attempt to pick the lock with a DC 15 Dexterity (*Sleight of Hand*) check, causing the vehicle to lose the Locked condition on a success."
    }
   ],
   "image": null,
@@ -780,6 +827,30 @@
     "name": "",
     "type": "text",
     "value": "You can't make more than one weapon attack during your turn, regardless of your class features, spells, or magic items."
+   }
+  ],
+  "image": null,
+  "reprint": null
+ },
+ {
+  "name": "Uncontrolled",
+  "source": "ObojimaTalesYatamon",
+  "url": "https://5e.tools/conditionsdiseases.html#uncontrolled_obojimatalesyatamon",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A vehicle has the Uncontrolled condition if it is in motion but no Crew are controlling the vehicle's movement. This can happen if the creature controlling the vehicle doesn't take a Bonus Action to continue operating it, either by choice or involuntarily (such as if it has the Incapacitated condition)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When a vehicle gains the Uncontrolled condition, it continues moving in the same direction and at the same speed that it moved on the last turn that a creature was controlling it. On that creature's turn each subsequent round, the vehicle moves 10 fewer feet in that direction than it did the previous round until it is no longer moving."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "A vehicle loses the Uncontrolled condition when it stops moving or when a creature regains control of the vehicle."
    }
   ],
   "image": null,

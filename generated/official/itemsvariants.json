@@ -24483,9 +24483,14 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +2. While you hold the weapon, you can breathe underwater, and you have a Swim Speed of 30 feet."
    },
    {
-    "name": "Evolving Item",
+    "name": "Heavy",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Graze",
@@ -24495,7 +24500,8 @@
   ],
   "properties": [
    "**2d6** Slashing",
-   "evolving item",
+   "heavy",
+   "two-handed",
    "mastery: graze"
   ],
   "reprint": null
@@ -24539,9 +24545,9 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +2. While you hold the weapon, you can breathe underwater, and you have a Swim Speed of 30 feet."
    },
    {
-    "name": "Evolving Item",
+    "name": "Versatile",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
     "name": "Sap",
@@ -24551,7 +24557,7 @@
   ],
   "properties": [
    "**1d8** Slashing",
-   "evolving item",
+   "versatile (1d10)",
    "mastery: sap"
   ],
   "reprint": null
@@ -24595,9 +24601,9 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +2. While you hold the weapon, you can breathe underwater, and you have a Swim Speed of 30 feet."
    },
    {
-    "name": "Evolving Item",
+    "name": "Finesse",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
    },
    {
     "name": "Vex",
@@ -24607,7 +24613,7 @@
   ],
   "properties": [
    "**1d8** Piercing",
-   "evolving item",
+   "finesse",
    "mastery: vex"
   ],
   "reprint": null
@@ -24651,9 +24657,14 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +2. While you hold the weapon, you can breathe underwater, and you have a Swim Speed of 30 feet."
    },
    {
-    "name": "Evolving Item",
+    "name": "Finesse",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
    },
    {
     "name": "Nick",
@@ -24663,7 +24674,8 @@
   ],
   "properties": [
    "**1d6** Slashing",
-   "evolving item",
+   "finesse",
+   "light",
    "mastery: nick"
   ],
   "reprint": null
@@ -24707,9 +24719,14 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +2. While you hold the weapon, you can breathe underwater, and you have a Swim Speed of 30 feet."
    },
    {
-    "name": "Evolving Item",
+    "name": "Finesse",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
    },
    {
     "name": "Vex",
@@ -24719,7 +24736,8 @@
   ],
   "properties": [
    "**1d6** Piercing",
-   "evolving item",
+   "finesse",
+   "light",
    "mastery: vex"
   ],
   "reprint": null
@@ -28096,9 +28114,14 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +3. While you hold this weapon, you have a Fly Speed of 30 feet; when you use this Fly Speed, a salty sea breeze carries you through the air."
    },
    {
-    "name": "Evolving Item",
+    "name": "Heavy",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Graze",
@@ -28108,7 +28131,8 @@
   ],
   "properties": [
    "**2d6** Slashing",
-   "evolving item",
+   "heavy",
+   "two-handed",
    "mastery: graze"
   ],
   "reprint": null
@@ -28162,9 +28186,9 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +3. While you hold this weapon, you have a Fly Speed of 30 feet; when you use this Fly Speed, a salty sea breeze carries you through the air."
    },
    {
-    "name": "Evolving Item",
+    "name": "Versatile",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
     "name": "Sap",
@@ -28174,7 +28198,7 @@
   ],
   "properties": [
    "**1d8** Slashing",
-   "evolving item",
+   "versatile (1d10)",
    "mastery: sap"
   ],
   "reprint": null
@@ -28228,9 +28252,9 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +3. While you hold this weapon, you have a Fly Speed of 30 feet; when you use this Fly Speed, a salty sea breeze carries you through the air."
    },
    {
-    "name": "Evolving Item",
+    "name": "Finesse",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
    },
    {
     "name": "Vex",
@@ -28240,7 +28264,7 @@
   ],
   "properties": [
    "**1d8** Piercing",
-   "evolving item",
+   "finesse",
    "mastery: vex"
   ],
   "reprint": null
@@ -28294,9 +28318,14 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +3. While you hold this weapon, you have a Fly Speed of 30 feet; when you use this Fly Speed, a salty sea breeze carries you through the air."
    },
    {
-    "name": "Evolving Item",
+    "name": "Finesse",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
    },
    {
     "name": "Nick",
@@ -28306,7 +28335,8 @@
   ],
   "properties": [
    "**1d6** Slashing",
-   "evolving item",
+   "finesse",
+   "light",
    "mastery: nick"
   ],
   "reprint": null
@@ -28360,9 +28390,14 @@
     "value": "Your bonus to attack rolls and damage rolls made with this magic weapon increases to +3. While you hold this weapon, you have a Fly Speed of 30 feet; when you use this Fly Speed, a salty sea breeze carries you through the air."
    },
    {
-    "name": "Evolving Item",
+    "name": "Finesse",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
    },
    {
     "name": "Vex",
@@ -28372,7 +28407,8 @@
   ],
   "properties": [
    "**1d6** Piercing",
-   "evolving item",
+   "finesse",
+   "light",
    "mastery: vex"
   ],
   "reprint": null
@@ -28870,9 +28906,14 @@
     "value": "You have a +1 bonus to attack rolls and damage rolls made with this magic weapon. While holding this weapon, you can take a Magic action to touch up to a gallon of liquid and infuse it with brine, turning fresh water into saltwater, for instance."
    },
    {
-    "name": "Evolving Item",
+    "name": "Heavy",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
    },
    {
     "name": "Graze",
@@ -28882,7 +28923,8 @@
   ],
   "properties": [
    "**2d6** Slashing",
-   "evolving item",
+   "heavy",
+   "two-handed",
    "mastery: graze"
   ],
   "reprint": null
@@ -28916,9 +28958,9 @@
     "value": "You have a +1 bonus to attack rolls and damage rolls made with this magic weapon. While holding this weapon, you can take a Magic action to touch up to a gallon of liquid and infuse it with brine, turning fresh water into saltwater, for instance."
    },
    {
-    "name": "Evolving Item",
+    "name": "Versatile",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
    },
    {
     "name": "Sap",
@@ -28928,7 +28970,7 @@
   ],
   "properties": [
    "**1d8** Slashing",
-   "evolving item",
+   "versatile (1d10)",
    "mastery: sap"
   ],
   "reprint": null
@@ -28962,9 +29004,9 @@
     "value": "You have a +1 bonus to attack rolls and damage rolls made with this magic weapon. While holding this weapon, you can take a Magic action to touch up to a gallon of liquid and infuse it with brine, turning fresh water into saltwater, for instance."
    },
    {
-    "name": "Evolving Item",
+    "name": "Finesse",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
    },
    {
     "name": "Vex",
@@ -28974,7 +29016,7 @@
   ],
   "properties": [
    "**1d8** Piercing",
-   "evolving item",
+   "finesse",
    "mastery: vex"
   ],
   "reprint": null
@@ -29008,9 +29050,14 @@
     "value": "You have a +1 bonus to attack rolls and damage rolls made with this magic weapon. While holding this weapon, you can take a Magic action to touch up to a gallon of liquid and infuse it with brine, turning fresh water into saltwater, for instance."
    },
    {
-    "name": "Evolving Item",
+    "name": "Finesse",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
    },
    {
     "name": "Nick",
@@ -29020,7 +29067,8 @@
   ],
   "properties": [
    "**1d6** Slashing",
-   "evolving item",
+   "finesse",
+   "light",
    "mastery: nick"
   ],
   "reprint": null
@@ -29054,9 +29102,14 @@
     "value": "You have a +1 bonus to attack rolls and damage rolls made with this magic weapon. While holding this weapon, you can take a Magic action to touch up to a gallon of liquid and infuse it with brine, turning fresh water into saltwater, for instance."
    },
    {
-    "name": "Evolving Item",
+    "name": "Finesse",
     "type": "text",
-    "value": "(This item is an Evolving Item, see Evolving Magic Items for more information.)"
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
    },
    {
     "name": "Vex",
@@ -29066,7 +29119,8 @@
   ],
   "properties": [
    "**1d6** Piercing",
-   "evolving item",
+   "finesse",
+   "light",
    "mastery: vex"
   ],
   "reprint": null
