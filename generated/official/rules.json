@@ -753,6 +753,166 @@
   "reprint": null
  },
  {
+  "name": "Circle Magic",
+  "source": "FRHoF",
+  "url": "https://5e.tools/variantrules.html#circle%20magic_frhof",
+  "ruleType": "Optional",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Millennia ago, elf mages researching alternative magical traditions developed a technique by which many spellcasters working together could cast spells beyond the limit of any individual. This technique became known as circle magic, and although it was initially developed by elves, spellcasters in Thay and Rashemen reinvented the technique, and from there it quickly spread to other realms in Faerûn."
+   },
+   {
+    "name": "What Is a Circle Spell?",
+    "type": "text",
+    "value": "When a group of spellcasters collectively channel their magic into a single spell, they can enhance and augment the spell's magic in powerful ways. A spell cast in this way is known as a Circle spell."
+   },
+   {
+    "name": "Eligible Spells",
+    "type": "text",
+    "value": "Any spell that has a casting time of an action or 1 minute or longer and is cast using a spell slot can be cast as a Circle spell. To cast a Circle spell, follow the usual rules for spellcasting, as described in the Player's Handbook, as well as the following rules for Circle spells."
+   },
+   {
+    "name": "Casting a Circle Spell",
+    "type": "text",
+    "value": "A Circle spell has one primary caster (\"you\" in these rules). Unless otherwise specified, you as the primary caster decide the spell's targets, maintain Concentration if required by the spell's Duration entry, provide the spell's components, expend the slot for casting the spell, and decide any of the other options noted in the spell's description. The spell's effects originate from you."
+   },
+   {
+    "name": "Initiating a Circle Spell",
+    "type": "text",
+    "value": "You take a Magic action to initiate casting a Circle spell. When you do so, choose which Circle casting option (see \"Circle Casting Options\" below) you're using for this casting; you must also meet any of the other requirements described in that option's text. Until the Circle spell's casting is complete (see below), you must maintain *Concentration* on the spell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If a Reaction would trigger when a creature casts a spell—such as the Reaction taken to cast __Counterspell__—it also triggers when you take this action to initiate a Circle spell."
+   },
+   {
+    "name": "Secondary Casters",
+    "type": "text",
+    "value": "Casting a Circle spell requires that one or more other spellcasters, called secondary casters, lend their magic to the spell. A secondary caster must have either the Spellcasting or Pact Magic feature to participate in a Circle spell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "After you initiate the spell, each secondary caster takes the Magic action to contribute to the spell. A secondary caster can take this action only while within 30 feet of you and before the start of your next turn."
+   },
+   {
+    "name": "Completing the Casting",
+    "type": "text",
+    "value": "If the spell has a casting time of an action, the Circle spell's effects occur immediately after the final secondary caster takes the required action to contribute to the spell. You decide which secondary caster is the final one."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the spell has a casting time of 1 minute or more, you and each secondary caster must take the Magic action on each of your turns for the entire casting time, and you must each maintain Concentration while you do so. In this case, if any caster's Concentration is broken, the spell fails."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Some Circle spells require secondary casters to expend one or more spell slots to participate in the spell's casting. At the DM's discretion, NPCs capable of casting spells—such as spellcasters hired in settlements—can meet this requirement by expending one or more limited uses of any spells of the same level or higher in place of the required spell slots.*"
+   },
+   {
+    "name": "Spell Failure",
+    "type": "text",
+    "value": "If a Circle spell fails, nothing happens. You don't expend a spell slot, and any Material components aren't consumed. To cast the spell again, you must start over."
+   },
+   {
+    "name": "Circle Casting Options",
+    "type": "text",
+    "value": "The following options provide ways to enhance a spell when casting it as a Circle spell. You can use only one Circle casting option on a spell at a time."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Some spells have a \"Casting as a Circle Spell\" section in their description. Instead of using one of the following options, you can create the effect described in that section when casting the spell as a Circle spell. Such effects are often uniquely powerful and specific to their respective spells."
+   },
+   {
+    "name": "Augment",
+    "type": "text",
+    "value": "When you cast a spell with a range of at least 5 feet, you can increase the range of the spell by 1,000 feet per secondary caster contributing to the spell, up to a maximum of a 1-mile increase."
+   },
+   {
+    "name": "Distribute",
+    "type": "text",
+    "value": "When you cast a spell that requires *Concentration*, you can distribute the mental load of the spell among you and the secondary casters. Once the casting is complete, you and all secondary casters can maintain Concentration on this spell. As long as at least one caster who contributed to the spell maintains this Concentration, the spell's effects remain active."
+   },
+   {
+    "name": "Expand",
+    "type": "text",
+    "value": "When you cast a spell that creates an area of effect, you can increase one dimension of the spell's area of effect for this casting by 10 feet per secondary caster contributing to the spell. For example, if a spell creates a 20-foot-radius Sphere, casting it as a Circle spell with two secondary casters would increase the radius to 40 feet. A spell that creates a Line that is 5 feet wide and 300 feet long, cast as a Circle spell with two secondary casters, could make a Line that is either 25 feet wide or 320 feet long."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each secondary caster contributing to the spell must expend a spell slot (no action required). If the spell fails, these spell slots aren't expended."
+   },
+   {
+    "name": "Prolong",
+    "type": "text",
+    "value": "When you cast a spell that has a duration of 1 minute or longer, you can increase the duration of the spell depending on the number of secondary casters contributing to the spell, as detailed in the table below."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each secondary caster contributing to the spell must expend a spell slot (no action required). If the spell fails, these spell slots aren't expended."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Secondary Casters",
+      "The Spell Increases Duration By..."
+     ],
+     "rows": [
+      [
+       "1–3",
+       "1 hour"
+      ],
+      [
+       "4–6",
+       "8 hours"
+      ],
+      [
+       "7+",
+       "24 hours"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Safeguard",
+    "type": "text",
+    "value": "When you cast a spell that creates an area of effect, you can carve out a safe zone within that area of effect that is unaffected by the spell for its duration. This safe zone consists of a number of 5-foot Cubes equal to your spellcasting ability modifier plus the number of secondary casters contributing to the spell (minimum of one Cube). You can arrange the Cubes as you like, but each Cube must be contiguous with at least one other Cube."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the spell's area of effect can be moved, the safe zone moves with it."
+   },
+   {
+    "name": "Supplant",
+    "type": "text",
+    "value": "When you cast a spell that requires at least one Material component with a specified cost that is consumed by the spell, you can reduce the minimum cost of one such Material component by 50 GP per each secondary caster contributing to the spell. For example, casting __Revivify__ as a Circle spell with two secondary casters would reduce the Material component's minimum cost to 200 GP."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Each secondary caster contributing to the spell must expend a spell slot of a level greater than or equal to the spell's level (no action required). If the spell fails, these spell slots aren't expended."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Circle magic provides unique and strategic ways of altering spellcasting. Here are some general guidelines for implementing circle magic in your game.*\n***Character Level and Experience**: Though characters of any level can use circle magic, characters with access to higher-level spells have more avenues to make the most of circle magic.*\n***Know Your Spells**: Casting a Circle spell benefits from a solid understanding of how regular spellcasting works. Be sure to study your prepared spells and Circle casting options before the game. Many Circle casting options provide the most benefits to spellcasting when used outside of combat!*\n***Plan Ahead**: Circle magic functions best when participants strategize ahead of time. To avoid bogging down combat, work together with fellow spellcasters to determine how and when to cast a Circle spell. Additionally, ensure all participants still have ample opportunity to cast spells and act independently beyond contributing to circle magic.*"
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Cleaving Through Creatures",
   "source": "DMG",
   "url": "https://5e.tools/variantrules.html#cleaving%20through%20creatures_dmg",
@@ -13362,6 +13522,20 @@
     "name": "Trading",
     "type": "text",
     "value": "Ship crews and passengers looking to trade offer their cargo or services to the characters in exchange for deeds, items, or coin. Use the ship's purpose to guide what they have to trade. For instance, commercial fishermen might offer a crate of valuable crabs in exchange for the head of a shark that keeps consuming their catches, while pirates might offer stolen potions in exchange for gems or gold. Most of the people offering trades are willing to haggle. If the characters refuse to trade, evil-aligned crews and passengers might attack to get what they want."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Reach",
+  "source": "XPHB",
+  "url": "https://5e.tools/variantrules.html#reach_xphb",
+  "ruleType": "Core",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature has a reach of 5 feet unless a rule says otherwise."
    }
   ],
   "reprint": null
