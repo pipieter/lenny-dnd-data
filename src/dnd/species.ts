@@ -4,17 +4,16 @@ import { Copyable } from '../../5etools-collector/types/internal/copy';
 import { SpeciesFluffBase } from '../../5etools-collector/types/species';
 import { Databank } from '../data';
 import {
-    Description,
     ProficiencyOptions,
     ReprintData,
-    parseDescriptions,
     parseImageUrl,
     parseReprint,
     parseSizes,
     parseSkillProficiency,
     parseSpeed,
-} from '../parser';
-import { getSpeciesUrl } from '../urls';
+} from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
+import { getSpeciesUrl } from '../parse/urls';
 import { findFluff, joinStringsWithOr } from '../util';
 
 export interface ParsedSpecies {

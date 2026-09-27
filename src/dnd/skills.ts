@@ -1,5 +1,6 @@
 import { Databank } from '../data';
-import { Description, ReprintData, parseAbilityScore, parseDescriptions, parseReprint } from '../parser';
+import { ReprintData, parseAbilityScore, parseReprint } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
 
 export interface ParsedSkill {
     name: string;

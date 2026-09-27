@@ -33,7 +33,7 @@ import { Spell, SpellSource } from '../5etools-collector/types/spell';
 import { Status } from '../5etools-collector/types/status';
 import { TableGroup, TableTable } from '../5etools-collector/types/table';
 import { Vehicle, VehicleUpgrade } from '../5etools-collector/types/vehicle';
-import { title } from './parser';
+import { title } from './util';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 

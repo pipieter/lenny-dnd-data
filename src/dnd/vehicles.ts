@@ -1,20 +1,12 @@
 import { handleCopy } from '../5etools-conversion/copy';
 import { VehicleBase, VehicleUpgrade } from '../../5etools-collector/types/vehicle';
-import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import {
-    Description,
-    DescriptionType,
-    ReprintData,
-    capitalize,
-    parseDescriptions,
-    parseReprint,
-    parseSizes,
-    parseVehicleUpgradeType,
-} from '../parser';
-import { getVehicleTokenUrl, getVehiclesUrl } from '../urls';
-import { joinStringsWithAnd, joinStringsWithOr } from '../util';
-import { Variables } from '../variables';
+import { ReprintData, parseReprint, parseSizes, parseVehicleUpgradeType } from '../parse/base';
+import { cleanDNDText } from '../parse/clean';
+import { Description, DescriptionType, parseDescriptions } from '../parse/description';
+import { getVehicleTokenUrl, getVehiclesUrl } from '../parse/urls';
+import { Variables } from '../parse/variables';
+import { capitalize, joinStringsWithAnd, joinStringsWithOr } from '../util';
 
 export interface ParsedVehicle {
     name: string;

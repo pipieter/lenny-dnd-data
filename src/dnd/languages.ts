@@ -1,10 +1,11 @@
 import { Fluff } from '../../5etools-collector/types/fluff';
 import { Language } from '../../5etools-collector/types/language';
-import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, ReprintData, capitalize, parseDescriptions, parseReprint } from '../parser';
-import { getHrefUrl, getLanguagesUrl } from '../urls';
-import { findFluff, joinStringsWithAnd } from '../util';
+import { ReprintData, parseReprint } from '../parse/base';
+import { cleanDNDText } from '../parse/clean';
+import { Description, parseDescriptions } from '../parse/description';
+import { getHrefUrl, getLanguagesUrl } from '../parse/urls';
+import { capitalize, findFluff, joinStringsWithAnd } from '../util';
 
 export interface ParsedLanguage {
     name: string;

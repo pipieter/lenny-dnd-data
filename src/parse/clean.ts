@@ -1,4 +1,3 @@
-import { checkForDisallowedSymbols } from './parser';
 import { get5eToolsUrl, getBackgroundsUrl, getTablesUrl, getTrapsUrl } from './urls';
 import { Variables } from './variables';
 
@@ -46,6 +45,29 @@ function pattern(name: string, count: number) {
     const regexp = new RegExp(expression, 'g');
     PatternCache[cacheKey] = regexp;
     return regexp;
+}
+
+/* =========================================================
+ * Validation functions
+ * ========================================================= */
+
+const disallowedSymbols = ['{', '}', '[object Object]'];
+
+export function containsDisallowedSymbols(value: string | string[]) {
+    // String
+    if (typeof value === 'string') {
+        return disallowedSymbols.some((s) => value.includes(s));
+    }
+    // List
+    else {
+        return value.some(containsDisallowedSymbols);
+    }
+}
+
+export function checkForDisallowedSymbols(value: string | string[]) {
+    if (containsDisallowedSymbols(value)) {
+        throw `Disallowed symbols found in '${JSON.stringify(value)}'`;
+    }
 }
 
 /* =========================================================

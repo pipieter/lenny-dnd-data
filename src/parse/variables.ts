@@ -1,4 +1,4 @@
-import { capitalize } from './parser';
+import { capitalize } from '../util';
 import { readFileSync } from 'fs';
 
 class CollectorVariables {

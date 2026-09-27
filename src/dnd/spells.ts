@@ -2,23 +2,19 @@ import { handleCopy } from '../5etools-conversion/copy';
 import { SpellBase, SpellSource } from '../../5etools-collector/types/spell';
 import { Databank } from '../data';
 import {
-    Description,
-    DescriptionType,
     ReprintData,
     parseCastingTime,
     parseComponents,
-    parseDescriptionFromTable,
-    parseDescriptions,
-    parseDurationTime,
+    parseDuration,
     parseMaterialComponents,
     parseRange,
     parseReprint,
     parseResists,
-    parseSpellDamage,
     parseSpellLevel,
     parseSpellSchool,
-} from '../parser';
-import { getEntryImageUrl, getSpellsUrl } from '../urls';
+} from '../parse/base';
+import { Description, DescriptionType, parseDescriptionFromTable, parseDescriptions } from '../parse/description';
+import { getEntryImageUrl, getSpellsUrl } from '../parse/urls';
 import { entrySort, findFluff } from '../util';
 
 interface Caster {
@@ -57,6 +53,77 @@ export interface ParsedSpell {
     affectsCreatureType: string[];
 
     scaledDamage: SpellDamage[] | null;
+}
+
+export function parseSpellDamage(spell: any): SpellDamage[] | null {
+    if (spell.scalingLevelDice) {
+        const results: SpellDamage[] = [];
+        const scalingList = Array.isArray(spell.scalingLevelDice) ? spell.scalingLevelDice : [spell.scalingLevelDice];
+
+        for (const scaleObj of scalingList) {
+            if (scaleObj && scaleObj.scaling) {
+                const scaling: { [key: string]: string } = {};
+                for (const [key, value] of Object.entries(scaleObj.scaling)) {
+                    scaling[String(key)] = String(value);
+                }
+                results.push({ type: 'level', scaling });
+            }
+        }
+
+        return results;
+    }
+
+    const raw = [...(spell.entries || [])];
+    if (spell.entriesHigherLevel) {
+        raw.push(...spell.entriesHigherLevel);
+    }
+
+    const entriesText: string[] = [];
+    function pushEntryTexts(entries: any) {
+        for (const entry of entries) {
+            if (typeof entry === 'string') {
+                entriesText.push(entry);
+            } else if (entry && entry.entries) {
+                pushEntryTexts(entry.entries);
+            }
+        }
+    }
+    pushEntryTexts(raw);
+
+    const scaleDamageRegex = /{@scaledamage\s+([^}]+)}/;
+    for (const entry of entriesText) {
+        const match = entry.match(scaleDamageRegex);
+        if (!match) continue;
+
+        const tagContent = match[1];
+        const [baseDamage, levels, scalingDice] = tagContent.split('|');
+
+        const baseLevel = parseInt(levels.split('-')[0]);
+        const baseDiceMatch = baseDamage.match(/^(\d+)(d\d+)/);
+        const scaleDiceMatch = scalingDice.match(/^(\d+)/);
+
+        if (!baseDiceMatch || !scaleDiceMatch) continue;
+
+        const baseDiceCount = parseInt(baseDiceMatch[1]);
+        const diceFaces = baseDiceMatch[2];
+        const scaleDiceCount = parseInt(scaleDiceMatch[1]);
+
+        const scaling: { [key: string]: string } = {};
+
+        for (let lvl = baseLevel; lvl <= 9; lvl++) {
+            if (lvl === baseLevel) {
+                scaling[String(lvl)] = baseDamage;
+            } else {
+                const levelDiff = lvl - baseLevel;
+                const currentDiceCount = baseDiceCount + levelDiff * scaleDiceCount;
+                scaling[String(lvl)] = `${currentDiceCount}${diceFaces}`;
+            }
+        }
+
+        return [{ type: 'upcast', scaling }];
+    }
+
+    return null;
 }
 
 function getSpellDescription(spell: SpellBase): Description[] {
@@ -111,7 +178,7 @@ function getSpell(spell: SpellBase, fluffs: any[], sources: any, data: Databank)
         range: parseRange(spell.range),
         components: parseComponents(spell.components),
         material: parseMaterialComponents(spell.components),
-        duration: parseDurationTime(spell.duration),
+        duration: parseDuration(spell.duration),
         url: getSpellsUrl(spell.name, spell.source),
         image: getEntryImageUrl(fluffImage),
         description: getSpellDescription(spell),

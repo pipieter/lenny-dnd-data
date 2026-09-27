@@ -1,8 +1,10 @@
 import { Hazard } from '../../5etools-collector/types/hazard';
 import { Databank } from '../data';
-import { Description, ReprintData, capitalize, parseDescriptions, parseReprint } from '../parser';
-import { getTrapsUrl } from '../urls';
-import { Variables } from '../variables';
+import { ReprintData, parseReprint } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
+import { getTrapsUrl } from '../parse/urls';
+import { Variables } from '../parse/variables';
+import { capitalize } from '../util';
 
 export interface ParsedHazard {
     name: string;

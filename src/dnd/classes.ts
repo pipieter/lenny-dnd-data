@@ -2,33 +2,27 @@ import { handleCopy } from '../5etools-conversion/copy';
 import {
     ClassBase,
     ClassFeature,
+    ClassResourceValue,
     Multiclassing,
     SubclassBase,
     SubclassFeature,
 } from '../../5etools-collector/types/class';
 import { ClassProficiencies, ClassProficiency, SkillProficiency } from '../../5etools-collector/types/internal/base';
-import { cleanDNDText } from '../clean';
 import { Databank, getKey } from '../data';
+import { ProficiencyOptions, ReprintData, parseAbilityScore, parseReprint, parseSkillProficiency } from '../parse/base';
+import { checkForDisallowedSymbols, cleanDNDText } from '../parse/clean';
 import {
     Description,
     DescriptionList,
     DescriptionTable,
     DescriptionType,
     List,
-    ProficiencyOptions,
-    ReprintData,
-    capitalize,
-    checkForDisallowedSymbols,
-    containsDisallowedSymbols,
-    parseAbilityScore,
-    parseClassProficiency,
-    parseClassResourceValue,
+    containsUnresolvedReferences,
+    flattenListEntries,
     parseDescriptions,
-    parseReprint,
-    parseSkillProficiency,
-} from '../parser';
-import { getClassesUrl, getSubclassUrl } from '../urls';
-import { entrySort, joinStringsWithAnd, joinStringsWithOr } from '../util';
+} from '../parse/description';
+import { getClassesUrl, getSubclassUrl } from '../parse/urls';
+import { capitalize, entrySort, getNumberSign, joinStringsWithAnd, joinStringsWithOr } from '../util';
 import { ParsedFeat } from './feats';
 
 export interface ClassFeatureDictionary {
@@ -92,6 +86,37 @@ interface ParsedSubclass {
     levelFeatures: ParsedClassFeature[] | null;
 
     reprint: ReprintData | null;
+}
+
+export function parseClassProficiency(classProficiency: string | ClassProficiency): string {
+    if (typeof classProficiency === 'string') return cleanDNDText(classProficiency);
+    if (classProficiency.full) return classProficiency.full;
+    if (classProficiency.optional) return `${classProficiency.proficiency} (Optional)`;
+    return classProficiency.proficiency;
+}
+
+export function parseClassResourceValue(value: ClassResourceValue): string {
+    if (typeof value === 'number') return `${value}`;
+    if (typeof value === 'string') return cleanDNDText(value);
+
+    switch (value.type) {
+        case 'bonus': {
+            const sign = getNumberSign(value.value, true);
+            return `${sign}${value.value}`;
+        }
+        case 'dice': {
+            const number = value.toRoll[0].number;
+            const faces = value.toRoll[0].faces;
+            return `${number}d${faces}`;
+        }
+        case 'bonusSpeed': {
+            const sign = getNumberSign(value.value, true);
+            return `${sign}${value.value} ft.`;
+        }
+        default: {
+            throw `Unsupported classTableGroups row-type ${value}`;
+        }
+    }
 }
 
 function parseClassFeature(feature: ClassFeature | SubclassFeature): ParsedClassFeature {
@@ -792,13 +817,6 @@ function resolveListReferences(
     return { resolved, additionalEntries };
 }
 
-function containsUnresolvedReferences(description: Description): boolean {
-    if (description.type === DescriptionType.text) return containsDisallowedSymbols(description.value);
-    if (description.type === DescriptionType.table) return false; // For now, tables don't have any references.
-    if (description.type === DescriptionType.list) return containsDisallowedSymbols(description.list);
-    throw `Unsupported unresolved description references type '${description.type}'`;
-}
-
 function resolveDescriptionReferences(
     entries: Description[],
     classFeats: ClassFeatureDictionary | null = null,
@@ -840,7 +858,7 @@ function resolveDescriptionReferences(
         } else if (resolvedEntry.type === DescriptionType.table) {
             continue; // Tables don't have references
         } else if (resolvedEntry.type === DescriptionType.list) {
-            checkForDisallowedSymbols(resolvedEntry.list);
+            checkForDisallowedSymbols(flattenListEntries(resolvedEntry.list));
         } else {
             throw `Error: reference validation code for ${JSON.stringify(resolvedEntry)} not supported`;
         }

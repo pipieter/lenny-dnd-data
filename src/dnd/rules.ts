@@ -1,8 +1,9 @@
 import { Rule } from '../../5etools-collector/types/rule';
 import { Databank } from '../data';
-import { Description, ReprintData, parseDescriptions, parseReprint } from '../parser';
-import { getRulesUrl } from '../urls';
-import { Variables } from '../variables';
+import { ReprintData, parseReprint } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
+import { getRulesUrl } from '../parse/urls';
+import { Variables } from '../parse/variables';
 
 export interface ParsedRule {
     name: string;

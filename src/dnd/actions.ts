@@ -1,7 +1,8 @@
 import { Unit } from '../../5etools-collector/types/internal/base';
 import { Databank } from '../data';
-import { Description, ReprintData, parseDescriptions, parseReprint, parseSingleTime } from '../parser';
-import { getActionsUrl } from '../urls';
+import { ReprintData, parseReprint, parseUnit } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
+import { getActionsUrl } from '../parse/urls';
 import { joinStringsWithOr } from '../util';
 
 export interface ParsedAction {
@@ -16,7 +17,7 @@ export interface ParsedAction {
 function parseActionTime(times: Unit[] | undefined): string {
     if (!times) return 'Uncategorized';
 
-    const results = times.map(parseSingleTime);
+    const results = times.map(parseUnit);
     return joinStringsWithOr(results);
 }
 
