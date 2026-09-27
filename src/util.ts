@@ -1,7 +1,6 @@
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Base } from '../5etools-collector/types/internal/base';
 import { getKey } from './data';
-import { title } from './parser';
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import kleur = require('kleur');
@@ -72,6 +71,14 @@ export function formatModifier(mod: string | number): string {
 
 export function variadic<T>(values: T | T[]): T[] {
     return Array.isArray(values) ? values : [values];
+}
+
+export function capitalize(text: string): string {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+export function title(text: string): string {
+    return text.split(' ').map(capitalize).join(' ');
 }
 
 export class StopwatchLogger {

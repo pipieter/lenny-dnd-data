@@ -1,5 +1,5 @@
-import { Fluff } from '../5etools-collector/types/fluff';
-import { EntryImage, HRef } from '../5etools-collector/types/internal/entry';
+import { Fluff } from '../../5etools-collector/types/fluff';
+import { EntryImage, HRef } from '../../5etools-collector/types/internal/entry';
 
 function removeAccents(str: string): string {
     str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
