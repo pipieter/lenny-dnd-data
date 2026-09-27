@@ -1,15 +1,8 @@
 import { Feat } from '../../5etools-collector/types/feat';
 import { Databank } from '../data';
-import {
-    Description,
-    ReprintData,
-    parseAbilityScore,
-    parseDescriptions,
-    parseFeatCategory,
-    parsePrerequisite,
-    parseReprint,
-} from '../parser';
-import { getFeatsUrl } from '../urls';
+import { ReprintData, parseAbilityScore, parseFeatCategory, parsePrerequisite, parseReprint } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
+import { getFeatsUrl } from '../parse/urls';
 import { joinStringsWithOr, variadic } from '../util';
 
 export interface ParsedFeat {

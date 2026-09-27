@@ -3,25 +3,27 @@ import { FluffBase } from '../../5etools-collector/types/fluff';
 import { AbilityString } from '../../5etools-collector/types/internal/base';
 import { Entry } from '../../5etools-collector/types/internal/entry';
 import { MonsterBase } from '../../5etools-collector/types/monster';
-import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
+import {
+    ReprintData,
+    parseAdvantage,
+    parseCreatureSummonSpell,
+    parseCreatureTypes,
+    parseReprint,
+    parseSizes,
+    parseSpeed,
+} from '../parse/base';
+import { cleanDNDText } from '../parse/clean';
 import {
     Description,
     DescriptionList,
     DescriptionTable,
     DescriptionType,
     List,
-    ReprintData,
     Table,
-    parseAdvantage,
-    parseCreatureSummonSpell,
-    parseCreatureTypes,
     parseDescriptions,
-    parseReprint,
-    parseSizes,
-    parseSpeed,
-} from '../parser';
-import { getBestiaryUrl, getCreatureTokenUrl } from '../urls';
+} from '../parse/description';
+import { getBestiaryUrl, getCreatureTokenUrl } from '../parse/urls';
 import {
     calculateAbilityMod,
     findFluff,

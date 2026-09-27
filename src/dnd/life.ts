@@ -1,6 +1,6 @@
 import { LifeBackground, LifeClass } from '../../5etools-collector/types/life';
-import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
+import { cleanDNDText } from '../parse/clean';
 
 export interface ParsedLife {
     class: Record<string, LifeClass>;

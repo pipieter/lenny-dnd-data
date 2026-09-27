@@ -1,13 +1,7 @@
 import { Databank } from '../data';
-import {
-    Description,
-    ReprintData,
-    parseDescriptions,
-    parseOptionalFeatureType,
-    parsePrerequisite,
-    parseReprint,
-} from '../parser';
-import { getOptionalFeaturesUrl } from '../urls';
+import { ReprintData, parseOptionalFeatureType, parsePrerequisite, parseReprint } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
+import { getOptionalFeaturesUrl } from '../parse/urls';
 import { joinStringsWithOr } from '../util';
 
 export interface ParsedOptionalFeature {

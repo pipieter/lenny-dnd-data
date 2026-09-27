@@ -1,7 +1,8 @@
 import { DNDObject } from '../../5etools-collector/types/object';
 import { Databank } from '../data';
-import { Description, ReprintData, parseDescriptions, parseObjectSizes, parseReprint } from '../parser';
-import { getFluffImageUrl, getObjectTokenUrl, getObjectsUrl } from '../urls';
+import { ReprintData, parseObjectSizes, parseReprint } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
+import { getFluffImageUrl, getObjectTokenUrl, getObjectsUrl } from '../parse/urls';
 import { findFluff } from '../util';
 
 export interface ParsedDNDObject {

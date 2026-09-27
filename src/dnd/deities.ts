@@ -1,10 +1,11 @@
 import { handleCopy } from '../5etools-conversion/copy';
 import { DeityBase } from '../../5etools-collector/types/deity';
-import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, DescriptionType, parseAlignments, parseDescriptions, title } from '../parser';
-import { getDeitiesUrl, getEntryImageUrl } from '../urls';
-import { joinStringsWithAnd } from '../util';
+import { parseAlignments } from '../parse/base';
+import { cleanDNDText } from '../parse/clean';
+import { Description, DescriptionType, parseDescriptions } from '../parse/description';
+import { getDeitiesUrl, getEntryImageUrl } from '../parse/urls';
+import { joinStringsWithAnd, title } from '../util';
 
 export interface ParsedDeity {
     name: string;

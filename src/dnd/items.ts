@@ -11,20 +11,13 @@ import {
     MagicItemRequirement,
     MagicVariantBase,
 } from '../../5etools-collector/types/item';
-import { cleanDNDText } from '../clean';
 import { Databank, getKey } from '../data';
-import {
-    Description,
-    DescriptionType,
-    ReprintData,
-    parseDescriptions,
-    parseItemValue,
-    parseItemWeight,
-    parseReprint,
-} from '../parser';
-import { getFluffImageUrl, getItemsUrl } from '../urls';
+import { ReprintData, parseReprint } from '../parse/base';
+import { cleanDNDText } from '../parse/clean';
+import { Description, DescriptionType, parseDescriptions } from '../parse/description';
+import { getFluffImageUrl, getItemsUrl } from '../parse/urls';
+import { Variables } from '../parse/variables';
 import { findEntry, findFluff, joinStringsWithOr } from '../util';
-import { Variables } from '../variables';
 
 export interface ParsedItem {
     name: string;
@@ -348,6 +341,42 @@ function parseItemMasteries(item: ItemBase, data: ItemData): [string[], Descript
     }
 
     return [masteries, descriptions];
+}
+
+export function parseItemValue(value: number | undefined): string | null {
+    if (!value) return null;
+
+    const gp = Math.floor(value / 100);
+    const sp = Math.floor((value % 100) / 10);
+    const cp = value % 10;
+
+    const values = [];
+    if (gp > 0) {
+        // Add thousands separators, https://stackoverflow.com/questions/2901102/how-to-format-a-number-with-commas-as-thousands-separators
+        const formatted = gp.toLocaleString().replace(',', '.');
+        values.push(`${formatted} gp`);
+    }
+    if (sp > 0) {
+        values.push(`${sp} sp`);
+    }
+    if (cp > 0) {
+        values.push(`${cp} cp`);
+    }
+
+    if (values.length === 0) {
+        return null;
+    }
+    return values.join(' ');
+}
+
+export function parseItemWeight(weight: number | undefined): string | null {
+    if (weight === undefined || weight === 0) {
+        return null;
+    }
+    if (weight < 1) {
+        return `${weight * 16} oz.`;
+    }
+    return `${weight} lb.`;
 }
 
 function parseItem(item: ItemBase, fluffs: Fluff[], data: ItemData): ParsedItem {

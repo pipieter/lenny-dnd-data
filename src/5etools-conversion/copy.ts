@@ -1,7 +1,7 @@
 import { Base } from '../../5etools-collector/types/internal/base';
 import { Copyable, CopyableVersioned, ModBody, Versioned } from '../../5etools-collector/types/internal/copy';
-import { title } from '../parser';
-import { Variables } from '../variables';
+import { Variables } from '../parse/variables';
+import { title } from '../util';
 import { crToProficiencyBonus } from './parser';
 import { ascSortLower } from './sort';
 import { applySingleTemplate } from './template';

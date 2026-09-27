@@ -1,8 +1,9 @@
 import { TableData, TableGroup } from '../../5etools-collector/types/table';
-import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { DescriptionTable, DescriptionType, ReprintData, parseDescriptionFromTable, parseReprint } from '../parser';
-import { getTablesUrl } from '../urls';
+import { ReprintData, parseReprint } from '../parse/base';
+import { cleanDNDText } from '../parse/clean';
+import { DescriptionTable, DescriptionType, parseDescriptionFromTable } from '../parse/description';
+import { getTablesUrl } from '../parse/urls';
 
 export interface ParsedTable {
     name: string;

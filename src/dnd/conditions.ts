@@ -3,8 +3,9 @@ import { Disease } from '../../5etools-collector/types/disease';
 import { Fluff } from '../../5etools-collector/types/fluff';
 import { Status } from '../../5etools-collector/types/status';
 import { Databank } from '../data';
-import { Description, ReprintData, parseDescriptions, parseImageUrl, parseReprint } from '../parser';
-import { getConditionsDiseasesUrl } from '../urls';
+import { ReprintData, parseImageUrl, parseReprint } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
+import { getConditionsDiseasesUrl } from '../parse/urls';
 import { findFluff } from '../util';
 
 // Note, statuses and diseases also follow the same structure as Condition
