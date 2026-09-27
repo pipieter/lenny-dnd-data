@@ -4,12 +4,18 @@ import {
     Base,
     ClassProficiency,
     ConditionalSpeed,
+    Distance,
+    Duration,
     Prerequisite,
+    Range,
     Resist,
     Speed,
+    SpellComponents,
     Unit,
 } from '../5etools-collector/types/internal/base';
+import { EntryImage } from '../5etools-collector/types/internal/entry';
 import { Variadic } from '../5etools-collector/types/internal/util';
+import { SpellBase } from '../5etools-collector/types/spell';
 import { cleanDNDText } from './clean';
 import { Databank } from './data';
 import { SpellDamage } from './dnd/spells';
@@ -28,7 +34,7 @@ import {
 import { getNumberSign, joinStringsWithAnd, joinStringsWithOr, variadic } from './util';
 import { Variables } from './variables';
 
-export interface Range {
+export interface TableRangeCell {
     type: 'range';
     min: number;
     max: number;
@@ -38,7 +44,7 @@ export interface Table {
     type: 'table';
     title: string;
     headers: string[] | null;
-    rows: (string | Range | null | number)[][];
+    rows: (string | TableRangeCell | null | number)[][];
 }
 
 export interface List {
@@ -118,14 +124,19 @@ const AttackAbbrMap = new Map([
     ['m,r', 'Melee or Ranged Attack Roll'],
     ['g', 'Magical Attack'],
 ]);
-export function parseImageUrl(data: any[]): string | null {
+
+export function parseImageUrl(data: EntryImage[]): string | null {
     for (const datum of data) {
         if (datum.type != 'image') continue;
 
         const href = datum.href;
-        if (href.type == 'internal') return getImageUrl(href.path);
-        else if (href.type == 'external') return href.path as string;
-        else throw `Unknown image href type '${href.type}'`;
+        if (href.type == 'internal') {
+            return getImageUrl(href.path);
+        } else if (href.type == 'external') {
+            return encodeURI(href.url) as string;
+        }
+
+        throw `Unknown image href type '${href}'`;
     }
 
     return null;
@@ -210,10 +221,6 @@ export function parseSingleTime(time: Unit): string {
             else result = `${amount} bonus actions`;
             break;
         }
-        case 'special': {
-            result = `Special`;
-            break;
-        }
         default: {
             if (amount == 1) result = `${amount} ${unit}`;
             else result = `${amount} ${unit}s`;
@@ -231,52 +238,50 @@ export function parseSingleTime(time: Unit): string {
     return result;
 }
 
-export function parseCastingTime(time: any, meta: any): string {
-    const is_ritual = meta != undefined && meta.ritual;
+export function parseCastingTime(time: Unit[], meta?: { ritual: boolean }): string {
+    const ritual = meta?.ritual ?? false;
     if (Array.isArray(time)) {
         const castingTimes = time.map(parseSingleTime);
-        if (is_ritual) castingTimes.push('Ritual');
+        if (ritual) castingTimes.push('Ritual');
         return joinStringsWithOr(castingTimes, false);
     }
 
-    if (is_ritual) return `${parseSingleTime(time)} or Ritual`;
+    if (ritual) return `${parseSingleTime(time)} or Ritual`;
     return parseSingleTime(time);
 }
 
-export function parseDurationTime(durations: any[] | any): string {
+export function parseDurationTime(durations: Duration[]): string {
     if (!Array.isArray(durations)) durations = [durations];
 
-    const results: string[] = durations.map(
-        (d: { type: any; duration: { amount: any; type: any }; concentration: any }) => {
-            switch (d.type) {
-                case 'instant':
-                    return 'Instantaneous';
+    const results: string[] = durations.map((duration) => {
+        switch (duration.type) {
+            case 'instant':
+                return 'Instantaneous';
 
-                case 'special':
-                    return 'Special';
+            case 'special':
+                return 'Special';
 
-                case 'permanent':
-                    return 'Until dispelled';
+            case 'permanent':
+                return 'Until dispelled';
 
-                case 'timed': {
-                    const amount = d.duration.amount;
-                    const unit = d.duration.type;
-                    const time = amount > 1 ? `${amount} ${unit}s` : `${amount} ${unit}`;
+            case 'timed': {
+                const amount = duration.duration.amount;
+                const unit = duration.duration.type;
+                const time = amount > 1 ? `${amount} ${unit}s` : `${amount} ${unit}`;
 
-                    return d.concentration ? `Concentration, up to ${time}` : time;
-                }
-
-                default:
-                    throw new Error(`Unsupported duration type: ${d.type}`);
+                return duration.concentration ? `Concentration, up to ${time}` : time;
             }
+
+            default:
+                throw new Error(`Unsupported duration type: ${duration}`);
         }
-    );
+    });
 
     if (durations.length > 1) return `${joinStringsWithOr(results, false)} (see below)`; // If there's more than one duration, there's always an explanation as to why.
     return joinStringsWithOr(results, false);
 }
 
-export function parseDistance(distance: any): string {
+export function parseDistance(distance: Distance): string {
     switch (distance.type) {
         case 'touch':
             return 'Touch';
@@ -288,18 +293,17 @@ export function parseDistance(distance: any): string {
             return 'Unlimited';
         case 'feet':
             return `${distance.amount} feet`;
-        case 'mile':
         case 'miles': {
             if (distance.amount == 1) return '1 mile';
             return `${distance.amount} miles`;
         }
         default: {
-            throw `Unsupported distance type: '${distance.type}'`;
+            throw `Unsupported distance type: '${JSON.stringify(distance)}'`;
         }
     }
 }
 
-export function parseRange(range: any): string {
+export function parseRange(range: Range): string {
     switch (range.type) {
         case 'point':
             return parseDistance(range.distance);
@@ -322,19 +326,20 @@ export function parseRange(range: any): string {
         case 'cylinder':
             return `Cylinder (${parseDistance(range.distance)})`;
         default: {
-            throw `Unsupported range type: '${range.type}`;
+            throw `Unsupported range type: '${JSON.stringify(range)}`;
         }
     }
 }
 
-export function parseMaterialComponents(components: any): string | null {
+export function parseMaterialComponents(components: SpellComponents): string | null {
     if (!components.m) return null;
     const material = components.m;
+    if (typeof material === 'boolean') return null;
     if (typeof material === 'string') return material;
     return material.text;
 }
 
-export function parseComponents(components: any): string {
+export function parseComponents(components: SpellComponents): string {
     const result = [];
 
     if ('v' in components) result.push('V');
@@ -348,7 +353,7 @@ export function parseComponents(components: any): string {
     return result.join(', ');
 }
 
-export function parseSpellDamage(spell: any): SpellDamage[] | null {
+export function parseSpellDamage(spell: SpellBase): SpellDamage[] | null {
     if (spell.scalingLevelDice) {
         const results: SpellDamage[] = [];
         const scalingList = Array.isArray(spell.scalingLevelDice) ? spell.scalingLevelDice : [spell.scalingLevelDice];

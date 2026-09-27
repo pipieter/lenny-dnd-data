@@ -9,6 +9,7 @@ import { Disease } from '../5etools-collector/types/disease';
 import { Feat } from '../5etools-collector/types/feat';
 import { Fluff } from '../5etools-collector/types/fluff';
 import { Hazard } from '../5etools-collector/types/hazard';
+import { Sense } from '../5etools-collector/types/internal/base';
 import {
     Item,
     ItemEntry,
@@ -128,8 +129,8 @@ export abstract class Databank {
     // Hazards
     public readonly trap: Hazard[] = [];
     public readonly hazard: Hazard[] = [];
-    public readonly trapFluff: any[] = [];
-    public readonly hazardFluff: any[] = [];
+    public readonly trapFluff: Fluff[] = [];
+    public readonly hazardFluff: Fluff[] = [];
     // Books and adventures
     public readonly book: any[] = [];
     public readonly adventure: any[] = [];
@@ -168,7 +169,7 @@ export abstract class Databank {
     // Life
     public readonly lifeClass: LifeClass[] = [];
     public readonly lifeBackground: LifeBackground[] = [];
-    public readonly lifeTrinket: any[] = [];
+    public readonly lifeTrinket: string[] = [];
 
     // Source
     public readonly source: Source[] = [];
