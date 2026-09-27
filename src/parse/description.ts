@@ -1,3 +1,13 @@
+import { Link } from '../../5etools-collector/types/internal/base';
+import {
+    Entry,
+    EntryInline,
+    EntryInset,
+    EntryItem,
+    EntryItemSpell,
+    EntryList,
+    EntryQuote,
+} from '../../5etools-collector/types/internal/entry';
 import { joinStringsWithOr } from '../util';
 import { parseAbilityScore } from './base';
 import { cleanDNDText, containsDisallowedSymbols } from './clean';
@@ -126,7 +136,81 @@ function splitDescriptionTypes(values: (string | Table | List)[]): {
     return { strings, tables, lists };
 }
 
-function parseDescriptionBlock(description: string | any): (string | Table | List)[] {
+function parseEntryQuote(entry: EntryQuote): string[] {
+    const quote = parseDescriptionBlockFromBlocks(entry.entries);
+    if (entry.by) return [`*${quote}* - ${entry.by}`];
+    return [`*${quote}*`];
+}
+
+function parseEntryList(entry: EntryList) {
+    function isTable(description: string | List | Table): description is Table {
+        return typeof description !== 'string' && description.type === 'table';
+    }
+
+    const entries = entry.items.flatMap(parseDescriptionBlock);
+    // Remove tables and append them afterwards
+    const tables = entries.filter((entry) => isTable(entry));
+    const nontables = entries.filter((entry) => !isTable(entry)) as (string | List)[];
+    const list: List = { type: 'list', caption: '', entries: nontables };
+    return [list, ...tables];
+}
+
+function parseEntryInset(entry: EntryInset) {
+    const entries = entry.entries.flatMap(parseDescriptionBlock);
+    const { strings, tables, lists } = splitDescriptionTypes(entries);
+    const string = strings.map((str) => `*${str}*`).join('\n');
+    return [string, ...lists, ...tables];
+}
+
+function parseEntryItem(entry: EntryItem) {
+    const entries: (string | Table | List)[] = [];
+    if (entry.entries) {
+        entries.push(...entry.entries.flatMap(parseDescriptionBlock));
+    } else if (entry.entry) {
+        entries.push(...parseDescriptionBlock(entry.entry));
+    } else {
+        throw "Could not find entry in description block with type 'item'";
+    }
+
+    const { strings, tables, lists } = splitDescriptionTypes(entries);
+    const string = strings.join('\n');
+    if (entry.name) {
+        const name = entry.name.replace(/:$/, '');
+        return [cleanDNDText(`**${name}**: ${string}`), ...lists, ...tables];
+    } else {
+        return [cleanDNDText(string), ...lists, ...tables];
+    }
+}
+
+function parseEntryItemSpell(entry: EntryItemSpell) {
+    const name = cleanDNDText(entry.name);
+    const text = cleanDNDText(entry.entry);
+    return [`${name} ${text}`];
+}
+
+function parseEntryInline(entry: EntryInline) {
+    const text = entry.entries.flatMap(parseDescriptionBlock).join('');
+    if (entry.name) return [cleanDNDText(`**${entry.name}**: ${text}`)];
+    return [cleanDNDText(text)];
+}
+
+function parseLink(link: Link) {
+    let url: string;
+    const text = link.text;
+    const href = link.href;
+
+    if (href.type === 'internal') {
+        url = get5eToolsUrl(href.path);
+        if (href.hash) {
+            url = url + '#' + href.hash;
+        }
+    } else {
+        url = href.url;
+    }
+    return [`[${text}](${url})`];
+}
+
+function parseDescriptionBlock(description: Entry | Link): (string | Table | List)[] {
     if (typeof description == 'string') {
         return [cleanDNDText(description)];
     }
@@ -138,56 +222,28 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
 
     const type = description.type;
     switch (type) {
-        case 'quote': {
-            const quote = parseDescriptionBlockFromBlocks(description.entries);
-            if (description.by) return [`*${quote}* - ${description.by}`];
-            return [`*${quote}*`];
-        }
-        case 'list': {
-            const entries = description.items.flatMap(parseDescriptionBlock);
-            // Remove tables and append them afterwards
-            const tables = entries.filter((entry: any) => entry.type === 'table');
-            const nontables = entries.filter((entry: any) => entry.type !== 'table');
-            const list: List = { type: 'list', caption: '', entries: nontables };
-            return [list, ...tables];
-        }
-        case 'inset':
-        case 'insetReadaloud': {
-            const entries = description.entries.flatMap(parseDescriptionBlock);
-            const { strings, tables, lists } = splitDescriptionTypes(entries);
-            const entry = strings.map((str) => `*${str}*`).join('\n');
-            return [entry, ...lists, ...tables];
-        }
-        case 'item': {
-            const entries: (string | Table | List)[] = [];
-            if (description.entries) {
-                entries.push(...description.entries.flatMap(parseDescriptionBlock));
-            } else if (description.entry) {
-                entries.push(...parseDescriptionBlock(description.entry));
-            } else {
-                throw "Could not find entry in description block with type 'item'";
-            }
+        case 'link':
+            return parseLink(description);
 
-            const { strings, tables, lists } = splitDescriptionTypes(entries);
-            const entry = strings.join('\n');
-            if (description.name) {
-                const name = description.name.replace(/:$/, '');
-                return [cleanDNDText(`**${name}**: ${entry}`), ...lists, ...tables];
-            } else {
-                return [cleanDNDText(entry), ...lists, ...tables];
-            }
-        }
-        case 'itemSpell': {
-            const name = cleanDNDText(description.name);
-            const entry = cleanDNDText(description.entry);
-            return [`${name} ${entry}`];
-        }
-        case 'inline': {
-            const entries = description.entries.flatMap(parseDescriptionBlock);
-            const entry = entries.join('');
-            if (description.name) return [cleanDNDText(`**${description.name}**: ${entry}`)];
-            return [cleanDNDText(entry)];
-        }
+        case 'quote':
+            return parseEntryQuote(description);
+
+        case 'list':
+            return parseEntryList(description);
+
+        case 'inset':
+        case 'insetReadaloud':
+            return parseEntryInset(description);
+
+        case 'item':
+            return parseEntryItem(description);
+
+        case 'itemSpell':
+            return parseEntryItemSpell(description);
+
+        case 'inline':
+            return parseEntryInline(description);
+
         case 'section':
         case 'entries': {
             const entries = description.entries.flatMap(parseDescriptionBlock);
@@ -306,25 +362,6 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
                     entries: [`[${name}](${link})`],
                 },
             ];
-        }
-        case 'link': {
-            const text = description.text;
-            const href = description.href;
-            let url = null;
-
-            switch (href.type) {
-                case 'internal':
-                    url = get5eToolsUrl(href.path);
-                    if (href.hash) url = url + '#' + href.hash;
-                    break;
-
-                case 'external':
-                    url = href.url;
-                    break;
-            }
-
-            if (!url) throw `Unsupported ${type} ${description}`;
-            return [`[${text}](${url})`];
         }
         case 'hr': {
             const hrRepeats = 2;
