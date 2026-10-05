@@ -4300,6 +4300,1960 @@
   "reprint": null
  },
  {
+  "name": "Magus",
+  "source": "Magus2024",
+  "url": "https://5e.tools/classes.html#magus_magus2024",
+  "subclassUnlockLevel": 3,
+  "primaryAbility": "Intelligence",
+  "spellcastAbility": "Intelligence",
+  "startingProficiencies": {
+   "armor": [
+    "light",
+    "medium",
+    "Shields"
+   ],
+   "tools": [],
+   "weapons": [
+    "simple",
+    "martial"
+   ],
+   "skills": {
+    "options": [
+     "acrobatics",
+     "arcana",
+     "athletics",
+     "history",
+     "insight",
+     "investigation",
+     "nature",
+     "perception",
+     "religion"
+    ],
+    "amount": 2
+   },
+   "saving": [
+    "con",
+    "int"
+   ]
+  },
+  "hp": 8,
+  "baseInfo": [
+   {
+    "name": "Health",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "HP Die: 1d8",
+      "Level 1 Magus HP: 8 + Con. mod",
+      "HP per Magus level: 1d8 + Con. mod *or* 5 + Con. mod"
+     ]
+    }
+   },
+   {
+    "name": "Saving Throw Proficiencies",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Constitution",
+      "Intelligence"
+     ]
+    }
+   },
+   {
+    "name": "Proficiencies",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Skill Proficiencies: Choose 2: Acrobatics, Arcana, Athletics, History, Insight, Investigation, Nature, Perception Or Religion",
+      "Weapon Proficiencies: Simple and Martial",
+      "Armor Proficiencies: Light Armor, Medium Armor and Shields Armor"
+     ]
+    }
+   },
+   {
+    "name": "Starting Equipment",
+    "type": "text",
+    "value": "*Choose A, B, or C:* (A) Studded Leather Armor, Longbow, 20 Arrows, Quiver, Rapier, Component Pouch, Diamond worth 50 GP, and 4 GP; or (B) 200 GP"
+   },
+   {
+    "name": "Multiclassing",
+    "type": "text",
+    "value": "Ability requirements: At least 13 Intelligence"
+   },
+   {
+    "name": "Proficiencies",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Weapon Proficiencies: Martial",
+      "Armor Proficiencies: Light Armor, Medium Armor and Shields"
+     ]
+    }
+   }
+  ],
+  "levelResources": {
+   "1": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        2,
+        0,
+        0,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "2 Cantrips known\n2 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+2 Proficiency Bonus"
+    }
+   ],
+   "2": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        2,
+        0,
+        0,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "2 Cantrips known\n3 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+2 Proficiency Bonus"
+    }
+   ],
+   "3": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        3,
+        0,
+        0,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "2 Cantrips known\n4 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+2 Proficiency Bonus"
+    }
+   ],
+   "4": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        3,
+        0,
+        0,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "2 Cantrips known\n5 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+2 Proficiency Bonus"
+    }
+   ],
+   "5": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        2,
+        0,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "2 Cantrips known\n6 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+3 Proficiency Bonus"
+    }
+   ],
+   "6": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        2,
+        0,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "2 Cantrips known\n7 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+3 Proficiency Bonus"
+    }
+   ],
+   "7": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        0,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "2 Cantrips known\n8 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+3 Proficiency Bonus"
+    }
+   ],
+   "8": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        0,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "2 Cantrips known\n9 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+3 Proficiency Bonus"
+    }
+   ],
+   "9": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        2,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "2 Cantrips known\n10 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+4 Proficiency Bonus"
+    }
+   ],
+   "10": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        2,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "3 Cantrips known\n11 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+4 Proficiency Bonus"
+    }
+   ],
+   "11": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "3 Cantrips known\n12 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+4 Proficiency Bonus"
+    }
+   ],
+   "12": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        0,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "3 Cantrips known\n13 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+4 Proficiency Bonus"
+    }
+   ],
+   "13": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        1,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "3 Cantrips known\n14 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+5 Proficiency Bonus"
+    }
+   ],
+   "14": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        1,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "4 Cantrips known\n15 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+5 Proficiency Bonus"
+    }
+   ],
+   "15": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        2,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "4 Cantrips known\n16 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+5 Proficiency Bonus"
+    }
+   ],
+   "16": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        2,
+        0
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "4 Cantrips known\n17 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+5 Proficiency Bonus"
+    }
+   ],
+   "17": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        3,
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "4 Cantrips known\n18 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+6 Proficiency Bonus"
+    }
+   ],
+   "18": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        3,
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "4 Cantrips known\n19 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+6 Proficiency Bonus"
+    }
+   ],
+   "19": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        3,
+        2
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "4 Cantrips known\n20 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+6 Proficiency Bonus"
+    }
+   ],
+   "20": [
+    {
+     "name": "Spell Slots per Spell Level",
+     "type": "table",
+     "table": {
+      "type": "table",
+      "title": "Spell Slots per Spell Level",
+      "headers": [
+       "1st",
+       "2nd",
+       "3rd",
+       "4th",
+       "5th"
+      ],
+      "rows": [
+       [
+        4,
+        3,
+        3,
+        3,
+        2
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "4 Cantrips known\n20 Prepared Spells"
+    },
+    {
+     "name": "Class Resources",
+     "type": "text",
+     "value": "+6 Proficiency Bonus"
+    }
+   ]
+  },
+  "levelFeatures": {
+   "1": [
+    {
+     "name": "Esoteric Eye",
+     "type": "text",
+     "value": "As a Bonus Action, you can observe a creature you can see. Until the end of your next turn, you have Advantage on your Magus spell attacks against it and it has Disadvantage on saving throws against your Magus spells."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum once). You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest."
+    },
+    {
+     "name": "Spellcasting",
+     "type": "text",
+     "value": "With disciplined rehearsal, you can wage war and cast spells by rote. See the core rules for the rules on spellcasting. The information below details how you use those rules with Magus spells, which appear in the Magus spell list later in the class's description."
+    },
+    {
+     "name": "Cantrips",
+     "type": "text",
+     "value": "You know two Magus cantrips of your choice. __Chill Touch__ and __Fire Bolt__ are recommended. Whenever you gain a Magus level, you can replace one of your cantrips from this feature with another Magus cantrip of your choice."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "When you reach Magus levels 10 and 14, you learn another Magus cantrip of your choice, as shown in the Cantrips column of the Magus Features table."
+    },
+    {
+     "name": "Spell Slots",
+     "type": "text",
+     "value": "The Magus Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended spell slots when you finish a Long Rest."
+    },
+    {
+     "name": "Prepared Spells of Level 1+",
+     "type": "text",
+     "value": "You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Magus spells. __Chromatic Orb__ and __Shield__ are recommended."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "The number of spells on your list increases as you gain Magus levels, as shown in the Prepared Spells column of the Magus Features table. Whenever that number increases, choose additional Magus spells until the number of spells on your list matches the number in the Magus Features table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Magus, your list of prepared spells can include six Magus spells of level 1 or 2 in any combination."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "If another Magus feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Magus spells for you."
+    },
+    {
+     "name": "Changing Your Prepared Spells",
+     "type": "text",
+     "value": "Whenever you gain a Magus level, you can replace one spell on your list with another Magus spell for which you have spell slots."
+    },
+    {
+     "name": "Spellcasting Ability",
+     "type": "text",
+     "value": "Intelligence is your spellcasting ability for your Magus spells."
+    },
+    {
+     "name": "Weapon Mastery",
+     "type": "text",
+     "value": "Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Rapiers and Pistols."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Longbows and Longswords."
+    }
+   ],
+   "2": [
+    {
+     "name": "Fighting Style",
+     "type": "text",
+     "value": "You gain a Fighting Style feat of your choice. Instead of choosing one of those feats, you can choose the option below."
+    },
+    {
+     "name": "",
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "",
+      "entries": [
+       "[Mystic Warrior](https://5e.tools/feats.html#mystic%20warrior_magus2024)"
+      ]
+     }
+    },
+    {
+     "name": "Mystic Mark",
+     "type": "text",
+     "value": "You can take a Bonus Action to imbue yourself with magical power and resilience. When you do, choose a Magus level 1+ spell you have prepared that has a casting time of an action or a Bonus Action, expend a spell slot equal to or higher than the spell level, and choose Force damage or a damage type dealt by the spell. You gain your choice of the Aegis or Enspell benefit."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "You can only benefit from one Aegis and one Enspell at a time. While you have an Aegis or Enspell, you can use a Bonus Action to release and cast a spell chosen using this feature. Your Mystic Mark and its corresponding benefit end after 1 hour, or when you release the spell."
+    },
+    {
+     "name": "Aegis",
+     "type": "text",
+     "value": "You have Resistance to the chosen damage type."
+    },
+    {
+     "name": "Enspell",
+     "type": "text",
+     "value": "When you deal damage with a weapon or Unarmed Strike, you can deal the chosen damage type instead of the normal damage type for the attack."
+    }
+   ],
+   "3": [
+    {
+     "name": "Magus Subclass",
+     "type": "text",
+     "value": "You gain a Magus subclass of your choice. A subclass is a specialization that grants you features at certain Magus levels. For the rest of your career, you gain each of your subclass's features that are of your Magus level or lower."
+    }
+   ],
+   "4": [
+    {
+     "name": "Ability Score Improvement",
+     "type": "text",
+     "value": "You gain the __Ability Score Improvement__ feat or another [feat](https://5e.tools/feats.html) of your choice for which you qualify."
+    }
+   ],
+   "5": [
+    {
+     "name": "Arcane Ability",
+     "type": "text",
+     "value": "When you fail an ability check, you can imbue your effort with a magical might. You add a bonus to the ability check equal to your Intelligence modifier plus the highest level unexpended spell you have, potentially turning it into a success."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't do so again until you finish a Short or Long Rest unless you expend a spell slot (no action required) to restore your use of it."
+    },
+    {
+     "name": "Sword and Sorcery",
+     "type": "text",
+     "value": "When you take the Attack action and it doesn't benefit from the Extra Attack feature, you can cast a Magus cantrip with a casting time of an action as part of the same action. When you take the Magic action on your turn, you can use a Bonus Action to make one weapon attack."
+    }
+   ],
+   "6": [
+    {
+     "name": "Magical Recovery",
+     "type": "text",
+     "value": "You can regain some of your magical energy by meditating on the Tapestry and its myriad threads. When you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level equal to no more than half your Magus level (round up), and none of the slots can be level 6 or higher. For example, if you're a level 6 Magus, you can recover up to three levels' worth of spell slots, regaining either one level 3 spell slot, a level 2 and a level 1 spell slot, or three level 1 spell slots."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't do so again until you finish a Long Rest."
+    }
+   ],
+   "7": [
+    {
+     "name": "Subclass Feature",
+     "type": "text",
+     "value": "You gain a feature from your Magus Subclass."
+    }
+   ],
+   "8": [
+    {
+     "name": "Ability Score Improvement",
+     "type": "text",
+     "value": "You gain the __Ability Score Improvement__ feat or another [feat](https://5e.tools/feats.html) of your choice for which you qualify."
+    }
+   ],
+   "9": [
+    {
+     "name": "Rite of Return",
+     "type": "text",
+     "value": "When your Mystic Mark ends without you releasing the spell, you regain the expended spell slot. Additionally, you can end your Mystic Mark as a Bonus Action, regaining the expended spell slot."
+    }
+   ],
+   "10": [
+    {
+     "name": "All-Seeing Eye",
+     "type": "text",
+     "value": "As a Bonus Action you can expend a use of your Esoteric Eye to gain Truesight out to a distance of 60 feet for 10 minutes. During this time, you can use the Bonus Action granted by your Esoteric Eye without requiring or expending any uses."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+    }
+   ],
+   "11": [
+    {
+     "name": "Sigil Surge",
+     "type": "text",
+     "value": "The benefits of your Mystic Mark are improved."
+    },
+    {
+     "name": "Aegis",
+     "type": "text",
+     "value": "At the start of each of your turns, you gain Temporary Hit Points equal to the expended spell slot level plus your Intelligence modifier."
+    },
+    {
+     "name": "Enspell",
+     "type": "text",
+     "value": "When you deal damage with a weapon or Unarmed Strike, you deal an additional **1d6** damage of the chosen type."
+    }
+   ],
+   "12": [
+    {
+     "name": "Ability Score Improvement",
+     "type": "text",
+     "value": "You gain the __Ability Score Improvement__ feat or another [feat](https://5e.tools/feats.html) of your choice for which you qualify."
+    }
+   ],
+   "14": [
+    {
+     "name": "Subclass Feature",
+     "type": "text",
+     "value": "You gain a feature from your Magus Subclass."
+    }
+   ],
+   "15": [
+    {
+     "name": "Sorcerous Shielding",
+     "type": "text",
+     "value": "You gain the following benefits."
+    },
+    {
+     "name": "Magic Resistance",
+     "type": "text",
+     "value": "Choose one of the following damage types: Force, Necrotic, Psychic, or Radiant. You have Resistance to that damage type. At the start of each of your turns, you can change the damage type affected by this feature to one of the other listed options."
+    },
+    {
+     "name": "Spell Parry",
+     "type": "text",
+     "value": "You have Advantage on saving throws against spells and spell attacks against you have Disadvantage."
+    }
+   ],
+   "16": [
+    {
+     "name": "Ability Score Improvement",
+     "type": "text",
+     "value": "You gain the __Ability Score Improvement__ feat or another [feat](https://5e.tools/feats.html) of your choice for which you qualify."
+    }
+   ],
+   "18": [
+    {
+     "name": "Spell Surge",
+     "type": "text",
+     "value": "In times of need you can surge with arcane power, grasping at magic typically beyond your ability. Choose one level 6 Magus spell as your surge spell. You can cast your surge spell once without expending a spell slot. When you do, you regain one spell slot of your choice that is 5th level or lower."
+    },
+    {
+     "name": "",
+     "type": "text",
+     "value": "Once you cast your surge spell you must finish a Long Rest before you can cast it in this way again."
+    }
+   ],
+   "19": [
+    {
+     "name": "Epic Boon",
+     "type": "text",
+     "value": "You gain an Epic Boon feat or another feat of your choice for which you qualify. __Boon of Spell Recall__ is recommended."
+    }
+   ],
+   "20": [
+    {
+     "name": "Archmagus",
+     "type": "text",
+     "value": "You gain the following benefits."
+    },
+    {
+     "name": "Ability Score Enhancement",
+     "type": "text",
+     "value": "Choose Strength or Dexterity. Your Intelligence and the chosen ability score increase by 2, to a maximum of 23."
+    },
+    {
+     "name": "Rapid Recovery",
+     "type": "text",
+     "value": "You can use your Magical Recovery twice, regaining both uses when you finish a Long Rest."
+    },
+    {
+     "name": "Subclass Feature",
+     "type": "text",
+     "value": "You gain a feature from your Magus Subclass."
+    }
+   ]
+  },
+  "subclassLevelFeatures": {
+   "Arcane Order (MAGUS2024)": {
+    "3": [
+     {
+      "name": "Arcane Order (MAGUS2024) Features",
+      "type": "text",
+      "value": "*Defend the Arcane Architecture of the Multiverse*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The Arcane Order seeks to catalog the magical wonders of the multiverse and defend the Tapestry from existential threats. You travel the world with an eye out for lost artifacts, magical monuments, and mystic secrets. Although some in the Arcane Order collect such prizes in a quest for power, most do so out of intellectual curiosity or the desire to preserve such treasures for future generations."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Amethyst Mark (MAGUS2024)__: The effects of your mystic marks are enhanced by your greater understanding of the Arcane Order's esoteric knowledge. When you use your Mystic Mark feature, a faint purple, crystalline aura surrounds you and you gain the following effects based on the benefit or benefits chosen."
+     },
+     {
+      "name": "Aegis",
+      "type": "text",
+      "value": "When a willing creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to swap places via teleportation. You suffer the effects of the attack instead of the creature and you have Resistance to damage dealt by the attack."
+     },
+     {
+      "name": "Enspell",
+      "type": "text",
+      "value": "Once per turn when you hit a creature with a weapon or Unarmed Strike, you can force it to make a Charisma saving throw against your spell save DC. On a failure, the creature is teleported 10 feet horizontally in a direction of your choosing."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Arcane Order Magic (MAGUS2024)__: You can use an Arcane Focus as a Spellcasting Focus for your Magus spells."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In addition, your training in the Arcane Order ensures you always have certain spells ready; when you reach a Magus level specified in the Arcane Order Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Arcane Order Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Arcane Order Spells",
+       "headers": [
+        "Magus Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Demiplanar Pitch, Shocking Grasp, Find Familiar, Magic Missile"
+        ],
+        [
+         "5",
+         "Nystul's Magic Aura, Misty Step"
+        ],
+        [
+         "9",
+         "Dispel Magic, Waypoint"
+        ],
+        [
+         "13",
+         "Banishment, Mordenkainen's Private Sanctum"
+        ],
+        [
+         "17",
+         "Reflect Magic, Teleportation Circle"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Mystic Insights (MAGUS2024)__: You gain the following benefits."
+     },
+     {
+      "name": "Additional Cantrips",
+      "type": "text",
+      "value": "You know two cantrips of your choice from the Wizard spell list. These cantrips count as Magus cantrips for you but don't count against your number of cantrips known."
+     },
+     {
+      "name": "Arcana Adept",
+      "type": "text",
+      "value": "You gain proficiency in the *Arcana* skill. If you are already proficient with *Arcana*, you gain Expertise in it instead."
+     },
+     {
+      "name": "Eldritch Eye",
+      "type": "text",
+      "value": "You can take a Bonus Action to cast the __Detect Magic__ spell or the __Identify__ spell. You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum once), and you regain all expended uses when you finish a Long Rest."
+     }
+    ],
+    "7": [
+     {
+      "name": "Arcane Order (MAGUS2024) Features",
+      "type": "text",
+      "value": "You can cast a Magus spell you have prepared without expending a spell slot, as if you had expended your highest level spell slot. Once you do, you cannot do so again until you finish a Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Choose two spells of a level you can cast from the Wizard spell list. You always have the chosen spells prepared. Whenever you gain a Magus level, you can replace one of the chosen spells with another spell from the Wizard spell list of a level you can cast."
+     }
+    ],
+    "14": [
+     {
+      "name": "Arcane Order (MAGUS2024) Features",
+      "type": "text",
+      "value": "As a Magic action, choose a point you can see within 60 feet of yourself, warping space in a 20-foot radius Sphere around it. You and your allies within the area can each teleport up to 30 feet in a direction of your choice. All other creatures in the area must make a Strength saving throw against your spell save DC. On a failed save, a creature takes **6d8** Force damage, is pulled up to 15 feet closer to the point, and can't use its Speed to move away from that point until the start of your next turn. On a successful save, a creature takes half as much damage only."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+     }
+    ],
+    "20": [
+     {
+      "name": "Arcane Order (MAGUS2024) Features",
+      "type": "text",
+      "value": "You gain the following benefits."
+     },
+     {
+      "name": "Amethyst Spell Surge",
+      "type": "text",
+      "value": "You can expend the use of your Spell Surge to cast __Chain Lightning__ or __Contingency__."
+     },
+     {
+      "name": "Vexing Vortices",
+      "type": "text",
+      "value": "When you finish a Short Rest, you can regain the use of your __Arcane Vortex__. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest."
+     }
+    ]
+   },
+   "Heaven's Guard (MAGUS2024)": {
+    "3": [
+     {
+      "name": "Heaven's Guard (MAGUS2024) Features",
+      "type": "text",
+      "value": "*Make Heaven a Place on Earth*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Legend has it that in a time before recorded history, an elite host of Celestial warriors forsook their immortality and the divine realms, becoming mortal to protect the holy people and places of the Material Plane. The story goes that these martyrs' legacy lives on in the Heaven's Guard, an order of Magi that act as bodyguards to the righteous and sentinels of hallowed temples. Whether or not such tales are true, Magi in the Heaven's Guard eagerly serve as living shields to their chosen charges by drawing their enemies' ire and healing what wounds their adversaries manage to inflict."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Alabaster Mark (MAGUS2024)__: The effects of your mystic marks are enhanced by your greater understanding of the Heaven's Guard's esoteric knowledge. When you use your Mystic Mark feature, a soft white and gold aura envelops you, and you gain the following effects based on the benefit or benefits chosen."
+     },
+     {
+      "name": "Aegis",
+      "type": "text",
+      "value": "When a willing creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to guard the creature until the start of your next turn. While the creature is guarded this way, attacks against it have Disadvantage."
+     },
+     {
+      "name": "Enspell",
+      "type": "text",
+      "value": "Once per turn when you hit a creature with a weapon or Unarmed Strike, it has Disadvantage on attacks against creatures other than you until the start of your next turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Heaven's Guard Magic (MAGUS2024)__: You can use a Holy Symbol as a Spellcasting Focus for your Magus spells."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In addition, your training in the Heaven's Guard ensures you always have certain spells ready; when you reach a Magus level specified in the Heaven's Guard Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Heaven's Guard Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Heaven's Guard Spells",
+       "headers": [
+        "Magus Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Cure Wounds, Give Life, Guiding Bolt, Righteous Incitement"
+        ],
+        [
+         "5",
+         "Animate Shield, Gentle Repose"
+        ],
+        [
+         "9",
+         "Mass Healing Word, Revivify"
+        ],
+        [
+         "13",
+         "Death Ward, Stoneskin"
+        ],
+        [
+         "17",
+         "Mass Cure Wounds, Raise Dead"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Heavensent (MAGUS2024)__: You gain the following benefits."
+     },
+     {
+      "name": "Best Offense",
+      "type": "text",
+      "value": "While you are using a Shield, you gain a +2 bonus to damage rolls with weapons and Unarmed Strikes."
+     },
+     {
+      "name": "Gifted Healer",
+      "type": "text",
+      "value": "When you cause a creature to regain Hit Points with a spell or Magus feature, you can expend a Hit Point Die, rolling it and adding the result to the total number of Hit Points restored."
+     },
+     {
+      "name": "Heaven's Hand",
+      "type": "text",
+      "value": "When you cast a Magus spell that deals damage, it can deal your choice of Radiant damage or its normal damage type."
+     }
+    ],
+    "7": [
+     {
+      "name": "Heaven's Guard (MAGUS2024) Features",
+      "type": "text",
+      "value": "As a Bonus Action, you can fly up to twice your Speed. When you do, at the end of your turn creatures of your choice within 10 feet of you regain Hit Points equal to your Magus level plus your Intelligence modifier."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Short Rest or Long Rest."
+     }
+    ],
+    "14": [
+     {
+      "name": "Heaven's Guard (MAGUS2024) Features",
+      "type": "text",
+      "value": "As a Bonus Action you can cloak another creature within 30 feet of you and that you can see in radiant light. The target gains Temporary Hit Points equal to 5d10 plus your Magus level. While a creature has any Temporary Hit Points granted by this feature, it has the benefits listed below. Once you have used this feature, you can't use it again until you finish a Long Rest."
+     },
+     {
+      "name": "Brilliant",
+      "type": "text",
+      "value": "Creatures that do not have Immunity to the Blinded condition have Disadvantage on attacks against the target."
+     },
+     {
+      "name": "Bright",
+      "type": "text",
+      "value": "The target sheds Bright Light out to 30 feet and Dim Light for an additional 30 feet."
+     },
+     {
+      "name": "Buoyant",
+      "type": "text",
+      "value": "The target can take a Bonus Action on each of its turns to Fly up to 30 feet. If the creature does not land at the end of this movement, it falls to the ground without taking damage."
+     }
+    ],
+    "20": [
+     {
+      "name": "Heaven's Guard (MAGUS2024) Features",
+      "type": "text",
+      "value": "You gain the following benefits."
+     },
+     {
+      "name": "Alabaster Spell Surge",
+      "type": "text",
+      "value": "You can expend the use of your Spell Surge to cast __Heal__ or __Sunbeam__."
+     },
+     {
+      "name": "Celestial Shieldbearer",
+      "type": "text",
+      "value": "When you finish a Short Rest, you can regain the use of your __Cloak of Radiance__. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest."
+     }
+    ]
+   },
+   "Knights Stygian (MAGUS2024)": {
+    "3": [
+     {
+      "name": "Knights Stygian (MAGUS2024) Features",
+      "type": "text",
+      "value": "*Haunt the Unrighteous*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When corruption spreads across the world like an infected sore and ne'er-do-wells hold the keys to the kingdoms, the Knights Stygian offer a cure that is as complete as it is brutal. These Magi believe that the means justify the ends, channeling dark magic to avenge injustices and bring evil to heel."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Doombringer (MAGUS2024)__: You gain the following benefits."
+     },
+     {
+      "name": "Deathsight",
+      "type": "text",
+      "value": "You know when creatures you can see are *Bloodied*. In addition, you can see creatures with the Invisible condition if they are *Bloodied*, and you do not suffer Disadvantage on attacks against them as a result of the Invisible condition."
+     },
+     {
+      "name": "Unnatural Vitality",
+      "type": "text",
+      "value": "As a Bonus Action you can expend a spell slot to regain expended Hit Point Dice equal to twice the spell slot's level."
+     },
+     {
+      "name": "Reaper's Reward",
+      "type": "text",
+      "value": "Once per turn when you hit a creature with a weapon or Unarmed Strike, you can expend and roll a Hit Point Die. You regain Hit Points, and deal additional Necrotic damage to the creature, equal to a roll of the Hit Point Die."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Knights Stygian Magic (MAGUS2024)__: You can use a Memento Mori as a Spellcasting Focus for your Magus spells."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In addition, your training in the Knights Stygian ensures you always have certain spells ready; when you reach a Magus level specified in the Knights Stygian Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Knights Stygian Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Knights Stygian Spells",
+       "headers": [
+        "Magus Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Bitter Wind, Hateful Haunting, Grave Bolt, Grave Grasp"
+        ],
+        [
+         "5",
+         "Carrionette, Web"
+        ],
+        [
+         "9",
+         "Animate Dead, Mortal Terror"
+        ],
+        [
+         "13",
+         "Evard's Black Tentacles, Stygian Blast"
+        ],
+        [
+         "17",
+         "Contagion, Insect Plague"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Obsidian Mark (MAGUS2024)__: The effects of your mystic marks are enhanced by your greater understanding of the Knights Stygian's esoteric knowledge. When you use your Mystic Mark feature, you emit drifting motes of black ash and the acrid smell of decay, and you gain the following effects based on the benefit or benefits chosen."
+     },
+     {
+      "name": "Aegis",
+      "type": "text",
+      "value": "When a creature you can see within 30 feet of you is hit by an attack, you can force the attacker to make a Constitution saving throw as a Reaction. On a failed save, the attacker takes Necrotic damage equal to half the damage of its attack."
+     },
+     {
+      "name": "Enspell",
+      "type": "text",
+      "value": "Once per turn when you hit a creature with an attack with a weapon or Unarmed Strike, you can deal an additional **1d4** Necrotic damage. If the target is *Bloodied*, the additional damage increases to **2d4**."
+     }
+    ],
+    "7": [
+     {
+      "name": "Knights Stygian (MAGUS2024) Features",
+      "type": "text",
+      "value": "You gain the following benefits."
+     },
+     {
+      "name": "Dreadful Incantation",
+      "type": "text",
+      "value": "When you cast a level 1+ Necromancy spell or a spell from your Knights Stygian Magic, you can choose one creature within 60 feet of you that can see you. That creature must make a Wisdom saving throw against your spell save DC, gaining the Frightened condition until the start of your next turn on a failed save."
+     },
+     {
+      "name": "Fearless",
+      "type": "text",
+      "value": "You have Immunity to the Frightened condition."
+     },
+     {
+      "name": "Mortal Terror",
+      "type": "text",
+      "value": "Whenever you would deal Necrotic damage with a Magus spell or feature, you can deal your choice of Psychic or Necrotic damage."
+     }
+    ],
+    "14": [
+     {
+      "name": "Knights Stygian (MAGUS2024) Features",
+      "type": "text",
+      "value": "As a Bonus Action you can fling open the gates between life and death, filling the air with shadows and ash. When you do, you manifest a 30-foot Emanation that originates from you for the next minute."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When a creature starts its turn in your Emanation, you can deal **1d6** Necrotic damage to it. If the creature is *Bloodied*, you can deal **3d6** Necrotic damage instead. In addition, you can take a Bonus Action to make a creature of your choice within your Emanation that is *Bloodied* take a Wisdom saving throw against your spell save DC. On a failed save, the creature has the Frightened condition until the start of your next turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+     }
+    ],
+    "20": [
+     {
+      "name": "Knights Stygian (MAGUS2024) Features",
+      "type": "text",
+      "value": "You gain the following benefits."
+     },
+     {
+      "name": "Obsidian Spell Surge",
+      "type": "text",
+      "value": "You can expend the use of your Spell Surge to cast __Circle of Death__ or __Create Undead__."
+     },
+     {
+      "name": "Stygian Sentinel",
+      "type": "text",
+      "value": "When you finish a Short Rest, you can regain the use of your __Open the Iron Gates__. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest."
+     }
+    ]
+   },
+   "Shadow Court (MAGUS2024)": {
+    "3": [
+     {
+      "name": "Shadow Court (MAGUS2024) Features",
+      "type": "text",
+      "value": "*Fight for Control from the Shadows*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Although outsiders see the Shadow Court as a singular group, it is in fact multiple clans that wage clandestine wars against one another to obtain secrets and access to resources. Magi in the Shadow Court specialize in legerdemain, stealth, and assassination. Using these tools, these Magi manipulate political powers to stymie their enemies and advance their own agendas."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Hand And Foot Training (MAGUS2024)__: You gain the following benefits."
+     },
+     {
+      "name": "Covert Warrior",
+      "type": "text",
+      "value": "You gain proficiency in the *Stealth* skill and with Thieves' Tools. If you are already proficient with *Stealth*, you gain Expertise in it instead."
+     },
+     {
+      "name": "Enshadowed Equipment",
+      "type": "text",
+      "value": "You can take a Bonus Action to cause one of the following objects to magically coalesce from shadows in your hands: Caltrops, Costume, Crowbar, Grappling Hook, Ladder, Net, Parchment, Rope, Signal Whistle, Spyglass, or Thieves' Tools. This item remains until it has been exposed to Bright Light for 10 minutes, you dismiss it (no action required), or you use this Bonus Action again."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum once), and you regain all expended uses when you finish a Long Rest."
+     },
+     {
+      "name": "Martial Artist",
+      "type": "text",
+      "value": "You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes, and you can roll 1d6 in place of the normal damage of your Unarmed Strike. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Jade Mark (MAGUS2024)__: The effects of your mystic marks are enhanced by your greater understanding of the Shadow Court's esoteric knowledge. When you use your Mystic Mark feature, you are engulfed in an aura of translucent smoke and you gain the following effects based on the benefit or benefits chosen."
+     },
+     {
+      "name": "Aegis",
+      "type": "text",
+      "value": "When a creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to give the creature the Invisible condition until the end of its next turn. The condition ends early if the target makes an attack roll, deals damage, or casts a spell."
+     },
+     {
+      "name": "Enspell",
+      "type": "text",
+      "value": "Once per turn when you hit a creature with a weapon or Unarmed Strike, you can make the target overexposed until the start of your next turn or until it is hit with a Critical Hit. While overexposed, attack rolls against the target can score a Critical Hit on a roll of 19 or 20."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Shadow Court Magic (MAGUS2024)__: You can use Parchment as a Spellcasting Focus for your Magus spells. When you do, if the spell is level 1+ the Parchment is destroyed."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In addition, your training in the Shadow Court ensures you always have certain spells ready; when you reach a Magus level specified in the Shadow Court Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Shadow Court Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Shadow Court Spells",
+       "headers": [
+        "Magus Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Disguise Self, Forced Hesitation, Phantasmal Feint, Obscuring Prick"
+        ],
+        [
+         "5",
+         "Darkness, Invisibility"
+        ],
+        [
+         "9",
+         "Hypnotic Pattern, Major Image"
+        ],
+        [
+         "13",
+         "Greater Invisibility, Phantasmal Killer"
+        ],
+        [
+         "17",
+         "Mislead, Seeming"
+        ]
+       ]
+      }
+     }
+    ],
+    "7": [
+     {
+      "name": "Shadow Court (MAGUS2024) Features",
+      "type": "text",
+      "value": "You always have the __Mirror Image__ spell prepared."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can use a Bonus Action to cast __Mirror Image__ without expending a spell slot. When you do, each time a duplicate is destroyed the attacking creature must succeed on an Intelligence saving throw against your Magus spell save DC or take Psychic damage equal to your Magus level plus your Intelligence modifier."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this Bonus Action, you can't use it again until you finish a Long Rest unless you expend a level 2+ spell slot (no action required) to restore your use of it."
+     }
+    ],
+    "14": [
+     {
+      "name": "Shadow Court (MAGUS2024) Features",
+      "type": "text",
+      "value": "You can replace yourself with an unlikely body double in the instant before you take a blow. When you are hit by an attack, you can take a Reaction to reduce the damage from that attack to 1. When you do, you have the Invisible condition for 1 minute and teleport to an unoccupied space of your choice within 300 feet of you. You leave a block of wood or another harmless, mundane object in the space you teleported away from."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Long Rest."
+     }
+    ],
+    "20": [
+     {
+      "name": "Shadow Court (MAGUS2024) Features",
+      "type": "text",
+      "value": "You gain the following benefits."
+     },
+     {
+      "name": "Jade Spell Surge",
+      "type": "text",
+      "value": "You can expend the use of your Spell Surge to cast __Eyebite__ or __Programmed Illusion__."
+     },
+     {
+      "name": "Shadow Puppeteer",
+      "type": "text",
+      "value": "When you finish a Short Rest, you can regain the use of your __False Body Jutsu__. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest."
+     }
+    ]
+   },
+   "Sidereal Cabal (MAGUS2024)": {
+    "3": [
+     {
+      "name": "Sidereal Cabal (MAGUS2024) Features",
+      "type": "text",
+      "value": "*Master Your Destiny (and Everyone Else's Too)*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Magi in the Sidereal Cabal consult the stars to foresee the future and intercede at moments of particular import. Long ago the cabal followed a philosophy of balance, believing that destiny and free will should be given equal weight. Today the cabal is split into two camps, kismetists and volitionists. Kismetists prefer indirect and discreet methods, believing that active and obvious interference in the world's affairs cause a disruption in the natural order of fate. Volitionists find pivotal moments where the road of destiny forks and interject themselves to force the outcome they prefer."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Selenite Mark (MAGUS2024)__: The effects of your mystic marks are enhanced by your greater understanding of the Sidereal Cabal's esoteric knowledge. When you use your Mystic Mark feature, you give off a soft indistinct multicolored glow and hum with potential energy. You gain the following effects based on the benefit or benefits chosen."
+     },
+     {
+      "name": "Aegis",
+      "type": "text",
+      "value": "When a willing creature you can see within 30 feet of you is hit by an attack, you can use your Reaction to make the attacker reroll the attack with Disadvantage. It must use the new result."
+     },
+     {
+      "name": "Enspell",
+      "type": "text",
+      "value": "Once per turn when you miss a creature with a weapon or Unarmed Strike, you can make the attack roll again with Advantage. You must use the new result."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Sidereal Cabal Magic (MAGUS2024)__: You can use an Astrolabe or Arcane Focus as a Spellcasting Focus for your Magus spells."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In addition, your training in the Sidereal Cabal ensures you always have certain spells ready; when you reach a Magus level specified in the Sidereal Cabal Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Sidereal Cabal Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Sidereal Cabal Spells",
+       "headers": [
+        "Magus Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Misfortunate Missile, Overexposure, Bane, Bless"
+        ],
+        [
+         "5",
+         "Augury, Mind Spike"
+        ],
+        [
+         "9",
+         "Haste, Slow"
+        ],
+        [
+         "13",
+         "Cascade of Hours, Divination"
+        ],
+        [
+         "17",
+         "Dream, Scrying"
+        ]
+       ]
+      }
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Starlit Sight (MAGUS2024)__: You gain the following benefits."
+     },
+     {
+      "name": "Darkvision",
+      "type": "text",
+      "value": "You have Darkvision with a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet."
+     },
+     {
+      "name": "Mini-Portent",
+      "type": "text",
+      "value": "Whenever you finish a Long Rest, roll one d20 and record the number rolled. You can replace any D20 Test made by you or a creature that you can see with this foretold roll. You must choose to do so before the roll. This foretold roll can be used only once. When you finish a Long Rest, you lose any unused foretold roll."
+     },
+     {
+      "name": "Revelator's Eyes",
+      "type": "text",
+      "value": "You gain proficiency in the *Perception* skill. If you are already proficient with *Perception*, you gain Expertise in it instead."
+     }
+    ],
+    "7": [
+     {
+      "name": "Sidereal Cabal (MAGUS2024) Features",
+      "type": "text",
+      "value": "Your extensive study of the stars has taught you to twist the heavenly mechanics of fate in your favor. After a creature you can see within 60 feet of you makes a D20 Test you can expend a spell slot to modify the result of the roll. When you do, you can choose to increase or decrease the result of the roll by the level of the expended spell slot, potentially turning a failure into a success or vice versa."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until the start of your next turn."
+     }
+    ],
+    "14": [
+     {
+      "name": "Sidereal Cabal (MAGUS2024) Features",
+      "type": "text",
+      "value": "When a creature that you can see within 60 feet makes a roll with Advantage or Disadvantage, you can seal its fate. The creature rolls three d20s, rather than two, using the highest result if it had Advantage or the lowest result if it had Disadvantage."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you can't use it again until you finish a Short Rest or Long Rest."
+     }
+    ],
+    "20": [
+     {
+      "name": "Sidereal Cabal (MAGUS2024) Features",
+      "type": "text",
+      "value": "You gain the following benefits."
+     },
+     {
+      "name": "Selenite Spell Surge",
+      "type": "text",
+      "value": "You can expend the use of your Spell Surge to cast __First Speech__ or __True Seeing__."
+     },
+     {
+      "name": "Weave Destiny",
+      "type": "text",
+      "value": "You can use your __Seal Fate__ three times, regaining one use when you finish a Short Rest and all uses when you finish a Long Rest."
+     }
+    ]
+   },
+   "Sylvan Circle (MAGUS2024)": {
+    "3": [
+     {
+      "name": "Sylvan Circle (MAGUS2024) Features",
+      "type": "text",
+      "value": "*Protect Wild Creatures and Natural Wonders*"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "The Sylvan Circle acts as the sword and shield of the natural world. You adventure to ensure that the world's natural wonders are preserved and that the diversity of its flora and fauna are not threatened. Although some Sylvan Circle Magi become hardliners that see themselves at war with civilization, most work to strike a balance between the needs of the natural world and the multiverse's various peoples."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Agrestal Spirit (MAGUS2024)__: You gain the following benefits."
+     },
+     {
+      "name": "Additional Cantrips",
+      "type": "text",
+      "value": "You know two additional cantrips of your choice from the Magus or Druid spell list. These cantrips count as Magus cantrips for you but don't count against your number of cantrips known."
+     },
+     {
+      "name": "Green Hand",
+      "type": "text",
+      "value": "You gain proficiency in the *Nature* skill. If you are already proficient with *Nature*, you gain Expertise in it instead."
+     },
+     {
+      "name": "Wild Instincts",
+      "type": "text",
+      "value": "You can take the Disengage action as a Bonus Action. When you do, until the end of your turn your Speed increases by 15 feet and you have Advantage on Strength (*Athletics*) and Dexterity (*Acrobatics*) checks."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "You can use this Bonus Action a number of times equal to your Intelligence modifier (minimum once), and you regain all expended uses when you finish a Long Rest."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Emerald Mark (MAGUS2024)__: The effects of your mystic marks are enhanced by your greater understanding of the Sylvan Circle's esoteric knowledge. When you use your Mystic Mark feature, a verdant green aura surrounds you and you gain the following effects based on the benefit or benefits chosen."
+     },
+     {
+      "name": "Aegis",
+      "type": "text",
+      "value": "When you or a willing creature you can see within 30 feet of you fails a saving throw, you can use your Reaction to give the roll a bonus equal to your Intelligence modifier (minimum +1), potentially turning the failure into a success."
+     },
+     {
+      "name": "Enspell",
+      "type": "text",
+      "value": "Once per turn when you hit a creature with a weapon or Unarmed Strike, you can cause the target to treat all spaces as Difficult Terrain until the end of its next turn."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "__Sylvan Circle Spells (MAGUS2024)__: You can use a Druidic Focus as a Spellcasting Focus for your Magus spells."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "In addition, your training in the Sylvan Circle ensures you always have certain spells ready; when you reach a Magus level specified in the Sylvan Circle Spells table, you thereafter always have the listed spells prepared."
+     },
+     {
+      "name": "Sylvan Circle Spells",
+      "type": "table",
+      "table": {
+       "type": "table",
+       "title": "Sylvan Circle Spells",
+       "headers": [
+        "Magus Level",
+        "Spells"
+       ],
+       "rows": [
+        [
+         "3",
+         "Entangle, Speak with Animals, Thornwhip, Thornhold"
+        ],
+        [
+         "5",
+         "Lesser Restoration, Moonbeam"
+        ],
+        [
+         "9",
+         "Conjure Animals, Speak with Plants"
+        ],
+        [
+         "13",
+         "Conjure Woodland Beings, Polymorph"
+        ],
+        [
+         "17",
+         "Greater Restoration, Reincarnate"
+        ]
+       ]
+      }
+     }
+    ],
+    "7": [
+     {
+      "name": "Sylvan Circle (MAGUS2024) Features",
+      "type": "text",
+      "value": "You always have the __Polymorph__ spell prepared. You can cast the spell on yourself without expending a spell slot, when you do, the spell does not require *Concentration* and its duration changes to 8 hours. You can end the spell at any point prior to the end of its duration (no action required)."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you cast the spell in this way, you can't do so again until you finish a Short Rest or Long Rest."
+     }
+    ],
+    "14": [
+     {
+      "name": "Sylvan Circle (MAGUS2024) Features",
+      "type": "text",
+      "value": "As a Bonus Action, you can manifest sylvan energies in a 15-foot Emanation that originates from you for 1 minute. It ends early if you dismiss it (no action required) or have the Incapacitated condition."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "When you manifest the Emanation and at the start of each of your subsequent turns, creatures of your choice within your Emanation regain Hit Points equal to 1d8 plus your Intelligence modifier (minimum of one). Additionally, creatures of your choice within your Emanation have Advantage on saving throws."
+     },
+     {
+      "name": "",
+      "type": "text",
+      "value": "Once you use this feature, you must finish a Long Rest before you can do so again."
+     }
+    ],
+    "20": [
+     {
+      "name": "Sylvan Circle (MAGUS2024) Features",
+      "type": "text",
+      "value": "You gain the following benefits."
+     },
+     {
+      "name": "Emerald Spell Surge",
+      "type": "text",
+      "value": "You can expend the use of your Spell Surge to cast __Conjure Fey__ or __Wall of Thorns__."
+     },
+     {
+      "name": "Font Overflowing",
+      "type": "text",
+      "value": "When you finish a Short Rest, you can regain the use of your __Font of Life__. Once you regain the use of it in this way, you can't do so again until you finish a Long Rest."
+     }
+    ]
+   }
+  },
+  "reprint": null
+ },
+ {
   "name": "Messenger",
   "source": "TLotRR",
   "url": "https://5e.tools/classes.html#messenger_tlotrr",
