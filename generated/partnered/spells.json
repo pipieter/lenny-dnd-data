@@ -494,6 +494,104 @@
   "scaledDamage": null
  },
  {
+  "name": "Animate Shield",
+  "source": "Magus2024",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "castingTime": "Bonus action",
+  "range": "30 feet",
+  "components": "V, S, M (a Shield worth 1+ GP)",
+  "material": "a Shield worth 1+ GP",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#animate%20shield_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You cause the Shield used in this spell's casting to spring to life, flying of its own accord to defend you and your allies for the duration. The Shield animates in an unoccupied space of your choice within range. While it is animated, the Shield gives each creature of your choice within 5 feet of it a +2 bonus to AC if it is not wielding a Shield. The animate shield is a Small Construct with an AC equal to 12 plus your spellcasting ability modifier, 20 Hit Points, and Immunity to Poison and Psychic damage and all conditions."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action on your later turns, you can cause the animate shield to fly up to 30 feet. This spell ends early if the animate shield is reduced to 0 Hit Points."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The animate shield's Hit Points increase by 10 for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [
+   "poison",
+   "psychic"
+  ],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Animate Weapon",
+  "source": "Magus2024",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "castingTime": "Bonus action",
+  "range": "30 feet",
+  "components": "V, S, M (a weapon worth 1+ GP)",
+  "material": "a weapon worth 1+ GP",
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#animate%20weapon_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You cause the weapon used in this spell's casting to spring to life, flying of its own accord to harass and harm your enemies for the duration. The weapon animates in an unoccupied space of your choice within range. While it persists, at the start of each of your turns, the animate weapon makes one attack against a target of your choice within 5 feet (if it is a Melee weapon without the Reach property), 10 feet (if it is a Melee weapon with the Reach property), or the weapon's Range (if it is a Ranged weapon or Melee weapon with the Thrown property). The weapon uses your spellcasting ability modifier for the attack and damage rolls instead of using Strength or Dexterity. The animate weapon is a Small Construct with an AC equal to 10 plus your spellcasting ability modifier, 20 Hit Points, and Immunity to Poison and Psychic damage and all conditions."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action on your later turns, you can cause the animate weapon to fly up to 30 feet. This spell ends early if the animate weapon is reduced to 0 Hit Points."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The animate weapon's Hit Points increase by 10 for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [
+   "poison",
+   "psychic"
+  ],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Antiballistics Field",
   "source": "ValdaGunslinger",
   "level": "Level 6",
@@ -728,6 +826,47 @@
    {
     "name": "Wizard",
     "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Arcane Invigoration",
+  "source": "Magus2024",
+  "level": "Level 2",
+  "school": "Abjuration",
+  "castingTime": "Bonus action",
+  "range": "Self",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#arcane%20invigoration_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You sacrifice your life force to weave a mystic defense. Roll one or two of your unexpended Hit Point Dice, and gain a number of Temporary Hit Points equal to the roll's total plus your spellcasting ability modifier. Those dice are then expended."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The number of unexpended Hit Point Dice you can roll increases by one for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
    }
   ],
   "reprint": null,
@@ -1026,6 +1165,59 @@
   "damageResist": [
    "cold"
   ],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Assess Enemy",
+  "source": "Magus2024",
+  "level": "Level 4",
+  "school": "Divination",
+  "castingTime": "Bonus action",
+  "range": "60 feet",
+  "components": "S",
+  "material": null,
+  "duration": "1 minute",
+  "url": "https://5e.tools/spells.html#assess%20enemy_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You divine the strengths and weaknesses of a creature you can see within range. You immediately learn if the target is Immune, Resistant, or Vulnerable to any damage types, and if so what types. In addition, for the duration you gain the following benefits:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "You know if the target is *Bloodied*.",
+      "Your attack rolls against the target score a Critical Hit on a roll of 19 or 20 on the d20.",
+      "When the target attacks you, you can use your Reaction to give the attack Disadvantage."
+     ]
+    }
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
   "damageVulnerable": [],
   "damageImmune": [],
   "conditionInflict": [],
@@ -1473,6 +1665,77 @@
   ],
   "affectsCreatureType": [],
   "scaledDamage": null
+ },
+ {
+  "name": "Baffle",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Enchantment",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (an obtusely written book)",
+  "material": "an obtusely written book",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#baffle_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You cause a creature to temporarily forget everything they've ever learned. The target must make an Intelligence saving throw. On a failure, it takes **1d4** Psychic damage and the first time it makes a D20 Test before the end of your next turn it takes a penalty equal to its Proficiency Bonus."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "intelligence"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d4",
+     "5": "2d4",
+     "11": "3d4",
+     "17": "4d4"
+    }
+   }
+  ]
  },
  {
   "name": "Bait",
@@ -2080,6 +2343,73 @@
   ],
   "affectsCreatureType": [],
   "scaledDamage": null
+ },
+ {
+  "name": "Bitter Wind",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Necromancy",
+  "castingTime": "Action",
+  "range": "30 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#bitter%20wind_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The chill of mortality rattles through a creature of your choice within range. The target must succeed on a Constitution saving throw or take **1d8** Cold damage and lose all damage Resistances it has until the start of your next turn, or until it takes damage of a type it normally has Resistance to."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "cold"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d8",
+     "5": "2d8",
+     "11": "3d8",
+     "17": "4d8"
+    }
+   }
+  ]
  },
  {
   "name": "Black Hand",
@@ -4836,6 +5166,87 @@
   "scaledDamage": null
  },
  {
+  "name": "Carrionette",
+  "source": "Magus2024",
+  "level": "Level 2",
+  "school": "Necromancy",
+  "castingTime": "1 reaction, which you take when a creature you can see within 60 feet is reduced to 0 Hit Points or dies",
+  "range": "60 feet",
+  "components": "V, S, M (a cross brace)",
+  "material": "a cross brace",
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#carrionette_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Ethereal strings spring from your fingers and wrap around the limbs of the triggering creature. If the creature is not a Construct or Undead, and doesn't have a Challenge Rating of 7+ ,it immediately dies if it is not already dead and, at the start of your next turn, you can instruct it where to move, choosing which of its Speeds to use (no action required). You can use a Bonus Action to issue a command for it to use an action of your choice from its stat block (except for casting a spell). This spell ends at the end of your turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The maximum Challenge Rating of a creature you can target with the spell increases by 3 for each spell slot level above 2."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Cascade of Hours",
+  "source": "Magus2024",
+  "level": "Level 4",
+  "school": "Transmutation",
+  "castingTime": "1 minute",
+  "range": "Self",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#cascade%20of%20hours_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Time slows to a crawl for you and you alone. You complete one task that you can complete within 8 hours and that doesn't require interacting with another creature, in a pocket outside of time, such as traveling across a city, crafting an item, or reading a book. The stress of being nearly outside the flow of time prevents you from taking a Short or Long Rest while in the temporal pocket."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Cat's Spring",
   "source": "CthulhuTorchlight",
   "level": "Cantrip",
@@ -4891,6 +5302,69 @@
   "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
+ },
+ {
+  "name": "Caustic Claw",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Transmutation",
+  "castingTime": "Action",
+  "range": "Touch",
+  "components": "S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#caustic%20claw_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You attempt to strike a creature within range, causing its vital components to turn caustic and self-destructive. Make a melee spell attack against the target. On a hit, you deal 1d4 Acid damage and the target must expend and roll a Hit Point Dice if it has any. The target takes additional Poison damage equal to the result."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The Acid damage increases by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d4",
+     "5": "2d4",
+     "11": "3d4",
+     "17": "4d4"
+    }
+   }
+  ]
  },
  {
   "name": "Chain of Conviction",
@@ -9794,6 +10268,69 @@
   "scaledDamage": null
  },
  {
+  "name": "Demiplanar Pitch",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Conjuration",
+  "castingTime": "Action",
+  "range": "90 feet",
+  "components": "S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#demiplanar%20pitch_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You thrust your hand into empty space in front of you and punch through to a demiplane housing the contents of a random Bag of Holding somewhere in the multiverse, then launch whatever you can grab at a creature you can see within range. Make a ranged spell attack against the target, dealing **1d8** Bludgeoning, Piercing, or Slashing damage (your choice) on a hit. After you make the attack, the object teleports back to the demiplane it came from."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "bludgeoning",
+   "piercing",
+   "slashing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d8",
+     "5": "2d8",
+     "11": "3d8",
+     "17": "4d8"
+    }
+   }
+  ]
+ },
+ {
   "name": "Demon Lure",
   "source": "ObojimaTalesYatamon",
   "level": "Level 3",
@@ -12205,6 +12742,49 @@
   "scaledDamage": null
  },
  {
+  "name": "Ensorcelled Strike",
+  "source": "Magus2024",
+  "level": "Level 1",
+  "school": "Evocation",
+  "castingTime": "Bonus action",
+  "range": "Self",
+  "components": "S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#ensorcelled%20strike_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As part of casting this spell, you make an Unarmed Strike or attack with a weapon against a creature. On a hit, you deal damage as normal and the target is ensorcelled until the end of your next turn. While a creature is ensorcelled, it has Disadvantage on saving throws against spells, and spell attacks against it have Advantage. A target is no longer ensorcelled if it fails a saving throw against a spell or is hit by a spell attack."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If the spell slot is level 2+, the attack deals an additional **1d6** Force damage for each slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Enspelled Armament",
   "source": "GrimHollowPG24",
   "level": "Level 2",
@@ -13677,6 +14257,50 @@
   "scaledDamage": null
  },
  {
+  "name": "First Speech",
+  "source": "Magus2024",
+  "level": "Level 6",
+  "school": "Divination",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "V",
+  "material": null,
+  "duration": "1 hour",
+  "url": "https://5e.tools/spells.html#first%20speech_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When the Tapestry was woven, the first creatures could communicate with one another perfectly through a speech that has long since been lost to time. Though the mortal mind cannot master such speech, you can temporarily learn it using this spell. For the duration you gain the ability to comprehend and verbally communicate with all creatures and plants, and whenever you make a Charisma (*Deception*, *Intimidation*, or *Persuasion*) check, you gain a bonus to the check equal to your spellcasting ability modifier (minimum of +1)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Firther's Shadow",
   "source": "HelianasGuidetoMonsterHunting",
   "level": "Level 3",
@@ -14599,6 +15223,55 @@
   "conditionInflict": [],
   "conditionImmune": [],
   "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Forced Hesitation",
+  "source": "Magus2024",
+  "level": "Level 1",
+  "school": "Enchantment",
+  "castingTime": "1 reaction, which you take when a creature you can see within range makes an Initiative roll",
+  "range": "60 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#forced%20hesitation_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You tug on the threads of a creature's awareness at a pivotal moment. The target must succeed on a Wisdom saving throw or take **3d4** Psychic damage, and its Initiative roll is reduced by the highest result of the damage dice."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage increases by 1d4 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -15794,6 +16467,47 @@
   "scaledDamage": null
  },
  {
+  "name": "Give Life",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Transmutation",
+  "castingTime": "Action",
+  "range": "Touch",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#give%20life_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "By placing your hand on another creature, you transfer your life force to them. You expend and roll one of your Hit Point Dice. The target regains a number of Hit Points equal to the result of the roll."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "You can expend and roll an additional Hit Point Die when you reach levels 5 (2 total), 11 (3 total), and 17 (4 total)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Glimpse the Wyrd",
   "source": "NorthlandsWorldbook",
   "level": "Level 2",
@@ -16069,6 +16783,104 @@
   "savingThrow": [
    "dexterity"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Grave Bolt",
+  "source": "Magus2024",
+  "level": "Level 1",
+  "school": "Necromancy",
+  "castingTime": "Action",
+  "range": "30 feet",
+  "components": "V, S, M (a vial of fetid swamp mud)",
+  "material": "a vial of fetid swamp mud",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#grave%20bolt_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Negative energy crackles around your hand then shoots in a jagged black bolt from your outstretched fingers to a target of your choice that you can see within range. An Undead creature targeted by this spell regains 1d8 Hit Points, otherwise the target takes **1d8** Necrotic damage. A Humanoid creature who dies as a result of taking damage from this spell immediately transforms into a __Zombie__ and acts at the start of the next round."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The Hit Points regained or damage dealt increases by 1d8 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Grave Grasp",
+  "source": "Magus2024",
+  "level": "Level 1",
+  "school": "Necromancy",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#grave%20grasp_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You cause putrefied hands to burst out of the ground or another surface within range, grasping at a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target has the Restrained condition. While a creature has the Restrained condition from this spell, it can't regain Hit Points. The target, or another creature within 5 feet of the target, can use its action to free the target, ending the Restrained condition."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "You can target one additional creature for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "restrained"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -16811,6 +17623,65 @@
   "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
+ },
+ {
+  "name": "Hateful Haunting",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Necromancy",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#hateful%20haunting_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Choose a creature within range who doesn't have the Deafened condition. The target hears the voices of its deceased ancestors heaping scorn upon it and must succeed on a Charisma saving throw or take **1d4** Psychic damage, plus an additional **1d4** Psychic damage the first time it fails a D20 Test before the end of its next turn."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "Both the initial and additional damage increase by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d4",
+     "5": "2d4",
+     "11": "3d4",
+     "17": "4d4"
+    }
+   }
+  ]
  },
  {
   "name": "Hearthfire",
@@ -21466,6 +22337,67 @@
   "scaledDamage": null
  },
  {
+  "name": "Misfortunate Missile",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Divination",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a tuft of fur from a black cat)",
+  "material": "a tuft of fur from a black cat",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#misfortunate%20missile_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Misfortune crystallizes into a physical force on your finger tips and launches where you direct it. Make a ranged spell attack against a creature you can see within range. On a hit, you deal **1d6** Force damage and before the start of your next turn, immediately after the target makes a D20 Test, you can use your Reaction to roll 1d4 and subtract it from the triggering roll's result."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d6",
+     "5": "2d6",
+     "11": "3d6",
+     "17": "4d6"
+    }
+   }
+  ]
+ },
+ {
   "name": "Mist of Mourning",
   "source": "CrookedMoon14",
   "level": "Level 3",
@@ -21808,6 +22740,77 @@
   "conditionInflict": [],
   "conditionImmune": [],
   "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Mortal Terror",
+  "source": "Magus2024",
+  "level": "Level 3",
+  "school": "Enchantment",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (the skull of a deceased Humanoid)",
+  "material": "the skull of a deceased Humanoid",
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#mortal%20terror_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature of your choice within range that can see you must succeed on a Wisdom saving throw or have the Frightened condition for the duration. While a creature has the Frightened condition from this spell, it suffers the following effects:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "When you deal damage to the target with an attack or spell, it takes an additional **1d4** Psychic damage.",
+      "If the target willingly moves more than half of its Speed in a turn it must immediately succeed on a Dexterity saving throw or have the Prone condition.",
+      "The target has Disadvantage on Wisdom (*Perception*) checks to notice actions, events, or creatures other than you."
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the target cannot see you on its turn, it can use its action to make the saving throw again, ending the Frightened condition on a success."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "You can target one additional creature for each spell slot level above 3."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [
+   "frightened",
+   "prone"
+  ],
+  "conditionImmune": [],
+  "savingThrow": [
+   "dexterity",
+   "wisdom"
+  ],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -22528,6 +23531,69 @@
   "scaledDamage": null
  },
  {
+  "name": "Obscuring Prick",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Illusion",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "V, S, M (a silver needle)",
+  "material": "a silver needle",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#obscuring%20prick_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature of your choice within range experiences a brief flash of pain in one of its eyes. The target must make a Wisdom saving throw. On a failure, it takes **1d4** Piercing damage and the target cannot see you, as if it had the Blinded condition, until the start of your next turn."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "piercing"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d4",
+     "5": "2d4",
+     "11": "3d4",
+     "17": "4d4"
+    }
+   }
+  ]
+ },
+ {
   "name": "Octarine Spray",
   "source": "DungeonsDrakkenheim",
   "level": "Level 7",
@@ -22922,6 +23988,73 @@
   ],
   "affectsCreatureType": [],
   "scaledDamage": null
+ },
+ {
+  "name": "Overexposure",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Divination",
+  "castingTime": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a twenty sided die)",
+  "material": "a twenty sided die",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#overexposure_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You cause a creature of your choice that you can see within range to shimmer with magical energy. When you do, the target must succeed on a Charisma saving throw or take **1d6** Radiant damage and become overexposed until it takes a Critical Hit or until the start of your next turn. While overexposed, attack rolls against the target can score a Critical Hit on a roll of 19 or 20."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "charisma"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d6",
+     "5": "2d6",
+     "11": "3d6",
+     "17": "4d6"
+    }
+   }
+  ]
  },
  {
   "name": "Overgrow",
@@ -23469,6 +24602,75 @@
   ],
   "affectsCreatureType": [],
   "scaledDamage": null
+ },
+ {
+  "name": "Phantasmal Feint",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Illusion",
+  "castingTime": "Action",
+  "range": "10 feet",
+  "components": "S, M (a toy weapon)",
+  "material": "a toy weapon",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#phantasmal%20feint_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You lash out with the toy used in this spell's casting. Make a melee spell attack against one creature of your choice within range. On a hit, you deal **1d6** Psychic damage and the next attack with a weapon or Unarmed Strike against the target before the start of your next turn has Advantage."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "psychic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d6",
+     "5": "2d6",
+     "11": "3d6",
+     "17": "4d6"
+    }
+   }
+  ]
  },
  {
   "name": "Phantom Panther",
@@ -24573,6 +25775,59 @@
   "scaledDamage": null
  },
  {
+  "name": "Provoke",
+  "source": "Magus2024",
+  "level": "Level 1",
+  "school": "Enchantment",
+  "castingTime": "Bonus action",
+  "range": "15 feet",
+  "components": "V",
+  "material": null,
+  "duration": "Concentration, up to 1 minute",
+  "url": "https://5e.tools/spells.html#provoke_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A creature within range that doesn't have the Blinded and Deafened conditions is provoked by you for the duration of the spell. While provoked, the creature has Disadvantage on attack rolls against creatures other than you."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In addition, when the provoked creature attacks a creature other than you, you can use your Reaction to make an Unarmed Strike or attack with a weapon against it. On a hit, you deal the attack's normal damage and an additional **1d6** Force damage."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "The effect of this spell ends early on a target if it ends its turn more than 60 feet away from you."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "You can target one additional creature for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "force"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Puppet Master",
   "source": "CrookedMoon14",
   "level": "Level 4",
@@ -25215,6 +26470,56 @@
   "scaledDamage": null
  },
  {
+  "name": "Reflect Magic",
+  "source": "Magus2024",
+  "level": "Level 5",
+  "school": "Abjuration",
+  "castingTime": "1 reaction, which you take when you are targeted by, or within the area of, a spell",
+  "range": "Self",
+  "components": "V, S, M (a polished silver mirror worth 100+ GP, which this spell consumes)",
+  "material": "a polished silver mirror worth 100+ GP, which this spell consumes",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#reflect%20magic_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Shimmering interconnected hexagons momentarily appear around you, disrupting or redirecting a spell targeting you. The creature casting the spell makes an Intelligence saving throw. On a successful save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If the spell was cast with a spell slot, the slot is expended. On a failed save, you deflect the spell, choosing a new target, targets, or area for it as if you had cast the spell from your space. Once redirected, the spell is resolved as normal."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "intelligence"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Regenerative Hull",
   "source": "NorthlandsWorldbook",
   "level": "Level 5",
@@ -25612,6 +26917,52 @@
   "conditionImmune": [],
   "savingThrow": [
    "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Righteous Incitement",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Evocation",
+  "castingTime": "Action",
+  "range": "30 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#righteous%20incitement_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You castigate a creature with words or a derisive strike. A creature you can see within range must make a Wisdom saving throw. On a failed save, the target takes **1d6** Radiant damage, and if it does not target you with an attack before the end of its next turn it takes an additional **1d6** Psychic damage."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "Both the initial and additional damage increase by 1d6 when you reach levels 5"
+   }
+  ],
+  "classes": [
+   {
+    "name": "Cleric",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "psychic",
+   "radiant"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
   ],
   "affectsCreatureType": [],
   "scaledDamage": null
@@ -28689,6 +30040,59 @@
   "scaledDamage": null
  },
  {
+  "name": "Spell Aegis",
+  "source": "Magus2024",
+  "level": "Level 1",
+  "school": "Abjuration",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "S, M (a turtle shell)",
+  "material": "a turtle shell",
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#spell%20aegis_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create a magical aegis with 3d8 Hit Points in an unoccupied space within range. When a creature within 10 feet of the aegis takes Acid, Cold, Fire, Force, Lightning, Necrotic, Psychic, Radiant, or Thunder damage, you can choose for the aegis to take the damage instead. If this damage reduces the aegis to 0 Hit Points, the aegis is destroyed and the spell ends early. While this spell persists, you can use a Bonus Action to move the aegis to another unoccupied space within 60 feet of you."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The aegis's Hit Points increase by 1d8 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Spell Signature",
   "source": "ObojimaTallGrass",
   "level": "Level 2",
@@ -29706,6 +31110,106 @@
   "conditionImmune": [],
   "savingThrow": [
    "dexterity"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Strike Order",
+  "source": "Magus2024",
+  "level": "Level 3",
+  "school": "Enchantment",
+  "castingTime": "Bonus action",
+  "range": "60 feet",
+  "components": "V, S",
+  "material": null,
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#strike%20order_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You imbue your voice with supernatural authority and order a creature you can see within range that can hear and understand you to attack. The target must succeed on a Wisdom saving throw or immediately use its Reaction to make an attack against a creature of your choice other than itself within the reach or normal range of an attack it can make. The target makes this save with Advantage if it is Immune to the Charmed condition. The spell fails if the target is unable to take a Reaction or if there is no viable creature for it to attack."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "If you use a spell slot of level 6+, the duration increases to \"*Concentration*, up to 1 minute\", and you can use a Bonus Action on each of your subsequent turns for the duration to rebear the spells' effect. When you do, you can target the same creature or a different one within range."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Stygian Blast",
+  "source": "Magus2024",
+  "level": "Level 4",
+  "school": "Necromancy",
+  "castingTime": "Action",
+  "range": "120 feet",
+  "components": "V, S, M (a gravestone ground into powder)",
+  "material": "a gravestone ground into powder",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#stygian%20blast_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A black speck of dust floats to a point you choose within range before erupting with necrotic energy. Each Undead in a 20-foot-radius Sphere centred on that point regains 3d8 Hit Points. Other creatures and objects within the Sphere must make a Constitution saving throw, taking **6d8** Necrotic damage on a failed save. A Humanoid killed by this spell transforms into a __Zombie__ which immediately acts at the start of the next round, and is hostile to all creatures, including you."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The damage and healing both increase by 1d8 for every spell slot level above 4."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Warlock",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [
+   "necrotic"
+  ],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "constitution"
   ],
   "affectsCreatureType": [],
   "scaledDamage": null
@@ -31392,6 +32896,57 @@
   "scaledDamage": null
  },
  {
+  "name": "Thornhold",
+  "source": "Magus2024",
+  "level": "Cantrip",
+  "school": "Abjuration",
+  "castingTime": "Action",
+  "range": "Self",
+  "components": "V, S",
+  "material": null,
+  "duration": "1 round",
+  "url": "https://5e.tools/spells.html#thornhold_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Phantasmal vines covered in thorns encircle you. You gain 1d4 Temporary Hit Points. If a creature deals damage with a melee attack that causes you to lose Temporary Hit Points gained by this spell, it takes Piercing damage equal to the number of Temporary Hit Points lost. You lose any remaining Temporary Hit Points granted by this spell at the end of your next turn."
+   },
+   {
+    "name": "Cantrip Upgrade",
+    "type": "text",
+    "value": "The Temporary Hit Points granted increase by 1d4 when you reach levels 5 (2d4), 11 (3d4), and 17 (4d4)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Druid",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": [
+   {
+    "type": "level",
+    "scaling": {
+     "1": "1d4",
+     "5": "2d4",
+     "11": "3d4",
+     "17": "4d4"
+    }
+   }
+  ]
+ },
+ {
   "name": "Thought Rune",
   "source": "NorthlandsWorldbook",
   "level": "Level 2",
@@ -31581,6 +33136,49 @@
   "conditionInflict": [],
   "conditionImmune": [],
   "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Towerfall Tactic",
+  "source": "Magus2024",
+  "level": "Level 1",
+  "school": "Abjuration",
+  "castingTime": "1 reaction, which you take when you take damage from an attack",
+  "range": "Self",
+  "components": "S, M (a Shield worth 1+ GP)",
+  "material": "a Shield worth 1+ GP",
+  "duration": "Instantaneous",
+  "url": "https://5e.tools/spells.html#towerfall%20tactic_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain 5 Temporary Hit Points and the creature that made the triggering attack must make a Strength saving throw. On a failure, the creature gains the Prone condition and it cannot right itself to end the condition until after the end of the current turn. These Temporary Hit Points vanish if any remain after 1 minute."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The Temporary Hit Points increase by 5 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "strength"
+  ],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
@@ -33277,6 +34875,47 @@
   "scaledDamage": null
  },
  {
+  "name": "Warrior's Way",
+  "source": "Magus2024",
+  "level": "Level 3",
+  "school": "Divination",
+  "castingTime": "Bonus action",
+  "range": "Self",
+  "components": "S",
+  "material": null,
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#warrior's%20way_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You magically channel the martial wisdom of the multiverse's warriors. For the duration, you can attack twice instead of once whenever you take the Attack action on your turn."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "You can attack three times instead of once whenever you take the Attack action on your turn with a level 5+ spell slot."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Water Bullet",
   "source": "ObojimaTallGrass",
   "level": "Level 1",
@@ -33440,6 +35079,108 @@
   "savingThrow": [
    "constitution"
   ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Waypoint",
+  "source": "Magus2024",
+  "level": "Level 3",
+  "school": "Conjuration",
+  "castingTime": "1 minute",
+  "range": "Self",
+  "components": "V, S, M (a spool of thread or loaf of bread)",
+  "material": "a spool of thread or loaf of bread",
+  "duration": "8 hours",
+  "url": "https://5e.tools/spells.html#waypoint_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you cast this spell you place an invisible mystic mark on the spot where you are standing, tethering yourself to it for the duration. During this time you can perform a 1 minute ritual to teleport yourself and a number of willing creatures equal to 1 plus your spellcasting ability modifier (minimum of 1) that you can see within 10 feet of you back to that spot. If the exact space is currently occupied by a creature or object you instead teleport to the nearest unoccupied space. Once you perform this ritual, this spell ends."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The duration increases with a spell slot of level 5-6 (24 hours), and 7+ (10 days)."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Bard",
+    "source": "XPHB"
+   },
+   {
+    "name": "Ranger",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
+  "name": "Weapon Aegis",
+  "source": "Magus2024",
+  "level": "Level 1",
+  "school": "Abjuration",
+  "castingTime": "Action",
+  "range": "60 feet",
+  "components": "S, M (an iron shaving)",
+  "material": "an iron shaving",
+  "duration": "Concentration, up to 10 minutes",
+  "url": "https://5e.tools/spells.html#weapon%20aegis_magus2024",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You create a magical aegis with 3d8 Hit Points in an unoccupied space within range. When a creature within 10 feet of the aegis takes Bludgeoning, Piercing, Poison, or Slashing damage, you can choose for the aegis to take the damage instead. If this damage reduces the aegis to 0 Hit Points, the aegis is destroyed and the spell ends early. While this spell persists, you can use a Bonus Action to move the aegis to another unoccupied space within 60 feet of you."
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "The aegis's hit points increase by 1d8 for each spell slot level above 1."
+   }
+  ],
+  "classes": [
+   {
+    "name": "Magus",
+    "source": "Magus2024"
+   },
+   {
+    "name": "Paladin",
+    "source": "XPHB"
+   },
+   {
+    "name": "Sorcerer",
+    "source": "XPHB"
+   },
+   {
+    "name": "Wizard",
+    "source": "XPHB"
+   }
+  ],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [],
   "affectsCreatureType": [],
   "scaledDamage": null
  },
