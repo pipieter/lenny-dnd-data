@@ -176,12 +176,6 @@ function actTrigger(text: string, noFormat: boolean): string {
 }
 
 function atk(text: string, noFormat: boolean): string {
-    // Unique case: use of attack modifier
-    text = text.replace(/\{@atk\s+([+-]\d+)\}/gi, (match, modifier) => {
-        const replace = `${modifier} Attack:`;
-        return noFormat ? replace : `*${replace}*`;
-    });
-
     // converterutils-creature.js:584
     const replacements = new Map<string, string>([
         ['{@atk mw}', 'Melee Weapon Attack:'],
@@ -615,6 +609,12 @@ function recharge(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function recipe(text: string, _noFormat: boolean): string {
+    // 5e-tools doesn't format this in a special way either. See Honeyflame Bread (option 4) in https://5e.tools/tables.html#backstory%3b%20favorite%20foods%20(menagerie%20coast)_egw
+    text = text.replaceAll(pattern('recipe', 2), '$1');
+    return text;
+}
+
 function reward(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('reward', 2), '$1');
     return text;
@@ -815,6 +815,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         table,
         variantrule,
         recharge,
+        recipe,
         reward,
         scaledamage,
         scaledice,
