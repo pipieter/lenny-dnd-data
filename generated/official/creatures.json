@@ -373812,6 +373812,112 @@
   }
  },
  {
+  "name": "Ri'all",
+  "source": "RWG",
+  "subtitle": "Small or Medium humanoid",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#ri'all_rwg",
+  "description": [],
+  "fluffInfo": [],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "19",
+      "12",
+      "18",
+      "12",
+      "16",
+      "14"
+     ],
+     [
+      "Mod.",
+      "+4",
+      "+1",
+      "+4",
+      "+1",
+      "+3",
+      "+2"
+     ],
+     [
+      "Save.",
+      "+4",
+      "+1",
+      "+7",
+      "+1",
+      "+6",
+      "+2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 127 (15d8 + 60)",
+     "**Speed**: 30 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: insight +6, perception +6, religion +4",
+     "**Languages**: Common",
+     "**CR**: 8"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Immunities and Saves",
+    "type": "text",
+    "value": "Ri'all automatically succeeds on all saving throws."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The cultist makes three attacks, using Dread Scythe or Deathly Ray in any combination."
+   },
+   {
+    "name": "Dread Scythe",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7, reach 10 ft. *Hit:* 9 (**1d10 + 4**) Slashing damage plus 11 (**2d10**) Necrotic damage, and the target can't regain Hit Points until the end of its next turn."
+   },
+   {
+    "name": "Deathly Ray",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +6, range 120 ft. *Hit:* 22 (**4d10**) Necrotic damage."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Spirit Wail (Recharge 5-6)",
+    "type": "text",
+    "value": "*Wisdom Saving Throw:* DC 14, each creature, excluding Thayan mercenaries, in a 20-foot Emanation originating from the cultist. *Failure:* 7 (**2d6**) Psychic damage, and the target has the Frightened condition until the end of its next turn. *Success* Half damage only."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Rictavio",
   "source": "CoS",
   "subtitle": "Medium humanoid",
@@ -452142,7 +452248,7 @@
    {
     "name": "Multiattack",
     "type": "text",
-    "value": "The tortle makes four Claw attacks or two *Nature*'s Wrath attacks."
+    "value": "The tortle makes four Claw attacks or two Nature's Wrath attacks."
    },
    {
     "name": "Claw",

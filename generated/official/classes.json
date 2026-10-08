@@ -16653,13 +16653,15 @@
     },
     {
      "name": "",
-     "type": "text",
-     "value": "__Divine Strike (XPHB)__: Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra **1d8** Necrotic or Radiant damage (your choice)."
-    },
-    {
-     "name": "",
-     "type": "text",
-     "value": "__Potent Spellcasting (XPHB)__: Add your Wisdom modifier to the damage you deal with any Cleric cantrip."
+     "type": "list",
+     "list": {
+      "type": "list",
+      "caption": "Choose **1**:",
+      "entries": [
+       "__Divine Strike (XPHB)__: Once on each of your turns when you hit a creature with an attack roll using a weapon, you can cause the target to take an extra **1d8** Necrotic or Radiant damage (your choice).",
+       "__Potent Spellcasting (XPHB)__: Add your Wisdom modifier to the damage you deal with any Cleric cantrip."
+      ]
+     }
     },
     {
      "name": "Divine Strike",
