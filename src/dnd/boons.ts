@@ -22,7 +22,7 @@ export function getBoons(data: Databank): ParsedBoon[] {
             source: boon.source,
             url: getCultsBoonsUrl(boon.name, boon.source),
             type: boon.type,
-            ability: boon.ability ? cleanDNDText(boon.ability.entry) : null,
+            ability: boon.ability ? cleanDNDText(boon.ability.entry) : (boon.abilityEntry ?? null),
             signatureSpells: boon.signatureSpells ? cleanDNDText(boon.signatureSpells.entry) : null,
             description: parseDescriptions('', boon.entries),
             reprint: parseReprint(boon),
