@@ -308,7 +308,7 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
             ];
         }
         case 'link': {
-            const text = description.text;
+            const text = description.text ?? description.entry;
             const href = description.href;
             let url = null;
 
