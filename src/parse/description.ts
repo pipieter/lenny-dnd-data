@@ -352,7 +352,8 @@ function parseDescriptionBlock(description: string | any): (string | Table | Lis
         }
 
         case 'abilityGeneric': {
-            return [`**${description.name}** = ${description.text}`];
+            const entry = description.text ?? cleanDNDText(description.entry);
+            return [`**${description.name}** = ${entry}`];
         }
 
         default: {
