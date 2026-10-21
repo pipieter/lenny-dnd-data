@@ -103730,6 +103730,182 @@
   "reprint": null
  },
  {
+  "name": "Gore Drinker",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Huge construct",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#gore%20drinker_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Constructed Terrors of the Battlefield*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Gore drinkers are hulking amalgamations of giant corpse parts, infused with necromantic magic that allows the gore drinker to revitalize itself with the blood of its victims. The fluids from those remains congeal into a corrosive bile that sickens enemies and hampers their vision. Gore drinkers spew this bile forth before attacking their enemies, beating them with weapons, shields, or other instruments of destruction wielded by their additional stitched-on appendages."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Originating in the coliseums of the Shadowfell, the first gore drinker was created when a greedy proprietor and a necromancer conspired to create an unstoppable abomination to defeat the coliseum's popular fighters. Their gore drinker wiped out every fighter in a bloody spectacle. Unfortunately, the gore drinker escaped the confines of the coliseum, wreaking havoc. Since then, other necromancers have studied the plans for creating the creature, giving more evil masterminds an incredibly powerful weapon to wield against foes—or even against entire armies."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Gore drinkers come in a variety of combinations. Roll on or choose a result from the Gore Drinker Body Types table to inspire a gore drinker's features."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "1d6",
+      "The Gore Drinker Was Formed From..."
+     ],
+     "rows": [
+      [
+       "1",
+       "An ogre's head on a frost giant's body."
+      ],
+      [
+       "2",
+       "A troll's upper body on a stone giant's lower body."
+      ],
+      [
+       "3",
+       "Two fire giants stitched together."
+      ],
+      [
+       "4",
+       "Two cyclops heads on a hill giant's body."
+      ],
+      [
+       "5",
+       "Limbs of an ogre on a fomorian's torso."
+      ],
+      [
+       "6",
+       "A mutilated cloud giant with patches of skin from various mismatched hill giants."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "22",
+      "10",
+      "16",
+      "6",
+      "12",
+      "8"
+     ],
+     [
+      "Mod.",
+      "+6",
+      "+0",
+      "+3",
+      "-2",
+      "+1",
+      "-1"
+     ],
+     [
+      "Save.",
+      "+11",
+      "+0",
+      "+3",
+      "-2",
+      "+6",
+      "-1"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 190 (20d12 + 60)",
+     "**Speed**: 40 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: athletics +16",
+     "**Immunities**: necrotic, poison; charmed, exhaustion, frightened, paralyzed, poisoned",
+     "**Senses**: Darkvision 120 ft.",
+     "**Languages**: understands Common and Giant but can't speak",
+     "**CR**: 16"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Blood Frenzy",
+    "type": "text",
+    "value": "The gore drinker has Advantage on attack rolls against any creature that doesn't have all its Hit Points."
+   },
+   {
+    "name": "Legendary Resistance (3/Day)",
+    "type": "text",
+    "value": "If the gore drinker fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The gore drinker has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The gore drinker makes two attacks, using Greatclub or Slam in any combination."
+   },
+   {
+    "name": "Greatclub",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +11, reach 10 ft. *Hit:* 19 (**3d8 + 6**) Bludgeoning damage, and the target must succeed on a DC 19 Strength saving throw or have the Prone condition."
+   },
+   {
+    "name": "Slam",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +11, reach 10 ft. *Hit:* 19 (**3d8 + 6**) Bludgeoning damage. If the target is a Large or smaller creature, it has the Grappled condition (escape DC 19), and it has the Restrained condition until the grapple ends. The gore drinker can grapple up to three creatures at a time with its corpse parts."
+   },
+   {
+    "name": "Bilious Breath (Recharge 5-6)",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 16, each creature in a 60-foot Cone. *Failure:* 27 (**6d8**) Acid damage, and the target has the Blinded and Poisoned conditions until the end of the gore drinker's next turn. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Gorm Rotholfsson",
   "source": "NorthlandsSagas",
   "subtitle": "Medium humanoid",
@@ -168557,6 +168733,179 @@
   "reprint": null
  },
  {
+  "name": "Mirror Haunt",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Medium fey",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#mirror%20haunt_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Mirror-Hopping Kidnappers and Thieves*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Nightmarish mirror haunts draw their powers from mirrors that exist in the same location across the three overlapping planes: the Shadowfell, the Feywild, and the Material Plane. Mirror haunts travel through mirrors to steal valuables or kidnap people, often taking them to another realm and holding them for ransom."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Though mirror haunts lack natural weapons like claws or teeth, they can lash out at enemies with psychic powers. They project distorted reflections of creatures around them, racking their foes with mental anguish."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Much like the reflective backing of a mirror, mirror haunts appear silvery; their bodies and clothes are a single color and as hard as glass. Their reflections, however, take frightening forms. Roll on or choose a result from the Reflective Form table to inspire a mirror haunt's terrifying form."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "1d6",
+      "The Mirror Haunt's Reflection Appears As..."
+     ],
+     "rows": [
+      [
+       "1",
+       "A floppy-limbed puppet."
+      ],
+      [
+       "2",
+       "A gnarled, bent old man."
+      ],
+      [
+       "3",
+       "A grotesque feline with patchy fur."
+      ],
+      [
+       "4",
+       "A giant rat with malignant growths."
+      ],
+      [
+       "5",
+       "A wide-eyed child holding a kite that hovers without wind."
+      ],
+      [
+       "6",
+       "A statuesque tiefling stuck mid-scream."
+      ]
+     ]
+    }
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "17",
+      "14",
+      "12",
+      "18",
+      "14"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+3",
+      "+2",
+      "+1",
+      "+4",
+      "+2"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+7",
+      "+2",
+      "+1",
+      "+4",
+      "+2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 17",
+     "**HP**: 130 (20d8 + 40)",
+     "**Speed**: 40 Ft.",
+     "**Initiative**: 1",
+     "**Skills**: perception +8, stealth +7",
+     "**Resistances**: piercing, slashing",
+     "**Immunities**: radiant",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Common plus two other languages",
+     "**CR**: 9"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Incorporeal Movement",
+    "type": "text",
+    "value": "The mirror haunt can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (**1d10**) Force damage if it ends its turn inside an object. If a creature within 30 feet of it takes a Utilize action to show the mirror haunt the haunt's own reflection, this trait is suppressed for 1 minute."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The mirror haunt has Advantage on saving throws against spells and other magical effects."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The mirror haunt makes two Mind Slash attacks."
+   },
+   {
+    "name": "Mind Slash",
+    "type": "text",
+    "value": "*Melee or Ranged Attack Roll:* +8, reach 5 ft. or range 120 ft. *Hit:* 14 (**3d6 + 4**) Psychic damage."
+   },
+   {
+    "name": "Mirror Step (1/Day)",
+    "type": "text",
+    "value": "The mirror haunt turns a normal mirror into a portal between its current location and a similar location on the Feywild, the Material Plane, or the Shadowfell. The portal remains open for 1 minute, and the portal's destination is visible through it."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Twisted Reflection (Recharge 5-6)",
+    "type": "text",
+    "value": "*Charisma Saving Throw:* DC 16, up to two creatures the mirror haunt can see within 30 feet of itself. *Failure:* 28 (**8d6**) Psychic damage, and the target has the Restrained condition until the end of the mirror haunt's next turn. If the mirror haunt is within 30 feet of a portal created with its Mirror Step, it can also teleport the target to an unoccupied space it can see within 30 feet of the other side of the portal. *Success* Half damage only."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Mirrormic",
   "source": "HelianasGuidetoMonsterHunting",
   "subtitle": "Large monstrosity",
@@ -212581,6 +212930,106 @@
   "reprint": null
  },
  {
+  "name": "Sarcopike",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Tiny monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#sarcopike_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Flesh-Eating Menaces of Dark Water Shorelines*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Sarcopikes are fishlike creatures that swim in the freshwater streams, ponds, and lakes of the Shadowfell. They can use their strong fins to stride across land as they search for food, though they must return to water to breathe."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "14",
+      "10",
+      "3",
+      "12",
+      "6"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+2",
+      "+0",
+      "-4",
+      "+1",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+2",
+      "+0",
+      "-4",
+      "+1",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12",
+     "**HP**: 25 (10d4)",
+     "**Speed**: 20 Ft., Swim 40 Ft.",
+     "**Resistances**: cold",
+     "**Senses**: Darkvision 60 ft.",
+     "**CR**: 1/2"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Water Breathing",
+    "type": "text",
+    "value": "The sarcopike can breathe only underwater."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 4 (**1d4 + 2**) Piercing damage plus 2 (**1d4**) Cold damage."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Sathaq Worm",
   "source": "ToB1-2023",
   "subtitle": "Huge elemental",
@@ -243361,6 +243810,116 @@
     "value": "The swarm takes the Dash action."
    }
   ],
+  "reprint": null
+ },
+ {
+  "name": "Swarm of Sarcopikes",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Medium monstrosity",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#swarm%20of%20sarcopikes_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Sarcopikes are fishlike creatures that swim in the freshwater streams, ponds, and lakes of the Shadowfell."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "In places where the barrier between the Shadowfell and the Material Plane is weak, a school of sarcopikes (known colloquially as a sarcopile) might cross over and terrorize locals. The schools lurk in water sources that abut cemeteries, battlefields, or other locations abundant with fresh corpses for them to eat."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "10",
+      "14",
+      "12",
+      "3",
+      "12",
+      "6"
+     ],
+     [
+      "Mod.",
+      "+0",
+      "+2",
+      "+1",
+      "-4",
+      "+1",
+      "-2"
+     ],
+     [
+      "Save.",
+      "+0",
+      "+2",
+      "+1",
+      "-4",
+      "+1",
+      "-2"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 12",
+     "**HP**: 49 (9d8 + 9)",
+     "**Speed**: 20 Ft., Swim 40 Ft.",
+     "**Resistances**: bludgeoning, cold, piercing, slashing",
+     "**Senses**: Darkvision 60 ft.",
+     "**CR**: 3"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Cold Aura",
+    "type": "text",
+    "value": "At the end of each of the swarm's turns, each creature that isn't a sarcopike in a 5-foot Emanation originating from the swarm takes 4 (**1d8**) Cold damage."
+   },
+   {
+    "name": "Swarm",
+    "type": "text",
+    "value": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny creature. The swarm can't regain Hit Points or gain Temporary Hit Points."
+   },
+   {
+    "name": "Water Breathing",
+    "type": "text",
+    "value": "The swarm can breathe only underwater."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Swarm of Bites",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +4, reach 5 ft. *Hit:* 11 (**2d8 + 2**) Piercing damage plus 7 (**2d6**) Cold damage, or 6 (**1d8 + 2**) Piercing damage plus 3 (**1d6**) Cold damage if the swarm is *Bloodied*."
+   }
+  ],
+  "bonusActions": [],
   "reprint": null
  },
  {
