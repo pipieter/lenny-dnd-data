@@ -23,6 +23,7 @@ import { ParsedSpell } from './dnd/spells';
 import { ParsedTable } from './dnd/tables';
 import { ParsedVehicle } from './dnd/vehicles';
 import { entrySort } from './util';
+import * as path from 'path';
 
 export class ParsedDatabank {
     public readonly actions: ParsedAction[] = [];
@@ -54,10 +55,11 @@ export class ParsedDatabank {
     public readonly traps: ParsedHazard[] = [];
     public readonly vehicles: ParsedVehicle[] = [];
 
-    public write(path: string): void {
+    public write(directory: string): void {
         for (const key of Object.keys(this)) {
             const entries = (this as any)[key].sort(entrySort);
-            write(`${path}${key}.json`, entries);
+            const filePath = path.join(directory, `${key}.json`);
+            write(filePath, entries);
         }
     }
 

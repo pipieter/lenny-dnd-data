@@ -23,8 +23,11 @@ import { getSpells } from './dnd/spells';
 import { getTables } from './dnd/tables';
 import { getVehicles } from './dnd/vehicles';
 import { ParsedDatabank } from './parsed';
+import { styles } from './style';
 import { StopwatchLogger } from './util';
+import { ArgumentParser } from 'argparse';
 import * as kleur from 'kleur';
+import * as path from 'path';
 
 function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): ParsedDatabank {
     const parsed = new ParsedDatabank();
@@ -137,7 +140,11 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
     return parsed;
 }
 
-function main(): void {
+function main(style: 'html' | 'markdown', outPath: string): void {
+    styles.set(style);
+    const officialPath = path.join(outPath, 'official');
+    const partneredPath = path.join(outPath, 'partnered');
+
     const stopwatch = new StopwatchLogger();
 
     const official = new OfficialDatabank();
@@ -151,11 +158,26 @@ function main(): void {
     const officialSources = new Set(parsedOfficial.sources.map((source) => source.source));
     parsedPartnered.removeSources(officialSources);
 
-    parsedOfficial.write('./generated/official/');
-    parsedPartnered.write('./generated/partnered/');
+    parsedOfficial.write(officialPath);
+    parsedPartnered.write(partneredPath);
 
     stopwatch.log('Data written to files');
     stopwatch.stop();
 }
 
-main();
+const parser = new ArgumentParser({ description: 'Parse the 5e.tools backend to a more simplified format.' });
+parser.add_argument('--style', {
+    type: 'str',
+    default: 'markdown',
+    choices: ['html', 'markdown'],
+    help: 'The style in which the formatting will be done. (default: markdown)',
+});
+parser.add_argument('--destination', {
+    type: 'str',
+    default: 'generated',
+    help: 'The output directory for the files. (default: generated)',
+});
+
+const args = parser.parse_args();
+
+main(args.style, args.destination);
