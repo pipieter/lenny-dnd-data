@@ -142,8 +142,8 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
 
 function main(style: 'html' | 'markdown', outPath: string): void {
     styles.set(style);
-    const officialPath = path.join('.', outPath, 'official');
-    const partneredPath = path.join('.', outPath, 'partnered');
+    const officialPath = path.join(outPath, 'official');
+    const partneredPath = path.join(outPath, 'partnered');
 
     const stopwatch = new StopwatchLogger();
 
@@ -175,7 +175,7 @@ parser.add_argument('--style', {
 parser.add_argument('--destination', {
     type: 'str',
     default: 'generated',
-    help: 'The output directory for the files. Must be a local directory. (default: generated)',
+    help: 'The output directory for the files. (default: generated)',
 });
 
 const args = parser.parse_args();
