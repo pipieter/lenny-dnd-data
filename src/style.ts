@@ -41,13 +41,12 @@ class HTMLStyle extends FormattingStyle {
     }
 }
 
-class Styles extends FormattingStyle {
+class Styles {
     private readonly markdown = new MarkdownStyle();
     private readonly html = new HTMLStyle();
     private current: FormattingStyle;
 
     constructor() {
-        super();
         this.current = this.markdown;
     }
 
@@ -56,19 +55,23 @@ class Styles extends FormattingStyle {
         else if (style === 'html') this.current = this.html;
     }
 
-    public link(str: string, link: string): string {
+    public link(str: string, link: string, noFormat: boolean): string {
+        if (noFormat) return str;
         return this.current.link(str, link);
     }
 
-    public bold(str: string): string {
+    public bold(str: string, noFormat: boolean): string {
+        if (noFormat) return str;
         return this.current.bold(str);
     }
 
-    public italics(str: string): string {
+    public italics(str: string, noFormat: boolean): string {
+        if (noFormat) return str;
         return this.current.italics(str);
     }
 
-    public underline(str: string): string {
+    public underline(str: string, noFormat: boolean): string {
+        if (noFormat) return str;
         return this.current.underline(str);
     }
 }

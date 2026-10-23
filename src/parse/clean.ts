@@ -77,27 +77,16 @@ export function checkForDisallowedSymbols(value: string | string[]) {
 
 function basic(text: string, noFormat: boolean): string {
     text = text.replaceAll(/\{@style ([^\}]*?)\|([^\}]*?)\}/g, '$1');
-    if (noFormat) {
-        text = text.replaceAll(pattern('i', 1), '$1');
-        text = text.replaceAll(pattern('b', 1), '$1');
-        text = text.replaceAll(pattern('bold', 1), '$1');
-        text = text.replaceAll(pattern('italic', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('b', 1), styles.bold('$1'));
-        text = text.replaceAll(pattern('i', 1), styles.italics('$1'));
-        text = text.replaceAll(pattern('bold', 1), styles.bold('$1'));
-        text = text.replaceAll(pattern('italic', 1), styles.italics('$1'));
-    }
+    text = text.replaceAll(pattern('b', 1), styles.bold('$1', noFormat));
+    text = text.replaceAll(pattern('i', 1), styles.italics('$1', noFormat));
+    text = text.replaceAll(pattern('bold', 1), styles.bold('$1', noFormat));
+    text = text.replaceAll(pattern('italic', 1), styles.italics('$1', noFormat));
 
     return text;
 }
 
 function $5etools(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('5etools', 2), '$1');
-    } else {
-        text = text.replaceAll(pattern('5etools', 2), (_, p1, p2) => styles.link(p1, get5eToolsUrl(p2)));
-    }
+    text = text.replaceAll(pattern('5etools', 2), (_, p1, p2) => styles.link(p1, get5eToolsUrl(p2), noFormat));
     return text;
 }
 
@@ -108,71 +97,43 @@ function ability(text: string, _noFormat: boolean): string {
 }
 
 function actResponse(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('actResponse', 0), `Response: `);
-    } else {
-        text = text.replaceAll(pattern('actResponse', 0), `*Response:* `);
-    }
+    text = text.replaceAll(pattern('actResponse', 0), styles.italics('Response:', noFormat) + ' ');
     return text;
 }
 
 function actSave(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${Variables.getAbilityName(p1)} Saving Throw: `);
-    } else {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${Variables.getAbilityName(p1)} Saving Throw:* `);
-    }
+    text = text.replaceAll(
+        pattern('actSave', 1),
+        (_, p1) => styles.italics(`${Variables.getAbilityName(p1)} Saving Throw:`, noFormat) + ' '
+    );
     return text;
 }
 
 function actSaveFail(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('actSaveFail 3', 0), 'Third Failure: ');
-        text = text.replaceAll(pattern('actSaveFail 2', 0), 'Second Failure: ');
-        text = text.replaceAll(pattern('actSaveFail 1', 0), 'First Failure: ');
-        text = text.replaceAll(pattern('actSaveFail', 0), 'Failure: ');
-    } else {
-        text = text.replaceAll(pattern('actSaveFail 3', 0), styles.italics('Third Failure:') + ' ');
-        text = text.replaceAll(pattern('actSaveFail 2', 0), styles.italics('Second Failure:') + ' ');
-        text = text.replaceAll(pattern('actSaveFail 1', 0), styles.italics('First Failure:') + ' ');
-        text = text.replaceAll(pattern('actSaveFail', 0), styles.italics('Failure:') + ' ');
-    }
+    text = text.replaceAll(pattern('actSaveFail 3', 0), styles.italics('Third Failure:', noFormat) + ' ');
+    text = text.replaceAll(pattern('actSaveFail 2', 0), styles.italics('Second Failure:', noFormat) + ' ');
+    text = text.replaceAll(pattern('actSaveFail 1', 0), styles.italics('First Failure:', noFormat) + ' ');
+    text = text.replaceAll(pattern('actSaveFail', 0), styles.italics('Failure:', noFormat) + ' ');
     return text;
 }
 
 function actSaveFailBy(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('actSaveFailBy', 1), 'Failure by $1 or More: ');
-    } else {
-        text = text.replaceAll(pattern('actSaveFailBy', 1), styles.italics('Failure by $1 or More:') + ' ');
-    }
+    text = text.replaceAll(pattern('actSaveFailBy', 1), styles.italics('Failure by $1 or More:', noFormat) + ' ');
     return text;
 }
 
 function actSaveSuccess(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('actSaveSuccess', 0), 'Success');
-    } else {
-        text = text.replaceAll(pattern('actSaveSuccess', 0), styles.italics('Success'));
-    }
+    text = text.replaceAll(pattern('actSaveSuccess', 0), styles.italics('Success', noFormat));
     return text;
 }
 
 function actSaveSuccessOrFail(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('actSaveSuccessOrFail', 0), 'Failure or Success:');
-    } else {
-        text = text.replaceAll(pattern('actSaveSuccessOrFail', 0), styles.italics('Failure or Success') + ':');
-    }
+    text = text.replaceAll(pattern('actSaveSuccessOrFail', 0), styles.italics('Failure or Success', noFormat) + ':');
     return text;
 }
 
 function actTrigger(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('actTrigger', 0), 'Trigger:');
-    } else {
-        text = text.replaceAll(pattern('actTrigger', 0), '*Trigger*:');
-    }
+    text = text.replaceAll(pattern('actTrigger', 0), styles.italics('Trigger', noFormat) + ':');
     return text;
 }
 
@@ -207,7 +168,7 @@ function atk(text: string, noFormat: boolean): string {
     if (!noFormat) {
         // if formatted, surround the replacements with italics
         for (const [pattern, replace] of replacements.entries()) {
-            replacements.set(pattern, styles.italics(replace));
+            replacements.set(pattern, styles.italics(replace, noFormat));
         }
     }
 
@@ -238,15 +199,11 @@ function area(text: string, _noFormat: boolean): string {
 }
 
 function background(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('background', 3), '$3');
-        text = text.replaceAll(pattern('background', 2), '$1');
-        text = text.replaceAll(pattern('background', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('background', 3), (_, p1, p2, p3) => styles.link(p3, getBackgroundsUrl(p1, p2)));
-        text = text.replaceAll(pattern('background', 2), (_, p1, __) => styles.link(p1, getBackgroundsUrl(p1)));
-        text = text.replaceAll(pattern('background', 1), (_, p1) => styles.link(p1, getBackgroundsUrl(p1)));
-    }
+    text = text.replaceAll(pattern('background', 3), (_, p1, p2, p3) =>
+        styles.link(p3, getBackgroundsUrl(p1, p2), noFormat)
+    );
+    text = text.replaceAll(pattern('background', 2), (_, p1, __) => styles.link(p1, getBackgroundsUrl(p1), noFormat));
+    text = text.replaceAll(pattern('background', 1), (_, p1) => styles.link(p1, getBackgroundsUrl(p1), noFormat));
 
     return text;
 }
@@ -277,34 +234,19 @@ function charoption(text: string, _noFormat: boolean): string {
     return text;
 }
 
-function cite(text: string, _noFormat: boolean): string {
-    if (_noFormat) {
-        text = text.replaceAll(pattern('cite', 3), '$1');
-        text = text.replaceAll(pattern('cite', 2), '$1');
-        text = text.replaceAll(pattern('cite', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('cite', 3), '__$1__');
-        text = text.replaceAll(pattern('cite', 2), '__$1__');
-        text = text.replaceAll(pattern('cite', 1), '__$1__');
-    }
+function cite(text: string, noFormat: boolean): string {
+    text = text.replaceAll(pattern('cite', 3), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('cite', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('cite', 1), styles.underline('$1', noFormat));
     return text;
 }
 
 function class$(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('class', 5), '$3');
-        text = text.replaceAll(pattern('class', 4), '$3');
-        text = text.replaceAll(pattern('class', 3), '$3');
-        text = text.replaceAll(pattern('class', 2), '$1');
-        text = text.replaceAll(pattern('class', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('class', 5), styles.underline('$3'));
-        text = text.replaceAll(pattern('class', 4), styles.underline('$3'));
-        text = text.replaceAll(pattern('class', 3), styles.underline('$3'));
-        text = text.replaceAll(pattern('class', 2), styles.underline('$1'));
-        text = text.replaceAll(pattern('class', 1), styles.underline('$1'));
-    }
-
+    text = text.replaceAll(pattern('class', 5), styles.underline('$3', noFormat));
+    text = text.replaceAll(pattern('class', 4), styles.underline('$3', noFormat));
+    text = text.replaceAll(pattern('class', 3), styles.underline('$3', noFormat));
+    text = text.replaceAll(pattern('class', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('class', 1), styles.underline('$1', noFormat));
     return text;
 }
 
@@ -330,15 +272,9 @@ function condition(text: string, _noFormat: boolean): string {
 }
 
 function creature(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('creature', 3), '$3');
-        text = text.replaceAll(pattern('creature', 2), '$1');
-        text = text.replaceAll(pattern('creature', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('creature', 3), styles.underline('$3'));
-        text = text.replaceAll(pattern('creature', 2), styles.underline('$1'));
-        text = text.replaceAll(pattern('creature', 1), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('creature', 3), styles.underline('$3', noFormat));
+    text = text.replaceAll(pattern('creature', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('creature', 1), styles.underline('$1', noFormat));
     return text;
 }
 
@@ -352,13 +288,8 @@ function d20(text: string, _noFormat: boolean): string {
 }
 
 function damage(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('damage', 2), '$2');
-        text = text.replaceAll(pattern('damage', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('damage', 2), styles.bold('$2'));
-        text = text.replaceAll(pattern('damage', 1), styles.bold('$1'));
-    }
+    text = text.replaceAll(pattern('damage', 2), styles.bold('$2', noFormat));
+    text = text.replaceAll(pattern('damage', 1), styles.bold('$1', noFormat));
     return text;
 }
 
@@ -379,15 +310,9 @@ function deck(text: string, _noFormat: boolean): string {
 }
 
 function deity(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('deity', 3), '$1');
-        text = text.replaceAll(pattern('deity', 2), '$1');
-        text = text.replaceAll(pattern('deity', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('deity', 3), styles.underline('$1'));
-        text = text.replaceAll(pattern('deity', 2), styles.underline('$1'));
-        text = text.replaceAll(pattern('deity', 1), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('deity', 3), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('deity', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('deity', 1), styles.underline('$1', noFormat));
     return text;
 }
 
@@ -400,35 +325,20 @@ function dice(text: string, _noFormat: boolean): string {
 }
 
 function disease(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('disease', 3), '$3');
-        text = text.replaceAll(pattern('disease', 2), '$1');
-        text = text.replaceAll(pattern('disease', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('disease', 3), styles.underline('$3'));
-        text = text.replaceAll(pattern('disease', 2), styles.underline('$1'));
-        text = text.replaceAll(pattern('disease', 1), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('disease', 3), styles.underline('$3', noFormat));
+    text = text.replaceAll(pattern('disease', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('disease', 1), styles.underline('$1', noFormat));
     return text;
 }
 
 function facility(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('facility', 2), '$1');
-    } else {
-        text = text.replaceAll(pattern('facility', 2), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('facility', 2), styles.underline('$1', noFormat));
     return text;
 }
 
 function feat(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('feat', 2), '$1');
-        text = text.replaceAll(pattern('feat', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('feat', 2), styles.underline('$1'));
-        text = text.replaceAll(pattern('feat', 1), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('feat', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('feat', 1), styles.underline('$1', noFormat));
     return text;
 }
 
@@ -458,6 +368,12 @@ function hazard(text: string, _noFormat: boolean): string {
     return text;
 }
 
+function h(text: string, _noFormat: boolean): string {
+    // Represents a health number
+    text = text.replaceAll(pattern('h', 1), '$1');
+    return text;
+}
+
 function hit(text: string, noFormat: boolean): string {
     text = text.replaceAll(pattern('hit', 1), (_, p1) => {
         if (!p1.startsWith('+') && !p1.startsWith('-')) {
@@ -467,13 +383,8 @@ function hit(text: string, noFormat: boolean): string {
         return p1;
     });
 
-    if (noFormat) {
-        text = text.replaceAll(pattern('h', 0), 'Hit: ');
-        text = text.replaceAll(pattern('h', 1), 'Hit: ');
-    } else {
-        text = text.replaceAll(pattern('h', 0), '*Hit:* ');
-    }
-
+    text = text.replaceAll(pattern('h', 1), styles.italics('Hit:', noFormat) + ' ');
+    text = text.replaceAll(pattern('h', 0), styles.italics('Hit:', noFormat) + ' ');
     return text;
 }
 
@@ -485,12 +396,7 @@ function hitYourSpellAttack(text: string, _noFormat: boolean): string {
 }
 
 function hom(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('hom', 0), 'Hit or Miss: ');
-    } else {
-        text = text.replaceAll(pattern('hom', 0), styles.italics('Hit or Miss:') + ' ');
-    }
-
+    text = text.replaceAll(pattern('hom', 0), styles.italics('Hit or Miss:', noFormat) + ' ');
     return text;
 }
 
@@ -509,13 +415,8 @@ function item(text: string, _noFormat: boolean): string {
 }
 
 function itemMastery(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('itemMastery', 2), '$1');
-        text = text.replaceAll(pattern('itemMastery', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('itemMastery', 2), styles.underline('$1'));
-        text = text.replaceAll(pattern('itemMastery', 1), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('itemMastery', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('itemMastery', 1), styles.underline('$1', noFormat));
     return text;
 }
 
@@ -549,15 +450,9 @@ function note(text: string, _noFormat: boolean): string {
 }
 
 function object(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('object', 3), '$3');
-        text = text.replaceAll(pattern('object', 2), '$1');
-        text = text.replaceAll(pattern('object', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('object', 3), styles.underline('$3'));
-        text = text.replaceAll(pattern('object', 2), styles.underline('$1'));
-        text = text.replaceAll(pattern('object', 1), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('object', 3), styles.underline('$3', noFormat));
+    text = text.replaceAll(pattern('object', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('object', 1), styles.underline('$1', noFormat));
     return text;
 }
 
@@ -621,33 +516,19 @@ function reward(text: string, _noFormat: boolean): string {
 }
 
 function scaledamage(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('scaledamage', 5), '$5');
-        text = text.replaceAll(pattern('scaledamage', 3), '$3');
-    } else {
-        text = text.replaceAll(pattern('scaledamage', 5), styles.bold('$5'));
-        text = text.replaceAll(pattern('scaledamage', 3), styles.bold('$3'));
-    }
+    text = text.replaceAll(pattern('scaledamage', 5), styles.bold('$5', noFormat));
+    text = text.replaceAll(pattern('scaledamage', 3), styles.bold('$3', noFormat));
     return text;
 }
 
 function scaledice(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('scaledice', 3), '$3');
-    } else {
-        text = text.replaceAll(pattern('scaledice', 3), styles.bold('$3'));
-    }
+    text = text.replaceAll(pattern('scaledice', 3), styles.bold('$3', noFormat));
     return text;
 }
 
 function skill(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('skill', 2), '$1');
-        text = text.replaceAll(pattern('skill', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('skill', 2), styles.italics('$1'));
-        text = text.replaceAll(pattern('skill', 1), styles.italics('$1'));
-    }
+    text = text.replaceAll(pattern('skill', 2), styles.italics('$1', noFormat));
+    text = text.replaceAll(pattern('skill', 1), styles.italics('$1', noFormat));
     return text;
 }
 
@@ -658,44 +539,25 @@ function skillCheck(text: string, _noFormat: boolean): string {
 }
 
 function spell(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('spell', 2), '$1');
-        text = text.replaceAll(pattern('spell', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('spell', 2), styles.underline('$1'));
-        text = text.replaceAll(pattern('spell', 1), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('spell', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('spell', 1), styles.underline('$1', noFormat));
     return text;
 }
 
 function status(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('status', 3), '$3');
-        text = text.replaceAll(pattern('status', 2), '$1');
-        text = text.replaceAll(pattern('status', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('status', 3), styles.italics('$3'));
-        text = text.replaceAll(pattern('status', 2), styles.italics('$1'));
-        text = text.replaceAll(pattern('status', 1), styles.italics('$1'));
-    }
+    text = text.replaceAll(pattern('status', 3), styles.italics('$3', noFormat));
+    text = text.replaceAll(pattern('status', 2), styles.italics('$1', noFormat));
+    text = text.replaceAll(pattern('status', 1), styles.italics('$1', noFormat));
     return text;
 }
 
 function subclass(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('subclass', 4), '$1');
-    } else {
-        text = text.replaceAll(pattern('subclass', 4), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('subclass', 4), styles.underline('$1', noFormat));
     return text;
 }
 
 function subclassFeature(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('subclassFeature', 6), '$1');
-    } else {
-        text = text.replaceAll(pattern('subclassFeature', 6), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('subclassFeature', 6), styles.underline('$1', noFormat));
     return text;
 }
 
@@ -705,46 +567,26 @@ function sup(text: string, _noFormat: boolean): string {
 }
 
 function table(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('table', 3), '$3');
-        text = text.replaceAll(pattern('table', 2), '$1');
-        text = text.replaceAll(pattern('table', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('table', 3), (_, p1, p2, p3) => styles.link(p3, getTablesUrl(p1, p2)));
-        text = text.replaceAll(pattern('table', 2), (_, p1, p2) => styles.link(p1, getTablesUrl(p1, p2)));
-        text = text.replaceAll(pattern('table', 1), (_, p1) => styles.link(p1, getTablesUrl(p1)));
-    }
+    text = text.replaceAll(pattern('table', 3), (_, p1, p2, p3) => styles.link(p3, getTablesUrl(p1, p2), noFormat));
+    text = text.replaceAll(pattern('table', 2), (_, p1, p2) => styles.link(p1, getTablesUrl(p1, p2), noFormat));
+    text = text.replaceAll(pattern('table', 1), (_, p1) => styles.link(p1, getTablesUrl(p1), noFormat));
     return text;
 }
 
 function trap(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('trap', 3), '$3');
-        text = text.replaceAll(pattern('trap', 2), '$1');
-    } else {
-        text = text.replaceAll(pattern('trap', 3), (_, p1, p2, p3) => styles.link(p3, getTrapsUrl(p1, p2)));
-        text = text.replaceAll(pattern('trap', 2), (_, p1, p2) => styles.link(p1, getTrapsUrl(p1, p2)));
-    }
+    text = text.replaceAll(pattern('trap', 3), (_, p1, p2, p3) => styles.link(p3, getTrapsUrl(p1, p2), noFormat));
+    text = text.replaceAll(pattern('trap', 2), (_, p1, p2) => styles.link(p1, getTrapsUrl(p1, p2), noFormat));
     return text;
 }
 
 function vehicle(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('vehicle', 2), '$1');
-        text = text.replaceAll(pattern('vehicle', 1), '$1');
-    } else {
-        text = text.replaceAll(pattern('vehicle', 2), styles.underline('$1'));
-        text = text.replaceAll(pattern('vehicle', 1), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('vehicle', 2), styles.underline('$1', noFormat));
+    text = text.replaceAll(pattern('vehicle', 1), styles.underline('$1', noFormat));
     return text;
 }
 
 function vehupgrade(text: string, noFormat: boolean): string {
-    if (noFormat) {
-        text = text.replaceAll(pattern('vehupgrade', 2), '$1');
-    } else {
-        text = text.replaceAll(pattern('vehupgrade', 2), styles.underline('$1'));
-    }
+    text = text.replaceAll(pattern('vehupgrade', 2), styles.underline('$1', noFormat));
     return text;
 }
 
@@ -795,6 +637,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         filter,
         font,
         footnote,
+        h,
         hazard,
         hit,
         hitYourSpellAttack,
