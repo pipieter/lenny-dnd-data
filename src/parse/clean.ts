@@ -1,7 +1,6 @@
-import { rawData } from './5etools-conversion/rawdata';
-import { checkForDisallowedSymbols } from './parser';
-import { styles } from './style';
-import { getTablesUrl, get5eToolsUrl, getBackgroundsUrl, getTrapsUrl } from './urls';
+import { styles } from '../style';
+import { get5eToolsUrl, getBackgroundsUrl, getTablesUrl, getTrapsUrl } from './urls';
+import { Variables } from './variables';
 
 declare global {
     interface String {
@@ -50,6 +49,29 @@ function pattern(name: string, count: number) {
 }
 
 /* =========================================================
+ * Validation functions
+ * ========================================================= */
+
+const disallowedSymbols = ['{', '}', '[object Object]'];
+
+export function containsDisallowedSymbols(value: string | string[]) {
+    // String
+    if (typeof value === 'string') {
+        return disallowedSymbols.some((s) => value.includes(s));
+    }
+    // List
+    else {
+        return value.some(containsDisallowedSymbols);
+    }
+}
+
+export function checkForDisallowedSymbols(value: string | string[]) {
+    if (containsDisallowedSymbols(value)) {
+        throw `Disallowed symbols found in '${JSON.stringify(value)}'`;
+    }
+}
+
+/* =========================================================
  * Format functions
  * ========================================================= */
 
@@ -79,14 +101,26 @@ function $5etools(text: string, noFormat: boolean): string {
     return text;
 }
 
+function ability(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('ability', 2), '$1'); // Uses a modifier, but is generally just the basic calculated one from the score.
+    text = text.replaceAll(pattern('ability', 1), (_, p1) => p1.split(' ').at(-1));
+    return text;
+}
+
+function actResponse(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('actResponse', 0), `Response: `);
+    } else {
+        text = text.replaceAll(pattern('actResponse', 0), `*Response:* `);
+    }
+    return text;
+}
+
 function actSave(text: string, noFormat: boolean): string {
     if (noFormat) {
-        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${rawData.getAbilityName(p1)} Saving Throw: `);
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `${Variables.getAbilityName(p1)} Saving Throw: `);
     } else {
-        text = text.replaceAll(
-            pattern('actSave', 1),
-            (_, p1) => styles.italics(`${rawData.getAbilityName(p1)} Saving Throw:`) + ' '
-        );
+        text = text.replaceAll(pattern('actSave', 1), (_, p1) => `*${Variables.getAbilityName(p1)} Saving Throw:* `);
     }
     return text;
 }
@@ -133,6 +167,15 @@ function actSaveSuccessOrFail(text: string, noFormat: boolean): string {
     return text;
 }
 
+function actTrigger(text: string, noFormat: boolean): string {
+    if (noFormat) {
+        text = text.replaceAll(pattern('actTrigger', 0), 'Trigger:');
+    } else {
+        text = text.replaceAll(pattern('actTrigger', 0), '*Trigger*:');
+    }
+    return text;
+}
+
 function atk(text: string, noFormat: boolean): string {
     // converterutils-creature.js:584
     const replacements = new Map<string, string>([
@@ -144,6 +187,7 @@ function atk(text: string, noFormat: boolean): string {
         ['{@atk aw}', 'Area Weapon Attack:'],
         ['{@atk ms}', 'Melee Spell Attack:'],
         ['{@atk mw,rw}', 'Melee or Ranged Weapon Attack:'],
+        ['{@atk mw, rw}', 'Melee or Ranged Weapon Attack:'], // TODO more intelligent parsing
         ['{@atk rs}', 'Ranged Spell Attack:'],
         ['{@atk ms,rs}', 'Melee or Ranged Spell Attack:'],
         ['{@atk m,r}', 'Melee or Ranged Attack:'],
@@ -155,6 +199,8 @@ function atk(text: string, noFormat: boolean): string {
         ['{@atkr ms}', 'Melee Spell Attack Roll:'],
         ['{@atkr r}', 'Ranged Attack Roll:'],
         ['{@atkr m,r}', 'Melee or Ranged Attack Roll:'],
+        ['{@atkr m,s}', 'Melee or Spell Attack Roll:'],
+        ['{@atkr rs}', 'Ranged Spell Attack Roll:'],
         ['{@atk g}', 'Magical Attack:'],
     ]);
 
@@ -228,6 +274,19 @@ function charoption(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('charoption', 3), '$3');
     text = text.replaceAll(pattern('charoption', 2), '$1');
     text = text.replaceAll(pattern('charoption', 1), '$1');
+    return text;
+}
+
+function cite(text: string, _noFormat: boolean): string {
+    if (_noFormat) {
+        text = text.replaceAll(pattern('cite', 3), '$1');
+        text = text.replaceAll(pattern('cite', 2), '$1');
+        text = text.replaceAll(pattern('cite', 1), '$1');
+    } else {
+        text = text.replaceAll(pattern('cite', 3), '__$1__');
+        text = text.replaceAll(pattern('cite', 2), '__$1__');
+        text = text.replaceAll(pattern('cite', 1), '__$1__');
+    }
     return text;
 }
 
@@ -381,13 +440,13 @@ function filter(text: string, _noFormat: boolean): string {
     return text;
 }
 
-function font(text: string, noFormat: boolean): string {
+function font(text: string, _noFormat: boolean): string {
     // Font is mainly used to render certain symbols, like ♡ ♥ ♠ ♦ ♣ in a special style.
     text = text.replaceAll(pattern('font', 2), '$1');
     return text;
 }
 
-function footnote(text: string, noFormat: boolean): string {
+function footnote(text: string, _noFormat: boolean): string {
     // Footnote allows people to hover over and see extra information in 5e.tools, we can't do this in discord.
     text = text.replaceAll(pattern('footnote', 2), '$1 ($2)');
     return text;
@@ -410,14 +469,15 @@ function hit(text: string, noFormat: boolean): string {
 
     if (noFormat) {
         text = text.replaceAll(pattern('h', 0), 'Hit: ');
+        text = text.replaceAll(pattern('h', 1), 'Hit: ');
     } else {
-        text = text.replaceAll(pattern('h', 0), styles.italics('Hit:') + ' ');
+        text = text.replaceAll(pattern('h', 0), '*Hit:* ');
     }
 
     return text;
 }
 
-function hitYourSpellAttack(text: string, noFormat: boolean): string {
+function hitYourSpellAttack(text: string, _noFormat: boolean): string {
     // hitYourSpellAttack is used for 5e-tools rolling functionality, we don't need to format it.
     text = text.replaceAll(pattern('hitYourSpellAttack', 1), '$1');
     text = text.replaceAll(pattern('hitYourSpellAttack', 0), 'your spell attack modifier');
@@ -474,6 +534,7 @@ function language(text: string, _noFormat: boolean): string {
 
 function link(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('link', 2), '[$1]($2)');
+    text = text.replaceAll(pattern('link', 1), '[$1]($1)');
     return text;
 }
 
@@ -503,6 +564,11 @@ function object(text: string, noFormat: boolean): string {
 function optfeature(text: string, _noFormat: boolean): string {
     text = text.replaceAll(pattern('optfeature', 2), '$1');
     text = text.replaceAll(pattern('optfeature', 1), '$1');
+    return text;
+}
+
+function psionic(text: string, _noFormat: boolean): string {
+    text = text.replaceAll(pattern('psionic', 2), '$1');
     return text;
 }
 
@@ -540,6 +606,12 @@ function recharge(text: string, _noFormat: boolean): string {
         return `(${recharge})`;
     });
     text = text.replaceAll(pattern('recharge', 0), '(Recharge 5-6)');
+    return text;
+}
+
+function recipe(text: string, _noFormat: boolean): string {
+    // 5e-tools doesn't format this in a special way either. See Honeyflame Bread (option 4) in https://5e.tools/tables.html#backstory%3b%20favorite%20foods%20(menagerie%20coast)_egw
+    text = text.replaceAll(pattern('recipe', 2), '$1');
     return text;
 }
 
@@ -686,11 +758,14 @@ function cleanSingleText(text: string, noFormat: boolean): string {
     const functions = [
         basic,
         $5etools,
+        ability,
+        actResponse,
         actSave,
         actSaveFail,
         actSaveFailBy,
         actSaveSuccess,
         actSaveSuccessOrFail,
+        actTrigger,
         atk,
         action,
         adventure,
@@ -700,6 +775,7 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         card,
         chance,
         charoption,
+        cite,
         class$,
         classFeature,
         color,
@@ -732,12 +808,14 @@ function cleanSingleText(text: string, noFormat: boolean): string {
         loader,
         object,
         optfeature,
+        psionic,
         quickref,
         race,
         sense,
         table,
         variantrule,
         recharge,
+        recipe,
         reward,
         scaledamage,
         scaledice,
@@ -779,6 +857,7 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     const stack: number[] = [];
     let i = 0;
+
     while (i < text.length) {
         if (text[i] === '{') {
             stack.push(i);
@@ -816,4 +895,9 @@ export function cleanDNDText(text: string, noFormat: boolean = false): string {
 
     checkForDisallowedSymbols(text);
     return text;
+}
+
+export function cleanOptionalDNDText(text: string | undefined | null, noFormat: boolean = false): string | null {
+    if (!text) return null;
+    return cleanDNDText(text, noFormat);
 }

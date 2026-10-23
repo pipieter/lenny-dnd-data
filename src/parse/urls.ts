@@ -1,3 +1,6 @@
+import { Fluff } from '../../5etools-collector/types/fluff';
+import { EntryImage, HRef } from '../../5etools-collector/types/internal/entry';
+
 function removeAccents(str: string): string {
     str = str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     str = str.replaceAll('"', '');
@@ -81,6 +84,10 @@ export function getBestiaryUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/bestiary.html`, name, source);
 }
 
+export function getCharCreationOptionUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/charcreationoptions.html`, name, source);
+}
+
 export function getClassesUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/classes.html`, name, source);
 }
@@ -107,6 +114,10 @@ export function getLanguagesUrl(name: string, source: string) {
 
 export function getObjectsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/objects.html`, name, source);
+}
+
+export function getOptionalFeaturesUrl(name: string, source: string) {
+    return buildNameSourceUrl(`https://5e.tools/optionalfeatures.html`, name, source);
 }
 
 export function getRulesUrl(name: string, source: string) {
@@ -154,4 +165,21 @@ export function getVehiclesUrl(name: string, source: string) {
 
 export function getCultsBoonsUrl(name: string, source: string) {
     return buildNameSourceUrl(`https://5e.tools/cultsboons.html`, name, source);
+}
+
+export function getHrefUrl(href: HRef) {
+    if (href.type === 'external') return encodeURI(href.url);
+    if (href.type === 'internal') return getImageUrl(href.path);
+    throw `Unknown HREF type in ${href}`;
+}
+
+export function getEntryImageUrl(image: EntryImage | null | undefined): string | null {
+    if (!image) return null;
+    return getHrefUrl(image.href);
+}
+
+export function getFluffImageUrl(fluff: Fluff | undefined | null): string | null {
+    const image = fluff?.images?.[0];
+    if (!image) return null;
+    return getEntryImageUrl(image);
 }

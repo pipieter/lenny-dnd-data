@@ -1,5 +1,7 @@
+import { Fluff } from '../5etools-collector/types/fluff';
+import { Base } from '../5etools-collector/types/internal/base';
 import { getKey } from './data';
-import { title } from './parser';
+
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import kleur = require('kleur');
 
@@ -11,6 +13,19 @@ export function entrySort(a: any, b: any): number {
         sensitivity: 'base',
         numeric: true,
     });
+}
+
+interface FindEntry {
+    name?: string | undefined | null;
+    source?: string | undefined | null;
+}
+
+export function findEntry<S extends FindEntry, T extends FindEntry>(entry: S, entries: T[]): T | undefined {
+    return entries.find((e) => e.name === entry.name && e.source === entry.source);
+}
+
+export function findFluff(entry: Base, fluffs: Fluff[]) {
+    return findEntry(entry, fluffs);
 }
 
 export function getNumberSign(value: number, zeroReturnsPlus: boolean = false): string {
@@ -56,6 +71,14 @@ export function formatModifier(mod: string | number): string {
 
 export function variadic<T>(values: T | T[]): T[] {
     return Array.isArray(values) ? values : [values];
+}
+
+export function capitalize(text: string): string {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+export function title(text: string): string {
+    return text.split(' ').map(capitalize).join(' ');
 }
 
 export class StopwatchLogger {

@@ -1,23 +1,11 @@
-import { cleanDNDText } from '../clean';
+import { Fluff } from '../../5etools-collector/types/fluff';
+import { Language } from '../../5etools-collector/types/language';
 import { Databank } from '../data';
-import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
-import { getImageUrl, getLanguagesUrl } from '../urls';
-import { joinStringsWithAnd } from '../util';
-
-interface Language {
-    name: string;
-    source: string;
-    type?: string;
-    typicalSpeakers?: string[];
-    script?: string;
-    entries: any[];
-}
-
-interface LanguageFluff {
-    name: string;
-    source: string;
-    images: any[];
-}
+import { ReprintData, parseReprint } from '../parse/base';
+import { cleanDNDText } from '../parse/clean';
+import { Description, parseDescriptions } from '../parse/description';
+import { getHrefUrl, getLanguagesUrl } from '../parse/urls';
+import { capitalize, findFluff, joinStringsWithAnd } from '../util';
 
 export interface ParsedLanguage {
     name: string;
@@ -49,17 +37,15 @@ function getLanguageType(language: Language): string {
     return `${type} language`;
 }
 
-function getLanguageImage(language: Language, data: Databank): string | null {
-    const fluff = data.search('languageFluff', language.name, language.source);
-    if (fluff && fluff.images.length) {
-        return getImageUrl(fluff.images[0].href.path);
-    }
-    return null;
+function getLanguageImage(fluff?: Fluff): string | null {
+    if (!fluff || !fluff.images) return null;
+    return getHrefUrl(fluff.images[0].href);
 }
 
 export function getLanguages(data: Databank): ParsedLanguage[] {
-    const languages: Language[] = data.language;
-    return languages.map((language) => {
+    return data.language.map((language) => {
+        const fluff = findFluff(language, data.languageFluff);
+
         return {
             name: language.name,
             source: language.source,
@@ -68,7 +54,7 @@ export function getLanguages(data: Databank): ParsedLanguage[] {
             typicalSpeakers: getTypicalSpeakers(language),
             script: language.script ?? null,
             description: language.entries ? parseDescriptions('', language.entries) : null,
-            image: getLanguageImage(language, data),
+            image: getLanguageImage(fluff),
             reprint: parseReprint(language),
         };
     });

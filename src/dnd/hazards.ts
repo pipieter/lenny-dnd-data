@@ -1,13 +1,10 @@
+import { Hazard } from '../../5etools-collector/types/hazard';
 import { Databank } from '../data';
-import { capitalize, Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
-import { getTrapsUrl } from '../urls';
-
-export interface Hazard {
-    name: string;
-    source: string;
-    trapHazType?: string;
-    entries: (string | any)[];
-}
+import { ReprintData, parseReprint } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
+import { getTrapsUrl } from '../parse/urls';
+import { Variables } from '../parse/variables';
+import { capitalize } from '../util';
 
 export interface ParsedHazard {
     name: string;
@@ -21,21 +18,10 @@ export interface ParsedHazard {
 function getTrapHazardSubtitle(hazard: Hazard, suffix: string): string {
     if (!hazard.trapHazType) return capitalize(suffix);
 
-    const typeMap: Record<string, string> = {
-        MECH: 'Mechanical',
-        SMPL: 'Simple',
-        TRP: ' ', // Must have a space, to register in the return check.
-        HAUNT: 'Haunted',
-        MAG: 'Magic',
-        CMPX: 'Complex',
-        WLD: 'Wilderness',
-        WTH: 'Weather',
-        ENV: 'Environmental',
-        EST: 'Eldritch',
-        GEN: 'General',
-    };
-    const type = typeMap[hazard.trapHazType];
-    if (type) return capitalize(`${type} ${suffix}`.trim());
+    const type = Variables.getTrapType(hazard.trapHazType);
+    if (type) {
+        return type;
+    }
 
     throw `Unsupported trap/hazard type in ${hazard.name}: ${hazard.trapHazType}`;
 }
@@ -50,7 +36,7 @@ export function getTrapsAndHazards(data: Databank): {
             source: trap.source,
             subtitle: getTrapHazardSubtitle(trap, 'trap'),
             url: getTrapsUrl(trap.name, trap.source),
-            description: trap.entries ? parseDescriptions('', trap.entries) : [],
+            description: parseDescriptions('', trap.entries ?? []),
             reprint: parseReprint(trap),
         };
     });
@@ -61,7 +47,7 @@ export function getTrapsAndHazards(data: Databank): {
             source: hazard.source,
             subtitle: getTrapHazardSubtitle(hazard, 'hazard'),
             url: getTrapsUrl(hazard.name, hazard.source),
-            description: hazard.entries ? parseDescriptions('', hazard.entries) : [],
+            description: parseDescriptions('', hazard.entries ?? []),
             reprint: parseReprint(hazard),
         };
     });

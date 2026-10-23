@@ -1,20 +1,41 @@
-import { title } from './parser';
-import { read, readJsonFile } from './read';
-import { Rule } from './dnd/rules';
-import { Hazard } from './dnd/hazards';
-import { TableData } from './dnd/tables';
-import { Action } from './dnd/actions';
-import { Feat } from './dnd/feats';
-import { Skill } from './dnd/skills';
-import { SpeciesName } from './dnd/names';
-import { Vehicle, VehicleUpgrade } from './dnd/vehicles';
-import { DNDObject } from './dnd/objects';
-import { existsSync, lstatSync, mkdirSync, readdirSync, writeFileSync } from 'fs';
+import { Action } from '../5etools-collector/types/action';
+import { Background } from '../5etools-collector/types/background';
+import { Boon } from '../5etools-collector/types/boon';
+import { Class, ClassFeature, Subclass, SubclassFeature } from '../5etools-collector/types/class';
+import { Condition } from '../5etools-collector/types/condition';
+import { Cult } from '../5etools-collector/types/cult';
+import { Deity } from '../5etools-collector/types/deity';
+import { Disease } from '../5etools-collector/types/disease';
+import { Feat } from '../5etools-collector/types/feat';
+import { Fluff } from '../5etools-collector/types/fluff';
+import { Hazard } from '../5etools-collector/types/hazard';
+import {
+    Item,
+    ItemEntry,
+    ItemGroup,
+    ItemMastery,
+    ItemProperty,
+    ItemType,
+    ItemTypeAdditionalEntries,
+    MagicVariant,
+} from '../5etools-collector/types/item';
+import { Language } from '../5etools-collector/types/language';
+import { LifeBackground, LifeClass } from '../5etools-collector/types/life';
+import { Monster } from '../5etools-collector/types/monster';
+import { SpeciesName } from '../5etools-collector/types/name';
+import { DNDObject } from '../5etools-collector/types/object';
+import { OptionalFeatures } from '../5etools-collector/types/optionalfeatures';
+import { Rule } from '../5etools-collector/types/rule';
+import { Skill } from '../5etools-collector/types/skill';
+import { Source } from '../5etools-collector/types/source';
+import { Species, SpeciesFluff } from '../5etools-collector/types/species';
+import { Spell, SpellSource } from '../5etools-collector/types/spell';
+import { Status } from '../5etools-collector/types/status';
+import { TableGroup, TableTable } from '../5etools-collector/types/table';
+import { Vehicle, VehicleUpgrade } from '../5etools-collector/types/vehicle';
+import { title } from './util';
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
-import { Deity } from './dnd/deities';
-import { Cult } from './dnd/cults';
-import { Boon } from './dnd/boons';
-import { LifeBackground, LifeClass } from './dnd/life';
 
 export function getKey(name: string, source: string): string {
     return `${title(name)} (${source.toUpperCase()})`;
@@ -26,43 +47,81 @@ export function write(path: string, contents: object[]) {
     writeFileSync(path, JSON.stringify(contents, null, 1), 'utf-8');
 }
 
-export class Databank {
+export function read(filepath: string): any {
+    return JSON.parse(readFileSync(filepath).toString());
+}
+
+export class MetaData {
+    // TODO - Currently metadata is retained globally, however overlapping keys are possible when homebrew content is enabled.
+    // E.g. in optionalFeatureTypes, "CO" can have 3 different meanings (Concoction, Channeling Option, or Companion Origin) depending on which source it's from.
+    public readonly vehicleUpgradeTypes: Record<string, Record<string, string>> = {};
+    public readonly featCategories: Record<string, Record<string, string>> = {};
+    public readonly spellSchools: Record<string, Record<string, string>> = {};
+    public readonly optionalFeatureTypes: Record<string, Record<string, string>> = {};
+    // The items below are not used in the code *yet*, and should be TODO
+    public readonly psionicTypes: Record<string, Record<string, string>> = {};
+
+    public load(file: string) {
+        // Exceptions where the metadata is {[key: string]: object}
+        const objectMapping: { [key: string]: string } = {
+            spellSchools: 'full', // From each spellSchool object, take data from the 'full' key.
+            psionicTypes: 'full',
+        };
+
+        const metadata = read(file);
+        for (const meta of metadata) {
+            const source = meta.sourceKey ?? meta.sourceAbbreviation;
+            for (const key of Object.keys(meta.value)) {
+                let value = meta.value[key];
+                if (typeof value === 'object') {
+                    value = (value as any)[objectMapping[meta.type]];
+                }
+                const existing = (this as any)[meta.type][source] || {};
+                const addition: Record<string, any> = {};
+                addition[key] = value;
+                (this as any)[meta.type][source] = { ...existing, ...addition };
+            }
+        }
+    }
+}
+
+export abstract class Databank {
     // Spells
-    public readonly spell: any[] = [];
-    public readonly spellFluff: any[] = [];
-    public readonly spellSource: any[] = [];
+    public readonly spell: Spell[] = [];
+    public readonly spellFluff: Fluff[] = [];
+    public readonly spellSource: SpellSource[] = [];
     // Items
-    public readonly item: any[] = [];
-    public readonly baseitem: any[] = [];
-    public readonly itemGroup: any[] = [];
-    public readonly itemProperty: any[] = [];
-    public readonly itemType: any[] = [];
-    public readonly itemTypeAdditionalEntries: any[] = [];
-    public readonly itemEntry: any[] = [];
-    public readonly itemMastery: any[] = [];
-    public readonly magicvariant: any[] = [];
-    public readonly itemFluff: any[] = [];
+    public readonly item: Item[] = [];
+    public readonly baseitem: Item[] = [];
+    public readonly itemGroup: ItemGroup[] = [];
+    public readonly itemProperty: ItemProperty[] = [];
+    public readonly itemType: ItemType[] = [];
+    public readonly itemTypeAdditionalEntries: ItemTypeAdditionalEntries[] = [];
+    public readonly itemEntry: ItemEntry[] = [];
+    public readonly itemMastery: ItemMastery[] = [];
+    public readonly magicvariant: MagicVariant[] = [];
+    public readonly itemFluff: Fluff[] = [];
     // Conditions
-    public readonly condition: any[] = [];
-    public readonly status: any[] = [];
-    public readonly disease: any[] = [];
-    public readonly conditionFluff: any[] = [];
-    public readonly statusFluff: any[] = [];
-    public readonly diseaseFluff: any[] = [];
+    public readonly condition: Condition[] = [];
+    public readonly status: Status[] = [];
+    public readonly disease: Disease[] = [];
+    public readonly conditionFluff: Fluff[] = [];
+    public readonly statusFluff: Fluff[] = [];
+    public readonly diseaseFluff: Fluff[] = [];
     // Creatures
-    public readonly monster: any[] = [];
-    public readonly monsterFluff: any[] = [];
+    public readonly monster: Monster[] = [];
+    public readonly monsterFluff: Fluff[] = [];
     // Languages
-    public readonly language: any[] = [];
-    public readonly languageFluff: any[] = [];
-    public readonly languageScript: any[] = [];
+    public readonly language: Language[] = [];
+    public readonly languageFluff: Fluff[] = [];
     // Classes
-    public readonly class: any[] = [];
-    public readonly classFeature: any[] = [];
-    public readonly subclass: any[] = [];
-    public readonly subclassFeature: any[] = [];
-    public readonly classFluff: any[] = [];
-    public readonly subclassFluff: any[] = [];
+    public readonly class: Class[] = [];
+    public readonly classFeature: ClassFeature[] = [];
+    public readonly subclass: Subclass[] = [];
+    public readonly subclassFeature: SubclassFeature[] = [];
+    public readonly classFluff: Fluff[] = [];
+    public readonly subclassFluff: Fluff[] = [];
+    public readonly sidekick: Class[] = [];
     // Rules
     public readonly variantrule: Rule[] = [];
     public readonly sense: any[] = [];
@@ -77,27 +136,29 @@ export class Databank {
     // Actions
     public readonly action: Action[] = [];
     // Tables
-    public readonly table: TableData[] = [];
-    public readonly tableGroup: any[] = [];
+    public readonly table: TableTable[] = [];
+    public readonly tableGroup: TableGroup[] = [];
     // Backgrounds
-    public readonly background: any[] = [];
-    public readonly backgroundFluff: any[] = [];
+    public readonly background: Background[] = [];
+    public readonly backgroundFluff: Fluff[] = [];
     // Feats
     public readonly feat: Feat[] = [];
+    public readonly optionalfeature: OptionalFeatures[] = [];
     // Skills
     public readonly skill: Skill[] = [];
     // Names
     public readonly name: SpeciesName[] = [];
     // Species
-    public readonly race: any[] = [];
-    public readonly subrace: any[] = [];
-    public readonly raceFluff: any[] = [];
+    public readonly race: Species[] = [];
+    public readonly subrace: Species[] = [];
+    public readonly raceFluff: SpeciesFluff[] = [];
     // Vehicles
     public readonly vehicle: Vehicle[] = [];
     public readonly vehicleUpgrade: VehicleUpgrade[] = [];
+    public readonly vehicleFluff: Fluff[] = [];
     // Objects
     public readonly object: DNDObject[] = [];
-    public readonly objectFluff: any[] = [];
+    public readonly objectFluff: Fluff[] = [];
     // Deities
     public readonly deity: Deity[] = [];
     // Cults
@@ -109,6 +170,21 @@ export class Databank {
     public readonly lifeBackground: LifeBackground[] = [];
     public readonly lifeTrinket: any[] = [];
 
+    // Source
+    public readonly source: Source[] = [];
+
+    public readonly metadata = new MetaData();
+
+    constructor() {
+        for (const file of this.getFiles()) {
+            if (file === 'meta') {
+                this.metadata.load(join(this.path(), 'meta.json'));
+            } else {
+                this.add(file);
+            }
+        }
+    }
+
     public get(key: string): any[] {
         if ((this as any)[key] === undefined) {
             throw new Error(`Databank error: key '${key}' not found!`);
@@ -116,187 +192,37 @@ export class Databank {
         return (this as any)[key];
     }
 
-    public add(path: string) {
-        // Keys that will not be handled
-        const keysToIgnore = ['_meta', '_test', 'linkedLootTables', 'raceFluffMeta'];
+    protected abstract path(): string;
 
-        const data = read(path);
-        for (const key of Object.keys(data)) {
-            if (keysToIgnore.includes(key)) continue;
-
-            this.get(key).push(...data[key]);
-        }
+    protected getFiles(): string[] {
+        return readdirSync(this.path()).map((f) => f.replaceAll('.json', ''));
     }
 
-    /**
-     * Spell sources are stored in a very special way, and thus need to be
-     * handled separately.
-     * @param source The source path of the spellcasters
-     */
-    public addSpellSource(path: string) {
-        const data = read(path);
-        for (const source of Object.keys(data)) {
-            for (const spell of Object.keys(data[source])) {
-                const classes = [...(data[source][spell].class || []), ...(data[source][spell].classVariant || [])];
-                const parsed = classes.map((class$) => ({
-                    spellName: spell,
-                    spellSource: source,
-                    casterName: class$.name,
-                    casterSource: class$.source,
-                }));
-                this.spellSource.push(...parsed);
-            }
-        }
+    public add(key: string) {
+        const filePath = join(this.path(), `${key}.json`);
+        const data = read(filePath);
+        this.get(key).push(...data);
     }
 
     public search(key: string, name: string, source: string): any | undefined {
         const entries = this.get(key);
         return entries.find((entry) => entry.name === name && entry.source === source);
     }
-
-    public getAllSources(): Set<string> {
-        const sources = new Set<string>();
-        const keys = Object.keys(this) as (keyof Databank)[];
-
-        for (const key of keys) {
-            const value = this[key];
-
-            if (!Array.isArray(value)) continue;
-            for (const entry of value) {
-                if (typeof entry === 'string') continue;
-                if (entry && 'source' in entry) {
-                    sources.add(entry.source);
-                }
-            }
-        }
-        return sources;
-    }
 }
 
 export class OfficialDatabank extends Databank {
-    private getFullPath(path: string): string {
-        return `5etools-src/data/${path}`;
+    protected path(): string {
+        return './5etools-collector/data/official';
     }
-
-    public override add(path: string) {
-        super.add(this.getFullPath(path));
-    }
-
-    public override addSpellSource(path: string) {
-        super.addSpellSource(this.getFullPath(path));
-    }
-
-    constructor() {
-        super();
-
-        this.add('actions.json');
-        this.add('adventures.json');
-        this.add('backgrounds.json');
-        this.add('bestiary/fluff-index.json');
-        this.add('bestiary/index.json');
-        this.add('books.json');
-        this.add('class/index.json');
-        this.add('conditionsdiseases.json');
-        this.add('cultsboons.json');
-        this.add('deities.json');
-        this.add('feats.json');
-        this.add('fluff-backgrounds.json');
-        this.add('fluff-conditionsdiseases.json');
-        this.add('fluff-items.json');
-        this.add('fluff-languages.json');
-        this.add('fluff-objects.json');
-        this.add('fluff-races.json');
-        this.add('fluff-trapshazards.json');
-        this.add('generated/gendata-tables.json');
-        this.add('generated/gendata-variantrules.json');
-        this.add('items-base.json');
-        this.add('items.json');
-        this.add('languages.json');
-        this.add('life.json');
-        this.add('magicvariants.json');
-        this.add('names.json');
-        this.add('objects.json');
-        this.add('races.json');
-        this.add('senses.json');
-        this.add('skills.json');
-        this.add('spells/fluff-index.json');
-        this.add('spells/index.json');
-        this.add('tables.json');
-        this.add('trapshazards.json');
-        this.add('variantrules.json');
-        this.add('vehicles.json');
-        this.addSpellSource('spells/sources.json');
-    }
-}
-
-export interface PartneredFilters {
-    partnered: boolean;
-    allowPHB2014: boolean;
 }
 
 export class PartneredDatabank extends Databank {
-    public readonly filters: PartneredFilters;
-
-    private getFullPath(path: string): string {
-        return `5etools-homebrew/data/${path}`;
+    protected path(): string {
+        return './5etools-collector/data/partnered';
     }
 
-    public override add(path: string) {
-        path = this.getFullPath(path);
-        const stats = lstatSync(path);
-        if (!stats.isDirectory()) {
-            throw new Error(`Partnered databank expects a directory, received '${path}'!`);
-        }
-
-        for (const file of readdirSync(path)) {
-            const fullPath = join(path, file);
-            const data = readJsonFile(fullPath);
-            this.addContents(data, fullPath);
-        }
-    }
-
-    private addContents(data: any, path: string): void {
-        if (!data._meta) {
-            throw new Error(`Partnered databank content expects a +meta field, but '${path}' didn't have one!`);
-        }
-
-        const sources: any[] = data._meta.sources ?? [];
-        const partnered = sources.some((source) => source.partnered ?? false);
-
-        if (this.filters.partnered && !partnered) return;
-        if (!this.filters.allowPHB2014 && data._meta.edition === 'classic') return;
-
-        const prefixesToIgnore = ['foundry'];
-        const keysToIgnore = [
-            '$schema',
-            '_meta',
-            '_test',
-            'linkedLootTables',
-            'raceFluffMeta',
-            'bookData',
-            'adventureData',
-            // The items below are not implemented *yet*, and should be TODO
-            'optionalfeature',
-            'reward',
-            'rewardFluff',
-            'deck',
-            'card',
-            'legendaryGroup',
-            'charoption',
-            'facility',
-        ];
-
-        for (const key of Object.keys(data)) {
-            if (prefixesToIgnore.some((prefix) => key.startsWith(prefix))) continue;
-            if (keysToIgnore.includes(key)) continue;
-
-            this.get(key).push(...data[key]);
-        }
-    }
-
-    constructor(official: OfficialDatabank, filters: PartneredFilters) {
+    constructor(official: OfficialDatabank) {
         super();
-        this.filters = { ...filters };
 
         // Load in some data from the official content
         // The data from the official sources is later removed by ParsedDatabank.removeSources
@@ -307,6 +233,7 @@ export class PartneredDatabank extends Databank {
             'itemTypeAdditionalEntries',
             'itemEntry',
             'itemMastery',
+            'itemFluff',
             'monster',
             'item',
             'monsterFluff',
@@ -316,41 +243,5 @@ export class PartneredDatabank extends Databank {
         for (const entryToCopy of entriesToCopy) {
             this.get(entryToCopy).push(...official.get(entryToCopy));
         }
-
-        // Load homebrew
-        this.add('action/');
-        this.add('adventure/');
-        this.add('background/');
-        this.add('baseitem/');
-        this.add('book/');
-        this.add('boon/');
-        this.add('charoption/');
-        this.add('class/');
-        this.add('collection/');
-        this.add('creature/');
-        this.add('cult/');
-        this.add('deck/');
-        this.add('deity/');
-        this.add('disease/');
-        this.add('facility/');
-        this.add('feat/');
-        this.add('hazard/');
-        this.add('item/');
-        this.add('language/');
-        this.add('magicvariant/');
-        this.add('makebrew/');
-        this.add('object/');
-        this.add('optionalfeature/');
-        this.add('psionic/');
-        this.add('race/');
-        this.add('recipe/');
-        this.add('reward/');
-        this.add('spell/');
-        this.add('subclass/');
-        this.add('subrace/');
-        this.add('table/');
-        this.add('trap/');
-        this.add('variantrule/');
-        this.add('vehicle/');
     }
 }

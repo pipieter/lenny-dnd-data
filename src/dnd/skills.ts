@@ -1,17 +1,6 @@
 import { Databank } from '../data';
-import { Description, parseAbilityScore, parseDescriptions, parseReprint, ReprintData } from '../parser';
-
-export interface Skill {
-    name: string;
-    source: string;
-    page: number;
-    srd52?: boolean;
-    srd?: boolean;
-    basicRules?: boolean;
-    reprintedAs?: string[];
-    ability: string;
-    entries: (string | any)[];
-}
+import { ReprintData, parseAbilityScore, parseReprint } from '../parse/base';
+import { Description, parseDescriptions } from '../parse/description';
 
 export interface ParsedSkill {
     name: string;

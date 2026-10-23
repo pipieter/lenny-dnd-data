@@ -1,16 +1,8 @@
-import { cleanDNDText } from '../clean';
 import { Databank } from '../data';
-import { Description, parseDescriptions, parseReprint, ReprintData } from '../parser';
-import { getCultsBoonsUrl } from '../urls';
-
-export interface Boon {
-    name: string;
-    source: string;
-    type: string;
-    ability?: any;
-    signatureSpells?: any;
-    entries: any[];
-}
+import { ReprintData, parseReprint } from '../parse/base';
+import { cleanDNDText } from '../parse/clean';
+import { Description, parseDescriptions } from '../parse/description';
+import { getCultsBoonsUrl } from '../parse/urls';
 
 export interface ParsedBoon {
     name: string;
@@ -23,28 +15,17 @@ export interface ParsedBoon {
     reprint: ReprintData | null;
 }
 
-export function getBoons(databank: Databank): ParsedBoon[] {
-    const boons = databank.boon.map((boon) => {
-        const name = boon.name;
-        const source = boon.source;
-        const url = getCultsBoonsUrl(boon.name, boon.source);
-        const type = boon.type;
-        const ability = boon.ability ? cleanDNDText(boon.ability.entry) : null;
-        const signatureSpells = boon.signatureSpells ? cleanDNDText(boon.signatureSpells.entry) : null;
-        const description = parseDescriptions('', boon.entries);
-        const reprint = parseReprint(boon);
-
+export function getBoons(data: Databank): ParsedBoon[] {
+    return data.boon.map((boon) => {
         return {
-            name,
-            source,
-            url,
-            type,
-            ability,
-            signatureSpells,
-            description,
-            reprint,
+            name: boon.name,
+            source: boon.source,
+            url: getCultsBoonsUrl(boon.name, boon.source),
+            type: boon.type,
+            ability: boon.ability ? cleanDNDText(boon.ability.entry) : (boon.abilityEntry ?? null),
+            signatureSpells: boon.signatureSpells ? cleanDNDText(boon.signatureSpells.entry) : null,
+            description: parseDescriptions('', boon.entries),
+            reprint: parseReprint(boon),
         };
     });
-
-    return boons;
 }

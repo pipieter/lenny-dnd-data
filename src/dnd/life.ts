@@ -1,22 +1,10 @@
-import { cleanDNDText } from '../clean';
+import { LifeBackground, LifeClass } from '../../5etools-collector/types/life';
 import { Databank } from '../data';
-
-export interface LifeClass {
-    name: string;
-    source: string;
-    reasons: string[];
-    other: { [key: string]: string[] };
-}
-
-export interface LifeBackground {
-    name: string;
-    source: string;
-    reasons: string[];
-}
+import { cleanDNDText } from '../parse/clean';
 
 export interface ParsedLife {
-    class: { [key: string]: LifeClass };
-    background: { [key: string]: LifeBackground };
+    class: Record<string, LifeClass>;
+    background: Record<string, LifeBackground>;
     trinket: string[];
 }
 

@@ -1,105 +1,12 @@
-import { cleanDNDText } from '../clean';
+import { handleCopy } from '../5etools-conversion/copy';
+import { VehicleBase, VehicleUpgrade } from '../../5etools-collector/types/vehicle';
 import { Databank } from '../data';
-import {
-    capitalize,
-    Description,
-    DescriptionType,
-    parseDescriptions,
-    parseReprint,
-    parseSizes,
-    ReprintData,
-} from '../parser';
-import { getVehiclesUrl, getVehicleTokenUrl } from '../urls';
-import { joinStringsWithAnd, joinStringsWithOr } from '../util';
-
-export interface Vehicle {
-    name: string;
-    source: string;
-    page: number;
-    srd: boolean;
-    vehicleType: string;
-    size?: string | string[];
-    dimensions?: string[];
-    terrain: string[];
-    capCrew: number;
-    capPassenger: number;
-    capCargo?: number;
-    cost?: number;
-    pace?: number | object;
-    speed?: number | object;
-    ac?: number;
-    str?: number;
-    dex?: number;
-    con?: number;
-    int?: number;
-    wis?: number;
-    cha?: number;
-    hp?: number | object;
-    immune?: string[];
-    conditionImmune?: string[];
-    hull?: {
-        ac: number;
-        acFrom?: string[];
-        hp: number;
-        dt: number;
-    };
-    control?: {
-        name: string;
-        ac: number;
-        hp: number;
-        entries: string[];
-    }[];
-    movement: {
-        name: string;
-        ac: number;
-        hp: number;
-        hpNote: string;
-        speed: {
-            mode: string;
-            entries: string[];
-        }[];
-    }[];
-    weapon?: {
-        name: string;
-        crew?: number;
-        ac?: number;
-        hp?: number;
-        count?: number;
-        costs: object;
-        entries: string[];
-        action: {
-            name: string;
-            entries: string[];
-        }[];
-    }[];
-    actionThresholds: object;
-    action?: (string | any)[];
-    trait: {
-        name: string;
-        entries: string[];
-    }[];
-    actionStation: {
-        name: string;
-        entries: string[];
-    }[];
-    reaction: {
-        name: string;
-        entries: string[];
-    }[];
-    entries: (string | any)[];
-    tokenCredit?: string;
-    hasToken: boolean;
-    hasFluff?: boolean;
-    hasFluffImages: boolean;
-}
-
-export interface VehicleUpgrade {
-    name: string;
-    source: string;
-    page: number;
-    upgradeType: string[];
-    entries: (string | any)[];
-}
+import { ReprintData, parseReprint, parseSizes, parseVehicleUpgradeType } from '../parse/base';
+import { cleanDNDText } from '../parse/clean';
+import { Description, DescriptionType, parseDescriptions } from '../parse/description';
+import { getVehicleTokenUrl, getVehiclesUrl } from '../parse/urls';
+import { Variables } from '../parse/variables';
+import { capitalize, joinStringsWithAnd, joinStringsWithOr } from '../util';
 
 export interface ParsedVehicle {
     name: string;
@@ -114,7 +21,7 @@ export interface ParsedVehicle {
     reprint: ReprintData | null;
 }
 
-function getVehiclePace(vehicle: Vehicle): string | null {
+function getVehiclePace(vehicle: VehicleBase): string | null {
     const parts: string[] = [];
 
     if (vehicle.speed) {
@@ -177,7 +84,7 @@ function getVehiclePace(vehicle: Vehicle): string | null {
     return cleanDNDText(result);
 }
 
-function getVehicleDescription(vehicle: Vehicle): Description[] {
+function getVehicleDescription(vehicle: VehicleBase): Description[] {
     const description: Description[] = [];
     if (vehicle.entries) description.push(...parseDescriptions('', vehicle.entries));
 
@@ -206,7 +113,7 @@ function getVehicleDescription(vehicle: Vehicle): Description[] {
     return description;
 }
 
-function getVehicleCreatureCapacity(vehicle: Vehicle): string | null {
+function getVehicleCreatureCapacity(vehicle: VehicleBase): string | null {
     const parts: string[] = [];
 
     if (vehicle.capCrew) parts.push(`${vehicle.capCrew} crew`);
@@ -219,27 +126,18 @@ function getVehicleCreatureCapacity(vehicle: Vehicle): string | null {
     return parts.join('\n');
 }
 
-function getVehicleDimensions(vehicle: Vehicle): string {
+function getVehicleDimensions(vehicle: VehicleBase): string {
     if (!vehicle.dimensions || vehicle.dimensions.length === 0) return '';
     return `(${vehicle.dimensions.join(' by ')})`;
 }
 
-function getVehicleType(vehicle: Vehicle): string {
-    const typeMap: Record<string, string> = {
-        OBJECT: 'Object',
-        SHIP: 'Ship',
-        SPELLJAMMER: 'Spelljammer',
-        INFWAR: 'Infernal War Machine',
-        CREATURE: 'Creature',
-        ELEMENTAL_AIRSHIP: 'Elemental Airship',
-    };
-    const type = typeMap[vehicle.vehicleType];
-    if (type) return type;
-
+function getVehicleType(vehicle: VehicleBase): string {
+    const type = Variables.getVehicleType(vehicle.vehicleType);
+    if (type !== vehicle.vehicleType) return type;
     throw `Unsupported vehicle type in ${vehicle.name}: ${vehicle.vehicleType}`;
 }
 
-function getVehicleSubtitle(vehicle: Vehicle): string {
+function getVehicleSubtitle(vehicle: VehicleBase): string {
     const parts: string[] = [];
     if (vehicle.size) parts.push(parseSizes(vehicle.size));
     parts.push(getVehicleType(vehicle));
@@ -248,23 +146,10 @@ function getVehicleSubtitle(vehicle: Vehicle): string {
     return parts.join(' ');
 }
 
-function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
-    const types: string[] = [];
-    const typeMap: Record<string, string> = {
-        'SHP:H': 'Ship Upgrade, Hull',
-        'SHP:M': 'Ship Upgrade, Movement',
-        'SHP:W': 'Ship Upgrade, Weapon',
-        'SHP:F': 'Ship Upgrade, Figurehead',
-        'SHP:O': 'Ship Upgrade, Miscellaneous',
-        'IWM:W': 'Infernal War Machine Variant, Weapon',
-        'IWM:A': 'Infernal War Machine Upgrade, Armor',
-        'IWM:G': 'Infernal War Machine Upgrade, Gadget',
-    };
-    for (const upgradeType of upgrade.upgradeType) {
-        const type = typeMap[upgradeType];
-        if (!type) throw `Unsupported vehicle upgrade type in ${upgrade.name}: ${upgrade.upgradeType}`;
-        types.push(type);
-    }
+function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade, data: Databank): string {
+    const types: string[] = upgrade.upgradeType.map((upgradeType: string) => {
+        return parseVehicleUpgradeType(upgradeType, upgrade.source, data);
+    });
 
     return joinStringsWithAnd(types, false);
 }
@@ -272,6 +157,7 @@ function getVehicleUpgradeSubtitle(upgrade: VehicleUpgrade): string {
 // MAIN COMMAND
 export function getVehicles(data: Databank): ParsedVehicle[] {
     const vehicles = data.vehicle.map((v) => {
+        v = handleCopy(v, data.vehicle);
         return {
             name: v.name,
             source: v.source,
@@ -290,7 +176,7 @@ export function getVehicles(data: Databank): ParsedVehicle[] {
         return {
             name: v.name,
             source: v.source,
-            subtitle: getVehicleUpgradeSubtitle(v),
+            subtitle: getVehicleUpgradeSubtitle(v, data),
             url: getVehiclesUrl(v.name, v.source),
             tokenUrl: null,
             creatureCapacity: null,

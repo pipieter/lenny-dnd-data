@@ -1,29 +1,30 @@
-import { getConditionsStatusesAndDiseases } from './dnd/conditions';
 import { Databank, OfficialDatabank, PartneredDatabank } from './data';
-import { getSpells } from './dnd/spells';
-import { getCreatures } from './dnd/creatures';
-import { StopwatchLogger } from './util';
-import { getClassesAndClassFeats } from './dnd/classes';
-import { getItems, getItemVariants } from './dnd/items';
-import { getRules } from './dnd/rules';
 import { getActions } from './dnd/actions';
-import { getFeats } from './dnd/feats';
-import { getLanguages } from './dnd/languages';
-import { getNames } from './dnd/names';
 import { getBackgrounds } from './dnd/backgrounds';
-import { getTables } from './dnd/tables';
-import { getSpecies } from './dnd/species';
-import { getSources } from './dnd/sources';
-import { getTrapsAndHazards } from './dnd/hazards';
-import { getObjects } from './dnd/objects';
-import { getVehicles } from './dnd/vehicles';
-import { getSkills } from './dnd/skills';
-import * as kleur from 'kleur';
-import { getDeities } from './dnd/deities';
-import { getCults } from './dnd/cults';
 import { getBoons } from './dnd/boons';
-import { ParsedDatabank } from './parsed';
+import { getClassesAndClassFeats } from './dnd/classes';
+import { getConditionsStatusesAndDiseases } from './dnd/conditions';
+import { getCreatures } from './dnd/creatures';
+import { getCults } from './dnd/cults';
+import { getDeities } from './dnd/deities';
+import { getFeats } from './dnd/feats';
+import { getTrapsAndHazards } from './dnd/hazards';
+import { getItemVariants, getItems, getMagicVariants } from './dnd/items';
+import { getLanguages } from './dnd/languages';
 import { getLife } from './dnd/life';
+import { getNames } from './dnd/names';
+import { getObjects } from './dnd/objects';
+import { getOptionalFeatures } from './dnd/optionalfeatures';
+import { getRules } from './dnd/rules';
+import { getSkills } from './dnd/skills';
+import { getSources } from './dnd/sources';
+import { getSpecies } from './dnd/species';
+import { getSpells } from './dnd/spells';
+import { getTables } from './dnd/tables';
+import { getVehicles } from './dnd/vehicles';
+import { ParsedDatabank } from './parsed';
+import { StopwatchLogger } from './util';
+import * as kleur from 'kleur';
 
 function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): ParsedDatabank {
     const parsed = new ParsedDatabank();
@@ -34,6 +35,9 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
 
     const itemVariants = getItemVariants(databank);
     stopwatch.log('Items variant retrieved');
+
+    const magicVariants = getMagicVariants(databank);
+    stopwatch.log('Magic Variants retrieved');
 
     const spells = getSpells(databank);
     stopwatch.log('Spells retrieved');
@@ -83,6 +87,9 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
     const objects = getObjects(databank);
     stopwatch.log('Objects retrieved');
 
+    const optionalfeatures = getOptionalFeatures(databank);
+    stopwatch.log('Optional features retrieved.');
+
     const vehicles = getVehicles(databank);
     stopwatch.log('Vehicles retrieved.');
 
@@ -100,6 +107,7 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
 
     parsed.items.push(...items);
     parsed.itemsvariants.push(...itemVariants);
+    parsed.magicvariants.push(...magicVariants);
     parsed.spells.push(...spells);
     parsed.conditions.push(...conditions);
     parsed.diseases.push(...diseases);
@@ -119,6 +127,7 @@ function parse(name: string, databank: Databank, stopwatch: StopwatchLogger): Pa
     parsed.traps.push(...traps);
     parsed.hazards.push(...hazards);
     parsed.objects.push(...objects);
+    parsed.optionalfeatures.push(...optionalfeatures);
     parsed.vehicles.push(...vehicles);
     parsed.skills.push(...skills);
     parsed.cults.push(...cults);
@@ -132,7 +141,7 @@ function main(): void {
     const stopwatch = new StopwatchLogger();
 
     const official = new OfficialDatabank();
-    const partnered = new PartneredDatabank(official, { partnered: true, allowPHB2014: false });
+    const partnered = new PartneredDatabank(official);
 
     stopwatch.log('Loaded databanks');
 
@@ -144,12 +153,6 @@ function main(): void {
 
     parsedOfficial.write('./generated/official/');
     parsedPartnered.write('./generated/partnered/');
-
-    // In case homebrew content needs to be enabled, uncomment the following lines
-    // const homebrew = new PartneredDatabank(official, { partnered: false, allowPHB2014: false });
-    // const parsedHomebrew = parse('homebrew', homebrew, stopwatch);
-    // parsedHomebrew.removeSources(officialSources)
-    // parsedHomebrew.write("./generated/homebrew/")
 
     stopwatch.log('Data written to files');
     stopwatch.stop();

@@ -1,7 +1,10 @@
-import { applySingleTemplate } from './template';
+import { Base } from '../../5etools-collector/types/internal/base';
+import { Copyable, CopyableVersioned, ModBody, Versioned } from '../../5etools-collector/types/internal/copy';
+import { Variables } from '../parse/variables';
+import { title } from '../util';
 import { crToProficiencyBonus } from './parser';
 import { ascSortLower } from './sort';
-import { rawData } from './rawdata';
+import { applySingleTemplate } from './template';
 
 // TODO _templates (e.g. Zox Clammersham). This will most likely require data going global
 
@@ -20,7 +23,7 @@ function addMod_replaceArr(base: any, key: string, entry: any): void {
     for (let i = 0; i < base[key].length; i++) {
         // If replace is given by name
         if (typeof entry.replace === 'string') {
-            if (base[key][i].name === entry.replace) {
+            if (base[key][i] === entry.replace || base[key][i].name === entry.replace) {
                 base[key].splice(i, 1, ...items);
                 return;
             }
@@ -95,7 +98,7 @@ function addMod_addSkills(base: any, skills: any) {
 
     for (const [skill, mode] of Object.entries(skills)) {
         // mode: 1 = proficient; 2 = expert
-        const ability = rawData.getSkillAbility(skill)!;
+        const ability = Variables.getSkillAbility(skill)!;
         const abilityScore = base[ability];
         const proficiency = crToProficiencyBonus(base.cr);
         const total = proficiency * (mode as number) + abilityScore;
@@ -248,6 +251,13 @@ function addMod_setProp(base: any, mod: any): void {
     base[mod.prop] = mod.value;
 }
 
+function addMod_addSenses(base: any, mod: any): void {
+    const senses = mod.senses.map((sense: { type: string; range: any }) => {
+        return `${title(sense.type)} ${sense.range} ft.`;
+    });
+    base.senses.push(...senses);
+}
+
 function addMod_Single(base: any, key: any, mod: any): void {
     switch (mod.mode) {
         case 'replaceArr':
@@ -265,6 +275,8 @@ function addMod_Single(base: any, key: any, mod: any): void {
             return addMod_replaceTxt(base, key, mod);
         case 'addSkills':
             return addMod_addSkills(base, mod.skills);
+        case 'addSenses':
+            return addMod_addSenses(base, mod);
         case 'replaceSpells':
             return addMod_replaceSpells(base, mod);
         case 'addSpells':
@@ -306,28 +318,20 @@ function addPreserve(copy: any, parent: any, preserve: any): void {
     }
 }
 
-export function handleCopy(base: any, entries: any[]): any {
+export function handleCopy<T extends Base>(base: T | Copyable<T>, entries: Unresolved<T>[]): T {
     let copy = structuredClone(base); // Fields will be changed, so making a deep clone is important for future usages
+    if (!('_copy' in copy)) return copy;
 
-    if (!copy._copy) return copy;
+    const copyName = copy._copy.name?.trim().toLowerCase();
+    const copySource = copy._copy.source.trim().toLowerCase();
 
     let parent = entries.find((entry) => {
-        const entryName = entry.name.trim().toLowerCase();
-        const entrySource = entry.source.trim().toLowerCase();
-
-        const copyName = copy._copy.name.trim().toLowerCase();
-        const copySource = copy._copy.source.trim().toLowerCase();
-
+        const entryName = entry.name?.trim().toLowerCase();
+        const entrySource = entry.source?.trim().toLowerCase() ?? 'xdmg'; // TODO error in Studious Blade of the Guardian|AU, has to be handled manually here for now
         return entryName === copyName && entrySource === copySource;
     });
-    if (!parent) {
-        throw `Could not find parent for ${copy.name}|${copy.source}`;
-    }
-
-    // Handle parent being a copy itself
-    if (parent._copy) {
-        parent = handleCopy(parent, entries);
-    }
+    if (!parent) throw `Could not find parent for ${copy.name}|${copy.source} -> ${copyName}|${copySource}`;
+    if ('_copy' in parent) parent = handleCopy(parent, entries); // Handle parent being a copy itself
 
     const mod = copy._copy._mod || {};
     const preserve = copy._copy._preserve || {};
@@ -338,34 +342,48 @@ export function handleCopy(base: any, entries: any[]): any {
     addMod(copy, mod);
     addPreserve(copy, parent, preserve);
 
-    delete copy._copy;
-
-    return copy;
+    delete (copy as any)._copy;
+    return copy as T;
 }
 
-export function handleVersions(base: any): any[] {
+export function handleVersions<T extends Base>(base: T | Versioned<T>): T[] {
     base = structuredClone(base);
-    if (!base._versions) return [];
+    if (!('_versions' in base)) return [];
 
-    const versions = [];
+    const versions: T[] = [];
     for (const baseVersion of base._versions) {
+        if (!('_implementations' in baseVersion)) continue;
         for (const implementation of baseVersion._implementations || []) {
-            let version = structuredClone(base);
-            let abstract = structuredClone(baseVersion._abstract) || {};
+            let version: T | Versioned<T> = structuredClone(base);
+            let abstract: ModBody | undefined = structuredClone(baseVersion._abstract);
 
             for (const variable of Object.keys(implementation._variables)) {
-                version = applySingleTemplate(version, variable, implementation._variables[variable]);
-                abstract = applySingleTemplate(abstract, variable, implementation._variables[variable]);
+                const entry: string = variadic(implementation._variables[variable])[0];
+                version = applySingleTemplate(version, variable, entry);
+                abstract = applySingleTemplate(abstract, variable, entry);
             }
 
-            delete version._versions;
-            version.name = abstract.name || version.name;
-            version.source = abstract.source || version.source;
+            delete (version as any)._versions;
+            version = version as unknown as T;
 
-            addMod(version, abstract._mod || {});
+            version.name = abstract?.name ?? version.name;
+            version.source = abstract?.source ?? version.source;
+
+            addMod(version, abstract?._mod || {});
             versions.push(version);
         }
     }
 
     return versions;
+}
+
+export type Unresolved<T extends Base> = T | Copyable<T> | Versioned<T> | CopyableVersioned<T>;
+export function resolveToBase<T extends Base>(base: Unresolved<T>, entries: Unresolved<T>[]): T[] {
+    const additional: T[] = [];
+    let result = structuredClone(base);
+    result = handleCopy(base as T | Copyable<T>, entries);
+    if ('_versions' in base) {
+        additional.push(...handleVersions(base as Versioned<T>));
+    }
+    return [result, ...additional];
 }
