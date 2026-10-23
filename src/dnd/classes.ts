@@ -64,6 +64,7 @@ export interface ParsedClass {
     source: string;
     url: string;
 
+    maxLevel: number;
     primaryAbility: string | null;
     spellcastAbility: string | null;
     startingProficiencies: ParsedStartingProficiencies | null;
@@ -210,6 +211,10 @@ function parseStartingProficiencies(data: ClassBase): ParsedStartingProficiencie
     };
 }
 
+function findMaxClassLevel(feats: ParsedClassFeature[]) {
+    return Math.max(...feats.map((feat) => feat.level));
+}
+
 function parseClass(
     data: ClassBase,
     features: ClassFeatureDictionary,
@@ -219,6 +224,8 @@ function parseClass(
     const name = data.name;
     const source = data.source;
     const url = getClassesUrl(name, source);
+    const key = getKey(name, source);
+    const maxLevel = findMaxClassLevel(features[key]);
 
     const primaryAbility = parsePrimaryAbility(data);
     const spellcastAbility = data.spellcastingAbility ? parseAbilityScore(data.spellcastingAbility) : null;
@@ -226,7 +233,7 @@ function parseClass(
     const hp = data.hd?.faces ?? null; // The faces-value is also the starting hp value. The HP-die's 'number' value is always 1 (1dN)
     const baseInfo = parseBaseInfo(data);
 
-    const levelResources = parseLevelResources(data);
+    const levelResources = parseLevelResources(data, maxLevel);
     const levelFeatures = parseLevelFeatures(name, source, features);
     const { subclassLevelFeatures, subclassUnlockLevel } = parseSubclassData(subclasses, subclassFeatures);
 
@@ -236,6 +243,7 @@ function parseClass(
         name,
         source,
         url,
+        maxLevel,
         subclassUnlockLevel,
         primaryAbility,
         spellcastAbility,
@@ -515,9 +523,9 @@ function parseSpellSlotTables(data: ClassBase): DescriptionTable[] {
     return spellSlotTables;
 }
 
-function parseSpellLevelResources(data: ClassBase): string[] {
-    // Initialize an array of 20 arrays, one for each level (1-20)
-    const spellResources: string[][] = Array.from({ length: 20 }, () => []);
+function parseSpellLevelResources(data: ClassBase, maxLevel: number): string[] {
+    // Initialize an array of arrays, one for each level
+    const spellResources: string[][] = Array.from({ length: maxLevel }, () => []);
 
     if (data.cantripProgression) {
         for (let i = 0; i < data.cantripProgression.length; i++) {
@@ -590,13 +598,13 @@ function parseClassResources(data: ClassBase): string[] {
     return classResources;
 }
 
-function parseLevelResources(data: ClassBase): PaginatedDescriptions {
+function parseLevelResources(data: ClassBase, maxLevel: number): PaginatedDescriptions {
     const spellSlotTables = parseSpellSlotTables(data);
-    const spellResources = parseSpellLevelResources(data);
+    const spellResources = parseSpellLevelResources(data, maxLevel);
     const classResources = parseClassResources(data);
 
     const levelResources: PaginatedDescriptions = {};
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < maxLevel; i++) {
         const level = i + 1;
         levelResources[level] = [];
 
