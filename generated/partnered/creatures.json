@@ -66134,6 +66134,139 @@
   "reprint": null
  },
  {
+  "name": "Dread Linnorm",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Gargantuan dragon",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#dread%20linnorm_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Two-Headed Bringer of Destruction*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Whether burrowed into the hearts of the Heroic Isles on Ysgard or lurking within the desolate depths of the Material Plane, dread linnorms are a challenge faced only by the bravest and most capable warriors. Dread linnorms have two heads, one that rains fire down on enemies and another that freezes them with icy breath."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Ysgard holds the highest concentration of dread linnorms, and heroes desperate to prove their mettle travel to the outer plane in the hopes of vanquishing one. No young linnorms have been seen in centuries, meaning those that remain are ancient, isolated, and notoriously difficult to reason with. Dread linnorms are incredibly territorial and eagerly tear trespassers limb from limb."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "26",
+      "10",
+      "22",
+      "14",
+      "12",
+      "18"
+     ],
+     [
+      "Mod.",
+      "+8",
+      "+0",
+      "+6",
+      "+2",
+      "+1",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+8",
+      "+6",
+      "+6",
+      "+2",
+      "+7",
+      "+4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 16",
+     "**HP**: 231 (14d20 + 84)",
+     "**Speed**: 40 Ft., Burrow 40 Ft., Fly 60 Ft.",
+     "**Initiative**: 2",
+     "**Skills**: athletics +14, perception +7, stealth +6",
+     "**Resistances**: cold, fire",
+     "**Senses**: Blindsight 60 ft., Darkvision 120 ft.",
+     "**Languages**: Common, Draconic",
+     "**CR**: 17"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Legendary Resistance (3/Day)",
+    "type": "text",
+    "value": "If the linnorm fails a saving throw, it can choose to succeed instead."
+   },
+   {
+    "name": "Magic Resistance",
+    "type": "text",
+    "value": "The linnorm has Advantage on saving throws against spells and other magical effects."
+   },
+   {
+    "name": "Tunneler",
+    "type": "text",
+    "value": "The linnorm can burrow through solid rock at half its Burrow Speed and leaves a 10-foot-diameter tunnel in its wake."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The dread linnorm makes one Bite attack and two Rend attacks."
+   },
+   {
+    "name": "Bite",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +14, reach 10 ft. *Hit:* 11 (**1d6 + 8**) Piercing damage plus 3 (**1d6**) damage of a type chosen by the linnorm: Cold or Fire. If the target is a creature, it gains 1 Exhaustion level, and the linnorm regains 5 (1d10) Hit Points. While the target has any Exhaustion levels, it automatically fails its saving throws against the linnorm's Twin Breath."
+   },
+   {
+    "name": "Rend",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +14, reach 10 ft. *Hit:* 18 (**3d6 + 8**) Slashing damage."
+   },
+   {
+    "name": "Twin Breath (Recharge 5-6)",
+    "type": "text",
+    "value": "*Constitution Saving Throw:* DC 20, each creature in a 60-foot Cone. *Failure:* 27 (**5d10**) Cold damage and 27 (**5d10**) Fire damage. *Success* Half damage only."
+   }
+  ],
+  "bonusActions": [],
+  "reprint": null
+ },
+ {
   "name": "Dread Skeljaskra",
   "source": "NorthlandsWorldbook",
   "subtitle": "Gargantuan monstrosity",
@@ -83859,6 +83992,129 @@
    }
   ],
   "bonusActions": [],
+  "reprint": null
+ },
+ {
+  "name": "Firre",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Medium celestial",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#firre_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Freedom-Loving Patron of the Arts*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Firres are celestial beings with flaming hair and fiery eyes who defend art, creativity, and artists themselves. Their features are reminiscent of elves, but firres appear most similar to their fey counterparts, eladrin. Firres can transform into pillars of celestial fire, a form they take to rush to the defense of art and the innocent."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Firres most often roam the Upper Planes but might travel to the Material Plane when seeking art of great renown or a minstrel or poet of great skill. In places where freedom of expression is suppressed or great evil imposes tyranny on the masses, firres chronicle the injustice and support rebellions."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "20",
+      "14",
+      "12",
+      "12",
+      "16",
+      "18"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+2",
+      "+1",
+      "+1",
+      "+3",
+      "+4"
+     ],
+     [
+      "Save.",
+      "+5",
+      "+4",
+      "+1",
+      "+3",
+      "+5",
+      "+4"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 14",
+     "**HP**: 93 (17d8 + 17)",
+     "**Speed**: 30 Ft.",
+     "**Skills**: arcana +3, performance +6, persuasion +8",
+     "**Resistances**: acid, cold, fire",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Celestial, Common, Elvish",
+     "**CR**: 4"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Fire Aura (Fire Form Only)",
+    "type": "text",
+    "value": "At the end of each of the firre's turns, each creature in a 10-foot Emanation originating from the firre takes 5 (**1d10**) Fire damage. Flammable objects in the Emanation start burning."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack (Eladrin Form Only)",
+    "type": "text",
+    "value": "The firre makes a Burning Blade attack and uses Flaming Gaze."
+   },
+   {
+    "name": "Burning Blade (Eladrin Form Only)",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +7, reach 5 ft. *Hit:* 8 (**1d6 + 5**) Slashing damage plus 3 (**1d6**) Fire damage."
+   },
+   {
+    "name": "Flaming Gaze",
+    "type": "text",
+    "value": "*Dexterity Saving Throw:* DC 14, one creature the firre can see within 60 feet. *Failure:* 11 (**2d6 + 4**) Fire damage, and the target has the Blinded condition until the start of the firre's next turn."
+   }
+  ],
+  "bonusActions": [
+   {
+    "name": "Shape-Shift",
+    "type": "text",
+    "value": "The firre shape-shifts into a Medium column of fire (Speed 50 ft.), or it returns to its eladrin form. Its game statistics are the same in each form, except for its Speed. Anything it is wearing transforms with it. While in fire form, the firre can't manipulate objects."
+   }
+  ],
   "reprint": null
  },
  {
@@ -264306,6 +264562,128 @@
     "value": "Vali takes the Disengage or Hide action."
    }
   ],
+  "reprint": null
+ },
+ {
+  "name": "Valkyrie",
+  "source": "DnDBeyondDrops",
+  "subtitle": "Medium celestial",
+  "summonedBySpell": null,
+  "summonedByClass": null,
+  "tokenUrl": null,
+  "url": "https://5e.tools/bestiary.html#valkyrie_dndbeyonddrops",
+  "description": [],
+  "fluffInfo": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Evil-Smiting, Winged Warrior*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Born from the blood spilled from gods in battles, valkyries are fierce warriors who serve benevolent deities in the Outer Planes. When not on the battlefield, valkyries reside in Ysgard, where they train with one another, skilled petitioners, and aspiring warriors. Occasionally those beset by rampaging evil call valkyries to aid them on the Material Plane, imploring them to assist in a battle too great for their own armies. Those who fight on behalf of tyrants or monsters fear the day that they must stand against valkyries."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Valkyries wield the power of divine justice, inspiring knights and paladins across the multiverse. While stalwart fighters alone, many valkyries ride __Pegasi__ into battle."
+   }
+  ],
+  "stats": {
+   "name": "Stats",
+   "type": "table",
+   "table": {
+    "type": "table",
+    "title": "Stats",
+    "headers": [
+     "",
+     "STR",
+     "DEX",
+     "CON",
+     "INT",
+     "WIS",
+     "CHA"
+    ],
+    "rows": [
+     [
+      "Score",
+      "20",
+      "14",
+      "14",
+      "10",
+      "13",
+      "16"
+     ],
+     [
+      "Mod.",
+      "+5",
+      "+2",
+      "+2",
+      "+0",
+      "+1",
+      "+3"
+     ],
+     [
+      "Save.",
+      "+5",
+      "+2",
+      "+6",
+      "+0",
+      "+5",
+      "+3"
+     ]
+    ]
+   }
+  },
+  "details": {
+   "name": "",
+   "type": "list",
+   "list": {
+    "type": "list",
+    "caption": "",
+    "entries": [
+     "**AC**: 18",
+     "**HP**: 143 (22d8 + 44)",
+     "**Speed**: 30 Ft.",
+     "**Initiative**: 1",
+     "**Resistances**: lightning, thunder",
+     "**Senses**: Darkvision 60 ft.",
+     "**Languages**: Common plus two other languages",
+     "**CR**: 9"
+    ]
+   }
+  },
+  "traits": [
+   {
+    "name": "Aura of Bravery",
+    "type": "text",
+    "value": "Creatures of the valkyrie's choice in a 30-foot Emanation originating from it have Immunity to the Charmed and Frightened condition while there."
+   },
+   {
+    "name": "Mounted Adept",
+    "type": "text",
+    "value": "While mounted and without the Incapacitated condition, the valkyrie and its mount have Advantage on Dexterity saving throws, and the valkyrie can force an attack targeted at its mount to target the valkyrie instead."
+   }
+  ],
+  "actions": [
+   {
+    "name": "Multiattack",
+    "type": "text",
+    "value": "The valkyrie makes three attacks, using Longsword or Radiant Javelin in any combination."
+   },
+   {
+    "name": "Longsword",
+    "type": "text",
+    "value": "*Melee Attack Roll:* +9, reach 5 ft. *Hit:* 14 (**2d8 + 5**) Slashing damage plus 4 (**1d8**) Radiant damage."
+   },
+   {
+    "name": "Radiant Javelin",
+    "type": "text",
+    "value": "*Ranged Attack Roll:* +9, range 60 ft. *Hit:* 12 (**2d6 + 5**) Piercing damage plus 7 (**2d6**) Radiant damage."
+   }
+  ],
+  "bonusActions": [],
   "reprint": null
  },
  {
