@@ -82,23 +82,24 @@ function addMod_insertArr(base: any, key: string, entry: any): void {
 
 function addMod_replaceTxt(base: any, key: string, entry: any): void {
     base[key] = structuredClone(base[key]) || [];
-
     const replace = entry.replace.slice(1);
     const to = entry.with;
 
-    if (typeof base[key] === 'string') {
-        base[key] = base[key].replaceAll(replace, to);
-        return;
-    }
-
-    if (typeof base[key] === 'object') {
-        for (const subkey of Object.keys(base[key])) {
-            addMod_replaceTxt(base[key], subkey, entry);
+    function replaceText(value: any, props?: string[]): any {
+        if (typeof value === 'string') return value.replaceAll(replace, to);
+        if (typeof value === 'object' || value !== null) {
+            for (const subkey of Object.keys(value)) {
+                const child = value[subkey];
+                const isSelectedProperty = props?.includes(subkey) ?? false;
+                if (props?.length && !isSelectedProperty && (child === null || typeof child !== 'object')) continue;
+                value[subkey] = replaceText(child, isSelectedProperty ? undefined : props);
+            }
+            return value;
         }
-        return;
+        throw `addMod_replaceTxt: Unsupported replace type '${typeof value}'`;
     }
 
-    throw `addMod_replaceTxt: Unsupported replace type '${typeof base[key]}'`;
+    base[key] = replaceText(base[key], entry.props);
 }
 
 // utils.js:5468 _doMod_addSkills
@@ -335,6 +336,7 @@ export function handleCopy<T extends Base>(base: T | Copyable<T>, entries: Unres
     const copySource = copy._copy.source.trim().toLowerCase();
 
     let parent = entries.find((entry) => {
+        if (entry === base) return false;
         const entryName = entry.name?.trim().toLowerCase();
         const entrySource = entry.source?.trim().toLowerCase() ?? 'xdmg'; // TODO error in Studious Blade of the Guardian|AU, has to be handled manually here for now
         return entryName === copyName && entrySource === copySource;
