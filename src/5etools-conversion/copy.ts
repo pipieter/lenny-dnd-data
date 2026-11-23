@@ -34,6 +34,15 @@ function addMod_replaceArr(base: any, key: string, entry: any): void {
             if (entry.replace.index !== undefined) {
                 base[key].splice(entry.replace.index, 1, ...items);
                 return;
+            } else if (entry.replace.regex !== undefined) {
+                const regex = new RegExp(entry.replace.regex);
+                const index = base[key].findIndex((item: any) =>
+                    regex.test(typeof item === 'string' ? item : item?.name)
+                );
+                if (index !== -1) {
+                    base[key].splice(index, 1, ...items);
+                    return;
+                }
             } else {
                 throw `addMod_replaceArr: Invalid replace type '${JSON.stringify(entry.replace)}'`;
             }
