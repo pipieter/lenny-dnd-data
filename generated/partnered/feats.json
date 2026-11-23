@@ -1,5 +1,31 @@
 [
  {
+  "name": "Action Hero",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/feats.html#action%20hero_partnereddddod",
+  "type": "General",
+  "prerequisite": "Lv. 12+ and 16 Strength",
+  "abilityIncrease": "Increase your Strength or Dexterity score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "Ability Score Increase",
+    "type": "text",
+    "value": "Increase your Strength or Dexterity by 1, to a maximum of 20."
+   },
+   {
+    "name": "Catch Jaws",
+    "type": "text",
+    "value": "If a creature hits you with an attack that uses its mouth (i.e. a bite or maw attack), you can use your Reaction to reduce any incoming damage by 1d10 + your level."
+   },
+   {
+    "name": "Heroic Moment",
+    "type": "text",
+    "value": "The first time you fail an *Athletics* check each day, you can choose to succeed it instead."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Adroit Crafter",
   "source": "GrimHollowLairsEtharis",
   "url": "https://5e.tools/feats.html#adroit%20crafter_grimhollowlairsetharis",
@@ -280,6 +306,40 @@
   "reprint": null
  },
  {
+  "name": "Arcane Enchanter",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/feats.html#arcane%20enchanter_partnereddddod",
+  "type": "General",
+  "prerequisite": "Lv. 12+ and Spellcasting or Pact Magic Feature",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Weapon**: For the next minute that weapon deals **1d6** additional damage of any damage type that your spells can deal. At level 16, you may add your Proficiency Bonus to this additional damage.",
+      "**Armour**: For the next minute that armour provides the wearer with Resistance to one damage type that your spells can deal. At level 16, you may select two damage types that this armour provides Resistance to.",
+      "**Wondrous**: For the next minute, that item provides the bearer Advantage on Saving Throws and checks to prevent or end a condition of your choice. At level 16, you may select two conditions that this item provides Advantage for."
+     ]
+    }
+   },
+   {
+    "name": "Ability Score Increase",
+    "type": "text",
+    "value": "Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20."
+   },
+   {
+    "name": "Enchant",
+    "type": "text",
+    "value": "As an Action, you can select an item you can see and touch, and enchant it. You may only have a single item enchanted at any given point, and when you use this Action, any previous enchants you have made end. The item gains one of the following enchantments based on its type:"
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Art of Disappearing",
   "source": "TLotRR",
   "url": "https://5e.tools/feats.html#art%20of%20disappearing_tlotrr",
@@ -533,6 +593,32 @@
     "name": "",
     "type": "text",
     "value": "In addition, as an action you can spend a craft slot and choose a beast that you can see within 30 feet of you. It must be able to see and hear you. Make a Wisdom (*Animal Handling*) check, contested by the target's Wisdom (*Insight*) check. If you win the contest, the beast is charmed by you for 24 hours or until you or your companions do anything harmful to it. If you obtain a magical success and the target is a beast with a challenge rating of 1/8 or lower, you can make the beast permanently charmed by you, until you dismiss it, harm it, or make another beast permanently charmed by you. A beast automatically wins the contest if its Intelligence score is 4 or higher. When you reach 5th level, you can affect one additional beast, or two additional beasts at 9th level."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Behaviourist",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/feats.html#behaviourist_partnereddddod",
+  "type": "General",
+  "prerequisite": "Lv. 4+ and 12 Intelligence",
+  "abilityIncrease": "Increase your Intelligence score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "Ability Score Increase",
+    "type": "text",
+    "value": "Increase your Intelligence by 1, to a maximum of 20."
+   },
+   {
+    "name": "Animal Behaviour Expert",
+    "type": "text",
+    "value": "You have expertise in *Animal Handling* checks."
+   },
+   {
+    "name": "Bespoke Saddles",
+    "type": "text",
+    "value": "Creatures you tame gain +1 to their AC, attack rolls, and damage."
    }
   ],
   "reprint": null
@@ -2375,6 +2461,32 @@
     "name": "Bottled Life",
     "type": "text",
     "value": "When you finish a Long Rest, you can perform a 1-minute ritual to transfer some of your life essence into a vessel for later use. Expend a number of Hit Point Dice up to your Proficiency Bonus, and bleed into a vial of water or other liquid. As a Bonus Action, a creature can drink the vial to roll the Hit Dice you expended. The creature regains a number of Hit Points equal to the total rolled plus its Constitution modifier. The vial remains potent until you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Crocodile Wrangler",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/feats.html#crocodile%20wrangler_partnereddddod",
+  "type": "General",
+  "prerequisite": "Lv. 8+, 13 Strength and 13 Charisma",
+  "abilityIncrease": "Increase your Strength or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "Ability Score Increase",
+    "type": "text",
+    "value": "Increase your Strength or Constitution by 1, to a maximum of 20."
+   },
+   {
+    "name": "\"What a beauty!\"",
+    "type": "text",
+    "value": "You have Advantage on *Animal Handling* checks and Beasts that you attempt to Grapple have Disadvantage on their saving throw to resist that Grapple."
+   },
+   {
+    "name": "\"Crikey!\"",
+    "type": "text",
+    "value": "Any Large, Medium, or Small beast you are Grappling cannot select you as a target for its attacks."
    }
   ],
   "reprint": null
@@ -6477,6 +6589,32 @@
   "reprint": null
  },
  {
+  "name": "Miner",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/feats.html#miner_partnereddddod",
+  "type": "Origin",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Portable Lamp",
+    "type": "text",
+    "value": "You possess a physical lamp that weighs 1 lb. and can produce 20 ft. of Bright Light and a further 20 ft. of Dim Light. The lamp attaches to your belt/armour and does not need to be carried."
+   },
+   {
+    "name": "Familiar Rumble",
+    "type": "text",
+    "value": "While underground, you have Tremorsense 30 ft. If you already have Tremorsense, its range is increased by 20 ft."
+   },
+   {
+    "name": "\"Cave-in!\"",
+    "type": "text",
+    "value": "You have Advantage on any skill check or Saving Throw to escape falling natural rocks (i.e. from cliffs, caves, tunnels, etc., but not from traps or buildings)."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Minor Corruption",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/feats.html#minor%20corruption_obojimatallgrass",
@@ -6702,6 +6840,32 @@
       "You can cause your cheeks to swell and bubble out as your mouth fills with liquid poison. As an action, you can spit several globs of poison in quick succession, targeting a number of creatures equal to your proficiency bonus. Each target must be within 30 feet of you and must make a Constitution saving throw (DC 8 + your Constitution modifier + your proficiency bonus). A target takes poison damage equal to 1d8 + your proficiency bonus on a failed save, or half as much damage on a successful one."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Naturalist",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/feats.html#naturalist_partnereddddod",
+  "type": "Origin",
+  "prerequisite": null,
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "Taxonomist",
+    "type": "text",
+    "value": "When rolling a *Survival* check to identify the remains of any beast, plant, or humanoid, any roll of a 1-9 is treated as a 10."
+   },
+   {
+    "name": "Fieldwork",
+    "type": "text",
+    "value": "You have Expertise in Survival checks when tracking a beast."
+   },
+   {
+    "name": "Functional Morphology",
+    "type": "text",
+    "value": "The first time you encounter a beast that you have not seen before, you are able to discern either its AC, maximum Hit Points, or one Resistance it has (your choice)."
    }
   ],
   "reprint": null
@@ -8395,6 +8559,32 @@
   "reprint": null
  },
  {
+  "name": "Stone-Whisperer",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/feats.html#stone-whisperer_partnereddddod",
+  "type": "General",
+  "prerequisite": "Lv. 4+ and 12 Wisdom",
+  "abilityIncrease": "Increase your Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "Ability Score Increase",
+    "type": "text",
+    "value": "Increase your Wisdom by 1, to a maximum of 20."
+   },
+   {
+    "name": "Stone Whisper",
+    "type": "text",
+    "value": "You can cast the __Stone Shape__ spell once per day without requiring material components and without using a spell slot. This is increased to three times per day at level 10, five times per day at level 15, and an unlimited number of times per day at level 20."
+   },
+   {
+    "name": "Whisper Back",
+    "type": "text",
+    "value": "You have Tremorsense 10 ft."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Stout-Hearted",
   "source": "TLotRR",
   "url": "https://5e.tools/feats.html#stout-hearted_tlotrr",
@@ -9801,6 +9991,32 @@
       ]
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Volcanologist",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/feats.html#volcanologist_partnereddddod",
+  "type": "General",
+  "prerequisite": "Lv. 8+",
+  "abilityIncrease": "Increase your Intelligence or Constitution score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "Ability Score Increase",
+    "type": "text",
+    "value": "Increase your Intelligence or Constitution by 1, to a maximum of 20."
+   },
+   {
+    "name": "Heat Handler",
+    "type": "text",
+    "value": "You have Resistance to Fire damage."
+   },
+   {
+    "name": "Assess Volcano",
+    "type": "text",
+    "value": "If you can see a volcano, you may take 10 minutes to assess it. If you do, you are able to determine whether it is likely to erupt in either the next >100 years, 10 years, 1 year, 30 days, 7 days, or 24 hours. If the volcano is going to erupt in the next 7 days or less, you are able to determine the minimum safe distance from it."
    }
   ],
   "reprint": null

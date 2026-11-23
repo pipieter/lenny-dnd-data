@@ -13,7 +13,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "One patch of arcane effluence covers a 5-foot square, and creatures within 30 feet of it can smell its acrid, unnatural scent. A creature that comes into contact with arcane effluence takes 3 (1d6) Acid damage. The creature takes the damage again at the start of each of its turns until the effluence is scraped off (requiring an action) or destroyed."
+    "value": "One patch of arcane effluence covers a 5-foot square, and creatures within 30 feet of it can smell its acrid, unnatural scent. A creature that comes into contact with arcane effluence takes 3 (**1d6**) Acid damage. The creature takes the damage again at the start of each of its turns until the effluence is scraped off (requiring an action) or destroyed."
    },
    {
     "name": "",
@@ -100,7 +100,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "If a patch of bile lichen is touched, it releases a cloud of spores that fills a 10-foot Cube and dissipates after 1d4 hours. When a creature enters the cloud for the first time on a turn or starts its turn there, the creature makes a DC 14 Constitution saving throw, taking 11 (2d10) Poison damage and contracting __Lichen Plague__ on a failed save (see \"Magical Contagions\" later in this chapter). On a successful save, the creature takes half as much damage only."
+    "value": "If a patch of bile lichen is touched, it releases a cloud of spores that fills a 10-foot Cube and dissipates after 1d4 hours. When a creature enters the cloud for the first time on a turn or starts its turn there, the creature makes a DC 14 Constitution saving throw, taking 11 (**2d10**) Poison damage and contracting __Lichen Plague__ on a failed save (see \"Magical Contagions\" later in this chapter). On a successful save, the creature takes half as much damage only."
    }
   ],
   "reprint": null
@@ -556,7 +556,11 @@
     "value": "A creature that falls into water or another liquid can use its reaction to make a DC 15 Strength (*Athletics*) or Dexterity (*Acrobatics*) check to hit the surface head or feet first. On a successful check, any damage resulting from the fall is halved."
    }
   ],
-  "reprint": null
+  "reprint": {
+   "name": "Falling",
+   "source": "XPHB",
+   "tag": null
+  }
  },
  {
   "name": "Falling onto a Creature",
@@ -680,12 +684,12 @@
    {
     "name": "",
     "type": "text",
-    "value": "A creature that comes into contact with glittermoss makes a DC 12 Constitution saving throw. On a failed save, the creature takes 11 (2d10) Radiant damage and has the Blinded condition. While Blinded in this way, the creature is illuminated by glittering spores and sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success."
+    "value": "A creature that comes into contact with glittermoss makes a DC 12 Constitution saving throw. On a failed save, the creature takes 11 (**2d10**) Radiant damage and has the Blinded condition. While Blinded in this way, the creature is illuminated by glittering spores and sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success."
    },
    {
     "name": "",
     "type": "text",
-    "value": "Glittermoss spores can leap to nearby creatures. While an affected creature is Blinded due to glittermoss, any creature that starts its turn within the Bright Light the affected creature sheds makes a DC 12 Constitution saving throw, taking 11 (2d10) Radiant damage on a failed save or half as much damage on a successful one."
+    "value": "Glittermoss spores can leap to nearby creatures. While an affected creature is Blinded due to glittermoss, any creature that starts its turn within the Bright Light the affected creature sheds makes a DC 12 Constitution saving throw, taking 11 (**2d10**) Radiant damage on a failed save or half as much damage on a successful one."
    },
    {
     "name": "",
@@ -1115,7 +1119,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A lightning storm lasts for 1 hour. After each minute spent in the area of a lightning storm, a creature rolls **1d6**; on a 1, lightning streaks down to strike the creature. The creature makes a DC 15 Dexterity saving throw, taking **3d10** Lightning damage on a failed save or half as much damage on a successful one."
+    "value": "A lightning storm lasts for 1 hour. After each minute spent in the area of a lightning storm, a creature rolls **1d6**; on a 1, lightning streaks down to strike the creature. The creature makes a DC 15 Dexterity saving throw, taking ****3d10**** Lightning damage on a failed save or half as much damage on a successful one."
    },
    {
     "name": "Detecting Lightning Storms",
@@ -1538,7 +1542,7 @@
    {
     "name": "At Higher Levels",
     "type": "text",
-    "value": "You can scale this hazard for higher levels by increasing the Bludgeoning damage as follows: 22 (4d10) at levels 5–10, 55 (10d10) at levels 11–16, and 99 (18d10) at levels 17–20."
+    "value": "You can scale this hazard for higher levels by increasing the Bludgeoning damage as follows: 22 (**4d10**) at levels 5–10, 55 (**10d10**) at levels 11–16, and 99 (**18d10**) at levels 17–20."
    }
   ],
   "reprint": null
@@ -1615,7 +1619,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Any creature that enters a space within 5 feet of shadowbark for the first time on a turn or starts its turn there makes a DC 12 Constitution saving throw. On a failed save, the creature takes 5 (1d10) Necrotic damage and can't regain Hit Points until the start of its next turn. On a successful save, the creature takes half as much damage only."
+    "value": "Any creature that enters a space within 5 feet of shadowbark for the first time on a turn or starts its turn there makes a DC 12 Constitution saving throw. On a failed save, the creature takes 5 (**1d10**) Necrotic damage and can't regain Hit Points until the start of its next turn. On a successful save, the creature takes half as much damage only."
    },
    {
     "name": "",
@@ -2059,7 +2063,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "A patch of witchbriars occupies a 10-foot Cube and has AC 11; HP 30; and Immunity to Bludgeoning, Piercing, and Psychic damage. When a creature casts a spell using a spell slot within 10 feet of witchbriars, thorny vines reach out to entwine the creature. The creature must succeed on a DC 14 Strength saving throw or have the Grappled condition (escape DC 14). Druids automatically succeed on this saving throw. While the target is Grappled in this way, it has the Restrained condition and takes 11 (2d10) Piercing damage at the start of each of its turns. One patch of witchbriars can grapple up to four creatures at a time."
+    "value": "A patch of witchbriars occupies a 10-foot Cube and has AC 11; HP 30; and Immunity to Bludgeoning, Piercing, and Psychic damage. When a creature casts a spell using a spell slot within 10 feet of witchbriars, thorny vines reach out to entwine the creature. The creature must succeed on a DC 14 Strength saving throw or have the Grappled condition (escape DC 14). Druids automatically succeed on this saving throw. While the target is Grappled in this way, it has the Restrained condition and takes 11 (**2d10**) Piercing damage at the start of each of its turns. One patch of witchbriars can grapple up to four creatures at a time."
    },
    {
     "name": "",

@@ -12891,6 +12891,61 @@
   ]
  },
  {
+  "name": "Evolution/Devolution",
+  "source": "PartneredDDDoD",
+  "level": "Level 2",
+  "school": "Transmutation",
+  "castingTime": "Action",
+  "range": "Touch",
+  "components": "V, S, M (a pinch of dirt)",
+  "material": "a pinch of dirt",
+  "duration": "10 minutes",
+  "url": "https://5e.tools/spells.html#evolution%2Fdevolution_partnereddddod",
+  "image": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "By touching a creature, you can cause it to take on attributes of its ancestors or descendants. A creature may accept these changes willingly or, if not, they must make a Wisdom Saving Throw against your spell save DC. On a failed save, you may pick one of the following changes and apply it to the creature's stat block."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Increase or decrease the damage of all of the creature's attacks by 1d4.",
+      "Increase or decrease the creature's speed by 20 ft.",
+      "The creature gains a climbing speed equal to half its speed, or its climbing speed is reduced by 30 ft. (it can be reduced to 0).",
+      "The creature gains a flying speed of 10 ft., or its flying speed is reduced by 30 ft. (it can be reduced to 0).",
+      "Select one of the creature's attacks or abilities that deals damage and change the damage type of that attack. If it deals Bludgeoning, Piercing, or Slashing damage, you may change it to Acid or Poison damage. If it deals any other damage type, you may change it to Bludgeoning, Piercing, or Slashing damage.",
+      "The creature gains Darkvision 60 ft., or reduces its Darkvision (if it has it) by 60 ft. (it can be reduced to 0). If this creature does not have Darkvision, you may alternatively reduce its maximum normal vision range to 60 ft. instead, causing anything beyond 60 ft. from it to only be visible as amorphous blurry shapes.",
+      "Increase the creature's maximum and current hit points by 1d4 + 4, or reduce its maximum and current hit points by 1d4 + 4 (to a minimum of 1)."
+     ]
+    }
+   },
+   {
+    "name": "Using a Higher-Level Spell Slot",
+    "type": "text",
+    "value": "When you cast this spell using a spell slot of 3rd level or higher, you may pick another Trait to change for each slot above 2nd level. You cannot pick the same Trait more than once."
+   }
+  ],
+  "classes": [],
+  "reprint": null,
+  "damageInflict": [],
+  "damageResist": [],
+  "damageVulnerable": [],
+  "damageImmune": [],
+  "conditionInflict": [],
+  "conditionImmune": [],
+  "savingThrow": [
+   "wisdom"
+  ],
+  "affectsCreatureType": [],
+  "scaledDamage": null
+ },
+ {
   "name": "Extinguish",
   "source": "NorthlandsWorldbook",
   "level": "Level 1",

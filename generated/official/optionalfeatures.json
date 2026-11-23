@@ -319,6 +319,21 @@
   "reprint": null
  },
  {
+  "name": "Battle Shout",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#battle%20shout_wow",
+  "prerequisite": null,
+  "type": "Maneuver, Battle Master",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action, you can expend one __Combat Superiority__ to shout encouragement to allies within 30 feet of you that can hear you. Until the start of your next turn, each affected ally adds the __Combat Superiority__ to the damage roll the next time it hits with a melee attack."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Beast Speech",
   "source": "PHB",
   "url": "https://5e.tools/optionalfeatures.html#beast%20speech_phb",
@@ -568,6 +583,36 @@
   "reprint": null
  },
  {
+  "name": "Call of the Void",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#call%20of%20the%20void_wow",
+  "prerequisite": "Lv. 5 Warlock and Pact Of The Legion",
+  "type": "Eldritch Invocation",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you cast __Find Familiar__ using Pact of the Legion, you can choose to summon a __Fel Imp__ familiar or a __Voidwalker__. In addition, you gain the following benefits."
+   },
+   {
+    "name": "Quick Attack",
+    "type": "text",
+    "value": "As a Bonus Action, you can command the familiar to take the Attack action."
+   },
+   {
+    "name": "Your Spell Attack",
+    "type": "text",
+    "value": "The familiar uses your spell attack bonus for its attacks."
+   },
+   {
+    "name": "Shadow Shield",
+    "type": "text",
+    "value": "When your Voidwalker familiar takes damage, you can take a Reaction to grant it Resistance against that damage."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Careful Spell",
   "source": "PHB",
   "url": "https://5e.tools/optionalfeatures.html#careful%20spell_phb",
@@ -778,6 +823,21 @@
   "reprint": null
  },
  {
+  "name": "Curse of Corruption",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#curse%20of%20corruption_wow",
+  "prerequisite": "Lv. 2 Warlock",
+  "type": "Eldritch Invocation",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When an enemy starts its turn cursed by a Warlock spell you cast (such as __Hex__), it must succeed on a Charisma saving throw or take Necrotic damage equal to your Charisma modifier."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Defense",
   "source": "PHB",
   "url": "https://5e.tools/optionalfeatures.html#defense_phb",
@@ -795,6 +855,21 @@
    "source": "XPHB",
    "tag": "feat"
   }
+ },
+ {
+  "name": "Demoralizing Shout",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#demoralizing%20shout_wow",
+  "prerequisite": null,
+  "type": "Maneuver, Battle Master",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action, you can expend one __Combat Superiority__ to shout, demoralizing enemies within 30 feet of you that can hear you. Until the end of your next turn, each affected enemy subtracts the __Combat Superiority__ from the damage roll the next time it hits a target other than you with a melee attack."
+   }
+  ],
+  "reprint": null
  },
  {
   "name": "Devil's Sight",
@@ -1083,7 +1158,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra **1d8** Force damage to the target, plus another 1d8 per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller."
+    "value": "Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra **1d8** Force damage to the target, plus another **1d8** per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller."
    }
   ],
   "reprint": null
@@ -1344,6 +1419,21 @@
     "name": "",
     "type": "text",
     "value": "As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Expendable Minions",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#expendable%20minions_wow",
+  "prerequisite": "Lv. 9 Warlock",
+  "type": "Eldritch Invocation",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When your familiar or a summoned creature you control dies, you or another creature within 60 feet of you regains Hit Points equal to your Warlock level plus your Charisma modifier."
    }
   ],
   "reprint": null
@@ -1926,6 +2016,21 @@
   }
  },
  {
+  "name": "Health Funnel",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#health%20funnel_wow",
+  "prerequisite": "Lv. 2 Warlock",
+  "type": "Eldritch Invocation",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action, you can expend any number of your unexpended Hit Dice to roll those dice, add your Charisma modifier to each die, and total the rolls. Your familiar or another Fiend you command gains that many Temporary Hit Points."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Heightened Spell",
   "source": "PHB",
   "url": "https://5e.tools/optionalfeatures.html#heightened%20spell_phb",
@@ -1977,6 +2082,21 @@
    "source": "EFA",
    "tag": "item"
   }
+ },
+ {
+  "name": "Heroic Leap",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#heroic%20leap_wow",
+  "prerequisite": null,
+  "type": "Maneuver, Battle Master",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Bonus Action, you can expend one __Combat Superiority__ to jump a number of feet up to your Strength score. Creatures within 5 feet of you when you land make a Strength saving throw, taking Bludgeoning damage equal to the __Combat Superiority__ roll on a failed save, or half as much damage on a successful one."
+   }
+  ],
+  "reprint": null
  },
  {
   "name": "Hill Rune",
@@ -2167,6 +2287,21 @@
   "reprint": null
  },
  {
+  "name": "Legion Summoning",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#legion%20summoning_wow",
+  "prerequisite": "Lv. 9 Warlock and Pact Of The Legion",
+  "type": "Eldritch Invocation",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You can cast __Planar Binding__ without expending a spell slot. When you do, you summon a __Felguard__, a __Felhound__, an __Incubus__, or a __Succubus__, and that Fiend becomes the target of the spell. Once you cast the spell in this way, you can't do so again until you finish a Long Rest."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Lessons of the First Ones",
   "source": "XPHB",
   "url": "https://5e.tools/optionalfeatures.html#lessons%20of%20the%20first%20ones_xphb",
@@ -2338,6 +2473,21 @@
   "reprint": null
  },
  {
+  "name": "Master Demonologist",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#master%20demonologist_wow",
+  "prerequisite": "Lv. 5 Warlock",
+  "type": "Eldritch Invocation",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Any Fiends you command also deal extra damage to the target of your __Hex__ spell as if they were you."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Master of Myriad Forms",
   "source": "PHB",
   "url": "https://5e.tools/optionalfeatures.html#master%20of%20myriad%20forms_phb",
@@ -2499,6 +2649,21 @@
     "name": "",
     "type": "text",
     "value": "You can cast __Silent Image__ without expending a spell slot."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Mortal Strike",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#mortal%20strike_wow",
+  "prerequisite": null,
+  "type": "Maneuver, Battle Master",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you hit a creature with an attack roll, you can expend one __Combat Superiority__ to prevent the target from healing. Add the __Combat Superiority__ to the attack's damage roll. The target can't regain Hit Points until the end of your next turn."
    }
   ],
   "reprint": null
@@ -2675,6 +2840,26 @@
     "name": "",
     "type": "text",
     "value": "Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Pact of the Legion",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#pact%20of%20the%20legion_wow",
+  "prerequisite": null,
+  "type": "Eldritch Invocation",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You learn the __Find Familiar__ spell and can cast it as a Magic action without expending a spell slot. When you cast the spell, you summon a __Fel Imp__ familiar."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack with its Reaction."
    }
   ],
   "reprint": null
@@ -4307,6 +4492,21 @@
     "name": "",
     "type": "text",
     "value": "You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Warding Maneuver",
+  "source": "WoW",
+  "url": "https://5e.tools/optionalfeatures.html#warding%20maneuver_wow",
+  "prerequisite": null,
+  "type": "Maneuver, Battle Master",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you or a creature you can see within 5 feet of you is hit by an attack roll, you can take a Reaction and expend one __Combat Superiority__ if you're wielding a Melee weapon or a Shield. Add the __Combat Superiority__ to the target's AC against the triggering attack. If the attack still hits, the target has Resistance against the attack's damage."
    }
   ],
   "reprint": null

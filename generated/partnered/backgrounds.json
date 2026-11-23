@@ -4165,6 +4165,284 @@
   "reprint": null
  },
  {
+  "name": "Geologist",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/backgrounds.html#geologist_partnereddddod",
+  "abilities": [
+   "Constitution",
+   "Strength",
+   "Intelligence"
+  ],
+  "feat": "Tough or Miner",
+  "skills": "History and Nature",
+  "tools": "Mason's Tools, Cartographer's Tools, Excavator's Tools, and Analysis Tools",
+  "languages": "Primordial (backgrounds don't usually provide languages, but we feel that it is fitting here)",
+  "equipment": "Choose A or B: (A) a Shovel, a Miner's Pick, a Hammer and chisel, a reinforced Backpack that increases your carry weight by 20 lb., gemstones worth 25 GP, and an additional 10 GP in coins.; or (B) 50 GP",
+  "description": [
+   {
+    "name": "Bonus Features",
+    "type": "text",
+    "value": "**Eye for Faults:** Years of studying geology allows you to easily select weak points in rock, allowing you to break it and tunnel with ease. You have a tunnelling speed of 5 ft."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rock Knowledge:** You can identify any rocks or gemstones at a glance, and know their value."
+   },
+   {
+    "name": "Rock Specialism",
+    "type": "text",
+    "value": "Your previous work as a geologist has given you a type of rock that you're particularly passionate about. Roll a d8 and consult the table below or choose whichever you find most appealing."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d8",
+      "Rock Type",
+      "Personality Quirk"
+     ],
+     "rows": [
+      [
+       "1",
+       "Fluvial",
+       "You love the sediments of rivers and streams and relish the opportunity to spend time wading in them. You're aware of the dangers of flooding."
+      ],
+      [
+       "2",
+       "Volcanic",
+       "The dramatic power of volcanoes excites you. You love to explore volcanic settings, but are wary of their dangers."
+      ],
+      [
+       "3",
+       "Calcareous",
+       "You love delving into natural caves, particularly those hollowed out by groundwater, but are very observant of potential cave-ins."
+      ],
+      [
+       "4",
+       "Shale",
+       "Deepwater sediments are your speciality. You jump at the opportunity to deep-dive into water, particularly in the ocean, and are a great swimmer."
+      ],
+      [
+       "5",
+       "Plutonic",
+       "You greatly enjoy walking on rolling hills, moors, and tors, and will favour taking longer routes if they take you over this terrain."
+      ],
+      [
+       "6",
+       "Metamorphic",
+       "You are particularly excited by sharp jagged metamorphosed rocks and can navigate them with ease."
+      ],
+      [
+       "7",
+       "Seams",
+       "You have a fixation on rare minerals and gemstones that can be found within rich rock seams. You will go out of your way to acquire rare gemstones."
+      ],
+      [
+       "8",
+       "Orogenous",
+       "You love mountains and mountain-climbing, and are very good at it. You always want to climb to the very top, if you can."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Suggested Tools",
+    "type": "text",
+    "value": "[See Excavator's Tools's stats here](https://5e.tools/items.html#excavator's%20tools_partnereddddod)"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "[See Analysis Tools's stats here](https://5e.tools/items.html#analysis%20tools_partnereddddod)"
+   },
+   {
+    "name": "Characteristics",
+    "type": "text",
+    "value": "Geologists come in many varieties. Below are some suggestions for traits, ideals, bonds, and flaws that a geologist may have."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d8",
+      "Personality Trait"
+     ],
+     "rows": [
+      [
+       "1",
+       "Exploration is everything, I have to get out there and find new things."
+      ],
+      [
+       "2",
+       "I fancy myself as an adventurer, but I'm not as surefooted as I think I am."
+      ],
+      [
+       "3",
+       "I'm more of a bookworm, reading about other people's work and adventures."
+      ],
+      [
+       "4",
+       "Given the option between taking a tunnel and climbing a mountain, I'll always take the tunnel!"
+      ],
+      [
+       "5",
+       "If it's in the ground, it's anyone's fair game!"
+      ],
+      [
+       "6",
+       "I find anything geology related interesting and pick up little rocks everywhere I go."
+      ],
+      [
+       "7",
+       "I don't like clean-nosed, stuck-up scientists of other fields."
+      ],
+      [
+       "8",
+       "We dig rocks, then we drink lots!"
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Ideals"
+     ],
+     "rows": [
+      [
+       "1",
+       "I'm an academic at heart, I want to know everything there is about the deep past."
+      ],
+      [
+       "2",
+       "I'm a naturalist at heart. Look at the beauty of our world–isn't it remarkable?!"
+      ],
+      [
+       "3",
+       "I love spelunking. There're treasures beyond measure down in the depths."
+      ],
+      [
+       "4",
+       "I only work as a contractor. I've got to get the job done, everything else is secondary."
+      ],
+      [
+       "5",
+       "I'm on the run as a lawbreaker. They'll never find me if I'm deep underground."
+      ],
+      [
+       "6",
+       "I'm going to find the riches of a lifetime–there's gold in them-there mountains, I can feel it."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Bonds"
+     ],
+     "rows": [
+      [
+       "1",
+       "My parent was a famous geologist–I'm following in their footsteps."
+      ],
+      [
+       "2",
+       "Our world is sacred, both in the present and past."
+      ],
+      [
+       "3",
+       "My mentor expects big things from me, I don't want to disappoint."
+      ],
+      [
+       "4",
+       "I want to see firsthand the most impressive geological events - eruptions, earthquakes, and landslides!"
+      ],
+      [
+       "5",
+       "If I can find the biggest, most precious gem, perhaps I can finally impress the person of my dreams."
+      ],
+      [
+       "6",
+       "The ancient past has mesmerised me, ever since I was a child."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Flaws"
+     ],
+     "rows": [
+      [
+       "1",
+       "I can only sleep in total darkness, usually with my head buried under something."
+      ],
+      [
+       "2",
+       "I can't resist expensive gemstones. They must be mine!"
+      ],
+      [
+       "3",
+       "I get overly obsessed with tunnelling, always wanting to dig deeper."
+      ],
+      [
+       "4",
+       "I'm surprisingly destructive–getting to the rocks is what matters, things in the way be damned!"
+      ],
+      [
+       "5",
+       "I have no regard for the laws of the land when it comes to my research."
+      ],
+      [
+       "6",
+       "My only loyalty is to whoever is paying me for my work."
+      ]
+     ]
+    }
+   }
+  ],
+  "prerequisite": null,
+  "fluff": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Geologists are those who have dedicated a portion of their lives to the study of rocks and earthly processes. They are able to see beyond the immediately obvious and interpret the landscape around them, providing valuable field knowledge.*"
+   }
+  ],
+  "skillProficiencies": {
+   "options": [
+    "history",
+    "nature"
+   ],
+   "amount": "all"
+  },
+  "reprint": null
+ },
+ {
   "name": "Ghostlight Passenger",
   "source": "CrookedMoon14",
   "url": "https://5e.tools/backgrounds.html#ghostlight%20passenger_crookedmoon14",
@@ -6032,6 +6310,274 @@
    "options": [
     "arcana",
     "persuasion"
+   ],
+   "amount": "all"
+  },
+  "reprint": null
+ },
+ {
+  "name": "Palaeontologist",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/backgrounds.html#palaeontologist_partnereddddod",
+  "abilities": [
+   "Wisdom",
+   "Intelligence",
+   "Constitution"
+  ],
+  "feat": "Naturalist or Miner",
+  "skills": "Animal Handling and Nature",
+  "tools": "Mason's Tools, Cartographer's Tools, and Research Scrolls",
+  "languages": "One language of your choice (backgrounds don't usually provide languages, but we feel that it is fitting here)",
+  "equipment": "Choose A or B: (A) a Shovel, a Miner's Pick, a brush, plaster of Paris with medical bandages, a fist-sized fossil (bone fragment, claw, skull, ammonite, or trilobite), a traveller's Backpack, a Tankard, and 20 GP in coins; or (B) 50 GP",
+  "description": [
+   {
+    "name": "Bonus Features",
+    "type": "text",
+    "value": "**Natural Historian:** You have Advantage on *History* checks that involve animals or the natural world."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Hazard Training:** You are acutely aware of geological hazards and have proficiency on Saving Throws against geological hazards (i.e. falling from cliffs, escaping landslides, cave-ins, etc.)."
+   },
+   {
+    "name": "Palaeontological Specialism",
+    "type": "text",
+    "value": "In addition to being a general palaeontologist, you also specialise in one particular area of palaeontology. Roll a d6 and consult the table below or choose whichever you find most appealing."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Specialisation",
+      "Personality Quirk"
+     ],
+     "rows": [
+      [
+       "1",
+       "Theropoda",
+       "You can instantly recognise if a beast is carnivorous and likely to be Hostile to you if you approach it further."
+      ],
+      [
+       "2",
+       "Cladistics",
+       "You can tell if a beast has been unnaturally altered or is not behaving of its own accord."
+      ],
+      [
+       "3",
+       "Ornithischia",
+       "Years of studying herbivores has given you insight into their behaviour. You can tell if they're likely to be Hostile when approached."
+      ],
+      [
+       "4",
+       "Palaeobotany",
+       "You are able to recognise if a plant or plant-based creature may be dangerous."
+      ],
+      [
+       "5",
+       "Arthropoda",
+       "You can tell if large arthropods (i.e. giant spiders, giant scorpions, giant crabs etc.) inhabit an area."
+      ],
+      [
+       "6",
+       "Taphonomy",
+       "When encountering a carcass, you can easily tell how long the creature has been dead for."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Suggested Tools",
+    "type": "text",
+    "value": "[See Research Scrolls's stats here](https://5e.tools/items.html#research%20scrolls_partnereddddod)"
+   },
+   {
+    "name": "Characteristics",
+    "type": "text",
+    "value": "Palaeontologists come in many varieties. Below are some suggestions for traits, ideals, bonds, and flaws that a palaeontologist may have."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*We have designed these bonds around the idea that palaeontologists have a group of organisms that they are most excited to encounter, but feel free to come up with a different bond if you prefer.*"
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d8",
+      "Personality Traits"
+     ],
+     "rows": [
+      [
+       "1",
+       "I talk about fossils all the time, much to the annoyance of my friends."
+      ],
+      [
+       "2",
+       "I like to watch modern animal behaviour to learn how ancient animals behaved."
+      ],
+      [
+       "3",
+       "I'm always looking at the ground in front of me, just in case I spot a fossil."
+      ],
+      [
+       "4",
+       "I sometimes find myself staring into the distance, imagining what this area may have looked like millions of years ago."
+      ],
+      [
+       "5",
+       "Whenever we visit a city, the museum is the first place I want to go."
+      ],
+      [
+       "6",
+       "I love to doodle sketches of dinosaurs."
+      ],
+      [
+       "7",
+       "I keep fossils as jewellery and wear them all the time."
+      ],
+      [
+       "8",
+       "Whenever I meet a new creature, I'm always trying to figure out its place in the tree of life."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Bonds"
+     ],
+     "rows": [
+      [
+       "1",
+       "Theropoda. Sharp-toothed predatory dinosaurs excite you the most."
+      ],
+      [
+       "2",
+       "Sauropoda. Giant long-necked dinosaurs excite you the most."
+      ],
+      [
+       "3",
+       "Thyreophora. Heavily armoured dinosaurs excite you the most."
+      ],
+      [
+       "4",
+       "Marginocephalian. Crested and horned dinosaurs excite you the most."
+      ],
+      [
+       "5",
+       "Pterosauria. Flying reptiles excite you the most."
+      ],
+      [
+       "6",
+       "Sauropterygia. Marine reptiles excite you the most."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Ideals"
+     ],
+     "rows": [
+      [
+       "1",
+       "I see myself as a 'Gentleman Scientist'. Studying these ancient creatures is a pastime that should be reserved for the academic elite."
+      ],
+      [
+       "2",
+       "Anyone with a trowel and the right attitude can do it! Let's get in the dirt."
+      ],
+      [
+       "3",
+       "There are wonders in our past that few people know about–I want to show them to everyone!"
+      ],
+      [
+       "4",
+       "I'm a big fossil fan. Big teeth and big claws are what matter to me."
+      ],
+      [
+       "5",
+       "I want to be the name behind an awesome dinosaur."
+      ],
+      [
+       "6",
+       "I'm a fossil dealer. These fossils have great value, and I can make my living selling them, even if it has to be done shadily."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Flaws"
+     ],
+     "rows": [
+      [
+       "1",
+       "I'm a Splitter. Whenever I meet a non-humanoid creature, I always assume it's a new species and am wary of new abilities and behaviours it might have."
+      ],
+      [
+       "2",
+       "I'm a Lumper. I often assume that groups of similar beasts will all behave in the same way."
+      ],
+      [
+       "3",
+       "I'm overly experimental, setting up little vials of acid with rocks sizzling in them wherever I rest."
+      ],
+      [
+       "4",
+       "I have a clumsy swing. I'm prone to hurting myself when trying to smash rocks."
+      ],
+      [
+       "5",
+       "I'm a bit vacant. My head is so stuck in the past that I often lose interest in conversation and daydream about ancient worlds."
+      ],
+      [
+       "6",
+       "I'm jaded. I've seen so many bones and carcasses that the sight of a dead body doesn't bother me in the slightest."
+      ]
+     ]
+    }
+   }
+  ],
+  "prerequisite": null,
+  "fluff": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Palaeontologists are those who have dedicated a portion of their lives to the study of ancient organisms and environments. They are able to interpret how creatures may behave, based on their morphology.*"
+   }
+  ],
+  "skillProficiencies": {
+   "options": [
+    "animal handling",
+    "nature"
    ],
    "amount": "all"
   },
@@ -8250,6 +8796,274 @@
    "options": [
     "athletics",
     "medicine"
+   ],
+   "amount": "all"
+  },
+  "reprint": null
+ },
+ {
+  "name": "Time-Lost",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/backgrounds.html#time-lost_partnereddddod",
+  "abilities": [
+   "Constitution",
+   "Wisdom",
+   "Strength"
+  ],
+  "feat": "Alert or Naturalist",
+  "skills": "Survival and Nature",
+  "tools": "Leatherworker's Tools and Survivalist's Kit",
+  "languages": "Archosauric (PartneredDDDoD) (backgrounds don't usually provide languages, but we feel that it is fitting here)",
+  "equipment": "Choose A or B: (A) a bone-dagger, Club, simple loincloth, Herbalism Kit, a gold necklace worth 30 GP, and a pair of gold bracelets worth 7 GP; or (B) 50 GP",
+  "description": [
+   {
+    "name": "Bonus Features",
+    "type": "text",
+    "value": "**Way of the Wild:** While in an environment that is the same type as your origin, you are not slowed by Difficult Terrain generated by that environment."
+   },
+   {
+    "name": "Environmental Origin",
+    "type": "text",
+    "value": "In your previous time, you inhabited a particular environment and are most familiar with that terrain type. Roll a d8 and consult the table below or choose whichever you find most appealing."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d8",
+      "Environment Origin",
+      "Personality Quirk"
+     ],
+     "rows": [
+      [
+       "1",
+       "Jungle",
+       "You are unbothered by trekking through thick undergrowth."
+      ],
+      [
+       "2",
+       "Forest",
+       "You have a fondness of foraging for wild berries in forests."
+      ],
+      [
+       "3",
+       "Desert",
+       "The desert sun feels wonderful on your face and you like to bask in it."
+      ],
+      [
+       "4",
+       "Tundra",
+       "Getting chilly outside makes for a warmer, more welcoming, hearth at home."
+      ],
+      [
+       "5",
+       "Mountainous",
+       "You enjoy taking the difficult route, so long as it gives the best view."
+      ],
+      [
+       "6",
+       "Riverside",
+       "Catching fish is one of your favourite pastimes and is second nature to you."
+      ],
+      [
+       "7",
+       "Seafaring",
+       "You love diving and collect exotic shells you find on the seafloor."
+      ],
+      [
+       "8",
+       "Plains",
+       "You always enjoy the calming breeze blowing across the plains."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "Suggested Tools",
+    "type": "text",
+    "value": "[See Survivalist's Kit's stats here](https://5e.tools/items.html#survivalist's%20kit_partnereddddod)"
+   },
+   {
+    "name": "Characteristics",
+    "type": "text",
+    "value": "The time-lost come from many different periods of time, environments, and cultures. However, they all share a lack of knowledge of the modern world. How they respond to that lack of knowledge differs–they may find things frightening, exciting, or uninteresting."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d8",
+      "Personality Trait"
+     ],
+     "rows": [
+      [
+       "1",
+       "I'm fearful of new technologies."
+      ],
+      [
+       "2",
+       "I love to collect beautiful feathers and adorn my clothes/armour with them."
+      ],
+      [
+       "3",
+       "Gold is commonplace to me, and I find it boring."
+      ],
+      [
+       "4",
+       "I find slaying certain creatures reprehensible."
+      ],
+      [
+       "5",
+       "I venerate creatures of great power."
+      ],
+      [
+       "6",
+       "Every new piece of technology is extremely interesting to me, but also confusing."
+      ],
+      [
+       "7",
+       "The sounds of a city keep me awake at night."
+      ],
+      [
+       "8",
+       "I keep the teeth of monsters I slay on a necklace or bracelet."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Bonds"
+     ],
+     "rows": [
+      [
+       "1",
+       "I must find a way to return to my time."
+      ],
+      [
+       "2",
+       "My ancestors are out there somewhere. I must find them and reunite."
+      ],
+      [
+       "3",
+       "This new world is so strange, I'd like to explore what it has become."
+      ],
+      [
+       "4",
+       "There's a bounty of wealth that I never could have imagined, I'd like to sample it."
+      ],
+      [
+       "5",
+       "I'm the last of my kin. I must re-establish my clan/tribe."
+      ],
+      [
+       "6",
+       "I left without settling a score. I must find out whether my old enemy was destroyed."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Ideals"
+     ],
+     "rows": [
+      [
+       "1",
+       "I see myself as nature's protector. I want to bond with and protect the modern wilds."
+      ],
+      [
+       "2",
+       "I see myself as an explorer and there are so many new things to discover!"
+      ],
+      [
+       "3",
+       "I'm an expert hunter. I want to find this time's most dangerous beast, and hunt it!"
+      ],
+      [
+       "4",
+       "I'd like to return home. I need to learn about time travel and how I got here."
+      ],
+      [
+       "5",
+       "I seek to gain as much power and prominence as I can in this new time."
+      ],
+      [
+       "6",
+       "I miss the good ol' days. I want to change this world to be more like my time."
+      ]
+     ]
+    }
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "d6",
+      "Flaws"
+     ],
+     "rows": [
+      [
+       "1",
+       "In my savage world, those who fell behind were left behind. I keep to this code."
+      ],
+      [
+       "2",
+       "I'm fearful of technology, it seems like evil magic to me."
+      ],
+      [
+       "3",
+       "I'm from a violent time, I act quickly and violently, worrying about consequences later."
+      ],
+      [
+       "4",
+       "I'm naive about the dangers of this world."
+      ],
+      [
+       "5",
+       "I think these modern comforts make people weak."
+      ],
+      [
+       "6",
+       "I'm gluttonous with the bounty of all this exotic food!"
+      ]
+     ]
+    }
+   }
+  ],
+  "prerequisite": null,
+  "fluff": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*The time-lost are those unfortunate individuals who have been propelled through time, either by accident or against their will. They find themselves in a strange land, surrounded by unfamiliar cultures and creatures.*"
+   }
+  ],
+  "skillProficiencies": {
+   "options": [
+    "survival",
+    "nature"
    ],
    "amount": "all"
   },

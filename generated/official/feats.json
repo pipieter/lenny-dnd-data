@@ -469,6 +469,32 @@
   "reprint": null
  },
  {
+  "name": "Arathi Heritage",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#arathi%20heritage_wow",
+  "type": "Origin",
+  "prerequisite": "World Of Warcraft Campaign and Human",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a descendant of humans from Arathor and high elves from Quel'Thalas, you gain the following benefits."
+   },
+   {
+    "name": "Fey Ancestry",
+    "type": "text",
+    "value": "You have Advantage on saving throws to avoid or end the Charmed condition."
+   },
+   {
+    "name": "Lethargy Resilience",
+    "type": "text",
+    "value": "When you fail a saving throw to avoid or end the Unconscious condition, you can succeed instead. Once you use this trait, you can't do so again until you finish 1d4 Long Rests."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Arcane Artist",
   "source": "AU",
   "url": "https://5e.tools/feats.html#arcane%20artist_au",
@@ -1099,7 +1125,7 @@
    {
     "name": "Energy Redirection",
     "type": "text",
-    "value": "When you take damage of one of the types chosen for the Energy Resistances benefit, you can take a Reaction to direct damage of the same type toward another creature you can see within 60 feet of yourself that isn't behind Total Cover. If you do so, that creature must succeed on a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take damage equal to 2d12 plus your Constitution modifier."
+    "value": "When you take damage of one of the types chosen for the Energy Resistances benefit, you can take a Reaction to direct damage of the same type toward another creature you can see within 60 feet of yourself that isn't behind Total Cover. If you do so, that creature must succeed on a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take damage equal to **2d12** plus your Constitution modifier."
    }
   ],
   "reprint": null
@@ -1887,7 +1913,7 @@
    {
     "name": "Charge Attack",
     "type": "text",
-    "value": "If you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns."
+    "value": "If you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a **1d8** bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns."
    }
   ],
   "reprint": null
@@ -1957,6 +1983,32 @@
   "reprint": null
  },
  {
+  "name": "Child of the Sea",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#child%20of%20the%20sea_wow",
+  "type": "Origin",
+  "prerequisite": "World Of Warcraft Campaign and Human",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "As a Kul Tiran, you gain the following benefits."
+   },
+   {
+    "name": "Lasting Breath",
+    "type": "text",
+    "value": "You can hold your breath for a number of minutes equal to 2 plus your Constitution modifier (minimum of 1 minute)."
+   },
+   {
+    "name": "Ocean Born",
+    "type": "text",
+    "value": "You have a Swim Speed equal to your Speed."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Child of the Sun",
   "source": "LFL",
   "url": "https://5e.tools/feats.html#child%20of%20the%20sun_lfl",
@@ -1983,6 +2035,32 @@
     "name": "",
     "type": "text",
     "value": "When you cast __Faerie Fire__ without a spell slot using this benefit, taking damage can't break your *Concentration* on the spell."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Clearcasting",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#clearcasting_wow",
+  "type": "General",
+  "prerequisite": "Lv. 4+",
+  "abilityIncrease": "Increase your Intelligence score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Clearcasting",
+    "type": "text",
+    "value": "When you score a Critical Hit with a spell's attack roll, you can take a Reaction to cast a cantrip with a casting time of an action."
+   },
+   {
+    "name": "Force Adept",
+    "type": "text",
+    "value": "When you roll damage for a spell you cast that deals Force damage, you can treat any 1 on a damage die as a 2."
    }
   ],
   "reprint": null
@@ -3038,6 +3116,27 @@
   "reprint": null
  },
  {
+  "name": "Elusive Brawler",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#elusive%20brawler_wow",
+  "type": "General",
+  "prerequisite": "Lv. 4+, 13 Dexterity and 13 Wisdom",
+  "abilityIncrease": "Increase your Dexterity or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Reactive Dodge",
+    "type": "text",
+    "value": "When you take damage, you can take a Reaction to take the Dodge action."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Elven Accuracy",
   "source": "XGE",
   "url": "https://5e.tools/feats.html#elven%20accuracy_xge",
@@ -3200,6 +3299,37 @@
     "name": "Two Hearts, One Mind",
     "type": "text",
     "value": "You always have the __Beast Sense__ spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. When you cast it without a spell slot using this feature, it doesn't require *Concentration*. You can also cast the spell using any spell slots you have of the appropriate level. The spell's spellcasting ability is the ability increased by this feat."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Enveloping Mist",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#enveloping%20mist_wow",
+  "type": "General",
+  "prerequisite": "Lv. 4+, 13 Dexterity and 13 Wisdom",
+  "abilityIncrease": "Increase your Dexterity or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Enveloping Mist",
+    "type": "text",
+    "value": "When you cast a spell or use a feature to restore Hit Points to a creature, the creature is wrapped in a healing mist. Roll one of the dice from the feature that healed it, and note that number as the creature's Life Cocoon value."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the creature is hit by an attack roll before the start of its next turn, you can take a Reaction to reduce the damage it takes from that attack by its Life Cocoon value. The mist then disappears."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "At the start of the creature's next turn, if the mist persists, the creature gains Temporary Hit Points equal to its Life Cocoon value."
    }
   ],
   "reprint": null
@@ -3450,6 +3580,58 @@
     "name": "",
     "type": "text",
     "value": "Whenever you reach a level that grants the Ability Score Improvement feature, you can replace this feat's fighting style with another one from the fighter class that you don't have."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Fingers of Frost",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#fingers%20of%20frost_wow",
+  "type": "General",
+  "prerequisite": "Lv. 4+",
+  "abilityIncrease": "Increase your Intelligence score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Cold Mastery",
+    "type": "text",
+    "value": "Spells you cast ignore Resistance to Cold damage."
+   },
+   {
+    "name": "Frostbite",
+    "type": "text",
+    "value": "When you deal Cold damage to a creature that has the Restrained condition, the creature takes extra Cold damage. To determine the extra damage, roll a number of d4s equal to your Proficiency Bonus and add them together."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Fists of Fury",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#fists%20of%20fury_wow",
+  "type": "General",
+  "prerequisite": "Lv. 4+, 13 Dexterity and 13 Wisdom",
+  "abilityIncrease": "Increase your Dexterity or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Clean Hits",
+    "type": "text",
+    "value": "When you roll damage for an attack you make with an Unarmed Strike or a weapon that has the Light property, you can treat any 1 on a damage die as a 2."
+   },
+   {
+    "name": "Combo Strikes",
+    "type": "text",
+    "value": "When you deal damage to a creature with an Unarmed Strike, you gain a +1 bonus to the damage roll for each time you previously hit that creature with a melee attack roll in the same turn."
    }
   ],
   "reprint": null
@@ -4421,6 +4603,32 @@
   "reprint": null
  },
  {
+  "name": "Hot Streak",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#hot%20streak_wow",
+  "type": "General",
+  "prerequisite": "Lv. 4+",
+  "abilityIncrease": "Increase your Intelligence score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Fire Mastery",
+    "type": "text",
+    "value": "Spells you cast ignore Resistance to Fire damage."
+   },
+   {
+    "name": "Ignite",
+    "type": "text",
+    "value": "When a spell you cast deals Fire damage to a creature, the target starts burning. When you deal Fire damage to a creature that is already burning, the flames become more severe, increasing the burning damage by **1d4**."
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Illusion Adept",
   "source": "AU",
   "url": "https://5e.tools/feats.html#illusion%20adept_au",
@@ -4558,6 +4766,54 @@
       [
        "Solinari",
        "Choose two from comprehend languages, detect evil and good, protection from evil and good, and shield"
+      ]
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Inscription Adept",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#inscription%20adept_wow",
+  "type": "General",
+  "prerequisite": "Lv. 4+",
+  "abilityIncrease": "Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Your mastery of inscription allows you to duplicate the effects of certain spells with your written magic. You gain the following benefits."
+   },
+   {
+    "name": "Inscription Magic",
+    "type": "text",
+    "value": "You learn the __Illusory Script__ spell and always have it prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. You can use herbalism resources of the appropriate value in place of the Material component specified for that spell. The spell's spellcasting ability is the ability increased by this feat."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you reach higher levels of proficiency in inscription, you learn higher-level spells and can cast them in the same way, as shown on the table."
+   },
+   {
+    "name": "",
+    "type": "table",
+    "table": {
+     "type": "table",
+     "title": "",
+     "headers": [
+      "Proficiency",
+      "Spell"
+     ],
+     "rows": [
+      [
+       "Journeyman (+3)",
+       "Glyph of Warding"
+      ],
+      [
+       "Artisan (+5)",
+       "Symbol"
       ]
      ]
     }
@@ -4729,7 +4985,7 @@
      "type": "list",
      "caption": "",
      "entries": [
-      "**Commanding Rally**: As a bonus action, you can command one ally within 30 feet of yourself to attack. If that ally can see or hear you, they can immediately make one weapon attack as a reaction. If the attack hits, the ally can roll a d8 and add the number rolled as a bonus to the attack's damage roll. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+      "**Commanding Rally**: As a bonus action, you can command one ally within 30 feet of yourself to attack. If that ally can see or hear you, they can immediately make one weapon attack as a reaction. If the attack hits, the ally can roll a **d8** and add the number rolled as a bonus to the attack's damage roll. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
      ]
     }
    },
@@ -6898,7 +7154,7 @@
      "type": "list",
      "caption": "",
      "entries": [
-      "When you take the Attack action and attack with only a glaive, halberd, quarterstaff, or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon; this attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a d4, and the attack deals bludgeoning damage.",
+      "When you take the Attack action and attack with only a glaive, halberd, quarterstaff, or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon; this attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a **d4**, and the attack deals bludgeoning damage.",
       "While you are wielding a glaive, halberd, pike, quarterstaff, or spear, other creatures provoke an opportunity attack from you when they enter the reach you have with that weapon."
      ]
     }
@@ -6926,7 +7182,7 @@
    {
     "name": "Pole Strike",
     "type": "text",
-    "value": "Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a d4."
+    "value": "Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a **d4**."
    },
    {
     "name": "Reactive Strike",
@@ -8452,7 +8708,7 @@
      "caption": "",
      "entries": [
       "**Mount Up**: Mounting or dismounting costs you only 5 feet of movement.",
-      "**Precise Strike**: Once per turn, when you make a weapon attack roll against a creature, you can cause the attack roll to have advantage. If the attack hits, you roll a d8 and add the number rolled as a bonus to the attack's damage roll. You can use this benefit a number of times equal to your proficiency bonus, but a use is expended only if the attack hits. You regain all expended uses when you finish a long rest."
+      "**Precise Strike**: Once per turn, when you make a weapon attack roll against a creature, you can cause the attack roll to have advantage. If the attack hits, you roll a **d8** and add the number rolled as a bonus to the attack's damage roll. You can use this benefit a number of times equal to your proficiency bonus, but a use is expended only if the attack hits. You regain all expended uses when you finish a long rest."
      ]
     }
    },
@@ -8460,6 +8716,32 @@
     "name": "",
     "type": "text",
     "value": "*Knights of Solamnia are only ever members of one of their organization's orders. In the course of their training, most knights begin as members of the Knights of the Crown and then move on to join other orders. Whether a character follows this path or another, they retain what they learned as a member of an order even if they join another. Characters can change what knightly order they're a part of, but they always have access to any Knight of Solamnia feats they've acquired.*"
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Stagger and Sway",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#stagger%20and%20sway_wow",
+  "type": "General",
+  "prerequisite": "Lv. 4+, 13 Dexterity and 13 Wisdom",
+  "abilityIncrease": "Increase your Dexterity or Wisdom score by 1, to a maximum of 20.",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You gain the following benefits."
+   },
+   {
+    "name": "Defer Damage",
+    "type": "text",
+    "value": "When you take damage, reduce the damage you take by your Dexterity modifier (minimum of 1). Then add a **d6** to your Delayed Reaction pool. At the end of your turn, remove all the dice from your Delayed Reaction pool and roll them. You take Force damage equal to the total rolled."
+   },
+   {
+    "name": "Purify",
+    "type": "text",
+    "value": "As a Bonus Action, you can remove a number of dice equal to your Wisdom modifier from your Delayed Reaction pool."
    }
   ],
   "reprint": null
@@ -9193,7 +9475,7 @@
    {
     "name": "",
     "type": "text",
-    "value": "When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to **1d6** plus your Strength modifier instead of the normal damage of an Unarmed Strike. If you aren't holding any weapons or a Shield when you make the attack roll, the d6 becomes a d8."
+    "value": "When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to **1d6** plus your Strength modifier instead of the normal damage of an Unarmed Strike. If you aren't holding any weapons or a Shield when you make the attack roll, the **d6** becomes a **d8**."
    },
    {
     "name": "",
@@ -9321,6 +9603,22 @@
       "**Iron Stomach**: Whenever you eat food as part of a short rest and spend one or more Hit Dice to regain hit points, you regain additional hit points equal to your Constitution modifier + your proficiency bonus."
      ]
     }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Void Warrior",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#void%20warrior_wow",
+  "type": "Fighting Style Replacement (Ranger)",
+  "prerequisite": "When Gaining the Level 2 Demon Hunter \"Fighting Style\" Feature",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "You learn two Warlock cantrips of your choice. __Chill Touch__ and __Mind Sliver__ are recommended. The chosen cantrips count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a Ranger level, you can replace one of these cantrips with another Warlock cantrip."
    }
   ],
   "reprint": null
@@ -9499,6 +9797,22 @@
     "name": "Mastery Property",
     "type": "text",
     "value": "Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Will to Survive",
+  "source": "WoW",
+  "url": "https://5e.tools/feats.html#will%20to%20survive_wow",
+  "type": "Origin",
+  "prerequisite": "World Of Warcraft Campaign and Human",
+  "abilityIncrease": null,
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "When you have the Incapacitated condition but not the Unconscious condition, you can draw on the proud heritage of Stormwind or Stromgarde to ignore the Incapacitated condition on your turn. If you do, you gain 1 Exhaustion level."
    }
   ],
   "reprint": null
