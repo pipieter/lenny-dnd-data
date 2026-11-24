@@ -4,6 +4,7 @@ import {
     ClassFeature,
     ClassResourceValue,
     Multiclassing,
+    ReskinBaseClass,
     SubclassBase,
     SubclassFeature,
 } from '../../5etools-collector/types/class';
@@ -160,14 +161,10 @@ function parseSubclass(data: SubclassBase, subclassFeatures: ClassFeatureDiction
 
     let levelFeatures: ParsedClassFeature[] | null = null;
     if (data.subclassFeatures) {
-        const features = subclassFeatures[classKey];
+        const features = Object.values(subclassFeatures).flat();
         for (const subclassFeature of data.subclassFeatures) {
             const parts = subclassFeature.split('|');
             const featName = parts[0];
-            const featClassName = parts[1];
-            const featClassSource = parts[2] || 'PHB';
-
-            const featClassKey = getKey(featClassName, featClassSource);
             const level = parseInt(parts[5]);
 
             if (typeof level !== 'number') {
@@ -175,7 +172,6 @@ function parseSubclass(data: SubclassBase, subclassFeatures: ClassFeatureDiction
             }
 
             for (const feat of features) {
-                if (featClassKey !== feat.classKey) continue;
                 if (feat.subclassKey !== key) continue;
                 if (feat.name !== featName) continue;
                 if (feat.level !== level) continue;
@@ -948,17 +944,56 @@ function classFeatsToParsedFeats(
     return parsedFeats;
 }
 
-function getClassFeatures(data: Databank, name: string, source: string): ClassFeatureDictionary {
-    const classKey = getKey(name, source);
+function parseClassReference(reference: string): { name: string; source: string } {
+    const [name, source = 'PHB'] = reference.split('|');
+    return { name, source };
+}
+
+function getReskinReferences(cls: ClassBase | ReskinBaseClass): { name: string; source: string }[] {
+    if (!('reskinOf' in cls) || !cls.reskinOf) return [{ name: cls.name, source: cls.source }];
+    return cls.reskinOf.map(parseClassReference);
+}
+
+function getClassFeatures(data: Databank, cls: ClassBase | ReskinBaseClass): ClassFeatureDictionary {
+    const isReskin = 'reskinOf' in cls;
+    const classReferences = getReskinReferences(cls);
     const features: ClassFeature[] = data.classFeature.filter((c) => {
-        return classKey === getKey(c.className, c.classSource);
+        return classReferences.some((reference) => {
+            return getKey(reference.name, reference.source) === getKey(c.className, c.classSource);
+        });
     });
 
     const dictionary: ClassFeatureDictionary = {};
     for (const featureData of features.sort(entrySort)) {
         const feature = parseClassFeature(featureData);
+        if (isReskin) {
+            feature.className = cls.name;
+            feature.classSource = cls.source;
+            feature.classKey = getKey(cls.name, cls.source);
+        }
         if (!dictionary[feature.classKey]) dictionary[feature.classKey] = [];
         dictionary[feature.classKey].push(feature);
+    }
+
+    if (isReskin) {
+        const reskinFeatures = data.classFeature.filter((c) => {
+            return getKey(cls.name, cls.source) === getKey(c.className, c.classSource);
+        });
+        for (const featureData of reskinFeatures.sort(entrySort)) {
+            const feature = parseClassFeature(featureData);
+            if (!dictionary[feature.classKey]) dictionary[feature.classKey] = [];
+            if (
+                !dictionary[feature.classKey].some((existing) => {
+                    return (
+                        existing.name === feature.name &&
+                        existing.level === feature.level &&
+                        existing.source === feature.source
+                    );
+                })
+            ) {
+                dictionary[feature.classKey].push(feature);
+            }
+        }
     }
 
     return dictionary;
@@ -966,12 +1001,27 @@ function getClassFeatures(data: Databank, name: string, source: string): ClassFe
 
 function getSubclasses(
     data: Databank,
-    name: string,
-    source: string,
+    cls: ClassBase | ReskinBaseClass,
     subclassFeatures: ClassFeatureDictionary
 ): SubclassDictionary {
+    const isReskin = 'reskinOf' in cls;
+    const includedReferences =
+        isReskin && cls.includeSubclassesFrom
+            ? cls.includeSubclassesFrom.map(parseClassReference)
+            : [{ name: cls.name, source: cls.source }];
+
     const subclasses = data.subclass
         .filter((s) => {
+            if (isReskin) {
+                return includedReferences.some((reference) => {
+                    return (
+                        s.className === reference.name &&
+                        getKey(s.className, s.classSource ?? 'PHB') === getKey(reference.name, reference.source)
+                    );
+                });
+            }
+            const name = cls.name;
+            const source = cls.source;
             if (source === 'PHB' && s.source === 'XPHB') return false; // Don't show 2024 subclasses on 2014 classes
             if (source === 'XPHB' && s.source === 'PHB') return false; // Don't show 2014 subclasses on 2024 classes
             if (source === 'TCE' && s.source === 'EFA') return false; // Don't mix Artificer TCE with EFA
@@ -982,7 +1032,12 @@ function getSubclasses(
 
     const dictionary: SubclassDictionary = {};
     for (let subclassData of subclasses) {
-        subclassData = handleCopy(subclassData, subclasses);
+        subclassData = handleCopy(subclassData, data.subclass);
+        if (isReskin) {
+            subclassData = structuredClone(subclassData);
+            subclassData.className = cls.name;
+            subclassData.classSource = cls.source;
+        }
         const subclass = parseSubclass(subclassData, subclassFeatures);
         const key = subclass.key;
         if (!dictionary[key]) dictionary[key] = subclass;
@@ -991,21 +1046,26 @@ function getSubclasses(
     return dictionary;
 }
 
-function getClassSubclassFeatures(data: Databank, name: string, _source: string): ClassFeatureDictionary {
+function getClassSubclassFeatures(data: Databank, cls: ClassBase | ReskinBaseClass): ClassFeatureDictionary {
+    const classReferences = getReskinReferences(cls);
     const subclassFeatures = data.subclassFeature
         .filter((sf) => {
-            // The source is not checked, as this may prevent older content not being applied to newer content.
-            // For example, subclasses from XGE are originally designed for PHB'14, but they are also compatible
-            // with PHB'24. In order to not lose compatibility, the source is thus not checked. In the future
-            // this might change.
-            // sf.classSource === source
-            return sf.className === name;
+            if ('reskinOf' in cls) {
+                return classReferences.some((reference) => sf.className === reference.name);
+            }
+            // The source is not checked for normal classes for backward compatibility between editions.
+            return sf.className === cls.name;
         })
         .sort(entrySort);
 
     const dictionary: ClassFeatureDictionary = {};
     for (const featureData of subclassFeatures) {
         const feature = parseClassFeature(featureData);
+        if ('reskinOf' in cls) {
+            feature.className = cls.name;
+            feature.classSource = cls.source;
+            feature.classKey = getKey(cls.name, cls.source);
+        }
         if (!dictionary[feature.classKey]) dictionary[feature.classKey] = [];
         dictionary[feature.classKey].push(feature);
     }
@@ -1022,10 +1082,10 @@ export function getClassesAndClassFeats(data: Databank): {
 
     const allClasses = [...data.class, ...data.sidekick];
     const classes: ParsedClass[] = allClasses.map((cls) => {
-        cls = handleCopy(cls, data.class) as ClassBase;
-        const features = getClassFeatures(data, cls.name, cls.source);
-        const subclassFeatures = getClassSubclassFeatures(data, cls.name, cls.source);
-        const subclasses = getSubclasses(data, cls.name, cls.source, subclassFeatures);
+        cls = handleCopy(cls, data.class) as ClassBase | ReskinBaseClass;
+        const features = getClassFeatures(data, cls);
+        const subclassFeatures = getClassSubclassFeatures(data, cls);
+        const subclasses = getSubclasses(data, cls, subclassFeatures);
         const parsedFeats = classFeatsToParsedFeats(features, subclassFeatures);
 
         for (const feat of parsedFeats) {

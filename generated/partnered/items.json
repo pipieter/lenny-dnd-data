@@ -63,6 +63,54 @@
   "reprint": null
  },
  {
+  "name": "+1 Theropod Jaw",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#%2B1%20theropod%20jaw_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": "7 lb.",
+  "type": [
+   "weapon (greataxe)",
+   "martial weapon",
+   "melee weapon",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This huge axe is crafted from the harvested jaw of a mighty predatory dinosaur.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This weapon deals an additional **1d6** Piercing damage with each successful hit."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Cleave",
+    "type": "text",
+    "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d12** Slashing",
+   "heavy",
+   "two-handed",
+   "mastery: cleave"
+  ],
+  "reprint": null
+ },
+ {
   "name": "+2 Leather Jerkin",
   "source": "Pugilist2024",
   "url": "https://5e.tools/items.html#%2B2%20leather%20jerkin_pugilist2024",
@@ -211,6 +259,54 @@
   ],
   "properties": [
    "AC 12 + Dex"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "+2 Theropod Jaw",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#%2B2%20theropod%20jaw_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": "7 lb.",
+  "type": [
+   "weapon (greataxe)",
+   "martial weapon",
+   "melee weapon",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This huge axe is crafted from the harvested jaw of a mighty predatory dinosaur.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This weapon deals an additional **1d6** Piercing damage with each successful hit."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Cleave",
+    "type": "text",
+    "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d12** Slashing",
+   "heavy",
+   "two-handed",
+   "mastery: cleave"
   ],
   "reprint": null
  },
@@ -1219,6 +1315,32 @@
   "reprint": null
  },
  {
+  "name": "Amber Necklace",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#amber%20necklace_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *A simple twine necklace binding a small lump of amber, or a chain of amber beads.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** While wearing this necklace, you have a +2 bonus to any roll to resist or end the Poisoned condition. This effect is not cumulative with further amber items."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Ambitious Medic's Box",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#ambitious%20medic's%20box_griffonssaddlebag2",
@@ -1584,6 +1706,74 @@
     "name": "",
     "type": "text",
     "value": "In addition, if you die while wearing the pendant, you immediately return to life with half your hit points. This property restores any missing body parts, neutralizes any poisons, and cures normal diseases afflicting you when you died, but has no effect if you die of old age. Once you're returned to life in this way, the amulet loses this property."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Analysis Tools",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#analysis%20tools_partnereddddod",
+  "image": null,
+  "value": "10 gp",
+  "weight": "1 lb.",
+  "type": [
+   "tool"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This collection of hand lenses, rubbing papers, chalk, and tweezers allows for more thorough investigation of small objects than the naked eye would allow."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Ability**: Intelligence",
+      "**Utilize**: When attempting a *Investigation* check of an object small enough to fit in your hand, you may replace the check's DC with this tool's DC (DC 8)."
+     ]
+    }
+   },
+   {
+    "name": "Tool",
+    "type": "text",
+    "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ancient Horn",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#ancient%20horn_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "instrument",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *A curved and polished bone horn made from the skull of a large hadrosaur.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This instrument can be used as a spell focus by a Bard. Once per day, as an Action, the horn can be blown to alert allies. When used in this way, it cannot be heard by anyone except the bearer and their allies, who can hear it regardless of where they are in the multiverse. The sound itself does not convey specific information, and is simply a deep note."
+   },
+   {
+    "name": "Tool (Musical Instrument)",
+    "type": "text",
+    "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
    }
   ],
   "properties": [],
@@ -2272,6 +2462,26 @@
       "**[Organ]**: Flower from a Plant (traditionally an Eldritch Lily)"
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Araliaephyllum sp. Healing Balm",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#araliaephyllum%20sp.%20healing%20balm_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Theropod-footed Healing Balm",
+    "type": "text",
+    "value": "This plant's bird- foot-shaped leaves can be crushed into a paste and applied to a wound to help it heal. If this balm is applied to a creature during a Short Rest, that creature heals 1d6 + 2 Hit Points and its speed is increased by 10 ft. for the next 24 hours."
    }
   ],
   "properties": [],
@@ -4563,6 +4773,32 @@
   "reprint": null
  },
  {
+  "name": "Automimicry Cape",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#automimicry%20cape_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This large cape is dull on the back, but the inside is patterned and coloured with two huge eyes. When held up from either side, it gives the wearer the superficial image of a huge bestial head with glaring eyes.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** While wearing this cape, as a Bonus Action you can give yourself Advantage on *Intimidation* checks until the end of your turn against any creature with an Intelligence score of 5 or lower."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Avian Circlet",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#avian%20circlet_24griffonssaddlebag1",
@@ -4841,6 +5077,54 @@
    "versatile (1d10)",
    "each fabled heirloom is a magic item that grows in strength as its attuned owner gains power. the rarity of each heirloom increases as the character grows in level, as shown on the [heirloom rarity](https://5e.tools/tables.html#heirloom%20rarity_crookedmoon24) table. an heirloom's description details the properties it always has, as well as the properties it gains as it increases in rarity. the heirloom has all the properties of its rarity and lower.",
    "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Azdarchid Beak Greatsword",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#azdarchid%20beak%20greatsword_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": "6 lb.",
+  "type": [
+   "weapon (greatsword)",
+   "martial weapon",
+   "melee weapon",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This lightweight sword is crafted from the huge beak of an Azdarchid pterosaur. It can slide through the air with ease.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** When using your Reaction to make an Opportunity Attack with this weapon, your melee reach is increased to 10 ft. for that attack. Furthermore, attacks made with this weapon against creatures from the elemental plane of air are made at Advantage."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Graze",
+    "type": "text",
+    "value": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+   }
+  ],
+  "properties": [
+   "**2d6** Slashing",
+   "heavy",
+   "two-handed",
+   "mastery: graze"
   ],
   "reprint": null
  },
@@ -16628,6 +16912,31 @@
   "reprint": null
  },
  {
+  "name": "Cladophlebis Rhizome Grenade",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#cladophlebis%20rhizome%20grenade_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "Alternatively, the rhizome can be carefully extracted with a DC 10 *Sleight of Hand* check and then may function like a grenade:"
+   },
+   {
+    "name": "Rhizome grenade",
+    "type": "text",
+    "value": "As an Action, a humanoid creature can throw the grenade (20/60 ft.). Any creature within 5 ft. Emanation of where it lands must succeed a DC 12 Dexterity Saving Throw, or take **1d4** Bludgeoning damage and **1d4** Fire damage."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Clarinet",
   "source": "TLotRR",
   "url": "https://5e.tools/items.html#clarinet_tlotrr",
@@ -22395,6 +22704,32 @@
   "reprint": null
  },
  {
+  "name": "Dead Deity Robes",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#dead%20deity%20robes_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *These beautiful, pristine red and black robes are the last remnants of a civilisation from millions of years in the past who worshiped a deity forgotten by all, aeons ago. They are inscribed with runes in an ancient unreadable language.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** While attuned to these robes, you have an additional spell slot of whatever your current highest level spell slot is. The level of the additional spell slot is reset and replenishes after each Long Rest. If you aren't wearing armour, your base Armor Class becomes 13 + your Dexterity modifier."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Dead Ringer",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#dead%20ringer_24griffonssaddlebag1",
@@ -23138,6 +23473,53 @@
   "properties": [
    "ending your attunement to one of these items removes its curse, but the power of a cursed curio doesn't release its hold on the user easily. if you attune to it again within 28 days, the progression of its curse returns to where it was before you ended your attunement."
   ],
+  "reprint": null
+ },
+ {
+  "name": "Dice of the Dinosaur",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#dice%20of%20the%20dinosaur_partnereddddod",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/PartneredDDDoD/items/Dice%20of%20the%20Dinosaur.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This six-sided dice has the visages of six different large dinosaurs carved into each face. Once rolled, a strange bellowing noise can be heard in the distance.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** The first time that this dice is rolled each day, it summons a dinosaur that matches the carved visage of the face it rolls to. The dinosaur is summoned somewhere within a 1 mile radius and is Hostile to whoever rolled the dice, actively seeking them out."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "If the dinosaur is slain, it disintegrates into amber gemstones worth 100 GP multiplied by the corresponding number below. Once that dinosaur has been slain, the corresponding facing on the dice turns blank and becomes weighted in a way that it cannot roll with that side face-up. At the next dawn, if the dinosaur is alive, it vanishes and the dice remains unchanged. The dice faces are:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "__Iguanodon__",
+      "__Centrosaurus__",
+      "__Utahraptor__",
+      "__Zuul__",
+      "__Giraffatitan__",
+      "__Tyrannosaurus__"
+     ]
+    }
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -26986,6 +27368,46 @@
   "reprint": null
  },
  {
+  "name": "Equisetum sp. Potion (Incorrectly Harvested)",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#equisetum%20sp.%20potion%20(incorrectly%20harvested)_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Toxic Maturity",
+    "type": "text",
+    "value": "Fresh shoots of this plant are non-toxic and can be brewed into a simple, but delicious, potion that heals 1d4 + 1 hit points when consumed. However, mature plants are highly toxic and any creature that consumes them (or a derivative of them) is Poisoned for 24 hours. A successful DC 10 *Nature* check is required to determine which shoots are safe to consume."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Equisetum sp. Potion",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#equisetum%20sp.%20potion_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Toxic Maturity",
+    "type": "text",
+    "value": "Fresh shoots of this plant are non-toxic and can be brewed into a simple, but delicious, potion that heals 1d4 + 1 hit points when consumed. However, mature plants are highly toxic and any creature that consumes them (or a derivative of them) is Poisoned for 24 hours. A successful DC 10 *Nature* check is required to determine which shoots are safe to consume."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Essence of Glumbug",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#essence%20of%20glumbug_obojimatallgrass",
@@ -27298,6 +27720,45 @@
   "reprint": null
  },
  {
+  "name": "Ethereal Egg",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#ethereal%20egg_partnereddddod",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/PartneredDDDoD/items/Ethereal%20Egg.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "very rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This football/ball sized egg is partly translucent, and wisps of coloured smoke constantly drift off of it.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** If incubated (kept warm) for 2d4 days, the egg will hatch into a familiar for the player who incubated it last. This functions in the same manner as a familiar would via the __Find Familiar__ spell, with the following exceptions:"
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "The familiar's appearance and stats are selected by the hatching player from a list of known familiars (we recommend one of the familiars from this book), and then cannot be changed.",
+      "Once the familiar drops to 0 Hit Points, it disappears and can be resummoned as an Action.",
+      "Once the familiar drops to 0 HP for the third time, instead of disappearing, it reverts back to its Ethereal Egg form and must be incubated for a further 2d4 days before re-hatching as the same familiar."
+     ]
+    }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Everfull Stein",
   "source": "Pugilist2024",
   "url": "https://5e.tools/items.html#everfull%20stein_pugilist2024",
@@ -27462,6 +27923,95 @@
     "name": "",
     "type": "text",
     "value": "If a spell that deals fire damage would normally ignite flammable objects that aren't being worn or carried, it does not if it's converted to lightning damage in this way. However, a spell that deals lightning damage does ignite such objects if it's converted to deal fire damage instead."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Evolunite Shard",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#evolunite%20shard_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *A tiny shard of iridescent rock that sparkles when in moonlight. When it comes into contact with a creature's integument (skin/scales/feathers/hair/etc.), it sparks and sizzles as it dissolves into them.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** If this mineral touches a creature's exposed body, it is destroyed. The DM then rolls on the Minor Mutation Table (see Mesozoic Reptiles in Your World) for that creature, and it gains the associated mutation for 1 hour. If more than five Evolunite shards are used on the same creature within 1 hour of each other, the creature is polymorphed into a tiny crab with 2 hit points for 1 hour."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Excavator's Tools",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#excavator's%20tools_partnereddddod",
+  "image": null,
+  "value": "5 gp",
+  "weight": "8 lb.",
+  "type": [
+   "tool"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These fine picks, chisels, and brushes allow for precise extraction of precious material from rock."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Ability**: Dexterity",
+      "**Utilize**: Increase the value of fossils or gemstones by 20% when extracting them from rock (DC 5)."
+     ]
+    }
+   },
+   {
+    "name": "Tool",
+    "type": "text",
+    "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Exceptional Refractive Index Crystal",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#exceptional%20refractive%20index%20crystal_partnereddddod",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/PartneredDDDoD/items/Exceptional-Flawless-Perfect%20Refractive%20Index%20Crystal.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "spellcasting focus",
+   "uncommon (requires attunement by a Druid, Wizard, or Sorcerer)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This large, jagged crystal has a pastel colour hue to it, but when turned in light it refracts brilliant rainbows.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This item can be used as a spell focus by a Druid, Wizard, or Sorcerer. While wielding this item, you may cast the __Light__ cantrip a number of times equal to your Proficiency Bonus per day, and you may cast the spell __Color Spray__ at 1st level once per day without using a spell slot."
    }
   ],
   "properties": [],
@@ -30934,6 +31484,32 @@
     "name": "",
     "type": "text",
     "value": "This delicate Wand hums with bound potential, and seems drawn to your fingers. While attuned to it, you cannot be *Surprised*. Additionally, whenever you roll Initiative you can choose to immediately draw this wand (no action required). If you do so, you can roll 1d4 and add the total to your Initiative score, and all creatures within 5 feet of you take 1 Lightning damage."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Flawless Refractive Index Crystal",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#flawless%20refractive%20index%20crystal_partnereddddod",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/PartneredDDDoD/items/Exceptional-Flawless-Perfect%20Refractive%20Index%20Crystal.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "spellcasting focus",
+   "rare (requires attunement by a Druid, Wizard, or Sorcerer)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This large, jagged crystal has a pastel colour hue to it, but when turned in light it refracts brilliant rainbows.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This item can be used as a spell focus by a Druid, Wizard, or Sorcerer. While wielding this item, you may cast the __Light__ cantrip a number of times equal to your Proficiency Bonus per day, and you may cast the spell __Color Spray__ at 1st level once per day without using a spell slot."
    }
   ],
   "properties": [],
@@ -44373,6 +44949,26 @@
   "reprint": null
  },
  {
+  "name": "Jaguariba wiersemaniania Flower",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#jaguariba%20wiersemaniania%20flower_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Psychodysleptic",
+    "type": "text",
+    "value": "If a creature consumes the flowers of this plant, it must succeed a DC 14 Constitution Saving Throw or be Stunned for 1d4 minutes. On a successful save, it is instead Frightened of all other creatures for 1d4 minutes. Whenever that creature takes damage while under either effect, it may make another DC 14 Constitution Saving Throw, ending the effect on a success."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Javelin, Silver",
   "source": "BoundByBlood",
   "url": "https://5e.tools/items.html#javelin%2C%20silver_boundbyblood",
@@ -44958,6 +45554,46 @@
   "reprint": null
  },
  {
+  "name": "Khitania columnispicata Paste",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#khitania%20columnispicata%20paste_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Hyper-thermo-genetic",
+    "type": "text",
+    "value": "If the strobile of this plant is crushed into a paste and smeared on a creature's body, that creature gains Resistance to Cold damage for 24 hours. Consuming the seeds of this plant provide Immunity to Cold damage for 1 minute."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Khitania columnispicata Seed",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#khitania%20columnispicata%20seed_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Hyper-thermo-genetic",
+    "type": "text",
+    "value": "If the strobile of this plant is crushed into a paste and smeared on a creature's body, that creature gains Resistance to Cold damage for 24 hours. Consuming the seeds of this plant provide Immunity to Cold damage for 1 minute."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Ki Blade",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#ki%20blade_griffonssaddlebag2",
@@ -45411,6 +46047,26 @@
   "properties": [
    "vestige"
   ],
+  "reprint": null
+ },
+ {
+  "name": "Klitzschophyllites flabellatus Leaf",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#klitzschophyllites%20flabellatus%20leaf_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Babel Leaves",
+    "type": "text",
+    "value": "If a single leaf is plucked from this plant and placed under the tongue of a creature with an Intelligence score of 8 or more, it is able to speak and comprehend any language for 1 minute. Once the effect wears off, the leaf shrivels and cannot be used again."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -46176,6 +46832,60 @@
    "finesse",
    "reach",
    "mastery: slow"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Kriss of Haţeg",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#kriss%20of%20ha%C5%A3eg_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": "1 lb.",
+  "type": [
+   "weapon (dagger)",
+   "simple weapon",
+   "melee weapon",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This slender weapon has a wavy oscillating blade engraved with strange symbols.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** +3 weapon. A creature hit by an attack with this weapon must succeed a DC (8 + PB) Constitution Saving Throw or be reduced by one size category and have the damage from its attacks reduced by 1d4 for 1 minute. While reduced in size, it cannot be reduced in size again by another attack or similar spell/effect."
+   },
+   {
+    "name": "Finesse",
+    "type": "text",
+    "value": "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+   },
+   {
+    "name": "Light",
+    "type": "text",
+    "value": "When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+   },
+   {
+    "name": "Thrown",
+    "type": "text",
+    "value": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+   },
+   {
+    "name": "Nick",
+    "type": "text",
+    "value": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d4** Piercing",
+   "finesse",
+   "light",
+   "thrown (20/60 ft.)",
+   "mastery: nick"
   ],
   "reprint": null
  },
@@ -47471,6 +48181,26 @@
     "name": "",
     "type": "text",
     "value": "Hags, oni, doppelgangers, and more all spin webs of intrigue in Droaam, and the richest warlords have found ways to ensure their safety against infiltrators. This 4-inch-diameter, dull-gray glass lens is said to have been ground with a stone fallen from the moon Lharvion. When you speak its command word, the lens' power activates for 1 minute. If you look at a creature through the lens while it is active, you see ghostly images of every shape that creature has taken within the last 24 hours. The lens reveals shapes taken using innate magical abilities, as well as Illusion and Transmutation spells such as Disguise Self and Polymorph. It does not reveal mundane disguises. Once this property is used, it cannot be used again until 7 days have passed."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Liaoningocladus boii Pseudofruit",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#liaoningocladus%20boii%20pseudofruit_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "1. ***Anaesthetic.*** This tree will yield 1d20 red pseudofruits. These can be eaten and restore 1 hit point each, but also contain a large central seed. If a creature swallows one of these seeds it must succeed a DC 12 Constitution Saving Throw or become Poisoned for 24 hours and fall asleep for 1 minute. The creature awakens if it takes damage."
    }
   ],
   "properties": [],
@@ -51311,6 +52041,46 @@
   "properties": [
    "each fabled heirloom is a magic item that grows in strength as its attuned owner gains power. the rarity of each heirloom increases as the character grows in level, as shown on the [heirloom rarity](https://5e.tools/tables.html#heirloom%20rarity_crookedmoon24) table. an heirloom's description details the properties it always has, as well as the properties it gains as it increases in rarity. the heirloom has all the properties of its rarity and lower."
   ],
+  "reprint": null
+ },
+ {
+  "name": "Marsilea sp. Potion (Incorrectly Harvested)",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#marsilea%20sp.%20potion%20(incorrectly%20harvested)_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Neurotoxic Stimulant",
+    "type": "text",
+    "value": "The leaves of this plant are a powerful stimulant. They can be crushed to create a potion that, if consumed, gives Advantage on Dexterity Saving Throws for 24 hours. However, if the wrong parts of the plant are included in the potion, it also inflicts **2d4** Psychic damage when consumed. When harvesting the plant as an ingredient, a DC 14 *Nature* check is required to ensure that only the correct parts are harvested."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Marsilea sp. Potion",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#marsilea%20sp.%20potion_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Neurotoxic Stimulant",
+    "type": "text",
+    "value": "The leaves of this plant are a powerful stimulant. They can be crushed to create a potion that, if consumed, gives Advantage on Dexterity Saving Throws for 24 hours. However, if the wrong parts of the plant are included in the potion, it also inflicts **2d4** Psychic damage when consumed. When harvesting the plant as an ingredient, a DC 14 *Nature* check is required to ensure that only the correct parts are harvested."
+   }
+  ],
+  "properties": [],
   "reprint": null
  },
  {
@@ -59293,6 +60063,32 @@
   "reprint": null
  },
  {
+  "name": "Perfect Refractive Index Crystal",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#perfect%20refractive%20index%20crystal_partnereddddod",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/PartneredDDDoD/items/Exceptional-Flawless-Perfect%20Refractive%20Index%20Crystal.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "spellcasting focus",
+   "very rare (requires attunement by a Druid, Wizard, or Sorcerer)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This large, jagged crystal has a pastel colour hue to it, but when turned in light it refracts brilliant rainbows.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This item can be used as a spell focus by a Druid, Wizard, or Sorcerer. While wielding this item, you may cast the __Light__ cantrip a number of times equal to your Proficiency Bonus per day, and you may cast the spell __Color Spray__ at 1st level once per day without using a spell slot."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Performer's Puppet",
   "source": "GriffonsSaddlebag2",
   "url": "https://5e.tools/items.html#performer's%20puppet_griffonssaddlebag2",
@@ -62196,6 +62992,58 @@
   "reprint": null
  },
  {
+  "name": "Potion of Plumage",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#potion%20of%20plumage_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This simple vile is filled with feathers immersed in a strange blue liquid.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** When this potion is consumed, the creature that drank it sprouts soft downy feathers all over their body and long flight feathers from their forearms for 10 minutes. While under this effect, they have Immunity to falling damage and are able to glide 1 ft. horizontally for every 1 ft. they descend while falling."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Potion of Redirected Ancestry",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#potion%20of%20redirected%20ancestry_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "potion",
+   "rare"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This ornate glass vial is inlaid with gold filigree. It contains a dully-glowing, green liquid that has tiny double helix shapes drifting within it.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** Consuming this potion allows you to take on the appearance and abilities of any humanoid species that you share a common ancestor with. These replace your character's original racial/species abilities and appearance. This effect lasts for 1 hour, however if you drink a second Potion of Redirected Ancestry while under this effect, the change becomes permanent unless removed by a __Wish__ spell."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Potion of Relentlessness",
   "source": "GrimHollowCG24",
   "url": "https://5e.tools/items.html#potion%20of%20relentlessness_grimhollowcg24",
@@ -62603,6 +63451,37 @@
     "name": "",
     "type": "text",
     "value": "22"
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Primal Drums",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#primal%20drums_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "instrument",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *A small set of palm drums that are fashioned traditionally from skin stretched over hollowed wood.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This instrument can be used as a spell focus by a Bard. Once per day, as an Action, these drums can be used to cast the spell __Bless__ at 1st level without requiring a spell slot or components."
+   },
+   {
+    "name": "Tool (Musical Instrument)",
+    "type": "text",
+    "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
    }
   ],
   "properties": [],
@@ -63220,6 +64099,32 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Pure Lotus Broach/Barrette",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#pure%20lotus%20broach%2Fbarrette_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Appearance:* A large perfectly formed lotus flower, coloured with soft pink and white petals."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "*Rules:* This flower hardens into a durable porcelain form and can be attached to clothing or hair. While attuned to this item, you have Resistance to Cold damage and Advantage on Wisdom Saving Throws."
    }
   ],
   "properties": [],
@@ -66303,6 +67208,43 @@
   "reprint": null
  },
  {
+  "name": "Research Scrolls",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#research%20scrolls_partnereddddod",
+  "image": null,
+  "value": "50 gp",
+  "weight": "10 lb.",
+  "type": [
+   "tool"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This extensive collection of scrolls and paper notes contains useful information about biology and the natural world."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Ability**: Intelligence",
+      "**Utilize**: When attempting a *History* check to recall information about an animal, plant, or natural feature (geographical or geological), you may replace the check's DC with this tool's DC (DC 8)."
+     ]
+    }
+   },
+   {
+    "name": "Tool",
+    "type": "text",
+    "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Residuum",
   "source": "TalDoreiCampaignSettingReborn",
   "url": "https://5e.tools/items.html#residuum_taldoreicampaignsettingreborn",
@@ -67578,6 +68520,32 @@
   "reprint": null
  },
  {
+  "name": "Ring of Palaeobotany",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#ring%20of%20palaeobotany_partnereddddod",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/PartneredDDDoD/items/Ring%20of%20Palaeobotany.webp",
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This wooden ring has a large emerald inlay. Within the emerald is a single tiny golden leaf.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** While wearing this ring you are able to recognise all ancient plants (that existed before your original timeline/lifespan) and you have knowledge of their uses and dangers."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Ring of Plant Speech",
   "source": "HumblewoodTales",
   "url": "https://5e.tools/items.html#ring%20of%20plant%20speech_humblewoodtales",
@@ -67598,6 +68566,32 @@
     "name": "",
     "type": "text",
     "value": "This ring is prized by followers of __Henwin__."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Ring of Primal Speaking",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#ring%20of%20primal%20speaking_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "ring",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This small gold ring has the visage of a toothed maw biting onto a gemstone.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** While wearing this ring, you can read, speak, and understand Archosauric."
    }
   ],
   "properties": [],
@@ -69591,6 +70585,26 @@
   "reprint": null
  },
  {
+  "name": "Ruffordia goeppertii Root",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#ruffordia%20goeppertii%20root_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Antiseptic",
+    "type": "text",
+    "value": "The roots of this plant have a horribly bitter taste, but also have medicinal properties. Eating them grants Resistance to Poison damage and Immunity to the Poisoned condition for 24 hours."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Runestone of the Wild Titan (Legendary)",
   "source": "CrookedMoon24",
   "url": "https://5e.tools/items.html#runestone%20of%20the%20wild%20titan%20(legendary)_crookedmoon24",
@@ -69801,6 +70815,26 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Sabalites longirhachis Fruits",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#sabalites%20longirhachis%20fruits_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Synaptic Regulator",
+    "type": "text",
+    "value": "The small dry fruits that this plant produces have a bitter taste and cause a creature to feel nauseous for a few minutes if consumed. However, they also stimulate the nervous system and provide that creature Advantage on Intelligence Saving Throws for the next 24 hours."
    }
   ],
   "properties": [],
@@ -74343,6 +75377,32 @@
   "reprint": null
  },
  {
+  "name": "Shell Coin",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#shell%20coin_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wondrous item",
+   "common"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This shell has been carved into a small disc. It retains many of the surface features of the shell, including ribbing and growth lines.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** When entering a settlement of 100 inhabitants or more, this shell takes on the appearance of the highest value coin for that settlement. A DC 12 *Arcana* check can determine that the coin is magical, but an effect that dispels magic is required to reveal its illusion."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Shepherd Crook",
   "source": "ObojimaTallGrass",
   "url": "https://5e.tools/items.html#shepherd%20crook_obojimatallgrass",
@@ -76152,6 +77212,26 @@
       ]
      ]
     }
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Siphonospermum simplex Brew",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#siphonospermum%20simplex%20brew_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Psychoactive",
+    "type": "text",
+    "value": "This plant is used as a key ingredient in spiced ales and is highly valued by some merchants. It can also be brewed into a delicious potion that provides Advantage on Wisdom Saving Throws for 1 hour when consumed."
    }
   ],
   "properties": [],
@@ -81136,6 +82216,102 @@
   "reprint": null
  },
  {
+  "name": "Staff of Time Sight",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#staff%20of%20time%20sight_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "weapon (quarterstaff)",
+   "simple weapon",
+   "melee weapon",
+   "very rare (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This wooden and brass staff is topped by a large, spinning brass sphere. This sphere is orbited by several smaller brass spheres that are not physically connected to the staff, yet cannot be removed from their orbit.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This +2 staff can be used as a spell focus by a Druid, Wizard, or Sorcerer. This staff has two charges. While wielding this staff, at the end of your turn in combat, you may choose to expend 1 of its charges. If you do, undo your entire turn (all Actions, movement, and damage dealt/received) and re-take your turn. The staff regains 1 charge each day at dawn."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Staff of Unspared Expense",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#staff%20of%20unspared%20expense_partnereddddod",
+  "image": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/PartneredDDDoD/items/Staff%20of%20Unspared%20Expense.webp",
+  "value": null,
+  "weight": "4 lb.",
+  "type": [
+   "staff",
+   "weapon (quarterstaff)",
+   "simple weapon",
+   "melee weapon",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This pale ivory-coloured staff is topped with a piece of polished amber that contains a large insect fossil.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This +3 staff can be used as a spell focus by a Druid, Wizard, or Sorcerer. While wielding this staff, you have Advantage on all Charisma checks and Charisma Saving Throws."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Curse:** While in possession of this staff, all vendors try to sell their wares at prices 50% more expensive than normal to you. This staff is cursed and, once attuned, a player cannot unattune to it. If they were to abandon the staff, it appears among their belongings during the next Short or Long Rest. The curse can be broken by selling the staff at 200% of its usual value (DM's choice)."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "Alternatively, the curse can be broken by destroying the staff by succeeding on a DC 25 Strength check. If the staff is destroyed in this manner, a blinding flash of light emits from the shattered amber, then heavy and intermittent stomping footsteps can be heard in the distance that steadily grow louder. This is the sound of a __young__/__adult__/__ancient__ *Tyrannosaurus rex* approaching (age depends on the party level, at DM's discretion). It is Hostile to the party, cannot be tamed, and will pursue them as long as it can. It will actively hunt them if the party escapes."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Topple",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+   }
+  ],
+  "properties": [
+   "**1d6** Bludgeoning",
+   "versatile (1d8)",
+   "mastery: topple"
+  ],
+  "reprint": null
+ },
+ {
   "name": "Stalaga Spear",
   "source": "24GriffonsSaddlebag1",
   "url": "https://5e.tools/items.html#stalaga%20spear_24griffonssaddlebag1",
@@ -83767,6 +84943,43 @@
   "reprint": null
  },
  {
+  "name": "Survivalist's Kit",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#survivalist's%20kit_partnereddddod",
+  "image": null,
+  "value": "1 gp",
+  "weight": "9 lb.",
+  "type": [
+   "tool"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This kit is used to carefully extract natural medicines from plants and animals. It consists of a small flint-knapped blade, wooden tweezers, water-proof pouches, and adhesives."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "**Ability**: Wisdom",
+      "**Utilize**: When attempting a *Medicine* check while in a Forest, Jungle, Island, or Swamp environment, you may replace the check's DC with this kit's DC (DC 8)."
+     ]
+    }
+   },
+   {
+    "name": "Tool",
+    "type": "text",
+    "value": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Sustaining Belt",
   "source": "NorthlandsWorldbook",
   "url": "https://5e.tools/items.html#sustaining%20belt_northlandsworldbook",
@@ -85953,6 +87166,54 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Theropod Jaw",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#theropod%20jaw_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": "7 lb.",
+  "type": [
+   "weapon (greataxe)",
+   "martial weapon",
+   "melee weapon",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This huge axe is crafted from the harvested jaw of a mighty predatory dinosaur.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This weapon deals an additional **1d6** Piercing damage with each successful hit."
+   },
+   {
+    "name": "Heavy",
+    "type": "text",
+    "value": "You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+   },
+   {
+    "name": "Two-Handed",
+    "type": "text",
+    "value": "A Two-Handed weapon requires two hands when you attack with it."
+   },
+   {
+    "name": "Cleave",
+    "type": "text",
+    "value": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+   }
+  ],
+  "properties": [
+   "**1d12** Slashing",
+   "heavy",
+   "two-handed",
+   "mastery: cleave"
+  ],
   "reprint": null
  },
  {
@@ -88786,6 +90047,48 @@
    }
   ],
   "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Trusty Rusty",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#trusty%20rusty_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": "2 lb.",
+  "type": [
+   "weapon (war pick)",
+   "martial weapon",
+   "melee weapon",
+   "legendary (requires attunement)"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *This worn pick is rusted and corroding, but still maintains a sharp point.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** +3 weapon. While wielding this weapon, you gain a burrowing speed of 5 ft. Additionally, you have Advantage on attacks against creatures made of rock or stone."
+   },
+   {
+    "name": "Versatile",
+    "type": "text",
+    "value": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+   },
+   {
+    "name": "Sap",
+    "type": "text",
+    "value": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+   }
+  ],
+  "properties": [
+   "**1d8** Piercing",
+   "versatile (1d10)",
+   "mastery: sap"
+  ],
   "reprint": null
  },
  {
@@ -92042,6 +93345,37 @@
   "reprint": null
  },
  {
+  "name": "Wand of the Wondering Mind",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#wand%20of%20the%20wondering%20mind_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "wand",
+   "uncommon"
+  ],
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Appearance:** *A simple, wooden wand bound with twine and a small feather embedded in its tip.*"
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "**Rules:** This wand has 3 charges. While holding it, you can use an Action to expend 1 of its charges and a beast you can see within 40 ft. of you must make a DC 12 Wisdom Saving Throw. On a failed save, select Behaviour Table (see Mesozoic Reptiles in Your Worlds). You may then roll two dice for a behaviour and select whichever option of the two you prefer. The creature then behaves in that manner."
+   },
+   {
+    "name": "",
+    "type": "text",
+    "value": "This wand regains all expended charges every day at dawn."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
   "name": "Wand of Tides",
   "source": "BookOfEbonTides",
   "url": "https://5e.tools/items.html#wand%20of%20tides_bookofebontides",
@@ -93333,6 +94667,26 @@
     "name": "",
     "type": "text",
     "value": "The bag and its eight straps adhere to the surface they're pressed against, such as your torso or the wall of a tavern. If you're wearing the bag, you can gently remove the straps from your body as a Magic action. Other creatures have Disadvantage on Strength checks made to wrench the bag from you. The bag can hold up to 8 cubic feet or 80 pounds. Spiderskin is pliable and stretches easily, allowing the bag to shrink and grow to accommodate the objects placed inside to some degree."
+   }
+  ],
+  "properties": [],
+  "reprint": null
+ },
+ {
+  "name": "Weichselia reticulata Stem",
+  "source": "PartneredDDDoD",
+  "url": "https://5e.tools/items.html#weichselia%20reticulata%20stem_partnereddddod",
+  "image": null,
+  "value": null,
+  "weight": null,
+  "type": [
+   "adventuring gear"
+  ],
+  "description": [
+   {
+    "name": "Congestant",
+    "type": "text",
+    "value": "The thick stem of this plant causes a creature's sinuses and ear canals to swell if chewed, dulling their hearing. A creature that chews this stem gains Resistance to Thunder damage for 24 hours, but also has Disadvantage on *Perception* checks that involve sound for 24 hours."
    }
   ],
   "properties": [],
