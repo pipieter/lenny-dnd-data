@@ -60,6 +60,13 @@ interface ParsedStartingProficiencies {
     saving: string[];
 }
 
+interface SubclassData {
+    name: string;
+    source: string;
+    url: string;
+    reprint: ReprintData | null;
+}
+
 export interface ParsedClass {
     name: string;
     source: string;
@@ -75,6 +82,7 @@ export interface ParsedClass {
     levelResources: PaginatedDescriptions;
     levelFeatures: PaginatedDescriptions;
     subclassLevelFeatures: { [subclass: string]: PaginatedDescriptions } | null;
+    subclassData: { [subclass: string]: SubclassData } | null;
     subclassUnlockLevel: number | null;
 
     reprint: ReprintData | null;
@@ -231,7 +239,10 @@ function parseClass(
 
     const levelResources = parseLevelResources(data, maxLevel);
     const levelFeatures = parseLevelFeatures(name, source, features);
-    const { subclassLevelFeatures, subclassUnlockLevel } = parseSubclassData(subclasses, subclassFeatures);
+    const { subclassLevelFeatures, subclassUnlockLevel, subclassData } = parseSubclassData(
+        subclasses,
+        subclassFeatures
+    );
 
     const reprint = parseReprint(data);
 
@@ -249,6 +260,7 @@ function parseClass(
         levelResources,
         levelFeatures,
         subclassLevelFeatures,
+        subclassData,
         reprint,
     };
 }
@@ -656,8 +668,10 @@ function parseSubclassData(
 ): {
     subclassUnlockLevel: number | null;
     subclassLevelFeatures: Record<string, PaginatedDescriptions>;
+    subclassData: Record<string, SubclassData>;
 } {
     const result: { [subclass: string]: PaginatedDescriptions } = {};
+    const subclassData: { [subclass: string]: SubclassData } = {};
     let lowestLevel = 999;
 
     for (const key in subclasses) {
@@ -677,6 +691,12 @@ function parseSubclassData(
             if (!result[subclassKey][levelKey]) result[subclassKey][levelKey] = [];
 
             result[subclassKey][levelKey].push(...feature.descriptions);
+            subclassData[subclassKey] = {
+                name: subclass.name,
+                source: subclass.source,
+                url: getSubclassUrl(feature.className, feature.classSource, subclass.name, subclass.source, null),
+                reprint: subclass.reprint,
+            };
         }
     }
 
@@ -692,7 +712,7 @@ function parseSubclassData(
     const subclassUnlockLevel = lowestLevel === 999 ? null : lowestLevel;
     const subclassLevelFeatures = result;
 
-    return { subclassUnlockLevel, subclassLevelFeatures };
+    return { subclassUnlockLevel, subclassLevelFeatures, subclassData };
 }
 
 function resolveClassFeatReference(
