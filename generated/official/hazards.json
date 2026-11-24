@@ -457,6 +457,99 @@
   "reprint": null
  },
  {
+  "name": "Earth Motes",
+  "source": "EGW",
+  "subtitle": "Environmental Hazard",
+  "url": "https://5e.tools/trapshazards.html#earth%20motes_egw",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "These chunks of broken land hover and swirl in the air, held aloft by unknown arcane forces. A typical earth mote is 1d6 × 10 feet in diameter and hovers 2d10 × 10 feet above the ground. Earth motes are capable of supporting the weight of modest structures as well as creatures."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Electric Wind",
+  "source": "EGW",
+  "subtitle": "Weather",
+  "url": "https://5e.tools/trapshazards.html#electric%20wind_egw",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "The galvanic breezes of this supernatural gale are latticed with currents of lightning, which stab through the air with primordial fury."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Ranged attacks through electric wind are made with disadvantage.",
+      "Any creature that starts its turn surrounded by electric wind has a 5 percent chance of being struck by lightning. A creature struck by lightning must make a DC 15 Dexterity saving throw, taking **4d6** lightning damage on a failed save, or half as much damage on a successful one."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Ember Thicket",
+  "source": "EGW",
+  "subtitle": "Environmental Hazard",
+  "url": "https://5e.tools/trapshazards.html#ember%20thicket_egw",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A dense grove of blackened, leafless trees perpetually smolders with the dull glow of arcane embers. This copse is choked by a cloud of ash and cinders, which constantly rain on the cremated forest floor."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "An ember thicket is a Vision and Light area.",
+      "Creatures gain one level of exhaustion for every 10 minutes spent inside an ember thicket without suitable protection from the heat, smoke, and ash.",
+      "Ranged attacks through an ember thicket are made with disadvantage. A ranged weapon attack made through or within an ember thicket automatically misses a target beyond the weapon's normal range."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Etheric Rift",
+  "source": "EGW",
+  "subtitle": "Environmental Hazard",
+  "url": "https://5e.tools/trapshazards.html#etheric%20rift_egw",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "An etheric rift appears as a light fog or spectral haze. The interplanar tracts of this anomaly reach in and out of the Border Ethereal. Unseen trenches and invisible paths overlap throughout its vaporous expanse."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "An etheric rift is a Vision and Light area.",
+      "Any creature that enters an etheric rift or starts its turn there has a 33 percent chance of gaining the effect of the __etherealness__ spell until the end of its next turn."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Extreme Cold",
   "source": "DMG",
   "subtitle": "Weather",
@@ -695,6 +788,34 @@
     "name": "",
     "type": "text",
     "value": "Any amount of Fire or Necrotic damage destroys a patch of glittermoss instantly."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Gravity Funnel",
+  "source": "EGW",
+  "subtitle": "Environmental Hazard",
+  "url": "https://5e.tools/trapshazards.html#gravity%20funnel_egw",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This cylindrical area is affected by the unseen pull of heightened gravitational force. A typical gravity funnel is 3d10 × 10 feet tall and 5d10 × 10 feet in diameter."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Strength checks made within a gravity funnel have disadvantage.",
+      "A ranged weapon attack made through or within a gravity funnel automatically misses a target beyond the weapon's normal range.",
+      "Creatures and objects that are fully contained within a gravity funnel have resistance against force damage.",
+      "The gravity funnel counts as difficult terrain."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -1371,6 +1492,33 @@
   "reprint": null
  },
  {
+  "name": "Psychic Miasma",
+  "source": "EGW",
+  "subtitle": "Environmental Hazard",
+  "url": "https://5e.tools/trapshazards.html#psychic%20miasma_egw",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A virtually imperceptible mist of preternatural psychotropic vapor hovers above the ground. This coruscating miasma corrupts the sanity of the living and fortifies the grim resolve of the undead."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Creatures that are fully immersed in psychic miasma have vulnerability to psychic damage.",
+      "Any creature that enters a cloud of psychic miasma or starts its turn there must succeed on a DC 15 Constitution saving throw or become afflicted with a random form of long-term madness (see \"Madness\" in chapter 8 of the Dungeon Master's Guide). Creatures that can't be poisoned automatically succeed on the saving throw. A creature that successfully saves against the psychic miasma is immune to its effects for 24 hours.",
+      "An undead creature that spends at least 1 minute in a cloud of psychic miasma gains advantage on ability checks and saving throws for 24 hours."
+     ]
+    }
+   }
+  ],
+  "reprint": null
+ },
+ {
   "name": "Quicksand",
   "source": "DMG",
   "subtitle": "Wilderness Hazard",
@@ -1601,6 +1749,32 @@
     "name": "Destroying the Mold",
     "type": "text",
     "value": "Russet mold can be hard to kill, since weapons and most types of damage do it no harm. Effects that deal acid, necrotic, or radiant damage kill 1 square foot of russet mold per 1 damage dealt. A pound of salt, a gallon of alcohol, or magic that cures disease kills russet mold in a square area that is 10 feet on a side. Sunlight kills any russet mold in the light's area."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Rust Rain",
+  "source": "EGW",
+  "subtitle": "Weather",
+  "url": "https://5e.tools/trapshazards.html#rust%20rain_egw",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "This crimson precipitation is corrosive to ferrous metal and caustic to creatures."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Rust rain corrodes nonmagical, ferrous metal objects. If the object isn't being worn or carried, the rain destroys 1 cubic foot of it for every 10 minutes of exposure. An object must be covered to avoid exposure. If the exposed object is nonmagical metal armor, a nonmagical metal weapon, or a nonmagical metal shield being worn or carried, it takes a permanent and cumulative −1 penalty to damage rolls or the AC it offers for every 10 minutes of exposure to rust rain. A weapon that drops to a −5 penalty, armor reduced to an AC of 10, or a shield that drops to a +0 bonus is destroyed.",
+      "Any creature that starts it turn in rust rain and isn't covered by an umbrella, a shield, or some other form of rain protection takes **1d4** acid damage."
+     ]
+    }
    }
   ],
   "reprint": null
@@ -1859,6 +2033,32 @@
     "name": "",
     "type": "text",
     "value": "Thrym's howl typically lasts 2d10 hours."
+   }
+  ],
+  "reprint": null
+ },
+ {
+  "name": "Toxic Fungus Colony",
+  "source": "EGW",
+  "subtitle": "Environmental Hazard",
+  "url": "https://5e.tools/trapshazards.html#toxic%20fungus%20colony_egw",
+  "description": [
+   {
+    "name": "",
+    "type": "text",
+    "value": "A virulent expanse of malignant fungal growths blankets the landscape and fills the air above it with spores."
+   },
+   {
+    "name": "",
+    "type": "list",
+    "list": {
+     "type": "list",
+     "caption": "",
+     "entries": [
+      "Any non-plant creature within 20 feet of a toxic fungus colony is poisoned. A creature poisoned by the colony for 1 hour has a 20 percent chance of gaining a random form of short-term madness (see \"Madness\" in chapter 8 of the Dungeon Master's Guide).",
+      "A toxic fungus colony can be bioluminescent. A bioluminescent colony sheds Vision and Light within its area and for an additional 20 feet beyond its outer edges."
+     ]
+    }
    }
   ],
   "reprint": null
